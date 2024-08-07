@@ -431,6 +431,11 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'php/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'php/metrics-chart',
                 'php/metrics-search',
                 'php/metrics-detect-anormal',
@@ -656,6 +661,11 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'nodejs/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'nodejs/metrics-chart',
                 'nodejs/metrics-search',
                 'nodejs/metrics-detect-anormal',
@@ -877,6 +887,11 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'python/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'python/metrics-chart',
                 'python/metrics-search',
                 'python/metrics-detect-anormal',
@@ -1104,6 +1119,11 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'dotnet/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'dotnet/metrics-chart',
                 'dotnet/metrics-search',
                 'dotnet/metrics-detect-anormal',
@@ -1314,6 +1334,11 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'golang/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'golang/metrics-chart',
                 'golang/metrics-search',
                 'golang/metrics-detect-anormal',
