@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_7_x",
   "title": "Service 2.7.X",
-  "description": "Service 2.7.9",
+  "description": "Service 2.7.10",
   "source": "@site/docs/release-notes/service/service-2.7.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_7_x",
@@ -62,6 +62,18 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.7.10",
+  "id": "service-2710",
+  "level": 2
+}, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
+}, {
+  "value": "Oracle <code class=\"my\">V2</code>",
+  "id": "oracle-v2",
+  "level": 4
+}, {
   "value": "Service 2.7.9",
   "id": "service-279",
   "level": 2
@@ -75,7 +87,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Database</code>",
-  "id": "database",
+  "id": "database-1",
   "level": 3
 }, {
   "value": "Service 2.7.6",
@@ -83,7 +95,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Database</code>",
-  "id": "database-1",
+  "id": "database-2",
   "level": 3
 }, {
   "value": "<code>Application</code>, <code>Database</code>, <code>Server</code>, <code>Kubernetes</code>",
@@ -111,7 +123,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>Database</code>",
-  "id": "database-2",
+  "id": "database-3",
   "level": 3
 }, {
   "value": "공통",
@@ -147,7 +159,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-3",
+  "id": "database-4",
   "level": 4
 }, {
   "value": "<code>Kubernetes</code>",
@@ -171,7 +183,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-4",
+  "id": "database-5",
   "level": 3
 }, {
   "value": "공통",
@@ -215,6 +227,58 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-2710",
+        children: "Service 2.7.10"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 08월 07일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+          id: "oracle-v2",
+          children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            className: "my",
+            children: "V2"
+          })]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " 다음 메뉴 경로에서 같은 sid의 holder와 waiter가 락(Lock)으로 표기되는 오류 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dashboard",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbMonitoring",
+                className: "uitext"
+              }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "lock_tree",
+                className: "uitext"
+              }), " 테이블"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_analysis",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbLockTree",
+                className: "uitext"
+              })]
+            }), "\n"]
+          }), "\n"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-279",
@@ -282,7 +346,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database",
+          id: "database-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -306,7 +370,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-1",
+          id: "database-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -412,7 +476,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-2",
+          id: "database-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -541,7 +605,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "Service 2.7.0 릴리스에 포함된 신규 기능을 소개합니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "database-3",
+          id: "database-4",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -1576,7 +1640,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-4",
+          id: "database-5",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
