@@ -99,7 +99,7 @@ const config = {
         // https://getcanary.dev/docs/customization/styling#css-variables
         styles: { 
           "--canary-color-primary-c": 0.1, 
-          "--canary-color-primary-h": 270, 
+          "--canary-color-primary-h": 270,
         }, 
         // https://pagefind.app/docs/ranking
         pagefind: { 
