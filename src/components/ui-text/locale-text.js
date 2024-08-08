@@ -25,7 +25,7 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
                 let oType = whatapLocale[`${replace}`][`${currentLocale}`];
                 oText = whatapLocale[sid][`${currentLocale}`].replace('{mode}', oType)
             } else {
-                oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '');
+                oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '').trim();
             }
         } else {
             oText = whatapLocale[sid][`${currentLocale}`];
