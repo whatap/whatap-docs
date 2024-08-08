@@ -1550,6 +1550,11 @@ const sidebars = {
               },
               items: [
                 'postgresql/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'postgresql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'postgresql/metrics-chart',
                 'postgresql/metrics-search',
                 'postgresql/metrics-detect-anormal',
@@ -1877,6 +1882,11 @@ const sidebars = {
               },
               items: [
                 'oracle/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'oracle/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'oracle/metrics-chart',
                 'oracle/metrics-search',
                 'oracle/metrics-detect-anormal',
@@ -2038,6 +2048,11 @@ const sidebars = {
               },
               items: [
                 'oracle-pro/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'oracle-pro/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'oracle-pro/metrics-chart',
                 'oracle-pro/metrics-search',
                 'oracle-pro/metrics-detect-anormal',
@@ -2221,6 +2236,11 @@ const sidebars = {
               },
               items: [
                 'mysql/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'mysql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mysql/metrics-chart',
                 'mysql/metrics-search',
                 'mysql/metrics-detect-anormal',
@@ -2968,6 +2988,11 @@ const sidebars = {
               },
               items: [
                 'redis/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'redis/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'redis/metrics-chart',
                 'redis/metrics-search',
                 'redis/metrics-detect-anormal',
@@ -3123,6 +3148,11 @@ const sidebars = {
               },
               items: [
                 'mongodb/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'mongodb/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mongodb/metrics-chart',
                 'mongodb/metrics-search',
                 'mongodb/metrics-detect-anormal',
