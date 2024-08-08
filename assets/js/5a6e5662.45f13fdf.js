@@ -101,6 +101,10 @@ const metadata = {
   "previous": {
     "title": "데이터베이스",
     "permalink": "/whatap-docs/best-practice-guides/set-db-metric-warning-notice"
+  },
+  "next": {
+    "title": "TCP 포트 감시 활용",
+    "permalink": "/whatap-docs/best-practice-guides/about-tcp-port"
   }
 };
 const assets = {
