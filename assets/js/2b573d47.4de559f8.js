@@ -78,6 +78,10 @@ const toc = [{
   "id": "database",
   "level": 3
 }, {
+  "value": "Oracle <code class=\"my\">V2</code>, Oracle Pro",
+  "id": "oracle-v2-oracle-pro",
+  "level": 4
+}, {
   "value": "Oracle <code class=\"my\">V2</code>",
   "id": "oracle-v2",
   "level": 4
@@ -131,7 +135,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "Oracle <code class=\"my\">V2</code>, Oracle Pro",
-  "id": "oracle-v2-oracle-pro",
+  "id": "oracle-v2-oracle-pro-1",
   "level": 4
 }, {
   "value": "Redis <code class=\"my\">V1</code>, MongoDB <code class=\"my\">V1</code>",
@@ -343,6 +347,27 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+          id: "oracle-v2-oracle-pro",
+          children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            className: "my",
+            children: "V2"
+          }), ", Oracle Pro"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_multiInstance",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Main Waits"
+          }), " 위젯의 데이터를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "active_session"
+          }), " 카테고리에서 조회하도록 변경"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
           id: "oracle-v2",
           children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
@@ -869,7 +894,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에서 조회한 데이터가 없을 때 표시되는 메시지가 절반만 표시되는 문제 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
-          id: "oracle-v2-oracle-pro",
+          id: "oracle-v2-oracle-pro-1",
           children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
             className: "my",
             children: "V2"
