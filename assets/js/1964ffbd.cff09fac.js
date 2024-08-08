@@ -374,7 +374,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang, Youtube} = _components;
+  }, {Cmdname, ImgLang, Youtube} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -572,7 +573,10 @@ function _createMdxContent(props) {
             children: "내 계정"
           }), " 태그를 표시합니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["와탭 모니터링 서비스에 가입하지 않은 계정을 초대하면, 초대 대상이 가입할 때까지 이름을 ***초대 대기 중입니다.***로 표시합니다. 초대 메일을 다시 보내려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: ["와탭 모니터링 서비스에 가입하지 않은 계정을 초대하면, 초대 대상이 가입할 때까지 이름을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "pending_invitation",
+            className: "uitext"
+          }), "로 표시합니다. 초대 메일을 다시 보내려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "다시 초대"
             })
