@@ -113,6 +113,18 @@ const assets = {
 
 };
 
+/*<a href='features/aerospike-introduction'>
+<code class='beta'>Beta</code>
+<div class='apm-agent'>
+<div class='logo'>
+<LinkImage img='index-icon/product-aero-l-temp.svg' desc='aerospike' />
+</div>
+<div class='int'>
+<p>Aerospike</p>
+<code>Features</code>
+</div>
+</div>
+</a>*/
 
 
 const toc = [{
@@ -670,7 +682,7 @@ function _createMdxContent(props) {
             })]
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
-          href: "features/kafka-introduction",
+          href: "features/introduction",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
             class: "beta",
             children: "Beta"
@@ -679,13 +691,13 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
               class: "logo",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
-                img: "index-icon/product-kafka-l.svg",
-                desc: "kafka"
+                img: "index-icon/product-feature-l.svg",
+                desc: "Feature Project"
               })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
               class: "int",
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-                children: "Kafka"
+                children: "Feature Project"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 children: "Features"
               })]

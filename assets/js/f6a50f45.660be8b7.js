@@ -298,63 +298,65 @@ function _createMdxContent(props) {
       }), " 파일을 다음 안내에 따라 수정해 kube-apiserver 모니터링을 활성화하세요."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-master-agent"
-        }), " deployment의 spec 하위에 kube-apiserver 모니터링을 위한 에이전트 컨테이너 spec을 추가하세요."]
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-master-agent"
+          }), " deployment의 spec 하위에 kube-apiserver 모니터링을 위한 에이전트 컨테이너 spec을 추가하세요."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-yaml",
+            children: "containers:\n  - name: whatap-control-plane-helper\n    image: whatap/kube_mon\n    imagePullPolicy: Always\n    ports:\n      - containerPort: 9496\n    command: [\"/data/agent/master/whatap_control_plane_helper\"]\n    args: [\"-collect_control_plane_monitoring_enabled=true\"]\n"
+          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "다음 예시를 참조하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-yaml",
+            metastring: "{17-23}",
+            children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: whatap-master-agent\n  namespace: whatap-monitoring\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      name: whatap-master-agent\n  template:\n    metadata:\n      labels:\n        name: whatap-master-agent\n    spec:\n      containers:\n        - name: whatap-control-plane-helper\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          ports:\n            - containerPort: 9496\n          command: [\"/data/agent/master/whatap_control_plane_helper\"]\n          args: [\"-collect_control_plane_monitoring_enabled=true\"]\n        - name: whatap-master-agent\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          resources:\n            requests:\n              memory: 300Mi\n              cpu: 100m\n            limits:\n              memory: 350Mi\n              cpu: 200m\n          ports:\n            - containerPort: 6600\n          command: ['/bin/entrypoint.sh']\n          env:\n            - name: WHATAP_LICENSE\n              value: \"xxxxxxxx-12345xxxxxx-x00e000000xxx8\"\n            - name: WHATAP_HOST\n              value: \"13.124.11.223/13.209.172.35\"\n            - name: WHATAP_PORT\n              value: \"6600\"\n            - name: WHATP_MEM_LIMIT\n              valueFrom:\n                resourceFieldRef:\n                  containerName: whatap-master-agent\n                  resource: limits.memory\n          volumeMounts:\n            - name: start-script-volume\n              mountPath: /bin/entrypoint.sh\n              readOnly: true\n              subPath: entrypoint.sh\n            - mountPath: /whatap_conf\n              name: whatap-config-volume\n      volumes:\n        - name: start-script-volume\n          configMap:\n            defaultMode: 0700\n            name: master-start-script\n        - name: whatap-config-volume\n          emptyDir: {}\n      serviceAccount: whatap\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-master-agent"
+          }), " deployment의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-master-agent"
+          }), " 컨테이너 spec에서 env 설정에 다음 내용을 추가하세요."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-yaml",
+            children: "env:\n  - name: collect_control_plane_monitoring_enabled\n    value: \"true\"\n"
+          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "다음 예시를 참조하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-yaml",
+            metastring: "{38-39}",
+            children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: whatap-master-agent\n  namespace: whatap-monitoring\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      name: whatap-master-agent\n  template:\n    metadata:\n      labels:\n        name: whatap-master-agent\n    spec:\n      containers:\n        - name: whatap-control-plane-helper\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          ports:\n            - containerPort: 9496\n          command: [\"/data/agent/master/whatap_control_plane_helper\"]\n          args: [\"-collect_control_plane_monitoring_enabled=true\"]\n        - name: whatap-master-agent\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          resources:\n            requests:\n              memory: 300Mi\n              cpu: 100m\n            limits:\n              memory: 350Mi\n              cpu: 200m\n          ports:\n            - containerPort: 6600\n          command: ['/bin/entrypoint.sh']\n          env:\n            - name: collect_control_plane_monitoring_enabled\n              value: \"true\"\n            - name: WHATAP_LICENSE\n              value: \"xxxxxxxx-12345xxxxxx-x00e000000xxx8\"\n            - name: WHATAP_HOST\n              value: \"13.124.11.223/13.209.172.35\"\n            - name: WHATAP_PORT\n              value: \"6600\"\n            - name: WHATP_MEM_LIMIT\n              valueFrom:\n                resourceFieldRef:\n                  containerName: whatap-master-agent\n                  resource: limits.memory\n          volumeMounts:\n            - name: start-script-volume\n              mountPath: /bin/entrypoint.sh\n              readOnly: true\n              subPath: entrypoint.sh\n            - mountPath: /whatap_conf\n              name: whatap-config-volume\n      volumes:\n        - name: start-script-volume\n          configMap:\n            defaultMode: 0700\n            name: master-start-script\n        - name: whatap-config-volume\n          emptyDir: {}\n      serviceAccount: whatap\n"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["컨트롤 플레인 모니터링 성능 지표를 수집하기 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap"
+          }), " ClusterRole에 다음의 권한을 추가하세요."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-yaml",
+            children: "rules:\n  - nonResourceURLs: [\"/metrics\"]\n    verbs: [\"*\"]\n"
+          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "다음 예시를 참조하세요."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-yaml",
+            metastring: "{18-19} ",
+            children: "apiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRole\nmetadata:\n  annotations:\n    rbac.authorization.kubernetes.io/autoupdate: \"true\"\n  name: whatap\n  namespace: whatap-monitoring\nrules:\n  - apiGroups: [\"*\"]\n    resources: [\"namespaces\", \"pods\", \"pods/log\", \"configmaps\",\"services\", \"endpoints\",\"daemonsets\",\"ingresses\",\"deployments\",\"nodes\",\"persistentvolumes\",\"persistentvolumeclaims\", \"events\", \"replicasets\", \"roles\", \"rolebindings\", \"clusterroles\", \"clusterrolebindings\", \"jobs\", \"cronjobs\", \"statefulsets\", \"serviceaccounts\", \"configmaps\", \"storageclasses\", \"horizontalpodautoscalers\" ]\n    verbs: [\"get\",\"list\",\"watch\"]\n  - apiGroups: [\"\"]\n    resources: [\"pods/exec\"]\n    verbs: [\"create\"]\n  - apiGroups: [\"\"]\n    resources: [\"configmaps\"]\n    verbs: [\"*\"]\n  - nonResourceURLs: [\"/metrics\"]\n    verbs: [\"*\"]\n---\n"
+          })
+        }), "\n"]
       }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-yaml",
-        children: "containers:\n  - name: whatap-control-plane-helper\n    image: whatap/kube_mon\n    imagePullPolicy: Always\n    ports:\n      - containerPort: 9496\n    command: [\"/data/agent/master/whatap_control_plane_helper\"]\n    args: [\"-collect_control_plane_monitoring_enabled=true\"]\n"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "다음 예시를 참조하세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-yaml",
-        metastring: "{17-23}",
-        children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: whatap-master-agent\n  namespace: whatap-monitoring\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      name: whatap-master-agent\n  template:\n    metadata:\n      labels:\n        name: whatap-master-agent\n    spec:\n      containers:\n        - name: whatap-control-plane-helper\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          ports:\n            - containerPort: 9496\n          command: [\"/data/agent/master/whatap_control_plane_helper\"]\n          args: [\"-collect_control_plane_monitoring_enabled=true\"]\n        - name: whatap-master-agent\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          resources:\n            requests:\n              memory: 300Mi\n              cpu: 100m\n            limits:\n              memory: 350Mi\n              cpu: 200m\n          ports:\n            - containerPort: 6600\n          command: ['/bin/entrypoint.sh']\n          env:\n            - name: WHATAP_LICENSE\n              value: \"xxxxxxxx-12345xxxxxx-x00e000000xxx8\"\n            - name: WHATAP_HOST\n              value: \"13.124.11.223/13.209.172.35\"\n            - name: WHATAP_PORT\n              value: \"6600\"\n            - name: WHATP_MEM_LIMIT\n              valueFrom:\n                resourceFieldRef:\n                  containerName: whatap-master-agent\n                  resource: limits.memory\n          volumeMounts:\n            - name: start-script-volume\n              mountPath: /bin/entrypoint.sh\n              readOnly: true\n              subPath: entrypoint.sh\n            - mountPath: /whatap_conf\n              name: whatap-config-volume\n      volumes:\n        - name: start-script-volume\n          configMap:\n            defaultMode: 0700\n            name: master-start-script\n        - name: whatap-config-volume\n          emptyDir: {}\n      serviceAccount: whatap\n"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-master-agent"
-        }), " deployment의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap-master-agent"
-        }), " 컨테이너 spec에서 env 설정에 다음 내용을 추가하세요."]
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-yaml",
-        children: "env:\n  - name: collect_control_plane_monitoring_enabled\n    value: \"true\"\n"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "다음 예시를 참조하세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-yaml",
-        metastring: "{38-39}",
-        children: "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: whatap-master-agent\n  namespace: whatap-monitoring\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      name: whatap-master-agent\n  template:\n    metadata:\n      labels:\n        name: whatap-master-agent\n    spec:\n      containers:\n        - name: whatap-control-plane-helper\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          ports:\n            - containerPort: 9496\n          command: [\"/data/agent/master/whatap_control_plane_helper\"]\n          args: [\"-collect_control_plane_monitoring_enabled=true\"]\n        - name: whatap-master-agent\n          image: whatap/kube_mon\n          imagePullPolicy: Always\n          resources:\n            requests:\n              memory: 300Mi\n              cpu: 100m\n            limits:\n              memory: 350Mi\n              cpu: 200m\n          ports:\n            - containerPort: 6600\n          command: ['/bin/entrypoint.sh']\n          env:\n            - name: collect_control_plane_monitoring_enabled\n              value: \"true\"\n            - name: WHATAP_LICENSE\n              value: \"xxxxxxxx-12345xxxxxx-x00e000000xxx8\"\n            - name: WHATAP_HOST\n              value: \"13.124.11.223/13.209.172.35\"\n            - name: WHATAP_PORT\n              value: \"6600\"\n            - name: WHATP_MEM_LIMIT\n              valueFrom:\n                resourceFieldRef:\n                  containerName: whatap-master-agent\n                  resource: limits.memory\n          volumeMounts:\n            - name: start-script-volume\n              mountPath: /bin/entrypoint.sh\n              readOnly: true\n              subPath: entrypoint.sh\n            - mountPath: /whatap_conf\n              name: whatap-config-volume\n      volumes:\n        - name: start-script-volume\n          configMap:\n            defaultMode: 0700\n            name: master-start-script\n        - name: whatap-config-volume\n          emptyDir: {}\n      serviceAccount: whatap\n"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["컨트롤 플레인 모니터링 성능 지표를 수집하기 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "whatap"
-        }), " ClusterRole에 다음의 권한을 추가하세요."]
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-yaml",
-        children: "rules:\n  - nonResourceURLs: [\"/metrics\"]\n    verbs: [\"*\"]\n"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "다음 예시를 참조하세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-yaml",
-        metastring: "{18-19} ",
-        children: "apiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRole\nmetadata:\n  annotations:\n    rbac.authorization.kubernetes.io/autoupdate: \"true\"\n  name: whatap\n  namespace: whatap-monitoring\nrules:\n  - apiGroups: [\"*\"]\n    resources: [\"namespaces\", \"pods\", \"pods/log\", \"configmaps\",\"services\", \"endpoints\",\"daemonsets\",\"ingresses\",\"deployments\",\"nodes\",\"persistentvolumes\",\"persistentvolumeclaims\", \"events\", \"replicasets\", \"roles\", \"rolebindings\", \"clusterroles\", \"clusterrolebindings\", \"jobs\", \"cronjobs\", \"statefulsets\", \"serviceaccounts\", \"configmaps\", \"storageclasses\", \"horizontalpodautoscalers\" ]\n    verbs: [\"get\",\"list\",\"watch\"]\n  - apiGroups: [\"\"]\n    resources: [\"pods/exec\"]\n    verbs: [\"create\"]\n  - apiGroups: [\"\"]\n    resources: [\"configmaps\"]\n    verbs: [\"*\"]\n  - nonResourceURLs: [\"/metrics\"]\n    verbs: [\"*\"]\n---\n"
-      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "note",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

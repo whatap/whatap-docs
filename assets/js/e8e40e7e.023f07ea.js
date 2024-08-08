@@ -76,44 +76,17 @@ displyed_sidebar: featuremonitorSidebar
 /*~~피쳐 프로젝트 관련 이미지 추가~~
 
 ~~피쳐 프로젝트 구성도??~~*/
-/*## Aerospike
-
-에어로스파이크는 실시간 데이터 처리 및 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 와탭은 **피쳐 프로젝트** 방식으로 ***Aerospike*** 모니터링을 제공합니다. 클러스터 성능, 응답 시간, 데이터 일관성 등을 실시간으로 추적하여 시스템 안정성을 유지하고 최적화할 수 있도록 돕습니다.
-
-
-<div class='flex-container-s features'>
-
-<a href='kafka-introduction'>
-<div class='apm-agent'>
-<div class='logo'>
-<LinkImage img='index-icon/product-kafka-l.svg' desc='kafka' />
-</div>
-<div class='int'>
-<p>Kafka</p>
-<code class='Features'>Features</code>
-</div>
-</div>
-</a>
-
-<a href='introduction'>
-<div class='apm-agent'>
-<div class='logo'>
-<LinkImage img='index-icon/product-aero-l-temp.svg' desc='aerospike' />
-</div>
-<div class='int'>
-<p>Aerospike</p>
-<code class='Features'>Features</code>
-</div>
-</div>
-</a>
-
-</div>*/
+/*<DocCardList/>*/
 
 
 
 const toc = [{
   "value": "KAFKA",
   "id": "kafka",
+  "level": 2
+}, {
+  "value": "Aerospike",
+  "id": "aerospike",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -127,7 +100,8 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {LinkImage} = _components;
+  if (!LinkImage) _missingMdxReference("LinkImage", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: ["\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭은 사용자가 원하는 소프트웨어의 모니터링 지원 여부를 쉽게 확인하고 간편하게 모니터링을 시작할 수 있도록 새롭게 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -171,7 +145,64 @@ function _createMdxContent(props) {
             children: "KAFKA"
           })
         }), " 모니터링을 제공합니다. 카프카 클러스터의 성능과 상태를 추적하여 문제를 조기에 감지하고 해결할 수 있도록 돕습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_DocCardList__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {})]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "aerospike",
+        children: "Aerospike"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["에어로스파이크는 실시간 데이터 처리 및 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 와탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "피쳐 프로젝트"
+        }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Aerospike"
+          })
+        }), " 모니터링을 제공합니다. 클러스터 성능, 응답 시간, 데이터 일관성 등을 실시간으로 추적하여 시스템 안정성을 유지하고 최적화할 수 있도록 돕습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "flex-container-s features",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "kafka-introduction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "apm-agent",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              class: "logo",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "index-icon/product-kafka-l.svg",
+                desc: "kafka"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              class: "int",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                children: "Kafka"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                class: "Features",
+                children: "Features"
+              })]
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "aerospike-introduction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "apm-agent",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              class: "logo",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "index-icon/product-aerospike-l.svg",
+                desc: "aerospike"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              class: "int",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                children: "Aerospike"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                class: "Features",
+                children: "Features"
+              })]
+            })]
+          })
+        })]
+      })]
     })]
   });
 }
@@ -186,6 +217,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
