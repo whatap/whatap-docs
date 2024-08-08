@@ -5192,7 +5192,20 @@ const sidebars = {
         {
           type: 'doc',
           id: 'features/kafka-introduction',
-          // className: 'beta'
+          label: 'KAFKA',
+          className: 'beta'
+        },
+        {
+          type: 'doc',
+          id: 'features/aerospike-introduction', 
+          label: 'Aerospike',
+          className: 'beta' 
+        },
+        {
+          type: 'doc',
+          id: 'features/apache-pulsar-introduction',
+          label: 'Apache Pulsar',
+          className: 'beta' 
         },
         // 'kafka/install-agent',
         // {
