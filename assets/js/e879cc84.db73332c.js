@@ -1232,7 +1232,7 @@ function _createMdxContent(props) {
                         children: "Postfix"
                       })
                     }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "url"
+                      children: "--"
                     }), "로 지정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                         children: "Ignore"

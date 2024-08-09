@@ -1,133 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21800],{
-
-/***/ 45632:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_parser_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19499);
-
-
-const frontMatter = {
-	id: 'log-parser',
-	title: '로그 파싱하기',
-	description: '와탭이 제공하는 로그 파서에 대해 안내합니다.',
-	toc_max_heading_level: 3,
-	tags: [
-		'로그',
-		'AWS Log',
-		'로그 모니터링',
-		'설정하기',
-		'로그 파서',
-		'로그 파싱'
-	]
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "aws-log/log-parser",
-  "title": "로그 파싱하기",
-  "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
-  "source": "@site/docs/aws-log/log-parser.mdx",
-  "sourceDirName": "aws-log",
-  "slug": "/aws-log/log-parser",
-  "permalink": "/whatap-docs/aws-log/log-parser",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/aws-log/log-parser.mdx",
-  "tags": [
-    {
-      "inline": true,
-      "label": "로그",
-      "permalink": "/whatap-docs/tags/로그"
-    },
-    {
-      "inline": true,
-      "label": "AWS Log",
-      "permalink": "/whatap-docs/tags/aws-log"
-    },
-    {
-      "inline": true,
-      "label": "로그 모니터링",
-      "permalink": "/whatap-docs/tags/로그-모니터링"
-    },
-    {
-      "inline": true,
-      "label": "설정하기",
-      "permalink": "/whatap-docs/tags/설정하기"
-    },
-    {
-      "inline": true,
-      "label": "로그 파서",
-      "permalink": "/whatap-docs/tags/로그-파서"
-    },
-    {
-      "inline": true,
-      "label": "로그 파싱",
-      "permalink": "/whatap-docs/tags/로그-파싱"
-    }
-  ],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-parser",
-    "title": "로그 파싱하기",
-    "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
-    "toc_max_heading_level": 3,
-    "tags": [
-      "로그",
-      "AWS Log",
-      "로그 모니터링",
-      "설정하기",
-      "로그 파서",
-      "로그 파싱"
-    ]
-  },
-  "sidebar": "awslogSidebar",
-  "previous": {
-    "title": "설정하기",
-    "permalink": "/whatap-docs/aws-log/aws-log-setting"
-  },
-  "next": {
-    "title": "라이브 테일",
-    "permalink": "/whatap-docs/aws-log/aws-log-lt"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_parser_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_parser_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83306],{
 
 /***/ 19499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1360,7 +1232,7 @@ function _createMdxContent(props) {
                         children: "Postfix"
                       })
                     }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "url"
+                      children: "--"
                     }), "로 지정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                         children: "Ignore"
@@ -1508,6 +1380,134 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 39540:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_parser_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19499);
+
+
+const frontMatter = {
+	id: 'log-parser',
+	title: '로그 파싱하기',
+	description: '와탭이 제공하는 로그 파서에 대해 안내합니다.',
+	toc_max_heading_level: 3,
+	tags: [
+		'로그',
+		'로그 모니터링',
+		'설정하기',
+		'로그 파서',
+		'로그 파싱',
+		'MySQL'
+	]
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "mysql/log-parser",
+  "title": "로그 파싱하기",
+  "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
+  "source": "@site/docs/mysql/log-parser.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/log-parser",
+  "permalink": "/whatap-docs/mysql/log-parser",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/mysql/log-parser.mdx",
+  "tags": [
+    {
+      "inline": true,
+      "label": "로그",
+      "permalink": "/whatap-docs/tags/로그"
+    },
+    {
+      "inline": true,
+      "label": "로그 모니터링",
+      "permalink": "/whatap-docs/tags/로그-모니터링"
+    },
+    {
+      "inline": true,
+      "label": "설정하기",
+      "permalink": "/whatap-docs/tags/설정하기"
+    },
+    {
+      "inline": true,
+      "label": "로그 파서",
+      "permalink": "/whatap-docs/tags/로그-파서"
+    },
+    {
+      "inline": true,
+      "label": "로그 파싱",
+      "permalink": "/whatap-docs/tags/로그-파싱"
+    },
+    {
+      "inline": true,
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-parser",
+    "title": "로그 파싱하기",
+    "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
+    "toc_max_heading_level": 3,
+    "tags": [
+      "로그",
+      "로그 모니터링",
+      "설정하기",
+      "로그 파서",
+      "로그 파싱",
+      "MySQL"
+    ]
+  },
+  "sidebar": "mysqlSidebar",
+  "previous": {
+    "title": "로그 설정",
+    "permalink": "/whatap-docs/mysql/log-setting"
+  },
+  "next": {
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/mysql/set-notice"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_parser_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_parser_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

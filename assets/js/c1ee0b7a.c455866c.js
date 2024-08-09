@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83306],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43867],{
 
 /***/ 19499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1232,7 +1232,7 @@ function _createMdxContent(props) {
                         children: "Postfix"
                       })
                     }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "url"
+                      children: "--"
                     }), "로 지정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                         children: "Ignore"
@@ -1386,7 +1386,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 39540:
+/***/ 16576:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1414,21 +1414,21 @@ const frontMatter = {
 		'설정하기',
 		'로그 파서',
 		'로그 파싱',
-		'MySQL'
+		'MongoDB'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/log-parser",
+  "id": "mongodb/log-parser",
   "title": "로그 파싱하기",
   "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
-  "source": "@site/docs/mysql/log-parser.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/log-parser",
-  "permalink": "/whatap-docs/mysql/log-parser",
+  "source": "@site/docs/mongodb/log-parser.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/log-parser",
+  "permalink": "/whatap-docs/mongodb/log-parser",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/log-parser.mdx",
+  "editUrl": "undefined/docs/mongodb/log-parser.mdx",
   "tags": [
     {
       "inline": true,
@@ -1457,8 +1457,8 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "MySQL",
-      "permalink": "/whatap-docs/tags/my-sql"
+      "label": "MongoDB",
+      "permalink": "/whatap-docs/tags/mongo-db"
     }
   ],
   "version": "current",
@@ -1473,17 +1473,17 @@ const metadata = {
       "설정하기",
       "로그 파서",
       "로그 파싱",
-      "MySQL"
+      "MongoDB"
     ]
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "로그 설정",
-    "permalink": "/whatap-docs/mysql/log-setting"
+    "permalink": "/whatap-docs/mongodb/log-setting"
   },
   "next": {
     "title": "알림 설정하기",
-    "permalink": "/whatap-docs/mysql/set-notice"
+    "permalink": "/whatap-docs/mongodb/set-notice"
   }
 };
 const assets = {

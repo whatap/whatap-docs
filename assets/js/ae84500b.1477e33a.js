@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[88482],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78887],{
 
 /***/ 19499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1232,7 +1232,7 @@ function _createMdxContent(props) {
                         children: "Postfix"
                       })
                     }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "url"
+                      children: "--"
                     }), "로 지정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                         children: "Ignore"
@@ -1386,7 +1386,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 49331:
+/***/ 48640:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1413,22 +1413,21 @@ const frontMatter = {
 		'로그 모니터링',
 		'설정하기',
 		'로그 파서',
-		'로그 파싱',
-		'Oracle'
+		'로그 파싱'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle/log-parser",
+  "id": "log/log-parser",
   "title": "로그 파싱하기",
   "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
-  "source": "@site/docs/oracle/log-parser.mdx",
-  "sourceDirName": "oracle",
-  "slug": "/oracle/log-parser",
-  "permalink": "/whatap-docs/oracle/log-parser",
+  "source": "@site/docs/log/log-parser.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-parser",
+  "permalink": "/whatap-docs/log/log-parser",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle/log-parser.mdx",
+  "editUrl": "undefined/docs/log/log-parser.mdx",
   "tags": [
     {
       "inline": true,
@@ -1454,11 +1453,6 @@ const metadata = {
       "inline": true,
       "label": "로그 파싱",
       "permalink": "/whatap-docs/tags/로그-파싱"
-    },
-    {
-      "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
     }
   ],
   "version": "current",
@@ -1472,18 +1466,17 @@ const metadata = {
       "로그 모니터링",
       "설정하기",
       "로그 파서",
-      "로그 파싱",
-      "Oracle"
+      "로그 파싱"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "logSidebar",
   "previous": {
-    "title": "로그 설정",
-    "permalink": "/whatap-docs/oracle/log-setting"
+    "title": "설정하기",
+    "permalink": "/whatap-docs/log/log-setting"
   },
   "next": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/oracle/set-notice"
+    "title": "로그 처리하기",
+    "permalink": "/whatap-docs/log/log-process"
   }
 };
 const assets = {
