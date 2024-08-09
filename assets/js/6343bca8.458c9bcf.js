@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78887],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4927],{
 
 /***/ 19499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1232,14 +1232,14 @@ function _createMdxContent(props) {
                         children: "Postfix"
                       })
                     }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "--"
+                      children: "url"
                     }), "로 지정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                         children: "Ignore"
                       })
                     }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "--"
-                    }), "를 지정 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                      children: "url"
+                    }), "을 지정 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                       children: "host"
                     }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                       children: "method"
@@ -1386,7 +1386,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 48640:
+/***/ 75106:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1413,21 +1413,22 @@ const frontMatter = {
 		'로그 모니터링',
 		'설정하기',
 		'로그 파서',
-		'로그 파싱'
+		'로그 파싱',
+		'Oracle Pro'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "log/log-parser",
+  "id": "oracle-pro/log-parser",
   "title": "로그 파싱하기",
   "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
-  "source": "@site/docs/log/log-parser.mdx",
-  "sourceDirName": "log",
-  "slug": "/log/log-parser",
-  "permalink": "/whatap-docs/log/log-parser",
+  "source": "@site/docs/oracle-pro/log-parser.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/log-parser",
+  "permalink": "/whatap-docs/oracle-pro/log-parser",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/log/log-parser.mdx",
+  "editUrl": "undefined/docs/oracle-pro/log-parser.mdx",
   "tags": [
     {
       "inline": true,
@@ -1453,6 +1454,11 @@ const metadata = {
       "inline": true,
       "label": "로그 파싱",
       "permalink": "/whatap-docs/tags/로그-파싱"
+    },
+    {
+      "inline": true,
+      "label": "Oracle Pro",
+      "permalink": "/whatap-docs/tags/oracle-pro"
     }
   ],
   "version": "current",
@@ -1466,17 +1472,18 @@ const metadata = {
       "로그 모니터링",
       "설정하기",
       "로그 파서",
-      "로그 파싱"
+      "로그 파싱",
+      "Oracle Pro"
     ]
   },
-  "sidebar": "logSidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "설정하기",
-    "permalink": "/whatap-docs/log/log-setting"
+    "title": "로그 설정",
+    "permalink": "/whatap-docs/oracle-pro/log-setting"
   },
   "next": {
-    "title": "로그 처리하기",
-    "permalink": "/whatap-docs/log/log-process"
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/oracle-pro/set-notice"
   }
 };
 const assets = {

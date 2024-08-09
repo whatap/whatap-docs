@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[88482],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83306],{
 
 /***/ 19499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1232,14 +1232,14 @@ function _createMdxContent(props) {
                         children: "Postfix"
                       })
                     }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "--"
+                      children: "url"
                     }), "로 지정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                         children: "Ignore"
                       })
                     }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "--"
-                    }), "를 지정 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                      children: "url"
+                    }), "을 지정 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                       children: "host"
                     }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                       children: "method"
@@ -1386,7 +1386,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 49331:
+/***/ 39540:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1414,21 +1414,21 @@ const frontMatter = {
 		'설정하기',
 		'로그 파서',
 		'로그 파싱',
-		'Oracle'
+		'MySQL'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle/log-parser",
+  "id": "mysql/log-parser",
   "title": "로그 파싱하기",
   "description": "와탭이 제공하는 로그 파서에 대해 안내합니다.",
-  "source": "@site/docs/oracle/log-parser.mdx",
-  "sourceDirName": "oracle",
-  "slug": "/oracle/log-parser",
-  "permalink": "/whatap-docs/oracle/log-parser",
+  "source": "@site/docs/mysql/log-parser.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/log-parser",
+  "permalink": "/whatap-docs/mysql/log-parser",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle/log-parser.mdx",
+  "editUrl": "undefined/docs/mysql/log-parser.mdx",
   "tags": [
     {
       "inline": true,
@@ -1457,8 +1457,8 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "Oracle",
-      "permalink": "/whatap-docs/tags/oracle"
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
     }
   ],
   "version": "current",
@@ -1473,17 +1473,17 @@ const metadata = {
       "설정하기",
       "로그 파서",
       "로그 파싱",
-      "Oracle"
+      "MySQL"
     ]
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "로그 설정",
-    "permalink": "/whatap-docs/oracle/log-setting"
+    "permalink": "/whatap-docs/mysql/log-setting"
   },
   "next": {
     "title": "알림 설정하기",
-    "permalink": "/whatap-docs/oracle/set-notice"
+    "permalink": "/whatap-docs/mysql/set-notice"
   }
 };
 const assets = {
