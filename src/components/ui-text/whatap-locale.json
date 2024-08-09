@@ -31621,8 +31621,8 @@
   },
   "edit_member_role": {
     "en": "Edit member role",
-    "ja": "メンバー権限を修正する\n",
-    "ko": "멤버 권한 수정 ",
+    "ja": "メンバー権限を修正する",
+    "ko": "멤버 권한 수정",
     "zh": "Edit Member Role ",
     "service_id": "ITM04592"
   },
@@ -54034,10 +54034,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54966,7 +54966,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55364,10 +55364,10 @@
     "service_id": "BTN08028"
   },
   "TTL08029": {
-    "en": "Basic Information",
+    "en": "basic information",
     "ja": "基本情報",
     "ko": "기본 정보",
-    "zh": "Basic Information",
+    "zh": "basic information",
     "service_id": "TTL08029"
   },
   "DSC08030": {
@@ -55512,7 +55512,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55854,17 +55854,17 @@
     "service_id": "TTL08098"
   },
   "TTL08099": {
-    "en": "Model",
+    "en": "model",
     "ja": "モデル",
     "ko": "모델",
-    "zh": "Model",
+    "zh": "model",
     "service_id": "TTL08099"
   },
   "TTL08100": {
-    "en": "Serial",
+    "en": "cereals",
     "ja": "シリアル",
     "ko": "시리얼",
-    "zh": "Serial",
+    "zh": "cereals",
     "service_id": "TTL08100"
   },
   "TTL08101": {
@@ -56379,10 +56379,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56407,10 +56407,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56596,10 +56596,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events",
+    "zh": "Number of events occurring",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -56855,10 +56855,10 @@
     "service_id": "DSC08243"
   },
   "DSC08244": {
-    "en": "Arrangement",
+    "en": "arrangement",
     "ja": "配列",
     "ko": "배열",
-    "zh": "Arrangement",
+    "zh": "arrangement",
     "service_id": "DSC08244"
   },
   "DSC08245": {
@@ -56918,10 +56918,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -56968,7 +56968,7 @@
   },
   "CNT08260": {
     "en": "The access key is a unique ID for activating the WhaTap service.<br /> Please be careful not to expose the access key to unknown.",
-    "ja": "アクセスキーは、ワタップサービスを有効にするための一意のIDです。<br />アクセスキーが外部に公開されないように注意してください。",
+    "ja": "アクセスキーは、WhaTap Monitoringサービスを有効にするためのユニックIDです。<br />アクセスキーが外部に公開されないように注意してください。",
     "ko": "액세스 키는 와탭 서비스 활성화를 위한 고유 ID 입니다.<br /> 액세스 키가 외부에 노출되지 않도록 주의해 주세요.",
     "zh": "The access key is a unique ID for activating the WhaTap service.<br /> Please be careful not to expose the access key to unknown.",
     "service_id": "CNT08260"
@@ -57010,7 +57010,7 @@
   },
   "CNT08266": {
     "en": "When creating a project, set the number of Master yards created.",
-    "ja": "プロジェクト作成時のマスターヤードの作成数を設定します。",
+    "ja": "プロジェクト作成時のMaster yardの生成数を設定します。",
     "ko": "프로젝트 생성시 Master yard의 생성 개수를 설정합니다.",
     "zh": "When creating a project, set the number of Master yards created.",
     "service_id": "CNT08266"
@@ -57030,10 +57030,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57045,7 +57045,7 @@
   },
   "CNT08271": {
     "en": "When creating a project, set the number of Replica yards created.",
-    "ja": "プロジェクト作成時の Replica yard の作成数を設定します。",
+    "ja": "プロジェクト作成時の Replica yard の生成数を設定します。",
     "ko": "프로젝트 생성시 Replica yard의 생성 개수를 설정합니다.",
     "zh": "When creating a project, set the number of Replica yards created.",
     "service_id": "CNT08271"
@@ -57059,14 +57059,14 @@
   },
   "ITM08273": {
     "en": "Freeform",
-    "ja": "フリースタイル",
+    "ja": "カスタム",
     "ko": "자유형",
     "zh": "Freeform",
     "service_id": "ITM08273"
   },
   "TTL08274": {
     "en": "AWS Marketplace Product Information",
-    "ja": "AWS Marketplace 商品情報",
+    "ja": "AWS Marketplace商品情報",
     "ko": "AWS Marketplace 상품 정보",
     "zh": "AWS Marketplace Product Information",
     "service_id": "TTL08274"
@@ -57087,28 +57087,28 @@
   },
   "TTL08277": {
     "en": "Vacuum History",
-    "ja": "Vacuum 履歴",
+    "ja": "Vacuum履歴",
     "ko": "Vacuum 히스토리",
     "zh": "Vacuum History",
     "service_id": "TTL08277"
   },
   "TTL08278": {
     "en": "performance indicators",
-    "ja": "パフォーマンス指標",
+    "ja": "性能指標",
     "ko": "성능 지표",
     "zh": "performance indicators",
     "service_id": "TTL08278"
   },
   "NTC08279": {
     "en": "You can select up to {count} items for comparison.",
-    "ja": "比較は{count}個まで選択可能です。",
+    "ja": "比較は{count}件まで選択できます。",
     "ko": "비교하기는 {count}개까지 선택 가능합니다.",
     "zh": "You can select up to {count} items for comparison.",
     "service_id": "NTC08279"
   },
   "CNT08280": {
     "en": "and {count} others",
-    "ja": "他{count}個",
+    "ja": "他{count}件",
     "ko": "외 {count}개",
     "zh": "and {count} others",
     "service_id": "CNT08280"
@@ -57157,14 +57157,14 @@
   },
   "NTC08287": {
     "en": "You can only enter {n} items.",
-    "ja": "{n}個までのみ入力可能です。",
+    "ja": "{n}件までのみ入力できます。",
     "ko": "{n}개까지만 입력 가능합니다.",
     "zh": "You can only enter {n} items.",
     "service_id": "NTC08287"
   },
   "TTL08288": {
     "en": "{n}quantile",
-    "ja": "{n}雰囲気",
+    "ja": "{n}分位数",
     "ko": "{n}분위",
     "zh": "{n}quantile",
     "service_id": "TTL08288"
@@ -57178,21 +57178,21 @@
   },
   "NTC08290": {
     "en": "After entering the keyword, press Enter to add it.",
-    "ja": "キーワードを入力してEnterを押して追加します。",
+    "ja": "キーワードを入力してから、Enterを押して追加します。",
     "ko": "키워드 입력 후 엔터를 눌러 추가하세요.",
     "zh": "After entering the keyword, press Enter to add it.",
     "service_id": "NTC08290"
   },
   "ITM08291": {
     "en": "percentile",
-    "ja": "百分位",
+    "ja": "パーセンタイル",
     "ko": "백분위",
     "zh": "percentile",
     "service_id": "ITM08291"
   },
   "TTL08292": {
     "en": "Performance Metrics ({unit})",
-    "ja": "パフォーマンス指標（{unit}）",
+    "ja": "性能指標（{unit}）",
     "ko": "성능 지표 ({unit})",
     "zh": "Performance Metrics ({unit})",
     "service_id": "TTL08292"
@@ -57213,14 +57213,14 @@
   },
   "ITM08295": {
     "en": "Kubernetes Container",
-    "ja": "クーバーネティスコンテナ",
+    "ja": "Kubernetesコンテナ",
     "ko": "쿠버네티스 컨테이너",
     "zh": "Kubernetes Container",
     "service_id": "ITM08295"
   },
   "ITM08296": {
     "en": "Kubernetes Application Container",
-    "ja": "キューバネティスアプリケーションコンテナ",
+    "ja": "Kubernetesアプリケーションコンテナ",
     "ko": "쿠버네티스 애플리케이션 컨테이너",
     "zh": "Kubernetes Application Container",
     "service_id": "ITM08296"
@@ -57238,6 +57238,139 @@
     "ko": "상세 조회",
     "zh": "Detailed inquiry",
     "service_id": "TTL08298"
+  },
+  "DSC08299": {
+    "en": "A new Project Access Key is given to the added namespace project. <br/> Therefore, if application monitoring (APM) is installed in a separate namespace, the Project Access Key (old license) in the application monitoring settings must be changed to the Project Access Key of the newly added namespace project to ensure normal application monitoring. it's possible.",
+    "ja": "追加されたネームスペースのプロジェクトには新しいProject Access Keyが付与されます。 <br/> そのため、異なるネームスペースにアプリケーションモニタリング（APM）がインストールされている場合、アプリケーションモニタリング設定内のProject Access Key（旧：license）を新しく追加されたネームスペースプロジェクトのProject Access Keyに変更する必要があります。",
+    "ko": "추가된 네임스페이스 프로젝트에는 새로운 Project Access Key가 부여됩니다. <br/> 따라서 분리된 네임스페이스에 애플리케이션 모니터링(APM)이 설치되어 있는 경우, 애플리케이션 모니터링 설정 내 Project Access Key(구 license)를 새로 추가된 네임스페이스 프로젝트의 Project Access Key로 변경해야 정상적인 애플리케이션 모니터링이 가능합니다.",
+    "zh": "A new Project Access Key is given to the added namespace project. <br/> Therefore, if application monitoring (APM) is installed in a separate namespace, the Project Access Key (old license) in the application monitoring settings must be changed to the Project Access Key of the newly added namespace project to ensure normal application monitoring. it's possible.",
+    "service_id": "DSC08299"
+  },
+  "TTL08300": {
+    "en": "Precautions for adding a namespace project",
+    "ja": "ネームスペースプロジェクトの追加に関する注意事項",
+    "ko": "네임스페이스 프로젝트 추가 주의사항",
+    "zh": "Precautions for adding a namespace project",
+    "service_id": "TTL08300"
+  },
+  "TTL08301": {
+    "en": "Precautions for deleting namespace projects",
+    "ja": "ネームスペースプロジェクトの削除に関する注意事項",
+    "ko": "네임스페이스 프로젝트 삭제 주의사항",
+    "zh": "Precautions for deleting namespace projects",
+    "service_id": "TTL08301"
+  },
+  "TTL08302": {
+    "en": "Ping Check Result",
+    "ja": "Ping Check結果",
+    "ko": "Ping Check 결과",
+    "zh": "Ping Check Result",
+    "service_id": "TTL08302"
+  },
+  "ITM08303": {
+    "en": "Sensitive information inquiry",
+    "ja": "敏感情報の照会",
+    "ko": "민감 정보 조회",
+    "zh": "Sensitive information inquiry",
+    "service_id": "ITM08303"
+  },
+  "TTL08304": {
+    "en": "Top 10 Page Loads",
+    "ja": "ページロード数 Top10",
+    "ko": "페이지 로드 수 Top10",
+    "zh": "Top 10 Page Loads",
+    "service_id": "TTL08304"
+  },
+  "TTL08305": {
+    "en": "Page load performance trend",
+    "ja": "ページロードの性能推移",
+    "ko": "페이지 로드 성능 추이",
+    "zh": "Page load performance trend",
+    "service_id": "TTL08305"
+  },
+  "TTL08306": {
+    "en": "Top 10 Page Load Times",
+    "ja": "ページロード時間 Top10",
+    "ko": "페이지 로드 시간 Top10",
+    "zh": "Top 10 Page Load Times",
+    "service_id": "TTL08306"
+  },
+  "BTN08307": {
+    "en": "new version",
+    "ja": "新規バージョン",
+    "ko": "신규 버전",
+    "zh": "new version",
+    "service_id": "BTN08307"
+  },
+  "DSC08308": {
+    "en": "You can search information containing personal information.<br/>(Target menu: “View SQL parameters”)",
+    "ja": "個人情報を含むデータが検索できます。<br/>（対象メニュー：SQLパラメータの表示）",
+    "ko": "개인정보가 포함된 정보를 조회할 수 있습니다.<br/>(대상메뉴: \"SQL 파라미터 보기\")",
+    "zh": "You can search information containing personal information.<br/>(Target menu: “View SQL parameters”)",
+    "service_id": "DSC08308"
+  },
+  "DSC08310": {
+    "en": "1. In the Services > Service Directory menu, click the <b>New Service button</b>.",
+    "ja": "1. Services > Service Directoryメニューから、<b> New Serviceボタン</b>をクリックします。",
+    "ko": "1. Services > Service Directory 메뉴에서 <b>New Service 버튼</b>을 클릭합니다.",
+    "zh": "1. In the Services > Service Directory menu, click the <b>New Service button</b>.",
+    "service_id": "DSC08310"
+  },
+  "DSC08311": {
+    "en": "2. Enter the service information and click the Next button.",
+    "ja": "2. Service情報を入力してから、Nextボタンをクリックします。",
+    "ko": "2. Service 정보를 입력 후 Next 버튼을 클릭합니다.",
+    "zh": "2. Enter the service information and click the Next button.",
+    "service_id": "DSC08311"
+  },
+  "DSC08312": {
+    "en": "3. Set the Escalation Policy and click the Next button.",
+    "ja": "3. Escalation Policyを設定してから、Nextボタンをクリックします。",
+    "ko": "3. Escalation Policy를 설정 후 Next 버튼을 클릭합니다.",
+    "zh": "3. Set the Escalation Policy and click the Next button.",
+    "service_id": "DSC08312"
+  },
+  "DSC08313": {
+    "en": "4. Select Alert Grouping and Transient Alerts methods and click the Next button.",
+    "ja": "4. Alert Grouping と Transient Alerts 方式を選択し、Next ボタンをクリックします。",
+    "ko": "4. Alert Grouping과 Transient Alerts 방식을 선택 후 Next 버튼을 클릭합니다.",
+    "zh": "4. Select Alert Grouping and Transient Alerts methods and click the Next button.",
+    "service_id": "DSC08313"
+  },
+  "DSC08314": {
+    "en": "5. Select <b>Event API V2</b> in Integrations and click the Create Service button.",
+    "ja": "5. Integrationsから<b>Event API V2を選択</b>してから、Create Serviceボタンをクリックします。",
+    "ko": "5. Integrations 에서 <b>Event API V2 를 선택</b> 후 Create Service 버튼을 클릭합니다.",
+    "zh": "5. Select <b>Event API V2</b> in Integrations and click the Create Service button.",
+    "service_id": "DSC08314"
+  },
+  "DSC08315": {
+    "en": "6. <b>Copy the Integration Name and Integration Key</b> in the created Service screen.",
+    "ja": "6. 生成されたService画面から、<b>Integration Name と Integration Key をコピー</b>します。",
+    "ko": "6. 생성된 Service 화면에서 <b>Integration Name과 Integration Key를 복사</b>합니다.",
+    "zh": "6. <b>Copy the Integration Name and Integration Key</b> in the created Service screen.",
+    "service_id": "DSC08315"
+  },
+  "DSC08316": {
+    "en": "7. Enter <b>Integration Name and Integration Key</b> below and click the register button to register.",
+    "ja": "7. 次の<b>Intergration NameとIntegration Keyを入力</b>してから、登録ボタンを押して登録します。",
+    "ko": "7. 아래 <b>Intergration Name과 Integration Key를 입력</b> 후 등록 버튼을 눌러 등록합니다.",
+    "zh": "7. Enter <b>Integration Name and Integration Key</b> below and click the register button to register.",
+    "service_id": "DSC08316"
+  },
+  "TTL08317": {
+    "en": "{object} summary analysis",
+    "ja": "{object}要約分析",
+    "ko": "{object} 요약 분석",
+    "zh": "{object} summary analysis",
+    "service_id": "TTL08317"
+  },
+  "NTC08318": {
+    "en": "A test message has been sent. If you did not receive the message, please check if the Integration Name or Key value is correct.",
+    "ja": "テストメッセージが送信されました。メッセージが届かない場合は、Integration NameまたはKeyの値が正しいことを確認してください。",
+    "ko": "테스트 메시지가 전송됐습니다. 메시지를 받지 못했다면 Integration Name 또는 Key 값이 올바른지 확인해 주세요.",
+    "zh": "A test message has been sent. If you did not receive the message, please check if the Integration Name or Key value is correct.",
+    "service_id": "NTC08318"
   },
   "": {
     "en": "#VALUE!",
