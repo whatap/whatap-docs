@@ -313,7 +313,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-ini",
           metastring: "title='whatap.conf'",
-          children: "license=xxxxxxxxxx\nwhatap.server.host=xxx.xxx.xxx.xxx\ncreatedtime=xxxxxxxxxx\nfilecheck.enabled=true\ntcp.check.8080=tcp://127.0.0.1:8080\n"
+          children: "license=xxxxxxxxxx\nwhatap.server.host=xxx.xxx.xxx.xxx\ncreatedtime=xxxxxxxxxx\ntcp.check.8080=tcp://127.0.0.1:8080\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
