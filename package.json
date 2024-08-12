@@ -24,7 +24,6 @@
     "@docusaurus/logger": "^3.5.1",
     "@docusaurus/module-type-aliases": "^3.5.1",
     "@docusaurus/plugin-client-redirects": "^3.5.1",
-    "@docusaurus/plugin-debug": "^3.5.1",
     "@docusaurus/plugin-google-analytics": "^3.5.1",
     "@docusaurus/plugin-google-gtag": "^3.5.1",
     "@docusaurus/plugin-ideal-image": "^3.5.1",
@@ -72,6 +71,7 @@
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.5.1",
     "@docusaurus/module-type-aliases": "^3.5.1",
+    "@docusaurus/types": "3.5.1",
     "@docusaurus/tsconfig": "^3.5.1",
     "@types/react": "^18.2.29",
     "prettier": "^2.8.4",
