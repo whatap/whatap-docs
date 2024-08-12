@@ -21,7 +21,7 @@ const ListComponent = ({items}) => {
 };
 function BlogSidebarDesktop({sidebar}) {
   const sidebarData = require('../_meta.json');
-  const items = useVisibleBlogSidebarItems(sidebar.items);
+  const sideitems = useVisibleBlogSidebarItems(sidebar.items);
   const getItemTitle = (permalink) => {
     const item = sideitems.find((sideitem) => sideitem.permalink.replace('/whatap-docs', '') === permalink);
     return item ? item.title : permalink;
