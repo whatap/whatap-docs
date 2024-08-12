@@ -71,6 +71,7 @@
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.5.1",
+    "@docusaurus/module-type-aliases": "^3.5.1",
     "@docusaurus/tsconfig": "^3.5.1",
     "@types/react": "^18.2.29",
     "prettier": "^2.8.4",
