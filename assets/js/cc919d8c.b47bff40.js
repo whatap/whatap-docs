@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10599],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17115],{
 
 /***/ 93626:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -36,15 +36,17 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc, Videos, Xclude} = _components;
+  }, {InDoc, Xclude, Youtube} = _components;
   if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!Videos) _missingMdxReference("Videos", true);
   if (!Xclude) _missingMdxReference("Xclude", true);
+  if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭의 애플리케이션 모니터링은 장애 재현 없이 실시간으로 모니터링이 가능합니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Videos, {
-      url: "https://www.whatap.io/old/video/main-product/monitoring_step_0.mp4"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
+      ko: "oTlhy4QHwDk",
+      en: "XZFzRJj8N0A",
+      ja: "XZFzRJj8N0A"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -188,7 +190,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 92842:
+/***/ 90117:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -209,93 +211,71 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'introduction',
-	title: '.NET 모니터링',
-	description: '.NET 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
+	title: 'Python 모니터링',
+	description: 'Python 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다.',
+	hide_table_of_contents: true,
 	tags: [
-		'.NET'
+		'Python'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/introduction",
-  "title": ".NET 모니터링",
-  "description": ".NET 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
-  "source": "@site/docs/dotnet/introduction.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/introduction",
-  "permalink": "/whatap-docs/dotnet/introduction",
+  "id": "python/introduction",
+  "title": "Python 모니터링",
+  "description": "Python 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다.",
+  "source": "@site/docs/python/introduction.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/introduction",
+  "permalink": "/whatap-docs/python/introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/introduction.mdx",
+  "editUrl": "undefined/docs/python/introduction.mdx",
   "tags": [
     {
       "inline": true,
-      "label": ".NET",
-      "permalink": "/whatap-docs/tags/net"
+      "label": "Python",
+      "permalink": "/whatap-docs/tags/python"
     }
   ],
   "version": "current",
   "frontMatter": {
     "id": "introduction",
-    "title": ".NET 모니터링",
-    "description": ".NET 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "title": "Python 모니터링",
+    "description": "Python 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다.",
+    "hide_table_of_contents": true,
     "tags": [
-      ".NET"
+      "Python"
     ]
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "pySidebar",
   "next": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/dotnet/supported-spec"
+    "permalink": "/whatap-docs/python/supported-spec"
   }
 };
 const assets = {
 
 };
 
-/*<Videos url="https://www.whatap.io/old/video/product/ko/app_dotnet.mp4" />*/
+/*<Videos url="https://www.whatap.io/old/video/product/ko/app_python_webframework.mp4" />*/
 
 
 
 
 
-const toc = [..._common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "동작 방식",
-  "id": "동작-방식",
-  "level": 2
-}];
+const toc = [..._common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
-    h2: "h2",
-    img: "img",
     p: "p",
-    section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "와탭 .NET 애플리케이션 모니터링은 .NET 프레임워크 4.5 버전을 대응해 .NET 기반 웹 애플리케이션 서버 모니터링 서비스를 제공합니다."
+      children: "와탭 Python 애플리케이션 모니터링은 Python 기반 웹 애플리케이션 서버 모니터링 서비스를 제공합니다. Web framework, Server, Batch를 한 번에 모니터링하는 국내 유일 상품입니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: ".NET 프레임워크 애플리케이션을 모니터링 할 수 있습니다. IIS, Console, 서비스, 윈도우 응용프로그램을 모니터링합니다. DB Query, 외부 호출을 추적해 어느 곳에서 호출이 지연되고 있는지 찾을 수 있습니다."
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "동작-방식",
-        children: "동작 방식"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "닷넷 프로그램의 경우 컴파일 후에 중간언어(Microsoft Intermediate Language, MSIL) 형태인 exe 또는 dll 파일로 변환됩니다. 이것을 공용 언어 런타임(Common Language Runtime, CLR)에 있는 JIT(Just-In-Time) 컴파일러에 의해 네이티브 코드로 번역해 동작합니다. 와탭은 닷넷 프레임워크에서 제공하는 트레이싱 API를 통해 실행 중인 애플리케이션을 모니터링합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          src: "https://img.whatap.io/media/agent_dotnet/install/profiling-architecture.png",
-          alt: "트레이싱 아키텍쳐"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "닷넷 모니터링 서비스를 사용하기 위해서는 모니터링 대상 애플리케이션에 모니터링 에이전트를 설치해야 합니다. 에이전트는 윈도우에 설치 가능한 인스톨러로 제공합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "설치를 완료하면 윈도우 서비스에 와탭 에이전트가 자동 등록됩니다."
-      })]
-    })]
+      children: "주요 웹 프레임워크의 애플리케이션에 적용 가능하며, DB Query, 외부 호출을 추적하여 어느 곳에서 호출이 지연되고 있는지 찾을 수 있습니다. http 혹은 https가 아닌 특정한 트랜잭션에 대해 데이터 추적을 하고 싶은 경우, 특정 메소드 모니터링이 가능합니다."
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_common_intro_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {

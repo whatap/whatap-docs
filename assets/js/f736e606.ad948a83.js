@@ -150,9 +150,10 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang, Videos} = _components;
+  }, {ImgLang, Videos, Youtube} = _components;
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!Videos) _missingMdxReference("Videos", true);
+  if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -163,6 +164,10 @@ function _createMdxContent(props) {
         children: "와탭 모니터링 서비스의 기본 목적은 자원(인적, 물적)의 공유입니다. 기존 모니터링 상품은 모니터링 대상 별로 별도의 수집서버, 웹 화면을 구축해야 합니다. 하지만 와탭의 모니터링 서비스는 수집 서버를 공유하되, 각 서비스의 독립성을 지켜주는 구조입니다. 통합 관리를 하기 위해 모니터링 서버는 유연한 확장 구조여야 하고, 멀티 테넌트 기능을 제공해야 합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "실시간으로 비즈니스 상황을 시각화하여 빠르게 문제를 파악할 수 있습니다. 트랜잭션을 실시간으로 트레이스해 재현없이 그대로 문제를 추적할 수 있습니다. 와탭 모니터링은 분산 환경의 IT 서비스 성능을 실시간으로 시각화하여 문제 인식과 대응에 대한 고객의 시간을 절약하고 선제적 대응을 가능하게 합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
+        ko: "QDBfdKQ9EOA",
+        en: "2bBfkYvjNW4",
+        ja: "2bBfkYvjNW4"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",

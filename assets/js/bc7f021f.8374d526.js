@@ -36,15 +36,17 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc, Videos, Xclude} = _components;
+  }, {InDoc, Xclude, Youtube} = _components;
   if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!Videos) _missingMdxReference("Videos", true);
   if (!Xclude) _missingMdxReference("Xclude", true);
+  if (!Youtube) _missingMdxReference("Youtube", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭의 애플리케이션 모니터링은 장애 재현 없이 실시간으로 모니터링이 가능합니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Videos, {
-      url: "https://www.whatap.io/old/video/main-product/monitoring_step_0.mp4"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
+      ko: "oTlhy4QHwDk",
+      en: "XZFzRJj8N0A",
+      ja: "XZFzRJj8N0A"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
