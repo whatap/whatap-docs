@@ -952,7 +952,7 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["화면 오른쪽 상단에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            children: ["화면 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "CSV icon",
               src: (__webpack_require__(39855)/* ["default"] */ .A) + "",
               width: "49",

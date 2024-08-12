@@ -232,7 +232,6 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    em: "em",
     h2: "h2",
     h3: "h3",
     img: "img",
@@ -240,7 +239,6 @@ function _createMdxContent(props) {
     ol: "ol",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -861,10 +859,9 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["하위 프로젝트에서도 멤버를 삭제하려면 메시지 창에서 체크박스를 클릭한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "삭제"
-                })
+              children: ["하위 프로젝트에서도 멤버를 삭제하려면 메시지 창에서 체크박스를 클릭한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "delete",
+                className: "uitext"
               }), " 버튼을 선택하세요."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -913,7 +910,7 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["화면 오른쪽 상단에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            children: ["화면 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "CSV icon",
               src: (__webpack_require__(39855)/* ["default"] */ .A) + "",
               width: "49",
