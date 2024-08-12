@@ -47,8 +47,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Node.js Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/nodejs/"
+    "title": "Node.js Agent v0.5.0",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_5_0"
   },
   "next": {
     "title": "Node.js Agent v0.4.97",

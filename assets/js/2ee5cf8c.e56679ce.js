@@ -79,10 +79,12 @@ const assets = {
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    blockquote: "blockquote",
     code: "code",
     em: "em",
     li: "li",
     p: "p",
+    pre: "pre",
     strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
@@ -148,6 +150,31 @@ function _createMdxContent(props) {
           })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "InitialContext Lookup 시 DataSource인 경우 로그를 기록하는 기능을 활성화합니다."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "log_root"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            class: "type",
+            children: "String"
+          })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["에이전트 로그 파일의 경로를 설정할 수 있습니다. 설정된 경로 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "logs"
+          }), " 폴더를 생성하며 해당 폴더에 whatap 로그 파일이 생성됩니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "다음 예제와 같이 에이전트 옵션을 설정하면 whatap 로그 파일의 생성 경로는 다음과 같습니다."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("em", {
+            children: "/Users/sample_user/workspace/nodejs_application/whatap_logs/logs/"
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "log_root=/Users/sample_user/workspace/nodejs_application/whatap_logs/\n"
+          })
         }), "\n"]
       }), "\n"]
     })]

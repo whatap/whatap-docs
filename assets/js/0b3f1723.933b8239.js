@@ -282,7 +282,7 @@ function control_function_createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "ignore_nextjs_build_file_enabled"
+            children: "ignore_build_file_enabled"
           }), " ", (0,jsx_runtime.jsx)("span", {
             class: "type",
             children: "Boolean"
@@ -306,7 +306,7 @@ function control_function_createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
           children: [(0,jsx_runtime.jsx)(_components.strong, {
-            children: "ignore_nextjs_build_file_path"
+            children: "ignore_build_file_path"
           }), " ", (0,jsx_runtime.jsx)("span", {
             class: "type",
             children: "String"
@@ -322,7 +322,7 @@ function control_function_createMdxContent(props) {
           children: ["모니터링에서 제외할 ", (0,jsx_runtime.jsx)(_components.em, {
             children: "Next.js"
           }), " 빌드 파일의 시작 경로를 지정할 수 있습니다. ", (0,jsx_runtime.jsx)(_components.code, {
-            children: "ignore_nextjs_build_file_enabled"
+            children: "ignore_build_file_enabled"
           }), " 값이 ", (0,jsx_runtime.jsx)(_components.code, {
             children: "true"
           }), "일 경우에 적용됩니다. 쉼표(,)를 구분자로 여러 개의 경로를 설정할 수 있습니다."]
@@ -330,7 +330,7 @@ function control_function_createMdxContent(props) {
           children: (0,jsx_runtime.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.conf\"",
-            children: "ignore_nextjs_build_file_path=/next/abc/,/next/def/\n"
+            children: "ignore_build_file_path=/next/abc/,/next/def/\n"
           })
         }), "\n"]
       }), "\n"]
