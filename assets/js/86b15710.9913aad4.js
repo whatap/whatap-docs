@@ -516,7 +516,7 @@ function _createMdxContent(props) {
         }), ")를 도입하였습니다. 피쳐 프로젝트는 기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다. 와탭 피쳐 프로젝트를 통해 서비스의 안정성과 성능을 더욱 효과적으로 관리해 보세요."]
       })]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "아파치 펄사는 대규모의 실시간 데이터를 효율적으로 처리할 수 있도록 설계뙨 분산형 메시징 및 스트리밍 플랫폼입니다. 높은 확장성과 내장된 멀티 테넌시 기능을 제공하며 메시지의 지리적인 복제 및 지속성을 통해 신뢰성과 유연성을 보장합니다. 아파치 펄사의 복잡한 운영 환경에서 성능 및 안정성을 유지하기 위해 모니터링이 중요합니다."
+      children: "아파치 펄사는 대규모의 실시간 데이터를 효율적으로 처리할 수 있도록 설계된 분산형 메시징 및 스트리밍 플랫폼입니다. 높은 확장성과 내장된 멀티 테넌시 기능을 제공하며 메시지의 지리적인 복제 및 지속성을 통해 신뢰성과 유연성을 보장합니다. 아파치 펄사의 복잡한 운영 환경에서 성능 및 안정성을 유지하기 위해 모니터링이 중요합니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭은 새로운 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "피쳐 프로젝트"
@@ -953,13 +953,13 @@ function _createMdxContent(props) {
                 }), "\n"]
               }), "\n"]
             })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-            type: "note",
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "실시간으로 데이터를 업데이트하여 운영자가 즉각적인 상황을 파악할 수 있도록 지원하며 클러스터 운영 중 발생하는 변동성을 신속히 반영합니다. 이를 통해 운영자는 문제를 실시간으로 모니터링하고 즉각적인 조치를 취할 수 있습니다."
-            })]
           }), "\n"]
         }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "실시간으로 데이터를 업데이트하여 운영자가 즉각적인 상황을 파악할 수 있도록 지원하며 클러스터 운영 중 발생하는 변동성을 신속히 반영합니다. 이를 통해 운영자는 문제를 실시간으로 모니터링하고 즉각적인 조치를 취할 수 있습니다."
+        })]
       })]
     })]
   });
