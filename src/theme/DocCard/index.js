@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {
-  findFirstSidebarItemLink,
   useDocById,
-} from '@docusaurus/theme-common/internal';
+  findFirstSidebarItemLink,
+} from '@docusaurus/plugin-content-docs/client';
 import {usePluralForm} from '@docusaurus/theme-common';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import {translate} from '@docusaurus/Translate';
@@ -17,7 +17,7 @@ function useCategoryItemsPlural() {
       count,
       translate(
         {
-          message: '{count} items',
+          message: '1 item|{count} items',
           id: 'theme.docs.DocCard.categoryDescription.plurals',
           description:
             'The default description for a category card in the generated index about how many items this category includes',
@@ -35,7 +35,7 @@ function CardContainer({href, children}) {
     </Link>
   );
 }
-function CardLayout({href, title, description}) {
+function CardLayout({href, icon, title, description}) {
   return (
     <CardContainer href={href}>
       <Heading

@@ -1,31 +1,20 @@
-import React, {memo} from 'react';
+//테스트
+import React from 'react';
 import clsx from 'clsx';
-import {translate} from '@docusaurus/Translate';
-import {
-  useVisibleBlogSidebarItems,
-  BlogSidebarItemList,
-} from '@docusaurus/plugin-content-blog/client';
-import BlogSidebarContent from '@theme/BlogSidebar/Content';
-import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
-const ListComponent = ({items}) => {
-  return (
-    <BlogSidebarItemList
-      items={items}
-      ulClassName={clsx(styles.sidebarItemList, 'clean-list')}
-      liClassName={styles.sidebarItem}
-      linkClassName={styles.sidebarItemLink}
-      linkActiveClassName={styles.sidebarItemLinkActive}
-    />
-  );
-};
-function BlogSidebarDesktop({sidebar}) {
+import {translate} from '@docusaurus/Translate';
+import {useVisibleBlogSidebarItems} from '@docusaurus/theme-common/internal';
+import styles from './styles.module.css';
+
+export default function BlogSidebarDesktop({sidebar}) {
   const sidebarData = require('../_meta.json');
-  const items = useVisibleBlogSidebarItems(sidebar.items);
+  const sideitems = useVisibleBlogSidebarItems(sidebar.items);
+
   const getItemTitle = (permalink) => {
-    const item = sideitems.find((sideitem) => sideitem.permalink.replace('/whatap-docs', '') === permalink);
+    const item = sideitems.find((sideitem) => sideitem.permalink === permalink);
     return item ? item.title : permalink;
   };
+
   return (
     <aside className="col col--3">
       <nav
@@ -35,14 +24,6 @@ function BlogSidebarDesktop({sidebar}) {
           message: 'Blog recent posts navigation',
           description: 'The ARIA label for recent posts in the blog sidebar',
         })}>
-        {/* <div className={clsx(styles.sidebarItemTitle, 'margin-bottom--md')}>
-          {sidebar.title}
-        </div>
-        <BlogSidebarContent
-          items={items}
-          ListComponent={ListComponent}
-          yearGroupHeadingClassName={styles.yearGroupHeading}
-        /> */}
         <ul className={clsx(styles.sidebarItemList, 'clean-list')}>
           {sidebarData.map((category, index) => (
             <li key={index}>
@@ -75,4 +56,3 @@ function BlogSidebarDesktop({sidebar}) {
     </aside>
   );
 }
-export default memo(BlogSidebarDesktop);
