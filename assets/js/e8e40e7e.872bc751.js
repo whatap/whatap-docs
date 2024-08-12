@@ -58,7 +58,7 @@ const metadata = {
   },
   "sidebar": "featuremonitorSidebar",
   "next": {
-    "title": "KAFKA 모니터링",
+    "title": "KAFKA",
     "permalink": "/whatap-docs/features/kafka-introduction"
   }
 };
@@ -87,6 +87,10 @@ const toc = [{
 }, {
   "value": "Aerospike",
   "id": "aerospike",
+  "level": 2
+}, {
+  "value": "Apache Pulsar",
+  "id": "apache-pulsar",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -159,6 +163,20 @@ function _createMdxContent(props) {
             children: "Aerospike"
           })
         }), " 모니터링을 제공합니다. 클러스터 성능, 응답 시간, 데이터 일관성 등을 실시간으로 추적하여 시스템 안정성을 유지하고 최적화할 수 있도록 돕습니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "apache-pulsar",
+        children: "Apache Pulsar"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["아파치 펄사는 확장 가능한 고성능 오픈소스 메시징 및 스트리밍 플랫폼입니다. 와탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "피쳐 프로젝트"
+        }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Apache Pulsar"
+          })
+        }), " 모니터링을 제공합니다. 클러스터의 효율적인 추적을 가능하도록 돕습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "flex-container-s features",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -195,6 +213,26 @@ function _createMdxContent(props) {
               class: "int",
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
                 children: "Aerospike"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                class: "Features",
+                children: "Features"
+              })]
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "apache-pulsar-introduction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "apm-agent",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              class: "logo",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "index-icon/product-apache-pulsar-l.svg",
+                desc: "apache-pulsar"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              class: "int",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                children: "Apache Pulsar"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 class: "Features",
                 children: "Features"
