@@ -14,14 +14,14 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
     } else {
         let oText;
         if (type) {
-            console.log(sid, '222222');
+            // console.log(sid, '222222');
             let oType = whatapLocale[`${type}`][`${currentLocale}`];
             oText = whatapLocale[sid][`${currentLocale}`].replace('{type}', oType)
             if (replace == "({count})") {
                 oText = oText.replace(replace, '(N)').trim();
             }
         } else if (replace) {
-            console.log(sid, '11111');
+            // console.log(sid, '11111');
             if (replace === "noSpace") {
                 oText = whatapLocale[sid][`${currentLocale}`].replace('&nbsp;', ' ');
             } else if (replace === "br") {

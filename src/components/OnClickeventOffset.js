@@ -9,7 +9,7 @@ const ScrollToHashComponent = ({anchor}) => {
     if (location.hash.replace('#','') === anchor) {
       const yOffset = 97; // 이동하고 싶은 offset 값 (픽셀)
       const targetElement = targetRef.current;
-      console.log(targetRef);
+      // console.log(targetRef);
       const yCoordinate = targetElement.getBoundingClientRect().top + window.pageYOffset - yOffset;
 
       window.scrollTo({
