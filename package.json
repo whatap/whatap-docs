@@ -44,7 +44,6 @@
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.0.0",
-    "color": "^4.2.3",
     "docusaurus-plugin-enlarge-image": "^0.1.1",
     "docusaurus-plugin-sass": "^0.2.5",
     "file-saver": "^2.0.5",
@@ -58,7 +57,6 @@
     "pdf-lib": "^1.17.1",
     "prism-react-renderer": "^2.1.0",
     "promise": "^7.1.1",
-    "raw-loader": "^4.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-google-forms-hooks": "^1.2.4",
@@ -69,14 +67,12 @@
     "sharp": "^0.32.6",
     "styled-components": "^6.1.1",
     "swc-loader": "^0.2.3",
-    "unist-util-visit": "^5.0.0",
     "webpack": "^5.88.1"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.5.1",
     "@docusaurus/tsconfig": "^3.5.1",
-    "@types/color": "^3.0.4",
-    "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.29",
     "prettier": "^2.8.4",
     "typescript": "~5.2.2"
   },
