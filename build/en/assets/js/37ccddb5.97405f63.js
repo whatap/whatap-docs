@@ -1,0 +1,11 @@
+"use strict";
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83952],{
+
+/***/ 83154:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"Instance Performance Management","permalink":"/en/tags/instance-performance-management","allTagsPath":"/en/tags","count":7,"items":[{"id":"dotnet/instance-performance-analysis","title":"Instance Performance Management","description":"You can see the .NET application environment along with the performance-related settings.","permalink":"/en/dotnet/instance-performance-analysis"},{"id":"golang/instance-performance-analysis","title":"Instance Performance Management","description":"You can see the Go application environment along with the performance-related settings.","permalink":"/en/golang/instance-performance-analysis"},{"id":"java/instance-performance-analysis","title":"Instance Performance Management","description":"You can see the Java application environment along with the performance-related settings.","permalink":"/en/java/instance-performance-analysis"},{"id":"nodejs/instance-performance-analysis","title":"Instance Performance Management","description":"You can see the Node.js application environment along with the performance-related settings.","permalink":"/en/nodejs/instance-performance-analysis"},{"id":"php/instance-performance-analysis","title":"Instance Performance Management","description":"You can see the PHP application environment along with the performance-related settings.","permalink":"/en/php/instance-performance-analysis"},{"id":"python/instance-performance-analysis","title":"Instance Performance Management","description":"You can see the Python application environment along with the performance-related settings.","permalink":"/en/python/instance-performance-analysis"},{"id":"best-practice-guides/about-instance-performance-analysis","title":"Using the Instance Performance Management","description":"The following provides the main features and usage examples of the Instance Performance Management menu among the application monitoring menus.","permalink":"/en/best-practice-guides/about-instance-performance-analysis"}],"unlisted":false}}');
+
+/***/ })
+
+}]);

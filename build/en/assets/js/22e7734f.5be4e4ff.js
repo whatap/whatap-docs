@@ -1,0 +1,11 @@
+"use strict";
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79727],{
+
+/***/ 79193:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"Database parameters","permalink":"/en/tags/database-parameters","allTagsPath":"/en/tags","count":8,"items":[{"id":"cubrid/analysis-databaseparameter","title":"Database parameters","description":"Parameter values in the database can be viewed and compared by date.","permalink":"/en/cubrid/analysis-databaseparameter"},{"id":"mongodb/analysis-databaseparameter","title":"Database parameters","description":"Parameters in the MongoDB database can be viewed and compared by date.","permalink":"/en/mongodb/analysis-databaseparameter"},{"id":"mysql/analysis-databaseparameter","title":"Database parameters","description":"Parameter values in the database can be viewed and compared by date.","permalink":"/en/mysql/analysis-databaseparameter"},{"id":"oracle-pro/analysis-databaseparameter","title":"Database parameters","description":"Parameter values in the database can be viewed and compared by date.","permalink":"/en/oracle-pro/analysis-databaseparameter"},{"id":"oracle-v1/analysis-databaseparameter","title":"Database parameters","description":"Parameter values in the database can be viewed and compared by date.","permalink":"/en/oracle-v1/analysis-databaseparameter"},{"id":"oracle/analysis-databaseparameter","title":"Database parameters","description":"Parameter values in the database can be viewed and compared by date.","permalink":"/en/oracle/analysis-databaseparameter"},{"id":"postgresql/analysis-databaseparameter","title":"Database parameters","description":"Parameter values in the database can be viewed and compared by date.","permalink":"/en/postgresql/analysis-databaseparameter"},{"id":"redis/analysis-databaseparameter","title":"Database parameters","description":"Parameters in the Redis database can be viewed and compared by date.","permalink":"/en/redis/analysis-databaseparameter"}],"unlisted":false}}');
+
+/***/ })
+
+}]);
