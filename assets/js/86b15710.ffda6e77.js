@@ -647,8 +647,10 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "와탭 아파치 펄사 모니터링은 아파치 펄사 클러스터의 성능과 상태 등 전체 현황을 한 눈에 파악할 수 있도록 다양한 지표를 실시간으로 모니터링합니다. 각 지표를 정기적으로 확인하여 클러스터가 최적의 상태를 유지하도록 관리할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["와탭이 제공하는 *", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar 대시보드"
+        children: ["와탭이 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Apache Pulsar 대시보드"
+          })
         }), "는 다음의 세 가지 프리셋으로 구성되어있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
