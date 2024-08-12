@@ -949,7 +949,11 @@ function _createMdxContent(props) {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                       children: "Recently"
                     })
-                  }), "(최근 메시지 수): 각 토픽 옆의 \"Recently\" 칼럼은 최근 발생한 백로그 메시지 수를 나타냅니다. 최근 백로그 상태를 명확히 이해하고 즉각적인 대응이 필요한 토픽을 식별하는 데 도움을 줍니다."]
+                  }), "(최근 메시지 수): 각 토픽 옆의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Recently"
+                    })
+                  }), " 컬럼은 최근 발생한 백로그 메시지 수를 나타냅니다. 최근 백로그 상태를 명확히 이해하고 즉각적인 대응이 필요한 토픽을 식별하는 데 도움을 줍니다."]
                 }), "\n"]
               }), "\n"]
             })]
