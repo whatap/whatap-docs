@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build website
-        run: USE_SIMPLE_CSS_MINIFIER=true yarn build --locale ko --no-minify
+        run: USE_SIMPLE_CSS_MINIFIER=true yarn build --no-minify
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
