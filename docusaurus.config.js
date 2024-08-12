@@ -134,36 +134,36 @@ const config = {
         }
       },
     ],
-    [
-      'redocusaurus',
-      {
-        // Plugin Options for loading OpenAPI files
-        specs: [
-          // Pass it a path to a local OpenAPI YAML file
-          {
-            // Redocusaurus will automatically bundle your spec into a single file during the build
-            id: 'openapi-spec',
-            spec: 'docs/apidoc/openapi.yaml',
-            // route: '/openapi-spec',
-          },
-          {
-            id: 'openapi-spec-en',
-            spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
-            // route: '/openapi-spec-en',
-          },
-          {
-            id: 'openapi-spec-ja',
-            spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
-            // route: '/openapi-spec-ja',
-          }
-        ],
-        // Theme Options for modifying how redoc renders them
-        theme: {
-          // Change with your site colors
-          primaryColor: '#1890ff',
-        },
-      },
-    ]
+    // [
+    //   'redocusaurus',
+    //   {
+    //     // Plugin Options for loading OpenAPI files
+    //     specs: [
+    //       // Pass it a path to a local OpenAPI YAML file
+    //       {
+    //         // Redocusaurus will automatically bundle your spec into a single file during the build
+    //         id: 'openapi-spec',
+    //         spec: 'docs/apidoc/openapi.yaml',
+    //         // route: '/openapi-spec',
+    //       },
+    //       {
+    //         id: 'openapi-spec-en',
+    //         spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+    //         // route: '/openapi-spec-en',
+    //       },
+    //       {
+    //         id: 'openapi-spec-ja',
+    //         spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
+    //         // route: '/openapi-spec-ja',
+    //       }
+    //     ],
+    //     // Theme Options for modifying how redoc renders them
+    //     theme: {
+    //       // Change with your site colors
+    //       primaryColor: '#1890ff',
+    //     },
+    //   },
+    // ]
   ],
   webpack: {
     jsLoader: (isServer) => ({
@@ -635,7 +635,7 @@ const config = {
             label: '관리 기능',
           },
           {
-            to: 'openapi-spec',
+            to: 'openapi-old',
             position: 'left',
             label: 'Open API',
           },
