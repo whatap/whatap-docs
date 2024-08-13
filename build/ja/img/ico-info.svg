@@ -1,0 +1,16 @@
+<svg class="SVGInline-svg" style="width: 16px;height: 16px;" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+  <!-- <title>ic-s-info-circle</title> -->
+  <desc>Created with Sketch.</desc>
+  <g id="Icon-Set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="WhaTap_Icon_Set" transform="translate(-646.000000, -1013.000000)" fill="#757575">
+          <g id="suggested-icons-copy" transform="translate(40.000000, 966.000000)">
+              <g id="ic-info-circle" transform="translate(606.000000, 47.000000)">
+                  <g transform="translate(1.000000, 1.000000)">
+                      <path d="M9,0 C13.9705627,0 18,4.02943725 18,9 C18,13.9705627 13.9705627,18 9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.02943725 4.02943725,0 9,0 Z M9,1.8 C5.0235498,1.8 1.8,5.0235498 1.8,9 C1.8,12.9764502 5.0235498,16.2 9,16.2 C12.9764502,16.2 16.2,12.9764502 16.2,9 C16.2,5.0235498 12.9764502,1.8 9,1.8 Z M9.9,8.1 L9.9,13.5 L8.1,13.5 L8.1,8.1 L9.9,8.1 Z M9.9,4.5 L9.9,6.3 L8.1,6.3 L8.1,4.5 L9.9,4.5 Z"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </g>
+</svg>

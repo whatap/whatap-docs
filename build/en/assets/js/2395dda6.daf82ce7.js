@@ -1,0 +1,11 @@
+"use strict";
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11729],{
+
+/***/ 73858:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"tag":{"label":"Integrated Report","permalink":"/en/tags/integrated-report","allTagsPath":"/en/tags","count":12,"items":[{"id":"altibase/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/altibase/integrated-report"},{"id":"dotnet/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/dotnet/integrated-report"},{"id":"golang/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/golang/integrated-report"},{"id":"java/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/java/integrated-report"},{"id":"kubernetes/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/kubernetes/integrated-report"},{"id":"mssql/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/mssql/integrated-report"},{"id":"nodejs/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/nodejs/integrated-report"},{"id":"php/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/php/integrated-report"},{"id":"python/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/python/integrated-report"},{"id":"report/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/report/integrated-report"},{"id":"server/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/server/integrated-report"},{"id":"tibero/integrated-report","title":"Integrated Report","description":"It guides you to the integrated report.","permalink":"/en/tibero/integrated-report"}],"unlisted":false}}');
+
+/***/ })
+
+}]);
