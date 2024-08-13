@@ -3483,7 +3483,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3492,7 +3492,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_8_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
@@ -3672,7 +3672,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -3681,7 +3681,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_7_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_7_7',
                 'release-notes/k8s/k8s-1_7_6',
