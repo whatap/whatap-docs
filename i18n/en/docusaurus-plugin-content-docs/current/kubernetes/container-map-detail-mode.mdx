@@ -2,7 +2,7 @@
 id: container-map-detail-mode
 title: Detailed view of container map
 description: You can check detailed information about the target selected in the container map menu on the detailed view screen.
-tags:
+keywords:
   - Kubernetes
   - Kubernetes Monitoring
   - Container Map
@@ -46,17 +46,17 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
   - If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear as shown in ![Leader line a](/img/char-a.svg).
 
-    - **_Node_**: Node details and master meta data
+    - **_Node_**: You can check information for **_Node details_** and **_Object manifest_** and go to **_Node List_**.
 
-    - **_Deployment_**: Master meta data
+    - **_Deployment_**: You can check the **_Object manifest_** and go to the **_Deployment_** list menu.
 
-    - **_ReplicaSet_**: Master meta data
+    - **_ReplicaSet_**: You can check the **_Object manifest_**. 
 
-    - **_Pod_**: Master meta data
+    - **_Pod_**: You can check the **_Object manifest_** and go to the **_Pod list_** menu. 
 
-    - **_ContainerId_**: Container data
+    - **_ContainerId_**: You can check information for **_Container info_** and **_Container summary analysis_** and go to the **_Container list_** menu.
 
-  - ![More icon](/img/ico-more.svg) **_Cube detail_**: You can search the detailed or master meta data by selecting the Cube detail icon on the right of each metric guide.
+    {/* \* ![더보기 아이콘](/img/ico-more.svg) **_상세 조회_**: 각 지표 안내 오른쪽의 상세 조회 아이콘을 선택하면 상세 또는 마스터 메타 정보를 조회할 수 있습니다. */}
 
 - ![Leader line 3](/img/number-03.png) **Resource relations**, **Trace**, **Metrics**, **Log**, **Event**, **Call Information**
 
@@ -91,15 +91,3 @@ The **Display Detail** screen of the container map consists of the following. Ba
   - **_Call Infomation_**
 
     In the **_Call information_** tab, you can see the call flow of the applications running on Kubernetes containers and the status of outbound call targets. For more information, see [the following](container-map-call-information).
-
-{/* 
-
-```
-***트레이스*** 탭에서 컨테이너에서 서비스 중인 애플리케이션 정보를 불러와 해당 애플리케이션의 트랜잭션 현황을 모니터링할 수 있습니다. ***대시보드*** 뷰와 ***트랜잭션 목록*** 뷰를 제공합니다. 자세한 내용은 [다음 문서](container-map-trace)를 참조하세요.
-
- ***메트릭스*** 탭에서 모니터링에 유용한 지표들을 선별해 차트에 표시합니다. 선택한 컨테이너 또는 Pod의 자원이 적절하게 설정되었는지 파악할 수 있습니다. 자세한 내용은 [다음 문서](container-map-metrics)를 참조하세요.
-
- ***로그*** 탭에서 쿠버네티스에서 발생하는 로그를 조회할 수 있습니다. 컨테이너를 종료하면 관련 로그까지 모두 사라집니다. 과거에 발생한 로그는 ***로그 검색*** 옵션을 통해 확인하세요. 자세한 내용은 [다음 문서](container-map-log)를 참조하세요.
-```
-
-*/}

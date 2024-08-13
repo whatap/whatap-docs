@@ -1,0 +1,460 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.14",
+    "date": "2024-02-26",
+    "Lists": [
+      {
+        "ver": "Service 2.1.14",
+        "hash": "service-2114",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">レポート</span>メニューの<span class=\"uitext\">レポートのメール送信予約</span>機能で<span class=\"uitext\">送信曜日</span>項目に対するチェックや解除が動作しない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.14",
+        "hash": "service-2114",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">インスタンス性能管理</span>メニューの<span class=\"uitext\">ソケットオープン数</span>タブで<span class=\"uitext\">トレース表示</span>ボタンをクリックする時にレスポンスがない現象を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.14",
+        "hash": "service-2114",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>ウィンドウでSQL詳細に対するEncoder選択機能を復旧</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.13",
+    "date": "2024-02-23",
+    "Lists": [
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Flexボード</span>メニューでフィルターのプロジェクト選択を変更する時、以前選択されたプロジェクトのフィルター内容を削除するように修正(各フィルターはプロジェクト単位を適用)</p>"
+      },
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリックスチャート</span>メニューのウィジェットでダウンロードするCSVファイルに対し、開始時間以上、終了時間未満までデータを含めるように修正</p>"
+      },
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">アラート設定</span>メニューのメトリクスイベント設定画面でイベントメッセージの例示内容を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.13",
+        "hash": "service-2113",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバーリスト</span>メニューで<img loading=\"lazy\" src=\"/ja/img/ico-setting.svg\" class=\"ico\" width=\"auto\" height=\"auto\"> <span class=\"uitext\">モニタリング管理</span>モードを活性化すると、ツールチップメッセージが消えず、一部の要素を隠す問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.12",
+    "date": "2024-02-20",
+    "Lists": [
+      {
+        "ver": "Service 2.1.12",
+        "hash": "service-2112",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">統計</span>メニューの<span class=\"uitext\">HTTPコール</span>タブでテーブルカラムの名称を変更</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"b500\">TX</span> → <span class=\"uitext\">HTTP呼び出しURL</span></p>\n</li>\n<li>\n<p><span class=\"b500\">サービス</span> → <span class=\"uitext\">TX</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.11",
+    "date": "2024-02-19",
+    "Lists": [
+      {
+        "ver": "Service 2.1.11",
+        "hash": "service-2111",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">アラート設定</span> &gt; <span class=\"uitext\">ログ</span>メニューで複合ログイベントの保存に失敗する問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.10",
+    "date": "2024-02-16",
+    "Lists": [
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "共通",
+        "type": "Deprecated",
+        "desc": "<li><code class=\"Deprecated\">Deprecated</code> 言語設定が英語または日本語の場合、<span class=\"uitext\">アカウント情報管理</span> メニューからマーケティングオプションを削除</li>"
+      },
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでPHP、Goアプリケーションエージェントのインストール過程中に<b>エージェント実行</b>のために一部のコマンドを修正</p>"
+      },
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ホーム画面&gt; <span class=\"uitext\">Flexボード</span>メニューでコンテナperformnaceテンプレート選択時に発生するホワイトアウト問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.10",
+        "hash": "service-2110",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューでノードブロックを選択した後、<span class=\"uitext\">詳細</span>ボタンを選択すると発生するホワイトアウト問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.9",
+    "date": "2024-02-14",
+    "Lists": [
+      {
+        "ver": "Service 2.1.9",
+        "hash": "service-219",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Topオブジェクト</span>メニューで<span class=\"uitext\">table_size</span>及び<span class=\"uitext\">index_size</span>、<span class=\"uitext\">bloat_size</span>カラムの値を正常に出力するように修正</p>",
+        "category": "PostgreSQL V2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.8",
+    "date": "2024-02-01",
+    "Lists": [
+      {
+        "ver": "Service 2.1.8",
+        "hash": "service-218",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>localStorage</code>にカラム選択が残っている状態で<span class=\"uitext\">統計</span>または<span class=\"uitext\">イベント履歴</span>メニューに最初進入する時、読み込みが終わらない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.7",
+    "date": "2024-02-01",
+    "Lists": [
+      {
+        "ver": "Service 2.1.7",
+        "hash": "service-217",
+        "product": "ネットワーク",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code><b>ネットワークパフォーマンスモニタリング</b>(<b>Network Performance Monitoring</b>)サービスをオープンします。 <b>ネットワーク性能モニタリング</b>は、ネットワーク間の混雑や障害を把握し、ユーザーのネットワーク性能の改善に活用するために、プロセスのネットワーク通信情報を収集して可視化するモニタリングソリューションです。</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.6",
+    "date": "2024-01-31",
+    "Lists": [
+      {
+        "ver": "Service 2.1.6",
+        "hash": "service-216",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>ウィンドウでエージェントフィルタリング(<code>okind</code>、<code>onode</code>)が適用されない問題を修正</li>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.5",
+    "date": "2024-01-29",
+    "Lists": [
+      {
+        "ver": "Service 2.1.5",
+        "hash": "service-215",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">クラスターサマリー</span>メニューで<span class=\"uitext\">Total Capacity Memory</span> ウィジェットの単位エラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.4",
+    "date": "2024-01-29",
+    "Lists": [
+      {
+        "ver": "Service 2.1.4",
+        "hash": "service-214",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">メトリックスチャート</span>メニューで全体<code>onode</code>、全体<code>okind</code>を選択してデータを照会すると、全体の<code>oid</code>で照会する問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.3",
+    "date": "2024-01-26",
+    "Lists": [
+      {
+        "ver": "Service 2.1.3",
+        "hash": "service-213",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ネームスペースプロジェクトで<span class=\"uitext\">リソース</span> &gt; <span class=\"uitext\">Object Manifestトポロジー</span>メニューデータが出ない事象を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.3",
+        "hash": "service-213",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>オブジェクトマニフェスト対応のマスターエージェントバージョンを<b>1.5.2</b>に変更</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.2",
+    "date": "2024-01-25",
+    "Lists": [
+      {
+        "ver": "Service 2.1.2",
+        "hash": "service-212",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの案内文を改善</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.1",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "Service 2.1.1",
+        "hash": "service-211",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクトV1対応の終了に関する案内ポップアップウィンドウの日付を変更</p>",
+        "category": "DB V2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_1_x",
+    "ver": "Service 2.1.0",
+    "date": "2024-01-24",
+    "Lists": [
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span>メニューで次の機能を追加</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">アラート発生時刻</span>カラムに<span class=\"uitext\">進行中</span>, <span class=\"uitext\">メンテナンス中に発生</span>タグ表示機能を追加</p>\n</li>\n<li>\n<p><span class=\"uitext\">イベント解消時刻</span>カラム表示のオプションを追加</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">プロジェクトリスト</span>メニューでプロジェクト削除時に表示されるポップアップウィンドウのUIを変更(プロジェクト名がカットされる現象を改善)</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>サイドバーでプロジェクト一覧にマウスオーバーをする時、表示されるツールチップをクリックすると、そのプロジェクトに移動する現象を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>休眠状態のアカウントをプロジェクトまたはグループに招待する時に表示されるフレーズを変更</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">利用内訳</span> &gt; <span class=\"uitext\">プロジェクト課金状況</span>メニューの<span class=\"uitext\">有料転換</span> ウィンドウでプロジェクト名が長い場合は、省略処理、マウスオーバー時のツールチップでプロジェクト名を表示するように改善</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">Flexボード</span>メニューで<span class=\"uitext\">Apdex</span>ウィジェットにチャート凡例設定を追加</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">Flexボード</span>メニューでダッシュボードのエクスポート機能を通じてJSONファイルとして保存する場合、ファイル名の特殊文字を以前は削除したが、下線(_)に変更</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリックスチャート</span>メニューでエージェント全体の選択・解除する機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>一部のメニューで適用されなかった要素にダークテーマを追加適用</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">リアルタイムアラートリスト</span>メニューでグループ指定時に通知一覧が正しく表示されないイシューを修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">アラート設定</span>メニューで次の機能を修正</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">メトリックス</span>イベントタブの修正ウィンドウで<span class=\"uitext\">ガイド</span> <span class=\"uitext\">ショートカット</span>ボタンをクリックすると、言語設定別のガイド文書に移動するように修正</p>\n</li>\n<li>\n<p><span class=\"uitext\">メトリックス</span>イベントタブでJSONの書き出しまたは読み込みの過程で<span class=\"uitext\">保存</span>及び<span class=\"uitext\">リストに追加する</span>ボタンクリック時に、書き出しまたは読み込みウィンドウが閉じられないイシューを修正</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Safariブラウザーで<span class=\"uitext\">お知らせ</span>メニュー内の断続的に一覧が表示されないイシューを修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">トレース分析</span>ウィンドウの<span class=\"uitext\">マルチTX</span>タブでチャートとツリー設定の保存機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">トレース分析</span>ウィンドウの<span class=\"uitext\">マルチTX</span>タブでプロジェクトの選択状態を保存する機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>ウィンドウの<span class=\"uitext\">ツリービュー</span>タブで<img loading=\"lazy\" src=\"/ja/img/ic-outside.svg\" class=\"ico\" width=\"auto\" height=\"auto\">ボタンを選択すると、設定された他のオプションが解除される現象を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統合APPトポロジー</span>及び<span class=\"uitext\">アプリケーショントポロジー</span>内のボタングループ間の間隔エラーを修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">キューブ</span>及び<span class=\"uitext\">性能推移</span> ニューでデザインを修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">レポート</span>メニューの<b>月間サーバーレポート(詳細)</b>テンプレート選択画面でエージェント選択のオプション名を<span class=\"b500\">アプリケーション</span>から<span class=\"uitext\">フィルター</span>に変更</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント履歴</span> &gt; イベント項目選択&gt; イベント詳細メニューで処理履歴を追加する場合、作成したユーザーアカウントが登録されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<li><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューで正常な状態ではない<span class=\"uitext\">ステータス</span>カラムを選択すると表示される<span class=\"uitext\">イベント</span>ウィンドウのイベント履歴が照会されないエラーを修正</li>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span>メニューで次の機能を追加</p>",
+        "category": "DB V2",
+        "details": "<ul>\n<li><span class=\"uitext\">Lock Wait Sessions</span>ウィジェットの右上に照会時間単位と最大値の表記タグを追加</li>\n<li>時間照会範囲が1か月前の状態で3時間以内のデータを照会する場合、照会不可メッセージの表示機能を追加</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span>メニューで大量のロックによりロジック上の負荷を招いて発生するホワイトアウト現象を修正</p>",
+        "category": "DB V2"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">リソース</span> &gt; <span class=\"uitext\">Object Manifest</span>メニューで過去のオブジェクトマニフェストを照会・比較できるように改善(Kubernetesエージェントv1.5.0以降に対応)</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">リソース</span> &gt; <span class=\"uitext\">マスターメタ情報</span>メニュー名を<span class=\"uitext\">Object Manifest</span>に変更</p>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>以下のメニューで抜けている多言語翻訳を追加</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">マルチサービスヒットマップ</span></li>\n<li><span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">レポート</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.1.0",
+        "hash": "service-210",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<li><code class=\"Feature\">Feature</code> <span class=\"uitext\">ログトレンド</span>メニューで<span class=\"uitext\">フィルター</span>一覧にない値を直接入力して選択可能</li>"
+      }
+    ]
+  }
+]

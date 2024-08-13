@@ -2,7 +2,7 @@
 id: container-map
 title: Container Map
 description: The container map in WhaTap Kubernetes is the starting point for Kubernetes monitoring.
-tags:
+keywords:
   - Kubernetes
   - Kubernetes Monitoring
   - Container Map
@@ -176,6 +176,24 @@ Click a specific object or a set of objects. You can check the summary data of t
 
 <ImgLang img='k8s-container-map-sum-all.png' desc='Summary view' />
 
+- **_Target Info_**
+
+  You can check information for Node, Namespace, Deployment, ReplicaSet, Pod, ContainerName, ContainerId, Image, and Agent through the **_Target Info_** tab of the container map. 
+
+  - **_Node_**: You can check information for **_Node details_** and **_Object manifest_** and go to **_Node List_**.
+
+  - **_Deployment_**: You can check the **_Object manifest_** and go to the **_Deployment_** list menu.
+
+  - **_ReplicaSet_**: You can check the **_Object manifest_**. 
+
+  - **_Pod_**: You can check the **_Object manifest_** and go to the **_Pod list_** menu. 
+
+  - **_ContainerId_**: You can check information for **_Container info_** and **_Container summary analysis_** and go to the **_Container list_** menu.
+
+- **_Resource relations_**
+
+  The **_Resource relationships_** tab of the container map allows you to visually see the connections between Kubernetes resources.
+
 - **_Trace_**
 
   Under the **_Trace_** tab in the container map, you can trace each individual transactions of the applications running on the container.
@@ -191,6 +209,10 @@ Click a specific object or a set of objects. You can check the summary data of t
 - **_Event_** 
 
   Under the **_Event_** tab in the container map, you can see integrated views for the events that occurred in the Kubernetes cluster and user threshold events based on the WhaTap's alert function. 
+
+- **_Call Infomation_**
+
+  In the **_Call information_** tab of the container map, you can see the call flow of the applications running on Kubernetes containers and the status of outbound call targets.
 
 ### Display Detail
 

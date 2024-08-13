@@ -2,12 +2,13 @@
 id: agent-name
 title: Agent name identification
 description: The following explains how to set the agent name in order to identify the monitoring target.
-tags:
+keywords:
   - Python
   - Agent name
   - Configuration
 ---
 
+import OkindNodename from "../common-items/_agent-name-okind-onode-desc.mdx";
 import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
 <Apmnamedescription />
@@ -43,10 +44,4 @@ import Agentnamewarning from "../common-items/_agent-name-warning.mdx";
 
   It is a component used in the agent naming scheme to identify applications. It sets the target process to collect data of the application server such as CPU and heap memory. The value corresponds to the `{process}` of the `object_name`.  
 
-- **whatap.okind** <span class='type'>String</span>
-
-  Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.
-
-- **whatap.onode** <span class='type'>String</span>
-
-  Set the node unit to which the agent belongs.
+<OkindNodename />

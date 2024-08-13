@@ -1,0 +1,666 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_6_x",
+    "ver": "Service 2.6.4",
+    "date": "2024-06-28",
+    "Lists": [
+      {
+        "ver": "Service 2.6.4",
+        "hash": "service-264",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>画面のテーマがダークモードの時、<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">スタック</span>メニューの<img decoding=\"async\" loading=\"lazy\" alt=\"スナップショットアイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンでスナップショットを保存すると、一部のスタック情報が表示されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_6_x",
+    "ver": "Service 2.6.3",
+    "date": "2024-06-27",
+    "Lists": [
+      {
+        "ver": "Service 2.6.3",
+        "hash": "service-263",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>次のメニューパスでデータが表示されない問題を修正</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">トレース分析</span> &gt; <span class=\"uitext\">マルチTX</span> &gt; <span class=\"uitext\">表</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">マルチTX</span> &gt; <span class=\"uitext\">表</span></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_6_x",
+    "ver": "Service 2.6.2",
+    "date": "2024-06-27",
+    "Lists": [
+      {
+        "ver": "Service 2.6.2",
+        "hash": "service-262",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューの<span class=\"uitext\">データベース</span>タブで<span class=\"uitext\">インスタンス</span>項目の既定値が<span class=\"uitext\">全体</span>に設定される不具合修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_6_x",
+    "ver": "Service 2.6.1",
+    "date": "2024-06-26",
+    "Lists": [
+      {
+        "ver": "Service 2.6.1",
+        "hash": "service-261",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ノード詳細情報</span>メニューからアクティブステータスのチャートが非表示になる問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.6.1",
+        "hash": "service-261",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> CSVファイルをダウンロードすると、ハングルが文字化けする問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.6.1",
+        "hash": "service-261",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>旧バージョンの<span class=\"uitext\">アプリケーション</span>メニューで、案内メッセージのロケールが文字化けする問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_6_x",
+    "ver": "Service 2.6.0",
+    "date": "2024-06-26",
+    "Lists": [
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ウィジェットに<span class=\"uitext\">選択したプロジェクト({count})</span>表示機能の追加: ウィジェットにデータを呼び出すプロジェクトの一覧を確認可能</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>リーチテキストのウィジェットでテキストを修正すると、断続的に最後の文字が消える問題を修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ウィジェットの削除ポップアップが異常に閉じると、再び開かない問題を修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>反応型ダッシュボードがいっぱいの状態でグループウィジェットの下位にウィジェットを追加すると、間違った通知ポップアップが表示される問題を修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">メトリクス異常検出</span>メニューの詳細データ照会と表示基準の変更</p>",
+        "category": "分析"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">イベント設定</span>メニューで異常値検知の上昇/下落パターンの誤って設定された敏感/鈍感のscore修正</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>決済手段登録/修正メニューのUI/UXの改編(プロフィールアイコン&gt; <span class=\"uitext\">利用状況</span> &gt; <span class=\"uitext\">決済情報</span>)</p>",
+        "category": "利用状況"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">プロジェクト課金状況</span>メニューで<span class=\"uitext\">ステータス</span>カラムの<span class=\"uitext\">有料転換</span>ボタンをカラムから分離して表示されるよう修正</p>",
+        "category": "利用状況"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統合ダッシューボード</span>, <span class=\"uitext\">統合メトリックスダッシューボード</span> メニューのサービス終了の案内メッセージを変更</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクト作成のための商品選択画面で、検索結果がない時の案内文の改善</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>サイドメニューで商品紹介リンクに移動すると、選択した組織が解除される問題を修正</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アプリケーション</span>メニューで基本プリセット変更の機能追加</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アプリケーション</span> メニューでエージェントの検索機能を追加</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">TXマップ</span>メニューで<span class=\"uitext\">TOP 30</span>フィルター内の項目を直接検索して追加する<span class=\"uitext\">カスタム</span>機能を追加</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>旧バージョンの<span class=\"uitext\">アプリケーション</span>メニューを削除する予定</p>",
+        "category": "ダッシューボード",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">サイトマップ</span>メニューに<code class=\"Deprecated\">Deprecated</code>タグを追加</p>\n</li>\n<li>\n<p><span class=\"uitext\">サイトマップ</span> &gt; <span class=\"uitext\">アプリケーション</span> <code class=\"old\">Old</code>メニューに入ると削除予定の案内メッセージを表示</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Deprecated",
+        "desc": "<p><span class=\"uitext\">サイトマップ</span>メニューに<code class=\"Deprecated\">Deprecated</code>タグを追加</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Deprecated",
+        "desc": "<p><span class=\"uitext\">サイトマップ</span>メニューに<code class=\"Deprecated\">Deprecated</code>タグを追加</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アプリケーション</span>メニューでウィジェットの<img decoding=\"async\" loading=\"lazy\" alt=\"情報アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAyQzE3LjUyMjggMiAyMiA2LjQ3NzE1IDIyIDEyQzIyIDE3LjUyMjggMTcuNTIyOCAyMiAxMiAyMkM2LjQ3NzE1IDIyIDIgMTcuNTIyOCAyIDEyQzIgNi40NzcxNSA2LjQ3NzE1IDIgMTIgMlpNMTIgNEM3LjU4MTcyIDQgNCA3LjU4MTcyIDQgMTJDNCAxNi40MTgzIDcuNTgxNzIgMjAgMTIgMjBDMTYuNDE4MyAyMCAyMCAxNi40MTgzIDIwIDEyQzIwIDcuNTgxNzIgMTYuNDE4MyA0IDEyIDRaTTExIDdWOUgxM1Y3SDExWk0xMSAxMVYxN0gxM1YxMUgxMVoiIGZpbGw9IiM3NTc1NzUiLz4KPC9zdmc+Cg==\" width=\"24\" height=\"24\" class=\"img_ev3q\">ボタンをクリックして案内画面を開くと、ローディング表示が当該画面でも適用される問題を修正</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>画面で<span class=\"uitext\">OS</span>、<span class=\"uitext\">クライアント名</span>、<span class=\"uitext\">ステータス</span>に対する文字列が翻訳key値で表示される問題を修正</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>画面でステップタイムライングラフを選択すると、そのステップに移動しない問題を修正</p>",
+        "category": "ダッシューボード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">APPトポロジー</span>メニューから画面上の<span class=\"uitext\">ノード選択</span>ボタンをクリックすると、右側に表示されるダイアグラムのスタイルが正常に適用されない問題を修正</p>",
+        "category": "トポロジー"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">サイトマップ</span> &gt; <span class=\"uitext\">トポロジー</span> &gt; <span class=\"uitext\">アプリケーション統計トポロジー</span>メニューで時間選択オプションをクリックしても機能が作動しない問題を修正し、時間選択オプションのUIを変更</p>",
+        "category": "トポロジー"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">統計</span>下位メニューの機能改善</p>",
+        "category": "統計",
+        "details": "<ul>\n<li>\n<p>最後に照会したエージェント選択オプションの選択値を保存します。</p>\n</li>\n<li>\n<p>各メニューに入った時に自動照会しないように変更します。</p>\n</li>\n<li>\n<p>各メニューの最初の照会期間を<strong>今日</strong>から<strong>前日</strong>に変更します。</p>\n</li>\n<li>\n<p><span class=\"uitext\">トランザクション</span>、<span class=\"uitext\">SQL</span>メニューの基本並べ替え順を<span class=\"uitext\">合計時間</span>に変更します。</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統計</span>下位メニューでフィルターを適用した後、<img decoding=\"async\" loading=\"lazy\" alt=\"検索アイコン\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NGYxMDZkYi1mOWQ1LTRkNWItYjg1Mi01N2E4OWQ4N2NiODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM0RjAyQzM1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM0RjAyQzI1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphMzM1ZWVmNC1mYjZhLTRkNzctOWI5MS0yZDViNTU2OTE4YTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRmMTA2ZGItZjlkNS00ZDViLWI4NTItNTdhODlkODdjYjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xFhE8QAAA2NJREFUeNrMl0tIVGEUx//fd2fm3nGaZHwkA+KjFylBWG5amG10GRGW9AKjRVFRCSJEQUPRokioNulCAhFsV2LiKogIwl7SoiyVsdJ8Vb5G5z3f1/luumk12lynw2WGy1zm/L7z+J9zmZRy4u1gIs/XEV78OC5g0xjostwSEojTR6mXw3fYcO3aok2y15/j83suL7rBgeI8bj4opfUwbOnAw5MCoOv5DVdAG8luvPR1RuqbCUSsAcTfluNmmA5J+MdFlA8Q2cZcjrhAWkz5Vf4VB3dQgUik15R/xcFV7mSaaZR/xcH/9U9SeRDbarpAUJ5HpgVkhO6X4pyZzZDjYogl1ghG04DpRYm5XxKHKm3YV26HywkMjAnc64nBPyxQULh6eUgahpOPnwGJBYrGk6sZ2LvDhukFIEhtWbWToa5Kx/nmEDpexFDs5dZGJhKTCISBRw1OE+Ts/RAePIubVWfYgYcXDbRecELjEh29CRR4Vt6lSR9hbFbi+G4NVWU2HL0dRHtXFN4sIN8D2DWJGl8IbwYTuFLrhJ2OGFuFbvGkW4+iUlvhwMB3gc6XceQVa9BtzJxluW6OGNVO0+MICjYwVJdwTAWkNTBqqAkHQyZ1y3xQQvw1TNUYcdDvs4t/ALLWUVfFLYqMjZ5iVDOfRhIo26TByABmCIovAdmpyySlsWKbRrUFvKKu8mRYBKPMlcnQ1B2lAgVaTuoI07rhnxCYmJMY9gtkehnqDxjo7o2i/wvdZzDruimXQt9PJ/a1h+E7ZmB7iw3NPREMEFRlqYb6/QZ0BzA+Q3pE7R+MSLh0tqJNYEWil0/6cas7ZgLcrHPi7imnOXVVeNueRjFFqWo8qMPjAk7fCUN4AbfBTMVOKYzqKFU7RTkMne/i6Hq/gHJS2zxKX983gbFRWgGoXlQdNdTocFOxn2kNmxEy7Cz1kVmW+CLaP9QM+kAR6hsF1uu0JRJYiIr8WlsEBqXrRLWOwuwohmhPUaKY1NwrOReYp293qlbJWFzS5gZku1R6JBykRUnOqQBHCk05tZNzDwlgMCrNhUlaVcBJAxGEqT1W6cxaGF9e+dJpy6svj9LgSTOL6V9x8K30vuT/IUwNSYcpv8q/4uDXjxj08gIM0ZxR4VqrlC37Un6Vf8XB/qd37d8CDAAmlWmEg71//QAAAABJRU5ErkJggg==\" width=\"35\" height=\"29\" class=\"img_ev3q\">ボタンを選択しなくても、CSVファイルをダウンロードするとフィルターが適用されるように修正</p>",
+        "category": "統計"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>次のメニューパスで、<img decoding=\"async\" loading=\"lazy\" alt=\"カラム設定アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtY29sdW1uPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ1Mi4wMDAwMDAsIC0zMDMxLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgICA8ZyBpZD0iYXBwbGljYXRpb24taWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwMDAwMCwgMjM0Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jb2x1bW4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMi4wMDAwMDAsIDY4NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgNC4wMDAwMDApIiBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwwIEwwLDE2IEwyMCwxNiBMMjAsMCBMMCwwIFogTTEyLDIgTDEyLDE0IEw4LDE0IEw4LDIgTDEyLDIgWiBNMiwyIEw2LDIgTDYsMTQgTDIsMTQgTDIsMiBaIE0xOCwxNCBMMTQsMTQgTDE0LDIgTDE4LDIgTDE4LDE0IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">カラム設定</span>機能で全体カラムを選択すると、ホワイトアウト現象が発生する問題を修正</p>",
+        "category": "統計",
+        "details": "<ul>\n<li><span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">トランザクション</span></li>\n<li><span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">ユーザーエージェント</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">性能推移</span> メニューに進入する時、断続的に全体エージェントが選択されず、特定のエージェントが選択される問題を修正</p>",
+        "category": "分析"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">メトリクスチャート</span>メニューでウィジェットのチャート領域をドラッグした後、<img decoding=\"async\" loading=\"lazy\" alt=\"詳細アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtYW5hbHlzaXM8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTMyLjAwMDAwMCwgLTE3MDQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkYXRhLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDE1NzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtYW5hbHlzaXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg5Mi4wMDAwMDAsIDEyNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIiBpZD0iQ29tYmluZWQtU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsMCBMMjAsMjAgTDAsMjAgTDAsMCBMMjAsMCBaIE00Ljk3MTczODAyLDkuNDc4NjQwMDcgTDIsMTEuOTY5IEwyLDE4IEwxOCwxOCBMMTgsMTAuMjU2IEwxNS45NTcyOTA3LDEyLjAzNzQzMTEgQzE1Ljk3NTUzNDcsMTIuMTM0OTUyOCAxNS45ODgxMTY3LDEyLjIzNDQ2ODYgMTUuOTk0NjgyMywxMi4zMzU2MjQzIEwxNiwxMi41IEMxNiwxMy44ODA3MTE5IDE0Ljg4MDcxMTksMTUgMTMuNSwxNSBDMTIuMTE5Mjg4MSwxNSAxMSwxMy44ODA3MTE5IDExLDEyLjUgQzExLDEyLjI3Nzk4ODggMTEuMDI4OTM5MSwxMi4wNjI3MzY4IDExLjA4MzI1MDksMTEuODU3ODEwMyBMNy45NzA1OTcyMyw5LjUyMTkzNSBDNy41NTc5MTc1NSw5LjgyMjYwMjA1IDcuMDQ5Njc1NTMsMTAgNi41LDEwIEM1LjkyNDQzNzEzLDEwIDUuMzk0MzAyMzUsOS44MDU0OTkyNCA0Ljk3MTczODAyLDkuNDc4NjQwMDcgWiBNMTMuNSwxMS41IEMxMi45NDc3MTUzLDExLjUgMTIuNSwxMS45NDc3MTUzIDEyLjUsMTIuNSBDMTIuNSwxMy4wNTIyODQ3IDEyLjk0NzcxNTMsMTMuNSAxMy41LDEzLjUgQzE0LjA1MjI4NDcsMTMuNSAxNC41LDEzLjA1MjI4NDcgMTQuNSwxMi41IEMxNC41LDExLjk0NzcxNTMgMTQuMDUyMjg0NywxMS41IDEzLjUsMTEuNSBaIE0xOCwyIEwyLDIgTDIsMTAuMDEyIEw0LjExMTUyNTkxLDguMjQwNjIzMzIgQzQuMDU0NTYzNjksOC4wNTY3MTc3MSA0LjAxODI1NzEzLDcuODYzNzMxMzYgNC4wMDUzMTc2OCw3LjY2NDM3NTY5IEw0LDcuNSBDNCw2LjExOTI4ODEzIDUuMTE5Mjg4MTMsNSA2LjUsNSBDNy44ODA3MTE4Nyw1IDksNi4xMTkyODgxMyA5LDcuNSBDOSw3Ljc4NTUzNDk3IDguOTUyMTMxLDguMDU5ODg5NTQgOC44NjM5ODAyOSw4LjMxNTQ3NjQgTDExLjg4OTA1NDgsMTAuNTg4MTYwMSBDMTIuMzI0MTQ0MywxMC4yMjExNzA5IDEyLjg4NjI0MzYsMTAgMTMuNSwxMCBDMTQuMTY3ODA4NSwxMCAxNC43NzQ0NjA1LDEwLjI2MTg0MjIgMTUuMjIyODkwNCwxMC42ODg0NjExIEwxOCw4LjI2NiBMMTgsMiBaIE02LjUsNi41IEM1Ljk0NzcxNTI1LDYuNSA1LjUsNi45NDc3MTUyNSA1LjUsNy41IEM1LjUsOC4wNTIyODQ3NSA1Ljk0NzcxNTI1LDguNSA2LjUsOC41IEM3LjA1MjI4NDc1LDguNSA3LjUsOC4wNTIyODQ3NSA3LjUsNy41IEM3LjUsNi45NDc3MTUyNSA3LjA1MjI4NDc1LDYuNSA2LjUsNi41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"><span class=\"uitext\">詳細</span>ボタンを選択して開く画面の照会時間が、ウィジェットの照会時間と異なって表示される問題を修正</p>",
+        "category": "分析"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<strong>JVMオプション追加</strong>セクションでJettyインストールガイド内容の修正: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code></p>",
+        "category": "Java"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">ロード済クラス</span>メニューでクラス照会画面のタイトルを修正(<span class=\"b500\">クラスシグネチャー</span> → <span class=\"uitext\">クラス詳細</span>)</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>エージェント選択(<span class=\"uitext\">アプリケーション</span>) オプションでエージェント一覧が画面の縦サイズより多い場合、スクロールが適用されない問題を修正</p>",
+        "category": "その他"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューに<strong>Oracle Solaris OS</strong>インストール案内のページを追加</p>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>メニューでブラウザ画面のサイズを小さくすると、チャート凡例テキストが位置を外れる問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>概要を表示の<span class=\"uitext\">対象情報</span>タブに<span class=\"uitext\">Containter State</span>表示と説明を追加</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>概要を表示の<span class=\"uitext\">対象情報</span>タブで別の一覧メニューに移動するリンクを表示するようにスタイルを修正</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>概要を表示で<span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span>タブのカテゴリの整列順序を変更</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>概要を表示、詳細を見るで<span class=\"uitext\">トレース</span>, <span class=\"uitext\">メトリックス</span>タブが点滅する現象を改善</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>グループを選択する際、概要を表示の上段にある別の一覧メニューに移動ボタンを表示するように修正</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>概要を表示で<span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span>タブの照会結果が<span class=\"uitext\">詳細</span>の照会結果と一致しない問題を修正</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <em><strong>Container</strong></em>ビューでブロックが正常個数で表示されない問題を修正</p>",
+        "category": "コンテナマップ"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>リエンジニアリングによるバグ修正</p>",
+        "category": "コンテナマップ",
+        "details": "<ul>\n<li>\n<p>選択したブロックが消えた場合、概要を表示パネルタイトルに'<strong>存在しないコンテナ/Podです。</strong>'メッセージを表示</p>\n</li>\n<li>\n<p><span class=\"uitext\">リセット</span>オプションを選択すると、概要を表示パネルを閉じるように修正</p>\n</li>\n<li>\n<p>グループを選択した後、詳細を表示パネルの<span class=\"uitext\">トレース</span>、<span class=\"uitext\">メトリックス</span>タブで、グループではなく全体を対象にデータを表示する問題を修正</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ノードリスト</span>メニューで<span class=\"uitext\">ノード情報</span>下位カラムに<span class=\"uitext\">capacityType</span>を追加</p>",
+        "category": "クラスター"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ノード詳細</span>メニューの<span class=\"uitext\">コンテナ</span>テーブルを、<span class=\"uitext\">コンテナー</span> &gt; <span class=\"uitext\">コンテナリスト</span>メニューのテーブルと一致するように修正</p>",
+        "category": "クラスター"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ノード詳細</span>メニューで、ノード内の各コンテナに対する次のメトリクスの合計データを<span class=\"uitext\">コンテナ</span>テーブル上段に表示</p>",
+        "category": "クラスター",
+        "details": "<p><code>cpu_quota</code>、<code>cpu_request</code>、<code>cpu_total_milli</code>、<code>mem_limit</code>、<code>mem_request</code>、<code>mem_working_set</code></p>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>リスト型メニューの用語表記を以下のように変更</p>",
+        "category": "クラスター",
+        "details": "<ul>\n<li>\n<p><span class=\"b500\">メモリー</span> → <span class=\"uitext\">Memory</span></p>\n</li>\n<li>\n<p><span class=\"b500\">ネットワーク</span> → <span class=\"uitext\">Network</span></p>\n</li>\n<li>\n<p><span class=\"b500\">ディスク</span> → <span class=\"uitext\">Disk</span></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ノードリスト</span>メニューで、カラム選択のドロップダウンのチェックボックスが、下の一覧のチェックボックスと重なると、チェックボックスが選択できない問題を修正</p>",
+        "category": "クラスター"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>Pending状態のPodを素早く把握できる<span class=\"uitext\">Pending Pod状況</span>メニューを追加(<span class=\"uitext\">実験室</span> &gt; <span class=\"uitext\">Pending Pods</span>メニューから<span class=\"uitext\">ワークロード</span>下位メニューに移動)</p>",
+        "category": "ワークロード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">コンテナリスト</span> メニューでカラムの分類を変更</p>",
+        "category": "ワークロード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">コンテナアプリケーションリスト</span>メニューの<span class=\"uitext\">Oname</span>カラムの名前を<span class=\"uitext\">ApplicationName</span>に変更</p>",
+        "category": "ワークロード"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">エージェントインストール</span> メニューでJavaエージェントの設定オプションに関する説明を追加</p>",
+        "category": "管理"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">エージェントインストール</span> &gt; <span class=\"uitext\">Application Monitoringの追加インストール</span>でPHPエージェントのダウンロードコマンドを修正</p>",
+        "category": "管理"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">エージェントインストール</span> &gt; <span class=\"uitext\">Application Monitoringの追加インストール</span>でGoエージェントのダウンロードコマンドを修正</p>",
+        "category": "管理"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">連携プロジェクト管理</span>メニューの<span class=\"uitext\">連携プロジェクトのリスト</span>で<span class=\"b600\">ビュー</span>権限のない連携プロジェクトは、一覧に表示しないように修正</p>",
+        "category": "管理"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">Kubernetesエージェントリスト</span>メニューで、エージェントが有効な状態である場合のみ<img decoding=\"async\" loading=\"lazy\" alt=\"詳細を表示アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcGFnZXZpZXc8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjcxMS4wMDAwMDApIiBmaWxsPSIjMjk2Y2YyIj4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcGFnZXZpZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgMzY1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMDAwMDAwLCA0LjAwMDAwMCkiIGlkPSJwYWdldmlldyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOCwwIEMxOS4wMzUyOTQxLDAgMTkuODkzNDI1NiwwLjc5NzIzMTgzNCAxOS45OTA3OTk5LDEuODA4MTAwOTYgTDIwLDIgTDE5Ljk5OSw1LjMzMyBMMTcuOTk5LDUuMzMzIEwxOCwyIEwyLDIgTDIsMTQgTDEyLDE0IEwxMiwxNiBMMiwxNiBDMC45NjQ3MDU4ODIsMTYgMC4xMDY1NzQzOTQsMTUuMjAyNzY4MiAwLjAwOTIwMDA4MTQyLDE0LjE5MTg5OSBMLTUuMzI5MDcwNTJlLTE1LDE0IEwtNS4zMjkwNzA1MmUtMTUsMiBDLTUuMzI5MDcwNTJlLTE1LDAuOTY0NzA1ODgyIDAuNzk3MjMxODM0LDAuMTA2NTc0Mzk0IDEuODA4MTAwOTYsMC4wMDkyMDAwODE0MiBMMiwwIEwxOCwwIFogTTEzLjE2NjY2NjcsNCBDMTUuNjU2NjY2Nyw0IDE3LjY2NjY2NjcsNi4wMSAxNy42NjY2NjY3LDguNSBDMTcuNjY2NjY2Nyw5LjM4IDE3LjQwNjY2NjcsMTAuMTkgMTYuOTY2NjY2NywxMC44OSBMMTkuODc2NjY2NywxMy43OSBMMTguNDU2NjY2NywxNS4yMSBMMTUuNTQ2NjY2NywxMi4zIEMxNC44NTY2NjY3LDEyLjc0IDE0LjAzNjY2NjcsMTMgMTMuMTU2NjY2NywxMyBDMTAuNjc2NjY2NywxMyA4LjY2NjY2NjY3LDEwLjk5IDguNjY2NjY2NjcsOC41IEM4LjY2NjY2NjY3LDYuMDEgMTAuNjc2NjY2Nyw0IDEzLjE2NjY2NjcsNCBaIE0xMy4xNjY2NjY3LDYgQzExLjc4NjY2NjcsNiAxMC42NjY2NjY3LDcuMTIgMTAuNjY2NjY2Nyw4LjUgQzEwLjY2NjY2NjcsOS44OCAxMS43ODY2NjY3LDExIDEzLjE2NjY2NjcsMTEgQzE0LjU0NjY2NjcsMTEgMTUuNjY2NjY2Nyw5Ljg4IDE1LjY2NjY2NjcsOC41IEMxNS42NjY2NjY3LDcuMTIgMTQuNTQ2NjY2Nyw2IDEzLjE2NjY2NjcsNiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">詳細</span>ボタンを有効にするよう修正</p>",
+        "category": "管理"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">エージェント設定</span>メニューで<span class=\"uitext\">旧バージョン</span>ボタンを削除</p>",
+        "category": "管理"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>次のメニュー経路で<span class=\"b500\">CPU時間</span>カラムを<span class=\"uitext\">スレッドCPU時間</span>に変更、千単位ごとにコンマ(,)で区切り文字を表示</p>",
+        "category": "その他",
+        "details": "<ul>\n<li><span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">インスタンス性能管理</span> &gt; <span class=\"uitext\">スレッドリスト/ダンプ</span></li>\n<li><span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">Kubernetesエージェントリスト</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">パラメータ</span>メニューで<span class=\"uitext\">基準日</span>と<span class=\"uitext\">比較日</span>をすべて今日の日付に設定すると、リアルタイムデータと保存された最後のデータを照会して比較する機能を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">パラメータ</span>メニューでテーブルのヘッダーに収集時間を表示するように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューの<span class=\"uitext\">インスタンス</span>オプションで1つのインスタンスだけを選択できるように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードの<span class=\"uitext\">アクティブセッション</span>テーブルで<span class=\"uitext\">セッション詳細</span>画面を開いた時に終了したセッションであれば、リアルタイム照会を終了し、時間セレクターを選択できないように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードの<span class=\"uitext\">アクティブセッション</span>テーブルで<span class=\"uitext\">セッション詳細</span>画面を開いた時に終了したセッションであれば<span class=\"uitext\">連携分析</span>ボタンを表示しないように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューでフィルターが適用されない問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>別のメニュー画面でフィルター値を含むリンクをクリックして<span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューに移動すると、<span class=\"uitext\">フィルター</span>項目に<code>s_equal</code>文字列が確認される問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューでデータがないと、トーストメッセージが出力される問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューのインストール案内スタイルおよび構成を改善</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクトのインストール画面で、商品カードフレーズのサポートバージョン項目にMariaDBを追加</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューの基本カラムで<span class=\"uitext\">elapse wait</span>項目を表示しないように修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューで<span class=\"uitext\">sqlHash</span>カラム項目を一番右に移動</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューの<span class=\"uitext\">DB Status</span>ウィジェットでエージェント選択状態をすぐに反映するように修正</p>",
+        "category": "MongoDB"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Log",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span>メニューでログを照会時、累積された件数の表記方法を変更</p>",
+        "details": "<ul>\n<li>\n<p>次のページを照会できる場合は<span class=\"uitext\">数字+</span>、照会できない場合は<span class=\"uitext\">数字</span>で表記</p>\n</li>\n<li>\n<p>次のページを照会する時、<span class=\"uitext\">9999+</span>、<span class=\"uitext\">19999+</span>、<span class=\"uitext\">29999+</span>で累積した件数を表記</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Log",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ設定</span>メニューで<strong>データの保持期間</strong>、<span class=\"b600\">データ保存日</span>項目の名称を<span class=\"uitext\">データ保存期間</span>に統一</p>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "Browser",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">ページロードヒットマップ</span>, <span class=\"uitext\">Ajaxヒットマップ</span>, <span class=\"uitext\">ユーザーセッションログ検索</span>メニューにユーザーがウェブサイトで行うすべてのイベントを記録し、再生できる<span class=\"uitext\">セッションリプレイ</span>機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">URLリスト</span>メニューのUser Interfaceを改善</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">URL修正</span>画面のUIを変更</p>\n</li>\n<li>\n<p>時間選択のオプションを変更</p>\n</li>\n<li>\n<p>プロジェクト<strong>修正</strong>権限のないユーザーに使用不可ボタンを表示しないように変更</p>\n</li>\n<li>\n<p>データ時間ではなく、チャート照会時間を基準にチャートを生成するように修正</p>\n</li>\n<li>\n<p><span class=\"uitext\">URLの削除</span>ボタンの位置を<span class=\"uitext\">URL修正</span>画面から一覧に移動</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.6.0",
+        "hash": "service-260",
+        "product": "URL",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>URLプロジェクト画面の上に<img decoding=\"async\" loading=\"lazy\" alt=\"通知アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNnB4O2hlaWdodDogMjZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZXZlbnQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjM5MS4wMDAwMDApIiBmaWxsPSIjNzk3OTc5Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtZXZlbnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDEuMDAwMDAwKSIgaWQ9IkNvbWJpbmVkLVNoYXBlIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTcsMTkgTDEzLDE5IEMxMywyMC42NTY4NTQyIDExLjY1Njg1NDIsMjIgMTAsMjIgQzguNDAyMzE5MTIsMjIgNy4wOTYzMzkxMiwyMC43NTEwOCA3LjAwNTA5MjY5LDE5LjE3NjI3MjggTDcsMTkgTDEzLDE5IFogTTEwLDAgQzExLjEwNDU2OTUsMCAxMiwwLjg5NTQzMDUgMTIsMiBDMTIsMi4wOTY5NzY1MyAxMS45OTMwOTc5LDIuMTkyMzQwOTkgMTEuOTc5NzU4MiwyLjI4NTYyODk1IEMxNC44ODE4MDcyLDMuMTM4MTQ1MzcgMTcsNS44MjE3MDc0NyAxNyw5IEwxNywxNSBMMTksMTUgQzE5LjU1MjI4NDcsMTUgMjAsMTUuNDQ3NzE1MyAyMCwxNiBDMjAsMTYuNTUyMjg0NyAxOS41NTIyODQ3LDE3IDE5LDE3IEwxLDE3IEMwLjQ0NzcxNTI1LDE3IDYuNzYzNTM3NTFlLTE3LDE2LjU1MjI4NDcgMCwxNiBDLTYuNzYzNTM3NTFlLTE3LDE1LjQ0NzcxNTMgMC40NDc3MTUyNSwxNSAxLDE1IEwzLDE1IEwzLDkgTDMuMDA0MDU5MDIsOC43NTkzNTAyNSBDMy4xMDc4NTc5NSw1LjY4Njg3MzI3IDUuMTkxNzI1NDIsMy4xMTY1MDAwNCA4LjAxOTkwNDkxLDIuMjgzOTg3MDYgQzguMDA2OTAyMDYsMi4xOTIzNDA5OSA4LDIuMDk2OTc2NTMgOCwyIEM4LDAuODk1NDMwNSA4Ljg5NTQzMDUsMCAxMCwwIFogTTEwLDQgQzcuMzAyODE1OCw0IDUuMDkzNjkxMTksNi4xMzk5ODcwNyA1LjAwMzc3NDU5LDguNzkzMDc5MjggTDUsOSBMNSwxNSBMMTUsMTUgTDE1LDkgQzE1LDYuMjM4NTc2MjUgMTIuNzYxNDIzNyw0IDEwLDQgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">リアルタイムアラート</span>アイコンが消える問題を修正</p>"
+      }
+    ]
+  }
+]

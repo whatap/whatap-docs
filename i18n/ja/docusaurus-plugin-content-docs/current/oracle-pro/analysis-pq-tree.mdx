@@ -1,0 +1,26 @@
+---
+id: analysis-pq-tree
+title: 並列クエリツリー
+description: description
+keywords:
+  - Oracle Pro
+  - データベース
+  - 並列クエリツリー
+---
+
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbPqTree" className="uitext" />
+
+<Cmdname sid="side_dbPqTree" className="uitext" />(Parallel Query Tree)は、1日の間にParallel Queryが発生した傾向を分析できる機能を提供します。 実際のタスクを実行するSlave Processと、それらにタスクを割り当てたCoordinator Processとを区別して表示し、全体の実行情報をわかりやすく表示します。 特定の時点で実行したParallel Query情報を提供し、どのような目的で使用されているかを確認するのに役立ちます。
+
+## 基本画面ガイド
+
+<ImgLang img="db-pq-tree-oracle-pro.png" desc="並列クエリツリー" />
+
+<Cmdname sid="time" className="uitext" />項目で照会する時間を設定した後<Cmdname sid="instance" className="uitext" />項目で並列クエリ情報を照会するインスタンスを選択してください。
+
+グラフチャートで設定した条件に合ったパラレルクエリ情報の推移を確認することができます。CoordinatorとSlaveの構造をツリー形式で表現して提供します。
+
+{/* 컬럼 정보 안내 */}
+import Oraclecolumn from "../common-items/_db_oracle-column.mdx";
+
+<Oraclecolumn />

@@ -1,0 +1,27 @@
+## System GC {#side_systemGarbageCollection}
+
+Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_systemGarbageCollection" className="uitext" />
+
+<ImgLang img='ipa-system-gc-java.png' desc='System GC' />
+
+By calling `System.gc()`, you can collect and remove memory objects (garbage) that are no longer needed for the dynamically allocated memory in the Heap area of the JVM (Java Virtual Machine). If you select <Cmdname sid="BTN07740" className="uitext" />, the GC process is performed and you can see the memory capacities before and after execution.
+
+:::note 
+
+If the option has been set to disable explicit GC requests, such as `-XX:+DisableExplicitGC`, <Cmdname sid="side_systemGarbageCollection" className="uitext" /> does not work. 
+
+:::
+
+:::note 
+
+**System GC and memory leak**
+
+When the heap memory usage continues to rise, the ***System GC*** is required to accurately identify and diagnose the possibility of memory leak. 
+
+- **Memory requested or not**: Check if the application is continuously requesting memory. Check if memory requests increased more than expected or memory is being freed correctly.
+
+- **Checking memory usage**: Check if excessive memory usage is happening. Run GC to free objects that are no longer required and observe changes in memory usage. 
+
+- **GC cycle**: Check if GC is not running even if there is sufficient free memory. Check the GC cycle or settings. 
+
+:::

@@ -1,0 +1,319 @@
+---
+id: service-2_7_x
+title: Service 2.7.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_6_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.7.2
+
+2024年07月25日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_hitmap" className="uitext" />メニューの<Cmdname sid="application" className="uitext" />オプションで2つ以上のエージェントを選択できない問題を修正
+
+</div>
+
+## Service 2.7.1
+
+2024年07月24日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />メニューでマッピングされたコンテナ情報がない場合、警告メッセージが表示されないバグを修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの<Cmdname sid="TTL07237" className="uitext" />タブで不適切なサービスが表示されるバグを修正
+
+</div>
+
+## Service 2.7.0
+
+2024年07月24日
+
+<div class='indentTab'>
+
+### 新機能リリーズ
+
+Service 2.7.0リリーズに含まれる新機能を紹介します。
+
+#### `Database`
+
+- <Status priority='1'>New</Status> **Oracle V2**サービスを開始！
+
+  - <Cmdname sid="side_dashboard" className="uitext" />メニューのUIと機能を大幅に改善しました。
+
+  - <Cmdname sid="side_dashboard" className="uitext" />メニューでデータベースの性能の指標情報を確認できます。
+
+  - データベースログを検索し、推移を確認できる<Cmdname sid="side_log" className="uitext" />メニューを追加し、ログ関連の通知を設定できます。
+
+  :::note
+
+  - **Oracle V2**の新機能についての詳細は、[次の文書](../../oracle/monitoring-intro#new-feature)を参考にしてください。
+
+  - **Oracle V2**を利用するためのエージェントの最小バージョンは**1.9.0**です。 エージェント更新の詳細については、[次の文書](../oracle/agent-manage)を参照してください。
+
+  :::
+
+- <Status priority='1'>New</Status> **Oracle Pro**サービスを開始！
+
+  Direct Memory Access(DMA) 技術を活用したアプローチにより、サーバーのメモリに直接アクセスし、必要なデータを抽出します。 この方法は、データベースサーバーへの負荷を最小限に抑えるか、発生させることはありません。 メモリに直接アクセスすることでデータをほぼリアルタイムで収集でき、システムの性能をより細かくモニタリングし、問題発生時に直ちに対応できます。
+
+  :::note
+
+  **Oracle Pro**についての詳細は、[次の文書](../../oracle-pro/monitoring-intro)を参照してください。
+
+  :::
+
+#### `Kubernetes`
+
+- <Status priority='1'>New</Status> Kubernetesクラスター内で実行中のすべてのサービスの状態と情報を総合的に提供する<Cmdname sid="side_kubeServiceList" className="uitext" />メニューを追加
+
+  :::note
+
+  - この機能は、<Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_kubeServiceList" className="uitext" />メニューパスで確認できます。 サービス構成と現状を詳細に把握することで、クラスター内のネットワーク構成を理解できます。
+
+  - <Cmdname sid="side_kubeServiceList" className="uitext" />メニューの詳細については、[次の文書](../../kubernetes/service-list)を参照してください。
+
+  - この機能は、Kubernetesマスターエージェント1.7.8バージョン以降で対応しています。
+
+  :::
+
+- <Status priority='1'>New</Status>ノードの観点でディスクモニタリングのための<Cmdname sid="side_nodeDiskList" className="uitext" /> メニューを追加
+
+  :::note
+
+  - この機能は、<Cmdname sid="side_cluster" className="uitext" /> > <Cmdname sid="side_nodeDiskList" className="uitext" />メニューパスで確認できます。
+
+  - <Cmdname sid="side_nodeDiskList" className="uitext" />メニューの詳細については、[次の文書](../../kubernetes/node-disk-list)を参照してください。
+
+  - この機能は、Kubernetesマスターエージェント1.7.8バージョン以降で対応しています。
+
+  :::
+
+---
+
+### `共通`
+
+- <Status priority='1'>Feature</Status>サイドメニューで<Cmdname sid="all_projects" className="uitext" />を選択してプロジェクト一覧を開くと、プロジェクトの検索入力欄に自動フォーカスされる機能を追加
+
+- <Status priority='1'>Feature</Status> サイドメニューの統合検索でエージェントをIPアドレスで検索できる機能を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_report" className="uitext" /> メニューの <Cmdname sid="set_up_emailing" className="uitext" />画面でタイムフレーズをタイムゾーンが含まれたフレーズに案内するように変更
+
+  > 例）04~06 → (UTC+9) 04~06
+
+- <Status priority='1'>Changed</Status> サイドメニューの組織一覧に、組織アイコンが表示されるように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="MNU07360" className="uitext" /> または <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" /> メニューでモバイルデバイスの通知テスト時に表示される成功メッセージを変更
+
+  > <Cmdname sid="mobile_device_connect_success" className="b500" /> → <Cmdname sid="NTC08219" className="uitext" />
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューの<Cmdname sid="column_select" className="uitext" />ポップオーバーで<Cmdname sid="initialize_default" className="uitext" />ボタン動作のバグを修正
+
+- <Status priority='2'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" /> メニューでユーザー自身のアカウントではなく、他のユーザーのモバイルデバイステスト及び削除ボタンを選択できないように非活性化
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />メニューでテーマ変更時、名前/所属タグの色が反映されない問題を修正
+
+- <Status>Deprecated</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューの<Cmdname sid="anomaly_detection" className="uitext" />タブでイベントを追加または修正する時、オブジェクトのマージ選択UIを削除
+
+- <Status>Deprecated</Status> <Cmdname sid="side_integratedDashboard" className="uitext" /> / <Cmdname sid="side_integratedMetricsBoard" className="uitext" />
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status>次のメニューパスで照会内容をCSVファイルにダウンロードする機能を追加
+
+  - <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_libraryVersion" className="uitext" />
+  - <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_bootEnvironmentVariable" className="uitext" />
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューパスで選択したエージェントのエージェント設定(*whatap.conf*)ファイルダウンロード機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />メニューのテーブルで、CPU時間の増加量を表示するカラムを追加
+
+  :::note
+
+  画面右上に![更新アイコン](/img/ic-refresh2.svg)ボタンを選択すると、<Cmdname sid="TTL08126" className="uitext" />カラムで変化した数値を確認できます。
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="table_view" className="uitext" />および<Cmdname sid="tree_view" className="uitext" />タブにトランザクションのホスト情報がない場合は、ポートを表示しないように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="multi_transaction" className="uitext" />タブにホスト情報がない場合は、トランザクションを表示しないように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" />の下位メニューでエージェントを選択した状態に、別の下位メニューに移動すると、エージェントの選択事項を保持するように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_heapDump" className="uitext" />メニューでヒープダンプ確保に関する案内メッセージが常に表示されるように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statCaller" className="uitext" />メニューのCSVダウンロード機能でダウンロードできる最大件数を変更(10万件 → 1万件)
+
+- <Status priority='0'>Changed</Status> <Cmdname sid="side_statistics" className="uitext" />下位メニューで検索入力欄の幅増加
+
+- <Status priority='0'>Changed</Status> ![サイトマップのアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_topology" className="uitext" /> &gt; <Cmdname sid="side_netstatTopology" className="uitext" />メニューの例の画像を英文に変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューの***TOO_MANY_ACTX***イベントテンプレート条件を変更
+
+  - **従来**：`endsWith(okindName, 'ote-virtual-0') && startsWith(onodeName, 'node-0') && type == 'java'`
+
+  - **変更**：`active_tx_count > 100`
+
+- <Status priority='1'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />メニューの<UI>Top 30</UI>一覧でキーボード移動時に発生するディレー問題を修正
+
+- <Status priority='1'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" /> メニューで過去の時点にフィルターを適用してからリアルタイム照会に変更すると、以前の照会時点のフィルターが適用される問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multi_active_tx" className="uitext" />メニューでテーブルのスクロールが動作しない問題を修正
+
+- <Status priority='0'>Fixed</Status> **Node.js**製品の<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでエージェントのダウンロードに関するメッセージを修正
+
+- <Status priority='2'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" />メニューで次のウィジェット表記を修正
+
+  - ヒープサイズ(<code>heap_tot</code>) → <UI>ヒープの総使用量</UI>(<code>heap_tot</code>)
+
+  - ヒープ最大使用量(<code>heap_max</code>) → <UI>ヒープの最大サイズ</UI>(<code>heap_max</code>)
+
+- <Status>Deprecated</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで重複する**WARNING_OLD_GENARATION_GC**イベントテンプレートを削除
+
+- <Status>Deprecated</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで不要な**WARNING_TPS_DELTA**イベントテンプレートを削除
+
+- <Status>Deprecated</Status>旧バージョンの<Cmdname sid="app_dashboard" className="uitext" />を除去
+
+- <Status>Deprecated</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューの案内メッセージ画面を削除
+
+---
+
+### `Server`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverList" className="uitext" />メニューでテーブルの<UI>Private IP</UI>カラムデータの表示方式を変更
+
+  - IP別に改行して表示していた方式を、一行で表示するように修正
+
+  - カラムの幅に応じて三点リーダー(…) 処理を追加
+
+  - 127.0.0.1を一番最後に表示しPrivate IPを先に露出するように変更
+
+- <Status priority='2'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューの<Cmdname sid="sms_alert_info_mem" className="uitext" /> <Cmdname sid="detail" className="uitext" />で、3時間以上照会すると<Cmdname sid="memory_swapused" className="uitext" />チャートが表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" /> メニューで検索ボタンを選択する時、実際の検索ロジックを実行する場合にのみテーブル内部にローディングUIを表示するように修正
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの要約で<Cmdname sid="TTL06782" className="uitext" />タブに<Cmdname sid="TTL08230" className="uitext" />機能を追加
+
+  :::note
+
+  この機能は現在、韓国語で提供されます。
+
+  :::
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの要約で<Cmdname sid="TTL06782" className="uitext" />及び<Cmdname sid="TTL07237" className="uitext" />タブに**Service**情報を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの<Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="BTN07827" className="uitext" />タブ(要約または詳細を見る)で<Cmdname sid="side_logTail" className="uitext" />メニューに移動できるリンクを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加
+
+  - <UI>Deployment</UI> → <Cmdname sid="side_deploymentList" className="uitext" />
+  - <UI>Pod</UI> → <Cmdname sid="side_podList" className="uitext" />
+  - <UI>Image</UI>, <UI>ImageId</UI> → <Cmdname sid="side_containerImages" className="uitext" />
+  - <UI>ApplicationName</UI> → <Cmdname sid="side_containerizedAppList" className="uitext" />
+
+  各メニューに移動すると、選択した項目のデータでフィルタリングされた照会結果を確認できます。
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加
+
+  - <UI>CotainerId</UI> → <Cmdname sid="side_containerList" className="uitext" />
+  - <UI>ContainerName</UI> → <Cmdname sid="side_containerList" className="uitext" />
+  - <UI>Pod</UI> → <Cmdname sid="side_podList" className="uitext" />
+  - <UI>Node</UI> → <Cmdname sid="side_nodeList" className="uitext" />
+
+  各メニューに移動すると、選択した項目のデータでフィルタリングされた照会結果を確認できます。
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />メニューの<Cmdname sid="TTL06987" className="uitext" />グループに<UI>Image</UI>カラムを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />メニューのイベントリストテーブルに<Cmdname sid="TTL08206" className="uitext" />と<Cmdname sid="TTL08207" className="uitext" />カラムを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューにPod一覧を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="TTL06125" className="uitext" />タブで**Container Id**、**Pod Name**情報を提供し、その情報をクリックすると、それぞれコンテナリスト、パドリストページに移動する機能を追加
+
+- <Status priority='1'>Feature</Status>Kubernetesエージェントが非活性化されると、ユーザーがすぐに認知できるように画面上部にエージェント状態表示を追加
+
+- <Status priority='0'>Changed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューのコンテナ一覧でコンテナ詳細ボタンのUIを改善
+
+- <Status priority='1'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの要約または詳細を見るで、**Node.js**アプリケーションエージェントがインストールされているブロックは、<Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="BTN07827" className="uitext" />タブで**Applicationログ**を表示しないように修正(**Node.js**製品ログのモニタリング未対応)
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューに最初に進入してPodビューまたはコンテナビューに切り替える時、一時的にデータが誤って出力される問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />メニューで上段のメトリクスタイトルが未表記される現象を修正
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='1'>Feature</Status>特定の日付を基準に設定された時間帯のSQLの推移を比較し、騰落を確認できる<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTopSqlComparison" className="uitext" />メニューを追加
+
+  :::note
+
+  この機能は、次の製品でのみご利用いただけます。 
+
+  - [PostgreSQL](../../postgresql/analysis-compare-top-sql)
+  - [MySQL](../../mysql/analysis-compare-top-sql)
+  - [Oracle V2](../../oracle-v2/analysis-compare-top-sql)
+  - [Oracle Pro](../../oracle-pro/analysis-compare-top-sql)
+
+  :::
+
+- <Status priority='1'>Changed</Status>プラン照会のためにクエリを選択すると表示される<Cmdname sid="TTL06224" className="uitext" />画面でFull Scan部分を赤色で表示するように変更
+
+- <Status priority='1'>Changed</Status>次のメニュー経路の画面上部のオプションバーにデータベース名を表示するように修正
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_slowQueryLog" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_deadLock" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrendComparison" className="uitext" />
+  - <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="database" className="uitext" />
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューでプラン照会時に表示されるオブジェクト詳細画面にエラー処理を追加
+
+- <Status priority='0'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューのXOS2メトリクス置き換えの案内メッセージがこれ以上表示されないように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで一部のウィジェット名を変更
+
+  **Long Active Sessions** → ***Long Active Session Count***
+
+- <Status priority='1'>Changed</Status>次のメニューのパスで、<Cmdname sid="active_sessions" className="uitext" />セクションの項目を選択して現れる<Cmdname sid="session_detail" className="uitext" />画面を通じて<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_sessionHistory" className="uitext" />メニューに移動すると、そのセッションが行われる時間の前後30分を基本照会するように変更
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで<Cmdname sid="BTN07592" className="uitext" />オプションの基本時間を30秒から1分に変更
+
+- <Status priority='2'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューで小数点値を基準に昇順または降順にソートされない問題を修正
+
+#### PostgreSQL / MySQL
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューにDBが起動してからどれくらい時間が経ったのかを確認できる***Uptime***ウィジェットを追加
+
+---
+
+### `URL`
+
+<Status priority='0'>Changed</Status> URLリストの案内メッセージのデザインを変更
+
+---
+
+### `Log`
+
+<Status priority='1'>Fixed</Status> <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />メニューで照会時間を変更した時に照会データがなければ、以前のデータが残っている問題を修正
+
+</div>

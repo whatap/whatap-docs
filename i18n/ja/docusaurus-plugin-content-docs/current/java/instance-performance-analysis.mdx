@@ -2,65 +2,99 @@
 id: instance-performance-analysis
 title: インスタンスの性能管理
 description: Javaアプリケーションの環境を確認し、性能に関連する設定を確認できます。
-tags:
+toc_max_heading_level: 2
+keywords:
   - Java
   - アプリケーション
   - インスタンスの性能管理
 ---
 
-import Instanceperformanceanalysis from "../common-items/_instance-performance-analysis.mdx";
+{/* 인스턴스 성능 관리 공통 */}
 
-<Instanceperformanceanalysis />
+import Instanceperformancecommon from "../common-items/_import_instance-performance-common.mdx";
 
-## スレッドダンプ分析 {#thread-details}
+<Instanceperformancecommon />
 
-<Cmdname sid="thread_list" className="uitext" />タブで確認できる情報について案内します。
+{/* 실행 환경 변수 {#side_agentsConfiguration} */}
 
-### スレッド状態 {#stateofthread}
+import Instanceperformancerunenv from "../common-items/_import_instance-performance-run-env.mdx";
 
-スレッドの状態は、`java.lang.Thread`クラス内に`State`という名前のEnumerated Types(列挙型)と宣言された項目です。
+<Instanceperformancerunenv />
 
-- `NEW`：スレッドは作成されましたが、まだ実行されていません。
+{/* 환경 변수 {#side_environmentVariable} */}
 
-- `RUNNABLE`：現在CPUを占有し、作業を行っている状態です。 OSのリソース分配により`WAITING`状態になる可能性があります。
+import Instanceperformanceenv from "../common-items/_import_instance-performance-env.mdx";
 
-- `WAITING`：`wait()`、`join()`、`park()`メソッドなどを利用して待機している状態です。
+<Instanceperformanceenv />
 
-- `TIMED_WAITING`：`sleep()`、`wait()`、`join()`、`park()`メソッド等を用いて待機している状態、`WAITING`状態と異なる点は、与えられた時間に待機している状態です。 外部的な変化だけでなく、時間によっても待機状態が解除されることがあります。
+{/* 힙 히스토그램 {#side_heapHistogram} */}
 
-- `BLOCKED`：使用しようとする個体のロック(Lock)が解除されるまで待機している状態です。
+import Instanceperformanceheap from "../common-items/_import_instance-performance-heap.mdx";
 
-- `TERMINATED`：実行済みの状態です。
+<Instanceperformanceheap />
 
-### スレッドダンプ情報
+{/* 로딩된 클래스 */}
 
-スレッド一覧で各スレッドの<LinkImage img="ico-expander-black.svg" className="ico black" />ボタンをクリックすると、スレッドダンプ情報を確認できます。
+import Instanceperformanceloaded from "../common-items/_import_instance-performance-loaded-class.mdx";
 
-<ImgLang img='ipa-java-thread-list.png' desc='스레드 덤프 정보' />
+<Instanceperformanceloaded />
 
-#### <Cmdname sid="stack" />
+{/* 라이브러리 버전 {#side_libraryVersion} */}
 
-| 項目                                                    | プロパティ            | 説明                                                                              |
-| ----------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------- |
-| <Cmdname sid="thread_id" className="uitext" />        | `threadId`       | スレッドに割り当てられた固有ID                                                                |
-| <Cmdname sid="lock_owner_id" className="uitext" />    | `lockOwnerId`    | スレッドがブロックされたオブジェクト(Monitor) のモニタのロックを維持するスレッドID              |
-| <Cmdname sid="waited_count" className="uitext" />     | `waitedCount`    | スレッドが`WAITING`または`TIMED_WAITING`状態になった総回数                                       |
-| <Cmdname sid="blocked_count" className="uitext" />    | `blockedCount`   | スレッドが`BLOCKED`状態になった総回数                                                         |
-| <Cmdname sid="waited_time" className="uitext" />      | `waitedTime`     | スレッドが`WAITING`状態を継続した経過時間(ミリ秒)、スレッド競合モニタリングが非活性化された場合`-1`を返還 |
-| <Cmdname sid="thread_cpu_time" className="uitext" />  | `threadCpuTime`  | スレッドのCPU時間合計(ナノ秒)をミリ秒で計算して表示、CPU時間測定を非活性化した場合`-1`を返還         |
-| <Cmdname sid="status" className="uitext" />           | `threadstate`    | スレッド状態                                                                          |
-| <Cmdname sid="blocked_time" className="uitext" />     | `blockedTime`    | スレッドが`BLOCKED`状態になってからの経過時間(ミリ秒)、スレッド競合監視が非活性化された場合`-1`を返還   |
-| <Cmdname sid="thread_name" className="uitext" />      | `threadName`     | スレッドの固有名                                                                        |
-| <Cmdname sid="lock_name" className="uitext" />        | `lockName`       | スレッドの入力がブロックされたり`Object.wait`メソッドを介して通知を待つモニターロックを表示した文字列                       |
-| <Cmdname sid="lock_owner_name" className="uitext" />  | `lockOwnerName`  | スレッドがブロックされるオブジェクトのモニターロックを受け入れるスレッド名                                           |
-| <Cmdname sid="thread_user_time" className="uitext" /> | `threadUserTime` | スレッドがユーザモードで実行したCPU時間(ナノ秒)をミリ秒で計算して表示                        |
+import Instanceperformancelibrary from "../common-items/_import_instance-performance-library-version.mdx";
 
-:::note
+<Instanceperformancelibrary />
 
-スレッド情報の詳細については[次のリンク](https://docs.oracle.com/javase/8/docs/api/java/lang/management/ThreadInfo.html)を参考にしてください。
+{/* 스레드 목록/덤프 {#side_threadList} */}
 
-:::
+import Instanceperformancethread from "../common-items/_import_instance-performance-thread-dump.mdx";
 
-#### <Cmdname sid="stack_trace" />
+<Instanceperformancethread />
 
-例外が発生した時のスタック(Stack) 追跡を表示します。 スタックフレーム一覧には、コードが呼び出したメソッド情報が含まれています。
+{/* 소켓 오픈 개수 {#side_openSocket} */}
+
+import Instanceperformanceopensocket from "../common-items/_import_instance-performance-open-socket.mdx";
+
+<Instanceperformanceopensocket />
+
+{/* 메소드 성능 상태 {#side_methodStat} */}
+
+import Instanceperformancemethodstat from "../common-items/_import_instance-performance-method-stat.mdx";
+
+<Instanceperformancemethodstat />
+
+{/* 데이터소스 상태 {#dataSourceStatus} */}
+
+import InstanceperformancedataSourceStatus from "../common-items/_import_instance-performance-datasource.mdx";
+
+<InstanceperformancedataSourceStatus />
+
+{/* 에이전트 로그 {#agent_log} */}
+
+import Instanceperformanceagent_log from "../common-items/_import_instance-performance-agent-log.mdx";
+
+\<Instanceperformanceagent_log /> 
+
+{/* 시스템 GC {#side_systemGarbageCollection} */}
+
+import InstanceperformancesystemGarbageCollection from "../common-items/_import_instance-performance-system-gc.mdx";
+
+<InstanceperformancesystemGarbageCollection />
+
+{/* 힙 덤프 {#side_heapDump} */}
+
+import InstanceperformancesystemheapDump from "../common-items/_import_instance-performance-heap-dump.mdx";
+
+<InstanceperformancesystemheapDump />
+
+{/* 쓰로틀링 설정 {#side_throttlingConfiguration} */}
+
+import Instanceperformancethrottling from "../common-items/_import_instance-performance-throttling.mdx";
+
+<Instanceperformancethrottling />
+
+{/* 에이전트 설정 <code class='oldfunc'>Old</code> {#agent_configuration} */}
+
+import Instanceperformanceagentconfig from "../common-items/_import_instance-performance-agent-config.mdx";
+
+<Instanceperformanceagentconfig />

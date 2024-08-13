@@ -2,12 +2,32 @@
 id: instance-performance-analysis
 title: Instance Performance Management
 description: You can see the .NET application environment along with the performance-related settings.
-tags:
+keywords:
   - .NET
   - Application
   - Instance Performance Management
 ---
 
-import Instanceperformanceanalysis from "../common-items/_instance-performance-analysis.mdx";
+{/* 인스턴스 성능 관리 공통 */}
 
-<Instanceperformanceanalysis />
+import Instanceperformancecommon from "../common-items/_import_instance-performance-common.mdx";
+
+<Instanceperformancecommon />
+
+{/* 실행 환경 변수 {#side_agentsConfiguration} */}
+
+import Instanceperformancerunenv from "../common-items/_import_instance-performance-run-env.mdx";
+
+<Instanceperformancerunenv />
+
+{/* 환경 변수 {#side_environmentVariable} */}
+
+import Instanceperformanceenv from "../common-items/_import_instance-performance-env.mdx";
+
+<Instanceperformanceenv />
+
+{/* 에이전트 로그 {#agent_log} */}
+
+import Instanceperformanceagent_log from "../common-items/_import_instance-performance-agent-log.mdx";
+
+\<Instanceperformanceagent_log /> 

@@ -2,13 +2,14 @@
 id: agent-name
 title: エージェント名の識別
 description: モニタリング対象を区別するためのアプリケーションサーバーの固有の識別子設定について案内します。モニタリング対象システムの中からアプリケーションサーバーを正確に区別するために必須な設定です。サーバーのタイプ、IPなどの情報から自動的に名前を指定する方式と、ユーザーが直接whatap.confファイルやJVMオプションでエージェント名を設定する方法があります。
-tags:
+keywords:
   - Java
   - アプリケーション
   - エージェント
   - whatap.conf
 ---
 
+import OkindNodename from "../common-items/_agent-name-okind-onode-desc.mdx";
 import Apmnamedescription from "../common-items/_apm-name-description.mdx";
 
 <Apmnamedescription />
@@ -84,3 +85,5 @@ IPアドレスが10.11.12.13で、ポート番号が8000の環境で
 import Javaagentname from "../common-items/_java-agent-name.mdx";
 
 <Javaagentname />
+
+<OkindNodename />

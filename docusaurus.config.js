@@ -57,7 +57,6 @@ const config = {
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
-    [ 'docusaurus-plugin-pagemove', {} ],
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -688,7 +687,7 @@ const config = {
         additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp' ],
       },
       zoom: {
-        selector: '.markdown :not(em, div) > img',
+        selector: '.markdown :not(em, div) > img:not(.ico-link)',
         background: {
           light: 'rgb(255, 255, 255)',
           dark: 'rgb(50, 50, 50)'

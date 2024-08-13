@@ -1,17 +1,96 @@
 ホーム画面 > プロジェクト選択 > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />
 
-各テーブルのスペースの最大容量と使用量を時系列に表示することができます。グラフチャートの形で提供され、1日前から最大3週間前までトレンド情報を確認できます。
+データベースのテーブルスペースの使用状況をモニタリングして管理できるメニューです。このメニューでは、テーブルスペースの全体のサイズと使用量を視覚的に提供し、詳細な使用履歴を確認できます。
 
-<ProdImg img='db-stat-table-space.png' desc='' />
+- テーブルスペースのサイズと使用量の変化を時間帯別に視覚的に確認できます。
 
-1. <Cmdname sid="time" className="uitext" />表示する時間を設定してください。
+- 各テーブルスペースの全体サイズ、使用サイズ、使用比率を詳細に提供します。
 
-2. インスタンスでトレンド情報を表示するインスタンス名を選択します。
+- 上位50セグメントのサイズを確認できます。
+
+テーブルスペースの使用状況をリアルタイムでモニタリングすることで、使用量を確認し、適切な容量管理ができます。使用量の高いテーブルスペースとセグメントを追跡し、容量管理と性能最適化のための措置を取ってください。また、テーブルスペースの過剰使用を事前に感知して対応できます。
+
+## 使用する前に
+
+テーブルスペースのサイズ データを収集するには、データベース権限の設定とエージェントオプションの設定が必要です。セグメントのサイズ データは、1日に1回収集され、次のように設定を完了する必要があります。
+
+### DB権限設定
+
+セグメントのサイズ データを収集するには、モニタリングユーザーに適切なデータベース権限を付与する必要があります。次のSQLコマンドを使用して権限を設定してください。
+
+```sql title="SQL"
+grant select any dictionary to monitoring_user;
+-- or --
+grant select on dba_segments to monitoring_user;
+```
+
+### エージェント設定
+
+エージェントオプションを使用して、セグメントサイズのデータ収集基準を設定できます。デフォルト設定は、10MB以上のセグメントを毎日午前5時に収集することです。
+
+```ini title="whatap.conf"
+segments_min_size=10
+segments_hour=5
+```
+
+## 基本画面ガイド
+
+<ProdImg img='db-stat-table-space.png' desc='Tablespace size' />
+
+1. <Cmdname sid="time" className="uitext" />で分析する期間を設定してください。
+
+2. <Cmdname sid="instance" className="uitext" />で分析するデータベースインスタンスを選択してください。
 
 3. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
 :::note
 
-表示時間は、最大3週間まで選択できます。任意の日付と時間を表示するには、時計の表示部分を選択してください。日付と時間のテキスト領域をクリックすると、日付と時間を選択するオプションが表示されます。
+- 照会時間は最大62日まで設定できます。3日以上照会する場合、グラフには1日平均で表示されます。
+
+- 表示時間は、最大3週間まで選択できます。任意の日付と時間を表示するには、時計の表示部分を選択してください。日付と時間のテキスト領域をクリックすると、日付と時間を選択するオプションが表示されます。
 
 :::
+
+## テーブルスペースのサイズ変化の確認{#table_space}
+
+<Cmdname sid="table_space" className="uitext" />セクションでは、時間帯ごとにテーブルスペースの全体のサイズと使用量の変化を視覚的に確認できます。
+
+<ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" />
+
+各色は、個々のテーブルスペースを表します。チャートで特定の時間帯のデータを確認するには、マウスをチャートの上にオーバーした状態で移動してください。その時間帯の詳細情報を画面で確認できます。
+
+## テーブルスペースのサイズ詳細の確認{#table_space_detail}
+
+<Cmdname sid="table_space_detail" className="uitext" />セクションでは、各テーブルスペースの詳細を提供します。
+
+<ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" />
+
+最初に照会した時間と現在の時間を比較して、各テーブルスペースの使用量の変化を確認できます。テーブルスペースの詳細を確認するには、テーブルスペース名の横にある![矢印アイコン](/img/ic-caret-right.svg) ボタンを選択してください。
+
+- <Cmdname sid="table_space_total" className="uitext" />: テーブルスペースの全体サイズです。
+
+- <Cmdname sid="table_space_used" className="uitext" />: 現在使用中のサイズです。
+
+- <Cmdname sid="table_space_usage" className="uitext" />: 全体のサイズに対する使用比率です。
+
+- <Cmdname sid="table_space_changed_amount" className="uitext" />: 最初に照会した時間に対する現在の時間の使用量の変化です。
+
+## セグメントサイズの確認{#TTL08164}
+
+<Cmdname sid="TTL08164" className="uitext" />セクションでは、上位50セグメントのサイズを一覧し、詳細な使用履歴を提供します。
+
+<ImgLang img="db-stat-table-space-size-top50-oracle-pro.png" desc="Tablespace size" />
+
+- <Cmdname sid="TTL08165" className="uitext" />: セグメントが属するコンテナ名です。
+
+- <Cmdname sid="TTL08166" className="uitext" />: セグメントが属するテーブルスペース名です。
+
+- <Cmdname sid="TTL08167" className="uitext" />: セグメントを所有しているユーザーまたはスキーマです。
+
+- <Cmdname sid="TTL08168" className="uitext" />: セグメントの名前です。
+
+- <Cmdname sid="TTL08169" className="uitext" />: セグメントのタイプです。(例: TABLE、INDEX)
+
+- <Cmdname sid="TTL08177" className="uitext" />: 該当する場合は、セグメントのパーティション名です。
+
+- <Cmdname sid="table_space_size" className="uitext" />: セグメントのサイズです。

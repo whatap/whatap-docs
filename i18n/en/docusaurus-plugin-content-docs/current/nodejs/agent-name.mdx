@@ -2,10 +2,12 @@
 id: agent-name
 title: Agent name identification
 description: The following explains how to set the agent name in order to identify the monitoring target.
-tags:
+keywords:
   - Node.js
   - Agent name
 ---
+
+import OkindNodename from "../common-items/_agent-name-okind-onode-desc.mdx";
 
 ## Identifying the agent name{#agentname}
 
@@ -85,14 +87,6 @@ The `auto_oname_prefix` option is the prefix of the agent name. The WhaTap serve
 
 For more information about the agent name setting in Node.js, see [the following](#agentname).
 
-- **whatap.okind** <span class='type'>String</span>
-
-  Set the group unit to which the agent belongs. By setting multiple agents together, the topology can be checked by the group name.
-
-- **whatap.onode** <span class='type'>String</span>
-
-  Set the node unit to which the agent belongs.
-
 - **auto_oname_enabled** <span class='type'>Boolean</span>
 
   Default `false`
@@ -110,3 +104,5 @@ For more information about the agent name setting in Node.js, see [the following
   Default `0`
 
   Modify it to obtain a new agent name from the server. Once set, the agent name is maintained until Node.js is restarted. For a reset, modify the value of `auto_oname_reset`. If a different value is assigned, the setting is applied.
+
+<OkindNodename />

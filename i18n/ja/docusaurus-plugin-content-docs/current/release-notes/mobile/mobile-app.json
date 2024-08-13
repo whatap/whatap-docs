@@ -1,0 +1,205 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/mobile/mobile-app-v1_0_6",
+    "ver": "v1.0.6",
+    "date": "2024-01-26",
+    "Lists": [
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ユーザーに<b>通知設定</b>権限がない場合、プロジェクト内の<span class=\"uitext\">設定</span>メニューで<span class=\"uitext\"></span>オプションが見えないように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>プロジェクト一覧で「データなし」と表示される現象を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> OTP認証機能を使用する際に、無効なキーを入力するとメッセージを表示するように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>多言語翻訳を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>プロジェクトの読み込み時間を改善</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>画面間の移動時間を改善</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>チャート凡例で多言語タイトルの表示問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシュボード</span>に表示されるチャートの順序を変更</p>",
+        "category": "Application"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アクティブトランザクション</span>チャートのエージェント表示順序を名前順に変更</p>",
+        "category": "Application"
+      },
+      {
+        "ver": "v1.0.6",
+        "hash": "v106",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">AJAX Hitmap</span>チャートのデータが表示されないエラーを修正</p>",
+        "category": "Browser"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/mobile/mobile-app-v1_0_9",
+    "ver": "v1.0.9",
+    "date": "2024-06-05",
+    "Lists": [
+      {
+        "ver": "v1.0.9",
+        "hash": "v109",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>コンテナイベントの発生時間がエラーとして表示される問題を修正</p>"
+      },
+      {
+        "ver": "v1.0.9",
+        "hash": "v109",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>通知が発生した場合、正常に登録されたモバイルが削除され、通知を受信できない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/mobile/mobile-app-v1_0_10",
+    "ver": "v1.0.10",
+    "date": "2024-07-04",
+    "Lists": [
+      {
+        "ver": "v1.0.10",
+        "hash": "v1010",
+        "product": "WhaTap Mobile App",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> <span class=\"uitext\">Home</span>画面を追加</p>"
+      },
+      {
+        "ver": "v1.0.10",
+        "hash": "v1010",
+        "product": "WhaTap Mobile App",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code>プロジェクトのお気に入り機能を追加</p>"
+      },
+      {
+        "ver": "v1.0.10",
+        "hash": "v1010",
+        "product": "WhaTap Mobile App",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code>ログイン状態画面を追加</p>"
+      },
+      {
+        "ver": "v1.0.10",
+        "hash": "v1010",
+        "product": "WhaTap Mobile App",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code>モバイル通知テスト機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/mobile/mobile-app-v1_0_8",
+    "ver": "v1.0.8",
+    "date": "2024-03-25",
+    "Lists": [
+      {
+        "ver": "v1.0.8",
+        "hash": "v108",
+        "product": "WhaTap Mobile App",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>これまでリストのみ表示していた通知メッセージの受信詳細を確認できるように修正</p>"
+      },
+      {
+        "ver": "v1.0.8",
+        "hash": "v108",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> iOSアプリの終了状態でのプッシュ受信のエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/mobile/mobile-app-v1_0_7",
+    "ver": "v1.0.7",
+    "date": "2024-01-31",
+    "Lists": [
+      {
+        "ver": "v1.0.7",
+        "hash": "v107",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>アクティブなエージェント数が一致しない問題を修正</p>",
+        "category": "Application"
+      },
+      {
+        "ver": "v1.0.7",
+        "hash": "v107",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Windowsエージェントの場合、CPUチャートのグラフが生成されない問題を修正</p>",
+        "category": "Server"
+      },
+      {
+        "ver": "v1.0.7",
+        "hash": "v107",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Networkチャートのグラフが生成されない問題を修正</p>",
+        "category": "Server"
+      },
+      {
+        "ver": "v1.0.7",
+        "hash": "v107",
+        "product": "WhaTap Mobile App",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>MySQL製品で<span class=\"uitext\">Thread Connected チャート</span>のグラフが生成されない問題を修正</p>",
+        "category": "Database"
+      }
+    ]
+  }
+  ]

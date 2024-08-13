@@ -1,44 +1,44 @@
 ---
 id: cloudwatch-metric-guide
-title: RDS CloudWatch Metric収集権限設定
-description: RDS CloudWatchをモニタリングし、データを収集する準備段階を案内します。
-tags:
+title: RDS CloudWatch Metric収集権限の設定
+description: RDS CloudWatchをモニタリングし、データを収集する準備手順を案内します。
+keywords:
   - データベース
   - CloudWatch
 displayed_sidebar: dbSidebar
 ---
 
-この文書では、データベースモニタリングでI AM ROLEのARN値を利用せずに、EC2にRDS CloudWatch Metricの収集権限を付与し、データ収集方法を案内します。
+この文書では、データベースモニタリングでIAM ROLEのARN値を利用せずに、EC2にRDS CloudWatch Metricの収集権限を付与し、データを収集する方法を案内します。
 
 ## AWS CloudFormationを通じた設定
 
-WhaTapが提供するAWS CloudFormationテンプレートを通じて、AWS IAM Policy、Role、AWS EC2 Instance Profileを自動インストールする方法です。
+WhaTapが提供するAWS CloudFormationテンプレートを通じて、AWS IAM Policy、Role、AWS EC2 Instance Profileを自動的にインストールする方法です。
 
-1. 次のリンクをクリックし、スタック生成によりInstance Profileを作成してください。
+1. 次のリンクをクリックし、スタック生成によりInstance Profileを作成します。
 
    <Link to='https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRdsMetricInstaceProfile&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/whatapCloudMonitoring.yaml' target='_blank' className='ext-link'>RDS権限インストールページ</Link>
 
-2. **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**を順番に選択してください。
+2. **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**の順に選択します。
 
    ![](/img/ec2-instances.png)
 
-3. **EC2**>**Instances**>**Modify IAM role**で先だって生成した**IAM Role**または**Instance Profile Name**を入力してください。
+3. **EC2**>**Instances**>**Modify IAM role**で先に生成した**IAM Role**または**Instance Profile Name**を入力します。
 
    ![](/img/ec2-instances-modify-iam-role.png)
 
-   基本値: Role(WhaTapRDSCloudWatchMetricRole), InstanceProfile(WhaTapRDSCloudWatchMetricProfile)
+   既定値：Role(WhaTapRDSCloudWatchMetricRole)、InstanceProfile(WhaTapRDSCloudWatchMetricProfile)
 
-## AWS Consoleを通じた設定
+## AWS Consoleでの設定
 
-以下は、AWS Consoleを通じてAWS IAM Policy、Roleを順に生成する方法です。
+以下は、AWS Consoleを通じてAWS IAM Policy、Roleを生成する方法です。
 
 ### AWS IAM Policy 生成
 
-1. **IAM**>**Polices**へ進入したあとに、**Create Policy**ボタンを選択してください。
+1. **IAM**>**Polices**に入り、**Create Policy**ボタンを選択します。
 
    ![](/img/iam-polices-create-policy.png)
 
-2. 設定方式をJSONを選択した後、次の内容を入力し、**Next**を選択してください。
+2. 設定方式をJSONに選択し、次の内容を入力した後**Next**を選択します。
 
    ```json
    {
@@ -71,37 +71,37 @@ WhaTapが提供するAWS CloudFormationテンプレートを通じて、AWS IAM 
    }
    ```
 
-3. ポリシー名(**Policy name**)を設定したあと、**Create Policy**ボタンを選択してください。
+3. ポリシー名(**Policy name**)を設定し、**Create Policy**ボタンを選択します。
 
    ![](/img/policy-name.png)
 
 ### AWS IAM Role 生成
 
-1. **IAM**>**Roles**へ進入したあと、**Create Role**ボタンを選択してください。
+1. **IAM**>**Roles**に入り、**Create Role**ボタンを選択します。
 
    ![](/img/iam-roles-create-role.png)
 
-2. **Select trusted entity**段階で信頼できるNTTタイプで**AWS Service**、**EC2**を順番に選択してください。
+2. **Select trusted entity**で信頼できるエンティティタイプを**AWS Service**、**EC2**の順に選択します。
 
    ![](/img/select-trusted-entity.png)
 
-3. **Add permissoins** 段階で先に作成したポリシーを選択してください。
+3. **Add permissoins** で先に作成したポリシーを選択します。
 
-4. **Name, review, and create**段階では名前と説明を作成し、Create roleボタンを選択してください。
+4. **Name, review, and create**では名前と説明を作成し、Create roleボタンを選択します。
 
 ### AWS IAM Role修正
 
-1. **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**を順番に選択してください。
+1. **EC2**>**Instances**でDBエージェントがインストールされているインスタンスを選択し、**Actions**>**Security**>**Modify IAM role**の順に選択します。
 
    ![](/img/ec2-instances.png)
 
-2. **EC2**>**Instances**>**Modify IAM role**で先立って生成した**IAM Role**を入力してください。
+2. **EC2**>**Instances**>**Modify IAM role**で先に生成した**IAM Role**を入力します。
 
    ![](/img/ec2-instances-modify-iam-role.png)
 
 ## エージェント設定
 
-*whatap.conf*ファイルにどの指標を照会するかオプションを設定してください。 `arn`は省略可能です。
+*whatap.conf*ファイルにどの指標を照会するかオプションを設定します。 `arn`は省略可能です。
 
 ```ini title='whatap.conf'
 cloud_watch=on

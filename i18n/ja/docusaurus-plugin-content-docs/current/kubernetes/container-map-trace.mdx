@@ -2,7 +2,7 @@
 id: container-map-trace
 title: Trace
 description: WhaTap Kubernetesモニタリングのトレース機能は、コンテナ上で実行中のアプリケーション状態のモニタリング情報を提供します。
-tags:
+keywords:
   - Kubernetes
   - Kubernetesモニタリング
   - Trace
@@ -24,9 +24,9 @@ Kubernetes上で実行中のアプリケーションを追跡するには、Java
 
 :::
 
-<ImgLang img='whatap_kubernetes_container_map_trace_example.png' desc='トレース' />
+<ImgLang img='k8s-container-map-trace.png' desc='トレース' />
 
-**_トレース_**機能の下位メニューは、**_ダッシュボード_**、**_TXリスト_**で構成されています。
+{/* **_트레이스_** 기능의 하위 메뉴는 **_대시보드_**, **_트랜잭션 목록_**으로 구성되어 있습니다. */}
 
 ## ダッシュボード
 
@@ -78,8 +78,12 @@ Kubernetes上で実行中のアプリケーションを追跡するには、Java
 
 - **_GC Old Generation Count_**：Old領域のGC回数、Node.js、Pythonを除く
 
-## TXリスト
+## トレース分析
 
-**_トランザクション一覧_**画面は、指定された時間帯のトランザクション一覧情報を表示します。トランザクションの分布図を確認して特定の区間のトランザクションのみを表示する場合は、トレースの上の**_ダッシュボード_**のヒットマップチャートから対象を選択(ドラッグ)してください。
+ダッシュボード内**_Hitmap_**で照会を希望する区間をドラッグすると**_トレース分析_**を確認できます。トランザクション一覧から目的のトランザクションを選択した後、各トランザクションの下位のステップ情報を一度に確認できます。 
 
-<ImgLang img='k8s-tx-list.png' desc='TXリスト' />
+:::note 
+
+トレース分析の詳細については [次の文書](../java/dashboard-hitmap-trace)を参照してください。 
+
+:::

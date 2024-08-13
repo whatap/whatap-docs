@@ -2,7 +2,7 @@
 id: agent-control-function
 title: エージェント機能の制御
 description: Node.jsアプリケーションサーバーの機能を制御できます。
-tags:
+keywords:
   - Node.js
 ---
 
@@ -12,18 +12,18 @@ import Nodejscontrolfunction from "../common-items/_nodejs-control-function.mdx"
 
 <Nodejscontrolfunction />
 
-- **ignore_nextjs_build_file_enabled** <span class='type'>Boolean</span> <code class="my">Node.js Agent v0.4.96 or later</code>
+- **ignore_build_file_enabled** <span class='type'>Boolean</span> <code class="my">Node.js Agent v0.4.96 or later</code>
 
   既定値 `true`
 
   *Next.js*ビルドファイルに対するモニタリング可否を設定します。このオプション値を`true`に設定すると、*Next.js*ビルドファイルをモニタリングしません。
 
-- **ignore_nextjs_build_file_path** <span class='type'>String</span> <code class="my">Node.js Agent v0.4.96 or later</code>
+- **ignore_build_file_path** <span class='type'>String</span> <code class="my">Node.js Agent v0.4.96 or later</code>
 
   既定値`/next/`
 
-  モニタリングで除外する*Next.js*ビルドファイルの開始パスを指定できます。`ignore_nextjs_build_file_enabled`値が`true`の場合に適用されます。コンマ(,)を区切り文字として複数のパスを設定できます。
+  モニタリングで除外する*Next.js*ビルドファイルの開始パスを指定できます。`ignore_build_file_enabled`値が`true`の場合に適用されます。コンマ(,)を区切り文字として複数のパスを設定できます。
 
   ```ini title="whatap.conf"
-  ignore_nextjs_build_file_path=/next/abc/,/next/def/
+  ignore_build_file_path=/next/abc/,/next/def/
   ```

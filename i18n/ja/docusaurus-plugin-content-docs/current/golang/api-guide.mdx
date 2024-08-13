@@ -2,7 +2,7 @@
 id: api-guide
 title: APIガイド
 description: Goライブラリーを利用して、WhaTapエージェントにモニタリングするデータを送信できます。
-tags:
+keywords:
   - Go
   - APIガイド
   - ライブラリ
@@ -24,9 +24,8 @@ go get github.com/whatap/go-api
 
 `trace.Init()`メソッドを使用してモニタリングモジュールを起動してください。 `defer trace.Shutdown()`でモニタリング終了を保証します。
 
-```go title='Go'
+```javascript title="Go"
 import "github.com/whatap/go-api/trace"
-
 
 func main(){
     trace.Init(nil)
@@ -39,11 +38,11 @@ func main(){
 func Init(m map[string]string)
 ```
 
-`map[string]string`形式をアプリケーションの初期に設定できます。 または、*whatap.conf*ファイルに設定できます。 エージェントとTCP接続が正常に行われてこそ、性能情報をWhaTap収集サーバーに送ることができます。 デフォルト接続情報として**127.0.0.1:6600**を通じてTCPで通信します。 
+`map[string]string`形式をアプリケーションの初期に設定できます。 または、*whatap.conf*ファイルに設定できます。 性能情報をWhaTap収集サーバーに送るためには、エージェントからTCP接続が正常に行われる必要があります。 デフォルト接続情報として**127.0.0.1:6600**を通じてTCPで通信します。 
 
 接続情報を変更するには、`Init`メソッドに設定を伝えるか*whatap.conf* ファイルに設定し、アプリケーションを再起動してください。
 
-```go title='Go'
+```go title="Go"
 m := make(map[string]string)
 m["net_ipc_host"] = "127.0.0.1"
 m["net_ipc_port"] = "6601"
@@ -51,9 +50,9 @@ m["net_ipc_port"] = "6601"
 trace.Init(m)
 ```
 
-```ini title='whatap.conf'
+```ini title="whatap.conf"
 accesskey={アクセスキー}
-whatap.server.host={収集サーバーIPアドレス}
+whatap.server.host={収集サーバーのIPアドレス}
 net_ipc_host=127.0.0.1
 net_ipc_host=6600
 ```
@@ -66,13 +65,13 @@ net_ipc_host=6600
 
 `go-api/trace`モジュールの`Start`, `StartWithReqest`メソッドで`whatap context`を作成します。 `context`内部に`whatap`キーで`TraceCtx`情報を設定します。
 
-```go title='Go'
+```go title="Go"
 var traceCtx *TraceCtx
 traceCtx.Txid = keygen.Next()
 ctx = context.WithValue(ctx, "whatap", traceCtx)
 ```
 
-トランザクション、SQL、DBConnection、外部HTTP request、一般メソッド追跡などのAPIでの開始時点は必ず`whatap`キーで`TraceCtx`個体が存在する`Context`が必要です。
+トランザクション、SQL、DBConnection、外部HTTP request、一般メソッド追跡などのAPIでの開始時点は必ず`whatap`キーで`TraceCtx`オブジェクトがある`Context`が必要です。
 
 ## トランザクションのトレース
 
@@ -82,7 +81,7 @@ Webリクエストと応答までのトランザクションと一般的なタ�
 
 ### Webトランザクション追跡
 
-```go title='Go'
+```go title="Go"
 http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
     ctx, _ := trace.StartWithRequest(r)
     defer trace.End(ctx, nil)
@@ -101,13 +100,13 @@ http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
 
   ユーザーが送る文字列をプロファイル情報に出力する機能を提供します。
 
-  ```go title='Go'
+  ```go title="Go"
   http.HandleFunc("/wrapHandleFunc", trace.Func(func(w http.ResponseWriter, r *http.Request) {
       ...
   }))
   ```
 
-  ```go title='Go'
+  ```go title="Go"
   http.Handle("/wrapHandleFunc1", trace.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
       ...
   }))
@@ -115,7 +114,7 @@ http.HandleFunc("/index", func(w http.ResponseWriter, r *http.Request) {
 
 ### 一般的なトランザクション追跡
 
-```go title='Go'
+```go title="Go"
 func main() {
     ...
 
@@ -132,27 +131,27 @@ func main() {
 
 ### API
 
-```go title='Go'
+```go title="Go"
 func Start(ctx context.Context, name string) (context.Context, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func End(ctx context.Context, err error) error
 ```
 
-```go title='Go'
+```go title="Go"
 func StartWithRequest(r *http.Request) (context.Context, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func Step(ctx context.Context, title, message string, elapsed, value int) error
 ```
 
-```go title='Go'
+```go title="Go"
 func HandlerFunc(handler func(http.ResponseWriter, *http.Request)) http.HandlerFunc
 ```
 
-```go title='Go'
+```go title="Go"
 func Func(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request)
 ```
 
@@ -162,7 +161,7 @@ DB接続情報、sql構文、errorおよびprepared構文のためのパラメ�
 
 ### DB Connection
 
-```go title='Go'
+```go title="Go"
 import (
     whatapsql "github.com/whatap/go-api/sql"
 )
@@ -182,7 +181,7 @@ func main(){
 }
 ```
 
-```go title='Go'
+```go title="Go"
 import (
     whatapsql "github.com/whatap/go-api/sql"
 )
@@ -202,7 +201,7 @@ func main(){
 }
 ```
 
-```go title='Go'
+```go title="Go"
 import (
     whatapsql "github.com/whatap/go-api/sql"
 )
@@ -240,9 +239,9 @@ func main(){
 
 ### database/sqlパッケージの設定
 
-database/sqlパッケージの`sql.Open`メソッドの代わりに、`whatapsql.OpenContext`メソッドを使います。 `PrepareContext`、`QueryContext`、`ExecContext`など`context`を送るメソッドで使用することをお勧めします。 伝達する`context`は`trace.Start()`を通じて、WhaTap TraceCtx情報が必要です。
+database/sqlパッケージの`sql.Open`メソッドの代わりに、`whatapsql.OpenContext`メソッドを使います。 `PrepareContext`、`QueryContext`、`ExecContext`など`context`を送るメソッドで使用することをお勧めします。 転送する`context`は`trace.Start()`を通じて、WhaTap TraceCtx情報が必要です。
 
-```go title='Go'
+```go title="Go"
 
 import (
     _ "github.com/go-sql-driver/mysql"
@@ -258,7 +257,7 @@ func main() {
     http.HandleFunc("/query", whataphttp.Func(func(w http.ResponseWriter, r *http.Request){
       ctx := r.Context()
     
-      // Use WhaTap Driver. whatap의 TraceCtxがあるcontextを送ります。
+      // Use WhaTap Driver. whatapのTraceCtxがあるcontextを送ります。
       db, err := whatapsql.OpenContext(ctx, "mysql", dataSource)
       if err != nil {
         fmt.Println("Error whatapsql.Open ", err)
@@ -280,33 +279,33 @@ func main() {
 
 ### API
 
-```go title='Go'
+```go title="Go"
 func Start(ctx context.Context, dbhost, sql string) (*SqlCtx, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func StartOpen(ctx context.Context, dbhost string) (*SqlCtx, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func End(sqlCtx *SqlCtx, err error) error
 ```
 
-```go title='Go'
+```go title="Go"
 func StartWithParam(ctx context.Context, dbhost, sql, param ...interface{}) (*SqlCtx, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func StartWithParamArray(ctx context.Context, dbhost, sql string, param []interface{}) (*SqlCtx, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func Trace(ctx context.Context, dbhost, sql, param string, elapsed int, err error) error
 ```
 
 ## HTTPリクエスト追跡
 
-```go title='Go'
+```go title="Go"
 import (
     "github.com/whatap/go-api/httc"
 )
@@ -315,16 +314,16 @@ func main(){
     trace.Init(nil)
     //It must be executed before closing the app.
     defer trace.Shutdown()
-  
+
     ctx, _ := trace.Start(context.Background(), "Trace Http Call")
     defer trace.End(ctx, nil)
-  
+
     httpcCtx, _ := httpc.Start(ctx, callUrl)
     resp, err := http.Get(callUrl)
     if err == nil {
-      httpc.End(httpcCtx, resp.StatusCode, "", nil)
+        httpc.End(httpcCtx, resp.StatusCode, "", nil)
     } else {
-      httpc.End(httpcCtx, 0, "", err)
+        httpc.End(httpcCtx, 0, "", err)
     }
 }
 ```
@@ -333,52 +332,188 @@ func main(){
 
 RoundTripを設定できます。
 
-```go title='Go'
+```go title="Go"
 import (
     "github.com/whatap/go-api/instrumentation/net/http/whataphttp"
 )
+
 func main() {
-    config := make(map[string]string)  
-    trace.Init(config)  
-    defer trace.Shutdown()    
-    
-    ctx, _ := trace.Start(context.Background(), "Http call")  
-    defer trace.End(ctx, nil)  
-    
-    callUrl := "http://aaa.com/xxx"  
-    client := http.DefaultClient        
-    // Use WhaTap RoundTrip. whatapのTraceCtxがあるcontextを送ります。   
-    client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)        
-    resp, err := client.Get(callUrl)  
-    if err != nil {      
-      ...  
-    }  
-    defer resp.Body.Close()  
-    
+    config := make(map[string]string)
+    trace.Init(config)
+    defer trace.Shutdown()
+
+    ctx, _ := trace.Start(context.Background(), "Http call")
+    defer trace.End(ctx, nil)
+
+    callUrl := "http://aaa.com/xxx"
+    client := http.DefaultClient
+    // Use WhaTap RoundTrip. Passes the context with whatap's TraceCtx.
+    client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)
+    resp, err := client.Get(callUrl)
+    if err != nil {
+        ...
+    }
+    defer resp.Body.Close()
     ...
-    
 }
 ```
 
 ### API
 
-```go title='Go'
+```go title="Go"
 func Start(ctx context.Context, url string) (*HttpcCtx, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func End(httpcCtx *HttpcCtx, status int, reason string, err error) error
 ```
 
-```go title='Go'
+```go title="Go"
 func Trace(ctx context.Context, host string, port int, url string, elapsed int, status int, reason string, err error) error
+```
+
+## マルチトランザクション追跡(分散追跡) {#mtrace}
+
+**マルチトランザクション**は、別のエージェントやプロジェクトに関連付けられたトランザクションを意味します。 WhaTapプロジェクトに登録されたアプリケーションサービス間の呼び出しを追跡するのが、**マルチトランザクション追跡**です。
+
+:::note
+
+Goエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wtap-mst`、`x-wtap-sp1`)でマルチトランザクションを追跡します。 ゲートウェイを通過するHTTPトランザクションが連携追跡されない場合は、HTTPヘッダー条件を確認してください。
+
+オープンソースの追跡のためにTraceContextに対応します。 (traceparentヘッダー追跡)
+
+:::
+
+### エージェント設定
+
+マルチトランザクション追跡のためのエージェント設定ファイル(*whatap.conf*)に次のようにオプションを設定してください。
+
+```ini title="whatap.conf"
+# Activation option, Default: false
+mtrace_enabled=true
+
+# Sampling rate, Default: 10
+mtrace_rate=100
+```
+
+### Request Headerを渡す
+
+分散追跡情報(ヘッダー情報)を確認するには、Request Headerを渡す必要があります。
+
+```go title="Go"
+// import "github.com/whatap/go-api/trace"
+func UpdateMtrace(traceCtx *trace.TraceCtx, header http.Header) 
+```
+
+`trace.StartWithRequest`関数は、内部的に`UpdateMtrace`関数を呼び出します。 `trace.StartWithRequest`関数を使用しない場合は、直接呼び出して受け取ったヘッダー情報を分析する必要があります。
+
+```go title="Go"
+// func GetTraceContext(ctx context.Context) (context.Context, *TraceCtx)
+// if v := ctx.Value("whatap"); v != nil {
+//      return ctx, v.(*TraceCtx)
+// }
+ctx, traceCtx := trace.GetTraceContext(ctx);
+if traceCtx != nil {
+    trace.UpdateMtrace(traceCtx, header)
+}
+```
+
+:::note
+
+`trace.Start`関数の内部コード参照:
+
+```go title="Go" showLineNumbers {6}
+func Start(ctx context.Context, name string) (context.Context, error) {
+    ctx, traceCtx := NewTraceContext(ctx)
+    traceCtx.Name = name
+    traceCtx.StartTime = dateutil.SystemNow()
+    // update multi trace info
+    UpdateMtrace(traceCtx, http.Header{})
+
+    ...
+```
+
+`trace.StartWithRequest`関数の内部コード参照:
+
+```go title="Go" showLineNumbers {6}
+func StartWithRequest(r *http.Request) (context.Context, error) {
+    ctx, traceCtx := NewTraceContext(r.Context())
+    traceCtx.Name = r.RequestURI
+    traceCtx.StartTime = dateutil.SystemNow()
+    // update multi trace info
+    UpdateMtrace(traceCtx, r.Header)
+
+    ...
+```
+
+:::
+
+### HTTP接続時にHeader情報を追加する
+
+外部にHTTP接続するとき、Request Headerに追跡のためのHeader情報を追加してください。
+
+```go title="Go" showLineNumbers
+import (
+    "github.com/whatap/go-api/trace"
+)
+
+func GetMTrace(ctx context.Context) http.Header
+```
+
+次は、分散追跡に必要なヘッダーを照会する関数です。 返されるヘッダーを外部リクエストに追加する必要があります。 contextには、'whatap'項目の`trace.TraceContext`情報が含まれている必要があります。 当該情報は、`trace.Start`、`StartWithRequest`、`StartWithContext`関数を使用する際に、内部にwhatap context情報が追加されます。
+
+```go title="Example code" showLineNumbers {1}
+headers := trace.GetMTrace(wCtx)
+for key, _ := range headers {
+    // req *http.Request
+    // The Add function is also available.
+    req.Header.Set(key, headers.Get(key))
+}
+```
+
+### 自動的にヘッダーを追加する
+
+Whatap transport(RoundTrip)には、内部的に`GetMTrace`を使用するコードは既に存在します。 オプションを活性化すると、自動的にヘッダー情報を追加できます。
+
+```go title="Example code" showLineNumbers
+import (
+    "net/http"
+    "github.com/whatap/go-api/instrumentation/net/http/whataphttp"
+)
+
+...
+
+//client := http.DefaultClient
+client := http.Client{
+    Timeout: timeout,
+}
+client.Transport = whataphttp.NewRoundTrip(ctx, http.DefaultTransport)
+if resp, err := client.Get(callUrl); err == nil {
+    ...
+}
+```
+
+以下は、複数のTransport使用例です。 contextには、'whatap'項目の`trace.TraceContext`情報が含まれている必要があります。 
+
+```go title="Exmple code" showLineNumbers
+import (
+    "net/http"
+    "github.com/whatap/go-api/instrumentation/net/http/whataphttp"
+)
+
+...
+
+client := http.DefaultClient
+client.Transport = NewAccessLogRoundTrip(whataphttp.NewRoundTrip(ctx, http.DefaultTransport))	
+
+...
 ```
 
 ## メソッド追跡
 
-ユーザーメソッドまたは希望する区間の実行時間を測定するためのAPIです。 メソッド実行する前後でAPIを設定できます。
+ユーザーメソッドまたは希望する区間の実行時間を測定するためのAPIです。 メソッドの実行前および後でAPIを設定できます。
 
-```go title='Go'
+```go title="Go"
 import (
     "github.com/whatap/go-api/method"
 )
@@ -402,14 +537,14 @@ func getUser(ctx context.Context) {
 
 ### API
 
-```go title='Go'
+```go title="Go"
 func Start(ctx context.Context, name string) (*MethodCtx, error)
 ```
 
-```go title='Go'
+```go title="Go"
 func End(methodCtx *MethodCtx, err error) error
 ```
 
-```go title='Go'
+```go title="Go"
 func Trace(ctx context.Context, name string, elapsed int, err error) error
 ```

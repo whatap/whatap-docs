@@ -1,0 +1,124 @@
+---
+id: nvidia-gpu
+title: Supporting the NVIDIA GPU
+description: It provides the method how to collect GPU data of the Kubernetes agent.
+keywords:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Support Environment
+  - GPU
+---
+
+## How to collect GPU metrics of the WhaTap Kubernetes agent
+
+The WhaTap Kubernetes node agent collects and monitors performance metrics of the NVIDIA GPU by using the Data Center GPU Manager (DCGM) Exporter. The process is structured using the Sidecar pattern.
+
+- **Sidecar pattern**
+
+  The DCGM Exporter is set as a secondary container that runs within the same Pod together with the main application container. This Sidecar pattern helps the DCGM Exporter efficiently collect the GPU status information.
+
+- **DCGM Exporter** 
+
+  The `dcgm-exporter` container collects GPU status and performance metrics via NVIDIA's Data Center GPU Manager (DCGM). 
+
+{/* 여기에 GPU의 온도, 사용량, 메모리 상태, 전력 소비 등의 다양한 메트릭이 포함됩니다. */}
+
+- **Metric collection and transmission** 
+
+  The `whatap-node-agent` container requests and collects GPU metrics via the HTTP endpoint of `dcgm-exporter`. 
+
+  :::note 
+
+  The HTTP endpoint of `dcgm-exporter` usually uses the port 9400.
+
+  :::
+
+## Collection scope
+
+The WhaTap Kubernetes agent focuses on efficiently monitoring and managing the GPU usage of each container deployed on the node.
+
+{/* 와탭 쿠버네티스 에이전트는 컨테이너와 노드 수준에서 GPU 사용량을 모니터링하여 다음과 같은 정보를 제공합니다.  */}
+
+- **Containers**
+
+  The WhaTap node agent collects GPU metrics for each container, giving you a clear view of how much GPU resources each container is using. This data is useful for optimizing the resource allocation.
+
+{/* 이 데이터는 리소스 할당을 최적화하는 데 유용합니다. */}
+
+- **Nodes**
+
+  You can monitor GPU usage across the entire node to assess the GPU resource utilization for the entire node. This information is useful for analyzing the overall performance of the cluster, but does not provide the details at the individual process level.
+
+{/* 와탭 쿠버네티스 에이전트는 노드에 배포된 각 컨테이너의 GPU 사용량을 효율적으로 모니터링하고 관리하는 데 집중합니다.
+
+- **Container level**: The WhaTap node agent collects GPU metrics at the container level. This is useful for checking how much GPU resources each container is using.
+
+- **Node level**: GPU metrics can monitor the GPU usage for all nodes, but do not provide the details at the individual process level. */}
+
+## Collection metrics
+
+The following lists the key GPU metrics collected by the DCGM Exporter: 
+
+### Node level metrics
+
+It focuses on monitoring the GPU status for all Kubernetes nodes. These metrics are useful for assessing the overall GPU utilization of the cluster.
+
+- **DCGM_FI_DEV_GPU_UTIL** <span class='type'>Gauge</span> 
+
+  - This metric represents the GPU utilization, displaying the current GPU usage as a percentage. 
+
+  - It monitors the GPU usage for all nodes in real time to help ensure proper resource allocation and load balancing.
+
+  {/* 이 메트릭은 GPU가 얼마나 활발히 작동하고 있는지를 평가에 사용됩니다. */}
+
+- **DCGM_FI_DEV_MEM_COPY_UTIL** <span class='type'>Gauge</span>
+
+  - This metric represents the memory usage, providing GPU memory bandwidth usage as a percentage. 
+
+  - It monitors the GPU memory resource usage to help detect and resolve memory bandwidth bottlenecks.
+
+{/* GPU의 메모리 전송 작업 효율성 평가에 사용됩니다. */}
+
+- **DCGM_FI_DEV_POWER_USAGE** <span class='type'>Gauge</span>
+
+  - This metric represents the current power consumption of the GPU in Watts (W). 
+
+  - It monitors the GPU power usage to improve power efficiency and optimize operating costs.
+
+{/* GPU의 실시간 전력 소비를 평가하여 효율적인 전력 관리를 지원합니다. */}
+
+- **DCGM_FI_DEV_TOTAL_ENERGY_CONSUMPTION** <span class='type'>Counter</span>
+
+  - It measures the total accumulated GPU energy consumption in millijoules (mJ) since the system boot. 
+
+  - By tracing the energy usage for all nodes to improve the long-term energy efficiency and establish the operational strategies.
+
+{/* 장기적인 에너지 소비 패턴을 파악하는 데 유용합니다. */}
+
+### Container level metrics
+
+It focuses on monitoring the GPU resource usage within individual containers. These metrics evaluate whether each container uses its allocated resources effectively.
+
+- **DCGM_FI_DEV_FB_FREE and DCGM_FI_DEV_FB_USED** <span class='type'>Gauge</span>
+
+  - It displays the amount of available frame buffer memory and the amount of frame buffer memory in use, in MiB. 
+
+  - By monitoring the GPU memory usage for each container, you can optimize memory resource allocation and prevent performance degradation due to resource shortage.
+
+{/* GPU 메모리의 가용성과 사용량을 동시에 파악할 수 있습니다. */}
+
+- **DCGM_FI_DEV_SM_CLOCK and DCGM_FI_DEV_MEM_CLOCK** <span class='type'>Gauge</span>
+
+  - It displays the streaming multiprocessor (SM) clock frequency and memory clock frequency of each GPU in MHz. 
+
+  - It monitors GPU clock speeds of each container to help optimize the performance and set an appropriate frequency. This allows you to deliver the performance tailored to the needs of each application.
+
+{/* GPU의 클럭 속도를 실시간으로 모니터링하여 성능을 평가합니다. */}
+
+- **DCGM_FI_DEV_GPU_TEMP and DCGM_FI_DEV_MEMORY_TEMP** <span class='type'>Gauge</span>
+
+  - It measures the temperatures of each GPU and memory temperatures in degrees Celsius (C). 
+
+  - You can monitor the GPU temperatures of each container to prevent overheating and ensure stable operation. This extends the life of the system and reduces the downtime.
+
+{/* GPU와 메모리의 열적 상태를 실시간으로 평가하여 시스템의 안정성을 확보합니다. */}

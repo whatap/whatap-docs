@@ -1,0 +1,247 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_2_2",
+    "ver": "v1.2.2",
+    "date": "2023-08-08",
+    "Lists": [
+      {
+        "ver": "v1.2.2",
+        "hash": "v122",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>fetch observerがfetch apiをオーバーライディングするときRequest個体を作ってリターンせずにargumentsをパススルーしてリターンするよう修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_3",
+    "ver": "v1.3.3",
+    "date": "2023-12-27",
+    "Lists": [
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Ajax MTIDヘッダーオプションの追加(APM連携機能)</p>"
+      },
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <code>ignoreErrors</code>エラーフィルタリングオプションの追加</p>"
+      },
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ユーザーID設定インターフェイスの追加</p>"
+      },
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>必須収集ユーザーID設定インターフェイスの追加</p>"
+      },
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <code>Iframe</code>で読み込まれたページの場合は収集対象から除外</p>"
+      },
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Ajaxレスポンス値のうち<code>opaque</code>タイプのステータスコードを、従来の0番から10番に変更</p>"
+      },
+      {
+        "ver": "v1.3.3",
+        "hash": "v133",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code>MutaionObserver</code>インターフェイスのattributeオプションを除く(要素の属性が無限に近く変更することを検知するにあたってオーバーヘッドが発生することを修正)。</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_0",
+    "ver": "v1.3.0",
+    "date": "2023-09-06",
+    "Lists": [
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>データ収集方法をオブザーバブルパターン適用</p>"
+      },
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>すべてのディスパッチャに対するオブザーバー管理ロジックの改善および修正</p>"
+      },
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>メソッドオーバーライドロジックの改善</p>"
+      },
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ページロード中に離脱した場合のデータ収集</p>"
+      },
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>AJAXリクエストヘッダー収集オプションの追加</p>"
+      },
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>AJAX abortedメトリクスの収集</p>"
+      },
+      {
+        "ver": "v1.3.0",
+        "hash": "v130",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ページロードイベント処理ロジック改善(インタラクション100ms)</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_2_1",
+    "ver": "v1.2.1",
+    "date": "2023-07-06",
+    "Lists": [
+      {
+        "ver": "v1.2.1",
+        "hash": "v121",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>同一エラーの場合は5秒に1回収集するよう設定</p>"
+      },
+      {
+        "ver": "v1.2.1",
+        "hash": "v121",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>Webブラウザエージェントファイル内にバージョン表記</p>"
+      },
+      {
+        "ver": "v1.2.1",
+        "hash": "v121",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>AJAX Status 0に対するエラー処理が含まれない問題の修正</p>"
+      },
+      {
+        "ver": "v1.2.1",
+        "hash": "v121",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Fetchapi収集時、詳細時間が正常に収集されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_2_0",
+    "ver": "v1.2.0",
+    "date": "2023-06-21",
+    "Lists": [
+      {
+        "ver": "v1.2.0",
+        "hash": "v120",
+        "product": "Browser Agent",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\">Change</code>一部ロジックにloggerを追加</p>"
+      },
+      {
+        "ver": "v1.2.0",
+        "hash": "v120",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>pageloadID(ページ切り替え前まで固有のID)を追加</p>"
+      },
+      {
+        "ver": "v1.2.0",
+        "hash": "v120",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ディスパッチャ別タイムアウト設定及び最大待機時間を5秒に設定</p>"
+      },
+      {
+        "ver": "v1.2.0",
+        "hash": "v120",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>pcode別サンプリング強制設定オプションの追加</p>"
+      },
+      {
+        "ver": "v1.2.0",
+        "hash": "v120",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ワーカー圧縮ロジックの改善</p>"
+      },
+      {
+        "ver": "v1.2.0",
+        "hash": "v120",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Firefoxブラウザでワーカー生成エラーが発生した場合、エワーが正常に処理されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_2",
+    "ver": "v1.3.2",
+    "date": "2023-10-24",
+    "Lists": [
+      {
+        "ver": "v1.3.2",
+        "hash": "v132",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Fetchエラーの際、Ajax URLが収集できない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_1",
+    "ver": "v1.3.1",
+    "date": "2023-09-25",
+    "Lists": [
+      {
+        "ver": "v1.3.1",
+        "hash": "v131",
+        "product": "Browser Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code><code>cookieSecure</code>オプションの追加。ブラウザエージェントがブラウザクッキーストレージにuser id、session idなどの値を保存する時に、secureオプションを設定できます。</p>"
+      },
+      {
+        "ver": "v1.3.1",
+        "hash": "v131",
+        "product": "Browser Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>特定のリソースを収集しないオプションが正しく動作しない問題の修正</p>"
+      }
+    ]
+  }
+]

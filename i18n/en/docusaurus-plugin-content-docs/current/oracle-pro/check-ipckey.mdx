@@ -1,0 +1,204 @@
+---
+id: check-ipckey
+title: Checking the ipckey value
+description: The following provides the method how to check the ipckey in the environment where multiple databases are installed on a server.
+displayed_sidebar: dboracledmaSidebar
+keywords:
+  - Oracle Pro
+  - Database
+  - Agent
+  - ipckey
+pagination_prev: oracle-pro/install-agent
+---
+
+This following explains how to check `ipckey` in the environment where multiple databases are installed on a server.
+
+Use the `KEY` value of `Shared Memory:` that is output on the console by executing the `sysresv` command. Before executing the `sysresv` command, set the Oracle connection environment variables to enable the Oracle to be monitored.
+
+You must also set the Oracle connection environment variables in the environment where the monitoring agent is run. Because the OCI library is called, the setting for `LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH` is also required.
+
+Depending on the Oracle version, the location where the `KEY` value of `Shared Memory:` is output on the console may differ.
+
+<Tabs groupId="oracle-pro">
+<TabItem value="10g" label="10g">
+
+```bash title="BASH" showLineNumbers {6}
+oracle@localhost:ORA10:/home/oracle/products/10.2.0.2>sysresv
+
+IPC Resources for ORACLE_SID "ORA10" :
+Shared Memory:
+ID              KEY
+3276807         0xebd3a364			<------------- 0xebd3a364
+Semaphores:
+ID              KEY
+131073          0x76138448
+163842          0x76138449
+196611          0x7613844a
+229380          0x7613844b
+262149          0x7613844c
+294918          0x7613844d
+327687          0x7613844e
+360456          0x7613844f
+393225          0x76138450
+Oracle Instance alive for sid "ORA10"
+```
+
+</TabItem>
+<TabItem value="11g" label="11g">
+
+```bash title="BASH" showLineNumbers {6}
+oracle:/home/oracle>sysresv
+
+IPC Resources for ORACLE_SID "ORA11" :
+Shared Memory:
+ID              KEY
+98304           0xc3122e28			<------------ 0xc3122e28
+Semaphores:
+ID              KEY
+163840          0x111c2e60
+Oracle Instance alive for sid "ORA11"
+```
+
+</TabItem>
+<TabItem value="12c" label="12c">
+
+```bash title="BASH" showLineNumbers {63}
+oracle:/home/oracle>sysresv
+
+IPC Resources for ORACLE_SID "ORA122" :
+Maximum shared memory segment size (shmmax): 18446744073692774399 bytes
+Total system shared memory (shmall): 18446744004990070784 bytes
+Total system shared memory count (shmmni): 4096
+*********************** Dumping ipcs output ********************
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status
+0x0052e2c1 0          postgres   600        56         7
+0x005311a1 720897     enterprise 600        56         9
+0x5a6abf3f 753666     enterprise 600        6928       9
+0x00000000 1179651    oracle     600        8798208    164
+0x00000000 1212420    oracle     600        1879048192 84
+0x00000000 1245189    oracle     600        7979008    84
+0x4ec047f4 1277958    oracle     600        12288      84
+0x6a9debe5 819208     enterprise 600        168        1
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems
+0x2e058d0c 1376256    oracle     600        125
+0x2e058d0d 1409025    oracle     600        125
+0x2e058d0e 1441794    oracle     600        125
+0x2e058d0f 1474563    oracle     600        125
+0x2e058d10 1507332    oracle     600        125
+0x2e058d11 1540101    oracle     600        125
+0x2e058d12 1572870    oracle     600        125
+0x2e058d13 1605639    oracle     600        125
+0x2e058d14 1638408    oracle     600        125
+
+*********************** End of ipcs command dump **************
+
+
+***************** Dumping Resource Limits(s/h) *****************
+core file size                         0 KB/UNLIMITED
+data seg size                     UNLIMITED/UNLIMITED
+scheduling priority                    0 KB/0 KB
+file size                         UNLIMITED/UNLIMITED
+pending signals                       18 KB/18 KB
+max locked memory                     64 KB/64 KB
+max memory size                   UNLIMITED/UNLIMITED
+open files                             4 KB/4 KB
+POSIX message queues                 800 KB/800 KB
+real-time priority                     0 KB/0 KB
+stack size                            32 MB/UNLIMITED
+cpu time                          UNLIMITED/UNLIMITED
+max user processes                    18 KB/18 KB
+virtual memory                    UNLIMITED/UNLIMITED
+file locks                        UNLIMITED/UNLIMITED
+
+***************** End of Resource Limits Dump ******************
+Maximum map count configured per process:  65530
+Total /dev/shm size: 2452357120 bytes, used: 147456 bytes
+Shared Memory:
+ID              KEY
+1212420         0x00000000
+1245189         0x00000000
+1179651         0x00000000
+1277958         0x4ec047f4			<------------------   0x4ec047f4
+Semaphores:
+ID              KEY
+1376256         0x2e058d0c
+1409025         0x2e058d0d
+1441794         0x2e058d0e
+1474563         0x2e058d0f
+1507332         0x2e058d10
+1540101         0x2e058d11
+1572870         0x2e058d12
+1605639         0x2e058d13
+1638408         0x2e058d14
+Oracle Instance alive for sid "ORA122"
+```
+
+</TabItem>
+<TabItem value="18c" label="18c or later">
+
+```bash title="BASH" showLineNumbers {50}
+oracle:/home/oracle>sysresv
+
+IPC Resources for ORACLE_SID "ORA18" :
+Maximum shared memory segment size (shmmax): 18446744073692774399 bytes
+Total system shared memory (shmall): 18446744004990070784 bytes
+Total system shared memory count (shmmni): 4096
+*********************** Dumping ipcs output ********************
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status
+0x7f30f7d0 65536      oracle     600        8192       74
+0x0052e2c1 98305      postgres   600        56         7
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems
+0x4e02e3f8 196608     oracle     600        250
+0x4e02e3f9 229377     oracle     600        250
+
+*********************** End of ipcs command dump **************
+
+
+***************** Dumping Resource Limits(s/h) *****************
+core file size                         0 KB/UNLIMITED
+data seg size                     UNLIMITED/UNLIMITED
+scheduling priority                    0 KB/0 KB
+file size                         UNLIMITED/UNLIMITED
+pending signals                       11 KB/11 KB
+max locked memory                     64 KB/64 KB
+max memory size                   UNLIMITED/UNLIMITED
+open files                             4 KB/4 KB
+POSIX message queues                 800 KB/800 KB
+real-time priority                     0 KB/0 KB
+stack size                            32 MB/UNLIMITED
+cpu time                          UNLIMITED/UNLIMITED
+max user processes                    11 KB/11 KB
+virtual memory                    UNLIMITED/UNLIMITED
+file locks                        UNLIMITED/UNLIMITED
+
+***************** End of Resource Limits Dump ******************
+Maximum map count configured per process:  65530
+Total /dev/shm size: 737280000 bytes, used: 754982912 bytes
+Shared Memory:
+ID              KEY
+1               0x????????
+2               0x????????
+0               0x????????
+65536           0x7f30f7d0			<--------------- 0x7f30f7d0
+Semaphores:
+ID              KEY
+196608          0x4e02e3f8
+229377          0x4e02e3f9
+```
+
+</TabItem>
+</Tabs>

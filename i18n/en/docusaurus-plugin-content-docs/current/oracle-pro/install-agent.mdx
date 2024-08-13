@@ -1,0 +1,148 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
+keywords:
+  - Oracle Pro
+  - Database
+  - Agent
+---
+
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+
+The following guides you to the basic installation method for using the WhaTap database monitoring service.
+
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+
+<Agentsignupguide />
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Steps>
+
+<Createprojectv2 />
+
+## Checking the configuration diagram
+
+It is the configuration to install the agent on the database server for Oracle Pro monitoring.
+
+<ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='' />
+
+Firewall settings are required and all data is transmitted encrypted. The port 6600 is used for communication with the WhaTap collection server.
+
+{/* 모니터링용 계정 생성 */}
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+
+<Dbcreatemonitoringaccount />
+
+- In general cases
+
+  ```sql title="SQL"
+  create user whatap identified by DB_Password;
+  grant create session to whatap;
+  grant select any dictionary to whatap;
+  ```
+
+- Multi-tenant in 12c or later: Add the prefix `c##`.
+
+  ```SQL title="SQL"
+  create user c##whatap identified by DB_Password;
+  grant reate session to c##whatap;
+  grant select any dictionary to c##whatap;
+  alter user c##whatap set container_data = ALL container = CURRENT;
+  ```
+
+- In case of using the kill session
+
+  ```SQL title="SQL"
+  grant alter system to whatap;
+  ```
+
+import Accesskey from "../getting-started/_accesskey-v2.mdx";
+
+<Accesskey />
+
+## Download agent
+
+On the agent Installation screen, select the Oracle version that matches your environment and then select <Cmdname sid="download" className="uitext" />.
+
+## Agent CONFIG.
+
+The agent is recommended to be installed with an Oracle account and the Oracle connection environment variables must have been set. Proceed with the agent configuration in the following order.
+
+:::note
+
+**In case of installation from the user account other than the Oracle account**
+
+- You need the role (`read`) to read the shared memory created by Oracle.
+
+- If the `perms` value is 600 in the result of executing the `ipcs -m` command, installation is possible only with the Oracle account.
+
+- If the `perms` value is 640 in the result of executing the `ipcs -m` command, other accounts belonging to the same group can also perform installation.
+
+:::
+
+### whatap.conf configuration {#setting-whatapconf}
+
+Go to the unzipped folder and then check the *whatap.conf* file. In *whatap.conf*, enter the project access key, WhaTap server data, and `ipckey`.  
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+ipckey={ipckey}
+```
+
+:::tip
+
+- The `ipckey` option value can be acquired via the `ipcs -m` command. This is the key value (hexadecimal) of the Oracle to be monitored.
+
+- If you have installed multiple databases on a server, see [the following](check-ipckey) to enter the `ipckey`.
+
+:::
+
+### Creating the initial configuration file {#createinitialsettingfile}
+
+To create an initial configuration file, connect to the database with the **SYS** account (or an equivalent account) to receive and process information. The account and password are not saved.
+
+```sh title="BASH"
+./dmxinit.sh {sys_user} {sys_password}
+```
+
+After execj\\uting the command, the following five files are created:
+
+> *dmx.init*, *class.init*, *dbname.init*, *stat.init*, *event.init*
+
+:::note
+
+- If you can connect without `sys_user` and `sys_password` (as connecting with `sqlplus '/as sysdba'`), you do not need to add `sys_user` and `sys_password` as arguments.
+
+  ```sh title="BASH"
+  ./dmxinit.sh
+  ```
+
+- If the `sys_user` and `sys_password` strings contain special characters, add the escape character (`\`) before each special character.
+
+  ```sh title="BASH"
+  ./dmxinit.sh whatap whatap\!\@pwd
+  ```
+
+:::
+
+### DB user file creation {#create-db-user}
+
+<DBuserDesc name='default'/>
+
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+
+<Dbcreatedbuserfilebody />
+
+{/*## 모니터링 시작하기*/}
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
+
+<Dbrunagent />
+
+</Steps>
+
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

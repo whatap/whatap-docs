@@ -1,0 +1,749 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.16",
+    "date": "2024-06-25",
+    "Lists": [
+      {
+        "ver": "Service 2.5.16",
+        "hash": "service-2516",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>次のメニューパスで、<img decoding=\"async\" loading=\"lazy\" alt=\"カラム設定アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtY29sdW1uPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ1Mi4wMDAwMDAsIC0zMDMxLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgICA8ZyBpZD0iYXBwbGljYXRpb24taWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwMDAwMCwgMjM0Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jb2x1bW4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMi4wMDAwMDAsIDY4NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgNC4wMDAwMDApIiBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwwIEwwLDE2IEwyMCwxNiBMMjAsMCBMMCwwIFogTTEyLDIgTDEyLDE0IEw4LDE0IEw4LDIgTDEyLDIgWiBNMiwyIEw2LDIgTDYsMTQgTDIsMTQgTDIsMiBaIE0xOCwxNCBMMTQsMTQgTDE0LDIgTDE4LDIgTDE4LDE0IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">カラム設定</span>機能で全体カラムを選択すると、ホワイトアウト現象が発生する問題を修正</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">トランザクション</span></li>\n<li><span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">ユーザーエージェント</span></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.15",
+    "date": "2024-06-25",
+    "Lists": [
+      {
+        "ver": "Service 2.5.15",
+        "hash": "service-2515",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの<em><strong>Container</strong></em>ビューでブロックが正常個数で表示されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.14",
+    "date": "2024-06-17",
+    "Lists": [
+      {
+        "ver": "Service 2.5.14",
+        "hash": "service-2514",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>画面右上に位置した<img decoding=\"async\" loading=\"lazy\" alt=\"カスタマーサポートアイコン\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIKICAgIGQ9Ik0yIDEyQzIgNi40NzcgNi40NzggMiAxMiAyczEwIDQuNDc3IDEwIDEwYTkuOTUyIDkuOTUyIDAgMDEtMS43NDQgNS42NEwyMiAyMmwtNC4zNi0xLjc0NEE5Ljk1MiA5Ljk1MiAwIDAxMTIgMjJDNi40NzggMjIgMiAxNy41MjMgMiAxMnoiCiAgICBmaWxsPSIjMjk2Q0YyIiAvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIgogICAgZD0iTTkgMTIuNWExLjUgMS41IDAgMTEtMyAwIDEuNSAxLjUgMCAwMTMgMHptNC41IDBhMS41IDEuNSAwIDExLTMgMCAxLjUgMS41IDAgMDEzIDB6bTMgMS41YTEuNSAxLjUgMCAxMDAtMyAxLjUgMS41IDAgMDAwIDN6IgogICAgZmlsbD0iI2ZmZiIgLz4KPC9zdmc+\" width=\"24\" height=\"24\" class=\"img_ev3q\"> 'チャット相談'ボタンが断続的に表示されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.13",
+    "date": "2024-06-11",
+    "Lists": [
+      {
+        "ver": "Service 2.5.13",
+        "hash": "service-2513",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューでエージェントがない場合、遅延することなくデータの呼び出しが発生する問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.12",
+    "date": "2024-06-10",
+    "Lists": [
+      {
+        "ver": "Service 2.5.12",
+        "hash": "service-2512",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>組織に所属するプロジェクトで<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">スタック</span>メニューに入ると発生するホワイトアウト現象を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.11",
+    "date": "2024-06-10",
+    "Lists": [
+      {
+        "ver": "Service 2.5.11",
+        "hash": "service-2511",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<strong>JVMオプション追加</strong>セクションでJettyインストールガイド内容の修正: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code></p>",
+        "category": "Java"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.10",
+    "date": "2024-06-05",
+    "Lists": [
+      {
+        "ver": "Service 2.5.10",
+        "hash": "service-2510",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ヒットマップ</span>メニューでDB追跡時に移動するメニューに選択したインスタンスが基本選択されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.10",
+        "hash": "service-2510",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>プレゼンテーションまたはカスタムテーマモードで画面を変更すると、<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">日別APP現況</span>メニューでホワイトアウトが発生する問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.10",
+        "hash": "service-2510",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューでフィルターが適用されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.10",
+        "hash": "service-2510",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>別のメニュー画面でフィルター値を含むリンクをクリックして<span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューに移動すると、<span class=\"uitext\">フィルター</span>項目に<code>s_equal</code>文字列が確認される問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.9",
+    "date": "2024-06-04",
+    "Lists": [
+      {
+        "ver": "Service 2.5.9",
+        "hash": "service-259",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">Kubernetesイベント</span>メニューで100個以上のデータが照会されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.8",
+    "date": "2024-06-03",
+    "Lists": [
+      {
+        "ver": "Service 2.5.8",
+        "hash": "service-258",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">トレース分析</span>画面のURLをコピーするボタンを追加</p>"
+      },
+      {
+        "ver": "Service 2.5.8",
+        "hash": "service-258",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<span class=\"uitext\">Applicatonエージェントのインストール</span>案内でKubernetes環境変数の一部オプション名と誤字脱字を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.8",
+        "hash": "service-258",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>次のメニューパスで業務およびプロジェクト単位のデフォルトエージェント設定が不可能な問題を修正</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span></li>\n<li><span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ設定</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.5.8",
+        "hash": "service-258",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>次のメニューパスのリソース関係チャートでアプリケーションを選択すると、フィルタリングが間違って適用される問題を修正</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Podリスト</span></li>\n<li><span class=\"uitext\">ワークロード</span> &gt; <span class=\"uitext\">Deployment リスト</span> &gt; <img decoding=\"async\" loading=\"lazy\" alt=\"詳細アイコン\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcGFnZXZpZXc8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjcxMS4wMDAwMDApIiBmaWxsPSIjMjk2Y2YyIj4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcGFnZXZpZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgMzY1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMDAwMDAwLCA0LjAwMDAwMCkiIGlkPSJwYWdldmlldyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOCwwIEMxOS4wMzUyOTQxLDAgMTkuODkzNDI1NiwwLjc5NzIzMTgzNCAxOS45OTA3OTk5LDEuODA4MTAwOTYgTDIwLDIgTDE5Ljk5OSw1LjMzMyBMMTcuOTk5LDUuMzMzIEwxOCwyIEwyLDIgTDIsMTQgTDEyLDE0IEwxMiwxNiBMMiwxNiBDMC45NjQ3MDU4ODIsMTYgMC4xMDY1NzQzOTQsMTUuMjAyNzY4MiAwLjAwOTIwMDA4MTQyLDE0LjE5MTg5OSBMLTUuMzI5MDcwNTJlLTE1LDE0IEwtNS4zMjkwNzA1MmUtMTUsMiBDLTUuMzI5MDcwNTJlLTE1LDAuOTY0NzA1ODgyIDAuNzk3MjMxODM0LDAuMTA2NTc0Mzk0IDEuODA4MTAwOTYsMC4wMDkyMDAwODE0MiBMMiwwIEwxOCwwIFogTTEzLjE2NjY2NjcsNCBDMTUuNjU2NjY2Nyw0IDE3LjY2NjY2NjcsNi4wMSAxNy42NjY2NjY3LDguNSBDMTcuNjY2NjY2Nyw5LjM4IDE3LjQwNjY2NjcsMTAuMTkgMTYuOTY2NjY2NywxMC44OSBMMTkuODc2NjY2NywxMy43OSBMMTguNDU2NjY2NywxNS4yMSBMMTUuNTQ2NjY2NywxMi4zIEMxNC44NTY2NjY3LDEyLjc0IDE0LjAzNjY2NjcsMTMgMTMuMTU2NjY2NywxMyBDMTAuNjc2NjY2NywxMyA4LjY2NjY2NjY3LDEwLjk5IDguNjY2NjY2NjcsOC41IEM4LjY2NjY2NjY3LDYuMDEgMTAuNjc2NjY2Nyw0IDEzLjE2NjY2NjcsNCBaIE0xMy4xNjY2NjY3LDYgQzExLjc4NjY2NjcsNiAxMC42NjY2NjY3LDcuMTIgMTAuNjY2NjY2Nyw4LjUgQzEwLjY2NjY2NjcsOS44OCAxMS43ODY2NjY3LDExIDEzLjE2NjY2NjcsMTEgQzE0LjU0NjY2NjcsMTEgMTUuNjY2NjY2Nyw5Ljg4IDE1LjY2NjY2NjcsOC41IEMxNS42NjY2NjY3LDcuMTIgMTQuNTQ2NjY2Nyw2IDEzLjE2NjY2NjcsNiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">詳細</span> &gt; <span class=\"uitext\">リソース</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.5.8",
+        "hash": "service-258",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>リスト型メニューの<span class=\"uitext\">リソース</span>タブでアプリケーションの性能メトリクスが出ない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.7",
+    "date": "2024-05-30",
+    "Lists": [
+      {
+        "ver": "Service 2.5.7",
+        "hash": "service-257",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">性能推移</span>メニューで連続検索を防止する機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.6",
+    "date": "2024-05-28",
+    "Lists": [
+      {
+        "ver": "Service 2.5.6",
+        "hash": "service-256",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">TX検索</span>メニューで最後に選択したカラム設定値を読み込めない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.6",
+        "hash": "service-256",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">TX検索</span>メニューの検索ボックスでハングルを入力すると、母音と子音が分離して入力される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.6",
+        "hash": "service-256",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>画面でエラートランザクションを選択し、<span class=\"uitext\">レコード要約</span>タブで<span class=\"uitext\">エラー統計</span>画面を開くとチャートが出力されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.4",
+    "date": "2024-05-27",
+    "Lists": [
+      {
+        "ver": "Service 2.5.4",
+        "hash": "service-254",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アカウント管理</span> &gt; <span class=\"uitext\">アカウント管理</span>メニューの<span class=\"uitext\">ユーザー電話番号</span>セクションで、韓国の国/地域コードのみ入力できるように修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.3",
+    "date": "2024-05-23",
+    "Lists": [
+      {
+        "ver": "Service 2.5.3",
+        "hash": "service-253",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでDebian/Ubuntuに関連するインストールコマンドのリポジトリパスを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.2",
+    "date": "2024-05-23",
+    "Lists": [
+      {
+        "ver": "Service 2.5.2",
+        "hash": "service-252",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span>メニューのウィジェットでCSVファイルをダウンロードすると、比較日のデータが表示されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.2",
+        "hash": "service-252",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードで、TOP Nチャートウィジェットのツールチップが表示されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.2",
+        "hash": "service-252",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードの<span class=\"uitext\">プロセスメモリ</span>ウィジェットがAPIを呼び出さない問題を修正</p>",
+        "category": "PHP、Python、.Net"
+      },
+      {
+        "ver": "Service 2.5.2",
+        "hash": "service-252",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>データベースのモニタリング紹介ページに未発売の商品が露出する問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.1",
+    "date": "2024-05-22",
+    "Lists": [
+      {
+        "ver": "Service 2.5.1",
+        "hash": "service-251",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統合Flexボード</span>メニューでお気に入りのダッシュボードがある状態で該当するメニューを選択すると、組織選択が解除される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.1",
+        "hash": "service-251",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでDebian/Ubuntuに関連したインストールスクリプトのエラーを修正</p>"
+      },
+      {
+        "ver": "Service 2.5.1",
+        "hash": "service-251",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで1か月前のデータが照会されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.1",
+        "hash": "service-251",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>変更されたランディングページのURLパスに合わせてステータスコードの説明ページへのリンクを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_5_x",
+    "ver": "Service 2.5.0",
+    "date": "2024-05-22",
+    "Lists": [
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>プロジェクト作成時、商品選択及びプロジェクト作成関連のUI/UXを修正</p>",
+        "category": "プロジェクト"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">エージェントインストール</span>メニューへの流入経路によって、画面上段に露出するステップバーの露出有無を異なるように適用</p>",
+        "category": "プロジェクト"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ダッシュボードのエクスポート機能を利用する際、プロジェクト情報を除いてエクスポートする機能を追加</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>カウント形態のウィジェットにフィールド選択機能を追加</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>補助チャートの設定でグループ内のオプションを共有できる<span class=\"uitext\">グループ内のウィジェット全体に適用</span>機能を追加</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>グループウィジェットに<span class=\"uitext\">プロジェクト選択</span>機能を追加、グループ下位ウィジェットに<span class=\"uitext\">グループウィジェットに選択されたプロジェクト</span>選択オプションを追加</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ウィジェットに関する説明の添付機能を追加</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>リーチテキストのウィジェットで<b>Heading</b>スタイルの余白を削除し、テキストの分量に応じてスクロールが自動的に表示されるように変更</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>ウィジェットの拡大表示機能や<span class=\"uitext\">アドミン</span>モードを利用する際、不透明な背景色を取り除き、テーマ色を適用</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>イベントのタイムラインウィジェットにスクロール生成が繰り返されるバグを修正</p>",
+        "category": "Flexボード / 統合Flexボード"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ログモニタリングに対応するプラットフォームの<span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューでログイベント設定機能を追加</p>",
+        "category": "アラート通知"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アカウント情報</span> &gt; <span class=\"uitext\">アラート受信設定</span>セクションでモバイル機器を削除すると、モバイル機器リストを新しく読み込むように修正</p>",
+        "category": "アカウント管理"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">アカウント情報</span> &gt; <span class=\"uitext\">アラート受信設定</span>セクションでモバイル機器の受信テストに失敗すると、モバイル機器リストを読み込めずに無限読み込みされていた問題を修正</p>",
+        "category": "アカウント管理"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> WhaTapのモバイルアプリで通知受信を設定すると、<span class=\"uitext\">アカウント管理</span>メニューの<span class=\"uitext\">アラート受信設定</span>でWhatsApp項目が一緒に表示される問題を修正</p>",
+        "category": "アカウント管理"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">利用状況</span> &gt; <span class=\"uitext\">決済情報</span>メニューで決済手段を登録または修正するとき<span class=\"uitext\">国/地域</span>項目を「US」と保存すると「CA」と表示される問題を修正</p>",
+        "category": "アカウント管理"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>全ての商品で<b>修正</b>または<b>通知設定</b>権限を持ったメンバーが<span class=\"uitext\">メンテナンス計画</span>メニューを利用できるように権限を調整</p>",
+        "category": "メンテナンス計画"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>サイドメニューの<span class=\"uitext\">プロジェクトリスト</span>でグループ項目をクリックすると、折り畳む/開く動作を実行するように変更、グループ移動ボタンを追加</p>",
+        "category": "サイドメニュー"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>ダークテーマの一部のカラーを変更</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">本日TPS</span>, <span class=\"uitext\">本日ユーザー</span>ウィジェットは1日以内にデータを再照会する際、新しいデータを要請せず、すでに照会したデータを再加工して使用するように修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">トレース分析</span>で呼び出す<span class=\"uitext\">HTTP呼出し統計</span>ポップアップのチャートを交替し、詳細ボタンを削除</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統計</span>メニューで選択できる最大時間の範囲を変更</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">クライアントIP</span>: 最大7日</p>\n</li>\n<li>\n<p><span class=\"uitext\">統計</span>下位メニューで<span class=\"uitext\">クライアントIP</span>除外: 最大31日</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">Flexボード</span>メニューで<span class=\"uitext\">アクティブ状態</span>ウィジェットのチャートカラーを変更</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューで非アクティブ化されたエージェントは<span class=\"uitext\">適用</span>ボタンを無効にするように修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>ウィンドウの<span class=\"uitext\">テーブルビュー</span>タブで<span class=\"uitext\">SQL</span>ウィンドウを開き<span class=\"uitext\">SQLフォーマット</span>オプション利用時にハングルに分かち書きが追加される問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span>で呼び出す<span class=\"uitext\">HTTP呼出し統計</span>ポップアップのチャートをクリックして<span class=\"uitext\">統計</span>メニューに移動すると、選択したチャートの時間範囲とエージェント情報が選択されるように修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">トレース分析</span> &gt; <span class=\"uitext\">テーブルビュー</span>タップ&gt; SQLステップの右<img loading=\"lazy\" src=\"/ja/img/ic-static.svg\" class=\"ico\" width=\"auto\" height=\"auto\">アイコンを選択&gt; <span class=\"uitext\">SQL統計</span>ウィンドウから<span class=\"uitext\">TX検索</span>メニューへの移動時に選択したエージェントが維持されない現象を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">TXマップ</span>メニューでマップの上段エリアドラッグ時にデータが照会されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計</span>メニューのエージェント選択オプションで<span class=\"uitext\">Total</span>ボタンを選択してもエージェント全体が選択されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計</span>メニューでCSVダウンロード機能を利用する際、エージェント選択オプションの適用事項がCSVファイルに適用されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計</span> &gt; <span class=\"uitext\">エラー</span>メニューで照会結果をCSVファイルとしてダウンロードするとき、文字列に'\\n'が含まれるとCSVフォーマットが壊れる問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューの<span class=\"uitext\">エージェントリスト</span>でエージェント名が長くなると、他のカラムと重なる問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューでJSONファイルを連続で読み込むとき、最初のJSONファイルだけが適用され、その後読み込んだJSONファイルのイベントが動作せず、設定も適用されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">サーバーリスト</span>メニューで<span class=\"uitext\">エージェント名</span>と<span class=\"uitext\">ホスト名</span>を区分されたカラムで表示するように修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>メニューの<span class=\"uitext\">サーバー情報</span>セクションでAgent NameとHost Nameを区分された項目で表示し、ユーザーが修正できる機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">サーバーリスト</span>メニューでユーザビリティを改善するため、画面上にサーバーの状態を表示および操作ボタンのレイアウトを変更</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">エージェントインストール</span>段階に入る前に、OS選択の段階を追加</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでDebian/Ubuntu環境のWhaTapリポジトリを追加するコマンドを修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">サーバーリスト</span>メニューでテーブルデータを更新する時に行の高さが増減する問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>サーバープロジェクトの有料切り替えの案内モーダルから価格表記を削除</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">アプリケーション</span>カテゴリに<span class=\"uitext\">インスタンス性能管理</span>メニューを追加</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">実験室</span> &gt; <span class=\"uitext\">Pending Pod状況</span>メニューの詳細タブの改編</p>",
+        "details": "<ul>\n<li>\n<p>イベントメッセージをもとに迅速な原因分析をサポートする<span class=\"uitext\">Suggestions</span>タブを追加</p>\n</li>\n<li>\n<p>Pod関連イベントを確認できる<span class=\"uitext\">Event</span>タブを追加</p>\n</li>\n<li>\n<p>コンテナログが確認できる<span class=\"uitext\">Log</span>タブを追加</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューのKubernetesエージェントのインストール方法を改編</p>",
+        "details": "<ul>\n<li>\n<p>ユーザーがインストールファイルを修正することなく、オプションを選択するだけで環境に適したファイルをダウンロードできます。</p>\n</li>\n<li>\n<p><span class=\"uitext\">追加機能の適用</span>オプションを追加します。</p>\n</li>\n<li>\n<p>インストールの最後の段階で、モニタリングの主要メニューを紹介します。</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">アプリケーション</span> &gt; <span class=\"uitext\">統計</span>メニューを<code>Appication</code>商品の<span class=\"uitext\">統計</span>メニューと一致するように修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューの<span class=\"uitext\">Applicatonエージェントのインストール</span>でDocker Pythonのokind設定オプション名を<code>whatap.okind</code>に変更</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノード詳細</span>メニューでコンテナリストの高さがコンテナ数に合わせて伸びるようにスタイルを修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントリスト</span>メニューの<span class=\"uitext\">DB IPアドレス</span>カラムIPリストが見えるようにツールチップを追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span>メニューで<span class=\"uitext\">データベース</span>と<span class=\"uitext\">IP</span>カラムの値がセルサイズを超えたら、省略記号(...)を適用し、カーソルに合わせるとツールチップとして表示するように修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューでqueryテキストを選択すると現れる<span class=\"uitext\">SQL詳細</span>ウィンドウのクエリ文が<code>undefined</code>で表示される問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントリスト</span>メニューで<span class=\"uitext\">DB IPアドレス</span>カラム内のツールチップが表示されない問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Wait分析</span>メニューのテーブルウィジェットでマウスオーバーすると、項目の全体名を確認できるツールチップを追加</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">SQL詳細</span>ウィンドウでオブジェクト名を選択すると、データが照会されない問題を修正</p>",
+        "category": "PostgreSQL、MySQL"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューで<span class=\"uitext\">DB</span>タブの項目を除外</p>",
+        "category": "Tibero"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <b>Oracle Cloud</b>プラットホームの<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでインストールの案内フレーズを修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <b>AWS CloudWatch</b>プラットホームの<span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでの役割(Role) 生成関連の内容を現在のAWS仕様に合わせて修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Browser",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ユーザーセッション分析</span> &gt; <span class=\"uitext\">ユーザーセッションフロー</span> &gt; <span class=\"uitext\">ユーザーイベント</span> <span class=\"uitext\">詳細</span>でSelectorの内容がレイアウトの大きさを超えて表示されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.5.0",
+        "hash": "service-250",
+        "product": "Browser",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <span class=\"uitext\">ユーザーセッション分析</span> &gt; <span class=\"uitext\">ユーザーセッションフロー</span>セクションのテーブルでイベントをクリックする際、照会中の現在イベントのようなイベントを引き続き照会できる問題を修正</p>"
+      }
+    ]
+  }
+]

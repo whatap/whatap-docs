@@ -1,0 +1,666 @@
+[
+{
+  "url": "https://docs.whatap.io/en/release-notes/service/service-2_6_x",
+  "ver": "Service 2.6.4",
+  "date": "2024-06-28",
+  "Lists": [
+    {
+      "ver": "Service 2.6.4",
+      "hash": "service-264",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where several stacks are not displayed when a snapshot is saved through the <img decoding=\"async\" loading=\"lazy\" alt=\"Snapshot icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"24\" height=\"24\" class=\"img_ev3q\"> button in <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Stack</span> if the screen theme is in dark mode.</p>"
+    }
+  ]
+},
+{
+  "url": "https://docs.whatap.io/en/release-notes/service/service-2_6_x",
+  "ver": "Service 2.6.3",
+  "date": "2024-06-27",
+  "Lists": [
+    {
+      "ver": "Service 2.6.3",
+      "hash": "service-263",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In the following paths, fixed the issue where data is not displayed.</p>",
+      "details": "<ul>\n<li><span class=\"uitext\">Trace analysis</span> &gt; <span class=\"uitext\">Multi transaction</span> &gt; <span class=\"uitext\">Table</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Multiple Transaction Trace</span> &gt; <span class=\"uitext\">Table</span></li>\n</ul>"
+    }
+  ]
+},
+{
+  "url": "https://docs.whatap.io/en/release-notes/service/service-2_6_x",
+  "ver": "Service 2.6.2",
+  "date": "2024-06-27",
+  "Lists": [
+    {
+      "ver": "Service 2.6.2",
+      "hash": "service-262",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the default value in <span class=\"uitext\">Instance</span> is changed to <span class=\"uitext\">All</span> in the <span class=\"uitext\">Database</span> tab of <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>.</p>"
+    }
+  ]
+},
+{
+  "url": "https://docs.whatap.io/en/release-notes/service/service-2_6_x",
+  "ver": "Service 2.6.1",
+  "date": "2024-06-26",
+  "Lists": [
+    {
+      "ver": "Service 2.6.1",
+      "hash": "service-261",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Flex Board</span>, fixed the issue where the active status chart does not appear.</p>"
+    },
+    {
+      "ver": "Service 2.6.1",
+      "hash": "service-261",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where Korean characters are broken when downloading a CSV file.</p>"
+    },
+    {
+      "ver": "Service 2.6.1",
+      "hash": "service-261",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the broken locale issue in the <span class=\"uitext\">Application Dashboard</span> menu of the previous version.</p>"
+    }
+  ]
+},
+{
+  "url": "https://docs.whatap.io/en/release-notes/service/service-2_6_x",
+  "ver": "Service 2.6.0",
+  "date": "2024-06-26",
+  "Lists": [
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> Added the feature to display <span class=\"uitext\">Selected projects</span> in the widget: you can check the list of projects to call data in the widget.</p>",
+      "category": "Flex Board / Integrated Flex Board"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the last character occasionally disappears when text is modified in the rich text widget.</p>",
+      "category": "Flex Board / Integrated Flex Board"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the widget deletion pop-up is not reopened if it is closed abnormally.</p>",
+      "category": "Flex Board / Integrated Flex Board"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where an incorrect alert pops up when a widget is added under a group widget when the responsive dashboard is full.</p>",
+      "category": "Flex Board / Integrated Flex Board"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Changed the criteria for the detailed view and display in <span class=\"uitext\">Metrics Anomaly Detection</span>.</p>",
+      "category": "Analysis"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Event Configuration</span>, corrected the incorrectly set High sensitive/Low sensitive scores for rising/falling patterns with anomaly detection figures.</p>",
+      "category": "Alert"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> Reorganized the UI/UX for payment method registration and modification menus (Profile icon &gt; <span class=\"uitext\">Usage</span> &gt; <span class=\"uitext\">Payment Information</span>).</p>",
+      "category": "Usage"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Project Subscription Status</span>, modified to display the <span class=\"uitext\">Subscribe</span> button with separated from the <span class=\"uitext\">Status</span> column.</p>",
+      "category": "Usage"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Integrated Dashboard</span>, <span class=\"uitext\">Integrated Metrics Dashboard</span>, changed the service termination message.</p>",
+      "category": "ETC"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Improved the guidance message when there are no search results on the product selection screen for project creation.</p>",
+      "category": "ETC"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Common",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the selected organization is cleared when going to the product introduction link in the side menu.</p>",
+      "category": "ETC"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Application Dashboard</span>, added the default preset modification feature.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Application Dashboard</span>, added the agent search feature.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Transaction Map</span>, added the <span class=\"uitext\">Custom</span> feature that can add items in the <span class=\"uitext\">TOP 30</span> filter after searching them.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> The <span class=\"uitext\">Application Dashboard</span> menu of old version is scheduled to be removed.</p>",
+      "category": "Dashboard",
+      "details": "<ul>\n<li>\n<p>Added the <code class=\"Deprecated\">Deprecated</code> tag in the <span class=\"uitext\">Sitemap</span> menu.</p>\n</li>\n<li>\n<p>If you enter <span class=\"uitext\">Sitemap</span> &gt; <span class=\"uitext\">Application Dashboard</span> <code class=\"old\">Old</code>, the guidance message for planned removal appears.</p>\n</li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Deprecated",
+      "desc": "<p>Added the <code class=\"Deprecated\">Deprecated</code> tag in the <span class=\"uitext\">Sitemap</span> menu.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Deprecated",
+      "desc": "<p>Added the <code class=\"Deprecated\">Deprecated</code> tag in the <span class=\"uitext\">Sitemap</span> menu.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Application Dashboard</span>, fixed the issue where the loading indicator is applied to the widget when the guidance window appears by clicking the <img decoding=\"async\" loading=\"lazy\" alt=\"Info icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAyQzE3LjUyMjggMiAyMiA2LjQ3NzE1IDIyIDEyQzIyIDE3LjUyMjggMTcuNTIyOCAyMiAxMiAyMkM2LjQ3NzE1IDIyIDIgMTcuNTIyOCAyIDEyQzIgNi40NzcxNSA2LjQ3NzE1IDIgMTIgMlpNMTIgNEM3LjU4MTcyIDQgNCA3LjU4MTcyIDQgMTJDNCAxNi40MTgzIDcuNTgxNzIgMjAgMTIgMjBDMTYuNDE4MyAyMCAyMCAxNi40MTgzIDIwIDEyQzIwIDcuNTgxNzIgMTYuNDE4MyA0IDEyIDRaTTExIDdWOUgxM1Y3SDExWk0xMSAxMVYxN0gxM1YxMUgxMVoiIGZpbGw9IiM3NTc1NzUiLz4KPC9zdmc+Cg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"> button of the widget.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> On the <span class=\"uitext\">Trace analysis</span> window, fixed the issue where the strings for <span class=\"uitext\">OS</span>, <span class=\"uitext\">Client name</span>, and <span class=\"uitext\">Status</span> are exposed as translation keys.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where if you select the step timeline graph on the <span class=\"uitext\">Trace analysis</span> window, the corresponding step does not appear.</p>",
+      "category": "Dashboard"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">APP. Topology</span>, fixed the issue where the style of the diagram displayed on the right is not applied properly when the <span class=\"uitext\">Node Selection</span> button on the screen is selected.</p>",
+      "category": "Topology"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Sitemap</span> &gt; <span class=\"uitext\">Topology</span> &gt; <span class=\"uitext\">APP. Statistics Topology</span>, fixed the issue where the feature does not work by clicking the time selection option and changed the UIs for the time selection option.</p>",
+      "category": "Topology"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> Enhanced the features under <span class=\"uitext\">Statistics</span>.</p>",
+      "category": "Statistics",
+      "details": "<ul>\n<li>\n<p>It saves the selected value by the last viewed agent selection option.</p>\n</li>\n<li>\n<p>It changed the feature not to automatically search upon entry of each menu.</p>\n</li>\n<li>\n<p>It changed the initial query period for each menu from <strong>Today</strong> to <strong>Previous day</strong>.</p>\n</li>\n<li>\n<p>It changed the default sorting order for <span class=\"uitext\">Transaction</span> and <span class=\"uitext\">SQL</span> menus to <span class=\"uitext\">Sum time</span>.</p>\n</li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Even if you do not select <img decoding=\"async\" loading=\"lazy\" alt=\"Search icon\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NGYxMDZkYi1mOWQ1LTRkNWItYjg1Mi01N2E4OWQ4N2NiODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM0RjAyQzM1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM0RjAyQzI1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphMzM1ZWVmNC1mYjZhLTRkNzctOWI5MS0yZDViNTU2OTE4YTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRmMTA2ZGItZjlkNS00ZDViLWI4NTItNTdhODlkODdjYjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xFhE8QAAA2NJREFUeNrMl0tIVGEUx//fd2fm3nGaZHwkA+KjFylBWG5amG10GRGW9AKjRVFRCSJEQUPRokioNulCAhFsV2LiKogIwl7SoiyVsdJ8Vb5G5z3f1/luumk12lynw2WGy1zm/L7z+J9zmZRy4u1gIs/XEV78OC5g0xjostwSEojTR6mXw3fYcO3aok2y15/j83suL7rBgeI8bj4opfUwbOnAw5MCoOv5DVdAG8luvPR1RuqbCUSsAcTfluNmmA5J+MdFlA8Q2cZcjrhAWkz5Vf4VB3dQgUik15R/xcFV7mSaaZR/xcH/9U9SeRDbarpAUJ5HpgVkhO6X4pyZzZDjYogl1ghG04DpRYm5XxKHKm3YV26HywkMjAnc64nBPyxQULh6eUgahpOPnwGJBYrGk6sZ2LvDhukFIEhtWbWToa5Kx/nmEDpexFDs5dZGJhKTCISBRw1OE+Ts/RAePIubVWfYgYcXDbRecELjEh29CRR4Vt6lSR9hbFbi+G4NVWU2HL0dRHtXFN4sIN8D2DWJGl8IbwYTuFLrhJ2OGFuFbvGkW4+iUlvhwMB3gc6XceQVa9BtzJxluW6OGNVO0+MICjYwVJdwTAWkNTBqqAkHQyZ1y3xQQvw1TNUYcdDvs4t/ALLWUVfFLYqMjZ5iVDOfRhIo26TByABmCIovAdmpyySlsWKbRrUFvKKu8mRYBKPMlcnQ1B2lAgVaTuoI07rhnxCYmJMY9gtkehnqDxjo7o2i/wvdZzDruimXQt9PJ/a1h+E7ZmB7iw3NPREMEFRlqYb6/QZ0BzA+Q3pE7R+MSLh0tqJNYEWil0/6cas7ZgLcrHPi7imnOXVVeNueRjFFqWo8qMPjAk7fCUN4AbfBTMVOKYzqKFU7RTkMne/i6Hq/gHJS2zxKX983gbFRWgGoXlQdNdTocFOxn2kNmxEy7Cz1kVmW+CLaP9QM+kAR6hsF1uu0JRJYiIr8WlsEBqXrRLWOwuwohmhPUaKY1NwrOReYp293qlbJWFzS5gZku1R6JBykRUnOqQBHCk05tZNzDwlgMCrNhUlaVcBJAxGEqT1W6cxaGF9e+dJpy6svj9LgSTOL6V9x8K30vuT/IUwNSYcpv8q/4uDXjxj08gIM0ZxR4VqrlC37Un6Vf8XB/qd37d8CDAAmlWmEg71//QAAAABJRU5ErkJggg==\" width=\"35\" height=\"29\" class=\"img_ev3q\"> after applying the filter in the <span class=\"uitext\">Statistics</span> submenu, the filter is to be applied when you download the CSV file.</p>",
+      "category": "Statistics"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where a whiteout occurs when all columns are selected using the <img decoding=\"async\" loading=\"lazy\" alt=\"Column configuration icon\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtY29sdW1uPC90aXRsZT4gLS0+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJJY29uLVNldCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IldoYVRhcF9JY29uX1NldCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ1Mi4wMDAwMDAsIC0zMDMxLjAwMDAwMCkiIGZpbGw9IiM3NTc1NzUiPgogICAgICAgICAgICA8ZyBpZD0iYXBwbGljYXRpb24taWNvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwLjAwMDAwMCwgMjM0Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jb2x1bW4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMi4wMDAwMDAsIDY4NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgNC4wMDAwMDApIiBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwwIEwwLDE2IEwyMCwxNiBMMjAsMCBMMCwwIFogTTEyLDIgTDEyLDE0IEw4LDE0IEw4LDIgTDEyLDIgWiBNMiwyIEw2LDIgTDYsMTQgTDIsMTQgTDIsMiBaIE0xOCwxNCBMMTQsMTQgTDE0LDIgTDE4LDIgTDE4LDE0IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">Column Settings</span> feature in the following menu paths:</p>",
+      "category": "Statistics",
+      "details": "<ul>\n<li><span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Transaction</span></li>\n<li><span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">User-Agent</span></li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Upon entry to <span class=\"uitext\">Performance Trend</span>, fixed the issue where only several agents are selected instead of all agents intermittently.</p>",
+      "category": "Analysis"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the search time for the screen that appears by selecting <img decoding=\"async\" loading=\"lazy\" alt=\"Detail icon\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtYW5hbHlzaXM8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTMyLjAwMDAwMCwgLTE3MDQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkYXRhLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDE1NzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtYW5hbHlzaXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg5Mi4wMDAwMDAsIDEyNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIiBpZD0iQ29tYmluZWQtU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsMCBMMjAsMjAgTDAsMjAgTDAsMCBMMjAsMCBaIE00Ljk3MTczODAyLDkuNDc4NjQwMDcgTDIsMTEuOTY5IEwyLDE4IEwxOCwxOCBMMTgsMTAuMjU2IEwxNS45NTcyOTA3LDEyLjAzNzQzMTEgQzE1Ljk3NTUzNDcsMTIuMTM0OTUyOCAxNS45ODgxMTY3LDEyLjIzNDQ2ODYgMTUuOTk0NjgyMywxMi4zMzU2MjQzIEwxNiwxMi41IEMxNiwxMy44ODA3MTE5IDE0Ljg4MDcxMTksMTUgMTMuNSwxNSBDMTIuMTE5Mjg4MSwxNSAxMSwxMy44ODA3MTE5IDExLDEyLjUgQzExLDEyLjI3Nzk4ODggMTEuMDI4OTM5MSwxMi4wNjI3MzY4IDExLjA4MzI1MDksMTEuODU3ODEwMyBMNy45NzA1OTcyMyw5LjUyMTkzNSBDNy41NTc5MTc1NSw5LjgyMjYwMjA1IDcuMDQ5Njc1NTMsMTAgNi41LDEwIEM1LjkyNDQzNzEzLDEwIDUuMzk0MzAyMzUsOS44MDU0OTkyNCA0Ljk3MTczODAyLDkuNDc4NjQwMDcgWiBNMTMuNSwxMS41IEMxMi45NDc3MTUzLDExLjUgMTIuNSwxMS45NDc3MTUzIDEyLjUsMTIuNSBDMTIuNSwxMy4wNTIyODQ3IDEyLjk0NzcxNTMsMTMuNSAxMy41LDEzLjUgQzE0LjA1MjI4NDcsMTMuNSAxNC41LDEzLjA1MjI4NDcgMTQuNSwxMi41IEMxNC41LDExLjk0NzcxNTMgMTQuMDUyMjg0NywxMS41IDEzLjUsMTEuNSBaIE0xOCwyIEwyLDIgTDIsMTAuMDEyIEw0LjExMTUyNTkxLDguMjQwNjIzMzIgQzQuMDU0NTYzNjksOC4wNTY3MTc3MSA0LjAxODI1NzEzLDcuODYzNzMxMzYgNC4wMDUzMTc2OCw3LjY2NDM3NTY5IEw0LDcuNSBDNCw2LjExOTI4ODEzIDUuMTE5Mjg4MTMsNSA2LjUsNSBDNy44ODA3MTE4Nyw1IDksNi4xMTkyODgxMyA5LDcuNSBDOSw3Ljc4NTUzNDk3IDguOTUyMTMxLDguMDU5ODg5NTQgOC44NjM5ODAyOSw4LjMxNTQ3NjQgTDExLjg4OTA1NDgsMTAuNTg4MTYwMSBDMTIuMzI0MTQ0MywxMC4yMjExNzA5IDEyLjg4NjI0MzYsMTAgMTMuNSwxMCBDMTQuMTY3ODA4NSwxMCAxNC43NzQ0NjA1LDEwLjI2MTg0MjIgMTUuMjIyODkwNCwxMC42ODg0NjExIEwxOCw4LjI2NiBMMTgsMiBaIE02LjUsNi41IEM1Ljk0NzcxNTI1LDYuNSA1LjUsNi45NDc3MTUyNSA1LjUsNy41IEM1LjUsOC4wNTIyODQ3NSA1Ljk0NzcxNTI1LDguNSA2LjUsOC41IEM3LjA1MjI4NDc1LDguNSA3LjUsOC4wNTIyODQ3NSA3LjUsNy41IEM3LjUsNi45NDc3MTUyNSA3LjA1MjI4NDc1LDYuNSA2LjUsNi41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">Detail</span> after dragging the chart on the widget in <span class=\"uitext\">Metrics Chart</span>.</p>",
+      "category": "Analysis"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Modified the Jetty installation guide in the <strong>Add JVM Option</strong> section of <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>: <code>JAVA_OPTS</code> → <code>JAVA_OPTIONS</code>.</p>",
+      "category": "Java"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Loaded Classes</span>, changed the title of the class search window (<span class=\"b500\">Class signature</span> → <span class=\"uitext\">Class details</span>).</p>",
+      "category": "ETC"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Application",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where scrolling is not applied when the agent list in the agent selection (<span class=\"uitext\">Application</span>) option is greater than the vertical size of the screen.</p>",
+      "category": "ETC"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Server",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, added the guide page for <strong>Oracle Solaris OS</strong> installation.</p>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Server",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Detail</span>, fixed the issue where the chart legend text moves out of the position when the browser window is reduced in size.</p>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> Added the <span class=\"uitext\">Containter State</span> and description in the <span class=\"uitext\">Target information</span> tab of the Summary view.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Modified the style to expose the link to go to another list menu in the <span class=\"uitext\">Target information</span> tab of the Summary view.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In the summary view, changed the category sorting sequence in the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Search Log</span> tab.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Improved the blinking phenomenon in the <span class=\"uitext\">Trace</span> and <span class=\"uitext\">Metrics</span> tabs of Display Detail.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Modified to expose the Move button to another list menu at the top of Display Detail upon selection of a group.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In the summary view, fixed the issue where the search result of the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Search Log</span> tab is not consistent with the search result of <span class=\"uitext\">View Detailed</span>.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where blocks are not displayed with the correct number in the <em><strong>Container</strong></em> view.</p>",
+      "category": "Container Map"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the bug caused by reengineering.</p>",
+      "category": "Container Map",
+      "details": "<ul>\n<li>\n<p>If the selected block disappears, the '<strong>Container/Pod does not exist.</strong>' message appears in title on the summary view panel.</p>\n</li>\n<li>\n<p>Changed to close summary view panel when <span class=\"uitext\">Reset</span> option is selected.</p>\n</li>\n<li>\n<p>Fixed the bug where the <span class=\"uitext\">Trace</span> and <span class=\"uitext\">Metrics</span> tabs of the detailed view panel display data for all rather than a group after selecting a group.</p>\n</li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Node List</span>, added <span class=\"uitext\">capacityType</span> as a subcolumn of <span class=\"uitext\">Node info</span>.</p>",
+      "category": "Cluster"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> The <span class=\"uitext\">Container</span> table in <span class=\"uitext\">Node Detail</span> was modified to match the table in <span class=\"uitext\">Container</span> &gt; <span class=\"uitext\">Container List</span>.</p>",
+      "category": "Cluster"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Node Detail</span>, displayed the sums for the following metrics for each container within the node at the top of the <span class=\"uitext\">Container</span> table.</p>",
+      "category": "Cluster",
+      "details": "<p><code>cpu_quota</code>, <code>cpu_request</code>, <code>cpu_total_milli</code>, <code>mem_limit</code>, <code>mem_request</code>, <code>mem_working_set</code></p>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Changed the terminology of the list-type menus as follows:</p>",
+      "category": "Cluster",
+      "details": "<ul>\n<li>\n<p><span class=\"b500\">Memory</span> → <span class=\"uitext\">Memory</span></p>\n</li>\n<li>\n<p><span class=\"b500\">Network</span> → <span class=\"uitext\">Network</span></p>\n</li>\n<li>\n<p><span class=\"b500\">Disk</span> → <span class=\"uitext\">Disk</span></p>\n</li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Node List</span>, fixed the issue where the checkbox cannot be selected if the checkbox in the column selection dropdown is overlapped with that in the list below.</p>",
+      "category": "Cluster"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> Added the <span class=\"uitext\">Pending Pod Status</span> menu to quickly identify Pods in pending status (menu path change from <span class=\"uitext\">Laboratory</span> &gt; <span class=\"uitext\">Pending Pods</span> to <span class=\"uitext\">Workload</span>).</p>",
+      "category": "Workload"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Container List</span>, changed the column classification.</p>",
+      "category": "Workload"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Changed the name of the <span class=\"uitext\">Oname</span> column in the <span class=\"uitext\">Container Application List</span> menu to <span class=\"uitext\">ApplicationName</span>.</p>",
+      "category": "Workload"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Agent Installation</span>, added the descriptions on the Java agent configuration options.</p>",
+      "category": "Management"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Agent Installation</span> &gt; <span class=\"uitext\">Additional installation of application monitoring</span>, modifies the PHP agent download command.</p>",
+      "category": "Management"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Agent Installation</span> &gt; <span class=\"uitext\">Additional installation of application monitoring</span>, modifies the Go agent download command.</p>",
+      "category": "Management"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Correlated project list</span> of the <span class=\"uitext\">Correlated Project Management</span> menu, modified not to display the linked projects without <span class=\"b600\">View</span> role in the list.</p>",
+      "category": "Management"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Kubernetes Agent List</span>, modified to enable the <img decoding=\"async\" loading=\"lazy\" alt=\"Display Detail icon\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcGFnZXZpZXc8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjcxMS4wMDAwMDApIiBmaWxsPSIjMjk2Y2YyIj4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcGFnZXZpZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgMzY1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMDAwMDAwLCA0LjAwMDAwMCkiIGlkPSJwYWdldmlldyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOCwwIEMxOS4wMzUyOTQxLDAgMTkuODkzNDI1NiwwLjc5NzIzMTgzNCAxOS45OTA3OTk5LDEuODA4MTAwOTYgTDIwLDIgTDE5Ljk5OSw1LjMzMyBMMTcuOTk5LDUuMzMzIEwxOCwyIEwyLDIgTDIsMTQgTDEyLDE0IEwxMiwxNiBMMiwxNiBDMC45NjQ3MDU4ODIsMTYgMC4xMDY1NzQzOTQsMTUuMjAyNzY4MiAwLjAwOTIwMDA4MTQyLDE0LjE5MTg5OSBMLTUuMzI5MDcwNTJlLTE1LDE0IEwtNS4zMjkwNzA1MmUtMTUsMiBDLTUuMzI5MDcwNTJlLTE1LDAuOTY0NzA1ODgyIDAuNzk3MjMxODM0LDAuMTA2NTc0Mzk0IDEuODA4MTAwOTYsMC4wMDkyMDAwODE0MiBMMiwwIEwxOCwwIFogTTEzLjE2NjY2NjcsNCBDMTUuNjU2NjY2Nyw0IDE3LjY2NjY2NjcsNi4wMSAxNy42NjY2NjY3LDguNSBDMTcuNjY2NjY2Nyw5LjM4IDE3LjQwNjY2NjcsMTAuMTkgMTYuOTY2NjY2NywxMC44OSBMMTkuODc2NjY2NywxMy43OSBMMTguNDU2NjY2NywxNS4yMSBMMTUuNTQ2NjY2NywxMi4zIEMxNC44NTY2NjY3LDEyLjc0IDE0LjAzNjY2NjcsMTMgMTMuMTU2NjY2NywxMyBDMTAuNjc2NjY2NywxMyA4LjY2NjY2NjY3LDEwLjk5IDguNjY2NjY2NjcsOC41IEM4LjY2NjY2NjY3LDYuMDEgMTAuNjc2NjY2Nyw0IDEzLjE2NjY2NjcsNCBaIE0xMy4xNjY2NjY3LDYgQzExLjc4NjY2NjcsNiAxMC42NjY2NjY3LDcuMTIgMTAuNjY2NjY2Nyw4LjUgQzEwLjY2NjY2NjcsOS44OCAxMS43ODY2NjY3LDExIDEzLjE2NjY2NjcsMTEgQzE0LjU0NjY2NjcsMTEgMTUuNjY2NjY2Nyw5Ljg4IDE1LjY2NjY2NjcsOC41IEMxNS42NjY2NjY3LDcuMTIgMTQuNTQ2NjY2Nyw2IDEzLjE2NjY2NjcsNiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">View Detailed</span> button only when the agent is active.</p>",
+      "category": "Management"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Deprecated",
+      "desc": "<p><code class=\"Deprecated\">Deprecated</code> In <span class=\"uitext\">Agent CONF.</span>, removed the <span class=\"uitext\">Previous version</span> button.</p>",
+      "category": "Management"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Kubernetes",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In the following menu path, changed the <span class=\"b500\">CPU time</span> column to <span class=\"uitext\">Thread CPU time</span>, displaying comma (,) as the delimiter for every thousand.</p>",
+      "category": "ETC",
+      "details": "<ul>\n<li><span class=\"uitext\">APP.</span> &gt; <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Thread List/Dump</span></li>\n<li><span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Kubernetes Agent List</span></li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Database Parameter</span>, added the feature to compare between the real-time data and the last saved data when <span class=\"uitext\">Reference date</span> and <span class=\"uitext\">Comparison date</span> are all set to the date of today.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Database Parameter</span>, modified to display the collection time in the table's header area.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, modified to select only one instance for the <span class=\"uitext\">Instance</span> option.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Modified to terminate the real-time view and not to select the time selector when the <span class=\"uitext\">Session detail</span> window is opened in the <span class=\"uitext\">Active sessions</span> table on the dashboard with the session terminated.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Modified not to expose the <span class=\"uitext\">Correlation analysis</span> button when the <span class=\"uitext\">Session detail</span> window is opened in the <span class=\"uitext\">Active sessions</span> table on the dashboard with the session terminated.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, fixed the issue where filtering is not applied.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the <code>s_equal</code> string is found in <span class=\"uitext\">Filter</span> when going to the <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span> menu by clicking a link such as filter value from other menus.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, fixed the issue where a toast message appears if there is no data.</p>",
+      "category": "Common"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, improved the installation guide style and configuration.</p>",
+      "category": "MySQL"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> Added the MariaDB to the supported version field of the product card text on the project installation screen.</p>",
+      "category": "MySQL"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In the basic column in <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, modified to hide the <span class=\"uitext\">elapse wait</span> item.</p>",
+      "category": "MySQL"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, moved the <span class=\"uitext\">sqlHash</span> column to the utmost right.</p>",
+      "category": "MySQL"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Database",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> In the <span class=\"uitext\">DB Status</span> widget of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, modified to apply the agent selection status immediately.</p>",
+      "category": "MongoDB"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Log",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Search</span>, changed the display method of the accumulated number of cases when searching logs.</p>",
+      "details": "<ul>\n<li>\n<p>If the next page can be viewed, <span class=\"uitext\">number+</span> appears. Otherwise, <span class=\"uitext\">number</span> appears.</p>\n</li>\n<li>\n<p>When viewing the next page, the accumulated number of cases appears as <span class=\"uitext\">9999+</span>, <span class=\"uitext\">19999+</span>, and <span class=\"uitext\">29999+</span>.</p>\n</li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Log",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Configuration</span>, unified <strong>Data Retention</strong> and the name of <span class=\"b600\">Data period</span> into <span class=\"uitext\">Data retention</span>.</p>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "Browser",
+      "type": "Feature",
+      "desc": "<p><code class=\"Feature\">Feature</code> In the <span class=\"uitext\">Page Load Hitmap</span>, <span class=\"uitext\">AJAX Hitmap</span>, and <span class=\"uitext\">User Session Log Search</span> menus, added the <span class=\"uitext\">Session replay</span> feature to record and replay all events that users perform on the website.</p>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "URL",
+      "type": "Changed",
+      "desc": "<p><code class=\"Changed\">Changed</code> In <span class=\"uitext\">URL List</span>, improved the user interfaces.</p>",
+      "details": "<ul>\n<li>\n<p>Changed the user interface of the <span class=\"uitext\">Edit URL</span> window.</p>\n</li>\n<li>\n<p>Changed the time selection options.</p>\n</li>\n<li>\n<p>Changed not to expose the Unavailable button to the users without the project <strong>Edit</strong> role.</p>\n</li>\n<li>\n<p>Modified to create charts based on the chart search time rather than data time.</p>\n</li>\n<li>\n<p>Moved the position of the <span class=\"uitext\">Delete URL</span> button from the <span class=\"uitext\">Edit URL</span> window to the list.</p>\n</li>\n</ul>"
+    },
+    {
+      "ver": "Service 2.6.0",
+      "hash": "service-260",
+      "product": "URL",
+      "type": "Fixed",
+      "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the <img decoding=\"async\" loading=\"lazy\" alt=\"Notification icon\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNnB4O2hlaWdodDogMjZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZXZlbnQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjM5MS4wMDAwMDApIiBmaWxsPSIjNzk3OTc5Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtZXZlbnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDEuMDAwMDAwKSIgaWQ9IkNvbWJpbmVkLVNoYXBlIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTcsMTkgTDEzLDE5IEMxMywyMC42NTY4NTQyIDExLjY1Njg1NDIsMjIgMTAsMjIgQzguNDAyMzE5MTIsMjIgNy4wOTYzMzkxMiwyMC43NTEwOCA3LjAwNTA5MjY5LDE5LjE3NjI3MjggTDcsMTkgTDEzLDE5IFogTTEwLDAgQzExLjEwNDU2OTUsMCAxMiwwLjg5NTQzMDUgMTIsMiBDMTIsMi4wOTY5NzY1MyAxMS45OTMwOTc5LDIuMTkyMzQwOTkgMTEuOTc5NzU4MiwyLjI4NTYyODk1IEMxNC44ODE4MDcyLDMuMTM4MTQ1MzcgMTcsNS44MjE3MDc0NyAxNyw5IEwxNywxNSBMMTksMTUgQzE5LjU1MjI4NDcsMTUgMjAsMTUuNDQ3NzE1MyAyMCwxNiBDMjAsMTYuNTUyMjg0NyAxOS41NTIyODQ3LDE3IDE5LDE3IEwxLDE3IEMwLjQ0NzcxNTI1LDE3IDYuNzYzNTM3NTFlLTE3LDE2LjU1MjI4NDcgMCwxNiBDLTYuNzYzNTM3NTFlLTE3LDE1LjQ0NzcxNTMgMC40NDc3MTUyNSwxNSAxLDE1IEwzLDE1IEwzLDkgTDMuMDA0MDU5MDIsOC43NTkzNTAyNSBDMy4xMDc4NTc5NSw1LjY4Njg3MzI3IDUuMTkxNzI1NDIsMy4xMTY1MDAwNCA4LjAxOTkwNDkxLDIuMjgzOTg3MDYgQzguMDA2OTAyMDYsMi4xOTIzNDA5OSA4LDIuMDk2OTc2NTMgOCwyIEM4LDAuODk1NDMwNSA4Ljg5NTQzMDUsMCAxMCwwIFogTTEwLDQgQzcuMzAyODE1OCw0IDUuMDkzNjkxMTksNi4xMzk5ODcwNyA1LjAwMzc3NDU5LDguNzkzMDc5MjggTDUsOSBMNSwxNSBMMTUsMTUgTDE1LDkgQzE1LDYuMjM4NTc2MjUgMTIuNzYxNDIzNyw0IDEwLDQgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">Alert status</span> icon on the URL project screen disappears.</p>"
+    }
+  ]
+}
+]

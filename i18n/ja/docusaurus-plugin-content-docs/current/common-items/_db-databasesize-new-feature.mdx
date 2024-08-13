@@ -8,7 +8,7 @@
 
 <InDoc product='mysql'>
 
-MySQLのデータベースサイズ情報は、`information_schema.tables`で照会し、モニタリングアカウントにテーブル照会権限がないと集計されません。 次のように権限設定が必要です。
+MySQLのデータベースサイズ情報は、`information_schema.tables`で照会するため、モニタリングアカウントにテーブル照会権限が必要です。 次のように権限設定が必要です。
 
 ```sql
 grant select on {DB_NAME}.* to whatap;
@@ -26,9 +26,9 @@ grant select on {DB_NAME}.* to whatap;
 
 <InDoc product='postgresql'>
 
-全体データベースサイズは、`pg_database_size`関数として照会し、モニタリングアカウントにconnect権限または`pg_read_all_stats`権限がなければなりません。 `template database`は収集から除外されます。
+全データベースサイズは、`pg_database_size`関数で照会するため、モニタリングアカウントにconnect権限または`pg_read_all_stats`権限が必要です。 `template database`は収集から除外されます。
 
-個別テーブルのサイズは、`pg_relation_size`, `pg_indexes_size`, `pg_total_relation_size`関数として照会し、そのスキーマの照会権限が必要です。
+個別テーブルのサイズは、`pg_relation_size`、`pg_indexes_size`、`pg_total_relation_size`関数で照会するため、その照会権限が必要です。
 
 ```sql
 grant pg_read_all_stats to whatap;
@@ -67,17 +67,17 @@ grant usage on schema {schema_name} to whatap;
 
 <Cmdname sid="TTL06025" className="uitext" />から特定時間のグラフバーを選択すると、開始時間から選択した時間までのデータベースサイズ推移と変化量を一覧形式で確認できます。
 
-<ProdImg img='db-database-size-select-db.png' desc='데이터베이스 사이즈'/>
+<ProdImg img='db-database-size-select-db.png' desc='DBサイズ'/>
 
 ## テーブル別のサイズを確認する
 
 <Cmdname sid="TTL06026" className="uitext" />でデータベースを選択すると、そのデータベース内のサイズTOP50に該当するテーブル別サイズを一覧で確認できます。
 
-<ProdImg img='db-database-size-top50.png' desc='데이터베이스 사이즈'/>
+<ProdImg img='db-database-size-top50.png' desc='DBサイズ'/>
 
 <InDoc product='mysql'>
 
-基本的にテーブル別**DATA SIZE**、**INDEX SIZE**、**ROWS**を表示します。 これは`information_schema.tables`の情報で実際のサイズと異なる場合があります。 `information_schema.innodb_tablespaces`の**FILE SIZE**を一緒に確認するには、DBXエージェントに次のオプションを設定してください。 このサイズは実際のサイズに似ています。
+基本的にテーブル別**DATA SIZE**、**INDEX SIZE**、**ROWS**を表示します。 これは`information_schema.tables`の情報で、実際のサイズと異なる場合があります。 `information_schema.innodb_tablespaces`の**FILE SIZE**を一緒に確認するには、DBXエージェントに次のオプションを設定します。 このサイズは実際のサイズに似ています。
 
 ```ini title='whatap.conf'
 table_filesize=true

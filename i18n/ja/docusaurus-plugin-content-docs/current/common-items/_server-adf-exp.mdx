@@ -8,7 +8,7 @@ MySQL/MariaDB モニタリングエージェントが利用可能です。
 
 WhaTapインフラエージェントは、与えられたWebアドレスに接続し、接続有無および応答時間を収集します。収集されたWeb URLの性能は<Cmdname sid="category" className="uitext" />`server_webcheck`で確認できます。次のコマンドでチェックするWebアドレスを追加します。URLモニタリングサービスの詳細については、[次の文書](../url/url-intro)を参照してください。
 
-<Tabs>
+<Tabs groupId='server-user-script'>
 <TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
@@ -57,8 +57,8 @@ Restart-Service "Whatap Infra"
 
 WhaTapインフラエージェントは、特定のRedisアドレスに接続し、接続数を含む複数の性能指数を収集します。収集された性能情報は、<Cmdname sid="category" className="uitext" />`server_redis`で確認できます。次のコマンドでチェックするRedisサーバーの接続情報を追加できます。
 
-<Tabs>
-<TabItem value="lxs2" label="Linux Shell">
+<Tabs groupId='server-user-script'>
+<TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
 sudo echo "addr=Redisアドレス:ポート番号" | sudo tee /usr/whatap/infra/conf/redis.conf
@@ -67,7 +67,7 @@ sudo service whatap-infra restart
 ```
 
 </TabItem>
-<TabItem value="wps2" label="Windows Powershell">
+<TabItem value="wps" label="Windows Powershell">
 
 ```bash title=SH
 Add-Content -Path "C:\Program Files\WhatapInfra\redis.conf" -Value "addr=Redisアドレス:ポート番号"
@@ -82,8 +82,8 @@ Restart-Service "Whatap Infra"
 
 WhaTapインフラエージェントは、特定のMemcachedアドレスに接続し、接続数を含む複数の性能指数を収集します。収集された情報は、<Cmdname sid="category" className="uitext" />`server_memcached`で確認できます。次のコマンドでチェックするMemcachedサーバーの接続情報を追加できます。
 
-<Tabs>
-<TabItem value="lxs3" label="Linux Shell">
+<Tabs groupId='server-user-script'>
+<TabItem value="lxs" label="Linux Shell">
 
 ```bash title=SH
 sudo echo "addr=Memcachedアドレス:ポート番号" | sudo tee /usr/whatap/infra/conf/memcached.conf
@@ -92,7 +92,7 @@ sudo service whatap-infra restart
 ```
 
 </TabItem>
-<TabItem value="wps3" label="Windows Powershell">
+<TabItem value="wps" label="Windows Powershell">
 
 ```bash title=SH
 Add-Content -Path "C:\Program Files\WhatapInfra\memcached.conf" -Value "addr=Memcachedアドレス"

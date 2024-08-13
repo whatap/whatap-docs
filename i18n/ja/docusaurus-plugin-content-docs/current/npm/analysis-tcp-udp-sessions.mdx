@@ -2,7 +2,7 @@
 id: analysis-tcp-udp-sessions
 title: TCPセッション / UDPセッション
 description: エージェントを通じて収集したセッションデータを利用して、障害ポイントを詳細に識別できます。
-tags:
+keywords:
   - ネットワーク性能モニタリング
   - 分析
   - TCP
@@ -16,25 +16,25 @@ tags:
 
 <ImgLang img="npm-analaysis-tcp-udp.png" desc="セッション検索" />
 
-![数字1](/img/number-01.png)ご希望の時間を設定してから![数字2](/img/number-02.png) ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。 テーブルに、ユーザーが設定した条件と一致する条件のデータが表示されます。
+![数字1](/img/number-01.png)時間を設定してから![数字2](/img/number-02.png) ![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。 テーブルに、ユーザーが設定した条件と一致する条件のデータが表示されます。
 
 :::note
 
-- データ照会条件を新たに設定した後は、![検索アイコン](/img/ico-btn-search.png)ボタンを選択することでマッチングされるデータを出力します。
+- データ照会条件を新たに設定した後は、![検索アイコン](/img/ico-btn-search.png)ボタンを選択し、新たにマッチングされるデータを出力します。
 
-- この機能はRawデータを活用します。 エージェント1台あたり、1分あたり最大5件を提供します。
+- この機能はRawデータを活用します。 エージェント1台に対し、1分あたり最大5件を提供します。
 
 :::
 
 ## 照会時間の設定
 
-ユーザーが希望する時間を設定してデータを照会することができます。
+ユーザーが希望する時間を設定してデータを照会できます。
 
 <ImgLang img='flexboard-time-set-select.png' desc='時刻選択モード' className='noneborder' />
 
 - 緑のボタンを選択して時間設定を選択できます。 最大1時間まで選択できます。
 
-- ![左アイコン](/img/left-arrow.svg)または![右アイコン](/img/right-arrow.svg)ボタンを選択すると、緑のボタンに設定された値だけ時間を移動できます。
+- ![左アイコン](/img/left-arrow.svg)または![右アイコン](/img/right-arrow.svg)ボタンを選択すると、緑のボタンの設定値の分、時間を移動できます。
 
 - 日付と時間テキスト領域を選択すると、日付と時間を選択するオプションが表示されます。
 
@@ -52,7 +52,7 @@ tags:
 
 ### フィルター条件の設定
 
-タグ値とフィールド値に対するマルチフィルター条件を設定してデータを照会することができます。 追加される条件は、`&&`(and) 条件に設定されます。 例えば、`ProcessType`タグ値が'agencyrun'で`Session Count`フィールド値が 2より大きいセッション データを照会するには、次のように設定してください。
+タグ値とフィールド値に対するマルチフィルター条件を設定してデータを照会できます。 追加される条件は、`&&`(and) 条件に設定されます。 例えば、`ProcessType`タグ値が'agencyrun'で`Session Count`フィールド値が 2より大きいセッション データを照会するには、次のように設定してください。
 
 <ImgLang img="npm-analysis-filtering.png" desc="タグフィルタリング" />
 
@@ -103,7 +103,7 @@ Local Process Type == agencyrun, Local Process Type == dev-yard
 
 ### テーブルカラムの設定
 
-テーブルヘッダーカラムを非表示にしたり、希望する項目を追加することができます。 カラムの順序を変更することもできます。 <Cmdname sid="BTN06441" className="uitext" />ボタンを選択します。
+テーブルヘッダーカラムを非表示にしたり、希望する項目を追加できます。 カラムの順序を変更することもできます。 <Cmdname sid="BTN06441" className="uitext" />ボタンを選択します。
 
 <ImgLang img="npm-analysis-column-settings.png" desc="カラム設定" />
 
@@ -111,17 +111,17 @@ Local Process Type == agencyrun, Local Process Type == dev-yard
 
 - 設定を完了した後は、<Cmdname sid="BTN06053" className="uitext" />ボタンを選択すると、設定事項がテーブルに反映されます。
 
-- ![数字3](/img/number-03.png)検索欄にテキストを入力して、希望するカラム項目を検索することができます。 入力したテキストと一致するカラム項目が表示されます。
+- ![数字3](/img/number-03.png)検索バーにテキストを入力し、カラム項目を検索できます。 入力したテキストと一致するカラム項目が表示されます。
 
 :::
 
-#### カラムを追加する
+#### カラムの追加
 
-![数字1](/img/number-01.png)一覧でテーブルヘッダーカラムに追加する項目を選択してください。 すべての項目を追加するには、<Cmdname sid="BTN06048" className="uitext" />を選択します。
+![数字1](/img/number-01.png)一覧でテーブルヘッダーカラムに追加する項目を選択します。 すべての項目を追加するには、<Cmdname sid="BTN06048" className="uitext" />を選択します。
 
 #### カラムを削除する
 
-![数字1](/img/number-01.png)一覧で削除するカラム項目のチェックボックスを選択解除してください。 または![数字2](/img/number-02.png)一覧で削除する項目の右側の![削除アイコン](/img/ico-remove-white.svg)ボタンを選択してください。
+![数字1](/img/number-01.png)一覧から削除するカラム項目のチェックボックスのチェックを解除します。 または![数字2](/img/number-02.png)一覧から削除する項目の右側の![削除アイコン](/img/ico-remove-white.svg)ボタンを選択します。
 
 #### カラム順序の変更
 
@@ -133,4 +133,4 @@ Local Process Type == agencyrun, Local Process Type == dev-yard
 
 ### 照会データのダウンロード
 
-テーブルに出力されたデータをcsvファイル形式でダウンロードするには、![ダウンロードアイコン](/img/ic-csv-download-ms.svg)ボタンを選択してください。
+テーブルに出力されたデータをCSVファイル形式でダウンロードするには、![ダウンロードアイコン](/img/ic-csv-download-ms.svg)ボタンを選択します。

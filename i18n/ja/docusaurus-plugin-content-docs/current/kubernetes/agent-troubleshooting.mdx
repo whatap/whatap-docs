@@ -1,15 +1,15 @@
 ---
 id: agent-troubleshooting
-title: インストール問題の解決
-description: Javaエージェントのインストール時に発生する可能性のある問題を確認することができます。
+title: エージェント問題の解決
+description: エージェントのインストール時に発生する可能性のある問題を確認できます。
 hide_table_of_contents: true
 toc_max_heading_level: 2
-tags:
+keywords:
   - Kubernetes
   - Kubernetesモニタリング
   - Troubleshooting
   - 問題解決
-  - Helmチャート
+  - エージェント問題
 ---
 
 ## Helmチャート基準のインストール問題の解決{#troubleshooting-helm-chart}
@@ -51,5 +51,46 @@ kubectl delete clusterrole whatap
 kubectl delete clusterrolebinding whatap
 kubectl delete clusterrole whatap
 ```
+
+</div>
+
+## エージェント起動時に発生する問題の解決{#troubleshooting-agent}
+
+<div class ='faq'>
+
+### 旧型YAMLファイルを通じてWhaTap Kubernetesモニタリングをインストールした場合
+
+| Unrecognized VM option 'UseCGroupMemoryLimitForHeap'<br/>Error: Could not create the Java Virtual Machine.<br/>Error: A fatal exception has occurred. Program will exit. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+
+**2022年8月24日以前**にダウンロードしたインストール*YAML*を通じてワタブ クバネティス モニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生するか、起動に失敗する場合があります。 
+
+#### 原因
+
+- 2022年8月24日以前にダウンロードしたインストール*YAML*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
+
+- WhaTapノードエージェント1.2.0(2022年11月21日リリース)以降のバージョンからエージェント内部で使用するJDKがアップグレードされており、アップグレードされたJDKバージョンはもはや`UseCGroupMemoryLimitForHeap`オプションを提供していません。
+
+- 2022年8月24日以前にダウンロードした*YAML*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
+
+#### 解決
+
+次のステップを使用して、WhaTap Kubernetesモニタリングを再インストールしてください。
+
+1. **_管理_**  > **_エージェントのインストール_**画面で最新*YAML*ファイルをダウンロードしてください。
+
+2. ユーザーKubernetes環境でダウンロードした*YAML*ファイルを使用してエージェントをインストールしてください。 
+
+3. ユーザーKubernetes環境でインストール中にエラーの出力有無を確認してください。
+
+4. WhaTapモニタリングエージェントPodがRunning状態であるかを確認してください。
+
+   :::note 
+
+   ユーザーKubernetes環境及び**_ワークロード_** > **_Pod一覧_**メニューで確認してください。
+
+   :::
+
+5. **_管理_** > **_Kubernetesエージェント一覧_**メニューで、各モニタリングエージェントで発生するログを確認してください。
 
 </div>

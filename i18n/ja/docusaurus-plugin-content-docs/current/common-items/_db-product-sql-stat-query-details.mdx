@@ -1,5 +1,7 @@
 - <Cmdname sid="BTN06225" className="uitext" />: 該当SQLクエリ文に関する統計情報が確認できる<Cmdname sid="statistics_sql" className="uitext" />メニューへ移動できます。
 
+<InDoc product='postgresql,mysql'>
+
 - **_Default Bind_**: クエリ文で変数として設定された部分を既定値としてバインディングできます。
 
 - **_Reset Bind_**: バインディングされた既定値を解除し、変数を確認できます。
@@ -8,11 +10,13 @@
 
 - **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
-  <InDoc product='postgresql,mysql'>
-
   - **_Text_**: テキスト形式でプラン情報を確認できます。
 
   - **_JSON_**: JSON形式でプラン情報を照会すると、ボトルネックが発生した箇所がすばやく確認できます。
+
+</InDoc>
+
+<InDoc product='postgresql'>
 
   :::note
 
@@ -20,4 +24,46 @@
 
   :::
 
-  </InDoc>
+</InDoc>
+
+<InDoc product='mysql'>
+
+  :::note
+
+  **_JSON_**形式でプラン情報を照会する機能は、DBXエージェント1.6.15バージョン以降から対応しています。
+
+  :::
+
+</InDoc>
+
+<InDoc product='oracle-pro,oracle'>
+
+- **_Runtime Plan_**: 選択されたSQLクエリの実行計画とランタイム情報を提供します。 実行回数、平均実行時間、平均物理的読み取りなどの詳細を提供します。
+
+- **_Explain Plan_**: オプティマイザーが予測した実行計画を示します。 費用、作業、オブジェクト名、カーディナリティなどの情報を提供します。
+
+- **_Plan History_**: データベースで実行されたSQLクエリの実行計画に対する履歴を確認できます。
+
+- **_Bind Capture_**: データベースで実行されたSQLクエリに使用されたバインド変数の値を確認できます。 これにより、クエリ実行の実際の内容を確認できます。
+
+  :::note
+
+  リアルタイムで実行されたbind値ではなく、データベースにキャプチャされた値(`v$sql_bind_capture`)です。 件数が多いと、100個まで表示します。
+
+  :::
+
+</InDoc>
+
+<InDoc product='postgresql,mysql'>
+
+:::tip
+
+**_JSON_**形式でプラン情報を照会した状態でtableまたはindex項目を選択すると、テーブルの**column**、 **index**構成が確認できる**_Object detail_**ウィンドウが表示されます。
+
+<ImgLang img='db-sql-objectdetail-pg.png' desc='Object detail' />
+
+この機能は、DBXエージェント1.6.15バージョン以降に対応しています。 データベース権限に関する設定は、[次の文書](install-agent#uid)を参考にしてください。
+
+:::
+
+</InDoc>

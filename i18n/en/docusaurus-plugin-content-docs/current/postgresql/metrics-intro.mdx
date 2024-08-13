@@ -2,7 +2,7 @@
 id: metrics-intro
 title: Metrics
 description: Let's learn about the metrics menus for Database Monitoring analysis.
-tags:
+keywords:
   - PostgreSQL
   - Metrics
   - Database
@@ -11,7 +11,6 @@ tags:
 
 import Variable from '@site/src/components/Variable.js';
 import IntroExam from '../common-items/_import_metrics-intro-exam.mdx';
-import LookupchartDesc from '../common-items/_import_metrics-chart-example-desc.mdx';
 
 {/* 개요 */}
 import Metricsintrodesc from "../common-items/_metrics-intro.desc.mdx";
@@ -22,14 +21,7 @@ import Metricsintrodesc from "../common-items/_metrics-intro.desc.mdx";
 
 <ProdImg img='metrics-example-00.png' desc=''/>
 
-{/* 메트릭스 차트 조회하기*/}
-import Metricsintrolookupchart from "../common-items/_metrics-intro-look-up-chart.mdx";
+{/* 메트릭스 데이터 조회 및 시각화*/}
+import Metricsintrodatadesc from "../common-items/_metrics-intro-data-search-desc.mdx";
 
-<Metricsintrolookupchart />
-
-<LookupchartDesc metric='Active_sessions' category='db_postgresql_counter' />
-
-{/* 메트릭스 Raw Data 조회화기*/}
-import Metricsintrolookuprawdata from "../common-items/_metrics-intro-look-up-raw-data.mdx";
-
-<Metricsintrolookuprawdata />
+<Metricsintrodatadesc />
