@@ -23,7 +23,7 @@ displayed_sidebar: learningSidebar
 
 <Cmdname sid="redefine" className="uitext" />は、`Instrumentation`の`redefineClasses`メソッドを呼び出し、アプリケーションを中断させることなく、ランタイム中にすでにロードされたクラスの動作を変更できるようにします。 これは、運用中のサービスに対する修正や変更が必要な場合に役立ちます。 例えば、新しいサービスパターンの指定で追加のトランザクションの開始点を設定し、応答時間を測定しようとするとき、関連するWhaTap設定の変更後、そのクラスを<Cmdname sid="side_loadedClasses" className="uitext" />リストから探し![修正アイコン](/img/ico-edit.svg)アイコンをクリックして<Cmdname sid="redefine" className="uitext" />できます。
 
-<ImgLang img='/best-p/about-instance-loaded-class1.png' desc='ロード済クラス 再定義' />
+<ImgLang img='best-p/about-instance-loaded-class1.png' desc='ロード済クラス 再定義' />
 
 #### リソース
 
@@ -39,11 +39,11 @@ displayed_sidebar: learningSidebar
 
 どのスレッドがCPUを多く使用しているかを把握することは、ボトルネックの発生原因を識別する上で重要です。 特に、特定の時間帯にCPU使用が急増したスレッド識別のために、時系列データを照会できる必要があります。 <Cmdname sid="side_threadList" className="uitext" />メニューの<Cmdname sid="thread_cpu_time" className="uitext" />は、当該スレッドがCPUを占有した合計累積時間を意味します。 ***更新***時、現在のスレッドCPU時間と既存のスレッドCPU時間の差である<Cmdname sid="TTL08126" className="uitext" />を提供することで、照会時点で最も多くCPUを使用しているスレッドを特定できます。 <Cmdname sid="TTL08126" className="uitext" />カラムをクリックし、降順でのソートで増加量が最も高いスレッドを確認してみてください。 
 
-<ImgLang img='/best-p/about-instance-thread-list-dump3.png' desc='スレッドリスト/ダンプ' />
+<ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='スレッドリスト/ダンプ' />
 
 このようにスレッドを特定した後、そのスレッドのスナップショットを確認して、頻繁に呼び出されたり、長く実行されるメソッドなどを確認できます。 これにより、異常な兆候を早期に発見し、対応してシステムを安定的に管理できます。
 
-<ImgLang img='/best-p/about-instance-thread-list-dump4.png' desc='スレッドリスト/ダンプ' />
+<ImgLang img='best-p/about-instance-thread-list-dump4.png' desc='スレッドリスト/ダンプ' />
 
 #### CPU使用量の高いスレッドの確認
 
