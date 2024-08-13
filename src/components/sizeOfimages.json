@@ -2499,6 +2499,38 @@
     "width": 1248,
     "height": 284
   },
+  "about-server-adf-tcp-port-en.png": {
+    "width": 1200,
+    "height": 971
+  },
+  "about-server-adf-tcp-port-ja.png": {
+    "width": 1200,
+    "height": 970
+  },
+  "about-server-adf-tcp-port-ms-en.png": {
+    "width": 1200,
+    "height": 348
+  },
+  "about-server-adf-tcp-port-ms-ja.png": {
+    "width": 1200,
+    "height": 350
+  },
+  "about-server-adf-tcp-port-ms.png": {
+    "width": 1204,
+    "height": 352
+  },
+  "about-server-adf-tcp-port.png": {
+    "width": 1200,
+    "height": 970
+  },
+  "about-tcp-port-rs-s.png": {
+    "width": 513,
+    "height": 360
+  },
+  "about-tcp-port-rs.png": {
+    "width": 1188,
+    "height": 764
+  },
   "apm-dashboard-best-practice.png": {
     "width": 3102,
     "height": 2062
@@ -3966,6 +3998,14 @@
   "changelog-whatap-info.png": {
     "width": 612,
     "height": 346
+  },
+  "new_feature_overview_txt.png": {
+    "width": 934,
+    "height": 161
+  },
+  "new_feature_overview_txt_gl.png": {
+    "width": 934,
+    "height": 161
   },
   "changes-transaction-list-after.png": {
     "width": 2394,
@@ -7515,6 +7555,18 @@
     "width": 1175,
     "height": 593
   },
+  "group-add-en.png": {
+    "width": 600,
+    "height": 199
+  },
+  "group-add-ja.png": {
+    "width": 600,
+    "height": 198
+  },
+  "group-add.png": {
+    "width": 600,
+    "height": 199
+  },
   "group-member-by-project-en.png": {
     "width": 1200,
     "height": 488
@@ -8734,6 +8786,18 @@
   "k8s-container-map-thresholds.png": {
     "width": 870,
     "height": 576
+  },
+  "k8s-container-map-trace-en.png": {
+    "width": 1200,
+    "height": 587
+  },
+  "k8s-container-map-trace-ja.png": {
+    "width": 1200,
+    "height": 593
+  },
+  "k8s-container-map-trace.png": {
+    "width": 1200,
+    "height": 593
   },
   "k8s-container-map-unified-en.png": {
     "width": 1200,
@@ -12692,8 +12756,8 @@
     "height": 431
   },
   "apm-transaction-list-after-change.png": {
-    "width": 855,
-    "height": 311
+    "width": 1200,
+    "height": 437
   },
   "apm-transaction-list-after.png": {
     "width": 1602,
@@ -12862,6 +12926,10 @@
   "release-npm-topology.png": {
     "width": 1730,
     "height": 824
+  },
+  "release-trace-analysis-filter-changes.png": {
+    "width": 1000,
+    "height": 285
   },
   "release-usage-subcribe-column.png": {
     "width": 400,
