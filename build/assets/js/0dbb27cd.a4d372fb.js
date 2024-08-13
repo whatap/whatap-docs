@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkWhaTap_Docs=self.webpackChunkWhaTap_Docs||[]).push([[16407],{16296:e=>{e.exports=JSON.parse('{"tag":{"label":"Docs","permalink":"/tags/docs","allTagsPath":"/tags","count":1,"items":[{"id":"reference","title":"Reference","description":"Key concepts and terms used in WhaTap Docs are handled.","permalink":"/reference"}],"unlisted":false}}')}}]);
