@@ -99,6 +99,7 @@ const config = {
         styles: { 
           "--canary-color-primary-c": 0.1, 
           "--canary-color-primary-h": 270,
+          "--canary-content-max-width": "800px",
         }, 
         // https://pagefind.app/docs/ranking
         pagefind: { 
