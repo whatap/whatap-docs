@@ -3423,7 +3423,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3432,7 +3432,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_8_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
@@ -3451,7 +3451,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -3459,9 +3459,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_4_98',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_5_0',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_4_98',
                 'release-notes/nodejs/nodejs-0_4_97',
                 'release-notes/nodejs/nodejs-0_4_96',
                 'release-notes/nodejs/nodejs-0_4_95',
@@ -3470,7 +3471,6 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_89',
                 'release-notes/nodejs/nodejs-0_4_88',
                 'release-notes/nodejs/nodejs-0_4_86',
-                'release-notes/nodejs/nodejs-0_4_83',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
@@ -3572,9 +3572,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_4',
+                  id: 'release-notes/server/server-2_6_5',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_4',
                 'release-notes/server/server-2_6_3',
                 'release-notes/server/server-2_6_2',
                 'release-notes/server/server-2_6_1',
@@ -3585,7 +3586,6 @@ const sidebars = {
                 'release-notes/server/server-2_5_5',
                 'release-notes/server/server-2_5_4',
                 'release-notes/server/server-2_5_3',
-                'release-notes/server/server-2_5_2',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3612,7 +3612,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -3621,7 +3621,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_7_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_7_7',
                 'release-notes/k8s/k8s-1_7_6',
@@ -3877,6 +3877,7 @@ const sidebars = {
               label: '인스턴스 성능 관리 활용',
               id: 'best-practice-guides/about-instance-performance-analysis'
             },
+            'best-practice-guides/about-tcp-port',
           ]
         }
       ]
@@ -5192,7 +5193,20 @@ const sidebars = {
         {
           type: 'doc',
           id: 'features/kafka-introduction',
-          // className: 'beta'
+          label: 'KAFKA',
+          className: 'beta'
+        },
+        {
+          type: 'doc',
+          id: 'features/aerospike-introduction', 
+          label: 'Aerospike',
+          className: 'beta' 
+        },
+        {
+          type: 'doc',
+          id: 'features/apache-pulsar-introduction',
+          label: 'Apache Pulsar',
+          className: 'beta' 
         },
         // 'kafka/install-agent',
         // {

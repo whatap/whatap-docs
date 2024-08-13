@@ -57,7 +57,6 @@ const config = {
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
-    [ 'docusaurus-plugin-pagemove', {} ],
     [
       '@docusaurus/plugin-client-redirects',
       {

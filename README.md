@@ -6,6 +6,10 @@ WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.
 
 <https://github.com/whatap/whatap-docs/wiki>
 
+```
+export NODE_OPTIONS="--max-old-space-size=24576" && USE_SIMPLE_CSS_MINIFIER=true yarn build --no-minify
+```
+
 ## 다국어 작업
 
 ### Crowdin CLI 설치

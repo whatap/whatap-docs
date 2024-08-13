@@ -31621,8 +31621,8 @@
   },
   "edit_member_role": {
     "en": "Edit member role",
-    "ja": "メンバー権限を修正する\n",
-    "ko": "멤버 권한 수정 ",
+    "ja": "メンバー権限を修正する",
+    "ko": "멤버 권한 수정",
     "zh": "Edit Member Role ",
     "service_id": "ITM04592"
   },
@@ -54034,10 +54034,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -55364,10 +55364,10 @@
     "service_id": "BTN08028"
   },
   "TTL08029": {
-    "en": "Basic Information",
+    "en": "basic information",
     "ja": "基本情報",
     "ko": "기본 정보",
-    "zh": "Basic Information",
+    "zh": "basic information",
     "service_id": "TTL08029"
   },
   "DSC08030": {
@@ -55714,10 +55714,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55854,17 +55854,17 @@
     "service_id": "TTL08098"
   },
   "TTL08099": {
-    "en": "Model",
+    "en": "model",
     "ja": "モデル",
     "ko": "모델",
-    "zh": "Model",
+    "zh": "model",
     "service_id": "TTL08099"
   },
   "TTL08100": {
-    "en": "Serial",
+    "en": "cereals",
     "ja": "シリアル",
     "ko": "시리얼",
-    "zh": "Serial",
+    "zh": "cereals",
     "service_id": "TTL08100"
   },
   "TTL08101": {
@@ -55938,10 +55938,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56247,7 +56247,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56379,10 +56379,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56407,10 +56407,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56855,10 +56855,10 @@
     "service_id": "DSC08243"
   },
   "DSC08244": {
-    "en": "Arrangement",
+    "en": "arrangement",
     "ja": "配列",
     "ko": "배열",
-    "zh": "Arrangement",
+    "zh": "arrangement",
     "service_id": "DSC08244"
   },
   "DSC08245": {
@@ -56918,10 +56918,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -56968,7 +56968,7 @@
   },
   "CNT08260": {
     "en": "The access key is a unique ID for activating the WhaTap service.<br /> Please be careful not to expose the access key to unknown.",
-    "ja": "アクセスキーは、ワタップサービスを有効にするための一意のIDです。<br />アクセスキーが外部に公開されないように注意してください。",
+    "ja": "アクセスキーは、WhaTap Monitoringサービスを有効にするためのユニックIDです。<br />アクセスキーが外部に公開されないように注意してください。",
     "ko": "액세스 키는 와탭 서비스 활성화를 위한 고유 ID 입니다.<br /> 액세스 키가 외부에 노출되지 않도록 주의해 주세요.",
     "zh": "The access key is a unique ID for activating the WhaTap service.<br /> Please be careful not to expose the access key to unknown.",
     "service_id": "CNT08260"
@@ -57010,7 +57010,7 @@
   },
   "CNT08266": {
     "en": "When creating a project, set the number of Master yards created.",
-    "ja": "プロジェクト作成時のマスターヤードの作成数を設定します。",
+    "ja": "プロジェクト作成時のMaster yardの生成数を設定します。",
     "ko": "프로젝트 생성시 Master yard의 생성 개수를 설정합니다.",
     "zh": "When creating a project, set the number of Master yards created.",
     "service_id": "CNT08266"
@@ -57045,7 +57045,7 @@
   },
   "CNT08271": {
     "en": "When creating a project, set the number of Replica yards created.",
-    "ja": "プロジェクト作成時の Replica yard の作成数を設定します。",
+    "ja": "プロジェクト作成時の Replica yard の生成数を設定します。",
     "ko": "프로젝트 생성시 Replica yard의 생성 개수를 설정합니다.",
     "zh": "When creating a project, set the number of Replica yards created.",
     "service_id": "CNT08271"
@@ -57058,57 +57058,57 @@
     "service_id": "CNT08272"
   },
   "ITM08273": {
-    "en": "Freeform",
-    "ja": "フリースタイル",
-    "ko": "자유형",
-    "zh": "Freeform",
+    "en": "Custom",
+    "ja": "カスタマイズ",
+    "ko": "사용자 정의",
+    "zh": "Custom",
     "service_id": "ITM08273"
   },
   "TTL08274": {
-    "en": "AWS Marketplace Product Information",
-    "ja": "AWS Marketplace 商品情報",
+    "en": "AWS Marketplace product information",
+    "ja": "AWS Marketplace商品情報",
     "ko": "AWS Marketplace 상품 정보",
-    "zh": "AWS Marketplace Product Information",
+    "zh": "AWS Marketplace product information",
     "service_id": "TTL08274"
   },
   "TTL08275": {
-    "en": "product code",
+    "en": "Product code",
     "ja": "商品キー",
     "ko": "상품키",
-    "zh": "product code",
+    "zh": "Product code",
     "service_id": "TTL08275"
   },
   "TTL08276": {
-    "en": "statistical standards",
+    "en": "Statistical criteria",
     "ja": "統計基準",
     "ko": "통계 기준",
-    "zh": "statistical standards",
+    "zh": "Statistical criteria",
     "service_id": "TTL08276"
   },
   "TTL08277": {
-    "en": "Vacuum History",
-    "ja": "Vacuum 履歴",
+    "en": "Vacuum history",
+    "ja": "Vacuum履歴",
     "ko": "Vacuum 히스토리",
-    "zh": "Vacuum History",
+    "zh": "Vacuum history",
     "service_id": "TTL08277"
   },
   "TTL08278": {
-    "en": "performance indicators",
-    "ja": "パフォーマンス指標",
+    "en": "Performance indicators",
+    "ja": "性能指標",
     "ko": "성능 지표",
-    "zh": "performance indicators",
+    "zh": "Performance indicators",
     "service_id": "TTL08278"
   },
   "NTC08279": {
     "en": "You can select up to {count} items for comparison.",
-    "ja": "比較は{count}個まで選択可能です。",
+    "ja": "比較は{count}件まで選択できます。",
     "ko": "비교하기는 {count}개까지 선택 가능합니다.",
     "zh": "You can select up to {count} items for comparison.",
     "service_id": "NTC08279"
   },
   "CNT08280": {
     "en": "and {count} others",
-    "ja": "他{count}個",
+    "ja": "他{count}件",
     "ko": "외 {count}개",
     "zh": "and {count} others",
     "service_id": "CNT08280"
@@ -57128,10 +57128,10 @@
     "service_id": "BTN08282"
   },
   "ITM08283": {
-    "en": "redirect time",
+    "en": "Redirect time",
     "ja": "リダイレクト時間",
     "ko": "리다이렉트 시간",
-    "zh": "redirect time",
+    "zh": "Redirect time",
     "service_id": "ITM08283"
   },
   "ITM08284": {
@@ -57142,10 +57142,10 @@
     "service_id": "ITM08284"
   },
   "ITM08285": {
-    "en": "FirstByte Time",
+    "en": "FirstByte time",
     "ja": "FirstByte時間",
     "ko": "FirstByte 시간",
-    "zh": "FirstByte Time",
+    "zh": "FirstByte time",
     "service_id": "ITM08285"
   },
   "ITM08286": {
@@ -57157,44 +57157,44 @@
   },
   "NTC08287": {
     "en": "You can only enter {n} items.",
-    "ja": "{n}個までのみ入力可能です。",
+    "ja": "{n}件までのみ入力できます。",
     "ko": "{n}개까지만 입력 가능합니다.",
     "zh": "You can only enter {n} items.",
     "service_id": "NTC08287"
   },
   "TTL08288": {
     "en": "{n}quantile",
-    "ja": "{n}雰囲気",
+    "ja": "{n}分位数",
     "ko": "{n}분위",
     "zh": "{n}quantile",
     "service_id": "TTL08288"
   },
   "BTN08289": {
-    "en": "full screen",
+    "en": "Full Screen",
     "ja": "フルスクリーン",
     "ko": "전체 화면",
-    "zh": "full screen",
+    "zh": "Full Screen",
     "service_id": "BTN08289"
   },
   "NTC08290": {
     "en": "After entering the keyword, press Enter to add it.",
-    "ja": "キーワードを入力してEnterを押して追加します。",
+    "ja": "キーワードを入力してから、Enterを押して追加します。",
     "ko": "키워드 입력 후 엔터를 눌러 추가하세요.",
     "zh": "After entering the keyword, press Enter to add it.",
     "service_id": "NTC08290"
   },
   "ITM08291": {
     "en": "percentile",
-    "ja": "百分位",
+    "ja": "パーセンタイル",
     "ko": "백분위",
     "zh": "percentile",
     "service_id": "ITM08291"
   },
   "TTL08292": {
-    "en": "Performance Metrics ({unit})",
-    "ja": "パフォーマンス指標（{unit}）",
+    "en": "Performance metrics ({unit})",
+    "ja": "性能指標（{unit}）",
     "ko": "성능 지표 ({unit})",
-    "zh": "Performance Metrics ({unit})",
+    "zh": "Performance metrics ({unit})",
     "service_id": "TTL08292"
   },
   "ITM08293": {
@@ -57212,17 +57212,17 @@
     "service_id": "ITM08294"
   },
   "ITM08295": {
-    "en": "Kubernetes Container",
-    "ja": "クーバーネティスコンテナ",
+    "en": "Kubernetes container",
+    "ja": "Kubernetesコンテナ",
     "ko": "쿠버네티스 컨테이너",
-    "zh": "Kubernetes Container",
+    "zh": "Kubernetes container",
     "service_id": "ITM08295"
   },
   "ITM08296": {
-    "en": "Kubernetes Application Container",
-    "ja": "キューバネティスアプリケーションコンテナ",
+    "en": "Kubernetes application container",
+    "ja": "Kubernetesアプリケーションコンテナ",
     "ko": "쿠버네티스 애플리케이션 컨테이너",
-    "zh": "Kubernetes Application Container",
+    "zh": "Kubernetes application container",
     "service_id": "ITM08296"
   },
   "ITM08297": {
@@ -57233,11 +57233,333 @@
     "service_id": "ITM08297"
   },
   "TTL08298": {
-    "en": "Detailed inquiry",
+    "en": "View details",
     "ja": "詳細検索",
     "ko": "상세 조회",
-    "zh": "Detailed inquiry",
+    "zh": "View details",
     "service_id": "TTL08298"
+  },
+  "DSC08299": {
+    "en": "A new Project Access Key is given to the added namespace project. <br/> Therefore, if application monitoring (APM) is installed in a separate namespace, the Project Access Key (old license) in the application monitoring settings must be changed to the Project Access Key of the newly added namespace project to ensure normal application monitoring is possible.",
+    "ja": "追加されたネームスペースのプロジェクトには新しいProject Access Keyが付与されます。 <br/> そのため、異なるネームスペースにアプリケーションモニタリング（APM）がインストールされている場合、アプリケーションモニタリング設定内のProject Access Key（旧：license）を新しく追加されたネームスペースプロジェクトのProject Access Keyに変更する必要があります。",
+    "ko": "추가된 네임스페이스 프로젝트에는 새로운 Project Access Key가 부여됩니다. <br/> 따라서 분리된 네임스페이스에 애플리케이션 모니터링(APM)이 설치되어 있는 경우, 애플리케이션 모니터링 설정 내 Project Access Key(구 license)를 새로 추가된 네임스페이스 프로젝트의 Project Access Key로 변경해야 정상적인 애플리케이션 모니터링이 가능합니다.",
+    "zh": "A new Project Access Key is given to the added namespace project. <br/> Therefore, if application monitoring (APM) is installed in a separate namespace, the Project Access Key (old license) in the application monitoring settings must be changed to the Project Access Key of the newly added namespace project to ensure normal application monitoring is possible.",
+    "service_id": "DSC08299"
+  },
+  "TTL08300": {
+    "en": "Precautions for adding a namespace project",
+    "ja": "ネームスペースプロジェクトの追加に関する注意事項",
+    "ko": "네임스페이스 프로젝트 추가 주의사항",
+    "zh": "Precautions for adding a namespace project",
+    "service_id": "TTL08300"
+  },
+  "TTL08301": {
+    "en": "Precautions for deleting namespace projects",
+    "ja": "ネームスペースプロジェクトの削除に関する注意事項",
+    "ko": "네임스페이스 프로젝트 삭제 주의사항",
+    "zh": "Precautions for deleting namespace projects",
+    "service_id": "TTL08301"
+  },
+  "TTL08302": {
+    "en": "Ping check result",
+    "ja": "Ping Check結果",
+    "ko": "Ping Check 결과",
+    "zh": "Ping check result",
+    "service_id": "TTL08302"
+  },
+  "ITM08303": {
+    "en": "View sensitive information",
+    "ja": "敏感情報の照会",
+    "ko": "민감 정보 조회",
+    "zh": "View sensitive information",
+    "service_id": "ITM08303"
+  },
+  "TTL08304": {
+    "en": "Top 10 page load counts",
+    "ja": "ページロード数 Top10",
+    "ko": "페이지 로드 수 Top10",
+    "zh": "Top 10 page load counts",
+    "service_id": "TTL08304"
+  },
+  "TTL08305": {
+    "en": "Page load performance trend",
+    "ja": "ページロードの性能推移",
+    "ko": "페이지 로드 성능 추이",
+    "zh": "Page load performance trend",
+    "service_id": "TTL08305"
+  },
+  "TTL08306": {
+    "en": "Top 10 page load times",
+    "ja": "ページロード時間 Top10",
+    "ko": "페이지 로드 시간 Top10",
+    "zh": "Top 10 page load times",
+    "service_id": "TTL08306"
+  },
+  "BTN08307": {
+    "en": "New Version",
+    "ja": "新規バージョン",
+    "ko": "신규 버전",
+    "zh": "New Version",
+    "service_id": "BTN08307"
+  },
+  "DSC08308": {
+    "en": "You can search information containing personal information.<br/>(Target menu: “View SQL parameters”)",
+    "ja": "個人情報を含むデータが検索できます。<br/>（対象メニュー：SQLパラメータの表示）",
+    "ko": "개인정보가 포함된 정보를 조회할 수 있습니다.<br/>(대상메뉴: \"SQL 파라미터 보기\")",
+    "zh": "You can search information containing personal information.<br/>(Target menu: “View SQL parameters”)",
+    "service_id": "DSC08308"
+  },
+  "DSC08310": {
+    "en": "1. In the Services > Service Directory menu, click the <b>New Service button</b>.",
+    "ja": "1. Services > Service Directoryメニューから、<b> New Serviceボタン</b>をクリックします。",
+    "ko": "1. Services > Service Directory 메뉴에서 <b>New Service 버튼</b>을 클릭합니다.",
+    "zh": "1. In the Services > Service Directory menu, click the <b>New Service button</b>.",
+    "service_id": "DSC08310"
+  },
+  "DSC08311": {
+    "en": "2. Enter the service information and click the Next button.",
+    "ja": "2. Service情報を入力してから、Nextボタンをクリックします。",
+    "ko": "2. Service 정보를 입력 후 Next 버튼을 클릭합니다.",
+    "zh": "2. Enter the service information and click the Next button.",
+    "service_id": "DSC08311"
+  },
+  "DSC08312": {
+    "en": "3. Set the Escalation Policy and click the Next button.",
+    "ja": "3. Escalation Policyを設定してから、Nextボタンをクリックします。",
+    "ko": "3. Escalation Policy를 설정 후 Next 버튼을 클릭합니다.",
+    "zh": "3. Set the Escalation Policy and click the Next button.",
+    "service_id": "DSC08312"
+  },
+  "DSC08313": {
+    "en": "4. Select Alert Grouping and Transient Alerts methods and click the Next button.",
+    "ja": "4. Alert Grouping と Transient Alerts 方式を選択し、Next ボタンをクリックします。",
+    "ko": "4. Alert Grouping과 Transient Alerts 방식을 선택 후 Next 버튼을 클릭합니다.",
+    "zh": "4. Select Alert Grouping and Transient Alerts methods and click the Next button.",
+    "service_id": "DSC08313"
+  },
+  "DSC08314": {
+    "en": "5. Select <b>Event API V2</b> in Integrations and click the Create Service button.",
+    "ja": "5. Integrationsから<b>Event API V2を選択</b>してから、Create Serviceボタンをクリックします。",
+    "ko": "5. Integrations 에서 <b>Event API V2 를 선택</b> 후 Create Service 버튼을 클릭합니다.",
+    "zh": "5. Select <b>Event API V2</b> in Integrations and click the Create Service button.",
+    "service_id": "DSC08314"
+  },
+  "DSC08315": {
+    "en": "6. <b>Copy the Integration Name and Integration Key</b> in the created Service screen.",
+    "ja": "6. 生成されたService画面から、<b>Integration Name と Integration Key をコピー</b>します。",
+    "ko": "6. 생성된 Service 화면에서 <b>Integration Name과 Integration Key를 복사</b>합니다.",
+    "zh": "6. <b>Copy the Integration Name and Integration Key</b> in the created Service screen.",
+    "service_id": "DSC08315"
+  },
+  "DSC08316": {
+    "en": "7. Enter <b>Integration Name and Integration Key</b> below and click the register button to register.",
+    "ja": "7. 次の<b>Intergration NameとIntegration Keyを入力</b>してから、登録ボタンを押して登録します。",
+    "ko": "7. 아래 <b>Intergration Name과 Integration Key를 입력</b> 후 등록 버튼을 눌러 등록합니다.",
+    "zh": "7. Enter <b>Integration Name and Integration Key</b> below and click the register button to register.",
+    "service_id": "DSC08316"
+  },
+  "TTL08317": {
+    "en": "{object} summary analysis",
+    "ja": "{object}要約分析",
+    "ko": "{object} 요약 분석",
+    "zh": "{object} summary analysis",
+    "service_id": "TTL08317"
+  },
+  "NTC08318": {
+    "en": "A test message has been sent. If you did not receive the message, please check if the Integration Name or Key value is correct.",
+    "ja": "テストメッセージが送信されました。メッセージが届かない場合は、Integration NameまたはKeyの値が正しいことを確認してください。",
+    "ko": "테스트 메시지가 전송됐습니다. 메시지를 받지 못했다면 Integration Name 또는 Key 값이 올바른지 확인해 주세요.",
+    "zh": "A test message has been sent. If you did not receive the message, please check if the Integration Name or Key value is correct.",
+    "service_id": "NTC08318"
+  },
+  "TLT08319": {
+    "en": "When the event is resolved, it indicates a \"RECOVERED: \" status.",
+    "ja": "イベントが解決されたら\"RECOVERED: \"の状態を知らせます。",
+    "ko": "이벤트가 해소되면 \"RECOVERED: \" 상태를 알려줍니다.",
+    "zh": "When the event is resolved, it indicates a \"RECOVERED: \" status.",
+    "service_id": "TLT08319"
+  },
+  "CNT08320": {
+    "en": "Additional notifications when the event state is resolved.",
+    "ja": "イベントステータスが解消された場合の追加通知",
+    "ko": "이벤트 상태가 해소되면 추가 알림",
+    "zh": "Additional notifications when the event state is resolved.",
+    "service_id": "CNT08320"
+  },
+  "TLT08321": {
+    "en": "When an event is resolved, you will receive a “RECOVERED@” notification.",
+    "ja": "イベントが解消されると、「RECOVERED@」状態の通知を受け取ります。",
+    "ko": "이벤트가 해소되면 “RECOVERED@” 상태의 알림을 수신합니다.",
+    "zh": "When an event is resolved, you will receive a “RECOVERED@” notification.",
+    "service_id": "TLT08321"
+  },
+  "DSC08322": {
+    "en": "Event resolved message",
+    "ja": "イベント解決メッセージ",
+    "ko": "이벤트 해소 메시지",
+    "zh": "Event resolved message",
+    "service_id": "DSC08322"
+  },
+  "DSC08323": {
+    "en": "Resolved",
+    "ja": "解決",
+    "ko": "해소",
+    "zh": "Resolved",
+    "service_id": "DSC08323"
+  },
+  "DSC08324": {
+    "en": "If you enable \"Additional notification when event state is resolved\", we recommend \"Disable\" for the time selection.",
+    "ja": "「イベント状態が解決されたら追加にアラートする」を使用する場合には、指定時間は「使用しない」として設定することを推奨します。",
+    "ko": "“이벤트 상태가 해소되면 추가 알림”을 사용하는 경우, 선택 시간은 “사용 안 함”을 권장합니다.",
+    "zh": "If you enable \"Additional notification when event state is resolved\", we recommend \"Disable\" for the time selection.",
+    "service_id": "DSC08324"
+  },
+  "DSC08325": {
+    "en": "After receiving the notification, events will not occur for the selected period.<br />If the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time period after receiving the RECOVERED notification.",
+    "ja": "通知の受信後、選択した時間中にイベントが発生しません。<br />ただし、\"イベントの状態が解決されると追加通知\"機能を有効にした場合は、RECOVERED通知を受信してから選択した時間にイベントが発生しません。",
+    "ko": "알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.<br />단, \"이벤트 상태가 해소되면 추가 알림\" 기능을 활성화한 경우에는 RECOVERED 알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.",
+    "zh": "After receiving the notification, events will not occur for the selected period.<br />If the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time period after receiving the RECOVERED notification.",
+    "service_id": "DSC08325"
+  },
+  "CNT08326": {
+    "en": "Resolved notification",
+    "ja": "解消された通知",
+    "ko": "해소된 알림",
+    "zh": "Resolved notification",
+    "service_id": "CNT08326"
+  },
+  "DSC08327": {
+    "en": "When events at the critical and warning levels are resolved, you receive a notification with a status of <span style='color: {color};'>RECOVERED</span>.",
+    "ja": "CriticalとWarningレベルのイベントが解決されたら、<span style='color: {color};'>RECOVERED状態の通知を受信</span>します。",
+    "ko": "Critical과 Warning 레벨의 이벤트가 해소되면 <span style='color: {color};'>RECOVERED 상태의 알림을 수신</span>합니다.",
+    "zh": "When events at the critical and warning levels are resolved, you receive a notification with a status of <span style='color: {color};'>RECOVERED</span>.",
+    "service_id": "DSC08327"
+  },
+  "NTC08328": {
+    "en": "Time has been copied.",
+    "ja": "時間がコピーされました。",
+    "ko": "시간이 복사되었습니다.",
+    "zh": "Time has been copied.",
+    "service_id": "NTC08328"
+  },
+  "DSC08329": {
+    "en": "Workflow requires an account with access to Microsoft Teams and a Business Plan subscription.",
+    "ja": "ワークフローを使用するには、Microsoft Teamsにアクセスできるアカウントとビジネスプランの購読が必要です。",
+    "ko": "워크플로를 사용하려면 Microsoft Teams 에 액세스할 수 있는 계정과 비즈니스 플랜 구독이 필요합니다.",
+    "zh": "Workflow requires an account with access to Microsoft Teams and a Business Plan subscription.",
+    "service_id": "DSC08329"
+  },
+  "DSC08330": {
+    "en": "1. Select <b>Add Channel</b> from the More Team (...) menu in the Team menu.",
+    "ja": "1.チームメニューのチーム詳細（...）メニューから<b>チャンネルを追加</b>を選択します。",
+    "ko": "1. 팀 메뉴의 팀 더보기(...)메뉴에서 <b>채널 추가</b>를 선택하세요.",
+    "zh": "1. Select <b>Add Channel</b> from the More Team (...) menu in the Team menu.",
+    "service_id": "DSC08330"
+  },
+  "DSC08331": {
+    "en": "2. Enter a channel name and description and select <b>Standard</b> as the channel type.",
+    "ja": "2.チャンネル名と説明を入力し、チャンネルタイプを<b>標準</b>として選択します。",
+    "ko": "2. 채널 이름과 설명을 입력하고 채널 유형을 <b>표준</b>으로 선택하세요.",
+    "zh": "2. Enter a channel name and description and select <b>Standard</b> as the channel type.",
+    "service_id": "DSC08331"
+  },
+  "DSC08332": {
+    "en": "If you select <b>Shared</b> as the channel type, the workflow will not be available.\n            <br />\n            If you select <b>Private</b>, you can add workflows but you will not receive notifications.",
+    "ja": "チャンネルタイプを<b>共有</b>として選択すると、ワークフローは利用できなくなります。\n            <br />\n            <b>プライベート</b>を選択すると、ワークフローを追加できますが、通知を受け取ることはできません。",
+    "ko": "채널 유형을 <b>공유</b>로 선택하면 워크플로를 사용할 수 없으며,\n            <br />\n            <b>비공개</b>를 선택하면 워크플로를 추가할 수 있지만 알림을 수신할 수 없습니다.",
+    "zh": "If you select <b>Shared</b> as the channel type, the workflow will not be available.\n            <br />\n            If you select <b>Private</b>, you can add workflows but you will not receive notifications.",
+    "service_id": "DSC08332"
+  },
+  "DSC08333": {
+    "en": "3. Select <b>Workflow</b> from the more (...) menu of the created channel.",
+    "ja": "3. 作成したチャンネルの詳細（...）メニューから<b>ワークフロー</b>を選択します。",
+    "ko": "3. 생성한 채널의 더보기(...) 메뉴에서 <b>워크플로</b>를 선택하세요.",
+    "zh": "3. Select <b>Workflow</b> from the more (...) menu of the created channel.",
+    "service_id": "DSC08333"
+  },
+  "DSC08334": {
+    "en": "4. In the <b>Workflow</b> dialog box, select <b>Post to channel when webhook request is received</b> from the list of <b>Workflow</b>, and then\n          Click <b>Additional Workflows</b>.",
+    "ja": "4. <b>ワークフロー</b>ダイアログボックスの<b>ワークフロー</b>のリストから<b>ウェブフックリクエストを受信したら、チャンネルに投稿</b>を選択し、\n          <b>追加ワークフロー</b>をクリックします。",
+    "ko": "4. <b>워크플로</b> 대화상자의 <b>워크플로</b>의 목록에서 <b>웹후크 요청이 수신되면 채널에 게시</b>를 선택 후,\n          <b>추가 워크플로</b>를 클릭하세요.",
+    "zh": "4. In the <b>Workflow</b> dialog box, select <b>Post to channel when webhook request is received</b> from the list of <b>Workflow</b>, and then\n          Click <b>Additional Workflows</b>.",
+    "service_id": "DSC08334"
+  },
+  "DSC08335": {
+    "en": "5. After checking the name and connection status, click the <b>Next</b> button.",
+    "ja": "5.名前と接続の状態を確認したら、<b>次へ</b>ボタンをクリックします。",
+    "ko": "5. 이름과 연결 상태를 확인한 후, <b>다음</b> 버튼을 클릭하세요.",
+    "zh": "5. After checking the name and connection status, click the <b>Next</b> button.",
+    "service_id": "DSC08335"
+  },
+  "DSC08336": {
+    "en": "6. After checking the details, click the <b>Add Workflow</b> button.",
+    "ja": "6.詳細を確認したら、[<b>ワークフローの追加</b>]ボタンをクリックします。",
+    "ko": "6. 세부 정보를 확인한 후 <b>워크플로 추가</b> 버튼을 클릭하세요.",
+    "zh": "6. After checking the details, click the <b>Add Workflow</b> button.",
+    "service_id": "DSC08336"
+  },
+  "DSC08337": {
+    "en": "7. You have finished adding the workflow. Copy the <b>generated address</b>.",
+    "ja": "7. ワークフローの追加が完了しました。 <b>作成した住所</b>をコピーしてください。",
+    "ko": "7. 워크플로 추가를 완료했습니다. <b>생성된 주소</b>를 복사하세요.",
+    "zh": "7. You have finished adding the workflow. Copy the <b>generated address</b>.",
+    "service_id": "DSC08337"
+  },
+  "DSC08338": {
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
+    "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
+    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "service_id": "DSC08338"
+  },
+  "DSC08339": {
+    "en": "If you do not receive a message or the plugin is not registered, please check if the Integration Name or Key value is correct.",
+    "ja": "メッセージを受信できなかった場合、またはプラグインが登録されていない場合は、Integration NameまたはKeyの値が正しいことを確認してください。",
+    "ko": "메시지를 받지 못했거나 플러그인이 등록되지 않은 경우, Integration Name 또는 Key값이 올바른지 확인해 주세요.",
+    "zh": "If you do not receive a message or the plugin is not registered, please check if the Integration Name or Key value is correct.",
+    "service_id": "DSC08339"
+  },
+  "NTC08340": {
+    "en": "A test message has been sent.",
+    "ja": "テストメッセージが送信されました。",
+    "ko": "테스트 메시지가 전송됐습니다.",
+    "zh": "A test message has been sent.",
+    "service_id": "NTC08340"
+  },
+  "TTL08341": {
+    "en": "Real-time Log",
+    "ja": "リアルタイムログ",
+    "ko": "실시간 로그",
+    "zh": "Real-time Log",
+    "service_id": "TTL08341"
+  },
+  "TTL08342": {
+    "en": "Composite Log",
+    "ja": "複合ログ\n",
+    "ko": "복합 로그",
+    "zh": "Composite Log",
+    "service_id": "TTL08342"
+  },
+  "NTC08343": {
+    "en": "Start time is earlier than end time.",
+    "ja": "開始時間が終了時間より早い。",
+    "ko": "시작 시간이 종료 시간보다 빠릅니다.",
+    "zh": "Start time is earlier than end time.",
+    "service_id": "NTC08343"
+  },
+  "NTC08344": {
+    "en": "The data query range has been exceeded. You can search up to {value}{unit}.",
+    "ja": "データ検索範囲を超えました。最大{value} {unit}まで照会可能です。",
+    "ko": "데이터 조회 범위가 초과했습니다. 최대 {value}{unit}까지 조회 가능합니다.",
+    "zh": "The data query range has been exceeded. You can search up to {value}{unit}.",
+    "service_id": "NTC08344"
+  },
+  "BTN08345": {
+    "en": "Close all notifications",
+    "ja": "完全な通知を閉じる",
+    "ko": "전체 알림 닫기",
+    "zh": "Close all notifications",
+    "service_id": "BTN08345"
   },
   "": {
     "en": "#VALUE!",
@@ -59058,7 +59380,7 @@
   "side_ipEventReceivers": {
     "en": "IP Event Recipient Management",
     "ja": "IPイベント受信者の管理",
-    "ko": "IP 이벤트 수신자 관리"
+    "ko": "Ping Check 등록"
   },
   "side_rumPageLoadDashboard": {
     "en": "Page Load",

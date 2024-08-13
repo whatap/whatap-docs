@@ -1,16 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
 import {ThemeClassNames} from '@docusaurus/theme-common';
-import {
-  useSidebarBreadcrumbs,
-  useHomePageRoute,
-} from '@docusaurus/theme-common/internal';
+import {useSidebarBreadcrumbs} from '@docusaurus/plugin-content-docs/client';
+import {useHomePageRoute} from '@docusaurus/theme-common/internal';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import {translate} from '@docusaurus/Translate';
-import {useLocation} from '@docusaurus/router';
 import HomeBreadcrumbItem from '@theme/DocBreadcrumbs/Items/Home';
 import styles from './styles.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import {useLocation} from '@docusaurus/router';
 // TODO move to design system folder
 function BreadcrumbsItemString({children, href, isLast}) {
   const className = 'breadcrumbs__link';
