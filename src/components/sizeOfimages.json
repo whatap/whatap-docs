@@ -645,15 +645,15 @@
   },
   "analysis-tx-main-error-en.png": {
     "width": 1200,
-    "height": 231
+    "height": 225
   },
   "analysis-tx-main-error-ja.png": {
     "width": 1200,
-    "height": 231
+    "height": 226
   },
   "analysis-tx-main-error.png": {
     "width": 1200,
-    "height": 231
+    "height": 222
   },
   "analysis-tx-main-ja.png": {
     "width": 1200,
@@ -2499,6 +2499,38 @@
     "width": 1248,
     "height": 284
   },
+  "about-server-adf-tcp-port-en.png": {
+    "width": 1200,
+    "height": 971
+  },
+  "about-server-adf-tcp-port-ja.png": {
+    "width": 1200,
+    "height": 970
+  },
+  "about-server-adf-tcp-port-ms-en.png": {
+    "width": 1200,
+    "height": 348
+  },
+  "about-server-adf-tcp-port-ms-ja.png": {
+    "width": 1200,
+    "height": 350
+  },
+  "about-server-adf-tcp-port-ms.png": {
+    "width": 1204,
+    "height": 352
+  },
+  "about-server-adf-tcp-port.png": {
+    "width": 1200,
+    "height": 970
+  },
+  "about-tcp-port-rs-s.png": {
+    "width": 513,
+    "height": 360
+  },
+  "about-tcp-port-rs.png": {
+    "width": 1188,
+    "height": 764
+  },
   "apm-dashboard-best-practice.png": {
     "width": 3102,
     "height": 2062
@@ -3357,23 +3389,23 @@
   },
   "browser-error-dashboard-en.png": {
     "width": 1200,
-    "height": 539
+    "height": 724
   },
   "browser-error-dashboard-ja.png": {
     "width": 1200,
-    "height": 539
+    "height": 725
   },
   "browser-error-dashboard.png": {
     "width": 1200,
-    "height": 539
+    "height": 723
   },
   "browser-error-details-en.png": {
     "width": 1200,
-    "height": 459
+    "height": 646
   },
   "browser-error-details-ja.png": {
     "width": 1200,
-    "height": 459
+    "height": 646
   },
   "browser-error-details-log-en.png": {
     "width": 1200,
@@ -3389,7 +3421,7 @@
   },
   "browser-error-details.png": {
     "width": 1200,
-    "height": 459
+    "height": 646
   },
   "browser-error-info-en.png": {
     "width": 1200,
@@ -3453,15 +3485,15 @@
   },
   "browser-error-table-en.png": {
     "width": 1200,
-    "height": 137
+    "height": 278
   },
   "browser-error-table-ja.png": {
     "width": 1200,
-    "height": 137
+    "height": 277
   },
   "browser-error-table.png": {
     "width": 1200,
-    "height": 137
+    "height": 277
   },
   "browser-event-history-en.png": {
     "width": 1200,
@@ -3966,6 +3998,14 @@
   "changelog-whatap-info.png": {
     "width": 612,
     "height": 346
+  },
+  "new_feature_overview_txt.png": {
+    "width": 934,
+    "height": 161
+  },
+  "new_feature_overview_txt_gl.png": {
+    "width": 934,
+    "height": 161
   },
   "changes-transaction-list-after.png": {
     "width": 2394,
@@ -7515,25 +7555,53 @@
     "width": 1175,
     "height": 593
   },
+  "group-add-en.png": {
+    "width": 600,
+    "height": 199
+  },
+  "group-add-ja.png": {
+    "width": 600,
+    "height": 198
+  },
+  "group-add.png": {
+    "width": 600,
+    "height": 199
+  },
+  "group-exclude-project-en.png": {
+    "width": 1200,
+    "height": 559
+  },
+  "group-exclude-project-ja.png": {
+    "width": 1200,
+    "height": 560
+  },
+  "group-exclude-project.png": {
+    "width": 1200,
+    "height": 560
+  },
   "group-member-by-project-en.png": {
     "width": 1200,
-    "height": 488
+    "height": 357
   },
   "group-member-by-project-ja.png": {
     "width": 1200,
-    "height": 500
+    "height": 384
   },
-  "group-memer-by-project-en.png": {
+  "group-member-by-project.png": {
     "width": 1200,
-    "height": 596
+    "height": 350
   },
-  "group-memer-by-project-ja.png": {
+  "group-remove-en.png": {
     "width": 1200,
-    "height": 594
+    "height": 271
   },
-  "group-memer-by-project.png": {
+  "group-remove-ja.png": {
     "width": 1200,
-    "height": 593
+    "height": 270
+  },
+  "group-remove.png": {
+    "width": 1200,
+    "height": 269
   },
   "group_topology_1-en.png": {
     "width": 1200,
@@ -7737,15 +7805,15 @@
   },
   "integrated-manage-member-en.png": {
     "width": 1200,
-    "height": 456
+    "height": 562
   },
   "integrated-manage-member-ja.png": {
     "width": 1200,
-    "height": 557
+    "height": 561
   },
   "integrated-manage-member.png": {
     "width": 1200,
-    "height": 449
+    "height": 562
   },
   "integration_report_01-en.png": {
     "width": 1200,
@@ -8734,6 +8802,18 @@
   "k8s-container-map-thresholds.png": {
     "width": 870,
     "height": 576
+  },
+  "k8s-container-map-trace-en.png": {
+    "width": 1200,
+    "height": 587
+  },
+  "k8s-container-map-trace-ja.png": {
+    "width": 1200,
+    "height": 593
+  },
+  "k8s-container-map-trace.png": {
+    "width": 1200,
+    "height": 593
   },
   "k8s-container-map-unified-en.png": {
     "width": 1200,
@@ -10505,27 +10585,27 @@
   },
   "manage-group-move-group-en.png": {
     "width": 1200,
-    "height": 500
+    "height": 513
   },
   "manage-group-move-group-ja.png": {
     "width": 1200,
-    "height": 500
+    "height": 512
   },
   "manage-group-move-group.png": {
     "width": 1200,
-    "height": 500
+    "height": 513
   },
   "manage-integrated-group-en.png": {
     "width": 1200,
-    "height": 500
+    "height": 513
   },
   "manage-integrated-group-ja.png": {
     "width": 1200,
-    "height": 500
+    "height": 512
   },
   "manage-integrated-group.png": {
     "width": 1200,
-    "height": 500
+    "height": 512
   },
   "management-userbehavior-en.png": {
     "width": 1200,
@@ -10990,6 +11070,366 @@
   "metrics-chart-item.png": {
     "width": 1200,
     "height": 991
+  },
+  "metrics-chart-new-change-time-en.png": {
+    "width": 800,
+    "height": 334
+  },
+  "metrics-chart-new-change-time-ja.png": {
+    "width": 800,
+    "height": 334
+  },
+  "metrics-chart-new-change-time.png": {
+    "width": 800,
+    "height": 341
+  },
+  "metrics-chart-new-chart-batch-change-en.png": {
+    "width": 800,
+    "height": 699
+  },
+  "metrics-chart-new-chart-batch-change-ja.png": {
+    "width": 800,
+    "height": 701
+  },
+  "metrics-chart-new-chart-batch-change.png": {
+    "width": 800,
+    "height": 699
+  },
+  "metrics-chart-new-chart-dashboard-layout-options-en.png": {
+    "width": 1000,
+    "height": 50
+  },
+  "metrics-chart-new-chart-dashboard-layout-options-ja.png": {
+    "width": 1125,
+    "height": 49
+  },
+  "metrics-chart-new-chart-dashboard-layout-options.png": {
+    "width": 800,
+    "height": 48
+  },
+  "metrics-chart-new-chart-dashboard-options-en.png": {
+    "width": 1000,
+    "height": 55
+  },
+  "metrics-chart-new-chart-dashboard-options-ja.png": {
+    "width": 1000,
+    "height": 51
+  },
+  "metrics-chart-new-chart-dashboard-options.png": {
+    "width": 800,
+    "height": 53
+  },
+  "metrics-chart-new-chart-details-en.png": {
+    "width": 600,
+    "height": 511
+  },
+  "metrics-chart-new-chart-details-ja.png": {
+    "width": 600,
+    "height": 493
+  },
+  "metrics-chart-new-chart-details.png": {
+    "width": 601,
+    "height": 501
+  },
+  "metrics-chart-new-chart-drag-time-en.png": {
+    "width": 1122,
+    "height": 469
+  },
+  "metrics-chart-new-chart-drag-time-ja.png": {
+    "width": 1200,
+    "height": 469
+  },
+  "metrics-chart-new-chart-drag-time.png": {
+    "width": 1122,
+    "height": 469
+  },
+  "metrics-chart-new-chart-options-details-drag-en.png": {
+    "width": 1200,
+    "height": 345
+  },
+  "metrics-chart-new-chart-options-details-drag-ja.png": {
+    "width": 1200,
+    "height": 345
+  },
+  "metrics-chart-new-chart-options-details-drag.png": {
+    "width": 1200,
+    "height": 345
+  },
+  "metrics-chart-new-chart-options-details-en.png": {
+    "width": 1200,
+    "height": 748
+  },
+  "metrics-chart-new-chart-options-details-ja.png": {
+    "width": 1200,
+    "height": 752
+  },
+  "metrics-chart-new-chart-options-details.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "metrics-chart-new-chart-options-filter-en.png": {
+    "width": 900,
+    "height": 916
+  },
+  "metrics-chart-new-chart-options-filter-ja.png": {
+    "width": 900,
+    "height": 895
+  },
+  "metrics-chart-new-chart-options-filter.png": {
+    "width": 900,
+    "height": 918
+  },
+  "metrics-chart-new-chart-overlay-en.png": {
+    "width": 1200,
+    "height": 612
+  },
+  "metrics-chart-new-chart-overlay-ja.png": {
+    "width": 1200,
+    "height": 592
+  },
+  "metrics-chart-new-chart-overlay.png": {
+    "width": 1200,
+    "height": 612
+  },
+  "metrics-chart-new-chart-reset-time-en.png": {
+    "width": 1200,
+    "height": 249
+  },
+  "metrics-chart-new-chart-reset-time-ja.png": {
+    "width": 1200,
+    "height": 244
+  },
+  "metrics-chart-new-chart-reset-time.png": {
+    "width": 1200,
+    "height": 256
+  },
+  "metrics-chart-new-db-chart-batch-change-en.png": {
+    "width": 800,
+    "height": 701
+  },
+  "metrics-chart-new-db-chart-batch-change-ja.png": {
+    "width": 800,
+    "height": 700
+  },
+  "metrics-chart-new-db-chart-batch-change.png": {
+    "width": 800,
+    "height": 700
+  },
+  "metrics-chart-new-db-select-interval-en.png": {
+    "width": 400,
+    "height": 239
+  },
+  "metrics-chart-new-db-select-interval-ja.png": {
+    "width": 400,
+    "height": 243
+  },
+  "metrics-chart-new-db-select-interval.png": {
+    "width": 400,
+    "height": 234
+  },
+  "metrics-chart-new-db-select-metrics-en.png": {
+    "width": 1200,
+    "height": 454
+  },
+  "metrics-chart-new-db-select-metrics-ja.png": {
+    "width": 1200,
+    "height": 455
+  },
+  "metrics-chart-new-db-select-metrics.png": {
+    "width": 1200,
+    "height": 418
+  },
+  "metrics-chart-new-interval-en.png": {
+    "width": 1200,
+    "height": 511
+  },
+  "metrics-chart-new-interval-ja.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "metrics-chart-new-interval.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "metrics-chart-new-k8s-chart-batch-change-en.png": {
+    "width": 800,
+    "height": 698
+  },
+  "metrics-chart-new-k8s-chart-batch-change-ja.png": {
+    "width": 800,
+    "height": 700
+  },
+  "metrics-chart-new-k8s-chart-batch-change.png": {
+    "width": 800,
+    "height": 699
+  },
+  "metrics-chart-new-k8s-select-interval-en.png": {
+    "width": 400,
+    "height": 240
+  },
+  "metrics-chart-new-k8s-select-interval-ja.png": {
+    "width": 400,
+    "height": 237
+  },
+  "metrics-chart-new-k8s-select-interval.png": {
+    "width": 400,
+    "height": 238
+  },
+  "metrics-chart-new-k8s-select-metrics-en.png": {
+    "width": 1200,
+    "height": 450
+  },
+  "metrics-chart-new-k8s-select-metrics-ja.png": {
+    "width": 1200,
+    "height": 450
+  },
+  "metrics-chart-new-k8s-select-metrics.png": {
+    "width": 1200,
+    "height": 429
+  },
+  "metrics-chart-new-main-apm-en.png": {
+    "width": 1200,
+    "height": 1044
+  },
+  "metrics-chart-new-main-apm-ja.png": {
+    "width": 1200,
+    "height": 1040
+  },
+  "metrics-chart-new-main-apm.png": {
+    "width": 1200,
+    "height": 1039
+  },
+  "metrics-chart-new-main-db-en.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-main-db-ja.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-main-db.png": {
+    "width": 1200,
+    "height": 1009
+  },
+  "metrics-chart-new-main-k8s-en.png": {
+    "width": 1200,
+    "height": 1009
+  },
+  "metrics-chart-new-main-k8s-ja.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-main-k8s.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-move-widget-en.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metrics-chart-new-move-widget-ja.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metrics-chart-new-move-widget.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metrics-chart-new-preset-save-en.png": {
+    "width": 600,
+    "height": 267
+  },
+  "metrics-chart-new-preset-save-ja.png": {
+    "width": 600,
+    "height": 315
+  },
+  "metrics-chart-new-preset-save.png": {
+    "width": 600,
+    "height": 282
+  },
+  "metrics-chart-new-select-agent-en.png": {
+    "width": 400,
+    "height": 573
+  },
+  "metrics-chart-new-select-agent-ja.png": {
+    "width": 400,
+    "height": 560
+  },
+  "metrics-chart-new-select-agent.png": {
+    "width": 400,
+    "height": 561
+  },
+  "metrics-chart-new-select-interval-en.png": {
+    "width": 400,
+    "height": 238
+  },
+  "metrics-chart-new-select-interval-ja.png": {
+    "width": 400,
+    "height": 241
+  },
+  "metrics-chart-new-select-interval.png": {
+    "width": 400,
+    "height": 270
+  },
+  "metrics-chart-new-select-metrics-en.png": {
+    "width": 1200,
+    "height": 463
+  },
+  "metrics-chart-new-select-metrics-ja.png": {
+    "width": 1200,
+    "height": 450
+  },
+  "metrics-chart-new-select-metrics.png": {
+    "width": 1200,
+    "height": 464
+  },
+  "metrics-chart-new-set-custom-time-en.png": {
+    "width": 600,
+    "height": 515
+  },
+  "metrics-chart-new-set-custom-time-ja.png": {
+    "width": 600,
+    "height": 537
+  },
+  "metrics-chart-new-set-custom-time.png": {
+    "width": 595,
+    "height": 534
+  },
+  "metrics-chart-new-set-time-en.png": {
+    "width": 600,
+    "height": 67
+  },
+  "metrics-chart-new-set-time-ja.png": {
+    "width": 600,
+    "height": 68
+  },
+  "metrics-chart-new-set-time-select-options-en.png": {
+    "width": 900,
+    "height": 399
+  },
+  "metrics-chart-new-set-time-select-options-ja.png": {
+    "width": 900,
+    "height": 327
+  },
+  "metrics-chart-new-set-time-select-options.png": {
+    "width": 900,
+    "height": 332
+  },
+  "metrics-chart-new-set-time.png": {
+    "width": 600,
+    "height": 71
+  },
+  "metrics-chart-new-size-widget-en.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "metrics-chart-new-size-widget-ja.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "metrics-chart-new-size-widget.png": {
+    "width": 1200,
+    "height": 515
   },
   "metrics-chart-server-en.png": {
     "width": 1227,
@@ -11553,15 +11993,15 @@
   },
   "move-project-from-group-en.png": {
     "width": 1200,
-    "height": 485
+    "height": 513
   },
   "move-project-from-group-ja.png": {
     "width": 1200,
-    "height": 483
+    "height": 513
   },
   "move-project-from-group.png": {
     "width": 1200,
-    "height": 484
+    "height": 512
   },
   "multi-tx-additional-info-en.png": {
     "width": 1200,
@@ -12453,15 +12893,15 @@
   },
   "organization-member-en.png": {
     "width": 1200,
-    "height": 469
+    "height": 356
   },
   "organization-member-ja.png": {
     "width": 1200,
-    "height": 468
+    "height": 356
   },
   "organization-member.png": {
     "width": 1200,
-    "height": 473
+    "height": 364
   },
   "opentelemetry-overview.png": {
     "width": 1200,
@@ -12581,15 +13021,15 @@
   },
   "project-member-list-en.png": {
     "width": 1200,
-    "height": 328
+    "height": 467
   },
   "project-member-list-ja.png": {
     "width": 1200,
-    "height": 395
+    "height": 503
   },
   "project-member-list.png": {
     "width": 1200,
-    "height": 327
+    "height": 458
   },
   "project-organize-manage-en.png": {
     "width": 554,
@@ -12616,15 +13056,15 @@
     "height": 365
   },
   "project-select-group-en.png": {
-    "width": 600,
+    "width": 957,
     "height": 718
   },
   "project-select-group-ja.png": {
-    "width": 600,
+    "width": 957,
     "height": 717
   },
   "project-select-group.png": {
-    "width": 600,
+    "width": 957,
     "height": 716
   },
   "project-str-billing-en.png": {
@@ -12692,8 +13132,8 @@
     "height": 431
   },
   "apm-transaction-list-after-change.png": {
-    "width": 855,
-    "height": 311
+    "width": 1200,
+    "height": 437
   },
   "apm-transaction-list-after.png": {
     "width": 1602,
@@ -12862,6 +13302,10 @@
   "release-npm-topology.png": {
     "width": 1730,
     "height": 824
+  },
+  "release-trace-analysis-filter-changes.png": {
+    "width": 1000,
+    "height": 285
   },
   "release-usage-subcribe-column.png": {
     "width": 400,
@@ -14149,11 +14593,11 @@
   },
   "share-trace-item-en.png": {
     "width": 1200,
-    "height": 246
+    "height": 215
   },
   "share-trace-item-ja.png": {
     "width": 1200,
-    "height": 244
+    "height": 218
   },
   "share-trace-item.png": {
     "width": 1200,
