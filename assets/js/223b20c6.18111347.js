@@ -1110,6 +1110,33 @@ function _createMdxContent(props) {
             className: "uitext"
           })]
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "event_list",
+          className: "uitext"
+        }), " 위젯에서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "title",
+          className: "uitext"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "project",
+          className: "uitext"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "application",
+          className: "uitext"
+        }), "별로 그룹화해 정렬할 수 있습니다. 그룹화를 해제하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "timeline",
+          className: "uitext"
+        }), " 버튼을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["알림이 발생할 경우 소리를 켜거나 끄려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "소리 아이콘",
+            src: (__webpack_require__(51032)/* ["default"] */ .A) + "",
+            width: "24",
+            height: "24"
+          }), " 버튼을 선택하세요."]
+        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -2000,6 +2027,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4O2hlaWdodDogMjBweDsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBmaWxsPSIjNzU3NTc1Ij4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNSAzdjE1Ljk5OUwyMSAxOXYybC0xNi0uMDAxVjIxSDNWM2gyem0xNiA0LjVsLTcuODkxIDcuMjg4LTIuODQ4LTIuNjNMNiAxNi4wOTF2LTIuNWw0LjI2LTMuOTM1IDIuODQ5IDIuNjNMMjEgNXYyLjV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTQ4IC0xOTQxKSB0cmFuc2xhdGUoNDAgMTg5NikgdHJhbnNsYXRlKDUwOCA0NSkiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+");
+
+/***/ }),
+
+/***/ 51032:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogICAgPHBhdGggZmlsbD0iIzc1NzU3NSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjEgMnYyMEw5Ljc1MSAxN0gzVjdoNi43NDlMMjEgMnptLTIgMy4wMzFMMTEgOC44djYuNDUzbDggMy43NVY1LjAzMXpNOSA5SDV2Nmg0Vjl6Ij48L3BhdGg+Cjwvc3ZnPg==");
 
 /***/ }),
 
