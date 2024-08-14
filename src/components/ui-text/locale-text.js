@@ -3,6 +3,19 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
 import whatapReport from './whatap-report.json';
 
+function isSplittableArray(input, delimiter = ',') {
+    // Check if input is a string
+    if (typeof input !== 'string') {
+        return false;
+    }
+
+    // Split the string using the delimiter
+    const splitArray = input.split(delimiter);
+
+    // Check if the split resulted in more than one element
+    return splitArray.length > 1;
+}
+
 const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) => {
     const { i18n: {currentLocale} } = useDocusaurusContext();
     
@@ -10,6 +23,17 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
         let oText = whatapReport[sid][`${currentLocale}`];
         return (
             <span class={className} id={anchor}>{oText}</span>
+        );
+    } else if (isSplittableArray(sid)) {
+        const sidArray = sid.split(",");
+        let oText = "";
+
+        for (let i=0;i<sidArray.length;i++) {
+            oText += whatapLocale[sidArray[i]][`${currentLocale}`].trim();
+        }
+        const uiText = oText;
+        return (
+            <span class={className} id={anchor}>{uiText}</span>
         );
     } else {
         let oText;
