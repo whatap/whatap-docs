@@ -104,8 +104,8 @@ const config = {
         // https://pagefind.app/docs/ranking
         pagefind: { 
           ranking: { 
-            pageLength: 0.9, 
-            termFrequency: 1.0, 
+            pageLength: 0.0, 
+            termFrequency: 0.0, 
             termSimilarity: 1.0, 
             termSaturation: 1.5, 
           } 
