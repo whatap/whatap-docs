@@ -1118,6 +1118,10 @@ main {
         width: 40%;
         max-width: 40%;
       }
+      .width--50 {
+        width: 50%;
+        max-width: 50%;
+      }
     }
     .steps {
       display: block;
@@ -1267,9 +1271,14 @@ main {
     h2 img, h3 img {
       position: relative;
       top: 3px;
-      max-height: 30px;
       width: auto;
       border: none;
+    }
+    h2 img {
+      max-height: 30px;
+    }
+    h3 img {
+      max-height: 24px;
     }
     h3[id='pdf-download'] img {
       top: 5px;

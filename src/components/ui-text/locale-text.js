@@ -3,6 +3,32 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
 import whatapReport from './whatap-report.json';
 
+function isSplittableArray(input, delimiter = ',') {
+    // Check if input is a string
+    if (typeof input !== 'string') {
+        return false;
+    }
+
+    // Split the string using the delimiter
+    const splitArray = input.split(delimiter);
+
+    // Check if the split resulted in more than one element
+    return splitArray.length > 1;
+}
+
+function isSplittableArray(input, delimiter = ',') {
+    // Check if input is a string
+    if (typeof input !== 'string') {
+        return false;
+    }
+
+    // Split the string using the delimiter
+    const splitArray = input.split(delimiter);
+
+    // Check if the split resulted in more than one element
+    return splitArray.length > 1;
+}
+
 const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, report}) => {
     const { i18n: {currentLocale} } = useDocusaurusContext();
     
