@@ -388,7 +388,7 @@ function ReadMoreLabel() {
         children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Translate/* default */.A, {
             id: "theme.blog.post.readMore",
             description: "The label used in blog post item excerpts to link to full blog posts",
-            children: "Read More"
+            children: "Read more"
         })
     });
 }

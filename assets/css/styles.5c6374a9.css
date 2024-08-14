@@ -5119,7 +5119,7 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
 
 .authorTitle_nd0D {
   font-size: 0.8rem;
-  line-height: 0.8rem;
+  line-height: 1rem;
   display: -webkit-box;
   overflow: hidden;
   line-clamp: 1;
@@ -5129,12 +5129,12 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
 
 .author-as-h1_n9oJ .authorTitle_nd0D {
   font-size: 1.2rem;
-  line-height: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .author-as-h2_gXvM .authorTitle_nd0D {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 
 .authorBlogPostCount_iiJ5 {

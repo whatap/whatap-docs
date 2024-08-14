@@ -164,7 +164,7 @@ function BlogAuthorsListViewAllLabel() {
     return /*#__PURE__*/ _jsx(Translate, {
         id: "theme.blog.authorsList.viewAll",
         description: "The label of the link targeting the blog authors page",
-        children: "View All Authors"
+        children: "View all authors"
     });
 } //# sourceMappingURL=blogTranslations.js.map
 

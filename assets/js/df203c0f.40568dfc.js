@@ -233,7 +233,7 @@ function DocTagDocListPageContent({ tag , title  }) {
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_docusaurus_Translate__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
                                         id: "theme.tags.tagsPageLink",
                                         description: "The label of the link targeting the tag list page",
-                                        children: "View All Tags"
+                                        children: "View all tags"
                                     })
                                 })
                             ]
