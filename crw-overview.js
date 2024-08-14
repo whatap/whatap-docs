@@ -210,16 +210,29 @@ function sortByDateAndRewriteMDX(filename) {
 }
 
 function parseDate(dateString) {
-  const match = dateString.match(/(\d+)년 (\d+)월 (\d+)일/);
-  if (match) {
-      const year = parseInt(match[1]);
-      const month = parseInt(match[2]) - 1;
-      const day = parseInt(match[3]);
-      return new Date(year, month, day);
-  } else {
-      console.error('Invalid date format:', dateString);
-      return null;
-  }
+    const match = dateString.match(/(\d+)년 (\d+)월 (\d+)일/);
+    if (match) {
+        const year = parseInt(match[1]);
+        const month = parseInt(match[2]) - 1;
+        const day = parseInt(match[3]);
+        return new Date(year, month, day);
+    } else {
+        console.error('Invalid date format:', dateString);
+        return new Date();
+    }
 }
+
+// function parseDate(dateString) {
+//   const match = dateString.match(/(\d+)년 (\d+)월 (\d+)일/);
+//   if (match) {
+//       const year = parseInt(match[1]);
+//       const month = parseInt(match[2]) - 1;
+//       const day = parseInt(match[3]);
+//       return new Date(year, month, day);
+//   } else {
+//       console.error('Invalid date format:', dateString);
+//       return null;
+//   }
+// }
 
 extractFeaturesAndUpdateMDXDocument();
