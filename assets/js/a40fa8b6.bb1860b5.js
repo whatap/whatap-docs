@@ -1055,7 +1055,7 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title='whatap.conf'",
-              children: "# example\nstatus_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500\n"
+              children: "# example\nstatus_ignore_set=/api/test/timeout/{time}:408,/error:500\n"
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {

@@ -1708,7 +1708,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/release-real-time-alert-changed-eded6e3043f6d956ef02c3b937048664.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/release-real-time-alert-changed-5d58c6efe9ccff80377c1589ef9eb095.png");
 
 /***/ }),
 

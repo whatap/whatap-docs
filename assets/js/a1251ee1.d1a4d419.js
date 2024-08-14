@@ -1139,7 +1139,7 @@ function _java_exception_options_createMdxContent(props) {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-ini",
           metastring: "title='whatap.conf'",
-          children: "# example\nstatus_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500\n"
+          children: "# example\nstatus_ignore_set=/api/test/timeout/{time}:408,/error:500\n"
         })
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
