@@ -11,6 +11,17 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
         return (
             <span class={className} id={anchor}>{oText}</span>
         );
+    } else if (isSplittableArray(sid)) {
+        const sidArray = sid.split(",");
+        let oText = "";
+
+        for (let i=0;i<sidArray.length;i++) {
+            oText += whatapLocale[sidArray[i]][`${currentLocale}`].trim();
+        }
+        const uiText = oText;
+        return (
+            <span class={className} id={anchor}>{uiText}</span>
+        );
     } else {
         let oText;
         if (type) {
