@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'application-daily-stat',
 	title: '일자별 애플리케이션 현황',
-	description: 'description',
+	description: '일자별 애플리케이션 상태를 확인합니다.',
 	keywords: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
@@ -32,7 +32,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "kubernetes/application-daily-stat",
   "title": "일자별 애플리케이션 현황",
-  "description": "description",
+  "description": "일자별 애플리케이션 상태를 확인합니다.",
   "source": "@site/docs/kubernetes/application-daily-stat.mdx",
   "sourceDirName": "kubernetes",
   "slug": "/kubernetes/application-daily-stat",
@@ -45,7 +45,7 @@ const metadata = {
   "frontMatter": {
     "id": "application-daily-stat",
     "title": "일자별 애플리케이션 현황",
-    "description": "description",
+    "description": "일자별 애플리케이션 상태를 확인합니다.",
     "keywords": [
       "쿠버네티스",
       "쿠버네티스 모니터링",

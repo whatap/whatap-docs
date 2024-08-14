@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'create-name-space-project',
 	title: '네임스페이스 프로젝트 만들기',
-	description: 'description',
+	description: '네임스페이스 프로젝트를 생성합니다.',
 	keywords: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
@@ -31,7 +31,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "kubernetes/create-name-space-project",
   "title": "네임스페이스 프로젝트 만들기",
-  "description": "description",
+  "description": "네임스페이스 프로젝트를 생성합니다.",
   "source": "@site/docs/kubernetes/create-name-space-project.mdx",
   "sourceDirName": "kubernetes",
   "slug": "/kubernetes/create-name-space-project",
@@ -44,7 +44,7 @@ const metadata = {
   "frontMatter": {
     "id": "create-name-space-project",
     "title": "네임스페이스 프로젝트 만들기",
-    "description": "description",
+    "description": "네임스페이스 프로젝트를 생성합니다.",
     "keywords": [
       "쿠버네티스",
       "쿠버네티스 모니터링",
