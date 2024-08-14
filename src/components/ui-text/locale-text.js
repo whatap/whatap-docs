@@ -29,9 +29,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
         let oText = "";
 
         for (let i=0;i<sidArray.length;i++) {
-            oText += whatapLocale[sidArray[i]][`${currentLocale}`].trim();
+            oText += whatapLocale[sidArray[i]][`${currentLocale}`].trim() + " ";
         }
-        const uiText = oText;
+        const uiText = oText.trim();
         return (
             <span class={className} id={anchor}>{uiText}</span>
         );
