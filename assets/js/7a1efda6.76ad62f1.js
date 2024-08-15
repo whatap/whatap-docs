@@ -60,8 +60,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/mobile/mobile-app-v1_0_3"
   },
   "next": {
-    "title": "Java Agent v2.2.37",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_37"
+    "title": "Java Agent v2.2.38",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_38"
   }
 };
 const assets = {

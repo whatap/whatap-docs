@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[9671],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45780],{
 
 /***/ 60280:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -74,7 +74,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 20131:
+/***/ 69440:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -92,31 +92,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'java-2_2_37',
-	title: 'Java Agent v2.2.37',
+	id: 'java-2_2_38',
+	title: 'Java Agent v2.2.38',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/java/java-2_2_36',
+	pagination_next: 'release-notes/java/java-2_2_37',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/java/java-2_2_37",
-  "title": "Java Agent v2.2.37",
-  "description": "2024년 07월 31일",
-  "source": "@site/docs/release-notes/java/java-2.2.37.mdx",
+  "id": "release-notes/java/java-2_2_38",
+  "title": "Java Agent v2.2.38",
+  "description": "2024년 08월 14일",
+  "source": "@site/docs/release-notes/java/java-2.2.38.mdx",
   "sourceDirName": "release-notes/java",
-  "slug": "/release-notes/java/java-2_2_37",
-  "permalink": "/whatap-docs/release-notes/java/java-2_2_37",
+  "slug": "/release-notes/java/java-2_2_38",
+  "permalink": "/whatap-docs/release-notes/java/java-2_2_38",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/java/java-2.2.37.mdx",
+  "editUrl": "undefined/docs/release-notes/java/java-2.2.38.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "java-2_2_37",
-    "title": "Java Agent v2.2.37",
+    "id": "java-2_2_38",
+    "title": "Java Agent v2.2.38",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/java/java-2_2_36",
+    "pagination_next": "release-notes/java/java-2_2_37",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
@@ -125,8 +125,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/java/"
   },
   "next": {
-    "title": "Java Agent v2.2.36",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_36"
+    "title": "Java Agent v2.2.37",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_37"
   }
 };
 const assets = {
@@ -146,72 +146,76 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Status} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 07월 31일"
+      children: "2024년 08월 14일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "1",
             children: "Feature"
-          }), " spring-boot ExceptionHandler를 통과하는 예외(exception)가 발생하면 이전에 발생한 예외를 대체"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "TTL06209",
-            className: "uitext"
-          }), " 창의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "TTL06125",
-            className: "uitext"
-          }), " 탭에서 예외(exception)를 spring-boot의 ExceptionHandler에 등록한 예외(exception)로 표시할 수 있습니다."]
+          }), " spring-boot-3.2 추적"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
-            metastring: "title=\"whatap.conf\"ㅓ",
-            children: "# default: true\ntrace_exception_handler_overwrite_enabled=true\n"
+            metastring: "title=\"whatap.conf\"",
+            children: "weaving=spring-boot-3.2\n"
           })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "다음 라이르러리 또는 프레임워크를 추적합니다."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "RestTemplate"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "RestClient"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "WebClient"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "spring-cloud-gateway"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "spring-kafka"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "spring-kafka-batch"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "r2dbc-mysql-0.9.3 - 1.1.3"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "jasync-r2dbc-mysql-2.1.23"
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "1",
             children: "Changed"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "trace_http_parameter_enabled"
-          }), " 옵션의 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "true"
-          }), "일 때, HTTP 파라미터 키에 해당하는 값(value)가 없거나 HTTP 파라미터가 없는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "TTL06209",
-            className: "uitext"
-          }), " 창에서 HTTP 파라미터 스텝을 생성하지 않도록 수정"]
+          }), " spring-kafka batch 추적 시 트랜잭션이름 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기존: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "[kafka] {topic} (cnt: {Number of polls in kafka})"
+              })]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["수정: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "[kafka-batch] {topic}"
+              })]
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "0",
-            children: "Fixed"
-          }), " Windows 환경에서 기본 CPU 수집이 안 되는 문제 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "0",
-            children: "Fixed"
-          }), " Windows 환경에서 sigar 라이브러리를 활용할 때 모니터링 지표가 수집되지 않는 문제 수정"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "0",
-            children: "Fixed"
-          }), " Windows 환경에서 oshi 라이브러리를 활용할 때 모니터링 지표가 수집되지 않는 문제 수정"]
+            priority: "1",
+            children: "Deprecated"
+          }), " lettuce 드라이버의 key, param 추적 중단"]
         }), "\n"]
       }), "\n"]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_java_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "2.2.37"
+      ver: "2.2.38"
     })]
   });
 }
