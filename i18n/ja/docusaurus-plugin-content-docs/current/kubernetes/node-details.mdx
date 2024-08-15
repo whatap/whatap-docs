@@ -45,33 +45,35 @@ keywords:
 
 {/* 컨테이너 상세 정보는 다음 내용을 제공합니다. 
 
-| 項目               | 説明                                                |      |
-| ---------------- | ------------------------------------------------- | ---- |
-| 状態               | コンテナ状態                                            |      |
-| コンテナ             | Container ID                                      |      |
-| イメージ             | コンテナイメージ情報                                        |      |
-| コマンド             | コンテナ実行コマンド                                        |      |
-| アプリケーション         | コンテナにインストールされているWhaTap APMエージェントの名前               |      |
-| Pod              | Pod名                                              |      |
-| CpuByLimit       | CPU Limit基準CPUの全体使用率                              |      |
-| MemoryWsByLimit  | コンテナメモリのLimit基準working set使用量                     |      |
-| CpuThrottledCnt  | コンテナCPU Throttled数                                |      |
-| CpuThrottledTime | コンテナCPU Throttled時間                               |      |
-| MemLimit         | コンテナのメモリLimitサイズ                                  |      |
-| MemRequest       | コンテナのメモリRequestサイズ                                |      |
-| MemWs            | コンテナのメモリworking set                               |      |
-| IoReadBytes      | コンテナ全体ブロックデバイスの1秒当たり読み込んだバイトの合計                   |      |
-| IoReadIops       | コンテナ全体ブロックデバイスの1秒当たり読み込んだ数の合計                     |      |
-| IoWriteBytes     | コンテナ全体ブロックデバイスの1秒当たり書き込んだバイトの合計                   |      |
-| IoWriteIops      | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                     |      |
-| NetRxBytes       | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |      |
-| NetRxDropped     | コンテナネットワーク受信dropped数                              |      |
-| NetRxError       | コンテナのネットワーク受信エラー数                                 |      |
-| NetRxIops        | コンテナのネットワーク受信数                                    |      |
-| NetTxBytes       | コンテナのネットワーク送信データサイズ                               |      |
-| NetTxDropped     | コンテナのネットワーク送信dropped数                             |      |
-| NetTxError       | コンテナのネットワーク送信エラー数                                 |      |
-| NetTxIops        | コンテナのネットワーク送信数                                    | | */}
+| 項目               | 説明                                                |
+| ---------------- | ------------------------------------------------- |
+| 状態               | コンテナ状態                                            |
+| コンテナ             | Container ID                                      |
+| イメージ             | コンテナイメージ情報                                        |
+| コマンド             | コンテナ実行コマンド                                        |
+| アプリケーション         | コンテナにインストールされているWhaTap APMエージェントの名前               |
+| Pod              | Pod名                                              |
+| CpuByLimit       | CPU Limit基準CPUの全体使用率                              |
+| MemoryWsByLimit  | コンテナメモリのLimit基準working set使用量                     |
+| CpuThrottledCnt  | コンテナCPU Throttled数                                |
+| CpuThrottledTime | コンテナCPU Throttled時間                               |
+| MemLimit         | コンテナのメモリLimitサイズ                                  |
+| MemRequest       | コンテナのメモリRequestサイズ                                |
+| MemWs            | コンテナのメモリworking set                               |
+| IoReadBytes      | コンテナ全体ブロックデバイスの1秒当たり読み込んだバイトの合計                   |
+| IoReadIops       | コンテナ全体ブロックデバイスの1秒当たり読み込んだ数の合計                     |
+| IoWriteBytes     | コンテナ全体ブロックデバイスの1秒当たり書き込んだバイトの合計                   |
+| IoWriteIops      | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                     |
+| NetRxBytes       | コンテナ全体ブロックデバイスの1秒当たり読み取りバイトの合計                    |
+| NetRxDropped     | コンテナネットワーク受信dropped数                              |
+| NetRxError       | コンテナのネットワーク受信エラー数                                 |
+| NetRxIops        | コンテナのネットワーク受信数                                    |
+| NetTxBytes       | コンテナのネットワーク送信データサイズ                               |
+| NetTxDropped     | コンテナのネットワーク送信dropped数                             |
+| NetTxError       | コンテナのネットワーク送信エラー数                                 |
+| NetTxIops        | コンテナのネットワーク送信数                                    |
+
+*/}
 
 #### Pod
 
@@ -83,13 +85,15 @@ keywords:
 
 {/* Pod 상세 정보는 다음 내용을 제공합니다. 
 
-| 項目            | 説明                             |      |
-| ------------- | ------------------------------ | ---- |
-| Pod           | Podの固有の名前                      |      |
-| PodIp         | Pod固有のIPアドレス                   |      |
-| Namespace     | Podの属するネームスペース                 |      |
-| Node          | Podが実行中のノード名                   |      |
-| ConRestartCnt | コンテナの再起動回数                     |      |
-| Age           | Podが実行された時間                    |      |
-| CpuTotUsage   | PodのCPU使用量の合計                  |      |
-| CpuRequest    | Podが要請したCPUリソース                | | */}
+| 項目            | 説明                             |
+| ------------- | ------------------------------ |
+| Pod           | Podの固有の名前                      |
+| PodIp         | Pod固有のIPアドレス                   |
+| Namespace     | Podの属するネームスペース                 |
+| Node          | Podが実行中のノード名                   |
+| ConRestartCnt | コンテナの再起動回数                     |
+| Age           | Podが実行された時間                    |
+| CpuTotUsage   | PodのCPU使用量の合計                  |
+| CpuRequest    | Podが要請したCPUリソース                |
+
+*/}
