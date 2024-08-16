@@ -134,3 +134,9 @@
   既定値 `true`
 
   JDBCドライバーでSqlException発生時に追跡可否を設定します。 オプション値を`false`に設定すると、ユーザー定義の例外処理により`biz_exceptions`処理できます。
+
+- **trace_exception_handler_overwrite_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  spring-boot ExceptionHandlerを通過する例外(exception)が発生すると、以前に発生した例外に置き換えできます。 <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="TTL06125" className="uitext" />タブで例外(exception)を、spring-bootのExceptionHandlerに登録した例外で表示できます。

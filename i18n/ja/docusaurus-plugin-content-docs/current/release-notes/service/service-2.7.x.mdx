@@ -6,6 +6,149 @@ pagination_next: release-notes/service/service-2_6_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.7.12
+
+2024年08月12日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" />の下位メニューで<Cmdname sid="BTN06441" className="uitext" />カラムを追加した後、CSVファイルをダウンロードするとカラム設定が反映されない問題を修正
+
+</div>
+
+## Service 2.7.11
+
+2024年08月09日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでTPSの変化量に対する複合メトリクステンプレート(<UI>TPS has changed by more than 30% compared to the previous week.</UI>)の通知エラーを修正
+
+---
+
+### `Database`
+
+#### Oracle <code className="my">V2</code>、Oracle Pro
+
+<Status priority='0'>Fixed</Status>次のメニューパスでholder type、waiter typeの値が表示されない問題を修正
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューの<Cmdname sid="lock_tree" className="uitext" />テーブル
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+</div>
+
+## Service 2.7.10
+
+2024年08月07日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Oracle <code className="my">V2</code>
+
+<Status priority='0'>Fixed</Status>次のメニューパスで同じsidのholderとwaiterがロック(Lock)と表記されるエラーを修正
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューの<Cmdname sid="lock_tree" className="uitext" />テーブル
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+</div>
+
+## Service 2.7.9
+
+2024年08月07日
+
+<div class='indentTab'>
+
+### `Log`
+
+<Status priority='0'>Fixed</Status>次のメニューパスで<Cmdname sid="BTN06441" className="uitext" />を行うと、ログの原文が表示されない問題を修正
+
+- <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logTail" className="uitext" />
+- <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />
+- <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSearch" className="uitext" />
+- <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06128" className="uitext" />
+
+</div>
+
+## Service 2.7.7
+
+2024年08月05日
+
+<div class='indentTab'>
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="TTL06224" className="uitext" />画面でライブラリのフォーマットエラーが発生した場合、フォーマットできないように修正
+
+</div>
+
+## Service 2.7.6
+
+2024年08月02日
+
+<div class='indentTab'>
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />メニューで小文字true、falseがクエリーに含まれている場合<Cmdname sid="TTL06224" className="uitext" />照会時にホワイトアウト現象が発生する問題を修正
+
+---
+
+### `Application`、`Database`、`Server`、`Kubernetes`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_alertTemplate" className="uitext" />メニューで組織内の通知設定権限のあるプロジェクトに、通知設定がコピーできない問題を修正
+
+</div>
+
+## Service 2.7.5
+
+2024年08月01日
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの<Cmdname sid="TTL08230" className="uitext" />でイメージのリソース情報エラーを修正
+
+</div>
+
+## Service 2.7.4
+
+2024年07月29日
+
+<div class='indentTab'>
+
+### `共通`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューで、読み取り専用に共有されたダッシュボードのグループウィジェットに、含まれているウィジェットがデータを呼び出せない問題を修正
+
+</div>
+
+## Service 2.7.3
+
+2024年07月26日
+
+<div class='indentTab'>
+
+### `Database`
+
+#### 共通
+
+<Status priority='0'>Fixed</Status> <code className="my">V1</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューでメトリクス選択画面が表示されない問題を修正
+
+#### MySQL
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで権限に関する案内文句を追加
+
+</div>
+
 ## Service 2.7.2
 
 2024年07月25日

@@ -1,0 +1,139 @@
+---
+id: aerospike-introduction
+title: Aerospikeモニタリング
+description: この文書は、Aerospikeモニタリング商品の紹介ページです。
+displyed_sidebar: featuremonitorSidebar
+toc_max_heading_level: 2
+keywords:
+  - Aerospike
+  - Feature
+draft: true
+---
+
+import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import AlertFeature from '../common-items/_import_feature-alert.mdx';
+import TR from '@site/src/components/TR';
+
+:::note
+
+**Featureプロジェク**<ScrollToLink anchor='feature-project' />
+
+WhaTapは、ユーザーが希望するソフトウェアのモニタリング支援の有無を簡単に確認し、簡単にモニタリングを開始できるように、新しく**Featureプロジェク**(<code class='Features'>Features</code>)を導入しました。 Featureプロジェクは、既存のモニタリング製品を、ユーザーがモニタリングしようとするソフトウェアに合わせてリパッケージし、最適化されたモニタリングソリューションを提供します。 WhaTapのFeatureプロジェクを通じて、サービスの安定性と性能をより効果的に管理します。 
+
+:::
+
+Aerospikeは、リアルタイムのデータ処理と大規模なデータ分析に最適化された高性能NoSQLデータベースです。 Aerospikeを使用すると、1秒当たり数百万件のトランザクションを処理し、データの一貫性と性能を維持しながら、大規模なデータタスクを効率的に実行できます。 従って、Aerospikeの性能と状態をモニタリングすることは、システムの安定性と最適化のために非常に重要です。
+
+WhaTapは、新しい**Featureプロジェクト**方法で***Aerospike***モニタリングを提供します。 WhaTapを通じてAerospikeクラスターの性能と状態をリアルタイムで追跡し、問題を早期に感知して解決できます。
+
+- **メトリクスモニタリング**: 各ノードのCPU、メモリ、ディスク使用量など、様々なシステムメトリクスを、リアルタイムでモニタリングします。
+
+- **ダッシュボード**: ダッシュボードを通じて、メトリクスを効率的に照会できます。
+
+WhaTap***Aerospike***モニタリングにより、Aerospikeクラスターの複雑な運用環境を効果的に管理できます。 
+
+## インストール
+
+WhaTapのAerospikeモニタリングサービスを利用するための、基本的なインストール方法をご案内します。 
+
+WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ja/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。 会員登録に関する詳細は、[次の文書](../account/account-manage)を参照してください。 
+
+:::note 
+
+**サポート環境**<ScrollToLink anchor='aerospike-supported-env' />
+
+WhaTapのAerospikeモニタリングエージェントをインストールする前に、対応環境を確認します。 
+
+- **Aerospike**: Aerospike 5.x以降 
+
+- **Ubuntu**: Ubuntu 12.04以降
+
+- **OS**: Red Hat 6 or equivalent(CentOS, Rocky Linux, Amazon Linux)
+
+- **OSアーキテクチャ**: Amd64/X86_64, Arm64/Aarch64
+
+:::
+
+### Featureプロジェクトを作成する
+
+import CreateFeature from "../common-items/_import_feature-project-create.mdx";
+
+<CreateFeature />
+
+### Aerospikeエージェントのインストール
+
+<InstallFeature name='Aerospikeエージェントインストール' />
+
+## メインメニュー
+
+### ダッシュボード
+
+ホーム画面 > **Featureプロジェク**(<code class='Features'>Features</code>)選択 > ***Aerospike*** > ***Aerospike ダッシューボード***
+
+WhaTapのAerospikeモニタリングは、Aerospikeクラスターの性能と状態など、全体の現状を一目で把握できるように、様々なメトリクスをリアルタイムでモニタリングします。 各メトリクスを定期的に確認して、クラスターが最適な状態を維持するように管理できます。 
+
+WhaTapが提供する***Aerospikeダッシュボード***は、次のように構成されています。 
+
+#### クラスター状態の概要
+
+- ***Cluster Size***: クラスターに含まれるノードの数を表示します。 現在のクラスターの規模を一目で把握することができ、ノードの追加や削除などの変化を簡単に感知できます。
+
+- ***Cluster Object Counts***: クラスター内のオブジェクト数を表示します。 これにより、クラスターに保存されているデータの量を追跡および管理できます。
+
+#### 読取り/書込み作業
+
+- ***Read Iops***: 各ノードで1秒当たりに実行される読取りタスクの数を示します。 このメトリクスは、データベースの読取り性能を評価し、ボトルネックを特定するのに役立ちます。
+
+- ***Write Iops***: 各ノードで1秒当たりに実行される書込みタスクの数を示します。 書込み性能を分析して、クラスター処理量量を最適化するのに役立ちます。
+
+#### 接続およびI/O性能
+
+- ***Aerospike Cluster DB Connections***: 現在アクティブ化されたデータベース接続の数をモニタリングします。 接続数が急激に増加したり、減少したりする場合、潜在的な性能の問題を予測できます。
+
+- ***IO Percent***: 各ノードのI/O使用量をパーセントで表示します。 このメトリクスは、ノードのディスクとネットワーク リソースの活用度を評価し、ボトルネックを防止するために重要です。
+
+- ***Traffic In/Out***: ネットワークトラフィックをモニタリングします。 ネットワーク帯域幅の使用量を追跡し、送信速度に関する問題を早期に発見できます。
+
+#### リソース使用量
+
+- ***CPU***: 各ノードのCPU使用量をリアルタイムで表示します。 CPUリソースの過負荷を防止し、システム性能を最適化できます。
+
+- ***Memory Used Pct***: 各ノードのメモリ使用率を、パーセンテージでモニタリングします。 メモリリソースが不足しないように注意して、安定したデータ処理環境を保持します。
+
+- ***Disk Pressure***: ディスク使用圧力を表示します。 ディスク容量の不足や過度なI/O作業による性能低下を防止するため、定期的に確認する必要があります。
+
+#### Namespaceメトリクス
+
+- ***Namespace In-Memory Index***: ネームスペースごとのインメモリインデックスサイズを示します。 インデックスサイズをモニタリングしてメモリの使用を最適化し、インデックスに関する性能の問題を防止します。
+
+- ***Namespace Size***: ネームスペースの全サイズをモニタリングします。 ストレージ容量の効率的な活用のために、各ネームスペースのサイズを定期的にチェックします。
+
+:::note 
+
+**主なモニタリングメトリクス**
+
+- **CPU使用量** 
+
+    CPU使用率を追跡して過負荷を防止します。
+
+- **メモリ使用量** 
+
+    メモリの使用をモニタリングして、メモリ不足のエラーを防止します。
+
+- **ストレージ使用量** 
+
+    十分なストレージがあるか確認します。
+
+- **読取り/書込み作業** 
+
+    性能のボトルネックを示す可能性のある読取りおよび書込みのタスク数をモニタリングします。
+
+- **ネットワークトラフィック** 
+
+    ネットワーク使用量を追跡して、トラフィックの問題を防止します。
+
+:::
+
+### アラート通知
+
+<AlertFeature name='Aerospike' />
