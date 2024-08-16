@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67225],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37692],{
 
 /***/ 73334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -27,6 +27,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     code: "code",
     h2: "h2",
@@ -702,6 +703,123 @@ function _createMdxContent(props) {
             }), " 버튼을 선택하세요."]
           }), "\n"]
         }), "\n"]
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
+        children: "PagerDuty"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://www.pagerduty.com/",
+              children: "PagerDuty"
+            }), " 계정에 등록하고 로그인했는지 확인하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["PagerDuty에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Services"
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Service Directory"
+            }), " 메뉴로 진입해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "New Service"
+            }), " 버튼을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_01.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Service 정보를 입력한 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Next"
+            }), " 버튼을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_02.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Escalation Policy를 설정 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Next"
+            }), " 버튼을 선택합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_03.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Alert Grouping"
+            }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Transient Alerts"
+            }), " 항목을 설정한 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Next"
+            }), " 버튼을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_04.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Integrations"
+            }), "에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Event API V2"
+            }), "를 선택 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Create Service"
+            }), " 버튼을 클릭하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_05.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["생성한 Service 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Integration Name"
+            }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Integration Key"
+            }), " 값을 복사하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_06.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["와탭 모니터링 서비스의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL06656",
+              className: "uitext"
+            }), " 화면으로 돌아와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Integration Name"
+            }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Integration Key"
+            }), " 항목을 입력하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+            img: "3rdparty/set-event-3rd-party-plugin-add-pagerduty-options.png",
+            className: "width-600",
+            desc: "Register"
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["메시지를 수신하지 못했거나 플러그인이 등록되지 않았다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Integration Name"
+          }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Integration Key"
+          }), "값이 올바른지 확인하세요."]
+        })
       })]
     })]
   });
@@ -2161,147 +2279,6 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 3578:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "SMS 알림 수신 추가하기",
-  "id": "sms-알림-수신-추가하기",
-  "level": 3
-}];
-function _createMdxContent(props) {
-  const _components = {
-    admonition: "admonition",
-    h3: "h3",
-    li: "li",
-    ol: "ol",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname, ImgLang} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h3",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "sms-알림-수신-추가하기",
-      children: "SMS 알림 수신 추가하기"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["SMS 알림 수신이 필요한 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "MNU07360",
-        className: "uitext"
-      }), "에서 사용자 전화번호를 설정하세요."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "set-event-sms-notification.png",
-      desc: "사용자 전화번호"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "화면 오른쪽 위에 프로필 아이콘을 선택하세요."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["팝업 메뉴가 나타나면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "MNU07360",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "account_user_phone",
-            className: "uitext"
-          }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "ITM06575",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "phone",
-            className: "uitext"
-          }), "에 인증번호를 수신할 전화번호를 입력하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "BTN06578",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "사용자의 휴대전화로 전송된 인증 번호를 입력하세요."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "BTN06501",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["등록한 전화번호를 변경하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "BTN06594",
-              className: "uitext"
-            }), " 버튼을 선택한 다음 위의 과정을 반복하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["SMS를 알림으로 수신할 수 있는 전화번호는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "한국의 휴대전화 번호"
-            }), "만 등록할 수 있습니다."]
-          }), "\n"]
-        }), "\n"]
-      })
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
 /***/ 44227:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2415,133 +2392,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 55487:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "WhatsApp 알림 수신 추가하기",
-  "id": "whatsapp-알림-수신-추가하기",
-  "level": 3
-}];
-function _createMdxContent(props) {
-  const _components = {
-    admonition: "admonition",
-    h3: "h3",
-    li: "li",
-    ol: "ol",
-    p: "p",
-    section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname, ImgLang} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h3",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "whatsapp-알림-수신-추가하기",
-      children: "WhatsApp 알림 수신 추가하기"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "WhatsApp을 통해 알림을 수신할 수 있습니다."
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "set-event-whatsapp-notification.png",
-      desc: "WhatsApp"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "화면 오른쪽 위에 프로필 아이콘을 선택하세요."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["팝업 메뉴가 나타나면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "MNU07360",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "account_user_phone",
-            className: "uitext"
-          }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            class: "uitext",
-            children: "WhatsApp"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "phone",
-            className: "uitext"
-          }), "에 인증번호를 수신할 전화번호를 입력하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "BTN06578",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "WhatsApp 애플리케이션으로 전송된 인증번호 6자리를 입력하세요."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "BTN06501",
-            className: "uitext"
-          }), " 버튼을 선택하세요."]
-        }), "\n"]
-      }), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["등록한 전화번호를 변경하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "BTN06594",
-          className: "uitext"
-        }), " 버튼을 선택한 다음 위의 과정을 반복하세요."]
-      })
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 41862:
+/***/ 19358:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2554,24 +2405,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(66451);
 /* harmony import */ var _common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22151);
-/* harmony import */ var _common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3578);
-/* harmony import */ var _common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(55487);
-/* harmony import */ var _common_items_set_receive_event_mobile_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(31171);
-/* harmony import */ var _common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(66415);
-/* harmony import */ var _common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3781);
-/* harmony import */ var _common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(22686);
-/* harmony import */ var _common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(74394);
-/* harmony import */ var _common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6243);
-/* harmony import */ var _common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(8074);
-/* harmony import */ var _common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(84588);
-/* harmony import */ var _common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(78418);
-/* harmony import */ var _common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(73334);
-/* harmony import */ var _common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(44227);
-/* harmony import */ var _common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(16199);
-/* harmony import */ var _common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(81854);
+/* harmony import */ var _common_items_set_receive_event_mobile_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31171);
+/* harmony import */ var _common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(66415);
+/* harmony import */ var _common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3781);
+/* harmony import */ var _common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(22686);
+/* harmony import */ var _common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(74394);
+/* harmony import */ var _common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6243);
+/* harmony import */ var _common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(8074);
+/* harmony import */ var _common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(84588);
+/* harmony import */ var _common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(78418);
+/* harmony import */ var _common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(73334);
+/* harmony import */ var _common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(44227);
+/* harmony import */ var _common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(16199);
+/* harmony import */ var _common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(81854);
 
 
 const frontMatter = {
@@ -2579,24 +2428,23 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	keywords: [
-		'Tibero',
+		'URL',
 		'경고 알림',
-		'이벤트 수신 태그',
-		'데이터베이스 모니터링'
+		'이벤트 수신 태그'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "tibero/set-receive-event",
+  "id": "url/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/tibero/set-receive-event.mdx",
-  "sourceDirName": "tibero",
-  "slug": "/tibero/set-receive-event",
-  "permalink": "/whatap-docs/tibero/set-receive-event",
+  "source": "@site/docs/url/set-receive-event.mdx",
+  "sourceDirName": "url",
+  "slug": "/url/set-receive-event",
+  "permalink": "/whatap-docs/url/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/tibero/set-receive-event.mdx",
+  "editUrl": "undefined/docs/url/set-receive-event.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2604,20 +2452,19 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "keywords": [
-      "Tibero",
+      "URL",
       "경고 알림",
-      "이벤트 수신 태그",
-      "데이터베이스 모니터링"
+      "이벤트 수신 태그"
     ]
   },
-  "sidebar": "tiberoSidebar",
+  "sidebar": "urlSidebar",
   "previous": {
-    "title": "이상치 탐지 경고 알림",
-    "permalink": "/whatap-docs/tibero/set-event-detect-anomal"
+    "title": "이벤트 설정",
+    "permalink": "/whatap-docs/url/url-event"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/tibero/set-event-history"
+    "permalink": "/whatap-docs/url/url-event-history"
   }
 };
 const assets = {
@@ -2625,8 +2472,6 @@ const assets = {
 };
 
 /*수신 수단 선택하기*/
-/*SMS 알림 수신 추가하기*/
-/*WhatsApp 알림 수신*/
 /*모바일 알림 수신 추가하기*/
 /*수신 레벨 선택하기*/
 /*요일 및 시간별 알람 설정하기*/
@@ -2657,17 +2502,15 @@ const assets = {
 
 
 
-
-
-const toc = [..._common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_set_receive_event_mobile_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM];
+const toc = [..._common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_set_receive_event_mobile_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_sms_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_whatsapp_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_mobile_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {})]
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_description_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_select_method_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_mobile_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_level_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_day_time_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_repeate_notice_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_set_tag_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_add_tag_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_disable_tag_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_tag_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_notset_tag_noti_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_3rdparty_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_stop_mass_event_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_modify_profile_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_receive_event_change_language_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_18__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_16__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63736],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58241],{
 
 /***/ 73334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -27,6 +27,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     code: "code",
     h2: "h2",
@@ -702,6 +703,123 @@ function _createMdxContent(props) {
             }), " 버튼을 선택하세요."]
           }), "\n"]
         }), "\n"]
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
+        children: "PagerDuty"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://www.pagerduty.com/",
+              children: "PagerDuty"
+            }), " 계정에 등록하고 로그인했는지 확인하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["PagerDuty에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Services"
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Service Directory"
+            }), " 메뉴로 진입해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "New Service"
+            }), " 버튼을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_01.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Service 정보를 입력한 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Next"
+            }), " 버튼을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_02.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Escalation Policy를 설정 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Next"
+            }), " 버튼을 선택합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_03.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Alert Grouping"
+            }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Transient Alerts"
+            }), " 항목을 설정한 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Next"
+            }), " 버튼을 선택하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_04.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Integrations"
+            }), "에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Event API V2"
+            }), "를 선택 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Create Service"
+            }), " 버튼을 클릭하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_05.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["생성한 Service 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Integration Name"
+            }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Integration Key"
+            }), " 값을 복사하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              src: "https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_06.jpg",
+              alt: "PagerDuty"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["와탭 모니터링 서비스의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL06656",
+              className: "uitext"
+            }), " 화면으로 돌아와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Integration Name"
+            }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "Integration Key"
+            }), " 항목을 입력하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+            img: "3rdparty/set-event-3rd-party-plugin-add-pagerduty-options.png",
+            className: "width-600",
+            desc: "Register"
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["메시지를 수신하지 못했거나 플러그인이 등록되지 않았다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Integration Name"
+          }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Integration Key"
+          }), "값이 올바른지 확인하세요."]
+        })
       })]
     })]
   });
@@ -2541,7 +2659,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11288:
+/***/ 54481:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2579,24 +2697,24 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	keywords: [
+		'PHP',
 		'경고 알림',
 		'이벤트 수신 태그',
-		'Naver Cloud Monitoring',
-		'클라우드'
+		'애플리케이션 모니터링'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "ncloud/set-receive-event",
+  "id": "php/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/ncloud/set-receive-event.mdx",
-  "sourceDirName": "ncloud",
-  "slug": "/ncloud/set-receive-event",
-  "permalink": "/whatap-docs/ncloud/set-receive-event",
+  "source": "@site/docs/php/set-receive-event.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/set-receive-event",
+  "permalink": "/whatap-docs/php/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/ncloud/set-receive-event.mdx",
+  "editUrl": "undefined/docs/php/set-receive-event.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2604,20 +2722,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "keywords": [
+      "PHP",
       "경고 알림",
       "이벤트 수신 태그",
-      "Naver Cloud Monitoring",
-      "클라우드"
+      "애플리케이션 모니터링"
     ]
   },
-  "sidebar": "ncloudSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/ncloud/metric-warning-notice"
+    "title": "로그 경고 알림",
+    "permalink": "/whatap-docs/php/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/ncloud/set-event-history"
+    "permalink": "/whatap-docs/php/set-event-history"
   }
 };
 const assets = {
