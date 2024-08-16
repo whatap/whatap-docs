@@ -165,7 +165,7 @@ function _createMdxContent(props) {
             children: "weaving=spring-boot-3.2\n"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "다음 라이르러리 또는 프레임워크를 추적합니다."
+          children: "다음 라이브러리 또는 프레임워크를 추적합니다."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: "RestTemplate"
@@ -195,7 +195,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: ["기존: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "[kafka] {topic} (cnt: {Number of polls in kafka})"
+                children: "[kafka] {topic} (cnt: {Number of polls in Kafka})"
               })]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
