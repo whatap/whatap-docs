@@ -6,6 +6,149 @@ pagination_next: release-notes/service/service-2_6_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.7.12
+
+August 12, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> Fixed the issue where the column settings are not reflected when downloading a CSV file after adding columns through <Cmdname sid="BTN06441" className="uitext" /> in the submenu of <Cmdname sid="side_statistics" className="uitext" />.
+
+</div>
+
+## Service 2.7.11
+
+August 9, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, fixed the notification error of the composite metrics platform (<UI>TPS has changed by more than 30% compared to the previous week.</UI>) over the TPS changes.
+
+---
+
+### `Database`
+
+#### Oracle <code className="my">V2</code>, Oracle Pro
+
+<Status priority='0'>Fixed</Status> Fixed the problem where the values for holder type and waiter type do not appear in the following menu paths:
+
+- <Cmdname sid="lock_tree" className="uitext" /> table in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+</div>
+
+## Service 2.7.10
+
+August 7, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Oracle <code className="my">V2</code>
+
+<Status priority='0'>Fixed</Status> Fixed the problem where the holder and waiter for the same sid are displayed as Lock in the following menu paths:
+
+- <Cmdname sid="lock_tree" className="uitext" /> table in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+</div>
+
+## Service 2.7.9
+
+August 7, 2024
+
+<div class='indentTab'>
+
+### `Log`
+
+<Status priority='0'>Fixed</Status> Fixed the issue where the original log text is not displayed when proceeding with <Cmdname sid="BTN06441" className="uitext" /> in the following menu paths:
+
+- <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logTail" className="uitext" />
+- <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />
+- <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSearch" className="uitext" />
+- <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06128" className="uitext" />
+
+</div>
+
+## Service 2.7.7
+
+August 5, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> Modified not to perform formatting when a library formatting error occurs on the <Cmdname sid="TTL06224" className="uitext" /> window.
+
+</div>
+
+## Service 2.7.6
+
+August 2, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> If the query contains true or false in <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="statistics_sql" className="uitext" />, fixed the whiteout error when <Cmdname sid="TTL06224" className="uitext" /> is viewed.
+
+---
+
+### `Application`, `Database`, `Server`, `Kubernetes`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_alertTemplate" className="uitext" />, fixed the issue where alert settings cannot be copied to the projects that have the setting role within the organization.
+
+</div>
+
+## Service 2.7.5
+
+August 1, 2024
+
+<div class='indentTab'>
+
+### `Kubernetes`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="TTL08230" className="uitext" /> of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, fixed the image resource information error.
+
+</div>
+
+## Service 2.7.4
+
+July 29, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> Fixed the issue where the widgets included in a group widget on the dashboard shared as read-only in <Cmdname sid="side_integratedFlexboard" className="uitext" /> cannot call data.
+
+</div>
+
+## Service 2.7.3
+
+July 26, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+#### Common
+
+<Status priority='0'>Fixed</Status> In <code className="my">V1</code> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, fixed the issue where the metric selection window does not appear.
+
+#### MySQL
+
+<Status priority='1'>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, added the guidance text regarding the roles.
+
+</div>
+
 ## Service 2.7.2
 
 July 25, 2024

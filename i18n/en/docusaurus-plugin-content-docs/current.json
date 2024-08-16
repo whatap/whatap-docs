@@ -1750,5 +1750,17 @@
   "sidebar.kubeSidebar.category.지원 환경": {
     "message": "Support Environment",
     "description": "The label for category 지원 환경 in sidebar kubeSidebar"
+  },
+  "sidebar.featuremonitorSidebar.doc.KAFKA": {
+    "message": "KAFKA",
+    "description": "The label for the doc item KAFKA in sidebar featuremonitorSidebar, linking to the doc features/kafka-introduction"
+  },
+  "sidebar.featuremonitorSidebar.doc.Aerospike": {
+    "message": "Aerospike",
+    "description": "The label for the doc item Aerospike in sidebar featuremonitorSidebar, linking to the doc features/aerospike-introduction"
+  },
+  "sidebar.featuremonitorSidebar.doc.Apache Pulsar": {
+    "message": "Apache Pulsar",
+    "description": "The label for the doc item Apache Pulsar in sidebar featuremonitorSidebar, linking to the doc features/apache-pulsar-introduction"
   }
 }

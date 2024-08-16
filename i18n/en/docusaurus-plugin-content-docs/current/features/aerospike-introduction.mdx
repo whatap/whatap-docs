@@ -1,0 +1,139 @@
+---
+id: aerospike-introduction
+title: Aerospike monitoring
+description: This document is an introduction to the Aerospike monitoring product.
+displyed_sidebar: featuremonitorSidebar
+toc_max_heading_level: 2
+keywords:
+  - Aerospike
+  - Feature
+draft: true
+---
+
+import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import AlertFeature from '../common-items/_import_feature-alert.mdx';
+import TR from '@site/src/components/TR';
+
+:::note
+
+**Feature Project**<ScrollToLink anchor='feature-project' />
+
+WhaTap newly introduced **Feature Project** (<code class='Features'>Features</code>) so that users can easily check whether the desired software supports monitoring and easily start monitoring. The Feature Project provides an optimized monitoring solution by repackaging existing monitoring products to fit the software to monitor. Manage your services for stability and performance more effectively through the WhaTap's Feature Project. 
+
+:::
+
+Aerospike is a high-performance NoSQL database optimized for real-time data processing and large-scale data analysis. Aerospike enables you to process millions of transactions per second, efficiently performing large-scale data operations while maintaining data consistency and performance. Accordingly, monitoring the performance and status of the Aerospike is very important for system stability and optimization.
+
+WhaTab provides the ***Aerospike*** monitoring in a new **feature project** way. WhaTap allows you to trace the performance and status of the Aerospike cluster in real time, enabling you to detect and resolve issues early as possible.
+
+- **Metrics monitoring**: It monitors various system metrics such as CPU, memory, and disk usage for each node in real time.
+
+- **Dashboard**: You can efficiently view the metrics through the dashboard.
+
+Effectively manage your complex operating environment of the Aerospike cluster with the WhaTap ***Aerospike*** monitoring. 
+
+## Installation
+
+The following guides you to the basic installation process for use of the WhaTap Aerospike monitoring service. 
+
+To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/en/signup/), create a project and then install the agent to the target server. For more information about membership registration, see [the following](../account/account-manage). 
+
+:::note 
+
+**Supported environment**<ScrollToLink anchor='aerospike-supported-env' />
+
+Before installing the WhaTab Aerospike monitoring agent, check the supported environment. 
+
+- **Aerospike**: Aerospike 5.x or later 
+
+- **Ubuntu**: Ubuntu 12.04 or later
+
+- **OS**: Red Hat 6 or equivalent (CentOS, Rocky Linux, Amazon Linux)
+
+- **OS Architecture**: Amd64/X86_64, Arm64/Aarch64
+
+:::
+
+### Creating a Feature Project
+
+import CreateFeature from "../common-items/_import_feature-project-create.mdx";
+
+<CreateFeature />
+
+### Installation of the Aerospike agent
+
+<InstallFeature name='Aerospike Agent Installation' />
+
+## Learn about the main features
+
+### Dashboard
+
+Home > Select **Feature Project** (<code class='Features'>Feature</code>) > ***Aerospike*** > ***Aerospike Dashboard***
+
+WhaTap Aerospike Monitoring monitors various metrics in real time so that you can see the overall status of the Aerospike cluster at a glance, including its performance and status. You can check each metric regularly to keep your cluster in optimal health. 
+
+The ***Aerospike dashboard*** provided by WhaTab consists of the following: 
+
+#### Cluster status overview
+
+- ***Cluster Size***: It displays the number of nodes included in the cluster. You can see the size of the current cluster at a glance and easily identify the changes such as adding and removing nodes.
+
+- ***Cluster Object Counts***: It displays the number of objects in the cluster. This allows you to trace and manage the amount of data stored in the cluster.
+
+#### Read/Write operations
+
+- ***Read Iops***: It indicates the number of read operations per second for each node. This metric is useful for evaluating the read operation performance to the database and identifying bottlenecks.
+
+- ***Write Iops***: It displays the number of write operations per second for each node. It analyzes the write operation performance to help optimize the throughput of the cluster.
+
+#### Connectivity and I/O performance
+
+- ***Aerospike Cluster DB Connections***: It monitors the number of active database connections. A sudden increase or decrease in the number of connections can indicate potential performance issues.
+
+- ***IO Percent***: It displays the I/O usage of each node as a percentage. This metric is important when evaluating the disk and network resource utilization of the node and preventing bottlenecks.
+
+- ***Traffic In/Out***: It monitors the network traffic. By tracing the network bandwidth usage, you can identify the transmission speed issues as early as possible.
+
+#### Resource usage
+
+- ***CPU***: It displays the CPU usage for each node in real time. It can prevent overloading of CPU resources and optimize the system performance.
+
+- ***Memory Used Pct***: It monitors the memory utilization of each node as a percentage. It maintains a stable data processing environment by being careful not to run out of memory resources.
+
+- ***Disk Pressure***: It displays the disk usage pressure. You must check it periodically to avoid performance degradation due to lack of disk space or excessive I/O operations.
+
+#### Namespace metric
+
+- ***Namespace In-Memory Index***: It indicates the in-memory index size of each namespace. By monitoring the index size, you can optimize the memory usage and avoid index-related performance issues.
+
+- ***Namespace Size***: It monitors the overall size of the namespace. For efficient use of storage space, the size of each namespace is checked periodically.
+
+:::note 
+
+**Key monitoring metrics**
+
+- **CPU usage** 
+
+    It prevents overload by tracing the CPU utilization.
+
+- **Memory usage** 
+
+    It monitors the memory usage to prevent out-of-memory errors.
+
+- **Storage usage** 
+
+    It checks whether there is enough storage.
+
+- **Read/Write operation** 
+
+    It monitors the number of read and write operations that can represent performance bottlenecks.
+
+- **Network traffic** 
+
+    It traces the network usage to prevent traffic issues.
+
+:::
+
+### Alert
+
+<AlertFeature name='Aerospike' />

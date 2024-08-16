@@ -14,6 +14,195 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.8.0.a3
+
+August 8, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> Fixed the issue where themes applied to some text elements are missing.
+
+</div>
+
+## Preview 2.8.0.a2
+
+August 8, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Added the feature to download the member list as a CSV file from the following menu paths:
+
+  - Home > Select Project > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectMember" className="uitext" />
+  - Home > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_integratedMemberManagement" className="uitext" />
+  - Home > <Cmdname sid="organization_management" className="uitext" /> > <Cmdname sid="side_organizationMembers" className="uitext" />
+
+- <Status priority='0'>Changed</Status> Changed the location and UI of the Integrated Group Management button.
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="rich_text" className="uitext" /> widget in <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where the unsaved content is retained when opening and closing the Edit screen.
+
+- <Status priority='0'>Fixed</Status> On the Edit screen of the <Cmdname sid="rich_text" className="uitext" /> widget in <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" />, set the theme for the tooltip element so that the text and the tooltip of the toolbar button do not overlap.
+
+- <Status priority='0'>Fixed</Status> In the side menu, fixed the scroll error of the<Cmdname sid="organization" className="uitext" /> list depending on the web browser screen size.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, changed the widget name of <Cmdname sid="AA016" className="b500" /> to <Cmdname sid="AA002" className="uitext" />, and modified to display the widget name on one line without line breaking.
+
+- <Status priority='0'>Fixed</Status> Modified the substituted variable `#` in the SQL statement for transactions not to be displayed as `$`.
+
+---
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverSetting" className="uitext" /> &gt; <Cmdname sid="side_bootEnvironmentVariable" className="uitext" /> or <Cmdname sid="side_serverEnvironmentVariable" className="uitext" />, fixed the issue where the menu name of the top of the screen is changed to <Cmdname sid="side_agentLogViewer" className="b500" />, if you select the ![Expand icon](/img/ic-s-arrows-alt.svg) agent list expansion button.
+
+---
+
+### `Database`
+
+#### Oracle <code className="my">V2</code>, Oracle Pro
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified to view the data in the <UI>Main Waits</UI> widget in the `active_session` category.
+
+- <Status priority='0'>Fixed</Status> Fixed the error where the holder type and waiter type values ​​are not displayed in the following menu paths:
+
+  - <Cmdname sid="lock_tree" className="uitext" /> table in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+#### Oracle <code className="my">V2</code>
+
+<Status priority='0'>Fixed</Status> Fixed the error where the holder and waiter of the same sid are displayed as Lock in the following menu paths:
+
+- <Cmdname sid="lock_tree" className="uitext" /> table in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+---
+
+### `Browser`
+
+- <Status priority='1'>Changed</Status> Improved the UI of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_rumErrorDashboard" className="uitext" /> &gt; <Cmdname sid="error_message" className="uitext" /> <Cmdname sid="table" className="uitext" /> section.
+
+- <Status priority='1'>Changed</Status> Improved the UI of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_rumErrorDashboard" className="uitext" /> &gt; <Cmdname sid="error_message" className="uitext" /> <Cmdname sid="table" className="uitext" /> &gt; <Cmdname sid="error" className="uitext" /> <Cmdname sid="detail" className="uitext" /> &gt; <Cmdname sid="TTL06188" className="uitext" /> section.
+
+---
+
+### `Network`
+
+<Status priority='0'>Changed</Status> If the user language is English, modified the <b>Version</b> to <UI>Kernel Version</UI> in the <Cmdname sid="TTL07943" className="uitext" /> section of <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />.
+
+---
+
+### `Log`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" /> &gt; <Cmdname sid="getting_started_log_monitoring" className="uitext" />, modified not to display the items with `#` among <Cmdname sid="data_retention_per_category" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the original log text is not displayed when proceeding with <Cmdname sid="BTN06441" className="uitext" /> in the following menu paths:
+
+  - <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logTail" className="uitext" />
+  - <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />
+  - <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSearch" className="uitext" />
+  - <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06128" className="uitext" />
+
+</div>
+
+## Preview 2.8.0.a1
+
+August 1, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> In<Cmdname sid="side_integratedFlexboard" className="uitext" /> 또는 <Cmdname sid="side_flexboard" className="uitext" />, added the `OR` option between the conditions within the metrics type filters.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" /> 또는 <Cmdname sid="side_flexboard" className="uitext" />, added the font color selection option for rich text widgets.
+
+- <Status priority='1'>Changed</Status> Changed some colors for themes.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, removed the caution regarding the access key.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the bottom area is hidden when accessing the WhaTab service screen through the browser on a mobile device.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the description of the metric is displayed as the widget title when widgets are added using <Cmdname sid="all_metrics" className="uitext" /> in <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the widgets included in a group widget on the dashboard shared as read-only in <Cmdname sid="side_integratedFlexboard" className="uitext" /> cannot call data.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the dashboard filters are not applied in the sub widgetof the group when applying the filters if there is no filter selected in the group widget in <Cmdname sid="side_integratedFlexboard" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed the issure where the setting is not saved when the same set value is entered if only one of <span className="slow">Warning</span> and <span className="vslow">Critical</span> metrics is activated in the event addition or modification screen of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">V2</code>.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the MXQL data is not viewed on the composite metrics addition or modification screen of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">V2</code>.
+
+  > We fixed the issue where the MXQL data is not viewed when changed to the text mode after setting the tags or fields with the string values by using the <Cmdname sid="filter" className="uitext" /> option in the <Cmdname sid="flex_event_mxql" className="uitext" /> section.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Changed</Status> Changed the filtering selection box in the <Cmdname sid="TTL06209" className="uitext" /> pop-up window to the group format button.
+
+  ![changes](/img/release/release-trace-analysis-filter-changes.png)
+
+- <Status priority='1'>Changed</Status> If the user language is set to English, changed the font size to improve the readability of the <UI>Apdex</UI> widget guide modal in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />.
+
+---
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> When adding or modifying events in <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, changed the <Cmdname sid="alert_rule" className="uitext" />'s my font to the default font.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />, moved the <UI>ApplicationName</UI>, <UI>ApplicationId</UI> column to under the <Cmdname sid="TTL08105" className="uitext" /> column.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_containerizedAppList" className="uitext" />, fixed the bug where warning messages are not displayed when there is no mapped container.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="TTL08230" className="uitext" /> of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, fixed the image resource information error.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> Added the feature to log user actions when the <Cmdname sid="session_kill" className="uitext" /> feature succeeds or fails.
+
+- <Status priority='1'>Changed</Status> Modified not to invite the dbx@whatap.io account together when using the <Cmdname sid="invite_help_whatap_account" className="uitext" /> feature in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />.
+
+#### PostgreSQL
+
+<Status priority='1'>Feature</Status> Added the <UI>Vacuum Sessions</UI> widget that can check the number of vacuum processes running in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />.
+
+#### MySQL
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_deadLock" className="uitext" />, fixed the issue where the message displayed when there is no data retrieved, is half displayed.
+
+#### Oracle <code className="my">V2</code>, Oracle Pro
+
+- <Status priority='1'>Feature</Status> Added the <UI>FILTER_PREDICATES</UI> column in the <UI>Runtime Plan</UI> and <UI>Explain Plan</UI> tables of the <Cmdname sid="TTL06224" className="uitext" /> pop-up window.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the <UI>OBJECT_NAME</UI> column link is not enabled when you enter the <Cmdname sid="TTL06224" className="uitext" /> pop-up window from <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the elapse time value in the detailed chart is abnormally high.
+
+- <Status priority='0'>Fixed</Status> Modified to display the cluster name in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />.
+
+#### Redis <code className="my">V1</code>, MongoDB <code className="my">V1</code>
+
+<Status priority='0'>Fixed</Status> Modified not to display the cluster name in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />.
+
+</div>
+
 ## Preview 2.8.0.a0
 
 July 25, 2024
