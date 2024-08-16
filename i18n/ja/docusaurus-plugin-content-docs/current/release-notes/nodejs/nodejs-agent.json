@@ -1,39 +1,111 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_94",
-    "ver": "v0.4.94",
-    "date": "2024-03-07",
+    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_5_0",
+    "ver": "v0.5.0",
+    "date": "2024-08-12",
     "Lists": [
       {
-        "ver": "v0.4.94",
-        "hash": "v0494",
+        "ver": "v0.5.0",
+        "hash": "v050",
         "product": "Node.js Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <a href=\"http://socket.io\" target=\"_blank\" rel=\"noopener noreferrer\">socket.io</a>モニタリングモジュールを追加</p>",
-        "details": "<p><code>trace_sampling_enabled</code>、<code>trace_sampling_tps</code>オプションを使用して、サンプリングされたデータを確認できます。 <code>trace_ignore_url_prefix</code>オプションに<code>/socket.io</code>経路を追加して追跡できないように設定してください。</p>"
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> whatapエージェントログファイルのパスを設定するエージェントオプションを追加</p>",
+        "details": "<blockquote>\n<p><strong>log_root</strong> <span class=\"type\">String</span> 既定値なし</p>\n</blockquote>"
       },
       {
-        "ver": "v0.4.94",
-        "hash": "v0494",
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Node.jsビルトイン関数である<code>fetch</code>に対するモニタリング機能を追加</p>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Redisモニタリングパッケージを追加(<a href=\"https://www.npmjs.com/package/ioredis\" target=\"_blank\" rel=\"noopener noreferrer\">ioredis</a>)</p>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>ビルドファイルのモニタリング無視オプションの名称を修正</p>",
+        "details": "<ul>\n<li><code>ignore_nextjs_build_file_enabled</code> → <code>ignore_build_file_enabled</code></li>\n<li><code>ignore_nextjs_build_file_path</code> → <code>ignore_build_file_path</code></li>\n</ul>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>  <code>auto_oname_prefix</code>オプションの値が<code>false</code>でも<code>true</code>で適用されるエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_97",
+    "ver": "v0.4.97",
+    "date": "2024-06-03",
+    "Lists": [
+      {
+        "ver": "v0.4.97",
+        "hash": "v0497",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code>Kubernetes環境の使用可否を環境変数として適用可能</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_90",
+    "ver": "v0.4.90",
+    "date": "2024-02-05",
+    "Lists": [
+      {
+        "ver": "v0.4.90",
+        "hash": "v0490",
         "product": "Node.js Agent",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\">Feature</code>エージェント設定オプションを追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>profile_http_header_ignore_keys</strong> <span class=\"type\">String</span></p>\n<p>既定値 <code>Cookie,cookie,accept,user-agent,referer</code></p>\n<p>HTTPヘッダー名を指定して収集情報から除外できます。 指定したHTTPヘッダー名の値は収集から除外され、'#'として表示されます。</p>\n</li>\n<li>\n<p><strong>profile_http_parameter_keys</strong> <span class=\"type\">String</span></p>\n<p>設定されたキーに対応するパラメータ情報のみを記録します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 設定しない場合、すべてのパラメータ情報が記録されます。</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>httpc_not_found_ignore</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p>Not Foundエラーが特定の時間(<code>httpc_not_found_ignore_time</code>)に50件以上発生すると、モニタリング検出を無視します。</p>\n</li>\n<li>\n<p><strong>httpc_not_found_ignore_time</strong> <span class=\"type\">Milisecond</span></p>\n<p>既定値<code>300000</code></p>\n<p><code>httpc_not_found_ignore</code>値が<code>true</code>である場合、Not Foundエラーを無視する時間を設定します。</p>\n</li>\n</ul>"
       },
       {
-        "ver": "v0.4.94",
-        "hash": "v0494",
-        "product": "Node.js Agent",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <code>profile_http_parameter_enabled</code>オプションが<code>true</code>に設定された場合</p>",
-        "details": "<ul>\n<li>HTTPリクエストのBodyデータを出力しないように修正</li>\n<li>HTTPパラメータ情報を暗号化し、<em>paramkey.txt</em>値で復号化できるように修正</li>\n</ul>"
-      },
-      {
-        "ver": "v0.4.94",
-        "hash": "v0494",
+        "ver": "v0.4.90",
+        "hash": "v0490",
         "product": "Node.js Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Mongooseモニタリング例外エラーを修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Mongooseトラッキングができない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_98",
+    "ver": "v0.4.98",
+    "date": "2024-07-09",
+    "Lists": [
+      {
+        "ver": "v0.4.98",
+        "hash": "v0498",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> IPアドレス別トランザクション統計を収集するエージェント設定オプションを追加</p>",
+        "details": "<blockquote>\n<p><strong>stat_ipurl_enabled</strong> <span class=\"type\">Boolean</span>、既定値<code>false</code></p>\n</blockquote>"
+      },
+      {
+        "ver": "v0.4.98",
+        "hash": "v0498",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> License、Server Host値を環境変数と<em>whatap.conf</em>ファイルに同時適用できるように修正</p>",
+        "details": "<p>環境変数と<em>whatap.conf</em>すべてのファイルに適用すると、環境変数値に基づいて設定されます。</p>"
+      },
+      {
+        "ver": "v0.4.98",
+        "hash": "v0498",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> ONODE NAME設定時、ONODE値の生成ロジックを修正</p>"
       }
     ]
   },
@@ -95,6 +167,67 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_95",
+    "ver": "v0.4.95",
+    "date": "2024-04-29",
+    "Lists": [
+      {
+        "ver": "v0.4.95",
+        "hash": "v0495",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>プロファイルデータを圧縮転送するためのエージェントオプションを追加</p>",
+        "details": "<p><strong>profile_zip_enabled</strong> <span class=\"type\">Boolean</span></p>"
+      },
+      {
+        "ver": "v0.4.95",
+        "hash": "v0495",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>SQL変数、HTTPクエリの照会に必要なセキュリティキーが作成されたファイル名を変更</p>",
+        "details": "<p><em>paramkey.txt</em> → <em>security.conf</em></p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_94",
+    "ver": "v0.4.94",
+    "date": "2024-03-07",
+    "Lists": [
+      {
+        "ver": "v0.4.94",
+        "hash": "v0494",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <a href=\"http://socket.io\" target=\"_blank\" rel=\"noopener noreferrer\">socket.io</a>モニタリングモジュールを追加</p>",
+        "details": "<p><code>trace_sampling_enabled</code>、<code>trace_sampling_tps</code>オプションを使用して、サンプリングされたデータを確認できます。 <code>trace_ignore_url_prefix</code>オプションに<code>/socket.io</code>経路を追加して追跡できないように設定してください。</p>"
+      },
+      {
+        "ver": "v0.4.94",
+        "hash": "v0494",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>エージェント設定オプションを追加</p>",
+        "details": "<ul>\n<li>\n<p><strong>profile_http_header_ignore_keys</strong> <span class=\"type\">String</span></p>\n<p>既定値 <code>Cookie,cookie,accept,user-agent,referer</code></p>\n<p>HTTPヘッダー名を指定して収集情報から除外できます。 指定したHTTPヘッダー名の値は収集から除外され、'#'として表示されます。</p>\n</li>\n<li>\n<p><strong>profile_http_parameter_keys</strong> <span class=\"type\">String</span></p>\n<p>設定されたキーに対応するパラメータ情報のみを記録します。 複数の項目を登録する場合は、コンマ(,)を区切り文字として使用してください。 設定しない場合、すべてのパラメータ情報が記録されます。</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.4.94",
+        "hash": "v0494",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <code>profile_http_parameter_enabled</code>オプションが<code>true</code>に設定された場合</p>",
+        "details": "<ul>\n<li>HTTPリクエストのBodyデータを出力しないように修正</li>\n<li>HTTPパラメータ情報を暗号化し、<em>paramkey.txt</em>値で復号化できるように修正</li>\n</ul>"
+      },
+      {
+        "ver": "v0.4.94",
+        "hash": "v0494",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Mongooseモニタリング例外エラーを修正</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_88",
     "ver": "v0.4.88",
     "date": "2024-01-11",
@@ -119,87 +252,6 @@
         "product": "Node.js Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> <code>profile_http_header_enabled</code>オプションの値が<code>true</code>であれば、profileのheaders値を表す方式を修正(JSON → key=value\\n)</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_95",
-    "ver": "v0.4.95",
-    "date": "2024-04-29",
-    "Lists": [
-      {
-        "ver": "v0.4.95",
-        "hash": "v0495",
-        "product": "Node.js Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>プロファイルデータを圧縮転送するためのエージェントオプションを追加</p>",
-        "details": "<p><strong>profile_zip_enabled</strong> <span class=\"type\">Boolean</span></p>"
-      },
-      {
-        "ver": "v0.4.95",
-        "hash": "v0495",
-        "product": "Node.js Agent",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code>SQL変数、HTTPクエリの照会に必要なセキュリティキーが作成されたファイル名を変更</p>",
-        "details": "<p><em>paramkey.txt</em> → <em>security.conf</em></p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_98",
-    "ver": "v0.4.98",
-    "date": "2024-07-09",
-    "Lists": [
-      {
-        "ver": "v0.4.98",
-        "hash": "v0498",
-        "product": "Node.js Agent",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> License、Server Host値を環境変数と<em>whatap.conf</em>ファイルに同時適用できるように修正</p>",
-        "details": "<p>環境変数と<em>whatap.conf</em>すべてのファイルに適用すると、環境変数値に基づいて設定されます。</p>"
-      },
-      {
-        "ver": "v0.4.98",
-        "hash": "v0498",
-        "product": "Node.js Agent",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> ONODE NAME設定時、ONODE値の生成ロジックを修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_90",
-    "ver": "v0.4.90",
-    "date": "2024-02-05",
-    "Lists": [
-      {
-        "ver": "v0.4.90",
-        "hash": "v0490",
-        "product": "Node.js Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>エージェント設定オプションを追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>httpc_not_found_ignore</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p>Not Foundエラーが特定の時間(<code>httpc_not_found_ignore_time</code>)に50件以上発生すると、モニタリング検出を無視します。</p>\n</li>\n<li>\n<p><strong>httpc_not_found_ignore_time</strong> <span class=\"type\">Milisecond</span></p>\n<p>既定値<code>300000</code></p>\n<p><code>httpc_not_found_ignore</code>値が<code>true</code>である場合、Not Foundエラーを無視する時間を設定します。</p>\n</li>\n</ul>"
-      },
-      {
-        "ver": "v0.4.90",
-        "hash": "v0490",
-        "product": "Node.js Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Mongooseトラッキングができない問題を修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_97",
-    "ver": "v0.4.97",
-    "date": "2024-06-03",
-    "Lists": [
-      {
-        "ver": "v0.4.97",
-        "hash": "v0497",
-        "product": "Node.js Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\">New</code>Kubernetes環境の使用可否を環境変数として適用可能</p>"
       }
     ]
   },
