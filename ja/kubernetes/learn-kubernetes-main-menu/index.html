@@ -2,7 +2,7 @@
 <html lang="ja-JP" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-kubernetes/learn-kubernetes-main-menu" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.5.1">
+<meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">メインメニュー | WhaTap Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" name="twitter:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" property="og:url" content="https://docs.whatap.io/ja/kubernetes/learn-kubernetes-main-menu"><meta data-rh="true" property="og:locale" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="ko_KR"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed"><meta data-rh="true" name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="メインメニュー | WhaTap Docs"><meta data-rh="true" name="description" content="Kubernetes 監視サービスのメイン メニューについて説明します。"><meta data-rh="true" property="og:description" content="Kubernetes 監視サービスのメイン メニューについて説明します。"><meta data-rh="true" name="keywords" content="Kubernetes,Kubernetesモニタリング"><link data-rh="true" rel="icon" href="/ja/img/whatap-favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.whatap.io/ja/kubernetes/learn-kubernetes-main-menu"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/kubernetes/learn-kubernetes-main-menu" hreflang="ko-KR"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/en/kubernetes/learn-kubernetes-main-menu" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/ja/kubernetes/learn-kubernetes-main-menu" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/kubernetes/learn-kubernetes-main-menu" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/ja/blog/rss.xml" title="WhaTap Docs RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/ja/blog/atom.xml" title="WhaTap Docs Atom Feed">
 
@@ -23,9 +23,9 @@
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E46TQ5VSCT",{anonymize_ip:!0})</script>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
-<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/ja/assets/css/styles.387b4b16.css">
-<script src="/ja/assets/js/runtime~main.44035016.js" defer="defer"></script>
-<script src="/ja/assets/js/main.5ae202bb.js" defer="defer"></script>
+<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/ja/assets/css/styles.92bd78cc.css">
+<script src="/ja/assets/js/runtime~main.25c57847.js" defer="defer"></script>
+<script src="/ja/assets/js/main.ee8d342e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
@@ -41,12 +41,20 @@
 <p>モニタリングサービスは、ユーザーがKubernetesを運用するすべてのプロセスに役立てたいと考えています。リアルタイムで問題状況をモニタリングして障害状況を知らせ、問題解決に役立つモニタリングの基本的な機能だけでなく、リソースを分配しインフラコストを削減する運用業務時、またはKubernetesに統合された複数のマイクロサービスとそれに関連する業務部門間の協業ツールとしてモニタリングサービスが活用できます。</p>
 <p>Kubernetesには多くの用途があるため、運用環境やビジネス状況に応じてユーザーのモニタリングのニーズも多様です。そのために、WhaTapのモニタリングサービスは、アプリケーショントランザクション
 やリソース使用量、ログやイベントなど、Kubernetesが管理または生成するすべての情報を収集および制御する機能を提供します。</p>
+<p>次のチュートリアル映像でWhaTapのKubernetesモニタリングを体験してみてください。</p>
+<div class="video-container"><iframe width="800" height="500" type="text/html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube.com/embed/htQrFeypRpc"></iframe></div>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="リアルタイムモニタリング">リアルタイムモニタリング<a href="#リアルタイムモニタリング" class="hash-link" aria-label="リアルタイムモニタリングへの直接リンク" title="リアルタイムモニタリングへの直接リンク">​</a></h2><ul>
-<li>マルチクラウド、ハイブリッドクラウド上のKubernetes統合モニタリング</li>
-<li>コンテナマップ - ノード（ホスト）、コンテナ、アプリケーション、ログ、イベント情報を提供する動的ダッシュボード<!-- -->
+<li>
+<p>マルチクラウド、ハイブリッドクラウド上のKubernetes統合モニタリング</p>
+</li>
+<li>
+<p>コンテナマップ - ノード（ホスト）、コンテナ、アプリケーション、ログ、イベント情報を提供する動的ダッシュボード</p>
 <ul>
-<li>Namespace、Deployment、ReplicaSet、PodなどのKubernetesの構成要素を個別/グループ化して表示</li>
-<li>個別対象 / ユーザー指定グループ別の情報をリアルタイムで確認<!-- -->
+<li>
+<p>Namespace、Deployment、ReplicaSet、PodなどのKubernetesの構成要素を個別/グループ化して表示</p>
+</li>
+<li>
+<p>個別対象 / ユーザー指定グループ別の情報をリアルタイムで確認</p>
 <ul>
 <li>コンテナおよびコアリソースのメトリクス別リアルタイム状況を3段階の色で区分(Normal、 Warning、 Critical)</li>
 <li>コンテナに割り当てられたCPU Limit、Request及び実使用量（core）</li>
@@ -61,16 +69,19 @@
 </li>
 </ul>
 </li>
-<li>リソースモニタリング - コンテナおよびノードの詳細なモニタリング<!-- -->
+<li>
+<p>リソースモニタリング - コンテナおよびノードの詳細なモニタリング</p>
 <ul>
-<li>コンテナ<!-- -->
+<li>
+<p>コンテナ</p>
 <ul>
 <li>すべてのコンテナリストと使用率の確認</li>
 <li>個別コンテナのCPU、Memory、Disk(Volume)、Network使用率</li>
 <li>コンテナに接続されたボリューム情報</li>
 </ul>
 </li>
-<li>ノード<!-- -->
+<li>
+<p>ノード</p>
 <ul>
 <li>すべてのノードリストと使用率の確認</li>
 <li>個別ノード(ホスト)のCPU、Memory、Disk、Network使用率</li>
@@ -78,16 +89,18 @@
 </li>
 </ul>
 </li>
-<li>アプリケーションモニタリング - Kubernetes上でコンテナ化されたアプリケーションモニタリング<!-- -->
+<li>
+<p>ア プリケーションモニタリング - Kubernetes上でコンテナ化されたアプリケーションモニタリング</p>
 <ul>
 <li>対応アプリケーション：Java、Node.js、Python</li>
 <li>フィルタリングを使用した特定アプリケーションのモニタリング</li>
-<li>進行中のトランザクション情報、終了したトランザクション情報の モニタリング</li>
+<li>進行中のトランザクション情報、終了したトランザクション情報のモニタリング</li>
 <li>アプリケーショングループおよび個別アプリケーションのTPSおよび応答時間の推移</li>
 <li>5分間の集計ユーザー数の推移</li>
 </ul>
 </li>
-<li>Kubernetesマスターのメタ情報を確認<!-- -->
+<li>
+<p>Kubernetesマスターのメタ情報を確認</p>
 <ul>
 <li>ETCDに保存されているマスターメタ情報はWhaTapコンソールで確認できます。</li>
 <li>主要な Kubernetes コンポーネントの一覧と各コンポーネントのいくつかの詳細な仕様 (YAML) 情報</li>
@@ -95,37 +108,73 @@
 </li>
 </ul></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="性能分析">性能分析<a href="#性能分析" class="hash-link" aria-label="性能分析への直接リンク" title="性能分析への直接リンク">​</a></h2><ul>
-<li>Kubernetes Podピーク使用量および初期化時間</li>
-<li>期間別メモリ不足発生コンテナ情報とメモリチャート</li>
-<li>アプリケーション(APM)と同一機能<!-- -->
+<li>
+<p>Kubernetes Podピーク使用量および初期化時間</p>
+</li>
+<li>
+<p>期間別メモリ不足発生コンテナ情報とメモリチャート</p>
+</li>
+<li>
+<p>アプリケーション(APM)と同一機能</p>
 <ul>
-<li>メトリクスチャート</li>
-<li>MSA分析</li>
-<li>スタック</li>
+<li>
+<p>メトリクスチャート</p>
+</li>
+<li>
+<p>MSA分析</p>
+</li>
+<li>
+<p>スタック</p>
+</li>
 </ul>
 </li>
 </ul></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="イベント通知">イベント通知<a href="#イベント通知" class="hash-link" aria-label="イベント通知への直接リンク" title="イベント通知への直接リンク">​</a></h2><ul>
-<li>メール、SMS、SNS(Telegram、Slack) 送信</li>
-<li>イベント期間としきい値設定によるイベント発生</li>
-<li>無音設定時間登録による同一イベント通知の抑制機能</li>
-<li>CPU、Memory、Disk通知機能</li>
-<li>リアルタイムトランザクション数のしきい値設定による通知</li>
-<li>トランザクションエラー数のしきい値設定による通知</li>
-<li>応答時間のしきい値のトランザクション数による通知</li>
-<li>応答時間分布の水平・垂直分布パターンによる通知</li>
+<li>
+<p>メール、SMS、SNS(Telegram、Slack) 送信</p>
+</li>
+<li>
+<p>イベント期間としきい値設定によるイベント発生</p>
+</li>
+<li>
+<p>無音設定時間登録による同  一イベント通知の抑制機能</p>
+</li>
+<li>
+<p>CPU、Memory、Disk通知機能</p>
+</li>
+<li>
+<p>リアルタイムトランザクション数のしきい値設定による通知</p>
+</li>
+<li>
+<p>トランザクションエラー数のしきい値設定による通知</p>
+</li>
+<li>
+<p>応答時間のしきい値のトランザクション数による通知</p>
+</li>
+<li>
+<p>応答時間分布の水平・垂直分布パターンによる通知</p>
+</li>
 </ul></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="統計レポート">統計/レポート<a href="#統計レポート" class="hash-link" aria-label="統計/レポートへの直接リンク" title="統計/レポートへの直接リンク">​</a></h2><ul>
-<li>日次/週次レポート：リアルタイムユーザー、TPS、応答時間、CPU推移など</li>
-<li>月次レポート<!-- -->
+<li>
+<p>日次/週次レポート：リアルタイムユーザー、TPS、応答時間、CPU推移など</p>
+</li>
+<li>
+<p>月次レポート</p>
 <ul>
 <li>リアルタイムユーザー、TPS、レスポンス時間、CPU推移など</li>
 <li>毎日の訪問者数の推移、毎月の訪問者数、顧客ロイヤルティ指標</li>
 </ul>
 </li>
-<li>アプリケーション単位の日次レポート</li>
-<li>アプリケーションピーク性能比較レポート：前日・前週のピークタイムとの比較</li>
-<li>Pod別の週次CPU、メモリレポート</li>
+<li>
+<p>アプリケーション単位の日次レポート</p>
+</li>
+<li>
+<p>アプリケーションピーク性能比較レポート：前日・前週のピークタイムとの比較</p>
+</li>
+<li>
+<p>Pod別の週次CPU、メモリレポート</p>
+</li>
 </ul></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">フィードバック</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文書検索"><a class="pagination-nav__link pagination-nav__link--prev" href="/ja/kubernetes/uninstall-agent"><div class="pagination-nav__sublabel">前へ</div><div class="pagination-nav__label">エージェント削除</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ja/kubernetes/container-map"><div class="pagination-nav__sublabel">次へ</div><div class="pagination-nav__label">コンテナマップ</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/ja/kubernetes/learn-kubernetes-main-menu" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">共有</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">フィードバック</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
