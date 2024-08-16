@@ -1,547 +1,666 @@
 [
-{
-  "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
-  "ver": "Service 2.7.4",
-  "date": "2024-07-29",
-  "Lists": [
-    {
-      "ver": "Service 2.7.4",
-      "hash": "service-274",
-      "product": "공통",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Integrated Flex Board</span> 메뉴에서 읽기 전용으로 공유 받은 대시보드의 그룹 위젯에 포함된 위젯들이 데이터를 호출하지 못하는 문제 수정</p>"
-    }
-  ]
-},
-{
-  "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
-  "ver": "Service 2.7.3",
-  "date": "2024-07-26",
-  "Lists": [
-    {
-      "ver": "Service 2.7.3",
-      "hash": "service-273",
-      "product": "Database",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code class=\"my\">V1</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span> 메뉴에서 지표 선택 창이 나타나지 않는 문제 수정</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.3",
-      "hash": "service-273",
-      "product": "Database",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span> 메뉴에서 권한 관련 안내 문구 추가</p>",
-      "category": "MySQL"
-    }
-  ]
-},
-{
-  "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
-  "ver": "Service 2.7.2",
-  "date": "2024-07-25",
-  "Lists": [
-    {
-      "ver": "Service 2.7.2",
-      "hash": "service-272",
-      "product": "Application",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Hitmap</span> 메뉴의 <span class=\"uitext\">Application</span> 옵션에서 2개 이상의 에이전트를 선택할 수 없는 문제 수정</p>"
-    }
-  ]
-},
-{
-  "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
-  "ver": "Service 2.7.1",
-  "date": "2024-07-24",
-  "Lists": [
-    {
-      "ver": "Service 2.7.1",
-      "hash": "service-271",
-      "product": "Kubernetes",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span> 메뉴에서 매핑된 컨테이너 정보가 없는 경우 경고 메시지가 표시되지 않는 버그 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.1",
-      "hash": "service-271",
-      "product": "Kubernetes",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> 메뉴의 <span class=\"uitext\">Resource relations</span> 탭에서 적절하지 않은 서비스가 표시되는 버그 수정</p>"
-    }
-  ]
-},
-{
-  "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
-  "ver": "Service 2.7.0",
-  "date": "2024-07-24",
-  "Lists": [
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "신규 기능 출시",
-      "type": "New",
-      "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle V2</strong> 서비스 시작!!</p>",
-      "category": "Database",
-      "details": "<ul>\n<li>\n<p><span class=\"uitext\">Dashboard</span> 메뉴의 UI 및 기능 대폭 개선했습니다.</p>\n</li>\n<li>\n<p><span class=\"uitext\">Dashboard</span> 메뉴에서 데이터베이스의 성능 지표 정보를 확인할 수 있습니다.</p>\n</li>\n<li>\n<p>데이터베이스 로그를 검색하고 추이를 확인할 수 있는 <span class=\"uitext\">Log</span> 메뉴를 추가했고, 로그 관련 알림을 설정할 수 있습니다.</p>\n</li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "신규 기능 출시",
-      "type": "New",
-      "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle Pro</strong> 서비스 시작!!</p>",
-      "category": "Database",
-      "details": "<p>Direct Memory Access(DMA) 기술을 활용한 접근 방식으로 서버의 메모리에 직접 접근하여 필요한 데이터를 추출합니다. 이 방법은 데이터베이스 서버에 부하를 최소화하거나 발생시키지 않습니다. 메모리에 직접 접근함으로써 데이터를 거의 실시간으로 수집할 수 있으며, 시스템의 성능을 더욱 세밀하게 모니터링하고 문제 발생 시 즉시 대응할 수 있습니다.</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "신규 기능 출시",
-      "type": "New",
-      "desc": "<p><code class=\"New\" type=\"1\">New</code> Kubernetes 클러스터 내에서 실행 중인 모든 서비스들의 상태와 정보를 종합적으로 제공하는 <span class=\"uitext\">Service List</span> 메뉴 추가</p>",
-      "category": "Kubernetes"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "신규 기능 출시",
-      "type": "New",
-      "desc": "<p><code class=\"New\" type=\"1\">New</code> 노드 관점에서 디스크 모니터링을 위한 <span class=\"uitext\">Node Disk List</span> 메뉴 추가</p>",
-      "category": "Kubernetes"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 사이드 메뉴에서 <span class=\"uitext\">All projects</span>를 선택해 프로젝트 목록을 펼치면, 프로젝트 검색 입력란에 자동 포커스되는 기능 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 사이드 메뉴의 통합 검색에서 에이전트를 IP 주소로 검색할 수 있는 기능 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Report</span> 메뉴의 <span class=\"uitext\">Reservation of Report Email</span> 창에서 시간 문구를 타임존이 포함된 문구로 안내하도록 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 사이드 메뉴의 조직 목록에 조직 아이콘 노출하도록 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Manage Accounts</span> 또는 <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Notifications</span> 메뉴에서 모바일 기기 알림 테스트 시 표시되는 성공 메시지 문구 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event History</span> 메뉴의 <span class=\"uitext\">Select Column</span> 팝오버에서 <span class=\"uitext\">Initialize(default)</span> 버튼 동작 버그 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Notifications</span> 메뉴에서 사용자 본인 계정이 아닌 다른 사용자의 모바일 기기 테스트 및 삭제 버튼을 선택할 수 없도록 비활성화</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Project Member</span> 메뉴에서 테마 변경 시 이름/소속 태그 색상이 반영되지 않는 문제 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Deprecated",
-      "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> 메뉴의 <span class=\"uitext\">Anomaly detection</span> 탭에서 이벤트를 추가 또는 수정할 때 오브젝트 병합 선택 UI 제거</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "공통",
-      "type": "Deprecated",
-      "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">Integrated Dashboard</span> / <span class=\"uitext\">Integrated Metrics Dashboard</span></p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 다음 메뉴 경로에서 조회 내용을 CSV 파일 다운로드 기능 추가</p>",
-      "details": "<ul>\n<li><span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Library Version</span></li>\n<li><span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Runtime ENV. Variable</span></li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent CONF.</span> 메뉴에서 경로에서 선택한 에이전트의 에이전트 설정(<em>whatap.conf</em>) 파일 다운로드 기능 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Thread List/Dump</span> 메뉴의 테이블에서 CPU 시간 증가량을 표시하는 컬럼 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Trace analysis</span> 창의 <span class=\"uitext\">Table view</span> 및 <span class=\"uitext\">Tree view</span> 탭에서 트랜잭션 호스트 정보 없을 경우 포트 표시하지 않도록 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Trace analysis</span> 창의 <span class=\"uitext\">Multi-transaction</span> 탭에서 호스트 정보가 없으면 트랜잭션을 노출하지 않도록 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Instance Performance Management</span>의 하위 메뉴에서 에이전트를 선택한 상태로 다른 하위 메뉴로 이동하면 에이전트 선택 사항을 유지하도록 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Heap Dump</span> 메뉴에서 힙 덤프 확보 관련 안내 메시지가 항상 표시되도록 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Caller</span> 메뉴의 CSV 다운로드 기능으로 다운로드할 수 있는 최대 건수 변경(10만 건 → 1만 건)</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">Statistics</span> 하위 메뉴에서 검색 입력란의 너비 증가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <img decoding=\"async\" loading=\"lazy\" alt=\"사이트맵 아이콘\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">Sitemap</span> &gt; <span class=\"uitext\">Topology</span> &gt; <span class=\"uitext\">Netstat Topology</span> 메뉴의 예시 이미지를 영문으로 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> 메뉴의 <em><strong>TOO_MANY_ACTX</strong></em> 이벤트 템플릿 조건 변경</p>",
-      "details": "<ul>\n<li>\n<p><strong>기존</strong>: <code>endsWith(okindName, 'ote-virtual-0') &amp;&amp; startsWith(onodeName, 'node-0') &amp;&amp; type == 'java'</code></p>\n</li>\n<li>\n<p><strong>변경</strong>: <code>active_tx_count &gt; 100</code></p>\n</li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Transaction Map</span> 메뉴의 <span class=\"uitext\">Top 30</span> 목록에서 키보드 이동 시 발생하는 딜레이 문제 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Transaction Map</span> 메뉴에서 과거 시점으로 필터를 적용한 후 실시간 조회로 변경하면 이전 조회 시점의 필터가 적용되는 문제 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Active Transaction</span> 메뉴에서 테이블의 스크롤이 동작하지 않는 문제 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>Node.js</strong> 상품의 <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span> 메뉴에서 에이전트 다운로드 관련 문구 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span> 메뉴에서 다음 위젯 표기 수정</p>",
-      "details": "<ul>\n<li>\n<p>Heap 크기(<code>heap_tot</code>) → <span class=\"uitext\">Heap 총 사용량</span>(<code>heap_tot</code>)</p>\n</li>\n<li>\n<p>Heap 최대 사용량(<code>heap_max</code>) → <span class=\"uitext\">Heap 최대 크기</span>(<code>heap_max</code>)</p>\n</li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Deprecated",
-      "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> 메뉴에서 중복되는 <strong>WARNING_OLD_GENARATION_GC</strong> 이벤트 템플릿 삭제</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Deprecated",
-      "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> 메뉴에서 불필요한 <strong>WARNING_TPS_DELTA</strong> 이벤트 템플릿 삭제</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Deprecated",
-      "desc": "<p><code class=\"Deprecated\">Deprecated</code> 구버전의 <span class=\"uitext\">Application dashboard</span> 제거</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Application",
-      "type": "Deprecated",
-      "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span> 메뉴의 안내 메시지 창 제거</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Server",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server List</span> 메뉴에서 테이블의 <span class=\"uitext\">Private IP</span> 컬럼 데이터 표시 방식 변경</p>",
-      "details": "<ul>\n<li>\n<p>IP 별 개행되어 표시하던 방식을 한 줄로 표시하도록 수정</p>\n</li>\n<li>\n<p>컬럼 너비에 따라 말 줄임표(…) 처리 추가</p>\n</li>\n<li>\n<p>127.0.0.1을 가장 나중에 표시하고 Private IP를 먼저 노출하도록 변경</p>\n</li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Server",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Detail</span> 메뉴의 <span class=\"uitext\">Memory usage</span> <span class=\"uitext\">Detail</span>에서 3시간 이상 조회하면 <span class=\"uitext\">Memory swap used</span> 차트가 표시되지 않는 문제 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Server",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event History</span> 메뉴에서 검색 버튼을 선택할 때, 실제 검색 로직을 수행하는 경우에만 테이블 내부에 로딩 UI를 표시하도록 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> 메뉴의 요약 보기에서 <span class=\"uitext\">Target information</span> 탭에 <span class=\"uitext\">Container Summary Analysis</span> 기능 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> 메뉴의 요약 보기에서 <span class=\"uitext\">Target information</span> 및 <span class=\"uitext\">Resource relations</span> 탭에 <strong>Service</strong> 정보 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> 메뉴의 <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Search Log</span> 탭(요약 또는 상세 보기)에서 <span class=\"uitext\">Live Tail</span> 메뉴로 이동할 수 있는 링크 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Container</span> &gt; <span class=\"uitext\">Container List</span> 메뉴에서 다음 컬럼의 각 항목에 관련 목록 메뉴로 이동할 수 있는 버튼 추가</p>",
-      "details": "<ul>\n<li><span class=\"uitext\">Deployment</span> → <span class=\"uitext\">Deployment List</span></li>\n<li><span class=\"uitext\">Pod</span> → <span class=\"uitext\">Pod List</span></li>\n<li><span class=\"uitext\">Image</span>, <span class=\"uitext\">ImageId</span> → <span class=\"uitext\">Container Images</span></li>\n<li><span class=\"uitext\">ApplicationName</span> → <span class=\"uitext\">Container Application List</span></li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span> 메뉴에서 다음 컬럼의 각 항목에 관련 목록 메뉴로 이동할 수 있는 버튼 추가</p>",
-      "details": "<ul>\n<li><span class=\"uitext\">CotainerId</span> → <span class=\"uitext\">Container List</span></li>\n<li><span class=\"uitext\">ContainerName</span> → <span class=\"uitext\">Container List</span></li>\n<li><span class=\"uitext\">Pod</span> → <span class=\"uitext\">Pod List</span></li>\n<li><span class=\"uitext\">Node</span> → <span class=\"uitext\">Node List</span></li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span> 메뉴의 <span class=\"uitext\">Resource</span> 그룹에 <span class=\"uitext\">Image</span> 컬럼 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Kubernetes Event</span> 메뉴의 이벤트 목록 테이블에 <span class=\"uitext\">Time the event first occurred</span>과 <span class=\"uitext\">Number of events</span> 컬럼 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Detail</span> 메뉴에 파드 목록 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Trace analysis</span> 창의 <span class=\"uitext\">Record summary</span> 탭에서 <strong>Container Id</strong>, <strong>Pod Name</strong> 정보를 제공하고, 해당 정보를 클릭하면 각각 컨테이너 목록, 파드 목록 페이지로 이동하는 기능 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 쿠버네티스 에이전트가 비활성화되면 사용자가 바로 인지할 수 있도록 화면 상단에 에이전트 상태 표시 추가</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Detail</span> 메뉴의 컨테이너 목록에서 컨테이너 상세 버튼의 UI 개선</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> 메뉴의 요약 또는 상세 보기에서, <strong>Node.js</strong> 애플리케이션 에이전트가 설치된 블록은 <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Search Log</span> 탭에서 <strong>Application 로그</strong>를 표시하지 않도록 수정(<strong>Node.js</strong> 상품 로그 모니터링 미지원)</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> 메뉴에 처음 진입하여 Pod 뷰 또는 컨테이너 뷰로 전환할 때 일시적으로 데이터가 잘못 출력되는 문제 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Kubernetes",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Detail</span> 메뉴에서 상단 지표 타이틀 미표기 현상 수정</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 특정 날짜를 기준으로 설정된 시간대의 SQL의 추이를 비교하고 등락을 확인할 수 있는 <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top SQL Comparison</span> 메뉴 추가</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 플랜 조회를 위해 쿼리를 선택하면 표시되는 <span class=\"uitext\">SQL details</span> 창에서 Full Scan 부분을 빨간색으로 표시하도록 변경</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 다음 메뉴 경로의 화면 상단 옵션바에 데이터베이스 이름을 표시하도록 수정</p>",
-      "category": "공통",
-      "details": "<ul>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></li>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Slow Query</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Dead Lock</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Counts Trend Comparison</span></li>\n<li><span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> &gt; <span class=\"uitext\">Database</span></li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span> 메뉴에서 플랜 조회 시 표시되는 오브젝트 상세 창에 에러 처리 추가</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span> 메뉴의 XOS2 지표 대체 안내 메시지가 더 이상 나타나지 않도록 변경</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span> 메뉴에서 일부 위젯의 이름 변경</p>",
-      "category": "공통",
-      "details": "<p><strong>Long Active Sessions</strong> → <em><strong>Long Active Session Count</strong></em></p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> 다음 메뉴 경로에서 <span class=\"uitext\">Active sessions</span> 섹션의 항목을 선택하면 나타나는 <span class=\"uitext\">Session detail</span> 창을 통해 <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Session History</span> 메뉴로 이동하면 해당 세션이 수행되는 시간의 전후 30분을 기본 조회하도록 변경</p>",
-      "category": "공통",
-      "details": "<ul>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></li>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span></li>\n</ul>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> 메뉴에서 <span class=\"uitext\">Agent Inactive Warning</span> 옵션의 기본 시간을 30초에서 1분으로 변경</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span> 메뉴에서 소수점 값 기준으로 오름차순 또는 내림차순 정렬되지 않는 문제 수정</p>",
-      "category": "공통"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Database",
-      "type": "Feature",
-      "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span> 메뉴에 DB가 기동한 지 얼마나 시간이 지났는지 확인할 수 있는 <em><strong>Uptime</strong></em> 위젯 추가</p>",
-      "category": "PostgreSQL / MySQL"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "URL",
-      "type": "Changed",
-      "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> URL 목록 안내 문구 디자인 변경</p>"
-    },
-    {
-      "ver": "Service 2.7.0",
-      "hash": "service-270",
-      "product": "Log",
-      "type": "Fixed",
-      "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Trend</span> 메뉴에서 조회 시간을 변경했을 때 조회 데이터가 없으면 이전 데이터가 남아 있는 문제 수정</p>"
-    }
-  ]
-}
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.12",
+    "date": "2024-08-12",
+    "Lists": [
+      {
+        "ver": "Service 2.7.12",
+        "hash": "service-2712",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the column settings are not reflected when downloading a CSV file after adding columns through <span class=\"uitext\">Column Settings</span> in the submenu of <span class=\"uitext\">Statistics</span>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.11",
+    "date": "2024-08-09",
+    "Lists": [
+      {
+        "ver": "Service 2.7.11",
+        "hash": "service-2711",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, fixed the notification error of the composite metrics platform (<span class=\"uitext\">TPS has changed by more than 30% compared to the previous week.</span>) over the TPS changes.</p>"
+      },
+      {
+        "ver": "Service 2.7.11",
+        "hash": "service-2711",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the problem where the values for holder type and waiter type do not appear in the following menu paths:</p>",
+        "category": "Oracle V2, Oracle Pro",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Lock tree</span> table in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.10",
+    "date": "2024-08-07",
+    "Lists": [
+      {
+        "ver": "Service 2.7.10",
+        "hash": "service-2710",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the problem where the holder and waiter for the same sid are displayed as Lock in the following menu paths:</p>",
+        "category": "Oracle V2",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Lock tree</span> table in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.9",
+    "date": "2024-08-07",
+    "Lists": [
+      {
+        "ver": "Service 2.7.9",
+        "hash": "service-279",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the original log text is not displayed when proceeding with <span class=\"uitext\">Column Settings</span> in the following menu paths:</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span></li>\n<li><span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Trend</span></li>\n<li><span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Search</span></li>\n<li><span class=\"uitext\">Trace analysis</span> &gt; <span class=\"uitext\">Transaction log</span></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.7",
+    "date": "2024-08-05",
+    "Lists": [
+      {
+        "ver": "Service 2.7.7",
+        "hash": "service-277",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified not to perform formatting when a library formatting error occurs on the <span class=\"uitext\">SQL details</span> window.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.6",
+    "date": "2024-08-02",
+    "Lists": [
+      {
+        "ver": "Service 2.7.6",
+        "hash": "service-276",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> If the query contains true or false in <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL statistics</span>, fixed the whiteout error when <span class=\"uitext\">SQL details</span> is viewed.</p>"
+      },
+      {
+        "ver": "Service 2.7.6",
+        "hash": "service-276",
+        "product": "Application, Database, Server, Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Laboratory</span> &gt; <span class=\"uitext\">Alert Message</span>, fixed the issue where alert settings cannot be copied to the projects that have the setting role within the organization.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.5",
+    "date": "2024-08-01",
+    "Lists": [
+      {
+        "ver": "Service 2.7.5",
+        "hash": "service-275",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Container summary analysis</span> of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, fixed the image resource information error.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.4",
+    "date": "2024-07-29",
+    "Lists": [
+      {
+        "ver": "Service 2.7.4",
+        "hash": "service-274",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the widgets included in a group widget on the dashboard shared as read-only in <span class=\"uitext\">Integrated Flex Board</span> cannot call data.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.3",
+    "date": "2024-07-26",
+    "Lists": [
+      {
+        "ver": "Service 2.7.3",
+        "hash": "service-273",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <code class=\"my\">V1</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, fixed the issue where the metric selection window does not appear.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.3",
+        "hash": "service-273",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, added the guidance text regarding the roles.</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.2",
+    "date": "2024-07-25",
+    "Lists": [
+      {
+        "ver": "Service 2.7.2",
+        "hash": "service-272",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the <span class=\"uitext\">Application</span> option of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Hitmap</span>, fixed the issue where multiple agents cannot be selected.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.1",
+    "date": "2024-07-24",
+    "Lists": [
+      {
+        "ver": "Service 2.7.1",
+        "hash": "service-271",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span>, fixed the bug where warning messages are not displayed when there is no mapped container.</p>"
+      },
+      {
+        "ver": "Service 2.7.1",
+        "hash": "service-271",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the <span class=\"uitext\">Resource relations</span> tab of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, fixed the bug where an improper service appears.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.0",
+    "date": "2024-07-24",
+    "Lists": [
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle V2</strong> services now launched!!</p>",
+        "category": "Database",
+        "details": "<ul>\n<li>\n<p>The UIs and features of <span class=\"uitext\">Dashboard</span> have been greatly improved.</p>\n</li>\n<li>\n<p>You can see the database performance metrics in <span class=\"uitext\">Dashboard</span>.</p>\n</li>\n<li>\n<p>Added the <span class=\"uitext\">Log</span> menu that can search for database logs and their trend and configure the log notifications.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>Oracle Pro</strong> services now launched!!</p>",
+        "category": "Database",
+        "details": "<p>This approach uses the Direct Memory Access (DMA) technique to directly access the server's memory and extract the required data. This method minimizes or does not cause load on the database server. By accessing memory directly, data can be collected almost in real time, allowing to monitor the system performance more precisely and to immediately respond upon any problem.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">Service List</span> menu that provides comprehensive status and information on all services running in the Kubernetes cluster.</p>",
+        "category": "Kubernetes"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">Node Disk List</span> menu for disk monitoring from the node perspective.</p>",
+        "category": "Kubernetes"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature that automatically focuses on the project search bar when you select <span class=\"uitext\">All projects</span> from the side menu to expand the project list.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to search for agents by IP address through the integrated search in the side menu.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the time text in the <span class=\"uitext\">Report</span> window of the <span class=\"uitext\">Reservation of Report Email</span> menu to the text that includes the time zone.</p>",
+        "details": "<blockquote>\n<p>e.g. 04<del>06 → (UTC+9) 04</del>06</p>\n</blockquote>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed to expose the organization icon in the organization list on the side menu.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Manage Accounts</span> or <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Notifications</span>, changed the success message displayed when testing mobile device notifications.</p>",
+        "details": "<blockquote>\n<p><span class=\"b500\">Successfully connected to the mobile device.</span> → <span class=\"uitext\">A test message was requested to be sent to a mobile device.</span></p>\n</blockquote>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the <span class=\"uitext\">Select Column</span> popover of <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event History</span>, fixed the <span class=\"uitext\">Initialize(default)</span> button action bug.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Notifications</span>, disabled the feature to select the Test and Delete buttons for mobile devices of the users other than your account.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Project Member</span>, fixed the issue where the name/organization tag colors are not reflected when changing themes.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> In the <span class=\"uitext\">Anomaly detection</span> tab of <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, removed the object merge selection UI when adding or modifying events.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Common",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">Integrated Dashboard</span> / <span class=\"uitext\">Integrated Metrics Dashboard</span></p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the CSV file download feature for the search content in the following menu paths.</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Library Version</span></li>\n<li><span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Runtime ENV. Variable</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent CONF.</span>, added the feature to download the agent configuration file (<em>whatap.conf</em>) of the agent selected in the path.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the table of <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Thread List/Dump</span>, added the column to display the increased CPU time.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the <span class=\"uitext\">Table view</span> and <span class=\"uitext\">Tree view</span> tabs on the <span class=\"uitext\">Trace analysis</span> window, changed the port not to be displayed if there is no transaction host information.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the <span class=\"uitext\">Multi-transaction</span> tab on the <span class=\"uitext\">Trace analysis</span> window, changed not to expose transactions when there is no host information.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the menus under <span class=\"uitext\">Instance Performance Management</span>, modified to retain agent selection when moving to another submenu with the agent selected.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Heap Dump</span>, changed the guidance message regarding the dump heap to be displayed always.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the maximum number of cases (100,000 → 10,000) that can be downloaded using the CSV download feature in <span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Caller</span>.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Increased the width of the search bar under the <span class=\"uitext\">Statistics</span> menu.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> In <img decoding=\"async\" loading=\"lazy\" alt=\"Sitemap icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">Sitemap</span> &gt; <span class=\"uitext\">Topology</span> &gt; <span class=\"uitext\">Netstat Topology</span>, changed the example image to English.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, changed the conditions of the <em><strong>TOO_MANY_ACTX</strong></em> event template.</p>",
+        "details": "<ul>\n<li>\n<p><strong>Previous</strong>: <code>endsWith(okindName, 'ote-virtual-0') &amp;&amp; startsWith(onodeName, 'node-0') &amp;&amp; type == 'java'</code></p>\n</li>\n<li>\n<p><strong>Change</strong>: <code>active_tx_count &gt; 100</code></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> In the <span class=\"uitext\">Top 30</span> list of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Transaction Map</span>, fixed the delay issue when using the keyboard for movement.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Transaction Map</span>, fixed the issue where when applying a filter to a past time point and then changing to a real-time query, the filter for the previous query is applied.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Active Transaction</span>, fixed the problem where scrolling in the table does not work.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span> for the <strong>Node.js</strong> products, modified the text related to the agent downloading.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span>, modified the display of the following widget notations.</p>",
+        "details": "<ul>\n<li>\n<p>Heap total(<code>heap_tot</code>) → <span class=\"uitext\">Heap total use</span>(<code>heap_tot</code>)</p>\n</li>\n<li>\n<p>Heap max usage(<code>heap_max</code>) → <span class=\"uitext\">Heap max size</span>(<code>heap_max</code>)</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, removed the duplicate <strong>WARNING_OLD_GENARATION_GC</strong> event templates.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, removed the unnecessary <strong>WARNING_TPS_DELTA</strong> event template.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> Removed <span class=\"uitext\">Application dashboard</span> of the old version.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Application",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>, removed the guide message window.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server List</span>, changed the display method of the <span class=\"uitext\">Private IP</span> column in the table.</p>",
+        "details": "<ul>\n<li>\n<p>Modified the display method of each IP with a line break to display IPS in one line.</p>\n</li>\n<li>\n<p>Added ellipsis (…) depending on the column width.</p>\n</li>\n<li>\n<p>Changed to display 127.0.0.1 last and expose the private IP first.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> Fixed the issue where the <span class=\"uitext\">Memory swap used</span> chart does not appear, if search is performed for more than 3 hours in <span class=\"uitext\">Memory usage</span> <span class=\"uitext\">Detail</span> of the <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Detail</span> menu.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event History</span>, when the Search button is selected, modified to display the loading UI inside the table only when actual search logic is performed.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the summary view of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, added the <span class=\"uitext\">Container summary analysis</span> feature under the <span class=\"uitext\">Target information</span> tab.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the summary view of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, added the <strong>service</strong> information under the <span class=\"uitext\">Target information</span> and <span class=\"uitext\">Resource relations</span> tabs.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Search Log</span> tab (summary or detailed view) of the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> menu, added the link to go to the <span class=\"uitext\">Live Tail</span> menu.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Container</span> &gt; <span class=\"uitext\">Container List</span>, added the button to go to the list menu for the following columns.</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">Deployment</span> → <span class=\"uitext\">Deployment List</span></li>\n<li><span class=\"uitext\">Pod</span> → <span class=\"uitext\">Pod List</span></li>\n<li><span class=\"uitext\">Image</span>, <span class=\"uitext\">ImageId</span> → <span class=\"uitext\">Container Images</span></li>\n<li><span class=\"uitext\">ApplicationName</span> → <span class=\"uitext\">Container Application List</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span>, added the button to go to the list menu for the following columns.</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">CotainerId</span> → <span class=\"uitext\">Container List</span></li>\n<li><span class=\"uitext\">ContainerName</span> → <span class=\"uitext\">Container List</span></li>\n<li><span class=\"uitext\">Pod</span> → <span class=\"uitext\">Pod List</span></li>\n<li><span class=\"uitext\">Node</span> → <span class=\"uitext\">Node List</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span>, added the <span class=\"uitext\">Image</span> column into the <span class=\"uitext\">Resource</span> group.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the event list table of <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Kubernetes Event</span>, added the <span class=\"uitext\">Time the event first occurred</span> and <span class=\"uitext\">Number of events</span> columns.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Detail</span>, added the Pod list.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Record summary</span> tab of the <span class=\"uitext\">Trace analysis</span> window, added the feature to display information for <strong>Container Id</strong> and <strong>Pod Name</strong> and go to each container and Pod list pages when clicked for each.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the agent status display feature at the top of the screen so that users can immediately recognize when the Kubernetes agent is disabled.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> In the container list of <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Detail</span>, improved the UI design for the container's detail button.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> In the summary or detailed view of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, modified not to display <strong>Application log</strong> for the blocks where the <strong>Node.js</strong> application agent has been installed in the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Search Log</span> tab. (Log monitoring for <strong>Node.js</strong> products is not supported)</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> When the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> menu appears for the first time and go to the Pod or container view, fixed the problem where wrong data is output.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Detail</span>, fixed the issue where the metric title at the top does not appear.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Top SQL Comparison</span> menu to compare the SQL trends in the time zone set based on a specific date and check the fluctuations.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the Full Scan section to be displayed in red in the <span class=\"uitext\">SQL details</span> window that appears when you select a query to view the plan.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified to display the database name in the option bar at the top of the screen in the following menu path.</p>",
+        "category": "Common",
+        "details": "<ul>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></li>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Slow Query</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Dead Lock</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Counts Trend Comparison</span></li>\n<li><span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> &gt; <span class=\"uitext\">Database</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, added the error handling in the object detail window that appears when viewing the plan.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Changed the XOS2 metric replacement guide message in the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span> menu to no longer appear.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, changed several widget names.</p>",
+        "category": "Common",
+        "details": "<p><strong>Long Active Sessions</strong> → <em><strong>Long Active Session Count</strong></em></p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the default query to 30 minutes before and after the session running, when the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Session History</span> menu appears through the <span class=\"uitext\">Session detail</span> window that appears by selecting an item in the <span class=\"uitext\">Active sessions</span> section.</p>",
+        "category": "Common",
+        "details": "<ul>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></li>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span></li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, changed the default time of the <span class=\"uitext\">Agent Inactive Warning</span> option from 30 seconds to 1 minute.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> In<span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, fixed the issue where the list is not sorted in ascending or descending order based on decimal values.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, added the <em><strong>Uptime</strong></em> widget to check how long it has been since the DB startup.</p>",
+        "category": "PostgreSQL / MySQL"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "URL",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Changed the design of the URL list guidance text.</p>"
+      },
+      {
+        "ver": "Service 2.7.0",
+        "hash": "service-270",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Trend</span>, fixed the issue where the previous data remains when there is no query data when the query time is changed.</p>"
+      }
+    ]
+  }
 ]
