@@ -192,6 +192,9 @@ html[lang='ja-JP'] {
   margin-left: 60px;
 }
 // UI
+.navbar__logo {
+  height: 4rem;
+}
 .hold-menu {
   padding: 12px 0;
   margin: 0 8px;
@@ -1190,6 +1193,13 @@ main {
     }
     section h6 {
         font-size: var(--ifm-h6-font-size);
+    }
+    div.welcome {
+      font-weight: 500;
+      position: relative;
+      font-size: 16.5px;
+      top: -19px;
+      color: var(--ifm-breadcrums-arrow-color);
     }
     .tabs-container h2, .tabs-container section h2 {
       --ifm-h2-font-size: 2rem;
