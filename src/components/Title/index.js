@@ -4,7 +4,7 @@ import {useThemeConfig} from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-export default function Title ({level, hashid, children}) {
+export default function Title ({level, hashid, children, className}) {
     const Headertag = `h${level}`;
     const {
         navbar: {hideOnScroll},
@@ -19,7 +19,8 @@ export default function Title ({level, hashid, children}) {
                 'anchor',
                 hideOnScroll
                 ? styles.anchorWithHideOnScrollNavbar
-                : styles.anchorWithStickyNavbar
+                : styles.anchorWithStickyNavbar,
+                className
             )}
             id={hashid}>
             {children}
