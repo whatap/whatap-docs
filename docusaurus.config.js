@@ -230,8 +230,8 @@ const config = {
         logo: {
           alt: 'WhaTap Docs',
           src: 'img/whatap-docs-logo.svg',
-          width: 152,
-          height: 28,
+          width: "154px",
+          height: "43px",
         },
         items: [
           {
