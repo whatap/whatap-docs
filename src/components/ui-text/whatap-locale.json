@@ -54034,10 +54034,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54244,10 +54244,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54966,7 +54966,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55512,7 +55512,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55938,10 +55938,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56247,7 +56247,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間バッチ初期化",
+    "ja": "時間一括初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56596,10 +56596,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events",
+    "zh": "Number of events occurring",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -56918,10 +56918,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57030,10 +57030,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57443,38 +57443,38 @@
     "service_id": "NTC08328"
   },
   "DSC08329": {
-    "en": "Workflow requires an account with access to Microsoft Teams and a Business Plan subscription.",
+    "en": "To use Workflow, you need an account with access to Microsoft Teams and a business plan subscription.",
     "ja": "ワークフローを使用するには、Microsoft Teamsにアクセスできるアカウントとビジネスプランの購読が必要です。",
     "ko": "워크플로를 사용하려면 Microsoft Teams 에 액세스할 수 있는 계정과 비즈니스 플랜 구독이 필요합니다.",
-    "zh": "Workflow requires an account with access to Microsoft Teams and a Business Plan subscription.",
+    "zh": "To use Workflow, you need an account with access to Microsoft Teams and a business plan subscription.",
     "service_id": "DSC08329"
   },
   "DSC08330": {
-    "en": "1. Select <b>Add Channel</b> from the More Team (...) menu in the Team menu.",
+    "en": "1. Select <b>Add Channel</b> from the see more (...) menu under the Team menu.",
     "ja": "1.チームメニューのチーム詳細（...）メニューから<b>チャンネルを追加</b>を選択します。",
     "ko": "1. 팀 메뉴의 팀 더보기(...)메뉴에서 <b>채널 추가</b>를 선택하세요.",
-    "zh": "1. Select <b>Add Channel</b> from the More Team (...) menu in the Team menu.",
+    "zh": "1. Select <b>Add Channel</b> from the see more (...) menu under the Team menu.",
     "service_id": "DSC08330"
   },
   "DSC08331": {
-    "en": "2. Enter a channel name and description and select <b>Standard</b> as the channel type.",
+    "en": "2. Enter a channel name and description, and select the channel type as <b>Standard</b>.",
     "ja": "2.チャンネル名と説明を入力し、チャンネルタイプを<b>標準</b>として選択します。",
     "ko": "2. 채널 이름과 설명을 입력하고 채널 유형을 <b>표준</b>으로 선택하세요.",
-    "zh": "2. Enter a channel name and description and select <b>Standard</b> as the channel type.",
+    "zh": "2. Enter a channel name and description, and select the channel type as <b>Standard</b>.",
     "service_id": "DSC08331"
   },
   "DSC08332": {
-    "en": "If you select <b>Shared</b> as the channel type, the workflow will not be available.\n            <br />\n            If you select <b>Private</b>, you can add workflows but you will not receive notifications.",
+    "en": "If you select <b>Shared</b> as the channel type, the workflow will not be available.\n            <br />\n            If you select <b>Private</b>, you can add workflow but you will not receive notifications.",
     "ja": "チャンネルタイプを<b>共有</b>として選択すると、ワークフローは利用できなくなります。\n            <br />\n            <b>プライベート</b>を選択すると、ワークフローを追加できますが、通知を受け取ることはできません。",
     "ko": "채널 유형을 <b>공유</b>로 선택하면 워크플로를 사용할 수 없으며,\n            <br />\n            <b>비공개</b>를 선택하면 워크플로를 추가할 수 있지만 알림을 수신할 수 없습니다.",
-    "zh": "If you select <b>Shared</b> as the channel type, the workflow will not be available.\n            <br />\n            If you select <b>Private</b>, you can add workflows but you will not receive notifications.",
+    "zh": "If you select <b>Shared</b> as the channel type, the workflow will not be available.\n            <br />\n            If you select <b>Private</b>, you can add workflow but you will not receive notifications.",
     "service_id": "DSC08332"
   },
   "DSC08333": {
-    "en": "3. Select <b>Workflow</b> from the more (...) menu of the created channel.",
+    "en": "3. Select <b>Workflow</b> from the see more (...) menu of the created channel.",
     "ja": "3. 作成したチャンネルの詳細（...）メニューから<b>ワークフロー</b>を選択します。",
     "ko": "3. 생성한 채널의 더보기(...) 메뉴에서 <b>워크플로</b>를 선택하세요.",
-    "zh": "3. Select <b>Workflow</b> from the more (...) menu of the created channel.",
+    "zh": "3. Select <b>Workflow</b> from the see more (...) menu of the created channel.",
     "service_id": "DSC08333"
   },
   "DSC08334": {
@@ -57506,10 +57506,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
@@ -57541,10 +57541,10 @@
     "service_id": "TTL08342"
   },
   "NTC08343": {
-    "en": "Start time is earlier than end time.",
+    "en": "The start time is earlier than the end time.",
     "ja": "開始時間が終了時間より早い。",
     "ko": "시작 시간이 종료 시간보다 빠릅니다.",
-    "zh": "Start time is earlier than end time.",
+    "zh": "The start time is earlier than the end time.",
     "service_id": "NTC08343"
   },
   "NTC08344": {
@@ -57555,11 +57555,32 @@
     "service_id": "NTC08344"
   },
   "BTN08345": {
-    "en": "Close all notifications",
+    "en": "Close All Notifications",
     "ja": "完全な通知を閉じる",
     "ko": "전체 알림 닫기",
-    "zh": "Close all notifications",
+    "zh": "Close All Notifications",
     "service_id": "BTN08345"
+  },
+  "BTN08346": {
+    "en": "Add custom widgets",
+    "ja": "カスタムウィジェットを追加",
+    "ko": "사용자정의 위젯 추가",
+    "zh": "Add custom widgets",
+    "service_id": "BTN08346"
+  },
+  "TLT08347": {
+    "en": "Search for indicator name",
+    "ja": "指標名を検索",
+    "ko": "지표명을 검색하세요",
+    "zh": "Search for indicator name",
+    "service_id": "TLT08347"
+  },
+  "TTL08348": {
+    "en": "Merge Target",
+    "ja": "ターゲットのマージ",
+    "ko": "대상 병합",
+    "zh": "Merge Target",
+    "service_id": "TTL08348"
   },
   "": {
     "en": "#VALUE!",
@@ -58068,6 +58089,11 @@
     "en": "Login",
     "ja": "ログイン",
     "ko": "로그인"
+  },
+  "side_statIp": {
+    "en": "IP Transaction",
+    "ja": "IP Transaction",
+    "ko": "IP 트랜잭션"
   },
   "side_statReferer": {
     "en": "Referrer",
