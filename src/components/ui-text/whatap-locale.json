@@ -57596,6 +57596,20 @@
     "zh": "Select the log item in column settings.",
     "service_id": "MNU08350"
   },
+  "ITM08351": {
+    "en": "Download with replacement value",
+    "ja": "置換値を含むダウンロード",
+    "ko": "치환값 포함 다운로드",
+    "zh": "Download with replacement value",
+    "service_id": "ITM08351"
+  },
+  "ITM08352": {
+    "en": "Download without replacement value",
+    "ja": "置換値を含まないダウンロード",
+    "ko": "치환값 미포함 다운로드",
+    "zh": "Download without replacement value",
+    "service_id": "ITM08352"
+  },
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
