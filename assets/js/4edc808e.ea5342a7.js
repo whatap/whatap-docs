@@ -144,6 +144,9 @@ function _createMdxContent(props) {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("title", {
         children: "실시간 옵저버빌리티 플랫폼 | WhaTap Docs"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      className: "welcome",
+      children: "Real-time Observability Platform"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Title, {
       hashid: "welcome",
       level: 2,
