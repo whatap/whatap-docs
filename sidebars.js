@@ -2697,7 +2697,7 @@ const sidebars = {
   altibaseSidebar: [
     {
       type: 'category',
-      label: 'Altibase 모니터링',
+      label: 'Altibase V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2830,6 +2830,147 @@ const sidebars = {
               ],
             },
             'altibase/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  altibasev1Sidebar: [
+    {
+      type: 'category',
+      label: 'Altibase V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'altibase-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'altibase-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase-v1/install-agent',
+            'altibase-v1/after-install-agent',
+            'altibase-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/agent-settings'
+          },
+          items: [
+            'altibase-v1/agent-network',
+            'altibase-v1/agent-naming',
+            'altibase-v1/agent-aws',
+            'altibase-v1/agent-data',
+          ],
+        },
+        'altibase-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/dashboard-intro'
+              },
+              items: [
+                'altibase-v1/instance-list',
+                'altibase-v1/instance-monitoring',
+                'altibase-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/flex-board',
+              },
+              items: [
+                'altibase-v1/flexboard-template',
+                'altibase-v1/flexboard-create',
+                'altibase-v1/flexboard-manage',
+                'altibase-v1/flexboard-metric-widget',
+                'altibase-v1/flexboard-widget-manage',
+                'altibase-v1/flexboard-mode',
+                'altibase-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/metrics-intro'
+              },
+              items: [
+                'altibase-v1/metrics-chart',
+                'altibase-v1/metrics-search',
+                'altibase-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'altibase-v1/analysis-function',
+                'altibase-v1/stat',
+                'altibase-v1/report-intro',
+                'altibase-v1/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/set-notice',
+              },
+              items: [
+                'altibase-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'altibase-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'altibase-v1/metric-warning-notice',
+                'altibase-v1/set-notification-message',
+                'altibase-v1/set-event-detect-anomal',
+                'altibase-v1/set-receive-event',
+                'altibase-v1/set-event-history',
+                'altibase-v1/set-event-format',
+              ],
+            },
+            'altibase-v1/labs'
           ]
         }
       ],
