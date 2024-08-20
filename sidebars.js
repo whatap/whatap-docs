@@ -3601,7 +3601,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/index',
@@ -3609,9 +3609,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_24',
-                  // className: 'new',
+                  id: 'release-notes/java-batch/java-batch-2_2_25',
+                  className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_24',
                 'release-notes/java-batch/java-batch-2_2_23',
                 'release-notes/java-batch/java-batch-2_2_22',
                 'release-notes/java-batch/java-batch-2_2_21',
@@ -3709,7 +3710,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -3718,7 +3719,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_3_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
