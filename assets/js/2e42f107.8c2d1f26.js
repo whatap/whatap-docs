@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98417],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[4906],{
 
-/***/ 77630:
+/***/ 92871:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_7_7',
-	title: 'DBX v1.7.7',
-	pagination_next: 'release-notes/db/dbx-1_7_6',
+	id: 'dbx-1_9_4',
+	title: 'DBX v1.9.4',
+	pagination_next: 'release-notes/db/dbx-1_9_3',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_7_7",
-  "title": "DBX v1.7.7",
-  "description": "2024년 06월 18일",
-  "source": "@site/docs/release-notes/db/dbx-1.7.7.mdx",
+  "id": "release-notes/db/dbx-1_9_4",
+  "title": "DBX v1.9.4",
+  "description": "2024년 08월 08일",
+  "source": "@site/docs/release-notes/db/dbx-1.9.4.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_7_7",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_7",
+  "slug": "/release-notes/db/dbx-1_9_4",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_9_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.7.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.9.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_7_7",
-    "title": "DBX v1.7.7",
-    "pagination_next": "release-notes/db/dbx-1_7_6",
+    "id": "dbx-1_9_4",
+    "title": "DBX v1.9.4",
+    "pagination_next": "release-notes/db/dbx-1_9_3",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.7.8",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_8"
+    "title": "DBX v1.9.5",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_5"
   },
   "next": {
-    "title": "DBX v1.7.6",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_6"
+    "title": "DBX v1.9.3",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_3"
   }
 };
 const assets = {
@@ -60,31 +60,94 @@ const assets = {
 
 
 const toc = [{
-  "value": "PostgreSQL",
-  "id": "postgresql",
+  "value": "MySQL",
+  "id": "mysql",
+  "level": 2
+}, {
+  "value": "Oracle",
+  "id": "oracle",
+  "level": 2
+}, {
+  "value": "Tibero",
+  "id": "tibero",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
+    admonition: "admonition",
+    code: "code",
     h2: "h2",
+    li: "li",
     p: "p",
     section: "section",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 18일"
+      children: "2024년 08월 08일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "postgresql",
-        children: "PostgreSQL"
+        id: "mysql",
+        children: "MySQL"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "0",
           children: "Fixed"
-        }), " PostgreSQL 9.6 버전의 replication delay 버그 수정"]
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "db_mysql_sqlstat"
+        }), " 카테고리의 데이터가 누적되는 버그 수정"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "영향 범위: DBX agent v1.6.8 - v1.9.3"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "oracle",
+        children: "Oracle"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "0",
+          children: "Fixed"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "db_oracle_sqlstat"
+        }), " 카테고리의 데이터가 누적되는 버그 수정"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "영향 범위: DBX agent v1.6.8 - v1.9.0"
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                className: "my",
+                children: "V2"
+              }), " 사용 환경은 영향을 받을 수 있으므로 최신 에이전트 사용하기를 권고합니다. Oracle ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                className: "my",
+                children: "V1"
+              }), " 사용 환경은 영향 없습니다."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "tibero",
+        children: "Tibero"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "0",
+          children: "Fixed"
+        }), " Cpu_cores 데이터를 수집하지 않도록 수정"]
       })]
     })]
   });

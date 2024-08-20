@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52310],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89136],{
 
-/***/ 4905:
+/***/ 41492:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_7_4',
-	title: 'DBX v1.7.4',
-	pagination_next: 'release-notes/db/dbx-1_7_3',
+	id: 'dbx-1_7_5',
+	title: 'DBX v1.7.5',
+	pagination_next: 'release-notes/db/dbx-1_7_4',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_7_4",
-  "title": "DBX v1.7.4",
-  "description": "2024년 05월 16일",
-  "source": "@site/docs/release-notes/db/dbx-1.7.4.mdx",
+  "id": "release-notes/db/dbx-1_7_5",
+  "title": "DBX v1.7.5",
+  "description": "2024년 05월 17일",
+  "source": "@site/docs/release-notes/db/dbx-1.7.5.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_7_4",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_4",
+  "slug": "/release-notes/db/dbx-1_7_5",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_5",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.4.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.5.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_7_4",
-    "title": "DBX v1.7.4",
-    "pagination_next": "release-notes/db/dbx-1_7_3",
+    "id": "dbx-1_7_5",
+    "title": "DBX v1.7.5",
+    "pagination_next": "release-notes/db/dbx-1_7_4",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "DBX v1.7.5",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_5"
-  },
   "next": {
-    "title": "DBX v1.7.3",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_3"
+    "title": "DBX v1.7.4",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_4"
   }
 };
 const assets = {
@@ -60,81 +56,34 @@ const assets = {
 
 
 const toc = [{
-  "value": "공통",
-  "id": "공통",
-  "level": 2
-}, {
   "value": "MongoDB, Redis",
   "id": "mongodb-redis",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
+    code: "code",
     h2: "h2",
-    li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Status} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 05월 16일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "공통",
-        children: "공통"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              children: "Feature"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_management",
-              className: "uitext"
-            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_agents",
-              className: "uitext"
-            }), " 메뉴에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Agent IP"
-            }), "(에이전트 IP 주소) 추가"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              children: "Changed"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "DB connection failed"
-            }), " 문구 수정"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              children: "Changed"
-            }), " OOM 발생 시 HeapDumpFile을 생성하지 않도록 수정"]
-          }), "\n"]
-        }), "\n"]
-      })]
+      children: "2024년 05월 17일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "mongodb-redis",
         children: "MongoDB, Redis"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "connection fail"
-          }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "success"
-          }), " 알림 추가"]
-        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          children: "Changed"
+        }), " DB Connection Failed 발생하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "fatal count"
+        }), "를 전송하도록 수정"]
       })]
     })]
   });

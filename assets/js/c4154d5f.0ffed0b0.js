@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89136],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[33829],{
 
-/***/ 41492:
+/***/ 76446:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_7_5',
-	title: 'DBX v1.7.5',
-	pagination_next: 'release-notes/db/dbx-1_7_4',
+	id: 'dbx-1_9_1',
+	title: 'DBX v1.9.1',
+	pagination_next: 'release-notes/db/dbx-1_9_0',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_7_5",
-  "title": "DBX v1.7.5",
-  "description": "2024년 05월 17일",
-  "source": "@site/docs/release-notes/db/dbx-1.7.5.mdx",
+  "id": "release-notes/db/dbx-1_9_1",
+  "title": "DBX v1.9.1",
+  "description": "2024년 07월 19일",
+  "source": "@site/docs/release-notes/db/dbx-1.9.1.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_7_5",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_7_5",
+  "slug": "/release-notes/db/dbx-1_9_1",
+  "permalink": "/whatap-docs/release-notes/db/dbx-1_9_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.7.5.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-1.9.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_7_5",
-    "title": "DBX v1.7.5",
-    "pagination_next": "release-notes/db/dbx-1_7_4",
+    "id": "dbx-1_9_1",
+    "title": "DBX v1.9.1",
+    "pagination_next": "release-notes/db/dbx-1_9_0",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.7.6",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_6"
+    "title": "DBX v1.9.2",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_2"
   },
   "next": {
-    "title": "DBX v1.7.4",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_7_4"
+    "title": "DBX v1.9.0",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_0"
   }
 };
 const assets = {
@@ -60,13 +60,16 @@ const assets = {
 
 
 const toc = [{
-  "value": "MongoDB, Redis",
-  "id": "mongodb-redis",
+  "value": "공통",
+  "id": "공통",
+  "level": 2
+}, {
+  "value": "Mongodb",
+  "id": "mongodb",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
-    code: "code",
     h2: "h2",
     p: "p",
     section: "section",
@@ -76,18 +79,30 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 05월 17일"
+      children: "2024년 07월 19일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "mongodb-redis",
-        children: "MongoDB, Redis"
+        id: "공통",
+        children: "공통"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Changed"
-        }), " DB Connection Failed 발생하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "fatal count"
-        }), "를 전송하도록 수정"]
+          priority: "1",
+          children: "Feature"
+        }), " Too big data 알림의 status 추가"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "에이전트에서 데이터 전송 시 팩 사이즈가 5MB 이상일 때 알림을 발생할 수 있도록 status 추가"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "mongodb",
+        children: "Mongodb"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "1",
+          children: "Feature"
+        }), " db size 및 collection 정보 수집"]
       })]
     })]
   });
