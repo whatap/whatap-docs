@@ -14306,7 +14306,7 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(78447)
     ],
     "3dd02140": [
-        ()=>Promise.all(/* import() | 3dd02140 */[__webpack_require__.e(71869), __webpack_require__.e(50577)]).then(__webpack_require__.bind(__webpack_require__, 72306)),
+        ()=>__webpack_require__.e(/* import() | 3dd02140 */ 50577).then(__webpack_require__.bind(__webpack_require__, 72306)),
         "@site/docs/altibase/install-agent.mdx",
         /*require.resolve*/(72306)
     ],

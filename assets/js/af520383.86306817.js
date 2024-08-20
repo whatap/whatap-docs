@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[981],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76939],{
 
 /***/ 18473:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -160,6 +160,78 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
+/***/ 37717:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    li: "li",
+    p: "p",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Xclude} = _components;
+  if (!Xclude) _missingMdxReference("Xclude", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "oracle-pro",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+          children: "에이전트를 설치할 서버에는 Java 8 이상이 설치되어 있어야 합니다."
+        }), "\n"]
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "데이터베이스 서버는 DBX 에이전트가 DB 포트에 접근할 수 있도록 Inbound 접속을 허용해야 합니다."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "DBX 에이전트가 와탭 서버로 데이터를 전송할 수 있도록 6600 포트에 대한 Outbound를 열어야 합니다."
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 14771:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -196,6 +268,63 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
+/***/ 81202:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ReturnLink} = _components;
+  if (!ReturnLink) _missingMdxReference("ReturnLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "info",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ReturnLink, {
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -651,7 +780,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 70548:
+/***/ 44850:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -664,12 +793,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14771);
-/* harmony import */ var _common_items_db_support_env_agent_construction_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18473);
-/* harmony import */ var _getting_started_proxy_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(38701);
-/* harmony import */ var _getting_started_supported_browser_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(13996);
-/* harmony import */ var _getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(70597);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81202);
+/* harmony import */ var _common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(37717);
+/* harmony import */ var _common_items_db_support_env_agent_construction_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18473);
+/* harmony import */ var _getting_started_proxy_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(38701);
+/* harmony import */ var _getting_started_supported_browser_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(13996);
+/* harmony import */ var _getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(70597);
 
 
 const frontMatter = {
@@ -678,22 +809,22 @@ const frontMatter = {
 	description: '데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.',
 	keywords: [
 		'데이터베이스',
-		'데이터베이스 모니터링',
+		'데이터베이스',
 		'Oracle'
 	]
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v1/monitoring-support",
+  "id": "oracle/monitoring-support",
   "title": "지원 환경",
   "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
-  "source": "@site/docs/oracle-v1/monitoring-support.mdx",
-  "sourceDirName": "oracle-v1",
-  "slug": "/oracle-v1/monitoring-support",
-  "permalink": "/whatap-docs/oracle-v1/monitoring-support",
+  "source": "@site/docs/oracle/monitoring-support.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/monitoring-support",
+  "permalink": "/whatap-docs/oracle/monitoring-support",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v1/monitoring-support.mdx",
+  "editUrl": "undefined/docs/oracle/monitoring-support.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -702,18 +833,18 @@ const metadata = {
     "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
     "keywords": [
       "데이터베이스",
-      "데이터베이스 모니터링",
+      "데이터베이스",
       "Oracle"
     ]
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
-    "title": "Oracle 모니터링",
-    "permalink": "/whatap-docs/oracle-v1/monitoring-intro"
+    "title": "Oracle V2 모니터링",
+    "permalink": "/whatap-docs/oracle/monitoring-intro"
   },
   "next": {
     "title": "에이전트 설치",
-    "permalink": "/whatap-docs/oracle-v1/install-agent"
+    "permalink": "/whatap-docs/oracle/install-agent"
   }
 };
 const assets = {
@@ -727,38 +858,42 @@ const assets = {
 
 
 
-const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
+
+
+const toc = [..._common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "데이터베이스 지원 버전",
   "id": "데이터베이스-지원-버전",
   "level": 3
-}, {
+}, ..._common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
   "value": "에이전트 구성",
   "id": "에이전트-구성",
   "level": 2
-}, ..._common_items_db_support_env_agent_construction_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
+}, ..._common_items_db_support_env_agent_construction_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
   "value": "방화벽",
   "id": "방화벽",
   "level": 2
-}, ..._getting_started_proxy_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+}, ..._getting_started_proxy_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
   "value": "브라우저 지원",
   "id": "브라우저-지원",
   "level": 2
-}, ..._getting_started_supported_browser_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+}, ..._getting_started_supported_browser_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, {
   "value": "모바일 앱",
   "id": "모바일-앱",
   "level": 2
-}, ..._getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
+}, ..._getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
     h3: "h3",
     p: "p",
     section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_8__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
+      product: "Oracle"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
       name: "Oracle"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -767,37 +902,37 @@ function _createMdxContent(props) {
         children: "데이터베이스 지원 버전"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "Oracle 10gR2 버전 이상을 지원합니다."
-      })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "에이전트-구성",
         children: "에이전트 구성"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_support_env_agent_construction_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_support_env_agent_construction_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "방화벽",
         children: "방화벽"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_proxy_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_proxy_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "브라우저-지원",
         children: "브라우저 지원"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_supported_browser_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_supported_browser_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "모바일-앱",
         children: "모바일 앱"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_mobile_app_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_8__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
