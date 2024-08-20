@@ -88,16 +88,6 @@ const config = {
       admonitions: true,
       headingIds: true,
     },
-    parseFrontMatter: async (params) => {
-      const result = await params.defaultParseFrontMatter(params);
-
-      const isDefaultLocale = process.env.DOCUSAURUS_LOCALE === 'ko';
-      const isFromI18nFolder = params.filePath.includes('/i18n/');
-
-      result.frontMatter.isNotTranslated = !isDefaultLocale && !isFromI18nFolder;
-
-      return result;
-    },
   },
   themes: [
     '@docusaurus/theme-mermaid',
