@@ -2592,7 +2592,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2023"
     }
   ],
-  "readingTime": 18.735,
+  "readingTime": 18.795,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -2774,13 +2774,9 @@ function _2023_4q_summary_createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "새로운 기능 sc",
-        src: (__webpack_require__(37382)/* ["default"] */ .A) + "",
-        width: "1109",
-        height: "657"
-      })
+    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      img: "/changelog/changelog-new3.png",
+      desc: "새로운 기능 sc"
     }), "\n", "\n", (0,jsx_runtime.jsxs)("div", {
       class: "faq",
       children: [(0,jsx_runtime.jsx)(_components.table, {
@@ -3267,7 +3263,7 @@ function _2023_4q_summary_createMdxContent(props) {
       }), " 탭이 새로 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "k8s-container-map-call-info-app.png",
-      desc: "App 호출 흐름도"
+      desc: "App 호출 흐름도 분기 예시"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["또한 컨테이너와 Pod 뷰 모두 블록 색상 표시 지표에 애플리케이션 관련 필드 목록(", (0,jsx_runtime.jsx)(_components.code, {
         children: "app_counter"
@@ -3545,7 +3541,7 @@ function _2023_4q_summary_createMdxContent(props) {
       }), "가 추가되었습니다. 가이드 UI를 통해 검색 값 입력 시 지원하는 검색 문법을 확인할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "log-filter-ui1.png",
-      desc: "로그 필터 cl"
+      desc: "로그 필터 cl 분기 예시"
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: "그리고 타임스탬프와 로그만을 확인할 수 있도록 전체 화면 전환 기능이 추가되었으며, 로그 1차 파서 설정 탭에서 파서 추가 시 로그 검출 조건의 검색 값 입력 후 예약어에 대한 유효성 검증이 추가되었습니다."
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
@@ -3619,16 +3615,6 @@ function _2023_4q_summary_missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-mobile-app-1998f2c8392a0727e39e614c8efe46b8.png");
-
-/***/ }),
-
-/***/ 37382:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png");
 
 /***/ }),
 

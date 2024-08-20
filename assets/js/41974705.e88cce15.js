@@ -4732,7 +4732,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2024"
     }
   ],
-  "readingTime": 26.44,
+  "readingTime": 26.57,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -4891,13 +4891,9 @@ function _2024_1q_summary_createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "새로운 기능 sc",
-        src: (__webpack_require__(37382)/* ["default"] */ .A) + "",
-        width: "1109",
-        height: "657"
-      })
+    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      img: "/changelog/changelog-new3.png",
+      desc: "새로운 기능 sc"
     }), "\n", "\n", "\n", "\n", (0,jsx_runtime.jsxs)("div", {
       class: "faq",
       children: [(0,jsx_runtime.jsx)(_components.table, {
@@ -5108,7 +5104,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), ") 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "release/release-main-ui.png",
-      desc: "사이드 메뉴 개편 cl"
+      desc: "사이드 메뉴 개편 cl 분기 예시"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["또한 ", (0,jsx_runtime.jsx)(_components.strong, {
         children: "SSO 계정 연동 기능"
@@ -5119,7 +5115,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), " 계정을 이용해 와탭 서비스에 로그인 후 서비스를 이용할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "sso-check-sso-info.png",
-      desc: "sso-info cl"
+      desc: "sso-info cl 분기 예시"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["새로운 ", (0,jsx_runtime.jsx)(Cmdname, {
         sid: "side_eventSetting",
@@ -5130,7 +5126,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), " 기능은 필드(Field) 중심의 사용자 경험을 강화하여 카테고리보다 필드를 먼저 선택하는 방식으로 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소했습니다. 또한 상품에 적합한 기본 이벤트 템플릿을 제공해 보다 쉽게 경고 알림 이벤트를 설정할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "이벤트 v2 cl",
+        alt: "이벤트 v2 cl 분기 예시",
         src: (__webpack_require__(74118)/* ["default"] */ .A) + "",
         width: "800",
         height: "513"
@@ -5549,7 +5545,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), "는 전반적으로 차트 및 수집 기능이 강화되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "데이터베이스 sc cl",
+        alt: "데이터베이스 sc cl ",
         src: (__webpack_require__(13837)/* ["default"] */ .A) + "",
         width: "772",
         height: "484"
@@ -5631,7 +5627,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), "에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "browser-search-user-session-log-analysis.png",
-      desc: "사용자 세션 분석",
+      desc: "사용자 세션 분석 분기 예시",
       className: "changelog-img"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.em, {
@@ -5678,7 +5674,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), ") 상품이 정식으로 출시되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "네트워크 모니터링 sc cl",
+        alt: "네트워크 모니터링 sc cl ",
         src: (__webpack_require__(87937)/* ["default"] */ .A) + "",
         width: "972",
         height: "984"
@@ -5782,7 +5778,7 @@ function _2024_1q_summary_createMdxContent(props) {
       }), ")을 수집해 로그 목록 왼쪽에서 해당 기준 색상을 표시하는 기능이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "로그 에이전트 옵션 cl",
+        alt: "로그 에이전트 옵션 cl분기 예시 ",
         src: (__webpack_require__(4680)/* ["default"] */ .A) + "",
         width: "1200",
         height: "224"
@@ -5888,16 +5884,6 @@ function _2024_1q_summary_missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-network-03e52d28329611577b24b6bab5268f43.png");
-
-/***/ }),
-
-/***/ 37382:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png");
 
 /***/ }),
 

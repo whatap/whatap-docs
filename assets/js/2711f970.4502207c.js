@@ -49,7 +49,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/콘텐츠-구성"
     }
   ],
-  "readingTime": 1.935,
+  "readingTime": 1.955,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -101,15 +101,12 @@ function _createMdxContent(props) {
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {ImgLang} = _components;
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "새로운 기능 sc",
-        src: (__webpack_require__(37382)/* ["default"] */ .A) + "",
-        width: "1109",
-        height: "657"
-      })
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "/changelog/changelog-new3.png",
+      desc: "새로운 기능 sc"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "새로운 기능"
@@ -167,6 +164,9 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 
@@ -189,16 +189,6 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png");
-
-/***/ }),
-
-/***/ 37382:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png");
 
 /***/ }),
 

@@ -48,7 +48,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2024"
     }
   ],
-  "readingTime": 28.235,
+  "readingTime": 28.325,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -85,26 +85,23 @@ const assets = {
 "authorsImageUrls": [(__webpack_require__(82799)/* ["default"] */ .A)],
 };
 
+/*새로운 기능 sc 이미지 국문과 영문*/
 
 
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    img: "img",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {ImgLang} = _components;
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "새로운 기능 sc",
-        src: (__webpack_require__(37382)/* ["default"] */ .A) + "",
-        width: "1109",
-        height: "657"
-      })
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "/changelog/changelog-new3.png",
+      desc: "새로운 기능 sc"
     })]
   });
 }
@@ -120,6 +117,9 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 
@@ -132,16 +132,6 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/teamtwj-8ca548071cd575b2056335d511c4c2fc.svg");
-
-/***/ }),
-
-/***/ 37382:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png");
 
 /***/ }),
 

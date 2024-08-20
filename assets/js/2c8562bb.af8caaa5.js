@@ -2315,7 +2315,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2023"
     }
   ],
-  "readingTime": 15.86,
+  "readingTime": 15.895,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -2511,21 +2511,18 @@ function _2023_3q_summary_createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  }, {Cmdname, Details, LinkImage, Status} = _components;
+  }, {Cmdname, Details, ImgLang, LinkImage, Status} = _components;
   if (!Cmdname) _2023_3q_summary_missingMdxReference("Cmdname", true);
   if (!Details) _2023_3q_summary_missingMdxReference("Details", true);
+  if (!ImgLang) _2023_3q_summary_missingMdxReference("ImgLang", true);
   if (!LinkImage) _2023_3q_summary_missingMdxReference("LinkImage", true);
   if (!Status) _2023_3q_summary_missingMdxReference("Status", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "새로운 기능 sc",
-        src: (__webpack_require__(37382)/* ["default"] */ .A) + "",
-        width: "1109",
-        height: "657"
-      })
+    }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      img: "/changelog/changelog-new3.png",
+      desc: "새로운 기능 sc"
     }), "\n", "\n", "\n", (0,jsx_runtime.jsxs)("div", {
       class: "faq",
       children: [(0,jsx_runtime.jsx)(_components.table, {
@@ -3202,7 +3199,7 @@ function _2023_3q_summary_createMdxContent(props) {
       }), " 목록에서 에러 메시지를 선택 시 에러 메시지를 기준으로 에러와 관련한 자세한 통계 정보를 확인할 수 있습니다. 뿐만 아니라 시간대별로 발생한 에러 로그 역시 살펴볼 수 있습니다."]
     }), "\n", (0,jsx_runtime.jsx)(LinkImage, {
       img: "browser-error-details-log.png",
-      desc: "Error log"
+      desc: "Error log 분기 예시"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["다음 개요 안내를 통해 2023년 3분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Browser"
@@ -3320,16 +3317,6 @@ function _2023_3q_summary_missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/teamtwj-8ca548071cd575b2056335d511c4c2fc.svg");
-
-/***/ }),
-
-/***/ 37382:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png");
 
 /***/ }),
 

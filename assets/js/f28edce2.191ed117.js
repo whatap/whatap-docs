@@ -3528,7 +3528,7 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2024"
     }
   ],
-  "readingTime": 28.235,
+  "readingTime": 28.325,
   "hasTruncateMarker": true,
   "authors": [
     {
@@ -3565,6 +3565,7 @@ const assets = {
 "authorsImageUrls": [(__webpack_require__(82799)/* ["default"] */ .A)],
 };
 
+/*새로운 기능 sc 이미지 국문과 영문*/
 /*truncate*/
 /*공통 및 브라우저 뺄지??*/
 /*이를 통해 클라우드 및 컨테이너 기반 애플리케이션을 포함한 다양한 플랫폼과 환경에서의 모니터링이 가능해졌습니다. <- 아직 안됨. 로드맵엔 있음*/
@@ -3770,13 +3771,9 @@ function _2024_2q_summary_createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "새로운 기능 sc",
-        src: (__webpack_require__(37382)/* ["default"] */ .A) + "",
-        width: "1109",
-        height: "657"
-      })
+    }), "\n", "\n", (0,jsx_runtime.jsx)(ImgLang, {
+      img: "/changelog/changelog-new3.png",
+      desc: "새로운 기능 sc"
     }), "\n", "\n", (0,jsx_runtime.jsxs)("div", {
       class: "faq",
       children: [(0,jsx_runtime.jsx)(_components.table, {
@@ -4632,16 +4629,6 @@ function _2024_2q_summary_missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-24q2-url-054773016dbb0499bde47324e094a4f9.png");
-
-/***/ }),
-
-/***/ 37382:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png");
 
 /***/ }),
 
