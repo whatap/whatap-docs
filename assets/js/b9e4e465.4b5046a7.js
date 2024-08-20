@@ -1,7 +1,69 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[85936],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[91331],{
 
-/***/ 90709:
+/***/ 74184:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    admonition: "admonition",
+    code: "code",
+    p: "p",
+    pre: "pre",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["Java Batch 에이전트를 처음 설치하는 경우 다음 명령어를 이용해 패키지를 먼저 설치하세요. 에이전트 설치에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+        href: "../../java/add-jvm-opt/batch-app",
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        className: "language-bash",
+        children: "wget https://api.whatap.io/agent/whatap.agent.batch.tar.gz\n"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
+/***/ 39360:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,45 +76,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _import_dl_java_batch_agent_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74184);
 
 
 const frontMatter = {
-	id: 'java-batch-2_2_20',
-	title: 'Java Batch Agent v2.2.20',
+	id: 'java-batch-2_2_21',
+	title: 'Java Batch Agent v2.2.21',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/java-batch/java-batch-2_2_19',
+	pagination_next: 'release-notes/java-batch/java-batch-2_2_20',
 	displayed_sidebar: 'releaseSidebar'
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/java-batch/java-batch-2_2_20",
-  "title": "Java Batch Agent v2.2.20",
-  "description": "2023년 10월 19일",
-  "source": "@site/docs/release-notes/java-batch/java-batch-2.2.20.mdx",
+  "id": "release-notes/java-batch/java-batch-2_2_21",
+  "title": "Java Batch Agent v2.2.21",
+  "description": "2023년 11월 23일",
+  "source": "@site/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
   "sourceDirName": "release-notes/java-batch",
-  "slug": "/release-notes/java-batch/java-batch-2_2_20",
-  "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20",
+  "slug": "/release-notes/java-batch/java-batch-2_2_21",
+  "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.20.mdx",
+  "editUrl": "undefined/docs/release-notes/java-batch/java-batch-2.2.21.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "java-batch-2_2_20",
-    "title": "Java Batch Agent v2.2.20",
+    "id": "java-batch-2_2_21",
+    "title": "Java Batch Agent v2.2.21",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/java-batch/java-batch-2_2_19",
+    "pagination_next": "release-notes/java-batch/java-batch-2_2_20",
     "displayed_sidebar": "releaseSidebar"
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Batch Agent v2.2.21",
-    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_21"
+    "title": "Java Batch Agent v2.2.22",
+    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_22"
   },
   "next": {
-    "title": "Java Batch Agent v2.2.19",
-    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_19"
+    "title": "Java Batch Agent v2.2.20",
+    "permalink": "/whatap-docs/release-notes/java-batch/java-batch-2_2_20"
   }
 };
 const assets = {
@@ -61,31 +124,32 @@ const assets = {
 
 
 
-const toc = [];
+
+const toc = [..._import_dl_java_batch_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     li: "li",
     p: "p",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2023년 10월 19일"
+      children: "2023년 11월 23일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "Feature"
-        }), " AWS MySQL 프로젝트의 SQL 추적"]
+          children: "Fixed"
+        }), " 30초 이상 배치 작업이 진행되지 않으면 추적이 종료되는 현상 수정"]
       }), "\n"]
-    })]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_java_batch_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

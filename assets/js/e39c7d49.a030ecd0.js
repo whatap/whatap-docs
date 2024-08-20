@@ -1552,7 +1552,7 @@ const frontMatter = {
 	title: 'DBX 에이전트 설정',
 	description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
 	keywords: [
-		'MySQL',
+		'Oracle',
 		'데이터베이스 모니터링',
 		'DBX 에이전트'
 	]
@@ -1576,7 +1576,7 @@ const metadata = {
     "title": "DBX 에이전트 설정",
     "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
     "keywords": [
-      "MySQL",
+      "Oracle",
       "데이터베이스 모니터링",
       "DBX 에이전트"
     ]
