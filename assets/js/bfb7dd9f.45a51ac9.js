@@ -57,7 +57,7 @@ const metadata = {
   },
   "sidebar": "altibaseSidebar",
   "previous": {
-    "title": "실시간 데이터베이스 성능 지표 확인",
+    "title": "대시보드",
     "permalink": "/whatap-docs/altibase/dashboard-intro"
   },
   "next": {

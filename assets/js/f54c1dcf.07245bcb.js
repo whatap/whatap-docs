@@ -369,6 +369,15 @@ function _createMdxContent(props) {
               children: "file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log\n"
             })
           })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+          product: "altibase",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='xos.conf'",
+              children: "file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log\n"
+            })
+          })
         }), "\n"]
       }), "\n"]
     })]
