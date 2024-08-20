@@ -57610,6 +57610,34 @@
     "zh": "Download without replacement value",
     "service_id": "ITM08352"
   },
+  "TTL08353": {
+    "en": "Total number of namespaces",
+    "ja": "フルネームスペース数",
+    "ko": "전체 네임스페이스 수",
+    "zh": "Total number of namespaces",
+    "service_id": "TTL08353"
+  },
+  "TTL08354": {
+    "en": "Total number of containers",
+    "ja": "コンテナ全体の数",
+    "ko": "전체 컨테이너 수",
+    "zh": "Total number of containers",
+    "service_id": "TTL08354"
+  },
+  "TTL08355": {
+    "en": "Total number of containers (excluding WhaTap)",
+    "ja": "コンテナの総数（WhaTapを除く）",
+    "ko": "전체 컨테이너 수 (와탭 제외)",
+    "zh": "Total number of containers (excluding WhaTap)",
+    "service_id": "TTL08355"
+  },
+  "TTL08356": {
+    "en": "Total number of application containers",
+    "ja": "アプリケーション・コンテナの総数",
+    "ko": "전체 애플리케이션 컨테이너 수",
+    "zh": "Total number of application containers",
+    "service_id": "TTL08356"
+  },
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
