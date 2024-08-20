@@ -2731,10 +2731,8 @@ const sidebars = {
             id: 'altibase/agent-settings'
           },
           items: [
-            'altibase/agent-network',
-            'altibase/agent-naming',
-            'altibase/agent-aws',
-            'altibase/agent-data',
+            'altibase/agent-dbx-settings',
+            'altibase/agent-xos-settings'
           ],
         },
         'altibase/agent-manage',
@@ -2746,7 +2744,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
