@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76118],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[13899],{
 
 /***/ 7212:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -416,7 +416,7 @@ function _createMdxContent(props) {
         children: ["모니터링할 대상 에이전트를 선택한 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "metric",
           className: "uitext"
-        }), " 섹션에 선택할 수 있는 목록이 표시됩니다. 목록에서 원하는 지표를 선택하세요."]
+        }), " 패널에 선택할 수 있는 목록이 표시됩니다. 목록에서 원하는 지표를 선택하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         product: "java,php,python,nodejs,golang,dotnet",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
@@ -450,7 +450,7 @@ function _createMdxContent(props) {
         }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "metric",
           className: "uitext"
-        }), " 섹션이 사라지고 차트 영역만 화면에 표시됩니다."]
+        }), " 패널이 사라지고 차트 영역만 화면에 표시됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -514,7 +514,7 @@ function _createMdxContent(props) {
             children: ["차트마다 인터벌을 설정할 수 있어 데이터의 집계 단위를 조정하여 다양한 시간 간격의 데이터를 시각화할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "metric",
               className: "uitext"
-            }), " 섹션의 오른쪽 상단에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            }), " 패널의 오른쪽 상단에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "시간 아이콘",
               src: (__webpack_require__(86994)/* ["default"] */ .A) + "",
               width: "24",
@@ -1470,7 +1470,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 55691:
+/***/ 72031:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1492,7 +1492,7 @@ const frontMatter = {
 	title: '메트릭스 차트',
 	description: '메트릭스 데이터를 차트로 조회할 수 있습니다.',
 	tags: [
-		'MongoDB',
+		'MySQL',
 		'데이터베이스',
 		'메트릭스',
 		'메트릭스 차트'
@@ -1501,21 +1501,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/metrics-chart-v2",
+  "id": "mysql/metrics-chart-v2",
   "title": "메트릭스 차트",
   "description": "메트릭스 데이터를 차트로 조회할 수 있습니다.",
-  "source": "@site/docs/mongodb/metrics-chart-v2.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/metrics-chart-v2",
-  "permalink": "/whatap-docs/mongodb/metrics-chart-v2",
+  "source": "@site/docs/mysql/metrics-chart-v2.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/metrics-chart-v2",
+  "permalink": "/whatap-docs/mysql/metrics-chart-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/metrics-chart-v2.mdx",
+  "editUrl": "undefined/docs/mysql/metrics-chart-v2.mdx",
   "tags": [
     {
       "inline": true,
-      "label": "MongoDB",
-      "permalink": "/whatap-docs/tags/mongo-db"
+      "label": "MySQL",
+      "permalink": "/whatap-docs/tags/my-sql"
     },
     {
       "inline": true,
@@ -1539,21 +1539,21 @@ const metadata = {
     "title": "메트릭스 차트",
     "description": "메트릭스 데이터를 차트로 조회할 수 있습니다.",
     "tags": [
-      "MongoDB",
+      "MySQL",
       "데이터베이스",
       "메트릭스",
       "메트릭스 차트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
-    "title": "MongoDB 지표",
-    "permalink": "/whatap-docs/mongodb/metrics-data-list"
+    "title": "MySQL 지표",
+    "permalink": "/whatap-docs/mysql/metrics-data-list"
   },
   "next": {
     "title": "메트릭스 차트",
-    "permalink": "/whatap-docs/mongodb/metrics-chart"
+    "permalink": "/whatap-docs/mysql/metrics-chart"
   }
 };
 const assets = {
