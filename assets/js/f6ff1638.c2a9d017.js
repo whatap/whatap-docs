@@ -2329,7 +2329,7 @@ function _createMdxContent(props) {
         children: "애플리케이션 사용자와 관련한 데이터를 수집한 카테고리입니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-          children: "수집 간격: 5초"
+          children: "수집 간격: 10초"
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
           children: "통계 데이터: 5분"
         }), "\n"]
