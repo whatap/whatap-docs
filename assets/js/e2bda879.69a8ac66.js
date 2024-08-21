@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[68479],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17995],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -929,7 +929,7 @@ function _createMdxContent(props) {
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: ["체크 해제 된 항목은 테이블에 표시되지 않습니다. 기본으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: ["체크가 해제된 항목은 테이블에 표시되지 않습니다. 기본으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                       children: "content"
                     })
@@ -960,12 +960,16 @@ function _createMdxContent(props) {
               })
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag_management",
-                  className: "uitext"
-                }), " 목록에 태그를 추가하면 추가한 순서대로 로그의 태그가 나열됩니다. 태그의 순서는 드래그하여 변경할 수 있습니다."]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-                children: "추가한 태그를 비활성화하면 비활성화한 태그는 로그의 태그에 노출되지 않습니다."
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag_management",
+                    className: "uitext"
+                  }), " 목록에 태그를 추가하면 추가한 순서대로 로그의 태그가 나열됩니다. 태그의 순서는 드래그하여 변경할 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "추가한 태그를 비활성화하면 비활성화한 태그는 로그의 태그에 노출되지 않습니다."
+                }), "\n"]
               }), "\n"]
             }), "\n"]
           }), "\n"]
@@ -1008,7 +1012,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 98272:
+/***/ 3616:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1032,23 +1036,22 @@ const frontMatter = {
 	keywords: [
 		'로그 모니터링',
 		'로그 트렌드',
-		'UI',
-		'PostgreSQL'
+		'UI'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/log-exp",
+  "id": "log/log-exp",
   "title": "로그 트렌드",
   "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-  "source": "@site/docs/postgresql/log-exp.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/log-exp",
-  "permalink": "/whatap-docs/postgresql/log-exp",
+  "source": "@site/docs/log/log-exp.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-exp",
+  "permalink": "/whatap-docs/log/log-exp",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/log-exp.mdx",
+  "editUrl": "undefined/docs/log/log-exp.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -1058,19 +1061,18 @@ const metadata = {
     "keywords": [
       "로그 모니터링",
       "로그 트렌드",
-      "UI",
-      "PostgreSQL"
+      "UI"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "logSidebar",
   "previous": {
     "title": "라이브 테일",
-    "permalink": "/whatap-docs/postgresql/log-lt"
+    "permalink": "/whatap-docs/log/log-lt"
   },
   "next": {
     "title": "로그 검색",
-    "permalink": "/whatap-docs/postgresql/log-search"
+    "permalink": "/whatap-docs/log/log-search"
   }
 };
 const assets = {
