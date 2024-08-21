@@ -384,6 +384,22 @@ function _createMdxContent(props) {
                       })
                     }), " 메뉴로 이동할 수 있습니다."]
                   }), "\n"]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                        children: "ServiceName"
+                      })
+                    }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                        children: "오브젝트 매니페스트"
+                      })
+                    }), " 정보를 확인하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                        children: "Service 목록"
+                      })
+                    }), " 메뉴로 이동할 수 있습니다."]
+                  }), "\n"]
                 }), "\n"]
               }), "\n"]
             }), "\n"]
