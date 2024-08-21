@@ -1,5 +1,96 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98615],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[26015],{
+
+/***/ 87124:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46378);
+
+
+const frontMatter = {
+	id: 'aws-log-exp',
+	title: '로그 트렌드',
+	description: 'AWS Log 모니터링의 로그 트렌드 메뉴를 안내합니다.',
+	keywords: [
+		'AWS Log',
+		'로그 트렌드',
+		'UI'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "aws-log/aws-log-exp",
+  "title": "로그 트렌드",
+  "description": "AWS Log 모니터링의 로그 트렌드 메뉴를 안내합니다.",
+  "source": "@site/docs/aws-log/aws-log-exp.mdx",
+  "sourceDirName": "aws-log",
+  "slug": "/aws-log/aws-log-exp",
+  "permalink": "/whatap-docs/aws-log/aws-log-exp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/aws-log/aws-log-exp.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "aws-log-exp",
+    "title": "로그 트렌드",
+    "description": "AWS Log 모니터링의 로그 트렌드 메뉴를 안내합니다.",
+    "keywords": [
+      "AWS Log",
+      "로그 트렌드",
+      "UI"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "awslogSidebar",
+  "previous": {
+    "title": "라이브 테일",
+    "permalink": "/whatap-docs/aws-log/aws-log-lt"
+  },
+  "next": {
+    "title": "로그 검색",
+    "permalink": "/whatap-docs/aws-log/aws-log-search"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -802,6 +893,7 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
+    em: "em",
     img: "img",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
@@ -860,18 +952,21 @@ function _createMdxContent(props) {
             sid: "column_settings",
             className: "uitext"
           }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "table_content_setting",
+            sid: "ITM08349",
             className: "uitext"
           }), " 옵션 메뉴가 나타납니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "log-table-contents-options.png",
-          desc: "로그 테이블 설정"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "로그 테이블 설정",
+            src: (__webpack_require__(8904)/* ["default"] */ .A) + "",
+            width: "886",
+            height: "90"
+          })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "컬럼 설정"
-              })
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "column_settings",
+              className: "uitext"
             }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -890,50 +985,76 @@ function _createMdxContent(props) {
               }), ": 컬럼을 추가하면 컬럼 순서 설정에 해당 컬럼이 추가됩니다. 원하는 컬럼을 드래그하여 컬럼의 순서를 변경하세요."]
             }), "\n"]
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+          type: "note",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "add_a_column",
+              className: "uitext"
+            }), " 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "log"
+              })
+            }), " 컬럼 선택을 해제할 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "ITM08349",
+              className: "uitext"
+            }), "을 확인할 수 없습니다."]
+          })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
           start: "2",
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "테이블 설정"
-            })
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "ITM08349",
+              className: "uitext"
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "log-table-contents.png",
           desc: "로그 테이블 컨텐츠 설정"
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "whether_display_content",
-              className: "uitext"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "로그 표시 여부"
+              })
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["체크된 항목은 테이블에 표시되지 않습니다. 기본으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "log",
-                  className: "uitext"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag",
-                  className: "uitext"
-                }), " 모두 체크가 되어있으며 두 가지 항목 모두 표시합니다."]
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["체크 해제 된 항목은 테이블에 표시되지 않습니다. 기본으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "content"
+                    })
+                  }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag",
+                    className: "uitext"
+                  }), " 모두 체크가 되어있으며 두 가지 항목 모두 표시합니다."]
+                }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag",
-                  className: "uitext"
-                }), "를 해제할 경우 테이블에서 로그의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag",
-                  className: "uitext"
-                }), "는 표시되지 않습니다."]
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag",
+                    className: "uitext"
+                  }), "를 해제할 경우 테이블에서 로그의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag",
+                    className: "uitext"
+                  }), "는 표시되지 않습니다."]
+                }), "\n"]
               }), "\n"]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
               img: "log-table-contents-remove-tag.png",
               desc: "로그 테이블 태그 미표시 sc"
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "tag_management",
-              className: "uitext"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "태그 관리"
+              })
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-                children: "태그 관리 목록에 태그를 추가하면 추가한 순서대로 로그의 태그가 나열됩니다. 태그의 순서는 드래그하여 변경할 수 있습니다."
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "tag_management",
+                  className: "uitext"
+                }), " 목록에 태그를 추가하면 추가한 순서대로 로그의 태그가 나열됩니다. 태그의 순서는 드래그하여 변경할 수 있습니다."]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
                 children: "추가한 태그를 비활성화하면 비활성화한 태그는 로그의 태그에 노출되지 않습니다."
               }), "\n"]
@@ -972,99 +1093,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 30588:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46378);
-
-
-const frontMatter = {
-	id: 'log-exp',
-	title: '로그 트렌드',
-	description: '로그 모니터링의 로그 트렌드 메뉴를 안내합니다.',
-	keywords: [
-		'로그 모니터링',
-		'로그 트렌드',
-		'UI',
-		'MySQL'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "mysql/log-exp",
-  "title": "로그 트렌드",
-  "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-  "source": "@site/docs/mysql/log-exp.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/log-exp",
-  "permalink": "/whatap-docs/mysql/log-exp",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/mysql/log-exp.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-exp",
-    "title": "로그 트렌드",
-    "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-    "keywords": [
-      "로그 모니터링",
-      "로그 트렌드",
-      "UI",
-      "MySQL"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "mysqlSidebar",
-  "previous": {
-    "title": "라이브 테일",
-    "permalink": "/whatap-docs/mysql/log-lt"
-  },
-  "next": {
-    "title": "로그 검색",
-    "permalink": "/whatap-docs/mysql/log-search"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 
@@ -1118,6 +1146,16 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-agent-option-level-2ef1693a2ebe164852014ef80fb11d66.png");
+
+/***/ }),
+
+/***/ 8904:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-table-contents-options-82d48d66fb5667df907e266beb87e8d6.png");
 
 /***/ }),
 

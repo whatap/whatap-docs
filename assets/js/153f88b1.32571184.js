@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[74773],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[73313],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2000,6 +2000,7 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
+    em: "em",
     img: "img",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
@@ -2058,18 +2059,21 @@ function _createMdxContent(props) {
             sid: "column_settings",
             className: "uitext"
           }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "table_content_setting",
+            sid: "ITM08349",
             className: "uitext"
           }), " 옵션 메뉴가 나타납니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "log-table-contents-options.png",
-          desc: "로그 테이블 설정"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "로그 테이블 설정",
+            src: (__webpack_require__(8904)/* ["default"] */ .A) + "",
+            width: "886",
+            height: "90"
+          })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "컬럼 설정"
-              })
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "column_settings",
+              className: "uitext"
             }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -2088,50 +2092,76 @@ function _createMdxContent(props) {
               }), ": 컬럼을 추가하면 컬럼 순서 설정에 해당 컬럼이 추가됩니다. 원하는 컬럼을 드래그하여 컬럼의 순서를 변경하세요."]
             }), "\n"]
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+          type: "note",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "add_a_column",
+              className: "uitext"
+            }), " 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "log"
+              })
+            }), " 컬럼 선택을 해제할 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "ITM08349",
+              className: "uitext"
+            }), "을 확인할 수 없습니다."]
+          })]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
           start: "2",
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "테이블 설정"
-            })
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "ITM08349",
+              className: "uitext"
+            }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "log-table-contents.png",
           desc: "로그 테이블 컨텐츠 설정"
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "whether_display_content",
-              className: "uitext"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "로그 표시 여부"
+              })
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["체크된 항목은 테이블에 표시되지 않습니다. 기본으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "log",
-                  className: "uitext"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag",
-                  className: "uitext"
-                }), " 모두 체크가 되어있으며 두 가지 항목 모두 표시합니다."]
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["체크 해제 된 항목은 테이블에 표시되지 않습니다. 기본으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "content"
+                    })
+                  }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag",
+                    className: "uitext"
+                  }), " 모두 체크가 되어있으며 두 가지 항목 모두 표시합니다."]
+                }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag",
-                  className: "uitext"
-                }), "를 해제할 경우 테이블에서 로그의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                  sid: "tag",
-                  className: "uitext"
-                }), "는 표시되지 않습니다."]
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag",
+                    className: "uitext"
+                  }), "를 해제할 경우 테이블에서 로그의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "tag",
+                    className: "uitext"
+                  }), "는 표시되지 않습니다."]
+                }), "\n"]
               }), "\n"]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
               img: "log-table-contents-remove-tag.png",
               desc: "로그 테이블 태그 미표시 sc"
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "tag_management",
-              className: "uitext"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "태그 관리"
+              })
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-                children: "태그 관리 목록에 태그를 추가하면 추가한 순서대로 로그의 태그가 나열됩니다. 태그의 순서는 드래그하여 변경할 수 있습니다."
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "tag_management",
+                  className: "uitext"
+                }), " 목록에 태그를 추가하면 추가한 순서대로 로그의 태그가 나열됩니다. 태그의 순서는 드래그하여 변경할 수 있습니다."]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
                 children: "추가한 태그를 비활성화하면 비활성화한 태그는 로그의 태그에 노출되지 않습니다."
               }), "\n"]
@@ -2176,7 +2206,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11291:
+/***/ 4809:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2201,22 +2231,22 @@ const frontMatter = {
 		'로그 모니터링',
 		'라이브 테일',
 		'UI',
-		'Oracle Pro'
+		'MySQL'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/log-lt",
+  "id": "mysql/log-lt",
   "title": "라이브 테일",
   "description": "로그 모니터링 라이브 테일을 안내합니다.",
-  "source": "@site/docs/oracle-pro/log-lt.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/log-lt",
-  "permalink": "/whatap-docs/oracle-pro/log-lt",
+  "source": "@site/docs/mysql/log-lt.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/log-lt",
+  "permalink": "/whatap-docs/mysql/log-lt",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/log-lt.mdx",
+  "editUrl": "undefined/docs/mysql/log-lt.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2227,18 +2257,18 @@ const metadata = {
       "로그 모니터링",
       "라이브 테일",
       "UI",
-      "Oracle Pro"
+      "MySQL"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "적용하기",
-    "permalink": "/whatap-docs/oracle-pro/log-db"
+    "permalink": "/whatap-docs/mysql/log-db"
   },
   "next": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/oracle-pro/log-exp"
+    "permalink": "/whatap-docs/mysql/log-exp"
   }
 };
 const assets = {
@@ -2356,6 +2386,16 @@ function MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,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");
+
+/***/ }),
+
+/***/ 8904:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-table-contents-options-82d48d66fb5667df907e266beb87e8d6.png");
 
 /***/ }),
 
