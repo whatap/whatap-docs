@@ -12156,9 +12156,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(4744)
     ],
     "0a1d388f": [
-        ()=>__webpack_require__.e(/* import() | 0a1d388f */ 94274).then(__webpack_require__.bind(__webpack_require__, 90939)),
+        ()=>__webpack_require__.e(/* import() | 0a1d388f */ 94274).then(__webpack_require__.bind(__webpack_require__, 10823)),
         "@site/docs/altibase/instance-monitoring.mdx",
-        /*require.resolve*/(90939)
+        /*require.resolve*/(10823)
     ],
     "0a3cee61": [
         ()=>__webpack_require__.e(/* import() | 0a3cee61 */ 34505).then(__webpack_require__.bind(__webpack_require__, 98767)),

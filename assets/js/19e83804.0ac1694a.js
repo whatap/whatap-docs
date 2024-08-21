@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[14897],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[38527],{
 
 /***/ 83961:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -243,12 +243,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, UI, Xclude} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
   if (!UI) _missingMdxReference("UI", true);
-  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -286,7 +285,7 @@ function _createMdxContent(props) {
           })
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-        product: "postgresql,mysql,oracle",
+        product: "postgresql,mysql,oracle,altibase",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "대시보드에서 사용자가 설정한 위젯의 설정과 레이아웃 상태를 저장하고 불러올 수 있습니다. 위젯의 크기를 조절하고, 원하는 위치에 배치해 새로운 프리셋을 만들 수 있습니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
@@ -350,9 +349,18 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "새로운 프리셋 이름을 입력하세요."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-            img: "apm-dashboard-preset-save.png",
-            desc: "프리셋 저장하기"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+            product: "java,python,php,nodejs,dotnet,golang",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+              img: "apm-dashboard-preset-save.png",
+              desc: "프리셋 저장하기"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+            product: "postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+              img: "db-dashboard-preset-save.png",
+              desc: "프리셋 저장하기"
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["에이전트 선택 내역을 같이 저장하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "ITM07345",
@@ -369,9 +377,9 @@ function _createMdxContent(props) {
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "프리셋 목록에서 새로 저장한 프리셋을 확인할 수 있습니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: ["새로 만든 프리셋에 변경 사항이 생겼다면 다시 프리셋을 저장해야 합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
@@ -385,22 +393,12 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "대시보드의 변경 사항을 저장하지 않고 다른 메뉴로 이동하면 변경 사항은 저장되지 않습니다."
             }), "\n"]
-          }), "\n"]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "java,php,python,golang,nodejs,dotnet",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "프리셋은 프로젝트 단위로 저장되어 다른 사용자와 공유할 수 있습니다."
             }), "\n"]
-          })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-          product: "java,php,python,golang,nodejs,dotnet",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: "프리셋은 사용자 계정으로 저장되며 현재는 다른 사용자와 공유할 수 없습니다. 더 나은 기능을 제공하도록 업데이트 예정입니다."
-            }), "\n"]
-          })
-        })]
+          }), "\n"]
+        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -674,7 +672,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle",
+      product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -826,7 +824,7 @@ function _createMdxContent(props) {
           desc: "위젯 크기 조절하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle",
+        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "위젯 크기 조절하기",
@@ -855,7 +853,7 @@ function _createMdxContent(props) {
           desc: "위젯 이동하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle",
+        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "위젯 이동하기",
@@ -884,7 +882,7 @@ function _createMdxContent(props) {
           desc: "위젯 삭제하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle",
+        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-dashboard-widget-remove.png",
           desc: "위젯 삭제하기"
@@ -907,11 +905,10 @@ function _createMdxContent(props) {
           desc: "위젯 추가하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle",
+        product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
           img: "db-dashboard-widget-add.png",
-          desc: "위젯 추가하기",
-          multi: "true"
+          desc: "위젯 추가하기"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "대시보드에서 빈 공간으로 마우스 커서를 이동한 다음 마우스 오른쪽 버튼을 클릭하세요. 팝업 메뉴에서 추가하려는 위젯을 선택하세요. 원하는 위치로 위젯을 배치하고 크기를 조절하세요."
@@ -1256,7 +1253,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 42962:
+/***/ 6020:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1278,6 +1275,74 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "tip",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_dashboard",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_instanceList",
+        className: "uitext"
+      }), " 메뉴에서 비교하려는 에이전트를 선택한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "multi_view",
+        className: "uitext"
+      }), " 버튼을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_multiInstance",
+        className: "uitext"
+      }), " 메뉴로 진입할 수 있습니다."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 69737:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
     code: "code",
     p: "p",
     table: "table",
@@ -1288,8 +1353,9 @@ function _createMdxContent(props) {
     tr: "tr",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, TabItem, Tabs} = _components;
+  }, {Cmdname, Link, TabItem, Tabs} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!Link) _missingMdxReference("Link", true);
   if (!TabItem) _missingMdxReference("TabItem", true);
   if (!Tabs) _missingMdxReference("Tabs", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
@@ -1298,12 +1364,13 @@ function _createMdxContent(props) {
       value: "activesession",
       label: "Active session",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "active_sessions",
           className: "uitext"
-        }), " 섹션의 테이블에 표시되는 컬럼 정보입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-          children: "currentOp"
-        }), " 명령으로 수집된 데이터입니다."]
+        }), " 테이블의 컬럼 항목에 대한 설명입니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
+          to: "https://redis.io/commands/client-list/",
+          children: "다음 링크"
+        }), "를 참조하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -1316,191 +1383,124 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "opid"
-              })
+              children: "id"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "operation의 고유 식별자(identifier)"
+              children: "고유한 64bit 클라이언트 아이디"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "type"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: ["값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "op"
-              }), "인 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "op"
-              }), " 필드에서 작업 유형 확인 가능"]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "host"
-              })
+              children: "addr"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "서버 이름"
+              children: "클라이언트의 IP 주소와 포트 번호"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "desc"
-              })
+              children: "age"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "총 연결 시간"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "cmd"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "마지막으로 실행된 명령"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "db"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "현재 데이터베이스 아이디"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "events"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "connectionId"
-              }), "를 포함한 클라이언트 설명"]
+                children: "r"
+              }), ": 클라이언트 소켓을 읽을 수 있음(event loop)", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "w"
+              }), ": 클라이언트 소켓이 쓰기 가능(event loop)"]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "active"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: ["작업이 시작되면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), ", idle이면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "false"
-              })]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "currentOpTime"
-              })
+              children: "fd"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "operation의 시작 시간"
+              children: "클라이언트 소켓 파일 디스크립터(file descriptor) 번호"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "op"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: ["operation 유형(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "none"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "update"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "insert"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "query"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "command"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "getmore"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "remove"
-              }), " 등)"]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "ns"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: ["네임스페이스 이름으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Database"
-              }), ".", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Collection"
-              }), " 으로 표시"]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "numYields"
-              })
+              children: "flags"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "작업이 수행된 수"
+              children: "클라이언트의 종류, N은 정상 클라이언트를 의미합니다. (normal/master/replica/pubsub)"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "waitingForLock"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: ["락(lock)을 대기하고 있으면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), ", 락(lock)을 획득하였으면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "false"
-              })]
+              children: "idle"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "연결이 유휴 상태(idle)인 시간(초)입니다."
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "waitingForFlowControl"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "flowcontrol"
-              }), "을 대기하고 있으면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              })]
+              children: "multi"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "MULTI/EXEC 컨텍스트의 명령 수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "obl"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "출력 버퍼 길이"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "oll"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "출력 목록 길이(버퍼가 가득 차있을 경우 응답이 이 목록에 대기됨)"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "omem"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "클라이언트가 출력 버퍼에 사용하는 메모리 양"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "psub"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "subscriptions 패턴 매칭 수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "qbuf"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "쿼리 버퍼 길이(0은 쿼리 의존이 아님)"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "qbuf-free"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "쿼리 버퍼 여유 공간(0은 버퍼가 가득차 있음을 의미, 여유 공간 없음)"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "sub"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "subscriptions 채널 수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "user"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "클라이언트의 인증된 사용자 이름"
             })]
           })]
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "와탭은 클라이언트와 관련한 정보를 기본 저장합니다."
+        })
       })]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
-      value: "locktree",
-      label: "Lock tree",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-              children: "항목"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-              children: "설명"
-            })]
-          })
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "holder type"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "holder"
-              }), " 세션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "type"
-              }), " (transaction id, tuple 등)"]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "lock mode"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "holder_mode"
-              }), " (exclusive lock, shared lock 등)"]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "waiter type"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "waiter"
-              }), " 세션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "type"
-              }), " (transaction id, tuple 등)"]
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "lock request"
-              })
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "waiter_mode"
-              }), " (exclusive lock, shared lock 등)"]
-            })]
-          })]
-        })]
-      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
       value: "process-info",
       label: "Process information",
@@ -1616,73 +1616,6 @@ function _createMdxContent(props) {
         })]
       })]
     })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 6020:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [];
-function _createMdxContent(props) {
-  const _components = {
-    admonition: "admonition",
-    p: "p",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-    type: "tip",
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_dashboard",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_instanceList",
-        className: "uitext"
-      }), " 메뉴에서 비교하려는 에이전트를 선택한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "multi_view",
-        className: "uitext"
-      }), " 버튼을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_multiInstance",
-        className: "uitext"
-      }), " 메뉴로 진입할 수 있습니다."]
-    })
   });
 }
 function MDXContent(props = {}) {
@@ -2178,7 +2111,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 38332:
+/***/ 43279:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2204,7 +2137,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6962);
 /* harmony import */ var _common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(93782);
 /* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(19193);
-/* harmony import */ var _common_items_db_mongodb_activesessions_columns_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(42962);
+/* harmony import */ var _common_items_db_redis_info_of_column_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(69737);
 /* harmony import */ var _common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(751);
 /* harmony import */ var _common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(22189);
 
@@ -2224,16 +2157,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/multi-instance-monitoring",
+  "id": "redis/multi-instance-monitoring",
   "title": "멀티 인스턴스 모니터링",
   "description": "다수의 데이터베이스 인스턴스 핵심 지표를 통합해 확인할 수 있는 기능을 제공합니다.",
-  "source": "@site/docs/mongodb/multi-instance-monitoring.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/multi-instance-monitoring",
-  "permalink": "/whatap-docs/mongodb/multi-instance-monitoring",
+  "source": "@site/docs/redis/multi-instance-monitoring.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/multi-instance-monitoring",
+  "permalink": "/whatap-docs/redis/multi-instance-monitoring",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/multi-instance-monitoring.mdx",
+  "editUrl": "undefined/docs/redis/multi-instance-monitoring.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2249,14 +2182,14 @@ const metadata = {
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "redisSidebar",
   "previous": {
     "title": "인스턴스 모니터링",
-    "permalink": "/whatap-docs/mongodb/instance-monitoring"
+    "permalink": "/whatap-docs/redis/instance-monitoring"
   },
   "next": {
     "title": "Flex 보드",
-    "permalink": "/whatap-docs/mongodb/flex-board"
+    "permalink": "/whatap-docs/redis/flex-board"
   }
 };
 const assets = {
@@ -2307,12 +2240,15 @@ const toc = [..._common_items_db_v2_mulit_instance_monitoring_desc_mdx__WEBPACK_
   "value": "컬럼 정보 안내",
   "id": "column-info",
   "level": 3
-}, ..._common_items_db_mongodb_activesessions_columns_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM];
+}, ..._common_items_db_redis_info_of_column_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, {
+  "value": "Cluster Info 위젯",
+  "id": "cluster-info-위젯",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    blockquote: "blockquote",
     code: "code",
     em: "em",
     h2: "h2",
@@ -2379,47 +2315,29 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "[XOS] CPU"
+                children: "Clusters"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "에이전트별 CPU 사용률을 실시간으로 확인할 수 있습니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "[XOS] Memory"
-              })
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "에이전트별 메모리 사용률을 실시간으로 확인할 수 있습니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "XOS Disk Usage"
-              })
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["에이전트별 디스크 사용률과 사용 가능 크기, 전체 크기 정보를 표시합니다. 위젯의 오른쪽 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "아이콘",
-              src: (__webpack_require__(36455)/* ["default"] */ .A) + "",
-              width: "24",
-              height: "24"
-            }), " 버튼을 선택하면 더 넓은 화면으로 펼쳐볼 수 있습니다."]
+            children: "Master 인스턴스와 Slave 인스턴스의 현황을 확인할 수 있습니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-            type: "tip",
+            type: "note",
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["데이터가 표시되지 않는다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "xos.conf"
-              }), " 파일에 다음 설정을 추가하세요."]
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Clusters"
+                })
+              }), " 위젯을 이용하려면 DBX 에이전트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.conf"
+              }), ")의 다음 옵션을 설정해야 합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-dbx-settings#cluster-set",
+                children: "다음 문서"
+              }), "를 참조하세요."]
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
-                metastring: "title='xos.conf'",
-                children: "# disk usage 0 이면 off, 단위: 초\ndisk_usage_interval=60\n"
+                metastring: "title=\"whatap.conf\"",
+                children: "cluster_name={cluster_name}\n"
               })
             })]
           }), "\n"]
@@ -2427,204 +2345,257 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Read requests"
+                children: "Instantaneous Ops Per Sec"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "초당 읽기 요청 수를 측정한 위젯입니다. 읽기 요청은 데이터베이스에서 데이터를 조회하거나 검색하는 쿼리, 집계 작업, 인덱스 스캔 등과 관련한 작업입니다. 데이터베이스의 사용 패턴의 변화를 감지하는데 유용합니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["산출 방식: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "query$opcounters"
-              }), " + ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "getmore$opcounters"
-              })]
-            }), "\n"]
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "Instantaneous Ops Per Sec",
+              src: (__webpack_require__(45869)/* ["default"] */ .A) + "",
+              width: "374",
+              height: "402"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["서버가 처리하는 초당 명령 수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "instantaneous_ops_per_sec"
+            }), ")를 파이 차트를 이용해 표시합니다. 여러 인스턴스 간의 성능을 비교하고 모니터링하는 지표로 사용할 수 있습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "tip",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "instantaneous_ops_per_sec"
+              }), " 지표는 서버가 처리하는 초당 명령 수입니다. 인스턴스가 현재 처리 중인 작업 부하를 추적하고 모니터링하는 데 유용합니다. 초당 명령 수는 서버가 받아들이고 처리하는 명령의 양을 나타내며, 서버의 작업 부하를 파악하고 성능 문제를 식별하는 데 도움이 됩니다."]
+            })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Write requests"
+                children: "Key Status"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "초당 쓰기 요청 수를 측정한 위젯입니다. 쓰기 요청은 데이터베이스에 새로운 데이터를 추가하거나 업데이트, 삭제와 관련한 작업입니다. 데이터베이스의 사용 패턴의 변화를 감지하는데 유용합니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["산출 방식: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "insert$opcounters"
-              }), " + ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "update$opcounters"
-              }), " + ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "delete$opcounters"
-              })]
+            children: "서버의 키(Key) 상태를 모니터링합니다. 데이터베이스의 상태를 이해하고 성능을 최적화하는 데 필요합니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Evicted Keys"
+                  })
+                }), ": 캐시되었거나 저장된 Key 중에 만료됐거나 메모리 정책에 따라 삭제된 키의 수를 표시합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Evicted Keys"
+                  })
+                }), " 지표가 증가하면 메모리 부족이나 캐시 정책에 문제가 있을 수 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Expired Keys"
+                  })
+                }), ": 만료된 Key 수를 표시합니다. Redis는 Key에 만료 시간을 설정할 수 있으며, 만료된 키는 자동으로 삭제됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Expired Keys"
+                  })
+                }), " 지표가 증가하면 데이터베이스에서 만료 정책을 검토하거나 사용자 동작을 점검할 필요가 있습니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Keyspace Hits"
+                  })
+                }), ": 데이터베이스에서 Key를 검색하고 가져오는 요청 중 캐시나 메모리에서 키를 찾는 성공 요청 수를 표시합니다. 캐시 효율성을 평가하고 Key에 대한 액세스 패턴을 이해하는 데 도움이 되는 지표입니다."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Keyspace Misses"
+                  })
+                }), ": 데이터베이스에서 Key를 검색하고 가져오는 요청 중 캐시나 메모리에서 키를 찾지 못한 실패 요청 수를 표시합니다. 캐시 효율성을 평가하고 성능 향상을 위한 조치를 취하는 데 필요한 지표입니다."]
+              }), "\n"]
             }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Read Latency"
-              })
-            }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "latency$reads$opLatencies"
-            }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "읽기 작업의 지연 시간(microsecond)을 측정한 위젯으로, 클라이언트가 읽기 작업을 요청하고 데이터베이스에서 해당 작업을 수행하는 데 걸린 시간입니다. 읽기 작업의 지연 시간이 긴 경우 인덱스를 최적화하거나 쿼리를 개선해 성능을 향상시키는 방법을 검토하세요."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Write Latency"
-              })
-            }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "latency$writes$opLatencies"
-            }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "쓰기 작업의 지연 시간(microsecond)을 측정한 위젯으로, 클라이언트가 쓰기 작업을 요청하고 데이터베이스에서 해당 작업을 수행하는 데 걸린 시간입니다. 쓰기 작업의 지연 시간이 긴 경우 인덱스를 최적화하거나 쓰기 작업을 배치 처리해 성능을 향상시키는 방법을 검토하세요."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Page Faults"
-              })
-            }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "page_faults$extra_info"
-            }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "페이지 폴트(page faults) 현상이 발생한 횟수를 측정한 위젯입니다. 페이지 폴트는 메모리 관리에서 발생하는 현상으로, 프로세스가 요청한 메모리 페이지가 물리적인 메모리에 없어서 디스크로부터 해당 페이지를 읽어와야 할 때 발생합니다. 이때 디스크 I/O가 발생해 작업이 지연될 수 있습니다. 일반적으로 시스템의 메모리 부족 상태를 의미합니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "데이터베이스의 읽기 및 쓰기 작업이 디스크 I/O에 의존하는지를 확인하고 메모리 부족 상태가 성능 문제의 원인이 되는지 파악할 수 있습니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
             type: "note",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["Page faults에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://www.mongodb.com/docs/v4.0/administration/analyzing-mongodb-performance/#page-faults",
-                children: "다음 링크"
-              }), "를 참조하세요."]
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "Redis 데이터베이스에서 키(Key)는 문자열, 해시, 리스트, 셋, 정렬 집합 등의 다양한 데이터 유형을 포함합니다."
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Active Connections"
+                children: "Connected Clients"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "active$connections"
+              children: "connected_clients"
             }), ")"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현재 작업 중인 클라이언트의 연결 수를 측정한 위젯입니다. 데이터베이스 서버에서 동시에 처리할 수 있는 클라이언트의 연결 수를 모니터링할 수 있습니다. 높은 연결 수는 서버 용량을 증설할 필요가 있음을 의미합니다. 반대의 경우 문제가 발생했을 가능성이 있으므로 시스템 상태를 신속히 파악해 보는 것이 좋습니다."
+            children: "현재 접속 중인 클라이언트의 수입니다. 서버에 대한 동시 연결 수를 파악할 수 있습니다. 서버에 대한 클라이언트 연결 수가 급격하게 증가한다면 예상치 못한 트래픽 증가나 다른 문제를 나타낼 수 있으므로, 이러한 상황을 신속하게 인식하고 대응할 필요가 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Read Clients"
+                children: "Used Memory"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "readers$activeClients$globalLock"
+              children: "used_memory"
             }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MongoDB의 전역 잠금(global lock)에서 현재 읽기 작업을 수행 중인 클라이언트의 수를 측정한 위젯입니다. 데이터베이스 서버가 읽기 작업을 위해 얼마나 많은 수의 클라이언트를 처리하는지 파악할 수 있습니다. 데이터베이스의 성능을 모니터링하고 응답 시간을 추적하는데 유용한 지표입니다. 과도한 읽기 작업이 발생할 경우 성능 저하의 원인이 될 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["데이터를 저장하기 위해 요청한 메모리 양(byte)입니다. 운영체제에서 할당한 메모리양과 차이가 있을 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "used_memory"
+            }), " 지표가 너무 높다면 메모리 관리 정책을 검토하고, 데이터 세트를 최적화하여 메모리 사용량을 줄이는 것이 필요할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Write Clients"
+                children: "Total Commands"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "writers$activeClients$globalLock"
+              children: "total_commands_processed"
             }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현재 MongoDB의 전역 잠금(global lock)에서 쓰기 작업을 수행 중인 클라이언트의 수를 측정한 위젯입니다. 데이터베이스 서버가 쓰기 작업을 위해 얼마나 많은 수의 클라이언트를 처리하는지 파악할 수 있습니다. 데이터베이스의 성능을 모니터링하고 응답 시간을 추적하는데 유용한 지표입니다. 과도한 쓰기 작업이 발생할 경우 성능 저하의 원인이 될 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["서버를 시작한 이후 처리한 총 명령 수를 표시하는 위젯입니다. 서버가 수행한 모든 명령의 누적 횟수를 나타내며, 서비스를 제공하는 동안 처리한 모든 클라이언트의 요청 수를 포함합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "total_commands_processed"
+            }), " 지표는 서버의 활동 수준을 파악하고 성능을 평가하는데 유용한 지표입니다. 이 지표는 시간이 지남에 따라 증가하며, 값의 변화를 추적해 서버의 활동 수준을 계속 모니터링할 필요가 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Queued Read Requests"
+                children: "Used CPU"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "readers$currentQueue$globalLock"
+              children: "used_cpu"
             }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현재 시스템에서 대기 중인 읽기 작업을 처리하기 위해 전역 잠금(global lock)을 대기 중인 클라이언트의 수를 측정한 위젯입니다. 데이터베이스의 성능 및 확장성을 평가할 수 있는 정보를 제공합니다. 대기 중인 읽기 요청 작업이 많을 수록 클라이언트의 요청에 대한 응답 시간이 늘어날 수 있으며, 처리량이 한계에 도달할 수 있습니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "대기 중인 읽기 작업이 급격하게 증가할 경우 서버의 리소스 증설을 검토하거나, 대기 중인 읽기 작업의 원인을 분석하고 쿼리 최적화 및 인덱스 튜닝 등의 조치를 통해 병목 현상을 해결할 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Redis는 인스턴스별로 하나의 CPU를 사용하며 할당된 CPU 사용량을 표시합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "used_cpu"
+            }), " 지표는 서버가 CPU 자원을 어떻게 사용하는지를 파악할 수 있습니다. 이 지표가 예상치 못한 수준으로 증가하면 성능 문제로 인식하고 성능을 최적화하는 것이 필요합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Queued Write Requests"
+                children: "Commands(/S)"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "writers$currentQueue$globalLock"
+              children: "instantaneous_ops_per_sec"
             }), ")"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["서버가 처리하는 초당 명령 수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "instantaneous_ops_per_sec"
+            }), ")를 시간의 경과에 따른 각 인스턴스의 지푯값을 시계열 차트를 통해 표시합니다. 시간 경과에 따른 추이를 모니터링하고 성능 트렌드 및 이슈를 식별하는데 유용한 위젯입니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "tip",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "instantaneous_ops_per_sec"
+              }), " 지표는 서버가 처리하는 초당 명령 수입니다. 인스턴스가 현재 처리 중인 작업 부하를 추적하고 모니터링하는 데 유용합니다. 초당 명령 수는 서버가 받아들이고 처리하는 명령의 양을 나타내며, 서버의 작업 부하를 파악하고 성능 문제를 식별하는 데 도움이 됩니다."]
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Total Net Input Bytes"
+              })
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현재 시스템에서 대기 중인 쓰기 작업을 처리하기 위해 전역 잠금(global lock)을 대기 중인 클라이언트의 수를 측정한 위젯입니다. 데이터베이스의 성능을 평가하고 최적화하기 위한 필수 지표입니다. 대기 중인 쓰기 작업이 늘어나면 시스템 성능이 저하되거나 응답 시간이 증가할 수 있습니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "리소스 증설을 검토하거나 어떤 작업이 병목 현상을 유발하는지 파악해볼 필요가 있습니다."
+            children: "서버가 수신한 총 네트워크 입력 양(bytes)을 나타내는 위젯입니다. 클라이언트로부터 받은 모든 네트워크 트래픽의 총량을 측정합니다. 이 위젯을 통해 클라이언트가 서버와 통신 중에 소비한 네트워크 대역폭을 파악하는데 도움이 됩니다. 클라이언트의 활동 수준을 추적하고 네트워크 부하를 관리하는데 유용할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Resident Memory"
+                children: "Blocked Clients"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "resident$mem"
+              children: "blocked_clients"
             }), ")"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현재 시스템에서 프로세스가 사용하는 메모리 사이즈(MB)입니다. 얼마나 많은 메모리를 사용하는지 파악할 수 있습니다. 메모리 사용량 추적을 통해 메모리 사용량을 최적화하여 성능을 향상시키고, 메모리 리소스를 효율적으로 활용하는데 중요한 지표가 됩니다. 또한 더 많은 메모리가 필요한지, 쌰드를 추가해야 하는지를 결정하는데 도움이 됩니다."
+            children: "서버에서 현재 블록 상태에 있는 클라이언트 수를 표시합니다. 블록된 클라이언트는 서버에서 특정 작업을 대기하고 있는 상태로, 대기 중인 작업이 완료될 때까지 클라이언트가 차단됩니다. 얼마나 많은 수의 클라이언트가 블록 상태인지 모니터링할 수 있습니다. 이 지표를 통해 서버의 현재 부하 상태를 쉽게 파악할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Virtual Memory"
+                children: "Keys Total"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "virtual$mem"
+              children: "keys_total"
             }), ")"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현재 시스템에서 프로세스가 사용하는 가상 메모리 사이즈(MB)입니다. 현재 실행 중인 환경에서 얼마나 많은 메모리 리소스를 요구하는지를 파악할 수 있습니다. 가상 메모리의 사이즈를 파악하면 더 많은 물리 메모리가 필요할지, 가상 메모리 사용량을 줄이기 위한 조치를 결정하는데 도움이 됩니다."
+            children: "Redis 데이터베이스에 저장된 총 키(Key)의 수입니다. Key는 문자열, 해시, 리스트, 셋, 정렬 집합 등의 다양한 데이터 유형을 포함합니다. 데이터베이스에 저장된 전체 데이터의 양을 추적해 데이터베이스의 크기를 이해하고 데이터 성장 추이를 파악할 수 있습니다. 이 지표가 급격하게 증가한다면 추가 메모리를 할당하거나 데이터 정리 정책을 검토할 필요가 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Network Out"
+                children: "Evicted Keys"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "bytesOut$network"
+              children: "evicted_keys"
             }), ")"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클라이언트나 기타 인스턴스의 연결을 통해 서버가 보낸 총 바이트 수입니다. 데이터베이스 서버가 외부로부터 요청을 받고 응답을 반환할 때 전송한 데이터의 총량을 의미합니다. 데이터베이스 서버에서 발생하는 네트워크 트래픽을 파악할 수 있으며, 이를 통해 네크워크 대역폭이나 서버 리소스 사용에 대한 최적화를 진행할 수 있습니다. 또한 높은 네트워크 트래픽은 응답 시간의 증가와 같은 성능 문제와 연관되어 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["데이터베이스의 maxmemory 제한에 의해 제거된 키(Key)의 수입니다. 제거 정책은 구성 파일의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "maxmemory-policy"
+            }), " 설정에 따릅니다. 일반적으로 Key와 관련한 데이터의 유효 기간이 만료되었거나, 메모리 부족 등의 이유로 키를 삭제하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "evicted_keys"
+            }), " 지표는 증가합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "evicted_keys"
+            }), " 지표 모니터링을 통해서 Key가 얼마나 자주 삭제되는지 추적하고 메모리 사용량과 성능을 파악할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Network In"
+                children: "Keyspace Hits"
               })
             }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "bytesIn$network"
+              children: "keyspace_hits"
             }), ")"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["Key 조회 요청 중 성공한 수입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "get key"
+            }), " 값이 있으면 1이 증가합니다. Hit Rate는 (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "keyspace_hits"
+            }), " / (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "keyspace_hits"
+            }), " + ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "keyspace_misses"
+            }), ") * 100 )으로 계산할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "keyspace_hits"
+            }), " 지표는 데이터베이스 서버의 캐시 효율성을 평가하고 성능을 개션하는데 중요한 지표 중 하나입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Rdb Changes Since Last Save"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["데이터베이스에서 마지막 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "SAVE"
+            }), " 명령 이후 변경된 데이터의 양을 나타내는 위젯입니다. 변경된 데이터의 양을 추적해 데이터의 변화 정도를 파악할 수 있습니다. 변경된 데이터의 양이 많다면 백업 주기를 조정하거나 데이터 손실 가능성을 줄이는 데터 백업 정책을 검토하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Total Net Output Bytes"
+              })
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클라이언트나 기타 인스턴스의 연결을 통해 서버가 수신한 총 바이트 수입니다. 데이터베이스 서버가 외부로부터 수신한 요청 및 데이터의 총량을 의미하며, 클라이언트가 데이터베이스 서버로부터 요청을 보내고 응답을 받을 때 발생하는 데이터 전송량을 포함합니다. 특정 애플리케이션 또는 작업에서 데이터베이스와 어떻게 통신을 사용하는지 파악할 수 있습니다. 또한 네트워크 트래픽의 추이를 파악하여 시스템의 용량을 게획하고 확정성을 평가할 수 있습니다."
+            children: "데이터베이스 서버가 클라이언트에게 전송한 모든 네트워크 트래픽의 양을 표시한 위젯입니다. 서버가 클라이언트에 데이터를 전송하는 활동을 추적할 수 있습니다. 이를 통해 서버의 응답 속도 및 클라이언트 요청에 대한 처리 성능을 평가할 수 있습니다."
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "전역 잠금(globl lock)은 MongoDB에서 데이터의 일관성을 유지하기 위해 사용되는 메커니즘입니다. 읽기와 쓰기 작업 모두에 적용되며, 작업을 수행하려는 클라이언트는 전역 잠금을 획득해야 합니다."
-        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_mim_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -2643,7 +2614,87 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "column-info",
         children: "컬럼 정보 안내"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_mongodb_activesessions_columns_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_redis_info_of_column_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_download_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_session_table_new_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "cluster-info-위젯",
+        children: "Cluster Info 위젯"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "Redis 클러스터의 상태와 구성 정보를 테이블 형식으로 제공하는 위젯입니다. 여러 인스턴스로 구성된 클러스터의 전반적인 상태를 하눈에 파악할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "테이블에 표시된 각 열에 대한 정보는 다음과 같습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "instance"
+              })
+            }), ": 클러스터에 속한 각 인스턴스의 이름 또는 식별자입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "cluster name"
+              })
+            }), ": 클러스터를 식별하기 위한 클러스터의 이름입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "flags"
+              })
+            }), ": 각 인스턴스의 상태나 특성을 나타내는 플래그 정보입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "ip"
+              })
+            }), ": 각 인스턴스의 IP 주소입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "link status"
+              })
+            }), ": 각 인스턴스의 연결 상태입니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "slots"
+              })
+            }), ": 클러스터에서 사용되는 슬롯(slot) 정보입니다. 각 슬롯은 클러스터 내에서 데이터의 일부를 담당합니다. 이 정보를 통해 클러스터의 데이터 분산 및 로드 밸런싱 상태를 파악할 수 있습니다."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Cluster Info"
+            })
+          }), " 위젯을 이용하려면 DBX 에이전트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), ")의 다음 옵션을 설정해야 합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "agent-dbx-settings#cluster-set",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "cluster_name={cluster_name}\n"
+          })
+        })]
+      })]
     })]
   });
 }
@@ -2684,6 +2735,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,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");
+
+/***/ }),
+
+/***/ 45869:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/db-dashboard-instaneous-widget-77598aa58270a4578f2da45da1129d97.png");
 
 /***/ }),
 
@@ -2834,16 +2895,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI1cHgiIHZpZXdCb3g9IjAgMCAyNCAyNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZG93bmxvYWQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODM2LjAwMDAwMCwgLTI3MTEuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJhcHBsaWNhdGlvbi1pY29ucyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAuMDAwMDAwLCAyMzQ2LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImljLWRvd25sb2FkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3OTYuMDAwMDAwLCAzNjUuMDY3Mjg0KSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy4wMDAwMDAsIDIuMDAwMDAwKSIgaWQ9Ikljb24iPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTIsNy45MzI3MTYxMiBMMTIsNC40MjcyOTU0OGUtMTQgTDYsNC40MjcyOTU0OGUtMTQgTDYsNy45MzI3MTYxMiBMMiw3LjkzMjcxNjEyIEw5LDE0LjkzMjcxNjEgTDE2LDcuOTMyNzE2MTIgTDEyLDcuOTMyNzE2MTIgWiBNMCwxNi45MzI3MTYxIEwwLDE4LjkzMjcxNjEgTDE4LDE4LjkzMjcxNjEgTDE4LDE2LjkzMjcxNjEgTDAsMTYuOTMyNzE2MSBMMCwxNi45MzI3MTYxIFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
-
-/***/ }),
-
-/***/ 36455:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNHB4O2hlaWdodDogMjRweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtY2FyZXQtcmlnaHQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY0LjAwMDAwMCwgLTI0NC4wMDAwMDApIiBmaWxsPSIjOTU5NTk1Ij4KICAgICAgICAgICAgPGcgaWQ9ImRpcmVjdGlvbmFsLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDExOS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpYy1jYXJldC1yaWdodCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI0LjAwMDAwMCwgMTI1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkuMDAwMDAwLCA2LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjAwMDAwMCwgNi4wMDAwMDApIHNjYWxlKC0xLCAxKSByb3RhdGUoLTI3MC4wMDAwMDApIHRyYW5zbGF0ZSgtNC4wMDAwMDAsIC02LjAwMDAwMCkgIiBkPSJNLTIgMiA0IDEwIDEwIDJ6Ij48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
 
 /***/ }),
 
