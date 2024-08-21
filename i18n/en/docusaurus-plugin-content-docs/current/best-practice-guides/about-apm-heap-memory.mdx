@@ -10,6 +10,16 @@ keywords:
 displayed_sidebar: learningSidebar
 ---
 
+:::note 
+
+See the following Java official documentation link. 
+
+- [Java SE 22](https://docs.oracle.com/en/java/javase/22/)
+
+- [Java Memory Usage](https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryUsage.html)
+
+:::
+
 The heap memory-related metrics and their alert configurations for the application project are described.
 
 ## Heap memory metrics{#heap-memory-intro}
@@ -28,6 +38,8 @@ The heap memory-related metrics are described that can be seen in **_Metrics sea
 
 #### Heap Memory
 
+You can check it after selecting the `app_proc_counter` category.
+
 - **Heap commit** `heap_committed`
 
   This indicates the heap memory committed for use by the JVM.
@@ -36,15 +48,21 @@ The heap memory-related metrics are described that can be seen in **_Metrics sea
 
   This indicates the initial heap memory that the JVM requests to the OS for memory control.
 
-- **Heap Max Usage** `heap_max`
+- **Maximum heap size** `heap_max`
 
-  This indicates the maximum heap memory that the JVM can use for memory control. 
+  This indicates the maximum heap memory that the JVM can use for memory control.
 
 - **Heap use** `heap_used`
 
-  This indicates the heap memory used by the JVM. 
+  This indicates the heap memory being used by the JVM.
+
+- **Total heap usage** `heap_tot`
+
+  It indicates the total heap memory allocated to the JVM.
 
 #### Non-heap Memory
+
+You can check it after selecting the `java_memory` category.
 
 - **Heap commit** `nonheap_committed`
 
@@ -54,9 +72,15 @@ The heap memory-related metrics are described that can be seen in **_Metrics sea
 
   This indicates the initial non-heap memory that the JVM requests to the OS for memory control.
 
-- **Non-heap max usage** `nonheap_max`
+- **Non-heap total usage** `nonheap_max`
 
-  This indicates the maximum non-heap memory that the JVM can use for memory control. 
+  This indicates the maximum non-heap memory usage that the JVM can use for memory control. 
+
+  :::note 
+
+  If the maximum memory sizes for metaspace and JIT code cache are not defined, it returns `-1`. 
+
+  :::
 
 - **Non-heap use** `nonheap_used`
 
@@ -68,17 +92,17 @@ Home > Select Project > **_Analysis_** > **_Metrics Chart_**
 
 The heap memory-related metrics are described that can be seen in **_Metrics chart_**.
 
-- **Heap total** `heap_tot`
+- **Maximum heap size** `heap_max`
 
-  It indicates the total memory for the JVM. 
+  This indicates the maximum heap memory that the JVM can use for memory control. 
+
+- **Total heap usage** `heap_tot`
+
+  It indicates the total heap memory allocated to the JVM.
 
 - **Heap use** `heap_use`
 
   This indicates the heap memory being used by the JVM. 
-
-- **Heap Max Usage** `heap_max`
-
-  This indicates the maximum memory that the JVM can allocate.
 
 - **Heap perm area usage** `heap_perm`
 
@@ -90,7 +114,7 @@ The heap memory-related metrics are described that can be seen in **_Metrics cha
 
 :::note
 
-For more information about application metrics, see [the following](../java/metrics-app). 
+For more information about application metrics, see [the following](../java/metrics-app).
 
 :::
 

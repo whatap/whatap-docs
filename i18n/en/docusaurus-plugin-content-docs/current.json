@@ -345,7 +345,7 @@
   },
   "sidebar.dboracleSidebar.doc.지원 환경": {
     "message": "Supported Environment",
-    "description": "The label for the doc item 지원 환경 in sidebar dboracleSidebar, linking to the doc oracle/monitoring-support"
+    "description": "The label for the doc item 지원 환경 in sidebar dboracleSidebar, linking to the doc oracle-v1/monitoring-support"
   },
   "sidebar.mysqlSidebar.category.설치하기": {
     "message": "Installation",
