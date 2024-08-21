@@ -85,6 +85,10 @@ const toc = [{
   "value": "릴리스 노트",
   "id": "릴리스-노트",
   "level": 3
+}, {
+  "value": "새로운 기능",
+  "id": "새로운-기능",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -326,6 +330,13 @@ function _createMdxContent(props) {
               children: "소프트웨어 프록시"
             }), " 문서를 참조하세요."]
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["와탭 모니터링 서비스의 새로운 기능과 주요 변경 사항을 한 눈에 확인하고 싶다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "blog",
+              children: "새로운 기능"
+            }), " 문서를 참조하세요."]
+          }), "\n"]
         }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -427,7 +438,22 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "reference",
           children: "참조 문서"
-        }), " 메뉴는 와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집을 소개합니다. 메트릭스 정의, 와탭 메트릭스 조회를 위한 쿼리 언어 MXQL의 문법 및 명령어, Open API 활용 안내 및 용어 사전을 제공합니다. 또한 상품별 문서를 PDF 파일로 제공합니다. PDF 파일은 매달 초 지난 업데이트를 반영해 제공합니다. FAQ 문서는 지속적으로 업데이트해 제공할 예정입니다."]
+        }), " 메뉴는 와탭 Docs에서 사용하는 주요 개념 및 용어에 대한 자료집을 소개합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "metrics/common-metrics-intro",
+          children: "메트릭스 정의"
+        }), ", 와탭 메트릭스 조회를 위한 쿼리 언어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "mxql/mxql-overview",
+          children: "MXQL의 문법 및 명령어"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "openapi-spec",
+          children: "Open API 활용 안내"
+        }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "glossary",
+          children: "용어 사전"
+        }), "을 제공합니다. 또한 상품별 문서를 PDF 파일로 제공합니다. PDF 파일은 매달 초 지난 업데이트를 반영해 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "faq",
+          children: "FAQ"
+        }), " 문서는 지속적으로 업데이트해 제공할 예정입니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -439,6 +465,17 @@ function _createMdxContent(props) {
           href: "release-notes",
           children: "릴리스 노트"
         }), " 메뉴에서 와탭 모니터링 서비스의 최신 기능 및 향상된 기능, 중요한 보안 패치에 관한 정보를 확인할 수 있습니다. 사용자 편의를 위해 서비스 릴리스 노트와 에이전트별 릴리스 노트를 구분하여 따로 제공합니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "새로운-기능",
+        children: "새로운 기능"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "blog",
+          children: "새로운 기능"
+        }), " 메뉴에서 와탭 모니터링 서비스의 타임라인 기준 서비스 개요와 분기별 안내를 제공합니다. 서비스 개요의 경우 타임라인 기준으로 신규 기능을 한 눈에 조회할 수 있습니다. 분기 안내의 경우 와탭 상품별 신규 기능 및 주목할 만한 변경 사항과 서비스 및 에이전트 개요를 분기별로 요약해 제공합니다. 현재는 국문 안내만을 제공합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

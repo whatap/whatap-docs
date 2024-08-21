@@ -89,6 +89,7 @@ function _createMdxContent(props) {
     h3: "h3",
     img: "img",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     ol: "ol",
     p: "p",
     section: "section",
@@ -109,7 +110,10 @@ function _createMdxContent(props) {
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["클러스터 프로젝트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+      children: ["클러스터 프로젝트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        class: "my",
+        children: "CP"
+      }), ")에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "네임스페이스 관리"
         })
@@ -186,6 +190,26 @@ function _createMdxContent(props) {
             children: "확인"
           })
         }), " 버튼을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "주의 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["네임스페이스 프로젝트 추가 시 해당 네임스페이스는 클러스터 프로젝트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            class: "my",
+            children: "CP"
+          }), ")에서 별도의 와탭 프로젝트로 분리됩니다. 추가된 네임스페이스 프로젝트에는 새로운 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "프로젝트 액세스 키"
+          }), "가 부여됩니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["분리된 네임스페이스에 애플리케이션 모니터링이 설치되어있는 경우, 애플리케이션 모니터링 설정 내 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "프로젝트 액세스 키"
+          }), "를 새로 추가된 네임스페이스 프로젝트의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "프로젝트 액세스 키"
+          }), "로 변경해야 합니다."]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
