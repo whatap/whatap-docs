@@ -34,7 +34,7 @@ export default function DocItemContent({children}) {
           <Heading as="h1">{syntheticTitle}</Heading>
         </header>
       )}
-      {frontMatter.isNotTranslated && (
+      {frontMatter.isTranslationMissing && (
         <Admonition type="warning" title="Not translated">
           This page is currently being translated. We will complete the translation as soon as possible.
         </Admonition>
