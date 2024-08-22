@@ -2828,6 +2828,17 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'altibase/analysis-count-trend',
+                'altibase/analysis-lock-and-deadlock',
+                'altibase/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2836,6 +2847,12 @@ const sidebars = {
                 id: 'altibase/metrics-intro'
               },
               items: [
+                'altibase/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'altibase/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'altibase/metrics-chart',
                 'altibase/metrics-search',
                 'altibase/metrics-detect-anormal',
@@ -2843,19 +2860,36 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'altibase/analysis-function',
                 'altibase/stat',
+                'altibase/table-space-size',
                 'altibase/report-intro',
-                'altibase/integrated-report',
               ]
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'oracle/log-main'
+              },
+              items: [
+                'altibase/log-db',
+                'altibase/log-lt',
+                'altibase/log-exp',
+                'altibase/log-search',
+                'altibase/log-setting',
+                'altibase/log-parser',
+              ]
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
