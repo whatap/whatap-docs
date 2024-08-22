@@ -1,3 +1,4 @@
+// 다국어
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -8,14 +9,14 @@ const urls = {
     //     'https://docs.whatap.io/release-notes/service/service-2_3_x',
     //     'https://docs.whatap.io/release-notes/service/service-2_4_x',
     // ],
-    // en: [
-    //     'https://docs.whatap.io/en/release-notes/service/service-2_3_x',
-    //     'https://docs.whatap.io/en/release-notes/service/service-2_4_x',
-    // ],
-    ja: [
-        'https://docs.whatap.io/ja/release-notes/service/service-2_3_x',
-        'https://docs.whatap.io/ja/release-notes/service/service-2_4_x',
-    ]
+    en: [
+        'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
+        // 'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
+    ],
+    // ja: [
+    //     'https://docs.whatap.io/ja/release-notes/service/service-1_112_x',
+    //     'https://docs.whatap.io/ja/release-notes/service/service-1_114_x',
+    // ]
 };
 
 async function extractFeaturesAndUpdateMDXDocuments() {
