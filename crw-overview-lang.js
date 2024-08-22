@@ -1,4 +1,4 @@
-// 다국어
+// 다국어3(오류 수정됨??) // 날짜 위치 영문 기준 수정 예정
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -6,12 +6,12 @@ const path = require('path');
 
 const urls = {
     // ko: [
-    //     'https://docs.whatap.io/release-notes/service/service-2_3_x',
-    //     'https://docs.whatap.io/release-notes/service/service-2_4_x',
+    //     'https://docs.whatap.io/release-notes/service/service-1_112_x',
+    //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
     // ],
     en: [
+        'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
         'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
-        // 'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
     ],
     // ja: [
     //     'https://docs.whatap.io/ja/release-notes/service/service-1_112_x',
@@ -32,7 +32,10 @@ async function extractFeaturesAndUpdateMDXDocuments() {
                 const features = [];
                 $('section.remark-sectionize-h2').each((index, element) => {
                     const version = $(element).find('h2').text().trim();
-                    const date = $(element).find('h2 + p').text().trim();
+                    let date = $(element).find('h2 + p').text().trim();
+                    if (lang === 'en') {
+                        date = formatDateToISO(parseDate(date, lang)); // 영문(en) 날짜를 ISO 형식으로 변환
+                    }
                     console.log(`${version} - ${date} [${lang}]`);
 
                     $(element).find('h3').each((index, h3Element) => {
@@ -201,23 +204,6 @@ function createBackup(filename) {
     console.log(`Backup created: ${backupFileName}`);
 }
 
-// function sortByDateAndRewriteMDX(filename) {
-//     try {
-//         const content = fs.readFileSync(filename, 'utf-8');
-//         const features = content.trim().split('\n\n').map(line => {
-//             const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
-//             return { line, date: match ? parseDate(match[1], 'ja') : null }; // locale 기준으로 변경 필요
-//         });
-
-//         features.sort((a, b) => b.date - a.date);  // 최신 날짜가 상단에 오도록 내림차순 정렬
-//         const sortedContent = features.map(item => item.line).join('\n\n');
-//         fs.writeFileSync(filename, sortedContent);
-//         console.log(`MDX file sorted and updated: ${filename}`);
-//     } catch (error) {
-//         console.error('Error sorting and rewriting MDX file:', error);
-//     }
-// }
-
 function determineLocale(dateString) {
     // 날짜 문자열 기준 로케일 설정
     if (/年/.test(dateString)) {
@@ -226,6 +212,8 @@ function determineLocale(dateString) {
         return 'ko'; // 한국어
     } else if (/^\w+\s\d+,\s\d{4}$/.test(dateString)) {
         return 'en'; // 영어 (날짜 형식: "Month Day, Year")
+    } else if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+        return 'iso'; // ISO 형식 (YYYY-MM-DD)
     }
     return null; // 로케일을 결정할 수 없는 경우
 }
@@ -260,6 +248,17 @@ function parseDate(dateString, locale) {
             return new Date(year, month, day);
         }
     } else if (locale === 'en') {
+        // ISO 형식인지 먼저 확인
+        if (/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+            const match = dateString.match(/(\d{4})-(\d{2})-(\d{2})/);
+            if (match) {
+                const year = parseInt(match[1]);
+                const month = parseInt(match[2]) - 1;
+                const day = parseInt(match[3]);
+                return new Date(year, month, day);
+            }
+        }
+
         const match = dateString.match(/(\w+)\s(\d{1,2}),\s(\d{4})/);
         if (match) {
             const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -279,10 +278,26 @@ function parseDate(dateString, locale) {
             const day = parseInt(match[3]);
             return new Date(year, month, day);
         }
+    } else if (locale === 'iso') {
+        const match = dateString.match(/(\d{4})-(\d{2})-(\d{2})/);
+        if (match) {
+            const year = parseInt(match[1]);
+            const month = parseInt(match[2]) - 1;
+            const day = parseInt(match[3]);
+            return new Date(year, month, day);
+        }
     }
 
     console.error('Unsupported or invalid date format:', dateString);
     return new Date(); // 기본값: 현재 날짜
+}
+
+function formatDateToISO(date) {
+    // 날짜를 ISO 형식으로 변환
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
 
 extractFeaturesAndUpdateMDXDocuments();
