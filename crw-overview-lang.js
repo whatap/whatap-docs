@@ -1,4 +1,4 @@
-// 다국어3(오류 수정됨??) // 날짜 위치 영문 기준 수정 예정
+// 다국어3(오류 수정됨??) // 날짜 위치 영문 및 일문 기준 css에서 다국어 조건으로 수정 예정
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
@@ -9,14 +9,14 @@ const urls = {
     //     'https://docs.whatap.io/release-notes/service/service-1_112_x',
     //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
     // ],
-    en: [
-        'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
-        'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
-    ],
-    // ja: [
-    //     'https://docs.whatap.io/ja/release-notes/service/service-1_112_x',
-    //     'https://docs.whatap.io/ja/release-notes/service/service-1_114_x',
-    // ]
+    // en: [
+    //     'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
+    //     'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
+    // ],
+    ja: [
+        'https://docs.whatap.io/ja/release-notes/service/service-2_6_x',
+        'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
+    ]
 };
 
 async function extractFeaturesAndUpdateMDXDocuments() {
