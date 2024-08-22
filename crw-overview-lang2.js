@@ -1,22 +1,22 @@
-// (1차 완)다국어 - 다국어 문서 경로 설정 추가 필요
+// 2 다국어 - 다국어 문서 경로 설정 확인 중 - 되는 것 같기는 한데 캐시 때문인지 로케일 기준 빌드 시 오류가 뜸 내일 확인할래..
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 const urls = {
-    // ko: [
-    //     'https://docs.whatap.io/release-notes/service/service-1_112_x',
-    //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
-    // ],
+    ko: [
+        'https://docs.whatap.io/release-notes/service/service-1_110_x',
+        // 'https://docs.whatap.io/release-notes/service/service-1_114_x',
+    ],
     // en: [
     //     'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
     //     'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
     // ],
-    ja: [
-        'https://docs.whatap.io/ja/release-notes/service/service-2_6_x',
-        'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
-    ]
+    // ja: [
+    //     'https://docs.whatap.io/ja/release-notes/service/service-2_6_x',
+    //     'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
+    // ]
 };
 
 async function extractFeaturesAndUpdateMDXDocuments() {
@@ -91,7 +91,23 @@ async function extractFeaturesAndUpdateMDXDocuments() {
                 allFeatures.push(...features);
             }
 
-            const mdxFilePath = `./crw-data/overview/_changelog_overview-${lang}.mdx`;
+            // 파일 경로를 로케일에 따라 다르게 설정
+            let mdxFilePath;
+            switch (lang) {
+                case 'ko':
+                    mdxFilePath = `./crw-data/overview/_changelog_overview.mdx`;
+                    break;
+                case 'en':
+                    mdxFilePath = `./i18n/en/crw-data/overview/_changelog_overview.mdx`;
+                    break;
+                case 'ja':
+                    mdxFilePath = `./i18n/ja/crw-data/overview/_changelog_overview.mdx`;
+                    break;
+                default:
+                    mdxFilePath = `./crw-data/overview/_changelog_overview.mdx`;
+                    break;
+            }
+            
             updateOrCreateMDXDocument(mdxFilePath, allFeatures, lang);
         } catch (error) {
             console.error(`Error extracting features for ${lang}:`, error);
