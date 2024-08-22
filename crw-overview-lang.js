@@ -4,17 +4,17 @@ const fs = require('fs');
 const path = require('path');
 
 const urls = {
-    ko: [
-        'https://docs.whatap.io/release-notes/service/service-2_6_x',
-        'https://docs.whatap.io/release-notes/service/service-2_7_x',
-    ],
-    en: [
-        'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
-        'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
-    ],
+    // ko: [
+    //     'https://docs.whatap.io/release-notes/service/service-2_3_x',
+    //     'https://docs.whatap.io/release-notes/service/service-2_4_x',
+    // ],
+    // en: [
+    //     'https://docs.whatap.io/en/release-notes/service/service-2_3_x',
+    //     'https://docs.whatap.io/en/release-notes/service/service-2_4_x',
+    // ],
     ja: [
-        'https://docs.whatap.io/ja/release-notes/service/service-2_6_x',
-        'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
+        'https://docs.whatap.io/ja/release-notes/service/service-2_3_x',
+        'https://docs.whatap.io/ja/release-notes/service/service-2_4_x',
     ]
 };
 
@@ -87,7 +87,7 @@ async function extractFeaturesAndUpdateMDXDocuments() {
                 allFeatures.push(...features);
             }
 
-            const mdxFilePath = `./crw-data/overview/_changelog_overview_fin7-${lang}.mdx`;
+            const mdxFilePath = `./crw-data/overview/_changelog_overview-${lang}.mdx`;
             updateOrCreateMDXDocument(mdxFilePath, allFeatures, lang);
         } catch (error) {
             console.error(`Error extracting features for ${lang}:`, error);
@@ -200,15 +200,47 @@ function createBackup(filename) {
     console.log(`Backup created: ${backupFileName}`);
 }
 
+// function sortByDateAndRewriteMDX(filename) {
+//     try {
+//         const content = fs.readFileSync(filename, 'utf-8');
+//         const features = content.trim().split('\n\n').map(line => {
+//             const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
+//             return { line, date: match ? parseDate(match[1], 'ja') : null }; // locale 기준으로 변경 필요
+//         });
+
+//         features.sort((a, b) => b.date - a.date);  // 최신 날짜가 상단에 오도록 내림차순 정렬
+//         const sortedContent = features.map(item => item.line).join('\n\n');
+//         fs.writeFileSync(filename, sortedContent);
+//         console.log(`MDX file sorted and updated: ${filename}`);
+//     } catch (error) {
+//         console.error('Error sorting and rewriting MDX file:', error);
+//     }
+// }
+
+function determineLocale(dateString) {
+    // 날짜 문자열 기준 로케일 설정
+    if (/年/.test(dateString)) {
+        return 'ja'; // 일본어
+    } else if (/년/.test(dateString)) {
+        return 'ko'; // 한국어
+    } else if (/^\w+\s\d+,\s\d{4}$/.test(dateString)) {
+        return 'en'; // 영어 (날짜 형식: "Month Day, Year")
+    }
+    return null; // 로케일을 결정할 수 없는 경우
+}
+
 function sortByDateAndRewriteMDX(filename) {
     try {
         const content = fs.readFileSync(filename, 'utf-8');
         const features = content.trim().split('\n\n').map(line => {
             const match = line.match(/<code class='changelog-date'>(.*?)<\/code>/);
-            return { line, date: match ? parseDate(match[1], 'ko') : null };
+            const dateString = match ? match[1] : null;
+            // 기본 로케일 ko, 날짜 문자열에 따라 로케일 결정
+            const locale = dateString ? determineLocale(dateString) || 'ko' : 'ko';
+            return { line, date: dateString ? parseDate(dateString, locale) : null };
         });
 
-        features.sort((a, b) => b.date - a.date);
+        features.sort((a, b) => b.date - a.date);  // 최신 날짜가 상단에 오도록 내림차순 정렬
         const sortedContent = features.map(item => item.line).join('\n\n');
         fs.writeFileSync(filename, sortedContent);
         console.log(`MDX file sorted and updated: ${filename}`);
@@ -227,13 +259,16 @@ function parseDate(dateString, locale) {
             return new Date(year, month, day);
         }
     } else if (locale === 'en') {
-        const match = dateString.match(/(\w+) (\d+), (\d{4})/);
+        const match = dateString.match(/(\w+)\s(\d{1,2}),\s(\d{4})/);
         if (match) {
             const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             const month = monthNames.indexOf(match[1]);
             const day = parseInt(match[2]);
             const year = parseInt(match[3]);
-            return new Date(year, month, day);
+
+            if (month >= 0 && !isNaN(day) && !isNaN(year)) {
+                return new Date(year, month, day);
+            }
         }
     } else if (locale === 'ja') {
         const match = dateString.match(/(\d{4})年(\d{2})月(\d{2})日/);
@@ -244,6 +279,7 @@ function parseDate(dateString, locale) {
             return new Date(year, month, day);
         }
     }
+
     console.error('Unsupported or invalid date format:', dateString);
     return new Date(); // 기본값: 현재 날짜
 }
