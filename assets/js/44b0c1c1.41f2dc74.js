@@ -540,7 +540,7 @@ function _createMdxContent(props) {
               type: "note",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                 children: ["와탭 요금 체계 변경에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://www.whatap.io/ko/blog/203/index.html",
+                  href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=209",
                   children: "다음 링크"
                 }), "를 참조하세요."]
               })

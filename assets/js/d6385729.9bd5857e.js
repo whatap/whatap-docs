@@ -734,7 +734,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://www.whatap.io/ko/blog/94/",
+                  href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=59",
                   children: "월간 와탭 : 모니터링에 주목해야할 지표"
                 })
               }), "\n"]
@@ -779,7 +779,7 @@ function _createMdxContent(props) {
           type: "tip",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["차트 분석에 대한 자세한 내용은 다음 링크를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/94/",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=59",
               children: "월간 와탭 : 모니터링에 주목해야할 지표"
             })]
           })

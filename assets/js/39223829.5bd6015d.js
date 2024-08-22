@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76912],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[15241],{
 
 /***/ 76105:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -734,7 +734,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://www.whatap.io/ko/blog/94/",
+                  href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=59",
                   children: "월간 와탭 : 모니터링에 주목해야할 지표"
                 })
               }), "\n"]
@@ -779,7 +779,7 @@ function _createMdxContent(props) {
           type: "tip",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["차트 분석에 대한 자세한 내용은 다음 링크를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/94/",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=59",
               children: "월간 와탭 : 모니터링에 주목해야할 지표"
             })]
           })
@@ -2429,7 +2429,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 21776:
+/***/ 20647:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2461,7 +2461,7 @@ const frontMatter = {
 	title: '애플리케이션 대시보드',
 	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	keywords: [
-		'Python',
+		'Node.js',
 		'대시보드',
 		'애플리케이션',
 		'애플리케이션 모니터링'
@@ -2470,16 +2470,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/dashboard",
+  "id": "nodejs/dashboard",
   "title": "애플리케이션 대시보드",
   "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/python/dashboard.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/dashboard",
-  "permalink": "/whatap-docs/python/dashboard",
+  "source": "@site/docs/nodejs/dashboard.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/dashboard",
+  "permalink": "/whatap-docs/nodejs/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/dashboard.mdx",
+  "editUrl": "undefined/docs/nodejs/dashboard.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2487,21 +2487,21 @@ const metadata = {
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "keywords": [
-      "Python",
+      "Node.js",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "pySidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/python/dashboard-intro"
+    "permalink": "/whatap-docs/nodejs/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/python/dashboard-transactionmap"
+    "permalink": "/whatap-docs/nodejs/dashboard-transactionmap"
   }
 };
 const assets = {

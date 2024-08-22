@@ -127,27 +127,27 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/59/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=149",
               children: "와탭 CTO가 이야기하는 모니터링 솔루션 개발"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/70/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=25",
               children: "IT 서비스 모니터링의 A TO Z"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/35/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=105",
               children: "모니터링 초보자를 위한 '모니터링이란'"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/8/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=51",
               children: "우리는 왜 모니터링을 서비스 하는가"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/5/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=44",
               children: "스타트업이 서버 모니터링을 해야 하는 5가지 이유"
             })
           }), "\n"]
@@ -186,12 +186,12 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/16/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=69",
               children: "잘 나가는 스타트업이 APM을 사용하는 이유"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/16/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=76",
               children: "APM에 대한 진지한 설명"
             })
           }), "\n"]
@@ -271,7 +271,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["클라우드 서비스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/9/index.html",
+            href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=226",
             children: "다음 문서"
           }), "를 참조하세요."]
         })
@@ -297,7 +297,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/15/index.html",
+            href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=66",
             children: "다음 문서"
           }), "를 참조하세요."]
         })
@@ -357,7 +357,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/41/index.html",
+            href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=131",
             children: "다음 문서"
           }), "를 참조하세요."]
         })
@@ -532,7 +532,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/65/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=154",
               children: "서버별 시스템 현황을 한 눈에 모니터링"
             })
           }), "\n"]
@@ -618,7 +618,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/94/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=59",
               children: "모니터링에서 주목해야 할 지표"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
@@ -772,12 +772,12 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/89/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=50",
               children: "와탭 알림 서비스 500% 활용하기"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/64/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=153",
               children: "와탭 알림 설정과 통계 UI 개편"
             })
           }), "\n"]
@@ -804,7 +804,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/14/index.html",
+            href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=64",
             children: "다음 문서"
           }), "를 참조하세요."]
         })
@@ -818,7 +818,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/71/index.html",
+            href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=36",
             children: "다음 문서"
           }), "를 참조하세요."]
         })
@@ -863,12 +863,12 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/85/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=45",
               children: "멀티 트랜잭션 메뉴 추가"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://www.whatap.io/ko/blog/72/index.html",
+              href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=27",
               children: "멀티 트랜잭션 다이어그램 개편"
             })
           }), "\n"]
@@ -920,7 +920,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/25/index.html",
+            href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=90",
             children: "다음 문서"
           }), "를 참조하세요."]
         })

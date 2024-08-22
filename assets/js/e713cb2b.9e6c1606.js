@@ -360,7 +360,7 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["HTTP 상태 코드와 관련한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://www.whatap.io/ko/blog/40/",
+            href: "../url/url-http-status",
             children: "다음 문서"
           }), "를 참조하세요."]
         })

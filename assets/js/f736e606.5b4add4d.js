@@ -431,8 +431,9 @@ function _createMdxContent(props) {
         children: "통합 모니터링이 가능한 멀티 리전 지원"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          src: "https://www.whatap.io/img/platform/solution_06.jpg",
-          alt: ""
+          src: (__webpack_require__(71067)/* ["default"] */ .A) + "",
+          width: "1280",
+          height: "720"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "추가 리전이 생길 때마다 수집 서버만 설치하고 하나의 모니터링 화면에서 여러 리전의 서버를 통합 모니터링합니다. 와탭 모니터링은 IDC 센터 추가 구축 / 클라우드 플랫폼 추가 구축 등을 리전 구축만으로 수집 서버를 확장할 수 있습니다."
@@ -444,8 +445,9 @@ function _createMdxContent(props) {
         children: "수집서버의 안정성 및 확장성 보장"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          src: "https://www.whatap.io/img/platform/solution_07.jpg",
-          alt: ""
+          src: (__webpack_require__(16286)/* ["default"] */ .A) + "",
+          width: "1280",
+          height: "720"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "통합 모니터링을 위한 가장 기본은 서버의 확장성입니다. 증가하는 관리(모니터링) 대상 서버를 원활히 수용하기 위해서는 모니터링 서버는 내부 확장성을 가져야 합니다. 확장성 보장을 위해 와탭 모니터링 서버는 세분화된 마이크로 애플리케이션으로 구성되어 있으며, 결합도가 낮은 분산 환경입니다. 또한 데이터 안정성을 보장을 위해 이중화 및 데이터 복구 기능을 지원합니다."
@@ -457,8 +459,9 @@ function _createMdxContent(props) {
         children: "협업 지원, 멀티 테넌트"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          src: "https://www.whatap.io/img/platform/solution_08.jpg",
-          alt: ""
+          src: (__webpack_require__(21181)/* ["default"] */ .A) + "",
+          width: "1280",
+          height: "720"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "와탭 모니터링 서비스를 통해 개발팀은 독립적으로 모니터링을 이용하고, 운영팀은 이를 통합 모니터링할 수 있습니다. 하나의 모니터링 상품을 이용하지만 팀별/업무별 독립성은 보장하고, 이를 중앙 관리자가 통합하여 관제할 수 있습니다. 중앙 운영 관리자는 직접 개발팀 프로젝트의 권한을 관리하지 않고, 각 개발팀 프로젝트의 소유자가 권한을 관리하는 구조입니다."
@@ -483,6 +486,36 @@ function _missingMdxReference(id, component) {
 }
 
 
+
+/***/ }),
+
+/***/ 71067:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/solution_06-ef6ce6158acbb7d1771ab46f64380207.jpg");
+
+/***/ }),
+
+/***/ 16286:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/solution_07-ad0b2f65eba222b9f3119d0ad2ad9dfd.jpg");
+
+/***/ }),
+
+/***/ 21181:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/solution_08-bc966354aefb88e0c939024b43de06c7.jpg");
 
 /***/ }),
 
