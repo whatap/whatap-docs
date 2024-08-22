@@ -54966,7 +54966,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55217,10 +55217,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55512,7 +55512,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55714,10 +55714,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55938,10 +55938,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56379,10 +56379,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56407,10 +56407,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -57367,21 +57367,21 @@
   },
   "NTC08318": {
     "en": "A test message has been sent. If you did not receive the message, please check if the Integration Name or Key value is correct.",
-    "ja": "テストメッセージが送信されました。メッセージが届かない場合は、Integration NameまたはKeyの値が正しいことを確認してください。",
+    "ja": "テストメッセージを送信しました。メッセージが届かない場合は、Integration NameまたはKeyの値が正しいか確認してください。",
     "ko": "테스트 메시지가 전송됐습니다. 메시지를 받지 못했다면 Integration Name 또는 Key 값이 올바른지 확인해 주세요.",
     "zh": "A test message has been sent. If you did not receive the message, please check if the Integration Name or Key value is correct.",
     "service_id": "NTC08318"
   },
   "TLT08319": {
     "en": "When the event is resolved, it indicates a \"RECOVERED: \" status.",
-    "ja": "イベントが解決されたら\"RECOVERED: \"の状態を知らせます。",
+    "ja": "イベントが解決されたら\"RECOVERED: \"の状態を通知します。",
     "ko": "이벤트가 해소되면 \"RECOVERED: \" 상태를 알려줍니다.",
     "zh": "When the event is resolved, it indicates a \"RECOVERED: \" status.",
     "service_id": "TLT08319"
   },
   "CNT08320": {
     "en": "Additional notifications when the event state is resolved.",
-    "ja": "イベントステータスが解消された場合の追加通知",
+    "ja": "イベント状態が解消されたら追加に通知する",
     "ko": "이벤트 상태가 해소되면 추가 알림",
     "zh": "Additional notifications when the event state is resolved.",
     "service_id": "CNT08320"
@@ -57395,28 +57395,28 @@
   },
   "DSC08322": {
     "en": "Event resolved message",
-    "ja": "イベント解決メッセージ",
+    "ja": "イベント解消メッセージ",
     "ko": "이벤트 해소 메시지",
     "zh": "Event resolved message",
     "service_id": "DSC08322"
   },
   "DSC08323": {
     "en": "Resolved",
-    "ja": "解決",
+    "ja": "解消",
     "ko": "해소",
     "zh": "Resolved",
     "service_id": "DSC08323"
   },
   "DSC08324": {
     "en": "If you enable \"Additional notification when event state is resolved\", we recommend \"Disable\" for the time selection.",
-    "ja": "「イベント状態が解決されたら追加にアラートする」を使用する場合には、指定時間は「使用しない」として設定することを推奨します。",
+    "ja": "「イベント状態が解消されたら追加に通知する」を使用する場合には、指定時間は「使用しない」として設定してください。",
     "ko": "“이벤트 상태가 해소되면 추가 알림”을 사용하는 경우, 선택 시간은 “사용 안 함”을 권장합니다.",
     "zh": "If you enable \"Additional notification when event state is resolved\", we recommend \"Disable\" for the time selection.",
     "service_id": "DSC08324"
   },
   "DSC08325": {
     "en": "After receiving the notification, events will not occur for the selected period.<br />If the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time period after receiving the RECOVERED notification.",
-    "ja": "通知の受信後、選択した時間中にイベントが発生しません。<br />ただし、\"イベントの状態が解決されると追加通知\"機能を有効にした場合は、RECOVERED通知を受信してから選択した時間にイベントが発生しません。",
+    "ja": "通知の受信後、指定した時間の間にはイベントを発生させません。<br />但し、\"イベント状態が解消されたら追加に通知する\"機能を有効にした場合は、RECOVERED通知を受信してから選択した時間の間にはイベントを発生させません。",
     "ko": "알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.<br />단, \"이벤트 상태가 해소되면 추가 알림\" 기능을 활성화한 경우에는 RECOVERED 알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다.",
     "zh": "After receiving the notification, events will not occur for the selected period.<br />If the \"Additional Notification When Event Status Resolved\" feature is enabled, the event will not occur for the selected time period after receiving the RECOVERED notification.",
     "service_id": "DSC08325"
@@ -57430,7 +57430,7 @@
   },
   "DSC08327": {
     "en": "When events at the critical and warning levels are resolved, you receive a notification with a status of <span style='color: {color};'>RECOVERED</span>.",
-    "ja": "CriticalとWarningレベルのイベントが解決されたら、<span style='color: {color};'>RECOVERED状態の通知を受信</span>します。",
+    "ja": "CriticalとWarningレベルのイベントが解消されたら、<span style='color: {color};'>RECOVERED状態の通知を受信</span>します。",
     "ko": "Critical과 Warning 레벨의 이벤트가 해소되면 <span style='color: {color};'>RECOVERED 상태의 알림을 수신</span>합니다.",
     "zh": "When events at the critical and warning levels are resolved, you receive a notification with a status of <span style='color: {color};'>RECOVERED</span>.",
     "service_id": "DSC08327"
@@ -57486,21 +57486,21 @@
   },
   "DSC08335": {
     "en": "5. After checking the name and connection status, click the <b>Next</b> button.",
-    "ja": "5.名前と接続の状態を確認したら、<b>次へ</b>ボタンをクリックします。",
+    "ja": "5.名前と接続の状態を確認してから、<b>次へ</b>ボタンをクリックします。",
     "ko": "5. 이름과 연결 상태를 확인한 후, <b>다음</b> 버튼을 클릭하세요.",
     "zh": "5. After checking the name and connection status, click the <b>Next</b> button.",
     "service_id": "DSC08335"
   },
   "DSC08336": {
     "en": "6. After checking the details, click the <b>Add Workflow</b> button.",
-    "ja": "6. 詳細を確認したら、[<b>ワークフローの追加</b>]ボタンをクリックします。",
+    "ja": "6. 詳細を確認してから、[<b>ワークフローの追加</b>]ボタンをクリックします。",
     "ko": "6. 세부 정보를 확인한 후 <b>워크플로 추가</b> 버튼을 클릭하세요.",
     "zh": "6. After checking the details, click the <b>Add Workflow</b> button.",
     "service_id": "DSC08336"
   },
   "DSC08337": {
     "en": "7. You have finished adding the workflow. Copy the <b>generated address</b>.",
-    "ja": "7. ワークフローの追加が完了しました。 <b>作成した住所</b>をコピーしてください。",
+    "ja": "7. ワークフローの追加が完了しました。 <b>作成したアドレス</b>をコピーします。",
     "ko": "7. 워크플로 추가를 완료했습니다. <b>생성된 주소</b>를 복사하세요.",
     "zh": "7. You have finished adding the workflow. Copy the <b>generated address</b>.",
     "service_id": "DSC08337"
@@ -57514,14 +57514,14 @@
   },
   "DSC08339": {
     "en": "If you do not receive a message or the plugin is not registered, please check if the Integration Name or Key value is correct.",
-    "ja": "メッセージを受信できなかった場合、またはプラグインが登録されていない場合は、Integration NameまたはKeyの値が正しいことを確認してください。",
+    "ja": "メッセージが受信できなかった場合、またはプラグインが登録されていない場合は、Integration NameまたはKeyの値が正しいか確認してください。",
     "ko": "메시지를 받지 못했거나 플러그인이 등록되지 않은 경우, Integration Name 또는 Key값이 올바른지 확인해 주세요.",
     "zh": "If you do not receive a message or the plugin is not registered, please check if the Integration Name or Key value is correct.",
     "service_id": "DSC08339"
   },
   "NTC08340": {
     "en": "A test message has been sent.",
-    "ja": "テストメッセージが送信されました。",
+    "ja": "テストメッセージを送信しました。",
     "ko": "테스트 메시지가 전송됐습니다.",
     "zh": "A test message has been sent.",
     "service_id": "NTC08340"
@@ -57542,21 +57542,21 @@
   },
   "NTC08343": {
     "en": "The start time is earlier than the end time.",
-    "ja": "開始時間が終了時間より早い。",
+    "ja": "終了時間が開始時間より早いです。",
     "ko": "시작 시간이 종료 시간보다 빠릅니다.",
     "zh": "The start time is earlier than the end time.",
     "service_id": "NTC08343"
   },
   "NTC08344": {
     "en": "The data query range has been exceeded. You can search up to {value}{unit}.",
-    "ja": "データ検索範囲を超えました。最大{value} {unit}まで照会可能です。",
+    "ja": "データ検索範囲を超えました。最大{value} {unit}まで照会できます。",
     "ko": "데이터 조회 범위가 초과했습니다. 최대 {value}{unit}까지 조회 가능합니다.",
     "zh": "The data query range has been exceeded. You can search up to {value}{unit}.",
     "service_id": "NTC08344"
   },
   "BTN08345": {
     "en": "Close All Notifications",
-    "ja": "完全な通知を閉じる",
+    "ja": "全て通知を閉じる",
     "ko": "전체 알림 닫기",
     "zh": "Close All Notifications",
     "service_id": "BTN08345"
@@ -57570,14 +57570,14 @@
   },
   "TLT08347": {
     "en": "Search for indicator name",
-    "ja": "指標名を検索",
+    "ja": "指標名を検索します。",
     "ko": "지표명을 검색하세요",
     "zh": "Search for indicator name",
     "service_id": "TLT08347"
   },
   "TTL08348": {
     "en": "Merge Target",
-    "ja": "ターゲットのマージ",
+    "ja": "対象のマージ",
     "ko": "대상 병합",
     "zh": "Merge Target",
     "service_id": "TTL08348"
@@ -57591,7 +57591,7 @@
   },
   "MNU08350": {
     "en": "Select the log item in column settings.",
-    "ja": "列設定でlogエントリを選択します。",
+    "ja": "列設定でlog項目を選択します。",
     "ko": "컬럼 설정에서 log 항목을 선택하세요.",
     "zh": "Select the log item in column settings.",
     "service_id": "MNU08350"
@@ -57612,31 +57612,94 @@
   },
   "TTL08353": {
     "en": "Total number of namespaces",
-    "ja": "フルネームスペース数",
+    "ja": "全体のネームスペース数",
     "ko": "전체 네임스페이스 수",
     "zh": "Total number of namespaces",
     "service_id": "TTL08353"
   },
   "TTL08354": {
     "en": "Total number of containers",
-    "ja": "コンテナ全体の数",
+    "ja": "全体のコンテナ数",
     "ko": "전체 컨테이너 수",
     "zh": "Total number of containers",
     "service_id": "TTL08354"
   },
   "TTL08355": {
     "en": "Total number of containers (excluding WhaTap)",
-    "ja": "コンテナの総数（WhaTapを除く）",
+    "ja": "全体のコンテナ数(WhaTapを除く)",
     "ko": "전체 컨테이너 수 (와탭 제외)",
     "zh": "Total number of containers (excluding WhaTap)",
     "service_id": "TTL08355"
   },
   "TTL08356": {
     "en": "Total number of application containers",
-    "ja": "アプリケーション・コンテナの総数",
+    "ja": "全体のアプリケーションコンテナ数",
     "ko": "전체 애플리케이션 컨테이너 수",
     "zh": "Total number of application containers",
     "service_id": "TTL08356"
+  },
+  "TTL08357": {
+    "en": "Cluster Total",
+    "ja": "クラスター合計",
+    "ko": "클러스터 총합",
+    "zh": "Cluster Total",
+    "service_id": "TTL08357"
+  },
+  "TTL08358": {
+    "en": "Project Total",
+    "ja": "プロジェクト合計",
+    "ko": "프로젝트 총합",
+    "zh": "Project Total",
+    "service_id": "TTL08358"
+  },
+  "BTN08359": {
+    "en": "No merge",
+    "ja": "マージなし",
+    "ko": "병합 없음",
+    "zh": "No merge",
+    "service_id": "BTN08359"
+  },
+  "DSC08360": {
+    "en": "There are no logs collected. Please check the following",
+    "ja": "収集されたログはありません。次の事項を確認してください",
+    "ko": "수집된 로그가 없습니다. 다음사항을 점검하세요",
+    "zh": "There are no logs collected. Please check the following",
+    "service_id": "DSC08360"
+  },
+  "DSC08361": {
+    "en": "Make sure log monitoring is enabled.",
+    "ja": "ログモニタリングが有効になっているか確認してください。",
+    "ko": "로그 모니터링이 활성화 되어있는지 확인하세요.",
+    "zh": "Make sure log monitoring is enabled.",
+    "service_id": "DSC08361"
+  },
+  "DSC08362": {
+    "en": "If log monitoring is enabled, the selected transaction will have no logs available for viewing.",
+    "ja": "ログモニタリングが有効になっている場合、該当のトランザクションには確認できるログがありません。",
+    "ko": "로그 모니터링이 활성화된 경우, 선택한 트랜잭션에는 확인할 수 있는 로그가 없습니다.",
+    "zh": "If log monitoring is enabled, the selected transaction will have no logs available for viewing.",
+    "service_id": "DSC08362"
+  },
+  "DSC08363": {
+    "en": "[Note] No logs may remain depending on the transaction's log settings, logging level, or filtering.",
+    "ja": "[参考]トランザクションのログ設定、ログ記録レベル、またはフィルタリングによっては、ログが残らないことがあります。",
+    "ko": "[참고] 트랜잭션의 로그 설정, 로깅 레벨, 또는 필터링에 따라 로그가 남지 않을 수 있습니다.",
+    "zh": "[Note] No logs may remain depending on the transaction's log settings, logging level, or filtering.",
+    "service_id": "DSC08363"
+  },
+  "BTN08364": {
+    "en": "Log settings",
+    "ja": "ログ設定",
+    "ko": "로그 설정",
+    "zh": "Log settings",
+    "service_id": "BTN08364"
+  },
+  "CNT08365": {
+    "en": "Project Operation Summary",
+    "ja": "プロジェクト運用のサマリー",
+    "ko": "프로젝트 운영 요약",
+    "zh": "Project Operation Summary",
+    "service_id": "CNT08365"
   },
   "": {
     "en": "#VALUE!",
