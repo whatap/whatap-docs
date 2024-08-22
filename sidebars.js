@@ -2876,7 +2876,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'oracle/log-main'
+                id: 'altibase/log-main'
               },
               items: [
                 'altibase/log-db',
