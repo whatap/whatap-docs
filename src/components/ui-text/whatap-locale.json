@@ -54034,10 +54034,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54966,7 +54966,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55512,7 +55512,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55938,10 +55938,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56163,7 +56163,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "zh": "All widget charts will zoom in when you drag a chart.",
     "service_id": "CNT08143"
@@ -56247,7 +56247,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56379,10 +56379,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56407,10 +56407,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56918,10 +56918,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57030,10 +57030,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
+    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
+    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57506,10 +57506,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
