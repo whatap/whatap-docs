@@ -716,7 +716,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
               children: (0,jsx_runtime.jsx)(_components.code, {
-                children: "cpu(xos2)"
+                children: "cpu(xos)"
               })
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "pct"
@@ -734,7 +734,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
               children: (0,jsx_runtime.jsx)(_components.code, {
-                children: "cpu_user(xos2)"
+                children: "cpu_user(xos)"
               })
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "pct"
@@ -746,7 +746,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
               children: (0,jsx_runtime.jsx)(_components.code, {
-                children: "cpu_sys(xos2)"
+                children: "cpu_sys(xos)"
               })
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "pct"
@@ -758,7 +758,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
               children: (0,jsx_runtime.jsx)(_components.code, {
-                children: "cpu_iowait(xos2)"
+                children: "cpu_iowait(xos)"
               })
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "pct"
@@ -770,7 +770,7 @@ function _createMdxContent(props) {
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
               children: (0,jsx_runtime.jsx)(_components.code, {
-                children: "cpu_idle(xos2)"
+                children: "cpu_idle(xos)"
               })
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "pct"

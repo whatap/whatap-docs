@@ -1125,21 +1125,105 @@ const toc = [..._common_items_analysis_lock_desc_mdx__WEBPACK_IMPORTED_MODULE_1_
   "value": "기본 화면 안내",
   "id": "기본-화면-안내",
   "level": 2
-}, ..._common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+}, ..._common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+  "value": "Global Lock 정보 확인하기",
+  "id": "global-lock-정보-확인하기",
+  "level": 2
+}, ..._common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    admonition: "admonition",
+    em: "em",
     h2: "h2",
+    li: "li",
+    p: "p",
     section: "section",
+    strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Cmdname, ImgLang, UI} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_lock_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "기본-화면-안내",
         children: "기본 화면 안내"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "global-lock-정보-확인하기",
+        children: "Global Lock 정보 확인하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "클러스터로 구성된 Oracle 데이터베이스 환경에서 Global Lock 정보를 확인하는 것은 여러 가지 중요한 장점을 제공합니다. 특히, Oracle Real Application Clusters (RAC) 환경에서 이러한 정보는 성능 최적화와 문제 해결에 필수적입니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["클러스터로 구성된 환경이라면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "instance",
+          className: "uitext"
+        }), "에서 클러스터를 선택할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "db-locktree-cluster-chart.png",
+        desc: "락 트리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Global Lock Wait Sessions"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "선택한 시간 범위 내에서 발생한 Global Lock 대기 세션의 수를 시간대별로 시각화하여 표시합니다. 특정 시간에 얼마나 많은 락 대기가 발생했는지 한눈에 파악할 수 있습니다. 각 색상은 다른 인스턴스를 나타내며 락이 발생한 인스턴스별로 구분되어 표시합니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Global Lock Tree"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["락과 관련한 세부 정보를 트리 구조로 확인할 수 있습니다. 락이 발생한 인스턴스, 세션 ID(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "sid"
+            }), "), 세션 상태(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "status"
+            }), ") 등 중요한 정보가 포함됩니다. 락의 홀더 타입(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "holder type"
+            }), ")과 락 모드(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "lock mode"
+            }), "), 그리고 락 대기 타입(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+              children: "waiter type"
+            }), ")을 통해 락의 원인과 영향을 신속하게 파악할 수 있습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "트리 구조를 통해 어떤 세션이 락을 보유하고 있고 어떤 세션이 대기 중인지 파악할 수 있습니다."
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "RAC 환경에서 여러 인스턴스가 동일한 데이터에 동시에 접근할 수 있습니다. Global Lock 정보는 이러한 동시 접근 상황에서 데이터 일관성을 보장하기 위한 주요 메커니즘 중 하나입니다. 이를 모니터링함으로써 데이터 일관성 유지 여부를 확인할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "Global Lock 대기 시간은 시스템 성능에 큰 영향을 미칠 수 있습니다. 클러스터의 여러 인스턴스 간에 발생하는 Global Lock 경합을 모니터링하면 성능 저하의 원인이 되는 병목 현상을 조기에 감지할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "Global Lock 정보는 트랜잭션이 클러스터 내에서 어떻게 처리되는지에 대한 중요한 통찰을 제공합니다. 동시성 제어가 적절히 이루어지지 않으면 트랜잭션 대기 시간이 길어지거나 데드락이 발생할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "RAC 환경에서는 인스턴스 간 부하 분산이 매우 중요합니다. Global Lock 정보를 통해 어떤 인스턴스가 더 많은 경합을 겪고 있는지 파악할 수 있으며, 이를 기반으로 부하를 재분배하거나 리소스 관리를 개선할 수 있습니다."
+            }), "\n"]
+          }), "\n"]
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {
         level: 2
       })]
     })]
@@ -1156,6 +1240,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
