@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58391],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20581],{
 
 /***/ 29194:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -35,6 +35,10 @@ const toc = [{
 }, {
   "value": "트랜잭션 Caller 통계",
   "id": "트랜잭션-caller-통계",
+  "level": 2
+}, {
+  "value": "IP 트랜잭션 통계",
+  "id": "ip-트랜잭션-통계",
   "level": 2
 }, {
   "value": "트랜잭션 Referer 통계",
@@ -648,6 +652,106 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "ip-트랜잭션-통계",
+        children: "IP 트랜잭션 통계"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_statistics",
+          className: "uitext"
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_statIp",
+          className: "uitext"
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "특정 IP 주소별로 애플리케이션에서 호출한 URL과 호출 건수를 조회할 수 있는 기능을 제공합니다. 이 기능은 비정상적으로 많은 요청이 발생하는 IP 주소를 확인하고, 해당 IP 주소에서 호출된 URL을 분석하여 잠재적인 보안 위협이나 성능 이슈를 사전에 식별하는 데 유용합니다. 사용자는 이 정보를 바탕으로 불필요하거나 악의적인 요청을 차단할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "filter",
+          className: "uitext"
+        }), " 옵션을 통해 IP 주소 또는 트랜잭션 주소를 필터링하여 조건에 맞는 데이터를 빠르게 조회할 수 있습니다. 특정 IP나 트랜잭션 주소 패턴을 분석할 때 유용합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              children: "컬럼"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              children: "설명"
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "ip"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "요청을 발생시킨 클라이언트의 IP 주소"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TTL06918"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: ["호출된 트랜잭션 주소, 특정 경로 변수는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "{}"
+              }), "로 표시"]
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "count"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "해당 IP 주소에서 발생한 요청의 총 건수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "error"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "요청 중 발생한 에러 수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "timeAvg_ms"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "해당 요청의 평균 응답 시간(밀리초, ms)"
+            })]
+          })]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "비정상적인 트래픽 감지"
+              }), ": 비정상적으로 호출 건수가 많은 IP를 탐지하여 해당 IP에서 발생한 트랜잭션 주소 패턴을 분석하고 잠재적인 공격을 차단할 수 있습니다. 예를 들어, 특정 IP에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "/account/{aa}/{bb}/{cc}"
+              }), " URL에 대해 과도한 요청이 발생한 경우 해당 IP를 블락하거나 요청을 제한하는 조치를 취할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "응답 시간 분석"
+              }), ": 평균 응답 시간이 비정상적으로 높은 IP를 확인하여 네트워크 또는 서버 측의 성능 문제를 파악하고 개선할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "에러 발생 분석"
+              }), ": 특정 IP에서 에러가 다수 발생할 때 해당 IP의 요청에 문제가 있는지 또는 시스템에 특정 문제가 있는지를 진단할 수 있습니다."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "stat-referer",
         children: "트랜잭션 Referer 통계"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1239,7 +1343,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 63173:
+/***/ 30247:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1259,10 +1363,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'analysis-apm-trs',
 	title: '통계',
-	description: 'Python 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.',
+	description: 'PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.',
 	toc_max_heading_level: 2,
 	keywords: [
-		'Python',
+		'PHP',
 		'트랜잭션',
 		'애플리케이션',
 		'분석하기',
@@ -1273,25 +1377,25 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/analysis-apm-trs",
+  "id": "php/analysis-apm-trs",
   "title": "통계",
-  "description": "Python 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
-  "source": "@site/docs/python/analysis-apm-trs.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/analysis-apm-trs",
-  "permalink": "/whatap-docs/python/analysis-apm-trs",
+  "description": "PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
+  "source": "@site/docs/php/analysis-apm-trs.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/analysis-apm-trs",
+  "permalink": "/whatap-docs/php/analysis-apm-trs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/analysis-apm-trs.mdx",
+  "editUrl": "undefined/docs/php/analysis-apm-trs.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "analysis-apm-trs",
     "title": "통계",
-    "description": "Python 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
+    "description": "PHP 애플리케이션 환경에서 수집한 다양한 지표를 통해 통계 정보를 제공합니다.",
     "toc_max_heading_level": 2,
     "keywords": [
-      "Python",
+      "PHP",
       "트랜잭션",
       "애플리케이션",
       "분석하기",
@@ -1300,14 +1404,14 @@ const metadata = {
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "pySidebar",
+  "sidebar": "phpSidebar",
   "previous": {
-    "title": "부가 기능",
-    "permalink": "/whatap-docs/python/topology-add-function"
+    "title": "에이전트 옵션 설정",
+    "permalink": "/whatap-docs/php/topology-settings"
   },
   "next": {
     "title": "보고서",
-    "permalink": "/whatap-docs/python/report-intro"
+    "permalink": "/whatap-docs/php/report-intro"
   }
 };
 const assets = {
