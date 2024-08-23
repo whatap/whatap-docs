@@ -23,7 +23,7 @@ function BlogSidebarDesktop({sidebar}) {
   const sidebarData = require('../_meta.json');
   const sideitems = useVisibleBlogSidebarItems(sidebar.items);
   const getItemTitle = (permalink) => {
-    const item = sideitems.find((sideitem) => sideitem.permalink.replace('/whatap-docs', '') === permalink);
+    const item = sideitems.find((sideitem) => sideitem.permalink.replace('/whatap-docs', '').replace(/(\/en|\/ja)/g, "") === permalink);
     return item ? item.title : permalink;
   };
   return (
@@ -49,7 +49,17 @@ function BlogSidebarDesktop({sidebar}) {
               <div>
                 {category.link ? (
                   <Link isNavLink to={category.link}>
-                    {category.label}
+                    {category.tr_code ? (
+                      <>
+                        {
+                          translate({
+                            id: `${category.tr_code}`,
+                          })
+                        }
+                      </>
+                    ) : (
+                      <>{category.label}</>
+                    )}
                   </Link>
                 ) : (
                   <span>{category.label}</span>
