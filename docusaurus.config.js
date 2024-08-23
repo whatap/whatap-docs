@@ -234,6 +234,11 @@ const config = {
           content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
+      blog: {
+        sidebar: {
+          groupByYear: true
+        }
+      },
       docs: {
         sidebar: {
           autoCollapseCategories: false,
