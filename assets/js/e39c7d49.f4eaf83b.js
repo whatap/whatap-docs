@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[96001],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80091],{
 
 /***/ 1973:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -755,102 +755,6 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 54233:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "클러스터 구성",
-  "id": "cluster-set",
-  "level": 2
-}];
-function _createMdxContent(props) {
-  const _components = {
-    a: "a",
-    code: "code",
-    h2: "h2",
-    li: "li",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h2",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "cluster-set",
-      children: "클러스터 구성"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "cluster_name"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            class: "type",
-            children: "String"
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["클러스터 세트를 정의하는 옵션으로 동일한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "cluster_name"
-          }), " 옵션 값을 갖는 데이터베이스들은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "side_dashboard",
-            className: "uitext"
-          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "side_instanceList",
-            className: "uitext"
-          }), " 메뉴에서 트리 구조로 표시됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "side_multiInstance",
-            className: "uitext"
-          }), " 메뉴의 에이전트 선택 옵션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "ITM07760",
-            className: "uitext"
-          }), " 항목을 선택해 클러스터를 구성하는 인스턴스들끼리 대시보드에 표현되어 한눈에 모니터링할 수 있습니다. 일부 위젯은 클러스터 단위의 정보를 제공합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "multi-instance-monitoring#select-agent-category",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        }), "\n"]
-      }), "\n"]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
 /***/ 2382:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -934,7 +838,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "redis,mongodb,oracle,oracle-v1",
+      product: "redis,mongodb,oracle,oracle-v1,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -953,24 +857,12 @@ function _createMdxContent(props) {
               children: "5"
             }), "이며 새벽 5시에 수집을 시작합니다."]
           }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "tables_hour"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              class: "type",
-              children: "Int"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "5"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["테이블 사이즈 정보를 저장하기 위해 정보를 수집하는 시각을 설정합니다. 기본값으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "5"
-            }), "이며 새벽 5시에 수집을 시작합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "redis,mongodb,oracle,oracle-v1",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "long_run_session_sec"
@@ -1045,7 +937,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "cubrid,redis,mongodb",
+      product: "cubrid,redis,mongodb,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1407,6 +1299,48 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "altibase",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "tablespace_lock"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["데이터 파일 추가나 테이블스페이스 변경 시 발생하는 테이블스페이스 락(tablespace lock)을 모니터링하려면, 해당 옵션값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            }), "로 변경하세요."]
+          }), "\n"]
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "postgresql,mysql,oracle,oracle-pro,altibase",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "xview_min_sec"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Int"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "0"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "xview 수집 시, 쿼리의 수행 시간이 설정된 시간보다 오래 걸릴 때만 수집합니다. 기본 설정으로는 수행 시간이 0초 이상인 모든 쿼리를 수집합니다."
+          }), "\n"]
+        }), "\n"]
+      })
     })]
   });
 }
@@ -1562,7 +1496,64 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 35914:
+/***/ 81202:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ReturnLink} = _components;
+  if (!ReturnLink) _missingMdxReference("ReturnLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "info",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ReturnLink, {
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 90058:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1577,8 +1568,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32338);
-/* harmony import */ var _common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20606);
-/* harmony import */ var _common_items_db_agent_setting_cluster_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(54233);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(81202);
+/* harmony import */ var _common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20606);
 /* harmony import */ var _common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2382);
 /* harmony import */ var _common_items_db_agent_aws_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(73531);
 /* harmony import */ var _common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1973);
@@ -1589,54 +1580,53 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'agent-dbx-settings',
 	title: 'DBX 에이전트 설정',
-	description: 'MongoDB 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
+	description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
 	keywords: [
-		'MongoDB',
-		'데이터베이스',
-		'에이전트'
+		'Oracle',
+		'데이터베이스 모니터링',
+		'DBX 에이전트'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/agent-dbx-settings",
+  "id": "oracle/agent-dbx-settings",
   "title": "DBX 에이전트 설정",
-  "description": "MongoDB 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-  "source": "@site/docs/mongodb/agent-dbx-settings.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/agent-dbx-settings",
-  "permalink": "/whatap-docs/mongodb/agent-dbx-settings",
+  "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
+  "source": "@site/docs/oracle/agent-dbx-settings.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/agent-dbx-settings",
+  "permalink": "/whatap-docs/oracle/agent-dbx-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/agent-dbx-settings.mdx",
+  "editUrl": "undefined/docs/oracle/agent-dbx-settings.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "agent-dbx-settings",
     "title": "DBX 에이전트 설정",
-    "description": "MongoDB 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
+    "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
     "keywords": [
-      "MongoDB",
-      "데이터베이스",
-      "에이전트"
+      "Oracle",
+      "데이터베이스 모니터링",
+      "DBX 에이전트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "설정하기",
-    "permalink": "/whatap-docs/mongodb/agent-settings"
+    "permalink": "/whatap-docs/oracle/agent-settings"
   },
   "next": {
     "title": "XOS 에이전트 설정",
-    "permalink": "/whatap-docs/mongodb/agent-xos-settings"
+    "permalink": "/whatap-docs/oracle/agent-xos-settings"
   }
 };
 const assets = {
 
 };
 
-/*클러스터 구성*/
 /*AES 256 암호화 적용*/
 
 
@@ -1648,13 +1638,13 @@ const assets = {
 
 
 
-const toc = [{
+const toc = [..._common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
   "value": "기본 옵션",
   "id": "기본-옵션",
   "level": 2
-}, ..._common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_agent_setting_cluster_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+}, ..._common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
   "value": "데이터 수집",
-  "id": "데이터-수집",
+  "id": "collect-data",
   "level": 2
 }, ..._common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
   "value": "AWS RDS CloudWatch 적용",
@@ -1675,7 +1665,9 @@ function _createMdxContent(props) {
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
+      product: "Oracle"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["DBX 에이전트에 필요한 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: "whatap.conf"
       }), " 파일에 작성합니다. 설정할 수 있는 옵션은 다음을 참조하세요."]
@@ -1684,11 +1676,11 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "기본-옵션",
         children: "기본 옵션"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_setting_cluster_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "데이터-수집",
+        id: "collect-data",
         children: "데이터 수집"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1697,7 +1689,7 @@ function _createMdxContent(props) {
         id: "using-aws-rds",
         children: "AWS RDS CloudWatch 적용"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-        name: "db_redis_counter"
+        name: "db_oracle_counter"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_aws_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",

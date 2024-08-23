@@ -1,151 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86882],{
-
-/***/ 23243:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_import_aws_rds_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32338);
-/* harmony import */ var _common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20606);
-/* harmony import */ var _common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2382);
-/* harmony import */ var _common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1973);
-/* harmony import */ var _common_items_db_setting_agent_name_details_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(86711);
-/* harmony import */ var _common_items_db_agent_dbx_naming_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16761);
-
-
-const frontMatter = {
-	id: 'agent-dbx-settings',
-	title: 'DBX 에이전트 설정',
-	description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
-	keywords: [
-		'Altibase',
-		'데이터베이스 모니터링',
-		'DBX 에이전트'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase/agent-dbx-settings",
-  "title": "DBX 에이전트 설정",
-  "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-  "source": "@site/docs/altibase/agent-dbx-settings.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/agent-dbx-settings",
-  "permalink": "/whatap-docs/altibase/agent-dbx-settings",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase/agent-dbx-settings.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "agent-dbx-settings",
-    "title": "DBX 에이전트 설정",
-    "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-    "keywords": [
-      "Altibase",
-      "데이터베이스 모니터링",
-      "DBX 에이전트"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "altibaseSidebar",
-  "previous": {
-    "title": "설정하기",
-    "permalink": "/whatap-docs/altibase/agent-settings"
-  },
-  "next": {
-    "title": "XOS 에이전트 설정",
-    "permalink": "/whatap-docs/altibase/agent-xos-settings"
-  }
-};
-const assets = {
-
-};
-
-/*AES 256 암호화 적용*/
-
-
-
-
-
-
-
-
-const toc = [{
-  "value": "기본 옵션",
-  "id": "기본-옵션",
-  "level": 2
-}, ..._common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
-  "value": "데이터 수집",
-  "id": "collect-data",
-  "level": 2
-}, ..._common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
-  "value": "에이전트 이름 식별",
-  "id": "naming",
-  "level": 2
-}, ..._common_items_db_setting_agent_name_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_agent_dbx_naming_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM];
-function _createMdxContent(props) {
-  const _components = {
-    em: "em",
-    h2: "h2",
-    p: "p",
-    section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_7__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["DBX 에이전트에 필요한 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: "whatap.conf"
-      }), " 파일에 작성합니다. 설정할 수 있는 옵션은 다음을 참조하세요."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "기본-옵션",
-        children: "기본 옵션"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "collect-data",
-        children: "데이터 수집"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "naming",
-        children: "에이전트 이름 식별"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_setting_agent_name_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_dbx_naming_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_7__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[51523],{
 
 /***/ 1973:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -722,7 +576,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "redis,mongodb,oracle,oracle-v1",
+      product: "redis,mongodb,oracle,oracle-v1,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -741,24 +595,12 @@ function _createMdxContent(props) {
               children: "5"
             }), "이며 새벽 5시에 수집을 시작합니다."]
           }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "tables_hour"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              class: "type",
-              children: "Int"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "5"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["테이블 사이즈 정보를 저장하기 위해 정보를 수집하는 시각을 설정합니다. 기본값으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "5"
-            }), "이며 새벽 5시에 수집을 시작합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "redis,mongodb,oracle,oracle-v1",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "long_run_session_sec"
@@ -833,7 +675,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "cubrid,redis,mongodb",
+      product: "cubrid,redis,mongodb,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1195,6 +1037,48 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "altibase",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "tablespace_lock"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["데이터 파일 추가나 테이블스페이스 변경 시 발생하는 테이블스페이스 락(tablespace lock)을 모니터링하려면, 해당 옵션값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            }), "로 변경하세요."]
+          }), "\n"]
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "postgresql,mysql,oracle,oracle-pro,altibase",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "xview_min_sec"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Int"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "0"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "xview 수집 시, 쿼리의 수행 시간이 설정된 시간보다 오래 걸릴 때만 수집합니다. 기본 설정으로는 수행 시간이 0초 이상인 모든 쿼리를 수집합니다."
+          }), "\n"]
+        }), "\n"]
+      })
     })]
   });
 }
@@ -1289,50 +1173,257 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 32338:
+/***/ 97329:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20606);
+/* harmony import */ var _common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2382);
+/* harmony import */ var _common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1973);
+/* harmony import */ var _common_items_db_setting_agent_name_details_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(86711);
+/* harmony import */ var _common_items_db_agent_dbx_naming_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(16761);
 
 
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
+const frontMatter = {
+	id: 'agent-dbx-settings',
+	title: 'DBX 에이전트 설정',
+	description: 'whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
+	keywords: [
+		'CUBRID',
+		'데이터베이스 모니터링',
+		'DBX 에이전트'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "cubrid/agent-dbx-settings",
+  "title": "DBX 에이전트 설정",
+  "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
+  "source": "@site/docs/cubrid/agent-dbx-settings.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/agent-dbx-settings",
+  "permalink": "/whatap-docs/cubrid/agent-dbx-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/cubrid/agent-dbx-settings.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "agent-dbx-settings",
+    "title": "DBX 에이전트 설정",
+    "description": "whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
+    "keywords": [
+      "CUBRID",
+      "데이터베이스 모니터링",
+      "DBX 에이전트"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "cubridSidebar",
+  "previous": {
+    "title": "설정하기",
+    "permalink": "/whatap-docs/cubrid/agent-settings"
+  },
+  "next": {
+    "title": "XOS 에이전트 설정",
+    "permalink": "/whatap-docs/cubrid/agent-xos-settings"
+  }
+};
+const assets = {
+
+};
+
+/*AES 256 암호화 적용*/
 
 
 
 
 
-const toc = [];
+
+
+const toc = [{
+  "value": "기본 옵션",
+  "id": "기본-옵션",
+  "level": 2
+}, ..._common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
+  "value": "CUBRID 전용 옵션",
+  "id": "cubrid",
+  "level": 2
+}, {
+  "value": "데이터 수집",
+  "id": "데이터-수집",
+  "level": 2
+}, ..._common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+  "value": "에이전트 이름 식별",
+  "id": "naming",
+  "level": 2
+}, ..._common_items_db_setting_agent_name_details_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_agent_dbx_naming_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    admonition: "admonition",
+    code: "code",
+    em: "em",
+    h2: "h2",
+    li: "li",
     p: "p",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    pre: "pre",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["AWS CloudWatch를 이용하는 에이전트 설정에 대한 설명입니다. 수집을 시작하면 메트릭스에 포함되며, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_management",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_counter",
-        className: "uitext"
-      }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        children: props.name
-      }), " 카테고리에서 다른 지표들과 함께 확인할 수 있습니다."]
-    })
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["DBX 에이전트에 필요한 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: "whatap.conf"
+      }), " 파일에 작성합니다. 설정할 수 있는 옵션은 다음을 참조하세요."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "기본-옵션",
+        children: "기본 옵션"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "cubrid",
+        children: "CUBRID 전용 옵션"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "db_port"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Int"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "0"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["애플리케이션 접속 정보에 사용하는 브로커의 포트 정보입니다. 브로커 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "cubrid_broker.conf"
+            }), ")에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "BROKER_PORT"
+            }), " 항목에 정의된 값을 입력하세요. (CUBRID의 기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "BROKER_PORT: 33000"
+            }), ")"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "cms_port"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Int"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "8001"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "CUBRID Manager"
+            }), "가 사용하는 포트입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "CUBRID Manager"
+            }), " 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "cm.conf"
+            }), ")에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "cm_port"
+            }), " 항목에 정의된 값을 입력하세요. 모니터링 정보를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "CUBRID Manager"
+            }), "의 api를 통해 가지고 오기 위해 필요합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "cms_token_file"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "String"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["사용자가 생성한 DB가 여러 개일 경우 와탭 에이전트도 DB 개수만큼 설치하고 셋팅해야 합니다. 이 경우 에이전트 간 토큰을 공유하기 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "cms_token_file"
+            }), " 경로가 필요합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "{에이전트 설치 경로}"
+              }), "/cms_token"]
+            }), "으로 설정하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["예시) agent2를 설치했을 경우 agent1의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "cms_token_file"
+            }), " 경로를 공유하기 위해 다음과 같이 설정하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title='whtap.conf'",
+              children: "\ncms_token_file=/agent1/cms_token\n\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "broker"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "String"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "broker1"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "query_editor"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["CUBRID를 설치하면 디폴트로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "broker1"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "query_editor"
+            }), "로 브로커가 실행됩니다. 사용자가 임의로 브로커의 이름을 변경했거나 추가적으로 기동했을 경우 변경 사항을 입력하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "broker"
+              }), " 옵션으로 설정할 이름은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "cubrid broker status"
+              }), " 명령어로 확인할 수 있습니다."]
+            })
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "데이터-수집",
+        children: "데이터 수집"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_aes_256_encrypt_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "naming",
+        children: "에이전트 이름 식별"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_setting_agent_name_details_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_dbx_naming_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+    })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -1341,9 +1432,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[99897],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[96001],{
 
 /***/ 1973:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -934,7 +934,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "redis,mongodb,oracle,oracle-v1",
+      product: "redis,mongodb,oracle,oracle-v1,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -953,24 +953,12 @@ function _createMdxContent(props) {
               children: "5"
             }), "이며 새벽 5시에 수집을 시작합니다."]
           }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "tables_hour"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              class: "type",
-              children: "Int"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "5"
-            })]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["테이블 사이즈 정보를 저장하기 위해 정보를 수집하는 시각을 설정합니다. 기본값으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "5"
-            }), "이며 새벽 5시에 수집을 시작합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "redis,mongodb,oracle,oracle-v1",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "long_run_session_sec"
@@ -1045,7 +1033,7 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "cubrid,redis,mongodb",
+      product: "cubrid,redis,mongodb,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1407,6 +1395,48 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "altibase",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "tablespace_lock"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["데이터 파일 추가나 테이블스페이스 변경 시 발생하는 테이블스페이스 락(tablespace lock)을 모니터링하려면, 해당 옵션값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            }), "로 변경하세요."]
+          }), "\n"]
+        }), "\n"]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "postgresql,mysql,oracle,oracle-pro,altibase",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "xview_min_sec"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Int"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "0"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "xview 수집 시, 쿼리의 수행 시간이 설정된 시간보다 오래 걸릴 때만 수집합니다. 기본 설정으로는 수행 시간이 0초 이상인 모든 쿼리를 수집합니다."
+          }), "\n"]
+        }), "\n"]
+      })
     })]
   });
 }
@@ -1562,7 +1592,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 30219:
+/***/ 35914:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1589,47 +1619,47 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'agent-dbx-settings',
 	title: 'DBX 에이전트 설정',
-	description: 'Redis 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
+	description: 'MongoDB 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.',
 	keywords: [
-		'Redis',
+		'MongoDB',
 		'데이터베이스',
-		'DBX 에이전트'
+		'에이전트'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/agent-dbx-settings",
+  "id": "mongodb/agent-dbx-settings",
   "title": "DBX 에이전트 설정",
-  "description": "Redis 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
-  "source": "@site/docs/redis/agent-dbx-settings.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/agent-dbx-settings",
-  "permalink": "/whatap-docs/redis/agent-dbx-settings",
+  "description": "MongoDB 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
+  "source": "@site/docs/mongodb/agent-dbx-settings.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/agent-dbx-settings",
+  "permalink": "/whatap-docs/mongodb/agent-dbx-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/agent-dbx-settings.mdx",
+  "editUrl": "undefined/docs/mongodb/agent-dbx-settings.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "agent-dbx-settings",
     "title": "DBX 에이전트 설정",
-    "description": "Redis 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
+    "description": "MongoDB 데이터베이스에서 whatap.conf 파일에 설정할 수 있는 옵션에 대해 안내합니다.",
     "keywords": [
-      "Redis",
+      "MongoDB",
       "데이터베이스",
-      "DBX 에이전트"
+      "에이전트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "설정하기",
-    "permalink": "/whatap-docs/redis/agent-settings"
+    "permalink": "/whatap-docs/mongodb/agent-settings"
   },
   "next": {
     "title": "XOS 에이전트 설정",
-    "permalink": "/whatap-docs/redis/agent-xos-settings"
+    "permalink": "/whatap-docs/mongodb/agent-xos-settings"
   }
 };
 const assets = {

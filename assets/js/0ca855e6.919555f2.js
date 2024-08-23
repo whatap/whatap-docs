@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[74949],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56456],{
 
 /***/ 15876:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -315,7 +315,7 @@ function _createMdxContent(props) {
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "oracle,oracle-pro,oracle-v1",
+      product: "oracle,oracle-pro,oracle-v1,altibase",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -551,7 +551,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 47864:
+/***/ 1387:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -579,7 +579,7 @@ const frontMatter = {
 	title: '인스턴스 목록',
 	description: '에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.',
 	keywords: [
-		'Oracle',
+		'CUBRID',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스 모니터링'
@@ -588,16 +588,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v1/instance-list",
+  "id": "cubrid/instance-list",
   "title": "인스턴스 목록",
   "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
-  "source": "@site/docs/oracle-v1/instance-list.mdx",
-  "sourceDirName": "oracle-v1",
-  "slug": "/oracle-v1/instance-list",
-  "permalink": "/whatap-docs/oracle-v1/instance-list",
+  "source": "@site/docs/cubrid/instance-list.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/instance-list",
+  "permalink": "/whatap-docs/cubrid/instance-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v1/instance-list.mdx",
+  "editUrl": "undefined/docs/cubrid/instance-list.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -605,21 +605,21 @@ const metadata = {
     "title": "인스턴스 목록",
     "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
     "keywords": [
-      "Oracle",
+      "CUBRID",
       "인스턴스",
       "대시보드",
       "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "cubridSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/oracle-v1/dashboard-intro"
+    "permalink": "/whatap-docs/cubrid/dashboard-intro"
   },
   "next": {
     "title": "인스턴스 모니터링",
-    "permalink": "/whatap-docs/oracle-v1/instance-monitoring"
+    "permalink": "/whatap-docs/cubrid/instance-monitoring"
   }
 };
 const assets = {
