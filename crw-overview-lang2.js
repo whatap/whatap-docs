@@ -1,18 +1,18 @@
-// 2 다국어 - 다국어 문서 경로 설정 확인 중 - 되는 것 같기는 한데 캐시 때문인지 로케일 기준 빌드 시 오류가 뜸 내일 확인할래..
+// 2 다국어 - 다국어 문서 경로 설정 확인 중 - 되는 것 같기는 한데 캐시 때문인지 
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
 const urls = {
-    ko: [
-        'https://docs.whatap.io/release-notes/service/service-1_110_x',
-        // 'https://docs.whatap.io/release-notes/service/service-1_114_x',
-    ],
-    // en: [
-    //     'https://docs.whatap.io/en/release-notes/service/service-2_6_x',
-    //     'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
+    // ko: [
+    //     'https://docs.whatap.io/release-notes/service/service-1_110_x',
+    //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
     // ],
+    en: [
+        'https://docs.whatap.io/en/release-notes/service/service-1_110_x',
+        // 'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
+    ],
     // ja: [
     //     'https://docs.whatap.io/ja/release-notes/service/service-2_6_x',
     //     'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
