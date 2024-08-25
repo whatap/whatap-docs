@@ -760,6 +760,13 @@ function _createMdxContent(props) {
                       children: "다음 문서"
                     }), "를 참조하세요."]
                   }), "\n"]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                    children: ["개편된 사항에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                      href: "https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=260",
+                      children: "다음 링크"
+                    }), "를 참조하세요."]
+                  }), "\n"]
                 }), "\n"]
               })
             }), "\n"]

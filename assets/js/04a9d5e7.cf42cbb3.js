@@ -48,10 +48,6 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": ".NET Agent v2.2.2",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_2"
-  },
   "next": {
     "title": ".NET Agent v2.2.0",
     "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_2_0"

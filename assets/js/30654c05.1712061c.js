@@ -1,27 +1,16 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[38847],{
 
-/***/ 9533:
+/***/ 35394:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  assets: () => (/* binding */ assets),
-  contentTitle: () => (/* binding */ dotnet_2_3_0_contentTitle),
-  "default": () => (/* binding */ dotnet_2_3_0_MDXContent),
-  frontMatter: () => (/* binding */ dotnet_2_3_0_frontMatter),
-  metadata: () => (/* binding */ metadata),
-  toc: () => (/* binding */ dotnet_2_3_0_toc)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(28453);
-;// CONCATENATED MODULE: ./docs/release-notes/dotnet/_download-dotnet-agent.mdx
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
 
 
 const frontMatter = {};
@@ -40,37 +29,37 @@ function _createMdxContent(props) {
     p: "p",
     strong: "strong",
     ul: "ul",
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return (0,jsx_runtime.jsxs)(_components.admonition, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
     type: "info",
-    children: [(0,jsx_runtime.jsx)(_components.p, {
-      children: (0,jsx_runtime.jsx)(_components.strong, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "다운로드"
       })
-    }), (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: (0,jsx_runtime.jsx)(_components.a, {
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
             href: "https://repo.whatap.io/windows/whatap_dotnet.exe",
             children: ".NET Framework version"
           })
         }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: (0,jsx_runtime.jsx)(_components.a, {
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
             href: "https://repo.whatap.io/windows/whatap_dotnet_core.exe",
             children: ".NET Core version"
           })
         }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-          children: (0,jsx_runtime.jsx)(_components.a, {
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
             href: "https://repo.whatap.io/windows/whatap_dotnet_450.exe",
             children: ".NET runtime 4.6.1 미만 또는 Windows 2012 미만"
           })
-        }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "Windows Server 2008 R2가 최소 요구사항입니다."
         }), "\n"]
       }), "\n"]
@@ -79,22 +68,39 @@ function _createMdxContent(props) {
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
   }) : _createMdxContent(props);
 }
 
 
-;// CONCATENATED MODULE: ./docs/release-notes/dotnet/dotnet-2.3.0.mdx
+
+/***/ }),
+
+/***/ 24492:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _download_dotnet_agent_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35394);
 
 
-const dotnet_2_3_0_frontMatter = {
+const frontMatter = {
 	id: 'dotnet-2_3_0',
 	title: '.NET Agent v2.3.0',
 	toc_max_heading_level: 2,
@@ -102,7 +108,7 @@ const dotnet_2_3_0_frontMatter = {
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
-const dotnet_2_3_0_contentTitle = undefined;
+const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/dotnet/dotnet-2_3_0",
   "title": ".NET Agent v2.3.0",
@@ -126,8 +132,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/dotnet/"
+    "title": ".NET Agent v2.3.1",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_3_1"
   },
   "next": {
     "title": ".NET Agent v2.2.9",
@@ -141,53 +147,53 @@ const assets = {
 
 
 
-const dotnet_2_3_0_toc = [...toc];
-function dotnet_2_3_0_createMdxContent(props) {
+const toc = [..._download_dotnet_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
   const _components = {
     a: "a",
     li: "li",
     p: "p",
     ul: "ul",
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_components.p, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "2024년 07월 31일"
-    }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(Status, {
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "0",
             children: "Fixed"
-          }), " ", (0,jsx_runtime.jsx)(_components.a, {
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
             href: "dotnet-2_2_9",
             children: "v2.2.9"
           }), "에서 SQL, HTTP 모니터링이 누락되는 문제 수정"]
         }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: [(0,jsx_runtime.jsx)(Status, {
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "0",
             children: "Fixed"
           }), " 패킷 처리가 지연될 때 UDP 패킷이 변조되는 문제 개선"]
         }), "\n"]
       }), "\n"]
-    }), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_download_dotnet_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
   });
 }
-function dotnet_2_3_0_MDXContent(props = {}) {
+function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(dotnet_2_3_0_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
-  }) : dotnet_2_3_0_createMdxContent(props);
+  }) : _createMdxContent(props);
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
