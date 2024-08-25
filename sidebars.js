@@ -3742,7 +3742,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -3750,9 +3750,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_0',
-                  // className: 'new',
+                  id: 'release-notes/dotnet/dotnet-2_3_1',
+                  className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
@@ -3761,7 +3762,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
-                'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
