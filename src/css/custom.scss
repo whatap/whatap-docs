@@ -430,7 +430,7 @@ html[lang='ja-JP'] {
   // font-weight: bold;
   border-radius: 4px;
   padding: 0 3px;
-  border: 1px solid none;
+  border: none;
   background-color: rgb(235, 235, 235);
   color: rgb(82, 114, 255);
   font-family: "Oleo Script";
@@ -1892,6 +1892,17 @@ main {
       color: #fff;
       border: none;
       padding: 0 5px 0 5px;
+    }
+    code.Beta {
+      border-radius: 4px;
+      padding: 0 3px;
+      border: none;
+      background-color: rgb(235, 235, 235);
+      color: rgb(82, 114, 255);
+      font-family: "Oleo Script";
+      margin-top: -4px;
+      font-weight: 300;
+      font-size: 98%;
     }
     code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
