@@ -505,5 +505,9 @@
   "theme.contentVisibility.draftBanner.message": {
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
+  },
+  "theme.blog.newFeatures": {
+    "message": "New features",
+    "description": "Navbar item with label 새로운 기능"
   }
 }

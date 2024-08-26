@@ -6,12 +6,19 @@ import styles from './styles.module.css';
 
 export default function Title ({level, hashid, children, className}) {
     const Headertag = `h${level}`;
+    let hid;
     const {
         navbar: {hideOnScroll},
     } = useThemeConfig();
 
     if (level === 'none') {
         return null
+    }
+
+    if (!hashid) {
+        hid = children.replace(/\s/g, "_");
+    } else {
+        hid = hashid;
     }
     return (
         <Headertag 
@@ -22,11 +29,11 @@ export default function Title ({level, hashid, children, className}) {
                 : styles.anchorWithStickyNavbar,
                 className
             )}
-            id={hashid}>
+            id={hid}>
             {children}
             <Link
                 className="hash-link"
-                to={`#${hashid}`}>
+                to={`#${hid}`}>
                 &#8203;
             </Link>
         </Headertag>
