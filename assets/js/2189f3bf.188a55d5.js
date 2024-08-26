@@ -303,8 +303,8 @@ const metadata = {
   },
   "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/nodejs/instance-performance-analysis"
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
   }
 };
 const assets = {

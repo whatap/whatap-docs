@@ -687,8 +687,8 @@ const metadata = {
     "permalink": "/whatap-docs/nodejs/set-event-format"
   },
   "next": {
-    "title": "실험실",
-    "permalink": "/whatap-docs/nodejs/labs"
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
   }
 };
 const assets = {

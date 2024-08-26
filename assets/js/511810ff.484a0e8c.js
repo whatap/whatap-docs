@@ -193,8 +193,8 @@ const metadata = {
     "permalink": "/whatap-docs/log/log-java"
   },
   "next": {
-    "title": "Python",
-    "permalink": "/whatap-docs/log/log-python"
+    "title": "Node.js",
+    "permalink": "/whatap-docs/log/log-nodejs"
   }
 };
 const assets = {

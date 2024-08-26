@@ -1,5 +1,124 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3245],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53301],{
+
+/***/ 78521:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    code: "code",
+    em: "em",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ImgLang} = _components;
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "로그"
+        })
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "로그 설정"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 프로젝트 메뉴 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "로그"
+        })
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "로그 설정"
+        })
+      }), " 메뉴를 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "로그 모니터링 시작하기"
+        })
+      }), " 섹션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "에이전트 설정 확인"
+        })
+      }), " 탭의 안내를 참조해 진행하세요."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["프로젝트 메뉴 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "관리"
+            })
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "에이전트 설정"
+            })
+          }), " 메뉴를 선택하세요."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "옵션 작성"
+            })
+          }), " 탭에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "직접 입력"
+            })
+          }), "을 선택하세요. 입력창에 다음과 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "logsink_enabled=true"
+          }), " 옵션을 추가하세요."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "log-agent-conf.png",
+          desc: "로그 에이전트 설정"
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "로그 모니터링을 적용하기 위해 애플리케이션을 다시 시작하세요."
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
 
 /***/ 88539:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -135,7 +254,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 44463:
+/***/ 36472:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -148,42 +267,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(62473);
-/* harmony import */ var _common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(88539);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_log_agent_setting_check_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(78521);
+/* harmony import */ var _common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(62473);
+/* harmony import */ var _common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(88539);
 
 
 const frontMatter = {
-	id: 'log-python',
-	title: 'Python',
-	description: 'Python 애플리케이션에서 로그를 수집하는 방법을 안내합니다.',
+	id: 'log-nodejs',
+	title: 'Node.js',
+	description: 'Node.js 애플리케이션에서 로그를 수집하는 방법을 안내합니다.',
 	keywords: [
 		'로그 모니터링',
-		'Python'
+		'Node.js'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "log/log-python",
-  "title": "Python",
-  "description": "Python 애플리케이션에서 로그를 수집하는 방법을 안내합니다.",
-  "source": "@site/docs/log/log-python.mdx",
+  "id": "log/log-nodejs",
+  "title": "Node.js",
+  "description": "Node.js 애플리케이션에서 로그를 수집하는 방법을 안내합니다.",
+  "source": "@site/docs/log/log-nodejs.mdx",
   "sourceDirName": "log",
-  "slug": "/log/log-python",
-  "permalink": "/whatap-docs/log/log-python",
+  "slug": "/log/log-nodejs",
+  "permalink": "/whatap-docs/log/log-nodejs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/log/log-python.mdx",
+  "editUrl": "undefined/docs/log/log-nodejs.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "log-python",
-    "title": "Python",
-    "description": "Python 애플리케이션에서 로그를 수집하는 방법을 안내합니다.",
+    "id": "log-nodejs",
+    "title": "Node.js",
+    "description": "Node.js 애플리케이션에서 로그를 수집하는 방법을 안내합니다.",
     "keywords": [
       "로그 모니터링",
-      "Python"
+      "Node.js"
     ],
     "isTranslationMissing": false
   },
@@ -193,13 +313,14 @@ const metadata = {
     "permalink": "/whatap-docs/log/log-php"
   },
   "next": {
-    "title": "Go",
-    "permalink": "/whatap-docs/log/log-go"
+    "title": "Python",
+    "permalink": "/whatap-docs/log/log-python"
   }
 };
 const assets = {
 
 };
+
 
 
 
@@ -213,55 +334,33 @@ const toc = [{
   "value": "에이전트 설정 확인",
   "id": "에이전트-설정-확인",
   "level": 2
-}, {
-  "value": "로그 수집 활성화",
-  "id": "로그-수집-활성화",
-  "level": 3
-}, {
-  "value": "로그와 웹 트랜잭션 연동",
-  "id": "로그와-웹-트랜잭션-연동",
-  "level": 3
-}, {
-  "value": "1.3.6 이후 버전",
-  "id": "136-이후-버전",
-  "level": 4
-}, {
-  "value": "1.3.6 미만 버전",
-  "id": "136-미만-버전",
-  "level": 4
-}, {
+}, ..._common_items_import_log_agent_setting_check_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "로그 모니터링 활성화",
   "id": "로그-모니터링-활성화",
   "level": 2
-}, ..._common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
+}, ..._common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
-    code: "code",
     em: "em",
     h2: "h2",
-    h3: "h3",
-    h4: "h4",
-    li: "li",
     p: "p",
-    pre: "pre",
     section: "section",
     strong: "strong",
-    ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "Python 애플리케이션에서 로그를 수집하려면 다음을 확인하세요."
+      children: "Node.js 애플리케이션에서 로그를 수집하려면 다음을 확인하세요."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "에이전트-업데이트",
         children: "에이전트 업데이트"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["Python 에이전트 1.2.2 버전부터 가능합니다. 업데이트 방법은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "../python/manage-pkg#update-pkg",
+        children: ["Node.js 에이전트 0.5.0 버전부터 가능합니다. 업데이트 방법은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "../nodejs/agent-manage",
           children: "다음 문서"
         }), "를 참조하세요."]
       })]
@@ -270,107 +369,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "에이전트-설정-확인",
         children: "에이전트 설정 확인"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로그"
-          })
-        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로그 설정"
-          })
-        })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["와탭 모니터링 서비스 초기 화면에서 프로젝트를 선택한 다음 프로젝트 메뉴 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로그"
-          })
-        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로그 설정"
-          })
-        }), " 메뉴를 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "로그 모니터링 시작하기"
-          })
-        }), " 섹션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "에이전트 설정 확인"
-          })
-        }), " 탭의 안내를 참조해 진행하세요."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "로그-수집-활성화",
-        children: "로그 수집 활성화"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["설정 파일 경로(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "WHATAP_HOME"
-        }), ")를 포함한 명령어를 입력하면 로그 수집이 바로 시작됩니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-shell",
-          children: "export LOGFILES={로그파일전체경로},...\necho \"logsink_enabled=true\" | sudo tee -a {설정파일경로}/whatap.conf\necho \"logsink.files=$LOGFILES\" | sudo tee -a {설정파일경로}/whatap.conf\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "로그와-웹-트랜잭션-연동",
-        children: "로그와 웹 트랜잭션 연동"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "136-이후-버전",
-        children: "1.3.6 이후 버전"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["1.3.6 버전부터 다음의 방법으로 트랜잭션과 로그 연동을 설정할 수 있습니다. 현재 와탭은 Python의 logging, loguru 라이브러리를 지원하고 있습니다. 사용하는 Python Log 라이브러리에 따라 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "whatap.conf"
-        }), "를 구성하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "logging 모듈"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-shell",
-              metastring: "title='logging'",
-              children: "\necho \"trace_logging_enabled=true\" | sudo tee -a {설정파일경로}/whatap.conf\n\n"
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "loguru 모듈"
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-shell",
-              metastring: "title='loguru'",
-              children: "\necho \"trace_loguru_enabled=true\" | sudo tee -a {설정파일경로}/whatap.conf\n\n"
-            })
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "136-미만-버전",
-        children: "1.3.6 미만 버전"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["트랜잭션 별로 발생한 로그를 별도로 조회 가능하도록 트랜잭션 아이디", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "{txid}"
-        }), "를 로그에 출력합니다. 와탭 모니터링에서는 Python LogRecord에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "{txid}"
-        }), "를 자동 주입하여 포매터 설정 시 로그 파일에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "{txid}"
-        }), "를 출력할 수 있도록 합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-shell",
-          children: "settings.py\n...\nLOGGING = {\n...\n    'formatters': {\n        ...\n    },\n    'handlers': {\n        ...\n    },\n    'loggers': {\n        ...\n        '{로거이름}': {\n            'handlers': [...],\n        ...\n        },\n    },\n}\n\ntry:\n    import whatap.trace.mod.logging as whatap_logging\n    if whatap_logging.logging_injection_processed:\n        LOGGING['formatters']['whatap.formatter']={\n                '()': 'django.utils.log.ServerFormatter',\n                'format': '[{server_time}] -- {{ \"@txid\" : \"{txid}\" }} -- {message}',\n                'style': '{',\n            }\n        LOGGING['handlers']['whatap']={\n                'level': 'DEBUG',\n                'class': 'logging.handlers.RotatingFileHandler',\n                'filename': os.path.join(BASE_DIR, 'logs','whatap_log.log'),\n                'formatter': 'whatap.formatter',\n            }\n        LOGGING['loggers'][{로거이름}]['handlers'].append('whatap')\nexcept:\n    pass\n...\n"
-        })
-      })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_log_agent_setting_check_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -396,13 +395,13 @@ function _createMdxContent(props) {
             children: "로그 모니터링 활성화"
           })
         }), " 탭에서 토글 버튼으로 와탭 로그 모니터링을 활성화 또는 비활성화 할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
