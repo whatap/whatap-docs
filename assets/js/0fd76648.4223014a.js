@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84363],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44258],{
 
 /***/ 76105:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2077,11 +2077,10 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, ProdImg} = _components;
+  }, {Cmdname, ImgLang, InDoc} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!ProdImg) _missingMdxReference("ProdImg", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -2185,7 +2184,7 @@ function _createMdxContent(props) {
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-dashboard-widget-add.png",
           desc: "위젯 추가하기"
         })
@@ -2429,7 +2428,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 86904:
+/***/ 35608:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2461,7 +2460,7 @@ const frontMatter = {
 	title: '애플리케이션 대시보드',
 	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	keywords: [
-		'Go',
+		'.NET',
 		'대시보드',
 		'애플리케이션',
 		'애플리케이션 모니터링'
@@ -2470,16 +2469,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/dashboard",
+  "id": "dotnet/dashboard",
   "title": "애플리케이션 대시보드",
   "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
-  "source": "@site/docs/golang/dashboard.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/dashboard",
-  "permalink": "/whatap-docs/golang/dashboard",
+  "source": "@site/docs/dotnet/dashboard.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/dashboard",
+  "permalink": "/whatap-docs/dotnet/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/dashboard.mdx",
+  "editUrl": "undefined/docs/dotnet/dashboard.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2487,21 +2486,21 @@ const metadata = {
     "title": "애플리케이션 대시보드",
     "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "keywords": [
-      "Go",
+      ".NET",
       "대시보드",
       "애플리케이션",
       "애플리케이션 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "goSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/golang/dashboard-intro"
+    "permalink": "/whatap-docs/dotnet/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/golang/dashboard-transactionmap"
+    "permalink": "/whatap-docs/dotnet/dashboard-transactionmap"
   }
 };
 const assets = {

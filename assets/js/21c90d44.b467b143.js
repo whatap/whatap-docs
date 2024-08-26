@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3524],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86024],{
 
 /***/ 76105:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2077,11 +2077,10 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, ProdImg} = _components;
+  }, {Cmdname, ImgLang, InDoc} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!ProdImg) _missingMdxReference("ProdImg", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -2185,7 +2184,7 @@ function _createMdxContent(props) {
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
         product: "postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
           img: "db-dashboard-widget-add.png",
           desc: "위젯 추가하기"
         })
@@ -2429,7 +2428,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 58602:
+/***/ 28962:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2459,47 +2458,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard',
 	title: '애플리케이션 대시보드',
-	description: '자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.',
+	description: '웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.',
 	keywords: [
-		'Java',
+		'PHP',
 		'대시보드',
-		'애플리케이션'
+		'애플리케이션',
+		'애플리케이션 모니터링'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard",
+  "id": "php/dashboard",
   "title": "애플리케이션 대시보드",
-  "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
-  "source": "@site/docs/java/dashboard.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard",
-  "permalink": "/whatap-docs/java/dashboard",
+  "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
+  "source": "@site/docs/php/dashboard.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/dashboard",
+  "permalink": "/whatap-docs/php/dashboard",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard.mdx",
+  "editUrl": "undefined/docs/php/dashboard.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "dashboard",
     "title": "애플리케이션 대시보드",
-    "description": "자바(Java) 애플리케이션의 핵심 지표를 실시간으로 모니터링하고 과거 데이터를 조회할 수 있는 방법을 안내합니다. CPU, 메모리 사용량, 트랜잭션 상태 등의 정보를 포함하여 문제를 빠르게 식별하고 분석할 수 있는 대시보드 설정과 사용법을 확인할 수 있습니다. 에이전트의 연결 상태 확인, 분류별 에이전트 모니터링, 대시보드 위젯의 편집과 프리셋 관리 방법 등을 포함하고 있습니다.",
+    "description": "웹 애플리케이션 서버의 리소스를 실시간으로 모니터링할 수 있습니다.",
     "keywords": [
-      "Java",
+      "PHP",
       "대시보드",
-      "애플리케이션"
+      "애플리케이션",
+      "애플리케이션 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/java/dashboard-intro"
+    "permalink": "/whatap-docs/php/dashboard-intro"
   },
   "next": {
     "title": "트랜잭션 맵",
-    "permalink": "/whatap-docs/java/dashboard-transactionmap"
+    "permalink": "/whatap-docs/php/dashboard-transactionmap"
   }
 };
 const assets = {
