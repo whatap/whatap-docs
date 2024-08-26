@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80181],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10681],{
 
 /***/ 15299:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1167,6 +1167,7 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
     h3: "h3",
     img: "img",
     li: "li",
@@ -1371,7 +1372,7 @@ function _createMdxContent(props) {
             height: "25"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
             children: "TXT"
-          }), ": 트랜잭션 기본 정보 및 구간별 수행 정보를 txt 형식의 파일로 다운로드할 수 있습니다."]
+          }), ": 트랜잭션 기본 정보 및 구간별 수행 정보를 TXT 형식의 파일로 다운로드할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1382,7 +1383,28 @@ function _createMdxContent(props) {
             height: "25"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
             children: "SQL"
-          }), ": 트랜잭션 기본 정보 및 SQL 수행 정보를 txt 형식의 파일로 다운로드할 수 있습니다."]
+          }), ": 트랜잭션 기본 정보 및 SQL 수행 정보를 TXT 형식의 파일로 다운로드할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "ITM08351",
+                className: "uitext"
+              }), ": 바인드 변수값을 원래의 값으로 치환하여 SQL 통계 데이터를 다운로드합니다. 보안키(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "paramkey"
+              }), ")가 설정되어 있다면 보안키 입력창이 나타납니다. 보안키를 입력를 입력해야 다운로드할 수 있습니다. 보안키와 관련한 에이전트 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-transaction#profile_http_parameter",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "ITM08352",
+                className: "uitext"
+              }), ": 바인드 변수값을 치환하지 않은 상태로 SQL 통계 데이터를 다운로드합니다."]
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2856,7 +2878,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 90980:
+/***/ 89249:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2889,12 +2911,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'analysis-hitmap',
-	title: '히트맵',
+	id: 'trs-profile',
+	title: '트랜잭션 트레이싱',
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	keywords: [
 		'애플리케이션',
-		'.NET',
+		'Python',
 		'분석',
 		'히트맵',
 		'트랜잭션'
@@ -2903,39 +2925,39 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/analysis-hitmap",
-  "title": "히트맵",
+  "id": "python/trs-profile",
+  "title": "트랜잭션 트레이싱",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/dotnet/analysis-hitmap.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/analysis-hitmap",
-  "permalink": "/whatap-docs/dotnet/analysis-hitmap",
+  "source": "@site/docs/python/trs-profile.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/trs-profile",
+  "permalink": "/whatap-docs/python/trs-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/analysis-hitmap.mdx",
+  "editUrl": "undefined/docs/python/trs-profile.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "analysis-hitmap",
-    "title": "히트맵",
+    "id": "trs-profile",
+    "title": "트랜잭션 트레이싱",
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "keywords": [
       "애플리케이션",
-      ".NET",
+      "Python",
       "분석",
       "히트맵",
       "트랜잭션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "pySidebar",
   "previous": {
-    "title": "큐브",
-    "permalink": "/whatap-docs/dotnet/cube"
+    "title": "트랜잭션 분석하기",
+    "permalink": "/whatap-docs/python/trs-view"
   },
   "next": {
-    "title": "멀티 트랜잭션 추적",
-    "permalink": "/whatap-docs/dotnet/analysis-trace-mtx"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/python/active-transactions"
   }
 };
 const assets = {

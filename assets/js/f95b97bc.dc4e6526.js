@@ -86,11 +86,11 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "1",
             children: "Feature"
-          }), " cgroupV2 환경에서 rss 관련 매트릭 지표 추가 수집"]
+          }), " cgroup v2 환경에서 rss 관련 매트릭 지표 추가 수집"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "container::mem_totalrss"
-          }), ": cgroupV2 환경에서 컨테이너의 메모리 RSS(Resident Set Size)를 수집하는 지표입니다. 이 지표는 컨테이너가 실제로 사용하고 있는 물리 메모리의 양을 나타냅니다."]
+          }), ": cgroup v2 환경에서 컨테이너의 메모리 RSS(Resident Set Size)를 수집하는 지표입니다. 이 지표는 컨테이너가 실제로 사용하고 있는 물리 메모리의 양을 나타냅니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

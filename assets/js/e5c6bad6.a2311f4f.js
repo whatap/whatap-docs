@@ -1167,6 +1167,7 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
     h3: "h3",
     img: "img",
     li: "li",
@@ -1371,7 +1372,7 @@ function _createMdxContent(props) {
             height: "25"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
             children: "TXT"
-          }), ": 트랜잭션 기본 정보 및 구간별 수행 정보를 txt 형식의 파일로 다운로드할 수 있습니다."]
+          }), ": 트랜잭션 기본 정보 및 구간별 수행 정보를 TXT 형식의 파일로 다운로드할 수 있습니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1382,7 +1383,28 @@ function _createMdxContent(props) {
             height: "25"
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
             children: "SQL"
-          }), ": 트랜잭션 기본 정보 및 SQL 수행 정보를 txt 형식의 파일로 다운로드할 수 있습니다."]
+          }), ": 트랜잭션 기본 정보 및 SQL 수행 정보를 TXT 형식의 파일로 다운로드할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "ITM08351",
+                className: "uitext"
+              }), ": 바인드 변수값을 원래의 값으로 치환하여 SQL 통계 데이터를 다운로드합니다. 보안키(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "paramkey"
+              }), ")가 설정되어 있다면 보안키 입력창이 나타납니다. 보안키를 입력를 입력해야 다운로드할 수 있습니다. 보안키와 관련한 에이전트 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-transaction#profile_http_parameter",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "ITM08352",
+                className: "uitext"
+              }), ": 바인드 변수값을 치환하지 않은 상태로 SQL 통계 데이터를 다운로드합니다."]
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
