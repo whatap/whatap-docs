@@ -1,4 +1,4 @@
-// 2 다국어 - 다국어 문서 경로 설정 확인 중 - 되는 것 같기는 한데 캐시 때문인지 
+// 2 다국어 - 다국어 문서 경로 설정 확인 및 링크 이미지 경로 수정
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
