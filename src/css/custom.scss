@@ -121,7 +121,7 @@ html[lang='en-US'] {
   div.navbar__items {
     a[href*='blog'] {
       // 다국어 영문 블로그 네비게이션바
-      // display: none;
+      display: none;
     }
   }
   nav.pagination-nav {
@@ -150,7 +150,7 @@ html[lang='ja-JP'] {
   div.navbar__items {
     a[href*='blog'] {
       // 다국어 일문 블로그 네비게이션바
-      // display: none;
+      display: none;
     }
   }
   // 일문 블로그 날짜2
