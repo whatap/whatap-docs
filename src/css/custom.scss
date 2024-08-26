@@ -120,11 +120,20 @@ html[lang='en-US'] {
   }
   div.navbar__items {
     a[href*='blog'] {
-      display: none;
+      // 다국어 영문 블로그 네비게이션바
+      // display: none;
     }
   }
   nav.pagination-nav {
     display: none;
+  }
+  // 영문 블로그 날짜2
+  div.history_overview ul li > .changelog-date {
+    position: absolute;
+    left: -88px !important; 
+    font-size: 78%;
+    top: 8px;
+    transform: translateY(-50%);
   }
 }
 
@@ -140,8 +149,17 @@ html[lang='ja-JP'] {
   }
   div.navbar__items {
     a[href*='blog'] {
-      display: none;
+      // 다국어 일문 블로그 네비게이션바
+      // display: none;
     }
+  }
+  // 일문 블로그 날짜2
+  div.history_overview ul li > .changelog-date {
+    position: absolute;
+    left: -110px; 
+    font-size: 75%;
+    top: 8px;
+    transform: translateY(-50%);
   }
   nav.pagination-nav {
     display: none;
@@ -992,6 +1010,7 @@ div.history_overview{
       padding-left: 25px;
       margin-left: 15px !important;
 
+      // 국문 블로그 날짜
       & > .changelog-date {
         position: absolute;
         left: -112px; 
@@ -3133,6 +3152,14 @@ main {
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+    // 영문 블로그 날짜
+    // div.history_overview ul li > .changelog-date {
+    //   position: absolute;
+    //   left: -88px !important; 
+    //   font-size: 78%;
+    //   top: 8px;
+    //   transform: translateY(-50%);
+    // }
   }
   
   html[lang='ja-JP'] {
@@ -3142,6 +3169,14 @@ main {
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+    // 일문 블로그 날짜
+    // & > .changelog-date {
+    //   position: absolute;
+    //   left: -105px; 
+    //   font-size: 75%;
+    //   top: 8px;
+    //   transform: translateY(-50%);
+    // }
   }
 
   .redocusaurus {
