@@ -77,8 +77,12 @@ const metadata = {
   },
   "unlisted": false,
   "prevItem": {
-    "title": "3분기 안내",
-    "permalink": "/whatap-docs/blog/2023-3q-summary"
+    "title": "1분기 안내",
+    "permalink": "/whatap-docs/blog/2024-1q-summary"
+  },
+  "nextItem": {
+    "title": "4분기 안내",
+    "permalink": "/whatap-docs/blog/2023-4q-summary"
   }
 };
 const assets = {

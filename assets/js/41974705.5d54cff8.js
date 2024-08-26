@@ -4763,8 +4763,8 @@ const metadata = {
     "permalink": "/whatap-docs/blog/2024-2q-summary"
   },
   "nextItem": {
-    "title": "4분기 안내",
-    "permalink": "/whatap-docs/blog/2023-4q-summary"
+    "title": "새로운 기능이란?",
+    "permalink": "/whatap-docs/blog/index"
   }
 };
 const assets = {

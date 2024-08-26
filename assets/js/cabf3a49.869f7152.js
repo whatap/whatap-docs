@@ -15,22 +15,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _CustomListItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97552);
-/* harmony import */ var _ChangelogComponent3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(27268);
+/* harmony import */ var _site_src_components_CustomListItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48530);
+/* harmony import */ var _site_src_components_ChangelogComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(74979);
 
 
 const frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-07-23T15:30',
+	date: '2024-08-23T15:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
 		'서비스 개요'
 	],
-	image: '/img/changelog/new_feature_overview_txt.png',
-	contentImage: '/img/changelog/new_feature_overview_txt_gl.png',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
@@ -40,7 +38,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-07-23T15:30:00.000Z",
+  "date": "2024-08-23T15:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -69,14 +67,12 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-07-23T15:30",
+    "date": "2024-08-23T15:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
       "서비스 개요"
     ],
-    "image": "/img/changelog/new_feature_overview_txt.png",
-    "contentImage": "/img/changelog/new_feature_overview_txt_gl.png",
     "isTranslationMissing": false
   },
   "unlisted": false,
@@ -142,7 +138,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 27268:
+/***/ 74979:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -154,7 +150,7 @@ function MDXContent(props = {}) {
 // 일단 오버뷰랑 서비스 버전 디스플레이 가리고 br 없애기 (0718 이거 씀)
 
 
-const ChangelogComponent3 = ({ children  })=>{
+const ChangelogComponent = ({ children  })=>{
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         // 중복된 changelog-overview, changelog-date, changelog-service 묶음을 체크하기 위한 Set
         const seenCombinations = new Set();
@@ -204,12 +200,12 @@ const ChangelogComponent3 = ({ children  })=>{
         children: children
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ChangelogComponent3);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ChangelogComponent);
 
 
 /***/ }),
 
-/***/ 97552:
+/***/ 48530:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -286,25 +282,7 @@ function CustomListItem({ children , overview , date , service  }) {
         children: children
     }));
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomListItem); // import React from 'react';
- // function CustomListItem({ children, overview, date, service }) {
- //   return (
- //     <li data-overview={overview} data-date={date} data-service={service}>
- //       {children}
- //     </li>
- //   );
- // }
- // export default CustomListItem;
- // 기존 날짜만
- // import React from 'react';
- // function CustomListItem({ children, date }) {
- //   return (
- //     <li data-date={date}>
- //       {children}
- //     </li>
- //   );
- // }
- // export default CustomListItem;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomListItem);
 
 
 /***/ }),

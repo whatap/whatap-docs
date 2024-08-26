@@ -2565,7 +2565,7 @@ const _2023_4q_summary_frontMatter = {
 	slug: '2023-4q-summary',
 	title: '4분기 안내',
 	authors: 'ysj',
-	date: '2024-05-20T15:20',
+	date: '2023-12-31T15:20',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -2580,7 +2580,7 @@ const metadata = {
   "source": "@site/blog/2023-4q-summary.mdx",
   "title": "4분기 안내",
   "description": "와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.",
-  "date": "2024-05-20T15:20:00.000Z",
+  "date": "2023-12-31T15:20:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -2609,7 +2609,7 @@ const metadata = {
     "slug": "2023-4q-summary",
     "title": "4분기 안내",
     "authors": "ysj",
-    "date": "2024-05-20T15:20",
+    "date": "2023-12-31T15:20",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
@@ -2619,8 +2619,8 @@ const metadata = {
   },
   "unlisted": false,
   "prevItem": {
-    "title": "1분기 안내",
-    "permalink": "/whatap-docs/blog/2024-1q-summary"
+    "title": "새로운 기능이란?",
+    "permalink": "/whatap-docs/blog/index"
   },
   "nextItem": {
     "title": "3분기 안내",

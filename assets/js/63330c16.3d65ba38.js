@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[69529],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11146],{
 
-/***/ 85259:
+/***/ 66549:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,25 +18,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	slug: '2023-3q-summary',
-	title: '3분기 안내',
-	authors: 'ysj',
-	date: '2024-05-20T15:10',
-	toc_max_heading_level: 2,
+	slug: 'index',
+	title: '새로운 기능이란?',
+	authors: [
+		'twt'
+	],
+	date: '2024-04-08T10:00',
 	tags: [
 		'새로운 기능',
-		2023
+		'콘텐츠 구성'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "permalink": "/whatap-docs/blog/2023-3q-summary",
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2023-3q-summary.mdx",
-  "source": "@site/blog/2023-3q-summary.mdx",
-  "title": "3분기 안내",
-  "description": "와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.",
-  "date": "2024-05-20T15:10:00.000Z",
+  "permalink": "/whatap-docs/blog/index",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-index.mdx",
+  "source": "@site/blog/2024-index.mdx",
+  "title": "새로운 기능이란?",
+  "description": "{/ changelog 관련 이미지 /}",
+  "date": "2024-04-08T10:00:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -45,64 +46,71 @@ const metadata = {
     },
     {
       "inline": true,
-      "label": "2023",
-      "permalink": "/whatap-docs/blog/tags/2023"
+      "label": "콘텐츠 구성",
+      "permalink": "/whatap-docs/blog/tags/콘텐츠-구성"
     }
   ],
-  "readingTime": 15.895,
+  "readingTime": 1.955,
   "hasTruncateMarker": true,
   "authors": [
     {
-      "name": "TW J",
-      "email": "ysjo@whatap.io",
-      "title": "테크니컬 라이터",
-      "imageURL": "./img/teamtwj.svg",
-      "key": "ysj",
+      "name": "TW 팀",
+      "email": "docs@whatp.io",
+      "title": "테크니컬 라이터 팀",
+      "imageURL": "./img/teamtw.svg",
+      "key": "twt",
       "page": null
     }
   ],
   "frontMatter": {
-    "slug": "2023-3q-summary",
-    "title": "3분기 안내",
-    "authors": "ysj",
-    "date": "2024-05-20T15:10",
-    "toc_max_heading_level": 2,
+    "slug": "index",
+    "title": "새로운 기능이란?",
+    "authors": [
+      "twt"
+    ],
+    "date": "2024-04-08T10:00",
     "tags": [
       "새로운 기능",
-      "2023"
+      "콘텐츠 구성"
     ],
     "isTranslationMissing": false
   },
   "unlisted": false,
   "prevItem": {
-    "title": "4분기 안내",
-    "permalink": "/whatap-docs/blog/2023-4q-summary"
+    "title": "1분기 안내",
+    "permalink": "/whatap-docs/blog/2024-1q-summary"
   },
   "nextItem": {
-    "title": "새로운 기능이란?",
-    "permalink": "/whatap-docs/blog/index"
+    "title": "4분기 안내",
+    "permalink": "/whatap-docs/blog/2023-4q-summary"
   }
 };
 const assets = {
-"authorsImageUrls": [(__webpack_require__(82799)/* ["default"] */ .A)],
+"authorsImageUrls": [(__webpack_require__(49719)/* ["default"] */ .A)],
 };
 
+/*changelog 관련 이미지*/
 
 
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
     p: "p",
+    strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {ImgLang} = _components;
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "/changelog/changelog-new3.png",
       desc: "새로운 기능 sc"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "새로운 기능"
+      }), "은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다."
     })]
   });
 }
@@ -126,13 +134,13 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 82799:
+/***/ 49719:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/teamtwj-8ca548071cd575b2056335d511c4c2fc.svg");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/teamtw-c941e8d65768c98c58cfe01c3bd4313a.svg");
 
 /***/ }),
 

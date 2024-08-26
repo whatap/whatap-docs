@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20055],{
 
-/***/ 73977:
+/***/ 16955:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -21,11 +21,11 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./CustomListItem.js
-var CustomListItem = __webpack_require__(97552);
-// EXTERNAL MODULE: ./ChangelogComponent3.js
-var ChangelogComponent3 = __webpack_require__(27268);
-;// CONCATENATED MODULE: ./crw-data/overview/_changelog_overview_fin7.mdx
+// EXTERNAL MODULE: ./src/components/CustomListItem.js
+var CustomListItem = __webpack_require__(48530);
+// EXTERNAL MODULE: ./src/components/ChangelogComponent.js
+var ChangelogComponent = __webpack_require__(74979);
+;// CONCATENATED MODULE: ./crw-data/overview/_changelog_overview.mdx
 
 
 const frontMatter = {};
@@ -47,6 +47,47 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
+        children: "Feature"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 08월 23일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "../features/introduction",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Reference​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Beta",
+            children: "Beta"
+          }), " 피쳐 프로젝트 ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-overview2",
+            children: "Aerospike"
+          }), " ", (0,jsx_runtime.jsx)("b", {
+            children: "베타"
+          }), " 서비스 시작"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Beta",
+            children: "Beta"
+          }), " 피쳐 프로젝트 ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-overview2",
+            children: "Apache Pulsar"
+          }), " ", (0,jsx_runtime.jsx)("b", {
+            children: "베타"
+          }), " 서비스 시작"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
         children: "Database"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
@@ -56,7 +97,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -92,7 +133,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -132,7 +173,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -174,7 +215,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -210,7 +251,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -263,7 +304,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -437,7 +478,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -473,7 +514,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_7_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -513,7 +554,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -545,7 +586,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -580,7 +621,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -634,7 +675,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -666,7 +707,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -700,7 +741,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -735,7 +776,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -773,7 +814,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -814,7 +855,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -855,7 +896,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_6_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -893,7 +934,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/features/kafka-introduction",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -902,8 +943,8 @@ function _createMdxContent(props) {
       }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: [(0,jsx_runtime.jsx)("code", {
-            class: "New",
-            children: "New"
+            class: "Beta",
+            children: "Beta"
           }), " 피쳐 프로젝트 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-overview2",
             children: "Kafka"
@@ -924,7 +965,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -953,7 +994,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -985,7 +1026,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1043,7 +1084,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1078,7 +1119,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1127,7 +1168,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1170,7 +1211,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_5_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1205,7 +1246,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1236,7 +1277,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1271,7 +1312,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1309,7 +1350,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1361,7 +1402,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1427,7 +1468,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1465,7 +1506,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1506,7 +1547,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_4_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1552,7 +1593,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1598,7 +1639,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1630,7 +1671,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1662,7 +1703,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1694,7 +1735,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1734,7 +1775,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1766,7 +1807,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1798,7 +1839,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1849,7 +1890,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -1881,7 +1922,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2010,7 +2051,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2064,7 +2105,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2121,7 +2162,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2167,7 +2208,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2202,7 +2243,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2237,7 +2278,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_3_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2263,7 +2304,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2302,7 +2343,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2328,7 +2369,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2373,7 +2414,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2413,7 +2454,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2455,7 +2496,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2493,7 +2534,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2525,7 +2566,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2551,7 +2592,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2611,7 +2652,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2643,7 +2684,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2681,7 +2722,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2731,7 +2772,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2763,7 +2804,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2838,7 +2879,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_2_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2864,7 +2905,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2896,7 +2937,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2928,7 +2969,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2963,7 +3004,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -2995,7 +3036,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_1_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3027,7 +3068,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3059,7 +3100,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3091,7 +3132,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3123,7 +3164,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3163,7 +3204,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3208,7 +3249,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3240,7 +3281,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3306,7 +3347,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3341,7 +3382,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3430,7 +3471,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3472,7 +3513,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3521,7 +3562,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3569,7 +3610,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3595,7 +3636,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3627,7 +3668,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3665,7 +3706,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3700,7 +3741,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3734,7 +3775,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3769,7 +3810,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3804,7 +3845,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3836,7 +3877,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3871,7 +3912,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3931,7 +3972,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -3988,7 +4029,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4020,7 +4061,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4066,7 +4107,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4098,7 +4139,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4144,7 +4185,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4179,7 +4220,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4208,7 +4249,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4245,7 +4286,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4283,7 +4324,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4315,7 +4356,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4347,7 +4388,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4385,7 +4426,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -4440,14 +4481,12 @@ const overview_frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-07-23T15:30',
+	date: '2024-08-23T15:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
 		'서비스 개요'
 	],
-	image: '/img/changelog/new_feature_overview_txt.png',
-	contentImage: '/img/changelog/new_feature_overview_txt_gl.png',
 	isTranslationMissing: false
 };
 const overview_contentTitle = undefined;
@@ -4457,7 +4496,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-07-23T15:30:00.000Z",
+  "date": "2024-08-23T15:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -4486,14 +4525,12 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-07-23T15:30",
+    "date": "2024-08-23T15:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
       "서비스 개요"
     ],
-    "image": "/img/changelog/new_feature_overview_txt.png",
-    "contentImage": "/img/changelog/new_feature_overview_txt_gl.png",
     "isTranslationMissing": false
   },
   "unlisted": false,
@@ -4535,7 +4572,7 @@ function overview_createMdxContent(props) {
       class: "history_overview",
       id: "overview_test",
       children: (0,jsx_runtime.jsx)(CustomListItem/* default */.A, {
-        children: (0,jsx_runtime.jsx)(ChangelogComponent3/* default */.A, {
+        children: (0,jsx_runtime.jsx)(ChangelogComponent/* default */.A, {
           children: (0,jsx_runtime.jsx)(MDXContent, {})
         })
       })
@@ -4569,7 +4606,7 @@ function overview_MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 27268:
+/***/ 74979:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4581,7 +4618,7 @@ function overview_MDXContent(props = {}) {
 // 일단 오버뷰랑 서비스 버전 디스플레이 가리고 br 없애기 (0718 이거 씀)
 
 
-const ChangelogComponent3 = ({ children  })=>{
+const ChangelogComponent = ({ children  })=>{
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         // 중복된 changelog-overview, changelog-date, changelog-service 묶음을 체크하기 위한 Set
         const seenCombinations = new Set();
@@ -4631,12 +4668,12 @@ const ChangelogComponent3 = ({ children  })=>{
         children: children
     });
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ChangelogComponent3);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ChangelogComponent);
 
 
 /***/ }),
 
-/***/ 97552:
+/***/ 48530:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -4713,25 +4750,7 @@ function CustomListItem({ children , overview , date , service  }) {
         children: children
     }));
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomListItem); // import React from 'react';
- // function CustomListItem({ children, overview, date, service }) {
- //   return (
- //     <li data-overview={overview} data-date={date} data-service={service}>
- //       {children}
- //     </li>
- //   );
- // }
- // export default CustomListItem;
- // 기존 날짜만
- // import React from 'react';
- // function CustomListItem({ children, date }) {
- //   return (
- //     <li data-date={date}>
- //       {children}
- //     </li>
- //   );
- // }
- // export default CustomListItem;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomListItem);
 
 
 /***/ }),

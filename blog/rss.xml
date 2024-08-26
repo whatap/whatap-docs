@@ -4,7 +4,7 @@
         <title>WhaTap Docs Blog</title>
         <link>https://docs.whatap.io/whatap-docs/blog</link>
         <description>WhaTap Docs Blog</description>
-        <lastBuildDate>Tue, 23 Jul 2024 15:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Aug 2024 15:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[서비스 개요]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/overview</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/overview</guid>
-            <pubDate>Tue, 23 Jul 2024 15:30:00 GMT</pubDate>
+            <pubDate>Fri, 23 Aug 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[New Feature Overview]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
@@ -21,6 +21,15 @@
 <br>
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
+<li>
+<code class="changelog-overview">Feature</code>
+<code class="changelog-date">2024년 08월 23일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/features/introduction"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class="Beta">Beta</code> 피쳐 프로젝트 <code class="changelog-overview2">Aerospike</code> <b>베타</b> 서비스 시작</li>
+<li><code class="Beta">Beta</code> 피쳐 프로젝트 <code class="changelog-overview2">Apache Pulsar</code> <b>베타</b> 서비스 시작</li>
+</ul>
+</li>
 <li>
 <code class="changelog-overview">Database</code>
 <code class="changelog-date">2024년 07월 26일</code>
@@ -212,7 +221,7 @@
 <code class="changelog-date">2024년 06월 26일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/features/kafka-introduction"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference​</a></code>
 <ul>
-<li><code class="New">New</code> 피쳐 프로젝트 <code class="changelog-overview2">Kafka</code> <b>베타</b> 서비스 시작</li>
+<li><code class="Beta">Beta</code> 피쳐 프로젝트 <code class="changelog-overview2">Kafka</code> <b>베타</b> 서비스 시작</li>
 </ul>
 </li>
 <li>
@@ -2513,10 +2522,29 @@
             <category>2024</category>
         </item>
         <item>
+            <title><![CDATA[새로운 기능이란?]]></title>
+            <link>https://docs.whatap.io/whatap-docs/blog/index</link>
+            <guid>https://docs.whatap.io/whatap-docs/blog/index</guid>
+            <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
+            <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
+            <content:encoded><![CDATA[
+<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img//changelog/changelog-new3.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
+<p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
+<!-- -->
+<!-- -->
+<p><img decoding="async" loading="lazy" alt="새로운 기능 콘텐츠 예시 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png" width="801" height="826" class="img_ev3q"></p>
+<p>해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Changed">Changed</code>) 및 에이전트(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Deprecated">Deprecated</code>) 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code>) 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p>
+]]></content:encoded>
+            <author>docs@whatp.io (TW 팀)</author>
+            <category>새로운 기능</category>
+            <category>콘텐츠 구성</category>
+        </item>
+        <item>
             <title><![CDATA[4분기 안내]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/2023-4q-summary</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/2023-4q-summary</guid>
-            <pubDate>Mon, 20 May 2024 15:20:00 GMT</pubDate>
+            <pubDate>Sun, 31 Dec 2023 15:20:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img//changelog/changelog-new3.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
@@ -2991,7 +3019,7 @@
             <title><![CDATA[3분기 안내]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/2023-3q-summary</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/2023-3q-summary</guid>
-            <pubDate>Mon, 20 May 2024 15:10:00 GMT</pubDate>
+            <pubDate>Tue, 31 Oct 2023 15:10:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img//changelog/changelog-new3.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
@@ -3458,25 +3486,6 @@
             <author>ysjo@whatap.io (TW J)</author>
             <category>새로운 기능</category>
             <category>2023</category>
-        </item>
-        <item>
-            <title><![CDATA[새로운 기능이란?]]></title>
-            <link>https://docs.whatap.io/whatap-docs/blog/index</link>
-            <guid>https://docs.whatap.io/whatap-docs/blog/index</guid>
-            <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
-            <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
-            <content:encoded><![CDATA[
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img//changelog/changelog-new3.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
-<p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
-<!-- -->
-<!-- -->
-<p><img decoding="async" loading="lazy" alt="새로운 기능 콘텐츠 예시 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png" width="801" height="826" class="img_ev3q"></p>
-<p>해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Changed">Changed</code>) 및 에이전트(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Deprecated">Deprecated</code>) 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code>) 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p>
-]]></content:encoded>
-            <author>docs@whatp.io (TW 팀)</author>
-            <category>새로운 기능</category>
-            <category>콘텐츠 구성</category>
         </item>
     </channel>
 </rss>
