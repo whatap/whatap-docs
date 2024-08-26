@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18067],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[54821],{
 
 /***/ 73334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -590,11 +590,7 @@ function _createMdxContent(props) {
                 children: "on"
               }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "off"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "disabled"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "acknowledge"
-              }), "로 구분하며, 서버 모니터링의 상태 정보(on/off)를 갖습니다."]
+              }), " 값으로 구분하며, 서버 모니터링의 상태 정보(on/off)를 의미합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2659,7 +2655,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 18519:
+/***/ 45429:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2697,24 +2693,24 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	keywords: [
-		'로그 모니터링',
 		'경고 알림',
-		'이벤트 수신 태그'
+		'이벤트 수신 태그',
+		'쿠버네티스 모니터링'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "log/set-receive-event",
+  "id": "kubernetes/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/log/set-receive-event.mdx",
-  "sourceDirName": "log",
-  "slug": "/log/set-receive-event",
-  "permalink": "/whatap-docs/log/set-receive-event",
+  "source": "@site/docs/kubernetes/set-receive-event.mdx",
+  "sourceDirName": "kubernetes",
+  "slug": "/kubernetes/set-receive-event",
+  "permalink": "/whatap-docs/kubernetes/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/log/set-receive-event.mdx",
+  "editUrl": "undefined/docs/kubernetes/set-receive-event.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2722,20 +2718,20 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "keywords": [
-      "로그 모니터링",
       "경고 알림",
-      "이벤트 수신 태그"
+      "이벤트 수신 태그",
+      "쿠버네티스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "logSidebar",
+  "sidebar": "kubeSidebar",
   "previous": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/log/set-notice"
+    "title": "로그 경고 알림",
+    "permalink": "/whatap-docs/kubernetes/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/log/set-event-history"
+    "permalink": "/whatap-docs/kubernetes/set-event-history"
   }
 };
 const assets = {

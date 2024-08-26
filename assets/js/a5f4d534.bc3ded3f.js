@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5225],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6211],{
 
 /***/ 73334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -590,11 +590,7 @@ function _createMdxContent(props) {
                 children: "on"
               }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "off"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "disabled"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "acknowledge"
-              }), "로 구분하며, 서버 모니터링의 상태 정보(on/off)를 갖습니다."]
+              }), " 값으로 구분하며, 서버 모니터링의 상태 정보(on/off)를 의미합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2659,7 +2655,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 12913:
+/***/ 42615:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2697,7 +2693,7 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	keywords: [
-		'SQL Server',
+		'PostgreSQL',
 		'경고 알림',
 		'이벤트 수신 태그',
 		'데이터베이스 모니터링'
@@ -2706,16 +2702,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/set-receive-event",
+  "id": "postgresql/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/mssql/set-receive-event.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/set-receive-event",
-  "permalink": "/whatap-docs/mssql/set-receive-event",
+  "source": "@site/docs/postgresql/set-receive-event.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/set-receive-event",
+  "permalink": "/whatap-docs/postgresql/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/set-receive-event.mdx",
+  "editUrl": "undefined/docs/postgresql/set-receive-event.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2723,21 +2719,21 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "keywords": [
-      "SQL Server",
+      "PostgreSQL",
       "경고 알림",
       "이벤트 수신 태그",
       "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
-    "title": "이상치 탐지 경고 알림",
-    "permalink": "/whatap-docs/mssql/set-event-detect-anomal"
+    "title": "로그 알림 설정하기",
+    "permalink": "/whatap-docs/postgresql/set-event-log"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/mssql/set-event-history"
+    "permalink": "/whatap-docs/postgresql/set-event-history"
   }
 };
 const assets = {

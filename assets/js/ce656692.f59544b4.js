@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16376],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5121],{
 
 /***/ 73334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -590,11 +590,7 @@ function _createMdxContent(props) {
                 children: "on"
               }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "off"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "disabled"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "acknowledge"
-              }), "로 구분하며, 서버 모니터링의 상태 정보(on/off)를 갖습니다."]
+              }), " 값으로 구분하며, 서버 모니터링의 상태 정보(on/off)를 의미합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2659,7 +2655,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 39367:
+/***/ 82969:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2697,25 +2693,25 @@ const frontMatter = {
 	title: '경고 알림 수신 설정',
 	description: '프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.',
 	keywords: [
-		'Python',
+		'Oracle',
 		'경고 알림',
 		'이벤트 수신 태그',
-		'애플리케이션 모니터링'
+		'데이터베이스 모니터링'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/set-receive-event",
+  "id": "oracle-v1/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/python/set-receive-event.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/set-receive-event",
-  "permalink": "/whatap-docs/python/set-receive-event",
+  "source": "@site/docs/oracle-v1/set-receive-event.mdx",
+  "sourceDirName": "oracle-v1",
+  "slug": "/oracle-v1/set-receive-event",
+  "permalink": "/whatap-docs/oracle-v1/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/set-receive-event.mdx",
+  "editUrl": "undefined/docs/oracle-v1/set-receive-event.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2723,21 +2719,21 @@ const metadata = {
     "title": "경고 알림 수신 설정",
     "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
     "keywords": [
-      "Python",
+      "Oracle",
       "경고 알림",
       "이벤트 수신 태그",
-      "애플리케이션 모니터링"
+      "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "pySidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
-    "title": "로그 경고 알림",
-    "permalink": "/whatap-docs/python/set-event-log"
+    "title": "이상치 탐지 경고 알림",
+    "permalink": "/whatap-docs/oracle-v1/set-event-detect-anomal"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/python/set-event-history"
+    "permalink": "/whatap-docs/oracle-v1/set-event-history"
   }
 };
 const assets = {

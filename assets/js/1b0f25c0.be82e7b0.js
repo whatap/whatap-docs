@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63736],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78614],{
 
 /***/ 73334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -590,11 +590,7 @@ function _createMdxContent(props) {
                 children: "on"
               }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "off"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "disabled"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "acknowledge"
-              }), "로 구분하며, 서버 모니터링의 상태 정보(on/off)를 갖습니다."]
+              }), " 값으로 구분하며, 서버 모니터링의 상태 정보(on/off)를 의미합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2659,7 +2655,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11288:
+/***/ 6163:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2699,23 +2695,23 @@ const frontMatter = {
 	keywords: [
 		'경고 알림',
 		'이벤트 수신 태그',
-		'Naver Cloud Monitoring',
+		'Oracle Cloud Monitor',
 		'클라우드'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "ncloud/set-receive-event",
+  "id": "oracle-cloud/set-receive-event",
   "title": "경고 알림 수신 설정",
   "description": "프로젝트에 포함하는 멤버들의 경고 알림 수신과 관련한 다양한 기능을 설정할 수 있습니다.",
-  "source": "@site/docs/ncloud/set-receive-event.mdx",
-  "sourceDirName": "ncloud",
-  "slug": "/ncloud/set-receive-event",
-  "permalink": "/whatap-docs/ncloud/set-receive-event",
+  "source": "@site/docs/oracle-cloud/set-receive-event.mdx",
+  "sourceDirName": "oracle-cloud",
+  "slug": "/oracle-cloud/set-receive-event",
+  "permalink": "/whatap-docs/oracle-cloud/set-receive-event",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/ncloud/set-receive-event.mdx",
+  "editUrl": "undefined/docs/oracle-cloud/set-receive-event.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2725,19 +2721,19 @@ const metadata = {
     "keywords": [
       "경고 알림",
       "이벤트 수신 태그",
-      "Naver Cloud Monitoring",
+      "Oracle Cloud Monitor",
       "클라우드"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "ncloudSidebar",
+  "sidebar": "oracleSidebar",
   "previous": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/ncloud/metric-warning-notice"
+    "permalink": "/whatap-docs/oracle-cloud/metric-warning-notice"
   },
   "next": {
     "title": "이벤트 기록",
-    "permalink": "/whatap-docs/ncloud/set-event-history"
+    "permalink": "/whatap-docs/oracle-cloud/set-event-history"
   }
 };
 const assets = {
