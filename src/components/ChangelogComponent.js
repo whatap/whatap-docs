@@ -1,8 +1,8 @@
 // 일단 오버뷰랑 서비스 버전 디스플레이 가리고 br 없애기 (0718 이거 씀)
 import React, { useEffect } from 'react';
-import './src/css/custom.scss';
+import '@site/src/css/custom.scss';
 
-const ChangelogComponent3 = ({ children }) => {
+const ChangelogComponent = ({ children }) => {
   useEffect(() => {
     // 중복된 changelog-overview, changelog-date, changelog-service 묶음을 체크하기 위한 Set
     const seenCombinations = new Set();
@@ -57,4 +57,4 @@ const ChangelogComponent3 = ({ children }) => {
   return <div>{children}</div>;
 };
 
-export default ChangelogComponent3;
+export default ChangelogComponent;
