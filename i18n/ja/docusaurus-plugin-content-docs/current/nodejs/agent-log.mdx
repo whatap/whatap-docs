@@ -2,7 +2,7 @@
 id: agent-log
 title: エージェントログの設定
 description: エージェントログのオプションを設定できます。
-tags:
+keywords:
   - Node.js
   - ログ
 ---
@@ -26,3 +26,15 @@ tags:
   既定値 `true`
 
   InitialContext Lookup時のDataSourceの場合、ログを記録する機能を有効にします。
+
+- **log_root** <span class='type'>String</span>
+
+  エージェントログファイルのパスを設定できます。設定されたパスの下位に_logs_フォルダを作成し、そのフォルダにwhatapログファイルが作成されます。
+
+  次の例のようにエージェントオプションを設定すると、whatapログファイルの生成パスは次の通りです。
+
+  > <em>/Users/sample_user/workspace/nodejs_application/whatap_logs/logs/</em>
+
+  ```ini title="whatap.conf"
+  log_root=/Users/sample_user/workspace/nodejs_application/whatap_logs/
+  ```

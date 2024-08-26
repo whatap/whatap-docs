@@ -2,6 +2,7 @@
   {
     "type": "category",
     "label": "새로운 기능",
+    "tr_code": "theme.blog.newFeatures",
     "link": "/blog/",
     "items": [
       { "link": "/blog/index" },

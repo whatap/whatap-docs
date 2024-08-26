@@ -120,11 +120,20 @@ html[lang='en-US'] {
   }
   div.navbar__items {
     a[href*='blog'] {
+      // 다국어 영문 블로그 네비게이션바
       display: none;
     }
   }
   nav.pagination-nav {
     display: none;
+  }
+  // 영문 블로그 날짜2
+  div.history_overview ul li > .changelog-date {
+    position: absolute;
+    left: -88px !important; 
+    font-size: 78%;
+    top: 8px;
+    transform: translateY(-50%);
   }
 }
 
@@ -140,8 +149,17 @@ html[lang='ja-JP'] {
   }
   div.navbar__items {
     a[href*='blog'] {
+      // 다국어 일문 블로그 네비게이션바
       display: none;
     }
+  }
+  // 일문 블로그 날짜2
+  div.history_overview ul li > .changelog-date {
+    position: absolute;
+    left: -110px; 
+    font-size: 75%;
+    top: 8px;
+    transform: translateY(-50%);
   }
   nav.pagination-nav {
     display: none;
@@ -192,6 +210,9 @@ html[lang='ja-JP'] {
   margin-left: 60px;
 }
 // UI
+.navbar__logo {
+  height: 4rem;
+}
 .hold-menu {
   padding: 12px 0;
   margin: 0 8px;
@@ -401,16 +422,26 @@ html[lang='ja-JP'] {
   display: inline-block;
 }
 // 베타 필요??
-// .menu__list-item.beta > a::after {
-//   display: inline;
-//   content: 'Beta';
-//   position: absolute;
-//   font-style: italic;
-//   font-weight: bold;
-// }
-// .menu__list-item.beta > a {
-//   display: inline-block;
-// }
+.menu__list-item.beta > a::after {
+  display: inline;
+  content: 'Beta';
+  // position: absolute;
+  // font-style: italic;
+  // font-weight: bold;
+  border-radius: 4px;
+  padding: 0 3px;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  color: rgb(82, 114, 255);
+  font-family: "Oleo Script";
+  margin-left: 8px;
+  margin-top: -4px;
+  font-weight: 300;
+  font-size: 80%;
+}
+.menu__list-item.beta > a {
+  display: inline-block;
+}
 .menu__list-item.newfunc > a::after {
   display: inline;
   content: 'New';
@@ -979,6 +1010,7 @@ div.history_overview{
       padding-left: 25px;
       margin-left: 15px !important;
 
+      // 국문 블로그 날짜
       & > .changelog-date {
         position: absolute;
         left: -112px; 
@@ -1103,6 +1135,9 @@ main {
           width: 80%;
         }
       }
+      .only--text {
+        padding-right: 10px;
+      }
       .width--40 {
         width: 40%;
         max-width: 40%;
@@ -1169,7 +1204,7 @@ main {
     section > h2 {
         font-size: var(--ifm-h2-font-size);
     }
-    section h3 {
+    section h3, h2.welcome {
         font-size: var(--ifm-h3-font-size);
     }
     section h4 {
@@ -1180,6 +1215,13 @@ main {
     }
     section h6 {
         font-size: var(--ifm-h6-font-size);
+    }
+    div.welcome {
+      font-weight: 500;
+      position: relative;
+      font-size: 16.5px;
+      top: -24px;
+      color: var(--ifm-breadcrums-arrow-color);
     }
     .tabs-container h2, .tabs-container section h2 {
       --ifm-h2-font-size: 2rem;
@@ -1850,6 +1892,17 @@ main {
       color: #fff;
       border: none;
       padding: 0 5px 0 5px;
+    }
+    code.Beta {
+      border-radius: 4px;
+      padding: 0 3px;
+      border: none;
+      background-color: rgb(235, 235, 235);
+      color: rgb(82, 114, 255);
+      font-family: "Oleo Script";
+      margin-top: -4px;
+      font-weight: 300;
+      font-size: 98%;
     }
     code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
@@ -3115,6 +3168,14 @@ main {
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+    // 영문 블로그 날짜
+    // div.history_overview ul li > .changelog-date {
+    //   position: absolute;
+    //   left: -88px !important; 
+    //   font-size: 78%;
+    //   top: 8px;
+    //   transform: translateY(-50%);
+    // }
   }
   
   html[lang='ja-JP'] {
@@ -3124,6 +3185,14 @@ main {
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+    // 일문 블로그 날짜
+    // & > .changelog-date {
+    //   position: absolute;
+    //   left: -105px; 
+    //   font-size: 75%;
+    //   top: 8px;
+    //   transform: translateY(-50%);
+    // }
   }
 
   .redocusaurus {

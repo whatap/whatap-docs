@@ -76,7 +76,7 @@
 
   ```ini title='whatap.conf'
   # example
-  status_ignore_set=/api/test/timeout/{time}:408,/api/test/timeout:200,/error:500
+  status_ignore_set=/api/test/timeout/{time}:408,/error:500
   ```
 
   :::tip
@@ -134,3 +134,9 @@
   Default `true`
 
   It sets whether to trace SqlException when occurred in the JDBC driver. By setting the option value to `false`, you can perform `biz_exceptions` as custom exception handling.
+
+- **trace_exception_handler_overwrite_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  If an exception that passes through the spring-boot ExceptionHandler occurs, it can replace the previous exception. In the <Cmdname sid="TTL06209" className="uitext" /> tab of the <Cmdname sid="TTL06125" className="uitext" /> window, you can mark the exception as an exception registered in the ExceptionHandler of the spring-boot.

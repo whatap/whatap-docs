@@ -4,7 +4,7 @@ title: エージェント問題の解決
 description: エージェントのインストール時に発生する可能性のある問題を確認できます。
 hide_table_of_contents: true
 toc_max_heading_level: 2
-tags:
+keywords:
   - Kubernetes
   - Kubernetesモニタリング
   - Troubleshooting
@@ -63,21 +63,19 @@ kubectl delete clusterrole whatap
 | Unrecognized VM option 'UseCGroupMemoryLimitForHeap'<br/>Error: Could not create the Java Virtual Machine.<br/>Error: A fatal exception has occurred. Program will exit. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-**2022年8月24日以前**にダウンロードしたインストール*YAML*を通じてワタブ クバネティス モニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生するか、起動に失敗する場合があります。 
+**2022年8月24日以前**にダウンロードしたインストール*YAML*を通じてWhaTapのKubernetesモニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生し、起動に失敗する場合があります。 
 
-#### 原因
+原因は以下のとおりです。 2022年8月24日以前にダウンロードしたインストール*YAML*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
 
-- 2022年8月24日以前にダウンロードしたインストール*YAML*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
+WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) バージョンからエージェント内部で使用するJDKがアップグレードされおり、アップグレードされたJDKバージョンは、これ以上`UseCGroupMemoryLimitForHeap`オプションを提供していません。 **2022年8月24日以前**にダウンロードした*YAML*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
 
-- WhaTapノードエージェント1.2.0(2022年11月21日リリース)以降のバージョンからエージェント内部で使用するJDKがアップグレードされており、アップグレードされたJDKバージョンはもはや`UseCGroupMemoryLimitForHeap`オプションを提供していません。
+#### 解決方法
 
-- 2022年8月24日以前にダウンロードした*YAML*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
+この問題を解決するために、次のようにKubernetesモニタリングを再インストールします。 
 
-#### 解決
+{/* 다음 단계를 통해 와탭 쿠버네티스 모니터링을 재설치하세요. */}
 
-次のステップを使用して、WhaTap Kubernetesモニタリングを再インストールしてください。
-
-1. **_管理_**  > **_エージェントのインストール_**画面で最新*YAML*ファイルをダウンロードしてください。
+1. <Cmdname sid="side_management" className="uitext" />  > <Cmdname sid="agentInstall" className="uitext" />画面で最新*YAML*ファイルをダウンロードしてください。
 
 2. ユーザーKubernetes環境でダウンロードした*YAML*ファイルを使用してエージェントをインストールしてください。 
 
@@ -87,10 +85,62 @@ kubectl delete clusterrole whatap
 
    :::note 
 
-   ユーザーKubernetes環境及び**_ワークロード_** > **_Pod一覧_**メニューで確認してください。
+   ユーザーKubernetes環境及び<Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_podList" className="uitext" />メニューで確認してください。
 
    :::
 
-5. **_管理_** > **_Kubernetesエージェント一覧_**メニューで、各モニタリングエージェントで発生するログを確認してください。
+5. <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_kubernetesAgentList" className="uitext" />メニューで、各モニタリングエージェントで発生するログを確認してください。
 
 </div>
+
+## アプリケーション連動問題の解決{#troubleshooting-k8s-application}
+
+### コンテナマップにJavaモニタリングデータが表示されない場合
+
+ユーザーKubernetes環境でCgroupsの設定や管理方法によっては、特定の状況でコンテナIDを確保できない問題が発生する可能性があります。 WhaTapは、このような状況に対応するために、Kubernetesモニタリングのコンテナとアプリケーション間のマッピングメカニズムを変更しました。 当該変更事項の場合は、WhaTap**Kubernetesエージェント1.7.7**バージョンと**Javaエージェント2.2.33**バージョンから適用され、Cgroupsの影響でコンテナIDが漏れる問題を解決します。 
+
+{/* 사용자 쿠버네티스 환경에 따라 내부 Cgroups의 영향으로 컨테이너 ID를 확보하지 못하는 경우가 발생할 수 있습니다. WhaTapは、このような状況に対応するために、Kubernetesモニタリングのコンテナとアプリケーション間のマッピングメカニズムを変更しました。 当該変更事項の場合は、Kubernetesエージェント1.7.7およびJavaエージェント2.2.33バージョンから適用されました。  */}
+
+#### 解決方法
+
+##### エージェントのアップデート
+
+Kubernetes環境で発生するコンテナIDの識別問題を解決するためには、WhaTapのKubernetesエージェントとAPMが互いにやり取りするデータを正確に識別できるよう、サポートする最新バージョンを使用する必要があります。 **クバネティス·エージェント**は**1.7.7バージョン以降**をを設置し、**Javaエージェント**は**2.2.33バージョン以降**をインストールします。 
+
+:::note
+現在はJavaエージェントのみサポートしており、他の言語のAPMは今後サポートする予定です。 
+:::
+
+##### 追加環境変数の設定　
+
+エージェントバージョンのアップデート以降も、<Cmdname sid="side_containerMap" className="uitext" />にJavaアプリケーション情報が表示されない場合、ユーザー環境変数を追加して問題を解決できます。 この設定は、Java APMがインストールされたコンテナマニフェスト(*YAML*)の環境変数に、当該コンテナ内のJavaエージェントの絶対パスを表す`WHATAP_JAVA_AGENT_PATH`オプションを追加します。 
+
+次はJava APMがインストールされたコンテナ環境変数に当該オプションを追加した例です。 
+
+```YAML
+env:
+- name: NODE_IP
+  valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+- name: NODE_NAME
+  valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+- name: POD_NAME
+  valueFrom: {fieldRef: {fieldPath: metadata.name}}
+- name: OKIND
+  value: {YOUR_OKIND_NAME}
+- name: license
+  value: <Project Access Key>
+- name: whatap.server.host
+  value: <収集サーバーのIPアドレス>
+- name: whatap.micro.enabled
+  value: "true"
+- name: WHATAP_JAVA_AGENT_PATH
+  value: "/whatap/whatap.agent-2.2.35.jar"
+```
+
+#### コンテナとAPM間の正常マッピングの確認方法
+
+コンテナとアプリケーションが正常にマップされていることを確認する方法は、次の通りです。 
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューで<Cmdname sid="side_containerMap" className="uitext" />ブロック内に白いマイクロコンテナが存在する場合、正常にマッピングされた状態です。
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`app_counter`カテゴリーの`container`フィールドにアプリケーションが実行中のコンテナIDが記録されている場合は、正常にマッピングされた状態です。

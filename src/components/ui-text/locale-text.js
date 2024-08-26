@@ -3,7 +3,20 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
 import whatapReport from './whatap-report.json';
 
-const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) => {
+function isSplittableArray(input, delimiter = ',') {
+    // Check if input is a string
+    if (typeof input !== 'string') {
+        return false;
+    }
+
+    // Split the string using the delimiter
+    const splitArray = input.split(delimiter);
+
+    // Check if the split resulted in more than one element
+    return splitArray.length > 1;
+}
+
+const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, report}) => {
     const { i18n: {currentLocale} } = useDocusaurusContext();
     
     if (report) {
@@ -11,9 +24,27 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
         return (
             <span class={className} id={anchor}>{oText}</span>
         );
+    } else if (isSplittableArray(sid)) {
+        const sidArray = sid.split(",");
+        let oText = "";
+
+        for (let i=0;i<sidArray.length;i++) {
+            oText += whatapLocale[sidArray[i]][`${currentLocale}`].trim() + " ";
+        }
+        const uiText = oText.trim();
+        return (
+            <span class={className} id={anchor}>{uiText}</span>
+        );
     } else {
         let oText;
-        if (replace) {
+        if (type) {
+            // console.log(sid, '222222');
+            let oType = whatapLocale[`${type}`][`${currentLocale}`];
+            oText = whatapLocale[sid][`${currentLocale}`].replace(/(\{type\}|\{object\})/g, oType)
+            if (replace == "({count})") {
+                oText = oText.replace(replace, '(N)').trim();
+            }
+        } else if (replace) {
             if (replace === "noSpace") {
                 oText = whatapLocale[sid][`${currentLocale}`].replace('&nbsp;', ' ');
             } else if (replace === "br") {
@@ -25,7 +56,7 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
                 let oType = whatapLocale[`${replace}`][`${currentLocale}`];
                 oText = whatapLocale[sid][`${currentLocale}`].replace('{mode}', oType)
             } else {
-                oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '');
+                oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '').trim();
             }
         } else {
             oText = whatapLocale[sid][`${currentLocale}`];
@@ -34,7 +65,7 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
             oText = whatapLocale[sid][`${currentLocale}`].replace('{days}', days);
         }
         if (sid == "TTL07769") {
-            oText = whatapLocale[sid][`${currentLocale}`].replace(' ({count})', '');
+            oText = whatapLocale[sid][`${currentLocale}`].replace('({count})', '').trim();
         }
         if (sid == "TTL06865") {
             oText = whatapLocale[sid][`${currentLocale}`].toUpperCase();

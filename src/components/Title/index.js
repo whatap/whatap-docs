@@ -4,8 +4,9 @@ import {useThemeConfig} from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-export default function Title ({level, hashid, children}) {
+export default function Title ({level, hashid, children, className}) {
     const Headertag = `h${level}`;
+    let hid;
     const {
         navbar: {hideOnScroll},
     } = useThemeConfig();
@@ -13,19 +14,26 @@ export default function Title ({level, hashid, children}) {
     if (level === 'none') {
         return null
     }
+
+    if (!hashid) {
+        hid = children.replace(/\s/g, "_");
+    } else {
+        hid = hashid;
+    }
     return (
         <Headertag 
             className={clsx(
                 'anchor',
                 hideOnScroll
                 ? styles.anchorWithHideOnScrollNavbar
-                : styles.anchorWithStickyNavbar
+                : styles.anchorWithStickyNavbar,
+                className
             )}
-            id={hashid}>
+            id={hid}>
             {children}
             <Link
                 className="hash-link"
-                to={`#${hashid}`}>
+                to={`#${hid}`}>
                 &#8203;
             </Link>
         </Headertag>

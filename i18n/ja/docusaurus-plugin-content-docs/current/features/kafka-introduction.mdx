@@ -4,11 +4,13 @@ title: KAFKAモニタリング
 description: この文書は、KAFKAモニタリング商品の紹介ページです。
 displyed_sidebar: featuremonitorSidebar
 toc_max_heading_level: 2
-tags:
+keywords:
   - KAFKA
   - Feature
 ---
 
+import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import AlertFeature from '../common-items/_import_feature-alert.mdx';
 import TR from '@site/src/components/TR';
 
 :::note
@@ -55,55 +57,13 @@ WhaTapのKAFKAモニタリングエージェントをインストールする前
 
 ### Featureプロジェクトを作成する
 
-エージェントをインストールする前に、まず**Featureプロジェクト**(<code class='Features'>Features</code>)を生成します。
+import CreateFeature from "../common-items/_import_feature-project-create.mdx";
 
-1. [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、ログインします。
-
-2. プロジェクトを作成するには、左のサイドメニューから<Cmdname sid="BTN07332" className="uitext" /> > **_+_** <Cmdname sid='BTN06696' className='uitext'/>ボタンを選択します。
-
-3. <Cmdname sid="TTL07073" className="uitext" />画面でプロジェクトにインストールする**Feature商品**を選択します。
-
-4. <Cmdname sid="project_name" className="uitext" />、<Cmdname sid="data_server_region" className="uitext" />、<Cmdname sid="project_time_zone" className="uitext" />項目を順番に設定します。
-
-   <ImgLang img='create-project-v3.png' desc='プロジェクトの生成'/>
-
-5. <Cmdname sid="TTL07727" className="uitext" />で、警告通知メッセージの言語を選択します。
-
-6. すべての設定を完了した後は <Cmdname sid="creating_a_project" className="uitext" /> ボタンを選択します。
+<CreateFeature />
 
 ### KAFKAエージェントのインストール
 
-**Featureプロジェクト**(<code class='Features'>Features</code>) 生成後、自動的に**_KAFKAエージェントのインストール_**画面に移動します。 次の案内通りに設置を進めます。 
-
-1. **プロジェクトアクセスキー**を確認します。 
-
-   プロジェクトアクセスキーは、WhaTapサービスを有効にするための固有IDです。 <code class='my'>プロジェクトアクセスキーを発行する</code>ボタンを選択します。 
-
-2. **インストールスクリプト**を作成します。 
-
-   次のコマンドを実行して、ユーザー環境を自動的に認識し、KAFKAがインストールされているサーバーに、インストールスクリプトを作成します。 
-
-   ```bash
-   curl http://repo.whatap.io/telegraf/feature/kafka/install_kafka_monitoring.sh -o install_kafka_monitoring.sh
-   ```
-
-   次のコマンドを実行して、KAFKAエージェントをインストールします。
-
-   ```bash
-   chmod +x install_kafka_monitoring.sh
-   sudo ./install_kafka_monitoring.sh "x604pf485d1kk-z6q14nuc509pk3-x39moealrfodum" "13.124.11.223/13.209.172.35"
-   ```
-
-3. エージェント設定および再起動後、**モニタリング**を**開始**します。  
-
-   KAFKAにJolokiaエージェント設定のために、次のコマンドを実行してから再起動します。
-
-   ```bash
-   #cd {kafka home directory}/bin
-   sed -i '/^#!/a export KAFKA_OPTS='\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\''' kafka-server-start.sh
-   ./kafka-server-stop.sh
-   ./kafka-server-start.sh
-   ```
+<InstallFeature name='KAFKAエージェントインストール' />
 
 ## メインメニュー
 
@@ -282,6 +242,9 @@ WhaTapが提供するKAFKA**カスタマイズされたダッシュボード**�
 
 ### アラート通知
 
+<AlertFeature name='KAFKA' />
+
+{/* 
 ホーム画面 > **Featureプロジェクト**(<code class='Features'>Features</code>)選択 > **_アラート通知_** > **_イベント設定_**
 
 WhaTapのKafkaモニタリングは**_複合メトリクス_**通知をデフォルトで提供します。 
@@ -290,4 +253,4 @@ WhaTapのKafkaモニタリングは**_複合メトリクス_**通知をデフォ
 
 複合メトリクスイベントについての詳細は、[次の文書](https://docs.whatap.io/server/metric-warning-notice#composite-metrics-event)を確認します。 
 
-:::
+::: */}
