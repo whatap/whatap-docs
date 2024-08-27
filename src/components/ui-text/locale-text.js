@@ -1,7 +1,6 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
-import whatapReport from './whatap-report.json';
 
 function isSplittableArray(input, delimiter = ',') {
     // Check if input is a string
