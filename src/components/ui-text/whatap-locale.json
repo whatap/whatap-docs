@@ -55721,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56254,7 +56254,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56414,10 +56414,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "It does not fit the IP format.",
+    "zh": "Does not fit IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56925,10 +56925,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57037,10 +57037,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57737,10 +57737,10 @@
     "service_id": "DSC08369"
   },
   "DSC08370": {
-    "en": "However, usage fees will be charged if you use the log monitoring function.",
+    "en": "However, usage fees will be charged if you use the log monitoring feature.",
     "ja": "ただし、ログ監視機能を使用すると利用料金が請求されます。",
     "ko": "단, 로그 모니터링 기능을 사용하면 이용 요금이 청구됩니다.",
-    "zh": "However, usage fees will be charged if you use the log monitoring function.",
+    "zh": "However, usage fees will be charged if you use the log monitoring feature.",
     "service_id": "DSC08370"
   },
   "BTN08371": {
