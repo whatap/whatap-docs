@@ -183,6 +183,11 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'java/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'java/metrics-chart',
                 'java/metrics-search',
                 'java/metrics-detect-anormal',
@@ -426,6 +431,11 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'php/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'php/metrics-chart',
                 'php/metrics-search',
                 'php/metrics-detect-anormal',
@@ -651,6 +661,11 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'nodejs/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'nodejs/metrics-chart',
                 'nodejs/metrics-search',
                 'nodejs/metrics-detect-anormal',
@@ -872,6 +887,11 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'python/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'python/metrics-chart',
                 'python/metrics-search',
                 'python/metrics-detect-anormal',
@@ -1099,6 +1119,11 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'dotnet/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'dotnet/metrics-chart',
                 'dotnet/metrics-search',
                 'dotnet/metrics-detect-anormal',
@@ -1309,6 +1334,11 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'golang/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'golang/metrics-chart',
                 'golang/metrics-search',
                 'golang/metrics-detect-anormal',
@@ -1520,6 +1550,11 @@ const sidebars = {
               },
               items: [
                 'postgresql/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'postgresql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'postgresql/metrics-chart',
                 'postgresql/metrics-search',
                 'postgresql/metrics-detect-anormal',
@@ -1847,6 +1882,11 @@ const sidebars = {
               },
               items: [
                 'oracle/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'oracle/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'oracle/metrics-chart',
                 'oracle/metrics-search',
                 'oracle/metrics-detect-anormal',
@@ -2008,6 +2048,11 @@ const sidebars = {
               },
               items: [
                 'oracle-pro/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'oracle-pro/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'oracle-pro/metrics-chart',
                 'oracle-pro/metrics-search',
                 'oracle-pro/metrics-detect-anormal',
@@ -2191,6 +2236,11 @@ const sidebars = {
               },
               items: [
                 'mysql/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'mysql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mysql/metrics-chart',
                 'mysql/metrics-search',
                 'mysql/metrics-detect-anormal',
@@ -2697,7 +2747,7 @@ const sidebars = {
   altibaseSidebar: [
     {
       type: 'category',
-      label: 'Altibase 모니터링',
+      label: 'Altibase V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2731,10 +2781,8 @@ const sidebars = {
             id: 'altibase/agent-settings'
           },
           items: [
-            'altibase/agent-network',
-            'altibase/agent-naming',
-            'altibase/agent-aws',
-            'altibase/agent-data',
+            'altibase/agent-dbx-settings',
+            'altibase/agent-xos-settings'
           ],
         },
         'altibase/agent-manage',
@@ -2746,7 +2794,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2780,6 +2828,17 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'altibase/analysis-count-trend',
+                'altibase/analysis-lock-and-deadlock',
+                'altibase/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2788,6 +2847,12 @@ const sidebars = {
                 id: 'altibase/metrics-intro'
               },
               items: [
+                'altibase/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'altibase/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'altibase/metrics-chart',
                 'altibase/metrics-search',
                 'altibase/metrics-detect-anormal',
@@ -2795,19 +2860,36 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'altibase/analysis-function',
                 'altibase/stat',
+                'altibase/table-space-size',
                 'altibase/report-intro',
-                'altibase/integrated-report',
               ]
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/log-main'
+              },
+              items: [
+                'altibase/log-db',
+                'altibase/log-lt',
+                'altibase/log-exp',
+                'altibase/log-search',
+                'altibase/log-setting',
+                'altibase/log-parser',
+              ]
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2830,6 +2912,147 @@ const sidebars = {
               ],
             },
             'altibase/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  altibasev1Sidebar: [
+    {
+      type: 'category',
+      label: 'Altibase V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'altibase-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'altibase-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase-v1/install-agent',
+            'altibase-v1/after-install-agent',
+            'altibase-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/agent-settings'
+          },
+          items: [
+            'altibase-v1/agent-network',
+            'altibase-v1/agent-naming',
+            'altibase-v1/agent-aws',
+            'altibase-v1/agent-data',
+          ],
+        },
+        'altibase-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/dashboard-intro'
+              },
+              items: [
+                'altibase-v1/instance-list',
+                'altibase-v1/instance-monitoring',
+                'altibase-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/flex-board',
+              },
+              items: [
+                'altibase-v1/flexboard-template',
+                'altibase-v1/flexboard-create',
+                'altibase-v1/flexboard-manage',
+                'altibase-v1/flexboard-metric-widget',
+                'altibase-v1/flexboard-widget-manage',
+                'altibase-v1/flexboard-mode',
+                'altibase-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/metrics-intro'
+              },
+              items: [
+                'altibase-v1/metrics-chart',
+                'altibase-v1/metrics-search',
+                'altibase-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'altibase-v1/analysis-function',
+                'altibase-v1/stat',
+                'altibase-v1/report-intro',
+                'altibase-v1/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/set-notice',
+              },
+              items: [
+                'altibase-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'altibase-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'altibase-v1/metric-warning-notice',
+                'altibase-v1/set-notification-message',
+                'altibase-v1/set-event-detect-anomal',
+                'altibase-v1/set-receive-event',
+                'altibase-v1/set-event-history',
+                'altibase-v1/set-event-format',
+              ],
+            },
+            'altibase-v1/labs'
           ]
         }
       ],
@@ -2938,6 +3161,11 @@ const sidebars = {
               },
               items: [
                 'redis/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'redis/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'redis/metrics-chart',
                 'redis/metrics-search',
                 'redis/metrics-detect-anormal',
@@ -3093,6 +3321,11 @@ const sidebars = {
               },
               items: [
                 'mongodb/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'mongodb/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mongodb/metrics-chart',
                 'mongodb/metrics-search',
                 'mongodb/metrics-detect-anormal',
@@ -5929,6 +6162,11 @@ const sidebars = {
               items: [
                 'kubernetes/metrics-kubernetes',
                 'kubernetes/metrics-search',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/metrics-chart',
                 'kubernetes/metrics-detect-anormal',
               ]
