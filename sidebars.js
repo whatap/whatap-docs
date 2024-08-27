@@ -5820,7 +5820,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: '컨테이너 맵 상세 보기',
+                  label: '컨테이너 맵 상세 분석',
                   collapsible: true,
                   collapsed: true,
                   link: {
@@ -5828,6 +5828,7 @@ const sidebars = {
                     id: 'kubernetes/container-map-detail-mode'
                   },
                   items: [
+                    'kubernetes/container-map-target-info',
                     'kubernetes/container-map-trace',
                     'kubernetes/container-map-metrics',
                     'kubernetes/container-map-log',
