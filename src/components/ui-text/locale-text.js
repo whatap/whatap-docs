@@ -1,7 +1,6 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
-import whatapReport from './whatap-report.json';
 
 function isSplittableArray(input, delimiter = ',') {
     // Check if input is a string
@@ -16,7 +15,7 @@ function isSplittableArray(input, delimiter = ',') {
     return splitArray.length > 1;
 }
 
-const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) => {
+const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, report}) => {
     const { i18n: {currentLocale} } = useDocusaurusContext();
     
     if (report) {
@@ -37,7 +36,14 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
         );
     } else {
         let oText;
-        if (replace) {
+        if (type) {
+            // console.log(sid, '222222');
+            let oType = whatapLocale[`${type}`][`${currentLocale}`];
+            oText = whatapLocale[sid][`${currentLocale}`].replace(/(\{type\}|\{object\})/g, oType)
+            if (replace == "({count})") {
+                oText = oText.replace(replace, '(N)').trim();
+            }
+        } else if (replace) {
             if (replace === "noSpace") {
                 oText = whatapLocale[sid][`${currentLocale}`].replace('&nbsp;', ' ');
             } else if (replace === "br") {
@@ -58,7 +64,7 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, days, report}) 
             oText = whatapLocale[sid][`${currentLocale}`].replace('{days}', days);
         }
         if (sid == "TTL07769") {
-            oText = whatapLocale[sid][`${currentLocale}`].replace(' ({count})', '');
+            oText = whatapLocale[sid][`${currentLocale}`].replace('({count})', '').trim();
         }
         if (sid == "TTL06865") {
             oText = whatapLocale[sid][`${currentLocale}`].toUpperCase();

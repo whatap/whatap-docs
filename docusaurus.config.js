@@ -88,6 +88,26 @@ const config = {
       admonitions: true,
       headingIds: true,
     },
+    parseFrontMatter: async (params) => {
+      // Reuse the default parser
+      const result = await params.defaultParseFrontMatter(params);
+      const isPartial = params.filePath.includes("/_") || params.filePath.includes("\\_");
+      if (isPartial) {
+        return result;
+      }
+      // TODO fix weird undefined case!
+      const isDefaultLocale =
+        process.env.DOCUSAURUS_CURRENT_LOCALE === "undefined" ||
+        typeof process.env.DOCUSAURUS_CURRENT_LOCALE === "undefined" ||
+        process.env.DOCUSAURUS_CURRENT_LOCALE === "ko";
+      const isI18n = params.filePath.includes("/i18n/");
+      if (isDefaultLocale) {
+        result.frontMatter.isTranslationMissing = false;
+      } else {
+        result.frontMatter.isTranslationMissing = !isI18n;
+      }
+      return result;
+    }
   },
   themes: [
     '@docusaurus/theme-mermaid',
@@ -214,6 +234,11 @@ const config = {
           content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
+      blog: {
+        sidebar: {
+          groupByYear: true
+        }
+      },
       docs: {
         sidebar: {
           autoCollapseCategories: false,
@@ -230,8 +255,8 @@ const config = {
         logo: {
           alt: 'WhaTap Docs',
           src: 'img/whatap-docs-logo.svg',
-          width: 152,
-          height: 28,
+          width: "154px",
+          height: "43px",
         },
         items: [
           {

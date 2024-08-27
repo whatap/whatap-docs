@@ -1,0 +1,17 @@
+ysj:
+  name: TW J
+  email: ysjo@whatap.io
+  title: Technical Writer
+  image_url: ./img/teamtwj.svg
+
+kiim:
+  name: TW I
+  email: kj.im@whatap.io
+  title: Technical Writer
+  image_url: ./img/teamtwi.svg
+
+twt:
+  name: TW Team
+  email: docs@whatp.io
+  title: Technical Writing Team
+  image_url: ./img/teamtw.svg

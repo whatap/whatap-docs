@@ -25,9 +25,8 @@ Select a desired OS on the <Cmdname sid="side_agentInstall" className="uitext" /
    <TabItem value="du" label="Debian / Ubuntu" default>
 
    ```bash title=SH
-   curl -s http://repo.whatap.io/debian/release.gpg | gpg --dearmor |sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
-   echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] http://repo.whatap.io/debian unstable/" | sudo tee
-   /etc/apt/sources.list.d/whatap.list
+   curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
+   echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
    sudo apt-get update
    ```
 

@@ -1,0 +1,176 @@
+---
+id: apache-pulsar-introduction
+title: Apache Pulsar monitoring
+description: This document is an introduction to the Apache Pulsar monitoring product.
+displyed_sidebar: featuremonitorSidebar
+toc_max_heading_level: 2
+keywords:
+  - Apache Pulsar
+  - Feature
+---
+
+import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import TR from '@site/src/components/TR';
+
+:::note
+
+**Feature Project**<ScrollToLink anchor='feature-project' />
+
+WhaTap newly introduced **Feature Project** (<code class='Features'>Features</code>) so that users can easily check whether the desired software supports monitoring and easily start monitoring. The Feature Project provides an optimized monitoring solution by repackaging existing monitoring products to fit the software to monitor. Manage your services for stability and performance more effectively through the WhaTap's Feature Project. 
+
+:::
+
+{/* 실시간 데이터 처리와 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. Apache Pulsar enables you to process millions of transactions per second, efficiently performing large-scale data operations while maintaining data consistency and performance. Accordingly, monitoring the performance and status of the Apache Pulsar is very important for system stability and optimization. */}
+
+Apache Pulsar is a distributed messaging and streaming platform designed to efficiently process large amounts of real-time data. It provides high scalability and built-in multi-tenancy capability, and ensures reliability and flexibility through geographic replication and persistence of messages. Monitoring is critical to maintaining the performance and stability in the complex operating environment of Apache Pulsar. 
+
+WhaTap provides the ***Apache Pulsar*** monitoring with a new **Feature Project** method. WhaTap allows you to trace the performance and status of the Apache Pulsar clusters in real time, enabling you to detect and resolve issues as early as possible, such as message latency, throughput degradation, and resource overload. 
+
+- **Metrics Monitoring**: It provides various system metrics such as CPU and memory usage for each node, as well as critical operational indicators such as message throughput, latency, and queue sizes. 
+
+- **Custom Dashboard**: You can view the metrics efficiently through this dashboard.
+
+- **Alert Settings**: Alerts are sent in real time when the set conditions are detected, allowing users to quickly respond to the problems.
+
+Effectively manage your complex operating environment of the Apache Pulsar cluster with the WhaTap ***Apache Pulsar*** monitoring. 
+
+## Installation
+
+The following guides you to the basic installation method for using the WhaTap Apache Pulsar monitoring service. 
+
+To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/en/signup/), create a project and then install the agent to the target server. For more information about membership registration, see [the following](../account/account-manage). 
+
+:::note 
+
+**Supported environment**<ScrollToLink anchor='apache-pulsar-supported-env' />
+
+Before installing the WhaTap Apache Pulsar monitoring agent, check the support environment. 
+
+- **Apache Pulsar**: Apache Pulsar 3.3.x or later 
+
+- **Ubuntu**: Ubuntu 12.04 or later
+
+- **OS**: Red Hat 6 or equivalent (CentOS, Rocky Linux, Amazon Linux)
+
+- **OS Architecture**: Amd64/X86_64, Arm64/Aarch64
+
+:::
+
+### Creating a Feature Project
+
+import CreateFeature from "../common-items/_import_feature-project-create.mdx";
+
+<CreateFeature />
+
+### Installation of the Apache Pulsar agent
+
+<InstallFeature name='Apache Pulsar Agent Installation' />
+
+## Learn about the main features
+
+### Dashboard
+
+Home > Select **Feature Project** (<code class='Features'>Feature</code>) > ***Apache Pulsar*** > ***Apache Pulsar Dashboard***
+
+WhaTap Apache Pulsar Monitoring monitors various metrics in real time so that you can see the overall status of the Apache Pulsar cluster at a glance, including its performance and status. You can check each metric regularly to keep your cluster in optimal health. 
+
+The **Apache Pulsar Dashboard** provided by WhaTap consists of the following three presets:
+
+- ***Overview*** 
+
+  This dashboard comprehensively visualizes key metrics to help you understand the overall performance and status of the cluster at a glance. It is useful for the cluster administrator to monitor system status in real time and quickly identify performance degradation.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  ##### Summary information at the top of the dashboard
+
+  - ***CPU***: It displays the number of CPU cores used in the cluster.
+
+  - ***Memory***: It displays the total amount of memory in use in the cluster and the current memory usage.
+
+  - ***ZooKeeper***: It displays the number of running ZooKeeper instances and their availability.
+
+  - ***Broker***: It displays the number and status of active brokers.
+
+  - ***Bookies***: It displays the number and status of BookKeeper nodes (Bookies) used in Apache Pulsar.
+
+  - ***Broker Storage Size***: It displays the total amount of data stored in the broker.
+
+  - ***Backlog***: By displaying the total size of unprocessed messages to determine the delay in message processing.
+
+  ##### Performance graphs
+
+  - ***Messaging Storage***: It traces the storage capacity variability by displaying the message storage usage over time.
+
+  - ***Message Rate(msg/s)***: It graphically displays the number of messages processed per second, allowing you to monitor the message processing speed of the cluster.
+
+  - ***Messaging Backlog***: It visualizes the number of messages waiting to be processed over time, allowing you to quickly identify message processing delays.
+
+  - ***Throughput(bytes/s)***: It represents the amount of data processed per second and evaluates the data processing capability of the cluster.
+
+  - ***Replication Backlog***: It displays the number of messages waiting to be replicated to other data centers.
+
+  - ***Replication Throughput***: It represents the amount of data processed per second during data replication.
+
+  - ***Replication Rate***: It displays the transmission speed of replication messages.
+
+  - ***Subscription Unacked Messages***: It represents the number of subscribed messages that have not yet been acknowledged.
+
+  ##### Top 10 backlogs
+
+  - ***Top 10 topics backlog***: You can analyze the causes of message delays by listing the top 10 topics with the most backlog.
+
+  - ***Top 10 Replication Backlog***: You can identify replication latency issues by listing the top 10 items with the most replication backlog.
+
+  </details>
+
+- ***Overview II***
+
+  This dashboard focuses on monitoring the activities of message producers and consumers within the cluster. It is designed to allow detailed management of resource usage for each node and status of key topics. It helps optimize system resources and manage the message processing flow.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  - ***Consumers Count***: It displays the number of active consumers in the current cluster in real time, allowing you to monitor message consumption activities and analyze the impact of changes in the number of consumers on the system.
+
+  - ***Producers Count***: It displays the number of active producers in the current cluster in real time, allowing you to monitor message production activities and analyze the impact of changes in the number of producers on the message production speed.
+
+  - ***Messages In***: It displays the number of messages flowing into the cluster over time, helping you monitor message inflow rates to predict the system load and identify traffic fluctuations.
+
+  - ***Subscriptions Count***: It displays the number of active subscriptions in the cluster in real time, helping you analyze the impact of increasing or decreasing subscriptions while processing system messages.
+
+  - ***Offloaded Size***: It represents the size of data offloaded from the cluster to disk, and can be used to evaluate the data storage efficiency and manage the storage space for a long time.
+
+  - ***Bytes In***: It displays the size of data flowing into the cluster in real time, helping you monitor the data inflow speed for managing the system performance and network load.
+
+  - ***Node CPU***(Node CPU utilization): It graphically displays the CPU utilization of each node in the cluster, allowing you to monitor the performance by node and optimize the resource distribution.
+
+  - ***Node Memory Used %***(Node Memory utilization): It displays the memory usage of each node in the cluster in real time, allowing you to monitor the memory usage to prevent performance degradation.
+
+  - ***Top 10 Topics Unacked***: It lists the top 10 topics with the most unacknowledged messages, helping you identify and troubleshoot the cause of message acknowledgment delays in specific topics.
+
+  - ***Top 10 Topics Storage***: It lists the top 10 topics that occupy the most storage space, allowing you to analyze the storage space occupied by specific topics to support efficient data management.
+
+  </details>
+
+- ***Backlog***
+
+  This dashboard traces the backlog status in the cluster in real time. It helps you quickly identify topics where message processing delays may occur. It is useful for responding quickly when any problems occur and taking actions to optimize the performance.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  - ***Pulsar Backlog***: It visualizes the number of messages waiting to be processed in specific topics over time. It monitors the backlog status in real time to identify and respond to problems as early as possible when the system processing capacity is exceeded.
+
+  - ***Top 20 Backlog Topics***: It lists the top 20 topics with the most backlogs. It displays the number of unprocessed and pending messages for each topic, allowing you to quickly identify problem topics and focus on resource management.
+
+  - ***Recently***(recent message count): The ***Recently*** column next to each topic indicates the number of backlog messages that occurred recently. It helps you clearly understand the current status of the backlog and identify topics that require immediate response.
+
+  </details>
+
+:::note 
+
+By updating data in real time, it allows the administrator to quickly understand the current situation and reflect the changes that occur during cluster operation. This allows the administrator to monitor issues in real time and take immediate action.
+
+:::

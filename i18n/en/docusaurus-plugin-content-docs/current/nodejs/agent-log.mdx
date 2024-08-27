@@ -26,3 +26,15 @@ When the application server runs, it starts collecting the monitoring data. The 
   Default `true`
 
   The function to record the log is activated in case of DataSource upon InitialContext Lookup.
+
+- **log_root** <span class='type'>String</span>
+
+  You can set the path for the agent log files. The _logs_ folder is created under the specified path, and the WhaTap log files are generated in this folder.
+
+  If you set an agent option as in the following example, the path for creating the whatap log file is as follows:
+
+  > <em>/Users/sample_user/workspace/nodejs_application/whatap_logs/logs/</em>
+
+  ```ini title="whatap.conf"
+  log_root=/Users/sample_user/workspace/nodejs_application/whatap_logs/
+  ```
