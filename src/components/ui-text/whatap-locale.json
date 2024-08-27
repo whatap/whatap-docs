@@ -53172,6 +53172,13 @@
     "zh": "Detailed analysis",
     "service_id": "TTL07712"
   },
+  "BTN07712": {
+    "en": "Detailed analysis",
+    "ja": "詳細分析",
+    "ko": "상세 분석",
+    "zh": "Detailed analysis",
+    "service_id": "BTN07712"
+  },
   "DSC07713": {
     "en": "Manage container resources efficiently by analyzing pod initiation performance.",
     "ja": "Podの起動時の性能を把握し、コンテナのリソースを効率的に管理します。",
@@ -54034,10 +54041,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -55637,10 +55644,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete this item?",
+    "zh": "Are you sure you want to delete that item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55714,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55938,10 +55945,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56247,7 +56254,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間バッチ初期化",
+    "ja": "時間一括初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56407,10 +56414,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -57506,10 +57513,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
@@ -57667,17 +57674,17 @@
     "service_id": "DSC08360"
   },
   "DSC08361": {
-    "en": "Make sure log monitoring is enabled.",
-    "ja": "ログモニタリングが有効になっているか確認してください。",
-    "ko": "로그 모니터링이 활성화 되어있는지 확인하세요.",
-    "zh": "Make sure log monitoring is enabled.",
+    "en": "Check the logsink_enabled=true option in your agent settings. ",
+    "ja": "エージェント設定でlogsink_enabled = trueオプションを確認してください。",
+    "ko": "에이전트 설정에서 logsink_enabled=true 옵션을 확인하세요. ",
+    "zh": "Check the logsink_enabled=true option in your agent settings. ",
     "service_id": "DSC08361"
   },
   "DSC08362": {
-    "en": "If log monitoring is enabled, the selected transaction will have no logs available for viewing.",
-    "ja": "ログモニタリングが有効になっている場合、該当のトランザクションには確認できるログがありません。",
-    "ko": "로그 모니터링이 활성화된 경우, 선택한 트랜잭션에는 확인할 수 있는 로그가 없습니다.",
-    "zh": "If log monitoring is enabled, the selected transaction will have no logs available for viewing.",
+    "en": "There is no log information available for the selected transaction.",
+    "ja": "選択したトランザクションで確認できるログ情報はありません。",
+    "ko": "선택한 트랜잭션에서 확인할 수 있는 로그 정보가 없습니다.",
+    "zh": "There is no log information available for the selected transaction.",
     "service_id": "DSC08362"
   },
   "DSC08363": {
@@ -57688,10 +57695,10 @@
     "service_id": "DSC08363"
   },
   "BTN08364": {
-    "en": "Log settings",
-    "ja": "ログ設定",
-    "ko": "로그 설정",
-    "zh": "Log settings",
+    "en": "Log monitoring settings",
+    "ja": "ログ監視設定",
+    "ko": "로그 모니터링 설정",
+    "zh": "Log monitoring settings",
     "service_id": "BTN08364"
   },
   "CNT08365": {
@@ -57700,6 +57707,76 @@
     "ko": "프로젝트 운영 요약",
     "zh": "Project Operation Summary",
     "service_id": "CNT08365"
+  },
+  "CNT08366": {
+    "en": "Select search results",
+    "ja": "検索結果の選択",
+    "ko": "검색 결과 선택",
+    "zh": "Select search results",
+    "service_id": "CNT08366"
+  },
+  "DSC08367": {
+    "en": "Add the following option in the Management > Agent Settings menu:<br /><b>logsink_enabled=true</b>",
+    "ja": "管理>エージェント設定メニューで、次のオプションを追加します。<br /> <b> logsink_enabled = true </b>",
+    "ko": "관리 > 에이전트 설정 메뉴에서 다음 옵션을 추가하세요.<br /><b>logsink_enabled=true</b>",
+    "zh": "Add the following option in the Management > Agent Settings menu:<br /><b>logsink_enabled=true</b>",
+    "service_id": "DSC08367"
+  },
+  "DSC08368": {
+    "en": "To use the transaction log storage and query function, <br /><b>activate the log monitoring settings in the Log > Log Settings menu</b>.",
+    "ja": "トランザクションログの保存と検索機能を使用するには、<br /> <b>ログ>ログ設定メニューでログ監視設定を有効にします</b>",
+    "ko": "트랜잭션 로그 저장 및 조회 기능을 사용하려면,<br /><b>로그 > 로그 설정 메뉴에서 로그 모니터링 설정을 활성화</b>하세요.",
+    "zh": "To use the transaction log storage and query function, <br /><b>activate the log monitoring settings in the Log > Log Settings menu</b>.",
+    "service_id": "DSC08368"
+  },
+  "DSC08369": {
+    "en": "Log monitoring settings are disabled.",
+    "ja": "ログ監視設定が無効になっています。",
+    "ko": "로그 모니터링 설정이 비활성화되어 있습니다.",
+    "zh": "Log monitoring settings are disabled.",
+    "service_id": "DSC08369"
+  },
+  "DSC08370": {
+    "en": "However, usage fees are charged when using log monitoring.",
+    "ja": "ただし、ログ監視の使用には利用料金が課金されます。",
+    "ko": "단, 로그 모니터링 사용 시 이용 요금이 청구됩니다.",
+    "zh": "However, usage fees are charged when using log monitoring.",
+    "service_id": "DSC08370"
+  },
+  "BTN08371": {
+    "en": "Agent settings",
+    "ja": "エージェント設定",
+    "ko": "에이전트 설정",
+    "zh": "Agent settings",
+    "service_id": "BTN08371"
+  },
+  "TTL08372": {
+    "en": "View details URL",
+    "ja": "詳細ビューURL",
+    "ko": "상세 보기 URL",
+    "zh": "View details URL",
+    "service_id": "TTL08372"
+  },
+  "MNU08373": {
+    "en": "Filter applied",
+    "ja": "適用されたフィルタ",
+    "ko": "적용된 필터",
+    "zh": "Filter applied",
+    "service_id": "MNU08373"
+  },
+  "TTL08374": {
+    "en": "{category} Top 10 page loads by star",
+    "ja": "{category} スターページ読み込み Top10",
+    "ko": "{category} 별 페이지 로드 Top10",
+    "zh": "{category} Top 10 page loads by star",
+    "service_id": "TTL08374"
+  },
+  "TTL08375": {
+    "en": "Page load times by {category}",
+    "ja": "{category} スターページ読み込み時間",
+    "ko": "{category} 별 페이지 로드 시간",
+    "zh": "Page load times by {category}",
+    "service_id": "TTL08375"
   },
   "": {
     "en": "#VALUE!",
