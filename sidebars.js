@@ -3400,7 +3400,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/index',
@@ -3408,9 +3408,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_24',
-                  // className: 'new',
+                  id: 'release-notes/java-batch/java-batch-2_2_25',
+                  className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_24',
                 'release-notes/java-batch/java-batch-2_2_23',
                 'release-notes/java-batch/java-batch-2_2_22',
                 'release-notes/java-batch/java-batch-2_2_21',
@@ -3479,7 +3480,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3487,9 +3488,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_6',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1_6_7',
+                  className: 'new',
                 },
+                'release-notes/python/python-1_6_6',
                 'release-notes/python/python-1_6_5',
                 'release-notes/python/python-1_6_4',
                 'release-notes/python/python-1_6_3',
@@ -3499,7 +3501,6 @@ const sidebars = {
                 'release-notes/python/python-1_5_9',
                 'release-notes/python/python-1_5_8',
                 'release-notes/python/python-1_5_7',
-                'release-notes/python/python-1_5_6',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3516,9 +3517,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_0',
+                  id: 'release-notes/dotnet/dotnet-2_3_1',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
@@ -3527,7 +3529,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-2_2_2',
-                'release-notes/dotnet/dotnet-2_2_1',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3572,9 +3573,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_5',
+                  id: 'release-notes/server/server-2_6_6',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_5',
                 'release-notes/server/server-2_6_4',
                 'release-notes/server/server-2_6_3',
                 'release-notes/server/server-2_6_2',
@@ -3585,7 +3587,6 @@ const sidebars = {
                 'release-notes/server/server-2_5_7',
                 'release-notes/server/server-2_5_5',
                 'release-notes/server/server-2_5_4',
-                'release-notes/server/server-2_5_3',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3612,7 +3613,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -3620,9 +3621,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_8',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1_7_9',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_8',
                 'release-notes/k8s/k8s-1_7_7',
                 'release-notes/k8s/k8s-1_7_6',
                 'release-notes/k8s/k8s-1_7_5',
@@ -3632,7 +3634,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_7_1',
                 'release-notes/k8s/k8s-1_7_0',
                 'release-notes/k8s/k8s-1_6_1',
-                'release-notes/k8s/k8s-1_6_0',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3641,7 +3642,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -3649,18 +3650,18 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-1_9_0',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_0_0',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-1_9_5',
+                'release-notes/db/dbx-1_9_4',
+                'release-notes/db/dbx-1_9_3',
+                'release-notes/db/dbx-1_9_2',
+                'release-notes/db/dbx-1_9_1',
+                'release-notes/db/dbx-1_9_0',
                 'release-notes/db/dbx-1_8_2',
                 'release-notes/db/dbx-1_8_1',
                 'release-notes/db/dbx-1_8_0',
-                'release-notes/db/dbx-1_7_8',
-                'release-notes/db/dbx-1_7_7',
-                'release-notes/db/dbx-1_7_6',
-                'release-notes/db/dbx-1_7_5',
-                'release-notes/db/dbx-1_7_4',
-                'release-notes/db/dbx-1_7_3',
                 'release-notes/db/dbx-previous',
               ]
             },
