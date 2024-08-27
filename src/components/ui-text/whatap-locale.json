@@ -55721,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56254,7 +56254,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56925,10 +56925,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57674,10 +57674,17 @@
     "service_id": "DSC08360"
   },
   "DSC08361": {
+<<<<<<< HEAD
     "en": "Check the logsink_enabled=true option in your agent settings. ",
     "ja": "エージェント設定でlogsink_enabled = trueオプションを確認してください。",
     "ko": "에이전트 설정에서 logsink_enabled=true 옵션을 확인하세요. ",
     "zh": "Check the logsink_enabled=true option in your agent settings. ",
+=======
+    "en": "Check the <b>logsink_enabled=true</b> option in your agent settings. ",
+    "ja": "エージェント設定でlogsink_enabled = trueオプションを確認してください。",
+    "ko": "에이전트 설정에서 <b>logsink_enabled=true</b> 옵션을 확인하세요. ",
+    "zh": "Check the <b>logsink_enabled=true</b> option in your agent settings. ",
+>>>>>>> 99dff021033693de5e629f882be23256b89aca5e
     "service_id": "DSC08361"
   },
   "DSC08362": {
@@ -57716,6 +57723,7 @@
     "service_id": "CNT08366"
   },
   "DSC08367": {
+<<<<<<< HEAD
     "en": "Add the following option in the Management > Agent Settings menu:<br /><b>logsink_enabled=true</b>",
     "ja": "管理>エージェント設定メニューで、次のオプションを追加します。<br /> <b> logsink_enabled = true </b>",
     "ko": "관리 > 에이전트 설정 메뉴에서 다음 옵션을 추가하세요.<br /><b>logsink_enabled=true</b>",
@@ -57727,6 +57735,19 @@
     "ja": "トランザクションログの保存と検索機能を使用するには、<br /> <b>ログ>ログ設定メニューでログ監視設定を有効にします</b>",
     "ko": "트랜잭션 로그 저장 및 조회 기능을 사용하려면,<br /><b>로그 > 로그 설정 메뉴에서 로그 모니터링 설정을 활성화</b>하세요.",
     "zh": "To use the transaction log storage and query function, <br /><b>activate the log monitoring settings in the Log > Log Settings menu</b>.",
+=======
+    "en": "Add the <b>logsink_enabled=true</b> option in the agent settings menu.",
+    "ja": "[エージェント設定]メニューから<b>logsink_enabled=true</b>オプションを追加します。",
+    "ko": "에이전트 설정 메뉴에서 <b>logsink_enabled=true</b> 옵션을 추가하세요.",
+    "zh": "Add the <b>logsink_enabled=true</b> option in the agent settings menu.",
+    "service_id": "DSC08367"
+  },
+  "DSC08368": {
+    "en": "To use the transaction log storage and viewing function, <br /><b>Enable log monitoring settings</b> in the Log > Log Settings menu.",
+    "ja": "トランザクションログの保存と検索機能を使用するには、<br />ログ>ログ設定メニューで<b>ログ監視設定を有効にする</b>。",
+    "ko": "트랜잭션 로그 저장 및 조회 기능을 사용하려면,<br />로그 > 로그 설정 메뉴에서 <b>로그 모니터링 설정을 활성화</b>하세요.",
+    "zh": "To use the transaction log storage and viewing function, <br /><b>Enable log monitoring settings</b> in the Log > Log Settings menu.",
+>>>>>>> 99dff021033693de5e629f882be23256b89aca5e
     "service_id": "DSC08368"
   },
   "DSC08369": {
@@ -57737,10 +57758,17 @@
     "service_id": "DSC08369"
   },
   "DSC08370": {
+<<<<<<< HEAD
     "en": "However, usage fees are charged when using log monitoring.",
     "ja": "ただし、ログ監視の使用には利用料金が課金されます。",
     "ko": "단, 로그 모니터링 사용 시 이용 요금이 청구됩니다.",
     "zh": "However, usage fees are charged when using log monitoring.",
+=======
+    "en": "However, usage fees will be charged if you use the log monitoring feature.",
+    "ja": "ただし、ログ監視機能を使用すると利用料金が請求されます。",
+    "ko": "단, 로그 모니터링 기능을 사용하면 이용 요금이 청구됩니다.",
+    "zh": "However, usage fees will be charged if you use the log monitoring feature.",
+>>>>>>> 99dff021033693de5e629f882be23256b89aca5e
     "service_id": "DSC08370"
   },
   "BTN08371": {
@@ -57778,6 +57806,44 @@
     "zh": "Page load times by {category}",
     "service_id": "TTL08375"
   },
+<<<<<<< HEAD
+=======
+  "TTL08376": {
+    "en": "Page load statistics",
+    "ja": "ページロード統計",
+    "ko": "페이지 로드 통계",
+    "zh": "Page load statistics",
+    "service_id": "TTL08376"
+  },
+  "TTL08377": {
+    "en": "IP load statistics",
+    "ja": "IP負荷統計",
+    "ko": "IP 로드 통계",
+    "zh": "IP load statistics",
+    "service_id": "TTL08377"
+  },
+  "NTC08378": {
+    "en": "Please select at least one column.",
+    "ja": "列を少なくとも1つ以上選択してください。",
+    "ko": "컬럼을 최소 한 개 이상 선택해 주세요.",
+    "zh": "Please select at least one column.",
+    "service_id": "NTC08378"
+  },
+  "TLT08379": {
+    "en": "Columns cannot be set in the full log screen.",
+    "ja": "ログ全画面では列を設定できません。",
+    "ko": "로그 전체 화면에서는 컬럼을 설정할 수 없습니다.",
+    "zh": "Columns cannot be set in the full log screen.",
+    "service_id": "TLT08379"
+  },
+  "TLT08380": {
+    "en": "Log view detail options cannot be set in the log full screen.",
+    "ja": "ログ全画面では、ログ表示詳細オプションを設定できません。",
+    "ko": "로그 전체 화면에서는 로그 표시 상세 옵션을 설정할 수 없습니다.",
+    "zh": "Log view detail options cannot be set in the log full screen.",
+    "service_id": "TLT08380"
+  },
+>>>>>>> 99dff021033693de5e629f882be23256b89aca5e
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
