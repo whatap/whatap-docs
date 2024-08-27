@@ -2561,6 +2561,26 @@ main {
         }
       }
     }
+    .db-metric-3 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 30%;
+            }
+            &:nth-of-type(2) {
+              width: 50%;
+            }
+            &:nth-of-type(3) {
+              width: 20%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
     .db-metric-4 {
       table {
         tr {
