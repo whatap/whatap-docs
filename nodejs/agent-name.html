@@ -24,8 +24,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.49232b79.css">
-<script src="/whatap-docs/assets/js/runtime~main.7ef0e32e.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.c1659714.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.2a43193b.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.454b9a79.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -64,6 +64,14 @@
 <p><strong>auto_oname_reset</strong> <span class="type">Int</span></p>
 <p>기본값 <code>0</code></p>
 <p>서버로부터 새로운 에이전트 이름을 부여받기 위해 수정합니다. 한번 정해진 에이전트 이름은 Node.js가 다시 시작할 때까지 유지합니다. 리셋을 원할 때 <code>auto_oname_reset</code> 값을 수정하세요. 현재 설정 값과 다른 값으로 변경하면 적용됩니다.</p>
+</li>
+<li>
+<p><strong>oname_port_postfix_enabled</strong> <span class="type">Boolean</span></p>
+<p>기본값 <code>false</code></p>
+<p>포트(port) 번호를 추가하여 에이전트 이름(ONAME)을 생성할 수 있습니다.</p>
+<blockquote>
+<p>예, NODE-14-103-3000</p>
+</blockquote>
 </li>
 </ul><ul>
 <li>

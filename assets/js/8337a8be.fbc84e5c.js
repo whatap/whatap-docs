@@ -27,7 +27,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/nodejs/nodejs-previous",
   "title": "Node.js Agent 지난 버전",
-  "description": "* Node.js Agent v0.4.83",
+  "description": "* Node.js Agent v0.4.86",
   "source": "@site/docs/release-notes/nodejs/nodejs-previous.mdx",
   "sourceDirName": "release-notes/nodejs",
   "slug": "/release-notes/nodejs/nodejs-previous",
@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Node.js Agent v0.4.86",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_86"
+    "title": "Node.js Agent v0.4.88",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_4_88"
   },
   "next": {
     "title": "Python Agent Release Notes",
@@ -71,6 +71,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "nodejs-0_4_86",
+          children: "Node.js Agent v0.4.86"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "nodejs-0_4_83",
