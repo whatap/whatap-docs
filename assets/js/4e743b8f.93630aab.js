@@ -128,7 +128,7 @@ function _createMdxContent(props) {
             children: "요약 보기"
           }), " 패널이 나타납니다."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-          img: "k8s-container-sum.png",
+          img: "k8s-container-map-sum-select.png",
           desc: "컨테이너 맵 요약 보기"
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
