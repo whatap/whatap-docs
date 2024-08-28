@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61052],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79780],{
 
-/***/ 66217:
+/***/ 84180:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,32 +18,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'golang-0_4_0',
-	title: 'Go Agent v0.4.0',
+	id: 'golang-0_4_1',
+	title: 'Go Agent v0.4.1',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/golang/golang-0_3_3',
+	pagination_next: 'release-notes/golang/golang-0_4_0',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/golang/golang-0_4_0",
-  "title": "Go Agent v0.4.0",
-  "description": "2024년 06월 19일",
-  "source": "@site/docs/release-notes/golang/golang-0.4.0.mdx",
+  "id": "release-notes/golang/golang-0_4_1",
+  "title": "Go Agent v0.4.1",
+  "description": "2024년 08월 28일",
+  "source": "@site/docs/release-notes/golang/golang-0.4.1.mdx",
   "sourceDirName": "release-notes/golang",
-  "slug": "/release-notes/golang/golang-0_4_0",
-  "permalink": "/whatap-docs/release-notes/golang/golang-0_4_0",
+  "slug": "/release-notes/golang/golang-0_4_1",
+  "permalink": "/whatap-docs/release-notes/golang/golang-0_4_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/golang/golang-0.4.0.mdx",
+  "editUrl": "undefined/docs/release-notes/golang/golang-0.4.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "golang-0_4_0",
-    "title": "Go Agent v0.4.0",
+    "id": "golang-0_4_1",
+    "title": "Go Agent v0.4.1",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/golang/golang-0_3_3",
+    "pagination_next": "release-notes/golang/golang-0_4_0",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
@@ -53,8 +53,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/golang/"
   },
   "next": {
-    "title": "Go Agent v0.3.3",
-    "permalink": "/whatap-docs/release-notes/golang/golang-0_3_3"
+    "title": "Go Agent v0.4.0",
+    "permalink": "/whatap-docs/release-notes/golang/golang-0_4_0"
   }
 };
 const assets = {
@@ -87,109 +87,107 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 19일"
+      children: "2024년 08월 28일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
             children: "New"
-          }), " linux aarch64 지원"]
+          }), " Standard output 로그 수집"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "로그 데이터를 적당량으로 모아서 압축 전송합니다."
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-ini",
+            metastring: "title=\"whatap.conf\"",
+            children: "logsink_enabled=true\nlogsink_stdout_enabled=true\nlogsink_zip_enabled=true\n"
+          })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "paramkey.txt"
-          }), " 대신 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "security.conf"
-          }), " 파일 사용"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "security.conf"
-          }), " 파일의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "paramkey"
-          }), " 키의 값을 사용합니다. 기본값은 무작위값이 아닌 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "WHATAP"
-          }), "으로 지정도록 변경합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "WHATAP"
-          }), " 지정되면 키 입력없이 복호화할 수 있습니다."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " SQL 문장의 정규화 옵션 설정 변경"]
+            priority: "1",
+            children: "New"
+          }), " 에이전트 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), ")보다 환경 변수를 우선 처리하는 옵션 추가"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["SQL 문장에서 파라미터를 분리하여 정규화하는 기능을 항상 활성화하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "trace_sql_normalize_enabled"
-              }), " 옵션을 항상 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), "로 설정하세요."]
+              children: ["기존 에이전트 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.conf"
+              }), ", 환경 변수 순서로 적용합니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "use_env_first"
+              }), " (기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "false"
+              }), ") 옵션을 설정하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.conf"
+              }), " 파일의 설정보다 환경 변수를 우선 적용합니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"whatap.conf\"",
+                children: "use_env_first=true\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "WHATAP_USE_ENV_FIRST=true"
+              }), " 형식으로 환경 변수를 이용해 설정할 수 있습니다."]
+            }), "\n"]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "Changed"
+          }), " 다음 에이전트 옵션의 기본값 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "TCP read timeout 시간을 30초에서 120초로 변경합니다."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"whatap.conf\"",
+                children: "net_so_time=120000\n"
+              })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "이미 정규화 옵션을 비활성화(정규화 중지 설정)한 상태라면, 정규화해서 파라미터를 별도 표기하는 설정을 활성화하세요."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "profile_sql_param_enabled"
-                }), " 옵션을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "true"
-                }), "로 설정하세요."]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-                children: "정규화된 파라미터를 별도 암호화하여 수집합니다."
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                  children: "security.conf"
-                }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "paramkey"
-                }), "로 복호화하여 데이터를 확인할 수 있습니다."]
-              }), "\n"]
+              children: "TCP write buffer 값을 8Mb에서 2Mb로 변경합니다."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"whatap.conf\"",
+                children: "net_write_buffer_size=2*1024*1024\n"
+              })
             }), "\n"]
           }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Changed"
-          }), " 모니터링 중지 기능 변경"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "trace.Init()"
-              }), " 함수 호출이 없을 경우(주석 및 삭제) 모니터링 기능을 시작하지 않습니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "enabled"
-              }), " 옵션 설정(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), "): 정보 수집 기능을 중지합니다. 에이전트의 내부 백그라운드 모듈은 유지됩니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "shutdown"
-              }), " 옵션 설정(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), "): 모든 에이전트 기능을 중지합니다. 다시 시작하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "shutdown"
-              }), " 옵션을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "true"
-              }), "로 변경하고 애플리케이션을 재시작해야 합니다."]
-            }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
             children: "Fixed"
-          }), " 에이전트가 설치된 서버의 IP를 127.0.0.1로 수집하는 문제 수정, 와탭 서버와 TCP 연결된 Local address IP 정보로 수집"]
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "OKIND"
+          }), " 환경 변수 인식 오류 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "OKIND"
+          }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "WHATAP_OKIND"
+          }), " 환경 변수로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "okind"
+          }), "를 설정할 수 있습니다."]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
@@ -254,7 +252,7 @@ function _createMdxContent(props) {
                     textAlign: "center"
                   },
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "https://repo.whatap.io/centos/6/x86_64/whatap-agent-0.4-0.x86_64.rpm",
+                    href: "https://repo.whatap.io/centos/6/x86_64/whatap-agent-0.4-1.x86_64.rpm",
                     children: "다운로드"
                   })
                 })]
@@ -269,7 +267,7 @@ function _createMdxContent(props) {
                     textAlign: "center"
                   },
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "https://repo.whatap.io/centos/7/aarch64/whatap-agent-0.4-0.aarch64.rpm",
+                    href: "https://repo.whatap.io/centos/7/aarch64/whatap-agent-0.4-1.aarch64.rpm",
                     children: "다운로드"
                   })
                 })]
@@ -293,7 +291,7 @@ function _createMdxContent(props) {
                     textAlign: "center"
                   },
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "https://repo.whatap.io/debian/unstable/whatap-agent_0.4.0_amd64.deb",
+                    href: "https://repo.whatap.io/debian/unstable/whatap-agent_0.4.1_amd64.deb",
                     children: "다운로드"
                   })
                 })]
@@ -308,7 +306,7 @@ function _createMdxContent(props) {
                     textAlign: "center"
                   },
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "https://repo.whatap.io/debian/unstable/whatap-agent_0.4.0.arm64.deb",
+                    href: "https://repo.whatap.io/debian/unstable/whatap-agent_0.4.1_arm64.deb",
                     children: "다운로드"
                   })
                 })]
@@ -332,7 +330,7 @@ function _createMdxContent(props) {
                     textAlign: "center"
                   },
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "https://repo.whatap.io/alpine/x86_64/whatap-agent-0.4.0.tar.gz",
+                    href: "https://repo.whatap.io/alpine/x86_64/whatap-agent-0.4.1.tar.gz",
                     children: "다운로드"
                   })
                 })]
@@ -347,7 +345,7 @@ function _createMdxContent(props) {
                     textAlign: "center"
                   },
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "https://repo.whatap.io/alpine/aarch64/whatap-agent-0.4.0.tar.gz",
+                    href: "https://repo.whatap.io/alpine/aarch64/whatap-agent-0.4.1.tar.gz",
                     children: "다운로드"
                   })
                 })]

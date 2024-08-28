@@ -71,6 +71,7 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     code: "code",
+    em: "em",
     li: "li",
     p: "p",
     strong: "strong",
@@ -171,6 +172,27 @@ function _createMdxContent(props) {
           children: "와탭 에이전트는 한번 보낸 텍스트 유형 데이터는 hash 처리되므로 다음날까지 다시 전송하지 않습니다. 이전 설정값과 다른 값을 설정하는 경우 다시 전송합니다."
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "트랜잭션 URL, SQL String 등이 텍스트 유형 데이터에 해당합니다."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "use_env_first"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+            class: "type",
+            children: "Boolean"
+          })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "false"
+          })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["에이전트 설정의 우선순위는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일이 먼저 적용되고, 그다음으로 환경 변수가 적용됩니다. 환경 변수를 우선적으로 적용하려면 옵션값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "true"
+          }), "로 설정하세요. 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "WHATAP_USE_ENV_FIRST=true"
+          }), " 형식으로 환경 변수를 설정할 수도 있습니다."]
         }), "\n"]
       }), "\n"]
     })]

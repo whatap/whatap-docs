@@ -818,6 +818,19 @@ function install_agent_createMdxContent(props) {
           className: "language-bash",
           children: "# WHATAP_HOME 경로 우선 생성 후 whatap.conf 파일 경로 설정\nmkdir ./whatap_home\necho \"license={액세스 키}\" >> ./whatap_home/whatap.conf\necho \"whatap.server.host={수집 서버 IP 주소}\" >> ./whatap_home/whatap.conf\necho \"app_name={애플리케이션 이름}\" >> ./whatap_home/whatap.conf\n\n# 애플리케이션 실행\nWHATAP_HOME=./whatap_home ./app\n"
         })
+      }), (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["에이전트 설정의 우선순위는 ", (0,jsx_runtime.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일이 먼저 적용되고, 그다음으로 환경 변수가 적용됩니다. 환경 변수를 우선적으로 적용하려면 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "use_env_first"
+          }), " 옵션을 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "true"
+          }), "로 설정하세요. 또는 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "WHATAP_USE_ENV_FIRST=true"
+          }), " 형식으로 환경 변수를 설정할 수도 있습니다."]
+        })
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
