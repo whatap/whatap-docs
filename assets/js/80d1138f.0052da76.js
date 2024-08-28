@@ -312,7 +312,7 @@ const assets = {
 
 const toc = [..._common_items_import_k8s_container_map_target_resource_info_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "컨테이너 요약 분석과 Pod 요약 분석",
-  "id": "kube-object-summary-analysis",
+  "id": "kube-resource-summary-analysis",
   "level": 3
 }, {
   "value": "컨테이너 요약 분석",
@@ -418,7 +418,7 @@ function _createMdxContent(props) {
     }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_k8s_container_map_target_resource_info_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "kube-object-summary-analysis",
+        id: "kube-resource-summary-analysis",
         children: "컨테이너 요약 분석과 Pod 요약 분석"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
