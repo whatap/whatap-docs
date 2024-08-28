@@ -300,7 +300,10 @@ function _createMdxContent(props) {
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                     children: "Agent"
                   })
-                }), " 등의 지표 정보를 조회할 수 있습니다."]
+                }), " 등의 지표 정보를 조회할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "container-map-target-info",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
               }), "\n"]
             }), "\n"]
           }), "\n", "\n"]
