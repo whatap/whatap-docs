@@ -4,1069 +4,1061 @@
         <title>WhaTap Docs Blog</title>
         <link>https://docs.whatap.io/en/blog</link>
         <description>WhaTap Docs Blog</description>
-        <lastBuildDate>Tue, 23 Jul 2024 15:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Aug 2024 15:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[서비스 개요]]></title>
+            <title><![CDATA[New Feature Timeline]]></title>
             <link>https://docs.whatap.io/en/blog/overview</link>
             <guid>https://docs.whatap.io/en/blog/overview</guid>
-            <pubDate>Tue, 23 Jul 2024 15:30:00 GMT</pubDate>
+            <pubDate>Fri, 23 Aug 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[New Feature Overview]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/en/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
-<p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
-<!-- -->
+<p>Please take a quick look at the overview of new features provided by the Watap service.</p>
 <!-- -->
 <br>
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 07월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.3​</a></code>
+<code class="changelog-date">2024-07-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.3​</a></code>
 <br>
 <code class="changelog-overview2">MySQL</code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 권한 관련 안내 문구 추가</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, added the guidance text regarding the roles.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
 <code class="changelog-overview2">Database</code>
 <ul>
-<li><code class="New" type="1">New</code> <strong>Oracle V2</strong> 서비스 시작!!</li>
-<li><code class="New" type="1">New</code> <strong>Oracle Pro</strong> 서비스 시작!!</li>
+<li><code class="New" type="1">New</code> <strong>Oracle V2</strong> services now launched!!</li>
+<li><code class="New" type="1">New</code> <strong>Oracle Pro</strong> services now launched!!</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.7.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
 <code class="changelog-overview2">Kubernetes</code>
 <ul>
-<li><code class="New" type="1">New</code> Kubernetes 클러스터 내에서 실행 중인 모든 서비스들의 상태와 정보를 종합적으로 제공하는 <span class="uitext">Service 목록</span> 메뉴 추가</li>
-<li><code class="New" type="1">New</code> 노드 관점에서 디스크 모니터링을 위한 <span class="uitext">노드 디스크 목록</span> 메뉴 추가</li>
+<li><code class="New" type="1">New</code> Added the <span class="uitext">Service List</span> menu that provides comprehensive status and information on all services running in the Kubernetes cluster.</li>
+<li><code class="New" type="1">New</code> Added the <span class="uitext">Node Disk List</span> menu for disk monitoring from the node perspective.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.7.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> 사이드 메뉴에서 <span class="uitext">전체 프로젝트</span>를 선택해 프로젝트 목록을 펼치면, 프로젝트 검색 입력란에 자동 포커스되는 기능 추가</li>
-<li><code class="Feature" type="1">Feature</code> 사이드 메뉴의 통합 검색에서 에이전트를 IP 주소로 검색할 수 있는 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> Added the feature that automatically focuses on the project search bar when you select <span class="uitext">All projects</span> from the side menu to expand the project list.</li>
+<li><code class="Feature" type="1">Feature</code> Added the feature to search for agents by IP address through the integrated search in the side menu.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.7.0​</a></code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> 다음 메뉴 경로에서 조회 내용을 CSV 파일 다운로드 기능 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설정</span> 메뉴에서 경로에서 선택한 에이전트의 에이전트 설정(<em>whatap.conf</em>) 파일 다운로드 기능 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">인스턴스 성능 관리</span> &gt; <span class="uitext">스레드 목록/덤프</span> 메뉴의 테이블에서 CPU 시간 증가량을 표시하는 컬럼 추가</li>
+<li><code class="Feature" type="1">Feature</code> Added the CSV file download feature for the search content in the following menu paths.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent CONF.</span>, added the feature to download the agent configuration file (<em>whatap.conf</em>) of the agent selected in the path.</li>
+<li><code class="Feature" type="1">Feature</code> In the table of <span class="uitext">Instance Performance Management</span> &gt; <span class="uitext">Thread List/Dump</span>, added the column to display the increased CPU time.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.7.0​</a></code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 요약 보기에서 <span class="uitext">대상 정보</span> 탭에 <span class="uitext">컨테이너 요약 분석</span> 기능 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 요약 보기에서 <span class="uitext">대상 정보</span> 및 <span class="uitext">리소스 관계</span> 탭에 <strong>Service</strong> 정보 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴의 <span class="uitext">로그</span> &gt; <span class="uitext">로그 검색</span> 탭(요약 또는 상세 보기)에서 <span class="uitext">라이브 테일</span> 메뉴로 이동할 수 있는 링크 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">컨테이너 목록</span> 메뉴에서 다음 컬럼의 각 항목에 관련 목록 메뉴로 이동할 수 있는 버튼 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴에서 다음 컬럼의 각 항목에 관련 목록 메뉴로 이동할 수 있는 버튼 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴의 <span class="uitext">리소스</span> 그룹에 <span class="uitext">Image</span> 컬럼 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴의 이벤트 목록 테이블에 <span class="uitext">이벤트 최초 발생 시간</span>과 <span class="uitext">이벤트 발생 건수</span> 컬럼 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span> 메뉴에 파드 목록 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">레코드 요약</span> 탭에서 <strong>Container Id</strong>, <strong>Pod Name</strong> 정보를 제공하고, 해당 정보를 클릭하면 각각 컨테이너 목록, 파드 목록 페이지로 이동하는 기능 추가</li>
-<li><code class="Feature" type="1">Feature</code> 쿠버네티스 에이전트가 비활성화되면 사용자가 바로 인지할 수 있도록 화면 상단에 에이전트 상태 표시 추가</li>
+<li><code class="Feature" type="1">Feature</code> In the summary view of <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the <span class="uitext">Container summary analysis</span> feature under the <span class="uitext">Target information</span> tab.</li>
+<li><code class="Feature" type="1">Feature</code> In the summary view of <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the <strong>service</strong> information under the <span class="uitext">Target information</span> and <span class="uitext">Resource relations</span> tabs.</li>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">Log</span> &gt; <span class="uitext">Search Log</span> tab (summary or detailed view) of the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span> menu, added the link to go to the <span class="uitext">Live Tail</span> menu.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Container</span> &gt; <span class="uitext">Container List</span>, added the button to go to the list menu for the following columns.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Workload</span> &gt; <span class="uitext">Container Application List</span>, added the button to go to the list menu for the following columns.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Workload</span> &gt; <span class="uitext">Container Application List</span>, added the <span class="uitext">Image</span> column into the <span class="uitext">Resource</span> group.</li>
+<li><code class="Feature" type="1">Feature</code> In the event list table of <span class="uitext">Cluster</span> &gt; <span class="uitext">Kubernetes Event</span>, added the <span class="uitext">Time the event first occurred</span> and <span class="uitext">Number of events</span> columns.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">Node Detail</span>, added the Pod list.</li>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">Record summary</span> tab of the <span class="uitext">Trace analysis</span> window, added the feature to display information for <strong>Container Id</strong> and <strong>Pod Name</strong> and go to each container and Pod list pages when clicked for each.</li>
+<li><code class="Feature" type="1">Feature</code> Added the agent status display feature at the top of the screen so that users can immediately recognize when the Kubernetes agent is disabled.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.7.0​</a></code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> 특정 날짜를 기준으로 설정된 시간대의 SQL의 추이를 비교하고 등락을 확인할 수 있는 <span class="uitext">분석</span> &gt; <span class="uitext">Top SQL 비교</span> 메뉴 추가</li>
+<li><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Analysis</span> &gt; <span class="uitext">Top SQL Comparison</span> menu to compare the SQL trends in the time zone set based on a specific date and check the fluctuations.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 07월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.7.0​</a></code>
+<code class="changelog-date">2024-07-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL / MySQL</code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에 DB가 기동한 지 얼마나 시간이 지났는지 확인할 수 있는 <em><strong>Uptime</strong></em> 위젯 추가</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span>, added the <em><strong>Uptime</strong></em> widget to check how long it has been since the DB startup.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">Flex 보드 / 통합 Flex 보드</code>
+<code class="changelog-overview2">Flex Board / Integrated Flex Board</code>
 <ul>
-<li><code class="Feature">Feature</code> 위젯에 <span class="uitext">선택된 프로젝트</span> 표시 기능 추가: 위젯에 데이터를 호출할 프로젝트의 목록 확인 가능</li>
+<li><code class="Feature">Feature</code> Added the feature to display <span class="uitext">Selected projects</span> in the widget: you can check the list of projects to call data in the widget.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">이용 내역</code>
+<code class="changelog-overview2">Usage</code>
 <ul>
-<li><code class="Feature">Feature</code> 결제 수단 등록/수정 메뉴의 UI/UX 개편 (프로필 아이콘 &gt; <span class="uitext">이용 내역</span> &gt; <span class="uitext">결제 정보</span>)</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
-<br>
-<code class="changelog-overview2">대시보드</code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 기본 프리셋 변경 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 에이전트 검색 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">트랜잭션 맵</span> 메뉴에서 <span class="uitext">TOP 30</span> 필터 내 항목을 직접 검색해 추가하는 <span class="uitext">커스텀</span> 기능 추가</li>
+<li><code class="Feature">Feature</code> Reorganized the UI/UX for payment method registration and modification menus (Profile icon &gt; <span class="uitext">Usage</span> &gt; <span class="uitext">Payment Information</span>).</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">통계</code>
+<code class="changelog-overview2">Dashboard</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">통계</span> 하위 메뉴의 기능 개선</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Application Dashboard</span>, added the default preset modification feature.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Application Dashboard</span>, added the agent search feature.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Transaction Map</span>, added the <span class="uitext">Custom</span> feature that can add items in the <span class="uitext">TOP 30</span> filter after searching them.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Application</code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<br>
+<code class="changelog-overview2">Statistics</code>
+<ul>
+<li><code class="Feature">Feature</code> Enhanced the features under <span class="uitext">Statistics</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Server</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에 <strong>Oracle Solaris OS</strong> 설치 안내 페이지 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, added the guide page for <strong>Oracle Solaris OS</strong> installation.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">컨테이너 맵</code>
+<code class="changelog-overview2">Container Map</code>
 <ul>
-<li><code class="Feature">Feature</code> 요약 보기의 <span class="uitext">대상 정보</span> 탭에 <span class="uitext">Containter State</span> 표시 및 설명 추가</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Containter State</span> and description in the <span class="uitext">Target information</span> tab of the Summary view.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">클러스터</code>
+<code class="changelog-overview2">Cluster</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">노드 목록</span> 메뉴에서 <span class="uitext">노드 정보</span> 하위 컬럼으로 <span class="uitext">capacityType</span> 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Node List</span>, added <span class="uitext">capacityType</span> as a subcolumn of <span class="uitext">Node info</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">워크로드</code>
+<code class="changelog-overview2">Workload</code>
 <ul>
-<li><code class="Feature">Feature</code> Pending 상태의 Pod를 빠르게 파악할 수 있는 <span class="uitext">Pending Pod 현황</span> 메뉴 추가 (<span class="uitext">실험실</span> &gt; <span class="uitext">Pending Pods</span> 메뉴에서 <span class="uitext">워크로드</span> 하위 메뉴로 이동)</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Pending Pod Status</span> menu to quickly identify Pods in pending status (menu path change from <span class="uitext">Laboratory</span> &gt; <span class="uitext">Pending Pods</span> to <span class="uitext">Workload</span>).</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">데이터베이스 파라미터</span> 메뉴에서 <span class="uitext">기준 날짜</span>와 <span class="uitext">비교 날짜</span>를 모두 오늘 날짜로 설정하면 실시간 데이터와 저장된 마지막 데이터를 조회해 비교하는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Database Parameter</span>, added the feature to compare between the real-time data and the last saved data when <span class="uitext">Reference date</span> and <span class="uitext">Comparison date</span> are all set to the date of today.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.6.0​</a></code>
+<code class="changelog-date">2024-06-26</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_6_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">페이지 로드 히트맵</span>, <span class="uitext">AJAX 히트맵</span>, <span class="uitext">사용자 세션 로그 검색</span> 메뉴에 사용자가 웹 사이트에서 수행하는 모든 이벤트를 기록하고 재생할 수 있는 <span class="uitext">세션 리플레이</span> 기능 추가</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Feature</code>
-<code class="changelog-date">2024년 06월 26일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/features/kafka-introduction"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference​</a></code>
-<ul>
-<li><code class="New">New</code> 피쳐 프로젝트 <code class="changelog-overview2">Kafka</code> <b>베타</b> 서비스 시작</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">Page Load Hitmap</span>, <span class="uitext">AJAX Hitmap</span>, and <span class="uitext">User Session Log Search</span> menus, added the <span class="uitext">Session replay</span> feature to record and replay all events that users perform on the website.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 06월 03일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.8​</a></code>
+<code class="changelog-date">2024-06-03</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.8​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">트레이스 분석</span> 창의 URL 복사 버튼 추가</li>
+<li><code class="Feature">Feature</code> Added the URL copying button in the <span class="uitext">Trace analysis</span> window.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 05월 30일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.7​</a></code>
+<code class="changelog-date">2024-05-30</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.7​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">성능 추이</span> 메뉴에서 연속 검색 방지 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Performance Trend</span>, added the continuous search prevention feature.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 05월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-05-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <br>
-<code class="changelog-overview2">Flex 보드 / 통합 Flex 보드</code>
+<code class="changelog-overview2">Flex Board / Integrated Flex Board</code>
 <ul>
-<li><code class="Feature">Feature</code> 대시보드 내보내기 기능 이용 시 프로젝트 정보를 제외하고 내보내는 기능 추가</li>
-<li><code class="Feature">Feature</code> 카운트 형태 위젯에 필드 선택 기능 추가</li>
-<li><code class="Feature">Feature</code> 보조 차트 설정에서 그룹 내 옵션을 공유할 수 있는 <span class="uitext">그룹 내 전체 위젯에 적용</span> 기능 추가</li>
-<li><code class="Feature">Feature</code> 그룹 위젯에 <span class="uitext">프로젝트 선택</span> 기능 추가, 그룹 하위 위젯에 <span class="uitext">그룹 위젯에 선택된 프로젝트</span> 선택 옵션 추가</li>
-<li><code class="Feature">Feature</code> 위젯에 대한 설명 첨부 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the function to transmit data excluding the project information when using Export Dashboard.</li>
+<li><code class="Feature">Feature</code> Added the field selection feature in the count-shape widget.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Apply To All Widgets In The Group</span> function to share options within a group in the secondary chart configuration.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Project selection</span> function into the group widget and added the <span class="uitext">Projects selected in the Group Widget</span> selection option into the group's sub widget.</li>
+<li><code class="Feature">Feature</code> Added the feature to attach the description to the widget.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 05월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-05-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <br>
-<code class="changelog-overview2">경고 알림</code>
+<code class="changelog-overview2">Alert</code>
 <ul>
-<li><code class="Feature">Feature</code> 로그 모니터링을 지원하는 플랫폼의 <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 로그 이벤트 설정 기능 추가</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> menu of the platform that supports log monitoring, added the log event configuration function.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Server</code>
-<code class="changelog-date">2024년 05월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.0​</a></code>
+<code class="changelog-date">2024-05-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">서버 목록</span> 메뉴에서 <span class="uitext">에이전트 명</span>과 <span class="uitext">호스트 명</span>을 구분된 컬럼으로 표시하도록 수정</li>
-<li><code class="Feature">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴의 <span class="uitext">서버 정보</span> 섹션에서 Agent Name과 Host Name을 구분된 항목으로 표시하고, 사용자가 수정할 수 있는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Server List</span>, modified to display <span class="uitext">Agent name</span> and <span class="uitext">Host name</span> as separated columns.</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">Server information</span> section of <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span>, displayed Agent Name and Host Name as separated items, and added the function to modify them.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 05월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.0​</a></code>
+<code class="changelog-date">2024-05-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">애플리케이션</span> 카테고리에 <span class="uitext">인스턴스 성능 관리</span> 메뉴 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">실험실</span> &gt; <span class="uitext">Pending Pod 현황</span> 메뉴의 상세 탭 개편</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Instance Performance Management</span> menu in the <span class="uitext">APP.</span> category.</li>
+<li><code class="Feature">Feature</code> Reorganized the Detail tab in <span class="uitext">Laboratory</span> &gt; <span class="uitext">Pending Pod Status</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 05월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.5.0​</a></code>
+<code class="changelog-date">2024-05-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_5_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Wait 분석</span> 메뉴의 테이블 위젯에서 마우스를 오버하면 항목의 전체 이름을 확인할 수 있는 툴팁 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Wait Analysis</span>, added a tooltip to see the full name when you hover your mouse over an item in the table widget.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">Flex 보드 / 통합 Flex 보드</code>
+<code class="changelog-overview2">Flex Board / Integrated Flex Board</code>
 <ul>
-<li><code class="Feature">Feature</code> <b>통합 서비스 2</b> 대시보드 템플릿 추가</li>
+<li><code class="Feature">Feature</code> Added the <b>Integrated service 2</b> dashboard template.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">계정 관리</code>
+<code class="changelog-overview2">Manage Accounts</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">계정 관리</span> 메뉴의 <span class="uitext">사용자 전화번호</span> 섹션에서 일반 휴대전화에 국가 코드 선택 기능 추가</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">User phone</span> section under <span class="uitext">Manage Accounts</span>, added the country code selection feature to general mobile phones.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴의 <span class="uitext">액티브 트랜잭션 이퀄라이저</span> 위젯에 비활성 에이전트 표시 옵션 추가</li>
+<li><code class="Feature">Feature</code> From the <span class="uitext">Active Transaction Equalizer</span> widget in <span class="uitext">Dashboard</span> &gt; <span class="uitext">Application Dashboard</span>, added the option to display inactive agents.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Server</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 설정 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 이벤트 상세 정보 화면으로 이동하면, <span class="uitext">알림 전후</span> 항목의 시간 설정에 따라 프로세스 차트의 시간 범위가 변경되도록 개선</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> <code class="newfunc">New</code>, added the <span class="uitext">Log File / Window Event</span> setting.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event History</span>, modified to change the time range of the process chart according to the time setting of <span class="uitext">before and after the alert</span> when the event's detailed information screen appears.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">Deployment 목록</span> 메뉴의 <span class="uitext">상세 보기</span> 화면에서 <span class="uitext">리소스</span> 탭에 ReplicaSet 목록 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 <span class="uitext">리소스 관계</span> 탭 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">오브젝트 매니페스트</span> 메뉴에서 <span class="uitext">쿠버네티스 이벤트</span> 연동 기능 추가</li>
+<li><code class="Feature">Feature</code> On the <span class="uitext">View Detailed</span> screen in <span class="uitext">Workload</span> &gt; <span class="uitext">Deployment List</span>, added the ReplicaSet list in the <span class="uitext">Resource</span> tab.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the <span class="uitext">Resource relations</span> tab.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">Object Manifest</span>, added the <span class="uitext">Kubernetes Event</span> linking feature.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
 <code class="changelog-overview2">Database V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 <span class="uitext">액티브 세션</span> 테이블의 데이터를 1분 간격으로 조회할 수 있는 버튼 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span>, added the button to view the data in the <span class="uitext">Active sessions</span> table at an interval of 1 minute.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Top 오브젝트</span> 메뉴의 <span class="uitext">Age</span> 탭에 <span class="uitext">per_to_wraparound</span> 컬럼 추가</li>
+<li><code class="Feature">Feature</code> Under the <span class="uitext">Age</span> tab in <span class="uitext">Analysis</span> &gt; <span class="uitext">Top Object</span>, added the <span class="uitext">per_to_wraparound</span> column.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 04월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.4.0​</a></code>
+<code class="changelog-date">2024-04-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_4_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL / MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 디스크 사용 추이를 확인할 수 있는 상세 팝아웃 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 위젯 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span>, added the detailed pop-up that displays the disk usage trend.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span>, added the following widgets.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 04월 09일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.14​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-04-09</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.14​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에서 기존 이벤트 설정 메뉴의 이벤트 탭을 표시하고, <span class="uitext">JSON 일괄 수정</span>, <span class="uitext">JSON 일괄 다운로드</span> 기능 추가</li>
-<li><code class="Feature">Feature</code> 사이드 메뉴에서 프로젝트 목록의 너비를 조절할 수 있는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> <code class="newfunc">New</code>, displayed the Event tab of the existing Event Settings menu, and added the <span class="uitext">JSON Batch Edit</span> and <span class="uitext">JSON Batch Download</span> functions.</li>
+<li><code class="Feature">Feature</code> Added the function to adjust the width of the project list.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 03월 29일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.5​</a></code>
+<code class="changelog-date">2024-03-29</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.5​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 다음과 같이 복합 메트릭스 이벤트 템플릿 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span>, added the composite metrics event templates as follows:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 03월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.2​</a></code>
+<code class="changelog-date">2024-03-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.2​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Helm을 이용한 에이전트 설치 안내 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, added the guide for agent installation using the Helm.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">Database</code>
 <ul>
-<li><code class="New">New</code> Redis, MongoDB <code class="my">V2</code> 서비스 시작!</li>
+<li><code class="New">New</code> Redis and MongoDB <code class="my">V2</code> services now launched!</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">Kubernetes</code>
 <ul>
-<li><code class="New">New</code> kube-apiserver 수집 지표 목록을 조회할 수 있는 <span class="uitext">kube-apiserver 메트릭스 조회</span> 메뉴 추가</li>
-<li><code class="New">New</code> Deployment를 기준으로 ReplicaSet 수 및 컨테이너 개수, 주요 성능 정보 통계, Pod 개수 등의 정보 제공하는 <span class="uitext">Deployment 목록</span> 메뉴 추가</li>
+<li><code class="New">New</code> Added the <span class="uitext">kube-apiserver Metrics Search</span> menu that can view the kube-apiserver collection metrics.</li>
+<li><code class="New">New</code> Added the <span class="uitext">Deployment List</span> menu that provides information such as ReplicaSet count, container count, key performance data statistics, and Pod count based on the deployment.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">Browser</code>
 <ul>
-<li><code class="New">New</code> 사용자 세션 로그를 검색할 수 있는 <span class="uitext">사용자 세션 로그 검색</span> 메뉴 추가</li>
+<li><code class="New">New</code> Added the <span class="uitext">User Session Log Search</span> menu that can search for user session logs.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">경고 알림</code>
+<code class="changelog-overview2">Alert</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">이벤트 수신 설정</span> 메뉴에서 3rd 파티 플러그인으로 Opsgenie 플랫폼 등록 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Notifications</span>, added the Opsgenie platform registration function as a 3rd party plug-in.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> 에이전트 선택 옵션의 에이전트 목록 간격 조정 및 검색 기능 추가, 이름 순으로 정렬하여 표시</li>
-<li><code class="Feature">Feature</code> 에이전트별 액티브 트랜잭션을 표시하는 <span class="uitext">에이전트 액티브 트랜잭션</span> 위젯 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">트랜잭션 맵</span> 메뉴의 <span class="uitext">Top 30</span> 섹션에서 IP 필터 항목으로 원하는 IP 주소를 추가 및 삭제, 필터링할 수 있는 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the features to adjust the agent list spacing, add the search feature, and sort by name in order.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Agent Active Transaction</span> widget to display active transactions for each agent.</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">Top 30</span> section of <span class="uitext">Dashboard</span> &gt; <span class="uitext">Transaction Map</span>, added the features to add, delete, and filter for IP addresses in IP Filter.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Server</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 탭에서 수신자 태그 설정 기능 추가</li>
+<li><code class="Feature">Feature</code> Added recipient tag setting function in the <span class="uitext">Log File / Window Event</span> tab of the <span class="uitext">Event configuration</span> menu.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Pod 초기화 성능</span> 메뉴 개편 및 메뉴 이름을 <span class="uitext">Pod 시작 분석</span>으로 변경</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 목록 메뉴로 이동하는 링크 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 선택한 카테고리의 Pod Phase 정보 및 Phase 안내 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴의 애플리케이션 상세 정보에서 <span class="uitext">호출 정보</span> 탭 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">컨테이너 맵</span> 메뉴의 <span class="uitext">상세 보기</span>에서 대상(컨테이너/파드) 목록 중에 선택한 것만 볼 수 있는 <span class="uitext">선택된 것만 보기</span> 옵션 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">통합 컨테이너 맵</span> 메뉴에서 <span class="uitext">그룹화</span> 옵션 항목으로 <span class="uitext">WhatapProject</span> 추가: 와탭 프로젝트별 그룹화 기능</li>
-<li><code class="Feature">Feature</code> 쿠버네티스 클러스터 프로젝트의 <span class="uitext">클러스터</span> &gt; <span class="uitext">노드 목록</span> 메뉴에서 노드 정보 컬럼 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 이미지</span> 메뉴의 화면 위에 이미지의 총 개수 표시</li>
-<li><code class="Feature">Feature</code> Pod 카테고리에 <span class="uitext">1분 내 생성된 컨테이너 표시하기</span> 옵션 추가</li>
+<li><code class="Feature">Feature</code> Reorganized the <span class="uitext">Analysis</span> &gt; <span class="uitext">POD initialization performance</span> menu and changed the menu name to <span class="uitext">Pod Startup Analysis</span>.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the link to the list menu.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the guide for the Pod phase and phases of the selected category.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Workload</span> &gt; <span class="uitext">Container Application List</span>, added the <span class="uitext">Call infomation</span> tab in the application details.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Container Map</span> 메뉴의 <span class="uitext">View Detailed</span>, added the <span class="uitext">View only selected</span> option that can display only the items selected from the target (container/Pod) list.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Integrated Container Map</span>, added <span class="uitext">WhatapProject</span> as the <span class="uitext">Group by</span> option: grouping by project is possible.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">Node List</span> for the Kubernetes cluster project, added the node information column.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Workload</span> &gt; <span class="uitext">Container Images</span>, displayed the total number of images.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Show containers created in less than 1 minute</span> option in the Pod category.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">Flex 보드</span> 메뉴에서 액티브 세션 테이블 필터 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">세션 상세 정보</span> 창에 실시간/정지 조회 및 새로고침 버튼 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 다중 필터 선택 기능 추가</li>
+<li>In <code class="Feature">Feature</code> <span class="uitext">Dashboard</span> &gt; <span class="uitext">Flex board</span>, added the active session table filter.</li>
+<li><code class="Feature">Feature</code> Added the real-time/suspension inquiry and the refresh button to the <span class="uitext">Session detail</span> window.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">SQL Statistics</span>, added the selection feature for multiple filters.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL, MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴의 기능 개편</li>
-<li><code class="Feature">Feature</code> <span class="uitext">Default(xos)</span>, <span class="uitext">Default(rds)</span> 프리셋 추가</li>
-<li><code class="Feature">Feature</code> 대시보드의 <span class="uitext">SQL Elapse Map</span> 및 <span class="uitext">Slow Query</span> 위젯에서 변경한 Y축 값을 저장하는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span>, reorganized the functions.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Default(xos)</span>, <span class="uitext">Default(rds)</span> preset.</li>
+<li><code class="Feature">Feature</code> Added the function to save the Y-axis values changed in the <span class="uitext">SQL Elapse Map</span> and <span class="uitext">Slow Query</span> widgets on the dashboard.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴의 디자인 개선 및 설치 안내 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">PG SQL 통계</span> 메뉴에서 다중 필터 선택 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, improved its design and added the installation guide.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">PG SQL Statistics</span>, added the selection feature for multiple filters.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">MYSQL SQL 통계</span> 메뉴에서 다중 필터 선택 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">MYSQL SQL Statistics</span>, added the selection feature for multiple filters.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
 <code class="changelog-overview2">MongoDB</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">데이터베이스 사이즈</span> 메뉴의 UI 변경</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">DB size</span>, reorganized the UI design.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024년 03월 27일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.3.0​</a></code>
+<code class="changelog-date">2024-03-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_3_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> 다음 메뉴 경로에 사용자 세션 분석 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the user session analyzing feature in the following menu paths:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 03월 20일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.9​</a></code>
+<code class="changelog-date">2024-03-20</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.9​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">테이블 뷰</span>에서 <b>DB Connection</b>, <b>SQL</b> 스텝을 클릭하면 활성화되는 모달에 <span class="uitext">SERIAL</span> 필드 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Table view</span> on the <span class="uitext">Trace analysis</span> window, added the <span class="uitext">SERIAL</span> field in the modal that is activated by clicking the <b>DB Connection</b> and <b>SQL</b> steps.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 02월 29일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.4​</a></code>
+<code class="changelog-date">2024-02-29</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.4​</a></code>
 <ul>
-<li><code class="New">New</code> Go 모니터링 상품의 Beta 서비스를 종료하고 정식 서비스를 시작합니다.</li>
+<li><code class="New">New</code> The Beta service of the Go monitoring product is ended and the official service release is now started.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="New">New</code> 사이드 메뉴 개편</li>
-<li><code class="New">New</code> SSO 계정 연동 기능 추가</li>
-<li><code class="New">New</code> 메트릭스의 필드(Field) 중심의 사용자 경험을 강화한 <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 기능 추가</li>
+<li><code class="New">New</code> Reorganized the side menus.</li>
+<li><code class="New">New</code> Added the SSO account linking option.</li>
+<li><code class="New">New</code> Added the <span class="uitext">Event configuration</span> <code class="newfunc">New</code> function that has strengthened user experience based on the metric field.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">신규 기능 출시</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
 <code class="changelog-overview2">Kubernetes</code>
 <ul>
-<li><code class="New">New</code> 마스터 및 노드 에이전트 설치 현황 확인할 수 있는 <span class="uitext">쿠버네티스 에이전트 목록</span> 메뉴 추가</li>
-<li><code class="New">New</code> kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있는 <span class="uitext">kube-apiserver 대시보드</span> 메뉴 추가</li>
+<li><code class="New">New</code> Added the <span class="uitext">Kubernetes Agent List</span> menu to check the installation status of master and node agents.</li>
+<li><code class="New">New</code> Added the <span class="uitext">kube-apiserver Dashboard</span> menu to monitor the availability and performance of the cluster by collecting health and performance metrics for kube-apiserver and tracing the response times, throughput, request failures, and such.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">Flex 보드 / 대시보드</code>
+<code class="changelog-overview2">Flex board / Dashboard</code>
 <ul>
-<li><code class="Feature">Feature</code> 그룹 위젯 복사 기능 추가</li>
-<li><code class="Feature">Feature</code> 대시보드의 Apdex * 100 위젯에 <span class="uitext">복수 프로젝트 병합</span> 메트릭스 항목 추가</li>
-<li><code class="Feature">Feature</code> 위젯에 해당 제품의 대시보드로 이동 가능한 버튼 추가</li>
+<li><code class="Feature">Feature</code> Added the group widget copying feature.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Merge multiple projects</span> metric in the Apdex*100 widget on the dashboard.</li>
+<li><code class="Feature">Feature</code> Added a widget button to go to the product's dashboard.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">경고 알림</code>
+<code class="changelog-overview2">Alert</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 메트릭스 이벤트를 추가 또는 편집 시 <span class="uitext">카테고리</span> 항목의 제품 로고에 적용된 다크 테마 시인성 개선</li>
+<li><code class="Feature">Feature</code> When adding or modifying the metrics events in <span class="uitext">Alert</span> &gt; <span class="uitext">Event configuration</span>, improved the visibility of the dark theme applied to the product logo for <span class="uitext">Category</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">트랜잭션 맵</span> 메뉴에 새로운 UI 적용 및 기능 개편</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Transaction map</span>, applied a new UI with features reorganized.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Server</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> AIX 운영체제에 대한 에이전트 설치 패키지 및 안내 제공</li>
+<li><code class="Feature">Feature</code> Provided the agent installation package and instructions for the AIX operating system.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> XOS2 지표 대체 관련 안내 사항 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> &gt; <span class="uitext">데이터베이스</span> 탭에서 에이전트 이벤트 원복 알림(<span class="uitext">이벤트 상태가 해결되면 추가 알림</span>) 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 목록</span> 메뉴에서 데이터베이스 서버의 IP 주소를 표기하는 <span class="uitext">DB IP</span> 컬럼 추가</li>
+<li><code class="Feature">Feature</code> Added a guidance for replacement of the XOS2 metric.</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">Alert</span> &gt; <span class="uitext">Event configuration</span> &gt; <span class="uitext">Database</span> tab, the agent restoration notification function (<span class="uitext">Notify when event status is resolved.</span>) has been added.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent list</span>, added the <span class="uitext">DB IP</span> column that displays the IP address of the database server.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
 <code class="changelog-overview2">Database V2</code>
 <ul>
-<li><code class="Feature">Feature</code> 다음 메뉴 경로에서 <span class="uitext">락 트리</span> 테이블의 컬럼을 클릭하면 세션 상세 창을 표시하는 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the function to display the session details when a column is clicked in the <span class="uitext">Lock tree</span> table in the following paths:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">데이터베이스 파라미터</span> 메뉴에서 <span class="uitext">Value</span> 컬럼 표기 시 일부 값에 단위 표기 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Database parameter</span>, added unit notation to some values when displaying the <span class="uitext">Value</span> column.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
 <code class="changelog-overview2">MySQL V2</code>
 <ul>
-<li><code class="Feature">Feature</code> JSON 형식으로 Plan 조회 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">데이터베이스 사이즈</span> 메뉴의 <span class="uitext">테이블 사이즈 (TOP 50)</span> 테이블에서 <span class="uitext">TABLENAME</span> 컬럼 항목을 클릭하면 <b>column</b>, <b>index</b> 구성을 확인할 수 있는 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the plan search function in JSON format.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">Database size</span>, added the function to check the <b>column</b> and <b>index</b> lists when the <span class="uitext">TABLENAME</span> column is clicked in the <span class="uitext">Table size (TOP 50)</span> table.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 레플리케이션 컨트롤러(ReplicationController) 그룹화 옵션 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the ReplicationController grouping option.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> 페이지 로드 히트맵 데이터에 네트워크 상태 관련 지표 추가: <span class="uitext">유효 연결 유형</span>, <span class="uitext">RTT</span>, <span class="uitext">유효 대역폭</span></li>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">페이지 로드 히트맵</span> 메뉴의 <span class="uitext">페이지 로드</span> <span class="uitext">상세</span> 창에서 리소스 데이터에 지표 추가: <span class="uitext">상태 코드</span>, <span class="uitext">Delivery Type</span></li>
-<li><code class="Feature">Feature</code> AJAX 히트맵 데이터에 네트워크 상태 관련 지표 추가: <span class="uitext">유효 연결 유형</span>, <span class="uitext">RTT</span>, <span class="uitext">유효 대역폭</span>, <span class="uitext">Delivery Type</span></li>
+<li><code class="Feature">Feature</code> Added the network status metrics in the page load hitmap data: <span class="uitext">Valid connection type</span>, <span class="uitext">RTT</span>, and <span class="uitext">Valid bandwidth</span>.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Page Load Hitmap</span>, added metrics in the resource data of the <span class="uitext">Page load</span> <span class="uitext">Detail</span> window: <span class="uitext">Status code</span>, <span class="uitext">Delivery Type</span>,</li>
+<li><code class="Feature">Feature</code> Added the network status metrics for the AJAX hitmap data: <span class="uitext">Valid connection type</span>, <span class="uitext">RTT</span>, <span class="uitext">Valid bandwidth</span>, and <span class="uitext">Delivery Type</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Network</code>
-<code class="changelog-date">2024년 02월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.2.0​</a></code>
+<code class="changelog-date">2024-02-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_2_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> 에이전트 설치 시 AWS의 리소스를 식별하기 위한 옵션 추가</li>
+<li><code class="Feature">Feature</code> Added the option to identify AWS resources when installing the agent.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Network</code>
-<code class="changelog-date">2024년 02월 01일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.1.7​</a></code>
+<code class="changelog-date">2024-02-01</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.7​</a></code>
 <ul>
-<li><code class="New">New</code> <b>네트워크 성능 모니터링</b>(<b>Network Performance Monitoring</b>) 서비스를 오픈합니다. <b>네트워크 성능 모니터링</b>은 네트워크 간의 혼잡 및 장애를 파악하고 사용자의 네트워크 성능 개선에 활용하기 위하여 프로세스의 네트워크 통신 정보를 수집하여 가시화하는 모니터링 솔루션입니다.</li>
+<li><code class="New">New</code> The <b>Network Performance Monitoring</b> service is released. The <b>Network Performance Monitoring (NPM)</b> collects and visualize the network communication data for processes to identify any congestions and failures between networks and uses them to improve the network performance.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 01월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.1.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-01-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 다음 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event history</span>, added the following features:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 01월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.1.0​</a></code>
+<code class="changelog-date">2024-01-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
 <br>
 <code class="changelog-overview2">DB V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">락 트리</span> 메뉴에서 다음 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Lock tree</span>, added the following features:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 01월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.1.0​</a></code>
+<code class="changelog-date">2024-01-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">리소스</span> &gt; <span class="uitext">오브젝트 매니페스트</span> 메뉴에서 과거 오브젝트 매니페스트를 조회/비교할 수 있도록 개선(Kubernetes 에이전트 v1.5.0 이상 지원)</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Resource</span> &gt; <span class="uitext">Object Manifest</span>, improved to search and compare the object manifests (supports Kubernetes agent v1.5.0 or later).</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Log</code>
-<code class="changelog-date">2024년 01월 24일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.1.0​</a></code>
+<code class="changelog-date">2024-01-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_1_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">로그 트렌드</span> 메뉴에서 <span class="uitext">필터</span> 목록에 없는 값을 직접 입력해 선택 가능</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Log Trend</span>, you can select values that are not in the <span class="uitext">Filter</span> list by directly entering them.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">AWS Log</code>
-<code class="changelog-date">2024년 01월 19일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.6​</a></code>
+<code class="changelog-date">2024-01-19</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.6​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">WhaTap Forwarder 설치</span> 탭에서 2번 <span class="uitext">AWS Region</span> 목록에 Virginia(us-east-1) 항목 추가</li>
+<li><code class="Feature">Feature</code> In the <span class="uitext">Install WhaTap Forwarder</span> tab, added Virginia(us-east-1) in the <span class="uitext">AWS Region</span> list as in Step 2.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
-<code class="changelog-overview2">대시보드</code>
+<code class="changelog-overview2">Dashboard</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">Flex 보드</span> 메뉴에서 보조 차트의 소수 자릿수 길이 조정 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Flex board</span>, added the function to adjust the length of decimal places in auxiliary charts.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
-<code class="changelog-overview2">이용내역</code>
+<code class="changelog-overview2">My usage</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">청구서 미리보기</span> 메뉴에서 사용량 수치를 클릭하면 사용량 상세 정보를 표시하는 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the function to display the usage details when any usage value is clicked in <span class="uitext">Invoice Preview History</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">애플리케이션 대시보드</span> 메뉴의 각 위젯에 툴팁 및 관련 정보, 다국어 지원 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">트랜잭션 맵</span> 메뉴 개편</li>
+<li><code class="Feature">Feature</code> Added the tooltips and related information and multilingual support to each widget in <span class="uitext">Application dashboard</span>.</li>
+<li><code class="Feature">Feature</code> Reorganized the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Transaction map</span> menu.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext"></span> &gt; <span class="uitext">에이전트 업데이트</span> 메뉴 새로운 UI 적용 및 기능 개편</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">SQL statistics</span>, added the query preview when hovering the mouse over the query.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">#VALUE!</span> &gt; <span class="uitext">Agent update</span>, a new UI has been applied and features are reorganized.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL / MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> 프로젝트에서 <code class="my">V2</code>를 지원하지 않는 에이전트 버전이 설치되어 있으면 에이전트 업데이트 안내 문구를 헤더에 표시하는 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the function to display the agent update guidance message in the header when the agent has been installed but it does not support the <code class="my">V2</code>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
 <code class="changelog-overview2">PosgreSQL V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Wait 분석</span> 메뉴에서 에이전트 설정 방법 안내 모달 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Wait 분석</span> 메뉴에서 기능 소개 모달 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">PG SQL 통계</span> 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가</li>
-<li><code class="Feature">Feature</code> 다음 메뉴 경로에서 <b>column</b>, <b>index</b> 구성을 확인할 수 있는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Wait analysis</span>, added the guidance modal for the agent configuration.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Wait analysis</span>, added the function guidance modal.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">PG SQL statistics</span>, added the query preview when hovering the mouse over the query.</li>
+<li><code class="Feature">Feature</code> Added the function to check the configuration for <b>column</b> and <b>index</b> in the following menu paths:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
 <code class="changelog-overview2">MySQL V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">MYSQL SQL 통계</span> 메뉴에서 쿼리(query)에 마우스 오버 시 쿼리 미리보기 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">MYSQL SQL STATISTICS</span>, added the function to display the preview when hovering the mouse over the query.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
-<code class="changelog-overview2">리소스</code>
+<code class="changelog-overview2">Resource</code>
 <ul>
-<li><code class="Feature">Feature</code> 다음 메뉴에서 화면 상단의 상태 아이콘을 선택하면, 선택한 상태의 리소스만 필터링되는 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">리소스</span> 메뉴 하위로 다음의 메뉴 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">컨테이너 목록</span> 메뉴에서 <span class="uitext">Node</span> 컬럼 항목을 선택하면 해당 노드 목록이 필터링된 <span class="uitext">노드 목록</span> 메뉴로 이동하는 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">클러스터 요약</span> 메뉴에 <b>Service</b>, <b>Ingress</b>, <b>Job</b>, <b>CronJob</b> 오브젝트 목록 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">노드 목록</span> 메뉴에 지표 추가 - <b>beta.kubernetes.io/instance-type</b></li>
-<li><code class="Feature">Feature</code> <span class="uitext">컨테이너 이미지</span> 메뉴에 지표 추가 - <b>Total Container CPU</b>, <b>Total Container Memory</b></li>
+<li><code class="Feature">Feature</code> Added the function to filter only the selected resources when the status icon is selected at the top of the screen in the following menus:</li>
+<li><code class="Feature">Feature</code> Added the following menus under the <span class="uitext">Resource</span> menu.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Container list</span>, added the function to move to the <span class="uitext">Node list</span> menu that filters the nodes when the <span class="uitext">Node</span> column is selected.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Cluster Summary</span>, added the lists for <b>Service</b>, <b>Ingress</b>, <b>Job</b>, and <b>CronJob</b> objects.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Node list</span>, added the metric, - <b>beta.kubernetes.io/instance-type</b>.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Container Images</span>, added the metrics, - <b>Total Container CPU</b> and <b>Total Container Memory</b>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
-<code class="changelog-overview2">로그</code>
+<code class="changelog-overview2">Log</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">WhaTap 이벤트</span>: <code>#WhatapEvent</code> 카테고리의 로그 데이터 조회 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">쿠버네티스 이벤트</span>: 프로젝트 단위로 쿠버네티스 이벤트에 대한 조회와 검색 기능 추가</li>
+<li><code class="Feature">Feature</code> Added the log data search function in the <span class="uitext">WhaTap Event</span>: <code>#WhatapEvent</code> category.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Kubernetes Event</span> menu to search Kubernetes events as a project basis.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
 <code class="changelog-overview2">etc</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">관리</span> 메뉴 하위로 <span class="uitext">연계 프로젝트 관리</span> 메뉴 추가: 연계 프로젝트 등록, 조회, 삭제 기능</li>
-<li><code class="Feature">Feature</code> 연계 등록된 프로젝트가 있을 경우 <span class="uitext">트레이스 분석</span> &gt; <span class="uitext">테이블 뷰</span>에서 SQL 대상 서버 정보 및 HTTPURLConnection 정보에 대해 <span class="uitext">연계 분석</span> 뷰 제공</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Correlated Project Management</span> menu under <span class="uitext">Management</span>: Registration, view, and deletion of the linked projects.</li>
+<li><code class="Feature">Feature</code> If there is any linked project, provided the <span class="uitext">Correlation analysis</span> view for the SQL target server and HTTPURLConnection information in <span class="uitext">Trace analysis</span> &gt; <span class="uitext">Table view</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Log</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">로그 검색기</span>, <span class="uitext">라이브 테일</span> 메뉴에서 로그 검색 필터 기능 개편</li>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 실시간 로그 이벤트를 추가 또는 수정하면서 API 요청을 실패할 경우, 실패 원인을 메시지로 노출하도록 개선</li>
-<li><code class="Feature">Feature</code> 에이전트 옵션이 설정된 경우 로그 레벨을 표시하는 색상 표시 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Log search</span> <span class="uitext">Live Tail</span>, reorganized the log search filtering function.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event configuration</span>, enhanced to display the failure reason in a message when the API request has failed while adding or modifying a real-time log event.</li>
+<li><code class="Feature">Feature</code> Added the function to display colors for log labels when the agent options have been set.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024년 01월 10일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 2.0.0​</a></code>
+<code class="changelog-date">2024-01-10</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_0_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> 다음 메뉴에서 사용자 ID를 기준으로 검색할 수 있도록 필터 항목 추가</li>
+<li><code class="Feature">Feature</code> Added a filter to search based on the user ID in the following menus:</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2023년 12월 18일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.10​</a></code>
+<code class="changelog-date">2023-12-18</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.10​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴에서 프리셋 저장 시 에이전트 선택 상태까지 저장할 수 있는 옵션 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Application dashboard</span>, added the option to also save the agent selection when saving the presets.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Application</code>
-<code class="changelog-date">2023년 12월 01일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.4​</a></code>
+<code class="changelog-date">2023-12-01</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.4​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">트랜잭션 검색</span> 메뉴에서 <span class="uitext">멀티 트랜잭션 ID</span> 필터를 선택한 상태에서 <span class="uitext">트랜잭션 ID</span> 필터를 제외한 다른 필터를 적용할 수 없다는 안내 메시지 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Transaction Search</span>, added the guidance message that the filters except <span class="uitext">Transaction ID</span> cannot be applied while the <span class="uitext">Multi transaction ID</span> filter is selected.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Applicatoin</code>
-<code class="changelog-date">2023년 11월 28일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.3​</a></code>
+<code class="changelog-date">2023-11-28</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.3​</a></code>
 <br>
-<code class="changelog-overview2">대시보드</code>
+<code class="changelog-overview2">Dashboard</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">트레이스 분석</span> 창의 테이블에서 <span class="uitext">에러 클래스</span> 컬럼 추가</li>
+<li><code class="Feature">Feature</code> In the table of the <span class="uitext">Trace analysis</span> window, added the <span class="uitext">Error class</span> column.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">Flex 보드</code>
+<code class="changelog-overview2">Flex board</code>
 <ul>
-<li><code class="Feature">Feature</code> 시리즈 타입의 위젯에 보조 테이블을 설정한 경우 테이블의 컬럼 노출을 변경할 수 있는 UI 추가</li>
-<li><code class="Feature">Feature</code> Apdex 위젯에서 선택할 수 있는 차트 종류 추가</li>
+<li><code class="Feature">Feature</code> Added a UI to change exposure of table columns when an auxiliary table is set to the series type widget.</li>
+<li><code class="Feature">Feature</code> Added the chart types that can be selected by the Apdex widget.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">정비 계획</code>
+<code class="changelog-overview2">Maintenance plan</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">정비 계획</span> 메뉴의 기능 개선</li>
+<li><code class="Feature">Feature</code> Improved the <span class="uitext">Management</span> &gt; <span class="uitext">Maintenance plan</span> menu.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">경고 알림</code>
+<code class="changelog-overview2">Alert</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 제목 외에도 메시지 필드에 대한 검색 기능 지원</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event history</span>, supported to search the message field other than the title.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">이용내역</code>
+<code class="changelog-overview2">My usage</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">청구서 미리보기</span> 메뉴에서 사용량 가리기 옵션 추가 및 금액 표시 개선</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Invoice Preview History</span>, added the option to hide the usage and improved the price display function.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Server</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">경고 알림</code>
+<code class="changelog-overview2">Alert</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴에서 서버/프로세스 이벤트에 <span class="uitext">이벤트 수신 태그</span> 옵션 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Event configuration</span>, added the <span class="uitext">Event reception tag</span> option in the server/process event.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 막대 그래프를 클릭하면 5분 동안의 상세 통계 정보 창을 표시하는 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span>, <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 <span class="uitext">액티브 세션</span> 테이블 접는(folding) 버튼 추가, 이제 그래프 차트 영역을 더 넓은 화면에서 확인할 수 있습니다.</li>
-<li><code class="Feature">Feature</code> 사용자 편의성을 위한 <span class="uitext">SQL 상세</span> 화면의 UI 개선</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">SQL statistics</span>, added the function to display the detailed statistical data for 5 minutes when the bar graph is clicked.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Instance monitoring</span> and <span class="uitext">Multiple instance monitoring</span>, added the button to fold the <span class="uitext">Active sessions</span> button. Now the graph chart can be viewed in a wider screen.</li>
+<li><code class="Feature">Feature</code> Enhanced the UI of the <span class="uitext">SQL details</span> screen for user convenience.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
 <code class="changelog-overview2">PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> Plan 조회를 json 형식으로 조회할 수 있는 기능 추가</li>
-<li><code class="Feature">Feature</code> <code class="my">V2</code> <span class="uitext">분석</span> &gt; <span class="uitext">Top 오브젝트</span>, 신규 메뉴 추가</li>
-<li><code class="Feature">Feature</code> <code class="my">V2</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 메트릭스/복합 메트릭스 이벤트의 템플릿 추가</li>
+<li><code class="Feature">Feature</code> Added the function to view the plan information in json format.</li>
+<li><code class="Feature">Feature</code> Added a new menu, <code class="my">V2</code> <span class="uitext">Analysis</span> &gt; <span class="uitext">Top Object</span>.</li>
+<li><code class="Feature">Feature</code> In <code class="my">V2</code> <span class="uitext">Alert</span> &gt; <span class="uitext">Event configuration</span>, added the template for the metrics/composite metrics events.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">대시보드</code>
+<code class="changelog-overview2">Dashboard</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">컨테이너 맵</span> 메뉴에서 1분간 사라진 컨테이너/Pod의 블록을 표시하는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Container Map</span>, added the function to display the container/Pod blocks disappeared for one minute.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">리소스</code>
+<code class="changelog-overview2">Resource</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">클러스터 요약</span> 메뉴 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">노드 상세</span> 메뉴에서 <span class="uitext">컨테이너</span> 테이블에 <span class="uitext">상태</span> 컬럼 추가</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Cluster Summary</span> menu.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Node details</span>, added the <span class="uitext">State</span> column in the <span class="uitext">Container</span> table.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <br>
-<code class="changelog-overview2">기타</code>
+<code class="changelog-overview2">ETC</code>
 <ul>
-<li><code class="Feature">Feature</code> 네임스페이스 프로젝트의 실험실 메뉴로 <span class="uitext">Pending Pods</span> 추가</li>
+<li><code class="Feature">Feature</code> Added <span class="uitext">Pending Pods</span> as the lab menu of the namespace project.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Log</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">로그 설정</span> 메뉴에서 <span class="uitext">로그 1차 파서 설정</span>, <span class="uitext">로그 2차 파서 설정</span>의 내용을 JSON으로 내보내거나 가져오는 기능 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">로그 설정</span> 메뉴에서 <span class="uitext">빠른 인덱스</span>의 설정 내용을 JSON으로 내보내거나 가져오는 기능 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Log setting</span>, added the function to export or import <span class="uitext">Log primary parser setting</span> and <span class="uitext">Log secondary parser setting</span> in JSON format.</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Log setting</span>, added the function to export or import the <span class="uitext">Fast index</span> settings in JSON format.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Browser</code>
-<code class="changelog-date">2023년 11월 22일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.114.0​</a></code>
+<code class="changelog-date">2023-11-22</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_114_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">AJAX 히트맵</span> 메뉴 및 위젯, <span class="uitext">AJAX</span> <span class="uitext">분석</span> 기능에서 사용자 편의성을 위한 UI 개선</li>
+<li><code class="Feature">Feature</code> Enhanced the UI designs in the <span class="uitext">AJAX Hitmap</span> menu and widget, and the <span class="uitext">AJAX</span> <span class="uitext">Analysis</span> function.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">URL</code>
-<code class="changelog-date">2023년 11월 01일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.3​</a></code>
+<code class="changelog-date">2023-11-01</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.3​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> URL 추가, 편집 시 <span class="uitext">수집 주기</span>를 선택할 수 있는 UI 추가</li>
+<li><code class="Feature">Feature</code> Added the URL and UI where <span class="uitext">Collection cycle</span> can be selected during edition.</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2023년 10월 25일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.0​</a></code>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2023-10-25</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <br>
 <code class="changelog-overview2">User Interface</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">상품 카탈로그</span> 페이지에서 더 나은 사용자 경험을 위한 디자인 개편</li>
-<li><code class="Feature">Feature</code> 사이드 바 너비 조정 기능 추가</li>
+<li><code class="Feature">Feature</code> On the <span class="uitext">Product catalog</span> page, the design has been reorganized for a better user experience.</li>
+<li><code class="Feature">Feature</code> Added the sidebar width adjustment function.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Database</code>
-<code class="changelog-date">2023년 10월 25일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.0​</a></code>
+<code class="changelog-date">2023-10-25</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <br>
-<code class="changelog-overview2">공통</code>
+<code class="changelog-overview2">Common</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 비실시간 모드 상태가 되면 해당 시간의 <span class="uitext">SQL 통계</span> 메뉴로 이동할 수 있는 버튼 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Instance monitoring</span>, added the button to switch to the <span class="uitext">SQL statistics</span> menu of the corresponding time in non-real-time mode.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023년 10월 25일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.0​</a></code>
+<code class="changelog-date">2023-10-25</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">컨테이너 맵</span> 메뉴에서 블록 색상 표시 지표에 애플리케이션 관련 필드도 선택할 수 있도록 추가</li>
+<li><code class="Feature">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Container Map</span>, added the function for users to select application-related fields for the block color display metric.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Cloud</code>
-<code class="changelog-date">2023년 10월 25일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.0​</a></code>
+<code class="changelog-date">2023-10-25</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">사이트맵</span> &gt; <span class="uitext">사용자 행위</span> 메뉴 추가</li>
+<li><code class="Feature">Feature</code> Added a menu: <span class="uitext">Sitemap</span> &gt; <span class="uitext">User Behavior</span></li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Log</code>
-<code class="changelog-date">2023년 10월 25일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.0​</a></code>
+<code class="changelog-date">2023-10-25</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">로그</span> &gt; <span class="uitext">로그 설정</span> &gt; <span class="uitext">로그 1차 파서 설정</span> 탭에서 파서를 추가할 경우, <span class="uitext">로그 검출 조건</span>의 검색 값 입력 시 예약어에 대한 유효성 검증 추가</li>
+<li><code class="Feature">Feature</code> In case of adding the parser in <span class="uitext">Log</span> &gt; <span class="uitext">Log setting</span> &gt; <span class="uitext">Log primary parser setting</span> tab, added validation for reserved words when entering the search value for <span class="uitext">Log detection condition</span>.</li>
 </ul>
 </li>
 <li>
 <code class="changelog-overview">Browser</code>
-<code class="changelog-date">2023년 10월 25일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image">  Service 1.112.0​</a></code>
+<code class="changelog-date">2023-10-25</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">사이트맵</span> &gt; <span class="uitext">사용자 행위</span> 메뉴 추가</li>
-<li><code class="Feature">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">AJAX 히트맵</span> 메뉴 추가</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Sitemap</span> &gt; <span class="uitext">User Behavior</span> menu.</li>
+<li><code class="Feature">Feature</code> Added the <span class="uitext">Analysis</span> &gt; <span class="uitext">AJAX Hitmap</span> menu.</li>
 </ul>
 </li>
 </ul></div></li></div>]]></content:encoded>
             <author>ysjo@whatap.io (TW J)</author>
-            <category>새로운 기능</category>
-            <category>서비스 개요</category>
+            <category>New Feature</category>
+            <category>New Feature Timeline</category>
+            <category>Service Overview</category>
         </item>
         <item>
             <title><![CDATA[2분기 안내]]></title>
@@ -1075,7 +1067,8 @@
             <pubDate>Tue, 09 Jul 2024 09:30:00 GMT</pubDate>
             <description><![CDATA[와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/en/assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png" width="1109" height="657" class="img_ev3q"></p>
+<!-- -->
+<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <p>편의성 향상을 위해 공통 메뉴 개선이 이루어졌습니다.</p>
@@ -1699,7 +1692,7 @@
             <pubDate>Mon, 20 May 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/en/assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png" width="1109" height="657" class="img_ev3q"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <!-- -->
 <!-- -->
@@ -1741,11 +1734,11 @@
 <p>와탭 2024년 1분기 <code>공통</code> 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다.</p>
 <p>사용자 편의성 향상을 위해 5년 만에 와탭 모니터링의 <strong>사이드 메뉴</strong>가 새롭게 개편되었습니다. 와탭 서비스 이용에는 프로젝트 선택이 선행됩니다. 프로젝트 생성 및 선택 이후 동선을 편리하게 활용할 수 있도록 기존과 비교해 UI 혼잡도를 줄여 프로젝트 선택과 메뉴의 영역을 확보하는 구조로 개편되었습니다.</p>
 <p>프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/en/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img/release/release-main-ui-en.png" alt="사이드 메뉴 개편 cl" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/release/release-main-ui-en.png" alt="사이드 메뉴 개편 cl 분기 예시" width="auto" height="auto"></p>
 <p>또한 <strong>SSO 계정 연동 기능</strong>이 추가되었습니다. 클라우드 기반 사용자 계정 관리 및 접근 권한 관리 솔루션 <strong>Okta</strong>와 와탭 모니터링을 연동할 수 있습니다. 조직 내에서 사용 중인 <strong>Okta</strong> 계정을 이용해 와탭 서비스에 로그인 후 서비스를 이용할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img/sso-check-sso-info-en.png" alt="sso-info cl" width="800" height="393"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/sso-check-sso-info-en.png" alt="sso-info cl 분기 예시" width="800" height="393"></p>
 <p>새로운 <span class="uitext">Event Configuration</span> <code class="newfunc">New</code> 기능은 필드(Field) 중심의 사용자 경험을 강화하여 카테고리보다 필드를 먼저 선택하는 방식으로 사용자가 인지하는 지표와 이벤트 설정의 불일치를 해소했습니다. 또한 상품에 적합한 기본 이벤트 템플릿을 제공해 보다 쉽게 경고 알림 이벤트를 설정할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="이벤트 v2 cl" src="https://docs.whatap.io/en/assets/images/changelog-common-event-v2-1dca8eba6848781ab8443580555a0057.png" width="800" height="513" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="이벤트 v2 cl 분기 예시" src="https://docs.whatap.io/en/assets/images/changelog-common-event-v2-1dca8eba6848781ab8443580555a0057.png" width="800" height="513" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 1분기 공통 부분의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q">
 <ul>
@@ -2004,7 +1997,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 옵션 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0490-2024년-02월-05일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_90">Node.js Agent v0.4.90</a></code> <code class="changelog-date">2024년 02월 05일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#nodejs-agent-v0490-2024%EB%85%84-02%EC%9B%94-05%EF%BF%BD%EC%9D%BC" class="hash-link" aria-label="Direct link to nodejs-agent-v0490-2024년-02월-05일" title="Direct link to nodejs-agent-v0490-2024년-02월-05일">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0490-2024년-02월-05일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_90">Node.js Agent v0.4.90</a></code> <code class="changelog-date">2024년 02월 05일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#nodejs-agent-v0490-2024%EB%85%84-02%EC%9B%94-05%EC%9D%BC" class="hash-link" aria-label="Direct link to nodejs-agent-v0490-2024년-02월-05일" title="Direct link to nodejs-agent-v0490-2024년-02월-05일">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설정 옵션 추가</li>
 </ul>
@@ -2214,7 +2207,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#database" class="hash-link" aria-label="Direct link to database" title="Direct link to database">​</a></h2>
 <p>와탭 2024년 1분기 <code>Database</code> 상품군의 주목할 만한 신규 기능 및 변경 사항으로 <strong>Redis</strong>와 <strong>MongoDB</strong> 상품 <code class="my">V2</code> 출시에 대해 소개합니다.</p>
 <p>와탭 <code>Database</code> 상품군이  <code class="my">V2</code>로 전환되고 있습니다. 기존 <strong>PostgreSQL</strong>과 <strong>MySQL</strong>에 뒤이어 이번 1분기에는 <strong>Redis</strong>와 <strong>MongoDB</strong> <code class="my">V2</code> 서비스가 시작되었습니다. <code class="my">V2</code>는 전반적으로 차트 및 수집 기능이 강화되었습니다.</p>
-<p><img decoding="async" loading="lazy" alt="데이터베이스 sc cl" src="https://docs.whatap.io/en/assets/images/changelog-db-9736874a75406ed11ee29e0f828baa55.png" width="772" height="484" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="데이터베이스 sc cl " src="https://docs.whatap.io/en/assets/images/changelog-db-9736874a75406ed11ee29e0f828baa55.png" width="772" height="484" class="img_ev3q"></p>
 <p><span class="uitext">Dashboard</span> 메뉴의 UI 및 기능을 개선하였으며, 해당 메뉴에서 데이터베이스의 성능 지표 정보를 바로 확인할 수 있습니다. 또한 <span class="uitext">Monitoring Multiple Instances</span> 메뉴에서 클러스터별 에이전트를 선택할 수 있습니다. 그리고 데이터베이스 로그를 검색하고 추이를 확인하고 로그 관련 알림을 받을 수 있는 <span class="uitext">Log</span> 메뉴를 제공합니다.</p>
 <p><code class="my">V2</code> 전환과 동시에 기존 XOS와 XOS2로 나누어져 있던 지표를 %로 확인할 수 있는 백분률 표기로 변경하고 <strong>XOS</strong>로 통합해 제공합니다.</p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Database</code> 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
@@ -2406,7 +2399,7 @@
 <p>와탭 2024년 1분기 <code>Browser</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <span class="uitext">User session analysis</span> 기능 및 <em><strong>사용자 정의 이벤트 수집 기능</strong></em>을 소개합니다.</p>
 <p>이번 1분기에 새롭게 제공하는 <span class="uitext">User session analysis</span> 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다.</p>
 <p><span class="uitext">User Session Log Search</span>, <span class="uitext">AJAX Hitmap</span>과 <span class="uitext">Page Load Hitmap</span>을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 <em><strong>AJAX 히트맵</strong></em>과 <span class="uitext">Page Load Hitmap</span>에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img/browser-search-user-session-log-analysis-en.png" alt="사용자 세션 분석" class="changelog-img" width="1200" height="776"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/browser-search-user-session-log-analysis-en.png" alt="사용자 세션 분석 분기 예시" class="changelog-img" width="1200" height="776"></p>
 <p><em><strong>사용자 정의 이벤트 수집</strong></em> 기능은 브라우저 모니터링이 제공하는 기본 정보 외 사용자가 원하는 이벤트를 추가적으로 수집할 수 있는 인터페이스를 제공합니다. 브라우저 에이전트에서 제공하는 인터페이스 중 <code>addCustomEvent</code> 메소드를 이용해 사용자 정의형 이벤트를 수집 후 <span class="uitext">User Session Log Search</span> 메뉴 또는 <span class="uitext">Flex Board</span>를 통해 수집한 데이터를 조회할 수 있습니다.</p>
 <!-- -->
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Browser</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
@@ -2458,7 +2451,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#network" class="hash-link" aria-label="Direct link to network" title="Direct link to network">​</a></h2>
 <p>와탭 2024년 1분기에 네트워크 간의 혼잡 및 장애를 파악하고 사용자의 네트워크 성능 개선을 위해 프로세스의 네트워크 정보를 수집하는 <strong>네트워크 성능 모니터링</strong>(<strong>Network Performance Monitoring</strong>) 상품이 정식으로 출시되었습니다.</p>
-<p><img decoding="async" loading="lazy" alt="네트워크 모니터링 sc cl" src="https://docs.whatap.io/en/assets/images/changelog-network-03e52d28329611577b24b6bab5268f43.png" width="972" height="984" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="네트워크 모니터링 sc cl " src="https://docs.whatap.io/en/assets/images/changelog-network-03e52d28329611577b24b6bab5268f43.png" width="972" height="984" class="img_ev3q"></p>
 <p>최근 네트워크 시장은 클라우드와 가상화라는 큰 틀에서 성장하고 있습니다. 기존 장비 중심의 네트워크 모니터링 뿐만 아니라 작업을 수행하는 프로세스가 중요한 모니터링 대상이 되고 있습니다. 와탭 네트워크 성능 모니터링을 통해 프로세스 단위의 네트워크 지표를 안정적으로 모니터링해 보세요.</p>
 <p>와탭의 <code>Network</code> 상품은 각 프로세스가 수행하는 네트워크 동작을 추적해 복잡한 구성 요소와 상태 정보를 토폴로지를 통해 직관적으로 이해할 수 있도록 시각화했습니다. <strong>품질 지표</strong> <em><strong>Latency</strong></em>와 <em><strong>Jitter</strong></em>, 그리고 <strong>네트워크 사용량 지표</strong> <em><strong>bps</strong></em>, <em><strong>pps</strong></em>, <em><strong>session count</strong></em>를 조회할 수 있습니다. 또한 태그 옵션으로 가시성을 확보하였으며, <span class="uitext">Flex Board</span>를 통해 다양한 사용자 커스텀 차트를 제공합니다.</p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Network</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
@@ -2487,7 +2480,7 @@
 <p>와탭 2024년 1분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 개편된 <strong>로그 검색 필터 기능</strong>을 소개합니다.</p>
 <p><span class="uitext">Log Search</span> 및 <span class="uitext">Live Tail</span> 메뉴 내 <strong>로그 검색 필터 기능</strong>이 개편되었습니다. 검색 값 입력 시 안내 가이드 UI를 통해 지원하는 검색 문법을 확인할 수 있고, 키보드 입력으로 태그를 생성 및 수정하고 연산자를 클릭해 수정할 수 있는 기능이 추가되었습니다.</p>
 <p>또한 에이전트 옵션이 설정된 경우 로그 레벨(<span class="logwr">WARN</span>, <span class="loger">ERROR</span>, <span class="logft">FATAL</span>)을 수집해 로그 목록 왼쪽에서 해당 기준 색상을 표시하는 기능이 추가되었습니다.</p>
-<p><img decoding="async" loading="lazy" alt="로그 에이전트 옵션 cl" src="https://docs.whatap.io/en/assets/images/log-agent-option-level-2ef1693a2ebe164852014ef80fb11d66.png" width="1200" height="224" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="로그 에이전트 옵션 cl분기 예시 " src="https://docs.whatap.io/en/assets/images/log-agent-option-level-2ef1693a2ebe164852014ef80fb11d66.png" width="1200" height="224" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Log</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -2512,13 +2505,32 @@
             <category>2024</category>
         </item>
         <item>
+            <title><![CDATA[새로운 기능이란?]]></title>
+            <link>https://docs.whatap.io/en/blog/index</link>
+            <guid>https://docs.whatap.io/en/blog/index</guid>
+            <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
+            <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
+            <content:encoded><![CDATA[
+<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
+<p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
+<!-- -->
+<!-- -->
+<p><img decoding="async" loading="lazy" alt="새로운 기능 콘텐츠 예시 sc cl" src="https://docs.whatap.io/en/assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png" width="801" height="826" class="img_ev3q"></p>
+<p>해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Changed">Changed</code>) 및 에이전트(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Deprecated">Deprecated</code>) 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code>) 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p>
+]]></content:encoded>
+            <author>docs@whatp.io (TW Team)</author>
+            <category>새로운 기능</category>
+            <category>콘텐츠 구성</category>
+        </item>
+        <item>
             <title><![CDATA[4분기 안내]]></title>
             <link>https://docs.whatap.io/en/blog/2023-4q-summary</link>
             <guid>https://docs.whatap.io/en/blog/2023-4q-summary</guid>
-            <pubDate>Mon, 20 May 2024 15:20:00 GMT</pubDate>
+            <pubDate>Sun, 31 Dec 2023 15:20:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/en/assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png" width="1109" height="657" class="img_ev3q"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <ul>
@@ -2734,7 +2746,7 @@
 <p>와탭 2023년 4분기 <code>Kubernetes</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <span class="uitext">Container Map</span> 개선 및 추가된 <span class="uitext">Resource</span> 하위 목록 메뉴에 대해 소개합니다.</p>
 <!-- -->
 <p>와탭 쿠버네티스 모니터링의 <span class="uitext">Container Map</span>은 지속적으로 고도화 작업이 이루어지고 있습니다. 이번 4분기에는 상세 보기 창에서 컨테이너 상 실행 중인 애플리케이션의 호출 흐름과 외부 호출 상태를 확인할 수 있는 <span class="uitext">Call infomation</span> 탭이 새로 추가되었습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img/k8s-container-map-call-info-app-en.png" alt="App 호출 흐름도" width="1435" height="754"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/k8s-container-map-call-info-app-en.png" alt="App 호출 흐름도 분기 예시" width="1435" height="754"></p>
 <p>또한 컨테이너와 Pod 뷰 모두 블록 색상 표시 지표에 애플리케이션 관련 필드 목록(<code>app_counter</code>)을 선택할 수 있습니다. 그리고 1분간 사라진 컨테이너 및 Pod의 블록을 표시하는 기능이 추가되었습니다.</p>
 <p>뿐만 아니라 <span class="uitext">Resource</span> 하위의 목록 메뉴가 개편 및 새로 추가되었습니다. <span class="uitext">Node List</span> 메뉴는 노드 정보 지표, 필터 검색 기능이 추가되었습니다. 또한 시간 갱신 간격이 1분에서 10초로 변경되었습니다. 클러스터와 관련된 버전 정보 및 각종 오브젝트 정보를 한 눈에 확인할 수 있는 <span class="uitext">Cluster Summary</span> 메뉴가 새로 추가되었습니다.</p>
 <p>새롭게 네임스페이스 프로젝트의 <span class="uitext">Laboratory</span>에 <span class="uitext">Pending Pods</span> 메뉴가 추가되었습니다. <span class="uitext">Pending Pods</span> 메뉴는 Pending 상태에 놓인 Pod를 빠르게 파악하기 위한 실험 기능입니다.</p>
@@ -2867,7 +2879,7 @@
 <ul>
 <li><code class="Changed">Changed</code> <b>MS SQL Server</b> 상품의 이름을 <b>SQL Server</b>로 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx">DBX<a href="https://docs.whatap.io/en/blog/2023-4q-summary#dbx" class="hash-link" aria-label="Direct link to DBX" title="Direct link to DBX">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1611-2023년-10월-4일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_11">DBX v1.6.11</a></code> <code class="changelog-date">2023년 10월 4일</code><a href="https://docs.whatap.io/en/blog/2023-4q-summary#dbx-v1611-2023%EB%85%84-10%EC%9B%94-4%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1611-2023년-10월-4일" title="Direct link to dbx-v1611-2023년-10월-4일">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx">DBX<a href="https://docs.whatap.io/en/blog/2023-4q-summary#dbx" class="hash-link" aria-label="Direct link to DBX" title="Direct link to DBX">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1611-2023��년-10월-4일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_11">DBX v1.6.11</a></code> <code class="changelog-date">2023년 10월 4일</code><a href="https://docs.whatap.io/en/blog/2023-4q-summary#dbx-v1611-2023%EB%85%84-10%EC%9B%94-4%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1611-2023년-10월-4일" title="Direct link to dbx-v1611-2023년-10월-4일">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="oracle">Oracle​<a href="https://docs.whatap.io/en/blog/2023-4q-summary#oracle" class="hash-link" aria-label="Direct link to Oracle​" title="Direct link to Oracle​">​</a></h5>
 <ul>
 <li><code class="New">New</code> 각종 ratio 지표 추가, 다음과 같이 옵션을 설정하세요.</li>
@@ -2961,7 +2973,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/en/blog/2023-4q-summary#log" class="hash-link" aria-label="Direct link to log" title="Direct link to log">​</a></h2>
 <p>와탭 2023년 4분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항을 다음과 같이 소개합니다.</p>
 <p><span class="uitext">Log Search</span> 메뉴에서 로그 검색 필터 문법을 안내하는 <strong>가이드 UI</strong>가 추가되었습니다. 가이드 UI를 통해 검색 값 입력 시 지원하는 검색 문법을 확인할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img/log-filter-ui1-en.png" alt="로그 필터 cl" width="1160" height="758"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/log-filter-ui1-en.png" alt="로그 필터 cl 분기 예시" width="1160" height="758"></p>
 <p>그리고 타임스탬프와 로그만을 확인할 수 있도록 전체 화면 전환 기능이 추가되었으며, 로그 1차 파서 설정 탭에서 파서 추가 시 로그 검출 조건의 검색 값 입력 후 예약어에 대한 유효성 검증이 추가되었습니다.</p>
 <p>다음 개요 안내를 통해 2023년 4분기 <code>Log</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
@@ -2990,10 +3002,10 @@
             <title><![CDATA[3분기 안내]]></title>
             <link>https://docs.whatap.io/en/blog/2023-3q-summary</link>
             <guid>https://docs.whatap.io/en/blog/2023-3q-summary</guid>
-            <pubDate>Mon, 20 May 2024 15:10:00 GMT</pubDate>
+            <pubDate>Tue, 31 Oct 2023 15:10:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/en/assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png" width="1109" height="657" class="img_ev3q"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
@@ -3365,7 +3377,7 @@
 <p>와탭 2023년 3분기 <code>Browser</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <em><strong>페이지로드 히트맵</strong></em> 메뉴 개선 및 <span class="uitext">Browser Error</span> 에러 상세 추가에 대해 소개합니다.</p>
 <p><em><strong>페이지로드 히트맵</strong></em> 메뉴의 경우 상세 페이지로드 데이터에 운영체제 버전 및 클라이언트 IP 정보가 추가되었고 필터 기능을 새롭게 제공합니다.</p>
 <p>이제 <span class="uitext">Browser Error</span> 메뉴의 <em><strong>에러 메시지 테이블</strong></em> 목록에서 에러 메시지를 선택 시 에러 메시지를 기준으로 에러와 관련한 자세한 통계 정보를 확인할 수 있습니다. 뿐만 아니라 시간대별로 발생한 에러 로그 역시 살펴볼 수 있습니다.</p>
-<img loading="lazy" src="https://docs.whatap.io/en/img/browser-error-details-log.png" alt="Error log" width="1200" height="638">
+<img loading="lazy" src="https://docs.whatap.io/en/img/browser-error-details-log.png" alt="Error log 분기 예시" width="1200" height="638">
 <p>다음 개요 안내를 통해 2023년 3분기 <code>Browser</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="대시보드">대시보드​<a href="https://docs.whatap.io/en/blog/2023-3q-summary#%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Direct link to 대시보드​" title="Direct link to 대시보드​">​</a></h4>
 <ul>
@@ -3457,25 +3469,6 @@
             <author>ysjo@whatap.io (TW J)</author>
             <category>새로운 기능</category>
             <category>2023</category>
-        </item>
-        <item>
-            <title><![CDATA[새로운 기능이란?]]></title>
-            <link>https://docs.whatap.io/en/blog/index</link>
-            <guid>https://docs.whatap.io/en/blog/index</guid>
-            <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
-            <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
-            <content:encoded><![CDATA[
-<p><img decoding="async" loading="lazy" alt="새로운 기능 sc" src="https://docs.whatap.io/en/assets/images/changelog-new3-b522024004e71ab89171557049b1e59a.png" width="1109" height="657" class="img_ev3q"></p>
-<p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
-<!-- -->
-<!-- -->
-<p><img decoding="async" loading="lazy" alt="새로운 기능 콘텐츠 예시 sc cl" src="https://docs.whatap.io/en/assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png" width="801" height="826" class="img_ev3q"></p>
-<p>해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Changed">Changed</code>) 및 에이전트(<code class="New">New</code>, <code class="Feature">Feature</code>, <code class="Deprecated">Deprecated</code>) 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code>) 클릭 시 해당 버전의 릴리스 노트로 이동합니다.</p>
-]]></content:encoded>
-            <author>docs@whatp.io (TW 팀)</author>
-            <category>새로운 기능</category>
-            <category>콘텐츠 구성</category>
         </item>
     </channel>
 </rss>
