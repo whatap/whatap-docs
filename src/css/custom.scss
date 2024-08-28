@@ -1214,7 +1214,7 @@ main {
     section h4 {
         font-size: var(--ifm-h4-font-size);
     }
-    section h4 code {
+    div.indentTab section h4 code, section h4 code {
       font-size: 1.3rem;
     }
     section h5 {
