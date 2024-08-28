@@ -56254,7 +56254,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間バッチ初期化",
+    "ja": "時間一括初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -57037,10 +57037,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {

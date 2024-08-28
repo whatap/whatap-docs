@@ -4377,7 +4377,7 @@
   },
   "container-map-detail-mode.png": {
     "width": 1200,
-    "height": 779
+    "height": 568
   },
   "container-map-status-color.png": {
     "width": 600,
@@ -5251,37 +5251,17 @@
     "width": 400,
     "height": 403
   },
-  "db-dashboard-widget-add-altibase-en.png": {
+  "db-dashboard-widget-add-en.png": {
     "width": 600,
     "height": 459
   },
-  "db-dashboard-widget-add-altibase-ja.png": {
+  "db-dashboard-widget-add-ja.png": {
     "width": 600,
     "height": 459
   },
-  "db-dashboard-widget-add-altibase.png": {
+  "db-dashboard-widget-add.png": {
     "width": 600,
     "height": 456
-  },
-  "db-dashboard-widget-add-mongodb.png": {
-    "width": 600,
-    "height": 472
-  },
-  "db-dashboard-widget-add-mysql.png": {
-    "width": 600,
-    "height": 541
-  },
-  "db-dashboard-widget-add-oracle-pro.png": {
-    "width": 600,
-    "height": 414
-  },
-  "db-dashboard-widget-add-postgresql.png": {
-    "width": 600,
-    "height": 522
-  },
-  "db-dashboard-widget-add-redis.png": {
-    "width": 600,
-    "height": 447
   },
   "db-dashboard-widget-move.png": {
     "width": 1200,
@@ -9319,6 +9299,18 @@
     "width": 1134,
     "height": 963
   },
+  "k8s-container-map-sum-select-en.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-container-map-sum-select-ja.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "k8s-container-map-sum-select.png": {
+    "width": 1200,
+    "height": 666
+  },
   "k8s-container-map-thresholds.png": {
     "width": 870,
     "height": 576
@@ -11689,15 +11681,15 @@
   },
   "metrics-chart-new-chart-options-filter-en.png": {
     "width": 900,
-    "height": 916
+    "height": 904
   },
   "metrics-chart-new-chart-options-filter-ja.png": {
     "width": 900,
-    "height": 895
+    "height": 907
   },
   "metrics-chart-new-chart-options-filter.png": {
     "width": 900,
-    "height": 918
+    "height": 904
   },
   "metrics-chart-new-chart-overlay-en.png": {
     "width": 1200,
@@ -11797,7 +11789,7 @@
   },
   "metrics-chart-new-k8s-select-metrics-en.png": {
     "width": 1200,
-    "height": 450
+    "height": 445
   },
   "metrics-chart-new-k8s-select-metrics-ja.png": {
     "width": 1200,
@@ -11805,7 +11797,7 @@
   },
   "metrics-chart-new-k8s-select-metrics.png": {
     "width": 1200,
-    "height": 429
+    "height": 417
   },
   "metrics-chart-new-main-apm-en.png": {
     "width": 1200,
@@ -11869,11 +11861,11 @@
   },
   "metrics-chart-new-select-agent-en.png": {
     "width": 400,
-    "height": 573
+    "height": 531
   },
   "metrics-chart-new-select-agent-ja.png": {
     "width": 400,
-    "height": 560
+    "height": 529
   },
   "metrics-chart-new-select-agent.png": {
     "width": 400,
@@ -11881,11 +11873,11 @@
   },
   "metrics-chart-new-select-interval-en.png": {
     "width": 400,
-    "height": 238
+    "height": 274
   },
   "metrics-chart-new-select-interval-ja.png": {
     "width": 400,
-    "height": 241
+    "height": 269
   },
   "metrics-chart-new-select-interval.png": {
     "width": 400,
@@ -11893,15 +11885,15 @@
   },
   "metrics-chart-new-select-metrics-en.png": {
     "width": 1200,
-    "height": 463
+    "height": 457
   },
   "metrics-chart-new-select-metrics-ja.png": {
     "width": 1200,
     "height": 450
   },
   "metrics-chart-new-select-metrics.png": {
-    "width": 1200,
-    "height": 464
+    "width": 1201,
+    "height": 441
   },
   "metrics-chart-new-set-custom-time-en.png": {
     "width": 600,
