@@ -28,7 +28,7 @@ export default function Cover() {
             Monitoring: Management
         </h1>
         <p className={styles.date}>
-            release date. 2024.08.05
+            release date. 2024.09.02
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
