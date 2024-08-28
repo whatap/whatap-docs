@@ -56254,7 +56254,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間バッチ初期化",
+    "ja": "時間一括初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
