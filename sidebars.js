@@ -748,6 +748,11 @@ const sidebars = {
               ],
             },
             'nodejs/instance-performance-analysis',
+            {
+              type: 'doc',
+              label: 'Log 모니터링',
+              id: 'log/introduction'
+            },
             'nodejs/labs'
           ],
         }
@@ -6405,6 +6410,7 @@ const sidebars = {
           items: [
             'log/log-java',
             'log/log-php',
+            'log/log-nodejs',
             'log/log-python',
             'log/log-go',
             'log/log-server',
