@@ -163,6 +163,18 @@
     "width": 800,
     "height": 172
   },
+  "set-event-3rd-party-plugin-add-pagerduty-options-en.png": {
+    "width": 800,
+    "height": 161
+  },
+  "set-event-3rd-party-plugin-add-pagerduty-options-ja.png": {
+    "width": 800,
+    "height": 156
+  },
+  "set-event-3rd-party-plugin-add-pagerduty-options.png": {
+    "width": 800,
+    "height": 157
+  },
   "set-event-3rd-party-plugin-add-slack-en.png": {
     "width": 800,
     "height": 791
@@ -226,6 +238,90 @@
   "set-event-3rd-party-plugin-add-webhook.png": {
     "width": 600,
     "height": 136
+  },
+  "teams_workflows_step_01-en.png": {
+    "width": 640,
+    "height": 618
+  },
+  "teams_workflows_step_01-ja.png": {
+    "width": 600,
+    "height": 559
+  },
+  "teams_workflows_step_01.png": {
+    "width": 640,
+    "height": 618
+  },
+  "teams_workflows_step_02-en.png": {
+    "width": 1200,
+    "height": 612
+  },
+  "teams_workflows_step_02-ja.png": {
+    "width": 1200,
+    "height": 539
+  },
+  "teams_workflows_step_02.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_03-en.png": {
+    "width": 640,
+    "height": 627
+  },
+  "teams_workflows_step_03-ja.png": {
+    "width": 600,
+    "height": 528
+  },
+  "teams_workflows_step_03.png": {
+    "width": 640,
+    "height": 627
+  },
+  "teams_workflows_step_04-en.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_04-ja.png": {
+    "width": 1200,
+    "height": 571
+  },
+  "teams_workflows_step_04.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_05-en.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_05-ja.png": {
+    "width": 1200,
+    "height": 516
+  },
+  "teams_workflows_step_05.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_06-en.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_06-ja.png": {
+    "width": 3700,
+    "height": 2704
+  },
+  "teams_workflows_step_06.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_07-en.png": {
+    "width": 1200,
+    "height": 613
+  },
+  "teams_workflows_step_07-ja.png": {
+    "width": 1200,
+    "height": 530
+  },
+  "teams_workflows_step_07.png": {
+    "width": 1200,
+    "height": 613
   },
   "account-mfa-disable-en.png": {
     "width": 800,
@@ -3409,23 +3505,23 @@
   },
   "browser-error-dashboard-en.png": {
     "width": 1200,
-    "height": 539
+    "height": 724
   },
   "browser-error-dashboard-ja.png": {
     "width": 1200,
-    "height": 539
+    "height": 725
   },
   "browser-error-dashboard.png": {
     "width": 1200,
-    "height": 539
+    "height": 723
   },
   "browser-error-details-en.png": {
     "width": 1200,
-    "height": 459
+    "height": 646
   },
   "browser-error-details-ja.png": {
     "width": 1200,
-    "height": 459
+    "height": 646
   },
   "browser-error-details-log-en.png": {
     "width": 1200,
@@ -3441,7 +3537,7 @@
   },
   "browser-error-details.png": {
     "width": 1200,
-    "height": 459
+    "height": 646
   },
   "browser-error-info-en.png": {
     "width": 1200,
@@ -3505,15 +3601,15 @@
   },
   "browser-error-table-en.png": {
     "width": 1200,
-    "height": 137
+    "height": 278
   },
   "browser-error-table-ja.png": {
     "width": 1200,
-    "height": 137
+    "height": 277
   },
   "browser-error-table.png": {
     "width": 1200,
-    "height": 137
+    "height": 277
   },
   "browser-event-history-en.png": {
     "width": 1200,
@@ -4475,6 +4571,42 @@
     "width": 1200,
     "height": 1090
   },
+  "db-add-custom-widget-en.png": {
+    "width": 600,
+    "height": 406
+  },
+  "db-add-custom-widget-ja.png": {
+    "width": 600,
+    "height": 404
+  },
+  "db-add-custom-widget-setting-change-en.png": {
+    "width": 800,
+    "height": 515
+  },
+  "db-add-custom-widget-setting-change-ja.png": {
+    "width": 800,
+    "height": 515
+  },
+  "db-add-custom-widget-setting-change.png": {
+    "width": 800,
+    "height": 515
+  },
+  "db-add-custom-widget-setting-en.png": {
+    "width": 800,
+    "height": 867
+  },
+  "db-add-custom-widget-setting-ja.png": {
+    "width": 800,
+    "height": 868
+  },
+  "db-add-custom-widget-setting.png": {
+    "width": 800,
+    "height": 867
+  },
+  "db-add-custom-widget.png": {
+    "width": 600,
+    "height": 407
+  },
   "db-agent-select-by-cluster-en.png": {
     "width": 200,
     "height": 171
@@ -4611,6 +4743,18 @@
     "width": 1200,
     "height": 714
   },
+  "db-bottom-table-filter-altibase-en.png": {
+    "width": 600,
+    "height": 221
+  },
+  "db-bottom-table-filter-altibase-ja.png": {
+    "width": 600,
+    "height": 222
+  },
+  "db-bottom-table-filter-altibase.png": {
+    "width": 600,
+    "height": 225
+  },
   "db-bottom-table-filter-mongodb-en.png": {
     "width": 600,
     "height": 246
@@ -4699,6 +4843,18 @@
     "width": 600,
     "height": 211
   },
+  "db-compare-count-trend-activesession-altibase-en.png": {
+    "width": 1200,
+    "height": 329
+  },
+  "db-compare-count-trend-activesession-altibase-ja.png": {
+    "width": 1200,
+    "height": 331
+  },
+  "db-compare-count-trend-activesession-altibase.png": {
+    "width": 1200,
+    "height": 330
+  },
   "db-compare-count-trend-activesession-mongodb-en.png": {
     "width": 1200,
     "height": 326
@@ -4762,6 +4918,18 @@
   "db-compare-count-trend-activesession.png": {
     "width": 1200,
     "height": 326
+  },
+  "db-compare-count-trend-altibase-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-compare-count-trend-altibase-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-compare-count-trend-altibase.png": {
+    "width": 1200,
+    "height": 1055
   },
   "db-compare-count-trend-cubrid-en.png": {
     "width": 1200,
@@ -4847,6 +5015,10 @@
     "width": 1200,
     "height": 1055
   },
+  "db-compare-count-trend-tootip-altibase.png": {
+    "width": 800,
+    "height": 226
+  },
   "db-compare-count-trend-tootip-en.png": {
     "width": 800,
     "height": 206
@@ -4926,6 +5098,10 @@
   "db-count-trend-cubrid.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-count-trend-extend-time-altibase.png": {
+    "width": 1200,
+    "height": 344
   },
   "db-count-trend-extend-time-en.png": {
     "width": 1200,
@@ -5043,6 +5219,18 @@
     "width": 400,
     "height": 115
   },
+  "db-dashboard-preset-save-en.png": {
+    "width": 600,
+    "height": 203
+  },
+  "db-dashboard-preset-save-ja.png": {
+    "width": 600,
+    "height": 196
+  },
+  "db-dashboard-preset-save.png": {
+    "width": 600,
+    "height": 230
+  },
   "db-dashboard-preset.png": {
     "width": 400,
     "height": 119
@@ -5063,25 +5251,17 @@
     "width": 400,
     "height": 403
   },
-  "db-dashboard-widget-add-mongodb.png": {
+  "db-dashboard-widget-add-en.png": {
     "width": 600,
-    "height": 472
+    "height": 459
   },
-  "db-dashboard-widget-add-mysql.png": {
+  "db-dashboard-widget-add-ja.png": {
     "width": 600,
-    "height": 541
+    "height": 459
   },
-  "db-dashboard-widget-add-oracle-pro.png": {
+  "db-dashboard-widget-add.png": {
     "width": 600,
-    "height": 414
-  },
-  "db-dashboard-widget-add-postgresql.png": {
-    "width": 600,
-    "height": 522
-  },
-  "db-dashboard-widget-add-redis.png": {
-    "width": 600,
-    "height": 447
+    "height": 456
   },
   "db-dashboard-widget-move.png": {
     "width": 1200,
@@ -5222,6 +5402,18 @@
   "db-database-size-top50-postgresql.png": {
     "width": 1200,
     "height": 1030
+  },
+  "db-database-sql-stat-altibase-en.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "db-database-sql-stat-altibase-ja.png": {
+    "width": 1200,
+    "height": 384
+  },
+  "db-database-sql-stat-altibase.png": {
+    "width": 1200,
+    "height": 384
   },
   "db-database-sql-stat-cubrid-en.png": {
     "width": 1200,
@@ -5469,15 +5661,15 @@
   },
   "db-databaseparameter-compare-today-altibase-en.png": {
     "width": 1200,
-    "height": 318
+    "height": 268
   },
   "db-databaseparameter-compare-today-altibase-ja.png": {
     "width": 1200,
-    "height": 318
+    "height": 267
   },
   "db-databaseparameter-compare-today-altibase.png": {
     "width": 1200,
-    "height": 318
+    "height": 268
   },
   "db-databaseparameter-compare-today-mssql-en.png": {
     "width": 1200,
@@ -5707,6 +5899,18 @@
     "width": 1280,
     "height": 343
   },
+  "db-instance-list-altibase-en.png": {
+    "width": 1200,
+    "height": 237
+  },
+  "db-instance-list-altibase-ja.png": {
+    "width": 1200,
+    "height": 240
+  },
+  "db-instance-list-altibase.png": {
+    "width": 1200,
+    "height": 237
+  },
   "db-instance-list-cubrid-en.png": {
     "width": 1200,
     "height": 288
@@ -5809,15 +6013,15 @@
   },
   "db-instance-monitoring-altibase-en.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1054
   },
   "db-instance-monitoring-altibase-ja.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1054
   },
   "db-instance-monitoring-altibase.png": {
     "width": 1200,
-    "height": 1058
+    "height": 1054
   },
   "db-instance-monitoring-cubrid-en.png": {
     "width": 1200,
@@ -5914,6 +6118,18 @@
   "db-instance-monitoring-redis.png": {
     "width": 1200,
     "height": 853
+  },
+  "db-instance-monitoring-seltime-altibase-en.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-instance-monitoring-seltime-altibase-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-instance-monitoring-seltime-altibase.png": {
+    "width": 1200,
+    "height": 1054
   },
   "db-instance-monitoring-seltime-mongodb-en.png": {
     "width": 1200,
@@ -6027,6 +6243,30 @@
     "width": 600,
     "height": 427
   },
+  "db-locktree-cluster-chart-en.png": {
+    "width": 1200,
+    "height": 551
+  },
+  "db-locktree-cluster-chart-ja.png": {
+    "width": 1200,
+    "height": 550
+  },
+  "db-locktree-cluster-chart.png": {
+    "width": 1200,
+    "height": 551
+  },
+  "db-locktress-basic-altibase-en.png": {
+    "width": 1200,
+    "height": 556
+  },
+  "db-locktress-basic-altibase-ja.png": {
+    "width": 1200,
+    "height": 556
+  },
+  "db-locktress-basic-altibase.png": {
+    "width": 1200,
+    "height": 556
+  },
   "db-locktress-basic-cubrid-en.png": {
     "width": 1200,
     "height": 648
@@ -6127,6 +6367,18 @@
     "width": 1227,
     "height": 579
   },
+  "db-metrics-select-altibase-en.png": {
+    "width": 1200,
+    "height": 1052
+  },
+  "db-metrics-select-altibase-ja.png": {
+    "width": 1200,
+    "height": 1052
+  },
+  "db-metrics-select-altibase.png": {
+    "width": 1200,
+    "height": 1052
+  },
   "db-metrics-select-mongodb-en.png": {
     "width": 1200,
     "height": 1055
@@ -6186,6 +6438,18 @@
   "db-metrics-select-redis.png": {
     "width": 1200,
     "height": 1055
+  },
+  "db-multi-instance-altibase-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-multi-instance-altibase-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-multi-instance-altibase.png": {
+    "width": 1200,
+    "height": 1056
   },
   "db-multi-instance-cubrid-en.png": {
     "width": 1200,
@@ -6541,15 +6805,15 @@
   },
   "db-sql-details-common-en.png": {
     "width": 1200,
-    "height": 472
+    "height": 561
   },
   "db-sql-details-common-ja.png": {
     "width": 1200,
-    "height": 476
+    "height": 561
   },
   "db-sql-details-common.png": {
     "width": 1200,
-    "height": 473
+    "height": 561
   },
   "db-sql-details-oracle-pro-en.png": {
     "width": 1200,
@@ -6719,6 +6983,18 @@
     "width": 1200,
     "height": 926
   },
+  "db-stat-table-space-check-trend-altibase-en.png": {
+    "width": 1200,
+    "height": 223
+  },
+  "db-stat-table-space-check-trend-altibase-ja.png": {
+    "width": 1200,
+    "height": 221
+  },
+  "db-stat-table-space-check-trend-altibase.png": {
+    "width": 1200,
+    "height": 222
+  },
   "db-stat-table-space-check-trend-oracle-pro-en.png": {
     "width": 1200,
     "height": 384
@@ -6743,6 +7019,30 @@
     "width": 1200,
     "height": 1058
   },
+  "db-stat-table-space-disk-altibase-en.png": {
+    "width": 1200,
+    "height": 610
+  },
+  "db-stat-table-space-disk-altibase-ja.png": {
+    "width": 1200,
+    "height": 611
+  },
+  "db-stat-table-space-disk-altibase.png": {
+    "width": 1200,
+    "height": 611
+  },
+  "db-stat-table-space-mem-altibase-en.png": {
+    "width": 1200,
+    "height": 536
+  },
+  "db-stat-table-space-mem-altibase-ja.png": {
+    "width": 1200,
+    "height": 538
+  },
+  "db-stat-table-space-mem-altibase.png": {
+    "width": 1200,
+    "height": 537
+  },
   "db-stat-table-space-oracle-en.png": {
     "width": 1200,
     "height": 1058
@@ -6766,6 +7066,18 @@
   "db-stat-table-space-oracle.png": {
     "width": 1200,
     "height": 1058
+  },
+  "db-stat-table-space-size-details-altibase-en.png": {
+    "width": 1200,
+    "height": 430
+  },
+  "db-stat-table-space-size-details-altibase-ja.png": {
+    "width": 1200,
+    "height": 432
+  },
+  "db-stat-table-space-size-details-altibase.png": {
+    "width": 1200,
+    "height": 431
   },
   "db-stat-table-space-size-details-oracle-pro-en.png": {
     "width": 1200,
@@ -7331,6 +7643,146 @@
     "width": 1201,
     "height": 545
   },
+  "fb-alert-list-widget.png": {
+    "width": 800,
+    "height": 449
+  },
+  "fb-apdex-widget.png": {
+    "width": 1200,
+    "height": 474
+  },
+  "fb-arc-equlizer-chart-widget.png": {
+    "width": 800,
+    "height": 457
+  },
+  "fb-bar-chart-horizon.png": {
+    "width": 600,
+    "height": 526
+  },
+  "fb-bar-chart-vertical.png": {
+    "width": 600,
+    "height": 526
+  },
+  "fb-bar-equlizer-chart-widget.png": {
+    "width": 800,
+    "height": 455
+  },
+  "fb-browser-pageload-timeline-widget.png": {
+    "width": 1200,
+    "height": 188
+  },
+  "fb-db-honey-chart-widget.png": {
+    "width": 800,
+    "height": 448
+  },
+  "fb-event-timeline-widget.png": {
+    "width": 800,
+    "height": 449
+  },
+  "fb-geomap-chart-widget.png": {
+    "width": 1200,
+    "height": 526
+  },
+  "fb-grid-chart-widget.png": {
+    "width": 800,
+    "height": 455
+  },
+  "fb-group-widget-apm.png": {
+    "width": 1200,
+    "height": 495
+  },
+  "fb-hitmap-widget-en.png": {
+    "width": 1200,
+    "height": 467
+  },
+  "fb-hitmap-widget-ja.png": {
+    "width": 1200,
+    "height": 468
+  },
+  "fb-hitmap-widget.png": {
+    "width": 1200,
+    "height": 469
+  },
+  "fb-honey-chart-widget.png": {
+    "width": 800,
+    "height": 449
+  },
+  "fb-maintenance-plan-widget.png": {
+    "width": 800,
+    "height": 358
+  },
+  "fb-pie-chart-widget.png": {
+    "width": 600,
+    "height": 450
+  },
+  "fb-project-overview-widget.png": {
+    "width": 800,
+    "height": 494
+  },
+  "fb-rich-text-widget.png": {
+    "width": 800,
+    "height": 178
+  },
+  "fb-scatter-plot-chart-widget.png": {
+    "width": 800,
+    "height": 448
+  },
+  "fb-speed-chart-widget.png": {
+    "width": 800,
+    "height": 446
+  },
+  "fb-status-widget.png": {
+    "width": 1200,
+    "height": 199
+  },
+  "fb-table-chart-widget.png": {
+    "width": 800,
+    "height": 447
+  },
+  "fb-text-widget.png": {
+    "width": 800,
+    "height": 246
+  },
+  "fb-time-series-topn-widget-setting-en.png": {
+    "width": 1200,
+    "height": 389
+  },
+  "fb-time-series-topn-widget-setting-ja.png": {
+    "width": 1200,
+    "height": 389
+  },
+  "fb-time-series-topn-widget-setting.png": {
+    "width": 1200,
+    "height": 389
+  },
+  "fb-time-series-topn-widget.png": {
+    "width": 1200,
+    "height": 475
+  },
+  "fb-time-series-widget-compare-time-en.png": {
+    "width": 1200,
+    "height": 473
+  },
+  "fb-time-series-widget-compare-time-ja.png": {
+    "width": 1200,
+    "height": 473
+  },
+  "fb-time-series-widget-compare-time.png": {
+    "width": 1200,
+    "height": 470
+  },
+  "fb-time-series-widget.png": {
+    "width": 1200,
+    "height": 455
+  },
+  "fb-treemap-chart-widget.png": {
+    "width": 800,
+    "height": 457
+  },
+  "fb-url-list-widget.png": {
+    "width": 800,
+    "height": 358
+  },
   "flex-board-mod-en.png": {
     "width": 1200,
     "height": 1034
@@ -7342,6 +7794,30 @@
   "flex-board-mod.png": {
     "width": 1200,
     "height": 1035
+  },
+  "flexboad-integrated-widget-template-en.png": {
+    "width": 417,
+    "height": 502
+  },
+  "flexboad-integrated-widget-template-ja.png": {
+    "width": 417,
+    "height": 521
+  },
+  "flexboad-integrated-widget-template.png": {
+    "width": 417,
+    "height": 501
+  },
+  "flexboad-project-widget-template-en.png": {
+    "width": 400,
+    "height": 501
+  },
+  "flexboad-project-widget-template-ja.png": {
+    "width": 400,
+    "height": 521
+  },
+  "flexboad-project-widget-template.png": {
+    "width": 400,
+    "height": 501
   },
   "flexboard-awsec2-metrics-en.png": {
     "width": 886,
@@ -7591,25 +8067,41 @@
     "width": 600,
     "height": 199
   },
+  "group-exclude-project-en.png": {
+    "width": 1200,
+    "height": 559
+  },
+  "group-exclude-project-ja.png": {
+    "width": 1200,
+    "height": 560
+  },
+  "group-exclude-project.png": {
+    "width": 1200,
+    "height": 560
+  },
   "group-member-by-project-en.png": {
     "width": 1200,
-    "height": 488
+    "height": 357
   },
   "group-member-by-project-ja.png": {
     "width": 1200,
-    "height": 500
+    "height": 384
   },
-  "group-memer-by-project-en.png": {
+  "group-member-by-project.png": {
     "width": 1200,
-    "height": 596
+    "height": 350
   },
-  "group-memer-by-project-ja.png": {
+  "group-remove-en.png": {
     "width": 1200,
-    "height": 594
+    "height": 271
   },
-  "group-memer-by-project.png": {
+  "group-remove-ja.png": {
     "width": 1200,
-    "height": 593
+    "height": 270
+  },
+  "group-remove.png": {
+    "width": 1200,
+    "height": 269
   },
   "group_topology_1-en.png": {
     "width": 1200,
@@ -7813,15 +8305,15 @@
   },
   "integrated-manage-member-en.png": {
     "width": 1200,
-    "height": 456
+    "height": 562
   },
   "integrated-manage-member-ja.png": {
     "width": 1200,
-    "height": 557
+    "height": 561
   },
   "integrated-manage-member.png": {
     "width": 1200,
-    "height": 449
+    "height": 562
   },
   "integration_report_01-en.png": {
     "width": 1200,
@@ -10593,27 +11085,27 @@
   },
   "manage-group-move-group-en.png": {
     "width": 1200,
-    "height": 500
+    "height": 513
   },
   "manage-group-move-group-ja.png": {
     "width": 1200,
-    "height": 500
+    "height": 512
   },
   "manage-group-move-group.png": {
     "width": 1200,
-    "height": 500
+    "height": 513
   },
   "manage-integrated-group-en.png": {
     "width": 1200,
-    "height": 500
+    "height": 513
   },
   "manage-integrated-group-ja.png": {
     "width": 1200,
-    "height": 500
+    "height": 512
   },
   "manage-integrated-group.png": {
     "width": 1200,
-    "height": 500
+    "height": 512
   },
   "management-userbehavior-en.png": {
     "width": 1200,
@@ -11078,6 +11570,366 @@
   "metrics-chart-item.png": {
     "width": 1200,
     "height": 991
+  },
+  "metrics-chart-new-change-time-en.png": {
+    "width": 800,
+    "height": 334
+  },
+  "metrics-chart-new-change-time-ja.png": {
+    "width": 800,
+    "height": 334
+  },
+  "metrics-chart-new-change-time.png": {
+    "width": 800,
+    "height": 341
+  },
+  "metrics-chart-new-chart-batch-change-en.png": {
+    "width": 800,
+    "height": 699
+  },
+  "metrics-chart-new-chart-batch-change-ja.png": {
+    "width": 800,
+    "height": 701
+  },
+  "metrics-chart-new-chart-batch-change.png": {
+    "width": 800,
+    "height": 699
+  },
+  "metrics-chart-new-chart-dashboard-layout-options-en.png": {
+    "width": 1000,
+    "height": 50
+  },
+  "metrics-chart-new-chart-dashboard-layout-options-ja.png": {
+    "width": 1125,
+    "height": 49
+  },
+  "metrics-chart-new-chart-dashboard-layout-options.png": {
+    "width": 800,
+    "height": 48
+  },
+  "metrics-chart-new-chart-dashboard-options-en.png": {
+    "width": 1000,
+    "height": 55
+  },
+  "metrics-chart-new-chart-dashboard-options-ja.png": {
+    "width": 1000,
+    "height": 51
+  },
+  "metrics-chart-new-chart-dashboard-options.png": {
+    "width": 800,
+    "height": 53
+  },
+  "metrics-chart-new-chart-details-en.png": {
+    "width": 600,
+    "height": 511
+  },
+  "metrics-chart-new-chart-details-ja.png": {
+    "width": 600,
+    "height": 493
+  },
+  "metrics-chart-new-chart-details.png": {
+    "width": 601,
+    "height": 501
+  },
+  "metrics-chart-new-chart-drag-time-en.png": {
+    "width": 1122,
+    "height": 469
+  },
+  "metrics-chart-new-chart-drag-time-ja.png": {
+    "width": 1200,
+    "height": 469
+  },
+  "metrics-chart-new-chart-drag-time.png": {
+    "width": 1122,
+    "height": 469
+  },
+  "metrics-chart-new-chart-options-details-drag-en.png": {
+    "width": 1200,
+    "height": 345
+  },
+  "metrics-chart-new-chart-options-details-drag-ja.png": {
+    "width": 1200,
+    "height": 345
+  },
+  "metrics-chart-new-chart-options-details-drag.png": {
+    "width": 1200,
+    "height": 345
+  },
+  "metrics-chart-new-chart-options-details-en.png": {
+    "width": 1200,
+    "height": 748
+  },
+  "metrics-chart-new-chart-options-details-ja.png": {
+    "width": 1200,
+    "height": 752
+  },
+  "metrics-chart-new-chart-options-details.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "metrics-chart-new-chart-options-filter-en.png": {
+    "width": 900,
+    "height": 904
+  },
+  "metrics-chart-new-chart-options-filter-ja.png": {
+    "width": 900,
+    "height": 907
+  },
+  "metrics-chart-new-chart-options-filter.png": {
+    "width": 900,
+    "height": 904
+  },
+  "metrics-chart-new-chart-overlay-en.png": {
+    "width": 1200,
+    "height": 612
+  },
+  "metrics-chart-new-chart-overlay-ja.png": {
+    "width": 1200,
+    "height": 592
+  },
+  "metrics-chart-new-chart-overlay.png": {
+    "width": 1200,
+    "height": 612
+  },
+  "metrics-chart-new-chart-reset-time-en.png": {
+    "width": 1200,
+    "height": 249
+  },
+  "metrics-chart-new-chart-reset-time-ja.png": {
+    "width": 1200,
+    "height": 244
+  },
+  "metrics-chart-new-chart-reset-time.png": {
+    "width": 1200,
+    "height": 256
+  },
+  "metrics-chart-new-db-chart-batch-change-en.png": {
+    "width": 800,
+    "height": 701
+  },
+  "metrics-chart-new-db-chart-batch-change-ja.png": {
+    "width": 800,
+    "height": 700
+  },
+  "metrics-chart-new-db-chart-batch-change.png": {
+    "width": 800,
+    "height": 700
+  },
+  "metrics-chart-new-db-select-interval-en.png": {
+    "width": 400,
+    "height": 239
+  },
+  "metrics-chart-new-db-select-interval-ja.png": {
+    "width": 400,
+    "height": 243
+  },
+  "metrics-chart-new-db-select-interval.png": {
+    "width": 400,
+    "height": 234
+  },
+  "metrics-chart-new-db-select-metrics-en.png": {
+    "width": 1200,
+    "height": 454
+  },
+  "metrics-chart-new-db-select-metrics-ja.png": {
+    "width": 1200,
+    "height": 455
+  },
+  "metrics-chart-new-db-select-metrics.png": {
+    "width": 1200,
+    "height": 418
+  },
+  "metrics-chart-new-interval-en.png": {
+    "width": 1200,
+    "height": 511
+  },
+  "metrics-chart-new-interval-ja.png": {
+    "width": 1200,
+    "height": 492
+  },
+  "metrics-chart-new-interval.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "metrics-chart-new-k8s-chart-batch-change-en.png": {
+    "width": 800,
+    "height": 698
+  },
+  "metrics-chart-new-k8s-chart-batch-change-ja.png": {
+    "width": 800,
+    "height": 700
+  },
+  "metrics-chart-new-k8s-chart-batch-change.png": {
+    "width": 800,
+    "height": 699
+  },
+  "metrics-chart-new-k8s-select-interval-en.png": {
+    "width": 400,
+    "height": 240
+  },
+  "metrics-chart-new-k8s-select-interval-ja.png": {
+    "width": 400,
+    "height": 237
+  },
+  "metrics-chart-new-k8s-select-interval.png": {
+    "width": 400,
+    "height": 238
+  },
+  "metrics-chart-new-k8s-select-metrics-en.png": {
+    "width": 1200,
+    "height": 445
+  },
+  "metrics-chart-new-k8s-select-metrics-ja.png": {
+    "width": 1200,
+    "height": 450
+  },
+  "metrics-chart-new-k8s-select-metrics.png": {
+    "width": 1200,
+    "height": 417
+  },
+  "metrics-chart-new-main-apm-en.png": {
+    "width": 1200,
+    "height": 1044
+  },
+  "metrics-chart-new-main-apm-ja.png": {
+    "width": 1200,
+    "height": 1040
+  },
+  "metrics-chart-new-main-apm.png": {
+    "width": 1200,
+    "height": 1039
+  },
+  "metrics-chart-new-main-db-en.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-main-db-ja.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-main-db.png": {
+    "width": 1200,
+    "height": 1009
+  },
+  "metrics-chart-new-main-k8s-en.png": {
+    "width": 1200,
+    "height": 1009
+  },
+  "metrics-chart-new-main-k8s-ja.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-main-k8s.png": {
+    "width": 1200,
+    "height": 1006
+  },
+  "metrics-chart-new-move-widget-en.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metrics-chart-new-move-widget-ja.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metrics-chart-new-move-widget.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metrics-chart-new-preset-save-en.png": {
+    "width": 600,
+    "height": 267
+  },
+  "metrics-chart-new-preset-save-ja.png": {
+    "width": 600,
+    "height": 315
+  },
+  "metrics-chart-new-preset-save.png": {
+    "width": 600,
+    "height": 282
+  },
+  "metrics-chart-new-select-agent-en.png": {
+    "width": 400,
+    "height": 531
+  },
+  "metrics-chart-new-select-agent-ja.png": {
+    "width": 400,
+    "height": 529
+  },
+  "metrics-chart-new-select-agent.png": {
+    "width": 400,
+    "height": 561
+  },
+  "metrics-chart-new-select-interval-en.png": {
+    "width": 400,
+    "height": 274
+  },
+  "metrics-chart-new-select-interval-ja.png": {
+    "width": 400,
+    "height": 269
+  },
+  "metrics-chart-new-select-interval.png": {
+    "width": 400,
+    "height": 270
+  },
+  "metrics-chart-new-select-metrics-en.png": {
+    "width": 1200,
+    "height": 457
+  },
+  "metrics-chart-new-select-metrics-ja.png": {
+    "width": 1200,
+    "height": 450
+  },
+  "metrics-chart-new-select-metrics.png": {
+    "width": 1201,
+    "height": 441
+  },
+  "metrics-chart-new-set-custom-time-en.png": {
+    "width": 600,
+    "height": 515
+  },
+  "metrics-chart-new-set-custom-time-ja.png": {
+    "width": 600,
+    "height": 537
+  },
+  "metrics-chart-new-set-custom-time.png": {
+    "width": 595,
+    "height": 534
+  },
+  "metrics-chart-new-set-time-en.png": {
+    "width": 600,
+    "height": 67
+  },
+  "metrics-chart-new-set-time-ja.png": {
+    "width": 600,
+    "height": 68
+  },
+  "metrics-chart-new-set-time-select-options-en.png": {
+    "width": 900,
+    "height": 399
+  },
+  "metrics-chart-new-set-time-select-options-ja.png": {
+    "width": 900,
+    "height": 327
+  },
+  "metrics-chart-new-set-time-select-options.png": {
+    "width": 900,
+    "height": 332
+  },
+  "metrics-chart-new-set-time.png": {
+    "width": 600,
+    "height": 71
+  },
+  "metrics-chart-new-size-widget-en.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "metrics-chart-new-size-widget-ja.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "metrics-chart-new-size-widget.png": {
+    "width": 1200,
+    "height": 515
   },
   "metrics-chart-server-en.png": {
     "width": 1227,
@@ -11641,15 +12493,15 @@
   },
   "move-project-from-group-en.png": {
     "width": 1200,
-    "height": 485
+    "height": 513
   },
   "move-project-from-group-ja.png": {
     "width": 1200,
-    "height": 483
+    "height": 513
   },
   "move-project-from-group.png": {
     "width": 1200,
-    "height": 484
+    "height": 512
   },
   "multi-tx-additional-info-en.png": {
     "width": 1200,
@@ -11831,6 +12683,10 @@
     "width": 1200,
     "height": 1018
   },
+  "new-feature-01-altibase.png": {
+    "width": 1200,
+    "height": 434
+  },
   "new-feature-01-mongodb-en.png": {
     "width": 1200,
     "height": 632
@@ -11882,6 +12738,10 @@
   "new-feature-01.png": {
     "width": 1200,
     "height": 423
+  },
+  "new-feature-02-altibase.png": {
+    "width": 2309,
+    "height": 1034
   },
   "new-feature-02-mongodb-en.png": {
     "width": 2309,
@@ -11942,6 +12802,10 @@
   "new-feature-02.png": {
     "width": 2236,
     "height": 757
+  },
+  "new-feature-03-altibase.png": {
+    "width": 1200,
+    "height": 438
   },
   "new-feature-03-mongodb-en.png": {
     "width": 1200,
@@ -12006,6 +12870,10 @@
   "new-feature-03.png": {
     "width": 1672,
     "height": 620
+  },
+  "new-feature-04-altibase.png": {
+    "width": 1200,
+    "height": 274
   },
   "new-feature-04-mysql-en.png": {
     "width": 1200,
@@ -12541,15 +13409,15 @@
   },
   "organization-member-en.png": {
     "width": 1200,
-    "height": 469
+    "height": 356
   },
   "organization-member-ja.png": {
     "width": 1200,
-    "height": 468
+    "height": 356
   },
   "organization-member.png": {
     "width": 1200,
-    "height": 473
+    "height": 364
   },
   "opentelemetry-overview.png": {
     "width": 1200,
@@ -12669,15 +13537,15 @@
   },
   "project-member-list-en.png": {
     "width": 1200,
-    "height": 328
+    "height": 467
   },
   "project-member-list-ja.png": {
     "width": 1200,
-    "height": 395
+    "height": 503
   },
   "project-member-list.png": {
     "width": 1200,
-    "height": 327
+    "height": 458
   },
   "project-organize-manage-en.png": {
     "width": 554,
@@ -12704,15 +13572,15 @@
     "height": 365
   },
   "project-select-group-en.png": {
-    "width": 600,
+    "width": 957,
     "height": 718
   },
   "project-select-group-ja.png": {
-    "width": 600,
+    "width": 957,
     "height": 717
   },
   "project-select-group.png": {
-    "width": 600,
+    "width": 957,
     "height": 716
   },
   "project-str-billing-en.png": {
