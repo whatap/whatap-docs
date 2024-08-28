@@ -3792,7 +3792,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/index',
@@ -3800,9 +3800,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_4_0',
-                  // className: 'new'
+                  id: 'release-notes/golang/golang-0_4_1',
+                  className: 'new'
                 },
+                'release-notes/golang/golang-0_4_0',
                 'release-notes/golang/golang-0_3_3',
                 'release-notes/golang/golang-0_3_2',
                 'release-notes/golang/golang-0_3_1',
