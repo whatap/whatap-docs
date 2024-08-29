@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60614],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11146],{
 
-/***/ 83811:
+/***/ 66549:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -90,19 +90,11 @@ const assets = {
 };
 
 /*changelog 관련 이미지*/
-/*truncate*/
-/*콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.*/
-/*:::note
-
-개요 안내 항목의 릴리스 버전 태그 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code> 클릭 시 해당 버전의 릴리스 노트로 이동합니다.
-
-:::*/
 
 
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    img: "img",
     p: "p",
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
@@ -111,7 +103,7 @@ function _createMdxContent(props) {
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "/changelog/changelog-new3.png",
+      img: "changelog/changelog-new3.png",
       desc: "새로운 기능 sc"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -119,43 +111,7 @@ function _createMdxContent(props) {
       }), "은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다."
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "새로운 기능 콘텐츠 예시 sc cl",
-        src: (__webpack_require__(86124)/* ["default"] */ .A) + "",
-        width: "801",
-        height: "826"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["해당 상품의 신규 기능 및 변경 사항을 선별해 소개하고, 해당 분기별 서비스(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "New",
-        children: "New"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "Feature",
-        children: "Feature"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "Changed",
-        children: "Changed"
-      }), ") 및 에이전트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "New",
-        children: "New"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "Feature",
-        children: "Feature"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "Deprecated",
-        children: "Deprecated"
-      }), ") 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "changelog-service",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            class: "changelog-service",
-            children: "Service 2.0.0​"
-          })
-        })
-      }), ") 클릭 시 해당 버전의 릴리스 노트로 이동합니다."]
-    }), "\n"]
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -185,16 +141,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/teamtw-c941e8d65768c98c58cfe01c3bd4313a.svg");
-
-/***/ }),
-
-/***/ 86124:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/changelog-ex-be22b0e7e682ef0228bd15421473f009.png");
 
 /***/ }),
 

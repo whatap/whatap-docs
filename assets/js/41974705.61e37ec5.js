@@ -4894,7 +4894,7 @@ function _2024_1q_summary_createMdxContent(props) {
     children: [(0,jsx_runtime.jsx)(_components.p, {
       children: "와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요."
     }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
-      img: "/changelog/changelog-new3.png",
+      img: "changelog/changelog-new3.png",
       desc: "새로운 기능 sc"
     }), "\n", "\n", "\n", "\n", (0,jsx_runtime.jsxs)("div", {
       class: "faq",
