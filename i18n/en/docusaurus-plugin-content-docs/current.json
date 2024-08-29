@@ -1116,7 +1116,7 @@
     "description": "The label for category 분석 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar mysqlSidebar"
   },
   "sidebar.previewSidebar.category.릴리스 노트 - Preview": {
@@ -1128,7 +1128,7 @@
     "description": "The label for category 분석 in sidebar cubridSidebar"
   },
   "sidebar.cubridSidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar cubridSidebar"
   },
   "sidebar.serverSidebar.category.서버 목록": {
@@ -1144,7 +1144,7 @@
     "description": "The label for category 분석 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar postgreSidebar"
   },
   "sidebar.dboracleSidebar.category.대시보드": {
@@ -1156,7 +1156,7 @@
     "description": "The label for category 분석 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar dboracleSidebar"
   },
   "sidebar.learningSidebar.category.학습하기": {
@@ -1544,7 +1544,7 @@
     "description": "The label for category 분석 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.로그": {
@@ -1676,7 +1676,7 @@
     "description": "The label for category 메트릭스 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.로그": {
@@ -1720,7 +1720,7 @@
     "description": "The label for category 메트릭스 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.category.통계/보고서": {
-    "message": "STAT/REPORT",
+    "message": "Stat/Report",
     "description": "The label for category 통계/보고서 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.category.로그": {
@@ -1762,5 +1762,77 @@
   "sidebar.featuremonitorSidebar.doc.Apache Pulsar": {
     "message": "Apache Pulsar",
     "description": "The label for the doc item Apache Pulsar in sidebar featuremonitorSidebar, linking to the doc features/apache-pulsar-introduction"
+  },
+  "sidebar.nodejsSidebar.doc.Log 모니터링": {
+    "message": "Log Monitoring",
+    "description": "The label for the doc item Log 모니터링 in sidebar nodejsSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.altibaseSidebar.category.Altibase V2 모니터링": {
+    "message": "Altibase V2 Monitoring",
+    "description": "The label for category Altibase V2 모니터링 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.대시보드": {
+    "message": "Dashboard",
+    "description": "The label for category 대시보드 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.분석": {
+    "message": "Analysis",
+    "description": "The label for category 분석 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.통계/보고서": {
+    "message": "Stat/Report",
+    "description": "The label for category 통계/보고서 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.로그": {
+    "message": "Log",
+    "description": "The label for category 로그 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.Altibase V1 모니터링": {
+    "message": "Altibase V1 Monitoring",
+    "description": "The label for category Altibase V1 모니터링 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.설치하기": {
+    "message": "Installation",
+    "description": "The label for category 설치하기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.설정하기": {
+    "message": "Configuration",
+    "description": "The label for category 설정하기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.주요 메뉴 알아보기": {
+    "message": "Learn about the main features",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "Checking the real-time DB performance metrics",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.Flex 보드": {
+    "message": "Flex Board",
+    "description": "The label for category Flex 보드 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.메트릭스": {
+    "message": "Metrics",
+    "description": "The label for category 메트릭스 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.분석과 통계": {
+    "message": "Analysis and Statistics",
+    "description": "The label for category 분석과 통계 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.알림 설정하기": {
+    "message": "Alert Settings",
+    "description": "The label for category 알림 설정하기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.doc.지원 환경": {
+    "message": "Supported Environment",
+    "description": "The label for the doc item 지원 환경 in sidebar altibasev1Sidebar, linking to the doc altibase-v1/monitoring-support"
+  },
+  "sidebar.kubeSidebar.category.컨테이너 맵 상세 분석": {
+    "message": "Container Map Detailed Analysis",
+    "description": "The label for category 컨테이너 맵 상세 분석 in sidebar kubeSidebar"
   }
 }
