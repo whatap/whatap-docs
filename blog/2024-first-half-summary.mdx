@@ -45,7 +45,7 @@ draft: true
 > * Unix **AIX** 에이전트 설치 패키지를 제공합니다.
 > * 서버 프로젝트 생성 시 OS를 먼저 선택할 수 있도록 설치 화면이 개편되었습니다.
 > * Unix **Oracle Solaris** 설치 패키지를 제공합니다. 
-> * 피쳐 프로젝트 방식으로 카프카 모니터링 베타 서비스가 시작되었습니다. 
+> * 피쳐 프로젝트 방식으로 카프카 모니터링 **베타** 서비스가 시작되었습니다. 
 
 {/* :::note 
 
@@ -60,7 +60,7 @@ draft: true
 |**Kubernetes**|
 |---|
 
-> * **컨트롤 플레인 모니터링**을 새롭게 제공합니다. 컨트롤 플레인 컴포넌트 중 kube-apiserver 모니터링을 위해 <Cmdname sid="side_kubeApiserverDashboard" className="uitext" /> 및 <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" /> 기능이 추가되었습니다. 
+> * **kube-apiserver** 모니터링을 새롭게 제공합니다. 컨트롤 플레인 컴포넌트 중 kube-apiserver 모니터링을 위해 <Cmdname sid="side_kubeApiserverDashboard" className="uitext" /> 및 <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" /> 기능이 추가되었습니다. 
 > * 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 <Cmdname sid="side_podInitPerf" className="uitext" />과 <Cmdname sid="side_objectManifest" className="uitext" /> 기능을 제공합니다. 
 > * Deployment 기준으로 관련 정보를 조회할 수 있는 <Cmdname sid="side_deploymentList" className="uitext" />, 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 <Cmdname sid="side_kubernetesAgentList" className="uitext" /> 기능이 추가되었습니다. 
 > * 마스터 및 노드 에이전트 설치 시 *Helm* 차트 설치를 지원합니다. 
@@ -136,6 +136,10 @@ draft: true
 * Ingress: 외부 트래픽을 클러스터 내의 서비스로 라우팅하는 규칙을 정의하는 오브젝트입니다.
 * PersistentVolume(PV) 및 PersistentVolumeClaim(PVC): 스토리지 리소스를 관리하고 요청하는 오브젝트로, 파드에 지속적인 스토리지를 제공합니다. 
   
+참고. Pending Pod 현황을 통해 파드가 실행되지 않고 대기 상태에 있는 이유를 확인하고 클러스터의 리소스 상태나 스케줄링 문제를 파악
+
+참고. Pod 시작 분석을 통해 파드가 클러스터에서 성공적으로 실행되기까지의 상태를 분석하는 과정으로 파드 실행 문제 또는 초기화 과정에서 문제 진단 
+
 */}
 
 
@@ -365,7 +369,7 @@ import Go_agent_24q2 from "../crw-data/crwld-agent-24q2/_import-agent-24q2-golan
 
 **구버전 애플리케이션 대시보드 서비스 종료**
 
-***사이트 맵***에서 진입하는 구버전 <Cmdname sid="application_dashboard" className="uitext" /> <code class='oldfunc'>Old</code> 메뉴가 3분기 **7월 24일**자로 서비스 제공이 **종료**될 예정입니다. <Cmdname sid="side_dashboard" className="uitext" /> 메뉴에서 개선된 기능과 함께 새로운 <Cmdname sid="application_dashboard" className="uitext" />를 이용해 주세요. 
+***사이트 맵***에서 진입하는 구버전 <Cmdname sid="application_dashboard" className="uitext" /> <code class='oldfunc'>Old</code> 메뉴가 3분기 **7월 24일**자로 서비스 제공이 **종료**되었습니다. <Cmdname sid="side_dashboard" className="uitext" /> 메뉴에서 개선된 기능과 함께 새로운 <Cmdname sid="application_dashboard" className="uitext" />를 이용해 주세요. 
 
 :::
 
@@ -581,7 +585,7 @@ import Database_1q from "../crw-data/crwld-service/_import-service-Database.mdx"
 
 </details>
 
-와탭 2024년 2분기 `Database` 부분에서 주목할 만한 신규 기능 및 변경 사항으로 **Oracle** 상품 <code class="my">V2</code> 출시와 **Oracle Pro** 베타 출시를 소개합니다. 
+와탭 2024년 2분기 `Database` 부분에서 주목할 만한 신규 기능 및 변경 사항으로 **Oracle** 상품 <code class="my">V2</code> 전환과 **Oracle Pro** 베타 출시를 소개합니다. 
 
 와탭 데이베이스 상품군이 <code class="my">V2</code>로 전환되고 있습니다. 1분기 **Redis**와 **MongoDB**에 뒤이어 2분기는 **Oracle** <code class="my">V2</code> 서비스가 시작되었습니다. Oracle <code class="my">V2</code>는 데이터 전송팩의 구조가 변경되었으며 UI 역시 전반적으로 개선되었습니다. 
 
@@ -613,7 +617,7 @@ PostgreSQL, MySQL, Redis, MongoDB, Oracle, Altibase
 다음 개요 안내를 통해 2024년 2분기 `Database` 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
 <details className='changelog'>
-<summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
+<summary><b>신규 기능 및 주요 변경 사항 안내 2분기</b></summary>
 
 {/* ### 1분기
 
@@ -752,19 +756,11 @@ import Network_1q from "../crw-data/crwld-service/_import-service-Network.mdx";
 
 <br/>
 
-## `URL`
+{/* ## `URL`
 
 와탭 2024년 상반기 `URL` 부분의 변경 사항을 소개합니다. <Cmdname sid="side_urlList" className="uitext" /> 메뉴 및 해당 메뉴 내 <Cmdname sid="edit_url" className="uitext" /> 창의 UI가 사용자 편의성 향상을 위해 전반적으로 개편되었습니다. 또한 <Cmdname sid="TTL07886" className="uitext" /> 역시 편집창이 아니라 목록 조회 시 삭제할 수 있도록 변경되었습니다. ***URL 상세*** 창의 경우 개별 비교 시 용이하도록 팝아웃 방식으로 제공합니다.
 
 ![URL sc](/img/changelog/changelog-24q2-url.png)
-
-{/* * 에러 유형 안내 문서가 새로 업데이트되었습니다. 자세한 내용은 [다음 문서](https://docs.whatap.io/url/url-error-type)를 참조하세요.  */}
-
-{/* 부분의 주목할 만한 신규 기능으로 ~을 소개합니다.
-
-* 인터페이스 개선을 통해 상세창 팝아웃으로 제공
-
-* 상태 코드 문서 안내(첨언) */}
 
 다음 개요 안내를 통해 2024년 상반기 `URL` 상품의 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
@@ -783,7 +779,7 @@ import URL_24q2 from "../crw-data/crwld-service-24q2/_import-24q2-service-URL.md
 
 :::
 
-<br/>
+<br/> */}
 
 {/* ## `AWSLog`
 
@@ -795,7 +791,7 @@ import AWSLog_1q from "../crw-data/crwld-service/_import-service-AWSLog.mdx";
 
 </div> <br/> */}
 
-## `Log`
+{/* ## `Log`
 
 와탭 2024년 상반기 `Log` 상품의 주목할 만한 신규 기능 및 변경 사항으로 개편된 **로그 검색 필터 기능**을 소개합니다. 
 
@@ -816,4 +812,4 @@ import Log_1q from "../crw-data/crwld-service/_import-service-Log.mdx";
 
 </details>
 
-<br/>
+<br/> */}
