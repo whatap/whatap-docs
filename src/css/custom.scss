@@ -172,6 +172,19 @@ html[lang='ja-JP'] {
       }
     }
   }
+  .markdown {
+    .weaving-table {
+      table {
+        th {
+          &:first-of-type { width: 10%; }
+          &:nth-of-type(2) { width: 25%; }
+          &:nth-of-type(3) { width: 20%; }
+          &:nth-of-type(4) { width: 20%; }
+          &:nth-of-type(5) { width: 15%; }
+        }
+      }
+    }
+  }
 }
 * {
   margin: 0;
