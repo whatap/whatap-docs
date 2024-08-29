@@ -575,7 +575,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "차트 비교 아이콘",
-          src: (__webpack_require__(24523)/* ["default"] */ .A) + "",
+          src: (__webpack_require__(79761)/* ["default"] */ .A) + "",
           width: "24",
           height: "24"
         }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -590,7 +590,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
               alt: "차트 비교 아이콘",
-              src: (__webpack_require__(24523)/* ["default"] */ .A) + "",
+              src: (__webpack_require__(79761)/* ["default"] */ .A) + "",
               width: "24",
               height: "24"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
@@ -719,7 +719,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 24523:
+/***/ 79761:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
