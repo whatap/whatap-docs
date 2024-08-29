@@ -1400,8 +1400,8 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "Dashboard",
           src: (__webpack_require__(90466)/* ["default"] */ .A) + "",
-          width: "1200",
-          height: "607"
+          width: "1500",
+          height: "674"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -1627,7 +1627,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-22-3df703c676df7bc8f3c6161f216f1811.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-22-e80ef5e5885184ca1ed563918ec75ce5.png");
 
 /***/ }),
 
