@@ -94,14 +94,19 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "1",
             children: "New"
-          }), " Standard output 로그 수집"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "로그 데이터를 적당량으로 모아서 압축 전송합니다."
+          }), " Standard output 로그 수집 기능 추가"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-ini",
             metastring: "title=\"whatap.conf\"",
-            children: "logsink_enabled=true\nlogsink_stdout_enabled=true\nlogsink_zip_enabled=true\n"
+            children: "logsink_enabled=true\nlogsink_stdout_enabled=true\nlogsink_zip_enabled=true # optional\n"
+          })
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "logsink_zip_enabled"
+            }), " 옵션을 적용하면 로그 데이터를 적당량으로 모아서 압축 전송할 수 있습니다."]
           })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
