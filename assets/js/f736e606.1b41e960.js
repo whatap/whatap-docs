@@ -179,7 +179,7 @@ function _createMdxContent(props) {
         id: "애플리케이션-모니터링",
         children: "애플리케이션 모니터링"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Videos, {
-        url: "https://www.whatap.io/old/video/main-product/monitoring_step_0.mp4"
+        url: "https://img.whatap.io/landing/ko/video/pc/product/application/monitoring_step_0.mp4"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "java/introduction",

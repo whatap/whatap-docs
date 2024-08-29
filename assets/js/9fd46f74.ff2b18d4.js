@@ -1205,7 +1205,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "조회할 수 있는 최대 시간 범위는 3시간입니다."
+          children: "클러스터를 선택한 상태에서 조회할 수 있는 최대 시간 범위는 3시간입니다."
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",

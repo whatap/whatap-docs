@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.49232b79.css">
-<script src="/whatap-docs/assets/js/runtime~main.89b8b19a.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.cb655b92.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.5bd565d6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -117,7 +117,7 @@
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">분석</span> &gt; <span class="uitext">스택</span> 메뉴의 <img decoding="async" loading="lazy" alt="스냅샷 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K" width="24" height="24" class="img_ev3q"> 버튼을 통해 스냅샷을 이미지로 저장할 때 테마가 적용되지 않는 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h3><ul>
+</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통<a href="#공통-1" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 목록</span> 메뉴에서 인스턴스 이름을 선택해 <span class="uitext">인스턴스 모니터링</span> 메뉴로 이동할 때 조직 정보가 누락되는 문제 수정</p>
 </li>
@@ -127,7 +127,21 @@
 <li>
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">SQL 상세</span> 창에서 <span class="uitext">Reset Bind</span> 버튼을 선택하면 바인드 변수가 초기화되지 않는 문제 수정</p>
 </li>
-</ul><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h3><p><code class="Changed" type="1">Changed</code> <span class="uitext">로그</span>의 하위 메뉴에서 컬럼 설정 UI 교체</p><ul>
+<li>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 다음 수정 사항 반영</p>
+<ul>
+<li>
+<p>ZIP 파일 다운로드 명령어 삭제</p>
+</li>
+<li>
+<p>TAR 파일 다운로드 명령어 수정</p>
+</li>
+<li>
+<p><strong>PostgreSQL</strong>, <strong>Oracle Pro</strong>, <strong>Altibase</strong>, <strong>MySQL</strong> 상품을 제외한 다른 상품에서 <span class="uitext">ZIP</span> <span class="uitext">다운로드</span> 버튼이 동작하지 않는 문제 수정</p>
+</li>
+</ul>
+</li>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-pro">Oracle Pro<a href="#oracle-pro" class="hash-link" aria-label="Oracle Pro에 대한 직접 링크" title="Oracle Pro에 대한 직접 링크">​</a></h4><p><code class="Changed" type="1">Changed</code> <span class="uitext">분석</span> &gt; <span class="uitext">락 트리</span> 메뉴에서 클러스터를 선택해 Global Lock 정보를 조회할 수 있는 최대 시간 범위를 3시간으로 변경</p><hr><h3 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h3><p><code class="Changed" type="1">Changed</code> <span class="uitext">로그</span>의 하위 메뉴에서 컬럼 설정 UI 교체</p><ul>
 <li>
 <p>하나로 된 <img decoding="async" loading="lazy" alt="설정 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmb3VuZGF0aW9uPSJbb2JqZWN0IE9iamVjdF0iIGNsYXNzPSJJbm5lckljb25zdHlsZWRfX0ljb24tY2gtZnJvbnRfX3NjLTE5N2g1YmItMCBka0RyT3IiIGRlZmF1bHRvcGFjaXR5PSIxIiBob3ZlcmVkb3BhY2l0eT0iMSIgbWFyZ2ludG9wPSIwIiBtYXJnaW5yaWdodD0iMCIgbWFyZ2luYm90dG9tPSIwIiBtYXJnaW5sZWZ0PSIwIiB3aXRodGhlbWU9InRydWUiPjxwYXRoIGZpbGw9IiM3OTc5NzkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS44MzM1NCAxMC4wMDAxQzUuODMzNTQgNy42OTkzOSA3LjY5ODgxIDUuODMzNDIgMTAuMDAwMiA1LjgzMzQyQzEyLjMwMDkgNS44MzM0MiAxNC4xNjY5IDcuNjk5MzkgMTQuMTY2OSAxMC4wMDAxQzE0LjE2NjkgMTIuMzAwOCAxMi4zMDA5IDE0LjE2NjcgMTAuMDAwMiAxNC4xNjY3QzcuNjk4ODEgMTQuMTY2NyA1LjgzMzU0IDEyLjMwMDggNS44MzM1NCAxMC4wMDAxWk0xOC4zMzM1IDExLjI1MDFWOC43NTAwOEwxNi40NzUyIDguNDQwMDhDMTYuMzA5NCA3Ljc1NTA4IDE2LjAzOTQgNy4xMTE3NSAxNS42Nzk0IDYuNTI2NzVMMTYuNzc2IDQuOTkwOTFMMTUuMDA4NSAzLjIyMzQxTDEzLjQ3MjcgNC4zMjA5MUMxMi44ODc3IDMuOTYwOTEgMTIuMjQ1MiAzLjY5MDkxIDExLjU2MDIgMy41MjUwOEwxMS4yNTAyIDEuNjY2NzVIOC43NTAyTDguNDQwMiAzLjUyNTA4QzcuNzU1MiAzLjY5MDkxIDcuMTExODcgMy45NjA5MSA2LjUyNjg3IDQuMzIwOTFMNC45OTEwNCAzLjIyMzQxTDMuMjIzNTQgNC45OTA5MUw0LjMyMDIgNi41MjY3NUMzLjk2MTA0IDcuMTExNzUgMy42OTAyIDcuNzU1MDggMy41MjUyIDguNDQwMDhMMS42NjY4NyA4Ljc1MDA4VjExLjI1MDFMMy41MjUyIDExLjU2MDFDMy42OTAyIDEyLjI0NTEgMy45NjEwNCAxMi44ODg0IDQuMzIwMiAxMy40NzM0TDMuMjIzNTQgMTUuMDA5Mkw0Ljk5MTA0IDE2Ljc3NjdMNi41MjY4NyAxNS42NzkyQzcuMTExODcgMTYuMDM4NCA3Ljc1NTIgMTYuMzA5MiA4LjQ0MDIgMTYuNDc1MUw4Ljc1MDIgMTguMzMzNEgxMS4yNTAyTDExLjU2MDIgMTYuNDc1MUMxMi4yNDUyIDE2LjMwOTIgMTIuODg3NyAxNi4wMzg0IDEzLjQ3MjcgMTUuNjc5MkwxNS4wMDg1IDE2Ljc3NjdMMTYuNzc2IDE1LjAwOTJMMTUuNjc5NCAxMy40NzM0QzE2LjAzOTQgMTIuODg4NCAxNi4zMDk0IDEyLjI0NTEgMTYuNDc1MiAxMS41NjAxTDE4LjMzMzUgMTEuMjUwMVoiPjwvcGF0aD48L3N2Zz4=" width="20" height="20" class="img_ev3q"> <span class="uitext">테이블 설정</span> 버튼을 <span class="uitext">컬럼 설정</span> 및 <span class="uitext">로그 표시 상세 설정</span> 버튼으로 분리</p>
 </li>
