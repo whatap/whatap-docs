@@ -445,11 +445,14 @@ function _createMdxContent(props) {
         children: "기술의 진보와 더불어 IT 시스템의 복잡성도 증가하고 있습니다. 특히 클라우드와 마이크로서비스 아키텍처의 도입은 시스템의 구성 요소가 다양해지고 상호 의존성이 높아지는 결과를 낳았습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "Obervability",
-          src: (__webpack_require__(44220)/* ["default"] */ .A) + "",
-          width: "1200",
-          height: "583"
+          src: "https://ik.imagekit.io/h4gmuu7ol/d76285_129d9a09cb084c9ca10e8225d7e98_0e59b3f687.png?sp=racwdl&st=2023-11-29T13:26:55Z&se=2050-11-29T21:26:55Z&spr=https&sv=2022-11-02&sr=c&sig=cjlnEtXAZeiBo5U0aBoOwBU2azK6HmLaRgvCD9aT9Aw%3D&tr=w-2048",
+          alt: "Obervability"
         })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["출처: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://www.worth.nl/en/articles/5-reasons-to-fight-complexity-in-your-it-systems",
+          children: "https://www.worth.nl/en/articles/5-reasons-to-fight-complexity-in-your-it-systems"
+        })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1545,16 +1548,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-05-e0ecbcdd3b5a20a3318dd40daf96ec5b.png");
-
-/***/ }),
-
-/***/ 44220:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-06-e1a43cf01b8bf97a05b51a63a57d2f90.png");
 
 /***/ }),
 
