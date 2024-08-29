@@ -1396,13 +1396,9 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "와탭"
         }), "은 브라우저, 서버, 네트워크, 애플리케이션, 데이터베이스 등 IT 시스템의 다양한 요소를 하나의 화면에서 통합 관리할 수 있습니다. 이러한 기능은 운영자가 시스템 상태를 한눈에 파악하고 필요한 조치를 신속히 취할 수 있도록 지원합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "Dashboard",
-          src: (__webpack_require__(90466)/* ["default"] */ .A) + "",
-          width: "1500",
-          height: "674"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "best-p/dx-it-image-22.png",
+        desc: "Dashboard"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1618,16 +1614,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-17-d16ed236ffc1924605984bbc9579b0d0.png");
-
-/***/ }),
-
-/***/ 90466:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-22-e80ef5e5885184ca1ed563918ec75ce5.png");
 
 /***/ }),
 
