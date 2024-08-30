@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[14805],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52266],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3017,9 +3017,12 @@ function _createMdxContent(props) {
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "db_altibase_counter"
-            }), "(metrics-data-list)"]
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_altibase_counter"
+              })
+            })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["쿼리를 실행 중인 세션 수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "active_sessions"
@@ -3941,7 +3944,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 43472:
+/***/ 80178:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3969,11 +3972,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'쿠버네티스',
-		'Kubernetes',
-		'컨테이너',
+		'Oracle',
+		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
 	],
@@ -3981,39 +3983,38 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/warning-notice-v2",
+  "id": "oracle/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/kubernetes/warning-notice-v2.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/warning-notice-v2",
-  "permalink": "/whatap-docs/kubernetes/warning-notice-v2",
+  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/oracle/warning-notice-v2.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/warning-notice-v2",
+  "permalink": "/whatap-docs/oracle/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/oracle/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "컨테이너의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "쿠버네티스",
-      "Kubernetes",
-      "컨테이너",
+      "Oracle",
+      "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "kubeSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
-    "title": "컨테이너 경고 알림",
-    "permalink": "/whatap-docs/kubernetes/container-warning-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/oracle/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/kubernetes/metric-warning-notice"
+    "permalink": "/whatap-docs/oracle/metric-warning-notice"
   }
 };
 const assets = {

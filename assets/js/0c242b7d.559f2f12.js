@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37748],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78239],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3017,9 +3017,12 @@ function _createMdxContent(props) {
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "db_altibase_counter"
-            }), "(metrics-data-list)"]
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_altibase_counter"
+              })
+            })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["쿼리를 실행 중인 세션 수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "active_sessions"
@@ -3941,7 +3944,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 93135:
+/***/ 22347:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3969,9 +3972,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'네트워크 성능 모니터링',
+		'CUBRID',
+		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
 	],
@@ -3979,37 +3983,38 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "npm/warning-notice-v2",
+  "id": "cubrid/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/npm/warning-notice-v2.mdx",
-  "sourceDirName": "npm",
-  "slug": "/npm/warning-notice-v2",
-  "permalink": "/whatap-docs/npm/warning-notice-v2",
+  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/cubrid/warning-notice-v2.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/warning-notice-v2",
+  "permalink": "/whatap-docs/cubrid/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/npm/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/cubrid/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "네트워크 성능 모니터링",
+      "CUBRID",
+      "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "npmsidebar",
+  "sidebar": "cubridSidebar",
   "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/npm/metric-warning-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/cubrid/warning-notice"
   },
   "next": {
-    "title": "경고 알림 수신 설정",
-    "permalink": "/whatap-docs/npm/set-receive-event"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/cubrid/metric-warning-notice"
   }
 };
 const assets = {

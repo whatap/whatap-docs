@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56416],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[1172],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3017,9 +3017,12 @@ function _createMdxContent(props) {
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "db_altibase_counter"
-            }), "(metrics-data-list)"]
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_altibase_counter"
+              })
+            })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["쿼리를 실행 중인 세션 수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "active_sessions"
@@ -3941,7 +3944,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 81701:
+/***/ 85039:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3969,10 +3972,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'서버',
-		'Server',
+		'Tibero',
+		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
 	],
@@ -3980,38 +3983,38 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "server/warning-notice-v2",
+  "id": "tibero/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/server/warning-notice-v2.mdx",
-  "sourceDirName": "server",
-  "slug": "/server/warning-notice-v2",
-  "permalink": "/whatap-docs/server/warning-notice-v2",
+  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/tibero/warning-notice-v2.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/warning-notice-v2",
+  "permalink": "/whatap-docs/tibero/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/server/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/tibero/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "서버",
-      "Server",
+      "Tibero",
+      "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "serverSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
-    "title": "서버 경고 알림",
-    "permalink": "/whatap-docs/server/warning-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/tibero/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/server/metric-warning-notice"
+    "permalink": "/whatap-docs/tibero/metric-warning-notice"
   }
 };
 const assets = {

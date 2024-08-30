@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90047],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56416],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3017,9 +3017,12 @@ function _createMdxContent(props) {
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "db_altibase_counter"
-            }), "(metrics-data-list)"]
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_altibase_counter"
+              })
+            })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["쿼리를 실행 중인 세션 수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "active_sessions"
@@ -3941,7 +3944,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 82172:
+/***/ 81701:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3969,49 +3972,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+	description: '서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'PHP',
+		'서버',
+		'Server',
 		'경고 알림',
-		'이벤트 설정',
-		'애플리케이션'
+		'이벤트 설정'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/warning-notice-v2",
+  "id": "server/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/php/warning-notice-v2.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/warning-notice-v2",
-  "permalink": "/whatap-docs/php/warning-notice-v2",
+  "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/server/warning-notice-v2.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/warning-notice-v2",
+  "permalink": "/whatap-docs/server/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/server/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+    "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "PHP",
+      "서버",
+      "Server",
       "경고 알림",
-      "이벤트 설정",
-      "애플리케이션"
+      "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "serverSidebar",
   "previous": {
-    "title": "애플리케이션 경고 알림",
-    "permalink": "/whatap-docs/php/warning-notice"
+    "title": "서버 경고 알림",
+    "permalink": "/whatap-docs/server/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/php/metric-warning-notice"
+    "permalink": "/whatap-docs/server/metric-warning-notice"
   }
 };
 const assets = {
