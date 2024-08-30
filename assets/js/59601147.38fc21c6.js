@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[981],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43550],{
 
 /***/ 18473:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -723,7 +723,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 70548:
+/***/ 92850:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -752,22 +752,22 @@ const frontMatter = {
 	keywords: [
 		'데이터베이스',
 		'데이터베이스 모니터링',
-		'Oracle'
+		'PostgreSQL'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v1/monitoring-support",
+  "id": "postgresql/monitoring-support",
   "title": "지원 환경",
   "description": "데이터베이스 모니터링을 시작하기 전에 지원하는 데이터베이스 종류에 대해서 알아보세요.",
-  "source": "@site/docs/oracle-v1/monitoring-support.mdx",
-  "sourceDirName": "oracle-v1",
-  "slug": "/oracle-v1/monitoring-support",
-  "permalink": "/whatap-docs/oracle-v1/monitoring-support",
+  "source": "@site/docs/postgresql/monitoring-support.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/monitoring-support",
+  "permalink": "/whatap-docs/postgresql/monitoring-support",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v1/monitoring-support.mdx",
+  "editUrl": "undefined/docs/postgresql/monitoring-support.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -777,18 +777,18 @@ const metadata = {
     "keywords": [
       "데이터베이스",
       "데이터베이스 모니터링",
-      "Oracle"
+      "PostgreSQL"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
-    "title": "Oracle 모니터링",
-    "permalink": "/whatap-docs/oracle-v1/monitoring-intro"
+    "title": "PostgreSQL 모니터링",
+    "permalink": "/whatap-docs/postgresql/monitoring-intro"
   },
   "next": {
     "title": "에이전트 설치",
-    "permalink": "/whatap-docs/oracle-v1/install-agent"
+    "permalink": "/whatap-docs/postgresql/install-agent"
   }
 };
 const assets = {
@@ -806,7 +806,7 @@ const assets = {
 const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "데이터베이스 지원 버전",
   "id": "데이터베이스-지원-버전",
-  "level": 3
+  "level": 2
 }, ..._common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
   "value": "에이전트 구성",
   "id": "에이전트-구성",
@@ -827,7 +827,6 @@ const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_M
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
-    h3: "h3",
     p: "p",
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_7__/* .useMDXComponents */ .R)(),
@@ -835,14 +834,14 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      name: "Oracle"
+      name: "PostgreSQL"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "데이터베이스-지원-버전",
         children: "데이터베이스 지원 버전"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "Oracle 10gR2 버전 이상을 지원합니다."
+        children: "PostgreSQL 계열(EDB 등) 9.2 버전 이상을 지원합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",

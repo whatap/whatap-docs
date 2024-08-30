@@ -806,7 +806,7 @@ const assets = {
 const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "데이터베이스 지원 버전",
   "id": "데이터베이스-지원-버전",
-  "level": 3
+  "level": 2
 }, ..._common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
   "value": "에이전트 구성",
   "id": "에이전트-구성",
@@ -827,7 +827,6 @@ const toc = [..._common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_M
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
-    h3: "h3",
     p: "p",
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_7__/* .useMDXComponents */ .R)(),
@@ -837,8 +836,8 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_support_env_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
       name: "MongoDB"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "데이터베이스-지원-버전",
         children: "데이터베이스 지원 버전"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
