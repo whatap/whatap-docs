@@ -29,7 +29,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_8_x",
   "title": "Service 2.8.X",
-  "description": "Service 2.8.2",
+  "description": "Service 2.8.3",
   "source": "@site/docs/release-notes/service/service-2.8.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_8_x",
@@ -64,6 +64,18 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.8.3",
+  "id": "service-283",
+  "level": 2
+}, {
+  "value": "<code>Cloud</code>",
+  "id": "cloud",
+  "level": 3
+}, {
+  "value": "Amazon CloudWatch",
+  "id": "amazon-cloudwatch",
+  "level": 4
+}, {
   "value": "Service 2.8.2",
   "id": "service-282",
   "level": 2
@@ -169,7 +181,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>Cloud</code>",
-  "id": "cloud",
+  "id": "cloud-1",
   "level": 3
 }, {
   "value": "<code>Browser</code>",
@@ -208,6 +220,39 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-283",
+        children: "Service 2.8.3"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 08월 30일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "cloud",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Cloud"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "amazon-cloudwatch",
+          children: "Amazon CloudWatch"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_agentInstall",
+            className: "uitext"
+          }), " 메뉴에서 role과 인증 유효 기간을 입력한 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "confirm",
+            className: "uitext"
+          }), " 버튼을 선택하면 발생하는 오류 수정"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-282",
@@ -1716,7 +1761,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 메뉴에 Cluster Name을 표기하지 않도록 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "cloud",
+          id: "cloud-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Cloud"
           })
