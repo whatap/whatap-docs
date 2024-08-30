@@ -4,9 +4,29 @@ Download the DBX agent file. Use the following two methods.
 
 - You can download it by using the 'wget' command.
 
+  <InDoc product="postgresql">
+
   ```bash title="BASH"
-  wget -O whatap.agent.database.tar.gz https://api.whatap.io/download/agent/whata.agent.database.tar.gz
+  wget -O whatap.agent.database.tar.gz "https://service.whatap.io/download/dbx_agent?type=postgresql&format=tar.gz"
   ```
+
+  </InDoc>
+
+  <InDoc product="mysql">
+
+  ```bash title="BASH"
+  wget -O whatap.agent.database.tar.gz "https://service.whatap.io/download/dbx_agent?type=mysql&format=tar.gz"
+  ```
+
+  </InDoc>
+
+  <InDoc product="altibase">
+
+  ```bash title="BASH"
+  wget -O whatap.agent.database.tar.gz "https://service.whatap.io/download/dbx_agent?type=altibase&format=tar.gz"
+  ```
+
+  </InDoc>
 
 - If you cannot download it with the command, select <Cmdname sid="download" className="uitext" /> on the WhaTap monitoring service screen.
 
