@@ -136,6 +136,7 @@ function App() {
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_instantsearch__WEBPACK_IMPORTED_MODULE_9__/* .InstantSearch */ .G, {
                     indexName: "whatap",
                     searchClient: searchClient,
+                    routing: true,
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "left-panel",

@@ -1519,7 +1519,7 @@ const frontMatter = {
 	title: '트랜잭션 맵',
 	description: '트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.',
 	keywords: [
-		'Golnag',
+		'Go',
 		'트랜잭션 맵',
 		'대시보드',
 		'애플리케이션'
@@ -1545,7 +1545,7 @@ const metadata = {
     "title": "트랜잭션 맵",
     "description": "트랜잭션 맵이란 종료된 개별 트랜잭션의 응답시간을 분포도 형태로 표현한 차트입니다.",
     "keywords": [
-      "Golnag",
+      "Go",
       "트랜잭션 맵",
       "대시보드",
       "애플리케이션"
