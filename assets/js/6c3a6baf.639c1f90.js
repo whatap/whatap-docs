@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'real-time-monitoring-for-it-infra',
-	title: 'DX IT 운영을 위한 실시간 옵저버빌리티 및 통합 모니터링 솔루션',
+	title: 'DX IT 운영을 위한 와탭(WhaTap) 모니터링 솔루션',
 	description: 'IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.',
 	displayed_sidebar: 'learningSidebar',
 	isTranslationMissing: false
@@ -27,7 +27,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "best-practice-guides/real-time-monitoring-for-it-infra",
-  "title": "DX IT 운영을 위한 실시간 옵저버빌리티 및 통합 모니터링 솔루션",
+  "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링 솔루션",
   "description": "IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.",
   "source": "@site/docs/best-practice-guides/real-time-monitoring-for-it-infra.mdx",
   "sourceDirName": "best-practice-guides",
@@ -40,7 +40,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "real-time-monitoring-for-it-infra",
-    "title": "DX IT 운영을 위한 실시간 옵저버빌리티 및 통합 모니터링 솔루션",
+    "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링 솔루션",
     "description": "IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.",
     "displayed_sidebar": "learningSidebar",
     "isTranslationMissing": false
@@ -133,6 +133,10 @@ const toc = [{
   "value": "IT 모니터링 분야의 주요 과제",
   "id": "it-모니터링-분야의-주요-과제",
   "level": 3
+}, {
+  "value": "DX를 지탱하는 IT 운영",
+  "id": "dx를-지탱하는-it-운영",
+  "level": 4
 }, {
   "value": "운영 효율화와 비용 절감",
   "id": "운영-효율화와-비용-절감",
@@ -326,7 +330,7 @@ function _createMdxContent(props) {
         id: "it-기술의-진화",
         children: "IT 기술의 진화"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "IT 기술은 클라우드 컴퓨팅, 컨테이너화, 서버리스 아키텍처 등으로 빠르게 진화하고 있습니다. 이러한 기술들은 자원을 효율적으로 활용하고 온디맨드로 대규모 자원을 활용할 수 있게 합니다."
+        children: "IT 기술은 클라우드 컴퓨팅, 컨테이너화, 서버리스 아키텍처 등으로 빠르게 진화하고 있습니다. 이러한 기술들은 자원을 효율적으로 활용하고 온디맨드로 대규모 자원을 활용할 수 있게 합니다. 특히, 클라우드 기술의 진화는 다른 소프트웨어 기술의 진화를 견인하고 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "IT technology",
@@ -384,7 +388,7 @@ function _createMdxContent(props) {
         id: "컨테이너-기술의-도입",
         children: "컨테이너 기술의 도입"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "컨테이너는 애플리케이션과 그에 필요한 모든 것을 패키징하여 경량화된 단위로 실행할 수 있게 합니다. 이는 자원의 효율성을 높이고 배포와 관리의 복잡성을 줄이는 데 기여합니다."
+        children: "컨테이너는 애플리케이션과 그에 필요한 모든 것을 패키징하여 경량화된 단위로 실행할 수 있게 합니다. 이는 자원의 효율성을 높이고 배포와 관리의 복잡성을 줄이는 데 기여합니다. 또한 적은 자원으로 서비스 단위의 격리와 운영을 가능케 하여 마이크로서비스의 확산을 더욱 가속화하고 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "Container",
@@ -442,7 +446,7 @@ function _createMdxContent(props) {
         id: "it-시스템의-복잡성-증가",
         children: "IT 시스템의 복잡성 증가"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "기술의 진보와 더불어 IT 시스템의 복잡성도 증가하고 있습니다. 특히 클라우드와 마이크로서비스 아키텍처의 도입은 시스템의 구성 요소가 다양해지고 상호 의존성이 높아지는 결과를 낳았습니다."
+        children: "기술이 진보함에 따라 IT 시스템의 복잡성도 증가하고 있습니다. 특히 클라우드와 마이크로서비스 아키텍처의 도입으로 시스템 구성 요소가 다양해지고 상호 의존성이 높아졌습니다. 이러한 상황에서 기존의 IT 모니터링 방식으로는 시스템 전체를 파악하기 어렵다는 문제가 대두되고 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           src: "https://ik.imagekit.io/h4gmuu7ol/d76285_129d9a09cb084c9ca10e8225d7e98_0e59b3f687.png?sp=racwdl&st=2023-11-29T13:26:55Z&se=2050-11-29T21:26:55Z&spr=https&sv=2022-11-02&sr=c&sig=cjlnEtXAZeiBo5U0aBoOwBU2azK6HmLaRgvCD9aT9Aw%3D&tr=w-2048",
@@ -482,7 +486,7 @@ function _createMdxContent(props) {
         id: "관측-대상의-변화",
         children: "관측 대상의 변화"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "전통적인 모니터링 방식은 주로 서버나 데이터베이스와 같은 특정 자원 내부에 국한되어 있었습니다. 그러나 클라우드 서비스의 도입과 컨테이너, 쿠버네티스(Kubernetes) 등의 활용이 증가하면서 모니터링 대상이 크게 확장되었습니다. 이제는 자원 내부뿐만 아니라 자원 외부에서 발생하는 다양한 지표와 데이터를 수집해야 합니다."
+        children: "전통적인 모니터링 방식은 주로 서버나 데이터베이스와 같은 특정 자원의 내부에 국한되어 있었습니다. 그러나 클라우드 서비스의 도입과 컨테이너, 쿠버네티스(Kubernetes) 등의 활용이 증가하면서 모니터링 대상이 크게 확장되었습니다. 이제는 자원의 내부뿐만 아니라 자원의 외부에서 발생하는 다양한 지표와 데이터를 수집해야 합니다. 클라우드 활용이 일반화되면서 클라우드 벤더가 확보하고 있는 플랫폼 정보 또한 함께 모니터링해야 하는 상황입니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "Obervability",
@@ -491,7 +495,7 @@ function _createMdxContent(props) {
           height: "544"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "MSA 환경으로의 전환으로 인해 모니터링 대상이 확대되었고 Resource와 Application 그리고 서비스 호출 흐름까지 관측 대상에 포함되게 되었습니다."
+        children: "MSA 환경으로의 전환에 컨테이너 환경까지 결합되면서, 모니터링 대상이 확대되어 리소스, 애플리케이션, 그리고 서비스 호출 흐름까지 관측 대상에 포함되었습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -536,9 +540,9 @@ function _createMdxContent(props) {
         id: "모니터링-사용자의-변화",
         children: "모니터링 사용자의 변화"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "모니터링의 대상이 확장됨에 따라, 이를 사용하는 사용자층도 넓어졌습니다. 과거에는 주로 시스템 엔지니어(SE)나 운영자만이 모니터링 도구를 사용했지만, 최근에는 DevOps, SRE(Site Reliability Engineering) 팀, 그리고 개발자들도 모니터링 도구를 사용하여 시스템의 상태를 실시간으로 확인하고, 문제를 해결하는 데 참여하고 있습니다."
+        children: "모니터링 대상이 확장됨에 따라 사용자층도 넓어졌습니다. 과거에는 주로 시스템 엔지니어(SE)나 운영자만이 모니터링 도구를 사용했습니다. 그러나 최근에는 애플리케이션을 서비스 단위로 개발하고 배포하는 체계에서 이전과 같은 역할 분담이 명확하지 않게 되었습니다. DevOps 팀과 개발자들도 모니터링 도구를 사용하여 시스템의 상태를 실시간으로 확인하고 문제를 해결하는 데 적극적으로 참여하고 있습니다. 더 나아가 SRE(Site Reliability Engineering)라는 직종이 등장하면서 모니터링 능력이 엔지니어 개인의 역량을 평가하는 중요한 요소가 되었습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "이러한 변화는 IT 시스템의 복잡성이 증가함에 따라, 모든 관련 팀이 시스템의 상태를 이해하고, 문제가 발생했을 때 빠르게 대응할 수 있도록 하기 위함입니다."
+        children: "이러한 변화는 IT 시스템의 복잡성이 증가함에 따라, 모든 관련 팀이 시스템 상태를 이해하고 문제가 발생했을 때 빠르게 대응할 수 있도록 하기 위함입니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -554,7 +558,7 @@ function _createMdxContent(props) {
         id: "옵션에서-필수로의-전환",
         children: "옵션에서 필수로의 전환"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "과거에는 특정 요소만 모니터링하는 것은 옵션 사항이었지만 현재는 모든 요소를 필수적으로 모니터링해야 하는 상황으로 변화하고 있습니다. 이는 시스템 구성 요소의 다변화와 함께 관리 포인트가 증가한 데 따른 결과입니다. 각 요소의 상태를 모니터링하는 것은 비즈니스 연속성 유지와 시스템 안정성을 위해 필수 사항이 되었습니다."
+        children: "과거에는 특정 요소만 모니터링하는 것이 옵션 사항에 불과했지만, 현재는 모든 요소를 필수적으로 모니터링해야 하는 상황으로 변화하고 있습니다. 이는 시스템 구성 요소의 다양화와 더불어 관리 포인트가 증가한 결과입니다. 각 요소의 상태를 모니터링하는 것은 이제 비즈니스 연속성 유지와 시스템 안정성을 위해 필수적입니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "Obervability",
@@ -567,13 +571,13 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "관리 포인트의 증가"
-            }), ": 다양한 클라우드 서비스, 애플리케이션, 데이터베이스, 네트워크 등 복합적인 요소들이 추가되면서 모니터링 요구가 증가했습니다."]
+            }), ": 다양한 클라우드 서비스, 클라이언트, 웹, 모바일 등 복합적인 요소들이 추가되면서 모니터링 요구가 증가했습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "필수적인 모니터링"
-            }), ": 모든 IT 자원과 서비스를 필수적으로 모니터링해야 하는 필요성이 높아지고 있습니다."]
+            }), ": 모든 IT 자원과 서비스를 필수적으로 모니터링해야 할 필요성이 높아지고 있습니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -583,7 +587,7 @@ function _createMdxContent(props) {
         id: "모니터링-대상-자원의-증가",
         children: "모니터링 대상 자원의 증가"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "모놀리식 아키텍처에서 마이크로서비스 아키텍처(MSA)로의 전환은 모니터링 대상 자원의 범위를 크게 확대했습니다. 이로 인해 기업들은 단일 서버나 네트워크 장치에서 더 나아가, 분산 서버와 클라우드 서비스, 가상 네트워크 등 다양한 자원을 모니터링해야 하는 요구가 생겼습니다."
+        children: "모놀리식 아키텍처에서 마이크로서비스 아키텍처(MSA)로의 전환은 모니터링 대상 자원의 범위를 크게 확장했습니다. 이로 인해 기업들은 단일 서버나 네트워크 장치를 넘어, 분산 서버, 클라우드 서비스, 가상 네트워크 등 다양한 자원을 모니터링해야 하는 필요성이 생겼습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "Increase taget to monitoring",
@@ -596,13 +600,13 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "모니터링 대상의 확장"
-            }), ": 기존의 전통적인 서버와 네트워크 장비뿐만 아니라, 가상 서버, 클라우드 데이터베이스, 분산 애플리케이션 등 새로운 자원이 모니터링 대상에 포함됩니다."]
+            }), ": 기존의 전통적인 서버와 네트워크 장비뿐만 아니라, 가상 서버, 클라우드 데이터베이스, 분산 애플리케이션 등 새로운 자원들도 모니터링 대상에 포함해야 합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "분산 아키텍처 지원"
-            }), ": 분산된 서버와 네트워크에서의 성능을 효과적으로 모니터링하고 시스템 전반의 상태를 파악할 수 있는 능력이 필요합니다 ."]
+            }), ": 분산된 서버와 네트워크에서의 성능을 효과적으로 모니터링하며 시스템 전반의 상태를 파악할 수 있는 능력이 필요합니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -612,7 +616,9 @@ function _createMdxContent(props) {
         id: "성능-모니터링의-중요성",
         children: "성능 모니터링의 중요성"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "마이크로서비스 아키텍처의 도입으로 인해 모니터링 대상이 확대됨에 따라 리소스와 애플리케이션의 성능을 모니터링하는 것이 중요해졌습니다. 이는 각 서비스 호출의 흐름과 성능을 모니터링하는 것을 포함하여 시스템의 전반적인 성능을 유지하는 데 필수적입니다."
+        children: "마이크로서비스 아키텍처의 도입으로 인해 모니터링 대상이 확대됨에 따라 리소스와 애플리케이션의 성능을 모니터링하는 것이 중요해졌습니다. 이는 각 서비스 호출의 흐름과 성능을 모니터링하는 것을 포함하여 시스템의 전반적인 성능을 유지하는 데 필수적입니다. 또한 현대의 분산 아키텍처 환경에서는 가용 자원에 대한 동적 측정 및 평가, 증설 등을 자동으로 운영합니다. 이러한 이유로 서비스에 대한 성능 평가가 운영을 위한 기준으로서 중요해 졌습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "마이크로서비스 아키텍처의 도입으로 모니터링 대상이 확대되면서, 리소스와 애플리케이션 성능을 모니터링하는 것이 더욱 중요해졌습니다. 각 서비스 호출의 흐름과 성능을 모니터링하는 것은 시스템 전반의 성능을 유지하는 데 필수적입니다. 또한 현대의 분산 아키텍처 환경에서는 가용 자원에 대한 동적 측정 및 평가, 그리고 증설이 자동으로 이루어집니다. 이러한 이유로 서비스 성능 평가가 운영의 기준으로서 중요해졌습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "best-p/dx-it-image-11.png",
         desc: "Performance monitoring"
@@ -621,13 +627,13 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "애플리케이션 성능 모니터링"
-            }), ": 애플리케이션의 성능을 실시간으로 모니터링하여 시스템 성능 저하를 조기에 감지하고 대응할 수 있습니다."]
+            }), ": 애플리케이션 성능을 실시간으로 모니터링하여 시스템 성능 저하를 조기에 감지하고 대응할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "서비스 호출 흐름 모니터링"
-            }), ": 분산 환경에서 서비스 간의 호출 흐름을 모니터링하여 시스템의 성능 문제를 신속히 파악할 수 있습니다."]
+            }), ": 분산 환경에서 서비스 간 호출 흐름을 모니터링하여 시스템의 성능 문제를 신속히 파악할 수 있습니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -661,8 +667,10 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "통합-모니터링",
         children: "통합 모니터링"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "IT 시스템의 복잡성이 증가함에 따라 단일 도구로는 모든 모니터링 요구를 충족시키기 어려워졌습니다. 통합 모니터링은 다양한 IT 자산(서버, 네트워크, 애플리케이션 등)을 하나의 플랫폼에서 모니터링하고 관리할 수 있는 능력을 제공합니다. 이는 DX-IT 운영을 지원하는 핵심 요소입니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["IT 시스템의 복잡성이 증가함에 따라 단일 도구로는 모든 모니터링 요구를 충족시키기 어려워졌습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "통합 모니터링"
+        }), "은 다양한 IT 자산(서버, 네트워크, 애플리케이션 등)을 하나의 플랫폼에서 모니터링하고 관리할 수 있는 능력을 제공합니다. 이는 DX-IT 운영을 지원하는 핵심 요소입니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "best-p/dx-it-image-13.png",
         desc: "Integrated Monitoring"
@@ -727,6 +735,16 @@ function _createMdxContent(props) {
         children: "IT 모니터링 분야의 주요 과제"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "현대 IT 환경에서 모니터링은 필수적인 요소로 자리 잡았습니다. 그러나 모니터링 시스템이 효과적으로 작동하기 위해서는 여러 가지 도전과제를 극복해야 합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "dx를-지탱하는-it-운영",
+        children: "DX를 지탱하는 IT 운영"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "IT 퍼포먼스의 향상은 비즈니스 속도와 성과에 직접적인 영향을 미칩니다. IT 시스템의 성능이 최적화될수록 비즈니스의 성장과 발전이 가속화되며, 현대의 디지털 전환 시대에서 매우 중요한 요소로 자리 잡고 있습니다. IT와 비즈니스는 이제 분리될 수 없는 관계를 형성하고 있으며, IT 운영의 성공 여부가 곧 비즈니스 성과로 이어집니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "디지털 트랜스포메이션 과정에서 성공적인 IT 운영은 단순히 시스템을 안정적으로 유지하는 것을 넘어, 비즈니스 속도를 높이고 경쟁력을 강화하는 핵심적인 역할을 담당합니다. 따라서 IT 퍼포먼스를 높이는 것은 디지털 전환의 성공을 좌우하는 중요한 요소이며, 궁극적으로 기업의 지속 가능한 성장과 성과를 보장하는 필수적인 조건으로 자리매김하고 있습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -949,8 +967,10 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "실시간-옵저버빌리티",
         children: "실시간 옵저버빌리티"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "현대의 IT 환경에서 실시간 옵저버빌리티는 시스템의 가용성과 성능을 유지하고 비즈니스 요구에 신속하게 대응하는 데 필수적인 요소로 자리 잡고 있습니다. 복잡하고 분산된 시스템 구조에서는 단순한 모니터링만으로는 충분하지 않으며 시스템의 상태를 실시간으로 파악하고 문제를 즉시 해결할 수 있는 능력이 필요합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["현대의 IT 환경에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "는 시스템의 가용성과 성능을 유지하고 비즈니스 요구에 신속하게 대응하는 데 필수적인 요소로 자리 잡고 있습니다. 복잡하고 분산된 시스템 구조에서는 단순한 모니터링만으로는 충분하지 않으며 시스템의 상태를 실시간으로 파악하고 문제를 즉시 해결할 수 있는 능력이 필요합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -1058,6 +1078,32 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "자동화된 경고 및 알림 시스템"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "실시간 옵저버빌리티는 특정 조건이 발생했을 때 자동으로 경고를 발생시키고 이를 운영팀에 알리는 기능을 포함해야 합니다. 이러한 자동화된 경고 시스템은 문제 발생 시 신속한 대응을 가능하게 하며 시스템의 가용성을 유지하는 데 중요한 역할을 합니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "통합된 가시성 제공"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "현대 IT 환경에서는 다양한 소스에서 많은 데이터가 유입되며, 이를 관리하기 위해 여러 도구를 사용하는 경우가 많습니다. 하지만 이러한 도구들 간에 전환 없이 모든 데이터를 한곳에서 통합해 볼 수 있는 시스템이 필요합니다. 통합된 가시성은 사용자가 여러 시스템과 애플리케이션에서 들어오는 데이터를 하나의 화면에서 쉽게 모니터링할 수 있도록 해줍니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "이를 통해 운영자는 시스템의 상태를 보다 명확하게 파악하고 필요한 조치를 신속하게 취할 수 있습니다. 이처럼 모든 데이터를 한눈에 볼 수 있는 통합된 뷰를 제공함으로써 전체 시스템에 대한 이해도를 높이고 운영 효율성을 극대화할 수 있습니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "고해상도 데이터 분석"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "초단위로 수집되는 고해상도 데이터를 실시간으로 분석하여 시스템의 미세한 변화도 즉시 감지할 수 있어야 합니다. 이를 통해 잠재적인 문제를 조기에 발견하고, 서비스 중단을 예방할 수 있습니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "상호 운용성 수용"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -1074,38 +1120,12 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "고해상도 데이터 분석"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "초단위로 수집되는 고해상도 데이터를 실시간으로 분석하여 시스템의 미세한 변화도 즉시 감지할 수 있어야 합니다. 이를 통해 잠재적인 문제를 조기에 발견하고, 서비스 중단을 예방할 수 있습니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "맞춤형 검색 및 분석 도구"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "각 조직의 비즈니스 요구 사항에 맞춘 맞춤형 검색 및 분석 도구는 옵저버빌리티의 가치를 극대화합니다. IT 운영 팀은 핵심 성과 지표(KPI)를 설정하고, 해당 지표를 바탕으로 시스템 성능을 모니터링할 수 있어야 합니다. 또한 자동화된 워크플로우와 외부 데이터를 실시간으로 통합하여 데이터를 분석하고 필요한 조치를 취할 수 있는 도구가 필요합니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "이러한 도구는 데이터 분석과 자동화된 워크플로우를 지원하며 IT 운영 팀이 신속하게 결정을 내리고 조치를 취할 수 있도록 도와줍니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "자동화된 경고 및 알림 시스템"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "실시간 옵저버빌리티는 특정 조건이 발생했을 때 자동으로 경고를 발생시키고 이를 운영팀에 알리는 기능을 포함해야 합니다. 이러한 자동화된 경고 시스템은 문제 발생 시 신속한 대응을 가능하게 하며 시스템의 가용성을 유지하는 데 중요한 역할을 합니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "통합된 가시성 제공"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "현대 IT 환경에서는 다양한 소스에서 많은 데이터가 유입되며, 이를 관리하기 위해 여러 도구를 사용하는 경우가 많습니다. 하지만 이러한 도구들 간에 전환 없이 모든 데이터를 한곳에서 통합해 볼 수 있는 시스템이 필요합니다. 통합된 가시성은 사용자가 여러 시스템과 애플리케이션에서 들어오는 데이터를 하나의 화면에서 쉽게 모니터링할 수 있도록 해줍니다."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "이를 통해 운영자는 시스템의 상태를 보다 명확하게 파악하고 필요한 조치를 신속하게 취할 수 있습니다. 이처럼 모든 데이터를 한눈에 볼 수 있는 통합된 뷰를 제공함으로써 전체 시스템에 대한 이해도를 높이고 운영 효율성을 극대화할 수 있습니다."
           }), "\n"]
         }), "\n"]
       })]
@@ -1121,21 +1141,23 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "신속한 문제 해결"
-            }), ": 문제가 발생했을 때 실시간으로 이를 감지하고 원인을 신속하게 파악하여 대응할 수 있습니다."]
+            }), ": 문제가 발생했을 때 이를 실시간으로 감지하고 원인을 신속하게 파악하여 즉각적으로 대응할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "서비스 가용성 유지"
-            }), ": 시스템의 상태를 실시간으로 파악하여 서비스 중단을 예방하고, 비즈니스 연속성을 유지할 수 있습니다."]
+            }), ": 시스템의 상태를 실시간으로 파악하여 서비스 중단을 예방하고 비즈니스 연속성을 유지할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "운영 효율성 증대"
-            }), ": 시스템 운영의 자동화를 통해 운영 효율성을 높이고 인력 리소스를 절감할 수 있습니다."]
+            }), ": 시스템 운영의 자동화를 통해 운영 효율성을 높이고, 인력 리소스를 절감할 수 있습니다."]
           }), "\n"]
         }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "장애를 특정하고 원인을 찾는 데 오랜 시간이 걸린다면, 비즈니스 속도를 가속화하기 위해 빠르게 구현하고 운영해야 하는 IT에게는 큰 걸림돌이 될 수 있습니다. 실시간 옵저버빌리티는 이러한 문제를 해결하는 데 중요한 역할을 합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -1173,11 +1195,11 @@ function _createMdxContent(props) {
         id: "itil4-기반의-it-운영-모델",
         children: "ITIL4 기반의 IT 운영 모델"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["DX-IT 운영을 효과적으로 구현하기 위해서는 최신의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: ["비즈니스와 애플리케이션의 변화 속도에 대응하려면 수동적이고 매뉴얼한 대응에서 벗어나 자동화와 셀프 서비스로의 진화가 필요합니다. DX-IT 운영을 효과적으로 구현하기 위해서는 최신의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "ITIL4"
         }), " 운영 모델이 필수적입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "ITIL4"
-        }), "는 IT 운영의 표준 프레임워크로 서비스 관리의 효율성을 극대화하고 비즈니스와 IT의 연계성을 강화합니다."]
+        }), "는 IT 운영의 표준 프레임워크로서, 서비스 관리의 효율성을 극대화하고 비즈니스와 IT의 연계성을 강화합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "best-p/dx-it-image-20.png",
         desc: "ITIL4"
@@ -1289,7 +1311,13 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "다양한 데이터 수집"
-            }), ": 메트릭스, 로그, 트레이스 데이터 등을 실시간으로 수집하고 이를 종합하여 분석함으로써 시스템의 상태를 종합적으로 파악합니다."]
+            }), ": 메트릭, 로그, 트레이스 데이터를 실시간으로 수집하여 이를 종합적으로 분석함으로써 시스템의 상태를 전반적으로 파악합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "End-to-End 풀 스택 통합 모니터링"
+            }), ": IT 서비스를 이용하는 사용자가 처음 체감하는 프론트엔드의 브라우저에서 백엔드의 데이터베이스까지, 메트릭, 트레이스, 로그를 통해 End-to-End 풀 스택으로 통합 모니터링합니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -1424,21 +1452,9 @@ function _createMdxContent(props) {
           children: "와탭"
         }), "은 DX-IT 운영을 실현하기 위한 핵심 솔루션으로 자리 잡고 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "와탭"
-        }), "은 통합 모니터링과 실시간 옵저버빌리티를 통해 IT 시스템의 상태를 실시간으로 파악하고 이를 기반으로 빠르게 문제를 해결할 수 있는 기능을 제공합니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "비즈니스 연속성 유지"
-            }), ": 실시간 모니터링과 문제 해결을 통해 시스템 가용성을 높이고 비즈니스의 연속성을 유지할 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "운영 효율성 극대화"
-            }), ": 자동화된 모니터링과 문제 해결 기능을 통해 운영 효율성을 높이고 비용을 절감할 수 있습니다."]
-          }), "\n"]
-        }), "\n"]
+        }), "은 통합 모니터링과 실시간 옵저버빌리티를 통해 IT 시스템의 상태를 실시간으로 파악하고 빠르게 문제를 해결할 수 있는 기능을 제공합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "실시간 모니터링과 문제 해결을 통해 시스템 가용성을 높이고, 비즈니스 연속성을 유지할 수 있습니다. 자동화된 모니터링과 문제 해결 기능을 통해 운영 효율성을 극대화하고 비용을 절감할 수 있습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -1446,7 +1462,7 @@ function _createMdxContent(props) {
         id: "혁신-문화-육성",
         children: "혁신 문화 육성"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "실시간 옵저버빌리티는 작동하는 것과 작동하지 않는 것을 매우 빠르게 알려주므로 비즈니스에 도움이 되는 방식으로 성능, 안정성 및 효율성을 지속적으로 향상시킵니다. 기술이 비즈니스를 지원하는 방식에 대한 이해가 깊어지면 인프라와 서비스를 지속적으로 최적화하여 고객 기대에 부응하고 가동 중지 시간이나 서비스 중단을 방지할 수 있습니다."
+        children: "실시간 옵저버빌리티는 작동하는 것과 그렇지 않은 것을 매우 빠르게 알려주어 비즈니스에 도움이 되는 방식으로 성능, 안정성 및 효율성을 지속적으로 향상시킵니다. 기술이 비즈니스를 지원하는 방식에 대한 이해가 깊어지면 인프라와 서비스를 지속적으로 최적화하여 고객 기대에 부응하고, 가동 중지 시간이나 서비스 중단을 방지할 수 있습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -1454,7 +1470,7 @@ function _createMdxContent(props) {
         id: "새로운-클라우드-및-최첨단-도구에-현명한-투자",
         children: "새로운 클라우드 및 최첨단 도구에 현명한 투자"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "엔지니어링 팀은 더 이상 물리적 컴퓨팅 하드웨어만 감독하지 않습니다. 끊임없이 데이터와 클라우드 인프라를 놓고 논쟁을 벌이고 있습니다. 시스템 가용성 뿐만 아니라 비즈니스 성과 데이터, 내부 프로세스 및 고객 대면 서비스를 추적함으로써 IT는 On-call 페이지 또는 특정 중단에 대한 우선 순위를 보다 효과적으로 설정할 수 있습니다. 이는 경영진이 미래 소프트웨어, 데이터 수집 및 클라우드 서비스에 대한 중요한 투자 결정을 내리는 데 필요한 데이터를 IT가 제공할 수 있음을 의미합니다."
+        children: "엔지니어링 팀은 더 이상 물리적 컴퓨팅 하드웨어만 감독하지 않습니다. 이제 그들은 데이터와 클라우드 인프라에 대해 지속적으로 논의하고 있습니다. 시스템 가용성뿐만 아니라 비즈니스 성과 데이터, 내부 프로세스 및 고객 대면 서비스를 추적함으로써 IT는 On-call 페이지 또는 특정 중단에 대한 우선순위를 보다 효과적으로 설정할 수 있습니다. 이는 IT가 경영진에게 미래의 소프트웨어, 데이터 수집 및 클라우드 서비스에 대한 중요한 투자 결정을 내리는 데 필요한 데이터를 제공할 수 있음을 의미합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -1462,7 +1478,7 @@ function _createMdxContent(props) {
         id: "디지털-비즈니스의-성과에-대한-실시간-통찰력-제공",
         children: "디지털 비즈니스의 성과에 대한 실시간 통찰력 제공"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "다양한 수준과 유형의 사실을 대시보드에 집계하면 여러분의 환경에서 무슨 일이 일어나고 있는지, 그리고 이것이 비즈니스에 어떤 영향을 미치는지 정확하게 알 수 있습니다. 정보는 표준 원격 측정 데이터, 리소스 최적화 피드백, 비즈니스 중심 KPI 및 사용자 경험 지표를 포함할 수 있습니다. 실시간 정보 수집은 고객이 문제를 인지하기 전에 어떤 사건에도 대응할 수 있도록 해줍니다."
+        children: "대시보드에 다양한 수준과 유형의 데이터를 집계하면, 환경에서 무슨 일이 일어나고 있는지, 그리고 그것이 비즈니스에 어떤 영향을 미치는지 정확하게 알 수 있습니다. 이러한 정보는 표준 원격 측정 데이터, 리소스 최적화 피드백, 비즈니스 중심 KPI 및 사용자 경험 지표를 포함할 수 있습니다. 실시간 정보 수집은 고객이 문제를 인지하기 전에 사건에 대응할 수 있도록 해줍니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -1470,9 +1486,19 @@ function _createMdxContent(props) {
         id: "진화할-것인가-아니면-쇠퇴할-것인가",
         children: "진화할 것인가, 아니면 쇠퇴할 것인가"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "클라우드 네이티브 환경을 관리하는 DevOps 엔지니어와 SRE는 매일 어려움에 직면합니다. 그들은 분산 시스템의 복잡성을 지속적으로 이해하고, 격리하기 어려운 문제를 감지하고, 문제 해결을 신속하게 처리하여 비즈니스가 디지털 연결 끊김이나 장애로 인해 영향을 받지 않도록 해야 합니다."
+        children: "클라우드 네이티브 환경을 관리하는 DevOps 엔지니어와 SRE는 매일 어려움에 직면합니다. 그들은 분산 시스템의 복잡성을 지속적으로 이해하고, 격리하기 어려운 문제를 감지하며, 문제를 신속하게 해결하여 비즈니스가 디지털 연결 끊김이나 장애로 인해 영향을 받지 않도록 해야 합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "모니터링 도구는 그 자리에 있지만 그 자체로는 충분하지 않습니다. 오늘날의 기업은 배포하는 기술과 비즈니스 성공 사이의 직접적인 연관성을 이해해야 합니다. 관련 데이터로 비즈니스 요구 사항을 지원해야 합니다. 또한 개발자의 생산성을 보장하고 빠른 시장 출시 요구 사항을 충족하며 모범적인 고객 경험을 제공하기 위해 지속적으로 데이터 수집하고 파악하는 것이 중요합니다."
+        children: "모니터링 도구는 그 자리에 있지만, 그것만으로는 충분하지 않습니다. 오늘날의 기업은 배포하는 기술과 비즈니스 성공 사이의 직접적인 연관성을 이해해야 합니다. 관련 데이터를 통해 비즈니스 요구 사항을 지원해야 합니다. 또한, 개발자의 생산성을 보장하고, 빠른 시장 출시 요구 사항을 충족하며, 모범적인 고객 경험을 제공하기 위해 지속적으로 데이터를 수집하고 분석하는 것이 중요합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "참조:"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "https://thenewstack.io/why-upgrade-to-observability-from-application-monitoring/",
+            children: "Why Upgrade to Observability from Application Monitoring?"
+          })
+        })]
       })]
     })]
   });
