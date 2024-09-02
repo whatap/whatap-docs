@@ -3220,12 +3220,13 @@ const sidebars = {
                 id: 'redis/set-notice',
               },
               items: [
-                'redis/metric-warning-notice',
+                'redis/warning-notice',
                 {
                   type: 'doc',
                   id: 'redis/warning-notice-v2',
                   className: 'newfunc'
                 },
+                'redis/metric-warning-notice',
                 'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
@@ -3383,7 +3384,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
