@@ -2,6 +2,8 @@
 PATH_NAME=$(pwd)
 echo $PATH_NAME
 
+# prince --no-warn-css --style=/Users/imgijeong/github-feature/whatap-docs/print.css --input-list=./pdf/docs.whatap.io-cover-redis.txt -o ./pdf/whatap-db-redis-monitoring-en.pdf --page-size='a4' --page-margin='10mm'
+
 npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-java --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-apm-java-monitoring.pdf --dest ./pdf --include-index
 
 pdfcpu annot remove -pages 1 ./pdf/whatap-apm-java-monitoring.pdf
@@ -126,17 +128,17 @@ npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-npm --prince-args="--j
 
 pdfcpu annot remove -pages 1 ./pdf/whatap-network-performance-monitoring.pdf
 
-npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-openapi --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-open-api.pdf --dest ./pdf --include-index
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/cover-openapi --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-open-api.pdf --dest ./pdf --include-index
 
-pdfcpu annot remove -pages 1 ./pdf/whatap-open-api.pdf
+# pdfcpu annot remove -pages 1 ./pdf/whatap-open-api.pdf
 
-npx docusaurus-prince-pdf -u https://docs.whatap.io/best-practice-guides/about-apm-dbc --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-best-practice-guides-about-apm-dbc.pdf --dest ./pdf --include-index --selector 'none'
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/best-practice-guides/about-apm-dbc --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-best-practice-guides-about-apm-dbc.pdf --dest ./pdf --include-index --selector 'none'
 
-pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-about-apm-dbc.pdf
+# pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-about-apm-dbc.pdf
 
-npx docusaurus-prince-pdf -u https://docs.whatap.io/best-practice-guides/using-browser-monitoring --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-best-practice-guides-using-browser-monitoring.pdf --dest ./pdf --include-index --selector 'none'
+# npx docusaurus-prince-pdf -u https://docs.whatap.io/best-practice-guides/using-browser-monitoring --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-best-practice-guides-using-browser-monitoring.pdf --dest ./pdf --include-index --selector 'none'
 
-pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-using-browser-monitoring.pdf
+# pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-using-browser-monitoring.pdf
 
 # npx docusaurus-prince-pdf -u https://docs.whatap.io/best-practice-guides/about-apm-dashboard --prince-args="--javascript --page-size='a4' --page-margin='10mm' --style='$PATH_NAME/print.css'" -o ./pdf/whatap-best-practice-guides-about-apm-dashboard.pdf --dest ./pdf --include-index --selector 'none'
 
