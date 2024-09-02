@@ -1489,16 +1489,6 @@ function _createMdxContent(props) {
         children: "클라우드 네이티브 환경을 관리하는 DevOps 엔지니어와 SRE는 매일 어려움에 직면합니다. 그들은 분산 시스템의 복잡성을 지속적으로 이해하고, 격리하기 어려운 문제를 감지하며, 문제를 신속하게 해결하여 비즈니스가 디지털 연결 끊김이나 장애로 인해 영향을 받지 않도록 해야 합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "모니터링 도구는 그 자리에 있지만, 그것만으로는 충분하지 않습니다. 오늘날의 기업은 배포하는 기술과 비즈니스 성공 사이의 직접적인 연관성을 이해해야 합니다. 관련 데이터를 통해 비즈니스 요구 사항을 지원해야 합니다. 또한, 개발자의 생산성을 보장하고, 빠른 시장 출시 요구 사항을 충족하며, 모범적인 고객 경험을 제공하기 위해 지속적으로 데이터를 수집하고 분석하는 것이 중요합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "참조:"
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "https://thenewstack.io/why-upgrade-to-observability-from-application-monitoring/",
-            children: "Why Upgrade to Observability from Application Monitoring?"
-          })
-        })]
       })]
     })]
   });
