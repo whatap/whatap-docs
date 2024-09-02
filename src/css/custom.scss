@@ -3383,4 +3383,80 @@ main {
     display: block;
     visibility: visible;
   }
+
+  .markdown div[class*="filetree"] {
+    border: 1px solid var(--ifm-menu-color);
+    border-radius: 5px;
+    /* font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important; */
+    padding: 15px 15px 15px 15px;
+    margin-top: 20px;
+  }
+  .markdown button[class*="top"] {
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .markdown button[class*="top"] span[class*="type"] {
+    font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important;
+    color: var(--ifm-menu-color);
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  
+  .markdown div[class*="filetree"] ul[class*="fileitem"] {
+    margin-left: 15px;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 28px;
+  }
+
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] {
+    font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important;
+    font-weight: 500;
+    display: list-item;
+    padding-bottom: 15px !important;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"]:first-of-type {
+    margin-top: 15px;
+  }
+  
+  .markdown div[class*="filetree"] ul li[type='file'] span[class*="name"], .markdown div[class*="filetree"] ul li[type='folder'] span[class*="name"] {
+    display: table-cell;
+    margin-right: 15px;
+    min-width: 240px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 240px;
+  }
+  
+  .markdown div[class*="filetree"] div[class*="ico_"] {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+  }
+  
+  .markdown div[class*="filetree"] ul li span[class*="desc"] {
+    font-family: 'Noto Sans KR' !important;
+    font-weight: 400;
+    display: table-cell;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] ul {
+    list-style-type: none;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] ul li [type='file'] span[class*="name"] {
+    min-width: 215px;
+  }
 }
