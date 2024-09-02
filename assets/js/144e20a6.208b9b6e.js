@@ -4009,12 +4009,12 @@ const metadata = {
   },
   "sidebar": "redisSidebar",
   "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/redis/metric-warning-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/redis/warning-notice"
   },
   "next": {
-    "title": "알림 메시지 사용자 정의",
-    "permalink": "/whatap-docs/redis/set-notification-message"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/redis/metric-warning-notice"
   }
 };
 const assets = {

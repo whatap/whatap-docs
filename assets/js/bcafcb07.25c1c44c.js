@@ -225,8 +225,8 @@ const metadata = {
     "permalink": "/whatap-docs/redis/log-parser"
   },
   "next": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/redis/metric-warning-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/redis/warning-notice"
   }
 };
 const assets = {

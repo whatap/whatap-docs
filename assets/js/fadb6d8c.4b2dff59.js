@@ -489,8 +489,8 @@ const metadata = {
   },
   "sidebar": "redisSidebar",
   "previous": {
-    "title": "이벤트 설정",
-    "permalink": "/whatap-docs/redis/warning-notice-v2"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/redis/metric-warning-notice"
   },
   "next": {
     "title": "이상치 탐지 경고 알림",

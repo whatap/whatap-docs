@@ -1858,12 +1858,12 @@ const metadata = {
   },
   "sidebar": "redisSidebar",
   "previous": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/redis/set-notice"
-  },
-  "next": {
     "title": "이벤트 설정",
     "permalink": "/whatap-docs/redis/warning-notice-v2"
+  },
+  "next": {
+    "title": "알림 메시지 사용자 정의",
+    "permalink": "/whatap-docs/redis/set-notification-message"
   }
 };
 const assets = {

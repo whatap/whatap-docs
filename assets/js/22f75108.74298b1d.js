@@ -129,7 +129,7 @@ function _createMdxContent(props) {
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "와탭 Azure Monitor는 API 연동을 통해 메트릭을 주기적으로 수집합니다. 수집을 원하는 서비스에 해당하는 Azure Monitor 네임스페이스를 5분 기간으로 원하는 스탯을 취사선택해 수집합니다. 모니터링 시작 시 모든 리전의 사용자 자원을 검색하여 원클릭으로 모니터링을 시작할 수 있습니다. 와탭은 안전하고 편리한 사용을 위해 Azure Registerd App을 지원합니다."
+      children: "와탭 Azure Monitor는 API 연동을 통해 메트릭을 주기적으로 수집합니다. 수집을 원하는 서비스에 해당하는 Azure Monitor 네임스페이스를 5분 기간으로 원하는 스탯을 취사선택해 수집합니다. 모니터링 시작 시 모든 리전의 사용자 자원을 검색하여 원클릭으로 모니터링을 시작할 수 있습니다. 와탭은 안전하고 편리한 사용을 위해 Azure Registered App을 지원합니다."
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_getting_started_create_project_cloud_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -165,7 +165,7 @@ function _createMdxContent(props) {
           children: "Registered App"
         }), "을 추가하세요. Secret을 생성하고 애플리케이션 ID(ApplicationId), 테넌트 ID(TenantId) 와 시크릿(Secret)을 와탭에 입력하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 모니터링을 위해서는 Monitor Reader, 독자, API Management 서비스 독자 권한이 필요합니다. Azure Portal에서 Subscript > 액세스 제어(IAM) 메뉴에서 추가 버튼을 통해 권한을 추가할 수 있습니다."
+        children: "와탭 모니터링을 위해서는 Monitor Reader, Reader, API Management Service Reader 권한이 필요합니다. Azure Portal에서 Subscript > 액세스 제어(IAM) 메뉴에서 추가 버튼을 통해 권한을 추가할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "Azure Active Directory",
