@@ -2361,10 +2361,8 @@ const sidebars = {
             id: 'mssql/agent-settings'
           },
           items: [
-            'mssql/agent-network',
-            'mssql/agent-naming',
-            'mssql/agent-aws',
-            'mssql/agent-data',
+            'mssql/agent-dbx-settings',
+            'mssql/agent-xos-settings',
           ],
         },
         'mssql/agent-manage',
@@ -2376,7 +2374,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
