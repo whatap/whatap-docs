@@ -1029,7 +1029,7 @@ function _createMdxContent(props) {
         })
       })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,oracle,oracle-v1,cubrid,tibero,altibase,altibase-v1",
+      product: "postgresql,mysql,oracle,oracle-v1,cubrid,tibero,altibase,altibase-v1,mssql",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
         groupId: "dbXos",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
