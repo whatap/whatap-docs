@@ -49,8 +49,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server Agent v2.6.6",
-    "permalink": "/whatap-docs/release-notes/server/server-2_6_6"
+    "title": "Server Agent v2.6.7",
+    "permalink": "/whatap-docs/release-notes/server/server-2_6_7"
   },
   "next": {
     "title": "Server Agent v2.6.4",
