@@ -78,7 +78,7 @@ const config = {
       },
     ],
     [
-      'docusaurus-plugin-enlarge-image', {}
+      'docusaurus-plugin-image-zoom', {}
     ],
   ],
   markdown: {
