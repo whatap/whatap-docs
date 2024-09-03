@@ -15491,9 +15491,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(4459)
     ],
     "5a84d808": [
-        ()=>__webpack_require__.e(/* import() | 5a84d808 */ 50513).then(__webpack_require__.bind(__webpack_require__, 88158)),
+        ()=>__webpack_require__.e(/* import() | 5a84d808 */ 50513).then(__webpack_require__.bind(__webpack_require__, 65777)),
         "@site/docs/kubernetes/metrics-detect-anormal.mdx",
-        /*require.resolve*/(88158)
+        /*require.resolve*/(65777)
     ],
     "5a978fdb": [
         ()=>__webpack_require__.e(/* import() | 5a978fdb */ 70401).then(__webpack_require__.bind(__webpack_require__, 27471)),
@@ -35244,7 +35244,7 @@ var ExecutionEnvironment = __webpack_require__(78557);
     __webpack_require__(7767),
     __webpack_require__(90210),
     __webpack_require__(24459),
-    __webpack_require__(79572), 
+    __webpack_require__(88158), 
 ]);
 
 // EXTERNAL MODULE: ./.docusaurus/routes.js + 3 modules
@@ -36123,7 +36123,7 @@ const i18n_namespaceObject = /*#__PURE__*/JSON.parse('{"defaultLocale":"ko","loc
 // EXTERNAL MODULE: ./.docusaurus/codeTranslations.json
 var codeTranslations = __webpack_require__(22654);
 ;// CONCATENATED MODULE: ./.docusaurus/site-metadata.json
-const site_metadata_namespaceObject = /*#__PURE__*/JSON.parse('{"docusaurusVersion":"3.5.2","siteVersion":"1.0.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.5.2"},"docusaurus-plugin-content-blog":{"type":"package","name":"@docusaurus/plugin-content-blog","version":"3.5.2"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.5.2"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.5.2"},"docusaurus-plugin-redoc":{"type":"package","name":"docusaurus-plugin-redoc","version":"2.1.1"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.5.2"},"docusaurus-theme-redoc":{"type":"package","name":"docusaurus-theme-redoc","version":"2.1.1"},"whatap-plugin-facebook":{"type":"project"},"whatap-plugin-browser":{"type":"project"},"docusaurus-plugin-sass":{"type":"package","name":"docusaurus-plugin-sass","version":"0.2.5"},"docusaurus-plugin-client-redirects":{"type":"package","name":"@docusaurus/plugin-client-redirects","version":"3.5.2"},"docusaurus-plugin-google-gtag":{"type":"package","name":"@docusaurus/plugin-google-gtag","version":"3.5.2"},"docusaurus-plugin-google-tag-manager":{"type":"package","name":"@docusaurus/plugin-google-tag-manager","version":"3.5.2"},"docusaurus-plugin-image-zoom":{"type":"package","name":"docusaurus-plugin-enlarge-image","version":"0.1.1"},"docusaurus-theme-mermaid":{"type":"package","name":"@docusaurus/theme-mermaid","version":"3.5.2"},"docusaurus-theme-github-codeblock":{"type":"package","name":"@saucelabs/theme-github-codeblock","version":"0.2.3"}}}');
+const site_metadata_namespaceObject = /*#__PURE__*/JSON.parse('{"docusaurusVersion":"3.5.2","siteVersion":"1.0.0","pluginVersions":{"docusaurus-plugin-content-docs":{"type":"package","name":"@docusaurus/plugin-content-docs","version":"3.5.2"},"docusaurus-plugin-content-blog":{"type":"package","name":"@docusaurus/plugin-content-blog","version":"3.5.2"},"docusaurus-plugin-content-pages":{"type":"package","name":"@docusaurus/plugin-content-pages","version":"3.5.2"},"docusaurus-plugin-sitemap":{"type":"package","name":"@docusaurus/plugin-sitemap","version":"3.5.2"},"docusaurus-plugin-redoc":{"type":"package","name":"docusaurus-plugin-redoc","version":"2.1.1"},"docusaurus-theme-classic":{"type":"package","name":"@docusaurus/theme-classic","version":"3.5.2"},"docusaurus-theme-redoc":{"type":"package","name":"docusaurus-theme-redoc","version":"2.1.1"},"whatap-plugin-facebook":{"type":"project"},"whatap-plugin-browser":{"type":"project"},"docusaurus-plugin-sass":{"type":"package","name":"docusaurus-plugin-sass","version":"0.2.5"},"docusaurus-plugin-client-redirects":{"type":"package","name":"@docusaurus/plugin-client-redirects","version":"3.5.2"},"docusaurus-plugin-google-gtag":{"type":"package","name":"@docusaurus/plugin-google-gtag","version":"3.5.2"},"docusaurus-plugin-google-tag-manager":{"type":"package","name":"@docusaurus/plugin-google-tag-manager","version":"3.5.2"},"docusaurus-plugin-image-zoom":{"type":"package","name":"docusaurus-plugin-image-zoom","version":"2.0.0"},"docusaurus-theme-mermaid":{"type":"package","name":"@docusaurus/theme-mermaid","version":"3.5.2"},"docusaurus-theme-github-codeblock":{"type":"package","name":"@saucelabs/theme-github-codeblock","version":"0.2.3"}}}');
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/docusaurusContext.js
 
 /**
@@ -44813,7 +44813,7 @@ exports.removePrefix = removePrefix;
 
 /***/ }),
 
-/***/ 79572:
+/***/ 88158:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -45460,48 +45460,58 @@ styleInject(css);
 
 /* harmony default export */ const medium_zoom_esm = (mediumZoom);
 
-;// CONCATENATED MODULE: ./node_modules/docusaurus-plugin-enlarge-image/src/zoom.js
+;// CONCATENATED MODULE: ./node_modules/docusaurus-plugin-image-zoom/lib/zoom.js
 
 
 const { themeConfig  } = docusaurus_config["default"];
 function getBackgroundColor(zoom) {
-    var ref, ref1;
+    var _a, _b;
     const isDarkMode = document.querySelector('html[data-theme="dark"]');
-    return isDarkMode ? ((ref = zoom.background) === null || ref === void 0 ? void 0 : ref.dark) || 'rgb(50, 50, 50)' : ((ref1 = zoom.background) === null || ref1 === void 0 ? void 0 : ref1.light) || 'rgb(255, 255, 255)';
+    return isDarkMode ? ((_a = zoom.background) === null || _a === void 0 ? void 0 : _a.dark) || 'rgb(50, 50, 50)' : ((_b = zoom.background) === null || _b === void 0 ? void 0 : _b.light) || 'rgb(255, 255, 255)';
 }
 /* harmony default export */ const zoom = ((function() {
-    if (typeof window === "undefined") {
+    if (typeof window === 'undefined') {
         return null;
     }
     let zoomObject;
     const { zoom  } = themeConfig;
-    const { selector =".markdown img" , config ={}  } = zoom || {};
+    const { selector ='.markdown img' , config ={}  } = zoom || {};
+    if (!zoom) {
+        return null;
+    }
     config.background = getBackgroundColor(zoom);
-    var observer = new MutationObserver(function(mutations) {
-        if (!zoomObject) return;
+    var observer = new MutationObserver(function() {
+        if (!zoomObject) {
+            return;
+        }
         zoomObject.update({
             background: getBackgroundColor(zoom)
         });
     });
-    observer.observe(document.querySelector('html'), {
+    const htmlNode = document.querySelector('html');
+    observer.observe(htmlNode, {
         attributes: true,
         attributeFilter: [
             'data-theme'
         ]
     });
     setTimeout(()=>{
-        if (zoomObject) zoomObject.detach();
+        if (zoomObject) {
+            zoomObject.detach();
+        }
         zoomObject = medium_zoom_esm(selector, config);
     }, 1000);
     return {
         onRouteUpdate () {
             setTimeout(()=>{
-                if (zoomObject) zoomObject.detach();
+                if (zoomObject) {
+                    zoomObject.detach();
+                }
                 zoomObject = medium_zoom_esm(selector, config);
             }, 1000);
         }
     };
-})());
+})()); //# sourceMappingURL=zoom.js.map
 
 
 /***/ }),
@@ -49085,7 +49095,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     ],
     [
-      "docusaurus-plugin-enlarge-image",
+      "docusaurus-plugin-image-zoom",
       {}
     ]
   ],
@@ -49132,7 +49142,7 @@ __webpack_require__.r(__webpack_exports__);
           ]
         },
         "blog": {
-          "showReadingTime": true,
+          "showReadingTime": false,
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           "blogSidebarTitle": "새로운 기능",
           "blogSidebarCount": "ALL",

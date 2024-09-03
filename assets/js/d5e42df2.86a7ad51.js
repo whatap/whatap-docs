@@ -61,8 +61,8 @@ const metadata = {
   },
   "sidebar": "learningSidebar",
   "previous": {
-    "title": "학습하기",
-    "permalink": "/whatap-docs/learning-guides"
+    "title": "DX IT 운영을 위한 와탭 모니터링",
+    "permalink": "/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra"
   },
   "next": {
     "title": "애플리케이션 대시보드",

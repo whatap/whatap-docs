@@ -50,7 +50,6 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/콘텐츠-구성"
     }
   ],
-  "readingTime": 1.955,
   "hasTruncateMarker": true,
   "authors": [
     {

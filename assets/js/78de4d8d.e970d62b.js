@@ -57,8 +57,8 @@ const metadata = {
   },
   "sidebar": "learningSidebar",
   "next": {
-    "title": "대시보드 분석",
-    "permalink": "/whatap-docs/best-practice-guides/about-dashboard"
+    "title": "DX IT 운영을 위한 와탭 모니터링",
+    "permalink": "/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra"
   }
 };
 const assets = {

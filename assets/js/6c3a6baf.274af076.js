@@ -45,7 +45,15 @@ const metadata = {
     "displayed_sidebar": "learningSidebar",
     "isTranslationMissing": false
   },
-  "sidebar": "learningSidebar"
+  "sidebar": "learningSidebar",
+  "previous": {
+    "title": "학습하기",
+    "permalink": "/whatap-docs/learning-guides"
+  },
+  "next": {
+    "title": "대시보드 분석",
+    "permalink": "/whatap-docs/best-practice-guides/about-dashboard"
+  }
 };
 const assets = {
 

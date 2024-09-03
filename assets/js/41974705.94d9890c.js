@@ -4733,7 +4733,6 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/2024"
     }
   ],
-  "readingTime": 26.57,
   "hasTruncateMarker": true,
   "authors": [
     {

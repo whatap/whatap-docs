@@ -5062,7 +5062,6 @@ const metadata = {
       "permalink": "/whatap-docs/blog/tags/서비스-개요"
     }
   ],
-  "readingTime": 0.38,
   "hasTruncateMarker": true,
   "authors": [
     {
