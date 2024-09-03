@@ -1205,7 +1205,7 @@ function _createMdxContent(props) {
             })
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsxs)(_components.td, {
-              children: ["컨테이너 상태 코드", (0,jsx_runtime.jsx)("br", {}), "① RUNNING = 114", (0,jsx_runtime.jsx)("br", {}), "② PAUSE = 112", (0,jsx_runtime.jsx)("br", {}), "③ RESTARTING = 101", (0,jsx_runtime.jsx)("br", {}), "④ OOMKILLED = 111M", (0,jsx_runtime.jsx)("br", {}), "⑤ DEAD = 100", (0,jsx_runtime.jsx)("br", {}), "⑥ WAITING = 119"]
+              children: ["컨테이너 상태 코드", (0,jsx_runtime.jsx)("br", {}), "① RUNNING = 114", (0,jsx_runtime.jsx)("br", {}), "② PAUSE = 112", (0,jsx_runtime.jsx)("br", {}), "③ RESTARTING = 101", (0,jsx_runtime.jsx)("br", {}), "④ OOMKILLED = 111", (0,jsx_runtime.jsx)("br", {}), "⑤ DEAD = 100", (0,jsx_runtime.jsx)("br", {}), "⑥ WAITING = 119"]
             })
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {

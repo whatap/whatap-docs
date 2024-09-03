@@ -400,17 +400,9 @@ function _createMdxContent(props) {
               }), "\n"]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "DB_USER"
-                }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  children: "DB_PASSWORD"
-                }), "에 특수문자가 포함될 경우 특수문자 앞에 Escape Character(\\)를 같이 입력하세요."]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                  className: "language-bash",
-                  metastring: "title='Example'",
-                  children: "./uid.sh whatap whatap\\!pwd\n\n# 특수문자가 2개 이상일 경우 각각 이스케이프 문자 추가\n./uid.sh whatap whatap\\!\\@pwd\n"
-                })
+                children: ["Windows 환경에서는 패스워드의 특수 문자에 Escape Character가 필요 없습니다. 패스워드에 따옴표(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  children: "\""
+                }), ")를 사용한 경우에는 필요합니다."]
               }), "\n"]
             }), "\n"]
           })
