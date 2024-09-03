@@ -174,12 +174,12 @@ const toc = [{
   "id": "실시간-옵저버빌리티",
   "level": 3
 }, {
-  "value": "분산 시스템과 실시간 옵저버빌리티의 필요성",
-  "id": "분산-시스템과-실시간-옵저버빌리티의-필요성",
+  "value": "옵저버빌리티의 주요 구성 요소",
+  "id": "옵저버빌리티의-주요-구성-요소",
   "level": 4
 }, {
-  "value": "실시간 옵저버빌리티의 주요 구성 요소",
-  "id": "실시간-옵저버빌리티의-주요-구성-요소",
+  "value": "분산 시스템과 실시간 옵저버빌리티의 필요성",
+  "id": "분산-시스템과-실시간-옵저버빌리티의-필요성",
   "level": 4
 }, {
   "value": "실시간 옵저버빌리티 구현의 주요 과제",
@@ -975,39 +975,26 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "분산-시스템과-실시간-옵저버빌리티의-필요성",
-        children: "분산 시스템과 실시간 옵저버빌리티의 필요성"
+        id: "옵저버빌리티의-주요-구성-요소",
+        children: "옵저버빌리티의 주요 구성 요소"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "현대 IT 시스템은 마이크로서비스 아키텍처와 클라우드 환경의 도입으로 인해 더욱 복잡해지고 있습니다. 이러한 분산 시스템에서는 다양한 서비스와 애플리케이션이 상호작용하며 이들 간의 상태를 실시간으로 파악하는 것이 매우 중요합니다. 실시간 옵저버빌리티는 이러한 복잡한 시스템을 관리하고 문제를 즉시 파악하여 신속하게 대응할 수 있는 능력을 제공합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "Distributed system",
-          src: (__webpack_require__(78365)/* ["default"] */ .A) + "",
-          width: "1200",
-          height: "676"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "복잡성 증가"
-            }), ": 분산 시스템과 마이크로서비스 아키텍처의 도입으로 시스템 간의 상호작용이 더욱 복잡해졌으며, 이를 관리하려면 실시간으로 데이터를 수집하고 분석할 수 있는 옵저버빌리티가 필요합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "동적 변화"
-            }), ": 클라우드 환경에서 서비스의 동적인 변화에 빠르게 대응하기 위해서는 실시간으로 시스템 상태를 파악하고, 이를 기반으로 자동화된 조치를 취할 수 있는 기능이 중요합니다."]
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "실시간-옵저버빌리티의-주요-구성-요소",
-        children: "실시간 옵저버빌리티의 주요 구성 요소"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "실시간 옵저버빌리티는 시스템의 상태를 실시간으로 모니터링하고, 문제를 신속하게 탐지하고 해결하기 위해 다양한 핵심 요소를 필요로 합니다."
+        children: "모니터링은 단순히 시스템의 활동을 관찰하고 기록하는 프로세스입니다. 모니터링 도구는 애플리케이션이 어떻게 작동하는지에 대한 데이터를 수집합니다. 그런 다음 소프트웨어는 해당 데이터를 대시보드로 전송하여 분석하고 이전에 설정한 임계값을 초과하는 경우 경고를 트리거할 수 있습니다. 모니터링을 통해 애플리케이션의 상태를 파악하여 알려진 장애 지점에 대한 경계를 유지할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["모니터링의 상위 개념인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "에는 이러한 모든 기능과 그 이상의 기능을 포함합니다. 복잡한 클라우드 네이티브 분산 시스템의 문제를 해결할 때는 더 많고 다양한 도구가 필요하기 때문입니다. 어떤 종류의 장애가 발생할지 예측할 수도 없고 미리 알 수도 없습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "는 새로운 클라우드 네이티브 세계에서 소위 '알려지지 않은 미지의 문제'를 발견하고 해결하는 데 도움이 됩니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["모니터링은 애플리케이션 성능을 감시하고 개선하는 데 사용됩니다. 반면에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "는 클라우드 네이티브 시스템의 내부 측정을 통해 비즈니스 중심적인 결과나 목표에 영향을 미치는 것에 더 가깝습니다. 예를 들어, 사용자에게 미치는 영향은 무엇인가? 고객에게 어떤 영향을 미치나? 어떻게 하면 더 민첩하게 반복할 수 있을까? 그리고 어떻게 하면 비즈니스 전체에 더 많은 혜택을 더 빨리 제공할 수 있을까? ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "는 시스템을 계속 가동하고 운영하기 위해 더 큰 그림으로 접근하는 것입니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "를 구성하는 주요 요소입니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1062,8 +1049,46 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "분산-시스템과-실시간-옵저버빌리티의-필요성",
+        children: "분산 시스템과 실시간 옵저버빌리티의 필요성"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "현대 IT 시스템은 마이크로서비스 아키텍처와 클라우드 환경의 도입으로 인해 더욱 복잡해지고 있습니다. 이러한 분산 시스템에서는 다양한 서비스와 애플리케이션이 상호작용하며 이들 간의 상태를 실시간으로 파악하는 것이 매우 중요합니다. 실시간 옵저버빌리티는 이러한 복잡한 시스템을 관리하고 문제를 즉시 파악하여 신속하게 대응할 수 있는 능력을 제공합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "Distributed system",
+          src: (__webpack_require__(78365)/* ["default"] */ .A) + "",
+          width: "1200",
+          height: "676"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "복잡성 증가"
+            }), ": 분산 시스템과 마이크로서비스 아키텍처의 도입으로 시스템 간의 상호작용이 더욱 복잡해졌으며, 이를 관리하려면 실시간으로 데이터를 수집하고 분석할 수 있는 실시간 옵저버빌리티가 필요합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "동적 변화"
+            }), ": 클라우드 환경에서 서비스의 동적인 변화에 빠르게 대응하기 위해서는 실시간으로 시스템 상태를 파악하고, 이를 기반으로 자동화된 조치를 취할 수 있는 기능이 중요합니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "실시간-옵저버빌리티-구현의-주요-과제",
         children: "실시간 옵저버빌리티 구현의 주요 과제"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "실시간 옵저버빌리티"
+        }), "란 즉시성이 요구되는 IT 서비스에서의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "옵저버빌리티"
+        }), "를 의미합니다. 사용자가 문제를 인지하기 전에, 시스템의 상태를 초 단위로 감시하고 복잡한 상황을 시각화할 수 있어야 합니다. 장애가 발생했을 때는 서비스 관점에서 문제 발생 지점과 유형을 빠르게 식별할 수 있어야 합니다. 마지막으로, 신속한 원인 분석을 위해 장애 재현이나 추가 정보 수집 없이 상시 기록된 고해상도 데이터를 통해 바로 문제의 원인을 탐색할 수 있어야 합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "best-p/dx-it-image-19.png",
+        desc: "Real-time Objevability"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "실시간 옵저버빌리티를 성공적으로 구현하기 위해서는 몇 가지 핵심 과제를 해결해야 합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
