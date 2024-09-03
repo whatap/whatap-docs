@@ -29,7 +29,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_8_x",
   "title": "Service 2.8.X",
-  "description": "Service 2.8.3",
+  "description": "Service 2.8.4",
   "source": "@site/docs/release-notes/service/service-2.8.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_8_x",
@@ -64,6 +64,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.8.4",
+  "id": "service-284",
+  "level": 2
+}, {
+  "value": "<code>공통</code>",
+  "id": "공통",
+  "level": 3
+}, {
   "value": "Service 2.8.3",
   "id": "service-283",
   "level": 2
@@ -85,7 +93,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통",
+  "id": "공통-1",
   "level": 4
 }, {
   "value": "Oracle Pro",
@@ -113,7 +121,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-1",
+  "id": "공통-2",
   "level": 4
 }, {
   "value": "<code>Application</code>",
@@ -125,7 +133,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-2",
+  "id": "공통-3",
   "level": 3
 }, {
   "value": "<Cmdname></Cmdname> / <Cmdname></Cmdname>",
@@ -153,7 +161,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-3",
+  "id": "공통-4",
   "level": 4
 }, {
   "value": "Altibase",
@@ -222,6 +230,37 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-284",
+        children: "Service 2.8.4"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 09월 03일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "공통",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "공통"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_event",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_eventNoti",
+            className: "uitext"
+          }), " 메뉴에서 3rd 파티 플러그인으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "Teams Workflow"
+          }), "를 등록하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "Teams"
+          }), "로 설정되는 문제 수정"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-283",
         children: "Service 2.8.3"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -267,7 +306,7 @@ function _createMdxContent(props) {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통",
+          id: "공통-1",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
@@ -386,7 +425,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "Service 2.8.0 릴리스에 포함된 신규 기능을 소개합니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-1",
+          id: "공통-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -540,7 +579,7 @@ function _createMdxContent(props) {
             }), "를 참조하세요."]
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-2",
+          id: "공통-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -1488,7 +1527,7 @@ function _createMdxContent(props) {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-3",
+          id: "공통-4",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
