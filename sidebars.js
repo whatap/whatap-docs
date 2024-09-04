@@ -2511,10 +2511,8 @@ const sidebars = {
             id: 'tibero/agent-settings'
           },
           items: [
-            'tibero/agent-network',
-            'tibero/agent-naming',
-            'tibero/agent-aws',
-            'tibero/agent-data',
+            'tibero/agent-dbx-settings',
+            'tibero/agent-xos-settings',
           ],
         },
         'tibero/agent-manage',
@@ -2526,7 +2524,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
