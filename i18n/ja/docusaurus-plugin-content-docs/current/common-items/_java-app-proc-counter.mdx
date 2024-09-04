@@ -30,7 +30,7 @@
 | フィールド名                   | 単位                                                            | 説明                                     | 備考 |
 | ------------------------ | ------------------------------------------------------------- | -------------------------------------- | -- |
 | `cputime`                | ミリ秒(ms)                                    | トランザクションのcpuの時間                        | -  |
-| `db_num_active`          | count                                                         | DB Connection Pool Active 수            | -  |
+| `db_num_active`          | count                                                         | DB Connection Pool Active 数            | -  |
 | `db_num_idle`            | count                                                         | DB Connection Pool Idel 数              | -  |
 | `gc_count`               | count                                                         | GC発生回数                                 | -  |
 | `gc_oldgen_count`        | count                                                         | Old Generation GCカウント                  | -  |
@@ -39,8 +39,8 @@
 | `heap_perm`              | バイト                                                           | Perm領域のメモリ使用量                          | -  |
 | `heap_tot`               | バイト                                                           | 現在割り当てられているヒープメモリの総量                   | -  |
 | `heap_use`               | バイト                                                           | 現在使用中のヒープメモリの量                         | -  |
-| `pending_finalization`   | count                                                         | GC中にfinalizeの実行を待機しているオブジェクトの数         | -  |
-| `proc_fd`                | countプロセスが開いているファイル記述子(file descriptors)の数 | -                                      |    |
+| `pending_finalization`   | count | GC中にfinalizeの実行を待機しているオブジェクトの数         | -  |
+| `proc_fd`                | count | プロセスが開いているファイル記述子(file descriptors)の数 | - |
 | `proc_fd_max`            | count                                                         | プロセスがオープンできる最大のファイル記述子の数               | -  |
 | `thread_count`           | count                                                         | JVMで実行中のスレッドの総数                        | -  |
 | `thread_daemon`          | count                                                         | JVMで実行中のデーモンスレッドの数                     | -  |
