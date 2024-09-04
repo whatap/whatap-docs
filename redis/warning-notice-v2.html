@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.5fde96fd.css">
-<script src="/whatap-docs/assets/js/runtime~main.79d41404.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.06b14994.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.a29d8959.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -53,6 +53,16 @@
 <!-- -->
 <!-- -->
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="basic-template">기본 이벤트 템플릿<a href="#basic-template" class="hash-link" aria-label="기본 이벤트 템플릿에 대한 직접 링크" title="기본 이벤트 템플릿에 대한 직접 링크">​</a></h2><p>생성한 프로젝트의 상품에 따라 기본 이벤트 템플릿을 제공합니다. 이벤트 목록의 가장 왼쪽에 <span class="uitext">활성화</span> 버튼을 선택해 원하는 이벤트를 활성화할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/event-config-v2-db-redis.png" alt="이벤트 목록" width="1200" height="161"></p><p>제공하는 이벤트 템플릿은 다음과 같습니다. <span class="uitext">지표</span> 항목에 설정된 기본값은 사용자가 원하는 값으로 수정할 수 있습니다.</p><ul>
+<li>
+<p><em><strong>CPU Utilization</strong></em></p>
+<p>카테고리: <a href="/whatap-docs/redis/metrics-data-list"><code>db_redis_counter</code></a></p>
+<p>CPU 사용률(<code>cpu(xos)</code>)이 80%를 초과하면 경고(<span class="slow">Warning</span>) 수준의 알림을, 90%를 초과하면 위험(<span class="vslow">Critical</span>) 수준의 알림을 보냅니다.</p>
+</li>
+<li>
+<p><em><strong>Connection Failed</strong></em></p>
+<p>카테고리: <a href="/whatap-docs/redis/metrics-data-list"><code>db_redis_counter</code></a></p>
+<p>데이터베이스 연결이 15회 이상 실패(<code>connect_error</code>)하면 위험(<span class="vslow">Critical</span>) 수준의 알림을 보냅니다.</p>
+</li>
 <li>
 <p><em><strong>Memory Utilization</strong></em></p>
 <p>카테고리: <a href="/whatap-docs/redis/metrics-data-list"><code>db_redis_counter</code></a></p>
