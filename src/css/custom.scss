@@ -759,6 +759,13 @@ button.DocSearch-Button:hover {
 .DocSearch-Button-Keys {
   display: none !important;
 }
+// 다국어 조건 아이콘 위치 수정
+.iconLanguage_src-theme-NavbarItem-LocaleDropdownNavbarItem-styles-module {
+  // vertical-align: text-bottom;
+  // margin-right: 5px;
+  top: -2px !important;
+  // position: relative;
+}
 .localeDropdown {
   margin-right: 0px;
   display: inline;
@@ -1207,6 +1214,13 @@ main {
       }
       section + section {
         margin-top: 0;
+      }
+    }
+    .steps--yl {
+      h2::before {
+        background-color: #F9C12A;
+        color: #333333;
+        font-weight: 500;
       }
     }
     h1 {
