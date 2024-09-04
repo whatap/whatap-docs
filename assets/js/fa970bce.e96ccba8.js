@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83080],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17798],{
 
 /***/ 67819:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3297,10 +3297,12 @@ function _createMdxContent(props) {
                   children: "proc_fd"
                 })
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                children: "count 프로세스가 열고 있는 파일 디스크립터(file descriptors)의 수"
+                children: "count"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+                children: "프로세스가 열고 있는 파일 디스크립터(file descriptors)의 수"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: "-"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {})]
+              })]
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
@@ -3461,52 +3463,300 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 50809:
+/***/ 96376:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
-/* harmony import */ var _theme_Tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74235);
-/* harmony import */ var _theme_TabItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15947);
-/* harmony import */ var _common_items_metrics_index_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(77037);
-/* harmony import */ var _common_items_apm_server_merics_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(67819);
-/* harmony import */ var _common_items_java_app_proc_counter_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(80541);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  assets: () => (/* binding */ assets),
+  contentTitle: () => (/* binding */ metrics_app_contentTitle),
+  "default": () => (/* binding */ metrics_app_MDXContent),
+  frontMatter: () => (/* binding */ metrics_app_frontMatter),
+  metadata: () => (/* binding */ metadata),
+  toc: () => (/* binding */ metrics_app_toc)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Tabs/index.js + 2 modules
+var Tabs = __webpack_require__(74235);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TabItem/index.js + 1 modules
+var TabItem = __webpack_require__(15947);
+// EXTERNAL MODULE: ./docs/common-items/_metrics-index.mdx
+var _metrics_index = __webpack_require__(77037);
+// EXTERNAL MODULE: ./docs/common-items/_apm-server-merics.mdx
+var _apm_server_merics = __webpack_require__(67819);
+// EXTERNAL MODULE: ./docs/common-items/_java-app-proc-counter.mdx
+var _java_app_proc_counter = __webpack_require__(80541);
+;// CONCATENATED MODULE: ./docs/common-items/_java-java-memory.mdx
 
 
-const frontMatter = {
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+/*수집 간격, 통계 데이터 시간 및 objectPendingFinalizationCount 정확한 정의, 다른 필드 검수 필요*/
+
+
+const toc = [{
+  "value": "java_memory",
+  "id": "javamemory",
+  "level": 2
+}, {
+  "value": "Tags",
+  "id": "javamemory-tags",
+  "level": 3
+}, {
+  "value": "Fields",
+  "id": "javamemory-fields",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    code: "code",
+    h2: "h2",
+    h3: "h3",
+    li: "li",
+    p: "p",
+    section: "section",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,jsx_runtime.jsx)(_components.h2, {
+        id: "javamemory",
+        children: "java_memory"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "애플리케이션이 실행되는 동안 JVM의 메모리 사용 상태에 대한 지표를 수집한 데이터의 카테고리입니다."
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "수집 간격: 5초"
+        }), "\n", (0,jsx_runtime.jsx)(_components.li, {
+          children: "통계 데이터: 5분, 1시간"
+        }), "\n"]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
+        id: "javamemory-tags",
+        children: "Tags"
+      }), (0,jsx_runtime.jsx)("div", {
+        className: "c3-30-60-10",
+        children: (0,jsx_runtime.jsxs)(_components.table, {
+          children: [(0,jsx_runtime.jsx)(_components.thead, {
+            children: (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.th, {
+                children: "태그명"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "설명"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "비고"
+              })]
+            })
+          }), (0,jsx_runtime.jsxs)(_components.tbody, {
+            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "host_ip"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "호스트 IP 주소"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "고유값"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "okindName"
+                })
+              }), (0,jsx_runtime.jsxs)(_components.td, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "whatap.okind"
+                }), "로 분류된 그룹 이름"]
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "oname"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "에이전트 이름"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "고유값"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "onodeName"
+                })
+              }), (0,jsx_runtime.jsxs)(_components.td, {
+                children: [(0,jsx_runtime.jsx)(_components.code, {
+                  children: "whatap.onode"
+                }), "로 분류된 그룹 이름"]
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "pid"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "특정프로세스의 고유 식별자(ID)"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            })]
+          })]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
+        id: "javamemory-fields",
+        children: "Fields"
+      }), (0,jsx_runtime.jsx)("div", {
+        className: "c4-20-10-50-10",
+        children: (0,jsx_runtime.jsxs)(_components.table, {
+          children: [(0,jsx_runtime.jsx)(_components.thead, {
+            children: (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.th, {
+                children: "필드명"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "단위"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "설명"
+              }), (0,jsx_runtime.jsx)(_components.th, {
+                children: "비고"
+              })]
+            })
+          }), (0,jsx_runtime.jsxs)(_components.tbody, {
+            children: [(0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "nonheap_committed"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "byte"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "JVM에서 사용하기 위해 보장된 비 힙 메모리 크기"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "nonheap_init"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "byte"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "JVM이 시작 시 OS로부터 요청하는 초기 비 힙 메모리 크기"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "nonheap_max"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "byte"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "메모리 관리에 사용할 수 있는 최대 비 힙 메모리 크기"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "nonheap_used"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "byte"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "현재 사용 중인 비 힙 메모리의 양"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            }), (0,jsx_runtime.jsxs)(_components.tr, {
+              children: [(0,jsx_runtime.jsx)(_components.td, {
+                children: (0,jsx_runtime.jsx)(_components.code, {
+                  children: "objectPendingFinalizationCount"
+                })
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "count"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "GC 중 finalize 수행을 위해 대기 중인 객체의 수"
+              }), (0,jsx_runtime.jsx)(_components.td, {
+                children: "-"
+              })]
+            })]
+          })]
+        })
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+;// CONCATENATED MODULE: ./docs/java/metrics-app.mdx
+
+
+const metrics_app_frontMatter = {
 	id: 'metrics-app',
 	title: '애플리케이션 지표',
 	description: '애플리케이션 지표를 안내합니다.',
 	toc_max_heading_level: 2,
 	keywords: [
-		'Python',
+		'Java',
 		'메트릭스',
 		'애플리케이션',
 		'UI'
 	],
 	isTranslationMissing: false
 };
-const contentTitle = undefined;
+const metrics_app_contentTitle = undefined;
 const metadata = {
-  "id": "python/metrics-app",
+  "id": "java/metrics-app",
   "title": "애플리케이션 지표",
   "description": "애플리케이션 지표를 안내합니다.",
-  "source": "@site/docs/python/metrics-app.mdx",
-  "sourceDirName": "python",
-  "slug": "/python/metrics-app",
-  "permalink": "/whatap-docs/python/metrics-app",
+  "source": "@site/docs/java/metrics-app.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/metrics-app",
+  "permalink": "/whatap-docs/java/metrics-app",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/metrics-app.mdx",
+  "editUrl": "undefined/docs/java/metrics-app.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -3515,21 +3765,21 @@ const metadata = {
     "description": "애플리케이션 지표를 안내합니다.",
     "toc_max_heading_level": 2,
     "keywords": [
-      "Python",
+      "Java",
       "메트릭스",
       "애플리케이션",
       "UI"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "pySidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/python/metrics-intro"
+    "permalink": "/whatap-docs/java/metrics-intro"
   },
   "next": {
     "title": "애플리케이션 성능 카운터",
-    "permalink": "/whatap-docs/python/metrics-performance-counter"
+    "permalink": "/whatap-docs/java/metrics-performance-counter"
   }
 };
 const assets = {
@@ -3543,23 +3793,24 @@ const assets = {
 
 
 
-const toc = [..._common_items_metrics_index_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_apm_server_merics_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_java_app_proc_counter_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_index_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_server_merics_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_java_app_proc_counter_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+
+const metrics_app_toc = [..._metrics_index/* toc */.RM, ..._apm_server_merics/* toc */.RM, ..._java_app_proc_counter/* toc */.RM, ...toc];
+function metrics_app_createMdxContent(props) {
+  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [(0,jsx_runtime.jsx)(_metrics_index/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_apm_server_merics/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_java_app_proc_counter/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
   });
 }
-function MDXContent(props = {}) {
+function metrics_app_MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
+    ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
     ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+    children: (0,jsx_runtime.jsx)(metrics_app_createMdxContent, {
       ...props
     })
-  }) : _createMdxContent(props);
+  }) : metrics_app_createMdxContent(props);
 }
 
 
