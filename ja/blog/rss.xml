@@ -1068,7 +1068,7 @@
             <description><![CDATA[와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <!-- -->
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img//changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <p>편의성 향상을 위해 공통 메뉴 개선이 이루어졌습니다.</p>
@@ -1692,7 +1692,7 @@
             <pubDate>Mon, 20 May 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img//changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <!-- -->
 <!-- -->
@@ -1956,7 +1956,7 @@
 <p><code class="Deprecate">Deprecate</code> Lettuce 드라이버 사용 시 Redis의 value 수집 중단</p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2228-2024년-02��월-27일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_28">Java Agent v2.2.28</a></code> <code class="changelog-date">2024년 02월 27일</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#java-agent-v2228-2024%EB%85%84-02%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="java-agent-v2228-2024년-02월-27일への直接リンク" title="java-agent-v2228-2024년-02월-27일への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2228-2024년-02월-27일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/java/java-2_2_28">Java Agent v2.2.28</a></code> <code class="changelog-date">2024년 02월 27일</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#java-agent-v2228-2024%EB%85%84-02%EC%9B%94-27%EC%9D%BC" class="hash-link" aria-label="java-agent-v2228-2024년-02월-27일への直接リンク" title="java-agent-v2228-2024년-02월-27일への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> logback-1.2.8 추적 시 appender 제외 옵션 추가</p>
@@ -2511,7 +2511,7 @@
             <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
             <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
             <content:encoded><![CDATA[
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img//changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
 <!-- -->
@@ -2530,7 +2530,7 @@
             <pubDate>Sun, 31 Dec 2023 15:20:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img//changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <ul>
@@ -3005,7 +3005,7 @@
             <pubDate>Tue, 31 Oct 2023 15:10:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img//changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/changelog/changelog-new3-ja.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
@@ -3062,7 +3062,7 @@
 </li>
 </ul>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/ja/blog/2023-3q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​への直接リンク" title="경고 알림​への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경�고-알림">경고 알림​<a href="https://docs.whatap.io/ja/blog/2023-3q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​への直接リンク" title="경고 알림​への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">通知設定</span> &gt; <span class="uitext">ユーザー別アラート受信設定</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>

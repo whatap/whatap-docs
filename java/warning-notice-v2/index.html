@@ -23,9 +23,9 @@
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E46TQ5VSCT",{anonymize_ip:!0})</script>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
-<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/assets/css/styles.047a8603.css">
-<script src="/assets/js/runtime~main.a814db6e.js" defer="defer"></script>
-<script src="/assets/js/main.a82d2054.js" defer="defer"></script>
+<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/assets/css/styles.9ea74fb6.css">
+<script src="/assets/js/runtime~main.67c34f39.js" defer="defer"></script>
+<script src="/assets/js/main.96dd46ad.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
@@ -57,6 +57,16 @@
 <p><em><strong>Active Transaction</strong></em></p>
 <p>카테고리: <a href="/java/metrics-app#app_counter"><code>app_counter</code></a></p>
 <p>액티브 트랜잭션 발생 건수(<code>active_tx_count</code>)가 100개를 초과한 상태하면 경고(<span class="slow">Warning</span>) 수준의 알림을 보냅니다.</p>
+</li>
+<li>
+<p><em><strong>Apdex 100 by kind</strong></em></p>
+<p>카테고리: <a href="/java/metrics-app#app_counter"><code>app_counter</code></a></p>
+<p>에이전트 종류별 애플리케이션 성능 지표 백분률(<code>apdex100</code>)이 95% 미만이면 경고(<span class="slow">Warning</span>) 수준의 알림을, 90% 미만이면 위험(<span class="vslow">Critical</span>) 수준의 알림을 보냅니다.</p>
+</li>
+<li>
+<p><em><strong>Apdex 100 by kind</strong></em></p>
+<p>카테고리: <a href="/java/metrics-app#app_counter"><code>app_counter</code></a></p>
+<p>프로젝트 전체 에이전트의 애플리케이션 성능 지표 백분률(<code>apdex100</code>)이 95% 미만이면 경고(<span class="slow">Warning</span>) 수준의 알림을, 90% 미만이면 위험(<span class="vslow">Critical</span>) 수준의 알림을 보냅니다.</p>
 </li>
 <li>
 <p><em><strong>Server CPU</strong></em></p>

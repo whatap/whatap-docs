@@ -1068,7 +1068,7 @@
             <description><![CDATA[와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 2분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <!-- -->
-<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="1109" height="657"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <p>편의성 향상을 위해 공통 메뉴 개선이 이루어졌습니다.</p>
@@ -1692,7 +1692,7 @@
             <pubDate>Mon, 20 May 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2024년 1분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="1109" height="657"></p>
 <!-- -->
 <!-- -->
 <!-- -->
@@ -2371,7 +2371,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 테이블 레이아웃 실시간 조회 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1630-2024년-02월-29일" title="Direct link to dbx-v1630-2024년-02월-29일">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024��년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1630-2024년-02월-29일" title="Direct link to dbx-v1630-2024년-02월-29일">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
@@ -2385,7 +2385,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.bat</em> 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024년-03월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024년 03월 25일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v170-2024%EB%85%84-03%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v170-2024년-03월-25일" title="Direct link to dbx-v170-2024년-03월-25일">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024�년-03월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024년 03월 25일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v170-2024%EB%85%84-03%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v170-2024년-03월-25일" title="Direct link to dbx-v170-2024년-03월-25일">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/en/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="Direct link to MongoDB​" title="Direct link to MongoDB​">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> MongoDB <code class="my">V2</code> 추가</li>
@@ -2511,7 +2511,7 @@
             <pubDate>Mon, 08 Apr 2024 10:00:00 GMT</pubDate>
             <description><![CDATA[{/ changelog 관련 이미지 /}]]></description>
             <content:encoded><![CDATA[
-<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="1109" height="657"></p>
 <p><strong>새로운 기능</strong>은 와탭 상품별 신규 기능 및 주목할 만한 변경 사항을 분기별로 안내합니다. 서비스 및 에이전트 개요를 요약해 제공합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
 <p>콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.</p>
 <!-- -->
@@ -2530,7 +2530,7 @@
             <pubDate>Sun, 31 Dec 2023 15:20:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 4분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="1109" height="657"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <ul>
@@ -3005,7 +3005,7 @@
             <pubDate>Tue, 31 Oct 2023 15:10:00 GMT</pubDate>
             <description><![CDATA[와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></description>
             <content:encoded><![CDATA[<p>와탭의 2023년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img//changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/changelog/changelog-new3-en.png" alt="새로운 기능 sc" width="1109" height="657"></p>
 <!-- -->
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
