@@ -1562,7 +1562,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-02-0004aba6a05c87e4cff40196b2c445f0.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-02-d0bbef5d8aac758fa03f5a1b0b12ce51.png");
 
 /***/ }),
 
@@ -1592,7 +1592,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-05-e0ecbcdd3b5a20a3318dd40daf96ec5b.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-05-803c5e623356a95ff4d4ef263086bee8.png");
 
 /***/ }),
 
