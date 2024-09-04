@@ -1209,6 +1209,13 @@ main {
         margin-top: 0;
       }
     }
+    .steps--yl {
+      h2::before {
+        background-color: #F9C12A;
+        color: #333333;
+        font-weight: 500;
+      }
+    }
     h1 {
       padding-top: 8px;
       &:first-child {
