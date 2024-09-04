@@ -1,122 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[69512],{
-
-/***/ 19860:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1784);
-/* harmony import */ var _common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77142);
-/* harmony import */ var _common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67406);
-/* harmony import */ var _common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(94815);
-/* harmony import */ var _common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21245);
-/* harmony import */ var _common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(58571);
-/* harmony import */ var _common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(53467);
-/* harmony import */ var _common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(44256);
-/* harmony import */ var _common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(98836);
-
-
-const frontMatter = {
-	id: 'warning-notice-v2',
-	title: '이벤트 설정',
-	description: 'Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
-	keywords: [
-		'Browser',
-		'경고 알림',
-		'이벤트 설정'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "browser/warning-notice-v2",
-  "title": "이벤트 설정",
-  "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/browser/warning-notice-v2.mdx",
-  "sourceDirName": "browser",
-  "slug": "/browser/warning-notice-v2",
-  "permalink": "/whatap-docs/browser/warning-notice-v2",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/browser/warning-notice-v2.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "warning-notice-v2",
-    "title": "이벤트 설정",
-    "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-    "keywords": [
-      "Browser",
-      "경고 알림",
-      "이벤트 설정"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "rumsSidebar",
-  "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/browser/metric-warning-notice"
-  },
-  "next": {
-    "title": "경고 알림 수신 설정",
-    "permalink": "/whatap-docs/browser/set-receive-event"
-  }
-};
-const assets = {
-
-};
-
-/*기본 이벤트 템플릿*/
-/*이벤트 수정하기*/
-/*이벤트 추가하기*/
-/*이벤트 삭제하기*/
-/*JSON 형식으로 수정하기*/
-/*JSON 파일로 공유하기*/
-/*모든 이벤트 공유하기*/
-/*이벤트 검색하기*/
-
-
-
-
-
-
-
-
-
-
-
-const toc = [..._common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_10__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56416],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1762,6 +1645,56 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Apdex 100 by kind"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-app#app_counter",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "app_counter"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["에이전트 종류별 애플리케이션 성능 지표 백분률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "apdex100"
+            }), ")이 95% 미만이면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 90% 미만이면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Apdex 100 by kind"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-app#app_counter",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "app_counter"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["프로젝트 전체 에이전트의 애플리케이션 성능 지표 백분률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "apdex100"
+            }), ")이 95% 미만이면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 90% 미만이면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "Server CPU"
               })
             })
@@ -2470,6 +2403,38 @@ function _createMdxContent(props) {
             }), ")이 10회 연속, 2,000ms(2초)를 초과한 상태로 지속되면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "slow",
               children: "Warning"
+            }), ") 수준의 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "kube-apiserver CPU Limit Alert"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["kube-apiserver의 CPU 사용률이 50%를 초과하면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 80%를 초과하면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "kube-apiserver Memory Limit Alert"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["kube-apiserver의 메모리 사용량이 50%를 초과하면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 80%를 초과하면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
             }), ") 수준의 알림을 보냅니다."]
           }), "\n"]
         }), "\n"]
@@ -4364,6 +4329,125 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 81701:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1784);
+/* harmony import */ var _common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77142);
+/* harmony import */ var _common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(67406);
+/* harmony import */ var _common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(94815);
+/* harmony import */ var _common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(21245);
+/* harmony import */ var _common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(58571);
+/* harmony import */ var _common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(53467);
+/* harmony import */ var _common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(44256);
+/* harmony import */ var _common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(98836);
+
+
+const frontMatter = {
+	id: 'warning-notice-v2',
+	title: '이벤트 설정',
+	description: '서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	keywords: [
+		'서버',
+		'Server',
+		'경고 알림',
+		'이벤트 설정'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "server/warning-notice-v2",
+  "title": "이벤트 설정",
+  "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/server/warning-notice-v2.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/warning-notice-v2",
+  "permalink": "/whatap-docs/server/warning-notice-v2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/server/warning-notice-v2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "warning-notice-v2",
+    "title": "이벤트 설정",
+    "description": "서버 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "keywords": [
+      "서버",
+      "Server",
+      "경고 알림",
+      "이벤트 설정"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "serverSidebar",
+  "previous": {
+    "title": "서버 경고 알림",
+    "permalink": "/whatap-docs/server/warning-notice"
+  },
+  "next": {
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/server/metric-warning-notice"
+  }
+};
+const assets = {
+
+};
+
+/*기본 이벤트 템플릿*/
+/*이벤트 수정하기*/
+/*이벤트 추가하기*/
+/*이벤트 삭제하기*/
+/*JSON 형식으로 수정하기*/
+/*JSON 파일로 공유하기*/
+/*모든 이벤트 공유하기*/
+/*이벤트 검색하기*/
+
+
+
+
+
+
+
+
+
+
+
+const toc = [..._common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_basic_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_template_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_modify_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_add_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_delete_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_json_modify_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v3_json_share_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_all_event_sharing_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_event_config_v2_search_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_10__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
