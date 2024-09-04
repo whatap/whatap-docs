@@ -2409,6 +2409,17 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql/analysis-count-trend',
+                'mssql/analysis-lock-and-deadlock',
+                'mssql/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2417,7 +2428,7 @@ const sidebars = {
                 id: 'mssql/metrics-intro'
               },
               items: [
-                'mssql/metrics-mssql',
+                'mssql/metrics-data-list',
                 'mssql/metrics-chart',
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
@@ -2425,15 +2436,13 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'mssql/analysis-function',
                 'mssql/stat',
                 'mssql/report-intro',
-                'mssql/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
