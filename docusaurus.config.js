@@ -78,7 +78,7 @@ const config = {
       },
     ],
     [
-      'docusaurus-plugin-enlarge-image', {}
+      'docusaurus-plugin-image-zoom', {}
     ],
   ],
   markdown: {
@@ -130,7 +130,7 @@ const config = {
         },
         // blog: false,
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 

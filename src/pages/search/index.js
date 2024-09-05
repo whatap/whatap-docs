@@ -96,6 +96,7 @@ export default function App() {
             <InstantSearch 
                 indexName="whatap" 
                 searchClient={searchClient}
+                routing={true}
                 >
                 <div className="left-panel">
                     <ClearRefinements />

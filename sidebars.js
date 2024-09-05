@@ -3220,12 +3220,13 @@ const sidebars = {
                 id: 'redis/set-notice',
               },
               items: [
-                'redis/metric-warning-notice',
+                'redis/warning-notice',
                 {
                   type: 'doc',
                   id: 'redis/warning-notice-v2',
                   className: 'newfunc'
                 },
+                'redis/metric-warning-notice',
                 'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
@@ -3383,7 +3384,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -3744,9 +3745,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_8',
+                  id: 'release-notes/python/python-1_6_9',
                   className: 'new',
                 },
+                'release-notes/python/python-1_6_8',
                 'release-notes/python/python-1_6_7',
                 'release-notes/python/python-1_6_6',
                 'release-notes/python/python-1_6_5',
@@ -3756,7 +3758,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_1',
                 'release-notes/python/python-1_6_0',
                 'release-notes/python/python-1_5_9',
-                'release-notes/python/python-1_5_8',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3773,9 +3774,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_1',
+                  id: 'release-notes/dotnet/dotnet-2_3_2',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_1',
                 'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
@@ -3784,7 +3786,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_5',
                 'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
-                'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3830,9 +3831,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_6',
+                  id: 'release-notes/server/server-2_6_7',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_7',
                 'release-notes/server/server-2_6_5',
                 'release-notes/server/server-2_6_4',
                 'release-notes/server/server-2_6_3',
@@ -3843,7 +3845,6 @@ const sidebars = {
                 'release-notes/server/server-2_5_8',
                 'release-notes/server/server-2_5_7',
                 'release-notes/server/server-2_5_5',
-                'release-notes/server/server-2_5_4',
                 'release-notes/server/server-previous',
               ],
             },

@@ -30,6 +30,8 @@ export NODE_OPTIONS="--max-old-space-size=24576" && USE_SIMPLE_CSS_MINIFIER=true
 * kubernetes/container-map-detail-mode.mdx
 * kubernetes/container-map-trace.mdx
 * kubernetes/resource-node-list.mdx
+* kubernetes/container-map-log.mdx
+* kubernetes/container-map-target-info.mdx
 * \_log-exp.mdx
 
 ```
