@@ -3657,7 +3657,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/index',
@@ -3666,7 +3666,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java-batch/java-batch-2_2_25',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java-batch/java-batch-2_2_24',
                 'release-notes/java-batch/java-batch-2_2_23',
@@ -3745,9 +3745,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_9',
+                  id: 'release-notes/python/python-1_6_10',
                   className: 'new',
                 },
+                'release-notes/python/python-1_6_9',
                 'release-notes/python/python-1_6_8',
                 'release-notes/python/python-1_6_7',
                 'release-notes/python/python-1_6_6',
@@ -3757,7 +3758,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_2',
                 'release-notes/python/python-1_6_1',
                 'release-notes/python/python-1_6_0',
-                'release-notes/python/python-1_5_9',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3871,7 +3871,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -3880,7 +3880,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_7_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_7_8',
                 'release-notes/k8s/k8s-1_7_7',
