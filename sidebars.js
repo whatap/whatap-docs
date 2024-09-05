@@ -2564,9 +2564,9 @@ const sidebars = {
               collapsed: true,
               items: [
                 'tibero/analysis-count-trend',
-                // 'oracle-v1/analysis-lock-and-deadlock',
-                // 'oracle-v1/analysis-pq-tree',
-                // 'oracle-v1/analysis-databaseparameter',
+                'tibero/analysis-lock-and-deadlock',
+                'tibero/analysis-pq-tree',
+                'tibero/analysis-databaseparameter',
               ]
             },
             {
@@ -2587,19 +2587,19 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'tibero/analysis-function',
                 'tibero/stat',
+                'tibero/table-space-size',
+                'tibero/sga-size',
                 'tibero/report-intro',
-                'tibero/integrated-report',
               ]
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
