@@ -2511,10 +2511,8 @@ const sidebars = {
             id: 'tibero/agent-settings'
           },
           items: [
-            'tibero/agent-network',
-            'tibero/agent-naming',
-            'tibero/agent-aws',
-            'tibero/agent-data',
+            'tibero/agent-dbx-settings',
+            'tibero/agent-xos-settings',
           ],
         },
         'tibero/agent-manage',
@@ -2526,7 +2524,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2561,6 +2559,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'tibero/analysis-count-trend',
+                'tibero/analysis-lock-and-deadlock',
+                'tibero/analysis-pq-tree',
+                'tibero/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2577,19 +2587,19 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'tibero/analysis-function',
                 'tibero/stat',
+                'tibero/table-space-size',
+                'tibero/sga-size',
                 'tibero/report-intro',
-                'tibero/integrated-report',
               ]
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
