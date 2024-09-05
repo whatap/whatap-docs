@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[16023],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93208],{
 
 /***/ 15876:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -487,7 +487,7 @@ function _createMdxContent(props) {
   if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "mssql,tibero",
+      product: "tibero",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -508,7 +508,7 @@ function _createMdxContent(props) {
         })
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "mssql,tibero",
+      product: "tibero",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -551,7 +551,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 85058:
+/***/ 62233:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -575,9 +575,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'instance-list',
 	title: '인스턴스 목록',
-	description: '에이전트를 설치한 MongoDB 데이터베이스 서버들의 목록을 확인할 수 있습니다.',
+	description: '에이전트를 설치한 Redis 데이터베이스 서버들의 목록을 확인할 수 있습니다.',
 	keywords: [
-		'MongoDB',
+		'Redis',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스'
@@ -586,38 +586,38 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/instance-list",
+  "id": "redis/instance-list",
   "title": "인스턴스 목록",
-  "description": "에이전트를 설치한 MongoDB 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
-  "source": "@site/docs/mongodb/instance-list.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/instance-list",
-  "permalink": "/whatap-docs/mongodb/instance-list",
+  "description": "에이전트를 설치한 Redis 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
+  "source": "@site/docs/redis/instance-list.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/instance-list",
+  "permalink": "/whatap-docs/redis/instance-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/instance-list.mdx",
+  "editUrl": "undefined/docs/redis/instance-list.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "instance-list",
     "title": "인스턴스 목록",
-    "description": "에이전트를 설치한 MongoDB 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
+    "description": "에이전트를 설치한 Redis 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
     "keywords": [
-      "MongoDB",
+      "Redis",
       "인스턴스",
       "대시보드",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "redisSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/mongodb/dashboard-intro"
+    "permalink": "/whatap-docs/redis/dashboard-intro"
   },
   "next": {
     "title": "인스턴스 모니터링",
-    "permalink": "/whatap-docs/mongodb/instance-monitoring"
+    "permalink": "/whatap-docs/redis/instance-monitoring"
   }
 };
 const assets = {

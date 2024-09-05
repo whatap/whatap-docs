@@ -1,102 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98658],{
-
-/***/ 50682:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_db_instance_list_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(87854);
-/* harmony import */ var _common_items_db_instance_list_set_name_guide_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(71514);
-
-
-const frontMatter = {
-	id: 'instance-list',
-	title: '인스턴스 목록',
-	description: '에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.',
-	keywords: [
-		'Altibase',
-		'인스턴스',
-		'대시보드',
-		'데이터베이스 모니터링'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase-v1/instance-list",
-  "title": "인스턴스 목록",
-  "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
-  "source": "@site/docs/altibase-v1/instance-list.mdx",
-  "sourceDirName": "altibase-v1",
-  "slug": "/altibase-v1/instance-list",
-  "permalink": "/whatap-docs/altibase-v1/instance-list",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase-v1/instance-list.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "instance-list",
-    "title": "인스턴스 목록",
-    "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
-    "keywords": [
-      "Altibase",
-      "인스턴스",
-      "대시보드",
-      "데이터베이스 모니터링"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "altibasev1Sidebar",
-  "previous": {
-    "title": "실시간 데이터베이스 성능 지표 확인",
-    "permalink": "/whatap-docs/altibase-v1/dashboard-intro"
-  },
-  "next": {
-    "title": "인스턴스 모니터링",
-    "permalink": "/whatap-docs/altibase-v1/instance-monitoring"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-
-const toc = [..._common_items_db_instance_list_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_instance_list_set_name_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_list_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_list_set_name_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[36590],{
 
 /***/ 71514:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -133,7 +36,7 @@ function _createMdxContent(props) {
   if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "mssql,tibero",
+      product: "tibero",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -154,7 +57,7 @@ function _createMdxContent(props) {
         })
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "mssql,tibero",
+      product: "tibero",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -273,6 +176,103 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 69071:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_db_instance_list_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(87854);
+/* harmony import */ var _common_items_db_instance_list_set_name_guide_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(71514);
+
+
+const frontMatter = {
+	id: 'instance-list',
+	title: '인스턴스 목록',
+	description: '에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.',
+	keywords: [
+		'Tibero',
+		'인스턴스',
+		'대시보드',
+		'데이터베이스 모니터링'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "tibero/instance-list",
+  "title": "인스턴스 목록",
+  "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
+  "source": "@site/docs/tibero/instance-list.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/instance-list",
+  "permalink": "/whatap-docs/tibero/instance-list",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/tibero/instance-list.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "instance-list",
+    "title": "인스턴스 목록",
+    "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
+    "keywords": [
+      "Tibero",
+      "인스턴스",
+      "대시보드",
+      "데이터베이스 모니터링"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "tiberoSidebar",
+  "previous": {
+    "title": "실시간 데이터베이스 성능 지표 확인",
+    "permalink": "/whatap-docs/tibero/dashboard-intro"
+  },
+  "next": {
+    "title": "인스턴스 모니터링",
+    "permalink": "/whatap-docs/tibero/instance-monitoring"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+const toc = [..._common_items_db_instance_list_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_instance_list_set_name_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_list_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_list_set_name_guide_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

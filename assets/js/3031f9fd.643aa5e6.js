@@ -1015,7 +1015,7 @@ function _createMdxContent(props) {
       id: "차트-및-액티브-세션-영역-활용하기",
       children: "차트 및 액티브 세션 영역 활용하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-v1,cubrid",
+      product: "oracle-v1,cubrid,mssql",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["화면 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "레이아웃 아이콘",
@@ -1040,108 +1040,59 @@ function _createMdxContent(props) {
           className: "uitext"
         }), "으로 설정하세요. 다음과 같이 하루 동안의 데이터베이스 핵심 지표를 자세히 확인할 수 있습니다."]
       })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "mssql",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["화면 위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "레이아웃 아이콘",
-          src: (__webpack_require__(54335)/* ["default"] */ .A) + "",
-          width: "24",
-          height: "24"
-        }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "layout_setting",
-          className: "uitext"
-        }), " 창에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "1 x 3"
-          })
-        }), "으로 설정한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "save",
-          className: "uitext"
-        }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "숫자 1",
-          src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
-          width: "35",
-          height: "35"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "instance",
-          className: "uitext"
-        }), "에서 비교할 인스턴스를 선택하고, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "숫자 2",
-          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-          width: "35",
-          height: "35"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06569",
-          className: "uitext"
-        }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "숫자 2",
-          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-          width: "35",
-          height: "35"
-        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06570",
-          className: "uitext"
-        }), "를 설정하세요. 다음과 같이 하루 동안의 데이터베이스 핵심 지표를 자세히 확인할 수 있습니다."]
-      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
       img: "db-count-trend-1x3.png",
       desc: "카운트 추이"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "oracle-v1,cubrid",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 1",
-              src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "시간"
-              })
-            }), "에서 원하는 시간 간격을 설정하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: "녹색 아이콘을 클릭하면 검색 시간을 선택할 수 있습니다."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["검색 시간을 선택한 상태에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-                alt: "왼쪽 방향 아이콘",
-                src: (__webpack_require__(92541)/* ["default"] */ .A) + "",
-                width: "24",
-                height: "25"
-              }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-                alt: "오른쪽 방향 아이콘",
-                src: (__webpack_require__(21376)/* ["default"] */ .A) + "",
-                width: "24",
-                height: "24"
-              }), " 버튼을 선택하면 설정한 시간 간격으로 검색 시간을 변경할 수 있습니다."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-              children: ["날짜와 시간 부분을 선택하면 원하는 시간을 세부적으로 설정할 수 있습니다. 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "확인"
-                })
-              }), " 버튼을 선택하세요."]
-            }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-              alt: "숫자 2",
-              src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
-              width: "35",
-              height: "35"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "인스턴스"
-              })
-            }), ": 프로젝트와 연결한 인스턴스를 선택할 수 있습니다."]
-          }), "\n"]
-        }), "\n"]
-      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "숫자 1",
+            src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
+            width: "35",
+            height: "35"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "시간"
+            })
+          }), "에서 원하는 시간 간격을 설정하세요."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+            children: "녹색 아이콘을 클릭하면 검색 시간을 선택할 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["검색 시간을 선택한 상태에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "왼쪽 방향 아이콘",
+              src: (__webpack_require__(92541)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "25"
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "오른쪽 방향 아이콘",
+              src: (__webpack_require__(21376)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " 버튼을 선택하면 설정한 시간 간격으로 검색 시간을 변경할 수 있습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["날짜와 시간 부분을 선택하면 원하는 시간을 세부적으로 설정할 수 있습니다. 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "확인"
+              })
+            }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "숫자 2",
+            src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
+            width: "35",
+            height: "35"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "인스턴스"
+            })
+          }), ": 프로젝트와 연결한 인스턴스를 선택할 수 있습니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["지표 차트의 특정 시점을 클릭하면(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
             alt: "숫자 3",

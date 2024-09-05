@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93437],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28713],{
 
 /***/ 15876:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -487,7 +487,7 @@ function _createMdxContent(props) {
   if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      product: "mssql,tibero",
+      product: "tibero",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -508,7 +508,7 @@ function _createMdxContent(props) {
         })
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "mssql,tibero",
+      product: "tibero",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "tip",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -551,7 +551,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 70210:
+/***/ 29182:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -577,7 +577,7 @@ const frontMatter = {
 	title: '인스턴스 목록',
 	description: '에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.',
 	keywords: [
-		'PostgreSQL',
+		'MySQL',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스 모니터링'
@@ -586,16 +586,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/instance-list",
+  "id": "mysql/instance-list",
   "title": "인스턴스 목록",
   "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
-  "source": "@site/docs/postgresql/instance-list.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/instance-list",
-  "permalink": "/whatap-docs/postgresql/instance-list",
+  "source": "@site/docs/mysql/instance-list.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/instance-list",
+  "permalink": "/whatap-docs/mysql/instance-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/instance-list.mdx",
+  "editUrl": "undefined/docs/mysql/instance-list.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -603,21 +603,21 @@ const metadata = {
     "title": "인스턴스 목록",
     "description": "에이전트를 설치한 데이터베이스 서버들의 목록을 확인할 수 있습니다.",
     "keywords": [
-      "PostgreSQL",
+      "MySQL",
       "인스턴스",
       "대시보드",
       "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "대시보드",
-    "permalink": "/whatap-docs/postgresql/dashboard-intro"
+    "permalink": "/whatap-docs/mysql/dashboard-intro"
   },
   "next": {
     "title": "인스턴스 모니터링",
-    "permalink": "/whatap-docs/postgresql/instance-monitoring"
+    "permalink": "/whatap-docs/mysql/instance-monitoring"
   }
 };
 const assets = {
