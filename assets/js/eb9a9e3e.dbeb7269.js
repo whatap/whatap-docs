@@ -27,7 +27,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/python/python-previous",
   "title": "Python Agent 지난 버전",
-  "description": "* Python Agent v1.5.8",
+  "description": "* Python Agent v1.5.9",
   "source": "@site/docs/release-notes/python/python-previous.mdx",
   "sourceDirName": "release-notes/python",
   "slug": "/release-notes/python/python-previous",
@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Python Agent v1.5.9",
-    "permalink": "/whatap-docs/release-notes/python/python-1_5_9"
+    "title": "Python Agent v1.6.0",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_0"
   },
   "next": {
     "title": ".NET Agent Release Notes",
@@ -72,6 +72,13 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "python-1_5_9",
+            children: "Python Agent v1.5.9"
+          })
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
             href: "python-1_5_8",

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[24951],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[82548],{
 
-/***/ 52231:
+/***/ 76919:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,32 +18,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_6_9',
-	title: 'Python Agent v1.6.9',
+	id: 'python-1_6_10',
+	title: 'Python Agent v1.6.10',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_6_8',
+	pagination_next: 'release-notes/python/python-1_6_9',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_6_9",
-  "title": "Python Agent v1.6.9",
-  "description": "2024년 09월 03일",
-  "source": "@site/docs/release-notes/python/python-1.6.9.mdx",
+  "id": "release-notes/python/python-1_6_10",
+  "title": "Python Agent v1.6.10",
+  "description": "2024년 09월 05일",
+  "source": "@site/docs/release-notes/python/python-1.6.10.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_6_9",
-  "permalink": "/whatap-docs/release-notes/python/python-1_6_9",
+  "slug": "/release-notes/python/python-1_6_10",
+  "permalink": "/whatap-docs/release-notes/python/python-1_6_10",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.6.9.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.6.10.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_6_9",
-    "title": "Python Agent v1.6.9",
+    "id": "python-1_6_10",
+    "title": "Python Agent v1.6.10",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_6_8",
+    "pagination_next": "release-notes/python/python-1_6_9",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
@@ -53,8 +53,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/python/"
   },
   "next": {
-    "title": "Python Agent v1.6.8",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_8"
+    "title": "Python Agent v1.6.9",
+    "permalink": "/whatap-docs/release-notes/python/python-1_6_9"
   }
 };
 const assets = {
@@ -68,37 +68,37 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    code: "code",
+    li: "li",
     p: "p",
-    strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 09월 03일"
+      children: "2024년 09월 05일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         priority: "1",
         children: "New"
-      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "oracle-client"
-      }), " 모듈에 대한 추적(tracing) 기능 추가"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["오라클 클라이언트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "oracle-client"
-      }), ")에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        children: "connect"
-      }), " 메서드와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        children: "Connection.close"
-      }), " 메서드에 계측 기능을 적용하여, 데이터베이스 연결과 종료 시점을 추적할 수 있는 기능을 추가했습니다."]
+      }), " Django 프레임워크에서 ASGI 지원"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "Django에서 Uvicorn 사용을 위한 지원 로직을 추가하였습니다."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "비동기 작업에서 로컬스레드 사용 시 발생할 수 있는 데이터 침해 문제를 해결하기 위해 콘텍스트를 유지하는 로직을 추가했습니다."
+        }), "\n"]
+      }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.6.9/",
-          children: "whatap-python v1.6.9"
+          href: "https://pypi.org/project/whatap-python/1.6.10/",
+          children: "whatap-python v1.6.10"
         })]
       })
     })]
