@@ -3752,9 +3752,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_8',
+                  id: 'release-notes/python/python-1_6_9',
                   className: 'new',
                 },
+                'release-notes/python/python-1_6_8',
                 'release-notes/python/python-1_6_7',
                 'release-notes/python/python-1_6_6',
                 'release-notes/python/python-1_6_5',
@@ -3764,7 +3765,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_1',
                 'release-notes/python/python-1_6_0',
                 'release-notes/python/python-1_5_9',
-                'release-notes/python/python-1_5_8',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3781,9 +3781,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_1',
+                  id: 'release-notes/dotnet/dotnet-2_3_2',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_1',
                 'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
@@ -3792,7 +3793,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_5',
                 'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
-                'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
