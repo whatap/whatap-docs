@@ -2559,6 +2559,18 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'tibero/analysis-count-trend',
+                // 'oracle-v1/analysis-lock-and-deadlock',
+                // 'oracle-v1/analysis-pq-tree',
+                // 'oracle-v1/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
