@@ -5087,8 +5087,8 @@ const metadata = {
   },
   "unlisted": false,
   "nextItem": {
-    "title": "2분기 안내",
-    "permalink": "/whatap-docs/blog/2024-2q-summary"
+    "title": "상반기 종합 안내",
+    "permalink": "/whatap-docs/blog/2024-first-half-summary"
   }
 };
 const assets = {
