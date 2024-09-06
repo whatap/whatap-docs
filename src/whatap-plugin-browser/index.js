@@ -33,35 +33,9 @@ module.exports = function () {
                 {
                   tagName: "script",
                   innerHTML: `
-                  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
-                  r.type="text/javascript";
-                  r.integrity="sha384-5fhzC8Xw3m+x5cBag4AMKRdf900vw3AoaLty2vYfcKIX1iEsYRHZF4RLXIsu2o+F"
-                  r.crossOrigin="anonymous";r.async=true;
-                  r.src="https://cdn.amplitude.com/libs/amplitude-8.21.4-min.gz.js";
-                  r.onload=function(){if(!e.amplitude.runQueuedFunctions){console.log(
-                  "[Amplitude] Error: could not load SDK")}};var s=t.getElementsByTagName("script"
-                  )[0];s.parentNode.insertBefore(r,s);function i(e,t){e.prototype[t]=function(){
-                  this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
-                  var o=function(){this._q=[];return this};var a=["add","append","clearAll",
-                  "prepend","set","setOnce","unset","preInsert","postInsert","remove"];for(
-                  var c=0;c<a.length;c++){i(o,a[c])}n.Identify=o;var l=function(){this._q=[];
-                  return this};var u=["setProductId","setQuantity","setPrice","setRevenueType",
-                  "setEventProperties"];for(var p=0;p<u.length;p++){i(l,u[p])}n.Revenue=l;var d=[
-                  "init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut",
-                  "setVersionName","setDomain","setDeviceId","enableTracking",
-                  "setGlobalUserProperties","identify","clearUserProperties","setGroup",
-                  "logRevenueV2","regenerateDeviceId","groupIdentify","onInit","onNewSessionStart"
-                  ,"logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId",
-                  "getDeviceId","getUserId","setMinTimeBetweenSessionsMillis",
-                  "setEventUploadThreshold","setUseDynamicConfig","setServerZone","setServerUrl",
-                  "sendEvents","setLibrary","setTransport"];function v(t){function e(e){t[e
-                  ]=function(){t._q.push([e].concat(Array.prototype.slice.call(arguments,0)))}}
-                  for(var n=0;n<d.length;n++){e(d[n])}}v(n);n.getInstance=function(e){e=(
-                  !e||e.length===0?"$default_instance":e).toLowerCase();if(
-                  !Object.prototype.hasOwnProperty.call(n._iq,e)){n._iq[e]={_q:[]};v(n._iq[e])}
-                  return n._iq[e]};e.amplitude=n})(window,document);
-                  
-                  amplitude.getInstance().init("02434e2a648821186600db8943872ab5");
+                  !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(r,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))};o(e,t,Array.prototype.slice.call(arguments))}},a=function(e){for(var t=0;t<g.length;t++)i(e,g[t],!1);for(var r=0;r<m.length;r++)i(e,m[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-BHj/6N+ZSiRDYRUHPEqr/nwkUsSk3s9r1ryQeFBc4x2OiVz4peW3jSccKZsoU8Ry",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-2.6.2-beta.0-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var l=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<p.length;d++)n(l,p[d]);r.Identify=l;for(var f=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<v.length;y++)n(f,v[y]);r.Revenue=f;var g=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+                  amplitude.init("02434e2a648821186600db8943872ab5");
+                  console.debug("Amplitude Initialized.");
                   `
                 },
               ]
