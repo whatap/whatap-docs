@@ -97,6 +97,9 @@ export default function App() {
                 indexName="whatap" 
                 searchClient={searchClient}
                 routing={true}
+                future={{
+                    preserveSharedStateOnUnmount: true
+                }}
                 >
                 <div className="left-panel">
                     <ClearRefinements />

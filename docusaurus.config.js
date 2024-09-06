@@ -5,7 +5,6 @@ const {themes} = require('prism-react-renderer');
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 const {rehypeExtendedTable} = require("rehype-extended-table");
-const API_KEY = process.env.AMPLITUDE_API_KEY;
 // const rehypeSectionHeadings = require("rehype-section-headings");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -45,14 +44,8 @@ const config = {
     }
   },
   // trailingSlash: false,
-  // clientModules: [
-  //   require.resolve('./static/js/rum.js')
-  // ],
-  scripts: [
-    // {
-    //   src: 'https://app.happyreact.com/widget/reactions.js',
-    //   async: true,
-    // },
+  clientModules: [
+    require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
