@@ -49,8 +49,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Go Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/golang/"
+    "title": "Go Agent v0.4.2",
+    "permalink": "/whatap-docs/release-notes/golang/golang-0_4_2"
   },
   "next": {
     "title": "Go Agent v0.4.0",

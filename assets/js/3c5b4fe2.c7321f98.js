@@ -27,7 +27,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/golang/golang-previous",
   "title": "Go Agent 지난 버전",
-  "description": "* Go Agent 0.1.13",
+  "description": "* Go Agent 0.1.14",
   "source": "@site/docs/release-notes/golang/golang-previous.mdx",
   "sourceDirName": "release-notes/golang",
   "slug": "/release-notes/golang/golang-previous",
@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Go Agent v0.1.14",
-    "permalink": "/whatap-docs/release-notes/golang/golang-0_1_14"
+    "title": "Go Agent v0.2.2",
+    "permalink": "/whatap-docs/release-notes/golang/golang-0_2_2"
   },
   "next": {
     "title": "Server Agent Release Notes",
@@ -71,6 +71,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "golang-0_1_14",
+          children: "Go Agent 0.1.14"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "golang-0_1_13",

@@ -47,15 +47,7 @@ const metadata = {
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Go Agent v0.2.2",
-    "permalink": "/whatap-docs/release-notes/golang/golang-0_2_2"
-  },
-  "next": {
-    "title": "Go Agent 지난 버전",
-    "permalink": "/whatap-docs/release-notes/golang/golang-previous"
-  }
+  "sidebar": "releaseSidebar"
 };
 const assets = {
 
