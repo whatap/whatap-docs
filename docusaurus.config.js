@@ -44,14 +44,8 @@ const config = {
     }
   },
   // trailingSlash: false,
-  // clientModules: [
-  //   require.resolve('./static/js/rum.js')
-  // ],
-  scripts: [
-    // {
-    //   src: 'https://app.happyreact.com/widget/reactions.js',
-    //   async: true,
-    // },
+  clientModules: [
+    require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
