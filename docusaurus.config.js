@@ -5,7 +5,6 @@ const {themes} = require('prism-react-renderer');
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 const {rehypeExtendedTable} = require("rehype-extended-table");
-const API_KEY = process.env.AMPLITUDE_API_KEY;
 // const rehypeSectionHeadings = require("rehype-section-headings");
 
 /** @type {import('@docusaurus/types').Config} */
