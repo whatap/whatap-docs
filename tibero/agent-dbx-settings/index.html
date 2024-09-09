@@ -24,8 +24,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.c8f35aa7.css">
-<script src="/whatap-docs/assets/js/runtime~main.a3ec2deb.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.7883ba65.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.fdb74b10.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.e750b994.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -124,7 +124,7 @@
 <!-- -->
 <!-- -->
 </section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-aws-rds">AWS RDS CloudWatch 적용<a href="#using-aws-rds" class="hash-link" aria-label="AWS RDS CloudWatch 적용에 대한 직접 링크" title="AWS RDS CloudWatch 적용에 대한 직접 링크">​</a></h2><p></p><p>AWS CloudWatch를 이용하는 에이전트 설정에 대한 설명입니다. 수집을 시작하면 메트릭스에 포함되며, <span class="uitext">관리</span> &gt; <span class="uitext">메트릭스 차트</span> 메뉴의 <code>db_postgresql_counter</code> 카테고리에서 다른 지표들과 함께 확인할 수 있습니다.</p><p></p><ul>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="using-aws-rds">AWS RDS CloudWatch 적용<a href="#using-aws-rds" class="hash-link" aria-label="AWS RDS CloudWatch 적용에 대한 직접 링크" title="AWS RDS CloudWatch 적용에 대한 직접 링크">​</a></h2><p>AWS CloudWatch를 이용하는 에이전트 설정에 대한 설명입니다. 수집을 시작하면 메트릭스에 포함되며, <span class="uitext">관리</span> &gt; <span class="uitext">메트릭스 차트</span> 메뉴의 <code>db_postgresql_counter</code> 카테고리에서 다른 지표들과 함께 확인할 수 있습니다.</p><ul>
 <li>
 <p><strong>aws_region</strong> <span class="type">String</span></p>
 <p>AWS 리전을 설정합니다.</p>
@@ -132,7 +132,7 @@
 <li>
 <p><strong>aws_arn</strong> <span class="type">String</span></p>
 <p>AWS 인증을 위해 적절한 권한을 가진 IAM ROLE의 ARN을 사용할 수 있습니다.</p>
-<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary> 필수 권한</summary><div><div class="collapsibleContent_i85q"><p>ROLE은 다음의 권한(Policy)이 필요합니다.</p><table><thead><tr><th>권한</th><th>권한 내용</th></tr></thead><tbody><tr><td>rds<!-- -->:DescribeDBInstances</td><td>인스턴스 클래스 정보 수집</td></tr><tr><td>rds<!-- -->:DescribeDBClusters</td><td>autoscale 사용 시 클러스터의 정보 수집</td></tr><tr><td>rds<!-- -->:DescribeDBLogFiles</td><td>CloudWatch 로그 수집</td></tr><tr><td>rds<!-- -->:DownloadDBLogFilePortion</td><td>CloudWatch 로그 수집</td></tr><tr><td>ec2<!-- -->:DescribeInstanceTypes</td><td>인스턴스 클래스에 해당하는 cpu 개수 수집</td></tr><tr><td>elasticache<!-- -->:DescribeCacheClusters</td><td>elasticache 이용 시 인스턴스 클래스 정보 수집</td></tr><tr><td>cloudwatch<!-- -->:ListMetrics</td><td>CloudWatch 지표 리스트 수집</td></tr><tr><td>cloudwatch<!-- -->:GetMetricStatistics</td><td>CloudWatch 지표의 값 수집</td></tr><tr><td>logs<!-- -->:DescribeLogStreams</td><td>CloudWatch 로그 수집(게시된 로그 기능 사용 시)</td></tr><tr><td>logs<!-- -->:GetLogEvents</td><td>CloudWatch 로그 수집(게시된 로그 기능 사용 시)</td></tr></tbody></table></div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>필수  권한</summary><div><div class="collapsibleContent_i85q"><p>ROLE은 다음의 권한(Policy)이 필요합니다.</p><table><thead><tr><th>권한</th><th>권한 내용</th></tr></thead><tbody><tr><td>rds<!-- -->:DescribeDBInstances</td><td>인스턴스 클래스 정보 수집</td></tr><tr><td>rds<!-- -->:DescribeDBClusters</td><td>autoscale 사용 시 클러스터의 정보 수집</td></tr><tr><td>rds<!-- -->:DescribeDBLogFiles</td><td>CloudWatch 로그 수집</td></tr><tr><td>rds<!-- -->:DownloadDBLogFilePortion</td><td>CloudWatch 로그 수집</td></tr><tr><td>ec2<!-- -->:DescribeInstanceTypes</td><td>인스턴스 클래스에 해당하는 cpu 개수 수집</td></tr><tr><td>elasticache<!-- -->:DescribeCacheClusters</td><td>elasticache 이용 시 인스턴스 클래스 정보 수집</td></tr><tr><td>cloudwatch<!-- -->:ListMetrics</td><td>CloudWatch 지표 리스트 수집</td></tr><tr><td>cloudwatch<!-- -->:GetMetricStatistics</td><td>CloudWatch 지표의 값 수집</td></tr><tr><td>logs<!-- -->:DescribeLogStreams</td><td>CloudWatch 로그 수집(게시된 로그 기능 사용 시)</td></tr><tr><td>logs<!-- -->:GetLogEvents</td><td>CloudWatch 로그 수집(게시된 로그 기능 사용 시)</td></tr></tbody></table></div></div></details>
 </li>
 <li>
 <p><strong>cloud_watch</strong> <span class="type">String</span></p>
@@ -168,7 +168,7 @@
 <li>
 <p><strong>object_name</strong> <span class="type">String</span></p>
 <p>기본값 <code>{type}</code>-<code>{ip2}</code>-<code>{ip3}</code>-<code>{port}</code></p>
-<p>데이터베이스 서버를 식별하기 위한 에이전트 이름(ONAME) 구성   방식입니다. ONAME을 토대로 OID가 생성됩니다.</p>
+<p>데이터베이스 서버를 식별하기 위한 에이전트 이름(ONAME) 구성 방식입니다. ONAME을 토대로 OID가 생성됩니다.</p>
 <table><thead><tr><th>설정</th><th>설명</th></tr></thead><tbody><tr><td><code>{type}</code></td><td><code>whatap.app_name</code>에 설정된 값을 사용합니다</td></tr><tr><td><code>{ip0}</code></td><td>IPv4 주소 중 첫 번째 단위를 사용합니다. (예시, <strong>10</strong>.11.12.13 중 <strong>10</strong>)</td></tr><tr><td><code>{ip1}</code></td><td>IPv4 주소 중 두 번째 단위를 사용합니다. (예시, 10.<strong>11</strong>.12.13 중 <strong>11</strong>)</td></tr><tr><td><code>{ip2}</code></td><td>IPv4 주소 중 세 번째 단위를 사용합니다. (예시, 10.11.<strong>12</strong>.13 중 <strong>12</strong>)</td></tr><tr><td><code>{ip3}</code></td><td>IPv4 주소 중 네 번째 단위를 사용합니다. (예시, 10.11.12.<strong>13</strong> 중 <strong>13</strong>)</td></tr><tr><td><code>{port}</code></td><td>데이터베이스 서버 포트</td></tr><tr><td><code>{hostname}</code></td><td>호스트 명</td></tr></tbody></table>
 </li>
 <li>
@@ -184,7 +184,7 @@
 <li>
 <p><strong>auto_oname_reset</strong> <span class="type">Int</span></p>
 <p>기본값 <code>0</code></p>
-<p>서버로부터 새로운 에이전트 이름을 부여받기 위해 수정합니다. 에이전트 이름을 자동 부여하면 <code>whatap.oname</code>이라는 시스템 환경 변수로 설정됩니다. 한번 정해진 시스템 환경 변수는 자바 인스턴스가 다시 시작할 때까지 유지합니다. 리셋을 원할 때 <code>auto_oname_reset</code> 값을 수정하세요. 현재 설정 값과 다른 값으로 변경하면 적용됩니다.</p>
+<p>서버로부터 새로운 에이전트 이름을 부여받기 위해 수정합니다. 에이전트 이름을 자동   부여하면 <code>whatap.oname</code>이라는 시스템 환경 변수로 설정됩니다. 한번 정해진 시스템 환경 변수는 자바 인스턴스가 다시 시작할 때까지 유지합니다. 리셋을 원할 때 <code>auto_oname_reset</code> 값을 수정하세요. 현재 설정 값과 다른 값으로 변경하면 적용됩니다.</p>
 </li>
 </ul></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/tibero/agent-settings"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">설정하기</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/tibero/agent-xos-settings"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">XOS 에이전트 설정</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/tibero/agent-dbx-settings" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
 </body>
