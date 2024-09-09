@@ -269,6 +269,12 @@ html[lang='ja-JP'] {
   margin-right: 40px;
 }
 
+.navbar__item.box {
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: .9rem;
+  padding: 5px 8px;
+}
 .navbar__item {
   padding: 8px 12px;
   margin-right: 8px;
@@ -1090,6 +1096,36 @@ div.history_overview{
       }
     }
   }
+}
+code.Application {
+  background-color: rgb(220, 239, 255);
+  color: rgb(61, 169, 255);
+  border: none;
+  padding: 2px 5px;
+}
+code.Database {
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  border: none;
+  padding: 2px 5px;
+}
+code.Server {
+  background-color: rgb(210, 246, 249);
+  color: rgb(0, 138, 133);
+  border: none;
+  padding: 2px 5px;
+}
+code.Container {
+  background-color: rgb(215, 226, 255);
+  color: rgb(41, 108, 242);
+  border: none;
+  padding: 2px 5px;
+}
+code.URL {
+  background-color: rgb(219, 248, 227);
+  color: rgb(0, 181, 67);
+  border: none;
+  padding: 2px 5px;
 }
 
 // document

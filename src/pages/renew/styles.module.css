@@ -1,0 +1,176 @@
+.frontheading {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 35px;
+}
+
+.homehero {
+  height: 230px;
+  width: 100%;
+  background-color: #ddd;
+  align-content: center;
+  text-align: center;
+}
+
+.appcontainer {
+  padding: 0 25%;
+}
+.aa-Autocomplete {
+  width: 70%;
+}
+
+.justifycontentcenter {
+  align-content: center;
+  text-align: center;
+  padding: 15px 10%;
+}
+.justifycardcontent {
+  padding: 60px 5% 0 5%;
+}
+.justifycardcontent .flexcolumn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.justifycardcontent:last-of-type .flexContainer {
+  border-bottom: none;
+}
+.textcenter {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: 200;
+}
+.flexcolumn:first-of-type {
+  border-left: 1px solid #aaa;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.flexcolumn {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  width: 30%;
+  padding: 15px 20px;
+}
+.flexcolumn:last-of-type {
+  border-right: 1px solid #aaa;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.flexContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 30px 0 60px 0;
+  border-bottom: 1px solid;
+}
+
+.flexContainer .flexProd {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  align-content: center;
+  text-align: center;
+}
+
+.flexContainer .flexProd a.alignCenter {
+  display: block;
+  align-content: center;
+  padding: 10px 20px;
+  height: 120px;
+  width: 100%;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+}
+
+.flexContainer .flexProd a.alignCenter .product {
+  display: flex;
+}
+
+.flexContainer .flexProd a.alignCenter .product .logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 55px;
+  height: 85.95px;
+  margin-right: 20px;
+  align-content: center;
+}
+
+.logo img {
+  width: 55px;
+  max-width: 60px;
+}
+
+.flexContainer .flexProd a.alignCenter .product .desc {
+  display: block;
+  text-align: left;
+  align-content: center;
+}
+
+.flexContainer .flexProd a.alignCenter .product .desc .title,
+.flexContainer .flexProd a.alignCenter .product .desc .type {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.rightarrowcontainer {
+  width: 25px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.rightarrow {
+  height: 100%;
+  width: 100%;
+}
+
+.rightarrow path {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.innercontent {
+  min-height: 100px;
+  /* background-color: #aaa; */
+  text-align: left;
+}
+
+p.textleft {
+  text-align: left;
+}
+
+p.small {
+  font-size: .8rem;
+}
+
+.inline {
+  display: inline-block;
+}
+.iconumber {
+  position: relative;
+  display: inline-block;
+  height: 25px;
+  margin-right: 13px;
+  top: 6px;
+}

@@ -254,20 +254,8 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'whatap-overview',
-            label: '시작하기',
-            position: 'left',
-          },
-          {
-            type: 'doc',
-            docId: 'learning-guides',
-            label: '학습하기',
-            position: 'left',
-          },
-          {
             type: 'dropdown',
-            label: '상품별 문서 바로가기',
+            label: '상품',
             position: 'left',
             items: [
               {
@@ -647,33 +635,9 @@ const config = {
           },
           // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
           {
-            type: 'doc',
-            docId: 'manage',
-            position: 'left',
-            label: '관리 기능',
-          },
-          {
             to: 'openapi-spec',
             position: 'left',
             label: 'Open API',
-          },
-          {
-            type: 'doc',
-            docId: 'license/licenses',
-            position: 'left',
-            label: '라이선스',
-          },
-          // {
-          //   type: 'doc',
-          //   docId: 'reference',
-          //   position: 'left',
-          //   label: '참조 문서',
-          // },
-          {
-            type: 'doc',
-            docId: 'release-notes',
-            position: 'left',
-            label: '릴리스 노트',
           },
           {
             type: 'doc',
@@ -682,7 +646,10 @@ const config = {
             label: 'FAQ',
           },
           {
-            to: 'blog', label: '새로운 기능', position: 'left'
+            to: 'blog', 
+            label: 'What\'s New', 
+            className: 'box',
+            position: 'right'
           },
           {
             type: 'localeDropdown',
