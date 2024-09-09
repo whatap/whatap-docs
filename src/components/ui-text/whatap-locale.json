@@ -55224,10 +55224,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55519,7 +55519,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -55721,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55945,10 +55945,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56261,7 +56261,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56421,10 +56421,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -57724,7 +57724,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果の選択",
+    "ja": "検索結果を選択",
     "ko": "검색 결과 선택",
     "zh": "Select search results",
     "service_id": "CNT08366"
@@ -58220,10 +58220,10 @@
     "service_id": "DSC08436"
   },
   "DSC08437": {
-    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "ja": "<b> {resource}使用率</b>が平均{avg}から最大{max}まで増加し、<b>断続的に高い負荷が発生する可能性</b>があります。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}에서 최대 {max}까지 증가하여 <b>간헐적으로 높은 부하가 발생할 가능성</b>이 있습니다.",
-    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "service_id": "DSC08437"
   },
   "DSC08438": {
@@ -58393,6 +58393,146 @@
     "ko": "노드 맵 설정",
     "zh": "Node map settings",
     "service_id": "TTL08461"
+  },
+  "TTL08462": {
+    "en": "When you update the agent<br/>\nYou can manage and view server configuration information.",
+    "ja": "エージェントを更新すると<br/>\nサーバー構成情報を管理および照会できます。",
+    "ko": "에이전트를 업데이트하면<br/>\n서버 구성정보를 관리하고 조회할 수 있어요",
+    "zh": "When you update the agent<br/>\nYou can manage and view server configuration information.",
+    "service_id": "TTL08462"
+  },
+  "CNT08463": {
+    "en": "hello. For easy and convenient infrastructure operation, a new <br/><b style=\"color:{primaryColor}\">server configuration information</b> query/management function has been added.",
+    "ja": "こんにちは。簡単で便利なインフラストラクチャ運用のために、<br/><b style=\"color:{primaryColor}\">サーバー構成情報</b> ルックアップ/管理機能を追加しました。",
+    "ko": "안녕하세요. 쉽고 편리한 인프라 운영을 위해<br/><b style=\"color:{primaryColor}\">서버 구성 정보</b> 조회/관리 기능을 새롭게 추가 했습니다.",
+    "zh": "hello. For easy and convenient infrastructure operation, a new <br/><b style=\"color:{primaryColor}\">server configuration information</b> query/management function has been added.",
+    "service_id": "CNT08463"
+  },
+  "ITM08464": {
+    "en": "The number of automatically collected server configuration information items has increased significantly.",
+    "ja": "自動的に収集されるサーバー構成情報のエントリが大幅に増加しました。",
+    "ko": "자동으로 수집되는 서버 구성정보 항목이 대폭 늘어 났습니다.",
+    "zh": "The number of automatically collected server configuration information items has increased significantly.",
+    "service_id": "ITM08464"
+  },
+  "ITM08465": {
+    "en": "Physical/Virtual server type classification",
+    "ja": "Physical/Virtual サーバータイプの区別",
+    "ko": "Physical/Virtual 서버 타입 구분",
+    "zh": "Physical/Virtual server type classification",
+    "service_id": "ITM08465"
+  },
+  "ITM08466": {
+    "en": "Gather server model and serial information",
+    "ja": "サーバーモデルとシリアル情報の収集",
+    "ko": "서버 모델 및 시리얼 정보 수집",
+    "zh": "Gather server model and serial information",
+    "service_id": "ITM08466"
+  },
+  "ITM08467": {
+    "en": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and Socket count for X86)",
+    "ja": "CPU 数量情報のセグメンテーション (CPU Cores、Logical Cores、X86 の場合は Socket 数) で収集",
+    "ko": "CPU 수량 정보 세분화 (CPU Cores, Logical Cores 및 X86 의 경우 Socket 수)하여 수집",
+    "zh": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and Socket count for X86)",
+    "service_id": "ITM08467"
+  },
+  "ITM08468": {
+    "en": "Timezone and server uptime information",
+    "ja": "Timezoneとサーバーのアップタイム情報",
+    "ko": "Timezone 및 서버 업타임 정보",
+    "zh": "Timezone and server uptime information",
+    "service_id": "ITM08468"
+  },
+  "ITM08469": {
+    "en": "Server nickname and basic group operator input function, etc.",
+    "ja": "サーバー別名、基本グループオペレーター入力機能など",
+    "ko": "서버 별명 및 기본그룹 운영자 입력 기능 등",
+    "zh": "Server nickname and basic group operator input function, etc.",
+    "service_id": "ITM08469"
+  },
+  "ITM08470": {
+    "en": "If additional configuration management items are needed for server operation, we provide the ability to manually create and enter management items.  (Available for managing various groups, operations staff, support vendors, server introduction date, etc.) ",
+    "ja": "サーバー操作に追加の構成管理項目が必要な場合は、手動で管理項目を作成して入力する機能を提供します。  （様々なグループ管理、運営担当者、サポートベンダー、サーバー導入日など管理可能） ",
+    "ko": "서버 운영에 추가적인 구성 관리 항목이 필요하다면 수동으로 관리 항목을 만들고입력할 수 있는 기능을 제공합니다.  (다양한 그룹 관리, 운영담당자, 지원 벤더, 서버 도입일 등 관리 가능) ",
+    "zh": "If additional configuration management items are needed for server operation, we provide the ability to manually create and enter management items.  (Available for managing various groups, operations staff, support vendors, server introduction date, etc.) ",
+    "service_id": "ITM08470"
+  },
+  "ITM08471": {
+    "en": "We maximize search convenience by providing a filter function using management columns and a sorting function of up to 3 levels.",
+    "ja": "管理カラムを活用したフィルタ機能を提供し、最大3レベルのソート機能を提供し、照会の利便性を最大化しました。",
+    "ko": "관리 컬럼을 활용한 필터 기능 제공 및 최대 3레벨의 정렬 기능을 제공하여 조회 편의성을극대화하였습니다.",
+    "zh": "We maximize search convenience by providing a filter function using management columns and a sorting function of up to 3 levels.",
+    "service_id": "ITM08471"
+  },
+  "ITM08472": {
+    "en": "You can download server configuration information as a CSV file.",
+    "ja": "サーバー構成情報をCSVファイルとしてダウンロードできます。",
+    "ko": "서버 구성 정보를 CSV 파일로 다운로드 받을 수 있습니다.",
+    "zh": "You can download server configuration information as a CSV file.",
+    "service_id": "ITM08472"
+  },
+  "CNT08473": {
+    "en": "<b>Support agent version information</b>",
+    "ja": "<b>サポートエージェントのバージョン情報</b>",
+    "ko": "<b>지원 에이전트 버전 정보</b>",
+    "zh": "<b>Support agent version information</b>",
+    "service_id": "CNT08473"
+  },
+  "CNT08474": {
+    "en": "Linux 2.6.6 or higher, AIX 1.3.4 or higher, Solaris 1.3.4 or higher, Windows 2.6.6 or higher",
+    "ja": "Linux 2.6.6以降、AIX 1.3.4以降、Solaris 1.3.4以降、Windows 2.6.6以降",
+    "ko": "Linux 2.6.6 이상, AIX 1.3.4 이상, Solaris 1.3.4 이상, Windows 2.6.6 이상",
+    "zh": "Linux 2.6.6 or higher, AIX 1.3.4 or higher, Solaris 1.3.4 or higher, Windows 2.6.6 or higher",
+    "service_id": "CNT08474"
+  },
+  "CNT08475": {
+    "en": "For information on how to activate the server configuration information inquiry function, please refer to the information page.",
+    "ja": "サーバー構成情報の検索機能を有効にする方法については、ガイドページの内容を参照してください。",
+    "ko": "서버 구성정보 조회 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
+    "zh": "For information on how to activate the server configuration information inquiry function, please refer to the information page.",
+    "service_id": "CNT08475"
+  },
+  "BTN08476": {
+    "en": "Feature activation instructions",
+    "ja": "機能起動ガイド",
+    "ko": "기능 활성화 안내",
+    "zh": "Feature activation instructions",
+    "service_id": "BTN08476"
+  },
+  "BTN08477": {
+    "en": "DB project connection",
+    "ja": "DBプロジェクト連携",
+    "ko": "DB 프로젝트 연계",
+    "zh": "DB project connection",
+    "service_id": "BTN08477"
+  },
+  "TTL08478": {
+    "en": "Script SQL",
+    "ja": "スクリプトSQL",
+    "ko": "스크립트 SQL",
+    "zh": "Script SQL",
+    "service_id": "TTL08478"
+  },
+  "TTL08479": {
+    "en": "Script Result",
+    "ja": "スクリプト結果",
+    "ko": "스크립트 결과",
+    "zh": "Script Result",
+    "service_id": "TTL08479"
+  },
+  "TTL08480": {
+    "en": "Script list",
+    "ja": "スクリプトリスト",
+    "ko": "스크립트 목록",
+    "zh": "Script list",
+    "service_id": "TTL08480"
+  },
+  "TTL08481": {
+    "en": "View linked DB instance information",
+    "ja": "連携DBインスタンス情報の表示",
+    "ko": "연계 DB 인스턴스 정보 보기",
+    "zh": "View linked DB instance information",
+    "service_id": "TTL08481"
   },
   "": {
     "en": "#VALUE!",
