@@ -162,7 +162,7 @@ function _createMdxContent(props) {
         id: "preview-290a2",
         children: "Preview 2.9.0.a2"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2024년 09월 12일"
+        children: "2024년 09월 09일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -267,7 +267,7 @@ function _createMdxContent(props) {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
                     priority: "1",
                     children: "Deprecated"
-                  }), " 디스크, 네트워크 컬럼 그룹을 제거하고 노드를 선택해 교 및 상세 보기에서 제공"]
+                  }), " 디스크, 네트워크 컬럼 그룹을 제거하고 노드를 선택해 비교 및 상세 보기에서 제공"]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
