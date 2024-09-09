@@ -74,8 +74,8 @@ const metadata = {
   },
   "unlisted": false,
   "prevItem": {
-    "title": "상반기 종합 안내",
-    "permalink": "/whatap-docs/blog/2024-first-half-summary"
+    "title": "서비스 개요",
+    "permalink": "/whatap-docs/blog/overview"
   },
   "nextItem": {
     "title": "1분기 안내",
