@@ -3697,7 +3697,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3705,9 +3705,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_8_1',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_8_2',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_8_1',
                 'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
                 'release-notes/php/php-2_7_1',
@@ -3716,7 +3717,6 @@ const sidebars = {
                 'release-notes/php/php-2_6_2',
                 'release-notes/php/php-2_6_1',
                 'release-notes/php/php-2_6_0',
-                'release-notes/php/php-2_5_4',
                 'release-notes/php/php-previous',
               ],
             },
