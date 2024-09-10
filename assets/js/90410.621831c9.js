@@ -31108,6 +31108,17 @@ var getOwnPropertyDescriptors = Object.getOwnPropertyDescriptors || function get
   });
   return res;
 };
+function getFlag(flags, mask) {
+  return !!(flags & mask);
+}
+function setFlag(flags, mask, newValue) {
+  if (newValue) {
+    flags |= mask;
+  } else {
+    flags &= ~mask;
+  }
+  return flags;
+}
 
 function _arrayLikeToArray(r, a) {
   (null == a || a > r.length) && (a = r.length);
@@ -31250,11 +31261,8 @@ var Atom = /*#__PURE__*/function () {
       name_ =  false ? 0 : "Atom";
     }
     this.name_ = void 0;
-    this.isPendingUnobservation = false;
-    // for effective unobserving. BaseAtom has true, for extra optimization, so its onBecomeUnobserved never gets called, because it's not needed
-    this.isBeingObserved = false;
+    this.flags_ = 0;
     this.observers_ = new Set();
-    this.diffValue_ = 0;
     this.lastAccessedBy_ = 0;
     this.lowestObserverState_ = IDerivationState_.NOT_TRACKING_;
     // onBecomeObservedListeners
@@ -31263,6 +31271,7 @@ var Atom = /*#__PURE__*/function () {
     this.onBUOL = void 0;
     this.name_ = name_;
   }
+  // for effective unobserving. BaseAtom has true, for extra optimization, so its onBecomeUnobserved never gets called, because it's not needed
   var _proto = Atom.prototype;
   _proto.onBO = function onBO() {
     if (this.onBOL) {
@@ -31296,8 +31305,35 @@ var Atom = /*#__PURE__*/function () {
   _proto.toString = function toString() {
     return this.name_;
   };
-  return Atom;
+  return _createClass(Atom, [{
+    key: "isBeingObserved",
+    get: function get() {
+      return getFlag(this.flags_, Atom.isBeingObservedMask_);
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Atom.isBeingObservedMask_, newValue);
+    }
+  }, {
+    key: "isPendingUnobservation",
+    get: function get() {
+      return getFlag(this.flags_, Atom.isPendingUnobservationMask_);
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Atom.isPendingUnobservationMask_, newValue);
+    }
+  }, {
+    key: "diffValue",
+    get: function get() {
+      return getFlag(this.flags_, Atom.diffValueMask_) ? 1 : 0;
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Atom.diffValueMask_, newValue === 1 ? true : false);
+    }
+  }]);
 }();
+Atom.isBeingObservedMask_ = 1;
+Atom.isPendingUnobservationMask_ = 2;
+Atom.diffValueMask_ = 4;
 var isAtom = /*#__PURE__*/createInstanceofPredicate("Atom", Atom);
 function createAtom(name, onBecomeObservedHandler, onBecomeUnobservedHandler) {
   if (onBecomeObservedHandler === void 0) {
@@ -32191,17 +32227,6 @@ var ObservableValue = /*#__PURE__*/function (_Atom) {
 }(Atom);
 var isObservableValue = /*#__PURE__*/createInstanceofPredicate("ObservableValue", ObservableValue);
 
-function getFlag(flags, mask) {
-  return !!(flags & mask);
-}
-function setFlag(flags, mask, newValue) {
-  if (newValue) {
-    flags |= mask;
-  } else {
-    flags &= ~mask;
-  }
-  return flags;
-}
 /**
  * A node in the state dependency root that observes other nodes, and can be observed itself.
  *
@@ -32241,7 +32266,6 @@ var ComputedValue = /*#__PURE__*/function () {
     this.newObserving_ = null;
     // during tracking it's an array with new observed observers
     this.observers_ = new Set();
-    this.diffValue_ = 0;
     this.runId_ = 0;
     this.lastAccessedBy_ = 0;
     this.lowestObserverState_ = IDerivationState_.UP_TO_DATE_;
@@ -32460,12 +32484,21 @@ var ComputedValue = /*#__PURE__*/function () {
     set: function set(newValue) {
       this.flags_ = setFlag(this.flags_, ComputedValue.isPendingUnobservationMask_, newValue);
     }
+  }, {
+    key: "diffValue",
+    get: function get() {
+      return getFlag(this.flags_, ComputedValue.diffValueMask_) ? 1 : 0;
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, ComputedValue.diffValueMask_, newValue === 1 ? true : false);
+    }
   }]);
 }();
 ComputedValue.isComputingMask_ = 1;
 ComputedValue.isRunningSetterMask_ = 2;
 ComputedValue.isBeingObservedMask_ = 4;
 ComputedValue.isPendingUnobservationMask_ = 8;
+ComputedValue.diffValueMask_ = 16;
 var isComputedValue = /*#__PURE__*/createInstanceofPredicate("ComputedValue", ComputedValue);
 
 var IDerivationState_;
@@ -32638,8 +32671,8 @@ function bindDependencies(derivation) {
     l = derivation.unboundDepsCount_;
   for (var i = 0; i < l; i++) {
     var dep = observing[i];
-    if (dep.diffValue_ === 0) {
-      dep.diffValue_ = 1;
+    if (dep.diffValue === 0) {
+      dep.diffValue = 1;
       if (i0 !== i) {
         observing[i0] = dep;
       }
@@ -32659,18 +32692,18 @@ function bindDependencies(derivation) {
   l = prevObserving.length;
   while (l--) {
     var _dep = prevObserving[l];
-    if (_dep.diffValue_ === 0) {
+    if (_dep.diffValue === 0) {
       removeObserver(_dep, derivation);
     }
-    _dep.diffValue_ = 0;
+    _dep.diffValue = 0;
   }
   // Go through all new observables and check diffValue: (now it should be unique)
   //   0: it was set to 0 in last loop. don't need to do anything.
   //   1: it wasn't observed, let's observe it. set back to 0
   while (i0--) {
     var _dep2 = observing[i0];
-    if (_dep2.diffValue_ === 1) {
-      _dep2.diffValue_ = 0;
+    if (_dep2.diffValue === 1) {
+      _dep2.diffValue = 0;
       addObserver(_dep2, derivation);
     }
   }
@@ -33119,13 +33152,9 @@ var Reaction = /*#__PURE__*/function () {
     // nodes we are looking at. Our value depends on these nodes
     this.newObserving_ = [];
     this.dependenciesState_ = IDerivationState_.NOT_TRACKING_;
-    this.diffValue_ = 0;
     this.runId_ = 0;
     this.unboundDepsCount_ = 0;
-    this.isDisposed_ = false;
-    this.isScheduled_ = false;
-    this.isTrackPending_ = false;
-    this.isRunning_ = false;
+    this.flags_ = 0;
     this.isTracing_ = TraceMode.NONE;
     this.name_ = name_;
     this.onInvalidate_ = onInvalidate_;
@@ -33137,26 +33166,23 @@ var Reaction = /*#__PURE__*/function () {
     this.schedule_();
   };
   _proto.schedule_ = function schedule_() {
-    if (!this.isScheduled_) {
-      this.isScheduled_ = true;
+    if (!this.isScheduled) {
+      this.isScheduled = true;
       globalState.pendingReactions.push(this);
       runReactions();
     }
-  };
-  _proto.isScheduled = function isScheduled() {
-    return this.isScheduled_;
   }
   /**
    * internal, use schedule() if you intend to kick off a reaction
    */;
   _proto.runReaction_ = function runReaction_() {
-    if (!this.isDisposed_) {
+    if (!this.isDisposed) {
       startBatch();
-      this.isScheduled_ = false;
+      this.isScheduled = false;
       var prev = globalState.trackingContext;
       globalState.trackingContext = this;
       if (shouldCompute(this)) {
-        this.isTrackPending_ = true;
+        this.isTrackPending = true;
         try {
           this.onInvalidate_();
           if (false) {}
@@ -33169,7 +33195,7 @@ var Reaction = /*#__PURE__*/function () {
     }
   };
   _proto.track = function track(fn) {
-    if (this.isDisposed_) {
+    if (this.isDisposed) {
       return;
       // console.warn("Reaction already disposed") // Note: Not a warning / error in mobx 4 either
     }
@@ -33177,14 +33203,14 @@ var Reaction = /*#__PURE__*/function () {
     var notify = isSpyEnabled();
     var startTime;
     if (false) {}
-    this.isRunning_ = true;
+    this.isRunning = true;
     var prevReaction = globalState.trackingContext; // reactions could create reactions...
     globalState.trackingContext = this;
     var result = trackDerivedFunction(this, fn, undefined);
     globalState.trackingContext = prevReaction;
-    this.isRunning_ = false;
-    this.isTrackPending_ = false;
-    if (this.isDisposed_) {
+    this.isRunning = false;
+    this.isTrackPending = false;
+    if (this.isDisposed) {
       // disposed during last run. Clean up everything that was bound after the dispose call.
       clearObserving(this);
     }
@@ -33214,9 +33240,9 @@ var Reaction = /*#__PURE__*/function () {
     });
   };
   _proto.dispose = function dispose() {
-    if (!this.isDisposed_) {
-      this.isDisposed_ = true;
-      if (!this.isRunning_) {
+    if (!this.isDisposed) {
+      this.isDisposed = true;
+      if (!this.isRunning) {
         // if disposed while running, clean up later. Maybe not optimal, but rare case
         startBatch();
         clearObserving(this);
@@ -33243,8 +33269,53 @@ var Reaction = /*#__PURE__*/function () {
     }
     trace(this, enterBreakPoint);
   };
-  return Reaction;
+  return _createClass(Reaction, [{
+    key: "isDisposed",
+    get: function get() {
+      return getFlag(this.flags_, Reaction.isDisposedMask_);
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Reaction.isDisposedMask_, newValue);
+    }
+  }, {
+    key: "isScheduled",
+    get: function get() {
+      return getFlag(this.flags_, Reaction.isScheduledMask_);
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Reaction.isScheduledMask_, newValue);
+    }
+  }, {
+    key: "isTrackPending",
+    get: function get() {
+      return getFlag(this.flags_, Reaction.isTrackPendingMask_);
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Reaction.isTrackPendingMask_, newValue);
+    }
+  }, {
+    key: "isRunning",
+    get: function get() {
+      return getFlag(this.flags_, Reaction.isRunningMask_);
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Reaction.isRunningMask_, newValue);
+    }
+  }, {
+    key: "diffValue",
+    get: function get() {
+      return getFlag(this.flags_, Reaction.diffValueMask_) ? 1 : 0;
+    },
+    set: function set(newValue) {
+      this.flags_ = setFlag(this.flags_, Reaction.diffValueMask_, newValue === 1 ? true : false);
+    }
+  }]);
 }();
+Reaction.isDisposedMask_ = 1;
+Reaction.isScheduledMask_ = 2;
+Reaction.isTrackPendingMask_ = 4;
+Reaction.isRunningMask_ = 8;
+Reaction.diffValueMask_ = 16;
 function onReactionError(handler) {
   globalState.globalReactionErrorHandlers.push(handler);
   return function () {
@@ -33434,7 +33505,7 @@ function autorun(view, opts) {
         isScheduled = true;
         scheduler(function () {
           isScheduled = false;
-          if (!reaction.isDisposed_) {
+          if (!reaction.isDisposed) {
             reaction.track(reactionRunner);
           }
         });
@@ -33481,7 +33552,7 @@ function reaction(expression, effect, opts) {
   }, opts.onError, opts.requiresObservable);
   function reactionRunner() {
     isScheduled = false;
-    if (r.isDisposed_) {
+    if (r.isDisposed) {
       return;
     }
     var changed = false;
@@ -34073,7 +34144,7 @@ function _when(predicate, effect, opts) {
   if (typeof opts.timeout === "number") {
     var error = new Error("WHEN_TIMEOUT");
     timeoutHandle = setTimeout(function () {
-      if (!disposer[$mobx].isDisposed_) {
+      if (!disposer[$mobx].isDisposed) {
         disposer();
         if (opts.onError) {
           opts.onError(error);

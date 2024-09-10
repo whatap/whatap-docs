@@ -55,7 +55,7 @@ var autocomplete_client_umd = __webpack_require__(61237);
 // EXTERNAL MODULE: ./node_modules/@algolia/autocomplete-theme-classic/dist/theme.min.css
 var theme_min = __webpack_require__(58160);
 // EXTERNAL MODULE: ./node_modules/@algolia/autocomplete-js/dist/esm/autocomplete.js + 74 modules
-var autocomplete = __webpack_require__(16074);
+var autocomplete = __webpack_require__(42960);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(5338);
 ;// CONCATENATED MODULE: ./src/components/Autocomplete/Autocomplete.js

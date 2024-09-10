@@ -16201,7 +16201,7 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(81838)
     ],
     "6a4928da": [
-        ()=>Promise.all(/* import() | 6a4928da */[__webpack_require__.e(71869), __webpack_require__.e(50243), __webpack_require__.e(92194)]).then(__webpack_require__.bind(__webpack_require__, 81098)),
+        ()=>Promise.all(/* import() | 6a4928da */[__webpack_require__.e(71869), __webpack_require__.e(86057), __webpack_require__.e(92194)]).then(__webpack_require__.bind(__webpack_require__, 81098)),
         "@site/src/pages/renew/index.js",
         /*require.resolve*/(81098)
     ],
@@ -35310,7 +35310,7 @@ var ExecutionEnvironment = __webpack_require__(78557);
     __webpack_require__(90210),
     __webpack_require__(24459),
     __webpack_require__(88158),
-    __webpack_require__(65078), 
+    __webpack_require__(4899), 
 ]);
 
 // EXTERNAL MODULE: ./.docusaurus/routes.js + 3 modules
@@ -45602,7 +45602,7 @@ if (ExecutionEnvironment_1.default.canUseDOM) {
 
 /***/ }),
 
-/***/ 65078:
+/***/ 4899:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -45614,386 +45614,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ amplitude)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-core/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var extendStatics = function(d, b) {
-  extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-  __assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function __runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function __propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function __setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function __metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function __generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var __createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function __exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
-}
-
-function __values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function __spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(__read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function __spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function __spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function __await(v) {
-  return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var __setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function __importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-  __setModuleDefault(result, mod);
-  return result;
-}
-
-function __importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function __classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function __addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var _SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function __disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new _SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const tslib_es6 = ({
-  __extends,
-  __assign,
-  __rest,
-  __decorate,
-  __param,
-  __metadata,
-  __awaiter,
-  __generator,
-  __createBinding,
-  __exportStar,
-  __values,
-  __read,
-  __spread,
-  __spreadArrays,
-  __spreadArray,
-  __await,
-  __asyncGenerator,
-  __asyncDelegator,
-  __asyncValues,
-  __makeTemplateObject,
-  __importStar,
-  __importDefault,
-  __classPrivateFieldGet,
-  __classPrivateFieldSet,
-  __classPrivateFieldIn,
-  __addDisposableResource,
-  __disposeResources,
-});
-
+// EXTERNAL MODULE: ./node_modules/tslib/tslib.es6.mjs
+var tslib_es6 = __webpack_require__(31635);
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-types/lib/esm/logger.js
 var LogLevel;
 (function (LogLevel) {
@@ -46021,7 +45643,7 @@ var getStacktrace = function (ignoreDepth) {
 };
 // This hook makes sure we always get the latest logger and logLevel.
 var getClientLogConfig = function (client) { return function () {
-    var _a = __assign({}, client.config), logger = _a.loggerProvider, logLevel = _a.logLevel;
+    var _a = (0,tslib_es6.__assign)({}, client.config), logger = _a.loggerProvider, logLevel = _a.logLevel;
     return {
         logger: logger,
         logLevel: logLevel,
@@ -46033,7 +45655,7 @@ var getValueByStringPath = function (obj, path) {
     path = path.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
     path = path.replace(/^\./, ''); // strip a leading dot
     try {
-        for (var _b = __values(path.split('.')), _c = _b.next(); !_c.done; _c = _b.next()) {
+        for (var _b = (0,tslib_es6.__values)(path.split('.')), _c = _b.next(); !_c.done; _c = _b.next()) {
             var attr = _c.value;
             if (attr in obj) {
                 obj = obj[attr];
@@ -46056,7 +45678,7 @@ var getClientStates = function (client, paths) { return function () {
     var e_2, _a;
     var res = {};
     try {
-        for (var paths_1 = __values(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
+        for (var paths_1 = (0,tslib_es6.__values)(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
             var path = paths_1_1.value;
             res[path] = getValueByStringPath(client, path);
         }
@@ -46121,386 +45743,6 @@ var debugWrapper = function (fn, fnName, getLogConfig, getStates, fnContext) {
     };
 };
 //# sourceMappingURL=debug.js.map
-;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-browser/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var tslib_es6_extendStatics = function(d, b) {
-  tslib_es6_extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return tslib_es6_extendStatics(d, b);
-};
-
-function tslib_es6_extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  tslib_es6_extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var tslib_es6_assign = function() {
-  tslib_es6_assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return tslib_es6_assign.apply(this, arguments);
-}
-
-function tslib_es6_rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function tslib_es6_decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function tslib_es6_param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function tslib_es6_esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function tslib_es6_runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function tslib_es6_propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function tslib_es6_setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function tslib_es6_metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function tslib_es6_awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function tslib_es6_generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var tslib_es6_createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function tslib_es6_exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) tslib_es6_createBinding(o, m, p);
-}
-
-function tslib_es6_values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function tslib_es6_read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function tslib_es6_spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(tslib_es6_read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function tslib_es6_spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function tslib_es6_spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function tslib_es6_await(v) {
-  return this instanceof tslib_es6_await ? (this.v = v, this) : new tslib_es6_await(v);
-}
-
-function tslib_es6_asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof tslib_es6_await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function tslib_es6_asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: tslib_es6_await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function tslib_es6_asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof tslib_es6_values === "function" ? tslib_es6_values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function tslib_es6_makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var tslib_es6_setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function tslib_es6_importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) tslib_es6_createBinding(result, mod, k);
-  tslib_es6_setModuleDefault(result, mod);
-  return result;
-}
-
-function tslib_es6_importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function tslib_es6_classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function tslib_es6_classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function tslib_es6_classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function tslib_es6_addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var tslib_es6_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function tslib_es6_disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new tslib_es6_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const tslib_tslib_es6 = ({
-  __extends: tslib_es6_extends,
-  __assign: tslib_es6_assign,
-  __rest: tslib_es6_rest,
-  __decorate: tslib_es6_decorate,
-  __param: tslib_es6_param,
-  __metadata: tslib_es6_metadata,
-  __awaiter: tslib_es6_awaiter,
-  __generator: tslib_es6_generator,
-  __createBinding: tslib_es6_createBinding,
-  __exportStar: tslib_es6_exportStar,
-  __values: tslib_es6_values,
-  __read: tslib_es6_read,
-  __spread: tslib_es6_spread,
-  __spreadArrays: tslib_es6_spreadArrays,
-  __spreadArray: tslib_es6_spreadArray,
-  __await: tslib_es6_await,
-  __asyncGenerator: tslib_es6_asyncGenerator,
-  __asyncDelegator: tslib_es6_asyncDelegator,
-  __asyncValues: tslib_es6_asyncValues,
-  __makeTemplateObject: tslib_es6_makeTemplateObject,
-  __importStar: tslib_es6_importStar,
-  __importDefault: tslib_es6_importDefault,
-  __classPrivateFieldGet: tslib_es6_classPrivateFieldGet,
-  __classPrivateFieldSet: tslib_es6_classPrivateFieldSet,
-  __classPrivateFieldIn: tslib_es6_classPrivateFieldIn,
-  __addDisposableResource: tslib_es6_addDisposableResource,
-  __disposeResources: tslib_es6_disposeResources,
-});
-
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-core/lib/esm/utils/return-wrapper.js
 var returnWrapper = function (awaitable) { return ({
     promise: awaitable || Promise.resolve(),
@@ -46794,10 +46036,10 @@ var Destination = /** @class */ (function () {
     }
     Destination.prototype.setup = function (config) {
         var _a;
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var unsent;
             var _this = this;
-            return __generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         this.config = config;
@@ -46882,10 +46124,10 @@ var Destination = /** @class */ (function () {
     };
     Destination.prototype.flush = function (useRetry) {
         if (useRetry === void 0) { useRetry = false; }
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var list, later, batches;
             var _this = this;
-            return __generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         // Skip flush if offline
@@ -46912,9 +46154,9 @@ var Destination = /** @class */ (function () {
     };
     Destination.prototype.send = function (list, useRetry) {
         if (useRetry === void 0) { useRetry = true; }
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var payload, serverUrl, res, e_1, errorMessage;
-            return __generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         if (!this.config.apiKey) {
@@ -46924,7 +46166,7 @@ var Destination = /** @class */ (function () {
                             api_key: this.config.apiKey,
                             events: list.map(function (context) {
                                 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                                var _a = context.event, extra = _a.extra, eventWithoutExtra = __rest(_a, ["extra"]);
+                                var _a = context.event, extra = _a.extra, eventWithoutExtra = (0,tslib_es6.__rest)(_a, ["extra"]);
                                 return eventWithoutExtra;
                             }),
                             options: {
@@ -47003,7 +46245,7 @@ var Destination = /** @class */ (function () {
             this.fulfillRequest(list, res.statusCode, res.body.error);
             return;
         }
-        var dropIndex = __spreadArray(__spreadArray(__spreadArray(__spreadArray([], __read(Object.values(res.body.eventsWithInvalidFields)), false), __read(Object.values(res.body.eventsWithMissingFields)), false), __read(Object.values(res.body.eventsWithInvalidIdLengths)), false), __read(res.body.silencedEvents), false).flat();
+        var dropIndex = (0,tslib_es6.__spreadArray)((0,tslib_es6.__spreadArray)((0,tslib_es6.__spreadArray)((0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(Object.values(res.body.eventsWithInvalidFields)), false), (0,tslib_es6.__read)(Object.values(res.body.eventsWithMissingFields)), false), (0,tslib_es6.__read)(Object.values(res.body.eventsWithInvalidIdLengths)), false), (0,tslib_es6.__read)(res.body.silencedEvents), false).flat();
         var dropIndexSet = new Set(dropIndex);
         var retry = list.filter(function (context, index) {
             if (dropIndexSet.has(index)) {
@@ -47153,7 +46395,7 @@ var isValidProperties = function (property, value) {
     if (Array.isArray(value)) {
         var isValid = true;
         try {
-            for (var value_1 = __values(value), value_1_1 = value_1.next(); !value_1_1.done; value_1_1 = value_1.next()) {
+            for (var value_1 = (0,tslib_es6.__values)(value), value_1_1 = value_1.next(); !value_1_1.done; value_1_1 = value_1.next()) {
                 var valueElement = value_1_1.value;
                 if (Array.isArray(valueElement)) {
                     return false;
@@ -47201,7 +46443,7 @@ var Identify = /** @class */ (function () {
         this._properties = {};
     }
     Identify.prototype.getUserProperties = function () {
-        return __assign({}, this._properties);
+        return (0,tslib_es6.__assign)({}, this._properties);
     };
     Identify.prototype.set = function (property, value) {
         this._safeSet(IdentifyOperation.SET, property, value);
@@ -47322,7 +46564,7 @@ var Revenue = /** @class */ (function () {
         return this;
     };
     Revenue.prototype.getEventProperties = function () {
-        var eventProperties = this.properties ? __assign({}, this.properties) : {};
+        var eventProperties = this.properties ? (0,tslib_es6.__assign)({}, this.properties) : {};
         eventProperties[RevenueProperty.REVENUE_PRODUCT_ID] = this.productId;
         eventProperties[RevenueProperty.REVENUE_QUANTITY] = this.quantity;
         eventProperties[RevenueProperty.REVENUE_PRICE] = this.price;
@@ -47350,8 +46592,8 @@ var Timeline = /** @class */ (function () {
     }
     Timeline.prototype.register = function (plugin, config) {
         var _a, _b;
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_c) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_c) {
                 switch (_c.label) {
                     case 0:
                         if (this.plugins.some(function (existingPlugin) { return existingPlugin.name === plugin.name; })) {
@@ -47375,9 +46617,9 @@ var Timeline = /** @class */ (function () {
     };
     Timeline.prototype.deregister = function (pluginName) {
         var _a;
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var index, plugin;
-            return __generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         index = this.plugins.findIndex(function (plugin) { return plugin.name === pluginName; });
@@ -47420,22 +46662,22 @@ var Timeline = /** @class */ (function () {
         }, timeout);
     };
     Timeline.prototype.apply = function (item) {
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var _a, event, _b, resolve, before, before_1, before_1_1, plugin, e, e_1_1, enrichment, enrichment_1, enrichment_1_1, plugin, e, e_2_1, destination, executeDestinations;
             var e_1, _c, e_2, _d;
-            return __generator(this, function (_e) {
+            return (0,tslib_es6.__generator)(this, function (_e) {
                 switch (_e.label) {
                     case 0:
                         if (!item) {
                             return [2 /*return*/];
                         }
-                        _a = __read(item, 1), event = _a[0];
-                        _b = __read(item, 2), resolve = _b[1];
+                        _a = (0,tslib_es6.__read)(item, 1), event = _a[0];
+                        _b = (0,tslib_es6.__read)(item, 2), resolve = _b[1];
                         before = this.plugins.filter(function (plugin) { return plugin.type === 'before'; });
                         _e.label = 1;
                     case 1:
                         _e.trys.push([1, 6, 7, 8]);
-                        before_1 = __values(before), before_1_1 = before_1.next();
+                        before_1 = (0,tslib_es6.__values)(before), before_1_1 = before_1.next();
                         _e.label = 2;
                     case 2:
                         if (!!before_1_1.done) return [3 /*break*/, 5];
@@ -47445,7 +46687,7 @@ var Timeline = /** @class */ (function () {
                             // do nothing
                             return [3 /*break*/, 4];
                         }
-                        return [4 /*yield*/, plugin.execute(__assign({}, event))];
+                        return [4 /*yield*/, plugin.execute((0,tslib_es6.__assign)({}, event))];
                     case 3:
                         e = _e.sent();
                         if (e === null) {
@@ -47475,7 +46717,7 @@ var Timeline = /** @class */ (function () {
                         _e.label = 9;
                     case 9:
                         _e.trys.push([9, 14, 15, 16]);
-                        enrichment_1 = __values(enrichment), enrichment_1_1 = enrichment_1.next();
+                        enrichment_1 = (0,tslib_es6.__values)(enrichment), enrichment_1_1 = enrichment_1.next();
                         _e.label = 10;
                     case 10:
                         if (!!enrichment_1_1.done) return [3 /*break*/, 13];
@@ -47485,7 +46727,7 @@ var Timeline = /** @class */ (function () {
                             // do nothing
                             return [3 /*break*/, 12];
                         }
-                        return [4 /*yield*/, plugin.execute(__assign({}, event))];
+                        return [4 /*yield*/, plugin.execute((0,tslib_es6.__assign)({}, event))];
                     case 11:
                         e = _e.sent();
                         if (e === null) {
@@ -47513,11 +46755,11 @@ var Timeline = /** @class */ (function () {
                     case 16:
                         destination = this.plugins.filter(function (plugin) { return plugin.type === 'destination'; });
                         executeDestinations = destination.map(function (plugin) {
-                            var eventClone = __assign({}, event);
+                            var eventClone = (0,tslib_es6.__assign)({}, event);
                             return plugin.execute(eventClone).catch(function (e) { return buildResult(eventClone, 0, String(e)); });
                         });
                         void Promise.all(executeDestinations).then(function (_a) {
-                            var _b = __read(_a, 1), result = _b[0];
+                            var _b = (0,tslib_es6.__read)(_a, 1), result = _b[0];
                             var resolveResult = result || buildResult(event, 100, 'Event not tracked, no destination plugins on the instance');
                             resolve(resolveResult);
                         });
@@ -47527,10 +46769,10 @@ var Timeline = /** @class */ (function () {
         });
     };
     Timeline.prototype.flush = function () {
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var queue, destination, executeDestinations;
             var _this = this;
-            return __generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         queue = this.queue;
@@ -47560,15 +46802,15 @@ var Timeline = /** @class */ (function () {
 
 var createTrackEvent = function (eventInput, eventProperties, eventOptions) {
     var baseEvent = typeof eventInput === 'string' ? { event_type: eventInput } : eventInput;
-    return __assign(__assign(__assign({}, baseEvent), eventOptions), (eventProperties && { event_properties: eventProperties }));
+    return (0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, baseEvent), eventOptions), (eventProperties && { event_properties: eventProperties }));
 };
 var createIdentifyEvent = function (identify, eventOptions) {
-    var identifyEvent = __assign(__assign({}, eventOptions), { event_type: SpecialEventType.IDENTIFY, user_properties: identify.getUserProperties() });
+    var identifyEvent = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, eventOptions), { event_type: SpecialEventType.IDENTIFY, user_properties: identify.getUserProperties() });
     return identifyEvent;
 };
 var createGroupIdentifyEvent = function (groupType, groupName, identify, eventOptions) {
     var _a;
-    var groupIdentify = __assign(__assign({}, eventOptions), { event_type: SpecialEventType.GROUP_IDENTIFY, group_properties: identify.getUserProperties(), groups: (_a = {},
+    var groupIdentify = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, eventOptions), { event_type: SpecialEventType.GROUP_IDENTIFY, group_properties: identify.getUserProperties(), groups: (_a = {},
             _a[groupType] = groupName,
             _a) });
     return groupIdentify;
@@ -47577,13 +46819,13 @@ var createGroupEvent = function (groupType, groupName, eventOptions) {
     var _a;
     var identify = new Identify();
     identify.set(groupType, groupName);
-    var groupEvent = __assign(__assign({}, eventOptions), { event_type: SpecialEventType.IDENTIFY, user_properties: identify.getUserProperties(), groups: (_a = {},
+    var groupEvent = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, eventOptions), { event_type: SpecialEventType.IDENTIFY, user_properties: identify.getUserProperties(), groups: (_a = {},
             _a[groupType] = groupName,
             _a) });
     return groupEvent;
 };
 var createRevenueEvent = function (revenue, eventOptions) {
-    return __assign(__assign({}, eventOptions), { event_type: SpecialEventType.REVENUE, event_properties: revenue.getEventProperties() });
+    return (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, eventOptions), { event_type: SpecialEventType.REVENUE, event_properties: revenue.getEventProperties() });
 };
 //# sourceMappingURL=event-builder.js.map
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-core/lib/esm/core-client.js
@@ -47605,8 +46847,8 @@ var AmplitudeCore = /** @class */ (function () {
         this.name = name;
     }
     AmplitudeCore.prototype._init = function (config) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         this.config = config;
@@ -47621,10 +46863,10 @@ var AmplitudeCore = /** @class */ (function () {
         });
     };
     AmplitudeCore.prototype.runQueuedFunctions = function (queueName) {
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var queuedFunctions, queuedFunctions_1, queuedFunctions_1_1, queuedFunction, val, e_1_1;
             var e_1, _a;
-            return __generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         queuedFunctions = this[queueName];
@@ -47632,7 +46874,7 @@ var AmplitudeCore = /** @class */ (function () {
                         _b.label = 1;
                     case 1:
                         _b.trys.push([1, 8, 9, 10]);
-                        queuedFunctions_1 = __values(queuedFunctions), queuedFunctions_1_1 = queuedFunctions_1.next();
+                        queuedFunctions_1 = (0,tslib_es6.__values)(queuedFunctions), queuedFunctions_1_1 = queuedFunctions_1.next();
                         _b.label = 2;
                     case 2:
                         if (!!queuedFunctions_1_1.done) return [3 /*break*/, 7];
@@ -47719,9 +46961,9 @@ var AmplitudeCore = /** @class */ (function () {
         void this.process(event).then(callback);
     };
     AmplitudeCore.prototype.dispatch = function (event) {
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var _this = this;
-            return __generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 if (!this.isReady) {
                     return [2 /*return*/, new Promise(function (resolve) {
                             _this.dispatchQ.push(_this.dispatchWithCallback.bind(_this, event, resolve));
@@ -47732,9 +46974,9 @@ var AmplitudeCore = /** @class */ (function () {
         });
     };
     AmplitudeCore.prototype.process = function (event) {
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var result, e_2, message, result;
-            return __generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
@@ -47779,386 +47021,6 @@ var AmplitudeCore = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=core-client.js.map
-;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-client-common/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var tslib_tslib_es6_extendStatics = function(d, b) {
-  tslib_tslib_es6_extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return tslib_tslib_es6_extendStatics(d, b);
-};
-
-function tslib_tslib_es6_extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  tslib_tslib_es6_extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var tslib_tslib_es6_assign = function() {
-  tslib_tslib_es6_assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return tslib_tslib_es6_assign.apply(this, arguments);
-}
-
-function tslib_tslib_es6_rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function tslib_tslib_es6_decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function tslib_tslib_es6_param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function tslib_tslib_es6_esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function tslib_tslib_es6_runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function tslib_tslib_es6_propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function tslib_tslib_es6_setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function tslib_tslib_es6_metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function tslib_tslib_es6_awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function tslib_tslib_es6_generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var tslib_tslib_es6_createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function tslib_tslib_es6_exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) tslib_tslib_es6_createBinding(o, m, p);
-}
-
-function tslib_tslib_es6_values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function tslib_tslib_es6_read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function tslib_tslib_es6_spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(tslib_tslib_es6_read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function tslib_tslib_es6_spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function tslib_tslib_es6_spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function tslib_tslib_es6_await(v) {
-  return this instanceof tslib_tslib_es6_await ? (this.v = v, this) : new tslib_tslib_es6_await(v);
-}
-
-function tslib_tslib_es6_asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof tslib_tslib_es6_await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function tslib_tslib_es6_asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: tslib_tslib_es6_await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function tslib_tslib_es6_asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof tslib_tslib_es6_values === "function" ? tslib_tslib_es6_values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function tslib_tslib_es6_makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var tslib_tslib_es6_setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function tslib_tslib_es6_importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) tslib_tslib_es6_createBinding(result, mod, k);
-  tslib_tslib_es6_setModuleDefault(result, mod);
-  return result;
-}
-
-function tslib_tslib_es6_importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function tslib_tslib_es6_classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function tslib_tslib_es6_classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function tslib_tslib_es6_classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function tslib_tslib_es6_addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var tslib_tslib_es6_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function tslib_tslib_es6_disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new tslib_tslib_es6_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const node_modules_tslib_tslib_es6 = ({
-  __extends: tslib_tslib_es6_extends,
-  __assign: tslib_tslib_es6_assign,
-  __rest: tslib_tslib_es6_rest,
-  __decorate: tslib_tslib_es6_decorate,
-  __param: tslib_tslib_es6_param,
-  __metadata: tslib_tslib_es6_metadata,
-  __awaiter: tslib_tslib_es6_awaiter,
-  __generator: tslib_tslib_es6_generator,
-  __createBinding: tslib_tslib_es6_createBinding,
-  __exportStar: tslib_tslib_es6_exportStar,
-  __values: tslib_tslib_es6_values,
-  __read: tslib_tslib_es6_read,
-  __spread: tslib_tslib_es6_spread,
-  __spreadArrays: tslib_tslib_es6_spreadArrays,
-  __spreadArray: tslib_tslib_es6_spreadArray,
-  __await: tslib_tslib_es6_await,
-  __asyncGenerator: tslib_tslib_es6_asyncGenerator,
-  __asyncDelegator: tslib_tslib_es6_asyncDelegator,
-  __asyncValues: tslib_tslib_es6_asyncValues,
-  __makeTemplateObject: tslib_tslib_es6_makeTemplateObject,
-  __importStar: tslib_tslib_es6_importStar,
-  __importDefault: tslib_tslib_es6_importDefault,
-  __classPrivateFieldGet: tslib_tslib_es6_classPrivateFieldGet,
-  __classPrivateFieldSet: tslib_tslib_es6_classPrivateFieldSet,
-  __classPrivateFieldIn: tslib_tslib_es6_classPrivateFieldIn,
-  __addDisposableResource: tslib_tslib_es6_addDisposableResource,
-  __disposeResources: tslib_tslib_es6_disposeResources,
-});
-
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-client-common/lib/esm/default-tracking.js
 
 /**
@@ -48251,7 +47113,7 @@ var getAttributionTrackingConfig = function (config) {
         typeof config.defaultTracking === 'object' &&
         config.defaultTracking.attribution &&
         typeof config.defaultTracking.attribution === 'object') {
-        return tslib_tslib_es6_assign({}, config.defaultTracking.attribution);
+        return (0,tslib_es6.__assign)({}, config.defaultTracking.attribution);
     }
     return {};
 };
@@ -48315,8 +47177,8 @@ var isDirectTraffic = function (current) {
 };
 var isNewCampaign = function (current, previous, options, isNewSession) {
     if (isNewSession === void 0) { isNewSession = true; }
-    var referrer = current.referrer, referring_domain = current.referring_domain, currentCampaign = tslib_tslib_es6_rest(current, ["referrer", "referring_domain"]);
-    var _a = previous || {}, _previous_referrer = _a.referrer, prevReferringDomain = _a.referring_domain, previousCampaign = tslib_tslib_es6_rest(_a, ["referrer", "referring_domain"]);
+    var referrer = current.referrer, referring_domain = current.referring_domain, currentCampaign = (0,tslib_es6.__rest)(current, ["referrer", "referring_domain"]);
+    var _a = previous || {}, _previous_referrer = _a.referrer, prevReferringDomain = _a.referring_domain, previousCampaign = (0,tslib_es6.__rest)(_a, ["referrer", "referring_domain"]);
     if (isExcludedReferrer(options.excludeReferrers, current.referring_domain)) {
         return false;
     }
@@ -48336,10 +47198,10 @@ var isExcludedReferrer = function (excludeReferrers, referringDomain) {
     });
 };
 var createCampaignEvent = function (campaign, options) {
-    var campaignParameters = tslib_tslib_es6_assign(tslib_tslib_es6_assign({}, BASE_CAMPAIGN), campaign);
+    var campaignParameters = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, BASE_CAMPAIGN), campaign);
     var identifyEvent = Object.entries(campaignParameters).reduce(function (identify, _a) {
         var _b;
-        var _c = tslib_tslib_es6_read(_a, 2), key = _c[0], value = _c[1];
+        var _c = (0,tslib_es6.__read)(_a, 2), key = _c[0], value = _c[1];
         identify.setOnce("initial_".concat(key), (_b = value !== null && value !== void 0 ? value : options.initialEmptyValue) !== null && _b !== void 0 ? _b : 'EMPTY');
         if (value) {
             return identify.set(key, value);
@@ -48432,9 +47294,9 @@ var CampaignParser = /** @class */ (function () {
     function CampaignParser() {
     }
     CampaignParser.prototype.parse = function () {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_tslib_es6_generator(this, function (_a) {
-                return [2 /*return*/, tslib_tslib_es6_assign(tslib_tslib_es6_assign(tslib_tslib_es6_assign(tslib_tslib_es6_assign({}, BASE_CAMPAIGN), this.getUtmParam()), this.getReferrer()), this.getClickIds())];
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
+                return [2 /*return*/, (0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, BASE_CAMPAIGN), this.getUtmParam()), this.getReferrer()), this.getClickIds())];
             });
         });
     };
@@ -48510,7 +47372,7 @@ var WebAttribution = /** @class */ (function () {
     function WebAttribution(options, config) {
         var _a;
         this.shouldTrackNewCampaign = false;
-        this.options = tslib_tslib_es6_assign({ initialEmptyValue: 'EMPTY', resetSessionOnNewCampaign: false, excludeReferrers: getDefaultExcludedReferrers((_a = config.cookieOptions) === null || _a === void 0 ? void 0 : _a.domain) }, options);
+        this.options = (0,tslib_es6.__assign)({ initialEmptyValue: 'EMPTY', resetSessionOnNewCampaign: false, excludeReferrers: getDefaultExcludedReferrers((_a = config.cookieOptions) === null || _a === void 0 ? void 0 : _a.domain) }, options);
         this.storage = config.cookieStorage;
         this.storageKey = getStorageKey(config.apiKey, 'MKTG');
         this.currentCampaign = BASE_CAMPAIGN;
@@ -48519,14 +47381,14 @@ var WebAttribution = /** @class */ (function () {
         config.loggerProvider.log('Installing web attribution tracking.');
     }
     WebAttribution.prototype.init = function () {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var isEventInNewSession;
             var _a;
-            return tslib_tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0: return [4 /*yield*/, this.fetchCampaign()];
                     case 1:
-                        _a = tslib_tslib_es6_read.apply(void 0, [_b.sent(), 2]), this.currentCampaign = _a[0], this.previousCampaign = _a[1];
+                        _a = tslib_es6.__read.apply(void 0, [_b.sent(), 2]), this.currentCampaign = _a[0], this.previousCampaign = _a[1];
                         isEventInNewSession = !this.lastEventTime ? true : isNewSession(this.sessionTimeout, this.lastEventTime);
                         if (!isNewCampaign(this.currentCampaign, this.previousCampaign, this.options, isEventInNewSession)) return [3 /*break*/, 3];
                         this.shouldTrackNewCampaign = true;
@@ -48540,8 +47402,8 @@ var WebAttribution = /** @class */ (function () {
         });
     };
     WebAttribution.prototype.fetchCampaign = function () {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_tslib_es6_generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, Promise.all([new CampaignParser().parse(), this.storage.get(this.storageKey)])];
                     case 1: return [2 /*return*/, _a.sent()];
@@ -48632,15 +47494,15 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
-var analytics_connector_esm_assign = function () {
-  analytics_connector_esm_assign = Object.assign || function __assign(t) {
+var __assign = function () {
+  __assign = Object.assign || function __assign(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
       s = arguments[i];
       for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
     }
     return t;
   };
-  return analytics_connector_esm_assign.apply(this, arguments);
+  return __assign.apply(this, arguments);
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -48724,8 +47586,8 @@ var IdentityStoreImpl = /** @class */ (function () {
     IdentityStoreImpl.prototype.editIdentity = function () {
         // eslint-disable-next-line @typescript-eslint/no-this-alias
         var self = this;
-        var actingUserProperties = analytics_connector_esm_assign({}, this.identity.userProperties);
-        var actingIdentity = analytics_connector_esm_assign(analytics_connector_esm_assign({}, this.identity), { userProperties: actingUserProperties });
+        var actingUserProperties = __assign({}, this.identity.userProperties);
+        var actingIdentity = __assign(__assign({}, this.identity), { userProperties: actingUserProperties });
         return {
             setUserId: function (userId) {
                 actingIdentity.userId = userId;
@@ -48775,11 +47637,11 @@ var IdentityStoreImpl = /** @class */ (function () {
         };
     };
     IdentityStoreImpl.prototype.getIdentity = function () {
-        return analytics_connector_esm_assign({}, this.identity);
+        return __assign({}, this.identity);
     };
     IdentityStoreImpl.prototype.setIdentity = function (identity) {
-        var originalIdentity = analytics_connector_esm_assign({}, this.identity);
-        this.identity = analytics_connector_esm_assign({}, identity);
+        var originalIdentity = __assign({}, this.identity);
+        this.identity = __assign({}, identity);
         if (!isEqual(originalIdentity, this.identity)) {
             this.listeners.forEach(function (listener) {
                 listener(identity);
@@ -48847,9 +47709,9 @@ var IdentityEventSender = /** @class */ (function () {
         this.identityStore = getAnalyticsConnector().identityStore;
     }
     IdentityEventSender.prototype.execute = function (context) {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var userProperties;
-            return tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 userProperties = context.user_properties;
                 if (userProperties) {
                     this.identityStore.editIdentity().updateUserProperties(userProperties).commit();
@@ -48859,8 +47721,8 @@ var IdentityEventSender = /** @class */ (function () {
         });
     };
     IdentityEventSender.prototype.setup = function (config) {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_tslib_es6_generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 if (config.instanceName) {
                     this.identityStore = getAnalyticsConnector(config.instanceName).identityStore;
                 }
@@ -48944,9 +47806,9 @@ var Context = /** @class */ (function () {
     };
     Context.prototype.execute = function (context) {
         var _a, _b;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var time, lastEventId, nextEventId, event;
-            return tslib_es6_generator(this, function (_c) {
+            return (0,tslib_es6.__generator)(this, function (_c) {
                 time = new Date().getTime();
                 lastEventId = (_a = this.config.lastEventId) !== null && _a !== void 0 ? _a : -1;
                 nextEventId = (_b = context.event_id) !== null && _b !== void 0 ? _b : lastEventId + 1;
@@ -48954,7 +47816,7 @@ var Context = /** @class */ (function () {
                 if (!context.time) {
                     this.config.lastEventTime = time;
                 }
-                event = tslib_es6_assign(tslib_es6_assign(tslib_es6_assign(tslib_es6_assign(tslib_es6_assign(tslib_es6_assign(tslib_es6_assign(tslib_es6_assign({ user_id: this.config.userId, device_id: this.config.deviceId, session_id: this.config.sessionId, time: time }, (this.config.appVersion && { app_version: this.config.appVersion })), (this.config.trackingOptions.platform && { platform: BROWSER_PLATFORM })), (this.config.trackingOptions.language && { language: language_getLanguage() })), (this.config.trackingOptions.ipAddress && { ip: IP_ADDRESS })), { insert_id: UUID(), partner_id: this.config.partnerId, plan: this.config.plan }), (this.config.ingestionMetadata && {
+                event = (0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)((0,tslib_es6.__assign)({ user_id: this.config.userId, device_id: this.config.deviceId, session_id: this.config.sessionId, time: time }, (this.config.appVersion && { app_version: this.config.appVersion })), (this.config.trackingOptions.platform && { platform: BROWSER_PLATFORM })), (this.config.trackingOptions.language && { language: language_getLanguage() })), (this.config.trackingOptions.ipAddress && { ip: IP_ADDRESS })), { insert_id: UUID(), partner_id: this.config.partnerId, plan: this.config.plan }), (this.config.ingestionMetadata && {
                     ingestion_metadata: {
                         source_name: this.config.ingestionMetadata.sourceName,
                         source_version: this.config.ingestionMetadata.sourceVersion,
@@ -48975,23 +47837,23 @@ var MemoryStorage = /** @class */ (function () {
         this.memoryStorage = new Map();
     }
     MemoryStorage.prototype.isEnabled = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 return [2 /*return*/, true];
             });
         });
     };
     MemoryStorage.prototype.get = function (key) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 return [2 /*return*/, this.memoryStorage.get(key)];
             });
         });
     };
     MemoryStorage.prototype.getRaw = function (key) {
-        return __awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var value;
-            return __generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.get(key)];
                     case 1:
@@ -49002,24 +47864,24 @@ var MemoryStorage = /** @class */ (function () {
         });
     };
     MemoryStorage.prototype.set = function (key, value) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 this.memoryStorage.set(key, value);
                 return [2 /*return*/];
             });
         });
     };
     MemoryStorage.prototype.remove = function (key) {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 this.memoryStorage.delete(key);
                 return [2 /*return*/];
             });
         });
     };
     MemoryStorage.prototype.reset = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 this.memoryStorage.clear();
                 return [2 /*return*/];
             });
@@ -49045,12 +47907,12 @@ var getOldCookieName = function (apiKey) {
 
 var CookieStorage = /** @class */ (function () {
     function CookieStorage(options) {
-        this.options = tslib_tslib_es6_assign({}, options);
+        this.options = (0,tslib_es6.__assign)({}, options);
     }
     CookieStorage.prototype.isEnabled = function () {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var testStrorage, testKey, value, _a;
-            return tslib_tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         /* istanbul ignore if */
@@ -49085,9 +47947,9 @@ var CookieStorage = /** @class */ (function () {
     };
     CookieStorage.prototype.get = function (key) {
         var _a;
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var value, decodedValue;
-            return tslib_tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0: return [4 /*yield*/, this.getRaw(key)];
                     case 1:
@@ -49115,9 +47977,9 @@ var CookieStorage = /** @class */ (function () {
     };
     CookieStorage.prototype.getRaw = function (key) {
         var _a, _b;
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var globalScope, cookie, match;
-            return tslib_tslib_es6_generator(this, function (_c) {
+            return (0,tslib_es6.__generator)(this, function (_c) {
                 globalScope = getGlobalScope();
                 cookie = (_b = (_a = globalScope === null || globalScope === void 0 ? void 0 : globalScope.document) === null || _a === void 0 ? void 0 : _a.cookie.split('; ')) !== null && _b !== void 0 ? _b : [];
                 match = cookie.find(function (c) { return c.indexOf(key + '=') === 0; });
@@ -49130,9 +47992,9 @@ var CookieStorage = /** @class */ (function () {
     };
     CookieStorage.prototype.set = function (key, value) {
         var _a;
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var expirationDays, expires, expireDate, date, str, globalScope, errorMessage;
-            return tslib_tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 try {
                     expirationDays = (_a = this.options.expirationDays) !== null && _a !== void 0 ? _a : 0;
                     expires = value !== null ? expirationDays : -1;
@@ -49170,8 +48032,8 @@ var CookieStorage = /** @class */ (function () {
         });
     };
     CookieStorage.prototype.remove = function (key) {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_tslib_es6_generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.set(key, null)];
                     case 1:
@@ -49182,8 +48044,8 @@ var CookieStorage = /** @class */ (function () {
         });
     };
     CookieStorage.prototype.reset = function () {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_tslib_es6_generator(this, function (_a) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 return [2 /*return*/];
             });
         });
@@ -49316,14 +48178,14 @@ var BaseTransport = /** @class */ (function () {
 
 
 var FetchTransport = /** @class */ (function (_super) {
-    tslib_tslib_es6_extends(FetchTransport, _super);
+    (0,tslib_es6.__extends)(FetchTransport, _super);
     function FetchTransport() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     FetchTransport.prototype.send = function (serverUrl, payload) {
-        return tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var options, response, responseText;
-            return tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         /* istanbul ignore if */
@@ -49367,9 +48229,9 @@ var BrowserStorage = /** @class */ (function () {
         this.storage = storage;
     }
     BrowserStorage.prototype.isEnabled = function () {
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var random, testStorage, testKey, value, _a;
-            return tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         /* istanbul ignore if */
@@ -49403,9 +48265,9 @@ var BrowserStorage = /** @class */ (function () {
         });
     };
     BrowserStorage.prototype.get = function (key) {
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var value, _a;
-            return tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         _b.trys.push([0, 2, , 3]);
@@ -49428,16 +48290,16 @@ var BrowserStorage = /** @class */ (function () {
     };
     BrowserStorage.prototype.getRaw = function (key) {
         var _a;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 return [2 /*return*/, ((_a = this.storage) === null || _a === void 0 ? void 0 : _a.getItem(key)) || undefined];
             });
         });
     };
     BrowserStorage.prototype.set = function (key, value) {
         var _a;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 try {
                     (_a = this.storage) === null || _a === void 0 ? void 0 : _a.setItem(key, JSON.stringify(value));
                 }
@@ -49450,8 +48312,8 @@ var BrowserStorage = /** @class */ (function () {
     };
     BrowserStorage.prototype.remove = function (key) {
         var _a;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 try {
                     (_a = this.storage) === null || _a === void 0 ? void 0 : _a.removeItem(key);
                 }
@@ -49464,8 +48326,8 @@ var BrowserStorage = /** @class */ (function () {
     };
     BrowserStorage.prototype.reset = function () {
         var _a;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
-            return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 try {
                     (_a = this.storage) === null || _a === void 0 ? void 0 : _a.clear();
                 }
@@ -49486,7 +48348,7 @@ var BrowserStorage = /** @class */ (function () {
 
 var MAX_ARRAY_LENGTH = 1000;
 var LocalStorage = /** @class */ (function (_super) {
-    tslib_es6_extends(LocalStorage, _super);
+    (0,tslib_es6.__extends)(LocalStorage, _super);
     function LocalStorage(config) {
         var _this = this;
         var _a;
@@ -49496,9 +48358,9 @@ var LocalStorage = /** @class */ (function (_super) {
     }
     LocalStorage.prototype.set = function (key, value) {
         var _a;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var droppedEventsCount;
-            return tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         if (!(Array.isArray(value) && value.length > MAX_ARRAY_LENGTH)) return [3 /*break*/, 2];
@@ -49526,7 +48388,7 @@ var LocalStorage = /** @class */ (function (_super) {
 
 
 var SessionStorage = /** @class */ (function (_super) {
-    tslib_es6_extends(SessionStorage, _super);
+    (0,tslib_es6.__extends)(SessionStorage, _super);
     function SessionStorage() {
         var _a;
         return _super.call(this, (_a = getGlobalScope()) === null || _a === void 0 ? void 0 : _a.sessionStorage) || this;
@@ -49539,7 +48401,7 @@ var SessionStorage = /** @class */ (function (_super) {
 
 
 var XHRTransport = /** @class */ (function (_super) {
-    tslib_es6_extends(XHRTransport, _super);
+    (0,tslib_es6.__extends)(XHRTransport, _super);
     function XHRTransport() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.state = {
@@ -49548,9 +48410,9 @@ var XHRTransport = /** @class */ (function (_super) {
         return _this;
     }
     XHRTransport.prototype.send = function (serverUrl, payload) {
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var _this = this;
-            return tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         /* istanbul ignore if */
                         if (typeof XMLHttpRequest === 'undefined') {
@@ -49586,14 +48448,14 @@ var XHRTransport = /** @class */ (function (_super) {
 
 
 var SendBeaconTransport = /** @class */ (function (_super) {
-    tslib_es6_extends(SendBeaconTransport, _super);
+    (0,tslib_es6.__extends)(SendBeaconTransport, _super);
     function SendBeaconTransport() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     SendBeaconTransport.prototype.send = function (serverUrl, payload) {
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var _this = this;
-            return tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         var globalScope = getGlobalScope();
                         /* istanbul ignore if */
@@ -49629,9 +48491,9 @@ var SendBeaconTransport = /** @class */ (function (_super) {
 
 var parseLegacyCookies = function (apiKey, cookieStorage, deleteLegacyCookies) {
     if (deleteLegacyCookies === void 0) { deleteLegacyCookies = true; }
-    return tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var cookieName, cookies, _a, deviceId, userId, optOut, sessionId, lastEventTime, lastEventId;
-        return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             switch (_b.label) {
                 case 0:
                     cookieName = getOldCookieName(apiKey);
@@ -49649,7 +48511,7 @@ var parseLegacyCookies = function (apiKey, cookieStorage, deleteLegacyCookies) {
                     _b.sent();
                     _b.label = 3;
                 case 3:
-                    _a = tslib_es6_read(cookies.split('.'), 6), deviceId = _a[0], userId = _a[1], optOut = _a[2], sessionId = _a[3], lastEventTime = _a[4], lastEventId = _a[5];
+                    _a = (0,tslib_es6.__read)(cookies.split('.'), 6), deviceId = _a[0], userId = _a[1], optOut = _a[2], sessionId = _a[3], lastEventTime = _a[4], lastEventId = _a[5];
                     return [2 /*return*/, {
                             deviceId: deviceId,
                             userId: decode(userId),
@@ -49713,7 +48575,7 @@ var DEFAULT_SERVER_ZONE = 'US';
 
 // Exported for testing purposes only. Do not expose to public interface.
 var BrowserConfig = /** @class */ (function (_super) {
-    tslib_es6_extends(BrowserConfig, _super);
+    (0,tslib_es6.__extends)(BrowserConfig, _super);
     function BrowserConfig(apiKey, appVersion, cookieStorage, cookieOptions, defaultTracking, autocapture, deviceId, flushIntervalMillis, flushMaxRetries, flushQueueSize, identityStorage, ingestionMetadata, instanceName, lastEventId, lastEventTime, loggerProvider, logLevel, minIdLength, offline, optOut, partnerId, plan, serverUrl, serverZone, sessionId, sessionTimeout, storageProvider, trackingOptions, transport, useBatch, fetchRemoteConfig, userId, pageCounter, debugLogsEnabled) {
         if (cookieStorage === void 0) { cookieStorage = new MemoryStorage(); }
         if (cookieOptions === void 0) { cookieOptions = {
@@ -49914,11 +48776,11 @@ var BrowserConfig = /** @class */ (function (_super) {
 
 var useBrowserConfig = function (apiKey, options, amplitudeInstance) {
     if (options === void 0) { options = {}; }
-    return tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var identityStorage, cookieOptions, _a, _b, cookieStorage, legacyCookies, previousCookies, queryParams, deviceId, lastEventId, lastEventTime, optOut, sessionId, userId, trackingOptions, pageCounter, debugLogsEnabled, browserConfig;
         var _c;
         var _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2;
-        return tslib_es6_generator(this, function (_3) {
+        return (0,tslib_es6.__generator)(this, function (_3) {
             switch (_3.label) {
                 case 0:
                     identityStorage = options.identityStorage || DEFAULT_IDENTITY_STORAGE;
@@ -49938,7 +48800,7 @@ var useBrowserConfig = function (apiKey, options, amplitudeInstance) {
                     _a = _b;
                     _3.label = 5;
                 case 5:
-                    cookieOptions = tslib_es6_assign.apply(void 0, [(_c.domain = _a, _c.expiration = 365, _c.sameSite = 'Lax', _c.secure = false, _c.upgrade = true, _c), options.cookieOptions]);
+                    cookieOptions = tslib_es6.__assign.apply(void 0, [(_c.domain = _a, _c.expiration = 365, _c.sameSite = 'Lax', _c.secure = false, _c.upgrade = true, _c), options.cookieOptions]);
                     cookieStorage = createCookieStorage(options.identityStorage, cookieOptions);
                     return [4 /*yield*/, parseLegacyCookies(apiKey, cookieStorage, (_g = (_f = options.cookieOptions) === null || _f === void 0 ? void 0 : _f.upgrade) !== null && _g !== void 0 ? _g : true)];
                 case 6:
@@ -49990,7 +48852,7 @@ var createCookieStorage = function (identityStorage, cookieOptions) {
             return new MemoryStorage();
         case 'cookie':
         default:
-            return new CookieStorage(tslib_es6_assign(tslib_es6_assign({}, cookieOptions), { expirationDays: cookieOptions.expiration }));
+            return new CookieStorage((0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, cookieOptions), { expirationDays: cookieOptions.expiration }));
     }
 };
 var createTransport = function (transport) {
@@ -50002,9 +48864,9 @@ var createTransport = function (transport) {
     }
     return new FetchTransport();
 };
-var getTopLevelDomain = function (url) { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
+var getTopLevelDomain = function (url) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
     var host, parts, levels, storageKey, i, i, domain, options, storage, value;
-    return tslib_es6_generator(this, function (_a) {
+    return (0,tslib_es6.__generator)(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, new CookieStorage().isEnabled()];
             case 1:
@@ -50045,386 +48907,6 @@ var getTopLevelDomain = function (url) { return tslib_es6_awaiter(void 0, void 0
     });
 }); };
 //# sourceMappingURL=config.js.map
-;// CONCATENATED MODULE: ./node_modules/@amplitude/plugin-page-view-tracking-browser/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var node_modules_tslib_tslib_es6_extendStatics = function(d, b) {
-  node_modules_tslib_tslib_es6_extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return node_modules_tslib_tslib_es6_extendStatics(d, b);
-};
-
-function node_modules_tslib_tslib_es6_extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  node_modules_tslib_tslib_es6_extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var node_modules_tslib_tslib_es6_assign = function() {
-  node_modules_tslib_tslib_es6_assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return node_modules_tslib_tslib_es6_assign.apply(this, arguments);
-}
-
-function node_modules_tslib_tslib_es6_rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function node_modules_tslib_tslib_es6_decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function node_modules_tslib_tslib_es6_param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function node_modules_tslib_tslib_es6_esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function node_modules_tslib_tslib_es6_runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function node_modules_tslib_tslib_es6_propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function node_modules_tslib_tslib_es6_setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function node_modules_tslib_tslib_es6_metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function node_modules_tslib_tslib_es6_awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function node_modules_tslib_tslib_es6_generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var node_modules_tslib_tslib_es6_createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function node_modules_tslib_tslib_es6_exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) node_modules_tslib_tslib_es6_createBinding(o, m, p);
-}
-
-function node_modules_tslib_tslib_es6_values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function node_modules_tslib_tslib_es6_read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function node_modules_tslib_tslib_es6_spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(node_modules_tslib_tslib_es6_read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function node_modules_tslib_tslib_es6_spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function node_modules_tslib_tslib_es6_spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function node_modules_tslib_tslib_es6_await(v) {
-  return this instanceof node_modules_tslib_tslib_es6_await ? (this.v = v, this) : new node_modules_tslib_tslib_es6_await(v);
-}
-
-function node_modules_tslib_tslib_es6_asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof node_modules_tslib_tslib_es6_await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function node_modules_tslib_tslib_es6_asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: node_modules_tslib_tslib_es6_await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function node_modules_tslib_tslib_es6_asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof node_modules_tslib_tslib_es6_values === "function" ? node_modules_tslib_tslib_es6_values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function node_modules_tslib_tslib_es6_makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var node_modules_tslib_tslib_es6_setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function node_modules_tslib_tslib_es6_importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) node_modules_tslib_tslib_es6_createBinding(result, mod, k);
-  node_modules_tslib_tslib_es6_setModuleDefault(result, mod);
-  return result;
-}
-
-function node_modules_tslib_tslib_es6_importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function node_modules_tslib_tslib_es6_classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function node_modules_tslib_tslib_es6_classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function node_modules_tslib_tslib_es6_classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function node_modules_tslib_tslib_es6_addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var node_modules_tslib_tslib_es6_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function node_modules_tslib_tslib_es6_disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new node_modules_tslib_tslib_es6_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const plugin_page_view_tracking_browser_node_modules_tslib_tslib_es6 = ({
-  __extends: node_modules_tslib_tslib_es6_extends,
-  __assign: node_modules_tslib_tslib_es6_assign,
-  __rest: node_modules_tslib_tslib_es6_rest,
-  __decorate: node_modules_tslib_tslib_es6_decorate,
-  __param: node_modules_tslib_tslib_es6_param,
-  __metadata: node_modules_tslib_tslib_es6_metadata,
-  __awaiter: node_modules_tslib_tslib_es6_awaiter,
-  __generator: node_modules_tslib_tslib_es6_generator,
-  __createBinding: node_modules_tslib_tslib_es6_createBinding,
-  __exportStar: node_modules_tslib_tslib_es6_exportStar,
-  __values: node_modules_tslib_tslib_es6_values,
-  __read: node_modules_tslib_tslib_es6_read,
-  __spread: node_modules_tslib_tslib_es6_spread,
-  __spreadArrays: node_modules_tslib_tslib_es6_spreadArrays,
-  __spreadArray: node_modules_tslib_tslib_es6_spreadArray,
-  __await: node_modules_tslib_tslib_es6_await,
-  __asyncGenerator: node_modules_tslib_tslib_es6_asyncGenerator,
-  __asyncDelegator: node_modules_tslib_tslib_es6_asyncDelegator,
-  __asyncValues: node_modules_tslib_tslib_es6_asyncValues,
-  __makeTemplateObject: node_modules_tslib_tslib_es6_makeTemplateObject,
-  __importStar: node_modules_tslib_tslib_es6_importStar,
-  __importDefault: node_modules_tslib_tslib_es6_importDefault,
-  __classPrivateFieldGet: node_modules_tslib_tslib_es6_classPrivateFieldGet,
-  __classPrivateFieldSet: node_modules_tslib_tslib_es6_classPrivateFieldSet,
-  __classPrivateFieldIn: node_modules_tslib_tslib_es6_classPrivateFieldIn,
-  __addDisposableResource: node_modules_tslib_tslib_es6_addDisposableResource,
-  __disposeResources: node_modules_tslib_tslib_es6_disposeResources,
-});
-
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/plugin-page-view-tracking-browser/lib/esm/utils.js
 var omitUndefined = function (input) {
     var obj = {};
@@ -50452,10 +48934,10 @@ var pageViewTrackingPlugin = function (options) {
     var pushState;
     var localConfig;
     var trackOn = options.trackOn, trackHistoryChanges = options.trackHistoryChanges, _a = options.eventType, eventType = _a === void 0 ? defaultPageViewEvent : _a;
-    var createPageViewEvent = function () { return node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    var createPageViewEvent = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var _a;
         var _b;
-        return node_modules_tslib_tslib_es6_generator(this, function (_c) {
+        return (0,tslib_es6.__generator)(this, function (_c) {
             switch (_c.label) {
                 case 0:
                     _b = {
@@ -50463,7 +48945,7 @@ var pageViewTrackingPlugin = function (options) {
                     };
                     _a = [{}];
                     return [4 /*yield*/, getCampaignParams()];
-                case 1: return [2 /*return*/, (_b.event_properties = node_modules_tslib_tslib_es6_assign.apply(void 0, [node_modules_tslib_tslib_es6_assign.apply(void 0, _a.concat([(_c.sent())])), { '[Amplitude] Page Domain': 
+                case 1: return [2 /*return*/, (_b.event_properties = tslib_es6.__assign.apply(void 0, [tslib_es6.__assign.apply(void 0, _a.concat([(_c.sent())])), { '[Amplitude] Page Domain': 
                             /* istanbul ignore next */ (typeof location !== 'undefined' && location.hostname) || '', '[Amplitude] Page Location': 
                             /* istanbul ignore next */ (typeof location !== 'undefined' && location.href) || '', '[Amplitude] Page Path': 
                             /* istanbul ignore next */ (typeof location !== 'undefined' && location.pathname) || '', '[Amplitude] Page Title': /* istanbul ignore next */ (typeof document !== 'undefined' && document.title) || '', '[Amplitude] Page URL': 
@@ -50475,9 +48957,9 @@ var pageViewTrackingPlugin = function (options) {
     var shouldTrackOnPageLoad = function () { return typeof trackOn === 'undefined' || (typeof trackOn === 'function' && trackOn()); };
     /* istanbul ignore next */
     var previousURL = typeof location !== 'undefined' ? location.href : null;
-    var trackHistoryPageView = function () { return node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    var trackHistoryPageView = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var newURL, shouldTrackPageView, _a, _b, _c;
-        return node_modules_tslib_tslib_es6_generator(this, function (_d) {
+        return (0,tslib_es6.__generator)(this, function (_d) {
             switch (_d.label) {
                 case 0:
                     newURL = location.href;
@@ -50513,9 +48995,9 @@ var pageViewTrackingPlugin = function (options) {
     var plugin = {
         name: '@amplitude/plugin-page-view-tracking-browser',
         type: 'enrichment',
-        setup: function (config, client) { return node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
+        setup: function (config, client) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
             var _a, _b;
-            return node_modules_tslib_tslib_es6_generator(this, function (_c) {
+            return (0,tslib_es6.__generator)(this, function (_c) {
                 switch (_c.label) {
                     case 0:
                         amplitude = client;
@@ -50534,7 +49016,7 @@ var pageViewTrackingPlugin = function (options) {
                             // eslint-disable-next-line @typescript-eslint/unbound-method
                             globalScope.history.pushState = new Proxy(globalScope.history.pushState, {
                                 apply: function (target, thisArg, _a) {
-                                    var _b = node_modules_tslib_tslib_es6_read(_a, 3), state = _b[0], unused = _b[1], url = _b[2];
+                                    var _b = (0,tslib_es6.__read)(_a, 3), state = _b[0], unused = _b[1], url = _b[2];
                                     target.apply(thisArg, [state, unused, url]);
                                     void trackHistoryPageView();
                                 },
@@ -50551,9 +49033,9 @@ var pageViewTrackingPlugin = function (options) {
                 }
             });
         }); },
-        execute: function (event) { return node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
+        execute: function (event) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
             var pageViewEvent;
-            return node_modules_tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         if (!(trackOn === 'attribution' && isCampaignEvent(event))) return [3 /*break*/, 2];
@@ -50563,20 +49045,20 @@ var pageViewTrackingPlugin = function (options) {
                     case 1:
                         pageViewEvent = _a.sent();
                         event.event_type = pageViewEvent.event_type;
-                        event.event_properties = node_modules_tslib_tslib_es6_assign(node_modules_tslib_tslib_es6_assign({}, event.event_properties), pageViewEvent.event_properties);
+                        event.event_properties = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, event.event_properties), pageViewEvent.event_properties);
                         _a.label = 2;
                     case 2:
                         // Update the pageCounter for the page view event
                         if (localConfig && event.event_type === eventType) {
                             localConfig.pageCounter = !localConfig.pageCounter ? 1 : localConfig.pageCounter + 1;
-                            event.event_properties = node_modules_tslib_tslib_es6_assign(node_modules_tslib_tslib_es6_assign({}, event.event_properties), { '[Amplitude] Page Counter': localConfig.pageCounter });
+                            event.event_properties = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, event.event_properties), { '[Amplitude] Page Counter': localConfig.pageCounter });
                         }
                         return [2 /*return*/, event];
                 }
             });
         }); },
-        teardown: function () { return node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
-            return node_modules_tslib_tslib_es6_generator(this, function (_a) {
+        teardown: function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 if (globalScope) {
                     globalScope.removeEventListener('popstate', trackHistoryPageViewWrapper);
                     if (pushState) {
@@ -50589,7 +49071,7 @@ var pageViewTrackingPlugin = function (options) {
     };
     return plugin;
 };
-var getCampaignParams = function () { return node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () { var _a; return node_modules_tslib_tslib_es6_generator(this, function (_b) {
+var getCampaignParams = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () { var _a; return (0,tslib_es6.__generator)(this, function (_b) {
     switch (_b.label) {
         case 0:
             _a = omitUndefined;
@@ -50602,7 +49084,7 @@ var isCampaignEvent = function (event) {
         var properties = event.user_properties;
         var $set = properties[IdentifyOperation.SET] || {};
         var $unset = properties[IdentifyOperation.UNSET] || {};
-        var userProperties_1 = node_modules_tslib_tslib_es6_spreadArray(node_modules_tslib_tslib_es6_spreadArray([], node_modules_tslib_tslib_es6_read(Object.keys($set)), false), node_modules_tslib_tslib_es6_read(Object.keys($unset)), false);
+        var userProperties_1 = (0,tslib_es6.__spreadArray)((0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(Object.keys($set)), false), (0,tslib_es6.__read)(Object.keys($unset)), false);
         return Object.keys(BASE_CAMPAIGN).every(function (value) { return userProperties_1.includes(value); });
     }
     return false;
@@ -50641,9 +49123,9 @@ var formInteractionTracking = function () {
     };
     var name = '@amplitude/plugin-form-interaction-tracking-browser';
     var type = 'enrichment';
-    var setup = function (config, amplitude) { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    var setup = function (config, amplitude) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var _a;
-        return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             // The form interaction plugin observes changes in the dom. For this to work correctly, the observer can only be setup
             // after the body is built. When Amplitud gets initialized in a script tag, the body tag is still unavailable. So register this
             // only after the window is loaded
@@ -50716,11 +49198,11 @@ var formInteractionTracking = function () {
             return [2 /*return*/];
         });
     }); };
-    var execute = function (event) { return tslib_es6_awaiter(void 0, void 0, void 0, function () { return tslib_es6_generator(this, function (_a) {
+    var execute = function (event) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () { return (0,tslib_es6.__generator)(this, function (_a) {
         return [2 /*return*/, event];
     }); }); };
-    var teardown = function () { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
-        return tslib_es6_generator(this, function (_a) {
+    var teardown = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+        return (0,tslib_es6.__generator)(this, function (_a) {
             observer === null || observer === void 0 ? void 0 : observer.disconnect();
             removeClickListeners();
             return [2 /*return*/];
@@ -50770,9 +49252,9 @@ var fileDownloadTracking = function () {
     };
     var name = '@amplitude/plugin-file-download-tracking-browser';
     var type = 'enrichment';
-    var setup = function (config, amplitude) { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    var setup = function (config, amplitude) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var _a;
-        return tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             // The form interaction plugin observes changes in the dom. For this to work correctly, the observer can only be setup
             // after the body is built. When Amplitud gets initialized in a script tag, the body tag is still unavailable. So register this
             // only after the window is loaded
@@ -50843,11 +49325,11 @@ var fileDownloadTracking = function () {
             return [2 /*return*/];
         });
     }); };
-    var execute = function (event) { return tslib_es6_awaiter(void 0, void 0, void 0, function () { return tslib_es6_generator(this, function (_a) {
+    var execute = function (event) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () { return (0,tslib_es6.__generator)(this, function (_a) {
         return [2 /*return*/, event];
     }); }); };
-    var teardown = function () { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
-        return tslib_es6_generator(this, function (_a) {
+    var teardown = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+        return (0,tslib_es6.__generator)(this, function (_a) {
             observer === null || observer === void 0 ? void 0 : observer.disconnect();
             removeClickListeners();
             return [2 /*return*/];
@@ -50906,8 +49388,8 @@ var networkConnectivityCheckerPlugin = function () {
         });
         eventListeners = [];
     };
-    var setup = function (config, amplitude) { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
-        return tslib_es6_generator(this, function (_a) {
+    var setup = function (config, amplitude) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+        return (0,tslib_es6.__generator)(this, function (_a) {
             config.offline = !navigator.onLine;
             addNetworkListener('online', function () {
                 config.loggerProvider.debug('Network connectivity changed to online.');
@@ -50924,8 +49406,8 @@ var networkConnectivityCheckerPlugin = function () {
             return [2 /*return*/];
         });
     }); };
-    var teardown = function () { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
-        return tslib_es6_generator(this, function (_a) {
+    var teardown = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+        return (0,tslib_es6.__generator)(this, function (_a) {
             removeNetworkListeners();
             return [2 /*return*/];
         });
@@ -50938,386 +49420,6 @@ var networkConnectivityCheckerPlugin = function () {
     };
 };
 //# sourceMappingURL=network-connectivity-checker.js.map
-;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-remote-config/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var analytics_remote_config_node_modules_tslib_tslib_es6_extendStatics = function(d, b) {
-  analytics_remote_config_node_modules_tslib_tslib_es6_extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return analytics_remote_config_node_modules_tslib_tslib_es6_extendStatics(d, b);
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  analytics_remote_config_node_modules_tslib_tslib_es6_extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var analytics_remote_config_node_modules_tslib_tslib_es6_assign = function() {
-  analytics_remote_config_node_modules_tslib_tslib_es6_assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return analytics_remote_config_node_modules_tslib_tslib_es6_assign.apply(this, arguments);
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var analytics_remote_config_node_modules_tslib_tslib_es6_createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) analytics_remote_config_node_modules_tslib_tslib_es6_createBinding(o, m, p);
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function analytics_remote_config_node_modules_tslib_tslib_es6_spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(analytics_remote_config_node_modules_tslib_tslib_es6_read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function analytics_remote_config_node_modules_tslib_tslib_es6_spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_await(v) {
-  return this instanceof analytics_remote_config_node_modules_tslib_tslib_es6_await ? (this.v = v, this) : new analytics_remote_config_node_modules_tslib_tslib_es6_await(v);
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof analytics_remote_config_node_modules_tslib_tslib_es6_await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: analytics_remote_config_node_modules_tslib_tslib_es6_await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof analytics_remote_config_node_modules_tslib_tslib_es6_values === "function" ? analytics_remote_config_node_modules_tslib_tslib_es6_values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var analytics_remote_config_node_modules_tslib_tslib_es6_setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) analytics_remote_config_node_modules_tslib_tslib_es6_createBinding(result, mod, k);
-  analytics_remote_config_node_modules_tslib_tslib_es6_setModuleDefault(result, mod);
-  return result;
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var analytics_remote_config_node_modules_tslib_tslib_es6_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function analytics_remote_config_node_modules_tslib_tslib_es6_disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new analytics_remote_config_node_modules_tslib_tslib_es6_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const analytics_remote_config_node_modules_tslib_tslib_es6 = ({
-  __extends: analytics_remote_config_node_modules_tslib_tslib_es6_extends,
-  __assign: analytics_remote_config_node_modules_tslib_tslib_es6_assign,
-  __rest: analytics_remote_config_node_modules_tslib_tslib_es6_rest,
-  __decorate: analytics_remote_config_node_modules_tslib_tslib_es6_decorate,
-  __param: analytics_remote_config_node_modules_tslib_tslib_es6_param,
-  __metadata: analytics_remote_config_node_modules_tslib_tslib_es6_metadata,
-  __awaiter: analytics_remote_config_node_modules_tslib_tslib_es6_awaiter,
-  __generator: analytics_remote_config_node_modules_tslib_tslib_es6_generator,
-  __createBinding: analytics_remote_config_node_modules_tslib_tslib_es6_createBinding,
-  __exportStar: analytics_remote_config_node_modules_tslib_tslib_es6_exportStar,
-  __values: analytics_remote_config_node_modules_tslib_tslib_es6_values,
-  __read: analytics_remote_config_node_modules_tslib_tslib_es6_read,
-  __spread: analytics_remote_config_node_modules_tslib_tslib_es6_spread,
-  __spreadArrays: analytics_remote_config_node_modules_tslib_tslib_es6_spreadArrays,
-  __spreadArray: analytics_remote_config_node_modules_tslib_tslib_es6_spreadArray,
-  __await: analytics_remote_config_node_modules_tslib_tslib_es6_await,
-  __asyncGenerator: analytics_remote_config_node_modules_tslib_tslib_es6_asyncGenerator,
-  __asyncDelegator: analytics_remote_config_node_modules_tslib_tslib_es6_asyncDelegator,
-  __asyncValues: analytics_remote_config_node_modules_tslib_tslib_es6_asyncValues,
-  __makeTemplateObject: analytics_remote_config_node_modules_tslib_tslib_es6_makeTemplateObject,
-  __importStar: analytics_remote_config_node_modules_tslib_tslib_es6_importStar,
-  __importDefault: analytics_remote_config_node_modules_tslib_tslib_es6_importDefault,
-  __classPrivateFieldGet: analytics_remote_config_node_modules_tslib_tslib_es6_classPrivateFieldGet,
-  __classPrivateFieldSet: analytics_remote_config_node_modules_tslib_tslib_es6_classPrivateFieldSet,
-  __classPrivateFieldIn: analytics_remote_config_node_modules_tslib_tslib_es6_classPrivateFieldIn,
-  __addDisposableResource: analytics_remote_config_node_modules_tslib_tslib_es6_addDisposableResource,
-  __disposeResources: analytics_remote_config_node_modules_tslib_tslib_es6_disposeResources,
-});
-
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/analytics-types/lib/esm/server-zone.js
 /**
  * @deprecated use ServerZoneType instead
@@ -51348,9 +49450,9 @@ var RemoteConfigFetch = /** @class */ (function () {
         this.attempts = 0;
         this.sessionTargetingMatch = false;
         this.metrics = {};
-        this.getRemoteConfig = function (configNamespace, key, sessionId) { return analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(_this, void 0, void 0, function () {
+        this.getRemoteConfig = function (configNamespace, key, sessionId) { return (0,tslib_es6.__awaiter)(_this, void 0, void 0, function () {
             var fetchStartTime, configAPIResponse, remoteConfig;
-            return analytics_remote_config_node_modules_tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         fetchStartTime = Date.now();
@@ -51369,9 +49471,9 @@ var RemoteConfigFetch = /** @class */ (function () {
                 }
             });
         }); };
-        this.fetchWithTimeout = function (sessionId) { return analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(_this, void 0, void 0, function () {
+        this.fetchWithTimeout = function (sessionId) { return (0,tslib_es6.__awaiter)(_this, void 0, void 0, function () {
             var controller, timeoutId, remoteConfig;
-            return analytics_remote_config_node_modules_tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         controller = new AbortController();
@@ -51384,10 +49486,10 @@ var RemoteConfigFetch = /** @class */ (function () {
                 }
             });
         }); };
-        this.fetchRemoteConfig = function (signal, sessionId) { return analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(_this, void 0, void 0, function () {
+        this.fetchRemoteConfig = function (signal, sessionId) { return (0,tslib_es6.__awaiter)(_this, void 0, void 0, function () {
             var urlParams, _a, _b, configKey, options, serverUrl, res, parsedStatus, e_1, knownError;
             var e_2, _c;
-            return analytics_remote_config_node_modules_tslib_tslib_es6_generator(this, function (_d) {
+            return (0,tslib_es6.__generator)(this, function (_d) {
                 switch (_d.label) {
                     case 0:
                         if (sessionId === this.lastFetchedSessionId && this.attempts >= this.localConfig.flushMaxRetries) {
@@ -51407,7 +49509,7 @@ var RemoteConfigFetch = /** @class */ (function () {
                             api_key: this.localConfig.apiKey,
                         });
                         try {
-                            for (_a = analytics_remote_config_node_modules_tslib_tslib_es6_values(this.configKeys), _b = _a.next(); !_b.done; _b = _a.next()) {
+                            for (_a = (0,tslib_es6.__values)(this.configKeys), _b = _a.next(); !_b.done; _b = _a.next()) {
                                 configKey = _b.value;
                                 urlParams.append('config_keys', configKey);
                             }
@@ -51430,7 +49532,7 @@ var RemoteConfigFetch = /** @class */ (function () {
                         };
                         serverUrl = "".concat(this.getServerUrl(), "?").concat(urlParams.toString());
                         this.attempts += 1;
-                        return [4 /*yield*/, fetch(serverUrl, analytics_remote_config_node_modules_tslib_tslib_es6_assign(analytics_remote_config_node_modules_tslib_tslib_es6_assign({}, options), { signal: signal }))];
+                        return [4 /*yield*/, fetch(serverUrl, (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, options), { signal: signal }))];
                     case 2:
                         res = _d.sent();
                         if (res === null) {
@@ -51458,9 +49560,9 @@ var RemoteConfigFetch = /** @class */ (function () {
                 }
             });
         }); };
-        this.retryFetch = function (signal, sessionId) { return analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(_this, void 0, void 0, function () {
+        this.retryFetch = function (signal, sessionId) { return (0,tslib_es6.__awaiter)(_this, void 0, void 0, function () {
             var _this = this;
-            return analytics_remote_config_node_modules_tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, new Promise(function (resolve) { return setTimeout(resolve, _this.attempts * _this.retryTimeout); })];
                     case 1:
@@ -51469,9 +49571,9 @@ var RemoteConfigFetch = /** @class */ (function () {
                 }
             });
         }); };
-        this.parseAndStoreConfig = function (res) { return analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(_this, void 0, void 0, function () {
+        this.parseAndStoreConfig = function (res) { return (0,tslib_es6.__awaiter)(_this, void 0, void 0, function () {
             var remoteConfig;
-            return analytics_remote_config_node_modules_tslib_tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, res.json()];
                     case 1:
@@ -51507,8 +49609,8 @@ var RemoteConfigFetch = /** @class */ (function () {
 
 var createRemoteConfigFetch = function (_a) {
     var localConfig = _a.localConfig, configKeys = _a.configKeys;
-    return analytics_remote_config_node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
-        return analytics_remote_config_node_modules_tslib_tslib_es6_generator(this, function (_b) {
+    return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             return [2 /*return*/, new RemoteConfigFetch({ localConfig: localConfig, configKeys: configKeys })];
         });
     });
@@ -51528,9 +49630,9 @@ var BrowserJoinedConfigGenerator = /** @class */ (function () {
         this.config.loggerProvider.debug('Local configuration before merging with remote config', JSON.stringify(this.config, null, 2));
     }
     BrowserJoinedConfigGenerator.prototype.initialize = function () {
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var _a;
-            return tslib_es6_generator(this, function (_b) {
+            return (0,tslib_es6.__generator)(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         _a = this;
@@ -51548,9 +49650,9 @@ var BrowserJoinedConfigGenerator = /** @class */ (function () {
     BrowserJoinedConfigGenerator.prototype.generateJoinedConfig = function () {
         var _a, _b, _c;
         var _d;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var remoteConfig, _e, e_1;
-            return tslib_es6_generator(this, function (_f) {
+            return (0,tslib_es6.__generator)(this, function (_f) {
                 switch (_f.label) {
                     case 0:
                         _f.trys.push([0, 3, , 4]);
@@ -51575,10 +49677,10 @@ var BrowserJoinedConfigGenerator = /** @class */ (function () {
                                     this.config.autocapture = remoteConfig.autocapture;
                                 }
                                 if (typeof this.config.autocapture === 'boolean') {
-                                    this.config.autocapture = tslib_es6_assign({ attribution: this.config.autocapture, fileDownloads: this.config.autocapture, formInteractions: this.config.autocapture, pageViews: this.config.autocapture, sessions: this.config.autocapture, elementInteractions: this.config.autocapture }, remoteConfig.autocapture);
+                                    this.config.autocapture = (0,tslib_es6.__assign)({ attribution: this.config.autocapture, fileDownloads: this.config.autocapture, formInteractions: this.config.autocapture, pageViews: this.config.autocapture, sessions: this.config.autocapture, elementInteractions: this.config.autocapture }, remoteConfig.autocapture);
                                 }
                                 if (typeof this.config.autocapture === 'object') {
-                                    this.config.autocapture = tslib_es6_assign(tslib_es6_assign({}, this.config.autocapture), remoteConfig.autocapture);
+                                    this.config.autocapture = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, this.config.autocapture), remoteConfig.autocapture);
                                 }
                             }
                             // Override default tracking options if autocapture is updated by remote config
@@ -51605,9 +49707,9 @@ var BrowserJoinedConfigGenerator = /** @class */ (function () {
     return BrowserJoinedConfigGenerator;
 }());
 
-var createBrowserJoinedConfigGenerator = function (localConfig) { return tslib_es6_awaiter(void 0, void 0, void 0, function () {
+var createBrowserJoinedConfigGenerator = function (localConfig) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
     var joinedConfigGenerator;
-    return tslib_es6_generator(this, function (_a) {
+    return (0,tslib_es6.__generator)(this, function (_a) {
         switch (_a.label) {
             case 0:
                 joinedConfigGenerator = new BrowserJoinedConfigGenerator(localConfig);
@@ -51619,386 +49721,6 @@ var createBrowserJoinedConfigGenerator = function (localConfig) { return tslib_e
     });
 }); };
 //# sourceMappingURL=joined-config.js.map
-;// CONCATENATED MODULE: ./node_modules/@amplitude/plugin-autocapture-browser/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var plugin_autocapture_browser_node_modules_tslib_tslib_es6_extendStatics = function(d, b) {
-  plugin_autocapture_browser_node_modules_tslib_tslib_es6_extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return plugin_autocapture_browser_node_modules_tslib_tslib_es6_extendStatics(d, b);
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  plugin_autocapture_browser_node_modules_tslib_tslib_es6_extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign = function() {
-  plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign.apply(this, arguments);
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var plugin_autocapture_browser_node_modules_tslib_tslib_es6_createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) plugin_autocapture_browser_node_modules_tslib_tslib_es6_createBinding(o, m, p);
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_await(v) {
-  return this instanceof plugin_autocapture_browser_node_modules_tslib_tslib_es6_await ? (this.v = v, this) : new plugin_autocapture_browser_node_modules_tslib_tslib_es6_await(v);
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof plugin_autocapture_browser_node_modules_tslib_tslib_es6_await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: plugin_autocapture_browser_node_modules_tslib_tslib_es6_await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof plugin_autocapture_browser_node_modules_tslib_tslib_es6_values === "function" ? plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var plugin_autocapture_browser_node_modules_tslib_tslib_es6_setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) plugin_autocapture_browser_node_modules_tslib_tslib_es6_createBinding(result, mod, k);
-  plugin_autocapture_browser_node_modules_tslib_tslib_es6_setModuleDefault(result, mod);
-  return result;
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var plugin_autocapture_browser_node_modules_tslib_tslib_es6_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function plugin_autocapture_browser_node_modules_tslib_tslib_es6_disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new plugin_autocapture_browser_node_modules_tslib_tslib_es6_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const plugin_autocapture_browser_node_modules_tslib_tslib_es6 = ({
-  __extends: plugin_autocapture_browser_node_modules_tslib_tslib_es6_extends,
-  __assign: plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign,
-  __rest: plugin_autocapture_browser_node_modules_tslib_tslib_es6_rest,
-  __decorate: plugin_autocapture_browser_node_modules_tslib_tslib_es6_decorate,
-  __param: plugin_autocapture_browser_node_modules_tslib_tslib_es6_param,
-  __metadata: plugin_autocapture_browser_node_modules_tslib_tslib_es6_metadata,
-  __awaiter: plugin_autocapture_browser_node_modules_tslib_tslib_es6_awaiter,
-  __generator: plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator,
-  __createBinding: plugin_autocapture_browser_node_modules_tslib_tslib_es6_createBinding,
-  __exportStar: plugin_autocapture_browser_node_modules_tslib_tslib_es6_exportStar,
-  __values: plugin_autocapture_browser_node_modules_tslib_tslib_es6_values,
-  __read: plugin_autocapture_browser_node_modules_tslib_tslib_es6_read,
-  __spread: plugin_autocapture_browser_node_modules_tslib_tslib_es6_spread,
-  __spreadArrays: plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArrays,
-  __spreadArray: plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray,
-  __await: plugin_autocapture_browser_node_modules_tslib_tslib_es6_await,
-  __asyncGenerator: plugin_autocapture_browser_node_modules_tslib_tslib_es6_asyncGenerator,
-  __asyncDelegator: plugin_autocapture_browser_node_modules_tslib_tslib_es6_asyncDelegator,
-  __asyncValues: plugin_autocapture_browser_node_modules_tslib_tslib_es6_asyncValues,
-  __makeTemplateObject: plugin_autocapture_browser_node_modules_tslib_tslib_es6_makeTemplateObject,
-  __importStar: plugin_autocapture_browser_node_modules_tslib_tslib_es6_importStar,
-  __importDefault: plugin_autocapture_browser_node_modules_tslib_tslib_es6_importDefault,
-  __classPrivateFieldGet: plugin_autocapture_browser_node_modules_tslib_tslib_es6_classPrivateFieldGet,
-  __classPrivateFieldSet: plugin_autocapture_browser_node_modules_tslib_tslib_es6_classPrivateFieldSet,
-  __classPrivateFieldIn: plugin_autocapture_browser_node_modules_tslib_tslib_es6_classPrivateFieldIn,
-  __addDisposableResource: plugin_autocapture_browser_node_modules_tslib_tslib_es6_addDisposableResource,
-  __disposeResources: plugin_autocapture_browser_node_modules_tslib_tslib_es6_disposeResources,
-});
-
 ;// CONCATENATED MODULE: ./node_modules/@amplitude/plugin-autocapture-browser/lib/esm/constants.js
 var PLUGIN_NAME = '@amplitude/plugin-autocapture-browser';
 var AMPLITUDE_ELEMENT_CLICKED_EVENT = '[Amplitude] Element Clicked';
@@ -52034,386 +49756,6 @@ var AMPLITUDE_VISUAL_TAGGING_SELECTOR_SCRIPT_URL = 'https://cdn.amplitude.com/li
 // Should not use this class in the selector.
 var AMPLITUDE_VISUAL_TAGGING_HIGHLIGHT_CLASS = 'amp-visual-tagging-selector-highlight';
 //# sourceMappingURL=constants.js.map
-;// CONCATENATED MODULE: ./node_modules/rxjs/node_modules/tslib/tslib.es6.mjs
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise, SuppressedError, Symbol, Iterator */
-
-var rxjs_node_modules_tslib_tslib_es6_extendStatics = function(d, b) {
-  rxjs_node_modules_tslib_tslib_es6_extendStatics = Object.setPrototypeOf ||
-      ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-      function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-  return rxjs_node_modules_tslib_tslib_es6_extendStatics(d, b);
-};
-
-function rxjs_node_modules_tslib_tslib_es6_extends(d, b) {
-  if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  rxjs_node_modules_tslib_tslib_es6_extendStatics(d, b);
-  function __() { this.constructor = d; }
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var rxjs_node_modules_tslib_tslib_es6_assign = function() {
-  rxjs_node_modules_tslib_tslib_es6_assign = Object.assign || function __assign(t) {
-      for (var s, i = 1, n = arguments.length; i < n; i++) {
-          s = arguments[i];
-          for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-      }
-      return t;
-  }
-  return rxjs_node_modules_tslib_tslib_es6_assign.apply(this, arguments);
-}
-
-function rxjs_node_modules_tslib_tslib_es6_rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
-function rxjs_node_modules_tslib_tslib_es6_decorate(decorators, target, key, desc) {
-  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-  else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function rxjs_node_modules_tslib_tslib_es6_param(paramIndex, decorator) {
-  return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function rxjs_node_modules_tslib_tslib_es6_esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
-  function accept(f) { if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected"); return f; }
-  var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
-  var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
-  var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
-  var _, done = false;
-  for (var i = decorators.length - 1; i >= 0; i--) {
-      var context = {};
-      for (var p in contextIn) context[p] = p === "access" ? {} : contextIn[p];
-      for (var p in contextIn.access) context.access[p] = contextIn.access[p];
-      context.addInitializer = function (f) { if (done) throw new TypeError("Cannot add initializers after decoration has completed"); extraInitializers.push(accept(f || null)); };
-      var result = (0, decorators[i])(kind === "accessor" ? { get: descriptor.get, set: descriptor.set } : descriptor[key], context);
-      if (kind === "accessor") {
-          if (result === void 0) continue;
-          if (result === null || typeof result !== "object") throw new TypeError("Object expected");
-          if (_ = accept(result.get)) descriptor.get = _;
-          if (_ = accept(result.set)) descriptor.set = _;
-          if (_ = accept(result.init)) initializers.unshift(_);
-      }
-      else if (_ = accept(result)) {
-          if (kind === "field") initializers.unshift(_);
-          else descriptor[key] = _;
-      }
-  }
-  if (target) Object.defineProperty(target, contextIn.name, descriptor);
-  done = true;
-};
-
-function rxjs_node_modules_tslib_tslib_es6_runInitializers(thisArg, initializers, value) {
-  var useValue = arguments.length > 2;
-  for (var i = 0; i < initializers.length; i++) {
-      value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
-  }
-  return useValue ? value : void 0;
-};
-
-function rxjs_node_modules_tslib_tslib_es6_propKey(x) {
-  return typeof x === "symbol" ? x : "".concat(x);
-};
-
-function rxjs_node_modules_tslib_tslib_es6_setFunctionName(f, name, prefix) {
-  if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
-  return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
-};
-
-function rxjs_node_modules_tslib_tslib_es6_metadata(metadataKey, metadataValue) {
-  if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function rxjs_node_modules_tslib_tslib_es6_awaiter(thisArg, _arguments, P, generator) {
-  function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-  return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-      function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-      function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-  });
-}
-
-function rxjs_node_modules_tslib_tslib_es6_generator(thisArg, body) {
-  var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
-  return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-  function verb(n) { return function (v) { return step([n, v]); }; }
-  function step(op) {
-      if (f) throw new TypeError("Generator is already executing.");
-      while (g && (g = 0, op[0] && (_ = 0)), _) try {
-          if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-          if (y = 0, t) op = [op[0] & 2, t.value];
-          switch (op[0]) {
-              case 0: case 1: t = op; break;
-              case 4: _.label++; return { value: op[1], done: false };
-              case 5: _.label++; y = op[1]; op = [0]; continue;
-              case 7: op = _.ops.pop(); _.trys.pop(); continue;
-              default:
-                  if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                  if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                  if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                  if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                  if (t[2]) _.ops.pop();
-                  _.trys.pop(); continue;
-          }
-          op = body.call(thisArg, _);
-      } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-      if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-  }
-}
-
-var rxjs_node_modules_tslib_tslib_es6_createBinding = Object.create ? (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  var desc = Object.getOwnPropertyDescriptor(m, k);
-  if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-  }
-  Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-  if (k2 === undefined) k2 = k;
-  o[k2] = m[k];
-});
-
-function rxjs_node_modules_tslib_tslib_es6_exportStar(m, o) {
-  for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) rxjs_node_modules_tslib_tslib_es6_createBinding(o, m, p);
-}
-
-function rxjs_node_modules_tslib_tslib_es6_values(o) {
-  var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-  if (m) return m.call(o);
-  if (o && typeof o.length === "number") return {
-      next: function () {
-          if (o && i >= o.length) o = void 0;
-          return { value: o && o[i++], done: !o };
-      }
-  };
-  throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function rxjs_node_modules_tslib_tslib_es6_read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o), r, ar = [], e;
-  try {
-      while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  }
-  catch (error) { e = { error: error }; }
-  finally {
-      try {
-          if (r && !r.done && (m = i["return"])) m.call(i);
-      }
-      finally { if (e) throw e.error; }
-  }
-  return ar;
-}
-
-/** @deprecated */
-function rxjs_node_modules_tslib_tslib_es6_spread() {
-  for (var ar = [], i = 0; i < arguments.length; i++)
-      ar = ar.concat(rxjs_node_modules_tslib_tslib_es6_read(arguments[i]));
-  return ar;
-}
-
-/** @deprecated */
-function rxjs_node_modules_tslib_tslib_es6_spreadArrays() {
-  for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-  for (var r = Array(s), k = 0, i = 0; i < il; i++)
-      for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-          r[k] = a[j];
-  return r;
-}
-
-function rxjs_node_modules_tslib_tslib_es6_spreadArray(to, from, pack) {
-  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-      if (ar || !(i in from)) {
-          if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-          ar[i] = from[i];
-      }
-  }
-  return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function rxjs_node_modules_tslib_tslib_es6_await(v) {
-  return this instanceof rxjs_node_modules_tslib_tslib_es6_await ? (this.v = v, this) : new rxjs_node_modules_tslib_tslib_es6_await(v);
-}
-
-function rxjs_node_modules_tslib_tslib_es6_asyncGenerator(thisArg, _arguments, generator) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var g = generator.apply(thisArg, _arguments || []), i, q = [];
-  return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function () { return this; }, i;
-  function awaitReturn(f) { return function (v) { return Promise.resolve(v).then(f, reject); }; }
-  function verb(n, f) { if (g[n]) { i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; if (f) i[n] = f(i[n]); } }
-  function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-  function step(r) { r.value instanceof rxjs_node_modules_tslib_tslib_es6_await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-  function fulfill(value) { resume("next", value); }
-  function reject(value) { resume("throw", value); }
-  function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function rxjs_node_modules_tslib_tslib_es6_asyncDelegator(o) {
-  var i, p;
-  return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-  function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: rxjs_node_modules_tslib_tslib_es6_await(o[n](v)), done: false } : f ? f(v) : v; } : f; }
-}
-
-function rxjs_node_modules_tslib_tslib_es6_asyncValues(o) {
-  if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-  var m = o[Symbol.asyncIterator], i;
-  return m ? m.call(o) : (o = typeof rxjs_node_modules_tslib_tslib_es6_values === "function" ? rxjs_node_modules_tslib_tslib_es6_values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-  function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-  function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function rxjs_node_modules_tslib_tslib_es6_makeTemplateObject(cooked, raw) {
-  if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-  return cooked;
-};
-
-var rxjs_node_modules_tslib_tslib_es6_setModuleDefault = Object.create ? (function(o, v) {
-  Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-  o["default"] = v;
-};
-
-function rxjs_node_modules_tslib_tslib_es6_importStar(mod) {
-  if (mod && mod.__esModule) return mod;
-  var result = {};
-  if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) rxjs_node_modules_tslib_tslib_es6_createBinding(result, mod, k);
-  rxjs_node_modules_tslib_tslib_es6_setModuleDefault(result, mod);
-  return result;
-}
-
-function rxjs_node_modules_tslib_tslib_es6_importDefault(mod) {
-  return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function rxjs_node_modules_tslib_tslib_es6_classPrivateFieldGet(receiver, state, kind, f) {
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-  return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function rxjs_node_modules_tslib_tslib_es6_classPrivateFieldSet(receiver, state, value, kind, f) {
-  if (kind === "m") throw new TypeError("Private method is not writable");
-  if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-  if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-  return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-}
-
-function rxjs_node_modules_tslib_tslib_es6_classPrivateFieldIn(state, receiver) {
-  if (receiver === null || (typeof receiver !== "object" && typeof receiver !== "function")) throw new TypeError("Cannot use 'in' operator on non-object");
-  return typeof state === "function" ? receiver === state : state.has(receiver);
-}
-
-function rxjs_node_modules_tslib_tslib_es6_addDisposableResource(env, value, async) {
-  if (value !== null && value !== void 0) {
-    if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
-    var dispose, inner;
-    if (async) {
-      if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
-      dispose = value[Symbol.asyncDispose];
-    }
-    if (dispose === void 0) {
-      if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-      dispose = value[Symbol.dispose];
-      if (async) inner = dispose;
-    }
-    if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
-    if (inner) dispose = function() { try { inner.call(this); } catch (e) { return Promise.reject(e); } };
-    env.stack.push({ value: value, dispose: dispose, async: async });
-  }
-  else if (async) {
-    env.stack.push({ async: true });
-  }
-  return value;
-}
-
-var rxjs_node_modules_tslib_tslib_es6_SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
-  var e = new Error(message);
-  return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-function rxjs_node_modules_tslib_tslib_es6_disposeResources(env) {
-  function fail(e) {
-    env.error = env.hasError ? new rxjs_node_modules_tslib_tslib_es6_SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
-    env.hasError = true;
-  }
-  var r, s = 0;
-  function next() {
-    while (r = env.stack.pop()) {
-      try {
-        if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
-        if (r.dispose) {
-          var result = r.dispose.call(r.value);
-          if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) { fail(e); return next(); });
-        }
-        else s |= 1;
-      }
-      catch (e) {
-        fail(e);
-      }
-    }
-    if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
-    if (env.hasError) throw env.error;
-  }
-  return next();
-}
-
-/* harmony default export */ const rxjs_node_modules_tslib_tslib_es6 = ({
-  __extends: rxjs_node_modules_tslib_tslib_es6_extends,
-  __assign: rxjs_node_modules_tslib_tslib_es6_assign,
-  __rest: rxjs_node_modules_tslib_tslib_es6_rest,
-  __decorate: rxjs_node_modules_tslib_tslib_es6_decorate,
-  __param: rxjs_node_modules_tslib_tslib_es6_param,
-  __metadata: rxjs_node_modules_tslib_tslib_es6_metadata,
-  __awaiter: rxjs_node_modules_tslib_tslib_es6_awaiter,
-  __generator: rxjs_node_modules_tslib_tslib_es6_generator,
-  __createBinding: rxjs_node_modules_tslib_tslib_es6_createBinding,
-  __exportStar: rxjs_node_modules_tslib_tslib_es6_exportStar,
-  __values: rxjs_node_modules_tslib_tslib_es6_values,
-  __read: rxjs_node_modules_tslib_tslib_es6_read,
-  __spread: rxjs_node_modules_tslib_tslib_es6_spread,
-  __spreadArrays: rxjs_node_modules_tslib_tslib_es6_spreadArrays,
-  __spreadArray: rxjs_node_modules_tslib_tslib_es6_spreadArray,
-  __await: rxjs_node_modules_tslib_tslib_es6_await,
-  __asyncGenerator: rxjs_node_modules_tslib_tslib_es6_asyncGenerator,
-  __asyncDelegator: rxjs_node_modules_tslib_tslib_es6_asyncDelegator,
-  __asyncValues: rxjs_node_modules_tslib_tslib_es6_asyncValues,
-  __makeTemplateObject: rxjs_node_modules_tslib_tslib_es6_makeTemplateObject,
-  __importStar: rxjs_node_modules_tslib_tslib_es6_importStar,
-  __importDefault: rxjs_node_modules_tslib_tslib_es6_importDefault,
-  __classPrivateFieldGet: rxjs_node_modules_tslib_tslib_es6_classPrivateFieldGet,
-  __classPrivateFieldSet: rxjs_node_modules_tslib_tslib_es6_classPrivateFieldSet,
-  __classPrivateFieldIn: rxjs_node_modules_tslib_tslib_es6_classPrivateFieldIn,
-  __addDisposableResource: rxjs_node_modules_tslib_tslib_es6_addDisposableResource,
-  __disposeResources: rxjs_node_modules_tslib_tslib_es6_disposeResources,
-});
-
 ;// CONCATENATED MODULE: ./node_modules/rxjs/dist/esm5/internal/util/isArrayLike.js
 var isArrayLike = (function (x) { return x && typeof x.length === 'number' && typeof x !== 'function'; });
 //# sourceMappingURL=isArrayLike.js.map
@@ -52483,7 +49825,7 @@ var Subscription = (function () {
                 this._parentage = null;
                 if (Array.isArray(_parentage)) {
                     try {
-                        for (var _parentage_1 = rxjs_node_modules_tslib_tslib_es6_values(_parentage), _parentage_1_1 = _parentage_1.next(); !_parentage_1_1.done; _parentage_1_1 = _parentage_1.next()) {
+                        for (var _parentage_1 = (0,tslib_es6.__values)(_parentage), _parentage_1_1 = _parentage_1.next(); !_parentage_1_1.done; _parentage_1_1 = _parentage_1.next()) {
                             var parent_1 = _parentage_1_1.value;
                             parent_1.remove(this);
                         }
@@ -52513,7 +49855,7 @@ var Subscription = (function () {
             if (_finalizers) {
                 this._finalizers = null;
                 try {
-                    for (var _finalizers_1 = rxjs_node_modules_tslib_tslib_es6_values(_finalizers), _finalizers_1_1 = _finalizers_1.next(); !_finalizers_1_1.done; _finalizers_1_1 = _finalizers_1.next()) {
+                    for (var _finalizers_1 = (0,tslib_es6.__values)(_finalizers), _finalizers_1_1 = _finalizers_1.next(); !_finalizers_1_1.done; _finalizers_1_1 = _finalizers_1.next()) {
                         var finalizer = _finalizers_1_1.value;
                         try {
                             execFinalizer(finalizer);
@@ -52521,7 +49863,7 @@ var Subscription = (function () {
                         catch (err) {
                             errors = errors !== null && errors !== void 0 ? errors : [];
                             if (err instanceof UnsubscriptionError) {
-                                errors = rxjs_node_modules_tslib_tslib_es6_spreadArray(rxjs_node_modules_tslib_tslib_es6_spreadArray([], rxjs_node_modules_tslib_tslib_es6_read(errors)), rxjs_node_modules_tslib_tslib_es6_read(err.errors));
+                                errors = (0,tslib_es6.__spreadArray)((0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(errors)), (0,tslib_es6.__read)(err.errors));
                             }
                             else {
                                 errors.push(err);
@@ -52624,9 +49966,9 @@ var timeoutProvider = {
         }
         var delegate = timeoutProvider.delegate;
         if (delegate === null || delegate === void 0 ? void 0 : delegate.setTimeout) {
-            return delegate.setTimeout.apply(delegate, rxjs_node_modules_tslib_tslib_es6_spreadArray([handler, timeout], rxjs_node_modules_tslib_tslib_es6_read(args)));
+            return delegate.setTimeout.apply(delegate, (0,tslib_es6.__spreadArray)([handler, timeout], (0,tslib_es6.__read)(args)));
         }
-        return setTimeout.apply(void 0, rxjs_node_modules_tslib_tslib_es6_spreadArray([handler, timeout], rxjs_node_modules_tslib_tslib_es6_read(args)));
+        return setTimeout.apply(void 0, (0,tslib_es6.__spreadArray)([handler, timeout], (0,tslib_es6.__read)(args)));
     },
     clearTimeout: function (handle) {
         var delegate = timeoutProvider.delegate;
@@ -52709,7 +50051,7 @@ function captureError(err) {
 
 
 var Subscriber = (function (_super) {
-    rxjs_node_modules_tslib_tslib_es6_extends(Subscriber, _super);
+    (0,tslib_es6.__extends)(Subscriber, _super);
     function Subscriber(destination) {
         var _this = _super.call(this) || this;
         _this.isStopped = false;
@@ -52829,7 +50171,7 @@ var ConsumerObserver = (function () {
     return ConsumerObserver;
 }());
 var SafeSubscriber = (function (_super) {
-    rxjs_node_modules_tslib_tslib_es6_extends(SafeSubscriber, _super);
+    (0,tslib_es6.__extends)(SafeSubscriber, _super);
     function SafeSubscriber(observerOrNext, error, complete) {
         var _this = _super.call(this) || this;
         var partialObserver;
@@ -53053,9 +50395,9 @@ function isIterable(input) {
 
 
 function readableStreamLikeToAsyncGenerator(readableStream) {
-    return rxjs_node_modules_tslib_tslib_es6_asyncGenerator(this, arguments, function readableStreamLikeToAsyncGenerator_1() {
+    return (0,tslib_es6.__asyncGenerator)(this, arguments, function readableStreamLikeToAsyncGenerator_1() {
         var reader, _a, value, done;
-        return rxjs_node_modules_tslib_tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             switch (_b.label) {
                 case 0:
                     reader = readableStream.getReader();
@@ -53065,13 +50407,13 @@ function readableStreamLikeToAsyncGenerator(readableStream) {
                     _b.label = 2;
                 case 2:
                     if (false) {}
-                    return [4, rxjs_node_modules_tslib_tslib_es6_await(reader.read())];
+                    return [4, (0,tslib_es6.__await)(reader.read())];
                 case 3:
                     _a = _b.sent(), value = _a.value, done = _a.done;
                     if (!done) return [3, 5];
-                    return [4, rxjs_node_modules_tslib_tslib_es6_await(void 0)];
+                    return [4, (0,tslib_es6.__await)(void 0)];
                 case 4: return [2, _b.sent()];
-                case 5: return [4, rxjs_node_modules_tslib_tslib_es6_await(value)];
+                case 5: return [4, (0,tslib_es6.__await)(value)];
                 case 6: return [4, _b.sent()];
                 case 7:
                     _b.sent();
@@ -53161,7 +50503,7 @@ function fromIterable(iterable) {
     return new Observable_Observable(function (subscriber) {
         var e_1, _a;
         try {
-            for (var iterable_1 = rxjs_node_modules_tslib_tslib_es6_values(iterable), iterable_1_1 = iterable_1.next(); !iterable_1_1.done; iterable_1_1 = iterable_1.next()) {
+            for (var iterable_1 = (0,tslib_es6.__values)(iterable), iterable_1_1 = iterable_1.next(); !iterable_1_1.done; iterable_1_1 = iterable_1.next()) {
                 var value = iterable_1_1.value;
                 subscriber.next(value);
                 if (subscriber.closed) {
@@ -53190,13 +50532,13 @@ function fromReadableStreamLike(readableStream) {
 function process(asyncIterable, subscriber) {
     var asyncIterable_1, asyncIterable_1_1;
     var e_2, _a;
-    return rxjs_node_modules_tslib_tslib_es6_awaiter(this, void 0, void 0, function () {
+    return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
         var value, e_2_1;
-        return rxjs_node_modules_tslib_tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             switch (_b.label) {
                 case 0:
                     _b.trys.push([0, 5, 6, 11]);
-                    asyncIterable_1 = rxjs_node_modules_tslib_tslib_es6_asyncValues(asyncIterable);
+                    asyncIterable_1 = (0,tslib_es6.__asyncValues)(asyncIterable);
                     _b.label = 1;
                 case 1: return [4, asyncIterable_1.next()];
                 case 2:
@@ -53261,7 +50603,7 @@ function createOperatorSubscriber(destination, onNext, onComplete, onError, onFi
     return new OperatorSubscriber(destination, onNext, onComplete, onError, onFinalize);
 }
 var OperatorSubscriber = (function (_super) {
-    rxjs_node_modules_tslib_tslib_es6_extends(OperatorSubscriber, _super);
+    (0,tslib_es6.__extends)(OperatorSubscriber, _super);
     function OperatorSubscriber(destination, onNext, onComplete, onError, onFinalize, shouldUnsubscribe) {
         var _this = _super.call(this, destination) || this;
         _this.onFinalize = onFinalize;
@@ -53431,7 +50773,7 @@ function mergeMap(project, resultSelector, concurrent) {
 
 var isArray = Array.isArray;
 function callOrApply(fn, args) {
-    return isArray(args) ? fn.apply(void 0, rxjs_node_modules_tslib_tslib_es6_spreadArray([], rxjs_node_modules_tslib_tslib_es6_read(args))) : fn(args);
+    return isArray(args) ? fn.apply(void 0, (0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(args))) : fn(args);
 }
 function mapOneOrManyArgs(fn) {
     return map(function (args) { return callOrApply(fn, args); });
@@ -53456,7 +50798,7 @@ function fromEvent(target, eventName, options, resultSelector) {
     if (resultSelector) {
         return fromEvent(target, eventName, options).pipe(mapOneOrManyArgs(resultSelector));
     }
-    var _a = rxjs_node_modules_tslib_tslib_es6_read(isEventTarget(target)
+    var _a = (0,tslib_es6.__read)(isEventTarget(target)
         ? eventTargetMethods.map(function (methodName) { return function (handler) { return target[methodName](eventName, handler, options); }; })
         :
             isNodeStyleEventEmitter(target)
@@ -53520,7 +50862,7 @@ function finder(input, options) {
         threshold: 1000,
         maxNumberOfTries: 10000,
     };
-    finder_config = plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign(plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign({}, defaults), options);
+    finder_config = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, defaults), options);
     rootDocument = findRootDocument(finder_config.root, defaults);
     var path = bottomUpSearch(input, 'all', function () {
         return bottomUpSearch(input, 'two', function () { return bottomUpSearch(input, 'one', function () { return bottomUpSearch(input, 'none'); }); });
@@ -53552,7 +50894,7 @@ function bottomUpSearch(input, limit, fallback) {
     var i = 0;
     var _loop_1 = function () {
         var e_1, _a;
-        var level = maybe(id(current)) || maybe.apply(void 0, plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray([], plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(attr(current)), false)) || maybe.apply(void 0, plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray([], plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(classNames(current)), false)) ||
+        var level = maybe(id(current)) || maybe.apply(void 0, (0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(attr(current)), false)) || maybe.apply(void 0, (0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(classNames(current)), false)) ||
             maybe(tagName(current)) || [any()];
         var nth = index(current);
         if (limit == 'all') {
@@ -53567,7 +50909,7 @@ function bottomUpSearch(input, limit, fallback) {
             }
         }
         else if (limit == 'one') {
-            var _b = plugin_autocapture_browser_node_modules_tslib_tslib_es6_read((level = level.slice(0, 1)), 1), node = _b[0];
+            var _b = (0,tslib_es6.__read)((level = level.slice(0, 1)), 1), node = _b[0];
             if (nth && dispensableNth(node)) {
                 level = [nthChild(node, nth)];
             }
@@ -53579,7 +50921,7 @@ function bottomUpSearch(input, limit, fallback) {
             }
         }
         try {
-            for (var level_1 = (e_1 = void 0, plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(level)), level_1_1 = level_1.next(); !level_1_1.done; level_1_1 = level_1.next()) {
+            for (var level_1 = (e_1 = void 0, (0,tslib_es6.__values)(level)), level_1_1 = level_1.next(); !level_1_1.done; level_1_1 = level_1.next()) {
                 var node = level_1_1.value;
                 node.level = i;
             }
@@ -53623,7 +50965,7 @@ function findUniquePath(stack, fallback) {
     }
     var paths = sort(combinations(stack));
     try {
-        for (var paths_1 = plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
+        for (var paths_1 = (0,tslib_es6.__values)(paths), paths_1_1 = paths_1.next(); !paths_1_1.done; paths_1_1 = paths_1.next()) {
             var candidate = paths_1_1.value;
             if (unique(candidate)) {
                 return candidate;
@@ -53756,19 +51098,19 @@ function combinations(stack, path) {
     var _a, _b, node, e_3_1;
     var e_3, _c;
     if (path === void 0) { path = []; }
-    return plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator(this, function (_d) {
+    return (0,tslib_es6.__generator)(this, function (_d) {
         switch (_d.label) {
             case 0:
                 if (!(stack.length > 0)) return [3 /*break*/, 9];
                 _d.label = 1;
             case 1:
                 _d.trys.push([1, 6, 7, 8]);
-                _a = plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(stack[0]), _b = _a.next();
+                _a = (0,tslib_es6.__values)(stack[0]), _b = _a.next();
                 _d.label = 2;
             case 2:
                 if (!!_b.done) return [3 /*break*/, 5];
                 node = _b.value;
-                return [5 /*yield**/, plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(combinations(stack.slice(1, stack.length), path.concat(node)))];
+                return [5 /*yield**/, (0,tslib_es6.__values)(combinations(stack.slice(1, stack.length), path.concat(node)))];
             case 3:
                 _d.sent();
                 _d.label = 4;
@@ -53796,7 +51138,7 @@ function combinations(stack, path) {
     });
 }
 function sort(paths) {
-    return plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray([], plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(paths), false).sort(function (a, b) { return penalty(a) - penalty(b); });
+    return (0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(paths), false).sort(function (a, b) { return penalty(a) - penalty(b); });
 }
 function optimize(path, input, scope) {
     var i, newPath, newPathKey;
@@ -53804,7 +51146,7 @@ function optimize(path, input, scope) {
         counter: 0,
         visited: new Map(),
     }; }
-    return plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator(this, function (_a) {
+    return (0,tslib_es6.__generator)(this, function (_a) {
         switch (_a.label) {
             case 0:
                 if (!(path.length > 2 && path.length > finder_config.optimizedMinLength)) return [3 /*break*/, 5];
@@ -53816,7 +51158,7 @@ function optimize(path, input, scope) {
                     return [2 /*return*/]; // Okay At least I tried!
                 }
                 scope.counter += 1;
-                newPath = plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray([], plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(path), false);
+                newPath = (0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(path), false);
                 newPath.splice(i, 1);
                 newPathKey = selector(newPath);
                 if (scope.visited.has(newPathKey)) {
@@ -53827,7 +51169,7 @@ function optimize(path, input, scope) {
             case 2:
                 _a.sent();
                 scope.visited.set(newPathKey, true);
-                return [5 /*yield**/, plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(optimize(newPath, input, scope))];
+                return [5 /*yield**/, (0,tslib_es6.__values)(optimize(newPath, input, scope))];
             case 3:
                 _a.sent();
                 _a.label = 4;
@@ -54323,7 +51665,7 @@ function getElementProperties(element) {
     // if input is hidden or password or for SVGs, skip attribute collection entirely
     if (!HIGHLY_SENSITIVE_INPUT_TYPES.includes(element.type) && !SVG_TAGS.includes(tagName)) {
         try {
-            for (var filteredAttributes_1 = plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(filteredAttributes), filteredAttributes_1_1 = filteredAttributes_1.next(); !filteredAttributes_1_1.done; filteredAttributes_1_1 = filteredAttributes_1.next()) {
+            for (var filteredAttributes_1 = (0,tslib_es6.__values)(filteredAttributes), filteredAttributes_1_1 = filteredAttributes_1.next(); !filteredAttributes_1_1.done; filteredAttributes_1_1 = filteredAttributes_1.next()) {
                 var attr = filteredAttributes_1_1.value;
                 // If sensitive element, only allow certain attributes
                 if (isSensitiveElement && !SENSITIVE_ELEMENT_ATTRIBUTE_ALLOWLIST.includes(attr.name)) {
@@ -54437,11 +51779,11 @@ function ensureUnicodePythonCompatible(value, nested) {
             // Handle objects (dictionaries in Python)
             var entries = Object.entries(value)
                 .filter(function (_a) {
-                var _b = plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(_a, 1), key = _b[0];
+                var _b = (0,tslib_es6.__read)(_a, 1), key = _b[0];
                 return key != null;
             }) // Filter out null keys
                 .map(function (_a) {
-                var _b = plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(_a, 2), key = _b[0], val = _b[1];
+                var _b = (0,tslib_es6.__read)(_a, 2), key = _b[0], val = _b[1];
                 return "".concat(String(ensureUnicodePythonCompatible(key, true)), ": ").concat(String(ensureUnicodePythonCompatible(val, true)));
             });
             var result = "{".concat(entries.join(', '), "}");
@@ -54490,7 +51832,7 @@ function filter(predicate, thisArg) {
 
 
 var Action = (function (_super) {
-    rxjs_node_modules_tslib_tslib_es6_extends(Action, _super);
+    (0,tslib_es6.__extends)(Action, _super);
     function Action(scheduler, work) {
         return _super.call(this) || this;
     }
@@ -54512,9 +51854,9 @@ var intervalProvider = {
         }
         var delegate = intervalProvider.delegate;
         if (delegate === null || delegate === void 0 ? void 0 : delegate.setInterval) {
-            return delegate.setInterval.apply(delegate, rxjs_node_modules_tslib_tslib_es6_spreadArray([handler, timeout], rxjs_node_modules_tslib_tslib_es6_read(args)));
+            return delegate.setInterval.apply(delegate, (0,tslib_es6.__spreadArray)([handler, timeout], (0,tslib_es6.__read)(args)));
         }
-        return setInterval.apply(void 0, rxjs_node_modules_tslib_tslib_es6_spreadArray([handler, timeout], rxjs_node_modules_tslib_tslib_es6_read(args)));
+        return setInterval.apply(void 0, (0,tslib_es6.__spreadArray)([handler, timeout], (0,tslib_es6.__read)(args)));
     },
     clearInterval: function (handle) {
         var delegate = intervalProvider.delegate;
@@ -54529,7 +51871,7 @@ var intervalProvider = {
 
 
 var AsyncAction = (function (_super) {
-    rxjs_node_modules_tslib_tslib_es6_extends(AsyncAction, _super);
+    (0,tslib_es6.__extends)(AsyncAction, _super);
     function AsyncAction(scheduler, work) {
         var _this = _super.call(this, scheduler, work) || this;
         _this.scheduler = scheduler;
@@ -54643,7 +51985,7 @@ var Scheduler = (function () {
 
 
 var AsyncScheduler = (function (_super) {
-    rxjs_node_modules_tslib_tslib_es6_extends(AsyncScheduler, _super);
+    (0,tslib_es6.__extends)(AsyncScheduler, _super);
     function AsyncScheduler(SchedulerAction, now) {
         if (now === void 0) { now = Scheduler.now; }
         var _this = _super.call(this, SchedulerAction, now) || this;
@@ -55114,7 +52456,7 @@ function trackClicks(_a) {
     // Keeping track of position is important to avoid false positives when the user clicks on the same
     // element where certain frameworks could replace the element instance between rerenders
     var comparisonTrigger = clickObservable.pipe(pairwise(), filter(function (_a) {
-        var _b = plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(_a, 2), prev = _b[0], current = _b[1];
+        var _b = (0,tslib_es6.__read)(_a, 2), prev = _b[0], current = _b[1];
         var targetChanged = prev.event.target !== current.event.target;
         /* istanbul ignore next */
         var samePos = Math.abs(current.event.screenX - prev.event.screenX) <= 20 &&
@@ -55134,7 +52476,7 @@ function trackClicks(_a) {
         // TODO: update this when rage clicks are added
         var clickType = clicks.length >= RAGE_CLICK_THRESHOLD ? AMPLITUDE_ELEMENT_CLICKED_EVENT : AMPLITUDE_ELEMENT_CLICKED_EVENT;
         try {
-            for (var clicks_1 = plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(clicks), clicks_1_1 = clicks_1.next(); !clicks_1_1.done; clicks_1_1 = clicks_1.next()) {
+            for (var clicks_1 = (0,tslib_es6.__values)(clicks), clicks_1_1 = clicks_1.next(); !clicks_1_1.done; clicks_1_1 = clicks_1.next()) {
                 var click = clicks_1_1.value;
                 /* istanbul ignore next */
                 amplitude === null || amplitude === void 0 ? void 0 : amplitude.track(clickType, click.targetElementProperties, {
@@ -55283,7 +52625,7 @@ function trackActionClick(_a) {
     if (navigateObservable) {
         changeObservables.push(navigateObservable);
     }
-    var mutationOrNavigate = merge.apply(void 0, plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray([], plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(changeObservables), false));
+    var mutationOrNavigate = merge.apply(void 0, (0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(changeObservables), false));
     var actionClicks = filteredClickObservable.pipe(
     // If a mutation occurs within 0.5 seconds of a click event (timeout({ first: 500 })), it emits the original first click event.
     // take 1 to only limit the action events in case there are multiple
@@ -55439,10 +52781,10 @@ var autocapturePlugin = function (options) {
         }
         return baseEvent;
     };
-    var setup = function (config, amplitude) { return plugin_autocapture_browser_node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    var setup = function (config, amplitude) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var shouldTrackEvent, shouldTrackActionClick, allObservables, clickTrackingSubscription, changeSubscription, actionClickSubscription, allowlist, actionClickAllowlist;
         var _a, _b, _c;
-        return plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator(this, function (_d) {
+        return (0,tslib_es6.__generator)(this, function (_d) {
             if (!amplitude) {
                 /* istanbul ignore next */
                 (_a = config === null || config === void 0 ? void 0 : config.loggerProvider) === null || _a === void 0 ? void 0 : _a.warn("".concat(name, " plugin requires a later version of @amplitude/analytics-browser. Events are not tracked."));
@@ -55486,22 +52828,22 @@ var autocapturePlugin = function (options) {
                 allowlist = options.cssSelectorAllowlist;
                 actionClickAllowlist = options.actionClickAllowlist;
                 /* istanbul ignore next */
-                (_c = visualTaggingOptions.messenger) === null || _c === void 0 ? void 0 : _c.setup(plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign(plugin_autocapture_browser_node_modules_tslib_tslib_es6_assign({ logger: config === null || config === void 0 ? void 0 : config.loggerProvider }, ((config === null || config === void 0 ? void 0 : config.serverZone) && { endpoint: AMPLITUDE_ORIGINS_MAP[config.serverZone] })), { isElementSelectable: createShouldTrackEvent(options, plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray(plugin_autocapture_browser_node_modules_tslib_tslib_es6_spreadArray([], plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(allowlist), false), plugin_autocapture_browser_node_modules_tslib_tslib_es6_read(actionClickAllowlist), false)), cssSelectorAllowlist: allowlist, actionClickAllowlist: actionClickAllowlist }));
+                (_c = visualTaggingOptions.messenger) === null || _c === void 0 ? void 0 : _c.setup((0,tslib_es6.__assign)((0,tslib_es6.__assign)({ logger: config === null || config === void 0 ? void 0 : config.loggerProvider }, ((config === null || config === void 0 ? void 0 : config.serverZone) && { endpoint: AMPLITUDE_ORIGINS_MAP[config.serverZone] })), { isElementSelectable: createShouldTrackEvent(options, (0,tslib_es6.__spreadArray)((0,tslib_es6.__spreadArray)([], (0,tslib_es6.__read)(allowlist), false), (0,tslib_es6.__read)(actionClickAllowlist), false)), cssSelectorAllowlist: allowlist, actionClickAllowlist: actionClickAllowlist }));
             }
             return [2 /*return*/];
         });
     }); };
-    var execute = function (event) { return plugin_autocapture_browser_node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
-        return plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator(this, function (_a) {
+    var execute = function (event) { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
+        return (0,tslib_es6.__generator)(this, function (_a) {
             return [2 /*return*/, event];
         });
     }); };
-    var teardown = function () { return plugin_autocapture_browser_node_modules_tslib_tslib_es6_awaiter(void 0, void 0, void 0, function () {
+    var teardown = function () { return (0,tslib_es6.__awaiter)(void 0, void 0, void 0, function () {
         var subscriptions_1, subscriptions_1_1, subscription;
         var e_1, _a;
-        return plugin_autocapture_browser_node_modules_tslib_tslib_es6_generator(this, function (_b) {
+        return (0,tslib_es6.__generator)(this, function (_b) {
             try {
-                for (subscriptions_1 = plugin_autocapture_browser_node_modules_tslib_tslib_es6_values(subscriptions), subscriptions_1_1 = subscriptions_1.next(); !subscriptions_1_1.done; subscriptions_1_1 = subscriptions_1.next()) {
+                for (subscriptions_1 = (0,tslib_es6.__values)(subscriptions), subscriptions_1_1 = subscriptions_1.next(); !subscriptions_1_1.done; subscriptions_1_1 = subscriptions_1.next()) {
                     subscription = subscriptions_1_1.value;
                     subscription.unsubscribe();
                 }
@@ -55542,7 +52884,7 @@ var autocapturePlugin = function (options) {
 
 
 var AmplitudeBrowser = /** @class */ (function (_super) {
-    tslib_es6_extends(AmplitudeBrowser, _super);
+    (0,tslib_es6.__extends)(AmplitudeBrowser, _super);
     function AmplitudeBrowser() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -55564,14 +52906,14 @@ var AmplitudeBrowser = /** @class */ (function (_super) {
                 options = userIdOrOptions;
             }
         }
-        return returnWrapper(this._init(tslib_es6_assign(tslib_es6_assign({}, options), { userId: userId, apiKey: apiKey })));
+        return returnWrapper(this._init((0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, options), { userId: userId, apiKey: apiKey })));
     };
     AmplitudeBrowser.prototype._init = function (options) {
         var _a, _b, _c;
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var browserOptions, joinedConfigGenerator, attributionTrackingOptions, queryParams, querySessionId, connector;
             var _this = this;
-            return tslib_es6_generator(this, function (_d) {
+            return (0,tslib_es6.__generator)(this, function (_d) {
                 switch (_d.label) {
                     case 0:
                         // Step 1: Block concurrent initialization
@@ -55813,9 +53155,9 @@ var AmplitudeBrowser = /** @class */ (function (_super) {
         return true;
     };
     AmplitudeBrowser.prototype.process = function (event) {
-        return tslib_es6_awaiter(this, void 0, void 0, function () {
+        return (0,tslib_es6.__awaiter)(this, void 0, void 0, function () {
             var currentTime, isEventInNewSession, shouldSetSessionIdOnNewCampaign;
-            return tslib_es6_generator(this, function (_a) {
+            return (0,tslib_es6.__generator)(this, function (_a) {
                 currentTime = Date.now();
                 isEventInNewSession = isNewSession(this.config.sessionTimeout, this.config.lastEventTime);
                 shouldSetSessionIdOnNewCampaign = this.webAttribution && this.webAttribution.shouldSetSessionIdOnNewCampaign();
@@ -55840,7 +53182,7 @@ var AmplitudeBrowser = /** @class */ (function (_super) {
     };
     AmplitudeBrowser.prototype.logBrowserOptions = function (browserConfig) {
         try {
-            var browserConfigCopy = tslib_es6_assign(tslib_es6_assign({}, browserConfig), { apiKey: browserConfig.apiKey.substring(0, 10) + '********' });
+            var browserConfigCopy = (0,tslib_es6.__assign)((0,tslib_es6.__assign)({}, browserConfig), { apiKey: browserConfig.apiKey.substring(0, 10) + '********' });
             this.config.loggerProvider.debug('Initialized Amplitude with BrowserConfig:', JSON.stringify(browserConfigCopy));
         }
         catch (e) {

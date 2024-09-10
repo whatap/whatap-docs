@@ -477,7 +477,7 @@ function _createMdxContent(props) {
           }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_topology",
             className: "uitext"
-          }), " >s ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "side_appTopology",
             className: "uitext"
           }), " 메뉴에서 애플리케이션을 표시하는 요소의 아이콘이 정상 표시되지 않는 문제 수정"]
