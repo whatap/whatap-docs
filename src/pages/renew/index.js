@@ -13,6 +13,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import clsx from 'clsx'; 
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
+import * as Icons from './icons.js';
 
 const searchClient = meilisearchAutocompleteClient({
     url: 'https://meilsearch.whatap.io',
@@ -95,7 +96,7 @@ function Description({children}) {
 }
 function ThereeSteps() {
     return (
-        <section className={clsx('row guides', styles.justifycontentcenter)}>
+        <section className={clsx('row', styles.guide, styles.justifycontentcenter)}>
             <Step order={1}>
                 <Link to="quick-guide/#account"><Heading as="h5" className={styles.inline}>회원 가입</Heading></Link>
                 <Description>
@@ -122,12 +123,18 @@ function ThereeSteps() {
 
 function FlexCard({icons, product, type, url, children}) {
     if (type === 'document') {
+        const IconComponent = Icons[icons]; 
+
         return (
             <div className={styles.flexProd}>
                 <Link to={url} className={styles.alignCenter}>
                     <div className={styles.document}>
-                        <div className={styles.logo}>
-                            <img src={`/img/${icons}`} />
+                        <div className={styles.logoDocu}>
+                            {IconComponent ? (
+                                <IconComponent className={styles.doculogo} />
+                            ) : (
+                                <img src={`/img/${icons}`} className={styles.doculogo} />
+                            )}
                         </div>
                         <div className={styles.title}>{children}</div>
                     </div>
@@ -144,7 +151,8 @@ function FlexCard({icons, product, type, url, children}) {
                     </div>
                     <div className={styles.desc}>
                         <div className={styles.title}>{product}</div>
-                        <div className={styles.type}><code className={`${type}`}>{type}</code></div>
+                        <div className={styles.type}><code className={clsx(`${type}`, 'tag')}>{type}</code></div>
+                        <Description>{children}</Description>
                     </div>
                 </div>
             </Link>
@@ -156,149 +164,240 @@ export default function pages() {
 
     return (
         <Layout>
+
         <Head>
-        <meta name="robots" content="noindex, nofollow"/>
+            <meta name="robots" content="noindex, nofollow"/>
         </Head>
+
         <div className={styles.homehero}>
+
             <h1 className={styles.frontheading}>Welcome to the WhaTab Docs page</h1>
             <App />
+
         </div>
+
         <ThereeSteps />
+
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
+
             <Heading as="h2" className={styles.textcenter}>시작하기 전에</Heading>
-            
+
             <div className={styles.flexContainer}>
-                <FlexCard icons="logo.svg" type="document" url="whatap-overview" >와탭 모니터링 서비스</FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="support-env" >지원 환경</FlexCard>
+                <FlexCard icons="WhaTaplogo" type="document" url="whatap-overview" >
+                    <Heading as="h5">와탭 모니터링 서비스</Heading>
+                    <Description>다양한 플랫폼을 아우르는 통합 모니터링</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="main-ui-intro-v2" >홈 화면 안내</FlexCard>
+                <FlexCard icons="Support" type="document" url="support-env" >
+                    <Heading as="h5">지원 환경</Heading>
+                    <Description>서비스를 이용하기 전에 지원 환경을 확인하세요.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="mobile-app" >모바일 앱</FlexCard>
+                <FlexCard icons="Home" type="document" url="main-ui-intro-v2" >
+                    <Heading as="h5">홈 화면 안내</Heading>
+                    <Description>서비스 초기 화면 사용 방법을 안내합니다.</Description>
+                </FlexCard>
+
+                <FlexCard icons="Mobile" type="document" url="mobile-app" >
+                    <Heading as="h5">모바일 앱</Heading>
+                    <Description>모바일 앱 사용 방법을 안내합니다.</Description>
+                </FlexCard>
+
             </div>
         </section>
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
+
             <Heading as="h2" className={styles.textcenter}>상품</Heading>
             
             <div className={styles.flexContainer}>
-                <FlexCard icons="index-icon/product-java-l.svg" product="Java" type="Application" url="java/introduction" />
 
-                <FlexCard icons="index-icon/product-nodejs-l.svg" product="Node.js" type="Application" url="nodejs/introduction" />
+                <FlexCard icons="index-icon/product-java-l.svg" product="Java" type="Application" url="java/introduction">WAS, 배치 애플리케이션 등 JVM 환경에서 동작하는 모든 애플리케이션에 적용할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-php-l.svg" product="PHP" type="Application" url="php/introduction" />
+                <FlexCard icons="index-icon/product-nodejs-l.svg" product="Node.js" type="Application" url="nodejs/introduction">비동기 기반 트랜잭션 분석을 통해 단일 스레드 플로우를 10초마다 분석해 병목구간이나 에러 내역을 파악할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-python-l.svg" product="Python" type="Application" url="python/introduction" />
+                <FlexCard icons="index-icon/product-php-l.svg" product="PHP" type="Application" url="php/introduction">PHP 8.3, Alpine Linux까지 적용 가능하며, 트레이스 상에서 SQL, HTTP 호출, Redis 호출 정보를 확인할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-dotnet-l.svg" product=".NET" type="Application" url="dotnet/introduction" />
+                <FlexCard icons="index-icon/product-python-l.svg" product="Python" type="Application" url="python/introduction">웹 프레임워크, 서버, 배치 등 주요 애플리케이션에 적용 가능하며, DB 쿼리, 외부 호출을 추적해 지연 구간을 식별할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-go-l.svg" product="Go" type="Application" url="golang/introduction" />
+                <FlexCard icons="index-icon/product-dotnet-l.svg" product=".NET" type="Application" url="dotnet/introduction">.NET 프레임워크 4.5를 대응해 .NET 기반의 IIS, Console, 서비스, 윈도우 응용 프로그램을 모니터링합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-server-l.svg" product="Server" type="Server" url="server/introduction" />
+                <FlexCard icons="index-icon/product-go-l.svg" product="Go" type="Application" url="golang/introduction">Go API를 이용해 Go 애플리케이션의 웹 요청 및 응답 트랜잭션, 일반 단위 트랜잭션, SQL, HTTP 호출 등을 추적할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-kubernetes-l.svg" product="Kubernetes" type="Container" url="kubernetes/introduction" />
+                <FlexCard icons="index-icon/product-server-l.svg" product="Server" type="Server" url="server/introduction">물리 서버 및 클라우드, 스케일 아웃 환경에도 적용 가능하며, 대규모 자원 및 사용률이 높은 위험 자원의 모니터링, 인벤토리 관리를 지원합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-postgresql-l.svg" product="PostgreSQL" type="Database" url="postgresql/monitoring-intro" />
+                <FlexCard icons="index-icon/product-kubernetes-l.svg" product="Kubernetes" type="Container" url="kubernetes/introduction">쿠버네티스 클러스터, 노드, 애플리케이션, 로그를 한번에 한눈에 확인할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-oracle-l.svg" product="Oracle" type="Database" url="oracle/monitoring-intro" />
+                <FlexCard icons="index-icon/product-postgresql-l.svg" product="PostgreSQL" type="Database" url="postgresql/monitoring-intro">성능지표 및 SQL, Lock, Slow SQL을 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-oracle-l.svg" product="Oracle Pro" type="Database" url="oracle-pro/monitoring-intro" />
+                <FlexCard icons="index-icon/product-oracle-l.svg" product="Oracle" type="Database" url="oracle/monitoring-intro">성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-mysql-l.svg" product="MySQL" type="Database" url="mysql/monitoring-intro" />
+                <FlexCard icons="index-icon/product-oracle-l.svg" product="Oracle Pro" type="Database" url="oracle-pro/monitoring-intro">데이터베이스 서버의 메모리에 직접 접근하여 부하없이 성능정보를 1초에 수십번까지 모니터링할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-mssql-l.svg" product="SQL Server" type="Database" url="mssql/monitoring-intro" />
+                <FlexCard icons="index-icon/product-mysql-l.svg" product="MySQL" type="Database" url="mysql/monitoring-intro">MySQL, MariaDB의 성능 지표 및 SQL, Lock, Slow SQL을 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-tibero-l.svg" product="Tibero" type="Database" url="tibero/monitoring-intro" />
+                <FlexCard icons="index-icon/product-mssql-l.svg" product="SQL Server" type="Database" url="mssql/monitoring-intro">성능 지표 및 SQL, Lock 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-cubrid-l.svg" product="CUBRID" type="Database" url="cubrid/monitoring-intro" />
+                <FlexCard icons="index-icon/product-tibero-l.svg" product="Tibero" type="Database" url="tibero/monitoring-intro">성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-altibase-l.svg" product="Altibase" type="Database" url="altibase/monitoring-intro" />
+                <FlexCard icons="index-icon/product-cubrid-l.svg" product="CUBRID" type="Database" url="cubrid/monitoring-intro">성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-redis-l.svg" product="Redis" type="Database" url="redis/monitoring-intro" />
+                <FlexCard icons="index-icon/product-altibase-l.svg" product="Altibase" type="Database" url="altibase/monitoring-intro">성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-mongodb-l.svg" product="Mongodb" type="Database" url="mongodb/monitoring-intro" />
+                <FlexCard icons="index-icon/product-redis-l.svg" product="Redis" type="Database" url="redis/monitoring-intro">성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-url-l.svg" product="URL" type="URL" url="url/url-intro" />
+                <FlexCard icons="index-icon/product-mongodb-l.svg" product="Mongodb" type="Database" url="mongodb/monitoring-intro">성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-rum-l.svg" product="Browser" type="browser" url="browser" />
+                <FlexCard icons="index-icon/product-url-l.svg" product="URL" type="URL" url="url/url-intro">운영 중인 사이트의 최종 사용자 입장에서 HTTP 상태 코드로 접속 문제를 자동으로 확인할 수 있습니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-aws-l.svg" product="Amazon CloudWatch" type="AWS" url="amazon-cloudwatch/install-agent" />
+                <FlexCard icons="index-icon/product-rum-l.svg" product="Browser" type="Browser" url="browser">브라우저 애플리케이션에 접속한 최종 사용자의 상호 작용에 관한 성능을 모니터링하고 분석합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-aws-ecs-l.svg" product="Amazon ECS" type="AWS" url="amazon-ecs/introduction" />
+                <FlexCard icons="index-icon/product-aws-l.svg" product="Amazon CloudWatch" type="Cloud" url="amazon-cloudwatch/install-agent">Amazon CloudWatch API를 통해 주기적으로 메트릭을 검색하고 저장합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-aws-log-l.svg" product="AWS Log" type="AWS" url="aws-log/introduction" />
+                <FlexCard icons="index-icon/product-aws-ecs-l.svg" product="Amazon ECS" type="Cloud" url="amazon-ecs/introduction">META API 및 cgroup 디렉토리를 통해 도커 컨테이너별 자원 사용량을 실시간으로 수집합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-azure-l.svg" product="Azure Monitor" type="AZURE" url="azure/install-agent" />
+                <FlexCard icons="index-icon/product-aws-log-l.svg" product="AWS Log" type="Cloud" url="aws-log/introduction">AWS Resource에서 생성되어 AWS S3, AWS CloudWatch Log Group에 저장되는 로그들을 수집, 저장합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-naver-l.svg" product="Naver Cloud Monitoring" type="NCP" url="ncloud/install-agent" />
+                <FlexCard icons="index-icon/product-azure-l.svg" product="Azure Monitor" type="Cloud" url="azure/install-agent">Azure Monitor API를 통해 주기적으로 메트릭을 검색하고 저장합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-oracle-l.svg" product="Oracle Cloud Monitor" type="OCI" url="oracle-cloud/install-agent" />
+                <FlexCard icons="index-icon/product-naver-l.svg" product="Naver Cloud Monitoring" type="Cloud" url="ncloud/install-agent">Naver Cloud Monitoring API를 통해 주기적으로 메트릭을 검색하고 저장합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-npm-l.svg" product="Network Performance Monitoring" type="Network" url="npm/introduction" />
+                <FlexCard icons="index-icon/product-oracle-l.svg" product="Oracle Cloud Monitor" type="Cloud" url="oracle-cloud/install-agent">Oracle Cloud Monitor API를 통해 주기적으로 메트릭을 검색하고 저장합니다.</FlexCard>
 
-                <FlexCard icons="index-icon/product-feature-l.svg" product="Feature Project" type="Features" url="features/introduction" status="beta" />
+                <FlexCard icons="index-icon/product-npm-l.svg" product="Network Performance Monitoring" type="Network" url="npm/introduction">프로세스의 네트워크 통신 정보를 가시화하여 성능 분석 및 장애 파악에 사용합니다.</FlexCard>
+
+                <FlexCard icons="index-icon/product-feature-l.svg" product="Feature Project" type="Features" url="features/introduction" status="beta">기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다.</FlexCard>
 
             </div>
         </section>
 
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
+
             <Heading as="h2" className={styles.textcenter}>관리</Heading>
             
             <div className={styles.flexContainer}>
-                <FlexCard icons="logo.svg" type="document" url="account/account-manage" >계정 관리</FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="account/mfa" >멀티팩터 인증</FlexCard>
+                <FlexCard icons="Account" type="document" url="account/account-manage" >
+                    <Heading as="h5">계정 관리</Heading>
+                    <Description>회원 가입을 통해 계정을 생성하고 관리하세요.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="account/sso" >SSO 계정 연동</FlexCard>
+                <FlexCard icons="Multifactor" type="document" url="account/mfa" >
+                    <Heading as="h5">멀티팩터 인증</Heading>
+                    <Description>멀티팩터 인증을 통해 보안을 강화하세요.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="management/billing" >결제</FlexCard>
+                <FlexCard icons="Multifactor" type="document" url="account/sso" >
+                    <Heading as="h5">SSO 계정 연동</Heading>
+                    <Description>하나의 아이디와 비밀번호를 이용해 간편하게 로그인하세요.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="project/project-manage" >프로젝트 관리</FlexCard>
+                <FlexCard icons="Billing" type="document" url="management/billing" >
+                    <Heading as="h5">결제</Heading>
+                    <Description>트라이얼로 무료로 시작하고 필요한 만큼 이용하세요.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="project/integrated-manage" >통합 관리</FlexCard>
+                <FlexCard icons="Project" type="document" url="project/project-manage" >
+                    <Heading as="h5">프로젝트 관리</Heading>
+                    <Description>프로젝트는 모니터링 단위입니다. 프로젝트에 대해 알아보세요.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="management/maintenance" >정비 계획</FlexCard>
+                <FlexCard icons="IntegratedManage" type="document" url="project/integrated-manage" >
+                    <Heading as="h5">통합 관리</Heading>
+                    <Description>조직과 그룹, 프로젝트를 체계적으로 관리할 수 있습니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="management/userbehavior" >사용자 행위</FlexCard>
+                <FlexCard icons="Tools" type="document" url="management/maintenance" >
+                    <Heading as="h5">정비 계획</Heading>
+                    <Description>등록한 작업 시간에 알림을 일시 중지할 수 있습니다.</Description>
+                </FlexCard>
+
+                <FlexCard icons="UserBehavior" type="document" url="management/userbehavior" >
+                    <Heading as="h5">사용자 행위</Heading>
+                    <Description>프로젝트에서 수행 중인 사용자의 행동을 추적할 수 있습니다.</Description>
+                </FlexCard>
+            
             </div>
         </section>
 
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
-            <Heading as="h2" className={styles.textcenter}>관리</Heading>
+
+            <Heading as="h2" className={styles.textcenter}>최신 업데이트</Heading>
             
             <div className={styles.flexContainer}>
-                <FlexCard icons="logo.svg" type="document" url="blog" >What's New</FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="release-notes" >릴리스 노트</FlexCard>
+                <FlexCard icons="Newfunc" type="document" url="blog" >
+                    <Heading as="h5">새로운 기능</Heading>
+                    <Description>새롭게 출시된 기능을 확인해보세요.</Description>
+                </FlexCard>
+
+                <FlexCard icons="Notes" type="document" url="release-notes" >
+                    <Heading as="h5">릴리스 노트</Heading>
+                    <Description>최신 릴리스 정보를 빠르게 확인하세요.</Description>
+                </FlexCard>
+
             </div>
         </section>
 
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
-            <Heading as="h2" className={styles.textcenter}>Reference</Heading>
+
+            <Heading as="h2" className={styles.textcenter}>참조</Heading>
             
             <div className={styles.flexContainer}>
-                <FlexCard icons="logo.svg" type="document" url="openapi-spec" >Open API</FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="software-proxy" >소프트웨어 프록시</FlexCard>
+                <FlexCard icons="API" type="document" url="openapi-spec" >
+                    <Heading as="h5">Open API</Heading>
+                    <Description>Open API를 통해 모니터링 데이터를 추출할 수 있습니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="welcome-to-whatapdocs" >기술 문서 안내</FlexCard>
+                <FlexCard icons="Proxy" type="document" url="software-proxy" >
+                    <Heading as="h5">소프트웨어 프록시</Heading>
+                    <Description>외부망 접근을 차단하고 단일 채널로 와탭에 데이터를 전송할 수 있습니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="license/licenses" >라이선스</FlexCard>
+                <FlexCard icons="Docs" type="document" url="welcome-to-whatapdocs" >
+                    <Heading as="h5">기술 문서 안내</Heading>
+                    <Description>WhaTap Docs 페이지 활용법을 안내합니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="faq" >FAQ</FlexCard>
+                <FlexCard icons="Book" type="document" url="license/licenses" >
+                    <Heading as="h5">라이선스</Heading>
+                    <Description>오픈 소스 라이선스와 사용하는 라이브러리를 안내합니다.</Description>
+                </FlexCard>
+
+                <FlexCard icons="FAQ" type="document" url="faq" >
+                    <Heading as="h5">FAQ</Heading>
+                    <Description>자주 묻는 질문을 확인하고 문제를 해결하세요.</Description>
+                </FlexCard>
+
             </div>
         </section>
 
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
-            <Heading as="h2" className={styles.textcenter}>Learning</Heading>
-            
+
+            <Heading as="h2" className={styles.textcenter}>학습하기</Heading>
+
             <div className={styles.flexContainer}>
-                <FlexCard icons="logo.svg" type="document" url="learning-guides" >학습하기</FlexCard>
+                <FlexCard icons="Bookexpand" type="document" url="learning-guides" >
+                    <Heading as="h5">학습하기</Heading>
+                    <Description>빠른 이해와 효율적인 이용을 위해 학습 자료를 제공합니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="mxql/mxql-overview" >MXQL</FlexCard>
+                <FlexCard icons="MXQL" type="document" url="mxql/mxql-overview" >
+                    <Heading as="h5">MXQL</Heading>
+                    <Description>MXQL은 메트릭스를 유연한게 조회하기 위한 쿼리 언어입니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="metrics/common-metrics-intro" >메트릭스</FlexCard>
+                <FlexCard icons="Metrics" type="document" url="metrics/common-metrics-intro" >
+                    <Heading as="h5">메트릭스</Heading>
+                    <Description>메트릭스는 모니터링 대상으로부터 수집한 데이터입니다.</Description>
+                </FlexCard>
 
-                <FlexCard icons="logo.svg" type="document" url="glossary" >용어 사전</FlexCard>
+                <FlexCard icons="Book" type="document" url="glossary" >
+                    <Heading as="h5">용어 사전</Heading>
+                    <Description>모니터링 서비스를 더욱 편리하게 이용할 수 있도록 용어 사전을 제공합니다.</Description>
+                </FlexCard>
+
             </div>
         </section>
 

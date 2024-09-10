@@ -10,6 +10,9 @@
   background-color: #ddd;
   align-content: center;
   text-align: center;
+  /* position: sticky;
+  top: 76px;
+  z-index: 100; */
 }
 
 .appcontainer {
@@ -41,7 +44,7 @@
   text-align: center;
   display: block;
   width: 100%;
-  font-weight: 200;
+  font-weight: 300;
 }
 .flexcolumn:first-of-type {
   border-left: 1px solid #aaa;
@@ -79,20 +82,57 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid;
+  border: 1px solid var(--ifm-breadcrums-arrow-color);
   border-radius: 5px;
   align-content: center;
   text-align: center;
+  background-color: var(--shortcut-background-color);
+}
+
+.flexProd:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+
+.flexProd:hover .document .textleft,
+.flexProd:hover .product .textleft {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.flexProd:hover .product .textleft {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-height: 65px;
+}
+
+.flexProd:hover .product .type {
+  font-size: .7rem !important;
 }
 
 .flexContainer .flexProd a.alignCenter {
   display: block;
   align-content: center;
-  padding: 10px 20px;
+  padding: 10px 5px 10px 20px;
   height: 120px;
   width: 100%;
   text-decoration: none;
   color: var(--ifm-font-color-base);
+}
+
+.flexProd:hover a.alignCenter {
+  padding: 5px
 }
 
 .flexContainer .flexProd a.alignCenter .product {
@@ -104,8 +144,18 @@
   flex-wrap: wrap;
   width: 55px;
   height: 85.95px;
-  margin-right: 20px;
+  margin-right: 10px;
   align-content: center;
+}
+
+.doculogo {
+  color: var(--ifm-main-icons-color);
+}
+.logoDocu {
+  margin-bottom: 5px;
+}
+.logoDocu img {
+  width: 45px;
 }
 
 .logo img {
@@ -123,6 +173,32 @@
 .flexContainer .flexProd a.alignCenter .product .desc .type {
   display: block;
   width: 100%;
+}
+
+.flexContainer .flexProd:hover a.alignCenter .product .desc .title,
+.flexContainer .flexProd:hover a.alignCenter .product .desc .type {
+  display: inline;
+  width: 100%;
+}
+
+.flexProd:hover .product .title {
+  margin-bottom: 0;
+  margin-right: 5px;
+  font-size: .7rem;
+}
+
+.document .title, .document .title h5 {
+  margin-bottom: 0;
+}
+
+.product .textleft {
+  display: none;
+}
+
+.document .textleft {
+  text-align: center;
+  font-weight: 400;
+  display: none;
 }
 
 .title {
@@ -161,7 +237,7 @@ p.textleft {
 }
 
 p.small {
-  font-size: .8rem;
+  font-size: .7rem;
 }
 
 .inline {
@@ -173,4 +249,8 @@ p.small {
   height: 25px;
   margin-right: 13px;
   top: 6px;
+}
+
+html[lang='en-US'] p.small {
+  font-size: .7rem;
 }

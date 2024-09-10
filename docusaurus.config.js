@@ -647,7 +647,7 @@ const config = {
           },
           {
             to: 'blog', 
-            label: 'What\'s New', 
+            label: '새로운 기능', 
             className: 'box',
             position: 'right'
           },

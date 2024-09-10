@@ -62,6 +62,7 @@
   --ifm-color-emphasis-300: #d3d3d3;
   --ifm-active-menu-color: #efefef;
   --ifm-dropdown-link-color: #222222;
+  --ifm-main-icons-color: #636363;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -89,6 +90,10 @@
   --ifm-active-menu-color: #636363;
   --ifm-dropdown-link-color: #f2f2f2;
   --ifm-dropdown-background-color: #3c3e40;
+  --ifm-main-icons-color: #d4d4d4;
+  .whatap_logo .textColor {
+    fill: #fff;
+  }
 }
 
 .DocSearch {
@@ -1124,6 +1129,30 @@ code.Container {
 code.URL {
   background-color: rgb(219, 248, 227);
   color: rgb(0, 181, 67);
+  border: none;
+  padding: 2px 5px;
+}
+code.Browser {
+  background-color: rgb(232, 244, 212);
+  color: rgb(92, 166, 15);
+  border: none;
+  padding: 2px 5px;
+}
+code.Cloud {
+  background-color: rgb(217, 235, 252);
+  color: rgb(0, 115, 215);
+  border: none;
+  padding: 2px 5px;
+}
+code.Network {
+  background-color: rgb(255, 237, 207);
+  color: rgb(255, 160, 18);
+  border: none;
+  padding: 2px 5px;
+}
+code.Features {
+  background-color: rgb(255, 226, 249);
+  color: rgb(234, 92, 202);
   border: none;
   padding: 2px 5px;
 }
