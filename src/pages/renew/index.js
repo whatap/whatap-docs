@@ -7,13 +7,13 @@ import {
     getMeilisearchResults,
 } from '@meilisearch/autocomplete-client';
 import '@algolia/autocomplete-theme-classic';
-import { Autocomplete } from './Autocomplete.js';
-import { ProductItem } from './ProductItem.js';
+import { Autocomplete } from '@site/src/components/Autocomplete/Autocomplete.js';
+import { ProductItem } from '@site/src/components/Autocomplete/ProductItem.js';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import clsx from 'clsx'; 
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
-import * as Icons from './icons.js';
+import * as Icons from '@site/src/components/Autocomplete/icons.js';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const searchClient = meilisearchAutocompleteClient({
