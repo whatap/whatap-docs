@@ -63,6 +63,7 @@
   --ifm-active-menu-color: #efefef;
   --ifm-dropdown-link-color: #222222;
   --docusaurus-announcement-bar-height: 60px;
+  --ifm-main-icons-color: #636363;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -90,6 +91,10 @@
   --ifm-active-menu-color: #636363;
   --ifm-dropdown-link-color: #f2f2f2;
   --ifm-dropdown-background-color: #3c3e40;
+  --ifm-main-icons-color: #d4d4d4;
+  .whatap_logo .textColor {
+    fill: #fff;
+  }
 }
 
 .DocSearch {
@@ -270,6 +275,12 @@ html[lang='ja-JP'] {
   margin-right: 40px;
 }
 
+.navbar__item.box {
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: .9rem;
+  padding: 5px 8px;
+}
 .navbar__item {
   padding: 8px 12px;
   margin-right: 8px;
@@ -1091,6 +1102,60 @@ div.history_overview{
       }
     }
   }
+}
+code.Application {
+  background-color: rgb(220, 239, 255);
+  color: rgb(61, 169, 255);
+  border: none;
+  padding: 2px 5px;
+}
+code.Database {
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  border: none;
+  padding: 2px 5px;
+}
+code.Server {
+  background-color: rgb(210, 246, 249);
+  color: rgb(0, 138, 133);
+  border: none;
+  padding: 2px 5px;
+}
+code.Container {
+  background-color: rgb(215, 226, 255);
+  color: rgb(41, 108, 242);
+  border: none;
+  padding: 2px 5px;
+}
+code.URL {
+  background-color: rgb(219, 248, 227);
+  color: rgb(0, 181, 67);
+  border: none;
+  padding: 2px 5px;
+}
+code.Browser {
+  background-color: rgb(232, 244, 212);
+  color: rgb(92, 166, 15);
+  border: none;
+  padding: 2px 5px;
+}
+code.Cloud {
+  background-color: rgb(217, 235, 252);
+  color: rgb(0, 115, 215);
+  border: none;
+  padding: 2px 5px;
+}
+code.Network {
+  background-color: rgb(255, 237, 207);
+  color: rgb(255, 160, 18);
+  border: none;
+  padding: 2px 5px;
+}
+code.Features {
+  background-color: rgb(255, 226, 249);
+  color: rgb(234, 92, 202);
+  border: none;
+  padding: 2px 5px;
 }
 
 // document
