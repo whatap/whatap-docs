@@ -21,7 +21,6 @@ const frontMatter = {
 	id: 'agent-troubleshooting',
 	title: '에이전트 문제 해결',
 	description: '에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.',
-	hide_table_of_contents: true,
 	toc_max_heading_level: 2,
 	keywords: [
 		'쿠버네티스',
@@ -50,7 +49,6 @@ const metadata = {
     "id": "agent-troubleshooting",
     "title": "에이전트 문제 해결",
     "description": "에이전트 설치 시 발생할 수 있는 문제를 확인할 수 있습니다.",
-    "hide_table_of_contents": true,
     "toc_max_heading_level": 2,
     "keywords": [
       "쿠버네티스",
@@ -95,6 +93,22 @@ const toc = [{
   "value": "<code>clusterrole</code>, <code>clusterrolebinding</code> 리소스가 이미 클러스터에 있을 경우",
   "id": "clusterrole-clusterrolebinding-리소스가-이미-클러스터에-있을-경우",
   "level": 3
+}, {
+  "value": "<code>whatap-monitoring</code> 네임스페이스를 사용할 수 없는 경우",
+  "id": "whatap-monitoring-namespace-unavailable",
+  "level": 3
+}, {
+  "value": "사전 준비",
+  "id": "사전-준비",
+  "level": 4
+}, {
+  "value": "설치 과정",
+  "id": "설치-과정",
+  "level": 4
+}, {
+  "value": "업데이트 및 삭제",
+  "id": "업데이트-및-삭제",
+  "level": 4
 }, {
   "value": "에이전트 기동 시 발생하는 문제 해결",
   "id": "troubleshooting-agent",
@@ -241,8 +255,91 @@ function _createMdxContent(props) {
             className: "language-shell",
             children: "kubectl delete clusterrolebinding whatap\nkubectl delete clusterrole whatap\n"
           })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h3, {
+          id: "whatap-monitoring-namespace-unavailable",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-monitoring"
+          }), " 네임스페이스를 사용할 수 없는 경우"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["기본적으로 와탭 쿠버네티스 에이전트는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "whatap-monitoring"
+          }), " 네임스페이스에 설치됩니다. 그러나 해당 네임스페이스를 사용할 수 없거나 또는 사용자가 특정 네임스페이스를 지정해야 하는 경우, 다음 과정을 참고하여 원하는 네임스페이스에 에이전트 설치를 진행하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "사전-준비",
+          children: "사전 준비"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "차트 버전"
+              }), ": whatap/kube 1.7.11 이상"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "다음 명령어를 통해 차트 버전을 확인하세요."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "helm search repo whatap/kube --versions\n"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "1.7.11 버전 미만인 경우 다음 명령어를 통해 차트 버전을 업데이트하세요."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "helm repo update\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Helm 버전"
+              }), ": Helm 3 이상"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "설치-과정",
+          children: "설치 과정"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["사용하고자 하는 네임스페이스 이름을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "<namespace>"
+          }), " 자리에 입력한 후 다음 명령어를 실행하여 에이전트를 설치하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            className: "language-bash",
+            children: "helm install whatap-kube-agent whatap/kube --create-namespace --namespace <namespace> --set namespaceOverrideEnabled=true --wait\n"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "업데이트-및-삭제",
+          children: "업데이트 및 삭제"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "업데이트"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "다음 명령어를 통해 에이전트를 업데이트하세요."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "helm update whatap-kube-agent whatap/kube --namespace <namespace> --wait\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "삭제"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "다음 명령어를 통해 에이전트를 삭제하세요."
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "helm uninstall whatap-kube-agent whatap/kube --namespace <namespace>\n"
+              })
+            }), "\n"]
+          }), "\n"]
         })]
-      })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {

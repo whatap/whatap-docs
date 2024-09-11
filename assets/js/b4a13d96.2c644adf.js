@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49565],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84703],{
 
-/***/ 57144:
+/***/ 69759:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,32 +18,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'php-2_8_1',
-	title: 'PHP Agent v2.8.1',
+	id: 'php-2_8_2',
+	title: 'PHP Agent v2.8.2',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/php/php-2_8_0',
+	pagination_next: 'release-notes/php/php-2_8_1',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-2_8_1",
-  "title": "PHP Agent v2.8.1",
-  "description": "2024년 07월 24일",
-  "source": "@site/docs/release-notes/php/php-2.8.1.mdx",
+  "id": "release-notes/php/php-2_8_2",
+  "title": "PHP Agent v2.8.2",
+  "description": "2024년 09월 11일",
+  "source": "@site/docs/release-notes/php/php-2.8.2.mdx",
   "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-2_8_1",
-  "permalink": "/whatap-docs/release-notes/php/php-2_8_1",
+  "slug": "/release-notes/php/php-2_8_2",
+  "permalink": "/whatap-docs/release-notes/php/php-2_8_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-2.8.1.mdx",
+  "editUrl": "undefined/docs/release-notes/php/php-2.8.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-2_8_1",
-    "title": "PHP Agent v2.8.1",
+    "id": "php-2_8_2",
+    "title": "PHP Agent v2.8.2",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/php/php-2_8_0",
+    "pagination_next": "release-notes/php/php-2_8_1",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
@@ -53,8 +53,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/php/"
   },
   "next": {
-    "title": "PHP Agent v2.8.0",
-    "permalink": "/whatap-docs/release-notes/php/php-2_8_0"
+    "title": "PHP Agent v2.8.1",
+    "permalink": "/whatap-docs/release-notes/php/php-2_8_1"
   }
 };
 const assets = {
@@ -68,10 +68,11 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    blockquote: "blockquote",
     code: "code",
+    em: "em",
     li: "li",
     p: "p",
+    pre: "pre",
     strong: "strong",
     table: "table",
     tbody: "tbody",
@@ -86,41 +87,65 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 07월 24일"
+      children: "2024년 09월 11일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
             children: "New"
-          }), " IP 주소별 트랜잭션 통계를 수집하는 에이전트 설정 옵션 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "whatap.stat_ipurl_enabled"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              class: "type",
-              children: "Boolean"
-            }), ", 기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "false"
-            })]
+          }), " 에이전트 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.ini"
+          }), ")보다 환경 변수를 우선 처리하는 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기존 에이전트 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.ini"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "환경 변수"
+              }), " 순서로 적용합니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "whatap.use_env_first"
+              }), " (기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "false"
+              }), ") 옵션을 설정하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.ini"
+              }), " 파일의 설정보다 환경 변수를 우선 적용합니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"whatap.ini\"",
+                children: "whatap.use_env_first=true\n"
+              })
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "WHATAP_USE_ENV_FIRST=true"
+              }), " 형식으로 환경 변수를 이용해 설정할 수 있습니다."]
+            }), "\n"]
           }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            children: "Feature"
-          }), " 통계 압축 전송을 설정하는 에이전트 설정 옵션 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "whatap.stat_zip_enabled"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              class: "type",
-              children: "Boolean"
-            }), ", 기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "true"
-            })]
-          }), "\n"]
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "OKIND"
+          }), " 환경 변수 인식 오류 수정"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "OKIND"
+          }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "WHATAP_OKIND"
+          }), " 환경 변수로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "okind"
+          }), "를 설정할 수 있습니다."]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
@@ -172,7 +197,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/6/x86_64/whatap-php-2.8-1.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/6/x86_64/whatap-php-2.8-2.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -187,7 +212,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/7/aarch64/whatap-php-2.8-1.aarch64.rpm",
+                href: "https://repo.whatap.io/centos/7/aarch64/whatap-php-2.8-2.aarch64.rpm",
                 children: "다운로드"
               })
             })]
@@ -211,7 +236,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.1_amd64.deb",
+                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.2_amd64.deb",
                 children: "다운로드"
               })
             })]
@@ -226,7 +251,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.1_arm64.deb",
+                href: "https://repo.whatap.io/debian/unstable/whatap-php_2.8.2_arm64.deb",
                 children: "다운로드"
               })
             })]
@@ -250,7 +275,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/alpine/x86_64/whatap-php-2.8.1.tar.gz",
+                href: "https://repo.whatap.io/alpine/x86_64/whatap-php-2.8.2.tar.gz",
                 children: "다운로드"
               })
             })]
@@ -265,7 +290,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/alpine/aarch64/whatap-php-2.8.1.tar.gz",
+                href: "https://repo.whatap.io/alpine/aarch64/whatap-php-2.8.2.tar.gz",
                 children: "다운로드"
               })
             })]
@@ -287,7 +312,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/freebsd/10/whatap-php-2.8.1.txz",
+                href: "https://repo.whatap.io/freebsd/10/whatap-php-2.8.2.txz",
                 children: "다운로드"
               })
             })]

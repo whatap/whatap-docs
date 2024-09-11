@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43551],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52618],{
 
-/***/ 31716:
+/***/ 55491:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,43 +14,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(67068);
+/* harmony import */ var _site_src_components_UItext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5379);
 
 
 const frontMatter = {
-	id: 'php-previous',
-	title: 'PHP Agent 지난 버전',
+	id: 'php-2_6_0',
+	title: 'PHP Agent v2.6.0',
 	toc_max_heading_level: 2,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-previous",
-  "title": "PHP Agent 지난 버전",
-  "description": "* PHP Agent v2.5.3",
-  "source": "@site/docs/release-notes/php/php-previous.mdx",
+  "id": "release-notes/php/php-2_6_0",
+  "title": "PHP Agent v2.6.0",
+  "description": "2023년 1월 4일",
+  "source": "@site/docs/release-notes/php/php-2.6.0.mdx",
   "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-previous",
-  "permalink": "/whatap-docs/release-notes/php/php-previous",
+  "slug": "/release-notes/php/php-2_6_0",
+  "permalink": "/whatap-docs/release-notes/php/php-2_6_0",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-previous.mdx",
+  "editUrl": "undefined/docs/release-notes/php/php-2.6.0.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-previous",
-    "title": "PHP Agent 지난 버전",
+    "id": "php-2_6_0",
+    "title": "PHP Agent v2.6.0",
     "toc_max_heading_level": 2,
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "PHP Agent v2.5.4",
-    "permalink": "/whatap-docs/release-notes/php/php-2_5_4"
+    "title": "PHP Agent v2.6.1",
+    "permalink": "/whatap-docs/release-notes/php/php-2_6_1"
   },
   "next": {
-    "title": "Node.js Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/nodejs/"
+    "title": "PHP Agent 지난 버전",
+    "permalink": "/whatap-docs/release-notes/php/php-previous"
   }
 };
 const assets = {
@@ -59,72 +61,49 @@ const assets = {
 
 
 
-const toc = [];
+
+
+const toc = [{
+  "value": "2023년 1월 4일",
+  "id": "2023년-1월-4일",
+  "level": 4
+}];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
+    code: "code",
+    h4: "h4",
     li: "li",
     p: "p",
+    section: "section",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_5_3",
-          children: "PHP Agent v2.5.3"
-        })
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h4",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+      id: "2023년-1월-4일",
+      children: "2023년 1월 4일"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
+        children: "New"
+      }), " PHP 8.2 버전 지원"]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
+        children: "nts, zts 지원"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "mysqli::execute_query"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "mysqli_execute_query"
+        }), " 함수 추적"]
       }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_5_2",
-          children: "PHP Agent v2.5.2"
-        })
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_5_1",
-          children: "PHP Agent v2.5.1"
-        })
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_5_0",
-          children: "PHP Agent v2.5.0"
-        })
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_4_1",
-          children: "PHP Agent v2.4.1"
-        })
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_4_0",
-          children: "PHP Agent v2.4.0"
-        })
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "php-2_3_3",
-          children: "PHP Agent v2.3.3"
-        })
-      }), "\n"]
-    }), "\n"]
+    })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -135,6 +114,53 @@ function MDXContent(props = {}) {
   }) : _createMdxContent(props);
 }
 
+
+
+/***/ }),
+
+/***/ 67068:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ Status)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function Status({ children , priority  }) {
+    if (priority) {
+        return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            className: children,
+            type: priority,
+            children: children
+        });
+    }
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        className: children,
+        children: children
+    });
+};
+
+
+/***/ }),
+
+/***/ 5379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (/* binding */ UItext)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(96540);
+
+
+function UItext({ children  }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        className: "uitext",
+        children: children
+    });
+};
 
 
 /***/ }),

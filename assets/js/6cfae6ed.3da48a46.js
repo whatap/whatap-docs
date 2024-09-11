@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52618],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12687],{
 
-/***/ 55491:
+/***/ 45204:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -20,39 +20,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'php-2_6_0',
-	title: 'PHP Agent v2.6.0',
+	id: 'php-2_5_4',
+	title: 'PHP Agent v2.5.4',
 	toc_max_heading_level: 2,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/php/php-2_6_0",
-  "title": "PHP Agent v2.6.0",
-  "description": "2023년 1월 4일",
-  "source": "@site/docs/release-notes/php/php-2.6.0.mdx",
+  "id": "release-notes/php/php-2_5_4",
+  "title": "PHP Agent v2.5.4",
+  "description": "배포일: 2022-11-16",
+  "source": "@site/docs/release-notes/php/php-2.5.4.mdx",
   "sourceDirName": "release-notes/php",
-  "slug": "/release-notes/php/php-2_6_0",
-  "permalink": "/whatap-docs/release-notes/php/php-2_6_0",
+  "slug": "/release-notes/php/php-2_5_4",
+  "permalink": "/whatap-docs/release-notes/php/php-2_5_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/php/php-2.6.0.mdx",
+  "editUrl": "undefined/docs/release-notes/php/php-2.5.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "php-2_6_0",
-    "title": "PHP Agent v2.6.0",
+    "id": "php-2_5_4",
+    "title": "PHP Agent v2.5.4",
     "toc_max_heading_level": 2,
     "isTranslationMissing": false
-  },
-  "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "PHP Agent v2.6.1",
-    "permalink": "/whatap-docs/release-notes/php/php-2_6_1"
-  },
-  "next": {
-    "title": "PHP Agent v2.5.4",
-    "permalink": "/whatap-docs/release-notes/php/php-2_5_4"
   }
 };
 const assets = {
@@ -64,40 +55,34 @@ const assets = {
 
 
 const toc = [{
-  "value": "2023년 1월 4일",
-  "id": "2023년-1월-4일",
-  "level": 4
+  "value": "Change (업데이트)",
+  "id": "change-업데이트",
+  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
     code: "code",
-    h4: "h4",
-    li: "li",
+    h2: "h2",
     p: "p",
     section: "section",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h4",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-      id: "2023년-1월-4일",
-      children: "2023년 1월 4일"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_site_src_components_Highlight__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
-        children: "New"
-      }), " PHP 8.2 버전 지원"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-        children: "nts, zts 지원"
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "배포일: 2022-11-16"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "change-업데이트",
+        children: "Change (업데이트)"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "mysqli::execute_query"
+          children: "fsockopen"
         }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "mysqli_execute_query"
-        }), " 함수 추적"]
-      }), "\n"]
+          children: "socket_connect"
+        }), " 함수 수정: 기존 연결 정보만 수집했지만 실행 시간을 추가 수집하도록 수정"]
+      })]
     })]
   });
 }
