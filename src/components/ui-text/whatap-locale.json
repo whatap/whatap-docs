@@ -54973,7 +54973,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55721,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55945,10 +55945,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56065,7 +56065,7 @@
   },
   "CNT08128": {
     "en": "Please select a date and time.",
-    "ja": "日付と時刻を選択してください。",
+    "ja": "日時を選択してください。",
     "ko": "날짜와 시간을 선택해 주세요.",
     "zh": "Please select a date and time.",
     "service_id": "CNT08128"
@@ -56261,7 +56261,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56393,10 +56393,10 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
-    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "zh": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "service_id": "DSC08175"
   },
   "TTL08177": {
@@ -56610,10 +56610,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events occurring",
+    "en": "Number of events",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events occurring",
+    "zh": "Number of events",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -56939,10 +56939,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57605,7 +57605,7 @@
   },
   "ITM08349": {
     "en": "Log view detail setting",
-    "ja": "ログ表示の詳細設定",
+    "ja": "ログ表示詳細設定",
     "ko": "로그 표시 상세 설정",
     "zh": "Log view detail setting",
     "service_id": "ITM08349"
@@ -57751,10 +57751,10 @@
     "service_id": "DSC08369"
   },
   "DSC08370": {
-    "en": "However, usage fees will be charged if you use the log monitoring function.",
+    "en": "However, usage fees will be charged if you use the log monitoring feature.",
     "ja": "但し、ログ監視機能を使用すると利用料金が発生する場合があります。",
     "ko": "단, 로그 모니터링 기능을 사용하면 이용 요금이 청구됩니다.",
-    "zh": "However, usage fees will be charged if you use the log monitoring function.",
+    "zh": "However, usage fees will be charged if you use the log monitoring feature.",
     "service_id": "DSC08370"
   },
   "BTN08371": {
@@ -58143,10 +58143,10 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
-    "zh": "It will take approximately 30 seconds to 1 minute to complete the task.",
+    "zh": "It takes approximately 30 seconds to 1 minute to complete the task.",
     "service_id": "DSC08426"
   },
   "CNT08427": {
@@ -58521,10 +58521,10 @@
     "service_id": "TTL08479"
   },
   "TTL08480": {
-    "en": "Script list",
+    "en": "Script List",
     "ja": "スクリプトリスト",
     "ko": "스크립트 목록",
-    "zh": "Script list",
+    "zh": "Script List",
     "service_id": "TTL08480"
   },
   "TTL08481": {
@@ -58557,21 +58557,21 @@
   },
   "CNT08485": {
     "en": "The Server Inventory feature requires updates to the following agent versions or higher:",
-    "ja": "サーバー構成情報機能を使用するには、次のバージョンのエージェント以上の更新が必要です。",
+    "ja": "サーバー構成情報機能を使用するには、次のバージョンのエージェントを超えるアップデートが必要です。",
     "ko": "서버 구성 정보 기능을 사용하려면 다음 에이전트 버전 이상의 업데이트가 필요합니다.",
     "zh": "The Server Inventory feature requires updates to the following agent versions or higher:",
     "service_id": "CNT08485"
   },
   "CNT08486": {
-    "en": "Supported versions {version}",
+    "en": "Supported version {version}",
     "ja": "サポートバージョン{version}",
     "ko": "지원 버전 {version}",
-    "zh": "Supported versions {version}",
+    "zh": "Supported version {version}",
     "service_id": "CNT08486"
   },
   "CNT08487": {
     "en": "update command",
-    "ja": "更新命令",
+    "ja": "アップデート命令",
     "ko": "업데이트 명령어",
     "zh": "update command",
     "service_id": "CNT08487"
@@ -58729,6 +58729,13 @@
     "ko": "전화번호가 삭제되었습니다.",
     "zh": "Your phone number has been deleted.",
     "service_id": "NTC08509"
+  },
+  "TTL08510": {
+    "en": "Would you like to change your phone number?",
+    "ja": "電話番号を変更しますか？",
+    "ko": "전화번호를 변경하시겠습니까?",
+    "zh": "Would you like to change your phone number?",
+    "service_id": "TTL08510"
   },
   "": {
     "en": "#VALUE!",
