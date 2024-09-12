@@ -12,7 +12,7 @@ module.exports = function () {
                             projectAccessKey: "x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",
                             pcode: 29856,
                             sampleRate: 100,
-                            sessionReplaySampleRate: 50,
+                            sessionReplaySampleRate: 100,
                             ignoreOrigins: [/^.*localhost.*$/i, /^.*ngrok-free.app.*$/i, /^.*whatap.github.io.*$/i],
                             collectUserClick: true
                           },
