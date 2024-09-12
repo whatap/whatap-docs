@@ -2629,7 +2629,7 @@ const sidebars = {
   cubridSidebar: [
     {
       type: 'category',
-      label: 'CUBRID 모니터링',
+      label: 'CUBRID V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2774,6 +2774,159 @@ const sidebars = {
               ],
             },
             'cubrid/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  cubridV1Sidebar: [
+    {
+      type: 'category',
+      label: 'CUBRID V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'cubrid-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'cubrid-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'cubrid-v1/install-agent',
+            'cubrid-v1/after-install-agent',
+            'cubrid-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid-v1/agent-settings'
+          },
+          items: [
+            'cubrid-v1/agent-dbx-settings',
+            'cubrid-v1/agent-xos-settings',
+            'cubrid-v1/agent-xcub-settings'
+          ],
+        },
+        'cubrid-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid-v1/dashboard-intro'
+              },
+              items: [
+                'cubrid-v1/instance-list',
+                'cubrid-v1/instance-monitoring',
+                'cubrid-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid-v1/flex-board',
+              },
+              items: [
+                'cubrid-v1/flexboard-template',
+                'cubrid-v1/flexboard-create',
+                'cubrid-v1/flexboard-manage',
+                'cubrid-v1/flexboard-metric-widget',
+                'cubrid-v1/flexboard-widget-manage',
+                'cubrid-v1/flexboard-widget-template',
+                'cubrid-v1/flexboard-mode',
+                'cubrid-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'cubrid-v1/analysis-count-trend',
+                'cubrid-v1/analysis-databaseparameter',
+                'cubrid-v1/analysis-lock-and-deadlock',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid-v1/metrics-intro'
+              },
+              items: [
+                'cubrid-v1/metrics-data-list',
+                'cubrid-v1/metrics-chart',
+                'cubrid-v1/metrics-search',
+                'cubrid-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'cubrid-v1/stat',
+                'cubrid-v1/table-size',
+                'cubrid-v1/table-space-size',
+                'cubrid-v1/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'cubrid-v1/set-notice',
+              },
+              items: [
+                'cubrid-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'cubrid-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'cubrid-v1/metric-warning-notice',
+                'cubrid-v1/set-notification-message',
+                'cubrid-v1/set-event-detect-anomal',
+                'cubrid-v1/set-receive-event',
+                'cubrid-v1/set-event-history',
+                'cubrid-v1/set-event-format',
+              ],
+            },
+            'cubrid-v1/labs'
           ]
         }
       ],
