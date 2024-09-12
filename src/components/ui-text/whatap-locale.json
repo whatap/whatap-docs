@@ -55758,7 +55758,7 @@
   "LNK08084": {
     "en": "Server inventory",
     "ja": "サーバー構成",
-    "ko": "서버 구성",
+    "ko": "서버 구성 정보",
     "zh": "Server inventory",
     "service_id": "LNK08084"
   },

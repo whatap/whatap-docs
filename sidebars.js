@@ -6067,6 +6067,7 @@ const sidebars = {
               //   id: 'server/metrics-intro'
               //},
               items: [
+                'server/server-inventory',
                 'server/server-list',
                 'server/server-detail',
                 'server/server-detail-process-group',
