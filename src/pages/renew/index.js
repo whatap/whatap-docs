@@ -83,7 +83,7 @@ function RightArrow() {
     return (
         <div className={styles.rightarrowcontainer}>
             <svg className={styles.rightarrow} xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,50 L0,100"></path></svg>
-            {/* <svg class="d-block d-md-none down-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 L50 100 L100 0"></path></svg> */}
+            <svg className={styles.downarrow} xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 L50 100 L100 0"></path></svg>
         </div>
     )
 }
@@ -96,7 +96,7 @@ function Description({children}) {
 }
 function ThereeSteps() {
     return (
-        <section className={clsx('row', styles.guide, styles.justifycontentcenter)}>
+        <section className={clsx(styles.gettingStart, styles.guide, styles.justifycontentcenter)}>
             <Step order={1}>
                 <Link to="quick-guide/#account"><Heading as="h5" className={styles.inline}>회원 가입</Heading></Link>
                 <Description>
@@ -105,13 +105,20 @@ function ThereeSteps() {
             </Step>
             <RightArrow/>
             <Step order={2}>
-                <Link to="quick-guide/#cproject"><Heading as="h5" className={styles.inline}>프로젝트 생성 및 에이전트 설치</Heading></Link>
+                <Link to="quick-guide/#cproject"><Heading as="h5" className={styles.inline}>프로젝트 생성</Heading></Link>
                 <Description>
-                    프로젝트를 생성하고 액세스 키를 발급 받은 후 모니터링 대상에 에이전트를 설치하세요.
+                    프로젝트를 생성하고 액세스 키를 발급 받으세요.
                 </Description>
             </Step>
             <RightArrow/>
             <Step order={3}>
+                <Link to="quick-guide/#install"><Heading as="h5" className={styles.inline}>에이전트 설치</Heading></Link>
+                <Description>
+                    모니터링 대상에 에이전트를 설치하세요.
+                </Description>
+            </Step>
+            <RightArrow/>
+            <Step order={4}>
                 <Link to="quick-guide/#dashboard"><Heading as="h5" className={styles.inline}>대시보드 조회하기</Heading></Link>
                 <Description>
                     에이전트 설치 후 데이터가 와탭 서버로 전달되면 대시보드 메뉴에서 프로젝트의 전체 현황을 실시간으로 조회할 수 있습니다.
@@ -127,7 +134,7 @@ function FlexCard({icons, product, type, url, children}) {
 
         return (
             <div className={styles.flexProd}>
-                <Link to={url} className={styles.alignCenter}>
+                <Link to={url} className={styles.alignDocument}>
                     <div className={styles.document}>
                         <div className={styles.logoDocu}>
                             {IconComponent ? (
