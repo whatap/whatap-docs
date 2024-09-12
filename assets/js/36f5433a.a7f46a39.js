@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[929],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[1268],{
 
 /***/ 43478:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -247,7 +247,7 @@ function _createMdxContent(props) {
         }), "를 참조하세요."]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,redis,mongodb,altibase",
+      product: "postgresql,mysql,redis,mongodb,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -268,7 +268,7 @@ function _createMdxContent(props) {
             children: "대시보드 기능 개선"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle,altibase",
+          product: "postgresql,mysql,redis,mongodb,oracle,altibase,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
             img: "new-feature-02.png"
           })
@@ -283,12 +283,12 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "인스턴스 모니터링 필터 기능 개선"
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle,altibase",
+          product: "postgresql,mysql,redis,mongodb,oracle,altibase,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
             img: "new-feature-03.png"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          product: "postgresql,mysql,oracle,altibase,altibase",
+          product: "postgresql,mysql,oracle,altibase,altibase,cubrid",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "세션 킬 기능 UI 개선"
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
@@ -320,7 +320,7 @@ function _createMdxContent(props) {
             children: "로그"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle",
+          product: "postgresql,mysql,redis,mongodb,oracle,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
             img: "new-feature-06.png"
           })
@@ -362,7 +362,64 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 86793:
+/***/ 81202:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ReturnLink} = _components;
+  if (!ReturnLink) _missingMdxReference("ReturnLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "info",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ReturnLink, {
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 40186:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -375,21 +432,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14087);
-/* harmony import */ var _common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30512);
-/* harmony import */ var _common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(43478);
-/* harmony import */ var _common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(18059);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(30512);
+/* harmony import */ var _common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14087);
+/* harmony import */ var _common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18059);
+/* harmony import */ var _common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(43478);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(81202);
 
 
 const frontMatter = {
 	id: 'monitoring-intro',
-	title: 'MySQL 모니터링',
+	title: 'CUBRID V2 모니터링',
 	description: '와탭 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.',
-	displayed_sidebar: 'mysqlSidebar',
+	displayed_sidebar: 'cubridSidebar',
 	hide_table_of_contents: false,
 	keywords: [
-		'MySQL',
+		'CUBRID',
 		'데이터베이스 모니터링',
 		'데이터베이스',
 		'모니터링',
@@ -399,26 +457,26 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/monitoring-intro",
-  "title": "MySQL 모니터링",
+  "id": "cubrid/monitoring-intro",
+  "title": "CUBRID V2 모니터링",
   "description": "와탭 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.",
-  "source": "@site/docs/mysql/monitoring-intro.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/monitoring-intro",
-  "permalink": "/whatap-docs/mysql/monitoring-intro",
+  "source": "@site/docs/cubrid/monitoring-intro.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/monitoring-intro",
+  "permalink": "/whatap-docs/cubrid/monitoring-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/monitoring-intro.mdx",
+  "editUrl": "undefined/docs/cubrid/monitoring-intro.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "monitoring-intro",
-    "title": "MySQL 모니터링",
+    "title": "CUBRID V2 모니터링",
     "description": "와탭 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.",
-    "displayed_sidebar": "mysqlSidebar",
+    "displayed_sidebar": "cubridSidebar",
     "hide_table_of_contents": false,
     "keywords": [
-      "MySQL",
+      "CUBRID",
       "데이터베이스 모니터링",
       "데이터베이스",
       "모니터링",
@@ -426,10 +484,10 @@ const metadata = {
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "cubridSidebar",
   "next": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/mysql/monitoring-support"
+    "permalink": "/whatap-docs/cubrid/monitoring-support"
   }
 };
 const assets = {
@@ -442,15 +500,16 @@ const assets = {
 
 
 
-const toc = [..._common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "MySQL 모니터링 특장점",
-  "id": "mysql-모니터링-특장점",
+
+const toc = [..._common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+  "value": "CUBRID 모니터링 특장점",
+  "id": "cubrid-모니터링-특장점",
   "level": 2
-}, ..._common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+}, ..._common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
   "value": "데이터베이스 모니터링 V2 새로운 기능",
   "id": "new-feature",
   "level": 2
-}, ..._common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
+}, ..._common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "지원 기능",
   "id": "지원-기능",
   "level": 2
@@ -467,29 +526,26 @@ function _createMdxContent(props) {
     th: "th",
     thead: "thead",
     tr: "tr",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Youtube} = _components;
-  if (!Youtube) _missingMdxReference("Youtube", true);
+  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Youtube, {
-      ko: "hNHz884amts",
-      en: "8SQG7nnDbP4",
-      ja: "fgcTC8A9Ev0"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {
+      product: "CUBRID"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "mysql-모니터링-특장점",
-        children: "MySQL 모니터링 특장점"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+        id: "cubrid-모니터링-특장점",
+        children: "CUBRID 모니터링 특장점"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "new-feature",
         children: "데이터베이스 모니터링 V2 새로운 기능"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
-        product: "MySQL",
-        ver: "1.6.8"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+        product: "CUBRID",
+        ver: "2.1.0"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -507,12 +563,12 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
               children: "카테고리"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
-              children: "기능 구분"
+              children: "데이터베이스"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
               style: {
                 textAlign: "center"
               },
-              children: "MySQL"
+              children: "CUBRID"
             })]
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
@@ -563,8 +619,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -626,8 +682,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -805,7 +861,7 @@ function _createMdxContent(props) {
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -814,9 +870,6 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

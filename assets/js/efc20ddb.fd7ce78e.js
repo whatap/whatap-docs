@@ -706,7 +706,7 @@ function _createMdxContent(props) {
         }), "를 참조하세요."]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,redis,mongodb,altibase",
+      product: "postgresql,mysql,redis,mongodb,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -727,7 +727,7 @@ function _createMdxContent(props) {
             children: "대시보드 기능 개선"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle,altibase",
+          product: "postgresql,mysql,redis,mongodb,oracle,altibase,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
             img: "new-feature-02.png"
           })
@@ -742,12 +742,12 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "인스턴스 모니터링 필터 기능 개선"
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle,altibase",
+          product: "postgresql,mysql,redis,mongodb,oracle,altibase,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
             img: "new-feature-03.png"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          product: "postgresql,mysql,oracle,altibase,altibase",
+          product: "postgresql,mysql,oracle,altibase,altibase,cubrid",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "세션 킬 기능 UI 개선"
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
@@ -779,7 +779,7 @@ function _createMdxContent(props) {
             children: "로그"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle",
+          product: "postgresql,mysql,redis,mongodb,oracle,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
             img: "new-feature-06.png"
           })

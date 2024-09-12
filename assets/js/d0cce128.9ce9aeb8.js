@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84396],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[79762],{
 
 /***/ 43478:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -247,7 +247,7 @@ function _createMdxContent(props) {
         }), "를 참조하세요."]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,redis,mongodb,altibase",
+      product: "postgresql,mysql,redis,mongodb,altibase,cubrid",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -268,7 +268,7 @@ function _createMdxContent(props) {
             children: "대시보드 기능 개선"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle,altibase",
+          product: "postgresql,mysql,redis,mongodb,oracle,altibase,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
             img: "new-feature-02.png"
           })
@@ -283,12 +283,12 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "인스턴스 모니터링 필터 기능 개선"
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle,altibase",
+          product: "postgresql,mysql,redis,mongodb,oracle,altibase,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
             img: "new-feature-03.png"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          product: "postgresql,mysql,oracle,altibase,altibase",
+          product: "postgresql,mysql,oracle,altibase,altibase,cubrid",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "세션 킬 기능 UI 개선"
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
@@ -320,7 +320,7 @@ function _createMdxContent(props) {
             children: "로그"
           })
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-          product: "postgresql,mysql,redis,mongodb,oracle",
+          product: "postgresql,mysql,redis,mongodb,oracle,cubrid",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
             img: "new-feature-06.png"
           })
@@ -362,7 +362,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 40501:
+/***/ 5492:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -384,13 +384,12 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'monitoring-intro',
-	title: 'PostgreSQL 모니터링',
-	description: '와탭 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.',
-	displayed_sidebar: 'postgreSidebar',
+	title: 'Redis 모니터링',
+	description: '와탭 Redis 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.',
+	displayed_sidebar: 'redisSidebar',
 	hide_table_of_contents: false,
 	keywords: [
-		'PostgreSQL',
-		'데이터베이스 모니터링',
+		'Redis',
 		'데이터베이스',
 		'모니터링',
 		'DBX'
@@ -399,37 +398,36 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/monitoring-intro",
-  "title": "PostgreSQL 모니터링",
-  "description": "와탭 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.",
-  "source": "@site/docs/postgresql/monitoring-intro.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/monitoring-intro",
-  "permalink": "/whatap-docs/postgresql/monitoring-intro",
+  "id": "redis/monitoring-intro",
+  "title": "Redis 모니터링",
+  "description": "와탭 Redis 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.",
+  "source": "@site/docs/redis/monitoring-intro.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/monitoring-intro",
+  "permalink": "/whatap-docs/redis/monitoring-intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/monitoring-intro.mdx",
+  "editUrl": "undefined/docs/redis/monitoring-intro.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "monitoring-intro",
-    "title": "PostgreSQL 모니터링",
-    "description": "와탭 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.",
-    "displayed_sidebar": "postgreSidebar",
+    "title": "Redis 모니터링",
+    "description": "와탭 Redis 데이터베이스 모니터링 서비스(DBX)은 Query 기반으로 데이터를 수집하여 성능 모니터링 서비스를 제공합니다.",
+    "displayed_sidebar": "redisSidebar",
     "hide_table_of_contents": false,
     "keywords": [
-      "PostgreSQL",
-      "데이터베이스 모니터링",
+      "Redis",
       "데이터베이스",
       "모니터링",
       "DBX"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "redisSidebar",
   "next": {
     "title": "지원 환경",
-    "permalink": "/whatap-docs/postgresql/monitoring-support"
+    "permalink": "/whatap-docs/redis/monitoring-support"
   }
 };
 const assets = {
@@ -443,8 +441,8 @@ const assets = {
 
 
 const toc = [..._common_items_db_introduction_desc_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "PostgreSQL 모니터링 특장점",
-  "id": "postgresql-모니터링-특장점",
+  "value": "Redis 모니터링 특장점",
+  "id": "redis-모니터링-특장점",
   "level": 2
 }, ..._common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
   "value": "데이터베이스 모니터링 V2 새로운 기능",
@@ -478,8 +476,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "postgresql-모니터링-특장점",
-        children: "PostgreSQL 모니터링 특장점"
+        id: "redis-모니터링-특장점",
+        children: "Redis 모니터링 특장점"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_specification_common_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_specification_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -487,9 +485,9 @@ function _createMdxContent(props) {
         id: "new-feature",
         children: "데이터베이스 모니터링 V2 새로운 기능"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_db_v2_new_feature_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
-        product: "PostgreSQL",
-        ver: "1.6.7"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {})]
+        product: "Redis",
+        ver: "1.7.0"
+      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -511,7 +509,7 @@ function _createMdxContent(props) {
               style: {
                 textAlign: "center"
               },
-              children: "PostgreSQL"
+              children: "Redis"
             })]
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
@@ -545,14 +543,14 @@ function _createMdxContent(props) {
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: "Multi DataBase (tenant)"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               style: {
                 textAlign: "center"
               },
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
-              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), "일부 지표만 multi db stat 가능"]
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "emoji-no",
+                children: "❌"
+              })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
@@ -562,8 +560,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -601,8 +599,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -652,8 +650,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -663,7 +661,10 @@ function _createMdxContent(props) {
               style: {
                 textAlign: "center"
               },
-              children: "지원 예정"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "emoji-no",
+                children: "❌"
+              })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
@@ -673,8 +674,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -699,8 +700,8 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-                class: "emoji-ok",
-                children: "✅"
+                class: "emoji-no",
+                children: "❌"
               })
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
