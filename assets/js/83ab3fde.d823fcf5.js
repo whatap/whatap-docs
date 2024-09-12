@@ -48,10 +48,6 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Kubernetes Agent v1.7.0",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_0"
-  },
   "next": {
     "title": "Kubernetes Agent v1.6.0",
     "permalink": "/whatap-docs/release-notes/k8s/k8s-1_6_0"
