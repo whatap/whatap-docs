@@ -47,7 +47,7 @@ var react = __webpack_require__(96540);
 var Layout = __webpack_require__(38103);
 ;// CONCATENATED MODULE: ./src/pages/renew/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"frontheading":"frontheading_rzmP","homehero":"homehero_IZR1","appcontainer":"appcontainer_AqcP","aa-Autocomplete":"aa-Autocomplete_fHFR","justifycontentcenter":"justifycontentcenter_eHCM","justifycardcontent":"justifycardcontent_aJwH","gettingStart":"gettingStart_iOkq","flexcolumn":"flexcolumn_iXJh","flexContainer":"flexContainer_lnPo","textcenter":"textcenter_kKjR","flexProd":"flexProd_iGTO","document":"document_e86O","textleft":"textleft_I9dL","product":"product_OzUz","type":"type_I67K","alignDocument":"alignDocument_Lx0N","alignCenter":"alignCenter_Dwgg","logo":"logo_HIFU","doculogo":"doculogo_fIUg","logoDocu":"logoDocu_bWKh","desc":"desc_ehOV","title":"title_VoOx","rightarrowcontainer":"rightarrowcontainer_f7eH","rightarrow":"rightarrow_aZnU","downarrow":"downarrow_ZE1C","innercontent":"innercontent_I0dQ","small":"small_UU3X","inline":"inline_kcFA","iconumber":"iconumber_wGmr"});
+/* harmony default export */ const styles_module = ({"frontheading":"frontheading_rzmP","homehero":"homehero_IZR1","appcontainer":"appcontainer_AqcP","aa-Autocomplete":"aa-Autocomplete_fHFR","justifycontentcenter":"justifycontentcenter_eHCM","justifycardcontent":"justifycardcontent_aJwH","gettingStart":"gettingStart_iOkq","flexcolumn":"flexcolumn_iXJh","flexContainer":"flexContainer_lnPo","textcenter":"textcenter_kKjR","flexProd":"flexProd_iGTO","document":"document_e86O","textleft":"textleft_I9dL","product":"product_OzUz","type":"type_I67K","tag":"tag_kLmU","alignDocument":"alignDocument_Lx0N","alignCenter":"alignCenter_Dwgg","logo":"logo_HIFU","doculogo":"doculogo_fIUg","logoDocu":"logoDocu_bWKh","desc":"desc_ehOV","title":"title_VoOx","rightarrowcontainer":"rightarrowcontainer_f7eH","rightarrow":"rightarrow_aZnU","downarrow":"downarrow_ZE1C","innercontent":"innercontent_I0dQ","small":"small_UU3X","inline":"inline_kcFA","iconumber":"iconumber_wGmr"});
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
 var Head = __webpack_require__(3248);
 // EXTERNAL MODULE: ./node_modules/@meilisearch/autocomplete-client/dist/autocomplete-client.umd.js
@@ -936,7 +936,7 @@ function FlexCard({ icons , product , type , url , children  }) {
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                                 className: styles_module.type,
                                 children: /*#__PURE__*/ (0,jsx_runtime.jsx)("code", {
-                                    className: (0,clsx/* default */.A)(`${type}`, 'tag'),
+                                    className: (0,clsx/* default */.A)(`${type}`, styles_module.tag),
                                     children: type
                                 })
                             }),

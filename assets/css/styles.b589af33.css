@@ -5312,7 +5312,7 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   max-height: 65px;
 }
 
-.flexProd_iGTO:hover .product_OzUz .type_I67K {
+.flexProd_iGTO:hover .product_OzUz .type_I67K, .flexProd_iGTO:hover .product_OzUz code.tag_kLmU {
   font-size: .7rem !important;
 }
 
