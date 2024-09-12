@@ -159,7 +159,7 @@ function FlexCard({icons, product, type, url, children}) {
                     </div>
                     <div className={styles.desc}>
                         <div className={styles.title}>{product}</div>
-                        <div className={styles.type}><code className={clsx(`${type}`, 'tag')}>{type}</code></div>
+                        <div className={styles.type}><code className={clsx(`${type}`, styles.tag)}>{type}</code></div>
                         <Description>{children}</Description>
                     </div>
                 </div>
