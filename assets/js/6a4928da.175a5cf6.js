@@ -47,7 +47,7 @@ var react = __webpack_require__(96540);
 var Layout = __webpack_require__(38103);
 ;// CONCATENATED MODULE: ./src/pages/renew/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"frontheading":"frontheading_rzmP","homehero":"homehero_IZR1","appcontainer":"appcontainer_AqcP","aa-Autocomplete":"aa-Autocomplete_fHFR","justifycontentcenter":"justifycontentcenter_eHCM","justifycardcontent":"justifycardcontent_aJwH","flexcolumn":"flexcolumn_iXJh","flexContainer":"flexContainer_lnPo","textcenter":"textcenter_kKjR","flexProd":"flexProd_iGTO","document":"document_e86O","textleft":"textleft_I9dL","product":"product_OzUz","type":"type_I67K","alignCenter":"alignCenter_Dwgg","logo":"logo_HIFU","doculogo":"doculogo_fIUg","logoDocu":"logoDocu_bWKh","desc":"desc_ehOV","title":"title_VoOx","rightarrowcontainer":"rightarrowcontainer_f7eH","rightarrow":"rightarrow_aZnU","innercontent":"innercontent_I0dQ","small":"small_UU3X","inline":"inline_kcFA","iconumber":"iconumber_wGmr"});
+/* harmony default export */ const styles_module = ({"frontheading":"frontheading_rzmP","homehero":"homehero_IZR1","appcontainer":"appcontainer_AqcP","aa-Autocomplete":"aa-Autocomplete_fHFR","justifycontentcenter":"justifycontentcenter_eHCM","justifycardcontent":"justifycardcontent_aJwH","gettingStart":"gettingStart_iOkq","flexcolumn":"flexcolumn_iXJh","flexContainer":"flexContainer_lnPo","textcenter":"textcenter_kKjR","flexProd":"flexProd_iGTO","document":"document_e86O","textleft":"textleft_I9dL","product":"product_OzUz","type":"type_I67K","alignDocument":"alignDocument_Lx0N","alignCenter":"alignCenter_Dwgg","logo":"logo_HIFU","doculogo":"doculogo_fIUg","logoDocu":"logoDocu_bWKh","desc":"desc_ehOV","title":"title_VoOx","rightarrowcontainer":"rightarrowcontainer_f7eH","rightarrow":"rightarrow_aZnU","downarrow":"downarrow_ZE1C","innercontent":"innercontent_I0dQ","small":"small_UU3X","inline":"inline_kcFA","iconumber":"iconumber_wGmr"});
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
 var Head = __webpack_require__(3248);
 // EXTERNAL MODULE: ./node_modules/@meilisearch/autocomplete-client/dist/autocomplete-client.umd.js
@@ -777,18 +777,30 @@ function Step({ children , order  }) {
     });
 }
 function RightArrow() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
         className: styles_module.rightarrowcontainer,
-        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("svg", {
-            className: styles_module.rightarrow,
-            xmlns: "http://www.w3.org/2000/svg",
-            version: "1.1",
-            viewBox: "0 0 100 100",
-            preserveAspectRatio: "none",
-            children: /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                d: "M0,0 L100,50 L0,100"
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("svg", {
+                className: styles_module.rightarrow,
+                xmlns: "http://www.w3.org/2000/svg",
+                version: "1.1",
+                viewBox: "0 0 100 100",
+                preserveAspectRatio: "none",
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                    d: "M0,0 L100,50 L0,100"
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("svg", {
+                className: styles_module.downarrow,
+                xmlns: "http://www.w3.org/2000/svg",
+                version: "1.1",
+                viewBox: "0 0 100 100",
+                preserveAspectRatio: "none",
+                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                    d: "M0 0 L50 100 L100 0"
+                })
             })
-        })
+        ]
     });
 }
 function Description({ children  }) {
@@ -799,7 +811,7 @@ function Description({ children  }) {
 }
 function ThereeSteps() {
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)("section", {
-        className: (0,clsx/* default */.A)('row', styles_module.guide, styles_module.justifycontentcenter),
+        className: (0,clsx/* default */.A)(styles_module.gettingStart, styles_module.guide, styles_module.justifycontentcenter),
         children: [
             /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
                 order: 1,
@@ -826,17 +838,34 @@ function ThereeSteps() {
                         children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                             as: "h5",
                             className: styles_module.inline,
-                            children: "\uD504\uB85C\uC81D\uD2B8 \uC0DD\uC131 \uBC0F \uC5D0\uC774\uC804\uD2B8 \uC124\uCE58"
+                            children: "\uD504\uB85C\uC81D\uD2B8 \uC0DD\uC131"
                         })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                        children: "\uD504\uB85C\uC81D\uD2B8\uB97C \uC0DD\uC131\uD558\uACE0 \uC561\uC138\uC2A4 \uD0A4\uB97C \uBC1C\uAE09 \uBC1B\uC740 \uD6C4 \uBAA8\uB2C8\uD130\uB9C1 \uB300\uC0C1\uC5D0 \uC5D0\uC774\uC804\uD2B8\uB97C \uC124\uCE58\uD558\uC138\uC694."
+                        children: "\uD504\uB85C\uC81D\uD2B8\uB97C \uC0DD\uC131\uD558\uACE0 \uC561\uC138\uC2A4 \uD0A4\uB97C \uBC1C\uAE09 \uBC1B\uC73C\uC138\uC694."
                     })
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)(RightArrow, {}),
             /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
                 order: 3,
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
+                        to: "quick-guide/#install",
+                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
+                            as: "h5",
+                            className: styles_module.inline,
+                            children: "\uC5D0\uC774\uC804\uD2B8 \uC124\uCE58"
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
+                        children: "\uBAA8\uB2C8\uD130\uB9C1 \uB300\uC0C1\uC5D0 \uC5D0\uC774\uC804\uD2B8\uB97C \uC124\uCE58\uD558\uC138\uC694."
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(RightArrow, {}),
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
+                order: 4,
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
                         to: "quick-guide/#dashboard",
@@ -861,7 +890,7 @@ function FlexCard({ icons , product , type , url , children  }) {
             className: styles_module.flexProd,
             children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
                 to: url,
-                className: styles_module.alignCenter,
+                className: styles_module.alignDocument,
                 children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                     className: styles_module.document,
                     children: [

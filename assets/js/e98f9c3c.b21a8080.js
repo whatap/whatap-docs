@@ -130,8 +130,8 @@ const toc = [{
   "id": "활성화-옵션",
   "level": 2
 }, {
-  "value": "서버 구성 정보",
-  "id": "서버-구성-정보",
+  "value": "기본 화면 안내",
+  "id": "기본-화면-안내",
   "level": 2
 }, {
   "value": "필터",
@@ -411,8 +411,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "서버-구성-정보",
-        children: "서버 구성 정보"
+        id: "기본-화면-안내",
+        children: "기본 화면 안내"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "LNK08084",
