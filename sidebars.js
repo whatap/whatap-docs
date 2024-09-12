@@ -2361,10 +2361,7 @@ const sidebars = {
             id: 'mssql/agent-settings'
           },
           items: [
-            'mssql/agent-network',
-            'mssql/agent-naming',
-            'mssql/agent-aws',
-            'mssql/agent-data',
+            'mssql/agent-dbx-settings',
           ],
         },
         'mssql/agent-manage',
@@ -2376,7 +2373,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2411,6 +2408,17 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql/analysis-count-trend',
+                'mssql/analysis-lock-and-deadlock',
+                'mssql/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
               label: '메트릭스',
               collapsible: true,
               collapsed: true,
@@ -2419,7 +2427,7 @@ const sidebars = {
                 id: 'mssql/metrics-intro'
               },
               items: [
-                'mssql/metrics-mssql',
+                'mssql/metrics-data-list',
                 'mssql/metrics-chart',
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
@@ -2427,19 +2435,17 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'mssql/analysis-function',
                 'mssql/stat',
                 'mssql/report-intro',
-                'mssql/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
