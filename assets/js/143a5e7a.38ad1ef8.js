@@ -1044,6 +1044,18 @@ function _import_instance_performance_thread_dump_createMdxContent(props) {
       }), (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["스레드 현황: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "전체 스레드"
+            }), " 개수 및 ", (0,jsx_runtime.jsx)("span", {
+              class: "snormal",
+              children: "RUNNABLE"
+            }), ", ", (0,jsx_runtime.jsx)("span", {
+              class: "loger",
+              children: "WAITING"
+            }), " 상태의 스레드 개수를 목록 상단 현황 요약을 통해 확인할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
             children: [(0,jsx_runtime.jsx)(Cmdname, {
               sid: "thread_dump",
               className: "uitext"
