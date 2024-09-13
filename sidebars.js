@@ -5725,6 +5725,15 @@ const sidebars = {
           ],
         },
         {
+          type: "category",
+          label: '통계',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'browser/pageload-stat'
+          ]
+        },
+        {
           type: 'category',
           label: '메트릭스',
           collapsible: true,
