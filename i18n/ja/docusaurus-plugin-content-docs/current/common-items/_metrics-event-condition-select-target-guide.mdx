@@ -42,19 +42,19 @@
 
 ### 使用可能な演算子の一覧
 
-|    オペレーター       | 使い方                           | 説明                                                                                            |
-| :-------------: | ----------------------------- | --------------------------------------------------------------------------------------------- |
-|     ==          | operand1== operand2           | operand1とoperand2の値が同じであることを確認します。                                                            |
-|     !=          | operand1 != operand2          | operand1とoperand2の値が異なることを確認します。                                                              |
-| <span>\></span> | operand1 > operand2           | operand1の値がoperand2の値より大きいことを確認します。                                                           |
-|    \>=          | operand1 >= operand2          | operand1の値がoperand2の値より大きいことを確認します。                                                           |
-|     \<          | operand1 \< operand2          | operand1の値がoperand2の値より小さいことを確認します。                                                           |
-|    \<=          | operand1 \<= operand2         | operand1の値がoperand2の値より小さいことを確認します。                                                           |
-|    like         | operand1 like operand2        | operand1にoperand2が含まれているかどうかをパターンで検索します。                                                      |
-|     &&          | expression1 && expression2    | expression1とexpression2の両方が`true`であることを確認します。                                                 |
-|    and          | expression1 and expression2   | expression1とexpression2の両方が`true`であることを確認します。<br/>**&&**と同じ役割を実行する演算子です。                      |
-|     ||          | expression1 || expression2    | expression1またはexpression2が`true`であることを確認します。                                                  |
-|     or          | expression1 or expression2    | expression1またはexpression2が`true`であることを確認します。<br/>**||**と同じ役割を実行する演算子です。                       |
+|    オペレーター       | 使い方                             | 説明                                                                                            |
+| :-------------: | ------------------------------- | --------------------------------------------------------------------------------------------- |
+|    \=\=         | operand1\=\= operand2           | operand1とoperand2の値が同じであることを確認します。                                                            |
+|    !\=          | operand1 !\= operand2           | operand1とoperand2の値が異なることを確認します。                                                              |
+| <span>\></span> | operand1 &gt; operand2          | operand1の値がoperand2の値より大きいことを確認します。                                                           |
+|    \>\=         | operand1 \>\= operand2          | operand1の値がoperand2の値より大きいことを確認します。                                                           |
+|     \<          | operand1 \< operand2            | operand1の値がoperand2の値より小さいことを確認します。                                                           |
+|    \<\=         | operand1 \<\= operand2          | operand1の値がoperand2の値より小さいことを確認します。                                                           |
+|    like         | operand1 like operand2          | operand1にoperand2が含まれているかどうかをパターンで検索します。                                                      |
+|    \&\&         | expression1 \&\& expression2    | expression1とexpression2の両方が`true`であることを確認します。                                                 |
+|    and          | expression1 and expression2     | expression1とexpression2の両方が`true`であることを確認します。<br/>**&&**と同じ役割を実行する演算子です。                      |
+|    \|\|         | expression1 \|\| expression2    | expression1またはexpression2が`true`であることを確認します。                                                  |
+|     or          | expression1 or expression2      | expression1またはexpression2が`true`であることを確認します。<br/>**\|\|**と同じ役割を実行する演算子です。                     |
 
 #### likeの使い方
 
@@ -105,8 +105,8 @@
 
 ### 使用可能なメソッド一覧
 
-| メソッド                      | 使い方                                           | 説明                                                                      |
-| ------------------------- | --------------------------------------------- | ----------------------------------------------------------------------- |
+| メソッド                      | 使い方                        | 説明                                                                      |
+| ------------------------- | -------------------------- | ----------------------------------------------------------------------- |
 | [startsWith](#startwith)  | startsWith(param1, param2) | param1をKeyとするValueがparam2で始まる場合は、`true`、反対の場合は、`false`                  |
 | [endsWith](#endswith)     | endsWith(param1, param2)   | param1をKeyとするValueがparam2で終わる場合、`true`、反対の場合は、`false`                   |
 | [isNull](#isnull)         | isNull(param1)             | param1が`null`の場合は、`true`、反対の場合は、`false`                                 |

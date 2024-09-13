@@ -34,17 +34,17 @@
 
 - <Cmdname sid="TTL07367" className="uitext" />：アラート通知後、指定した時間の間は、イベントが発生しません。
 
-- <Cmdname sid="TTL07368" className="uitext" />：イベントが解決されたら、<b>RECOVERED</b>状態のアラートを通知します。
+- <Cmdname sid="CNT08326" className="uitext" />: イベントが解消されたら<b>RECOVERED</b>ステータスの通知を送信します。
 
 :::tip
 
 通知を送信する基準は、次の条件によって異なります。
 
-| <Cmdname sid="TTL07366" className="uitext" />                                                 | <Cmdname sid="TTL07368" className="uitext" /> | 動作                                                       |
+| <Cmdname sid="TTL07366" className="uitext" />                                                 | <Cmdname sid="CNT08326" className="uitext" /> | 動作                                                       |
 | --------------------------------------------------------------------------------------------- | :-------------------------------------------: | -------------------------------------------------------- |
-| <Cmdname sid="ITM07369" className="uitext" />                                                 |                     **On**                    | 設定したイベント条件を満たすか、それが解決されたら通知を送信します。                       |
+| <Cmdname sid="ITM07369" className="uitext" />                                                 |                     **On**                    | 設定したイベント条件を満たすか、解消したら通知を送信します。                           |
 | ^                                                                                             |                    **Off**                    | 設定した条件を満たすたびに通知を送信します。                                   |
-| <Cmdname sid="TTL07366" className="uitext" /> N <Cmdname sid="ITM07370" className="uitext" /> |                     **On**                    | N回以上の条件を満たすか、N回以上のイベントが解決されると通知を送信します。                   |
+| <Cmdname sid="TTL07366" className="uitext" /> N <Cmdname sid="ITM07370" className="uitext" /> |                     **On**                    | N回以上の条件を満たしたり、N回以上イベントが解消されると通知を送信します。                   |
 | ^                                                                                             |                    **Off**                    | N回以上設定したイベント条件を満たすと通知を送信します。 通知を送信した後、回数を初期化して回数を再集計します。 |
 
 :::
@@ -77,7 +77,7 @@
 
 <InDoc product="browser">
 
-特定のページグループでのみ発生するイベントを通知で送信するように設定できます。 <span class="uitext">Page_group</span>項目をクリックし、目的のページグループを選択してください。
+特定のページグループでのみ発生するイベントを通知で送信するように設定できます。 <span class="uitext">Page_group</span>項目をクリックし、目的のページグループを選択します。
 
 <ImgLang img='event-config-v2-target-browser.png' desc='イベント対象の選択' />
 

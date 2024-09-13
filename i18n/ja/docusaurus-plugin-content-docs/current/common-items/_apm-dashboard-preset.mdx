@@ -1,4 +1,4 @@
-## プリセット {#preset}
+## プリセットを設定する{#preset}
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-pro">
 
@@ -8,13 +8,15 @@
 
 :::note
 
-<Cmdname sid="default" className="uitext" />に設定されたプリセットは変更できません。
+- <Cmdname sid="default" className="uitext" />に設定されたプリセットは変更できません。
+
+- <Cmdname sid="edit_project" className="uitext" />権限のあるメンバーのみがプリセットを保存または変更できます。 メンバー権限の詳細については、[次の文書](../project/project-structure#member-auth)を参照してください。
 
 :::
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle">
+<InDoc product="postgresql,mysql,oracle,altibase">
 
 ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。 ウィジェットのサイズを調整し、希望する場所に配置して新しいプリセットを作成できます。
 
@@ -42,7 +44,9 @@
 
 3. 新しいプリセット名を入力してください。
 
-   <ImgLang img='apm-dashboard-preset-save.png' desc='プリセット保存' />
+   <InDoc product="java,python,php,nodejs,dotnet,golang"><ImgLang img='apm-dashboard-preset-save.png' desc='プリセット保存' /></InDoc>
+
+   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase"><ImgLang img='db-dashboard-preset-save.png' desc='プリセット保存' /></InDoc>
 
    エージェント選択履歴を一緒に保存するには、<Cmdname sid="ITM07345" className="uitext" />を選択してください。
 
@@ -56,17 +60,7 @@
 
 - ダッシュボードの変更を保存せずに別のメニューに移動すると、変更は保存されません。
 
-<InDoc product="java,php,python,golang,nodejs,dotnet">
-
 - プリセットはプロジェクト単位で保存され、他のユーザーと共有できます。
-
-</InDoc>
-
-<Xclude product="java,php,python,golang,nodejs,dotnet">
-
-- プリセットはユーザーアカウントごとに保存され、他のユーザーと共有されません。 より良い機能が提供できるように更新していく予定です。
-
-</Xclude>
 
 :::
 
