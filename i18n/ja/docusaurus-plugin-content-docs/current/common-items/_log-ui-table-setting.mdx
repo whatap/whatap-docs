@@ -1,27 +1,36 @@
 - <InDoc pages="log-search,aws-log-search,log-exp,aws-log-exp"><LinkImage img="number-03.png" className="ico" />領域の右側</InDoc><InDoc pages="log-lt,aws-log-lt"><LinkImage img="number-02.png" className="ico" />領域の右側</InDoc> <UI>テーブル設定</UI>メニューは<Cmdname sid="logTail" className="uitext" />, <Cmdname sid="log_search" className="uitext" />, <Cmdname sid="logExplorer" className="uitext" />で使用できます。
-- ![アイコン](/img/ic-setting.svg) <Cmdname sid="table_settings" className="uitext" />ボタンをクリックすると<Cmdname sid="column_settings" className="uitext" />と<Cmdname sid="table_content_setting" className="uitext" />オプションメニューが表示されます。 
+- ![アイコン](/img/ic-setting.svg) <Cmdname sid="table_settings" className="uitext" />ボタンをクリックすると<Cmdname sid="column_settings" className="uitext" />と<Cmdname sid="ITM08349" className="uitext" />オプションメニューが表示されます。 
 
-  <ImgLang img='log-table-contents-options.png' desc='ログテーブル設定'/>
+  ![ログテーブル設定](/img/log-table-contents-options.png)
 
-  1. **カラム設定** 
+1. <Cmdname sid="column_settings" className="uitext" />
 
-  - <Cmdname sid="add_a_column" className="uitext" />：タグを選択して、テーブルにカラムを追加できます。
-  - <Cmdname sid="column_order_setting" className="uitext" />：カラムを追加すると、カラム順序の設定にカラムが追加されます。目的のカラムをドラッグして、カラムの順序を変更します。
+    * <Cmdname sid="add_a_column" className="uitext" />：タグを選択して、テーブルにカラムを追加できます。
 
-  2. **テーブルのコンテンツ設定**
+    * <Cmdname sid="column_order_setting" className="uitext" />：カラムを追加すると、カラム順序の設定にカラムが追加されます。目的のカラムをドラッグして、カラムの順序を変更します。
 
-  <ImgLang img='log-table-contents.png' desc='テーブルのコンテンツ設定'/>
+    :::note 
 
-  - <Cmdname sid="whether_display_content" className="uitext" />
+    <Cmdname sid="add_a_column" className="uitext" />時、***log***カラム選択を解除する場合、<Cmdname sid="ITM08349" className="uitext" />が確認できません。
 
-    - チェックされた項目はテーブルに表示されません。基本的に<Cmdname sid="log" className="uitext" />、<Cmdname sid="tag" className="uitext" />すべてチェックされ、両方の項目が表示されます。
-    - 次のように<Cmdname sid="tag" className="uitext" />を解除する場合、テーブルからログの<Cmdname sid="tag" className="uitext" />は表示されません。
-      <ImgLang img='log-table-contents-remove-tag.png' desc='ログテーブルコンテンツタグ非表示'/>
+    :::
 
-  - <Cmdname sid="tag_management" className="uitext" />
+2. <Cmdname sid="ITM08349" className="uitext" />
 
-    - タグ管理リストにタグを追加すると、追加した順にログのタグが表示されます。タグの順番はドラッグして変更できます。
-    - 追加したタグを無効にすると、無効にしたタグはログのタグに表示されません。 
+    <ImgLang img='log-table-contents.png' desc='テーブルのコンテンツ設定'/>
+
+    - **ログ表示の有無**
+
+      - チェックが解除されたアイテムは、テーブルに表示されません。デフォルトで**_content_**、<Cmdname sid="tag" className="uitext" />すべてチェックされており、両方の項目を表示します。 
+
+      - 次のように<Cmdname sid="tag" className="uitext" />を解除する場合、テーブルからログの<Cmdname sid="tag" className="uitext" />は表示されません。
+        <ImgLang img='log-table-contents-remove-tag.png' desc='ログテーブルコンテンツタグ非表示'/>
+
+    - **タグ管理**
+
+      - <Cmdname sid="tag_management" className="uitext" />一覧にタグを追加すると、追加した順にログのタグが一覧表示されます。タグの順序はドラッグして変更できます。
+
+      - 追加したタグを無効にすると、無効にしたタグはログのタグに表示されません。 
 
 :::note 
 

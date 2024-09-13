@@ -1,4 +1,4 @@
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />
 
 データベースのテーブルスペースの使用状況をモニタリングして管理できるメニューです。このメニューでは、テーブルスペースの全体のサイズと使用量を視覚的に提供し、詳細な使用履歴を確認できます。
 
@@ -6,9 +6,15 @@
 
 - 各テーブルスペースの全体サイズ、使用サイズ、使用比率を詳細に提供します。
 
+<Xclude product="altibase">
+
 - 上位50セグメントのサイズを確認できます。
 
+</Xclude>
+
 テーブルスペースの使用状況をリアルタイムでモニタリングすることで、使用量を確認し、適切な容量管理ができます。使用量の高いテーブルスペースとセグメントを追跡し、容量管理と性能最適化のための措置を取ってください。また、テーブルスペースの過剰使用を事前に感知して対応できます。
+
+<Xclude product="altibase">
 
 ## 使用する前に
 
@@ -33,9 +39,39 @@ segments_min_size=10
 segments_hour=5
 ```
 
+</Xclude>
+
 ## 基本画面ガイド
 
-<ProdImg img='db-stat-table-space.png' desc='Tablespace size' />
+<Xclude product="altibase"><ProdImg img='db-stat-table-space.png' desc='Tablespace size' /></Xclude>
+
+<InDoc product="altibase">
+
+Altibaseモニタリングでは、他のDBMSとは異なり、メモリテーブルスペースを提供します。<Cmdname sid="side_tableSpace" className="uitext" />メニューではディスクとメモリテーブルスペースの使用量と推移を確認できます。
+
+:::tip
+
+- メモリのテーブルスペースは、ディスクよりもはるかに高速なデータアクセスを提供します。メモリテーブルスペースの使用量をモニタリングすることにより、データがメモリに適切にロードされているか、メモリリソースが効率的に使用されているかを確認できます。
+
+- ディスクとメモリテーブルスペースの使用量を同時にモニタリングすれば、それぞれのリソースがどのように使われているかを把握できます。これにより、メモリとディスクリソースのバランスを取り、必要に応じて適切なリソースを調整することで、性能低下を防止できます。
+
+- 使用量の推移を分析すると、メモリやディスクテーブルスペースの増設が必要な時点を予測できます。これにより、リソースの枯渇による性能問題を事前に防止でき、適切な拡張を計画できます。
+
+- メモリテーブルスペースとディスクテーブルスペース間の使用量を比較することにより、特定のワークロードがディスクやメモリに過度に集中しないように、ロード分散を最適化できます。
+
+:::
+
+- ディスク(Disk) テーブルスペース
+
+  <ImgLang img='db-stat-table-space-disk-altibase.png' desc='Tablespace size' />
+
+- メモリ(Memory) テーブルスペース
+
+  <ImgLang img='db-stat-table-space-mem-altibase.png' desc='Tablespace size' />
+
+基本的な使い方は以下の通りです。
+
+</InDoc>
 
 1. <Cmdname sid="time" className="uitext" />で分析する期間を設定してください。
 
@@ -55,13 +91,17 @@ segments_hour=5
 
 <Cmdname sid="table_space" className="uitext" />セクションでは、時間帯ごとにテーブルスペースの全体のサイズと使用量の変化を視覚的に確認できます。
 
-<ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" />
+<InDoc product="oracle,oracle-pro,cubrid"><ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" /></InDoc>
+
+<InDoc product="altibase"><ImgLang img="db-stat-table-space-check-trend-altibase.png" desc="Tablespace size" /></InDoc>
 
 各色は、個々のテーブルスペースを表します。チャートで特定の時間帯のデータを確認するには、マウスをチャートの上にオーバーした状態で移動してください。その時間帯の詳細情報を画面で確認できます。
 
 ## テーブルスペースのサイズ詳細の確認{#table_space_detail}
 
 <Cmdname sid="table_space_detail" className="uitext" />セクションでは、各テーブルスペースの詳細を提供します。
+
+<InDoc product="oracle,oracle-pro,cubrid">
 
 <ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" />
 
@@ -74,6 +114,48 @@ segments_hour=5
 - <Cmdname sid="table_space_usage" className="uitext" />: 全体のサイズに対する使用比率です。
 
 - <Cmdname sid="table_space_changed_amount" className="uitext" />: 最初に照会した時間に対する現在の時間の使用量の変化です。
+
+</InDoc>
+
+<InDoc product="altibase">
+
+<ImgLang img="db-stat-table-space-size-details-altibase.png" desc="Tablespace size" />
+
+最初に照会した時間と現在の時間を比較して、各テーブルスペースの使用量の変化を確認できます。テーブルスペースの詳細を確認するには、テーブルスペース名の横にある![矢印アイコン](/img/ic-caret-right.svg) ボタンを選択します。Altibaseで提供するテーブルスペースおよびデータファイルサイズ情報は`MAX`、`ALLOC`、`CURR`、`USED` など様々な値を含みます。画面に表示された値は、これらのアイテムに基づいて構成されました。
+
+### ![](/img/number-01.png) TABLESPACE TYPE
+
+DISK、MEMORY、TEMP、UNDOなど`V$TABLESPACES.TYPE`ごとにテーブルスペースのサイズを確認できます。
+
+- <UI>TOTAL</UI>: テーブルスペースの`TOTAL`サイズの合計です。
+
+- <UI>USED</UI>: テーブルスペースの`USED`サイズの合計です。
+
+- <UI>USAGE</UI>: (`USED` / `TOTAL`) 🞨 100で計算された使用率です。
+
+### ![](/img/number-02.png) TABLESPACE
+
+1つのテーブルスペースは、複数のデータファイルで構成されます。
+
+- <UI>TOTAL</UI>: データファイルの`TOTAL`サイズ(`V$DATAFILES.CURRSIZE` 🞨 `PAGESIZE`)の合計です。
+
+- <UI>USED</UI>: `X$SEGMENT.TOTAL_USED_SIZE`に基づいて計算された使用済みのサイズです。
+
+- <UI>USAGE</UI>: (`USED` / `TOTAL` ) 🞨 100で計算された使用率です。
+
+### ![](/img/number-03.png) DATAFILE
+
+<UI>TOTAL</UI>: データファイルの`TOTAL`サイズ(`V$DATAFILES.CURRSIZE` 🞨 `PAGESIZE`)の合計です。
+
+:::note
+
+Altibaseでは、データファイル単位の`USED`と`USAGE`情報を提供しません。
+
+:::
+
+</InDoc>
+
+<Xclude product="altibase">
 
 ## セグメントサイズの確認{#TTL08164}
 
@@ -94,3 +176,5 @@ segments_hour=5
 - <Cmdname sid="TTL08177" className="uitext" />: 該当する場合は、セグメントのパーティション名です。
 
 - <Cmdname sid="table_space_size" className="uitext" />: セグメントのサイズです。
+
+</Xclude>

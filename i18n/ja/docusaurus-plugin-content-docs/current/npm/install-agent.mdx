@@ -19,7 +19,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 ## Linux環境にインストールする
 
-**_インストール案内_**セクションで**_Linux_**タブを選択し、画面の案内に従ってエージェントのインストールを進めてください。
+**_インストール案内_**セクションで**_Linux_**タブを選択し、画面の案内に従ってエージェントのインストールを進めます。
 
 ### エージェントダウンロード
 
@@ -91,7 +91,7 @@ Installation complete!
 
 ## Kubernetes環境に設置する
 
-**_インストール案内_**セクションで**_Kubernetes_**タブを選択し、画面の案内に従ってエージェントのインストールを進めてください。
+**_インストール案内_**セクションで**_Kubernetes_**タブを選択し、画面の案内に従ってエージェントのインストールを進めます。
 
 :::note
 
@@ -101,7 +101,7 @@ AWS EKS環境でリソース情報を収集するには、[次の文書](set-aws
 
 ### エージェント生成
 
-1. エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードしてください。
+1. エージェントを生成するために<Cmdname sid="download" className="uitext" />ボタンを選択してYAMLファイルをダウンロードします。
 
 2. ダウンロードしたYAMLファイルをマスターNodeにアップロードしてください。
 
@@ -111,7 +111,7 @@ AWS EKS環境でリソース情報を収集するには、[次の文書](set-aws
    kubectl apply -f whatap_npmd.yaml
    ```
 
-4. 次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認してください。
+4. 次のコマンドを実行してエージェントの動作状態(**STATUS**)が**RUNNING**状態であるかを確認します。
 
    ```bash
    kubectl get pod -n whatap-npm-ns

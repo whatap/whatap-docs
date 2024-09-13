@@ -1,8 +1,8 @@
-## 3rd partyプラグイン通知を追加する
+## 3rd partyプラグイン通知を追加する {#add3rdparty}
 
 Slack、Telegram、Teams、Jandi、Webhookなどの外部アプリケーションを通じてアラート通知を受信できます。
 
-1. <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューで<Cmdname sid="3rd_party_plugin" className="uitext" />セクションの<Cmdname sid="adding" className="uitext" />ボタンを選択してください。
+1. <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューで<Cmdname sid="3rd_party_plugin" className="uitext" />セクションの<Cmdname sid="adding" className="uitext" />ボタンを選択します。
 
 2. 目的のサービスを選択してください。
 
@@ -83,6 +83,54 @@ WhaTap Labsのサポート範囲に含まれていない社内メッセンジャ
    <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-teams.png" className="width-600" desc="登録" />
 
 6. <Cmdname sid="BTN06673" className="uitext" />ボタンを選択します。
+
+</details>
+
+<details>
+
+<summary>Teams Workflows</summary>
+
+ワークフローを使用するには、**Microsoft Teams**にアクセスできるアカウントと、ビジネスプランのサブスクリプションが必要です。
+
+1. **チーム**メニューで詳細(...) ボタンを選択した後、**チャンネル追加**をクリックします。
+
+   <ImgLang img="3rdparty/teams_workflows_step_01.png" desc="Teams Workflows" />
+
+2. チャンネル名と説明を入力し、チャンネルタイプを**標準**を選択します。
+
+   <ImgLang img="3rdparty/teams_workflows_step_02.png" desc="Teams Workflows" />
+
+   :::note
+
+   チャンネルタイプを**共有**で選択すると、ワークフローを使用できず、**非公開**を選択すると、ワークフローを追加できますが、通知を受信できません。
+
+   :::
+
+3. 生成したチャンネルで詳細を見る(...) ボタンを選択した後、**ワークフロー**をクリックします。
+
+   <ImgLang img="3rdparty/teams_workflows_step_03.png" desc="Teams Workflows" />
+
+4. **ワークフロー**ダイアログボックスの**ワークフロー**の一覧で**ウェブフックのリクエストが受信されたら、チャンネルに掲示**を選択した後、**追加ワークフロー**をクリックします。
+
+   <ImgLang img="3rdparty/teams_workflows_step_04.png" desc="Teams Workflows" />
+
+5. 名前と接続状態を確認した後、**次**ボタンをクリックします。
+
+   <ImgLang img="3rdparty/teams_workflows_step_05.png" desc="Teams Workflows" />
+
+6. 詳細情報をご確認の上、**ワークフロー追加**ボタンをクリックします。
+
+   <ImgLang img="3rdparty/teams_workflows_step_06.png" desc="Teams Workflows" />
+
+7. ワークフローの追加を完了しました。**生成されたアドレス**をコピーします。
+
+   <ImgLang img="3rdparty/teams_workflows_step_07.png" desc="Teams Workflows" />
+
+8. WhaTapモニタリングサービスの<Cmdname sid="TTL06656" className="uitext" />画面に戻って<UI>Channel Name</UI>と<UI>Webhook URL</UI>項目を入力してください。
+
+   <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-teams.png" className="width-600" desc="登録" />
+
+9. <Cmdname sid="BTN06673" className="uitext" />ボタンを選択します。
 
 </details>
 
@@ -180,7 +228,7 @@ WhaTap Labsのサポート範囲に含まれていない社内メッセンジャ
 
 :::note
 
-- イベント状態(`status`)は`on`, `off`, `disabled`, `acknowledge`のいずれかに区分され、サーバーモニタリングの状態情報(on/off)を持ちます。
+- イベント状態(`status`)はイベント発生(`on`)、イベントの解消(`off`)で区分できます。
 
 - `level`は`None`, `Info`, `Warning`, `Critical`のいずれかに分類されます。
 
@@ -217,5 +265,47 @@ WhaTap Labsのサポート範囲に含まれていない社内メッセンジャ
    <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-opsgenie-options.png" className="width-600" desc="登録" />
 
 7. <Cmdname sid="BTN06673" className="uitext" />ボタンを選択します。
+
+</details>
+
+<details>
+
+<summary>PagerDuty</summary>
+
+1. [PagerDuty](https://www.pagerduty.com/)アカウントに登録してログインしたことを確認します。
+
+2. PagerDutyで**Services** &gt; **Service Directory**メニューに入って**New Service**ボタンを選択します。
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_01.jpg)
+
+3. Service情報を入力の上、**Next**ボタンを選択します。
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_02.jpg)
+
+4. Escalation Policyを設定して**Next**ボタンを選択します。
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_03.jpg)
+
+5. **Alert Grouping**と**Transient Alerts**項目を設定して**Next**ボタンを選択します。
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_04.jpg)
+
+6. **Integrations**で**Event API V2**を選択して**Create Service**ボタンをクリックします。
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_05.jpg)
+
+7. 生成したService画面で、**Integration Name**と**Integration Key**値をコピーします。
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_06.jpg)
+
+8. WhaTapモニタリングサービスの<Cmdname sid="TTL06656" className="uitext" />画面に戻って<UI>Integration Name</UI>と<UI>Integration Key</UI>項目を入力します。
+
+   <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-pagerduty-options.png" className="width-600" desc="Register" />
+
+:::note
+
+メッセージを受信できなかったり、プラグインが登録されていない場合は、**Integration Name**または**Integration Key**値が正しいか確認します。
+
+:::
 
 </details>
