@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[9666],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60992],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -664,7 +664,9 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["다음과 같이 입력 창 아래 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "가이드 UI"
-        }), "를 제공합니다."]
+        }), "를 제공합니다. 입력 창 또는 필터 태그에 마우스 커서가 있을 때 ESC 키를 통해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "가이드 UI"
+        }), "를 닫을 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-ui1.png",
         desc: "로그 필터"
@@ -736,17 +738,29 @@ function _createMdxContent(props) {
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["필터 태그가 2줄 이상 길어지는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "아이콘",
-            src: (__webpack_require__(52389)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "접기"
-            })
-          }), " 아이콘을 선택해 접어둘 수 있습니다."]
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["필터 태그가 2줄 이상 길어지는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "아이콘",
+                src: (__webpack_require__(52389)/* ["default"] */ .A) + "",
+                width: "24",
+                height: "24"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "접기"
+                })
+              }), " 아이콘을 선택해 접어둘 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "필터 태그 입력 후 입력 창에서 Shift와 Tab 키를 동시에 사용하여 이전 필터 태그로 이동할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "필터 태그 입력 후 입력 창에서 Tab 키를 통해 다음 필터 태그로 이동할 수 있습니다."
+            }), "\n"]
+          }), "\n"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -757,7 +771,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "입력 창에 텍스트를 입력하고 키보드의 Enter, Tab키를 통해 추가할 수 있습니다."
+            children: "입력 창에 텍스트를 입력하고 키보드의 Enter 키 또는 Tab 키를 통해 추가할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2215,7 +2229,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 30056:
+/***/ 73341:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2239,23 +2253,23 @@ const frontMatter = {
 	keywords: [
 		'로그 모니터링',
 		'라이브 테일',
-		'UI',
-		'Redis'
+		'UI'
 	],
+	toc_max_heading_level: 3,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/log-lt",
+  "id": "log/log-lt",
   "title": "라이브 테일",
   "description": "로그 모니터링 라이브 테일을 안내합니다.",
-  "source": "@site/docs/redis/log-lt.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/log-lt",
-  "permalink": "/whatap-docs/redis/log-lt",
+  "source": "@site/docs/log/log-lt.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-lt",
+  "permalink": "/whatap-docs/log/log-lt",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/log-lt.mdx",
+  "editUrl": "undefined/docs/log/log-lt.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2265,19 +2279,19 @@ const metadata = {
     "keywords": [
       "로그 모니터링",
       "라이브 테일",
-      "UI",
-      "Redis"
+      "UI"
     ],
+    "toc_max_heading_level": 3,
     "isTranslationMissing": false
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "logSidebar",
   "previous": {
-    "title": "적용하기",
-    "permalink": "/whatap-docs/redis/log-db"
+    "title": "주요 메뉴 알아보기",
+    "permalink": "/whatap-docs/log/learn-main-menu"
   },
   "next": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/redis/log-exp"
+    "permalink": "/whatap-docs/log/log-exp"
   }
 };
 const assets = {

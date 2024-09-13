@@ -1,100 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86281],{
-
-/***/ 31940:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2522);
-
-
-const frontMatter = {
-	id: 'log-search',
-	title: '로그 검색',
-	description: '로그 모니터링의 로그 검색 메뉴를 안내합니다.',
-	keywords: [
-		'로그 모니터링',
-		'로그',
-		'로그 검색',
-		'UI',
-		'Altibase'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase/log-search",
-  "title": "로그 검색",
-  "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-  "source": "@site/docs/altibase/log-search.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/log-search",
-  "permalink": "/whatap-docs/altibase/log-search",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase/log-search.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-search",
-    "title": "로그 검색",
-    "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-    "keywords": [
-      "로그 모니터링",
-      "로그",
-      "로그 검색",
-      "UI",
-      "Altibase"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "altibaseSidebar",
-  "previous": {
-    "title": "로그 트렌드",
-    "permalink": "/whatap-docs/altibase/log-exp"
-  },
-  "next": {
-    "title": "로그 설정",
-    "permalink": "/whatap-docs/altibase/log-setting"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61769],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -914,7 +819,9 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["다음과 같이 입력 창 아래 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "가이드 UI"
-        }), "를 제공합니다."]
+        }), "를 제공합니다. 입력 창 또는 필터 태그에 마우스 커서가 있을 때 ESC 키를 통해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "가이드 UI"
+        }), "를 닫을 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-ui1.png",
         desc: "로그 필터"
@@ -986,17 +893,29 @@ function _createMdxContent(props) {
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["필터 태그가 2줄 이상 길어지는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "아이콘",
-            src: (__webpack_require__(52389)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "접기"
-            })
-          }), " 아이콘을 선택해 접어둘 수 있습니다."]
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["필터 태그가 2줄 이상 길어지는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "아이콘",
+                src: (__webpack_require__(52389)/* ["default"] */ .A) + "",
+                width: "24",
+                height: "24"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "접기"
+                })
+              }), " 아이콘을 선택해 접어둘 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "필터 태그 입력 후 입력 창에서 Shift와 Tab 키를 동시에 사용하여 이전 필터 태그로 이동할 수 있습니다."
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "필터 태그 입력 후 입력 창에서 Tab 키를 통해 다음 필터 태그로 이동할 수 있습니다."
+            }), "\n"]
+          }), "\n"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1007,7 +926,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "입력 창에 텍스트를 입력하고 키보드의 Enter, Tab키를 통해 추가할 수 있습니다."
+            children: "입력 창에 텍스트를 입력하고 키보드의 Enter 키 또는 Tab 키를 통해 추가할 수 있습니다."
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2608,6 +2527,101 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 45553:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2522);
+
+
+const frontMatter = {
+	id: 'log-search',
+	title: '로그 검색',
+	description: '로그 모니터링의 로그 검색 메뉴를 안내합니다.',
+	keywords: [
+		'로그 모니터링',
+		'로그',
+		'로그 검색',
+		'UI',
+		'MySQL'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "mysql/log-search",
+  "title": "로그 검색",
+  "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
+  "source": "@site/docs/mysql/log-search.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/log-search",
+  "permalink": "/whatap-docs/mysql/log-search",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/mysql/log-search.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-search",
+    "title": "로그 검색",
+    "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
+    "keywords": [
+      "로그 모니터링",
+      "로그",
+      "로그 검색",
+      "UI",
+      "MySQL"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "mysqlSidebar",
+  "previous": {
+    "title": "로그 트렌드",
+    "permalink": "/whatap-docs/mysql/log-exp"
+  },
+  "next": {
+    "title": "로그 설정",
+    "permalink": "/whatap-docs/mysql/log-setting"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
