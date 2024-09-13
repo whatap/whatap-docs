@@ -106,16 +106,16 @@ const toc = [{
   "id": "create-kubernetes-agent",
   "level": 3
 }, {
+  "value": "Yaml 파일 기준 설치",
+  "id": "yaml-파일-기준-설치",
+  "level": 4
+}, {
   "value": "Helm 차트 기준 설치",
   "id": "helm-차트-기준-설치",
   "level": 4
 }, {
   "value": "<em>values.yaml</em> 주요 설정 항목",
   "id": "valuesyaml-주요-설정-항목",
-  "level": 4
-}, {
-  "value": "Yaml 파일 기준 설치",
-  "id": "yaml-파일-기준-설치",
   "level": 4
 }, {
   "value": "에이전트 설치 확인",
@@ -185,25 +185,37 @@ function _createMdxContent(props) {
             children: "설치 방식 선택"
           })
         }), " 탭을 선택하세요. 와탭 쿠버네티스 에이전트가 지원하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Helm"
-        }), " 차트와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "Yaml"
-        }), " 설치 방식 중 원하는 설치 방식을 선택 후 사용자의 쿠버네티스 환경에 따라 알맞은 항목을 선택하세요."]
+        }), " 파일과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Helm"
+        }), " 차트 설치 방식 중 원하는 설치 방식을 선택 후 사용자의 쿠버네티스 환경에 따라 알맞은 항목을 선택하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-install-master-node-method.png",
         desc: "설치 방식 선택"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["와탭 쿠버네티스 에이전트 이미지 버전을 권장하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Stable"
+              })
+            }), " 버전과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Preview"
+              })
+            }), " 버전 중 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "YAML"
+              })
+            }), " 파일과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "Helm"
               })
-            }), " 차트와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Yaml"
-              })
-            }), " 중 원하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            }), " 차트 설치 방식 중 중 원하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "설치 방식"
             }), "을 선택하세요."]
           }), "\n"]
@@ -412,12 +424,48 @@ function _createMdxContent(props) {
         children: "쿠버네티스 에이전트 생성"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["와탭 쿠버네티스 에이전트 설치 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Helm"
-        }), " 차트 기준 설치 방식 안내와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "Yaml"
-        }), " 파일 기준 설치 방식 안내를 다음과 같이 제공합니다."]
+        }), " 파일 기준 설치 방식 안내와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "Helm"
+        }), " 차트 기준 설치 방식 안내를 다음과 같이 제공합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_Tabs__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+          value: "yaml",
+          label: "Yaml",
+          default: true,
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+            id: "yaml-파일-기준-설치",
+            children: "Yaml 파일 기준 설치"
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "설치 방식 선택"
+              })
+            }), " 탭에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "YAML"
+              })
+            }), " 파일 설치 방식을 선택한 경우 에이전트를 생성하기 위해 다음 명령어를 실행하세요."]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "kubectl apply -f whatap_kube_agent.yaml\n"
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "마스터 에이전트가 사용하는 자원량"
+              }), "은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "사용자 환경의 노드 수"
+              }), "에 어느 정도 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "비례"
+              }), "합니다. 즉 클러스터 내에 노드 수가 많을 경우 기본값으로 설정된 메모리 Limit(350MB) 이상의 자원을 사용해 OOM(Out Of Memory)이 발생할 수 있습니다. 마스터 에이전트에 할당된 메모리 Limit 수치는 에이전트 설치 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "YAML"
+              }), " 파일을 통해 변경할 수 있습니다."]
+            })
+          })]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
           value: "helm",
           label: "Helm Chart",
           default: true,
@@ -1034,42 +1082,6 @@ function _createMdxContent(props) {
                 children: "다음 문서"
               }), "를 참조하세요."]
             })]
-          })]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
-          value: "yaml",
-          label: "Yaml",
-          default: true,
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-            id: "yaml-파일-기준-설치",
-            children: "Yaml 파일 기준 설치"
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "설치 방식 선택"
-              })
-            }), " 탭에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Yaml"
-              })
-            }), " 파일 설치 방식을 선택한 경우 에이전트를 생성하기 위해 다음 명령어를 실행하세요."]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              children: "kubectl apply -f whatap_kube_agent.yaml\n"
-            })
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-            type: "note",
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "마스터 에이전트가 사용하는 자원량"
-              }), "은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "사용자 환경의 노드 수"
-              }), "에 어느 정도 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "비례"
-              }), "합니다. 즉 클러스터 내에 노드 수가 많을 경우 기본값으로 설정된 메모리 Limit(350MB) 이상의 자원을 사용해 OOM(Out Of Memory)이 발생할 수 있습니다. 마스터 에이전트에 할당된 메모리 Limit 수치는 에이전트 설치 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "YAML"
-              }), " 파일을 통해 변경할 수 있습니다."]
-            })
           })]
         })]
       })]
