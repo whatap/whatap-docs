@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86116],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48336],{
 
-/***/ 8313:
+/***/ 61067:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,43 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'server-2_5_5',
-	title: 'Server Agent v2.5.5',
+	id: 'server-2_5_7',
+	title: 'Server Agent v2.5.7',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/server/server-2_5_4',
+	pagination_next: 'release-notes/server/server-2_5_5',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/server/server-2_5_5",
-  "title": "Server Agent v2.5.5",
-  "description": "2024년 03월 13일",
-  "source": "@site/docs/release-notes/server/server-2.5.5.mdx",
+  "id": "release-notes/server/server-2_5_7",
+  "title": "Server Agent v2.5.7",
+  "description": "2024년 05월 14일",
+  "source": "@site/docs/release-notes/server/server-2.5.7.mdx",
   "sourceDirName": "release-notes/server",
-  "slug": "/release-notes/server/server-2_5_5",
-  "permalink": "/whatap-docs/release-notes/server/server-2_5_5",
+  "slug": "/release-notes/server/server-2_5_7",
+  "permalink": "/whatap-docs/release-notes/server/server-2_5_7",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/server/server-2.5.5.mdx",
+  "editUrl": "undefined/docs/release-notes/server/server-2.5.7.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "server-2_5_5",
-    "title": "Server Agent v2.5.5",
+    "id": "server-2_5_7",
+    "title": "Server Agent v2.5.7",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/server/server-2_5_4",
+    "pagination_next": "release-notes/server/server-2_5_5",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Server Agent v2.5.7",
-    "permalink": "/whatap-docs/release-notes/server/server-2_5_7"
-  },
   "next": {
-    "title": "Server Agent v2.5.4",
-    "permalink": "/whatap-docs/release-notes/server/server-2_5_4"
+    "title": "Server Agent v2.5.5",
+    "permalink": "/whatap-docs/release-notes/server/server-2_5_5"
   }
 };
 const assets = {
@@ -68,6 +64,7 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     strong: "strong",
@@ -77,17 +74,42 @@ function _createMdxContent(props) {
     th: "th",
     thead: "thead",
     tr: "tr",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 03월 13일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Changed"
-      }), " Windows 환경에서 와탭 서버 에이전트의 프로세스 간 통신 모드에 SOCKET 모드 추가"]
+      children: "2024년 05월 14일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            children: "zpool iostat"
+          }), " 수집 기능 추가"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Feature"
+          }), " 임의의 지정된 프로세스의 pid 별 상세 수집 기능 추가"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " NFS hang 발생 시 데이터 수집 중단 문제 개선"]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            children: "Changed"
+          }), " ntpq 오류 발생 시 로그 출력 개선"]
+        }), "\n"]
+      }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "info",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -148,7 +170,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-5.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/6/x86_64/whatap-infra-2.5-7.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -184,7 +206,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-5.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/7/x86_64/whatap-infra-2.5-7.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -199,7 +221,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-5.aarch64.rpm",
+                href: "https://repo.whatap.io/centos/7/aarch64/whatap-infra-2.5-7.aarch64.rpm",
                 children: "다운로드"
               })
             })]
@@ -220,7 +242,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-5.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/8/x86_64/whatap-infra-2.5-7.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -235,7 +257,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-5.aarch64.rpm",
+                href: "https://repo.whatap.io/centos/8/aarch64/whatap-infra-2.5-7.aarch64.rpm",
                 children: "다운로드"
               })
             })]
@@ -256,7 +278,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-5.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/9/x86_64/whatap-infra-2.5-7.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -271,7 +293,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-5.aarch64.rpm",
+                href: "https://repo.whatap.io/centos/9/aarch64/whatap-infra-2.5-7.aarch64.rpm",
                 children: "다운로드"
               })
             })]
@@ -292,7 +314,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-5.x86_64.rpm",
+                href: "https://repo.whatap.io/centos/latest/x86_64/whatap-infra-2.5-7.x86_64.rpm",
                 children: "다운로드"
               })
             })]
@@ -307,7 +329,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-5.aarch64.rpm",
+                href: "https://repo.whatap.io/centos/latest/aarch64/whatap-infra-2.5-7.aarch64.rpm",
                 children: "다운로드"
               })
             })]
@@ -337,7 +359,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.5_amd64.deb",
+                href: "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.7_amd64.deb",
                 children: "다운로드"
               })
             })]
@@ -352,7 +374,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.5_arm64.deb",
+                href: "https://repo.whatap.io/debian/unstable/whatap-infra_2.5.7_arm64.deb",
                 children: "다운로드"
               })
             })]
@@ -433,7 +455,7 @@ function _createMdxContent(props) {
                 textAlign: "center"
               },
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/sunos/11/whatap-infra.1.21.SPARC.pkg.tar.gz",
+                href: "https://repo.whatap.io/sunos/11/whatap-infra.1.2.7.SPARC.pkg.tar.gz",
                 children: "다운로드"
               })
             })]
