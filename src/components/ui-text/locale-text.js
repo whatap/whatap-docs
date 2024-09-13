@@ -61,6 +61,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
         } else {
             oText = whatapLocale[sid][`${currentLocale}`];
         }
+        if (sid == "TTL08288") {
+            oText = whatapLocale[sid][`${currentLocale}`].replace('{n}', replace);
+        }
         if (sid == "BTN07717") {
             oText = whatapLocale[sid][`${currentLocale}`].replace('{days}', days);
         }
