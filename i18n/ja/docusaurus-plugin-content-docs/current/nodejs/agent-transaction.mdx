@@ -151,7 +151,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **ignore_http_method** <span class='type'>String</span>
 
-  既定値 `PATCH,OPTIONS,HEAD,TRACE`
+  既定値 `PATCH,OPTIONS,HEAD,TRACE`
 
   設定したHTTPメソッド(Method)で要求されたトランザクション情報は収集しません。複数設定するには、コンマ(,)を区切り文字として利用してください。
 
@@ -199,7 +199,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **transaction_status_error_enable** <span class='type'>Boolean</span>
 
-  既定値 `true`
+  既定値 `true`
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
@@ -281,14 +281,14 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 :::
 
-- **trace_sampling_enabled** <span class='type'>Boolean</span>
+- **trace_sampling_enabled** <span class='type'>Boolean</span>
 
-  既定値 `true`
+  既定値 `true`
 
   トレースデータサンプリングの収集有無を設定できます。
 
 - **trace_sampling_tps** <span class='type'>Number</span>
 
-  既定値 `1000`
+  既定値 `1000`
 
   トレースデータのサンプリング数を設定できます。設定したサンプリング数を超えるデータは送信せず、1秒ごとに初期化します。
