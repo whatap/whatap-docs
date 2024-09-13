@@ -2353,7 +2353,7 @@
 </ul></div></div></details>
 <details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q">
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1618-2024년-01월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_18">DBX v1.6.18</a></code> <code class="changelog-date">2024년 01월 25일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v1618-2024%EB%85%84-01%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1618-2024년-01월-25일" title="Direct link to dbx-v1618-2024년-01월-25일">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통">공통​<a href="https://docs.whatap.io/en/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="Direct link to 공통​" title="Direct link to 공통​">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통">공통​<a href="https://docs.whatap.io/en/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="Direct link to 공통�​" title="Direct link to 공통​">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
@@ -2371,7 +2371,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 테이블 레이아웃 실시간 조회 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024��년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1630-2024년-02월-29일" title="Direct link to dbx-v1630-2024년-02월-29일">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v1630-2024년-02월-29일" title="Direct link to dbx-v1630-2024년-02월-29일">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
@@ -2385,7 +2385,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.bat</em> 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024�년-03월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024년 03월 25일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v170-2024%EB%85%84-03%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v170-2024년-03월-25일" title="Direct link to dbx-v170-2024년-03월-25일">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024년-03월-25일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024년 03월 25일</code><a href="https://docs.whatap.io/en/blog/2024-1q-summary#dbx-v170-2024%EB%85%84-03%EC%9B%94-25%EC%9D%BC" class="hash-link" aria-label="Direct link to dbx-v170-2024년-03월-25일" title="Direct link to dbx-v170-2024년-03월-25일">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/en/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="Direct link to MongoDB​" title="Direct link to MongoDB​">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> MongoDB <code class="my">V2</code> 추가</li>

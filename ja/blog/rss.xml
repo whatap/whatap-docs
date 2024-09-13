@@ -2009,7 +2009,7 @@
 <li>
 <p><code class="Feature">Feature</code> 에이전트 설정 옵션 추가</p>
 </li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#go" class="hash-link" aria-label="goへの直接リンク" title="goへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v030-2024년-01월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/golang/golang-0_3_0">Go Agent v0.3.0</a></code> <code class="changelog-date">2024년 01월 10일</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#go-agent-v030-2024%EB%85%84-01%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="go-agent-v030-2024년-01월-10일への直接リンク" title="go-agent-v030-2024년-01월-10일への直接リンク">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#go" class="hash-link" aria-label="goへの直接リンク" title="goへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v030-2024년-01월-10일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/golang/golang-0_3_0">Go Agent v0.3.0</a></code> <code class="changelog-date">2024년 01월 10일</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#go-agent-v030-2024%EB%85%84-01%EC%9B%94-10%EC%9D%BC" class="hash-link" aria-label="go-agent-v030-2024년-01월-10일��への直接リンク" title="go-agent-v030-2024년-01월-10일への直接リンク">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 멀티 트랜잭션 추적에서 Trace context(W3C) 지원</li>
 </ul></div></div></details>
@@ -2480,7 +2480,7 @@
 <p>와탭 2024년 1분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 개편된 <strong>로그 검색 필터 기능</strong>을 소개합니다.</p>
 <p><span class="uitext">ログ検索</span> 및 <span class="uitext">ログTail</span> 메뉴 내 <strong>로그 검색 필터 기능</strong>이 개편되었습니다. 검색 값 입력 시 안내 가이드 UI를 통해 지원하는 검색 문법을 확인할 수 있고, 키보드 입력으로 태그를 생성 및 수정하고 연산자를 클릭해 수정할 수 있는 기능이 추가되었습니다.</p>
 <p>또한 에이전트 옵션이 설정된 경우 로그 레벨(<span class="logwr">WARN</span>, <span class="loger">ERROR</span>, <span class="logft">FATAL</span>)을 수집해 로그 목록 왼쪽에서 해당 기준 색상을 표시하는 기능이 추가되었습니다.</p>
-<p><img decoding="async" loading="lazy" alt="로그 에이전트 옵션 cl분기 예시 " src="https://docs.whatap.io/ja/assets/images/log-agent-option-level-2ef1693a2ebe164852014ef80fb11d66.png" width="1200" height="224" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="로그 에이전�트 옵션 cl분기 예시 " src="https://docs.whatap.io/ja/assets/images/log-agent-option-level-2ef1693a2ebe164852014ef80fb11d66.png" width="1200" height="224" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Log</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -3062,7 +3062,7 @@
 </li>
 </ul>
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경�고-알림">경고 알림​<a href="https://docs.whatap.io/ja/blog/2023-3q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​への直接リンク" title="경고 알림​への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="경고-알림">경고 알림​<a href="https://docs.whatap.io/ja/blog/2023-3q-summary#%EA%B2%BD%EA%B3%A0-%EC%95%8C%EB%A6%BC" class="hash-link" aria-label="경고 알림​への直接リンク" title="경고 알림​への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">通知設定</span> &gt; <span class="uitext">ユーザー別アラート受信設定</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>

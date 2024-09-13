@@ -1266,7 +1266,7 @@
 <p><code class="Changed">Changed</code> <span class="uitext">메트릭스 이상 탐지</span> 메뉴의 상세 데이터 조회 및 표시 기준 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_6_x"><code class="changelog-service">Service 2.6.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="flex-보드--통합-flex-보드">Flex 보드 / 통합 Flex 보드​<a href="https://docs.whatap.io/blog/2024-2q-summary#flex-%EB%B3%B4%EB%93%9C--%ED%86%B5%ED%95%A9-flex-%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Flex 보드 / 통합 Flex ��보드​에 대한 직접 링크" title="Flex 보드 / 통합 Flex 보드​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="flex-보드--통합-flex-보드">Flex 보드 / 통합 Flex 보드​<a href="https://docs.whatap.io/blog/2024-2q-summary#flex-%EB%B3%B4%EB%93%9C--%ED%86%B5%ED%95%A9-flex-%EB%B3%B4%EB%93%9C" class="hash-link" aria-label="Flex 보드 / 통합 Flex 보드​에 대한 직접 링크" title="Flex 보드 / 통합 Flex 보드​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Changed">Changed</code> 그룹 위젯에 하위 위젯을 추가할 경우 위젯 템플릿 목록이 닫히지 않도록 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_4_x"><code class="changelog-service">Service 2.4.0​</code></a></code></p>
@@ -2177,7 +2177,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 탭에서 수신자 태그 설정 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v252-2024년-02월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_2">Server Agent v2.5.2</a></code> <code class="changelog-date">2024년 02월 13일</code><a href="https://docs.whatap.io/blog/2024-1q-summary#server-agent-v252-2024%EB%85%84-02%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="server-agent-v252-2024년-02월-13일에 대한 직접 �링크" title="server-agent-v252-2024년-02월-13일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v252-2024년-02월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_2">Server Agent v2.5.2</a></code> <code class="changelog-date">2024년 02월 13일</code><a href="https://docs.whatap.io/blog/2024-1q-summary#server-agent-v252-2024%EB%85%84-02%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="server-agent-v252-2024년-02월-13일에 대한 직접 링크" title="server-agent-v252-2024년-02월-13일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> 윈도우 운영체제의 이벤트 로그 중 원하는 조건에 부합하는 건을 와탭 로그로 수집 가능</li>
 </ul>
@@ -2501,7 +2501,7 @@
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="�공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 ��대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알람 원복을 위한 stateful 추가</li>
 </ul>
