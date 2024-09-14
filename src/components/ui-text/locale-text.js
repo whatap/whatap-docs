@@ -40,7 +40,7 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
         if (type) {
             // console.log(sid, '222222');
             let oType = whatapLocale[`${type}`][`${currentLocale}`];
-            oText = whatapLocale[sid][`${currentLocale}`].replace(/(\{type\}|\{object\})/g, oType)
+            oText = whatapLocale[sid][`${currentLocale}`].replace(/(\{type\}|\{object\}|\{category\})/g, oType)
             if (replace == "({count})") {
                 oText = oText.replace(replace, '(N)').trim();
             }
