@@ -270,6 +270,7 @@ const sidebars = {
               ],
             },
             'java/instance-performance-analysis',
+            'java/linked-projects',
             {
               type: 'doc',
               label: 'Log 모니터링',
