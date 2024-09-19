@@ -270,6 +270,7 @@ const sidebars = {
               ],
             },
             'java/instance-performance-analysis',
+            'java/linked-projects',
             {
               type: 'doc',
               label: 'Log 모니터링',
@@ -517,6 +518,7 @@ const sidebars = {
               ],
             },
             'php/instance-performance-analysis',
+            'php/linked-projects',
             {
               type: 'doc',
               label: 'Log 모니터링',
@@ -748,6 +750,7 @@ const sidebars = {
               ],
             },
             'nodejs/instance-performance-analysis',
+            'nodejs/linked-projects',
             {
               type: 'doc',
               label: 'Log 모니터링',
@@ -981,6 +984,7 @@ const sidebars = {
               ],
             },
             'python/instance-performance-analysis',
+            'python/linked-projects',
             {
               type: 'doc',
               label: 'Log 모니터링',
@@ -1213,6 +1217,7 @@ const sidebars = {
               ],
             },
             'dotnet/instance-performance-analysis',
+            'dotnet/linked-projects',
             'dotnet/labs'
           ],
         },
@@ -1429,6 +1434,7 @@ const sidebars = {
               ],
             },
             'golang/instance-performance-analysis',
+            'golang/linked-projects',
             {
               type: 'doc',
               label: 'Log 모니터링',
