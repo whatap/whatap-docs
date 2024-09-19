@@ -1111,7 +1111,17 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "TTL07367",
               className: "uitext"
-            }), ": 알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다."]
+            }), ": 알림 수신 후 선택한 시간 동안 알림을 보내지 않습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "CNT08326",
+                className: "uitext"
+              }), " 기능을 활성화한 상태라면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+                children: "RECOVERED"
+              }), " 상태의 알림을 보낸 후 설정한 시간 동안 알림을 보내지 않습니다."]
+            })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

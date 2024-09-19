@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53742],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52266],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1111,7 +1111,17 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "TTL07367",
               className: "uitext"
-            }), ": 알림 수신 후 선택한 시간 동안 이벤트가 발생하지 않습니다."]
+            }), ": 알림 수신 후 선택한 시간 동안 알림을 보내지 않습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "CNT08326",
+                className: "uitext"
+              }), " 기능을 활성화한 상태라면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+                children: "RECOVERED"
+              }), " 상태의 알림을 보낸 후 설정한 시간 동안 알림을 보내지 않습니다."]
+            })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -4362,7 +4372,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 15116:
+/***/ 80178:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4392,7 +4402,7 @@ const frontMatter = {
 	title: '이벤트 설정',
 	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'Oracle Pro',
+		'Oracle',
 		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
@@ -4401,16 +4411,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/warning-notice-v2",
+  "id": "oracle/warning-notice-v2",
   "title": "이벤트 설정",
   "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/oracle-pro/warning-notice-v2.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/warning-notice-v2",
-  "permalink": "/whatap-docs/oracle-pro/warning-notice-v2",
+  "source": "@site/docs/oracle/warning-notice-v2.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/warning-notice-v2",
+  "permalink": "/whatap-docs/oracle/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/oracle/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -4418,21 +4428,21 @@ const metadata = {
     "title": "이벤트 설정",
     "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "Oracle Pro",
+      "Oracle",
       "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/oracle-pro/set-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/oracle/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/oracle-pro/metric-warning-notice"
+    "permalink": "/whatap-docs/oracle/metric-warning-notice"
   }
 };
 const assets = {
