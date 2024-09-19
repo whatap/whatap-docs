@@ -267,6 +267,7 @@ const sidebars = {
                 'java/set-receive-event',
                 'java/set-event-history',
                 'java/set-event-format',
+                'java/real-time-notification'
               ],
             },
             'java/instance-performance-analysis',
@@ -515,6 +516,7 @@ const sidebars = {
                 'php/set-receive-event',
                 'php/set-event-history',
                 'php/set-event-format',
+                'php/real-time-notification'
               ],
             },
             'php/instance-performance-analysis',
@@ -747,6 +749,7 @@ const sidebars = {
                 'nodejs/set-receive-event',
                 'nodejs/set-event-history',
                 'nodejs/set-event-format',
+                'nodejs/real-time-notification'
               ],
             },
             'nodejs/instance-performance-analysis',
@@ -981,6 +984,7 @@ const sidebars = {
                 'python/set-receive-event',
                 'python/set-event-history',
                 'python/set-event-format',
+                'python/real-time-notification'
               ],
             },
             'python/instance-performance-analysis',
@@ -1214,6 +1218,7 @@ const sidebars = {
                 'dotnet/set-receive-event',
                 'dotnet/set-event-history',
                 'dotnet/set-event-format',
+                'dotnet/real-time-notification',
               ],
             },
             'dotnet/instance-performance-analysis',
@@ -1431,6 +1436,7 @@ const sidebars = {
                 'golang/set-receive-event',
                 'golang/set-event-history',
                 'golang/set-event-format',
+                'golang/real-time-notification'
               ],
             },
             'golang/instance-performance-analysis',
@@ -1631,6 +1637,7 @@ const sidebars = {
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
                 'postgresql/set-event-format',
+                'postgresql/real-time-notification'
               ],
             },
             'postgresql/labs'
@@ -1784,6 +1791,7 @@ const sidebars = {
                 'oracle-v1/set-receive-event',
                 'oracle-v1/set-event-history',
                 'oracle-v1/set-event-format',
+                'oracle-v1/real-time-notification'
               ],
             },
             'oracle-v1/labs'
@@ -1964,6 +1972,7 @@ const sidebars = {
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
                 'oracle/set-event-format',
+                'oracle/real-time-notification'
               ],
             },
             'oracle/labs'
@@ -2131,6 +2140,7 @@ const sidebars = {
                 'oracle-pro/set-receive-event',
                 'oracle-pro/set-event-history',
                 'oracle-pro/set-event-format',
+                'oracle-pro/real-time-notification'
               ],
             },
             'oracle-pro/labs'
@@ -2322,6 +2332,7 @@ const sidebars = {
                 'mysql/set-receive-event',
                 'mysql/set-event-history',
                 'mysql/set-event-format',
+                'mysql/real-time-notification',
               ],
             },
             'mysql/labs'
@@ -2471,6 +2482,7 @@ const sidebars = {
                 'mssql/set-receive-event',
                 'mssql/set-event-history',
                 'mssql/set-event-format',
+                'mssql/real-time-notification'
               ],
             },
             'mssql/labs'
@@ -2624,6 +2636,7 @@ const sidebars = {
                 'tibero/set-receive-event',
                 'tibero/set-event-history',
                 'tibero/set-event-format',
+                'tibero/real-time-notification'
               ],
             },
             'tibero/labs'
@@ -2777,6 +2790,7 @@ const sidebars = {
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
                 'cubrid/set-event-format',
+                'cubrid/real-time-notification'
               ],
             },
             'cubrid/labs'
@@ -3104,6 +3118,7 @@ const sidebars = {
                 'altibase/set-receive-event',
                 'altibase/set-event-history',
                 'altibase/set-event-format',
+                'altibase/real-time-notification'
               ],
             },
             'altibase/labs'
@@ -3245,6 +3260,7 @@ const sidebars = {
                 'altibase-v1/set-receive-event',
                 'altibase-v1/set-event-history',
                 'altibase-v1/set-event-format',
+                'altibase-v1/real-time-notification'
               ],
             },
             'altibase-v1/labs'
@@ -3407,6 +3423,7 @@ const sidebars = {
                 'redis/set-receive-event',
                 'redis/set-event-history',
                 'redis/set-event-format',
+                'redis/real-time-notification',
               ],
             },
             'redis/labs'
@@ -3579,6 +3596,7 @@ const sidebars = {
                 'mongodb/set-receive-event',
                 'mongodb/set-event-history',
                 'mongodb/set-event-format',
+                'mongodb/real-time-notification',
               ],
             },
             'mongodb/labs'
@@ -3664,6 +3682,7 @@ const sidebars = {
             },
             'npm/set-receive-event',
             'npm/set-event-history',
+            'npm/real-time-notification'
           ],
         },
         'npm/labs'
@@ -4698,6 +4717,7 @@ const sidebars = {
                     'amazon-ecs/warning-and-history',
                     'amazon-ecs/metric-warning-notice',
                     'amazon-ecs/set-receive-event',
+                    'amazon-ecs/real-time-notification'
                   ]
                 },
               ],
@@ -4760,6 +4780,7 @@ const sidebars = {
                     'amazon-cloudwatch/warning-and-history',
                     'amazon-cloudwatch/metric-warning-notice',
                     'amazon-cloudwatch/set-receive-event',
+                    'amazon-cloudwatch/real-time-notification'
                   ]
                 },
               ],
@@ -4823,6 +4844,7 @@ const sidebars = {
                     'azure/warning-and-history',
                     'azure/metric-warning-notice',
                     'azure/set-receive-event',
+                    'azure/real-time-notification'
                   ]
                 },
               ],
@@ -4947,6 +4969,7 @@ const sidebars = {
                     'oracle-cloud/warning-and-history',
                     'oracle-cloud/metric-warning-notice',
                     'oracle-cloud/set-receive-event',
+                    'oracle-cloud/real-time-notification'
                   ]
                 },
               ],
@@ -5135,6 +5158,7 @@ const sidebars = {
             'aws-log/set-notice',
             'aws-log/set-receive-event',
             'aws-log/set-event-history',
+            'aws-log/real-time-notification'
           ],
         }
       ]
@@ -5297,6 +5321,7 @@ const sidebars = {
                 'amazon-ecs/metric-warning-notice',
                 'amazon-ecs/set-receive-event',
                 'amazon-ecs/set-event-history',
+                'amazon-ecs/real-time-notification'
               ]
             },
             'amazon-ecs/labs'
@@ -5377,6 +5402,7 @@ const sidebars = {
                 'amazon-cloudwatch/metric-warning-notice',
                 'amazon-cloudwatch/set-receive-event',
                 'amazon-cloudwatch/set-event-history',
+                'amazon-cloudwatch/real-time-notification'
               ]
             },
             'amazon-cloudwatch/labs'
@@ -5457,6 +5483,7 @@ const sidebars = {
                 'azure/metric-warning-notice',
                 'azure/set-receive-event',
                 'azure/set-event-history',
+                'azure/real-time-notification'
               ]
             },
             'azure/labs'
@@ -5537,6 +5564,7 @@ const sidebars = {
                 'ncloud/metric-warning-notice',
                 'ncloud/set-receive-event',
                 'ncloud/set-event-history',
+                'ncloud/real-time-notification'
               ]
             },
             'ncloud/labs'
@@ -5617,6 +5645,7 @@ const sidebars = {
                 'oracle-cloud/metric-warning-notice',
                 'oracle-cloud/set-receive-event',
                 'oracle-cloud/set-event-history',
+                'oracle-cloud/real-time-notification'
               ]
             },
             'oracle-cloud/labs'
@@ -5785,6 +5814,7 @@ const sidebars = {
             'url/url-event',
             'url/set-receive-event',
             'url/url-event-history',
+            'url/real-time-notification'
           ],
         },
         'url/url-http-status',
@@ -5931,7 +5961,8 @@ const sidebars = {
               className: 'newfunc'
             },
             'browser/set-receive-event',
-            'browser/set-event-history'
+            'browser/set-event-history',
+            'browser/real-time-notification'
           ],
         },
         'browser/collect-data',
@@ -6151,6 +6182,7 @@ const sidebars = {
                 'server/set-receive-event',
                 'server/set-event-history',
                 'server/set-event-format',
+                'server/real-time-notification'
               ]
             },
             {
@@ -6470,6 +6502,7 @@ const sidebars = {
                 'kubernetes/set-event-log',
                 'kubernetes/set-receive-event',
                 'kubernetes/set-event-history',
+                'kubernetes/real-time-notification'
               ],
             },
             'kubernetes/labs'
@@ -6639,6 +6672,7 @@ const sidebars = {
             'log/set-notice',
             'log/set-receive-event',
             'log/set-event-history',
+            'log/real-time-notification'
           ],
         },
       ]  
