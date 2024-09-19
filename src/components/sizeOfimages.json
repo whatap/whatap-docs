@@ -699,6 +699,30 @@
     "width": 1200,
     "height": 1058
   },
+  "analysis-hitmap-tx-list-filter-en.png": {
+    "width": 922,
+    "height": 37
+  },
+  "analysis-hitmap-tx-list-filter-ja.png": {
+    "width": 922,
+    "height": 37
+  },
+  "analysis-hitmap-tx-list-filter.png": {
+    "width": 800,
+    "height": 37
+  },
+  "analysis-hitmap-tx-list-select-column-en.png": {
+    "width": 1200,
+    "height": 531
+  },
+  "analysis-hitmap-tx-list-select-column-ja.png": {
+    "width": 1200,
+    "height": 493
+  },
+  "analysis-hitmap-tx-list-select-column.png": {
+    "width": 1200,
+    "height": 506
+  },
   "analysis-tx-active-stack-en.png": {
     "width": 800,
     "height": 517
@@ -3951,6 +3975,18 @@
     "width": 1200,
     "height": 446
   },
+  "browser-pageload-statistics-en.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-pageload-statistics-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-pageload-statistics.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "browser-pageload-time-num-en.png": {
     "width": 1200,
     "height": 716
@@ -4142,6 +4178,134 @@
   "browser-start.png": {
     "width": 1091,
     "height": 527
+  },
+  "browser-statistics-page-group-filter-en.png": {
+    "width": 600,
+    "height": 412
+  },
+  "browser-statistics-page-group-filter-ja.png": {
+    "width": 600,
+    "height": 366
+  },
+  "browser-statistics-page-group-filter.png": {
+    "width": 600,
+    "height": 370
+  },
+  "browser-statistics-pageload-count-top-en.png": {
+    "width": 600,
+    "height": 293
+  },
+  "browser-statistics-pageload-count-top-ja.png": {
+    "width": 600,
+    "height": 293
+  },
+  "browser-statistics-pageload-count-top.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-pageload-group-list-en.png": {
+    "width": 1200,
+    "height": 441
+  },
+  "browser-statistics-pageload-group-list-ja.png": {
+    "width": 1200,
+    "height": 441
+  },
+  "browser-statistics-pageload-group-list.png": {
+    "width": 1200,
+    "height": 440
+  },
+  "browser-statistics-pageload-time-top-en.png": {
+    "width": 600,
+    "height": 295
+  },
+  "browser-statistics-pageload-time-top.png": {
+    "width": 600,
+    "height": 292
+  },
+  "browser-statistics-pageload-trend-en.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "browser-statistics-pageload-trend-ja.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "browser-statistics-pageload-trend-pecent-en.png": {
+    "width": 1200,
+    "height": 218
+  },
+  "browser-statistics-pageload-trend-pecent-ja.png": {
+    "width": 1200,
+    "height": 218
+  },
+  "browser-statistics-pageload-trend-pecent.png": {
+    "width": 1200,
+    "height": 218
+  },
+  "browser-statistics-pageload-trend-select-time-en.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-statistics-pageload-trend-select-time-ja.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-statistics-pageload-trend-select-time.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-statistics-pageload-trend.png": {
+    "width": 1200,
+    "height": 219
+  },
+  "browser-statistics-perf-metrics-filter-en.png": {
+    "width": 400,
+    "height": 412
+  },
+  "browser-statistics-perf-metrics-filter-ja.png": {
+    "width": 400,
+    "height": 435
+  },
+  "browser-statistics-perf-metrics-filter.png": {
+    "width": 400,
+    "height": 446
+  },
+  "browser-statistics-set-custom-time-en.png": {
+    "width": 400,
+    "height": 417
+  },
+  "browser-statistics-set-custom-time-ja.png": {
+    "width": 400,
+    "height": 426
+  },
+  "browser-statistics-set-custom-time.png": {
+    "width": 400,
+    "height": 431
+  },
+  "browser-statistics-set-time-select-options-en.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-statistics-set-time-select-options-ja.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-statistics-set-time-select-options.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-statistics-setting-column-en.png": {
+    "width": 600,
+    "height": 774
+  },
+  "browser-statistics-setting-column-ja.png": {
+    "width": 600,
+    "height": 774
+  },
+  "browser-statistics-setting-column.png": {
+    "width": 600,
+    "height": 774
   },
   "browser-user-env-en.png": {
     "width": 1200,
@@ -5199,6 +5363,18 @@
     "width": 1200,
     "height": 1055
   },
+  "db-compare-count-trend-tibero-en.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-compare-count-trend-tibero-ja.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-compare-count-trend-tibero.png": {
+    "width": 1200,
+    "height": 1058
+  },
   "db-compare-count-trend-tootip-altibase.png": {
     "width": 800,
     "height": 226
@@ -5245,15 +5421,15 @@
   },
   "db-count-trend-1x3-mssql-en.png": {
     "width": 1200,
-    "height": 1068
+    "height": 1055
   },
   "db-count-trend-1x3-mssql-ja.png": {
     "width": 1200,
-    "height": 1068
+    "height": 1055
   },
   "db-count-trend-1x3-mssql.png": {
     "width": 1200,
-    "height": 1068
+    "height": 1055
   },
   "db-count-trend-1x3-mysql.png": {
     "width": 1200,
@@ -5280,6 +5456,18 @@
     "height": 1058
   },
   "db-count-trend-1x3-redis.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-count-trend-1x3-tibero-en.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-count-trend-1x3-tibero-ja.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-count-trend-1x3-tibero.png": {
     "width": 1200,
     "height": 1058
   },
@@ -5371,6 +5559,18 @@
     "width": 1200,
     "height": 1058
   },
+  "db-count-trend-tibero-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-count-trend-tibero-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-count-trend-tibero.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "db-dashboard-instance-list-altibase-en.png": {
     "width": 1200,
     "height": 189
@@ -5382,18 +5582,6 @@
   "db-dashboard-instance-list-altibase.png": {
     "width": 1200,
     "height": 187
-  },
-  "db-dashboard-instance-list-tibero-en.png": {
-    "width": 1200,
-    "height": 189
-  },
-  "db-dashboard-instance-list-tibero-ja.png": {
-    "width": 1200,
-    "height": 189
-  },
-  "db-dashboard-instance-list-tibero.png": {
-    "width": 1200,
-    "height": 191
   },
   "db-dashboard-instance-list.png": {
     "width": 1200,
@@ -5690,6 +5878,18 @@
   "db-database-sql-stat-postgresql.png": {
     "width": 1200,
     "height": 383
+  },
+  "db-database-sql-stat-tibero-en.png": {
+    "width": 1200,
+    "height": 485
+  },
+  "db-database-sql-stat-tibero-ja.png": {
+    "width": 1200,
+    "height": 485
+  },
+  "db-database-sql-stat-tibero.png": {
+    "width": 1200,
+    "height": 485
   },
   "db-database-sql-stat.png": {
     "width": 1200,
@@ -6227,6 +6427,18 @@
     "width": 800,
     "height": 215
   },
+  "db-instance-list-tibero-en.png": {
+    "width": 1200,
+    "height": 245
+  },
+  "db-instance-list-tibero-ja.png": {
+    "width": 1200,
+    "height": 245
+  },
+  "db-instance-list-tibero.png": {
+    "width": 1200,
+    "height": 245
+  },
   "db-instance-list.png": {
     "width": 1200,
     "height": 247
@@ -6559,6 +6771,18 @@
     "width": 1200,
     "height": 1030
   },
+  "db-locktress-basic-tibero-en.png": {
+    "width": 1200,
+    "height": 648
+  },
+  "db-locktress-basic-tibero-ja.png": {
+    "width": 1200,
+    "height": 648
+  },
+  "db-locktress-basic-tibero.png": {
+    "width": 1200,
+    "height": 648
+  },
   "db-locktress-basic.png": {
     "width": 1200,
     "height": 738
@@ -6818,6 +7042,18 @@
   "db-multi-instance-redis.png": {
     "width": 1200,
     "height": 668
+  },
+  "db-multi-instance-tibero-en.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-multi-instance-tibero-ja.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-multi-instance-tibero.png": {
+    "width": 1200,
+    "height": 1058
   },
   "db-multi-instance.png": {
     "width": 1230,
@@ -7239,6 +7475,18 @@
     "width": 1200,
     "height": 382
   },
+  "db-stat-table-space-check-trend-tibero-en.png": {
+    "width": 1200,
+    "height": 222
+  },
+  "db-stat-table-space-check-trend-tibero-ja.png": {
+    "width": 1200,
+    "height": 223
+  },
+  "db-stat-table-space-check-trend-tibero.png": {
+    "width": 1200,
+    "height": 222
+  },
   "db-stat-table-space-cubrid-en.png": {
     "width": 1200,
     "height": 1058
@@ -7323,6 +7571,18 @@
     "width": 1200,
     "height": 401
   },
+  "db-stat-table-space-size-details-tibero-en.png": {
+    "width": 1200,
+    "height": 393
+  },
+  "db-stat-table-space-size-details-tibero-ja.png": {
+    "width": 1200,
+    "height": 394
+  },
+  "db-stat-table-space-size-details-tibero.png": {
+    "width": 1200,
+    "height": 394
+  },
   "db-stat-table-space-size-top50-oracle-pro-en.png": {
     "width": 1200,
     "height": 823
@@ -7334,6 +7594,18 @@
   "db-stat-table-space-size-top50-oracle-pro.png": {
     "width": 1200,
     "height": 827
+  },
+  "db-stat-table-space-tibero-en.png": {
+    "width": 1200,
+    "height": 599
+  },
+  "db-stat-table-space-tibero-ja.png": {
+    "width": 1200,
+    "height": 599
+  },
+  "db-stat-table-space-tibero.png": {
+    "width": 1200,
+    "height": 599
   },
   "db-stat-table-space.png": {
     "width": 1200,
@@ -7653,15 +7925,15 @@
   },
   "event-config-v2-condition-common-en.png": {
     "width": 800,
-    "height": 437
+    "height": 431
   },
   "event-config-v2-condition-common-ja.png": {
     "width": 800,
-    "height": 438
+    "height": 430
   },
   "event-config-v2-condition-common.png": {
     "width": 800,
-    "height": 438
+    "height": 430
   },
   "event-config-v2-db-mongodb-en.png": {
     "width": 1200,
@@ -7922,6 +8194,10 @@
   "fb-group-widget-apm.png": {
     "width": 1200,
     "height": 495
+  },
+  "fb-group-widget-fold.png": {
+    "width": 1200,
+    "height": 622
   },
   "fb-hitmap-widget-en.png": {
     "width": 1200,
@@ -9004,16 +9280,16 @@
     "height": 267
   },
   "ipa-thread-list-java-en.png": {
-    "width": 1622,
-    "height": 610
+    "width": 1200,
+    "height": 361
   },
   "ipa-thread-list-java-ja.png": {
-    "width": 1620,
-    "height": 582
+    "width": 1200,
+    "height": 362
   },
   "ipa-thread-list-java.png": {
-    "width": 1623,
-    "height": 579
+    "width": 1200,
+    "height": 359
   },
   "java-agent-log-oname.png": {
     "width": 1500,
@@ -9753,7 +10029,7 @@
   },
   "k8s-install-master-node-command.png": {
     "width": 1200,
-    "height": 1266
+    "height": 716
   },
   "k8s-install-master-node-download-en.png": {
     "width": 1200,
@@ -9765,19 +10041,19 @@
   },
   "k8s-install-master-node-download.png": {
     "width": 1200,
-    "height": 723
+    "height": 587
   },
   "k8s-install-master-node-method-en.png": {
     "width": 1200,
-    "height": 1070
+    "height": 895
   },
   "k8s-install-master-node-method-ja.png": {
     "width": 1200,
-    "height": 1099
+    "height": 895
   },
   "k8s-install-master-node-method.png": {
     "width": 1200,
-    "height": 1068
+    "height": 897
   },
   "k8s-kube-apiserver-en.png": {
     "width": 1200,
@@ -10482,6 +10758,54 @@
   "library-version-java.png": {
     "width": 1620,
     "height": 938
+  },
+  "linked-project-db-hitmap-en.png": {
+    "width": 1200,
+    "height": 672
+  },
+  "linked-project-db-hitmap-ja.png": {
+    "width": 1200,
+    "height": 672
+  },
+  "linked-project-db-hitmap.png": {
+    "width": 1200,
+    "height": 672
+  },
+  "linked-project-db-instance-dahboard-en.png": {
+    "width": 1200,
+    "height": 688
+  },
+  "linked-project-db-instance-dahboard-ja.png": {
+    "width": 1200,
+    "height": 688
+  },
+  "linked-project-db-instance-dahboard.png": {
+    "width": 1200,
+    "height": 688
+  },
+  "linked-project-management-add-project-en.png": {
+    "width": 800,
+    "height": 348
+  },
+  "linked-project-management-add-project-ja.png": {
+    "width": 800,
+    "height": 348
+  },
+  "linked-project-management-add-project.png": {
+    "width": 800,
+    "height": 340
+  },
+  "linked-project-management-en.png": {
+    "width": 1200,
+    "height": 366
+  },
+  "linked-project-management-ja.png": {
+    "width": 1200,
+    "height": 366
+  },
+  "linked-project-management.png": {
+    "width": 1200,
+    "height": 366
   },
   "log-1st-grok-en.png": {
     "width": 835,
@@ -12931,6 +13255,10 @@
     "width": 1200,
     "height": 434
   },
+  "new-feature-01-cubrid.png": {
+    "width": 1200,
+    "height": 614
+  },
   "new-feature-01-mongodb-en.png": {
     "width": 1200,
     "height": 632
@@ -12984,6 +13312,10 @@
     "height": 423
   },
   "new-feature-02-altibase.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-cubrid.png": {
     "width": 2309,
     "height": 1034
   },
@@ -13048,6 +13380,10 @@
     "height": 757
   },
   "new-feature-03-altibase.png": {
+    "width": 1200,
+    "height": 438
+  },
+  "new-feature-03-cubrid.png": {
     "width": 1200,
     "height": 438
   },
@@ -13116,6 +13452,10 @@
     "height": 620
   },
   "new-feature-04-altibase.png": {
+    "width": 1200,
+    "height": 274
+  },
+  "new-feature-04-cubrid.png": {
     "width": 1200,
     "height": 274
   },
@@ -14679,6 +15019,14 @@
     "width": 1269,
     "height": 820
   },
+  "server-inventory-cl.png": {
+    "width": 800,
+    "height": 803
+  },
+  "server-inventory.png": {
+    "width": 1211,
+    "height": 673
+  },
   "server-list-agent-transfer-en.png": {
     "width": 1083,
     "height": 908
@@ -15233,15 +15581,15 @@
   },
   "set-event-receive-en.png": {
     "width": 1200,
-    "height": 540
+    "height": 496
   },
   "set-event-receive-ja.png": {
     "width": 1200,
-    "height": 521
+    "height": 496
   },
   "set-event-receive.png": {
     "width": 1200,
-    "height": 492
+    "height": 470
   },
   "set-event-select-category-en.png": {
     "width": 600,
@@ -15329,15 +15677,15 @@
   },
   "set-events-app-en.png": {
     "width": 1200,
-    "height": 502
+    "height": 518
   },
   "set-events-app-ja.png": {
     "width": 1200,
-    "height": 504
+    "height": 520
   },
   "set-events-app.png": {
     "width": 1200,
-    "height": 499
+    "height": 521
   },
   "set-events-metrics-en.png": {
     "width": 800,
@@ -15531,18 +15879,6 @@
     "width": 1200,
     "height": 414
   },
-  "tibero-tablespace-size-en.png": {
-    "width": 1200,
-    "height": 578
-  },
-  "tibero-tablespace-size-ja.png": {
-    "width": 1200,
-    "height": 578
-  },
-  "tibero-tablespace-size.png": {
-    "width": 1200,
-    "height": 578
-  },
   "topology-control-en.png": {
     "width": 1200,
     "height": 720
@@ -15697,15 +16033,15 @@
   },
   "tx-hitmap-en.png": {
     "width": 1222,
-    "height": 956
+    "height": 985
   },
   "tx-hitmap-ja.png": {
     "width": 1222,
-    "height": 958
+    "height": 985
   },
   "tx-hitmap.png": {
     "width": 1222,
-    "height": 959
+    "height": 985
   },
   "tx-trace-dt-up-en.png": {
     "width": 1200,
