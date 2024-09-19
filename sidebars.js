@@ -6120,6 +6120,7 @@ const sidebars = {
                     'kubernetes/container-map-call-information',
                   ],
                 },
+                'kubernetes/node-map',
                 'kubernetes/performance-summary',
                 'kubernetes/cluster-summary',
               ]
