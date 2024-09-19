@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[82206],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[36009],{
 
 /***/ 72140:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -58,7 +58,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "BTN08477",
         className: "uitext"
-      }), " 기능은 APM 프로젝트에서 트랜잭션을 분석하는 중에 느린 SQL을 발견했을 때, 비슷한 여러 DB를 사용하여 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 경우에 유용합니다."]
+      }), " 기능은 APM 프로젝트에서 트랜잭션을 분석할 때, 느린 SQL을 발견했을 경우 비슷한 여러 DB를 사용하는 환경에서 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 상황에 유용합니다."]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "linked-project-db-hitmap.png",
       desc: "히트맵"
@@ -455,6 +455,139 @@ function _createMdxContent(props) {
           }), " 키를 누르세요."]
         }), "\n"]
       }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 15299:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "액티브 스택",
+  "id": "anlaysis-trace-active-stack",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    admonition: "admonition",
+    h3: "h3",
+    img: "img",
+    li: "li",
+    p: "p",
+    section: "section",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h3",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "anlaysis-trace-active-stack",
+      children: "액티브 스택"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
+      product: "kubernetes",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "analysis-tx-active-stack.png",
+        desc: "액티브 스택"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["액티브 스택을 수집한 구간과 시간, 관련한 클래스, 메소드 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06133",
+          className: "uitext"
+        }), " 탭을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["트랜잭션 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "액티브 스택 아이콘",
+                src: (__webpack_require__(11234)/* ["default"] */ .A) + "",
+                width: "20",
+                height: "20"
+              }), " 아이콘이 표시된 항목에서 확인할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["액티브 스택에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "analysis-apm#active-stack",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      product: "kubernetes",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "analysis-tx-active-stack.png",
+        desc: "액티브 스택"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["액티브 스택을 수집한 구간과 시간, 관련한 클래스, 메소드 정보를 확인하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06133",
+          className: "uitext"
+        }), " 탭을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["트랜잭션 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "액티브 스택 아이콘",
+                src: (__webpack_require__(11234)/* ["default"] */ .A) + "",
+                width: "20",
+                height: "20"
+              }), " 아이콘이 표시된 항목에서 확인할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["액티브 스택에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "../java/analysis-apm#active-stack",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
     })]
   });
 }
@@ -3225,7 +3358,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 8319:
+/***/ 29434:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3238,7 +3371,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_transaction_profile_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(54987);
 /* harmony import */ var _common_items_transaction_profile_details_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5120);
 /* harmony import */ var _common_items_transaction_profile_info_window_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(50831);
@@ -3246,18 +3379,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(45434);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(90661);
 /* harmony import */ var _common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(18313);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(69958);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9081);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(10404);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(90605);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(99550);
-/* harmony import */ var _common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(26805);
-/* harmony import */ var _common_items_analysis_hitmap_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(72140);
-/* harmony import */ var _common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(13522);
-/* harmony import */ var _common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(46429);
-/* harmony import */ var _common_items_analysis_hitmap_set_column_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(50679);
-/* harmony import */ var _common_items_analysis_hitmap_tx_list_filter_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(93092);
-/* harmony import */ var _common_items_analysis_hitmap_save_csv_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(61944);
+/* harmony import */ var _common_items_dashboard_hitmap_active_stack_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(15299);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(69958);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(9081);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(10404);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(90605);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(99550);
+/* harmony import */ var _common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(26805);
+/* harmony import */ var _common_items_analysis_hitmap_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(72140);
+/* harmony import */ var _common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(13522);
+/* harmony import */ var _common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(46429);
+/* harmony import */ var _common_items_analysis_hitmap_set_column_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(50679);
+/* harmony import */ var _common_items_analysis_hitmap_tx_list_filter_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(93092);
+/* harmony import */ var _common_items_analysis_hitmap_save_csv_mdx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(61944);
 
 
 const frontMatter = {
@@ -3266,7 +3400,7 @@ const frontMatter = {
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	keywords: [
 		'애플리케이션',
-		'Node.js',
+		'Java',
 		'분석',
 		'히트맵',
 		'트랜잭션'
@@ -3275,16 +3409,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/analysis-hitmap",
+  "id": "java/analysis-hitmap",
   "title": "히트맵",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/nodejs/analysis-hitmap.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/analysis-hitmap",
-  "permalink": "/whatap-docs/nodejs/analysis-hitmap",
+  "source": "@site/docs/java/analysis-hitmap.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/analysis-hitmap",
+  "permalink": "/whatap-docs/java/analysis-hitmap",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/analysis-hitmap.mdx",
+  "editUrl": "undefined/docs/java/analysis-hitmap.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -3293,21 +3427,21 @@ const metadata = {
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "keywords": [
       "애플리케이션",
-      "Node.js",
+      "Java",
       "분석",
       "히트맵",
       "트랜잭션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "큐브",
-    "permalink": "/whatap-docs/nodejs/cube"
+    "permalink": "/whatap-docs/java/cube"
   },
   "next": {
     "title": "멀티 트랜잭션 추적",
-    "permalink": "/whatap-docs/nodejs/analysis-trace-mtx"
+    "permalink": "/whatap-docs/java/analysis-trace-mtx"
   }
 };
 const assets = {
@@ -3320,6 +3454,7 @@ const assets = {
 /*### 테이블 뷰*/
 /*### 레코드 요약*/
 /*### 트리뷰*/
+/*### 액티브 스택*/
 /*### 멀티 트랜잭션*/
 /*### 메소드 요약*/
 /*### SQL 요약*/
@@ -3353,31 +3488,32 @@ const assets = {
 
 
 
-const toc = [..._common_items_transaction_profile_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_transaction_profile_details_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_transaction_profile_info_window_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, {
+
+const toc = [..._common_items_transaction_profile_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_transaction_profile_details_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_transaction_profile_info_window_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_dashboard_hitmap_active_stack_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, {
   "value": "부가 기능",
   "id": "부가-기능",
   "level": 2
-}, ..._common_items_analysis_hitmap_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_analysis_hitmap_set_column_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_analysis_hitmap_tx_list_filter_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_analysis_hitmap_save_csv_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM];
+}, ..._common_items_analysis_hitmap_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_analysis_hitmap_set_column_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_analysis_hitmap_tx_list_filter_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM, ..._common_items_analysis_hitmap_save_csv_mdx__WEBPACK_IMPORTED_MODULE_20__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
     section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_20__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_21__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_transaction_profile_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_transaction_profile_details_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_transaction_profile_info_window_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_transaction_profile_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_transaction_profile_details_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_transaction_profile_info_window_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_table_view_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_record_summary_attribute_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_treeview_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_active_stack_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_multi_tx_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_method_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_sql_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_http_call_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tracsaction_log_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_dashboard_hitmap_trace_tx_log_keyword_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "부가-기능",
         children: "부가 기능"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_set_column_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_tx_list_filter_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_save_csv_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_http_parameter_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_search_transaction_parmeter_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_set_column_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_tx_list_filter_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_analysis_hitmap_save_csv_mdx__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_20__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_21__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

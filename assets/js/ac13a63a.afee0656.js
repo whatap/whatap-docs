@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31401],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80726],{
 
 /***/ 10891:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -150,7 +150,7 @@ function _createMdxContent(props) {
           className: "uitext"
         }), " 메뉴에서 확인할 수 있습니다. 트랜잭션을 조회하는 동안 연계된 프로젝트의 성능 지표를 함께 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "이 기능은 APM 프로젝트에서 트랜잭션을 분석하는 중에 느린 SQL을 발견했을 때, 비슷한 여러 DB를 사용하여 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 경우에 유용합니다."
+        children: "이 기능은 APM 프로젝트에서 트랜잭션을 분석할 때, 느린 SQL을 발견했을 경우 비슷한 여러 DB를 사용하는 환경에서 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 상황에 유용합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "linked-project-db-hitmap.png",
         desc: "히트맵"
@@ -290,7 +290,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 73817:
+/***/ 6222:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -312,7 +312,7 @@ const frontMatter = {
 	title: '연계 프로젝트 관리',
 	description: '데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'Node.js',
+		'Python',
 		'애플리케이션',
 		'연계 프로젝트',
 		'데이터베이스'
@@ -321,16 +321,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/linked-projects",
+  "id": "python/linked-projects",
   "title": "연계 프로젝트 관리",
   "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/nodejs/linked-projects.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/linked-projects",
-  "permalink": "/whatap-docs/nodejs/linked-projects",
+  "source": "@site/docs/python/linked-projects.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/linked-projects",
+  "permalink": "/whatap-docs/python/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/linked-projects.mdx",
+  "editUrl": "undefined/docs/python/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -338,17 +338,17 @@ const metadata = {
     "title": "연계 프로젝트 관리",
     "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      "Node.js",
+      "Python",
       "애플리케이션",
       "연계 프로젝트",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/nodejs/instance-performance-analysis"
+    "permalink": "/whatap-docs/python/instance-performance-analysis"
   },
   "next": {
     "title": "Log 모니터링",

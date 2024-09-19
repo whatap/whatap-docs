@@ -58,7 +58,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "BTN08477",
         className: "uitext"
-      }), " 기능은 APM 프로젝트에서 트랜잭션을 분석하는 중에 느린 SQL을 발견했을 때, 비슷한 여러 DB를 사용하여 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 경우에 유용합니다."]
+      }), " 기능은 APM 프로젝트에서 트랜잭션을 분석할 때, 느린 SQL을 발견했을 경우 비슷한 여러 DB를 사용하는 환경에서 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 상황에 유용합니다."]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "linked-project-db-hitmap.png",
       desc: "히트맵"

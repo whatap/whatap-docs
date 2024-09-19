@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[40148],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10681],{
 
 /***/ 72140:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -58,7 +58,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "BTN08477",
         className: "uitext"
-      }), " 기능은 APM 프로젝트에서 트랜잭션을 분석하는 중에 느린 SQL을 발견했을 때, 비슷한 여러 DB를 사용하여 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 경우에 유용합니다."]
+      }), " 기능은 APM 프로젝트에서 트랜잭션을 분석할 때, 느린 SQL을 발견했을 경우 비슷한 여러 DB를 사용하는 환경에서 정확히 어느 DB에서 문제가 발생했는지 확인하기 어려운 상황에 유용합니다."]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
       img: "linked-project-db-hitmap.png",
       desc: "히트맵"
@@ -3358,7 +3358,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 68047:
+/***/ 89249:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3400,7 +3400,7 @@ const frontMatter = {
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	keywords: [
 		'애플리케이션',
-		'Java',
+		'Python',
 		'분석',
 		'히트맵',
 		'트랜잭션'
@@ -3409,16 +3409,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/trs-profile",
+  "id": "python/trs-profile",
   "title": "트랜잭션 트레이싱",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/java/trs-profile.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/trs-profile",
-  "permalink": "/whatap-docs/java/trs-profile",
+  "source": "@site/docs/python/trs-profile.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/trs-profile",
+  "permalink": "/whatap-docs/python/trs-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/trs-profile.mdx",
+  "editUrl": "undefined/docs/python/trs-profile.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -3427,21 +3427,21 @@ const metadata = {
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "keywords": [
       "애플리케이션",
-      "Java",
+      "Python",
       "분석",
       "히트맵",
       "트랜잭션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "트랜잭션 분석하기",
-    "permalink": "/whatap-docs/java/trs-view"
+    "permalink": "/whatap-docs/python/trs-view"
   },
   "next": {
     "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/java/active-transactions"
+    "permalink": "/whatap-docs/python/active-transactions"
   }
 };
 const assets = {
