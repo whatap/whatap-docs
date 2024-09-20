@@ -1,0 +1,45 @@
+---
+id: k8s-1_7_9
+title: Kubernetes Agent v1.7.9
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_7_8
+displayed_sidebar: releaseSidebar
+---
+
+August 19, 2024
+
+- <Status priority='1'>Feature</Status> Added collection of RSS-related metrics in the cgroup v2 environment.
+
+  `container::mem_totalrss`: This metric collects the memory RSS (Resident Set Size) of the container in the cgroup v2 environment. This metric indicates the amount of physical memory the container is actually using.
+
+- <Status priority='1'>Feature</Status> Added the metrics for whether container's request and limit are set.
+
+  - **Memory-related metrics**
+
+    - `container::memory_limit_contained`: This metric indicates whether the container's memory limit is set. If the value is `true', it indicates the limit is set. If the value is `false', it indicates the limit is not set.
+
+    - `container::memory_request_contained`: This metric indicates whether the container's memory request is set. If the value is `true', it indicates the request is set. If the value is `false', it indicates the request is not set.
+
+  - **CPU-related metrics**
+
+    - `container::cpu_limit_contained`: This metric indicates whether the container's CPU limit is set. If the value is `true', it indicates the limit is set. If the value is `false', it indicates the limit is not set.
+
+    - `container::cpu_request_contained`: This metric indicates whether the container's CPU request is set. If the value is `true', it indicates the request is set. If the value is `false', it indicates the request is not set.
+
+  - **Ephemeral-Storage-related metrics**
+
+    - `container::ephemeral_storage_limit_contained`: This metric indicates whether the container's ephemeral-storage limit is set. If the value is `true', it indicates the limit is set. If the value is `false', it indicates the limit is not set.
+
+    - `container::ephemeral_storage_request_contained`: This metric indicates whether the container's ephemeral-storage request is set. If the value is `true', it indicates the request is set. If the value is `false', it indicates the request is not set.
+
+- <Status priority='1'>Feature</Status> Added node label metrics in the list format.
+
+  - `kube_node::labelKey`: This metric collects the label keys of the Kubernetes node. This represents the key of each label applied to the node.
+
+  - `kube_node::labelValue`: This metric collects the label values of the Kubernetes node. This represents the value of each label applied to the node.
+
+:::info
+
+Agent download: [kube_mon_1.7.9.tar](https://repo.whatap.io/docker/kube_mon_1.7.9.tar)
+
+:::

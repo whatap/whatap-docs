@@ -4,12 +4,12 @@ title: PG SQL Statistics
 description: SQL statistics (execution count, execution time, row count, etc.) provided by PostgreSQL are collected through the pg_state_statements view.
 keywords:
   - PostgreSQL
-  - Database
-  - Statistics
+  - DATABASE
+  - Statistic
   - PG SQL Statistics
 ---
 
-Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_pgStat" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_pgStat" className="uitext" />
 
 SQL statistics (execution count, execution time, row count, etc.) provided by PostgreSQL that can be collected through the `pg_state_statements` view.
 
@@ -59,27 +59,27 @@ import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-bas
 
 ## Column information guide
 
-| Item                  | Description                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `query`               | Query string                                                                                                          |
-| `queryid`             | Query hash code                                                                                                       |
-| `user`                | User oid                                                                                                              |
-| `db`                  | Database name                                                                                                         |
-| `rows`                | Total number of rows retrieved or affected                                                                            |
+| Item                  | Description                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| `query`               | Query string                                                                                       |
+| `queryid`             | Query hash code                                                                                    |
+| `user`                | User oid                                                                                           |
+| `db`                  | Database name                                                                                      |
+| `rows`                | Total number of rows retrieved or affected                                                         |
 | `total_exec_time`     | Total query execution time (milliseconds)                                                          |
-| `calls`               | Execution count                                                                                                       |
-| `shared_blks_hit`     | Total shared block cache hit count                                                                                    |
-| `shared_blks_read`    | Total number of shared blocks read from disk                                                                          |
+| `calls`               | Execution count                                                                                    |
+| `shared_blks_hit`     | Total shared block cache hit count                                                                 |
+| `shared_blks_read`    | Total number of shared blocks read from disk                                                       |
 | `blk_read_time`       | Total block read time (milliseconds) while `track_io_timing` is active. Otherwise, the value is 0. |
-| `blk_write_time`      | Total block write time while `track_io_timing` is active. Otherwise, the value is 0.                                  |
-| `local_blks_dirtied`  | Number of changed local blocks                                                                                        |
-| `local_blks_hit`      | Local block cache hit count                                                                                           |
-| `local_blks_written`  | Total number of local blocks written in disk                                                                          |
-| `local_blks_read`     | Total number of local blocks read from disk                                                                           |
-| `shared_blks_written` | Total number of shared blocks written in disk                                                                         |
-| `shared_blks_dirtied` | Total number of changed shared blocks                                                                                 |
-| `temp_blks_read`      | Total number of temporary blocks read from disk                                                                       |
-| `temp_blks_written`   | Total number of temporary blocks written in disk                                                                      |
+| `blk_write_time`      | Total block write time while `track_io_timing` is active. Otherwise, the value is 0.               |
+| `local_blks_dirtied`  | Number of changed local blocks                                                                     |
+| `local_blks_hit`      | Local block cache hit count                                                                        |
+| `local_blks_written`  | Total number of local blocks written in disk                                                       |
+| `local_blks_read`     | Total number of local blocks read from disk                                                        |
+| `shared_blks_written` | Total number of shared blocks written in disk                                                      |
+| `shared_blks_dirtied` | Total number of changed shared blocks                                                              |
+| `temp_blks_read`      | Total number of temporary blocks read from disk                                                    |
+| `temp_blks_written`   | Total number of temporary blocks written in disk                                                   |
 
 ## Previewing the query
 
@@ -100,8 +100,6 @@ import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 <Dbsqlfilter />
 
-## Configuring the table columns{#change-column}
-
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn />
+<Dbv2dataeditcolumn level={2} />

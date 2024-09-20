@@ -7,6 +7,8 @@ keywords:
   - Log
 ---
 
+## Log management options
+
 When the application server runs, it starts collecting the monitoring data. The collected data is stored in the log file.
 
 - **log_rotation_enabled** <span class='type'>Boolean</span>
@@ -38,3 +40,45 @@ When the application server runs, it starts collecting the monitoring data. The 
   ```ini title="whatap.conf"
   log_root=/Users/sample_user/workspace/nodejs_application/whatap_logs/
   ```
+
+## Setting the log sink
+
+In [Node.js agent 0.5.1](../release-notes/nodejs/nodejs-0_5_1) or later, the LogSink feature is provided for integrated application server monitoring.
+
+- **logsink_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Set whether or not to enable the log monitoring.
+
+  :::note
+
+  - For more information on how to enable the log monitoring, see [the following](../log/log-nodejs).
+
+  - For more information about the log monitoring, see [the following](../log/learn-main-menu).
+
+  :::
+
+- **logsink_trace_txid_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  The transaction ID is inserted into the log to configure the visibility of the <Cmdname sid="TTL06128" className="uitext" /> tab in <Cmdname sid="TTL06209" className="uitext" />.
+
+  :::note
+
+  For more information about the <Cmdname sid="TTL06209" className="uitext" />의 <Cmdname sid="TTL06128" className="uitext" /> tab, see [the following](dashboard-hitmap-trace#anlaysis-trace-transaction-log).
+
+  :::
+
+- **logsink_limit_content_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  Set whether or not to limit the maximum size for log messages.
+
+- **logsink_limit_content_length** <span class='type'>Number</span>
+
+  Default `10,000`
+
+  It sets the maximum length for log messages. This option applies only when the `logsink_limit_content_enabled` option is set to `true`.

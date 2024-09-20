@@ -31,16 +31,16 @@ NODE{cluster}-{ip2}-{ip3}
 
 ### Variable of the agent name
 
-| Variable       | Description                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------------------ |
-| `{type}`       | Name of the application type (Node)                                           |
-| `{ip0}`        | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)  |
-| `{ip1}`        | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13) |
-| `{ip2}`        | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)  |
-| `{ip3}`        | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**) |
-| `{pid}`        | Application process ID                                                                           |
-| `{hostname}`   | Host name                                                                                        |
-| `{cluster}`    | Cluster ID when multiple Node.js files are running on a server                                   |
+| Variable       | Description                                                                      |
+| -------------- | -------------------------------------------------------------------------------- |
+| `{type}`       | Name of the application type (Node)                                              |
+| `{ip0}`        | The first byte of the IPv4 address is used. (e.g. **10** in **10**.11.12.13)     |
+| `{ip1}`        | The second byte of the IPv4 address is used. (e.g. **11** in 10.**11**.12.13)    |
+| `{ip2}`        | The third byte of the IPv4 address is used. (e.g. **12** in 10.11.**12**.13)     |
+| `{ip3}`        | The fourth byte of the IPv4 address is used. (e.g. **13** in 10.11.12.**13**)    |
+| `{pid}`        | Application process ID                                                           |
+| `{hostname}`   | Host name                                                                        |
+| `{cluster}`    | Cluster ID when multiple Node.js files are running on a server                   |
 
 ### Changing the agent name pattern
 
@@ -104,5 +104,13 @@ For more information about the agent name setting in Node.js, see [the following
   Default `0`
 
   Modify it to obtain a new agent name from the server. Once set, the agent name is maintained until Node.js is restarted. For a reset, modify the value of `auto_oname_reset`. If a different value is assigned, the setting is applied.
+
+- **oname_port_postfix_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  You can create an agent name (ONAME) by adding a port number.
+
+  > e.g. NODE-14-103-3000
 
 <OkindNodename />

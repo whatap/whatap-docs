@@ -15,7 +15,7 @@ The <Cmdname sid="side_agentsConfiguration" className="uitext" /> menu provides 
 
 ## Loaded Classes {#advanced-use-loaded-classes}
 
-Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_loadedClasses" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_loadedClasses" className="uitext" />
 
 The <Cmdname sid="side_loadedClasses" className="uitext" /> menu provides detailed information about the structure and method signatures for the classes loaded into the application, and also provides the <Cmdname sid="redefine" className="uitext" /> feature to allow uninterrupted changes to class behaviors.
 
@@ -67,7 +67,7 @@ Unexpected behavior or bug may occur if a specific class was loaded from the uni
 
 ## Thread List/Dump {#advanced-use-thread-list-dump}
 
-Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_threadList" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />
 
 {/* 스레드 목록을 보고 하는 중요한 행위-> 스레드 cpu 누적 시간 보여줌 -> 시계열 정보 확인 가능하다는 얘기를 추가하기 */}
 
@@ -75,11 +75,11 @@ The <Cmdname sid="side_threadList" className="uitext" /> menu allows you to chec
 
 Determining which threads are using a lot of CPU is important for identifying the cause of the bottleneck. In particular, you must be able to query the time series data to identify threads that have spikes in CPU usage during a specific period. In <Cmdname sid="side_threadList" className="uitext" />, <Cmdname sid="thread_cpu_time" className="uitext" /> means the total accumulated time that the thread has occupied the CPU. Upon ***Refresh***, the difference between the current thread CPU time and the previous thread CPU time, <Cmdname sid="TTL08126" className="uitext" /> is provided, allowing you to identify the thread using the most CPU at the time of query. Click the <Cmdname sid="TTL08126" className="uitext" /> column to sort in descending order to see the thread with the highest growth. 
 
-<ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='Thread List/Dump delta values' />
+<ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='Thread List/Dump delta value' />
 
 After specifying a thread in this manner, you can check the thread snapshot to find frequently called or long-running methods. This allows early detection and response to abnormal signs, for stable management of the system.
 
-<ImgLang img='best-p/about-instance-thread-list-dump4.png' desc='Thread List/Dump each thread dump' />
+<ImgLang img='best-p/about-instance-thread-list-dump4.png' desc='Thread List/Dump individual thread dumps' />
 
 {/* :::note 
 

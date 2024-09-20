@@ -430,25 +430,37 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 - **_Active Sessions_**
 
-  Category: `db_altibase_counter`
+  Category: [`db_altibase_counter`](metrics-data-list)
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_CPU_**
+
+  Category: [`db_altibase_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_altibase_counter`](metrics-data-list)
+
+  If database connection fails 15 times or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
-  Category: `db_altibase_counter`
+  Category: [`db_altibase_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
 - **_Memory_**
 
-  Category: `db_altibase_counter`
+  Category: [`db_altibase_counter`](metrics-data-list)
 
   If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
   :::note
 
-  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](after-install-agent#agent-architecture).
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](install-agent#apply-xos-agent).
 
   :::
 

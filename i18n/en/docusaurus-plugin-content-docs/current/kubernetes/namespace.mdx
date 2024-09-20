@@ -9,7 +9,7 @@ keywords:
 
 Home > Select Project > **_Management_** > **_Namespace Management_**
 
-You can manage namespace projects through the **_Namespace Management_** menu in the cluster project. In a namespace project, you cannot enter the menu.
+You can manage namespace projects through the **_Namespace Management_** menu in the cluster project(<code class='my'>CP</code>). In a namespace project, you cannot enter the menu.
 
 :::note
 
@@ -28,6 +28,16 @@ In the ![number-1](/img/number-01.png) area at the top, you can see the total nu
 ### Creating a namespace project
 
 In **_Namespace List_**, select **_+ Add Project_** for the item to create a project for. When the **_Add Project_** window appears, select **_OK_**.
+
+:::note 
+
+**Cautions**
+
+When you add a namespace project, the namespace is separated from the cluster project (<code class='my'>CP</code>) into a separate WhaTap project. The added namespace project is given a new **project access key**. 
+
+If the application monitoring has been installed in a separate namespace, you have to change the **project access key** in the application monitoring settings to the **project access key** of the newly added namespace project.
+
+:::
 
 ### Deleting a namespace project
 

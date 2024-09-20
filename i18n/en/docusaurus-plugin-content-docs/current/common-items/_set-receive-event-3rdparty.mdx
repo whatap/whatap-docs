@@ -1,4 +1,4 @@
-## Adding the 3rd party plug-in alert
+## Adding the 3rd party plug-in alert {#add3rdparty}
 
 You can receive alerts through external applications such as Slack, Telegram, Teams, Jandi, and Webhooks.
 
@@ -83,6 +83,54 @@ The following lists available commands.
    <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-teams.png" className="width-600" desc="Register" />
 
 6. Select <Cmdname sid="BTN06673" className="uitext" />.
+
+</details>
+
+<details>
+
+<summary>Teams Workflows</summary>
+
+To use workflows, you need an account with access to **Microsoft Teams** and a business plan subscription.
+
+1. In the **Team** menu, select the More (...) button and then click **Add Channel**.
+
+   <ImgLang img="3rdparty/teams_workflows_step_01.png" desc="Teams Workflows" />
+
+2. Enter a channel name and description and then select **Standard** as the channel type.
+
+   <ImgLang img="3rdparty/teams_workflows_step_02.png" desc="Teams Workflows" />
+
+   :::note
+
+   If you select **Shared** as the channel type, you cannot use workflows. If you select **Private**, you can add workflows but cannot receive notifications.
+
+   :::
+
+3. In the created channel, select the More (...) button and then click **Workflow**.
+
+   <ImgLang img="3rdparty/teams_workflows_step_03.png" desc="Teams Workflows" />
+
+4. In the list of **workflows** of the **Workflow** dialog box, select **Post to channel when a webhook request is received**, and then click **Add Workflow**.
+
+   <ImgLang img="3rdparty/teams_workflows_step_04.png" desc="Teams Workflows" />
+
+5. Check the name and connection status and then click **Next**.
+
+   <ImgLang img="3rdparty/teams_workflows_step_05.png" desc="Teams Workflows" />
+
+6. Check the detailed information and then click **Add Workflow**.
+
+   <ImgLang img="3rdparty/teams_workflows_step_06.png" desc="Teams Workflows" />
+
+7. After workflow addition is completed, copy the **created address**.
+
+   <ImgLang img="3rdparty/teams_workflows_step_07.png" desc="Teams Workflows" />
+
+8. Go back to the <Cmdname sid="TTL06656" className="uitext" /> screen of the WhaTap monitoring service and enter the <UI>Channel Name</UI> and <UI>Webhook URL</UI>.
+
+   <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-teams.png" className="width-600" desc="Register" />
+
+9. Select <Cmdname sid="BTN06673" className="uitext" />.
 
 </details>
 
@@ -180,7 +228,7 @@ The following lists available commands.
 
 :::note
 
-- The event status (`status`) is divided into `on`, `off`, `disabled`, and `acknowledge`, and has the server monitoring status (on/off).
+- Event status (`status`) can be divided into event occurrence (`on`) and event resolution (`off`).
 
 - The `level` is divided into `None`, `Info`, `Warning`, and `Critical`.
 
@@ -217,5 +265,47 @@ The following lists available commands.
    <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-opsgenie-options.png" className="width-600" desc="Register" />
 
 7. Select <Cmdname sid="BTN06673" className="uitext" />.
+
+</details>
+
+<details>
+
+<summary>PagerDuty</summary>
+
+1. Check that you have registered and logged in to the [PagerDuty](https://www.pagerduty.com/) account.
+
+2. In PagerDuty, go to **Services** &gt; **Service Directory**, and then select **New Service**.
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_01.jpg)
+
+3. Enter the service information and then click **Next**.
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_02.jpg)
+
+4. Set the Escalation Policy and then select **Next**.
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_03.jpg)
+
+5. Set the values for **Alert Grouping** and **Transient Alerts**, and then select **Next**.
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_04.jpg)
+
+6. In **Integrations**, select **Event API V2** and then click **Create Service**.
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_05.jpg)
+
+7. Copy the values for **Integration Name** and **Integration Key** ​​on the created service screen.
+
+   ![PagerDuty](https://preview.whatap.io/assets/assets/image/management_event_pagerduty_step_06.jpg)
+
+8. Go back to the <Cmdname sid="TTL06656" className="uitext" /> screen of the WhaTap monitoring service and enter the <UI>Integration Name</UI> and <UI>Integration Key</UI>.
+
+   <ImgLang img="3rdparty/set-event-3rd-party-plugin-add-pagerduty-options.png" className="width-600" desc="Register" />
+
+:::note
+
+If the message has not been received or the plugin has not been registered, check that the **Integration Name** or **Integration Key** value is correct.
+
+:::
 
 </details>
