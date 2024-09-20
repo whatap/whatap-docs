@@ -3726,7 +3726,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -3735,7 +3735,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_5_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_5_0',
                 'release-notes/nodejs/nodejs-0_4_98',
@@ -3754,7 +3754,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3763,7 +3763,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_6_10',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_6_9',
                 'release-notes/python/python-1_6_8',
@@ -3847,9 +3847,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_7',
+                  id: 'release-notes/server/server-2_6_8',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_7',
                 'release-notes/server/server-2_6_6',
                 'release-notes/server/server-2_6_5',
                 'release-notes/server/server-2_6_4',
@@ -3858,7 +3859,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_1',
                 'release-notes/server/server-2_6_0',
                 'release-notes/server/server-2_5_9',
-                'release-notes/server/server-2_5_8',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4018,7 +4018,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              // className: 'new',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
