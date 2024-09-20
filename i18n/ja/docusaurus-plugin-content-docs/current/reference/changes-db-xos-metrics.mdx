@@ -22,13 +22,13 @@ displayed_sidebar: dbSidebar
 
 データベースモニタリングでは、CPU使用量について`CPU(xos)`、`CPU(xos2)`指標の2つを提供していました。 DBXエージェント1.7.0バージョン以降では、両方の指標が1つの単位に統合される予定です。
 
-|                  変更前の指標名                 |      変更後の指標名      |             単位            |
-| :--------------------------------------: | :---------------: | :-----------------------: |
+|                  変更前の指標名                 |      変更後の指標名      |   単位   |
+| :--------------------------------------: | :---------------: | :----: |
 |        `cpu(xos2)`<br/>`cpu(xos)`        |     `cpu(xos)`    | 使用率(%) |
-|   `cpu_idle(xos2)`<br/>`cpu_idle(xos)`   |  `cpu_idle(xos)`  |             %             |
-|    `cpu_sys(xos2)`<br/>`cpu_sys(xos)`    |   `cpu_sys(xos)`  |             %             |
-|   `cpu_user(xos2)`<br/>`cpu_user(xos)`   |  `cpu_user(xos)`  |             %             |
-| `cpu_iowait(xos2)`<br/>`cpu_iowait(xos)` | `cpu_iowait(xos)` |             %             |
+|   `cpu_idle(xos2)`<br/>`cpu_idle(xos)`   |  `cpu_idle(xos)`  |    %   |
+|    `cpu_sys(xos2)`<br/>`cpu_sys(xos)`    |   `cpu_sys(xos)`  |    %   |
+|   `cpu_user(xos2)`<br/>`cpu_user(xos)`   |  `cpu_user(xos)`  |    %   |
+| `cpu_iowait(xos2)`<br/>`cpu_iowait(xos)` | `cpu_iowait(xos)` |    %   |
 
 :::note
 
@@ -36,7 +36,7 @@ DBXエージェント1.7.0バージョン以下で`cpu(xos)`指標の値が9000�
 
 :::
 
-DBXエージェントを1.7.0バージョンに更新した後、既存の指標で警告通知を設定した場合、またはダッシュボードを構成した場合は、指標設定を変更する必要があります。 <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />メニューで設定したしきい値は自動的に切り替わります。 既に設定した警告通知のうち、上記5つの指標を使用した通知が正しく切り替わったか確認してください。 次の内容を参考にしてください。
+DBXエージェントを1.7.0バージョンに更新した後、既存の指標で警告通知を設定または、ダッシュボードを構成した場合は、指標設定を変更する必要があります。 <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューで設定したしきい値は自動的に切り替わります。 既に設定した警告通知のうち、上記5つの指標を使用した通知が正しく切り替わったか確認してください。 次の内容を参考にしてください。
 
 ## DBXエージェントのアップデート
 
@@ -52,7 +52,7 @@ DBXエージェントを1.7.0バージョンに更新した後、既存の指標
 
 ## 変更された指標の確認
 
-DBXエージェントアップデート後、<Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="database" className="uitext" />タブで`cpu(xos2)`指標が`cpu(xos)`指標に変更されたか確認してください。
+DBXエージェントアップデート後、<Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="database" className="uitext" />タブで`cpu(xos2)`指標が`cpu(xos)`指標に変更されたか確認してください。
 
 - **DBXエージェントアップデート前**
 
@@ -66,9 +66,9 @@ DBXエージェントアップデート後、<Cmdname sid="event_statistic" clas
 
 ユーザーが設定したメトリクス通知とダッシュボードの設定は、直接修正する必要があります。
 
-- <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="metrics" className="uitext" />タブで<code>cpu(xos2)</code>指標に設定したイベントを<code>cpu(xos)</code>指標に変更してください。
+- <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューの<Cmdname sid="metrics" className="uitext" />タブで<code>cpu(xos2)</code>指標に設定したイベントを<code>cpu(xos)</code>指標に変更します。
 
-- 次のメニュー経路で`cpu(xos2)`指標を`cpu(xos)`指標に変更すべき設定があるか確認してください。
+- 次のメニュー経路で`cpu(xos2)`指標を`cpu(xos)`指標に変更すべき設定があるか確認します。
 
   - <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />
 

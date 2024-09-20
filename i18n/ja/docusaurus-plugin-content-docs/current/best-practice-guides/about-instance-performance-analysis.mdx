@@ -15,7 +15,7 @@ displayed_sidebar: learningSidebar
 
 ## ロード済クラス {#advanced-use-loaded-classes}
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_loadedClasses" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_loadedClasses" className="uitext" />
 
 <Cmdname sid="side_loadedClasses" className="uitext" />メニューは、アプリケーションにロードされたクラスの構造とメソッドシグネチャーなどの詳細情報を提供し、また中断なくクラス動作を変更できるように<Cmdname sid="redefine" className="uitext" />機能を提供します。
 
@@ -25,7 +25,7 @@ displayed_sidebar: learningSidebar
 
 {/* 예를 들어 새로운 서비스 패턴 지정으로 추가적인 트랜잭션 시작점을 설정하여 응답 시간을 측정하는 등 트레이스 및 후킹과 관련된 와탭 설정 변경 시 해당 클래스를 목록에서 찾아 ![수정 아이콘](/img/ico-edit.svg) <Cmdname sid="redefine" className="uitext" />를 클릭하세요.  */}
 
-<ImgLang img='best-p/about-instance-loaded-class1.png' desc='ロード済クラス 再定義' />
+<ImgLang img='best-p/about-instance-loaded-class1.png' desc='ロード済クラス再定義' />
 
 {/* 해당 기능을 선택 해 재정의
 
@@ -67,7 +67,7 @@ displayed_sidebar: learningSidebar
 
 ## スレッドリスト/ダンプ {#advanced-use-thread-list-dump}
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_threadList" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />
 
 {/* 스레드 목록을 보고 하는 중요한 행위-> 스레드 cpu 누적 시간 보여줌 -> 시계열 정보 확인 가능하다는 얘기를 추가하기 */}
 
@@ -75,11 +75,11 @@ displayed_sidebar: learningSidebar
 
 どのスレッドがCPUを多く使用しているかを把握することは、ボトルネックの発生原因を識別する上で重要です。 特に、特定の時間帯にCPU使用が急増したスレッド識別のために、時系列データを照会できる必要があります。 <Cmdname sid="side_threadList" className="uitext" />メニューの<Cmdname sid="thread_cpu_time" className="uitext" />は、当該スレッドがCPUを占有した合計累積時間を意味します。 ***更新***時、現在のスレッドCPU時間と既存のスレッドCPU時間の差である<Cmdname sid="TTL08126" className="uitext" />を提供することで、照会時点で最も多くCPUを使用しているスレッドを特定できます。 <Cmdname sid="TTL08126" className="uitext" />カラムをクリックし、降順でのソートで増加量が最も高いスレッドを確認してみてください。 
 
-<ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='スレッドリスト/ダンプ' />
+<ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='スレッドリスト/ダンプデルタ値' />
 
 このようにスレッドを特定した後、そのスレッドのスナップショットを確認して、頻繁に呼び出されたり、長く実行されるメソッドなどを確認できます。 これにより、異常な兆候を早期に発見し、対応してシステムを安定的に管理できます。
 
-<ImgLang img='best-p/about-instance-thread-list-dump4.png' desc='スレッドリスト/ダンプ' />
+<ImgLang img='best-p/about-instance-thread-list-dump4.png' desc='スレッドリスト/ダンプ個別スレッドダンプ' />
 
 {/* :::note 
 

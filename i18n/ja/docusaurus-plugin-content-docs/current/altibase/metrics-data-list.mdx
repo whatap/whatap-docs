@@ -1,0 +1,226 @@
+---
+id: metrics-data-list
+title: Altibaseメトリクス
+description: Altibaseのメトリクスについて案内します。
+keywords:
+  - Altibase
+  - メトリクス
+  - データベース
+  - データベース
+---
+
+データベース指標は、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+
+メトリクス情報に関する詳しい内容は、[次のリンク](https://altibase.com/en/learn/manuals.php)を参照してください。
+
+## db_altibase_counter {#db_altibase_counter}
+
+### Tags {#db_altibase_counter-tags}
+
+次は`db_altibase_counter`カテゴリに収集されるタグ値の案内です。
+
+| タグ名         | 説明                  | 備考    |
+| ----------- | ------------------- | ----- |
+| `dbIsMulti` | Multitenant対応可否です。  | -     |
+| `dbType`    | データベースの種類です。        | -     |
+| `dbVersion` | 利用中のデータベースのバージョンです。 | -     |
+| `oname`     | エージェント名です。          | ユニーク値 |
+
+### Field {#db_altibase_counter-filed}
+
+次は`db_altibase_counter`カテゴリに収集されるフィールド値の案内です。
+
+<div class='metric'>
+
+| Metric                                                                                  | Description                                    |
+| --------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| `active_sessions`                                                                       | 現在、活性化されているセッションの数です。                          |
+| `base time in second`                                                                   | 基準時間(秒)で測定された値です。                              |
+| `byte received via IB`                                                                  | InfiniBandを通じて受信されたバイト数です。                     |
+| `byte received via inet`                                                                | インターネットを通じて受信されたバイト数です。                        |
+| `byte received via unix domain`                                                         | ユニックスドメインを通じて受信されたバイト数です。                      |
+| `byte sent via IB`                                                                      | InfiniBandを通じて送信されたバイト数です。                     |
+| `byte sent via inet`                                                                    | インターネットを通じて送信されたバイト数です。                        |
+| `byte sent via unix domain`                                                             | ユニックスドメインを通じて送信されたバイト数です。                      |
+| `connect_error`                                                                         | 接続エラーが発生した回数です。                                |
+| `cpu_cores`                                                                             | システムのCPUコアの数です。                                |
+| `data page create`                                                                      | データページが生成された回数です。                              |
+| `data page fix`                                                                         | データページを修正した回数です。                               |
+| `data page gets`                                                                        | データページにアクセスした回数です。                             |
+| `data page read`                                                                        | ディスクでデータページを読み込んだ回数です。                         |
+| `data page write`                                                                       | ディスクにデータページを書き込んだ回数です。                         |
+| `db file multi page read time waited`                                                   | 複数ページの読み取り中に待機した時間です。                          |
+| `db file single page read time waited`                                                  | 単一ページの読み取り中に待機した時間です。                          |
+| `db file single page write time waited`                                                 | 単一ページの書き込み中に待機した時間です。                          |
+| `ddl sync timeout`                                                                      | DDL同期化作業でのタイムアウト時間です。                          |
+| `ddl timeout`                                                                           | DDL作業からのタイムアウト時間です。                            |
+| `delete retry count`                                                                    | 削除作業の再試行回数です。                                  |
+| `disk table cursor GRID scan count`                                                     | ディスク テーブルでグリッドスキャンカーソルを使用した回数です。               |
+| `disk table cursor full scan count`                                                     | ディスクテーブルに対してフルスキャンカーソルを開いた回数です。                |
+| `disk table cursor index scan count`                                                    | ディスクテーブルでインデックススキャンカーソルを使用した回数です。              |
+| `elapsed time: add hard-prepared plan to plan cache`                                    | 準備されたハード計画を、計画キャッシュに追加するのにかかった時間です。            |
+| `elapsed time: add hard-rebuild plan to plan cache`                                     | リビルドされたハード計画を、計画キャッシュに追加するのにかかった時間です。          |
+| `elapsed time: allocate data slot in DML(disk)`                                         | DML操作中にデータスロットの割り当てにかかった時間です。                  |
+| `elapsed time: allocate tss in dml(disk)`                                               | DML操作中、TSS割り当てにかかった時間です。                       |
+| `elapsed time: allocate undopage in dml(disk)`                                          | DML操作中にundoページの割り当てにかかった時間です。                  |
+| `elapsed time: analyze values in DML(disk)`                                             | DML操作中、値の分析にかかった時間です。                          |
+| `elapsed time: copying logs to replication log buffer (sender side)`                    | ログを複製ログバッファにコピーするのにかかった時間です。                   |
+| `elapsed time: create page(disk)`                                                       | ディスクでページを作成するのにかかった時間です。                       |
+| `elapsed time: creation time for child PCO`                                             | 子PCOを生成するのにかかった時間です。                           |
+| `elapsed time: creation time for new child PCO by rebuild at execution`                 | 実行時に、リビルドで新しい子PCOを生成するのにかかった時間です。              |
+| `elapsed time: creation time for new child PCO by rebuild at soft prepare`              | ソフト準備時に、リビルドで新しい子PCOを生成するのにかかった時間です。           |
+| `elapsed time: creation time for parent PCO`                                            | 親PCOを作成するのにかかった時間です。                           |
+| `elapsed time: fix page(disk)`                                                          | ディスクでページを修正するのにかかった時間です。                       |
+| `elapsed time: get page(disk)`                                                          | ディスクでページを読み込むのにかかった時間です。                       |
+| `elapsed time: hard prepare time`                                                       | ハードの準備にかかった時間です。                               |
+| `elapsed time: hard rebuild`                                                            | ハードリビルドにかかった時間です。                              |
+| `elapsed time: index operation in dml(disk)`                                            | DML操作中、インデックス操作にかかった時間です。                      |
+| `elapsed time: logical aging by tx in dml(disk)`                                        | DML操作中、トランザクションによる論理的エイジングにかかった時間です。           |
+| `elapsed time: matching time for child PCO`                                             | 子PCOとマッチングするのにかかった時間です。                        |
+| `elapsed time: moving time from cold region to hot region`                              | コールドリージョンからホットリージョンへの移動にかかった時間です。              |
+| `elapsed time: phyical aging by tx in dml(disk)`                                        | DML操作中にトランザクションによる物理的エイジングにかかった時間です。           |
+| `elapsed time: privilege checking time during soft prepare`                             | ソフト準備時に権限検査にかかった時間です。                          |
+| `elapsed time: query execute`                                                           | クエリの実行にかかった時間です。                               |
+| `elapsed time: query fetch`                                                             | クエリ結果をフェッチするのにかかった時間です。                        |
+| `elapsed time: query optimize`                                                          | クエリを最適化するのにかかった時間です。                           |
+| `elapsed time: query parse`                                                             | クエリを構文解析するのにかかった時間です。                          |
+| `elapsed time: query validate`                                                          | クエリの検証にかかった時間です。                               |
+| `elapsed time: receiver(s) aborting transaction(s)`                                     | 受信者がトランザクションを中断するのにかかった時間です。                   |
+| `elapsed time: receiver(s) beginning transaction(s)`                                    | 受信者がトランザクションを開始するのにかかった時間です。                   |
+| `elapsed time: receiver(s) closing LOB cursor(s)`                                       | 受信者がLOBカーソルを閉じるのにかかった時間です。                     |
+| `elapsed time: receiver(s) closing table cursor(s)`                                     | 受信者がテーブルカーソルを閉じるのにかかった時間です。                    |
+| `elapsed time: receiver(s) committing transaction(s)`                                   | 受信者がトランザクションをコミットするのにかかった時間です。                 |
+| `elapsed time: receiver(s) comparing images to check for conflicts`                     | 受信者が衝突を確認するために画像を比較するのにかかった時間です。               |
+| `elapsed time: receiver(s) deleting rows`                                               | 受信者が行を削除するのにかかった時間です。                          |
+| `elapsed time: receiver(s) finish writing LOBs`                                         | 受信者がLOBの書き込みを完了するのにかかった時間です。                   |
+| `elapsed time: receiver(s) inserting rows`                                              | 受信者が行を挿入するのにかかった時間です。                          |
+| `elapsed time: receiver(s) opening lob cursor(s)`                                       | 受信者がLOBカーソルを開くのにかかった時間です。                      |
+| `elapsed time: receiver(s) opening table cursor(s)`                                     | 受信者がテーブルカーソルを開くのにかかった時間です。                     |
+| `elapsed time: receiver(s) performing endian conversion`                                | 受信者がエンディアン変換を実行するのにかかった時間です。                   |
+| `elapsed time: receiver(s) preparing to write LOB(s)`                                   | 受信者がLOBを書き込む準備にかかった時間です。                       |
+| `elapsed time: receiver(s) receiving xlogs from sender(s)`                              | 受信者が送信者からxlogを受け取るのにかかった時間です。                  |
+| `elapsed time: receiver(s) sending ACK`                                                 | 受信者がACKを送信するのにかかった時間です。                        |
+| `elapsed time: receiver(s) trim LOB(s)`                                                 | 受信者がLOBをトリミングするのにかかった時間です。                     |
+| `elapsed time: receiver(s) updating rows`                                               | 受信者が行を更新するのにかかった時間です。                          |
+| `elapsed time: receiver(s) writing LOB piece(s)`                                        | 受信者がLOBピースを書き込むのにかかった時間です。                     |
+| `elapsed time: record lock validation in DML(disk)`                                     | DML操作中にレコードロックの検証にかかった時間です。                    |
+| `elapsed time: replace(plan cache)`                                                     | 計画キャッシュでの交換作業にかかった時間です。                        |
+| `elapsed time: search time for child PCO`                                               | 子PCOを検索するのにかかった時間です。                           |
+| `elapsed time: search time for parent PCO`                                              | 親PCOの検索にかかった時間です。                              |
+| `elapsed time: sender(s) analyzing logs`                                                | 発信者がログを分析するのにかかった時間です。                         |
+| `elapsed time: sender(s) checking whether logs are useful`                              | 発信者がログの有用性を確認するのにかかった時間です。                     |
+| `elapsed time: sender(s) reading logs from log file(s)`                                 | 送信者がログファイルでログを読み取るのにかかった時間です。                  |
+| `elapsed time: sender(s) reading logs from replication log buffer`                      | 送信者が複製ログバッファでログを読み取るのにかかった時間です。                |
+| `elapsed time: sender(s) receiving ACK from receiver(s)`                                | 発信者が受信者からACKを受信するのにかかった時間です。                   |
+| `elapsed time: sender(s) sending xlogs to receiver(s)`                                  | 送信者が受信者にxlogを送信するのにかかった時間です。                   |
+| `elapsed time: sender(s) setting ACKed value`                                           | 発信者がACKされた値を設定するのにかかった時間です。                    |
+| `elapsed time: sender(s) waiting for new logs`                                          | 発信者が新しいログを待つのにかかった時間です。                        |
+| `elapsed time: soft prepare`                                                            | ソフトの準備にかかった時間です。                               |
+| `elapsed time: soft rebuild`                                                            | ソフトリビルドにかかった時間です。                              |
+| `elapsed time: task schedule`                                                           | タスクのスケジューリングにかかった時間です。                         |
+| `elapsed time: validation time for child PCO`                                           | 子PCOの検証にかかった時間です。                              |
+| `elapsed time: victim free in replace(plan cache)`                                      | 計画キャッシュの交換でビクティムを解除するのにかかった時間です。               |
+| `elapsed time: waiting time for hard prepare`                                           | ハード準備を待つのにかかった時間です。                            |
+| `elapsed time: waiting time for parent PCO when choosing plan cache replacement victim` | 計画キャッシュの交換ビクティムを選択する際に、親PCOを待つのにかかった時間です。      |
+| `elapsed time: write undo record in DML(disk)`                                          | DML操作中にundoレコードを書き込むのにかかった時間です。                |
+| `enq: TX - allocate TXSEG entry time waited`                                            | TXSEG項目割り当ての待機時間です。                            |
+| `enq: TX - row lock contention, data row time waited`                                   | 行のロック競合によるデータ行の待ち時間です。                         |
+| `execute failure count`                                                                 | クエリ実行失敗の回数です。                                  |
+| `execute success count`                                                                 | クエリ実行の成功回数です。                                  |
+| `execute success count : delete`                                                        | 削除クエリの実行成功の回数です。                               |
+| `execute success count : insert`                                                        | 挿入クエリの実行成功回数です。                                |
+| `execute success count : select`                                                        | 選択クエリの実行成功回数です。                                |
+| `execute success count : update`                                                        | アップデートクエリの実行成功回数です。                            |
+| `fetch failure count`                                                                   | クエリ結果のフェッチ失敗回数です。                              |
+| `fetch success count`                                                                   | クエリ結果のフェッチ成功回数です。                              |
+| `fetch timeout`                                                                         | クエリ結果のフェッチタイムアウトの回数です。                         |
+| `idle timeout`                                                                          | アイドル状態のタイムアウト回数です。                             |
+| `latch free: drdb LRU list time waited`                                                 | DRDB LRU一覧でのラッチ解除の待ち時間です。                      |
+| `latch free: drdb buffer bcb mutex time waited`                                         | DRDBバッファBCBミューテックスでのラッチ解除待ち時間です。               |
+| `latch free: drdb buffer bcb read io mutex time waited`                                 | DRDBバッファBCB読み取りIOミューテックスでのラッチ解除待機時間です。         |
+| `latch free: drdb buffer buffer manager expand mutex time waited`                       | DRDBバッファ管理者の拡張ミューテックスでのラッチ解除待ち時間です。            |
+| `latch free: drdb buffer flush manager req job time waited`                             | DRDBバッファフラッシュの管理者リクエスト作業の待ち時間です。               |
+| `latch free: drdb buffer flusher min recovery LSN time waited`                          | DRDBバッファフラッシュの最小復旧LSNの待ち時間です。                  |
+| `latch free: drdb buffer hash mutex time waited`                                        | DRDBバッファハッシュミューテックスでのラッチ解除待ち時間です。              |
+| `latch free: drdb checkpoint list time waited`                                          | DRDBチェックポイント一覧でのラッチ解除待ち時間です。                   |
+| `latch free: drdb file io time waited`                                                  | DRDBファイルIOでのラッチ解除待ち時間です。                       |
+| `latch free: drdb flush list time waited`                                               | DRDBフラッシュ一覧でのラッチ解除待ち時間です。                      |
+| `latch free: drdb page list entry time waited`                                          | DRDBページ一覧項目でのラッチ解除待ち時間です。                      |
+| `latch free: drdb prepare list time waited`                                             | DRDB準備一覧でのラッチ解除待ち時間です。                         |
+| `latch free: drdb prepare list wait time waited`                                        | DRDB準備一覧の待ち時間でのラッチ解除待ち時間です。                    |
+| `latch free: drdb secondary bcb mutex time waited`                                      | DRDB補助BCBミューテックスでのラッチ解除待ち時間です。                 |
+| `latch free: drdb secondary buffer block wait time waited`                              | DRDB補助バッファブロックの待ち時間でのラッチ解除待ち時間です。              |
+| `latch free: drdb secondary buffer checkpoint list time waited`                         | DRDB補助バッファチェックポイント一覧でのラッチ解除待ち時間です。             |
+| `latch free: drdb secondary buffer flush block mutex time waited`                       | DRDB補助バッファフラッシュのブロックミューテックスでのラッチ解除待ち時間です。      |
+| `latch free: drdb secondary buffer flush manager req job time waited`                   | DRDB補助バッファフラッシュ管理者の要請作業の待ち時間です。                |
+| `latch free: drdb secondary buffer flusher min recovery LSN time waited`                | DRDB補助バッファフラッシュの最小復旧LSN待ち時間です。                 |
+| `latch free: drdb secondary buffer io time waited`                                      | DRDB補助バッファIOでのラッチ解除待ち時間です。                     |
+| `latch free: drdb secondary read io mutex time waited`                                  | DRDB補助読み取りIOミューテックスでのラッチ解除待ち時間です。              |
+| `latch free: drdb tbs creation time waited`                                             | DRDB TBS生成待ち時間でのラッチ解除待ち時間です。                   |
+| `latch free: drdb tbs list time waited`                                                 | DRDB TBS一覧でのラッチ解除待ち時間です。                       |
+| `latch free: drdb transaction segment freelist time waited`                             | DRDBトランザクションのセグメントフリー一覧でのラッチ解除待ち時間です。          |
+| `latch free: others time waited`                                                        | その他のタスクでのラッチ解除待ち時間です。                          |
+| `latch free: plan cache LRU List mutex time waited`                                     | 計画キャッシュLRU 一覧ミューテックスでのラッチ解除待ち時間です。             |
+| `latch free: statement list mutex time waited`                                          | SQL文一覧のミューテックスでのラッチ解除待ち時間です。                   |
+| `latch: buffer busy waits time waited`                                                  | バッファの待ち時間でのラッチの待機時間です。                         |
+| `latch: drdb B-Tree index SMO by other session time waited`                             | 別のセッションによるDRDB B-treeインデックスSMO待ち時間でのラッチ待ち時間です。 |
+| `latch: drdb B-Tree index SMO time waited`                                              | DRDB B-treeインデックスSMO 待ち時間でのラッチ待ち時間です。          |
+| `latch: drdb R-Tree index SMO time waited`                                              | DRDB R-treeインデックスSMO待ち時間でのラッチ待ち時間です。           |
+| `lock acquired count`                                                                   | 取得したロックの回数です。                                  |
+| `lock released count`                                                                   | 解除されたロックの回数です。                                 |
+| `lock row retry count`                                                                  | 行ロックの再試行の回数です。                                 |
+| `lock_wait_sessions`                                                                    | ロック待機中のセッションの数です。                              |
+| `logon cumulative`                                                                      | 累積されたログイン回数です。                                 |
+| `logon current`                                                                         | 現在ログインされているセッションの数です。                          |
+| `long_running_sessions`                                                                 | 長時間実行中のセッションの数です。                              |
+| `max time: task schedule`                                                               | タスクのスケジューリングにかかる最大時間です。                        |
+| `memory table access count`                                                             | メモリテーブルにアクセスした回数です。                            |
+| `memory table cursor GRID scan count`                                                   | メモリテーブルでグリッドスキャンカーソルを使用した回数です。                 |
+| `memory table cursor full scan count`                                                   | メモリテーブルに対してフルスキャンカーソルを開いた回数です。                 |
+| `memory table cursor index scan count`                                                  | メモリテーブルでインデックススキャンカーソルを使用した回数です。               |
+| `missing ppco x-trylatch count`                                                         | 漏れたPPCO x-trylatchの回数です。                       |
+| `obj_invalid_cnt`                                                                       | 非活性化されたオブジェクトの数です。                             |
+| `pq_sessions`                                                                           | 並列クエリセッションの数です。                                |
+| `prepare failure count`                                                                 | Prepare作業の失敗回数です。                              |
+| `prepare success count`                                                                 | Prepare作業の成功回数です。                              |
+| `query timeout`                                                                         | クエリ実行のタイムアウト回数です。                              |
+| `read IB count`                                                                         | InfiniBandを通じた読み取り作業の回数です。                     |
+| `read socket count`                                                                     | ソケットによる読み取り作業の回数です。                            |
+| `rebuild count`                                                                         | リビルド作業の回数です。                                   |
+| `rep_execute success count : delete`                                                    | 削除作業でのレプリケーション実行の成功回数です。                       |
+| `rep_execute success count : insert`                                                    | 挿入作業でのレプリケーション実行の成功回数です。                       |
+| `rep_execute success count : update`                                                    | アップデート作業でのレプリケーション実行の成功回数です。                   |
+| `replication after commit time waited`                                                  | レプリケーション作業のコミット後の待ち時間です。                       |
+| `replication before commit time waited`                                                 | レプリケーション作業のコミット前の待ち時間です。                       |
+| `secondary buffer file multi page read time waited`                                     | 補助バッファファイルで、複数のページを読み取り中に待機した時間です。             |
+| `secondary buffer file single page read time waited`                                    | 補助バッファファイルで単一ページを読み取り中に待機した時間です。               |
+| `secondary buffer file single page write time waited`                                   | 補助バッファファイルで単一ページを書き込み中に待機した時間です。               |
+| `semop count for receiving via ipc`                                                     | IPCを通じて受信されたsemop作業の回数です。                      |
+| `semop count for sending via ipc`                                                       | IPCを通じて送信されたsemop作業の回数です。                      |
+| `service thread created count`                                                          | 生成されたサービススレッドの数です。                             |
+| `session commit`                                                                        | セッションコミットの回数です。                                |
+| `session rollback`                                                                      | セッションロールバックの回数です。                              |
+| `session terminated`                                                                    | 終了したセッションの数です。                                 |
+| `statement rebuild count`                                                               | SQL文のリビルド回数です。                                 |
+| `system internal time waited`                                                           | システム内部の作業で待機した時間です。                            |
+| `total_elapse_time`                                                                     | 合計の経過時間です。                                     |
+| `total_sessions`                                                                        | 合計のセッション数です。                                   |
+| `undo page create`                                                                      | undoページの作成回数です。                                |
+| `undo page fix`                                                                         | undoページの修正回数です。                                |
+| `undo page gets`                                                                        | undoページにアクセスした回数です。                            |
+| `undo page read`                                                                        | undoページを読み取る回数です。                              |
+| `undo page write`                                                                       | undoページを書き込む回数です。                              |
+| `unique violation count`                                                                | 固有の違反回数です。                                     |
+| `update retry count`                                                                    | アップデート作業の再試行回数です。                              |
+| `utrans timeout`                                                                        | ユーザートランザクションのタイムアウト回数です。                       |
+| `wait_sessions`                                                                         | 待機中のセッションの数です。                                 |
+| `write IB count`                                                                        | InfiniBandによる書き込み作業の回数です。                      |
+| `write redo log bytes`                                                                  | redoログに記録されたバイト数です。                            |
+| `write redo log count`                                                                  | redoログに書き込み作業の回数です。                            |
+| `write socket count`                                                                    | ソケットによる書き込み作業の回数です。                            |
+
+</div>
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />

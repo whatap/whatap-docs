@@ -1,6 +1,6 @@
 ---
 id: monitoring-intro
-title: Altibaseモニタリング
+title: Altibase V2 モニタリング
 description: WhaTapデータベースモニタリングサービス（DBX）は、Queryベースでデータを収集し、性能モニタリングサービスを提供します。
 displayed_sidebar: altibaseSidebar
 hide_table_of_contents: false
@@ -12,6 +12,57 @@ keywords:
   - DBX
 ---
 
-import Dbmonitoringintro from "../common-items/_db-monitoring-intro.mdx";
+import V2Note from "../common-items/_import_v2-note.mdx";
 
-<Dbmonitoringintro />
+<V2Note product="Altibase" />
+
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+import NewFeature from '../common-items/_import_db-v2-new-feature.mdx';
+import Dbintroductiondesc from "../common-items/_db-introduction-desc.mdx";
+
+<Dbintroductiondesc />
+
+## Altibaseモニタリングの特長
+
+<CommonCont />
+
+import Dbspecification from "../common-items/_db-specification.mdx";
+
+<Dbspecification />
+
+---
+
+## データベースモニタリングV2の新機能{#new-feature}
+
+<NewFeature product='Altibase' ver='1.9.0' />
+
+---
+
+### 対応機能
+
+次に使用可能な機能の一部です。他の製品や対応機能を比較したい場合は、[次の文書](../support-env#compare-db)を参照してください。
+
+| カテゴリ       | データベース                          |             サポートの有無             |
+| ---------- | ------------------------------- | :-----------------------------: |
+| Monitoring | Instance List                   | <span class='emoji-ok'>✅</span> |
+| ^          | Instancs Monitoring             | <span class='emoji-ok'>✅</span> |
+| ^          | Multi DataBase (tenant)         | <span class='emoji-no'>❌</span> |
+| ^          | Slow Query                      | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                          | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare                  | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                       | <span class='emoji-ok'>✅</span> |
+| ^          | Parallel Query Tree             | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                       | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameter                    | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                        | <span class='emoji-ok'>✅</span> |
+| ^          | Table Size                      | <span class='emoji-no'>❌</span> |
+| ^          | Database(TableSpace) Size       | <span class='emoji-no'>❌</span> |
+| ^          | SGA Size                        | <span class='emoji-no'>❌</span> |
+| Report     | Daily / Weekly / Monthly Report | <span class='emoji-ok'>✅</span> |
+| Event      | Event List                      | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                      | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting                   | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                    | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                     | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                      | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management              | <span class='emoji-ok'>✅</span> |

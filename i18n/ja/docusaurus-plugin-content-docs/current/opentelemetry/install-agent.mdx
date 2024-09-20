@@ -16,7 +16,7 @@ OpenTelemetryエージェントのインストール方法を案内します。
 
 ## エージェントダウンロード
 
-次のコマンドを実行してOpenTelemetry Collectorがインストールされているインスタンスにエージェントをダウンロードしてください。
+次のコマンドを実行してOpenTelemetry Collectorがインストールされているインスタンスにエージェントをダウンロードします。
 
 <Tabs groupId="os">
 <TabItem value="rc" label="Red Hat/Centos">
@@ -89,11 +89,11 @@ RUN tar -xvzf whatap-otel.tar.gz -C /
 
 ## エージェントのデフォルト設定
 
-エージェント設定には、WhaTapプロジェクトのアクセスキーと収集サーバーのIPアドレスが必要です。 [WhaTapモニタリングサービス](https://service.whatap.io)でアプリケーション(Application)商品のプロジェクトに移動してください。 <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agentInstall" className="uitext" /> メニューでアクセス キーと収集サーバーのIPアドレスを確認して準備してください。
+エージェント設定には、WhaTapプロジェクトのアクセスキーと収集サーバーのIPアドレスが必要です。 [WhaTapモニタリングサービス](https://service.whatap.io)でアプリケーション(Application)商品のプロジェクトに移動します。 <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" /> メニューでアクセス キーと収集サーバーのIPアドレスを確認して準備します。
 
 ### whatap.confファイルを設定する
 
-エージェント設定(*whatap.conf*) ファイルに アクセスキーと 収集サーバーのIPアドレスを設定してください。
+エージェント設定(*whatap.conf*) ファイルに アクセスキーと 収集サーバーのIPアドレスを設定します。
 
 ```bash
 echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
@@ -102,7 +102,7 @@ echo "whatap.server.host={COLLECTOR_SERVER_IP_ADDRESS}" >> /usr/whatap/otel/what
 
 ### 環境変数で設定する
 
-環境変数(Environment)でアクセスキーと 収集サーバーのIP アドレスを設定できます。
+環境変数(Environment)でアクセスキーと 収集サーバーのIP アドレスを設定できます。
 
 ```ini
 WHATAP_ACCESSKEY={ACCESS_KEY}
@@ -196,6 +196,6 @@ OpenTelemetry Collectorインストールの詳細については、次のリン
 
 ## モニタリングの開始
 
-- すべての設定を完了した後、アプリケーションサーバーを再起動すると、エージェントが情報を収集します。 <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="application_dashboard" className="uitext" />メニューに移動して、収集されたデータをリアルタイムでモニタリングしてください。
+- すべての設定を完了した後、アプリケーションサーバーを再起動すると、エージェントが情報を収集します。 <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />メニューに移動して、収集されたデータをリアルタイムでモニタリングしてください。
 
 - エージェント設定の詳細については、[次の文書](set-agent)を確認してください。

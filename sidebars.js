@@ -3677,9 +3677,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_9_0x',
+          id: 'release-notes/preview/preview-2_10_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_9_0x',
         'release-notes/preview/preview-2_8_0x',
         'release-notes/preview/preview-2_7_0x',
         'release-notes/preview/preview-2_6_0x',
@@ -4002,7 +4003,7 @@ const sidebars = {
                   id: 'release-notes/server/server-2_6_7',
                   className: 'new',
                 },
-                'release-notes/server/server-2_6_7',
+                'release-notes/server/server-2_6_6',
                 'release-notes/server/server-2_6_5',
                 'release-notes/server/server-2_6_4',
                 'release-notes/server/server-2_6_3',
@@ -4011,8 +4012,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_0',
                 'release-notes/server/server-2_5_9',
                 'release-notes/server/server-2_5_8',
-                'release-notes/server/server-2_5_7',
-                'release-notes/server/server-2_5_5',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4039,7 +4038,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
