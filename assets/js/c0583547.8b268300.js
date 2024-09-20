@@ -1,98 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[59496],{
-
-/***/ 59385:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2522);
-
-
-const frontMatter = {
-	id: 'aws-log-search',
-	title: '로그 검색',
-	description: 'AWS Log 모니터링의 로그 검색 메뉴를 안내합니다.',
-	keywords: [
-		'AWS Log',
-		'로그',
-		'로그 검색',
-		'UI'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "aws-log/aws-log-search",
-  "title": "로그 검색",
-  "description": "AWS Log 모니터링의 로그 검색 메뉴를 안내합니다.",
-  "source": "@site/docs/aws-log/aws-log-search.mdx",
-  "sourceDirName": "aws-log",
-  "slug": "/aws-log/aws-log-search",
-  "permalink": "/whatap-docs/aws-log/aws-log-search",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/aws-log/aws-log-search.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "aws-log-search",
-    "title": "로그 검색",
-    "description": "AWS Log 모니터링의 로그 검색 메뉴를 안내합니다.",
-    "keywords": [
-      "AWS Log",
-      "로그",
-      "로그 검색",
-      "UI"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "awslogSidebar",
-  "previous": {
-    "title": "로그 트렌드",
-    "permalink": "/whatap-docs/aws-log/aws-log-exp"
-  },
-  "next": {
-    "title": "Flex 보드",
-    "permalink": "/whatap-docs/aws-log/flexboard"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[41510],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1959,19 +1866,20 @@ function MDXContent(props = {}) {
 /* harmony export */ });
 /* unused harmony exports frontMatter, contentTitle */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_log_role_view_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64118);
 /* harmony import */ var _common_items_log_ui_main_term_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(60205);
 /* harmony import */ var _common_items_log_agent_option_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(29129);
-/* harmony import */ var _common_items_log_contents_check_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(92679);
-/* harmony import */ var _common_items_log_filter_apply2_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(40425);
-/* harmony import */ var _common_items_log_filter_apply_non_parsing_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(24670);
-/* harmony import */ var _common_items_log_filter_modify_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(61613);
-/* harmony import */ var _common_items_log_filter_search_key_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(27985);
-/* harmony import */ var _common_items_log_filter_expressions_search_key_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(35355);
-/* harmony import */ var _common_items_log_filter_expressions_commons_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(45391);
-/* harmony import */ var _common_items_log_contents_highlight_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(279);
-/* harmony import */ var _common_items_log_ui_table_setting_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(57844);
+/* harmony import */ var _common_items_log_table_cl_modify_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(85379);
+/* harmony import */ var _common_items_log_contents_check_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(92679);
+/* harmony import */ var _common_items_log_filter_apply2_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(40425);
+/* harmony import */ var _common_items_log_filter_apply_non_parsing_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(24670);
+/* harmony import */ var _common_items_log_filter_modify_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(61613);
+/* harmony import */ var _common_items_log_filter_search_key_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(27985);
+/* harmony import */ var _common_items_log_filter_expressions_search_key_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(35355);
+/* harmony import */ var _common_items_log_filter_expressions_commons_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(45391);
+/* harmony import */ var _common_items_log_contents_highlight_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(279);
+/* harmony import */ var _common_items_log_ui_table_setting_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(57844);
 
 
 const frontMatter = {};
@@ -1993,15 +1901,16 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
+
 const toc = [..._common_items_log_role_view_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "데이터 조회하기",
   "id": "데이터-조회하기",
   "level": 2
-}, ..._common_items_log_agent_option_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+}, ..._common_items_log_agent_option_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_log_table_cl_modify_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
   "value": "로그 Content 확인하기",
   "id": "로그-content-확인하기",
   "level": 2
-}, ..._common_items_log_contents_check_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+}, ..._common_items_log_contents_check_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
   "value": "필터",
   "id": "log-search-filter",
   "level": 2
@@ -2009,23 +1918,23 @@ const toc = [..._common_items_log_role_view_mdx__WEBPACK_IMPORTED_MODULE_1__/* .
   "value": "필터 적용",
   "id": "필터-적용",
   "level": 3
-}, ..._common_items_log_filter_apply2_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
+}, ..._common_items_log_filter_apply2_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, {
   "value": "미파싱 키워드 필터 적용",
   "id": "미파싱-키워드-필터-적용",
   "level": 3
-}, ..._common_items_log_filter_apply_non_parsing_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, {
+}, ..._common_items_log_filter_apply_non_parsing_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, {
   "value": "필터 수정",
   "id": "필터-수정",
   "level": 3
-}, ..._common_items_log_filter_modify_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, {
+}, ..._common_items_log_filter_modify_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, {
   "value": "검색 키(Search Key)",
   "id": "검색-키search-key",
   "level": 3
-}, ..._common_items_log_filter_search_key_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, {
+}, ..._common_items_log_filter_search_key_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, {
   "value": "필터 입력 문법",
   "id": "filter-expressions",
   "level": 3
-}, ..._common_items_log_filter_expressions_search_key_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_log_filter_expressions_commons_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, {
+}, ..._common_items_log_filter_expressions_search_key_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_log_filter_expressions_commons_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, {
   "value": "로그 태그 옵션",
   "id": "log-tag-options",
   "level": 2
@@ -2033,11 +1942,11 @@ const toc = [..._common_items_log_role_view_mdx__WEBPACK_IMPORTED_MODULE_1__/* .
   "value": "콘텐츠 하이라이트",
   "id": "content-highlight",
   "level": 2
-}, ..._common_items_log_contents_highlight_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, {
+}, ..._common_items_log_contents_highlight_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, {
   "value": "테이블 설정하기",
   "id": "set-table",
   "level": 2
-}, ..._common_items_log_ui_table_setting_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM];
+}, ..._common_items_log_ui_table_setting_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
@@ -2048,7 +1957,7 @@ function _createMdxContent(props) {
     section: "section",
     strong: "strong",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_13__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_14__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname, ImgLang, InDoc, LinkImage, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
@@ -2169,7 +2078,7 @@ function _createMdxContent(props) {
             }), "를 전체 화면에서 확인할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_agent_option_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n"]
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_agent_option_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_table_cl_modify_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n"]
         }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -2177,7 +2086,7 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "로그-content-확인하기",
         children: "로그 Content 확인하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_contents_check_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_contents_check_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -2189,31 +2098,31 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "필터-적용",
         children: "필터 적용"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_apply2_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_apply2_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "미파싱-키워드-필터-적용",
         children: "미파싱 키워드 필터 적용"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_apply_non_parsing_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_apply_non_parsing_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "필터-수정",
         children: "필터 수정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_modify_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_modify_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "검색-키search-key",
         children: "검색 키(Search Key)"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_search_key_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_search_key_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "filter-expressions",
         children: "필터 입력 문법"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_expressions_search_key_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_expressions_commons_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_expressions_search_key_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_filter_expressions_commons_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -2289,19 +2198,19 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "content-highlight",
         children: "콘텐츠 하이라이트"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_contents_highlight_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_contents_highlight_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "set-table",
         children: "테이블 설정하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_ui_table_setting_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_ui_table_setting_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_13__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_14__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -2313,6 +2222,58 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 85379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "로그 테이블 컬럼 가장자리를 드래그해 컬럼 너비를 수정할 수 있습니다."
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
@@ -2620,6 +2581,101 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 85252:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2522);
+
+
+const frontMatter = {
+	id: 'log-search',
+	title: '로그 검색',
+	description: '로그 모니터링의 로그 검색 메뉴를 안내합니다.',
+	keywords: [
+		'로그 모니터링',
+		'로그',
+		'로그 검색',
+		'UI',
+		'Redis'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "redis/log-search",
+  "title": "로그 검색",
+  "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
+  "source": "@site/docs/redis/log-search.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/log-search",
+  "permalink": "/whatap-docs/redis/log-search",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/redis/log-search.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-search",
+    "title": "로그 검색",
+    "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
+    "keywords": [
+      "로그 모니터링",
+      "로그",
+      "로그 검색",
+      "UI",
+      "Redis"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "redisSidebar",
+  "previous": {
+    "title": "로그 트렌드",
+    "permalink": "/whatap-docs/redis/log-exp"
+  },
+  "next": {
+    "title": "로그 설정",
+    "permalink": "/whatap-docs/redis/log-setting"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_search_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

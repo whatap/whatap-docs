@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17995],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20395],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -296,6 +296,8 @@ var _log_role_view = __webpack_require__(64118);
 var _log_agent_option = __webpack_require__(29129);
 // EXTERNAL MODULE: ./docs/common-items/_log-ui-main-term.mdx
 var _log_ui_main_term = __webpack_require__(60205);
+// EXTERNAL MODULE: ./docs/common-items/_log-table-cl-modify.mdx
+var _log_table_cl_modify = __webpack_require__(85379);
 // EXTERNAL MODULE: ./docs/common-items/_log-contents-check.mdx
 var _log_contents_check = __webpack_require__(92679);
 ;// CONCATENATED MODULE: ./docs/common-items/_log-highlight.mdx
@@ -402,11 +404,12 @@ const _log_exp_contentTitle = (/* unused pure expression or super */ null && (un
 
 
 
+
 const _log_exp_toc = [..._log_role_view/* toc */.RM, {
   "value": "데이터 조회하기",
   "id": "데이터-조회하기",
   "level": 2
-}, ..._log_agent_option/* toc */.RM, {
+}, ..._log_agent_option/* toc */.RM, ..._log_table_cl_modify/* toc */.RM, {
   "value": "로그 Content 확인하기",
   "id": "로그-content-확인하기",
   "level": 2
@@ -573,7 +576,7 @@ function _log_exp_createMdxContent(props) {
             }), " 사이드 메뉴에서 태그로 필터를 걸어서 로그를 확인할 수 있습니다. 검색 키는 2개까지 선택할 수 있고, 검색값은 복수 개 선택이 가능합니다."]
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_log_agent_option/* default */.Ay, {}), "\n"]
+          children: ["\n", (0,jsx_runtime.jsx)(_log_agent_option/* default */.Ay, {}), "\n", (0,jsx_runtime.jsx)(_log_table_cl_modify/* default */.Ay, {}), "\n"]
         }), "\n"]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
@@ -691,6 +694,58 @@ function _createMdxContent(props) {
         children: "로그 조회"
       }), " 권한이 없을 경우 해당 메뉴에 진입할 수 없습니다."]
     })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
+/***/ 85379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "로그 테이블 컬럼 가장자리를 드래그해 컬럼 너비를 수정할 수 있습니다."
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -1017,7 +1072,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 3616:
+/***/ 97130:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1041,22 +1096,23 @@ const frontMatter = {
 	keywords: [
 		'로그 모니터링',
 		'로그 트렌드',
-		'UI'
+		'UI',
+		'Oracle Pro'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "log/log-exp",
+  "id": "oracle-pro/log-exp",
   "title": "로그 트렌드",
   "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-  "source": "@site/docs/log/log-exp.mdx",
-  "sourceDirName": "log",
-  "slug": "/log/log-exp",
-  "permalink": "/whatap-docs/log/log-exp",
+  "source": "@site/docs/oracle-pro/log-exp.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/log-exp",
+  "permalink": "/whatap-docs/oracle-pro/log-exp",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/log/log-exp.mdx",
+  "editUrl": "undefined/docs/oracle-pro/log-exp.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -1066,18 +1122,19 @@ const metadata = {
     "keywords": [
       "로그 모니터링",
       "로그 트렌드",
-      "UI"
+      "UI",
+      "Oracle Pro"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "logSidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
     "title": "라이브 테일",
-    "permalink": "/whatap-docs/log/log-lt"
+    "permalink": "/whatap-docs/oracle-pro/log-lt"
   },
   "next": {
     "title": "로그 검색",
-    "permalink": "/whatap-docs/log/log-search"
+    "permalink": "/whatap-docs/oracle-pro/log-search"
   }
 };
 const assets = {

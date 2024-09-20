@@ -1,98 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[25983],{
-
-/***/ 59507:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46378);
-
-
-const frontMatter = {
-	id: 'log-exp',
-	title: '로그 트렌드',
-	description: '로그 모니터링의 로그 트렌드 메뉴를 안내합니다.',
-	keywords: [
-		'로그 모니터링',
-		'로그 트렌드',
-		'UI',
-		'Altibase'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "altibase/log-exp",
-  "title": "로그 트렌드",
-  "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-  "source": "@site/docs/altibase/log-exp.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/log-exp",
-  "permalink": "/whatap-docs/altibase/log-exp",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/altibase/log-exp.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-exp",
-    "title": "로그 트렌드",
-    "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
-    "keywords": [
-      "로그 모니터링",
-      "로그 트렌드",
-      "UI",
-      "Altibase"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "altibaseSidebar",
-  "previous": {
-    "title": "라이브 테일",
-    "permalink": "/whatap-docs/altibase/log-lt"
-  },
-  "next": {
-    "title": "로그 검색",
-    "permalink": "/whatap-docs/altibase/log-search"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[68479],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -389,6 +296,8 @@ var _log_role_view = __webpack_require__(64118);
 var _log_agent_option = __webpack_require__(29129);
 // EXTERNAL MODULE: ./docs/common-items/_log-ui-main-term.mdx
 var _log_ui_main_term = __webpack_require__(60205);
+// EXTERNAL MODULE: ./docs/common-items/_log-table-cl-modify.mdx
+var _log_table_cl_modify = __webpack_require__(85379);
 // EXTERNAL MODULE: ./docs/common-items/_log-contents-check.mdx
 var _log_contents_check = __webpack_require__(92679);
 ;// CONCATENATED MODULE: ./docs/common-items/_log-highlight.mdx
@@ -495,11 +404,12 @@ const _log_exp_contentTitle = (/* unused pure expression or super */ null && (un
 
 
 
+
 const _log_exp_toc = [..._log_role_view/* toc */.RM, {
   "value": "데이터 조회하기",
   "id": "데이터-조회하기",
   "level": 2
-}, ..._log_agent_option/* toc */.RM, {
+}, ..._log_agent_option/* toc */.RM, ..._log_table_cl_modify/* toc */.RM, {
   "value": "로그 Content 확인하기",
   "id": "로그-content-확인하기",
   "level": 2
@@ -666,7 +576,7 @@ function _log_exp_createMdxContent(props) {
             }), " 사이드 메뉴에서 태그로 필터를 걸어서 로그를 확인할 수 있습니다. 검색 키는 2개까지 선택할 수 있고, 검색값은 복수 개 선택이 가능합니다."]
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_log_agent_option/* default */.Ay, {}), "\n"]
+          children: ["\n", (0,jsx_runtime.jsx)(_log_agent_option/* default */.Ay, {}), "\n", (0,jsx_runtime.jsx)(_log_table_cl_modify/* default */.Ay, {}), "\n"]
         }), "\n"]
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
@@ -784,6 +694,58 @@ function _createMdxContent(props) {
         children: "로그 조회"
       }), " 권한이 없을 경우 해당 메뉴에 진입할 수 없습니다."]
     })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
+/***/ 85379:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "로그 테이블 컬럼 가장자리를 드래그해 컬럼 너비를 수정할 수 있습니다."
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -1104,6 +1066,99 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 98272:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46378);
+
+
+const frontMatter = {
+	id: 'log-exp',
+	title: '로그 트렌드',
+	description: '로그 모니터링의 로그 트렌드 메뉴를 안내합니다.',
+	keywords: [
+		'로그 모니터링',
+		'로그 트렌드',
+		'UI',
+		'PostgreSQL'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "postgresql/log-exp",
+  "title": "로그 트렌드",
+  "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
+  "source": "@site/docs/postgresql/log-exp.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/log-exp",
+  "permalink": "/whatap-docs/postgresql/log-exp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/postgresql/log-exp.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-exp",
+    "title": "로그 트렌드",
+    "description": "로그 모니터링의 로그 트렌드 메뉴를 안내합니다.",
+    "keywords": [
+      "로그 모니터링",
+      "로그 트렌드",
+      "UI",
+      "PostgreSQL"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "postgreSidebar",
+  "previous": {
+    "title": "라이브 테일",
+    "permalink": "/whatap-docs/postgresql/log-lt"
+  },
+  "next": {
+    "title": "로그 검색",
+    "permalink": "/whatap-docs/postgresql/log-search"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_exp_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
