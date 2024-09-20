@@ -15,11 +15,11 @@ In case of web applications with the content security policy (CSP) settings, add
 
 In addition, the browser agent needs to add the web worker-related CSP options for efficient data transfer.
 
-| Directive                   | Source                                             | Description                                                                                                      |
-| --------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| script-src, script-src-elem | unsafe-inline                                      | Install the browser agent by using an inline script.                                                             |
-| script-src, script-src-elem | https://repo.whatap-browser-agent.io/rum/prod/     | Browser agent CDN domain                                                                                         |
-| connect-src                 | https://rum-ap-northeast-2.whatap-browser-agent.io | Domain for transmission of collected data                                                                        |
+| Directive                   | Source                                             | Description                                                                                   |
+| --------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| script-src, script-src-elem | unsafe-inline                                      | Install the browser agent by using an inline script.                                          |
+| script-src, script-src-elem | https://repo.whatap-browser-agent.io/rum/prod/     | Browser agent CDN domain                                                                      |
+| connect-src                 | https://rum-ap-northeast-2.whatap-browser-agent.io | Domain for transmission of collected data                                                     |
 | worker-src, child-src       | blob:                                              | Web worker-related CSP options for efficient data transfer by the browser agent (recommended) |
 
 ## Timing-Allow-Origin Setting

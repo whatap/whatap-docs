@@ -1,0 +1,38 @@
+---
+id: java-2_2_38
+title: Java Agent v2.2.38
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_37
+displayed_sidebar: releaseSidebar
+---
+
+August 14, 2024
+
+- <Status priority='1'>Feature</Status> spring-boot-3.2 tracing
+
+  ```ini title="whatap.conf"
+  weaving=spring-boot-3.2
+  ```
+
+  The following libraries or frameworks are traced.
+
+  - RestTemplate
+  - RestClient
+  - WebClient
+  - spring-cloud-gateway
+  - spring-kafka
+  - spring-kafka-batch
+  - r2dbc-mysql-0.9.3 - 1.1.3
+  - jasync-r2dbc-mysql-2.1.23
+
+- <Status priority='1'>Changed</Status> Modified the transaction name while tracing the spring-kafka batch.
+
+  - Previous: `[kafka] {topic} (cnt: {Number of polls in Kafka})`
+
+  - After: `[kafka-batch] {topic}`
+
+- <Status priority='1'>Deprecated</Status> Stopped tracing the keys and parameters of the lettuce driver.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.38" />

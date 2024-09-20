@@ -6,12 +6,12 @@ A tag consists of a search key and a search value. In the following example, the
 
 <InDoc pages="log-lt,aws-log-lt">
 
-| Search key types                                             | Search key format | Meaning        | Example for Search key and search value                  | Seach example                       |
-| ------------------------------------------------------------ | ----------------- | -------------- | -------------------------------------------------------- | ----------------------------------- |
-| String keyword                                               | keyword           | File Name      | - Key: fileName<br/> - Value: /data/whatap/logs/yard.log | fileName:/data/whatap/logs/yard.log |
-| Numeric keyword                                              | keyword.n         | Response Time  | - Key: response_time.n<br/> - Value: 2945                | response_time.n>=2945               |
+| Search key types                          | Search key format | Meaning        | Example for Search key and search value                  | Seach example                       |
+| ----------------------------------------- | ----------------- | -------------- | -------------------------------------------------------- | ----------------------------------- |
+| String keyword                            | keyword           | File Name      | - Key: fileName<br/> - Value: /data/whatap/logs/yard.log | fileName:/data/whatap/logs/yard.log |
+| Numeric keyword                           | keyword.n         | Response Time  | - Key: response_time.n<br/> - Value: 2945                | response_time.n>=2945               |
 | Reserved keyword<br/>(predefined keyword) | @keyword          | Transaction ID | - Key: @txid<br/> - Value: 85459614215434144             | -                                   |
-| Log body's keyword                                           | content           | Log body       | - Key: content<br/> - Value: user input                  | content: `*ERROR*`                  |
+| Log body's keyword                        | content           | Log body       | - Key: content<br/> - Value: user input                  | content: `*ERROR*`                  |
 
 :::note
 
@@ -27,10 +27,10 @@ A tag consists of a search key and a search value. In the following example, the
 
 <InDoc pages="log-search,aws-log-search">
 
-| Search key types                                             | Search key format | Meaning        | Example for Search key and search value                  | Seach example                       |
-| ------------------------------------------------------------ | ----------------- | -------------- | -------------------------------------------------------- | ----------------------------------- |
-| String keyword                                               | keyword           | File Name      | - Key: fileName<br/> - Value: /data/whatap/logs/yard.log | fileName:/data/whatap/logs/yard.log |
-| Numeric keyword                                              | keyword.n         | Response Time  | - Key: response_time.n<br/> - Value: 2945                | response_time.n>=2945               |
+| Search key types                          | Search key format | Meaning        | Example for Search key and search value                  | Seach example                       |
+| ----------------------------------------- | ----------------- | -------------- | -------------------------------------------------------- | ----------------------------------- |
+| String keyword                            | keyword           | File Name      | - Key: fileName<br/> - Value: /data/whatap/logs/yard.log | fileName:/data/whatap/logs/yard.log |
+| Numeric keyword                           | keyword.n         | Response Time  | - Key: response_time.n<br/> - Value: 2945                | response_time.n>=2945               |
 | Reserved keyword<br/>(predefined keyword) | @keyword          | Transaction ID | - Key: @txid<br/> - Value: 85459614215434144             | -                                   |
 
 </InDoc>

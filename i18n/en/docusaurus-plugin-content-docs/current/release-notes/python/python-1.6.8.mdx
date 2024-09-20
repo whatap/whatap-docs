@@ -1,0 +1,21 @@
+---
+id: python-1_6_8
+title: Python Agent v1.6.8
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_6_7
+displayed_sidebar: releaseSidebar
+---
+
+August 27, 2024
+
+- <Status priority='1'>New</Status> Added the module tracing feature to support various versions of **graphql-core**.
+
+  In **graphql-core 3.x+** versions, instrumentation has been added to the `graphql.execution.execute` module, while in **graphql-core 2.x** versions, the `graphql.execution.executor` module has been supported.
+
+- <Status priority='1'>Changed</Status> Modified the *trace_module_definition.py* file to properly instrument modules based on the **graphql-core** version (supporting both the latest and older versions).
+
+:::note
+
+Agent download: [whatap-python v1.6.8](https://pypi.org/project/whatap-python/1.6.8/)
+
+:::

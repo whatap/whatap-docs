@@ -1,0 +1,226 @@
+---
+id: metrics-data-list
+title: Altibase Metrics
+description: The following is the guide to Altibase metrics.
+keywords:
+  - Altibase
+  - Metrics
+  - DATABASE
+  - DATABASE
+---
+
+Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
+
+For more information about columns, see [the link](https://altibase.com/en/learn/manuals.php).
+
+## db_altibase_counter {#db_altibase_counter}
+
+### Tags {#db_altibase_counter-tags}
+
+The following lists the tags that are collected in the `db_altibase_counter` category.
+
+| Tag name    | Description                                | Remarks      |
+| ----------- | ------------------------------------------ | ------------ |
+| `dbIsMulti` | Whether to support the multitenant or not. | -            |
+| `dbType`    | Database type.                             | -            |
+| `dbVersion` | Version of the database in use.            | -            |
+| `oname`     | Agent name                                 | Unique value |
+
+### Field {#db_altibase_counter-filed}
+
+The following lists the fields that are collected in the `db_altibase_counter` category.
+
+<div class='metric'>
+
+| Metric                                                                                  | Description                                                                            |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `active_sessions`                                                                       | Number of active sessions.                                                             |
+| `base time in second`                                                                   | Value measured as the base time (seconds).                                             |
+| `byte received via IB`                                                                  | Bytes received via InfiniBand.                                                         |
+| `byte received via inet`                                                                | Bytes received over the Internet.                                                      |
+| `byte received via unix domain`                                                         | Bytes received via the Unix domain.                                                    |
+| `byte sent via IB`                                                                      | Bytes transmitted via InfiniBand.                                                      |
+| `byte sent via inet`                                                                    | Bytes transmitted over the Internet.                                                   |
+| `byte sent via unix domain`                                                             | Bytes transmitted via the Unix domain.                                                 |
+| `connect_error`                                                                         | Number of connection errors occurred.                                                  |
+| `cpu_cores`                                                                             | Number of CPU cores of the system.                                                     |
+| `data page create`                                                                      | Number of cases a data page has been created.                                          |
+| `data page fix`                                                                         | Number of cases a data page has been modified.                                         |
+| `data page gets`                                                                        | Number of accesses to the data page.                                                   |
+| `data page read`                                                                        | Number of cases a data page has been read from disk.                                   |
+| `data page write`                                                                       | Number of cases a data page has been written to disk.                                  |
+| `db file multi page read time waited`                                                   | Time waited while reading multiple pages.                                              |
+| `db file single page read time waited`                                                  | Time waited while reading a single page.                                               |
+| `db file single page write time waited`                                                 | Time waited while writing a single page.                                               |
+| `ddl sync timeout`                                                                      | Timeout time in DDL synchronization.                                                   |
+| `ddl timeout`                                                                           | Timeout time in DDL operation.                                                         |
+| `delete retry count`                                                                    | Number of retries for delete operation.                                                |
+| `disk table cursor GRID scan count`                                                     | Number of cases a grid scan cursor has been used on the disk table.                    |
+| `disk table cursor full scan count`                                                     | Number of cases a full scan cursor has been opened on the disk table.                  |
+| `disk table cursor index scan count`                                                    | Number of cases an index scan cursor has been used on the disk table.                  |
+| `elapsed time: add hard-prepared plan to plan cache`                                    | Time taken to add a hard-prepared plan to the plan cache.                              |
+| `elapsed time: add hard-rebuild plan to plan cache`                                     | Time taken to add a hard-rebuilt plan to the plan cache.                               |
+| `elapsed time: allocate data slot in DML(disk)`                                         | Time spent allocating data slots during DML operations.                                |
+| `elapsed time: allocate tss in dml(disk)`                                               | Time spent allocating TSS during DML operations.                                       |
+| `elapsed time: allocate undopage in dml(disk)`                                          | Time spent allocating undo pages during DML operations.                                |
+| `elapsed time: analyze values in DML(disk)`                                             | Time spent analyzing values during DML operations.                                     |
+| `elapsed time: copying logs to replication log buffer (sender side)`                    | Time taken to copy logs to the replication log buffer.                                 |
+| `elapsed time: create page(disk)`                                                       | Time taken to create a page on disk.                                                   |
+| `elapsed time: creation time for child PCO`                                             | Time taken to create a child PCO.                                                      |
+| `elapsed time: creation time for new child PCO by rebuild at execution`                 | Time taken to create a new child PCO by a rebuild at runtime.                          |
+| `elapsed time: creation time for new child PCO by rebuild at soft prepare`              | Time taken to create a new child PCO by a rebuild at soft preparation.                 |
+| `elapsed time: creation time for parent PCO`                                            | Time taken to create a parent PCO.                                                     |
+| `elapsed time: fix page(disk)`                                                          | Time taken to modify a page on disk.                                                   |
+| `elapsed time: get page(disk)`                                                          | Time taken to fetch pages from disk.                                                   |
+| `elapsed time: hard prepare time`                                                       | Time taken for hard preparation.                                                       |
+| `elapsed time: hard rebuild`                                                            | Time taken for hard rebuild.                                                           |
+| `elapsed time: index operation in dml(disk)`                                            | Time spent on index operation during DML operations.                                   |
+| `elapsed time: logical aging by tx in dml(disk)`                                        | Time taken on logical aging by transactions during DML operations.                     |
+| `elapsed time: matching time for child PCO`                                             | Time taken to match a child PCO.                                                       |
+| `elapsed time: moving time from cold region to hot region`                              | Time taken to move from cold region to hot region.                                     |
+| `elapsed time: phyical aging by tx in dml(disk)`                                        | Time taken on physical aging by transactions during DML operations.                    |
+| `elapsed time: privilege checking time during soft prepare`                             | Time taken to check privilege during soft preparation.                                 |
+| `elapsed time: query execute`                                                           | Time taken to execute query.                                                           |
+| `elapsed time: query fetch`                                                             | Time taken to fetch the query result.                                                  |
+| `elapsed time: query optimize`                                                          | Time taken for query optimization.                                                     |
+| `elapsed time: query parse`                                                             | Time taken to parse the query.                                                         |
+| `elapsed time: query validate`                                                          | Time taken to verify the query.                                                        |
+| `elapsed time: receiver(s) aborting transaction(s)`                                     | Time taken for the recipient to abort the transaction.                                 |
+| `elapsed time: receiver(s) beginning transaction(s)`                                    | Time taken for the recipient to start the transaction.                                 |
+| `elapsed time: receiver(s) closing LOB cursor(s)`                                       | Time taken for the recipient to close the LOB cursor.                                  |
+| `elapsed time: receiver(s) closing table cursor(s)`                                     | Time taken for the recipient to close the table cursor.                                |
+| `elapsed time: receiver(s) committing transaction(s)`                                   | Time taken for the recipient to commit the transaction.                                |
+| `elapsed time: receiver(s) comparing images to check for conflicts`                     | Time taken for the recipient to compare images to check for conflicts.                 |
+| `elapsed time: receiver(s) deleting rows`                                               | Time taken for the recipient to delete the row.                                        |
+| `elapsed time: receiver(s) finish writing LOBs`                                         | Time taken for the recipient to complete writing the LOB.                              |
+| `elapsed time: receiver(s) inserting rows`                                              | Time taken for the recipient to insert the row.                                        |
+| `elapsed time: receiver(s) opening lob cursor(s)`                                       | Time taken for the recipient to open the LOB cursor.                                   |
+| `elapsed time: receiver(s) opening table cursor(s)`                                     | Time taken for the recipient to open the table cursor.                                 |
+| `elapsed time: receiver(s) performing endian conversion`                                | Time taken for the recipient to perform endian conversion.                             |
+| `elapsed time: receiver(s) preparing to write LOB(s)`                                   | Time taken for the recipient to prepare to write the LOB.                              |
+| `elapsed time: receiver(s) receiving xlogs from sender(s)`                              | Time taken for the recipient to receive the xlog from the sender.                      |
+| `elapsed time: receiver(s) sending ACK`                                                 | Time taken for the recipient to send an ACK.                                           |
+| `elapsed time: receiver(s) trim LOB(s)`                                                 | Time taken for the recipient to trim the LOB.                                          |
+| `elapsed time: receiver(s) updating rows`                                               | Time taken for the recipient to update the row.                                        |
+| `elapsed time: receiver(s) writing LOB piece(s)`                                        | Time taken for the recipient to write the LOB pieces.                                  |
+| `elapsed time: record lock validation in DML(disk)`                                     | Time spent verifying record locks during DML operations.                               |
+| `elapsed time: replace(plan cache)`                                                     | Time taken to replace in the plan cache.                                               |
+| `elapsed time: search time for child PCO`                                               | Time taken to search a child PCO.                                                      |
+| `elapsed time: search time for parent PCO`                                              | Time taken to search a parent PCO.                                                     |
+| `elapsed time: sender(s) analyzing logs`                                                | Time taken for the sender to analyze the log.                                          |
+| `elapsed time: sender(s) checking whether logs are useful`                              | Time taken for the sender to check the usefulness of the log.                          |
+| `elapsed time: sender(s) reading logs from log file(s)`                                 | Time taken for the sender to read the log from the log file.                           |
+| `elapsed time: sender(s) reading logs from replication log buffer`                      | Time taken for the sender to read the log from the replication log buffer.             |
+| `elapsed time: sender(s) receiving ACK from receiver(s)`                                | Time taken for the sender to receive the ACK from the recipient.                       |
+| `elapsed time: sender(s) sending xlogs to receiver(s)`                                  | Time taken for the sender to transmit the xlog to the recipient.                       |
+| `elapsed time: sender(s) setting ACKed value`                                           | Time taken for the sender to set the ACKed value.                                      |
+| `elapsed time: sender(s) waiting for new logs`                                          | Time taken for the sender to wait for a new log.                                       |
+| `elapsed time: soft prepare`                                                            | Time taken for soft preparation.                                                       |
+| `elapsed time: soft rebuild`                                                            | Time taken for soft rebuild.                                                           |
+| `elapsed time: task schedule`                                                           | Time taken for task scheduling.                                                        |
+| `elapsed time: validation time for child PCO`                                           | Time taken to validate a child PCO.                                                    |
+| `elapsed time: victim free in replace(plan cache)`                                      | Time taken to free the victim from the planned cache replacement.                      |
+| `elapsed time: waiting time for hard prepare`                                           | Time taken to wait for hard preparation.                                               |
+| `elapsed time: waiting time for parent PCO when choosing plan cache replacement victim` | Time waited for the parent PCO when selecting a planned cache replacement victim.      |
+| `elapsed time: write undo record in DML(disk)`                                          | Time spent writing undo records during DML operations.                                 |
+| `enq: TX - allocate TXSEG entry time waited`                                            | Time waited for TXSEG allocation.                                                      |
+| `enq: TX - row lock contention, data row time waited`                                   | Data row waiting time due to row lock contention.                                      |
+| `execute failure count`                                                                 | Number of query execution failures.                                                    |
+| `execute success count`                                                                 | Number of query execution successes.                                                   |
+| `execute success count : delete`                                                        | Number of delete query execution successes.                                            |
+| `execute success count : insert`                                                        | Number of insert query execution successes.                                            |
+| `execute success count : select`                                                        | Number of select query execution successes.                                            |
+| `execute success count : update`                                                        | Number of update query execution successes.                                            |
+| `fetch failure count`                                                                   | Number of query result fetch failures.                                                 |
+| `fetch success count`                                                                   | Number of query result fetch successes.                                                |
+| `fetch timeout`                                                                         | Number of query result fetch timeouts.                                                 |
+| `idle timeout`                                                                          | Number of idle timeouts.                                                               |
+| `latch free: drdb LRU list time waited`                                                 | Latch release waiting time in the DRDB LRU list.                                       |
+| `latch free: drdb buffer bcb mutex time waited`                                         | Latch free time waited in the DRDB buffer BCB mutex.                                   |
+| `latch free: drdb buffer bcb read io mutex time waited`                                 | Latch free time waited in the DRDB buffer BCB read IO mutex.                           |
+| `latch free: drdb buffer buffer manager expand mutex time waited`                       | Latch free time waited in the DRDB buffer manager expansion mutex.                     |
+| `latch free: drdb buffer flush manager req job time waited`                             | Time waited for the DRBD buffer flush manager request job.                             |
+| `latch free: drdb buffer flusher min recovery LSN time waited`                          | Time waited for the DRBD buffer flusher's minimum recovery LSN.                        |
+| `latch free: drdb buffer hash mutex time waited`                                        | Latch free time waited in the DRDB buffer hash mutex.                                  |
+| `latch free: drdb checkpoint list time waited`                                          | Latch free waiting time in the DRDB checkpoint list.                                   |
+| `latch free: drdb file io time waited`                                                  | Latch free waiting time in the DRDB file IO.                                           |
+| `latch free: drdb flush list time waited`                                               | Latch release waiting time in the DRDB flush list.                                     |
+| `latch free: drdb page list entry time waited`                                          | Latch free waiting time in the DRDB page list.                                         |
+| `latch free: drdb prepare list time waited`                                             | Latch release waiting time in the DRDB preparation list.                               |
+| `latch free: drdb prepare list wait time waited`                                        | Latch free waiting time out of the DRDB preparation list waiting time.                 |
+| `latch free: drdb secondary bcb mutex time waited`                                      | Latch free time waited in the DRDB secondary BCB mutex.                                |
+| `latch free: drdb secondary buffer block wait time waited`                              | Latch free waiting time out of the DRDB secondary buffer block waiting time.           |
+| `latch free: drdb secondary buffer checkpoint list time waited`                         | Latch free waiting time in the DRDB secondary buffer checkpoint list.                  |
+| `latch free: drdb secondary buffer flush block mutex time waited`                       | Latch free waiting time out of the DRDB secondary buffer flush block mutex.            |
+| `latch free: drdb secondary buffer flush manager req job time waited`                   | Time waited for the DRBD secondary buffer flush manager request job.                   |
+| `latch free: drdb secondary buffer flusher min recovery LSN time waited`                | Time waited for the DRBD secondary buffer flusher's minimum recovery LSN.              |
+| `latch free: drdb secondary buffer io time waited`                                      | Latch free waiting time in the DRDB secondary buffer IO.                               |
+| `latch free: drdb secondary read io mutex time waited`                                  | Latch free time waited in the DRDB secondary read IO mutex.                            |
+| `latch free: drdb tbs creation time waited`                                             | Latch free waiting time out of the DRDB TBS creation waiting time.                     |
+| `latch free: drdb tbs list time waited`                                                 | Latch release waiting time in the DRDB TBS list.                                       |
+| `latch free: drdb transaction segment freelist time waited`                             | Latch free waiting time in the DRDB transaction segment freelist.                      |
+| `latch free: others time waited`                                                        | Latch free waiting time in other jobs.                                                 |
+| `latch free: plan cache LRU List mutex time waited`                                     | Latch free waiting time in the planned cache LRU list mutex.                           |
+| `latch free: statement list mutex time waited`                                          | Latch free waiting time in the SQL statement list mutex.                               |
+| `latch: buffer busy waits time waited`                                                  | Latch waiting time in the buffer busy waiting time.                                    |
+| `latch: drdb B-Tree index SMO by other session time waited`                             | Latch waiting time in the DRDB B-tree index SMO waiting time caused by other sessions. |
+| `latch: drdb B-Tree index SMO time waited`                                              | Latch waiting time in the DRDB B-tree index SMO waiting time.                          |
+| `latch: drdb R-Tree index SMO time waited`                                              | Latch waiting time in the DRDB R-tree index SMO waiting time.                          |
+| `lock acquired count`                                                                   | Number of acquired locks.                                                              |
+| `lock released count`                                                                   | Number of released locks.                                                              |
+| `lock row retry count`                                                                  | Number of logged in sessions.                                                          |
+| `lock_wait_sessions`                                                                    | Number of sessions waiting for lock.                                                   |
+| `logon cumulative`                                                                      | Number of cumulative logins.                                                           |
+| `logon current`                                                                         | Number of logged in sessions.                                                          |
+| `long_running_sessions`                                                                 | Number of long running sessions.                                                       |
+| `max time: task schedule`                                                               | Maximum time taken for task scheduling.                                                |
+| `memory table access count`                                                             | Number of accesses to the memory table.                                                |
+| `memory table cursor GRID scan count`                                                   | Number of cases a grid scan cursor has been used on the memory table.                  |
+| `memory table cursor full scan count`                                                   | Number of cases a full scan cursor has been opened on the memory table.                |
+| `memory table cursor index scan count`                                                  | Number of cases a index scan cursor has been used on the memory table.                 |
+| `missing ppco x-trylatch count`                                                         | Number of missing PPCO x-trylatches.                                                   |
+| `obj_invalid_cnt`                                                                       | Number of invalid objects.                                                             |
+| `pq_sessions`                                                                           | Number of parallel query sessions.                                                     |
+| `prepare failure count`                                                                 | Number of prepare failures.                                                            |
+| `prepare success count`                                                                 | Number of prepare successes.                                                           |
+| `query timeout`                                                                         | Number of query execution timeouts.                                                    |
+| `read IB count`                                                                         | Number of read operations via InfiniBand.                                              |
+| `read socket count`                                                                     | Number of read operations via the socket.                                              |
+| `rebuild count`                                                                         | Number of rebuild operations.                                                          |
+| `rep_execute success count : delete`                                                    | Number of replication execution successes in delete operations.                        |
+| `rep_execute success count : insert`                                                    | Number of replication execution successes in insert operations.                        |
+| `rep_execute success count : update`                                                    | Number of replication execution successes in update operations.                        |
+| `replication after commit time waited`                                                  | Waiting time after committing the replication operation.                               |
+| `replication before commit time waited`                                                 | Waiting time before committing the replication operation.                              |
+| `secondary buffer file multi page read time waited`                                     | Time waited for reading multiple pages from the secondary buffer file.                 |
+| `secondary buffer file single page read time waited`                                    | Time waited for reading a single page from the secondary buffer file.                  |
+| `secondary buffer file single page write time waited`                                   | Time waited for writing a single page from the secondary buffer file.                  |
+| `semop count for receiving via ipc`                                                     | Number of semop operations received via IPC.                                           |
+| `semop count for sending via ipc`                                                       | Number of semop operations transmitted via IPC.                                        |
+| `service thread created count`                                                          | Number of created service threads.                                                     |
+| `session commit`                                                                        | Number of session commits.                                                             |
+| `session rollback`                                                                      | Number of session rollbacks.                                                           |
+| `session terminated`                                                                    | Number of terminated sessions.                                                         |
+| `statement rebuild count`                                                               | Number of SQL rebuilds.                                                                |
+| `system internal time waited`                                                           | Time waited for internal system operations.                                            |
+| `total_elapse_time`                                                                     | Total elapsed time.                                                                    |
+| `total_sessions`                                                                        | Total number of sessions.                                                              |
+| `undo page create`                                                                      | Number of undo pages created.                                                          |
+| `undo page fix`                                                                         | Number of undo pages modified.                                                         |
+| `undo page gets`                                                                        | Number of accesses to the undo page.                                                   |
+| `undo page read`                                                                        | Number of undo pages read.                                                             |
+| `undo page write`                                                                       | Number of undo pages written.                                                          |
+| `unique violation count`                                                                | Number of unique violations.                                                           |
+| `update retry count`                                                                    | Number of retries for update operation.                                                |
+| `utrans timeout`                                                                        | Number of user transaction timeouts.                                                   |
+| `wait_sessions`                                                                         | Number of waiting sessions.                                                            |
+| `write IB count`                                                                        | Number of write operations via InfiniBand.                                             |
+| `write redo log bytes`                                                                  | Bytes recorded in the redo log.                                                        |
+| `write redo log count`                                                                  | Number of write operations to the redo log.                                            |
+| `write socket count`                                                                    | Number of write operations via the socket.                                             |
+
+</div>
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />

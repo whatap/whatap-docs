@@ -9,15 +9,15 @@ This category collects the metrics related to the active transaction step.
 
 <div className="c3-30-60-10">
 
-| Tag name       | Description                                                         | Remarks       |
-| -------------- | ------------------------------------------------------------------- | ------------- |
-| `container`    | Container name                                                      | Unique value  |
-| `containerKey` | Container's key value                                               | Unique value  |
-| `host_ip`      | Host IP Address                                                     | Unique value  |
-| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
-| `oname`        | Agent name                                                          | Unique value  |
-| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
-| `pid`          | Unique ID for the process                                           | -             |
+| Tag name       | Description                                      | Remarks       |
+| -------------- | ------------------------------------------------ | ------------- |
+| `container`    | Container name                                   | Unique value  |
+| `containerKey` | Container's key value                            | Unique value  |
+| `host_ip`      | Host IP Address                                  | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`         | -             |
+| `oname`        | Agent name                                       | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`         | -             |
+| `pid`          | Unique ID for the process                        | -             |
 | `type`         | Platform type (application development language) | Language name |
 
 </div>
@@ -85,16 +85,16 @@ This category collects the data related to various performance metrics and stati
 
 <div className="c3-30-60-10">
 
-| Tag name       | Description                                                         | Remarks       |
-| -------------- | ------------------------------------------------------------------- | ------------- |
-| `alias`        | Application's alias                                                 | Unique value  |
-| `container`    | Container name                                                      | Unique value  |
-| `containerKey` | Container's key value                                               | Unique value  |
-| `host_ip`      | Host IP Address                                                     | Unique value  |
-| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
-| `oname`        | Agent name                                                          | Unique value  |
-| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
-| `pid`          | Unique ID for the process                                           | -             |
+| Tag name       | Description                                      | Remarks       |
+| -------------- | ------------------------------------------------ | ------------- |
+| `alias`        | Application's alias                              | Unique value  |
+| `container`    | Container name                                   | Unique value  |
+| `containerKey` | Container's key value                            | Unique value  |
+| `host_ip`      | Host IP Address                                  | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`         | -             |
+| `oname`        | Agent name                                       | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`         | -             |
+| `pid`          | Unique ID for the process                        | -             |
 | `type`         | Platform type (application development language) | Language name |
 
 </div>
@@ -161,7 +161,7 @@ This is a category in which the metric of the `app_counter` counter is calculate
 | `active_tx_3`     | Count       | Number of transactions in the section between 3 seconds and 8 seconds | -       |
 | `active_tx_8`     | Count       | Number of transactions in the section over 8 seconds                  | -       |
 | `active_tx_count` | Count       | Number of all transactions in progress                                | -       |
-| `apdex`           | number      | APDEX (Application Customer Satisfaction)          | -       |
+| `apdex`           | number      | APDEX (Application Customer Satisfaction)                             | -       |
 | `apdex100`        | Percent     | Percentage in the`apdex` field                                        | -       |
 | `apdex_satisfied` | Count       | Number of APDEX satisfactions                                         | -       |
 | `apdex_tolerated` | Count       | Number of APDEX toleration cases                                      | -       |
@@ -201,7 +201,7 @@ This is a category in which the `app_counter` counter metric is calculated on a 
 | `active_tx_3`     | Count       | Number of transactions in the section between 3 seconds and 8 seconds | -       |
 | `active_tx_8`     | Count       | Number of transactions in the section over 8 seconds                  | -       |
 | `active_tx_count` | Count       | Number of all transactions in progress                                | -       |
-| `apdex`           | number      | APDEX (Application Customer Satisfaction)          | -       |
+| `apdex`           | number      | APDEX (Application Customer Satisfaction)                             | -       |
 | `apdex100`        | Percent     | Percentage in the`apdex` field                                        | -       |
 | `apdex_satisfied` | Count       | Number of APDEX satisfactions                                         | -       |
 | `apdex_tolerated` | Count       | Number of APDEX toleration cases                                      | -       |
@@ -235,16 +235,16 @@ This is a category of data collected from the resources of the application serve
 
 <div className="c3-30-60-10">
 
-| Tag name       | Description                                                         | Remarks       |
-| -------------- | ------------------------------------------------------------------- | ------------- |
-| `alias`        | Application's alias                                                 | Unique value  |
-| `container`    | Container name                                                      | Unique value  |
-| `containerKey` | Container's key value                                               | Unique value  |
-| `host_ip`      | Host IP Address                                                     | Unique value  |
-| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
-| `oname`        | Agent name                                                          | Unique value  |
-| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
-| `pid`          | Unique ID of a specific process                                     | -             |
+| Tag name       | Description                                      | Remarks       |
+| -------------- | ------------------------------------------------ | ------------- |
+| `alias`        | Application's alias                              | Unique value  |
+| `container`    | Container name                                   | Unique value  |
+| `containerKey` | Container's key value                            | Unique value  |
+| `host_ip`      | Host IP Address                                  | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`         | -             |
+| `oname`        | Agent name                                       | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`         | -             |
+| `pid`          | Unique ID of a specific process                  | -             |
 | `type`         | Platform type (application development language) | Language name |
 
 </div>
@@ -302,7 +302,7 @@ This category measures the number of transactions based on the response time ran
 | `error`    | count  | Number of erroneous transactions                                                     | -       |
 | `id`       | Int32  | Unique ID to identify active transactions                                            | -       |
 | `timeSum`  | number | Total response time for active transactions                                          | -       |
-| `type`     | string | `db` (DB Connection) or `httpc` (HTTP Call)    | -       |
+| `type`     | string | `db` (DB Connection) or `httpc` (HTTP Call)                                          | -       |
 
 </div>
 
@@ -330,10 +330,10 @@ This is a category that collects the data related to application users.
 
 <div className="c4-20-10-50-10">
 
-| Field name      | Unit  | Description                                                                                | Remarks |
-| --------------- | ----- | ------------------------------------------------------------------------------------------ | ------- |
+| Field name      | Unit  | Description                                                             | Remarks |
+| --------------- | ----- | ----------------------------------------------------------------------- | ------- |
 | `logbits`       | byte  | User log bit information (unit of data created by user activity events) | -       |
-| `realtime_user` | count | Number of concurrent users                                                                 | -       |
+| `realtime_user` | count | Number of concurrent users                                              | -       |
 
 </div>
 
@@ -388,8 +388,8 @@ This category collects the events that occur every 5 seconds. The collection int
 
 <div className="c4-20-10-50-10">
 
-| Field name | Unit                               | Description                                                             | Remarks |
-| ---------- | ---------------------------------- | ----------------------------------------------------------------------- | ------- |
+| Field name | Unit            | Description                                          | Remarks |
+| ---------- | --------------- | ---------------------------------------------------- | ------- |
 | `curtime`  | Millisecond(ms) | Event occurrence time (UNIX epoch time, millisecond) | -       |
 
 </div>
@@ -413,13 +413,13 @@ This category collects the events that occur when cube operation is completed. T
 
 <div className="c4-20-10-50-10">
 
-| Field name | Unit                               | Description                                                                      | Remarks |
-| ---------- | ---------------------------------- | -------------------------------------------------------------------------------- | ------- |
+| Field name | Unit            | Description                                                   | Remarks |
+| ---------- | --------------- | ------------------------------------------------------------- | ------- |
 | `cubetime` | Millisecond(ms) | Cube operation completion time (UNIX epoch time, millisecond) | -       |
-| `date`     | date                               | Converts `cubetime` to the yyyymmdd format.                                      | -       |
-| `date9`    | date                               | Converts the `date` value to the GMT+9 time zone.                                | -       |
-| `hhmmss`   | time                               | Converts `cubetime` to the hhmmss format.                                        | -       |
-| `hhmmss9`  | time                               | Converts the `hhmmss` value to the GMT+9 time zone.                              | -       |
+| `date`     | date            | Converts `cubetime` to the yyyymmdd format.                   | -       |
+| `date9`    | date            | Converts the `date` value to the GMT+9 time zone.             | -       |
+| `hhmmss`   | time            | Converts `cubetime` to the hhmmss format.                     | -       |
+| `hhmmss9`  | time            | Converts the `hhmmss` value to the GMT+9 time zone.           | -       |
 
 </div>
 
@@ -446,9 +446,9 @@ This is a category that collects the statistical data related to application use
 
 <div className="c4-20-10-50-10">
 
-| Field name   | Unit  | Description                                                                                | Remarks |
-| ------------ | ----- | ------------------------------------------------------------------------------------------ | ------- |
+| Field name   | Unit  | Description                                                             | Remarks |
+| ------------ | ----- | ----------------------------------------------------------------------- | ------- |
 | `logbits`    | byte  | User log bit information (unit of data created by user activity events) | -       |
-| `visit_user` | count | Number of visitors during the search period                                                | -       |
+| `visit_user` | count | Number of visitors during the search period                             | -       |
 
 </div>
