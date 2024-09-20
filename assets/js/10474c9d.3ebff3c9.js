@@ -742,7 +742,10 @@ function _createMdxContent(props) {
         id: "추가-설정",
         children: "추가 설정"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["노드 맵 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_nodeMap",
+          className: "uitext"
+        }), " 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "설정 아이콘",
           src: (__webpack_require__(12289)/* ["default"] */ .A) + "",
           width: "24",
@@ -819,8 +822,11 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "노드-맵-차트",
         children: "노드 맵 차트"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "노드 맵 차트는 다음 세 가지 영역으로 구성되어있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_nodeMap",
+          className: "uitext"
+        }), " 차트는 다음 세 가지 영역으로 구성되어있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-node-map-chart.png"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -873,13 +879,16 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "요약-보기-및-상세-분석",
         children: "요약 보기 및 상세 분석"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-node-map-summary.png"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "side_nodeMap",
           className: "uitext"
-        }), "맵에서 조회를 원하는 노드를 선택하세요. 오른쪽에 나타나는 요약 보기 화면을 통해 해당 객체의 요약 정보를 확인할 수 있습니다. 요약 보기 화면에서 상세 분석 버튼을 클릭해 상세 분석 화면을 확인할 수 있습니다."]
+        }), "에서 조회를 원하는 노드를 선택하세요. 오른쪽에 나타나는 요약 보기 화면을 통해 해당 객체의 요약 정보를 확인할 수 있습니다. 요약 보기 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "BTN07712",
+          className: "uitext"
+        }), " 버튼을 클릭해 상세 분석 화면을 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-node-map-summary.png"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
