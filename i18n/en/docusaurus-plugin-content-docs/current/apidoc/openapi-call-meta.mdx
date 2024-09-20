@@ -260,14 +260,14 @@ $ curl -L -w "\n" -H "x-whatap-token: {{ACCOUNT API TOKEN}}" "https://api.whatap
 }
 ```
 
-| Response Field  |              Field Type                  | Description                                                                                                                |
-| --------------- | :--------------------------------------: | -------------------------------------------------------------------------------------------------------------------------- |
-| projectCode     | <span class='api'>number(integer)</span> | pcode                                                                                                                      |
-| name            |      <span class='api'>string</span>     | Project name                                                                                                               |
+| Response Field  |              Field Type                  | Description                                                                                             |
+| --------------- | :--------------------------------------: | ------------------------------------------------------------------------------------------------------- |
+| projectCode     | <span class='api'>number(integer)</span> | pcode                                                                                                   |
+| name            |      <span class='api'>string</span>     | Project name                                                                                            |
 | status          |      <span class='api'>string</span>     | Project status (`pending`, `trial`, `subscribe`, `close_pending`, `limited`, `closed`, `trial_limited`) |
-| productType     |      <span class='api'>string</span>     | Products used in the project                                                                                               |
-| platform        |      <span class='api'>string</span>     | Platform of the product used in the project                                                                                |
-| gatewayName     |      <span class='api'>string</span>     | Data Server Region                                                                                                         |
+| productType     |      <span class='api'>string</span>     | Products used in the project                                                                            |
+| platform        |      <span class='api'>string</span>     | Platform of the product used in the project                                                             |
+| gatewayName     |      <span class='api'>string</span>     | Data Server Region                                                                                      |
 
 ## Calling the oid list
 

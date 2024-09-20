@@ -4,26 +4,26 @@
 
 The following lists the columns in the table displayed for the <Cmdname sid="active_sessions" className="uitext" /> section. The data is collected using the <code>currentOp</code>.
 
-| Item                    | Description                                                                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `opid`                  | Unique identifier of the operation                                                                            |
-| `type`                  | If the value is `op`, the operation type can be viewed in the `op` field.                                     |
-| `host`                  | Server name                                                                                                   |
-| `desc`                  | Description of the client including `connectionId`                                                            |
-| `active`                | If the operation starts, the value is `true` and if it is idle, the value is `false`.                         |
-| `currentOpTime`         | Start time of the operation                                                                                   |
-| `op`                    | operation type (`none`, `update`, `insert`, `query`, `command`, `getmore`, `remove`, etc.) |
-| `ns`                    | The name of the namespace appears with `Database` or `Collection`.                                            |
-| `numYields`             | Number of executed operations                                                                                 |
-| `waitingForLock`        | If the operation is waiting for lock, the value is `true` and if it has acquired lock, the value is `false`.  |
-| `waitingForFlowControl` | If the operation is waiting for `flowcontrol`, the value is `true`.                                           |
+| Item                    | Description                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `opid`                  | Unique identifier of the operation                                                                           |
+| `type`                  | If the value is `op`, the operation type can be viewed in the `op` field.                                    |
+| `host`                  | Server name                                                                                                  |
+| `desc`                  | Description of the client including `connectionId`                                                           |
+| `active`                | If the operation starts, the value is `true` and if it is idle, the value is `false`.                        |
+| `currentOpTime`         | Start time of the operation                                                                                  |
+| `op`                    | operation type (`none`, `update`, `insert`, `query`, `command`, `getmore`, `remove`, etc.)                   |
+| `ns`                    | The name of the namespace appears with `Database` or `Collection`.                                           |
+| `numYields`             | Number of executed operations                                                                                |
+| `waitingForLock`        | If the operation is waiting for lock, the value is `true` and if it has acquired lock, the value is `false`. |
+| `waitingForFlowControl` | If the operation is waiting for `flowcontrol`, the value is `true`.                                          |
 
 </TabItem>
 
 <TabItem value="locktree" label="Lock tree">
 
-| Item           | Description                                                                     |
-| -------------- | ------------------------------------------------------------------------------- |
+| Item           | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
 | `holder type`  | `Type` of the `holder` session (transaction ID, tuple, etc.) |
 | `lock mode`    | `holder_mode` (exclusive lock, shared lock, etc.)            |
 | `waiter type`  | `Type` of the `waiter` session (transaction ID, tuple, etc.) |
@@ -35,20 +35,20 @@ The following lists the columns in the table displayed for the <Cmdname sid="act
 
 The following items are the metrics collected if the XOS agent has been installed.
 
-| Item       | Description                                                                                                  |
-| ---------- | ------------------------------------------------------------------------------------------------------------ |
-| `cputime`  | CPU usage time                                                                                               |
-| `cpuusage` | CPU Utilization                                                                                              |
-| `elapse`   | Elapsed time of CPU usage                                                                                    |
+| Item       | Description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| `cputime`  | CPU usage time                                                                            |
+| `cpuusage` | CPU Utilization                                                                           |
+| `elapse`   | Elapsed time of CPU usage                                                                 |
 | `vsize`    | Virtual memory size (Kb)                                                                  |
 | `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
-| `state`    | Process status                                                                                               |
+| `state`    | Process status                                                                            |
 | `ioread`   | Actual time spent reading the block (milliseconds)                                        |
 | `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
-| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process                          |
-| `uid`      | user id                                                                                                      |
-| `cmd`      | Executing command                                                                                            |
-| `longcmd`  | Full path of cmd                                                                                             |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
+| `uid`      | user id                                                                                   |
+| `cmd`      | Executing command                                                                         |
+| `longcmd`  | Full path of cmd                                                                          |
 
 </TabItem>
 

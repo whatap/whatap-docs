@@ -6,7 +6,7 @@ keywords:
   - Redis
   - Instance
   - Dashboard
-  - Database
+  - DATABASE
   - Monitoring Multiple Instances
 ---
 
@@ -42,6 +42,11 @@ import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.m
 
 <Apmdashboradeditwidget />
 
+{/* 사용자 정의 위젯 */}
+import CustomWidget from "../common-items/_db-mim-custom-widget.mdx";
+
+<CustomWidget />
+
 {/* 위젯 옵션 이용하기*/}
 import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
 
@@ -52,122 +57,10 @@ import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 
 <Apmdashboardpreset />
 
-## Learning about the main widgets {#about-widget}
+{/* 주요 위젯 알아보기*/}
+import WidgetDetails from "../common-items/_db-v2-mim-widgets.mdx";
 
-The types of widgets that can be placed on the dashboard are as follows.
-
-- **_DB Status_**
-
-  You can see the status of agents (instances) in the project. Individual agents are displayed in a hexagon. If you hover your mouse over it, the current status and IP address appear.
-
-  ![DB Status](/img/db-dashboard-status-widget.png)
-
-  The status of the agent can be classified as follows:
-
-  - <span class='normal'>Normal</span>: Number of normal agents.
-
-  - <span class='mstop'>Inactive Agents</span>: Number of disconnected agents.
-
-- **_[XOS] CPU_**
-
-  You can see the CPU usages for each agent in real time.
-
-- **_[XOS] Memory_**
-
-  You can see the memory usages for each agent in real time.
-
-- **_XOS Disk Usage_**
-
-  It displays the disk utilization, free sizes, and total sizes for each agent. If you select ![Icon](/img/ico-expander.svg) on the upper right of the widget, you can see them on a wider screen.
-
-  :::tip
-
-  If there is no data displayed, add the following settings to the _xos.conf_ file.
-
-  ```ini title='xos.conf'
-  # Off if the disk usage is 0; unit: second
-  disk_usage_interval=60
-  ```
-
-  :::
-
-- **_Read requests_**
-
-  A widget that measures the number of read requests per second. Read requests are tasks involving queries, aggregation, index scans, and the like that query or retrieve data from the database. It is useful to detect any changes in database usage patterns.
-
-  > Calculation: `query$opcounters` + `getmore$opcounters`
-
-- **_Write requests_**
-
-  A widget that measures the number of write requests per second. Write requests are tasks involving addition, update, and deletion in the database. It is useful to detect any changes in database usage patterns.
-
-  > Calculation: `insert$opcounters` + `update$opcounters` + `delete$opcounters`
-
-- **_Read Latency_** (`latency$reads$opLatencies`)
-
-  A widget that measures the latency (in microseconds) of read tasks that is the time taken for a client to request a read task and perform the task in the database. If a read task has a high latency consider the way to improve the performance by optimizing indexes or improving queries.
-
-- **_Write Latency_** (`latency$writes$opLatencies`)
-
-  A widget that measures the latency (in microseconds) of write tasks that is the time taken for a client to request a write task and perform the task in the database. If a write task has a high latency consider the way to improve the performance by optimizing indexes or performing a batch job for writing.
-
-- **_Page Faults_** (`page_faults$extra_info`)
-
-  This widget measures the number of page faults that occur. A page fault occurs while in memory management and occurs when a memory page requested by a process does not exist in physical memory and the page must be read from the disk. At this time, disk I/O may occur and the task may be delayed. This usually means that the system is running out of memory.
-
-  You can check whether the read and write tasks in the database depend on the disk I/O and whether low memory caused performance issues.
-
-  :::note
-
-  For more information about the page faults, see [the following link](https://www.mongodb.com/docs/v4.0/administration/analyzing-mongodb-performance/#page-faults).
-
-  :::
-
-- **_Active Connections_** (`active$connections`)
-
-  A widget that measures the number of connections by active clients. You can monitor the number of connections from the clients that the database server can handle at the same time. A high number of connections means you need to increase server capacity. In the opposite case, a problem may have occurred. Accordingly, it is better to quickly check the system status.
-
-- **_Read Clients_** (`readers$activeClients$globalLock`)
-
-  A widget that measures the number of clients performing read tasks in the MongoDB's global lock state. You can see how many clients the database server handles for read tasks. This is a useful metric for monitoring the database performance and tracing response times. Excessive read tasks may cause performance degradation.
-
-- **_Write Clients_** (`writers$activeClients$globalLock`)
-
-  This widget measures the number of clients performing write tasks in the MongoDB's global lock state. You can see how many clients the database server handle for write tasks. This metric is useful for monitoring the database performance and tracing response times. Excessive write tasks may cause performance degradation.
-
-- **_Queued Read Requests_** (`readers$currentQueue$globalLock`)
-
-  This widget measures the number of clients waiting for a global lock to process pending read tasks in the current system. It provides the data to evaluate the performance and scalability of the database. As pending read requests are increasing, the response time for requests from clients may increase and the throughput may reach the limit.
-
-  If pending read tasks increase rapidly, you can consider increasing the server resources, analyze the cause of the issue, and resolve bottlenecks through measures such as query optimization and index tuning.
-
-- **_Queued Write Requests_** (`writers$currentQueue$globalLock`)
-
-  This widget measures the number of clients waiting for a global lock to process pending write tasks in the current system. It is required to evaluate the DB performance and optimize the database. As pending write requests are increasing, the system performance may decrease or the response time for requests may increase.
-
-  You may need to consider adding resources or identifying which tasks are causing bottlenecks.
-
-- **_Resident Memory_** (`resident$mem`)
-
-  It is the memory size (MB) used by processes on the current system. You can see how much memory they use. Tracing memory usage optimizes the memory usage to increase the performance and becomes an important metric for efficient use of memory resources. It also helps you determine how much memory you need or whether or not to add more shards.
-
-- **_Virtual Memory_** (`virtual$mem`)
-
-  It is the virtual memory size (MB) used by processes on the current system. You can see how much memory resources is required on the current environment. If you know the size of the virtual memory, it helps you determine how much memory is required and what measures need to be taken to reduce the virtual memory usage.
-
-- **_Network Out_** (`bytesOut$network`)
-
-  Total number of bytes sent by the server via connections from clients or other instances. This indicates the total amount of data transmitted when the database server receives any outbound requests and returns responses. You can identify network traffic occurring on the database server, which allows you to optimize the network bandwidth or server resource usage. High network traffic is also associated with performance issues such as increase in response time.
-
-- **_Network In_** (`bytesIn$network`)
-
-  Total number of bytes received by the server via connections from clients or other instances. It indicates the total amount of requests and data received by the database server from outside, and includes the amount of data transmitted when clients send requests and receive responses from the database server. You can see how specific applications or tasks use communication with the database. Additionally, you can plan the system capacity and evaluate scalability by understanding the trend in network traffic.
-
-:::note
-
-A global lock is a mechanism used by MongoDB to maintain data consistency. It is applied to both read and write tasks, and acquiring a global lock is required for clients to perform the tasks.
-
-:::
+<WidgetDetails />
 
 {/* Session Table*/}
 import Dbv2mimactivesessiondesc from "../common-items/_db-v2-mim-activesession-desc.mdx";
@@ -178,17 +71,13 @@ import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-n
 
 <Dbv2mimactivesessionnote />
 
-### Filtering the table data
-
 import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
 
-<Dbtabledatafiltering />
-
-### Configuring the table columns{#change-column}
+<Dbtabledatafiltering level={3} />
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn />
+<Dbv2dataeditcolumn level={3} />
 
 ### Column information guide {#column-info}
 

@@ -19,22 +19,22 @@ The notation of the WhaTap ECS metric's **category** uses the prefix (`ecs_`).
 
 #### Tags
 
-| Tag name                      | Description                                                                                                                                                                   |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ClusterArn                    | The ECS cluster is identified by the Amazon Resource Name (ARN). Each cluster has a unique ARN and specifies the cluster on which the service is deployed. |
-| LaunchType                    | It indicates the startup type of the ECS service. It has the value: `EC2` or `FARGATE`. It displays whether the service runs on the EC2 instance or serverless Fargate.       |
-| PlatformVersion               | It indicates the platform version used by Fargate tasks. It displays a specific version of the Fargate infrastructure and determines compatibility and feature support.       |
-| PropagateTags                 | It indicates the method how the service passes tags to a task. It can have the value: `TASK_DEFINITION` or `SERVICE`. It inherits tags from the service or task definition.   |
-| RoleArn                       | It is the ARN with the IAM role used by the service. This role defines the tasks that ECS can run on the service.                                                             |
-| CreatedBy                     | It indicates the user who created the service. This can be the user's ID or name.                                                                                             |
-| SchedulingStrategy            | The service's scheduling strategy can have the value: `REPLICA` or `DAEMON`. It determines how to distribute tasks.                                                           |
-| ServiceArn                    | It indicates the ARN of the ECS service. This is a unique ID of the service.                                                                                                  |
-| ServiceName                   | It indicates the name of the ECS service specified by the user.                                                                                                               |
-| TaskDefinition                | It indicates the name and revision number of the task that runs in the service.                                                                                               |
-| ^                             | e.g. `my-task:1`                                                                                                                                                              |
-| DeploymentControllerType      | It indicates the type of the deployment controller. It has the value: `ECS` or `CODE_DEPLOY`. It determines the distribution method.                                          |
-| HealthCheckGracePeriodSeconds | It indicates the health check grace period (seconds) after starting the service. During this period, the service ignores health check failures.            |
-| Tags                          | It is a list of key-value pairs for the tags associated with the service. Each tag provides additional metadata to the service.                                               |
+| Tag name                      | Description                                                                                                                                                                 |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ClusterArn                    | The ECS cluster is identified by the Amazon Resource Name (ARN). Each cluster has a unique ARN and specifies the cluster on which the service is deployed.                  |
+| LaunchType                    | It indicates the startup type of the ECS service. It has the value: `EC2` or `FARGATE`. It displays whether the service runs on the EC2 instance or serverless Fargate.     |
+| PlatformVersion               | It indicates the platform version used by Fargate tasks. It displays a specific version of the Fargate infrastructure and determines compatibility and feature support.     |
+| PropagateTags                 | It indicates the method how the service passes tags to a task. It can have the value: `TASK_DEFINITION` or `SERVICE`. It inherits tags from the service or task definition. |
+| RoleArn                       | It is the ARN with the IAM role used by the service. This role defines the tasks that ECS can run on the service.                                                           |
+| CreatedBy                     | It indicates the user who created the service. This can be the user's ID or name.                                                                                           |
+| SchedulingStrategy            | The service's scheduling strategy can have the value: `REPLICA` or `DAEMON`. It determines how to distribute tasks.                                                         |
+| ServiceArn                    | It indicates the ARN of the ECS service. This is a unique ID of the service.                                                                                                |
+| ServiceName                   | It indicates the name of the ECS service specified by the user.                                                                                                             |
+| TaskDefinition                | It indicates the name and revision number of the task that runs in the service.                                                                                             |
+| ^                             | e.g. `my-task:1`                                                                                                                                                            |
+| DeploymentControllerType      | It indicates the type of the deployment controller. It has the value: `ECS` or `CODE_DEPLOY`. It determines the distribution method.                                        |
+| HealthCheckGracePeriodSeconds | It indicates the health check grace period (seconds) after starting the service. During this period, the service ignores health check failures.                             |
+| Tags                          | It is a list of key-value pairs for the tags associated with the service. Each tag provides additional metadata to the service.                                             |
 
 #### Fields
 
@@ -78,7 +78,7 @@ The notation of the WhaTap ECS metric's **category** uses the prefix (`ecs_`).
 | Tag name             | Description                                                                                                                                             |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Ec2InstanceId        | A unique ID of the EC2 instance used in the ECS cluster. Each instance has a unique ID. This allows you to identify instances.                          |
-| ContainerInstanceArn | The Amazon Resource Name (ARN) of the container instance. This is a unique ID of the container instance.                             |
+| ContainerInstanceArn | The Amazon Resource Name (ARN) of the container instance. This is a unique ID of the container instance.                                                |
 | DockerVersion        | Version of the Docker running on the container instance. It identifies the specific version of Docker and determines compatibility and feature support. |
 | AgentVersion         | Version of the ECS agent. The ECS agent communicates with the ECS cluster. Compatibility and feature support are determined based on the version.       |
 | PendingTasksCount    | It indicates the number of tasks in pending status. This is the number of tasks that have not been started.                                             |
@@ -103,7 +103,7 @@ The notation of the WhaTap ECS metric's **category** uses the prefix (`ecs_`).
 | ------------- | ------------------------------------------------------------------------------------------------------- |
 | containerId   | A unique ID of the container. Each container has a unique ID that identifies the container.             |
 | containerName | Container name specified by the user.                                                                   |
-| agentOid      | OID (Object Identifier) of the agent. This is a unique ID of the agent.              |
+| agentOid      | OID (Object Identifier) of the agent. This is a unique ID of the agent.                                 |
 | agentPcode    | Code of the agent. This is a code value that helps identify the agent.                                  |
 | command       | The command executed when the container starts up.                                                      |
 | containerKey  | A unique key generated by hashing the container ID with the container's hashed key value.               |
@@ -117,48 +117,48 @@ The notation of the WhaTap ECS metric's **category** uses the prefix (`ecs_`).
 
 #### Fields
 
-| Field name           | Description                                                                     |
-| -------------------- | ------------------------------------------------------------------------------- |
-| cpu_user             | CPU time used by the container in user mode.                                    |
-| cpu_user_millis      | CPU time used in user mode, in milliseconds.                                    |
-| cpu_sys              | CPU time used by the container in system mode.                                  |
-| cpu_sys_millis       | CPU time used in system mode, in milliseconds.                                  |
-| cpu_total            | Total CPU time used by the container.                                           |
+| Field name           | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| cpu_user             | CPU time used by the container in user mode.                 |
+| cpu_user_millis      | CPU time used in user mode, in milliseconds.                 |
+| cpu_sys              | CPU time used by the container in system mode.               |
+| cpu_sys_millis       | CPU time used in system mode, in milliseconds.               |
+| cpu_total            | Total CPU time used by the container.                        |
 | cpu_total_millis     | Total CPU time (millisedonds).                               |
-| mem_usage            | Container's CPU usage.                                                          |
+| mem_usage            | Container's CPU usage.                                       |
 | mem_totalrss         | Total Resident Set Size (RSS) memory usage of the container. |
-| blkio_rbps           | Block I/O read rate in bytes/sec.                                               |
+| blkio_rbps           | Block I/O read rate in bytes/sec.                            |
 | blkio_riops          | Number of block I/O read operations (I/O operations/sec).    |
-| blkio_wbps           | Block I/O write rate in bytes/sec.                                              |
+| blkio_wbps           | Block I/O write rate in bytes/sec.                           |
 | blkio_wiops          | Number of block I/O write operations (I/O operations/sec).   |
-| mem_percent          | Container's CPU usage percentage.                                               |
-| cpu_quota            | CPU quota allocated to the container.                                           |
-| cpu_quota_percent    | Percentage of the allocated CPU.                                                |
-| mem_limit            | Memory limit allocated to the container.                                        |
-| cpu_request          | CPU resource requested to the container.                                        |
-| mem_request          | Memory resource requested to the container.                                     |
-| cpu_throttledperiods | Number of CPU-throttled periods.                                                |
-| cpu_throttledtime    | CPU-throttled time.                                                             |
-| mem_failcnt          | Number of memory allocation failures.                                           |
-| mem_maxusage         | Maximum usage of memory.                                                        |
-| mem_per_request      | Percentage of the requested memory.                                             |
-| mem_totalcache       | Total amount of cached memory.                                                  |
-| mem_totalpgfault     | Total number of page faults.                                                    |
-| mem_totalrss_percent | Percentage of the total RSS memory usage.                                       |
-| mem_totalunevictable | Total amount of non-evictable memory.                                           |
-| mem_workingset       | Memory usage of the work set.                                                   |
-| mem_inactivefile     | Inactive file memory's usage.                                                   |
-| network_rbps         | Network read rate in bytes/sec.                                                 |
-| network_rdropped     | Number of network read drops.                                                   |
-| network_rerror       | Number of network read errors.                                                  |
+| mem_percent          | Container's CPU usage percentage.                            |
+| cpu_quota            | CPU quota allocated to the container.                        |
+| cpu_quota_percent    | Percentage of the allocated CPU.                             |
+| mem_limit            | Memory limit allocated to the container.                     |
+| cpu_request          | CPU resource requested to the container.                     |
+| mem_request          | Memory resource requested to the container.                  |
+| cpu_throttledperiods | Number of CPU-throttled periods.                             |
+| cpu_throttledtime    | CPU-throttled time.                                          |
+| mem_failcnt          | Number of memory allocation failures.                        |
+| mem_maxusage         | Maximum usage of memory.                                     |
+| mem_per_request      | Percentage of the requested memory.                          |
+| mem_totalcache       | Total amount of cached memory.                               |
+| mem_totalpgfault     | Total number of page faults.                                 |
+| mem_totalrss_percent | Percentage of the total RSS memory usage.                    |
+| mem_totalunevictable | Total amount of non-evictable memory.                        |
+| mem_workingset       | Memory usage of the work set.                                |
+| mem_inactivefile     | Inactive file memory's usage.                                |
+| network_rbps         | Network read rate in bytes/sec.                              |
+| network_rdropped     | Number of network read drops.                                |
+| network_rerror       | Number of network read errors.                               |
 | network_riops        | Number of network read operations (I/O operations/sec).      |
-| network_wbps         | Network write rate in bytes/sec.                                                |
-| network_wdropped     | Number of network write drops.                                                  |
-| network_werror       | Number of network write errors.                                                 |
+| network_wbps         | Network write rate in bytes/sec.                             |
+| network_wdropped     | Number of network write drops.                               |
+| network_werror       | Number of network write errors.                              |
 | network_wiops        | Number of network write operations (I/O operations/sec).     |
-| node_cpu             | It is the node's CPU usage.                                                     |
-| node_mem             | It is the node's memory usage.                                                  |
-| restart_count        | Number of container restarts.                                                   |
-| state                | Container state. The state is divided into multiple levels.                     |
-| ^                    | e.g. Running, Stopped                                                           |
-| status               | Container state. A text value describes the status.                             |
+| node_cpu             | It is the node's CPU usage.                                  |
+| node_mem             | It is the node's memory usage.                               |
+| restart_count        | Number of container restarts.                                |
+| state                | Container state. The state is divided into multiple levels.  |
+| ^                    | e.g. Running, Stopped                                        |
+| status               | Container state. A text value describes the status.          |

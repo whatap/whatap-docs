@@ -8,7 +8,7 @@ keywords:
   - Event
 ---
 
-Home > Select Project > **_Dashboard_** > **_Container Map_** > Target selection, **Display Detail** > Select **_Event_** tab
+Select Home > Select Project > **_Dashboard_** > **_Container Map_** > Target, and then in <Cmdname sid="BTN07712" className="uitext" />, select the **_Event_** tab.
 
 It provides records for all events that occur during the resource lifecycle. The events provided in WhaTap Kubernetes Monitoring are as follows.
 
@@ -93,14 +93,14 @@ WhaTap Kubernetes collects and stores all Kubernetes events that occurred in the
 
 The bars on the left of each event indicate the event types. Gray means <span class='k8s-normal'>Normal</span>, and orange means <span class='slow'>Warning</span>. The Kubernetes events provided by user selection are as follows.
 
-| Selected target                    | Provided event                                                                  | Provision-related event                                                                              |
-| ---------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| All                                | >                                                                               | All project events                                                                                   |
-| Namespace                          | >                                                                               | All events under the namespace                                                                       |
-| Node                               | >                                                                               | Node events or all pod (container) events in the node                             |
-| Deployment                         | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
-| ReplicaSet                         | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
-| Pod (container) | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
+| Selected target      | Provided event                                                                  | Provision-related event                                                                              |
+| -------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| All                  | >                                                                               | All project events                                                                                   |
+| Namespace            | >                                                                               | All events under the namespace                                                                       |
+| Node                 | >                                                                               | Node events or all pod (container) events in the node                                                |
+| Deployment           | ① `kind` is Deployment② <br/>`name` is identical to the user deployment name    | `name` starts with the user deployment name.                                                         |
+| ReplicaSet           | ① `kind` is ReplicaSet.② <br/>`name` is identical to the user's ReplicaSet name | `name` starts with the user ReplicaSet name.                                                         |
+| Pod (container)      | ① `kind` is Pod② <br/>`name` is identical to the user pod name                  | The pod starts with the name of the deployment to which the pod belongs or with the ReplicaSet name. |
 
 Kubenetes events stored in WhaTap consists of `message`, `namespace`, `kind`, `name`, `reason` and `type`.
 

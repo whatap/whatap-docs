@@ -59,7 +59,7 @@ tasks.named("bootBuildImage") {
 
 - `BP_WHATAP_OPTIONS`
 
-  You can add the WhaTap agent settings. Set options with linefeed "\\n" as the delimiter. The option is `key=value`. The set option values are saved in the `whatap.conf` file during the Docker Image creation step. 
+  You can add the WhaTap agent settings. Set options with linefeed "\n" as the delimiter. The option is `key=value`. The set option values are saved in the `whatap.conf` file during the Docker Image creation step. 
 
   ```java
   environment["BP_WHATAP_OPTIONS"] = "accesskey={access key}\nwhatap.server.host={collection server address}"
