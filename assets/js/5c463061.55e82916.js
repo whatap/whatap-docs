@@ -1475,7 +1475,8 @@ function _createMdxContent(props) {
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Link} = _components;
+  }, {InDoc, Link} = _components;
+  if (!InDoc) _missingMdxReference("InDoc", true);
   if (!Link) _missingMdxReference("Link", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
@@ -1484,16 +1485,19 @@ function _createMdxContent(props) {
       children: "DBX 에이전트 설정"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "에이전트 설치 화면의 안내에 따라 에이전트 설정을 진행하세요. 화면에 각 항목마다 필요한 정보를 입력하면 설정 내용 및 명령어를 자동 완성할 수 있습니다."
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "tip",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["DBX 에이전트의 구성 파일 중 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "setup.sh"
-        }), " 파일을 실행해 에이전트 설정을 빠르고 쉽게 진행할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "install-agent-quick-setup",
-          target: "_blank",
-          children: "다음 문서"
-        }), "를 참조하세요."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "postgresql,mysql",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "tip",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["DBX 에이전트의 구성 파일 중 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "setup.sh"
+          }), " 파일을 실행해 에이전트 설정을 빠르고 쉽게 진행할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
+            to: "install-agent-quick-setup",
+            target: "_blank",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
       })
     })]
   });
