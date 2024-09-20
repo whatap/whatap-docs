@@ -54,16 +54,16 @@ The `container` category collects all custom labels set on the container's pods 
 | ^                       | ^               | Container Block I/O Write IOPS                                                                                                                                 |
 | ^                       | ^               | Sum of counts written per second across all block devices in the container                                                                                     |
 | cpu_per_quota           | Percent         | CpuByLimit                                                                                                                                                     |
-| ^                       | ^               | Container CPU Usage by Limit (%)                                                                                                            |
+| ^                       | ^               | Container CPU Usage by Limit (%)                                                                                                                               |
 | ^                       | ^               | Container CPU utilization by limit                                                                                                                             |
 | cpu_quota               | Millicore       | CpuLimit                                                                                                                                                       |
-| ^                       | ^               | Container CPU Limit (core)                                                                                                                  |
+| ^                       | ^               | Container CPU Limit (core)                                                                                                                                     |
 | ^                       | ^               | Container CPU Limit Quota <br/> If the limit is not set, the total CPU cores of the node where the container is running appears in millicores.                 |
 | cpu_quota_percent       | Percent         | CpuLimitByNode                                                                                                                                                 |
-| ^                       | ^               | Container CPU Limit by Node (%)                                                                                                             |
+| ^                       | ^               | Container CPU Limit by Node (%)                                                                                                                                |
 | ^                       | ^               | Container CPU Limit Quota against Node CPU<br/> If the limit is not set, the total CPU cores of the node where the container is running appears in percentage. |
 | cpu_sys                 | Percent         | CpuSysByNode                                                                                                                                                   |
-| ^                       | ^               | Container CPU Sys Usage by Node (%)                                                                                                         |
+| ^                       | ^               | Container CPU Sys Usage by Node (%)                                                                                                                            |
 | ^                       | ^               | Container CPU System Utilization against Node CPU                                                                                                              |
 | cpu_throttledperiods    | Count           | CpuThrottledCnt                                                                                                                                                |
 | ^                       | ^               | Container CPU Throttling Count                                                                                                                                 |
@@ -72,61 +72,61 @@ The `container` category collects all custom labels set on the container's pods 
 | ^                       | ^               | Container CPU Throttling Time                                                                                                                                  |
 | ^                       | ^               | Container CPU Throttled Time                                                                                                                                   |
 | cpu_total               | Percent         | CpuByNode                                                                                                                                                      |
-| ^                       | ^               | Container CPU Usage by Node (%)                                                                                                             |
+| ^                       | ^               | Container CPU Usage by Node (%)                                                                                                                                |
 | ^                       | ^               | Container CPU Utilization against Node CPU                                                                                                                     |
 | cpu_total_milli         | Millicore       | CpuTotUsage                                                                                                                                                    |
-| ^                       | ^               | Container CPU Usage (millicore)                                                                                                             |
+| ^                       | ^               | Container CPU Usage (millicore)                                                                                                                                |
 | ^                       | ^               | Container CPU Usage                                                                                                                                            |
 | cpu_user                | Percent         | CpuUserByNode                                                                                                                                                  |
-| ^                       | ^               | Container CPU User Usage by Node (%)                                                                                                        |
+| ^                       | ^               | Container CPU User Usage by Node (%)                                                                                                                           |
 | ^                       | ^               | Container CPU User Utilization against Node CPU                                                                                                                |
 | cpu_request             | Millicore       | CpuRequest                                                                                                                                                     |
-| ^                       | ^               | Container CPU Request (core)                                                                                                                |
+| ^                       | ^               | Container CPU Request (core)                                                                                                                                   |
 | ^                       | ^               | Container CPU Request                                                                                                                                          |
 | cpu_per_request         | Percent         | CpuByRequest                                                                                                                                                   |
-| ^                       | ^               | Container CPU Usage by Request (%)                                                                                                          |
+| ^                       | ^               | Container CPU Usage by Request (%)                                                                                                                             |
 | ^                       | ^               | Utilization against Container CPU Request<br/>= cpu_total_milli/cpu_request \* 100                                                                             |
 | mem_failcnt             | Count           | MemFailCnt                                                                                                                                                     |
 | ^                       | ^               | Container Memory Failure Count                                                                                                                                 |
 | ^                       | ^               | Container Memory Limit reached Count                                                                                                                           |
 | mem_limit               | Byte            | MemLimit                                                                                                                                                       |
-| ^                       | ^               | Container Memory Limit (byte)                                                                                                               |
+| ^                       | ^               | Container Memory Limit (byte)                                                                                                                                  |
 | ^                       | ^               | Container Memory Limit Size                                                                                                                                    |
 | mem_maxusage            | Byte            | MemMaxUsage                                                                                                                                                    |
-| ^                       | ^               | Container Memory Max Usage (byte)                                                                                                           |
+| ^                       | ^               | Container Memory Max Usage (byte)                                                                                                                              |
 | ^                       | ^               | Recorded Value for Container Memory Maximum Usage                                                                                                              |
 | mem_percent             | Percent         | MemWsByLimit                                                                                                                                                   |
-| ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                   |
+| ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                                      |
 | ^                       | ^               | Working Set Usage based on Container Memory Limit<br/>= mem_usage/mem_limit \* 100                                                                             |
 | mem_totalcache          | Byte            | MemTotCache                                                                                                                                                    |
-| ^                       | ^               | Container Memory Total Cache (byte)                                                                                                         |
+| ^                       | ^               | Container Memory Total Cache (byte)                                                                                                                            |
 | ^                       | ^               | Container's Total Cache Size                                                                                                                                   |
 | mem_totalpgfault        | Count           | MemTotPageFaultCnt                                                                                                                                             |
 | ^                       | ^               | Container Memory Total Page Fault Count                                                                                                                        |
 | ^                       | ^               | Container's Page Fault Count                                                                                                                                   |
 | mem_totalrss            | Byte            | MemTotRss                                                                                                                                                      |
-| ^                       | ^               | Container Memory Total RSS (byte)                                                                                                           |
+| ^                       | ^               | Container Memory Total RSS (byte)                                                                                                                              |
 | ^                       | ^               | Container's Total RSS Memory Size                                                                                                                              |
 | mem_totalrss_percent    | Percent         | MemTotRssByLimit                                                                                                                                               |
-| ^                       | ^               | Container Memory Total RSS By Limit (%)                                                                                                     |
+| ^                       | ^               | Container Memory Total RSS By Limit (%)                                                                                                                        |
 | ^                       | ^               | Container's Total RSS Memory Utilization                                                                                                                       |
 | mem_totalunevictable    | Byte            | MemTotUnevictable                                                                                                                                              |
-| ^                       | ^               | Container Memory Total Unevictable (byte)                                                                                                   |
+| ^                       | ^               | Container Memory Total Unevictable (byte)                                                                                                                      |
 | ^                       | ^               | Container's Total Unevictable Memory Size                                                                                                                      |
 | mem_usage               | Byte            | MemUsage                                                                                                                                                       |
-| ^                       | ^               | Container Memory Usage (byte)                                                                                                               |
+| ^                       | ^               | Container Memory Usage (byte)                                                                                                                                  |
 | ^                       | ^               | Container Memory Usage                                                                                                                                         |
 | mem_working_set         | Byte            | MemWs                                                                                                                                                          |
-| ^                       | ^               | Container Memory Working Set (byte)                                                                                                         |
+| ^                       | ^               | Container Memory Working Set (byte)                                                                                                                            |
 | ^                       | ^               | Container memory working set<br/>= mem_usage - inactive file                                                                                                   |
 | mem_working_set_percent | Percent         | MemWsByLimit                                                                                                                                                   |
-| ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                   |
+| ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                                      |
 | ^                       | ^               | Working Set Usage based on Container Memory Limit<br/>= mem_usage/mem_limit \* 100                                                                             |
 | mem_request             | Byte            | MemRequest                                                                                                                                                     |
-| ^                       | ^               | Container Memory Request (byte)                                                                                                             |
+| ^                       | ^               | Container Memory Request (byte)                                                                                                                                |
 | ^                       | ^               | Container Memory Request Size                                                                                                                                  |
 | mem_per_request         | Percent         | MemWsByRequest                                                                                                                                                 |
-| ^                       | ^               | Container Memory Working Set by Request (%)                                                                                                 |
+| ^                       | ^               | Container Memory Working Set by Request (%)                                                                                                                    |
 | ^                       | ^               | Working Set Usage based on Container Memory Request<br/>= mem_working_set / mem_request \* 100                                                                 |
 | network_rbps            | Byte            | NetRxBytes                                                                                                                                                     |
 | ^                       | ^               | Container Network Receive Byte                                                                                                                                 |
@@ -153,10 +153,10 @@ The `container` category collects all custom labels set on the container's pods 
 | ^                       | ^               | Container Network Transmit IOPS                                                                                                                                |
 | ^                       | ^               | Container Network Transmit Error Count                                                                                                                         |
 | node_cpu                | Percent         | ConNodeCpu                                                                                                                                                     |
-| ^                       | ^               | Container Work Node CPU Usage (%)                                                                                                           |
+| ^                       | ^               | Container Work Node CPU Usage (%)                                                                                                                              |
 | ^                       | ^               | CPU Usage of the Node where the container is running                                                                                                           |
 | node_mem                | Percent         | ConNodeMem                                                                                                                                                     |
-| ^                       | ^               | Container Work Node Memory Usage (%)                                                                                                        |
+| ^                       | ^               | Container Work Node Memory Usage (%)                                                                                                                           |
 | ^                       | ^               | Memory Usage of the Node where the container is running                                                                                                        |
 | phase                   | String          | Pod lifecycle <br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                                     |
 | restart_count           | Positive number | ConRestartCnt                                                                                                                                                  |
@@ -247,30 +247,30 @@ The `kube_stat` category collects all the clusters for the cluster project, and 
 
 #### Fields {#kube_stat-fields}
 
-| Field name                       | Unit                 | Description                                                                                                                                                                                | Remarks                   |
-| -------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
-| alloctable_cpu                   | Millicore            | Number of cluster cores                                                                                                                                                                    | Cluster project only      |
-| alloctable_ephemeral-storage     | Byte                 | Ephemeral storage that can be allocated to all clusters                                                                                                                                    | Cluster project only      |
-| alloctable_hugepages-1gi         | Byte                 | Hugepages-1Gi that can be allocated to all clusters                                                                                                                                        | Cluster project only      |
-| alloctable_hugepages-2mi         | Byte                 | Hugepages-2Gi that can be allocated to all clusters                                                                                                                                        | Cluster project only      |
-| alloctable_memory                | Byte                 | Memory that can be allocated to all clusters                                                                                                                                               | Cluster project only      |
-| alloctable_pods                  | Positive number      | Number of pods that can be allocated                                                                                                                                                       | -                         |
-| available_pod                    | Positive number      | Number of pods whose phase is in Running state                                                                                                                                             | -                         |
+| Field name                       | Unit                 | Description                                                                                                                                                             | Remarks                   |
+| -------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| alloctable_cpu                   | Millicore            | Number of cluster cores                                                                                                                                                 | Cluster project only      |
+| alloctable_ephemeral-storage     | Byte                 | Ephemeral storage that can be allocated to all clusters                                                                                                                 | Cluster project only      |
+| alloctable_hugepages-1gi         | Byte                 | Hugepages-1Gi that can be allocated to all clusters                                                                                                                     | Cluster project only      |
+| alloctable_hugepages-2mi         | Byte                 | Hugepages-2Gi that can be allocated to all clusters                                                                                                                     | Cluster project only      |
+| alloctable_memory                | Byte                 | Memory that can be allocated to all clusters                                                                                                                            | Cluster project only      |
+| alloctable_pods                  | Positive number      | Number of pods that can be allocated                                                                                                                                    | -                         |
+| available_pod                    | Positive number      | Number of pods whose phase is in Running state                                                                                                                          | -                         |
 | desired_pod                      | Positive number      | Sum of the number of pods deployed without `metadata.ownerReferences` and the number of desired pods defined in Kubernetes objects (ReplicaSet, Daemonset, StatefulSet) | -                         |
-| ^                                | ^                    | Same as the number of pods retrieved by `kubectl get pods -A`                                                                                                                              | -                         |
-| nodes                            | Positive number      | Number of nodes                                                                                                                                                                            | -                         |
-| pod_phase_Pending                | Positive number      | Number of pending pods                                                                                                                                                                     | -                         |
-| pod_phase_Running                | Positive number      | Number of running pods                                                                                                                                                                     | -                         |
-| running_containers               | Positive number      | Number of running containers                                                                                                                                                               | -                         |
-| stopped_containers               | Positive number      | Number of stopped containers                                                                                                                                                               | -                         |
-| total_available_cpu              | Positive number      | Total allocatable CPU                                                                                                                                                                      | -                         |
-| total_available_memory           | Positive number      | Total sum of allocatable memory                                                                                                                                                            | -                         |
-| total_limit_cpu                  | Millicore            | Total sum of limit CPU                                                                                                                                                                     | -                         |
-| total_limit_memory               | Byte                 | Total sum of limit memory                                                                                                                                                                  | -                         |
-| total_request_cpu                | Millicore            | Total sum of request CPU                                                                                                                                                                   | -                         |
-| total_request_memory             | Byte                 | Total sum of request memory                                                                                                                                                                | -                         |
+| ^                                | ^                    | Same as the number of pods retrieved by `kubectl get pods -A`                                                                                                           | -                         |
+| nodes                            | Positive number      | Number of nodes                                                                                                                                                         | -                         |
+| pod_phase_Pending                | Positive number      | Number of pending pods                                                                                                                                                  | -                         |
+| pod_phase_Running                | Positive number      | Number of running pods                                                                                                                                                  | -                         |
+| running_containers               | Positive number      | Number of running containers                                                                                                                                            | -                         |
+| stopped_containers               | Positive number      | Number of stopped containers                                                                                                                                            | -                         |
+| total_available_cpu              | Positive number      | Total allocatable CPU                                                                                                                                                   | -                         |
+| total_available_memory           | Positive number      | Total sum of allocatable memory                                                                                                                                         | -                         |
+| total_limit_cpu                  | Millicore            | Total sum of limit CPU                                                                                                                                                  | -                         |
+| total_limit_memory               | Byte                 | Total sum of limit memory                                                                                                                                               | -                         |
+| total_request_cpu                | Millicore            | Total sum of request CPU                                                                                                                                                | -                         |
+| total_request_memory             | Byte                 | Total sum of request memory                                                                                                                                             | -                         |
 | unavailable_pod                  | Positive number      | Number of pods whose phase is not in Running state (Pending, Failed, Succedded)                                                                                         | -                         |
-| waiting_containers               | Positive number      | Waiting container count                                                                                                                                                                    | -                         |
+| waiting_containers               | Positive number      | Waiting container count                                                                                                                                                 | -                         |
 
 ### Pod (`kube_pod`) metric {#kube_pod}
 
@@ -309,7 +309,7 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 
 #### Fields {#kube_pod-fields}
 
-| Field name           | Unit       | (Shortname, Name, Description)                                                                                                 |
+| Field name           | Unit       | (Shortname, Name, Description)                                                                                                                    |
 | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | blkio_rbps           | Byte       | IoReadBytes                                                                                                                                       |
 | ^                    | ^          | Pod Block I/O Read Byte                                                                                                                           |
@@ -324,16 +324,16 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | ^                    | ^          | Pod Block I/O Write IOPS                                                                                                                          |
 | ^                    | ^          | Sum of cases written per second across all block devices in the Pod                                                                               |
 | cpu_per_limit        | Percent    | CpuByLimit                                                                                                                                        |
-| ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                     |
+| ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
 | ^                    | ^          | Container CPU utilization by limit                                                                                                                |
 | cpu_per_request      | Percent    | CpuByRequest                                                                                                                                      |
-| ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                     |
+| ^                    | ^          | Pod CPU Usage by Limit (%)                                                                                                                        |
 | ^                    | ^          | Container CPU utilization by limit                                                                                                                |
 | cpu_quota_percent    | Percent    | CpuLimitByNode                                                                                                                                    |
-| ^                    | ^          | Pod CPU Limit by Node (%)                                                                                                      |
+| ^                    | ^          | Pod CPU Limit by Node (%)                                                                                                                         |
 | ^                    | ^          | Pod CPU limit quota against node CPU<br/>If the limit is not set, the total CPU cores of the node where the Pod is running appears in percentage. |
 | cpu_sys              | Percent    | CpuSysByNode                                                                                                                                      |
-| ^                    | ^          | Pod CPU Sys Usage by Node (%)                                                                                                  |
+| ^                    | ^          | Pod CPU Sys Usage by Node (%)                                                                                                                     |
 | ^                    | ^          | Pod CPU System Utilization against Node CPU                                                                                                       |
 | cpu_throttledperiods | Count      | CpuThrottledCnt                                                                                                                                   |
 | ^                    | ^          | Pod CPU Throttling Count                                                                                                                          |
@@ -342,52 +342,52 @@ The `kube_pod` category collects all custom labels set on the Pod as tags.
 | ^                    | ^          | Pod CPU Throttling Time                                                                                                                           |
 | ^                    | ^          | Pod CPU Throttled Time                                                                                                                            |
 | cpu_total            | Percent    | CpuByNode                                                                                                                                         |
-| ^                    | ^          | Pod CPU Usage by Node (%)                                                                                                      |
+| ^                    | ^          | Pod CPU Usage by Node (%)                                                                                                                         |
 | ^                    | ^          | Pod CPU Utilization against Node CPU                                                                                                              |
 | cpu_total_milli      | Millicore  | CpuTotUsage                                                                                                                                       |
-| ^                    | ^          | Pod CPU Usage (millicore)                                                                                                      |
+| ^                    | ^          | Pod CPU Usage (millicore)                                                                                                                         |
 | ^                    | ^          | Pod CPU usage                                                                                                                                     |
 | cpu_user             | Percent    | CpuUserByNode                                                                                                                                     |
-| ^                    | ^          | Pod CPU User Usage by Node (%)                                                                                                 |
+| ^                    | ^          | Pod CPU User Usage by Node (%)                                                                                                                    |
 | ^                    | ^          | Pod CPU User Utilization against Node CPU                                                                                                         |
 | cpu_request          | Millicore  | CpuRequest                                                                                                                                        |
-| ^                    | ^          | Pod CPU Request (core)                                                                                                         |
+| ^                    | ^          | Pod CPU Request (core)                                                                                                                            |
 | ^                    | ^          | Pod CPU Request                                                                                                                                   |
 | cpu_per_request      | Percent    | CpuByRequest                                                                                                                                      |
-| ^                    | ^          | Pod CPU Usage by Request (%)                                                                                                   |
+| ^                    | ^          | Pod CPU Usage by Request (%)                                                                                                                      |
 | ^                    | ^          | Utilization against Pod CPU Request<br/>= cpu_total_milli/cpu_request \* 100                                                                      |
 | mem_totalcache       | Byte       | MemTotCache                                                                                                                                       |
-| ^                    | ^          | Pod Memory Total Cache (byte)                                                                                                  |
+| ^                    | ^          | Pod Memory Total Cache (byte)                                                                                                                     |
 | ^                    | ^          | Total Pod Cache Size                                                                                                                              |
 | mem_totalpgfault     | Count      | MemTotPageFaultCnt                                                                                                                                |
 | ^                    | ^          | Pod Memory Total Page Fault Count                                                                                                                 |
 | ^                    | ^          | Pod's Page Fault Count                                                                                                                            |
 | mem_totalrss         | Byte       | MemTotRss                                                                                                                                         |
-| ^                    | ^          | Pod Memory Total RSS (byte)                                                                                                    |
+| ^                    | ^          | Pod Memory Total RSS (byte)                                                                                                                       |
 | ^                    | ^          | Pod's Total RSS Memory Size                                                                                                                       |
 | mem_totalrss_percent | Percent    | MemTotRssByLimit                                                                                                                                  |
-| ^                    | ^          | Pod Memory Total RSS by Limit (%)                                                                                              |
+| ^                    | ^          | Pod Memory Total RSS by Limit (%)                                                                                                                 |
 | ^                    | ^          | Pod's Total RSS Memory Utilization                                                                                                                |
 | mem_totalunevictable | Byte       | MemTotUnevictable                                                                                                                                 |
-| ^                    | ^          | Pod Memory Total Unevictable (byte)                                                                                            |
+| ^                    | ^          | Pod Memory Total Unevictable (byte)                                                                                                               |
 | ^                    | ^          | Pod's Total Unevictable Memory Size                                                                                                               |
 | mem_usage            | Byte       | MemUsage                                                                                                                                          |
-| ^                    | ^          | Pod Memory Usage (byte)                                                                                                        |
+| ^                    | ^          | Pod Memory Usage (byte)                                                                                                                           |
 | ^                    | ^          | Pod Memory Usage                                                                                                                                  |
 | mem_working_set      | Byte       | MemWs                                                                                                                                             |
-| ^                    | ^          | Pod Memory Working Set (byte)                                                                                                  |
+| ^                    | ^          | Pod Memory Working Set (byte)                                                                                                                     |
 | ^                    | ^          | Pod Memory working set<br/>= mem_usage - inactive file                                                                                            |
 | memory_request       | Byte       | MemRequest                                                                                                                                        |
-| ^                    | ^          | Pod Memory Request (byte)                                                                                                      |
+| ^                    | ^          | Pod Memory Request (byte)                                                                                                                         |
 | ^                    | ^          | Pod memory requests                                                                                                                               |
 | memory_limit         | Byte       | MemLimit                                                                                                                                          |
-| ^                    | ^          | Pod Memory Limit (byte)                                                                                                        |
+| ^                    | ^          | Pod Memory Limit (byte)                                                                                                                           |
 | ^                    | ^          | Pod memory limit quota                                                                                                                            |
 | memory_per_request   | Percent    | MemByRequest                                                                                                                                      |
-| ^                    | ^          | Pod Memory Working Set by Request (%)                                                                                          |
+| ^                    | ^          | Pod Memory Working Set by Request (%)                                                                                                             |
 | ^                    | ^          | Working Set usage based on the Pod memory request                                                                                                 |
 | memory_per_limit     | Percent    | MemByLimit                                                                                                                                        |
-| ^                    | ^          | Pod Memory Working Set by Limit (%)                                                                                            |
+| ^                    | ^          | Pod Memory Working Set by Limit (%)                                                                                                               |
 | ^                    | ^          | Working Set usage based on the Pod memory limit                                                                                                   |
 | network_rbps         | Byte       | NetRxBytes                                                                                                                                        |
 | ^                    | ^          | Pod Network Receive Byte                                                                                                                          |
@@ -453,18 +453,18 @@ The `kube_pod_stat` category cluster project collects data for all clusters, and
 
 #### Fields {#kube_pod_stat-fields}
 
-| Field name            | Unit                 | Description                                                                                                                                                                                | Remarks |
-| --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| available_pod         | Positive number      | Number of pods whose phase is in Running state                                                                                                                                             | -       |
+| Field name            | Unit                 | Description                                                                                                                                                             | Remarks |
+| --------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| available_pod         | Positive number      | Number of pods whose phase is in Running state                                                                                                                          | -       |
 | desired_pod           | Positive number      | Sum of the number of pods deployed without `metadata.ownerReferences` and the number of desired pods defined in Kubernetes objects (ReplicaSet, Daemonset, StatefulSet) | -       |
-| ^                     | ^                    | Same as the number of pods retrieved by `kubectl get pods -A`                                                                                                                              | -       |
-| limit_cpu             | Millicore            | CPU Limit Usage                                                                                                                                                                            | -       |
-| limit_memory          | Byte                 | Memory Limit Usage                                                                                                                                                                         | -       |
-| request_cpu           | Millicore            | CPU Request Usage                                                                                                                                                                          | -       |
-| request_memory        | Byte                 | Memory Request Usage                                                                                                                                                                       | -       |
-| running_container     | Positive number      | Running Container Count                                                                                                                                                                    | -       |
-| stopped_container     | Positive number      | Stopped Container Count                                                                                                                                                                    | -       |
-| waiting_container     | Positive number      | Waiting container count                                                                                                                                                                    | -       |
+| ^                     | ^                    | Same as the number of pods retrieved by `kubectl get pods -A`                                                                                                           | -       |
+| limit_cpu             | Millicore            | CPU Limit Usage                                                                                                                                                         | -       |
+| limit_memory          | Byte                 | Memory Limit Usage                                                                                                                                                      | -       |
+| request_cpu           | Millicore            | CPU Request Usage                                                                                                                                                       | -       |
+| request_memory        | Byte                 | Memory Request Usage                                                                                                                                                    | -       |
+| running_container     | Positive number      | Running Container Count                                                                                                                                                 | -       |
+| stopped_container     | Positive number      | Stopped Container Count                                                                                                                                                 | -       |
+| waiting_container     | Positive number      | Waiting container count                                                                                                                                                 | -       |
 
 ### Kubernetes Horizontal Pod Autoscaler (HPA) (`kube_hpa_stat`) metric {#kube_hpa_stat}
 

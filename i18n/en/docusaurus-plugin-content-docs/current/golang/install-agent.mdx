@@ -176,6 +176,12 @@ echo "app_name={Application Name}" >> ./whatap_home/whatap.conf
 WHATAP_HOME=./whatap_home ./app
 ```
 
+:::tip
+
+The priority of the agent configuration is that the _whatap.conf_ file is applied first, followed by the environment variables. To prioritize environment variables, set the `use_env_first` option to `true`. Alternatively, you can set the environment variable as `WHATAP_USE_ENV_FIRST=true`.
+
+:::
+
 ### Setting the agent names for each process{#duplicate_appname}
 
 If one _whatap.conf_ file is shared by the applications running in multiple processes, any changes may not be reflected. It is recommended to set a _whatap.conf_ for each process.

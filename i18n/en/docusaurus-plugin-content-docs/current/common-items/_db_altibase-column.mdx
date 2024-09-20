@@ -1,0 +1,232 @@
+<Title level={props.level} hashid="column-info" >Column information guide</Title>
+
+For more information about columns, see [the link](https://altibase.com/kr/learn/manuals.php).
+
+<InDoc pages="instance-monitoring,multi-instance-monitoring">
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| Item                                 | Description                                                            |
+| ------------------------------------ | ---------------------------------------------------------------------- |
+| `action`                             | Task or command running in the current session.                        |
+| `active_flag`                        | Whether the session is active or not.                                  |
+| `autocommit_flag`                    | Whether automatic commit is active or not.                             |
+| `client_app_info`                    | Information about the client application.                              |
+| `client_info`                        | Custom information of the client.                                      |
+| `client_nls`                         | Client's National Language Support (NLS) setting.                      |
+| `client_package_version`             | Version of the client package.                                         |
+| `client_pid`                         | Process ID of the client.                                              |
+| `client_protocol_version`            | Version of the protocol used between the client and server.            |
+| `client_type`                        | Client type.                                                           |
+| `comm_name`                          | Name of the communication being used in the session.                   |
+| `commit_write_wait_mode`             | Data write waiting mode upon commit.                                   |
+| `current_stmt_id`                    | ID of the SQL statement running.                                       |
+| `data page gets`                     | Number of accesses to read the data page.                              |
+| `data page read`                     | Number of physical reads to the data page.                             |
+| `db_username`                        | User name connected to the database.                                   |
+| `dblink_global_transaction_level`    | Global transaction level of the DB link.                               |
+| `dblink_remote_statement_autocommit` | Whether the DB link remote document is automatically committed or not. |
+| `dbname`                             | Name of the connected database.                                        |
+| `ddl_time_limit`                     | Time limit for DDL (Data Definition Language) operations.              |
+| `default_date_format`                | Default date format.                                                   |
+| `default_tbsid`                      | Default tablespace ID of the session.                                  |
+| `default_temp_tbsid`                 | Default temporary tablespace ID of the session.                        |
+| `elapse_time`                        | Time elapsed since the task started.                                   |
+| `event`                              | Current or last event occurred.                                        |
+| `execute success count`              | Number of successful commands executed.                                |
+| `failover_source`                    | Source server information upon failover.                               |
+| `fetch_time_limit`                   | Maximum time to fetch data.                                            |
+| `header_display_mode`                | Display mode of the header information.                                |
+| `id`                                 | Unique ID of the session.                                              |
+| `idle_time_limit`                    | Idle time limit of the session.                                        |
+| `isolation_level`                    | Isolation level of the current transaction.                            |
+| `lob_cache_threshold`                | Threshold of the LOB (Large Object) cache.                             |
+| `login_time`                         | Login time of the session.                                             |
+| `max_statements_per_session`         | Maximum number of statements that can be executed per session.         |
+| `memory table access count`          | Number of accesses to the memory table.                                |
+| `module`                             | Name of the running module.                                            |
+| `nls_currency`                       | Currency symbol used in NLS settings.                                  |
+| `nls_iso_currency`                   | ISO currency code used in NLS settings.                                |
+| `nls_numeric_characters`             | Numeric characters used in NLS settings.                               |
+| `nls_territory`                      | Regional information used in NLS settings.                             |
+| `oname`                              | Agent or instance name.                                                |
+| `opened_stmt_count`                  | Number of open SQL statements.                                         |
+| `optimizer_mode`                     | Query optimization mode.                                               |
+| `p1`                                 | First parameter of the event.                                          |
+| `p2`                                 | Second parameter of the event.                                         |
+| `p3`                                 | Third parameter of the event.                                          |
+| `paralle_dml_mode`                   | Parallel DML (Data Manipulation Language) mode.                        |
+| `query`                              | Executed SQL query.                                                    |
+| `query_hash`                         | Hash value of the query.                                               |
+| `query_param`                        | Parameters used for a query.                                           |
+| `query_rewrite_enable`               | Whether to enable the query rewrite operation or not.                  |
+| `query_time_limit`                   | Time limit for query operation.                                        |
+| `rebuild count`                      | Number of rebuild operations.                                          |
+| `replication_mode`                   | Replication mode setting.                                              |
+| `second_in_time`                     | It represents the time in seconds.                                     |
+| `seqnum`                             | Sequence number of the session.                                        |
+| `session_state`                      | Current state of the session.                                          |
+| `ssl_certificate_issuer`             | Issuer of the SSL certificate.                                         |
+| `ssl_certificate_subject`            | Subject information of the SSL certificate.                            |
+| `ssl_cipher`                         | SSL encryption method in use.                                          |
+| `stack_size`                         | Stack size of the session.                                             |
+| `sysdba_flag`                        | It represents whether to use the SYSDBA role or not.                   |
+| `task_state`                         | Current task state.                                                    |
+| `time`                               | Task operation time.                                                   |
+| `time_zone`                          | Time zone setting for the session.                                     |
+| `trans_id`                           | Current transaction ID.                                                |
+| `transaction_mode`                   | Transaction mode.                                                      |
+| `trx_update_max_logsize`             | Maximum log size during transaction update.                            |
+| `utrans_time_limit`                  | Time limit for user transactions.                                      |
+| `wait_time`                          | Waiting time of the session.                                           |
+| `xa_associate_flag`                  | XA transaction associated flag.                                        |
+| `xa_session_flag`                    | XA transaction session flag.                                           |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| Item          | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| `oname`       | Agent or instance name.                                |
+| `id`          | Unique ID of the session.                              |
+| `db_username` | User name connected to the database.                   |
+| `elapse_time` | Time elapsed since the task started.                   |
+| `waiter type` | Type of the entity waiting for a lock.                 |
+| `holder type` | Type of the entity holding a lock.                     |
+| `holder desc` | Detailed description of the entity holding a lock.     |
+| `waiter desc` | Detailed description of the entity waiting for a lock. |
+| `query`       | Executed SQL query.                                    |
+| `query_param` | Parameters used for a query.                           |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+The following items are the metrics collected if the XOS agent has been installed.
+
+| Item       | Description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| `cputime`  | CPU usage time                                                                            |
+| `cpuusage` | CPU Utilization                                                                           |
+| `elapse`   | Elapsed time of CPU usage                                                                 |
+| `vsize`    | Virtual memory size (Kb)                                                                  |
+| `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
+| `state`    | Process status                                                                            |
+| `ioread`   | Actual time spent reading the block (milliseconds)                                        |
+| `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
+| `uid`      | user id                                                                                   |
+| `cmd`      | Executing command                                                                         |
+| `longcmd`  | Full path of cmd                                                                          |
+
+</TabItem>
+
+</Tabs>
+
+:::note
+
+WhaTap basically stores the client-related information.
+
+:::
+
+</InDoc>
+
+<InDoc pages="analysis-count-trend">
+
+| Item                                 | Description                                                            |
+| ------------------------------------ | ---------------------------------------------------------------------- |
+| `action`                             | Task or command running in the current session.                        |
+| `active_flag`                        | Whether the session is active or not.                                  |
+| `autocommit_flag`                    | Whether automatic commit is active or not.                             |
+| `client_app_info`                    | Information about the client application.                              |
+| `client_info`                        | Custom information of the client.                                      |
+| `client_nls`                         | Client's National Language Support (NLS) setting.                      |
+| `client_package_version`             | Version of the client package.                                         |
+| `client_pid`                         | Process ID of the client.                                              |
+| `client_protocol_version`            | Version of the protocol used between the client and server.            |
+| `client_type`                        | Client type.                                                           |
+| `comm_name`                          | Name of the communication being used in the session.                   |
+| `commit_write_wait_mode`             | Data write waiting mode upon commit.                                   |
+| `current_stmt_id`                    | ID of the SQL statement running.                                       |
+| `data page gets`                     | Number of accesses to read the data page.                              |
+| `data page read`                     | Number of physical reads to the data page.                             |
+| `db_username`                        | User name connected to the database.                                   |
+| `dblink_global_transaction_level`    | Global transaction level of the DB link.                               |
+| `dblink_remote_statement_autocommit` | Whether the DB link remote document is automatically committed or not. |
+| `dbname`                             | Name of the connected database.                                        |
+| `ddl_time_limit`                     | Time limit for DDL (Data Definition Language) operations.              |
+| `default_date_format`                | Default date format.                                                   |
+| `default_tbsid`                      | Default tablespace ID of the session.                                  |
+| `default_temp_tbsid`                 | Default temporary tablespace ID of the session.                        |
+| `elapse_time`                        | Time elapsed since the task started.                                   |
+| `event`                              | Current or last event occurred.                                        |
+| `execute success count`              | Number of successful commands executed.                                |
+| `failover_source`                    | Source server information upon failover.                               |
+| `fetch_time_limit`                   | Maximum time to fetch data.                                            |
+| `header_display_mode`                | Display mode of the header information.                                |
+| `id`                                 | Unique ID of the session.                                              |
+| `idle_time_limit`                    | Idle time limit of the session.                                        |
+| `isolation_level`                    | Isolation level of the current transaction.                            |
+| `lob_cache_threshold`                | Threshold of the LOB (Large Object) cache.                             |
+| `login_time`                         | Login time of the session.                                             |
+| `max_statements_per_session`         | Maximum number of statements that can be executed per session.         |
+| `memory table access count`          | Number of accesses to the memory table.                                |
+| `module`                             | Name of the running module.                                            |
+| `nls_currency`                       | Currency symbol used in NLS settings.                                  |
+| `nls_iso_currency`                   | ISO currency code used in NLS settings.                                |
+| `nls_numeric_characters`             | Numeric characters used in NLS settings.                               |
+| `nls_territory`                      | Regional information used in NLS settings.                             |
+| `oname`                              | Agent or instance name.                                                |
+| `opened_stmt_count`                  | Number of open SQL statements.                                         |
+| `optimizer_mode`                     | Query optimization mode.                                               |
+| `p1`                                 | First parameter of the event.                                          |
+| `p2`                                 | Second parameter of the event.                                         |
+| `p3`                                 | Third parameter of the event.                                          |
+| `paralle_dml_mode`                   | Parallel DML (Data Manipulation Language) mode.                        |
+| `query`                              | Executed SQL query.                                                    |
+| `query_hash`                         | Hash value of the query.                                               |
+| `query_param`                        | Parameters used for a query.                                           |
+| `query_rewrite_enable`               | Whether to enable the query rewrite operation or not.                  |
+| `query_time_limit`                   | Time limit for query operation.                                        |
+| `rebuild count`                      | Number of rebuild operations.                                          |
+| `replication_mode`                   | Replication mode setting.                                              |
+| `second_in_time`                     | It represents the time in seconds.                                     |
+| `seqnum`                             | Sequence number of the session.                                        |
+| `session_state`                      | Current state of the session.                                          |
+| `ssl_certificate_issuer`             | Issuer of the SSL certificate.                                         |
+| `ssl_certificate_subject`            | Subject information of the SSL certificate.                            |
+| `ssl_cipher`                         | SSL encryption method in use.                                          |
+| `stack_size`                         | Stack size of the session.                                             |
+| `sysdba_flag`                        | It represents whether to use the SYSDBA role or not.                   |
+| `task_state`                         | Current task state.                                                    |
+| `time`                               | Task operation time.                                                   |
+| `time_zone`                          | Time zone setting for the session.                                     |
+| `trans_id`                           | Current transaction ID.                                                |
+| `transaction_mode`                   | Transaction mode.                                                      |
+| `trx_update_max_logsize`             | Maximum log size during transaction update.                            |
+| `utrans_time_limit`                  | Time limit for user transactions.                                      |
+| `wait_time`                          | Waiting time of the session.                                           |
+| `xa_associate_flag`                  | XA transaction associated flag.                                        |
+| `xa_session_flag`                    | XA transaction session flag.                                           |
+
+</InDoc>
+
+<InDoc pages="analysis-lock-and-deadlock">
+
+| Item          | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| `oname`       | Agent or instance name.                                |
+| `id`          | Unique ID of the session.                              |
+| `db_username` | User name connected to the database.                   |
+| `elapse_time` | Time elapsed since the task started.                   |
+| `waiter type` | Type of the entity waiting for a lock.                 |
+| `holder type` | Type of the entity holding a lock.                     |
+| `holder desc` | Detailed description of the entity holding a lock.     |
+| `waiter desc` | Detailed description of the entity waiting for a lock. |
+| `query`       | Executed SQL query.                                    |
+| `query_param` | Parameters used for a query.                           |
+
+</InDoc>

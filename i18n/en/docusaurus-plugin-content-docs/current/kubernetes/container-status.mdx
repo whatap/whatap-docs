@@ -27,14 +27,14 @@ The colors and meanings for states such as <span class='normal'>Normal</span>, <
 
 ![Target status color](/img/container-map-status-color.png)
 
-| Status                              | Description                                                                                              |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Status                              | Description                                                                           |
+| ----------------------------------- | ------------------------------------------------------------------------------------- |
 | <span class='normal'>Normal</span>  | Displays the normal section (three divisions under Warning).                          |
 | <span class='slow'>Warning</span>   | Indicates it is within the Warning threshold (more than Warning to Critical or more). |
 | <span class='vslow'>Critical</span> | Indicates it is within the Critical threshold (more than Critical).                   |
-| Dead                                | Container exit state                                                                                     |
-| Wait                                | Container startup state                                                                                  |
-| Pause                               | Container's suspended state                                                                              |
+| Dead                                | Container exit state                                                                  |
+| Wait                                | Container startup state                                                               |
+| Pause                               | Container's suspended state                                                           |
 
 ## Event-based container state
 
@@ -60,7 +60,7 @@ In **_Container Map_**, the container view provides a state value called `EventC
 | Waiting                             |      21     | Transition of the container state to WAITING                                                                                                                       |
 | <span class='normal'>Normal</span>  |      10     | Transition of the container state to Normal                                                                                                                        |
 
-Among WhaTap events, there are events where you have set "Notify when event status is resolved." Internally, two types of events are distinguished as follows:
+Among the WhaTap events, there are events that have set <Cmdname sid="CNT08320" className="uitext" />. Internally, two types of events are distinguished as follows:
 
 - Events that do not trace the state resolution: `stateless` events
 

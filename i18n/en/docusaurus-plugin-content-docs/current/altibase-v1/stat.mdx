@@ -1,0 +1,33 @@
+---
+id: stat
+title: Checking the statistical data
+description: It provides the statistical data for each DB.
+keywords:
+  - Altibase
+  - DATABASE
+  - Database Monitoring
+  - Statistic
+---
+
+import ProdImg from '@site/src/components/ChangeImgName.js';
+
+import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
+
+<Dbsqlstatic />
+
+import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
+
+<Dbtrendbyquery />
+
+import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
+
+<Dbdetailviewquery />
+
+{/* mysql, mariadb, CUBRID 지원 */}
+{/* {@include: ../common-items/_db-database-size.mdx} */}
+
+{/* oracle, tibero, CUBRID */}
+{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
+
+{/* oracle, tibero */}
+{/* {@include: ../common-items/_db-sga-size.mdx} */}
