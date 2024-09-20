@@ -27,7 +27,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/amazon-ecs/amazon-ecs-release-notes",
   "title": "Amazon ECS Agent release notes",
-  "description": "Amazon ECS Agent v1.2.5",
+  "description": "v1.2.6",
   "source": "@site/docs/release-notes/amazon-ecs/amazon-ecs-release-notes.mdx",
   "sourceDirName": "release-notes/amazon-ecs",
   "slug": "/release-notes/amazon-ecs/amazon-ecs-release-notes",
@@ -60,24 +60,28 @@ const assets = {
 
 
 const toc = [{
-  "value": "Amazon ECS Agent v1.2.5",
-  "id": "amazon-ecs-agent-v125",
+  "value": "v1.2.6",
+  "id": "v126",
   "level": 2
 }, {
-  "value": "Amazon ECS Agent v1.2.4",
-  "id": "amazon-ecs-agent-v124",
+  "value": "v1.2.5",
+  "id": "v125",
   "level": 2
 }, {
-  "value": "Amazon ECS Agent v1.2.1",
-  "id": "amazon-ecs-agent-v121",
+  "value": "v1.2.4",
+  "id": "v124",
+  "level": 2
+}, {
+  "value": "v1.2.1",
+  "id": "v121",
   "level": 2
 }, {
   "value": "코드 오류로 수집서버와 연결 단절시 Task 다운되는 현상 수정",
   "id": "코드-오류로-수집서버와-연결-단절시-task-다운되는-현상-수정",
   "level": 3
 }, {
-  "value": "Amazon ECS Agent v1.2.0",
-  "id": "amazon-ecs-agent-v120",
+  "value": "v1.2.0",
+  "id": "v120",
   "level": 2
 }, {
   "value": "Amazon ECS Graviton Instance Type 지원 추가",
@@ -100,10 +104,23 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "amazon-ecs-agent-v125",
-        children: "Amazon ECS Agent v1.2.5"
+        id: "v126",
+        children: "v1.2.6"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2023-11-23"
+        children: "2024년 09월 20일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "0",
+          children: "Fixed"
+        }), " LaunchType이 EC2일 때 Amazon Linux 호스트에서 컨테이너 성능을 수집할 수 없던 문제 수정"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "v125",
+        children: "v1.2.5"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2023년 11월 23일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
           children: "Fixed"
@@ -112,10 +129,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "amazon-ecs-agent-v124",
-        children: "Amazon ECS Agent v1.2.4"
+        id: "v124",
+        children: "v1.2.4"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2023-03-02"
+        children: "2023년 03월 02이"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
           children: "Fixed"
@@ -124,10 +141,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "amazon-ecs-agent-v121",
-        children: "Amazon ECS Agent v1.2.1"
+        id: "v121",
+        children: "v1.2.1"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2022-12-11"
+        children: "2022년 12월 11일"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -146,10 +163,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "amazon-ecs-agent-v120",
-        children: "Amazon ECS Agent v1.2.0"
+        id: "v120",
+        children: "v1.2.0"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "배포일: 2022-12-06"
+        children: "2022년 12월 06일"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
