@@ -3563,7 +3563,7 @@ const sidebars = {
           label: 'Service',
           collapsible: true,
           collapsed: true,
-          className: 'new',
+          // className: 'new',
           link: {
             type: 'doc',
             id: 'release-notes/service/index',
@@ -3572,7 +3572,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'release-notes/service/service-2_8_x',
-              className: 'new',
+              // className: 'new',
             },
             'release-notes/service/service-2_7_x',
             'release-notes/service/service-2_6_x',
