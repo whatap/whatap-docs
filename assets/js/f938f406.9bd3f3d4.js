@@ -1,62 +1,59 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[85441],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[88637],{
 
-/***/ 59763:
+/***/ 66793:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  assets: () => (/* binding */ assets),
-  contentTitle: () => (/* binding */ contentTitle),
-  "default": () => (/* binding */ MDXContent),
-  frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* binding */ metadata),
-  toc: () => (/* binding */ toc)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(28453);
-;// CONCATENATED MODULE: ./docs/release-notes/server-aix/server-aix-agent.json
-const server_aix_agent_namespaceObject = /*#__PURE__*/JSON.parse('[{"url":"https://docs.whatap.io/release-notes/server/server-aix-1_2_7","ver":"v1.2.7","date":"2024-04-09","Lists":[{"ver":"v1.2.7","hash":"v127","product":"Server Agent AIX","type":"Fixed","desc":"<p><code class=\\"Fixed\\">Fixed</code> AIX 서버 CPU Logical Core 분석 오류 수정: 프로세스 CPU 관련해 과다하게 측정되는 오류 수정</p>"}]}]');
-;// CONCATENATED MODULE: ./docs/release-notes/server-aix/index.mdx
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
 
 
 const frontMatter = {
-	id: 'index',
-	title: 'Server AIX Agent Release Notes',
+	id: 'server-aix-1_2_7',
+	title: 'Server AIX Agent v1.2.7',
+	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar',
-	hide_table_of_contents: true,
-	toc_min_heading_level: 2,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/server-aix/index",
-  "title": "Server AIX Agent Release Notes",
-  "description": "Release history for 2024",
-  "source": "@site/docs/release-notes/server-aix/index.mdx",
+  "id": "release-notes/server-aix/server-aix-1_2_7",
+  "title": "Server AIX Agent v1.2.7",
+  "description": "2024년 04월 09일",
+  "source": "@site/docs/release-notes/server-aix/server-aix-1.2.7.mdx",
   "sourceDirName": "release-notes/server-aix",
-  "slug": "/release-notes/server-aix/",
-  "permalink": "/whatap-docs/release-notes/server-aix/",
+  "slug": "/release-notes/server-aix/server-aix-1_2_7",
+  "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_2_7",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/server-aix/index.mdx",
+  "editUrl": "undefined/docs/release-notes/server-aix/server-aix-1.2.7.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "index",
-    "title": "Server AIX Agent Release Notes",
+    "id": "server-aix-1_2_7",
+    "title": "Server AIX Agent v1.2.7",
+    "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar",
-    "hide_table_of_contents": true,
-    "toc_min_heading_level": 2,
     "isTranslationMissing": false
   },
-  "sidebar": "releaseSidebar"
+  "sidebar": "releaseSidebar",
+  "previous": {
+    "title": "Server AIX Agent v1.3.4",
+    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_4"
+  },
+  "next": {
+    "title": "Server Solaris",
+    "permalink": "/whatap-docs/release-notes/server-solaris/server-solaris-1_3_4"
+  }
 };
 const assets = {
 
@@ -64,48 +61,46 @@ const assets = {
 
 
 
-
-const toc = [{
-  "value": "Release history for 2024",
-  "id": "release-history-for-2024",
-  "level": 2
-}];
+const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    h2: "h2",
-    section: "section",
-    ...(0,lib/* useMDXComponents */.R)(),
+    a: "a",
+    admonition: "admonition",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Head, ImportJson} = _components;
-  if (!Head) _missingMdxReference("Head", true);
-  if (!ImportJson) _missingMdxReference("ImportJson", true);
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(Head, {
-      children: (0,jsx_runtime.jsx)("meta", {
-        name: "robots",
-        content: "noindex, nofollow"
-      })
-    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
-        id: "release-history-for-2024",
-        children: "Release history for 2024"
-      }), (0,jsx_runtime.jsx)(ImportJson, {
-        filePath: server_aix_agent_namespaceObject,
-        sort: "date",
-        category: "agent"
+  }, {Status} = _components;
+  if (!Status) _missingMdxReference("Status", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "2024년 04월 09일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        children: "Fixed"
+      }), " AIX 서버 CPU Logical Core 분석 오류 수정: 프로세스 CPU 관련해 과다하게 측정되는 오류 수정"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+      type: "info",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "다운로드"
+        }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://repo.whatap.io/aix/noarch/whatap-infra-1.2-7.aix6.1.noarch.rpm",
+          children: "Server Agent AIX v1.2.7"
+        })]
       })]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
   }) : _createMdxContent(props);

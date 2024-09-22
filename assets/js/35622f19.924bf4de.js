@@ -58,8 +58,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server AIX Agent v1.2.7",
-    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_2_7"
+    "title": "Server HP-UX",
+    "permalink": "/whatap-docs/release-notes/server-hpux/server-hpux-1_3_4"
   },
   "next": {
     "title": "Kubernetes Agent v1.7.11",

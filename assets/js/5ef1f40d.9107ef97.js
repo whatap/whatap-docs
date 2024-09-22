@@ -49,8 +49,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/server/server-2_5_9"
   },
   "next": {
-    "title": "Server AIX Agent v1.2.7",
-    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_2_7"
+    "title": "Server AIX Agent Release Notes",
+    "permalink": "/whatap-docs/release-notes/server-aix/"
   }
 };
 const assets = {
