@@ -3741,7 +3741,7 @@ const sidebars = {
           label: 'Service',
           collapsible: true,
           collapsed: true,
-          className: 'new',
+          // className: 'new',
           link: {
             type: 'doc',
             id: 'release-notes/service/index',
@@ -3750,7 +3750,7 @@ const sidebars = {
             {
               type: 'doc',
               id: 'release-notes/service/service-2_8_x',
-              className: 'new',
+              // className: 'new',
             },
             'release-notes/service/service-2_7_x',
             'release-notes/service/service-2_6_x',
@@ -4045,18 +4045,31 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server-aix/server-aix-1_2_7'
+                id: 'release-notes/server-aix/index'
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_2_7',
-                  // className: 'new'
-                }
+                  id: 'release-notes/server-aix/server-aix-1_3_4',
+                  className: 'new'
+                },
+                'release-notes/server-aix/server-aix-1_2_7'
               ],
+            },
+            {
+              type: 'doc',
+              label: 'Server Solaris',
+              className: 'new',
+              id: 'release-notes/server-solaris/server-solaris-1_3_4'
+            },
+            {
+              type: 'doc',
+              label: 'Server HP-UX',
+              className: 'new',
+              id: 'release-notes/server-hpux/server-hpux-1_3_4'
             },
             {
               type: 'category',
