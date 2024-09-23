@@ -6191,6 +6191,7 @@ const sidebars = {
                 'kubernetes/resource-node-list',
                 'kubernetes/node-details',
                 'kubernetes/node-disk-list',
+                'kubernetes/node-timeline',
                 'kubernetes/object-manifest',
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
