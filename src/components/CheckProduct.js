@@ -51,7 +51,7 @@ export default function CheckProduct() {
     } else if (cProdt === 'tibero') {
         product = '-tibero';
     } else if (cProdt === 'cubrid-v1') {
-        product = '-cubrid';
+        product = '-cubrid-v1';
     } else if (cProdt === 'cubrid') {
         product = '-cubrid';
     } else if (cProdt === 'altibase') {
