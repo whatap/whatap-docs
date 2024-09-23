@@ -2771,7 +2771,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'altibase/log-main'
+                id: 'cubrid/log-main'
               },
               items: [
                 'cubrid/log-db',
