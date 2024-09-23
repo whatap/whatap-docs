@@ -2701,6 +2701,7 @@ const sidebars = {
                 'cubrid/instance-list',
                 'cubrid/instance-monitoring',
                 'cubrid/multi-instance-monitoring',
+                'cubrid/slow-query',
               ],
             },
             {
