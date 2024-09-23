@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93031],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[66388],{
 
 /***/ 10707:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1588,7 +1588,6 @@ function _createMdxContent(props) {
     a: "a",
     admonition: "admonition",
     code: "code",
-    em: "em",
     h4: "h4",
     img: "img",
     li: "li",
@@ -1971,7 +1970,9 @@ function _createMdxContent(props) {
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               rowSpan: "2",
-              children: "Method"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Method"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: "methodCount"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
@@ -2031,62 +2032,6 @@ function _createMdxContent(props) {
             }), "\n"]
           })
         })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "TTL06406",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06406"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["화면 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06406",
-          className: "uitext"
-        }), "를 선택하면 해당 트랜잭션과 관련한 해시(Hash) 정보를 확인할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "analysis-tx-record-summary-hash.png",
-        desc: "Hash"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL06973",
-              className: "uitext"
-            }), ": 해당 트랜잭션의 고유 식별자입니다. 트랜잭션의 상태나 동작을 추적하고 식별하는 데 사용합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL06976",
-              className: "uitext"
-            }), ": 해당 트랜잭션을 요청한 클라이언트의 브라우저 및 환경 정보를 식별합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "ErrClassHash"
-              })
-            }), ": 에러 클래스에 대한 해시값으로, 발생한 에러를 식별하는데 사용합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "MthisSpecHash"
-              })
-            }), ": 메소드 또는 스펙의 해시값로, 메소드 스택이나 특정 동작을 추적하는 데 사용합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "ErrMessageHash"
-              })
-            }), ": 발생한 에러 메시지의 해시값입니다. 특정 에러 메시지 기반으로 생성됩니다."]
-          }), "\n"]
-        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -3782,7 +3727,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 83678:
+/***/ 450:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3823,51 +3768,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'dashboard-hitmap-trace',
 	title: '히트맵 - 트레이스 분석',
-	description: '자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.',
+	description: '히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.',
 	keywords: [
-		'Java',
+		'쿠버네티스',
 		'애플리케이션',
 		'히트맵',
-		'트랜잭션',
-		'스텝'
+		'트레이스'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/dashboard-hitmap-trace",
+  "id": "kubernetes/dashboard-hitmap-trace",
   "title": "히트맵 - 트레이스 분석",
-  "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
-  "source": "@site/docs/java/dashboard-hitmap-trace.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/dashboard-hitmap-trace",
-  "permalink": "/whatap-docs/java/dashboard-hitmap-trace",
+  "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
+  "source": "@site/docs/kubernetes/dashboard-hitmap-trace.mdx",
+  "sourceDirName": "kubernetes",
+  "slug": "/kubernetes/dashboard-hitmap-trace",
+  "permalink": "/whatap-docs/kubernetes/dashboard-hitmap-trace",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/dashboard-hitmap-trace.mdx",
+  "editUrl": "undefined/docs/kubernetes/dashboard-hitmap-trace.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "dashboard-hitmap-trace",
     "title": "히트맵 - 트레이스 분석",
-    "description": "자바(Java) 모니터링에서 애플리케이션 대시보드의 히트맵 위젯을 통해 트랜잭션과 그 하위 스텝 정보를 한눈에 분석하는 방법을 안내합니다. 사용자는 원하는 영역을 드래그하여 선택한 영역의 트랜잭션 목록과 상세 스텝 정보를 포함하는 분석 창을 확인할 수 있습니다. 이를 통해 에러가 발생한 트랜잭션 정보를 분류하고, 트랜잭션의 성능을 상세하게 분석할 수 있습니다.",
+    "description": "히트맵 위젯을 통해 트레이스 분석 창을 열어 트랜잭션 목록과 각 트랜잭션 하위의 스텝 정보를 한 번에 확인할 수 있습니다.",
     "keywords": [
-      "Java",
+      "쿠버네티스",
       "애플리케이션",
       "히트맵",
-      "트랜잭션",
-      "스텝"
+      "트레이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "kubeSidebar",
   "previous": {
-    "title": "액티브 트랜잭션",
-    "permalink": "/whatap-docs/java/dashboard-active-transaction"
+    "title": "애플리케이션 서비스 대시보드",
+    "permalink": "/whatap-docs/kubernetes/dashboard"
   },
   "next": {
-    "title": "Flex 보드",
-    "permalink": "/whatap-docs/java/flex-board"
+    "title": "일자별 애플리케이션 현황",
+    "permalink": "/whatap-docs/kubernetes/application-daily-stat"
   }
 };
 const assets = {

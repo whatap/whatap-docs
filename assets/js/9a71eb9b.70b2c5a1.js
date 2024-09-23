@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80181],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10681],{
 
 /***/ 72140:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1037,7 +1037,6 @@ function _createMdxContent(props) {
     a: "a",
     admonition: "admonition",
     code: "code",
-    em: "em",
     h4: "h4",
     img: "img",
     li: "li",
@@ -1420,7 +1419,9 @@ function _createMdxContent(props) {
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               rowSpan: "2",
-              children: "Method"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Method"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: "methodCount"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
@@ -1480,62 +1481,6 @@ function _createMdxContent(props) {
             }), "\n"]
           })
         })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "TTL06406",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06406"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["화면 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06406",
-          className: "uitext"
-        }), "를 선택하면 해당 트랜잭션과 관련한 해시(Hash) 정보를 확인할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "analysis-tx-record-summary-hash.png",
-        desc: "Hash"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL06973",
-              className: "uitext"
-            }), ": 해당 트랜잭션의 고유 식별자입니다. 트랜잭션의 상태나 동작을 추적하고 식별하는 데 사용합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL06976",
-              className: "uitext"
-            }), ": 해당 트랜잭션을 요청한 클라이언트의 브라우저 및 환경 정보를 식별합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "ErrClassHash"
-              })
-            }), ": 에러 클래스에 대한 해시값으로, 발생한 에러를 식별하는데 사용합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "MthisSpecHash"
-              })
-            }), ": 메소드 또는 스펙의 해시값로, 메소드 스택이나 특정 동작을 추적하는 데 사용합니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "ErrMessageHash"
-              })
-            }), ": 발생한 에러 메시지의 해시값입니다. 특정 에러 메시지 기반으로 생성됩니다."]
-          }), "\n"]
-        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
@@ -3491,7 +3436,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 90980:
+/***/ 89249:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3528,12 +3473,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'analysis-hitmap',
-	title: '히트맵',
+	id: 'trs-profile',
+	title: '트랜잭션 트레이싱',
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	keywords: [
 		'애플리케이션',
-		'.NET',
+		'Python',
 		'분석',
 		'히트맵',
 		'트랜잭션'
@@ -3542,39 +3487,39 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/analysis-hitmap",
-  "title": "히트맵",
+  "id": "python/trs-profile",
+  "title": "트랜잭션 트레이싱",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/dotnet/analysis-hitmap.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/analysis-hitmap",
-  "permalink": "/whatap-docs/dotnet/analysis-hitmap",
+  "source": "@site/docs/python/trs-profile.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/trs-profile",
+  "permalink": "/whatap-docs/python/trs-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/analysis-hitmap.mdx",
+  "editUrl": "undefined/docs/python/trs-profile.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "analysis-hitmap",
-    "title": "히트맵",
+    "id": "trs-profile",
+    "title": "트랜잭션 트레이싱",
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "keywords": [
       "애플리케이션",
-      ".NET",
+      "Python",
       "분석",
       "히트맵",
       "트랜잭션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "pySidebar",
   "previous": {
-    "title": "큐브",
-    "permalink": "/whatap-docs/dotnet/cube"
+    "title": "트랜잭션 분석하기",
+    "permalink": "/whatap-docs/python/trs-view"
   },
   "next": {
-    "title": "멀티 트랜잭션 추적",
-    "permalink": "/whatap-docs/dotnet/analysis-trace-mtx"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/python/active-transactions"
   }
 };
 const assets = {
