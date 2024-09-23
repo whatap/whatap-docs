@@ -1,0 +1,1094 @@
+"use strict";
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[7817],{
+
+/***/ 62897:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  Ay: () => (/* binding */ _db_cubrid_info_of_column_MDXContent),
+  RM: () => (/* binding */ _db_cubrid_info_of_column_toc)
+});
+
+// UNUSED EXPORTS: contentTitle, frontMatter
+
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(74848);
+// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
+var lib = __webpack_require__(28453);
+;// CONCATENATED MODULE: ./docs/common-items/_db-cubrid-active-sessions.mdx
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    code: "code",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(_components.table, {
+    children: [(0,jsx_runtime.jsx)(_components.thead, {
+      children: (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.th, {
+          children: "항목"
+        }), (0,jsx_runtime.jsx)(_components.th, {
+          children: "설명"
+        })]
+      })
+    }), (0,jsx_runtime.jsxs)(_components.tbody, {
+      children: [(0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "instance"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "에이전트 또는 인스턴스의 이름입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "pid"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "데이터베이스 프로세스의 PID입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "dbname"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "현재 연결된 데이터베이스의 이름입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "user"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "데이터베이스에 접속한 사용자의 이름입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query_time"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "쿼리 실행 시간입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "transtatus"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "트랜잭션의 현재 상태입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "실행된 SQL 쿼리입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query_hash"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "쿼리의 해시 값입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query_param"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "쿼리 실행 시 사용된 매개변수입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "program"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "클라이언트에서 실행한 프로그램 정보입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "tranindex"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "현재 실행 중인 트랜잭션을 식별하는 고유한 번호입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "tran_time"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "트랜잭션이 시작된 이후 경과된 시간입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "sql_id"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "현재 실행 중인 SQL 쿼리의 고유 식별자입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "time"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "작업이 수행된 시간입니다"
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "lock_holder"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "현재 트랜잭션에서 자원을 잠금(Lock)한 세션입니다."
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+;// CONCATENATED MODULE: ./docs/common-items/_db-cubrid-locktree.mdx
+
+
+const _db_cubrid_locktree_frontMatter = {};
+const _db_cubrid_locktree_contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const _db_cubrid_locktree_toc = [];
+function _db_cubrid_locktree_createMdxContent(props) {
+  const _components = {
+    code: "code",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(_components.table, {
+    children: [(0,jsx_runtime.jsx)(_components.thead, {
+      children: (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.th, {
+          children: "항목"
+        }), (0,jsx_runtime.jsx)(_components.th, {
+          children: "설명"
+        })]
+      })
+    }), (0,jsx_runtime.jsxs)(_components.tbody, {
+      children: [(0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "instance"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "에이전트 또는 인스턴스의 이름입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "pid"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "데이터베이스 프로세스의 PID입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "tranindex"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "현재 실행 중인 트랜잭션을 식별하는 고유한 번호입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "user"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "데이터베이스에 접속한 사용자의 이름입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query_time"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "쿼리 실행 시간입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "transtatus"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "트랜잭션의 현재 상태입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "실행된 SQL 쿼리입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query_hash"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "쿼리의 해시 값입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "query_param"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "쿼리 실행 시 사용된 매개변수입니다."
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.tr, {
+        children: [(0,jsx_runtime.jsx)(_components.td, {
+          children: (0,jsx_runtime.jsx)(_components.code, {
+            children: "lock_holder"
+          })
+        }), (0,jsx_runtime.jsx)(_components.td, {
+          children: "현재 트랜잭션에서 자원을 잠금(Lock)한 세션입니다."
+        })]
+      })]
+    })]
+  });
+}
+function _db_cubrid_locktree_MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_db_cubrid_locktree_createMdxContent, {
+      ...props
+    })
+  }) : _db_cubrid_locktree_createMdxContent(props);
+}
+
+
+;// CONCATENATED MODULE: ./docs/common-items/_db-cubrid-info-of-column.mdx
+
+
+const _db_cubrid_info_of_column_frontMatter = {};
+const _db_cubrid_info_of_column_contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+
+
+const _db_cubrid_info_of_column_toc = [{
+  "value": "컬럼 정보 안내",
+  "id": "column-info",
+  "level": 2
+}, ...toc, ..._db_cubrid_locktree_toc, ...toc, ..._db_cubrid_locktree_toc];
+function _db_cubrid_info_of_column_createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    code: "code",
+    h2: "h2",
+    p: "p",
+    section: "section",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  }, {InDoc, TabItem, Tabs} = _components;
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!TabItem) _missingMdxReference("TabItem", true);
+  if (!Tabs) _missingMdxReference("Tabs", true);
+  return (0,jsx_runtime.jsxs)(_components.section, {
+    className: "remark-sectionize-h2",
+    children: [(0,jsx_runtime.jsx)(_components.h2, {
+      id: "column-info",
+      children: "컬럼 정보 안내"
+    }), (0,jsx_runtime.jsx)(InDoc, {
+      pages: "instance-monitoring,multi-instance-monitoring",
+      children: (0,jsx_runtime.jsxs)(Tabs, {
+        groupId: "db-columns",
+        children: [(0,jsx_runtime.jsx)(TabItem, {
+          value: "activesession",
+          label: "Active session",
+          children: (0,jsx_runtime.jsx)(MDXContent, {})
+        }), (0,jsx_runtime.jsx)(TabItem, {
+          value: "locktree",
+          label: "Lock tree",
+          children: (0,jsx_runtime.jsx)(_db_cubrid_locktree_MDXContent, {})
+        }), (0,jsx_runtime.jsxs)(TabItem, {
+          value: "process-info",
+          label: "Process information",
+          children: [(0,jsx_runtime.jsx)(_components.p, {
+            children: "다음 항목은 XOS 에이전트를 설치한 경우 수집되는 지표입니다."
+          }), (0,jsx_runtime.jsxs)(_components.table, {
+            children: [(0,jsx_runtime.jsx)(_components.thead, {
+              children: (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.th, {
+                  children: "항목"
+                }), (0,jsx_runtime.jsx)(_components.th, {
+                  children: "설명"
+                })]
+              })
+            }), (0,jsx_runtime.jsxs)(_components.tbody, {
+              children: [(0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "cputime"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "CPU 사용 시간"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "cpuusage"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "CPU 사용률"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "elapse"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "CPU 사용 경과 시간"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "vsize"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "가상 메모리 사이즈(Kb)"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "rss"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "Resident Set Size(RSS), 프로세스와 관련한 물리적 페이지 수"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "state"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "프로세스 상태"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "ioread"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "블록을 읽는 데 소요된 실제 시간(milliseconds)"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "iowrite"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "블록을 쓰는 데 소요된 실제 시간(milliseconds)"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "pss"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "프로세스 고유 메모리 사용량 + 하나의 프로세스가 차지하는 공유 메모리 비율"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "uid"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "user id"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "cmd"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "수행 중인 명령어"
+                })]
+              }), (0,jsx_runtime.jsxs)(_components.tr, {
+                children: [(0,jsx_runtime.jsx)(_components.td, {
+                  children: (0,jsx_runtime.jsx)(_components.code, {
+                    children: "longcmd"
+                  })
+                }), (0,jsx_runtime.jsx)(_components.td, {
+                  children: "cmd의 전체 경로"
+                })]
+              })]
+            })]
+          })]
+        })]
+      })
+    }), (0,jsx_runtime.jsx)(InDoc, {
+      pages: "analysis-count-trend",
+      children: (0,jsx_runtime.jsx)(MDXContent, {})
+    }), (0,jsx_runtime.jsx)(InDoc, {
+      pages: "analysis-lock-and-deadlock",
+      children: (0,jsx_runtime.jsx)(_db_cubrid_locktree_MDXContent, {})
+    }), (0,jsx_runtime.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,jsx_runtime.jsx)(_components.p, {
+        children: "와탭은 클라이언트와 관련한 정보를 기본 저장합니다."
+      })
+    })]
+  });
+}
+function _db_cubrid_info_of_column_MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_db_cubrid_info_of_column_createMdxContent, {
+      ...props
+    })
+  }) : _db_cubrid_info_of_column_createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 11357:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    li: "li",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, InDoc, Xclude} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_analysis",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_dbLockTree",
+        className: "uitext"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      product: "cubrid,postgresql,oracle,oracle-pro,oracle-v1,altibase,tibero",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "하루 동안 발생한 락(lock)의 추이를 분석하는 도구입니다. 이 기능을 통해 락을 발생시킨 세션(lock holder)과 락을 대기하고 있는 세션(lock waiter)에 대한 트리 구조를 시각적으로 확인할 수 있습니다. 특정 시점에 발생한 락 정보의 holder와 waiter 간의 관계를 분석할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "주요 기능은 다음과 같습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "락 추이 분석"
+            }), ": 설정한 조회 기간 동안 발생한 락의 추이를 시간에 따라 추적하여 그래프로 표시합니다. 이를 통해 락이 어떻게 발생하고 해소되는지를 시각적으로 파악할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "락 Holder 및 Waiter 확인"
+            }), ": 각 락에 대한 holder와 waiter를 트리 구조로 확인할 수 있습니다. 이를 통해 특정 락이 발생한 상황에서 락을 발생시킨 세션과 대기하는 세션 간의 관계를 파악할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "세션 간 관계 분석"
+            }), ": 락을 발생시킨 세션과 대기하는 세션 간의 관계를 분석하여 쿼리 실행 및 트랜잭션 처리 과정에서 발생한 락의 원인을 식별할 수 있습니다."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "이를 통해 데이터베이스 관리자는 락 관련 문제를 신속하게 식별하고 해결할 수 있으며, 데이터베이스 성능을 최적화할 수 있습니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "cubrid,postgresql,oracle,oracle-pro,oracle-v1,altibase,mssql,tibero",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "하루 동안의 락 발생 여부와 시간을 시계열 차트/락 트리로 제공합니다. 락이 최초 발생한 지점부터 holder와 waiter의 구조를 트리 형태로 표현하여 제공합니다. 락 트리를 시간의 흐름으로 확인할 수 있습니다."
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      product: "mssql",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "SQL Server"
+        }), " 데이터베이스에서 발생하는 락(lock) 현황을 실시간으로 모니터링하고 세션의 락 상태와 관련한 세부 정보를 확인할 수 있는 유용한 도구입니다. 이 기능을 통해 사용자는 데이터베이스 성능 저하를 유발할 수 있는 락 문제를 빠르게 식별하고 원인을 분석할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "제공하는 주요 기능은 다음과 같습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "락 현황 시각화"
+            }), ": 하루 동안 발생한 락 현황을 시각화한 그래프로 확인할 수 있습니다. 이를 통해 락이 발생한 시간대와 빈도를 한눈에 파악할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "세션 정보 제공"
+            }), ": 락을 유발한 세션에 대한 상세 정보를 테이블 형식으로 제공합니다. 각 세션의 상태, 대기 시간, 대기 유형, 실행 중인 SQL 문 등의 정보를 확인할 수 있습니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 66613:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    em: "em",
+    img: "img",
+    li: "li",
+    ol: "ol",
+    p: "p",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, InDoc, ProdImg, Title, UI, Xclude} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!ProdImg) _missingMdxReference("ProdImg", true);
+  if (!Title) _missingMdxReference("Title", true);
+  if (!UI) _missingMdxReference("UI", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Title, {
+      hashid: "basicusage",
+      level: props.level,
+      children: "기본 사용 안내"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
+      img: "db-locktress-basic.png",
+      desc: "락 트리"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "postgresql,mysql,altibase,mssql,cubrid",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["원하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "숫자 1",
+          src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
+          width: "35",
+          height: "35"
+        }), " 날짜와 시간을 설정한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "숫자 2",
+          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
+          width: "35",
+          height: "35"
+        }), " 목록에서 인스턴스를 선택하세요. 설정한 시간에 락이 발생했다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "lock wait sessions"
+          })
+        }), "와 화면 아래 테이블에 조회한 데이터를 표시합니다."]
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      product: "postgresql,mysql,altibase,cubrid",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "숫자 1",
+          src: (__webpack_require__(15856)/* ["default"] */ .A) + "",
+          width: "35",
+          height: "35"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "time",
+          className: "uitext"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "숫자 2",
+          src: (__webpack_require__(29675)/* ["default"] */ .A) + "",
+          width: "35",
+          height: "35"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "instance",
+          className: "uitext"
+        }), "에서 조회하길 원하는 날짜와 시간, 인스턴스를 선택하세요. 설정한 시간에 락이 발생했다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Lock Wait Sessions"
+          })
+        }), "와 화면 아래 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Lock Tree"
+          })
+        }), " 테이블에 조회한 데이터를 표시합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "한 차트 내에서 최대 2주간의 데이터를 한 번에 볼 수 있습니다. 그래프 차트에서 특정 시간을 클릭하면 화면 아래 테이블에서 선택한 시간의 락 정보를 확인할 수 있습니다. 화면 아래 상세 정보에서 초 단위 버튼을 선택하면 5초 단위로 락 정보를 조회할 수 있습니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Lock Wait Sessions"
+                })
+              }), " 차트의 오른쪽 위에 표시된 태그를 통해 조회 단위를 확인할 수 있습니다."]
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "그래프 차트에서 특정 시간 영역을 계속해서 드래그(드릴다운)할수록 상세 시간의 차트와 락 트리를 조회할 수 있습니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "차트에서 3시간 이내로 드래그해서 5초 단위의 데이터를 조회할 수 있습니다. 다만 5초 단위의 데이터는 최근 한 달 범위에서만 조회할 수 있습니다. 한 달 이전의 데이터는 5분 요약 데이터로만 볼 수 있습니다. 예를 들어, 40일 전의 락 트릭 데이터를 드래그(드릴다운)해서 5분 요약 데이터를 조회할 수 있으나 5초 데이터는 알 수 없습니다."
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      product: "mssql,tibero",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["화면 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "date",
+              className: "uitext"
+            }), "에서 조회하려는 날짜를 선택와 시간을 설정하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "모니터링할 인스턴스를 선택하세요."
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "선택한 인스턴스에서 설정한 시간 동안 발생한 잠금(Lock) 현황을 확인할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["만약 설정된 시간 동안 잠금(Lock)이 발생했다면, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+          children: "lock wait sessions"
+        }), " 그래프와 하단의 테이블에서 특정 시간대에 잠금이 집중되는지, 또는 특정 세션이 지속적으로 잠금을 유발하는지 등을 분석할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "차트에서 3시간 이내로 드래그해서 5초 단위의 데이터를 조회할 수 있습니다. 다만 5초 단위의 데이터는 최근 한 달 범위에서만 조회할 수 있습니다. 한 달 이전의 데이터는 5분 요약 데이터로만 볼 수 있습니다. 예를 들어, 40일 전의 락 트릭 데이터를 드래그(드릴다운)해서 5분 요약 데이터를 조회할 수 있으나 5초 데이터는 알 수 없습니다."
+        })
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 81202:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ReturnLink} = _components;
+  if (!ReturnLink) _missingMdxReference("ReturnLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "info",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ReturnLink, {
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 20201:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(81202);
+/* harmony import */ var _common_items_db_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11357);
+/* harmony import */ var _common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(66613);
+/* harmony import */ var _common_items_db_cubrid_info_of_column_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(62897);
+
+
+const frontMatter = {
+	id: 'analysis-lock-and-deadlock',
+	title: '락 트리',
+	description: '하루 동안 발생한 Lock 추이를 분석하고 교착 상태의 쿼리를 확인할 수 있습니다.',
+	keywords: [
+		'CUBRID',
+		'데이터베이스',
+		'Lock',
+		'락 트리'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "cubrid/analysis-lock-and-deadlock",
+  "title": "락 트리",
+  "description": "하루 동안 발생한 Lock 추이를 분석하고 교착 상태의 쿼리를 확인할 수 있습니다.",
+  "source": "@site/docs/cubrid/analysis-lock-and-deadlock.mdx",
+  "sourceDirName": "cubrid",
+  "slug": "/cubrid/analysis-lock-and-deadlock",
+  "permalink": "/whatap-docs/cubrid/analysis-lock-and-deadlock",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/cubrid/analysis-lock-and-deadlock.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "analysis-lock-and-deadlock",
+    "title": "락 트리",
+    "description": "하루 동안 발생한 Lock 추이를 분석하고 교착 상태의 쿼리를 확인할 수 있습니다.",
+    "keywords": [
+      "CUBRID",
+      "데이터베이스",
+      "Lock",
+      "락 트리"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "cubridSidebar",
+  "previous": {
+    "title": "카운트 추이 비교",
+    "permalink": "/whatap-docs/cubrid/analysis-count-trend"
+  },
+  "next": {
+    "title": "데이터베이스 파라미터",
+    "permalink": "/whatap-docs/cubrid/analysis-databaseparameter"
+  }
+};
+const assets = {
+
+};
+
+/*락트리*/
+/*락트리 컬럼 정보*/
+
+
+
+
+
+
+const toc = [..._common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_cubrid_info_of_column_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      product: "CUBRID"
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_locktree_using_basic_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {
+      level: 2
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_cubrid_info_of_column_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
+/***/ 15856:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LjE0ZWNiNDJmMmMsIDIwMjMvMDEvMTMtMTI6MjU6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6Yzg0YmZlYjgtYTgzZS00NTU3LWFiNGYtODQ3ZTFjMGQ5MjNlIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA3QTM1RTJEQjU2QjExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA3QTM1RTJDQjU2QjExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4wIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTZlMmZhMDktMjhmZS00ZGUxLTg3NGQtNDQwYjgxNTBmMzI4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmM4NGJmZWI4LWE4M2UtNDU1Ny1hYjRmLTg0N2UxYzBkOTIzZSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ppgo9sAAAAJPSURBVHjazJhNSBtBGIYnNiejFDwIzUEbKh5U0FsPWqOFSlTw5EFEpbeSgxdRUZFSi4rgMZS0p2KrICKiWIN6kPgH7cnfgAcl6EEhCErbQKGV9v3MDG6XxMwmu5t94cGom+Fhdubbb9YWXWZa4gQNoBqUgQKQB/6CK3AKQmAdBMCFlsFtkjK1oBe8AA8kx74BNPo4l0uarCT/LwIrYA14NIgwfm0jCIIl8CQdmZdgF9Sx9EO3dg+0a5WxgWHwETiYfqGxPoHXiS6wx/nbKOhjxmWI/3ybbGY6DBZRCrXeJ0OL1c/My3vgSiTzDmSbKJMLfPFknmvZNdFfjM2hcpRjvzk8MVIMbf1n6gXcLfPNr6it/nnGZjd1naEesClmxik7K+eXuotQ6kG+mJlG2cpajCfR5/7Y5619xj4s6SJj50IT9MEt+60yVwwRnWQoNSRDt6mUZT4lYs0UWkDGJWQeWkAmV6aFMDUkc20Bjx9C5swCMmEhc2ABmZCQ2bCATFDIUOn6k0GR37xxvy3FdJxY5X1q4puKq3yzd78fqVZal6IZ6GxG4XgkLUOTEVEeVdxiqhLlEEvsqVdu9G/+/x8bSVIFtpV1Zl1MlclZFCLqQxy1nTsgxySR76BCbGt1BT4GXpNE6Dj8SikS73EwqThKGJkBMC1ziHtjoBDNyCAY03K8JaE28FPnNdICRlI5a0/xBRbQadfQWDPpvIU44T0yvY/5orFSU2VdAJWgSb1Y03k/I5LPK7Wbt6uPRWPE24Awf+gFed2KGPGyyJT8E2AAc7l5zWfLLegAAAAASUVORK5CYII=");
+
+/***/ }),
+
+/***/ 29675:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LjE0ZWNiNDJmMmMsIDIwMjMvMDEvMTMtMTI6MjU6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NjVlMjMwYmYtMTI4OS00ODUyLWE3NjYtZDU2NzhlZjdkZWE5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA3QTM1RTI5QjU2QjExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA3QTM1RTI4QjU2QjExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4wIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZWUyNmRlM2EtZTU1MS00YTNhLTg5ODUtNTliOTQzOTNkMTg0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY1ZTIzMGJmLTEyODktNDg1Mi1hNzY2LWQ1Njc4ZWY3ZGVhOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plwn9wAAAALTSURBVHjaxJhLSFRRGMe/sYLADDdJUlST7YapaNXTsVWa0QujqMCIoCg0CKPsaQ8rGpIwIiIX0TtyIT00KQiNaKJNaLbSLFoU2cKygWAW9f+653OuecVz7r1z+8NvHtx7zvznnO9853w3lHxMJpoESkAMREAYZKtrSdALOkE7aAHfTDoPaZpZCPaCUjBOs+8UeAjOgoROg6xRrs8ED8ALsNrACKl714CXoAlM92JmI3gDVpB3rQIdYJ0bM0fATZBD/mkiuAsOmpg5Co5RZhQCJ8F+HTObQQ1lXqecpsxuZha4RMGIR6hBpQZHM/Vggk5Pff1EV5FFymuRZIot9lwgevLaOIbOO+WZQtCm0wP/YNVFou4vztdPbyOqLDMytViljsGR2afTKtGFZHM4bSQWJdpear2LqhuMR6jKPk35YJlOq2gBUdkS6/P1aqLmOFFdhfXOIyJqSRiZ4ayeJ9PE3VzRbZn8hc2nh2h+ZHgczdhgu89szysH17JUvGgre/xwI3930FxPq6tIpinqx1rlkRHJVBooImam+WHm9tP056XzjJuHxUyuVyO9n61VNBiRC4y7yNE5QmgF9K669HdeZW7jh81892Jm5zlky850rKyNuepmQMx8dGukvpGo8bna2CZjh93qfqbFzFu3RuxxchmH0nC+azPvxEybVyNNJ5xzj4GeSQbm//MJjNEJVo4RmRqJk4IpRP0DQ++djQPJlhLtg/tU8HUsXrAwqRUsH61V66uhRlj/fhfxBqqpZjZiX9px+n+KO9VNXHQVB2yEy6CVTie9ClUVBqUfYPdIx85usCMgI785rCS/jFQd3MhgmWLXAXBHp26qUbVTpkbkEDhjUlEeB5vAT59jZD2odVNr3wJzwSMfjNwHc8A9L08helThX6g6TBkYSKmnD4tU4f/Br+czojyVi4psD4uk8OMpfQ+61H7HeasvEw+LAtEfAQYAv2+q6mxeFyYAAAAASUVORK5CYII=");
+
+/***/ }),
+
+/***/ 28453:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   R: () => (/* binding */ useMDXComponents),
+/* harmony export */   x: () => (/* binding */ MDXProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(96540);
+/**
+ * @typedef {import('mdx/types.js').MDXComponents} MDXComponents
+ * @typedef {import('react').Component<{}, {}, unknown>} Component
+ * @typedef {import('react').ReactNode} ReactNode
+ */
+
+/**
+ * @callback MergeComponents
+ *   Custom merge function.
+ * @param {Readonly<MDXComponents>} currentComponents
+ *   Current components from the context.
+ * @returns {MDXComponents}
+ *   Additional components.
+ *
+ * @typedef Props
+ *   Configuration for `MDXProvider`.
+ * @property {ReactNode | null | undefined} [children]
+ *   Children (optional).
+ * @property {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @property {boolean | null | undefined} [disableParentContext=false]
+ *   Turn off outer component context (default: `false`).
+ */
+
+
+
+/** @type {Readonly<MDXComponents>} */
+const emptyComponents = {}
+
+const MDXContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(emptyComponents)
+
+/**
+ * Get current components from the MDX Context.
+ *
+ * @param {Readonly<MDXComponents> | MergeComponents | null | undefined} [components]
+ *   Additional components to use or a function that creates them (optional).
+ * @returns {MDXComponents}
+ *   Current components.
+ */
+function useMDXComponents(components) {
+  const contextComponents = react__WEBPACK_IMPORTED_MODULE_0__.useContext(MDXContext)
+
+  // Memoize to avoid unnecessary top-level context changes
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(
+    function () {
+      // Custom merge via a function prop
+      if (typeof components === 'function') {
+        return components(contextComponents)
+      }
+
+      return {...contextComponents, ...components}
+    },
+    [contextComponents, components]
+  )
+}
+
+/**
+ * Provider for MDX context.
+ *
+ * @param {Readonly<Props>} properties
+ *   Properties.
+ * @returns {JSX.Element}
+ *   Element.
+ * @satisfies {Component}
+ */
+function MDXProvider(properties) {
+  /** @type {Readonly<MDXComponents>} */
+  let allComponents
+
+  if (properties.disableParentContext) {
+    allComponents =
+      typeof properties.components === 'function'
+        ? properties.components(emptyComponents)
+        : properties.components || emptyComponents
+  } else {
+    allComponents = useMDXComponents(properties.components)
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+    MDXContext.Provider,
+    {value: allComponents},
+    properties.children
+  )
+}
+
+
+/***/ })
+
+}]);
