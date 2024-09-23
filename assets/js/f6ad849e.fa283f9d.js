@@ -305,7 +305,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             className: "language-bash",
-            children: "helm install whatap-kube-agent whatap/kube --create-namespace --namespace <namespace> --set namespaceOverrideEnabled=true --wait\n"
+            children: "helm install whatap-kube-agent whatap/kube --create-namespace --namespace <namespace> --set namespaceOverrideEnabled=true --wait -f values.yaml\n"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
           id: "업데이트-및-삭제",
