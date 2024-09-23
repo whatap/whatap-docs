@@ -2731,8 +2731,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'cubrid/analysis-count-trend',
-                'cubrid/analysis-databaseparameter',
                 'cubrid/analysis-lock-and-deadlock',
+                'cubrid/analysis-databaseparameter',
               ]
             },
             {
