@@ -2944,6 +2944,7 @@ const sidebars = {
                 'cubrid-v1/set-receive-event',
                 'cubrid-v1/set-event-history',
                 'cubrid-v1/set-event-format',
+                'cubrid-v1/real-time-notification'
               ],
             },
             'cubrid-v1/labs'
