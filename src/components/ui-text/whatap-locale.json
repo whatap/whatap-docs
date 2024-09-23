@@ -35149,7 +35149,7 @@
   },
   "time_unit_hour": {
     "en": "hours",
-    "ja": "時",
+    "ja": "時間",
     "ko": "시간",
     "zh": "hours",
     "service_id": "TTL05099"
@@ -54175,7 +54175,7 @@
   },
   "CNT07858": {
     "en": "second(s)",
-    "ja": "キャンドル",
+    "ja": "秒",
     "ko": "초",
     "zh": "second(s)",
     "service_id": "CNT07858"
@@ -54784,7 +54784,7 @@
   },
   "LNK07945": {
     "en": "Install additional monitoring",
-    "ja": "追加の監視をインストールする",
+    "ja": "追加モニタリングのインストール",
     "ko": "추가 \b모니터링 설치",
     "zh": "Install additional monitoring",
     "service_id": "LNK07945"
@@ -54973,7 +54973,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55113,7 +55113,7 @@
   },
   "DSC07992": {
     "en": "{userName}!",
-    "ja": "{ユーザー名}!",
+    "ja": "{userName}さん！",
     "ko": "{userName}님!",
     "zh": "{userName}!",
     "service_id": "DSC07992"
@@ -55519,7 +55519,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -56044,7 +56044,7 @@
   },
   "MNU08125": {
     "en": "Integrated Flex Board",
-    "ja": "統合フレックスボード",
+    "ja": "統合Flexボード",
     "ko": "통합 Flex 보드",
     "zh": "Integrated Flex Board",
     "service_id": "MNU08125"
@@ -56261,7 +56261,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -57527,10 +57527,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
@@ -57724,7 +57724,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果を選択",
+    "ja": "検索結果の選択",
     "ko": "검색 결과 선택",
     "zh": "Select search results",
     "service_id": "CNT08366"
@@ -57850,7 +57850,7 @@
   },
   "ITM08384": {
     "en": "Stable (recommended) ",
-    "ja": "Stable（推奨）",
+    "ja": "Stable（推奨） ",
     "ko": "Stable(권장) ",
     "zh": "Stable (recommended) ",
     "service_id": "ITM08384"
@@ -58178,10 +58178,10 @@
     "service_id": "DSC08430"
   },
   "DSC08431": {
-    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
+    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
     "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した時点での監視をお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
-    "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
+    "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
     "service_id": "DSC08431"
   },
   "DSC08432": {
@@ -58207,23 +58207,23 @@
   },
   "DSC08435": {
     "en": "This node shows <b>high overall usage, putting it at risk of performance degradation and system failure</b>. You should consider reducing load through resource scaling, load balancing, or job optimization.",
-    "ja": "このノードは<b>全体的に高い使用率を示し、パフォーマンスの低下とシステム障害のリスク</b>があります。リソースのスケーリング、負荷分散、またはジョブの最適化を通じて負荷を軽減することを検討する必要があります。",
+    "ja": "このノードは<b>全体的に高い使用率を示し、パフォーマンスの低下とシステム障害のリスク</b>があります。リソースの拡張、負荷分散、またはタスクの最適化によって負荷を軽減することを検討する必要があります。",
     "ko": "이 노드는 <b>전반적으로 높은 사용량을 보여 성능 저하 및 시스템 장애의 위험</b>이 있습니다. 리소스 확장, 부하 분산, 또는 작업 최적화를 통해 부하를 줄이는 것을 고려해야 합니다.",
     "zh": "This node shows <b>high overall usage, putting it at risk of performance degradation and system failure</b>. You should consider reducing load through resource scaling, load balancing, or job optimization.",
     "service_id": "DSC08435"
   },
   "DSC08436": {
     "en": "The node's resource usage is <b>mainly focused on {resources}</b>. Intensive monitoring and load balancing strategies for overloaded resources are required, and measures to alleviate overload through resource expansion or task redistribution should be considered.",
-    "ja": "ノードのリソース使用量は<b>主に{resources}に集中して</b>です。過負荷のリソースに対する集中的な監視と負荷分散戦略が必要であり、リソースの拡張やタスクの再配分を通じて過負荷を軽減するための措置を検討する必要があります。",
+    "ja": "ノードのリソース使用量は<b>主に{resources}に集中して</b>です。負荷が集中しているリソースの集中的な監視と負荷分散戦略が必要であり、リソースの拡張や作業の再配布を通じて過負荷を軽減する措置を検討する必要があります。",
     "ko": "노드의 리소스 사용이 <b>주로 {resources}에 집중</b>되어 있습니다. 부하가 집중되는 리소스에 대한 집중적인 모니터링과 부하 분산 전략이 필요하며, 리소스 확장이나 작업 재분배를 통해 과부하를 완화하는 조치를 검토해야 합니다.",
     "zh": "The node's resource usage is <b>mainly focused on {resources}</b>. Intensive monitoring and load balancing strategies for overloaded resources are required, and measures to alleviate overload through resource expansion or task redistribution should be considered.",
     "service_id": "DSC08436"
   },
   "DSC08437": {
-    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "ja": "<b> {resource}使用率</b>が平均{avg}から最大{max}まで増加し、<b>断続的に高い負荷が発生する可能性</b>があります。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}에서 최대 {max}까지 증가하여 <b>간헐적으로 높은 부하가 발생할 가능성</b>이 있습니다.",
-    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "service_id": "DSC08437"
   },
   "DSC08438": {
@@ -58234,10 +58234,10 @@
     "service_id": "DSC08438"
   },
   "DSC08439": {
-    "en": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. Resource utilization can be increased through periodic resource usage pattern monitoring, resource allocation optimization, and workload distribution.",
+    "en": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. You can increase resource utilization by periodically monitoring resource usage patterns, optimizing resource allocation, and distributing workloads.",
     "ja": "<b> {resource}使用率</b>は、平均{avg}、最大{max}で<b>継続的に低いステータス</b>です。定期的なリソース使用パターンの監視とリソース割り当ての最適化、ワークロードの配布により、リソースの使用率を向上させることができます。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}, 최대 {max}로 <b>지속적으로 낮은 상태</b>입니다. 주기적인 리소스 사용 패턴 모니터링과 리소스 할당 최적화, 작업 부하 분배를 통해 자원 활용도를 높일 수 있습니다.",
-    "zh": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. Resource utilization can be increased through periodic resource usage pattern monitoring, resource allocation optimization, and workload distribution.",
+    "zh": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. You can increase resource utilization by periodically monitoring resource usage patterns, optimizing resource allocation, and distributing workloads.",
     "service_id": "DSC08439"
   },
   "DSC08440": {
@@ -58367,10 +58367,10 @@
     "service_id": "NTC08457"
   },
   "BTN08458": {
-    "en": "Hide warning popover",
-    "ja": "警告ポップオーバーを隠す",
-    "ko": "경고 팝오버 가리기",
-    "zh": "Hide warning popover",
+    "en": "Show warning popover",
+    "ja": "警告ポップオーバーを表示する",
+    "ko": "경고 팝오버 표시하기",
+    "zh": "Show warning popover",
     "service_id": "BTN08458"
   },
   "BTN08459": {
@@ -58454,7 +58454,7 @@
     "en": "If additional configuration management items are needed for server operation, we provide the ability to manually create and enter management items.  (Available for managing various groups, operations staff, support vendors, server introduction date etc.) ",
     "ja": "サーバー運用のために追加の構成管理項目が必要な場合は、管理項目を直接に作成することができます。  （各種グループ管理、運営担当者、ベンダー、サーバー導入日などの管理が可能）",
     "ko": "서버 운영에 추가적인 구성 관리 항목이 필요하다면 수동으로 관리 항목을 만들고입력할 수 있는 기능을 제공합니다.  (다양한 그룹 관리, 운영담당자, 지원 벤더, 서버 도입일 등 관리 가능) ",
-    "zh": "If additional configuration management items are needed for server operation, we provide the ability to manually create and enter management items.  (Available for managing various groups, operations staff, support vendors, server introduction date etc.) ",
+    "zh": "You can download server inventory information as a CSV file.",
     "service_id": "ITM08470"
   },
   "ITM08471": {
@@ -58465,10 +58465,10 @@
     "service_id": "ITM08471"
   },
   "ITM08472": {
-    "en": "You can download server configuration information as a CSV file.",
+    "en": "You can download server inventory information as a CSV file.",
     "ja": "サーバー構成情報をCSVファイルとしてダウンロードできます。",
     "ko": "서버 구성 정보를 CSV 파일로 다운로드 받을 수 있습니다.",
-    "zh": "You can download server configuration information as a CSV file.",
+    "zh": "You can download server inventory information as a CSV file.",
     "service_id": "ITM08472"
   },
   "CNT08473": {
@@ -58675,10 +58675,10 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "Add the script file to <b>{Agent installation path}/script/dbms/</b>.",
-    "ja": "スクリプトファイルを<b> {エージェントインストールパス} / script / dbms /パスに追加</b>します。",
-    "ko": "스크립트 파일을 <b>{에이전트 설치 경로}/script/dbms/ 경로에 추가</b>하세요.",
-    "zh": "Add the script file to <b>{Agent installation path}/script/dbms/</b>.",
+    "en": "Add the script file to <b>{Agent installation path}/scripts/dbms/</b>.",
+    "ja": "スクリプトファイルを<b> {エージェントインストールパス} / scripts / dbms /パスに追加</b>します。",
+    "ko": "스크립트 파일을 <b>{에이전트 설치 경로}/scripts/dbms/ 경로에 추가</b>하세요.",
+    "zh": "Add the script file to <b>{Agent installation path}/scripts/dbms/</b>.",
     "service_id": "DSC08502"
   },
   "DSC08503": {
@@ -58736,6 +58736,69 @@
     "ko": "전화번호를 변경하시겠습니까?",
     "zh": "Would you like to change your phone number?",
     "service_id": "TTL08510"
+  },
+  "TTL08511": {
+    "en": "Featured Server Group Widget (vertical)",
+    "ja": "サーバー推奨ウィジェットグループ（縦型）",
+    "ko": "추천 서버 그룹 위젯 (세로형)",
+    "zh": "Featured Server Group Widget (vertical)",
+    "service_id": "TTL08511"
+  },
+  "TTL08512": {
+    "en": "Featured Server Group Widget (horizontal)",
+    "ja": "サーバー推奨ウィジェットグループ（横型）",
+    "ko": "추천 서버 그룹 위젯 (가로형)",
+    "zh": "Featured Server Group Widget (horizontal)",
+    "service_id": "TTL08512"
+  },
+  "TTL08513": {
+    "en": "Featured Kubernetes Group Widget (vertical)",
+    "ja": "Kubernetes おすすめウィジェットグループ（縦型）",
+    "ko": "추천 쿠버네티스 그룹 위젯 (세로형)",
+    "zh": "Featured Kubernetes Group Widget (vertical)",
+    "service_id": "TTL08513"
+  },
+  "TTL08514": {
+    "en": "Featured Kubernetes Group Widget (horizontal)",
+    "ja": "Kubernetes おすすめウィジェットグループ（横型）",
+    "ko": "추천 쿠버네티스 그룹 위젯 (가로형)",
+    "zh": "Featured Kubernetes Group Widget (horizontal)",
+    "service_id": "TTL08514"
+  },
+  "TTL08515": {
+    "en": "Featured Browser Group Widget",
+    "ja": "ブラウザ推奨ウィジェットグループ",
+    "ko": "추천 브라우저 그룹 위젯",
+    "zh": "Featured Browser Group Widget",
+    "service_id": "TTL08515"
+  },
+  "TTL08516": {
+    "en": "Featured Oracle Group Widget",
+    "ja": "推奨Oracleグループウィジェット",
+    "ko": "추천 Oracle 그룹 위젯",
+    "zh": "Featured Oracle Group Widget",
+    "service_id": "TTL08516"
+  },
+  "ITM08517": {
+    "en": "Step {num}",
+    "ja": "ステップ{num}",
+    "ko": "{num} 단계",
+    "zh": "Step {num}",
+    "service_id": "ITM08517"
+  },
+  "BTN08518": {
+    "en": "Correlated DB session",
+    "ja": "連携DBセッション",
+    "ko": "연계 DB 세션",
+    "zh": "Correlated DB session",
+    "service_id": "BTN08518"
+  },
+  "BTN08519": {
+    "en": "Correlated project",
+    "ja": "連携プロジェクト",
+    "ko": "연계 프로젝트",
+    "zh": "Correlated project",
+    "service_id": "BTN08519"
   },
   "": {
     "en": "#VALUE!",
