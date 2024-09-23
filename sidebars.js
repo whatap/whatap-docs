@@ -2746,6 +2746,7 @@ const sidebars = {
               },
               items: [
                 'cubrid/metrics-data-list',
+                'cubrid/metrics-chart-v2',
                 'cubrid/metrics-chart',
                 'cubrid/metrics-search',
                 'cubrid/metrics-detect-anormal',
@@ -2759,9 +2760,27 @@ const sidebars = {
               items: [
                 'cubrid/stat',
                 'cubrid/table-size',
-                'cubrid/table-space-size',
+                'cubrid/database-size',
                 'cubrid/report-intro',
               ],
+            },
+            {
+              type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/log-main'
+              },
+              items: [
+                'cubrid/log-db',
+                'cubrid/log-lt',
+                'cubrid/log-exp',
+                'cubrid/log-search',
+                'cubrid/log-setting',
+                'cubrid/log-parser',
+              ]
             },
             {
               type: 'category',
@@ -2913,7 +2932,7 @@ const sidebars = {
               items: [
                 'cubrid-v1/stat',
                 'cubrid-v1/table-size',
-                'cubrid-v1/table-space-size',
+                'cubrid-v1/database-size',
                 'cubrid-v1/report-intro',
               ],
             },
