@@ -55,7 +55,7 @@ export default function CheckProduct() {
     } else if (cProdt === 'altibase') {
         product = '-altibase';
     } else if (cProdt === 'altibase-v1') {
-        product = '-altibase';
+        product = '-altibase-v1';
     } else if (cProdt === 'redis') {
         product = '-redis';
     } else if (cProdt === 'mongodb') {
