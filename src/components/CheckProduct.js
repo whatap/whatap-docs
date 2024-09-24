@@ -50,6 +50,8 @@ export default function CheckProduct() {
         product = '-mssql';
     } else if (cProdt === 'tibero') {
         product = '-tibero';
+    } else if (cProdt === 'cubrid-v1') {
+        product = '-cubrid-v1';
     } else if (cProdt === 'cubrid') {
         product = '-cubrid';
     } else if (cProdt === 'altibase') {
