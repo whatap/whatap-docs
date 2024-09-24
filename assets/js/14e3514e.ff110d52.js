@@ -74,6 +74,10 @@ const toc = [{
   "id": "수집-방식",
   "level": 2
 }, {
+  "value": "에이전트 옵션 적용하기",
+  "id": "set-agentoption",
+  "level": 2
+}, {
   "value": "민감 정보 수집 제외",
   "id": "민감-정보-수집-제외",
   "level": 3
@@ -82,9 +86,9 @@ const toc = [{
   "id": "특정-영역-마스킹-처리하기",
   "level": 3
 }, {
-  "value": "에이전트 옵션 적용하기",
-  "id": "set-agentoption",
-  "level": 2
+  "value": "특정 텍스트 마스킹 처리",
+  "id": "특정-텍스트-마스킹-처리",
+  "level": 3
 }, {
   "value": "세션 리플레이 이용하기",
   "id": "세션-리플레이-이용하기",
@@ -132,6 +136,12 @@ function _createMdxContent(props) {
     pre: "pre",
     section: "section",
     strong: "strong",
+    table: "table",
+    tbody: "tbody",
+    td: "td",
+    th: "th",
+    thead: "thead",
+    tr: "tr",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -182,12 +192,95 @@ function _createMdxContent(props) {
         children: "실제 화면을 녹화하거나 이미지로 캡처하는 대신, DOM 변경 사항과 CSS 스타일 정보 등을 텍스트 형태로 수집합니다. 이때 오버헤드를 방지하기 위해 브라우저의 메인 스레드가 유휴 상태일 때만 변경 사항을 수집하고 데이터를 전송합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "set-agentoption",
+        children: "에이전트 옵션 적용하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "세션 리플레이 기능을 적용하려면 브라우저 에이전트 옵션을 적용해야 합니다. 다음 예제를 참조하세요."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-javascript",
+          metastring: "showLineNumbers {8-10}",
+          children: "<script>\n  (function (w, h, _a, t, a, b) {\n    w = w[a] = w[a] || {\n      config: {\n        projectAccessKey: {projec_access_key},\n        pcode: {pcode},\n        sampleRate: 100,\n        sessionReplaySampleRate: 50,\n        sessionReplayMaskAllTexts: false,\n        sessionReplayMaskAllInputs: false,\n        proxyBaseUrl: \"https://rum-ap-northeast-2.whatap-browser-agent.io/\",\n      },\n    };\n    a = h.createElement(_a);\n    a.async = 1;\n    a.src = t;\n    t = h.getElementsByTagName(_a)[0];\n    t.parentNode.insertBefore(a, t);\n  })(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');\n</script>\n"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "sessionReplaySampleRate"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Int"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["전체 수집 세션 중 세션 리플레이 수집 비율로 0부터 100까지 설정할 수 있습니다. 예를 들어, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "sampleRate"
+            }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "100"
+            }), "이고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "sessionReplaySampleRate"
+            }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "50"
+            }), "이라면, 전체 세션 중 50%만 세션 리플레이로 기록합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["반면에, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "sampleRate"
+            }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "50"
+            }), "이고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "sessionReplaySampleRate"
+            }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "100"
+            }), "이라면, 전체 세션의 50%가 수집 대상이며, 이 중 100%를 세션 리플레이로 기록합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "sessionReplayMaskAllTexts"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            }), "로 설정하면 마스킹 처리 없이 모든 텍스트 데이터를 수집합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "sessionReplayMaskAllInputs"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            }), "로 설정하면 마스킹 처리 없이 모든 입력(Input) 필드 영역의 데이터를 수집합니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "민감-정보-수집-제외",
         children: "민감 정보 수집 제외"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "민감 정보에 대한 수집 제외 방식을 기본 제공합니다. 화면의 모든 텍스트는 다음과 같이 마스킹 처리되어 수집됩니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["민감 정보에 대한 수집 제외 방식을 기본 제공합니다. 화면의 모든 텍스트는 다음과 같이 마스킹 처리되어 수집됩니다. 단, 에이전트 옵션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "sessionReplayMaskAllTexts"
+        }), "의 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "true"
+        }), "로 설정되어 있어야 합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "browser-session-replay-masking-example.png",
         desc: "Session replay"
@@ -198,62 +291,90 @@ function _createMdxContent(props) {
         id: "특정-영역-마스킹-처리하기",
         children: "특정 영역 마스킹 처리하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "텍스트 외에도 개인 식별 정보나 민감한 데이터가 포함될 수 있으며, 이를 보호하기 위해 특정 영역을 마스킹 처리하는 옵션이 제공합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "Masking",
-          src: (__webpack_require__(2973)/* ["default"] */ .A) + "",
-          width: "600",
-          height: "451"
-        })
+        children: "텍스트 외에도 개인 식별 정보나 민감한 데이터가 포함될 수 있으며, 이를 보호하기 위해 특정 영역을 마스킹 처리하는 옵션을 제공합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              style: {
+                textAlign: "center"
+              },
+              children: "특정 영역에 대한 마스킹 처리"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              style: {
+                textAlign: "center"
+              },
+              children: "마스킹을 적용하지 않은 경우"
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.tbody, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              style: {
+                textAlign: "center"
+              },
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "마스킹 처리",
+                src: (__webpack_require__(67991)/* ["default"] */ .A) + "",
+                width: "1286",
+                height: "701"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              style: {
+                textAlign: "center"
+              },
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+                alt: "마스킹 미처리",
+                src: (__webpack_require__(18977)/* ["default"] */ .A) + "",
+                width: "1292",
+                height: "701"
+              })
+            })]
+          })
+        })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["수집 대상에서 제외할 영역에 대한 html 요소(element)의 클래스 이름(class name)에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "session-replay-ignore-class"
-        }), "를 추가하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-html",
-          metastring: "showLineNumbers {1}",
-          children: "<div class=\"session-replay-ignore-class home-header pure-menu pure-menu-horizontal\">\n  <div class=\"home-header-bar\">\n    {% if site.data.archive %}\n    <ul class=\"home-header-menu pure-menu-list\">\n      {% for item in site.data.archive %}\n        <li class=\"pure-menu-item\">\n          <a href=\"{{ item.url | relative_url }}\" class=\"pure-menu-link {% if page.url == item.url %}current-item{% endif %}\"\">{{ item.title }}</a>\n        </li>\n      {% endfor %}\n    </ul>\n    {% endif %}\n  </div>\n</div>\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "set-agentoption",
-        children: "에이전트 옵션 적용하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["세션 리플레이 기능을 적용하려면 브라우저 에이전트 옵션을 적용해야 합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "config"
-        }), " 객체에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "sessionReplaySampleRate"
-        }), " 속성을 0부터 100까지 설정할 수 있습니다."]
+        children: ["수집 대상에서 제외할 영역에 대한 html 요소(element)의 클래스(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "class"
+        }), ") 이름에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "session-replay-block-class"
+        }), "를 추가하세요. 다음 예제를 참조하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          metastring: "showLineNumbers {8}",
-          children: "<script>\n(function (w, h, _a, t, a, b) {\n    w = w[a] = w[a] || {\n        config: {\n            projectAccessKey: {projec_access_key},\n            pcode: {pcode},\n            sampleRate: 100,\n            sessionReplaySampleRate: 50,\n            proxyBaseUrl: \"https://rum-ap-northeast-2.whatap-browser-agent.io/\",\n        },\n    };\n    a = h.createElement(_a);\n    a.async = 1;\n    a.src = t;\n    t = h.getElementsByTagName(_a)[0];\n    t.parentNode.insertBefore(a, t);\n})(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');\n</script>\n"
+          metastring: "showLineNumbers {1}",
+          children: "<div class=\"session-replay-block-class home-header pure-menu pure-menu-horizontal\">\n  <div class=\"home-header-bar\">\n    {% if site.data.archive %}\n    <ul class=\"home-header-menu pure-menu-list\">\n      {% for item in site.data.archive %}\n        <li class=\"pure-menu-item\">\n          <a href=\"{{ item.url | relative_url }}\" class=\"pure-menu-link {% if page.url == item.url %}current-item{% endif %}\"\">{{ item.title }}</a>\n        </li>\n      {% endfor %}\n    </ul>\n    {% endif %}\n  </div>\n</div>\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "특정-텍스트-마스킹-처리",
+        children: "특정 텍스트 마스킹 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["에이전트 옵션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "sessionReplayMaskAllTexts"
+        }), "를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "false"
+        }), "로 설정하면 대부분의 텍스트가 표시되만 특정 텍스트 영역은 수집 대상에서 제외할 수 있는 옵션을 제공합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "Text masking",
+          src: (__webpack_require__(12821)/* ["default"] */ .A) + "",
+          width: "1322",
+          height: "924"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["수집하는 세션 중에서 세션 리플레이를 적용할 세션의 비율을 설정할 수 있습니다. 예를 들어, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "sampleRate"
-        }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "100"
-        }), "이고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "sessionReplaySampleRate"
-        }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "50"
-        }), "이라면, 전체 세션 중 50%만 세션 리플레이로 기록됩니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["반면에, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "sampleRate"
-        }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "50"
-        }), "이고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "sessionReplaySampleRate"
-        }), "가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "100"
-        }), "이라면, 전체 세션의 50%가 수집 대상이며, 이 중 100%가 세션 리플레이로 기록됩니다."]
+        children: ["특정 텍스트 영역을 수집 대상에서 제외하려면 해당 html 요소(element)의 클래스(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "class"
+        }), ") 이름에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "session-replay-mask-text-class"
+        }), "를 추가하세요. 다음 예제를 참조하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-javascript",
+          metastring: "showLineNumbers {1}",
+          children: "<main class=\"session-replay-mask-text-class\">\n  {{ content }}\n</main>\n\n<footer class=\"footer\">\n  {%- assign year_from = site.posts[-1].date | date: '%Y' -%}\n  {%- assign year_to   = site.time | date: '%Y' -%}\n  {%- if year_from == nil or year_from == year_to -%}\n    {%- assign year_string = year_from -%}\n  {%- else -%}\n    {%- assign year_string = year_from | append: '&nbsp;' | append: '-' | append: '&nbsp;' | append: year_to -%}\n  {%- endif -%}\n</footer>\n"
+        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -297,6 +418,20 @@ function _createMdxContent(props) {
             })]
           }), "\n"]
         }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL08103",
+            className: "uitext"
+          }), " 기능은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "log_read",
+            className: "b600"
+          }), " 권한을 가진 멤버가 이용할 수 있습니다. 멤버 권한 체계에 대한 자세한 설명은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "../project/project-structure#project-auth",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -644,13 +779,23 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 2973:
+/***/ 67991:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/browser-session-replay-masking-area-c8ffd9e30d5b50241a4dadb814fa1b89.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/browser-session-replay-area-masking-371782c27e3d1cefe3e9f3779716ffdc.png");
+
+/***/ }),
+
+/***/ 18977:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/browser-session-replay-no-area-masking-e56579d4928478257dde488a29388dca.png");
 
 /***/ }),
 
@@ -661,6 +806,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/browser-session-replay-player-d8a579b53c571401092f8169f7638ea6.png");
+
+/***/ }),
+
+/***/ 12821:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/browser-session-replay-text-masking-28307fd31d113d49cbcc30af0318d1c4.png");
 
 /***/ }),
 
