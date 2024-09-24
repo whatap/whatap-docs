@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[3631],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57548],{
 
 /***/ 10891:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -164,7 +164,7 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "hitmap_transaction",
               className: "uitext"
-            }), " 섹션의 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            }), " 섹션에서 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "BTN08519",
               className: "uitext"
             }), " 버튼을 선택하세요."]
@@ -192,6 +192,19 @@ function _createMdxContent(props) {
         type: "note",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "hitmap_transaction",
+                className: "uitext"
+              }), " 섹션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08519",
+                className: "uitext"
+              }), " 버튼은 연계된 프로젝트가 있을 때만 표시됩니다. 연계 프로젝트 추가에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "#addlinkproject",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: ["왼쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "TTL07151",
@@ -282,7 +295,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 46380:
+/***/ 75156:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -304,7 +317,7 @@ const frontMatter = {
 	title: '연계 프로젝트 관리',
 	description: '데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'Java',
+		'PHP',
 		'애플리케이션',
 		'연계 프로젝트',
 		'데이터베이스'
@@ -313,16 +326,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/linked-projects",
+  "id": "php/linked-projects",
   "title": "연계 프로젝트 관리",
   "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/java/linked-projects.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/linked-projects",
-  "permalink": "/whatap-docs/java/linked-projects",
+  "source": "@site/docs/php/linked-projects.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/linked-projects",
+  "permalink": "/whatap-docs/php/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/linked-projects.mdx",
+  "editUrl": "undefined/docs/php/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -330,17 +343,17 @@ const metadata = {
     "title": "연계 프로젝트 관리",
     "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      "Java",
+      "PHP",
       "애플리케이션",
       "연계 프로젝트",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/java/instance-performance-analysis"
+    "permalink": "/whatap-docs/php/instance-performance-analysis"
   },
   "next": {
     "title": "Log 모니터링",

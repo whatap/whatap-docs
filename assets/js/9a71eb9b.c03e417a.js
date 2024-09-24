@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[56663],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10681],{
 
 /***/ 72140:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -80,7 +80,7 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "hitmap_transaction",
             className: "uitext"
-          }), " 섹션의 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          }), " 섹션에서 오른쪽 상단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "BTN08519",
             className: "uitext"
           }), " 버튼을 선택하세요."]
@@ -108,6 +108,19 @@ function _createMdxContent(props) {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "hitmap_transaction",
+              className: "uitext"
+            }), " 섹션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "BTN08519",
+              className: "uitext"
+            }), " 버튼은 연계된 프로젝트가 있을 때만 표시됩니다. 연계 프로젝트 추가에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "linked-projects#addlinkproject",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["왼쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "TTL07151",
@@ -3436,7 +3449,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 4092:
+/***/ 89249:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3473,8 +3486,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'analysis-hitmap',
-	title: '히트맵',
+	id: 'trs-profile',
+	title: '트랜잭션 트레이싱',
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	keywords: [
 		'애플리케이션',
@@ -3487,21 +3500,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "python/analysis-hitmap",
-  "title": "히트맵",
+  "id": "python/trs-profile",
+  "title": "트랜잭션 트레이싱",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/python/analysis-hitmap.mdx",
+  "source": "@site/docs/python/trs-profile.mdx",
   "sourceDirName": "python",
-  "slug": "/python/analysis-hitmap",
-  "permalink": "/whatap-docs/python/analysis-hitmap",
+  "slug": "/python/trs-profile",
+  "permalink": "/whatap-docs/python/trs-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/python/analysis-hitmap.mdx",
+  "editUrl": "undefined/docs/python/trs-profile.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "analysis-hitmap",
-    "title": "히트맵",
+    "id": "trs-profile",
+    "title": "트랜잭션 트레이싱",
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "keywords": [
       "애플리케이션",
@@ -3514,12 +3527,12 @@ const metadata = {
   },
   "sidebar": "pySidebar",
   "previous": {
-    "title": "큐브",
-    "permalink": "/whatap-docs/python/cube"
+    "title": "트랜잭션 분석하기",
+    "permalink": "/whatap-docs/python/trs-view"
   },
   "next": {
-    "title": "멀티 트랜잭션 추적",
-    "permalink": "/whatap-docs/python/analysis-trace-mtx"
+    "title": "액티브 트랜잭션",
+    "permalink": "/whatap-docs/python/active-transactions"
   }
 };
 const assets = {
