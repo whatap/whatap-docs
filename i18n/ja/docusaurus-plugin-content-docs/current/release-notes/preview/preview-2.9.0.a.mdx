@@ -1,0 +1,121 @@
+---
+id: preview-2_9_0x
+title: Preview 2.9.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験することができます。 
+
+:::
+
+## Preview 2.9.0.a0
+
+2024年08月29日
+
+<div class='indentTab'>
+
+### 共通
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">New</code>メニューの<Cmdname sid="metric" className="uitext" />パネルにWhaTap Docsで接続するリンクボタンを追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code className="newfunc">New</code>メニューで次の事項を修正
+
+  - <Cmdname sid="target" className="uitext" />選択オプションが省略された時、UIを改善
+
+    - 更新テキストを削除
+
+    - すべてを開く/閉じるというテキストの左側にアイコンを追加
+
+  - ウィジェットがない時、<Cmdname sid="BTN08226" className="uitext" />および<Cmdname sid="download" className="uitext" />ボタンを無効化
+
+  - <Cmdname sid="target" className="uitext" />選択オプションで検索結果に対する全体選択と解除機能を追加
+
+  - <Cmdname sid="DSC08214" className="uitext" />フレーズをツールチップで表示するように修正
+
+  - <Cmdname sid="select_all" className="uitext" />ボタンツールチップをマウスオーバーすると表示するように修正
+
+  - <Cmdname sid="time" className="uitext" />選択オプションにマウスオーバーした時、表示されるツールチップを削除
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューでウィジェットボタンのドロップダウンが不要に生成される問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TLT07929" className="uitext" />画面で長いグループ名がモーダル画面から離れて表示される問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="group_management_delete" className="uitext" type="group" />画面でグループアイコンが'X'で表示される問題を修正
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />メニューで選択したエージェントがインストールされているアプリケーションのスレッド状況(RUNNABLE、WAITING、合計)を表示する機能を追加
+
+- <Status priority='2'>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="TTL06128" className="uitext" />タブでログデータがない場合、案内メッセージを出力するように変更
+
+  :::note
+
+  ログ関連のエージェントオプションが設定されていない、またはログデータがない場合はメッセージを確認できます。
+
+  :::
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_netstatTopology" className="uitext" />メニューでGo商品アイコンが正常に表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />画面でSQL文の表示ボックスの色を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />画面でSQLの詳細を照会する時、APIが2回呼び出される問題を修正
+
+  :::note
+
+  API呼び出し回数の変更はユーザーに影響を与えません。
+
+  :::
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューで<Cmdname sid="AA002" className="uitext" />ウィジェットのチャート領域を選択した時に表示される <Cmdname sid="acttx" className="uitext" />画面のデザイン要素を修正
+
+  - <Cmdname sid="top_ten" className="uitext" />タブでデータがない時に表示される<UI>No rows found</UI>メッセージがテーブルヘッダーと重ならないように修正
+
+  - 余白が生じた際、背景色が埋められない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" />メニューで<Cmdname sid="AA005" className="uitext" />ウィジェットのY軸の調整ボタンが断続的に見えない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" />メニューの![スナップショットアイコン](/img/ic-camera.svg)ボタンでスナップショットを画像として保存する際にテーマが適用されない問題を修正
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューでインスタンス名を選択して<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動する際に組織情報が漏れる問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューで、SQLテキストプレビューボックスのサイズを修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL06224" className="uitext" />画面で<UI>Reset Bind</UI>ボタンを選択するとバインド変数が初期化されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> メニューで次の修正事項を反映
+
+  - ZIPファイルのダウンロードコマンドの削除
+
+  - TARファイルのダウンロードコマンドの修正
+
+  - **PostgreSQL**、**Oracle Pro**、**Altibase**、**MySQL**商品以外の商品で<UI>ZIP</UI> <Cmdname sid="download" className="uitext" />ボタンが動作しない問題を修正
+
+#### Oracle Pro
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />メニューでクラスターを選択し、Global Lock情報を照会できる最大時間範囲を3時間に変更
+
+---
+
+### `Log`
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_log" className="uitext" />の下位メニューでカラム設定のUIを交替
+
+- 1つになった![設定アイコン](/img/ico-setting.svg)<Cmdname sid="table_settings" className="uitext" />ボタンを<Cmdname sid="column_settings" className="uitext" />および<Cmdname sid="ITM08349" className="uitext" />ボタンで分離
+
+- 全画面モードの時、<Cmdname sid="column_settings" className="uitext" />および<Cmdname sid="ITM08349" className="uitext" />ボタンを取り消し
+
+</div>

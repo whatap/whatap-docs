@@ -169,8 +169,76 @@ The **Apache Pulsar Dashboard** provided by WhaTap consists of the following thr
 
   </details>
 
+:::note
+By updating data in real time, it allows the administrator to quickly understand the current situation and reflect the changes that occur during cluster operation. This allows the administrator to monitor issues in real time and take immediate action.
+:::
+
+{/* #### 클러스터 상태 개요
+
+- **CPU, Memory, Storage Usage**: It displays the overall cluster resource usage.
+
+- **ZooKeeper, Broker, Bookie status**: It displays the number of nodes and their availability.
+
+#### Messaging metrics
+
+- **Messaging Storage**: It visualizes the total storage used for messaging.
+
+- **Message Rate**: It displays the rate of incoming and outgoing messages per second.
+
+- **Messaging Backlog**: It traces the numbers of unprocessed messages.
+
+- **Throughput**: It displays the throughput in bytes per second.
+
+#### Key topics and backlogs
+
+- **Top 10 topic backlogs**: It identifies bottlenecks by listing the topics with the largest backlogs.
+
+- **Top 10 replication backlogs**: It displays the replication backlogs for monitoring the replication processes.
+
+#### Metrics by node
+
+- **Node CPU and memory usage**: It provides the usage statistics for individual nodes within the cluster.
+
+- **Offloaded size**: It traces the amount of data offloaded from the cluster.
+
 :::note 
 
-By updating data in real time, it allows the administrator to quickly understand the current situation and reflect the changes that occur during cluster operation. This allows the administrator to monitor issues in real time and take immediate action.
+**Key monitoring metrics**
+
+- **CPU usage**
+
+  It prevents overload by tracing the CPU utilization.
+
+- **Memory usage**
+
+  It monitors the memory usage to prevent out-of-memory errors.
+
+- **Storage usage**
+
+  It checks whether there is enough storage.
+
+- **Message rate and throughput**
+
+  A high speed may indicate a performance bottleneck.
+
+- **Backlog metric**
+
+  An increasing backlog may indicate an issue with the consuming application.
 
 :::
+
+### Alert
+
+Home > Select **Feature Project** (<code class='Features'>Feature</code>) > ***Alert*** > ***Event Configuration***
+
+Set the notifications for the following scenarios to maintain the cluster health:
+
+- **CPU usage**: It notifies when the CPU usage exceeds 80%.
+
+- **Memory usage**: It notifies when the memory usage exceeds 75%.
+
+- **Storage usage**: It notifies when the storage usage exceeds 85%.
+
+- **Message backlog**: It notifies when the backlog exceeds a specific threshold (e.g. 10,000 messages).
+
+- **ZooKeeper, Broker, Bookie status**: It notifies when a node goes down. */}

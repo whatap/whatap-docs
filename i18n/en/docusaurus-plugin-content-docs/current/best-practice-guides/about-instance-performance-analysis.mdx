@@ -15,17 +15,17 @@ The <Cmdname sid="side_agentsConfiguration" className="uitext" /> menu provides 
 
 ## Loaded Classes {#advanced-use-loaded-classes}
 
-Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_loadedClasses" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_loadedClasses" className="uitext" />
 
 The <Cmdname sid="side_loadedClasses" className="uitext" /> menu provides detailed information about the structure and method signatures for the classes loaded into the application, and also provides the <Cmdname sid="redefine" className="uitext" /> feature to allow uninterrupted changes to class behaviors.
 
 #### Redefine
 
-<Cmdname sid="redefine" className="uitext" /> allows you to change the behaviors of classes loaded at runtime without stopping the application by calling the `redefineClasses` method of `Instrumentation`. It is useful if you need to make modifications or changes to the running service. For example, when setting an additional transaction start point and measure the response time by specifying a new service pattern, you can find the class in the <Cmdname sid="side_loadedClasses" className="uitext" /> list after changing the related WhaTab settings and then click the ![Edit icon](/img/ico-edit.svg) icon for <Cmdname sid="redefine" className="uitext" />.
+<Cmdname sid="redefine" className="uitext" /> allows you to change the behaviors of classes loaded at runtime without stopping the application by calling the `redefineClasses` method of `Instrumentation`. It is useful if you need to make modifications or changes to the running service. For example, when setting an additional transaction start point and measure the response time by specifying a new service pattern, you can find the class in the <Cmdname sid="side_loadedClasses" className="uitext" /> list after changing the related WhaTap settings and then click the ![Edit icon](/img/ico-edit.svg) icon for <Cmdname sid="redefine" className="uitext" />.
 
 {/* 예를 들어 새로운 서비스 패턴 지정으로 추가적인 트랜잭션 시작점을 설정하여 응답 시간을 측정하는 등 트레이스 및 후킹과 관련된 와탭 설정 변경 시 해당 클래스를 목록에서 찾아 ![수정 아이콘](/img/ico-edit.svg) <Cmdname sid="redefine" className="uitext" />를 클릭하세요.  */}
 
-<ImgLang img='/best-p/about-instance-loaded-class1.png' desc='Loaded Classes redefine' />
+<ImgLang img='best-p/about-instance-loaded-class1.png' desc='Loaded Classes redefine' />
 
 {/* 해당 기능을 선택 해 재정의
 
@@ -67,7 +67,7 @@ Unexpected behavior or bug may occur if a specific class was loaded from the uni
 
 ## Thread List/Dump {#advanced-use-thread-list-dump}
 
-Home > Select Project > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_threadList" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />
 
 {/* 스레드 목록을 보고 하는 중요한 행위-> 스레드 cpu 누적 시간 보여줌 -> 시계열 정보 확인 가능하다는 얘기를 추가하기 */}
 
@@ -75,11 +75,11 @@ The <Cmdname sid="side_threadList" className="uitext" /> menu allows you to chec
 
 Determining which threads are using a lot of CPU is important for identifying the cause of the bottleneck. In particular, you must be able to query the time series data to identify threads that have spikes in CPU usage during a specific period. In <Cmdname sid="side_threadList" className="uitext" />, <Cmdname sid="thread_cpu_time" className="uitext" /> means the total accumulated time that the thread has occupied the CPU. Upon ***Refresh***, the difference between the current thread CPU time and the previous thread CPU time, <Cmdname sid="TTL08126" className="uitext" /> is provided, allowing you to identify the thread using the most CPU at the time of query. Click the <Cmdname sid="TTL08126" className="uitext" /> column to sort in descending order to see the thread with the highest growth. 
 
-<ImgLang img='/best-p/about-instance-thread-list-dump3.png' desc='Thread List/Dump delta values' />
+<ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='Thread List/Dump delta value' />
 
 After specifying a thread in this manner, you can check the thread snapshot to find frequently called or long-running methods. This allows early detection and response to abnormal signs, for stable management of the system.
 
-<ImgLang img='/best-p/about-instance-thread-list-dump4.png' desc='Thread List/Dump each thread dump' />
+<ImgLang img='best-p/about-instance-thread-list-dump4.png' desc='Thread List/Dump individual thread dumps' />
 
 {/* :::note 
 

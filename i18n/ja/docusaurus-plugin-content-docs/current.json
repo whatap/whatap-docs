@@ -24,7 +24,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar javaSidebar"
   },
   "sidebar.javaSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar javaSidebar"
   },
   "sidebar.javaSidebar.category.Flex 보드": {
@@ -315,10 +315,6 @@
     "message": "サポート環境",
     "description": "The label for the doc item 지원 환경 in sidebar postgreSidebar, linking to the doc postgresql/monitoring-support"
   },
-  "sidebar.dboracleSidebar.category.Oracle 모니터링": {
-    "message": "Oracleモニタリング",
-    "description": "The label for category Oracle 모니터링 in sidebar dboracleSidebar"
-  },
   "sidebar.dboracleSidebar.category.설치하기": {
     "message": "インストール",
     "description": "The label for category 설치하기 in sidebar dboracleSidebar"
@@ -487,10 +483,6 @@
     "message": "サポート環境",
     "description": "The label for the doc item 지원 환경 in sidebar cubridSidebar, linking to the doc cubrid/monitoring-support"
   },
-  "sidebar.altibaseSidebar.category.Altibase 모니터링": {
-    "message": "Altibaseモニタリング",
-    "description": "The label for category Altibase 모니터링 in sidebar altibaseSidebar"
-  },
   "sidebar.altibaseSidebar.category.설치하기": {
     "message": "インストール",
     "description": "The label for category 설치하기 in sidebar altibaseSidebar"
@@ -503,10 +495,6 @@
     "message": "メインメニュー",
     "description": "The label for category 주요 메뉴 알아보기 in sidebar altibaseSidebar"
   },
-  "sidebar.altibaseSidebar.category.실시간 DB 성능 지표 확인": {
-    "message": "リアルタイムなDB性能メトリックの確認",
-    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar altibaseSidebar"
-  },
   "sidebar.altibaseSidebar.category.Flex 보드": {
     "message": "Flexボード",
     "description": "The label for category Flex 보드 in sidebar altibaseSidebar"
@@ -514,14 +502,6 @@
   "sidebar.altibaseSidebar.category.메트릭스": {
     "message": "メトリックス",
     "description": "The label for category 메트릭스 in sidebar altibaseSidebar"
-  },
-  "sidebar.altibaseSidebar.category.분석과 통계": {
-    "message": "分析と統計",
-    "description": "The label for category 분석과 통계 in sidebar altibaseSidebar"
-  },
-  "sidebar.altibaseSidebar.category.알림 설정하기": {
-    "message": "アラートの設定",
-    "description": "The label for category 알림 설정하기 in sidebar altibaseSidebar"
   },
   "sidebar.altibaseSidebar.doc.지원 환경": {
     "message": "サポート環境",
@@ -1067,10 +1047,6 @@
     "message": "コンテナマップ",
     "description": "The label for category 컨테이너 맵 in sidebar kubeSidebar"
   },
-  "sidebar.kubeSidebar.category.컨테이너 맵 상세 보기": {
-    "message": "コンテナマップの詳細",
-    "description": "The label for category 컨테이너 맵 상세 보기 in sidebar kubeSidebar"
-  },
   "sidebar.kubeSidebar.category.애플리케이션": {
     "message": "アプリケーション",
     "description": "The label for category 애플리케이션 in sidebar kubeSidebar"
@@ -1086,10 +1062,6 @@
   "sidebar.kubeSidebar.category.분석": {
     "message": "分析",
     "description": "The label for category 분석 in sidebar kubeSidebar"
-  },
-  "sidebar.kubeSidebar.doc.지원 환경": {
-    "message": "サポート環境",
-    "description": "The label for the doc item 지원 환경 in sidebar kubeSidebar, linking to the doc kubernetes/supported-spec"
   },
   "sidebar.logSidebar.category.Log 모니터링": {
     "message": "Logモニタリング",
@@ -1108,7 +1080,7 @@
     "description": "The label for the doc item 설정하기 in sidebar logSidebar, linking to the doc log/log-setting"
   },
   "sidebar.mysqlSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar mysqlSidebar"
   },
   "sidebar.mysqlSidebar.category.분석": {
@@ -1136,7 +1108,7 @@
     "description": "The label for category 서버 목록 in sidebar serverSidebar"
   },
   "sidebar.postgreSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.category.분석": {
@@ -1148,7 +1120,7 @@
     "description": "The label for category 통계/보고서 in sidebar postgreSidebar"
   },
   "sidebar.dboracleSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar dboracleSidebar"
   },
   "sidebar.dboracleSidebar.category.분석": {
@@ -1228,7 +1200,7 @@
     "description": "The label for link Go in sidebar indexSidebar, linking to golang/introduction"
   },
   "sidebar.npmsidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.분석": {
@@ -1468,7 +1440,7 @@
     "description": "The label for category 분석 in sidebar goSidebar"
   },
   "sidebar.kubeSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar kubeSidebar"
   },
   "sidebar.kubeSidebar.category.컨테이너": {
@@ -1536,7 +1508,7 @@
     "description": "The label for category 경고 알림 in sidebar redisSidebar"
   },
   "sidebar.mongodbSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar mongodbSidebar"
   },
   "sidebar.mongodbSidebar.category.분석": {
@@ -1660,7 +1632,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar dboracleV2Sidebar"
   },
   "sidebar.dboracleV2Sidebar.category.Flex 보드": {
@@ -1704,7 +1676,7 @@
     "description": "The label for category 주요 메뉴 알아보기 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.category.대시보드": {
-    "message": "ダッシュボード",
+    "message": "ダッシューボード",
     "description": "The label for category 대시보드 in sidebar dboracledmaSidebar"
   },
   "sidebar.dboracledmaSidebar.category.Flex 보드": {
@@ -1762,5 +1734,77 @@
   "sidebar.featuremonitorSidebar.doc.Apache Pulsar": {
     "message": "Apache Pulsar",
     "description": "The label for the doc item Apache Pulsar in sidebar featuremonitorSidebar, linking to the doc features/apache-pulsar-introduction"
+  },
+  "sidebar.nodejsSidebar.doc.Log 모니터링": {
+    "message": "Logモニタリング",
+    "description": "The label for the doc item Log 모니터링 in sidebar nodejsSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.altibaseSidebar.category.Altibase V2 모니터링": {
+    "message": "Altibase V2 モニタリング",
+    "description": "The label for category Altibase V2 모니터링 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.대시보드": {
+    "message": "ダッシューボード",
+    "description": "The label for category 대시보드 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.분석": {
+    "message": "分析",
+    "description": "The label for category 분석 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.통계/보고서": {
+    "message": "統計/レポート",
+    "description": "The label for category 통계/보고서 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.로그": {
+    "message": "ログ",
+    "description": "The label for category 로그 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibaseSidebar.category.경고 알림": {
+    "message": "アラート通知",
+    "description": "The label for category 경고 알림 in sidebar altibaseSidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.Altibase V1 모니터링": {
+    "message": "Altibase V1 モニタリング",
+    "description": "The label for category Altibase V1 모니터링 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.설치하기": {
+    "message": "インストール",
+    "description": "The label for category 설치하기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.설정하기": {
+    "message": "設定",
+    "description": "The label for category 설정하기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.주요 메뉴 알아보기": {
+    "message": "メインメニュー",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.실시간 DB 성능 지표 확인": {
+    "message": "リアルタイムのDB性能メトリクスの確認",
+    "description": "The label for category 실시간 DB 성능 지표 확인 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.Flex 보드": {
+    "message": "Flexボード",
+    "description": "The label for category Flex 보드 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.메트릭스": {
+    "message": "メトリクス",
+    "description": "The label for category 메트릭스 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.분석과 통계": {
+    "message": "分析と統計",
+    "description": "The label for category 분석과 통계 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.알림 설정하기": {
+    "message": "アラート通知",
+    "description": "The label for category 알림 설정하기 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.doc.지원 환경": {
+    "message": "サポート環境",
+    "description": "The label for the doc item 지원 환경 in sidebar altibasev1Sidebar, linking to the doc altibase-v1/monitoring-support"
+  },
+  "sidebar.kubeSidebar.category.컨테이너 맵 상세 분석": {
+    "message": "コンテナマップ詳細分析",
+    "description": "The label for category 컨테이너 맵 상세 분석 in sidebar kubeSidebar"
   }
 }

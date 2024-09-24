@@ -1,15 +1,30 @@
 [
   {
-    "url": "https://docs.whatap.io/en/release-notes/java-batch/java-batch-2_2_24",
-    "ver": "v2.2.24",
-    "date": "2024-02-27",
+    "url": "https://docs.whatap.io/en/release-notes/java-batch/java-batch-2_2_25",
+    "ver": "v2.2.25",
+    "date": "2024-08-20",
     "Lists": [
       {
-        "ver": "v2.2.24",
-        "hash": "v2224",
+        "ver": "v2.2.25",
+        "hash": "v2225",
         "product": "Java Batch Agent",
-        "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> Deleted the hook_service_patterns option.</p>"
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the default value of the <code>profile_expired_time</code> option to 30 seconds.</p>"
+      },
+      {
+        "ver": "v2.2.25",
+        "hash": "v2225",
+        "product": "Java Batch Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Some agent logs have been modified during profile cleanup.</p>"
+      },
+      {
+        "ver": "v2.2.25",
+        "hash": "v2225",
+        "product": "Java Batch Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> Fixed the problem where traced data is not collected after a batch job is finished.</p>",
+        "details": "<p>Changed the default value of <code>auto_start_tx</code> from <code>true</code> to <code>false</code> to avoid collecting data if tracing is not started.</p>"
       }
     ]
   },
@@ -24,6 +39,20 @@
         "product": "Java Batch Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the bug that occurs when calling active transactions from the dashboard.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java-batch/java-batch-2_2_24",
+    "ver": "v2.2.24",
+    "date": "2024-02-27",
+    "Lists": [
+      {
+        "ver": "v2.2.24",
+        "hash": "v2224",
+        "product": "Java Batch Agent",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> Deleted the hook_service_patterns option.</p>"
       }
     ]
   }

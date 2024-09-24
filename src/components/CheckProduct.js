@@ -54,6 +54,8 @@ export default function CheckProduct() {
         product = '-cubrid';
     } else if (cProdt === 'altibase') {
         product = '-altibase';
+    } else if (cProdt === 'altibase-v1') {
+        product = '-altibase-v1';
     } else if (cProdt === 'redis') {
         product = '-redis';
     } else if (cProdt === 'mongodb') {

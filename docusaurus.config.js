@@ -44,14 +44,8 @@ const config = {
     }
   },
   // trailingSlash: false,
-  // clientModules: [
-  //   require.resolve('./static/js/rum.js')
-  // ],
-  scripts: [
-    // {
-    //   src: 'https://app.happyreact.com/widget/reactions.js',
-    //   async: true,
-    // },
+  clientModules: [
+    require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
@@ -78,7 +72,7 @@ const config = {
       },
     ],
     [
-      'docusaurus-plugin-enlarge-image', {}
+      'docusaurus-plugin-image-zoom', {}
     ],
   ],
   markdown: {
@@ -130,7 +124,7 @@ const config = {
         },
         // blog: false,
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 

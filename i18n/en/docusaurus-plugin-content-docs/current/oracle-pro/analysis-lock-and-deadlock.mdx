@@ -4,7 +4,7 @@ title: Lock tree
 description: You can analyze the lock trend during the day and check deadlocked queries.
 keywords:
   - Oracle Pro
-  - Database
+  - DATABASE
   - Lock
   - Lock tree
 ---
@@ -25,7 +25,43 @@ import Dblocktreeusingbasic from "../common-items/_db-locktree-using-basic.mdx";
 
 <Dblocktreeusingbasic />
 
+## Checking the global lock information {#checkgloballock}
+
+Checking the global lock information in the clustered Oracle database environment provides several important advantages. Especially in the Oracle Real Application Clusters (RAC) environment, this information is essential for performance optimization and troubleshooting.
+
+If the environment consists of clusters, you can select a cluster in <Cmdname sid="instance" className="uitext" />.
+
+<ImgLang img="db-locktree-cluster-chart.png" desc="Lock Tree" />
+
+- ***Global Lock Wait Sessions***
+
+  It visualizes the number of global lock waiting sessions that occurred within a selected time range, by hour. You can see at a glance how many lock waits occurred at a specific time. Each color represents a different instance, and locks are displayed separately by the colored instance.
+
+- ***Global Lock Tree***
+
+  You can check the details related to the lock in a tree structure. It contains important information such as the lock-occurred instance, session ID (<UI>sid</UI>), and session status (<UI>status</UI>). You can quickly identify the cause and impact of a lock through the lock's holder type (<UI>holder type</UI>), lock mode (<UI>lock mode</UI>), and lock waiting type (<UI>waiter type</UI>).
+
+  The tree structure allows us to see which sessions hold locks and which are waiting.
+
+:::note
+
+The maximum time range that can be queried with a cluster selected is 3 hours.
+
+:::
+
+:::tip
+
+- In the RAC environment, multiple instances can access the same data simultaneously. Global Lock information is one of key mechanisms to ensure data consistency in concurrent access situations. By monitoring this, you can check that the data is consistent.
+
+- Global Lock waiting time can have a significant impact on system performance. Monitoring global lock contention across multiple instances in the cluster can help you detect bottlenecks that cause performance degradation as early as possible. 
+
+- Global lock information provides important insights into how transactions are processed within the cluster. If concurrency control is not properly implemented, transaction latency may increase or deadlocks may occur.
+
+- In the RAC environment, load balancing between instances is very important. Global lock information can help you understand which instances are encountering more contention, allowing for load redistribution or improvements in resource management based on this.
+
+:::
+
 {/* 락트리 컬럼 정보 */}
 import Oraclecolumn from "../common-items/_db_oracle-column.mdx";
 
-<Oraclecolumn />
+<Oraclecolumn level={2} />

@@ -147,6 +147,7 @@ const sidebars = {
                 'java/flexboard-manage',
                 'java/flexboard-metric-widget',
                 'java/flexboard-widget-manage',
+                'java/flexboard-widget-template',
                 'java/flexboard-mode',
                 'java/flexboard-share',
               ],
@@ -183,6 +184,11 @@ const sidebars = {
               items: [
                 'java/metrics-app',
                 'java/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'java/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'java/metrics-chart',
                 'java/metrics-search',
                 'java/metrics-detect-anormal',
@@ -391,6 +397,7 @@ const sidebars = {
                 'php/flexboard-manage',
                 'php/flexboard-metric-widget',
                 'php/flexboard-widget-manage',
+                'php/flexboard-widget-template',
                 'php/flexboard-mode',
                 'php/flexboard-share',
               ],
@@ -426,6 +433,11 @@ const sidebars = {
               items: [
                 'php/metrics-app',
                 'php/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'php/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'php/metrics-chart',
                 'php/metrics-search',
                 'php/metrics-detect-anormal',
@@ -616,6 +628,7 @@ const sidebars = {
                 'nodejs/flexboard-manage',
                 'nodejs/flexboard-metric-widget',
                 'nodejs/flexboard-widget-manage',
+                'nodejs/flexboard-widget-template',
                 'nodejs/flexboard-mode',
                 'nodejs/flexboard-share',
               ],
@@ -651,6 +664,11 @@ const sidebars = {
               items: [
                 'nodejs/metrics-app',
                 'nodejs/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'nodejs/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'nodejs/metrics-chart',
                 'nodejs/metrics-search',
                 'nodejs/metrics-detect-anormal',
@@ -730,6 +748,11 @@ const sidebars = {
               ],
             },
             'nodejs/instance-performance-analysis',
+            {
+              type: 'doc',
+              label: 'Log 모니터링',
+              id: 'log/introduction'
+            },
             'nodejs/labs'
           ],
         }
@@ -836,6 +859,7 @@ const sidebars = {
                 'python/flexboard-manage',
                 'python/flexboard-metric-widget',
                 'python/flexboard-widget-manage',
+                'python/flexboard-widget-template',
                 'python/flexboard-mode',
                 'python/flexboard-share',
               ],
@@ -872,6 +896,11 @@ const sidebars = {
               items: [
                 'python/metrics-app',
                 'python/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'python/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'python/metrics-chart',
                 'python/metrics-search',
                 'python/metrics-detect-anormal',
@@ -1063,6 +1092,7 @@ const sidebars = {
                 'dotnet/flexboard-manage',
                 'dotnet/flexboard-metric-widget',
                 'dotnet/flexboard-widget-manage',
+                'dotnet/flexboard-widget-template',
                 'dotnet/flexboard-mode',
                 'dotnet/flexboard-share',
               ],
@@ -1099,6 +1129,11 @@ const sidebars = {
               items: [
                 'dotnet/metrics-app',
                 'dotnet/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'dotnet/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'dotnet/metrics-chart',
                 'dotnet/metrics-search',
                 'dotnet/metrics-detect-anormal',
@@ -1274,6 +1309,7 @@ const sidebars = {
                 'golang/flexboard-manage',
                 'golang/flexboard-metric-widget',
                 'golang/flexboard-widget-manage',
+                'golang/flexboard-widget-template',
                 'golang/flexboard-mode',
                 'golang/flexboard-share',
               ],
@@ -1309,6 +1345,11 @@ const sidebars = {
               items: [
                 'golang/metrics-app',
                 'golang/metrics-performance-counter',
+                {
+                  type: 'doc',
+                  id: 'golang/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'golang/metrics-chart',
                 'golang/metrics-search',
                 'golang/metrics-detect-anormal',
@@ -1490,6 +1531,7 @@ const sidebars = {
                 'postgresql/flexboard-manage',
                 'postgresql/flexboard-metric-widget',
                 'postgresql/flexboard-widget-manage',
+                'postgresql/flexboard-widget-template',
                 'postgresql/flexboard-mode',
                 'postgresql/flexboard-share',
               ],
@@ -1520,6 +1562,11 @@ const sidebars = {
               },
               items: [
                 'postgresql/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'postgresql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'postgresql/metrics-chart',
                 'postgresql/metrics-search',
                 'postgresql/metrics-detect-anormal',
@@ -1664,6 +1711,7 @@ const sidebars = {
                 'oracle-v1/flexboard-manage',
                 'oracle-v1/flexboard-metric-widget',
                 'oracle-v1/flexboard-widget-manage',
+                'oracle-v1/flexboard-widget-template',
                 'oracle-v1/flexboard-mode',
                 'oracle-v1/flexboard-share',
               ],
@@ -1816,6 +1864,7 @@ const sidebars = {
                 'oracle/flexboard-manage',
                 'oracle/flexboard-metric-widget',
                 'oracle/flexboard-widget-manage',
+                'oracle/flexboard-widget-template',
                 'oracle/flexboard-mode',
                 'oracle/flexboard-share',
               ],
@@ -1847,6 +1896,11 @@ const sidebars = {
               },
               items: [
                 'oracle/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'oracle/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'oracle/metrics-chart',
                 'oracle/metrics-search',
                 'oracle/metrics-detect-anormal',
@@ -1977,6 +2031,7 @@ const sidebars = {
                 'oracle-pro/flexboard-manage',
                 'oracle-pro/flexboard-metric-widget',
                 'oracle-pro/flexboard-widget-manage',
+                'oracle-pro/flexboard-widget-template',
                 'oracle-pro/flexboard-mode',
                 'oracle-pro/flexboard-share',
               ],
@@ -2008,6 +2063,11 @@ const sidebars = {
               },
               items: [
                 'oracle-pro/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'oracle-pro/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'oracle-pro/metrics-chart',
                 'oracle-pro/metrics-search',
                 'oracle-pro/metrics-detect-anormal',
@@ -2164,6 +2224,7 @@ const sidebars = {
                 'mysql/flexboard-manage',
                 'mysql/flexboard-metric-widget',
                 'mysql/flexboard-widget-manage',
+                'mysql/flexboard-widget-template',
                 'mysql/flexboard-mode',
                 'mysql/flexboard-share',
               ],
@@ -2191,6 +2252,11 @@ const sidebars = {
               },
               items: [
                 'mysql/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'mysql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mysql/metrics-chart',
                 'mysql/metrics-search',
                 'mysql/metrics-detect-anormal',
@@ -2295,10 +2361,7 @@ const sidebars = {
             id: 'mssql/agent-settings'
           },
           items: [
-            'mssql/agent-network',
-            'mssql/agent-naming',
-            'mssql/agent-aws',
-            'mssql/agent-data',
+            'mssql/agent-dbx-settings',
           ],
         },
         'mssql/agent-manage',
@@ -2310,7 +2373,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2338,9 +2401,21 @@ const sidebars = {
                 'mssql/flexboard-manage',
                 'mssql/flexboard-metric-widget',
                 'mssql/flexboard-widget-manage',
+                'mssql/flexboard-widget-template',
                 'mssql/flexboard-mode',
                 'mssql/flexboard-share',
               ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql/analysis-count-trend',
+                'mssql/analysis-lock-and-deadlock',
+                'mssql/analysis-databaseparameter',
+              ]
             },
             {
               type: 'category',
@@ -2352,7 +2427,7 @@ const sidebars = {
                 id: 'mssql/metrics-intro'
               },
               items: [
-                'mssql/metrics-mssql',
+                'mssql/metrics-data-list',
                 'mssql/metrics-chart',
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
@@ -2360,19 +2435,17 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'mssql/analysis-function',
                 'mssql/stat',
                 'mssql/report-intro',
-                'mssql/integrated-report',
-              ]
+              ],
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2437,10 +2510,8 @@ const sidebars = {
             id: 'tibero/agent-settings'
           },
           items: [
-            'tibero/agent-network',
-            'tibero/agent-naming',
-            'tibero/agent-aws',
-            'tibero/agent-data',
+            'tibero/agent-dbx-settings',
+            'tibero/agent-xos-settings',
           ],
         },
         'tibero/agent-manage',
@@ -2452,7 +2523,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2480,9 +2551,22 @@ const sidebars = {
                 'tibero/flexboard-manage',
                 'tibero/flexboard-metric-widget',
                 'tibero/flexboard-widget-manage',
+                'tibero/flexboard-widget-template',
                 'tibero/flexboard-mode',
                 'tibero/flexboard-share',
               ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'tibero/analysis-count-trend',
+                'tibero/analysis-lock-and-deadlock',
+                'tibero/analysis-pq-tree',
+                'tibero/analysis-databaseparameter',
+              ]
             },
             {
               type: 'category',
@@ -2502,19 +2586,19 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'tibero/analysis-function',
                 'tibero/stat',
+                'tibero/table-space-size',
+                'tibero/sga-size',
                 'tibero/report-intro',
-                'tibero/integrated-report',
               ]
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2621,6 +2705,7 @@ const sidebars = {
                 'cubrid/flexboard-manage',
                 'cubrid/flexboard-metric-widget',
                 'cubrid/flexboard-widget-manage',
+                'cubrid/flexboard-widget-template',
                 'cubrid/flexboard-mode',
                 'cubrid/flexboard-share',
               ],
@@ -2697,7 +2782,7 @@ const sidebars = {
   altibaseSidebar: [
     {
       type: 'category',
-      label: 'Altibase 모니터링',
+      label: 'Altibase V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2731,10 +2816,8 @@ const sidebars = {
             id: 'altibase/agent-settings'
           },
           items: [
-            'altibase/agent-network',
-            'altibase/agent-naming',
-            'altibase/agent-aws',
-            'altibase/agent-data',
+            'altibase/agent-dbx-settings',
+            'altibase/agent-xos-settings'
           ],
         },
         'altibase/agent-manage',
@@ -2746,7 +2829,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '실시간 DB 성능 지표 확인',
+              label: '대시보드',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2774,9 +2857,21 @@ const sidebars = {
                 'altibase/flexboard-manage',
                 'altibase/flexboard-metric-widget',
                 'altibase/flexboard-widget-manage',
+                'altibase/flexboard-widget-template',
                 'altibase/flexboard-mode',
                 'altibase/flexboard-share',
               ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'altibase/analysis-count-trend',
+                'altibase/analysis-lock-and-deadlock',
+                'altibase/analysis-databaseparameter',
+              ]
             },
             {
               type: 'category',
@@ -2788,6 +2883,12 @@ const sidebars = {
                 id: 'altibase/metrics-intro'
               },
               items: [
+                'altibase/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'altibase/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'altibase/metrics-chart',
                 'altibase/metrics-search',
                 'altibase/metrics-detect-anormal',
@@ -2795,19 +2896,36 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '분석과 통계',
+              label: '통계/보고서',
               collapsible: true,
               collapsed: true,
               items: [
-                'altibase/analysis-function',
                 'altibase/stat',
+                'altibase/table-space-size',
                 'altibase/report-intro',
-                'altibase/integrated-report',
               ]
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase/log-main'
+              },
+              items: [
+                'altibase/log-db',
+                'altibase/log-lt',
+                'altibase/log-exp',
+                'altibase/log-search',
+                'altibase/log-setting',
+                'altibase/log-parser',
+              ]
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -2830,6 +2948,147 @@ const sidebars = {
               ],
             },
             'altibase/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  altibasev1Sidebar: [
+    {
+      type: 'category',
+      label: 'Altibase V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'altibase-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'altibase-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase-v1/install-agent',
+            'altibase-v1/after-install-agent',
+            'altibase-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/agent-settings'
+          },
+          items: [
+            'altibase-v1/agent-network',
+            'altibase-v1/agent-naming',
+            'altibase-v1/agent-aws',
+            'altibase-v1/agent-data',
+          ],
+        },
+        'altibase-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '실시간 DB 성능 지표 확인',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/dashboard-intro'
+              },
+              items: [
+                'altibase-v1/instance-list',
+                'altibase-v1/instance-monitoring',
+                'altibase-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/flex-board',
+              },
+              items: [
+                'altibase-v1/flexboard-template',
+                'altibase-v1/flexboard-create',
+                'altibase-v1/flexboard-manage',
+                'altibase-v1/flexboard-metric-widget',
+                'altibase-v1/flexboard-widget-manage',
+                'altibase-v1/flexboard-mode',
+                'altibase-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/metrics-intro'
+              },
+              items: [
+                'altibase-v1/metrics-chart',
+                'altibase-v1/metrics-search',
+                'altibase-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '분석과 통계',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'altibase-v1/analysis-function',
+                'altibase-v1/stat',
+                'altibase-v1/report-intro',
+                'altibase-v1/integrated-report',
+              ]
+            },
+            {
+              type: 'category',
+              label: '알림 설정하기',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'altibase-v1/set-notice',
+              },
+              items: [
+                'altibase-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'altibase-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'altibase-v1/metric-warning-notice',
+                'altibase-v1/set-notification-message',
+                'altibase-v1/set-event-detect-anomal',
+                'altibase-v1/set-receive-event',
+                'altibase-v1/set-event-history',
+                'altibase-v1/set-event-format',
+              ],
+            },
+            'altibase-v1/labs'
           ]
         }
       ],
@@ -2913,6 +3172,7 @@ const sidebars = {
                 'redis/flexboard-manage',
                 'redis/flexboard-metric-widget',
                 'redis/flexboard-widget-manage',
+                'redis/flexboard-widget-template',
                 'redis/flexboard-mode',
                 'redis/flexboard-share',
               ],
@@ -2938,6 +3198,11 @@ const sidebars = {
               },
               items: [
                 'redis/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'redis/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'redis/metrics-chart',
                 'redis/metrics-search',
                 'redis/metrics-detect-anormal',
@@ -2971,12 +3236,13 @@ const sidebars = {
                 id: 'redis/set-notice',
               },
               items: [
-                'redis/metric-warning-notice',
+                'redis/warning-notice',
                 {
                   type: 'doc',
                   id: 'redis/warning-notice-v2',
                   className: 'newfunc'
                 },
+                'redis/metric-warning-notice',
                 'redis/set-notification-message',
                 'redis/set-event-detect-anomal',
                 'redis/set-receive-event',
@@ -3068,6 +3334,7 @@ const sidebars = {
                 'mongodb/flexboard-manage',
                 'mongodb/flexboard-metric-widget',
                 'mongodb/flexboard-widget-manage',
+                'mongodb/flexboard-widget-template',
                 'mongodb/flexboard-mode',
                 'mongodb/flexboard-share',
               ],
@@ -3093,6 +3360,11 @@ const sidebars = {
               },
               items: [
                 'mongodb/metrics-data-list',
+                {
+                  type: 'doc',
+                  id: 'mongodb/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mongodb/metrics-chart',
                 'mongodb/metrics-search',
                 'mongodb/metrics-detect-anormal',
@@ -3128,7 +3400,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -3252,9 +3524,11 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_8_0x',
+          id: 'release-notes/preview/preview-2_10_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_9_0x',
+        'release-notes/preview/preview-2_8_0x',
         'release-notes/preview/preview-2_7_0x',
         'release-notes/preview/preview-2_6_0x',
         'release-notes/preview/preview-2_5_0x',
@@ -3289,7 +3563,7 @@ const sidebars = {
           label: 'Service',
           collapsible: true,
           collapsed: true,
-          className: 'new',
+          // className: 'new',
           link: {
             type: 'doc',
             id: 'release-notes/service/index',
@@ -3297,9 +3571,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_7_x',
-              className: 'new',
+              id: 'release-notes/service/service-2_8_x',
+              // className: 'new',
             },
+            'release-notes/service/service-2_7_x',
             'release-notes/service/service-2_6_x',
             'release-notes/service/service-2_5_x',
             'release-notes/service/service-2_4_x',
@@ -3308,7 +3583,6 @@ const sidebars = {
             'release-notes/service/service-2_1_x',
             'release-notes/service/service-2_0_x',
             'release-notes/service/service-1_114_x',
-            'release-notes/service/service-1_112_x',
             'release-notes/service/service-previous',
           ]
         },
@@ -3372,7 +3646,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -3381,7 +3655,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_38',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_37',
                 'release-notes/java/java-2_2_36',
@@ -3400,7 +3674,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/index',
@@ -3409,7 +3683,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java-batch/java-batch-2_2_25',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java-batch/java-batch-2_2_24',
                 'release-notes/java-batch/java-batch-2_2_23',
@@ -3424,7 +3698,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3432,9 +3706,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_8_1',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_8_2',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_8_1',
                 'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
                 'release-notes/php/php-2_7_1',
@@ -3443,7 +3718,6 @@ const sidebars = {
                 'release-notes/php/php-2_6_2',
                 'release-notes/php/php-2_6_1',
                 'release-notes/php/php-2_6_0',
-                'release-notes/php/php-2_5_4',
                 'release-notes/php/php-previous',
               ],
             },
@@ -3452,7 +3726,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -3460,9 +3734,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_0',
-                  className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_5_1',
+                  // className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_0',
                 'release-notes/nodejs/nodejs-0_4_98',
                 'release-notes/nodejs/nodejs-0_4_97',
                 'release-notes/nodejs/nodejs-0_4_96',
@@ -3471,7 +3746,6 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_90',
                 'release-notes/nodejs/nodejs-0_4_89',
                 'release-notes/nodejs/nodejs-0_4_88',
-                'release-notes/nodejs/nodejs-0_4_86',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
@@ -3480,7 +3754,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3488,9 +3762,12 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_6_7',
-                  className: 'new',
+                  id: 'release-notes/python/python-1_6_10',
+                  // className: 'new',
                 },
+                'release-notes/python/python-1_6_9',
+                'release-notes/python/python-1_6_8',
+                'release-notes/python/python-1_6_7',
                 'release-notes/python/python-1_6_6',
                 'release-notes/python/python-1_6_5',
                 'release-notes/python/python-1_6_4',
@@ -3498,9 +3775,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_2',
                 'release-notes/python/python-1_6_1',
                 'release-notes/python/python-1_6_0',
-                'release-notes/python/python-1_5_9',
-                'release-notes/python/python-1_5_8',
-                'release-notes/python/python-1_5_7',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3517,9 +3791,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_1',
+                  id: 'release-notes/dotnet/dotnet-2_3_2',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_1',
                 'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
@@ -3528,7 +3803,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_5',
                 'release-notes/dotnet/dotnet-2_2_4',
                 'release-notes/dotnet/dotnet-2_2_3',
-                'release-notes/dotnet/dotnet-2_2_2',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -3537,7 +3811,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/index',
@@ -3545,9 +3819,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_4_0',
-                  // className: 'new'
+                  id: 'release-notes/golang/golang-0_4_2',
+                  className: 'new'
                 },
+                'release-notes/golang/golang-0_4_1',
+                'release-notes/golang/golang-0_4_0',
                 'release-notes/golang/golang-0_3_3',
                 'release-notes/golang/golang-0_3_2',
                 'release-notes/golang/golang-0_3_1',
@@ -3555,8 +3831,6 @@ const sidebars = {
                 'release-notes/golang/golang-0_2_4',
                 'release-notes/golang/golang-0_2_3',
                 'release-notes/golang/golang-0_2_2',
-                'release-notes/golang/golang-0_1_14',
-                'release-notes/golang/golang-0_1_13',
                 'release-notes/golang/golang-previous',
               ],
             },
@@ -3573,9 +3847,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_6',
+                  id: 'release-notes/server/server-2_6_8',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_7',
+                'release-notes/server/server-2_6_6',
                 'release-notes/server/server-2_6_5',
                 'release-notes/server/server-2_6_4',
                 'release-notes/server/server-2_6_3',
@@ -3583,10 +3859,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_1',
                 'release-notes/server/server-2_6_0',
                 'release-notes/server/server-2_5_9',
-                'release-notes/server/server-2_5_8',
-                'release-notes/server/server-2_5_7',
-                'release-notes/server/server-2_5_5',
-                'release-notes/server/server-2_5_4',
                 'release-notes/server/server-previous',
               ],
             },
@@ -3595,18 +3867,31 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server-aix/server-aix-1_2_7'
+                id: 'release-notes/server-aix/index'
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_2_7',
-                  // className: 'new'
-                }
+                  id: 'release-notes/server-aix/server-aix-1_3_4',
+                  className: 'new'
+                },
+                'release-notes/server-aix/server-aix-1_2_7'
               ],
+            },
+            {
+              type: 'doc',
+              label: 'Server Solaris',
+              className: 'new',
+              id: 'release-notes/server-solaris/server-solaris-1_3_4'
+            },
+            {
+              type: 'doc',
+              label: 'Server HP-UX',
+              className: 'new',
+              id: 'release-notes/server-hpux/server-hpux-1_3_4'
             },
             {
               type: 'category',
@@ -3621,9 +3906,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_9',
+                  id: 'release-notes/k8s/k8s-1_7_11',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_10',
+                'release-notes/k8s/k8s-1_7_9',
                 'release-notes/k8s/k8s-1_7_8',
                 'release-notes/k8s/k8s-1_7_7',
                 'release-notes/k8s/k8s-1_7_6',
@@ -3631,9 +3918,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_7_4',
                 'release-notes/k8s/k8s-1_7_3',
                 'release-notes/k8s/k8s-1_7_2',
-                'release-notes/k8s/k8s-1_7_1',
-                'release-notes/k8s/k8s-1_7_0',
-                'release-notes/k8s/k8s-1_6_1',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -3642,7 +3926,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -3651,7 +3935,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-2_0_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-1_9_5',
                 'release-notes/db/dbx-1_9_4',
@@ -3747,7 +4031,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              // className: 'new',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
@@ -4244,6 +4528,7 @@ const sidebars = {
                     'amazon-ecs/flexboard-manage',
                     'amazon-ecs/flexboard-metric-widget',
                     'amazon-ecs/flexboard-widget-manage',
+                    'amazon-ecs/flexboard-widget-template',
                     'amazon-ecs/flexboard-mode',
                     'amazon-ecs/flexboard-share',
                   ]
@@ -4305,6 +4590,7 @@ const sidebars = {
                     'amazon-cloudwatch/flexboard-manage',
                     'amazon-cloudwatch/flexboard-metric-widget',
                     'amazon-cloudwatch/flexboard-widget-manage',
+                    'amazon-cloudwatch/flexboard-widget-template',
                     'amazon-cloudwatch/flexboard-mode',
                     'amazon-cloudwatch/flexboard-share',
                   ]
@@ -4367,6 +4653,7 @@ const sidebars = {
                     'azure/flexboard-manage',
                     'azure/flexboard-metric-widget',
                     'azure/flexboard-widget-manage',
+                    'azure/flexboard-widget-template',
                     'azure/flexboard-mode',
                     'azure/flexboard-share',
                   ]
@@ -4428,6 +4715,7 @@ const sidebars = {
                     'ncloud/flexboard-manage',
                     'ncloud/flexboard-metric-widget',
                     'ncloud/flexboard-widget-manage',
+                    'ncloud/flexboard-widget-template',
                     'ncloud/flexboard-mode',
                     'ncloud/flexboard-share',
                   ]
@@ -4489,6 +4777,7 @@ const sidebars = {
                     'oracle-cloud/flexboard-manage',
                     'oracle-cloud/flexboard-metric-widget',
                     'oracle-cloud/flexboard-widget-manage',
+                    'oracle-cloud/flexboard-widget-template',
                     'oracle-cloud/flexboard-mode',
                     'oracle-cloud/flexboard-share',
                   ]
@@ -4687,6 +4976,7 @@ const sidebars = {
                 'aws-log/flexboard-manage',
                 'aws-log/flexboard-metric-widget',
                 'aws-log/flexboard-widget-manage',
+                'aws-log/flexboard-widget-template',
                 'aws-log/flexboard-mode',
                 'aws-log/flexboard-share',
               ],
@@ -4821,6 +5111,7 @@ const sidebars = {
                 'amazon-ecs/flexboard-manage',
                 'amazon-ecs/flexboard-metric-widget',
                 'amazon-ecs/flexboard-widget-manage',
+                'amazon-ecs/flexboard-widget-template',
                 'amazon-ecs/flexboard-mode',
                 'amazon-ecs/flexboard-share',
               ]
@@ -4901,6 +5192,7 @@ const sidebars = {
                 'amazon-cloudwatch/flexboard-manage',
                 'amazon-cloudwatch/flexboard-metric-widget',
                 'amazon-cloudwatch/flexboard-widget-manage',
+                'amazon-cloudwatch/flexboard-widget-template',
                 'amazon-cloudwatch/flexboard-mode',
                 'amazon-cloudwatch/flexboard-share',
               ]
@@ -4980,6 +5272,7 @@ const sidebars = {
                 'azure/flexboard-manage',
                 'azure/flexboard-metric-widget',
                 'azure/flexboard-widget-manage',
+                'azure/flexboard-widget-template',
                 'azure/flexboard-mode',
                 'azure/flexboard-share',
               ]
@@ -5059,6 +5352,7 @@ const sidebars = {
                 'ncloud/flexboard-manage',
                 'ncloud/flexboard-metric-widget',
                 'ncloud/flexboard-widget-manage',
+                'ncloud/flexboard-widget-template',
                 'ncloud/flexboard-mode',
                 'ncloud/flexboard-share',
               ]
@@ -5138,6 +5432,7 @@ const sidebars = {
                 'oracle-cloud/flexboard-manage',
                 'oracle-cloud/flexboard-metric-widget',
                 'oracle-cloud/flexboard-widget-manage',
+                'oracle-cloud/flexboard-widget-template',
                 'oracle-cloud/flexboard-mode',
                 'oracle-cloud/flexboard-share',
               ]
@@ -5425,6 +5720,7 @@ const sidebars = {
             'browser/flexboard-manage',
             'browser/flexboard-metric-widget',
             'browser/flexboard-widget-manage',
+            'browser/flexboard-widget-template',
             'browser/flexboard-mode',
             'browser/flexboard-share',
           ],
@@ -5594,6 +5890,7 @@ const sidebars = {
                 'server/flexboard-manage',
                 'server/flexboard-metric-widget',
                 'server/flexboard-widget-manage',
+                'server/flexboard-widget-template',
                 'server/flexboard-mode',
                 'server/flexboard-share',
               ]
@@ -5820,7 +6117,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: '컨테이너 맵 상세 보기',
+                  label: '컨테이너 맵 상세 분석',
                   collapsible: true,
                   collapsed: true,
                   link: {
@@ -5828,6 +6125,7 @@ const sidebars = {
                     id: 'kubernetes/container-map-detail-mode'
                   },
                   items: [
+                    'kubernetes/container-map-target-info',
                     'kubernetes/container-map-trace',
                     'kubernetes/container-map-metrics',
                     'kubernetes/container-map-log',
@@ -5854,6 +6152,7 @@ const sidebars = {
                 'kubernetes/flexboard-manage',
                 'kubernetes/flexboard-metric-widget',
                 'kubernetes/flexboard-widget-manage',
+                'kubernetes/flexboard-widget-template',
                 'kubernetes/flexboard-mode',
                 'kubernetes/flexboard-share',
               ],
@@ -5929,6 +6228,11 @@ const sidebars = {
               items: [
                 'kubernetes/metrics-kubernetes',
                 'kubernetes/metrics-search',
+                {
+                  type: 'doc',
+                  id: 'kubernetes/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'kubernetes/metrics-chart',
                 'kubernetes/metrics-detect-anormal',
               ]
@@ -6136,6 +6440,7 @@ const sidebars = {
           items: [
             'log/log-java',
             'log/log-php',
+            'log/log-nodejs',
             'log/log-python',
             'log/log-go',
             'log/log-server',

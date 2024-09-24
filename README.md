@@ -30,6 +30,8 @@ export NODE_OPTIONS="--max-old-space-size=24576" && USE_SIMPLE_CSS_MINIFIER=true
 * kubernetes/container-map-detail-mode.mdx
 * kubernetes/container-map-trace.mdx
 * kubernetes/resource-node-list.mdx
+* kubernetes/container-map-log.mdx
+* kubernetes/container-map-target-info.mdx
 * \_log-exp.mdx
 
 ```
@@ -73,6 +75,7 @@ crowdin download -b main -l en-US
 - \[ -> [
 - \: -> :
 - _/} -> */}
+- &amp;gt; -> &gt;
 - ~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&*()_+=-[]`
 - <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
 - ${Tag} -> &#36;&#123;Tag&#125;

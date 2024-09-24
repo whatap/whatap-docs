@@ -38,7 +38,7 @@ By using WhaTap's server monitoring agent, you can check the status of the serve
 
 :::note 
 
-Click Home > Select Project > <Cmdname sid="side_event" className="uitext" /> > <Cmdname sid="side_eventSetting" className="uitext" /> > <Cmdname sid="server" className="uitext" /> tab and select the ***+*** <Cmdname sid="add_alert_setting" className="uitext" /> button.
+Click Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="server" className="uitext" /> tab and select the ***+*** <Cmdname sid="add_alert_setting" className="uitext" /> button.
 
 :::
 
@@ -58,7 +58,7 @@ First, let's look at the basic notifications of the servers being monitored.  */
 
 ### Alerting the TCP port monitoring
 
-After activating ***Port*** in the WhaTab server Monitoring event template, set the monitoring target endpoint and TCP port through the following script. 
+After activating ***Port*** in the WhaTap server Monitoring event template, set the monitoring target endpoint and TCP port through the following script. 
 
 <Tabs groupId='server-user-script'>
 <TabItem value="lxs" label="Linux Shell">
@@ -100,7 +100,7 @@ tcp.check.8080=tcp://127.0.0.1:8080
 
 #### Metrics Search
 
-Once setup is completed, the `server_tcpport` category is added to the ***Analyze*** > ***Metrics Search*** menu. Metrics notifications can be used based on the value of the `isAlive` field in the category. 
+Once setup is completed, the `server_tcpport` category is added to the ***Analyze*** &gt; ***Metrics Search*** menu. Metrics notifications can be used based on the value of the `isAlive` field in the category. 
 
 <ImgLang img='best-p/about-server-adf-tcp-port-ms.png' desc='View metrics related to tcp port monitoring notifications' />
 
@@ -116,4 +116,4 @@ By using the TCP port monitoring provided by WhaTap's server monitoring, you can
 
 The WhaTap's server agent periodically checks the TCP status for the monitored servers and other endpoints within the server. Therefore, in the environments where network communication is possible, more comprehensive and wide-ranging monitoring can be performed through the agents. This feature thoroughly monitors server status and connection status in complex network environments, enabling rapid response upon a failure.
 
-By enabling various features of the WhaTap server monitoring, you can quickly understand and respond to the network and server issues of the operating system. WhaTab can help you ensure business continuity and maximize the stability of the services.
+By enabling various features of the WhaTap server monitoring, you can quickly understand and respond to the network and server issues of the operating system. WhaTap can help you ensure business continuity and maximize the stability of the services.

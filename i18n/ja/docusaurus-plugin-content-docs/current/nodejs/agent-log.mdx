@@ -7,6 +7,8 @@ keywords:
   - ログ
 ---
 
+## ログ管理オプション
+
 アプリケーションサーバーが実行されると、モニタリング情報を収集します。収集した情報は、ログファイルに保存します。
 
 - **log_rotation_enabled** <span class='type'>Boolean</span>
@@ -38,3 +40,45 @@ keywords:
   ```ini title="whatap.conf"
   log_root=/Users/sample_user/workspace/nodejs_application/whatap_logs/
   ```
+
+## ログシンク(LogSink) の設定
+
+[Node.jsエージェント0.5.1バージョン](../release-notes/nodejs/nodejs-0_5_1)以降からは、アプリケーションサーバーを統合モニタリングするログシンク(LogSink)機能を提供します。
+
+- **logsink_enabled** <span class='type'>Boolean</span>
+
+  既定値 `false`
+
+  ログモニタリングを有効にするかどうかを設定します。
+
+  :::note
+
+  - ログモニタリングの有効化方法の詳細については、[次の文書](../log/log-nodejs)を参照してください。
+
+  - ログモニタリングの詳細については、[次の文書](../log/learn-main-menu)を参照してください。
+
+  :::
+
+- **logsink_trace_txid_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  ログにトランザクションIDを挿入して、<Cmdname sid="TTL06209" className="uitext" />の<Cmdname sid="TTL06128" className="uitext" />タブを露出可否を設定します。
+
+  :::note
+
+  <Cmdname sid="TTL06209" className="uitext" />の<Cmdname sid="TTL06128" className="uitext" />タブについての詳細は、[次の文書](dashboard-hitmap-trace#anlaysis-trace-transaction-log)を参照してください。
+
+  :::
+
+- **logsink_limit_content_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  ログメッセージの最大サイズを制限するかどうかを設定します。
+
+- **logsink_limit_content_length** <span class='type'>Number</span>
+
+  既定値 `10,000`
+
+  ログメッセージの最大長さを設定します。このオプションは、 `logsink_limit_content_enabled` オプションの値が `true`に設定された時のみ適用されます。

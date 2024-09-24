@@ -147,13 +147,13 @@ grant show databases on *.* to DB_User;
 | 権限          | command                                                                                          | メニューと機能                                                                                                                                  | 詳細履歴                                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | 基本権限        | `grant process on *.* to whatap;`                                                                | アクティブセッションの収集 / <Cmdname sid="side_dbLockTree" className="uitext" /> / <Cmdname sid="side_deadLock" className="uitext" />                | 他のアカウントに属するスレッド情報を表示する権限、`show engine`実行                                                                         |
-| ^           | <code>grant select on <span className="vslow">performance_schema.*</span> to whatap;</code>      | アクティブセッションの収集 / <Cmdname sid="side_dbLockTree" className="uitext" /> / <Cmdname sid="TTL06865" className="uitext" />                     | 個別権限の付与時、次の表の内容を参照                                                                                               |
-| ^           | `grant show databases on *.* to whatap;`                                                         | <Cmdname sid="side_instanceList" className="uitext" />など                                                                                 | データベース名の表示                                                                                                       |
+| \^          | <code>grant select on <span className="vslow">performance_schema.*</span> to whatap;</code>      | アクティブセッションの収集 / <Cmdname sid="side_dbLockTree" className="uitext" /> / <Cmdname sid="TTL06865" className="uitext" />                     | 個別権限の付与時、次の表の内容を参照                                                                                               |
+| \^          | `grant show databases on *.* to whatap;`                                                         | <Cmdname sid="side_instanceList" className="uitext" />など                                                                                 | データベース名の表示                                                                                                       |
 | 詳細権限        | `grant select on *.* to whatap;`<br/>または<br/>`grant select on {DB_NAME}.{TABLE_NAME} to whatap;` | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="side_tableInfo" className="uitext" /> / <UI>Object detail</UI> / プランの照会 | MySQLは、当該テーブルに対する**SELECT**権限がないと、<Cmdname sid="side_dbSize" className="uitext" />、Object detail、プラン照会機能を対応しません。 |
 | replication | `grant replication client on *.* to whatap;`                                                     | <Cmdname sid="side_instanceList" className="uitext" />の<span class='mark instance'>S</span>表示 / replication情報の収集                         | `SHOW MASTER STATUS`, `SHOW SLAVE STATUS`                                                                        |
-| ^           | `grant replication slave on *.* to whatap;`                                                      | <Cmdname sid="side_instanceList" className="uitext" />の<span class='mark master'>M</span>表示 / replication情報の収集                           | `SHOW SLAVE HOSTS`                                                                                               |
+| \^          | `grant replication slave on *.* to whatap;`                                                      | <Cmdname sid="side_instanceList" className="uitext" />の<span class='mark master'>M</span>表示 / replication情報の収集                           | `SHOW SLAVE HOSTS`                                                                                               |
 | セッション中止     | `grant super on *.* to whatap;`                                                                  | アクティブセッションの一覧でのセッション中止機能                                                                                                                 | 別のアカウントに属するスレッドの終了                                                                                               |
-| ^           | `grant execute on procedure mysql.rds_kill to DB_User;`                                          | AWS RDSの場合のセッション中止機能                                                                                                                     | -                                                                                                                |
+| \^          | `grant execute on procedure mysql.rds_kill to DB_User;`                                          | AWS RDSの場合のセッション中止機能                                                                                                                     | -                                                                                                                |
 
 </div>
 
@@ -164,9 +164,9 @@ grant show databases on *.* to DB_User;
 | 権限                                                              | command                                                        | 備考                  |
 | --------------------------------------------------------------- | -------------------------------------------------------------- | ------------------- |
 | <Cmdname sid="active_sessions" /> / <Cmdname sid="lock_tree" /> | `performance_schema.data_lock_waits`                           | MySQL 8バージョンから      |
-| ^                                                               | `performance_schema.data_locks`                                | ^                   |
-| ^                                                               | `performance_schema.threads`                                   | -                   |
-| ^                                                               | `performance_schema.metadata_locks`                            | MariaDB 10.5バージョンから |
+| \^                                                              | `performance_schema.data_locks`                                | \^                  |
+| \^                                                              | `performance_schema.threads`                                   | -                   |
+| \^                                                              | `performance_schema.metadata_locks`                            | MariaDB 10.5バージョンから |
 | Wait event情報                                                    | `performance_schema.events_waits_summary_global_by_event_name` | -                   |
 | SQL統計情報                                                         | `performance_schema.events_statements_summary_by_digest`       | -                   |
 | Waitメトリクス名                                                      | `performance_schema.setup_instruments`                         | -                   |
@@ -225,20 +225,6 @@ connect_option=?serverTimezone=SERVER_TIMEZONE
 import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
 <JDBCDownload />
-
-:::info
-
-**Mysql & MariaDB 5.5バージョン以降**
-
-- [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
-- [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
-
-:::
-
-{/* 공통 Notes*/}
-import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
-
-<Dbinstallagentcommonnotes />
 
 ### データベースユーザーファイルの生成 {#create-db-user}
 

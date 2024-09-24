@@ -171,6 +171,19 @@ html[lang='ja-JP'] {
       }
     }
   }
+  .markdown {
+    .weaving-table {
+      table {
+        th {
+          &:first-of-type { width: 10%; }
+          &:nth-of-type(2) { width: 25%; }
+          &:nth-of-type(3) { width: 20%; }
+          &:nth-of-type(4) { width: 20%; }
+          &:nth-of-type(5) { width: 15%; }
+        }
+      }
+    }
+  }
 }
 * {
   margin: 0;
@@ -746,6 +759,13 @@ button.DocSearch-Button:hover {
 .DocSearch-Button-Keys {
   display: none !important;
 }
+// 다국어 조건 아이콘 위치 수정
+.iconLanguage_src-theme-NavbarItem-LocaleDropdownNavbarItem-styles-module {
+  // vertical-align: text-bottom;
+  // margin-right: 5px;
+  top: -2px !important;
+  // position: relative;
+}
 .localeDropdown {
   margin-right: 0px;
   display: inline;
@@ -1142,6 +1162,10 @@ main {
         width: 40%;
         max-width: 40%;
       }
+      .width--50 {
+        width: 50%;
+        max-width: 50%;
+      }
     }
     .steps {
       display: block;
@@ -1192,6 +1216,13 @@ main {
         margin-top: 0;
       }
     }
+    .steps--yl {
+      h2::before {
+        background-color: #F9C12A;
+        color: #333333;
+        font-weight: 500;
+      }
+    }
     h1 {
       padding-top: 8px;
       &:first-child {
@@ -1209,6 +1240,9 @@ main {
     }
     section h4 {
         font-size: var(--ifm-h4-font-size);
+    }
+    div.indentTab h4 code, section h4 code {
+      font-size: 1.3rem;
     }
     section h5 {
         font-size: var(--ifm-h5-font-size);
@@ -1298,9 +1332,14 @@ main {
     h2 img, h3 img {
       position: relative;
       top: 3px;
-      max-height: 30px;
       width: auto;
       border: none;
+    }
+    h2 img {
+      max-height: 30px;
+    }
+    h3 img {
+      max-height: 24px;
     }
     h3[id='pdf-download'] img {
       top: 5px;
@@ -1939,6 +1978,11 @@ main {
       margin: 20px 0;
       padding: 0;
     }
+    img.active {
+      border: 1px solid #296CF2 !important;
+      border-radius: 5px;
+      background-color: transparent;
+    }
     img[alt*='새로운 기능 콘텐츠 예시'], img[alt*='모바일 앱 sc cl'] {
       width: 750px !important;
       margin: auto;
@@ -2535,6 +2579,26 @@ main {
         }
       }
     }
+    .db-metric-3 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 30%;
+            }
+            &:nth-of-type(2) {
+              width: 50%;
+            }
+            &:nth-of-type(3) {
+              width: 20%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
     .db-metric-4 {
       table {
         tr {
@@ -2688,9 +2752,6 @@ main {
             &:last-of-type {
               width: 10%;
             }
-            code {
-              display: block;
-            }
           }
         }
       }
@@ -2710,9 +2771,6 @@ main {
             }
             &:last-of-type {
               width: 10%;
-            }
-            code {
-              display: block;
             }
           }
         }
@@ -3332,5 +3390,81 @@ main {
   .markdown .tabs-container div.margin-top--md div[role='tabpanel'], .markdown > ol > li > div.tabs-container > div.margin-top--md > div[role='tabpanel'] {
     display: block;
     visibility: visible;
+  }
+
+  .markdown div[class*="filetree"] {
+    border: 1px solid var(--ifm-menu-color);
+    border-radius: 5px;
+    /* font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important; */
+    padding: 15px 15px 15px 15px;
+    margin-top: 20px;
+  }
+  .markdown button[class*="top"] {
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .markdown button[class*="top"] span[class*="type"] {
+    font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important;
+    color: var(--ifm-menu-color);
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  
+  .markdown div[class*="filetree"] ul[class*="fileitem"] {
+    margin-left: 15px;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 28px;
+  }
+
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] {
+    font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important;
+    font-weight: 500;
+    display: list-item;
+    padding-bottom: 15px !important;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"]:first-of-type {
+    margin-top: 15px;
+  }
+  
+  .markdown div[class*="filetree"] ul li[type='file'] span[class*="name"], .markdown div[class*="filetree"] ul li[type='folder'] span[class*="name"] {
+    display: table-cell;
+    margin-right: 15px;
+    min-width: 240px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 240px;
+  }
+  
+  .markdown div[class*="filetree"] div[class*="ico_"] {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+  }
+  
+  .markdown div[class*="filetree"] ul li span[class*="desc"] {
+    font-family: 'Noto Sans KR' !important;
+    font-weight: 400;
+    display: table-cell;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] ul {
+    list-style-type: none;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] ul li [type='file'] span[class*="name"] {
+    min-width: 215px;
   }
 }

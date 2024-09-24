@@ -1,15 +1,30 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/java-batch/java-batch-2_2_23",
-    "ver": "v2.2.23",
-    "date": "2024-02-06",
+    "url": "https://docs.whatap.io/ja/release-notes/java-batch/java-batch-2_2_25",
+    "ver": "v2.2.25",
+    "date": "2024-08-20",
     "Lists": [
       {
-        "ver": "v2.2.23",
-        "hash": "v2223",
+        "ver": "v2.2.25",
+        "hash": "v2225",
+        "product": "Java Batch Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code><code>profile_expired_time</code>オプションのデフォルト値を30秒に修正</p>"
+      },
+      {
+        "ver": "v2.2.25",
+        "hash": "v2225",
+        "product": "Java Batch Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>プロファイルの整理作業の際、エージェントログの一部を修正</p>"
+      },
+      {
+        "ver": "v2.2.25",
+        "hash": "v2225",
         "product": "Java Batch Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードでアクティブ トランザクションを呼び出すときに発生するバグを修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code>配置作業が終わった後も追跡データの収集ができない問題を防止</p>",
+        "details": "<p>トレースが開始されていない場合はデータ収集を行わないよう、<code>auto_start_tx</code>の基本値を<code>true</code>から <code>false</code>に修正</p>"
       }
     ]
   },
@@ -24,6 +39,20 @@
         "product": "Java Batch Agent",
         "type": "Deprecated",
         "desc": "<p><code class=\"Deprecated\">Deprecated</code> hook_service_patternsオプションを削除</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/java-batch/java-batch-2_2_23",
+    "ver": "v2.2.23",
+    "date": "2024-02-06",
+    "Lists": [
+      {
+        "ver": "v2.2.23",
+        "hash": "v2223",
+        "product": "Java Batch Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>ダッシュボードでアクティブ トランザクションを呼び出すときに発生するバグを修正</p>"
       }
     ]
   }

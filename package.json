@@ -17,6 +17,7 @@
     "postgen": "docusaurus-post-generator"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.11.2",
     "@crowdin/cli": "^3.14.0",
     "@crowdin/crowdin-api-client": "^1.29.5",
     "@docsearch/react": "^3.5.2",
@@ -43,7 +44,7 @@
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.0.0",
-    "docusaurus-plugin-enlarge-image": "^0.1.1",
+    "docusaurus-plugin-image-zoom": "^2.0.0",
     "docusaurus-plugin-sass": "^0.2.5",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
