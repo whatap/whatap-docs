@@ -145,16 +145,19 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, UI} = _components;
+  }, {Cmdname, ImgLang, UI, Videos} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!UI) _missingMdxReference("UI", true);
+  if (!Videos) _missingMdxReference("Videos", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "TTL08103",
         className: "uitext"
       }), "는 사용자가 웹 사이트에서 수행하는 모든 이벤트를 기록하고 재생할 수 있는 기능입니다. 이 기능을 통해 클릭, 스크롤, 입력, 페이지 전환 등의 사용자 행동을 재현할 수 있습니다. 이를 통해 사용자가 실제로 웹사이트와 어떻게 상호 작용하는지 정확히 파악할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Videos, {
+      url: "https://img.whatap.io/24/09/24/230155whatap-browser-session-replay.mp4"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
