@@ -2086,6 +2086,12 @@ main {
       top: 3px;
       border: none;
     }
+    img[src*='k8s-node-timeline-config.png'], img[src*='k8s-node-timeline-resource.png'], img[src*='k8s-node-timeline-metrics.png'], img[src*='k8s-node-timeline-event.png'] {
+      max-height: 700px;
+      // 중앙 정렬
+      display: block; 
+      margin: 0 auto;
+    }
     img[alt*='sc'] {
       border: none;
       width: fit-content;
