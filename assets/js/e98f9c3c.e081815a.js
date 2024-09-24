@@ -75,7 +75,7 @@ const assets = {
 
 **지원 에이전트 버전**
 
-<Cmdname sid="LNK08084" className="uitext" /> 메뉴는 특정 에이전트 버전 이상에서만 지원됩니다. 각 운영체제별 최소 지원 버전은 다음과 같습니다.
+<Cmdname sid="side_serverInventory" className="uitext" /> 메뉴는 특정 에이전트 버전 이상에서만 지원됩니다. 각 운영체제별 최소 지원 버전은 다음과 같습니다.
 
 
 * **Linux**: 2.6.6 이상
@@ -91,9 +91,9 @@ const assets = {
 /*대시보드 및 주요 제공 정보 안내*/
 /*
 
-<Cmdname sid="LNK08084" className="uitext" /> 메뉴에서 서버 구성 데이터를 자동으로 수집하여 관리할 수 있습니다. 또한 서버 구성 항목을 사용자가 정의하여 추가하거나 수정할 수 있습니다. 이를 통해 서버 운영 및 관리에 필요한 중요한 데이터를 한눈에 파악하고 추가적인 구성 관리 항목을 통해 서버 관리의 효율성을 향상시킬 수 있습니다.
+<Cmdname sid="side_serverInventory" className="uitext" /> 메뉴에서 서버 구성 데이터를 자동으로 수집하여 관리할 수 있습니다. 또한 서버 구성 항목을 사용자가 정의하여 추가하거나 수정할 수 있습니다. 이를 통해 서버 운영 및 관리에 필요한 중요한 데이터를 한눈에 파악하고 추가적인 구성 관리 항목을 통해 서버 관리의 효율성을 향상시킬 수 있습니다.
 
-메뉴는 서버의 하드웨어 및 소프트웨어 주요 구성 정보를 목록 형태로 제공합니다. <Cmdname sid="LNK08084" className="uitext" /> 메뉴에서 서버 운영 및 관리에 필요한 필수 정보 자동 수집과 함께 커스텀 항목을 통한 확장성을 제공합니다. 이를 통해 서버 관리자는 더욱 체계적이고 효율적으로 인프라를 모니터링하고 관리할 수 있습니다. 필터와 정렬 기능을 활용하여 필요한 정보를 쉽게 검색해 보세요.
+메뉴는 서버의 하드웨어 및 소프트웨어 주요 구성 정보를 목록 형태로 제공합니다. <Cmdname sid="side_serverInventory" className="uitext" /> 메뉴에서 서버 운영 및 관리에 필요한 필수 정보 자동 수집과 함께 커스텀 항목을 통한 확장성을 제공합니다. 이를 통해 서버 관리자는 더욱 체계적이고 효율적으로 인프라를 모니터링하고 관리할 수 있습니다. 필터와 정렬 기능을 활용하여 필요한 정보를 쉽게 검색해 보세요.
 
 */
 /*이를 통해 다음 예시와 같은 구성 관리가 가능합니다.
@@ -174,8 +174,9 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, TabItem, Tabs} = _components;
+  }, {Cmdname, ImgLang, TabItem, Tabs} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!TabItem) _missingMdxReference("TabItem", true);
   if (!Tabs) _missingMdxReference("Tabs", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
@@ -184,7 +185,7 @@ function _createMdxContent(props) {
         sid: "side_serverList",
         className: "uitext"
       }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "LNK08084",
+        sid: "side_serverInventory",
         className: "uitext"
       })]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -192,18 +193,18 @@ function _createMdxContent(props) {
         sid: "side_serverList",
         className: "uitext"
       }), " 메뉴 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "LNK08084",
+        sid: "side_serverInventory",
         className: "uitext"
       }), " 메뉴를 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "LNK08084",
+        sid: "side_serverInventory",
         className: "uitext"
       }), "는 서버 운영에 필요한 구성 정보를 제공하고 관리 편의성을 위해 수동으로 관리 항목을 추가할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "LNK08084",
+        sid: "side_serverInventory",
         className: "uitext"
       }), "는 서버의 물리적 및 가상적 특성, 운영 환경 등을 체계적으로 관리하기 위한 메뉴입니다. 이 기능은 자동으로 수집된 서버 구성 요소와 사용자 정의 항목을 통해 서버의 구성을 상세히 파악하고 관리할 수 있게 해줍니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "LNK08084",
+        sid: "side_serverInventory",
         className: "uitext"
       }), "는 서버의 성능 분석과 문제 해결에 필수적인 데이터를 제공합니다."]
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
@@ -214,7 +215,7 @@ function _createMdxContent(props) {
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "LNK08084",
+          sid: "side_serverInventory",
           className: "uitext"
         }), " 메뉴는 운영체제별로 다음 버전 이상에서만 지원됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -296,7 +297,7 @@ function _createMdxContent(props) {
         children: "활성화 옵션"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "LNK08084",
+          sid: "side_serverInventory",
           className: "uitext"
         }), " 메뉴 조회 기능을 활성화하려면 다음 설정이 필요합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
@@ -415,16 +416,12 @@ function _createMdxContent(props) {
         children: "기본 화면 안내"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "LNK08084",
+          sid: "side_serverInventory",
           className: "uitext"
         }), " 메뉴는 서버의 주요 구성 정보를 목록 형태로 제공합니다. 자동으로 수집한 서버 운영 및 관리에 필요한 필수 정보와 사용자 정의 항목을 함께 관리할 수 있습니다. 이를 통해 서버 관리자는 더욱 체계적이고 효율적으로 인프라를 모니터링하고 운영할 수 있습니다. 필터와 정렬 기능을 활용하여 필요한 정보를 쉽게 검색해 보세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "서버 구성 정보",
-          src: (__webpack_require__(98871)/* ["default"] */ .A) + "",
-          width: "1211",
-          height: "673"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-inventory.png",
+        desc: "서버 구성 정보"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -516,13 +513,9 @@ function _createMdxContent(props) {
           sid: "BTN06053",
           className: "uitext"
         }), " 버튼을 선택 해 컬럼 설정을 저장하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "서버 구성 정보 컬럼 설정",
-          src: (__webpack_require__(65348)/* ["default"] */ .A) + "",
-          width: "800",
-          height: "803"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-inventory-cl.png",
+        desc: "서버 구성 정보 컬럼 설정"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -697,26 +690,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAxIDc5LjE0ZWNiNDJmMmMsIDIwMjMvMDEvMTMtMTI6MjU6NDQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6NjVlMjMwYmYtMTI4OS00ODUyLWE3NjYtZDU2NzhlZjdkZWE5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA3QTM1RTI5QjU2QjExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA3QTM1RTI4QjU2QjExRURBNTlDQzcxMUE1QURGQ0YzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNC4wIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZWUyNmRlM2EtZTU1MS00YTNhLTg5ODUtNTliOTQzOTNkMTg0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY1ZTIzMGJmLTEyODktNDg1Mi1hNzY2LWQ1Njc4ZWY3ZGVhOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plwn9wAAAALTSURBVHjaxJhLSFRRGMe/sYLADDdJUlST7YapaNXTsVWa0QujqMCIoCg0CKPsaQ8rGpIwIiIX0TtyIT00KQiNaKJNaLbSLFoU2cKygWAW9f+653OuecVz7r1z+8NvHtx7zvznnO9853w3lHxMJpoESkAMREAYZKtrSdALOkE7aAHfTDoPaZpZCPaCUjBOs+8UeAjOgoROg6xRrs8ED8ALsNrACKl714CXoAlM92JmI3gDVpB3rQIdYJ0bM0fATZBD/mkiuAsOmpg5Co5RZhQCJ8F+HTObQQ1lXqecpsxuZha4RMGIR6hBpQZHM/Vggk5Pff1EV5FFymuRZIot9lwgevLaOIbOO+WZQtCm0wP/YNVFou4vztdPbyOqLDMytViljsGR2afTKtGFZHM4bSQWJdpear2LqhuMR6jKPk35YJlOq2gBUdkS6/P1aqLmOFFdhfXOIyJqSRiZ4ayeJ9PE3VzRbZn8hc2nh2h+ZHgczdhgu89szysH17JUvGgre/xwI3930FxPq6tIpinqx1rlkRHJVBooImam+WHm9tP056XzjJuHxUyuVyO9n61VNBiRC4y7yNE5QmgF9K669HdeZW7jh81892Jm5zlky850rKyNuepmQMx8dGukvpGo8bna2CZjh93qfqbFzFu3RuxxchmH0nC+azPvxEybVyNNJ5xzj4GeSQbm//MJjNEJVo4RmRqJk4IpRP0DQ++djQPJlhLtg/tU8HUsXrAwqRUsH61V66uhRlj/fhfxBqqpZjZiX9px+n+KO9VNXHQVB2yEy6CVTie9ClUVBqUfYPdIx85usCMgI785rCS/jFQd3MhgmWLXAXBHp26qUbVTpkbkEDhjUlEeB5vAT59jZD2odVNr3wJzwSMfjNwHc8A9L08helThX6g6TBkYSKmnD4tU4f/Br+czojyVi4psD4uk8OMpfQ+61H7HeasvEw+LAtEfAQYAv2+q6mxeFyYAAAAASUVORK5CYII=");
-
-/***/ }),
-
-/***/ 65348:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/server-inventory-cl-647c163c0962d4abf6ca53ba918f763e.png");
-
-/***/ }),
-
-/***/ 98871:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/server-inventory-a2ebe5f59c40071caf50f11eb1d72366.png");
 
 /***/ }),
 
