@@ -1306,7 +1306,7 @@ function _server_adf_user_script_createMdxContent(props) {
             children: (0,jsx_runtime.jsx)(_components.code, {
               className: "language-bash",
               metastring: "title='Linux Shell'",
-              children: "export USER_SCRIPT=실행할 사용자 스크립트 절대 경로\nsuco chmod +x $USER_SCRIPT\nsudo mkdir /usr/whatap/infra/ext/\nsudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/\nexport RUNAS_USER=사용자 스크립트를 실행할 계정. root 계정제외\nsudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script\nsudo service whatap-infra restart\n"
+              children: "export USER_SCRIPT=실행할 사용자 스크립트 절대 경로\nsudo chmod +x $USER_SCRIPT\nsudo mkdir /usr/whatap/infra/ext/\nsudo cp -r $USER_SCRIPT /usr/whatap/infra/ext/\nexport RUNAS_USER=사용자 스크립트를 실행할 계정. root 계정제외\nsudo WHATAP_HOME=/usr/whatap/infra/conf /usr/whatap/infra/whatap_infrad --user=$RUNAS_USER init-script\nsudo service whatap-infra restart\n"
             })
           }), "\n"]
         }), "\n"]
