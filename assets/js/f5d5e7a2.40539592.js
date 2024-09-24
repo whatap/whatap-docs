@@ -48,10 +48,6 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Python Agent v1.6.1",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_1"
-  },
   "next": {
     "title": "Python Agent v1.5.9",
     "permalink": "/whatap-docs/release-notes/python/python-1_5_9"
