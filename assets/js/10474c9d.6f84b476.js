@@ -392,16 +392,19 @@ function _createMdxContent(props) {
         children: ["사용자는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL08456",
           className: "uitext"
-        }), "을 통해 노드 상태를 색상으로 표현할 수 있습니다. 지표는 하나 이상 설정 가능하며 각 지표별로 정상(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          class: "normal",
-          children: "Normal"
-        }), "), 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), "을 통해 노드 상태를 색상으로 표현할 수 있습니다. 지표는 하나 이상 설정 가능하며 각 지표별로 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           class: "slow",
           children: "Warning"
-        }), "), 오류(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), ")와 오류(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           class: "vslow",
           children: "Error"
-        }), ") 구간을 지정할 수 있습니다. 설정한 범위에 따라 해당 상태에 맞는 색상이 적용됩니다."]
+        }), ") 구간을 지정할 수 있습니다. 정상(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "normal",
+          children: "Normal"
+        }), ") 구간은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          class: "normal",
+          children: "파란색"
+        }), "으로 표시됩니다. 설정한 범위에 따라 해당 상태에 맞는 색상이 적용됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -413,9 +416,6 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["원하는 지표를 선택 후 각 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-              class: "normal",
-              children: "Normal"
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "slow",
               children: "Warning"
             }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -443,19 +443,13 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["각 상태 구간인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            class: "normal",
-            children: "Normal"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          children: ["이상 상태 구간인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
             class: "slow",
             children: "Warning"
           }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
             class: "vslow",
             children: "Error"
           }), "는 기본적으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-            class: "normal",
-            children: "파란색"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
             class: "slow",
             children: "주황색"
           }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
@@ -617,15 +611,12 @@ function _createMdxContent(props) {
           src: (__webpack_require__(89332)/* ["default"] */ .A) + "",
           width: "35",
           height: "35"
-        }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
-          class: "normal",
-          children: "Normal"
-        }), "로 노드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        }), "와 노드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "지시선 b",
           src: (__webpack_require__(77191)/* ["default"] */ .A) + "",
           width: "35",
           height: "35"
-        }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+        }), " 모두 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
           class: "vslow",
           children: "Error"
         }), "로 표시됩니다."]
@@ -633,8 +624,8 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "노드 상태 표시 우선 순위 sc",
           src: (__webpack_require__(25502)/* ["default"] */ .A) + "",
-          width: "800",
-          height: "441"
+          width: "795",
+          height: "452"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -708,8 +699,6 @@ function _createMdxContent(props) {
                 class: "normal",
                 children: "Normal"
               }), ": 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "0"
-              }), " 초과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "80"
               }), " 이하"]
             }), "\n"]
@@ -1030,7 +1019,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-node-map-custom-err-col-a226edf8102e6240ab759f11374f6418.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-node-map-custom-err-col-0e8249ab3ef5b58440e62544cdf6997a.png");
 
 /***/ }),
 

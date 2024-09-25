@@ -48,6 +48,10 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
+  "previous": {
+    "title": "Service Release Notes",
+    "permalink": "/whatap-docs/release-notes/service/"
+  },
   "next": {
     "title": "Service 2.8.X",
     "permalink": "/whatap-docs/release-notes/service/service-2_8_x"
@@ -274,7 +278,10 @@ function _createMdxContent(props) {
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_nodeTimeline",
                 className: "uitext"
-              }), " 메뉴 경로에서 확인할 수 있습니다."]
+              }), " 메뉴 경로에서 확인할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "../../kubernetes/node-timeline",
+                children: "다음 문서"
+              }), "를 참조하세요."]
             })
           }), "\n"]
         }), "\n"]
