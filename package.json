@@ -6,6 +6,7 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "DOCUSAURUS_SSR_CONCURRENCY=5 USE_SIMPLE_CSS_MINIFIER=true docusaurus build --no-minify",
+    "build:fast": "DOCUSAURUS_SSR_CONCURRENCY=5 BUILD_FAST=true USE_SIMPLE_CSS_MINIFIER=true yarn build --no-minify",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
