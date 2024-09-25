@@ -4,7 +4,7 @@
         <title>WhaTap Docs Blog</title>
         <link>https://docs.whatap.io/whatap-docs/blog</link>
         <description>WhaTap Docs Blog</description>
-        <lastBuildDate>Wed, 28 Aug 2024 22:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Sep 2024 19:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[서비스 개요]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/overview</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/overview</guid>
-            <pubDate>Wed, 28 Aug 2024 22:30:00 GMT</pubDate>
+            <pubDate>Wed, 25 Sep 2024 19:30:00 GMT</pubDate>
             <description><![CDATA[New Feature Overview]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>

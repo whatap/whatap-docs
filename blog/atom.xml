@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.whatap.io/whatap-docs/blog</id>
     <title>WhaTap Docs Blog</title>
-    <updated>2024-08-28T22:30:00.000Z</updated>
+    <updated>2024-09-25T19:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.whatap.io/whatap-docs/blog"/>
     <subtitle>WhaTap Docs Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[서비스 개요]]></title>
         <id>https://docs.whatap.io/whatap-docs/blog/overview</id>
         <link href="https://docs.whatap.io/whatap-docs/blog/overview"/>
-        <updated>2024-08-28T22:30:00.000Z</updated>
+        <updated>2024-09-25T19:30:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature Overview]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
