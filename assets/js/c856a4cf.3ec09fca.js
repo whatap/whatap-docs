@@ -65,6 +65,10 @@ const toc = [{
   "id": "네트워크-성능-모니터링-에이전트",
   "level": 3
 }, {
+  "value": "Telegraf 모니터링 에이전트",
+  "id": "telegraf-모니터링-에이전트",
+  "level": 3
+}, {
   "value": "Java 애플리케이션 모니터링 에이전트",
   "id": "java-애플리케이션-모니터링-에이전트",
   "level": 3
@@ -271,12 +275,12 @@ function _createMdxContent(props) {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/6/x86_64/whatap-infra-2.6-7.x86_64.rpm"
+              children: "/centos/6/x86_64/whatap-infra-2.6-8.x86_64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 5e9c9b94859645896a1fb98e5c616f1e"
+            children: "MD5: ffd51c01ae0659a54f55d87265258946"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: d966f83c10843c5848e6e15a697878fa0a06c1ec1ea2ba79c0f599c3d6304291"
+            children: "SHA256: c0cfd34fea749dd640c5c7e92da0d43ccfef43cf3aa5f78de3b04693bf99f5ac"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -291,102 +295,102 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/7/x86_64/whatap-infra-2.6-7.x86_64.rpm"
+              children: "/centos/7/x86_64/whatap-infra-2.6-8.x86_64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 954d27deaa08cf1e77361a822c163056"
+            children: "MD5: e1102b8973ad477b2f3c9e4d2ad98535"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 338c1d3d5bcb3d4b437dbeb2596b7f1b758ec3917bb2afea7ba43ebe8f02418f"
+            children: "SHA256: 8733ab5dd140fd2e5d69e5a13467a95991f1088d894f390567d2d8c79db051fa"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/7/aarch64/whatap-infra-2.6-7.aarch64.rpm"
+              children: "/centos/7/aarch64/whatap-infra-2.6-8.aarch64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 23f19ce33272e10dce550722382db094"
+            children: "MD5: 7c77edb26095b3f78aaf47ccddcf25d2"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 426aeea3affe0605ff318771415ab1446752f44c203a4fa9d5f8b8285fb4b0c7"
+            children: "SHA256: 29e4bef4bb58b2b86afce2ed2af75dd7f9ad0b9cb5aa3122483615c68f0bd532"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/8/x86_64/whatap-infra-2.6-7.x86_64.rpm"
+              children: "/centos/8/x86_64/whatap-infra-2.6-8.x86_64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 954d27deaa08cf1e77361a822c163056"
+            children: "MD5: eac43330e9ba3f9f2c5824370f519ad3"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 338c1d3d5bcb3d4b437dbeb2596b7f1b758ec3917bb2afea7ba43ebe8f02418f"
+            children: "SHA256: e7be3e11b65e57e60ff2d84600976c4b685367a4d64fadff2d0b388fe89a5f17"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/8/aarch64/whatap-infra-2.6-7.aarch64.rpm"
+              children: "/centos/8/aarch64/whatap-infra-2.6-8.aarch64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 23f19ce33272e10dce550722382db094"
+            children: "MD5: 80bf986030e0d5c5e027d9e624d5c8c1"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 426aeea3affe0605ff318771415ab1446752f44c203a4fa9d5f8b8285fb4b0c7"
+            children: "SHA256: 21626d9eca59fd35b7696767b73ec0526d932cc05d6eeaa868ca8e7cee2976e2"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/9/x86_64/whatap-infra-2.6-7.x86_64.rpm"
+              children: "/centos/9/x86_64/whatap-infra-2.6-8.x86_64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 5ab0c4d7be04efe86767be0b0698cd22"
+            children: "MD5: bbb34c3528d0b45609df95220d390a65"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 0512e6aeb25bc9cc5bb9c2148aee2d6e2d6879945b9d8f2ac208ce52a44fb530"
+            children: "SHA256: ffc75beac567024fe9562cf62a4202eb6c3a2c4b86b8297abc2dfc0fb7a79778"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/9/aarch64/whatap-infra-2.6-7.aarch64.rpm"
+              children: "/centos/9/aarch64/whatap-infra-2.6-8.aarch64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: de4d5eb0774334c5e131e02a0d660478"
+            children: "MD5: 463b840f42464f24439b2fb1b387dc8d"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 097498844dddf6bf18d194c08ddb3833c64241e1e38f0a943fa846dee663c9c7"
+            children: "SHA256: c3376d962f9e8d38ef31b1d2635bf8f68cc973c81b6f4d9777f089bae10ee2e2"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/latest/x86_64/whatap-infra-2.6-7.x86_64.rpm"
+              children: "/centos/latest/x86_64/whatap-infra-2.6-8.x86_64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 954d27deaa08cf1e77361a822c163056"
+            children: "MD5: e1102b8973ad477b2f3c9e4d2ad98535"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 338c1d3d5bcb3d4b437dbeb2596b7f1b758ec3917bb2afea7ba43ebe8f02418f"
+            children: "SHA256: 8733ab5dd140fd2e5d69e5a13467a95991f1088d894f390567d2d8c79db051fa"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/centos/latest/aarch64/whatap-infra-2.6-7.aarch64.rpm"
+              children: "/centos/latest/aarch64/whatap-infra-2.6-8.aarch64.rpm"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 23f19ce33272e10dce550722382db094"
+            children: "MD5: 7c77edb26095b3f78aaf47ccddcf25d2"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 426aeea3affe0605ff318771415ab1446752f44c203a4fa9d5f8b8285fb4b0c7"
+            children: "SHA256: 29e4bef4bb58b2b86afce2ed2af75dd7f9ad0b9cb5aa3122483615c68f0bd532"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/debian/unstable/whatap-infra_2.6.7_amd64.deb"
+              children: "/debian/unstable/whatap-infra_2.6.8_amd64.deb"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 10351820c5e1df79105bac35b7b3c905"
+            children: "MD5: 2f913645696000da8681cc2863fb31ac"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 8e76691d45c9e429cdc4944e74979e627cd02a3f3d16d9e149ee4a31d9e78ef6"
+            children: "SHA256: 561e7f6f7ebe898646897f416fbbce8ed60765509a9c2d107f744276e608f332"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "/debian/unstable/whatap-infra_2.6.7_arm64.deb"
+              children: "/debian/unstable/whatap-infra_2.6.8_arm64.deb"
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "MD5: 31780167ce9582f6644bd90e28ae194e"
+            children: "MD5: ade5f2f491980d5ebc794ffdc13f7407"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "SHA256: 3627236b5fc4f4c88f89aa44182a30219a987ac15c5c5b9e220b1f8c4bcd146b"
+            children: "SHA256: 90ea9ae574305bc28b750d9944671bd1f4eacf0e4bd467141eb8c0236277421f"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -495,6 +499,24 @@ function _createMdxContent(props) {
             children: "MD5: 9cdd0efddaa1d92e1426d3cc1c5777d8"
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: "SHA256: 65fe65e0f5d3b811a5414db96ea5591b700cc5fef22949ad8c02587118eb544c"
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "telegraf-모니터링-에이전트",
+        children: "Telegraf 모니터링 에이전트"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "/telegraf/telegraf-release-1.29.2/dist/telegraf-1.29.2-1.x86_64.rpm"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "MD5: 160442724bcb899e199975dc6a889be4"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "SHA256: 6431bcb14af548ec7e48790b51df36d87ad67de4c514d17ec73ae897890c9498"
           }), "\n"]
         }), "\n"]
       })]
