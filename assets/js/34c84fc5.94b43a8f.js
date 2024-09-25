@@ -586,7 +586,6 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
     admonition: "admonition",
     blockquote: "blockquote",
     em: "em",
@@ -664,18 +663,6 @@ function _createMdxContent(props) {
             }), "을 정렬해 조회할 수 있습니다."]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "노드 상세"
-            })
-          }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "node-details",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -709,7 +696,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "비교"
           })
-        }), " 컬럼의 체크 박스를 선택하면 다음과 같이 오른쪽에 해당 노드의 상세 정보를 비교하는 창이 나타납니다."]
+        }), " 컬럼의 체크 박스를 선택하면 오른쪽에 해당 노드의 상세 정보를 비교하는 창이 나타납니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-compare.png",
         desc: "비교하기"
