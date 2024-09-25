@@ -58207,14 +58207,14 @@
   },
   "DSC08435": {
     "en": "This node shows <b>high overall usage, putting it at risk of performance degradation and system failure</b>. You should consider reducing load through resource scaling, load balancing, or job optimization.",
-    "ja": "このノードは<b>全体的に高い使用率を示し、パフォーマンスの低下とシステム障害のリスク</b>があります。リソースの拡張、負荷分散、またはタスクの最適化によって負荷を軽減することを検討する必要があります。",
+    "ja": "このノードは<b>全体的に高い使用率を示し、パフォーマンスの低下とシステム障害のリスク</b>を持っています。",
     "ko": "이 노드는 <b>전반적으로 높은 사용량을 보여 성능 저하 및 시스템 장애의 위험</b>이 있습니다. 리소스 확장, 부하 분산, 또는 작업 최적화를 통해 부하를 줄이는 것을 고려해야 합니다.",
     "zh": "This node shows <b>high overall usage, putting it at risk of performance degradation and system failure</b>. You should consider reducing load through resource scaling, load balancing, or job optimization.",
     "service_id": "DSC08435"
   },
   "DSC08436": {
     "en": "The node's resource usage is <b>mainly focused on {resources}</b>. Intensive monitoring and load balancing strategies for overloaded resources are required, and measures to alleviate overload through resource expansion or task redistribution should be considered.",
-    "ja": "ノードのリソース使用量は<b>主に{resources}に集中して</b>です。負荷が集中しているリソースの集中的な監視と負荷分散戦略が必要であり、リソースの拡張や作業の再配布を通じて過負荷を軽減する措置を検討する必要があります。",
+    "ja": "ノードのリソース使用量は、主に{resources}に集中しています</b>、負荷が集中しているリソースの集中的な監視と負荷分散戦略が必要です。アクションを確認する必要があります。",
     "ko": "노드의 리소스 사용이 <b>주로 {resources}에 집중</b>되어 있습니다. 부하가 집중되는 리소스에 대한 집중적인 모니터링과 부하 분산 전략이 필요하며, 리소스 확장이나 작업 재분배를 통해 과부하를 완화하는 조치를 검토해야 합니다.",
     "zh": "The node's resource usage is <b>mainly focused on {resources}</b>. Intensive monitoring and load balancing strategies for overloaded resources are required, and measures to alleviate overload through resource expansion or task redistribution should be considered.",
     "service_id": "DSC08436"
@@ -58528,10 +58528,10 @@
     "service_id": "TTL08480"
   },
   "TTL08481": {
-    "en": "View linked DB instance information",
-    "ja": "連携DBインスタンス情報の表示",
-    "ko": "연계 DB 인스턴스 정보 보기",
-    "zh": "View linked DB instance information",
+    "en": "View DB instance information",
+    "ja": "DBインスタンス情報の表示",
+    "ko": "DB 인스턴스 정보 보기",
+    "zh": "View DB instance information",
     "service_id": "TTL08481"
   },
   "DSC08482": {
@@ -58799,6 +58799,55 @@
     "ko": "연계 프로젝트",
     "zh": "Correlated project",
     "service_id": "BTN08519"
+  },
+  "TTL08520": {
+    "en": "Comparison",
+    "ja": "比較する",
+    "ko": "비교하기",
+    "zh": "Comparison",
+    "service_id": "TTL08520"
+  },
+  "TTL08521": {
+    "en": "Edit favorite name",
+    "ja": "お気に入りの名前を編集",
+    "ko": "즐겨찾기 이름 수정",
+    "zh": "Edit favorite name",
+    "service_id": "TTL08521"
+  },
+  "DSC08522": {
+    "en": "Enter your favorite name.",
+    "ja": "お気に入りの名前を入力してください。",
+    "ko": "즐겨찾기 이름을 입력하세요.",
+    "zh": "Enter your favorite name.",
+    "service_id": "DSC08522"
+  },
+  "DSC08523": {
+    "en": "Up to {limit} items are saved.",
+    "ja": "最大{limit}個まで保存されます。",
+    "ko": "최대 {limit}개까지 저장됩니다.",
+    "zh": "Up to {limit} items are saved.",
+    "service_id": "DSC08523"
+  },
+  "DSC08524": {
+    "en": "There are no favorites.",
+    "ja": "お気に入りの履歴はありません。",
+    "ko": "즐겨찾기 내역이 없습니다.",
+    "zh": "There are no favorites.",
+    "service_id": "DSC08524"
+  },
+  "TLT08525": {
+    "en": "Please select an instance.",
+    "ja": "インスタンスを選択してください。",
+    "ko": "인스턴스를 선택해주세요.",
+    "zh": "Please select an instance.",
+    "service_id": "TLT08525"
+  },
+  "DSC08526": {
+    "en": "Log Filter Favorites",
+    "ja": "ログフィルタのお気に入り",
+    "ko": "로그 필터 즐겨찾기",
+    "zh": "Log Filter Favorites",
+    "service_id": "DSC08526"
   },
   "": {
     "en": "#VALUE!",
