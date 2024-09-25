@@ -3897,7 +3897,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3906,7 +3906,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_8_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_8_1',
                 'release-notes/php/php-2_8_0',
@@ -3989,9 +3989,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_2',
+                  id: 'release-notes/dotnet/dotnet-2_3_3',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_2',
                 'release-notes/dotnet/dotnet-2_3_1',
                 'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
@@ -4000,7 +4001,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_6',
                 'release-notes/dotnet/dotnet-2_2_5',
                 'release-notes/dotnet/dotnet-2_2_4',
-                'release-notes/dotnet/dotnet-2_2_3',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -4009,7 +4009,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/index',
@@ -4018,7 +4018,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_4_2',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_4_1',
                 'release-notes/golang/golang-0_4_0',
@@ -4096,7 +4096,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4105,7 +4105,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_7_11',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_7_10',
                 'release-notes/k8s/k8s-1_7_9',
