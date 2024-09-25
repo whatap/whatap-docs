@@ -3763,7 +3763,7 @@ const sidebars = {
           label: 'Service',
           collapsible: true,
           collapsed: true,
-          // className: 'new',
+          className: 'new',
           link: {
             type: 'doc',
             id: 'release-notes/service/index',
@@ -3771,9 +3771,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_8_x',
-              // className: 'new',
+              id: 'release-notes/service/service-2_9_x',
+              className: 'new',
             },
+            'release-notes/service/service-2_8_x',
             'release-notes/service/service-2_7_x',
             'release-notes/service/service-2_6_x',
             'release-notes/service/service-2_5_x',
@@ -3782,7 +3783,6 @@ const sidebars = {
             'release-notes/service/service-2_2_x',
             'release-notes/service/service-2_1_x',
             'release-notes/service/service-2_0_x',
-            'release-notes/service/service-1_114_x',
             'release-notes/service/service-previous',
           ]
         },
