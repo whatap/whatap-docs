@@ -581,7 +581,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "상세 보기",
-  "id": "상세-보기",
+  "id": "node-list-details",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -696,7 +696,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "비교"
           })
-        }), " 컬럼의 체크 박스를 선택하면 오른쪽에 해당 노드의 상세 정보를 비교하는 창이 나타납니다."]
+        }), " 컬럼의 체크 박스를 선택하면 다음과 같이 오른쪽에 해당 노드의 상세 정보를 비교하는 창이 나타납니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-compare.png",
         desc: "비교하기"
@@ -704,7 +704,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "상세-보기",
+        id: "node-list-details",
         children: "상세 보기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["노드 상세는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
@@ -720,7 +720,7 @@ function _createMdxContent(props) {
           src: (__webpack_require__(65557)/* ["default"] */ .A) + "",
           width: "24",
           height: "24"
-        }), " 아이콘을 선택하면 다음과 같이 오른쪽에 해당 노드의 상세 정보 창이 나타납니다."]
+        }), " 아이콘을 선택하면 오른쪽에 해당 노드의 상세 정보 창이 나타납니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
