@@ -560,7 +560,8 @@ const sidebars = {
           items: [
             'nodejs/install-agent-docker',
             'nodejs/install-agent-nextjs',
-            'nodejs/install-agent-nuxtjs'
+            'nodejs/install-agent-nuxtjs',
+            'nodejs/install-agent-svelte'
           ]
         },
         {
