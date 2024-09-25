@@ -371,6 +371,13 @@ const assets = {
 
 };
 
+/*
+
+#### 노드 이름 정렬
+
+동일한 노드에 속한 디스크 목록이 연속적으로 나열될 경우 해당 노드 이름(***OnodeName***)이 병합되어 표시됩니다. 다만 다른 컬럼 기준 정렬로 연속성이 깨진 상태라면 병합 역시 풀리게 됩니다.
+
+*/
 /*- **마운트 포인트**: 디스크가 특정 경로에 마운트되어 있어야 목록에 표시됩니다. 마운트 포인트가 없는 디스크는 목록에 포함되지 않습니다.
 
 - **실시간 모니터링**: 마운트된 디스크의 사용량, 여유 공간, I/O 성능 지표 등을 실시간으로 모니터링할 수 있습니다. 이를 통해 디스크의 상태를 지속적으로 추적하고, 필요한 경우 신속하게 대응할 수 있습니다.
@@ -384,10 +391,6 @@ const toc = [{
   "value": "기본 화면 안내",
   "id": "기본-화면-안내",
   "level": 2
-}, {
-  "value": "노드 이름 정렬",
-  "id": "노드-이름-정렬",
-  "level": 4
 }, {
   "value": "미표시 노드 디스크",
   "id": "미표시-노드-디스크",
@@ -471,18 +474,6 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-node-disk-list.png",
         desc: "노드 디스크 목록"
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "노드-이름-정렬",
-        children: "노드 이름 정렬"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["동일한 노드에 속한 디스크 목록이 연속적으로 나열될 경우 해당 노드 이름(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "OnodeName"
-          })
-        }), ")이 병합되어 표시됩니다. 다만 다른 컬럼 기준 정렬로 연속성이 깨진 상태라면 병합 역시 풀리게 됩니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
