@@ -126,8 +126,8 @@ const metadata = {
   },
   "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "Nuxt.js 환경 설치",
-    "permalink": "/whatap-docs/nodejs/install-agent-nuxtjs"
+    "title": "Svelte 환경 설치",
+    "permalink": "/whatap-docs/nodejs/install-agent-svelte"
   },
   "next": {
     "title": "Node.js 환경 설정",

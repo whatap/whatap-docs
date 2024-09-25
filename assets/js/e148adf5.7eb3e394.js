@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12549],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39649],{
 
 /***/ 20046:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -77,7 +77,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 87587:
+/***/ 14555:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -95,45 +95,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'install-agent-nuxtjs',
-	title: 'Nuxt.js 환경 설치',
-	description: 'Nuxt.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.',
+	id: 'install-agent-svelte',
+	title: 'Svelte 환경 설치',
+	description: 'Svelte와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.',
 	keywords: [
 		'Node.js',
-		'Nuxt.js',
+		'Svelte',
 		'에이전트'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/install-agent-nuxtjs",
-  "title": "Nuxt.js 환경 설치",
-  "description": "Nuxt.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
-  "source": "@site/docs/nodejs/install-agent-nuxtjs.mdx",
+  "id": "nodejs/install-agent-svelte",
+  "title": "Svelte 환경 설치",
+  "description": "Svelte와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
+  "source": "@site/docs/nodejs/install-agent-svelte.mdx",
   "sourceDirName": "nodejs",
-  "slug": "/nodejs/install-agent-nuxtjs",
-  "permalink": "/whatap-docs/nodejs/install-agent-nuxtjs",
+  "slug": "/nodejs/install-agent-svelte",
+  "permalink": "/whatap-docs/nodejs/install-agent-svelte",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/install-agent-nuxtjs.mdx",
+  "editUrl": "undefined/docs/nodejs/install-agent-svelte.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "install-agent-nuxtjs",
-    "title": "Nuxt.js 환경 설치",
-    "description": "Nuxt.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
+    "id": "install-agent-svelte",
+    "title": "Svelte 환경 설치",
+    "description": "Svelte와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
     "keywords": [
       "Node.js",
-      "Nuxt.js",
+      "Svelte",
       "에이전트"
     ],
     "isTranslationMissing": false
   },
   "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "Next.js 환경 설치",
-    "permalink": "/whatap-docs/nodejs/install-agent-nextjs"
+    "title": "Nuxt.js 환경 설치",
+    "permalink": "/whatap-docs/nodejs/install-agent-nuxtjs"
   },
   "next": {
     "title": "설치 점검",
@@ -157,28 +157,12 @@ const toc = [{
   "id": "agentfiles",
   "level": 2
 }, {
-  "value": "server/index.js 코드 작성하기",
-  "id": "serverindexjs-코드-작성하기",
+  "value": "svelte.config.js 코드 작성하기",
+  "id": "svelteconfigjs-코드-작성하기",
   "level": 2
 }, {
   "value": "Whatap 에이전트 초기화",
   "id": "whatap-에이전트-초기화",
-  "level": 3
-}, {
-  "value": "Nuxt.js 및 기타 필요 모듈 불러오기",
-  "id": "nuxtjs-및-기타-필요-모듈-불러오기",
-  "level": 3
-}, {
-  "value": "Nuxt 인스턴스 설정 및 초기화",
-  "id": "nuxt-인스턴스-설정-및-초기화",
-  "level": 3
-}, {
-  "value": "Express 서버 설정 및 Nuxt 미들웨어 추가",
-  "id": "express-서버-설정-및-nuxt-미들웨어-추가",
-  "level": 3
-}, {
-  "value": "전체 코드 살펴보기",
-  "id": "fullcode",
   "level": 3
 }, {
   "value": "애플리케이션 실행하기",
@@ -193,10 +177,12 @@ function _createMdxContent(props) {
     em: "em",
     h2: "h2",
     h3: "h3",
+    li: "li",
     p: "p",
     pre: "pre",
     section: "section",
     strong: "strong",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Filetree, FiletreeItem} = _components;
@@ -205,15 +191,23 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "Nuxt.js"
+        children: "Svelte"
       }), "와 같은 서버 사이드 렌더링(Server-side Rendering, SSR) 프레임워크에서 애플리케이션 모니터링을 위해 Custom Server 설정이 필요합니다. 일반적인 Node.js 프레임워크(예, Express.js, Nest.js)와는 다른 접근 방식을 요구합니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["참고 자료: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://v2.nuxt.com/docs/configuration-glossary/configuration-dev/",
-          children: "Nuxt.js Custom Server Configuration"
-        })]
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["참고 자료: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://kit.svelte.dev/docs/configuration",
+              children: "Svelte Configuration"
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "이 문서는 svelte v3.54.0, sveltekit v1.5 가이드 문서 기준으로 작성되었습니다."
+          }), "\n"]
+        }), "\n"]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -250,27 +244,19 @@ function _createMdxContent(props) {
           name: "security.conf (or paramkey.txt)",
           type: "file",
           children: "SQL 변수, HTTP 쿼리를 조회하거나 Thread 중지 기능을 이용할 때 입력하는 보안키를 저장합니다."
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(FiletreeItem, {
-          name: "server.js / index.js",
-          type: "file",
-          children: ["예시 파일명입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Nuxt.js"
-          }), " 앱 인스턴스를 위한 서버 설정 파일입니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "serverindexjs-코드-작성하기",
-        children: "server/index.js 코드 작성하기"
+        id: "svelteconfigjs-코드-작성하기",
+        children: "svelte.config.js 코드 작성하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Nuxt.js"
-        }), " 애플리케이션 인스턴스를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "server/index.js"
-        }), " 파일을 작성하세요. 이 파일은 프로젝트의 서버(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "server"
-        }), ") 폴더 내에 위치해야 합니다."]
+          children: "Svelte"
+        }), " 애플리케이션 인스턴스를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "svelte.config.js"
+        }), " 파일을 작성하세요. 이 파일은 프로젝트의 루트(Root) 경로에 위치해야 합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -279,63 +265,9 @@ function _createMdxContent(props) {
         children: "Whatap 에이전트 초기화"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-javascript",
-          metastring: "title=\"server/index.js\"",
-          children: "var Whatap = require('whatap').NodeAgent;\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "nuxtjs-및-기타-필요-모듈-불러오기",
-        children: "Nuxt.js 및 기타 필요 모듈 불러오기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-javascript",
-          metastring: "title=\"server/index.js\"",
-          children: "const express = require('express');\nconst { Nuxt, Builder } = require('nuxt');\nconst app = express();\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "nuxt-인스턴스-설정-및-초기화",
-        children: "Nuxt 인스턴스 설정 및 초기화"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-javascript",
-          metastring: "title=\"server/index.js\"",
-          children: "const config = require('./nuxt.config.js');\nconfig.dev = process.env.NODE_ENV !== 'production';\nconst nuxt = new Nuxt(config);\n\nif (config.dev) {\n    new Builder(nuxt).build();\n}\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "express-서버-설정-및-nuxt-미들웨어-추가",
-        children: "Express 서버 설정 및 Nuxt 미들웨어 추가"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["다음 코드에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "port"
-        }), "에는 서버의 포트 번호를 설정하세요."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-javascript",
-          metastring: "title=\"server/index.js\"",
-          children: "app.use(nuxt.render);\n\nconst port = 3000;\napp.listen(port, () => {\n    console.log(`Server listening on http://localhost:${port}`);\n});\n"
-        })
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "fullcode",
-        children: "전체 코드 살펴보기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "완성된 전체 코드를 참조하세요."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-javascript",
-          metastring: "title=\"server/index.js\"",
-          children: "var Whatap = require('whatap').NodeAgent;\n\nconst express = require('express');\nconst { Nuxt, Builder } = require('nuxt');\nconst app = express();\n\nconst config = require('./nuxt.config.js');\nconfig.dev = process.env.NODE_ENV !== 'production';\nconst nuxt = new Nuxt(config);\n\nif (config.dev) {\n    new Builder(nuxt).build();\n}\n\napp.use(nuxt.render);\n\nconst port = 3000;\napp.listen(port, () => {\n    console.log(`Server listening on http://localhost:${port}`);\n});\n"
+          className: "language-typescript",
+          metastring: "title=\"svelte.config.js\"",
+          children: "import WhatapAgent from 'whatap'; // ESM Module\nWhatapAgent.NodeAgent;\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -347,7 +279,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-bash",
           metastring: "title=\"SH\"",
-          children: "node server/index.js\n"
+          children: "npm run preview\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_install_next_step_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
     })]

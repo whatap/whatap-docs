@@ -100,10 +100,6 @@ function _createMdxContent(props) {
           }), " 버튼 선택 시 사전 정의된 기본 주요 지표 컬럼이 선택됩니다. 이 경우 기존 컬럼 선택 내역은 삭제됩니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "컬럼은 최대 20개를 선택할 수 있습니다."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["컬럼 선택 후 우측 하단 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -582,7 +578,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "Increase"
               })
-            }), ": 선택된 기간 동안 해당 디스크의 사용량 증가율을 보여줍니다."]
+            }), ": 선택된 기간 동안 해당 디스크의 사용량 증감률을 보여줍니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -590,7 +586,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                 children: "Increase(Per Day)"
               })
-            }), ": 조회 기간 동안 하루 평균 사용량 증감률을 계산한 값으로, 디스크 사용량 변동 추세를 확인할 수 있습니다.조회 기간이 하루 미만일 경우 이 값은 표시되지 않습니다."]
+            }), ": 조회 기간 동안 하루 평균 사용량 증감률을 계산한 값으로, 디스크 사용량 변동 추세를 확인할 수 있습니다. 조회 기간이 하루 미만일 경우 이 값은 표시되지 않습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
