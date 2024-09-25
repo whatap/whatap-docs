@@ -6,7 +6,8 @@ const path = require('path');
 
 const urls = {
     ko: [
-        'https://docs.whatap.io/release-notes/service/service-2_8_x',
+        'https://whatap.github.io/whatap-docs/release-notes/service/service-2_9_x',
+    //     'https://docs.whatap.io/release-notes/service/service-2_8_x',
     //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
     ],
     // en: [
