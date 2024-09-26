@@ -470,7 +470,7 @@ function _createMdxContent(props) {
           })
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
-        product: "altibase,tiberoㄴ",
+        product: "altibase,tibero",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
           id: "TTL08164",
           children: "세그먼트 사이즈 확인하기"

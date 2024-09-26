@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49253],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45513],{
 
 /***/ 5888:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -470,7 +470,7 @@ function _createMdxContent(props) {
           })
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
-        product: "altibase,tiberoㄴ",
+        product: "altibase,tibero",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
           id: "TTL08164",
           children: "세그먼트 사이즈 확인하기"
@@ -558,7 +558,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 74533:
+/***/ 60989:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -580,7 +580,7 @@ const frontMatter = {
 	title: '테이블스페이스 사이즈',
 	description: '각 테이블 스페이스별 최대 용량과 사용량을 시간의 흐름에 따라 조회할 수 있습니다.',
 	keywords: [
-		'Oracle Pro',
+		'Oracle',
 		'데이터베이스',
 		'통계'
 	],
@@ -588,16 +588,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/table-space-size",
+  "id": "oracle-v1/table-space-size",
   "title": "테이블스페이스 사이즈",
   "description": "각 테이블 스페이스별 최대 용량과 사용량을 시간의 흐름에 따라 조회할 수 있습니다.",
-  "source": "@site/docs/oracle-pro/table-space-size.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/table-space-size",
-  "permalink": "/whatap-docs/oracle-pro/table-space-size",
+  "source": "@site/docs/oracle-v1/table-space-size.mdx",
+  "sourceDirName": "oracle-v1",
+  "slug": "/oracle-v1/table-space-size",
+  "permalink": "/whatap-docs/oracle-v1/table-space-size",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/table-space-size.mdx",
+  "editUrl": "undefined/docs/oracle-v1/table-space-size.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -605,27 +605,27 @@ const metadata = {
     "title": "테이블스페이스 사이즈",
     "description": "각 테이블 스페이스별 최대 용량과 사용량을 시간의 흐름에 따라 조회할 수 있습니다.",
     "keywords": [
-      "Oracle Pro",
+      "Oracle",
       "데이터베이스",
       "통계"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
     "title": "SQL 통계",
-    "permalink": "/whatap-docs/oracle-pro/stat"
+    "permalink": "/whatap-docs/oracle-v1/stat"
   },
   "next": {
     "title": "SGA 사이즈",
-    "permalink": "/whatap-docs/oracle-pro/sga-size"
+    "permalink": "/whatap-docs/oracle-v1/sga-size"
   }
 };
 const assets = {
 
 };
 
-/*테이블 스페이스 사이즈 Oracle Pro, tibero*/
+/*테이블 스페이스 사이즈 oracle, tibero*/
 
 
 
