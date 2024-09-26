@@ -6,7 +6,7 @@
     "link": "/blog/",
     "items": [
       { "link": "/blog/index" },
-      { "link": "/blog/overview"  }
+      { "link": "/blog/overview", "className": "news" }
     ]
   },
   {
