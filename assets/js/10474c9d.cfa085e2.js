@@ -1019,7 +1019,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-node-map-custom-err-col-0e8249ab3ef5b58440e62544cdf6997a.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/k8s-node-map-custom-err-col-064354c25ced8d204363d3500f0786a9.png");
 
 /***/ }),
 
