@@ -77,6 +77,115 @@ const assets = {
 
 };
 
+/*
+
+:::note
+
+**모니터링 가능한 프로세스 목록**
+
+- **kubelet**
+
+노드에서 컨테이너의 상태를 모니터링하고, 컨테이너가 올바르게 동작하는지 확인하며, Kubernetes 마스터와 통신하여 워크로드가 적절히 배포되도록 합니다.
+
+- **containerd-shim**
+
+`containerd`와 컨테이너 런타임 간의 인터페이스 역할을 수행하는 프로세스입니다. 이 프로세스는 컨테이너의 라이프사이클을 관리하고, 표준 입출력 및 로그를 처리합니다.
+
+- **containerd**
+
+컨테이너 런타임으로서, 컨테이너의 실행, 이미지 관리, 네트워킹 등을 처리합니다.
+
+- **dockerd**
+
+Docker 컨테이너의 생성을 관리하는 주요 프로세스입니다. 이 프로세스는 컨테이너 이미지의 빌드, 배포, 실행, 네트워크 및 데이터 관리를 포함합니다.
+
+- **crio**
+
+Kubernetes에서 사용되는 컨테이너 런타임으로, Kubernetes 환경 내에서 컨테이너를 관리합니다.
+
+- **coredns**
+
+Kubernetes 클러스터 내에서 DNS 서버 역할을 하며, 서비스에 대한 네임 리졸루션을 제공합니다. `coredns`는 클러스터 내부의 서비스 간 통신을 DNS를 통해 해결하며, 서비스 디스커버리 및 로드 밸런싱 기능을 지원합니다.
+
+- **aws-k8s-agent**
+
+AWS에서 Kubernetes 네트워크 인터페이스(VPC CNI)를 관리하는 프로세스입니다. 이 프로세스는 포드 간 통신을 위해 AWS 네트워크 자원(ENI)을 할당하고 해제하는 역할을 합니다. 문제가 발생하면 네트워크 연결 장애나 리소스 할당 오류가 발생할 수 있습니다.
+
+- **kube-proxy**
+
+Kubernetes 클러스터 내에서 네트워크 트래픽을 라우팅하는 역할을 수행하는 프로세스입니다. 이 프로세스는 각 노드에서 실행되며, 서비스와 포드 간의 통신을 가능하게 하고, iptables 또는 IPVS와 같은 리눅스 네트워킹 기술을 사용하여 클러스터 내부의 요청을 올바른 포드로 전달합니다. 이를 통해 Kubernetes 클러스터 내의 서비스 디스커버리 및 로드 밸런싱을 지원합니다.
+
+:::
+
+*/
+/*이 프로세스는 포드 간의 네트워크 트래픽을 처리하기 위해 Elastic Network Interface(ENI)를 동적으로 할당 및 해제하는 작업을 수행합니다. 네트워크 연결 장애 시 관련된 문제를 디버깅하는 데 중요한 역할을 합니다.*/
+/*
+
+
+:::note[]
+
+**모니터링 가능한 프로세스 목록**
+
+- **kubelet**
+
+각 노드에서 실행되는 컨트롤러로, 컨테이너의 상태를 지속적으로 모니터링하며 Kubernetes 마스터와 통신하여 워크로드가 올바르게 스케줄링되고 실행되도록 합니다. 컨테이너 상태 체크 및 노드 자원 관리를 담당합니다.
+
+- **containerd-shim**
+
+`containerd`와 컨테이너 런타임 사이에서 중간 인터페이스 역할을 하는 프로세스입니다. 이 프로세스는 각 컨테이너의 라이프사이클을 관리하며, 컨테이너의 표준 입출력 처리 및 로그 수집을 담당합니다.
+
+- **containerd**
+
+컨테이너 실행을 위한 고성능 컨테이너 런타임입니다. 이미지 관리, 컨테이너 생성 및 실행, 네트워킹 등을 처리합니다.
+
+- **dockerd**
+
+Docker 데몬으로, 컨테이너 이미지 빌드, 배포 및 실행을 총괄하는 핵심 프로세스입니다. 컨테이너 간 네트워크 관리 및 데이터 볼륨 관리를 포함한 다양한 기능을 제공합니다.
+
+- **crio**
+
+Kubernetes를 위해 설계된 경량화된 컨테이너 런타임으로, CRI(Container Runtime Interface)를 구현하여 컨테이너 워크로드를 효율적으로 관리합니다.
+
+- **coredns**
+
+Kubernetes 클러스터 내부에서 DNS 서비스를 제공하는 프로세스로, 클러스터 내 서비스에 대한 네임 리졸루션을 처리합니다. 또한, 서비스 디스커버리 및 로드 밸런싱 기능을 수행하며, 클러스터 내 서비스 간 통신을 원활하게 지원합니다.
+
+- **aws-k8s-agent**
+
+AWS 환경에서 Kubernetes 네트워크 인터페이스(VPC CNI)를 관리하는 에이전트입니다. 이 프로세스는 포드 간의 네트워크 트래픽을 처리하기 위해 Elastic Network Interface(ENI)를 동적으로 할당 및 해제하는 작업을 수행합니다. 네트워크 연결 장애 시 관련된 문제를 디버깅하는 데 중요한 역할을 합니다.
+
+- **kube-proxy**
+
+클러스터 내에서 포드 간 네트워크 트래픽을 라우팅하고, 서비스와 포드 간의 통신을 중계하는 프로세스입니다. 리눅스의 `iptables` 또는 IPVS를 사용하여 클러스터 내의 네트워크 요청을 올바른 포드로 전달하며, 서비스 디스커버리와 로드 밸런싱을 지원합니다.
+
+:::
+
+
+- **kubelet:**
+Kubernetes 마스터와 통신하며, 노드에서 컨테이너의 상태를 관리하고, 올바르게 배포 및 실행되도록 지원합니다.
+
+- **containerd-shim:**
+containerd와 컨테이너 런타임 간의 인터페이스로, 컨테이너의 라이프사이클 및 로그를 처리합니다.
+
+- **containerd:**
+컨테이너 실행, 이미지 관리, 네트워킹 등을 담당하는 컨테이너 런타임입니다.
+
+- **dockerd:**
+Docker 컨테이너 관리의 핵심 프로세스로, 컨테이너 이미지 빌드, 실행, 배포, 네트워크 및 데이터 관리 등을 수행합니다.
+
+- **crio:**
+Kubernetes 환경에서 컨테이너를 관리하는 컨테이너 런타임입니다.
+
+- **coredns:**
+Kubernetes 클러스터 내에서 DNS 서비스를 제공하여, 네임 리졸루션 및 서비스 디스커버리, 로드 밸런싱을 지원합니다.
+
+- **aws-k8s-agent:**
+AWS 환경에서 Kubernetes VPC CNI를 관리하며, 포드 간 통신을 위한 AWS 네트워크 자원의 할당 및 해제를 수행합니다.
+
+- **kube-proxy:**
+클러스터 내 네트워크 트래픽을 라우팅하며, 서비스 디스커버리 및 로드 밸런싱을 iptables 또는 IPVS를 통해 지원합니다.
+
+*/
 /*>
 :::note[]
 
@@ -342,6 +451,115 @@ function _createMdxContent(props) {
             children: ["로그 시스템 출력을 설정합니다. 옵션 값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "true"
             }), "로 설정 시 표준 출력(stdOut)과 파일에 동시에 로깅을 남깁니다. 변경 시 로깅 시스템에 즉시 반영됩니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "collect_kube_node_process_metric_enabled"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "bool"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["노드에서 Kubernetes 관련 프로세스 모니터링을 활성화하거나 비활성화하는 플래그입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            }), "로 설정하면 모니터링이 활성화되고, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            }), "로 설정하면 모니터링이 비활성화됩니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "collect_kube_node_process_metric_target_list"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "list"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "\"kubelet,containerd-shim,containerd,docker,dockerd,crio,metrics-server, coredns,aws-k8s-agent,kube-proxy\""
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "기본적으로 Kubernetes 관련 프로세스를 모니터링합니다. 사용자가 특정 프로세스 리스트를 수정하여 임의로 모니터링할 프로세스를 설정할 수 있습니다."
+          }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "note",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "모니터링 가능한 프로세스 목록"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kubelet"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "각 노드에서 실행되는 컨트롤러로, 컨테이너의 상태를 지속적으로 모니터링하며 Kubernetes 마스터와 통신하여 워크로드가 올바르게 스케줄링되고 실행되도록 합니다. 컨테이너 상태 체크 및 노드 자원 관리를 담당합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "containerd-shim"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "containerd"
+                  }), "와 컨테이너 런타임 사이에서 중간 인터페이스 역할을 하는 프로세스입니다. 이 프로세스는 각 컨테이너의 라이프사이클을 관리하며, 컨테이너의 표준 입출력 처리 및 로그 수집을 담당합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "containerd"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "컨테이너 실행을 위한 고성능 컨테이너 런타임입니다. 이미지 관리, 컨테이너 생성 및 실행, 네트워킹 등을 처리합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "dockerd"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "Docker 컨테이너의 생성을 관리하는 주요 프로세스입니다. 이 프로세스는 컨테이너 이미지의 빌드, 배포, 실행, 네트워크 및 데이터 관리를 포함합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "crio"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "Kubernetes를 위해 설계된 경량화된 컨테이너 런타임으로, CRI(Container Runtime Interface)를 구현하여 컨테이너 워크로드를 효율적으로 관리합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "coredns"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "Kubernetes 클러스터 내부에서 DNS 서비스를 제공하는 프로세스로, 클러스터 내 서비스에 대한 네임 리졸루션을 처리합니다. 또한 서비스 디스커버리 및 로드 밸런싱 기능을 수행하며, 클러스터 내 서비스 간 통신을 원활하게 지원합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "aws-k8s-agent"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "AWS 환경에서 Kubernetes 네트워크 인터페이스(VPC CNI)를 관리하는 에이전트입니다. 이 프로세스는 포드 간 통신을 위해 AWS 네트워크 자원(ENI)을 할당하고 해제하는 역할을 합니다. 문제가 발생하면 네트워크 연결 장애나 리소스 할당 오류가 발생할 수 있습니다."
+                }), "\n", "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kube-proxy"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "Kubernetes 클러스터 내에서 네트워크 트래픽을 라우팅하는 프로세스입니다. 이 프로세스는 각 노드에서 실행되며, 서비스와 포드 간의 통신을 가능하게 합니다. 또한 iptables 혹은 IPVS와 같은 리눅스 네트워킹 기술을 사용하여 클러스터 내부의 요청을 올바른 포드로 전달합니다. 이를 통해 Kubernetes 클러스터 내의 서비스 디스커버리 및 로드 밸런싱을 지원합니다."
+                }), "\n"]
+              }), "\n"]
+            })]
           }), "\n"]
         }), "\n"]
       })]

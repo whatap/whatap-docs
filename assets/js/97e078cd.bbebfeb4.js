@@ -115,13 +115,34 @@ const toc = [{
   "value": "Fields",
   "id": "kube_hpa_stat-fields",
   "level": 4
+}, {
+  "value": "프로세스(<code>kube_process</code>) 지표",
+  "id": "프로세스kube_process-지표",
+  "level": 3
+}, {
+  "value": "Tags",
+  "id": "kube_process_stat-tags",
+  "level": 4
+}, {
+  "value": "Fields",
+  "id": "kube_process_stat-fields",
+  "level": 4
+}, {
+  "value": "Kubernetes 환경에서의 리눅스 프로세스 상태",
+  "id": "kubernetes-환경에서의-리눅스-프로세스-상태",
+  "level": 5
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
+    admonition: "admonition",
     code: "code",
+    em: "em",
     h3: "h3",
     h4: "h4",
+    h5: "h5",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     section: "section",
     table: "table",
@@ -3178,6 +3199,387 @@ function _createMdxContent(props) {
               children: "-"
             })]
           })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsxs)(_components.h3, {
+        id: "프로세스kube_process-지표",
+        children: ["프로세스(", (0,jsx_runtime.jsx)(_components.code, {
+          children: "kube_process"
+        }), ") 지표"]
+      }), (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["쿠버네티스 에이전트 1.7.12 버전 이상이 필요합니다. 에이전트 업데이트에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "agent-update",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "노드에 존재하는 쿠버네티스 관련 프로세스를 모니터링할 때 수집됩니다."
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "대상: 클러스터 프로젝트, 네임스페이스 프로젝트"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "수집 간격: 5초"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "통계 데이터: 5분"
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,jsx_runtime.jsx)(_components.h4, {
+        id: "kube_process_stat-tags",
+        children: "Tags"
+      }), (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "태그명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "타입"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "비고"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "ppid"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "부모 프로세스 ID"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::PPid"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "pid"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스 ID"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::Pid"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "cmd1"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "명령어 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::Name"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "cmd2"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "명령어 라인 (전체 명령어와 인자)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/cmdline"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "uid"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "사용자 ID 또는 사용자 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::Uid"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "onodeName"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스의 노드 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsxs)(_components.td, {
+              children: ["컨테이너 시스템 환경변수 (", (0,jsx_runtime.jsx)(_components.code, {
+                children: "NODE_IP"
+              }), ")"]
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,jsx_runtime.jsx)(_components.h4, {
+        id: "kube_process_stat-fields",
+        children: "Fields"
+      }), (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "필드명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "단위"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "타입"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "비고"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "cpu"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "CPU 사용률"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "퍼센트 (%)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "float"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/stat 을 통해 계산된 필드"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "memory"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "메모리 사용률"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "퍼센트 (%)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "float"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/statm 을 통해 계산된 필드"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "rss"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "실제 메모리 사용량 (Resident Set Size)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "바이트 (B)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "long"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::VmRSS"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "uid"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "사용자 ID 또는 사용자 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "없음"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::Uid"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "state"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스 상태"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "없음"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status::State"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "createTime"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스 시작 시간"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "타임스탬프"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "long"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/uptim 을 통해 계산된 필드"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "SharedMemory"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "공유 메모리 크기"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "바이트 (B)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "long"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/statm 을 통해 계산된 필드"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "openFileDescriptors"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스가 열어둔 파일 디스크립터 수"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "없음"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "int"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/fd를 통해 계산된 필드"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "vmSize"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "가상 메모리 크기 (Virtual Memory Size)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "바이트 (B)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "long"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status의 VmSize"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "threads"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스가 생성한 스레드 수"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "없음"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "int"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/[pid]/status의 Threads"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h5",
+      children: [(0,jsx_runtime.jsx)(_components.h5, {
+        id: "kubernetes-환경에서의-리눅스-프로세스-상태",
+        children: "Kubernetes 환경에서의 리눅스 프로세스 상태"
+      }), (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["리눅스에서 ", (0,jsx_runtime.jsx)(_components.em, {
+          children: "/proc/[pid]/status"
+        }), " 파일의 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "State"
+        }), " 필드가 프로세스의 현재 상태를 표시합니다. 각 상태 값의 의미는 다음과 같습니다."]
+      }), (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "코드"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "상세 설명"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "R (Running)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "실행 중"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스가 실행 중이거나 실행될 준비가 되어 있는 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "S (Sleeping)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "대기 중"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "인터럽트 가능한 수면 상태로, 대기 중이며 이벤트를 기다리고 있는 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "D (Disk Sleep)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "디스크 수면"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "인터럽트 불가능한 수면 상태로, 일반적으로 I/O 작업을 기다리는 중인 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "R (Zombie)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "좀비 상태"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스가 종료되었으나 아직 부모 프로세스가 종료 상태를 수집하지 않은 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "T (Stopped)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "중지"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스가 작업 제어 신호에 의해 중지된 상태 (SIGSTOP 등) 또는 디버거에 의해 중지된 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "t (Tracing stop)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "추적 중지"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "디버거에 의해 추적 중인 상태 (소문자 t로 표시됨)"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "X (Dead)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "죽은 상태"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스가 죽은 상태 (일반적으로 보지 않음)"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "x (Dead)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "죽은 상태"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "커널 쓰레드의 죽은 상태 (일반적으로 보지 않음)"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "K (WakeKill)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "강제 종료"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "깨우기 신호를 무시하고 즉시 죽은 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "W (Waking)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "깨우기 중"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "깨우기 신호를 받아 깨워지는 중인 상태"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "I (Idle)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "유휴 상태"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "커널 스레드가 유휴 상태 (일반적으로 유저 공간 프로세스에는 보이지 않음)"
+            })]
+          })]
+        })]
+      }), (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["Kubernetes는 컨테이너와 노드의 리소스를 효율적으로 관리하기 때문에, 컨테이너 내부에서 실행되는 다수의 프로세스가 실제로 대기 상태를 유지합니다. 이에 따라 대부분의 프로세스는 ", (0,jsx_runtime.jsx)(_components.code, {
+            children: "Sleeping"
+          }), " 상태일 수 있습니다."]
         })]
       })]
     })]

@@ -84,6 +84,10 @@ const toc = [{
   "id": "oracle-v2-oracle-pro",
   "level": 4
 }, {
+  "value": "PostgreSQL, MySQL",
+  "id": "postgresql-mysql",
+  "level": 4
+}, {
   "value": "<code>Log</code>",
   "id": "log",
   "level": 3
@@ -356,32 +360,6 @@ function _createMdxContent(props) {
                 children: ":"
               }), ")이 여러 개 포함된 경우, 이를 바인드 변수로 인식하는 문제 수정"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                priority: "0",
-                children: "Fixed"
-              }), " 대시보드의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "active_sessions",
-                className: "uitext"
-              }), " 테이블에서 쿼리를 선택해 Plan 조회 시 Object Detail 창에서 테이블 데이터가 없을 때 컬럼 이름만 표시하도록 수정"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-              type: "note",
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: ["이 수정 사항은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "Oracle"
-                }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                  className: "my",
-                  children: "V2"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "Oracle Pro"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "PostgreSQL"
-                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "MySQL"
-                }), " 상품에 해당합니다."]
-              })
-            }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
           id: "oracle-v2-oracle-pro",
@@ -420,6 +398,17 @@ function _createMdxContent(props) {
               }), "의 평균 데이터가 합산되어 계산되는 문제 수정"]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "postgresql-mysql",
+          children: "PostgreSQL, MySQL"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " 대시보드의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "active_sessions",
+            className: "uitext"
+          }), " 테이블에서 쿼리를 선택해 Plan 조회 시 Object Detail 창에서 테이블 데이터가 없을 때 컬럼 이름만 표시하도록 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "log",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
