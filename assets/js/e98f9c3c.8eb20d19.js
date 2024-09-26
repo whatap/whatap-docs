@@ -391,7 +391,7 @@ function _createMdxContent(props) {
                   children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                       className: "language-bash",
-                      children: "if (-not (Select-String -Path \"C:Program FilesWhatapInfrawhatap.conf\" -Pattern \"^hostinfov2.enabled\" -Quiet)) { Add-Content -Path \"C:Program FilesWhatapInfrawhatap.conf\" -Value \"hostinfov2.enabled=true\" }\n"
+                      children: "if (-not (Select-String -Path \"C:\\Program Files\\WhatapInfra\\whatap.conf\" -Pattern \"^hostinfov2.enabled\" -Quiet)) { Add-Content -Path \"C:\\Program Files\\WhatapInfra\\whatap.conf\" -Value \"hostinfov2.enabled=true\" }\n"
                     })
                   })
                 }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {

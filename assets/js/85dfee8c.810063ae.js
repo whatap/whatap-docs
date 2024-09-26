@@ -132,7 +132,7 @@ function _createMdxContent(props) {
         id: "v124",
         children: "v1.2.4"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2023년 03월 02이"
+        children: "2023년 03월 02일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
           children: "Fixed"
