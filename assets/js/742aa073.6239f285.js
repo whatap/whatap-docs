@@ -68,6 +68,10 @@ const toc = [{
   "id": "server",
   "level": 3
 }, {
+  "value": "<code>Network</code>",
+  "id": "network",
+  "level": 3
+}, {
   "value": "Preview 2.10.0.a1",
   "id": "preview-2100a1",
   "level": 2
@@ -178,6 +182,19 @@ function _createMdxContent(props) {
           }), "에서 Windows 옵션 추가 명령어에 누락된 역슬래시(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "\\"
           }), ") 문자 추가"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "network",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Network"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " 사이드 메뉴가 축소 모드일 때 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_lab",
+            className: "uitext"
+          }), " 메뉴의 아이콘이 정상 표시되지 않는 문제 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
