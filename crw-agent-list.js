@@ -8,10 +8,9 @@ const cheerio = require('cheerio');
 
 // URL 배열 정의
 const urls = [
-    'https://docs.whatap.io/release-notes/java/java-2_2_38',
-    'https://docs.whatap.io/release-notes/java/java-2_2_37',
-    'https://docs.whatap.io/release-notes/java/java-2_2_36',
-    'https://docs.whatap.io/release-notes/java/java-2_2_35',
+    'https://docs.whatap.io/release-notes/php/php-2_8_0',
+    'https://docs.whatap.io/release-notes/php/php-2_8_1',
+    'https://docs.whatap.io/release-notes/php/php-2_8_2',
 ];
 
 // 순차적으로 각 URL을 처리하는 함수
