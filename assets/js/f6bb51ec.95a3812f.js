@@ -408,14 +408,21 @@ const assets = {
 
 
 const toc = [..._common_items_db_check_firewall_setting_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_how_to_check_firewal_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
+  "value": "SSL 인증 관련 문제",
+  "id": "ssl-인증-관련-문제",
+  "level": 2
+}, {
   "value": "제약 사항",
   "id": "제약-사항",
   "level": 2
 }, ..._common_items_db_multi_region_cant_select_one_pr_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_cant_use_duplicated_name_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    code: "code",
+    em: "em",
     h2: "h2",
     p: "p",
+    pre: "pre",
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -424,6 +431,29 @@ function _createMdxContent(props) {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "데이터베이스 에이전트 설치 시 발생할 수 있는 문제를 확인해 보세요."
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_check_firewall_setting_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_how_to_check_firewal_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "ssl-인증-관련-문제",
+        children: "SSL 인증 관련 문제"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "에이전트에서 데이터베이스에 접속할 때 SSL 보안 관련해 다음과 문제가 발생하면, JDBC로 접속할 때 SSL 인증을 사용하지 않도록 옵션을 설정해야 합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-txt",
+          children: "com.microsoft.sqlserver.jdbc.SQLServerException: The driver could not establish a secure connection to SQL Server by using Secure Sockets Layer (SSL) encryption.\n\ncom.microsoft.sqlserver.jdbc.SQLServerException: \"enctyp1\" property is set to \"true\" and \"trustServerCertificate\" property is set to \"false\" but the driver could not establish a secure connection to SQL Server by ising Secure Sockets Layer (SSL) encryption\n"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["에이전트 설정 파일(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "whatap.conf"
+        }), ")에 SSL 인증을 사용하지 않도록 다음 옵션을 설정하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title=\"whatap.conf\"",
+          children: "connect_option=encrypt=true;trustServerCertificate=true\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "제약-사항",
