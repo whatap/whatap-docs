@@ -8,11 +8,11 @@ const cheerio = require('cheerio');
 
 // URL 배열 정의
 const urls = [
-    // 'https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_8',
-    // 'https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_9',
-    // 'https://docs.whatap.io/release-notes/dotnet/dotnet-2_3_1',
-    'https://docs.whatap.io/release-notes/golang/golang-0_4_0',
-    'https://docs.whatap.io/release-notes/golang/golang-0_4_1',
+    'https://docs.whatap.io/release-notes/server/server-2_6_0',
+    'https://docs.whatap.io/release-notes/server/server-2_6_2',
+    'https://docs.whatap.io/release-notes/server/server-2_6_3',
+    'https://docs.whatap.io/release-notes/server/server-2_6_7',
+    'https://docs.whatap.io/release-notes/server/server-2_6_8',
 ];
 
 // 순차적으로 각 URL을 처리하는 함수
