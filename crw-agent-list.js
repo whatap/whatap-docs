@@ -8,11 +8,14 @@ const cheerio = require('cheerio');
 
 // URL 배열 정의
 const urls = [
-    // 'https://docs.whatap.io/release-notes/server/server-2_6_0',
-    // 'https://docs.whatap.io/release-notes/server/server-2_6_2',
-    // 'https://docs.whatap.io/release-notes/server/server-2_6_3',
-    'https://docs.whatap.io/release-notes/server-hpux/server-hpux-1_3_4',
-    'https://docs.whatap.io/release-notes/server-solaris/server-solaris-1_3_4',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_2',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_5',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_6',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_7',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_8',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_9',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_10',
+    'https://docs.whatap.io/release-notes/k8s/k8s-1_7_11',
 ];
 
 // 순차적으로 각 URL을 처리하는 함수
