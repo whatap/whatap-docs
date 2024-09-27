@@ -8,10 +8,10 @@ const cheerio = require('cheerio');
 
 // URL 배열 정의
 const urls = [
-    'https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_97',
-    'https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_98',
-    'https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_0',
-    'https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_1',
+    // 'https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_97',
+    'https://docs.whatap.io/release-notes/python/python-1_6_8',
+    'https://docs.whatap.io/release-notes/python/python-1_6_9',
+    'https://docs.whatap.io/release-notes/python/python-1_6_10',
 ];
 
 // 순차적으로 각 URL을 처리하는 함수
