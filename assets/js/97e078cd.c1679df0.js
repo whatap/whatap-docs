@@ -117,7 +117,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "프로세스(<code>kube_process</code>) 지표",
-  "id": "프로세스kube_process-지표",
+  "id": "kube_process",
   "level": 3
 }, {
   "value": "Tags",
@@ -3204,7 +3204,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,jsx_runtime.jsxs)(_components.h3, {
-        id: "프로세스kube_process-지표",
+        id: "kube_process",
         children: ["프로세스(", (0,jsx_runtime.jsx)(_components.code, {
           children: "kube_process"
         }), ") 지표"]

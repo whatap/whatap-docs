@@ -24,8 +24,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.25d73b52.css">
-<script src="/whatap-docs/assets/js/runtime~main.8587b711.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.f92f65a5.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.559491f0.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.d0320eb0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -94,14 +94,14 @@
 <p>노드에서 Kubernetes 관련 프로세스 모니터링을 활성화하거나 비활성화하는 플래그입니다. <code>true</code>로 설정하면 모니터링이 활성화되고, <code>false</code>로 설정하면 모니터링이 비활성화됩니다.</p>
 </li>
 <li>
-<p><strong>collect_kube_node_process_metric_target_list</strong> <span class="type">list</span></p>
+<p><strong>collect_kube_node_process_metric_target_list</strong> <span class="type">list</span> <a href="/whatap-docs/kubernetes/set-agent#collect_kube_node_process_metric_target_list" class="hash-link"><span id="collect_kube_node_process_metric_target_list">​</span></a></p>
 <p>기본값 <code>&quot;kubelet,containerd-shim,containerd,docker,dockerd,crio,metrics-server, coredns,aws-k8s-agent,kube-proxy&quot;</code></p>
 <p>기본적으로 Kubernetes 관련 프로세스를 모니터링합니다. 사용자가 특정 프로세스 리스트를 수정하여 임의로 모니터링할 프로세스를 설정할 수 있습니다.</p>
 <!-- -->
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><strong>모니터링 가능한 프로세스 목록</strong></p><ul>
 <li>
 <p><strong>kubelet</strong></p>
-<p>각 노드에서 실행되는 컨트롤러로, 컨테이너의 상태를 지속적으로 모니터링하며 Kubernetes 마스터와 통신하여 워크로드가 올바르게 스케줄링되고 실행되도록 합니다. 컨테이너 상태 체크 및 노드 자원 관리를 담당합니다.</p>
+<p>각 노드에서 실행되는 컨트롤러로, 컨테이너의 상태를 지속적으로 모니터링하며 Kubernetes 마스터와 통 신하여 워크로드가 올바르게 스케줄링되고 실행되도록 합니다. 컨테이너 상태 체크 및 노드 자원 관리를 담당합니다.</p>
 </li>
 <li>
 <p><strong>containerd-shim</strong></p>
@@ -163,12 +163,12 @@
 <li>
 <p><strong>tcp_connection_timeout</strong> <span class="type">number</span></p>
 <p>기본값 <code>3000</code></p>
-<p>whatap-master-agent와 수집 서버 소켓 연결 시 타임아웃 시간을 설정합니다.</p>
+<p>whatap-master-agent와 수집 서버 소켓 연결 시 타임아 웃 시간을 설정합니다.</p>
 </li>
 <li>
 <p><strong>tcp_so_timeout</strong> <span class="type">number</span></p>
 <p>기본값 <code>60000</code></p>
-<p>소켓 연결 후 데  이터 송수신 타임아웃 시간을 설정합니다.</p>
+<p>소켓 연결 후 데이터 송수신 타임아웃 시간을 설정합니다.</p>
 </li>
 <li>
 <p><strong>debug</strong> <span class="type">bool</span></p>
@@ -189,7 +189,7 @@
 <li>
 <p><strong>collect_interval</strong> <span class="type">number</span></p>
 <p>기본값 <code>5000</code></p>
-<p>에이전트가 apiserver에 요청해 메트릭스(<code>kube_pod</code>, <code>container</code>)를 수집하는 주기를 설정합니다.</p>
+<p>에이전  트가 apiserver에 요청해 메트릭스(<code>kube_pod</code>, <code>container</code>)를 수집하는 주기를 설정합니다.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>해당 옵션은 화면상 데이터 갱신 주기에 영향을 줄 수 있습니다. 자세한 내용은 다음 <a href="#k8s-affected-comp-by-metrics">메트릭스별 영향을 받는 화면 구성요소</a>를 참고하세요.</p></div></div>
 </li>
 <li>
@@ -229,8 +229,13 @@
 <p>기본값 <code>false</code></p>
 <p>whatap-control-plane-helper의 디버깅(로깅)의 활성화 여부를 설정합니다.</p>
 </li>
+<li>
+<p><strong>kube_client_tls_verify</strong> <span class="type">bool</span> <a href="/whatap-docs/kubernetes/set-agent#kube_client_tls_verify" class="hash-link"><span id="kube_client_tls_verify">​</span></a></p>
+<p>기본값 <code>true</code></p>
+<p>옵션값을 <code>false</code>로 설정하면 TLS 인증을 강제하지 않고, 인증 절차를 생략할 수 있습니다.</p>
+</li>
 </ul></section>
-<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="whatap-master-agent">whatap-master-agent<a href="#whatap-master-agent" class="hash-link" aria-label="whatap-master-agent에 대한 직접 링크" title="whatap-master-agent에 대한 직접 링크">​</a></h3><hr><ul>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="whatap-master-agent">whatap-master-agent<a href="#whatap-master-agent" class="hash-link" aria-label="whatap-master-agent에 대한 직접 링크" title="whatap-master-agent에 대한 직 접 링크">​</a></h3><hr><ul>
 <li>
 <p><strong>shutdown</strong> <span class="type">bool</span></p>
 <p>기본값 <code>false</code></p>
@@ -243,7 +248,7 @@
 <li>
 <p><strong>whatap.server.host</strong> <span class="type">string</span></p>
 <p>기본값 <code>13.124.11.223</code> 혹은 <code>13.209.172.35</code></p>
-<p>수 집 서버의 IP를 설정합니다. <code>delimiter</code>의 경우 <code>/:</code>을 사용합니다.</p>
+<p>수집 서버의 IP를 설정합니다. <code>delimiter</code>의 경우 <code>/:</code>을 사용합니다.</p>
 </li>
 <li>
 <p><strong>whatap.server.port</strong> <span class="type">number</span></p>
@@ -273,7 +278,7 @@
 <li>
 <p><strong>collect_control_plane_monitoring_enabled</strong> <span class="type">bool</span></p>
 <p>기본값 <code>false</code></p>
-<p>컨트롤 플레인 모니터링 기능의 활성화 여부를 설정합니다.</p>
+<p>컨트롤 플레인 모니터링 기능의  활성화 여부를 설정합니다.</p>
 </li>
 <li>
 <p><strong>master_to_control_plane_connection_timeout</strong> <span class="type">number</span></p>
@@ -283,7 +288,7 @@
 <li>
 <p><strong>master_to_control_plane_read_timeout</strong> <span class="type">number</span></p>
 <p>기본값 <code>20000</code></p>
-<p>whatap-master-agent가 whatap-control-plane-helper와 통신   시 read timeout이 발생할 때까지의 시간을 설정합니다. 기본값의 단위는 ms입니다.</p>
+<p>whatap-master-agent가 whatap-control-plane-helper와 통신 시 read timeout이 발생할 때까지의 시간을 설정합니다. 기본값의 단위는 ms입니다.</p>
 </li>
 <li>
 <p><strong>control_plane_debug</strong> <span class="type">bool</span></p>
@@ -312,7 +317,7 @@
 </blockquote>
 </li>
 </ul></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="k8s-affected-comp-by-metrics">메트릭스별 영향을 받는 화면 구성요소<a href="#k8s-affected-comp-by-metrics" class="hash-link" aria-label="메트릭스별 영향을 받는 화면 구성요소에 대한 직접 링크" title="  메트릭스별 영향을 받는 화면 구성요소에 대한 직접 링크">​</a></h2></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="k8s-affected-comp-by-metrics">메트릭스별 영향을 받는 화면 구성요소<a href="#k8s-affected-comp-by-metrics" class="hash-link" aria-label="메트릭스별 영향을 받는 화면 구성요소에 대한 직접 링크" title="메트릭스별 영향을 받는 화면 구성요소에 대한 직접 링크">​</a></h2></section>
 <section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="kube_pod"><code>kube_pod</code><a href="#kube_pod" class="hash-link" aria-label="kube_pod에 대한 직접 링크" title="kube_pod에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><em><strong>대시보드</strong></em> &gt; <em><strong>컨테이너 맵</strong></em></p>
@@ -332,7 +337,7 @@
 <section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="container"><code>container</code><a href="#container" class="hash-link" aria-label="container에 대한 직접 링크" title="container에 대한 직접 링크">​</a></h3><ul>
 <li>
 <p><em><strong>대시보드</strong></em> &gt; <em><strong>컨테이너 맵</strong></em></p>
-<p>다음 예시의 컨테이너 뷰 기준 화면 데이터 갱신 주기는 <code>container</code> 메트릭스의 영향을   받습니다.</p>
+<p>다음 예시의 컨테이너 뷰 기준 화면 데이터 갱신 주기는 <code>container</code> 메트릭스의 영향을 받습니다.</p>
 <p><img loading="lazy" src="/whatap-docs/img/k8s-set-agent-container-container-map.png" alt="컨테이너 맵 컨테이너 뷰" width="1200" height="770"></p>
 </li>
 <li>
