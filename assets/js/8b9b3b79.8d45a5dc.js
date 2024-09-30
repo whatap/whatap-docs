@@ -677,8 +677,8 @@ const toc = [..._common_items_agent_signup_guide_mdx__WEBPACK_IMPORTED_MODULE_2_
   "id": "활용하기",
   "level": 2
 }, {
-  "value": "환경 별로 whatap.conf 파일을 구분해 사용하기",
-  "id": "환경-별로-whatapconf-파일을-구분해-사용하기",
+  "value": "환경별 에이전트 옵션 설정하기",
+  "id": "환경별-에이전트-옵션-설정하기",
   "level": 3
 }, {
   "value": "에이전트 그룹 단위 기능 활용하기",
@@ -887,11 +887,10 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
           value: "ecmascript",
           label: "ECMAScript Module(ESM)",
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "ECMAScript(ES)를 활용한다면 다음 코드를 같이 추가하세요."
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-javascript",
+              metastring: "title=\"ECMAScript Module(ESM)\"",
               children: "var WhatapAgent = require('whatap').NodeAgent;\nimport http from 'http';\nimport setupApp from '../src/app';\nlet server = null;\nconst port = normalizePort(process.env.PORT || '3000');\n"
             })
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
@@ -907,8 +906,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "환경-별로-whatapconf-파일을-구분해-사용하기",
-        children: "환경 별로 whatap.conf 파일을 구분해 사용하기"
+        id: "환경별-에이전트-옵션-설정하기",
+        children: "환경별 에이전트 옵션 설정하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["애플리케이션의 각 환경에 맞춘 설정을 적용해야 할 때는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: "whatap.conf"
@@ -926,7 +925,7 @@ function _createMdxContent(props) {
             }), ":"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["동일한 애플리케이션이라도 개발(dev), 테스트(test), 운영(prod) 등 각 환경에 맞는 설정이 필요합니다. 위 예시와 같이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "whatapdev"
+              children: "WHATAP_CONF"
             }), " 환경 변수를 사용하여 개발 환경에 맞는 설정을 적용할 수 있습니다. 이를 통해 각 환경별로 다른 설정을 쉽게 관리할 수 있습니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
