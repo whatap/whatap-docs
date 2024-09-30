@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48867],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12549],{
 
-/***/ 20046:
+/***/ 71727:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -28,35 +28,133 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    em: "em",
     h2: "h2",
     li: "li",
     p: "p",
     section: "section",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  };
+  }, {Cmdname, InDoc, Xclude} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h2",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
       id: "다음-단계",
       children: "다음 단계"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["애플리케이션을 실행해 모니터링을 위한 준비가 되었다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "install-check",
-            children: "다음 문서"
-          }), "를 참조해 점검 사항을 확인하세요."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["에이전트를 통해 APM의 다양한 데이터를 수집하도록 구성할 수 있습니다. 에이전트 설정에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "set-agent",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        }), "\n"]
-      }), "\n"]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      product: "nodejs",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "nextstep",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "설치 점검하기"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["프로젝트 생성 및 에이전트 설치까지 모두 적용했다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "install-check",
+                children: "다음 문서"
+              }), "에서 점검 사항을 확인하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "설치 문제 해결"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["에이전트 설치 시 발생할 수 있는 다양한 문제들과 이를 해결하기 위한 구체적인 지침을 제공합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "agent-troubleshooting",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "에이전트 설정"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["에이전트 설정(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.conf"
+              }), ") 파일에 옵션을 적용해 모니터링을 위한 다양한 기능을 제공합니다. 기본 설정부터 서버 연결 및 데이터 전송 설정, 여러 애플리케이션 서버의 설정 파일 관리 방법, 트랜잭션 추적 등을 포함합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "set-agent",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "모니터링 시작하기"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모든 설정을 완료한 다음 애플리케이션 서버를 다시 시작하세요. 에이전트가 정보를 수집하기 시작합니다. 먼저 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_appDashboard",
+                className: "uitext"
+              }), " 메뉴에서 모니터링 데이터가 수집되는지 확인하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_appDashboard",
+                className: "uitext"
+              }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "dashboard",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      product: "nodejs",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        className: "nextstep",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "설치 점검하기"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["프로젝트 생성 및 에이전트 설치까지 모두 적용했다면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "install-check",
+                children: "다음 문서"
+              }), "에서 점검 사항을 확인하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "에이전트 설정"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["에이전트 설정(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: "whatap.conf"
+              }), ") 파일에 옵션을 적용해 모니터링을 위한 다양한 기능을 제공합니다. 기본 설정부터 서버 연결 및 데이터 전송 설정, 여러 애플리케이션 서버의 설정 파일 관리 방법, 트랜잭션 추적 등을 포함합니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "set-agent",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "모니터링 시작하기"
+              })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모든 설정을 완료한 다음 애플리케이션 서버를 다시 시작하세요. 에이전트가 정보를 수집하기 시작합니다. 먼저 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_appDashboard",
+                className: "uitext"
+              }), " 메뉴에서 모니터링 데이터가 수집되는지 확인하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_appDashboard",
+                className: "uitext"
+              }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                href: "dashboard",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })
     })]
   });
 }
@@ -72,12 +170,15 @@ function MDXContent(props = {}) {
     })
   }) : _createMdxContent(props);
 }
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
 
 
 
 /***/ }),
 
-/***/ 58643:
+/***/ 87587:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -91,53 +192,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_apm_install_next_step_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20046);
+/* harmony import */ var _common_items_apm_next_stemp_exclude_java_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(71727);
 
 
 const frontMatter = {
-	id: 'install-agent-nextjs',
-	title: 'Next.js 환경 설치',
-	description: 'Next.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.',
+	id: 'install-agent-nuxtjs',
+	title: 'Nuxt.js 환경 설치',
+	description: 'Nuxt.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.',
 	keywords: [
 		'Node.js',
-		'Next.js',
+		'Nuxt.js',
 		'에이전트'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/install-agent-nextjs",
-  "title": "Next.js 환경 설치",
-  "description": "Next.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
-  "source": "@site/docs/nodejs/install-agent-nextjs.mdx",
+  "id": "nodejs/install-agent-nuxtjs",
+  "title": "Nuxt.js 환경 설치",
+  "description": "Nuxt.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
+  "source": "@site/docs/nodejs/install-agent-nuxtjs.mdx",
   "sourceDirName": "nodejs",
-  "slug": "/nodejs/install-agent-nextjs",
-  "permalink": "/whatap-docs/nodejs/install-agent-nextjs",
+  "slug": "/nodejs/install-agent-nuxtjs",
+  "permalink": "/whatap-docs/nodejs/install-agent-nuxtjs",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/install-agent-nextjs.mdx",
+  "editUrl": "undefined/docs/nodejs/install-agent-nuxtjs.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "install-agent-nextjs",
-    "title": "Next.js 환경 설치",
-    "description": "Next.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
+    "id": "install-agent-nuxtjs",
+    "title": "Nuxt.js 환경 설치",
+    "description": "Nuxt.js와 같은 서버 사이드 렌더링(SSR) 프레임워크에서 Node.js 애플리케이션 모니터링을 위해 Custom Server 설정을 안내합니다.",
     "keywords": [
       "Node.js",
-      "Next.js",
+      "Nuxt.js",
       "에이전트"
     ],
     "isTranslationMissing": false
   },
   "sidebar": "nodejsSidebar",
   "previous": {
-    "title": "Docker 환경 설치",
-    "permalink": "/whatap-docs/nodejs/install-agent-docker"
+    "title": "Next.js 환경 설치",
+    "permalink": "/whatap-docs/nodejs/install-agent-nextjs"
   },
   "next": {
-    "title": "Nuxt.js 환경 설치",
-    "permalink": "/whatap-docs/nodejs/install-agent-nuxtjs"
+    "title": "Svelte 환경 설치",
+    "permalink": "/whatap-docs/nodejs/install-agent-svelte"
   }
 };
 const assets = {
@@ -157,24 +258,24 @@ const toc = [{
   "id": "agentfiles",
   "level": 2
 }, {
-  "value": "server.js 코드 작성하기",
-  "id": "serverjs-코드-작성하기",
+  "value": "server/index.js 코드 작성하기",
+  "id": "serverindexjs-코드-작성하기",
   "level": 2
 }, {
   "value": "Whatap 에이전트 초기화",
   "id": "whatap-에이전트-초기화",
   "level": 3
 }, {
-  "value": "Next.js 및 기타 필요 모듈 불러오기",
-  "id": "nextjs-및-기타-필요-모듈-불러오기",
+  "value": "Nuxt.js 및 기타 필요 모듈 불러오기",
+  "id": "nuxtjs-및-기타-필요-모듈-불러오기",
   "level": 3
 }, {
-  "value": "애플리케이션 설정",
-  "id": "애플리케이션-설정",
+  "value": "Nuxt 인스턴스 설정 및 초기화",
+  "id": "nuxt-인스턴스-설정-및-초기화",
   "level": 3
 }, {
-  "value": "Next.js 애플리케이션의 인스턴스 생성",
-  "id": "nextjs-애플리케이션의-인스턴스-생성",
+  "value": "Express 서버 설정 및 Nuxt 미들웨어 추가",
+  "id": "express-서버-설정-및-nuxt-미들웨어-추가",
   "level": 3
 }, {
   "value": "전체 코드 살펴보기",
@@ -184,7 +285,7 @@ const toc = [{
   "value": "애플리케이션 실행하기",
   "id": "애플리케이션-실행하기",
   "level": 2
-}, ..._common_items_apm_install_next_step_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+}, ..._common_items_apm_next_stemp_exclude_java_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
@@ -205,14 +306,14 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "Next.js"
+        children: "Nuxt.js"
       }), "와 같은 서버 사이드 렌더링(Server-side Rendering, SSR) 프레임워크에서 애플리케이션 모니터링을 위해 Custom Server 설정이 필요합니다. 일반적인 Node.js 프레임워크(예, Express.js, Nest.js)와는 다른 접근 방식을 요구합니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["참고 자료: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://nextjs.org/docs/pages/building-your-application/configuring/custom-server",
-          children: "Next.js Custom Server Configuration"
+          href: "https://v2.nuxt.com/docs/configuration-glossary/configuration-dev/",
+          children: "Nuxt.js Custom Server Configuration"
         })]
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -251,24 +352,26 @@ function _createMdxContent(props) {
           type: "file",
           children: "SQL 변수, HTTP 쿼리를 조회하거나 Thread 중지 기능을 이용할 때 입력하는 보안키를 저장합니다."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(FiletreeItem, {
-          name: "server.js",
+          name: "server.js / index.js",
           type: "file",
           children: ["예시 파일명입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Next.js"
+            children: "Nuxt.js"
           }), " 앱 인스턴스를 위한 서버 설정 파일입니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "serverjs-코드-작성하기",
-        children: "server.js 코드 작성하기"
+        id: "serverindexjs-코드-작성하기",
+        children: "server/index.js 코드 작성하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Next.js"
-        }), " 애플리케이션 인스턴스를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: "server.js"
-        }), " 파일을 작성하세요. 이 파일은 프로젝트의 루트(Root) 경로에 위치해야 합니다."]
+          children: "Nuxt.js"
+        }), " 애플리케이션 인스턴스를 위한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "server/index.js"
+        }), " 파일을 작성하세요. 이 파일은 프로젝트의 서버(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "server"
+        }), ") 폴더 내에 위치해야 합니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -278,52 +381,48 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          metastring: "title=\"server.js\"",
-          children: "var WhatapAgent = require('whatap').NodeAgent;\n"
+          metastring: "title=\"server/index.js\"",
+          children: "var Whatap = require('whatap').NodeAgent;\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "nextjs-및-기타-필요-모듈-불러오기",
-        children: "Next.js 및 기타 필요 모듈 불러오기"
+        id: "nuxtjs-및-기타-필요-모듈-불러오기",
+        children: "Nuxt.js 및 기타 필요 모듈 불러오기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          metastring: "title=\"server.js\"",
-          children: "const {createServer} = require('http')\nconst {parse} = require('url')\nconst next = require('next')\n"
+          metastring: "title=\"server/index.js\"",
+          children: "const express = require('express');\nconst { Nuxt, Builder } = require('nuxt');\nconst app = express();\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "애플리케이션-설정",
-        children: "애플리케이션 설정"
+        id: "nuxt-인스턴스-설정-및-초기화",
+        children: "Nuxt 인스턴스 설정 및 초기화"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          metastring: "title=\"server.js\"",
-          children: "const dev = process.env.NODE_ENV !== 'production'\nconst hostname = 'localhost'\nconst port = 3000\n"
+          metastring: "title=\"server/index.js\"",
+          children: "const config = require('./nuxt.config.js');\nconfig.dev = process.env.NODE_ENV !== 'production';\nconst nuxt = new Nuxt(config);\n\nif (config.dev) {\n    new Builder(nuxt).build();\n}\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "nextjs-애플리케이션의-인스턴스-생성",
-        children: "Next.js 애플리케이션의 인스턴스 생성"
+        id: "express-서버-설정-및-nuxt-미들웨어-추가",
+        children: "Express 서버 설정 및 Nuxt 미들웨어 추가"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["다음 코드에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "dev"
-        }), "는 개발 모드 여부를 나타내며, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "hostname"
-        }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "port"
-        }), "에는 서버의 호스트 이름과 포트 번호를 설정하세요."]
+        }), "에는 서버의 포트 번호를 설정하세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          metastring: "title=\"server.js\"",
-          children: "const app = next({dev, hostname, port})\nconst handle = app.getRequestHandler()\n\napp.prepare().then(() => {\n    createServer(async (req, res) => {\n        try {\n            const parsedUrl = parse(req.url, true)\n            const {pathname, query} = parsedUrl\n\n            /**\n            * Render the page.\n            */\n            await handle(req, res, parsedUrl);\n        } catch (err) {\n            console.error('Error occurred handling', req.url, err)\n            res.statusCode = 500\n            res.end('internal server error')\n        }\n    })\n    .once('error', (err) => {\n        console.error(err)\n        process.exit(1)\n    })\n    .listen(port, () => {\n        console.log(`> Ready on http://${hostname}:${port}`)\n    })\n})\n"
+          metastring: "title=\"server/index.js\"",
+          children: "app.use(nuxt.render);\n\nconst port = 3000;\napp.listen(port, () => {\n    console.log(`Server listening on http://localhost:${port}`);\n});\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -336,8 +435,8 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-javascript",
-          metastring: "title=\"server.js\"",
-          children: "var WhatapAgent = require('whatap').NodeAgent;\n\nconst {createServer} = require('http')\nconst {parse} = require('url')\nconst next = require('next')\n\nconst dev = process.env.NODE_ENV !== 'production'\nconst hostname = 'localhost'\nconst port = 3000\n\nconst app = next({dev, hostname, port})\nconst handle = app.getRequestHandler()\n\napp.prepare().then(() => {\n    createServer(async (req, res) => {\n        try {\n            const parsedUrl = parse(req.url, true)\n            const {pathname, query} = parsedUrl\n\n            /**\n            * Render the page.\n            */\n            await handle(req, res, parsedUrl);\n        } catch (err) {\n            console.error('Error occurred handling', req.url, err)\n            res.statusCode = 500\n            res.end('internal server error')\n        }\n    })\n    .once('error', (err) => {\n        console.error(err)\n        process.exit(1)\n    })\n    .listen(port, () => {\n        console.log(`> Ready on http://${hostname}:${port}`)\n    })\n})\n"
+          metastring: "title=\"server/index.js\"",
+          children: "var Whatap = require('whatap').NodeAgent;\n\nconst express = require('express');\nconst { Nuxt, Builder } = require('nuxt');\nconst app = express();\n\nconst config = require('./nuxt.config.js');\nconfig.dev = process.env.NODE_ENV !== 'production';\nconst nuxt = new Nuxt(config);\n\nif (config.dev) {\n    new Builder(nuxt).build();\n}\n\napp.use(nuxt.render);\n\nconst port = 3000;\napp.listen(port, () => {\n    console.log(`Server listening on http://localhost:${port}`);\n});\n"
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -349,9 +448,9 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-bash",
           metastring: "title=\"SH\"",
-          children: "node server.js\n"
+          children: "node server/index.js\n"
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_install_next_step_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_apm_next_stemp_exclude_java_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
     })]
   });
 }
