@@ -492,7 +492,7 @@ function _createMdxContent(props) {
             type: "note",
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "모니터링 가능한 프로세스 목록"
+                children: "와탭에서 기본 설정된 모니터링 대상 프로세스 목록"
               })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -502,16 +502,6 @@ function _createMdxContent(props) {
                   })
                 }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
                   children: "각 노드에서 실행되는 컨트롤러로, 컨테이너의 상태를 지속적으로 모니터링하며 Kubernetes 마스터와 통신하여 워크로드가 올바르게 스케줄링되고 실행되도록 합니다. 컨테이너 상태 체크 및 노드 자원 관리를 담당합니다."
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                    children: "containerd-shim"
-                  })
-                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                    children: "containerd"
-                  }), "와 컨테이너 런타임 사이에서 중간 인터페이스 역할을 하는 프로세스입니다. 이 프로세스는 각 컨테이너의 라이프사이클을 관리하며, 컨테이너의 표준 입출력 처리 및 로그 수집을 담당합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -560,6 +550,38 @@ function _createMdxContent(props) {
                   })
                 }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
                   children: "Kubernetes 클러스터 내에서 네트워크 트래픽을 라우팅하는 프로세스입니다. 이 프로세스는 각 노드에서 실행되며, 서비스와 포드 간의 통신을 가능하게 합니다. 또한 iptables 혹은 IPVS와 같은 리눅스 네트워킹 기술을 사용하여 클러스터 내부의 요청을 올바른 포드로 전달합니다. 이를 통해 Kubernetes 클러스터 내의 서비스 디스커버리 및 로드 밸런싱을 지원합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kube-apiserver"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "Kubernetes API 서버로, 클러스터의 모든 요청을 처리하고 리소스 상태를 관리하는 중앙 구성 요소입니다. 인증, 권한 부여, 애드미션 컨트롤 등 클러스터의 전반적인 요청 처리를 담당합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "etcd"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "Kubernetes 클러스터 상태 정보를 저장하는 분산 키-값 데이터베이스입니다. 클러스터의 상태 저장 및 복구에 중요한 역할을 합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kube-controller"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "여러 컨트롤러를 관리하고 실행하는 프로세스로, 클러스터 리소스의 상태를 유지하고 자동화 작업을 수행합니다. 노드 및 파드 상태 관리, 레플리케이션 유지 등 다양한 역할을 담당합니다."
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kube-scheduler"
+                  })
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "클러스터에서 파드를 적절한 노드에 배치하는 역할을 합니다. 파드의 요구 사항과 각 노드의 상태를 고려하여 최적의 노드를 선택합니다."
                 }), "\n"]
               }), "\n"]
             })]

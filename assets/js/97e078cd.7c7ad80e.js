@@ -3286,7 +3286,7 @@ function _createMdxContent(props) {
             children: [(0,jsx_runtime.jsx)(_components.td, {
               children: "cmd2"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "명령어 라인 (전체 명령어와 인자)"
+              children: "명령어 라인(전체 명령어와 인자)"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "String"
             }), (0,jsx_runtime.jsx)(_components.td, {
@@ -3294,7 +3294,7 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "uid"
+              children: "user"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "사용자 ID 또는 사용자 이름"
             }), (0,jsx_runtime.jsx)(_components.td, {
@@ -3313,6 +3313,16 @@ function _createMdxContent(props) {
               children: ["컨테이너 시스템 환경변수 (", (0,jsx_runtime.jsx)(_components.code, {
                 children: "NODE_IP"
               }), ")"]
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: "createTime"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "프로세스 시작 시간"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "타임스탬프"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "/proc/uptime 통해 계산된 필드"
             })]
           })]
         })]
@@ -3397,18 +3407,6 @@ function _createMdxContent(props) {
               children: "String"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "/proc/[pid]/status::State"
-            })]
-          }), (0,jsx_runtime.jsxs)(_components.tr, {
-            children: [(0,jsx_runtime.jsx)(_components.td, {
-              children: "createTime"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "프로세스 시작 시간"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "타임스탬프"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "long"
-            }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "/proc/[pid]/uptim 을 통해 계산된 필드"
             })]
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
