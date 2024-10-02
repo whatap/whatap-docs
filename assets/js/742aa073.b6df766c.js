@@ -175,7 +175,7 @@ function _createMdxContent(props) {
         id: "preview-2100a2",
         children: "Preview 2.10.0.a2"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "2024년 10월 03일"
+        children: "2024년 10월 10일"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
