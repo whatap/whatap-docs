@@ -57,6 +57,7 @@ const assets = {
 
 };
 
+/*- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL08411" className="uitext" /> 메뉴에서 <UI>일괄 해소</UI> 버튼 복구*/
 
 
 const toc = [{
