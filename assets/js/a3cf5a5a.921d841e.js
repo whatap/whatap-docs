@@ -152,7 +152,6 @@ function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
     code: "code",
-    em: "em",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
@@ -248,10 +247,8 @@ function _createMdxContent(props) {
               })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["명령어 실행 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "Desktop-Monitoring.exe"
-              }), " 대신 대상 애플리케이션을 실행하세요."]
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "명령어 실행 후 대상 애플리케이션을 실행하세요."
             }), "\n"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
