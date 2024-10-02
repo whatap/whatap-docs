@@ -5714,6 +5714,12 @@ const sidebars = {
           label: 'Apache Pulsar',
           className: 'beta' 
         },
+        {
+          type: 'doc',
+          id: 'features/vcenter-introduction',
+          label: 'vCenter',
+          className: 'beta' 
+        },
         // 'kafka/install-agent',
         // {
         //   type: 'category',
