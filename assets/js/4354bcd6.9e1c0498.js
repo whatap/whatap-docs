@@ -1307,7 +1307,7 @@ function _createMdxContent(props) {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                       children: "VMGuest-MEM-Vmmentedctl(KB)"
                     })
-                  }), ": 메모리 과할당 상태를 의미합니다. 스왑 파일 등을 통해 발생한 오버헤드 메모리 양을 표시합니다."]
+                  }), ": 메모리 과할당 상태를 의미합니다. 스왑 파일 등을 통해 발생한 오버헤드 메모리 양을 KB 단위로 표시합니다."]
                 }), "\n"]
               }), "\n"]
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
