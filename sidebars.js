@@ -4047,9 +4047,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_8',
+                  id: 'release-notes/server/server-2_6_9',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_8',
                 'release-notes/server/server-2_6_7',
                 'release-notes/server/server-2_6_6',
                 'release-notes/server/server-2_6_5',
@@ -4058,7 +4059,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_2',
                 'release-notes/server/server-2_6_1',
                 'release-notes/server/server-2_6_0',
-                'release-notes/server/server-2_5_9',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4067,7 +4067,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4076,7 +4076,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_3_4',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-aix/server-aix-1_2_7'
               ],
@@ -4084,13 +4084,13 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Server Solaris',
-              className: 'new',
+              // className: 'new',
               id: 'release-notes/server-solaris/server-solaris-1_3_4'
             },
             {
               type: 'doc',
               label: 'Server HP-UX',
-              className: 'new',
+              // className: 'new',
               id: 'release-notes/server-hpux/server-hpux-1_3_4'
             },
             {
@@ -4231,7 +4231,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              className: 'new',
+              // className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
