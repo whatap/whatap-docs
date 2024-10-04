@@ -88,6 +88,10 @@ const toc = [{
   "value": "Apache Pulsar",
   "id": "apache-pulsar",
   "level": 2
+}, {
+  "value": "vCenter",
+  "id": "vcenter",
+  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -173,6 +177,14 @@ function _createMdxContent(props) {
             children: "Apache Pulsar"
           })
         }), " 모니터링을 제공합니다. 클러스터의 효율적인 추적을 가능하도록 돕습니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "vcenter",
+        children: "vCenter"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "vCenter는 VMware의 중앙 집중식 관리 플랫폼으로, 가상화된 데이터 센터의 다양한 리소스와 작업을 한 곳에서 통합 관리할 수 있도록 지원합니다. 단일 인터페이스에서 다수의 가상 머신(VM), 호스트, 스토리지, 네트워크를 효율적으로 관리함으로써 IT 인프라 운영을 간소화하고, 관리의 효율성을 높일 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "flex-container-s features",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -229,6 +241,26 @@ function _createMdxContent(props) {
               class: "int",
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
                 children: "Apache Pulsar"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                class: "Features",
+                children: "Features"
+              })]
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "vcenter-introduction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "apm-agent",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              class: "logo",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "vcenter.svg",
+                desc: "vCenter"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              class: "int",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                children: "vCenter"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 class: "Features",
                 children: "Features"
