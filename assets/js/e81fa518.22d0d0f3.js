@@ -274,8 +274,12 @@ function _createMdxContent(props) {
             }), "(1초) / 최소값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "100"
             }), "(0.1초)"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "설정한 옵션값보다 응답 시간이 오래 걸릴 때에만 데이터를 수집합니다. 초당 최대 100건까지 수집합니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "expand_transaction_level"
+            }), " 옵션이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            }), "로 설정된 경우, 지정한 시간보다 응답 시간이 오래 걸릴 요청만 데이터를 수집합니다. 초당 최대 100건까지 수집합니다."]
           }), "\n"]
         }), "\n"]
       })]

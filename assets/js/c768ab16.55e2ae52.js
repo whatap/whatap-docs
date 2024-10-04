@@ -48,10 +48,6 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Server Agent v2.6.0",
-    "permalink": "/whatap-docs/release-notes/server/server-2_6_0"
-  },
   "next": {
     "title": "Server Agent v2.5.8",
     "permalink": "/whatap-docs/release-notes/server/server-2_5_8"
