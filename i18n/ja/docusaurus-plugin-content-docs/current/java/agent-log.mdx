@@ -139,7 +139,7 @@ LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
 
   :::
 
-- **hooklog_custom_methods**
+- **hooklog_custom_methods** <span class='type'>String</span>
 
   カスタムログを登録します。特定のログフレームワークの内容を収集します。サイトで個別に作成したログモジュールのログを追跡する際に利用してください。
 
@@ -153,4 +153,26 @@ LogSinkオプションはwhatap.agent-2.1.0以降で使用できます。
 
   ```ini title='whatap.conf'
   hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```
+
+### 特定のログAppender除外を設定する{#excludeappender}
+
+特定のログappenderを除外するエージェントオプションを案内します。次に提供するエージェントオプションにより、モニタリング対象から特定appenderを除外できます。
+
+- **ignore_logback_appender_set** <span class='type'>String</span> <code className="my">Java Agent v2.2.28 or later</code>
+
+  logback-1.2.8を追跡する際に特定appenderを除外するエージェントオプションです。例えば、`CONSOLE`と`ACCESS_APPENDER`を除外するには、次の例題を参照してください。
+
+  ```ini title="whatap.conf"
+  # example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender
+  ignore_logback_appender_set=CONSOLE,ACCESS_APPENDER
+  ```
+
+- **ignore_log4j_appender_set** <span class='type'>String</span> <code className="my">Java Agent v2.2.28 or later</code>
+
+  log4j-2.17を追跡する際に、特定appenderを除外するエージェント オプションです。 例えば、`CONSOLE`と`ACCESS_APPENDER`を除外するには、次の例を参照してください。
+
+  ```ini title="whatap.conf"
+  # example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender
+  ignore_log4j_appender_set=CONSOLE,ACCESS_APPENDER
   ```

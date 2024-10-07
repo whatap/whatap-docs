@@ -14,30 +14,24 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_0",
-    "ver": "v1.6.0",
-    "date": "2024-03-13",
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_8",
+    "ver": "v1.6.8",
+    "date": "2024-08-27",
     "Lists": [
       {
-        "ver": "v1.6.0",
-        "hash": "v160",
+        "ver": "v1.6.8",
+        "hash": "v168",
         "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the agent does not operate if it does not find data about the remote host in FastAPI.</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_6",
-    "ver": "v1.6.6",
-    "date": "2024-06-07",
-    "Lists": [
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the module tracing feature to support various versions of <strong>graphql-core</strong>.</p>",
+        "details": "<p>In <strong>graphql-core 3.x+</strong> versions, instrumentation has been added to the <code>graphql.execution.execute</code> module, while in <strong>graphql-core 2.x</strong> versions, the <code>graphql.execution.executor</code> module has been supported.</p>"
+      },
       {
-        "ver": "v1.6.6",
-        "hash": "v166",
+        "ver": "v1.6.8",
+        "hash": "v168",
         "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> FastAPI - Fixed the bug that occurs when collecting the remoteIP.</p>"
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified the <em>trace_module_definition.py</em> file to properly instrument modules based on the <strong>graphql-core</strong> version (supporting both the latest and older versions).</p>"
       }
     ]
   },
@@ -52,20 +46,6 @@
         "product": "Python Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Modified the parsing logic that searches for the <code>containerID</code> in the Kubernetes environment.</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_9",
-    "ver": "v1.5.9",
-    "date": "2024-03-11",
-    "Lists": [
-      {
-        "ver": "v1.5.9",
-        "hash": "v159",
-        "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where input is made without line breaks when setting agent options.</p>"
       }
     ]
   },
@@ -85,6 +65,20 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_7",
+    "ver": "v1.6.7",
+    "date": "2024-08-21",
+    "Lists": [
+      {
+        "ver": "v1.6.7",
+        "hash": "v167",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Prevented data from being overwritten by deep copying the TraceContext before putting it in the queue.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_5",
     "ver": "v1.6.5",
     "date": "2024-05-31",
@@ -95,6 +89,20 @@
         "product": "Python Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the missing transaction termination issue when using Python 3.6 gevent.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_6",
+    "ver": "v1.6.6",
+    "date": "2024-06-07",
+    "Lists": [
+      {
+        "ver": "v1.6.6",
+        "hash": "v166",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> FastAPI - Fixed the bug that occurs when collecting the remoteIP.</p>"
       }
     ]
   },
@@ -141,6 +149,48 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_6",
+    "ver": "v1.5.6",
+    "date": "2024-02-02",
+    "Lists": [
+      {
+        "ver": "v1.5.6",
+        "hash": "v156",
+        "product": "Python Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Supported the superset.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_9",
+    "ver": "v1.5.9",
+    "date": "2024-03-11",
+    "Lists": [
+      {
+        "ver": "v1.5.9",
+        "hash": "v159",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where input is made without line breaks when setting agent options.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_2",
+    "ver": "v1.5.2",
+    "date": "2024-01-03",
+    "Lists": [
+      {
+        "ver": "v1.5.2",
+        "hash": "v152",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the INJECTION type log collection code error.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_4",
     "ver": "v1.5.4",
     "date": "2024-01-09",
@@ -156,30 +206,16 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_6",
-    "ver": "v1.5.6",
-    "date": "2024-02-02",
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_6_0",
+    "ver": "v1.6.0",
+    "date": "2024-03-13",
     "Lists": [
       {
-        "ver": "v1.5.6",
-        "hash": "v156",
-        "product": "Python Agent",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> Supported the superset.</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/python/python-1_5_2",
-    "ver": "v1.5.2",
-    "date": "2024-01-03",
-    "Lists": [
-      {
-        "ver": "v1.5.2",
-        "hash": "v152",
+        "ver": "v1.6.0",
+        "hash": "v160",
         "product": "Python Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the INJECTION type log collection code error.</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the agent does not operate if it does not find data about the remote host in FastAPI.</p>"
       }
     ]
   },

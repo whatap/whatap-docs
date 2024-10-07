@@ -29,6 +29,12 @@ keywords:
 
   値が`true`の場合、ログデータを収集します。
 
+- **logsink_stdout_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  値が`true`であれば、Standard outputログを収集します。
+
 - **logsink_zip_enabled** <span class='type'>Boolean</span>
 
   既定値 `true`
@@ -47,6 +53,7 @@ keywords:
 
 ```ini title='whatap.conf'
 logsink_enabled=true
+logsink_stdout_enabled=true
 logsink_zip_enabled=true
 logsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log
 ```

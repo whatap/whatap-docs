@@ -1,0 +1,60 @@
+---
+id: log-nodejs
+title: Node.js
+description: It guides you how to collect logs from the Node.js application.
+keywords:
+  - Log Monitoring
+  - Node.js
+---
+
+To collect logs by your Node.js application, check the following.
+
+## Agent Update
+
+It is available from Node.js agent 0.5.1. For more information about the update, see [the following](../nodejs/agent-manage).
+
+## Checking the agent settings
+
+import Logagentcheck from "../common-items/_import_log-agent-setting-check.mdx";
+
+<Logagentcheck />
+
+### Key options
+
+- **logsink_enabled** <span class='type'>Boolean</span> 
+
+  Default `false`
+
+  Set whether or not to enable the log monitoring. 
+
+- **logsink_trace_txid_enabled** <span class='type'>Boolean</span> 
+
+  Default `true` 
+
+  Set whether or not to expose the log tab of the transaction trace by inserting the transaction ID into the logs.
+
+- **logsink_limit_content_enabled** <span class='type'>Boolean</span> 
+
+  Default `true` 
+
+  Set whether or not to limit the maximum size for log messages.
+
+- **logsink_limit_content_length** <span class='type'>Number</span> 
+
+  Default `10,000` 
+
+  Set the maximum length of the log message. This value is applied only when the `logsink_limit_content_enabled` option is set to `true`.
+
+## Enabling the log monitoring
+
+Home > Select Project > ***Log*** > ***Log Setting***
+
+You can enable or disable the WhaTap log monitoring with the toggle button in the ***Activate log monitoring*** tab of the ***Starting the log monitoring*** section. 
+
+import Logjavastart from "../common-items/_log-java-start.mdx";
+
+<Logjavastart />
+
+import Logactivenote from "../common-items/_log-active-note.mdx";
+
+<Logactivenote />

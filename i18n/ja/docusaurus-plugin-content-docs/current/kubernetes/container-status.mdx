@@ -29,9 +29,9 @@ import Containernotereset from "../common-items/_container-note-reset.mdx";
 
 | 状態                                  | 説明                                                                |
 | ----------------------------------- | ----------------------------------------------------------------- |
-| <span class='normal'>Normal</span>  | 定常間隔の表示(~Warning未満)                            |
-| <span class='slow'>Warning</span>   | Warningしきい値内にあることを表示(Warning以上~Critical以下)     |
-| <span class='vslow'>Critical</span> | Criticalしきい値内にあることを表示(Critical超過~)             |
+| <span class='normal'>Normal</span>  | 定常間隔の表示(\~Warning未満)                                              |
+| <span class='slow'>Warning</span>   | Warningしきい値内にあることを表示(Warning以上\~Critical以下)                       |
+| <span class='vslow'>Critical</span> | Criticalしきい値内にあることを表示(Critical超過\~)                               |
 | Dead                                | コンテナ終了の進行状態                                                       |
 | Wait                                | コンテナ開始の進行状態                                                       |
 | Pause                               | コンテナの一時停止状態                                                       |
@@ -60,7 +60,7 @@ import Containernotereset from "../common-items/_container-note-reset.mdx";
 | Waiting                             |  21 | コンテナ状態がWAITINGに転換                                                                                                            |
 | <span class='normal'>Normal</span>  |  10 | コンテナ状態がNormalに転換                                                                                                             |
 
-WhaTapのイベントには、「発生したイベントの状態が解決すると追加で通知する」ように設定したイベントがあり、次のように2種類で区別します。
+WhaTapのイベントには、<Cmdname sid="CNT08320" className="uitext" />を設定したイベントがあり、次のように2種類で区別します。
 
 - 解決を追跡しないイベント：`stateless`イベント
 

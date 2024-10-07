@@ -5,7 +5,10 @@
 /pdf
 /node_modules
 /wip-js
+/wip
+/crw-data/backup
 sheets.googleapis.com-whatap-locale.json
+.env
 /pagefind
 
 # Generated files

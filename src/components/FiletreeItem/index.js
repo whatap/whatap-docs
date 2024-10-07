@@ -29,7 +29,7 @@ export default function FiletreeItem({ children, name, type }) {
         <ul>
           {React.Children.map(children, (child, index) => (
             React.isValidElement(child) && child.type === FiletreeItem ? (
-              <li key={index}>{child}</li>
+              <>{child}</>
             ) : null
           ))}
         </ul>

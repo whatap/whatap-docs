@@ -1,15 +1,63 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_8_1",
-    "ver": "v1.8.1",
-    "date": "2024-06-27",
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_0_0",
+    "ver": "v2.0.0",
+    "date": "2024-08-14",
     "Lists": [
       {
-        "ver": "v1.8.1",
-        "hash": "v181",
+        "ver": "v2.0.0",
+        "hash": "v200",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Altibase <code class=\"my\">V2</code>追加</p>",
+        "category": "Altibase"
+      },
+      {
+        "ver": "v2.0.0",
+        "hash": "v200",
         "product": "DBX",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> XOSエージェントv1.1.8fアップデート</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>obj_invalid_cnt</code>指標を追加</p>",
+        "category": "Altibase"
+      },
+      {
+        "ver": "v2.0.0",
+        "hash": "v200",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>tablespace lockのデータを収集できるエージェントオプションを追加</p>",
+        "category": "Altibase"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_9_5",
+    "ver": "v1.9.5",
+    "date": "2024-08-13",
+    "Lists": [
+      {
+        "ver": "v1.9.5",
+        "hash": "v195",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> RAC指標を追加</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.5",
+        "hash": "v195",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> AIX Oracle環境では<code>osstat</code>データを収集しないように修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.5",
+        "hash": "v195",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code><code>osstat</code>データをTiberoバージョンによって収集するように修正</p>",
+        "category": "Tibero"
       }
     ]
   },
@@ -53,31 +101,95 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_7",
-    "ver": "v1.7.7",
-    "date": "2024-06-18",
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_9_3",
+    "ver": "v1.9.3",
+    "date": "2024-08-08",
     "Lists": [
       {
-        "ver": "v1.7.7",
-        "hash": "v177",
+        "ver": "v1.9.3",
+        "hash": "v193",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> lockの情報収集の際、holderとwaiterのsidが同じ場合は収集しないように修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.3",
+        "hash": "v193",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code><code>DbAgentInfoPack</code>カテゴリーに<code>isV2</code>フィールドを追加</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.3",
+        "hash": "v193",
         "product": "DBX",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> PostgreSQL 9.6バージョンのreplication delayバグ修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code><code>pq_sessions</code>、<code>lock_wait_sessions</code>指標名の空白を削除</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.3",
+        "hash": "v193",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code><code>db_mysql_tables</code>カテゴリーでALL値の合わないバグを修正</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_9_2",
+    "ver": "v1.9.2",
+    "date": "2024-07-30",
+    "Lists": [
+      {
+        "ver": "v1.9.2",
+        "hash": "v192",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code><code>db_oracle_plan_save</code>カテゴリーに<code>object_owner</code>追加および<code>other_xml</code>削除</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.2",
+        "hash": "v192",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>DBパラメータのuptimeフォーマットを変更</p>",
         "category": "PostgreSQL"
       }
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_6",
-    "ver": "v1.7.6",
-    "date": "2024-05-20",
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_9_4",
+    "ver": "v1.9.4",
+    "date": "2024-08-08",
     "Lists": [
       {
-        "ver": "v1.7.6",
-        "hash": "v176",
+        "ver": "v1.9.4",
+        "hash": "v194",
         "product": "DBX",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> Autoscale EventPackにStatus On修正</p>"
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code><code>db_mysql_sqlstat</code>カテゴリのデータが累積するバグを修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v1.9.4",
+        "hash": "v194",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code><code>db_oracle_sqlstat</code>カテゴリのデータが累積するバグを修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.9.4",
+        "hash": "v194",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Cpu_coresデータを収集しないように修正</p>",
+        "category": "Tibero"
       }
     ]
   },
@@ -98,138 +210,26 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_8_0",
-    "ver": "v1.8.0",
-    "date": "2024-06-26",
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_9_1",
+    "ver": "v1.9.1",
+    "date": "2024-07-19",
     "Lists": [
       {
-        "ver": "v1.8.0",
-        "hash": "v180",
+        "ver": "v1.9.1",
+        "hash": "v191",
         "product": "DBX",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>迅速なエージェント設定のための<em>setup.sh</em>追加</p>",
-        "category": "MySQL"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_5",
-    "ver": "v1.7.5",
-    "date": "2024-05-17",
-    "Lists": [
-      {
-        "ver": "v1.7.5",
-        "hash": "v175",
-        "product": "DBX",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> DB Connection Failed発生すると、<code>fatal count</code>を転送するように修正</p>",
-        "category": "MongoDB, Redis"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_8",
-    "ver": "v1.7.8",
-    "date": "2024-06-21",
-    "Lists": [
-      {
-        "ver": "v1.7.8",
-        "hash": "v178",
-        "product": "DBX",
-        "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> DB Connection通知元服機能を削除</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_1",
-    "ver": "v1.7.1",
-    "date": "2024-03-28",
-    "Lists": [
-      {
-        "ver": "v1.7.1",
-        "hash": "v171",
-        "product": "DBX",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> Whatapで実行するクエリに収集クエリであることがわかるコメントを追加</p>",
-        "category": "Postgresql, Oracle"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>Too big dataお知らせのstatusを追加</p>",
+        "category": "共通",
+        "details": "<p>エージェントからデータを転送する際、パックサイズが5MB以上の時に通知が発生するようstatusを追加</p>"
       },
       {
-        "ver": "v1.7.1",
-        "hash": "v171",
-        "product": "DBX",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <strong>DocumentDB</strong>の<strong>process</strong>および<strong>replication delay</strong>処理バグ修正</p>",
-        "category": "MongoDB"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_3",
-    "ver": "v1.7.3",
-    "date": "2024-04-23",
-    "Lists": [
-      {
-        "ver": "v1.7.3",
-        "hash": "v173",
-        "product": "DBX",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> 通知の復元オフ(OFF) 機能を改善</p>",
-        "category": "共通"
-      },
-      {
-        "ver": "v1.7.3",
-        "hash": "v173",
-        "product": "DBX",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> slave brokenチェックバグを修正</p>",
-        "category": "MySQL"
-      },
-      {
-        "ver": "v1.7.3",
-        "hash": "v173",
+        "ver": "v1.9.1",
+        "hash": "v191",
         "product": "DBX",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <code>delta</code>1秒値オプションの追加: エージェントで5秒単位で収集したデータを秒単位で換算して報告するオプション</p>",
-        "category": "Oracle"
-      },
-      {
-        "ver": "v1.7.3",
-        "hash": "v173",
-        "product": "DBX",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <code>sqlstat</code>指標を追加</p>",
-        "category": "Oracle"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_33",
-    "ver": "v1.6.33",
-    "date": "2024-03-13",
-    "Lists": [
-      {
-        "ver": "v1.6.33",
-        "hash": "v1633",
-        "product": "DBX",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>エージェントのインストール ファイルに<em>setup.sh</em>を追加</p>",
-        "category": "PostgreSQL"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_32",
-    "ver": "v1.6.32",
-    "date": "2024-03-11",
-    "Lists": [
-      {
-        "ver": "v1.6.32",
-        "hash": "v1632",
-        "product": "DBX",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code>データベースパラメータのリアルタイム照会ロジックの修正、<code>unit</code>、<code>start_time</code>, <code>uptime</code>データ追加</p>",
-        "category": "PostgreSQL"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>db sizeおよびcollectionの情報を収集</p>",
+        "category": "Mongodb"
       }
     ]
   },
@@ -273,6 +273,132 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_8_0",
+    "ver": "v1.8.0",
+    "date": "2024-06-26",
+    "Lists": [
+      {
+        "ver": "v1.8.0",
+        "hash": "v180",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>迅速なエージェント設定のための<em>setup.sh</em>追加</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_8",
+    "ver": "v1.7.8",
+    "date": "2024-06-21",
+    "Lists": [
+      {
+        "ver": "v1.7.8",
+        "hash": "v178",
+        "product": "DBX",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> DB Connection通知元服機能を削除</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_7",
+    "ver": "v1.7.7",
+    "date": "2024-06-18",
+    "Lists": [
+      {
+        "ver": "v1.7.7",
+        "hash": "v177",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> PostgreSQL 9.6バージョンのreplication delayバグ修正</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_6",
+    "ver": "v1.7.6",
+    "date": "2024-05-20",
+    "Lists": [
+      {
+        "ver": "v1.7.6",
+        "hash": "v176",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Autoscale EventPackにStatus On修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_5",
+    "ver": "v1.7.5",
+    "date": "2024-05-17",
+    "Lists": [
+      {
+        "ver": "v1.7.5",
+        "hash": "v175",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> DB Connection Failed発生すると、<code>fatal count</code>を転送するように修正</p>",
+        "category": "MongoDB, Redis"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_3",
+    "ver": "v1.7.3",
+    "date": "2024-04-23",
+    "Lists": [
+      {
+        "ver": "v1.7.3",
+        "hash": "v173",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> 通知の復元オフ(OFF) 機能を改善</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.7.3",
+        "hash": "v173",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> slave brokenチェックバグを修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v1.7.3",
+        "hash": "v173",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <code>delta</code>1秒値オプションの追加: エージェントで5秒単位で収集したデータを秒単位で換算して報告するオプション</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.7.3",
+        "hash": "v173",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <code>sqlstat</code>指標を追加</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_8_1",
+    "ver": "v1.8.1",
+    "date": "2024-06-27",
+    "Lists": [
+      {
+        "ver": "v1.8.1",
+        "hash": "v181",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> XOSエージェントv1.1.8fアップデート</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_2",
     "ver": "v1.7.2",
     "date": "2024-03-29",
@@ -291,6 +417,29 @@
         "product": "DBX",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> MongoDbSize <code>type</code>エラーを修正</p>",
+        "category": "MongoDB"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_7_1",
+    "ver": "v1.7.1",
+    "date": "2024-03-28",
+    "Lists": [
+      {
+        "ver": "v1.7.1",
+        "hash": "v171",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Whatapで実行するクエリに収集クエリであることがわかるコメントを追加</p>",
+        "category": "Postgresql, Oracle"
+      },
+      {
+        "ver": "v1.7.1",
+        "hash": "v171",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <strong>DocumentDB</strong>の<strong>process</strong>および<strong>replication delay</strong>処理バグ修正</p>",
         "category": "MongoDB"
       }
     ]
@@ -352,6 +501,21 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_33",
+    "ver": "v1.6.33",
+    "date": "2024-03-13",
+    "Lists": [
+      {
+        "ver": "v1.6.33",
+        "hash": "v1633",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>エージェントのインストール ファイルに<em>setup.sh</em>を追加</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_31",
     "ver": "v1.6.31",
     "date": "2024-03-04",
@@ -362,6 +526,50 @@
         "product": "DBX",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code>エージェントが終了し、再起動する時の既定値として解消通知を受けられるように処理</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_30",
+    "ver": "v1.6.30",
+    "date": "2024-02-29",
+    "Lists": [
+      {
+        "ver": "v1.6.30",
+        "hash": "v1630",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>イベント解消の通知機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_32",
+    "ver": "v1.6.32",
+    "date": "2024-03-11",
+    "Lists": [
+      {
+        "ver": "v1.6.32",
+        "hash": "v1632",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code>データベースパラメータのリアルタイム照会ロジックの修正、<code>unit</code>、<code>start_time</code>, <code>uptime</code>データ追加</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_26",
+    "ver": "v1.6.26",
+    "date": "2024-02-28",
+    "Lists": [
+      {
+        "ver": "v1.6.26",
+        "hash": "v1626",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <code class=\"my\">V2</code>アップグレードに関し、waitevent収集のクエリバグ及びmulti構成バグを修正</p>",
+        "category": "Oracle"
       }
     ]
   },
@@ -386,20 +594,6 @@
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code> object、table収集オプションの既定値を<code>true</code>に修正</p>",
         "category": "PostgreSQL"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_30",
-    "ver": "v1.6.30",
-    "date": "2024-02-29",
-    "Lists": [
-      {
-        "ver": "v1.6.30",
-        "hash": "v1630",
-        "product": "DBX",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>イベント解消の通知機能を追加</p>"
       }
     ]
   },
@@ -465,21 +659,6 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_26",
-    "ver": "v1.6.26",
-    "date": "2024-02-28",
-    "Lists": [
-      {
-        "ver": "v1.6.26",
-        "hash": "v1626",
-        "product": "DBX",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <code class=\"my\">V2</code>アップグレードに関し、waitevent収集のクエリバグ及びmulti構成バグを修正</p>",
-        "category": "Oracle"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_21",
     "ver": "v1.6.21",
     "date": "2024-02-07",
@@ -499,29 +678,6 @@
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code> <code>rep_gap_max</code>指標を追加</p>",
         "category": "Altibase"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_20",
-    "ver": "v1.6.20",
-    "date": "2024-02-02",
-    "Lists": [
-      {
-        "ver": "v1.6.20",
-        "hash": "v1620",
-        "product": "DBX",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>データベース通知の復元のためのstatefulを追加</p>",
-        "category": "共通"
-      },
-      {
-        "ver": "v1.6.20",
-        "hash": "v1620",
-        "product": "DBX",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> Redis autoscale機能を追加</p>",
-        "category": "Redis"
       }
     ]
   },
@@ -551,6 +707,29 @@
         "product": "DBX",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code> <code>disk_usage_interval=60</code>オプションを基本収集するように変更</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-1_6_20",
+    "ver": "v1.6.20",
+    "date": "2024-02-02",
+    "Lists": [
+      {
+        "ver": "v1.6.20",
+        "hash": "v1620",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>データベース通知の復元のためのstatefulを追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.6.20",
+        "hash": "v1620",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Redis autoscale機能を追加</p>",
+        "category": "Redis"
       }
     ]
   },

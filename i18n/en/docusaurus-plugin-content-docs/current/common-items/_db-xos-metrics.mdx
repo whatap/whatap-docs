@@ -1,0 +1,31 @@
+## XOS-related metrics {#xosmetrics}
+
+The following describes the metrics collected from the XOS agent.
+
+<div class='metric'>
+
+| Metric                  | Unit  | Description                                                                                                                         |
+| ----------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `cpu(xos)`              | pct   | CPU utilization, `cpu_user` + `cpu_sys` + `cpu_iowait`.                                                                             |
+| `cpu_user(xos)`         | pct   | Time spent for CPU to execute user code.                                                                                            |
+| `cpu_sys(xos)`          | pct   | Time spent for CPU to execute the kernel code.                                                                                      |
+| `cpu_iowait(xos)`       | pct   | CPU time waited for IO.                                                                                                             |
+| `cpu_idle(xos)`         | pct   | CPU processor's idle time.                                                                                                          |
+| `disk_reads(xos)`       | block | Amount of data read from disk.                                                                                                      |
+| `disk_read_bytes(xos)`  | byte  | Amount of data read from disk.                                                                                                      |
+| `disk_writes(xos)`      | block | Amount of data written to disk.                                                                                                     |
+| `disk_write_bytes(xos)` | byte  | Amount of data written to disk.                                                                                                     |
+| `mem(xos)`              | pct   | Memory utilization.                                                                                                                 |
+| `mem_total(xos)`        | MB    | Total amount of memory.                                                                                                             |
+| `mem_free(xos)`         | MB    | Amount of memory not in use by the system.                                                                                          |
+| `mem_used(xos)`         | MB    | Amount of memory in use by the system.                                                                                              |
+| `mem_buffcache(xos)`    | MB    | Amount of memory used by the buff/cache.                                                                                            |
+| `mem_swaptotal(xos)`    | MB    | Set this in preparation for the case where the total Swap size and physical memory are insufficient.                                |
+| `mem_swapfree(xos)`     | MB    | Because the unused Swap area and Swap area are secured in disk space, the system performance may drop drastically while using Swap. |
+| `mem_available(xos)`    | MB    | Available memory area.                                                                                                              |
+| `net_recv_bytes(xos)`   | byte  | Amount of data received over the network.                                                                                           |
+| `net_recv_packets(xos)` | -     | Number of data packets received over the network.                                                                                   |
+| `net_send_bytes(xos)`   | byte  | Amount of data transmitted over the network.                                                                                        |
+| `net_send_packets(xos)` | -     | Number of data packets transmitted over the network.                                                                                |
+
+</div>

@@ -1,46 +1,116 @@
-Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metric data to identify bottlenecks in the database and provides data to help identify the root cause of the performance issue.
+Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
 
 For more information about columns, see [the link](https://docs.oracle.com/).
 
-<div class='metric'>
+<InDoc product="oracle">
 
-| Metric                                   | Description                                                                                                          |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `cpu_used_by_this_session`               | CPU time (in 10 milliseconds) used by the session, from the user call start time to its end time. |
-| `db_time`                                | Elapsed time (in microseconds) to perform user-level calls to the database.                       |
-| `active_sessions`                        | Number of sessions running queries                                                                                   |
-| `cpu`                                    | CPU Utilization                                                                                                      |
-| `cpu_cores`                              | CPU core count                                                                                                       |
-| `db_block_changes`                       | Number of blocks changed in SGA                                                                                      |
-| `db_file_scattered_read_time_waited`     | Total waiting time for the DB file scattered read events                                                             |
-| `db_file_scattered_read_total_timeouts`  | Total timeout count for the DB file scattered read events                                                            |
-| `db_file_scattered_read_total_waits`     | Total wait count for the DB file scattered read events                                                               |
-| `db_file_sequential_read_time_waited`    | Total waiting time for the DB file sequential read events                                                            |
-| `db_file_sequential_read_total_timeouts` | Total timeout count for the DB file sequential read events                                                           |
-| `db_file_sequential_read_total_waits`    | Total wait count for the DB file sequential read events                                                              |
-| `enqueue_waits`                          | Total number of waits during queue conversion or import due to queue import delays.                                  |
-| `excute_count`                           | Total number of calls that performed SQL statements                                                                  |
-| `fatal_count`                            | Fatal error count                                                                                                    |
-| `iowait_cpu`                             | Percentage of the CPU queued time for I/O                                                                            |
-| `lock_wait_sessions`                     | Number of waits to acquire the current row lock                                                                      |
-| `logons_current`                         | Total current logon count                                                                                            |
-| `long_running_sessions`                  | Number of sessions running for long time                                                                             |
-| `memory`                                 | Memory utilization                                                                                                   |
-| `opened_cursors_current`                 | Number of open cursors                                                                                               |
-| `parse_count_(hard)`                     | Total number of syntax analysis calls (actual syntax analysis)                                    |
-| `parse_count_(total)`                    | Total number of syntax analysis calls (hard, soft, describe)                                      |
-| `physical_reads`                         | Number of data blocks read from disk                                                                                 |
-| `physical_writes`                        | Number of data blocks written to disk, or sum of `physical writes direct` and `physical writes from cache`.          |
-| `session_logical_reads`                  | Number of data blocks read from memory, or sum of `db block gets` and `consistent gets`.                             |
-| `sorts_(memory)`                         | Number of sorts performed in memory                                                                                  |
-| `sys_cpu`                                | Sum of CPU time used by the session                                                                                  |
-| `total_elapse_time`                      | Cumulative total elapsed time of all requests since the last database instance restart.                              |
-| `total_sessions`                         | Number of all sessions                                                                                               |
-| `txn_sessions`                           | Number of sessions with transactions                                                                                 |
-| `user_commits`                           | User commit count per transaction                                                                                    |
-| `user_cpu`                               | User CPU usage (%)                                                                                |
-| `wait_sessions`                          | Number of sessions queuing for events                                                                                |
-| `warning_count`                          | Number of all alerts                                                                                                 |
+## db_oracle_counter {#db_oracle_counter}
+
+### Tags {#db_oracle_counter-tags}
+
+The following lists the tags that are collected in the `db_oracle_counter` category.
+
+| Tag name    | Description                                | Remarks      |
+| ----------- | ------------------------------------------ | ------------ |
+| `agentIp`   | IP address per agent.                      | -            |
+| `dbIsMulti` | Whether to support the multitenant or not. | -            |
+| `dbName`    | Database name.                             | -            |
+| `dbType`    | Database type.                             | -            |
+| `dbVersion` | Version of the database in use.            | -            |
+| `oname`     | Agent name                                 | Unique value |
+
+### Field {#db_oracle_counter-filed}
+
+The following lists the fields that are collected in the `db_oracle_counter` category.
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+## db_oracle_dma_counter {#db_oracle_dma_counter}
+
+### Tags {#db_oracle_dma_counter-tags}
+
+The following lists the tags that are collected in the `db_oracle_dma_counter` category.
+
+| Tag name | Description    | Remarks      |
+| -------- | -------------- | ------------ |
+| `dbName` | Database name. | -            |
+| `oname`  | Agent name     | Unique value |
+
+### Field {#db_oracle_dma_counter-filed}
+
+The following lists the fields that are collected in the `db_oracle_dma_counter` category.
+
+</InDoc>
+
+<div class='db-metric-3'>
+
+| Metrics                                                      | Description                                                                                                                | Category       |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| `cpu_used_by_this_session`                                   | CPU time (in 10 milliseconds) used by the session, from the user call start time to its end time.                          | Performance    |
+| `db_time`                                                    | Elapsed time (in microseconds) to perform user-level calls to the database.                                                | Performance    |
+| `active_sessions`                                            | Number of active sessions.                                                                                                 | Connection     |
+| `connect_error`                                              | Number of connection errors.                                                                                               | Connection     |
+| `consistent_gets`                                            | Number of consistent data block read operations.                                                                           | I/O            |
+| `cpu`                                                        | CPU utilization used in the database.                                                                                      | Performance    |
+| `cpu_cores`                                                  | Number of available CPU cores                                                                                              | Performance    |
+| `data_blocks_consistent_reads_-_undo_records_applied`        | Number of Undo records applied in consistent data block reads.                                                             | I/O            |
+| `db_block_changes`                                           | Number of blocks changed in SGA.                                                                                           | I/O            |
+| `db_block_gets`                                              | Number of direct read operations from blocks in the SGA.                                                                   | I/O            |
+| `db_file_scattered_read_time_waited`                         | Time waited for scattered read events.                                                                                     | I/O            |
+| `db_file_scattered_read_total_timeouts`                      | Number of timeouts occurred during the scattered read events.                                                              | I/O            |
+| `db_file_scattered_read_total_waits`                         | Total number of waits occurred during the scattered read events.                                                           | I/O            |
+| `db_file_sequential_read_time_waited`                        | Time waited for sequential read events.                                                                                    | I/O            |
+| `db_file_sequential_read_total_timeouts`                     | Number of timeouts occurred during the sequential read events.                                                             | I/O            |
+| `db_file_sequential_read_total_waits`                        | Total number of waits occurred during the sequential read events.                                                          | I/O            |
+| `direct path read time waited`                               | Time waited for direct path reads.                                                                                         | I/O            |
+| `direct path read total timeouts`                            | Number of timeouts occurred during direct path reads.                                                                      | I/O            |
+| `direct path read total waits`                               | Total number of waits occurred during direct path reads.                                                                   | I/O            |
+| `direct path write time waited`                              | Time waited for direct path writes.                                                                                        | I/O            |
+| `direct path write total timeouts`                           | Number of timeouts occurred during direct path writes.                                                                     | I/O            |
+| `direct path write total waits`                              | Total number of waits occurred during direct path writes.                                                                  | I/O            |
+| `enq:_TX_-_row_lock_contention_time_waited`                  | Time waited for row lock contention.                                                                                       | I/O            |
+| `enq:_TX_-_row_lock_contention_total_timeouts`               | Number of timeouts occurred for row lock contention.                                                                       | I/O            |
+| `enq:_TX_-_row_lock_contention_total_waits`                  | Total number of waits occurred for row lock contention.                                                                    | I/O            |
+| `enqueue_waits`                                              | Total number of waits during queue conversion or import due to queue import delays.                                        | I/O            |
+| `execute_count`                                              | Total number of commands that executed SQL statements.                                                                     | Performance    |
+| `fatal_count`                                                | Number of fatal errors.                                                                                                    | Info           |
+| `iowait_cpu`                                                 | Percentage of CPU time spent in I/O wait state.                                                                            | Performance    |
+| `latch free time waited`                                     | Time waited in latch-free state.                                                                                           | I/O            |
+| `latch free total timeouts`                                  | Number of timeouts occurred in latch-free state.                                                                           | I/O            |
+| `latch free total waits`                                     | Total number of waits occurred in latch-free state.                                                                        | I/O            |
+| `library cache lock time waited`                             | Time waited in library cache lock state.                                                                                   | I/O            |
+| `library cache lock total timeouts`                          | Number of timeouts occurred during library cache locks.                                                                    | I/O            |
+| `library cache lock total waits`                             | Total number of waits occurred during library cache locks.                                                                 | I/O            |
+| `library cache pin time waited`                              | Time waited in library cache pin.                                                                                          | I/O            |
+| `library cache pin total timeouts`                           | Number of timeouts occurred in library cache pin.                                                                          | I/O            |
+| `library cache pin total waits`                              | Total number of waits occurred in library cache pin.                                                                       | I/O            |
+| `lock_wait_sessions`                                         | Number of waits to acquire the current row lock.                                                                           | Connection     |
+| `logons_current`                                             | Number of active logons.                                                                                                   | Connection     |
+| `long_running_sessions`                                      | Number of long running sessions.                                                                                           | Connection     |
+| `memory`                                                     | Percentage of memory in use.                                                                                               | MySQL Resource |
+| `opened_cursors_current`                                     | Number of open cursors.                                                                                                    | Connection     |
+| `parse_count_(hard)`                                         | Total number of syntax analysis calls (actual syntax analysis).                                                            | Performance    |
+| `parse_count_(total)`                                        | Total number of syntax analysis calls (hard, soft, describe).                                                              | Performance    |
+| `physical_reads`                                             | Number of data blocks read from disk.                                                                                      | I/O            |
+| `physical_writes`                                            | Number of blocks in which data has been written to disk. Sum of `physical writes direct` and `physical writes from cache`. | I/O            |
+| `pq_sessions`                                                | Number of parallel query sessions.                                                                                         | Connection     |
+| `redo_entries`                                               | Number of Redo entries created.                                                                                            | I/O            |
+| `rollback_changes_-_undo_records_applied`                    | Number of Undo records applied due to rollback changes.                                                                    | I/O            |
+| `session_logical_reads`                                      | Number of data blocks read from memory. Sum of `db block gets` and `consistent gets`.                                      | I/O            |
+| `sorts_(disk)`                                               | Number of sort operations occurred on disk.                                                                                | I/O            |
+| `sorts_(memory)`                                             | Number of sort operations occurred in memory.                                                                              | I/O            |
+| `sys_cpu`                                                    | Sum of CPU time used by the session.                                                                                       | Performance    |
+| `total_elapse_time`                                          | Cumulative total elapsed time of all requests since the last database instance restart.                                    | Performance    |
+| `total_sessions`                                             | Total number of sessions.                                                                                                  | Connection     |
+| `transaction_tables_consistent_reads_-_undo_records_applied` | Number of Undo records applied to consistent read operations in the transaction table.                                     | I/O            |
+| `txn_sessions`                                               | Number of transaction sessions.                                                                                            | Connection     |
+| `user_commits`                                               | Number of user commit operations per transaction.                                                                          | I/O            |
+| `user_cpu`                                                   | CPU % used for user tasks.                                                                                                 | Performance    |
+| `user_rollbacks`                                             | Number of user rollback operations.                                                                                        | I/O            |
+| `wait_sessions`                                              | Number of sessions waiting for events.                                                                                     | Connection     |
+| `warning_count`                                              | Number of all warnings.                                                                                                    | Info           |
 
 The following describes the metrics collected via the `ora_ratio` option in the agent settings. For more information about the agent option configuration, see [the following](agent-dbx-settings#collect-data).
 

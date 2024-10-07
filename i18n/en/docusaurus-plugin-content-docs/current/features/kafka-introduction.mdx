@@ -9,6 +9,8 @@ keywords:
   - Feature
 ---
 
+import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import AlertFeature from '../common-items/_import_feature-alert.mdx';
 import TR from '@site/src/components/TR';
 
 :::note
@@ -55,25 +57,15 @@ Before installing the WhaTap KAFKA monitoring agent, check the support environme
 
 ### Creating a Feature Project
 
-Create a **feature project** (<code class='Features'>Feature</code>) before installing the agent.
+import CreateFeature from "../common-items/_import_feature-project-create.mdx";
 
-1. Log in [WhaTap monitoring service](https://service.whatap.io).
-
-2. To create a project, on the left of the screen, select <Cmdname sid="BTN07332" className="uitext" /> > **_+_** <Cmdname sid='BTN06696' className='uitext'/>.
-
-3. On the <Cmdname sid="TTL07073" className="uitext" /> screen, select the **feature product** to install in the project.
-
-4. Configure the settings for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, and <Cmdname sid="project_time_zone" className="uitext" />.
-
-   <ImgLang img='create-project-v3.png' desc='Create Project'/>
-
-5. In <Cmdname sid="TTL07727" className="uitext" />, select the language for alert messages.
-
-6. After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
+<CreateFeature />
 
 ### Installing the KAFKA agent
 
-After creating a **Feature Project** (<code class='Features'>Features</code>), the **_KAFKA Agent Installation_** screen appears. Proceed with installation according to the following instructions. 
+<InstallFeature name='KAFKA Agent Installation' />
+
+{/* **피쳐 프로젝트**(<code class='Features'>Features</code>) 생성 후 자동으로 **_KAFKA 에이전트 설치_** 화면으로 이동합니다. Proceed with installation according to the following instructions. 
 
 1. Check the **project access key**. 
 
@@ -98,12 +90,13 @@ After creating a **Feature Project** (<code class='Features'>Features</code>), t
 
    To configure the Jolokia agent in KAFKA, execute the following command and then restart it.
 
-   ```bash
+   ````bash
    #cd {kafka home directory}/bin
    sed -i '/^#!/a export KAFKA_OPTS='\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\''' kafka-server-start.sh
    ./kafka-server-stop.sh
    ./kafka-server-start.sh
-   ```
+   ``` */}
+   ````
 
 ## Learn about the main features
 
@@ -282,6 +275,9 @@ KAFKA **Custom Dashboard** provided by WhaTap consists of the following three pr
 
 ### Alert
 
+<AlertFeature name='KAFKA' />
+
+{/* 
 Home > Select **Feature Project** (<code class='Features'>Feature</code>) > **_Alert_** > **_Event Configuration_**
 
 WhaTap's KAFKA monitoring provides the **_complex metrics_** alerts by default. 
@@ -290,4 +286,4 @@ WhaTap's KAFKA monitoring provides the **_complex metrics_** alerts by default.
 
 For more information about composite metrics events, see [the following](https://docs.whatap.io/server/metric-warning-notice#composite-metrics-event). 
 
-:::
+::: */}

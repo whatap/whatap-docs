@@ -139,7 +139,7 @@ To monitor logs collected from the framework, add the setting and plugin to inte
 
   :::
 
-- **hooklog_custom_methods**
+- **hooklog_custom_methods** <span class='type'>String</span>
 
   Register a custom log. An arbitrary log framework content is delivered. Use this to trace logs of the log module created on the website.
 
@@ -153,4 +153,26 @@ To monitor logs collected from the framework, add the setting and plugin to inte
 
   ```ini title='whatap.conf'
   hooklog_custom_methods=io.home.test.MyLog.customLog
+  ```
+
+### Setting to exclude a specific log appender {#excludeappender}
+
+It provides agent options to exclude specific log appenders. The following agent options are provided to exclude specific appenders from monitoring.
+
+- **ignore_logback_appender_set** <span class='type'>String</span> <code className="my">Java Agent v2.2.28 or later</code>
+
+  It is the agent option to exclude specific appenders when tracing logback-1.2.8. For example, to exclude `CONSOLE` and `ACCESS_APPENDER`, see the following example.
+
+  ```ini title="whatap.conf"
+  # example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender
+  ignore_logback_appender_set=CONSOLE,ACCESS_APPENDER
+  ```
+
+- **ignore_log4j_appender_set** <span class='type'>String</span> <code className="my">Java Agent v2.2.28 or later</code>
+
+  It is the agent option to exclude specific appenders when tracing log4j-2.17. For example, to exclude `CONSOLE` and `ACCESS_APPENDER`, see the following example.
+
+  ```ini title="whatap.conf"
+  # example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender
+  ignore_log4j_appender_set=CONSOLE,ACCESS_APPENDER
   ```

@@ -120,11 +120,20 @@ html[lang='en-US'] {
   }
   div.navbar__items {
     a[href*='blog'] {
+      // 다국어 영문 블로그 네비게이션바
       display: none;
     }
   }
   nav.pagination-nav {
     display: none;
+  }
+  // 영문 블로그 날짜2
+  div.history_overview ul li > .changelog-date {
+    position: absolute;
+    left: -88px !important; 
+    font-size: 78%;
+    top: 8px;
+    transform: translateY(-50%);
   }
 }
 
@@ -140,8 +149,17 @@ html[lang='ja-JP'] {
   }
   div.navbar__items {
     a[href*='blog'] {
+      // 다국어 일문 블로그 네비게이션바
       display: none;
     }
+  }
+  // 일문 블로그 날짜2
+  div.history_overview ul li > .changelog-date {
+    position: absolute;
+    left: -110px; 
+    font-size: 75%;
+    top: 8px;
+    transform: translateY(-50%);
   }
   nav.pagination-nav {
     display: none;
@@ -150,6 +168,19 @@ html[lang='ja-JP'] {
     table {
       td {
         word-break: break-all;
+      }
+    }
+  }
+  .markdown {
+    .weaving-table {
+      table {
+        th {
+          &:first-of-type { width: 10%; }
+          &:nth-of-type(2) { width: 25%; }
+          &:nth-of-type(3) { width: 20%; }
+          &:nth-of-type(4) { width: 20%; }
+          &:nth-of-type(5) { width: 15%; }
+        }
       }
     }
   }
@@ -192,6 +223,9 @@ html[lang='ja-JP'] {
   margin-left: 60px;
 }
 // UI
+.navbar__logo {
+  height: 4rem;
+}
 .hold-menu {
   padding: 12px 0;
   margin: 0 8px;
@@ -409,7 +443,7 @@ html[lang='ja-JP'] {
   // font-weight: bold;
   border-radius: 4px;
   padding: 0 3px;
-  border: 1px solid none;
+  border: none;
   background-color: rgb(235, 235, 235);
   color: rgb(82, 114, 255);
   font-family: "Oleo Script";
@@ -725,6 +759,13 @@ button.DocSearch-Button:hover {
 .DocSearch-Button-Keys {
   display: none !important;
 }
+// 다국어 조건 아이콘 위치 수정
+.iconLanguage_src-theme-NavbarItem-LocaleDropdownNavbarItem-styles-module {
+  // vertical-align: text-bottom;
+  // margin-right: 5px;
+  top: -2px !important;
+  // position: relative;
+}
 .localeDropdown {
   margin-right: 0px;
   display: inline;
@@ -989,6 +1030,7 @@ div.history_overview{
       padding-left: 25px;
       margin-left: 15px !important;
 
+      // 국문 블로그 날짜
       & > .changelog-date {
         position: absolute;
         left: -112px; 
@@ -1113,9 +1155,20 @@ main {
           width: 80%;
         }
       }
+      .only--text {
+        padding-right: 10px;
+      }
+      .width--20 {
+        width: 20%;
+        max-width: 20%;
+      }
       .width--40 {
         width: 40%;
         max-width: 40%;
+      }
+      .width--50 {
+        width: 50%;
+        max-width: 50%;
       }
     }
     .steps {
@@ -1167,6 +1220,13 @@ main {
         margin-top: 0;
       }
     }
+    .steps--yl {
+      h2::before {
+        background-color: #F9C12A;
+        color: #333333;
+        font-weight: 500;
+      }
+    }
     h1 {
       padding-top: 8px;
       &:first-child {
@@ -1179,17 +1239,27 @@ main {
     section > h2 {
         font-size: var(--ifm-h2-font-size);
     }
-    section h3 {
+    section h3, h2.welcome {
         font-size: var(--ifm-h3-font-size);
     }
     section h4 {
         font-size: var(--ifm-h4-font-size);
+    }
+    div.indentTab h4 code, section h4 code {
+      font-size: 1.3rem;
     }
     section h5 {
         font-size: var(--ifm-h5-font-size);
     }
     section h6 {
         font-size: var(--ifm-h6-font-size);
+    }
+    div.welcome {
+      font-weight: 500;
+      position: relative;
+      font-size: 16.5px;
+      top: -24px;
+      color: var(--ifm-breadcrums-arrow-color);
     }
     .tabs-container h2, .tabs-container section h2 {
       --ifm-h2-font-size: 2rem;
@@ -1266,9 +1336,14 @@ main {
     h2 img, h3 img {
       position: relative;
       top: 3px;
-      max-height: 30px;
       width: auto;
       border: none;
+    }
+    h2 img {
+      max-height: 30px;
+    }
+    h3 img {
+      max-height: 24px;
     }
     h3[id='pdf-download'] img {
       top: 5px;
@@ -1773,6 +1848,28 @@ main {
       color: #fff;
       border: none;
     }
+    code.filter {
+      background-color: #D7E2FF;
+      color: #296CF2;
+      border: none;
+      border-radius: 1.5px;
+    }
+    code.filter.center{
+      background-color: #D7E2FF;
+      color: #296CF2;
+      border: none;
+      border-left: 1px solid #B7CEFF;
+      border-right: 1px solid #B7CEFF;
+    }
+    code.custom-cl{
+      background-color: #A3A3A3;
+      color: #fff;
+      font-size: 70%;
+      padding: 0px 2px;
+      // padding: 0px 1px 0px 1px;
+      border: none;
+      border-radius: 2px;
+    }
     // k8s QoS Class
     code.grnt {
       background-color: #ff0d00;
@@ -1861,6 +1958,17 @@ main {
       border: none;
       padding: 0 5px 0 5px;
     }
+    code.Beta {
+      border-radius: 4px;
+      padding: 0 3px;
+      border: none;
+      background-color: rgb(235, 235, 235);
+      color: rgb(82, 114, 255);
+      font-family: "Oleo Script";
+      margin-top: -4px;
+      font-weight: 300;
+      font-size: 98%;
+    }
     code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
       color: rgb(139, 82, 255);
@@ -1895,6 +2003,11 @@ main {
     > p:has(> img:only-of-type:not([alt*='아이콘'])), &:has(> img:only-of-type:not([alt*='icon'])), &:has(> img:only-of-type:not([alt*='アイコン'])) {
       margin: 20px 0;
       padding: 0;
+    }
+    img.active {
+      border: 1px solid #296CF2 !important;
+      border-radius: 5px;
+      background-color: transparent;
     }
     img[alt*='새로운 기능 콘텐츠 예시'], img[alt*='모바일 앱 sc cl'] {
       width: 750px !important;
@@ -1977,8 +2090,16 @@ main {
     img[alt*='QR'] {
       width: 300px;
     }
+    img[src*='server-inventory-cl'] {
+      width: 700px; 
+      display: block;
+      margin: 0 auto; /* 중앙 정렬 */
+    }
     img[src*='k8s-download-yaml'],img.width-400 {
       width: 400px;
+    }
+    img.width-394 {
+      width: 394px;
     }
     img[alt*='number'], img[alt*='Number'], img[alt*='icon'], img[alt*='Icon'], img[alt*='아이콘'], img[alt*='지시선'], img[alt*='숫자'], img[alt*='arrow'], img[alt*='number-s'], img[alt*='Leader line'], img[alt*='アイコン'], img[alt*='指示線'], img[alt*='数字'], img.ico {
       position: relative;
@@ -1998,6 +2119,12 @@ main {
       max-height: 20px;
       top: 3px;
       border: none;
+    }
+    img[src*='k8s-node-timeline-config.png'], img[src*='k8s-node-timeline-resource.png'], img[src*='k8s-node-timeline-metrics.png'], img[src*='k8s-node-timeline-event.png'] {
+      max-height: 700px;
+      // 중앙 정렬
+      display: block; 
+      margin: 0 auto;
     }
     img[alt*='sc'] {
       border: none;
@@ -2492,6 +2619,26 @@ main {
         }
       }
     }
+    .db-metric-3 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 30%;
+            }
+            &:nth-of-type(2) {
+              width: 50%;
+            }
+            &:nth-of-type(3) {
+              width: 20%;
+            }
+            code {
+              word-break: break-all;
+            }
+          }
+        }
+      }
+    }
     .db-metric-4 {
       table {
         tr {
@@ -2645,9 +2792,6 @@ main {
             &:last-of-type {
               width: 10%;
             }
-            code {
-              display: block;
-            }
           }
         }
       }
@@ -2667,9 +2811,6 @@ main {
             }
             &:last-of-type {
               width: 10%;
-            }
-            code {
-              display: block;
             }
           }
         }
@@ -3120,6 +3261,14 @@ main {
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+    // 영문 블로그 날짜
+    // div.history_overview ul li > .changelog-date {
+    //   position: absolute;
+    //   left: -88px !important; 
+    //   font-size: 78%;
+    //   top: 8px;
+    //   transform: translateY(-50%);
+    // }
   }
   
   html[lang='ja-JP'] {
@@ -3129,6 +3278,14 @@ main {
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Noto Sans JP', 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important;
     }
+    // 일문 블로그 날짜
+    // & > .changelog-date {
+    //   position: absolute;
+    //   left: -105px; 
+    //   font-size: 75%;
+    //   top: 8px;
+    //   transform: translateY(-50%);
+    // }
   }
 
   .redocusaurus {
@@ -3273,5 +3430,81 @@ main {
   .markdown .tabs-container div.margin-top--md div[role='tabpanel'], .markdown > ol > li > div.tabs-container > div.margin-top--md > div[role='tabpanel'] {
     display: block;
     visibility: visible;
+  }
+
+  .markdown div[class*="filetree"] {
+    border: 1px solid var(--ifm-menu-color);
+    border-radius: 5px;
+    /* font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important; */
+    padding: 15px 15px 15px 15px;
+    margin-top: 20px;
+  }
+  .markdown button[class*="top"] {
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .markdown button[class*="top"] span[class*="type"] {
+    font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important;
+    color: var(--ifm-menu-color);
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  
+  .markdown div[class*="filetree"] ul[class*="fileitem"] {
+    margin-left: 15px;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 28px;
+  }
+
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] {
+    font-family: 'Noto Sans KR, Noto Sans, Noto Sans JP' !important;
+    font-weight: 500;
+    display: list-item;
+    padding-bottom: 15px !important;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"]:first-of-type {
+    margin-top: 15px;
+  }
+  
+  .markdown div[class*="filetree"] ul li[type='file'] span[class*="name"], .markdown div[class*="filetree"] ul li[type='folder'] span[class*="name"] {
+    display: table-cell;
+    margin-right: 15px;
+    min-width: 240px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 240px;
+  }
+  
+  .markdown div[class*="filetree"] div[class*="ico_"] {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+  }
+  
+  .markdown div[class*="filetree"] ul li span[class*="desc"] {
+    font-family: 'Noto Sans KR' !important;
+    font-weight: 400;
+    display: table-cell;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] ul {
+    list-style-type: none;
+  }
+  
+  .markdown div[class*="filetree"] ul li[class*="fileitem"] ul li [type='file'] span[class*="name"] {
+    min-width: 215px;
   }
 }

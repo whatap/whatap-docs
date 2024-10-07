@@ -9,7 +9,7 @@ keywords:
   - Wait分析
 ---
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
 
 遂行中のセッションが何の待機イベントで待機しているのか、頻繁に発生する待機イベントはどのようなのかを確認することができます。 5秒ごとに収集したアクティブセッションを待機(Wait)の観点から分析することができます。 
 
@@ -29,7 +29,7 @@ keywords:
 
 ![Wait Event Top 5](/img/db-analysis-wait-top5.png)
 
-**_WaitEvent Top5_**で最も多く発生した待機イベントを確認することができます。 上記のイメージを例に、最も多く発生した待機イベントのタイプは**Lock**です。 グラフチャートから![数字1](/img/number-01.png)詳細時間を選択すると、その時間のアクティブセッションを照会することができ、待機イベントが発生したSQL文を確認することができます。
+**_WaitEvent Top5_**で最も多く発生した待機イベントを確認できます。 上記のイメージを例に、最も多く発生した待機イベントのタイプは**Lock**です。 グラフチャートから![数字1](/img/number-01.png)詳細時間を選択すると、その時間のアクティブセッションを照会することができ、待機イベントが発生したSQL文を確認することができます。
 
 :::note
 
@@ -41,14 +41,10 @@ keywords:
 
 :::
 
-## テーブルデータのフィルタリング
-
 import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
 
-<Dbtabledatafiltering />
-
-## テーブルカラムの設定{#change-column}
+<Dbtabledatafiltering level={2} />
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn />
+<Dbv2dataeditcolumn level={2} />

@@ -1,0 +1,31 @@
+## XOS関連メトリクス {#xosmetrics}
+
+次は、XOSエージェントから収集されるメトリクスについての説明です。
+
+<div class='metric'>
+
+| Metric                  | Unit  | Description                                                             |
+| ----------------------- | ----- | ----------------------------------------------------------------------- |
+| `cpu(xos)`              | pct   | cpu使用率、`cpu_user` + `cpu_sys` + `cpu_iowait`の合計です。                      |
+| `cpu_user(xos)`         | pct   | cpuがユーザーコードを実行するのに費やした時間です。                                             |
+| `cpu_sys(xos)`          | pct   | cpuがkernel codeを実行した時間です。                                               |
+| `cpu_iowait(xos)`       | pct   | cpuがIOを待機した時間です。                                                        |
+| `cpu_idle(xos)`         | pct   | cpuプロセッサのアイドルタイムです。                                                     |
+| `disk_reads(xos)`       | block | ディスクから読み込んだデータの量です。                                                     |
+| `disk_read_bytes(xos)`  | バイト   | ディスクから読み込んだデータの量です。                                                     |
+| `disk_writes(xos)`      | block | ディスクで書き込まれたデータの量です。                                                     |
+| `disk_write_bytes(xos)` | バイト   | ディスクで書き込まれたデータの量です。                                                     |
+| `mem(xos)`              | pct   | メモリ使用率です。                                                               |
+| `mem_total(xos)`        | MB    | 全体のメモリ量です。                                                              |
+| `mem_free(xos)`         | MB    | システムで使用していないメモリの量です。                                                    |
+| `mem_used(xos)`         | MB    | システムで使用しているメモリ量です。                                                      |
+| `mem_buffcache(xos)`    | MB    | buff/cacheで使用中のメモリ量です。                                                  |
+| `mem_swaptotal(xos)`    | MB    | Swap全体サイズ、物理メモリが不足している場合に備えて設定します。                                      |
+| `mem_swapfree(xos)`     | MB    | Swapの未使用領域、Swap領域はディスク領域が解放されるため、Swapを使用している場合は、システム性能が大幅に低下する可能性があります。 |
+| `mem_available(xos)`    | MB    | メモリの可用領域です。                                                             |
+| `net_recv_bytes(xos)`   | バイト   | ネットワークで受信されたデータの量です。                                                    |
+| `net_recv_packets(xos)` | -     | ネットワークで受信されたデータパケットの数です。                                                |
+| `net_send_bytes(xos)`   | バイト   | ネットワークで送信したデータの量です。                                                     |
+| `net_send_packets(xos)` | -     | ネットワークに送信したデータパケットの数です。                                                 |
+
+</div>

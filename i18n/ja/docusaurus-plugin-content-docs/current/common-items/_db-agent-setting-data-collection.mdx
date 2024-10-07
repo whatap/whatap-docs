@@ -14,23 +14,21 @@
 
   既定値 `true`
 
-  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSize" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます
+  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます
 
 </InDoc>
 
+<Xclude product ='redis,mongodb,oracle,oracle-v1,altibase'>
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+</Xclude>
+
 <Xclude product ='redis,mongodb,oracle,oracle-v1'>
-
-- **tables_hour** <span class='type'>Int</span>
-
-  既定値`5`
-
-  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
-
-- **tables_hour** <span class='type'>Int</span>
-
-  既定値`5`
-
-  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
@@ -66,7 +64,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb'>
+<Xclude product='cubrid,redis,mongodb,altibase'>
 
 - **replication_name** <span class='type'>String</span>
 
@@ -147,7 +145,7 @@
 
   既定値 `true`
 
-  セグメントサイズの情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />メニューで当該データベースまたはテーブルスペースを選択すると、サイズ情報が確認できます。
+  セグメントサイズの情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューで当該データベースまたはテーブルスペースを選択すると、サイズ情報が確認できます。
 
 - **segments_hour** <span class='type'>Int</span>
 
@@ -206,5 +204,25 @@
   このオプションに関する<Cmdname sid="side_dbSize" className="uitext" />メニューの詳細については、[次の文書](database-size)を参考にしてください。
 
   :::
+
+</InDoc>
+
+<InDoc product="altibase">
+
+- **tablespace_lock** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  データファイルの追加やテーブルスペースの変更時に発生するテーブルスペースのロック(tablespace lock)をモニタリングするには、当該オプション値を`true`に変更してください。
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase">
+
+- **xview_min_sec** <span class='type'>Int</span>
+
+  既定値`0`
+
+  xview収集時、クエリの実行時間が設定された時間よりも長くかかる場合にのみ収集します。デフォルトとしては、実行時間が0秒以上のすべてのクエリを収集します。
 
 </InDoc>

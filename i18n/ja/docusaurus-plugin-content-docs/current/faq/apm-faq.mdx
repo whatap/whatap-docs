@@ -65,4 +65,42 @@ whatap.trace_active_transaction_lost_time=300000
 trace_active_transaction_lost_time=300000
 ```
 
+### 同時接続ユーザー数 / 訪問者数
+
+> 同時接続のユーザー数と訪問者数の違いは何ですか？
+
+**同時接続ユーザー数**と**訪問者数**は、計算方式とその目的に違いがあります。 
+
+**同時接続ユーザー数**は、特定の時点でアプリケーションを使用しているユーザーを測定するメトリクスであり、10秒間隔で最近5分間リクエストを送ったユーザーを重複なく計算した平均値です。 このメトリクスは、短時間でどれだけのユーザーが接続しているかを示し、リアルタイムでサーバーの負荷量を確認するのに活用できます。
+
+**訪問者数**は、1時間の間の**同時接続ユーザー数**を重複なく合計した値です。 このメトリクスは、一定期間ウェブサイトやアプリケーションに訪問した固有のユーザー数を測定するために使用され、主にトラフィック分析とユーザー参加度評価に活用されます。
+
+同時接続のユーザー数と訪問者数は、次のメニューパスで確認できます。
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />
+
+  <Cmdname sid="dashboard_user" className="uitext" />ウィジェットは、10秒間隔で収集した同時接続ユーザー数をリアルタイムで確認できます。
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" />
+
+  <Cmdname sid="product_type_apm" className="uitext" />カテゴリーの<Cmdname sid="user" className="uitext" />項目で、<Cmdname sid="realtime_user" className="uitext" />(5分統計)または<Cmdname sid="visitor" className="uitext" />(1時間合計値)を選択します。
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />
+
+  - **同時接続ユーザー数**: <Cmdname sid="category" className="uitext" />オプションで`app_user`を選択し、`realtime_user`フィールド値を確認します。
+
+  - **訪問者数**: <Cmdname sid="category" className="uitext" />オプションで`visitor`を選択し、`visit_user`フィールド値を確認します。
+
+:::note
+
+- リアルタイム(同時接続)ユーザーとは、同じ時間帯にシステムを使用しているユーザーを意味します。 リアルタイム(同時接続)ユーザーを計算または測定する方式は多数あります。
+
+- 通常、接続ユーザーはネットワークに接続しているユーザーを意味します。 ただし、ウェブシステムは未接続のネットワークを使用するため異なります。 接続されているという意味ではなく、最近のリクエストを送信したユーザーが測定の対象になる可能性があります。
+
+- ユーザー数は、単に合計されるのではなく、** HyperLogLog**によって計算されます。
+
+- エージェント設定でユーザーを識別するためにIPまたはクッキーを選択できます。 詳細については、[次の文書](../java/metrics-performance-counter#user-counter)を参照にしてください。
+
+:::
+
 </div>

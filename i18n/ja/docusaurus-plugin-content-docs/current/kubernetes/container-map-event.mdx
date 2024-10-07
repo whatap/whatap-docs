@@ -8,7 +8,7 @@ keywords:
   - Event
 ---
 
-ホーム画面>プロジェクト選択>**_ダッシュボード_**>**_コンテナマップ_**>対象選択後**詳細を表示**画面に入力>**_イベント_**タブの選択
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** >対象選択後<Cmdname sid="BTN07712" className="uitext" />画面へアクセス > **_イベント_**タブの選択
 
 リソースのライフサイクルが発生するすべてのイベントの履歴を提供します。WhaTapクバネティスモニタリングで提供するイベント情報は、次の通りです。
 
@@ -93,14 +93,14 @@ WhaTap Kubernetesは、クラスター環境で発生したKubernetesイベン�
 
 各イベントの左帯はイベントタイプを示します。グレー色は<span class='k8s-normal'>Normal</span>、オレンジ色は<span class='slow'>Warning</span>状態を意味します。ユーザーの選択できるクバネティスイベントは、次の通りです。
 
-| 選択対象                           | 提供イベント                                                        | 提供関連イベント                                                             |
-| ------------------------------ | ------------------------------------------------------------- | -------------------------------------------------------------------- |
-| 全体(All)     | >                                                             | プロジェクト全体イベント                                                         |
-| Namespace                      | >                                                             | Namespace下位の全体イベント                                                   |
-| Node                           | >                                                             | Nodeイベントまたはノード内のPod (コンテナ) 全体イベント                 |
-| Deployment                     | ① `kind`は Deployment<br/>② `name`は ユーザーの Deployment 名と一致      | `name`がユーザーDeployment名でスタート                                          |
-| ReplicaSet                     | ① `kind`は ReplicaSet<br/>② `name`は ユーザーの ReplicaSet 名と一致      | `name`はユーザーReplicaSet名でスタート                                          |
-| Pod(コンテナ)   | ① `kind`はPod<br/>② `name`はユーザーのPod名と一致                        | Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                          |
+| 選択対象           | 提供イベント                                                        | 提供関連イベント                                                         |
+| -------------- | ------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 全体(All)        | >                                                             | プロジェクト全体イベント                                                     |
+| Namespace      | >                                                             | Namespace下位の全体イベント                                               |
+| Node           | >                                                             | Nodeイベントまたはノード内のPod (コンテナ) 全体イベント                                |
+| Deployment     | ① `kind`は Deployment<br/>② `name`は ユーザーの Deployment 名と一致      | `name`がユーザーDeployment名でスタート                                      |
+| ReplicaSet     | ① `kind`は ReplicaSet<br/>② `name`は ユーザーの ReplicaSet 名と一致      | `name`はユーザーReplicaSet名でスタート                                      |
+| Pod(コンテナ)      | ① `kind`はPod<br/>② `name`はユーザーのPod名と一致                        | Podが所属するDeployment名でスタートまたはReplicaSet名でスタート                      |
 
 WhaTapに保存されているKubernetesイベントは、`message`、`namespace`、`kind`、`name`、`reason`, `type`などの項目で構成されています。
 

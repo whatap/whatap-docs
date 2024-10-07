@@ -44,14 +44,8 @@ const config = {
     }
   },
   // trailingSlash: false,
-  // clientModules: [
-  //   require.resolve('./static/js/rum.js')
-  // ],
-  scripts: [
-    // {
-    //   src: 'https://app.happyreact.com/widget/reactions.js',
-    //   async: true,
-    // },
+  clientModules: [
+    require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
@@ -78,7 +72,7 @@ const config = {
       },
     ],
     [
-      'docusaurus-plugin-enlarge-image', {}
+      'docusaurus-plugin-image-zoom', {}
     ],
   ],
   markdown: {
@@ -88,6 +82,26 @@ const config = {
       admonitions: true,
       headingIds: true,
     },
+    parseFrontMatter: async (params) => {
+      // Reuse the default parser
+      const result = await params.defaultParseFrontMatter(params);
+      const isPartial = params.filePath.includes("/_") || params.filePath.includes("\\_");
+      if (isPartial) {
+        return result;
+      }
+      // TODO fix weird undefined case!
+      const isDefaultLocale =
+        process.env.DOCUSAURUS_CURRENT_LOCALE === "undefined" ||
+        typeof process.env.DOCUSAURUS_CURRENT_LOCALE === "undefined" ||
+        process.env.DOCUSAURUS_CURRENT_LOCALE === "ko";
+      const isI18n = params.filePath.includes("/i18n/");
+      if (isDefaultLocale) {
+        result.frontMatter.isTranslationMissing = false;
+      } else {
+        result.frontMatter.isTranslationMissing = !isI18n;
+      }
+      return result;
+    }
   },
   themes: [
     '@docusaurus/theme-mermaid',
@@ -154,7 +168,7 @@ const config = {
         },
         // blog: false,
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 
@@ -258,6 +272,11 @@ const config = {
           content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
+      blog: {
+        sidebar: {
+          groupByYear: true
+        }
+      },
       docs: {
         sidebar: {
           autoCollapseCategories: false,
@@ -274,8 +293,8 @@ const config = {
         logo: {
           alt: 'WhaTap Docs',
           src: 'img/whatap-docs-logo.svg',
-          width: 152,
-          height: 28,
+          width: "154px",
+          height: "43px",
         },
         items: [
           {
@@ -728,7 +747,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp' ],
+        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img:not(.ico-link)',

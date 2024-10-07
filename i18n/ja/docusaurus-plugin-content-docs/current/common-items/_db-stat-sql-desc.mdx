@@ -1,4 +1,4 @@
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSqlStat" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />
 
 エージェントが収集したアクティブセッション内のSQLを実行回数、実行時間、待機時間などを基準に統計を算出し、表示期間中のTop SQL一覧を提供します。平均実行時間とピーク実行時間は、頻繁に実行されるSQL性能を分析できる根拠を提供します。
 
@@ -33,6 +33,24 @@
 - **_elapse wait (sec)_**: SQLの待機時間合計(秒)
 
 </Xclude>
+
+<InDoc product="altibase">
+
+- **_data page read_**: データページを物理的に読み取った回数
+
+- **_data page gets_**: データページを読み取るためにアクセスした回数
+
+- **_rebuild count_**: 再構成作業の回数
+
+- **_memory table access count_**: メモリテーブルにアクセスした回数
+
+- **_execute success count_**: 正常に実行されたコマンドの回数
+
+- **_user_**: データベースにリンクされているユーザー名
+
+- **_sql hash_**: クエリのハッシュ値
+
+</InDoc>
 
 - **_instance_**: インスタンス名
 

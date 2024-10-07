@@ -63,7 +63,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
   grant usage on schema {schema_name} to DB_User;
   ```
 
-- オブジェクト情報を照会する場合(<Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbObjectInfo" className="uitext" />)
+- オブジェクト情報を照会する場合(<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbObjectInfo" className="uitext" />)
 
   ```sql title="SQL"
   grant select on all tables in schema {schema_name} to DB_User;
@@ -81,9 +81,9 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 | ------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | 基本権限                                              | `grant pg_monitor to whatap;`                                   | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | `grant pg_read_all_stats,pg_read_all_settings to DB_User;`と同一 |
 | 詳細権限                                              | `grant usage on schema {schema_name} to whatap;`                | <Cmdname sid="side_dbSize" className="uitext" /> / <Cmdname sid="TTL06572" className="uitext" />                                                                       | 当該DBのすべてのスキーマに対して権限が必要                                        |
-| ^                                                 | `grant select on all tables in schema {schema_name} to whatap;` | テーブルレイアウトを照会                                                                                                                                                           | -                                                             |
-| ^                                                 | `grant pg_read_all_settings to whatap;`                         | パラメータ照会                                                                                                                                                                | 特定のパラメータ値が見えないことがある                                           |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;`                            | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                            | PostgreSQL 9.6バージョン以下はsuperuser権限が必要                          |
+| \^                                                | `grant select on all tables in schema {schema_name} to whatap;` | テーブルレイアウトを照会                                                                                                                                                           | -                                                             |
+| \^                                                | `grant pg_read_all_settings to whatap;`                         | パラメータ照会                                                                                                                                                                | 特定のパラメータ値が見えないことがある                                           |
+| <Cmdname sid="session_kill" className="uitext" /> | `grant pg_signal_backend to whatap;`                            | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | PostgreSQL 9.6バージョン以下はsuperuser権限が必要                          |
 
 </div>
 
@@ -122,17 +122,6 @@ db_port={DB_Server_Port}
 import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
 <JDBCDownload />
-
-:::info
-
-**PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
-
-:::
-
-{/* 공통 Notes*/}
-import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
-
-<Dbinstallagentcommonnotes />
 
 ### データベースユーザーファイルの生成 {#create-db-user}
 

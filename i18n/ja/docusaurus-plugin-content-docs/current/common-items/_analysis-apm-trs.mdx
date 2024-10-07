@@ -1,4 +1,4 @@
-ホーム画面> プロジェクト選択> <Cmdname sid="side_statistics" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" />
 
 WhaTapモニタリングサービスのメイン画面でプロジェクトを選択し<Cmdname sid="side_statistics" className="uitext" />の下位メニューを選択します。WhaTapエージェントは、トランザクション情報やSQLなどの主要なトレース情報について統計情報を収集します。5分ごとに一覧を作成してサーバーに送信します。
 
@@ -34,7 +34,7 @@ WhaTapモニタリングサービスのメイン画面でプロジェクトを�
 
 ## TX統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_tx" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />
 
 トランザクション統計を収集します。5分ごとに最大5,000個のURLごとの実行統計を収集してサーバーに送信します。異なるURLの数が5分間で5,000個を超えた場合は無視されます。
 
@@ -72,7 +72,7 @@ WhaTapモニタリングサービスのメイン画面でプロジェクトを�
 
 ## トランザクションドメイン統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statDomain" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statDomain" className="uitext" />
 
 WhaTapエージェントは、ドメインごとのトランザクション統計を収集できます。1台のサーバーに複数のドメインを個別にサービスを提供するシステムでは、ドメインごとの分析が必要になる場合があります。次のオプションを設定してください。
 
@@ -104,7 +104,7 @@ whatap.stat_domain_enabled=true
 
 ## TX Caller統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statCaller" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statCaller" className="uitext" />
 
 マルチサーバーがrestコールに接続されると**Caller**と**Callee**間の関連付けられた統計を収集できます。このデータを収集するには、次のオプションを設定してください。
 
@@ -183,9 +183,35 @@ whatap.stat_mtrace_enabled=true
 
 :::
 
+## IPトランザクション統計{#statiptx}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statIp" className="uitext" />
+
+特定のIPアドレスごとにアプリケーションから呼び出したURLと、呼び出し件数を照会できる機能を提供します。この機能は、異常に多くの要求が発生するIPアドレスを確認し、そのIPアドレスから呼び出されたURLを分析して、潜在的なセキュリティ脅威や性能問題を事前に識別するのに役立ちます。ユーザーはこの情報に基づいて、不要または悪意のあるリクエストをブロックできます。
+
+<Cmdname sid="filter" className="uitext" />オプションを通じてIPアドレスまたはトランザクションアドレスをフィルタリングし、条件に合うデータを素早く照会できます。特定のIPやトランザクションアドレスのパターンを分析する時に役立ちます。
+
+| カラム                          | 説明                                        |
+| ---------------------------- | ----------------------------------------- |
+| <Cmdname sid="ip" />         | リクエストを発生させたクライアントのIPアドレス                  |
+| <Cmdname sid="TTL06918" />   | 呼び出されたトランザクションのアドレス、特定経路の変数は`{}`で表示       |
+| <Cmdname sid="count" />      | 当該IPアドレスで発生したリクエストの合計件数                   |
+| <Cmdname sid="error" />      | リクエスト中に発生したエラー数                           |
+| <Cmdname sid="timeAvg_ms" /> | 当該リクエストの平均応答時間(ミリ秒、ms)                    |
+
+:::tip
+
+- **異常なトラフィック検出**: 異常に呼び出し件数の多いIPを探知し、そのIPで発生したトランザクションアドレスのパターンを分析し、潜在的な攻撃を遮断できます。例えば、特定のIPから`/account/{aa}/{bb}/{cc}`URLに対して過度な要請が発生した場合、そのIPをブロックしたり要請を制限する措置ができます。
+
+- **応答時間分析**: 平均応答時間が異常に高いIPを確認し、ネットワークまたはサーバー側の性能問題を把握して改善できます。
+
+- **エラー発生分析**: 特定のIPでエラーが多数発生した場合、そのIPの要請に問題があるか、またはシステムに特定の問題があるかを診断できます。
+
+:::
+
 ## トランザクションReferer統計{#stat-referer}
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statReferer" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statReferer" className="uitext" />
 
 WhaTapエージェントは、Refererごとにトランザクション統計を収集できます。次のオプションを設定してください。
 
@@ -217,7 +243,7 @@ whatap.stat_referer_enabled=true
 
 ## エラー統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statError" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />
 
 5分間に発生したサービスエラーに関する統計です。異なるエラーとトランザクション名をキーとして発生件数を収集します。エラー発生時点のスタックを提供します。5分あたり最大1,000個の異なるエラーを統計化します。
 
@@ -230,7 +256,7 @@ whatap.stat_referer_enabled=true
 
 ## SQL実行統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statSql" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />
 
 5分間のSQL性能統計を収集します。5分間に異なるSQL文が最大5,000まで許可されます。Javaプロセスで制限を超えるSQLを検出すると、そのSQLは統計データから破棄されます。
 
@@ -254,26 +280,26 @@ whatap.stat_referer_enabled=true
 
 ## HTTP Call性能統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statHttpc" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statHttpc" className="uitext" />
 
 HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケーション外部呼び出し統計を収集します。5分間、異なるHttp Call文章は最大5,000まで許可します。１つのアプリケーションプロセスで制限を超えた外部Http Callが発生する場合、統計データは捨てられます。
 
-| カラム                          | 説明                                                                      |
-| ---------------------------- | ----------------------------------------------------------------------- |
-| <Cmdname sid="ITM07683" />   | HTTP呼び出しURLハッシュ(hash)                                |
-| <Cmdname sid="TTL06918" />   | HTTP APIをリクエストしたURLのいずれかを任意に収集した情報                                      |
-| <Cmdname sid="host" />       | HostまたはIPアドレス                                                           |
-| <Cmdname sid="port" />       | TCPポート                                                                  |
-| <Cmdname sid="total" />      | すべての実行件数                                                                |
-| <Cmdname sid="error" />      | エラー発生件数                                                                 |
-| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                                                              |
-| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                                                                 |
-| <Cmdname sid="timeMin_ms" /> | 最小応答時間                                                                  |
-| <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                                  |
+| カラム                          | 説明                                                    |
+| ---------------------------- | ----------------------------------------------------- |
+| <Cmdname sid="ITM07683" />   | HTTP呼び出しURLハッシュ(hash)                                 |
+| <Cmdname sid="TTL06918" />   | HTTP APIをリクエストしたURLのいずれかを任意に収集した情報                    |
+| <Cmdname sid="host" />       | HostまたはIPアドレス                                         |
+| <Cmdname sid="port" />       | TCPポート                                                |
+| <Cmdname sid="total" />      | すべての実行件数                                              |
+| <Cmdname sid="error" />      | エラー発生件数                                               |
+| <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                                            |
+| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                                               |
+| <Cmdname sid="timeMin_ms" /> | 最小応答時間                                                |
+| <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                |
 
 ## クライアントIPリージョン別の呼び出し件数
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statRemote" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statRemote" className="uitext" />
 
 サーバーとクライアントの物理的距離は、データ送信時間に比例します。クライアントIPのリージョン別の呼び出し件数を統計的に収集します。5分当たりに収集できる異なるIP数は、インスタンスあたり最大70,000個です。
 
@@ -301,7 +327,7 @@ HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケー�
 
 ## ユーザエージェント別の呼び出し件数
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragentDetail" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragentDetail" className="uitext" />
 
 ユーザーエージェント文字列のHashごとに呼び出し件数を収集します。5分ごとに収集できる異なるUser Agent Hashはインスタンス当たり最大500個です。
 
@@ -314,7 +340,7 @@ HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケー�
 
 ## クライアントブラウザの統計
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragent" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragent" className="uitext" />
 
 ユーザーエージェントの文字列を分析して、エンドユーザーが使用するブラウザーの種類、OS基準で集計した統計情報を提供します。収集した統計情報に基づいて作成されたパイチャートを通じて占有率を確認できます。
 

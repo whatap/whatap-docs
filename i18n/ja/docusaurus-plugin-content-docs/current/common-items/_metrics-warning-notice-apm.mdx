@@ -1,6 +1,6 @@
 ## テンプレート {#template}
 
-### メトリクスイベント
+### メトリックスイベント
 
 <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="metrics" className="uitext" />セクションで<Cmdname sid="add_notification" className="uitext" />ボタンを選択します。 <Cmdname sid="template" className="uitext" />で希望する項目を選択します。
 
@@ -30,13 +30,13 @@
 
 - **_非常に遅いアクティブセッションが見つかりました。_**
 
-  条件：`very_slow_tx_cnt_m5_avg` > 10
+  条件：`very_slow_tx_cnt_m5_avg` \> 10
 
   プロジェクトに含まれた特定の`okind`に属するエージェントから、8秒を超えたトランザクションの数の合計が10件を超えたらアラート通知を送信します。
 
 - **_先週と比べたTPSが30％以上変化しました。_**
 
-  条件：`one_week_diff_abs` > `current_tps` \* 0.3
+  条件：`one_week_diff_abs` \> `current_tps` \* 0.3
 
   プロジェクトに含まれた特定の`okind`に属するエージェントのTPSの合計が、7日前と比較して30%以上変化したらアラート通知を送信します。
 

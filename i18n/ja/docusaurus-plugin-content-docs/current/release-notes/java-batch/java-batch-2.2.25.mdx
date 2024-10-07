@@ -1,0 +1,31 @@
+---
+id: java-batch-2_2_25
+title: Java Batch Agent v2.2.25
+toc_max_heading_level: 2
+pagination_next: release-notes/java-batch/java-batch-2_2_24
+displayed_sidebar: releaseSidebar
+---
+
+2024年08月20日
+
+- <Status priority='1'>Changed</Status>`profile_expired_time`オプションのデフォルト値を30秒に修正
+
+  ```ini title="whatap.conf"
+  # default: 30000
+  profile_expired_time=30000
+  ```
+
+- <Status priority='1'>Changed</Status>プロファイルの整理作業の際、エージェントログの一部を修正
+
+- <Status priority='2'>Fixed</Status>配置作業が終わった後も追跡データの収集ができない問題を防止
+
+  トレースが開始されていない場合はデータ収集を行わないよう、`auto_start_tx`の基本値を`true`から `false`に修正
+
+  ```ini title="whatap.conf"
+  # default: false
+  auto_start_tx=false
+  ```
+
+import DownloadJavaBatchAgent from "./_import_dl-java-batch-agent.mdx";
+
+<DownloadJavaBatchAgent />

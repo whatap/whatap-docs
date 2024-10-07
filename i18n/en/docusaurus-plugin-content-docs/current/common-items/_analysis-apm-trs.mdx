@@ -1,4 +1,4 @@
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" />
 
 Select a project in the initial screen of the WhaTap monitoring service, and then select a sub menu under <Cmdname sid="side_statistics" className="uitext" />. The WhaTap agent collects statistical data for the key traces such as transaction information and SQL. A list is created every 5 minutes and it is sent to the server.
 
@@ -34,7 +34,7 @@ You can view the data for up to 31 days. However, you can view the data for up t
 
 ## Transaction statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_tx" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />
 
 It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specific performance statistics are collected and sent to the server. If the number of URLs for 5 minutes exceeds 5,000, this is ignored.
 
@@ -72,7 +72,7 @@ It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specif
 
 ## Transaction domain statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statDomain" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statDomain" className="uitext" />
 
 The WhaTap agent can collect transaction statistics for each domain. In the systems where multiple domains are separated and serviced on a server, domain-specific analysis may be required. Set the following option:
 
@@ -104,7 +104,7 @@ Through the collected data, you can identify the processing status of URLs for e
 
 ## Transaction caller statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statCaller" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statCaller" className="uitext" />
 
 If the multi server is connected by a rest call, the relationship statistics between **callers** and **callees** can be collected. To collect this data, set the following options:
 
@@ -183,9 +183,35 @@ The maximum number of CSV lines that can be downloaded at one time from the <Cmd
 
 :::
 
+## IP transaction statistics {#statiptx}
+
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statIp" className="uitext" />
+
+It provides the feature to view the URLs and number of calls from applications for each specific IP address. This feature is useful for identifying potential security threats or performance issues by checking IP addresses with unusually high request volumes and analyzing the URLs called from those IP addresses. You can block unnecessary or malicious requests based on this information.
+
+You can filter IP addresses or transaction addresses through the <Cmdname sid="filter" className="uitext" /> option to quickly retrieve data that meets your criteria. This is useful when analyzing specific IPs or transaction address patterns.
+
+| Columns                          | Description                                                                            |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| <Cmdname sid="ip" />             | IP address of the client that made the request.                                        |
+| <Cmdname sid="TTL06918" />       | Addresses of the transactions called and specific path variables are marked with `{}`. |
+| <Cmdname sid="count" />          | Total number of requests made from the IP address.                                     |
+| <Cmdname sid="error" />          | Number of errors occurred for requests.                                                |
+| <Cmdname sid="timeAvg_ms" />     | Average response time for the request (milliseconds, ms).                              |
+
+:::tip
+
+- **Abnormal traffic detection**: It can detect IPs with an abnormally high number of calls, analyze transaction address patterns from those IPs, and block potential attacks. For example, if there are excessive requests to the `/account/{aa}/{bb}/{cc}` URL from a specific IP, you can block the IP or take action to limit requests.
+
+- **Response time analysis**: It can detect IPs with abnormally high average response times to identify and improve performance issues on the network or server side.
+
+- **Error occurrence analysis**: When multiple errors occur from a specific IP, you can diagnose whether there is a problem with the requests from the IP or a problem with the system.
+
+:::
+
 ## Transaction referer statistics{#stat-referer}
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statReferer" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statReferer" className="uitext" />
 
 The WhaTap agent can collect transaction statistics for each referer. Set the following option:
 
@@ -217,7 +243,7 @@ Through the collected data, you can see the referer data on the statistics.
 
 ## Error Statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statError" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />
 
 They are statistics on the service errors that occurred for 5 minutes. They collect different errors and transaction names with the keys. They provide the stacks upon error occurrence. The statistics appear for up to 1,000 errors every 5 minutes.
 
@@ -230,7 +256,7 @@ They are statistics on the service errors that occurred for 5 minutes. They coll
 
 ## SQL execution statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statSql" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statSql" className="uitext" />
 
 The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL statements are allowed in 5 minutes. If a single Java process generates SQL statements that exceed the limit, they are discarded from statistical data.
 
@@ -254,7 +280,7 @@ The SQL execution statistics for 5 minutes are collected. A maximum of 5,000 SQL
 
 ## HTTP call execution statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statHttpc" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statHttpc" className="uitext" />
 
 They collect the statistics of calls outside the applications for 5 minutes via the HTTP and HTTPS protocols. A maximum of 5,000 HTTP call statements are allowed in 5 minutes. If a single application process generates external HTTP call statements that exceed the limit, they are discarded from statistical data.
 
@@ -273,7 +299,7 @@ They collect the statistics of calls outside the applications for 5 minutes via 
 
 ## Number of calls for each client IP region
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statRemote" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statRemote" className="uitext" />
 
 The physical distance between the server and the client is proportional to the data transfer time. It statistically collects call counts for each region of the client IP. The number of different IPs that can be collected per 5 minutes is up to 70,000 per instance.
 
@@ -301,7 +327,7 @@ The share chart collects user access locations and presents them for each countr
 
 ## Call counts for each user agent
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragentDetail" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragentDetail" className="uitext" />
 
 The numbers of calls for each hash of the user agent string are collected. There is a maximum of 500 different user agent hashes for each instance that can be collected every 5 minutes.
 
@@ -314,7 +340,7 @@ The numbers of calls for each hash of the user agent string are collected. There
 
 ## Client Browser Statistics
 
-Home > Select Project > <Cmdname sid="side_statistics" className="uitext" /> > <Cmdname sid="side_statUseragent" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragent" className="uitext" />
 
 By analyzing the user agent strings, it provides the statistical information based on the browser type and OS used by the end users. You can check the market share through a pie chart created based on the collected statistical information.
 

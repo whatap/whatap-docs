@@ -14,23 +14,21 @@
 
   Default `true`
 
-  It collects the table size information. In <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSize" className="uitext" />, you can see the table size by selecting the database.
+  It collects the table size information. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, you can see the table size by selecting the database.
 
 </InDoc>
 
+<Xclude product ='redis,mongodb,oracle,oracle-v1,altibase'>
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect data for storing the table size information. The default value is `5` and collection starts at 5 am.
+
+</Xclude>
+
 <Xclude product ='redis,mongodb,oracle,oracle-v1'>
-
-- **tables_hour** <span class='type'>Int</span>
-
-  Default `5`
-
-  Set the time to collect data for storing the table size information. The default value is `5` and collection starts at 5 am.
-
-- **tables_hour** <span class='type'>Int</span>
-
-  Default `5`
-
-  Set the time to collect data for storing the table size information. The default value is `5` and collection starts at 5 am.
 
 - **long_run_session_sec** <span class='type'>Second</span>
 
@@ -66,7 +64,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb'>
+<Xclude product='cubrid,redis,mongodb,altibase'>
 
 - **replication_name** <span class='type'>String</span>
 
@@ -147,7 +145,7 @@
 
   Default `true`
 
-  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
+  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
 
 - **segments_hour** <span class='type'>Int</span>
 
@@ -206,5 +204,25 @@
   For more information about the <Cmdname sid="side_dbSize" className="uitext" /> menu associated with this option, see [the following](database-size).
 
   :::
+
+</InDoc>
+
+<InDoc product="altibase">
+
+- **tablespace_lock** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  To monitor tablespace locks that occur when adding data files or changing tablespaces, change the option value to `true`.
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase">
+
+- **xview_min_sec** <span class='type'>Int</span>
+
+  Default `0`
+
+  When collecting xview, collection is performed only when the query execution time is longer than the set time. The default setting is to collect all queries whose execution time is longer than 0 seconds.
 
 </InDoc>

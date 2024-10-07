@@ -1,6 +1,24 @@
 If the ![Magnifying glass icon](/img/ic-search.svg) **_Display Detail_** icon is selected in <InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">Application</InDoc><InDoc pages="deployment-list">Deployment</InDoc>, you can see the information details on the <InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">Application</InDoc><InDoc pages="deployment-list">Deployment</InDoc>.
 
-<Xclude pages="resource-application-list">
+<InDoc pages="resource-pod-list">
+
+<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
+
+</InDoc>
+
+<InDoc pages="resource-application-list">
+
+<ImgLang img='k8s-app-list-detail.png' desc='Pod List details' />
+
+</InDoc>
+
+<InDoc pages="deployment-list">
+
+<ImgLang img='k8s-deployment-list-detail.png' desc='deployment list details' />
+
+</InDoc>
+
+<Xclude pages="resource-application-list,resource-pod-list">
 
 :::note 
 
@@ -20,27 +38,19 @@ The [Trace](container-map-trace), [Metrics](container-map-metrics), [Log](contai
 
 </InDoc>
 
+<InDoc pages="resource-pod-list">
+
+:::note 
+
+The [Trace](container-map-trace), [Metrics](container-map-metrics), [Log](container-map-log), [Event](container-map-event), and [Pod summary analysis](container-map-target-info#pod-summary-analysis) tabs of the detailed view window are the same as in Container map's Display Detail.
+
+:::
+
+</InDoc>
+
 ### Resources
 
 After selecting a target, you can see the resource list and relationship diagram for the selected resource in the <Cmdname sid="resource" className="uitext" /> tab in the detailed view. 
-
-<InDoc pages="resource-pod-list">
-
-<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
-
-</InDoc>
-
-<InDoc pages="resource-application-list">
-
-<ImgLang img='k8s-app-list-detail.png' desc='Pod List details' />
-
-</InDoc>
-
-<InDoc pages="deployment-list">
-
-<ImgLang img='k8s-deployment-list-detail.png' desc='deployment list details' />
-
-</InDoc>
 
 #### Summary
 
@@ -57,3 +67,19 @@ It provides a summary of the list of resources for the selected resource. If you
 #### Relational diagram of resources
 
 You can visually see the relationships and status between resources. As in the list, you can check the detailed metric information by hovering your mouse over a Pod, container, or application. If you select a resource, the resource list page appears.
+
+<InDoc pages="resource-pod-list">
+
+### Pod summary analysis {#pod-summary-analysis}
+
+import PodSummary from "../common-items/_import_k8s-pod-summary-analysis.mdx";
+
+<PodSummary />
+
+:::note 
+
+Currently, the summary analysis is available only in Korean. 
+
+:::
+
+</InDoc>

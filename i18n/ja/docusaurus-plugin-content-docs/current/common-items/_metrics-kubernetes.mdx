@@ -54,16 +54,16 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | Container Block I/O Write IOPS                                                                                                        |
 | ^                       | ^     | コンテナ全体ブロックデバイスの1秒当たり書き込んだ数の合計                                                                                                         |
 | cpu_per_quota           | パーセント | CpuByLimit                                                                                                                            |
-| ^                       | ^     | Container CPU Usage by Limit (%)                                                                                   |
+| ^                       | ^     | Container CPU Usage by Limit (%)                                                                                                      |
 | ^                       | ^     | CPU Limit基準CPUの全体使用率                                                                                                                  |
 | cpu_quota               | ミリコア  | CpuLimit                                                                                                                              |
-| ^                       | ^     | Container CPU Limit (core)                                                                                         |
+| ^                       | ^     | Container CPU Limit (core)                                                                                                            |
 | ^                       | ^     | コンテナのCPU Limit割当量<br/>Limitが未設定の場合、コンテナが実行中のノードのCPU全体コアがミリコア単位で表示されます。                                                                |
 | cpu_quota_percent       | パーセント | CpuLimitByNode                                                                                                                        |
-| ^                       | ^     | Container CPU Limit by Node (%)                                                                                    |
+| ^                       | ^     | Container CPU Limit by Node (%)                                                                                                       |
 | ^                       | ^     | ノードCPUに対するコンテナCPU Limit割当量<br/>Limit未設定の場合、コンテナが作動中の当該ノードのCPU全体コアがパーセントで表示される。                                                        |
 | cpu_sys                 | パーセント | CpuSysByNode                                                                                                                          |
-| ^                       | ^     | Container CPU Sys Usage by Node (%)                                                                                |
+| ^                       | ^     | Container CPU Sys Usage by Node (%)                                                                                                   |
 | ^                       | ^     | ノードCPUに対するコンテナCPU System使用率                                                                                                           |
 | cpu_throttledperiods    | 件数    | CpuThrottledCnt                                                                                                                       |
 | ^                       | ^     | Container CPU Throttling Count                                                                                                        |
@@ -72,61 +72,61 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | Container CPU Throttling Time                                                                                                         |
 | ^                       | ^     | コンテナCPU Throttled時間                                                                                                                   |
 | cpu_total               | パーセント | CpuByNode                                                                                                                             |
-| ^                       | ^     | Container CPU Usage by Node (%)                                                                                    |
+| ^                       | ^     | Container CPU Usage by Node (%)                                                                                                       |
 | ^                       | ^     | ノードCPUに対するコンテナCPU使用率                                                                                                                  |
 | cpu_total_milli         | ミリコア  | CpuTotUsage                                                                                                                           |
-| ^                       | ^     | Container CPU Usage (millicore)                                                                                    |
+| ^                       | ^     | Container CPU Usage (millicore)                                                                                                       |
 | ^                       | ^     | コンテナCPU使用量                                                                                                                            |
 | cpu_user                | パーセント | CpuUserByNode                                                                                                                         |
-| ^                       | ^     | Container CPU User Usage by Node (%)                                                                               |
+| ^                       | ^     | Container CPU User Usage by Node (%)                                                                                                  |
 | ^                       | ^     | ノードCPUに対するコンテナCPU User使用率                                                                                                             |
 | cpu_request             | ミリコア  | CpuRequest                                                                                                                            |
-| ^                       | ^     | Container CPU Request (core)                                                                                       |
+| ^                       | ^     | Container CPU Request (core)                                                                                                          |
 | ^                       | ^     | コンテナCPU要求                                                                                                                             |
 | cpu_per_request         | パーセント | CpuByRequest                                                                                                                          |
-| ^                       | ^     | Container CPU Usage by Request (%)                                                                                 |
+| ^                       | ^     | Container CPU Usage by Request (%)                                                                                                    |
 | ^                       | ^     | コンテナCPUリクエストに対する使用率<br/>= cpu_total_milli / cpu_request \* 100                                                                        |
 | mem_failcnt             | 件数    | MemFailCnt                                                                                                                            |
 | ^                       | ^     | Container Memory Failure Count                                                                                                        |
 | ^                       | ^     | コンテナメモリLimit到達件数                                                                                                                      |
 | mem_limit               | バイト   | MemLimit                                                                                                                              |
-| ^                       | ^     | Container Memory Limit (byte)                                                                                      |
+| ^                       | ^     | Container Memory Limit (byte)                                                                                                         |
 | ^                       | ^     | コンテナのメモリLimitサイズ                                                                                                                      |
 | mem_maxusage            | バイト   | MemMaxUsage                                                                                                                           |
-| ^                       | ^     | Container Memory Max Usage (byte)                                                                                  |
+| ^                       | ^     | Container Memory Max Usage (byte)                                                                                                     |
 | ^                       | ^     | コンテナメモリの最大使用量の記録値                                                                                                                     |
 | mem_percent             | パーセント | MemWsByLimit                                                                                                                          |
-| ^                       | ^     | Container Memory Working Set by Limit (%)                                                                          |
+| ^                       | ^     | Container Memory Working Set by Limit (%)                                                                                             |
 | ^                       | ^     | コンテナメモリLimit基準working set使用量<br/>= mem_working_set / mem_limit \* 100                                                                 |
 | mem_totalcache          | バイト   | MemTotCache                                                                                                                           |
-| ^                       | ^     | Container Memory Total Cache (byte)                                                                                |
+| ^                       | ^     | Container Memory Total Cache (byte)                                                                                                   |
 | ^                       | ^     | コンテナ全体のキャッシュサイズ                                                                                                                       |
 | mem_totalpgfault        | 回数    | MemTotPageFaultCnt                                                                                                                    |
 | ^                       | ^     | Container Memory Total Page Fault Count                                                                                               |
 | ^                       | ^     | コンテナPage Fault回数                                                                                                                      |
 | mem_totalrss            | バイト   | MemTotRss                                                                                                                             |
-| ^                       | ^     | Container Memory Total RSS (byte)                                                                                  |
+| ^                       | ^     | Container Memory Total RSS (byte)                                                                                                     |
 | ^                       | ^     | コンテナRSSメモリ全体サイズ                                                                                                                       |
 | mem_totalrss_percent    | パーセント | MemTotRssByLimit                                                                                                                      |
-| ^                       | ^     | Container Memory Total RSS by Limit (%)                                                                            |
+| ^                       | ^     | Container Memory Total RSS by Limit (%)                                                                                               |
 | ^                       | ^     | コンテナRSSメモリ全体使用率                                                                                                                       |
 | mem_totalunevictable    | バイト   | MemTotUnevictable                                                                                                                     |
-| ^                       | ^     | Container Memory Total Unevictable (byte)                                                                          |
+| ^                       | ^     | Container Memory Total Unevictable (byte)                                                                                             |
 | ^                       | ^     | コンテナUnevictable Memory全体サイズ                                                                                                           |
 | mem_usage               | バイト   | MemUsage                                                                                                                              |
-| ^                       | ^     | Container Memory Usage (byte)                                                                                      |
+| ^                       | ^     | Container Memory Usage (byte)                                                                                                         |
 | ^                       | ^     | コンテナメモリ使用量                                                                                                                            |
 | mem_working_set         | バイト   | MemWs                                                                                                                                 |
-| ^                       | ^     | Container Memory Working Set (byte)                                                                                |
+| ^                       | ^     | Container Memory Working Set (byte)                                                                                                   |
 | ^                       | ^     | コンテナメモリworking set<br/>= mem_usage - inactive file                                                                                    |
 | mem_working_set_percent | パーセント | MemWsByLimit                                                                                                                          |
-| ^                       | ^     | Container Memory Working Set by Limit (%)                                                                          |
+| ^                       | ^     | Container Memory Working Set by Limit (%)                                                                                             |
 | ^                       | ^     | コンテナメモリLimit基準working set使用量<br/>= mem_working_set / mem_limit \* 100                                                                 |
 | mem_request             | バイト   | MemRequest                                                                                                                            |
-| ^                       | ^     | Container Memory Request (byte)                                                                                    |
+| ^                       | ^     | Container Memory Request (byte)                                                                                                       |
 | ^                       | ^     | コンテナのメモリRequestサイズ                                                                                                                    |
 | mem_per_request         | パーセント | MemWsByRequest                                                                                                                        |
-| ^                       | ^     | Container Memory Working Set by Request (%)                                                                        |
+| ^                       | ^     | Container Memory Working Set by Request (%)                                                                                           |
 | ^                       | ^     | コンテナメモリRequest基準working set使用量<br/>= mem_working_set / mem_request \* 100                                                             |
 | network_rbps            | バイト   | NetRxBytes                                                                                                                            |
 | ^                       | ^     | Container Network Receive Byte                                                                                                        |
@@ -153,10 +153,10 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | Container Network Transmit IOPS                                                                                                       |
 | ^                       | ^     | コンテナのネットワーク送信数                                                                                                                        |
 | node_cpu                | パーセント | ConNodeCpu                                                                                                                            |
-| ^                       | ^     | Container Work Node CPU Usage (%)                                                                                  |
+| ^                       | ^     | Container Work Node CPU Usage (%)                                                                                                     |
 | ^                       | ^     | コンテナ実行中のノードのCPU使用量                                                                                                                    |
 | node_mem                | パーセント | ConNodeMem                                                                                                                            |
-| ^                       | ^     | Container Work Node Memory Usage (%)                                                                               |
+| ^                       | ^     | Container Work Node Memory Usage (%)                                                                                                  |
 | ^                       | ^     | コンテナ実行中のノードのメモリ使用量                                                                                                                    |
 | phase                   | 文字列   | Podライフサイクル<br/> ① PENDING<br/> ② RUNNING <br/>③ SUCCEEDED <br/>④ FAILED <br/>⑤ UNKNOWN                                                |
 | restart_count           | 整数    | ConRestartCnt                                                                                                                         |
@@ -247,30 +247,30 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 #### Fields {#kube_stat-fields}
 
-| フィールド名                       | 単位        | 説明                                                                                                                              | 備考                   |
-| ---------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| alloctable_cpu               | ミリコア      | クラスター全体のコア数                                                                                                                     | クラスタープロジェクトOnly      |
-| alloctable_ephemeral-storage | バイト       | クラスター全体の割り当て可能なephemeral storage                                                                                                | クラスタープロジェクトOnly      |
-| alloctable_hugepages-1gi     | バイト       | クラスター全体の割り当て可能なhugepages-1Gi                                                                                                    | クラスタープロジェクトOnly      |
-| alloctable_hugepages-2mi     | バイト       | クラスター全体の割り当て可能なhugepages-2Mi                                                                                                    | クラスタープロジェクトOnly      |
-| alloctable_memory            | バイト       | クラスタ全体の割り当て可能なメモリ                                                                                                               | クラスタープロジェクトOnly      |
-| alloctable_pods              | 整数        | 割り当て可能なPod数                                                                                                                     | -                    |
-| available_pod                | 整数        | PhaseがRunning状態のPodの数                                                                                                           | -                    |
+| フィールド名                       | 単位        | 説明                                                                                                           | 備考                   |
+| ---------------------------- | --------- | ------------------------------------------------------------------------------------------------------------ | -------------------- |
+| alloctable_cpu               | ミリコア      | クラスター全体のコア数                                                                                                  | クラスタープロジェクトOnly      |
+| alloctable_ephemeral-storage | バイト       | クラスター全体の割り当て可能なephemeral storage                                                                             | クラスタープロジェクトOnly      |
+| alloctable_hugepages-1gi     | バイト       | クラスター全体の割り当て可能なhugepages-1Gi                                                                                 | クラスタープロジェクトOnly      |
+| alloctable_hugepages-2mi     | バイト       | クラスター全体の割り当て可能なhugepages-2Mi                                                                                 | クラスタープロジェクトOnly      |
+| alloctable_memory            | バイト       | クラスタ全体の割り当て可能なメモリ                                                                                            | クラスタープロジェクトOnly      |
+| alloctable_pods              | 整数        | 割り当て可能なPod数                                                                                                  | -                    |
+| available_pod                | 整数        | PhaseがRunning状態のPodの数                                                                                        | -                    |
 | desired_pod                  | 整数        | `metadata.ownerReferences`なしで配布されたPod数とクバネティスオブジェクト(ReplicaSet, Daemonset, StatefulSet)に定義されたDesired Pod数の合計 | -                    |
-| ^                            | ^         | `kubectl get pods -A`で参照したPod数と同じ                                                                                               | -                    |
-| nodes                        | 整数        | ノード数                                                                                                                            | -                    |
-| pod_phase_Pending            | 整数        | PendingステータスPod数                                                                                                                | -                    |
-| pod_phase_Running            | 整数        | Running状態Pod数                                                                                                                   | -                    |
-| running_containers           | 整数        | Runningコンテナ数                                                                                                                    | -                    |
-| stopped_containers           | 整数        | Stoppedコンテナ数                                                                                                                    | -                    |
-| total_available_cpu          | 整数        | 割り当て可能なCPUの合計                                                                                                                   | -                    |
-| total_available_memory       | 整数        | 割り当て可能なMemory合計                                                                                                                 | -                    |
-| total_limit_cpu              | ミリコア      | Limit CPU合計                                                                                                                     | -                    |
-| total_limit_memory           | バイト       | Limit Memory合計                                                                                                                  | -                    |
-| total_request_cpu            | ミリコア      | Request CPU合計                                                                                                                   | -                    |
-| total_request_memory         | バイト       | Request Memory合計                                                                                                                | -                    |
+| ^                            | ^         | `kubectl get pods -A`で参照したPod数と同じ                                                                            | -                    |
+| nodes                        | 整数        | ノード数                                                                                                         | -                    |
+| pod_phase_Pending            | 整数        | PendingステータスPod数                                                                                             | -                    |
+| pod_phase_Running            | 整数        | Running状態Pod数                                                                                                | -                    |
+| running_containers           | 整数        | Runningコンテナ数                                                                                                 | -                    |
+| stopped_containers           | 整数        | Stoppedコンテナ数                                                                                                 | -                    |
+| total_available_cpu          | 整数        | 割り当て可能なCPUの合計                                                                                                | -                    |
+| total_available_memory       | 整数        | 割り当て可能なMemory合計                                                                                              | -                    |
+| total_limit_cpu              | ミリコア      | Limit CPU合計                                                                                                  | -                    |
+| total_limit_memory           | バイト       | Limit Memory合計                                                                                               | -                    |
+| total_request_cpu            | ミリコア      | Request CPU合計                                                                                                | -                    |
+| total_request_memory         | バイト       | Request Memory合計                                                                                             | -                    |
 | unavailable_pod              | 整数        | PhaseがRunning状態ではない(Pending, Failed, Succedded) Pod数                                                         | -                    |
-| waiting_containers           | 整数        | Waiting Container数                                                                                                              | -                    |
+| waiting_containers           | 整数        | Waiting Container数                                                                                           | -                    |
 
 ### Pod(`kube_pod`) 指標 {#kube_pod}
 
@@ -309,7 +309,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 #### Fields {#kube_pod-fields}
 
-| フィールド名               | 単位    | (Shortname, Name, Description)                                      |
+| フィールド名               | 単位    | (Shortname, Name, Description)                                                         |
 | -------------------- | ----- | -------------------------------------------------------------------------------------- |
 | blkio_rbps           | バイト   | IoReadBytes                                                                            |
 | ^                    | ^     | Pod Block I/O Read Byte                                                                |
@@ -324,16 +324,16 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                    | ^     | Pod Block I/O Write IOPS                                                               |
 | ^                    | ^     | Pod全体ブロックデバイスの1秒当たり書き込み件数の合計                                                           |
 | cpu_per_limit        | パーセント | CpuByLimit                                                                             |
-| ^                    | ^     | Pod CPU Usage by Limit (%)                                          |
+| ^                    | ^     | Pod CPU Usage by Limit (%)                                                             |
 | ^                    | ^     | CPU Limit基準CPUの全体使用率                                                                   |
 | cpu_per_request      | パーセント | CpuByRequest                                                                           |
-| ^                    | ^     | Pod CPU Usage by Limit (%)                                          |
+| ^                    | ^     | Pod CPU Usage by Limit (%)                                                             |
 | ^                    | ^     | CPU Limit基準CPUの全体使用率                                                                   |
 | cpu_quota_percent    | パーセント | CpuLimitByNode                                                                         |
-| ^                    | ^     | Pod CPU Limit by Node (%)                                           |
+| ^                    | ^     | Pod CPU Limit by Node (%)                                                              |
 | ^                    | ^     | ノードCPUに対するPod CPU Limit割当量<br/>Limit未設定の場合、Podが実行中のノードのCPU全体コアがパーセントで表示される。            |
 | cpu_sys              | パーセント | CpuSysByNode                                                                           |
-| ^                    | ^     | Pod CPU Sys Usage by Node (%)                                       |
+| ^                    | ^     | Pod CPU Sys Usage by Node (%)                                                          |
 | ^                    | ^     | ノードCPUに対するPod CPU System使用率                                                            |
 | cpu_throttledperiods | 件数    | CpuThrottledCnt                                                                        |
 | ^                    | ^     | Pod CPU Throttling Count                                                               |
@@ -342,52 +342,52 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                    | ^     | Pod CPU Throttling Time                                                                |
 | ^                    | ^     | Pod CPU Throttled時間                                                                    |
 | cpu_total            | パーセント | CpuByNode                                                                              |
-| ^                    | ^     | Pod CPU Usage by Node (%)                                           |
+| ^                    | ^     | Pod CPU Usage by Node (%)                                                              |
 | ^                    | ^     | ノードCPUに対するPod CPU使用率                                                                   |
 | cpu_total_milli      | ミリコア  | CpuTotUsage                                                                            |
-| ^                    | ^     | Pod CPU Usage (millicore)                                           |
+| ^                    | ^     | Pod CPU Usage (millicore)                                                              |
 | ^                    | ^     | Pod CPU使用量                                                                             |
 | cpu_user             | パーセント | CpuUserByNode                                                                          |
-| ^                    | ^     | Pod CPU User Usage by Node (%)                                      |
+| ^                    | ^     | Pod CPU User Usage by Node (%)                                                         |
 | ^                    | ^     | ノードCPUに対するPod CPU User使用率                                                              |
 | cpu_request          | ミリコア  | CpuRequest                                                                             |
-| ^                    | ^     | Pod CPU Request (core)                                              |
+| ^                    | ^     | Pod CPU Request (core)                                                                 |
 | ^                    | ^     | Pod CPUリクエスト                                                                           |
 | cpu_per_request      | パーセント | CpuByRequest                                                                           |
-| ^                    | ^     | Pod CPU Usage by Request (%)                                        |
+| ^                    | ^     | Pod CPU Usage by Request (%)                                                           |
 | ^                    | ^     | Pod CPUリクエストに対する使用率<br/>= cpu_total_milli / cpu_request \* 100                         |
 | mem_totalcache       | バイト   | MemTotCache                                                                            |
-| ^                    | ^     | Pod Memory Total Cache (byte)                                       |
+| ^                    | ^     | Pod Memory Total Cache (byte)                                                          |
 | ^                    | ^     | Pod全体のキャッシュサイズ                                                                         |
 | mem_totalpgfault     | 回数    | MemTotPageFaultCnt                                                                     |
 | ^                    | ^     | Pod Memory Total Page Fault Count                                                      |
 | ^                    | ^     | Pod PageFault回数                                                                        |
 | mem_totalrss         | バイト   | MemTotRss                                                                              |
-| ^                    | ^     | Pod Memory Total RSS (byte)                                         |
+| ^                    | ^     | Pod Memory Total RSS (byte)                                                            |
 | ^                    | ^     | Pod RSSメモリ全体サイズ                                                                        |
 | mem_totalrss_percent | パーセント | MemTotRssByLimit                                                                       |
-| ^                    | ^     | Pod Memory Total RSS by Limit (%)                                   |
+| ^                    | ^     | Pod Memory Total RSS by Limit (%)                                                      |
 | ^                    | ^     | Pod RSSメモリ全体使用率                                                                        |
 | mem_totalunevictable | バイト   | MemTotUnevictable                                                                      |
-| ^                    | ^     | Pod Memory Total Unevictable (byte)                                 |
+| ^                    | ^     | Pod Memory Total Unevictable (byte)                                                    |
 | ^                    | ^     | Pod Unevictable Memory全体サイズ                                                            |
 | mem_usage            | バイト   | MemUsage                                                                               |
-| ^                    | ^     | Pod Memory Usage (byte)                                             |
+| ^                    | ^     | Pod Memory Usage (byte)                                                                |
 | ^                    | ^     | Podメモリ使用量                                                                              |
 | mem_working_set      | バイト   | MemWs                                                                                  |
-| ^                    | ^     | Pod Memory Working Set (byte)                                       |
+| ^                    | ^     | Pod Memory Working Set (byte)                                                          |
 | ^                    | ^     | Podメモリworking set<br/>= mem_usage - inactive file                                      |
 | memory_request       | バイト   | MemRequest                                                                             |
-| ^                    | ^     | Pod Memory Request (byte)                                           |
+| ^                    | ^     | Pod Memory Request (byte)                                                              |
 | ^                    | ^     | Podメモリー要求量                                                                             |
 | memory_limit         | バイト   | MemLimit                                                                               |
-| ^                    | ^     | Pod Memory Limit (byte)                                             |
+| ^                    | ^     | Pod Memory Limit (byte)                                                                |
 | ^                    | ^     | PodメモリLimit割当量                                                                         |
 | memory_per_request   | パーセント | MemByRequest                                                                           |
-| ^                    | ^     | Pod Memory Working Set By Request (%)                               |
+| ^                    | ^     | Pod Memory Working Set By Request (%)                                                  |
 | ^                    | ^     | Podメモリの要求基準のWorking Set使用量                                                             |
 | memory_per_limit     | パーセント | MemByLimit                                                                             |
-| ^                    | ^     | Pod MMemory Working Set By Limit (%)                                |
+| ^                    | ^     | Pod MMemory Working Set By Limit (%)                                                   |
 | ^                    | ^     | PodメモリのLimit基準のWorking Set使用量                                                          |
 | network_rbps         | バイト   | NetRxBytes                                                                             |
 | ^                    | ^     | Pod Network Receive Byte                                                               |
@@ -453,18 +453,18 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 
 #### Fields {#kube_pod_stat-fields}
 
-| フィールド名            | 単位        | 説明                                                                                                                              | 備考 |
-| ----------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------- | -- |
-| available_pod     | 整数        | PhaseがRunning状態のPodの数                                                                                                           | -  |
+| フィールド名            | 単位        | 説明                                                                                                           | 備考 |
+| ----------------- | --------- | ------------------------------------------------------------------------------------------------------------ | -- |
+| available_pod     | 整数        | PhaseがRunning状態のPodの数                                                                                        | -  |
 | desired_pod       | 整数        | `metadata.ownerReferences`なしで配布されたPod数とクバネティスオブジェクト(ReplicaSet, Daemonset, StatefulSet)に定義されたDesired Pod数の合計 | -  |
-| ^                 | ^         | `kubectl get pods -A`で参照したPod数と同じ                                                                                               | -  |
-| limit_cpu         | ミリコア      | CPU Limit使用量                                                                                                                    | -  |
-| limit_memory      | バイト       | Memory Limit使用量                                                                                                                 | -  |
-| request_cpu       | ミリコア      | CPU Request使用量                                                                                                                  | -  |
-| request_memory    | バイト       | Memory Request使用量                                                                                                               | -  |
-| running_container | 整数        | Running Container数                                                                                                              | -  |
-| stopped_container | 整数        | Stopped Container数                                                                                                              | -  |
-| waiting_container | 整数        | Waiting Container数                                                                                                              | -  |
+| ^                 | ^         | `kubectl get pods -A`で参照したPod数と同じ                                                                            | -  |
+| limit_cpu         | ミリコア      | CPU Limit使用量                                                                                                 | -  |
+| limit_memory      | バイト       | Memory Limit使用量                                                                                              | -  |
+| request_cpu       | ミリコア      | CPU Request使用量                                                                                               | -  |
+| request_memory    | バイト       | Memory Request使用量                                                                                            | -  |
+| running_container | 整数        | Running Container数                                                                                           | -  |
+| stopped_container | 整数        | Stopped Container数                                                                                           | -  |
+| waiting_container | 整数        | Waiting Container数                                                                                           | -  |
 
 ### Kubernetes Horizontal Pod Autoscaler(HPA)(`kube_hpa_stat`) 指標 {#kube_hpa_stat}
 

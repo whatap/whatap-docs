@@ -1,33 +1,5 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_1",
-    "ver": "v1.6.1",
-    "date": "2024-03-20",
-    "Lists": [
-      {
-        "ver": "v1.6.1",
-        "hash": "v161",
-        "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> <em>whatap-hook.log</em>の繰り返しログ呼び出しの問題を修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_0",
-    "ver": "v1.6.0",
-    "date": "2024-03-13",
-    "Lists": [
-      {
-        "ver": "v1.6.0",
-        "hash": "v160",
-        "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> FastAPIでremote hostに関する情報が見つからないとエージェントが動作しない現象を修正</p>"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_5",
     "ver": "v1.6.5",
     "date": "2024-05-31",
@@ -38,6 +10,20 @@
         "product": "Python Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Python 3.6 gevent使用時、トランザクションの終了漏れを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_7",
+    "ver": "v1.6.7",
+    "date": "2024-08-21",
+    "Lists": [
+      {
+        "ver": "v1.6.7",
+        "hash": "v167",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>TraceContextをキューに入れる前に深いコピー(deep copy)してデータが上書きされないように防止</p>"
       }
     ]
   },
@@ -56,6 +42,42 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_8",
+    "ver": "v1.6.8",
+    "date": "2024-08-27",
+    "Lists": [
+      {
+        "ver": "v1.6.8",
+        "hash": "v168",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>graphql-core</strong>の様々なバージョンに対応するためにモジュールトレーシング機能を追加</p>",
+        "details": "<p><b>graphql-core 3.x+</b>バージョンでは<code>graphql.execution.execute</code>モジュールに計測を追加し、<strong>graphql-core 2.x</strong>バージョンでは<code>graphql.execution.executor</code>モジュールをサポートします。</p>"
+      },
+      {
+        "ver": "v1.6.8",
+        "hash": "v168",
+        "product": "Python Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <em>trace_module_definition.py</em>ファイルを修正して<strong>graphql-core</strong>バージョンに応じて適切なモジュール計測が行われるように変更(最新バージョンと旧バージョンの両方に対応)</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_4",
+    "ver": "v1.6.4",
+    "date": "2024-05-14",
+    "Lists": [
+      {
+        "ver": "v1.6.4",
+        "hash": "v164",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>Kubernetes環境コンテナで<code>containerID</code>を探す構文解析ロジックを修正</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_3",
     "ver": "v1.6.3",
     "date": "2024-04-17",
@@ -66,6 +88,20 @@
         "product": "Python Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code>Kubernetes環境コンテナで<code>containerID</code>を探す構文解析ロジックを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_1",
+    "ver": "v1.6.1",
+    "date": "2024-03-20",
+    "Lists": [
+      {
+        "ver": "v1.6.1",
+        "hash": "v161",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> <em>whatap-hook.log</em>の繰り返しログ呼び出しの問題を修正</p>"
       }
     ]
   },
@@ -85,16 +121,16 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_4",
-    "ver": "v1.6.4",
-    "date": "2024-05-14",
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_6_0",
+    "ver": "v1.6.0",
+    "date": "2024-03-13",
     "Lists": [
       {
-        "ver": "v1.6.4",
-        "hash": "v164",
+        "ver": "v1.6.0",
+        "hash": "v160",
         "product": "Python Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code>Kubernetes環境コンテナで<code>containerID</code>を探す構文解析ロジックを修正</p>"
+        "desc": "<p><code class=\"Fixed\">Fixed</code> FastAPIでremote hostに関する情報が見つからないとエージェントが動作しない現象を修正</p>"
       }
     ]
   },
@@ -113,6 +149,20 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_8",
+    "ver": "v1.5.8",
+    "date": "2024-02-18",
+    "Lists": [
+      {
+        "ver": "v1.5.8",
+        "hash": "v158",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Frappe Applicationのuser(接続者数に関する) 重複集計エラーを修正</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_6",
     "ver": "v1.5.6",
     "date": "2024-02-02",
@@ -123,6 +173,34 @@
         "product": "Python Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code> Superset対応</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_2",
+    "ver": "v1.5.2",
+    "date": "2024-01-03",
+    "Lists": [
+      {
+        "ver": "v1.5.2",
+        "hash": "v152",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> INJECTION方式のログ収集コードエラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_5",
+    "ver": "v1.5.5",
+    "date": "2024-02-01",
+    "Lists": [
+      {
+        "ver": "v1.5.5",
+        "hash": "v155",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Frappeフレームワークで開発されたアプリケーションでデータベース接続情報にインスタンス(DB) 情報がない場合、性能収集エラーが発生する現象を改善</p>"
       }
     ]
   },
@@ -152,48 +230,6 @@
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Pythonエージェントv1.4.9バージョン以降で一部のPythonバージョンのモジュール依存性収集エラーを修正</p>",
         "details": "<ul>\n<li>Python 3.6</li>\n<li>Python 3.7</li>\n</ul>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_8",
-    "ver": "v1.5.8",
-    "date": "2024-02-18",
-    "Lists": [
-      {
-        "ver": "v1.5.8",
-        "hash": "v158",
-        "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Frappe Applicationのuser(接続者数に関する) 重複集計エラーを修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_5",
-    "ver": "v1.5.5",
-    "date": "2024-02-01",
-    "Lists": [
-      {
-        "ver": "v1.5.5",
-        "hash": "v155",
-        "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Frappeフレームワークで開発されたアプリケーションでデータベース接続情報にインスタンス(DB) 情報がない場合、性能収集エラーが発生する現象を改善</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_5_2",
-    "ver": "v1.5.2",
-    "date": "2024-01-03",
-    "Lists": [
-      {
-        "ver": "v1.5.2",
-        "hash": "v152",
-        "product": "Python Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> INJECTION方式のログ収集コードエラーを修正</p>"
       }
     ]
   }

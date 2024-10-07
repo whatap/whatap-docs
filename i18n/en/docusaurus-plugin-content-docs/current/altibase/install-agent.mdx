@@ -8,9 +8,11 @@ keywords:
   - Agent
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import TR from '@site/src/components/TR';
+import V2Note from "../common-items/_import_v2-note.mdx";
+
+<V2Note product="Altibase" />
+
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 The following guides you to the basic installation method for using the WhaTap database monitoring service.
 
@@ -24,60 +26,64 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
 
-import Accesskey from "../getting-started/_accesskey.mdx";
+<Steps>
 
-<Accesskey />
+{/* ## 구성도 확인 */}
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
-## Downloading the WhaTap database agent
+<CheckType />
 
-import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
-
-<Dbinstallagentsteps />
-
-3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
-
-   ```ini title='whatap.conf'
-   license=project access key
-   whatap.server.host=13.124.11.223/13.209.172.35 // WhaTap server information
-
-   dbms=altibase
-   db=Database name (sid)
-   db_ip=Database IP
-   db_port=Database port
-   ```
-
-4. Download the JDBC driver to the following path. _/unzipped folder/jdbc_
-
-   Download the JDBC driver for the OS and version of your database server.
-
-   **Altibase JDBC Drivers**: http://support.altibase.com/kr/product
-
-:::note
-
-In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installation paths for each database.
-
-:::
-
+{/* 모니터링용 계정 생성*/}
 import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
 <Dbcreatemonitoringaccount />
 
-```bash
-create user whatap identified by "[DB_PASSWORD]"; ## Enter the desired password.
-```
+{/* 액세스 키 확인 */}
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
-## DB user file creation {#create-db-user}
+<Accesskeyv2 />
 
-import Dbcreatedbuserfile from "../common-items/_db-create-db-user-file.mdx";
+{/* DBX 에이전트 다운로드 */}
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
-<Dbcreatedbuserfile />
+<DownloadDBXagent />
 
-{/*## 에이전트 실행*/}
+{/* ## DBX 에이전트 설정 */}
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
+
+<SettingsDBXagent />
+
+{/* ### whatap.conf 설정 */}
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
+
+<Whatapconf />
+
+{/* ### JDBC 다운로드 */}
+import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
+
+<JDBCDownload />
+
+### DB user file creation {#create-db-user}
+
+<DBuserDesc />
+
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+
+<Dbcreatedbuserfilebody />
+
+{/*모니터링 시작하기*/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />
 
-{/*## XOS 에이전트 설치*/}
+{/*XOS 에이전트 설치*/}
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
+
+</Steps>
+
+{/* ## 다음 단계 */}
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

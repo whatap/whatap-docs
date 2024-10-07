@@ -11,18 +11,18 @@
 
   ROLEには、次のアクセス権限(Policy)が必要です。
 
-  | 権限                                | 権限内容                                                |
-  | --------------------------------- | --------------------------------------------------- |
-  | rds:DescribeDBInstances           | インスタンスクラスの情報収集                                      |
-  | rds:DescribeDBClusters            | autoscale使用時クラスターから情報収集                             |
-  | rds:DescribeDBLogFiles            | CloudWatchログ収集                                      |
-  | rds:DownloadDBLogFilePortion      | CloudWatchログ収集                                      |
-  | ec2:DescribeInstanceTypes         | インスタンスクラスに対応するcpu数を収集                               |
-  | elasticache:DescribeCacheClusters | elasticacheを利用する場合時、インスタンスクラスの情報を収集                 |
-  | cloudwatch:ListMetrics            | CloudWatch指標一覧を収集                                   |
-  | cloudwatch:GetMetricStatistics    | CloudWatch指標から値を収集                                  |
-  | logs:DescribeLogStreams           | CloudWatchログ収集(掲示されたログ機能を使用する場合) |
-  | logs:GetLogEvents                 | CloudWatchログ収集(掲示されたログ機能を使用する場合) |
+  | 権限                                | 権限内容                                |
+  | --------------------------------- | ----------------------------------- |
+  | rds:DescribeDBInstances           | インスタンスクラスの情報収集                      |
+  | rds:DescribeDBClusters            | autoscale使用時クラスターから情報収集             |
+  | rds:DescribeDBLogFiles            | CloudWatchログ収集                      |
+  | rds:DownloadDBLogFilePortion      | CloudWatchログ収集                      |
+  | ec2:DescribeInstanceTypes         | インスタンスクラスに対応するcpu数を収集               |
+  | elasticache:DescribeCacheClusters | elasticacheを利用する場合時、インスタンスクラスの情報を収集 |
+  | cloudwatch:ListMetrics            | CloudWatch指標一覧を収集                   |
+  | cloudwatch:GetMetricStatistics    | CloudWatch指標から値を収集                  |
+  | logs:DescribeLogStreams           | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
+  | logs:GetLogEvents                 | CloudWatchログ収集(掲示されたログ機能を使用する場合)    |
 
   </details>
 

@@ -1,0 +1,121 @@
+---
+id: preview-2_9_0x
+title: Preview 2.9.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.9.0.a0
+
+August 29, 2024
+
+<div class='indentTab'>
+
+### Common
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">New</code>, added the link button to WhaTap Docs in the <Cmdname sid="metric" className="uitext" /> panel.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code className="newfunc">New</code>, changed the following.
+
+  - Improved the UI when the <Cmdname sid="target" className="uitext" /> selection option is truncated.
+
+    - Removed the text for refreshing.
+
+    - Added an icon to the left of the "Expand/Collapse" text.
+
+  - If there is no widget, the <Cmdname sid="BTN08226" className="uitext" /> and <Cmdname sid="download" className="uitext" /> buttons are disabled.
+
+  - Added the "Select/deselect all" feature for the searched result in the <Cmdname sid="target" className="uitext" /> selection option.
+
+  - Modified to display the <Cmdname sid="DSC08214" className="uitext" /> text as a tooltip.
+
+  - Modified to display the <Cmdname sid="select_all" className="uitext" /> button tooltip upon mouse hover.
+
+  - Removed the tooltip displayed when you hover your mouse over the <Cmdname sid="time" className="uitext" /> selection option.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where widget button dropdowns happen unnecessarily.
+
+- <Status priority='0'>Fixed</Status> On the <Cmdname sid="TLT07929" className="uitext" /> window, fixed the issue where group names are too long and are displayed outside the modal window.
+
+- <Status priority='0'>Fixed</Status> On the <Cmdname sid="group_management_delete" className="uitext" type="group" /> window, fixed the issue where the group icon appears as 'X'.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />, added the feature to display the thread status (RUNNABLE, WAITING, total count) of applications with the selected agent installed.
+
+- <Status priority='2'>Fixed</Status> In the <Cmdname sid="TTL06128" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, modified to output a guidance message when there is no log data.
+
+  :::note
+
+  You can see the corresponding message if the log-related agent options are not set or there is no log data.
+
+  :::
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_netstatTopology" className="uitext" />, fixed the problem where the Go product icon does not appear correctly.
+
+- <Status priority='0'>Fixed</Status> On the <Cmdname sid="TTL06209" className="uitext" /> window, modified the color of the SQL statement display box.
+
+- <Status priority='0'>Fixed</Status> On the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where an API has been called twice when querying SQL details.
+
+  :::note
+
+  Changing the number of API calls does not affect users.
+
+  :::
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, modified the design elements of the <Cmdname sid="acttx" className="uitext" /> window that is displayed when the chart area of the <Cmdname sid="AA002" className="uitext" /> widget is selected.
+
+  - Fixed the <UI>No rows found</UI> message displayed when there is no data in the <Cmdname sid="top_ten" className="uitext" /> tab not to overlap the table header.
+
+  - Fixed the issue where the background color is not filled in when a margin is generated.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" />, fixed the issue where the <Cmdname sid="AA005" className="uitext" /> widget's Y-axis adjustment button does not appear intermittently.
+
+- <Status priority='0'>Fixed</Status> Through the ![Snapshot icon](/img/ic-camera.svg) button in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" />, fixed the issue where themes are not applied when saving a snapshot as an image.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, fixed the issue where organization information is missing when switching to the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu by selecting an instance name.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, changed the size of the SQL text preview box.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the Bind variable is not initialized when the <UI>Reset Bind</UI> button is selected on the <Cmdname sid="TTL06224" className="uitext" /> window.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, the following changes have been applied.
+
+  - Removed the ZIP file download command.
+
+  - Modified the TAR file downloading command.
+
+  - Fixed the issue where the <UI>ZIP</UI> <Cmdname sid="download" className="uitext" /> button does not work for the products other than **PostgreSQL**, **Oracle Pro**, **Altibase**, and **MySQL**.
+
+#### Oracle Pro
+
+<Status priority='1'>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />, changed the maximum time range for selecting a cluster to view Global Lock information to 3 hours.
+
+---
+
+### `Log`
+
+<Status priority='1'>Changed</Status> In the sub menus under <Cmdname sid="side_log" className="uitext" />, replaced the column configuration UI.
+
+- Split a single ![Configuration icon](/img/ico-setting.svg) <Cmdname sid="table_settings" className="uitext" /> button into <Cmdname sid="column_settings" className="uitext" /> and <Cmdname sid="ITM08349" className="uitext" /> buttons.
+
+- Removed the <Cmdname sid="column_settings" className="uitext" /> and <Cmdname sid="ITM08349" className="uitext" /> buttons in full screen mode.
+
+</div>

@@ -4,7 +4,7 @@ title: Agent Installation
 description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
 keywords:
   - Oracle Pro
-  - Database
+  - DATABASE
   - Agent
 ---
 
@@ -66,6 +66,12 @@ import Accesskey from "../getting-started/_accesskey-v2.mdx";
 
 On the agent Installation screen, select the Oracle version that matches your environment and then select <Cmdname sid="download" className="uitext" />.
 
+:::note
+
+For users who cannot download tar files due to security settings, ZIP files are also provided. On the installation screen, select the <UI>.zip</UI> <Cmdname sid="download" className="uitext" /> button.
+
+:::
+
 ## Agent CONFIG.
 
 The agent is recommended to be installed with an Oracle account and the Oracle connection environment variables must have been set. Proceed with the agent configuration in the following order.
@@ -108,7 +114,7 @@ To create an initial configuration file, connect to the database with the **SYS*
 ./dmxinit.sh {sys_user} {sys_password}
 ```
 
-After execj\\uting the command, the following five files are created:
+After execj\uting the command, the following five files are created:
 
 > *dmx.init*, *class.init*, *dbname.init*, *stat.init*, *event.init*
 

@@ -252,7 +252,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "언어",
+    "message": "KOR",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.blog.post.readingTime.plurals": {
@@ -505,5 +505,9 @@
   "theme.contentVisibility.draftBanner.message": {
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
+  },
+  "theme.blog.newFeatures": {
+    "message": "새로운 기능",
+    "description": "Navbar item with label 새로운 기능"
   }
 }

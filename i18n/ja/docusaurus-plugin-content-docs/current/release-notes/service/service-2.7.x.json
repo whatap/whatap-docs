@@ -1,6 +1,160 @@
 [
   {
     "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.12",
+    "date": "2024-08-12",
+    "Lists": [
+      {
+        "ver": "Service 2.7.12",
+        "hash": "service-2712",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計</span>の下位メニューで<span class=\"uitext\">カラム設定</span>カラムを追加した後、CSVファイルをダウンロードするとカラム設定が反映されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.11",
+    "date": "2024-08-09",
+    "Lists": [
+      {
+        "ver": "Service 2.7.11",
+        "hash": "service-2711",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メニューでTPSの変化量に対する複合メトリクステンプレート(<span class=\"uitext\">TPS has changed by more than 30% compared to the previous week.</span>)の通知エラーを修正</p>"
+      },
+      {
+        "ver": "Service 2.7.11",
+        "hash": "service-2711",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>次のメニューパスでholder type、waiter typeの値が表示されない問題を修正</p>",
+        "category": "Oracle V2、Oracle Pro",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューの<span class=\"uitext\">ロックツリー</span>テーブル</p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.10",
+    "date": "2024-08-07",
+    "Lists": [
+      {
+        "ver": "Service 2.7.10",
+        "hash": "service-2710",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>次のメニューパスで同じsidのholderとwaiterがロック(Lock)と表記されるエラーを修正</p>",
+        "category": "Oracle V2",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューの<span class=\"uitext\">ロックツリー</span>テーブル</p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.9",
+    "date": "2024-08-07",
+    "Lists": [
+      {
+        "ver": "Service 2.7.9",
+        "hash": "service-279",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>次のメニューパスで<span class=\"uitext\">カラム設定</span>を行うと、ログの原文が表示されない問題を修正</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログTail</span></li>\n<li><span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログトレンド</span></li>\n<li><span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログ検索</span></li>\n<li><span class=\"uitext\">トレース分析</span> &gt; <span class=\"uitext\">TXログ</span></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.7",
+    "date": "2024-08-05",
+    "Lists": [
+      {
+        "ver": "Service 2.7.7",
+        "hash": "service-277",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL詳細</span>画面でライブラリのフォーマットエラーが発生した場合、フォーマットできないように修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.6",
+    "date": "2024-08-02",
+    "Lists": [
+      {
+        "ver": "Service 2.7.6",
+        "hash": "service-276",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューで小文字true、falseがクエリーに含まれている場合<span class=\"uitext\">SQL詳細</span>照会時にホワイトアウト現象が発生する問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.7.6",
+        "hash": "service-276",
+        "product": "Application、Database、Server、Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">実験室</span> &gt; <span class=\"uitext\">通知メッセージ</span>メニューで組織内の通知設定権限のあるプロジェクトに、通知設定がコピーできない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.5",
+    "date": "2024-08-01",
+    "Lists": [
+      {
+        "ver": "Service 2.7.5",
+        "hash": "service-275",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">コンテナマップ</span>メニューの<span class=\"uitext\">コンテナ要約分析</span>でイメージのリソース情報エラーを修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.4",
+    "date": "2024-07-29",
+    "Lists": [
+      {
+        "ver": "Service 2.7.4",
+        "hash": "service-274",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統合Flexボード</span>メニューで、読み取り専用に共有されたダッシュボードのグループウィジェットに、含まれているウィジェットがデータを呼び出せない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.3",
+    "date": "2024-07-26",
+    "Lists": [
+      {
+        "ver": "Service 2.7.3",
+        "hash": "service-273",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code class=\"my\">V1</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューでメトリクス選択画面が表示されない問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.7.3",
+        "hash": "service-273",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューで権限に関する案内文句を追加</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_7_x",
     "ver": "Service 2.7.2",
     "date": "2024-07-25",
     "Lists": [

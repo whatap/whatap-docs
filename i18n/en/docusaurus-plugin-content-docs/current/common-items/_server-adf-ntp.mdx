@@ -22,10 +22,10 @@ The metrics to be added when activating the server time synchronization monitori
 
 ##### Tags
 
-| Tag name | Description                                                                            | Remarks |
-| -------- | -------------------------------------------------------------------------------------- | ------- |
+| Tag name | Description                                                         | Remarks |
+| -------- | ------------------------------------------------------------------- | ------- |
 | `refid`  | Time synchronization source of the corresponding remote (`remote`). | -       |
-| `remote` | Server to which the host performs time synchronization.                                | -       |
+| `remote` | Server to which the host performs time synchronization.             | -       |
 
 ##### Fields
 
@@ -40,8 +40,8 @@ The metrics to be added when activating the server time synchronization monitori
 | `sync_client` | -      | 1: The synchronization server exists.                                                                                                                                                     | -       |
 | ^             | ^      | 0: The synchronization server does not exist.                                                                                                                                             | ^       |
 | `t`           | -      | Available types are as follows.                                                                                                                                                           | -       |
-| ^             | ^      | l: Local (e.g. GPS clock)                                                                                                                                              | ^       |
-| ^             | ^      | u: Unicast (general type)                                                                                                                                              | ^       |
+| ^             | ^      | l: Local (e.g. GPS clock)                                                                                                                                                                 | ^       |
+| ^             | ^      | u: Unicast (general type)                                                                                                                                                                 | ^       |
 | ^             | ^      | m: Multicast                                                                                                                                                                              | ^       |
 | ^             | ^      | b: Broadcast                                                                                                                                                                              | ^       |
 | `when`        | second | Seconds elapsed after the remote host responded.                                                                                                                                          | -       |

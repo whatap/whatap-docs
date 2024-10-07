@@ -1,0 +1,88 @@
+**Featureプロジェクト**(<code class='Features'>Features</code>) 生成後、自動的に***{props.name}***画面に移動します。 次の案内通りに設置を進めます。 
+
+1. **プロジェクトアクセスキー**を確認します。 
+
+   プロジェクトアクセスキーは、WhaTapサービスを有効にするための固有IDです。 <code class='my'>プロジェクトアクセスキーを発行する</code>ボタンを選択します。 
+
+2. **インストールスクリプト**を作成します。 
+
+   <InDoc pages="kafka-introduction">
+
+   次のコマンドを実行して、ユーザー環境を自動的に認識し、KAFKAがインストールされているサーバーに、インストールスクリプトを作成します。 
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/kafka/install_kafka_monitoring.sh -o install_kafka_monitoring.sh
+   ```
+
+   次のコマンドを実行して、KAFKAエージェントをインストールします。
+
+   ```bash
+   chmod +x install_kafka_monitoring.sh
+   sudo ./install_kafka_monitoring.sh "x604pf485d1kk-z6q14nuc509pk3-x39moealrfodum" "13.124.11.223/13.209.172.35"
+   ```
+
+   </InDoc>
+
+   <InDoc pages="aerospike-introduction">
+
+   次のコマンドを実行して、ユーザー環境を自動的に認識し、Aerospikeがインストールされているサーバーに、インストールスクリプトを作成します。 
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/aerospike/install_aerospike_monitoring.sh -o install_aerospike_monitoring.sh
+   ```
+
+   </InDoc>
+
+   <InDoc pages="apache-pulsar-introduction">
+
+   次のコマンドを実行して、ユーザー環境を自動的に認識し、Apache Pulsarがインストールされているサーバーに、インストールスクリプトを作成します。 
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/apachepulsar/install_apachepulsar_monitoring.sh -o install_apachepulsar_monitoring.sh
+   ```
+
+   </InDoc>
+
+3. エージェント設定および再起動後、**モニタリング**を**開始**します。  
+
+   <InDoc pages="kafka-introduction">
+
+   KAFKAにJolokiaエージェント設定のために、次のコマンドを実行してから再起動します。
+
+   ```bash
+   #cd {kafka home directory}/bin
+   sed -i '/^#!/a export KAFKA_OPTS='\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\''' kafka-server-start.sh
+   ./kafka-server-stop.sh
+   ./kafka-server-start.sh
+   ```
+
+   </InDoc>
+
+   <InDoc pages="aerospike-introduction">
+
+   WhaTapサーバーモニタリングエージェントとテレグラフサイドカーをインストールするために、次のコマンドを実行します。
+
+   ```bash
+   chmod +x install_aerospike_monitoring.sh
+   sudo ./install_aerospike_monitoring.sh "x42ru23mvv8e0-z773a0eqslde4u-z32imrtin4l23j" "15.165.146.117"
+   ```
+
+   </InDoc>
+
+   <InDoc pages="apache-pulsar-introduction">
+
+   WhaTapサーバーモニタリングエージェントとテレグラフサイドカーをインストールするために、次のコマンドを実行します。
+
+   ```bash
+   chmod +x install_apachepulsar_monitoring.sh
+   sudo ./install_apachepulsar_monitoring.sh "x42s823cuq7fg-x7ekkc24qctvr1-z51hfam8avhtls" "15.165.146.117"
+   ```
+
+   </InDoc>
+
+{/* 
+Featureプロジェク 
+
+Kafka
+Aerospike 
+*/}

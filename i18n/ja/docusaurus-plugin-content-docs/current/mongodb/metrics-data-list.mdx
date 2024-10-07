@@ -12,27 +12,117 @@ keywords:
 
 MongoDBでは`db.serverStatus`から主要指標を収集し、以下は収集する主要指標についての説明です。 その他の指標の詳細については、[次の文書](https://www.mongodb.com/docs/manual/reference/command/serverStatus/#output)を参照にしてください。
 
-| メトリクス                          | 説明                                                       |
-| ------------------------------ | -------------------------------------------------------- |
-| `active$connections`           | 現在作業中のアクティブクライアント接続数                                     |
-| `current$connections`          | サーバーに接続されているクライアント数                                      |
-| `CPU`                          | `extra_info`の`user_time_us`、`system_time_us`値で計算したCPU使用率 |
-| `input_blocks$extra_info`      | システムのinput block値                                        |
-| `output_blocks$extra_info`     | システムのoutput block値                                       |
-| `bytesIn$network`              | MongoDBクライアントやその他のインスタンスの接続によりサーバーが受信した バイトの総数           |
-| `bytesOut$network`             | MongoDBクライアントやその他のインスタンスの接続によりサーバーが送信したバイトの総数            |
-| `numRequests$network`          | サーバが受信したリクエストの総数                                         |
-| `latency$reads$opLatencies`    | 読取りリクエストに対する遅延時間                                         |
-| `latency$writes$opLatencies`   | 書き込み作業に対する遅延時間                                           |
-| `latency$commands$opLatencies` | データベースコマンドの待ち時間                                          |
-| `insert$opcounters`            | insertコマンド数                                              |
-| `query$opcounters`             | queryコマンド数                                               |
-| `update$opcounters`            | updateコマンド数                                              |
-| `delete$opcounters`            | deleteコマンド数                                              |
-| `command$opcounters`           | データベースで実行されたコマンドの総数                                      |
+## db_mongodb_counter {#db_mongodb_counter}
+
+### Tags {#db_mongodb_counter-tags}
+
+次は`db_mongodb_counter`カテゴリに収集されるタグ値の案内です。
+
+| タグ名     | 説明         | 備考    |
+| ------- | ---------- | ----- |
+| `oname` | エージェント名です。 | ユニーク値 |
+
+### Field {#db_mongodb_counter-filed}
+
+次は`db_mongodb_counter`カテゴリに収集されるフィールド値の案内です。
+
+<div className="db-metric">
+
+| Metrics                                                      | Description                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------------ |
+| `accepted$tcpFastOpen$network`                               | TCP Fast Openを通じて受け入れられたネットワーク接続の数です。                              |
+| `active$connections`                                         | 現在作業が進行中のアクティブクライアント接続の数です。                                        |
+| `available$connections`                                      | 使用できるネットワーク接続の数です。                                                 |
+| `awaitingTopologyChanges$connections`                        | トポロジー変更を待っている接続の数です。                                               |
+| `bytesIn$compressor$snappy$compression$network`              | Snappy圧縮によって受信されたネットワークバイトの数です。                                    |
+| `bytesIn$compressor$zlib$compression$network`                | zlib圧縮によって受信されたネットワークバイトの数です。                                      |
+| `bytesIn$compressor$zstd$compression$network`                | zstd圧縮によって受信されたネットワークバイトの数です。                                      |
+| `bytesIn$decompressor$snappy$compression$network`            | Snappy圧縮解除によって受信されたネットワークバイトの数です。                                  |
+| `bytesIn$decompressor$zlib$compression$network`              | zlib圧縮解除によって受信されたネットワークバイトの数です。                                    |
+| `bytesIn$decompressor$zstd$compression$network`              | zstd圧縮解除によって受信されたネットワークバイトの数です。                                    |
+| `bytesIn$network`                                            | MongoDBクライアントまたはその他のインスタンスの接続を通じてサーバーが受信したネットワークバイトの合計数です。         |
+| `bytesOut$compressor$snappy$compression$network`             | Snappy圧縮によって送信されたネットワークバイトの数です。                                    |
+| `bytesOut$compressor$zlib$compression$network`               | zlib圧縮によって送信されたネットワークバイトの数です。                                      |
+| `bytesOut$compressor$zstd$compression$network`               | zstd圧縮によって送信されたネットワークバイトの数です。                                      |
+| `bytesOut$decompressor$snappy$compression$network`           | Snappy圧縮解除によって送信されたネットワークバイトの数です。                                  |
+| `bytesOut$decompressor$zlib$compression$network`             | zlib圧縮解除によって送信されたネットワークバイトの数です。                                    |
+| `bytesOut$decompressor$zstd$compression$network`             | zstd圧縮解除によって送信されたネットワークバイトの数です。                                    |
+| `bytesOut$network`                                           | MongoDBクライアントまたはその他のインスタンスの接続を通じてサーバーが送信したネットワークバイトの合計数です。         |
+| `clientsInTotal$fixed$serviceExecutors$network`              | 固定サービスエクゼキュータで処理されたクライアントの合計数です。                                   |
+| `clientsInTotal$passthrough$serviceExecutors$network`        | パススルーサービスエクゼキュータで処理されたクライアントの合計数です。                                |
+| `clientsRunning$fixed$serviceExecutors$network`              | 固定サービスエクゼキュータで実行されているクライアントの数です。                                   |
+| `clientsRunning$passthrough$serviceExecutors$network`        | パススルーサービスエクゼキュータで実行中のクライアントの数です。                                   |
+| `clientsWaitingForData$fixed$serviceExecutors$network`       | 固定サービスエクゼキュータでデータ待機中のクライアント数です。                                    |
+| `clientsWaitingForData$passthrough$serviceExecutors$network` | パススルーサービスエクゼキュータでデータ待機中のクライアント数です。                                 |
+| `command$opcounters`                                         | データベースで実行されたコマンドの合計数です。                                            |
+| `connect_error`                                              | 接続エラーの数です。                                                         |
+| `cpu`                                                        | `extra_info`メトリクスの`user_time_us`および`system_time_us`値で計算したCPU使用率です。 |
+| `cpu_cores`                                                  | 使用可能なCPUコアの数です。                                                    |
+| `cpu_sys`                                                    | システムで使用されたCPU時間です。                                                 |
+| `cpu_user`                                                   | ユーザー作業に使用されたCPU時間です。                                               |
+| `current$connections`                                        | 現在サーバーに接続されているクライアントの合計数です。                                        |
+| `delete$opcounters`                                          | 処理された削除コマンドの数です。                                                   |
+| `exhaustHello$connections`                                   | exhaustHelloメッセージに関連する接続数です。                                       |
+| `exhaustIsMaster$connections`                                | exhaustIsMasterメッセージに関連する接続数です。                                    |
+| `fatal count`                                                | クリティカルなエラー発生の回数です。                                                 |
+| `getmore$opcounters`                                         | 処理されたgetMore作業数です。                                                 |
+| `input_blocks$extra_info`                                    | システムの入力ブロック値です。                                                    |
+| `insert$opcounters`                                          | 処理されたInsertコマンド数です。                                                |
+| `involuntary_context_switches$extra_info`                    | 強制コンテキストスイッチの発生回数に関する追加情報です。                                       |
+| `kernelSetting$tcpFastOpen$network`                          | TCP Fast Openに対するカーネル設定のステータスです。                                   |
+| `latency$commands$opLatencies`                               | データベースコマンドの待ち時間です。                                                 |
+| `latency$reads$opLatencies`                                  | 読み取り作業に費やされた遅延時間です。                                                |
+| `latency$transactions$opLatencies`                           | トランザクション処理に費やされた遅延時間です。                                            |
+| `latency$writes$opLatencies`                                 | 書き込み作業に費やされた遅延時間です。                                                |
+| `maximum_resident_set_kb$extra_info`                         | 最大居住セットサイズ(KB)に関連する追加情報です。                                         |
+| `msg$asserts`                                                | 発生したメッセージ表明(assert)の数です。                                           |
+| `node_state`                                                 | ノードの現在状態です。                                                        |
+| `numRequests$network`                                        | サーバーが受信したネットワークの合計リクエスト数です。                                        |
+| `numSlowDNSOperations$network`                               | 遅いDNS作業の数です。                                                       |
+| `numSlowSSLOperations$network`                               | 遅いSSL作業の数です。                                                       |
+| `ops$commands$opLatencies`                                   | コマンド作業の処理回数です。                                                     |
+| `ops$reads$opLatencies`                                      | 読み取り作業の処理回数です。                                                     |
+| `ops$transactions$opLatencies`                               | トランザクション作業の処理回数です。                                                 |
+| `ops$writes$opLatencies`                                     | 書き込み作業の処理回数です。                                                     |
+| `output_blocks$extra_info`                                   | システムの出力ブロック値です。                                                    |
+| `page_faults$extra_info`                                     | ページのフォールトに関する追加情報です。                                               |
+| `page_reclaims$extra_info`                                   | ページの再取得に関する追加情報です。                                                 |
+| `physicalBytesIn$network`                                    | 受信した物理バイト数です。                                                      |
+| `physicalBytesOut$network`                                   | 送信された物理バイトの数です。                                                    |
+| `query$opcounters`                                           | 処理されたクエリコマンドの数です。                                                  |
+| `readers$activeClients$globalLock`                           | 活性化された読み取りクライアントの数(global lock)です。                                 |
+| `readers$currentQueue$globalLock`                            | 現在待機中の読み取りクライアントの数(global lock)です。                                 |
+| `regular$asserts`                                            | 発生した一般表明(assert)の数です。                                              |
+| `replication_delay_max`                                      | 複製の最大遅延時間です。                                                       |
+| `resident$mem`                                               | 使用中の実際メモリサイズです。                                                    |
+| `rollovers$asserts`                                          | 発生したロールオーバー表明(assert)の数です。                                         |
+| `system_time_us$extra_info`                                  | システム時間(マイクロ秒)に関連する追加情報です。                                          |
+| `threaded$connections`                                       | スレッドベースの接続数です。                                                     |
+| `threadsRunning$fixed$serviceExecutors$network`              | 固定サービスエクゼキュータで実行されているスレッドの数です。                                     |
+| `threadsRunning$passthrough$serviceExecutors$network`        | パススルーサービスエクゼキュータで実行されているスレッドの数です。                                  |
+| `total$activeClients$globalLock`                             | 活性化されたクライアントの合計数(global lock)です。                                   |
+| `total$currentQueue$globalLock`                              | 現在待機中のクライアントの合計数(global lock)です。                                   |
+| `totalCreated$connections`                                   | 生成された接続の合計数です。                                                     |
+| `totalTime$globalLock`                                       | グローバルロック(global lock)に費やされた合計時間です。                                 |
+| `tripwire$asserts`                                           | 発生したトリップワイヤ表明(assert)の数です。                                         |
+| `update$opcounters`                                          | 処理されたアップデートコマンドの数です。                                               |
+| `user$asserts`                                               | 発生したユーザー表明(assert)の数です。                                            |
+| `user_time_us$extra_info`                                    | ユーザー時間(マイクロ秒)に関連する追加情報です。                                          |
+| `virtual$mem`                                                | 使用中の仮想メモリサイズです。                                                    |
+| `voluntary_context_switches$extra_info`                      | 自発的なコンテキストスイッチの発生回数に関する追加情報です。                                     |
+| `warning count`                                              | 警告メッセージの数です。                                                       |
+| `warning$asserts`                                            | 発生した警告表明(assert)の数です。                                              |
+| `writers$activeClients$globalLock`                           | 活性化された書き込みクライアントの数(global lock)です。                                 |
+| `writers$currentQueue$globalLock`                            | 現在待機中の書き込みクライアントの数(global lock)です。                                 |
+
+</div>
 
 :::note
 
 WhaTapは、クライアントに関する情報をデフォルトで保存します。
 
 :::
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />

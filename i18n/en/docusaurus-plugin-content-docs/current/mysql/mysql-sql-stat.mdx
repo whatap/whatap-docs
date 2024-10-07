@@ -4,12 +4,12 @@ title: Mysql SQL Statistics
 description: The events_statements_summary_by_digest data in the performance_schema is collected once an hour to provide statistical data. Use it for SQL analysis along with the existing `SQL statistics` menu based on active sessions.
 keywords:
   - MySQL
-  - Database
+  - DATABASE
   - Database Monitoring
-  - Statistics
+  - Statistic
 ---
 
-Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_mysqlStat" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_mysqlStat" className="uitext" />
 
 SQL statistical data (execution count, execution time, number of rows, etc.) provided by MySQL's `performance_schema` is collected through the `performance_schema.events_statements_summary_by_digest` view. 
 
@@ -65,9 +65,9 @@ import Dbproductsqlstatbasicusage from "../common-items/_db-product-sql-stat-bas
 | `digest`                  | Hash value of `digest_text`                                                                                                               |
 | `schema_name`             | Schema name                                                                                                                               |
 | `count_star`              | Execution count                                                                                                                           |
-| `timer_wait`              | Total execution time (sec)                                                                                             |
-| `lock_time`               | Waited time caused by table lock (sec)                                                                                 |
-| `rows_affected`           | Number of affected rows (insert, update, replace)                                                                      |
+| `timer_wait`              | Total execution time (sec)                                                                                                                |
+| `lock_time`               | Waited time caused by table lock (sec)                                                                                                    |
+| `rows_affected`           | Number of affected rows (insert, update, replace)                                                                                         |
 | `rows_sent`               | Number of returned rows                                                                                                                   |
 | `rows_examined`           | Number of rows reviewed in the server layer                                                                                               |
 | `created_tmp_disk_tables` | If the sum of disk temporary tables created by the server while executing commands is too high, consider increasing the sort memory size. |
@@ -103,8 +103,6 @@ import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
 <Dbsqlfilter />
 
-## Configuring the table columns{#change-column}
-
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn />
+<Dbv2dataeditcolumn level={2} />

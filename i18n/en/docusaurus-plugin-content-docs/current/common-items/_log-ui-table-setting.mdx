@@ -1,26 +1,35 @@
 - <InDoc pages="log-search,aws-log-search,log-exp,aws-log-exp">Right of the <LinkImage img="number-03.png" className="ico" /> area</InDoc><InDoc pages="log-lt,aws-log-lt">Right of the <LinkImage img="number-02.png" className="ico" /> area</InDoc> <UI>Table settings</UI> menu is available in <Cmdname sid="logTail" className="uitext" />, <Cmdname sid="log_search" className="uitext" />, and <Cmdname sid="logExplorer" className="uitext" />.
-- If you select ![Icon] (/img/ic-setting.svg) <Cmdname sid="table_settings" className="uitext" />, the <Cmdname sid="column_settings" className="uitext" /> and <Cmdname sid="table_content_setting" className="uitext" /> options appear. 
+- If you select ![Icon](/img/ic-setting.svg) <Cmdname sid="table_settings" className="uitext" />, the <Cmdname sid="column_settings" className="uitext" /> and <Cmdname sid="ITM08349" className="uitext" /> options appear. 
 
-  <ImgLang img='log-table-contents-options.png' desc='Log Table setting'/>
+    ![Log table setting](/img/log-table-contents-options.png)
 
-  1. **Column Settings** 
+  1. <Cmdname sid="column_settings" className="uitext" />
 
   - <Cmdname sid="add_a_column" className="uitext" />: You can add a column to the table by selecting the tag.
+
   - <Cmdname sid="column_order_setting" className="uitext" />: If a column is added, the column is added to the column sequence setting. Drag a desired column to change the column order.
 
-  2. **Table settings**
+    :::note 
+
+    When the ***log*** column is deselected upon <Cmdname sid="add_a_column" className="uitext" />, <Cmdname sid="ITM08349" className="uitext" /> cannot be seen.
+
+    :::
+
+  2. <Cmdname sid="ITM08349" className="uitext" />
 
   <ImgLang img='log-table-contents.png' desc='Log Table Content Setting'/>
 
-  - <Cmdname sid="whether_display_content" className="uitext" />
+  - **Whether to display logs**
 
-    - The checked items do not appear in the table. By default, both <Cmdname sid="log" className="uitext" /> and <Cmdname sid="tag" className="uitext" /> are all checked to display two items.
+    - Unchecked items are not displayed in the table. By default, both **_content_** and <Cmdname sid="tag" className="uitext" /> are checked, and both items are displayed. 
+
     - If you deselect the <Cmdname sid="tag" className="uitext" /> as follows, the log's <Cmdname sid="tag" className="uitext" /> does not appear in the table.
       <ImgLang img='log-table-contents-remove-tag.png' desc='Log table tag invisible'/>
 
-  - <Cmdname sid="tag_management" className="uitext" />
+  - **Tag Management**
 
-    - When you add a tag in the tag management list, the log tags are listed in the added order. The sequences of tags can be changed by dragging.
+    - When you add tags in the <Cmdname sid="tag_management" className="uitext" /> list, the tags in the log are listed in the order you added. You can change the order of the tags by dragging them.
+
     - If you disable an added tag, the disabled tag does not appear. 
 
 :::note 

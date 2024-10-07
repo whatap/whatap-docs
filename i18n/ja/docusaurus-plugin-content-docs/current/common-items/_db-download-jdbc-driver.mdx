@@ -1,3 +1,50 @@
 ### JDBCダウンロード
 
 圧縮ファイルを解除したDBXエージェント経路にデータベースサーバーのオペレーションシステムとバージョンに合うJDBCドライバーをダウンロードします。 `/圧縮を解凍したフォルダ/jdbc`
+
+<InDoc product="altibase">
+
+:::info
+
+**Altibase JDBC Drivers**: http://support.altibase.com/en/product
+
+:::
+
+</InDoc>
+
+<InDoc product="mysql">
+
+:::info
+
+**Mysql & MariaDB 5.5バージョン以降**
+
+- [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
+- [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
+
+:::
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+:::info
+
+**PostgreSQL 9.2バージョン以降**：https://jdbc.postgresql.org/download
+
+:::
+
+</InDoc>
+
+:::note
+
+- DBの構成によって、*whatap.conf*ファイルに追加の設定が必要になる場合があります。 詳細については、[次の文書](agent-dbx-settings)を参照してください。
+
+- DBサーバーのリソースを追加でモニタリングするには、XOSエージェントを利用する必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
+
+<Xclude product='redis'>
+
+- */解凍されたフォルダ/jdbc/README.md*ファイルで各データベースのJDBCドライバのインストールパスを確認することができます。
+
+</Xclude>
+
+:::

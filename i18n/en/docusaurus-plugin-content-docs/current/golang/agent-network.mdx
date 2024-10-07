@@ -11,13 +11,13 @@ keywords:
 
 The following provides the method how to set the communication for the Go application server.
 
-- **whatap.server.host** <span class='type'>ip_address</span>
+- **whatap.server.host** <span class='type'>ip\_address</span>
 
   Default `127.0.0.1,127.0.0.1`
 
   Set the server to deliver the agent's collected data to. If there are multiple IPs due to the collection server redundancy, they can be specified by separating with comma (,). The collection server's proxy daemon must be serviced in the listening state for the specified IP.
 
-- **whatap.server.port** <span class='type'>tcp_port</span>
+- **whatap.server.port** <span class='type'>tcp\_port</span>
 
   Default `6600`
 
@@ -41,7 +41,7 @@ The following provides the method how to set the communication for the Go applic
 
   Set the maximum size of the data to send to the collection server at one time.
 
-- **net_ipc_host** <span class='type'>ip_address</span>
+- **net_ipc_host** <span class='type'>ip\_address</span>
 
   Default `127.0.0.1`
 
@@ -66,3 +66,15 @@ The following provides the method how to set the communication for the Go applic
   - To apply the settings, restart the application.
 
   :::
+
+- **net_so_time** <span class='type'>Int</span>
+
+  Default `120000` (Millisecond)
+
+  You can set the maximum waiting time when reading data upon TCP connection. After the set time has elapsed, it is processed as a timeout.
+
+- **net_write_buffer_size** <span class='type'>Int</span>
+
+  Default `2*1024*1024` (2 Mb)
+
+  This option sets the size of the buffer used when transmitting data collected over the network.

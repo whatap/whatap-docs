@@ -1,22 +1,28 @@
 - <Cmdname sid="BTN06225" className="uitext" />: 該当SQLクエリ文に関する統計情報が確認できる<Cmdname sid="statistics_sql" className="uitext" />メニューへ移動できます。
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,altibase'>
 
 - **_Default Bind_**: クエリ文で変数として設定された部分を既定値としてバインディングできます。
 
 - **_Reset Bind_**: バインディングされた既定値を解除し、変数を確認できます。
 
-- **_Formatting_**: SQLクエリ文にインデントおよびフォーマットを適用して可読性を高めることができます。
+- **_Formatting_**: SQLクエリ文にインデントおよびフォーマットを適用して可読性を高めます。
+
+</InDoc>
+
+<InDoc product="altibase">
+
+- **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+</InDoc>
+
+<InDoc product='postgresql'>
 
 - **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
   - **_Text_**: テキスト形式でプラン情報を確認できます。
 
   - **_JSON_**: JSON形式でプラン情報を照会すると、ボトルネックが発生した箇所がすばやく確認できます。
-
-</InDoc>
-
-<InDoc product='postgresql'>
 
   :::note
 
@@ -27,6 +33,12 @@
 </InDoc>
 
 <InDoc product='mysql'>
+
+- **_Plan_**: Plan情報を確認するには**DB Name**、**User Name**、**Password**を入力してから、![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+  - **_Text_**: テキスト形式でプラン情報を確認できます。
+
+  - **_JSON_**: JSON形式でプラン情報を照会すると、ボトルネックが発生した箇所がすばやく確認できます。
 
   :::note
 

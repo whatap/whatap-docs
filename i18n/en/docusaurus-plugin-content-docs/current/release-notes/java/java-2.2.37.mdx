@@ -1,0 +1,30 @@
+---
+id: java-2_2_37
+title: Java Agent v2.2.37
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_36
+displayed_sidebar: releaseSidebar
+---
+
+July 31, 2024
+
+- <Status priority='1'>Feature</Status> If an exception occurs that passes through the spring-boot ExceptionHandler, it replaces the previous exception.
+
+  In the <Cmdname sid="TTL06209" className="uitext" /> tab of the <Cmdname sid="TTL06125" className="uitext" /> window, you can mark the exception as an exception registered in the ExceptionHandler of the spring-boot.
+
+  ```ini title="whatap.conf"ㅓ
+  # default: true
+  trace_exception_handler_overwrite_enabled=true
+  ```
+
+- <Status priority='1'>Changed</Status> Modified not to generate the HTTP parameter step in the <Cmdname sid="TTL06209" className="uitext" /> window, if there is no value corresponding to the HTTP parameter key or there is no HTTP parameter when the value of the `trace_http_parameter_enabled` option is `true`.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where basic CPU collection is not possible in the Windows environment.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where monitoring metrics are not collected when using the sigar library in the Windows environment.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where monitoring metrics are not collected when using the oshi library in the Windows environment.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.37" />

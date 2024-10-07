@@ -1,6 +1,160 @@
 [
   {
     "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.12",
+    "date": "2024-08-12",
+    "Lists": [
+      {
+        "ver": "Service 2.7.12",
+        "hash": "service-2712",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the column settings are not reflected when downloading a CSV file after adding columns through <span class=\"uitext\">Column Settings</span> in the submenu of <span class=\"uitext\">Statistics</span>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.11",
+    "date": "2024-08-09",
+    "Lists": [
+      {
+        "ver": "Service 2.7.11",
+        "hash": "service-2711",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, fixed the notification error of the composite metrics platform (<span class=\"uitext\">TPS has changed by more than 30% compared to the previous week.</span>) over the TPS changes.</p>"
+      },
+      {
+        "ver": "Service 2.7.11",
+        "hash": "service-2711",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the problem where the values for holder type and waiter type do not appear in the following menu paths:</p>",
+        "category": "Oracle V2, Oracle Pro",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Lock tree</span> table in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.10",
+    "date": "2024-08-07",
+    "Lists": [
+      {
+        "ver": "Service 2.7.10",
+        "hash": "service-2710",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the problem where the holder and waiter for the same sid are displayed as Lock in the following menu paths:</p>",
+        "category": "Oracle V2",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Lock tree</span> table in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.9",
+    "date": "2024-08-07",
+    "Lists": [
+      {
+        "ver": "Service 2.7.9",
+        "hash": "service-279",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the original log text is not displayed when proceeding with <span class=\"uitext\">Column Settings</span> in the following menu paths:</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span></li>\n<li><span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Trend</span></li>\n<li><span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Search</span></li>\n<li><span class=\"uitext\">Trace analysis</span> &gt; <span class=\"uitext\">Transaction log</span></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.7",
+    "date": "2024-08-05",
+    "Lists": [
+      {
+        "ver": "Service 2.7.7",
+        "hash": "service-277",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified not to perform formatting when a library formatting error occurs on the <span class=\"uitext\">SQL details</span> window.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.6",
+    "date": "2024-08-02",
+    "Lists": [
+      {
+        "ver": "Service 2.7.6",
+        "hash": "service-276",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> If the query contains true or false in <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL statistics</span>, fixed the whiteout error when <span class=\"uitext\">SQL details</span> is viewed.</p>"
+      },
+      {
+        "ver": "Service 2.7.6",
+        "hash": "service-276",
+        "product": "Application, Database, Server, Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Laboratory</span> &gt; <span class=\"uitext\">Alert Message</span>, fixed the issue where alert settings cannot be copied to the projects that have the setting role within the organization.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.5",
+    "date": "2024-08-01",
+    "Lists": [
+      {
+        "ver": "Service 2.7.5",
+        "hash": "service-275",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Container summary analysis</span> of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, fixed the image resource information error.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.4",
+    "date": "2024-07-29",
+    "Lists": [
+      {
+        "ver": "Service 2.7.4",
+        "hash": "service-274",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the widgets included in a group widget on the dashboard shared as read-only in <span class=\"uitext\">Integrated Flex Board</span> cannot call data.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
+    "ver": "Service 2.7.3",
+    "date": "2024-07-26",
+    "Lists": [
+      {
+        "ver": "Service 2.7.3",
+        "hash": "service-273",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <code class=\"my\">V1</code> <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, fixed the issue where the metric selection window does not appear.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.7.3",
+        "hash": "service-273",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, added the guidance text regarding the roles.</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_7_x",
     "ver": "Service 2.7.2",
     "date": "2024-07-25",
     "Lists": [

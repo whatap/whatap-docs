@@ -1,0 +1,31 @@
+---
+id: java-batch-2_2_25
+title: Java Batch Agent v2.2.25
+toc_max_heading_level: 2
+pagination_next: release-notes/java-batch/java-batch-2_2_24
+displayed_sidebar: releaseSidebar
+---
+
+August 20, 2024
+
+- <Status priority='1'>Changed</Status> Changed the default value of the `profile_expired_time` option to 30 seconds.
+
+  ```ini title="whatap.conf"
+  # default: 30000
+  profile_expired_time=30000
+  ```
+
+- <Status priority='1'>Changed</Status> Some agent logs have been modified during profile cleanup.
+
+- <Status priority='2'>Fixed</Status> Fixed the problem where traced data is not collected after a batch job is finished.
+
+  Changed the default value of `auto_start_tx` from `true` to `false` to avoid collecting data if tracing is not started.
+
+  ```ini title="whatap.conf"
+  # default: false
+  auto_start_tx=false
+  ```
+
+import DownloadJavaBatchAgent from "./_import_dl-java-batch-agent.mdx";
+
+<DownloadJavaBatchAgent />

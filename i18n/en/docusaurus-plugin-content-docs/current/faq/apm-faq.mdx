@@ -65,4 +65,42 @@ whatap.trace_active_transaction_lost_time=300000
 trace_active_transaction_lost_time=300000
 ```
 
+### Number of concurrent users / number of visitors
+
+> What is the difference between the concurrent user count and the visitor count?
+
+**Number of concurrent users** and **Number of visitors** differ in their calculation methods and purposes. 
+
+**Number of concurrent users** is a metric that measures how many users are using the applications at a specific point. It is the average of users who have made requests over the last 5 minutes, calculated without duplicates, at 10-second intervals. This metric displays how many users are connecting in a short period and can be used to see the real-time load on the server.
+
+**Number of visitors** is the sum of **numbers of concurrent users** connected over 1 hour without duplication. This metric is used to measure the number of unique users who visited a website or application over a specific period and is primarily used for traffic analysis and user engagement evaluation.
+
+The numbers for concurrent users and visitors can be checked in the following menu path.
+
+- <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />
+
+  The <Cmdname sid="dashboard_user" className="uitext" /> widget allows you to check the number of concurrent users in real time, collected at an interval of 10 seconds.
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" />
+
+  In <Cmdname sid="user" className="uitext" /> of the <Cmdname sid="product_type_apm" className="uitext" /> category, select <Cmdname sid="realtime_user" className="uitext" /> (5-minute statistics) or <Cmdname sid="visitor" className="uitext" /> (1-hour total).
+
+- <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />
+
+  - **Number of concurrent users**: In the <Cmdname sid="category" className="uitext" /> option, select `app_user` and then check the value of the `realtime_user` field.
+
+  - **Number of visitors**: In the <Cmdname sid="category" className="uitext" /> option, select `visitor` and then check the value of the `visit_user` field.
+
+:::note
+
+- Real-time (concurrent access) users indicate the users who are using the system in the same time zone. There are various ways to count or measure real-time (concurrent access) users.
+
+- In general, the connected user means a connected user who has access to the current network. However, web systems are different because they use connectionless networks. It does not mean that you are connected, but rather the user who sent the recent request can be measured.
+
+- The number of users is calculated by ** HyperLogLog** rather than simply adding up.
+
+- In the agent settings, the IP or cookies can be used to distinguish users. For more information, see [the following](../java/metrics-performance-counter#user-counter).
+
+:::
+
 </div>

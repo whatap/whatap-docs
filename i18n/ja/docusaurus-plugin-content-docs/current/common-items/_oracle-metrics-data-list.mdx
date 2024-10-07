@@ -1,46 +1,116 @@
-データベースメトリクスは、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+データベース指標は、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
 
 メトリクス情報に関する詳しい内容は、[次のリンク](https://docs.oracle.com/)を参照してください。
 
-<div class='metric'>
+<InDoc product="oracle">
 
-| Metric                                   | Description                                                                   |
-| ---------------------------------------- | ----------------------------------------------------------------------------- |
-| `cpu_used_by_this_session`               | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間(10ミリ秒単位)          |
-| `db_time`                                | データベースのユーザーレベルの呼び出しに費やされた経過時間(microseconds)                |
-| `active_sessions`                        | クエリが実行されているセッション数                                                             |
-| `cpu`                                    | CPU使用率                                                                        |
-| `cpu_cores`                              | CPUコア数                                                                        |
-| `db_block_changes`                       | SGAのブロックで変更されたブロック数                                                           |
-| `db_file_scattered_read_time_waited`     | db file scattered readイベントを待機した合計時間                                           |
-| `db_file_scattered_read_total_timeouts`  | db file scattered readイベントの合計タイムアウト回数                                         |
-| `db_file_scattered_read_total_waits`     | db file scattered readイベントの合計待機数                                              |
-| `db_file_sequential_read_time_waited`    | db file sequential readイベントを待機した合計時間                                          |
-| `db_file_sequential_read_total_timeouts` | db file sequential readイベントの合計タイムアウト回数                                        |
-| `db_file_sequential_read_total_waits`    | db file sequential readイベントの合計待機時間                                            |
-| `enqueue_waits`                          | キューの変換中またはインポート中に発生した待機の合計数(キュー・フェッチの遅延)                   |
-| `excute_count`                           | SQL文(statement)を実行した呼び出しの合計数                               |
-| `fatal_count`                            | 致命的なエラーが発生した回数                                                                |
-| `iowait_cpu`                             | CPUがI/Oの待機に費やす時間の割合                                                           |
-| `lock_wait_sessions`                     | 現在rowlockを取得する待機中の数                                                           |
-| `logons_current`                         | 現在の総ログオン数                                                                     |
-| `long_running_sessions`                  | 長時間実行中のセッション数                                                                 |
-| `memory`                                 | メモリ使用率                                                                        |
-| `opened_cursors_current`                 | 現在開いているcursorの数                                                               |
-| `parse_count_(hard)`                     | 構文分析の呼び出し合計数(実際の構文分析)                                      |
-| `parse_count_(total)`                    | 構文分析呼び出しの総数(hard、soft、describe)                            |
-| `physical_reads`                         | ディスクで読み取られたデータブロック数                                                           |
-| `physical_writes`                        | データをディスクに書き込まれたブロック数、`physical writes direct`と`physical writes from cache`の合計 |
-| `session_logical_reads`                  | メモリから読み込まれたデータブロック数、`db block gets`と`consistent gets`の合計                      |
-| `sorts_(memory)`                         | メモリで実行されたsort作業の数                                                             |
-| `sys_cpu`                                | sessionによって使用されたcpu timeの合計                                                   |
-| `total_elapse_time`                      | データベースインスタンスが最後に再起動されてから、すべてのリクエストの累積合計経過時間です。                                |
-| `total_sessions`                         | すべてのセッション数                                                                    |
-| `txn_sessions`                           | transactionを含むセッション数                                                          |
-| `user_commits`                           | トランザクションごとに実行されるユーザーコミット数                                                     |
-| `user_cpu`                               | user cpu使用量(%)                                             |
-| `wait_sessions`                          | イベントを待機しているセッション数                                                             |
-| `warning_count`                          | すべてのアラート数                                                                     |
+## db_oracle_counter {#db_oracle_counter}
+
+### Tags {#db_oracle_counter-tags}
+
+次は`db_oracle_counter`カテゴリに収集されるタグ値のガイダンスです。
+
+| タグ名         | 説明                  | 備考    |
+| ----------- | ------------------- | ----- |
+| `agentIp`   | エージェントごとのIPアドレスです。  | -     |
+| `dbIsMulti` | Multitenant対応可否です。  | -     |
+| `dbName`    | データベース名です。          | -     |
+| `dbType`    | データベースの種類です。        | -     |
+| `dbVersion` | 利用中のデータベースのバージョンです。 | -     |
+| `oname`     | エージェント名です。          | ユニーク値 |
+
+### Field {#db_oracle_counter-filed}
+
+次は`db_oracle_counter`カテゴリに収集されるフィールド値の案内です。
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+## db_oracle_dma_counter {#db_oracle_dma_counter}
+
+### Tags {#db_oracle_dma_counter-tags}
+
+次は`db_oracle_dma_counter`カテゴリに収集されるタグ値の案内です。
+
+| タグ名      | 説明         | 備考    |
+| -------- | ---------- | ----- |
+| `dbName` | データベース名です。 | -     |
+| `oname`  | エージェント名です。 | ユニーク値 |
+
+### Field {#db_oracle_dma_counter-filed}
+
+次は`db_oracle_dma_counter`カテゴリに収集されるフィールド値の案内です。
+
+</InDoc>
+
+<div class='db-metric-3'>
+
+| Metrics                                                      | Description                                                                          | Category       |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------ | -------------- |
+| `cpu_used_by_this_session`                                   | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間(10ミリ秒単位)となります。                              | Performance    |
+| `db_time`                                                    | データベース内のユーザーレベルの呼び出しを実行するために必要な経過時間(microseconds)となります。                              | Performance    |
+| `active_sessions`                                            | 現在、活性化されたセッションの数です。                                                                  | Connection     |
+| `connect_error`                                              | 接続エラーの数です。                                                                           | Connection     |
+| `consistent_gets`                                            | 一貫したデータブロックの読み取り作業の回数です。                                                             | I/O            |
+| `cpu`                                                        | データベースで使用されたCPUの使用率です。                                                               | Performance    |
+| `cpu_cores`                                                  | 使用可能なCPUコアの数です。                                                                      | Performance    |
+| `data_blocks_consistent_reads_-_undo_records_applied`        | 一貫したデータブロックの読み取りに適用されたUndoレコードの数です。                                                  | I/O            |
+| `db_block_changes`                                           | SGAのブロックで変更されたブロックの数です。                                                              | I/O            |
+| `db_block_gets`                                              | SGAのブロックでの直接読み取り作業の回数です。                                                             | I/O            |
+| `db_file_scattered_read_time_waited`                         | スキャッタード読み取りイベントを待機した時間です。                                                            | I/O            |
+| `db_file_scattered_read_total_timeouts`                      | スキャッタード読み取りイベントで発生したタイムアウト回数です。                                                      | I/O            |
+| `db_file_scattered_read_total_waits`                         | スキャッタード読み込みイベントで発生した待機回数の合計です。                                                       | I/O            |
+| `db_file_sequential_read_time_waited`                        | シーケンシャル読み取りイベントで待機した時間です。                                                            | I/O            |
+| `db_file_sequential_read_total_timeouts`                     | シーケンシャル読み取りイベントで発生したタイムアウト回数です。                                                      | I/O            |
+| `db_file_sequential_read_total_waits`                        | シーケンシャルの読み取りイベントで発生した待機回数の合計です。                                                      | I/O            |
+| `direct path read time waited`                               | ダイレクトパスの読み取りで待機した時間です。                                                               | I/O            |
+| `direct path read total timeouts`                            | ダイレクトパスの読み取りで発生したタイムアウト回数です。                                                         | I/O            |
+| `direct path read total waits`                               | ダイレクトパスの読み取りで発生した待機回数の合計です。                                                          | I/O            |
+| `direct path write time waited`                              | ダイレクトパスの書き込みで待機した時間です。                                                               | I/O            |
+| `direct path write total timeouts`                           | ダイレクトパスの書き込みで発生したタイムアウトの回数です。                                                        | I/O            |
+| `direct path write total waits`                              | ダイレクトパスの書き込みで発生した待機回数の合計です。                                                          | I/O            |
+| `enq:_TX_-_row_lock_contention_time_waited`                  | 行ロック(row lock) 競争で待機した時間です。                                                          | I/O            |
+| `enq:_TX_-_row_lock_contention_total_timeouts`               | 行ロック(row lock) 競争で発生したタイムアウトの回数です。                                                   | I/O            |
+| `enq:_TX_-_row_lock_contention_total_waits`                  | 行ロック(row lock) 競争で発生した、合計の待機回数です。                                                    | I/O            |
+| `enqueue_waits`                                              | キューの読み込みが遅れてキューの変換または読み込み中に発生した合計のキュー数です。                                            | I/O            |
+| `execute_count`                                              | SQL文(statement)を実行した合計のコマンド数です。                                                      | Performance    |
+| `fatal_count`                                                | クリティカルなエラーが発生した回数です。                                                                 | Info           |
+| `iowait_cpu`                                                 | I/O待機状態で使用されたCPU時間の比率です。                                                             | Performance    |
+| `latch free time waited`                                     | ラッチフリー状態で待機した時間です。                                                                   | I/O            |
+| `latch free total timeouts`                                  | ラッチフリー状態で発生したタイムアウトの回数です。                                                            | I/O            |
+| `latch free total waits`                                     | ラッチフリー状態で発生した待機回数の合計です。                                                              | I/O            |
+| `library cache lock time waited`                             | ライブラリキャッシュロックで待機した時間です。                                                              | I/O            |
+| `library cache lock total timeouts`                          | ライブラリキャッシュロックで発生したタイムアウトの回数です。                                                       | I/O            |
+| `library cache lock total waits`                             | ライブラリキャッシュロックで発生した待機回数の合計です。                                                         | I/O            |
+| `library cache pin time waited`                              | ライブラリキャッシュピンで待機した時間です。                                                               | I/O            |
+| `library cache pin total timeouts`                           | ライブラリキャッシュピンで発生したタイムアウトの回数です。                                                        | I/O            |
+| `library cache pin total waits`                              | ライブラリキャッシュピンで発生した合計待機回数です。                                                           | I/O            |
+| `lock_wait_sessions`                                         | 現在の行ロック(row lock)を取得するために待機している数です。                                                  | Connection     |
+| `logons_current`                                             | 現在有効になっているログインの数です。                                                                  | Connection     |
+| `long_running_sessions`                                      | 長時間実行中のセッションの数です。                                                                    | Connection     |
+| `memory`                                                     | 現在使用中のメモリ比率です。                                                                       | MySQL Resource |
+| `opened_cursors_current`                                     | 現在、開いているカーソル(cursor) の数です。                                                           | Connection     |
+| `parse_count_(hard)`                                         | 構文解析呼び出しの合計数(実際の構文解析)となります。                                                          | Performance    |
+| `parse_count_(total)`                                        | 構文解析呼び出しの合計数(hard, soft, describe)となります。                                             | Performance    |
+| `physical_reads`                                             | ディスクで読み込んだデータブロックの数です。                                                               | I/O            |
+| `physical_writes`                                            | データをディスクに記録したブロックの数です。 `physical writes direct`および`physical writes from cache`の合計です。 | I/O            |
+| `pq_sessions`                                                | 並列クエリセッションの数です。                                                                      | Connection     |
+| `redo_entries`                                               | 生成されたRedoエントリの数です。                                                                   | I/O            |
+| `rollback_changes_-_undo_records_applied`                    | ロールバック変更により適用されたUndoレコードの数です。                                                        | I/O            |
+| `session_logical_reads`                                      | メモリで読み込んだデータブロックの数です。 `db block gets`および`consistent gets`の合計です。                      | I/O            |
+| `sorts_(disk)`                                               | ディスクで発生したソート作業の数です。                                                                  | I/O            |
+| `sorts_(memory)`                                             | メモリで発生したソート作業の数です。                                                                   | I/O            |
+| `sys_cpu`                                                    | セッションによって使用されたcpu timeの合計です。                                                         | Performance    |
+| `total_elapse_time`                                          | データベースインスタンスが最後に再起動されてから、すべてのリクエストの累積合計経過時間です。                                       | Performance    |
+| `total_sessions`                                             | 合計のセッション数です。                                                                         | Connection     |
+| `transaction_tables_consistent_reads_-_undo_records_applied` | トランザクションテーブルで一貫した読み取り作業に適用されたUndoレコードの数です。                                           | I/O            |
+| `txn_sessions`                                               | トランザクションセッションの数です。                                                                   | Connection     |
+| `user_commits`                                               | トランザクション当たりに実行されたユーザーコミットの作業数です。                                                     | I/O            |
+| `user_cpu`                                                   | ユーザー作業で使用されたCPUの比率(%)です。                                                             | Performance    |
+| `user_rollbacks`                                             | ユーザーのロールバック作業の数です。                                                                   | I/O            |
+| `wait_sessions`                                              | イベント待機中のセッション数です。                                                                    | Connection     |
+| `warning_count`                                              | すべてのアラート数です。                                                                         | Info           |
 
 以下はエージェント設定で`ora_ratio`オプションを介して収集する指標の説明です。 エージェントオプション設定の詳細については、[次の文書](agent-dbx-settings#collect-data)を参照してください。
 

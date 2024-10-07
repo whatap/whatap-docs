@@ -1,0 +1,682 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_8_x",
+    "ver": "Service 2.8.2",
+    "date": "2024-08-29",
+    "Lists": [
+      {
+        "ver": "Service 2.8.2",
+        "hash": "service-282",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, the following changes have been applied.</p>",
+        "category": "Common",
+        "details": "<ul>\n<li>\n<p>Removed the ZIP file download command.</p>\n</li>\n<li>\n<p>Modified the TAR file downloading command.</p>\n</li>\n<li>\n<p>Fixed the issue where the <span class=\"uitext\">ZIP</span> <span class=\"uitext\">Download</span> button does not work for the products other than <strong>PostgreSQL</strong>, <strong>Oracle Pro</strong>, <strong>Altibase</strong>, and <strong>MySQL</strong>.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.8.2",
+        "hash": "service-282",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span>, changed the maximum time range for selecting a cluster to view Global Lock information to 3 hours.</p>",
+        "category": "Oracle Pro"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_8_x",
+    "ver": "Service 2.8.1",
+    "date": "2024-08-28",
+    "Lists": [
+      {
+        "ver": "Service 2.8.1",
+        "hash": "service-281",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Through the <img decoding=\"async\" loading=\"lazy\" alt=\"Snapshot icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"24\" height=\"24\" class=\"img_ev3q\"> button in <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Stack</span>, fixed the issue where themes are not applied when saving a snapshot as an image.</p>"
+      },
+      {
+        "ver": "Service 2.8.1",
+        "hash": "service-281",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, changed the size of the SQL text preview box.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_8_x",
+    "ver": "Service 2.8.0",
+    "date": "2024-08-28",
+    "Lists": [
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span> <code class=\"newfunc\">New</code></p>",
+        "category": "Common",
+        "details": "<ul>\n<li>\n<p>User experience (UX) has been improved so that users can set the time, target, and interval options, and then specify the metrics to monitor and add charts.</p>\n</li>\n<li>\n<p>You can change the time range of a chart view without deleting the widgets placed on the dashboard.</p>\n</li>\n<li>\n<p>It provides a batch update feature that allows you to apply options to all widgets placed on the dashboard at once.</p>\n</li>\n<li>\n<p>The preset feature allows you to save and load the widgets placed on the dashboard.</p>\n</li>\n<li>\n<p>You can adjust the layout of the dashboard and the functionality of the widgets through various options provided.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the log monitoring feature in the <strong>Node.js</strong> product.</p>",
+        "category": "Application"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">IP Transaction</span> menu to view URLs and the number of calls for specific IPs.</p>",
+        "category": "Application"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Altibase <code class=\"my\">V2</code> services now launched!</p>",
+        "category": "Database"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Removed the label display for individual graphs from the vertical equalizer bar chart.</p>",
+        "category": "Dashboard"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>OR</code> option between the conditions within the metrics type filters.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the font color selection option for rich text widgets.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the <span class=\"uitext\">Edit</span> button appears on the widgets whose titles cannot be modified.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the <span class=\"uitext\">Widget templates</span> list, fixed the issue where the expand/collapse icon does not change when there is no widget list to display under the product category.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the description of the metric is displayed as the widget title when widgets are added using <span class=\"uitext\">All metrics</span>.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the <span class=\"uitext\">Rich text</span> widget, fixed the issue where the unsaved content is retained when opening and closing the Edit screen.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> On the Edit screen of the <span class=\"uitext\">Rich text</span> widget, set the theme for the tooltip element so that the text and the tooltip of the toolbar button do not overlap.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the dashboard filters are not applied in the sub widgetof the group when applying the filters if there is no filter selected in the group widget in <span class=\"uitext\">Integrated Flex Board</span>.</p>",
+        "category": "Integrated Flex Board / Flex Board"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Metrics Anomaly Detection</span>, fixed to prevent multiple items from being selected for a category when applying the <span class=\"uitext\">Filter</span> option.</p>",
+        "category": "Analysis"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Notifications</span>, added the third-party plugin to receive alert notifications via <strong>Teams Workflows</strong> because the Office 365 connector method has been deprecated.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Notifications</span>, added a third-party plugin to receive alert notifications via <strong>PagerDuty</strong>.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\">New</code>, added the feature to perform search with <span class=\"uitext\">Event name</span> or <span class=\"uitext\">Event reception tag</span>.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Changed the <span class=\"b500\">Hide browser notifications</span> feature for notification messages displayed in real time to the <span class=\"uitext\">Close All Notifications</span> feature that can close all notifications.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> The term <b>Event Resolution</b> related to warning notification messages to <b>another term</b> in Korean version.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issure where the setting is not saved when the same set value is entered if only one of <span class=\"slow\">Warning</span> and <span class=\"vslow\">Critical</span> metrics is activated in the event addition or modification screen of <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\">V2</code>.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the MXQL data is not viewed on the composite metrics addition or modification screen of <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\"> </code>V2.</p>",
+        "category": "Alert",
+        "details": "<blockquote>\n<p>We fixed the issue where the MXQL data is not viewed when changed to the text mode after setting the tags or fields with the string values by using the <span class=\"uitext\">Filter</span> option in the <span class=\"uitext\">Query event data</span> section.</p>\n</blockquote>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Event Configuration</span> , modified the event list to be sorted by the event name.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Metrics</span> and <span class=\"uitext\">Anomaly detection</span> of the <span class=\"uitext\">Event Configuration</span> menu, fixed the issue where the copy button in the tooltip that appears when hovering over an individual event title does not work.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <img decoding=\"async\" loading=\"lazy\" alt=\"Notification icon\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNnB4O2hlaWdodDogMjZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZXZlbnQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjM5MS4wMDAwMDApIiBmaWxsPSIjNzk3OTc5Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtZXZlbnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDEuMDAwMDAwKSIgaWQ9IkNvbWJpbmVkLVNoYXBlIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTcsMTkgTDEzLDE5IEMxMywyMC42NTY4NTQyIDExLjY1Njg1NDIsMjIgMTAsMjIgQzguNDAyMzE5MTIsMjIgNy4wOTYzMzkxMiwyMC43NTEwOCA3LjAwNTA5MjY5LDE5LjE3NjI3MjggTDcsMTkgTDEzLDE5IFogTTEwLDAgQzExLjEwNDU2OTUsMCAxMiwwLjg5NTQzMDUgMTIsMiBDMTIsMi4wOTY5NzY1MyAxMS45OTMwOTc5LDIuMTkyMzQwOTkgMTEuOTc5NzU4MiwyLjI4NTYyODk1IEMxNC44ODE4MDcyLDMuMTM4MTQ1MzcgMTcsNS44MjE3MDc0NyAxNyw5IEwxNywxNSBMMTksMTUgQzE5LjU1MjI4NDcsMTUgMjAsMTUuNDQ3NzE1MyAyMCwxNiBDMjAsMTYuNTUyMjg0NyAxOS41NTIyODQ3LDE3IDE5LDE3IEwxLDE3IEMwLjQ0NzcxNTI1LDE3IDYuNzYzNTM3NTFlLTE3LDE2LjU1MjI4NDcgMCwxNiBDLTYuNzYzNTM3NTFlLTE3LDE1LjQ0NzcxNTMgMC40NDc3MTUyNSwxNSAxLDE1IEwzLDE1IEwzLDkgTDMuMDA0MDU5MDIsOC43NTkzNTAyNSBDMy4xMDc4NTc5NSw1LjY4Njg3MzI3IDUuMTkxNzI1NDIsMy4xMTY1MDAwNCA4LjAxOTkwNDkxLDIuMjgzOTg3MDYgQzguMDA2OTAyMDYsMi4xOTIzNDA5OSA4LDIuMDk2OTc2NTMgOCwyIEM4LDAuODk1NDMwNSA4Ljg5NTQzMDUsMCAxMCwwIFogTTEwLDQgQzcuMzAyODE1OCw0IDUuMDkzNjkxMTksNi4xMzk5ODcwNyA1LjAwMzc3NDU5LDguNzkzMDc5MjggTDUsOSBMNSwxNSBMMTUsMTUgTDE1LDkgQzE1LDYuMjM4NTc2MjUgMTIuNzYxNDIzNyw0IDEwLDQgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+\" width=\"24\" height=\"24\" class=\"img_ev3q\"> <span class=\"uitext\">Alert status</span>, fixed the issue where the number of notifications on the chart is accumulated.</p>",
+        "category": "Alert"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to download the member list as a CSV file from the following menu paths:</p>",
+        "category": "Management",
+        "details": "<ul>\n<li>\n<p>Home &gt; Select Project &gt; <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Project Member</span>: <a href=\"/en/project/project-manage#downlaodmemberlist\">Reference</a></p>\n</li>\n<li>\n<p>Home &gt; <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Integrated Member Management</span>: <a href=\"/en/project/integrated-manage#downlaodmemberlist\">Reference</a></p>\n</li>\n<li>\n<p>Home &gt; <span class=\"uitext\">Organization Management</span> &gt; <span class=\"uitext\">Member List</span>: <a href=\"/en/project/organization#downlaodmemberlist\">Reference</a></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, removed the caution regarding the access key.</p>",
+        "category": "Management"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Changed the location and UI of the Integrated Group Management button.</p>",
+        "category": "Management"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the Japanese notation of the product introduction displayed when creating a new project.</p>",
+        "category": "Management"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Project List</span> on the Home screen, for the project added into the group, modified to display the <img decoding=\"async\" loading=\"lazy\" alt=\"Configuration icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmb3VuZGF0aW9uPSJbb2JqZWN0IE9iamVjdF0iIGNsYXNzPSJJbm5lckljb25zdHlsZWRfX0ljb24tY2gtZnJvbnRfX3NjLTE5N2g1YmItMCBka0RyT3IiIGRlZmF1bHRvcGFjaXR5PSIxIiBob3ZlcmVkb3BhY2l0eT0iMSIgbWFyZ2ludG9wPSIwIiBtYXJnaW5yaWdodD0iMCIgbWFyZ2luYm90dG9tPSIwIiBtYXJnaW5sZWZ0PSIwIiB3aXRodGhlbWU9InRydWUiPjxwYXRoIGZpbGw9IiM3OTc5NzkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS44MzM1NCAxMC4wMDAxQzUuODMzNTQgNy42OTkzOSA3LjY5ODgxIDUuODMzNDIgMTAuMDAwMiA1LjgzMzQyQzEyLjMwMDkgNS44MzM0MiAxNC4xNjY5IDcuNjk5MzkgMTQuMTY2OSAxMC4wMDAxQzE0LjE2NjkgMTIuMzAwOCAxMi4zMDA5IDE0LjE2NjcgMTAuMDAwMiAxNC4xNjY3QzcuNjk4ODEgMTQuMTY2NyA1LjgzMzU0IDEyLjMwMDggNS44MzM1NCAxMC4wMDAxWk0xOC4zMzM1IDExLjI1MDFWOC43NTAwOEwxNi40NzUyIDguNDQwMDhDMTYuMzA5NCA3Ljc1NTA4IDE2LjAzOTQgNy4xMTE3NSAxNS42Nzk0IDYuNTI2NzVMMTYuNzc2IDQuOTkwOTFMMTUuMDA4NSAzLjIyMzQxTDEzLjQ3MjcgNC4zMjA5MUMxMi44ODc3IDMuOTYwOTEgMTIuMjQ1MiAzLjY5MDkxIDExLjU2MDIgMy41MjUwOEwxMS4yNTAyIDEuNjY2NzVIOC43NTAyTDguNDQwMiAzLjUyNTA4QzcuNzU1MiAzLjY5MDkxIDcuMTExODcgMy45NjA5MSA2LjUyNjg3IDQuMzIwOTFMNC45OTEwNCAzLjIyMzQxTDMuMjIzNTQgNC45OTA5MUw0LjMyMDIgNi41MjY3NUMzLjk2MTA0IDcuMTExNzUgMy42OTAyIDcuNzU1MDggMy41MjUyIDguNDQwMDhMMS42NjY4NyA4Ljc1MDA4VjExLjI1MDFMMy41MjUyIDExLjU2MDFDMy42OTAyIDEyLjI0NTEgMy45NjEwNCAxMi44ODg0IDQuMzIwMiAxMy40NzM0TDMuMjIzNTQgMTUuMDA5Mkw0Ljk5MTA0IDE2Ljc3NjdMNi41MjY4NyAxNS42NzkyQzcuMTExODcgMTYuMDM4NCA3Ljc1NTIgMTYuMzA5MiA4LjQ0MDIgMTYuNDc1MUw4Ljc1MDIgMTguMzMzNEgxMS4yNTAyTDExLjU2MDIgMTYuNDc1MUMxMi4yNDUyIDE2LjMwOTIgMTIuODg3NyAxNi4wMzg0IDEzLjQ3MjcgMTUuNjc5MkwxNS4wMDg1IDE2Ljc3NjdMMTYuNzc2IDE1LjAwOTJMMTUuNjc5NCAxMy40NzM0QzE2LjAzOTQgMTIuODg4NCAxNi4zMDk0IDEyLjI0NTEgMTYuNDc1MiAxMS41NjAxTDE4LjMzMzUgMTEuMjUwMVoiPjwvcGF0aD48L3N2Zz4=\" width=\"20\" height=\"20\" class=\"img_ev3q\"> &gt; <span class=\"uitext\">Delete From Group</span> menu.</p>",
+        "category": "Management"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed some colors for themes.</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the bottom area is hidden when accessing the WhaTap service screen through the browser on a mobile device.</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the side menu, fixed the scroll error of the<span class=\"uitext\">Organization</span> list depending on the web browser screen size.</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where themes applied to some text elements are missing.</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added left margin for the organization name without logo in the side menu.</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where changing languages with an organization selected does not work intermittently.</p>",
+        "category": "User Interface"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Table view</span> tab of the <span class=\"uitext\">Trace analysis</span> window, added the feature to download SQL statements mapped to bind variables.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Error</span>, modified to view the initial data with the <span class=\"uitext\">Errors only</span> filter active, when you go to the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Transaction Search</span> menu through the <span class=\"uitext\">Detailed analysis</span> feature.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added filter values to pass when navigating to the <span class=\"uitext\">Transaction Search</span> menu from the sub menus under <span class=\"uitext\">Statistics</span>.</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Domain</span>: Domain, Transaction</p>\n</li>\n<li>\n<p><span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">Referrer</span>: Referer, Transaction</p>\n</li>\n<li>\n<p><span class=\"uitext\">Statistics</span> &gt; <span class=\"uitext\">User-Agent</span>: User Agent</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the filtering selection box in the <span class=\"uitext\">Trace analysis</span> pop-up window to the group format button.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> If the user language is set to English, changed the font size to improve the readability of the <span class=\"uitext\">Apdex</span> widget guide modal in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>, changed the widget name of <span class=\"b500\">Active Transaction Equalizer</span> to <span class=\"uitext\">Active Transaction</span>, and modified to display the widget name on one line without line breaking.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> On the <span class=\"uitext\">Trace analysis</span> window, changed the default column order.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>, fixed the issue where data for some series charts do not appear intermittently when retrieving the past data.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the substituted variable <code>#</code> in the SQL statement for transactions not to be displayed as <code>$</code>.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> When the <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Opened Socket Count</span> menu changes to the <span class=\"uitext\">Transaction Statistics</span> menu, fixed the issue where the end time is set earlier than the start time.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> In the <span class=\"uitext\">Transaction log</span> tab of the <span class=\"uitext\">Trace analysis</span> window, modified to output a guidance message when there is no log data.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the Firefox browsers, fixed the issue where the center text alignment of the Arc Equalizer widget in the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span> menu is broken.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where several stacks are not displayed when a snapshot is saved through the <img decoding=\"async\" loading=\"lazy\" alt=\"Snapshot icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDNMNy4xNyA1Ljk5MDUzSDJDMiA1Ljk5MDUzIDIgNi44OTAzNiAyIDcuOTkwMTRWMTkuMDAwNEMyIDIwLjEwMDIgMiAyMSAyIDIxSDIyQzIyIDIxIDIyIDIwLjEwMDIgMjIgMTkuMDAwNFY3Ljk5MDE0QzIyIDYuODkwMzYgMjIgNS45OTA1MyAyMiA1Ljk5MDUzSDE2LjgzTDE1IDNIOVpNNCA4SDguMjQwODZMMTAuMDIwMSA0Ljk5MTgySDE0LjAxMTVMMTYuMDk3OCA4SDIwVjE5SDRMNCA4Wk0xMiAxN0M5Ljc5MiAxNyA4IDE1LjIwOCA4IDEzQzggMTAuNzkyIDkuNzkyIDkgMTIgOUMxNC4yMDggOSAxNiAxMC43OTIgMTYgMTNDMTYgMTUuMjA4IDE0LjIwOCAxNyAxMiAxN1pNMTIgMTVDMTMuMTA0NiAxNSAxNCAxNC4xMDQ2IDE0IDEzQzE0IDExLjg5NTQgMTMuMTA0NiAxMSAxMiAxMUMxMC44OTU0IDExIDEwIDExLjg5NTQgMTAgMTNDMTAgMTQuMTA0NiAxMC44OTU0IDE1IDEyIDE1WiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"24\" height=\"24\" class=\"img_ev3q\"> button in <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Stack</span> if the screen theme is in dark mode.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In the <span class=\"uitext\">Tree view</span> tab of the <span class=\"uitext\">Trace analysis</span> window, fixed the issue where the code box boundaries in SQL and Active Stack are displayed as double lines.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Process list</span>, changed the <span class=\"uitext\">Name</span> column data to the name that can be identified in <span class=\"uitext\">Server Detail</span> or shell.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> When adding or modifying events in <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span>, changed the <span class=\"uitext\">Event rule condition</span>'s my font to the default font.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Server CONF.</span> &gt; <span class=\"uitext\">Runtime ENV. Variable</span> or <span class=\"uitext\">EVN. Variable</span>, fixed the issue where the menu name of the top of the screen is changed to <span class=\"b500\">Agent Log Viewer</span>, if you select the <img decoding=\"async\" loading=\"lazy\" alt=\"Expand icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjAxMDI0IDE3Ljk5NDVWMTUuOTk0OUw1LjQ3NzM2IDE1Ljk5NDlMMTAuMDcwOSAxMS40MDE0TDguNjU2NjggOS45ODcxNUwzLjk5OTYxIDE0LjY0NDJMMy45OTk5NCAxMS45OTQ3TDEuOTk5OTQgMTEuOTk0OEwxLjk5OTQ1IDE3Ljk5NDVMOC4wMTAyNCAxNy45OTQ1Wk0xMS45ODk2IDEuOTg3NTNWMy45ODcxMkwxNC42NTY3IDMuOTg3MTJMOS45OTk3OSA4LjY0NDAzTDExLjQxNCAxMC4wNTgyTDE2LjAwMDIgNS40NzJMMTUuOTk5OSA3Ljk4NzI5TDE3Ljk5OTkgNy45ODcyNEwxOC4wMDA0IDEuOTg3NDlMMTEuOTg5NiAxLjk4NzUzWiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K\" width=\"20\" height=\"20\" class=\"img_ev3q\"> agent list expansion button.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Changed the download link included in the Debian and Ubuntu operating system installation guides in the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span> menu from <strong>http</strong> to <strong>https</strong>.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event History</span>, fixed the issue where the <span class=\"uitext\">before and after the alert</span> spacing selection option is displayed as text instead of a button when viewing the event details.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the summary view of <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span>, added the <span class=\"uitext\">Pod summary analysis</span> feature.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">View Detailed</span> of the <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Pod List</span> menu, added the <span class=\"uitext\">Pod summary analysis</span> feature.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Target information</span> tab of the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Container Map</span> menu, added the <span class=\"uitext\">Service List</span> navigation link and the feature to see the service <strong>object manifest</strong> information.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the node list of the <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node Disk List</span> menu, added the <span class=\"uitext\">FileSystem</span> column.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the Pod list of the <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Pod List</span> menu, added the columns for number of containers and number of applications.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Container Application List</span>, moved the <span class=\"uitext\">ApplicationName</span>, <span class=\"uitext\">ApplicationId</span> column to under the <span class=\"uitext\">Application information</span> column.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Namespace Management</span>, added specific guidance messages when creating a namespace project.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to log user actions when the <span class=\"uitext\">Session kill</span> feature succeeds or fails.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, added a custom widget that allows you to select metrics.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, added the feature to download the agent file in ZIP format.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified not to invite the <a href=\"mailto:dbx@whatap.io\" target=\"_blank\" rel=\"noopener noreferrer\">dbx@whatap.io</a> account together when using the <span class=\"uitext\">Invite the WhaTap support team</span> feature in <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Project Member</span>.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved the calling of active session data.</p>",
+        "category": "Altibase"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Vacuum Sessions</span> widget that can check the number of vacuum processes running in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>.</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Dead Lock</span>, fixed the issue where the message displayed when there is no data retrieved, is half displayed.</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span>, added the feature to display global locks when selecting a cluster.</p>",
+        "category": "Oracle Pro"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">FILTER_PREDICATES</span> column in the <span class=\"uitext\">Runtime Plan</span> and <span class=\"uitext\">Explain Plan</span> tables of the <span class=\"uitext\">SQL details</span> pop-up window.</p>",
+        "category": "Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, modified to view the data in the <span class=\"uitext\">Main Waits</span> widget in the <code>active_session</code> category.</p>",
+        "category": "Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the <span class=\"uitext\">OBJECT_NAME</span> column link is not enabled when you enter the <span class=\"uitext\">SQL details</span> pop-up window from <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>.</p>",
+        "category": "Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, fixed the issue where the elapse time value in the detailed chart is abnormally high.</p>",
+        "category": "Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified to display the cluster name in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span>.</p>",
+        "category": "Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified not to display the cluster name in <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span>.</p>",
+        "category": "Redis V1, MongoDB V1"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Cloud",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"2\">Fixed</code> Fixed the issue where the agent installation is not made due to the indentation by the script in the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span> menu for the <strong>Amazon ECS</strong> platform.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Browser",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved the UI of the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Browser Error</span> &gt; <span class=\"uitext\">Error message</span> <span class=\"uitext\">Table</span> section.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Browser",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved the UI of the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Browser Error</span> &gt; <span class=\"uitext\">Error message</span> <span class=\"uitext\">Table</span> &gt; <span class=\"uitext\">Error</span> <span class=\"uitext\">Detail</span> &gt; <span class=\"uitext\">Errors per page</span> section.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Browser",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">User session analysis</span> &gt; <span class=\"uitext\">User session flow</span>, fixed the problem with the sorting for elapsed times.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Network",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> If the user language is English, modified the <b>Version</b> to <span class=\"uitext\">Kernel Version</span> in the <span class=\"uitext\">Precautions before installation</span> section of <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Log",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Configuration</span> &gt; <span class=\"uitext\">Getting started with log monitoring</span>, modified not to display the items with <code>#</code> among <span class=\"uitext\">Data retention per category</span>.</p>"
+      },
+      {
+        "ver": "Service 2.8.0",
+        "hash": "service-280",
+        "product": "Log",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Log</span>, changed the following options:</p>",
+        "details": "<ul>\n<li>\n<p>Modified to select at least one column in <span class=\"uitext\">Column settings</span>.</p>\n</li>\n<li>\n<p>Changed the <span class=\"b500\">Table content setting</span> option name to <span class=\"uitext\">Log view detail setting</span>.</p>\n</li>\n<li>\n<p>In <span class=\"uitext\">Log view detail setting</span>, changed the <span class=\"uitext\">Log</span> selection option name to <span class=\"uitext\">content</span>.</p>\n</li>\n<li>\n<p>In <span class=\"uitext\">Log view detail setting</span>, modified to select at least one entry.</p>\n</li>\n<li>\n<p>In <span class=\"uitext\">Column settings</span>, modified not to select <span class=\"uitext\">Log view detail setting</span> and display the guidance tooltip when the <span class=\"uitext\">log</span> column is deselected.</p>\n</li>\n</ul>"
+      }
+    ]
+  }
+]

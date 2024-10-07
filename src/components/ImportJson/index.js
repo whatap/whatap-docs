@@ -138,7 +138,7 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                       <div key={`${list.ver}-${index}`} className={styles.rlist}>
                         <div>
                           {(index === 0 || list.ver !== array[index - 1].ver) && (
-                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className={styles.goto} target='_blank'>
+                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className={styles.goto}>
                               {list.ver}
                               <img src={linkIcon} width="18px" height="18px" className={clsx(styles.icoLink, 'ico-link')} />
                             </a>
@@ -176,7 +176,7 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                     {list.details && (
                       <div dangerouslySetInnerHTML={{ __html: list.details }} />
                     )}
-                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`} target='_blank'>{list.product} | {list.ver}</a></code>
+                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`}>{list.product} | {list.ver}</a></code>
                   </li>
                 ))}
               </ul>

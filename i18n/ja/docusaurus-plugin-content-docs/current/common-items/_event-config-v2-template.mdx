@@ -42,7 +42,7 @@
 
   カテゴリ：[`app_counter`](metrics-app#app_counter)
 
-  トランザクションの平均リスポンスタイム(`resp_time`)が10回連続、2,000ms(2초)を超えた状態で続く場合は警告(<span class="slow">Warning</span>)レベルの通知を送信します。
+  トランザクションの平均リスポンスタイム(`resp_time`)が10回連続、2,000ms(2秒)を超えた状態で続く場合は警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
 :::note
 
@@ -202,7 +202,7 @@
 
   カテゴリ：<Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
 
-  トランザクションの平均リスポンスタイム(`resp_time`)が10回連続、2,000ms(2초)を超えた状態で続く場合は警告(<span class="slow">Warning</span>)レベルの通知を送信します。
+  トランザクションの平均リスポンスタイム(`resp_time`)が10回連続、2,000ms(2秒)を超えた状態で続く場合は警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
 :::note
 
@@ -430,25 +430,37 @@
 
 - **_Active Sessions_**
 
-  カテゴリ：`db_altibase_counter`
+  カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
+- **_CPU_**
+
+  カテゴリ：[`db_altibase_counter`](metrics-data-list)
+
+  CPU使用率(`cpu`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_altibase_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗した場合、危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
-  カテゴリ：`db_altibase_counter`
+  カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Memory_**
 
-  カテゴリ：`db_altibase_counter`
+  カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
   メモリ使用率(`mem(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
   :::note
 
-  このテンプレートは、XOSエージェントを設定して実行した場合にのみ使用できます。 XOSエージェント設定の詳細については、[次の文書](after-install-agent#agent-architecture)を参考にしてください。
+  このテンプレートは、XOSエージェントを設定して実行した場合にのみ使用できます。 XOSエージェント設定の詳細については、[次の文書](install-agent#apply-xos-agent)を参考にしてください。
 
   :::
 

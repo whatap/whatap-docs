@@ -1,6 +1,6 @@
 ## スレッドリスト/ダンプ {#side_threadList}
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_agentsConfiguration" className="uitext" /> > <Cmdname sid="side_threadList" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />
 
 <ImgLang img='ipa-thread-list-java.png' desc='スレッドリスト/ダンプ' />
 
@@ -63,19 +63,19 @@ Javaプロセス内のすべてのスレッド状態のスナップショット�
 
 ##### <Cmdname sid="stack" />
 
-| 項目                                                    | プロパティ            | 説明                                                                              |
-| ----------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------- |
-| <Cmdname sid="thread_id" className="uitext" />        | `threadId`       | スレッドに割り当てられた固有ID                                                                |
+| 項目                                                    | プロパティ            | 説明                                                           |
+| ----------------------------------------------------- | ---------------- | ------------------------------------------------------------ |
+| <Cmdname sid="thread_id" className="uitext" />        | `threadId`       | スレッドに割り当てられた固有ID                                             |
 | <Cmdname sid="lock_owner_id" className="uitext" />    | `lockOwnerId`    | スレッドがブロックされたオブジェクト(Monitor) のモニタのロックを維持するスレッドID              |
-| <Cmdname sid="waited_count" className="uitext" />     | `waitedCount`    | スレッドが`WAITING`または`TIMED_WAITING`状態になった総回数                                       |
-| <Cmdname sid="blocked_count" className="uitext" />    | `blockedCount`   | スレッドが`BLOCKED`状態になった総回数                                                         |
+| <Cmdname sid="waited_count" className="uitext" />     | `waitedCount`    | スレッドが`WAITING`または`TIMED_WAITING`状態になった総回数                    |
+| <Cmdname sid="blocked_count" className="uitext" />    | `blockedCount`   | スレッドが`BLOCKED`状態になった総回数                                      |
 | <Cmdname sid="waited_time" className="uitext" />      | `waitedTime`     | スレッドが`WAITING`状態を継続した経過時間(ミリ秒)、スレッド競合モニタリングが非活性化された場合`-1`を返還 |
 | <Cmdname sid="thread_cpu_time" className="uitext" />  | `threadCpuTime`  | スレッドのCPU時間合計(ナノ秒)をミリ秒で計算して表示、CPU時間測定を非活性化した場合`-1`を返還         |
-| <Cmdname sid="status" className="uitext" />           | `threadstate`    | スレッド状態                                                                          |
+| <Cmdname sid="status" className="uitext" />           | `threadstate`    | スレッド状態                                                       |
 | <Cmdname sid="blocked_time" className="uitext" />     | `blockedTime`    | スレッドが`BLOCKED`状態になってからの経過時間(ミリ秒)、スレッド競合監視が非活性化された場合`-1`を返還   |
-| <Cmdname sid="thread_name" className="uitext" />      | `threadName`     | スレッドの固有名                                                                        |
-| <Cmdname sid="lock_name" className="uitext" />        | `lockName`       | スレッドの入力がブロックされたり`Object.wait`メソッドを介して通知を待つモニターロックを表示した文字列                       |
-| <Cmdname sid="lock_owner_name" className="uitext" />  | `lockOwnerName`  | スレッドがブロックされるオブジェクトのモニターロックを受け入れるスレッド名                                           |
+| <Cmdname sid="thread_name" className="uitext" />      | `threadName`     | スレッドの固有名                                                     |
+| <Cmdname sid="lock_name" className="uitext" />        | `lockName`       | スレッドの入力がブロックされたり`Object.wait`メソッドを介して通知を待つモニターロックを表示した文字列    |
+| <Cmdname sid="lock_owner_name" className="uitext" />  | `lockOwnerName`  | スレッドがブロックされるオブジェクトのモニターロックを受け入れるスレッド名                        |
 | <Cmdname sid="thread_user_time" className="uitext" /> | `threadUserTime` | スレッドがユーザモードで実行したCPU時間(ナノ秒)をミリ秒で計算して表示                        |
 
 :::note

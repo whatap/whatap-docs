@@ -10,14 +10,14 @@
 | `db`              | データベース名                                                                                             |
 | `user`            | SQL実行アカウント                                                                                          |
 | `application`     | クライアントアプリケーション名                                                                                     |
-| `client_host`     | 接続されたクライアントのホスト名(`client_addr`の逆引きDNS参照で報告されます)                                  |
+| `client_host`     | 接続されたクライアントのホスト名(`client_addr`の逆引きDNS参照で報告されます)                                                     |
 | `client_addr`     | クライアントのIPアドレス                                                                                       |
-| `client_port`     | クライアントのポート番号(Unixソケットを使用する場合は-1)                                                 |
-| `query_hash`      | クエリのハッシュ値(WhaTap内部管理値)                                                           |
-| `query_start`     | 現在アクティブ状態のクエリが開始された時間(アクティブ状態でない場合、最後にクエリが開始された時間)                               |
-| `state`           | バックエンドプロセスの現在の状態(active/idleなど)                                                  |
+| `client_port`     | クライアントのポート番号(Unixソケットを使用する場合は-1)                                                                    |
+| `query_hash`      | クエリのハッシュ値(WhaTap内部管理値)                                                                              |
+| `query_start`     | 現在アクティブ状態のクエリが開始された時間(アクティブ状態でない場合、最後にクエリが開始された時間)                                                  |
+| `state`           | バックエンドプロセスの現在の状態(active/idleなど)                                                                     |
 | `state_change`    | stateが変更された最近の時間                                                                                    |
-| `xact_start`      | そのプロセスの現在のトランザクションが開始された時間(アクティブトランザクションがない場合は`null`)                            |
+| `xact_start`      | そのプロセスの現在のトランザクションが開始された時間(アクティブトランザクションがない場合は`null`)                                               |
 | `backend_start`   | そのバックエンドプロセスが開始された時間                                                                                |
 | `backend_xmin`    | バックエンドプロセスが処理中の`xid`の最小値                                                                            |
 | `backend_type`    | バックエンドプロセスのタイプ、`autovacuum worker`、`logical replication launcher`、`client backend`、`checkpointer`など |
@@ -35,8 +35,8 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 <TabItem value="locktree" label="Lock tree">
 
-| 項目             | 説明                                                               |
-| -------------- | ---------------------------------------------------------------- |
+| 項目             | 説明                                            |
+| -------------- | --------------------------------------------- |
 | `holder type`  | `holder`セッションの`type` (transaction id、tupleなど) |
 | `lock mode`    | `holder_mode` (exclusive lock、shared lockなど)  |
 | `waiter type`  | `waiter`セッションの`type` (transaction id、tupleなど) |
@@ -48,20 +48,20 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 次の項目は、XOSエージェントをインストールした場合に収集される指標です。
 
-| 項目         | 説明                                                        |
-| ---------- | --------------------------------------------------------- |
-| `cputime`  | CPU使用時間                                                   |
-| `cpuusage` | CPU使用率                                                    |
-| `elapse`   | CPU使用経過時間                                                 |
+| 項目         | 説明                                     |
+| ---------- | -------------------------------------- |
+| `cputime`  | CPU使用時間                                |
+| `cpuusage` | CPU使用率                                 |
+| `elapse`   | CPU使用経過時間                              |
 | `vsize`    | 仮想メモリサイズ(Kb)                           |
 | `rss`      | Resident Set Size(RSS)、プロセスに関連する物理ページ数 |
-| `state`    | プロセス状態                                                    |
+| `state`    | プロセス状態                                 |
 | `ioread`   | ブロックの読み取りに費やされた実際の時間(milliseconds)     |
 | `iowrite`  | ブロックの書き込みに費やされた実際の時間(milliseconds)     |
-| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合                      |
-| `uid`      | user id                                                   |
-| `cmd`      | 実行中のコマンド                                                  |
-| `longcmd`  | cmdの絶対パス                                                  |
+| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合   |
+| `uid`      | user id                                |
+| `cmd`      | 実行中のコマンド                               |
+| `longcmd`  | cmdの絶対パス                               |
 
 </TabItem>
 </Tabs>

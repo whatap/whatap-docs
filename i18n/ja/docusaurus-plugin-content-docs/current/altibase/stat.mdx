@@ -1,33 +1,51 @@
 ---
 id: stat
-title: 統計データの確認
+title: 統計
 description: データベースごとの統計データを提供します。
 keywords:
   - Altibase
   - データベース
-  - データベースモニタリング
   - 統計
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+import V2Note from "../common-items/_import_v2-note.mdx";
 
-import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
+<V2Note product="Altibase" />
 
-<Dbsqlstatic />
+{/* SQL 통계*/}
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
+<Dbstatsqldesc />
 
-<Dbtrendbyquery />
+{/* SQL 통계 기본 사용 안내 */}
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
+<Dbstatsqlbasic />
 
-<Dbdetailviewquery />
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
 
-{/* mysql, mariadb, CUBRID 지원 */}
-{/* {@include: ../common-items/_db-database-size.mdx} */}
+<Dbstatsqlviewquery />
 
-{/* oracle, tibero, CUBRID */}
-{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
 
-{/* oracle, tibero */}
-{/* {@include: ../common-items/_db-sga-size.mdx} */}
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
+
+{/* ## 상세 정보 확인하기 {#session-details-info}
+
+import Dbstatsqldetails from "../common-items/_db-stat-sql-details.mdx";
+
+<Dbstatsqldetails /> */}
+
+{/* 필터 조건추가하기*/}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter />
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn level={2} />

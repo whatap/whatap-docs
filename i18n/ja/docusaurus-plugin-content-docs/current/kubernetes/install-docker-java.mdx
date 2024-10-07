@@ -79,7 +79,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 **最新バージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更します。
 
    ```docker
    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
@@ -111,7 +111,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
    EXPOSE 8080
    ```
 
-3. Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。 
+3. Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更します。 
 
    ```docker
    cd {YOUR_DOCKERFILE_DIR}
@@ -120,11 +120,11 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 </TabItem>
 
-<TabItem value='choice' label='指定したバージョンのエージェントをアプリケーションイメージに含' default>
+<TabItem value='choice' label='指定したバージョンのエージェントをアプリケーションイメージに含む' default>
 
 **指定したバージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更してください。
+1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更します。
 
    ```docker
    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
@@ -146,7 +146,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
    ## whatap.agent-X.Y.Z.jar
    ```
 
-3. Dockerfileの開始コマンドに次の内容を追加してください。**X.Y.Z**に、前もって確認したエージェントバージョンを入力してください。 
+3. Dockerfileの開始コマンドに次の内容を追加します。**X.Y.Z**に、前もって確認したエージェントバージョンを入力します。 
 
    ```bash
    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
@@ -165,7 +165,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
    EXPOSE 8080
    ```
 
-4. Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更してください。
+4. Dockerをビルドします。`{YOUR_DOCKERFILE_DIR}`をDockerfileが位置したパスに変更します。
 
    ```docker
    cd {YOUR_DOCKERFILE_DIR}
@@ -227,7 +227,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
    :::
 
-4. Dockerfileの開始コマンドに次の内容を追加してください。_whatap_ディレクトリ内でエージェントファイルを確認した後、**X.Y.Z**に該当バージョンを入力してください。
+4. Dockerfileの開始コマンドに次の内容を追加します。_whatap_ディレクトリ内でエージェントファイルを確認した後、**X.Y.Z**に該当バージョンを入力します。
 
    ```bash
    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true

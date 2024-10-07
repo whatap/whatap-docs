@@ -53,37 +53,37 @@ Stateful: true
 
 The following lists the event message components.
 
-| En                                          | Ko                                           | Optional | Description                                                                                                                                                                     |
-| ------------------------------------------- | -------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Project Name                                | 프로젝트 이름                                      | `false`  | -                                                                                                                                                                               |
-| Project Code                                | 프로젝트 Code                                    | `false`  | -                                                                                                                                                                               |
-| Server Name                                 | Agent name                                   | `true`   | oname                                                                                                                                                                           |
-| Event Message                               | Event Message                                | `false`  | -                                                                                                                                                                               |
-| Event ON Time                               | 이벤트 발생 시간                                    | `false`  | In 2022-04-13 10:40:49 +0900, +0900 means GMT.                                                                                                                                  |
-| Event OFF Time                              | 이벤트 해제 시간                                    | `true`   | In 2022-04-13 10:40:49 +0900, +0900 means GMT.                                                                                                                                  |
-| Elapsed Time                                | Event occurrence duration                    | `true`   | -                                                                                                                                                                               |
-| Alert Type                                  | 이벤트 종류                                       | `true`   | -                                                                                                                                                                               |
-| Policy Name                                 | Alert policy name                            | `true`   | -                                                                                                                                                                               |
-| Metric Name                                 | 메트릭스 이름                                      | `true`   | The metrics name used to judge the event condition.                                                                                                                             |
-| Metric Value                                | 메트릭스 값                                       | `true`   | If the metric value exceeds the metric threshold, the event occurrence condition is met.                                                                                        |
-| Metric Threshold                            | 메트릭스 임계치                                     | `true`   | If the metric value exceeds the metric threshold, the event occurrence condition is met.                                                                                        |
-| Event Rule                                  | Event Rule                                   | `true`   | -                                                                                                                                                                               |
-| Alert Type                                  | 이벤트 종류                                       | `true`   | Field to specify the event type.                                                                                                                                                |
+| En                                          | Ko                                           | Optional | Description                                                                                                                                                  |
+| ------------------------------------------- | -------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Project Name                                | 프로젝트 이름                                      | `false`  | -                                                                                                                                                            |
+| Project Code                                | 프로젝트 Code                                    | `false`  | -                                                                                                                                                            |
+| Server Name                                 | Agent name                                   | `true`   | oname                                                                                                                                                        |
+| Event Message                               | Event Message                                | `false`  | -                                                                                                                                                            |
+| Event ON Time                               | 이벤트 발생 시간                                    | `false`  | In 2022-04-13 10:40:49 +0900, +0900 means GMT.                                                                                                               |
+| Event OFF Time                              | 이벤트 해제 시간                                    | `true`   | In 2022-04-13 10:40:49 +0900, +0900 means GMT.                                                                                                               |
+| Elapsed Time                                | Event occurrence duration                    | `true`   | -                                                                                                                                                            |
+| Alert Type                                  | 이벤트 종류                                       | `true`   | -                                                                                                                                                            |
+| Policy Name                                 | Alert policy name                            | `true`   | -                                                                                                                                                            |
+| Metric Name                                 | 메트릭스 이름                                      | `true`   | The metrics name used to judge the event condition.                                                                                                          |
+| Metric Value                                | 메트릭스 값                                       | `true`   | If the metric value exceeds the metric threshold, the event occurrence condition is met.                                                                     |
+| Metric Threshold                            | 메트릭스 임계치                                     | `true`   | If the metric value exceeds the metric threshold, the event occurrence condition is met.                                                                     |
+| Event Rule                                  | Event Rule                                   | `true`   | -                                                                                                                                                            |
+| Alert Type                                  | 이벤트 종류                                       | `true`   | Field to specify the event type.                                                                                                                             |
 | Event Target Filter                         | 이벤트 대상 선택                                    | `true`   | (Metrics Alert) Check the event conditions only for metrics collected in specific targets.                                                                   |
-| Stateful                                    | 해결된 이벤트 알림                                   | `true`   | If the resolved event alert is being used, the value is `true`. Otherwise, the value is `false`.                                                                                |
+| Stateful                                    | Resolved event notification                  | `true`   | If the resolved event alert is being used, the value is `true`. Otherwise, the value is `false`.                                                             |
 | Repeat Count                                | 이벤트 반복 횟수                                    | `true`   | (Metrics Alert) An event occurs only when the event condition meets the event repetitions count for the event repetition time.                               |
 | Repeat Duration                             | 이벤트 반복 시간                                    | `true`   | (Metrics Alert) An event occurs only when the event condition meets the event repetitions count for the event repetition time. It is a resolved event alert. |
-| IP                                          | IP                                           | `true`   | -                                                                                                                                                                               |
-| Log Content                                 | Log Content                                  | `true`   | -                                                                                                                                                                               |
-| Log Source                                  | Log Source                                   | `true`   | -                                                                                                                                                                               |
-| CPU                                         | CPU                                          | `true`   | -                                                                                                                                                                               |
-| CPU_load1                                   | CPU_load1                                    | `true`   | -                                                                                                                                                                               |
-| CPU_loadPerCore                             | CPU_load1                                    | `true`   | -                                                                                                                                                                               |
-| Memory                                      | Memory                                       | `true`   | -                                                                                                                                                                               |
-| Swap                                        | Swap                                         | `true`   | -                                                                                                                                                                               |
-| Disk Name/Used Percent/Free Size/IO Percent | Disk Name/Used Percent/Free Size/IO Percent  | `true`   | -                                                                                                                                                                               |
-| Traffic Name/Bps/Pps                        | Name/Bps/Pps                                 | `true`   | -                                                                                                                                                                               |
-| Acknowledge Message/Time/Name               | Acknowledge Message/Time/Name                | `true`   | -                                                                                                                                                                               |
+| IP                                          | IP                                           | `true`   | -                                                                                                                                                            |
+| Log Content                                 | Log Content                                  | `true`   | -                                                                                                                                                            |
+| Log Source                                  | Log Source                                   | `true`   | -                                                                                                                                                            |
+| CPU                                         | CPU                                          | `true`   | -                                                                                                                                                            |
+| CPU_load1                                   | CPU_load1                                    | `true`   | -                                                                                                                                                            |
+| CPU_loadPerCore                             | CPU_load1                                    | `true`   | -                                                                                                                                                            |
+| Memory                                      | Memory                                       | `true`   | -                                                                                                                                                            |
+| Swap                                        | Swap                                         | `true`   | -                                                                                                                                                            |
+| Disk Name/Used Percent/Free Size/IO Percent | Disk Name/Used Percent/Free Size/IO Percent  | `true`   | -                                                                                                                                                            |
+| Traffic Name/Bps/Pps                        | Name/Bps/Pps                                 | `true`   | -                                                                                                                                                            |
+| Acknowledge Message/Time/Name               | Acknowledge Message/Time/Name                | `true`   | -                                                                                                                                                            |
 
 ## Server alert title and message
 
@@ -91,38 +91,38 @@ The server alert provides only the event message with no event title.
 
 ### Server alert
 
-| Event Type                                     | Event Level         | Event Message                                | Event Off Message             |
-| ---------------------------------------------- | ------------------- | -------------------------------------------- | ----------------------------- |
-| Restart                                        | Critical            | System Rebooted"                             | Not supported                 |
-| Not received                                   | Warning             | Agent No Data"                               | Not supported                 |
-| Port                                           | Warning             | Port $\{port\} is down"                        | "Port $\{port\} is up"          |
-| Port (IP can be identified) | Warning             | IP $\{ip\} Port $\{port\} is down"               | "IP $\{ip\} Port $\{port\} is up" |
-| Network IOPS                                   | Warning or Critical | NETWORK $\{deviceId\} pps > $\{value\} pps"      | -                             |
-| Network BPS                                    | Warning or Critical | NETWORK $\{deviceId\} bps > $\{value\} ps"       | -                             |
-| Disk I/O                                       | Warning or Critical | Disk $\{mountPoint\} IO Usage > $\{value\} %"    | -                             |
-| Disk Used                                      | Warning or Critical | Disk $\{mountPoint\} Used > $\{value\} %"        | -                             |
-| inode                                          | Warning or Critical | Disk $\{mountPoint\} inode usage > $\{value\} %" | -                             |
-| CPU                                            | Warning or Critical | CPU Used > $\{value\} %"                       | -                             |
-| Memory                                         | Warning or Critical | Memory Used > $\{value\} %"                    | -                             |
-| steal                                          | Warning or Critical | CPU Steal > $\{value\} %"                      | -                             |
-| Swap                                           | Warning or Critical | Swap Used > $\{value\} %"                      | -                             |
+| Event Type                  | Event Level         | Event Message                                  | Event Off Message               |
+| --------------------------- | ------------------- | ---------------------------------------------- | ------------------------------- |
+| Restart                     | Critical            | System Rebooted"                               | Not supported                   |
+| Not received                | Warning             | Agent No Data"                                 | Not supported                   |
+| Port                        | Warning             | Port $\{port} is down"                         | "Port $\{port} is up"           |
+| Port (IP can be identified) | Warning             | IP $\{ip} Port $\{port} is down"               | "IP $\{ip} Port $\{port} is up" |
+| Network IOPS                | Warning or Critical | NETWORK $\{deviceId} pps > $\{value} pps"      | -                               |
+| Network BPS                 | Warning or Critical | NETWORK $\{deviceId} bps > $\{value} ps"       | -                               |
+| Disk I/O                    | Warning or Critical | Disk $\{mountPoint} IO Usage > $\{value} %"    | -                               |
+| Disk Used                   | Warning or Critical | Disk $\{mountPoint} Used > $\{value} %"        | -                               |
+| inode                       | Warning or Critical | Disk $\{mountPoint} inode usage > $\{value} %" | -                               |
+| CPU                         | Warning or Critical | CPU Used > $\{value} %"                        | -                               |
+| Memory                      | Warning or Critical | Memory Used > $\{value} %"                     | -                               |
+| steal                       | Warning or Critical | CPU Steal > $\{value} %"                       | -                               |
+| Swap                        | Warning or Critical | Swap Used > $\{value} %"                       | -                               |
 
 ### Process alert
 
-| Event Type              | Event Level         | Event Message                             | Event Off Message                        |
-| ----------------------- | ------------------- | ----------------------------------------- | ---------------------------------------- |
-| Process count alert     | Warning or Critical | Process $\{processName\} Count >= $\{value\}" | "Process $\{groupName\} Count \< $\{value\}" |
-| Process count critical  | Warning or Critical | Process $\{processName\} Count \< $\{value\}" | "Process $\{groupName\} Count >= $\{value\}" |
-| Process CPU             | Warning or Critical | Process $\{processName\} CPU > $\{value\}"    | -                                        |
-| Process Memory          | Warning or Critical | Process $\{processName\} Memory > $\{value\}" | -                                        |
+| Event Type              | Event Level         | Event Message                               | Event Off Message                          |
+| ----------------------- | ------------------- | ------------------------------------------- | ------------------------------------------ |
+| Process count alert     | Warning or Critical | Process $\{processName} Count >= $\{value}" | "Process $\{groupName} Count < $\{value}"  |
+| Process count critical  | Warning or Critical | Process $\{processName} Count < $\{value}"  | "Process $\{groupName} Count >= $\{value}" |
+| Process CPU             | Warning or Critical | Process $\{processName} CPU > $\{value}"    | -                                          |
+| Process Memory          | Warning or Critical | Process $\{processName} Memory > $\{value}" | -                                          |
 
 ### Log file and Windows events
 
-| Event Type        | Event Level         | Event Message                                                       | Event Off Message |
-| ----------------- | ------------------- | ------------------------------------------------------------------- | ----------------- |
-| Event Type        | Event Level         | Event Message                                                       | Event Off Message |
-| LOG_DEFAULT       | Warning or Critical | LOG $\{logContent\}"                                                  | -                 |
-| LOG_FILE          | Warning or Critical | LOG File: $\{filePath\}, Keyword : $\{keyword\}, [Event] $\{logContent\}" | -                 |
-| LOG_WINDOW_EVENT  | Warning or Critical | LOG $\{logContent\}"                                                  | -                 |
-| LOG_AUDIT         | Warning or Critical | AUDIT $\{logContent\}"                                                | -                 |
-| LOG_SCRIPT        | Warning or Critical | SCRIPT $\{logContent\}"                                               | -                 |
+| Event Type        | Event Level         | Event Message                                                          | Event Off Message |
+| ----------------- | ------------------- | ---------------------------------------------------------------------- | ----------------- |
+| Event Type        | Event Level         | Event Message                                                          | Event Off Message |
+| LOG_DEFAULT       | Warning or Critical | LOG $\{logContent}"                                                    | -                 |
+| LOG_FILE          | Warning or Critical | LOG File: $\{filePath}, Keyword : $\{keyword}, [Event] $\{logContent}" | -                 |
+| LOG_WINDOW_EVENT  | Warning or Critical | LOG $\{logContent}"                                                    | -                 |
+| LOG_AUDIT         | Warning or Critical | AUDIT $\{logContent}"                                                  | -                 |
+| LOG_SCRIPT        | Warning or Critical | SCRIPT $\{logContent}"                                                 | -                 |

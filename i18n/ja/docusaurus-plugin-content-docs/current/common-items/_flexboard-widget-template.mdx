@@ -1,0 +1,483 @@
+Flexボードでダッシュボードに配置できるウィジェットの種類を案内します。 ウィジェットはダッシュボードの構成要素であり、モニタリング対象のデータ全体を視覚化して連携できます。 <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボードを選択し、<Cmdname sid="edit_mode" className="uitext" />へ移動してください。 <Cmdname sid="widget_template" className="uitext" />で、ダッシュボードに配置できるウィジェット一覧を確認できます。
+
+|        <Cmdname sid="side_integratedFlexboard" className="uitext" />       |           <Cmdname sid="side_flexboard" className="uitext" />           |
+| :------------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| <ImgLang img='flexboad-integrated-widget-template.png' desc='統合Flexボード' /> | <ImgLang img='flexboad-project-widget-template.png' desc='統合Flexボード' /> |
+
+<Cmdname sid="side_integratedFlexboard" className="uitext" />メニューでは、ユーザーが所属するプロジェクトのすべての商品タイプに該当するウィジェットを選択できますが、<Cmdname sid="side_flexboard" className="uitext" />メニューでは、そのプロジェクトの商品タイプに該当するウィジェットのみ選択できます。
+
+:::note
+
+- プロジェクトの商品タイプによって<Cmdname sid="widget_template" className="uitext" />で選択できるウィジェットは異なる場合があります。
+
+- ウィジェット右上で利用できる共通オプションの詳細については、[次の文書](flexboard-widget-manage)を参照してください。
+
+- メンバー権限によってウィジェットの機能が利用できない場合があります。 メンバー権限の詳細については、[次の文書](../project/project-structure#project-auth)を参照してください。
+
+:::
+
+## グラフ{#graph}
+
+ダッシュボードに配置できるデータグラフ型のウィジェットです。
+
+### ![](/img/ico-normal-graph.svg)時系列{#timeseries}
+
+時系列チャートウィジェットを使用して、時間の経過に伴うメトリクスの変化を確認できます。 
+
+![時系列チャート](/img/fb-time-series-widget.png)
+
+時系列チャートウィジェットは、以前の時間と比較できる機能を提供します。 ウィジェット右上の![Historyアイコン](/img/ic-history.svg)ボタンを選択します。
+
+<ImgLang img="fb-time-series-widget-compare-time.png" desc="前回と比較" />
+
+ご希望の時間単位を設定した上で、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 マウス カーソルをチャートの上に持っていくと、ツールチップを通じて比較したデータを確認できます。
+
+:::note
+
+- データ結合オプションの詳細については、[次の文書](flexboard-widget-manage#datamerge-option)を参照してください。
+
+- ウィジェットによって、<Cmdname sid="compare_with_previous_time" className="uitext" />機能は提供しない場合があります。 この機能は<Cmdname sid="edit_mode" className="uitext" />でご利用いただけます。
+
+:::
+
+### ![](/img/ico-topn-graph.svg) TopN時系列{#topn}
+
+時間によるメトリクスの変化とともに、モニタリング対象のメトリクス順位を確認できるウィジェットです。
+
+![TopN時系列チャート](/img/fb-time-series-topn-widget.png)
+
+チャートに表示する上位N個の数を設定できます。 <Cmdname sid="edit_mode" className="uitext" />でのウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、<Cmdname sid="top_rank" className="uitext" /><UI>N</UI>項目をクリックします。
+
+<ImgLang img="fb-time-series-topn-widget-setting.png" desc="TopN" />
+
+### ![](/img/ic-line-text-chart.svg) Apdex {#apdex}
+
+[Application Performance Index(Apdex)](https://www.apdex.org/)、アプリケーションの性能メトリクスを確認できるウィジェットです。
+
+![Apdex](/img/fb-apdex-widget.png)
+
+<InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+**Apdex**ウィジェットは、アプリケーションモニタリングの製品群で利用でき、詳細は[次の文書](dashboard#apdex)を参照してください。
+
+:::
+
+</InDoc>
+
+<Xclude product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+**Apdex**ウィジェットは、アプリケーションモニタリングの製品群で利用できます。
+
+:::
+
+</Xclude>
+
+### ![](/img/ic-pie-chart.svg)円形{#piechart}
+
+<Columns>
+
+<Column className="text--left width--50">
+
+![円形チャートウィジェット](/img/fb-pie-chart-widget.png)
+
+</Column>
+
+<Column className="text--left">
+
+円形チャートウィジェットです。 収集したデータの全体比部門構成比を確認するのに役立ちます。 CPUおよびメモリ使用率、エラー件数などの数値を確認するのに活用できます。
+
+</Column>
+
+</Columns>
+
+### ![](/img/ic-dashboard-hitmap.svg) ヒットマップ {#hitmap}
+
+終了したトランザクション応答時間を分布図で表現した<Cmdname sid="AA005" className="uitext" />ウィジェットです。
+
+<ImgLang img="fb-hitmap-widget.png" desc="Hitmap" />
+
+<Cmdname sid="AA005" className="uitext" />チャートは、終了したトランザクションの応答時間を分布図で表現します。 横軸はトランザクションの終了時間です。 縦軸は実行時間です。 応答時間が伸びたトランザクションは、分布図の上段に位置します。 <Cmdname sid="AA005" className="uitext" />チャートの中の領域をドラッグすると、詳細なトランザクション情報が確認できる<Cmdname sid="TTL06209" className="uitext" />画面が表示されます。
+
+<InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+- <Cmdname sid="AA005" className="uitext" />ウィジェットの詳細については、[次の文書](dashboard#AA005)を参照してください。
+
+- <Cmdname sid="TTL06209" className="uitext" />の詳細については [次の文書](dashboard-hitmap-trace)を参照してください。
+
+:::
+
+</InDoc>
+
+<Xclude product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+- <Cmdname sid="AA005" className="uitext" />ウィジェットは、アプリケーションモニタリングの製品群で利用できます。
+
+:::
+
+</Xclude>
+
+### ![](/img/ic-equalizer-chart.svg)棒{#bar}
+
+モニタリング対象で収集されるデータの現状を比較するのに有用な棒チャートのウィジェットです。
+
+<Columns>
+
+<Column className="text--left width--50">
+
+![縦型棒チャート](/img/fb-bar-chart-vertical.png)
+
+</Column>
+
+<Column className="text--left">
+
+![横型棒チャート](/img/fb-bar-chart-horizon.png)
+
+</Column>
+
+</Columns>
+
+縦型棒チャートをデフォルトで提供しますが、横型に変更できます。 <Cmdname sid="edit_mode" className="uitext" />でウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後![横型アイコン](/img/ic-bar-chart-h.svg)ボタンをクリックします。
+
+### ![](/img/ic-ark-chart.svg) アークイコライザー {#arc}
+
+モニタリング対象で発生するトランザクション状況をエージェント別に比較できるよう、視覚化したアークイコライザーのチャートウィジェットです。
+
+<Columns>
+
+<Column className="text--left width--50">
+
+![アークイコライザーチャート](/img/fb-arc-equlizer-chart-widget.png)
+
+</Column>
+
+<Column className="text--left">
+
+![イコライザーチャート](/img/fb-bar-equlizer-chart-widget.png)
+
+</Column>
+
+</Columns>
+
+アークイコライザーチャートをデフォルトで提供しますが、縦型の棒グラフに変更できます。 <Cmdname sid="edit_mode" className="uitext" />でのウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、![縦型アイコン](/img/ic-equalizer-chart.svg)ボタンをクリックします。
+
+<InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+アークイコライザーチャートは、アプリケーションモニタリング製品群で利用できる<Cmdname sid="AA002" className="uitext" />ウィジェットであり、詳細は[次の文書](dashboard#active-trs)を参照してください。
+
+:::
+
+</InDoc>
+
+<Xclude product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+アークイコライザーのチャートウィジェットは、アプリケーションモニタリング製品群から利用できます。
+
+:::
+
+</Xclude>
+
+### ![](/img/ic-grid-chart.svg)ツリーマップ{#treemap}
+
+サーバーのディスクまたはメモリ使用量を視覚的に確認できるウィジェットです。 各ブロックのサイズと色は、使用量と状態を意味します。
+
+<Columns>
+
+<Column className="text--left width--50">
+
+![Treemap chart](/img/fb-treemap-chart-widget.png)
+
+</Column>
+
+<Column className="text--left">
+
+![Grid chart](/img/fb-grid-chart-widget.png)
+
+</Column>
+
+</Columns>
+
+提供するデフォルトのチャートで、マウスカーソルをブロックに持っていくと、そのブロックの数値を確認できるツールチップが表示されます。 個々のブロックの数値が表示された形式のチャートに変更するには、ウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、![アイコン](/img/ic-pageload.svg)ボタンをクリックします。
+
+### ![](/img/ic-dot-chart.svg) 散布図{#scatter}
+
+散布図は、2つの変数間の関係を視覚的に表すために使用され、それぞれの点はデータポイントを表します。 また、大規模なデータセットでパターンや傾向を識別するのに有用であり、データポイントがどのように分布しているかを視覚的に確認することができます。 これにより、特定の時間帯に発生する性能問題を識別できます。
+
+![分布図チャート](/img/fb-scatter-plot-chart-widget.png)
+
+- x軸: 時間を表し、そのデータポイントが記録された時間を意味します。
+
+- y軸: 処理時間を表し、データポイントがかかった時間を意味します。
+
+- チャートの一部の領域をドラッグすると、詳細を確認できます。
+
+### ![](/img/ic-map.svg) ジオマップ{#geomap}
+
+地図型チャートの一種で、空間的データを視覚的に確認できるウィジェットです。 このウィジェットにより、データ値を地理的位置と結合して視覚化することで、地域別の性能の違いを把握し、分析するのに役立ちます。
+
+![ジオマップ](/img/fb-geomap-chart-widget.png)
+
+- マウスをスクロールしたり、スライダーを使用して地図を拡大または縮小したりできます。
+
+- 世界地図を見るには![地球アイコン](/img/ic-network.svg)ボタンを選択してください。 特定の国を選択すると、地域ごとにデータを確認できます。
+
+- テーブルの形でデータを確認するには![テーブルアイコン](/img/ic-table.svg)ボタンを選択してください。 地図の形に戻るには、![地図アイコン](/img/ic-map.svg)ボタンを選択してください。
+
+- 地域別マップの場合、上位の行政区画に基づいてデータを表示します。 (韓国標準：州、広域市)
+
+:::info
+
+This site or product includes IP2Location LITE data available from [https://lite.ip2location.com](https://lite.ip2location.com).
+
+:::
+
+### ![](/img/ic-speed-tx-3.svg) スピードチャート {#speed}
+
+モニタリング対象で発生するアクティブトランザクションの速度を視覚化する**スピードチャート**ウィジェットです。 このウィジェットは、モニタリング対象の性能状態を視覚的に表現し、要求処理時間や応答時間などの性能メトリクスを分析するのに役立ちます。
+
+![スピードチャート](/img/fb-speed-chart-widget.png)
+
+<InDoc product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+**スピードチャート**ウィジェットは、アプリケーションモニタリングの製品群で利用でき、詳細は[次の文書](dashboard#active-trs-speed)を参照してください。
+
+:::
+
+</InDoc>
+
+<Xclude product="java,php,python,nodejs,dotnet,golang,kubernetes">
+
+:::note
+
+**スピードチャート**ウィジェットは、アプリケーションモニタリングの製品群で利用できます。
+
+:::
+
+</Xclude>
+
+### ![](/img/ic-honeycomb.svg)ハニカム型{#jfhoneycomb}
+
+モニタリング対象の性能と安定性を確認できるハニカムチャートウィジェットです。 各色は、モニタリング対象の性能と安定性を意味します。 青色は正常な状態を意味し、オレンジ色は警告、赤色は速度が遅い場合、灰色は非活性化状態を意味します。
+
+<Columns>
+
+<Column className="text--left width--50">
+
+![ハニカムチャート](/img/fb-honey-chart-widget.png)
+
+</Column>
+
+<Column className="text--left">
+
+![ハニカムチャート](/img/fb-db-honey-chart-widget.png)
+
+</Column>
+
+</Columns>
+
+:::note
+
+モニタリング製品群によって収集されるデータの種類と色の意味は異なる場合があります。
+
+:::
+
+## 一覧型{#list}
+
+### ![](/img/ic-table.svg)テーブル{#table}
+
+テーブル形式で一覧を表示したウィジェットです。 それぞれ異なるモニタリングの対象から収集したデータの数値と現況を把握するのに役立ちます。 一覧に表示された項目ごとにカラムを通じて、関連する付加情報を追加確認できます。 一覧内のテキストの色は、性能の状態を意味します。
+
+![テーブルウィジェット](/img/fb-table-chart-widget.png)
+
+ウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択すると、次の機能を追加利用できます。
+
+- ![フィルターアイコン](/img/ico-filter.svg) : 希望のデータのみを表示できるように、フィルターオプションを設定できます。
+
+- ![カラムアイコン](/img/ic-column.svg) : 希望するカラムを追加配置したり、除外したりして順序を変更できます。
+
+## ![](/img/ic-templete.svg) グループウィジェット {#group}
+
+複数のウィジェットを1つのグループにまとめて表示できるウィジェットです。
+
+![グループウィジェット](/img/fb-group-widget-apm.png)
+
+### グループウィジェットの配置{#addgroup}
+
+1. <Cmdname sid="widget_template" className="uitext" />一覧で<Cmdname sid="etc" className="uitext" /> &gt; <Cmdname sid="group" className="uitext" /> <Cmdname sid="widget" className="uitext" />を選択します。
+
+2. 配置されたグループウィジェットの右上にある<Cmdname sid="project_selection" className="uitext" />ボタンを選択して、データを呼び出すプロジェクトを選択します。
+
+3. グループウィジェットの右上にある<Cmdname sid="grid" className="uitext" />ボタンを選択して希望するレイアウトを設定します。
+
+4. <Cmdname sid="apply" className="uitext" />ボタンを選択してレイアウト設定を完了します。
+
+5. グループウィジェットの右上にある<Cmdname sid="add_widget" className="uitext" />ボタンを選択します。
+
+6. 画面の右側に<Cmdname sid="widget_template" className="uitext" />一覧が表示されたら、希望するウィジェットを順番に選択します。
+
+:::note
+
+- グループウィジェットでは、1つのプロジェクトのみを選択できます。
+
+- ウィジェットは、追加した順に配置されます。 ウィジェットの順序を変更するには、ウィジェット名の部分をクリックした状態で、希望の位置にドラッグします。
+
+- グループウィジェットに配置できるウィジェットの数は最大36個です。 <Cmdname sid="grid" className="uitext" />オプションで設定した数以上のウィジェットを追加できません。
+
+- 追加できるウィジェットの数をすべて配置すると、<Cmdname sid="grid" className="uitext" />ボタンは非活性化になります。
+
+- グループウィジェットは、新しい画面を開いて確認できます。 <Cmdname sid="view_mode" className="uitext" />に進入してウィジェット右上に![ポップアップアイコン](/img/ic-popup.svg)ボタンを選択します。
+
+:::
+
+### グループウィジェット内のウィジェットを削除する{#removewidget}
+
+グループウィジェットに配置された個別ウィジェットを削除するには、ウィジェット右上の詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、![削除アイコン](/img/ico-remove.svg)ボタンを選択します。
+
+## 通知とステータスを確認する{#checkevent}
+
+### ![](/img/ic-alert.svg) <Cmdname sid="side_event" /> {#event}
+
+複数のプロジェクトを選択してアラート通知が発生した履歴を確認したり、リアルタイムでイベント発生状況を確認できます。
+
+<Columns>
+
+<Column className="text--center width--50">
+
+![アラートリスト](/img/fb-alert-list-widget.png)
+
+<Cmdname sid="event" className="uitext" /> <Cmdname sid="timeline" className="uitext" />
+
+</Column>
+
+<Column className="text--center">
+
+![イベントタイムライン](/img/fb-event-timeline-widget.png)
+
+<Cmdname sid="event_list" className="uitext" />
+
+</Column>
+
+</Columns>
+
+<Cmdname sid="event_list" className="uitext" />ウィジェットでは<Cmdname sid="title" className="uitext" />、<Cmdname sid="project" className="uitext" />、<Cmdname sid="application" className="uitext" />別にグループ化してソートできます。 グループ化を解除するには、<Cmdname sid="timeline" className="uitext" />ボタンを選択します。
+
+:::note
+
+通知が発生した場合、サウンドをオンまたはオフにするには![音アイコン](/img/ico-noti-sound.svg)ボタンを選択します。
+
+:::
+
+### ![](/img/ic-agent.svg)ステータスを確認する{#checkstatus}
+
+モニタリング対象から収集したデータを通じて、現在のステータスと結果を表示するウィジェットです。 特定のサービスの増加または減少をモニタリングできます。
+
+![ステータス情報のウィジェット](/img/fb-status-widget.png)
+
+ウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択すると、次の機能を追加利用できます。
+
+- ![カラムアイコン](/img/ic-column.svg) : 希望のデータを追加配置したり、除外したりして手順を変更できます。
+
+- ![テキストアイコン](/img/ic-text-widget.svg) : グラフチャートを除いて、テキスト情報のみを表示できます。
+
+- ![チャートアイコン](/img/ic-speed-chart.svg) : テキスト情報とグラフチャートを一緒に表示できます。
+
+## 情報{#infomation}
+
+### ![](/img/ic-text-widget.svg)テキスト{#text}
+
+メトリクスの数値をテキスト形式で表示するウィジェットです。
+
+![テキストウィジェット](/img/fb-text-widget.png)
+
+ウィジェットの右上にある詳細を見る(![アイコン](/img/ico-more.svg))ボタンを選択した後、![カラムアイコン](/img/ic-column.svg)ボタンをクリックして、希望のデータを追加したり、除外したりして手順を変更できます。
+
+### ![](/img/ic-vital-chart.svg)要約情報{#overview}
+
+プロジェクトに要約情報や特定のメトリクスの説明を案内するウィジェットです。
+
+![プロジェクト要約](/img/fb-project-overview-widget.png)
+
+:::note
+
+選択したプロジェクトの製品の種類によって、表示される要約情報は異なる場合があります。
+
+:::
+
+### ![](/img/ic-pageload.svg) <Cmdname sid="page_load,timeline" /> {#pageloadtimeline}
+
+**Browser**製品専用ウィジェットにより<Cmdname sid="page_load,timeline" className="uitext" />情報を確認できます。
+
+![ページロードタイムライン](/img/fb-browser-pageload-timeline-widget.png)
+
+<Xclude product="browser">
+
+:::note
+
+<Cmdname sid="page_load,timeline" className="uitext" />についての詳細は、[次の文書](../browser/dashboard#pageloadtimeline)を参照してください。
+
+:::
+
+</Xclude>
+
+<InDoc product="browser">
+
+:::note
+
+<Cmdname sid="page_load,timeline" className="uitext" />についての詳細は、[次の文書](dashboard#pageloadtimeline)を参照してください。
+
+:::
+
+</InDoc>
+
+## その他
+
+### ![](/img/ic-note.svg) <Cmdname sid="rich_text" /> {#richtext}
+
+希望する内容のテキストを入力して、ウィジェットに配置できます。
+
+![リーチテキスト](/img/fb-rich-text-widget.png)
+
+ウィジェットの右上で提供されるオプションにより、テキストの修正や書式を設定できます。
+
+- ![カラーアイコン](/img/ic-colors.svg) : <Cmdname sid="edit_widget" className="uitext" />オプションでウィジェットの背景と線、フォントの色を設定できます。 設定を完了した後、<Cmdname sid="save" className="uitext" />ボタンを選択します。
+
+- ![修正アイコン](/img/ic-edit.svg) : 画面の右側に <Cmdname sid="rich_text" className="uitext" />画面が表示され、テキストを追加または修正できます。 また、提供されるツールバーを使用して書式を設定できます。
+
+### ![](/img/ic-tool.svg) メンテナンス計画
+
+選択したプロジェクトのメンテナンス計画の履歴を確認できるウィジェットです。
+
+![メンテナンス計画](/img/fb-maintenance-plan-widget.png)
+
+:::note
+
+- 1時間以内に予定されているメンテナンス計画のみがウィジェットに表示されます。
+
+- <Cmdname sid="side_maintenancePlan" className="uitext" />メニューの詳細は[次の文書](../management/maintenance)を参照してください。
+
+:::
+
+### ![](/img/ic-s-list.svg) <Cmdname sid="url_list" /> {#urllist}
+
+**URL**製品専用ウィジェットで、登録したURLの一覧と状態を確認できます。
+
+![URL List](/img/fb-url-list-widget.png)
+
+:::note
+
+**URL**モニタリングの詳細は、[次の文書](../url/url-intro)を参照してください。
+
+:::

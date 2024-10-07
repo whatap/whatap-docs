@@ -30,13 +30,13 @@ In the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_e
 
 - **_Very slow active transactions are detected._**
 
-  Condition: `very_slow_tx_cnt_m5_avg` > 10
+  Condition: `very_slow_tx_cnt_m5_avg` \> 10
 
   An alert is sent when the sum of transactions that take more than 8 seconds in an agent belonging to a specific `okind` of the project exceeds 10.
 
 - **_TPS has changed by more than 30% compared to the previous week._**
 
-  Condition: `one_week_diff_abs` > `current_tps` \* 0.3
+  Condition: `one_week_diff_abs` \> `current_tps` \* 0.3
 
   An alert is sent when the sum of TPS of the agents that belong to a specific `okind` of the project changes by more than 30% compared to 7 days ago.
 
