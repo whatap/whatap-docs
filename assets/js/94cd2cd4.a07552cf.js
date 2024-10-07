@@ -222,7 +222,7 @@ const toc = [{
   "id": "changecallnumber",
   "level": 2
 }, {
-  "value": "사용자 전호번호 삭제하기",
+  "value": "사용자 전화번호 삭제하기",
   "id": "removecallnumber",
   "level": 2
 }, {
@@ -537,7 +537,7 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "removecallnumber",
-        children: "사용자 전호번호 삭제하기"
+        children: "사용자 전화번호 삭제하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "사용자 계정에 등록한 전화번호를 삭제하려면 다음 단계를 따르세요."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
