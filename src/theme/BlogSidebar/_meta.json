@@ -5,26 +5,28 @@
     "tr_code": "theme.blog.newFeatures",
     "link": "/blog/",
     "items": [
-      { "link": "/blog/index" },
+      { "link": "/blog/index" , "className": "iflang" },
       { "link": "/blog/overview", "className": "news" }
     ]
   },
   {
     "type": "category",
     "label": "2024",
+    "className": "iflang",
     "link": "/blog/tags/2024",
     "items": [
-      { "link": "/blog/2024-2q-summary" },
-      { "link": "/blog/2024-1q-summary" }
+      { "link": "/blog/2024-2q-summary" , "className": "iflang" },
+      { "link": "/blog/2024-1q-summary" , "className": "iflang" }
     ]
   },
   {
     "type": "category",
     "label": "2023",
+    "className": "iflang",
     "link": "/blog/tags/2023",
     "items": [
-      { "link": "/blog/2023-4q-summary" },
-      { "link": "/blog/2023-3q-summary" }
+      { "link": "/blog/2023-4q-summary" , "className": "iflang" },
+      { "link": "/blog/2023-3q-summary" , "className": "iflang" }
     ]
   }
 ]

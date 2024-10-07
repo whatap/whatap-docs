@@ -103,6 +103,18 @@ li.news > a::after {
   transform: none;
 }
 
+html[lang='en-US'] {
+  .iflang {
+    display: none !important;
+  }
+}
+
+html[lang='ja-JP'] {
+  .iflang {
+    display: none !important;
+  }
+}
+
 @media (max-width: 996px) {
   .sidebar {
     display: none;
