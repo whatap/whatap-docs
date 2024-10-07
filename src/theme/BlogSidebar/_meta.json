@@ -4,6 +4,7 @@
     "label": "새로운 기능",
     "tr_code": "theme.blog.newFeatures",
     "link": "/blog/",
+    "className": "iflink",
     "items": [
       { "link": "/blog/index" , "className": "iflang" },
       { "link": "/blog/overview", "className": "news" }

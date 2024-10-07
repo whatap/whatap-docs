@@ -107,11 +107,21 @@ html[lang='en-US'] {
   .iflang {
     display: none !important;
   }
+  .iflink {
+    div > a {
+      pointer-events: none; /* iflink로 새로운 기능 클릭 시 링크 무시 */
+    }
+  }
 }
 
 html[lang='ja-JP'] {
   .iflang {
     display: none !important;
+  }
+  .iflink {
+    div > a {
+      pointer-events: none; /* iflink로 새로운 기능 클릭 시 링크 무시 */
+    }
   }
 }
 
