@@ -118,6 +118,10 @@ html[lang='en-US'] {
   div[class*='announcementBar'] {
     display: none;
   }
+  // 다국어 영문 네비게이션 정렬 깨짐
+  div.navbar__items {
+    font-size: 0.978rem;
+  }
   // 다국어 영문 블로그 네비게이션바
   // div.navbar__items {
   //   a[href*='blog'] {
