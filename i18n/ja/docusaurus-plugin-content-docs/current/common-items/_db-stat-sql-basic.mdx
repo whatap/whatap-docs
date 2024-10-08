@@ -1,16 +1,20 @@
 ## 基本画面ガイド
 
-<Xclude product='postgresql,mysql,oracle,cubird,oracle-v1,oracle-pro,altibase'><ImgLang img='db-database-sql-stat.png' desc='SQL統計' /></Xclude>
-
 <InDoc product='postgresql,mysql,cubird'><ProdImg img='db-database-sql-stat.png' desc='SQL統計' /></InDoc>
 
 <InDoc product='oracle,oracle-v1,oracle-pro'><ImgLang img='db-database-sql-stat-oracle-pro.png' desc='SQL統計' /></InDoc>
 
 <InDoc product='altibase'><ImgLang img='db-database-sql-stat-altibase.png' desc='SQL統計' /></InDoc>
 
-1. ![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />で、データを表示する時間と日付を選択してください。緑色のボタンを選択して検索時間を選択することもできます。
+<InDoc product='mssql'><ImgLang img='db-database-sql-stat-mssql.png' desc='SQL統計' /></InDoc>
 
-2. ![数字1](/img/number-01.png) <Cmdname sid="instance" className="uitext" />でデータを検索する対象を選択してください。
+<InDoc product='tibero'><ImgLang img='db-database-sql-stat-tibero.png' desc='SQL統計' /></InDoc>
+
+<InDoc product='cubrid'><ImgLang img='db-database-sql-stat-cubrid.png' desc='SQL統計' /></InDoc>
+
+1. ![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />で、データを照会する時間と日付を選択します。緑色のボタンを選択して照会時間を選択できます。
+
+2. ![数字1](/img/number-01.png) <Cmdname sid="instance" className="uitext" />でデータを照会する対象を選択します。
 
 3. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 
@@ -18,28 +22,14 @@
 
 :::note
 
-<Xclude product='postgresql,mysql,oracle,oracle-v1,oracle-pro,altibase'>
-
-- SQLのパラメータ値を<Cmdname sid="filter" className="uitext" />テキストボックスに入力し、必要な内容をフィルタリングすることができます。
-
-- デフォルトのソート順は実行回数です。ソート順を変更するには、 <Cmdname sid="TTL07772" className="uitext" />の一覧から目的の条件を選択してください。
-
-- 参照した内容をcsv形式のファイルにダウンロードするには、![csvダウンロードアイコン](/img/ic-csv-download-ms.svg)ボタンを選択します。
-
-</Xclude>
-
-<InDoc product='postgresql,mysql,oracle,oracle-v1,oracle-pro,altibase'>
-
 - 任意の日付と時間を表示するには、時計の表示を選択してください。日付と時間のテキスト領域をクリックすると、日付と時間を選択するオプションが表示されます。
 
 - テーブルヘッダーの各カラムをクリックすると、選択したカラムをソートすることができます。
 
-- <Cmdname sid="TTL07772" className="uitext" />で選択した項目に従ってソートすることができます。ご希望の項目を選択した後<LinkImage img="ico-btn-search.png" className="ico" />ボタンを選択してください。
+- <Cmdname sid="TTL07772" className="uitext" />で選択した項目を基準に照会結果をソートできます。項目を選択した後<LinkImage img="ico-btn-search.png" className="ico" />ボタンを選択します。
 
-- <Cmdname sid="TTL07773" className="uitext" />で、テーブルに表示する件数を設定できます。設定を完了した上で<LinkImage img="ico-btn-search.png" className="ico" />ボタンを選択してください。
+- <Cmdname sid="TTL07773" className="uitext" />で、テーブルに表示する件数を設定できます。設定を完了した上で<LinkImage img="ico-btn-search.png" className="ico" />ボタンを選択します。
 
-- 参照した内容をCSV形式のファイルにダウンロードするには、![ダウンロードアイコン](/img/ico-download.svg)ボタンを選択してください。
-
-</InDoc>
+- 照会した内容をCSV形式のファイルにダウンロードするには、![ダウンロードアイコン](/img/ico-download.svg)ボタンを選択します。
 
 :::

@@ -1,6 +1,6 @@
 ---
 id: kube-apiserver-metrics-search
-title: apiserver メトリクス照会
+title: kube-apiserverメトリクス照会
 description: kube-apiserverメトリクス照会メニューを案内します。
 keywords:
   - Kubernetes
@@ -11,13 +11,13 @@ keywords:
 toc_max_heading_level: 2
 ---
 
-ホーム画面 > クラスタープロジェクト選択 > <Cmdname sid="cluster" className="uitext" /> > **_apiserver メトリクス照会_**
+ホーム画面 > クラスタープロジェクト選択 > <Cmdname sid="cluster" className="uitext" /> > **_kube-apiserverメトリクス照会_**
 
 import K8skubeapiservercommon from "../common-items/_k8s-kube-apiserver-common.mdx";
 
 <K8skubeapiservercommon />
 
-kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 **_kube-apiserverメトリクス照会_**メニューを通じてkube-apiserverから収集される指標の原本データ整合性(Data Consistency)を確認することができます。 
+kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 **_kube-apiserverメトリクス照会_**メニューを通じてkube-apiserverから収集される指標の原本データ整合性(Data Consistency)を確認できます。 
 
 ## 基本画面ガイド
 
@@ -25,9 +25,9 @@ kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部�
 
 **_kube-apiserverメトリクス照会_**メニューは、kube-apiserver対象に収集したモニタリング原本データを<Cmdname sid="category" className="uitext" />別に照会する機能を提供します。 最近5分間に収集したデータが1分おきに反映されます。
 
-- 上段左の**_タイムセレクター_**を通じて、過去の特定の時点のデータを照会できます。 過去のデータ照会時に希望するオプションを選択した後、![虫眼鏡アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />アイコンをクリックしてください。
+- 上段左の**_タイムセレクター_**を通じて、過去の特定の時点のデータを照会できます。 過去のデータ照会時に希望するオプションを選択した後、![虫眼鏡アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />アイコンをクリックします。
 
-- 照会する<Cmdname sid="max_count" className="uitext" />を設定することができます。 
+- 照会する<Cmdname sid="max_count" className="uitext" />を設定できます。 
 
 - メトリクスをフィルタリングして、ソースデータを必要に応じて加工できます。 
 

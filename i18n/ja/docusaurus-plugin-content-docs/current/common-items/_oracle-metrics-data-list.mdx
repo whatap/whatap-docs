@@ -91,8 +91,8 @@
 | `long_running_sessions`                                      | 長時間実行中のセッションの数です。                                                                    | Connection     |
 | `memory`                                                     | 現在使用中のメモリ比率です。                                                                       | MySQL Resource |
 | `opened_cursors_current`                                     | 現在、開いているカーソル(cursor) の数です。                                                           | Connection     |
-| `parse_count_(hard)`                                         | 構文解析呼び出しの合計数(実際の構文解析)となります。                                                          | Performance    |
-| `parse_count_(total)`                                        | 構文解析呼び出しの合計数(hard, soft, describe)となります。                                             | Performance    |
+| `parse_count_(hard)`                                         | パーシング呼び出しの合計数(実際のパーシング)です。                                                           | Performance    |
+| `parse_count_(total)`                                        | パーシング呼び出しの合計数(hard, soft, describe)です。                                               | Performance    |
 | `physical_reads`                                             | ディスクで読み込んだデータブロックの数です。                                                               | I/O            |
 | `physical_writes`                                            | データをディスクに記録したブロックの数です。 `physical writes direct`および`physical writes from cache`の合計です。 | I/O            |
 | `pq_sessions`                                                | 並列クエリセッションの数です。                                                                      | Connection     |
@@ -118,7 +118,7 @@
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `buffer cache hit ratio`      | ディスクからデータを読み込まずにメモリから直接データを探せる回数。<br/>この数値が高ければデータベースの性能が良いことを意味し、数値が低ければディスクI/Oが増加して性能低下を招くことがあります。                             |
 | `soft parse ratio`            | SQL文が再利用される頻度。<br/> Soft Parseは、すでにキャッシュにあるSQL文を再利用する場合です。 この数値が高ければ、SQL文の再利用がうまくいっていることを意味します。                                  |
-| `hard parse ratio`            | SQL文が最初から新しく構文解析される頻度。<br/>ハードパスは、SQL文を初めて実行するか、キャッシュに存在しない場合に発生します。 この数値が高ければ、データベースのCPU使用率が増加し、性能が低下する可能性があります。                |
+| `hard parse ratio`            | SQL文が最初から新しくパーシングされる頻度、<br/>ハードパスは、SQL文を初めて実行するか、キャッシュに存在しない場合に発生します。 この数値が高ければ、データベースのCPU使用率が増加し、性能が低下する可能性があります。               |
 | `library cache hit ratio`     | Library CacheからSQL及びPL/SQL文を正常に検索する割合。<br/>この数値が高ければ、SQL文とPL/SQLコードがキャッシュで効果的に再利用されていることを意味します。                                  |
 | `library cache pin hit ratio` | Library Cache Pinリクエストが成功した割合。<br/> Library Cache Pinは、実行中のSQL文が他のセッションで変更されないように保護する役割をします。 この数値が高ければ、これらの保護が効果的に行われていることを示します。 |
 | `library cache get hit ratio` | Library Cacheの個体を正常に取得する割合。<br/>この数値が高ければ、SQL文とPL/SQLコードがライブラリキャッシュで効果的に再利用されていることを意味します。                                        |

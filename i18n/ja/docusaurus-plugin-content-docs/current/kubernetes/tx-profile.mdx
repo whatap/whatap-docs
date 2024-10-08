@@ -15,11 +15,11 @@ keywords:
 
 <ImgLang img='k8s-analysis-tx-profile.png' desc='Transaction Search' />
 
-![指示線1](/img/number-01.png)領域で照会時間を設定した後、**_コンテナ_**オプションで照会対象を選択してください。![検索アイコン](/img/ico-btn-search.png)ボタンを選択すると、検索結果がテーブルに表示されます。![指示線2](/img/number-02.png)領域の結果リストから希望する項目を選択すると**_トランザクション情報_**ウィンドウが表示されます。**_トランザクション情報_**ウィンドウを活用したトランザクショントレースの詳細分析に関する詳細は、[次の文書](../java/trs-profile#transaction-info)を参考にしてください。
+![指示線1](/img/number-01.png)領域で照会時間を設定した後、**_コンテナ_**オプションで照会対象を選択します。![検索アイコン](/img/ico-btn-search.png)ボタンを選択すると、検索結果がテーブルに表示されます。![指示線2](/img/number-02.png)領域の結果リストから希望する項目を選択すると**_トランザクション情報_**画面が表示されます。**_トランザクション情報_**画面を活用したトランザクショントレースの詳細分析に関する詳細は、[次の文書](../java/trs-profile#transaction-info)を参考にしてください。
 
 :::note
 
-- エラー状態のトランザクションのみを検索するには、<Cmdname sid="show_only_error" className="uitext" />をクリックし![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+- エラー状態のトランザクションのみを検索するには、<Cmdname sid="show_only_error" className="uitext" />をクリックし![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
 - 検索条件によってレスポンス遅延が発生する可能性があるため、検索時間をできるだけ短く設定することをお勧めします。
 
@@ -27,7 +27,7 @@ keywords:
 
 ## カラム選択
 
-![指示線2](/img/number-02.png)領域の![カラム選択アイコン](/img/ico-column-set.svg) **_カラム選択_**ボタンをクリックすると、次のようにカラム選択ウィンドウが表示されます。希望するカラムを適切に選択してください。
+![指示線2](/img/number-02.png)領域の![カラム選択アイコン](/img/ico-column-set.svg) **_カラム選択_**ボタンをクリックすると、次のようにカラム選択画面が表示されます。希望するカラムを適切に選択します。
 
 <ImgLang img='k8s-tx-profile-clm.png' desc='カラム選択' />
 
@@ -39,7 +39,7 @@ keywords:
 
 - 一部のフィルター項目は、製品によっては対応できない場合があります。
 
-- 多重フィルター適用時、<Cmdname sid="TTL06107" className="uitext" />フィルターを適用して検索する場合<Cmdname sid="TTL06111" className="uitext" />フィルターのみ追加適用できます。
+- 複数条件のフィルターを適用する際に、<Cmdname sid="TTL06107" className="uitext" />フィルターを適用して検索する場合<Cmdname sid="TTL06111" className="uitext" />フィルターのみ追加適用できます。
 
 :::
 
@@ -73,11 +73,11 @@ keywords:
 
 トランザクション別のSQL実行件数が設定した入力値以上に該当するトランザクションを検索します。例外的に過度な数のSQLを呼び出すトランザクションを検索するときに利用します。
 
-### SQLパッチ件数
+### SQLフェッチ件数
 
 <ImgLang img='k8s-analysis-tx-profile-sqlfetchcount.png' desc='SQLフェッチ数' />
 
-SQLを実行した後、DBパッチ件数に基づいて入力値以上に該当するトランザクションを検索します。過度なデータパッチを実行するトランザクションを検索するときに利用します。
+SQLを実行した後、DBフェッチ件数に基づいて入力値以上に該当するトランザクションを検索します。過度なデータフェッチを実行するトランザクションを検索するときに利用します。
 
 ### トランザクション
 
@@ -127,7 +127,7 @@ Referer文字列ベースでトランザクションを検索します。
 
 :::note
 
-- トランザクションIDは、<Cmdname sid="TTL06527" className="uitext" />ウィンドウの<Cmdname sid="TTL06125" className="uitext" />タブで確認できます。詳しい内容は、[次の文書](../java/trs-profile#anlaysis-trace-record-summary)を参考にしてください。
+- トランザクションIDは、<Cmdname sid="TTL06527" className="uitext" />画面の<Cmdname sid="TTL06125" className="uitext" />タブから確認できます。詳しい内容は、[次の文書](../java/trs-profile#anlaysis-trace-record-summary)を参考にしてください。
 
 - 最新バージョンのエージェントを使用していない場合、インデックスを使用しないフルスキャンが発生する可能性があります。
 
@@ -141,7 +141,7 @@ Referer文字列ベースでトランザクションを検索します。
 
 :::note
 
-- マルチトランザクションIDは、<Cmdname sid="TTL06527" className="uitext" />ウィンドウの<Cmdname sid="TTL06125" className="uitext" />タブで確認できます。詳しい内容は、[次の文書](../java/trs-multi-trace#trace-multi-tx)を参考にしてください。
+- マルチトランザクションIDは、<Cmdname sid="TTL06527" className="uitext" />画面の<Cmdname sid="TTL06125" className="uitext" />タブで確認できます。詳しい内容は、[次の文書](../java/trs-multi-trace#trace-multi-tx)を参考にしてください。
 
 - 最新バージョンのエージェントを使用していない場合、インデックスを使用しないフルスキャンが発生する可能性があります。
 
@@ -171,17 +171,17 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 :::
 
-## 検索結果をダウンロードする
+## 検索結果のダウンロード
 
-ユーザーが設定したフィルター条件に従って検索された結果をCSVファイルにダウンロードすることができます。 
+ユーザーが設定したフィルター条件に従って検索された結果をCSVファイルにダウンロードできます。 
 
-1. ![検索アイコン](/img/ico-btn-search.png)ボタンをクリックして検索結果を照会してください。
+1. ![検索アイコン](/img/ico-btn-search.png)ボタンをクリックして検索結果を照会します。
 
 2. ![ダウンロードアイコン](/img/ic-csv-download-ms.svg)ボタンをクリックします。
 
-3. 最大CSV行数を入力してください。入力した行数だけ、照会された結果を保存することができます。
+3. 最大CSV行数を入力します。入力した行数だけ、照会された結果を保存できます。
 
-4. <Cmdname sid="download" className="uitext" />ボタンを選択するとCSVファイルにダウンロードします。
+4. <Cmdname sid="download" className="uitext" />ボタンを選択するとCSVファイルでダウンロードします。
 
 :::note
 

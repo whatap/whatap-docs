@@ -1224,11 +1224,11 @@
     "description": "The label for category Server in sidebar openapiSidebar"
   },
   "sidebar.awslogSidebar.doc.로그 파싱하기": {
-    "message": "ログの解析",
+    "message": "ログパーシング",
     "description": "The label for the doc item 로그 파싱하기 in sidebar awslogSidebar, linking to the doc aws-log/log-parser"
   },
   "sidebar.logSidebar.doc.로그 파싱하기": {
-    "message": "ログの解析",
+    "message": "ログパーシング",
     "description": "The label for the doc item 로그 파싱하기 in sidebar logSidebar, linking to the doc log/log-parser"
   },
   "sidebar.dotNetSidebar.doc.부가 기능": {
@@ -1804,7 +1804,7 @@
     "description": "The label for category 경고 알림 in sidebar tiberoSidebar"
   },
   "sidebar.cubridSidebar.category.CUBRID V2 모니터링": {
-    "message": "CUBRID V2 モニタリング",
+    "message": "CUBRID V2モニタリング",
     "description": "The label for category CUBRID V2 모니터링 in sidebar cubridSidebar"
   },
   "sidebar.cubridSidebar.category.로그": {
@@ -1816,7 +1816,7 @@
     "description": "The label for category 경고 알림 in sidebar cubridSidebar"
   },
   "sidebar.cubridV1Sidebar.category.CUBRID V1 모니터링": {
-    "message": "CUBRID V1 モニタリング",
+    "message": "CUBRID V1モニタリング",
     "description": "The label for category CUBRID V1 모니터링 in sidebar cubridV1Sidebar"
   },
   "sidebar.cubridV1Sidebar.category.설치하기": {

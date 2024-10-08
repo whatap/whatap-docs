@@ -1,0 +1,63 @@
+---
+id: install-agent-svelte
+title: Svelte環境インストール
+description: Svelteのようなサーバーサイドレンダリング(SSR)フレームワークでNode.jsアプリケーションモニタリングのためのCustom Server設定をご案内します。
+keywords:
+  - Node.js
+  - Svelte
+  - エージェント
+---
+
+**SvelteKit**のようなサーバーサイドレンダリング(Server-Side Rendering、SSR) フレームワークでアプリケーションをモニタリングするために、カスタムサーバーの設定が必要です。 **SvelteKit**は、基本的にビルドされた結果を様々な環境に配布できるように**アダプター**(**adapter**)を使います。 Node.jsエージェントを適用するには、**SvelteKit**の設定ファイル(**svelte.config.js**)にコードを追加する必要があります。 
+
+:::note
+
+- 参考資料：[Svelte Configuration](https://kit.svelte.dev/docs/configuration)
+
+- この文書は、svelte v3.54.0, sveltekit v1.5のガイド文書を基準に作成されました。
+
+:::
+
+## エージェント インストール {#installagent}
+
+次のコマンドを実行してエージェントをインストールしてください。
+
+```bash title="BASH"
+npm install whatap
+```
+
+## エージェントファイル構成 {#agentfiles}
+
+エージェントのファイル構成については、以下を参照してください。
+
+<Filetree name="whatap">
+
+<FiletreeItem name="package.json" type="file">サンプルアプリケーション情報と依存関係(dependency)の管理文書ファイルです。</FiletreeItem>
+
+<FiletreeItem name="whatap.conf" type="file">モニタリングのためのエージェントの情報とアクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。</FiletreeItem>
+
+<FiletreeItem name="security.conf (or paramkey.txt)" type="file">SQL変数、HTTPクエリの照会、Thread中止機能を利用する時に入力するセキュリティキーを保存します。</FiletreeItem>
+
+</Filetree>
+
+## svelte.config.jsコードを作成する
+
+**Svelte**アプリケーションインスタンスのための*svelte.config.js*ファイルを修正します。 このファイルは、プロジェクトのルート(Root) パスに位置します。
+
+### WhaTapエージェントの初期化
+
+```typescript title="svelte.config.js"
+import WhatapAgent from 'whatap'; // ESM Module
+WhatapAgent.NodeAgent;
+```
+
+## アプリケーションを実行する
+
+```bash title="SH"
+npm run preview
+```
+
+{/* 다음 단계 */}
+import Apminstallnextstep from "../common-items/_apm-install-next-step.mdx";
+
+<Apminstallnextstep />

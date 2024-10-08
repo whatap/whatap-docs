@@ -4,13 +4,9 @@ title: エージェントのインストール
 description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 keywords:
   - SQL Server
-  - データベースモニタリング
+  - データベース
   - エージェント
 ---
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import TR from '@site/src/components/TR';
 
 WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
 
@@ -48,7 +44,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
    :::note
 
-   **MS SQLサーバとエージェントがlocalhostにインストールされている場合**(**default 1433 port**)
+   **SQL Serverとエージェントがlocalhostにインストールされる場合**(**default 1433 port**)
 
    ```ini title='whatap.conf'
    dbms=mssql
@@ -70,7 +66,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 :::note
 
-_/解凍されたフォルダ/jdbc/README.md_ファイルで各データベースのJDBCドライバのインストールパスを確認することができます。
+*/解凍されたフォルダ/jdbc/README.md*ファイルで各データベースのJDBCドライバのインストールパスを確認することができます。
 
 :::
 
@@ -107,6 +103,38 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 <Dbrunagent />
 
 {/*## XOS 에이전트 설치*/}
-import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+{/* import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx"; */}
 
-<Dbinstallxosagent />
+## AWS CloudWatchリソースをモニタリングする
+
+エージェントサーバーにある*whatap.conf*ファイルに次のオプションを設定してください。CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
+
+```ini title='whatap.conf'
+aws_region={AWS_RDS_Region_Name}
+aws_arn=arn:aws:iam::999999999999:role/UpdateApp
+cloud_watch=on
+cloud_watch_instance=RDS_DB_Instance_Name
+cloud_watch_interval=60
+cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
+```
+
+AWS CloudWatch指標照会のために次のコマンドを実行します。`DB_Instance_Name`項目を変更してコマンドを実行します。
+
+```bash
+aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIdentifier,Value={DB_Instance_Name}
+```
+
+:::note
+
+- <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>AWS RDS Region</UI>、<UI>RDS DB Instance Name</UI>、<UI>DB Instance Name</UI>項目に必要な情報を入力すると、エージェントオプションとコマンドを自動的に作成できます。
+
+- AWS CLIのインストールとアップデートの詳細については、[次のリンク](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html)を参考にしてください。
+
+- AWS CLIの設定の詳細については、[次のリンク](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-configure.html)を参考にしてください。
+
+:::
+
+{/* ## 다음 단계 */}
+import NextStep from "../common-items/_db-next-step.mdx";
+
+<NextStep />

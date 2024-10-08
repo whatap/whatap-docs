@@ -93,7 +93,7 @@ RUN tar -xvzf whatap-otel.tar.gz -C /
 
 ### whatap.confファイルを設定する
 
-エージェント設定(*whatap.conf*) ファイルに アクセスキーと 収集サーバーのIPアドレスを設定します。
+エージェント設定(*whatap.conf*)ファイルへのアクセスキーと収集サーバーのIPアドレスを設定します。
 
 ```bash
 echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
@@ -102,7 +102,7 @@ echo "whatap.server.host={COLLECTOR_SERVER_IP_ADDRESS}" >> /usr/whatap/otel/what
 
 ### 環境変数で設定する
 
-環境変数(Environment)でアクセスキーと 収集サーバーのIP アドレスを設定できます。
+環境変数(Environment)でアクセスキーと 収集サーバーのIP アドレスを設定できます。
 
 ```ini
 WHATAP_ACCESSKEY={ACCESS_KEY}
@@ -118,7 +118,7 @@ WHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}
 
 ## Opentelemetry Collectorの設定
 
-whatap-otelでデータを伝達するようにOTLP Exporterを設定してください。
+whatap-otelでデータを伝達するようにOTLP Exporterを設定します。
 
 ```yaml title="otel-collector-config.yaml" showLineNumbers{13,14-15}
 receivers:

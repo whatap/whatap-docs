@@ -1,62 +1,41 @@
 ---
 id: stat
-title: 統計データの確認
-description: データベースごとの統計データを提供します。
+title: SQL統計
+description: Tiberoのデータベースごとの統計データを提供します。
 keywords:
   - Tibero
   - データベース
-  - データベースモニタリング
   - 統計
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
+{/* SQL 통계*/}
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
 
-import Dbsqlstatic from "../common-items/_db-sql-static.mdx";
+<Dbstatsqldesc />
 
-<Dbsqlstatic />
+{/* SQL 통계 기본 사용 안내 */}
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
 
-import Dbtrendbyquery from "../common-items/_db-trend-by-query.mdx";
+<Dbstatsqlbasic />
 
-<Dbtrendbyquery />
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
 
-import Dbdetailviewquery from "../common-items/_db-detail-view-query.mdx";
+<Dbstatsqlviewquery />
 
-<Dbdetailviewquery />
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
 
-{/* mysql, mariadb 지원 */}
-{/* {@include: ../common-items/_db-database-size.mdx} */}
+<Dbstatsqlviewquerydetailssummary />
 
-{/* oracle, tibero */}
-{/* {@include: ../common-items/_db-tablespace-size.mdx}*/}
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
 
-## テーブルスペースサイズ
+<Dbproductsqlstatquerydetails />
 
-ホーム画面 > プロジェクト選択 > **_統計/レポート_** > **_テーブルスペースのサイズ_**
+{/* 필터 조건추가하기*/}
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
 
-<ImgLang img="tibero-tablespace-size.png" desc="テーブルスペースサイズ" />
+<Dbsqlfilter />
 
-**_時間_** および **_インスタンス_** エントリを設定し、![検索アイコン](/img/ico-btn-search.png) ボタンを選択します。設定に応じて表示されたデータはチャートと表形式で提供されます。
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-- **_時間_**
-  - 緑色のアイコンを選択すると、最大3週間の検索時間が表示されます。 
-  - 検索時間を選択した状態で ![左方向アイコン](/img/left-arrow.svg)または ![右方向アイコン](/img/right-arrow.svg)ボタンを選択すると、設定した時間間隔で検索時間を変更できます。
-  - 日付と時間部分を選択することで、目的の時間を細かく設定できます。 設定を完了した後 **_確認_** ボタンを選択してください。
-
-- インスタンス: プロジェクトに関連付けられているインスタンスを選択できます。
-
-- **_テーブルスペースのサイズ_** チャート
-
-  各テーブルスペースの最大容量と使用期間に応じたトレンド情報を累積チャート形式で提供します。1日から3週間までのトレンド情報を確認できます。グラフ データを変更するには、右上部にある **_Total_** または **_Used_** ボタンを選択します。
-
-- **_テーブルスペースの詳細_**
-
-  照会されたデータを表形式で提供します。設定した検索時間に基づいて開始時間と終了時間を比較し、データ使用量のサイズの変化を確認できます。 
-
-  - テーブルスペースの詳細を確認するには、各項目の左側の![右方向アイコン](/img/right-arrow.svg)ボタンを選択します。
-  - テーブルヘッダーで各項目を選択すると、選択した項目でテーブルを並べ替えることができます。
-
-## SGAサイズ
-
-import Dbsgasize from "../common-items/_db-sga-size.mdx";
-
-<Dbsgasize />
+<Dbv2dataeditcolumn level={2} />

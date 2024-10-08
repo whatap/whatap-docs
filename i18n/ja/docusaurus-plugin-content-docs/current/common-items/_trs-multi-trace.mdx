@@ -14,7 +14,7 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
 **マルチトランザクションの活性化**
 
-マルチトランザクションを追跡するには<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューから`mtrace_enabled`オプションを`true`に設定してください。エージェント設定の詳細については[次の文書](set-agent#set-agent-service)を参照してください。
+マルチトランザクションを追跡するには<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューから`mtrace_enabled`オプションを`true`に設定します。エージェント設定の詳細については[次の文書](set-agent#set-agent-service)を参照してください。
 
 :::
 
@@ -48,7 +48,7 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
   - <Cmdname sid="database" className="uitext" />／<Cmdname sid="apply_external_remote" className="uitext" />／<Cmdname sid="apply_internal_remote" className="uitext" />：トランザクションで発生した他のデータベースコネクションの要求やHTTP Callの情報もチャートのノードで確認できます。
 
-トランザクションノードを選択すると、次のように<Cmdname sid="TTL06527" className="uitext" />ウィンドウが追加で表示されます。トランザクショントレースにより、そのトランザクションの詳細を確認できます。<Cmdname sid="TTL06527" className="uitext" />ウィンドウを使用したトランザクショントレースの詳細な分析に関する詳細は、[次の文書](trs-profile#transaction-info)を参照してください。
+トランザクションノードを選択すると、次のように<Cmdname sid="TTL06527" className="uitext" />画面が追加で表示されます。トランザクショントレースからそのトランザクションの詳細を確認できます。<Cmdname sid="TTL06527" className="uitext" />画面を活用したトランザクショントレースの詳細な分析に関しては、[次の文書](trs-profile#transaction-info)を参照してください。
 
 <ImgLang img='multi-tx-additional-info.png' desc='マルチトランザクションの詳細を見る' />
 
@@ -66,7 +66,7 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
 ### ツリー {#trace-multi-tx-tree}
 
-<Cmdname sid="BTN06296" className="uitext" />ボタンをクリックすると、各トランザクションとそれに属しているトレースの詳細を確認できます。トランザクションの所要時間内の各サブトランザクションまたはトレースの開始および所要時間を可視化し、トランザクション呼び出し関係をツリー形式で提供します。
+<Cmdname sid="BTN06296" className="uitext" />ボタンをクリックすると、各トランザクションとそれに属しているトレースの詳細を確認できます。トランザクション全体の所要時間から各サブトランザクションまたはトレースの開始時刻と所要時間を可視化し、トランザクションの呼び出し関係をツリー形式で提供します。
 
 <ImgLang img='multi-tx-tree-mode.png' desc='マルチトランザクションツリーモード' />
 
@@ -80,7 +80,7 @@ Javaエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wt
 
 - ![チャートアイコン](/img/ic-bar-chart.svg) <Cmdname sid="BTN06743" className="uitext" />：経過時間を棒チャートで表示します。
 
-- ![時間アイコン](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />：各区間別のタイムスタンプ、ギャップ、経過時間をテキスト形式で表示します。
+- ![時間アイコン](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />：各区間ごとのタイムスタンプ、ギャップ、経過時間をテキスト形式で表示します。
 
   - 8秒以上：<span class='etrs'>超過した</span>状態で<span class='etrs'>赤色</span>で表現します。
 

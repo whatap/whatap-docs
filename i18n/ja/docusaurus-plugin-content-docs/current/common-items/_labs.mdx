@@ -2,7 +2,7 @@
 
 :::caution
 
-<Cmdname sid="side_lab" className="uitext" />メニューの機能は現在開発中のベータ版であり、予期しないエラーが発生する可能性があります。 <Cmdname sid="side_lab" className="uitext" />メニューの機能を使用する際は注意を払い、重要なデータや運営環境では使用することをお勧めしません。 フィードバックや問題点が発生したら、サポートチーム([support@whatap.io](mailto:support@whatap.io))までお問い合わせください。
+<Cmdname sid="side_lab" className="uitext" />メニューの機能は現在開発中のベータ版であり、予期しないエラーが発生する可能性があります。 <Cmdname sid="side_lab" className="uitext" />メニューの機能を使用する際は注意を払い、重要データを取り扱う環境や運用システムでの使用は、お勧めしません。 フィードバックや問題点に対するお問い合わせは、サポートチーム([support@whatap.io](mailto:support@whatap.io))まで連絡ください。
 
 :::
 
@@ -10,7 +10,7 @@
 
 - <Cmdname sid="side_tagFlex" className="uitext" />
 
-  **MXQL**は、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。 プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に表示および利用するために使用します。 **MXQL**についての詳細は [次の文書](../mxql/mxql-overview)を参照してください。
+  **MXQL**は、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。 プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会し、活用するために使います。 **MXQL**についての詳細は [次の文書](../mxql/mxql-overview)を参照してください。
 
 </Xclude>
 
@@ -65,7 +65,7 @@
 
 </InDoc>
 
-<InDoc product="java,php,python,golang,dotnet,nodejs,server,kubernetes,oracle,mssql,tibero,altibase,cubrid">
+<InDoc product="java,php,python,golang,dotnet,nodejs,server,kubernetes">
 
 - <Cmdname sid="side_alertTemplate" className="uitext" />
 
@@ -78,6 +78,14 @@
 - <Cmdname sid="side_metricsSearch" className="uitext" />
 
   フィールドとタグに基づいて、カテゴリのごとに特定のメトリクスを照会できます。 詳細については、[次の文書](metrics-search)を参照にしてください。
+
+</InDoc>
+
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,mssql,cubrid,cubrid-v1,tibero,altibase,altibase-v1,mongodb,redis">
+
+- <Cmdname sid="side_dbScriptManager" className="uitext" />
+
+  エージェントのインストールパスにSQLスクリプトを保存すると、WhaTapモニタリングサービス画面でそのスクリプトを読み込み、リアルタイムで実行結果を照会できます。 詳細については、[次の文書](../reference/script-manager)を参照してください。
 
 </InDoc>
 

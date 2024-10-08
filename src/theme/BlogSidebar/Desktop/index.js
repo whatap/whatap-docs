@@ -45,7 +45,7 @@ function BlogSidebarDesktop({sidebar}) {
         /> */}
         <ul className={clsx(styles.sidebarItemList, 'clean-list')}>
           {sidebarData.map((category, index) => (
-            <li key={index}>
+            <li key={index} className={category.className ? styles[category.className] : ''}>
               <div>
                 {category.link ? (
                   <Link isNavLink to={category.link}>
