@@ -1,122 +1,30 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_4",
-    "ver": "v2.2.4",
-    "date": "2024-03-30",
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_3_1",
+    "ver": "v2.3.1",
+    "date": "2024-08-26",
     "Lists": [
       {
-        "ver": "v2.2.4",
-        "hash": "v224",
-        "product": ".NET Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>バイトコードの処理プロセス性能を改善</p>"
-      },
-      {
-        "ver": "v2.2.4",
-        "hash": "v224",
-        "product": ".NET Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>ログの処理プロセス性能を改善</p>"
-      },
-      {
-        "ver": "v2.2.4",
-        "hash": "v224",
-        "product": ".NET Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>UDPパケットプロセス性能を改善</p>"
-      },
-      {
-        "ver": "v2.2.4",
-        "hash": "v224",
-        "product": ".NET Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> <a href=\"http://ASP.NET\" target=\"_blank\" rel=\"noopener noreferrer\">ASP.NET</a>MVCライブラリの処理プロセス性能を改善</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_3_0",
-    "ver": "v2.3.0",
-    "date": "2024-07-31",
-    "Lists": [
-      {
-        "ver": "v2.3.0",
-        "hash": "v230",
-        "product": ".NET Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <a href=\"/ja/release-notes/dotnet/dotnet-2_2_9\">v2.2.9</a>でSQL、HTTPモニタリングが漏れる問題を修正</p>"
-      },
-      {
-        "ver": "v2.3.0",
-        "hash": "v230",
-        "product": ".NET Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>パケット処理が遅延した時にUDPパケットが変調される問題を改善</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_5",
-    "ver": "v2.2.5",
-    "date": "2024-05-08",
-    "Lists": [
-      {
-        "ver": "v2.2.5",
-        "hash": "v225",
-        "product": ".NET Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code>サーバーのCPU性能に余裕がない時、モニタリングメッセージが遅延して蓄積され、ボトルネックを加速する不具合を修正</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_9",
-    "ver": "v2.2.9",
-    "date": "2024-07-05",
-    "Lists": [
-      {
-        "ver": "v2.2.9",
-        "hash": "v229",
-        "product": ".NET Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>マルチトランザクションのモニタリングに対応: WhaTapモニタリングプラットフォームのプロジェクトとして登録されたアプリケーションサービス間の呼び出しを追跡できます。</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_8",
-    "ver": "v2.2.8",
-    "date": "2024-06-19",
-    "Lists": [
-      {
-        "ver": "v2.2.8",
-        "hash": "v228",
+        "ver": "v2.3.1",
+        "hash": "v231",
         "product": ".NET Agent",
         "type": "New",
-        "desc": "<p><code class=\"New\">New</code> .NET 6、7、8バージョンの追加対応</p>",
-        "details": "<ul>\n<li>\n<p>ASP.NET core対応</p>\n</li>\n<li>\n<p>HTTP Call、Redis、WCF client、ユーザーログ、Active Stack、SQL対応</p>\n</li>\n<li>\n<p>別のインストールリンクでダウンロードします。 <a href=\"https://repo.whatap.io/windows/whatap_dotnet_core.exe\" target=\"_blank\" rel=\"noopener noreferrer\">whatap_dotnet_core.exe</a></p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>トランザクション外部で発生するトレース情報の収集機能を追加</p>",
+        "details": "<ul>\n<li>\n<p><strong>expand_transaction_level</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p>オプション値を<code>true</code>に設定すると、トランザクションの外部から発生するSQL、HTTPの呼び出しをトランザクションとして扱い、ヒートマップに表示します。</p>\n</li>\n<li>\n<p><strong>expand_transaction_basetime</strong> <span class=\"type\">Int</span></p>\n<p>既定値<code>1000</code>(1秒)/最小値<code>100</code>(0.1秒)</p>\n<p><code>expand_transaction_level</code>オプションが<code>true</code>である場合、設定した時間より応答時間が長くかかる場合にのみデータを収集します。 毎秒最大100件まで収集します。</p>\n</li>\n</ul>"
       },
       {
-        "ver": "v2.2.8",
-        "hash": "v228",
+        "ver": "v2.3.1",
+        "hash": "v231",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> DB接続情報の表示：データベースを使用するトランザクションは、データベース接続情報を表示する機能を追加</p>"
+      },
+      {
+        "ver": "v2.3.1",
+        "hash": "v231",
         "product": ".NET Agent",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code> <code>trace_http_client_ip_header_key</code>オプションのデフォルト値を<code>X-Forwarded-For</code>に変更</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_3",
-    "ver": "v2.2.3",
-    "date": "2024-04-24",
-    "Lists": [
-      {
-        "ver": "v2.2.3",
-        "hash": "v223",
-        "product": ".NET Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Rest APIモニタリング中に特定条件でCPU使用率が増加するバグを修正</p>",
-        "details": "<ul>\n<li>\n<p>特定の顧客からCPU使用量が増加する問題が発生したため、該当バグを修正します。</p>\n</li>\n<li>\n<p>トラブルが発生しない顧客でも、エージェントをアップグレードすることをお勧めします。 性能向上に役立ちます。</p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>エラーでない場合でもトランザクションのステータスコードを表示するように修正</p>"
       }
     ]
   },
@@ -130,7 +38,7 @@
         "hash": "v227",
         "product": ".NET Agent",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\">Changed</code>対応環境の分析ツール(<a href=\"https://repo.whatap.io/windows/WhaTapDotnetScan.exe\" target=\"_blank\" rel=\"noopener noreferrer\">WhaTapDotnetScan.exe</a>)改善</p>",
+        "desc": "<p><code class=\"Changed\">Changed</code>対応環境の分析ツール(<a href=\"https://repo.whatap.io/ja/windows/WhaTapDotnetScan.exe\" target=\"_blank\" rel=\"noopener noreferrer\">WhaTapDotnetScan.exe</a>)改善</p>",
         "details": "<ul>\n<li>\n<p>ドットネットが設置されていない環境でも実行できるように改善</p>\n</li>\n<li>\n<p>旧バージョンのドットネットランタイムを使用したり、ドットネットランタイムがインストールされていない場合に発生するエラーを修正</p>\n</li>\n</ul>"
       },
       {
@@ -166,6 +74,127 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_5",
+    "ver": "v2.2.5",
+    "date": "2024-05-08",
+    "Lists": [
+      {
+        "ver": "v2.2.5",
+        "hash": "v225",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code>サーバーのCPU性能に余裕がない時、モニタリングメッセージが遅延して蓄積され、ボトルネックを加速する不具合を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_3_0",
+    "ver": "v2.3.0",
+    "date": "2024-07-31",
+    "Lists": [
+      {
+        "ver": "v2.3.0",
+        "hash": "v230",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <a href=\"/release-notes/dotnet/dotnet-2_2_9\">v2.2.9</a>でSQL、HTTPモニタリングが漏れる問題を修正</p>"
+      },
+      {
+        "ver": "v2.3.0",
+        "hash": "v230",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>パケット処理が遅延した時にUDPパケットが変調される問題を改善</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_8",
+    "ver": "v2.2.8",
+    "date": "2024-06-19",
+    "Lists": [
+      {
+        "ver": "v2.2.8",
+        "hash": "v228",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> .NET 6、7、8バージョンの追加対応</p>",
+        "details": "<ul>\n<li>\n<p>ASP.NET core対応</p>\n</li>\n<li>\n<p>HTTP Call、Redis、WCF client、ユーザーログ、Active Stack、SQL対応</p>\n</li>\n<li>\n<p>別のインストールリンクでダウンロードします。 <a href=\"https://repo.whatap.io/ja/windows/whatap_dotnet_core.exe\" target=\"_blank\" rel=\"noopener noreferrer\">whatap_dotnet_core.exe</a></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.8",
+        "hash": "v228",
+        "product": ".NET Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <code>trace_http_client_ip_header_key</code>オプションのデフォルト値を<code>X-Forwarded-For</code>に変更</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_9",
+    "ver": "v2.2.9",
+    "date": "2024-07-05",
+    "Lists": [
+      {
+        "ver": "v2.2.9",
+        "hash": "v229",
+        "product": ".NET Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>マルチトランザクションのモニタリングに対応: WhaTapモニタリングプラットフォームのプロジェクトとして登録されたアプリケーションサービス間の呼び出しを追跡できます。</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_4",
+    "ver": "v2.2.4",
+    "date": "2024-03-30",
+    "Lists": [
+      {
+        "ver": "v2.2.4",
+        "hash": "v224",
+        "product": ".NET Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>バイトコードの処理プロセス性能を改善</p>"
+      },
+      {
+        "ver": "v2.2.4",
+        "hash": "v224",
+        "product": ".NET Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>ログの処理プロセス性能を改善</p>"
+      },
+      {
+        "ver": "v2.2.4",
+        "hash": "v224",
+        "product": ".NET Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code>UDPパケットプロセス性能を改善</p>"
+      },
+      {
+        "ver": "v2.2.4",
+        "hash": "v224",
+        "product": ".NET Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> <a href=\"http://ASP.NET\" target=\"_blank\" rel=\"noopener noreferrer\">ASP.NET</a>MVCライブラリの処理プロセス性能を改善</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_3",
+    "ver": "v2.2.3",
+    "date": "2024-04-24",
+    "Lists": [
+      {
+        "ver": "v2.2.3",
+        "hash": "v223",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Rest APIモニタリング中に特定条件でCPU使用率が増加するバグを修正</p>",
+        "details": "<ul>\n<li>\n<p>特定の顧客からCPU使用量が増加する問題が発生したため、該当バグを修正します。</p>\n</li>\n<li>\n<p>トラブルが発生しない顧客でも、エージェントをアップグレードすることをお勧めします。 性能向上に役立ちます。</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_2",
     "ver": "v2.2.2",
     "date": "2024-04-18",
@@ -189,7 +218,7 @@
         "hash": "v222",
         "product": ".NET Agent",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code>エージェントオプション<code>trace_http_client_ip_header_key</code>追加、詳しい内容は、<a href=\"/ja/dotnet/agent-number-of-user#trace_http_client_ip_header_key\">次の文書</a>を参照してください。</p>"
+        "desc": "<p><code class=\"Feature\">Feature</code>エージェントオプション<code>trace_http_client_ip_header_key</code>追加、詳しい内容は、<a href=\"/dotnet/agent-number-of-user#trace_http_client_ip_header_key\">次の文書</a>を参照してください。</p>"
       },
       {
         "ver": "v2.2.2",
@@ -226,7 +255,7 @@
         "product": ".NET Agent",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\">Changed</code>古いバージョンの互換性を高めるためにインストールファイルを分離</p>",
-        "details": "<ul>\n<li>\n<p>.NET 4.6.1バージョン以降のランタイムを使用する場合: <a href=\"https://repo.whatap.io/windows/whatap_dotnet.exe\" target=\"_blank\" rel=\"noopener noreferrer\">whatap_dotnet.exe</a></p>\n</li>\n<li>\n<p>.NET 4.6.1バージョン未満のランタイムを使用するか、Windows Server 2012未満の場合: <a href=\"https://repo.whatap.io/windows/whatap_dotnet_450.exe\" target=\"_blank\" rel=\"noopener noreferrer\">whatap_dotnet_450.exe</a></p>\n<div class=\"theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"><svg viewbox=\"0 0 14 16\"><path fill-rule=\"evenodd\" d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"></path></svg></span>ノート</div><div class=\"admonitionContent_BuS1\"><p>Windows Server 2008から対応します。</p></div></div>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p>.NET 4.6.1バージョン以降のランタイムを使用する場合: <a href=\"https://repo.whatap.io/ja/windows/whatap_dotnet.exe\" target=\"_blank\" rel=\"noopener noreferrer\">whatap_dotnet.exe</a></p>\n</li>\n<li>\n<p>.NET 4.6.1バージョン未満のランタイムを使用するか、Windows Server 2012未満の場合: <a href=\"https://repo.whatap.io/ja/windows/whatap_dotnet_450.exe\" target=\"_blank\" rel=\"noopener noreferrer\">whatap_dotnet_450.exe</a></p>\n<div class=\"theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"><svg viewbox=\"0 0 14 16\"><path fill-rule=\"evenodd\" d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"></path></svg></span>ノート</div><div class=\"admonitionContent_BuS1\"><p>Windows Server 2008から対応します。</p></div></div>\n</li>\n</ul>"
       },
       {
         "ver": "v2.2.1",

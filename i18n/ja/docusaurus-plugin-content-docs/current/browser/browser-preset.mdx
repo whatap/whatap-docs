@@ -15,12 +15,12 @@ keywords:
 
 さらに、ブラウザーエージェントが効率的にデータ送信を行うには、ウェブワーカー関連のCSPオプションを追加する必要があります。
 
-| ディレクティブ(directive)         | ソース(source)                         | 説明                                                                |
-| --------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
-| script-src, script-src-elem                   | unsafe-inline                                          | ブラウザーエージェントをインラインスクリプトとしてインストール                                   |
-| script-src, script-src-elem                   | https://repo.whatap-browser-agent.io/rum/prod/         | ブラウザーエージェントCDNドメイン                                                |
-| connect-src                                   | https://rum-ap-northeast-2.whatap-browser-agent.io     | 収集したデータを送信するためのドメイン                                               |
-| worker-src, child-src                         | blob:                                                  | ブラウザーエージェントの効率的なデータ送信のウェブワーカー関連のCSPオプション(推奨事項) |
+| ディレクティブ(directive)          | ソース(source)                                        | 説明                                                           |
+| --------------------------- | -------------------------------------------------- | ------------------------------------------------------------ |
+| script-src, script-src-elem | unsafe-inline                                      | ブラウザーエージェントをインラインスクリプトとしてインストール                              |
+| script-src, script-src-elem | https://repo.whatap-browser-agent.io/rum/prod/     | ブラウザーエージェントCDNドメイン                                           |
+| connect-src                 | https://rum-ap-northeast-2.whatap-browser-agent.io | 収集したデータを送信するためのドメイン                                          |
+| worker-src, child-src       | blob:                                              | ブラウザーエージェントの効率的なデータ送信のウェブワーカー関連のCSPオプション(推奨事項)               |
 
 ## Timing-Allow-Origin設定
 

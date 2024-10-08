@@ -9,16 +9,16 @@ A category of the data collected for application process metrics
 
 <div className="c3-30-60-10">
 
-| Tag name       | Description                                                         | Remarks       |
-| -------------- | ------------------------------------------------------------------- | ------------- |
-| `alias`        | Application's alias                                                 | Unique value  |
-| `container`    | Container name                                                      | Unique value  |
-| `containerKey` | Container's key value                                               | Unique value  |
-| `host_ip`      | Host IP Address                                                     | Unique value  |
-| `okindName`    | Group name categorized as `whatap.okind`                            | -             |
-| `oname`        | Agent name                                                          | Unique value  |
-| `onodeName`    | Group name categorized as `whatap.onode`                            | -             |
-| `pid`          | Unique ID of a specific process                                     | -             |
+| Tag name       | Description                                      | Remarks       |
+| -------------- | ------------------------------------------------ | ------------- |
+| `alias`        | Application's alias                              | Unique value  |
+| `container`    | Container name                                   | Unique value  |
+| `containerKey` | Container's key value                            | Unique value  |
+| `host_ip`      | Host IP Address                                  | Unique value  |
+| `okindName`    | Group name categorized as `whatap.okind`         | -             |
+| `oname`        | Agent name                                       | Unique value  |
+| `onodeName`    | Group name categorized as `whatap.onode`         | -             |
+| `pid`          | Unique ID of a specific process                  | -             |
 | `type`         | Platform type (application development language) | Language name |
 
 </div>
@@ -29,19 +29,19 @@ A category of the data collected for application process metrics
 
 | Field name               | Unit                                                 | Description                                                          | Remarks |
 | ------------------------ | ---------------------------------------------------- | -------------------------------------------------------------------- | ------- |
-| `cputime`                | Millisecond(ms)                   | Transaction CPU time                                                 | -       |
-| `db_num_active`          | count                                                | DB Connection Pool count | -       |
-| `db_num_idle`            | count                                                | DB connection pool idle count | -       |
-| `gc_count`               | count                                                | GC occurrence count | -       |
-| `gc_oldgen_count`        | count                                                | Old Generation GC Count | -       |
-| `gc_time`                | Millisecond(ms)                   | GC execution time                                                    | -       |
-| `heap_max`               | byte                                                 | Maximum size of heap memory (-Xmx value)          | -       |
+| `cputime`                | Millisecond(ms)                                      | Transaction CPU time                                                 | -       |
+| `db_num_active`          | count                                                | DB Connection Pool Active count                                      | -       |
+| `db_num_idle`            | count                                                | DB connection pool idle counter                                      | -       |
+| `gc_count`               | count                                                | GC occurrence count                                                  | -       |
+| `gc_oldgen_count`        | count                                                | Old Generation GC Count                                              | -       |
+| `gc_time`                | Millisecond(ms)                                      | GC execution time                                                    | -       |
+| `heap_max`               | byte                                                 | Maximum size of heap memory (-Xmx value)                             | -       |
 | `heap_perm`              | byte                                                 | Memory usage in the Perm area                                        | -       |
 | `heap_tot`               | byte                                                 | Total amount of allocated heap memory                                | -       |
 | `heap_use`               | byte                                                 | Amount of heap memory in use                                         | -       |
 | `pending_finalization`   | count                                                | Number of objects waiting to finalize during GC                      | -       |
-| `proc_fd`                | count | Number of file descriptors open by the count process | - |
-| `proc_fd_max`            | count | Maximum number of file descriptors that can be opened by the process | -       |
+| `proc_fd`                | Number of file descriptors open by the count process | -                                                                    |         |
+| `proc_fd_max`            | count                                                | Maximum number of file descriptors that can be opened by the process | -       |
 | `thread_count`           | count                                                | Total number of threads running in the JVM                           | -       |
 | `thread_daemon`          | count                                                | Number of daemon threads running in the JVM                          | -       |
 | `thread_peak_count`      | count                                                | Maximum number of threads observed while the JVM is running          | -       |

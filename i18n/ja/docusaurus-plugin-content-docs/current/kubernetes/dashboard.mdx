@@ -4,7 +4,7 @@ title: アプリケーションサービスダッシュボード
 description: ウェブアプリケーションサーバーのリソースをリアルタイムでモニタリングできます。
 keywords:
   - Kubernetes
-  - ダッシュボード
+  - ダッシューボード
   - アプリケーション
   - アプリケーションモニタリング
   - Kubernetesモニタリング
@@ -220,9 +220,9 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
   アクティブTXの状態を速度で色分けし、右上に個数を表示します。 チャートの数字は、アクティブTX全体の数です。 チャートの色の意味は次のとおりです。
 
-  - 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+  - 青色(<span class='normal'>Normal</span>)： 0秒\~3秒
 
-  - オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+  - オレンジ色(<span class='slow'>Slow</span>)：3秒\~8秒
 
   - 赤色(<span class='vslow'>Very Slow</span>)：8秒以上
 
@@ -250,9 +250,9 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 - 赤色(<span class='vslow'>Very Slow</span>)：8秒以上 
 
-- オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+- オレンジ色(<span class='slow'>Slow</span>)：3秒\~8秒
 
-- 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+- 青色(<span class='normal'>Normal</span>)： 0秒\~3秒
 
 青色が多い状況は問題ありません。 これらの一部がオレンジ色や赤色に変わっていくかを監視する必要があります。 トラブルが発生すると、進行中のトランザクション数が増加し、赤色の割合が高くなります。 一方で、レスポンスが非常に速いシステムの場合、処理されるトランザクション数(TPS)が多くても、進行中のトランザクション数は少ないことがあります。
 
@@ -320,7 +320,7 @@ CPU、Memoryを除く一般的なチャートの場合、安定したデータ�
 
 - <Cmdname sid="err" className="uitext" />ボタンを選択すると、エラートランザクションのみ表示します。
 
-- ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択すると、5秒~80秒でチャートを拡大／縮小することができます。
+- ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択すると、5秒\~80秒でチャートを拡大／縮小することができます。
 
 :::note
 
@@ -398,7 +398,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 - [学習する: ヒープメモリ メトリクスおよびメトリクス通知設定](https://docs.whatap.io/ja/best-practice-guides/about-apm-heap-memory)
 
-- [月間WhaTap：モニタリングで注目すべき指標](https://papago.naver.net/website?locale=ja&source=ko&target=ja&url=https%3A%2F%2Fwww.whatap.io%2Fbbs%2Fboard.php%3Fbo_table%3Dblog%26wr_id%3D59%26sca%3D%25EC%2599%2580%25ED%2583%25AD%25EB%25AA%25A8%25EB%258B%2588%25ED%2584%25B0%25EB%25A7%2581%26page%3D4)
+- [月間WhaTap：モニタリングで注目すべき指標](https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=59)
 
 - [Javaヒープメモリーチャートの分析：Ch.1ヒープチャート観察](https://youtu.be/FcWfVrETWh4)
 
@@ -442,13 +442,13 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 <ImgLang img='apm-dashboard-today-tps.png' desc='本日TPS' />
 
-1日のTPSを時間帯別に表示します。 昨日の同時間帯のTPS(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
+1日のTPSを時間帯別に表示します。 昨日の同時間帯のTPS(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
 
 ##### <Cmdname sid="daily_visit" />
 
 <ImgLang img='apm-dashboard-today-users.png' desc='本日ユーザー' />
 
-一日あたりの<Cmdname sid="realtime_user" className="uitext" />の数を時間帯別に表した指標です。 昨日の同時ユーザー数(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
+一日あたりの<Cmdname sid="realtime_user" className="uitext" />の数を時間帯別に表した指標です。 昨日の同時ユーザー数(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
 
 ### リアルタイム通知の確認
 

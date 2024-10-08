@@ -130,17 +130,17 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### パラメータ提供 - 共通プラグインファイル{#common-plugin}
 
-|  パラメータ  | メソッド／変数                                                                          | 説明                                            |
-| :-----: | -------------------------------------------------------------------------------- | --------------------------------------------- |
-|  $ctx   | \>                                                                               | 属性管理                                          |
+|  パラメータ  | メソッド／変数                                                       | 説明                                            |
+| :-----: | ------------------------------------------------------------- | --------------------------------------------- |
+|  $ctx   | \>                                                            | 属性管理                                          |
 |  ^      | void setAttribute(String key, Object value)                   | Attributeを設定します。                              |
 |  ^      | Object getAttribute(String key)                               | Attributeの値を取得します。                            |
-|  ^      | \>                                                                               | トレースデータ                                       |
+|  ^      | \>                                                            | トレースデータ                                       |
 |  ^      | void profile(String desc)                                     | トレースメッセージ記録                                   |
 |  ^      | void profile(String name, String msg)                         | トレースStep名、メッセージの記録                            |
 |  ^      | void profile(String name, String msg, int elapsed)            | トレースStep名、メッセージ、実行時間の記録                       |
 |  ^      | void profile(String name, String msg, int elapsed, int value) | トレースStep名、メッセージ、実行時間、順序の記録                    |
-|  ^      | \>                                                                               | HTTP Request                                  |
+|  ^      | \>                                                            | HTTP Request                                  |
 |  ^      | String service()                                              | サービス名をリターン                                    |
 |  ^      | void service(String name)                                     | サービス名の設定                                      |
 |  ^      | int serviceHash()                                             | サービス名のHash値リターン                               |
@@ -154,34 +154,34 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 |  ^      | String httpContentType()                                      | HTTP ContentTypeリターン                          |
 |  ^      | String userAgent()                                            | User-Agentリターン                                |
 |  ^      | int status()                                                  | HTTP statusリターン                               |
-| $point  | String class1                                                                    | クラス名                                          |
-|  ^      | String method                                                                    | メソッド名                                         |
-|  ^      | Object this1                                                                     | Hooking対象クラス／メソッド                             |
-|  ^      | Object[] args                                                                   | ファクター                                         |
-|  ^      | Object return1                                                                   | リターン                                          |
+| $point  | String class1                                                 | クラス名                                          |
+|  ^      | String method                                                 | メソッド名                                         |
+|  ^      | Object this1                                                  | Hooking対象クラス／メソッド                             |
+|  ^      | Object[] args                                                 | ファクター                                         |
+|  ^      | Object return1                                                | リターン                                          |
 
 ### パラメータ未指定 - 共通プラグインファイル
 
-| パラメータ | メソッド／変数                                                                 | 説明                                                            |
-| :---: | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
-|  無し   | void log(Object c)                                   | LoggerによるLogging                                              |
-| ^     | void println(Object c)                               | System.out.println()で出力                    |
-| ^     | Object field(Object o, String field)                 | Field値をリターン                                                   |
-| ^     | Object method(Object o, String method)               | Invokeメソッド                                                    |
-| ^     | Object method(Object o, String method, String param) | Invokeメソッド                                                    |
-| ^     | String toString(Object o)                            | ObjectをtoSting() に戻す                       |
-| ^     | String toString(Object o, String def)                | ObjectをtoSting() 戻し、nullの場合def 戻し          |
-| ^     | int syshash(Object o)                                | hash値リターン                                                     |
-| ^     | int syshash(HookArgs hook, int x)                    | x番目のargumentのhash 値戻す                                         |
-| ^     | int syshash(HookArgs hook)                           | argumentのhash値 戻し                                             |
-| ^     | int cint(Object o)                                   | intでリターン                                                      |
-| ^     | float cfloat(Object o)                               | floatでリターン                                                    |
-| ^     | String cString(Object o)                             | Stringでリターン                                                   |
-| ^     | long clong(Object o)                                 | longでリターン                                                     |
-| ^     | double cdouble(Object o)                             | doubleとしてリターン                                                 |
-| ^     | String desc(Object o)                                | Class signatureをリターン                                          |
-| ^     | String toJson(Object o)                              | jsonでリターン                                                     |
-| ^     | void shell(final String cmd, final String env)       | shell実行                                                       |
+| パラメータ | メソッド／変数                                              | 説明                                            |
+| :---: | ---------------------------------------------------- | --------------------------------------------- |
+|  無し   | void log(Object c)                                   | LoggerによるLogging                              |
+| ^     | void println(Object c)                               | System.out.println()で出力                       |
+| ^     | Object field(Object o, String field)                 | Field値をリターン                                   |
+| ^     | Object method(Object o, String method)               | Invokeメソッド                                    |
+| ^     | Object method(Object o, String method, String param) | Invokeメソッド                                    |
+| ^     | String toString(Object o)                            | ObjectをtoSting() に戻す                          |
+| ^     | String toString(Object o, String def)                | ObjectをtoSting() 戻し、nullの場合def 戻し             |
+| ^     | int syshash(Object o)                                | hash値リターン                                     |
+| ^     | int syshash(HookArgs hook, int x)                    | x番目のargumentのhash 値戻す                         |
+| ^     | int syshash(HookArgs hook)                           | argumentのhash値 戻し                             |
+| ^     | int cint(Object o)                                   | intでリターン                                      |
+| ^     | float cfloat(Object o)                               | floatでリターン                                    |
+| ^     | String cString(Object o)                             | Stringでリターン                                   |
+| ^     | long clong(Object o)                                 | longでリターン                                     |
+| ^     | double cdouble(Object o)                             | doubleとしてリターン                                 |
+| ^     | String desc(Object o)                                | Class signatureをリターン                          |
+| ^     | String toJson(Object o)                              | jsonでリターン                                     |
+| ^     | void shell(final String cmd, final String env)       | shell実行                                       |
 
 ### デーモンおよびバッチ
 
@@ -203,28 +203,28 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 - サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpServiceStart.x_
 - サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpServiceEnd.x_ 
 
-| プラグインファイル                                |  パラメータ | メソッド／変数                                                   | 説明                      |
-| ---------------------------------------- | :----: | --------------------------------------------------------- | ----------------------- |
-| HttpServiceStart.x/<br/>HttpServiceEnd.x | $ctx   | \>                                                        | 共通属性を参照                 |
-| ^                                        | $req   | String getCookie(String key)           | Cookie値リターン             |
-| ^                                        |  ^     | String getRequestURI()                 | RequestURIリターン          |
-| ^                                        |  ^     | String getRemoteAddr()                 | RemoteAddrリターン          |
-| ^                                        |  ^     | String getMethod()                     | HTTP Methodリターン         |
-| ^                                        |  ^     | String getQueryString()                | HTTP QueryStringリターン    |
-| ^                                        |  ^     | String getParameter(String key)        | Parameter値リターン          |
-| ^                                        |  ^     | Object getAttribute(String key)        | Attribute値リターン          |
-| ^                                        |  ^     | String getHeader(String key)           | Header値リターン             |
-| ^                                        |  ^     | Enumeration getParameterNames()        | getParameterNamesリターン   |
-| ^                                        |  ^     | Enumeration getHeaderNames()           | getHeaderNamesリターン      |
-| ^                                        |  ^     | WrSession getSession()                 | Session Wrapperリターン     |
-| ^                                        |  ^     | Set getSessionNames()                  | getSessionNamesリターン     |
-| ^                                        |  ^     | Object getSessionAttribute(String key) | getSessionAttributeリターン |
-| ^                                        |  ^     | boolean isOk()                         | Plugin状態リターン            |
-| ^                                        |  ^     | Throwable error()                      | Errorリターン               |
-| ^                                        | $res   | String getContentType()                | ContentTypeリターン         |
-| ^                                        |  ^     | String getCharacterEncoding()          | CharacterEncodingリターン   |
-| ^                                        |  ^     | boolean isOk()                         | Plugin状態リターン            |
-| ^                                        |  ^     | Throwable error()                      | Errorリターン               |
+| プラグインファイル                                |  パラメータ | メソッド／変数                                 | 説明                      |
+| ---------------------------------------- | :----: | --------------------------------------- | ----------------------- |
+| HttpServiceStart.x/<br/>HttpServiceEnd.x | $ctx   | \>                                      | 共通属性を参照                 |
+| ^                                        | $req   | String getCookie(String key)            | Cookie値リターン             |
+| ^                                        |  ^     | String getRequestURI()                  | RequestURIリターン          |
+| ^                                        |  ^     | String getRemoteAddr()                  | RemoteAddrリターン          |
+| ^                                        |  ^     | String getMethod()                      | HTTP Methodリターン         |
+| ^                                        |  ^     | String getQueryString()                 | HTTP QueryStringリターン    |
+| ^                                        |  ^     | String getParameter(String key)         | Parameter値リターン          |
+| ^                                        |  ^     | Object getAttribute(String key)         | Attribute値リターン          |
+| ^                                        |  ^     | String getHeader(String key)            | Header値リターン             |
+| ^                                        |  ^     | Enumeration getParameterNames()         | getParameterNamesリターン   |
+| ^                                        |  ^     | Enumeration getHeaderNames()            | getHeaderNamesリターン      |
+| ^                                        |  ^     | WrSession getSession()                  | Session Wrapperリターン     |
+| ^                                        |  ^     | Set getSessionNames()                   | getSessionNamesリターン     |
+| ^                                        |  ^     | Object getSessionAttribute(String key)  | getSessionAttributeリターン |
+| ^                                        |  ^     | boolean isOk()                          | Plugin状態リターン            |
+| ^                                        |  ^     | Throwable error()                       | Errorリターン               |
+| ^                                        | $res   | String getContentType()                 | ContentTypeリターン         |
+| ^                                        |  ^     | String getCharacterEncoding()           | CharacterEncodingリターン   |
+| ^                                        |  ^     | boolean isOk()                          | Plugin状態リターン            |
+| ^                                        |  ^     | Throwable error()                       | Errorリターン               |
 
 ### HTTP Outbound
 
@@ -233,15 +233,15 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 - サービス開始部分適用：_`$WHATAP_HOME`/plugin/HttpCallStart.x_
 - サービス終了部分適用：_`$WHATAP_HOME`/plugin/HttpCallEnd.x_
 
-| プラグインファイル       |  パラメータ | メソッド／変数                                          | 説明                    |
-| --------------- | :----: | ------------------------------------------------ | --------------------- |
-| HttpCallStart.x | $ctx   | \>                                               | 共通属性を参照               |
+| プラグインファイル       |  パラメータ | メソッド／変数                       | 説明                    |
+| --------------- | :----: | ----------------------------- | --------------------- |
+| HttpCallStart.x | $ctx   | \>                            | 共通属性を参照               |
 | ^               | $req   | String url()                  | URLリターン               |
 | ^               |  ^     | String host()                 | Hostnameリターン          |
 | ^               |  ^     | int port()                    | Portリターン              |
 | ^               |  ^     | boolean isOk()                | Plugin状態リターン          |
 | ^               |  ^     | Throwable error()             | Errorリターン             |
-| HttpCallEnd.x   | $ctx   | \>                                               | 共通属性を参照               |
+| HttpCallEnd.x   | $ctx   | \>                            | 共通属性を参照               |
 | ^               | $res   | String getContentType()       | ContentTypeリターン       |
 | ^               |  ^     | String getCharacterEncoding() | CharacterEncodingリターン |
 | ^               |  ^     | boolean isOk()                | Plugin状態リターン          |
@@ -262,10 +262,10 @@ Javaエージェントオプション(`hook_trace_helper_*`)で設定したメ�
 
 ユーザー定義プールをモニタリングするためのAPIです。プール使用量の情報を使用してメソッドを設定すると、WhaTapモニタリングサービスで監視し、統計情報を確認することができます。
 
-| プラグインファイル     |   パラメータ  | メソッド／変数                               | 説明                               |
-| ------------- | :------: | ------------------------------------- | -------------------------------- |
-| CustomPool.x  |  $id     | \>                                    | custom_pool_classesに設定したID値      |
-| ^             |  $pool   | \>                                    | custom_pool_classesに設定したclass    |
+| プラグインファイル     |   パラメータ  | メソッド／変数            | 説明                               |
+| ------------- | :------: | ------------------ | -------------------------------- |
+| CustomPool.x  |  $id     | \>                 | custom_pool_classesに設定したID値      |
+| ^             |  $pool   | \>                 | custom_pool_classesに設定したclass    |
 | ^             | $result  | active(Object o)   | Active Pool Count設定              |
 | ^             |   ^      | int idle(Object o) | Idle Pool Count設定                |
 

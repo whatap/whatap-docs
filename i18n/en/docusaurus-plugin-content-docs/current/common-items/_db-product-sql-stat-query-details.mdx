@@ -1,6 +1,6 @@
 - <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
 
-<InDoc product='postgresql,mysql'>
+<InDoc product='postgresql,mysql,altibase'>
 
 - **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
 
@@ -8,15 +8,21 @@
 
 - **_Formatting_**: You can improve readability by applying indentation and formatting to a SQL query statement.
 
+</InDoc>
+
+<InDoc product="altibase">
+
+- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+
+</InDoc>
+
+<InDoc product='postgresql'>
+
 - **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
 
   - **_Text_**: You can check plan information in text format.
 
   - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
-
-</InDoc>
-
-<InDoc product='postgresql'>
 
   :::note
 
@@ -27,6 +33,12 @@
 </InDoc>
 
 <InDoc product='mysql'>
+
+- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+
+  - **_Text_**: You can check plan information in text format.
+
+  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
 
   :::note
 

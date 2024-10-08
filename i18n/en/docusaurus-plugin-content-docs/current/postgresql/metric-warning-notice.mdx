@@ -42,7 +42,7 @@ in the <Cmdname sid="metrics" className="uitext" /> section. From the <Cmdname s
 
 - <p><Cmdname sid="cpu_usage" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `cpu(xos2)` > 70
+  Condition: `cpu(xos)` > 70
 
   If the CPU utilization exceeds 70% in an individual instance, a <span class='slow'>Warning</span> level notification is sent.
 
@@ -78,13 +78,13 @@ in the <Cmdname sid="metrics" className="uitext" /> section. From the <Cmdname s
 
 - <p><Cmdname sid="TTL07137" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `blks_hit_ratio` \<= 80
+  Condition: `blks_hit_ratio` \<\= 80
 
   If the memory block hit ratio in an individual instance is 80% or less, a <span class='slow'>Warning</span> level notification is sent.
 
 - <p><Cmdname sid="TTL07138" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  Condition: `replication_delay` >= 10
+  Condition: `replication_delay` \>\= 10
 
   If the delay in an individual instance being reflected to the replication database is greater than 10 seconds, a <span class='slow'>Warning</span> level notification is sent.
 

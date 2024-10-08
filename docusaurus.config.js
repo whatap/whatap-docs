@@ -645,11 +645,21 @@ const config = {
             position: 'left',
             label: 'FAQ',
           },
+          // {
+          //   to: 'blog', 
+          //   label: '새로운 기능', 
+          //   position: 'left', 
+          //   className: 'iflang-link',
+          // },
+          // 다국어 조건 블로그
           {
-            to: 'blog', 
-            label: '새로운 기능', 
-            className: 'box',
-            position: 'right'
+            to: (function () {
+              const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
+              return locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog';
+            })(),
+            label: '새로운 기능',
+            position: 'left',
+            className: 'iflang-link',
           },
           {
             type: 'localeDropdown',
@@ -670,7 +680,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp' ],
+        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img:not(.ico-link)',

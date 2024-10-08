@@ -16,7 +16,7 @@
 
 アプリケーションにインストールしたエージェントを使用して、アプリケーションの情報を確認できます。
 
-#### <Cmdname sid="AA003" />
+#### <Cmdname sid="AA003" /> {#AA003}
 
 <ImgLang img='agent-dashboard-summary.png' desc='アプリケーション概要' />
 
@@ -40,9 +40,9 @@
 
   アクティブTXの状態を速度で色分けし、右上に個数を表示します。 チャートの数字は、アクティブTX全体の数です。 チャートの色の意味は次のとおりです。
 
-  - 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+  - 青色(<span class='normal'>Normal</span>)： 0秒\~3秒
 
-  - オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+  - オレンジ色(<span class='slow'>Slow</span>)：3秒\~8秒
 
   - 赤色(<span class='vslow'>Very Slow</span>)：8秒以上
 
@@ -70,9 +70,9 @@
 
 - 赤色(<span class='vslow'>Very Slow</span>)：8秒以上 
 
-- オレンジ色(<span class='slow'>Slow</span>)：3秒~8秒
+- オレンジ色(<span class='slow'>Slow</span>)：3秒\~8秒
 
-- 青色(<span class='normal'>Normal</span>)： 0秒~3秒
+- 青色(<span class='normal'>Normal</span>)： 0秒\~3秒
 
 青色が多い状況は問題ありません。 これらの一部がオレンジ色や赤色に変わっていくかを監視する必要があります。 トラブルが発生すると、進行中のトランザクション数が増加し、赤色の割合が高くなります。 一方で、レスポンスが非常に速いシステムの場合、処理されるトランザクション数(TPS)が多くても、進行中のトランザクション数は少ないことがあります。
 
@@ -124,7 +124,7 @@
 
 - <Cmdname sid="active_stat_socket" className="uitext" />：外部システムとのTCP接続試行を意味します。 <Cmdname sid="active_stat_socket" className="uitext" /> 数値が持続的に増加する場合は、外部システムとの接続ができないため障害が発生している可能性があります。
 
-#### <Cmdname sid="AA005" />
+#### <Cmdname sid="AA005" /> {#AA005}
 
 <ImgLang img='hitmap.png' desc='ヒットマップ' />
 
@@ -140,7 +140,7 @@
 
 - <Cmdname sid="err" className="uitext" />ボタンを選択すると、エラートランザクションのみ表示します。
 
-- ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択すると、5秒~80秒でチャートを拡大／縮小することができます。
+- ![上向きアイコン](/img/up-arrow.svg)または![下向きアイコン](/img/down-arrow.svg)ボタンを選択すると、5秒\~80秒でチャートを拡大／縮小することができます。
 
 :::note
 
@@ -154,7 +154,7 @@
 
 :::
 
-#### <Cmdname sid="AA016" />
+#### <Cmdname sid="AA016" /> {#AA016}
 
 <ImgLang img='apm-dashboard-active-tx-equalizer.png' desc='アクティブTXイコライザー' />
 
@@ -168,7 +168,7 @@
 
 サービス関連ウィジェットは、アプリケーションのパフォーマンスチューニングの指標として使用できます。
 
-#### <Cmdname sid="apdex" />
+#### <Cmdname sid="apdex" /> {#apdex}
 
 ![Apdex](/img/apm-dashboard-apdex.png)
 
@@ -178,11 +178,11 @@ import Javaapdexdesc from "../common-items/_java-apdex-desc.mdx";
 
 :::note
 
-満足Sの既定値は<Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />メニューで変更できます。 設定キーの値は`apdex_time`です。 エージェントバージョン2.0以降に対応しています。
+満足Sの既定値は<Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_configuration" className="uitext" />メニューで変更できます。 設定キーの値は`apdex_time`です。 エージェントバージョン2.0以降に対応しています。
 
 :::
 
-#### <Cmdname sid="tps" />
+#### <Cmdname sid="tps" /> {#tps}
 
 ![TPS](/img/apm-dashboard-tps.png)
 
@@ -194,7 +194,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 :::
 
-#### <Cmdname sid="avg_restime" />
+#### <Cmdname sid="avg_restime" /> {#avgrestime}
 
 <ImgLang img='apm-dashboard-avg-response-time.png' desc='平均応答時間'/>
 
@@ -208,7 +208,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 ### リソース関連ウィジェット
 
-#### <Cmdname sid="system_cpu" />
+#### <Cmdname sid="system_cpu" /> {#systemcpu}
 
 <ImgLang img='apm-dashboard-cpu.png' desc='システムCPU' />
 
@@ -272,7 +272,7 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 ### ユーザー関連ウィジェット
 
-#### <Cmdname sid="realtime_user" />
+#### <Cmdname sid="realtime_user" /> {#realtimeuser}
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='同時接続ユーザー' />
 
@@ -302,14 +302,14 @@ TPS、応答時間、CPU 使用率分析の詳細については[次の文書](.
 
 :::
 
-#### <Cmdname sid="today_tps" />
+#### <Cmdname sid="today_tps" /> {#todaytps}
 
 <ImgLang img='apm-dashboard-today-tps.png' desc='本日TPS' />
 
-1日のTPSを時間帯別に表示します。 昨日の同時間帯のTPS(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
+1日のTPSを時間帯別に表示します。 昨日の同時間帯のTPS(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
 
-#### <Cmdname sid="daily_visit" />
+#### <Cmdname sid="daily_visit" /> {#dailyvisit}
 
 <ImgLang img='apm-dashboard-today-users.png' desc='本日ユーザー' />
 
-一日あたりの<Cmdname sid="realtime_user" className="uitext" />の数を時間帯別に表した指標です。 昨日の同時ユーザー数(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。
+一日あたりの<Cmdname sid="realtime_user" className="uitext" />の数を時間帯別に表した指標です。 昨日の同時ユーザー数(グレー)と比較して確認できます。 ![right-arrow](/img/right-arrow.svg)ボタンをクリックすると、<Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" />メニューに移動します。

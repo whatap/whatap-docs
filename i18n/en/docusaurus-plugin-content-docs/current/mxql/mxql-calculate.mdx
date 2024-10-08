@@ -199,8 +199,8 @@ The data is grouped.
 | pk or primaryKey | Set the `primaryKey` of the group.                                                                                                                                                                     |
 | last             | Set to save the last one of the entered values of the column. Use it when the same value is repeatedly entered such as `oname`. The internally set value is continuously overwritten on the key value. |
 | listup           | Set to save all data of the set column in memory. Internally, values are continuously added to the list that has the set value as a key.                                                               |
-| user             | Option to count the real-time users. Only the columns that store Blob type data can be set (e.g. `app_user` category's `logbits`).                                                  |
-| merge            | Set to save all data of the set column in MetricValue (composite value). Internally, values are continuously added to the MetricValue that has the set value as the key.            |
+| user             | Option to count the real-time users. Only the columns that store Blob type data can be set (e.g. `app_user` category's `logbits`).                                                                     |
+| merge            | Set to save all data of the set column in MetricValue (composite value). Internally, values are continuously added to the MetricValue that has the set value as the key.                               |
 | rows             | Set the maximum number of data that can be stored in a group. The default value is `1000`.                                                                                                             |
 
 - For the set field, it sets it with `merge` to MetricValue and then performs the sum operation.
@@ -314,7 +314,7 @@ The data is aligned.
 | Option | Function                                                                   |
 | ------ | -------------------------------------------------------------------------- |
 | key    | Select a field for sorting.                                                |
-| sort   | Set the sorting direction. (asc or desc)                |
+| sort   | Set the sorting direction. (asc or desc)                                   |
 | rows   | Set the maximum number of data with the same time to keep. Default `10000` |
 
 - In case of setting `key`, `sort`, and `rows`
@@ -493,8 +493,8 @@ If `{backward : true}` is used in the data loading step, the result of this comm
 
 Used to skip data in a specific time.
 
-| Option          | Function                                                                                                                                              |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Option          | Function                                                                                                                           |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | time            | Set to `yyyy/MM/dd HH:mm:ss`. Set the set time reference: `duration:1000`. (excluding the data for 1,000 ms based on the set time) |
 | date            | Set to `yyyy/MM/dd`. Set the set time reference: `duration:d1`. (excluding the data for a day based on the set time)               |
 | duration or dur | Set the filtering range. (`d1`: 1 day, `h1`: 1 hour, `m1`, `m5`, `m10`: 1 minute, 5 minutes, 10 minutes, `number`: millisec)       |
@@ -582,12 +582,12 @@ It is used to change the value of a numeric field. (`time` value cannot be chang
 
 Only the data with specific conditions is passed to the next step.
 
-| Option name | Option function                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------- |
-| expr        | Enter the condition as a formula.                                                                 |
-| value       | Searches data with a specific value.                                                              |
-| exist       | Searches data with the value.                                                                     |
-| notexist    | Searches data without the value.                                                                  |
+| Option name | Option function                                                                |
+| ----------- | ------------------------------------------------------------------------------ |
+| expr        | Enter the condition as a formula.                                              |
+| value       | Searches data with a specific value.                                           |
+| exist       | Searches data with the value.                                                  |
+| notexist    | Searches data without the value.                                               |
 | over        | Searches data equal to or greater than a specific value. (greater or equal to) |
 | under       | Searches data less than or equal to a specific value (less or equal to).       |
 

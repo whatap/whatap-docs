@@ -5,7 +5,7 @@ description: 特定の複雑なイベントを設定するには、メトリク�
 keywords:
   - PostgreSQL
   - アラート通知
-  - メトリクスイベント
+  - メトリックスイベント
   - データベースモニタリング
 ---
 
@@ -41,7 +41,7 @@ import Metricseventconditionselecttargetguide from "../common-items/_metrics-eve
 
 - <p><Cmdname sid="cpu_usage" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  条件：`cpu(xos2)` > 70
+  条件：`cpu(xos)` > 70
 
   個々のインスタンスでCPU使用率が70%を超えると、<span class='slow'>Warning</span>(アラート) レベルの通知が送信されます。
 
@@ -77,13 +77,13 @@ import Metricseventconditionselecttargetguide from "../common-items/_metrics-eve
 
 - <p><Cmdname sid="TTL07137" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  条件：`blks_hit_ratio` \<= 80
+  条件：`blks_hit_ratio` \<\= 80
 
   個々のインスタンスでMemory Block Hit率が80%以下の場合、<span class='slow'>Warning</span>(アラート) レベルの通知が送信されます。
 
 - <p><Cmdname sid="TTL07138" className="uitext" /><span class="uitext">_Warning</span></p>
 
-  条件：`replication_delay` >= 10
+  条件：`replication_delay` \>\= 10
 
   個々のインスタンスでreplicationデータベースに反映される遅延時間が10秒以上ある場合、<span class='slow'>Warning</span>(アラート) レベルの通知が送信されます。
 

@@ -1,3 +1,16 @@
 ### whatap.conf設定
 
 圧縮を解除したフォルダに移動し、*whatap.conf*ファイルを確認します。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
+
+<InDoc product="altibase">
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+dbms=altibase
+db=altibase
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
+```
+
+</InDoc>

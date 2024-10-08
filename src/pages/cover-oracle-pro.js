@@ -28,7 +28,7 @@ export default function Cover() {
           Oracle Pro Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2024.09.02
+            release date. 2024.09.30
         </p>
         <img className={styles.background} src={bgPath} />
       </div>

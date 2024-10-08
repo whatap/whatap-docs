@@ -1,4 +1,4 @@
-Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_tableSpace" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />
 
 This menu allows you to monitor and manage the usage status of the database tablespace. This menu provides a visual overview of the total size and usage of the tablespace, and allows you to check the detailed usage history.
 
@@ -6,9 +6,15 @@ This menu allows you to monitor and manage the usage status of the database tabl
 
 - It provides the details on the total size, used amount, and used percentage for each tablespace.
 
+<Xclude product="altibase">
+
 - You can check the sizes of the top 50 segments.
 
+</Xclude>
+
 By monitoring the usage of tablespaces in real time, you can check the used amount and manage its appropriate capacity. Trace the tablespaces and segments with high usage and then take measures for capacity management and performance optimization. You can also detect and respond to excessive tablespace usage in advance.
+
+<Xclude product="altibase">
 
 ## Before use
 
@@ -33,9 +39,39 @@ segments_min_size=10
 segments_hour=5
 ```
 
+</Xclude>
+
 ## Basic screen guide
 
-<ProdImg img='db-stat-table-space.png' desc='Tablespace size' />
+<Xclude product="altibase"><ProdImg img='db-stat-table-space.png' desc='Tablespace size' /></Xclude>
+
+<InDoc product="altibase">
+
+Unlike other DBMS, Altibase Monitoring provides memory tablespaces. In <Cmdname sid="side_tableSpace" className="uitext" />, you can see the usage and trends of disk and memory tablespaces.
+
+:::tip
+
+- Memory tablespaces provide data access speeds that are significantly faster than disk. By monitoring the usage of memory tablespaces, you can check whether data is being loaded properly into memory and memory resources are being used efficiently.
+
+- Monitoring the usage for both disk and memory tablespaces allows you to understand how each resource is being used. This allows you to balance memory and disk resources and, if necessary, make appropriate adjustments to prevent performance degradation.
+
+- By analyzing usage trends, you can predict when it will be required to increase memory or disk tablespaces. This helps you prevent performance issues caused by resource exhaustion in advance and establish an appropriate expansion plan.
+
+- By comparing the usage between memory tablespaces and disk tablespaces, you can optimize load balancing to prevent specific workloads from being overly concentrated on either disk or memory.
+
+:::
+
+- Disk tablespace
+
+  <ImgLang img='db-stat-table-space-disk-altibase.png' desc='Tablespace size' />
+
+- Memory tablespace
+
+  <ImgLang img='db-stat-table-space-mem-altibase.png' desc='Tablespace size' />
+
+The basic usage is as follows:
+
+</InDoc>
 
 1. In <Cmdname sid="time" className="uitext" />, set the period to be analyzed.
 
@@ -55,13 +91,17 @@ segments_hour=5
 
 In the <Cmdname sid="table_space" className="uitext" /> section, you can visually see the overall size and usage of the tablespaces over time.
 
-<ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" />
+<InDoc product="oracle,oracle-pro,cubrid"><ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" /></InDoc>
+
+<InDoc product="altibase"><ImgLang img="db-stat-table-space-check-trend-altibase.png" desc="Tablespace size" /></InDoc>
 
 Each color represents an individual tablespace. To see data for a specific period on the chart, hover your mouse over the chart and move it. A pop-up appears with detailed information for the period.
 
 ## Tablespace size details {#table_space_detail}
 
 The <Cmdname sid="table_space_detail" className="uitext" /> section provides information details for each tablespace.
+
+<InDoc product="oracle,oracle-pro,cubrid">
 
 <ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" />
 
@@ -74,6 +114,48 @@ You can check the changes in usage for each tablespace by comparing the time of 
 - <Cmdname sid="table_space_usage" className="uitext" />: It is the usage ratio compared to the total size.
 
 - <Cmdname sid="table_space_changed_amount" className="uitext" />: It is the change in usage at the current time compared to the first viewed time.
+
+</InDoc>
+
+<InDoc product="altibase">
+
+<ImgLang img="db-stat-table-space-size-details-altibase.png" desc="Tablespace size" />
+
+You can check the usage change of each tablespace by comparing the initial query time with the current time. To view the details of a tablespace, select the ![Arrow icon](/img/ic-caret-right.svg) button next to the tablespace name. The tablespace and data file size provided by Altibase includes various values ​​such as `MAX`, `ALLOC`, `CURR`, and `USED`. The values ​​displayed on the screen are composed based on these items.
+
+### ![](/img/number-01.png) TABLESPACE TYPE
+
+You can check the size of tablespaces by `V$TABLESPACES.TYPE` such as DISK, MEMORY, TEMP, and UNDO.
+
+- <UI>TOTAL</UI>: Sum of the `TOTAL` sizes of the tablespaces.
+
+- <UI>USED</UI>: Sum of the `USED` sizes of the tablespaces.
+
+- <UI>USAGE</UI>: Usage percentage calculated as (`USED` / `TOTAL`) 🞨 100.
+
+### ![](/img/number-02.png) TABLESPACE
+
+A tablespace consists of multiple data files.
+
+- <UI>TOTAL</UI>: Sum of the `TOTAL` sizes of the data files (`V$DATAFILES.CURRSIZE` 🞨 `PAGESIZE`).
+
+- <UI>USED</UI>: Used size calculated based on `X$SEGMENT.TOTAL_USED_SIZE`.
+
+- <UI>USAGE</UI>: Usage percentage calculated as (`USED` / `TOTAL`) 🞨 100.
+
+### ![](/img/number-03.png) DATAFILE
+
+<UI>TOTAL</UI>: Sum of the `TOTAL` sizes of the data files (`V$DATAFILES.CURRSIZE` 🞨 `PAGESIZE`).
+
+:::note
+
+Altibase does not provide `USED` and `USAGE` at the data file level.
+
+:::
+
+</InDoc>
+
+<Xclude product="altibase">
 
 ## Checking the segment size {#TTL08164}
 
@@ -94,3 +176,5 @@ The <Cmdname sid="TTL08164" className="uitext" /> section provides the detailed 
 - <Cmdname sid="TTL08177" className="uitext" />: It is the partition name of the segment, if applicable.
 
 - <Cmdname sid="table_space_size" className="uitext" />: It is the segment size.
+
+</Xclude>

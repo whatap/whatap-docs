@@ -6,17 +6,18 @@ const path = require('path');
 
 const urls = {
     ko: [
-        'https://docs.whatap.io/release-notes/service/service-2_8_x',
+    // 'https://whatap.github.io/whatap-docs/release-notes/service/service-2_9_x',
+    //     'https://docs.whatap.io/release-notes/service/service-2_8_x',
     //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
     ],
-    // en: [
-        // 'https://docs.whatap.io/en/release-notes/service/service-1_110_x',
-        // 'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
-    // ],
-    // ja: [
-    //     'https://docs.whatap.io/ja/release-notes/service/service-2_6_x',
-    //     'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
-    // ]
+    en: [
+        'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
+        'https://docs.whatap.io/en/release-notes/service/service-2_8_x',
+    ],
+    ja: [
+        'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
+        'https://docs.whatap.io/ja/release-notes/service/service-2_8_x',
+    ]
 };
 
 async function extractFeaturesAndUpdateMDXDocuments() {

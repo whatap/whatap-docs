@@ -1,6 +1,24 @@
 一覧で照会を希望する<InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">アプリケーション</InDoc><InDoc pages="deployment-list">Deployment</InDoc>の![虫眼鏡アイコン](/img/ic-search.svg) **_詳細を見る_**アイコンを選択する時に、該当<InDoc pages="resource-pod-list">Pod</InDoc><InDoc pages="resource-application-list">アプリケーション</InDoc><InDoc pages="deployment-list">Deployment</InDoc>に関する詳細情報を確認することができます。
 
-<Xclude pages="resource-application-list">
+<InDoc pages="resource-pod-list">
+
+<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
+
+</InDoc>
+
+<InDoc pages="resource-application-list">
+
+<ImgLang img='k8s-app-list-detail.png' desc='Podリスト詳細' />
+
+</InDoc>
+
+<InDoc pages="deployment-list">
+
+<ImgLang img='k8s-deployment-list-detail.png' desc='Deployment リスト詳細' />
+
+</InDoc>
+
+<Xclude pages="resource-application-list,resource-pod-list">
 
 :::note 
 
@@ -20,27 +38,19 @@
 
 </InDoc>
 
+<InDoc pages="resource-pod-list">
+
+:::note 
+
+詳細画面の[トレース](container-map-trace)、[メトリクス](container-map-metrics)、[ログ](container-map-log)、[イベント](container-map-event)、[Pod要約分析](container-map-target-info#pod-summary-analysis) タブの場合、コンテナ マップの詳細ビューと同じです。
+
+:::
+
+</InDoc>
+
 ### リソース
 
 対象を選択した後、詳細表示の<Cmdname sid="resource" className="uitext" />タブで選択したリソースに関連するリソースの一覧と関係図を照会できます。 
-
-<InDoc pages="resource-pod-list">
-
-<ImgLang img='k8s-pod-list-detail.png' desc='Pod 목록 상세 ' />
-
-</InDoc>
-
-<InDoc pages="resource-application-list">
-
-<ImgLang img='k8s-app-list-detail.png' desc='Podリスト詳細' />
-
-</InDoc>
-
-<InDoc pages="deployment-list">
-
-<ImgLang img='k8s-deployment-list-detail.png' desc='Deployment リスト詳細' />
-
-</InDoc>
 
 #### 要約情報
 
@@ -57,3 +67,19 @@
 #### リソース関係図
 
 リソース間の接続関係と状態を視覚的に確認できます。 一覧と同様に、Pod、コンテナ、アプリケーションにマウスオーバーすると、詳細指標を確認することができます。 リソースを選択すると、そのリソース一覧ページに移動します。
+
+<InDoc pages="resource-pod-list">
+
+### Pod要約分析 {#pod-summary-analysis}
+
+import PodSummary from "../common-items/_import_k8s-pod-summary-analysis.mdx";
+
+<PodSummary />
+
+:::note 
+
+現在、要約分析機能は韓国語のみで提供しています。 
+
+:::
+
+</InDoc>

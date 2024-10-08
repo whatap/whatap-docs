@@ -1,7 +1,7 @@
 ---
 id: analysis-pq-tree
 title: 並列クエリツリー
-description: description
+description: 1日の間にParallel Queryが発生した傾向を分析できる機能を提供します。
 keywords:
   - Oracle
   - データベース
@@ -12,7 +12,7 @@ import V2Note from "../common-items/_import_v2-note.mdx";
 
 <V2Note product="Oracle" />
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbPqTree" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbPqTree" className="uitext" />
 
 <Cmdname sid="side_dbPqTree" className="uitext" />(Parallel Query Tree)は、1日の間にParallel Queryが発生した傾向を分析できる機能を提供します。 実際のタスクを実行するSlave Processと、それらにタスクを割り当てたCoordinator Processとを区別して表示し、全体の実行情報をわかりやすく表示します。 特定の時点で実行したParallel Query情報を提供し、どのような目的で使用されているかを確認するのに役立ちます。
 
@@ -27,4 +27,4 @@ import V2Note from "../common-items/_import_v2-note.mdx";
 {/* 컬럼 정보 안내 */}
 import Oraclecolumn from "../common-items/_db_oracle-column.mdx";
 
-<Oraclecolumn />
+<Oraclecolumn level={2} />

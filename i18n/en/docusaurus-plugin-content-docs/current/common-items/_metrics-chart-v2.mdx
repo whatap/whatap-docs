@@ -1,0 +1,423 @@
+Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">New</code>
+
+The <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">New</code> menu is a core feature of the WhaTap monitoring solution, which provides the data collected from various monitoring targets in a visualized time-series chart. This allows users to effectively monitor the system performance, quickly identify anomalies, and gain insights for resolving issues.
+
+<InDoc product="java,php,python,nodejs,golang,dotnet"><ImgLang img="metrics-chart-new-main-apm.png" desc="Metrics Chart" /></InDoc>
+
+<InDoc product="kubernetes"><ImgLang img="metrics-chart-new-main-k8s.png" desc="Metrics Chart" /></InDoc>
+
+<InDoc product="postgresql,oracle,oracle-pro,mysql,redis,mongodb,altibase"><ImgLang img="metrics-chart-new-main-db.png" desc="Metrics Chart" /></InDoc>
+
+- You can visually check various metrics via time series charts, and analyze multiple metrics upon failure at a time.
+
+- You can select a specific time range to view past data and analyze the performance at that period.
+
+- You can filter data based on specific time zones or conditions for more accurate analysis.
+
+- Users can place their desired charts on the screen and freely adjust the layout.
+
+- Users can arrange desired metrics and save them as presets for loading at any time.
+
+:::note
+
+**Difference from the <Cmdname sid="side_counter" className="uitext" /> menu**
+
+The following are the changes since the [Service 2.8.0](../release-notes/service/service-2_8_x) update. To check the changes on the screen after the update, select <Cmdname sid="BTN07397" className="uitext" /> on the upper right.
+
+- User experience (UX) has been improved so that users can set the time, target, and interval options, and then specify the metrics to monitor and add charts.
+
+- You can change the time range of a chart view without deleting the widgets placed on the dashboard.
+
+- It provides a batch <Cmdname sid="BTN08226" className="uitext" /> feature that allows you to apply options to all widgets placed on the dashboard at once.
+
+- The preset feature allows you to save and load the widgets placed on the dashboard.
+
+- You can adjust the layout of the dashboard and the functionality of the widgets through various options provided.
+
+:::
+
+## Adding a chart widget
+
+To add a metric as a widget to the dashboard, select <Cmdname sid="add_chart" className="uitext" /> on the upper left.
+
+### Setting the lookup time
+
+In <Cmdname sid="time" className="uitext" />, set the date and time to view the metric.
+
+<ImgLang img="metrics-chart-new-set-time.png" desc="Time setting" />
+
+- Select the green button on the utmost right, you can select from various time ranges. 
+
+  <ImgLang img="metrics-chart-new-set-time-select-options.png" className="width-600" desc="Time setting" />
+
+- By selecting ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can shift the time. The shifting interval is the time interval set on the right.
+
+- Click the Date & Time area to manually select the desired date and time.
+
+  <ImgLang img="metrics-chart-new-set-custom-time.png" desc="Time setting" />
+
+### Selecting a target
+
+Select a desired target from the agents in the project. You can select an individual agent or a group classified by the agent configuration.
+
+<Columns>
+
+<Column className="text--left width--40">
+
+<ImgLang img="metrics-chart-new-select-agent.png" desc="Select target" />
+
+</Column>
+
+<Column className="text--left">
+
+- <Cmdname sid="ITM06005" className="uitext" />: You can select an individual agent or all agents.
+
+- <Cmdname sid="ITM06006" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.okind</code> in the agent configuration.
+
+- <Cmdname sid="ITM06007" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.onode</code> in the agent configuration.
+
+:::note
+
+- Depending on the set time and date, available targets may change.
+
+- You can select or deselect targets by clicking in the agent list. You can also select multiple agents at once by using the `Shift` key.
+
+- By clicking <Cmdname sid="select_all" className="uitext" /> or <Cmdname sid="deselect_all" className="uitext" />, you can select or deselect related sub-targets at once.
+
+- If a desired agent does not appear in the list, select <Cmdname sid="refresh" className="uitext" />.
+
+- By selecting <Cmdname sid="BTN06285" className="uitext" /> or <Cmdname sid="BTN06286" className="uitext" />, you can hide or expand the list by group.
+
+:::
+
+</Column>
+
+</Columns>
+
+### Selecting a metric
+
+Select a target agent to monitor. Then the list that can be selected on the <Cmdname sid="metric" className="uitext" /> panel appears. Select a desired metric in the list.
+
+<InDoc product="java,php,python,nodejs,golang,dotnet"><ImgLang img="metrics-chart-new-select-metrics.png" desc="Select metrics" /></InDoc>
+
+<InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-select-metrics.png" desc="Select metrics" /></InDoc>
+
+<InDoc product="postgresql,oracle,oracle-pro,mysql,redis,mongodb,altibase"><ImgLang img="metrics-chart-new-db-select-metrics.png" desc="Select metrics" /></InDoc>
+
+A chart widget for the selected metric is placed on the dashboard on the right. You can add chart widgets by selecting additional metrics. To enlarge the chart area, select ![Close icon](/img/ico-close.svg) on the right of the <Cmdname sid="time" className="uitext" /> option. The <Cmdname sid="target" className="uitext" /> and <Cmdname sid="metric" className="uitext" /> panels disappear, leaving only the chart area visible on the screen.
+
+:::note
+
+- If you enter a string in the <Cmdname sid="CNT08118" className="uitext" /> field, you can quickly search for a desired metric.
+
+- By selecting <Cmdname sid="BTN06285" className="uitext" /> or <Cmdname sid="BTN06286" className="uitext" />, you can hide or expand the metrics list by category.
+
+- If a desired metric does not appear in the list, select <Cmdname sid="refresh" className="uitext" />.
+
+:::
+
+### Setting the interval {#setinterval}
+
+<Columns>
+
+<Column className="text--left width--40">
+
+<InDoc product="java,php,python,nodejs,golang,dotnet"><ImgLang img="metrics-chart-new-select-interval.png" desc="interval" /></InDoc>
+
+<InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-select-interval.png" desc="interval" /></InDoc>
+
+<InDoc product="postgresql,oracle,oracle-pro,mysql,redis,mongodb,altibase"><ImgLang img="metrics-chart-new-db-select-interval.png" desc="interval" /></InDoc>
+
+</Column>
+
+<Column className="text--left">
+
+You can set intervals for each chart, allowing you to adjust the aggregation unit of data to visualize at different time intervals. If you select ![Time icon](/img/ico-time-set.svg) on the upper right of the <Cmdname sid="metric" className="uitext" /> panel, you can select an interval option.
+
+Each metric has a different default interval time, and the interval time changes depending on the query time range.
+
+</Column>
+
+</Columns>
+
+For example, the <Cmdname sid="m5" className="uitext" /> interval displays average values for 5-minute intervals, and the <Cmdname sid="1_hour" className="uitext" /> interval displays average values for every one hour.
+
+<ImgLang img="metrics-chart-new-interval.png" desc="Interval" />
+
+:::tip
+
+By adjusting the interval option, you can analyze the data from different perspectives, from detailed data over a short time to overall trend over a long time.
+
+:::
+
+## Changing the query time
+
+To change the chart query time range for an individual widget, select ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg) at the top of the widget. The time change range is the same as the time reference set in the <Cmdname sid="time" className="uitext" /> option. For example, if the <Cmdname sid="time" className="uitext" /> option is set to <Cmdname sid="1_day" className="uitext" /> and you select ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can change the time to a daily interval.
+
+<ImgLang img="metrics-chart-new-change-time.png" desc="Chart widget" />
+
+Alternatively, by dragging a specific area of the chart, you can change the time according to the dragged range for a view.
+
+<ImgLang img="metrics-chart-new-chart-drag-time.png" desc="Change time" />
+
+:::tip
+
+- You can change the time for all widgets by changing for each widget with the <Cmdname sid="CNT08055" className="uitext" /> option enabled at the top of the screen.
+
+  <ImgLang img="metrics-chart-new-chart-reset-time.png" desc="Time batch reset" />
+
+- To change the query time range and then change it back to a recent time, select <LinkImage img="ic-recent-time-active.svg" className="ico active" />. 
+
+  If the <Cmdname sid="CNT08055" className="uitext" /> option is enabled at the top of the screen, the ![Recent time icon](/img/ic-recent-time-active.svg) <Cmdname sid="BTN08155" className="uitext" /> button appears. By selecting this button, you can reset the time for all widgets.
+
+:::
+
+:::note
+
+By using the <Cmdname sid="BTN08226" className="uitext" /> feature, you can change the time for all widgets and change the monitoring target and interval. For more information, see [the following](#batchchanges).
+
+:::
+
+## Chart details {#chart-details}
+
+See details for each item displayed in the chart widget.
+
+<ImgLang img="metrics-chart-new-chart-details.png" desc="Chart widget" />
+
+- ![Number 01](/img/number-01.png) **Metric name and category**: It displays the metric name of the chart widget. On the right of the metric, the categories of the query targets are displayed in tag format. The category name may differ depending on the product. 
+
+  - `*oid`: It is displayed when an individual agent is selected.
+
+  - `project`: It is displayed when the target is selected on a project basis.
+
+  - `okind`: It is displayed when a group classified as <code>whatap.okind</code> is selected in the agent configuration.
+
+  - `onode`: It is displayed when a group classified as <code>whatap.onode</code> is selected in the agent configuration.
+
+- ![Number 02](/img/number-02.png) **Widget option**: Option menu of the chart widget. For more information, see [the following](#chart-options). For more information about the interval options, see [the following](#setinterval).
+
+- ![Number 03](/img/number-03.png) **Time**: It displays the time range for which data in the chart is viewed. By selecting ![Left arrow icon](/img/left-arrow.svg) or ![Right arrow icon](/img/right-arrow.svg), you can adjust the time range for a query. 
+
+- ![Number 04](/img/number-04.png) **Data**: You can check the maximum value (***Max***) of the data viewed from the monitoring targets and the data merge method (***Value Type***).
+
+- ![Number 05](/img/number-05.png) **Chart**: It displays the viewed data in a time series graph. If you hover your mouse pointer over the graph, you can see detailed information through a tooltip. By dragging a specific area of the chart, you can change the time according to the dragged range for a view.
+
+- ![Number 06](/img/number-06.png) **Legend**: It displays the monitoring targets as a legend.
+
+- ![Number 07](/img/number-07.png) **Resize**: You can adjust the size by dragging the center of the bottom of the chart widget.
+
+## Using the chart widget options {#chart-options}
+
+Various features can be used through the option buttons on the upper right of the chart widget.
+
+### ![](/img/ico-filter.svg) Filtering targets
+
+You can add or remove monitoring targets to/from the chart widget added to the screen.
+
+1. If you select ![Filter icon](/img/ico-filter.svg), a pop-up menu appears for you to select monitoring targets.
+
+   <ImgLang img="metrics-chart-new-chart-options-filter.png" desc="Filter" />
+
+2. Select the desired targets according to the instructions on the screen.
+
+3. Select <Cmdname sid="apply" className="uitext" />.
+
+### ![](/img/ico-detail.svg) Viewing the details
+
+To check the detailed information about the chart data in a wider screen, select ![Detail icon](/img/ico-detail.svg). The <Cmdname sid="TTL08298" className="uitext" /> window appears. You can view charts, averages, and maximum values for individual targets.
+
+<ImgLang img="metrics-chart-new-chart-options-details.png" desc="View details" />
+
+- <UI>1</UI><Cmdname sid="time_action_day" className="uitext" /><Cmdname sid="time_action_before" className="uitext" />: You can compare the data with that from the previous day.
+
+- <UI>1</UI><Cmdname sid="time_action_week" className="uitext" /><Cmdname sid="time_action_before" className="uitext" />: You can compare the data with that of the previous week.
+
+- ![Download icon](/img/ico-download.svg) <UI>CSV</UI>: The viewed data can be downloaded as a CSV file.
+
+- You can resize the chart by dragging the icon at the bottom of the graph.
+
+  <ImgLang img="metrics-chart-new-chart-options-details-drag.png" desc="View details" />
+
+### ![](/img/ico-trash.svg) Removing the chart widget
+
+To remove any chart widgets placed on the screen, select ![Delete icon](/img/ico-trash.svg).
+
+### Using additional options
+
+If you select ![More icon](/img/ico-more.svg) on the upper right of the chart widget, you can select the following additional options.
+
+- <Cmdname sid="sms_summary_download_csv" className="uitext" />: You can download the data searched from the chart as a CSV file.
+
+- <Cmdname sid="BTN07750" className="uitext" />: You can download the chart as an image file.
+
+- <Cmdname sid="setting" className="uitext" />
+
+  - <Cmdname sid="CNT08116" className="uitext" />: The size of the Y-axis can be automatically adjusted within the searched range.
+
+  - <Cmdname sid="CNT08117" className="uitext" />: You can display the maximum value in the graph area of ​​the chart.
+
+## Setting presets {#setpreset}
+
+You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
+
+:::note
+
+You can save or modify the presets with the <Cmdname sid="edit_project" className="uitext" /> role. For more information about the member roles, see [the following](../project/project-structure#member-auth).
+
+:::
+
+### Creating a new preset
+
+1. Place the widgets in the desired format on the dashboard. You can also resize and place only the widgets to be frequently checked.
+
+2. On the upper right of the screen, select ![Save icon](/img/ic-save.svg).
+
+3. Enter a new preset name.
+
+   <ImgLang img="metrics-chart-new-preset-save.png" desc="Preset" />
+
+4. Select <Cmdname sid="save" className="uitext" />.
+
+You can see the newly saved preset from the preset list.
+
+:::note
+
+- If any changes are made to the newly created preset, save the preset again. Select ![Save icon](/img/ic-save.svg) and then save the preset with the same name. Any changes are overwritten in the existing preset.
+
+- If you go to another menu without saving changes on the dashboard, the changes are not saved.
+
+- Presets are saved on a project basis and can be shared with other users.
+
+- The targets saved in the preset are the layout of the dashboard, the widgets placed on the dashboard, and the options (<Cmdname sid="target" className="uitext" />, <Cmdname sid="interval" className="uitext" />) modified in the widgets. The <Cmdname sid="time" className="uitext" /> option at the top of the screen is not saved.
+
+- To change the widget query time after loading a preset, use the <Cmdname sid="BTN08226" className="uitext" /> feature. For more information, see [the following](#batchchanges).
+
+:::
+
+### Deleting presets {#removepreset}
+
+If you have unused presets, you can delete them from the preset list. Select ![Delete icon](/img/ico-remove-white.svg) on the right of the item to delete from the preset list.
+
+## Editing a dashboard widget
+
+The widgets placed on the dashboard can be placed and resized to the user's desired location.
+
+### Moving a widget
+
+<ImgLang img="metrics-chart-new-move-widget.png" desc="Move a widget" />
+
+When you move the top part of the widget by using the mouse pointer, it changes to the ![Move icon](/img/ic-move-pointer.svg) shape. At this time, you can move the widget by dragging with your mouse to the desired position.
+
+### Resizing a widget
+
+If <Cmdname sid="layout" className="uitext" /> among the dashboard options is set to <Cmdname sid="ITM08273" className="uitext" />, you can resize the widget.
+
+<ImgLang img="metrics-chart-new-size-widget.png" desc="Move a widget" />
+
+Click and hold the mouse on the ![Resize icon](/img/ic-widget-size.svg) element at the lower right of the widget, and then drag it to the desired size.
+
+:::note
+
+If <Cmdname sid="layout" className="uitext" /> is not set to <Cmdname sid="ITM08273" className="uitext" />, you can adjust only the height of the widget. Resize the widget with the bottom center of the widget clicked with your mouse.
+
+:::
+
+## Using the dashboard options
+
+You can apply various settings to the chart widget at once using the Option menu located at the top of the screen. You can also customize the dashboard layout to your desired format.
+
+<ImgLang img="metrics-chart-new-chart-dashboard-options.png" desc="Dashboard options" />
+
+### Batch update of the chart widget options {#batchchanges}
+
+It provides the feature to apply detailed options to the chart widgets on the screen at once. On the upper left of the screen, select <Cmdname sid="BTN08226" className="uitext" />. If the <Cmdname sid="BTN08226" className="uitext" /> window appears, set the desired options and then select <Cmdname sid="apply" className="uitext" />.
+
+<InDoc product="java,php,python,nodejs,golang,dotnet"><ImgLang img="metrics-chart-new-chart-batch-change.png" desc="Batch Change" /></InDoc>
+
+<InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-chart-batch-change.png" desc="Batch Change" /></InDoc>
+
+<InDoc product="postgresql,oracle,oracle-pro,mysql,redis,mongodb,altibase"><ImgLang img="metrics-chart-new-db-chart-batch-change.png" desc="Batch Change" /></InDoc>
+
+- <Cmdname sid="time" className="uitext" />: You can set the data query range for the chart.
+
+- <Cmdname sid="target" className="uitext" />: Select a monitoring target. You can select an individual agent or a group classified by the agent configuration.
+
+  - <Cmdname sid="ITM06005" className="uitext" />: You can select an individual agent or all agents.
+
+  - <Cmdname sid="ITM06006" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.okind</code> in the agent configuration.
+
+  - <Cmdname sid="ITM06007" className="uitext" />: Agents can be monitored in each group classified by <code>whatap.onode</code> in the agent configuration.
+
+- <Cmdname sid="interval" className="uitext" />: You can adjust the data aggregation unit to various time intervals.
+
+- <Cmdname sid="DSC08227" className="uitext" />: Select a chart widget to apply the options to change. You can apply changed options to the selected widget at once.
+
+### Auto-aligning the dashboard
+
+To auto-align the widgets placed on the dashboard, select <Cmdname sid="CNT08051" className="uitext" />. It auto-aligns widgets in order of their width and height, from smallest to largest. If the widths are the same, it aligns them in order of height, from smallest to largest.
+
+{/* 어떤 기준으로 자동 정렬되는지 ??? */}
+
+### Comparing multiple charts {#chartoverlay}
+
+This feature allows you to view data from multiple charts placed on the dashboard in a single chart. This feature allows you to compare multiple metrics from the same time period with others. Select <Cmdname sid="chart_overlay" className="uitext" />. You can place overlay charts on the screen.
+
+<ImgLang img="metrics-chart-new-chart-overlay.png" desc="Chart overlay" />
+
+- If you select <Cmdname sid="count" className="uitext" /> on the upper left of the overlay chart, a list appears where you can change the data criteria for the x-axis chart. You can compare the data of the chart by selecting a desired item.
+
+- ![Camera icon](/img/ic-camera.svg): You can download the chart as an image file based on the current view.
+
+- ![CSV icon](/img/ic-csv-download.svg): You can download the chart as a CSV file based on the current view.
+
+- In the right section, you can see a list of agents for each metric. The colors of individual agents match the graph colors on the chart.
+
+  {/* y축 값 조정하는 옵션에 대해 문의 */}
+
+### Batch deletion of placed widgets
+
+You can delete multiple widgets placed on the dashboard all at once. Select <Cmdname sid="BTN06884" className="uitext" />. When the confirmation message appears, select <Cmdname sid="delete" className="uitext" />.
+
+### Downloading as a CSV file
+
+You can download data from the widgets placed on the dashboard as a CSV file. Select <Cmdname sid="download" className="uitext" /> &gt; <Cmdname sid="sms_summary_download_csv" className="uitext" />. You can check the data of metrics for each time zone.
+
+### Downloading as an image file
+
+You can download all the widgets placed on the dashboard as a single image file. Select <Cmdname sid="download" className="uitext" /> &gt; <Cmdname sid="BTN07750" className="uitext" />. You can save a captured image of the dashboard screen as is.
+
+### Using the previous version
+
+To use the <Cmdname sid="side_counter" className="uitext" /> menu of the previous version, select <Cmdname sid="goto_previous_version" className="uitext" />. Alternatively, you can see in the ![Sitemap icon](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_counter" className="uitext" /> <code className="oldfunc">Old</code> path.
+
+:::note
+
+For more information about <Cmdname sid="side_counter" className="uitext" /> <code className="oldfunc">Old</code>, see [the following](metrics-chart).
+
+:::
+
+### Using other options
+
+Other options below allow you to adjust the layout of the dashboard or easily and conveniently batch set the applied options to the widgets.
+
+<ImgLang img="metrics-chart-new-chart-dashboard-layout-options.png" desc="Dashboard options" />
+
+- <Cmdname sid="layout" className="uitext" />: You can set the number of columns in the dashboard (or the number of widgets that can be placed in a row). You can set up to 4 columns. If <Cmdname sid="ITM08273" className="uitext" /> is selected, widgets can be placed regardless of the number of columns.
+
+  :::note
+
+  In <Cmdname sid="ITM08273" className="uitext" />, you can freely adjust the width and height of the widget. If you select another option, you can only adjust the height of the widget.
+
+  :::
+
+- <Cmdname sid="CNT08053" className="uitext" />: Turning the option on or off can show or hide the legend at the bottom of the widget's chart.
+
+- <Cmdname sid="CNT08054" className="uitext" />: When you hover your mouse pointer over the chart, you can see the value for the point on the graph through a tooltip. Turn on the option to view data for all targets in the time zone where the mouse pointer is located through the tooltip.
+
+- <Cmdname sid="CNT08056" className="uitext" />: Enabling this option forces all widgets to have the same height.
+
+- <Cmdname sid="CNT08055" className="uitext" />: When changing the data query time of an individual chart widget, turn on this option to also change the chart times for other widgets.
+
+## Using the tutorial
+
+When you select <Cmdname sid="BTN07397" className="uitext" /> on the upper right of the screen, you can check the changes after the [Service 2.8.0](../release-notes/service/service-2_8_x) update.

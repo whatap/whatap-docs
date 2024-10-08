@@ -54,37 +54,37 @@ In **_Analysis_** > **_Metrics Chart_**, you can select the category, `go_runtim
 
 #### Collected metrics
 
-| Metric name    | Description                                                                                   |
-| -------------- | --------------------------------------------------------------------------------------------- |
-| NumCpu         | Number of logical CPUs that can be used in the current process                                |
-| NumCgoCall     | Number of CGO calls in the current process                                                    |
-| NumGoroutine   | Number of the current go routines                                                             |
-| Alloc          | Bytes of the allocated heap object                                                            |
-| TotalAlloc     | Cumulative bytes that has been allocated to the heap object                                   |
-| Sys            | Total bytes of the memory obtained from OS                                                    |
-| Lookups        | -                                                                                             |
-| Mallocs        | Cumulative number of the allocated heap objects                                               |
-| Frees          | Cumulative number of the freed heap objects                                                   |
-| HeapAlloc      | Bytes of the allocated heap object                                                            |
-| HeapSys        | Bytes of the heap memory obtained from OS                                                     |
-| HeapIdel       | Unused bytes                                                                                  |
-| HeapInuse      | Used bytes                                                                                    |
-| HeapReleased   | Bytes of the physical memory returned to OS                                                   |
-| HeapObjects    | Number of the allocated heap objects                                                          |
-| StackInuse     | Used stack bytes                                                                              |
-| StackSys       | Bytes of the stack memory obtained from OS                                                    |
-| MSpanInuse     | Bytes of the allocated MSPAN                                                                  |
-| MSpanSys       | Bytes of the memory obtained from OS for MSPAN                                                |
-| MCacheInuse    | Bytes of the allocated MCache                                                                 |
-| MCacheSys      | MCache bytes of the memory obtained from OS                                                   |
-| BuckHashSys    | Bytes of the memory profiling the bucket hash table                                           |
-| GCSys          | Memory bytes of the garbage collection metadata                                               |
-| OtherSys       | Bytes of other off-heap memories (runtime allocation)                      |
-| NextGC         | Target heap size of the next GC cycle                                                         |
-| LastGC         | Time in which the last garbage collection has ended (unixstamp nanosecond) |
-| PauseTotalNs   | Cumulative nanoseconds of GC                                                                  |
-| NumGC          | Number of completed GC cycles                                                                 |
-| NumForcedGC    | Number of forced GC cycles                                                                    |
+| Metric name    | Description                                                                           |
+| -------------- | ------------------------------------------------------------------------------------- |
+| NumCpu         | Number of logical CPUs that can be used in the current process                        |
+| NumCgoCall     | Number of CGO calls in the current process                                            |
+| NumGoroutine   | Number of the current go routines                                                     |
+| Alloc          | Bytes of the allocated heap object                                                    |
+| TotalAlloc     | Cumulative bytes that has been allocated to the heap object                           |
+| Sys            | Total bytes of the memory obtained from OS                                            |
+| Lookups        | -                                                                                     |
+| Mallocs        | Cumulative number of the allocated heap objects                                       |
+| Frees          | Cumulative number of the freed heap objects                                           |
+| HeapAlloc      | Bytes of the allocated heap object                                                    |
+| HeapSys        | Bytes of the heap memory obtained from OS                                             |
+| HeapIdel       | Unused bytes                                                                          |
+| HeapInuse      | Used bytes                                                                            |
+| HeapReleased   | Bytes of the physical memory returned to OS                                           |
+| HeapObjects    | Number of the allocated heap objects                                                  |
+| StackInuse     | Used stack bytes                                                                      |
+| StackSys       | Bytes of the stack memory obtained from OS                                            |
+| MSpanInuse     | Bytes of the allocated MSPAN                                                          |
+| MSpanSys       | Bytes of the memory obtained from OS for MSPAN                                        |
+| MCacheInuse    | Bytes of the allocated MCache                                                         |
+| MCacheSys      | MCache bytes of the memory obtained from OS                                           |
+| BuckHashSys    | Bytes of the memory profiling the bucket hash table                                   |
+| GCSys          | Memory bytes of the garbage collection metadata                                       |
+| OtherSys       | Bytes of other off-heap memories (runtime allocation)                                 |
+| NextGC         | Target heap size of the next GC cycle                                                 |
+| LastGC         | Time in which the last garbage collection has ended (unixstamp nanosecond)            |
+| PauseTotalNs   | Cumulative nanoseconds of GC                                                          |
+| NumGC          | Number of completed GC cycles                                                         |
+| NumForcedGC    | Number of forced GC cycles                                                            |
 
 ### Supporting RoundTripper by the NET/HTTP library
 

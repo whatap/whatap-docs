@@ -102,11 +102,11 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 
 <ImgLang img='kubernetes-time-seletor.png' desc='Time selector' />
 
-| Lookup status                                  | Description                                                                           |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Lookup status               | Description                                                                           |
+| --------------------------- | ------------------------------------------------------------------------------------- |
 | Real-time inquiry (LIVE)    | Default mode<br/>Real-time status changes every 10 seconds.                           |
 | Paused inquiry (PAUSE)      | Real-time status change OFF<br/>Used to check the current status in detail.           |
-| Historical inquiry                             | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute                   |
+| Historical inquiry          | You can specify a past time to check<br/>Year/Month/Day/Hour/Minute                   |
 
 ### ![](/img/number-03.png) Container map chart{#container-map-chart}
 
@@ -148,47 +148,71 @@ Container maps are based on real-time lookups based on multiple viewpoints. Use 
 
 - ![number 4](/img/char-d.svg) It displays the transaction information for the applications in the grouped targets.
 
-## Summary view and Detailed view
+## Container map targets
 
 You can select an interested container or pod to view the summary and detailed information. The information includes the key monitoring data as follows:
 
-- **Trace**
+- **Target Info** 
 
-  It is the APM tool to trace applications on the container. 
+  By clicking on a block, you can specify a target, to view the related resource information and navigate to the corresponding menu link. 
 
-- **Metrics**
+- **Resource relations**
 
-  They are various metrics data for nodes and Kubernetes. 
+  It provides a relational chart that visually represents resource information related to the selected target. 
 
-- **Log**
+- **Trace** 
 
-  Various logs for containers and applications.
+  If the WhaTap application agent has been installed in the container, it provides transaction trace information for the application so that you can check it in real time on the dashboard. 
 
-- **Event**
+  {/* 컨테이너 상의 애플리케이션 추적을 위한 APM 도구를 의미합니다.  */}
 
-  It indicates recording the events that occur while running the containers and applications. 
+- **Metrics** 
 
-Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Display Detail** provide information based on the above 4 items.
+  The dashboard provides metrics such as CPU usage, memory usage, and network traffic of the selected container or Pod. 
+
+  {/* 노드, 쿠버네티스의 다양한 지표 데이터를 의미합니다.  */}
+
+- **Log** 
+
+  It provides the standard output logs of each container and the logs generated and stored by containers and applications. 
+
+  {/* 컨테이너, 애플리케이션의 각종 로그를 의미합니다. */}
+
+- **Event** 
+
+  It provides information on the events occurred in Kubernetes and WhaTap events. 
+
+  {/* 컨테이너와 애플리케이션 실행 과정에서 발생하는 이벤트를 기록한 것을 의미합니다.  */}
+
+- **Call Infomation**
+
+  It provides a chart visualizing the call flow of the applications running in the selected container. 
+
+Based on these data, you can obtain the observability of the Kubernetes environment. Both the **Display Summary** and **Detailed Analysis** provide information based on the above 4 items.
+
+{/* 요약 보기 개별 문서로 작업 필요?? */}
 
 ### Summary view
 
-Click a specific object or a set of objects. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
+Click a specific object or a set of objects on the container map. You can check the summary data of the object through the **Display Summary** screen that appears on the right.
 
-<ImgLang img='k8s-container-map-sum-all.png' desc='Summary view' />
+<ImgLang img='k8s-container-map-sum-select.png' desc='Select taget on view summary' />
 
 - **_Target Info_**
 
-  You can check information for Node, Namespace, Deployment, ReplicaSet, Pod, ContainerName, ContainerId, Image, and Agent through the **_Target Info_** tab of the container map. 
+  {/* Pod 뷰 또는 컨테이너 뷰에서 블록은 각 컨테이너 또는 Pod를 의미합니다. 블록 선택 시 **_대상 정보_** 탭을 통해 해당 대상 정보를 확인하고 관련 목록 메뉴로 이동할 수 있습니다.  */}
 
-  - **_Node_**: You can check information for **_Node details_** and **_Object manifest_** and go to **_Node List_**.
+  {/* 컨테이너 맵의 **_대상 정보_** 탭을 통해 Node, Namespace, Deployment, ReplicaSet, Pod, ContainerName, ContainerId, Image, Agent 정보를 확인할 수 있습니다.  */}
 
-  - **_Deployment_**: You can check the **_Object manifest_** and go to the **_Deployment_** list menu.
+  It provides basic information about the selected Pod or container. You can see basic target information such as the node on which the resource is running and the namespace it belongs to, and navigate to the list menu. 
 
-  - **_ReplicaSet_**: You can check the **_Object manifest_**. 
+:::note 
 
-  - **_Pod_**: You can check the **_Object manifest_** and go to the **_Pod list_** menu. 
+import TargetInfo from "../common-items/_import_k8s-container-map-target-resource-info.mdx";
 
-  - **_ContainerId_**: You can check information for **_Container info_** and **_Container summary analysis_** and go to the **_Container list_** menu.
+<TargetInfo />
+
+:::
 
 - **_Resource relations_**
 
@@ -214,11 +238,11 @@ Click a specific object or a set of objects. You can check the summary data of t
 
   In the **_Call information_** tab of the container map, you can see the call flow of the applications running on Kubernetes containers and the status of outbound call targets.
 
-### Display Detail
+### Detailed analysis
 
-On the upper right of **View Summarized**, click ![View Detailed icon](/img/ico-detail-mode.svg). The **View Detailed** screen appears. For more information about **View Detailed** screen layout, see [the following](container-map-detail-mode).
+On the upper right of **Display Summary**, click ![Detailed analysis icon](/img/ico-detail-mode.svg) <Cmdname sid="BTN07712" className="uitext" />. The <Cmdname sid="BTN07712" className="uitext" /> screen appears. For more information about the <Cmdname sid="BTN07712" className="uitext" /> screen layout, see [the following](container-map-detail-mode).
 
-<ImgLang img='container-map-detail-mode.png' desc='Display Detail' />
+<ImgLang img='container-map-detail-mode.png' desc='View Detailed' />
 
 :::note 
 

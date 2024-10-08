@@ -47,6 +47,18 @@ The following agent options allow you to trace the execution paths of each trans
   trace_db_command_methods=ExecuteReader, ExecuteReaderAsync, ExecuteNonQuery, ExecuteNonQueryAsync, ExecuteScalar, ExecuteScalarAsync
   ```
 
+- **expand_transaction_level** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  If the option value is set to `true`, SQL and HTTP calls that occur outside of transactions are treated as transactions and displayed in the hitmap.
+
+- **expand_transaction_basetime** <span class='type'>Int</span>
+
+  Default `1000`(1 second) / Min `100`(0.1 second)
+
+  It collects data only when the response time is longer than the option value you set. It collects up to 100 cases per second.
+
 ## Exceptional handling {#exception}
 
 The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
@@ -147,7 +159,7 @@ The following agent options trace and record various data related to HTTP reques
 
   :::note
 
-  Set the security key to 6 digits in _'%PROGRAMFILES%'\\WhaTap .NET\\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
+  Set the security key to 6 digits in _'%PROGRAMFILES%'\WhaTap .NET\paramkey.txt_ of the WAS server. If _paramkey.txt_ does not exist, it is automatically generated as a random value.
 
   :::
 

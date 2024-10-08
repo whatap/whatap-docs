@@ -11,13 +11,13 @@ keywords:
 
 Goアプリケーションサーバーの通信を設定する方法を提供します。
 
-- **whatap.server.host** <span class='type'>ip_address</span>
+- **whatap.server.host** <span class='type'>ip\_address</span>
 
   既定値`127.0.0.1,127.0.1`
 
   エージェントが収集したデータを転送するサーバーを指定します。 収集サーバーの冗長化で2つ以上のIPで構成された場合、コンマ(,)で区切って指定できます。 指定されたIPには、収集サーバーのProxyデーモンがリスニング状態でサービスされる必要があります。
 
-- **whatap.server.port** <span class='type'>tcp_port</span>
+- **whatap.server.port** <span class='type'>tcp\_port</span>
 
   既定値`6600`
 
@@ -41,7 +41,7 @@ Goアプリケーションサーバーの通信を設定する方法を提供し
 
   収集サーバーにデータを送信する場合、一度に送信される最大サイズを指定します。
 
-- **net_ipc_host** <span class='type'>ip_address</span>
+- **net_ipc_host** <span class='type'>ip\_address</span>
 
   既定値`127.0.0.1`
 
@@ -66,3 +66,15 @@ Goアプリケーションサーバーの通信を設定する方法を提供し
   - 設定したオプションを適用するには、アプリケーションを再起動してください。
 
   :::
+
+- **net_so_time** <span class='type'>Int</span>
+
+  既定値`120000` (Millisecond)
+
+  TCP接続で、データを読み取る時の最大待ち時間を設定できます。 設定した時間が経過すると、タイムアウトとして処理します。
+
+- **net_write_buffer_size** <span class='type'>Int</span>
+
+  既定値`2*1024*1024` (2Mb)
+
+  ネットワークを通じて収集したデータを送信する時に使用するバッファのサイズを設定するオプションです。

@@ -5,7 +5,7 @@ description: It provides the description of the open API for viewing the statist
 keywords:
   - Open API
   - API
-  - Statistics
+  - Statistic
   - Viewing the statistical data
   - Server
   - Server Monitoring
@@ -21,8 +21,8 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 
 | Parameter | Description                                                                                                                                                                                       |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stime     | Start time UTC (UNIX epoch time, millisecond)                                                                                                                                  |
-| etime     | End time UTC (UNIX epoch time, millisecond)                                                                                                                                    |
+| stime     | Start time UTC (UNIX epoch time, millisecond)                                                                                                                                                     |
+| etime     | End time UTC (UNIX epoch time, millisecond)                                                                                                                                                       |
 | filter    | Automatic setting of `m5` by default; if 5-minute statistics are fetched within the time range, `m5` is used. <br/>For 5-second statistics, `s5` is used and for 1-hour statistics, `h1` is used. |
 | oid       | Add if monitoring is required for a specific server.                                                                                                                                              |
 

@@ -1,0 +1,77 @@
+## ユーザー定義ウィジェット{#customwidget}
+
+ユーザー定義ウィジェットは、ダッシュボードでデフォルトに提供されるメトリクスの他に、ユーザーが希望するメトリクスを追加できる機能です。 デフォルトで提供するメトリクスの他に、ダッシュボードで継続的にモニタリングしたいメトリクスがある場合は、ユーザー定義ウィジェット機能を利用してください。
+
+### 追加する
+
+1. ダッシュボードの空のスペースで、右クリックします。
+
+2. ポップアップメニューで<Cmdname sid="BTN08346" className="uitext" />を選択します。
+
+3. ダッシュボードに<UI>Custom Widget</UI>が生成されたら、<Cmdname sid="CNT08130" className="uitext" />ボタンを選択します。
+
+   <ImgLang img="db-add-custom-widget.png" desc="Custom widget" />
+
+4. 画面の右側から <Cmdname sid="BTN08346" className="uitext" />画面が現れると、<Cmdname sid="title" className="uitext" />項目にウィジェットの名前を入力してください。
+
+   <ImgLang img="db-add-custom-widget-setting.png" desc="Custom widget" />
+
+5. 画面下のメトリクス一覧で、追加するメトリクスの右上に![追加アイコン](/img/ico-add.svg)ボタンを選択します。
+
+6. メトリクスをすべて追加したら<Cmdname sid="save" className="uitext" />ボタンを選択します。
+
+:::note
+
+- 1つ以上のメトリクスを追加できます。 メトリクスを追加する時は、![追加アイコン](/img/ico-add.svg)ボタンを選択します。
+
+- メトリクスを変更する時は、メトリクス一覧で別のメトリクス項目を選択します。 ![追加アイコン](/img/ico-add.svg)ボタンを選択すると、そのメトリクスが追加されます。
+
+- ウィジェットのタイトルを入力しないと、Custom Widgetと保存されます。
+
+:::
+
+### チャートタイプを選択する
+
+<Cmdname sid="BTN08346" className="uitext" />画面の<Cmdname sid="TTL08259" className="uitext" />では、次の形式のチャートを選択できます。
+
+- ![グラフアイコン](/img/ico-normal-graph.svg) <Cmdname sid="series" className="uitext" />: 時間の経過によるメトリクスの変化を確認できる時系列形式のチャートです。
+
+- ![グラフアイコン](/img/ic-equalizer-chart.svg) <Cmdname sid="equalizer" className="uitext" />: 複数のメトリクスの性能を比較できる棒グラフ形式のチャートです。 様々なメトリクスを1つの画面に視覚的に表現することで、全体的な性能状態を簡単に把握できます。
+
+- ![グラフアイコン](/img/ic-pie-chart.svg) <Cmdname sid="pie" className="uitext" />: 複数のメトリクスの全体に対する部門構成比率を確認するのに有用な円形チャートです。
+
+- ![テキストアイコン](/img/ic-text-widget.svg) <Cmdname sid="text" className="uitext" />: メトリクスに対する数値をテキスト形式で表示します。
+
+### データ併合方式を選択する
+
+<Cmdname sid="BTN08346" className="uitext" />画面の<Cmdname sid="TTL08348" className="uitext" />では、エージェントから収集されたメトリクスを表示する方法を選択できます。
+
+- <Cmdname sid="merge_sum" className="uitext" />: 複数のエージェントから収集されたメトリクス値を合計して、1つの値として表示します。 このオプションは、複数のエージェントのデータを統合して全体的な合計を表示する場合に役立ちます。
+
+- <Cmdname sid="merge_avg" className="uitext" />: 複数のエージェントから収集されたメトリクス値を平均して、1つの値として表示します。 このオプションは、エージェント全体の平均性能や状態を把握するのに役立ちます。
+
+- <Cmdname sid="BTN08359" className="uitext" /> : 各エージェントのメトリクスを個別に表示します。
+
+### 指標の変更
+
+ユーザー定義ウィジェットに追加したメトリクスを、他のメトリクスに変更または追加できます。
+
+1. ダッシュボードに追加したユーザー定義ウィジェットの右上に![設定アイコン](/img/ico-setting.svg)ボタンを選択します。
+
+2. 画面の右側で<Cmdname sid="BTN08346" className="uitext" />画面が表示されたら、変更するメトリクスを選択してください。
+
+   <ImgLang img="db-add-custom-widget-setting-change.png" desc="Custom widget" />
+
+3. 画面下のメトリクスの一覧で変更するメトリクスを選択します。 メトリクスを追加する場合、追加するメトリクスの右上に![追加アイコン](/img/ico-add.svg) ボタンを選択します。 
+
+4. メトリクスを全て変更したのであれば<Cmdname sid="save" className="uitext" />ボタンを選択します。
+
+:::tip
+
+追加または変更したメトリクス一覧に表示されたアイコンボタンの機能は、次のとおりです。
+
+- ![削除アイコン](/img/ico-trash.svg) : このメトリクスは、ユーザー定義ウィジェットから除外できます。
+
+- ![通知アイコン](/img/ic-alert.svg) : そのメトリクスのアラート通知を設定できます。 ボタンを選択すると、<Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューに移動します。 <Cmdname sid="metrics_event" className="uitext" />設定の詳細については、[次の文書](metric-warning-notice)を参考にしてください。
+
+:::

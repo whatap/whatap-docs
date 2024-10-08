@@ -5,7 +5,7 @@ description: 複数のデータベースインスタンスの主要メトリク�
 keywords:
   - Redis
   - インスタンス
-  - ダッシュボード
+  - ダッシューボード
   - データベース
   - マルチインスタンス
 ---
@@ -42,6 +42,11 @@ import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.m
 
 <Apmdashboradeditwidget />
 
+{/* 사용자 정의 위젯 */}
+import CustomWidget from "../common-items/_db-mim-custom-widget.mdx";
+
+<CustomWidget />
+
 {/* 위젯 옵션 이용하기*/}
 import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
 
@@ -52,119 +57,10 @@ import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 
 <Apmdashboardpreset />
 
-## 主要なウィジェットを調べる{#about-widget}
+{/* 주요 위젯 알아보기*/}
+import WidgetDetails from "../common-items/_db-v2-mim-widgets.mdx";
 
-ダッシュボードに配置できるウィジェットの種類は次のとおりです。
-
-- **_DB Status_**
-
-  プロジェクトに含まれるエージェント(インスタンス)の状況を確認できます。個別エージェントを六角形に表示し、マウスオーバーすると、現在の状況とIPアドレスを確認できます。
-
-  ![DB Status](/img/db-dashboard-status-widget.png)
-
-  エージェントのステータスは、次のように区別されます。
-
-  - <span class='normal'>正常</span>：定常状態のエージェントの数です。
-
-  - <span class='mstop'>非活性化されたエージェント</span>：接続が解除されているエージェントの数です。
-
-- **_Clusters_**
-
-  MasterインスタンスとSlaveインスタンスの現況を確認することができます。
-
-  :::note
-
-  **_Clusters_**ウィジェットを利用するには、DBXエージェント(*whatap.conf*)の次のオプションを設定する必要があります。詳細については、[次の文書](agent-dbx-settings#cluster-set)を参照してください。
-
-  ```ini title="whatap.conf"
-  cluster_name={cluster_name}
-  ```
-
-  :::
-
-- **_Instantaneous Ops Per Sec_**
-
-  ![Instantaneous Ops Per Sec](/img/db-dashboard-instaneous-widget.png)
-
-  サーバーが処理する1秒あたりのコマンド数(`instantaneous_ops_per_sec`)をパイチャートを用いて表示します。複数のインスタンス間の性能を比較し、モニタリングする指標として使用できます。
-
-  :::tip
-
-  `instantaneous_ops_per_sec`指標は、サーバーが処理する1秒あたりのコマンド数です。インスタンスが現在処理中の作業の負荷を追跡し、モニタリングするのに役立ちます。1秒あたりのコマンド数は、サーバーが受け入れて処理するコマンドの量を表し、サーバーの作業負荷を把握し、性能問題を識別するのに役立ちます。
-
-  :::
-
-- **_Key Status_**
-
-  サーバーのキー(Key) 状態をモニタリングします。データベースの状態を理解し、性能を最適化するために必要です。
-
-  - **_Evicted Keys_**：キャッシュされたか保存されたKeyのうち、期限切れまたはメモリポリシーによって削除されたキーの数を表示します。**_Evicted Keys_**指標が増加すると、メモリ不足やキャッシュポリシーに問題が生じる可能性があります。
-
-  - **_Expired Keys_**：期限切れのキー数を表示します。 RedisはKeyに有効期限を設定することができ、期限切れのキーは自動的に削除されます。**_Expired Keys_**指標が増加すると、データベースで有効期限ポリシーを検討するか、ユーザーの動作をチェックする必要があります。
-
-  - **_Keyspace Hits_**：データベースでKeyを検索し取得するリクエストのうち、キャッシュやメモリでキーを探す成功要請数を表示します。キャッシュの効率性を評価し、Keyへのアクセスパターンを理解するのに役立つ指標です。
-
-  - **_Keyspace Misses_**：データベースでKeyを検索し取得するリクエストのうち、キャッシュやメモリでキーが見つからなかった失敗リクエスト数を表示します。キャッシュ効率を評価し、性能を向上させるための措置を取るために必要な指標です。
-
-  :::note
-
-  Redisデータベースでキー(Key)は、文字列、ハッシュ、リスト、セット、ソートセットなど様々なデータ型を含みます。
-
-  :::
-
-- **_Connected Clients_** (`connected_clients`)
-
-  現在接続中のクライアントの数です。サーバーへの同時接続数を把握できます。サーバーへのクライアント接続数が急激に増加すると、予期しないトラフィックの増加やその他の問題を引き起こす可能性があるため、このような状況は迅速に認識し、対応する必要があります。
-
-- **_Used Memory_** (`used_memory`)
-
-  データを保存するためにリクエストされたメモリ量(byte)です。OSで割り当てられたメモリの量と異なる場合があります。`used_memory`の指標が高すぎる場合は、メモリ管理ポリシーを検討し、データセットを最適化してメモリ使用量を削減することが必要になります。
-
-- **_Total Commands_** (`total_commands_processed`)
-
-  サーバーを起動してから処理した総コマンド数を表示するウィジェットです。サーバーが実行したすべてのコマンドの累積回数を表し、サービスの提供中に処理したすべてのクライアントのリクエスト数を含めます。`total_commands_processed`指標は、サーバーの活動レベルを把握し、性能を評価するのに有用な指標です。この指標は、時間の経過とともに増加し、値の変化を追跡してサーバーの活動レベルをモニタリングし続ける必要があります。
-
-- **_Used CPU_** (`used_cpu`)
-
-  Redisインスタンスごとに1つのCPUを使用し、割り当てられたCPU使用量を表示します。`used_cpu`指標では、サーバーがCPUリソースをどのように使用するかを把握することができます。この指標が予期しないレベルに増加すると、性能問題として認識し、性能を最適化する必要があります。
-
-- **_Commands(/S)_** (`instantaneous_ops_per_sec`)
-
-  サーバーが処理する1秒あたりのコマンド数(`instantaneous_ops_per_sec`)を時系列チャートを介して、時間の経過に伴う各インスタンスの指標値を表示します。時間の経過に伴う推移をモニタリングし、性能トレンドやイシューを識別するのに有用なウィジェットです。
-
-  :::tip
-
-  `instantaneous_ops_per_sec`指標は、サーバーが処理する1秒あたりのコマンド数です。インスタンスが現在処理中の作業の負荷を追跡し、モニタリングするのに役立ちます。1秒あたりのコマンド数は、サーバーが受け入れて処理するコマンドの量を表し、サーバーの作業負荷を把握し、性能問題を識別するのに役立ちます。
-
-  :::
-
-- **_Total Net Input Bytes_**
-
-  サーバーが受信した総ネットワーク入力量(bytes)を表すウィジェットです。クライアントから受信したすべてのネットワーク トラフィックの総量を測定します。このウィジェットにより、クライアントがサーバーとの通信中に消費したネットワーク帯域幅を特定するのに役立ちます。クライアントの活動レベルを追跡し、ネットワーク負荷を管理するのに役立ちます。
-
-- **_Blocked Clients_** (`blocked_clients`)
-
-  サーバーで、現在ブロック状態にあるクライアントの数を表示します。ブロックされたクライアントは、サーバー上で特定のタスクを待機している状態で、待機中のタスクが完了するまでクライアントがブロックされます。 どれだけの数のクライアントがブロック状態であるかをモニタリングできます。この指標により、サーバーの現在の負荷状態を容易に把握できます。
-
-- **_Keys Total_** (`keys_total`)
-
-  Redisデータベースに保存されているキー(Key)の総数です。 Keyは、文字列、ハッシュ、リスト、セット、ソートセットなどの様々なデータタイプを含みます。データベースに保存されているデータ全体の量を追跡し、データベースのサイズを理解し、データの成長推移を把握することができます。この指標が急激に増加する場合は、追加のメモリを割り当てるか、データ整理ポリシーを検討する必要があります。
-
-- **_Evicted Keys_** (`evicted_keys`)
-
-  データベースのmaxmemory制限によって削除されたキー(Key)の数です。削除ポリシーは、構成ファイルの`maxmemory-policy`設定に従います。一般的にKeyと関連したデータの有効期限が切れているか、メモリ不足などの理由でキーを削除すると`evicted_keys`指標は増加します。`evicted_keys`指標モニタリングを通じてKeyがどれだけ頻繁に削除されるかを追跡し、メモリ使用量と性能を把握することができます。
-
-- **_Keyspace Hits_** (`keyspace_hits`)
-
-  Key照会リクエスト中に成功した数です。`get key`値があると、1が増加します。Hit Rateは、(`keyspace_hits` / (`keyspace_hits` + `keyspace_misses`) \* 100 )で計算できます。`keyspace_hits`指標は、データベースサーバーのキャッシュ効率を評価し、性能を改善するための重要な指標の1つです。
-
-- **_Rdb Changes Since Last Save_**
-
-  データベースで最後の`SAVE`コマンドの後に変更されたデータの量を表すウィジェットです。変更されたデータの量を追跡し、データの変化の度合いを把握できます。変更されたデータの量が多い場合は、バックアップサイクルを調整するか、データ損失の可能性を減らすデータバックアップポリシーを検討してください。
-
-- **_Total Net Output Bytes_**
-
-  データベースサーバーがクライアントに送信したすべてのネットワークトラフィックの量を表示したウィジェットです。 サーバーがクライアントにデータを送信する活動を追跡できます。これにより、サーバーのレスポンス速度とクライアントリクエストの処理性能を評価できます。
+<WidgetDetails />
 
 {/* Session Table*/}
 import Dbv2mimactivesessiondesc from "../common-items/_db-v2-mim-activesession-desc.mdx";
@@ -175,17 +71,13 @@ import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-n
 
 <Dbv2mimactivesessionnote />
 
-### テーブルデータのフィルタリング
-
 import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
 
-<Dbtabledatafiltering />
-
-### テーブルカラムの設定{#change-column}
+<Dbtabledatafiltering level={3} />
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn />
+<Dbv2dataeditcolumn level={3} />
 
 ### カラム情報ガイド {#column-info}
 

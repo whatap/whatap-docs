@@ -1,12 +1,12 @@
 <InDoc product='aws-log'>
 
-Home > Select Project > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
 <InDoc product='log,postgresql,mysql,oracle,oracle-pro'>
 
-Home > Select Project > <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
@@ -481,13 +481,13 @@ The data above the chart represents statistics for the lookup period. You can se
 
 Select the <Cmdname sid="fast_index_setting" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />. Collecting a large number of logs can significantly decrease the log search performance. The frequently used search conditions are created as **index**, you can improve the log search performance for quick search. The setting items are as follows:
 
-| Set value                 | Required       | Description                                                     |
-| ------------------------- | -------------- | --------------------------------------------------------------- |
-| Category                  | Mandatory      | Category to be set as fast index                                |
-| Search Key                | Mandatory      | Search key for fast index setting                               |
-| Case insensitive          | Option         | Whether to be case sensitive                                    |
-| Rule                      | Mandatory      | `*` must be included at least one.                              |
-| Enabled                   | Mandatory      | Active or inactive (default value is `true`) |
+| Set value                 | Required       | Description                                    |
+| ------------------------- | -------------- | ---------------------------------------------- |
+| Category                  | Mandatory      | Category to be set as fast index               |
+| Search Key                | Mandatory      | Search key for fast index setting              |
+| Case insensitive          | Option         | Whether to be case sensitive                   |
+| Rule                      | Mandatory      | `*` must be included at least one.             |
+| Enabled                   | Mandatory      | Active or inactive (default value is `true`)   |
 
 ## Importing/exporting log settings {#export-import-settings}
 
@@ -501,7 +501,7 @@ You can save common parser settings and <Cmdname sid="fast_index_setting" /> con
 
 4. The JSON configuration file is saved on your PC.
 
-5. Move to another project and then go to the <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" /> menu.
+5. Move to another project and then go to the <Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="log_setting" className="uitext" /> menu.
 
 6. Select the configuration tab where you have exported the JSON configuration file before, and then select ![Import icon](/img/ico-import.svg).
 
@@ -562,7 +562,7 @@ If you select ***+*** <Cmdname sid="adding" className="uitext" /> under the <Cmd
 | Log detection condition      | Condition for generating log statistical data. Statistical data is generated based on how many logs that meet this condition are collected.         |
 | Exclude                      | If checked, statistical data is generated with values that do not correspond to the entered conditions.                                             |
 | Case Sensitive               | Specify case sensitivity for the values of the entered log detection conditions.                                                                    |
-| Enabled                      | Active or inactive (default value is `true`)                                                                                     |
+| Enabled                      | Active or inactive (default value is `true`)                                                                                                        |
 
 #### Example
 

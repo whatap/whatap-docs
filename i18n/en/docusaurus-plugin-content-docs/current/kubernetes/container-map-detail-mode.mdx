@@ -1,26 +1,26 @@
 ---
 id: container-map-detail-mode
-title: Detailed view of container map
-description: You can check detailed information about the target selected in the container map menu on the detailed view screen.
+title: Container Map Detailed Analysis
+description: You can check detailed information about the target selected in the container map menu on the detailed analysis screen.
 keywords:
   - Kubernetes
   - Kubernetes Monitoring
   - Container Map
 ---
 
-You can check detailed information about the target selected in the **_container map_** menu on the **_Display Detail_** screen.
+You can check detailed information about the target selected in the **_Container Map_** menu on the <Cmdname sid="BTN07712" className="uitext" /> screen.
 
 1. In the **_Container map_** menu, select a block (container or pod) to view. 
 
 2. On the right of the screen, the **View summarized** panel appears as follows. 
 
-   <ImgLang img='k8s-container-sum.png' desc='Container map summary view' />
+   <ImgLang img='k8s-container-map-sum-select.png' desc='Container map view summary' />
 
-3. If you select the ![View detailed icon](/img/ico-detail-mode.svg) **_View Detailed_** at the upper right of the **View Summarized** panel, the furthermore detailed information appears.
+3. If you select the ![Detailed analysis icon](/img/ico-detail-mode.svg) <Cmdname sid="BTN07712" className="uitext" /> at the upper right of the **View Summary** panel, the furthermore detailed information appears.
 
 ## Basic screen guide
 
-The **Display Detail** screen of the container map consists of the following. Basic information is available in the card and list formats. It provides **_trace_**, **_metrics_**, **_log_**, and **_event_** tabs for key monitoring data. 
+The <Cmdname sid="BTN07712" className="uitext" /> screen of the container map consists of the following. Basic information is available in the card and list formats. It provides **_Trace_**, **_Metrics_**, **_Log_**, and **_Event_** tabs for key monitoring data. 
 
 <ImgLang img='k8s-container-detail.png' desc='Detailed view screen' />
 
@@ -36,7 +36,7 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
   :::
 
-- ![Leader line 2](/img/number-02.png) **_Summary Info List_**
+- ![Leader line 2](/img/number-02.png) **_Target Info List_**
 
   You can see the group information of the selected target in a list format. When selecting a target additionally, you can see the metrics for the selected target in the ![number 3](/img/number-03.png) area. 
 
@@ -44,17 +44,7 @@ The **Display Detail** screen of the container map consists of the following. Ba
 
     <ImgLang img='k8s-container-detail-list-selected.png' desc='View only selected' />
 
-  - If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear as shown in ![Leader line a](/img/char-a.svg).
-
-    - **_Node_**: You can check information for **_Node details_** and **_Object manifest_** and go to **_Node List_**.
-
-    - **_Deployment_**: You can check the **_Object manifest_** and go to the **_Deployment_** list menu.
-
-    - **_ReplicaSet_**: You can check the **_Object manifest_**. 
-
-    - **_Pod_**: You can check the **_Object manifest_** and go to the **_Pod list_** menu. 
-
-    - **_ContainerId_**: You can check information for **_Container info_** and **_Container summary analysis_** and go to the **_Container list_** menu.
+  - If you select ![More icon](/img/right-arrow.svg) **_More_** icon on the left of the list, the metrics for **_Node_**, **_Namespace_**, **_Deployment_**, **_ReplicaSet_**, **_Pod_**, **_ContainerName_**, **_ContainerId_**, **_Image_**, and **_Agent_** appear as shown in ![Leader line a](/img/char-a.svg). For more information, see [the following](container-map-target-info). 
 
     {/* \* ![더보기 아이콘](/img/ico-more.svg) **_상세 조회_**: 각 지표 안내 오른쪽의 상세 조회 아이콘을 선택하면 상세 또는 마스터 메타 정보를 조회할 수 있습니다. */}
 

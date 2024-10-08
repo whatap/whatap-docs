@@ -1,3 +1,50 @@
 ### Downloading JDBC
 
 Download the JDBC driver that matches the operating system and version of the database server to the DBX agent path where you unzipped the file. `/unzipped folder/jdbc`
+
+<InDoc product="altibase">
+
+:::info
+
+**Altibase JDBC Drivers**: http://support.altibase.com/kr/product
+
+:::
+
+</InDoc>
+
+<InDoc product="mysql">
+
+:::info
+
+**Mysql & MariaDB 5.5 or later**
+
+- [Connector/J 8.0.11](https://dev.mysql.com/downloads/connector/j/)
+- [Connector/J 5.1.46](https://dev.mysql.com/downloads/connector/j/5.1.html)
+
+:::
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+:::info
+
+**PostgreSQL 9.2 or later**: https://jdbc.postgresql.org/download
+
+:::
+
+</InDoc>
+
+:::note
+
+- Depending on the DB configuration, additional settings may be required in the _whatap.conf_ file. For more information, see [the following](agent-dbx-settings).
+
+- To additionally monitor resources of the DB server, you must use the XOS agent. For more information, see [the following](agent-xos-settings).
+
+<Xclude product='redis'>
+
+- In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installation paths for each database.
+
+</Xclude>
+
+:::

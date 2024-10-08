@@ -78,15 +78,15 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode: {{projectCode}}" "https://api.whatap.io/open/api/json/db/statistics/sql?oids=757639646,-1162364681,506793303&period=day&date=20230825"
 ```
 
-| Request Field    |                             Field Type                             | Value                                                   | Description                                       | Defalut           |
-| ---------------- | :----------------------------------------------------------------: | ------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| `oids`           |  <span class='api'>array</span> · <span class='require'>必須</span>  | -                                                       | エージェントID、コンマ(,)を区切り文字として複数入力可能 | -                 |
-| `period`         |  <span class='api'>string</span> · <span class='require'>必須</span> | `day`, `week`                                           | 照会期間                                              | -                 |
-| `date`           | <span class='type'>string</span> · <span class='require'>必須</span> | `yyyyMMdd`形式                                            | 基準時間                                              | -                 |
-| `topN`           |                  <span class='type'>number</span>                  | 1 ~ 1000                                                | 上位件数                                              | 10                |
-| `order`          |                  <span class='type'>string</span>                  | `sql_execute_cnt`<br/>`sql_elapse`<br/>`sql_elapse_max` | ソート順                                              | `sql_execute_cnt` |
-| `category`       |                  <span class='type'>string</span>                  | `ALL`<br/>`DB`<br/>`HOST`<br/>`USER`                    | カテゴリ、`USER`を選択すると、ユーザベースのSQL統計データをリターン            | `ALL`             |
-| `nameInCategory` |                  <span class='type'>string</span>                  | -                                                       | `category`選択時に入力                                  | -                 |
+| Request Field    |                             Field Type                             | Value                                                   | Description                            | Defalut           |
+| ---------------- | :----------------------------------------------------------------: | ------------------------------------------------------- | -------------------------------------- | ----------------- |
+| `oids`           |  <span class='api'>array</span> · <span class='require'>必須</span>  | -                                                       | エージェントID、コンマ(,)を区切り文字として複数入力可能         | -                 |
+| `period`         |  <span class='api'>string</span> · <span class='require'>必須</span> | `day`, `week`                                           | 照会期間                                   | -                 |
+| `date`           | <span class='type'>string</span> · <span class='require'>必須</span> | `yyyyMMdd`形式                                            | 基準時間                                   | -                 |
+| `topN`           |                  <span class='type'>number</span>                  | 1 \~ 1000                                               | 上位件数                                   | 10                |
+| `order`          |                  <span class='type'>string</span>                  | `sql_execute_cnt`<br/>`sql_elapse`<br/>`sql_elapse_max` | ソート順                                   | `sql_execute_cnt` |
+| `category`       |                  <span class='type'>string</span>                  | `ALL`<br/>`DB`<br/>`HOST`<br/>`USER`                    | カテゴリ、`USER`を選択すると、ユーザベースのSQL統計データをリターン | `ALL`             |
+| `nameInCategory` |                  <span class='type'>string</span>                  | -                                                       | `category`選択時に入力                       | -                 |
 
 ```json title='response'
 {

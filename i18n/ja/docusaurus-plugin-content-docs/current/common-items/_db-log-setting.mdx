@@ -4,7 +4,7 @@ WhaTapは、データベースのログモニタリングを提供します。 �
 
 ログモニタリングを適用した後、各メニューの<Cmdname sid="category" className="uitext" />項目とログ一覧からインストール型DBは、 `#DB`、AWS RDSは`#RDS_LOG`、`#RDS_EVENT`と表示されます。
 
-<ImgLang img='db-log-category.png' desc='카테고리' className='width-200' />
+<ImgLang img='db-log-category.png' desc='カテゴリ' className='width-200' />
 
 :::
 
@@ -41,9 +41,33 @@ file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log
 
 </InDoc>
 
+<InDoc product='redis'>
+
+```ini title='xos.conf'
+file=/var/log/redis.log
+```
+
+</InDoc>
+
+<InDoc product='mongodb'>
+
+```ini title='xos.conf'
+file=/var/log/mongodb/mongodb.log
+```
+
+</InDoc>
+
+<InDoc product='altibase'>
+
+```ini title='xos.conf'
+file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb'>
 
 適用する前に、XOSエージェントをインストールしてエージェント設定を行う必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
@@ -56,6 +80,8 @@ file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log
 </InDoc>
 
 :::
+
+<Xclude product="altibase">
 
 ## AWS RDS Logに適用する
 
@@ -122,17 +148,17 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ### インストールと設定
 
-1. WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールすることができます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力してください。
+1. WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールできます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力してください。
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" />メニューで確認できます。 例) 13.124.11.223/13.209.172.35
+   - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで確認できます。 例) 13.124.11.223/13.209.172.35
 
-   - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB ~ 10,240MB間の値を入力してください。
+   - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB \~ 10,240MB間の値を入力してください。
 
-   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="pcode" className="uitext" />項目を確認してください。
+   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="pcode" className="uitext" />項目を確認してください。
 
-   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="project_access_key" className="uitext" />項目を確認してください。
+   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="project_access_key" className="uitext" />項目を確認してください。
 
    - **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
 
@@ -152,7 +178,7 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
      - EventRuleを生成しないためには、`none`を入力してください。
 
-   - **RdsLogGroupName**(**1~9**): ログを受信したいRDS CloudWatchLogGroup Name
+   - **RdsLogGroupName**(**1\~9**): ログを受信したいRDS CloudWatchLogGroup Name
 
      - 例) /aws/rds/seoul-pro-db-01
 
@@ -204,15 +230,17 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 - **WS CloudWatchLogGroup**
 
-  SubscriptionFilter(1~9): RDSの CloudWatch LogGroupに Logが入ってくるとWhatapRDSLogを実行させるフィルター
+  SubscriptionFilter(1\~9): RDSの CloudWatch LogGroupに Logが入ってくるとWhatapRDSLogを実行させるフィルター
 
 - **AWS EventBridge**
 
   Rule: AWSイベントで、RDSと関連したイベントが発生するとWhatapRDSLogを実行させるルール
 
+</Xclude>
+
 ## ログモニタリングを開始する
 
-すべての設定を完了した後、<Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" />メニューにアクセスし、ログモニタリングを活性化してください。
+すべての設定を完了した後、<Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />メニューにアクセスし、ログモニタリングを活性化してください。
 
 <Xclude product="oracle-pro"><ImgLang img='log-start-db.png' desc='ログモニタリングを開始する'/></Xclude>
 

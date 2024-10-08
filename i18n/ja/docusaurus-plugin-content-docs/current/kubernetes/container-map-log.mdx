@@ -8,7 +8,7 @@ keywords:
   - Log
 ---
 
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後**詳細を見る**画面に入力 > **_ログ_**
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後<Cmdname sid="BTN07712" className="uitext" />画面へアクセス> **_ログ_**
 
 ## Kubernetesログ
 
@@ -115,33 +115,3 @@ kubectl set image daemonset/whatap-node-agent whatap-node-agent=whatap/kube_mon:
 WhaTap Kubernetesエージェントバージョンについては、 [次の文書](https://hub.docker.com/r/whatap/kube_mon/tags)で確認できます。
 
 :::
-
-{/* >
-
-- WhaTapモニタリングサービスページで、**_管理_** > **_エージェント設定_**画面で、`logsink_enabled=true`設定を追加
-- クラスタープロジェクト全体のノードを対象に設定を追加するには、**_プロジェクトのデフォルト_** > **_ノード_**を対象に設定を追加
-- 一部のNodeを対象に設定を追加するには、単一または複数のNodeを選択して設定を追加
-
-**_管理_** > **_エージェント設定_** > Nodeエージェント選択 > **_+ オプション追加_** > すべてのエージェントに適用するオプションを選択 > 適用対象Node選択 
-
-![エージェント設定](https://img.whatap.io/media/images/whatap_kubernetes_container_map_logsink_enabled.png)
-
-:::note
-
-WhaTapログモニタリングサービスの詳細については、[次の文書](../log/introduction)を参照してください。 
-
-:::
-
-### ログ検索移動
-
-![ログ検索移動sc](/img/k8s-log-search-to-log-search.png)
-
-**_ログ_**タブの右側にある**_ログ検索_**ボタンをクリックすると、フィルター機能を使用して詳細を表示できる**_ログ_** > **_ログ検索_**メニューに移動します。 
-
-:::note
-
-WhaTapログモニタリングサービスの詳細については、[次の文書](../log/introduction)を参照してください。 
-
-:::
-
-*/}

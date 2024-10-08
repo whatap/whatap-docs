@@ -29,7 +29,13 @@ WhaTap provides the ***Aerospike*** monitoring in a new **feature project** way.
 
 - **Dashboard**: You can efficiently view the metrics through the dashboard.
 
+{/* * **알림 설정**: 설정한 조건 감지 시 실시간으로 알림을 발송해 사용자가 문제에 신속히 대응할 수 있습니다. */}
+
 Effectively manage your complex operating environment of the Aerospike cluster with the WhaTap ***Aerospike*** monitoring. 
+
+{/* 에어로스파이크는 실시간 데이터 처리 및 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. WhaTap provides the ***Aerospike*** monitoring through **Feature Project**. It traces the cluster performance, response time, data consistency, and more in real time to help maintain and optimize the system stability. 
+
+This document provides a description of the monitoring dashboard designed to efficiently trace the performance and status of the Aerospike cluster. */}
 
 ## Installation
 
@@ -136,3 +142,54 @@ The ***Aerospike dashboard*** provided by WhaTap consists of the following:
 ### Alert
 
 <AlertFeature name='Aerospike' />
+
+{/* 
+
+확인 필요(형석님)
+
+### Alert
+
+<AlertFeature name='Aerospike' /> */}
+
+{/* ### 주요 모니터링 메트릭
+
+1. **CPU usage**: It prevents overload by tracing the CPU utilization.
+2. **Memory usage**: It monitors the memory usage to prevent out-of-memory errors.
+3. **Storage usage**: It checks whether there is enough storage.
+4. **Read/Write operation**: It monitors the number of read and write operations that can represent performance bottlenecks.
+5. **Network traffic**: It traces the network usage to prevent traffic issues. */}
+
+{/* Aerospike 클러스터의 성능 및 상태를 효율적으로 모니터링하기 위해 설계된 대시보드의 기능과 구성 요소를 설명합니다.
+
+Dashboard configuration
+The dashboard is divided into various sections and provides key metrics as follows:
+
+Cluster status overview
+
+Cluster Size: It displays the number of nodes included in the current cluster.
+Cluster Object Counts: It displays the number of objects stored in the cluster.
+Read/Write operations
+
+Read Ops: It traces the number of read operations executed on each node.
+Write Ops: It monitors the number of write operations executed on each node.
+Connectivity and I/O performance
+
+Aerospike Cluster DB Connections: It monitors the number of database connections in the cluster.
+IO Percent: It displays the I/O resource utilization on each node.
+Traffic In/Out: It traces the network traffic in the cluster.
+Resource usage
+
+CPU: It displays the CPU utilization on each node.
+Memory Used Pct: It monitors the percentage of memory in use on each node.
+Disk Pressure: It represents the disk usage pressure level.
+Namespace metric
+
+Namespace In-Memory Index: It represents the in-memory index size of the namespace.
+Namespace Size: It monitors the overall size of the namespace.
+Key monitoring metrics
+CPU Usage: It prevents overload and maintain performance by tracing the CPU utilization.
+Memory Usage: It prevents out-of-memory errors by monitoring the memory usage.
+Storage Usage: It prevents storage shortage issues by checking the disk space usage.
+Read/Write Operations: It identifies performance bottlenecks by tracing the number of read and write operations.
+Network Traffic: It proactively detects potential traffic issues by monitoring the network usage.
+This dashboard allows you to effectively monitor various performance metrics of the Aerospike cluster and maintain the stability and efficiency of the system. */}

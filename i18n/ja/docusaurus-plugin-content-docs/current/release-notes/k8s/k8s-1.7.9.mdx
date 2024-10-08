@@ -1,0 +1,45 @@
+---
+id: k8s-1_7_9
+title: Kubernetes Agent v1.7.9
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_7_8
+displayed_sidebar: releaseSidebar
+---
+
+2024年08月19日
+
+- <Status priority='1'>Feature</Status> cgroupのv2環境でrss関連メトリック指標の追加収集
+
+  `container::mem_totalrss`：cgroupのv2環境におけるコンテナのメモリRSS(Resident Set Size)を収集する指標です。 この指標はコンテナが実際に使用している物理メモリの量を示します。
+
+- <Status priority='1'>Feature</Status>コンテナのrequest、limitの設定有無に対する指標追加
+
+  - **Memory関連指標**
+
+    - `container::memory_limit_contained`：コンテナのメモリlimitの設定有無を示す指標です。 値が`true`ならlimitが設定されており、`false`なら設定されていないことを指します。
+
+    - `container::memory_request_contained`：コンテナのメモリrequestの設定有無を示す指標です。 値が`true`ならrequestが設定されており、`false`なら設定されていないことを指します。
+
+  - **CPU関連指標**
+
+    - `container::cpu_limit_contained`：コンテナのCPU limitの設定有無を示す指標です。 値が`true`ならlimitが設定されており、`false`なら設定されていないことを指します。
+
+    - `container::cpu_request_contained`：コンテナのCPU requestの設定有無を示す指標です。 値が`true`ならrequestが設定されており、`false`なら設定されていないことを指します。
+
+  - **Ephemeral-Storage関連指標**
+
+    - `container::ephemeral_storage_limit_contained`：コンテナのephemeral-storage limitの設定有無を示す指標です。 値が`true`ならlimitが設定されており、`false`なら設定されていないことを指します。
+
+    - `container::ephemeral_storage_request_contained`：コンテナのephemeral-storage requestの設定有無を示す指標です。 値が`true`ならrequestが設定されており、`false`なら設定されていないことを指します。
+
+- <Status priority='1'>Feature</Status>ノードラベル指標をリストの形で追加
+
+  - `kube_node::labelKey`：Kubernetesノードのラベルキー(Key)を収集する指標です。 ノードに適用されている各ラベルのキーを示します。
+
+  - `kube_node::labelValue`：Kubernetesノードのラベル値(Value)を収集する指標です。 ノードに適用される各ラベルの値を示します。
+
+:::info
+
+Agent download: [kube_mon_1.7.9.tar](https://repo.whatap.io/docker/kube_mon_1.7.9.tar)
+
+:::

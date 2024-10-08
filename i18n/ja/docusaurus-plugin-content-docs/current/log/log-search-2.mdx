@@ -78,7 +78,7 @@ import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
 
 <Loguilogcontent />
 
-- ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。 ![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体Contentを確認することができます。
+- ![number-s](/img/number-03.png) ログテーブルの行(ログ)ごとに![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンがあります。 ![アイコン](/img/ic-caret-right.svg)**_詳細_**ボタンをタップすると![number-s](/img/number-04.png)のように、ログの全体Contentを確認できます。
 
 - ログのタグを選択すると、**_コピー_**、**_検索_**、**_除外検索_**、**_隣接ログ検索_**のドロップダウンメニューが表示されます。
 
@@ -86,7 +86,7 @@ import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
 
 ### フィルター適用
 
-![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定することができます。 右側から、<Logfilterapply2 /> 
+![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定できます。 右側から、<Logfilterapply2 /> 
 
 ### 構文解析されていないキーワードのフィルター適用
 
@@ -162,7 +162,7 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 - **隣接ログ**
 
-  **_隣接ログ_**オプションを選択すると**_隣接ログ_**詳細ウィンドウが表示されます。 選択したログのサーバーを対象に選択したログと隣接するタイムゾーンのログを表示します。 **_時間選択_**ボタンをクリックして、隣接するタイムゾーンのログを表示できます。 基本のログは青色で表示されます。
+  **_隣接ログ_**オプションを選択すると**_隣接ログ_**詳細ウィンドウが表示されます。 選択したログのサーバーを対象に選択したログと隣接するタイムゾーンのログを照会します。 **_時間選択_**ボタンをクリックして、隣接するタイムゾーンのログを表示できます。 基本のログは青色で表示されます。
 
   <ImgLang img='log-search-adjacent-log.png' desc='ログタグ隣接ログ'/>
 
@@ -186,11 +186,11 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 複数キーワードでハイライトする場合は、次のように作成します。
 
-| 入力文字列                 | 説明                                         | 結果                |
-| --------------------- | ------------------------------------------ | ----------------- |
-| `a b c`               | 各キーワードをスペースで区切りします。                        | a, b, c           |
-| `"Whatap is good."`   | キーワードにスペースを含める場合は、`''`または`""`で囲みます。        | Whatap is good.   |
-| `"Whatap\\ is good."` | ""で囲まれたキーワードに、`\`を含める場合は、`\\`と入力する必要があります。 | Whatap\\ is good. |
+| 入力文字列                 | 説明                                         | 結果               |
+| --------------------- | ------------------------------------------ | ---------------- |
+| `a b c`               | 各キーワードをスペースで区切りします。                        | a, b, c          |
+| `"Whatap is good."`   | キーワードにスペースを含める場合は、`''`または`""`で囲みます。        | Whatap is good.  |
+| `"Whatap\\ is good."` | ""で囲まれたキーワードに、`\`を含める場合は、`\\`と入力する必要があります。 | Whatap\ is good. |
 
 ### ハイライトカラー設定
 
