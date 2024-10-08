@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import Chat from '@site/src/components/assistants/Chat';
+import Chat from './Chat';
 
 const App = () => {
   return (

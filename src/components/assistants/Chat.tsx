@@ -37,8 +37,8 @@ const Chat = () => {
     const assistant = await openai.beta.assistants.create({
       name: "Hockey Expert",
       instructions: "You are a hockey expert. You specialize in helping others learn about hockey.",
-      tools: [{ type: "code_interpreter" }],
-      model: "gpt-4-1106-preview",
+      tools: [{ type: "file_search" }],
+      model: "gpt-4o-mini",
     });
 
     // Create a thread
@@ -106,16 +106,16 @@ const Chat = () => {
   };
 
   return (
-    <Container>
-      <Grid container direction="column" spacing={2} paddingBottom={2}>
+    <div>
+      <div container direction="column" spacing={2} paddingBottom={2}>
         {messages.map((message, index) => (
-          <Grid item alignSelf={message.isUser ? "flex-end" : "flex-start"} key={index}>
+          <div item alignSelf={message.isUser ? "flex-end" : "flex-start"} key={index}>
             <Message key={index} message={message} />
-          </Grid>
+          </div>
         ))}
-      </Grid>
-      <Grid container direction="row" paddingBottom={5} justifyContent={"space-between"}>
-        <Grid item sm={11} xs={9}>
+      </div>
+      <div container direction="row" paddingBottom={5} justifyContent={"space-between"}>
+        <div item sm={11} xs={9}>
           <TextField
             label="Type your message"
             variant="outlined"
@@ -126,15 +126,15 @@ const Chat = () => {
             onKeyDown={handleKeyPress}
           />
           {isWaiting && <LinearProgress color="inherit" />}
-        </Grid>
-        <Grid item sm={1} xs={3}>
+        </div>
+        <div item sm={1} xs={3}>
           <Button variant="contained" size="large" color="primary" onClick={handleSendMessage} disabled={isWaiting}>
             {isWaiting && <CircularProgress color="inherit" />}
             {!isWaiting && <SendIcon fontSize="large" />}
           </Button>
-        </Grid>
-      </Grid>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 
