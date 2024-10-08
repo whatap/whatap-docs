@@ -8,39 +8,111 @@ keywords:
   - データベース
 ---
 
-データベース指標(メトリクス)は、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+データベース指標は、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
 
-| メトリクス                                  | 説明                                                         |
-| -------------------------------------- | ---------------------------------------------------------- |
-| `active sessions`                      | クエリが実行されているセッション数                                          |
-| `block disk read`                      | ディスクからblockを読み込んだ回数                                        |
-| `block gets (CRX)`                     | CR block examineをリクエストした回数                                 |
-| `block updates`                        | Redoログを残してblockを修正した回数                                     |
-| `connect_error`                        | 接続エラーが発生した回数                                               |
-| `consistent block gets`                | CR blockをリクエストした回数                                         |
-| `consistent multi gets`                | Multi CR blockをリクエストした回数                                   |
-| `cpu`                                  | CPU使用率(%)                                                  |
-| `cpu_cores`                            | CPUコア数                                                     |
-| `current block gets`                   | Current blockをリクエストした回数                                    |
-| `current block gets - no wait`         | Current blockを待たずに取得した回数                                   |
-| `dbwr write` - OS                      | DBWRがOSにwriteをリクエストした回数                                    |
-| `execute count`                        | SQL文(statement)を実行した呼び出しの合計数                               |
-| `fatal count`                          | 致命的なエラーが発生した回数                                             |
-| `iowait cpu`                           | CPUの入出力待機に用いた時間比率                                          |
-| `lock wait sessions`                   | 現在rowlockを取得する待機中の数                                        |
-| `logical reads`                        | メモリから読み込まれたデータブロック数、 `db block gets`と `consistent gets`の合計 |
-| `logons cumulative`                    | インスタンスが起動してからのログオン数の合計                                     |
-| `long running sessions`                | 長時間実行中のセッション数                                              |
-| `multi block disk read`                | ディスクからmulti blockを読み込んだ回数                                  |
-| `parse count (hard)`                   | 構文分析の呼び出し合計数(実際の構文分析)                                      |
-| `parse count (total)`                  | 構文分析呼び出しの総数(`hard`, `soft`, `describe`)                    |
-| `physical reads`                       | ディスクで読み取られたデータブロック数                                        |
-| `pq sessions`                          | 並列処理を行っているセッションの数                                          |
-| `sorts (memory)`                       | メモリで実行されたsort作業の数                                          |
-| `sys cpu`                              | sessionによって使用された`cpu time`の合計                              |
-| `the number of user commits performed` | `sys cpu`使用量(%)                                            |
-| `total elapse time`                    | データベースインスタンスが最後に再起動されてから、すべてのリクエストの累積合計経過時間                |
-| `total sessions`                       | すべてのセッション数                                                 |
-| `user cpu`                             | ユーザーが実行するクエリやプロシージャなどの作業を行うCPUの使用量(%)                      |
-| `wait sessions`                        | イベントを待機しているセッション数                                          |
-| `warning count`                        | すべてのアラート数                                                  |
+指標情報の詳細については、[次のリンク](https://technet.tmax.co.kr/upload/download/online/tibero/pver-20220224-000002/index.html)を参照してください。
+
+## db_tibero_counter {#db_tibero_counter}
+
+### Tags {#db_tibero_counter-tags}
+
+次は`db_tibero_counter`カテゴリに収集されるタグ値の案内です。
+
+| タグ名         | 説明                  | 備考    |
+| ----------- | ------------------- | ----- |
+| `agentIp`   | エージェントごとのIPアドレスです。  | -     |
+| `dbIsMulti` | Multitenant対応可否です。  | -     |
+| `dbName`    | データベース名です。          | -     |
+| `dbType`    | データベースの種類です。        | -     |
+| `dbVersion` | 利用中のデータベースのバージョンです。 | -     |
+| `oname`     | エージェント名です。          | ユニーク値 |
+
+### Field {#db_tibero_counter-filed}
+
+次は`db_tibero_counter`カテゴリに収集されるフィールド値の案内です。
+
+| Metrics                                | Description                          |
+| -------------------------------------- | ------------------------------------ |
+| `active_sessions`                      | 現在、活性化されているセッションの数です。                |
+| `block_updates`                        | ブロック更新が発生した回数です。                     |
+| `connect_error`                        | 接続エラーが発生した回数です。                      |
+| `DB_CPU`                               | データベースが使用したCPU比率です。                  |
+| `DB_CPU_time`                          | データベースがCPU処理に費やした時間の合計(ミリ秒単位)です。     |
+| `dbwr_write_-_OS`                      | データベース作成タスクがオペレーティング システムで実行された回数です。 |
+| `execute_count`                        | SQLコマンドが実行された回数です。                   |
+| `fatal_count`                          | クリティカルなエラーが発生した回数です。                 |
+| `lock_wait_sessions`                   | ロック待機のため、待機中のセッションの数です。              |
+| `logical_reads`                        | 論理的読み込み作業が発生した回数です。                  |
+| `logons_cumulative`                    | 累積されたログイン回数です。                       |
+| `long_running_sessions`                | 長時間実行中のセッションの数です。                    |
+| `parse_count_(hard)`                   | ハードパース作業が発生した回数です。                   |
+| `parse_count_(total)`                  | パース作業が発生した合計回数です。                    |
+| `physical_reads`                       | 物理的読み込み作業が発生した回数です。                  |
+| `pq_sessions`                          | 並列クエリ作業が実行されたセッションの数です。              |
+| `sorts_(memory)`                       | メモリ内でソート作業が発生した回数です。                 |
+| `the_number_of_user_commits_performed` | 実行されたユーザーコミットの回数です。                  |
+| `total_elapse_time`                    | 合計の経過時間です。                           |
+| `total_sessions`                       | セッションの合計です。                          |
+| `wait_sessions`                        | 待機中のセッションの数です。                       |
+| `warning_count`                        | 警告が発生した回数です。                         |
+| `WE_BUF_FREE_time_waited`              | プロセスがバッファが空になるのを待つ待機時間の合計です。         |
+| `WE_BUF_FREE_total_timeouts`           | バッファ空け待機中に発生したタイムアウトの回数です。           |
+| `WE_BUF_FREE_total_waits`              | バッファの空けイベントによる待機回数の合計です。             |
+| `WE_BUF_WAIT_time_waited`              | バッファの待機イベントで待機した合計時間です。              |
+| `WE_BUF_WAIT_total_timeouts`           | バッファの待機中に発生したタイムアウトの回数です。            |
+| `WE_BUF_WAIT_total_waits`              | バッファの待機イベントによる待機回数の合計です。             |
+| `WE_BUF_WRITE_time_waited`             | バッファの書き込みイベントで待機した合計時間です。            |
+| `WE_BUF_WRITE_total_timeouts`          | バッファの書き込み中に発生したタイムアウトの回数です。          |
+| `WE_BUF_WRITE_total_waits`             | バッファの書き込みイベントによる待機回数の合計です。           |
+| `WE_CKPT_WAIT_time_waited`             | チェックポイントの待機イベントで待機した合計時間です。          |
+| `WE_CKPT_WAIT_total_timeouts`          | チェックポイントの待機中に発生したタイムアウトの回数です。        |
+| `WE_CKPT_WAIT_total_waits`             | チェックポイントの待機イベントによる待機回数の合計です。         |
+| `WE_LGWR_ARCHIVE_time_waited`          | ログレコーダーがアーカイブ作業を待つ合計時間です。            |
+| `WE_LGWR_ARCHIVE_total_timeouts`       | ログレコーダーのアーカイブ作業中に発生したタイムアウトの回数です。    |
+| `WE_LGWR_ARCHIVE_total_waits`          | ログレコーダーのアーカイブ作業による待機回数の合計です。         |
+| `WE_LGWR_LNW_time_waited`              | ログレコーダーがネットワーク経由でログを書くのを待っていた合計時間です。 |
+| `WE_LGWR_LNW_total_timeouts`           | ログレコーダーのネットワーク書き込み中に発生したタイムアウトの回数です。 |
+| `WE_LGWR_LNW_total_waits`              | ログレコーダーのネットワーク書き込みによる待機回数の合計です。      |
+| `WE_LOG_FLUSH_REQ_time_waited`         | ログフラッシュのリクエスト待機中の合計待機時間です。           |
+| `WE_LOG_FLUSH_REQ_total_timeouts`      | ログ フラッシュのリクエスト中に発生したタイムアウトの回数です。     |
+| `WE_LOG_FLUSH_REQ_total_waits`         | ログフラッシュのリクエストによる待機回数の合計です。           |
+| `WE_LOG_FLUSH_SPACE_time_waited`       | ログフラッシュのスペース待機中の合計待機時間です。            |
+| `WE_LOG_FLUSH_SPACE_total_timeouts`    | ログフラッシュのスペース待機中に発生したタイムアウトの回数です。     |
+| `WE_LOG_FLUSH_SPACE_total_waits`       | ログフラッシュのスペース待機による待機回数の合計です。          |
+| `WE_MBR_WAIT_time_waited`              | MBR(Multi Block Read) 待機中の合計待機時間です。  |
+| `WE_MBR_WAIT_total_timeouts`           | MBR待機中に発生したタイムアウトの回数です。              |
+| `WE_MBR_WAIT_total_waits`              | MBR待機による待機回数の合計です。                   |
+| `WE_PROC_DOWN_time_waited`             | プロセス終了待機中の合計待機時間です。                  |
+| `WE_PROC_DOWN_total_timeouts`          | プロセス終了待機中に発生したタイムアウトの回数です。           |
+| `WE_PROC_DOWN_total_waits`             | プロセス終了待機による待機回数の合計です。                |
+| `WE_SEQ_FLUSH_time_waited`             | シーケンスフラッシュ待機中の合計待機時間です。              |
+| `WE_SEQ_FLUSH_total_timeouts`          | シーケンスフラッシュの待機中に発生したタイムアウトの回数です。      |
+| `WE_SEQ_FLUSH_total_waits`             | シーケンスフラッシュの待機による待機回数の合計です。           |
+| `WE_SEQ_FREESLOT_time_waited`          | シーケンスフリースロット待機中の合計待機時間です。            |
+| `WE_SEQ_FREESLOT_total_timeouts`       | シーケンスフリースロットの待機中に発生したタイムアウトの回数です。    |
+| `WE_SEQ_FREESLOT_total_waits`          | シーケンスフリー スロットの待機による待機回数の合計です。        |
+| `WE_SEQ_NEXTVAL_time_waited`           | シーケンスNEXTVAL待機中の合計待機時間です。            |
+| `WE_SEQ_NEXTVAL_total_timeouts`        | シーケンスNEXTVAL待機中に発生したタイムアウトの回数です。     |
+| `WE_SEQ_NEXTVAL_total_waits`           | シーケンスNEXTVAL待機による待機回数の合計です。          |
+| `WE_SEQ_WRITEBACK_time_waited`         | シーケンス書き込み待機中の合計待機時間です。               |
+| `WE_SEQ_WRITEBACK_total_timeouts`      | シーケンス書き込み待機中に発生したタイムアウトの回数です。        |
+| `WE_SEQ_WRITEBACK_total_waits`         | シーケンス書き込み待機による待機回数の合計です。             |
+| `WE_WLOCK_DML_time_waited`             | DMLロック待機中の合計待機時間です。                  |
+| `WE_WLOCK_DML_total_timeouts`          | DMLロック待機中に発生したタイムアウトの回数です。           |
+| `WE_WLOCK_DML_total_waits`             | DMLロック待機による待機回数の合計です。                |
+| `WE_WLOCK_TX_time_waited`              | トランザクションのロック待機中の合計待機時間です。            |
+| `WE_WLOCK_TX_total_timeouts`           | トランザクションのロックの待機中に発生したタイムアウトの回数です。    |
+| `WE_WLOCK_TX_total_waits`              | トランザクションのロック待機による待機回数の合計です。          |
+| `WE_WTHR_MSG_time_waited`              | スレッドメッセージの待機中の合計待機時間です。              |
+| `WE_WTHR_MSG_total_timeouts`           | スレッドメッセージの待機中に発生したタイムアウトの回数です。       |
+| `WE_WTHR_MSG_total_waits`              | スレッドメッセージの待機による待機回数の合計です。            |
+| `WE_WTHR_READY_time_waited`            | スレッド準備状態の待機中の合計待機時間です。               |
+| `WE_WTHR_READY_total_timeouts`         | スレッド準備状態の待機中に発生したタイムアウトの回数です。        |
+| `WE_WTHR_READY_total_waits`            | スレッド準備状態の待機による待機回数の合計です。             |
+| `WE_WTHR_START_time_waited`            | スレッド開始待機中の合計待機時間です。                  |
+| `WE_WTHR_START_total_timeouts`         | スレッド開始待機中に発生したタイムアウトの回数です。           |
+| `WE_WTHR_START_total_waits`            | スレッド開始待機による待機回数の合計です。                |
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />

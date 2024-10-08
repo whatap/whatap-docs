@@ -14,6 +14,18 @@
 
   アクティブトランザクション発生件数(`active_tx_count`)が100個を超過した状態になると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
+- **_Apdex 100 by kind_**
+
+  カテゴリ：[`app_counter`](metrics-app#app_counter)
+
+  エージェント種類別アプリケーション性能メトリクスのパーセンテージ(`apdex100`)が95%未満だと警告(<span class="slow">Warning</span>)レベルの通知を、90%未満であれば危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Apdex 100 by kind_**
+
+  カテゴリ：[`app_counter`](metrics-app#app_counter)
+
+  プロジェクトの全体エージェントのアプリケーション性能マトリクスのパーセンテージ(`apdex100`)が95%未満だと警告(<span class="slow">Warning</span>)レベルの通知を、90%未満であれば危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
 - **_Server CPU_**
 
   カテゴリ：[`app_host_resource`](metrics-app#app_host_resource)
@@ -204,6 +216,14 @@
 
   トランザクションの平均リスポンスタイム(`resp_time`)が10回連続、2,000ms(2秒)を超えた状態で続く場合は警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
+- **_kube-apiserver CPU Limit Alert_**
+
+  kube-apiserverのCPU使用率が50%を超えると警告(<span class="slow">Warning</span>) レベルの通知を、80%を超えると危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
+
+- **_kube-apiserver Memory Limit Alert_**
+
+  kube-apiserverのメモリ使用量が50%を超えると警告(<span class="slow">Warning</span>) レベルの通知を、80%を超えると危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
+
 :::note
 
 基本イベント テンプレートに適用されているフィールドの詳細については、[次の文書](metrics-kubernetes)を参考にしてください。
@@ -262,6 +282,18 @@
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
+- **_CPU_**
+
+  カテゴリ：[`db_postgresql_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_postgresql_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
   カテゴリ：[`db_postgresql_counter`](metrics-data-list)
@@ -300,6 +332,18 @@
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
+- **_CPU_**
+
+  カテゴリ：[`db_oracle_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_oracle_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
   カテゴリ：[`db_oracle_counter`](metrics-data-list)
@@ -336,7 +380,13 @@
 
   カテゴリ：[`db_oracle_dma_counter`](metrics-data-list)
 
-  CPU使用率(`cpu`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+  CPU使用率(`cpu(xos)`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_oracle_dma_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Lock Wait Sessions_**
 
@@ -366,19 +416,31 @@
 
 - **_Active Sessions_**
 
-  カテゴリ：`db_cubrid_counter`
+  カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
+- **_CPU_**
+
+  カテゴリ：[`db_cubrid_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_cubrid_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
-  カテゴリ：`db_cubrid_counter`
+  カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Memory_**
 
-  カテゴリ：`db_cubrid_counter`
+  カテゴリ：[`db_cubrid_counter`](metrics-data-list)
 
   メモリ使用率(`mem(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
@@ -398,19 +460,31 @@
 
 - **_Active Sessions_**
 
-  カテゴリ：`db_tibero_counter`
+  カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
+- **_CPU_**
+
+  カテゴリ：[`db_tibero_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_tibero_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
-  カテゴリ：`db_tibero_counter`
+  カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Memory_**
 
-  カテゴリ：`db_tibero_counter`
+  カテゴリ：[`db_tibero_counter`](metrics-data-list)
 
   メモリ使用率(`mem(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
@@ -438,13 +512,13 @@
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
-  CPU使用率(`cpu`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+  CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Connection Failed_**
 
   カテゴリ：[`db_altibase_counter`](metrics-data-list)
 
-  データベース接続が15回以上失敗した場合、危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Lock Wait Sessions_**
 
@@ -474,27 +548,27 @@
 
 - **_Active Sessions_**
 
-  カテゴリ：[`db_mssql_counter`](metrics-mssql)
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   クエリを実行中のセッション数(`active_sessions`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
+- **_CPU_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  CPU使用率(`cpu`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗した場合、危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
-  カテゴリ：[`db_mssql_counter`](metrics-mssql)
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
-
-- **_Memory_**
-
-  カテゴリ：[`db_mssql_counter`](metrics-mssql)
-
-  メモリ使用率(`mem(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
-
-  :::note
-
-  このテンプレートは、XOSエージェントを設定して実行した場合にのみ使用できます。 XOSエージェント設定の詳細については、[次の文書](after-install-agent#agent-architecture)を参考にしてください。
-
-  :::
 
 </InDoc>
 
@@ -503,6 +577,18 @@
 <ImgLang img='event-config-v2-db-redis.png' desc='イベント一覧' />
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
+
+- **_CPU Utilization_**
+
+  カテゴリ：[`db_redis_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_redis_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Memory Utilization_**
 
@@ -541,6 +627,18 @@
   カテゴリ：[`db_mongodb_counter`](metrics-data-list)
 
   現在作業中のクライアントの接続数(`active$connections`)が30を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_CPU Utilization_**
+
+  カテゴリ：[`db_mongodb_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_mongodb_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Global Lock Queue count_**
 

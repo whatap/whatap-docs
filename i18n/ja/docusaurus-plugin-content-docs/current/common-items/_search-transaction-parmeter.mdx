@@ -1,6 +1,6 @@
-### SQLパラメータ照会 {#transaction-parameter}
+### SQLパラメータの照会 {#transaction-parameter}
 
-<Cmdname sid="TTL06126" className="uitext" />タブでSQLステップを選択したり<Cmdname sid="TTL06127" className="uitext" />タブで![ポップアップアイコン](/img/ic-popup.svg)ボタンを選択してください。 パラメータを照会できる<UI>SQL</UI>ウィンドウが表示されます。
+<Cmdname sid="TTL06126" className="uitext" />タブでSQLステップを選択するか、<Cmdname sid="TTL06127" className="uitext" />タブで![ポップアップ](/img/ic-popup.svg)ボタンを選択します。 パラメータを照会できる<UI>SQL</UI>画面が表示されます。
 
 <ImgLang img='sql-parameter-query.png' desc='SQL' />
 
@@ -18,11 +18,11 @@
 
 <InDoc product='java'>
 
-- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは、*`WHATAP_HOME`/security.conf*ファイル内の6桁の文字列(`paramkey`)です。 別の文字列に変更できます。
+- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは*`WHATAP_HOME`/security.conf*ファイル内の6桁の文字列(`paramkey`)です。 別の文字列に変更できます。
 
   :::note
 
-  <Cmdname sid="BTN06764" className="uitext" />はSQL変数の照会、HTTPクエリの照会、Threadの中止に必要です。 詳細については、[次の文書](install-agent#security)を参照してください。
+  <Cmdname sid="BTN06764" className="uitext" />は、SQL変数の照会、HTTPクエリの照会、Threadの中止に必要です。 詳細については、[次の文書](install-agent#security)を参照してください。
 
   :::
 
@@ -30,7 +30,7 @@
 
 <InDoc product='php,golang'>
 
-- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは、*`WHATAP_HOME`/security.conf*ファイル内の6桁の文字列(`paramkey`)です。 別の文字列に変更できます。
+- <Cmdname sid="BTN06764" className="uitext" />：復号化されたパラメータの値を確認できます。 パスワードは*`WHATAP_HOME`/security.conf*ファイル内の6桁の文字列(`paramkey`)です。 別の文字列に変更できます。
 
   :::note
 
@@ -40,7 +40,7 @@
 
 </InDoc>
 
-- <Cmdname sid="format" className="uitext" />：SQL文をインデント、フォーマット化して可読性を高めることができます。
+- <Cmdname sid="format" className="uitext" />：SQL文をインデントまたはフォーマット化して可読性を高めることができます。
 
 - ![コピーアイコン](/img/ico-copy.svg)：SQL文章をクリップボードにコピーできます。
 
@@ -59,7 +59,7 @@ SQL変数とHTTPクエリを照会するには、次のオプションをエー�
 <InDoc product="php">
 
 ```ini title='whatap.conf'
-# SQLパラメータ照会オプション:オプションが適用されるとSQLパラメータを暗号化して収集します。
+# SQLパラメータ照会オプション: オプションが適用されるとSQLパラメータを暗号化して収集します。
 whatap.profile_sql_param_enabled=true 
 
 # HTTPパラメータ照会オプション: オプションが適用されると、HTTPクエリパラメータを暗号化して収集します。

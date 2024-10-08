@@ -1,4 +1,4 @@
-Dockerコンテナベースで実行するPHPアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする過程を次のように案内します。 
+Dockerコンテナベースで実行するPHPアプリケーションに、WhaTapモニタリングエージェントを適用し、コンテナイメージをパッケージングする手順を次のように案内します。 
 
 <InDoc product='kubernetes'>
 
@@ -52,13 +52,13 @@ RUN tar -xvzf whatap-php.tar.gz -C /
 
 :::note 
 
-**アクセスキー**がDocker Public状態のイメージにさらされないように注意してください。
+**アクセスキー**がDocker Publicのイメージにオープンされないように注意してください。
 
 :::
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。 アプリケーションリリーズ*yaml*ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定します。 アプリケーションのリリーズ*yaml*ファイルに次の内容を追加します。 
 
 ```yaml
 
@@ -108,7 +108,7 @@ spec:
 <Tabs>
 <TabItem value="cm" label="Command" default>
 
-アプリケーション開始コマンドの前にwhatap-php開始コマンドを追加してください。 
+アプリケーション開始コマンドの前にwhatap-php開始コマンドを追加します。 
 
 ```docker'
 sh -c "/usr/whatap/php/whatap-php start && [アプリケーション開始コマンド]"
@@ -139,7 +139,7 @@ RUN echo "stderr_logfile_maxbytes=0" >> /etc/supervisor/conf.d/whatap.conf
 
 </Tabs>
 
-次のコマンドを実行して、WhaTapサービスが正常に実行されているかを確認してください。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集し始めます。
+次のコマンドを実行して、WhaTapサービスが正常に実行されているかを確認してください。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集します。
 
 ```docker
 

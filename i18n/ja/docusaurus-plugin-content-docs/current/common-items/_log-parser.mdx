@@ -18,7 +18,7 @@
 
 ログが不規則な形で収集される場合、GROKパーサを使用してログをパーシングできます。 GROKパターンは、named regular expressionsを提供し、正規表現をより簡単かつ便利に使用できます。 
 
-GROKパーサーパターンの登録については、次の動画ガイドを参考にしてください。
+GROKパーサパターンの登録については、次の動画ガイドを参考にしてください。
 
 <Youtube ko="skgg5KOFGpI" en="skgg5KOFGpI" ja="skgg5KOFGpI" />
 
@@ -86,7 +86,7 @@ GROKは2種類の文法を提供します。
 [date][logLevel][caller] projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuildElapsed
 ```
 
-semanticな単語すべて、正規表現に書き換えできます。 GROKパーサーを使用すると、事前に定義されたnamed regular expressionsを活用できます。 ここで使われた`TIMESTAMP_ISO8601`、`LOGLEVEL`、`DATA`は、GROKが提供するnamed regular expressionsです。 これらの値は、それぞれ次の正規表現に置き換えられてマッチングされます。 
+semanticな単語すべて、正規表現に書き換えできます。 GROKパーサを使用すると、事前に定義されたnamed regular expressionsを活用できます。 ここで使われた`TIMESTAMP_ISO8601`、`LOGLEVEL`、`DATA`は、GROKが提供するnamed regular expressionsです。 これらの値は、それぞれ次の正規表現に置き換えられてマッチングされます。 
 
 - name: `TIMESTAMP_ISO8601` 
 
@@ -190,51 +190,51 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 <Cmdname sid="side_logSetting" className="uitext" /> &gt; <Cmdname sid="log_parser_setting_primary" className="uitext" />
 
-1. GROKパターンパーサを適用するには、<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動してください。
+1. GROKパターンパーサを適用するには、<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動します。
 
-   <ImgLang img='log-1st-parser-list.png' desc='ログパーサー一覧'/>
+   <ImgLang img='log-1st-parser-list.png' desc='ログパーサ一覧'/>
 
-2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_GROK_**パーサーを選択してください。
+2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_GROK_**パーサを選択します。
 
-   <ImgLang img='log-1st-grok.png' desc='Grokパターンパーサー登録'/>
+   <ImgLang img='log-1st-grok.png' desc='Grokパターンパーサ登録'/>
 
-3. <Cmdname sid="category" className="uitext" />および<Cmdname sid="ITM06439" className="uitext" />、<Cmdname sid="pattern" className="uitext" />を入力してください。 <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウのコンポーネントは次の通りです。
+3. <Cmdname sid="category" className="uitext" />および<Cmdname sid="ITM06439" className="uitext" />、<Cmdname sid="pattern" className="uitext" />を入力します。 <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面の構成内容は、次の通りです。
 
    - <Cmdname sid="category" className="uitext" />
 
-     ログカテゴリを選択してください。 <Cmdname sid="category" className="uitext" />は必須で入力する必要があります。
+     ログカテゴリを選択してください。 <Cmdname sid="category" className="uitext" />は必須入力項目です。
 
    - <Cmdname sid="ITM06439" className="uitext" />
 
-     - 条件を満たすログのみパーサーが適用されます。
+     - 条件を満たすログのみパーサが適用されます。
 
-     - <Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力してください。
+     - <Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力します。
 
-     - <Cmdname sid="ITM06439" className="uitext" />は、すべてのパーサーが実行される前に適用されます。 つまり、パーサの結果として追加される<Cmdname sid="tag" className="uitext" />を使用することはできません。
+     - <Cmdname sid="ITM06439" className="uitext" />は、すべてのパーサが実行される前に適用されます。 つまり、パーサの結果として追加される<Cmdname sid="tag" className="uitext" />を使用できません。
 
    - <Cmdname sid="pattern" className="uitext" />
 
      GROKパターンを指定してください。 必須入力です。
 
-4. <Cmdname sid="add" className="uitext" />ボタンを選択してパーサーを登録してください。
+4. <Cmdname sid="add" className="uitext" />ボタンを選択してパーサを登録します。
 
 :::note
 
-- ログパーサー一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更したり<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
+- ログパーサ一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更するか、<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
 
-- パーサを登録する前に<Cmdname sid="simulation" className="uitext" />を通じて登録しようとするパターンが正常であるか確認できます。 
+- パーサを登録する前に<Cmdname sid="simulation" className="uitext" />を通じて登録するパターンが正常であるか確認できます。 
 
 :::
 
 :::note
 
-**GROKパーサーの注意事項**
+**GROKパーサの注意事項**
 
-- GROKパーサーは`%{SYNTAX:SEMANTIC}`、`%{SYNTAX:SEMANTIC}`二つのパターンをサポートします。
+- GROKパーサは`%{SYNTAX:SEMANTIC}`、`%{SYNTAX:SEMANTIC}`二つのパターンをサポートします。
 
 - `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`を必ず入力してください。
 
-- `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`は一つのパーサーの中でuniqueしなければなりません。
+- `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`は一つのパーサの中でuniqueしなければなりません。
 
 - `(?<SEMANTIC>REGX)`パターンを使用する時、`SEMANTIC`は文字(a-z、A-Z)と数字(0-9)そして、指定された特殊文字(`.`、`_`、`-`)のみが使えます。
 
@@ -246,21 +246,21 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 ### シミュレーション{#grok-simulation}
 
-<Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />ウィンドウから<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を入力してパーシング結果を事前に確認することができます。
+<Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />画面で<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を入力するとパーシング結果を確認できます。
 
 > <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 >
 > <Cmdname sid="pattern" className="uitext" />例: `\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
 
-1. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウで<Cmdname sid="simulation" className="uitext" />ボタンを選択してください。
+1. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で<Cmdname sid="simulation" className="uitext" />ボタンを選択します。
 
-2. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />ウィンドウから<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を入力してください。
+2. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />画面から<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を入力します。
 
-3. <Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />入力後<Cmdname sid="simulation" className="uitext" />ボタンを選択してください。 次のように<Cmdname sid="simulation_result" className="uitext" />を確認することができます。
+3. <Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />入力後<Cmdname sid="simulation" className="uitext" />ボタンを選択します。 次のように<Cmdname sid="simulation_result" className="uitext" />を確認できます。
 
-   <ImgLang img='log-grok-parser-simulation.png' desc='GROKパーサーシミュレーション'/>
+   <ImgLang img='log-grok-parser-simulation.png' desc='GROKパーサシミュレーション'/>
 
-## JSONパーサー{#json-parser-detail}
+## JSONパーサ{#json-parser-detail}
 
 ログがJSONフォーマットで収集される場合、JSONパーサを使用して簡単かつ便利にパーシングできます。
 
@@ -268,27 +268,27 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 <Cmdname sid="side_logSetting" className="uitext" /> &gt; <Cmdname sid="log_parser_setting_primary" className="uitext" />
 
-1. JSONパターンパーサを適用するには<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動してください。
+1. JSONパターンパーサを適用するには<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動します。
 
-   <ImgLang img='log-1st-parser-list.png' desc='ログパーサー一覧'/>
+   <ImgLang img='log-1st-parser-list.png' desc='ログパーサ一覧'/>
 
-2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_JSON_**パーサを選択してください。
+2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_JSON_**パーサを選択します。
 
-   <ImgLang img='log-1st-json.png' desc='JSONパーサーパターンの登録'/>
+   <ImgLang img='log-1st-json.png' desc='JSONパーサパターンの登録'/>
 
-3. <Cmdname sid="category" className="uitext" />および<Cmdname sid="ITM06439" className="uitext" />、<Cmdname sid="pattern" className="uitext" />を入力してください。 <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウのコンポーネントは次の通りです。
+3. <Cmdname sid="category" className="uitext" />および<Cmdname sid="ITM06439" className="uitext" />、<Cmdname sid="pattern" className="uitext" />を入力します。 <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面の構成内容は、次の通りです。
 
    - <Cmdname sid="category" className="uitext" />
 
-     ログカテゴリを選択してください。 <Cmdname sid="category" className="uitext" />は必須で入力する必要があります。
+     ログカテゴリを選択してください。 <Cmdname sid="category" className="uitext" />は必須入力項目です。
 
    - <Cmdname sid="ITM06439" className="uitext" />
 
-     - 条件を満たすログのみパーサーが適用されます。
+     - 条件を満たすログのみパーサが適用されます。
 
-     - <Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力してください。
+     - <Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力します。
 
-     - <Cmdname sid="ITM06439" className="uitext" />は、すべてのパーサーが実行される前に適用されます。 つまり、パーサの結果として追加される<Cmdname sid="tag" className="uitext" />を使用することはできません。
+     - <Cmdname sid="ITM06439" className="uitext" />は、すべてのパーサが実行される前に適用されます。 つまり、パーサの結果として追加される<Cmdname sid="tag" className="uitext" />を使用できません。
 
    - <Cmdname sid="pattern" className="uitext" />
 
@@ -312,13 +312,13 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
        例のログで**_Prefix_**と**_Postfix_**を`--`に指定し、**_Ignore_**に`url`を指定時`host`、`method`、`status`3つ<Cmdname sid="tag" className="uitext" />のみ生成します。
 
-4. <Cmdname sid="add" className="uitext" />ボタンを選択してパーサーを登録してください。
+4. <Cmdname sid="add" className="uitext" />ボタンを選択してパーサを登録します。
 
 :::note
 
-- ログパーサー一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更したり<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
+- ログパーサ一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更するか、<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
 
-- パーサを登録する前に<Cmdname sid="simulation" className="uitext" />を通じて登録しようとするパターンが正常であるか確認できます。 GROKパーサー登録シミュレーションプロセスと同じです。 [次の文書](#grok-simulation)を参考にしてください。
+- パーサを登録する前に<Cmdname sid="simulation" className="uitext" />を通じて登録するパターンが正常であるか確認できます。 GROKパーサ登録シミュレーションプロセスと同じです。 [次の文書](#grok-simulation)を参考にしてください。
 
 :::
 
@@ -328,7 +328,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"}
 ```
 
-上記のようなサンプルログが収集された場合<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />ウィンドウで**_JSON_**パーサを選択してください。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な<Cmdname sid="tag" className="uitext" />を次のように抽出することができます。
+上記のようなサンプルログが収集された場合<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で**_JSON_**パーサを選択します。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な<Cmdname sid="tag" className="uitext" />を次のように抽出できます。
 
 ```javascript title='Tag extraction'
 - host : 10.21.3.24

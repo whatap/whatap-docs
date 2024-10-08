@@ -16,7 +16,7 @@ keywords:
 
 :::
 
-## エージェントインストール {#installagent}
+## エージェント インストール {#installagent}
 
 次のコマンドを実行してエージェントをインストールしてください。
 
@@ -30,7 +30,7 @@ npm install whatap
 
 <Filetree name="whatap">
 
-<FiletreeItem name="package.json" type="file">サンプルアプリケーション情報と依存関係(dependency)管理文書ファイルです。</FiletreeItem>
+<FiletreeItem name="package.json" type="file">サンプルアプリケーション情報と依存関係(dependency)の管理文書ファイルです。</FiletreeItem>
 
 <FiletreeItem name="whatap.conf" type="file">モニタリングのためのエージェントの情報とアクセスキー、WhaTapデータ収集サーバーのIP情報などを保存する設定ファイルです。</FiletreeItem>
 
@@ -44,7 +44,7 @@ npm install whatap
 
 **Nuxt.js**アプリケーションインスタンスのための**server/index.js**ファイルを作成してください。 このファイルはプロジェクトのサーバー(_server_) フォルダ内に位置する必要があります。
 
-### Whatapエージェント初期化
+### WhaTapエージェントの初期化
 
 ```javascript title="server/index.js"
 var Whatap = require('whatap').NodeAgent;
@@ -72,7 +72,7 @@ if (config.dev) {
 
 ### Expressサーバー設定とNuxtミドルウェア追加
 
-次のコードで`port`には、サーバーのポート番号を設定してください。
+次のコードで`port`には、サーバーのポート番号を設定します。
 
 ```javascript title="server/index.js"
 app.use(nuxt.render);

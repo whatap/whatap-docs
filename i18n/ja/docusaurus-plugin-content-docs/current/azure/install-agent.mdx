@@ -34,7 +34,7 @@ import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
 
 WhaTapモニタリング用 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)を追加してください。 Secretを作成し、アプリケーションID(ApplicationId), テナントID(TenantId)とシークレット(Secret)をWhaTapに入力してください。 
 
-WhaTapモニタリングは、Monitor Reader、閲覧者、API Managementサービスのアクセス権限が必要です。 Azure PortalでSubscript > アクセス制御(IAM) メニューから「追加」ボタンを押してアクセス権限を追加することができます。
+WhaTapモニタリングのためには、Monitor Reader、Reader、API Management Service Reader権限が必要です。Azure PortalでSubscript > アクセス制御(IAM) メニューで、追加ボタンで権限を追加できます。
 
 ![Azure Active Directory](/img/registeredapps.png)
 
@@ -44,7 +44,7 @@ Azureの認証情報の**_アプリケーションID_**(ApplicationID), **_テ�
 
 <ImgLang img='whatap_azure_auth_dialog.png' desc='Azure Monitor - Authentification' />
 
-### ネームスペースおよび収集サイクルの選択
+### ネームスペースおよび収集周期の選択
 
 import Namespacecollect from "../common-items/_namespace-collect.mdx";
 
@@ -222,6 +222,6 @@ import Collectingperiod from "../common-items/_collecting-period.mdx";
 
 - 完全なコスト発生を防ぐためには、以下を取り除く必要があります。  
 
-  - Azure Portal SubscriptからモニタリングリーダーのRoleを削除してください。 
+  - Azure Portal SubscriptからモニタリングリーダーのRoleを削除します。 
 
-  - Azure Registered Appを除去してください。 
+  - Azure Registered Appを削除します。 

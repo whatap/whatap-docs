@@ -1,0 +1,201 @@
+<Title level={props.level} hashid="column-info" >カラム情報ガイド</Title>
+
+<InDoc pages="instance-monitoring,multi-instance-monitoring,analysis-count-trend">
+
+カラム情報に関する詳しい内容は、[次のリンク](https://technet.tmax.co.kr/upload/download/online/tibero/pver-20220224-000002/index.html)を参照してください。
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| 項目                        | 説明                                          |
+| ------------------------- | ------------------------------------------- |
+| `アクション`                   | 現在実行中のタスク名です。                               |
+| `block_updates`           | ブロックのアップデート回数です。                            |
+| `block_updates_sigma`     | ブロックアップデートの合計回数です。                          |
+| `client_identifier`       | クライアント識別子です。                                |
+| `client_info`             | クライアントの追加情報です。                              |
+| `client_pid`              | クライアントプロセスのPIDです。                           |
+| `command`                 | 現在のセッションで実行中のコマンドです。                        |
+| `consumed_cpu_time`       | セッションで費したCPU時間です。                           |
+| `consumer_group`          | セッションが属する消費者グループです。                         |
+| `cpu(xos)`                | CPU使用率です。                                   |
+| `cpuusage`                | セッションで費されたCPU使用量です。                         |
+| `event_name`              | 待機イベント名です。                                  |
+| `execute_count`           | SQLが実行された回数です。                              |
+| `execute_count_sigma`     | 実行回数の合計です。                                  |
+| `id1`                     | 1番目の識別子値です。                                 |
+| `id2`                     | 2番目の識別子値です。                                 |
+| `ioread(xos)`             | ブロックの読み取りに費やされた実際の時間(milliseconds)です。       |
+| `iowrite(xos)`            | ブロックの書き込みに費やされた実際の時間(milliseconds)です。       |
+| `ipaddr`                  | クライアントのIPアドレスです。                            |
+| `logon_time`              | セッションがデータベースにログインした時間です。                    |
+| `logical_reads`           | 論理的な読み取りの回数です。                              |
+| `logical_reads_sigma`     | 論理的な読み取り回数です。                               |
+| `machine`                 | セッションが実行されているマシン名です。                        |
+| `module`                  | 実行中のモジュール名です。                               |
+| `os_thr_id`               | OSシステムのスレッドIDです。                            |
+| `osuser`                  | セッションを実行しているOSシステムのユーザーです。                  |
+| `parse_count_hard`        | ハードパーシングの回数です。                              |
+| `parse_count_hard_sigma`  | ハードパーシングの合計回数です。                            |
+| `parse_count_total`       | パーシングの合計回数です。                               |
+| `parse_count_total_sigma` | パーシングの合計回数です。                               |
+| `pdml_enabled`            | 並列DMLがアクティブ可否です。                            |
+| `pdml_status`             | 並列DMLのステータスです。                              |
+| `pddl_status`             | 並列DDLの状態です。                                 |
+| `pga_used_mem`            | プロセス専用領域(PGA)で使用中のメモリ量です。                   |
+| `physical_reads`          | 物理的な読み取り回数です。                               |
+| `physical_reads_sigma`    | 物理的な読み取りの合計回数です。                            |
+| `pid`                     | データベースプロセスのPIDです。                           |
+| `pq_status`               | 並列クエリの状態です。                                 |
+| `prev_sql`                | 以前に実行されたSQL文のテキストです。                        |
+| `prev_sql_id`             | 以前に実行されたSQL文の固有IDです。                        |
+| `prev_sql_param`          | 以前に実行されたSQLのパラメータです。                        |
+| `prog_name`               | セッションを実行するプログラム名です。                         |
+| `pss(xos)`                | プロセスの固有メモリ使用量+1つのプロセスが占める共有メモリ比率です。         |
+| `row_wait_block_no`       | 待機中の行のブロック番号です。                             |
+| `row_wait_file_no`        | 待機中の行のファイル番号です。                             |
+| `row_wait_obj_id`         | 待機中の行のオブジェクトIDです。                           |
+| `row_wait_row_no`         | 待機中の行の行番号です。                                |
+| `rss(xos)`                | Resident Set Size(RSS)、プロセスに関連する物理的ページの数です。 |
+| `schemaname`              | セッションが使用されているスキーマ名です。                       |
+| `seq#`                    | セッションの順番を示す値です。                             |
+| `sid`                     | セッションを固有に識別するセッションIDです。                     |
+| `sql_et`                  | SQL実行時間です。                                  |
+| `sql_hash`                | SQL文のハッシュ値です。                               |
+| `sql_id`                  | 実行中のSQL文の固有IDです。                            |
+| `sql_param`               | SQL実行に使用されたパラメータです。                         |
+| `sql_text`                | 実行中のSQL文のテキストです。                            |
+| `sql_trace`               | SQLトレーシング可否です。                              |
+| `state`                   | セッションの現状です。                                 |
+| `status`                  | セッションの状態です。                                 |
+| `terminal`                | セッションが接続されているターミナルの名前です。                    |
+| `type`                    | セッションのタイプです。                                |
+| `usn`                     | アンドゥ(undo) セグメント番号です。                       |
+| `used_blk`                | 使用されたブロック数です。                               |
+| `used_rec`                | 使用されたレコード数です。                               |
+| `wait_event`              | セッションが待機中のイベントです。                           |
+| `wait_time`               | 待機中の時間です。                                   |
+| `wlock_wait`              | セッションのロック待機可否です。                            |
+| `wthr_id`                 | セッションのタスクスレッドIDです。                          |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| 項目               | 説明                             |
+| ---------------- | ------------------------------ |
+| `event`          | 待機イベント名です。                     |
+| `holder type`    | ロックを所有しているセッションのタイプです。         |
+| `id1`            | 1番目の識別子値です。                    |
+| `id2`            | 2番目の識別子値です。                    |
+| `lock mode`      | 現在のセッションでリクエストまたは所有するロックモードです。 |
+| `lock request`   | セッションでリクエストされたロック状態です。         |
+| `module`         | 実行中のモジュール名です。                  |
+| `pid`            | データベースプロセスのPIDです。              |
+| `prev_sql_id`    | 以前に実行されたSQL文の固有IDです。           |
+| `prev_sql_param` | 以前に実行されたSQLのパラメータです。           |
+| `prev_sql_text`  | 以前に実行されたSQL文のテキストです。           |
+| `prog_name`      | セッションを実行するプログラム名です。            |
+| `serial#`        | 同じセッションの繰り返しの試行を区分するシリアル番号です。  |
+| `sid`            | セッションを固有に識別するセッションIDです。        |
+| `sql_et`         | SQL実行時間です。                     |
+| `sql_id`         | 実行中のSQL文の固有IDです。               |
+| `sql_param`      | SQL実行に使用されたパラメータです。            |
+| `sql_text`       | 実行中のSQL文のテキストです。               |
+| `status`         | セッションの状態です。                    |
+| `username`       | セッションを実行するユーザー名です。             |
+| `waiter type`    | ロックを待っているセッションのタイプです。          |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+次の項目は、XOSエージェントをインストールした場合に収集される指標です。
+
+| 項目         | 説明                                     |
+| ---------- | -------------------------------------- |
+| `cputime`  | CPU使用時間                                |
+| `cpuusage` | CPU使用率                                 |
+| `elapse`   | CPU使用経過時間                              |
+| `vsize`    | 仮想メモリサイズ(Kb)                           |
+| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理ページ数 |
+| `state`    | プロセス状態                                 |
+| `ioread`   | ブロックの読み取りに費やされた実際の時間(milliseconds)     |
+| `iowrite`  | ブロックの書き込みに費やされた実際の時間(milliseconds)     |
+| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合   |
+| `uid`      | user id                                |
+| `cmd`      | 実行中のコマンド                               |
+| `longcmd`  | cmdの絶対パス                               |
+
+</TabItem>
+
+</Tabs>
+
+</InDoc>
+
+<InDoc pages="analysis-lock-and-deadlock">
+
+各セッションの詳細については、次のカラムを通じて提供します。
+
+| 項目               | 説明                             |
+| ---------------- | ------------------------------ |
+| `event`          | 待機イベント名です。                     |
+| `holder type`    | ロックを所有しているセッションのタイプです。         |
+| `id1`            | 1番目の識別子値です。                    |
+| `id2`            | 2番目の識別子値です。                    |
+| `lock mode`      | 現在のセッションでリクエストまたは所有するロックモードです。 |
+| `lock request`   | セッションでリクエストされたロック状態です。         |
+| `module`         | 実行中のモジュール名です。                  |
+| `pid`            | データベースプロセスのPIDです。              |
+| `prev_sql_id`    | 以前に実行されたSQL文の固有IDです。           |
+| `prev_sql_param` | 以前に実行されたSQLのパラメータです。           |
+| `prev_sql_text`  | 以前に実行されたSQL文のテキストです。           |
+| `prog_name`      | セッションを実行するプログラム名です。            |
+| `serial#`        | 同じセッションの繰り返しの試行を区分するシリアル番号です。  |
+| `sid`            | セッションを固有に識別するセッションIDです。        |
+| `sql_et`         | SQL実行時間です。                     |
+| `sql_id`         | 実行中のSQL文の固有IDです。               |
+| `sql_param`      | SQL実行に使用されたパラメータです。            |
+| `sql_text`       | 実行中のSQL文のテキストです。               |
+| `status`         | セッションの状態です。                    |
+| `username`       | セッションを実行するユーザー名です。             |
+| `waiter type`    | ロックを待っているセッションのタイプです。          |
+
+</InDoc>
+
+<InDoc pages="analysis-pq-tree">
+
+| 項目               | 説明                       |
+| ---------------- | ------------------------ |
+| `block_updates`  | ブロックのアップデート回数です。         |
+| `client_pid`     | クライアントプロセスのPIDです。        |
+| `event`          | 待機イベント名です。               |
+| `logon_time`     | セッションがデータベースにログインした時間です。 |
+| `logical_reads`  | 論理的な読み取りの回数です。           |
+| `machine`        | セッションが実行されているマシン名です。     |
+| `module`         | 実行中のモジュール名です。            |
+| `physical_reads` | 物理的な読み取り回数です。            |
+| `pid`            | データベースプロセスのPIDです。        |
+| `prev_sql_param` | 以前に実行されたSQLのパラメータです。     |
+| `prev_sql_text`  | 以前に実行されたSQL文のテキストです。     |
+| `prog_name`      | セッションを実行するプログラム名です。      |
+| `seq#`           | セッションの順番を示す値です。          |
+| `sid`            | セッションを固有に識別するセッションIDです。  |
+| `sql_et`         | SQL実行時間です。               |
+| `sql_param`      | SQL実行に使用されたパラメータです。      |
+| `sql_text`       | 実行中のSQL文のテキストです。         |
+| `status`         | セッションの状態です。              |
+| `usn`            | アンドゥ(undo) セグメント番号です。    |
+| `used_blk`       | 使用されたブロック数です。            |
+| `used_rec`       | 使用されたレコード数です。            |
+| `username`       | セッションを実行するユーザー名です。       |
+| `wait_time`      | 待機中の時間です。                |
+
+</InDoc>
+
+:::note
+
+WhaTapは、クライアントに関する情報をデフォルトで保存します。
+
+:::

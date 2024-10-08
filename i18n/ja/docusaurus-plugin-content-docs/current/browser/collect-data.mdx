@@ -47,25 +47,25 @@ WhaTapブラウザーエージェントは、ユーザーのブラウザーで�
 
 <div class='br-data'>
 
-| データ名                               |                      タイプ                     | 説明                                                                   | 例                             |
-| ---------------------------------- | :------------------------------------------: | -------------------------------------------------------------------- | ----------------------------- |
-| navigationTiming.startTimeStamp    |      <span class='type'>TimeStamp</span>     | `navigationStart`のタイムスタンプです。 ページを読み込みが開始された時間のタイムスタンプ値です。            | 1658057382311                 |
-| navigationTiming.eventID           |        <span class='type'>Long</span>        | ページを読み込むイベントの発生時に発行する固有IDです。                                         | x7mkg24tags307                |
-| navigationTiming.redirect          |       <span class='type'>TimeSet</span>      | httpリダイレクションの所要時間です。                                                 | \{duration: 10, start: 315}   |
-| navigationTiming.cache             |       <span class='type'>TimeSet</span>      | app cacheリソースを読み込みにかかる時間です。                                          | \{duration: 5, start: 325\}   |
-| navigationTiming.dns               |       <span class='type'>TimeSet</span>      | ウェブサイトのドメイン検索にかかった時間です。                                              | \{duration: 5, start: 330\}   |
-| navigationTiming.connect           |       <span class='type'>TimeSet</span>      | TCP接続設定の所要時間です。                                                      | \{duration: 6, start: 335\}   |
-| navigationTiming.ssl               |       <span class='type'>TimeSet</span>      | ssl handshakeプロセスの所要時間です。                                            | \{duration: 5, start: 336\}   |
-| navigationTiming.download          |       <span class='type'>TimeSet</span>      | documentダウンロードの所要時間です。                                               | \{duration: 100, start: 341\} |
-| navigationTiming.firstByte         |       <span class='type'>TimeSet</span>      | ブラウザーがサーバーにdocumentをリクエストし、最初のバイトを受信するまでの所要時間です。                     | \{duration: 10, start: 341\}  |
-| navigationTiming.domInteractive    | <span class='type'>HighResolutionTime</span> | `navigationStart`からブラウザーがdocumentの構文解析を完了した時間です。 DOMが用意されているステータスです。 | 441                           |
-| navigationTiming.domContnentLoaded |       <span class='type'>TimeSet</span>      | DOMツリーを生成するのにかかる所要時間です。                                              | \{duration: 50, start: 441\}  |
-| navigationTiming.domComplete       | <span class='type'>HighResolutionTime</span> | 「navigation Start」からdocumentおよび下位リソースの読み込みを完了した時間です。                 | 491                           |
-| navigationTiming.domLoad           |       <span class='type'>TimeSet</span>      | 「onload」イベントの所要時間です。                                                 | \{duration: 1, start: 491\}   |
-| navigationTiming.backendTime       | <span class='type'>HighResolutionTime</span> | 「navigationStart」からリソースのダウンロードまでの所要時間です。                             | 126                           |
-| navigationTiming.frontendTime      |       <span class='type'>TimeSet</span>      | ブラウザーが構文解析を完了した時間からloadイベントが完了するまでの所要時間です。                           | \{duration: 51, start: 441\}  |
-| navigationTiming.loadTime          | <span class='type'>HighResolutionTime</span> | 「navigationStart」から「loadEventEnd」までの所要時間です。                          | 492                           |
-| totalDuration                      | <span class='type'>HighResolutionTime</span> | 「navigation Start」から最終ページロードを完了した時間です。                               | 550                           |
+| データ名                               |                      タイプ                     | 説明                                                                    | 例                             |
+| ---------------------------------- | :------------------------------------------: | --------------------------------------------------------------------- | ----------------------------- |
+| navigationTiming.startTimeStamp    |      <span class='type'>TimeStamp</span>     | `navigationStart`のタイムスタンプです。 ページを読み込みが開始された時間のタイムスタンプ値です。             | 1658057382311                 |
+| navigationTiming.eventID           |        <span class='type'>Long</span>        | ページを読み込むイベントの発生時に発行する固有IDです。                                          | x7mkg24tags307                |
+| navigationTiming.redirect          |       <span class='type'>TimeSet</span>      | httpリダイレクションの所要時間です。                                                  | \{duration: 10, start: 315\}   |
+| navigationTiming.cache             |       <span class='type'>TimeSet</span>      | app cacheリソースを読み込みにかかる時間です。                                           | \{duration: 5, start: 325\}   |
+| navigationTiming.dns               |       <span class='type'>TimeSet</span>      | ウェブサイトのドメイン検索にかかった時間です。                                               | \{duration: 5, start: 330\}   |
+| navigationTiming.connect           |       <span class='type'>TimeSet</span>      | TCP接続設定の所要時間です。                                                       | \{duration: 6, start: 335\}   |
+| navigationTiming.ssl               |       <span class='type'>TimeSet</span>      | ssl handshakeプロセスの所要時間です。                                             | \{duration: 5, start: 336\}   |
+| navigationTiming.download          |       <span class='type'>TimeSet</span>      | documentダウンロードの所要時間です。                                                | \{duration: 100, start: 341\} |
+| navigationTiming.firstByte         |       <span class='type'>TimeSet</span>      | ブラウザーがサーバーにdocumentをリクエストし、最初のバイトを受信するまでの所要時間です。                      | \{duration: 10, start: 341\}  |
+| navigationTiming.domInteractive    | <span class='type'>HighResolutionTime</span> | `navigationStart`からブラウザーがdocumentのパーシングを完了した時刻です。 DOMが用意されているステータスです。 | 441                           |
+| navigationTiming.domContnentLoaded |       <span class='type'>TimeSet</span>      | DOMツリーを生成するのにかかる所要時間です。                                               | \{duration: 50, start: 441\}  |
+| navigationTiming.domComplete       | <span class='type'>HighResolutionTime</span> | 「navigation Start」からdocumentおよび下位リソースの読み込みを完了した時間です。                  | 491                           |
+| navigationTiming.domLoad           |       <span class='type'>TimeSet</span>      | 「onload」イベントの所要時間です。                                                  | \{duration: 1, start: 491\}   |
+| navigationTiming.backendTime       | <span class='type'>HighResolutionTime</span> | 「navigationStart」からリソースのダウンロードまでの所要時間です。                              | 126                           |
+| navigationTiming.frontendTime      |       <span class='type'>TimeSet</span>      | ブラウザーがパーシングを完了した時間からloadイベントが完了するまでの所要時間です。                           | \{duration: 51, start: 441\}  |
+| navigationTiming.loadTime          | <span class='type'>HighResolutionTime</span> | 「navigationStart」から「loadEventEnd」までの所要時間です。                           | 492                           |
+| totalDuration                      | <span class='type'>HighResolutionTime</span> | 「navigation Start」から最終ページロードを完了した時間です。                                | 550                           |
 
 </div>
 

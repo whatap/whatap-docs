@@ -1,6 +1,6 @@
 ---
 id: monitoring-intro
-title: CUBRIDモニタリング
+title: CUBRID V2モニタリング
 description: WhaTapデータベースモニタリングサービス（DBX）は、Queryベースでデータを収集し、性能モニタリングサービスを提供します。
 displayed_sidebar: cubridSidebar
 hide_table_of_contents: false
@@ -12,33 +12,25 @@ keywords:
   - DBX
 ---
 
-WhaTapデータベースモニタリングサービス(DBX)は、Queryベースでデータを収集することにより、性能モニタリングサービスを提供します。データベースの性能管理は、データベースの性能をリアルタイムでモニタリングし、問題点を診断および分析します。問題となるSQLをチューニングして適用し、問題が解決されたかを確認します。
+import NewFeature from '../common-items/_import_db-v2-new-feature.mdx';
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+import Dbspecification from "../common-items/_db-specification.mdx";
+import Dbintroductiondesc from "../common-items/_db-introduction-desc.mdx";
+import V2Note from "../common-items/_import_v2-note.mdx";
+
+<V2Note product="CUBRID" />
+
+<Dbintroductiondesc />
 
 ## CUBRIDモニタリングの特長
 
-- **リアルタイムDBモニタリング**
+<CommonCont />
 
-  リアルタイムでDB性能指標と実行中のSQLを収集し、問題分析と性能の最適化に必要なデータを共有し、データベースの意思決定を可能にします。Active Session、Lock Treeなど障害の主な懸念事項のダッシュボードを提供し、通知内容をリアルタイムで検知することができます。特定のSQLのPlan情報を確認し、SQLチューニングの手がかりを提供します。
+<Dbspecification />
 
-- **特定時点分析**
+## データベースモニタリングV2の新機能{#new-feature}
 
-  指標の短期推移、長期推移、指標比較機能を提供することで、過去の問題状況を分析できます。SQL、Lock Tree、Parallel Query、テーブルスペースの増減などの履歴情報を確認できます。 データベースパラメータの変更履歴を追跡します。
-
-- **大容量規模でも効率的な構造**
-
-  複数のDBサーバーを管理する場合でも、一元化された性能データ収集および効率的なデータストレージ構造により、最適な分析環境を提供します。
-
-- **クラウドDBモニタリング可能**
-
-  Queryベースのモニタリングデータ収集構造では、DBサーバーの種類に制限はありません。AWS、GCP、Azureおよび、OCI環境のDBをモニタリングでき、クラウドリソース指標と統合モニタリングにも対応しています。
-
-- **統合モニタリング**
-
-  アプリケーション、サーバー、データベースモニタリング製品をすべてインストールすることで、サービスの異常を特定する際に接続されたビューを使用して障害の原因を迅速に分析できます。
-
-- **WhaTap SaaS**
-
-  さまざまなデータベース製品を選択でき、毎月のサブスクリプションの利用期間を自由に設定できます。(インストールタイプも提供可能することができます)
+<NewFeature product='CUBRID' ver='2.1.0' />
 
 ## 対応機能
 

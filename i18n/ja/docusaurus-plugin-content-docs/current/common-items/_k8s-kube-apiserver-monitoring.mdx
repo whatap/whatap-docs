@@ -1,6 +1,6 @@
-WhaTap Kubernetesエージェントのインストール時にダウンロードした*yaml*ファイルを以下の案内に従って修正し、kube-apiserverモニタリングを活性化してください。 
+WhaTap Kubernetesエージェントのインストール時にダウンロードした*yaml*ファイルを以下の案内に従って修正し、kube-apiserverモニタリングを活性化します。 
 
-1. `whatap-master-agent` deploymentのspec下位にkube-apiserverモニタリングのためのエージェントコンテナspecを追加してください。
+1. `whatap-master-agent` deploymentのspec下位にkube-apiserverモニタリングのためのエージェントコンテナspecを追加します。
 
    ```yaml
    containers:
@@ -81,7 +81,7 @@ WhaTap Kubernetesエージェントのインストール時にダウンロード
          serviceAccount: whatap
    ```
 
-2. `whatap-master-agent` deploymentの`whatap-master-agent`コンテナspecのenv設定に次の内容を追加してください。 
+2. `whatap-master-agent` deploymentの`whatap-master-agent`コンテナspecのenv設定に次の内容を追加します。 
 
    ```yaml
    env:
@@ -159,7 +159,7 @@ WhaTap Kubernetesエージェントのインストール時にダウンロード
          serviceAccount: whatap
    ```
 
-3. コントロールプレーンモニタリング性能指標を収集するために`whatap` ClusterRoleに次の権限を追加してください。 
+3. コントロールプレーンモニタリング性能指標を収集するために`whatap` ClusterRoleに次の権限を追加します。 
 
    ```yaml
    rules:
@@ -194,6 +194,6 @@ WhaTap Kubernetesエージェントのインストール時にダウンロード
 
 :::note 
 
-`kubectl apply`または`kubectl edit`コマンドを通じてkube-apiserverモニタリングを活性化することもできます。 
+`kubectl apply`または`kubectl edit`コマンドを通じてkube-apiserverモニタリングを活性化できます。 
 
 :::

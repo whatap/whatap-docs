@@ -1,8 +1,8 @@
-WhaTapは、データベースのログモニタリングを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />メニューからデータベースの散在したログをひと目で確認することができます。
+WhaTapは、データベースのログモニタリングを提供します。 サーバーインストール型データベースと、クラウドサービスであるAWS RDSのログを収集できます。 これにより、WhaTapのログモニタリング機能である<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />メニューからデータベースの散在したログをひと目で確認できます。
 
 :::tip
 
-ログモニタリングを適用した後、各メニューの<Cmdname sid="category" className="uitext" />項目とログ一覧からインストール型DBは、 `#DB`、AWS RDSは`#RDS_LOG`、`#RDS_EVENT`と表示されます。
+ログモニタリングを適用した後、各メニューの<Cmdname sid="category" className="uitext" />項目とログ一覧からインストール型DBは`#DB`、AWS RDSは`#RDS_LOG`および`#RDS_EVENT`と表示されます。
 
 <ImgLang img='db-log-category.png' desc='カテゴリ' className='width-200' />
 
@@ -65,9 +65,17 @@ file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log
 
 </InDoc>
 
+<InDoc product='cubrid'>
+
+```ini title='xos.conf'
+file=/cubrid-11.0/log/server/demodb_latest.err
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid'>
 
 適用する前に、XOSエージェントをインストールしてエージェント設定を行う必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
@@ -81,7 +89,7 @@ file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log
 
 :::
 
-<Xclude product="altibase">
+<Xclude product="altibase,cubrid">
 
 ## AWS RDS Logに適用する
 
@@ -89,7 +97,7 @@ file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log
 
 ![AWS RDS Log](/img/aws-rds-log-diagram.png)
 
-AWSではRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの<Cmdname sid="side_log" className="uitext" />メニューからRDSのログとイベントを集約して表示します。
+AWSではRDSのモニタリング向けに様々な情報を提供しますが、これらの情報を確認するにはAWSコンソールから直接アクセスする必要があります。 しかし、WhaTapの**AWS RDS Log**はデータベースモニタリングの<Cmdname sid="side_log" className="uitext" />メニューからRDSのログとイベントを提供します。
 
 WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストールできます。 **AWS CloudFormation**についての詳細は[次のリンク](https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html)を参照してください。
 
@@ -158,7 +166,7 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
    - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="pcode" className="uitext" />項目を確認してください。
 
-   - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="project_access_key" className="uitext" />項目を確認してください。
+   - **ProjectAccessKey**: WhaTapプロジェクトのアクセスキー。<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="project_access_key" className="uitext" />項目を確認してください。
 
    - **TimeOut**: インストールされるWhaTapRDSLogが実行時に最大に維持できる時間です。
 
@@ -240,7 +248,7 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ## ログモニタリングを開始する
 
-すべての設定を完了した後、<Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />メニューにアクセスし、ログモニタリングを活性化してください。
+すべての設定を完了した後、<Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />メニューにアクセスし、ログモニタリングを活性化します。
 
 <Xclude product="oracle-pro"><ImgLang img='log-start-db.png' desc='ログモニタリングを開始する'/></Xclude>
 

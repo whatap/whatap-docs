@@ -9,17 +9,17 @@
 
 <div className="c3-30-60-10">
 
-| タグ名            | 説明                              | 備考    |
-| -------------- | ------------------------------- | ----- |
-| `alias`        | アプリケーションの別称                     | ユニーク値 |
-| `container`    | コンテナ名                           | ユニーク値 |
-| `containerKey` | コンテナキーの値                        | ユニーク値 |
-| `host_ip`      | ホストのIPアドレス                      | ユニーク値 |
-| `okindName`    | `whatap.okind`に分類されたグループ名       | -     |
-| `oname`        | エージェント名                         | ユニーク値 |
-| `onodeName`    | `whatap.onode`に分類されたグループ名       | -     |
-| `pid`          | 特定プロセスの固有識別子(ID)                | -     |
-| `type`         | プラットフォームタイプ(アプリケーションのプログラミング言語) | 言語名   |
+| タグ名            | 説明                         | 備考    |
+| -------------- | -------------------------- | ----- |
+| `alias`        | アプリケーションの別称                | ユニーク値 |
+| `container`    | コンテナ名                      | ユニーク値 |
+| `containerKey` | コンテナキーの値                   | ユニーク値 |
+| `host_ip`      | ホストのIPアドレス                 | ユニーク値 |
+| `okindName`    | `whatap.okind`に分類されたグループ名  | -     |
+| `oname`        | エージェント名                    | ユニーク値 |
+| `onodeName`    | `whatap.onode`に分類されたグループ名  | -     |
+| `pid`          | 特定プロセスの固有識別子(ID)           | -     |
+| `type`         | プラットフォームタイプ(アプリケーションの開発言語) | 言語名   |
 
 </div>
 
@@ -27,25 +27,25 @@
 
 <div className="c4-20-10-50-10">
 
-| フィールド名                   | 単位                                         | 説明                             | 備考 |
-| ------------------------ | ------------------------------------------ | ------------------------------ | -- |
-| `cputime`                | ミリ秒(ms)                                    | トランザクションのcpuの時間                | -  |
-| `db_num_active`          | count                                      | DB Connection Pool Active 数    | -  |
-| `db_num_idle`            | count                                      | DB Connection Pool Idel 数      | -  |
-| `gc_count`               | count                                      | GC発生回数                         | -  |
-| `gc_oldgen_count`        | count                                      | Old Generation GCカウント          | -  |
-| `gc_time`                | ミリ秒(ms)                                    | GCの実行時間                        | -  |
-| `heap_max`               | バイト                                        | ヒープメモリの最大サイズ(-Xmx値)            | -  |
-| `heap_perm`              | バイト                                        | Perm領域のメモリ使用量                  | -  |
-| `heap_tot`               | バイト                                        | 現在割り当てられているヒープメモリの総量           | -  |
-| `heap_use`               | バイト                                        | 現在使用中のヒープメモリの量                 | -  |
-| `pending_finalization`   | count                                      | GC中にfinalizeの実行を待機しているオブジェクトの数 | -  |
-| `proc_fd`                | countプロセスが開いているファイル記述子(file descriptors)の数 | -                              |    |
-| `proc_fd_max`            | count                                      | プロセスがオープンできる最大のファイル記述子の数       | -  |
-| `thread_count`           | count                                      | JVMで実行中のスレッドの総数                | -  |
-| `thread_daemon`          | count                                      | JVMで実行中のデーモンスレッドの数             | -  |
-| `thread_peak_count`      | count                                      | JVMが実行中に観察されたスレッド数の最大値         | -  |
-| `thread_total_started`   | count                                      | JVMが開始以降に生成されたスレッドの合計数         | -  |
-| `threadpool_activeCount` | count                                      | 現在実行中のスレッドプールのスレッド数            | -  |
+| フィールド名                   | 単位      | 説明                                    | 備考 |
+| ------------------------ | ------- | ------------------------------------- | -- |
+| `cputime`                | ミリ秒(ms) | トランザクションのcpuの時間                       | -  |
+| `db_num_active`          | count   | DB Connection Pool Active 数           | -  |
+| `db_num_idle`            | count   | DB Connection Pool Idel 数             | -  |
+| `gc_count`               | count   | GC発生回数                                | -  |
+| `gc_oldgen_count`        | count   | Old Generation GCカウント                 | -  |
+| `gc_time`                | ミリ秒(ms) | GCの実行時間                               | -  |
+| `heap_max`               | バイト     | ヒープメモリの最大サイズ(-Xmx値)                   | -  |
+| `heap_perm`              | バイト     | Perm領域のメモリ使用量                         | -  |
+| `heap_tot`               | バイト     | 現在割り当てられているヒープメモリの総量                  | -  |
+| `heap_use`               | バイト     | 現在使用中のヒープメモリの量                        | -  |
+| `pending_finalization`   | count   | GCでfinalizeの実行を待機しているオブジェクトの数         | -  |
+| `proc_fd`                | count   | プロセスが開いているファイル記述子(file descriptors)の数 | -  |
+| `proc_fd_max`            | count   | プロセスがオープンできる最大のファイルディスクリプタの数          | -  |
+| `thread_count`           | count   | JVMで実行中のスレッドの総数                       | -  |
+| `thread_daemon`          | count   | JVMで実行中のデーモンスレッドの数                    | -  |
+| `thread_peak_count`      | count   | JVMが実行中に観察されたスレッド数の最大値                | -  |
+| `thread_total_started`   | count   | JVMが開始以降に生成されたスレッドの合計数                | -  |
+| `threadpool_activeCount` | count   | 現在実行中のスレッドプールのスレッド数                   | -  |
 
 </div>

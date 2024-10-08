@@ -6,11 +6,11 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 例えば、A、B、C、D、Eという5つのマイクロサービスがあります。ユーザーがAを呼び出すと、ロジックに従って次のような3つの呼び出しパターンが発生すると仮定します。 
 
-1. A→B、Cを呼び出す。
-2. A→B、Cを呼び出す。また、B→Dを呼び出す。
-3. A→B、Cを呼び出す。また、B→D、Eを呼び出す。 
+1. AからBとCを呼び出し
+2. AからBとCを呼び出し ⁺ またBからDを呼び出し
+3. AからBとCを呼び出し ⁺ またBからDとEを呼び出し 
 
-この3つのパターンが一度ずつ実行された場合、MSA分析では基準URLに従って関連度分析データを確認できます。
+この3つのパターンが一度ずつ実行された場合、MSA分析では基準URLに従って関連度分析のデータが確認できます。
 
 ![Microservice Architecture Caller & Callee](https://img.whatap.io/media/images/whatap_application_analysis_msa_caller_callee.png)
 
@@ -44,15 +44,15 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 </InDoc>
 
-<Cmdname sid="side_msa" className="uitext" />メニューは、マイクロサービス環境で各サービスの性能と安全性を効果的に分析できるツールです。 トランザクションの詳細な呼び出し関係を分析し、これに基づいてシステムの性能を最適化し、潜在的な問題を事前に識別できます。
+<Cmdname sid="side_msa" className="uitext" />メニューは、マイクロサービス環境で各サービスの性能と安全性を効果的に分析できるツールです。 トランザクションの詳細な呼び出し関係を分析し、これを基づいてシステムの性能を最適化することで、潜在的な問題を事前に識別できます。
 
 <InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_2.png' desc='MSA分析' /></InDoc>
 
 <Xclude product="kubernetes"><ImgLang img="apm-analysis-msa-list.png" desc="MSA分析" /></Xclude>
 
-- <Cmdname sid="time_selector" className="uitext" />: ご希望の照会期間を選択します。 基本1日を基準に、Caller/Calleeを含むトランザクションの一覧を照会できます。
+- <Cmdname sid="time_selector" className="uitext" />: 照会期間を選択します。 基本1日を基準に、Caller/Calleeを含むトランザクションの一覧を照会できます。
 
-- <Cmdname sid="filter" className="uitext" />: <Cmdname sid="TTL06356" className="uitext" />, <Cmdname sid="spec" className="uitext" />, <Cmdname sid="TTL06918" className="uitext" /> 基準でフィルタリングして検索できます。
+- <Cmdname sid="filter" className="uitext" />: <Cmdname sid="TTL06356" className="uitext" />, <Cmdname sid="spec" className="uitext" />, <Cmdname sid="TTL06918" className="uitext" /> 基準でフィルタリングし、検索できます。
 
 - <Cmdname sid="order_by" className="uitext" />: <Cmdname sid="count" className="uitext" />, <Cmdname sid="error" className="uitext" />, <Cmdname sid="timeAvg" className="uitext" />(平均の応答時間) 基準で一覧をソートできます。
 
@@ -68,7 +68,7 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 ## 詳細分析する
 
-トランザクション一覧で、照会を希望する項目の![詳細アイコン](/img/ic-pageview.svg)ボタンを選択すると、詳細表示画面が表示されます。 詳細表示画面で、該当トランザクションに対する呼び出し元(Caller)、呼び出し先(Callee) 情報を照会できます。 
+トランザクション一覧で、照会する項目の![詳細アイコン](/img/ic-pageview.svg)ボタンを選択すると、詳細表示画面が表示されます。 詳細表示画面で、該当トランザクションに対する呼び出し元(Caller)、呼び出し先(Callee) 情報を照会できます。 
 
 <InDoc product="kubernetes"><ImgLang img="k8s-analysis-msa-detail.png" desc="MSA分析" /></InDoc>
 
@@ -84,15 +84,15 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 :::note
 
-- 詳細表示画面で右上に![全画面表示アイコン](/img/ico-detail-mode.svg)ボタンを選択すると、全画面で確認できます。
+- 詳細画面の右上にある![全画面表示アイコン](/img/ico-detail-mode.svg)ボタンを選択すると、全画面で確認できます。
 
-- 詳細表示画面を閉じるには、右下に<Cmdname sid="confirm" className="uitext" />ボタンを選択するか、ESCキーを押します。
+- 詳細画面を閉じるには、右下にある<Cmdname sid="confirm" className="uitext" />ボタンを選択するか、ESCキーを押します。
 
 :::
 
 ### Caller/Calleeサマリー {#msa_caller_callee_summary}
 
-<Cmdname sid="msa_caller_callee_summary" className="uitext" />タブでは、トランザクション一覧で選択したトランザクションのCaller、Callee間の依存性情報を視覚化されたダイアグラムで表示します。 サービス間の呼び出し関係を、直観的に理解できます。 呼び出し経路と従属性を視覚的に把握することができ、問題の原因分析に有利です。
+<Cmdname sid="msa_caller_callee_summary" className="uitext" />タブでは、トランザクション一覧で選択したトランザクションのCaller、Callee間の依存性情報を視覚化されたダイアグラムで表示します。 サービス間の呼び出し関係を、直観的に理解できます。 呼び出し経路と従属性が視覚的に把握でき、問題の原因分析に便利です。
 
 #### 呼び出し関係の分析
 
@@ -102,7 +102,7 @@ MSA分析機能は、WhaTapの**マルチTX追跡**機能を使用して収集�
 
 CallerとCalleeノードには、最大0.004、0.003など最大1人の数字情報を表示しますが、これは全体のCallerの中で占める割合を意味します。 同様に各Calleeの比重は、右側に一緒に表示します。 
 
-上の画面から_/account/save/employee/seoul_というトランザクションを基準に、CallerとCallee同士の依存関係を分析することができます。 トランザクションがどのサービスから呼び出され、どのサービスに呼び出されるかを視覚的に確認できます。
+上の画面から_/account/save/employee/seoul_というトランザクションを基準に、CallerとCallee間の依存関係を分析できます。 トランザクションがどのサービスから呼び出され、どのサービスに呼び出されるかを視覚的に確認できます。
 
 #### 性能指標の確認
 
@@ -118,7 +118,7 @@ CallerとCalleeノードには、最大0.004、0.003など最大1人の数字情
 
 #### トランザクションの流れを把握
 
-CallerやCalleeノードにマウスをオーバーすると、![拡張アイコン](/img/right-arrow.svg)ボタンが表示されます。 このボタンを選択すると、下位ノードに詳細展開できます。 トランザクションの全体的な流れを把握して、問題の発生地点を見つけるのに役立つ可能性があります。
+CallerやCalleeノードにマウスをオーバーすると、![拡張アイコン](/img/right-arrow.svg)ボタンが表示されます。 このボタンを選択すると、下位ノードの詳細に展開できます。 トランザクションの全体的な流れを把握して、問題の発生元を見つけるのに役に立ちます。
 
 <InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_4.png' desc='Caller Callee サブノードの詳細展開' /></InDoc>
 
@@ -134,7 +134,7 @@ CallerやCalleeノードにマウスをオーバーすると、![拡張アイコ
 
 ### Caller/Calleeデータ {#msa_caller_callee_table}
 
-<Cmdname sid="msa_caller_callee_table" className="uitext" />タブでは、基準URL(例: */account/save/employee/seoul*)に対する呼び出し元(Caller)と呼び出し先(Callee)の相関関係を、表の形式で確認できます。 各トランザクションの詳細情報(呼び出し回数、エラー数、平均応答時間など)が具体的に確認でき、データ基盤の精密な分析が可能です。
+<Cmdname sid="msa_caller_callee_table" className="uitext" />タブでは、基準URL(例: */account/save/employee/seoul*)に対する呼び出し元(Caller)と呼び出し先(Callee)の相関関係を、表の形式で確認できます。 各トランザクションの詳細情報(呼び出し回数、エラー数、平均応答時間など)が具体的に確認でき、データ基盤で精密に分析できます。
 
 <InDoc product="kubernetes"><ImgLang img='whatap_application_analysis_msa_5.png' desc='CallerとCalleeの相関' /></InDoc>
 
@@ -146,7 +146,7 @@ CallerやCalleeノードにマウスをオーバーすると、![拡張アイコ
 
 - 各トランザクションの![拡大アイコン](/img/ic-caret-right.svg)ボタンを選択すると、そのトランザクションに関連するトランザクションを、追加で確認できます。 
 
-- データ一覧をCSV形式で保存するには、右上に<Cmdname sid="download_csv" className="uitext" />ボタンを選択します。
+- データ一覧をCSV形式で保存するには、右上の<Cmdname sid="download_csv" className="uitext" />ボタンを選択します。
 
 ### Caller/Callee推移 {#msa_caller_callee_trend}
 
@@ -156,7 +156,7 @@ CallerやCalleeノードにマウスをオーバーすると、![拡張アイコ
 
 <Xclude product="kubernetes"><ImgLang img='apm-analysis-msa-caller-callee-trend.png' desc='Caller/Calleeサマリー' /></Xclude>
 
-- 特定のトランザクションの呼び出し回数と割合を、時間帯別グラフで視覚化することで、性能の変化を一目で把握できます。
+- 特定のトランザクションの呼び出し回数と割合を、時間帯別グラフで可視化し、性能の変化を一目で把握できます。
 
 - <Cmdname sid="type" className="uitext" />カラムを通じてCallerとCalleeを簡単に区別することができ、呼び出し関係を把握できます。
 
