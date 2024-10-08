@@ -47,7 +47,7 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
-        children: "Feature"
+        children: "Features"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 10월 07일"
@@ -67,7 +67,10 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Beta",
             children: "Beta"
-          }), " 피쳐 프로젝트 ", (0,jsx_runtime.jsx)("code", {
+          }), " 피쳐 프로젝트(", (0,jsx_runtime.jsx)("code", {
+            class: "Features",
+            children: "Features"
+          }), ") ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-overview2",
             children: "vCenter"
           }), " ", (0,jsx_runtime.jsx)("b", {
@@ -1037,7 +1040,7 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
-        children: "Feature"
+        children: "Features"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 23일"
@@ -1057,7 +1060,10 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Beta",
             children: "Beta"
-          }), " 피쳐 프로젝트 ", (0,jsx_runtime.jsx)("code", {
+          }), " 피쳐 프로젝트(", (0,jsx_runtime.jsx)("code", {
+            class: "Features",
+            children: "Features"
+          }), ") ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-overview2",
             children: "Aerospike"
           }), " ", (0,jsx_runtime.jsx)("b", {
@@ -1067,7 +1073,10 @@ function _createMdxContent(props) {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Beta",
             children: "Beta"
-          }), " 피쳐 프로젝트 ", (0,jsx_runtime.jsx)("code", {
+          }), " 피쳐 프로젝트(", (0,jsx_runtime.jsx)("code", {
+            class: "Features",
+            children: "Features"
+          }), ") ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-overview2",
             children: "Apache Pulsar"
           }), " ", (0,jsx_runtime.jsx)("b", {
