@@ -5471,7 +5471,7 @@ const overview_frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-09-25T19:30',
+	date: '2024-10-07T19:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -5486,7 +5486,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-09-25T19:30:00.000Z",
+  "date": "2024-10-07T19:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -5514,7 +5514,7 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-09-25T19:30",
+    "date": "2024-10-07T19:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",

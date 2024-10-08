@@ -350,9 +350,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'database-size',
 	title: '데이터베이스 사이즈',
-	description: 'PostgeSQL 데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.',
+	description: 'PostgreSQL 데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.',
 	keywords: [
-		'PostgeSQL',
+		'PostgreSQL',
 		'데이터베이스',
 		'데이터베이스 사이즈'
 	],
@@ -362,7 +362,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "postgresql/database-size",
   "title": "데이터베이스 사이즈",
-  "description": "PostgeSQL 데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
+  "description": "PostgreSQL 데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
   "source": "@site/docs/postgresql/database-size.mdx",
   "sourceDirName": "postgresql",
   "slug": "/postgresql/database-size",
@@ -375,9 +375,9 @@ const metadata = {
   "frontMatter": {
     "id": "database-size",
     "title": "데이터베이스 사이즈",
-    "description": "PostgeSQL 데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
+    "description": "PostgreSQL 데이터베이스별 테이블의 사이즈를 집계하여 추이 정보를 차트로 제공합니다.",
     "keywords": [
-      "PostgeSQL",
+      "PostgreSQL",
       "데이터베이스",
       "데이터베이스 사이즈"
     ],

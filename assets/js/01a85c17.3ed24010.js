@@ -820,7 +820,7 @@ var Translate = __webpack_require__(15418);
 var client = __webpack_require__(47984);
 ;// CONCATENATED MODULE: ./src/theme/BlogSidebar/Desktop/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"sidebar":"sidebar_brwN","sidebarItemTitle":"sidebarItemTitle_r4Q1","sidebarItemList":"sidebarItemList_QwSx","sidebarItem":"sidebarItem_lnhn","sidebarItemLink":"sidebarItemLink_yNGZ","sidebarItemLinkActive":"sidebarItemLinkActive_oSRm","news":"news_mTGW"});
+/* harmony default export */ const styles_module = ({"sidebar":"sidebar_brwN","sidebarItemTitle":"sidebarItemTitle_r4Q1","sidebarItemList":"sidebarItemList_QwSx","sidebarItem":"sidebarItem_lnhn","sidebarItemLink":"sidebarItemLink_yNGZ","sidebarItemLinkActive":"sidebarItemLinkActive_oSRm","news":"news_mTGW","iflang":"iflang_yyvc","iflink":"iflink_TnhG"});
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js
 var Link = __webpack_require__(28618);
 ;// CONCATENATED MODULE: ./src/theme/BlogSidebar/Desktop/index.js
@@ -859,6 +859,7 @@ function BlogSidebarDesktop({ sidebar  }) {
             children: /*#__PURE__*/ (0,jsx_runtime.jsx)("ul", {
                 className: (0,dist_clsx/* default */.A)(styles_module.sidebarItemList, 'clean-list'),
                 children: sidebarData.map((category, index)=>/*#__PURE__*/ (0,jsx_runtime.jsxs)("li", {
+                        className: category.className ? styles_module[category.className] : '',
                         children: [
                             /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
                                 children: category.link ? /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
@@ -962,7 +963,7 @@ function BlogSidebar({ sidebar  }) {
 /***/ 94458:
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('[{"type":"category","label":"새로운 기능","tr_code":"theme.blog.newFeatures","link":"/blog/","items":[{"link":"/blog/index"},{"link":"/blog/overview","className":"news"}]},{"type":"category","label":"2024","link":"/blog/tags/2024","items":[{"link":"/blog/2024-2q-summary"},{"link":"/blog/2024-1q-summary"}]},{"type":"category","label":"2023","link":"/blog/tags/2023","items":[{"link":"/blog/2023-4q-summary"},{"link":"/blog/2023-3q-summary"}]}]');
+module.exports = /*#__PURE__*/JSON.parse('[{"type":"category","label":"새로운 기능","tr_code":"theme.blog.newFeatures","link":"/blog/","className":"iflink","items":[{"link":"/blog/index","className":"iflang"},{"link":"/blog/overview","className":"news"}]},{"type":"category","label":"2024","className":"iflang","link":"/blog/tags/2024","items":[{"link":"/blog/2024-2q-summary","className":"iflang"},{"link":"/blog/2024-1q-summary","className":"iflang"}]},{"type":"category","label":"2023","className":"iflang","link":"/blog/tags/2023","items":[{"link":"/blog/2023-4q-summary","className":"iflang"},{"link":"/blog/2023-3q-summary","className":"iflang"}]}]');
 
 /***/ })
 

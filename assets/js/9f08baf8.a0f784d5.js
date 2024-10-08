@@ -1229,7 +1229,7 @@ function support_env_createMdxContent(props) {
               children: [(0,jsx_runtime.jsx)(_components.td, {
                 children: "Java"
               }), (0,jsx_runtime.jsx)(_components.td, {
-                children: "Java 6 이상~Java 20 이하"
+                children: "Java 6 이상~Java 21 이하"
               })]
             }), (0,jsx_runtime.jsxs)(_components.tr, {
               children: [(0,jsx_runtime.jsx)(_components.td, {
@@ -1418,9 +1418,9 @@ function support_env_createMdxContent(props) {
               })]
             }), (0,jsx_runtime.jsxs)(_components.tr, {
               children: [(0,jsx_runtime.jsx)(_components.td, {
-                children: "PostgeSQL"
+                children: "PostgreSQL"
               }), (0,jsx_runtime.jsx)(_components.td, {
-                children: "PostgreSQL 계열(EDB 등) 9.2 이상"
+                children: "PostgreSQL 계열(EDB, Tmax OpenSQL 등) 9.2 이상"
               })]
             })]
           })]

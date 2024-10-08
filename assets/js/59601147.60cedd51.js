@@ -989,7 +989,7 @@ function _createMdxContent(props) {
         id: "데이터베이스-지원-버전",
         children: "데이터베이스 지원 버전"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "PostgreSQL 계열(EDB 등) 9.2 버전 이상을 지원합니다."
+        children: "PostgreSQL 계열(EDB, Tmax OpenSQL 등) 9.2 버전 이상을 지원합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_support_env_common_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",

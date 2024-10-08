@@ -58916,7 +58916,8 @@ __webpack_require__.r(__webpack_exports__);
         {
           "to": "blog",
           "label": "새로운 기능",
-          "position": "left"
+          "position": "left",
+          "className": "iflang-link"
         },
         {
           "type": "localeDropdown",

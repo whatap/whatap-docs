@@ -4,7 +4,7 @@
         <title>WhaTap Docs Blog</title>
         <link>https://docs.whatap.io/whatap-docs/blog</link>
         <description>WhaTap Docs Blog</description>
-        <lastBuildDate>Wed, 25 Sep 2024 19:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Oct 2024 19:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[서비스 개요]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/overview</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/overview</guid>
-            <pubDate>Wed, 25 Sep 2024 19:30:00 GMT</pubDate>
+            <pubDate>Mon, 07 Oct 2024 19:30:00 GMT</pubDate>
             <description><![CDATA[New Feature Overview]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
@@ -1969,7 +1969,7 @@
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
 <br>
 <br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링��크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>공통</code> 부분의 주목할 만한 신규 기능으로 사이드 메뉴 개편, SSO 계정 연동 기능 추가 및 새로운 이벤트 설정 기능을 소개합니다.</p>
 <p>사용자 편의성 향상을 위해 5년 만에 와탭 모니터링의 <strong>사이드 메뉴</strong>가 새롭게 개편되었습니다. 와탭 서비스 이용에는 프로젝트 선택이 선행됩니다. 프로젝트 생성 및 선택 이후 동선을 편리하게 활용할 수 있도록 기존과 비교해 UI 혼잡도를 줄여 프로젝트 선택과 메뉴의 영역을 확보하는 구조로 개편되었습니다.</p>
 <p>프로젝트 목록을 선택한 부분만 펼쳐서 확인할 수 있으며, 세로 영역을 확보해 보다 편하게 다양한 기능 메뉴를 조회할 수 있습니다. 또한 간단한 별 모양(<img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) 아이콘 클릭으로 상품별 프로젝트 메뉴 내 자주 쓰는 기능들을 즐겨찾기 할 수 있습니다.</p>
@@ -2273,7 +2273,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">이벤트 설정</span> 메뉴의 <span class="uitext">로그 파일 / 윈도우 이벤트</span> 탭에서 수신자 태그 설정 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
-<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v252-2024년-02월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_2">Server Agent v2.5.2</a></code> <code class="changelog-date">2024년 02월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server-agent-v252-2024%EB%85%84-02%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="server-agent-v252-2024년-02월-13일에 대한 직접 링크" title="server-agent-v252-2024년-02월-13일에 대한 직접 링크">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>에이전트 안내</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="server-agent-v252-2024년-02��월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/server/server-2_5_2">Server Agent v2.5.2</a></code> <code class="changelog-date">2024년 02월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#server-agent-v252-2024%EB%85%84-02%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="server-agent-v252-2024년-02월-13일에 대한 직접 링크" title="server-agent-v252-2024년-02월-13일에 대한 직접 링크">​</a></h4>
 <ul>
 <li><code class="New">New</code> 윈도우 운영체제의 이벤트 로그 중 원하는 조건에 부합하는 건을 와탭 로그로 수집 가능</li>
 </ul>
@@ -2581,7 +2581,7 @@
 <!-- -->
 <!-- -->
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="MongoDB​에 대한 직접 링크" title="MongoDB​에 �대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="MongoDB​에 대한 직접 링크" title="MongoDB​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">데이터베이스 사이즈</span> 메뉴의 UI 변경 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
@@ -2610,7 +2610,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 테이블 레이아웃 실시간 조회 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="dbx-v1630-2024년-02월-29일에 대한 직접 링크" title="dbx-v1630-2024년-02월-29일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024년-02월-29일"><code class="changelog-service"><a href="https://docs.whatap.io/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024년 02월 29일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1630-2024%EB%85%84-02%EC%9B%94-29%EC%9D%BC" class="hash-link" aria-label="dbx-v1630-2024년-02월-29일에 대한 직접 링크" title="dbx-v1630-2024년-02월-29일에 대�한 직접 링크">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
@@ -3317,7 +3317,7 @@
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">통합 보고서</span> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​��에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">계정 정보 관리</span> &gt; <span class="uitext">사용자 전화번호</span>, <span class="uitext">알림 수신 설정</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>

@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'real-time-monitoring-for-it-infra',
-	title: 'DX IT 운영을 위한 와탭(WhaTap) 모니터링 솔루션',
+	title: 'DX IT 운영을 위한 와탭(WhaTap) 모니터링',
 	description: 'IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.',
 	displayed_sidebar: 'learningSidebar',
 	isTranslationMissing: false
@@ -27,7 +27,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "best-practice-guides/real-time-monitoring-for-it-infra",
-  "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링 솔루션",
+  "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링",
   "description": "IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.",
   "source": "@site/docs/best-practice-guides/real-time-monitoring-for-it-infra.mdx",
   "sourceDirName": "best-practice-guides",
@@ -40,7 +40,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "real-time-monitoring-for-it-infra",
-    "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링 솔루션",
+    "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링",
     "description": "IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.",
     "displayed_sidebar": "learningSidebar",
     "isTranslationMissing": false
@@ -245,22 +245,6 @@ const toc = [{
   "value": "DX-IT 운영의 실현",
   "id": "dx-it-운영의-실현",
   "level": 3
-}, {
-  "value": "혁신 문화 육성",
-  "id": "혁신-문화-육성",
-  "level": 4
-}, {
-  "value": "새로운 클라우드 및 최첨단 도구에 현명한 투자",
-  "id": "새로운-클라우드-및-최첨단-도구에-현명한-투자",
-  "level": 4
-}, {
-  "value": "디지털 비즈니스의 성과에 대한 실시간 통찰력 제공",
-  "id": "디지털-비즈니스의-성과에-대한-실시간-통찰력-제공",
-  "level": 4
-}, {
-  "value": "진화할 것인가, 아니면 쇠퇴할 것인가",
-  "id": "진화할-것인가-아니면-쇠퇴할-것인가",
-  "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -278,10 +262,16 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang} = _components;
+  }, {Head, ImgLang} = _components;
+  if (!Head) _missingMdxReference("Head", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Head, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("meta", {
+        name: "robots",
+        content: "noindex, nofollow"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["현대 IT 환경은 빠르게 진화하고 있으며, 이에 따라 IT 운영과 모니터링에 대한 요구도 급격히 변화하고 있습니다. 디지털 전환(Digital Transformation, DX)과 클라우드 기술의 확산은 IT 인프라의 복잡성을 증가시키고, 기존의 모니터링 방식으로는 이러한 변화를 따라잡기 어렵게 만들었습니다. 이 문서에서는 IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "통합 모니터링"
       }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -426,13 +416,8 @@ function _createMdxContent(props) {
         children: "서비스 운영성의 향상"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "IT 기술의 진보는 서비스의 운영성을 크게 향상시켰습니다. 특히 클라우드 기술의 발전은 서비스의 유연성과 확장성을 높여주었으며 이는 기업의 비즈니스 민첩성을 강화하는 데 중요한 역할을 합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "Service",
-          src: (__webpack_require__(32951)/* ["default"] */ .A) + "",
-          width: "1200",
-          height: "426"
-        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "best-p/dx-it-image-05.png"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -986,7 +971,7 @@ function _createMdxContent(props) {
         id: "옵저버빌리티의-주요-구성-요소",
         children: "옵저버빌리티의 주요 구성 요소"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "모니터링은 단순히 시스템의 활동을 관찰하고 기록하는 프로세스입니다. 모니터링 도구는 애플리케이션이 어떻게 작동하는지에 대한 데이터를 수집합니다. 그런 다음 소프트웨어는 해당 데이터를 대시보드로 전송하여 분석하고 이전에 설정한 임계값을 초과하는 경우 경고를 트리거할 수 있습니다. 모니터링을 통해 애플리케이션의 상태를 파악하여 알려진 장애 지점에 대한 경계를 유지할 수 있습니다."
+        children: "모니터링은 단순히 시스템의 활동을 관찰하고 기록하는 프로세스입니다. 모니터링 도구는 애플리케이션이 어떻게 작동하는지에 대한 데이터를 수집합니다. 모니터링을 통해 애플리케이션의 상태를 파악하여 알려진 장애 지점에 대한 경계를 유지할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["모니터링의 상위 개념인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "옵저버빌리티"
@@ -1489,40 +1474,6 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "실시간 모니터링과 문제 해결을 통해 시스템 가용성을 높이고, 비즈니스 연속성을 유지할 수 있습니다. 자동화된 모니터링과 문제 해결 기능을 통해 운영 효율성을 극대화하고 비용을 절감할 수 있습니다."
       })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "혁신-문화-육성",
-        children: "혁신 문화 육성"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "실시간 옵저버빌리티는 작동하는 것과 그렇지 않은 것을 매우 빠르게 알려주어 비즈니스에 도움이 되는 방식으로 성능, 안정성 및 효율성을 지속적으로 향상시킵니다. 기술이 비즈니스를 지원하는 방식에 대한 이해가 깊어지면 인프라와 서비스를 지속적으로 최적화하여 고객 기대에 부응하고, 가동 중지 시간이나 서비스 중단을 방지할 수 있습니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "새로운-클라우드-및-최첨단-도구에-현명한-투자",
-        children: "새로운 클라우드 및 최첨단 도구에 현명한 투자"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "엔지니어링 팀은 더 이상 물리적 컴퓨팅 하드웨어만 감독하지 않습니다. 이제 그들은 데이터와 클라우드 인프라에 대해 지속적으로 논의하고 있습니다. 시스템 가용성뿐만 아니라 비즈니스 성과 데이터, 내부 프로세스 및 고객 대면 서비스를 추적함으로써 IT는 On-call 페이지 또는 특정 중단에 대한 우선순위를 보다 효과적으로 설정할 수 있습니다. 이는 IT가 경영진에게 미래의 소프트웨어, 데이터 수집 및 클라우드 서비스에 대한 중요한 투자 결정을 내리는 데 필요한 데이터를 제공할 수 있음을 의미합니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "디지털-비즈니스의-성과에-대한-실시간-통찰력-제공",
-        children: "디지털 비즈니스의 성과에 대한 실시간 통찰력 제공"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "대시보드에 다양한 수준과 유형의 데이터를 집계하면, 환경에서 무슨 일이 일어나고 있는지, 그리고 그것이 비즈니스에 어떤 영향을 미치는지 정확하게 알 수 있습니다. 이러한 정보는 표준 원격 측정 데이터, 리소스 최적화 피드백, 비즈니스 중심 KPI 및 사용자 경험 지표를 포함할 수 있습니다. 실시간 정보 수집은 고객이 문제를 인지하기 전에 사건에 대응할 수 있도록 해줍니다."
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "진화할-것인가-아니면-쇠퇴할-것인가",
-        children: "진화할 것인가, 아니면 쇠퇴할 것인가"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "클라우드 네이티브 환경을 관리하는 DevOps 엔지니어와 SRE는 매일 어려움에 직면합니다. 그들은 분산 시스템의 복잡성을 지속적으로 이해하고, 격리하기 어려운 문제를 감지하며, 문제를 신속하게 해결하여 비즈니스가 디지털 연결 끊김이나 장애로 인해 영향을 받지 않도록 해야 합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "모니터링 도구는 그 자리에 있지만, 그것만으로는 충분하지 않습니다. 오늘날의 기업은 배포하는 기술과 비즈니스 성공 사이의 직접적인 연관성을 이해해야 합니다. 관련 데이터를 통해 비즈니스 요구 사항을 지원해야 합니다. 또한, 개발자의 생산성을 보장하고, 빠른 시장 출시 요구 사항을 충족하며, 모범적인 고객 경험을 제공하기 위해 지속적으로 데이터를 수집하고 분석하는 것이 중요합니다."
-      })]
     })]
   });
 }
@@ -1583,16 +1534,6 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-04-a73aa1cd66a9db6200ec219fd185558c.png");
-
-/***/ }),
-
-/***/ 32951:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/dx-it-image-05-0dfcaf31044670479628a49d97b9d3fa.png");
 
 /***/ }),
 

@@ -676,7 +676,7 @@ function _createMdxContent(props) {
                 }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
                   children: "JVM으로 구동하는 모든 OS"
                 }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-                  children: "Java 6 이상, Java 20 이하"
+                  children: "Java 6 이상, Java 21 이하"
                 })]
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
                 children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
