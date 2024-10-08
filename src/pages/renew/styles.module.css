@@ -274,6 +274,11 @@ p.small {
 .inline {
   display: inline-block;
 }
+
+html[lang='en-US'] .inline {
+  letter-spacing: -0.7px;
+}
+
 .iconumber {
   position: relative;
   display: inline-block;

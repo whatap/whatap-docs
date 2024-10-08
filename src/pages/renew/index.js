@@ -10,6 +10,7 @@ import '@algolia/autocomplete-theme-classic';
 import { Autocomplete } from '@site/src/components/Autocomplete/Autocomplete.js';
 import { ProductItem } from '@site/src/components/Autocomplete/ProductItem.js';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import clsx from 'clsx'; 
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
@@ -74,7 +75,7 @@ function Step({children, order}) {
     return (
         <div className={clsx('guide-col d-flex', styles.flexcolumn)}>
             <div className={styles.innercontent}>
-                <img src={`/img/number-0${order}.png`} className={styles.iconumber} />
+                <img src={useBaseUrl(`/img/number-0${order}.png`)} className={styles.iconumber} />
                 {children}
             </div>
         </div>
@@ -181,7 +182,7 @@ function FlexCard({icons, product, type, url, children, status}) {
                             {IconComponent ? (
                                 <IconComponent className={styles.doculogo} />
                             ) : (
-                                <img src={`/img/${icons}`} className={styles.doculogo} />
+                                <img src={useBaseUrl(`/img/${icons}`)} className={styles.doculogo} />
                             )}
                         </div>
                         <div className={styles.title}>{children}</div>
@@ -198,7 +199,7 @@ function FlexCard({icons, product, type, url, children, status}) {
             <Link to={url} className={styles.alignCenter}>
                 <div className={styles.product}>
                     <div className={styles.logo}>
-                        <img src={`/img/${icons}`} />
+                        <img src={useBaseUrl(`/img/${icons}`)} />
                     </div>
                     <div className={styles.desc}>
                         <div className={styles.title}>{product}</div>
