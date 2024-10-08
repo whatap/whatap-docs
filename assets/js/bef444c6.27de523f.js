@@ -535,13 +535,13 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["카테고리별 로그 데이터 보존 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "로그 수"
-        }), "는 해당 기간 동안 쌓인 로그 라인을 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        }), "는 해당 기간 동안 쌓인 로그 건수를 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "daily_log_count",
           className: "uitext"
-        }), "는 하루 동안 쌓인 로그 라인 개수, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        }), "는 하루 동안 쌓인 로그 건수, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "expected_log_count",
           className: "uitext"
-        }), "는 데이터 보관일에 금일 로그 수를 곱한 로그 라인 개수를 의미합니다."]
+        }), "는 데이터 보관일에 금일 로그 수를 곱한 로그 건수를 의미합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "로그 데이터 보존 기간을 다음과 같이 지정할 수 있습니다. 기간 지정에 따라 오래된 데이터를 삭제해 공간을 확보할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -570,7 +570,7 @@ function _createMdxContent(props) {
             children: "데이터 보존 기간에 따라 비용이 달라집니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "예시, 일 평균 200만 로그 라인이 쌓이고 데이터 보존 기간을 3일로 지정한 경우라면 평균 600만 로그 라인이 수집 서버에 유지되고 과금 대상이 됩니다."
+              children: "예시, 일 평균 200만 로그 건수가 쌓이고 데이터 보존 기간을 3일로 지정한 경우라면 평균 600만 로그 건수가 수집 서버에 유지되고 과금 대상이 됩니다."
             }), "\n"]
           }), "\n"]
         }), "\n"]

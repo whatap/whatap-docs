@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[8262],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17542],{
 
-/***/ 52214:
+/***/ 43493:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -19,53 +19,51 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'log-setting',
+	id: 'aws-log-setting',
 	title: '로그 설정',
-	description: '로그 모니터링 설정 방법을 안내합니다.',
+	description: 'AWS Log 모니터링 설정 방법을 안내합니다.',
 	toc_max_heading_level: 3,
 	keywords: [
 		'로그',
-		'로그 모니터링',
-		'설정하기',
-		'Altibase'
+		'AWS Log',
+		'설정하기'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "altibase/log-setting",
+  "id": "aws-log/aws-log-setting",
   "title": "로그 설정",
-  "description": "로그 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/altibase/log-setting.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/log-setting",
-  "permalink": "/whatap-docs/altibase/log-setting",
+  "description": "AWS Log 모니터링 설정 방법을 안내합니다.",
+  "source": "@site/docs/aws-log/aws-log-setting.mdx",
+  "sourceDirName": "aws-log",
+  "slug": "/aws-log/aws-log-setting",
+  "permalink": "/whatap-docs/aws-log/aws-log-setting",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/altibase/log-setting.mdx",
+  "editUrl": "undefined/docs/aws-log/aws-log-setting.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "log-setting",
+    "id": "aws-log-setting",
     "title": "로그 설정",
-    "description": "로그 모니터링 설정 방법을 안내합니다.",
+    "description": "AWS Log 모니터링 설정 방법을 안내합니다.",
     "toc_max_heading_level": 3,
     "keywords": [
       "로그",
-      "로그 모니터링",
-      "설정하기",
-      "Altibase"
+      "AWS Log",
+      "설정하기"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "altibaseSidebar",
+  "sidebar": "awslogSidebar",
   "previous": {
-    "title": "로그 검색",
-    "permalink": "/whatap-docs/altibase/log-search"
+    "title": "자원 삭제하기",
+    "permalink": "/whatap-docs/aws-log/delete-aws-resource"
   },
   "next": {
     "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/altibase/log-parser"
+    "permalink": "/whatap-docs/aws-log/log-parser"
   }
 };
 const assets = {
@@ -630,13 +628,13 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["카테고리별 로그 데이터 보존 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "로그 수"
-        }), "는 해당 기간 동안 쌓인 로그 라인을 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        }), "는 해당 기간 동안 쌓인 로그 건수를 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "daily_log_count",
           className: "uitext"
-        }), "는 하루 동안 쌓인 로그 라인 개수, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        }), "는 하루 동안 쌓인 로그 건수, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "expected_log_count",
           className: "uitext"
-        }), "는 데이터 보관일에 금일 로그 수를 곱한 로그 라인 개수를 의미합니다."]
+        }), "는 데이터 보관일에 금일 로그 수를 곱한 로그 건수를 의미합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "로그 데이터 보존 기간을 다음과 같이 지정할 수 있습니다. 기간 지정에 따라 오래된 데이터를 삭제해 공간을 확보할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
@@ -665,7 +663,7 @@ function _createMdxContent(props) {
             children: "데이터 보존 기간에 따라 비용이 달라집니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "예시, 일 평균 200만 로그 라인이 쌓이고 데이터 보존 기간을 3일로 지정한 경우라면 평균 600만 로그 라인이 수집 서버에 유지되고 과금 대상이 됩니다."
+              children: "예시, 일 평균 200만 로그 건수가 쌓이고 데이터 보존 기간을 3일로 지정한 경우라면 평균 600만 로그 건수가 수집 서버에 유지되고 과금 대상이 됩니다."
             }), "\n"]
           }), "\n"]
         }), "\n"]
