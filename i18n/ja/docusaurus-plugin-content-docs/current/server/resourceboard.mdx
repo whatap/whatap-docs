@@ -11,13 +11,13 @@ keywords:
 
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_resourceBoard" className="uitext" />
 
-WhaTapモニタリングサービスの初期画面でプロジェクトを選択した後、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_resourceBoard" className="uitext" />を選択してください。
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択した後、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_resourceBoard" className="uitext" />を選択します。
 
 <ImgLang img='server-resourceboard.png' desc='リソースボード'/>
 
 <Cmdname sid="side_resourceBoard" className="uitext" />から1つのプロジェクトに登録されているすべてのサーバーをモニタリングできます。
 
-プロジェクト内のすべてのサーバーの概要とリアルタイムのリソース使用状況の変化を確認できる **_CPU Resource Map_**を提供します。 全体リソース、CPU、メモリ、プロセス使用率の **_Top 5_**を表示します。<Cmdname sid="side_resourceBoard" className="uitext" />を使用すると、トラブルを即座に認識して対応することができます。
+プロジェクト内のすべてのサーバーの概要とリアルタイムのリソース使用状況の変化を確認できる **_CPU Resource Map_**を提供します。全体リソース、CPU、メモリ、プロセス使用率の **_Top 5_**を表示します。<Cmdname sid="side_resourceBoard" className="uitext" />を通じて、トラブルの状況をすぐ把握し、対応できます。
 
 ## ![](/img/number-01.png)固定メニュー
 
@@ -31,7 +31,7 @@ import Dashboardstaticdef from "../common-items/_dashboard-static-def.mdx";
 
 - **Server**  
 
-  全体のサーバー数とトラブルのあるサーバーの数を提供します。 領域を選択すると<Cmdname sid="side_serverList" className="uitext" /> ページに移動します。
+  全体のサーバー数とトラブルのあるサーバーの数を提供します。領域を選択すると<Cmdname sid="side_serverList" className="uitext" /> ページに移動します。
 
   - 例外状態：<span class='vslow'>危険</span>、<span class='slow'>警告</span>
 
@@ -71,7 +71,7 @@ import Dashboardstaticdef from "../common-items/_dashboard-static-def.mdx";
 
   - 基本の5つのサーバーが選択され、選択されたサーバーの使用状況の傾向をマルチラインチャートで表示します。
 
-  - ![更新アイコン](/img/ico-refresh.svg) <Cmdname sid="refresh" className="uitext" />ボタンを手動でクリックすると、現在のデータに更新できます。 
+  - ![更新アイコン](/img/ico-refresh.svg) <Cmdname sid="refresh" className="uitext" />ボタンをクリックすると、現時点のデータに手動で更新できます。 
 
 :::note
 
@@ -87,9 +87,9 @@ import Dashboardstaticdef from "../common-items/_dashboard-static-def.mdx";
 
 例えば、Disk I/O(%) メトリクスは、5秒間のディスク使用率を示します。 Disk I/O(%)が80%を超えると、システムの性能に影響を与える可能性があります。警告となる既定値は 90%です。 Disk I/O(%)が100%の場合、ディスクが常時動作していることを意味します。
 
-- イコライザーチャート領域を選択すると、対象<Cmdname sid="side_serverDetail" className="uitext" />ページに移動します。 
+- イコライザーチャート領域を選択すると、対象の<Cmdname sid="side_serverDetail" className="uitext" />ページに移動します。 
 
-- ![right-arrow](/img/right-arrow.svg)ボタンを選択すると<Cmdname sid="side_resourceEqualizer" className="uitext" />ページに移動します。 サーバー全体のリアルタイムの使用量が確認できます。
+- ![right-arrow](/img/right-arrow.svg)ボタンを選択すると<Cmdname sid="side_resourceEqualizer" className="uitext" />ページに移動します。すべてのサーバーに対するリアルタイム使用量が確認できます。
 
 ## ![](/img/number-05.png)Process Top 5
 

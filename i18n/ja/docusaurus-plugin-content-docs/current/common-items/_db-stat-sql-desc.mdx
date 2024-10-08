@@ -10,13 +10,13 @@
 
 <InDoc product="mysql">
 
-頻繁に性能分析のためによく分析するカテゴリ(DB, USER, HOST) 別にTop SQLを検索することができます。主な参照基準は次のとおりです。
+パフォーマンス測定でよくで使う分析カテゴリ(DB、USER、HOST)ごとにTop SQLを照会できます。主な照会基準は次のとおりです。
 
 </InDoc>
 
 <InDoc product="oracle-pro,oracle">
 
-頻繁に性能分析のためによく分析するカテゴリ(DB, USERNAME, MACHINE, PROGRAM) 別にTop SQLを検索することができます。主な参照基準は次のとおりです。
+パフォーマンス測定でよくで使う分析カテゴリ(DB、USERNAME、MACHINE、PROGRAM)ごとにTop SQLを照会できます。主な照会基準は次のとおりです。
 
 </InDoc>
 
@@ -28,7 +28,7 @@
 
 - **_elapse max (sec)_**: SQLの最大実行時間(秒)
 
-<Xclude product="mysql">
+<Xclude product="mysql,mssql,tibero">
 
 - **_elapse wait (sec)_**: SQLの待機時間合計(秒)
 
@@ -52,7 +52,11 @@
 
 </InDoc>
 
+<Xclude product="mssql,tibero,cubrid">
+
 - **_instance_**: インスタンス名
+
+</Xclude>
 
 <InDoc product="oracle,oracle-pro">
 

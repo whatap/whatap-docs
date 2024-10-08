@@ -1,0 +1,48 @@
+---
+id: agent-dbx-settings
+title: DBXエージェントの設定
+description: whatap.confファイルで設定できるオプションについて説明します。
+keywords:
+  - Tibero
+  - データベース
+  - DBXエージェント
+---
+
+import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
+
+DBXエージェントに必要な設定は、*whatap.conf*ファイルに作成されます。 設定できるオプションについては、次を参照してください。
+
+## 基本オプション
+
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
+
+## データ収集{#collect-data}
+
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
+
+<Dbagentsettingdatacollection />
+
+## AWS RDS CloudWatch適用{#using-aws-rds}
+
+<AWSRDSdesc name='db_postgresql_counter' />
+
+import Dbagentaws from "../common-items/_db-agent-aws.mdx";
+
+<Dbagentaws />
+
+{/* AES 256 암호화 적용 */}
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt />
+
+## エージェント名の識別{#naming}
+
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
+
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming />

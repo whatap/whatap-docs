@@ -14,3 +14,39 @@ db_port={DB_Server_Port}
 ```
 
 </InDoc>
+
+<InDoc product="cubrid">
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+dbms=cubrid
+db={DB_Name}
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
+cmd_port=8001 # CUBRID Manager server port number, default 8001
+broker=query_editor,broker1
+```
+
+- `db`: モニタリング対象データベース名であり、
+  _$CUBRID_DATABASES/databases.txt_ ファイルの`db_name`値段です。
+
+- `db_ip`: モニタリング対象のデータベースサーバーに接続可能なIPアドレスです。
+
+- `db_port`: ブローカー設定ファイル(*cubrid_broker.conf*)で`BROKER_PORT`項目に定義された値を入力します。 (CUBRIDの既定値`BROKER_PORT: 33000`)
+
+- `cms_port`: **CUBRID Manager**が使用するポートです。 **CUBRID Manager**設定ファイル(*cm.conf*)の`cm_port`項目に定義された値を入力してください。
+
+- `broker`: CUBRIDを設置すると`broker1`、`query_editor`でブローカーがデフォルトで実行されます。 ユーザーが任意にブローカーの名前を変更または、追加で移動を行った場合は、変更を入力してください。
+
+:::note
+
+- *whatap.conf*ファイル設定の詳細は[次の文書](agent-dbx-settings)を参照してください。
+
+- CUBRID環境の_databases.txt_ファイルの詳細は[次のリンク](https://www.cubrid.org/manual/ko/11.0/admin/db_manage.html#databases-txt)を参照してください。
+
+- CUBRIDのブローカー(broker)設定の詳細は[次のリンク](https://www.cubrid.org/manual/ko/11.0/admin/config.html#broker-configuration)を参照してください。
+
+:::
+
+</InDoc>

@@ -64,7 +64,7 @@ PHPエージェントのインストール方法は、**Linuxパッケージの�
 
 </FiletreeItem>
 
-<FiletreeItem name="whatap-php(whatap_php)" type="file">エージェントは、トレーサーからUDPに送信された情報を収集サーバーに送信するプログラムです。</FiletreeItem>
+<FiletreeItem name="whatap-php(whatap_php)" type="file">エージェントは、トレーサーからUDPで送信された情報を収集サーバーに転送するプログラムです。</FiletreeItem>
   
   <FiletreeItem name="whatap_php" type="file">サービスの実行ファイルです。</FiletreeItem>
 
@@ -72,11 +72,11 @@ PHPエージェントのインストール方法は、**Linuxパッケージの�
 
 <FiletreeItem name="template.ini" type="file">*whatap.ini* 作成時、コピーして使用するテンプレートファイルです。</FiletreeItem>
 
-<FiletreeItem name="whatap-install-yyyymmdd.log" type="file">インストールプロセスのログファイルです。基本の保存パスは*/usr/whata/php/logs*です。日付順にファイルが作成されます。基本的に7日間のログが保存されます。</FiletreeItem>
+<FiletreeItem name="whatap-install-yyyymmdd.log" type="file">インストールする際のログファイルです。デフォルト保存パスは*/usr/whata/php/logs*です。日付ごとにファイルが作成されます。デフォルトで7日間のログが保存されます。</FiletreeItem>
 
-<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">エージェントのログファイルです。基本の保存パスは、*/usr/whata/php/logs*です。日付順にファイルが作成されます。基本的に7 日間のログが保存されます。</FiletreeItem>
+<FiletreeItem name="whatap-boot-yyyymmdd.log" type="file">エージェントのログファイルです。デフォルト保存パスは、*/usr/whata/php/logs*です。日付ごとにファイルが作成されます。デフォルトで7日間のログが保存されます。</FiletreeItem>
 
-<FiletreeItem name="install.sh" type="file">インストールスクリプトです。PHP拡張モジュール(*whatap.so *)をApacheまたはPHP-FPMにインストールし、whatap-phpサービスのインストールを進めます。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参照してください。</FiletreeItem>
+<FiletreeItem name="install.sh" type="file">インストールスクリプトです。PHP拡張モジュール(*whatap.so *)をApacheまたはPHP-FPMに連携し、whatap-phpサービスをインストールします。詳細は[次の文書](agent-troubleshooting#extension-modul-manual-setting)を参照してください。</FiletreeItem>
 
 <FiletreeItem name="WhaTap.php (sample.php)" type="file">PHPソースコードで使用するAPIリファレンスクラス(*/usr/whatap/php/lib/WhaTap.php*)およびサンプルソースファイル(*sample.php*)です。</FiletreeItem>
 

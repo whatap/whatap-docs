@@ -183,7 +183,17 @@ import Transaction from "../common-items/_transaction.mdx";
 
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
-  トランザクション収集の例外URL prefixを指定します。指定した値と前の部分が一致するurlは、トランザクション性能を収集しません。2つ以上の値を指定するには、コンマ(,)を区切り文字として利用します。
+  トランザクションの収集から除外するURLのプレフィクス(prefix)を設定します。設定したプレフィクスと一致するURLは、トランザクションの性能を収集しません。複数の値を設定するには、コンマ(,)で区分してください。
+
+  :::note
+
+  このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
+
+  :::
+
+- **trace_ignore_url_suffix** <span class='type'>String</span>
+
+  トランザクションの収集から除外するURLのサフィックス(suffix)を設定します。設定したサフィックスと一致するURLは、トランザクションの性能を収集しません。複数の値を設定するには、コンマ(,)で区分してください。
 
   :::note
 

@@ -8,6 +8,9 @@ keywords:
   - 管理
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 :::note
 
 以前のバージョンをインストールする場合は、support@whatap.io までお問い合わせください。
@@ -84,9 +87,42 @@ keywords:
   /etc/init.d/whatap-infra start
   ```
 
+- **HP-UX** 
+
+  インストールされているエージェントを最新バージョンにアップデートするには、次のコマンドを実行してください。 
+
+  <Tabs>
+  <TabItem value="ia64" label="IA64" default>
+
+  ```bash title='IA64'
+  cp /usr/whatap/infra/conf/whatap.conf /tmp+
+  /sbin/init.d/whatap-infra stop
+  gunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -
+  yes n | ./whatap-infra/install.sh
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  /sbin/init.d/whatap-infra start
+  ```
+
+  </TabItem>
+
+  <TabItem value="parisc" label="PA-RISC">
+
+  ```bash title='PA-RISC'
+  cp /usr/whatap/infra/conf/whatap.conf /tmp
+  /usr/sbin/init.d/whatap-infra stop
+  gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
+  yes n | ./whatap-infra/install.sh
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  /sbin/init.d/whatap-infra start
+  ```
+
+  </TabItem>
+
+  </Tabs>
+
 ## Windows
 
-インストールされているエージェントを最新バージョンにアップデートするには、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューに移動してください。<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="server_installAgent_win_download" className="uitext" /> 案内の指示に従って、WindowsサーバーOS用のインストールファイルをダウンロードした後 *whatap_infra.exe* ファイルを実行してください。 エージェントのアップデートした後、サービスが再起動されます。
+インストール済みのエージェントを最新バージョンにアップデートするには、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューに移動します。<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="server_installAgent_win_download" className="uitext" />の指示に従って、Windowsサーバー用のインストーラーをダウンロードし、*whatap_infra.exe*ファイルを実行します。エージェントのアップデート後、サービスが再起動されます。
 
 :::note
 

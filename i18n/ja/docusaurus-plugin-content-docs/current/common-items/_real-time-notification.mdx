@@ -1,0 +1,49 @@
+<Cmdname sid="sms_alert_status" className="uitext" />機能は<Cmdname sid="side_eventSetting" className="uitext" />メニューを通じて追加したイベントが発生した場合、ポップアップ形式でリアルタイムで提供します。 これにより、イベントが発生するとすぐに通知を受け、問題を迅速に認知し、対応できます。 また、既に発生している、または見逃した通知履歴を確認して、リアルタイムでの対応ができなかった状況も把握し、解決できます。
+
+## リアルタイム通知の確認
+
+イベント設定を通じて発生するリアルタイム通知は、画面右上にポップアップ形式で表示されます。
+
+<ImgLang img="ui-home/main-ui-realtime-notification-popup.png" desc="リアルタイムアラート" />
+
+- 通知が発生した時間とタイトル、メッセージを確認できます。
+
+- 個別通知を閉じるには、メッセージ右上の![閉じるアイコン](/img/ico-close.svg)ボタンを選択します。
+
+- 画面に表示されているすべてのポップアップ通知を閉じるには<Cmdname sid="BTN08345" className="uitext" />ボタンを選択します。
+
+## 通知履歴を確認する
+
+通知履歴を確認するには、プロジェクトを選択して進入した画面の一番上に![通知アイコン](/img/ico-noti.svg)ボタンを選択します。 画面の右側に<Cmdname sid="sms_alert_status" className="uitext" />が表示されます。 現在のプロジェクトの最近24時間の通知を、最大100個まで確認できます。
+
+<ImgLang img="ui-home/main-ui-realtime-notification.png" desc="リアルタイムアラート" />
+
+- 個別のイベント項目を選択すると、関連メニューに移動できます。
+
+- リアルタイム通知画面上段の時間別チャートで希望する時間帯を選択すると、そのイベント項目に移動できます。
+
+  <ImgLang img="ui-home/main-ui-realtime-notification-select-time.png" desc="リアルタイムアラート" className="width-400" />
+
+- 全通知履歴を確認するには<Cmdname sid="total_event_history" className="uitext" />ボタンを選択します。 <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューに移動します。
+
+  <ImgLang img="ui-home/main-ui-realtime-notification-all-history.png" desc="リアルタイムアラート" className="width-400" />
+
+  :::note
+
+  - <Cmdname sid="total_event_history" className="uitext" />ボタンは<Cmdname sid="sms_alert_status" className="uitext" />一覧に何も表示されない時に確認できます。
+
+  - <Cmdname sid="side_eventHistory" className="uitext" />メニューの詳細は[次の文書](set-event-history)を参照してください。
+
+  :::
+
+## リアルタイム通知を設定する{#setrealtimenoti}
+
+<Cmdname sid="TTL08411" className="uitext" />機能により、一覧に表示される項目を設定できます。 <Cmdname sid="sms_alert_status" className="uitext" />画面右上の![設定アイコン](/img/ico-setting.svg)ボタンを選択します。
+
+<ImgLang img="ui-home/main-ui-realtime-notification-settings.png" desc="リアルタイム通知設定" />
+
+- <Cmdname sid="ITM08412" className="uitext" />: <Cmdname sid="sms_alert_status" className="uitext" />画面を閉じた状態でも、通知をポップアップ形式で提供します。
+
+- <Cmdname sid="ITM08413" className="uitext" />: <Cmdname sid="sms_alert_status" className="uitext" />一覧で解消されたイベントを含めて確認できます。
+
+- <Cmdname sid="DSC08409" className="uitext" />: ブラウザで発生する通知音を事前に確認できます。 <span className="vslow">Critical</span>または<span className="slow">Warning</span>隣にある![音アイコン](/img/ico-noti-sound.svg)ボタンを選択します。

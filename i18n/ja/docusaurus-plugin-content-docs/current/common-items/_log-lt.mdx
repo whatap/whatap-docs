@@ -1,5 +1,6 @@
 import Logroleview from "../common-items/_log-role-view.mdx";
 import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
+import LogCl from "../common-items/_log-table-cl-modify.mdx";
 
 <Logroleview />
 
@@ -15,11 +16,13 @@ import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
 
 </InDoc>
 
-<Cmdname sid="side_logTail" className="uitext" />メニューからサーバーコンソールにアクセスすることなく、モニタリング画面でログデータストリームを簡単に確認できます。大量のログの中から必要なログを選別し、ハイライト機能により目的のログをすばやく認識することができます。
+<Cmdname sid="side_logTail" className="uitext" />メニューの画面から、サーバーのコンソールにアクセスすることなく、ログデータのストリームを簡単に確認できます。大量のログの中から必要なログを選別し、ハイライト機能により目的のログをすばやくチェックできます。
 
 <ImgLang img='log-live-tail.png' desc='ライブテール'/>
 
-<Cmdname sid="side_logTail" className="uitext" />メニューから複雑なログでも簡単にアクセスできます。必要に応じて<Cmdname sid="filter" className="uitext" />や<Cmdname sid="highlight" className="uitext" />などの機能を活用し、リアルタイムで必要なログを確認できます。ログデータの更新周期は2秒です。<Loguimainterm />
+<Cmdname sid="side_logTail" className="uitext" />メニューから複雑なログでも簡単にアクセスできます。必要に応じて<Cmdname sid="filter" className="uitext" />または<Cmdname sid="highlight" className="uitext" />などの機能を活用し、リアルタイムで照会できます。ログデータの更新周期は2秒です。<Loguimainterm />
+
+<LogCl />
 
 ## エージェントオプション
 
@@ -35,7 +38,7 @@ import Logfilterapply2 from "../common-items/_log-filter-apply2.mdx";
 
 <Logfilterapply2 />
 
-### 構文解析されていないキーワードのフィルター適用
+### パーシングされていないキーワードのフィルター適用
 
 import Logfilterapplynonparsing from "../common-items/_log-filter-apply-non-parsing.mdx";
 

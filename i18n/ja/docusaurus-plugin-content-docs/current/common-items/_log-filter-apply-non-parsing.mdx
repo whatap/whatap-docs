@@ -1,16 +1,16 @@
-ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、<Cmdname sid="log_parser_setting" className="uitext" />を通じてインデックスキー値を活用して検索することをお勧めします。
+ログからパーシングされていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、<Cmdname sid="log_parser_setting" className="uitext" />を通じてインデックスキーを活用した検索をお勧めします。
 
-<ImgLang img='log-filter-search.png' desc='構文解析されていないキーワードのフィルター適用'/>
+<ImgLang img='log-filter-search.png' desc='パーシングされていないキーワードのフィルター適用'/>
 
 <InDoc pages="log-lt,aws-log-lt">
 
 1. <Cmdname sid="category" className="uitext" />を選択します。 <InDoc pages="log-search,aws-log-search">カテゴリ指定が必須です。</InDoc>
 
-2. <Cmdname sid="filter" className="uitext" />入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。
+2. <Cmdname sid="filter" className="uitext" />入力欄に`content`基準で分かち書きしながら、検索キーワードを入力します。
 
    > 例）`content *select*`
 
-3. <LinkImage img="ic-search.svg" className="ico" /><UI>検索</UI>ボタンをクリックしてログを照会してください。
+3. <LinkImage img="ic-search.svg" className="ico" /><UI>検索</UI>ボタンをクリックしてログを照会します。
 
 </InDoc>
 
@@ -18,13 +18,13 @@
 
 1. <Cmdname sid="category" className="uitext" />を選択します。 <InDoc pages="log-search,aws-log-search">カテゴリ指定が必須です。</InDoc>
 
-2. <Cmdname sid="filter" className="uitext" />入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。
+2. <Cmdname sid="filter" className="uitext" />入力欄に`content`基準で分かち書きしながら、検索キーワードを入力します。
 
    > 例）`content *select*`
 
-3. <LinkImage img="ic-search.svg" className="ico" /><UI>検索</UI>ボタンをクリックしてログを照会してください。 ログ全体の一部を先に照会します。 1回あたりの検索結果は最大1万件です。
+3. <LinkImage img="ic-search.svg" className="ico" /><UI>検索</UI>ボタンをクリックしてログを照会します。 ログ全体の一部を先に照会します。 1回あたりの検索結果は最大1万件です。
 
-4. スクロールを下げて下段の<Cmdname sid="BTN07030" className="uitext" />ボタンを選択すると、追加で照会することができます。 
+4. スクロールを下げて下段の<Cmdname sid="BTN07030" className="uitext" />ボタンを選択すると、つづけて照会できます。 
 
    <ImgLang img='log-content-search-more.png' desc='追加照会'/>
 
@@ -34,6 +34,6 @@
 
 - <InDoc pages="log-search,aws-log-search">全体ログのうち、サーバー照会範囲当たり1万件ずつ照会します。 サーバー照会範囲の場合、基本20万件ですが、ログ全体の量によって比率が変わることがあります。</InDoc><InDoc pages="log-lt,aws-log-lt"><Cmdname sid="logTail" className="uitext" />の場合、すべてのログ検索が可能であるため、カテゴリを指定する必要はありません。</InDoc>
 
-- パーサー設定の詳細については、[次の文書](log-parser)を参考にしてください。
+- パーサ設定の詳細については、[次の文書](log-parser)を参考にしてください。
 
 :::

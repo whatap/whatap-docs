@@ -133,7 +133,7 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   既定値 `true`
 
-  セグメントサイズの情報を収集します。 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューで当該データベースまたはテーブルスペースを選択すると、サイズ情報が確認できます。
+  セグメントサイズの情報を収集します。 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューからデータベースまたはテーブルスペースを選択すると、サイズ情報を確認できます。
 
 - **segments_hour** <span class='type'>Int</span>
 
@@ -145,7 +145,7 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   既定値`10`
 
-  セグメントサイズの情報を収集する最小単位として既定値は10MBです。 セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。
+  セグメントサイズの情報を収集する最小単位の既定値は10MBです。 セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。
 
 - **segments_exclude_sys** <span class='type'>Int</span>
 
@@ -157,7 +157,7 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   既定値 'SYS', 'OUTLN', 'SYSTEM', 'AUDSYS', 'DBSNMP', 'GSMADMIN_INTERNAL', 'XDB', 'WMSYS', 'OJVMSYS', 'CTXSYS', 'ORDSYS', 'ORDDATA', 'MDSYS', 'LBACSYS', 'DVSYS', 'DBSFWUSER', 'APPQOSSYS', 'OLAPSYS'
 
-  sysに該当するアカウントの一覧です。 上記のアカウントに追加したい場合は`segments_sys+='xxx'`で追加できます。
+  sysに該当するアカウントの一覧です。 上記のアカウントに追加する場合は、`segments_sys+='xxx'`で追加できます。
 
 - **segments_max_count** <span class='type'>Int</span>
 
@@ -196,7 +196,7 @@ import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
 
 <Dbagentdbxnaming />
 
-## 付加エージェント設定 {#xosconf}
+## XOSエージェント設定 {#xosconf}
 
 *xos.conf*ファイルに次のオプションを設定すると、データベースサーバーのリソースを追加でモニタリングできます。 このオプションを利用するには、*whatap.conf*ファイルで`xos`オプションを`true`に設定してください。
 
@@ -215,7 +215,7 @@ import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
 
   既定値`0`
 
-  limitの設定値より大きい値を持つプロセス情報を収集します。 1/100%単位で1.23%の場合、`123`として設定します。
+  limitの設定値より大きい値を持つプロセス情報を収集します。 1/100%単位で1.23%の場合、`123`に設定します。
     
 
 - **mem_limit** <span class='type'>Int</span>
@@ -232,7 +232,7 @@ import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
 
 - **process** <span class='type'>String</span>
 
-  プロセスの実行状態をモニタリングできます。 オプション値でプロセス名を入力してください。 コンマ（,）を区切り文字として複数設定することができます。
+  プロセスの実行状態をモニタリングできます。 オプション値でプロセス名を入力します。 コンマ（,）を区切り文字として複数設定することができます。
 
   ```ini title='xos.conf'
   process={process_name}
@@ -246,7 +246,7 @@ import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
 
   :::note
 
-  `process`オプションを使用して、データベースの実行されているプロセスが終了した場合はアラート通知を送信できます。 詳細については、[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照にしてください。
+  `process`オプションを使用して、データベースの実行中のプロセスが終了される場合にアラート通知を送信できます。 詳細については、[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照にしてください。
 
   :::
 
@@ -256,7 +256,7 @@ import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
 
 - **file** <span class='type'>String</span>
 
-  <Cmdname sid="side_log" className="uitext" />メニュー(<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logSetting" className="uitext" />)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+  <Cmdname sid="side_log" className="uitext" />メニュー(<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logSetting" className="uitext" />)を使用するには、`file`オプションにモニタリングするログファイル名のフルパスを入力します。
 
   ```ini title='xos.conf'
   file=/opt/oracle/log

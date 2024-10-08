@@ -2,7 +2,6 @@
 id: agent-troubleshooting
 title: エージェント問題の解決
 description: エージェントのインストール時に発生する可能性のある問題を確認できます。
-hide_table_of_contents: true
 toc_max_heading_level: 2
 keywords:
   - Kubernetes
@@ -32,7 +31,7 @@ helm repo remove whatap
 | Error: INSTALLATION FAILED: Unable to continue with install: Namespace "whatap-monitoring" in namespace "" exists and cannot be imported into the current release |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-クラスターに`whatap-monitoring`ネームスペースが存在する場合、ユーザーが*yaml*ファイルベースですでにWhaTap Kubernetesエージェントをインストールしているためです。 この場合、次のコマンドにより、既存の`whatap-monitoring`ネームスペースと関連リソースを削除してください。
+クラスターに`whatap-monitoring`ネームスペースが存在する場合、ユーザーが*yaml*ファイルベースですでにWhaTap Kubernetesエージェントをインストールしているためです。 この場合、次のコマンドにより、既存の`whatap-monitoring`ネームスペースと関連リソースを削除します。
 
 ```shell
 kubectl delete namespace whatap-monitoring
@@ -45,14 +44,64 @@ kubectl delete clusterrole whatap
 | Error: INSTALLATION FAILED: Unable to continue with install: ClusterRole "whatap" in namespace "" exists and cannot be imported into the current release |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-クラスターへ`clusterrole`、`clusterrolebinding`リソースがすでに存在する場合は、次のコマンドでそのリソースを削除してください。
+クラスターへ`clusterrole`、`clusterrolebinding`リソースがすでに存在する場合は、次のコマンドでそのリソースを削除します。
 
 ```shell
 kubectl delete clusterrolebinding whatap
 kubectl delete clusterrole whatap
 ```
 
+### `whatap-monitoring`ネームスペースが使用できない場合{#whatap-monitoring-namespace-unavailable}
+
+基本的にWhaTap Kubernetesエージェントは`whatap-monitoring`ネームスペースにインストールされます。 ただし、当該ネームスペースが使用できない場合、またはユーザーが特定のネームスペースを指定する必要がある場合は、次の手順を参考にして、必要なネームスペースにエージェントのインストールを進めてください。 
+
+#### 事前準備
+
+- **チャートバージョン**: whatap/kube 1.7.11以降
+
+  次のコマンドでチャートのバージョンを確認します。 
+
+  ```bash
+  helm search repo whatap/kube --versions
+  ```
+
+  1.7.11バージョン未満の場合は、次のコマンドでチャートのバージョンをアップデートします。 
+
+  ```bash
+  helm repo update
+  ```
+
+- **Helm 버전**: Helm 3以降
+
+#### インストール手順
+
+使用したいネームスペース名を`<namespace>`に入力し、次のコマンドを実行してエージェントをインストールします。 
+
+```bash
+helm install whatap-kube-agent whatap/kube --create-namespace --namespace <namespace> --set namespaceOverrideEnabled=true --wait -f values.yaml
+```
+
+#### アップデートと削除
+
+- **アップデート**
+
+  次のコマンドでエージェントをアップデートします。 
+
+  ```bash
+  helm update whatap-kube-agent whatap/kube --namespace <namespace> --wait
+  ```
+
+- **削除**
+
+  次のコマンドを使用してエージェントを削除します。 
+
+  ```bash
+  helm uninstall whatap-kube-agent whatap/kube --namespace <namespace>
+  ```
+
 </div>
+<br/>
+<br/>
 
 ## エージェント起動時に発生する問題の解決{#troubleshooting-agent}
 
@@ -75,7 +124,7 @@ WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) 
 
 {/* 다음 단계를 통해 와탭 쿠버네티스 모니터링을 재설치하세요. */}
 
-1. <Cmdname sid="side_management" className="uitext" />  > <Cmdname sid="agentInstall" className="uitext" />画面で最新*YAML*ファイルをダウンロードしてください。
+1. <Cmdname sid="side_management" className="uitext" />  > <Cmdname sid="agentInstall" className="uitext" />画面で最新の*YAML*ファイルをダウンロードします。
 
 2. ユーザーKubernetes環境でダウンロードした*YAML*ファイルを使用してエージェントをインストールしてください。 
 
@@ -85,11 +134,11 @@ WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) 
 
    :::note 
 
-   ユーザーKubernetes環境及び<Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_podList" className="uitext" />メニューで確認してください。
+   Kubernetes環境及び<Cmdname sid="side_workload" className="uitext" /> > <Cmdname sid="side_podList" className="uitext" />メニューで確認します。
 
    :::
 
-5. <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_kubernetesAgentList" className="uitext" />メニューで、各モニタリングエージェントで発生するログを確認してください。
+5. <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_kubernetesAgentList" className="uitext" />メニューで、各モニタリングエージェントで発生するログを確認します。
 
 </div>
 

@@ -22,7 +22,7 @@ keywords:
 
 ## 日次レポート：サーバー {#S001_ServerDaily_TagReport}
 
-<Cmdname sid="S001_ServerDaily_TagReport" className="uitext" report />は、1日あたりのサーバーリソース使用量を確認できるレポートです。 開始日、開始時間、終了時間を設定して表示することができます。
+<Cmdname sid="S001_ServerDaily_TagReport" className="uitext" report />は、1日あたりのサーバーリソース使用量を確認できるレポートです。 開始日、開始時刻、終了時刻を設定して照会できます。
 
 ### 概要 {#overview}
 
@@ -30,8 +30,8 @@ keywords:
 
 プロジェクト名とホスト数、発生した通知件数を概要を確認できます。 ホスト数と通知件数が前日と比較してどの程度変化したかを確認できます。
 
-- <Cmdname sid="host_count" className="b600" report/>：ルックアップ期間中のサーバーの合計数。
-- <Cmdname sid="alert_count" className="b600" report/>：表示期間中に発生した通知件数の総数。
+- <Cmdname sid="host_count" className="b600" report/>：照会期間中のサーバーの合計数です。
+- <Cmdname sid="alert_count" className="b600" report/>：照会期間中に発生したアラートの総件数です。
 
 ### サーバーリスト {#server_list}
 
@@ -51,8 +51,8 @@ CPUとメモリの平均値と最大値が90%以上の場合、<span class='loge
 
 <ImgLang img='server_daily_report_03.png' desc='アラートリスト'/>
 
-閲覧中に発生した通知履歴について、発生時間、遅延、通知が発生したサーバー名、アラートの原因を確認することができます。
-各通知の詳細情報は<Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューから表示することができます。プロジェクトの通知履歴がない場合は、「<Cmdname sid="no_data" className="uitext" report />」というメッセージが表示されます。
+照会期間中に発生したアラート履歴について、発生時間、通知レベル、発生したサーバー名、アラートの原因を確認できます。
+各アラートの詳細な情報は<Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューから確認できます。該当プロジェクトにアラート履歴がない場合は、「<Cmdname sid="no_data" className="uitext" report />」メッセージが表示されます。
 
 :::note
 
@@ -62,10 +62,9 @@ CPUとメモリの平均値と最大値が90%以上の場合、<span class='loge
 
 ## 週次レポート：サーバー {#S100_ServerWeeklyReport}
 
-<Cmdname sid="S100_ServerWeeklyReport" className="uitext" report/>は、一週間のサーバーのCPUとメモリ使用量を確認できるレポートです。開始日を設定することができ、開始日を基準として7日前から閲覧できます。
-開始日から7日間のデータを表示します。
+<Cmdname sid="S100_ServerWeeklyReport" className="uitext" report/>は、一週間のサーバーのCPUとメモリ使用量を確認できるレポートです。開始日を設定でき、当日の7日前まで設定できます。開始日から7日間のデータを照会します。
 
-### 全体リソース使用リスト {#total_resource_used_list}
+### 全体リソースの使用状況一覧 {#total_resource_used_list}
 
 #### <Cmdname sid="_cpu" report/>
 
@@ -103,7 +102,7 @@ CPUとメモリの平均値と最大値が90%以上の場合、<span class='loge
 
 ## 月次レポート：サーバー {#S200_ServerMonthlyReport}
 
-<Cmdname sid="S200_ServerMonthlyReport" className="uitext" report />は、1か月間のサーバーリソースの使用量と情報を確認できるレポートです。開始日を設定することができ、参照日を基準として30日前から表示できます。
+<Cmdname sid="S200_ServerMonthlyReport" className="uitext" report />は、1か月間のサーバーリソースの使用量と情報を確認できるレポートです。開始日を設定でき、当日の30日前まで設定できます。
 
 ### 概要 {#overview}
 
@@ -111,10 +110,10 @@ CPUとメモリの平均値と最大値が90%以上の場合、<span class='loge
 
 1 か月間のサーバーの合計リソース使用量を集計して履歴を表示することができます。
 
-- <Cmdname sid="total_host" className="b600" report/>：ルックアップ期間中のサーバーの合計数。
-- <Cmdname sid="total_core" className="b600" report/>：クエリ期間中に使用されたコアの合計数。
-- <Cmdname sid="total_disk" className="b600" report/>：ルックアップ期間中にマウントされたファイルシステムの合計サイズ。
-- <Cmdname sid="total_alarms" className="b600" report/>：表示期間中に発生した通知件数の総数。
+- <Cmdname sid="total_host" className="b600" report/>：照会期間中のサーバーの合計数です。
+- <Cmdname sid="total_core" className="b600" report/>：照会期間中に使用されたコアの合計数です。
+- <Cmdname sid="total_disk" className="b600" report/>：照会期間中にマウントされたファイルシステムの合計サイズです。
+- <Cmdname sid="total_alarms" className="b600" report/>：照会期間中に発生したアラートの総件数です。
 
 ### サーバー情報 {#server_info}
 

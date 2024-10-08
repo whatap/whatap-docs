@@ -1,0 +1,59 @@
+---
+id: script-manager
+title: スクリプトマネージャー
+description: エージェントのインストールパスにSQLスクリプトを保存すると、WhaTapモニタリングサービス画面でそのスクリプトを読み込み、リアルタイムで実行結果を照会できます。
+keywords:
+  - データベース
+  - スクリプトマネージャー
+displayed_sidebar: dbSidebar
+---
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" />
+
+エージェントのインストールパスにSQLスクリプトを保存すると、WhaTapモニタリングサービス画面でそのスクリプトを読み込み、リアルタイムで実行結果を照会できます。
+
+- SQLスクリプトをモニタリングツール内からすぐに読み込んで実行できます。 これにより、追加設定や外部ツールがなくても、迅速かつ効率的にデータを照会できます。
+
+- 特定のSQLスクリプトを事前に保存して繰り返し使用することができ、一貫したデータを継続的にモニタリングまたは分析する時に役立ちます。 これは手動作業を削減し、自動化されたプロセスの構築に繋がります。
+
+## 始める前に
+
+<Cmdname sid="side_dbScriptManager" className="uitext" />メニューでSQLスクリプトを実行するには、次の手順に従ってエージェントのインストールパスにSQLスクリプトを保存します。
+
+1. エージェントのインストールパスの下にある*scripts*フォルダに移動します。
+
+   ![](/img/script-manager-starting-step01.png)
+
+2. データベティスのタイプフォルダに入ります。 該当するフォルダがない場合は、作成します。
+
+   ![](/img/script-manager-starting-step02.png)
+
+3. SQLスクリプトを作成します。 この際、SQLスクリプトを実行するアカウントは、エージェントが使用するアカウントです。
+
+   ![](/img/script-manager-starting-step03.png)
+
+:::note
+
+SQLスクリプトを実行するアカウントは*whatap.conf*ファイルに明示したり、*uid.sh*ファイルで使用したアカウントです。
+
+:::
+
+## SQLスクリプトを実行する
+
+WhaTapモニタリングサービスのホーム画面で、データベースモニタリングサービスのプロジェクトを選択します。 <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" />メニューへアクセスしてください。
+
+<ImgLang img="script-manager-screen.png" desc="スクリプト·マネージャー" />
+
+1. <Cmdname sid="TTL08478" className="uitext" />セクションでSQLスクリプトを実行するエージェントを選択します。
+
+2. 画面の左側にある<Cmdname sid="TTL08480" className="uitext" />で、実行するスクリプトを選択します。
+
+3. <Cmdname sid="TTL08478" className="uitext" />セクションで選択したスクリプトのSQL文を確認し、<Cmdname sid="run" className="uitext" />ボタンを選択します。
+
+4. <Cmdname sid="TTL08479" className="uitext" />セクションで照会結果を確認します。
+
+:::note
+
+エージェントのインストールパスごとにSQLスクリプトを読み込むため、各エージェントから他のスクリプトファイルをインポートできます。
+
+:::

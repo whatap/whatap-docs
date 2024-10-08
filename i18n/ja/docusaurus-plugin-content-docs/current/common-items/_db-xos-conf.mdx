@@ -54,9 +54,11 @@
 
   データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
 
+<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid">
+
 - **file** <span class='type'>String</span>
 
-  <Cmdname sid="side_log" className="uitext" />メニュー(<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logSetting" className="uitext" />)を使用するには、`file`オプションにモニタリングするログファイル名の絶対パスを入力します。
+  <Cmdname sid="side_log" className="uitext" />メニュー(<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logSetting" className="uitext" />)を使用するには、`file`オプションにモニタリングするログファイル名のフルパスを入力します。
 
   <InDoc product='postgresql'>
 
@@ -107,3 +109,13 @@
   ```
 
   </InDoc>
+
+  <InDoc product="cubrid">
+
+  ```ini title='xos.conf'
+  file=/cubrid-11.0/log/server/demodb_latest.err
+  ```
+
+  </InDoc>
+
+</InDoc>

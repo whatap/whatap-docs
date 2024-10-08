@@ -68,3 +68,9 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
   既定値`200`
 
   whatap-phpサービスデーモンのgc呼び出し間隔を増やすことで、CPU負荷を減らすことができます。CPU負荷を減らす代わりに、メモリ使用量が増加します。最大1000まで適用されます。
+
+- **whatap.use_env_first** <span class='type'>Boolean</span> <code className="my">PHP agent v2.8.2 or later</code>
+
+  既定値`false`
+
+  エージェント設定の優先順位は、*whatap.ini*ファイルが最初に適用され、次に環境変数が適用されます。環境変数を優先的に適用するには、`use_env_first`オプションを`true`に設定します。または`WHATAP_USE_ENV_FIRST=true`形式で環境変数を設定できます。
