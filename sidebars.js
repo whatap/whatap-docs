@@ -3846,7 +3846,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -3854,9 +3854,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_38',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_39',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_38',
                 'release-notes/java/java-2_2_37',
                 'release-notes/java/java-2_2_36',
                 'release-notes/java/java-2_2_35',
@@ -3865,7 +3866,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_32',
                 'release-notes/java/java-2_2_31',
                 'release-notes/java/java-2_2_30',
-                'release-notes/java/java-2_2_29',
                 'release-notes/java/java-previous',
               ],
             },

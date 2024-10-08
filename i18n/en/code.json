@@ -507,7 +507,7 @@
     "description": "The draft content banner message"
   },
   "theme.blog.newFeatures": {
-    "message": "New features",
+    "message": "New Features",
     "description": "Navbar item with label 새로운 기능"
   }
 }
