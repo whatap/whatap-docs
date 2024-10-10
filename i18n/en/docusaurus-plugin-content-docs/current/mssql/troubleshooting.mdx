@@ -19,16 +19,6 @@ import Dbhowtocheckfirewal from "../common-items/_db-how-to-check-firewal.mdx";
 
 <Dbhowtocheckfirewal />
 
-## Constraints
-
-import Dbmultiregioncantselectonepr from "../common-items/_db-multi-region-cant-select-one-pr.mdx";
-
-<Dbmultiregioncantselectonepr />
-
-import Dbcantuseduplicatedname from "../common-items/_db-cant-use-duplicated-name.mdx";
-
-<Dbcantuseduplicatedname />
-
 ## SSL authentication-related issues
 
 If you encounter the following SSL security issues when connecting to the database from agents, set the option not to use SSL authentication when connecting JDBC.
@@ -44,3 +34,13 @@ Set the following option in the agent configuration file (_whatap.conf_) to disa
 ```ini title="whatap.conf"
 connect_option=encrypt=true;trustServerCertificate=true
 ```
+
+## Constraints
+
+import Dbmultiregioncantselectonepr from "../common-items/_db-multi-region-cant-select-one-pr.mdx";
+
+<Dbmultiregioncantselectonepr />
+
+import Dbcantuseduplicatedname from "../common-items/_db-cant-use-duplicated-name.mdx";
+
+<Dbcantuseduplicatedname />
