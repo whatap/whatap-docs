@@ -372,6 +372,21 @@ function _createMdxContent(props) {
                 sid: "side_dashboard",
                 className: "uitext"
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_nodeMap",
+                className: "uitext"
+              }), " 메뉴의 에이전트 지원 버전을 v1.3.7에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+                children: "v1.4.1"
+              }), "로 변경"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "0",
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dashboard",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_containerMap",
                 className: "uitext"
               }), " 메뉴로 처음 진입할 때 간헐적으로 라벨이 제대로 표시되지 않는 문제 수정"]
