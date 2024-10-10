@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18703],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60203],{
 
-/***/ 21148:
+/***/ 82021:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_8_1',
-	title: 'DBX v1.8.1',
-	pagination_next: 'release-notes/db/dbx-1_8_0',
+	id: 'dbx-2_0_0',
+	title: 'DBX v2.0.0',
+	pagination_next: 'release-notes/db/dbx-1_9_5',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_8_1",
-  "title": "DBX v1.8.1",
-  "description": "2024년 06월 27일",
-  "source": "@site/docs/release-notes/db/dbx-1.8.1.mdx",
+  "id": "release-notes/db/dbx-2_0_0",
+  "title": "DBX v2.0.0",
+  "description": "2024년 08월 14일",
+  "source": "@site/docs/release-notes/db/dbx-2.0.0.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_8_1",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_8_1",
+  "slug": "/release-notes/db/dbx-2_0_0",
+  "permalink": "/whatap-docs/release-notes/db/dbx-2_0_0",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.8.1.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-2.0.0.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_8_1",
-    "title": "DBX v1.8.1",
-    "pagination_next": "release-notes/db/dbx-1_8_0",
+    "id": "dbx-2_0_0",
+    "title": "DBX v2.0.0",
+    "pagination_next": "release-notes/db/dbx-1_9_5",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.8.2",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_2"
+    "title": "DBX v2.0.1",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_0_1"
   },
   "next": {
-    "title": "DBX v1.8.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_0"
+    "title": "DBX v1.9.5",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_5"
   }
 };
 const assets = {
@@ -61,31 +61,67 @@ const assets = {
 
 
 
-const toc = [];
+const toc = [{
+  "value": "Altibase",
+  "id": "altibase",
+  "level": 2
+}];
 function _createMdxContent(props) {
   const _components = {
-    a: "a",
-    admonition: "admonition",
+    code: "code",
+    h2: "h2",
+    li: "li",
     p: "p",
+    pre: "pre",
+    section: "section",
+    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 06월 27일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        children: "Feature"
-      }), " XOS 에이전트 v1.1.8f 업데이트"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["XOS 에이전트 v1.1.8f 업데이트에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "xos-1_1_8f",
-          children: "다음 문서"
-        }), "를 참조하세요."]
-      })
+      children: "2024년 08월 14일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "altibase",
+        children: "Altibase"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              priority: "1",
+              children: "New"
+            }), " Altibase ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              className: "my",
+              children: "V2"
+            }), " 추가"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              priority: "1",
+              children: "Feature"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "obj_invalid_cnt"
+            }), " 지표 추가"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              priority: "1",
+              children: "Feature"
+            }), " tablespace lock 데이터를 수집할 수 있는 에이전트 옵션 추가"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "tablespaceLock=false # default false\n"
+            })
+          }), "\n"]
+        }), "\n"]
+      })]
     })]
   });
 }

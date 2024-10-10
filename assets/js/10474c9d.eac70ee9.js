@@ -295,7 +295,7 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "와탭 쿠버네티스 에이전트 1.3.7 버전 이상이 필요합니다."
+            children: "와탭 쿠버네티스 에이전트 1.4.1 버전 이상이 필요합니다."
           }), "\n"]
         }), "\n"]
       })]

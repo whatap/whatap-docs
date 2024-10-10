@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[95219],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[87137],{
 
-/***/ 91387:
+/***/ 38128:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_9_0',
-	title: 'DBX v1.9.0',
-	pagination_next: 'release-notes/db/dbx-1_8_2',
+	id: 'dbx-2_0_1',
+	title: 'DBX v2.0.1',
+	pagination_next: 'release-notes/db/dbx-2_0_0',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_9_0",
-  "title": "DBX v1.9.0",
-  "description": "2024년 07월 04일",
-  "source": "@site/docs/release-notes/db/dbx-1.9.0.mdx",
+  "id": "release-notes/db/dbx-2_0_1",
+  "title": "DBX v2.0.1",
+  "description": "2024년 08월 23일",
+  "source": "@site/docs/release-notes/db/dbx-2.0.1.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_9_0",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_9_0",
+  "slug": "/release-notes/db/dbx-2_0_1",
+  "permalink": "/whatap-docs/release-notes/db/dbx-2_0_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.9.0.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-2.0.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_9_0",
-    "title": "DBX v1.9.0",
-    "pagination_next": "release-notes/db/dbx-1_8_2",
+    "id": "dbx-2_0_1",
+    "title": "DBX v2.0.1",
+    "pagination_next": "release-notes/db/dbx-2_0_0",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.9.1",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_1"
+    "title": "DBX v2.0.2",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_0_2"
   },
   "next": {
-    "title": "DBX v1.8.2",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_2"
+    "title": "DBX v2.0.0",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_0_0"
   }
 };
 const assets = {
@@ -62,8 +62,20 @@ const assets = {
 
 
 const toc = [{
+  "value": "공통",
+  "id": "공통",
+  "level": 2
+}, {
+  "value": "Altibase",
+  "id": "altibase",
+  "level": 2
+}, {
   "value": "Oracle",
   "id": "oracle",
+  "level": 2
+}, {
+  "value": "PostgreSQL",
+  "id": "postgresql",
   "level": 2
 }];
 function _createMdxContent(props) {
@@ -80,7 +92,60 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 07월 04일"
+      children: "2024년 08월 23일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "공통",
+        children: "공통"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "1",
+          children: "Changed"
+        }), " MySQL, PostgreSQL, Altibase, Oracle 상품의 에이전트 옵션 이름 수정"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "xviewSkipSession"
+            }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "xview_min_sec"
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "tablespaceLock"
+            }), " → ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "tablespace_lock"
+            })]
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "altibase",
+        children: "Altibase"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "1",
+          children: "New"
+        }), " Altibase ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+          className: "my",
+          children: "V2"
+        }), " 기능 추가"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "태그 카운트 팩으로 변경 및 수집 정보 추가"
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "하위 버전 호환 가능"
+          }), "\n"]
+        }), "\n"]
+      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -88,48 +153,24 @@ function _createMdxContent(props) {
         children: "Oracle"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          children: "New"
-        }), " Oracle V2 출시에 따른 기능 추가"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ora_hidden_param=true"
-            }), " 옵션을 설정하면 hidden parameter 기능 추가"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ora_invalid_object=true"
-            }), " 옵션을 설정하면 invalid object 수집"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ora_unusable_index=true"
-            }), " 옵션을 설정하면 unsable index 수집"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "plan 변화 체크 및 저장 기능 추가"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "bind 파라미터 저장 기능 추가"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "segment size 수집"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "sorts (disk)"
-            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "user rollbacks"
-            }), " 지표 추가"]
-          }), "\n"]
-        }), "\n"]
+          priority: "0",
+          children: "Fixed"
+        }), " AIX 환경에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "v$osstat"
+        }), " 지표를 수집하지 않도록 수정한 내용 원복 및 수집되는 지표만 처리하도록 수정"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "postgresql",
+        children: "PostgreSQL"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "0",
+          children: "Fixed"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "pg_basebackup"
+        }), " 수행 중 master 처리되는 버그 수정"]
       })]
     })]
   });

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60203],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[21052],{
 
-/***/ 82021:
+/***/ 53335:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-2_0_0',
-	title: 'DBX v2.0.0',
-	pagination_next: 'release-notes/db/dbx-1_9_5',
+	id: 'dbx-2_0_2',
+	title: 'DBX v2.0.2',
+	pagination_next: 'release-notes/db/dbx-2_0_1',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-2_0_0",
-  "title": "DBX v2.0.0",
-  "description": "2024년 08월 14일",
-  "source": "@site/docs/release-notes/db/dbx-2.0.0.mdx",
+  "id": "release-notes/db/dbx-2_0_2",
+  "title": "DBX v2.0.2",
+  "description": "2024년 08월 30일",
+  "source": "@site/docs/release-notes/db/dbx-2.0.2.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-2_0_0",
-  "permalink": "/whatap-docs/release-notes/db/dbx-2_0_0",
+  "slug": "/release-notes/db/dbx-2_0_2",
+  "permalink": "/whatap-docs/release-notes/db/dbx-2_0_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-2.0.0.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-2.0.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-2_0_0",
-    "title": "DBX v2.0.0",
-    "pagination_next": "release-notes/db/dbx-1_9_5",
+    "id": "dbx-2_0_2",
+    "title": "DBX v2.0.2",
+    "pagination_next": "release-notes/db/dbx-2_0_1",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/db/dbx-agent"
+    "title": "DBX v2.1.0",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_1_0"
   },
   "next": {
-    "title": "DBX v1.9.5",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_5"
+    "title": "DBX v2.0.1",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_0_1"
   }
 };
 const assets = {
@@ -62,65 +62,56 @@ const assets = {
 
 
 const toc = [{
-  "value": "Altibase",
-  "id": "altibase",
+  "value": "공통",
+  "id": "공통",
+  "level": 2
+}, {
+  "value": "PostgreSQL",
+  "id": "postgresql",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
     code: "code",
     h2: "h2",
-    li: "li",
     p: "p",
-    pre: "pre",
     section: "section",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 08월 14일"
+      children: "2024년 08월 30일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "altibase",
-        children: "Altibase"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              priority: "1",
-              children: "New"
-            }), " Altibase ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              className: "my",
-              children: "V2"
-            }), " 추가"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              priority: "1",
-              children: "Feature"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "obj_invalid_cnt"
-            }), " 지표 추가"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              priority: "1",
-              children: "Feature"
-            }), " tablespace lock 데이터를 수집할 수 있는 에이전트 옵션 추가"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-ini",
-              metastring: "title=\"whatap.conf\"",
-              children: "tablespaceLock=false # default false\n"
-            })
-          }), "\n"]
-        }), "\n"]
+        id: "공통",
+        children: "공통"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "1",
+          children: "Changed"
+        }), " 실시간 호출 api ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "DBX_USER_SCRIPT"
+        }), " 이름을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "DBX_SCRIPT_RUN"
+        }), "으로 변경"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "postgresql",
+        children: "PostgreSQL"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "1",
+          children: "Changed"
+        }), " pg table 사이즈 수집 함수를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "pg_relation_size()"
+        }), "에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "pg_table_size ()"
+        }), "로 변경"]
       })]
     })]
   });

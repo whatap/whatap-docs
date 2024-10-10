@@ -46,10 +46,6 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "DBX v1.9.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_0"
-  },
   "next": {
     "title": "DBX v1.8.1",
     "permalink": "/whatap-docs/release-notes/db/dbx-1_8_1"

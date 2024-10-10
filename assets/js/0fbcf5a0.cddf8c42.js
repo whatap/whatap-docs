@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[33829],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[19860],{
 
-/***/ 76446:
+/***/ 942:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'dbx-1_9_1',
-	title: 'DBX v1.9.1',
-	pagination_next: 'release-notes/db/dbx-1_9_0',
+	id: 'dbx-2_1_2',
+	title: 'DBX v2.1.2',
+	pagination_next: 'release-notes/db/dbx-2_1_1',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/db/dbx-1_9_1",
-  "title": "DBX v1.9.1",
-  "description": "2024년 07월 19일",
-  "source": "@site/docs/release-notes/db/dbx-1.9.1.mdx",
+  "id": "release-notes/db/dbx-2_1_2",
+  "title": "DBX v2.1.2",
+  "description": "2024년 10월 08일",
+  "source": "@site/docs/release-notes/db/dbx-2.1.2.mdx",
   "sourceDirName": "release-notes/db",
-  "slug": "/release-notes/db/dbx-1_9_1",
-  "permalink": "/whatap-docs/release-notes/db/dbx-1_9_1",
+  "slug": "/release-notes/db/dbx-2_1_2",
+  "permalink": "/whatap-docs/release-notes/db/dbx-2_1_2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/db/dbx-1.9.1.mdx",
+  "editUrl": "undefined/docs/release-notes/db/dbx-2.1.2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "dbx-1_9_1",
-    "title": "DBX v1.9.1",
-    "pagination_next": "release-notes/db/dbx-1_9_0",
+    "id": "dbx-2_1_2",
+    "title": "DBX v2.1.2",
+    "pagination_next": "release-notes/db/dbx-2_1_1",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.9.2",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_2"
+    "title": "DBX Agent Release Notes",
+    "permalink": "/whatap-docs/release-notes/db/dbx-agent"
   },
   "next": {
-    "title": "DBX v1.9.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_0"
+    "title": "DBX v2.1.1",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_1_1"
   }
 };
 const assets = {
@@ -66,22 +66,25 @@ const toc = [{
   "id": "공통",
   "level": 2
 }, {
-  "value": "Mongodb",
-  "id": "mongodb",
+  "value": "Oracle",
+  "id": "oracle",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
+    code: "code",
+    em: "em",
     h2: "h2",
     p: "p",
     section: "section",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Status} = _components;
+  }, {Cmdname, Status} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 07월 19일"
+      children: "2024년 10월 08일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
@@ -91,20 +94,27 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
           priority: "1",
           children: "Feature"
-        }), " Too big data 알림의 status 추가"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "에이전트에서 데이터 전송 시 팩 사이즈가 5MB 이상일 때 알림을 발생할 수 있도록 status 추가"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_logViewer",
+          className: "uitext"
+        }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "whatap.conf"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "whatap.log"
+        }), " 파일을 조회할 수 있도록 기본 옵션 추가"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "mongodb",
-        children: "Mongodb"
+        id: "oracle",
+        children: "Oracle"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-          priority: "1",
-          children: "Feature"
-        }), " db size 및 collection 정보 수집"]
+          priority: "0",
+          children: "Fixed"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "segments_min_size"
+        }), " 옵션 수정"]
       })]
     })]
   });

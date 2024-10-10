@@ -28,7 +28,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/db/dbx-previous",
   "title": "DBX 지난 버전",
-  "description": "* DBX agent v1.7.8",
+  "description": "* DBX agent v1.9.1",
   "source": "@site/docs/release-notes/db/dbx-previous.mdx",
   "sourceDirName": "release-notes/db",
   "slug": "/release-notes/db/dbx-previous",
@@ -47,8 +47,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "DBX v1.8.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-1_8_0"
+    "title": "DBX v1.9.2",
+    "permalink": "/whatap-docs/release-notes/db/dbx-1_9_2"
   },
   "next": {
     "title": "XOS Agent Release Notes",
@@ -73,6 +73,41 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "dbx-1_9_1",
+          children: "DBX agent v1.9.1"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "dbx-1_9_0",
+          children: "DBX agent v1.9.0"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "dbx-1_8_2",
+          children: "DBX agent v1.8.2"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "dbx-1_8_1",
+          children: "DBX agent v1.8.1"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "dbx-1_8_0",
+          children: "DBX agent v1.8.0"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "dbx-1_7_8",

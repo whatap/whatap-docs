@@ -62,8 +62,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/k8s/k8s-previous"
   },
   "next": {
-    "title": "DBX v2.0.0",
-    "permalink": "/whatap-docs/release-notes/db/dbx-2_0_0"
+    "title": "DBX v2.1.2",
+    "permalink": "/whatap-docs/release-notes/db/dbx-2_1_2"
   }
 };
 const assets = {
