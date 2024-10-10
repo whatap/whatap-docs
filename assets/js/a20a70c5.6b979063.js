@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43400],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53742],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1680,7 +1680,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Apdex 100 by kind"
+                children: "Apdex 100 by project"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -4372,7 +4372,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 88426:
+/***/ 15116:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4400,49 +4400,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'.NET',
+		'Oracle Pro',
+		'데이터베이스',
 		'경고 알림',
-		'이벤트 설정',
-		'애플리케이션'
+		'이벤트 설정'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/warning-notice-v2",
+  "id": "oracle-pro/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/dotnet/warning-notice-v2.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/warning-notice-v2",
-  "permalink": "/whatap-docs/dotnet/warning-notice-v2",
+  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/oracle-pro/warning-notice-v2.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/warning-notice-v2",
+  "permalink": "/whatap-docs/oracle-pro/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/oracle-pro/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      ".NET",
+      "Oracle Pro",
+      "데이터베이스",
       "경고 알림",
-      "이벤트 설정",
-      "애플리케이션"
+      "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "애플리케이션 경고 알림",
-    "permalink": "/whatap-docs/dotnet/warning-notice"
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/oracle-pro/set-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/dotnet/metric-warning-notice"
+    "permalink": "/whatap-docs/oracle-pro/metric-warning-notice"
   }
 };
 const assets = {

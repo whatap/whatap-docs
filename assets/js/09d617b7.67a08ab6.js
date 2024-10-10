@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[1172],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53753],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1680,7 +1680,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Apdex 100 by kind"
+                children: "Apdex 100 by project"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -4372,7 +4372,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 85039:
+/***/ 1884:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4402,7 +4402,7 @@ const frontMatter = {
 	title: '이벤트 설정',
 	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'Tibero',
+		'SQL Server',
 		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
@@ -4411,16 +4411,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "tibero/warning-notice-v2",
+  "id": "mssql/warning-notice-v2",
   "title": "이벤트 설정",
   "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/tibero/warning-notice-v2.mdx",
-  "sourceDirName": "tibero",
-  "slug": "/tibero/warning-notice-v2",
-  "permalink": "/whatap-docs/tibero/warning-notice-v2",
+  "source": "@site/docs/mssql/warning-notice-v2.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/warning-notice-v2",
+  "permalink": "/whatap-docs/mssql/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/tibero/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/mssql/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -4428,21 +4428,21 @@ const metadata = {
     "title": "이벤트 설정",
     "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "Tibero",
+      "SQL Server",
       "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "tiberoSidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
     "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/tibero/warning-notice"
+    "permalink": "/whatap-docs/mssql/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/tibero/metric-warning-notice"
+    "permalink": "/whatap-docs/mssql/metric-warning-notice"
   }
 };
 const assets = {
