@@ -112,6 +112,9 @@ html[lang='ko-KR'] {
 html[lang='en-US'] {
   word-wrap: keep-all;
   font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  h1 {
+    text-transform: capitalize;
+  }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   }
