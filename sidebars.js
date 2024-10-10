@@ -4231,7 +4231,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              // className: 'new',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
