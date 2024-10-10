@@ -27,7 +27,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/amazon-ecs/amazon-ecs-release-notes",
   "title": "Amazon ECS Agent release notes",
-  "description": "v1.2.6",
+  "description": "v1.2.7",
   "source": "@site/docs/release-notes/amazon-ecs/amazon-ecs-release-notes.mdx",
   "sourceDirName": "release-notes/amazon-ecs",
   "slug": "/release-notes/amazon-ecs/amazon-ecs-release-notes",
@@ -60,6 +60,10 @@ const assets = {
 
 
 const toc = [{
+  "value": "v1.2.7",
+  "id": "v127",
+  "level": 2
+}, {
   "value": "v1.2.6",
   "id": "v126",
   "level": 2
@@ -102,6 +106,19 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "v127",
+        children: "v1.2.7"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 10월 10일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+          priority: "0",
+          children: "Fixed"
+        }), " LaunchType이 EC2일 때 Cgroup V2 환경을 추가로 지원"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "v126",
@@ -174,7 +191,7 @@ function _createMdxContent(props) {
         id: "amazon-ecs-graviton-instance-type-지원-추가",
         children: "Amazon ECS Graviton Instance Type 지원 추가"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "Amazon ECS Graviton Graviton Instance Type을 지원하도록 실행 파일을 별도로 컴파일해 지원을 추가했습니다."
+        children: "Amazon ECS Graviton Instance Type을 지원하도록 실행 파일을 별도로 컴파일해 지원을 추가했습니다."
       })]
     })]
   });
