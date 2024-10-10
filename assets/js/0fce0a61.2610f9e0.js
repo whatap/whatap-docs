@@ -39,10 +39,12 @@ const toc = [];
 function _createMdxContent(props) {
   const _components = {
     li: "li",
+    p: "p",
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  };
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(_components.ul, {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
@@ -76,6 +78,57 @@ function _createMdxContent(props) {
           }), " ", (0,jsx_runtime.jsx)("b", {
             children: "베타"
           }), " 서비스 시작"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Kubernetes"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 09월 26일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_9_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.9.2​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)("code", {
+              class: "Feature",
+              type: "1",
+              children: "Feature"
+            }), " 다음 메뉴 경로 진입 시 신규 기능에 대한 안내 팝업 추가"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "side_dashboard",
+                  className: "uitext"
+                }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "side_nodeMap",
+                  className: "uitext"
+                })]
+              }), "\n"]
+            }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+              children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+                children: [(0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "side_cluster",
+                  className: "uitext"
+                }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+                  sid: "side_nodeTimeline",
+                  className: "uitext"
+                })]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -5470,6 +5523,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
