@@ -8,6 +8,9 @@ keywords:
   - Management
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 :::note
 
 To install a previous version, contact us at support@whatap.io.
@@ -83,6 +86,39 @@ To update the installed agent to the latest version, execute the following comma
   cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
   /etc/init.d/whatap-infra start
   ```
+
+- **HP-UX** 
+
+  To update the installed agent to the latest version, execute the following command. 
+
+  <Tabs>
+  <TabItem value="ia64" label="IA64" default>
+
+  ```bash title='IA64'
+  cp /usr/whatap/infra/conf/whatap.conf /tmp+
+  /sbin/init.d/whatap-infra stop
+  gunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -
+  yes n | ./whatap-infra/install.sh
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  /sbin/init.d/whatap-infra start
+  ```
+
+  </TabItem>
+
+  <TabItem value="parisc" label="PA-RISC">
+
+  ```bash title='PA-RISC'
+  cp /usr/whatap/infra/conf/whatap.conf /tmp
+  /usr/sbin/init.d/whatap-infra stop
+  gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
+  yes n | ./whatap-infra/install.sh
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  /sbin/init.d/whatap-infra start
+  ```
+
+  </TabItem>
+
+  </Tabs>
 
 ## Windows
 

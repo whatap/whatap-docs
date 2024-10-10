@@ -2,7 +2,6 @@
 id: agent-troubleshooting
 title: Agent troubleshooting
 description: You can check the problems that may occur during the agent installation.
-hide_table_of_contents: true
 toc_max_heading_level: 2
 keywords:
   - Kubernetes
@@ -52,7 +51,57 @@ kubectl delete clusterrolebinding whatap
 kubectl delete clusterrole whatap
 ```
 
+### In case the `whatap-monitoring` namespace is unavailable {#whatap-monitoring-namespace-unavailable}
+
+By default, the WhaTap Kubernetes agent is installed in the `whatap-monitoring` namespace. However, if the namespace is unavailable or you need to specify a specific namespace, follow the steps below to install the agent in the desired namespace. 
+
+#### Preparation
+
+- **Cart version**: whatap/kube 1.7.11 or later
+
+  Check the chart version by using the following command. 
+
+  ```bash
+  helm search repo whatap/kube --versions
+  ```
+
+  If the version is less than 1.7.11, update the chart version by using the following command. 
+
+  ```bash
+  helm repo update
+  ```
+
+- **Helm version**: Helm 3 or later
+
+#### Installation procedure
+
+Install the agent by executing the following command, after entering the namespace to use in `<namespace>`. 
+
+```bash
+helm install whatap-kube-agent whatap/kube --create-namespace --namespace <namespace> --set namespaceOverrideEnabled=true --wait -f values.yaml
+```
+
+#### Updating and deleting
+
+- **Update**
+
+  Execute the following command to update the agent. 
+
+  ```bash
+  helm update whatap-kube-agent whatap/kube --namespace <namespace> --wait
+  ```
+
+- **Delete**
+
+  Execute the following command to remove the agent. 
+
+  ```bash
+  helm uninstall whatap-kube-agent whatap/kube --namespace <namespace>
+  ```
+
 </div>
+<br/>
+<br/>
 
 ## Troubleshooting issues that occur when starting the agent {#troubleshooting-agent}
 

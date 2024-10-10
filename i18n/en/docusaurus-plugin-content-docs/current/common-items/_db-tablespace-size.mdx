@@ -6,7 +6,7 @@ This menu allows you to monitor and manage the usage status of the database tabl
 
 - It provides the details on the total size, used amount, and used percentage for each tablespace.
 
-<Xclude product="altibase">
+<Xclude product="altibase,tibero">
 
 - You can check the sizes of the top 50 segments.
 
@@ -14,7 +14,7 @@ This menu allows you to monitor and manage the usage status of the database tabl
 
 By monitoring the usage of tablespaces in real time, you can check the used amount and manage its appropriate capacity. Trace the tablespaces and segments with high usage and then take measures for capacity management and performance optimization. You can also detect and respond to excessive tablespace usage in advance.
 
-<Xclude product="altibase">
+<Xclude product="altibase,tibero">
 
 ## Before use
 
@@ -91,7 +91,9 @@ The basic usage is as follows:
 
 In the <Cmdname sid="table_space" className="uitext" /> section, you can visually see the overall size and usage of the tablespaces over time.
 
-<InDoc product="oracle,oracle-pro,cubrid"><ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" /></InDoc>
+<InDoc product="oracle,oracle-pro"><ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" /></InDoc>
+
+<InDoc product="tibero"><ImgLang img="db-stat-table-space-check-trend-tibero.png" desc="Tablespace size" /></InDoc>
 
 <InDoc product="altibase"><ImgLang img="db-stat-table-space-check-trend-altibase.png" desc="Tablespace size" /></InDoc>
 
@@ -101,9 +103,11 @@ Each color represents an individual tablespace. To see data for a specific perio
 
 The <Cmdname sid="table_space_detail" className="uitext" /> section provides information details for each tablespace.
 
-<InDoc product="oracle,oracle-pro,cubrid">
+<InDoc product="oracle,oracle-pro"><ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" /></InDoc>
 
-<ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" />
+<InDoc product="tibero"><ImgLang img="db-stat-table-space-size-details-tibero.png" desc="Tablespace size" /></InDoc>
+
+<InDoc product="oracle,oracle-pro,tibero">
 
 You can check the changes in usage for each tablespace by comparing the time of the first query with the current time. To check the details of a tablespace, select the ![Arrow icon](/img/ic-caret-right.svg) button next to the tablespace name.
 
@@ -155,7 +159,7 @@ Altibase does not provide `USED` and `USAGE` at the data file level.
 
 </InDoc>
 
-<Xclude product="altibase">
+<Xclude product="altibase,tibero">
 
 ## Checking the segment size {#TTL08164}
 

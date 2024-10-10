@@ -83,7 +83,7 @@ For information on how to configure the agent for inquiry of AWS CloudWatch metr
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase">
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,cubrid">
 
 - ***Active Sessions***
 
@@ -172,6 +172,58 @@ For information on how to configure the agent for inquiry of AWS CloudWatch metr
 - ***Prepare Count*** (prepare success count)
 
   Number of cases the Prepare step succeeded in the system or session. This step includes checking for query syntax errors and establishing an execution plan, and can account for 60-70% of the overall query processing time. If this value is too high, query optimization is required to reduce repetitive Prepare operations.
+
+</InDoc>
+
+<InDoc product="cubrid">
+
+- ***Logical Reads*** (num_data_page_fetches)
+
+  Number of data pages retrieved from memory. Databases often look up data in memory before reading it from disk. This metric plays an important role in evaluating the efficiency of the database by using caches or buffers. A higher value indicates that more data is fetched from memory, which helps reduce disk I/O burden.
+
+- ***Pysical Reads*** (num_data_page_ioreads)
+
+  Number of data pages read from disk. A higher value indicates that more data is being read from disk instead of memory. This may negatively affect the system performance. It is important to optimize this value as higher values ​​can result in lower hit rates for the database and slower I/O performance.
+
+- ***Executions*** (executions)
+
+  Number of executions of DML (Data Manipulation Language) commands. It includes executing queries such as `SELECT`, `INSERT`, `UPDATE`, and `DELETE`. This metric helps you see the overall amount of work being performed on the database and is a key factor in monitoring the throughput of the database.
+
+  :::note
+
+  Calculation method: `num_query_selects` + `num_query_inserts` + `num_query_updates` + `num_query_deletes`
+
+  :::
+
+- ***Full Scans*** (num_query_sscans)
+
+  Number of full scans. A full scan is a low-performance operation that retrieves data by scanning the entire table without using any index. A higher number of full scans can affect the query performance and it indicates the need for index optimization.
+
+- ***Buffer Hit Ratio(%)*** (data_page_buffer_hit_ratio)
+
+  This metric represents the hit rate of the data page buffer as a percentage. A higher hit rate indicates that data is being retrieved from the memory buffer quickly, which helps improve the system performance. On the contrary, a low hit rate can result in increased physical I/O, which can lead to poor performance.
+
+  :::note
+
+  Calculation method: ((`Num_data_page_fetches` - `Num_data_page_ioreads`) / `Num_data_page_fetches`) \* 100
+
+  :::
+
+- ***Disk Sorts*** (num_sort_io_pages)
+
+  Number of pages fetched while performing sort operation on disk. Disk sorting indicates a sorting operation that has not been processed in memory, and a higher value may result in poor performance. You may need to adjust the memory size or sorting strategy to increase the number of sorts that can be processed in memory.
+
+- ***CAS Memory size*** (psize)
+
+  Size of memory being used by the `cub_cas` (CUBRID Application Server) process. This value indicates the amount of memory occupied by the CUBRID broker (CAS) process, and displays the sum when multiple brokers are running. An abnormal high memory usage may indicate a memory leak or system under stress.
+
+- ***CAS count*** (broker_count)
+
+  Number of `cub_cas` (CUBRID Application Server) processes running. This value is the number of broker processes. The more brokers there are, the more requests can be processed in parallel. However, as the number of brokers increases, resource consumption also rises, so proper configuration is required.
+
+- ***Replication Delay*** (time_ha_replication_delay)
+
+  It displays the replication delay time in seconds in the CUBRID's High Availability (HA) environment. This metric measures the time taken for data to be synchronized from the Primary server to the Replica server. A higher value indicates that there is a delay in data synchronization. If replication delay persists, it can affect the system availability and data consistency.
 
 </InDoc>
 

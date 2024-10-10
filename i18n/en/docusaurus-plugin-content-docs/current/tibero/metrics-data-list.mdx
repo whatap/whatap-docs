@@ -8,39 +8,111 @@ keywords:
   - DATABASE
 ---
 
-Database metrics comprehensively collect the workload and resource usage of the database. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
+Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
 
-| Indicators                             | Description                                                                                 |
-| -------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `active sessions`                      | Number of sessions running queries                                                          |
-| `block disk read`                      | Number of times when blocks have been read from the disk                                    |
-| `block gets (CRX)`                     | Number of CR block examine requests                                                         |
-| `block updates`                        | Number of times when blocks have been modified after leaving the Redo logs                  |
-| `connect_error`                        | Number of access errors                                                                     |
-| `consistent block gets`                | Number of CR block requests                                                                 |
-| `consistent multi gets`                | Number of multi CR block requests                                                           |
-| `cpu`                                  | CPU Utilization(%)                                                                          |
-| `cpu_cores`                            | CPU core count                                                                              |
-| `current block gets`                   | Number of the current block requests                                                        |
-| `current block gets - no wait`         | Number of the current block acquisitions without waiting                                    |
-| `dbwr write` - OS                      | Number of write requests to OS by DBWR                                                      |
-| `execute count`                        | Total number of calls that performed SQL statements                                         |
-| `fatal count`                          | Fatal error count                                                                           |
-| `iowait cpu`                           | Percentage of the CPU waiting time for I/O                                                  |
-| `lock wait sessions`                   | Number of waits to acquire the current row lock                                             |
-| `logical reads`                        | Number of data blocks read from the memory, or sum of `db block gets` and `consistent gets` |
-| `logons cumulative`                    | Total number of logons since the instance launching                                         |
-| `long running sessions`                | Number of sessions running for long time                                                    |
-| `multi block disk read`                | Number of multi block readings from the disk                                                |
-| `parse count (hard)`                   | Total number of syntax analysis calls (actual syntax analysis)                              |
-| `parse count (total)`                  | Total number of parse calls (`hard`, `soft`, `describe`)                                    |
-| `physical reads`                       | Number of data blocks read from disk                                                        |
-| `pq sessions`                          | Number of sessions performing parallel processes                                            |
-| `sorts (memory)`                       | Number of sorts performed in memory                                                         |
-| `sys cpu`                              | Sum of `cpu time` used by the session                                                       |
-| `the number of user commits performed` | `sys cpu` usage (%)                                                                         |
-| `total elapse time`                    | Cumulative total elapsed time of all requests since the last database instance restart      |
-| `total sessions`                       | Number of all sessions                                                                      |
-| `user cpu`                             | CPU usage (%) performing tasks such as query or procedure run by users                      |
-| `wait sessions`                        | Number of sessions queuing for events                                                       |
-| `warning count`                        | Number of all alerts                                                                        |
+For more information about columns, see [the link](https://technet.tmax.co.kr/upload/download/online/tibero/pver-20220224-000002/index.html).
+
+## db_tibero_counter {#db_tibero_counter}
+
+### Tags {#db_tibero_counter-tags}
+
+The following lists the tags that are collected in the `db_tibero_counter` category.
+
+| Tag name    | Description                                | Remarks      |
+| ----------- | ------------------------------------------ | ------------ |
+| `agentIp`   | IP address per agent.                      | -            |
+| `dbIsMulti` | Whether to support the multitenant or not. | -            |
+| `dbName`    | Database name.                             | -            |
+| `dbType`    | Database type.                             | -            |
+| `dbVersion` | Version of the database in use.            | -            |
+| `oname`     | Agent name                                 | Unique value |
+
+### Field {#db_tibero_counter-filed}
+
+The following lists the fields that are collected in the `db_tibero_counter` category.
+
+| Metrics                                | Description                                                                   |
+| -------------------------------------- | ----------------------------------------------------------------------------- |
+| `active_sessions`                      | Number of active sessions.                                                    |
+| `block_updates`                        | Number of occurrences of block update.                                        |
+| `connect_error`                        | Number of connection errors occurred.                                         |
+| `DB_CPU`                               | Percentage of CPU used by the database.                                       |
+| `DB_CPU_time`                          | Total time (in milliseconds) the database spent on CPU processing.            |
+| `dbwr_write_-_OS`                      | Number of database creation tasks executed by the operating system.           |
+| `execute_count`                        | Number of executions of the SQL command.                                      |
+| `fatal_count`                          | Number of fatal errors.                                                       |
+| `lock_wait_sessions`                   | Number of sessions waiting for locks.                                         |
+| `logical_reads`                        | Number of logical read operations that occurred.                              |
+| `logons_cumulative`                    | Number of cumulative logins.                                                  |
+| `long_running_sessions`                | Number of long running sessions.                                              |
+| `parse_count_(hard)`                   | Number of hard parsing operations that occurred.                              |
+| `parse_count_(total)`                  | Total number of parsing operations that occurred.                             |
+| `physical_reads`                       | Number of physical read operations that occurred.                             |
+| `pq_sessions`                          | Number of sessions in which parallel query operations were executed.          |
+| `sorts_(memory)`                       | Number of sorting operations occurred in memory.                              |
+| `the_number_of_user_commits_performed` | Number of user commits executed.                                              |
+| `total_elapse_time`                    | Total elapsed time.                                                           |
+| `total_sessions`                       | Total number of sessions.                                                     |
+| `wait_sessions`                        | Number of waiting sessions.                                                   |
+| `warning_count`                        | Number of warnings occurred.                                                  |
+| `WE_BUF_FREE_time_waited`              | Total time for the process to wait for the buffer to be cleared.              |
+| `WE_BUF_FREE_total_timeouts`           | Number of timeouts that occurred while waiting to empty the buffer.           |
+| `WE_BUF_FREE_total_waits`              | Total number of waits due to buffer emptying events.                          |
+| `WE_BUF_WAIT_time_waited`              | Total time spent in buffer waiting events.                                    |
+| `WE_BUF_WAIT_total_timeouts`           | Number of timeouts that occurred while waiting for the buffer.                |
+| `WE_BUF_WAIT_total_waits`              | Total number of waits due to buffer waiting events.                           |
+| `WE_BUF_WRITE_time_waited`             | Total time spent in buffer write events.                                      |
+| `WE_BUF_WRITE_total_timeouts`          | Number of timeouts that occurred during buffer writing.                       |
+| `WE_BUF_WRITE_total_waits`             | Total number of waits due to buffer writing events.                           |
+| `WE_CKPT_WAIT_time_waited`             | Total time waiting in checkpoint waiting events.                              |
+| `WE_CKPT_WAIT_total_timeouts`          | Number of timeouts that occurred while waiting for the checkpoint.            |
+| `WE_CKPT_WAIT_total_waits`             | Total number of waits due to checkpoint waiting events.                       |
+| `WE_LGWR_ARCHIVE_time_waited`          | Total time the logger waited for archive tasks.                               |
+| `WE_LGWR_ARCHIVE_total_timeouts`       | Number of timeouts that occurred during logger archive operations.            |
+| `WE_LGWR_ARCHIVE_total_waits`          | Total number of waits due to logger archive operations.                       |
+| `WE_LGWR_LNW_time_waited`              | Total time the logger waited for logs to be written over the network.         |
+| `WE_LGWR_LNW_total_timeouts`           | Number of timeouts that occurred while writing to the logger via the network. |
+| `WE_LGWR_LNW_total_waits`              | Total number of waits due to logger writing operations via the network.       |
+| `WE_LOG_FLUSH_REQ_time_waited`         | Total time taken to wait for log flush requests.                              |
+| `WE_LOG_FLUSH_REQ_total_timeouts`      | Number of timeouts that occurred during log flush requests.                   |
+| `WE_LOG_FLUSH_REQ_total_waits`         | Total number of waits due to log flush requests.                              |
+| `WE_LOG_FLUSH_SPACE_time_waited`       | Total time taken to wait for log flush space.                                 |
+| `WE_LOG_FLUSH_SPACE_total_timeouts`    | Number of timeouts that occurred while waiting for log flush space.           |
+| `WE_LOG_FLUSH_SPACE_total_waits`       | Total number of waits due to waiting for the log flush space.                 |
+| `WE_MBR_WAIT_time_waited`              | Total time taken to wait for MBR (Multi Block Read).                          |
+| `WE_MBR_WAIT_total_timeouts`           | Number of timeouts that occurred while waiting for the MBR.                   |
+| `WE_MBR_WAIT_total_waits`              | Total number of waits due to MBR waiting.                                     |
+| `WE_PROC_DOWN_time_waited`             | Total time taken to wait for process termination.                             |
+| `WE_PROC_DOWN_total_timeouts`          | Number of timeouts that occurred while waiting for the process termination.   |
+| `WE_PROC_DOWN_total_waits`             | Total number of waits for process termination.                                |
+| `WE_SEQ_FLUSH_time_waited`             | Total time while waiting for sequence flush.                                  |
+| `WE_SEQ_FLUSH_total_timeouts`          | Number of timeouts that occurred while waiting for sequence flush.            |
+| `WE_SEQ_FLUSH_total_waits`             | Total number of waits due to waiting for sequence flush.                      |
+| `WE_SEQ_FREESLOT_time_waited`          | Total time while waiting for sequence free slots.                             |
+| `WE_SEQ_FREESLOT_total_timeouts`       | Number of timeouts that occurred while waiting for sequence free slots.       |
+| `WE_SEQ_FREESLOT_total_waits`          | Total number of waits for sequence free slots.                                |
+| `WE_SEQ_NEXTVAL_time_waited`           | Total time while waiting for sequence NEXTVAL.                                |
+| `WE_SEQ_NEXTVAL_total_timeouts`        | Number of timeouts that occurred while waiting for sequence NEXTVAL.          |
+| `WE_SEQ_NEXTVAL_total_waits`           | Total number of waits for sequence NEXTVAL.                                   |
+| `WE_SEQ_WRITEBACK_time_waited`         | Total time while waiting for sequence writing.                                |
+| `WE_SEQ_WRITEBACK_total_timeouts`      | Number of timeouts that occurred while waiting for sequence writing.          |
+| `WE_SEQ_WRITEBACK_total_waits`         | Total number of waits for sequence writing.                                   |
+| `WE_WLOCK_DML_time_waited`             | Total time taken to wait for DML locking.                                     |
+| `WE_WLOCK_DML_total_timeouts`          | Number of timeouts while waiting for DML locks.                               |
+| `WE_WLOCK_DML_total_waits`             | Total number of waits for DML locks.                                          |
+| `WE_WLOCK_TX_time_waited`              | Total time taken to wait for transaction locks.                               |
+| `WE_WLOCK_TX_total_timeouts`           | Number of timeouts while waiting for transaction locks.                       |
+| `WE_WLOCK_TX_total_waits`              | Total number of waits for transaction locks.                                  |
+| `WE_WTHR_MSG_time_waited`              | Total waiting time for thread messages.                                       |
+| `WE_WTHR_MSG_total_timeouts`           | Number of timeouts while waiting for thread messages.                         |
+| `WE_WTHR_MSG_total_waits`              | Total number of waits for thread messages.                                    |
+| `WE_WTHR_READY_time_waited`            | Total waiting time while waiting for threads to be ready.                     |
+| `WE_WTHR_READY_total_timeouts`         | Number of timeouts that occurred while waiting for threads to become ready.   |
+| `WE_WTHR_READY_total_waits`            | Total number of waits for threads to be ready.                                |
+| `WE_WTHR_START_time_waited`            | Total waiting time for threads to start.                                      |
+| `WE_WTHR_START_total_timeouts`         | Number of timeouts while waiting for threads to start.                        |
+| `WE_WTHR_START_total_waits`            | Total number of waits for threads to start.                                   |
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />

@@ -14,3 +14,38 @@ db_port={DB_Server_Port}
 ```
 
 </InDoc>
+
+<InDoc product="cubrid">
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+dbms=cubrid
+db={DB_Name}
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
+cmd_port=8001 # CUBRID Manager server port number, default 8001
+broker=query_editor,broker1
+```
+
+- `db`: Name of the database to be monitored, which is the `db_name` value of the _$CUBRID_DATABASES/databases.txt_ file.
+
+- `db_ip`: IP address that can connect to the database server being monitored.
+
+- `db_port`: Enter the value defined in `BROKER_PORT` in the broker configuration file (_cubrid_broker.conf_). (CUBRID's default value `BROKER_PORT: 33000`)
+
+- `cms_port`: Port used by **CUBRID Manager**. Enter the value defined in the `cm_port` field in the **CUBRID Manager** configuration file (_cm.conf_).
+
+- `broker`: When you install CUBRID, the brokers `broker1` and `query_editor` are executed by default. If you arbitrarily changed the name of the broker or started it additionally, enter the changes.
+
+:::note
+
+- For more information about _whatap.conf_, see [the following](agent-dbx-settings).
+
+- For more information about the _databases.txt_ file in the CUBRID environment, see the [following link](https://www.cubrid.org/manual/ko/11.0/admin/db_manage.html#databases-txt).
+
+- For more information about the CUBRID's broker configuration, see the [following link](https://www.cubrid.org/manual/ko/11.0/admin/config.html#broker-configuration).
+
+:::
+
+</InDoc>

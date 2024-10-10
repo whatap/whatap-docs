@@ -1,4 +1,4 @@
-<Xclude product="oracle-pro">
+<Xclude product="oracle-pro,cubrid">
 
 <Tabs groupId='os'>
 
@@ -64,6 +64,49 @@ uid.bat "DB_USER" "DB_PASSWORD"
 - To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the access key](#check-accesskey)
 - In the Azure database environment, enter `DB_USER` in the form of DB_USER@DB_name.
 - If special characters are included in `DB_USER` or `DB_PASSWORD`, enter the escape character (\\) together before any special characters.
+
+  ```bash title='Example'
+  ./uid.sh whatap whatap\!pwd
+
+  # If there are multiple special characters, add the escape character(\) for each.
+  ./uid.sh whatap whatap\!\@pwd
+  ```
+
+:::
+
+</InDoc>
+
+<InDoc product="cubrid">
+
+User files must be run for both the user DB (`dba`) and CUBRID Manager (`admin`) in the CUBRID environment.
+
+<Tabs groupId='os'>
+
+<TabItem value="linux" label="Linux" default>
+
+```bash title="BASH"
+./uid.sh dba {DB_Password}
+./cmsuid.sh admin {Admin_Password}
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+```bash title="CMD"
+./uid.bat "dba" "DB_Password"
+./cmsuid.bat "admin" "Admin_Password"
+```
+
+</TabItem>
+</Tabs>
+
+:::note
+
+- After setting it once, it collects data from the database server to be monitored through the encrypted UID.
+
+- To create a DB user file, enter the project access key in the _whatap.conf_ file. [Checking the access key](#check-accesskey)
+
+- If special characters are included in `DB_USER` or `DB_PASSWORD` in the Linux environment, enter the escape character (\\) together before any special characters.
 
   ```bash title='Example'
   ./uid.sh whatap whatap\!pwd
