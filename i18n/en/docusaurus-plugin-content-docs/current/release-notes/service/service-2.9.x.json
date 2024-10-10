@@ -1,0 +1,392 @@
+[
+  {
+    "url": "http://docs.whatap.io/en/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.1",
+    "date": "2024-09-25",
+    "Lists": [
+      {
+        "ver": "Service 2.9.1",
+        "hash": "service-291",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the comparison time for event items in the <span class=\"uitext\">Alert status</span> list is not updated.</p>"
+      }
+    ]
+  },
+  {
+    "url": "http://docs.whatap.io/en/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.0",
+    "date": "2024-09-25",
+    "Lists": [
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">Server Inventory</span> menu where the agent automatically collects and stores information for infrastructure server operation, and allows you to view and manage information added through user-defined fields.</p>",
+        "category": "Server"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">Node Map</span> menu to display detailed information about nodes.</p>",
+        "category": "Kubernetes"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">Node Timeline</span> menu that can display the node status over time.</p>",
+        "category": "Kubernetes"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>CUBRID</strong> <code class=\"my\">V2</code> services now launched</p>",
+        "category": "Database"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Release of new features",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <span class=\"uitext\">Script Manager</span> menu that can display the result after running the SQL script.</p>",
+        "category": "Database"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">View mode</span> of the <span class=\"uitext\">Integrated Flex Board</span> or <span class=\"uitext\">Flex Board</span> menu, added the feature to collapse the group widget layout.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to adjust the width of table columns in the log-related menus.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Manage Accounts</span> &gt; <span class=\"uitext\">My Profile</span>, added the feature to delete user's registered phone number.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Real-time Alert List</span>, added the On/Off setting for the <span class=\"uitext\">View resolved events</span> feature.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Real-time Alert List</span>, modified the following:</p>",
+        "details": "<ul>\n<li>\n<p>Improved the UI of the <span class=\"uitext\">Real-time notification settings</span> option.</p>\n</li>\n<li>\n<p>Changed the location of the On/Off toggle button of the <span class=\"uitext\">Pop-up notification</span> feature inside <span class=\"uitext\">Real-time notification settings</span>.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the event addition screen of the <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\">New</code> menu, changed the <span class=\"b500\">Additional notifications when the event state is resolved.</span> term in the description of the <span class=\"uitext\">Pause</span> option to <span class=\"uitext\">Resolved notification</span>.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Real-time Alert List</span>, changed the event timestamp to display details down to the month, day, hour, minute, and second.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Integrated Flex Board</span> or <span class=\"uitext\">Flex Board</span>, fixed the issue where widget button dropdowns happen unnecessarily.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Search</span>, improved the readability issue when the tag is unselected by modifying the style.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Search</span>, improved the text display style when hovering the mouse over the table list.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the layout shifting issue when a real-time notification message is too long.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> On the <span class=\"uitext\">Go to Group</span> window, fixed the issue where group names are too long and are displayed outside the modal window.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> On the <span class=\"uitext\">Delete Group</span> window, fixed the issue where the group icon appears as 'X'.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Instance Performance Management</span> &gt; <span class=\"uitext\">Thread List/Dump</span>, added the feature to display the thread status (RUNNABLE, WAITING, total count) of applications with the selected agent installed.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Application Dashboard</span>, modified the design elements of the <span class=\"uitext\">Active transaction</span> window that is displayed when the chart area of the <span class=\"uitext\">Active Transaction</span> widget is selected.</p>",
+        "details": "<ul>\n<li>\n<p>Fixed the <span class=\"uitext\">No rows found</span> message displayed when there is no data in the <span class=\"uitext\">Top 10</span> tab not to overlap the table header.</p>\n</li>\n<li>\n<p>Fixed the issue where the background color is not filled in when a margin is generated.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Dashboard</span>, fixed the issue where the <span class=\"uitext\">Hitmap</span> widget's Y-axis adjustment button does not appear intermittently.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> On the <span class=\"uitext\">Trace analysis</span> window, modified the color of the SQL statement display box.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> On the <span class=\"uitext\">Trace analysis</span> window, fixed the issue where an API has been called twice when querying SQL details.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Netstat Topology</span>, fixed the problem where the Go product icon does not appear correctly.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Topology</span> &gt; <span class=\"uitext\">APP. Topology</span>, fixed the issue where the icon for the element displaying the application is not displayed properly.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Provided agent installation that supports the <b>HP-UX</b> operating system environment.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified to display the <span class=\"uitext\">Event History</span> menu when the notification is selected in <span class=\"uitext\">Real-time Alert List</span>.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved the comparison and detailed view features in <span class=\"uitext\">Cluster</span> &gt; <span class=\"uitext\">Node List</span>.</p>",
+        "details": "<p>It provides the related information in the comparison and detailed view by removing the disk and network column groups and selecting nodes.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Cluster</span>&gt; <span class=\"uitext\">Node Disk List</span>, added the <span class=\"uitext\">Comparison</span> column and provided the detailed view screen to displays the disk usage trend in which the <span class=\"uitext\">Comparison</span> column has been selected.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">View Detailed</span> of the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Kubernetes Agent List</span> menu, added the <span class=\"uitext\">Metrics</span> tab that can display the metrics data.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, added the option that can select an agent version (<span class=\"uitext\">Stable (recommended) </span>/<span class=\"uitext\">Preview</span>).</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Workload</span> &gt; <span class=\"uitext\">Pending Pod Status</span>, modified to expand the metric provided when node resources are suspected to be the cause of pending.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, changed the default selection of installation method to <span class=\"uitext\">YAML</span>.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the side menu, modified to display the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span> <code class=\"oldfunc\">Old</code> menu.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Kubernetes",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\">Deprecated</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent CONF.</span>, removed the <span class=\"uitext\">Previous version</span> button.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, added the following features into the user-defined widgets.</p>",
+        "category": "Common",
+        "details": "<ul>\n<li>\n<p>Added the <span class=\"uitext\">No Merge</span> option into the pie or test chart.</p>\n</li>\n<li>\n<p>Displays the guide message window when you enter the <span class=\"uitext\">Monitoring Multiple Instances</span> menu.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added the supported versions to the details for <strong>CUBRID</strong> and <strong>Altibase</strong> in the project creation screen.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, changed the <span class=\"uitext\">time</span> column to display the time as the viewed time in the <span class=\"uitext\">Vacuum history</span> window opened via the <img decoding=\"async\" loading=\"lazy\" alt=\"Detail icon\" src=\"data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtYW5hbHlzaXM8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTMyLjAwMDAwMCwgLTE3MDQuMDAwMDAwKSIgZmlsbD0iIzc1NzU3NSI+CiAgICAgICAgICAgIDxnIGlkPSJkYXRhLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDE1NzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtYW5hbHlzaXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg5Mi4wMDAwMDAsIDEyNS4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgMi4wMDAwMDApIiBpZD0iQ29tYmluZWQtU2hhcGUiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsMCBMMjAsMjAgTDAsMjAgTDAsMCBMMjAsMCBaIE00Ljk3MTczODAyLDkuNDc4NjQwMDcgTDIsMTEuOTY5IEwyLDE4IEwxOCwxOCBMMTgsMTAuMjU2IEwxNS45NTcyOTA3LDEyLjAzNzQzMTEgQzE1Ljk3NTUzNDcsMTIuMTM0OTUyOCAxNS45ODgxMTY3LDEyLjIzNDQ2ODYgMTUuOTk0NjgyMywxMi4zMzU2MjQzIEwxNiwxMi41IEMxNiwxMy44ODA3MTE5IDE0Ljg4MDcxMTksMTUgMTMuNSwxNSBDMTIuMTE5Mjg4MSwxNSAxMSwxMy44ODA3MTE5IDExLDEyLjUgQzExLDEyLjI3Nzk4ODggMTEuMDI4OTM5MSwxMi4wNjI3MzY4IDExLjA4MzI1MDksMTEuODU3ODEwMyBMNy45NzA1OTcyMyw5LjUyMTkzNSBDNy41NTc5MTc1NSw5LjgyMjYwMjA1IDcuMDQ5Njc1NTMsMTAgNi41LDEwIEM1LjkyNDQzNzEzLDEwIDUuMzk0MzAyMzUsOS44MDU0OTkyNCA0Ljk3MTczODAyLDkuNDc4NjQwMDcgWiBNMTMuNSwxMS41IEMxMi45NDc3MTUzLDExLjUgMTIuNSwxMS45NDc3MTUzIDEyLjUsMTIuNSBDMTIuNSwxMy4wNTIyODQ3IDEyLjk0NzcxNTMsMTMuNSAxMy41LDEzLjUgQzE0LjA1MjI4NDcsMTMuNSAxNC41LDEzLjA1MjI4NDcgMTQuNSwxMi41IEMxNC41LDExLjk0NzcxNTMgMTQuMDUyMjg0NywxMS41IDEzLjUsMTEuNSBaIE0xOCwyIEwyLDIgTDIsMTAuMDEyIEw0LjExMTUyNTkxLDguMjQwNjIzMzIgQzQuMDU0NTYzNjksOC4wNTY3MTc3MSA0LjAxODI1NzEzLDcuODYzNzMxMzYgNC4wMDUzMTc2OCw3LjY2NDM3NTY5IEw0LDcuNSBDNCw2LjExOTI4ODEzIDUuMTE5Mjg4MTMsNSA2LjUsNSBDNy44ODA3MTE4Nyw1IDksNi4xMTkyODgxMyA5LDcuNSBDOSw3Ljc4NTUzNDk3IDguOTUyMTMxLDguMDU5ODg5NTQgOC44NjM5ODAyOSw4LjMxNTQ3NjQgTDExLjg4OTA1NDgsMTAuNTg4MTYwMSBDMTIuMzI0MTQ0MywxMC4yMjExNzA5IDEyLjg4NjI0MzYsMTAgMTMuNSwxMCBDMTQuMTY3ODA4NSwxMCAxNC43NzQ0NjA1LDEwLjI2MTg0MjIgMTUuMjIyODkwNCwxMC42ODg0NjExIEwxOCw4LjI2NiBMMTgsMiBaIE02LjUsNi41IEM1Ljk0NzcxNTI1LDYuNSA1LjUsNi45NDc3MTUyNSA1LjUsNy41IEM1LjUsOC4wNTIyODQ3NSA1Ljk0NzcxNTI1LDguNSA2LjUsOC41IEM3LjA1MjI4NDc1LDguNSA3LjUsOC4wNTIyODQ3NSA3LjUsNy41IEM3LjUsNi45NDc3MTUyNSA3LjA1MjI4NDc1LDYuNSA2LjUsNi41IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==\" width=\"24\" height=\"24\" class=\"img_ev3q\"> button of the <span class=\"uitext\">Vacuum Sessions</span> widget.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span>, fixed the issue where organization information is missing when switching to the <span class=\"uitext\">Monitoring a Database Instance</span> menu by selecting an instance name.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the Bind variable is not initialized when the <span class=\"uitext\">Reset Bind</span> button is selected on the <span class=\"uitext\">SQL details</span> window.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">SQL Analysis</span>, changed the chart display format at the top of the screen.</p>",
+        "category": "Oracle, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>, modified the installation content of the agent.</p>",
+        "category": "Oracle Pro",
+        "details": "<ul>\n<li>\n<p>Supplemented instructions on how to install from an OS account different from the Oracle account.</p>\n</li>\n<li>\n<p>Removed the ZIP file download feature.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> When the user language is English, fixed typo in the installation content in <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Agent Installation</span>.</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span> and <span class=\"uitext\">Log Search</span>, improved the popover to be closed when the ECS key is pressed while the cursor is in the input field of the filter.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In the sub menus under <span class=\"uitext\">Log</span>, replaced the column configuration UI.</p>",
+        "details": "<ul>\n<li>\n<p>Split a single <img decoding=\"async\" loading=\"lazy\" alt=\"Configuration icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmb3VuZGF0aW9uPSJbb2JqZWN0IE9iamVjdF0iIGNsYXNzPSJJbm5lckljb25zdHlsZWRfX0ljb24tY2gtZnJvbnRfX3NjLTE5N2g1YmItMCBka0RyT3IiIGRlZmF1bHRvcGFjaXR5PSIxIiBob3ZlcmVkb3BhY2l0eT0iMSIgbWFyZ2ludG9wPSIwIiBtYXJnaW5yaWdodD0iMCIgbWFyZ2luYm90dG9tPSIwIiBtYXJnaW5sZWZ0PSIwIiB3aXRodGhlbWU9InRydWUiPjxwYXRoIGZpbGw9IiM3OTc5NzkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS44MzM1NCAxMC4wMDAxQzUuODMzNTQgNy42OTkzOSA3LjY5ODgxIDUuODMzNDIgMTAuMDAwMiA1LjgzMzQyQzEyLjMwMDkgNS44MzM0MiAxNC4xNjY5IDcuNjk5MzkgMTQuMTY2OSAxMC4wMDAxQzE0LjE2NjkgMTIuMzAwOCAxMi4zMDA5IDE0LjE2NjcgMTAuMDAwMiAxNC4xNjY3QzcuNjk4ODEgMTQuMTY2NyA1LjgzMzU0IDEyLjMwMDggNS44MzM1NCAxMC4wMDAxWk0xOC4zMzM1IDExLjI1MDFWOC43NTAwOEwxNi40NzUyIDguNDQwMDhDMTYuMzA5NCA3Ljc1NTA4IDE2LjAzOTQgNy4xMTE3NSAxNS42Nzk0IDYuNTI2NzVMMTYuNzc2IDQuOTkwOTFMMTUuMDA4NSAzLjIyMzQxTDEzLjQ3MjcgNC4zMjA5MUMxMi44ODc3IDMuOTYwOTEgMTIuMjQ1MiAzLjY5MDkxIDExLjU2MDIgMy41MjUwOEwxMS4yNTAyIDEuNjY2NzVIOC43NTAyTDguNDQwMiAzLjUyNTA4QzcuNzU1MiAzLjY5MDkxIDcuMTExODcgMy45NjA5MSA2LjUyNjg3IDQuMzIwOTFMNC45OTEwNCAzLjIyMzQxTDMuMjIzNTQgNC45OTA5MUw0LjMyMDIgNi41MjY3NUMzLjk2MTA0IDcuMTExNzUgMy42OTAyIDcuNzU1MDggMy41MjUyIDguNDQwMDhMMS42NjY4NyA4Ljc1MDA4VjExLjI1MDFMMy41MjUyIDExLjU2MDFDMy42OTAyIDEyLjI0NTEgMy45NjEwNCAxMi44ODg0IDQuMzIwMiAxMy40NzM0TDMuMjIzNTQgMTUuMDA5Mkw0Ljk5MTA0IDE2Ljc3NjdMNi41MjY4NyAxNS42NzkyQzcuMTExODcgMTYuMDM4NCA3Ljc1NTIgMTYuMzA5MiA4LjQ0MDIgMTYuNDc1MUw4Ljc1MDIgMTguMzMzNEgxMS4yNTAyTDExLjU2MDIgMTYuNDc1MUMxMi4yNDUyIDE2LjMwOTIgMTIuODg3NyAxNi4wMzg0IDEzLjQ3MjcgMTUuNjc5MkwxNS4wMDg1IDE2Ljc3NjdMMTYuNzc2IDE1LjAwOTJMMTUuNjc5NCAxMy40NzM0QzE2LjAzOTQgMTIuODg4NCAxNi4zMDk0IDEyLjI0NTEgMTYuNDc1MiAxMS41NjAxTDE4LjMzMzUgMTEuMjUwMVoiPjwvcGF0aD48L3N2Zz4=\" width=\"20\" height=\"20\" class=\"img_ev3q\"> <span class=\"uitext\">Table settings</span> button into <span class=\"uitext\">Column settings</span> and <span class=\"uitext\">Log view detail setting</span> buttons.</p>\n</li>\n<li>\n<p>Removed the <span class=\"uitext\">Column settings</span> and <span class=\"uitext\">Log view detail setting</span> buttons in full screen mode.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified to display the number of logs as <span class=\"uitext\">View all {n} lines</span>, if only <code>category</code> is entered for the search filter condition of the <span class=\"uitext\">Log Search</span> menu.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span> and <span class=\"uitext\">Log Search</span>, modified to remove remaining input value in the input field when entering the log search tag filter.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Search</span>, fixed the issue where the content of the tooltip displaying log filters is not displayed properly.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the <code>id</code> of the selected organization is missing from the query parameter, when the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Log Configuration</span> menu is entered.</p>"
+      },
+      {
+        "ver": "Service 2.9.0",
+        "hash": "service-290",
+        "product": "Log",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the prefix of the <code>character:</code> pattern cannot be registered in the parser setting of the <span class=\"uitext\">Log Configuration</span> menu.</p>"
+      }
+    ]
+  }
+]
