@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76234],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[99646],{
 
 /***/ 10939:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1697,16 +1697,15 @@ function _createMdxContent(props) {
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Xclude} = _components;
+  }, {Cmdname} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
       id: "지표-추가하기",
       children: "지표 추가하기"
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "하나의 위젯에 두 가지 이상의 지표를 추가할 수 있습니다. 최대 5개까지 추가할 수 있습니다."
+      children: "하나의 위젯에 두 가지 이상의 지표를 추가할 수 있습니다. 최대 4개까지 추가할 수 있습니다."
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1766,26 +1765,23 @@ function _createMdxContent(props) {
           }), " 버튼을 선택하세요."]
         }), "\n"]
       }), "\n"]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Xclude, {
-      product: "oracle",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["지표를 추가한 위젯에 추가한 지표의 수만큼 차트가 생성됩니다. 위젯의 이름 옆에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["지표를 추가한 위젯에 추가한 지표의 수만큼 차트가 생성됩니다. 위젯의 이름 옆에 위치한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        alt: "정보 아이콘",
+        src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
+        width: "24",
+        height: "24"
+      }), " 버튼을 선택하면 추가한 지표의 이름과 내용을 확인할 수 있습니다. 또한 차트 위로 마우스를 오버하면 툴팁을 통해 수치를 확인할 수 있습니다."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "정보 아이콘",
           src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
           width: "24",
           height: "24"
-        }), " 버튼을 선택하면 추가한 지표의 이름과 내용을 확인할 수 있습니다. 또한 차트 위로 마우스를 오버하면 툴팁을 통해 수치를 확인할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-            alt: "정보 아이콘",
-            src: (__webpack_require__(36788)/* ["default"] */ .A) + "",
-            width: "24",
-            height: "24"
-          }), " 버튼의 툴팁 기능은 다국어에서 지원하지 않습니다."]
-        })
-      })]
+        }), " 버튼의 툴팁 기능은 다국어에서 지원하지 않습니다."]
+      })
     })]
   });
 }
@@ -3762,7 +3758,64 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 84846:
+/***/ 81202:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ReturnLink} = _components;
+  if (!ReturnLink) _missingMdxReference("ReturnLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "info",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ReturnLink, {
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 44660:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3775,29 +3828,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(87660);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(95168);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(66872);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(82576);
-/* harmony import */ var _common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10939);
-/* harmony import */ var _common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(23466);
-/* harmony import */ var _common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(69163);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(57051);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49352);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(5007);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5512);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(65201);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(55289);
-/* harmony import */ var _common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(17186);
-/* harmony import */ var _common_items_db_instance2sqlstatic_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(81543);
-/* harmony import */ var _common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(88867);
-/* harmony import */ var _common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(48441);
-/* harmony import */ var _common_items_db_v2_instance_monitoring_kiil_session_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(79192);
-/* harmony import */ var _common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(78085);
-/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(19193);
-/* harmony import */ var _common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(93782);
-/* harmony import */ var _common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(25735);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(81202);
+/* harmony import */ var _common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87660);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(95168);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(66872);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(82576);
+/* harmony import */ var _common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(10939);
+/* harmony import */ var _common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(23466);
+/* harmony import */ var _common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(69163);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(57051);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(49352);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5007);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(5512);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(65201);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(55289);
+/* harmony import */ var _common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(17186);
+/* harmony import */ var _common_items_db_instance2sqlstatic_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(81543);
+/* harmony import */ var _common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(88867);
+/* harmony import */ var _common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(48441);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_kiil_session_mdx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(79192);
+/* harmony import */ var _common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(78085);
+/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(19193);
+/* harmony import */ var _common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(93782);
+/* harmony import */ var _common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(25735);
 
 
 const frontMatter = {
@@ -3805,7 +3859,7 @@ const frontMatter = {
 	title: '인스턴스 모니터링',
 	description: '인스턴스 모니터링 메뉴에서는 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.',
 	keywords: [
-		'Oracle Pro',
+		'Oracle',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스'
@@ -3814,16 +3868,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/instance-monitoring",
+  "id": "oracle/instance-monitoring",
   "title": "인스턴스 모니터링",
   "description": "인스턴스 모니터링 메뉴에서는 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.",
-  "source": "@site/docs/oracle-pro/instance-monitoring.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/instance-monitoring",
-  "permalink": "/whatap-docs/oracle-pro/instance-monitoring",
+  "source": "@site/docs/oracle/instance-monitoring.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/instance-monitoring",
+  "permalink": "/whatap-docs/oracle/instance-monitoring",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/instance-monitoring.mdx",
+  "editUrl": "undefined/docs/oracle/instance-monitoring.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -3831,21 +3885,21 @@ const metadata = {
     "title": "인스턴스 모니터링",
     "description": "인스턴스 모니터링 메뉴에서는 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.",
     "keywords": [
-      "Oracle Pro",
+      "Oracle",
       "인스턴스",
       "대시보드",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "인스턴스 목록",
-    "permalink": "/whatap-docs/oracle-pro/instance-list"
+    "permalink": "/whatap-docs/oracle/instance-list"
   },
   "next": {
     "title": "멀티 인스턴스 모니터링",
-    "permalink": "/whatap-docs/oracle-pro/multi-instance-monitoring"
+    "permalink": "/whatap-docs/oracle/multi-instance-monitoring"
   }
 };
 const assets = {
@@ -3889,21 +3943,24 @@ const assets = {
 
 
 
-const toc = [..._common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
+
+const toc = [..._common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
   "value": "기본 화면 안내",
   "id": "기본-화면-안내",
   "level": 2
-}, ..._common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_db_instance2sqlstatic_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_kiil_session_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_20__/* .toc */ .RM, ..._common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_21__/* .toc */ .RM, ..._common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_22__/* .toc */ .RM];
+}, ..._common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_db_instance2sqlstatic_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, ..._common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_kiil_session_mdx__WEBPACK_IMPORTED_MODULE_19__/* .toc */ .RM, ..._common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_20__/* .toc */ .RM, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_21__/* .toc */ .RM, ..._common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_22__/* .toc */ .RM, ..._common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_23__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     h2: "h2",
     section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_23__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_24__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {ProdImg} = _components;
   if (!ProdImg) _missingMdxReference("ProdImg", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      product: "Oracle"
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "기본-화면-안내",
@@ -3911,13 +3968,13 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
         img: "db-instance-monitoring.png",
         desc: "인스턴스 모니터링"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance2sqlstatic_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance2sqlstatic_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_session_details_info_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_query_details_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {
         level: 3
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_kiil_session_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_kiil_session_mdx__WEBPACK_IMPORTED_MODULE_19__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_20__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_21__/* ["default"] */ .Ay, {
         level: 3
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_21__/* ["default"] */ .Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_22__/* ["default"] */ .Ay, {
         level: 3
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_22__/* ["default"] */ .Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_oracle_column_mdx__WEBPACK_IMPORTED_MODULE_23__/* ["default"] */ .Ay, {
         level: 3
       })]
     })]
@@ -3925,7 +3982,7 @@ function _createMdxContent(props) {
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_23__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_24__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
