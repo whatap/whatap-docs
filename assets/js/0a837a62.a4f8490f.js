@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[38046],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80893],{
 
-/***/ 6907:
+/***/ 8318:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,32 +18,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'python-1_7_0',
-	title: 'Python Agent v1.7.0',
+	id: 'python-1_7_1',
+	title: 'Python Agent v1.7.1',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/python/python-1_6_10',
+	pagination_next: 'release-notes/python/python-1_7_0',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/python/python-1_7_0",
-  "title": "Python Agent v1.7.0",
-  "description": "2024년 09월 24일",
-  "source": "@site/docs/release-notes/python/python-1.7.0.mdx",
+  "id": "release-notes/python/python-1_7_1",
+  "title": "Python Agent v1.7.1",
+  "description": "2024년 10월 10일",
+  "source": "@site/docs/release-notes/python/python-1.7.1.mdx",
   "sourceDirName": "release-notes/python",
-  "slug": "/release-notes/python/python-1_7_0",
-  "permalink": "/whatap-docs/release-notes/python/python-1_7_0",
+  "slug": "/release-notes/python/python-1_7_1",
+  "permalink": "/whatap-docs/release-notes/python/python-1_7_1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/python/python-1.7.0.mdx",
+  "editUrl": "undefined/docs/release-notes/python/python-1.7.1.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "python-1_7_0",
-    "title": "Python Agent v1.7.0",
+    "id": "python-1_7_1",
+    "title": "Python Agent v1.7.1",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/python/python-1_6_10",
+    "pagination_next": "release-notes/python/python-1_7_0",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
@@ -53,8 +53,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/python/"
   },
   "next": {
-    "title": "Python Agent v1.6.10",
-    "permalink": "/whatap-docs/release-notes/python/python-1_6_10"
+    "title": "Python Agent v1.7.0",
+    "permalink": "/whatap-docs/release-notes/python/python-1_7_0"
   }
 };
 const assets = {
@@ -68,6 +68,7 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
     p: "p",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -75,18 +76,20 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 09월 24일"
+      children: "2024년 10월 10일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
         priority: "0",
         children: "Fixed"
-      }), " fastapi 0.115.0 버전에 대한 트랜잭션 수집 오류 수정"]
+      }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        children: "database connection close"
+      }), "에서 오류가 발생할 때 프로파일 수집이 중단되는 문제 수정"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://pypi.org/project/whatap-python/1.7.0/",
-          children: "whatap-python v1.7.0"
+          href: "https://pypi.org/project/whatap-python/1.7.1/",
+          children: "whatap-python v1.7.1"
         })]
       })
     })]
