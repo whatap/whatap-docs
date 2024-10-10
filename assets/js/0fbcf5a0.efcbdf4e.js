@@ -114,7 +114,7 @@ function _createMdxContent(props) {
           children: "Fixed"
         }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "segments_min_size"
-        }), " 옵션 수정"]
+        }), " 옵션 이름의 오타 수정"]
       })]
     })]
   });
