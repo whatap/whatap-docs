@@ -279,6 +279,10 @@ html[lang='en-US'] .inline {
   letter-spacing: -0.7px;
 }
 
+html[lang='ja-JP'] .inline {
+  letter-spacing: -0.8px;
+}
+
 .iconumber {
   position: relative;
   display: inline-block;
