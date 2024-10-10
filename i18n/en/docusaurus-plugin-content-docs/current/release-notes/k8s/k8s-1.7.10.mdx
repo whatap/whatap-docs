@@ -1,0 +1,25 @@
+---
+id: k8s-1_7_10
+title: Kubernetes Agent v1.7.10
+toc_max_heading_level: 2
+pagination_next: release-notes/k8s/k8s-1_7_9
+displayed_sidebar: releaseSidebar
+---
+
+August 29, 2024
+
+- <Status priority='1'>Feature</Status> Added the **capacity** node and **allocatable** related metrics to the tag count `kube_node` category.
+
+  - `allocatable_ephemeral_storage`: It represents ephemeral storage available to the node.
+
+  - `capacityEphemeralStorage`: Total capacity of the node's ephemeral storage.
+
+  - `capacityPods`: Maximum number of Pods that can be scheduled on the node.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where millicore values are missing ​​in the `allocatable_cpu` metric to provide more accurate CPU allocation data.
+
+:::info
+
+Agent download: [kube_mon_1.7.10.tar](https://repo.whatap.io/docker/kube_mon_1.7.10.tar)
+
+:::

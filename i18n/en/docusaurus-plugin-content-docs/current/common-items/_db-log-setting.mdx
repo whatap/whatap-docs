@@ -65,9 +65,17 @@ file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log
 
 </InDoc>
 
+<InDoc product='cubrid'>
+
+```ini title='xos.conf'
+file=/cubrid-11.0/log/server/demodb_latest.err
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid'>
 
 Before application, install the XOS agent and then proceed with agent configuration. For more information, see [the following](agent-xos-settings).
 
@@ -81,7 +89,7 @@ Before application, install the XOS agent and then proceed with agent configurat
 
 :::
 
-<Xclude product="altibase">
+<Xclude product="altibase,cubrid">
 
 ## Applying to the AWS RDS logs
 

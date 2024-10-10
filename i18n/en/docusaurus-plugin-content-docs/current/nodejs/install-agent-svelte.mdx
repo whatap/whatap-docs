@@ -1,0 +1,63 @@
+---
+id: install-agent-svelte
+title: Installation of the Svelte environment
+description: The following explains how to configure the Custom Server for monitoring the Node.js applications in the server-side rendering (SSR) framework such as Svelte.
+keywords:
+  - Node.js
+  - Svelte
+  - Agent
+---
+
+Server-Side Rendering (SSR) frameworks such as **SvelteKit** require a custom server configuration for application monitoring. **SvelteKit** basically uses **adapters** to allow deploying the built result to various environments. To apply the Node.js agent, add code to the **SvelteKit** configuration file (**svelte.config.js**). 
+
+:::note
+
+- Reference: [Svelte Configuration](https://kit.svelte.dev/docs/configuration)
+
+- This document was created in accordance with svelte v3.54.0 and sveltekit v1.5 guides.
+
+:::
+
+## Installing the agent {#installagent}
+
+Execute the following command to install the agent.
+
+```bash title="BASH"
+npm install whatap
+```
+
+## Agent file structure {#agentfiles}
+
+For the agent file configuration, see the following.
+
+<Filetree name="whatap">
+
+<FiletreeItem name="package.json" type="file">Document file for sample applications and dependency management.</FiletreeItem>
+
+<FiletreeItem name="whatap.conf" type="file">This configuration file stores monitoring agent settings, access key, and WhaTap data collection server IP.</FiletreeItem>
+
+<FiletreeItem name="security.conf (or paramkey.txt)" type="file">It stores the security key that is entered for viewing SQL variables and HTTP queries, or using the Thread stop function.</FiletreeItem>
+
+</Filetree>
+
+## Creating the svelte.config.js code
+
+Modify the *svelte.config.js* file for **Svelte** application instances. This file is located in the root path of the project.
+
+### Initializing the WhaTap agent
+
+```typescript title="svelte.config.js"
+import WhatapAgent from 'whatap'; // ESM Module
+WhatapAgent.NodeAgent;
+```
+
+## Running the application
+
+```bash title="SH"
+npm run preview
+```
+
+{/* 다음 단계 */}
+import Apminstallnextstep from "../common-items/_apm-install-next-step.mdx";
+
+<Apminstallnextstep />

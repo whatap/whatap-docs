@@ -1,0 +1,238 @@
+---
+id: node-map
+title: Node Map
+description: It guides you to the node map menu.
+keywords:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Dashboard
+  - Node Map
+toc_max_heading_level: 3
+---
+
+Home &gt; Select Project &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />
+
+:::note 
+
+**Requirements**
+
+- The Kubernetes cluster project (<code class='my'>CP</code>) requires the **Read role**.
+
+- The WhaTap Kubernetes agent 1.3.7 or later is required. 
+
+:::
+
+The <Cmdname sid="side_nodeMap" className="uitext" /> menu provides the feature to monitor the status of nodes from a cluster perspective. It visualizes the node status, resource usage, and agent status to help users understand intuitively. Additionally, it supports a feature that allows you to easily check the previous status by viewing the node status at a previous time.
+
+<ImgLang img='k8s-node-map.png' />
+
+## Basic screen guide
+
+The <Cmdname sid="side_nodeMap" className="uitext" /> menu largely consists of the **User Configuration** area and the **Node Map Chart** area.
+
+### User Configuration
+
+In the **User Configuration** area at the top of <Cmdname sid="side_nodeMap" className="uitext" />, you can configure additional settings for <Cmdname sid="groupby" className="uitext" />, <Cmdname sid="TTL08456" className="uitext" />, <Cmdname sid="label" className="uitext" />, <Cmdname sid="filter" className="uitext" />, presets, and ![Configuration icon](/img/ic-setting.svg). The following example image has <Cmdname sid="groupby" className="uitext" />, <Cmdname sid="TTL08456" className="uitext" />, and <Cmdname sid="label" className="uitext" /> applied.
+
+<ImgLang img='k8s-node-map-custom.png' desc='Node map custom settings' />
+
+#### Grouping
+
+Users can display nodes by <Cmdname sid="groupby" className="uitext" /> based on various conditions. This makes it easy to see the relationships between nodes within each group. The <Cmdname sid="groupby" className="uitext" /> feature supports up to 2 levels. <Cmdname sid="side_nodeMap" className="uitext" /> <Cmdname sid="groupby" className="uitext" /> allows users to select nodes based on specific criteria to create a customized monitoring environment.
+
+{/* 사용자가 특정 기준에 따라 노드를 선별하여 모니터링할 수 있도록 커스터마이징된 모니터링 환경을 제공합니다. */}
+
+#### Setting the threshold
+
+Users can represent the node status with colors via <Cmdname sid="TTL08456" className="uitext" />. You can set one or more metrics, and you can specify warning (<span class='slow'>Warning</span>) and error (<span class='vslow'>Error</span>) sections for each metric. The normal (<span class='normal'>Normal</span>) section is displayed in <span class='normal'>blue</span>. Depending on the set range, an appropriate color to the status is applied. 
+
+{/* 해당 범위에 속할 경우 지정된 색상이 적용됩니다.  */}
+
+1. Click the <Cmdname sid="TTL08456" className="uitext" /> option.
+
+2. Select a desired metric and then set <span class='slow'>Warning</span> and <span class='vslow'>Error</span> sections. 
+
+3. To add a metric, click <UI>+</UI> <Cmdname sid="BTN08454" className="uitext" /> at the bottom. 
+
+4. Once you have finished setting the thresholds for each desired metric, click <Cmdname sid="save" className="uitext" /> at the bottom. 
+
+:::note 
+
+The abnormal sections such as <span class='slow'>Warning</span> and <span class='vslow'>Error</span> are set to <span class='slow'>orange</span> and <span class='vslow'>red</span> by default. You can customize the colors for each state in <Cmdname sid="TTL08456" className="uitext" />.
+
+![Node map status section color setting](/img/k8s-node-map-custom-color.png)
+
+:::
+
+##### String type metrics
+
+If a string type (*String*) metric has a specific string, it is designated as <span class='vslow'>Error</span>. For example, if the ***Status (string)*** metric contains a text, `NotReady`, the node is marked as <span class='vslow'>Error</span> and displayed in <span class='vslow'>red</span>.
+
+| Metric name          | Value                    | Error status |
+| -------------------- | ------------------------ | ------------ |
+| Status               | `Ready *` / `NotReady *` | `NotReady *` |
+| Ready                | `true` / `false`         | `false`      |
+| PIDPressure          | `true` / `false`         | `true`       |
+| DiskPressure         | `true` / `false`         | `true`       |
+| MemoryPressure       | `true` / `false`         | `true`       |
+| Unschedulable        | `true` / `false`         | `true`       |
+
+{/* 
+
+- <span class='normal'>Normal</span>: <span class='normal'>Blue</span>
+
+- <span class='slow'>Warning</span>: <span class='slow'>Orange</span>
+
+- <span class='vslow'>Error</span>: <span class='vslow'>Red</span>
+
+*/}
+
+##### Node status display priority
+
+Its highest priority is the <span class='vslow'>Error</span> section. If any of the metrics falls into the <span class='vslow'>Error</span> section, the node appears in <span class='vslow'>red</span> at first. In the following example, both ![Leader line a](/img/char-a.svg) and ![Leader line b](/img/char-b.svg) nodes are marked as <span class='vslow'>Error</span>. 
+
+![Node status display priority sc](/img/k8s-node-map-custom-err-col.png)
+
+{/* * **우선 순위** 예시 이미지 사용해서 노드 A, B 비교 */}
+
+{/* 
+
+If a string type (*String*) metric has a specific string, it is designated as <span class='vslow'>Error</span>. For example, if the ***Status (string)*** metric contains a text, `NotReady`, the node is marked as <span class='vslow'>Error</span> and displayed in <span class='vslow'>red</span>. 
+
+*/}
+
+{/* 
+
+:::note 
+
+**Priority**
+
+예시 이미지 사용해서 노드 A, B 비교
+
+::: 
+
+*/}
+
+#### Label
+
+{/* 사용자는 노드 블록 내부에 텍스트 라벨을 설정하여 지정한 주요 정보를 한눈에 볼 수 있습니다. If you set <Cmdname sid="label" className="uitext" /> based on the ***CpuUsedPercent*** metric, you can see the information inside the node block as in the example image above.  */}
+
+<Columns>
+
+<Column className="text--left width--20">
+
+![Label sc](/img/k8s-node-map-label.png)
+
+</Column>
+
+<Column className="text--left">
+
+<br/>
+
+Users can set text labels inside a node block to view the set key data at a glance. If you set <Cmdname sid="label" className="uitext" /> based on the ***CpuUsedPercent*** metric, you can see the information inside the node block as in the example image on the left. 
+
+</Column>
+
+</Columns>
+
+#### Filtering
+
+Users can use filters by selecting nodes that meet specific conditions for intensive monitoring.
+
+#### Preset
+
+Users can save the set options as a preset and load them if needed. Presets are saved for each project. This allows project members to monitor the cluster with the same settings. A default preset (***Default***) is provided, and the default preset cannot be deleted. 
+
+:::note 
+
+**Default preset**
+
+The default preset for <Cmdname sid="side_nodeMap" className="uitext" /> is set to the threshold for the ***CpuUsedPercent (pct)*** metric as follows:
+
+- <span class='normal'>Normal</span>: The value is `80` or less.
+
+- <span class='slow'>Warning</span>: The value is greater than `80` and `90` or less.
+
+- <span class='vslow'>Error</span>: The value is greater than `90`.
+
+:::
+
+#### Additional function
+
+Through the ![Configuration icon](/img/ic-setting.svg) on the upper right of <Cmdname sid="side_nodeMap" className="uitext" />, you can adjust additional detailed settings as follows:
+
+<ImgLang img='k8s-node-map-addtional-settings.png' desc='Node map additional settings' />
+
+- <Cmdname sid="layout" className="uitext" />: It fixes columns of the grouped widgets.
+
+- <Cmdname sid="TTL07772" className="uitext" />: It sorts the widgets grouped by node count or name.
+
+- <Cmdname sid="ITM06977" className="uitext" type="node" />: It displays the nodes that have disappeared within the last minute.
+
+- <Cmdname sid="ITM07792" className="uitext" type="node" />: It displays the nodes created within the last minute.
+
+- <Cmdname sid="BTN08458" className="uitext" />: It displays a warning popover when a specific node is in a <span class='slow'>Warning</span> or <span class='vslow'>Error</span> status depending on <Cmdname sid="TTL08456" className="uitext" />.
+
+- <Cmdname sid="BTN08459" className="uitext" />: Set whether to display the average, sum, maximum, and minimum values ​​at the bottom of the widget.
+
+- <Cmdname sid="BTN08460" className="uitext" />: Select a metric to display at the bottom of the widget. Select a metric and set it to display data for the metric as an average, sum, maximum, or minimum for all grouped nodes.
+
+### Node map chart
+
+The <Cmdname sid="side_nodeMap" className="uitext" /> chart consists of the following three areas:
+
+<ImgLang img='k8s-node-map-chart.png' />
+
+![Leader line 1](/img/number-01.png) **Top area of the widget** 
+
+  It displays the total number of nodes, or the total number of grouped items, and the numbers of states for the selected metric. 
+
+![Leader line 2](/img/number-02.png) **Visualization area in the center** 
+
+  It provides a visual dashboard that allows you to intuitively check the overall node status and count. 
+
+![Leader line 3](/img/number-03.png) **Bottom area of the widget** 
+
+  It displays the statistics for a selected metric. It displays the data in a desired manner among sum, maximum, and minimum values ​​as set through <Cmdname sid="BTN08460" className="uitext" /> in Additional Settings. 
+
+:::note 
+
+<Cmdname sid="side_nodeMap" className="uitext" /> only displays the nodes that have node agents installed.
+
+:::
+
+## Summary view and detailed analysis
+
+In <Cmdname sid="side_nodeMap" className="uitext" />, select a node to view. You can check the summary data of the object through the summary view screen that appears on the right. You can check the detailed analysis screen by clicking <Cmdname sid="BTN07712" className="uitext" /> on the summary view screen.
+
+<ImgLang img='k8s-node-map-summary.png' />
+
+#### Target information
+
+In the <Cmdname sid="TTL06782" className="uitext" /> tab, you can check the key properties of a selected node.
+
+:::note 
+
+The ***Labels*** metric is supported starting from Master Agent 1.7.9.
+
+:::
+
+#### Node configuration
+
+In the <Cmdname sid="TTL08441" className="uitext" type="node"/> tab, you can check the CPU, memory, disk, network configuration, and usage within the node, and the information about Kubernetes system processes such as Container Runtime, kubelet, and kube-proxy.
+
+{/* 노드 내 CPU, 메모리, 디스크, 네트워크 자원 사용 현황을 포함한 상세 정보를 확인할 수 있습니다. */}
+
+#### Metrics
+
+In the <Cmdname sid="metrics" className="uitext" /> tab, you can find key metrics for the selected node and check resource usage patterns. This allows you to quickly identify the resource-related performance optimization and issues.
+
+:::note 
+
+The ***K8s CPU Request / Allocatable CPU (%)*** widget is supported from Master Agent 1.7.9.
+
+:::
+
+#### Event
+
+In the <Cmdname sid="event" className="uitext" /> tab, you can monitor major events and alerts occurred within the cluster by checking ***K8s Node events*** and ***WhaTap Node events*** that you configured.

@@ -54,6 +54,8 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
   You can collect a list of IPs for your database servers. Set the time interval in seconds (at least 3 seconds) for collection.
 
+<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid">
+
 - **file** <span class='type'>String</span>
 
   To use the <Cmdname sid="side_log" className="uitext" /> menus (<Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" />, <Cmdname sid="side_logSetting" className="uitext" />), enter the absolute path in the `file` option for the log files to be monitored.
@@ -107,3 +109,13 @@ Copy the _xos_ directory to the database server, and then enter the agent server
   ```
 
   </InDoc>
+
+  <InDoc product="cubrid">
+
+  ```ini title='xos.conf'
+  file=/cubrid-11.0/log/server/demodb_latest.err
+  ```
+
+  </InDoc>
+
+</InDoc>

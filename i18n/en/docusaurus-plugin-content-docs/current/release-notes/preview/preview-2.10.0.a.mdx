@@ -1,0 +1,97 @@
+---
+id: preview-2_10_0x
+title: Preview 2.10.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.10.0.a1
+
+September 26, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="TTL06656" className="uitext" /> of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, updated the content in the <UI>Webhook JSON</UI> input field.
+
+  - Added the `uuid`, `okind`, and `onode` keys.
+
+  - In case of **Server** products, added the `serverAlertPolicyName` key.
+
+  :::note
+
+  For more information about <Cmdname sid="TTL06656" className="uitext" />, see [the following](../../java/set-receive-event#add3rdparty).
+
+  :::
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" /> 또는 <Cmdname sid="side_flexboard" className="uitext" />, changed the vertical alignment of the displayed guidance message to the center, if there is no dashboard or the list is being loaded.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the comparison time for event items in the <Cmdname sid="sms_alert_status" className="uitext" /> list is not updated.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />, fixed the style bugs (text theme error, option area broken).
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />, fixed the issue where node data is not displayed properly when querying the past data.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />, removed unnecessary normal settings during configuration of thresholds.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='0'>Fixed</Status> In the side menu, removed the <Cmdname sid="side_logViewer" className="uitext" /> and <Cmdname sid="side_fileLogAlert" className="uitext" /> menus and modified to check in <Cmdname sid="sitemap" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed the Japanese message display error when there is a time unit restriction in the time selector.
+
+  > 選択できる最大時間は3<b>時</b>です。 → 選択できる最大時間は3<b>時間</b>です。
+
+#### Oracle <code className="my">V2</code>, Oracle Pro
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />, changed the <b>event#</b> column name to <UI>event</UI>.
+
+---
+
+### `Log`
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_logExplorer" className="uitext" />, modified to filter the list of candidates for the tag value ​​that matches a keyword.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where filtering is disabled when the list is updated while a value is entered in the filter input field of the <Cmdname sid="side_logExplorer" className="uitext" /> menu
+
+</div>
+
+## Preview 2.10.0.a0
+
+September 13, 2024
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='0'>Fixed</Status> Fixed typos and link errors for the agent installation in the <UI>HP-UX</UI> operating system environment.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />, fixed the issue where values ​​entered in custom fields are not saved intermittently.
+
+- <Status priority='1'>Deprecated</Status> In the <Cmdname sid="BTN06441" className="uitext" /> feature of <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />, removed the sorting option.
+
+---
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> for the **CUBRID** <code className="my">V2</code> project, fixed the bug where a whiteout occurs.
+
+</div>
