@@ -92,7 +92,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_9_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "../img/ic-link.svg",
+            src: "/whatap-docs/img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
