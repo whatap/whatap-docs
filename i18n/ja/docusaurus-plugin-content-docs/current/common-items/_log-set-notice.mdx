@@ -1,6 +1,6 @@
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="log" className="uitext" /> タブ
 
-収集したログデータを条件に合わせてフィルタリングすることで、警告通知を設定できます。 **_+_** <Cmdname sid="add_notification" className="uitext" />ボタンをクリックして、ログイベントの警告通知を設定します。 すべての設定を完了した後<Cmdname sid="save" className="uitext" />ボタンを選択します
+収集したログデータを条件に合わせてフィルタリングすることで、警告通知を設定できます。 **_+_** <Cmdname sid="add_notification" className="uitext" />ボタンをクリックして、ログイベントの警告通知を設定します。 すべての設定を完了した後<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
 <Xclude product='postgresql,mysql'>
 
@@ -28,13 +28,13 @@
 
 :::
 
-## イベント追加共通オプション {#log-event-add-common}
+## イベント追加の共通オプション {#log-event-add-common}
 
 以下は、イベント追加時に共通して設定できるオプションです。
 
 - <Cmdname sid="event_title" className="uitext" />：追加するイベント名を入力します。
 
-- <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、アラート通知を有効にするかどうかを選択できます。
+- <Cmdname sid="enable_events" className="uitext" />：トグルボタンをクリックして、アラート通知をオン・オフできます。
 
 - <Cmdname sid="level" className="uitext" />：<Cmdname sid="fatal" className="vslow" />、<Cmdname sid="warning" className="slow" />、<Cmdname sid="info" className="info" />次のいずれかのレベルを選択します。
 
@@ -46,7 +46,7 @@
 
 - <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、該当タグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。 イベント受信タグを選択しない場合は、プロジェクトの全体メンバーに警告通知を送信します。
 
-  タグを追加しない場合は、全体メンバーに警告通知を送信します。 **_+_** <Cmdname sid="add_tag" className="uitext" />をクリックし、<Cmdname sid="event_tag_list" className="uitext" />で警告通知の受信対象を選択してください。 **_+_** <Cmdname sid="create_new_eventtag" className="uitext" />を選択してタグを追加できます。
+  タグを追加しない場合は、全体メンバーに警告通知を送信します。 **_+_** <Cmdname sid="add_tag" className="uitext" />をクリックし、<Cmdname sid="event_tag_list" className="uitext" />でアラート通知の受信対象を選択します。 **_+_** <Cmdname sid="create_new_eventtag" className="uitext" />を選択してタグを追加できます。
 
   :::note
 
@@ -54,7 +54,7 @@
 
   :::
 
-## リアルタイムログイベントの追加 {#rt-log-event}
+## リアルタイム ログイベントの追加 {#rt-log-event}
 
 <ImgLang img='log-alert-rt.png' desc='リアルタイムログイベントの追加' />
 
@@ -76,7 +76,7 @@
 
 - <Cmdname sid="template" className="uitext" />：複合ログテンプレートを提供します。
 
-- <Cmdname sid="data_time_range" className="uitext" />：選択した時間の間に収集されたログを表示します。 データの照会時間を5分に選択すると、直近5分間に収集されたデータを照会し、イベントの発生条件を確認できます。
+- <Cmdname sid="data_time_range" className="uitext" />：選択した時間の間に収集されたログを照会します。 データの照会時間を5分に選択すると、直近5分間に収集されたデータを照会し、イベントの発生条件を確認できます。
 
 - <Cmdname sid="ITM06654" className="uitext" />
 
@@ -100,9 +100,9 @@
 
 3. ログイベント一覧の中から変更するイベント項目の右側![編集アイコン](/img/ico-edit.svg)ボタンを選択します。
 
-4. <Cmdname sid="event_setting" className="uitext" />ウィンドウが表示されたら、オプションを変更して、<Cmdname sid="save" className="uitext" />ボタンを選択します。
+4. <Cmdname sid="event_setting" className="uitext" />画面が表示されたら、オプションを変更して、<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
-選択したログイベントを削除するには、イベント設定ウィンドウの右上の<Cmdname sid="delete" className="uitext" />ボタンをクリックします。
+選択したログイベントを削除するには、イベント設定画面の右上にある<Cmdname sid="delete" className="uitext" />ボタンをクリックします。
 
 ## ログイベントの非活性化
 
@@ -132,13 +132,13 @@
 
 7. ファイル選択ウィンドウが表示する前にダウンロードしたjsonファイルを選択します。
 
-8. <Cmdname sid="import_json" className="uitext" />ウィンドウが表示されたら、内容を修正して、***+*** <Cmdname sid="add_to_list" className="uitext" />ボタンを選択します。
+8. <Cmdname sid="import_json" className="uitext" />画面が表示されたら、内容を修正して、***+*** <Cmdname sid="add_to_list" className="uitext" />ボタンを選択します。
 
 :::note 
 
 **イベントIDが存在します。 IDを削除した後、もう一度やり直してください。**
 
-- メッセージが表示されると、<Cmdname sid="import_json" className="uitext" />ウィンドウで `id`項目を削除し、**_+_** <Cmdname sid="add_to_list" className="uitext" />ボタンをクリックします。
+- メッセージが表示されると、<Cmdname sid="import_json" className="uitext" />画面から`id`項目を削除し、**_+_** <Cmdname sid="add_to_list" className="uitext" />ボタンをクリックします。
 
 - 既存のイベント項目を上書きする場合は、`id` 項目を削除し、<Cmdname sid="overwrite" className="uitext" />ボタンをクリックします。
 

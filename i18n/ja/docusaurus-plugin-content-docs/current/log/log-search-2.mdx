@@ -68,7 +68,7 @@ import Loguitablesetting from "../common-items/_log-ui-table-setting.mdx";
 
 - Javaエージェント2.2.22バージョン以降からウィービング設定にlog4j-2.17またはlogback-1.2.8設定時に使用できます。 エージェントの再起動が必要です。
 
-- ログレベルは、構文解析されたキーワードの中で`level`、`type`基準で判別します。 `level`、`type`に構文解析されたキーが存在し、構文解析した値が`FATAL`、`CRITICAL`、`ERROR`、`WARN`、`WARNING`、`INFO`を含む場合は、ログレベルの色を表示します。 
+- ログレベルは、パーシングされたキーワードの中で`level`、`type`基準で判別します。 `level`、`type`にパーシングされたキーが存在し、パーシングした値が`FATAL`、`CRITICAL`、`ERROR`、`WARN`、`WARNING`、`INFO`を含む場合は、ログレベルの色を表示します。 
 
 :::
 
@@ -88,19 +88,19 @@ import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
 
 ![number-s](/img/number-01.png)左側の**_時間選択ウィンドウ_**で時間範囲を指定できます。 右側から、<Logfilterapply2 /> 
 
-### 構文解析されていないキーワードのフィルター適用
+### パーシングされていないキーワードのフィルター適用
 
-ログから構文解析されていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、**_ログパーサの設定_**を通じてインデックスキー値を活用して検索することをお勧めします。
+ログからパーシングされていない、つまりインデックスが作成されていないキーワードを含むログを照会できます。 この場合、指定範囲内のすべてのログをFull Scanします。 そのため、インデックスが生成されたキーに比べて検索速度が多少落ちる可能性があります。 定型化されたログデータの場合、**_ログパーサの設定_**からインデックスキーを活用して検索するのがお勧めです。
 
-![構文解析されていないキーワードのフィルター適用](/img/log-filter-search.png)
+![パーシングされていないキーワードのフィルター適用](/img/log-filter-search.png)
 
-1. **_カテゴリ_**を選択してください。 カテゴリ指定が必須です。
+1. **_カテゴリ_**を選択します。 カテゴリ指定が必須です。
 
-2. **_フィルター_**入力ウィンドウに`content`基準で分かち書きした後、検索したいキーワードを入力してください。 
+2. **_フィルター_**入力欄に`content`基準で分かち書きながら、検索キーワードを入力します。 
 
    > 例）`content *select*`
 
-3. ![アイコン](/img/ic-search.svg) **_検索_**ボタンをクリックしてログを照会してください。 ログ全体の一部を先に照会します。 1回あたりの検索結果は最大1万件です。
+3. ![アイコン](/img/ic-search.svg) **_検索_**ボタンをクリックしてログを照会します。 ログ全体の一部を先に照会します。 1回あたりの検索結果は最大1万件です。
 
 4. スクロールを下げて下段の**_追加照会_**ボタンを選択すると、追加で照会することができます。 
 
@@ -110,7 +110,7 @@ import Loguilogcontent from "../common-items/_log-ui-log-content.mdx";
 
 - 全体ログのうち、サーバー照会範囲当たり1万件ずつ照会します。 サーバー照会範囲の場合、基本20万件ですが、ログ全体の量によって比率が変わることがあります。
 
-- パーサー設定の詳細については、[次の文書](log-parser.mdx)を参考にしてください。
+- パーサ設定の詳細については、[次の文書](log-parser.mdx)を参考にしてください。
 
 :::
 
@@ -126,13 +126,13 @@ import Logfiltermodify from "../common-items/_log-filter-modify.mdx";
 
 <InDoc product='log,postgresql,mysql'>
 
-例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_管理_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。 
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_ログ_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。 
 
 </InDoc>
 
 <InDoc product='aws-log'>
 
-例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_管理_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。
+例えば![number-s](/img/number-02.png)領域の<span class='logwr'>AppLog</span>と<span class='logwr'>AppStdOut</span>はカテゴリーであり、その下の<span class='lowfg'>oid</span>などのタグは、パーシング(parsing) された検索キーです。 検索キーは**_ログ_** > **_ログ設定_**の**_ログパーサの設定_**からパーシングロジックを登録することで設定できます。
 
 </InDoc>
 
@@ -170,9 +170,9 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 ログのコンテンツの中で、目的のキーワードを簡単に識別するためのハイライト機能を提供します。
 
-<ImgLang img='log-search-content-search-highlight.png' desc='콘텐츠 하이라이트'/>
+<ImgLang img='log-search-content-search-highlight.png' desc='コンテンツハイライト'/>
 
-- ![指示線a](/img/char-a.svg)キーワード入力ウィンドウにハイライトしたいキーワードを入力後![検索アイコン](/img/ic-search.svg)**_検索_**アイコンをクリックしてください。
+- ![指示線a](/img/char-a.svg)キーワード入力欄にハイライトしたいキーワードを入力後![検索アイコン](/img/ic-search.svg)**_検索_**アイコンをクリックします。
 
   > 例）`select`
 
@@ -198,9 +198,9 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 <ImgLang img='log-lt-highlight.png' desc='ライブテールハイライト'/>
 
-- 追加でカラー設定を希望するキーワードを入力ウィンドウに入力してください。 
+- 追加でカラー設定を希望するキーワードを入力欄に入力します。 
 
-- 入力ウィンドウ左側の**_カラー_**クリックする時に選択できるカラーメニューが表示されます。 
+- 入力欄の左側の**_カラー_**をクリックするとカラーを選択できる画面が表示されます。 
 
 - 基本的なログレベルによるハイライト(<span class='logwr'>WARN</span>, <span class='loger'>ERROR</span>, <span class='logft'>FATAL</span>)が適用されます。 
 

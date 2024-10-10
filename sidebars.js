@@ -3846,7 +3846,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -3854,9 +3854,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_38',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_39',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_38',
                 'release-notes/java/java-2_2_37',
                 'release-notes/java/java-2_2_36',
                 'release-notes/java/java-2_2_35',
@@ -3865,7 +3866,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_32',
                 'release-notes/java/java-2_2_31',
                 'release-notes/java/java-2_2_30',
-                'release-notes/java/java-2_2_29',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3954,7 +3954,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3963,7 +3963,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_7_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_6_10',
                 'release-notes/python/python-1_6_9',
@@ -4126,7 +4126,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4134,18 +4134,18 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_0_0',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_1_2',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-2_1_1',
+                'release-notes/db/dbx-2_1_0',
+                'release-notes/db/dbx-2_0_2',
+                'release-notes/db/dbx-2_0_1',
+                'release-notes/db/dbx-2_0_0',
                 'release-notes/db/dbx-1_9_5',
                 'release-notes/db/dbx-1_9_4',
                 'release-notes/db/dbx-1_9_3',
                 'release-notes/db/dbx-1_9_2',
-                'release-notes/db/dbx-1_9_1',
-                'release-notes/db/dbx-1_9_0',
-                'release-notes/db/dbx-1_8_2',
-                'release-notes/db/dbx-1_8_1',
-                'release-notes/db/dbx-1_8_0',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -4231,7 +4231,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              // className: 'new',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
@@ -5712,6 +5712,12 @@ const sidebars = {
           type: 'doc',
           id: 'features/apache-pulsar-introduction',
           label: 'Apache Pulsar',
+          className: 'beta' 
+        },
+        {
+          type: 'doc',
+          id: 'features/vcenter-introduction',
+          label: 'vCenter',
           className: 'beta' 
         },
         // 'kafka/install-agent',

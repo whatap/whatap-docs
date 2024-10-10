@@ -1,0 +1,35 @@
+### Checking the correlated project metrics
+
+If you have created a database monitoring (DPM) project and an application monitoring (APM) project, you can relate the two projects for monitoring the data collected from DPM in the APM project. You can see performance metrics of the correlated projects while querying transactions via the <Cmdname sid="BTN08519" className="uitext" /> feature on the upper right of the <Cmdname sid="hitmap_transaction" className="uitext" /> section.
+
+The <Cmdname sid="BTN08519" className="uitext" /> feature is useful when analyzing transactions in the APM project. When you found a slow SQL, it is difficult to determine exactly in which DB the problem occurred in the environment using multiple similar DBs.
+
+<ImgLang img="linked-project-db-hitmap.png" desc="Hitmap" />
+
+1. Set the time and <Cmdname sid="application" className="uitext" /> for viewing the transactions, and then select ![Search Icon](/img/ico-btn-search.png).
+
+2. In the <Cmdname sid="hitmap_transaction" className="uitext" /> section, select <Cmdname sid="BTN08519" className="uitext" /> on the upper right.
+
+3. A new window appears where you can check the metrics for the correlated project.
+
+   <ImgLang img="linked-project-db-instance-dahboard.png" desc="Correlated Project" />
+
+Select the correlated project from the left list and then check the metrics in the <Cmdname sid="TTL08442" className="uitext" /> section. 
+
+<ImgLang img="linked-project-db-instance-dahboard-select-instance.png" desc="Correlated Project" />
+
+To navigate to the dashboard menu for a selected project, select an instance and then click <Cmdname sid="BTN08444" className="uitext" /> on the upper right. Go to <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />.
+
+:::note
+
+- The <Cmdname sid="hitmap_transaction" className="uitext" /> button in the <Cmdname sid="BTN08519" className="uitext" /> section appears only when there is an associated project. For more information about adding a correlated project, see [the following](linked-projects#addlinkproject).
+
+- You can add a project by selecting <Cmdname sid="TTL07151" className="uitext" /> at the top of the left <Cmdname sid="add" className="uitext" /> list.
+
+- The <Cmdname sid="BTN08444" className="uitext" /> button is disabled when <Cmdname sid="all" className="uitext" /> is selected.
+
+  <ImgLang img="linked-project-db-instance-dahboard-not-allowed-btn.png" desc="Instance Dashboard" />
+
+- Depending on the database product type, you can navigate to the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrend" className="uitext" /> menu.
+
+:::

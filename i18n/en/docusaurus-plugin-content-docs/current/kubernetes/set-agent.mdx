@@ -362,3 +362,46 @@ Configure necessary settings in _whatap.conf_ for monitoring applications such a
   In the following **_Node details_** screen as an example, the update cycle of the **_container_** list is affected by the `container` metrics.
 
   ![Node Detail](/img/k8s-set-agent-node-detail.png)
+
+{/* >
+:::note 
+
+The _whatap.conf_ file can be managed using the ConfigMap function in the user Kubernetes environment.
+
+:::
+*/}
+
+{/* >
+
+<div class='k8s-table-set-agent'>
+
+whatap-node-helper
+
+| Option name                                | Default          | Type   | Description                                                                                                          | Remarks                                                                                                                                                                                          |
+| ------------------------------------------ | ---------------- | ------ | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `collect_volume_detail_enabled`            | `true`           | bool   | In the node agent, use the `exec df` command for all containers to enable searching the container volume information | It enables the function to collect storage usage and volume data for all containers running on the node.                                                                                         |
+| `inject_container_id_to_apm_agent_enabled` | `true`           | bool   | It enables container ID injection using `exec` in the WhaTap APM container                                           | The ID of a container identified by WhaTap APM can be automatically extracted and injected into the APM tool, which can be used to associate the performance monitoring data with the container. |
+| `debug`                                    | `false`          | bool   | Whether the debug mode is active or not                                                                              | Set the log level to `DEBUG` when the debugging mode is enabled, otherwise to `INFO`.                                                                                                            |
+| `kube_config_path`                         | `~/.kube/config` | string | Kubernetes configuration file path                                                                                   | If not set, use _~/.kube/config_.                                                                                                                                                                |
+| `log_sys_out`                              | `true`           | bool   | Setting the log system output                                                                                        | When it is set to `true`, logging is left simultaneously in the standard output (stdOut) and a file. Any changes are immediately reflected in the logging system.                                |
+
+whatap-node-helper 
+
+| Option name                          | Default                                             | Type   | Description                                                                               | Remarks                                                                                                                                                                                                            |
+| ------------------------------------ | --------------------------------------------------- | ------ | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `shutdown`                           | `false`                                             | bool   | Forcibly disconnect the collection server (communication stop).                           | -                                                                                                                                                                                                                  |
+| `license`                            | -                                                   | string | Agents are identified using the license issued to the project.                            | -                                                                                                                                                                                                                  |
+| `whatap.server.host`                 | `13.124.11.223` or `13.209.172.35`                  | string | IP of the collection server.                                                              | `delimiter` `/:`                                                                                                                                                                                                   |
+| `whatap.server.port`                 | `6600`                                              | number | Data receiving port of the collection server.                                             | -                                                                                                                                                                                                                  |
+| `ONODE_NAME`                         | `NODE_NAME` or `NODE_IP` environment variable value | string | Name to identify the agent node.                                                          | The environment variable (`NODE_NAME` or `NODE_IP`) is used.                                                                                                                                                       |
+| `tcp_connection_timeout`             | `3000`                                              | number | Timeout time when connecting whatap-master-agent to the collection server socket.         | -                                                                                                                                                                                                                  |
+| `tcp_so_timeout`                     | `60000`                                             | number | Data sending/receiving timeout time after socket connection.                              | -                                                                                                                                                                                                                  |
+| `debug`                              | `false`                                             | bool   | Whether the debug mode is active or not                                                   | -                                                                                                                                                                                                                  |
+| `gpuEnabled`                         | `false`                                             | bool   | Whether GPU monitor is active or not.                                                     | -                                                                                                                                                                                                                  |
+| `count_interval`                     | `5000`                                              | number | Cycle to transmit metrics (`kube pod`, `container`) to the collection server.             | This option may affect the on-screen data refresh cycle. For more information, see [Screen components affected by each metric](#k8s-affected-comp-by-metrics). (unit: ms)                                          |
+| `collect_interval`                   | `5000`                                              | number | Cycle for the agent to request apiserver to collect metrics (`kube_pod`, `container`).    | This option may affect the on-screen data refresh cycle. For more information, see [Screen components affected by each metric](#k8s-affected-comp-by-metrics). (unit: ms)                                          |
+| `collect_apiserver_metric_by_leader` | `false`                                             | bool   | If the option is enabled, the node agent delegates metrics collection to the master agent | It requires to enable the `collect_apiserver_metric_by_leader` option of whatap-master-agent. Through metric collection delegation, the apiserver load generated by the existing whatap-node-agent can be reduced. |
+
+</div>
+
+*/}

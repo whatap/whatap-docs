@@ -5,28 +5,21 @@ description: whatap.confファイルを使用してデータベースエージ�
 keywords:
   - SQL Server
   - データベース
-  - データベースモニタリング
 ---
-
-{/* Postgresql, Oracle 지원 프로세스 모니터링 */}
-{/* {@include: ../common-items/_db-agent-xos-process-monitoring.mdx}*/}
-
-{/* 서버 이름을 임의로 부여해 관리하기 */}
-import Dbservernaming from "../common-items/_db-server-naming.mdx";
-
-<Dbservernaming />
-
-{/* AES 256 암호화 적용 */}
-import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
-
-<Dbaes256encrypt />
 
 {/* 에이전트 업데이트*/}
 import Dbupdateagent from "../common-items/_db-update-agent.mdx";
 
 <Dbupdateagent />
 
-{/* 에이전트 삭제 */}
-import Dbuninstallagent from "../common-items/_db-uninstall-agent.mdx";
+## エージェント削除
 
-<Dbuninstallagent />
+{/* 에이전트 설치 서버에서 삭제하기 */}
+import Dbuninstallagentinstalledserver from "../common-items/_db-uninstall-agent-installed-server.mdx";
+
+<Dbuninstallagentinstalledserver />
+
+{/* 서비스 화면에서 삭제하기 */}
+import Dbunistallagentinservice from "../common-items/_db-unistall-agent-in-service.mdx";
+
+<Dbunistallagentinservice />

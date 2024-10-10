@@ -8,17 +8,9 @@ keywords:
   - Parallel query tree
 ---
 
-Home > Select Project > ***Analysis*** > ***Parallel Query Tree***
+import DBpqtree from "../common-items/_db-pq-tree.mdx";
 
-***Parallel Query Tree*** provides the function to analyze the trend of parallel queries per day. The slave processes that perform actual tasks and the coordinator processes that assign tasks to them are distinguished, and overall executions are displayed in an easy-to-understand manner. It can help determine what purpose it was used for by providing information about parallel queries performed at a specific time point.
-
-## Basic screen guide
-
-<ImgLang img="db-pq-tree.png" desc="Parallel Query Tree" />
-
-In ![number1](/img/number-01.png) ***Instance***, select the instance to search parallel queries from, and then ![number2](/img/number-02.png) set the ***date***, ***start time***, and ***end time***.
-
-You can check the trend of parallel queries that meet the set conditions through a graph chart, and the structure of coordinators and slaves is represented in the form of tree.
+<DBpqtree />
 
 {/* 컬럼 정보 안내 */}
 import Oraclecolumn from "../common-items/_db_oracle-column.mdx";

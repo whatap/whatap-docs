@@ -33,7 +33,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 ## エージェントダウンロード
 
-**アクセスキー**を発給して<Cmdname sid="urlcheck-agent-setup-1-subject" className="uitext" />セクションに移動してください。 次のコードを実行してエージェントをインストールしてください。
+**アクセスキー**を発行して<Cmdname sid="urlcheck-agent-setup-1-subject" className="uitext" />セクションに移動します。次のコードを実行してエージェントをインストールします。
 
 ```bash
 pip install whatap-python
@@ -63,13 +63,13 @@ Pythonエージェントファイルは、アプリケーションモニタリ�
 
 <FiletreeItem name="conf / control" type="folder">Pythonエージェントの設定と制御を担当するファイルで構成されたディレクトリです。</FiletreeItem>
 
-<FiletreeItem name="net / pack" type="folder">UDP通信に関連するファイルで構成されたディレクトリです。収集したデータをサーバーに送信する役割を果たします。</FiletreeItem>
+<FiletreeItem name="net / pack" type="folder">UDP通信に関連するファイルで構成されたディレクトリです。収集したデータをサーバーに送信する役割を行います。</FiletreeItem>
 
 <FiletreeItem name="trace" type="folder">アプリケーションごとに各種のトランザクション情報を収集するファイルで構成されたディレクトリです。</FiletreeItem>
 
 <FiletreeItem name="paramkey.txt" type="file">
   
-  追跡したトランザクションのトレース情報として収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。セキュリティキーをファイルに保存し、実際に収集されたデータをブラウザで確認したい時、ファイルに保存しておいたセキュリティキーを入力することで照会できます。ファイルの内容を直接変更して、セキュリティ キーを修正できます。関連オプションの詳細については、次の文書を参照してください。
+  追跡したトランザクションのトレース情報から収集したHTTPとSQLデータのパラメータ情報を確認するために使用します。セキュリティキーをファイルに保存し、実際に収集されたデータをブラウザで確認する際に、保存したセキュリティキーを入力し、照会できます。ファイルの内容を直接変更して、セキュリティ キーを修正できます。関連オプションの詳細については、次の文書を参照してください。
 
   [profile_http_parameter_enabled](agent-transaction#profile_http_parameter)
 
@@ -93,7 +93,7 @@ $ export WHATAP_HOME=[PATH]
 
 ### アクセスキーと収集サーバーのIP設定
 
-アクセスキー及び収集サーバーのIP設定のために`whatap-setting-config`コマンドを実行してください。
+アクセスキー及び収集サーバーのIP設定のために`whatap-setting-config`コマンドを実行します。
 
 ```bash
 $ whatap-setting-config \
@@ -105,7 +105,7 @@ $ whatap-setting-config \
 
 ### 設定表示
 
-`$WHATAP_HOME`に指定した経路に*whatap.conf* ファイルが作成・設定されます。次のコマンドを実行しなさい*whatap.conf*ファイルが作成されているか確認してください。
+`$WHATAP_HOME`に指定した経路に*whatap.conf* ファイルが作成・設定されます。次のコマンドを実行しなさい*whatap.conf*ファイルが作成されているか確認してください。
 
 ```bash
 $ cat $WHATAP_HOME/whatap.conf
@@ -138,9 +138,9 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::
 
-## アプリケーションサーバーの環境別の適用
+## アプリケーションサーバーの環境ごとに適用
 
-アプリケーションサーバーの環境によって、適用する方法が異なる場合があります。ユーザーの環境に合わせた適用方法を進めてください。
+アプリケーションサーバーの環境によって、適用する方法が異なる場合があります。ユーザーの環境に合わせた適用方法で進めてください。
 
 <Tabs>
 
@@ -163,7 +163,7 @@ $ whatap-start-agent python manage.py runserver
 $ whatap-start-agent uwsgi --ini myapp.ini
 ```
 
-サービスにuWSGIを登録してアプリケーションを実行する場合は、次の例題コードを参照してください。
+サービスにuWSGIを登録してアプリケーションを実行する場合は、次のサンプルコードを参照してください。
 
 ```bash title="/etc/init.d/uwsgi"
 description "uWSGI application server handling myapp"
@@ -193,7 +193,7 @@ do_start(){
 
 :::note
 
-- ユーザー(User)を変更するなら`WHATAP_HOME`環境変数を追加します。
+- ユーザー(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
 
 - 仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加します。
 
@@ -213,7 +213,7 @@ do_start(){
 $ whatap-start-agent gunicorn myapp.wsgi
 ```
 
-サービスにGunicornを登録してアプリケーションを実行する場合は、次の例題コードを参照してください。
+サービスにGunicornを登録してアプリケーションを実行する場合は、次のサンプルコードを参照してください。
 
 ```bash title="/etc/init.d/gunicorn"
 description "gunicorn application server handling myapp"
@@ -244,7 +244,7 @@ do_start(){
 
 :::note
 
-- ユーザー(User)を変更するなら`WHATAP_HOME`環境変数を追加します。
+- ユーザー(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
 
 - 仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加します。
 
@@ -258,7 +258,7 @@ do_start(){
 
 <TabItem value="supervisor" label="Supervisor">
 
-**Supervisor**環境では、適用するために_supervisor.conf_ファイルに次の設定を追加してください。
+**Supervisor**環境では、適用するために_supervisor.conf_ファイルに次の設定を追加します。
 
 ```ini title="supervisor.conf"
 [program:app-uwsgi]
@@ -271,7 +271,7 @@ command = /usr/sbin/nginx
 
 :::note
 
-- ユーザー(User)を変更するなら`WHATAP_HOME`環境変数を追加します。
+- ユーザー(User)を変更する場合は、`WHATAP_HOME`環境変数を追加する必要があります。
 
 - 仮想環境を使用する場合は、エージェントの開始コマンドを絶対パスとして追加します。
 
@@ -372,11 +372,11 @@ ps -ef | grep whatap_python
 
 - **インストール問題の解決**
 
-  エージェントのインストール時に発生する可能性のある様々な問題と、これを解決するための具体的な指針を提供します。詳細については、[次の文書](agent-troubleshooting)を参照してください。
+  エージェントをインストールする際に発生する可能性のある様々な問題と、これを解決するための具体的なガイドを提供します。詳細については、[次の文書](agent-troubleshooting)を参照してください。
 
 - **エージェント設定**
 
-  エージェント設定(*whatap.conf*)ファイルにオプションを適用して、モニタリングのための様々な機能を提供します。デフォルト設定から、サーバーの接続とデータ転送の設定、複数のアプリケーションサーバーの設定ファイルの管理方法、トランザクションの追跡などが含まれます。詳細については、[次の文書](set-agent)を参照してください。
+  エージェント設定(*whatap.conf*)ファイルにオプションを適用することで、モニタリングの様々な機能を提供します。デフォルト設定から、サーバーの接続とデータ転送の設定、複数のアプリケーションサーバーの設定ファイルの管理方法、トランザクションの追跡などが含まれます。詳細については、[次の文書](set-agent)を参照してください。
 
 - **モニタリングの開始**
 

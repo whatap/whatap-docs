@@ -11,7 +11,7 @@ keywords:
 
 ホーム画面 > プロジェクト選択 > <Cmdname sid="cluster" className="uitext" /> > <Cmdname sid="node_detail" className="uitext" />
 
-***ノード詳細***画面は、上部の4つのチャートとノード内の***コンテナ***及び***Pod***詳細情報で構成されています。 ノードセレクタを通じて、照会を希望するノードを選択できます。
+***ノード詳細***画面は、上部の4つのチャートとノード内の***コンテナ***及び***Pod***詳細情報で構成されています。 ノードセレクタを通じて、照会するノードを選択できます。
 
 <ImgLang img='k8s-resource-node-detail.png' desc='ノード詳細画面' />
 
@@ -77,7 +77,7 @@ keywords:
 
 #### Pod
 
-***Pod***タブの選択時、Pod詳細情報を照会します。 ***コンテナ***タブの選択時、ノード内のコンテナ詳細情報の上部で、`cpu_quota`、`cpu_request`、`cpu_total_milli`、`mem_limit`、`mem_request`、`mem_working_set`メトリクスの合計を確認できます。 
+***Pod***タブの選択時、Podの詳細情報を照会します。 詳細情報画面の上段から `cpu_quota`、`cpu_request`、`cpu_total_milli`、`mem_limit`、`mem_request`、`mem_working_set`メトリクスの合計を確認できます。 
 
 - 希望するカラムを選択すると、そのカラムを基準にPod一覧をソートして照会することができます。 
 
@@ -88,7 +88,7 @@ keywords:
 | 項目            | 説明                             |
 | ------------- | ------------------------------ |
 | Pod           | Podの固有の名前                      |
-| PodIp         | Pod固有のIPアドレス                   |
+| PodIp         | Podの固有のIPアドレス                  |
 | Namespace     | Podの属するネームスペース                 |
 | Node          | Podが実行中のノード名                   |
 | ConRestartCnt | コンテナの再起動回数                     |

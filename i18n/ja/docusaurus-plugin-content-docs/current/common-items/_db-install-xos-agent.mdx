@@ -1,4 +1,4 @@
-## 付加エージェント(XOS) のインストール及びその他のオプションを適用する{#apply-xos-agent}
+## XOSエージェントのインストール及びその他のオプションを適用する{#apply-xos-agent}
 
 データベースサーバーのリソースをさらにモニタリングする場合は、データベースサーバーに別のXOSエージェントを実行してデータを収集できます。
 
@@ -6,9 +6,9 @@
 
 - x86アーキテクチャで動作するOS環境にのみ適用されます。
 
-- 付加エージェントのインストール過程は、必須ではなく**選択事項**です。
+- 追加エージェントのインストールは、必須ではなく**選択事項**です。
 
-<InDoc product="postgresql,mysql,oracle,cubrid,redis,mongodb">
+<InDoc product="postgresql,mysql,oracle,oracle-v1,cubrid,redis,mongodb,altibase,mssql">
 
 - XOSエージェント設定オプションの詳細については、[次の文書](agent-xos-settings)を参照してください。
 
@@ -16,14 +16,14 @@
 
 :::
 
-<InDoc product="postgresql,mysql,oracle,cubrid,redis">
+<InDoc product="postgresql,mysql,oracle,oracle-v1,tibero,altibase,altibase-v1,mssql">
 
 <Tabs groupId="dbXos">
 <TabItem value="xos" label="XOS">
 
 <ImgLang img='xos-agent.png' desc='' />
 
-1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定してください。
+1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定します。
 
    ```ini title='whatap.conf'
    xos=1
@@ -32,7 +32,7 @@
 
 2. *xos*フォルダー(`/解凍されたフォルダ/xos/`)をデータベースサーバーに移動してください。
 
-3. データベースサーバーに移動した*xos*経路の*xos.conf*ファイルに次のオプションを設定してください。
+3. データベースサーバーに移動し、*xos*パスの*xos.conf*ファイルに次のオプションを設定します。
 
    ```ini title='xos.conf'
    dbx_ip={DB_Agent_IP}
@@ -43,17 +43,17 @@
 
    :::tip
 
-   <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>DB Agent IP</UI>、<UI>DB Agent Port</UI>項目にDB情報を入力すると、エージェントオプションを自動生成することができます。
+   <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>DB Agent IP</UI>、<UI>DB Agent Port</UI>項目にDB情報を入力すると、エージェントオプションを自動生成できます。
 
    :::
 
-4. XOSエージェントの実行権限を付与してください。
+4. XOSエージェントの実行権限を付与します。
 
    ```bash
    chmod +x ./whatap.agent.xos*
    ```
 
-5. XOSエージェントを実行してください。
+5. XOSエージェントを実行します。
 
    ```bash
    ./start.sh
@@ -63,7 +63,7 @@
 
 - DBXエージェントでモニタリングしたデータを転送するために`dbx_port`に設定したポート(default 3002)が開放されている必要があります。 (**UDP Outbound**)
 
-- XOSエージェントをバックグラウンドで実行するには、_./startd.sh_ファイルを実行してください。
+- XOSエージェントをバックグラウンドで実行するには、_./startd.sh_ファイルを実行します。
 
 :::
 
@@ -81,7 +81,7 @@ cloud_watch_interval=60
 cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
 ```
 
-AWS CloudWatch指標照会のために次のコマンドを実行してください。 `DB_Instance_Name`項目を変更してコマンドを実行してください。
+AWS CloudWatch指標照会のために次のコマンドを実行します。 `DB_Instance_Name`項目を変更してコマンドを実行します。
 
 ```bash
 aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIdentifier,Value={DB_Instance_Name}
@@ -108,11 +108,11 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
 </InDoc>
 
-<InDoc product="altibase,mongodb,mssql,tibero">
+<InDoc product="redis,mongodb,cubrid">
 
 <ImgLang img='xos-agent.png' desc='' />
 
-1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定してください。
+1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定します。
 
    ```ini title='whatap.conf'
    xos=1
@@ -121,7 +121,7 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
 2. *xos*フォルダー(`/解凍されたフォルダ/xos/`)をデータベースサーバーに移動してください。
 
-3. データベースサーバーに移動した*xos*経路の*xos.conf*ファイルに次のオプションを設定してください。
+3. データベースサーバーに移動し、*xos*パスの*xos.conf*ファイルに次のオプションを設定します。
 
    ```ini title='xos.conf'
    dbx_ip={DB_Agent_IP}
@@ -132,17 +132,17 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
    :::tip
 
-   <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>DB Agent IP</UI>、<UI>DB Agent Port</UI>項目にDB情報を入力すると、エージェントオプションを自動生成することができます。
+   <Cmdname sid="side_agentInstall" className="uitext" />メニューの<UI>DB Agent IP</UI>、<UI>DB Agent Port</UI>項目にDB情報を入力すると、エージェントオプションを自動生成できます。
 
    :::
 
-4. XOSエージェントの実行権限を付与してください。
+4. XOSエージェントの実行権限を付与します。
 
    ```bash
    chmod +x ./whatap.agent.xos*
    ```
 
-5. XOSエージェントを実行してください。
+5. XOSエージェントを実行します。
 
    ```bash
    ./start.sh
@@ -152,7 +152,7 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
 - DBXエージェントでモニタリングしたデータを転送するために`dbx_port`に設定したポート(default 3002)が開放されている必要があります。 (**UDP Outbound**)
 
-- XOSエージェントをバックグラウンドで実行するには、_./startd.sh_ファイルを実行してください。
+- XOSエージェントをバックグラウンドで実行するには、_./startd.sh_ファイルを実行します。
 
 :::
 

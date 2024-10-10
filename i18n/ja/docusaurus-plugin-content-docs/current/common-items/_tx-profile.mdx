@@ -4,11 +4,11 @@
 
 <ImgLang img='apm-tx-search.png' desc='TX検索' />
 
-照会時間を設定した上で<Cmdname sid="application" className="uitext" />オプションで照会対象を選択してください。 ![検索アイコン](/img/ico-btn-search.png)ボタンを選択すると、検索結果がテーブルに表示されます。 結果リストから希望する項目を選択すると<Cmdname sid="TTL06527" className="uitext" />ウィンドウが表示されます。 <Cmdname sid="TTL06527" className="uitext" />ウィンドウを使用したトランザクショントレースの詳細な分析に関する詳細は、[次の文書](trs-profile#details)を参照してください。
+照会時間を設定した上で<Cmdname sid="application" className="uitext" />オプションで照会対象を選択します。 ![検索アイコン](/img/ico-btn-search.png)ボタンを選択すると、検索結果がテーブルに表示されます。 結果リストから希望する項目を選択すると<Cmdname sid="TTL06527" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06527" className="uitext" />画面を使用したトランザクショントレースの分析に関する詳細は、[次の文書](trs-profile#details)を参照してください。
 
 :::note
 
-- エラー状態のトランザクションのみを検索するには、<Cmdname sid="show_only_error" className="uitext" />をクリックし![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+- エラー状態のトランザクションのみを検索するには、<Cmdname sid="show_only_error" className="uitext" />をクリックし![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
 - 検索条件によってレスポンス遅延が発生する可能性があるため、検索時間をできるだけ短く設定することをお勧めします。
 
@@ -18,11 +18,11 @@
 
 <ImgLang img='whatap_application_analysis_tx_profile_column.png' desc='カラム選択' />
 
-結果照会時、![カラム選択アイコン](/img/ico-column-set.svg) <Cmdname sid="column_select" className="uitext" />ボタンをクリックすると、確認が必要なカラムを適切に選択することができます。
+結果照会時、![カラム選択アイコン](/img/ico-column-set.svg) <Cmdname sid="column_select" className="uitext" />ボタンをクリックすると、確認が必要なカラムを適切に選択できます。
 
 ## フィルター適用
 
-詳細検索のためにフィルターを利用してください。 複数の条件によるデータの検索方法を提供します。 フィルターを設定して![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+詳細検索のためにフィルターを利用してください。 複数の条件によるデータの検索方法を提供します。 フィルターを設定して![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
 :::note
 
@@ -34,13 +34,13 @@
 
 <ImgLang img='apm-tx-search-elapsed-time.png' desc='経過時間' />
 
-トランザクションのレスポンス時間を基準に検索します。 基準以上と未満の2つの値を入力して検索します。
+トランザクションの応答時間を基準に検索します。 基準から以上と未満の2つの値を入力して検索します。
 
 ### <Cmdname sid="TTL06088" />
 
 <ImgLang img='apm-tx-search-error-message.png' desc='エラーメッセージ' />
 
-トランザクションのエラーメッセージに基づいて検索します。 デフォルト状態ではエラー関連のカラムが表示されない場合があります。 カラムを選択して確認してください。
+トランザクションのエラーメッセージで検索します。 デフォルト状態ではエラー関連のカラムが表示されない場合があります。 カラムを選択します。
 
 :::note
 
@@ -58,25 +58,25 @@
 
 <ImgLang img='apm-tx-search-sql-count.png' desc='SQL件数' />
 
-トランザクションごとのSQL実行件数が基準で入力した自然数以上に該当するトランザクションを検索します。 例外的に過度な数のSQLを呼び出すトランザクションを検索するときに利用します。
+トランザクションごとのSQL実行件数が基準で入力した自然数以上に該当するトランザクションを検索します。 例外的に多い数のSQLを呼び出すトランザクションを検索するときに利用します。
 
 ### <Cmdname sid="TTL06094" />
 
 <ImgLang img='apm-tx-search-sql-fetch-count.png' desc='SQLフェッチ数' />
 
-SQL実行後、DBパッチ件数を基準に入力した自然数以上に該当するトランザクションを検索します。 過度なデータパッチを実行するトランザクションを検索するときに利用します。
+SQL実行後、DBフェッチ件数を基準に入力した自然数以上に該当するトランザクションを検索します。 過度なデータフェッチを実行するトランザクションを検索するときに利用します。
 
 ### <Cmdname sid="TTL06918" />
 
 <ImgLang img='apm-tx-search-transaction.png' desc='トランザクション' />
 
-トランザクションに基づいて検索します。 入力した検索文字列は、含めるかどうか(部分一致)で比較検索します。
+トランザクションに基づいて検索します。 入力した検索文字列は、含まれているか(部分一致)で比較し、検索します。
 
 ### <Cmdname sid="TTL06081" />
 
 <ImgLang img='apm-tx-search-client-ip.png' desc='IP' />
 
-クライアントIPに基づいてトランザクションを検索します。 ただし、IP文字列は、PREFIX比較(前方一致)で検索します。
+クライアントIPに基づいてトランザクションを検索します。 ただし、IPは、PREFIX比較(前方一致)で検索します。
 
 ### <Cmdname sid="TTL06101" />
 
@@ -108,7 +108,7 @@ Referer文字列ベースでトランザクションを検索します。
 
 <ImgLang img='apm-tx-search-tx-id.png' desc='TX ID' />
 
-トランザクションIDベースでトランザクションを検索（完全一致）します。 トランザクションIDの場合、検索インデックスが作成されているため、高速で検索できます。
+トランザクションIDベースでトランザクションを検索(完全一致)します。 トランザクションIDの場合、検索インデックスが作成されているため、高速で検索できます。
 
 :::note
 
@@ -142,7 +142,7 @@ Referer文字列ベースでトランザクションを検索します。
 
 <ImgLang img='apm-tx-search-wclientid.png' desc='クライアントID' />
 
-クライアントID(`wClientId`)は、WhaTapエージェントがユーザーを区分するために付与するIDです。 このID値に基づいてトランザクションを検索(完全一致)します。 検索のための個別のインデックスはありません。
+クライアントID(`wClientId`)は、WhaTapエージェントがユーザーを区分するために付与するIDです。 このID値に基づいてトランザクションを検索(完全一致)します。 検索のためのインデックスはありません。
 
 :::note
 
@@ -176,17 +176,17 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 :::
 
-## 検索結果をダウンロードする
+## 検索結果のダウンロード
 
-ユーザーが設定したフィルター条件に従って検索された結果をCSVファイルにダウンロードすることができます。 
+ユーザーが設定したフィルター条件に従って検索された結果をCSVファイルにダウンロードできます。 
 
-1. ![検索アイコン](/img/ico-btn-search.png)ボタンをクリックして検索結果を照会してください。
+1. ![検索アイコン](/img/ico-btn-search.png)ボタンをクリックして検索結果を照会します。
 
 2. ![ダウンロードアイコン](/img/ic-csv-download-ms.svg)ボタンをクリックします。
 
-3. 最大CSV行数を入力してください。 入力した行数だけ、照会された結果を保存することができます。
+3. 最大CSV行数を入力します。 入力した行数だけ、照会された結果を保存することができます。
 
-4. <Cmdname sid="download" className="uitext" />ボタンを選択するとCSVファイルにダウンロードします。
+4. <Cmdname sid="download" className="uitext" />ボタンを選択するとCSVファイルでダウンロードします。
 
 :::note
 

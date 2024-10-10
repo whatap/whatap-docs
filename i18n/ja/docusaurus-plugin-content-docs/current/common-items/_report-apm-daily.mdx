@@ -24,7 +24,7 @@ import Csvdownload from "../common-items/_csv-download.mdx";
 
 :::
 
-- <Cmdname sid="overview" className="b600" report />: アプリケーションの主要な性能指標を確認できます。
+- <Cmdname sid="overview" className="b600" report />: アプリケーションの主な性能指標を確認できます。
 
 - <Cmdname sid="peaktime_performance_summary" className="b600" report/>: 一日の処理量(TPS)が最も高かった時間とその時間の指標値を確認できます。
 
@@ -40,7 +40,7 @@ import Csvdownload from "../common-items/_csv-download.mdx";
 
   :::
 
-- <Cmdname sid="daily_hitmap" className="b600" report/>: 1日の時間帯別のトランザクション分布とエラー発生状況を一目で把握できます。 グラフのx軸は各トランザクションの終了時間、y軸は応答時間(秒)を意味します。 正常トランザクションの場合は<span class='ntrs'>青</span>として表示され、エラーが発生した場合は<span class='etrs'>赤</span>で表示されます。
+- <Cmdname sid="daily_hitmap" className="b600" report/>: 1日の時間帯別のトランザクション分布とエラー発生状況を一目で把握できます。 グラフのx軸は各トランザクションの終了時間、y軸は応答時間(秒)を意味します。 正常トランザクションの場合は<span class='ntrs'>青</span>で表示され、エラーが発生した場合は<span class='etrs'>赤</span>で表示されます。
 
   <ImgLang img='app_daily_report_03.png' desc='' />
 
@@ -48,7 +48,7 @@ import Csvdownload from "../common-items/_csv-download.mdx";
 
 - <Cmdname sid="transaction" className="b600" report/> **TOP 10**: <Cmdname sid="txcount" className="b600" report/>、<Cmdname sid="error_cnt" className="b600" report/>、<Cmdname sid="res_time_avg" className="b600" report/>基準で上位10件のトランザクションを確認できます。
 
-- <Cmdname sid="top_stack" className="b600" report/> **TOP 10**: Stack Trace像のステップに基づいて、ステップ間の呼び出し頻度を割合で計算した情報を簡素化して確認できます。
+- <Cmdname sid="top_stack" className="b600" report/> **TOP 10**: Stack Trace上のステップに基づいて、ステップ間の呼び出し頻度を割合で計算した情報をまとめて確認できます。
 
   :::note
 
@@ -91,7 +91,7 @@ import Csvdownload from "../common-items/_csv-download.mdx";
 
 ### 日次レポート：メトリクス推移(平均/最大) {#A00_DailyReportTag}
 
-アプリケーションの様々な性能指標を時系列チャートで提供するレポートです。 各指標の平均および最大値を視覚的に表現します。 これにより、システムの性能推移をモニタリングし、性能の最適化と問題解決に必要なデータとして活用できます。
+アプリケーションの様々な性能指標を時系列チャートで提供するレポートです。 各指標の平均および最大値を視覚的に表示します。 これにより、システムの性能推移をモニタリングし、性能の最適化と問題解決に必要なデータとして活用できます。
 
 チャートのタイトルは、**Category[Field]**形式で構成されています。 アプリケーションの性能指標の詳細は、[次の文書](metrics-app)を参照してください。
 
@@ -109,11 +109,11 @@ import Csvdownload from "../common-items/_csv-download.mdx";
 
 ![Custom report](/img/apm-custom-report.png)
 
-1. 画面の上の<Cmdname sid="report" className="uitext" />で<Cmdname sid="A012_AppDailyOidCustomReport" className="uitext" report />を選択してください。
+1. 画面の上の<Cmdname sid="report" className="uitext" />で<Cmdname sid="A012_AppDailyOidCustomReport" className="uitext" report />を選択します。
 
-2. <Cmdname sid="layout_setting" className="uitext" />で希望する段数を設定してください。
+2. <Cmdname sid="layout_setting" className="uitext" />で希望する段数を設定します。
 
-3. 希望する指標を選択してください。 全体を選択するには、<Cmdname sid="select_all" className="uitext" />をクリックします。
+3. 照会する指標を選択します。 全体を選択するには、<Cmdname sid="select_all" className="uitext" />をクリックします。
 
 4. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
 

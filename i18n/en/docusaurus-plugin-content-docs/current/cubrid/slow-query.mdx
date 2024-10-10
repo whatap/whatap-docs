@@ -1,0 +1,41 @@
+---
+id: slow-query
+title: Slow Query
+description: You can analyze slow queries after identifying active sessions at a specific time point.
+keywords:
+  - CUBRID
+  - Instance
+  - Dashboard
+  - Database Monitoring
+  - Slow Query
+---
+
+{/* 개요 */}
+import Dbslowquerydesc from "../common-items/_db-slow-query-desc.mdx";
+
+<Dbslowquerydesc />
+
+## Before starting
+
+To use the <Cmdname sid="side_slowQueryLog" className="uitext" /> menu, set the following in the *cubrid_broker.conf* file.
+
+```ini title="cubrid_broker.conf"
+SLOW_LOG=ON
+LONG_QUERY_TIME=3 
+```
+
+:::note
+
+To monitor slow queries, be sure to install the XCUB agent on the DB server. For more information about XCUB agent installation, see [the following](install-agent#setxcubagent).
+
+:::
+
+{/* 기본 화면 안내 */}
+import Dbslowquerybasic from "../common-items/_db-slow-query-basic.mdx";
+
+<Dbslowquerybasic />
+
+{/*쿼리 자세히 보기*/}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails level={2} />

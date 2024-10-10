@@ -3,33 +3,26 @@ id: analysis-lock-and-deadlock
 title: ロックツリー
 description: 1日に発生したロックの推移を分析し、デッドロック状態のクエリを確認できます。
 keywords:
-  - MySQL
+  - CUBRID
   - データベース
   - Lock
   - ロックツリー
 ---
 
-import ProdImg from '@site/src/components/ChangeImgName.js';
-import Xclude from '@site/src/components/XcludeDoc.js';
-import InDoc from '@site/src/components/InDoc.js';
+import V2Note from "../common-items/_import_v2-note.mdx";
 
-{/* 개요 */}
-import Analysislockdesc from "../common-items/_analysis-lock-desc.mdx";
-
-<Analysislockdesc />
+<V2Note product="CUBRID" />
 
 {/* 락트리 */}
 import Dblocktreedesc from "../common-items/_db-locktree-desc.mdx";
 
 <Dblocktreedesc />
 
-## 基本画面ガイド
-
 import Dblocktreeusingbasic from "../common-items/_db-locktree-using-basic.mdx";
 
-<Dblocktreeusingbasic />
+<Dblocktreeusingbasic level={2} />
 
 {/* 락트리 컬럼 정보 */}
-import Dbcubridinfoofcolumn from "../common-items/_db-cubrid-info-of-column.mdx";
+import DBcolumn from "../common-items/_db-cubrid-info-of-column.mdx";
 
-<Dbcubridinfoofcolumn />
+<DBcolumn />

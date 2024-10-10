@@ -1,12 +1,14 @@
+<Title hashid="basicusage" level={props.level}>基本的な使い方</Title>
+
 <ProdImg img='db-locktress-basic.png' desc='ロックツリー' />
 
-<Xclude product='postgresql,mysql,altibase'>
+<Xclude product='postgresql,mysql,altibase,mssql,cubrid'>
 
 目的の![数字1](/img/number-01.png)日付と時間を設定し、[数字2](/img/number-02.png)の一覧からインスタンスを選択してください。設定した時間にロックが発生した場合は、**_lock wait sessions_**と画面下のテーブルに表示されているデータを表示します。
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,altibase'>
+<InDoc product='postgresql,mysql,altibase,cubrid'>
 
 ![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />、![数字2](/img/number-02.png) <Cmdname sid="instance" className="uitext" />で照会する日付と時間、インスタンスを選択します。設定した時間にロックが発生した場合は、**_Lock Wait Sessions_**と下段の**_Lock Tree_**テーブルに照会されているデータが表示されます。
 
@@ -21,5 +23,23 @@
 - グラフチャートで特定時間領域をドラッグ(ドリルダウン)するほど、詳細時間のチャートとロックツリーを照会できます。
 
 - チャートで3時間以内にドラッグして、5秒単位のデータを照会できます。ただし、5秒単位のデータは、最近 1か月の範囲に限って照会できます。1か月前のデータは、5分要約データでしか閲覧できません。例えば、40 日前のロックトリックデータをドラッグ(ドリルダウン)すると、5分要約データは照会できますが、5秒データは照会できません。
+
+</InDoc>
+
+<InDoc product="mssql,tibero">
+
+1. 画面上段の <Cmdname sid="date" className="uitext" />で照会しようとする日付を選択して時間を設定します。
+
+2. モニタリングするインスタンスを選択します。 
+
+選択したインスタンスで設定した時間中に発生したロック(Lock) 状況を確認できます。
+
+もし設定された時間の間ロック(Lock)が発生した場合は、<UI>lock wait sessions</UI>グラフと下段のテーブルで特定の時間帯にロックが集中するのか、または特定のセッションが継続的にロックを誘発するのかなどを分析できます。
+
+:::note
+
+チャートで3時間以内にドラッグして、5秒単位のデータを照会できます。ただし、5秒単位のデータは、最近 1か月の範囲に限って照会できます。1か月前のデータは、5分要約データでしか閲覧できません。例えば、40 日前のロックトリックデータをドラッグ(ドリルダウン)すると、5分要約データは照会できますが、5秒データは照会できません。
+
+:::
 
 </InDoc>

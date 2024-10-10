@@ -2,11 +2,13 @@
 
 以下は、WhaTapエージェントの構成図です。 
 
-<Xclude product='cubrid,oracle-pro'><ImgLang img='agent-xos-architecture.png' desc='エージェント構成図' /></Xclude>
+<Xclude product='cubrid,oracle-pro,mssql'><ImgLang img='agent-xos-architecture.png' desc='エージェント構成図' /></Xclude>
 
-<InDoc product='cubrid'><ImgLang img='agent-xos-xcub-architecture.png' desc='エージェント構成図' /></InDoc>
+<InDoc product='cubrid'><ImgLang img='dbx-install-agent-on-agent-server-cubrid.png' desc='エージェント構成図' /></InDoc>
 
 <InDoc product="oracle-pro"><ImgLang img='dbx-install-agent-on-db-server-dma.png' desc='エージェント構成図' /></InDoc>
+
+<InDoc product="mssql"><ImgLang img="agent-architecture.png" desc="Agent" /></InDoc>
 
 <Xclude product="oracle-pro">
 
@@ -20,11 +22,11 @@
 
 </Xclude>
 
-<Xclude product='cubrid,oracle-pro'>
+<Xclude product='cubrid,oracle-pro,mssql'>
 
-- **XOS エージェント**(**付加エージェント**)
+- **XOSエージェント**(**追加エージェント**)
 
-  付加エージェントは、データベースサーバーのプロセス使用量をモニタリングできる付加オプションエージェントです。データベースサーバーのプロセス使用量をモニタリングしたい場合は、データベースサーバーに別のエージェントを表示してデータを収集できます。
+  XOSエージェントは、データベースサーバーのプロセス使用量をモニタリングできる追加のオプションエージェントです。データベースサーバーのプロセス使用量をモニタリングしたい場合は、データベースサーバーにXOSエージェントを実行してデータを収集できます。
 
   :::note
 
@@ -36,9 +38,9 @@
 
 <InDoc product='cubrid'>
 
-- **XOS エージェント／XCUB エージェント** (**付加エージェント**)
+- **XOSエージェント・XCUBエージェント** (**追加エージェント**)
 
-  付加エージェントは、データベースサーバーのプロセス使用量をモニタリングできる付加オプションエージェントです。データベースサーバーのプロセス使用量をモニタリングしたい場合は、データベースサーバーに別のエージェントを表示してデータを収集できます。
+  XOSエージェントは、データベースサーバーのプロセス使用量をモニタリングできる追加のオプションエージェントです。データベースサーバーのプロセス使用量をモニタリングしたい場合は、データベースサーバーにXOSエージェントを実行してデータを収集できます。
 
   :::note
 
@@ -58,7 +60,7 @@
 
   Queryベースで性能データを収集し、サーバーに送信します。モニタリング対象データベースサーバーにエージェントを直接インストールしなくても、別のエージェントサーバーを使用してモニタリングすることができます。
 
-- **ネットワーク**：WhaTapのモニタリングエージェントは、収集したモニタリング情報をWhaTap収集サーバーに転送するために外部通信（TCP）6600番ポートを使用します。
+- **ネットワーク**：WhaTapモニタリングエージェントは、収集したモニタリング情報をWhaTap収集サーバーに転送するために外部通信(TCP)6600番ポートを使用します。
 
 </InDoc>
 
@@ -68,6 +70,6 @@
 
   - 基本エージェント：WhaTapのモニタリングエージェントは、収集したモニタリング情報をWhaTap収集サーバーに転送するために外部通信（TCP）6600番ポートを使用します。
 
-  - 付加エージェント：エージェントをインストールしたサーバーとデータベースサーバーの間に外部通信(UDP)3002番ポートを使用します。内部ポートが衝突する場合は、`dbx_port`オプションを使用してポートを変更します。
+  - XOSエージェント：エージェントをインストールしたサーバーとデータベースサーバーの間に外部通信(UDP)3002番ポートを使用します。内部ポートが衝突する場合は、`dbx_port`オプションを使用してポートを変更します。
 
 </Xclude>
