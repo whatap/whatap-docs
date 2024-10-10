@@ -7,16 +7,15 @@ const path = require('path');
 const urls = {
     ko: [
     // 'https://whatap.github.io/whatap-docs/release-notes/service/service-2_9_x',
-    //     'https://docs.whatap.io/release-notes/service/service-2_8_x',
-    //     'https://docs.whatap.io/release-notes/service/service-1_114_x',
+        'https://docs.whatap.io/release-notes/service/service-2_9_x',
     ],
     en: [
-        'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
-        'https://docs.whatap.io/en/release-notes/service/service-2_8_x',
+        // 'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
+        'https://docs.whatap.io/en/release-notes/service/service-2_9_x',
     ],
     ja: [
-        'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
-        'https://docs.whatap.io/ja/release-notes/service/service-2_8_x',
+        // 'https://docs.whatap.io/ja/release-notes/service/service-2_7_x',
+        'https://docs.whatap.io/ja/release-notes/service/service-2_9_x',
     ]
 };
 
