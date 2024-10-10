@@ -1,0 +1,201 @@
+<Title level={props.level} hashid="column-info" >Column information guide</Title>
+
+<InDoc pages="instance-monitoring,multi-instance-monitoring,analysis-count-trend">
+
+For more information about columns, see [the link](https://technet.tmax.co.kr/upload/download/online/tibero/pver-20220224-000002/index.html).
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| Item                      | Description                                                                               |
+| ------------------------- | ----------------------------------------------------------------------------------------- |
+| `action`                  | Name of the running job.                                                                  |
+| `block_updates`           | Number of block updates.                                                                  |
+| `block_updates_sigma`     | Total number of block updates.                                                            |
+| `client_identifier`       | Client ID.                                                                                |
+| `client_info`             | Additional information of the client.                                                     |
+| `client_pid`              | PID of the client process.                                                                |
+| `command`                 | Command running in the current session.                                                   |
+| `consumed_cpu_time`       | CPU time consumed by the session.                                                         |
+| `consumer_group`          | Consumer group to which the session belongs.                                              |
+| `cpu(xos)`                | CPU utilization                                                                           |
+| `cpuusage`                | CPU usage consumed by the session.                                                        |
+| `event_name`              | Name of the waiting event.                                                                |
+| `execute_count`           | Number of SQL executions.                                                                 |
+| `execute_count_sigma`     | Total number of executions.                                                               |
+| `id1`                     | First identifier value.                                                                   |
+| `id2`                     | Second identifier value.                                                                  |
+| `ioread(xos)`             | Actual time spent reading the block (milliseconds).                                       |
+| `iowrite(xos)`            | Actual time spent writing the block (milliseconds)                                        |
+| `ipaddr`                  | Client IP address.                                                                        |
+| `logon_time`              | Time when the session logged in the database.                                             |
+| `logical_reads`           | Number of logical read operations.                                                        |
+| `logical_reads_sigma`     | Total number of logical read operations.                                                  |
+| `machine`                 | Name of the machine on which the session is running.                                      |
+| `module`                  | Name of the running module.                                                               |
+| `os_thr_id`               | Thread ID of the operating system.                                                        |
+| `osuser`                  | User of the operating system running the session.                                         |
+| `parse_count_hard`        | Number of hard parses.                                                                    |
+| `parse_count_hard_sigma`  | Total number of hard parses.                                                              |
+| `parse_count_total`       | Total number of parses.                                                                   |
+| `parse_count_total_sigma` | Total number of parses.                                                                   |
+| `pdml_enabled`            | Whether parallel DML is enabled or not.                                                   |
+| `pdml_status`             | Status of the parallel DML.                                                               |
+| `pddl_status`             | Status of the parallel DDL.                                                               |
+| `pga_used_mem`            | Amount of memory being used in the process global area (PGA).                             |
+| `physical_reads`          | Number of physical read operations.                                                       |
+| `physical_reads_sigma`    | Total number of physical read operations.                                                 |
+| `pid`                     | PID of the database process.                                                              |
+| `pq_status`               | Status of the parallel query.                                                             |
+| `prev_sql`                | Text of the previously executed SQL statement.                                            |
+| `prev_sql_id`             | Unique ID of the previously executed SQL statement.                                       |
+| `prev_sql_param`          | Parameter of the previously executed SQL.                                                 |
+| `prog_name`               | Name of the program running the session.                                                  |
+| `pss(xos)`                | Process specific memory usage + Percentage of shared memory occupied by one process.      |
+| `row_wait_block_no`       | Block number of the waiting row.                                                          |
+| `row_wait_file_no`        | File number of the waiting row.                                                           |
+| `row_wait_obj_id`         | Object ID of the waiting row.                                                             |
+| `row_wait_row_no`         | Row number of the waiting row.                                                            |
+| `rss(xos)`                | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
+| `schemaname`              | Name of the schema the session is using.                                                  |
+| `seq#`                    | Value indicating the sequence number of the session.                                      |
+| `sid`                     | Session ID that uniquely identifies the session.                                          |
+| `sql_et`                  | SQL execution time.                                                                       |
+| `sql_hash`                | Hash value of the SQL statement.                                                          |
+| `sql_id`                  | Unique ID of the SQL statement being executed.                                            |
+| `sql_param`               | Parameters used to execute SQL.                                                           |
+| `sql_text`                | Text of the SQL statement being executed.                                                 |
+| `sql_trace`               | Whether to trace SQL.                                                                     |
+| `state`                   | Current state of the session.                                                             |
+| `status`                  | Status of the session.                                                                    |
+| `terminal`                | Name of the terminal to which the session is connected.                                   |
+| `type`                    | Type of the session.                                                                      |
+| `usn`                     | Undo segment number.                                                                      |
+| `used_blk`                | Number of used blocks.                                                                    |
+| `used_rec`                | Number of used records.                                                                   |
+| `wait_event`              | Event that the session is waiting for.                                                    |
+| `wait_time`               | Waiting time.                                                                             |
+| `wlock_wait`              | Whether the session is waiting for a lock or not.                                         |
+| `wthr_id`                 | Thread ID of the session's work.                                                          |
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| Item             | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| `event`          | Name of the waiting event.                                               |
+| `holder type`    | Type of the session that owns a lock.                                    |
+| `id1`            | First identifier value.                                                  |
+| `id2`            | Second identifier value.                                                 |
+| `lock mode`      | Lock mode requested or owned by the current session.                     |
+| `lock request`   | Status of the lock requested by the session.                             |
+| `module`         | Name of the running module.                                              |
+| `pid`            | PID of the database process.                                             |
+| `prev_sql_id`    | Unique ID of the previously executed SQL statement.                      |
+| `prev_sql_param` | Parameter of the previously executed SQL.                                |
+| `prev_sql_text`  | Text of the previously executed SQL statement.                           |
+| `prog_name`      | Name of the program running the session.                                 |
+| `serial#`        | Serial number that distinguishes repeated attempts for the same session. |
+| `sid`            | Session ID that uniquely identifies the session.                         |
+| `sql_et`         | SQL execution time.                                                      |
+| `sql_id`         | Unique ID of the SQL statement being executed.                           |
+| `sql_param`      | Parameters used to execute SQL.                                          |
+| `sql_text`       | Text of the SQL statement being executed.                                |
+| `status`         | Status of the session.                                                   |
+| `username`       | Name of the user running the session.                                    |
+| `waiter type`    | Type of the session waiting for a lock.                                  |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+The following items are the metrics collected if the XOS agent has been installed.
+
+| Item       | Description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| `cputime`  | CPU usage time                                                                            |
+| `cpuusage` | CPU Utilization                                                                           |
+| `elapse`   | Elapsed time of CPU usage                                                                 |
+| `vsize`    | Virtual memory size (Kb)                                                                  |
+| `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
+| `state`    | Process status                                                                            |
+| `ioread`   | Actual time spent reading the block (milliseconds)                                        |
+| `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
+| `uid`      | user id                                                                                   |
+| `cmd`      | Executing command                                                                         |
+| `longcmd`  | Full path of cmd                                                                          |
+
+</TabItem>
+
+</Tabs>
+
+</InDoc>
+
+<InDoc pages="analysis-lock-and-deadlock">
+
+Details for each session are provided in the following columns:
+
+| Item             | Description                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
+| `event`          | Name of the waiting event.                                               |
+| `holder type`    | Type of the session that owns a lock.                                    |
+| `id1`            | First identifier value.                                                  |
+| `id2`            | Second identifier value.                                                 |
+| `lock mode`      | Lock mode requested or owned by the current session.                     |
+| `lock request`   | Status of the lock requested by the session.                             |
+| `module`         | Name of the running module.                                              |
+| `pid`            | PID of the database process.                                             |
+| `prev_sql_id`    | Unique ID of the previously executed SQL statement.                      |
+| `prev_sql_param` | Parameter of the previously executed SQL.                                |
+| `prev_sql_text`  | Text of the previously executed SQL statement.                           |
+| `prog_name`      | Name of the program running the session.                                 |
+| `serial#`        | Serial number that distinguishes repeated attempts for the same session. |
+| `sid`            | Session ID that uniquely identifies the session.                         |
+| `sql_et`         | SQL execution time.                                                      |
+| `sql_id`         | Unique ID of the SQL statement being executed.                           |
+| `sql_param`      | Parameters used to execute SQL.                                          |
+| `sql_text`       | Text of the SQL statement being executed.                                |
+| `status`         | Status of the session.                                                   |
+| `username`       | Name of the user running the session.                                    |
+| `waiter type`    | Type of the session waiting for a lock.                                  |
+
+</InDoc>
+
+<InDoc pages="analysis-pq-tree">
+
+| Item             | Description                                          |
+| ---------------- | ---------------------------------------------------- |
+| `block_updates`  | Number of block updates.                             |
+| `client_pid`     | PID of the client process.                           |
+| `event`          | Name of the waiting event.                           |
+| `logon_time`     | Time when the session logged in the database.        |
+| `logical_reads`  | Number of logical read operations.                   |
+| `machine`        | Name of the machine on which the session is running. |
+| `module`         | Name of the running module.                          |
+| `physical_reads` | Number of physical read operations.                  |
+| `pid`            | PID of the database process.                         |
+| `prev_sql_param` | Parameter of the previously executed SQL.            |
+| `prev_sql_text`  | Text of the previously executed SQL statement.       |
+| `prog_name`      | Name of the program running the session.             |
+| `seq#`           | Value indicating the sequence number of the session. |
+| `sid`            | Session ID that uniquely identifies the session.     |
+| `sql_et`         | SQL execution time.                                  |
+| `sql_param`      | Parameters used to execute SQL.                      |
+| `sql_text`       | Text of the SQL statement being executed.            |
+| `status`         | Status of the session.                               |
+| `usn`            | Undo segment number.                                 |
+| `used_blk`       | Number of used blocks.                               |
+| `used_rec`       | Number of used records.                              |
+| `username`       | Name of the user running the session.                |
+| `wait_time`      | Waiting time.                                        |
+
+</InDoc>
+
+:::note
+
+WhaTap basically stores the client-related information.
+
+:::

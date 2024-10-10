@@ -1,0 +1,11 @@
+Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbPqTree" className="uitext" />
+
+<Cmdname sid="side_dbPqTree" className="uitext" /> provides the function to analyze the trend of parallel queries per day. The slave processes that perform actual tasks and the coordinator processes that assign tasks to them are distinguished, and overall executions are displayed in an easy-to-understand manner. It can help determine what purpose it was used for by providing information about parallel queries performed at a specific time point.
+
+## Basic screen guide
+
+<ImgLang img="db-pq-tree.png" desc="Parallel Query Tree" />
+
+In ![number1](/img/number-01.png) <Cmdname sid="instance" className="uitext" />, select the instance to search parallel queries from, and then ![number2](/img/number-02.png) set the <Cmdname sid="date" className="uitext" />, <Cmdname sid="start_time" className="uitext" />, and <Cmdname sid="end_time" className="uitext" />.
+
+You can check the trend of parallel queries that meet the set conditions through a graph chart, and the structure of coordinators and slaves is represented in the form of tree.

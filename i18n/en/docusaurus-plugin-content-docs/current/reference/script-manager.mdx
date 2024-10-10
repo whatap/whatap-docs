@@ -1,0 +1,59 @@
+---
+id: script-manager
+title: Script Manager
+description: If you save a SQL script in the agent installation path, you can load the script from the WhaTab monitoring service screen and display the execution results in real time.
+keywords:
+  - DATABASE
+  - Script Manager
+displayed_sidebar: dbSidebar
+---
+
+Home &gt; Select Project &gt; <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" />
+
+If you save a SQL script in the agent installation path, you can load the script from the WhaTab monitoring service screen and display the execution results in real time.
+
+- You can load and execute SQL scripts directly within the monitoring tool. This allows you to query data quickly and efficiently without any additional settings or external tools.
+
+- You can save specific SQL scripts in advance and use them repeatedly, which is useful while continuously monitoring or analyzing data. This helps build automated processes by reducing manual tasks.
+
+## Before starting
+
+To run SQL scripts in the <Cmdname sid="side_dbScriptManager" className="uitext" /> menu, keep the following steps to save the SQL scripts to the agent installation path.
+
+1. Go to the *scripts* folder under the agent installation path.
+
+   ![](/img/script-manager-starting-step01.png)
+
+2. Go into the database type folder. If there is no desired folder, create it.
+
+   ![](/img/script-manager-starting-step02.png)
+
+3. Write an SQL script. At this time, the account that runs the SQL scripts is the one used by the agent.
+
+   ![](/img/script-manager-starting-step03.png)
+
+:::note
+
+The account that executes the SQL script has been specified in the *whatap.conf* file or used in the *uid.sh* file.
+
+:::
+
+## Running an SQL script
+
+Select a database monitoring product project from the WhaTap Monitoring Service's Home screen. Go to <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" />.
+
+<ImgLang img="script-manager-screen.png" desc="Script Manager" />
+
+1. In the <Cmdname sid="TTL08478" className="uitext" /> section, select an agent to run the SQL scripts.
+
+2. Select a script to run in <Cmdname sid="TTL08480" className="uitext" /> on the left of the screen.
+
+3. In the <Cmdname sid="TTL08478" className="uitext" /> section, check the SQL statement of the selected script, and then select <Cmdname sid="run" className="uitext" />.
+
+4. In the <Cmdname sid="TTL08479" className="uitext" /> section, check the result of the query.
+
+:::note
+
+Because SQL scripts are loaded for each agent installation path, each agent can load different script files.
+
+:::
