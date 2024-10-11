@@ -150,7 +150,7 @@ function _createMdxContent(props) {
           children: "요구 사항"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 마스터 에이전트 1.7.0 버전 이상이 필요합니다."
+        children: "와탭 쿠버네티스 에이전트 1.7.0 버전 이상이 필요합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
       children: "Pending 상태의 Pod 현황을 조회하여 각 Pod의 대기 원인을 종합적으로 분석할 수 있습니다. 클러스터 내에 많은 Pending Pod가 있을수록 시스템의 효율성과 안정성이 저하될 수 있습니다. Pending 상태의 Pod를 모니터링해 이러한 문제를 조기에 발견하고 해결함으로써 클러스터의 안정성을 유지하세요."

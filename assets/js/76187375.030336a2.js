@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89544],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52961],{
 
 /***/ 85506:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -295,7 +295,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 71635:
+/***/ 65278:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -314,71 +314,60 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'node-disk-list',
-	title: '노드 디스크 목록',
+	id: 'service-list',
+	title: 'Service 목록',
 	description: 'Service 목록 메뉴를 안내합니다.',
 	keywords: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
-		'클러스터',
-		'노드 디스크 목록'
+		'워크로드',
+		'Service 목록'
 	],
 	toc_max_heading_level: 2,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/node-disk-list",
-  "title": "노드 디스크 목록",
+  "id": "kubernetes/service-list",
+  "title": "Service 목록",
   "description": "Service 목록 메뉴를 안내합니다.",
-  "source": "@site/docs/kubernetes/node-disk-list.mdx",
+  "source": "@site/docs/kubernetes/service-list.mdx",
   "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/node-disk-list",
-  "permalink": "/whatap-docs/kubernetes/node-disk-list",
+  "slug": "/kubernetes/service-list",
+  "permalink": "/whatap-docs/kubernetes/service-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/node-disk-list.mdx",
+  "editUrl": "undefined/docs/kubernetes/service-list.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "node-disk-list",
-    "title": "노드 디스크 목록",
+    "id": "service-list",
+    "title": "Service 목록",
     "description": "Service 목록 메뉴를 안내합니다.",
     "keywords": [
       "쿠버네티스",
       "쿠버네티스 모니터링",
-      "클러스터",
-      "노드 디스크 목록"
+      "워크로드",
+      "Service 목록"
     ],
     "toc_max_heading_level": 2,
     "isTranslationMissing": false
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "노드 상세",
-    "permalink": "/whatap-docs/kubernetes/node-details"
+    "title": "Deployment 목록",
+    "permalink": "/whatap-docs/kubernetes/deployment-list"
   },
   "next": {
-    "title": "노드 타임라인",
-    "permalink": "/whatap-docs/kubernetes/node-timeline"
+    "title": "노드 목록",
+    "permalink": "/whatap-docs/kubernetes/resource-node-list"
   }
 };
 const assets = {
 
 };
 
-/*
-
-#### 노드 이름 정렬
-
-동일한 노드에 속한 디스크 목록이 연속적으로 나열될 경우 해당 노드 이름(***OnodeName***)이 병합되어 표시됩니다. 다만 다른 컬럼 기준 정렬로 연속성이 깨진 상태라면 병합 역시 풀리게 됩니다.
-
-*/
-/*- **마운트 포인트**: 디스크가 특정 경로에 마운트되어 있어야 목록에 표시됩니다. 마운트 포인트가 없는 디스크는 목록에 포함되지 않습니다.
-
-- **실시간 모니터링**: 마운트된 디스크의 사용량, 여유 공간, I/O 성능 지표 등을 실시간으로 모니터링할 수 있습니다. 이를 통해 디스크의 상태를 지속적으로 추적하고, 필요한 경우 신속하게 대응할 수 있습니다.
-
-- **제한 사항**: 에이전트 기동 후 추가된 디스크는 목록에 자동으로 업데이트되지 않습니다. 추가된 디스크를 모니터링하려면 에이전트를 재기동해야 합니다.*/
+/*<Cmdname sid="side_kubeServiceList" className="uitext" />을 통해 클러스터의 네트워크 구성과 Service 상태를 보다 명확하고 종합적으로 관리해 보세요.*/
 
 
 
@@ -388,10 +377,6 @@ const toc = [{
   "id": "기본-화면-안내",
   "level": 2
 }, {
-  "value": "미표시 노드 디스크",
-  "id": "미표시-노드-디스크",
-  "level": 4
-}, {
   "value": "필터",
   "id": "필터",
   "level": 2
@@ -400,98 +385,93 @@ const toc = [{
   "id": "컬럼-선택",
   "level": 2
 }, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
-  "value": "비교하기",
-  "id": "비교하기",
+  "value": "상세 보기",
+  "id": "상세-보기",
   "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
-    blockquote: "blockquote",
     em: "em",
     h2: "h2",
-    h4: "h4",
-    li: "li",
+    img: "img",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     section: "section",
     strong: "strong",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, LinkImage} = _components;
+  }, {Cmdname, ImgLang} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!LinkImage) _missingMdxReference("LinkImage", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_cluster",
+        sid: "side_workload",
         className: "uitext"
       }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeDiskList",
+        sid: "side_kubeServiceList",
         className: "uitext"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "note",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "요구 사항"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "와탭 마스터 에이전트 1.7.8 버전 이상이 필요합니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["쿠버네티스 클러스터 프로젝트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-              class: "my",
-              children: "CP"
-            }), ")일 경우 해당 메뉴를 조회할 수 있습니다."]
-          }), "\n"]
-        }), "\n"]
+        children: "와탭 쿠버네티스 에이전트 1.7.8 버전 이상이 필요합니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeDiskList",
+        sid: "side_kubeServiceList",
         className: "uitext"
       }), "을 조회합니다. 와탭 쿠버네티스 모니터링의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeDiskList",
+        sid: "side_kubeServiceList",
         className: "uitext"
-      }), "에서 각 노드에 마운트된 개별 디스크의 현재 사용량, 여유 공간, 성능 지표를 실시간으로 모니터링하여 디스크의 상태를 쉽게 확인할 수 있습니다. 이를 통해 클러스터의 디스크 자원을 효율적으로 관리하고, 잠재적인 문제를 사전에 파악하여 대응할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      }), "을 통해 클러스터 내 네트워크 구성을 쉽게 파악하고 각 Service의 구성과 현재 상태를 효율적으로 모니터링할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["쿠버네티스에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "Service"
+      }), "는 클러스터 내부 및 외부에서 Pod에 접속하기 위한 오브젝트입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubeServiceList",
+        className: "uitext"
+      }), " 메뉴에서 각 Service의 세부 구성을 한눈에 확인할 수 있으며, 연결된 Pod의 상태를 실시간으로 모니터링할 수 있습니다. 이를 통해 Service와 Pod 간의 비정상적인 연결 상태를 신속하게 파악하고 해결할 수 있습니다."]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "기본-화면-안내",
         children: "기본 화면 안내"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "현재 클러스터에 존재하는 노드와 해당 노드에 마운트된 디스크 목록을 다음과 같이 확인할 수 있습니다. 조회 시간 기준 최근 1분 간 수집된 디스크 정보를 기준으로 목록을 표시합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["현재 클러스터에 존재하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_kubeServiceList",
+          className: "uitext"
+        }), " 정보를 다음과 같이 확인할 수 있습니다. 조회 시간 기준 최근 1분간 수집된 Service 정보를 기준으로 목록을 표시합니다. 네임스페이스, 레이블 셀렉터 등 다양한 기준으로 리소스를 구분하고 관리할 수 있으며 Service의 다양한 속성을 명확하게 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-node-disk-list.png",
-        desc: "노드 디스크 목록"
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "미표시-노드-디스크",
-        children: "미표시 노드 디스크"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 쿠버네티스 에이전트가 기동되면 각 노드에 마운트된 디스크 목록이 표시됩니다. 다음과 같은 경우 목록에 표시되지 않습니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["디스크가 특정 경로에 마운트되어 있어야 목록에 표시됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "마운트 포인트가 존재하지 않는 디스크"
-            }), "는 목록에 표시되지 않습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["와탭 쿠버네티스 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "기동 후 추가된 디스크"
-            }), "는 목록에 표시되지 않습니다."]
-          }), "\n"]
-        }), "\n"]
+        img: "k8s-service-list.png",
+        desc: "Service 목록"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Pod Phase"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "podPhase"
+            })
+          }), " 컬럼은 해당 Service에 연결된 Pod의 상태별 개수를 표시합니다. Pod의 상태는 색상으로 표기합니다. Pod 상태 관련해 상단 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Pod Phase"
+            })
+          }), " 안내를 참조하세요."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["목록형 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "필터"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "컬럼 선택"
+          }), " 안내는 동일합니다."]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -508,124 +488,21 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "비교하기",
-        children: "비교하기"
+        id: "상세-보기",
+        children: "상세 보기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL08423",
+        children: ["목록에서 조회를 원하는 Service의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "돋보기 아이콘",
+          src: (__webpack_require__(6971)/* ["default"] */ .A) + "",
+          width: "24",
+          height: "24"
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "display_detail",
           className: "uitext"
-        }), " 옵션을 통해 디스크간 사용량을 비교할 수 있습니다. 목록에서 조회를 원하는 노드 디스크 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL08423",
-          className: "uitext"
-        }), " 컬럼의 체크 박스를 선택하면 오른쪽에 해당 디스크들의 세부 정보를 비교하는 창이 나타납니다."]
+        }), " 아이콘 선택 시 해당 Service에 연결된 Pod 목록을 확인할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-node-disk-compare.png",
-        desc: "노드 디스크 비교하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "UsedSpace"
-          })
-        }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "UsedPercent"
-          })
-        }), " 그래프를 통해 각 디스크에 대해 시간별 사용량 및 사용률을 확인할 수 있습니다. 이를 통해 특정 시간 구간에서의 디스크 사용량 변화를 직관적으로 확인할 수 있습니다. 또한 하단의 상세 데이터 목록을 통해 각 디스크의 최대와 최소 사용량 및 증감률 등의 세부 데이터를 확인할 수 있습니다. 컬럼 정보는 다음과 같습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "OnodeName"
-              })
-            }), ": 해당 디스크가 연결된 노드의 이름을 나타냅니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "DeviceId"
-              })
-            }), ": 디스크의 장치 ID를 의미하며, 디스크의 구체적인 장치를 구분할 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Max"
-              })
-            }), ": 조회 기간 동안 기록된 디스크의 최대 사용량과 최대 사용률을 나타냅니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Min"
-              })
-            }), ": 조회 기간 동안 기록된 디스크의 최소 사용량과 최소 사용률을 보여줍니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "First / Last"
-              })
-            }), ": 조회 기간 중 처음 수집된 데이터와 마지막 수집된 데이터를 통해 사용량 변화를 알 수 있습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Increase"
-              })
-            }), ": 선택된 기간 동안 해당 디스크의 사용량 증감률을 보여줍니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Increase(Per Day)"
-              })
-            }), ": 조회 기간 동안 하루 평균 사용량 증감률을 계산한 값으로, 디스크 사용량 변동 추세를 확인할 수 있습니다. 조회 기간이 하루 미만일 경우 이 값은 표시되지 않습니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "PredictedSpace(N days later)"
-              })
-            }), ": 하루 평균 증감률을 기준으로 N일 후의 예상 사용량을 예측하는 값입니다. 조회 기간이 하루 미만일 경우 이 값은 표시되지 않습니다."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "예시, 조회 기간이 7일일 경우, 7일 후 예상 사용량을 표시합니다."
-            }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "AVG"
-                })
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "MAX"
-                })
-              }), " 버튼을 클릭하여 해당 구간의 평균 사용량과 최대 사용량을 확인할 수 있습니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
-                img: "hitmap-lr-drag.svg",
-                alt: "좌우 드래그 아이콘",
-                className: "_drag"
-              }), " 왼쪽 또는 오른쪽으로 드래그해서 화면의 크기를 조절할 수 있습니다."]
-            }), "\n"]
-          }), "\n"]
-        })]
+        img: "k8s-service-list-detail.png",
+        desc: "Service 목록 상세 보기"
       })]
     })]
   });
@@ -647,6 +524,16 @@ function _missingMdxReference(id, component) {
 }
 
 
+
+/***/ }),
+
+/***/ 6971:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi4wNTEzIDE0LjY2MzZDMTguNDQ3OSAxMS41ODQxIDE4LjIzMSA3LjEyOTcgMTUuNDAwNCA0LjI5OTE1QzEyLjMzNDkgMS4yMzM2MiA3LjM2NDY4IDEuMjMzNjIgNC4yOTkxNSA0LjI5OTE1QzEuMjMzNjIgNy4zNjQ2OCAxLjIzMzYyIDEyLjMzNDkgNC4yOTkxNSAxNS40MDA0QzcuMTI5NyAxOC4yMzEgMTEuNTg0MSAxOC40NDc5IDE0LjY2MzYgMTYuMDUxM0wxOS42MTIzIDIxTDIxIDE5LjYxMjNMMTYuMDUxMyAxNC42NjM2Wk0xNC4wMTI4IDE0LjAxMjhDMTEuNzEzNiAxNi4zMTE5IDcuOTg1OTUgMTYuMzExOSA1LjY4NjggMTQuMDEyOEMzLjM4NzY2IDExLjcxMzYgMy4zODc2NiA3Ljk4NTk1IDUuNjg2OCA1LjY4NjhDNy45ODU5NSAzLjM4NzY2IDExLjcxMzYgMy4zODc2NiAxNC4wMTI4IDUuNjg2ODFDMTYuMzExOSA3Ljk4NTk1IDE2LjMxMTkgMTEuNzEzNiAxNC4wMTI4IDE0LjAxMjhaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=");
 
 /***/ }),
 

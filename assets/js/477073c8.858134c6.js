@@ -140,7 +140,7 @@ function _createMdxContent(props) {
           children: "요구 사항"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["와탭 마스터 에이전트 1.5.5 버전 이상이 필요합니다. 1.5.5 버전 미만일 경우 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: ["와탭 쿠버네티스 에이전트 1.5.5 버전 이상이 필요합니다. 1.5.5 버전 미만일 경우 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "마스터 메타 정보"
           })
