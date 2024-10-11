@@ -20,7 +20,7 @@ tags: [새로운 기능, 2024]
 |**공통**|
 |---| 
 
-> * 편의성 향상을 위해 공통 메뉴 개선이 이루어졌습니다. (이벤트 v2 소팅, 검색, 실시간 알림 해소) 
+> * 편의성 향상을 위해 공통 메뉴가 개선되었습니다. (이벤트 v2 소팅, 검색, 실시간 알림 해소) 
 > * `Application`, `Kubernetes`, `Database` 상품군에서 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다. 
 
 |**Application**|
@@ -45,10 +45,12 @@ tags: [새로운 기능, 2024]
 |**Kubernetes**|
 |---|
 
-> * 노드 맵, 노드 타임라인, 노드 디스크 목록 신규 (노드 모니터링 확대)
-> * 노드 목록 개선
-> * 컨테이너 요약 분석, Pod 요약 분석 신규 (분석 기능 강화)
-> * Service 목록 신규(쿠버네티스 모니터링 정보 확대)
+> * <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" /> 신규 (노드 모니터링 확대)
+> * <Cmdname sid="side_nodeList" className="uitext" /> 개선
+> * <Cmdname sid="TTL08230" className="uitext" />, <UI>Pod 요약 분석</UI> 신규 (분석 기능 강화)
+> * <Cmdname sid="side_kubeServiceList" className="uitext" /> 신규(쿠버네티스 모니터링 정보 확대)
+
+<Cmdname sid="TTL08317" className="uitext" type="container" />
 
 {/* > * <Cmdname sid="agentInstall" className="uitext" /> 화면이 보다 손쉬운 옵션 선택 방식으로 개편되었습니다.
 > * <Cmdname sid="side_pendingPod" className="uitext" /> 메뉴가 새롭게 개편되었습니다. 
@@ -384,13 +386,15 @@ import URL_24q3 from "../crw-data/crwld-service-24q3/_import-24q3-service-URL.md
 
 */}
 
-{/* 
+
 
 ## `Log`
 
 와탭 2024년 3분기 `Log` 부분의 주목할 만한 신규 기능으로 ~을 소개합니다.
 
-* 로그 조회 시 누적된 건수 표기 방식 변경
+* 로그 테이블 조절 컬럼 조절 및 컬럼 설정 기능 변경 
+
+(10월에는 로그 필터 검색 조건 즐겨찾기 기능 추가)
 
 <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
@@ -402,4 +406,4 @@ import Log_24q3 from "../crw-data/crwld-service-24q3/_import-24q3-service-Log.md
 
 </details> 
 
-*/}
+
