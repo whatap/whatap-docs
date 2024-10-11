@@ -307,9 +307,9 @@
     "message": "메트릭스",
     "description": "The label for category 메트릭스 in sidebar postgreSidebar"
   },
-  "sidebar.postgreSidebar.category.알림 설정하기": {
-    "message": "알림 설정하기",
-    "description": "The label for category 알림 설정하기 in sidebar postgreSidebar"
+  "sidebar.postgreSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar postgreSidebar"
   },
   "sidebar.postgreSidebar.doc.지원 환경": {
     "message": "지원 환경",
