@@ -1617,7 +1617,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -3954,7 +3954,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3962,9 +3962,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_0',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1_7_1',
+                  className: 'new',
                 },
+                'release-notes/python/python-1_7_0',
                 'release-notes/python/python-1_6_10',
                 'release-notes/python/python-1_6_9',
                 'release-notes/python/python-1_6_8',
@@ -3973,7 +3974,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_5',
                 'release-notes/python/python-1_6_4',
                 'release-notes/python/python-1_6_3',
-                'release-notes/python/python-1_6_2',
                 'release-notes/python/python-previous',
               ],
             },
