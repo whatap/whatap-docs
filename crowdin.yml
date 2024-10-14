@@ -27,6 +27,18 @@ files: [
   "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*", "/docs/weaving/**/*", "/docs/aws-log/_learn-aws-log-main-menu.mdx", "/docs/release-notes/java/java-2.0.mdx", "/docs/getting-started/_implementation.mdx", "/docs/apidoc/*.yaml", "/docs/**/*.json", "/docs/best-practice-guides/real-time-monitoring-for-it-infra.mdx" ],
   "escape_special_characters": 0,
  },
+ {
+  "source" : "/blog/**/*",
+  "translation" : "/i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%",
+  "ignore" : [ ],
+  "escape_special_characters": 0,
+ },
+ {
+  "source" : "/crw-data/**/*",
+  "translation" : "/i18n/%two_letters_code%/**/%original_file_name%",
+  "ignore" : [ ],
+  "escape_special_characters": 0,
+ },
 ]
 
 #
