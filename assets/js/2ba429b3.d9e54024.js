@@ -42,6 +42,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         className: "language-bash",
+        metastring: "showLineNumbers",
         children: "# 관리자 권한 필요\nNew-Item -type \"Directory\" -Path \"C:\\Program Files\\WhatapInfra\\extension\"\n\n$contentToAdd = @\"\n[[inputs.win_eventlog]]\n    category = \"win_event_log\"\n    stats_category = \"win_event_log_stats\"\n    stats_enabled = true\n    enabled = true\n    [[inputs.win_eventlog.file]]\n        #true | false\n        enabled = true\n\t\t\t\t# Application, Security, Setup, System, Forwarded\n\t\t\t\tfile = \"Application\"\n\t\t\t\t#1: Information, 2: Warning 3: Critical 4: Audit Success 5 Audit Fail\n\t\t\t\t#event_type = \n\t\t\t\t#event id\n\t\t\t\t#event_id = \n\t\t\t\t#event source name\n\t\t\t\t#source_name = \"\"\n\n\"@\n\nNew-Item -path \"C:\\Program Files\\WhatapInfra\\extension\" -name \"win_eventlog.conf\" -type \"file\" -value $contentToAdd -Force\n\nRestart-Service \"Whatap Infra\"\n"
       })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
