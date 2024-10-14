@@ -1686,7 +1686,7 @@ const toc = [{
   "level": 2
 }, ..._common_items_db_agent_dbx_basic_option_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_agent_setting_cluster_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
   "value": "데이터 수집",
-  "id": "데이터-수집",
+  "id": "collectdata",
   "level": 2
 }, ..._common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
   "value": "AWS RDS CloudWatch 적용",
@@ -1720,7 +1720,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "데이터-수집",
+        id: "collectdata",
         children: "데이터 수집"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_setting_data_collection_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {

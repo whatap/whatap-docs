@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45513],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37988],{
 
 /***/ 5888:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -60,11 +60,16 @@ const toc = [{
   "value": "세그먼트 사이즈 확인하기",
   "id": "TTL08164",
   "level": 2
+}, {
+  "value": "세그먼트 사이즈 확인하기",
+  "id": "checkSegmentSize",
+  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
     code: "code",
+    em: "em",
     h2: "h2",
     h3: "h3",
     img: "img",
@@ -73,6 +78,7 @@ function _createMdxContent(props) {
     p: "p",
     pre: "pre",
     section: "section",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -534,6 +540,78 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+        product: "altibase",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+          id: "checkSegmentSize",
+          children: "세그먼트 사이즈 확인하기"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL08164",
+            className: "uitext"
+          }), "은 섹션 테이블스페이스 내에서 가장 많은 공간을 차지하는 상위 50개의 세그먼트 정보를 제공합니다. 이 정보를 통해 사용자는 특정 세그먼트가 얼마나 많은 공간을 사용하고 있는지 파악할 수 있습니다. 각 세그먼트는 다양한 속성을 기반으로 상세하게 표시됩니다. 이러한 정보를 통해 비정상적으로 큰 세그먼트를 식별하고, 필요 시 공간 최적화 작업을 수행할 수 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "db-stat-table-space-size-top50-altibase.png",
+          desc: "Segment size"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Tablespace Type"
+                })
+              }), ": 테이블스페이스의 유형입니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Tablespace"
+                })
+              }), ": 해당 세그먼트가 속한 테이블스페이스의 이름입니다. 테이블스페이스는 데이터베이스에서 데이터를 저장하는 논리적인 공간입니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Table"
+                })
+              }), ": 해당 세그먼트가 속한 테이블의 이름입니다. 이를 통해 어떤 테이블이 공간을 차지하고 있는지 식별할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "User"
+                })
+              }), ": 해당 세그먼트를 소유하고 있는 데이터베이스 사용자 계정의 이름입니다. 어떤 사용자가 해당 데이터를 관리하는지 파악할 수 있습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Segment Type"
+                })
+              }), ": 세그먼트의 유형입니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Partition"
+                })
+              }), ": 파티셔닝된 테이블이나 인덱스의 경우 해당 세그먼트가 어떤 파티션에 속하는지를 나타냅니다. 파티셔닝은 큰 테이블을 더 작은 단위로 나누어 관리하는 방법입니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "mbytes"
+                })
+              }), ": 해당 세그먼트가 차지하고 있는 메가바이트(MB) 단위의 공간 크기입니다. 이를 통해 각 세그먼트가 사용하고 있는 물리적 저장 공간의 양을 확인할 수 있습니다."]
+            }), "\n"]
+          }), "\n"]
+        })]
       })]
     })]
   });
@@ -558,7 +636,64 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 60989:
+/***/ 81202:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    p: "p",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ReturnLink} = _components;
+  if (!ReturnLink) _missingMdxReference("ReturnLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+    type: "info",
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["이 문서는 ", props.product, " 모니터링 V2를 기준으로 작성했습니다. ", props.product, " 모니터링 V1 문서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ReturnLink, {
+        children: "다음 문서"
+      }), "를 참조하세요."]
+    })
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 92475:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -571,8 +706,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_db_tablespace_size_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5888);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(81202);
+/* harmony import */ var _common_items_db_tablespace_size_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5888);
 
 
 const frontMatter = {
@@ -588,16 +724,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v1/table-space-size",
+  "id": "oracle/table-space-size",
   "title": "테이블스페이스 사이즈",
   "description": "각 테이블 스페이스별 최대 용량과 사용량을 시간의 흐름에 따라 조회할 수 있습니다.",
-  "source": "@site/docs/oracle-v1/table-space-size.mdx",
-  "sourceDirName": "oracle-v1",
-  "slug": "/oracle-v1/table-space-size",
-  "permalink": "/whatap-docs/oracle-v1/table-space-size",
+  "source": "@site/docs/oracle/table-space-size.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/table-space-size",
+  "permalink": "/whatap-docs/oracle/table-space-size",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v1/table-space-size.mdx",
+  "editUrl": "undefined/docs/oracle/table-space-size.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -611,33 +747,36 @@ const metadata = {
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "SQL 통계",
-    "permalink": "/whatap-docs/oracle-v1/stat"
+    "permalink": "/whatap-docs/oracle/stat"
   },
   "next": {
     "title": "SGA 사이즈",
-    "permalink": "/whatap-docs/oracle-v1/sga-size"
+    "permalink": "/whatap-docs/oracle/sga-size"
   }
 };
 const assets = {
 
 };
 
-/*테이블 스페이스 사이즈 oracle, tibero*/
+/*테이블 스페이스 사이즈 Oracle, tibero*/
 
 
 
-const toc = [..._common_items_db_tablespace_size_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+
+const toc = [..._common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_tablespace_size_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_tablespace_size_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      product: "Oracle"
+    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_tablespace_size_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
