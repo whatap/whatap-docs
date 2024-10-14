@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53753],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17451],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2439,7 +2439,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Master Agent Alive"
+                children: "Node Agent Alive"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -4871,7 +4871,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 1884:
+/***/ 1295:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4901,7 +4901,7 @@ const frontMatter = {
 	title: '이벤트 설정',
 	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'SQL Server',
+		'CUBRID',
 		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
@@ -4910,16 +4910,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/warning-notice-v2",
+  "id": "cubrid-v1/warning-notice-v2",
   "title": "이벤트 설정",
   "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/mssql/warning-notice-v2.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/warning-notice-v2",
-  "permalink": "/whatap-docs/mssql/warning-notice-v2",
+  "source": "@site/docs/cubrid-v1/warning-notice-v2.mdx",
+  "sourceDirName": "cubrid-v1",
+  "slug": "/cubrid-v1/warning-notice-v2",
+  "permalink": "/whatap-docs/cubrid-v1/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/cubrid-v1/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -4927,21 +4927,21 @@ const metadata = {
     "title": "이벤트 설정",
     "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "SQL Server",
+      "CUBRID",
       "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "cubridV1Sidebar",
   "previous": {
     "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/mssql/warning-notice"
+    "permalink": "/whatap-docs/cubrid-v1/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/mssql/metric-warning-notice"
+    "permalink": "/whatap-docs/cubrid-v1/metric-warning-notice"
   }
 };
 const assets = {

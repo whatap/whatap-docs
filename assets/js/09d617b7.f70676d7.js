@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37748],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53753],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -2439,7 +2439,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Master Agent Alive"
+                children: "Node Agent Alive"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -4871,7 +4871,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 93135:
+/***/ 1884:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4899,9 +4899,10 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'네트워크 성능 모니터링',
+		'SQL Server',
+		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
 	],
@@ -4909,37 +4910,38 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "npm/warning-notice-v2",
+  "id": "mssql/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/npm/warning-notice-v2.mdx",
-  "sourceDirName": "npm",
-  "slug": "/npm/warning-notice-v2",
-  "permalink": "/whatap-docs/npm/warning-notice-v2",
+  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/mssql/warning-notice-v2.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/warning-notice-v2",
+  "permalink": "/whatap-docs/mssql/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/npm/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/mssql/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "네트워크 성능 모니터링",
+      "SQL Server",
+      "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "npmsidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/npm/metric-warning-notice"
+    "title": "데이터베이스 경고 알림",
+    "permalink": "/whatap-docs/mssql/warning-notice"
   },
   "next": {
-    "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/npm/set-receive-event"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/mssql/metric-warning-notice"
   }
 };
 const assets = {
