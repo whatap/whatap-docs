@@ -1,6 +1,252 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[93814],{
 
+/***/ 74275:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+/*### 다중 파일 지정 및 파일 분리*/
+/*여러 개의 로그 파일을 동일한 카테고리로 지정하려면, 각 파일에 대해 `[[inputs.logsink.file]]` 항목을 추가하고 `path`에 해당 파일 경로를 설정해야 합니다. 다음 예시는 `serverlog` 카테고리로 /root/test2 경로에 있는 파일을 로그 파일로 지정한 설정입니다.*/
+/*<Columns>
+
+<Column className="text--left width--45">
+
+```bash {7,10-17,19} showLineNumbers
+[[inputs.logsink]]
+category = "serverlog"
+stats_enabled = true
+stats_category = "logsink_stats"
+excludeNames = [ ".gz",".zip" ]
+#[[inputs.logsink.file]]
+#  path = "/some/path/%Y-%m-%d/.log"
+#  disabled = false
+#  encoding = "euc-kr"
+[[inputs.logsink.file]]
+path = "/root/test1"
+disabled = false
+encoding = "utf-8"
+[[inputs.logsink.file]]
+path = "/root/test2"
+disabled = false
+encoding = "utf-8"
+#[[inputs.logsink.file]]
+#  nowrap_keywords = ["Caused by:", "Test"]
+```
+
+</Column>
+
+<Column className="text--left">
+
+* 카테고리를 지정합니다. `category`
+
+
+* 로그 파일 설정 시 예시의 라인 7과 같이 `path` 옵션을 통해 날짜 패턴(strftime.ort)을 적용할 수 있습니다.
+
+```bash
+path = "/some/path/%Y-%m-%d/.log"
+```
+
+* 로그 파일 설정 시 예시의 라인 19와 같이 `nowrap_keywords` 옵션을 통해 특정 키워드 기준으로 로그를 병합할 수 있습니다.
+
+```bash
+nowrap_keywords = ["Caused by:", "Test"]
+```
+
+</Column>
+
+</Columns>*/
+
+
+const toc = [{
+  "value": "다중 파일 지정",
+  "id": "multiple-file-specification",
+  "level": 4
+}, {
+  "value": "파일 분리",
+  "id": "file-separation",
+  "level": 4
+}];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    admonition: "admonition",
+    code: "code",
+    em: "em",
+    h4: "h4",
+    img: "img",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, Column, Columns} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!Column) _missingMdxReference("Column", true);
+  if (!Columns) _missingMdxReference("Columns", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "multiple-file-specification",
+        children: "다중 파일 지정"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["여러 로그 파일을 동일한 카테고리로 설정하려면, 각 로그 파일 경로를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "[[inputs.logsink.file]]"
+        }), " 항목에 추가하고, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "path"
+        }), " 설정을 통해 파일 경로를 지정합니다. 또한, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "category"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "stats_enabled"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "stats_category"
+        }), " 등의 옵션을 사용하여 로그 발생량 통계 설정과 같은 부가적인 설정을 할 수 있습니다. 예시는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "/root/test1"
+        }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "/root/test2"
+        }), " 파일을 동일한 카테고리(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "serverlog"
+        }), ")로 지정한 경우입니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-bash",
+          metastring: "{2,7-15}",
+          children: "[[inputs.logsink]]\n  category = \"serverlog\"\n  stats_enabled = true\n  stats_category = \"logsink_stats\"\n  excludeNames = [ \".gz\",\".zip\" ]\n\n[[inputs.logsink.file]]\n  path = \"/root/test1\"\n  disabled = false\n  encoding = \"utf-8\"\n\n[[inputs.logsink.file]]\n  path = \"/root/test2\"\n  disabled = false\n  encoding = \"utf-8\"\n"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "category"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "stats_enabled"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "stats_category"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "nowrap_keywords"
+          }), " 등의 옵션에 대한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "#server-log-settings",
+            children: "상단"
+          }), " 안내를 참조하세요."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["해당 예시의 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_logTail",
+          className: "uitext"
+        }), " 메뉴에서는 다음과 같이 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "다중 파일 지정",
+          src: (__webpack_require__(50124)/* ["default"] */ .A) + "",
+          width: "1200",
+          height: "631"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "file-separation",
+        children: "파일 분리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["서로 다른 카테고리로 로그 파일을 지정하려면, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
+          children: ["logsink{", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "숫자"
+          }), "}.conf"]
+        }), " 파일을 각각 생성한 후, 각 파일 내에서 다른 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "category"
+        }), " 값을 설정하세요. 다음 예시는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "logsink.conf"
+        }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
+          children: ["logsink", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("b", {
+            children: "1"
+          }), ".conf"]
+        }), "를 통해 각각 다른 로그 카테고리를 설정한 경우입니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Columns, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Column, {
+          className: "text--left width--50-2",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title='logsink.conf' {1,3,9}",
+              children: "# cat logsink.conf\n[[inputs.logsink]]\n  category = \"serverlog1\"\n  stats_enabled = true\n  stats_category = \"logsink_stats\"\n  excludeNames = [ \".gz\",\".zip\" ]\n\n[[inputs.logsink.file]]\n  path = \"/root/test1\"\n  disabled = false\n  encoding = \"utf-8\"\n"
+            })
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Column, {
+          className: "text--left",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              metastring: "title='logsink1.conf' {1,3,9}",
+              children: "#cat logsink1.conf\n[[inputs.logsink]]\n  category = \"serverlog2\"\n  stats_enabled = true\n  stats_category = \"logsink_stats\"\n  excludeNames = [ \".gz\",\".zip\" ]\n\n[[inputs.logsink.file]]\n  path = \"/root/test2\"\n  disabled = false\n  encoding = \"utf-8\"\n"
+            })
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "category"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "stats_enabled"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "stats_category"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "nowrap_keywords"
+          }), " 등의 옵션에 대한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "#server-log-settings",
+            children: "상단"
+          }), " 안내를 참조하세요."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["해당 예시의 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "side_logTail",
+          className: "uitext"
+        }), " 메뉴에서는 다음과 같이 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "파일 분리",
+          src: (__webpack_require__(50839)/* ["default"] */ .A) + "",
+          width: "1201",
+          height: "535"
+        })
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 34656:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1809,6 +2055,8 @@ function _server_adf_linux_system_log_MDXContent(props = {}) {
 }
 
 
+// EXTERNAL MODULE: ./docs/common-items/_log-server-multi-file-category.mdx
+var _log_server_multi_file_category = __webpack_require__(74275);
 ;// CONCATENATED MODULE: ./docs/common-items/_server-adf-log-plugin.mdx
 
 
@@ -1828,6 +2076,8 @@ stats_category = "serverlog_stats" ## 로그 발생량 통계 카테고리
 * `stats_category`: 별도의 로그 수집 통계 데이터를 저장할 메트릭스 카테고리를 설정합니다. 통계 데이터 필드는 다음과 같습니다.
 
 */
+/*다중 파일 및 파일 분리 241014*/
+
 
 
 const _server_adf_log_plugin_toc = [{
@@ -1840,9 +2090,9 @@ const _server_adf_log_plugin_toc = [{
   "level": 3
 }, {
   "value": "옵션 설정",
-  "id": "옵션-설정",
+  "id": "server-log-settings",
   "level": 3
-}];
+}, ..._log_server_multi_file_category/* toc */.RM];
 function _server_adf_log_plugin_createMdxContent(props) {
   const _components = {
     code: "code",
@@ -1885,7 +2135,7 @@ function _server_adf_log_plugin_createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "옵션-설정",
+        id: "server-log-settings",
         children: "옵션 설정"
       }), (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -1973,7 +2223,7 @@ function _server_adf_log_plugin_createMdxContent(props) {
             }), ": 줄 단위 로그 검색 시 해당 옵션값으로 지정한 키워드가 검색될 경우 이전 로그에 병합합니다."]
           }), "\n"]
         }), "\n"]
-      })]
+      }), (0,jsx_runtime.jsx)(_log_server_multi_file_category/* default */.Ay, {})]
     })]
   });
 }
@@ -2728,6 +2978,26 @@ function Tabs(props) {
     }), String(isBrowser));
 };
 
+
+/***/ }),
+
+/***/ 50839:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-server-file-separation-af237414158ecee71d1f3a5b0d4eaf5c.png");
+
+/***/ }),
+
+/***/ 50124:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/log-server-multi-file-1e5a871211c7e49e273626f7b4c956cb.png");
 
 /***/ }),
 
