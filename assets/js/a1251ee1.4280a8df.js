@@ -1223,7 +1223,7 @@ function _java_exception_options_createMdxContent(props) {
         children: (0,jsx_runtime.jsx)(_components.code, {
           className: "language-ini",
           metastring: "title='whatap.conf'",
-          children: "# example\nhttpc_status_url_ignore_set=a/b/c:404,d/e/f:500\n"
+          children: "# example\nhttpc_status_url_ignore_set=/a/b/c:404,/d/e/f:500\n"
         })
       }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
         type: "tip",
