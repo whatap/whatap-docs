@@ -2055,8 +2055,6 @@ function _server_adf_linux_system_log_MDXContent(props = {}) {
 }
 
 
-// EXTERNAL MODULE: ./docs/common-items/_log-server-multi-file-category.mdx
-var _log_server_multi_file_category = __webpack_require__(74275);
 ;// CONCATENATED MODULE: ./docs/common-items/_server-adf-log-plugin.mdx
 
 
@@ -2076,8 +2074,6 @@ stats_category = "serverlog_stats" ## 로그 발생량 통계 카테고리
 * `stats_category`: 별도의 로그 수집 통계 데이터를 저장할 메트릭스 카테고리를 설정합니다. 통계 데이터 필드는 다음과 같습니다.
 
 */
-/*다중 파일 및 파일 분리 241014*/
-
 
 
 const _server_adf_log_plugin_toc = [{
@@ -2092,7 +2088,7 @@ const _server_adf_log_plugin_toc = [{
   "value": "옵션 설정",
   "id": "server-log-settings",
   "level": 3
-}, ..._log_server_multi_file_category/* toc */.RM];
+}];
 function _server_adf_log_plugin_createMdxContent(props) {
   const _components = {
     code: "code",
@@ -2223,7 +2219,7 @@ function _server_adf_log_plugin_createMdxContent(props) {
             }), ": 줄 단위 로그 검색 시 해당 옵션값으로 지정한 키워드가 검색될 경우 이전 로그에 병합합니다."]
           }), "\n"]
         }), "\n"]
-      }), (0,jsx_runtime.jsx)(_log_server_multi_file_category/* default */.Ay, {})]
+      })]
     })]
   });
 }
@@ -2243,6 +2239,8 @@ function _server_adf_log_plugin_MDXContent(props = {}) {
 
 // EXTERNAL MODULE: ./docs/common-items/_log-server-windows-event.mdx
 var _log_server_windows_event = __webpack_require__(34656);
+// EXTERNAL MODULE: ./docs/common-items/_log-server-multi-file-category.mdx
+var _log_server_multi_file_category = __webpack_require__(74275);
 ;// CONCATENATED MODULE: ./docs/server/advanced-feature.mdx
 
 
@@ -2293,6 +2291,8 @@ const metadata = {
 const assets = {
 
 };
+
+/*다중 파일 및 파일 분리 241014*/
 
 
 
@@ -2373,7 +2373,11 @@ const advanced_feature_toc = [{
   "value": "윈도우 이벤트 로그 옵션 설정",
   "id": "윈도우-이벤트-로그-옵션-설정",
   "level": 3
-}, ..._log_server_windows_event/* toc */.RM];
+}, ..._log_server_windows_event/* toc */.RM, {
+  "value": "로그 다중 파일 지정 및 분리",
+  "id": "log-multiple-file-specification-and-separation",
+  "level": 3
+}, ..._log_server_multi_file_category/* toc */.RM];
 function advanced_feature_createMdxContent(props) {
   const _components = {
     h2: "h2",
@@ -2473,6 +2477,12 @@ function advanced_feature_createMdxContent(props) {
         id: "윈도우-이벤트-로그-옵션-설정",
         children: "윈도우 이벤트 로그 옵션 설정"
       }), (0,jsx_runtime.jsx)(_log_server_windows_event/* default */.Ay, {})]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsx)(_components.h3, {
+        id: "log-multiple-file-specification-and-separation",
+        children: "로그 다중 파일 지정 및 분리"
+      }), (0,jsx_runtime.jsx)(_log_server_multi_file_category/* default */.Ay, {})]
     })]
   });
 }

@@ -93,7 +93,7 @@ const assets = {
 /*콘텐츠 상단에서는 테이블 방식으로 해당 분기 신규 기능 및 주요 변경 사항을 간단하게 확인할 수 있습니다. 상품별 서비스 및 에이전트 안내 구성은 다음과 같습니다.*/
 /*:::note
 
-개요 안내 항목의 릴리스 버전 태그 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code> 클릭 시 해당 버전의 릴리스 노트로 이동합니다.
+개요 안내 항목의 릴리스 버전 태그 <code class='changelog-service'><a href="../release-notes/service/service-2_0_x"><code class='changelog-service'>Service 2.0.0​</code></a></code> 클릭 시 해당 버전의 릴리스 노트로 이동합니다.
 
 :::*/
 
@@ -147,7 +147,7 @@ function _createMdxContent(props) {
       }), ") 전체적인 흐름을 살펴볼 수 있도록 개요를 해당 건 릴리스 버전과 함께 안내합니다. 릴리스 버전 태그(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
         class: "changelog-service",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/service/service-2_0_x",
+          href: "../release-notes/service/service-2_0_x",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
             class: "changelog-service",
             children: "Service 2.0.0​"

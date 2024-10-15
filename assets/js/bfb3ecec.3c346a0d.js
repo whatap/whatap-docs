@@ -621,8 +621,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_server_multi_file_category_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74275);
-/* harmony import */ var _common_items_log_server_windows_event_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34656);
+/* harmony import */ var _common_items_log_server_windows_event_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34656);
+/* harmony import */ var _common_items_log_server_multi_file_category_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(74275);
 /* harmony import */ var _common_items_log_java_start_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(62473);
 /* harmony import */ var _common_items_log_active_note_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(88539);
 
@@ -675,7 +675,6 @@ const assets = {
 
 };
 
-/*다중 파일 및 파일 분리*/
 
 
 
@@ -702,11 +701,15 @@ const toc = [{
   "value": "옵션 설정",
   "id": "server-log-settings",
   "level": 3
-}, ..._common_items_log_server_multi_file_category_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
+}, {
   "value": "윈도우 이벤트 로그 옵션 설정",
   "id": "윈도우-이벤트-로그-옵션-설정",
   "level": 3
-}, ..._common_items_log_server_windows_event_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
+}, ..._common_items_log_server_windows_event_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
+  "value": "다중 파일 지정 및 분리",
+  "id": "multiple-file-specification-and-separation",
+  "level": 3
+}, ..._common_items_log_server_multi_file_category_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
   "value": "로그 모니터링 활성화",
   "id": "로그-모니터링-활성화",
   "level": 2
@@ -956,13 +959,19 @@ function _createMdxContent(props) {
             }), ": 줄 단위 로그 검색 시 해당 옵션값으로 지정한 키워드가 검색될 경우 이전 로그에 병합합니다."]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_server_multi_file_category_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "윈도우-이벤트-로그-옵션-설정",
         children: "윈도우 이벤트 로그 옵션 설정"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_server_windows_event_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_server_windows_event_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "multiple-file-specification-and-separation",
+        children: "다중 파일 지정 및 분리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_server_multi_file_category_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {

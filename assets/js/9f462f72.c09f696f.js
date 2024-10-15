@@ -31,7 +31,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 /*#### 이용내역​
 
-- <code class="Feature">Feature</code> <Cmdname sid="side_billingPreview" className="uitext" /> 메뉴에서 사용량 가리기 옵션 추가 및 금액 표시 개선 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class='changelog-service'>Service 1.114.0​</code></a></code>*/
+- <code class="Feature">Feature</code> <Cmdname sid="side_billingPreview" className="uitext" /> 메뉴에서 사용량 가리기 옵션 추가 및 금액 표시 개선 <code class='changelog-service'><a href="../release-notes/service/service-1_114_x"><code class='changelog-service'>Service 1.114.0​</code></a></code>*/
 
 
 const toc = [{
@@ -86,7 +86,7 @@ function _createMdxContent(props) {
           }), " Apdex 위젯에서 선택할 수 있는 차트 종류 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -102,7 +102,7 @@ function _createMdxContent(props) {
           }), " 시리즈 타입의 위젯에 보조 테이블을 설정한 경우 테이블의 컬럼 노출을 변경할 수 있는 UI 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -128,7 +128,7 @@ function _createMdxContent(props) {
         }), " 메뉴에서 활성화된 모든 위젯을 닫을 수 있는 버튼 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -153,7 +153,7 @@ function _createMdxContent(props) {
         }), " 메뉴에서 제목 외에도 메시지 필드에 대한 검색 기능 지원 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.0​"
@@ -178,7 +178,7 @@ function _createMdxContent(props) {
         }), " 섹션의 왼쪽 목록에서 적용된 옵션의 상위 카테고리 분류를 제거하고 최종 옵션 항목만 보이도록 수정 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -203,7 +203,7 @@ function _createMdxContent(props) {
         }), " 메뉴의 기능 개선 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.0​"
@@ -223,7 +223,7 @@ function _createMdxContent(props) {
           }), " 다음 메뉴에서 KRW를 기준으로 JPY, USD 환율에 따라 금액 및 환율 업데이트 날짜 표시 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -242,7 +242,7 @@ function _createMdxContent(props) {
           }), " 메뉴에서 결제 정보 등록 시 통화 선택 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.6​"
@@ -261,7 +261,7 @@ function _createMdxContent(props) {
           }), " 메뉴에서 사용량 가리기 옵션 추가 및 금액 표시 개선 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -282,7 +282,7 @@ function _createMdxContent(props) {
           }), " 사이드 바 너비 조정 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+              href: "../release-notes/service/service-1_112_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.112.0​"
@@ -301,7 +301,7 @@ function _createMdxContent(props) {
           }), " 페이지에서 더 나은 사용자 경험을 위한 디자인 개편 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+              href: "../release-notes/service/service-1_112_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.112.0​"
@@ -362,7 +362,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 탭에서 데이터가 없는 경우 다음 상황에 맞는 메시지를 출력하도록 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -387,7 +387,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 뷰 모드에서 프로젝트 필터 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -406,7 +406,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 메뉴 개편 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -422,7 +422,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 중복 이용되는 지표의 명칭에 대한 통일화, 표준화 작업 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+            href: "../release-notes/service/service-1_112_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.112.0​"
@@ -444,7 +444,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 컬럼 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.3​"
@@ -472,7 +472,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 필터를 제외한 다른 필터를 적용할 수 없다는 안내 메시지 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.4​"
@@ -494,7 +494,7 @@ function _import_23q4_service_Application_createMdxContent(props) {
         }), " 메뉴에서 프리셋 저장 시 에이전트 선택 상태까지 저장할 수 있는 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.10​"
@@ -568,7 +568,7 @@ function _import_agent_23q4_java_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/java/java-2_2_19",
+          href: "../release-notes/java/java-2_2_19",
           children: "Java Agent v2.2.19"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -610,7 +610,7 @@ function _import_agent_23q4_java_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/java/java-2_2_20",
+          href: "../release-notes/java/java-2_2_20",
           children: "Java Agent v2.2.20"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -667,7 +667,7 @@ function _import_agent_23q4_java_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/java/java-2_2_22",
+          href: "../release-notes/java/java-2_2_22",
           children: "Java Agent v2.2.22"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -686,7 +686,7 @@ function _import_agent_23q4_java_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/java/java-2_2_24",
+          href: "../release-notes/java/java-2_2_24",
           children: "Java Agent v2.2.24"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -707,7 +707,7 @@ function _import_agent_23q4_java_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/java/java-2_2_25",
+          href: "../release-notes/java/java-2_2_25",
           children: "Java Agent v2.2.25"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -769,7 +769,7 @@ function _import_agent_23q4_nodejs_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_83",
+          href: "../release-notes/nodejs/nodejs-0_4_83",
           children: "Node.js Agent v0.4.83"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -838,7 +838,7 @@ function _import_agent_23q4_dotnet_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_1_6",
+          href: "../release-notes/dotnet/dotnet-2_1_6",
           children: ".NET Agent v2.1.6"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -866,7 +866,7 @@ function _import_agent_23q4_dotnet_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_1_7",
+          href: "../release-notes/dotnet/dotnet-2_1_7",
           children: ".NET Agent v2.1.7"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -887,7 +887,7 @@ function _import_agent_23q4_dotnet_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_0",
+          href: "../release-notes/dotnet/dotnet-2_2_0",
           children: ".NET Agent v2.2.0"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -971,7 +971,7 @@ function _import_23q4_service_Server_createMdxContent(props) {
         }), " 차트에 합계 차트선을 같이 표시하도록 변경 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.0​"
@@ -997,7 +997,7 @@ function _import_23q4_service_Server_createMdxContent(props) {
           }), " 옵션 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1016,7 +1016,7 @@ function _import_23q4_service_Server_createMdxContent(props) {
           }), " 메뉴에서 기본(Default) 알림의 이름을 수정할 수 있도록 변경하고, '기본' 태그를 별도 표시하도록 수정 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1074,7 +1074,7 @@ function _import_agent_23q4_server_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/server/server-2_4_7",
+          href: "../release-notes/server/server-2_4_7",
           children: "Server Agent v2.4.7"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -1115,7 +1115,7 @@ const _import_23q4_service_Kubernetes_contentTitle = (/* unused pure expression 
 
 /*#### 기타​
 
-- <code class="Feature">Feature</code> 네임스페이스 프로젝트의 실험실 메뉴로 <Cmdname sid="pendingPod" className="uitext" /> 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-1_114_x"><code class='changelog-service'>Service 1.114.0​</code></a></code>*/
+- <code class="Feature">Feature</code> 네임스페이스 프로젝트의 실험실 메뉴로 <Cmdname sid="pendingPod" className="uitext" /> 추가 <code class='changelog-service'><a href="../release-notes/service/service-1_114_x"><code class='changelog-service'>Service 1.114.0​</code></a></code>*/
 
 
 const _import_23q4_service_Kubernetes_toc = [{
@@ -1157,7 +1157,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 메뉴에서 블록 색상 표시 지표에 애플리케이션 관련 필드도 선택할 수 있도록 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+              href: "../release-notes/service/service-1_112_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.112.0​"
@@ -1176,7 +1176,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1200,7 +1200,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 메뉴에서 컨테이너 정보 조회 테이블에 데이터 항목 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1227,7 +1227,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 탭 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1246,7 +1246,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 메뉴에서 1분간 사라진 컨테이너/Pod의 블록을 표시하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1270,7 +1270,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 메뉴에서 쿠버네티스 에이전트 설치 정상 여부 확인 메시지 표시 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1289,7 +1289,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 메뉴에서 문서 가이드, 영상 가이드 링크 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1319,7 +1319,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 컬럼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1338,7 +1338,7 @@ function _import_23q4_service_Kubernetes_createMdxContent(props) {
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1376,9 +1376,9 @@ const _import_23q4_service_Database_contentTitle = (/* unused pure expression or
 
 
 /*#### Database <code class="my">V2</code>*/
-/*- <code class="Feature">Feature</code> <b>MySQL</b> 프로젝트에서 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <span class="uitext">MySQL SQL 통계</span> 메뉴 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class='changelog-service'>Service 1.110.0​</code></a></code>*/
-/*- <code class="Feature">Feature</code> <b>PostgreSQL</b> 프로젝트에서 다음 메뉴 추가 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class='changelog-service'>Service 1.110.0​</code></a></code>*/
-/*- <code class="Feature">Feature</code> <Cmdname sid="side_dbMonitoring" className="uitext" /> 메뉴에서 메트릭스 선택 화면에 LazyLoad 속성 적용 <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-1_110_x"><code class='changelog-service'>Service 1.110.0​</code></a></code>*/
+/*- <code class="Feature">Feature</code> <b>MySQL</b> 프로젝트에서 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <span class="uitext">MySQL SQL 통계</span> 메뉴 추가 <code class='changelog-service'><a href="../release-notes/service/service-1_110_x"><code class='changelog-service'>Service 1.110.0​</code></a></code>*/
+/*- <code class="Feature">Feature</code> <b>PostgreSQL</b> 프로젝트에서 다음 메뉴 추가 <code class='changelog-service'><a href="../release-notes/service/service-1_110_x"><code class='changelog-service'>Service 1.110.0​</code></a></code>*/
+/*- <code class="Feature">Feature</code> <Cmdname sid="side_dbMonitoring" className="uitext" /> 메뉴에서 메트릭스 선택 화면에 LazyLoad 속성 적용 <code class='changelog-service'><a href="../release-notes/service/service-1_110_x"><code class='changelog-service'>Service 1.110.0​</code></a></code>*/
 
 
 const _import_23q4_service_Database_toc = [{
@@ -1418,7 +1418,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 화면의 UI 개선 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1446,7 +1446,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 테이블 접는(folding) 버튼 추가, 이제 그래프 차트 영역을 더 넓은 화면에서 확인할 수 있습니다. ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1468,7 +1468,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 막대 그래프를 클릭하면 5분 동안의 상세 통계 정보 창을 표시하는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1493,7 +1493,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴로 이동할 수 있는 버튼 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+              href: "../release-notes/service/service-1_112_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.112.0​"
@@ -1515,7 +1515,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 리플리케이션 상태 이상 경고 표시 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1547,7 +1547,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1569,7 +1569,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 메트릭스 선택 화면에 LazyLoad 속성 적용 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1594,7 +1594,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 신규 기능 설명 모달 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.7​"
@@ -1620,7 +1620,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 프로젝트에서 다음 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1660,7 +1660,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 메트릭스 선택 화면에 LazyLoad 속성 적용 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.0​"
@@ -1685,7 +1685,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 메트릭스/복합 메트릭스 이벤트의 템플릿 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1710,7 +1710,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), ", 신규 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1729,7 +1729,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " Plan 조회를 json 형식으로 조회할 수 있는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+              href: "../release-notes/service/service-1_114_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.114.0​"
@@ -1757,7 +1757,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
           }), " 메뉴에서 신규 기능 설명 모달 추가 ", (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: (0,jsx_runtime.jsx)("a", {
-              href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+              href: "../release-notes/service/service-1_110_x",
               children: (0,jsx_runtime.jsx)("code", {
                 class: "changelog-service",
                 children: "Service 1.110.7​"
@@ -1781,7 +1781,7 @@ function _import_23q4_service_Database_createMdxContent(props) {
         }), "로 변경 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+            href: "../release-notes/service/service-1_112_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.112.0​"
@@ -1860,7 +1860,7 @@ function _import_agent_23q4_dbx_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/db/dbx-1_6_11",
+          href: "../release-notes/db/dbx-1_6_11",
           children: "DBX v1.6.11"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -1882,7 +1882,7 @@ function _import_agent_23q4_dbx_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/db/dbx-1_6_12",
+          href: "../release-notes/db/dbx-1_6_12",
           children: "DBX v1.6.12"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -1920,7 +1920,7 @@ function _import_agent_23q4_dbx_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/db/dbx-1_6_15",
+          href: "../release-notes/db/dbx-1_6_15",
           children: "DBX v1.6.15"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -2004,7 +2004,7 @@ function _import_agent_23q4_xos_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/db/xos-1_1_6j",
+          href: "../release-notes/db/xos-1_1_6j",
           children: "xos v1.1.6j"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -2074,7 +2074,7 @@ function _import_23q4_service_URL_createMdxContent(props) {
       }), "를 선택할 수 있는 UI 추가 ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+          href: "../release-notes/service/service-1_112_x",
           children: (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: "Service 1.112.3​"
@@ -2136,7 +2136,7 @@ function _import_23q4_service_Browser_createMdxContent(props) {
         }), " 메뉴에서 국가 및 지역별 리스트, 국가별 지역 지도를 확인할 수 있는 지도 위젯 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -2158,7 +2158,7 @@ function _import_23q4_service_Browser_createMdxContent(props) {
         }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+            href: "../release-notes/service/service-1_112_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.112.0​"
@@ -2180,7 +2180,7 @@ function _import_23q4_service_Browser_createMdxContent(props) {
         }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+            href: "../release-notes/service/service-1_112_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.112.0​"
@@ -2205,7 +2205,7 @@ function _import_23q4_service_Browser_createMdxContent(props) {
         }), " 기능에서 사용자 편의성을 위한 UI 개선 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.0​"
@@ -2263,7 +2263,7 @@ function _import_agent_23q4_browser_createMdxContent(props) {
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/browser/browser-1_3_3",
+          href: "../release-notes/browser/browser-1_3_3",
           children: "Browser Agent v1.3.3"
         })
       }), " ", (0,jsx_runtime.jsx)("code", {
@@ -2361,7 +2361,7 @@ function _import_23q4_service_Cloud_createMdxContent(props) {
       }), " 메뉴 추가 ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
         children: (0,jsx_runtime.jsx)("a", {
-          href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+          href: "../release-notes/service/service-1_112_x",
           children: (0,jsx_runtime.jsx)("code", {
             class: "changelog-service",
             children: "Service 1.112.0​"
@@ -2421,7 +2421,7 @@ function _import_23q4_service_Log_createMdxContent(props) {
         }), " 메뉴에서 로그 검색 필터 문법 가이드 UI 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -2455,7 +2455,7 @@ function _import_23q4_service_Log_createMdxContent(props) {
         }), " 버튼을 선택하세요. ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_110_x",
+            href: "../release-notes/service/service-1_110_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.110.0​"
@@ -2483,7 +2483,7 @@ function _import_23q4_service_Log_createMdxContent(props) {
         }), "의 검색 값 입력 시 예약어에 대한 유효성 검증 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_112_x",
+            href: "../release-notes/service/service-1_112_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.112.0​"
@@ -2505,7 +2505,7 @@ function _import_23q4_service_Log_createMdxContent(props) {
         }), "의 설정 내용을 JSON으로 내보내거나 가져오는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.0​"
@@ -2530,7 +2530,7 @@ function _import_23q4_service_Log_createMdxContent(props) {
         }), "의 내용을 JSON으로 내보내거나 가져오는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
-            href: "https://docs.whatap.io/release-notes/service/service-1_114_x",
+            href: "../release-notes/service/service-1_114_x",
             children: (0,jsx_runtime.jsx)("code", {
               class: "changelog-service",
               children: "Service 1.114.0​"
