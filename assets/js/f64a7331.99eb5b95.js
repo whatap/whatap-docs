@@ -449,7 +449,7 @@ const frontMatter = {
 	id: 'aerospike-introduction',
 	title: 'Aerospike 모니터링',
 	description: '이 문서는 Aerospike 모니터링 상품에 대한 소개 페이지입니다.',
-	displyed_sidebar: 'featuremonitorSidebar',
+	displayed_sidebar: 'featuremonitorSidebar',
 	toc_max_heading_level: 2,
 	keywords: [
 		'Aerospike',
@@ -475,7 +475,7 @@ const metadata = {
     "id": "aerospike-introduction",
     "title": "Aerospike 모니터링",
     "description": "이 문서는 Aerospike 모니터링 상품에 대한 소개 페이지입니다.",
-    "displyed_sidebar": "featuremonitorSidebar",
+    "displayed_sidebar": "featuremonitorSidebar",
     "toc_max_heading_level": 2,
     "keywords": [
       "Aerospike",

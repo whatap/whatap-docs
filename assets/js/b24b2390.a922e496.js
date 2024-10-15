@@ -211,7 +211,7 @@ const frontMatter = {
 	id: 'introduction',
 	title: 'Java 모니터링',
 	description: 'Java 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다. 이 문서는 Java 모니터링 상품에 대한 소개 페이지입니다.',
-	displyed_sidebar: 'javaSidebar',
+	displayed_sidebar: 'javaSidebar',
 	hide_table_of_contents: true,
 	keywords: [
 		'Java',
@@ -237,7 +237,7 @@ const metadata = {
     "id": "introduction",
     "title": "Java 모니터링",
     "description": "Java 환경에서 동작하는 모든 애플리케이션 서버를 모니터링할 수 있습니다. 이 문서는 Java 모니터링 상품에 대한 소개 페이지입니다.",
-    "displyed_sidebar": "javaSidebar",
+    "displayed_sidebar": "javaSidebar",
     "hide_table_of_contents": true,
     "keywords": [
       "Java",

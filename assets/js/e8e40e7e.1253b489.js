@@ -64,7 +64,7 @@ const assets = {
 
 /*
 
-displyed_sidebar: featuremonitorSidebar
+displayed_sidebar: featuremonitorSidebar
 
 */
 /*포괄적인 모니터링 기능을 사용자 친화적인 인터페이스와 강력한 지원과 통합한*/

@@ -1,5 +1,115 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52217],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[99105],{
+
+/***/ 76808:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    a: "a",
+    admonition: "admonition",
+    em: "em",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {InDoc, UI} = _components;
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!UI) _missingMdxReference("UI", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["홈 화면 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "피쳐 프로젝트"
+      }), "(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        class: "Features",
+        children: "Features"
+      }), ") 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "경고 알림"
+        })
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "이벤트 설정"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      pages: "kafka-introduction",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+          children: props.name
+        }), " 모니터링은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "복합 메트릭스"
+          })
+        }), " 알림을 기본으로 제공합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["복합 메트릭스 이벤트에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "https://docs.whatap.io/server/metric-warning-notice#composite-metrics-event",
+            children: "다음 문서"
+          }), "를 확인하세요."]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+      pages: "aerospike-introduction",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+          children: props.name
+        }), " 모니터링은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "메트릭스"
+          })
+        }), " 알림을 기본으로 제공합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["메트릭스 이벤트에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "https://docs.whatap.io/server/metric-warning-notice",
+            children: "다음 문서"
+          }), "를 확인하세요."]
+        })]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
 
 /***/ 17003:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -315,7 +425,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 44322:
+/***/ 52812:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -328,134 +438,107 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17003);
-/* harmony import */ var _site_src_components_TR__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21024);
-/* harmony import */ var _common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(46368);
+/* harmony import */ var _common_items_import_feature_alert_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(76808);
+/* harmony import */ var _site_src_components_TR__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21024);
+/* harmony import */ var _common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(46368);
 
 
 const frontMatter = {
-	id: 'apache-pulsar-introduction',
-	title: 'Apache Pulsar 모니터링',
-	description: '이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.',
-	displyed_sidebar: 'featuremonitorSidebar',
+	id: 'kafka-introduction',
+	title: 'KAFKA 모니터링',
+	description: '이 문서는 KAFKA 모니터링 상품에 대한 소개 페이지입니다.',
+	displayed_sidebar: 'featuremonitorSidebar',
 	toc_max_heading_level: 2,
 	keywords: [
-		'Apache Pulsar',
+		'KAFKA',
 		'Feature'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "features/apache-pulsar-introduction",
-  "title": "Apache Pulsar 모니터링",
-  "description": "이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.",
-  "source": "@site/docs/features/apache-pulsar-introduction.mdx",
+  "id": "features/kafka-introduction",
+  "title": "KAFKA 모니터링",
+  "description": "이 문서는 KAFKA 모니터링 상품에 대한 소개 페이지입니다.",
+  "source": "@site/docs/features/kafka-introduction.mdx",
   "sourceDirName": "features",
-  "slug": "/features/apache-pulsar-introduction",
-  "permalink": "/whatap-docs/features/apache-pulsar-introduction",
+  "slug": "/features/kafka-introduction",
+  "permalink": "/whatap-docs/features/kafka-introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/features/apache-pulsar-introduction.mdx",
+  "editUrl": "undefined/docs/features/kafka-introduction.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "apache-pulsar-introduction",
-    "title": "Apache Pulsar 모니터링",
-    "description": "이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.",
-    "displyed_sidebar": "featuremonitorSidebar",
+    "id": "kafka-introduction",
+    "title": "KAFKA 모니터링",
+    "description": "이 문서는 KAFKA 모니터링 상품에 대한 소개 페이지입니다.",
+    "displayed_sidebar": "featuremonitorSidebar",
     "toc_max_heading_level": 2,
     "keywords": [
-      "Apache Pulsar",
+      "KAFKA",
       "Feature"
     ],
     "isTranslationMissing": false
   },
   "sidebar": "featuremonitorSidebar",
   "previous": {
-    "title": "Aerospike",
-    "permalink": "/whatap-docs/features/aerospike-introduction"
+    "title": "피쳐 프로젝트",
+    "permalink": "/whatap-docs/features/introduction"
   },
   "next": {
-    "title": "vCenter",
-    "permalink": "/whatap-docs/features/vcenter-introduction"
+    "title": "Aerospike",
+    "permalink": "/whatap-docs/features/aerospike-introduction"
   }
 };
 const assets = {
 
 };
 
-/*실시간 데이터 처리와 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 아파치 펄사를 사용하면 초당 수백만 건의 트랜잭션을 처리하며, 데이터 일관성과 성능을 유지하면서 대규모 데이터 작업을 효율적으로 수행할 수 있습니다. 따라서 아파치 펄사의 성능과 상태를 모니터링하는 것은 시스템 안정성과 최적화를 위해 매우 중요합니다.*/
-/*#### 클러스터 상태 개요
+/***피쳐 프로젝트**(<code class='Features'>Features</code>) 생성 후 자동으로 ***KAFKA 에이전트 설치*** 화면으로 이동합니다. 다음 안내대로 설치를 진행하세요.
 
-- **CPU, Memory, Storage 사용량**: 클러스터 전체 자원 사용 현황을 표시합니다.
+1. **프로젝트 액세스 키**를 확인하세요.
 
-- **ZooKeeper, Broker, Bookie 상태**: 노드 수와 가용성을 보여줍니다.
+프로젝트 액세스 키는 와탭 서비스 활성화를 위한 고유 ID 입니다. <code class='my'>프로젝트 액세스 키 발급받기</code> 버튼을 선택하세요.
 
-#### 메시징 메트릭
+1. **설치 스크립트**를 생성하세요.
 
-- **Messaging Storage**: 메시징에 사용된 총 스토리지를 시각화합니다.
+다음 명령어를 실행해 사용자 환경을 자동으로 인식 후 카프카가 설치된 서버에 설치 스크립트를 생성하세요.
 
-- **Message Rate**: 초당 들어오고 나가는 메시지 속도를 표시합니다.
+```bash
+curl http://repo.whatap.io/telegraf/feature/kafka/install_kafka_monitoring.sh -o install_kafka_monitoring.sh
+```
 
-- **Messaging Backlog**: 처리되지 않은 메시지 수를 추적합니다.
+다음 명령어를 실행해 카프카 에이전트를 설치하세요.
 
-- **처리량**: 초당 바이트로 처리량을 표시합니다.
+```bash
+chmod +x install_kafka_monitoring.sh
+sudo ./install_kafka_monitoring.sh "x604pf485d1kk-z6q14nuc509pk3-x39moealrfodum" "13.124.11.223/13.209.172.35"
+```
 
-#### 주요 토픽 및 백로그
+1. 에이전트 설정 및 재시작 후 **모니터링**을 **시작**하세요.
 
-- **상위 10개 토픽 백로그**: 백로그가 가장 많은 토픽을 나열하여 병목 현상을 식별합니다.
+카프카에 Jolokia 에이전트 설정을 위해 다음 명령어를 실행 후 재시작하세요.
 
-- **상위 10개 복제 백로그**: 복제 프로세스를 모니터링하기 위한 복제 백로그를 보여줍니다.
+```bash
+#cd {kafka home directory}/bin
+sed -i '/^#!/a export KAFKA_OPTS='\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\''' kafka-server-start.sh
+./kafka-server-stop.sh
+./kafka-server-start.sh
+```*/
+/*
+홈 화면 > **피쳐 프로젝트**(<code class='Features'>Features</code>) 선택 > ***경고 알림*** > ***이벤트 설정***
 
-#### 노드별 메트릭
-
-- **노드 CPU 및 메모리 사용량**: 클러스터 내 개별 노드의 사용 통계를 제공합니다.
-
-- **오프로드된 크기**: 클러스터에서 오프로드된 데이터 양을 추적합니다.
+와탭 카프카 모니터링은 ***복합 메트릭스*** 알림을 기본으로 제공합니다.
 
 :::note[]
 
-**주요 모니터링 메트릭**
+복합 메트릭스 이벤트에 대한 자세한 내용은 [다음 문서](https://docs.whatap.io/server/metric-warning-notice#composite-metrics-event)를 확인하세요.
 
-* **CPU 사용량**
+:::*/
 
-CPU 사용률을 추적하여 과부하를 방지합니다.
-
-* **메모리 사용량**
-
-메모리 사용을 모니터링하여 메모리 부족 오류를 방지합니다.
-
-* **스토리지 사용량**
-
-충분한 스토리지가 있는지 확인합니다.
-
-* **메시지 속도 및 처리량**
-
-높은 속도는 성능 병목을 나타낼 수 있습니다.
-
-* **백로그 메트릭**
-
-증가하는 백로그는 소비 애플리케이션에 문제가 있음을 나타낼 수 있습니다.
-
-:::
-
-### 경고 알림
-
-홈 화면 > **피쳐 프로젝트**(<code class='Features'>Features</code>) 선택 > ***경고 알림*** > ***이벤트 설정***
-
-클러스터 상태 유지를 위해 다음과 같은 시나리오에 대한 알림을 설정하세요
-
-- **CPU 사용량**: CPU 사용량이 80%를 초과할 때 알림.
-
-- **메모리 사용량**: 메모리 사용량이 75%를 초과할 때 알림.
-
-- **스토리지 사용량**: 스토리지 사용량이 85%를 초과할 때 알림.
-
-- **메시지 백로그**: 백로그가 일정 임계값(예: 10,000 메시지)을 초과할 때 알림.
-
-- **ZooKeeper, 브로커, Bookie 상태**: 노드가 다운될 때 알림.*/
 
 
 
@@ -469,35 +552,84 @@ const toc = [{
   "value": "피쳐 프로젝트 생성하기",
   "id": "피쳐-프로젝트-생성하기",
   "level": 3
-}, ..._common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "Apache Pulsar 에이전트 설치",
-  "id": "apache-pulsar-에이전트-설치",
+}, ..._common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+  "value": "카프카 에이전트 설치",
+  "id": "카프카-에이전트-설치",
   "level": 3
 }, ..._common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "주요 메뉴 알아보기",
   "id": "주요-메뉴-알아보기",
   "level": 2
 }, {
-  "value": "대시보드",
-  "id": "대시보드",
+  "value": "맞춤형 대시보드",
+  "id": "맞춤형-대시보드",
   "level": 3
 }, {
-  "value": "대시보드 상단 요약 정보",
-  "id": "대시보드-상단-요약-정보",
+  "value": "Kafka Overview",
+  "id": "kafka-overview",
   "level": 5
 }, {
-  "value": "성능 그래프",
-  "id": "성능-그래프",
+  "value": "Java Virtual Machine",
+  "id": "java-virtual-machine",
   "level": 5
 }, {
-  "value": "상위 10개 항목 백로그",
-  "id": "상위-10개-항목-백로그",
+  "value": "Linux Disk I/O",
+  "id": "linux-disk-io",
   "level": 5
-}];
+}, {
+  "value": "Processing Performance",
+  "id": "processing-performance",
+  "level": 5
+}, {
+  "value": "Requests",
+  "id": "requests",
+  "level": 5
+}, {
+  "value": "Errors",
+  "id": "errors",
+  "level": 5
+}, {
+  "value": "Offset Commit",
+  "id": "offset-commit",
+  "level": 5
+}, {
+  "value": "Metadata",
+  "id": "metadata",
+  "level": 5
+}, {
+  "value": "Topic",
+  "id": "topic",
+  "level": 5
+}, {
+  "value": "Consume Lag",
+  "id": "consume-lag",
+  "level": 5
+}, {
+  "value": "Broker Performance - Produce",
+  "id": "broker-performance---produce",
+  "level": 5
+}, {
+  "value": "Broker Performance - Consume",
+  "id": "broker-performance---consume",
+  "level": 5
+}, {
+  "value": "Broker Performance - Fetch Follower",
+  "id": "broker-performance---fetch-follower",
+  "level": 5
+}, {
+  "value": "ZooKeeper",
+  "id": "zookeeper",
+  "level": 5
+}, {
+  "value": "경고 알림",
+  "id": "경고-알림",
+  "level": 3
+}, ..._common_items_import_feature_alert_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
     em: "em",
     h2: "h2",
     h3: "h3",
@@ -508,7 +640,7 @@ function _createMdxContent(props) {
     section: "section",
     strong: "strong",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Details, ScrollToLink} = _components;
   if (!Details) _missingMdxReference("Details", true);
@@ -530,22 +662,22 @@ function _createMdxContent(props) {
           children: "Features"
         }), ")를 도입하였습니다. 피쳐 프로젝트는 기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다. 와탭 피쳐 프로젝트를 통해 서비스의 안정성과 성능을 더욱 효과적으로 관리해 보세요."]
       })]
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "아파치 펄사는 대규모의 실시간 데이터를 효율적으로 처리할 수 있도록 설계된 분산형 메시징 및 스트리밍 플랫폼입니다. 높은 확장성과 내장된 멀티 테넌시 기능을 제공하며 메시지의 지리적인 복제 및 지속성을 통해 신뢰성과 유연성을 보장합니다. 아파치 펄사의 복잡한 운영 환경에서 성능 및 안정성을 유지하기 위해 모니터링이 중요합니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "카프카는 실시간 데이터 피드를 처리하고 안정적으로 저장하며 전송하는 작업에 최적화된 분산형 스트리밍 플랫폼입니다. 카프카를 통해 데이터 스트림의 이상 현상을 추적할 수 있습니다. 카프카는 분산형 시스템이기 때문에 모니터링을 통해 각 브로커, 토픽, 파티션, 프로듀서 및 컨슈머의 상태를 상세히 확인할 필요가 있습니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭은 새로운 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "피쳐 프로젝트"
       }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar"
+          children: "KAFKA"
         })
-      }), " 모니터링을 제공합니다. 와탭을 통해 아파치 펄사 클러스터의 성능과 상태를 실시간으로 추적하여 메시지 지연, 처리량 저하, 리소스 과부하 등과 같은 문제를 조기에 감지하고 해결할 수 있습니다."]
+      }), " 모니터링을 제공합니다. 카프카 클러스터의 성능과 상태를 추적하여 문제를 조기에 감지하고 해결할 수 있도록 돕습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "지표 모니터링"
-          }), ":  각 노드에 대한 CPU, 메모리 사용량과 같은 다양한 시스템 지표 및 메시지 처리량, 지연 시간, 큐 크기 등 중요한 운영 지표를 제공합니다."]
+          }), ": 카프카 브로커, 토픽, 파티션, 프로듀서, 컨슈머의 다양한 지표를 실시간으로 모니터링합니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -563,16 +695,16 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar"
+          children: "KAFKA"
         })
-      }), " 모니터링을 통해 아파치 펄사 클러스터의 복잡한 운영 환경을 효과적으로 관리해 보세요."]
+      }), " 모니터링을 통해 카프카의 복잡한 운영 환경을 효과적으로 관리해 보세요."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "설치하기",
         children: "설치하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 아파치 펄사 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."
+        children: "와탭 카프카 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["와탭 모니터링 서비스를 사용하기 위해서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "https://www.whatap.io/ko/signup/",
@@ -587,16 +719,16 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "지원 환경"
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
-            anchor: "apache-pulsar-supported-env"
+            anchor: "kafka-supported-env"
           })]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "와탭 아파치 펄사 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요."
+          children: "와탭 카프카 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Apache Pulsar"
-              }), ": Apache Pulsar 3.3.x 이상"]
+                children: "Kafka"
+              }), ": Apache Kafka 3.x 이상"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -624,14 +756,14 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "피쳐-프로젝트-생성하기",
         children: "피쳐 프로젝트 생성하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "apache-pulsar-에이전트-설치",
-        children: "Apache Pulsar 에이전트 설치"
+        id: "카프카-에이전트-설치",
+        children: "카프카 에이전트 설치"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-        name: "Apache Pulsar 에이전트 설치"
+        name: "KAFKA 에이전트 설치"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
@@ -642,8 +774,8 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "대시보드",
-        children: "대시보드"
+        id: "맞춤형-대시보드",
+        children: "맞춤형 대시보드"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["홈 화면 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "피쳐 프로젝트"
@@ -652,183 +784,171 @@ function _createMdxContent(props) {
           children: "Features"
         }), ") 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar"
+            children: "KAFKA"
           })
         }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar 대시보드"
+            children: "KAFKA 대시보드"
           })
         })]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 아파치 펄사 모니터링은 아파치 펄사 클러스터의 성능과 상태 등 전체 현황을 한 눈에 파악할 수 있도록 다양한 지표를 실시간으로 모니터링합니다. 각 지표를 정기적으로 확인하여 클러스터가 최적의 상태를 유지하도록 관리할 수 있습니다."
+        children: "와탭 카프카 모니터링은 카프카 클러스터의 성능과 상태 등 전체 현황을 한 눈에 파악할 수 있도록 카프카 브로커, 토픽, 파티션, 프로듀서, 컨슈머의 다양한 지표를 실시간으로 모니터링합니다. 각 지표를 정기적으로 확인하여 클러스터가 최적의 상태를 유지하도록 관리할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["와탭이 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar 대시보드"
-          })
+        children: ["와탭이 제공하는 카프카 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "맞춤형 대시보드"
         }), "는 다음의 세 가지 프리셋으로 구성되어있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Overview"
+                children: "Kafka Default"
               })
             })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터의 전반적인 성능과 상태를 한눈에 파악할 수 있도록 주요 메트릭을 종합적으로 시각화한 대시보드입니다. 클러스터 운영자가 실시간으로 시스템 상태를 모니터링하고 성능 저하를 신속히 감지하는 것에 유용합니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "클러스터 기능의 정상 작동 여부"
+            }), "를 파악할 수 있는 기본 대시보드입니다. 카프카 클러스터의 전반적인 상태를 실시간으로 모니터링하고, 성능 저하나 장애를 사전에 감지할 수 있도록 돕습니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "대시보드-상단-요약-정보",
-              children: "대시보드 상단 요약 정보"
+              id: "kafka-overview",
+              children: "Kafka Overview"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "CPU"
+                      children: "Active Controller Count"
                     })
-                  }), ": 클러스터에서 사용 중인 CPU 코어의 수를 표시합니다."]
+                  }), ": 현재 활성 상태인 컨트롤러의 수입니다. 컨트롤러는 Kafka 클러스터에서 파티션 리더와 복제를 관리합니다. 보통 하나의 활성 컨트롤러가 존재합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Memory"
+                      children: "Brokers Online"
                     })
-                  }), ": 클러스터에서 사용 중인 총 메모리 용량과 현재 메모리 사용량을 나타냅니다."]
+                  }), ": 온라인 상태의 브로커 수입니다. 브로커는 메시지를 저장하고 클라이언트 요청을 처리하는 역할을 합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "ZooKeeper"
+                      children: "Online Partitions"
                     })
-                  }), ": 현재 운영 중인 ZooKeeper 인스턴스의 수와 가용 상태를 보여줍니다."]
+                  }), ": 온라인 상태의 파티션 수입니다. 각 토픽은 여러 파티션으로 나뉘며, 각 파티션은 여러 브로커에 걸쳐 저장됩니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Broker"
+                      children: "Preferred Replica Imbalance"
                     })
-                  }), ": 활성화된 브로커의 수와 상태를 표시합니다."]
+                  }), ": 선호되는 리플리카의 불균형을 나타냅니다. 이 값이 높으면 특정 브로커에 리플리카가 집중되어 있음을 의미합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Bookies"
+                      children: "Under Replicated Partitions"
                     })
-                  }), ": 아파치 펄사에서 사용하는 BookKeeper 노드(Bookies)의 수와 상태를 나타냅니다."]
+                  }), ": 복제되지 않은 파티션 수입니다. 이 값이 0이 아닌 경우 데이터 손실 위험이 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Broker Storage Size"
+                      children: "Leader Count per Broker"
                     })
-                  }), ": 브로커에 저장된 데이터의 총 용량을 보여줍니다."]
+                  }), ": 각 브로커별 리더 파티션 수를 나타냅니다. 리더 파티션은 클라이언트 요청을 직접 처리하는 파티션입니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Backlog"
+                      children: "Unclean Leader Elections"
                     })
-                  }), ": 처리되지 않은 메시지의 총 크기를 표시하여 메시지 처리의 지연 상태를 파악할 수 있습니다."]
+                  }), ": 비정상적인 리더 선출 수입니다. 이 값이 높으면 클러스터 안정성에 문제가 있을 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Under min ISR Partitions"
+                    })
+                  }), ": 최소 ISR(동기화된 복제본) 이하의 파티션 수입니다. ISR은 데이터의 내구성을 보장합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Offline Partitions Count"
+                    })
+                  }), ": 오프라인 상태의 파티션 수입니다. 파티션이 오프라인 상태면 해당 파티션의 데이터에 접근할 수 없습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Broker Network Throughput"
+                    })
+                  }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "BytesOutPerSec"
+                  }), "/", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "BytesInPerSec"
+                  }), ": 브로커의 네트워크 처리량을 나타냅니다. 초당 송신/수신 바이트 수를 그래프로 표시합니다."]
                 }), "\n"]
               }), "\n"]
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "성능-그래프",
-              children: "성능 그래프"
+              id: "java-virtual-machine",
+              children: "Java Virtual Machine"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messaging Storage"
+                      children: "CPU Usage"
                     })
-                  }), ": 시간에 따른 메시지 저장소 사용량을 표시하여 저장소 용량 변동성을 추적합니다."]
+                  }), ": JVM의 CPU 사용률을 나타냅니다. CPU 사용률이 높으면 성능에 영향을 미칠 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Message Rate(msg/s)"
+                      children: "JVM Memory Used"
                     })
-                  }), ": 초당 처리되는 메시지 수를 그래프로 보여주며, 클러스터의 메시지 처리 속도를 모니터링합니다."]
+                  }), ": JVM이 사용 중인 메모리 양을 나타냅니다. 주기적으로 메모리가 증가하고 Garbage Collection(GC) 후에 감소하는 패턴을 보입니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messaging Backlog"
+                      children: "Time Spent in GC"
                     })
-                  }), ": 시간 경과에 따라 처리되지 않고 대기 중인 메시지의 수를 시각화하여, 메시지 처리 지연을 신속히 파악할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Throughput(bytes/s)"
-                    })
-                  }), ": 초당 처리된 데이터의 양을 나타내며, 클러스터의 데이터 처리 능력을 평가합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Backlog"
-                    })
-                  }), ": 다른 데이터 센터로 복제되지 않고 대기 중인 메시지의 수를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Throughput"
-                    })
-                  }), ": 데이터 복제 과정에서 초당 처리되는 데이터 양을 나타냅니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Rate"
-                    })
-                  }), ": 복제 메시지의 전송 속도를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Subscription Unacked Messages"
-                    })
-                  }), ": 구독된 메시지 중 아직 확인되지 않은(Unacked) 메시지의 수를 나타냅니다."]
+                  }), ": Garbage Collection(GC)에 소비된 시간을 나타냅니다. GC 시간 증가가 성능 저하로 이어질 수 있습니다."]
                 }), "\n"]
               }), "\n"]
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "상위-10개-항목-백로그",
-              children: "상위 10개 항목 백로그"
+              id: "linux-disk-io",
+              children: "Linux Disk I/O"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 topics backlog"
+                      children: "Linux Disk Read Bytes"
                     })
-                  }), ": 백로그가 가장 많은 상위 10개의 토픽을 나열하여 메시지 지연 원인을 분석할 수 있습니다."]
+                  }), ": 디스크 읽기 바이트 수를 나타냅니다. 높은 디스크 읽기/쓰기 양은 I/O 병목을 초래할 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Replication Backlog"
+                      children: "Linux Disk Write Bytes"
                     })
-                  }), ": 복제 백로그가 가장 많은 상위 10개의 항목을 나열하여 복제 지연 문제를 파악할 수 있습니다."]
+                  }), ": 디스크 쓰기 바이트 수를 나타냅니다. 읽기와 마찬가지로 높은 쓰기 양은 성능에 영향을 줄 수 있습니다."]
                 }), "\n"]
               }), "\n"]
             })]
@@ -837,54 +957,35 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Overview II"
+                children: "Kafka Request"
               })
             })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터 내 메시지 생산자와 소비자 활동을 중점적으로 모니터링하는 대시보드입니다. 노드별 자원 사용량 및 주요 토픽의 상태를 세부적으로 관리할 수 있도록 설계되었습니다. 시스템 자원의 최적화와 메시지 처리 흐름을 관리하는 데 도움을 줍니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "컨슈머와 프로듀서와 관련된 처리 성능"
+            }), "을 확인할 수 있는 대시보드입니다. 카프카 클러스터의 다양한 성능 지표를 실시간으로 모니터링하여 시스템 상태를 파악하고 잠재적인 문제를 조기에 감지할 수 있도록 돕습니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "processing-performance",
+              children: "Processing Performance"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Consumers Count"
-                    })
-                  }), ": 현재 클러스터에서 활성화된 컨슈머의 수를 실시간으로 표시하며, 메시지 소비 활동을 모니터링하고 컨슈머 수의 변동이 시스템에 미치는 영향을 분석할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Producers Count"
-                    })
-                  }), ": 현재 클러스터에서 활성화된 프로듀서의 수를 실시간으로 표시하며, 메시지 생산 활동을 모니터링하고 프로듀서 수의 변화가 메시지 생산 속도에 미치는 영향을 분석할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                       children: "Messages In"
                     })
-                  }), ": 클러스터에 인입되는 메시지 수를 시간에 따라 표시하며, 메시지 인입 속도를 모니터링하여 시스템 부하를 예측하고 트래픽 변동을 파악하는 데 도움을 줍니다."]
+                  }), ": 전체 클러스터에서 초당 수신되는 메시지의 수를 나타냅니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Subscriptions Count"
+                      children: "Messages In per Broker"
                     })
-                  }), ": 클러스터에서 활성화된 구독의 수를 실시간으로 표시하며, 구독 수의 증감이 시스템 메시지 처리에 미치는 영향을 분석할 때 유용합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Offloaded Size"
-                    })
-                  }), ": 클러스터에서 디스크로 오프로드된 데이터의 크기를 나타내며, 데이터 저장 효율성을 평가하고 장기적인 저장 공간 관리에 활용할 수 있습니다."]
+                  }), ": 각 브로커별로 초당 수신되는 메시지의 수를 나타냅니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -892,40 +993,166 @@ function _createMdxContent(props) {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                       children: "Bytes In"
                     })
-                  }), ": 클러스터로 인입되는 데이터의 크기를 실시간으로 표시하며, 데이터 인입 속도를 모니터링하여 시스템 성능 및 네트워크 부하를 관리하는 데 유용합니다."]
+                  }), ": 전체 클러스터에서 초당 수신되는 바이트의 수를 나타냅니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Node CPU"
+                      children: "Bytes In per Broker"
                     })
-                  }), "(Node CPU 사용률): 클러스터 내 각 노드의 CPU 사용률을 그래프로 표시하며, 노드별 성능을 모니터링하고 리소스 분배를 최적화할 수 있습니다."]
+                  }), ": 각 브로커별로 초당 수신되는 바이트의 수를 나타냅니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Node Memory Used %"
+                      children: "Request Queue Size"
                     })
-                  }), "(Node Memory 사용률): 클러스터 내 각 노드의 메모리 사용률을 실시간으로 표시하며, 메모리 사용 현황을 모니터링하여 성능 저하를 예방할 수 있습니다."]
+                  }), ": 현재 처리되지 않은 요청이 대기 중인 큐의 크기를 나타냅니다. 큐 크기가 커지면 응답 시간이 길어질 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Topics Unacked"
+                      children: "Response Queue Size"
                     })
-                  }), ": 아직 확인되지 않은(Unacked) 메시지가 많은 상위 10개의 토픽을 나열하며, 특정 토픽에서 메시지 확인 지연의 원인을 파악하고 문제를 해결하는 데 유용합니다."]
+                  }), ": 응답을 기다리는 요청이 대기 중인 큐의 크기를 나타냅니다. 큐 크기가 커지면 지연이 발생할 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Topics Storage"
+                      children: "Network Processor Avg Usage Percent"
                     })
-                  }), ": 저장 공간을 가장 많이 차지하고 있는 상위 10개의 토픽을 나열하며, 특정 토픽이 차지하는 저장 공간을 분석하여 효율적인 데이터 관리를 지원합니다."]
+                  }), ": 네트워크 프로세서의 평균 사용률을 나타냅니다. 네트워크 관련 작업의 부하를 보여줍니다."]
                 }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Request Handler Avg Percent"
+                    })
+                  }), ": 요청 처리기의 평균 사용률을 나타냅니다. 요청 처리에 대한 부하를 보여줍니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "requests",
+              children: "Requests"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Produce Request Per Sec"
+                    })
+                  }), ": 초당 생성되는 프로듀서 요청 수를 나타냅니다. 높은 값은 많은 데이터가 브로커로 전송되고 있음을 의미합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Consume Fetch Request Per Sec"
+                    })
+                  }), ": 초당 생성되는 컨슈머 fetch 요청 수를 나타냅니다. 높은 값은 많은 데이터가 컨슈머로 전송되고 있음을 의미합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Broker Fetch Request Per Sec"
+                    })
+                  }), ": 브로커 간의 fetch 요청 수를 나타냅니다. 데이터 복제를 위한 내부 트래픽을 보여줍니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "All Request Per Sec Across All Brokers"
+                    })
+                  }), ": 모든 브로커에서 처리되는 초당 요청 수를 나타냅니다. 클러스터 전체의 요청 부하를 보여줍니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "errors",
+              children: "Errors"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Errors Per Sec"
+                  })
+                }), ": 초당 발생하는 에러 수를 나타냅니다. 에러 수가 많을 경우 시스템의 안정성에 문제가 있을 수 있습니다."]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "offset-commit",
+              children: "Offset Commit"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Offset Commit Request Per Sec"
+                  })
+                }), ": 초당 커밋되는 오프셋 요청 수를 나타냅니다. 오프셋 커밋은 컨슈머 그룹이 메시지를 처리한 위치를 나타냅니다."]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "metadata",
+              children: "Metadata"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Metadata Request Per Sec"
+                  })
+                }), ": 초당 메타데이터 요청 수를 나타냅니다. 메타데이터 요청은 브로커와 파티션 정보에 대한 요청을 의미합니다."]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "topic",
+              children: "Topic"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "IsrShrinks per Sec"
+                    })
+                  }), ": 초당 ISR(동기화된 복제본) 축소 이벤트 수를 나타냅니다. ISR이 축소되면 데이터 내구성에 문제가 발생할 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "IsrExpands per Sec"
+                    })
+                  }), ": 초당 ISR 확장 이벤트 수를 나타냅니다. ISR이 확장되면 데이터 내구성이 향상될 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Log size per Topic"
+                    })
+                  }), ": 각 토픽별 로그 사이즈를 나타냅니다. 토픽 데이터의 크기를 보여줍니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Log size per Broker"
+                    })
+                  }), ": 각 브로커별 로그 사이즈를 나타냅니다. 브로커에 저장된 데이터의 크기를 보여줍니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "consume-lag",
+              children: "Consume Lag"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Lag"
+                  })
+                }), ": 메시지 소비의 지연을 나타냅니다. 컨슈머가 메시지를 읽는 속도가 프로듀서가 메시지를 쓰는 속도보다 느릴 때 발생합니다."]
               }), "\n"]
             })]
           }), "\n"]
@@ -933,59 +1160,214 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Backlog"
+                children: "Kafka Broker"
               })
             })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터 내 백로그 상태를 실시간으로 추적하는 대시보드입니다. 메시지 처리 지연이 발생할 수 있는 토픽을 신속하게 식별할 수 있도록 지원합니다. 문제 발생 시 빠르게 대응하고 성능 최적화를 위한 조치를 취하는 데 유용합니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "브로커 성능 정보"
+            }), "를 확인할 수 있는 대시보드입니다. 카프카 클러스터의 성능 상태를 실시간으로 모니터링하고 잠재적인 문제를 조기에 감지할 수 있도록 돕습니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "broker-performance---produce",
+              children: "Broker Performance - Produce"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Pulsar Backlog"
+                      children: "Producer - RequestQueueTimeMs"
                     })
-                  }), ": 특정 토픽에서 처리되지 않고 대기 중인 메시지 수를 시간에 따라 시각화합니다. 시스템의 처리 능력을 초과할 때 발생하는 백로그 상태를 실시간으로 모니터링하여 문제를 조기에 발견하고 대응할 수 있습니다."]
+                  }), ": 프로듀서 요청이 큐에 대기하는 시간을 밀리초(ms) 단위로 표시합니다. 큐 대기 시간이 길어지면 성능 저하가 발생할 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 20 Backlog Topics"
+                      children: "Producer - LocalTimeMs"
                     })
-                  }), ": 백로그가 가장 많은 상위 20개의 토픽을 나열합니다. 각 토픽에서 처리되지 않고 대기 중인 메시지 수를 표시하여 문제 토픽을 신속히 파악하고 리소스를 집중할 수 있습니다."]
+                  }), ": 프로듀서 요청이 로컬 브로커에서 처리되는 시간을 밀리초 단위로 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Recently"
+                      children: "Producer - RemoteTimeMs"
                     })
-                  }), "(최근 메시지 수): 각 토픽 옆의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  }), ": 프로듀서 요청이 원격 브로커로 전송되고 처리되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Recently"
+                      children: "Producer - ResponseQueueTimeMs"
                     })
-                  }), " 컬럼은 최근 발생한 백로그 메시지 수를 나타냅니다. 최근 백로그 상태를 명확히 이해하고 즉각적인 대응이 필요한 토픽을 식별하는 데 도움을 줍니다."]
+                  }), ": 프로듀서 요청의 응답이 큐에 대기하는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Producer - ResponseSendTimeMs"
+                    })
+                  }), ": 프로듀서 요청의 응답이 클라이언트로 전송되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "broker-performance---consume",
+              children: "Broker Performance - Consume"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Consumer - RequestQueueTimeMs"
+                    })
+                  }), ": 컨슈머 요청이 큐에 대기하는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Consumer - LocalTimeMs"
+                    })
+                  }), ": 컨슈머 요청이 로컬 브로커에서 처리되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Consumer - RemoteTimeMs"
+                    })
+                  }), ": 컨슈머 요청이 원격 브로커로 전송되고 처리되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Consumer - ResponseQueueTimeMs"
+                    })
+                  }), ": 컨슈머 요청의 응답이 큐에 대기하는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Consumer - ResponseSendTimeMs"
+                    })
+                  }), ": 컨슈머 요청의 응답이 클라이언트로 전송되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "broker-performance---fetch-follower",
+              children: "Broker Performance - Fetch Follower"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "FetchFollower - RequestQueueTimeMs"
+                    })
+                  }), ": 팔로워 브로커의 fetch 요청이 큐에 대기하는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "FetchFollower - LocalTimeMs"
+                    })
+                  }), ": 팔로워 브로커의 fetch 요청이 로컬 브로커에서 처리되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "FetchFollower - RemoteTimeMs"
+                    })
+                  }), ": 팔로워 브로커의 fetch 요청이 원격 브로커로 전송되고 처리되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "FetchFollower - ResponseQueueTimeMs"
+                    })
+                  }), ": 팔로워 브로커의 fetch 요청의 응답이 큐에 대기하는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "FetchFollower - ResponseSendTimeMs"
+                    })
+                  }), ": 팔로워 브로커의 fetch 요청의 응답이 클라이언트로 전송되는 시간을 밀리초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
+              id: "zookeeper",
+              children: "ZooKeeper"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "ZooKeeper Request Latency"
+                    })
+                  }), ": ZooKeeper 요청의 지연 시간을 표시합니다. 높은 지연 시간은 ZooKeeper의 성능 저하를 나타낼 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "ZooKeeper Connections per sec"
+                    })
+                  }), ": 초당 ZooKeeper에 생성되는 연결 수를 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "ZooKeeper Expired Connections per sec"
+                    })
+                  }), ": 초당 만료된 ZooKeeper 연결 수를 표시합니다. 연결 만료는 세션 타임아웃 등으로 발생할 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "ZooKeeper auth failures per sec"
+                    })
+                  }), ": 초당 ZooKeeper 인증 실패 횟수를 표시합니다. 인증 실패가 많으면 보안 문제나 설정 오류를 의심해볼 수 있습니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "ZooKeeper disconnects per sec"
+                    })
+                  }), ": 초당 ZooKeeper 연결이 끊어진 횟수를 표시합니다. 연결이 자주 끊어지면 네트워크 문제나 ZooKeeper 서버의 성능 문제를 의심해볼 수 있습니다."]
                 }), "\n"]
               }), "\n"]
             })]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "실시간으로 데이터를 업데이트하여 운영자가 즉각적인 상황을 파악할 수 있도록 지원하며 클러스터 운영 중 발생하는 변동성을 신속히 반영합니다. 이를 통해 운영자는 문제를 실시간으로 모니터링하고 즉각적인 조치를 취할 수 있습니다."
-        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "경고-알림",
+        children: "경고 알림"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_feature_alert_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {
+        name: "KAFKA"
       })]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

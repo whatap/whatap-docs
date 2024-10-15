@@ -213,7 +213,7 @@ const frontMatter = {
 	id: 'introduction',
 	title: 'PHP 모니터링',
 	description: 'PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.',
-	displyed_sidebar: 'phpSidebar',
+	displayed_sidebar: 'phpSidebar',
 	hide_table_of_contents: true,
 	keywords: [
 		'PHP',
@@ -241,7 +241,7 @@ const metadata = {
     "id": "introduction",
     "title": "PHP 모니터링",
     "description": "PHP 환경에서 동작하는 애플리케이션 서버를 모니터링할 수 있습니다.",
-    "displyed_sidebar": "phpSidebar",
+    "displayed_sidebar": "phpSidebar",
     "hide_table_of_contents": true,
     "keywords": [
       "PHP",

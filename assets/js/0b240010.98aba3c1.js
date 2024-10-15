@@ -474,7 +474,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'supported-spec',
 	title: '지원 환경',
-	displyed_sidebar: 'phpSidebar',
+	displayed_sidebar: 'phpSidebar',
 	keywords: [
 		'PHP',
 		'PHP 모니터링',
@@ -501,7 +501,7 @@ const metadata = {
   "frontMatter": {
     "id": "supported-spec",
     "title": "지원 환경",
-    "displyed_sidebar": "phpSidebar",
+    "displayed_sidebar": "phpSidebar",
     "keywords": [
       "PHP",
       "PHP 모니터링",

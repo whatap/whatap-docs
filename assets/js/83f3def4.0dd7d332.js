@@ -238,7 +238,7 @@ function _createMdxContent(props) {
           type: "note",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Java 에이전트 2.2.3 버전 미만"
+              children: "Java 에이전트 2.2.3 버전 이전"
             }), "에서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "profile_dbc_close"
             }), " 옵션명을 사용하세요."]
