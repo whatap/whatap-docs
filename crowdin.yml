@@ -36,7 +36,7 @@ files: [
  {
   "source" : "/crw-data/**/*",
   "translation" : "/i18n/%two_letters_code%/**/%original_file_name%",
-  "ignore" : [ ],
+  "ignore" : [ "/crw-data/overview/_changelog_overview.mdx" ],
   "escape_special_characters": 0,
  },
 ]
