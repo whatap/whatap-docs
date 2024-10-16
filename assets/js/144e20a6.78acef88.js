@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[17451],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[13534],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3198,11 +3198,7 @@ function _createMdxContent(props) {
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "datfile"
-            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ALL"
-            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: ["테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "used"
             }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "size"
@@ -3401,11 +3397,7 @@ function _createMdxContent(props) {
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "datfile"
-            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ALL"
-            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: ["테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "used"
             }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "size"
@@ -4933,7 +4925,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 1295:
+/***/ 30021:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4961,9 +4953,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: 'Redis 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'CUBRID',
+		'Redis',
 		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
@@ -4972,38 +4964,38 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid-v1/warning-notice-v2",
+  "id": "redis/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/cubrid-v1/warning-notice-v2.mdx",
-  "sourceDirName": "cubrid-v1",
-  "slug": "/cubrid-v1/warning-notice-v2",
-  "permalink": "/whatap-docs/cubrid-v1/warning-notice-v2",
+  "description": "Redis 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/redis/warning-notice-v2.mdx",
+  "sourceDirName": "redis",
+  "slug": "/redis/warning-notice-v2",
+  "permalink": "/whatap-docs/redis/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid-v1/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/redis/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "Redis 데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "CUBRID",
+      "Redis",
       "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "cubridV1Sidebar",
+  "sidebar": "redisSidebar",
   "previous": {
     "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/cubrid-v1/warning-notice"
+    "permalink": "/whatap-docs/redis/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/cubrid-v1/metric-warning-notice"
+    "permalink": "/whatap-docs/redis/metric-warning-notice"
   }
 };
 const assets = {

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[1172],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43400],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3198,11 +3198,7 @@ function _createMdxContent(props) {
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "datfile"
-            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ALL"
-            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: ["테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "used"
             }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "size"
@@ -3401,11 +3397,7 @@ function _createMdxContent(props) {
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "datfile"
-            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ALL"
-            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: ["테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "used"
             }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "size"
@@ -4933,7 +4925,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 85039:
+/***/ 88426:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4961,49 +4953,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'Tibero',
-		'데이터베이스',
+		'.NET',
 		'경고 알림',
-		'이벤트 설정'
+		'이벤트 설정',
+		'애플리케이션'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "tibero/warning-notice-v2",
+  "id": "dotnet/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/tibero/warning-notice-v2.mdx",
-  "sourceDirName": "tibero",
-  "slug": "/tibero/warning-notice-v2",
-  "permalink": "/whatap-docs/tibero/warning-notice-v2",
+  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/dotnet/warning-notice-v2.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/warning-notice-v2",
+  "permalink": "/whatap-docs/dotnet/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/tibero/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/dotnet/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "Tibero",
-      "데이터베이스",
+      ".NET",
       "경고 알림",
-      "이벤트 설정"
+      "이벤트 설정",
+      "애플리케이션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "tiberoSidebar",
+  "sidebar": "dotNetSidebar",
   "previous": {
-    "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/tibero/warning-notice"
+    "title": "애플리케이션 경고 알림",
+    "permalink": "/whatap-docs/dotnet/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/tibero/metric-warning-notice"
+    "permalink": "/whatap-docs/dotnet/metric-warning-notice"
   }
 };
 const assets = {

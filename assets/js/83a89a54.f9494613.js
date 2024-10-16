@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[78239],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[47746],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3198,11 +3198,7 @@ function _createMdxContent(props) {
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "datfile"
-            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ALL"
-            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: ["테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "used"
             }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "size"
@@ -3401,11 +3397,7 @@ function _createMdxContent(props) {
               })
             })]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "datfile"
-            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "ALL"
-            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: ["테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "used"
             }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "size"
@@ -4933,7 +4925,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 22347:
+/***/ 2468:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4963,7 +4955,7 @@ const frontMatter = {
 	title: '이벤트 설정',
 	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'CUBRID',
+		'Oracle',
 		'데이터베이스',
 		'경고 알림',
 		'이벤트 설정'
@@ -4972,16 +4964,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid/warning-notice-v2",
+  "id": "oracle-v1/warning-notice-v2",
   "title": "이벤트 설정",
   "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/cubrid/warning-notice-v2.mdx",
-  "sourceDirName": "cubrid",
-  "slug": "/cubrid/warning-notice-v2",
-  "permalink": "/whatap-docs/cubrid/warning-notice-v2",
+  "source": "@site/docs/oracle-v1/warning-notice-v2.mdx",
+  "sourceDirName": "oracle-v1",
+  "slug": "/oracle-v1/warning-notice-v2",
+  "permalink": "/whatap-docs/oracle-v1/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/oracle-v1/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -4989,21 +4981,21 @@ const metadata = {
     "title": "이벤트 설정",
     "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "CUBRID",
+      "Oracle",
       "데이터베이스",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "cubridSidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
     "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/cubrid/warning-notice"
+    "permalink": "/whatap-docs/oracle-v1/warning-notice"
   },
   "next": {
     "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/cubrid/metric-warning-notice"
+    "permalink": "/whatap-docs/oracle-v1/metric-warning-notice"
   }
 };
 const assets = {
