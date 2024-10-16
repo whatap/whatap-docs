@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[46765],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[75255],{
 
 /***/ 49412:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -814,7 +814,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_counter"
-          }), " 카테고리에 수집되는 태그값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 태그에 대한 안내입니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -898,7 +898,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_counter"
-          }), " 카테고리에 수집되는 필드값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 필드에 대한 안내입니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
@@ -919,7 +919,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_dma_counter"
-          }), " 카테고리에 수집되는 태그값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 태그에 대한 안내입니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -963,7 +963,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_dma_counter"
-          }), " 카테고리에 수집되는 필드값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 필드에 대한 안내입니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -1722,7 +1722,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_tablespace"
-          }), " 카테고리에 수집되는 태그값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 태그에 대한 안내입니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -1786,7 +1786,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_tablespace"
-          }), " 카테고리에 수집되는 필드값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 필드에 대한 안내입니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
@@ -1807,7 +1807,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_dma_tablespace"
-          }), " 카테고리에 수집되는 태그값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 태그에 대한 안내입니다."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -1871,7 +1871,7 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "db_oracle_dma_tablespace"
-          }), " 카테고리에 수집되는 필드값에 대한 안내입니다."]
+          }), " 카테고리에 수집되는 필드에 대한 안내입니다."]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
@@ -1953,7 +1953,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 25905:
+/***/ 37203:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1973,11 +1973,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'metrics-data-list',
-	title: 'Oracle 지표',
-	description: 'Oracle 지표를 안내합니다.',
+	title: 'Oracle Pro 지표',
+	description: 'Oracle Pro 지표를 안내합니다.',
 	toc_max_heading_level: 2,
 	keywords: [
-		'Oracle',
+		'Oracle Pro',
 		'메트릭스',
 		'데이터베이스',
 		'데이터베이스'
@@ -1986,39 +1986,39 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle/metrics-data-list",
-  "title": "Oracle 지표",
-  "description": "Oracle 지표를 안내합니다.",
-  "source": "@site/docs/oracle/metrics-data-list.mdx",
-  "sourceDirName": "oracle",
-  "slug": "/oracle/metrics-data-list",
-  "permalink": "/whatap-docs/oracle/metrics-data-list",
+  "id": "oracle-pro/metrics-data-list",
+  "title": "Oracle Pro 지표",
+  "description": "Oracle Pro 지표를 안내합니다.",
+  "source": "@site/docs/oracle-pro/metrics-data-list.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/metrics-data-list",
+  "permalink": "/whatap-docs/oracle-pro/metrics-data-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle/metrics-data-list.mdx",
+  "editUrl": "undefined/docs/oracle-pro/metrics-data-list.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "metrics-data-list",
-    "title": "Oracle 지표",
-    "description": "Oracle 지표를 안내합니다.",
+    "title": "Oracle Pro 지표",
+    "description": "Oracle Pro 지표를 안내합니다.",
     "toc_max_heading_level": 2,
     "keywords": [
-      "Oracle",
+      "Oracle Pro",
       "메트릭스",
       "데이터베이스",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracleV2Sidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
     "title": "메트릭스",
-    "permalink": "/whatap-docs/oracle/metrics-intro"
+    "permalink": "/whatap-docs/oracle-pro/metrics-intro"
   },
   "next": {
     "title": "메트릭스 차트",
-    "permalink": "/whatap-docs/oracle/metrics-chart-v2"
+    "permalink": "/whatap-docs/oracle-pro/metrics-chart-v2"
   }
 };
 const assets = {
