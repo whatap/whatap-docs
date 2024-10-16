@@ -1620,7 +1620,7 @@ function _createMdxContent(props) {
                 className: "uitext"
               }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 className: "newfunc",
-                children: "V2"
+                children: "New"
               }), " 메뉴의 이벤트 추가 또는 수정 화면에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
                 className: "slow",
                 children: "Warning"
@@ -1642,7 +1642,7 @@ function _createMdxContent(props) {
                 className: "uitext"
               }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 className: "newfunc",
-                children: "V2"
+                children: "New"
               }), " 메뉴의 복합 메트릭스 이벤트 추가 또는 수정 화면에서 MXQL 데이터가 조회되지 않는 문제 수정"]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

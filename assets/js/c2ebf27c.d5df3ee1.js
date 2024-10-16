@@ -90,6 +90,7 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     blockquote: "blockquote",
     code: "code",
@@ -177,6 +178,23 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "logsink_stderr_enabled"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "type",
+              children: "Boolean"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "false"
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "true"
+            }), "이면 Standard error output 로그를 수집합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "logsink_zip_enabled"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
@@ -223,7 +241,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           className: "language-ini",
           metastring: "title='whatap.conf'",
-          children: "logsink_enabled=true\nlogsink_stdout_enabled=true\nlogsink_zip_enabled=true\nlogsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log\n"
+          children: "logsink_enabled=true\nlogsink_stdout_enabled=true\nlogsink_stderr_enabled=true\nlogsink_zip_enabled=true\nlogsink.files=/etc/httpd/logs/error_log, /etc/httpd/logs/access_log\n"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "tip",
@@ -246,6 +264,14 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "이 기능은 Go 에이전트 0.3.2 버전 이상에서 지원합니다."
         })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["로그 설정과 관련한 API 가이드는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "api-guide#log",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
       })]
     })]
   });

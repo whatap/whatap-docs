@@ -24,8 +24,8 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.8e0aeb51.css">
-<script src="/whatap-docs/assets/js/runtime~main.375c1414.js" defer="defer"></script>
-<script src="/whatap-docs/assets/js/main.9f62f8fd.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.ce7391d2.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.f5c4dc9f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
@@ -313,10 +313,10 @@
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">통합 Flex 보드</span> 메뉴의 그룹 위젯에서 선택한 필터가 없고 대시보드 필터를 적용할 때, 그룹의 하위 위젯에 대시보드 필터가 적용되지 않는 문제 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">V2</code> 메뉴의 이벤트 추가 또는 수정 화면에서 <span class="slow">Warning</span> 또는 <span class="vslow">Critical</span> 지표 중 하나만 활성화된 경우, 동일한 설정값을 입력하면 저장되지 않는 문제 수정</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴의 이벤트 추가 또는 수정 화면에서 <span class="slow">Warning</span> 또는 <span class="vslow">Critical</span> 지표 중 하나만 활성화된 경우, 동일한 설정값을 입력하면 저장되지 않는 문제 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">V2</code> 메뉴의 복합 메트릭스 이벤트 추가 또는 수정 화면에서 MXQL 데이터가 조회되지 않는 문제 수정</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴의 복합 메트릭스 이벤트 추가 또는 수정 화면에서 MXQL 데이터가 조회되지 않는 문제 수정</p>
 <blockquote>
 <p><span class="uitext">이벤트 데이터 조회</span> 섹션의 <span class="uitext">필터</span> 옵션으로 문자열 타입 값을 갖는 태그 또는 필드를 설정 후 텍스트 모드로 전환하면 MXQL 데이터가 조회되지 않는 문제를 수정했습니다.</p>
 </blockquote>
@@ -346,7 +346,7 @@
 <li>
 <p><code class="Changed" type="1">Changed</code> <span class="uitext">관리</span> &gt; <span class="uitext">프로젝트 멤버</span> 메뉴에서 <span class="uitext">와탭 지원팀 초대하기</span> 기능 사용 시 <a href="mailto:dbx@whatap.io" target="_blank" rel="noopener noreferrer">dbx@whatap.io</a> 계정이 함께 초대되지 않도록 수정</p>
 </li>
-</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL<a href="#postgresql" class="hash-link" aria-label="PostgreSQL에 대한 직접 링크" title="PostgreSQL에 대한  직접 링크">​</a></h4><p><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에 현재 진행 중인 vacuum 프로세스 수를 확인할 수 있는 <span class="uitext">Vacuum Sessions</span> 위젯 추가</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="#mysql" class="hash-link" aria-label="MySQL에 대한 직접 링크" title="MySQL에 대한 직접 링크">​</a></h4><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">분석</span> &gt; <span class="uitext">데드락</span> 메뉴에서 조회한 데이터가 없을 때 표시되는 메시지가 절반만 표시되는 문제 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2-oracle-pro-1">Oracle <code class="my">V2</code>, Oracle Pro<a href="#oracle-v2-oracle-pro-1" class="hash-link" aria-label="oracle-v2-oracle-pro-1에 대한 직접 링크" title="oracle-v2-oracle-pro-1에 대한 직접 링크">​</a></h4><ul>
+</ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL<a href="#postgresql" class="hash-link" aria-label="PostgreSQL에 대한 직접 링크" title="PostgreSQL에 대한 직접 링크">​</a></h4><p><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에 현재 진행 중인 vacuum 프로세스 수를 확인할 수 있는 <span class="uitext">Vacuum Sessions</span> 위젯 추가</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="mysql">MySQL<a href="#mysql" class="hash-link" aria-label="MySQL에 대한 직접 링크" title="MySQL에 대한 직접 링크">​</a></h4><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">분석</span> &gt; <span class="uitext">데드락</span> 메뉴에서 조회한 데이터가 없을 때 표시되는 메시지가 절반만 표시되는 문제 수정</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="oracle-v2-oracle-pro-1">Oracle <code class="my">V2</code>, Oracle Pro<a href="#oracle-v2-oracle-pro-1" class="hash-link" aria-label="oracle-v2-oracle-pro-1에 대한 직접 링크" title="oracle-v2-oracle-pro-1에 대한 직접 링크">​</a></h4><ul>
 <li>
 <p><code class="Feature" type="1">Feature</code> <span class="uitext">SQL 상세</span> 팝업창의 <span class="uitext">Runtime Plan</span>, <span class="uitext">Explain Plan</span> 테이블에 <span class="uitext">FILTER_PREDICATES</span> 컬럼 추가</p>
 </li>
@@ -357,7 +357,7 @@
 <p><code class="Fixed" type="0">Fixed</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">SQL 통계</span> 메뉴에서 상세 차트의 elapse time 값이 비정상적으로 높은 문제 수정</p>
 </li>
 <li>
-<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 목록</span> 메뉴에 Cluster Name을 표기하도록 수정</p>
+<p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 목록</span> 메뉴  에 Cluster Name을 표기하도록 수정</p>
 </li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="redis-v1-mongodb-v1">Redis <code class="my">V1</code>, MongoDB <code class="my">V1</code><a href="#redis-v1-mongodb-v1" class="hash-link" aria-label="redis-v1-mongodb-v1에 대한 직접 링크" title="redis-v1-mongodb-v1에 대한 직접 링크">​</a></h4><p><code class="Fixed" type="0">Fixed</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 목록</span> 메뉴에 Cluster Name을 표기하지 않도록 수정</p></div></section>
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="preview-280a0">Preview 2.8.0.a0<a href="#preview-280a0" class="hash-link" aria-label="Preview 2.8.0.a0에 대한 직접 링크" title="Preview 2.8.0.a0에 대한 직접 링크">​</a></h2><p>2024년 07월 25일</p><div class="indentTab"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-7"><code>공통</code><a href="#공통-7" class="hash-link" aria-label="공통-7에 대한 직접 링크" title="공통-7에 대한 직접 링크">​</a></h3><ul>

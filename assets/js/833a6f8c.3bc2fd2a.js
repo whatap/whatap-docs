@@ -161,6 +161,38 @@ const toc = [{
   "value": "API",
   "id": "api-3",
   "level": 3
+}, {
+  "value": "Log",
+  "id": "log",
+  "level": 2
+}, {
+  "value": "에이전트 설정하기",
+  "id": "에이전트-설정하기-1",
+  "level": 3
+}, {
+  "value": "로그 라이브러리 초기화 전",
+  "id": "로그-라이브러리-초기화-전",
+  "level": 3
+}, {
+  "value": "로그 라이브러리 초기화 후",
+  "id": "로그-라이브러리-초기화-후",
+  "level": 3
+}, {
+  "value": "API",
+  "id": "api-4",
+  "level": 3
+}, {
+  "value": "log package",
+  "id": "log-package",
+  "level": 4
+}, {
+  "value": "go.uber.org/zap",
+  "id": "gouberorgzap",
+  "level": 4
+}, {
+  "value": "github.com/sirupsen/logrus",
+  "id": "githubcomsirupsenlogrus",
+  "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -765,6 +797,194 @@ function _createMdxContent(props) {
           className: "language-go",
           metastring: "title=\"Go\"",
           children: "func Trace(ctx context.Context, name string, elapsed int, err error) error\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "log",
+        children: "Log"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "에이전트-설정하기-1",
+        children: "에이전트 설정하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["애플리케이션 실행 전에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "whatap.conf"
+        }), " 파일에 에이전트 옵션을 설정하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title=\"whatap.conf\"",
+          children: "# Enable all log collection\nlogsink_enabled=true\n\n# Enable stdout collection\nlogsink_stdout_enabled=true\n\n# Enable stderr collection\nlogsink_stderr_enabled=true\n\n# Optional. This is a setting for compressing data. \nlogsin_zip_enabled=true\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "로그-라이브러리-초기화-전",
+        children: "로그 라이브러리 초기화 전"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["로그 라이브러리 초기화 전에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "trace.Init()"
+        }), " 함수를 호출해야 합니다. 내부적으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stdout"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stderr"
+        }), "를 래핑합니다. 이후 로그 라이브러리가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stdout"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stderr"
+        }), "를 설정하면 자동으로 로그를 수집합니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "로그-라이브러리-초기화-후",
+        children: "로그 라이브러리 초기화 후"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["로그 라이브러리 초기화 후에는 별도의 설정 함수를 통해서 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "io.Writer"
+        }), "를 설정할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "logsink.GetWriterHookStdout()"
+            }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "os.Stderr"
+            }), "를 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "io.Writer"
+            }), "를 반환합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "os.Stdout"
+            }), "에 출력하면서 동시에 해당 로그를 와탭 로그로 수집합니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "logsink.GetWriterHookStderr()"
+            }), ":  ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "os.Stderr"
+            }), "를 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "io.Writer"
+            }), "를 반환합니다. 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "io.Writer"
+            }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "os.Stderr"
+            }), "에 출력 후 로그 내용을 와탭 로그로 수집합니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "api-4",
+        children: "API"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "os.Stdout"
+            }), "를 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "io.Writer"
+            }), "를 반환합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-go",
+              children: "func GetWriterHookStdout() io.Writer\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "os.Stderr"
+            }), "를 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "io.Writer"
+            }), "를 반환합니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-go",
+              children: "func GetWriterHookStderr() io.Writer\n"
+            })
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "다음 패키지별 코드 예제를 참조하세요."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "log-package",
+        children: "log package"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["log 패키지는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "import"
+        }), " 시점(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "init"
+        }), " 함수)에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stderr"
+        }), "를 설정합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "trace.Init"
+        }), " 함수를 먼저 호출할 수 없기 때문에 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "io.Writer"
+        }), " (", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stderr"
+        }), ")를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "log.SetOutput"
+        }), " 함수를 통해 설정합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["이후 사용되는 log 패키지의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "print"
+        }), " 함수를 사용한 출력은 래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "io.Writer"
+        }), "를 통해서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stderr"
+        }), "에 출력은 유지하면서 동시에 로그 내용을 와탭 로그로 수집합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-go",
+          metastring: "title=\"log package\"",
+          children: "import (\n    \"log\"\n    \"github.com/whatap/go-api/logsink\"\n)\n\n...\n\nif logsink.GetWriterHookStderr() != nil {\n    // set single writer\n    log.SetOutput(logsink.GetWriterHookStderr())\t\n    \n    // set multi writer \n    multi := io.MultiWriter(file, logsink.GetWriterFromStderr())\n    log.SetOutput(logsink.GetWriterHookStderr())\n}\n\n// \nlog.Println(\"aaaaa\")\n...\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "gouberorgzap",
+        children: "go.uber.org/zap"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stdout"
+        }), "을 설정하기 전에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "trace.Init()"
+        }), " 함수를 호출하면 자동으로 로그를 수집합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stdout"
+        }), " 출력은 유지하면서 동시에 와탭 로그로 수집합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-go",
+          metastring: "title=\"go.uber.org/zap\"",
+          children: "import (\n    \"github.com/whatap/go-api/trace\"\n    \"github.com/whatap/go-api/logsink\"\n    \n    \"go.uber.org/zap\"\n    \"go.uber.org/zap/zapcore\"\n)\n\nfunc main() {\n    trace.Init(nil)\n    //It must be executed before closing the app.\n    defer trace.Shutdown()\n\n    // fmt.Println(\"Logger stdout=\", os.Stdout, zapcore.AddSync(os.Stdout))\n    consoleCore := zapcore.NewCore(\n        zapcore.NewConsoleEncoder(consoleEncoderConfig), \n        zapcore.AddSync(os.Stdout),                      \n        zap.InfoLevel,\n    )\n\n    // Menggabungkan core file dan console\n    core := zapcore.NewTee(consoleCore)\n    Log = zap.New(core, zap.AddCaller(), zap.AddStacktrace(zapcore.ErrorLevel))\n    Log.Info(\"logger started\")\n\n    ...\n}\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "githubcomsirupsenlogrus",
+        children: "github.com/sirupsen/logrus"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["래핑한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "io.Writer"
+        }), "를 설정하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "os.Stderr"
+        }), " 출력은 유지하면서 동시에 와탭 로그로 수집합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-go",
+          metastring: "title=\"github.com/sirupsen/logrus\"",
+          children: "package main\n\nimport (\n    \"time\"\n\n    log \"github.com/sirupsen/logrus\"\n\n    \"github.com/whatap/go-api/logsink\"\n    \"github.com/whatap/go-api/trace\"\n)\n\nfunc main() {\n    trace.Init(nil)\n    defer trace.Shutdown()\n\n    //In WhaTap, set io.Writer wrapping os.Stderr as the output of logrus\n    if logsink.GetWriterHookStderr() != nil {\n        log.SetOutput(logsink.GetWriterHookStderr())\n    }\n\n    for i := 0; i < 100; i++ {\n        log.WithFields(log.Fields{\n            \"animal\":  \"tiger\",\n            \"habitat\": \"mountain\",\n        }).Info(\"Index:[\", i, \"] A tiger appears\")\n\n        time.Sleep(100 * time.Millisecond)\n    }\n}\n"
         })
       })]
     })]
