@@ -2354,9 +2354,9 @@ const assets = {
 /*> * <Cmdname sid="side_containerMap" className="uitext" /> 및 <Cmdname sid="side_perfSummary" className="uitext" /> 메뉴가 개선되었습니다.*/
 /*## `Application`, `Container`, `Server`
 
-import Application-Container-Server_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-Application-Container-Server.mdx";
+import ApplicationContainerServer_23q3 from "../crw-data/crwld-service-23q3/_import-23q3-service-Application-Container-Server.mdx";
 
-<Application-Container-Server_23q3 />*/
+<ApplicationContainerServer_23q3 />*/
 /****컨테이너 맵*** 및 <Cmdname sid="side_perfSummary" className="uitext" /> 메뉴의 개선에 대해 소개합니다.*/
 /*<details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>

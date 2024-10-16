@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90047],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37748],{
 
 /***/ 44256:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -3033,7 +3033,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3087,7 +3087,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3112,7 +3112,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3134,7 +3134,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3159,7 +3159,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3183,6 +3183,37 @@ function _createMdxContent(props) {
               }), "를 참조하세요."]
             })
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Tablespace Usage"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list#db_oracle_tablespace",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_oracle_tablespace"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "datfile"
+            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "ALL"
+            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "used"
+            }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "size"
+            }), " * 100)이 80 이상이면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 90 이상이면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
+          }), "\n"]
         }), "\n"]
       })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
@@ -3205,7 +3236,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3259,7 +3290,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3284,7 +3315,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3306,7 +3337,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3331,7 +3362,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3354,6 +3385,37 @@ function _createMdxContent(props) {
                 children: "다음 문서"
               }), "를 참조하세요."]
             })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Tablespace Usage"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list#db_oracle_dma_tablespace",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_oracle_dma_tablespace"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "datfile"
+            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "ALL"
+            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "used"
+            }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "size"
+            }), " * 100)이 80 이상이면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 90 이상이면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -4871,7 +4933,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 82172:
+/***/ 93135:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4899,49 +4961,47 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.',
+	description: '네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'PHP',
+		'네트워크 성능 모니터링',
 		'경고 알림',
-		'이벤트 설정',
-		'애플리케이션'
+		'이벤트 설정'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/warning-notice-v2",
+  "id": "npm/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/php/warning-notice-v2.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/warning-notice-v2",
-  "permalink": "/whatap-docs/php/warning-notice-v2",
+  "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/npm/warning-notice-v2.mdx",
+  "sourceDirName": "npm",
+  "slug": "/npm/warning-notice-v2",
+  "permalink": "/whatap-docs/npm/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/npm/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "애플리케이션의 자원 사용량 및, 진행 중 트랜잭션, 에러 상황의 이벤트 조건을 통해 경고 알림을 보냅니다.",
+    "description": "네트워크 성능 모니터링의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "PHP",
+      "네트워크 성능 모니터링",
       "경고 알림",
-      "이벤트 설정",
-      "애플리케이션"
+      "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "npmsidebar",
   "previous": {
-    "title": "애플리케이션 경고 알림",
-    "permalink": "/whatap-docs/php/warning-notice"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/npm/metric-warning-notice"
   },
   "next": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/php/metric-warning-notice"
+    "title": "이벤트 수신 설정",
+    "permalink": "/whatap-docs/npm/set-receive-event"
   }
 };
 const assets = {

@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76903],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[69512],{
 
-/***/ 92293:
+/***/ 19860:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -29,10 +29,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'warning-notice-v2',
 	title: '이벤트 설정',
-	description: '데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
+	description: 'Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.',
 	keywords: [
-		'Altibase',
-		'데이터베이스',
+		'Browser',
 		'경고 알림',
 		'이벤트 설정'
 	],
@@ -40,38 +39,37 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "altibase/warning-notice-v2",
+  "id": "browser/warning-notice-v2",
   "title": "이벤트 설정",
-  "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
-  "source": "@site/docs/altibase/warning-notice-v2.mdx",
-  "sourceDirName": "altibase",
-  "slug": "/altibase/warning-notice-v2",
-  "permalink": "/whatap-docs/altibase/warning-notice-v2",
+  "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+  "source": "@site/docs/browser/warning-notice-v2.mdx",
+  "sourceDirName": "browser",
+  "slug": "/browser/warning-notice-v2",
+  "permalink": "/whatap-docs/browser/warning-notice-v2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/altibase/warning-notice-v2.mdx",
+  "editUrl": "undefined/docs/browser/warning-notice-v2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "warning-notice-v2",
     "title": "이벤트 설정",
-    "description": "데이터베이스의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
+    "description": "Browser의 지표별 이벤트 조건 설정을 통해 경고 알림을 보냅니다.",
     "keywords": [
-      "Altibase",
-      "데이터베이스",
+      "Browser",
       "경고 알림",
       "이벤트 설정"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "altibaseSidebar",
+  "sidebar": "rumsSidebar",
   "previous": {
-    "title": "데이터베이스 경고 알림",
-    "permalink": "/whatap-docs/altibase/warning-notice"
+    "title": "메트릭스 경고 알림",
+    "permalink": "/whatap-docs/browser/metric-warning-notice"
   },
   "next": {
-    "title": "메트릭스 경고 알림",
-    "permalink": "/whatap-docs/altibase/metric-warning-notice"
+    "title": "이벤트 수신 설정",
+    "permalink": "/whatap-docs/browser/set-receive-event"
   }
 };
 const assets = {
@@ -3152,7 +3150,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3206,7 +3204,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3231,7 +3229,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3253,7 +3251,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3278,7 +3276,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_counter"
               })
@@ -3302,6 +3300,37 @@ function _createMdxContent(props) {
               }), "를 참조하세요."]
             })
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Tablespace Usage"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list#db_oracle_tablespace",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_oracle_tablespace"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "datfile"
+            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "ALL"
+            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "used"
+            }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "size"
+            }), " * 100)이 80 이상이면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 90 이상이면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
+          }), "\n"]
         }), "\n"]
       })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
@@ -3324,7 +3353,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3378,7 +3407,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3403,7 +3432,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3425,7 +3454,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3450,7 +3479,7 @@ function _createMdxContent(props) {
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "metrics-data-list",
+              href: "metrics-data-list#db_oracle_dma_counter",
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "db_oracle_dma_counter"
               })
@@ -3473,6 +3502,37 @@ function _createMdxContent(props) {
                 children: "다음 문서"
               }), "를 참조하세요."]
             })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Tablespace Usage"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["카테고리: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-data-list#db_oracle_dma_tablespace",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "db_oracle_dma_tablespace"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "datfile"
+            }), " == ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "ALL"
+            }), "이면서, 테이블스페이스의 사용률(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "used"
+            }), " / ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "size"
+            }), " * 100)이 80 이상이면 경고(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "slow",
+              children: "Warning"
+            }), ") 수준의 알림을, 90 이상이면 위험(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+              class: "vslow",
+              children: "Critical"
+            }), ") 수준의 알림을 보냅니다."]
           }), "\n"]
         }), "\n"]
       })]
