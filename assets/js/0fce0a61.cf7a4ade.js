@@ -49,6 +49,35 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
+        children: "Database"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 10월 08일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "../postgresql/monitoring-support",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Reference​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Spec",
+            children: "Spec"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-overview2",
+            children: "PostgreSQL"
+          }), " Tmax OpenSQL 9.2 버전 이상 지원"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
         children: "Features"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
@@ -78,6 +107,35 @@ function _createMdxContent(props) {
           }), " ", (0,jsx_runtime.jsx)("b", {
             children: "베타"
           }), " 서비스 시작"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Application"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 09월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "../nodejs/install-agent-svelte",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Reference​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Docs",
+            children: "Docs"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-overview2",
+            children: "Node.js"
+          }), " Svelt 환경 설치 안내"]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
@@ -5536,7 +5594,7 @@ const overview_frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-10-07T19:30',
+	date: '2024-10-16T19:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -5551,7 +5609,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-10-07T19:30:00.000Z",
+  "date": "2024-10-16T19:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -5579,7 +5637,7 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-10-07T19:30",
+    "date": "2024-10-16T19:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
