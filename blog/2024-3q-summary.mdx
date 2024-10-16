@@ -2,7 +2,7 @@
 slug: 2024-3q-summary
 title: 3분기 안내
 authors: ysj
-date: 2024-10-09T09:30
+date: 2024-10-18T09:30
 toc_max_heading_level: 2
 tags: [새로운 기능, 2024]
 ---
@@ -20,8 +20,10 @@ tags: [새로운 기능, 2024]
 |**공통**|
 |---| 
 
-> * 편의성 향상을 위해 공통 메뉴가 개선되었습니다. (이벤트 v2 소팅, 검색, 실시간 알림 해소) 
+> * 편의성 향상을 위해 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴가 개선되었습니다. 
 > * `Application`, `Kubernetes`, `Database` 상품군에서 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다. 
+
+{/* 공통 메뉴 개선 또는 이벤트 v2 메뉴 개선 */}
 
 |**Application**|
 |---|
@@ -30,8 +32,6 @@ tags: [새로운 기능, 2024]
 > * `.NET` Core 라이브러리 지원 범위가 확대되었으며 멀티 트랜잭션을 지원합니다. 
 
 {/* > * 애플리케이션과 데이터베이스 상품 연계 모니터링을 지원합니다. (10월) */}
-{/* > * <Cmdname sid="side_transaction_map" className="uitext" />이 지난 1분기에 이어 고도화되었습니다. 
-> * <Cmdname sid="application_dashboard" className="uitext" />에 기본 프리셋 변경 기능이 추가되었습니다. */}
 
 |**Server**|
 |---|
@@ -39,20 +39,20 @@ tags: [새로운 기능, 2024]
 > * Unix **HP-UX** 설치 패키지를 제공합니다.
 > * <Cmdname sid="side_serverInventory" className="uitext" /> 메뉴를 새롭게 제공합니다. 
 
-{/* > * 서버 프로젝트 생성 시 OS를 먼저 선택할 수 있도록 설치 화면이 개편되었습니다.
-> * Unix **Oracle Solaris** 설치 패키지를 제공합니다.  */}
-
 |**Kubernetes**|
 |---|
 
-> * <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" /> 신규 (노드 모니터링 확대)
-> * <Cmdname sid="side_nodeList" className="uitext" /> 개선
-> * <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> 신규 (분석 기능 강화)
-> * <Cmdname sid="side_kubeServiceList" className="uitext" /> 신규(쿠버네티스 모니터링 정보 확대)
+> * <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" />과 같은 신규 메뉴가 추가되었으며, 기존 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴가 개선되었습니다. 
+> * <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> 기능을 새롭게 제공합니다. 
+> * <Cmdname sid="side_kubeServiceList" className="uitext" /> 메뉴를 새롭게 제공합니다. 
 
-{/* > * <Cmdname sid="agentInstall" className="uitext" /> 화면이 보다 손쉬운 옵션 선택 방식으로 개편되었습니다.
-> * <Cmdname sid="side_pendingPod" className="uitext" /> 메뉴가 새롭게 개편되었습니다. 
-> * <Cmdname sid="side_containerMap" className="uitext" /> 메뉴에서 ***리소스 관계도***를 제공합니다.  */}
+{/* 
+
+> * 쿠버네티스 노드 모니터링 확장의 일환으로 <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" />과 같은 신규 메뉴가 추가되었으며, 기존 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴가 개선되었습니다. 
+> * 쿠버네티스 구성 요소의 분석 기능을 강화하여 <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> 기능을 새롭게 제공합니다. 
+> * 쿠버네티스 모니터링 정보 확장의 일환으로 <Cmdname sid="side_kubeServiceList" className="uitext" /> 메뉴를 새롭게 제공합니다. 
+
+*/}
 
 |**Database**|
 |---|
@@ -68,8 +68,6 @@ tags: [새로운 기능, 2024]
 
 > <Cmdname sid="TTL08103" className="uitext" /> 기능 안정화가 이루어졌습니다. 
 
-{/* > <Cmdname sid="TTL08103" className="uitext" /> 기능을 새롭게 제공합니다.  */}
-
 {/* 
 
 |**Log**|
@@ -82,9 +80,9 @@ tags: [새로운 기능, 2024]
 
 오버뷰 추가 건들 
 
-- node.js: svelt 설치 가능 문서 업데이트 
+- node.js: svelt 설치 가능 문서 업데이트 (완)
 
-- PostgreSQL: 티맥스 지원 
+- PostgreSQL: 티맥스 지원 (완)
 
 체인지로그 추가 건들
 
@@ -103,7 +101,11 @@ tags: [새로운 기능, 2024]
 
 ## `공통`
 
-와탭 2024년 3분기 `공통` 부분에서 편의성 향상을 위한 공통 메뉴 개선 및 새롭게 개편된 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 소개합니다. 
+와탭 2024년 3분기 `공통` 부분에서 편의성 향상을 위한 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴 개선 및 새롭게 개편된 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 소개합니다. 
+
+<Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴는
+
+이벤트명, 이벤트 수신 태그로 검색 기능 추가(2.8.0)
 
 `Application`, `Kubernetes`, `Database` 상품군 공통으로 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴가 새롭게 개편되었습니다. <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code>는 사용자 경험을 대폭 개선하여 모니터링 작업을 더욱 효율적으로 수행할 수 있도록 설계되었습니다. 주요 변경 사항은 다음과 같습니다. 
 
@@ -260,6 +262,12 @@ import Server_agent_24q3 from "../crw-data/crwld-agent-24q3/_import-agent-24q3-s
 
 와탭 2024년 3분기 `Kubernetes` 부분의 주목할 만한 신규 기능 및 변경 사항으로 <Cmdname sid="agentInstall" className="uitext" /> 및 <Cmdname sid="side_pendingPod" className="uitext" /> 개편, <Cmdname sid="side_containerMap" className="uitext" /> 내 <Cmdname sid="TTL07237" className="uitext" /> 기능을 소개합니다.
 
+
+* 쿠버네티스 노드 모니터링 확장의 일환으로 <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" />과 같은 신규 메뉴가 추가되었으며, 기존 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴가 개선되었습니다. 
+
+* 쿠버네티스 구성 요소의 분석 기능을 강화하여 <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> 기능을 새롭게 제공합니다. 
+
+* 쿠버네티스 모니터링 정보 확장의 일환으로 <Cmdname sid="side_kubeServiceList" className="uitext" /> 메뉴를 새롭게 제공합니다.
 
 다음 개요 안내를 통해 2024년 3분기 `Kubernetes` 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
 
