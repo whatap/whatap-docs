@@ -69,6 +69,18 @@ const toc = [{
   "id": "kubernetes",
   "level": 3
 }, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
+}, {
+  "value": "공통",
+  "id": "공통",
+  "level": 4
+}, {
+  "value": "Oracle",
+  "id": "oracle",
+  "level": 4
+}, {
   "value": "<code>Log</code>",
   "id": "log",
   "level": 3
@@ -78,7 +90,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통",
+  "id": "공통-1",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -94,11 +106,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database",
+  "id": "database-1",
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-1",
+  "id": "공통-2",
   "level": 4
 }, {
   "value": "MongoDB, MySQL, PostgreSQL",
@@ -130,7 +142,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-2",
+  "id": "공통-3",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -138,11 +150,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-1",
+  "id": "database-2",
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-3",
+  "id": "공통-4",
   "level": 4
 }, {
   "value": "Oracle <code class=\"my\">V2</code>, Oracle Pro",
@@ -166,7 +178,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-2",
+  "id": "database-3",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -363,6 +375,82 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "공통",
+          children: "공통"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "1",
+                children: "Feature"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_lab",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbScriptManager",
+                className: "uitext"
+              }), " 메뉴에서 스크립트 목록에 대한 기본 정렬 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "0",
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_event",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_eventSetting",
+                className: "uitext"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                className: "newfunc",
+                children: "New"
+              }), " 메뉴에서 메트릭스 이벤트 템플릿에 퍼센트(%) 단위 추가"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "1",
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_lab",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_dbScriptManager",
+                className: "uitext"
+              }), " 메뉴에서 다음 사항 수정"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["스크립트 SQL 기본 포맷팅 설정을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "false"
+                  }), "로 수정"]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "스크립트 결과가 많을 경우 좌우 스크롤 표시하도록 수정"
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                  children: "스크립트 목록에 데이터가 없으면 에이전트 경로에 각 플랫폼 값으로 표시하도록 수정"
+                }), "\n"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "oracle",
+          children: "Oracle"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " Oracle CPU Core 수를 3시간 범위로 확인하도록 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "log",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Log"
@@ -407,7 +495,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통",
+          id: "공통-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -637,12 +725,12 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database",
+          id: "database-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-1",
+          id: "공통-2",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -852,7 +940,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-2",
+          id: "공통-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -1026,12 +1114,12 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-1",
+          id: "database-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-3",
+          id: "공통-4",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -1195,7 +1283,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-2",
+          id: "database-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
