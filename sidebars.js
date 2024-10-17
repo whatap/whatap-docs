@@ -5725,21 +5725,12 @@ const sidebars = {
           label: 'vCenter',
           className: 'beta' 
         },
-        // 'kafka/install-agent',
-        // {
-        //   type: 'category',
-        //   label: '주요 메뉴 알아보기',
-        //   collapsible: true,
-        //   collapsed: false,
-        //   items: [
-        //     'kafka/dashboard',
-        //     {
-        //       type: 'doc',
-        //       id: 'kafka/warning-notice-v2',
-        //       className: 'newfunc'
-        //     },
-        //   ],
-        // }
+        {
+          type: 'doc',
+          id: 'features/nginx-introduction',
+          label: 'NGINX',
+          className: 'beta' 
+        },
       ]
     }
   ],
