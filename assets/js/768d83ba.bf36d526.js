@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52217],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[83924],{
 
 /***/ 17003:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -18,12 +18,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
-/*
-피쳐 프로젝트
-
-카프카
-에어로스파이크
-*/
+/*이 문서 넘버링이 1 1 3으로 이어진 이유는 xclude page 활용 문제입니다. 번역 시 주의해 주세요.*/
 
 
 const toc = [];
@@ -38,10 +33,11 @@ function _createMdxContent(props) {
     strong: "strong",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {InDoc} = _components;
+  }, {InDoc, Xclude} = _components;
   if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "피쳐 프로젝트"
       }), "(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
@@ -116,57 +112,80 @@ function _createMdxContent(props) {
               children: "curl http://repo.whatap.io/telegraf/feature/vcenter/install_vcenter_monitoring.sh -o install_vcenter_monitoring.sh\n"
             })
           })]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["에이전트 설정 및 재시작 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "모니터링"
-          }), "을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "시작"
-          }), "하세요."]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          pages: "kafka-introduction",
+          pages: "nginx-introduction",
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "카프카에 Jolokia 에이전트 설정을 위해 다음 명령어를 실행 후 재시작하세요."
+            children: "다음 명령어를 실행해 사용자 환경을 자동으로 인식 후 NGINX가 설치된 서버에 설치 스크립트를 생성하세요."
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              children: "#cd {kafka home directory}/bin\nsed -i '/^#!/a export KAFKA_OPTS='\\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\\''' kafka-server-start.sh\n./kafka-server-stop.sh\n./kafka-server-start.sh\n"
+              children: "curl http://repo.whatap.io/telegraf/feature/nginx/install_nginx_monitoring.sh -o install_nginx_monitoring.sh\n"
             })
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          pages: "aerospike-introduction",
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "와탭 서버 모니터링 에이전트와 텔레그래프 사이드카를 설치하기 위해 다음 명령어를 실행하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음 명령어를 실행해 NGINX 에이전트를 설치하세요."
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-bash",
-              children: "chmod +x install_aerospike_monitoring.sh\nsudo ./install_aerospike_monitoring.sh \"x42ru23mvv8e0-z773a0eqslde4u-z32imrtin4l23j\" \"15.165.146.117\"\n"
-            })
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          pages: "apache-pulsar-introduction",
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "와탭 서버 모니터링 에이전트와 텔레그래프 사이드카를 설치하기 위해 다음 명령어를 실행하세요."
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              children: "chmod +x install_apachepulsar_monitoring.sh\nsudo ./install_apachepulsar_monitoring.sh \"x42s823cuq7fg-x7ekkc24qctvr1-z51hfam8avhtls\" \"15.165.146.117\"\n"
-            })
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-          pages: "vcenter-introduction",
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "와탭 서버 모니터링 에이전트와 텔레그래프 사이드카를 설치하기 위해 다음 명령어를 실행하세요."
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              className: "language-bash",
-              children: "chmod +x install_vcenter_monitoring.sh\nsudo ./install_vcenter_monitoring.sh \"x42u520ie21jb-z76vslonvu6qp8-x7dv18dj7fknuq\" \"15.165.146.117\"\n"
+              children: "chmod +x install_nginx_monitoring.sh\nsudo ./install_nginx_monitoring.sh \"x42ut20rmr8rn-z1kli3trqviqul-x5cm4quee6cdmj\" \"15.165.146.117\"\n"
             })
           })]
         }), "\n"]
       }), "\n"]
-    }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+      pages: "nginx-introduction",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        start: "3",
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["에이전트 설정 및 재시작 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "모니터링"
+            }), "을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "시작"
+            }), "하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+            pages: "kafka-introduction",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "카프카에 Jolokia 에이전트 설정을 위해 다음 명령어를 실행 후 재시작하세요."
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "#cd {kafka home directory}/bin\nsed -i '/^#!/a export KAFKA_OPTS='\\''-javaagent:/usr/whatap/infra/feature/jolokia-agent-jvm-2.0.1-javaagent.jar=port=8778,host=127.0.0.1'\\''' kafka-server-start.sh\n./kafka-server-stop.sh\n./kafka-server-start.sh\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+            pages: "aerospike-introduction",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "와탭 서버 모니터링 에이전트와 텔레그래프 사이드카를 설치하기 위해 다음 명령어를 실행하세요."
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "chmod +x install_aerospike_monitoring.sh\nsudo ./install_aerospike_monitoring.sh \"x42ru23mvv8e0-z773a0eqslde4u-z32imrtin4l23j\" \"15.165.146.117\"\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+            pages: "apache-pulsar-introduction",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "와탭 서버 모니터링 에이전트와 텔레그래프 사이드카를 설치하기 위해 다음 명령어를 실행하세요."
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "chmod +x install_apachepulsar_monitoring.sh\nsudo ./install_apachepulsar_monitoring.sh \"x42s823cuq7fg-x7ekkc24qctvr1-z51hfam8avhtls\" \"15.165.146.117\"\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+            pages: "vcenter-introduction",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "와탭 서버 모니터링 에이전트와 텔레그래프 사이드카를 설치하기 위해 다음 명령어를 실행하세요."
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-bash",
+                children: "chmod +x install_vcenter_monitoring.sh\nsudo ./install_vcenter_monitoring.sh \"x42u520ie21jb-z76vslonvu6qp8-x7dv18dj7fknuq\" \"15.165.146.117\"\n"
+              })
+            })]
+          }), "\n"]
+        }), "\n"]
+      })
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -315,7 +334,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 44322:
+/***/ 14478:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -335,49 +354,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'apache-pulsar-introduction',
-	title: 'Apache Pulsar 모니터링',
-	description: '이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.',
+	id: 'nginx-introduction',
+	title: 'NGINX 모니터링',
+	description: '이 문서는 NGINX 모니터링 상품에 대한 소개 페이지입니다.',
 	displayed_sidebar: 'featuremonitorSidebar',
 	toc_max_heading_level: 2,
 	keywords: [
-		'Apache Pulsar',
+		'NGINX',
 		'Feature'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "features/apache-pulsar-introduction",
-  "title": "Apache Pulsar 모니터링",
-  "description": "이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.",
-  "source": "@site/docs/features/apache-pulsar-introduction.mdx",
+  "id": "features/nginx-introduction",
+  "title": "NGINX 모니터링",
+  "description": "이 문서는 NGINX 모니터링 상품에 대한 소개 페이지입니다.",
+  "source": "@site/docs/features/nginx-introduction.mdx",
   "sourceDirName": "features",
-  "slug": "/features/apache-pulsar-introduction",
-  "permalink": "/whatap-docs/features/apache-pulsar-introduction",
+  "slug": "/features/nginx-introduction",
+  "permalink": "/whatap-docs/features/nginx-introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/features/apache-pulsar-introduction.mdx",
+  "editUrl": "undefined/docs/features/nginx-introduction.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "apache-pulsar-introduction",
-    "title": "Apache Pulsar 모니터링",
-    "description": "이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.",
+    "id": "nginx-introduction",
+    "title": "NGINX 모니터링",
+    "description": "이 문서는 NGINX 모니터링 상품에 대한 소개 페이지입니다.",
     "displayed_sidebar": "featuremonitorSidebar",
     "toc_max_heading_level": 2,
     "keywords": [
-      "Apache Pulsar",
+      "NGINX",
       "Feature"
     ],
     "isTranslationMissing": false
   },
   "sidebar": "featuremonitorSidebar",
   "previous": {
-    "title": "Aerospike",
-    "permalink": "/whatap-docs/features/aerospike-introduction"
-  },
-  "next": {
     "title": "vCenter",
     "permalink": "/whatap-docs/features/vcenter-introduction"
   }
@@ -386,76 +401,17 @@ const assets = {
 
 };
 
-/*실시간 데이터 처리와 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 아파치 펄사를 사용하면 초당 수백만 건의 트랜잭션을 처리하며, 데이터 일관성과 성능을 유지하면서 대규모 데이터 작업을 효율적으로 수행할 수 있습니다. 따라서 아파치 펄사의 성능과 상태를 모니터링하는 것은 시스템 안정성과 최적화를 위해 매우 중요합니다.*/
-/*#### 클러스터 상태 개요
+/*
 
-- **CPU, Memory, Storage 사용량**: 클러스터 전체 자원 사용 현황을 표시합니다.
+* Nginx Connections Accepted: NGINX가 수신하여 허용한 연결의 총 수를 나타냅니다. 이 지표는 서버로 들어오는 트래픽을 모니터링하고, 얼마나 많은 클라이언트가 NGINX에 연결할 수 있는지를 파악하는 데 유용합니다.
 
-- **ZooKeeper, Broker, Bookie 상태**: 노드 수와 가용성을 보여줍니다.
+* Active Connections (accepted): 현재 NGINX 서버가 수락한 활성 연결 상태를 실시간으로 보여줍니다. 이 지표는 NGINX가 현재 처리 중인 클라이언트와의 연결 수를 나타내며, 서버의 부하 상태를 이해하는 데 도움이 됩니다.
 
-#### 메시징 메트릭
+* Handled Request: NGINX 서버가 성공적으로 처리한 요청의 수를 추적합니다. 이 지표는 요청이 서버에서 어떻게 처리되었는지를 반영하며, 특정 시간 동안 성공적으로 처리된 요청의 양을 알 수 있습니다.
 
-- **Messaging Storage**: 메시징에 사용된 총 스토리지를 시각화합니다.
+* Nginx Requests: NGINX 서버가 수신한 총 요청 수를 보여줍니다. 이 지표는 클라이언트가 서버에 보낸 모든 요청을 포함하며, 요청의 양을 파악하고 서버의 트래픽을 이해하는 데 도움이 됩니다.
 
-- **Message Rate**: 초당 들어오고 나가는 메시지 속도를 표시합니다.
-
-- **Messaging Backlog**: 처리되지 않은 메시지 수를 추적합니다.
-
-- **처리량**: 초당 바이트로 처리량을 표시합니다.
-
-#### 주요 토픽 및 백로그
-
-- **상위 10개 토픽 백로그**: 백로그가 가장 많은 토픽을 나열하여 병목 현상을 식별합니다.
-
-- **상위 10개 복제 백로그**: 복제 프로세스를 모니터링하기 위한 복제 백로그를 보여줍니다.
-
-#### 노드별 메트릭
-
-- **노드 CPU 및 메모리 사용량**: 클러스터 내 개별 노드의 사용 통계를 제공합니다.
-
-- **오프로드된 크기**: 클러스터에서 오프로드된 데이터 양을 추적합니다.
-
-:::note[]
-
-**주요 모니터링 메트릭**
-
-* **CPU 사용량**
-
-CPU 사용률을 추적하여 과부하를 방지합니다.
-
-* **메모리 사용량**
-
-메모리 사용을 모니터링하여 메모리 부족 오류를 방지합니다.
-
-* **스토리지 사용량**
-
-충분한 스토리지가 있는지 확인합니다.
-
-* **메시지 속도 및 처리량**
-
-높은 속도는 성능 병목을 나타낼 수 있습니다.
-
-* **백로그 메트릭**
-
-증가하는 백로그는 소비 애플리케이션에 문제가 있음을 나타낼 수 있습니다.
-
-:::
-
-### 경고 알림
-
-홈 화면 > **피쳐 프로젝트**(<code class='Features'>Features</code>) 선택 > ***경고 알림*** > ***이벤트 설정***
-
-클러스터 상태 유지를 위해 다음과 같은 시나리오에 대한 알림을 설정하세요
-
-- **CPU 사용량**: CPU 사용량이 80%를 초과할 때 알림.
-
-- **메모리 사용량**: 메모리 사용량이 75%를 초과할 때 알림.
-
-- **스토리지 사용량**: 스토리지 사용량이 85%를 초과할 때 알림.
-
-- **메시지 백로그**: 백로그가 일정 임계값(예: 10,000 메시지)을 초과할 때 알림.
-
-- **ZooKeeper, 브로커, Bookie 상태**: 노드가 다운될 때 알림.*/
+*/
 
 
 
@@ -470,8 +426,8 @@ const toc = [{
   "id": "피쳐-프로젝트-생성하기",
   "level": 3
 }, ..._common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "Apache Pulsar 에이전트 설치",
-  "id": "apache-pulsar-에이전트-설치",
+  "value": "NGINX 에이전트 설치",
+  "id": "nginx-에이전트-설치",
   "level": 3
 }, ..._common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "주요 메뉴 알아보기",
@@ -481,18 +437,6 @@ const toc = [{
   "value": "대시보드",
   "id": "대시보드",
   "level": 3
-}, {
-  "value": "대시보드 상단 요약 정보",
-  "id": "대시보드-상단-요약-정보",
-  "level": 5
-}, {
-  "value": "성능 그래프",
-  "id": "성능-그래프",
-  "level": 5
-}, {
-  "value": "상위 10개 항목 백로그",
-  "id": "상위-10개-항목-백로그",
-  "level": 5
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -501,7 +445,6 @@ function _createMdxContent(props) {
     em: "em",
     h2: "h2",
     h3: "h3",
-    h5: "h5",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
@@ -530,49 +473,43 @@ function _createMdxContent(props) {
           children: "Features"
         }), ")를 도입하였습니다. 피쳐 프로젝트는 기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다. 와탭 피쳐 프로젝트를 통해 서비스의 안정성과 성능을 더욱 효과적으로 관리해 보세요."]
       })]
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "아파치 펄사는 대규모의 실시간 데이터를 효율적으로 처리할 수 있도록 설계된 분산형 메시징 및 스트리밍 플랫폼입니다. 높은 확장성과 내장된 멀티 테넌시 기능을 제공하며 메시지의 지리적인 복제 및 지속성을 통해 신뢰성과 유연성을 보장합니다. 아파치 펄사의 복잡한 운영 환경에서 성능 및 안정성을 유지하기 위해 모니터링이 중요합니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "NGINX는 고성능 HTTP 및 역방향 프록시 서버로, 웹 애플리케이션을 위한 로드 밸런싱, 캐싱, HTTP 캐시와 같은 기능을 제공합니다. NGINX는 높은 동시 처리 성능을 바탕으로 웹 트래픽을 효과적으로 분산하고 관리할 수 있어 대규모 웹사이트 운영에 적합합니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭은 새로운 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "피쳐 프로젝트"
       }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar"
+          children: "NGINX"
         })
-      }), " 모니터링을 제공합니다. 와탭을 통해 아파치 펄사 클러스터의 성능과 상태를 실시간으로 추적하여 메시지 지연, 처리량 저하, 리소스 과부하 등과 같은 문제를 조기에 감지하고 해결할 수 있습니다."]
+      }), " 모니터링을 제공합니다. NGINX 서버의 성능과 상태를 실시간으로 추적하여 문제를 조기에 감지하고 해결할 수 있도록 돕습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "지표 모니터링"
-          }), ":  각 노드에 대한 CPU, 메모리 사용량과 같은 다양한 시스템 지표 및 메시지 처리량, 지연 시간, 큐 크기 등 중요한 운영 지표를 제공합니다."]
+          }), ": NGINX 서버의 요청 처리 상태, 응답 코드, 연결 상태 등 다양한 메트릭을 실시간으로 모니터링합니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "맞춤형 대시보드"
-          }), ": 맞춤형 대시보드를 통해 지표를 효율적으로 조회할 수 있습니다."]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "알림 설정"
-          }), ": 설정한 조건 감지 시 실시간으로 알림을 발송해 사용자가 문제에 신속히 대응할 수 있습니다."]
+            children: "대시보드"
+          }), ": 대시보드를 통해 필요한 지표를 효율적으로 조회하고 분석할 수 있습니다."]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar"
+          children: "NGINX"
         })
-      }), " 모니터링을 통해 아파치 펄사 클러스터의 복잡한 운영 환경을 효과적으로 관리해 보세요."]
+      }), " 모니터링을 통해 NGINX 서버의 안정적 운영을 관리해 보세요."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "설치하기",
         children: "설치하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 아파치 펄사 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."
+        children: "와탭 NGINX 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["와탭 모니터링 서비스를 사용하기 위해서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "https://www.whatap.io/ko/signup/",
@@ -587,16 +524,16 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "지원 환경"
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
-            anchor: "apache-pulsar-supported-env"
+            anchor: "NGINX-supported-env"
           })]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "와탭 아파치 펄사 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요."
+          children: "와탭 NGINX 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요."
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Apache Pulsar"
-              }), ": Apache Pulsar 3.3.x 이상"]
+                children: "NGINX"
+              }), ": NGINX 1.4.x 이상"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -628,10 +565,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "apache-pulsar-에이전트-설치",
-        children: "Apache Pulsar 에이전트 설치"
+        id: "nginx-에이전트-설치",
+        children: "NGINX 에이전트 설치"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-        name: "Apache Pulsar 에이전트 설치"
+        name: "NGINX 에이전트 설치"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
@@ -652,183 +589,72 @@ function _createMdxContent(props) {
           children: "Features"
         }), ") 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar"
+            children: "NGINX"
           })
         }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar 대시보드"
+            children: "NGINX 대시보드"
           })
         })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 아파치 펄사 모니터링은 아파치 펄사 클러스터의 성능과 상태 등 전체 현황을 한 눈에 파악할 수 있도록 다양한 지표를 실시간으로 모니터링합니다. 각 지표를 정기적으로 확인하여 클러스터가 최적의 상태를 유지하도록 관리할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["와탭이 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar 대시보드"
+            children: "NGINX 대시보드"
           })
-        }), "는 다음의 세 가지 프리셋으로 구성되어있습니다."]
+        }), "는 웹 서버의 실시간 성능을 한눈에 확인할 수 있는 시각적 도구로, 트래픽 패턴, 요청 처리 상황 등을 효과적으로 모니터링할 수 있습니다. 주요 지표를 통해 NGINX 서버 성능을 분석하고 관리해 보세요."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Overview"
+                children: "NGINX Requests Status Code"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터의 전반적인 성능과 상태를 한눈에 파악할 수 있도록 주요 메트릭을 종합적으로 시각화한 대시보드입니다. 클러스터 운영자가 실시간으로 시스템 상태를 모니터링하고 성능 저하를 신속히 감지하는 것에 유용합니다."
+            children: "NGINX 서버가 처리한 요청의 상태 코드를 실시간으로 모니터링합니다. 2XX, 3XX, 4XX, 5XX, 503 등 상태 코드에 따른 응답 수를 분류하여 실시간으로 확인합니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "대시보드-상단-요약-정보",
-              children: "대시보드 상단 요약 정보"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "CPU"
+                      children: "Response2XX"
                     })
-                  }), ": 클러스터에서 사용 중인 CPU 코어의 수를 표시합니다."]
+                  }), ": 정상적으로 처리된 요청을 의미합니다. 서버가 성공적으로 처리한 요청의 수를 실시간으로 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Memory"
+                      children: "Response3XX"
                     })
-                  }), ": 클러스터에서 사용 중인 총 메모리 용량과 현재 메모리 사용량을 나타냅니다."]
+                  }), ": 리다이렉트된 요청을 추적합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "ZooKeeper"
+                      children: "Response4XX"
                     })
-                  }), ": 현재 운영 중인 ZooKeeper 인스턴스의 수와 가용 상태를 보여줍니다."]
+                  }), ": 잘못된 요청과 같은 클라이언트 오류에 대한 응답을 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Broker"
+                      children: "Response5XX"
                     })
-                  }), ": 활성화된 브로커의 수와 상태를 표시합니다."]
+                  }), ": 서버 오류에 대한 응답 상태를 추적합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Bookies"
+                      children: "Response503"
                     })
-                  }), ": 아파치 펄사에서 사용하는 BookKeeper 노드(Bookies)의 수와 상태를 나타냅니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Broker Storage Size"
-                    })
-                  }), ": 브로커에 저장된 데이터의 총 용량을 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Backlog"
-                    })
-                  }), ": 처리되지 않은 메시지의 총 크기를 표시하여 메시지 처리의 지연 상태를 파악할 수 있습니다."]
-                }), "\n"]
-              }), "\n"]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "성능-그래프",
-              children: "성능 그래프"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messaging Storage"
-                    })
-                  }), ": 시간에 따른 메시지 저장소 사용량을 표시하여 저장소 용량 변동성을 추적합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Message Rate(msg/s)"
-                    })
-                  }), ": 초당 처리되는 메시지 수를 그래프로 보여주며, 클러스터의 메시지 처리 속도를 모니터링합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messaging Backlog"
-                    })
-                  }), ": 시간 경과에 따라 처리되지 않고 대기 중인 메시지의 수를 시각화하여, 메시지 처리 지연을 신속히 파악할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Throughput(bytes/s)"
-                    })
-                  }), ": 초당 처리된 데이터의 양을 나타내며, 클러스터의 데이터 처리 능력을 평가합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Backlog"
-                    })
-                  }), ": 다른 데이터 센터로 복제되지 않고 대기 중인 메시지의 수를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Throughput"
-                    })
-                  }), ": 데이터 복제 과정에서 초당 처리되는 데이터 양을 나타냅니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Rate"
-                    })
-                  }), ": 복제 메시지의 전송 속도를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Subscription Unacked Messages"
-                    })
-                  }), ": 구독된 메시지 중 아직 확인되지 않은(Unacked) 메시지의 수를 나타냅니다."]
-                }), "\n"]
-              }), "\n"]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "상위-10개-항목-백로그",
-              children: "상위 10개 항목 백로그"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 topics backlog"
-                    })
-                  }), ": 백로그가 가장 많은 상위 10개의 토픽을 나열하여 메시지 지연 원인을 분석할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Replication Backlog"
-                    })
-                  }), ": 복제 백로그가 가장 많은 상위 10개의 항목을 나열하여 복제 지연 문제를 파악할 수 있습니다."]
+                  }), ": 서비스 불가 오류 상태를 추적합니다."]
                 }), "\n"]
               }), "\n"]
             })]
@@ -837,11 +663,11 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Overview II"
+                children: "Nginx Metrics"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터 내 메시지 생산자와 소비자 활동을 중점적으로 모니터링하는 대시보드입니다. 노드별 자원 사용량 및 주요 토픽의 상태를 세부적으로 관리할 수 있도록 설계되었습니다. 시스템 자원의 최적화와 메시지 처리 흐름을 관리하는 데 도움을 줍니다."
+            children: "NGINX의 성능과 상태를 종합적으로 보여주는 다양한 메트릭을 제공합니다. 실시간으로 연결 상태 및 처리 상황을 추적할 수 있습니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
@@ -850,81 +676,57 @@ function _createMdxContent(props) {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Consumers Count"
+                      children: "NGINX Connections Accepted"
                     })
-                  }), ": 현재 클러스터에서 활성화된 컨슈머의 수를 실시간으로 표시하며, 메시지 소비 활동을 모니터링하고 컨슈머 수의 변동이 시스템에 미치는 영향을 분석할 수 있습니다."]
+                  }), ": NGINX 서버가 허용한 연결 수를 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Producers Count"
+                      children: "NGINX Writing"
                     })
-                  }), ": 현재 클러스터에서 활성화된 프로듀서의 수를 실시간으로 표시하며, 메시지 생산 활동을 모니터링하고 프로듀서 수의 변화가 메시지 생산 속도에 미치는 영향을 분석할 수 있습니다."]
+                  }), ": 클라이언트에게 응답을 쓰고 있는 연결 수를 추적합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messages In"
+                      children: "Active Connections(accepted)"
                     })
-                  }), ": 클러스터에 인입되는 메시지 수를 시간에 따라 표시하며, 메시지 인입 속도를 모니터링하여 시스템 부하를 예측하고 트래픽 변동을 파악하는 데 도움을 줍니다."]
+                  }), ": NGINX 서버가 현재 처리 중인 클라이언트와의 연결 수를 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Subscriptions Count"
+                      children: "Waiting"
                     })
-                  }), ": 클러스터에서 활성화된 구독의 수를 실시간으로 표시하며, 구독 수의 증감이 시스템 메시지 처리에 미치는 영향을 분석할 때 유용합니다."]
+                  }), ": Keep-alive 상태에서 대기 중인 연결을 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Offloaded Size"
+                      children: "Handled Request"
                     })
-                  }), ": 클러스터에서 디스크로 오프로드된 데이터의 크기를 나타내며, 데이터 저장 효율성을 평가하고 장기적인 저장 공간 관리에 활용할 수 있습니다."]
+                  }), ": NGIMX 서버가 성공적으로 처리한 요청 수를 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Bytes In"
+                      children: "NGINX Requests"
                     })
-                  }), ": 클러스터로 인입되는 데이터의 크기를 실시간으로 표시하며, 데이터 인입 속도를 모니터링하여 시스템 성능 및 네트워크 부하를 관리하는 데 유용합니다."]
+                  }), ": NGIMX 서버가 수신한 총 요청 수를 실시간으로 추적합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Node CPU"
+                      children: "NGINX Reading"
                     })
-                  }), "(Node CPU 사용률): 클러스터 내 각 노드의 CPU 사용률을 그래프로 표시하며, 노드별 성능을 모니터링하고 리소스 분배를 최적화할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Node Memory Used %"
-                    })
-                  }), "(Node Memory 사용률): 클러스터 내 각 노드의 메모리 사용률을 실시간으로 표시하며, 메모리 사용 현황을 모니터링하여 성능 저하를 예방할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Topics Unacked"
-                    })
-                  }), ": 아직 확인되지 않은(Unacked) 메시지가 많은 상위 10개의 토픽을 나열하며, 특정 토픽에서 메시지 확인 지연의 원인을 파악하고 문제를 해결하는 데 유용합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Topics Storage"
-                    })
-                  }), ": 저장 공간을 가장 많이 차지하고 있는 상위 10개의 토픽을 나열하며, 특정 토픽이 차지하는 저장 공간을 분석하여 효율적인 데이터 관리를 지원합니다."]
+                  }), ": 클라이언트로부터 요청 데이터를 읽는 중인 연결 수를 표시합니다."]
                 }), "\n"]
               }), "\n"]
             })]
@@ -933,11 +735,11 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Backlog"
+                children: "Domain Throughput"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터 내 백로그 상태를 실시간으로 추적하는 대시보드입니다. 메시지 처리 지연이 발생할 수 있는 토픽을 신속하게 식별할 수 있도록 지원합니다. 문제 발생 시 빠르게 대응하고 성능 최적화를 위한 조치를 취하는 데 유용합니다."
+            children: "도메인 단위에서의 트래픽과 성능을 추적할 수 있습니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
@@ -946,39 +748,22 @@ function _createMdxContent(props) {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Pulsar Backlog"
+                      children: "Response Bytes SUM"
                     })
-                  }), ": 특정 토픽에서 처리되지 않고 대기 중인 메시지 수를 시간에 따라 시각화합니다. 시스템의 처리 능력을 초과할 때 발생하는 백로그 상태를 실시간으로 모니터링하여 문제를 조기에 발견하고 대응할 수 있습니다."]
+                  }), ": 응답으로 전송된 총 바이트 수를 표시합니다. 서버가 처리한 전체 트래픽 양을 모니터링할 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 20 Backlog Topics"
+                      children: "Latency Average"
                     })
-                  }), ": 백로그가 가장 많은 상위 20개의 토픽을 나열합니다. 각 토픽에서 처리되지 않고 대기 중인 메시지 수를 표시하여 문제 토픽을 신속히 파악하고 리소스를 집중할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Recently"
-                    })
-                  }), "(최근 메시지 수): 각 토픽 옆의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Recently"
-                    })
-                  }), " 컬럼은 최근 발생한 백로그 메시지 수를 나타냅니다. 최근 백로그 상태를 명확히 이해하고 즉각적인 대응이 필요한 토픽을 식별하는 데 도움을 줍니다."]
+                  }), ": 평균 응답 지연 시간을 표시합니다. 서버의 응답 속도를 평가하는 중요한 지표입니다."]
                 }), "\n"]
               }), "\n"]
             })]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "실시간으로 데이터를 업데이트하여 운영자가 즉각적인 상황을 파악할 수 있도록 지원하며 클러스터 운영 중 발생하는 변동성을 신속히 반영합니다. 이를 통해 운영자는 문제를 실시간으로 모니터링하고 즉각적인 조치를 취할 수 있습니다."
-        })]
       })]
     })]
   });

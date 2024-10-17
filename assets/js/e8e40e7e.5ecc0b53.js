@@ -92,6 +92,10 @@ const toc = [{
   "value": "vCenter",
   "id": "vcenter",
   "level": 2
+}, {
+  "value": "NGINX",
+  "id": "nginx",
+  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -185,6 +189,14 @@ function _createMdxContent(props) {
         children: "vCenter"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "vCenter는 VMware의 중앙 집중식 관리 플랫폼으로, 가상화된 데이터 센터의 다양한 리소스와 작업을 한 곳에서 통합 관리할 수 있도록 지원합니다. 단일 인터페이스에서 다수의 가상 머신(VM), 호스트, 스토리지, 네트워크를 효율적으로 관리함으로써 IT 인프라 운영을 간소화하고, 관리의 효율성을 높일 수 있습니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "nginx",
+        children: "NGINX"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "NGINX는 고성능 HTTP 및 역방향 프록시 서버로, 웹 애플리케이션의 로드 밸런싱, 캐싱, HTTP 캐시 기능을 제공하며, 트래픽을 효과적으로 관리해 서버 성능을 최적화할 수 있습니다. NGINX는 웹 트래픽을 안정적으로 처리하는 데 최적화되어 있어 대규모 웹사이트 운영에 널리 사용되고 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "flex-container-s features",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -261,6 +273,26 @@ function _createMdxContent(props) {
               class: "int",
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
                 children: "vCenter"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                class: "Features",
+                children: "Features"
+              })]
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "nginx-introduction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "apm-agent",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              class: "logo",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "index-icon/product-nginx-l.svg",
+                desc: "nginx"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              class: "int",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                children: "NGINX"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 class: "Features",
                 children: "Features"
