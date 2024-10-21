@@ -2,6 +2,8 @@
   font-weight: 400;
   font-size: 1.8rem;
   margin-bottom: 35px;
+  color: #fff;
+  text-decoration: solid;
 }
 
 .homehero {
@@ -10,9 +12,14 @@
   background-color: #ddd;
   align-content: center;
   text-align: center;
+  background: url('home-hero-background.png');
   /* position: sticky;
   top: 76px;
   z-index: 100; */
+}
+
+.guidelink:hover {
+  text-decoration: none;
 }
 
 .appcontainer {
@@ -62,7 +69,6 @@
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   width: 23.3%;
-  padding: 15px 20px;
 }
 .flexcolumn:last-of-type {
   border-right: 1px solid #aaa;
@@ -105,6 +111,7 @@
   -webkit-transition: transform 0.5s ease-in-out;
   -moz-transition: transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
+  z-index: 9999;
 }
 
 .flexProd:hover .document .textleft,
@@ -190,6 +197,17 @@
   display: block;
   width: 100%;
 }
+.flexContainer .flexProd .beta {
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  background: #f0f0f0;
+  padding: 1px 5px;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+}
 
 .flexContainer .flexProd:hover a.alignCenter .product .desc .title,
 .flexContainer .flexProd:hover a.alignCenter .product .desc .type {
@@ -250,6 +268,16 @@
   min-height: 100px;
   /* background-color: #aaa; */
   text-align: left;
+  padding: 15px 20px;
+}
+
+.innercontent:hover {
+  cursor: pointer;
+}
+
+.innercontent .textleft {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
 }
 
 p.textleft {
@@ -263,6 +291,15 @@ p.small {
 .inline {
   display: inline-block;
 }
+
+html[lang='en-US'] .inline {
+  letter-spacing: -0.7px;
+}
+
+html[lang='ja-JP'] .inline {
+  letter-spacing: -0.8px;
+}
+
 .iconumber {
   position: relative;
   display: inline-block;
