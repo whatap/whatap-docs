@@ -47,7 +47,7 @@ var react = __webpack_require__(96540);
 var Layout = __webpack_require__(38103);
 ;// CONCATENATED MODULE: ./src/pages/renew/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"frontheading":"frontheading_rzmP","homehero":"homehero_IZR1","appcontainer":"appcontainer_AqcP","aa-Autocomplete":"aa-Autocomplete_fHFR","justifycontentcenter":"justifycontentcenter_eHCM","justifycardcontent":"justifycardcontent_aJwH","gettingStart":"gettingStart_iOkq","flexcolumn":"flexcolumn_iXJh","flexContainer":"flexContainer_lnPo","textcenter":"textcenter_kKjR","flexProd":"flexProd_iGTO","document":"document_e86O","textleft":"textleft_I9dL","product":"product_OzUz","type":"type_I67K","tag":"tag_kLmU","alignDocument":"alignDocument_Lx0N","alignCenter":"alignCenter_Dwgg","logo":"logo_HIFU","doculogo":"doculogo_fIUg","logoDocu":"logoDocu_bWKh","desc":"desc_ehOV","title":"title_VoOx","rightarrowcontainer":"rightarrowcontainer_f7eH","rightarrow":"rightarrow_aZnU","downarrow":"downarrow_ZE1C","innercontent":"innercontent_I0dQ","small":"small_UU3X","inline":"inline_kcFA","iconumber":"iconumber_wGmr"});
+/* harmony default export */ const styles_module = ({"frontheading":"frontheading_rzmP","homehero":"homehero_IZR1","guidelink":"guidelink_SWNB","appcontainer":"appcontainer_AqcP","aa-Autocomplete":"aa-Autocomplete_fHFR","justifycontentcenter":"justifycontentcenter_eHCM","justifycardcontent":"justifycardcontent_aJwH","gettingStart":"gettingStart_iOkq","flexcolumn":"flexcolumn_iXJh","flexContainer":"flexContainer_lnPo","textcenter":"textcenter_kKjR","flexProd":"flexProd_iGTO","document":"document_e86O","textleft":"textleft_I9dL","product":"product_OzUz","type":"type_I67K","tag":"tag_kLmU","alignDocument":"alignDocument_Lx0N","alignCenter":"alignCenter_Dwgg","logo":"logo_HIFU","doculogo":"doculogo_fIUg","logoDocu":"logoDocu_bWKh","desc":"desc_ehOV","title":"title_VoOx","beta":"beta_KeEB","rightarrowcontainer":"rightarrowcontainer_f7eH","rightarrow":"rightarrow_aZnU","downarrow":"downarrow_ZE1C","innercontent":"innercontent_I0dQ","small":"small_UU3X","inline":"inline_kcFA","iconumber":"iconumber_wGmr"});
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
 var Head = __webpack_require__(3248);
 // EXTERNAL MODULE: ./node_modules/@meilisearch/autocomplete-client/dist/autocomplete-client.umd.js
@@ -224,10 +224,14 @@ function ProductItem({ hit , components  }) {
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(90062);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
+var useBaseUrl = __webpack_require__(92469);
 // EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.mjs
 var clsx = __webpack_require__(34164);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
 var Heading = __webpack_require__(61917);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
+var Translate = __webpack_require__(15418);
 ;// CONCATENATED MODULE: ./src/components/Autocomplete/icons.js
 
 
@@ -366,18 +370,44 @@ function Docs() {
     });
 }
 function Proxy() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("svg", {
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("svg", {
         xmlns: "http://www.w3.org/2000/svg",
-        width: "26",
+        width: "19",
         height: "25",
-        viewBox: "0 0 26 25",
+        viewBox: "0 0 19 25",
         fill: "none",
-        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-            "fill-rule": "evenodd",
-            "clip-rule": "evenodd",
-            d: "M1.99362 0.900345C1.38982 0.900345 0.900345 1.38982 0.900345 1.99362V6.75001C0.900345 7.35381 1.38982 7.84329 1.99362 7.84329H23.418C24.0218 7.84329 24.5112 7.35381 24.5112 6.75001V1.99362C24.5112 1.38982 24.0218 0.900345 23.418 0.900345H1.99362ZM0 1.99362C0 0.892575 0.892574 0 1.99362 0H23.418C24.519 0 25.4116 0.892575 25.4116 1.99362V6.75001C25.4116 7.41618 25.0848 8.00604 24.5829 8.36806C25.0848 8.73009 25.4116 9.31994 25.4116 9.98611V14.7425C25.4116 15.8435 24.519 16.7361 23.418 16.7361H13.1566V19.4773C14.3311 19.6686 15.2584 20.5959 15.4497 21.7703H20.8378C21.0865 21.7703 21.288 21.9719 21.288 22.2205C21.288 22.4691 21.0865 22.6707 20.8378 22.6707H15.4497C15.2345 23.9917 14.0882 25 12.7064 25C11.3246 25 10.1783 23.9917 9.96321 22.6707H4.57504C4.32641 22.6707 4.12486 22.4691 4.12486 22.2205C4.12486 21.9719 4.32641 21.7703 4.57504 21.7703H9.96321C10.1545 20.5959 11.0818 19.6686 12.2563 19.4773V16.7361H1.99362C0.892574 16.7361 0 15.8435 0 14.7425V9.98611C0 9.31994 0.32674 8.73009 0.828703 8.36806C0.32674 8.00604 0 7.41618 0 6.75001V1.99362ZM23.418 15.8358C24.0218 15.8358 24.5112 15.3463 24.5112 14.7425V9.98611C24.5112 9.38231 24.0218 8.89283 23.418 8.89283H1.99362C1.38982 8.89283 0.900345 9.38231 0.900345 9.98611V14.7425C0.900345 15.3463 1.38982 15.8358 1.99362 15.8358H23.418ZM3.69013 3.93708C3.45003 3.93708 3.25539 4.13172 3.25539 4.37182C3.25539 4.61192 3.45003 4.80655 3.69013 4.80655C3.93023 4.80655 4.12486 4.61192 4.12486 4.37182C4.12486 4.13172 3.93023 3.93708 3.69013 3.93708ZM2.35504 4.37182C2.35504 3.63447 2.95278 3.03673 3.69013 3.03673C4.42747 3.03673 5.02521 3.63447 5.02521 4.37182C5.02521 5.10916 4.42747 5.7069 3.69013 5.7069C2.95278 5.7069 2.35504 5.10916 2.35504 4.37182ZM7.26578 3.93708C7.02568 3.93708 6.83104 4.13172 6.83104 4.37182C6.83104 4.61192 7.02568 4.80655 7.26578 4.80655C7.50588 4.80655 7.70052 4.61192 7.70052 4.37182C7.70052 4.13172 7.50588 3.93708 7.26578 3.93708ZM5.9307 4.37182C5.9307 3.63447 6.52844 3.03673 7.26578 3.03673C8.00313 3.03673 8.60086 3.63447 8.60086 4.37182C8.60086 5.10916 8.00313 5.7069 7.26578 5.7069C6.52844 5.7069 5.9307 5.10916 5.9307 4.37182ZM16.1458 4.37182C16.1458 4.12319 16.3473 3.92164 16.5959 3.92164H21.5131C21.7617 3.92164 21.9633 4.12319 21.9633 4.37182C21.9633 4.62044 21.7617 4.82199 21.5131 4.82199H16.5959C16.3473 4.82199 16.1458 4.62044 16.1458 4.37182ZM3.69013 11.9296C3.45003 11.9296 3.25539 12.1242 3.25539 12.3643C3.25539 12.6044 3.45003 12.799 3.69013 12.799C3.93023 12.799 4.12486 12.6044 4.12486 12.3643C4.12486 12.1242 3.93023 11.9296 3.69013 11.9296ZM2.35504 12.3643C2.35504 11.627 2.95278 11.0292 3.69013 11.0292C4.42747 11.0292 5.02521 11.627 5.02521 12.3643C5.02521 13.1017 4.42747 13.6994 3.69013 13.6994C2.95278 13.6994 2.35504 13.1017 2.35504 12.3643ZM7.26578 11.9296C7.02568 11.9296 6.83104 12.1242 6.83104 12.3643C6.83104 12.6044 7.02568 12.799 7.26578 12.799C7.50588 12.799 7.70052 12.6044 7.70052 12.3643C7.70052 12.1242 7.50588 11.9296 7.26578 11.9296ZM5.9307 12.3643C5.9307 11.627 6.52844 11.0292 7.26578 11.0292C8.00313 11.0292 8.60086 11.627 8.60086 12.3643C8.60086 13.1017 8.00313 13.6994 7.26578 13.6994C6.52844 13.6994 5.9307 13.1017 5.9307 12.3643ZM16.1458 12.3643C16.1458 12.1157 16.3473 11.9141 16.5959 11.9141H21.5131C21.7617 11.9141 21.9633 12.1157 21.9633 12.3643C21.9633 12.6129 21.7617 12.8145 21.5131 12.8145H16.5959C16.3473 12.8145 16.1458 12.6129 16.1458 12.3643ZM12.7064 20.3414C11.6686 20.3414 10.8273 21.1827 10.8273 22.2205C10.8273 23.2583 11.6686 24.0997 12.7064 24.0997C13.7443 24.0997 14.5856 23.2583 14.5856 22.2205C14.5856 21.1827 13.7443 20.3414 12.7064 20.3414Z",
-            fill: "currentColor"
-        })
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                "fill-rule": "evenodd",
+                "clip-rule": "evenodd",
+                d: "M0.901862 8.81066H4.42216C4.45323 7.52735 4.61807 6.30853 4.8923 5.20982C4.03115 4.95016 3.24972 4.61501 2.57675 4.21781C1.60164 5.50853 0.992026 7.0908 0.901862 8.81066ZM2.12339 3.35637C0.797112 4.95803 0 7.01382 0 9.25578C0 14.3676 4.14395 18.5116 9.25578 18.5116C14.3676 18.5116 18.5116 14.3676 18.5116 9.25578C18.5116 7.01382 17.7144 4.95804 16.3882 3.35638C16.382 3.34843 16.3756 3.34075 16.369 3.33332C14.6712 1.29634 12.1149 0 9.25578 0C6.39667 0 3.84035 1.29635 2.14252 3.33334C2.13593 3.34075 2.12954 3.34843 2.12339 3.35637ZM3.15995 3.52657C3.73422 3.85047 4.39967 4.13044 5.13588 4.35341C5.31267 3.80332 5.51878 3.29171 5.7505 2.82705C6.04626 2.23399 6.39357 1.70041 6.78608 1.26076C5.3844 1.69324 4.14001 2.4842 3.15995 3.52657ZM8.81066 0.946959C8.00229 1.15269 7.19914 1.91697 6.54716 3.22434C6.34266 3.63439 6.15828 4.08889 5.99802 4.5807C6.86771 4.77763 7.81446 4.8989 8.81066 4.92687V0.946959ZM8.81066 5.81742C7.73617 5.78882 6.70592 5.65714 5.75294 5.43784C5.49974 6.45638 5.34351 7.59742 5.31265 8.81066H8.81066V5.81742ZM9.70089 8.81066V5.81742C10.7754 5.78882 11.8056 5.65714 12.7586 5.43784C13.0118 6.45638 13.168 7.59742 13.1989 8.81066H9.70089ZM8.81066 9.70089H5.31265C5.3435 10.9136 5.4996 12.0542 5.7526 13.0724C6.70555 12.8531 7.73586 12.7214 8.81066 12.6929V9.70089ZM9.70089 12.6929V9.70089H13.1989C13.168 10.9137 13.0119 12.0544 12.7589 13.0726C11.8056 12.8532 10.7752 12.7215 9.70089 12.6929ZM8.81066 13.5834C7.81413 13.6114 6.86728 13.7326 5.99759 13.9295C6.15795 14.4218 6.34248 14.8768 6.54716 15.2872C7.19914 16.5946 8.00229 17.3589 8.81066 17.5646V13.5834ZM6.78608 17.2508C6.39357 16.8111 6.04626 16.2776 5.7505 15.6845C5.51859 15.2195 5.31234 14.7074 5.13546 14.1568C4.39905 14.3799 3.73348 14.66 3.15912 14.9841C4.1393 16.0269 5.38401 16.8182 6.78608 17.2508ZM2.57606 14.2928C3.24912 13.8954 4.03064 13.5601 4.89197 13.3004C4.61793 12.202 4.45322 10.9837 4.42216 9.70089H0.901862C0.992005 11.4203 1.60135 13.0023 2.57606 14.2928ZM11.7255 17.2508C13.1275 16.8182 14.3722 16.0269 15.3524 14.9842C14.7781 14.6602 14.1124 14.3801 13.376 14.1571C13.1991 14.7076 12.9929 15.2196 12.761 15.6845C12.4653 16.2776 12.118 16.8111 11.7255 17.2508ZM12.5139 13.9298C11.6439 13.7327 10.697 13.6114 9.70089 13.5834V17.5646C10.5093 17.3589 11.3124 16.5946 11.9644 15.2872C12.169 14.8769 12.3535 14.422 12.5139 13.9298ZM13.6195 13.3007C14.4808 13.5604 15.2625 13.8956 15.9355 14.2929C16.9102 13.0023 17.5195 11.4204 17.6097 9.70089H14.0894C14.0583 10.9838 13.8936 12.2022 13.6195 13.3007ZM14.0894 8.81066H17.6097C17.5195 7.0908 16.9099 5.50853 15.9348 4.21782C15.2618 4.61501 14.4804 4.95016 13.6192 5.20982C13.8935 6.30853 14.0583 7.52735 14.0894 8.81066ZM13.3757 4.35341C14.1119 4.13044 14.7773 3.85047 15.3516 3.52657C14.3715 2.4842 13.1271 1.69324 11.7255 1.26076C12.118 1.70041 12.4653 2.23399 12.761 2.82705C12.9928 3.29171 13.1989 3.80332 13.3757 4.35341ZM9.70089 0.94696V4.92687C10.6971 4.8989 11.6438 4.77763 12.5135 4.5807C12.3533 4.08889 12.1689 3.63439 11.9644 3.22434C11.3124 1.91697 10.5093 1.15269 9.70089 0.94696Z",
+                fill: "currentColor"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                "fill-rule": "evenodd",
+                "clip-rule": "evenodd",
+                d: "M9.25577 21.3399C8.49089 21.3399 7.87084 21.96 7.87084 22.7248C7.87084 23.4897 8.49089 24.1098 9.25577 24.1098C10.0206 24.1098 10.6407 23.4897 10.6407 22.7248C10.6407 21.96 10.0206 21.3399 9.25577 21.3399ZM6.98062 22.7248C6.98062 21.4683 7.99924 20.4497 9.25577 20.4497C10.5123 20.4497 11.5309 21.4683 11.5309 22.7248C11.5309 23.9814 10.5123 25 9.25577 25C7.99924 25 6.98062 23.9814 6.98062 22.7248Z",
+                fill: "currentColor"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                "fill-rule": "evenodd",
+                "clip-rule": "evenodd",
+                d: "M0.737609 22.7248C0.737609 22.479 0.936892 22.2797 1.18272 22.2797H7.42573C7.67156 22.2797 7.87084 22.479 7.87084 22.7248C7.87084 22.9707 7.67156 23.17 7.42573 23.17H1.18272C0.936892 23.17 0.737609 22.9707 0.737609 22.7248Z",
+                fill: "currentColor"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                "fill-rule": "evenodd",
+                "clip-rule": "evenodd",
+                d: "M10.8213 22.7248C10.8213 22.479 11.0206 22.2797 11.2664 22.2797H17.5081C17.754 22.2797 17.9533 22.479 17.9533 22.7248C17.9533 22.9707 17.754 23.17 17.5081 23.17H11.2664C11.0206 23.17 10.8213 22.9707 10.8213 22.7248Z",
+                fill: "currentColor"
+            }),
+            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+                "fill-rule": "evenodd",
+                "clip-rule": "evenodd",
+                d: "M9.25577 16.9676C9.5016 16.9676 9.70088 17.1669 9.70088 17.4128V20.8948C9.70088 21.1406 9.5016 21.3399 9.25577 21.3399C9.00994 21.3399 8.81066 21.1406 8.81066 20.8948V17.4128C8.81066 17.1669 9.00994 16.9676 9.25577 16.9676Z",
+                fill: "currentColor"
+            })
+        ]
     });
 }
 function API() {
@@ -464,56 +494,18 @@ function Project() {
     });
 }
 function Billing() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("svg", {
+    return /*#__PURE__*/ (0,jsx_runtime.jsx)("svg", {
         xmlns: "http://www.w3.org/2000/svg",
-        width: "22",
+        width: "25",
         height: "25",
-        viewBox: "0 0 22 25",
+        viewBox: "0 0 25 25",
         fill: "none",
-        children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M8.20484 0.875917C7.74348 0.875917 7.36896 1.25043 7.36896 1.71179V13.2313C7.36896 13.4732 7.17288 13.6693 6.931 13.6693C6.68913 13.6693 6.49305 13.4732 6.49305 13.2313V1.71179C6.49305 0.766678 7.25972 0 8.20484 0H19.3465C20.2916 0 21.0583 0.766678 21.0583 1.71179V19.8082C21.0583 20.7533 20.2916 21.52 19.3465 21.52H8.20359C7.25847 21.52 6.49179 20.7533 6.49179 19.8082V17.6497C6.49179 17.4078 6.68788 17.2118 6.92975 17.2118C7.17163 17.2118 7.36771 17.4078 7.36771 17.6497V19.8082C7.36771 20.2696 7.74223 20.6441 8.20359 20.6441H19.3465C19.8079 20.6441 20.1824 20.2696 20.1824 19.8082V1.71179C20.1824 1.25043 19.8079 0.875917 19.3465 0.875917H8.20484Z",
-                fill: "currentColor"
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M16.8852 0C17.1271 0 17.3231 0.196081 17.3231 0.437958V21.0808C17.3231 21.3227 17.1271 21.5188 16.8852 21.5188C16.6433 21.5188 16.4472 21.3227 16.4472 21.0808V0.437958C16.4472 0.196081 16.6433 0 16.8852 0Z",
-                fill: "currentColor"
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M14.4414 2.46383C14.6832 2.46383 14.8793 2.65991 14.8793 2.90179V6.90348C14.8793 7.14535 14.6832 7.34143 14.4414 7.34143C14.1995 7.34143 14.0034 7.14535 14.0034 6.90348V2.90179C14.0034 2.65991 14.1995 2.46383 14.4414 2.46383Z",
-                fill: "currentColor"
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M7.15731 5.13648C7.32809 5.30777 7.32768 5.58507 7.15639 5.75585L2.13741 10.7598C2.1374 10.7598 2.13742 10.7598 2.13741 10.7598C1.33008 11.5649 0.875917 12.6584 0.875917 13.7982V24.562C0.875917 24.8038 0.679836 24.9999 0.437958 24.9999C0.196081 24.9999 0 24.8038 0 24.562V13.7982C0 12.4254 0.546906 11.1088 1.51892 10.1396L6.53795 5.13555C6.70924 4.96478 6.98654 4.96519 7.15731 5.13648Z",
-                fill: "currentColor"
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M10.5167 11.8805C10.0708 11.4347 9.34704 11.4347 8.90118 11.8805L4.56539 16.2163C4.39435 16.3874 4.11705 16.3874 3.94602 16.2163C3.77499 16.0453 3.77499 15.768 3.94602 15.597L8.28181 11.2612C9.06974 10.4732 10.3481 10.4732 11.136 11.2612C11.9239 12.0491 11.9239 13.3275 11.136 14.1154L7.29199 17.9594C7.12096 18.1304 6.84366 18.1304 6.67262 17.9594C6.50159 17.7884 6.50159 17.5111 6.67262 17.34L10.5167 13.496C10.9625 13.0502 10.9625 12.3264 10.5167 11.8805Z",
-                fill: "currentColor"
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M7.01545 10.0249C7.18649 10.1959 7.18649 10.4732 7.01545 10.6443L5.98889 11.6708C5.6699 11.9888 5.49075 12.4214 5.49075 12.8722V14.7392C5.49075 14.9811 5.29467 15.1771 5.05279 15.1771C4.81091 15.1771 4.61483 14.9811 4.61483 14.7392V12.8722C4.61483 12.1895 4.88606 11.5335 5.37024 11.0507C5.37033 11.0506 5.37041 11.0506 5.3705 11.0505L6.39609 10.0249C6.56712 9.85385 6.84442 9.85385 7.01545 10.0249Z",
-                fill: "currentColor"
-            }),
-            /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
-                "fill-rule": "evenodd",
-                "clip-rule": "evenodd",
-                d: "M11.5027 20.6976C11.7143 20.8148 11.7909 21.0813 11.6737 21.2929L9.74672 24.7741C9.62958 24.9857 9.36306 25.0623 9.15145 24.9451C8.93983 24.828 8.86324 24.5615 8.98038 24.3499L10.9074 20.8687C11.0245 20.6571 11.2911 20.5805 11.5027 20.6976Z",
-                fill: "currentColor"
-            })
-        ]
+        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
+            "fill-rule": "evenodd",
+            "clip-rule": "evenodd",
+            d: "M12.5 0C5.6 0 0 5.6 0 12.5C0 19.4 5.6 25 12.5 25C19.4 25 25 19.4 25 12.5C25 5.6 19.4 0 12.5 0ZM12.5 22.5C6.9875 22.5 2.5 18.0125 2.5 12.5C2.5 6.9875 6.9875 2.5 12.5 2.5C18.0125 2.5 22.5 6.9875 22.5 12.5C22.5 18.0125 18.0125 22.5 12.5 22.5ZM12.8875 11.425C10.675 10.8625 9.96255 10.25 9.96255 9.3375C9.96255 8.2875 10.95 7.55 12.5875 7.55C14.3125 7.55 14.9625 8.375 15.0125 9.6H17.15C17.0875 7.925 16.0625 6.3875 14.0375 5.8875V3.75H11.125V5.8625C9.23755 6.2625 7.72505 7.4875 7.72505 9.375C7.72505 11.6125 9.58755 12.7375 12.3 13.3875C14.7375 13.9625 15.225 14.825 15.225 15.725C15.225 16.3875 14.7375 17.4625 12.6 17.4625C10.6 17.4625 9.81255 16.5625 9.70005 15.4125H7.55005C7.67505 17.5375 9.25005 18.7375 11.125 19.125V21.25H14.05V19.1625C15.95 18.8 17.45 17.7125 17.4625 15.7C17.45 12.95 15.0875 12 12.8875 11.425V11.425Z",
+            fill: "currentColor"
+        })
     });
 }
 function Multifactor() {
@@ -686,9 +678,8 @@ function WhaTaplogo() {
     });
 }
 
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(92469);
 ;// CONCATENATED MODULE: ./src/pages/renew/index.js
+
 
 
 
@@ -813,77 +804,105 @@ function ThereeSteps() {
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)("section", {
         className: (0,clsx/* default */.A)(styles_module.gettingStart, styles_module.guide, styles_module.justifycontentcenter),
         children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Step, {
                 order: 1,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-                        to: "quick-guide/#account",
-                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
+                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)(Link/* default */.A, {
+                    to: "quick-guide/#account",
+                    className: styles_module.guidelink,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                             as: "h5",
                             className: styles_module.inline,
-                            children: "\uD68C\uC6D0 \uAC00\uC785"
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.register",
+                                message: "회원 가입"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.register.desc",
+                                message: "와탭 모니터링 서비스를 이용하려면 회원 가입을 진행하세요. 15일간 무료 체험할 수 있습니다."
+                            })
                         })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                        children: "\uC640\uD0ED \uBAA8\uB2C8\uD130\uB9C1 \uC11C\uBE44\uC2A4\uB97C \uC774\uC6A9\uD558\uB824\uBA74 \uD68C\uC6D0 \uAC00\uC785\uC744 \uC9C4\uD589\uD558\uC138\uC694. 15\uC77C\uAC04 \uBB34\uB8CC \uCCB4\uD5D8\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-                    })
-                ]
+                    ]
+                })
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)(RightArrow, {}),
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Step, {
                 order: 2,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-                        to: "quick-guide/#cproject",
-                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
+                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)(Link/* default */.A, {
+                    to: "quick-guide/#cproject",
+                    className: styles_module.guidelink,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                             as: "h5",
                             className: styles_module.inline,
-                            children: "\uD504\uB85C\uC81D\uD2B8 \uC0DD\uC131"
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.project",
+                                message: "프로젝트 생성"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.project.desc",
+                                message: "프로젝트를 생성하고 액세스 키를 발급 받으세요."
+                            })
                         })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                        children: "\uD504\uB85C\uC81D\uD2B8\uB97C \uC0DD\uC131\uD558\uACE0 \uC561\uC138\uC2A4 \uD0A4\uB97C \uBC1C\uAE09 \uBC1B\uC73C\uC138\uC694."
-                    })
-                ]
+                    ]
+                })
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)(RightArrow, {}),
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Step, {
                 order: 3,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-                        to: "quick-guide/#install",
-                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
+                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)(Link/* default */.A, {
+                    to: "quick-guide/#install",
+                    className: styles_module.guidelink,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                             as: "h5",
                             className: styles_module.inline,
-                            children: "\uC5D0\uC774\uC804\uD2B8 \uC124\uCE58"
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.agentInstall",
+                                message: "에이전트 설치"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.agentInstall.desc",
+                                message: "모니터링 대상에 에이전트를 설치하세요."
+                            })
                         })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                        children: "\uBAA8\uB2C8\uD130\uB9C1 \uB300\uC0C1\uC5D0 \uC5D0\uC774\uC804\uD2B8\uB97C \uC124\uCE58\uD558\uC138\uC694."
-                    })
-                ]
+                    ]
+                })
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)(RightArrow, {}),
-            /*#__PURE__*/ (0,jsx_runtime.jsxs)(Step, {
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Step, {
                 order: 4,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-                        to: "quick-guide/#dashboard",
-                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
+                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)(Link/* default */.A, {
+                    to: "quick-guide/#dashboard",
+                    className: styles_module.guidelink,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                             as: "h5",
                             className: styles_module.inline,
-                            children: "\uB300\uC2DC\uBCF4\uB4DC \uC870\uD68C\uD558\uAE30"
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.viewDashboard",
+                                message: "대시보드 조회하기"
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
+                            children: (0,Translate/* translate */.T)({
+                                id: "index.pages.viewDashboard.desc",
+                                message: "에이전트 설치 후 데이터가 와탭 서버로 전달되면 대시보드 메뉴에서 프로젝트의 전체 현황을 실시간으로 조회할 수 있습니다."
+                            })
                         })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                        children: "\uC5D0\uC774\uC804\uD2B8 \uC124\uCE58 \uD6C4 \uB370\uC774\uD130\uAC00 \uC640\uD0ED \uC11C\uBC84\uB85C \uC804\uB2EC\uB418\uBA74 \uB300\uC2DC\uBCF4\uB4DC \uBA54\uB274\uC5D0\uC11C \uD504\uB85C\uC81D\uD2B8\uC758 \uC804\uCCB4 \uD604\uD669\uC744 \uC2E4\uC2DC\uAC04\uC73C\uB85C \uC870\uD68C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-                    })
-                ]
+                    ]
+                })
             })
         ]
     });
 }
-function FlexCard({ icons , product , type , url , children  }) {
+function FlexCard({ icons , product , type , url , children , status  }) {
     if (type === 'document') {
         const IconComponent = icons_namespaceObject[icons];
         return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
@@ -912,42 +931,48 @@ function FlexCard({ icons , product , type , url , children  }) {
             })
         });
     }
-    return /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+    return /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
         className: styles_module.flexProd,
-        children: /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
-            to: url,
-            className: styles_module.alignCenter,
-            children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                className: styles_module.product,
-                children: [
-                    /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                        className: styles_module.logo,
-                        children: /*#__PURE__*/ (0,jsx_runtime.jsx)("img", {
-                            src: (0,useBaseUrl/* default */.Ay)(`/img/${icons}`)
-                        })
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                        className: styles_module.desc,
-                        children: [
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                                className: styles_module.title,
-                                children: product
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
-                                className: styles_module.type,
-                                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("code", {
-                                    className: (0,clsx/* default */.A)(`${type}`, styles_module.tag),
-                                    children: type
-                                })
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                children: children
+        children: [
+            status ? /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                className: styles_module.beta,
+                children: status
+            }) : null,
+            /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
+                to: url,
+                className: styles_module.alignCenter,
+                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                    className: styles_module.product,
+                    children: [
+                        /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                            className: styles_module.logo,
+                            children: /*#__PURE__*/ (0,jsx_runtime.jsx)("img", {
+                                src: (0,useBaseUrl/* default */.Ay)(`/img/${icons}`)
                             })
-                        ]
-                    })
-                ]
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
+                            className: styles_module.desc,
+                            children: [
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    className: styles_module.title,
+                                    children: product
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)("div", {
+                                    className: styles_module.type,
+                                    children: /*#__PURE__*/ (0,jsx_runtime.jsx)("code", {
+                                        className: (0,clsx/* default */.A)(`${type}`, styles_module.tag),
+                                        children: type
+                                    })
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
+                                    children: children
+                                })
+                            ]
+                        })
+                    ]
+                })
             })
-        })
+        ]
     });
 }
 function pages() {
@@ -964,7 +989,10 @@ function pages() {
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime.jsx)("h1", {
                         className: styles_module.frontheading,
-                        children: "Welcome to the WhaTab Docs page"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.welcome.para",
+                            message: "와탭 Docs 페이지에 오신 것을 진심으로 환영합니다."
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(App, {})
                 ]
@@ -976,7 +1004,10 @@ function pages() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                         as: "h2",
                         className: styles_module.textcenter,
-                        children: "\uC2DC\uC791\uD558\uAE30 \uC804\uC5D0"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.section.gettingStart",
+                            message: "시작하기 전에"
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: styles_module.flexContainer,
@@ -988,10 +1019,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC640\uD0ED \uBAA8\uB2C8\uD130\uB9C1 \uC11C\uBE44\uC2A4"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.whatapOverview",
+                                            message: "와탭 모니터링 서비스"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uB2E4\uC591\uD55C \uD50C\uB7AB\uD3FC\uC744 \uC544\uC6B0\uB974\uB294 \uD1B5\uD569 \uBAA8\uB2C8\uD130\uB9C1"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.whatapOverview.desc",
+                                            message: "다양한 플랫폼을 아우르는 통합 모니터링"
+                                        })
                                     })
                                 ]
                             }),
@@ -1002,10 +1039,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC9C0\uC6D0 \uD658\uACBD"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.support",
+                                            message: "지원 환경"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC11C\uBE44\uC2A4\uB97C \uC774\uC6A9\uD558\uAE30 \uC804\uC5D0 \uC9C0\uC6D0 \uD658\uACBD\uC744 \uD655\uC778\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.support.desc",
+                                            message: "서비스를 이용하기 전에 지원 환경을 확인하세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1016,10 +1059,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uD648 \uD654\uBA74 \uC548\uB0B4"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.home",
+                                            message: "홈 화면 안내"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC11C\uBE44\uC2A4 \uCD08\uAE30 \uD654\uBA74 \uC0AC\uC6A9 \uBC29\uBC95\uC744 \uC548\uB0B4\uD569\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.home.desc",
+                                            message: "서비스 초기 화면 사용 방법을 안내합니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1030,10 +1079,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uBAA8\uBC14\uC77C \uC571"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.mobileApp",
+                                            message: "모바일 앱"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uBAA8\uBC14\uC77C \uC571 \uC0AC\uC6A9 \uBC29\uBC95\uC744 \uC548\uB0B4\uD569\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.gettingStart.mobileApp.desc",
+                                            message: "모바일 앱 사용 방법을 안내합니다."
+                                        })
                                     })
                                 ]
                             })
@@ -1047,7 +1102,10 @@ function pages() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                         as: "h2",
                         className: styles_module.textcenter,
-                        children: "\uC0C1\uD488"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.section.product",
+                            message: "상품"
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: styles_module.flexContainer,
@@ -1057,197 +1115,281 @@ function pages() {
                                 product: "Java",
                                 type: "Application",
                                 url: "java/introduction",
-                                children: "WAS, \uBC30\uCE58 \uC560\uD50C\uB9AC\uCF00\uC774\uC158 \uB4F1 JVM \uD658\uACBD\uC5D0\uC11C \uB3D9\uC791\uD558\uB294 \uBAA8\uB4E0 \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC5D0 \uC801\uC6A9\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.java",
+                                    message: "WAS, 배치 애플리케이션 등 JVM 환경에서 동작하는 모든 애플리케이션에 적용할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-nodejs-l.svg",
                                 product: "Node.js",
                                 type: "Application",
                                 url: "nodejs/introduction",
-                                children: "\uBE44\uB3D9\uAE30 \uAE30\uBC18 \uD2B8\uB79C\uC7AD\uC158 \uBD84\uC11D\uC744 \uD1B5\uD574 \uB2E8\uC77C \uC2A4\uB808\uB4DC \uD50C\uB85C\uC6B0\uB97C 10\uCD08\uB9C8\uB2E4 \uBD84\uC11D\uD574 \uBCD1\uBAA9\uAD6C\uAC04\uC774\uB098 \uC5D0\uB7EC \uB0B4\uC5ED\uC744 \uD30C\uC545\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.nodejs",
+                                    message: "비동기 기반 트랜잭션 분석을 통해 단일 스레드 플로우를 10초마다 분석해 병목구간이나 에러 내역을 파악할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-php-l.svg",
                                 product: "PHP",
                                 type: "Application",
                                 url: "php/introduction",
-                                children: "PHP 8.3, Alpine Linux\uAE4C\uC9C0 \uC801\uC6A9 \uAC00\uB2A5\uD558\uBA70, \uD2B8\uB808\uC774\uC2A4 \uC0C1\uC5D0\uC11C SQL, HTTP \uD638\uCD9C, Redis \uD638\uCD9C \uC815\uBCF4\uB97C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.php",
+                                    message: "PHP 8.3, Alpine Linux까지 적용 가능하며, 트레이스 상에서 SQL, HTTP 호출, Redis 호출 정보를 확인할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-python-l.svg",
                                 product: "Python",
                                 type: "Application",
                                 url: "python/introduction",
-                                children: "\uC6F9 \uD504\uB808\uC784\uC6CC\uD06C, \uC11C\uBC84, \uBC30\uCE58 \uB4F1 \uC8FC\uC694 \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC5D0 \uC801\uC6A9 \uAC00\uB2A5\uD558\uBA70, DB \uCFFC\uB9AC, \uC678\uBD80 \uD638\uCD9C\uC744 \uCD94\uC801\uD574 \uC9C0\uC5F0 \uAD6C\uAC04\uC744 \uC2DD\uBCC4\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.python",
+                                    message: "웹 프레임워크, 서버, 배치 등 주요 애플리케이션에 적용 가능하며, DB 쿼리, 외부 호출을 추적해 지연 구간을 식별할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-dotnet-l.svg",
                                 product: ".NET",
                                 type: "Application",
                                 url: "dotnet/introduction",
-                                children: ".NET \uD504\uB808\uC784\uC6CC\uD06C 4.5\uB97C \uB300\uC751\uD574 .NET \uAE30\uBC18\uC758 IIS, Console, \uC11C\uBE44\uC2A4, \uC708\uB3C4\uC6B0 \uC751\uC6A9 \uD504\uB85C\uADF8\uB7A8\uC744 \uBAA8\uB2C8\uD130\uB9C1\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.dotnet",
+                                    message: ".NET 프레임워크 4.5를 대응해 .NET 기반의 IIS, Console, 서비스, 윈도우 응용 프로그램을 모니터링합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-go-l.svg",
                                 product: "Go",
                                 type: "Application",
                                 url: "golang/introduction",
-                                children: "Go API\uB97C \uC774\uC6A9\uD574 Go \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC758 \uC6F9 \uC694\uCCAD \uBC0F \uC751\uB2F5 \uD2B8\uB79C\uC7AD\uC158, \uC77C\uBC18 \uB2E8\uC704 \uD2B8\uB79C\uC7AD\uC158, SQL, HTTP \uD638\uCD9C \uB4F1\uC744 \uCD94\uC801\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.go",
+                                    message: "Go API를 이용해 Go 애플리케이션의 웹 요청 및 응답 트랜잭션, 일반 단위 트랜잭션, SQL, HTTP 호출 등을 추적할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-server-l.svg",
                                 product: "Server",
                                 type: "Server",
                                 url: "server/introduction",
-                                children: "\uBB3C\uB9AC \uC11C\uBC84 \uBC0F \uD074\uB77C\uC6B0\uB4DC, \uC2A4\uCF00\uC77C \uC544\uC6C3 \uD658\uACBD\uC5D0\uB3C4 \uC801\uC6A9 \uAC00\uB2A5\uD558\uBA70, \uB300\uADDC\uBAA8 \uC790\uC6D0 \uBC0F \uC0AC\uC6A9\uB960\uC774 \uB192\uC740 \uC704\uD5D8 \uC790\uC6D0\uC758 \uBAA8\uB2C8\uD130\uB9C1, \uC778\uBCA4\uD1A0\uB9AC \uAD00\uB9AC\uB97C \uC9C0\uC6D0\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.server",
+                                    message: "물리 서버 및 클라우드, 스케일 아웃 환경에도 적용 가능하며, 대규모 자원 및 사용률이 높은 위험 자원의 모니터링, 인벤토리 관리를 지원합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-kubernetes-l.svg",
                                 product: "Kubernetes",
                                 type: "Container",
                                 url: "kubernetes/introduction",
-                                children: "\uCFE0\uBC84\uB124\uD2F0\uC2A4 \uD074\uB7EC\uC2A4\uD130, \uB178\uB4DC, \uC560\uD50C\uB9AC\uCF00\uC774\uC158, \uB85C\uADF8\uB97C \uD55C\uBC88\uC5D0 \uD55C\uB208\uC5D0 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.k8s",
+                                    message: "쿠버네티스 클러스터, 노드, 애플리케이션, 로그를 한번에 한눈에 확인할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-postgresql-l.svg",
                                 product: "PostgreSQL",
                                 type: "Database",
                                 url: "postgresql/monitoring-intro",
-                                children: "\uC131\uB2A5\uC9C0\uD45C \uBC0F SQL, Lock, Slow SQL\uC744 \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.postgresql",
+                                    message: "성능지표 및 SQL, Lock, Slow SQL을 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-oracle-l.svg",
                                 product: "Oracle",
                                 type: "Database",
                                 url: "oracle/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBC0F SQL, Lock, \uBCD1\uB82C \uCFFC\uB9AC \uC815\uBCF4\uB97C \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.oracle",
+                                    message: "성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-oracle-l.svg",
                                 product: "Oracle Pro",
                                 type: "Database",
                                 url: "oracle-pro/monitoring-intro",
-                                children: "\uB370\uC774\uD130\uBCA0\uC774\uC2A4 \uC11C\uBC84\uC758 \uBA54\uBAA8\uB9AC\uC5D0 \uC9C1\uC811 \uC811\uADFC\uD558\uC5EC \uBD80\uD558\uC5C6\uC774 \uC131\uB2A5\uC815\uBCF4\uB97C 1\uCD08\uC5D0 \uC218\uC2ED\uBC88\uAE4C\uC9C0 \uBAA8\uB2C8\uD130\uB9C1\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.oraclePro",
+                                    message: "데이터베이스 서버의 메모리에 직접 접근하여 부하없이 성능정보를 1초에 수십번까지 모니터링할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-mysql-l.svg",
                                 product: "MySQL",
                                 type: "Database",
                                 url: "mysql/monitoring-intro",
-                                children: "MySQL, MariaDB\uC758 \uC131\uB2A5 \uC9C0\uD45C \uBC0F SQL, Lock, Slow SQL\uC744 \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.mysql",
+                                    message: "MySQL, MariaDB의 성능 지표 및 SQL, Lock, Slow SQL을 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-mssql-l.svg",
                                 product: "SQL Server",
                                 type: "Database",
                                 url: "mssql/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBC0F SQL, Lock \uC815\uBCF4\uB97C \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.mssql",
+                                    message: "성능 지표 및 SQL, Lock 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-tibero-l.svg",
                                 product: "Tibero",
                                 type: "Database",
                                 url: "tibero/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBC0F SQL, Lock, \uBCD1\uB82C \uCFFC\uB9AC \uC815\uBCF4\uB97C \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.tibero",
+                                    message: "성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-cubrid-l.svg",
                                 product: "CUBRID",
                                 type: "Database",
                                 url: "cubrid/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBC0F SQL, Lock, \uBCD1\uB82C \uCFFC\uB9AC \uC815\uBCF4\uB97C \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.cubrid",
+                                    message: "성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-altibase-l.svg",
                                 product: "Altibase",
                                 type: "Database",
                                 url: "altibase/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBC0F SQL, Lock, \uBCD1\uB82C \uCFFC\uB9AC \uC815\uBCF4\uB97C \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.altibase",
+                                    message: "성능 지표 및 SQL, Lock, 병렬 쿼리 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-redis-l.svg",
                                 product: "Redis",
                                 type: "Database",
                                 url: "redis/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBAA8\uB2C8\uD130\uB9C1\uACFC \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.redis",
+                                    message: "성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-mongodb-l.svg",
                                 product: "Mongodb",
                                 type: "Database",
                                 url: "mongodb/monitoring-intro",
-                                children: "\uC131\uB2A5 \uC9C0\uD45C \uBAA8\uB2C8\uD130\uB9C1\uACFC \uCD94\uC774 \uBD84\uC11D \uBC0F \uBE44\uAD50\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.mongodb",
+                                    message: "성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-url-l.svg",
                                 product: "URL",
                                 type: "URL",
                                 url: "url/url-intro",
-                                children: "\uC6B4\uC601 \uC911\uC778 \uC0AC\uC774\uD2B8\uC758 \uCD5C\uC885 \uC0AC\uC6A9\uC790 \uC785\uC7A5\uC5D0\uC11C HTTP \uC0C1\uD0DC \uCF54\uB4DC\uB85C \uC811\uC18D \uBB38\uC81C\uB97C \uC790\uB3D9\uC73C\uB85C \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.url",
+                                    message: "운영 중인 사이트의 최종 사용자 입장에서 HTTP 상태 코드로 접속 문제를 자동으로 확인할 수 있습니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-rum-l.svg",
                                 product: "Browser",
                                 type: "Browser",
                                 url: "browser",
-                                children: "\uBE0C\uB77C\uC6B0\uC800 \uC560\uD50C\uB9AC\uCF00\uC774\uC158\uC5D0 \uC811\uC18D\uD55C \uCD5C\uC885 \uC0AC\uC6A9\uC790\uC758 \uC0C1\uD638 \uC791\uC6A9\uC5D0 \uAD00\uD55C \uC131\uB2A5\uC744 \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0 \uBD84\uC11D\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.browser",
+                                    message: "브라우저 애플리케이션에 접속한 최종 사용자의 상호 작용에 관한 성능을 모니터링하고 분석합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-aws-l.svg",
                                 product: "Amazon CloudWatch",
                                 type: "Cloud",
                                 url: "amazon-cloudwatch/install-agent",
-                                children: "Amazon CloudWatch API\uB97C \uD1B5\uD574 \uC8FC\uAE30\uC801\uC73C\uB85C \uBA54\uD2B8\uB9AD\uC744 \uAC80\uC0C9\uD558\uACE0 \uC800\uC7A5\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.awsCloudWatch",
+                                    message: "Amazon CloudWatch API를 통해 주기적으로 메트릭을 검색하고 저장합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-aws-ecs-l.svg",
                                 product: "Amazon ECS",
                                 type: "Cloud",
                                 url: "amazon-ecs/introduction",
-                                children: "META API \uBC0F cgroup \uB514\uB809\uD1A0\uB9AC\uB97C \uD1B5\uD574 \uB3C4\uCEE4 \uCEE8\uD14C\uC774\uB108\uBCC4 \uC790\uC6D0 \uC0AC\uC6A9\uB7C9\uC744 \uC2E4\uC2DC\uAC04\uC73C\uB85C \uC218\uC9D1\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.awsEcs",
+                                    message: "META API 및 cgroup 디렉토리를 통해 도커 컨테이너별 자원 사용량을 실시간으로 수집합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-aws-log-l.svg",
                                 product: "AWS Log",
                                 type: "Cloud",
                                 url: "aws-log/introduction",
-                                children: "AWS Resource\uC5D0\uC11C \uC0DD\uC131\uB418\uC5B4 AWS S3, AWS CloudWatch Log Group\uC5D0 \uC800\uC7A5\uB418\uB294 \uB85C\uADF8\uB4E4\uC744 \uC218\uC9D1, \uC800\uC7A5\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.awsLog",
+                                    message: "AWS Resource에서 생성되어 AWS S3, AWS CloudWatch Log Group에 저장되는 로그들을 수집, 저장합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-azure-l.svg",
                                 product: "Azure Monitor",
                                 type: "Cloud",
                                 url: "azure/install-agent",
-                                children: "Azure Monitor API\uB97C \uD1B5\uD574 \uC8FC\uAE30\uC801\uC73C\uB85C \uBA54\uD2B8\uB9AD\uC744 \uAC80\uC0C9\uD558\uACE0 \uC800\uC7A5\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.azure",
+                                    message: "Azure Monitor API를 통해 주기적으로 메트릭을 검색하고 저장합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-naver-l.svg",
                                 product: "Naver Cloud Monitoring",
                                 type: "Cloud",
                                 url: "ncloud/install-agent",
-                                children: "Naver Cloud Monitoring API\uB97C \uD1B5\uD574 \uC8FC\uAE30\uC801\uC73C\uB85C \uBA54\uD2B8\uB9AD\uC744 \uAC80\uC0C9\uD558\uACE0 \uC800\uC7A5\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.ncloud",
+                                    message: "Naver Cloud Monitoring API를 통해 주기적으로 메트릭을 검색하고 저장합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-oracle-l.svg",
                                 product: "Oracle Cloud Monitor",
                                 type: "Cloud",
                                 url: "oracle-cloud/install-agent",
-                                children: "Oracle Cloud Monitor API\uB97C \uD1B5\uD574 \uC8FC\uAE30\uC801\uC73C\uB85C \uBA54\uD2B8\uB9AD\uC744 \uAC80\uC0C9\uD558\uACE0 \uC800\uC7A5\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.oci",
+                                    message: "Oracle Cloud Monitor API를 통해 주기적으로 메트릭을 검색하고 저장합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-npm-l.svg",
                                 product: "Network Performance Monitoring",
                                 type: "Network",
                                 url: "npm/introduction",
-                                children: "\uD504\uB85C\uC138\uC2A4\uC758 \uB124\uD2B8\uC6CC\uD06C \uD1B5\uC2E0 \uC815\uBCF4\uB97C \uAC00\uC2DC\uD654\uD558\uC5EC \uC131\uB2A5 \uBD84\uC11D \uBC0F \uC7A5\uC560 \uD30C\uC545\uC5D0 \uC0AC\uC6A9\uD569\uB2C8\uB2E4."
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.network",
+                                    message: "프로세스의 네트워크 통신 정보를 가시화하여 성능 분석 및 장애 파악에 사용합니다."
+                                })
                             }),
                             /*#__PURE__*/ (0,jsx_runtime.jsx)(FlexCard, {
                                 icons: "index-icon/product-feature-l.svg",
                                 product: "Feature Project",
                                 type: "Features",
                                 url: "features/introduction",
-                                status: "beta",
-                                children: "\uAE30\uC874 \uBAA8\uB2C8\uD130\uB9C1 \uC81C\uD488\uC744 \uC0AC\uC6A9\uC790\uAC00 \uBAA8\uB2C8\uD130\uB9C1\uD558\uACE0\uC790 \uD558\uB294 \uC18C\uD504\uD2B8\uC6E8\uC5B4\uC5D0 \uB9DE\uAC8C \uC7AC\uD3EC\uC7A5\uD574 \uCD5C\uC801\uD654\uB41C \uBAA8\uB2C8\uD130\uB9C1 \uC194\uB8E8\uC158\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4."
+                                status: "Beta",
+                                children: (0,Translate/* translate */.T)({
+                                    id: "index.pages.section.product.feature",
+                                    message: "기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다."
+                                })
                             })
                         ]
                     })
@@ -1259,7 +1401,10 @@ function pages() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                         as: "h2",
                         className: styles_module.textcenter,
-                        children: "\uAD00\uB9AC"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.section.management",
+                            message: "관리"
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: styles_module.flexContainer,
@@ -1271,10 +1416,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uACC4\uC815 \uAD00\uB9AC"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.account",
+                                            message: "계정 관리"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uD68C\uC6D0 \uAC00\uC785\uC744 \uD1B5\uD574 \uACC4\uC815\uC744 \uC0DD\uC131\uD558\uACE0 \uAD00\uB9AC\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.account.desc",
+                                            message: "회원 가입을 통해 계정을 생성하고 관리하세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1285,10 +1436,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uBA40\uD2F0\uD329\uD130 \uC778\uC99D"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.multiFactor",
+                                            message: "멀티팩터 인증"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uBA40\uD2F0\uD329\uD130 \uC778\uC99D\uC744 \uD1B5\uD574 \uBCF4\uC548\uC744 \uAC15\uD654\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.multiFactor.desc",
+                                            message: "멀티팩터 인증을 통해 보안을 강화하세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1299,10 +1456,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "SSO \uACC4\uC815 \uC5F0\uB3D9"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.sso",
+                                            message: "SSO 계정 연동"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uD558\uB098\uC758 \uC544\uC774\uB514\uC640 \uBE44\uBC00\uBC88\uD638\uB97C \uC774\uC6A9\uD574 \uAC04\uD3B8\uD558\uAC8C \uB85C\uADF8\uC778\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.sso.desc",
+                                            message: "하나의 아이디와 비밀번호를 이용해 간편하게 로그인하세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1313,10 +1476,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uACB0\uC81C"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.billing",
+                                            message: "결제"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uD2B8\uB77C\uC774\uC5BC\uB85C \uBB34\uB8CC\uB85C \uC2DC\uC791\uD558\uACE0 \uD544\uC694\uD55C \uB9CC\uD07C \uC774\uC6A9\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.billing.desc",
+                                            message: "트라이얼로 무료로 시작하고 필요한 만큼 이용하세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1327,10 +1496,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uD504\uB85C\uC81D\uD2B8 \uAD00\uB9AC"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.project",
+                                            message: "프로젝트 관리"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uD504\uB85C\uC81D\uD2B8\uB294 \uBAA8\uB2C8\uD130\uB9C1 \uB2E8\uC704\uC785\uB2C8\uB2E4. \uD504\uB85C\uC81D\uD2B8\uC5D0 \uB300\uD574 \uC54C\uC544\uBCF4\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.project.desc",
+                                            message: "프로젝트는 모니터링 단위입니다. 프로젝트에 대해 알아보세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1341,10 +1516,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uD1B5\uD569 \uAD00\uB9AC"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.organize",
+                                            message: "통합 관리"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC870\uC9C1\uACFC \uADF8\uB8F9, \uD504\uB85C\uC81D\uD2B8\uB97C \uCCB4\uACC4\uC801\uC73C\uB85C \uAD00\uB9AC\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.organize.desc",
+                                            message: "조직과 그룹, 프로젝트를 체계적으로 관리할 수 있습니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1355,10 +1536,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC815\uBE44 \uACC4\uD68D"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.maintenance",
+                                            message: "정비 계획"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uB4F1\uB85D\uD55C \uC791\uC5C5 \uC2DC\uAC04\uC5D0 \uC54C\uB9BC\uC744 \uC77C\uC2DC \uC911\uC9C0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.maintenance.desc",
+                                            message: "등록한 작업 시간에 알림을 일시 중지할 수 있습니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1369,10 +1556,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC0AC\uC6A9\uC790 \uD589\uC704"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.userbehavior",
+                                            message: "사용자 행위"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uD504\uB85C\uC81D\uD2B8\uC5D0\uC11C \uC218\uD589 \uC911\uC778 \uC0AC\uC6A9\uC790\uC758 \uD589\uB3D9\uC744 \uCD94\uC801\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.management.userbehavior.desc",
+                                            message: "프로젝트에서 수행 중인 사용자의 행동을 추적할 수 있습니다."
+                                        })
                                     })
                                 ]
                             })
@@ -1386,7 +1579,10 @@ function pages() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                         as: "h2",
                         className: styles_module.textcenter,
-                        children: "\uCD5C\uC2E0 \uC5C5\uB370\uC774\uD2B8"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.section.updates",
+                            message: "최신 업데이트"
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: styles_module.flexContainer,
@@ -1398,10 +1594,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC0C8\uB85C\uC6B4 \uAE30\uB2A5"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.updates.news",
+                                            message: "새로운 기능"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC0C8\uB86D\uAC8C \uCD9C\uC2DC\uB41C \uAE30\uB2A5\uC744 \uD655\uC778\uD574\uBCF4\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.updates.news.desc",
+                                            message: "새롭게 출시된 기능을 확인해보세요."
+                                        })
                                     })
                                 ]
                             }),
@@ -1412,10 +1614,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uB9B4\uB9AC\uC2A4 \uB178\uD2B8"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.updates.release",
+                                            message: "릴리스 노트"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uCD5C\uC2E0 \uB9B4\uB9AC\uC2A4 \uC815\uBCF4\uB97C \uBE60\uB974\uAC8C \uD655\uC778\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.updates.release.desc",
+                                            message: "최신 릴리스 정보를 빠르게 확인하세요."
+                                        })
                                     })
                                 ]
                             })
@@ -1429,7 +1637,10 @@ function pages() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                         as: "h2",
                         className: styles_module.textcenter,
-                        children: "\uCC38\uC870"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.section.reference",
+                            message: "참조"
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: styles_module.flexContainer,
@@ -1441,10 +1652,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "Open API"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.openApi",
+                                            message: "Open API"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "Open API\uB97C \uD1B5\uD574 \uBAA8\uB2C8\uD130\uB9C1 \uB370\uC774\uD130\uB97C \uCD94\uCD9C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.openApi.desc",
+                                            message: "Open API를 통해 모니터링 데이터를 추출할 수 있습니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1455,10 +1672,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC18C\uD504\uD2B8\uC6E8\uC5B4 \uD504\uB85D\uC2DC"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.proxy",
+                                            message: "소프트웨어 프록시"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC678\uBD80\uB9DD \uC811\uADFC\uC744 \uCC28\uB2E8\uD558\uACE0 \uB2E8\uC77C \uCC44\uB110\uB85C \uC640\uD0ED\uC5D0 \uB370\uC774\uD130\uB97C \uC804\uC1A1\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.proxy.desc",
+                                            message: "외부망 접근을 차단하고 단일 채널로 와탭에 데이터를 전송할 수 있습니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1469,10 +1692,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uAE30\uC220 \uBB38\uC11C \uC548\uB0B4"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.docs",
+                                            message: "기술 문서 안내"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "WhaTap Docs \uD398\uC774\uC9C0 \uD65C\uC6A9\uBC95\uC744 \uC548\uB0B4\uD569\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.docs.desc",
+                                            message: "WhaTap Docs 페이지 활용법을 안내합니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1483,10 +1712,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uB77C\uC774\uC120\uC2A4"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.license",
+                                            message: "라이선스"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC624\uD508 \uC18C\uC2A4 \uB77C\uC774\uC120\uC2A4\uC640 \uC0AC\uC6A9\uD558\uB294 \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB97C \uC548\uB0B4\uD569\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.license.desc",
+                                            message: "오픈 소스 라이선스와 사용하는 라이브러리를 안내합니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1497,10 +1732,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "FAQ"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.faq",
+                                            message: "FAQ"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uC790\uC8FC \uBB3B\uB294 \uC9C8\uBB38\uC744 \uD655\uC778\uD558\uACE0 \uBB38\uC81C\uB97C \uD574\uACB0\uD558\uC138\uC694."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.reference.faq.desc",
+                                            message: "자주 묻는 질문을 확인하고 문제를 해결하세요."
+                                        })
                                     })
                                 ]
                             })
@@ -1514,7 +1755,10 @@ function pages() {
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                         as: "h2",
                         className: styles_module.textcenter,
-                        children: "\uD559\uC2B5\uD558\uAE30"
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.section.learn",
+                            message: "학습하기"
+                        })
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                         className: styles_module.flexContainer,
@@ -1526,10 +1770,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uD559\uC2B5\uD558\uAE30"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.learning",
+                                            message: "학습하기"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uBE60\uB978 \uC774\uD574\uC640 \uD6A8\uC728\uC801\uC778 \uC774\uC6A9\uC744 \uC704\uD574 \uD559\uC2B5 \uC790\uB8CC\uB97C \uC81C\uACF5\uD569\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.learning.desc",
+                                            message: "빠른 이해와 효율적인 이용을 위해 학습 자료를 제공합니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1540,10 +1790,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "MXQL"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.mxql",
+                                            message: "MXQL"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "MXQL\uC740 \uBA54\uD2B8\uB9AD\uC2A4\uB97C \uC720\uC5F0\uD55C\uAC8C \uC870\uD68C\uD558\uAE30 \uC704\uD55C \uCFFC\uB9AC \uC5B8\uC5B4\uC785\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.mxql.desc",
+                                            message: "MXQL은 메트릭스를 유연한게 조회하기 위한 쿼리 언어입니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1554,10 +1810,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uBA54\uD2B8\uB9AD\uC2A4"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.metrics",
+                                            message: "메트릭스"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uBA54\uD2B8\uB9AD\uC2A4\uB294 \uBAA8\uB2C8\uD130\uB9C1 \uB300\uC0C1\uC73C\uB85C\uBD80\uD130 \uC218\uC9D1\uD55C \uB370\uC774\uD130\uC785\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.metrics.desc",
+                                            message: "메트릭스는 모니터링 대상으로부터 수집한 데이터입니다."
+                                        })
                                     })
                                 ]
                             }),
@@ -1568,10 +1830,16 @@ function pages() {
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Heading/* default */.A, {
                                         as: "h5",
-                                        children: "\uC6A9\uC5B4 \uC0AC\uC804"
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.glossary",
+                                            message: "용어 사전"
+                                        })
                                     }),
                                     /*#__PURE__*/ (0,jsx_runtime.jsx)(Description, {
-                                        children: "\uBAA8\uB2C8\uD130\uB9C1 \uC11C\uBE44\uC2A4\uB97C \uB354\uC6B1 \uD3B8\uB9AC\uD558\uAC8C \uC774\uC6A9\uD560 \uC218 \uC788\uB3C4\uB85D \uC6A9\uC5B4 \uC0AC\uC804\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4."
+                                        children: (0,Translate/* translate */.T)({
+                                            id: "index.pages.section.learn.glossary.desc",
+                                            message: "모니터링 서비스를 더욱 편리하게 이용할 수 있도록 용어 사전을 제공합니다."
+                                        })
                                     })
                                 ]
                             })

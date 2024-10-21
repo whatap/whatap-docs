@@ -172,8 +172,8 @@ const metadata = {
   },
   "sidebar": "mongodbSidebar",
   "previous": {
-    "title": "보고서",
-    "permalink": "/whatap-docs/mongodb/report-intro"
+    "title": "데이터베이스 사이즈",
+    "permalink": "/whatap-docs/mongodb/database-size"
   },
   "next": {
     "title": "적용하기",

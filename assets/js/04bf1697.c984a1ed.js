@@ -482,15 +482,6 @@ const metadata = {
       "보고서"
     ],
     "isTranslationMissing": false
-  },
-  "sidebar": "mongodbSidebar",
-  "previous": {
-    "title": "데이터베이스 사이즈",
-    "permalink": "/whatap-docs/mongodb/database-size"
-  },
-  "next": {
-    "title": "로그",
-    "permalink": "/whatap-docs/mongodb/log-main"
   }
 };
 const assets = {

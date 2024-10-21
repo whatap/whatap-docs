@@ -5214,6 +5214,9 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   font-weight: 400;
   font-size: 1.8rem;
   margin-bottom: 35px;
+  color: #fff;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
 }
 
 .homehero_IZR1 {
@@ -5222,9 +5225,14 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   background-color: #ddd;
   align-content: center;
   text-align: center;
+  background: url(/whatap-docs/assets/images/home-hero-background-f41de2bf493dba21fd318f6cb31c2e47.png);
   /* position: sticky;
   top: 76px;
   z-index: 100; */
+}
+
+.guidelink_SWNB:hover {
+  text-decoration: none;
 }
 
 .appcontainer_AqcP {
@@ -5274,7 +5282,6 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   width: 23.3%;
-  padding: 15px 20px;
 }
 .flexcolumn_iXJh:last-of-type {
   border-right: 1px solid #aaa;
@@ -5317,6 +5324,7 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   -webkit-transition: transform 0.5s ease-in-out;
   -moz-transition: transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
+  z-index: 9999;
 }
 
 .flexProd_iGTO:hover .document_e86O .textleft_I9dL,
@@ -5402,6 +5410,17 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   display: block;
   width: 100%;
 }
+.flexContainer_lnPo .flexProd_iGTO .beta_KeEB {
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+  background: #f0f0f0;
+  padding: 1px 5px;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+}
 
 .flexContainer_lnPo .flexProd_iGTO:hover a.alignCenter_Dwgg .product_OzUz .desc_ehOV .title_VoOx,
 .flexContainer_lnPo .flexProd_iGTO:hover a.alignCenter_Dwgg .product_OzUz .desc_ehOV .type_I67K {
@@ -5462,6 +5481,16 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   min-height: 100px;
   /* background-color: #aaa; */
   text-align: left;
+  padding: 15px 20px;
+}
+
+.innercontent_I0dQ:hover {
+  cursor: pointer;
+}
+
+.innercontent_I0dQ .textleft_I9dL {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
 }
 
 p.textleft_I9dL {
@@ -5475,6 +5504,15 @@ p.small_UU3X {
 .inline_kcFA {
   display: inline-block;
 }
+
+html[lang='en-US'] .inline_kcFA {
+  letter-spacing: -0.7px;
+}
+
+html[lang='ja-JP'] .inline_kcFA {
+  letter-spacing: -0.8px;
+}
+
 .iconumber_wGmr {
   position: relative;
   display: inline-block;

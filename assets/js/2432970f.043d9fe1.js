@@ -461,8 +461,8 @@ const metadata = {
     "permalink": "/whatap-docs/mongodb/metrics-detect-anormal"
   },
   "next": {
-    "title": "보고서",
-    "permalink": "/whatap-docs/mongodb/report-intro"
+    "title": "로그",
+    "permalink": "/whatap-docs/mongodb/log-main"
   }
 };
 const assets = {
