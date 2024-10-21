@@ -5726,6 +5726,12 @@ const sidebars = {
           label: 'NGINX',
           className: 'beta' 
         },
+        {
+          type: 'doc',
+          id: 'features/apache-introduction',
+          label: 'APACHE',
+          className: 'beta' 
+        },
       ]
     }
   ],
