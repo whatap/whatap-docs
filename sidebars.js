@@ -3575,7 +3575,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mongodb/database-size',
-                'mongodb/report-intro'
+                // 'mongodb/report-intro'
               ],
             },
             {
