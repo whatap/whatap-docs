@@ -96,6 +96,10 @@ const toc = [{
   "value": "NGINX",
   "id": "nginx",
   "level": 2
+}, {
+  "value": "APACHE",
+  "id": "apache",
+  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -146,41 +150,27 @@ function _createMdxContent(props) {
         id: "kafka",
         children: "KAFKA"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["카프카는 데이터 스트림처리에 사용되는 분산 스트리밍 플랫폼입니다. 와탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "피쳐 프로젝트"
-        }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: ["카프카는 데이터 스트림처리에 사용되는 분산 스트리밍 플랫폼입니다. 와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "KAFKA"
           })
-        }), " 모니터링을 제공합니다. 카프카 클러스터의 성능과 상태를 추적하여 문제를 조기에 감지하고 해결할 수 있도록 돕습니다."]
+        }), " 모니터링을 통해 카프카 클러스터의 성능과 상태를 추적하여 문제를 조기에 감지하고 해결할 수 있도록 돕습니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "aerospike",
         children: "Aerospike"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["에어로스파이크는 실시간 데이터 처리 및 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 와탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "피쳐 프로젝트"
-        }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Aerospike"
-          })
-        }), " 모니터링을 제공합니다. 클러스터 성능, 응답 시간, 데이터 일관성 등을 실시간으로 추적하여 시스템 안정성을 유지하고 최적화할 수 있도록 돕습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "에어로스파이크는 실시간 데이터 처리 및 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 에어로스파이크 모니터링을 통해 클러스터 성능, 응답 시간, 데이터 일관성 등을 실시간으로 추적하여 시스템 안정성을 유지하고 최적화할 수 있도록 돕습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "apache-pulsar",
         children: "Apache Pulsar"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["아파치 펄사는 확장 가능한 고성능 오픈소스 메시징 및 스트리밍 플랫폼입니다. 와탭은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "피쳐 프로젝트"
-        }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar"
-          })
-        }), " 모니터링을 제공합니다. 클러스터의 효율적인 추적을 가능하도록 돕습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "아파치 펄사는 확장 가능한 고성능 오픈소스 메시징 및 스트리밍 플랫폼입니다. 아파치 펄사 모니터링을 통해 클러스터의 효율적인 추적을 가능하도록 돕습니다."
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -197,6 +187,14 @@ function _createMdxContent(props) {
         children: "NGINX"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "NGINX는 고성능 HTTP 및 역방향 프록시 서버로, 웹 애플리케이션의 로드 밸런싱, 캐싱, HTTP 캐시 기능을 제공하며, 트래픽을 효과적으로 관리해 서버 성능을 최적화할 수 있습니다. NGINX는 웹 트래픽을 안정적으로 처리하는 데 최적화되어 있어 대규모 웹사이트 운영에 널리 사용되고 있습니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "apache",
+        children: "APACHE"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "아파치 서버는 전 세계적으로 가장 널리 사용되는 웹 서버 중 하나입니다. HTTP 요청을 처리하고 콘텐츠를 제공합니다. 아파치 모니터링을 통해 서버의 성능, 요청 처리량, 응답 시간 등을 효과적으로 관리할 수 있습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "flex-container-s features",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -293,6 +291,26 @@ function _createMdxContent(props) {
               class: "int",
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
                 children: "NGINX"
+              }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                class: "Features",
+                children: "Features"
+              })]
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "apache-introduction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            class: "apm-agent",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              class: "logo",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(LinkImage, {
+                img: "index-icon/product-apache-l.svg",
+                desc: "apache"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+              class: "int",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+                children: "APACHE"
               }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
                 class: "Features",
                 children: "Features"

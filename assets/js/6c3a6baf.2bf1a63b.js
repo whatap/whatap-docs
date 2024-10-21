@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const frontMatter = {
 	id: 'real-time-monitoring-for-it-infra',
-	title: 'DX IT 운영을 위한 와탭(WhaTap) 모니터링',
+	title: 'DX IT 운영을 위한 와탭 모니터링',
 	description: 'IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.',
 	displayed_sidebar: 'learningSidebar',
 	isTranslationMissing: false
@@ -27,7 +27,7 @@ const frontMatter = {
 const contentTitle = undefined;
 const metadata = {
   "id": "best-practice-guides/real-time-monitoring-for-it-infra",
-  "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링",
+  "title": "DX IT 운영을 위한 와탭 모니터링",
   "description": "IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.",
   "source": "@site/docs/best-practice-guides/real-time-monitoring-for-it-infra.mdx",
   "sourceDirName": "best-practice-guides",
@@ -40,7 +40,7 @@ const metadata = {
   "version": "current",
   "frontMatter": {
     "id": "real-time-monitoring-for-it-infra",
-    "title": "DX IT 운영을 위한 와탭(WhaTap) 모니터링",
+    "title": "DX IT 운영을 위한 와탭 모니터링",
     "description": "IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다.",
     "displayed_sidebar": "learningSidebar",
     "isTranslationMissing": false
@@ -51,8 +51,8 @@ const metadata = {
     "permalink": "/whatap-docs/learning-guides"
   },
   "next": {
-    "title": "대시보드 분석",
-    "permalink": "/whatap-docs/best-practice-guides/about-dashboard"
+    "title": "DX IT 운영을 위한 와탭 모니터링",
+    "permalink": "/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra"
   }
 };
 const assets = {

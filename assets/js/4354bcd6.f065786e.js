@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52217],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[20712],{
 
 /***/ 17003:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -129,10 +129,27 @@ function _createMdxContent(props) {
               children: "chmod +x install_nginx_monitoring.sh\nsudo ./install_nginx_monitoring.sh \"x42ut20rmr8rn-z1kli3trqviqul-x5cm4quee6cdmj\" \"15.165.146.117\"\n"
             })
           })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+          pages: "apache-introduction",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음 명령어를 실행해 사용자 환경을 자동으로 인식 후 APACHE가 설치된 서버에 설치 스크립트를 생성하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "curl http://repo.whatap.io/telegraf/feature/apache/install_apache_monitoring.sh -o install_apache_monitoring.sh\n"
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음 명령어를 실행해 APACHE 에이전트를 설치하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "chmod +x install_apache_monitoring.sh\nsudo ./install_apache_monitoring.sh \"x42uu23t8kl3a-z1e71pb8vhbpir-z62lcfeuerbcp2\" \"15.165.146.117\"\n"
+            })
+          })]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "nginx-introduction",
+      pages: "nginx-introduction,apache-introduction",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         start: "3",
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -334,7 +351,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 44322:
+/***/ 77121:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -354,127 +371,123 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'apache-pulsar-introduction',
-	title: 'Apache Pulsar 모니터링',
-	description: '이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.',
+	id: 'vcenter-introduction',
+	title: 'vCenter 모니터링',
+	description: '이 문서는 vCenter 모니터링 상품에 대한 소개 페이지입니다.',
 	displayed_sidebar: 'featuremonitorSidebar',
 	toc_max_heading_level: 2,
 	keywords: [
-		'Apache Pulsar',
+		'vCenter',
 		'Feature'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "features/apache-pulsar-introduction",
-  "title": "Apache Pulsar 모니터링",
-  "description": "이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.",
-  "source": "@site/docs/features/apache-pulsar-introduction.mdx",
+  "id": "features/vcenter-introduction",
+  "title": "vCenter 모니터링",
+  "description": "이 문서는 vCenter 모니터링 상품에 대한 소개 페이지입니다.",
+  "source": "@site/docs/features/vcenter-introduction.mdx",
   "sourceDirName": "features",
-  "slug": "/features/apache-pulsar-introduction",
-  "permalink": "/whatap-docs/features/apache-pulsar-introduction",
+  "slug": "/features/vcenter-introduction",
+  "permalink": "/whatap-docs/features/vcenter-introduction",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/features/apache-pulsar-introduction.mdx",
+  "editUrl": "undefined/docs/features/vcenter-introduction.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "apache-pulsar-introduction",
-    "title": "Apache Pulsar 모니터링",
-    "description": "이 문서는 Apache Pulsar 모니터링 상품에 대한 소개 페이지입니다.",
+    "id": "vcenter-introduction",
+    "title": "vCenter 모니터링",
+    "description": "이 문서는 vCenter 모니터링 상품에 대한 소개 페이지입니다.",
     "displayed_sidebar": "featuremonitorSidebar",
     "toc_max_heading_level": 2,
     "keywords": [
-      "Apache Pulsar",
+      "vCenter",
       "Feature"
     ],
     "isTranslationMissing": false
   },
   "sidebar": "featuremonitorSidebar",
   "previous": {
-    "title": "Aerospike",
-    "permalink": "/whatap-docs/features/aerospike-introduction"
+    "title": "Apache Pulsar",
+    "permalink": "/whatap-docs/features/apache-pulsar-introduction"
   },
   "next": {
-    "title": "vCenter",
-    "permalink": "/whatap-docs/features/vcenter-introduction"
+    "title": "NGINX",
+    "permalink": "/whatap-docs/features/nginx-introduction"
   }
 };
 const assets = {
 
 };
 
-/*실시간 데이터 처리와 대규모 데이터 분석에 최적화된 고성능 NoSQL 데이터베이스입니다. 아파치 펄사를 사용하면 초당 수백만 건의 트랜잭션을 처리하며, 데이터 일관성과 성능을 유지하면서 대규모 데이터 작업을 효율적으로 수행할 수 있습니다. 따라서 아파치 펄사의 성능과 상태를 모니터링하는 것은 시스템 안정성과 최적화를 위해 매우 중요합니다.*/
-/*#### 클러스터 상태 개요
+/*여기부터 다시 하기*/
+/*
+자원 관리에 도움을 줍니다.
+*/
+/*
 
-- **CPU, Memory, Storage 사용량**: 클러스터 전체 자원 사용 현황을 표시합니다.
+vCenter는 VMware의 중앙 집중식 관리 솔루션으로, 가상화된 데이터 센터의 다양한 리소스와 작업을 한 곳에서 통합 관리할 수 있도록 지원합니다. 단일 인터페이스에서 다수의 가상 머신(VM), 호스트, 스토리지, 네트워크를 효율적으로 관리함으로써 IT 인프라 운영을 간소화하고, 관리의 효율성을 높일 수 있습니다.
 
-- **ZooKeeper, Broker, Bookie 상태**: 노드 수와 가용성을 보여줍니다.
+주요 기능 및 역할
 
-#### 메시징 메트릭
+1.	가상 머신(VM) 관리:
+•	가상 머신의 생성, 삭제, 배포, 복제 등의 작업을 중앙에서 손쉽게 관리할 수 있습니다.
+•	실시간 VM 상태 모니터링과 경고 알림 기능을 통해 문제를 신속히 파악할 수 있습니다.
+•	CPU, 메모리, 디스크, 네트워크 자원을 동적으로 할당 및 조정하여 최적의 성능을 유지합니다.
+2.	ESXi 호스트 관리:
+•	다수의 ESXi 호스트를 중앙에서 관리하고, 각 호스트의 상태 및 성능을 실시간으로 모니터링할 수 있습니다.
+•	호스트 클러스터를 통해 고가용성(HA) 및 분산 자원 스케줄링(DRS) 기능을 활용하여 자원 최적화를 지원합니다.
+3.	클러스터 관리 및 고가용성(HA):
+•	클러스터를 통한 자원 풀 구성으로 인프라 자원을 효율적으로 배분하며, 고가용성(HA) 기능을 통해 VM을 자동 복구합니다.
+•	DRS를 활용하여 부하 분산 및 VM의 자동 이동이 가능합니다.
+4.	스토리지 및 네트워크 관리:
+•	다양한 스토리지 리소스를 중앙에서 관리하고, 데이터스토어를 통해 VM의 데이터를 저장 및 배포합니다.
+•	네트워크 연결을 제어하고, 가상 네트워크 및 I/O 자원 최적화를 통해 성능 문제를 방지합니다.
+5.	VMware vMotion 및 스냅샷:
+•	vMotion으로 가동 중인 VM을 실시간으로 다른 호스트로 이동시키며, 서비스 중단 없이 유지보수 작업을 수행할 수 있습니다.
+•	VM 스냅샷 기능을 통해 시스템 상태를 저장하고 복구할 수 있습니다.
+6.	자동화 및 오케스트레이션:
+•	다양한 작업을 자동화할 수 있는 API 및 스크립팅 기능을 통해 반복 작업을 줄이고, vCenter Orchestrator를 사용해 복잡한 워크플로우를 자동화할 수 있습니다.
+7.	보안 및 권한 관리:
+•	역할 기반 접근 제어(RBAC)로 사용자 권한을 세부적으로 관리하고, SSL 암호화 통신 및 로그 모니터링을 통해 보안성을 유지합니다.
 
-- **Messaging Storage**: 메시징에 사용된 총 스토리지를 시각화합니다.
+vCenter 모니터링 대시보드
 
-- **Message Rate**: 초당 들어오고 나가는 메시지 속도를 표시합니다.
+Datacenter 섹션
 
-- **Messaging Backlog**: 처리되지 않은 메시지 수를 추적합니다.
+•	vSphere 개요: vCenter 인프라에 대한 요약 정보로, vCenter 인스턴스, 클러스터, ESXi 호스트, 가상 머신(VM), 데이터스토어 등의 주요 리소스를 한눈에 볼 수 있습니다.
 
-- **처리량**: 초당 바이트로 처리량을 표시합니다.
+Cluster 섹션
 
-#### 주요 토픽 및 백로그
+•	Uptime: 클러스터별 가동 시간을 보여주며, 클러스터 상태를 모니터링할 수 있습니다.
+•	CPU 및 메모리 사용량: 클러스터의 CPU와 메모리 자원 사용량을 퍼센트(%)로 표시하여 자원 상태를 실시간으로 파악합니다.
 
-- **상위 10개 토픽 백로그**: 백로그가 가장 많은 토픽을 나열하여 병목 현상을 식별합니다.
+Over Provisioned 섹션
 
-- **상위 10개 복제 백로그**: 복제 프로세스를 모니터링하기 위한 복제 백로그를 보여줍니다.
+•	과할당 리소스 모니터링: CPU 및 메모리가 과도하게 할당된 호스트 및 VM을 식별하고, 과할당 비율을 보여줍니다.
 
-#### 노드별 메트릭
+Cluster Status 섹션
 
-- **노드 CPU 및 메모리 사용량**: 클러스터 내 개별 노드의 사용 통계를 제공합니다.
+•	클러스터 성능 지표: CPU, 메모리, 네트워크, 스토리지 사용량을 그래프 형태로 시각화하여 시간 경과에 따른 리소스 변동을 모니터링합니다.
 
-- **오프로드된 크기**: 클러스터에서 오프로드된 데이터 양을 추적합니다.
+Hosts 섹션
 
-:::note[]
+•	호스트 성능 상태: 호스트의 가동 시간, CPU 및 메모리 사용률, 네트워크 사용량, 디스크 I/O 성능 등을 실시간으로 모니터링할 수 있습니다.
 
-**주요 모니터링 메트릭**
+vHost 성능 지표
 
-* **CPU 사용량**
+•	CPU/MEM 사용량: 호스트의 CPU 및 메모리 자원을 시간에 따라 모니터링하고, CPU Ready Time 및 메모리 오버헤드도 확인할 수 있습니다.
+•	네트워크 및 스토리지 성능: 네트워크 대역폭 사용량과 데이터스토어 I/O 성능을 실시간으로 추적합니다.
 
-CPU 사용률을 추적하여 과부하를 방지합니다.
+VMGuest 성능 지표
 
-* **메모리 사용량**
+•	VM별 성능 분석: 각 VM의 CPU 및 메모리 사용량, 네트워크 트래픽, 데이터스토어 성능을 모니터링하고, VM 성능 상태를 실시간으로 분석합니다.
 
-메모리 사용을 모니터링하여 메모리 부족 오류를 방지합니다.
+이 대시보드를 통해 vCenter 인프라의 상태를 통합적으로 파악하고, 실시간 성능 모니터링 및 관리가 가능합니다.
 
-* **스토리지 사용량**
-
-충분한 스토리지가 있는지 확인합니다.
-
-* **메시지 속도 및 처리량**
-
-높은 속도는 성능 병목을 나타낼 수 있습니다.
-
-* **백로그 메트릭**
-
-증가하는 백로그는 소비 애플리케이션에 문제가 있음을 나타낼 수 있습니다.
-
-:::
-
-### 경고 알림
-
-홈 화면 > **피쳐 프로젝트**(<code class='Features'>Features</code>) 선택 > ***경고 알림*** > ***이벤트 설정***
-
-클러스터 상태 유지를 위해 다음과 같은 시나리오에 대한 알림을 설정하세요
-
-- **CPU 사용량**: CPU 사용량이 80%를 초과할 때 알림.
-
-- **메모리 사용량**: 메모리 사용량이 75%를 초과할 때 알림.
-
-- **스토리지 사용량**: 스토리지 사용량이 85%를 초과할 때 알림.
-
-- **메시지 백로그**: 백로그가 일정 임계값(예: 10,000 메시지)을 초과할 때 알림.
-
-- **ZooKeeper, 브로커, Bookie 상태**: 노드가 다운될 때 알림.*/
+*/
 
 
 
@@ -489,8 +502,8 @@ const toc = [{
   "id": "피쳐-프로젝트-생성하기",
   "level": 3
 }, ..._common_items_import_feature_project_create_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "Apache Pulsar 에이전트 설치",
-  "id": "apache-pulsar-에이전트-설치",
+  "value": "vCenter 에이전트 설치",
+  "id": "vcenter-에이전트-설치",
   "level": 3
 }, ..._common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "주요 메뉴 알아보기",
@@ -501,17 +514,49 @@ const toc = [{
   "id": "대시보드",
   "level": 3
 }, {
-  "value": "대시보드 상단 요약 정보",
-  "id": "대시보드-상단-요약-정보",
-  "level": 5
+  "value": "<em><strong>Datacenter</strong></em>",
+  "id": "datacenter",
+  "level": 4
 }, {
-  "value": "성능 그래프",
-  "id": "성능-그래프",
-  "level": 5
+  "value": "<em><strong>Cluster</strong></em>",
+  "id": "cluster",
+  "level": 4
 }, {
-  "value": "상위 10개 항목 백로그",
-  "id": "상위-10개-항목-백로그",
-  "level": 5
+  "value": "<em><strong>Over Provisioned</strong></em>",
+  "id": "over-provisioned",
+  "level": 4
+}, {
+  "value": "<em><strong>Cluster Status</strong></em>",
+  "id": "cluster-status",
+  "level": 4
+}, {
+  "value": "<em><strong>Hosts</strong></em>",
+  "id": "hosts",
+  "level": 4
+}, {
+  "value": "<em><strong>성능 지표 그래프</strong></em>",
+  "id": "성능-지표-그래프",
+  "level": 4
+}, {
+  "value": "<em><strong>[vHost] CPU/MEM</strong></em>",
+  "id": "vhost-cpumem",
+  "level": 4
+}, {
+  "value": "<em><strong>[vHost] NET Rx+Tx / Datastore R/W Total</strong></em>",
+  "id": "vhost-net-rxtx--datastore-rw-total",
+  "level": 4
+}, {
+  "value": "<em><strong>[vHost] Running VM(s)</strong></em>",
+  "id": "vhost-running-vms",
+  "level": 4
+}, {
+  "value": "<em><strong>VMGuest(s) CPU / MEM Overview</strong></em>",
+  "id": "vmguests-cpu--mem-overview",
+  "level": 4
+}, {
+  "value": "<em><strong>VMGuest(s) NET / Datastore Overview</strong></em>",
+  "id": "vmguests-net--datastore-overview",
+  "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -520,7 +565,7 @@ function _createMdxContent(props) {
     em: "em",
     h2: "h2",
     h3: "h3",
-    h5: "h5",
+    h4: "h4",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
@@ -549,22 +594,26 @@ function _createMdxContent(props) {
           children: "Features"
         }), ")를 도입하였습니다. 피쳐 프로젝트는 기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다. 와탭 피쳐 프로젝트를 통해 서비스의 안정성과 성능을 더욱 효과적으로 관리해 보세요."]
       })]
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "아파치 펄사는 대규모의 실시간 데이터를 효율적으로 처리할 수 있도록 설계된 분산형 메시징 및 스트리밍 플랫폼입니다. 높은 확장성과 내장된 멀티 테넌시 기능을 제공하며 메시지의 지리적인 복제 및 지속성을 통해 신뢰성과 유연성을 보장합니다. 아파치 펄사의 복잡한 운영 환경에서 성능 및 안정성을 유지하기 위해 모니터링이 중요합니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "vCenter"
+        })
+      }), "는 가상화 환경에서 데이터 센터의 리소스를 중앙에서 관리하고 모니터링하는 데 최적화된 VMware의 통합 관리 플랫폼입니다. 단일 인터페이스에서 다수의 가상 머신(VM), 호스트, 스토리지, 네트워크를 효율적으로 관리함으로써 IT 인프라 운영을 간소화하고, 관리의 효율성을 높일 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭은 새로운 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "피쳐 프로젝트"
       }), " 방식으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar"
+          children: "vCenter"
         })
-      }), " 모니터링을 제공합니다. 와탭을 통해 아파치 펄사 클러스터의 성능과 상태를 실시간으로 추적하여 메시지 지연, 처리량 저하, 리소스 과부하 등과 같은 문제를 조기에 감지하고 해결할 수 있습니다."]
+      }), " 모니터링을 제공합니다. 와탭을 통해 vCenter 인프라의 성능과 상태를 실시간으로 추적하여 문제를 조기에 감지하고 해결할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "지표 모니터링"
-          }), ":  각 노드에 대한 CPU, 메모리 사용량과 같은 다양한 시스템 지표 및 메시지 처리량, 지연 시간, 큐 크기 등 중요한 운영 지표를 제공합니다."]
+          }), ": 각 가상 머신과 호스트의 CPU, 메모리, 스토리지 사용량 등 다양한 시스템 지표를 실시간으로 모니터링합니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -582,16 +631,20 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Apache Pulsar"
+          children: "vCenter"
         })
-      }), " 모니터링을 통해 아파치 펄사 클러스터의 복잡한 운영 환경을 효과적으로 관리해 보세요."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      }), " 모니터링을 통해 복잡한 가상화 환경을 효과적으로 관리해 보세요."]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "설치하기",
         children: "설치하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 아파치 펄사 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "vCenter"
+          })
+        }), " 모니터링 서비스 이용을 위한 기본 설치 방법을 안내합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["와탭 모니터링 서비스를 사용하기 위해서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "https://www.whatap.io/ko/signup/",
@@ -606,16 +659,20 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "지원 환경"
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
-            anchor: "apache-pulsar-supported-env"
+            anchor: "vcenter-supported-env"
           })]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "와탭 아파치 펄사 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "vCenter"
+            })
+          }), " 모니터링 에이전트를 설치하기 전에 지원 환경을 확인하세요."]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Apache Pulsar"
-              }), ": Apache Pulsar 3.3.x 이상"]
+                children: "vCenter"
+              }), ": vCenter 6.5 혹은 동등한 버전"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -647,10 +704,10 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "apache-pulsar-에이전트-설치",
-        children: "Apache Pulsar 에이전트 설치"
+        id: "vcenter-에이전트-설치",
+        children: "vCenter 에이전트 설치"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_feature_install_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-        name: "Apache Pulsar 에이전트 설치"
+        name: "vCenter 에이전트 설치"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
       className: "remark-sectionize-h2",
@@ -671,183 +728,332 @@ function _createMdxContent(props) {
           children: "Features"
         }), ") 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar"
+            children: "vCenter"
           })
         }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar 대시보드"
+            children: "vCenter 대시보드"
           })
         })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "와탭 아파치 펄사 모니터링은 아파치 펄사 클러스터의 성능과 상태 등 전체 현황을 한 눈에 파악할 수 있도록 다양한 지표를 실시간으로 모니터링합니다. 각 지표를 정기적으로 확인하여 클러스터가 최적의 상태를 유지하도록 관리할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["와탭 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "vCenter"
+          })
+        }), " 모니터링은 vCenter 환경의 성능과 상태를 실시간으로 파악하여 전체적인 운영 현황을 관리할 수 있도록 다양한 지표를 제공합니다. 주요 지표를 정기적으로 확인하여 인프라가 안정적으로 운영되고 최적의 성능을 유지할 수 있도록 지원합니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["와탭이 제공하는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Apache Pulsar 대시보드"
+            children: "vCenter 대시보드"
           })
-        }), "는 다음의 세 가지 프리셋으로 구성되어있습니다."]
+        }), "는 다음의 다섯 가지 프리셋으로 구성되어있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Overview"
+                children: "VMware Summary"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터의 전반적인 성능과 상태를 한눈에 파악할 수 있도록 주요 메트릭을 종합적으로 시각화한 대시보드입니다. 클러스터 운영자가 실시간으로 시스템 상태를 모니터링하고 성능 저하를 신속히 감지하는 것에 유용합니다."
+            children: "전체 vCenter 환경에 대한 요약 정보를 제공합니다. vCenter 인프라의 상태를 전반적으로 확인할 수 있습니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "대시보드-상단-요약-정보",
-              children: "대시보드 상단 요약 정보"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "datacenter",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Datacenter"
+                })
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "CPU"
+                      children: "vSphere Overview"
                     })
-                  }), ": 클러스터에서 사용 중인 CPU 코어의 수를 표시합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Memory"
-                    })
-                  }), ": 클러스터에서 사용 중인 총 메모리 용량과 현재 메모리 사용량을 나타냅니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "ZooKeeper"
-                    })
-                  }), ": 현재 운영 중인 ZooKeeper 인스턴스의 수와 가용 상태를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Broker"
-                    })
-                  }), ": 활성화된 브로커의 수와 상태를 표시합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Bookies"
-                    })
-                  }), ": 아파치 펄사에서 사용하는 BookKeeper 노드(Bookies)의 수와 상태를 나타냅니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Broker Storage Size"
-                    })
-                  }), ": 브로커에 저장된 데이터의 총 용량을 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Backlog"
-                    })
-                  }), ": 처리되지 않은 메시지의 총 크기를 표시하여 메시지 처리의 지연 상태를 파악할 수 있습니다."]
+                  }), ": vCenter 환경에 대한 핵심 지표를 요약하여 제공합니다."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "vCenter"
+                        })
+                      }), ": 모니터링 중인 vCenter 인스턴스의 수를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Cluster"
+                        })
+                      }), ": 관리 중인 클러스터의 총 수를 보여줍니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "ESXHost"
+                        })
+                      }), ": 현재 관리 중인 ESXi 호스트의 수를 표시합니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "VM"
+                        })
+                      }), ": 모니터링 중인 가상 머신(Virtual Machines)의 총 수를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Datastore"
+                        })
+                      }), ": 현재 관리 중인 데이터스토어의 수를 표시합니다."]
+                    }), "\n"]
+                  }), "\n"]
                 }), "\n"]
               }), "\n"]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "성능-그래프",
-              children: "성능 그래프"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "cluster",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Cluster"
+                })
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messaging Storage"
+                      children: "Uptime"
                     })
-                  }), ": 시간에 따른 메시지 저장소 사용량을 표시하여 저장소 용량 변동성을 추적합니다."]
+                  }), ": 각 vCenter의 클러스터 가동 시간을 초 단위로 보여줍니다."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "vCenter"
+                        })
+                      }), ": 해당 클러스터가 관리되는 vCenter의 IP 주소를 표시합니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "clustername"
+                        })
+                      }), ": 클러스터 이름을 보여줍니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Uptime Seconds"
+                        })
+                      }), ": 클러스터의 가동 시간(초)을 나타냅니다."]
+                    }), "\n"]
+                  }), "\n"]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Message Rate(msg/s)"
+                      children: "CPU Usage"
                     })
-                  }), ": 초당 처리되는 메시지 수를 그래프로 보여주며, 클러스터의 메시지 처리 속도를 모니터링합니다."]
+                  }), ": 클러스터의 CPU 사용량을 퍼센트로 보여줍니다."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "vCenter"
+                        })
+                      }), ": CPU 사용량을 관리 중인 vCenter 서버의 IP 주소를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "cluster"
+                        })
+                      }), ": 클러스터 이름을 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "CPU Usage"
+                        })
+                      }), ": 클러스터 내 CPU 사용량 퍼센트(%)를 표시합니다."]
+                    }), "\n"]
+                  }), "\n"]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messaging Backlog"
+                      children: "Memory Usage"
                     })
-                  }), ": 시간 경과에 따라 처리되지 않고 대기 중인 메시지의 수를 시각화하여, 메시지 처리 지연을 신속히 파악할 수 있습니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Throughput(bytes/s)"
-                    })
-                  }), ": 초당 처리된 데이터의 양을 나타내며, 클러스터의 데이터 처리 능력을 평가합니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Backlog"
-                    })
-                  }), ": 다른 데이터 센터로 복제되지 않고 대기 중인 메시지의 수를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Throughput"
-                    })
-                  }), ": 데이터 복제 과정에서 초당 처리되는 데이터 양을 나타냅니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Replication Rate"
-                    })
-                  }), ": 복제 메시지의 전송 속도를 보여줍니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Subscription Unacked Messages"
-                    })
-                  }), ": 구독된 메시지 중 아직 확인되지 않은(Unacked) 메시지의 수를 나타냅니다."]
+                  }), ": 클러스터의 메모리 사용량을 퍼센트로 표시합니다."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "vCenter"
+                        })
+                      }), ": 관리 중인 vCenter 서버의 IP 주소를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "clustername"
+                        })
+                      }), ": 클러스터 이름을 표시합니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Memory Usage"
+                        })
+                      }), ": 클러스터 내 메모리 사용량을 퍼센트로 보여줍니다."]
+                    }), "\n"]
+                  }), "\n"]
                 }), "\n"]
               }), "\n"]
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h5, {
-              id: "상위-10개-항목-백로그",
-              children: "상위 10개 항목 백로그"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "over-provisioned",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Over Provisioned"
+                })
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 topics backlog"
+                      children: "All Overprovisioned CPU"
                     })
-                  }), ": 백로그가 가장 많은 상위 10개의 토픽을 나열하여 메시지 지연 원인을 분석할 수 있습니다."]
+                  }), ": CPU가 과할당된 상태를 나타냅니다."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Host"
+                        })
+                      }), ": CPU 리소스가 과할당된 호스트 수를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "VM"
+                        })
+                      }), ": CPU가 과할당된 가상 머신 수를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Over Ratio"
+                        })
+                      }), ": CPU 과할당 비율을 표시합니다."]
+                    }), "\n"]
+                  }), "\n"]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Replication Backlog"
+                      children: "All Overprovisioned Memory"
                     })
-                  }), ": 복제 백로그가 가장 많은 상위 10개의 항목을 나열하여 복제 지연 문제를 파악할 수 있습니다."]
+                  }), ": 메모리가 과할당된 상태를 나타냅니다."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+                  children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Host"
+                        })
+                      }), ": 메모리 리소스가 과할당된 호스트 수를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "VM"
+                        })
+                      }), ": 메모리가 과할당된 가상 머신 수를 나타냅니다."]
+                    }), "\n"]
+                  }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                          children: "Over Ratio"
+                        })
+                      }), ": 메모리 과할당 비율을 표시합니다."]
+                    }), "\n"]
+                  }), "\n"]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "cluster-status",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Cluster Status"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Cluster CPU Usage %"
+                    })
+                  }), ": 클러스터의 CPU 사용률을 시간 경과에 따른 그래프로 시각화합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Cluster Memory Usage %"
+                    })
+                  }), ": 클러스터의 메모리 사용률을 그래프로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Cluster Network Usage"
+                    })
+                  }), ": 클러스터의 네트워크 사용량을 시간 경과에 따라 시각화한 그래프입니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Cluster Storage Adapter"
+                    })
+                  }), ": 클러스터의 스토리지 어댑터 사용량을 시각적으로 보여줍니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Datastore - Usage Capacity"
+                    })
+                  }), ": 데이터스토어의 사용량과 용량을 그래프로 표시합니다."]
                 }), "\n"]
               }), "\n"]
             })]
@@ -856,94 +1062,118 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Overview II"
+                children: "VMware Hosts"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터 내 메시지 생산자와 소비자 활동을 중점적으로 모니터링하는 대시보드입니다. 노드별 자원 사용량 및 주요 토픽의 상태를 세부적으로 관리할 수 있도록 설계되었습니다. 시스템 자원의 최적화와 메시지 처리 흐름을 관리하는 데 도움을 줍니다."
+            children: "vCenter에 연결된 각 호스트의 상태와 성능 지표를 상세하게 모니터링할 수 있는 프리셋입니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
-              children: "대시보드 지표 안내 "
+              children: "대시보드 지표 안내"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "hosts",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Hosts"
+                })
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Consumers Count"
+                      children: "Uptime"
                     })
-                  }), ": 현재 클러스터에서 활성화된 컨슈머의 수를 실시간으로 표시하며, 메시지 소비 활동을 모니터링하고 컨슈머 수의 변동이 시스템에 미치는 영향을 분석할 수 있습니다."]
+                  }), ": 각 호스트의 가동 시간을 확인할 수 있습니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Producers Count"
+                      children: "CPU Usage MHZ"
                     })
-                  }), ": 현재 클러스터에서 활성화된 프로듀서의 수를 실시간으로 표시하며, 메시지 생산 활동을 모니터링하고 프로듀서 수의 변화가 메시지 생산 속도에 미치는 영향을 분석할 수 있습니다."]
+                  }), ": 호스트의 CPU 사용량을 MHz 단위로 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Messages In"
+                      children: "Memory Usage"
                     })
-                  }), ": 클러스터에 인입되는 메시지 수를 시간에 따라 표시하며, 메시지 인입 속도를 모니터링하여 시스템 부하를 예측하고 트래픽 변동을 파악하는 데 도움을 줍니다."]
+                  }), ": 호스트에서 사용 중인 메모리 용량을 GB 단위로 보여줍니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Subscriptions Count"
+                      children: "CPU Usage %"
                     })
-                  }), ": 클러스터에서 활성화된 구독의 수를 실시간으로 표시하며, 구독 수의 증감이 시스템 메시지 처리에 미치는 영향을 분석할 때 유용합니다."]
+                  }), ": 각 호스트의 CPU 사용률을 백분율로 나타냅니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Offloaded Size"
+                      children: "Memory Usage %"
                     })
-                  }), ": 클러스터에서 디스크로 오프로드된 데이터의 크기를 나타내며, 데이터 저장 효율성을 평가하고 장기적인 저장 공간 관리에 활용할 수 있습니다."]
+                  }), ": 호스트의 메모리 사용률을 백분율로 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "성능-지표-그래프",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "성능 지표 그래프"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "CPU Utilization Avg %"
+                    })
+                  }), ": 각 호스트의 CPU 평균 사용률을 시간 경과에 따른 그래프로 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Bytes In"
+                      children: "CPU Ready ms"
                     })
-                  }), ": 클러스터로 인입되는 데이터의 크기를 실시간으로 표시하며, 데이터 인입 속도를 모니터링하여 시스템 성능 및 네트워크 부하를 관리하는 데 유용합니다."]
+                  }), ": CPU가 사용 준비 상태에서 대기한 시간을 ms 단위로 보여줍니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Node CPU"
+                      children: "Disk IO"
                     })
-                  }), "(Node CPU 사용률): 클러스터 내 각 노드의 CPU 사용률을 그래프로 표시하며, 노드별 성능을 모니터링하고 리소스 분배를 최적화할 수 있습니다."]
+                  }), ": 디스크 입출력 작업 수를 시간 경과에 따라 시각화합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Node Memory Used %"
+                      children: "Memory Utilization"
                     })
-                  }), "(Node Memory 사용률): 클러스터 내 각 노드의 메모리 사용률을 실시간으로 표시하며, 메모리 사용 현황을 모니터링하여 성능 저하를 예방할 수 있습니다."]
+                  }), ": 호스트의 메모리 사용률을 시간에 따라 보여줍니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Topics Unacked"
+                      children: "Network Usage"
                     })
-                  }), ": 아직 확인되지 않은(Unacked) 메시지가 많은 상위 10개의 토픽을 나열하며, 특정 토픽에서 메시지 확인 지연의 원인을 파악하고 문제를 해결하는 데 유용합니다."]
+                  }), ": 네트워크 대역폭 사용량을 시간 경과에 따라 그래프로 시각화합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 10 Topics Storage"
+                      children: "Storage Adapter IOPS"
                     })
-                  }), ": 저장 공간을 가장 많이 차지하고 있는 상위 10개의 토픽을 나열하며, 특정 토픽이 차지하는 저장 공간을 분석하여 효율적인 데이터 관리를 지원합니다."]
+                  }), ": 스토리지 어댑터의 초당 입출력 작업 수(IOPS)를 시각적으로 나타냅니다."]
                 }), "\n"]
               }), "\n"]
             })]
@@ -952,11 +1182,210 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "Backlog"
+                children: "vHost Performance Overview"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "클러스터 내 백로그 상태를 실시간으로 추적하는 대시보드입니다. 메시지 처리 지연이 발생할 수 있는 토픽을 신속하게 식별할 수 있도록 지원합니다. 문제 발생 시 빠르게 대응하고 성능 최적화를 위한 조치를 취하는 데 유용합니다."
+            children: "ESXi 호스트의 전반적인 성능을 실시간으로 확인할 수 있는 프리셋입니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
+              children: "대시보드 지표 안내 "
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "vhost-cpumem",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "[vHost] CPU/MEM"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "CPU-TotalUsage(%)"
+                    })
+                  }), ": 호스트의 CPU 총 사용률을 백분율로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "CPU-TotalUsage(MHz)"
+                    })
+                  }), ": 각 시간대별 호스트 CPU 사용량을 MHz 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "CPU-Ready(%)"
+                    })
+                  }), ": 호스트 CPU 대기 시간을 초 단위로 나타냅니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "MEM-Usage(%)"
+                    })
+                  }), ": 호스트 메모리 사용률을 백분율로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "MEM-Granted(KB)"
+                    })
+                  }), ": 호스트에 할당된 메모리 양을 KB 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "MEM-Active(KB)"
+                    })
+                  }), ": 호스트에서 실제로 사용 중인 메모리 양을 KB 단위로 보여줍니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "MEM-Vmmented(KB)"
+                    })
+                  }), ": 메모리 과할당으로 인한 오버헤드 메모리 양을 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "vhost-net-rxtx--datastore-rw-total",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "[vHost] NET Rx+Tx / Datastore R/W Total"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "NET-Total(Kbps): RX+TX"
+                    })
+                  }), ": 호스트의 네트워크 송수신 데이터를 Kbps 단위로 시각화하여 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "Datastore R/W Total(KBps)"
+                    })
+                  }), ": 데이터스토어의 읽기 및 쓰기 작업 속도를 KBps 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "vhost-running-vms",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "[vHost] Running VM(s)"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Running VM(s)"
+                  })
+                }), ": 현재 호스트에서 실행 중인 가상 머신의 수를 보여줍니다."]
+              }), "\n"]
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "VMGuest Performance Overview"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "개별 가상 머신(VM)의 성능 데이터를 실시간으로 제공하는 프리셋입니다."
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
+              children: "대시보드 지표 안내 "
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "vmguests-cpu--mem-overview",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "VMGuest(s) CPU / MEM Overview"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "VMGuest-CPU-Usage(MHz)"
+                    })
+                  }), ": 각 VM의 CPU 사용량을 MHz 단위로 시각화하여 시간대별 CPU 자원 사용 현황을 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "VMGuest-CPU-Ready(%)"
+                    })
+                  }), ": VM이 CPU를 사용하기 전 대기한 시간을 초 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "VMGuest-MEM-Active(KB)"
+                    })
+                  }), ": 각 VM에서 활성화된 메모리 사용량을 KB 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "VMGuest-MEM-Vmmentedctl(KB)"
+                    })
+                  }), ": 메모리 과할당 상태를 의미합니다. 스왑 파일 등을 통해 발생한 오버헤드 메모리 양을 KB 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n"]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+              id: "vmguests-net--datastore-overview",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "VMGuest(s) NET / Datastore Overview"
+                })
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "VMGuest-NET-Total(Kbps)"
+                    })
+                  }), ": VM의 네트워크 트래픽(송신 및 수신)을 Kbps 단위로 표시합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                      children: "VMGuest-Datastore-RWTotal(KBps)"
+                    })
+                  }), ": 각 VM이 데이터스토어에서 처리하는 읽기 및 쓰기 작업을 KBps 단위로 표시하여 입출력(I/O) 성능을 보여줍니다."]
+                }), "\n"]
+              }), "\n"]
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "VMware Datastore"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "데이터스토어의 용량과 성능을 모니터링할 수 있는 프리셋입니다."
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Details, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("summary", {
               children: "대시보드 지표 안내 "
@@ -965,39 +1394,30 @@ function _createMdxContent(props) {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Pulsar Backlog"
+                      children: "Usage Capacity"
                     })
-                  }), ": 특정 토픽에서 처리되지 않고 대기 중인 메시지 수를 시간에 따라 시각화합니다. 시스템의 처리 능력을 초과할 때 발생하는 백로그 상태를 실시간으로 모니터링하여 문제를 조기에 발견하고 대응할 수 있습니다."]
+                  }), "(사용 용량): 각 데이터스토어가 현재 사용 중인 용량을 백분율로 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Top 20 Backlog Topics"
+                      children: "Total Capacity"
                     })
-                  }), ": 백로그가 가장 많은 상위 20개의 토픽을 나열합니다. 각 토픽에서 처리되지 않고 대기 중인 메시지 수를 표시하여 문제 토픽을 신속히 파악하고 리소스를 집중할 수 있습니다."]
+                  }), "(전체 용량): 데이터스토어의 총 용량을 표시합니다."]
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Recently"
+                      children: "Free Capacity"
                     })
-                  }), "(최근 메시지 수): 각 토픽 옆의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Recently"
-                    })
-                  }), " 컬럼은 최근 발생한 백로그 메시지 수를 나타냅니다. 최근 백로그 상태를 명확히 이해하고 즉각적인 대응이 필요한 토픽을 식별하는 데 도움을 줍니다."]
+                  }), "(남은 용량): 데이터스토어에서 남은 용량을 표시합니다."]
                 }), "\n"]
               }), "\n"]
             })]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "실시간으로 데이터를 업데이트하여 운영자가 즉각적인 상황을 파악할 수 있도록 지원하며 클러스터 운영 중 발생하는 변동성을 신속히 반영합니다. 이를 통해 운영자는 문제를 실시간으로 모니터링하고 즉각적인 조치를 취할 수 있습니다."
-        })]
       })]
     })]
   });

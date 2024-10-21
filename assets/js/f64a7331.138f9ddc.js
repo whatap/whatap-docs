@@ -239,10 +239,27 @@ function _createMdxContent(props) {
               children: "chmod +x install_nginx_monitoring.sh\nsudo ./install_nginx_monitoring.sh \"x42ut20rmr8rn-z1kli3trqviqul-x5cm4quee6cdmj\" \"15.165.146.117\"\n"
             })
           })]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+          pages: "apache-introduction",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음 명령어를 실행해 사용자 환경을 자동으로 인식 후 APACHE가 설치된 서버에 설치 스크립트를 생성하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "curl http://repo.whatap.io/telegraf/feature/apache/install_apache_monitoring.sh -o install_apache_monitoring.sh\n"
+            })
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "다음 명령어를 실행해 APACHE 에이전트를 설치하세요."
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-bash",
+              children: "chmod +x install_apache_monitoring.sh\nsudo ./install_apache_monitoring.sh \"x42uu23t8kl3a-z1e71pb8vhbpir-z62lcfeuerbcp2\" \"15.165.146.117\"\n"
+            })
+          })]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "nginx-introduction",
+      pages: "nginx-introduction,apache-introduction",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         start: "3",
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
