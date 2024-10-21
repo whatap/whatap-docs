@@ -16,7 +16,6 @@ import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import {translate} from '@docusaurus/Translate';
 import * as Icons from '@site/src/components/Autocomplete/icons.js';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const searchClient = meilisearchAutocompleteClient({
     url: 'https://meilsearch.whatap.io',
