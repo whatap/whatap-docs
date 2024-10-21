@@ -4288,6 +4288,7 @@ const sidebars = {
         id: 'learning-guides'
       },
       items: [
+        'best-practice-guides/real-time-monitoring-for-it-infra',
         {
           type: 'category',
           label: '대시보드 분석',
