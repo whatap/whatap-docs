@@ -4288,6 +4288,7 @@ const sidebars = {
         id: 'learning-guides'
       },
       items: [
+        'best-practice-guides/real-time-monitoring-for-it-infra',
         {
           type: 'doc',
           label: 'DX IT 운영을 위한 와탭 모니터링',
