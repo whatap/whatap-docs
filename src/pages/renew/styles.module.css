@@ -2,6 +2,8 @@
   font-weight: 400;
   font-size: 1.8rem;
   margin-bottom: 35px;
+  color: #fff;
+  text-decoration: solid;
 }
 
 .homehero {
@@ -10,9 +12,14 @@
   background-color: #ddd;
   align-content: center;
   text-align: center;
+  background: url('home-hero-background.png');
   /* position: sticky;
   top: 76px;
   z-index: 100; */
+}
+
+.guidelink:hover {
+  text-decoration: none;
 }
 
 .appcontainer {
@@ -62,7 +69,6 @@
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   width: 23.3%;
-  padding: 15px 20px;
 }
 .flexcolumn:last-of-type {
   border-right: 1px solid #aaa;
@@ -261,6 +267,16 @@
   min-height: 100px;
   /* background-color: #aaa; */
   text-align: left;
+  padding: 15px 20px;
+}
+
+.innercontent:hover {
+  cursor: pointer;
+}
+
+.innercontent .textleft {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
 }
 
 p.textleft {

@@ -100,71 +100,71 @@ function ThereeSteps() {
     return (
         <section className={clsx(styles.gettingStart, styles.guide, styles.justifycontentcenter)}>
             <Step order={1}>
-                <Link to="quick-guide/#account">
+                <Link to="quick-guide/#account" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.register",
                             message: "회원 가입"
                         })}
                     </Heading>
+                    <Description>
+                        {translate({
+                            id: "index.pages.register.desc",
+                            message: "와탭 모니터링 서비스를 이용하려면 회원 가입을 진행하세요. 15일간 무료 체험할 수 있습니다."
+                        })}
+                    </Description>
                 </Link>
-                <Description>
-                    {translate({
-                        id: "index.pages.register.desc",
-                        message: "와탭 모니터링 서비스를 이용하려면 회원 가입을 진행하세요. 15일간 무료 체험할 수 있습니다."
-                    })}
-                </Description>
             </Step>
             <RightArrow/>
             <Step order={2}>
-                <Link to="quick-guide/#cproject">
+                <Link to="quick-guide/#cproject" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.project",
                             message: "프로젝트 생성"
                         })}
                     </Heading>
+                    <Description>
+                        {translate({
+                            id: "index.pages.project.desc",
+                            message: "프로젝트를 생성하고 액세스 키를 발급 받으세요."
+                        })}
+                    </Description>
                 </Link>
-                <Description>
-                    {translate({
-                        id: "index.pages.project.desc",
-                        message: "프로젝트를 생성하고 액세스 키를 발급 받으세요."
-                    })}
-                </Description>
             </Step>
             <RightArrow/>
             <Step order={3}>
-                <Link to="quick-guide/#install">
+                <Link to="quick-guide/#install" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.agentInstall",
                             message: "에이전트 설치"
                         })}
                     </Heading>
+                    <Description>
+                        {translate({
+                            id: "index.pages.agentInstall.desc",
+                            message: "모니터링 대상에 에이전트를 설치하세요."
+                        })}
+                    </Description>
                 </Link>
-                <Description>
-                    {translate({
-                        id: "index.pages.agentInstall.desc",
-                        message: "모니터링 대상에 에이전트를 설치하세요."
-                    })}
-                </Description>
             </Step>
             <RightArrow/>
             <Step order={4}>
-                <Link to="quick-guide/#dashboard">
+                <Link to="quick-guide/#dashboard" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.viewDashboard",
                             message: "대시보드 조회하기"
                         })}
                     </Heading>
+                    <Description>
+                        {translate({
+                            id: "index.pages.viewDashboard.desc",
+                            message: "에이전트 설치 후 데이터가 와탭 서버로 전달되면 대시보드 메뉴에서 프로젝트의 전체 현황을 실시간으로 조회할 수 있습니다."
+                        })}
+                    </Description>
                 </Link>
-                <Description>
-                    {translate({
-                        id: "index.pages.viewDashboard.desc",
-                        message: "에이전트 설치 후 데이터가 와탭 서버로 전달되면 대시보드 메뉴에서 프로젝트의 전체 현황을 실시간으로 조회할 수 있습니다."
-                    })}
-                </Description>
             </Step>
         </section>
     )
