@@ -804,7 +804,7 @@ function _server_adf_tcp_port_createMdxContent(props) {
               children: (0,jsx_runtime.jsx)(_components.code, {
                 className: "language-bash",
                 metastring: "title=SH",
-                children: "#아래 변수에 모니터링 대상 아이피를 지정합니다.\n$TARGET_IP=\"127.0.0.1\"\n#아래 변수에 모니터링 대상 포트를 지정합니다.\n$TARGET_PORT=\"80\"\nAdd-Content -Path \"C:\\Program Files\\WhatapInfra\\whatap.conf\" -Value \"tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT\"\n"
+                children: "#아래 변수에 모니터링 대상 아이피를 지정합니다.\n$TARGET_IP=\"127.0.0.1\"\n#아래 변수에 모니터링 대상 포트를 지정합니다.\n$TARGET_PORT=\"80\"\nAdd-Content -Path \"C:\\Program Files\\WhatapInfra\\whatap.conf\" -Value \"tcp.check.${TARGET_PORT}=tcp://${TARGET_IP}:${TARGET_PORT}\"\n"
               })
             })
           })]

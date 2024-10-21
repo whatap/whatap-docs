@@ -222,7 +222,7 @@ function _createMdxContent(props) {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                   className: "language-bash",
                   metastring: "title='IA64'",
-                  children: "cp /usr/whatap/infra/conf/whatap.conf /tmp+\n/sbin/init.d/whatap-infra stop\ngunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -\nyes n | ./whatap-infra/install.sh\ncp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf\n/sbin/init.d/whatap-infra start\n"
+                  children: "cp /usr/whatap/infra/conf/whatap.conf /tmp\n/sbin/init.d/whatap-infra stop\ngunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -\nyes n | ./whatap-infra/install.sh\ncp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf\n/sbin/init.d/whatap-infra start\n"
                 })
               })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_theme_TabItem__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
@@ -232,7 +232,7 @@ function _createMdxContent(props) {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                   className: "language-bash",
                   metastring: "title='PA-RISC'",
-                  children: "cp /usr/whatap/infra/conf/whatap.conf /tmp\n/usr/sbin/init.d/whatap-infra stop\ngunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -\nyes n | ./whatap-infra/install.sh\ncp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf\n/sbin/init.d/whatap-infra start\n"
+                  children: "cp /usr/whatap/infra/conf/whatap.conf /tmp\n/sbin/init.d/whatap-infra stop\ngunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -\nyes n | ./whatap-infra/install.sh\ncp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf\n/sbin/init.d/whatap-infra start\n"
                 })
               })
             })]
