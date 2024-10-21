@@ -2203,6 +2203,7 @@ const sidebars = {
             'mysql/agent-xos-settings',
           ],
         },
+        'mysql/cloudsettings',
         'mysql/agent-manage',
         {
           type: 'category',
