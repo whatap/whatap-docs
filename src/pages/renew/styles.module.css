@@ -111,6 +111,7 @@
   -webkit-transition: transform 0.5s ease-in-out;
   -moz-transition: transform 0.5s ease-in-out;
   -o-transition: transform 0.5s ease-in-out;
+  z-index: 9999;
 }
 
 .flexProd:hover .document .textleft,
