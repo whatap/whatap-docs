@@ -71,7 +71,9 @@ import Svlfcpf from "../../common-items/_sv-lf-cpf.mdx";
 
 :::note 
 
-It is available in the AIX 6.1 or later.
+- It is available in the AIX 6.1 or later.
+
+- Additional options need to be set when installing WhaTap AIX agent 1.3.3 or earlier. See [the following](#install-aix-precaution). 
 
 :::
 
@@ -107,11 +109,27 @@ stopsrc -s whatap-infra
 startsrc -s whatap-infra
 ```
 
+### Precautions {#install-aix-precaution}
+
+When installing WhaTap AIX agent 1.3.3 or earlier, the following additional options must be set: 
+
+1. In the **_Server List_** menu, select the **_Column settings_** button and then activate **_OID_** in the server information.
+
+2. In **_Server list_**, check the **_OID_** column of the target server. 
+
+3. Add the OID's fixed option as follows: 
+
+   ```bash
+   echo "oid=[oid of server]" >> /usr/whatap/infra/conf/whatap.conf
+   ```
+
 ## Oracle Solaris
 
 :::note 
 
-It is available in Oracle Solaris 11.2 or later.
+- It is available in Oracle Solaris 11.2 or later.
+
+- Additional options need to be set when installing WhaTap Oracle Solaris agent 1.3.3 or earlier. See [the following](#install-oracle-solaris-precaution). 
 
 :::
 
@@ -147,4 +165,111 @@ echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra
 echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
 echo "createdtime=`date +%s%S`" |tee -a /usr/whatap/infra/conf/whatap.conf
 /etc/init.d/whatap-infra start
+```
+
+### Precautions {#install-oracle-solaris-precaution}
+
+Additional options need to be set as follows when installing WhaTap Oracle Solaris agent 1.3.3 or earlier. 
+
+1. In the **_Server List_** menu, select the **_Column settings_** button and then activate **_OID_** in the server information.
+
+2. In **_Server list_**, check the **_OID_** column of the target server. 
+
+3. Add the OID's fixed option as follows: 
+
+   ```bash
+   echo "oid=[oid of server]" >> /usr/whatap/infra/conf/whatap.conf
+   ```
+
+:::note 
+
+**Server running on Oracle Enterprise Edition**
+
+If you install on the server running on Oracle Enterprise Edition, disable the process collection option by referencing the following: 
+
+```bash
+echo "task_proc=false" >> /usr/whatap/infra/conf/whatap.conf 
+/etc/init.d/whatap-infra restart
+```
+
+:::
+
+### Addressing the agent incidents
+
+The following provides guidance on how to address the cases where no data is incorrectly detected in the Oracle Solaris agent. 
+
+#### Checking the OID settings
+
+Check that the `oid` option is set in the `/usr/whatap/infra/conf/whatap.conf` file.
+
+- For the agent 1.3.3 or earlier, set the OID manually. For the setting method, see [the following](#install-oracle-solaris-precaution).
+
+- For the agent 1.3.4 or later, the OID is set automatically.
+
+#### In case the version of the agent is 1.3.3 or earlier and it is running on Oracle Enterprise Edition
+
+Process collection is not supported on the servers running on Oracle Enterprise Edition.
+
+1. Check that the \``task_proc=false` option is set in the `/usr/whatap/infra/conf/whatap.conf` file.
+
+2. If it is not set, execute the following command to set the option and then restart the agent. 
+
+   ```bash
+   echo "task_proc=false" >> /usr/whatap/infra/conf/whatap.conf 
+   /etc/init.d/whatap-infra restart
+   ```
+
+This process disables the process collection option, ensuring that the agent operates in environments running on Oracle Enterprise Edition.
+
+## HP-UX
+
+:::note 
+
+- It is supported from HP-UX Itanium 11.23 and later. 
+
+- It is supported from HP PA-RISC-UX 11.23 and later. 
+
+:::
+
+If you select a newly generated server monitoring project, the <Cmdname sid="side_agentInstall" className="uitext" /> screen appears. You can also perform this through <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the project.
+
+<ImgLang img='server-install-hp-ux.png' desc='Server monitoring HP-UX'/>
+
+In the OS selection screen in <Cmdname sid="side_agentInstall" className="uitext" />, select ***HP-UX***. Depending on your HP-UX server architecture, select ***IA64*** or ***PA-RISC*** from the tab at the top and then check the project access key. Proceed with installation according to the following instructions.
+
+<Tabs>
+<TabItem value="ia64" label="IA64" default>
+
+1. In the <Cmdname sid="TTL07853" className="uitext" /> tab, select *whatap_infra.zip* to download the agent installation file.
+
+2. Go to the <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" /> tab, check the following command, and then run the package.
+
+   ```bash
+   gunzip -c whatap-infra.latest.ia64.tar.gz	 | tar xvf -
+   ./whatap-infra/install.sh x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g 127.0.0.1
+   ```
+
+</TabItem>
+
+<TabItem value="parisc" label="PA-RISC">
+
+1. In the <Cmdname sid="TTL07853" className="uitext" /> tab, select *whatap_infra.zip* to download the agent installation file.
+
+2. Go to the <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" /> tab, check the following command, and then run the package.
+
+   ```bash
+   gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
+   ./whatap-infra/install.sh x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g 127.0.0.1
+   ```
+
+</TabItem>
+
+</Tabs>
+
+### Running the agent
+
+Execute the following command to start the server monitoring. When the application server runs, it begins collecting monitoring information. 
+
+```bash
+/sbin/init.d/whatap-infra start
 ```

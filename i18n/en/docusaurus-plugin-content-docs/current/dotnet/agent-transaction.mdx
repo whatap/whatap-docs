@@ -183,7 +183,17 @@ The following agent options trace and record various data related to HTTP reques
 
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
-  Set the URL prefix for excluding transactions during collection. Any URLs whose prefix matches the set value do not collect the transaction performance. For multiple values, use comma (,) as the delimiter.
+  Set the prefix of URLs to exclude from transaction collection. URLs matching the set prefix are not collected for transaction performance. To set multiple values, use comma (,) as the delimiter.
+
+  :::note
+
+  The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
+
+  :::
+
+- **trace_ignore_url_suffix** <span class='type'>String</span>
+
+  Set the suffix of URLs to exclude from transaction collection. URLs matching the set suffix are not collected for transaction performance. To set multiple values, use comma (,) as the delimiter.
 
   :::note
 

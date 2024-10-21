@@ -18,6 +18,12 @@ For **CUBRID** DB monitoring, it is recommended to install XCUB, an additional a
 
   Set whether or not to use the XCUB agent. If the value is `0` the XOS agent is not used for collection. Enter the value as `1` or IP address of the XCUB agent. If the IP address is specified, data is collected from only the XCUB agent.
 
+- **xcub_port** <span class='type'>String</span>
+
+  Default `3002`
+
+  Set the port to communicate with the XCUB agent. If you have installed the XOS agent together, you do not need to set this option because it shares the XOS port.
+
 ## Configuring the xcub.conf file
 
 After creating the _xcub.conf_ file on the database server, you can enter the agent server information and set additional options.

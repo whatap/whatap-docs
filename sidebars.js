@@ -1617,7 +1617,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -3575,7 +3575,7 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mongodb/database-size',
-                'mongodb/report-intro'
+                // 'mongodb/report-intro'
               ],
             },
             {
@@ -3846,7 +3846,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -3855,7 +3855,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_39',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_38',
                 'release-notes/java/java-2_2_37',
@@ -3926,7 +3926,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -3934,9 +3934,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_1',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_5_2',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_1',
                 'release-notes/nodejs/nodejs-0_5_0',
                 'release-notes/nodejs/nodejs-0_4_98',
                 'release-notes/nodejs/nodejs-0_4_97',
@@ -3945,7 +3946,6 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
                 'release-notes/nodejs/nodejs-0_4_89',
-                'release-notes/nodejs/nodejs-0_4_88',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
@@ -3962,9 +3962,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_0',
+                  id: 'release-notes/python/python-1_7_1',
                   className: 'new',
                 },
+                'release-notes/python/python-1_7_0',
                 'release-notes/python/python-1_6_10',
                 'release-notes/python/python-1_6_9',
                 'release-notes/python/python-1_6_8',
@@ -3973,7 +3974,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_5',
                 'release-notes/python/python-1_6_4',
                 'release-notes/python/python-1_6_3',
-                'release-notes/python/python-1_6_2',
                 'release-notes/python/python-previous',
               ],
             },
@@ -3982,7 +3982,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -3991,7 +3991,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_3_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_3_3',
                 'release-notes/dotnet/dotnet-2_3_2',
@@ -4011,7 +4011,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/index',
@@ -4019,9 +4019,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/golang/golang-0_4_2',
-                  // className: 'new'
+                  id: 'release-notes/golang/golang-0_4_3',
+                  className: 'new'
                 },
+                'release-notes/golang/golang-0_4_2',
                 'release-notes/golang/golang-0_4_1',
                 'release-notes/golang/golang-0_4_0',
                 'release-notes/golang/golang-0_3_3',
@@ -4030,7 +4031,6 @@ const sidebars = {
                 'release-notes/golang/golang-0_3_0',
                 'release-notes/golang/golang-0_2_4',
                 'release-notes/golang/golang-0_2_3',
-                'release-notes/golang/golang-0_2_2',
                 'release-notes/golang/golang-previous',
               ],
             },
@@ -4098,7 +4098,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4107,7 +4107,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_7_12',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_7_11',
                 'release-notes/k8s/k8s-1_7_10',
@@ -4126,7 +4126,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4134,18 +4134,18 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_0_0',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_1_2',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-2_1_1',
+                'release-notes/db/dbx-2_1_0',
+                'release-notes/db/dbx-2_0_2',
+                'release-notes/db/dbx-2_0_1',
+                'release-notes/db/dbx-2_0_0',
                 'release-notes/db/dbx-1_9_5',
                 'release-notes/db/dbx-1_9_4',
                 'release-notes/db/dbx-1_9_3',
                 'release-notes/db/dbx-1_9_2',
-                'release-notes/db/dbx-1_9_1',
-                'release-notes/db/dbx-1_9_0',
-                'release-notes/db/dbx-1_8_2',
-                'release-notes/db/dbx-1_8_1',
-                'release-notes/db/dbx-1_8_0',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -4231,7 +4231,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              // className: 'new',
+              className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
@@ -5720,21 +5720,12 @@ const sidebars = {
           label: 'vCenter',
           className: 'beta' 
         },
-        // 'kafka/install-agent',
-        // {
-        //   type: 'category',
-        //   label: '주요 메뉴 알아보기',
-        //   collapsible: true,
-        //   collapsed: false,
-        //   items: [
-        //     'kafka/dashboard',
-        //     {
-        //       type: 'doc',
-        //       id: 'kafka/warning-notice-v2',
-        //       className: 'newfunc'
-        //     },
-        //   ],
-        // }
+        {
+          type: 'doc',
+          id: 'features/nginx-introduction',
+          label: 'NGINX',
+          className: 'beta' 
+        },
       ]
     }
   ],

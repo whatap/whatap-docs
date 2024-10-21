@@ -117,6 +117,9 @@ html[lang='ko-KR'] {
 html[lang='en-US'] {
   word-wrap: keep-all;
   font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
+  h1 {
+    text-transform: capitalize;
+  }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans', sans-serif, 'Apple SD Gothic Neo' !important; //'Noto Emoji'
   }
@@ -1235,6 +1238,11 @@ main {
         width: 40%;
         max-width: 40%;
       }
+      .width--50-2 {
+        width: 50%;
+        max-width: 50%;
+        padding-right: 2%;
+      }
       .width--50 {
         width: 50%;
         max-width: 50%;
@@ -2002,6 +2010,22 @@ main {
       color: #00b543;
       border: none;
       padding: 0 5px 0 5px;
+    }
+    code.Docs {
+      background-color: #f69c60;
+      color: #fff;
+      border: none;
+      padding: 0 5px 0 5px;
+      font-weight: 500;
+      // font-family: "Oleo Script";
+    }
+    code.Spec {
+      background-color: #adcbe5;
+      // color: #5587b6;
+      color: #fff;
+      padding: 0 5px 0 5px;
+      border: none;
+      font-weight: 550;
     }
     code.Features {
       background-color: #fde3f9;
