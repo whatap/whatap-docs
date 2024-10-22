@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.15f24765.css">
-<script src="/whatap-docs/assets/js/runtime~main.ee10f507.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.3d0409f0.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.fa0bf1ca.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -65,9 +65,9 @@
 <p>조회 시간은 최대 3주까지 선택할 수 있습니다. 임의의 날짜와 시간을 조회하려면 시계 표시 부분을 선택하세요. 날짜와 시간 텍스트 영역을 클릭하면 날짜와 시간을 선택할 수 있는 옵션이 나타납니다.</p>
 </li>
 </ul></div></div></section>
-<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="space">SPACE<a href="#space" class="hash-link" aria-label="SPACE에 대한 직접 링크" title="SPACE에 대한 직접 링크">​</a></h3><p>데이터베이스의 공간 사용량을 시간별로 시각화하여 표시합니다. PERMANENT, TEMPORARY, Active_log, Archive_log와 같은 주요 데이터베이스의 총 공간과 사용 공간, 그리고 사용 비율을 확인할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-cubrid.png" alt="Database size" width="1200" height="1058"></p><ul>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="space">SPACE<a href="#space" class="hash-link" aria-label="SPACE에 대한 직접 링크" title="SPACE에 대한 직접 링크">​</a></h3><p>데이터베이스의 공간 사용량을 시간별로 시각화하여 표시합니다. PERMANENT, TEMPORARY, Active_log, Archive_log와 같은 주요 데이터베이스의 총 공간과 사용 공간, 그리고 사용 비율을 확인할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-cubrid.png" alt="Database size" width="1200" height="562"></p><ul>
 <li>
-<p><em><strong>PERMANENT</strong></em>: 데이터베이스에서 영구적으로 저장되는 데이터가 차지하는 공간입니다.</p>
+<p><em><strong>PERMANENT</strong></em>: 데이터베이 스에서 영구적으로 저장되는 데이터가 차지하는 공간입니다.</p>
 </li>
 <li>
 <p><em><strong>TEMPORARY</strong></em>: 임시 데이터를 저장하는 공간입니다.</p>
@@ -79,7 +79,7 @@
 <p><em><strong>Archive_log</strong></em>: 이전에 완료된 트랜잭션 로그를 저장하는 공간입니다.</p>
 </li>
 </ul></section>
-<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="file">FILE<a href="#file" class="hash-link" aria-label="FILE에 대한 직접 링크" title="FILE에 대한 직접 링크">​</a></h3><p>데이터베이스 파일 시스템에서 사용되는 실제 파일의 크기와 사용량을 확인할 수 있습다. INDEX, HEAP, SYSTEM, TEMP 등으로 구분된 데이터베이스 파일 시스템을 분석할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-file-cubrid.png" alt="Database size" width="auto" height="auto"></p><ul>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="file">FILE<a href="#file" class="hash-link" aria-label="FILE에 대한 직접 링크" title="FILE에 대한 직접 링크">​</a></h3><p>데이터베이스 파일 시스템에서 사용되는 실제 파일의 크기와 사용량을 확인할 수 있습다. INDEX, HEAP, SYSTEM, TEMP 등으로 구분된 데이터베이스 파일 시스템을 분석할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-file-cubrid.png" alt="Database size" width="1200" height="560"></p><ul>
 <li>
 <p><em><strong>INDEX</strong></em>: 데이터베이스 인덱스가 저장되는 파일입니다.</p>
 </li>
@@ -93,8 +93,8 @@
 <p><em><strong>TEMP</strong></em>: 임시 데이터를 저장하는 파일입니다.</p>
 </li>
 </ul></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="databasesize">사이즈 변화 확인하기<a href="#databasesize" class="hash-link" aria-label="사이즈 변화 확인하기에 대한 직접 링크" title="사이즈 변화 확인하기에 대한 직접 링크">​</a></h2><p><span class="uitext">사이즈 추이</span> 섹션에서는 시간대별로 데이터베이스의 전체 크기와 사용량 변화를 시각적으로 확 인할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-check-trend-cubrid.png" alt="Database size" width="auto" height="auto"></p><p>차트에서 특정 시간대의 데이터를 확인하려면 마우스를 차트 위로 오버한 상태에서 이동하세요. 해당 시간대의 상세 정보를 툴팁으로 확인할 수 있습니다.</p></section>
-<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="databasesizedetail">사이즈 상세 확인하기<a href="#databasesizedetail" class="hash-link" aria-label="사이즈 상세 확인하기에 대한 직접 링크" title="사이즈 상세 확인하기에 대한 직접 링크">​</a></h2><p><span class="uitext">사이즈 상세</span> 섹션에서는 각 데이터베이스의 상세 정보를 제공합니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-size-details-cubrid.png" alt="Database size" width="auto" height="auto"></p><p>최초 조회한 시간과 현재 시간을 비교하여 각 데이터베이스의 사용량 변화를 확인할 수 있습니다. 데이터베이스의 세부 내역을 확인하려면 데이터베이스 이름 옆의 <img decoding="async" loading="lazy" alt="화살표 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzY1XzE5NDYpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjUgNkwxNi41IDEyTDguNSAxOEw4LjUgNloiIGZpbGw9IiM3NTc1NzUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF82NV8xOTQ2Ij4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" width="24" height="24" class="img_ev3q"> 버튼을 선택하세요.</p><ul>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="databasesize">사이즈 변화 확인하기<a href="#databasesize" class="hash-link" aria-label="사이즈 변화 확인하기에 대한 직접 링크" title="사이즈 변화 확인하기에 대한 직접 링크">​</a></h2><p><span class="uitext">사이즈 추이</span> 섹션에서는 시간대별로 데이터베이스의 전체 크기와 사용량 변화를 시각적으로 확  인할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-check-trend-cubrid.png" alt="Database size" width="1200" height="255"></p><p>차트에서 특정 시간대의 데이터를 확인하려면 마우스를 차트 위로 오버한 상태에서 이동하세요. 해당 시간대의 상세 정보를 툴팁으로 확인할 수 있습니다.</p></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="databasesizedetail">사이즈 상세 확인하기<a href="#databasesizedetail" class="hash-link" aria-label="사이즈 상세 확인하기에 대한 직접 링크" title="사이즈 상세 확인하기에 대한 직접 링크">​</a></h2><p><span class="uitext">사이즈 상세</span> 섹션에서는 각 데이터베이스의 상세 정보를 제공합니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-stat-table-space-size-details-cubrid.png" alt="Database size" width="1200" height="284"></p><p>최초 조회한 시간과 현재 시간을 비교하여 각 데이터베이스의 사용량 변화를 확인할 수 있습니다. 데이터베이스의 세부 내역을 확인하려면 데이터베이스 이름 옆의 <img decoding="async" loading="lazy" alt="화살표 아이콘" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzY1XzE5NDYpIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjUgNkwxNi41IDEyTDguNSAxOEw4LjUgNloiIGZpbGw9IiM3NTc1NzUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF82NV8xOTQ2Ij4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=" width="24" height="24" class="img_ev3q"> 버튼을 선택하세요.</p><ul>
 <li>
 <p><span class="uitext">total</span>: 데이터베이스 전체 크기의 합계입니다</p>
 </li>
