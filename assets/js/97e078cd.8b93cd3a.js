@@ -2264,11 +2264,11 @@ function _createMdxContent(props) {
             })]
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsx)(_components.td, {
-              children: "Pod CPU Usage by Limit (%)"
+              children: "Pod CPU Usage by Request (%)"
             })
           }), (0,jsx_runtime.jsx)(_components.tr, {
             children: (0,jsx_runtime.jsx)(_components.td, {
-              children: "CPU Limit 기준 CPU 전체 사용률"
+              children: "CPU Request 기준 CPU 전체 사용률"
             })
           }), (0,jsx_runtime.jsxs)(_components.tr, {
             children: [(0,jsx_runtime.jsx)(_components.td, {
