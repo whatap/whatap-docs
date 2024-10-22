@@ -1,4 +1,4 @@
-## Preset {#preset}
+## Setting presets {#preset}
 
 <InDoc product="java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-pro">
 
@@ -8,13 +8,15 @@ You can save and load the settings and layouts for widgets on the dashboard. You
 
 :::note
 
-Using <Cmdname sid="default" className="uitext" />, the specified preset cannot be changed.
+- Using <Cmdname sid="default" className="uitext" />, the specified preset cannot be changed.
+
+- You can save or modify the presets with the <Cmdname sid="edit_project" className="uitext" /> role. For more information about the member roles, see [the following](../project/project-structure#member-auth).
 
 :::
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle">
+<InDoc product="postgresql,mysql,oracle,altibase,cubrid">
 
 You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
 
@@ -42,7 +44,9 @@ The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be
 
 3. Enter a new preset name.
 
-   <ImgLang img='apm-dashboard-preset-save.png' desc='Save Preset' />
+   <InDoc product="java,python,php,nodejs,dotnet,golang"><ImgLang img='apm-dashboard-preset-save.png' desc='Save preset' /></InDoc>
+
+   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid"><ImgLang img='db-dashboard-preset-save.png' desc='Save preset' /></InDoc>
 
    To save the selected agent data, select <Cmdname sid="ITM07345" className="uitext" />.
 
@@ -56,17 +60,7 @@ You can see the newly saved preset from the preset list.
 
 - If you go to another menu without saving changes on the dashboard, the changes are not saved.
 
-<InDoc product="java,php,python,golang,nodejs,dotnet">
-
 - Presets are saved on a project basis and can be shared with other users.
-
-</InDoc>
-
-<Xclude product="java,php,python,golang,nodejs,dotnet">
-
-- Presets are saved in your user account and cannot be shared with other users. We plan to update it for better features.
-
-</Xclude>
 
 :::
 

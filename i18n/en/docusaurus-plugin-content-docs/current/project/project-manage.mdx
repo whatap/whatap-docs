@@ -37,33 +37,33 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 ## Project management {#management}
 
-Home > Select Project > **_Management_** > **_Project Management_**
+Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />
 
 It is possible to check and manage the project overview, and provide the following functions. You need the role to modify the project.
 
 <ImgLang img='project-manage.png' desc='Project management'/>
 
-- **_Project Name_**: You can modify the project name.
+- <Cmdname sid="project_name" className="uitext" />: You can modify the project name.
 
-- **_Project Description_**: You can enter the description of the project.
+- <Cmdname sid="project_description" className="uitext" />: You can enter the description of the project.
 
-- **_Project Code_**: Numeric code to identify the project
+- <Cmdname sid="pcode" className="uitext" />: Numeric code to identify the project
 
-- **_Application Time Zone_**: You can change the time zone.
+- <Cmdname sid="application_timezone" className="uitext" />: You can change the time zone.
 
-- **_API Token_**: You can reissue the API token by selecting **_Reissue_**.
+- <Cmdname sid="api_token" className="uitext" />: You can reissue the API token by selecting <Cmdname sid="reissue" className="uitext" />.
 
-- **_Managing notification languages_**: You can change the language for alert messages that occur in the project.
+- <Cmdname sid="TTL06021" className="uitext" />: You can change the language for alert messages that occur in the project.
 
-After modification, select **_Save_**.
+After modification, select <Cmdname sid="save" className="uitext" />.
 
-## Delete Project
+## Delete project {#removeproject}
 
 You can delete a project in two different ways:
 
-- In the All Projects list under Home, on the upper right of the project to delete, select ![setting icon](/img/ico-setting.svg). In the dropdown menu, select **_Delete Project_**.
+- In the All Projects list under Home, on the upper right of the project to delete, select ![setting icon](/img/ico-setting.svg). In the drop-down menu, select <Cmdname sid="delete_project" className="uitext" />.
 
-- Go to Home > Select Project > **_Management_** > **_Project management_**. Select **_Delete Project_** on the lower right of the screen.
+- Go to Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />. Select <Cmdname sid="delete_project" className="uitext" /> on the lower right of the screen.
 
 :::caution
 
@@ -73,91 +73,112 @@ The user list and the collected data are all deleted. Deleted data cannot be res
 
 ## Checking the project members{#member-list}
 
-Home > Select Project > **_Management_** > **_Project Member_**
+Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />
 
 You can check the list of members belonging to the selected project.
 
 <ImgLang img='project-member-list.png' desc='Project Member List' />
 
-- The <code class='history'>Login: ...</code> tag on the right of the member name is the record of recent access.
-- On the right of the name of the member with the billing role, the <code class='pay'>billing</code> tag appears.
-- On the right of the user account name, the <code class='my'>My Account</code> tag appears.
-- If you invite an account that has not signed up for the WhaTap monitoring service, the name appears as <Cmdname sid="pending_invitation" className="uitext" /> until the invitee signs up. To resend the invitation email, select **_Reinvite_**.
+- The <code class='history'><Cmdname sid="login" />: ...</code> tag on the right of the member name is the record of recent access.
 
-## Inviting project members
+- On the right of the name of the member with the billing role, the <code class='pay'><Cmdname sid="billing" /></code> tag appears.
+
+- On the right of the user account name, the <code class='my'><Cmdname sid="my_account" /></code> tag appears.
+
+- If you invite an account that has not signed up for the WhaTap monitoring service, the name appears as <Cmdname sid="pending_invitation" className="uitext" /> until the invitee signs up. To resend the invitation email, select <Cmdname sid="reinvite" className="uitext" />.
+
+## Inviting project members {#inviteprojectmember}
 
 1. Select a project to invite members to in Home screen.
 
-2. On the left of the screen, select **_Management_** > **_Project Member_**.
+2. In the side menu, select <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />.
 
-3. Select **_Invite Member_** on the upper right of the screen.
+3. Select <Cmdname sid="invite_member" className="uitext" /> on the upper right of the screen.
 
-4. In **_User Role_**, set the roles of the user to invite and then select **_Apply_**.
+4. In <Cmdname sid="user_role" className="uitext" />, set the roles of the user to invite and then select <Cmdname sid="apply" className="uitext" />.
 
-5. Enter the email address of the user to invite in **_Email_**, and then select **_Add_**. You can add extra users continuously.
+5. Enter the email address of the user to visit in the Email field, and then select <Cmdname sid="add" className="uitext" />. You can add extra users continuously.
 
-6. After adding all users to invite, select **_Complete_**.
+6. After adding users to invite, select <Cmdname sid="complete" className="uitext" />.
 
-:::note
+import InviteMemberNotes from "../common-items/_invite-member-notes.mdx";
 
-- For more information about the member roles, see [the following](../project/project-structure#project-auth).
-- The accounts that have not signed up for the WhaTap monitoring service display the `new account` tag and send emails for sign up.
-- If there are invited members to cancel before completion, in **_List of members to invite_**, select ![Delete icon](/img/ico-trash-red.svg).
-- You cannot invite any by entering email addresses that are not in the desired email format.
-- The members who have already been invited cannot be invited again, and the members in the parent organization or group are automatically added.
+<InviteMemberNotes />
 
-:::
-
-### WhaTap Support
+### WhaTap Support {#supportwhatap}
 
 If you need any support for failures while using the WhaTap monitoring service, you can invite the WhaTap support team as a member to receive supports. 
 
-1. From the **_Project Member_** menu, select **_Invite the WhaTap support team_** on the upper right.
+1. From the <Cmdname sid="side_projectMember" className="uitext" /> menu, select <Cmdname sid="invite_help_whatap_account" className="uitext" /> on the upper right.
 
-2. If the member invitation window appears, select a project in **_Project_**.
+2. If the member invitation window appears, select a project in <Cmdname sid="project" className="uitext" />.
 
-3. Select **_Complete_**.
+3. Select <Cmdname sid="complete" className="uitext" />.
 
 :::note
 
-You can add extra users continuously. Depending on the project type, there may be one or more support team accounts.
+- You can add extra users continuously. Depending on the project type, there may be one or more support team accounts.
+
+- The <Cmdname sid="invite_help_whatap_account" className="uitext" /> feature can be used only by the users with the <Cmdname sid="member_management" className="b600" /> role. For more information about the member roles, see [the following](project-structure#project-auth).
 
 :::
 
-## Modifying the project member role
+## Modifying the project member role {#modifymember-role}
 
 1. Select a project in the Home screen.
 
-2. On the left of the screen, select **_Management_** > **_Project Member_**.
+2. In the side menu, select <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />.
 
-3. In the **_Project Member_** list, select ![Edit icon](/img/ico-edit.svg) on the right of the member to modify. 
+3. In the <Cmdname sid="project_member" className="uitext" /> list, select ![Edit icon](/img/ico-edit.svg) on the right of the member to modify.
 
-4. If the **_Edit Member Role_** window appears, set the **_Member Role_**. You can set the roles allowed by the project.
+4. If the <Cmdname sid="edit_member_role" className="uitext" replace="br" /> window appears, set the <Cmdname sid="edit_member_role" className="uitext" replace="br" />. You can set the roles allowed by the project.
 
-5. After configuration, select **_Apply_**.
+5. After all settings are finished, select <Cmdname sid="apply" className="uitext" />.
 
 :::note
 
-For more information about the member roles, see [the following](../project/project-structure#project-auth).
+The member role modification feature can be used only by the users with the <Cmdname sid="member_management" className="b600" /> role. For more information about the member roles, see [the following](project-structure#project-auth).
 
 :::
 
-## Deleting project members
+## Deleting project members {#removemember}
 
 1. Select a project in the Home screen.
 
-2. On the left of the screen, select **_Management_** > **_Project Member_**.
+2. In the side menu, select <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />.
 
-3. In the **_Project Member_** list, select ![Delete icon](/img/ico-trash-red.svg) on the right of the member to delete.
+3. In the <Cmdname sid="project_member" className="uitext" /> list, select ![Delete icon](/img/ico-trash-red.svg) on the right of the member to delete.
 
-4. If the message window appears, select **_Delete_**.
+4. If the message window appears, select <Cmdname sid="delete" className="uitext" />.
 
 :::note
 
-- You cannot delete other members if you do not have the role to manage project members.
+- You cannot delete other members if you do not have the <Cmdname sid="member_management" className="b600" /> role. For more information about the member roles, see [the following](project-structure#project-auth).
+
 - You cannot delete other members if there is a single project member.
+
 - The members inherited from the parent group cannot be deleted.
+
 - A user's own account can be removed from a project regardless of roles.
+
 - The members with the billing roles cannot be deleted until the billing roles are transferred.
+
+:::
+
+## Downloading the member list {#downlaodmemberlist}
+
+To download the member list as a CSV format file, keep the following steps:
+
+1. Select a project in the Home screen.
+
+2. In the side menu, select <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />.
+
+3. Select ![CSV icon](/img/ic-csv-download-ms.svg) on the upper right of the screen.
+
+Save the member list to the local disk in a CSV format file.
+
+:::note
+
+The member list downloading feature can be used only by the users with the <Cmdname sid="member_management" className="b600" /> role. For more information about the member roles, see [the following](project-structure#project-auth).
 
 :::

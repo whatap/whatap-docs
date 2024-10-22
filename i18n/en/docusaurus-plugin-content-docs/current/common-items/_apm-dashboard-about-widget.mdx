@@ -16,7 +16,7 @@ This document mainly describes the widgets placed on the <Cmdname sid="applicati
 
 You can see the application information through the agent installed on the application.
 
-#### <Cmdname sid="AA003" />
+#### <Cmdname sid="AA003" /> {#AA003}
 
 <ImgLang img='agent-dashboard-summary.png' desc='Application summary' />
 
@@ -124,7 +124,7 @@ All agents in the project collect the active transaction count every 5 seconds, 
 
 - <Cmdname sid="active_stat_socket" className="uitext" />: Indicates the TCP connection attempt to an external system. If the <Cmdname sid="active_stat_socket" className="uitext" /> number continues to increase, there is a high possibility of failures due to disconnection of the external system.
 
-#### <Cmdname sid="AA005" />
+#### <Cmdname sid="AA005" /> {#AA005}
 
 <ImgLang img='hitmap.png' desc='Hitmap' />
 
@@ -154,7 +154,7 @@ The <Cmdname sid="AA005" className="uitext" /> chart represents the distribution
 
 :::
 
-#### <Cmdname sid="AA016" />
+#### <Cmdname sid="AA016" /> {#AA016}
 
 <ImgLang img='apm-dashboard-active-tx-equalizer.png' desc='Active Transaction Equalizer' />
 
@@ -168,7 +168,7 @@ It displays a list of all agents and the total number of active transactions. Ho
 
 The service-related widget can be used as the metric for application performance tuning.
 
-#### <Cmdname sid="apdex" />
+#### <Cmdname sid="apdex" /> {#apdex}
 
 ![Apdex](/img/apm-dashboard-apdex.png)
 
@@ -178,11 +178,11 @@ import Javaapdexdesc from "../common-items/_java-apdex-desc.mdx";
 
 :::note
 
-The default value (S) can be modified in <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_configuration" className="uitext" />. The value of the setting key is `apdex_time`. It is available only in the agent 2.0 or later.
+The default value (S) can be modified in <Cmdname sid="management" className="uitext" /> &gt; <Cmdname sid="agent_configuration" className="uitext" />. The value of the setting key is `apdex_time`. It is available only in the agent 2.0 or later.
 
 :::
 
-#### <Cmdname sid="tps" />
+#### <Cmdname sid="tps" /> {#tps}
 
 ![TPS](/img/apm-dashboard-tps.png)
 
@@ -194,7 +194,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 :::
 
-#### <Cmdname sid="avg_restime" />
+#### <Cmdname sid="avg_restime" /> {#avgrestime}
 
 <ImgLang img='apm-dashboard-avg-response-time.png' desc='Average response time'/>
 
@@ -208,7 +208,7 @@ For more information about analyses for TPS, response time, and CPU utilization,
 
 ### Resource-related widget
 
-#### <Cmdname sid="system_cpu" />
+#### <Cmdname sid="system_cpu" /> {#systemcpu}
 
 <ImgLang img='apm-dashboard-cpu.png' desc='System CPU' />
 
@@ -272,7 +272,7 @@ For more information about chart analysis, see the following link. [Monthly WhaT
 
 ### User-related widget
 
-#### <Cmdname sid="realtime_user" />
+#### <Cmdname sid="realtime_user" /> {#realtimeuser}
 
 <ImgLang img='apm-dashboard-realtime-user.png' desc='Concurrent User' />
 
@@ -302,14 +302,14 @@ The widgets marked with the `All APPS.` tag display the data for all agents.
 
 :::
 
-#### <Cmdname sid="today_tps" />
+#### <Cmdname sid="today_tps" /> {#todaytps}
 
 <ImgLang img="apm-dashboard-today-tps.png" desc="Today's TPS" />
 
-It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" /> appears.
+It displays the TPS for today by hour. You can check it by comparing with the TPS (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" /> appears.
 
-#### <Cmdname sid="daily_visit" />
+#### <Cmdname sid="daily_visit" /> {#dailyvisit}
 
 <ImgLang img="apm-dashboard-today-users.png" desc="Today's Visits" />
 
-This metric shows the number of <Cmdname sid="realtime_user" className="uitext" /> for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> > <Cmdname sid="daily_app_stat" className="uitext" /> appears.
+This metric shows the number of <Cmdname sid="realtime_user" className="uitext" /> for the day by time zone. You can check it by comparing with the user count (gray) in the same time zone of yesterday. If you click ![right-arrow](/img/right-arrow.svg), <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" /> appears.

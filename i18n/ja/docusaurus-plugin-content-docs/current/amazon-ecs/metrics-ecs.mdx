@@ -11,7 +11,7 @@ keywords:
 
 :::note 
 
-WhaTapECSメトリクス**カテゴリ**の表記はプレフィックス(`ecs_`)を活用します。
+WhaTap ECSメトリクス**カテゴリ**の表記はプレフィックス(`ecs_`)を活用します。
 
 :::
 
@@ -24,15 +24,15 @@ WhaTapECSメトリクス**カテゴリ**の表記はプレフィックス(`ecs_`
 | ClusterArn                    | Amazon Resource Name(ARN)でECSクラスターを識別します。 各クラスターは、固有のARNを持ち、サービスが配布されたクラスターを指定します。               |
 | LaunchType                    | ECSサービスの開始タイプを意味します。 `EC2`または`FARGATE`を値で持ちます。 サービスがEC2インスタンスで実行されるか、サーバーレスFargateで実行されるかを表示します。 |
 | PlatformVersion               | Fargate作業で使用されるプラットフォームのバージョンを意味します。 Fargateインフラの特定のバージョンを示し、互換性と機能のサポートを決定します。                  |
-| PropagateTags                 | サービスがタスクにタグを渡す方法を意味します。 `TASK_DEFINITION`または`SERVICE`値を持つことがあります。 サービスまたはタスクの定義からタグを継承します。       |
+| PropagateTags                 | サービスがタスクにタグを渡す方法を意味します。 `TASK_DEFINITION`または`SERVICE`で定義されます。 サービスまたはタスクの定義からタグを継承します。           |
 | RoleArn                       | サービスが使用するIAM役割のARNとなります。 この役割はECSがサービスに対して実行できるタスクを定義します。                                        |
 | CreatedBy                     | サービスを作成したユーザーを意味します。 ユーザーの識別子または名前である可能性があります。                                                   |
-| SchedulingStrategy            | サービスのスケジューリング戦略で`REPLICA`または`DAEMON`値を持つことがあります。 タスクのデプロイ方法を決定します。                               |
+| SchedulingStrategy            | サービスのスケジューリング戦略で`REPLICA`または`DAEMON`で定義されます。 タスクのデプロイ方法を決定します。                                   |
 | ServiceArn                    | ECSサービスのARNを意味します。 サービスの固有の識別子です。                                                                |
 | ServiceName                   | 使用者が指定したECSサービスの名前を意味します。                                                                        |
 | TaskDefinition                | サービスで実行されるタスク定義の名前と改訂番号を意味します。                                                                   |
 | ^                             | 例、`my-task:1`                                                                                    |
-| DeploymentControllerType      | デプロイコントローラーのタイプを意味します。 `ECS`または`CODE_DEPLOY`を値で持ちます。 デプロイ方法を決定します。                               |
+| DeploymentControllerType      | デプロイコントローラーのタイプを意味します。 `ECS`または`CODE_DEPLOY`で定義されます。 デプロイ方法を決定します。                               |
 | HealthCheckGracePeriodSeconds | サービス開始後、ヘルスチェック猶予期間(秒)を意味します。 この期間中、サービスはヘルスチェックの失敗を無視します。                                       |
 | Tags                          | サービスにリンクされているタグのキー値ペアの一覧を意味します。 各タグは、サービスに追加のメタデータを提供します。                                        |
 

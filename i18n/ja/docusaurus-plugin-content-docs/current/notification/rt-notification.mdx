@@ -8,13 +8,19 @@ keywords:
   - リアルタイム通知一覧
 ---
 
-ホーム画面 > **_リアルタイム通知一覧_**
+ホーム画面 &gt; <Cmdname sid="side_integratedRealtimeAlert" className="uitext" />
 
 <ImgLang img='rt-notification.png' desc='リアルタイム通知一覧' />
 
 ユーザーが権限を持つすべてのプロジェクトの通知をリアルタイムで確認でき、通知の状況を一目で確認できます。タイムライン、通知タイトル、プロジェクト、アプリケーションを分類して確認できます。
 
-リアルタイムで通知リストを取得する間隔は20秒です。20秒前に通知リストを更新するには、画面右上の**_更新_**ボタンを選択してください。
+リアルタイムで通知リストを取得する間隔は20秒です。20秒前に通知リストを更新するには、画面右上の<Cmdname sid="refresh" className="uitext" />ボタンを選択してください。
+
+:::note
+
+個別プロジェクトでリアルタイム通知を確認する方法の詳細については、[次の文書](../java/real-time-notification)を参照してください。
+
+:::
 
 ## 通知検索
 
@@ -22,19 +28,23 @@ keywords:
 
 ## グループ、プロジェクト、製品別フィルタリング
 
-通知リストはグループ、プロジェクト、または製品タイプ別にフィルタリングして確認できます。画面左上の**_プロジェクト_**ボタンを選択します。画面の右側に**_プロジェクト_**画面が表示されたら**_グループ_**、**_プロジェクト_**、**_製品タイプ_**で項目を選択してください。
+通知リストはグループ、プロジェクト、または製品タイプ別にフィルタリングして確認できます。画面左上の<Cmdname sid="project" className="uitext" />ボタンを選択します。画面の右側に<Cmdname sid="project" className="uitext" />画面が表示されたら<Cmdname sid="group" className="uitext" />、<Cmdname sid="project" className="uitext" />、<Cmdname sid="productType" className="uitext" />で項目を選択してください。
 
 <ImgLang img='rt-notification-filter.png' desc='通知フィルタリング' />
 
 - 選択した項目は、通知検索テキスト入力欄の右側に表示されます。複数選択ができます。
+
 - 選択した項目をキャンセルするには、その項目をもう一度選択してください。
-- **_プロジェクト_**ウィンドウ![閉じるアイコン](/img/ico-close.svg)ボタンを選択または、**_プロジェクト_**ウィンドウ領域外をクリックして、フィルタリングした通知一覧が表示されます。
-- **_プロジェクト_**画面に多くのリストがある場合は、**_検索_**で探している項目が検索可能です。
+
+- <Cmdname sid="project" className="uitext" />ウィンドウ![閉じるアイコン](/img/ico-close.svg)ボタンを選択または、<Cmdname sid="project" className="uitext" />ウィンドウ領域外をクリックして、フィルタリングした通知一覧が表示されます。
+
+- <Cmdname sid="project" className="uitext" />画面に多くのリストがある場合は、<Cmdname sid="search" className="uitext" />で探している項目が検索可能です。
+
 - 必要なアイテムをフィルタリングしながら、通知コンテンツを検索することもできます。
 
 ## 通知一覧の時間を設定する
 
-最近発生した通知のリストを時間帯別に確認できます。画面右上、**_リフレッシュ_**ボタンの左側にある時間選択ボックスを選択します。**_最近1時間_**(既定値)、**_最近3時間_**、**_最近6時間_**、**_最近12時間_**、**_最近1日_**を選択できます。
+最近発生した通知のリストを時間帯別に確認できます。画面右上、<Cmdname sid="refresh" className="uitext" />ボタンの左側にある時間選択ボックスを選択します。<Cmdname sid="select_1_hour" className="uitext" />(既定値)、<Cmdname sid="select_3_hour" className="uitext" />、<Cmdname sid="select_6_hour" className="uitext" />、<Cmdname sid="select_12_hour" className="uitext" />、<Cmdname sid="select_1_day" className="uitext" />を選択できます。
 
 選択した直近の時間登録に従って発生した通知がタイムラインで確認できます。最も多く発生した通知時間帯を確認するのは簡単です。
 
@@ -42,27 +52,11 @@ keywords:
 
 <ImgLang img='rt-notification-grouping.png' desc='通知のグループ化' />
 
-通知リストは、**_タイトル_**、**_プロジェクト_**、**_アプリケーション_**に並べ替えることができます。グループ化を解除するには、**_タイムライン_**ボタンを選択します。
+通知リストは、<Cmdname sid="title" className="uitext" />、<Cmdname sid="project" className="uitext" />、<Cmdname sid="application" className="uitext" />に並べ替えることができます。グループ化を解除するには、<Cmdname sid="timeline" className="uitext" />ボタンを選択します。
 
 :::note
 
 通知が発生した場合、サウンドをオンまたはオフにするには![音アイコン](/img/ico-noti-sound.svg)ボタンを選択します。
-
-:::
-
-## 通知リストから除外する
-
-リアルタイム通知リストの一部を除外できます。 
-
-1. 除外する通知を検索またはフィルタリングしてリストに表示するようにします。 
-
-2. 画面右上の**_イベント一括処理_**ボタンを選択します。
-
-3. メッセージウィンドウが表示されたら、**_適用_**ボタンを選択します。
-
-:::note
-
-タスクが完了するのには、30秒から1分かかります。
 
 :::
 
@@ -78,11 +72,11 @@ keywords:
 
 通知一覧の各項目の右端の![詳細アイコン](/img/ico-more.svg)ボタンを選択して、次の追加機能にアクセスします。
 
-- **詳細**：通知の詳細とステータスを確認できるプロジェクトのメニューに移動します。
+- <Cmdname sid="detail" className="uitext" />：通知の詳細とステータスを確認できるプロジェクトのメニューに移動します。
 
-- **_イベント履歴_**：この通知のイベントメッセージを確認できるプロジェクト**_イベント履歴_**メニューに移動します。
+- <Cmdname sid="event_history" className="uitext" />：この通知のイベントメッセージを確認できるプロジェクト<Cmdname sid="side_eventHistory" className="uitext" />メニューに移動します。
 
-- **_受信設定_**：通知の受信設定ができる**_イベント受信設定_**メニューに移動します。**_イベント受信設定_**の詳細については、次の文書を参照にしてください。
+- <Cmdname sid="receive_settings" className="uitext" />：通知の受信設定ができる<Cmdname sid="side_eventNoti" className="uitext" />メニューに移動します。<Cmdname sid="side_eventNoti" className="uitext" />の詳細については、次の文書を参照にしてください。
 
   <details>
   <summary>製品別文書</summary>
@@ -99,7 +93,7 @@ keywords:
 
   </details>
 
-- **_通知ポリシー_**：警告通知を設定できるプロジェクトの**_イベント設定_**メニューに移動します。**_イベント設定_**の詳細については、次の文書を参照にしてください。
+- <Cmdname sid="sms_alert_rules" className="uitext" />：警告通知を設定できるプロジェクトの<Cmdname sid="side_eventSetting" className="uitext" />メニューに移動します。<Cmdname sid="side_eventSetting" className="uitext" />の詳細については、次の文書を参照にしてください。
 
   <details>
   <summary>製品別文書</summary>
@@ -116,3 +110,9 @@ keywords:
   - Oracle Cloud Monitor > [メトリクスアラート](../oracle-cloud/metric-warning-notice)
 
   </details>
+
+:::note
+
+イベントの種類によって使用できる追加機能は異なる場合があります。
+
+:::

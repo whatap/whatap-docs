@@ -6,7 +6,7 @@
 
 - 各テーブルスペースの全体サイズ、使用サイズ、使用比率を詳細に提供します。
 
-<Xclude product="altibase">
+<Xclude product="altibase,tibero">
 
 - 上位50セグメントのサイズを確認できます。
 
@@ -14,7 +14,7 @@
 
 テーブルスペースの使用状況をリアルタイムでモニタリングすることで、使用量を確認し、適切な容量管理ができます。使用量の高いテーブルスペースとセグメントを追跡し、容量管理と性能最適化のための措置を取ってください。また、テーブルスペースの過剰使用を事前に感知して対応できます。
 
-<Xclude product="altibase">
+<Xclude product="altibase,tibero">
 
 ## 使用する前に
 
@@ -91,7 +91,9 @@ Altibaseモニタリングでは、他のDBMSとは異なり、メモリテー�
 
 <Cmdname sid="table_space" className="uitext" />セクションでは、時間帯ごとにテーブルスペースの全体のサイズと使用量の変化を視覚的に確認できます。
 
-<InDoc product="oracle,oracle-pro,cubrid"><ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" /></InDoc>
+<InDoc product="oracle,oracle-pro"><ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" /></InDoc>
+
+<InDoc product="tibero"><ImgLang img="db-stat-table-space-check-trend-tibero.png" desc="Tablespace size" /></InDoc>
 
 <InDoc product="altibase"><ImgLang img="db-stat-table-space-check-trend-altibase.png" desc="Tablespace size" /></InDoc>
 
@@ -101,9 +103,11 @@ Altibaseモニタリングでは、他のDBMSとは異なり、メモリテー�
 
 <Cmdname sid="table_space_detail" className="uitext" />セクションでは、各テーブルスペースの詳細を提供します。
 
-<InDoc product="oracle,oracle-pro,cubrid">
+<InDoc product="oracle,oracle-pro"><ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" /></InDoc>
 
-<ImgLang img="db-stat-table-space-size-details-oracle-pro.png" desc="Tablespace size" />
+<InDoc product="tibero"><ImgLang img="db-stat-table-space-size-details-tibero.png" desc="Tablespace size" /></InDoc>
+
+<InDoc product="oracle,oracle-pro,tibero">
 
 最初に照会した時間と現在の時間を比較して、各テーブルスペースの使用量の変化を確認できます。テーブルスペースの詳細を確認するには、テーブルスペース名の横にある![矢印アイコン](/img/ic-caret-right.svg) ボタンを選択してください。
 
@@ -155,7 +159,7 @@ Altibaseでは、データファイル単位の`USED`と`USAGE`情報を提供�
 
 </InDoc>
 
-<Xclude product="altibase">
+<Xclude product="altibase,tibero">
 
 ## セグメントサイズの確認{#TTL08164}
 

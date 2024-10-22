@@ -21,7 +21,7 @@ import TabItem from '@theme/TabItem';
 
 <ImgLang img='server-install-lx-unx.png' desc='サーバーモニタリングLinux Unix'/>
 
-<Cmdname sid="side_agentInstall" className="uitext" />画面で希望するOSを選択し、プロジェクトのアクセスキーを確認したら、次の案内通りにインストールを進めてください。
+<Cmdname sid="side_agentInstall" className="uitext" />画面から対象OSを選択し、プロジェクトのアクセスキーを確認した後、次のようにインストールします。
 
 1. WhaTap **リポジトリ**を登録します。  
 
@@ -33,7 +33,7 @@ import TabItem from '@theme/TabItem';
 
 2. 次のコマンドを使用して**パッケージ**をインストールしてください。
 
-   <Cmdname sid="server_installAgent_installPackages" className="uitext" />タブで適切なコマンドをコピーして入力します。
+   <Cmdname sid="server_installAgent_installPackages" className="uitext" />タブでコマンドをコピーして入力します。
 
    ```bash title=SH
    pkg install whatap-infra.txz
@@ -41,7 +41,7 @@ import TabItem from '@theme/TabItem';
 
 3. **設定スクリプト**を実行してください。
 
-   <Cmdname sid="server_installAgent_startMonitoring" className="uitext" />タブに移動してコマンドを発行するか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加してください。
+   <Cmdname sid="server_installAgent_startMonitoring" className="uitext" />タブに移動してコマンドを作成してコピーするか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加して実行します。
 
    ```bash
    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/infra/conf/whatap.conf
@@ -71,7 +71,9 @@ import Svlfcpf from "../../common-items/_sv-lf-cpf.mdx";
 
 :::note 
 
-AIX 6.1バージョン以降に対応します。
+- AIX 6.1バージョン以降に対応します。
+
+- WhaTap AIXエージェント1.3.3 以下のバージョンをインストールする際、追加オプションの設定が必要です。 [次の文書](#install-aix-precaution)を参照してください。 
 
 :::
 
@@ -91,13 +93,13 @@ AIX 6.1バージョン以降に対応します。
 
 :::note 
 
-サーバーセキュリティのために**インストールファイル**はダウンロード形式でのみ提供します。
+サーバーセキュリティのため、**インストーラー**はダウンロードでのみ提供します。
 
 :::
 
 ### エージェント実行
 
-次のコマンドを実行して、サーバーモニタリングを開始してください。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集し始めます。 
+次のコマンドを実行して、サーバーモニタリングを開始します。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集します。 
 
 ```bash
 echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
@@ -107,11 +109,27 @@ stopsrc -s whatap-infra
 startsrc -s whatap-infra
 ```
 
+### 注意事項 {#install-aix-precaution}
+
+WhaTap AIXエージェント1.3.3以下のバージョンをインストールする際、次のような追加オプションの設定が必要です。 
+
+1. **_サーバーリスト_**メニューで**_カラム設定_**ボタンを選択した後、サーバー情報の**_OID_**項目を有効にします。
+
+2. **_サーバーリスト_**で対象サーバーの**_OID_**コラム情報を確認します。 
+
+3. 次のようにOID固定オプションを追加します。 
+
+   ```bash
+   echo "oid=[サーバーのoid]" >> /usr/whatap/infra/conf/whatap.conf
+   ```
+
 ## Oracle Solaris
 
 :::note 
 
-Oracle Solaris 11.2バージョン以降から対応します。
+- Oracle Solaris 11.2バージョン以降から対応します。
+
+- WhaTap Oracle Solarisエージェント1.3.3以下のバージョンをインストールする際、追加オプションの設定が必要です。 [次の文書](#install-oracle-solaris-precaution)を参照してください。 
 
 :::
 
@@ -140,11 +158,118 @@ Oracle Solaris 11.2バージョン以降から対応します。
 
 ### エージェント実行
 
-次のコマンドを実行して、サーバーモニタリングを開始してください。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集し始めます。 
+次のコマンドを実行して、サーバーモニタリングを開始します。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集します。 
 
 ```bash
 echo "license=x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g" |tee /usr/whatap/infra/conf/whatap.conf
 echo "whatap.server.host=127.0.0.1" |tee -a /usr/whatap/infra/conf/whatap.conf
 echo "createdtime=`date +%s%S`" |tee -a /usr/whatap/infra/conf/whatap.conf
 /etc/init.d/whatap-infra start
+```
+
+### 注意事項 {#install-oracle-solaris-precaution}
+
+WhaTap Oracle Solarisエージェント1.3.3以下のバージョンをインストールする際、次のような追加オプションの設定が必要です。 
+
+1. **_サーバーリスト_**メニューで**_カラム設定_**ボタンを選択した後、サーバー情報の**_OID_**項目を有効にします。
+
+2. **_サーバーリスト_**で対象サーバーの**_OID_**コラム情報を確認します。 
+
+3. 次のようにOID固定オプションを追加します。 
+
+   ```bash
+   echo "oid=[サーバーのoid]" >> /usr/whatap/infra/conf/whatap.conf
+   ```
+
+:::note 
+
+**Oracle Enterprise Edition駆動サーバー**
+
+Oracle Enterprise Editionが駆動中のサーバーにインストールする場合は、次を参照してプロセスの収集オプションを無効にします。 
+
+```bash
+echo "task_proc=false" >> /usr/whatap/infra/conf/whatap.conf 
+/etc/init.d/whatap-infra restart
+```
+
+:::
+
+### エージェントの障害処理
+
+Oracle SolarisエージェントでNo Dataが誤って検知された場合の処理方法を次のようにご案内します。 
+
+#### OIDの設定確認
+
+`/usr/whatap/infra/conf/whatap.conf`ファイルで`oid`オプションが設定されていることを確認します。
+
+- エージェントバージョン1.3.3以下では、OIDを手動で設定する必要があります。 設定方法は、[次の文書](#install-oracle-solaris-precaution)を参照してください。
+
+- エージェントバージョン1.3.4以降では、OIDが自動的に設定されます。
+
+#### エージェントバージョンが1.3.3以下であり、Oracle Enterprise Editionを使用する時
+
+Oracle Enterprise Editionが駆動中のサーバーでは、プロセスの情報収集はサポートされていません。
+
+1. `/usr/whatap/infra/conf/whatap.conf`ファイルに`task_proc=false`オプションが設定されていることを確認します。
+
+2. もし設定されていない場合は、次のコマンドを実行してオプションを設定した後、エージェントを再起動します。 
+
+   ```bash
+   echo "task_proc=false" >> /usr/whatap/infra/conf/whatap.conf 
+   /etc/init.d/whatap-infra restart
+   ```
+
+このプロセスを通じてプロセスの収集オプションが無効になり、Oracle Enterprise Editionが駆動される環境でのエージェントの動作を保証します。
+
+## HP-UX
+
+:::note 
+
+- HP-UX Itanium 11.23バージョン以降から対応します。 
+
+- HP PA-RISC-UX 11.23バージョン以降から対応します。 
+
+:::
+
+新規作成したサーバーモニタリングプロジェクトを選択すると、<Cmdname sid="side_agentInstall" className="uitext" />画面が表示されます。 プロジェクト<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューを通じても可能です。
+
+<ImgLang img='server-install-hp-ux.png' desc='サーバーモニタリング HP-UX'/>
+
+<Cmdname sid="side_agentInstall" className="uitext" />メニューのオペレーティングシステムの選択画面で***HP-UX***を選択します。 ユーザーのHP-UXサーバーアーキテクチャに従って、上部のタブで ***IA64***または***PA-RISC***の中から選択した後、プロジェクトアクセスキーを確認します。 そして、次の案内通りにインストールを進めます。
+
+<Tabs>
+<TabItem value="ia64" label="IA64" default>
+
+1. <Cmdname sid="TTL07853" className="uitext" />タブで*whatap_infra.zip*ボタンを選択して、エージェントのインストールファイルをダウンロードします。
+
+2. <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" />タブに移動し、次の実行コマンドを確認してから、パッケージを実行します。
+
+   ```bash
+   gunzip -c whatap-infra.latest.ia64.tar.gz	 | tar xvf -
+   ./whatap-infra/install.sh x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g 127.0.0.1
+   ```
+
+</TabItem>
+
+<TabItem value="parisc" label="PA-RISC">
+
+1. <Cmdname sid="TTL07853" className="uitext" />タブで*whatap_infra.zip*ボタンを選択して、エージェントのインストールファイルをダウンロードします。
+
+2. <Cmdname sid="server_installAgent_aix_runSetup" className="uitext" />タブに移動し、次の実行コマンドを確認してから、パッケージを実行します。
+
+   ```bash
+   gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
+   ./whatap-infra/install.sh x4t2322hcqshs-x1q9rv0b9rjvs6-x4jnrqfl5ce5g 127.0.0.1
+   ```
+
+</TabItem>
+
+</Tabs>
+
+### エージェント実行
+
+次のコマンドを実行して、サーバーモニタリングを開始します。 アプリケーションサーバーが実行されると、エージェントがモニタリング情報を収集します。 
+
+```bash
+/sbin/init.d/whatap-infra start
 ```

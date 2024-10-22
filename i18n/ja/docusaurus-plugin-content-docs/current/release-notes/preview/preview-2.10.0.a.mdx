@@ -1,0 +1,97 @@
+---
+id: preview-2_10_0x
+title: Preview 2.10.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験できます。 
+
+:::
+
+## Preview 2.10.0.a1
+
+2024年09月26日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューの<Cmdname sid="TTL06656" className="uitext" />で<UI>Webhook JSON</UI>入力フィールドの内容を最新化
+
+  - `uuid`、`okind`、`onode`キーを追加
+
+  - **Server**製品の場合、`serverAlertPolicyName`キーを追加
+
+  :::note
+
+  <Cmdname sid="TTL06656" className="uitext" />についての詳細は、[次の文書](../../java/set-receive-event#add3rdparty)を参照してください。
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボードがない場合、または一覧の読み込み中に表示される案内メッセージの縦ソートを中央に変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="sms_alert_status" className="uitext" />一覧でイベント項目の比較時間が更新されない問題を修正
+
+---
+
+### `Kubernetes`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />メニューでスタイルバグを修正：テキストのテーマエラー、オプション領域の割れ現象
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />メニューで過去の時間を照会すると、ノードデータが正常に表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />メニューでしきい値を設定中に不要なNormal設定を削除
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='0'>Fixed</Status>サイドメニューで<Cmdname sid="side_logViewer" className="uitext" />、<Cmdname sid="side_fileLogAlert" className="uitext" />メニューを削除して<Cmdname sid="sitemap" className="uitext" />で確認できるように修正
+
+- <Status priority='0'>Fixed</Status>タイムセレクタで時間単位制限がある場合、日本語のメッセージ表記のミスを修正
+
+  > 選択できる最大時間は3<b>時</b>です。 → 選択できる最大時間は3<b>時間</b>です。
+
+#### Oracle <code className="my">V2</code>、Oracle Pro
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />メニューで<b>event#</b>カラムの名前を<UI>event</UI>に修正
+
+---
+
+### `Log`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_logExplorer" className="uitext" />メニューでキーワードとマッチングされるタグ値について、候補リストをフィルタリングするように修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_logExplorer" className="uitext" />メニューのフィルター入力ウィンドウに値を入力した状態で、リストが更新されるとフィルタリングが解除される問題を修正
+
+</div>
+
+## Preview 2.10.0.a0
+
+2024年09月13日
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='0'>Fixed</Status> <UI>HP-UX</UI>オペレーティングシステム環境におけるエージェントのインストール内容で、タイプミスとリンクエラーを修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューでユーザー定義フィールドに入力した値が断続的に保存されない問題を修正
+
+- <Status priority='1'>Deprecated</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューの<Cmdname sid="BTN06441" className="uitext" />機能のうちソートオプションを削除
+
+---
+
+### `Database`
+
+<Status priority='0'>Fixed</Status>**CUBRID**<code className="my">V2</code>プロジェクトの<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューでホワイトアウト現象が発生する問題を修正
+
+</div>

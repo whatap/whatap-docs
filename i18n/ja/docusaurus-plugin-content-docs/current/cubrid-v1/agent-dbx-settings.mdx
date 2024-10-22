@@ -1,0 +1,76 @@
+---
+id: agent-dbx-settings
+title: DBXエージェントの設定
+description: whatap.confファイルで設定できるオプションについて説明します。
+keywords:
+  - CUBRID
+  - データベースモニタリング
+  - DBXエージェント
+---
+
+DBXエージェントに必要な設定は、*whatap.conf*ファイルに作成されます。 設定できるオプションについては、次を参照してください。
+
+## 基本オプション
+
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
+
+## CUBRID専用オプション{#cubrid}
+
+- **db_port** <span class='type'>Int</span>
+
+  既定値`0`
+
+  アプリケーション接続情報に使用するブローカーのポート情報です。 ブローカー設定ファイル(*cubrid_broker.conf*)に`BROKER_PORT`項目に定義された値を入力してください。 (CUBRIDの既定値`BROKER_PORT: 33000`)
+
+- **cms_port** <span class='type'>Int</span>
+
+  既定値 `8001`
+
+  **CUBRID Manager**が使用するポートです。 **CUBRID Manager**設定ファイル(*cm.conf*)の`cm_port`項目に定義された値を入力してください。 モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
+
+- **cms_token_file** <span class='type'>String</span>
+
+  ユーザーが生成したDBが複数ある場合、WhaTapエージェントをDB数だけインストールして設定する必要があります。 この場合、エージェント間でトークンを共有するには、`cms_token_file`パスが必要です。 *`{エージェントインストールパス}`/cms_token*に設定してください。 
+
+  例) agent2をインストールした場合、agent1の`cms_token_file`パスを共有するために次のように設定してください。
+
+  ```ini title='whtap.conf'
+
+  cms_token_file=/agent1/cms_token
+
+  ```
+
+- **broker** <span class='type'>String</span>
+
+  既定値 `broker1`、`query_editor`
+
+  CUBRIDをインストールすると、デフォルトで`broker1`、`query_editor`でブローカーが実行されます。 ユーザーが任意にブローカーの名前を変更または、追加で移動を行った場合は、変更を入力してください。
+
+  :::note
+
+  `broker`オプションで設定する名前は、`cubrid broker status`コマンドで確認できます。
+
+  :::
+
+## データ収集
+
+import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
+
+<Dbagentsettingdatacollection />
+
+{/* AES 256 암호화 적용 */}
+import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
+
+<Dbaes256encrypt />
+
+## エージェント名の識別{#naming}
+
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
+
+<Dbsettingagentnamedetails />
+
+import Dbagentdbxnaming from "../common-items/_db-agent-dbx-naming.mdx";
+
+<Dbagentdbxnaming />

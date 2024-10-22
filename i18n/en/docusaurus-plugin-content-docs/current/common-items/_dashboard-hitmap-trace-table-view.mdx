@@ -74,7 +74,11 @@ In the <Cmdname sid="TTL06126" className="uitext" /> tab, you can see the transa
 
 - ![Download icon](/img/ico-download.svg) <UI>TXT</UI>: You can download basic transaction data and execution data for each section in a text file.
 
-- ![Download icon](/img/ico-download.svg) <UI>SQL</UI>: The basic transaction information and SQL execution data can be downloaded as a text file.
+- ![Download icon](/img/ico-download.svg) <UI>SQL</UI>: The basic transaction information and SQL execution data can be downloaded as a text file. <ScrollToLink anchor='downloadsql' />
+
+  - <Cmdname sid="ITM08351" className="uitext" />: It downloads the SQL statistics data after replacing the bind variable value ​​with its original one. If a security key (`paramkey`) is set, the security key input window appears. You must enter the security key for downloading. For more information about the agent configuration related to the security key, see [the following](agent-transaction#profile_http_parameter).
+
+  - <Cmdname sid="ITM08352" className="uitext" />: It downloads SQL statistics data without replacing the bind variable value.
 
 - ![Zoom in icon](/img/ic-outside.svg): You can see only the table list, with hiding the transaction summary and diagrams. If you select ![Zoon out icon](/img/ic-inside.svg), the hidden information reappears. This feature is useful when you have a long list of tables.
 

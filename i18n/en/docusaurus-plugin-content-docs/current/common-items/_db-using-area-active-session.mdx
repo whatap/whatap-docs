@@ -2,13 +2,13 @@
 
 Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of the screen, you can see the real-time active sessions. The following provides the guide for the button on the upper right of the table.
 
-<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle'>
+<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid'>
 
 - ![Stop icon](/img/ico-pause.svg): You can stop changing the data collected in real time. To restart it again, select ![Start icon](/img/ico-play-grey.svg).
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle'>
+<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid'>
 
 - ![Filter icon](/img/ico-filter.svg): Using the column header entries in the table, the list can be filtered.
 
@@ -18,7 +18,7 @@ Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of th
 
 - ![Column icon](/img/ico-column.svg): The column header entries in the table can be displayed or hidden.
 
-<InDoc product='postgresql,mysql,oracle-pro,oracle'>
+<InDoc product='postgresql,mysql,oracle-pro,oracle,altibase,cubrid'>
 
 - ![Session Kill icon](/img/ico-kill-session.svg): The active session can be stopped.
 
@@ -30,7 +30,7 @@ Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of th
 
 </InDoc>
 
-<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle'>
+<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid'>
 
 - ![Download icon](/img/ico-download.svg): You can download the content of the table as a CSV file.
 
@@ -38,7 +38,7 @@ Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of th
 
 </InDoc>
 
-<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle'>
+<InDoc product='oracle-v1,mssql,tibero,cubrid-v1'>
 
 - ![Filter icon](/img/ico-filter.svg): You can filter the list based on the column header entries in the table. After selecting the button, you can set the conditions in each header column such as <Cmdname sid="includes" className="uitext" />, <Cmdname sid="excludes" className="uitext" />, <Cmdname sid="equal" className="uitext" />, and <Cmdname sid="unequal" className="uitext" />.
 
@@ -50,11 +50,11 @@ Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of th
 
 - ![Download icon](/img/ico-download.svg): You can download the content of the table as a CSV file.
 
-#### Stopping an active session
+### Stopping an active session
 
 You can stop a session(s) that has been running for a long time.
 
-1. In the <Cmdname sid="active_sessions" className="uitext" /> list, move your mouse cursor to the item.
+1. In the <Cmdname sid="active_sessions" className="uitext" /> list, move your mouse cursor to the session to terminate.
 
 2. Select the ![Session kill icon](/img/ic-kill-session.svg) that appears on the utmost right.
 
@@ -72,7 +72,11 @@ The session is stopped.
 
 :::
 
-#### Zooming in the graph chart section
+</InDoc>
+
+<InDoc product="oracle-v1,cubrid-v1">
+
+### Zooming in the graph chart section
 
 <ImgLang img='db-common-folding-table.png' desc='Active session' />
 
@@ -80,4 +84,4 @@ If the current screen is small and difficult to see the widget, you can check th
 
 To zoom out the graph chart widget, select ![Up arrow icon](/img/ic-caret-up.svg) at the bottom of the <Cmdname sid="active_sessions" className="uitext" /> section.
 
-</Xclude>
+</InDoc>

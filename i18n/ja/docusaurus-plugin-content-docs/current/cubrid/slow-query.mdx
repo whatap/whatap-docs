@@ -1,0 +1,41 @@
+---
+id: slow-query
+title: スロークエリ
+description: 特定の時点で進行中だったセッションを特定し、低速クエリを分析します。
+keywords:
+  - CUBRID
+  - インスタンス
+  - ダッシューボード
+  - データベースモニタリング
+  - スロークエリ
+---
+
+{/* 개요 */}
+import Dbslowquerydesc from "../common-items/_db-slow-query-desc.mdx";
+
+<Dbslowquerydesc />
+
+## 始める前に
+
+<Cmdname sid="side_slowQueryLog" className="uitext" />メニューを利用するには*cubrid_broker.conf*ファイルに次のように設定する必要があります。
+
+```ini title="cubrid_broker.conf"
+SLOW_LOG=ON
+LONG_QUERY_TIME=3 
+```
+
+:::note
+
+モニタリング対象のDBサーバーにXCUBエージェントをインストールしないと、slow queryをモニタリングできません。 XCUBエージェントのインストールについての詳細は[次の文書](install-agent#setxcubagent)を参照してください。
+
+:::
+
+{/* 기본 화면 안내 */}
+import Dbslowquerybasic from "../common-items/_db-slow-query-basic.mdx";
+
+<Dbslowquerybasic />
+
+{/*쿼리 자세히 보기*/}
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+
+<Dbquerydetails level={2} />

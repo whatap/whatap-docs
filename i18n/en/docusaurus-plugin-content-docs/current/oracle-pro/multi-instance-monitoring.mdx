@@ -6,7 +6,7 @@ keywords:
   - Oracle Pro
   - Instance
   - Dashboard
-  - Database
+  - DATABASE
   - Monitoring Multiple Instances
 ---
 
@@ -42,6 +42,11 @@ import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.m
 
 <Apmdashboradeditwidget />
 
+{/* 사용자 정의 위젯 */}
+import CustomWidget from "../common-items/_db-mim-custom-widget.mdx";
+
+<CustomWidget />
+
 {/* 위젯 옵션 이용하기*/}
 import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
 
@@ -53,7 +58,7 @@ import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
 <Apmdashboardpreset />
 
 {/* 주요 위젯 알아보기*/}
-import WidgetDetails from "../common-items/_db-oracle-mim-chart-area.mdx";
+import WidgetDetails from "../common-items/_db-v2-mim-widgets.mdx";
 
 <WidgetDetails />
 
@@ -82,24 +87,20 @@ import Dbv2sessiondetailsinfo from "../common-items/_db-v2-session-details-info.
 {/*쿼리 자세히 보기*/}
 import Dbquerydetails from "../common-items/_db-query-details.mdx";
 
-<Dbquerydetails />
-
-### Filtering the table data
+<Dbquerydetails level={3} />
 
 import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
 
-<Dbtabledatafiltering />
-
-### Configuring the table columns{#change-column}
+<Dbtabledatafiltering level={3} />
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
-<Dbv2dataeditcolumn />
+<Dbv2dataeditcolumn level={3} />
 
 {/* 컬럼 정보 안내 */}
 import Oraclecolumn from "../common-items/_db_oracle-column.mdx";
 
-<Oraclecolumn />
+<Oraclecolumn level={3} />
 
 {/* 조회 목록 다운로드하기*/}
 import Dbdashboardsessiontabledownload from "../common-items/_db-dashboard-session-table-download.mdx";

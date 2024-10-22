@@ -1,0 +1,55 @@
+---
+id: container-map-target-info
+title: Target Information
+description: You can check the information of the target selected in the Kubernetes container map.
+keywords:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Target information
+---
+
+Select Home screem &gt; Select Project &gt; <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="containerMap" className="uitext" /> &gt; go to <Cmdname sid="BTN07712" className="uitext" /> > check the <b>target information list</b> on the left.
+
+<ImgLang img='k8s-container-detail.png' desc='Detailed view screen' />
+
+In the container view or pod view, a block represents each container or Pod. When you additionally select a target in the ![number 1](/img/number-01.png) **Summary information card**, you can see the information of the selected target in ![Leader line 2](/img/number-02.png) **Target information list** and ![number 3](/img/number-03.png) through the Detail tab. 
+
+:::note 
+
+If you select ***View Only Selected*** at the top of the ![Leader line 2](/img/number-02.png) **Target information list**, only the selected containers or Pods appear as follows: 
+
+<ImgLang img='k8s-container-detail-list-selected.png' desc='View only selected' />
+
+:::
+
+After selecting a block, you can check detailed target information such as the node on which the selected container or pod is running, the affiliated namespace and object manifest through the ![Leader line 2](/img/number-02.png) **Target information list** within <Cmdname sid="BTN07712" className="uitext" /> or go to the list menu as shown under ![Director a](/img/char-a.svg). 
+
+import TargetInfo from "../common-items/_import_k8s-container-map-target-resource-info.mdx";
+
+<TargetInfo />
+
+### Container summary analysis and Pod summary analysis {#kube-resource-summary-analysis}
+
+<Cmdname sid="TTL08230" className="uitext" /> and <Cmdname sid="TTL08317" className="uitext" type="kube_pod"/> provides analysis reports on the performance and resources for each container and Pod in the Kubernetes environment. You can monitor the resource allocation and usage for containers and Pods in the clusters and namespaces in real time and respond effectively by referencing the suggestions of the reports.
+
+:::note 
+
+Currently, each summary analysis is available only in Korean. 
+
+:::
+
+#### Container summary analysis {#container-summary-analysis}
+
+- Basic information: It provides information about the container's startup time, restart count, and the affiliated Pod and namespace.
+
+- Container image: You can see how many containers are using the same container image as the one in use, and their total resource usage.
+
+- Node Information: It provides hardware information about the node where the container is running, such as OS, IP address, number of CPU cores, and memory size.
+
+- Resource usage: It provides the CPU and memory usage of the container and their utilization compared to the configured limit and request values.
+
+#### Pod summary analysis {#pod-summary-analysis}
+
+import PodSummary from "../common-items/_import_k8s-pod-summary-analysis.mdx";
+
+<PodSummary />

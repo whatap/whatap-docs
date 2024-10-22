@@ -6,12 +6,48 @@ displayed_sidebar: mssqlSidebar
 hide_table_of_contents: false
 keywords:
   - SQL Server
-  - Database Monitoring
-  - Database
+  - DATABASE
   - Monitoring
   - DBX
 ---
 
-import Dbmonitoringintro from "../common-items/_db-monitoring-intro.mdx";
+import CommonCont from '../common-items/_import_db-specification-common.mdx';
+import Dbspecification from "../common-items/_db-specification.mdx";
+import Dbintroductiondesc from "../common-items/_db-introduction-desc.mdx";
 
-<Dbmonitoringintro />
+<Dbintroductiondesc />
+
+## Features
+
+<CommonCont />
+
+<Dbspecification />
+
+## Supported functions
+
+The following are available features. To compare with other products and supported features, see [the following](../support-env#compare-db).
+
+| Category   | Function type                    |        Supportable or not       |
+| ---------- | -------------------------------- | :-----------------------------: |
+| Monitoring | Instance List                    | <span class='emoji-ok'>✅</span> |
+| ^          | Instance Monitoring              | <span class='emoji-ok'>✅</span> |
+| ^          | Multi Database (tenant) function | <span class='emoji-ok'>✅</span> |
+| ^          | Slow Query                       | <span class='emoji-no'>❌</span> |
+| Analysis   | Trends                           | <span class='emoji-ok'>✅</span> |
+| ^          | Trends Compare                   | <span class='emoji-ok'>✅</span> |
+| ^          | Lock Tree                        | <span class='emoji-ok'>✅</span> |
+| ^          | Parallel Query Tree              | <span class='emoji-no'>❌</span> |
+| ^          | Dead Lock                        | <span class='emoji-no'>❌</span> |
+| ^          | DB Parameters                    | <span class='emoji-ok'>✅</span> |
+| Statistics | SQL Stat                         | <span class='emoji-ok'>✅</span> |
+| ^          | Table Size                       |        Scheduled support        |
+| ^          | Database (TableSpace) Size       |        Scheduled support        |
+| ^          | SGA Size                         | <span class='emoji-no'>❌</span> |
+| Report     | Daily/Weekly/Monthly Report      | <span class='emoji-ok'>✅</span> |
+| Event      | Event List                       | <span class='emoji-ok'>✅</span> |
+| ^          | Event Stat                       | <span class='emoji-ok'>✅</span> |
+| ^          | Event Setting                    | <span class='emoji-ok'>✅</span> |
+| ^          | Notification                     | <span class='emoji-ok'>✅</span> |
+| Management | Agent Setup                      | <span class='emoji-ok'>✅</span> |
+| ^          | Agent List                       | <span class='emoji-ok'>✅</span> |
+| ^          | Project Management               | <span class='emoji-ok'>✅</span> |

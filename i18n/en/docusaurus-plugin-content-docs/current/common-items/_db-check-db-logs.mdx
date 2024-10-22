@@ -1,5 +1,7 @@
 ## Checking the logs
 
+<Xclude product="mssql">
+
 - _dbx.log_
 
   All logs related to the agent startup and collection can be found in _`$WHATAP_HOME`/logs/dbx.log_ path. If the size of the _dbx.log_ file exceeds 25 MB, it is backed up with the file name of _dbx.log.[n]_. To clean up files, delete the files starting from the greatest (old) number.
@@ -7,3 +9,11 @@
 - _xos.log_
 
   The logs related to the startup of XOS are recorded in _`$XOS installation path`/xos`yymmdd`.log_ file. The logs are created by date.
+
+</Xclude>
+
+<InDoc product="mssql">
+
+All logs related to the agent startup and collection can be found in _`$WHATAP_HOME`/logs/dbx.log_ path. If the size of the _dbx.log_ file exceeds 25 MB, it is backed up with the file name of _dbx.log.[n]_. To clean up files, delete the files starting from the greatest (old) number.
+
+</InDoc>

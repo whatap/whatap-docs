@@ -1,0 +1,85 @@
+## Custom widget {#customwidget}
+
+The custom widget feature allows users to add their own metrics in addition to the metrics provided by default on the dashboard. If you have metrics to continuously monitor on the dashboard in addition to the metrics provided by default, use the custom widget feature.
+
+### Add
+
+1. Right-click an empty space on the dashboard.
+
+2. On the pop-up menu, select <Cmdname sid="BTN08346" className="uitext" />.
+
+3. If <UI>Custom Widget</UI> is created on the dashboard, select <Cmdname sid="CNT08130" className="uitext" />.
+
+   <ImgLang img="db-add-custom-widget.png" desc="Custom widget" />
+
+4. When the <Cmdname sid="BTN08346" className="uitext" /> window appears on the right of the screen, enter the widget name in <Cmdname sid="title" className="uitext" />.
+
+   <ImgLang img="db-add-custom-widget-setting.png" desc="Custom widget" />
+
+5. In the metrics list at the bottom of the screen, select the ![Add icon](/img/ico-add.svg) button on the upper right of the metric to add.
+
+6. After the metric has been changed, select <Cmdname sid="save" className="uitext" />.
+
+:::note
+
+- You can add one or more metrics. To add metrics, select ![Add icon](/img/ico-add.svg).
+
+- Ti change the metric, select a different metric in the metrics list. If you select ![Add icon](/img/ico-add.svg), the metric is added.
+
+- If you do not enter the widget title, it is saved as a custom widget.
+
+:::
+
+### Selecting the chart type
+
+In <Cmdname sid="TTL08259" className="uitext" /> of the <Cmdname sid="BTN08346" className="uitext" /> window, you can select the following types.
+
+- ![Graph icon](/img/ico-normal-graph.svg) <Cmdname sid="series" className="uitext" />: Time series chart that displays the metric changes over time.
+
+- ![Graph icon](/img/ic-equalizer-chart.svg) <Cmdname sid="equalizer" className="uitext" />: Bar graph chart that can compare the performance for multiple metrics. By visually displaying various metrics on one screen, you can easily see the overall performance status.
+
+- ![Graph icon](/img/ic-pie-chart.svg) <Cmdname sid="pie" className="uitext" />: Pie chart useful for checking the composition ratio for multiple metrics relative to the whole.
+
+- ![Text icon](/img/ic-text-widget.svg) <Cmdname sid="text" className="uitext" />: It displays the figures for the metrics in text.
+
+### Selecting the data merging method
+
+In <Cmdname sid="TTL08348" className="uitext" /> of the <Cmdname sid="BTN08346" className="uitext" /> window, you can select the way to display metrics collected from agents.
+
+- <Cmdname sid="merge_sum" className="uitext" />: It sums up the metric values ​​collected from multiple agents and displays them as a single value. This option is useful for displaying the overall total by merging data from multiple agents.
+
+- <Cmdname sid="merge_avg" className="uitext" />: It averages the metric values ​​collected from multiple agents and displays them as a single value. This option is useful for checking the average performance or status of all agents.
+
+- <Cmdname sid="merge_max" className="uitext" />: By selecting the largest value among the metric values ​​collected from multiple agents, it displays a single value. This option is useful for identifying the highest performance consumption or worst performance cases among agents.
+
+- <Cmdname sid="BTN08359" className="uitext" />: It displays the metrics for each agent.
+
+:::note
+
+The available merge method may differ depending on the chart type.
+
+:::
+
+### Changing a metric
+
+You can change or add metrics for the metrics added to the custom widget.
+
+1. Select ![Configuration icon](/img/ico-setting.svg) on the upper right of the custom widget added on the dashboard.
+
+2. When the <Cmdname sid="BTN08346" className="uitext" /> window appears on the right of the screen, select a metric to change.
+
+   <ImgLang img="db-add-custom-widget-setting-change.png" desc="Custom widget" />
+
+3. Select a metric to change from the metric list at the bottom of the screen. To add a metric, select ![Add icon](/img/ico-add.svg) on the upper right of the metric to add. 
+
+4. After the metric has been changed, select <Cmdname sid="save" className="uitext" />.
+
+:::tip
+
+The features of the icon buttons in the list for added or changed metrics are as follows:
+
+- ![Delete icon](/img/ico-trash.svg): You can exclude the metric from the custom widget.
+
+- ![Alert icon](/img/ic-alert.svg): You can set the alert for the metric. When the button is selected, the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> appears. For more information about the <Cmdname sid="metrics_event" className="uitext" /> setting, see [the following](metric-warning-notice).
+
+:::

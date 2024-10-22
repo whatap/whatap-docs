@@ -5,55 +5,38 @@ description: データベースのモニタリングを開始する前に、対�
 keywords:
   - Tibero
   - データベース
-  - データベースモニタリング
+  - サポート環境
 ---
 
-import Dbtypeofsupportdb from "../common-items/_db-type-of-support-db.mdx";
+import Desc from '../common-items/_import_db-support-env-desc.mdx';
 
-<Dbtypeofsupportdb />
+<Desc name='Tibero' />
 
 ### データベース対応バージョン
 
-Tibero 5.xバージョン以降
+Tibero 5.xバージョン以降をサポートします。
 
-### 対応機能
+import DBsupportNote from "../common-items/_db-support-env-common.mdx";
 
-| カテゴリ       | データベース                          |              Tibero             |
-| ---------- | ------------------------------- | :-----------------------------: |
-| Monitoring | Instance List                   | <span class='emoji-ok'>✅</span> |
-| ^          | Instancs Monitoring             | <span class='emoji-ok'>✅</span> |
-| ^          | Multi DataBase (tenant)         | <span class='emoji-no'>❌</span> |
-| ^          | Slow Query                      | <span class='emoji-no'>❌</span> |
-| Analysis   | Trends                          | <span class='emoji-ok'>✅</span> |
-| ^          | Trends Compare                  | <span class='emoji-ok'>✅</span> |
-| ^          | Lock Tree                       | <span class='emoji-ok'>✅</span> |
-| ^          | Parallel Query Tree             | <span class='emoji-ok'>✅</span> |
-| ^          | Dead Lock                       | <span class='emoji-no'>❌</span> |
-| ^          | DB Parameter                    | <span class='emoji-ok'>✅</span> |
-| Statistics | SQL Stat                        | <span class='emoji-ok'>✅</span> |
-| ^          | Table Size                      |              サポート予定             |
-| ^          | Database(TableSpace) Size       | <span class='emoji-ok'>✅</span> |
-| ^          | SGA Size                        | <span class='emoji-ok'>✅</span> |
-| Report     | Daily / Weekly / Monthly Report | <span class='emoji-ok'>✅</span> |
-| Event      | Event List                      | <span class='emoji-ok'>✅</span> |
-| ^          | Event Stat                      | <span class='emoji-ok'>✅</span> |
-| ^          | Event Setting                   | <span class='emoji-ok'>✅</span> |
-| ^          | Notification                    | <span class='emoji-ok'>✅</span> |
-| Management | Agent Setup                     | <span class='emoji-ok'>✅</span> |
-| ^          | Agent List                      | <span class='emoji-ok'>✅</span> |
-| ^          | Project Management              | <span class='emoji-ok'>✅</span> |
+<DBsupportNote />
 
-## 対応ブラウザー
+## エージェント構成
 
-import Supportedbrowser from "../getting-started/_supported-browser.mdx";
+import Dbsupportenvagentconstruction from "../common-items/_db-support-env-agent-construction.mdx";
 
-<Supportedbrowser />
+<Dbsupportenvagentconstruction />
 
 ## ファイアウォール
 
 import Proxy from "../getting-started/_proxy.mdx";
 
 <Proxy />
+
+## 対応ブラウザー
+
+import Supportedbrowser from "../getting-started/_supported-browser.mdx";
+
+<Supportedbrowser />
 
 ## モバイルアプリ
 

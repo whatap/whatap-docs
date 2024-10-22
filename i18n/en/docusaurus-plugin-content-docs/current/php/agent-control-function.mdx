@@ -68,3 +68,9 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
   Default `200`
 
   It can reduce the CPU load by increasing the interval between GC calls by the whatap-php service daemon. The memory usage increases instead of reducing the CPU load. It applied up to 1000.
+
+- **whatap.use_env_first** <span class='type'>Boolean</span> <code className="my">PHP agent v2.8.2 or later</code>
+
+  Default `false`
+
+  The priority of the agent configuration is that the _whatap.ini_ file is applied first, followed by the environment variables. To prioritize environment variables, set the `use_env_first` option to `true`. Alternatively, you can set the environment variable as `WHATAP_USE_ENV_FIRST=true`.

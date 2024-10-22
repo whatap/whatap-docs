@@ -1,4 +1,4 @@
-Home > Select Project > <Cmdname sid="side_reportStat" className="uitext" /> > <Cmdname sid="side_dbSqlStat" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />
 
 Statistics are created based on the SQL execution count, execution time, and waiting time within the active sessions collected by the agent, and a list of top SQLs for the search period is provided. It provides a basis for analyzing frequently performed SQL performance through the average and maximum execution time.
 
@@ -28,13 +28,35 @@ For quick performance analysis, you can search top SQLs for each frequently anal
 
 - **_elapse max (sec)_**: Maximum execution time (sec) of the SQL
 
-<Xclude product="mysql">
+<Xclude product="mysql,mssql,tibero">
 
 - **_elapse wait (sec)_**: Total waiting time (sec) of the SQL
 
 </Xclude>
 
+<InDoc product="altibase">
+
+- **_data page read_**: Number of cases data pages were physically read.
+
+- **_data page gets_**: Number of cases data pages were accessed for reading.
+
+- **_rebuild count_**: Number of rebuild operations.
+
+- **_memory table access count_**: Number of cases the memory table was accessed.
+
+- **_execute success count_**: Number of commands executed successfully.
+
+- **_user_**: User name connected to the database.
+
+- **_sql hash_**: Hash value of the query.
+
+</InDoc>
+
+<Xclude product="mssql,tibero,cubrid">
+
 - **_instance_**: Instance name
+
+</Xclude>
 
 <InDoc product="oracle,oracle-pro">
 

@@ -14,6 +14,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   If the number of active transactions (`active_tx_count`) exceeds 100, a warning (<span class="slow">Warning</span>) level notification is sent.
 
+- **_Apdex 100 by kind_**
+
+  Category: [`app_counter`](metrics-app#app_counter)
+
+  If the application performance metric percentage (`apdex100`) by agent type is less than 95%, a warning (<span class="slow">Warning</span>) level notification is sent, and if it is less than 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Apdex 100 by project_**
+
+  Category: [`app_counter`](metrics-app#app_counter)
+
+  If the application performance metric percentage (`apdex100`) for all agents in the project is less than 95%, a warning (<span class="slow">Warning</span>) level notification is sent, and if it is less than 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
 - **_Server CPU_**
 
   Category: [`app_host_resource`](metrics-app#app_host_resource)
@@ -204,6 +216,14 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   If the average response time (`resp_time`) for transactions continues to exceed 2,000 ms (2 seconds) for 10 consecutive times, a warning (<span class="slow">Warning</span>) level notification is sent.
 
+- **_kube-apiserver CPU Limit Alert_**
+
+  If the kube-apiserver's CPU utilization exceeds 50%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 80%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_kube-apiserver Memory Limit Alert_**
+
+  If the kube-apiserver's memory usage exceeds 50%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 80%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
 :::note
 
 For more information about the fields applied to the basic event templates, see [the following](metrics-kubernetes).
@@ -262,6 +282,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_CPU_**
+
+  Category: [`db_postgresql_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_postgresql_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
   Category: [`db_postgresql_counter`](metrics-data-list)
@@ -299,6 +331,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
   Category: [`db_oracle_counter`](metrics-data-list)
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_CPU_**
+
+  Category: [`db_oracle_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_oracle_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
 
 - **_Lock Wait Sessions_**
 
@@ -338,6 +382,12 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   If the CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_Connection Failed_**
+
+  Category: [`db_oracle_dma_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
   Category: [`db_oracle_dma_counter`](metrics-data-list)
@@ -366,19 +416,31 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 - **_Active Sessions_**
 
-  Category: `db_cubrid_counter`
+  Category: [`db_cubrid_counter`](metrics-data-list)
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_CPU_**
+
+  Category: [`db_cubrid_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_cubrid_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
-  Category: `db_cubrid_counter`
+  Category: [`db_cubrid_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
 - **_Memory_**
 
-  Category: `db_cubrid_counter`
+  Category: [`db_cubrid_counter`](metrics-data-list)
 
   If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
@@ -398,19 +460,31 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 - **_Active Sessions_**
 
-  Category: `db_tibero_counter`
+  Category: [`db_tibero_counter`](metrics-data-list)
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_CPU_**
+
+  Category: [`db_tibero_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_tibero_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
-  Category: `db_tibero_counter`
+  Category: [`db_tibero_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
 - **_Memory_**
 
-  Category: `db_tibero_counter`
+  Category: [`db_tibero_counter`](metrics-data-list)
 
   If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
@@ -430,25 +504,37 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 - **_Active Sessions_**
 
-  Category: `db_altibase_counter`
+  Category: [`db_altibase_counter`](metrics-data-list)
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_CPU_**
+
+  Category: [`db_altibase_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_altibase_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
-  Category: `db_altibase_counter`
+  Category: [`db_altibase_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
 - **_Memory_**
 
-  Category: `db_altibase_counter`
+  Category: [`db_altibase_counter`](metrics-data-list)
 
   If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
   :::note
 
-  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](after-install-agent#agent-architecture).
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](install-agent#apply-xos-agent).
 
   :::
 
@@ -462,27 +548,27 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 - **_Active Sessions_**
 
-  Category: [`db_mssql_counter`](metrics-mssql)
+  Category: [`db_mysql_counter`](metrics-data-list)
 
   If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
+- **_CPU_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If database connection fails 15 times or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
-  Category: [`db_mssql_counter`](metrics-mssql)
+  Category: [`db_mysql_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
-
-- **_Memory_**
-
-  Category: [`db_mssql_counter`](metrics-mssql)
-
-  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
-
-  :::note
-
-  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](after-install-agent#agent-architecture).
-
-  :::
 
 </InDoc>
 
@@ -491,6 +577,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
 <ImgLang img='event-config-v2-db-redis.png' desc='Event list' />
 
 The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_CPU Utilization_**
+
+  Category: [`db_redis_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_redis_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
 
 - **_Memory Utilization_**
 
@@ -529,6 +627,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
   Category: [`db_mongodb_counter`](metrics-data-list)
 
   If the number of client connections (`active$connections`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_CPU Utilization_**
+
+  Category: [`db_mongodb_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_mongodb_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
 
 - **_Global Lock Queue count_**
 

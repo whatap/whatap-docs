@@ -17,17 +17,17 @@ WhaTapアプリケーションモニタリングサービスのユーザーか�
 
 > Springbootのアップデート後、<Cmdname sid="AA005" className="uitext" />, <Cmdname sid="today_user" className="uitext" />, <Cmdname sid="today_tps" className="uitext" />ウィジェットの情報が<Cmdname sid="side_appDashboard" className="uitext" />メニューに表示されません。
 
-Springbootをアップデートした後に<Cmdname sid="side_appDashboard" className="uitext" />メニューに一部のウィジェットのデータが出力されない場合は、次の事項を確認してください。
+Springbootをアップデートした後に<Cmdname sid="side_appDashboard" className="uitext" />メニューで一部のウィジェットのデータが出力されない場合は、次の事項を確認します。
 
 - **エージェント設定**
 
-  次のオプションを設定してから、アプリケーションを再起動してください。
+  次のオプションを設定してから、アプリケーションを再起動します。
 
   ```ini title="whatap.conf"
   weaving=spring-boot-3.0
   ```
 
-- **Java17以降**を使う環境であれば、reflectionに関する次のオプションを追加してください。
+- **Java17以降**を使う環境であれば、reflectionに関する次のオプションを追加します。
 
   ```java
   --add-opens=java.base/java.lang=ALL-UNNAMED

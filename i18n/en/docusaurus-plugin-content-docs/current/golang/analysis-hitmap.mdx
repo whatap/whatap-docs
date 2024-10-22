@@ -1,12 +1,12 @@
 ---
 id: analysis-hitmap
-title: Hitmap
+title: HITMAP
 description: The following explains how to configure the detailed transaction profiling in the application. The transaction profiling allows you to collect and analyze the performance data for each transaction in the application, which can help improve the performance of the application.
 keywords:
   - Application
   - Go
   - Analysis
-  - Hitmap
+  - HITMAP
   - Transactions
 ---
 
@@ -76,6 +76,11 @@ import Dashboardhitmaptracetxlogkeyword from "../common-items/_dashboard-hitmap-
 
 ## Additional options
 
+{/* ### 연계 프로젝트 */}
+import LinkedProjectHitmap from "../common-items/_analysis-hitmap-linked-projects.mdx";
+
+<LinkedProjectHitmap />
+
 {/*### http 파라미터 조회*/}
 import Searchhttpparameter from "../common-items/_search-http-parameter.mdx";
 
@@ -85,3 +90,18 @@ import Searchhttpparameter from "../common-items/_search-http-parameter.mdx";
 import Searchtransactionparmeter from "../common-items/_search-transaction-parmeter.mdx";
 
 <Searchtransactionparmeter />
+
+{/* ### 컬럼 설정하기 */}
+import SelectColumn from "../common-items/_analysis-hitmap-set-column.mdx";
+
+<SelectColumn />
+
+{/* ### 조회 목록 필터링하기 */}
+import FilterResults from "../common-items/_analysis-hitmap-tx-list-filter.mdx";
+
+<FilterResults />
+
+{/* CSV 다운로드 */}
+import DownloadCSV from "../common-items/_analysis-hitmap-save-csv.mdx";
+
+<DownloadCSV />

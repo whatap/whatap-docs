@@ -8,41 +8,28 @@ keywords:
   - エージェント
 ---
 
-データベースモニタリングのインストールがすべて完了しました。インストール後に確認事項をチェックしてください。
+import V2Note from "../common-items/_import_v2-note.mdx";
 
-## エージェント実行
+<V2Note product="CUBRID" />
 
-データベースエージェントをインストールしたパスで、*start.sh*シェルスクリプトファイルまたは*start.bat*バッチファイルを実行します。エージェントを実行するとデータベースのモニタリング情報の収集が開始されます。エージェントログを確認し、エージェントが正常に起動されたことを確認します。
+データベースモニタリングのインストールを完了しました。次の項目をチェックして正しくインストールされているか確認してください。
 
-```bash title='start.sh'
-$ ./start.sh
+{/* 에이전트 설치 점검 */}
+import Dbcheckagentlog from "../common-items/_db-check-agent-log.mdx";
 
- _      ____       ______
-| | /| / / /  ___ /_  __/__ ____
-| |/ |/ / _ \/ _ `// / / _ `/ _ \
-|__/|__/_//_/\_,_//_/  \_,_/ .__/
-                          /_/
-Just Tap, Always Monitoring
-WhaTap DBX version 1.3.9 20181120
-```
+<Dbcheckagentlog />
 
-## エージェントプロセスの確認
+{/* 로그 확인하기 */}
+import Dbcheckdblogs from "../common-items/_db-check-db-logs.mdx";
 
-次のコマンドを使用して、動作中のWhaTap DBXエージェントプロセスを確認できます。
+<Dbcheckdblogs />
 
-```bash title='SH'
-$ ps –ef | grep dbx
-```
+{/* 에이전트 프로세스 확인하기 */}
+import Dbcheckagentprocess from "../common-items/_db-check-agent-process.mdx";
 
-## ログの確認
+<Dbcheckagentprocess />
 
-サービスを再起動時にログが正常に表示された場合は、エージェントが正常にインストールされていることを確認できます。エージェント登録後の収集に関するログは、_$WHATAP_HOME/logs_で確認できます。エージェントが正常に動作すると、その日に次のようなログファイルが確認できます。
+{/* 모니터링 확인하기 */}
+import Dbcheckmonitoringagentlists from "../common-items/_db-check-monitoring-agent-lists.mdx";
 
-- whatap-DBX-`OID`-`DATE`
-- whatap-boot-`DATE`.log
-
-## モニタリングの確認
-
-サーバーから正常にログがアップロードされたことを確認し、コンソールに正常に登録しているかどうかを確認するには、[WhaTapモニタリングサービス](https://service.whatap.io)の初期画面に移動してください。表示したいプロジェクトを選択し、画面の左側にある**_管理_** > **_エージェント一覧_**メニューを選択してください。**_エージェント一覧_**でデータベースサーバーの名前を確認することができます。データベースサーバーの名前を個別に設定して管理するには、[次の文書](agent-manage)を参照してください。
-
-<ImgLang img='db-check-monitoring-agent-lists.png' desc='データベースエージェントの一覧' />
+<Dbcheckmonitoringagentlists />

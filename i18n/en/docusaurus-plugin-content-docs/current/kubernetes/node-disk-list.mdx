@@ -10,7 +10,7 @@ keywords:
 toc_max_heading_level: 2
 ---
 
-Home > Select Project > <Cmdname sid="side_cluster" className="uitext" /> > <Cmdname sid="side_nodeDiskList" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDiskList" className="uitext" />
 
 :::note 
 
@@ -30,9 +30,13 @@ You can check the list of nodes existing in the cluster and the list of disks mo
 
 <ImgLang img='k8s-node-disk-list.png' desc='Node Disk List' />
 
+{/* 
+
 #### Sorting the node names
 
-When the disk lists belonging to the same node are listed consecutively, the node names (***OnodeName***) are merged for display. However, if continuity is broken due to sorting by other columns, the merge is also released. 
+When the disk lists belonging to the same node are listed consecutively, the node names (***OnodeName***) are merged for display. However, if continuity is broken due to sorting by other columns, the merge is also released.  
+
+*/}
 
 #### Hidden node disk
 
@@ -53,9 +57,43 @@ When the WhaTap Kubernetes agent runs, the lists of disks mounted on each node a
 import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
 
 <K8slistfilter />
-  
+
 ## Select Column
 
 import K8slistcl from "../common-items/_k8s-list-cl.mdx";
 
 <K8slistcl />
+
+## Comparing
+
+Through the <Cmdname sid="TTL08423" className="uitext" /> option, you can compare the disk usage. If you check in the <Cmdname sid="TTL08423" className="uitext" /> column of the node disk to view in the list, a window comparing the details of the disks appears on the right.
+
+<ImgLang img='k8s-node-disk-compare.png' desc='Compare Node disks' />
+
+For example, you can see the hourly usage and utilization for each disk through the ***UsedSpace*** and ***UsedPercent*** graphs. Using this, you can intuitively see the changes in disk usage over a specific time zone. You can also check detailed data such as maximum and minimum usage and increase/decrease rate for each disk through the detailed data list at the bottom. The columns are as follows: 
+
+- ***OnodeName***: It displays the name of the node to which the disk is connected.
+
+- ***DeviceId***: It indicates the device ID of the disk, which can be used to distinguish a specific device on the disk.
+
+- ***Max***: It displays the maximum usage and peak utilization of the disk recorded during the query period.
+
+- ***Min***: It displays the minimum disk usage and minimum utilization recorded during the query period.
+
+- ***First / Last***: You can see the change in usage through the first and last data collected during the query period.
+
+- ***Increase***: It displays the increase/decrease rate of disk usage during the selected period.
+
+- ***Increase(Per Day)***: This value is calculated for increase/decrease rate of the average daily usage during the query period, allowing you to check the disk usage change trend. This value is not displayed if the query period is less than one day.
+
+- ***PredictedSpace(N days later)***: This value predicts the expected usage after N days based on the average daily increase/decrease rate. This value is not displayed if the query period is less than one day.
+
+  > For example, if the query period is 7 days, it displays the expected usage after 7 days. 
+
+:::note 
+
+- By clicking ***AVG*** and ***MAX***, you can see the average usage and maximum usage for the query period.
+
+- By dragging <LinkImage img='hitmap-lr-drag.svg' alt='left or right drag icon' className='_drag' /> to the left or right, you can adjust the screen size.
+
+:::

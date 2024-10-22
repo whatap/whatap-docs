@@ -50,12 +50,14 @@ export default function CheckProduct() {
         product = '-mssql';
     } else if (cProdt === 'tibero') {
         product = '-tibero';
+    } else if (cProdt === 'cubrid-v1') {
+        product = '-cubrid-v1';
     } else if (cProdt === 'cubrid') {
         product = '-cubrid';
     } else if (cProdt === 'altibase') {
         product = '-altibase';
     } else if (cProdt === 'altibase-v1') {
-        product = '-altibase';
+        product = '-altibase-v1';
     } else if (cProdt === 'redis') {
         product = '-redis';
     } else if (cProdt === 'mongodb') {

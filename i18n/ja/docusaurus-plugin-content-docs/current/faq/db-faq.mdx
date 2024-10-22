@@ -15,9 +15,9 @@ WhaTapデータベースモニタリングサービスのユーザーからよ�
 
 ### Authentication plugin 'caching_sha2_password' cannot be loadedエラー
 
-> エージェントインストール後、DBに接続して*dbx.log*を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続できません。どうすれば良いでしょうか？
+> エージェントインストール後、DBに接続して*dbx.log*を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続ができない場合、どうすれば良いでしょうか？
 
-MySQL 8.0を使用する場合、MySql 8.0の基本認証プラグインが、`caching_sha2_password`である場合に発生する可能性があります。`caching_sha2_password`を使用するには、SSLで保護されたセキュリティ接続を使用するか、RSAセキュリティを使用した非暗号化接続を使用する必要があります。これらの問題を最も簡単に解決する方法は、パスワード生成時に、以前の`mysql_native_password`方式を使用することです。
+MySQL 8.0のデフォルト認証プラグインが、`caching_sha2_password`であるため発生する可能性があります。`caching_sha2_password`を使用するには、SSLで保護されたセキュリティ接続を使用するか、RSAセキュリティを使用した非暗号化接続を使用する必要があります。この問題を最も簡単に解決する方法は、パスワード生成時に、以前の`mysql_native_password`方式を使用することです。
 
 ```sql
 ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword';
@@ -36,7 +36,7 @@ ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword'
 
 > DBインスタンスにデータベースを追加で作成しましたが、WhaTapでモニタリングされません。どうすればいいですか？
 
-エージェントは、db情報を起動時と起動後、1日に1回収集します。エージェントが実行中の状態でdbを追加生成した場合、反映されない可能性があります。この場合は、エージェントを再起動してください。それでも問題が解決されない場合は、適切な権限がないことが原因である可能性があります。次のようにアクセス権限を付与してください。
+エージェントは、DB情報を起動するタイミングと起動後では1日1回収集します。エージェントが実行されているの状態にDBを追加で生成した場合、反映されない可能性があります。この場合は、エージェントを再起動してください。それでも問題が解決されない場合は、適切な権限がないことが原因である可能性があります。次のようにアクセス権限を付与してください。
 
 ```sql
 grant select on '追加したdb' to whatap;
@@ -63,7 +63,7 @@ show slave status ;
 
 ### インスタンスリストMが表示されない
 
-> インスタンスリストでMasterですが、**_M_**が表示されません。表示されないのはどうしてですか?
+> インスタンスリストでMasterですが、**_M_**が表示されません。表示されないのはなぜですか？
 
 Replicationで権限がない場合、情報が表示されないことがあります。モニタリングアカウントの権限を確認してください。 
 
@@ -112,7 +112,7 @@ metalock=1
 
 :::note
 
-メンバーのアクセス権限の体系の詳細については、[次の文書](../project/project-structure#project-auth)を参照してください。
+メンバーのアクセス権限については、[次の文書](../project/project-structure#project-auth)を参照してください。
 
 :::
 

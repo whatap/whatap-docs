@@ -1,6 +1,6 @@
-Home > Select Project > <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_dbLockTree" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
 
-<InDoc product='cubrid,postgresql,oracle,oracle-pro,oracle-v1'>
+<InDoc product='cubrid,postgresql,oracle,oracle-pro,oracle-v1,altibase,tibero'>
 
 This tool analyzes the trend of locks that occurred during the day. This function allows you to visually check the tree structure of the session that generated the lock (lock holder) and the session waiting for the lock (lock waiter). You can analyze the relationship between the holder and waiter of the lock that occurred at a specific time point.
 
@@ -16,8 +16,20 @@ This allows the database administrator to quickly identify and resolve lock-rela
 
 </InDoc>
 
-<Xclude product='cubrid,postgresql,oracle,oracle-pro,oracle-v1'>
+<Xclude product='cubrid,postgresql,oracle,oracle-pro,oracle-v1,altibase,mssql,tibero'>
 
 It provides the time series chart and lock tree for the locks occurred during the day. From the point where a lock first occurred, the structure of holders and waiters is displayed in a tree form. You can check the rock tree over time.
 
 </Xclude>
+
+<InDoc product="mssql">
+
+**SQL Server** is a useful tool to monitor the locking status occurring in the database in real time and check detailed information related to the lock of a session. This feature allows users to quickly identify locking issues that may cause database performance degradation and analyze its cause.
+
+The provided key features are as follows:
+
+- **Lock status visualization**: You can check the locks that occurred during the day in a visualized graph. This allows you to see the time zone and frequency of the locks occurred.
+
+- **Provision of session information**: It provides detailed information about the sessions that caused the lock in a table format. You can check information such as each session status, waiting time, waiting type, and SQL statement being executed.
+
+</InDoc>

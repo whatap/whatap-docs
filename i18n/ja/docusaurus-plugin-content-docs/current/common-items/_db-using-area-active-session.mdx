@@ -1,14 +1,14 @@
-## アクティブセッションのセクションを使用 {#using-activesessions}
+## アクティブセッションのセクションを活用 {#using-activesessions}
 
 画面の下にある<Cmdname sid="active_sessions" className="uitext" />セクションからリアルタイムで実行中のセッション情報を確認できます。ここでは、テーブルの右上にあるボタン機能を説明します。
 
-<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase'>
+<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid'>
 
 - ![停止アイコン](/img/ico-pause.svg)：リアルタイムで収集するデータの変更を停止することができます。再起動するには![スタートアイコン](/img/ico-play-grey.svg)ボタンをクリックしてください。
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase'>
+<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid'>
 
 - ![フィルターアイコン](/img/ico-filter.svg)：テーブルのカラムヘッダー項目に基づいて一覧をフィルタリングできます。
 
@@ -18,7 +18,7 @@
 
 - ![カラムアイコン](/img/ico-column.svg)：テーブル内のカラムヘッダー項目を表示または非表示にすることができます。
 
-<InDoc product='postgresql,mysql,oracle-pro,oracle,altibase'>
+<InDoc product='postgresql,mysql,oracle-pro,oracle,altibase,cubrid'>
 
 - ![セッションキルアイコン](/img/ico-kill-session.svg)：稼働中のセッションを停止できます。
 
@@ -30,7 +30,7 @@
 
 </InDoc>
 
-<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase'>
+<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid'>
 
 - ![ダウンロードアイコン](/img/ico-download.svg)：テーブルの内容をCSVファイルとしてダウンロードできます。
 
@@ -38,7 +38,7 @@
 
 </InDoc>
 
-<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase'>
+<InDoc product='oracle-v1,mssql,tibero,cubrid-v1'>
 
 - ![フィルターアイコン](/img/ico-filter.svg)：テーブルのカラムヘッダー項目を基準に一覧をフィルタリングできます。ボタンをクリックすると、各ヘッダーカラムで<Cmdname sid="includes" className="uitext" />、<Cmdname sid="excludes" className="uitext" />、<Cmdname sid="equal" className="uitext" />、<Cmdname sid="unequal" className="uitext" />の条件を設定できます。
 
@@ -50,15 +50,15 @@
 
 - ![ダウンロードアイコン](/img/ico-download.svg)：テーブルの内容をCSVファイルとしてダウンロードできます。
 
-#### 進行中のセッションの停止
+### 進行中のセッションの停止
 
 長期間進行中のセッションを停止することができます。
 
-1. <Cmdname sid="active_sessions" className="uitext" />一覧の項目にマウスカーソルを移動してください。
+1. <Cmdname sid="active_sessions" className="uitext" />一覧で停止するセッション項目にマウスカーソルを移動します。
 
 2. 右側に表示される![セッション中止アイコン](/img/ic-kill-session.svg) ボタンを選択してください。
 
-3. <Cmdname sid="session_kill" className="uitext" />ウィンドウが表示されたら、パスワードを入力してください。
+3. <Cmdname sid="session_kill" className="uitext" />画面が表示されたら、パスワードを入力します。
 
 4. <Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
@@ -72,7 +72,11 @@
 
 :::
 
-#### グラフチャートセクションを拡大する
+</InDoc>
+
+<InDoc product="oracle-v1,cubrid-v1">
+
+### グラフチャートセクションを拡大する
 
 <ImgLang img='db-common-folding-table.png' desc='アクティブセッション' />
 
@@ -80,4 +84,4 @@
 
 グラフチャートウィジェットセクションを縮小するには、画面下部に<Cmdname sid="active_sessions" className="uitext" />セクションの![上方向アイコン](/img/ic-caret-up.svg)ボタンを選択してください。
 
-</Xclude>
+</InDoc>

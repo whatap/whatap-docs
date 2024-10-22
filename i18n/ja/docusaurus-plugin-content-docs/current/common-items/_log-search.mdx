@@ -1,6 +1,7 @@
 import Logroleview from "../common-items/_log-role-view.mdx";
 import Loguimainterm from "../common-items/_log-ui-main-term.mdx";
 import Logagentoption from "../common-items/_log-agent-option.mdx";
+import LogCl from "../common-items/_log-table-cl-modify.mdx";
 
 <Logroleview />
 
@@ -16,7 +17,7 @@ import Logagentoption from "../common-items/_log-agent-option.mdx";
 
 </InDoc>
 
-<Cmdname sid="side_logSearch" className="uitext" />メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。複数の検索条件をパーシングされたキーとバリューで指定することができ、目的の条件に一致するログデータを抽出します。
+<Cmdname sid="side_logSearch" className="uitext" />メニューから収集された大量のログをさまざまな条件で検索し、ユーザーが必要なログを指定できます。複数の検索条件をパーシングされたキーとバリューで指定できるため、目的の条件に一致するログデータのみを抽出します。
 
 動的ページで取得したログデータは、設定された行単位で取得され、スクロールで画面の下まで移動すると自動的に次のデータが取得されて表示されます。<Loguimainterm />
 
@@ -38,13 +39,15 @@ import Logagentoption from "../common-items/_log-agent-option.mdx";
 
 - ![number-s](/img/number-03.png)ログテーブルの左上に検索されたログの総数を確認することができます。 
 
-- ログデータを時系列順と逆の順順で表示できます。![number-s](/img/number-03.png)ログテーブルの右上で、<Cmdname sid="past_order" className="uitext" />と<Cmdname sid="recent_order" className="uitext" />で目的の検索方法を選択してください。
+- ログデータを時間の順と逆順で照会できます。![number-s](/img/number-03.png)ログテーブルの右上の<Cmdname sid="past_order" className="uitext" />と<Cmdname sid="recent_order" className="uitext" />の中から照会方式を選択します。
 
-- 時間範囲を指定した後<Cmdname sid="apply" className="uitext" />ボタンをタップして照会時間を設定し、![検索アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />ボタンをタップしてデータを照会します。
+- 時間範囲を指定した後<Cmdname sid="apply" className="uitext" />ボタンを選択して照会時間を設定し、![検索アイコン](/img/ic-search-on-press.svg) <Cmdname sid="search" className="uitext" />ボタンを選択してデータを照会します。
 
-- ![number-s](/img/number-03.png)ログテーブル上段の右の <LinkImage img='ic-fullscreen.svg' desc='全画面表示アイコン'/> <Cmdname sid="TLT06869" className="uitext" />アイコンを選択すると、<Cmdname sid="log" className="uitext" />と<Cmdname sid="TTL06444" className="uitext" />を全画面で確認することができます。
+- ![number-s](/img/number-03.png)ログテーブルの右上の<LinkImage img='ic-fullscreen.svg' desc='全画面表示アイコン'/> <Cmdname sid="TLT06869" className="uitext" />アイコンを選択すると、<Cmdname sid="log" className="uitext" />と<Cmdname sid="TTL06444" className="uitext" />を全画面で確認できます。
 
 - <Logagentoption />
+
+  <LogCl />
 
 ## ログContentの確認
 
@@ -96,15 +99,15 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 - **検索**
 
-  <Cmdname sid="search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当タグが含まれる('==') 条件として入力されます。
+  <Cmdname sid="search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当のタグが含む('==')条件で入力されます。
 
 - **除外検索**
 
-  <Cmdname sid="exclusion_search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当タグが除外('==') 条件として入力されます。
+  <Cmdname sid="exclusion_search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当のタグが除外('!=')条件で入力されます。
 
 - **隣接ログ**
 
-  <Cmdname sid="TTL06582" className="uitext" />オプションを選択すると<Cmdname sid="TTL06582" className="uitext" />詳細ウィンドウが表示されます。選択したログのサーバーを対象に選択したログと隣接するタイムゾーンのログを表示します。<Cmdname sid="time_selector" className="uitext" />ボタンをクリックして、隣接するタイムゾーンのログを表示できます。 基本のログは青色で表示されます。
+  <Cmdname sid="TTL06582" className="uitext" />オプションを選択すると<Cmdname sid="TTL06582" className="uitext" />詳細画面が表示されます。選択したログのサーバーを対象に、選択したログとその前後の時間帯のログを表示します。<Cmdname sid="time_selector" className="uitext" />ボタンをクリックして、隣接する時間帯のログを照会できます。基準になるログは、青色で表示されます。
 
   <ImgLang img='log-search-adjacent-log.png' desc='ログタグ隣接ログ'/>
 

@@ -133,7 +133,7 @@
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "\"{tagName}\" タグ付けされた {nPosts}件の記事があります。",
+    "message": "\"{tagName}\"タグで連結された{nPosts}があります。",
     "description": "The title of the page for a blog tag"
   },
   "theme.colorToggle.ariaLabel": {
@@ -491,11 +491,11 @@
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "非索引文書",
+    "message": "インデックシングされてない文書",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "この文書は索引付けされません。検索エンジンはこの文書にインデックスを付けず、住所を知っているユーザーだけがアクセスできます。",
+    "message": "この文書はインデクシングされていません。検索エンジンはこの文書にインデックスを付けず、アドレスを知っているユーザーだけがアクセスできます。",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {

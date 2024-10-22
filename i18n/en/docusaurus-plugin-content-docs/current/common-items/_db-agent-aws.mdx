@@ -7,20 +7,21 @@
   You can use the ARN of an IAM ROLE with appropriate roles for AWS authentication.
 
   <details>
+
   <summary>Required role</summary>
 
   For the roles, the following policies are required.
 
-  | Role                              | Role details                                                                        |
-  | --------------------------------- | ----------------------------------------------------------------------------------- |
-  | rds:DescribeDBInstances           | Collection of the instance class data                                               |
-  | rds:DescribeDBClusters            | Collection of cluster data when using the autoscale                                 |
-  | rds:DescribeDBLogFiles            | Collection of CloudWatch logs                                                       |
-  | rds:DownloadDBLogFilePortion      | Collection of CloudWatch logs                                                       |
-  | ec2:DescribeInstanceTypes         | Collection of CPU counts for each instance class                                    |
-  | elasticache:DescribeCacheClusters | Collection of instance class data when using the elasticache                        |
-  | cloudwatch:ListMetrics            | Collection of the list of CloudWatch metrics                                        |
-  | cloudwatch:GetMetricStatistics    | Collection of the values of the CloudWatch metrics                                  |
+  | Role                              | Role details                                                     |
+  | --------------------------------- | ---------------------------------------------------------------- |
+  | rds:DescribeDBInstances           | Collection of the instance class data                            |
+  | rds:DescribeDBClusters            | Collection of cluster data when using the autoscale              |
+  | rds:DescribeDBLogFiles            | Collection of CloudWatch logs                                    |
+  | rds:DownloadDBLogFilePortion      | Collection of CloudWatch logs                                    |
+  | ec2:DescribeInstanceTypes         | Collection of CPU counts for each instance class                 |
+  | elasticache:DescribeCacheClusters | Collection of instance class data when using the elasticache     |
+  | cloudwatch:ListMetrics            | Collection of the list of CloudWatch metrics                     |
+  | cloudwatch:GetMetricStatistics    | Collection of the values of the CloudWatch metrics               |
   | logs:DescribeLogStreams           | Collection of CloudWatch logs (in case of using the posted logs) |
   | logs:GetLogEvents                 | Collection of CloudWatch logs (in case of using the posted logs) |
 

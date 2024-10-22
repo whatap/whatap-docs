@@ -14,6 +14,200 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.8.0.a5
+
+August 20, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="metrics" className="uitext" /> 및 <Cmdname sid="anomaly_detection" className="uitext" /> of the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> menu, fixed the issue where the copy button in the tooltip that appears when hovering over an individual event title does not work.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where changing languages ​​with an organization selected does not work intermittently.
+
+---
+
+### `Application`
+
+- <Status priority='1'>New</Status> Added the logging feature in the **Node.js** product.
+
+- <Status priority='1'>New</Status> Added the <Cmdname sid="side_statIp" className="uitext" /> menu to view URLs and the number of calls for specific IPs.
+
+  :::note
+
+  This feature can be seen in the <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statIp" className="uitext" /> path.
+
+  :::
+
+- <Status priority='1'>Feature</Status> In the <Cmdname sid="TTL06126" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, added the feature to download SQL statements mapped to bind variables.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />, modified to view the initial data with the <Cmdname sid="show_only_error" className="uitext" /> filter active, when you go to the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" /> menu through the <Cmdname sid="TTL07712" className="uitext" /> feature.
+
+- <Status priority='1'>Changed</Status> Added filter values to pass when navigating to the <Cmdname sid="side_txSearch" className="uitext" /> menu from the sub menus under <Cmdname sid="side_statistics" className="uitext" />.
+
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statDomain" className="uitext" />: Domain, Transaction
+
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statReferer" className="uitext" />: Referer, Transaction
+
+  - <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statUseragentDetail" className="uitext" />: User Agent
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="TTL06127" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the code box boundaries in SQL and Active Stack are displayed as double lines.
+
+---
+
+### `Server`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="process_list" className="uitext" />, changed the <Cmdname sid="name" className="uitext" /> column data to the name that can be identified in <Cmdname sid="side_serverDetail" className="uitext" /> or shell.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />, fixed the issue where the <Cmdname sid="before_after_event" className="uitext" /> spacing selection option is displayed as text instead of a button when viewing the event details.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> In the summary view of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />, added the <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> feature.
+
+  :::note
+
+  This feature is available in Korean only.
+
+  :::
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="BTN06342" className="uitext" /> of the <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_podList" className="uitext" /> menu, added the <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> feature.
+
+  :::note
+
+  This feature is available in Korean only.
+
+  :::
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added a custom widget that allows you to select metrics.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, added the feature to download the agent file in ZIP format.
+
+#### Oracle Pro
+
+<Status priority='1'>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />, added the feature to display global locks when selecting a cluster.
+
+#### Altibase
+
+- <Status priority='1'>New</Status> Altibase <code class="my">V2</code> services now launched!
+
+  :::note
+
+  For more information about new features in **Altibase Monitoring V2**, see [the following](https://whatap.github.io/whatap-docs/altibase/monitoring-intro#new-feature).
+
+  :::
+
+- <Status priority='1'>Changed</Status> Improved the calling of active session data.
+
+---
+
+### `Log`
+
+<Status priority='1'>Changed</Status> In <Cmdname sid="side_log" className="uitext" />, changed the following options:
+
+- Modified to select at least one column in <Cmdname sid="column_settings" className="uitext" />.
+
+- Changed the <Cmdname sid="table_content_setting" className="b500" /> option name to <Cmdname sid="ITM08349" className="uitext" />.
+
+- In <Cmdname sid="ITM08349" className="uitext" />, changed the <Cmdname sid="log" className="uitext" /> selection option name to <UI>content</UI>.
+
+- In <Cmdname sid="ITM08349" className="uitext" />, modified to select at least one entry.
+
+- In <Cmdname sid="column_settings" className="uitext" />, modified not to select <Cmdname sid="ITM08349" className="uitext" /> and display the guidance tooltip when the <UI>log</UI> column is deselected.
+
+</div>
+
+## Preview 2.8.0.a4
+
+August 14, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>New</Status> Added <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code className="newfunc">New</code>
+
+  - User experience (UX) has been improved so that users can set the time, target, and interval options, and then specify the metrics to monitor and add charts.
+
+  - You can change the time range of a chart view without deleting the widgets placed on the dashboard.
+
+  - It provides a batch update feature that allows you to apply options to all widgets placed on the dashboard at once.
+
+  - The preset feature allows you to save and load the widgets placed on the dashboard.
+
+  - You can adjust the layout of the dashboard and the functionality of the widgets through various options provided.
+
+  :::note
+
+  - This feature applies to Application, Kubernetes, and Database products.
+
+  - For more information about <Cmdname sid="side_metricsChart" className="uitext" /> <code className="newfunc">New</code> menu, see [the following](https://whatap.github.io/whatap-docs/java/metrics-chart-v2).
+
+  - For more information about the reorganized items, see [the following link](https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=260/).
+
+  :::
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, added the third-party plugin to receive alert notifications via **Teams Workflows** because the Office 365 connector method has been deprecated.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, added a third-party plugin to receive alert notifications via **PagerDuty**.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>, added the feature to perform search with <Cmdname sid="event_name" className="uitext" /> or <Cmdname sid="event_tag" className="uitext" />.
+
+- <Status priority='0'>Changed</Status> Changed the <Cmdname sid="turn_off_browser_noti" className="b500" /> feature for notification messages displayed in real time to the <Cmdname sid="BTN08345" className="uitext" /> feature that can close all notifications.
+
+  ![Close all notifications](/img/release/release-real-time-alert-changed.png)
+
+- <Status priority='1'>Changed</Status> The term <b>Event Resolution</b> related to warning notification messages to <b>another term</b> in Korean version.
+
+- <Status priority='0'>Fixed</Status> In ![Notification icon](/img/ico-noti.svg) <Cmdname sid="sms_alert_status" className="uitext" />, fixed the issue where the number of notifications on the chart is accumulated.
+
+- <Status priority='0'>Fixed</Status> Added left margin for the organization name without logo in the side menu.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, modified the event list to be sorted by the event name.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_projectList" className="uitext" /> on the Home screen, for the project added into the group, modified to display the ![Configuration icon](/img/ico-setting.svg) &gt; <Cmdname sid="delete_from_group" className="uitext" /> menu.
+
+### `Application`
+
+- <Status priority='1'>Changed</Status> On the <Cmdname sid="TTL06209" className="uitext" /> window, changed the default column order.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, fixed the notification error of the composite metrics platform (<UI>TPS has changed by more than 30% compared to the previous week.</UI>) over the TPS changes.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where data for some series charts do not appear intermittently when retrieving the past data.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the column settings are not reflected when downloading a CSV file after adding columns through <Cmdname sid="BTN06441" className="uitext" /> in the submenu of <Cmdname sid="side_statistics" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> In the Firefox browsers, fixed the issue where the center text alignment of the Arc Equalizer widget in the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" /> menu is broken.
+
+---
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> Changed the download link included in the Debian and Ubuntu operating system installation guides in the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu from **http** to **https**.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> In the <Cmdname sid="TTL06782" className="uitext" /> tab of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> menu, added the <Cmdname sid="side_kubeServiceList" className="uitext" /> navigation link and the feature to see the service **object manifest** information.
+
+- <Status priority='1'>Feature</Status> In the node list of the <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDiskList" className="uitext" /> menu, added the <UI>FileSystem</UI> column.
+
+- <Status priority='1'>Feature</Status> In the Pod list of the <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_podList" className="uitext" /> menu, added the columns for number of containers and number of applications.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_namespaceManagement" className="uitext" />, added specific guidance messages when creating a namespace project.
+
+</div>
+
 ## Preview 2.8.0.a3
 
 August 8, 2024
@@ -36,9 +230,9 @@ August 8, 2024
 
 - <Status priority='1'>Feature</Status> Added the feature to download the member list as a CSV file from the following menu paths:
 
-  - Home > Select Project > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectMember" className="uitext" />
-  - Home > <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_integratedMemberManagement" className="uitext" />
-  - Home > <Cmdname sid="organization_management" className="uitext" /> > <Cmdname sid="side_organizationMembers" className="uitext" />
+  - Home &gt; Select Project &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectMember" className="uitext" />
+  - Home &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_integratedMemberManagement" className="uitext" />
+  - Home &gt; <Cmdname sid="organization_management" className="uitext" /> &gt; <Cmdname sid="side_organizationMembers" className="uitext" />
 
 - <Status priority='0'>Changed</Status> Changed the location and UI of the Integrated Group Management button.
 
@@ -137,9 +331,9 @@ August 1, 2024
 
 - <Status priority='0'>Fixed</Status> Fixed the issue where the dashboard filters are not applied in the sub widgetof the group when applying the filters if there is no filter selected in the group widget in <Cmdname sid="side_integratedFlexboard" className="uitext" />.
 
-- <Status priority='0'>Fixed</Status> Fixed the issure where the setting is not saved when the same set value is entered if only one of <span className="slow">Warning</span> and <span className="vslow">Critical</span> metrics is activated in the event addition or modification screen of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">V2</code>.
+- <Status priority='0'>Fixed</Status> Fixed the issure where the setting is not saved when the same set value is entered if only one of <span className="slow">Warning</span> and <span className="vslow">Critical</span> metrics is activated in the event addition or modification screen of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>.
 
-- <Status priority='0'>Fixed</Status> Fixed the issue where the MXQL data is not viewed on the composite metrics addition or modification screen of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">V2</code>.
+- <Status priority='0'>Fixed</Status> Fixed the issue where the MXQL data is not viewed on the composite metrics addition or modification screen of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>.
 
   > We fixed the issue where the MXQL data is not viewed when changed to the text mode after setting the tags or fields with the string values by using the <Cmdname sid="filter" className="uitext" /> option in the <Cmdname sid="flex_event_mxql" className="uitext" /> section.
 

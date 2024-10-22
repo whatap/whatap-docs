@@ -6,7 +6,7 @@ You can arbitrarily collect the logs. The following configuration requires resta
 cd /usr/whatap/infra
 sudo mkdir extension
 
-cat >extension/logsink.conf<<EOL
+cat <<EOL | sudo tee extension/logsink.conf > /dev/null
 [[inputs.logsink]]
   category = "serverlog"
   ## Whether or not to send the data with separate log generation statistics

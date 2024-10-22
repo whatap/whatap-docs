@@ -5,34 +5,124 @@ description: It guides you to MongoDB metrics.
 keywords:
   - MongoDB
   - Metrics
-  - Database
+  - DATABASE
 ---
 
-Database metrics are comprehensive data collected for database workloads and resource usages. The WhaTap monitoring service continuously collects metric data to identify bottlenecks in the database and provides data to help identify the root cause of the performance issue.
+Database metrics are comprehensive data collected for database workloads and resource usages. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
 
 MongoDB collects key metrics from `db.serverStatus`, and the following lists the descriptions for the collected key metrics: For more information about other metrics, see [the following](https://www.mongodb.com/docs/manual/reference/command/serverStatus/#output/).
 
-| Indicators                     | Description                                                                                    |
-| ------------------------------ | ---------------------------------------------------------------------------------------------- |
-| `active$connections`           | Number of active clients in progress                                                           |
-| `current$connections`          | Number of clients connected to the server                                                      |
-| `CPU`                          | CPU utilization calculated with the `user_time_us` and `system_time_us` values in `extra_info` |
-| `input_blocks$extra_info`      | Input block value of the system                                                                |
-| `output_blocks$extra_info`     | Output block value of the system                                                               |
-| `bytesIn$network`              | Total bytes received by the server via connection from a MongoDB client or other instances     |
-| `bytesOut$network`             | Total bytes sent by the server via connection to a MongoDB client or other instances           |
-| `numRequests$network`          | Total sum of requests received by the server                                                   |
-| `latency$reads$opLatencies`    | Latency for the read request                                                                   |
-| `latency$writes$opLatencies`   | Latency for the write request                                                                  |
-| `latency$commands$opLatencies` | Latency for the Database command                                                               |
-| `insert$opcounters`            | Number of insert commands                                                                      |
-| `query$opcounters`             | Number of query commands                                                                       |
-| `update$opcounters`            | Number of update commands                                                                      |
-| `delete$opcounters`            | Number of delete commands                                                                      |
-| `command$opcounters`           | Total number of commands executed in the database                                              |
+## db_mongodb_counter {#db_mongodb_counter}
+
+### Tags {#db_mongodb_counter-tags}
+
+The following lists the tags that are collected in the `db_mongodb_counter` category.
+
+| Tag name | Description | Remarks      |
+| -------- | ----------- | ------------ |
+| `oname`  | Agent name  | Unique value |
+
+### Field {#db_mongodb_counter-filed}
+
+The following lists the fields that are collected in the `db_mongodb_counter` category.
+
+<div className="db-metric">
+
+| Metrics                                                      | Description                                                                                                 |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| `accepted$tcpFastOpen$network`                               | Number of network connections accepted via TCP Fast Open.                                                   |
+| `active$connections`                                         | Number of active clients in progress.                                                                       |
+| `available$connections`                                      | Number of available network connections.                                                                    |
+| `awaitingTopologyChanges$connections`                        | Number of connections waiting for topology changes.                                                         |
+| `bytesIn$compressor$snappy$compression$network`              | Network bytes received via Snappy compression.                                                              |
+| `bytesIn$compressor$zlib$compression$network`                | Network bytes received through zlib compression.                                                            |
+| `bytesIn$compressor$zstd$compression$network`                | Number of network bytes received via zstd compression.                                                      |
+| `bytesIn$decompressor$snappy$compression$network`            | Number of network bytes received via Snappy decompression.                                                  |
+| `bytesIn$decompressor$zlib$compression$network`              | Number of network bytes received through zlib decompression.                                                |
+| `bytesIn$decompressor$zstd$compression$network`              | Number of network bytes received via zstd decompression.                                                    |
+| `bytesIn$network`                                            | Total network bytes received by the server via connection from a MongoDB client or other instances.         |
+| `bytesOut$compressor$snappy$compression$network`             | Network bytes transmitted via Snappy compression.                                                           |
+| `bytesOut$compressor$zlib$compression$network`               | Network bytes transmitted via zlib compression.                                                             |
+| `bytesOut$compressor$zstd$compression$network`               | Number of network bytes transmitted via zstd compression.                                                   |
+| `bytesOut$decompressor$snappy$compression$network`           | Number of network bytes transmitted via Snappy decompression.                                               |
+| `bytesOut$decompressor$zlib$compression$network`             | Number of network bytes transmitted through zlib decompression.                                             |
+| `bytesOut$decompressor$zstd$compression$network`             | Number of network bytes transmitted via zstd decompression.                                                 |
+| `bytesOut$network`                                           | Total network bytes transmitted by the server via connection from a MongoDB client or other instances.      |
+| `clientsInTotal$fixed$serviceExecutors$network`              | Total number of clients processed in the fixed service executors.                                           |
+| `clientsInTotal$passthrough$serviceExecutors$network`        | Total number of clients processed in the passthrough service executors.                                     |
+| `clientsRunning$fixed$serviceExecutors$network`              | Total number of clients being run in the fixed service executors.                                           |
+| `clientsRunning$passthrough$serviceExecutors$network`        | Total number of clients being run in the passthrough service executors.                                     |
+| `clientsWaitingForData$fixed$serviceExecutors$network`       | Total number of clients waiting for data in the fixed service executors.                                    |
+| `clientsWaitingForData$passthrough$serviceExecutors$network` | Number of clients waiting for data in the passthrough service executors.                                    |
+| `command$opcounters`                                         | Total number of commands executed in the database.                                                          |
+| `connect_error`                                              | Number of connection errors.                                                                                |
+| `cpu`                                                        | CPU utilization calculated using the `user_time_us` and `system_time_us` values in the `extra_info` metric. |
+| `cpu_cores`                                                  | Number of available CPU cores                                                                               |
+| `cpu_sys`                                                    | CPU time used in the system.                                                                                |
+| `cpu_user`                                                   | CPU time used for user tasks.                                                                               |
+| `current$connections`                                        | Total number of clients connected to the current server.                                                    |
+| `delete$opcounters`                                          | Number of delete commands processed.                                                                        |
+| `exhaustHello$connections`                                   | Number of connections associated with the the exhaustHello message.                                         |
+| `exhaustIsMaster$connections`                                | Number of connections associated with the exhaustIsMaster message.                                          |
+| `fatal count`                                                | Number of fatal errors.                                                                                     |
+| `getmore$opcounters`                                         | Number of getMore operations processed.                                                                     |
+| `input_blocks$extra_info`                                    | Input block value of the system.                                                                            |
+| `insert$opcounters`                                          | Number of Insert commands processed.                                                                        |
+| `involuntary_context_switches$extra_info`                    | Additional information regarding the number of forced context switches.                                     |
+| `kernelSetting$tcpFastOpen$network`                          | Kernel configuration status for TCP Fast Open.                                                              |
+| `latency$commands$opLatencies`                               | Latency for database commands.                                                                              |
+| `latency$reads$opLatencies`                                  | Latency for read operations.                                                                                |
+| `latency$transactions$opLatencies`                           | Latency for processing transactions.                                                                        |
+| `latency$writes$opLatencies`                                 | Latency for write operations.                                                                               |
+| `maximum_resident_set_kb$extra_info`                         | Additional information regarding the maximum resident set size (KB).                                        |
+| `msg$asserts`                                                | Number of message assertions occurred.                                                                      |
+| `node_state`                                                 | Current state of the node.                                                                                  |
+| `numRequests$network`                                        | Total number of network requests received by the server.                                                    |
+| `numSlowDNSOperations$network`                               | Number of slow DNS operations.                                                                              |
+| `numSlowSSLOperations$network`                               | Number of slow SSL operations.                                                                              |
+| `ops$commands$opLatencies`                                   | Number of command operations processed.                                                                     |
+| `ops$reads$opLatencies`                                      | Number of read operations processed.                                                                        |
+| `ops$transactions$opLatencies`                               | Number of transaction operations processed.                                                                 |
+| `ops$writes$opLatencies`                                     | Number of write operations processed.                                                                       |
+| `output_blocks$extra_info`                                   | Output block value of the system.                                                                           |
+| `page_faults$extra_info`                                     | Additional information regarding the page faults.                                                           |
+| `page_reclaims$extra_info`                                   | Additional information regarding the page reclaims.                                                         |
+| `physicalBytesIn$network`                                    | Physical bytes received.                                                                                    |
+| `physicalBytesOut$network`                                   | Physical bytes transmitted.                                                                                 |
+| `query$opcounters`                                           | Number of query commands processed.                                                                         |
+| `readers$activeClients$globalLock`                           | Number of active read clients (global lock).                                                                |
+| `readers$currentQueue$globalLock`                            | Number of waiting read clients (global lock).                                                               |
+| `regular$asserts`                                            | Number of general assertions occurred.                                                                      |
+| `replication_delay_max`                                      | Maximum replication delay time.                                                                             |
+| `resident$mem`                                               | Actual memory size in use.                                                                                  |
+| `rollovers$asserts`                                          | Number of rollover assertions occurred.                                                                     |
+| `system_time_us$extra_info`                                  | Additional information regarding the system time (microseconds).                                            |
+| `threaded$connections`                                       | Number of thread-based connections.                                                                         |
+| `threadsRunning$fixed$serviceExecutors$network`              | Number of threads being run in the fixed service executors.                                                 |
+| `threadsRunning$passthrough$serviceExecutors$network`        | Number of threads being run in the passthrough service executors.                                           |
+| `total$activeClients$globalLock`                             | Number of active all clients (global lock).                                                                 |
+| `total$currentQueue$globalLock`                              | Number of all waiting clients (global lock).                                                                |
+| `totalCreated$connections`                                   | Total number of created connections.                                                                        |
+| `totalTime$globalLock`                                       | Total time spent on global lock.                                                                            |
+| `tripwire$asserts`                                           | Number of tripwire assertions occurred.                                                                     |
+| `update$opcounters`                                          | Number of update commands processed.                                                                        |
+| `user$asserts`                                               | Number of user assertions occurred.                                                                         |
+| `user_time_us$extra_info`                                    | Additional information regarding the user time (microseconds).                                              |
+| `virtual$mem`                                                | Virtual memory size in use.                                                                                 |
+| `voluntary_context_switches$extra_info`                      | Additional information regarding the number of voluntary context switches.                                  |
+| `warning count`                                              | Number of warnings.                                                                                         |
+| `warning$asserts`                                            | Number of warning assertions occurred.                                                                      |
+| `writers$activeClients$globalLock`                           | Number of active write clients (global lock).                                                               |
+| `writers$currentQueue$globalLock`                            | Number of waiting write clients (global lock).                                                              |
+
+</div>
 
 :::note
 
 WhaTap basically stores the client-related information.
 
 :::
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />

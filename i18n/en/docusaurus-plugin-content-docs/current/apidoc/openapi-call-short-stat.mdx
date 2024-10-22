@@ -39,14 +39,14 @@ $ curl -L -w "\n" -H "x-whatap-token: {{PROJECT API TOKEN}}" -H "x-whatap-pcode:
 }
 ```
 
-| Response Field |      Field Type                 | Description                                                      |
-| -------------- | :-----------------------------: | ---------------------------------------------------------------- |
-| pcode          | <span class='api'>number</span> | pcode                                                            |
-| time           | <span class='api'>number</span> | Lookup time                                                      |
-| dbc_total      |  <span class='api'>array</span> | Lookup result                                                    |
-| oid            | <span class='api'>number</span> | Agent ID                                                         |
-| oname          | <span class='api'>string</span> | Agent name                                                       |
-| databaseUrl    | <span class='api'>string</span> | Database URL                                                     |
-| active         | <span class='api'>number</span> | Active DB connection count                                       |
-| idle           | <span class='api'>number</span> | Inactive DB connection count                                     |
+| Response Field |      Field Type                 | Description                                   |
+| -------------- | :-----------------------------: | --------------------------------------------- |
+| pcode          | <span class='api'>number</span> | pcode                                         |
+| time           | <span class='api'>number</span> | Lookup time                                   |
+| dbc_total      |  <span class='api'>array</span> | Lookup result                                 |
+| oid            | <span class='api'>number</span> | Agent ID                                      |
+| oname          | <span class='api'>string</span> | Agent name                                    |
+| databaseUrl    | <span class='api'>string</span> | Database URL                                  |
+| active         | <span class='api'>number</span> | Active DB connection count                    |
+| idle           | <span class='api'>number</span> | Inactive DB connection count                  |
 | total          | <span class='api'>number</span> | Total DB connection count (`active` + `idle`) |

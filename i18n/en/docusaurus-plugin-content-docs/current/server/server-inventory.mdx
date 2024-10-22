@@ -1,0 +1,271 @@
+---
+id: server-inventory
+title: Server Inventory
+description: It guides you to the server configuration menu.
+keywords:
+  - Server details
+  - Server Inventory
+  - Analysis
+  - UI
+  - Server
+---
+
+Home &gt; Select Project &gt; <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />
+
+{/* :::note 
+
+**Supported agent versions**
+
+The <Cmdname sid="side_serverInventory" className="uitext" /> menu is supported only on specific agent versions or later. The minimum supported versions for each operating system are as follows:
+
+- **Linux**: 2.6.6 or later
+
+- **AIX**: 1.3.4 or later
+
+- **Solaris**: 1.3.4 or later
+
+- **Windows**: 2.6.6 or later
+
+::: */}
+
+On the initial screen of the WhaTap monitoring service, select a project, and then select the <Cmdname sid="side_serverInventory" className="uitext" /> menu under the <Cmdname sid="side_serverList" className="uitext" /> menu. <Cmdname sid="side_serverInventory" className="uitext" /> provides configuration information required for server operations and allows you to manually add management items for management convenience. 
+
+The <Cmdname sid="side_serverInventory" className="uitext" /> menu systematically manages the physical and virtual characteristics of the server, as well as the operating environment. This feature allows for detailed insight and management of the server configuration through automatically collected server components and custom items. <Cmdname sid="side_serverInventory" className="uitext" /> provides essential data for performance analysis and troubleshooting of the server.
+
+{/* ## 지원 에이전트 및 업데이트 */}
+
+:::note 
+
+**Supported agent versions**
+
+The <Cmdname sid="side_serverInventory" className="uitext" /> menu is supported only in the following versions or later for each operating system.
+
+- **Linux**: 2.6.6 or later
+
+  If an update is needed, check the following commands for each operating system. 
+
+  <Tabs>
+  <TabItem value="du" label="Debian/Ubuntu" default>
+
+  ```bash
+  sudo apt-get update
+  sudo apt-get install whatap-infra
+  ```
+
+  </TabItem>
+  <TabItem value="arfocrs" label="Amazon Linux/RHEL/Fedora/Oracle Linux/CentOS/Rocky Linux/SUSE">
+
+  ```bash
+  sudo yum update whatap-infra
+  ```
+
+  </TabItem>
+  </Tabs>
+
+- **Unix**: 1.3.4 or later
+
+  If an update is needed, check the following commands for each operating system.
+
+  <Tabs>
+  <TabItem value="aix" label="AIX" default>
+
+  ```bash
+  stopsrc -s whatap-infra
+  cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+  rpm -e whatap-infra
+  rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  ```
+
+  </TabItem>
+  <TabItem value="solaris" label="Oracle Solaris">
+
+  ```bash
+  cp /usr/whatap/infra/conf/whatap.conf /tmp
+  /etc/init.d/whatap-infra stop
+  pkgrm whatap-infra
+  wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz
+  tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz
+  pkgadd -d .
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  ```
+
+  </TabItem>
+  </Tabs>
+
+- **Windows**: 2.6.6 or later
+
+  Download the installation file through the following [link](https://repo.whatap.io/windows/whatap_infra.exe) and then run it. After the agent update, the service is restarted. 
+
+:::
+
+## Activation options
+
+The following settings are required to enable the <Cmdname sid="side_serverInventory" className="uitext" /> menu viewing feature.
+
+1. Enable the following options in the *whatap.conf* file. 
+
+   ```ini
+   hostinfov2.enabled=true
+   ```
+
+2. After setting additional options according to the environment, restart the agent. 
+
+   - **Linux**
+
+     <Tabs>
+     <TabItem value="linux-opt" label="Add option command" default>
+
+     ```bash
+     grep -q '^hostinfov2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'hostinfov2.enabled=true' | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+     ```
+
+     </TabItem>
+     <TabItem value="linux-restart" label="Restart agent">
+
+     ```bash
+     sudo service whatap-infra restart
+     ```
+
+     </TabItem>
+     </Tabs>
+
+   - **Unix** 
+
+     <Tabs>
+     <TabItem value="unix-opt" label="Add option command" default>
+
+     ```bash title='AIX/Oracle Solaris'
+     grep -q '^hostinfov2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'hostinfov2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
+     ```
+
+     </TabItem>
+     <TabItem value="unix-restart" label="Restart agent">
+
+     ```bash title='AIX'
+     stopsrc -s whatap-infra
+     startsrc -s whatap-infra
+     ```
+
+     ```bash title='Oracle Solaris'
+     /etc/init.d/whatap-infra restart
+     ```
+
+     </TabItem>
+     </Tabs>
+
+   - **Windows**
+
+     <Tabs>
+     <TabItem value="windows-opt" label="Add option command" default>
+
+     ```bash
+     if (-not (Select-String -Path "C:\\Program Files\WhatapInfra\whatap.conf" -Pattern "^hostinfov2.enabled" -Quiet)) { Add-Content -Path "C:\\Program Files\WhatapInfra\whatap.conf" -Value "hostinfov2.enabled=true" }
+     ```
+
+     </TabItem>
+     <TabItem value="windows-restart" label="Restart agent">
+
+     ```bash
+     Restart-Service -Name "Whatap Infra"
+     ```
+
+     </TabItem>
+     </Tabs>
+
+## Basic screen guide
+
+{/* 대시보드 및 주요 제공 정보 안내  */}
+
+The <Cmdname sid="side_serverInventory" className="uitext" /> menu provides key configuration items of the server in a list form. You can manage essential information required for server operation and management, as well as custom items that are automatically collected. This allows server administrators to monitor and operate their infrastructure more systematically and efficiently. Use the filters and sorting feature to easily find the information you need.
+
+<ImgLang img='server-inventory.png' desc='Server inventory' />
+
+{/* 
+
+You can automatically collect and manage server configuration data from the <Cmdname sid="side_serverInventory" className="uitext" /> menu. You can also add or modify custom server configuration items. This allows you to see at a glance the important data required for server operation and management, and improve the efficiency of server management through additional configuration management items.
+
+The menu provides a list of key hardware and software configuration items for the server. The <Cmdname sid="side_serverInventory" className="uitext" /> menu provides automatic collection of essential data required for server operation and management, along with extensibility through custom items. This allows server administrators to monitor and manage their infrastructure more systematically and efficiently. Use the filters and sorting feature to easily find the information you need. 
+
+*/}
+
+{/* 이를 통해 다음 예시와 같은 구성 관리가 가능합니다. 
+
+- Information for administration personnel and support vendors
+
+- Server introduction date and other management items
+
+- 서버를 용도나 역할에 따라 그룹으로 분류하여 다양한 그룹 관리  */}
+
+### Filtering
+
+In the ![Instruction line 1](/img/number-01.png) filter input field at the top, you can enter the desired conditions and view only the items that meet those conditions. Enter or select column conditions and then press Enter to add them. Apply `==` or `!=`, enter a value for the condition, and then press Enter.
+
+> e..g. <code class='filter'>Server name</code><code class='filter center'>==</code><code class='filter'>server04</code>
+
+If you click <Cmdname sid="BTN06223" className="uitext" /> after entering the filters, you can view the filtered list in the ![Instruction line 2](/img/number-02.png) server configuration list area. 
+
+{/* 컬럼 조건 특정 후 조회 선택해야 적용 */}
+
+### Align
+
+Through the sorting option at the top of ![Leader line 2](/img/number-02.png), multi-alignment is provided up to 3 levels. You can sort by any desired criteria including custom columns. The default settings for sorting are <Cmdname sid="TTL08087" className="uitext" /> &gt; <Cmdname sid="TTL08099" className="uitext" /> &gt; <Cmdname sid="TTL08100" className="uitext" />. 
+
+:::note 
+
+Sorting is reset when moving and refreshing the menu.
+
+:::
+
+{/* \* 1차 2차 3차 정렬 
+
+- 기본 설정: OS - 모델 - 시리얼 
+
+- 현재 정렬 옵션 선택 시 컬럼 설정에서 선택하지 않은 항목까지 보임?
+
+- 정렬 조작으로 적용  
+
+Column Settings
+Users can configure custom columns by adding their own desired items in addition to the default ones.
+
+*/}
+
+### Column Settings
+
+Click ![Column Icon](/img/ic-column.svg) <Cmdname sid="column_settings" className="uitext" /> at the top of the ![Leader line 2](/img/number-02.png) area. Select columns and add custom columns as shown below, and then select <Cmdname sid="BTN06053" className="uitext" /> at the bottom to save the column settings. 
+
+<ImgLang img='server-inventory-cl.png' desc='Server inventory column settings' />
+
+- **Select Column** 
+
+  Users can select the columns to display in the table. If the <Cmdname sid="initialized" className="uitext" /> button is selected, it returns to the default selection state.
+
+  :::note 
+
+  The selected ***columns*** are saved as browser cookie values and remain in effect even if the page is refreshed. If cookies are deleted or a setting error occurs for any other reason, the default selection state is reset.
+
+  :::
+
+- **Adding columns** 
+
+  Users can configure custom columns (<code class='custom-cl'>custom</code>) by selecting the ***+*** <Cmdname sid="add_a_column" className="uitext" /> button and adding their own desired items in addition to the default items. Add columns to your taste and then monitor the server status and performance in more detail. 
+
+### Download CSV
+
+By selecting ![Download icon](/img/ico-download.svg) <Cmdname sid="download" className="uitext" /> at the top of the ![Leader line 2](/img/number-02.png) area, you can download the collected server configuration information in *CSV* file format. 
+
+### Edit
+
+You can edit the server configuration item list by selecting ![Edit icon](/img/ic-edit.svg) <Cmdname sid="edit" className="uitext" /> at the top of the ![Leader line 2](/img/number-02.png) area. 
+
+- You can configure the settings for the <Cmdname sid="TTL08183" className="uitext" /> and <Cmdname sid="TTL08184" className="uitext" /> columns.
+
+- You can set the contents of custom columns (<code class='custom-cl'>custom</code>) added by users.
+
+{/* 
+
+### Usage example
+
+활용 예시의 경우 추후 학습하기 문서에서 활용 
+
+*/}

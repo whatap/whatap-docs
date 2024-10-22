@@ -24,7 +24,29 @@ files: [
  {
   "source" : "/docs/**/*",
   "translation" : "/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%",
-  "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*", "/docs/weaving/**/*", "/docs/aws-log/_learn-aws-log-main-menu.mdx", "/docs/release-notes/java/java-2.0.mdx", "/docs/getting-started/_implementation.mdx", "/docs/apidoc/*.yaml", "/docs/**/*.json"],
+  "ignore" : [ "/docs/.gitignore", "/docs/.git/**/*", "/docs/wip/**/*", "/docs/weaving/**/*", "/docs/aws-log/_learn-aws-log-main-menu.mdx", "/docs/release-notes/java/java-2.0.mdx", "/docs/getting-started/_implementation.mdx", "/docs/apidoc/*.yaml", "/docs/**/*.json", "/docs/best-practice-guides/real-time-monitoring-for-it-infra.mdx" ],
+  "escape_special_characters": 0,
+ },
+ {
+  "source" : "/blog/**/*",
+  "translation" : "/i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%",
+  "ignore" : [ "/blog/img/*" ],
+  "escape_special_characters": 0,
+ },
+ {
+  "source" : "/crw-data/**/*",
+  "translation" : "/i18n/%two_letters_code%/**/%original_file_name%",
+  "ignore" : [ 
+    "/crw-data/overview/_changelog_overview.mdx", 
+    "/crw-data/crwld-service-23q2/_import-new-files-service.mdx", 
+    "/crw-data/crwld-service-23q3/_import-new-files-service.mdx",
+    "/crw-data/arranged/**/*",
+    "/crw-data/crwd/**/*",
+    "/crw-data/crwld-service-23q3-2/**/*",
+    "/crw-data/crwld-service-23q4-2/**/*",
+    "/crw-data/crwld-service-23q2/**/*",
+    "/crw-data/crwld-service-23q1/**/*"
+  ],
   "escape_special_characters": 0,
  },
 ]

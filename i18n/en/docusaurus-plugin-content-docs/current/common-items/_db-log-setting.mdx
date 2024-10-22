@@ -41,9 +41,41 @@ file=/home/oracle/diag/rdbms/ora18/ORA18/trace/alert_ORA18.log
 
 </InDoc>
 
+<InDoc product='redis'>
+
+```ini title='xos.conf'
+file=/var/log/redis.log
+```
+
+</InDoc>
+
+<InDoc product='mongodb'>
+
+```ini title='xos.conf'
+file=/var/log/mongodb/mongodb.log
+```
+
+</InDoc>
+
+<InDoc product='altibase'>
+
+```ini title='xos.conf'
+file=/home/altibase/altibase-server-x.y.z/trc/altibase_boot.log
+```
+
+</InDoc>
+
+<InDoc product='cubrid'>
+
+```ini title='xos.conf'
+file=/cubrid-11.0/log/server/demodb_latest.err
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid'>
 
 Before application, install the XOS agent and then proceed with agent configuration. For more information, see [the following](agent-xos-settings).
 
@@ -56,6 +88,8 @@ Before application, install the XOS agent and then proceed with agent configurat
 </InDoc>
 
 :::
+
+<Xclude product="altibase,cubrid">
 
 ## Applying to the AWS RDS logs
 
@@ -126,13 +160,13 @@ To install WhaTap's **AWS RDS Log** via **AWS CloudFormation**, first check the 
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
-   - **Host**: Address of the WhaTap collection server. It can be viewed in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_agentInstall" className="uitext" /> under the WhaTap project. e.g. 13.124.11.223 / 13.209.172.35
+   - **Host**: Address of the WhaTap collection server. It can be viewed in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> under the WhaTap project. e.g. 13.124.11.223 / 13.209.172.35
 
    - **MemorySize**: WhaTapRDSLog's memory size. Enter a value between 128 MB and 10,240 MB.
 
-   - **Pcode**: Project code of a WhaTap project. Check the <Cmdname sid="pcode" className="uitext" /> in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />.
+   - **Pcode**: Project code of a WhaTap project. Check the <Cmdname sid="pcode" className="uitext" /> in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />.
 
-   - **ProjectAccessKey**: Access key of a WhaTap project. Check the <Cmdname sid="project_access_key" className="uitext" /> in <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_projectManagement" className="uitext" />.
+   - **ProjectAccessKey**: Access key of a WhaTap project. Check the <Cmdname sid="project_access_key" className="uitext" /> in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />.
 
    - **TimeOut**: Maximum time in which the installed WhatTapRDSLog is maintained while running.
 
@@ -152,7 +186,7 @@ To install WhaTap's **AWS RDS Log** via **AWS CloudFormation**, first check the 
 
      - Enter `none` if you do not want to create an event rule.
 
-   - **RdsLogGroupName** (**1-9**): RDS CloudWatchLogGroup name from which you want to receive logs
+   - **RdsLogGroupName** (**1\-9**): RDS CloudWatchLogGroup name from which you want to receive logs
 
      - e.g. /aws/rds/seoul-pro-db-01
 
@@ -204,15 +238,17 @@ Check the resources installed through **AWS CloudFormation**.
 
 - **WS CloudWatchLogGroup**
 
-  SubscriptionFilter (1-9): Filter that executes WhatapRDSLog when logs come into the CloudWatch LogGroup of RDS.
+  SubscriptionFilter (1\-9): Filter that executes WhatapRDSLog when logs come into the CloudWatch LogGroup of RDS.
 
 - **AWS EventBridge**
 
   Rule: Rule that triggers WhatapRDSLog when RDS events occur among AWS events
 
+</Xclude>
+
 ## Starting the log monitoring
 
-After configuring all settings, go to <Cmdname sid="side_log" className="uitext" /> > <Cmdname sid="side_logSetting" className="uitext" /> to activate the log monitoring.
+After configuring all settings, go to <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" /> to activate the log monitoring.
 
 <Xclude product="oracle-pro"><ImgLang img='log-start-db.png' desc='Start Log Monitoring'/></Xclude>
 

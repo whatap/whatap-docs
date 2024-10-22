@@ -11,11 +11,11 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-新規作成したサーバーモニタリングプロジェクトを選択すると、<Cmdname sid="side_agentInstall" className="uitext" />画面が表示されます。 プロジェクト<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューから行うことができます。
+新規で作成したサーバーモニタリングプロジェクトを選択すると、<Cmdname sid="side_agentInstall" className="uitext" />画面が表示されます。プロジェクトの<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューからでもできます。
 
 <ImgLang img='server-install-lx-unx.png' desc='サーバーモニタリングLinux Unix'/>
 
-<Cmdname sid="side_agentInstall" className="uitext" />画面で希望するOSを選択し、プロジェクトのアクセスキーを確認したら、次の案内通りにインストールを進めてください。
+<Cmdname sid="side_agentInstall" className="uitext" />画面から対象OSを選択し、プロジェクトのアクセスキーを確認した後、次のようにインストールします。
 
 1. WhaTap **リポジトリ**を登録します。  
 
@@ -68,7 +68,7 @@ import TabItem from '@theme/TabItem';
 
 2. 次のコマンドを使用して**パッケージ**をインストールしてください。
 
-   <Cmdname sid="server_installAgent_installPackages" className="uitext" />タブで適切なコマンドをコピーして入力します。
+   <Cmdname sid="server_installAgent_installPackages" className="uitext" />タブでコマンドをコピーして入力します。
 
    <Tabs>
    <TabItem value="du" label="Debian / Ubuntu" default>
@@ -98,7 +98,7 @@ import TabItem from '@theme/TabItem';
 
 3. **設定スクリプト**を実行してください。
 
-   <Cmdname sid="server_installAgent_startMonitoring" className="uitext" />タブに移動してコマンドを発行するか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加してください。
+   <Cmdname sid="server_installAgent_startMonitoring" className="uitext" />タブに移動してコマンドを作成してコピーするか、下部のコマンドにプロジェクトアクセスキーとサーバーIPを追加して実行します。
 
    ```bash
    echo "license=[発行されたプロジェクトアクセスキー]" |sudo tee /usr/whatap/infra/conf/whatap.conf

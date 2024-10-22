@@ -2,9 +2,17 @@
 
 Create an account with roles required for database monitoring. Log in with the root account and then create accounts.
 
+<InDoc product="altibase">
+
+```sql title="SQL"
+create user DB_User with password 'DB Password';
+```
+
+</InDoc>
+
 :::note
 
-<Xclude product="postgresql,mysql">
+<Xclude product="postgresql,mysql,altibase">
 
 - To use the previous accounts, go to [Create DB User File](#create-db-user). If you do not have any permission, you may not be able to proceed with normal monitoring.
 
@@ -12,7 +20,7 @@ Create an account with roles required for database monitoring. Log in with the r
 
 </Xclude>
 
-<InDoc product="postgresql,mysql">
+<InDoc product="postgresql,mysql,altibase">
 
 - If you have an account with roles, skip this step and then proceed to [Next Step](#check-accesskey).
 

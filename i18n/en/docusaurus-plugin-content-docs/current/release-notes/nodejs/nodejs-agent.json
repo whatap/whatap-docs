@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_89",
-    "ver": "v0.4.89",
-    "date": "2024-01-22",
-    "Lists": [
-      {
-        "ver": "v0.4.89",
-        "hash": "v0489",
-        "product": "Node.js Agent",
-        "type": "Fixed",
-        "desc": "<li><code class=\"Fixed\">Fixed</code> Fixed the ONODE setting error.</li>"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_98",
     "ver": "v0.4.98",
     "date": "2024-07-09",
@@ -44,46 +30,46 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_0",
-    "ver": "v0.5.0",
-    "date": "2024-08-12",
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_97",
+    "ver": "v0.4.97",
+    "date": "2024-06-03",
     "Lists": [
       {
-        "ver": "v0.5.0",
-        "hash": "v050",
+        "ver": "v0.4.97",
+        "hash": "v0497",
         "product": "Node.js Agent",
         "type": "New",
-        "desc": "<p><code class=\"New\">New</code> Added the agent option to set the path of WhaTap agent log file.</p>",
-        "details": "<blockquote>\n<p><strong>log_root</strong> <span class=\"type\">String</span> Default none</p>\n</blockquote>"
-      },
+        "desc": "<p><code class=\"New\">New</code> Whether or not to use the Kubernetes environment can be applied as an environment variable.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_1",
+    "ver": "v0.5.1",
+    "date": "2024-08-28",
+    "Lists": [
       {
-        "ver": "v0.5.0",
-        "hash": "v050",
+        "ver": "v0.5.1",
+        "hash": "v051",
         "product": "Node.js Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the monitoring feature for the Node.js's built-in function, <code>fetch</code>.</p>"
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the agent option to create the agent name (ONAME) by adding the port number (e.g. NODE-14-103-3000).</p>",
+        "details": "<blockquote>\n<p><strong>oname_port_postfix_enabled</strong> <span class=\"type\">Boolean</span> Default <code>false</code></p>\n</blockquote>"
       },
       {
-        "ver": "v0.5.0",
-        "hash": "v050",
+        "ver": "v0.5.1",
+        "hash": "v051",
         "product": "Node.js Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the Redis monitoring package (<a href=\"https://www.npmjs.com/package/ioredis\" target=\"_blank\" rel=\"noopener noreferrer\">ioredis</a>).</p>"
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the agent option for log monitoring.</p>",
+        "details": "<ul>\n<li>\n<p><strong>logsink_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>false</code></p>\n<p>Set whether or not to enable the log monitoring.</p>\n</li>\n<li>\n<p><strong>logsink_trace_txid_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>true</code></p>\n<p>Set whether or not to expose the log tab of the transaction trace by inserting the transaction ID into the logs.</p>\n</li>\n<li>\n<p><strong>logsink_limit_content_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>true</code></p>\n<p>Set whether or not to limit the maximum size for log messages.</p>\n</li>\n<li>\n<p><strong>logsink_limit_content_length</strong> <span class=\"type\">Number</span></p>\n<p>Default <code>10,000</code></p>\n<p>Set the maximum length of the log message. This value is applied only when the <code>logsink_limit_content_enabled</code> option is set to <code>true</code>.</p>\n</li>\n</ul>"
       },
       {
-        "ver": "v0.5.0",
-        "hash": "v050",
-        "product": "Node.js Agent",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified the name of the option to ignore the build file monitoring.</p>",
-        "details": "<ul>\n<li><code>ignore_nextjs_build_file_enabled</code> → <code>ignore_build_file_enabled</code></li>\n<li><code>ignore_nextjs_build_file_path</code> → <code>ignore_build_file_path</code></li>\n</ul>"
-      },
-      {
-        "ver": "v0.5.0",
-        "hash": "v050",
+        "ver": "v0.5.1",
+        "hash": "v051",
         "product": "Node.js Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the error where the value of the <code>auto_oname_prefix</code> option is applied as <code>true</code> even though it is <code>false</code>.</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified to output an error message when an exception occurs while monitoring the fetch function in the global package.</p>"
       }
     ]
   },
@@ -127,20 +113,6 @@
         "product": "Node.js Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the URL is not displayed when the transaction result is <b>Lost Connection</b>.</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_97",
-    "ver": "v0.4.97",
-    "date": "2024-06-03",
-    "Lists": [
-      {
-        "ver": "v0.4.97",
-        "hash": "v0497",
-        "product": "Node.js Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\">New</code> Whether or not to use the Kubernetes environment can be applied as an environment variable.</p>"
       }
     ]
   },
@@ -206,6 +178,50 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_0",
+    "ver": "v0.5.0",
+    "date": "2024-08-12",
+    "Lists": [
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\">New</code> Added the agent option to set the path of WhaTap agent log file.</p>",
+        "details": "<blockquote>\n<p><strong>log_root</strong> <span class=\"type\">String</span> Default none</p>\n</blockquote>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the monitoring feature for the Node.js's built-in function, <code>fetch</code>.</p>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the Redis monitoring package (<a href=\"https://www.npmjs.com/package/ioredis\" target=\"_blank\" rel=\"noopener noreferrer\">ioredis</a>).</p>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified the name of the option to ignore the build file monitoring.</p>",
+        "details": "<ul>\n<li><code>ignore_nextjs_build_file_enabled</code> → <code>ignore_build_file_enabled</code></li>\n<li><code>ignore_nextjs_build_file_path</code> → <code>ignore_build_file_path</code></li>\n</ul>"
+      },
+      {
+        "ver": "v0.5.0",
+        "hash": "v050",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the error where the value of the <code>auto_oname_prefix</code> option is applied as <code>true</code> even though it is <code>false</code>.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_90",
     "ver": "v0.4.90",
     "date": "2024-02-05",
@@ -224,6 +240,35 @@
         "product": "Node.js Agent",
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the Mongoose tracking does not work.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_86",
+    "ver": "v0.4.86",
+    "date": "2024-01-04",
+    "Lists": [
+      {
+        "ver": "v0.4.86",
+        "hash": "v0486",
+        "product": "Node.js Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added the agent options</p>",
+        "details": "<ul>\n<li>\n<p><strong>httpc_status_ignore</strong> <span class=\"type\">String</span></p>\n<p>Default <code>Empty</code></p>\n<p>Set the <code>HTTPC_ERROR</code> codes to ignore. For multiple values, use comma (,) as the delimiter.</p>\n<div class=\"language-ini codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">whatap.conf</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-ini codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">httpc_status_ignore</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">404,500</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n<li>\n<p><strong>httpc_status_ignore_set</strong> <span class=\"type\">String</span></p>\n<p>Default <code>Empty</code></p>\n<p><code>whatap.error.HTTPC_ERROR</code> is ignored. For multiple values, use comma (,) as the delimiter.</p>\n<div class=\"theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"><svg viewbox=\"0 0 14 16\"><path fill-rule=\"evenodd\" d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"></path></svg></span>Note</div><div class=\"admonitionContent_BuS1\"><p>Set it as <code>httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404</code>. In Statistics/Error Analysis, enter the value for <code>HTTPC_URL</code>.</p></div></div>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v0.4.86",
+        "hash": "v0486",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the MariaDB monitoring does not work.</p>"
+      },
+      {
+        "ver": "v0.4.86",
+        "hash": "v0486",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the SQL (MySQL, SQL Server) connection information output error.</p>"
       }
     ]
   },
@@ -256,31 +301,16 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_86",
-    "ver": "v0.4.86",
-    "date": "2024-01-04",
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_4_89",
+    "ver": "v0.4.89",
+    "date": "2024-01-22",
     "Lists": [
       {
-        "ver": "v0.4.86",
-        "hash": "v0486",
-        "product": "Node.js Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\">Feature</code> Added the agent options</p>",
-        "details": "<ul>\n<li>\n<p><strong>httpc_status_ignore</strong> <span class=\"type\">String</span></p>\n<p>Default <code>Empty</code></p>\n<p>Set the <code>HTTPC_ERROR</code> codes to ignore. For multiple values, use comma (,) as the delimiter.</p>\n<div class=\"language-ini codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">whatap.conf</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-ini codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">httpc_status_ignore</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">404,500</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n<li>\n<p><strong>httpc_status_ignore_set</strong> <span class=\"type\">String</span></p>\n<p>Default <code>Empty</code></p>\n<p><code>whatap.error.HTTPC_ERROR</code> is ignored. For multiple values, use comma (,) as the delimiter.</p>\n<div class=\"theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"><svg viewbox=\"0 0 14 16\"><path fill-rule=\"evenodd\" d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"></path></svg></span>Note</div><div class=\"admonitionContent_BuS1\"><p>Set it as <code>httpc_status_ignore_set=/a/b/c:400,/a/ab/c:404</code>. In Statistics/Error Analysis, enter the value for <code>HTTPC_URL</code>.</p></div></div>\n</li>\n</ul>"
-      },
-      {
-        "ver": "v0.4.86",
-        "hash": "v0486",
+        "ver": "v0.4.89",
+        "hash": "v0489",
         "product": "Node.js Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the issue where the MariaDB monitoring does not work.</p>"
-      },
-      {
-        "ver": "v0.4.86",
-        "hash": "v0486",
-        "product": "Node.js Agent",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed the SQL (MySQL, SQL Server) connection information output error.</p>"
+        "desc": "<li><code class=\"Fixed\">Fixed</code> Fixed the ONODE setting error.</li>"
       }
     ]
   }

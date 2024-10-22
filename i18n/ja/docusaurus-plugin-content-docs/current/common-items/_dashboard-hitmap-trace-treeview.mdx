@@ -1,6 +1,6 @@
 ### ツリービュー {#anlaysis-trace-tree-view}
 
-トランザクションの実行過程をツリー形式で確認するには、<Cmdname sid="TTL06127" className="uitext" />タブを選択してください。 各トランザクションとそれに属するトレースの詳細、トレースの開始時刻と所要時間、呼び出し関係を確認できます。 ダイアグラムの各区間を選択すると、そのステップが位置するツリービューに移動します。
+トランザクションの実行過程をツリー形式で確認するには、<Cmdname sid="TTL06127" className="uitext" />タブを選択します。 各トランザクションとそれに属するトレースの詳細、トレースの開始時刻と所要時間、呼び出し関係を確認できます。 ダイアグラムの各区間を選択すると、そのステップが位置するツリービューに移動します。
 
 <Xclude product='php,nodejs,golang'>
 
@@ -14,17 +14,17 @@
 
 </InDoc>
 
-- <Cmdname sid="BTN06368" className="uitext" />：各区間別の遂行情報に表示されたテキストを一行で表示して、ツリー形式を簡易に整理することができます。
+- <Cmdname sid="BTN06368" className="uitext" />：各区間別の実行情報に表示されたテキストを一行で表示し、ツリー形式をシンプルに整理できます。
 
-- <Cmdname sid="BTN06369" className="uitext" />：各区間別の遂行情報に表示されたテキストを改行してすべて表示します。
+- <Cmdname sid="BTN06369" className="uitext" />：各区間別の実行情報に表示されたテキストを改行してすべて表示します。
 
 - <Cmdname sid="BTN06327" className="uitext" />：最長の経路で移動できます。
 
 - ![チャートアイコン](/img/ic-bar-chart.svg) <Cmdname sid="BTN06743" className="uitext" />：経過時間を棒チャートで表示します。
 
-- ![時間アイコン](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />：各区間別のタイムスタンプ、ギャップ、経過時間をテキスト形式で表示します。
+- ![時間アイコン](/img/ic-custom-time.svg) <Cmdname sid="BTN06744" className="uitext" />：各区間ごとのタイムスタンプ、ギャップ、経過時間をテキスト形式で表示します。
 
-  - 8秒以上：<span class='etrs'>超過した</span>状態で<span class='etrs'>赤色</span>で表現します。
+  - 8秒以上：<span class='etrs'>超過遅延</span>状態で<span class='etrs'>赤色</span>で表現します。
 
   - 3秒以上8秒未満：<span class='ov5ud10'>遅延</span>状態で<span class='ov5ud10'>オレンジ</span>で表現します。
 

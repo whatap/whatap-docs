@@ -4,7 +4,7 @@ title: Agent deletion
 description: It explains how to delete the server agent.
 keywords:
   - Server
-  - Delete
+  - Close Pending
   - Management
 ---
 
@@ -42,6 +42,12 @@ To delete the installed agent, execute the following command.
   ```bash
   pkgrm whatap-infra
   rm -rf /usr/whatap/infra
+  ```
+
+- **HP-UX**
+
+  ```bash title='IA64 / PA-RISC'
+  swremove whatap-infra
   ```
 
 ### Windows
