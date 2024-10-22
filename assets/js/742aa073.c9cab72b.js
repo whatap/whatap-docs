@@ -748,6 +748,13 @@ function _createMdxContent(props) {
                 className: "uitext"
               }), " 메뉴로 이동하면 선택한 인스턴스가 적용되지 않는 문제 수정"]
             }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "0",
+                children: "Fixed"
+              }), " 에이전트를 설치하지 않은 프로젝트로 진입하면 조직 정보가 해제되는 문제 수정"]
+            }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
           id: "mysql-v2-postgresql-v2",
