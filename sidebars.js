@@ -1506,6 +1506,7 @@ const sidebars = {
             'postgresql/agent-xos-settings',
           ],
         },
+        'postgresql/cloudsettings',
         'postgresql/agent-manage',
         {
           type: 'category',
@@ -1842,6 +1843,7 @@ const sidebars = {
             'oracle/agent-xos-settings',
           ],
         },
+        'oracle/cloudsettings',
         'oracle/agent-manage',
         {
           type: 'category',
@@ -2010,6 +2012,7 @@ const sidebars = {
           ],
         },
         'oracle-pro/agent-settings',
+        'oracle-pro/cloudsettings',
         'oracle-pro/agent-manage',
         {
           type: 'category',
@@ -2203,6 +2206,7 @@ const sidebars = {
             'mysql/agent-xos-settings',
           ],
         },
+        'mysql/cloudsettings',
         'mysql/agent-manage',
         {
           type: 'category',
