@@ -1326,15 +1326,10 @@ function support_env_createMdxContent(props) {
               })
             }), (0,jsx_runtime.jsxs)(_components.tr, {
               children: [(0,jsx_runtime.jsx)(_components.td, {
-                rowSpan: "2",
                 children: "Windows"
               }), (0,jsx_runtime.jsx)(_components.td, {
                 children: "Windows 2008 R2 이상"
               })]
-            }), (0,jsx_runtime.jsx)(_components.tr, {
-              children: (0,jsx_runtime.jsx)(_components.td, {
-                children: "Windows 7 SP1 버전 이상"
-              })
             })]
           })]
         })
