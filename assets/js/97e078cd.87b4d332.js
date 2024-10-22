@@ -132,12 +132,24 @@ const toc = [{
   "id": "kubernetes-환경에서의-리눅스-프로세스-상태",
   "level": 5
 }, {
-  "value": "agent_status_summary",
+  "value": "에이전트 상태(<code>agent_status_summary</code>) 지표",
   "id": "agent_status_summary",
   "level": 3
 }, {
   "value": "Fields",
   "id": "agent_status_summary_filed",
+  "level": 4
+}, {
+  "value": "Ingress(<code>kube_ingress</code>) 지표",
+  "id": "kube_ingress",
+  "level": 3
+}, {
+  "value": "Tags",
+  "id": "kube_ingress-tags",
+  "level": 4
+}, {
+  "value": "Fields",
+  "id": "kube_ingress-fields",
   "level": 4
 }];
 function _createMdxContent(props) {
@@ -3398,7 +3410,7 @@ function _createMdxContent(props) {
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "사용자 ID 또는 사용자 이름"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "없음"
+              children: "-"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "String"
             }), (0,jsx_runtime.jsx)(_components.td, {
@@ -3410,7 +3422,7 @@ function _createMdxContent(props) {
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "프로세스 상태"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "없음"
+              children: "-"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "String"
             }), (0,jsx_runtime.jsx)(_components.td, {
@@ -3434,7 +3446,7 @@ function _createMdxContent(props) {
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "프로세스가 열어둔 파일 디스크립터 수"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "없음"
+              children: "-"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "int"
             }), (0,jsx_runtime.jsx)(_components.td, {
@@ -3458,7 +3470,7 @@ function _createMdxContent(props) {
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "프로세스가 생성한 스레드 수"
             }), (0,jsx_runtime.jsx)(_components.td, {
-              children: "없음"
+              children: "-"
             }), (0,jsx_runtime.jsx)(_components.td, {
               children: "int"
             }), (0,jsx_runtime.jsx)(_components.td, {
@@ -3590,9 +3602,11 @@ function _createMdxContent(props) {
       })]
     }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
+      children: [(0,jsx_runtime.jsxs)(_components.h3, {
         id: "agent_status_summary",
-        children: "agent_status_summary"
+        children: ["에이전트 상태(", (0,jsx_runtime.jsx)(_components.code, {
+          children: "agent_status_summary"
+        }), ") 지표"]
       }), (0,jsx_runtime.jsx)(_components.p, {
         children: "에이전트 상태와 관련한 지표를 10초 간격으로 수집한 카테고리입니다."
       })]
@@ -3757,6 +3771,232 @@ function _createMdxContent(props) {
               }), ": 노드 에이전트 / ", (0,jsx_runtime.jsx)(_components.code, {
                 children: "10"
               }), ": 마스터 에이전트"]
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,jsx_runtime.jsxs)(_components.h3, {
+        id: "kube_ingress",
+        children: ["Ingress(", (0,jsx_runtime.jsx)(_components.code, {
+          children: "kube_ingress"
+        }), ") 지표"]
+      }), (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.p, {
+          children: ["쿠버네티스 에이전트 1.7.13 버전 이상이 필요합니다. 에이전트 업데이트에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
+            href: "agent-update",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })]
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "Ingress 리소스에 대한 메타 데이터와 관련 정보를 모니터링할 때 수집됩니다."
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "대상: 클러스터 프로젝트, 네임스페이스 프로젝트"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "수집 간격: 30초"
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "통계 데이터: 5분"
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,jsx_runtime.jsx)(_components.h4, {
+        id: "kube_ingress-tags",
+        children: "Tags"
+      }), (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "태그명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "단위"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "타입"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "ingressUid"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ingress 리소스의 고유 ID"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "ingressName"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ingress 리소스의 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "ingressNamespace"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ingress 리소스의 네임스페이스"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "creationTimeMillis"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ingress 리소스 생성 시간"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "밀리초(ms)"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Long"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "ingressClassName"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ingress 클래스 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "String"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "ingressLoadBalancerIps"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "Ingress 로드밸런서 IP"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,jsx_runtime.jsx)(_components.h4, {
+        id: "kube_ingress-fields",
+        children: "Fields"
+      }), (0,jsx_runtime.jsxs)(_components.table, {
+        children: [(0,jsx_runtime.jsx)(_components.thead, {
+          children: (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.th, {
+              children: "필드명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "설명"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "단위"
+            }), (0,jsx_runtime.jsx)(_components.th, {
+              children: "타입"
+            })]
+          })
+        }), (0,jsx_runtime.jsxs)(_components.tbody, {
+          children: [(0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "host"
+              })
+            }), (0,jsx_runtime.jsxs)(_components.td, {
+              children: ["Ingress 리소스가 수신하는 호스트 이름", (0,jsx_runtime.jsx)("br", {}), "(", (0,jsx_runtime.jsx)(_components.code, {
+                children: "*"
+              }), "인 경우 모든 호스트에 대해 적용됨)"]
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "path"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "특정 호스트 하위에서 요청 경로"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "backendServiceName"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "백엔드로 전달되는 서비스의 이름"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "backendServicePort"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "백엔드로 전달되는 포트 번호"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "backendServiceUid"
+              })
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "백엔드로 전달되는 서비스의 uid"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
+            })]
+          }), (0,jsx_runtime.jsxs)(_components.tr, {
+            children: [(0,jsx_runtime.jsx)(_components.td, {
+              children: (0,jsx_runtime.jsx)(_components.code, {
+                children: "pathType"
+              })
+            }), (0,jsx_runtime.jsxs)(_components.td, {
+              children: ["경로 일치 방식 (예, ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "Prefix"
+              }), ", ", (0,jsx_runtime.jsx)(_components.code, {
+                children: "Exact"
+              }), ")"]
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "-"
+            }), (0,jsx_runtime.jsx)(_components.td, {
+              children: "List"
             })]
           })]
         })]

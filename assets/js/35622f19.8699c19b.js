@@ -62,8 +62,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/server-hpux/server-hpux-1_3_4"
   },
   "next": {
-    "title": "Kubernetes Agent v1.7.12",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_12"
+    "title": "Kubernetes Agent v1.7.13",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_13"
   }
 };
 const assets = {

@@ -27,7 +27,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/k8s/k8s-previous",
   "title": "Kubernetes Agent 지난 버전",
-  "description": "* Kubernetes Agent v1.7.2",
+  "description": "* Kubernetes Agent v1.7.3",
   "source": "@site/docs/release-notes/k8s/k8s-previous.mdx",
   "sourceDirName": "release-notes/k8s",
   "slug": "/release-notes/k8s/k8s-previous",
@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Kubernetes Agent v1.7.3",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_3"
+    "title": "Kubernetes Agent v1.7.4",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_4"
   },
   "next": {
     "title": "DBX Agent Release Notes",
@@ -71,6 +71,13 @@ function _createMdxContent(props) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
     children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "k8s-1_7_3",
+          children: "Kubernetes Agent v1.7.3"
+        })
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "k8s-1_7_2",
