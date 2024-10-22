@@ -55721,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or enter another search term.",
+    "zh": "Please enter the product name in English or another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56261,7 +56261,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間バッチ初期化",
+    "ja": "時間一括初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -57051,10 +57051,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
+    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
+    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57527,10 +57527,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
@@ -57842,10 +57842,10 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTapの最新エージェントバージョンです。プレビューバージョンを選択した場合、将来ノードが追加されると、そのノードが起動した時点の最新のエージェントバージョンがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
-    "zh": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "zh": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "service_id": "DSC08383"
   },
   "ITM08384": {
@@ -58178,10 +58178,10 @@
     "service_id": "DSC08430"
   },
   "DSC08431": {
-    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
-    "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した時点での監視をお勧めします。",
+    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
+    "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した場合に備えて監視することをお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
-    "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
+    "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
     "service_id": "DSC08431"
   },
   "DSC08432": {
@@ -58220,10 +58220,10 @@
     "service_id": "DSC08436"
   },
   "DSC08437": {
-    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
+    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
     "ja": "<b> {resource}使用率</b>が平均{avg}から最大{max}まで増加し、<b>断続的に高い負荷が発生する可能性</b>があります。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}에서 최대 {max}까지 증가하여 <b>간헐적으로 높은 부하가 발생할 가능성</b>이 있습니다.",
-    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
+    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
     "service_id": "DSC08437"
   },
   "DSC08438": {
@@ -58563,10 +58563,10 @@
     "service_id": "CNT08485"
   },
   "CNT08486": {
-    "en": "Supported version {version}",
+    "en": "Supported versions {version}",
     "ja": "サポートバージョン{version}",
     "ko": "지원 버전 {version}",
-    "zh": "Supported version {version}",
+    "zh": "Supported versions {version}",
     "service_id": "CNT08486"
   },
   "CNT08487": {
@@ -59102,7 +59102,7 @@
   },
   "TLT08565": {
     "en": "Indicates the number of page loads.",
-    "ja": "ページロードの数を示します。",
+    "ja": "ページロード数を示します。",
     "ko": "페이지 로드 수를 나타냅니다.",
     "zh": "Indicates the number of page loads.",
     "service_id": "TLT08565"
@@ -59213,10 +59213,10 @@
     "service_id": "BTN08580"
   },
   "DSC08581": {
-    "en": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "en": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "ja": "イベントの対象を変更した場合は、アラート通知の件数が変わる可能性があるため、<span class=\"{class}\">「シミュレーション」ボタンをもう一度実行してください。</span>",
     "ko": "이벤트 대상을 변경한 경우, 알림 건수가 달라질 수 있으니 <span class=\"{class}\">“시뮬레이션” 버튼을 다시 실행하세요.</span>",
-    "zh": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "zh": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "service_id": "DSC08581"
   },
   "DSC08582": {
@@ -59305,7 +59305,7 @@
   },
   "DSC08594": {
     "en": "{highlight} and additional pattern registration may be required depending on simulation results.",
-    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "zh": "{highlight} and additional pattern registration may be required depending on simulation results.",
     "service_id": "DSC08594"
@@ -59381,10 +59381,10 @@
     "service_id": "TTL08604"
   },
   "TLT08605": {
-    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "ja": "Browserモニタリングで有意味な統計グループを持つために、URLパスを正規化してページグループという名前で指定します。 URLパス 単位の分析に意味がないと判断した数字、日付などを疑問符(?)で置き換えます。 ",
     "ko": "브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL Path를 정규화해 페이지 그룹이라는 이름으로 제공합니다. URL Path 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다. ",
-    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "service_id": "TLT08605"
   },
   "DSC08606": {
@@ -59402,10 +59402,10 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
+    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
-    "zh": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
+    "zh": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
     "service_id": "DSC08608"
   },
   "ITM08609": {
@@ -59635,7 +59635,7 @@
   "DSC08641": {
     "en": "Collect cloud metrics by installing the {value} template provided by WhaTap. <br />Please refer to the guide link below to install and set up {value} for metrics collection.",
     "ja": "WhaTap Monitoringが提供する{value}テンプレートをインストールしてクラウドメトリクスを収集します。 <br />以下のガイドリンクを参照して、メトリクス収集用の{value}のインストールと設定を進めます。",
-    "ko": "와탭이 제공하는 {value}템플릿을 설치하여 클라우드 메트릭을 수집합니다. <br />아래 가이드 링크를 참조하여 메트릭 수집을 위한 {value} 설치 및 설정을 진행하세요.",
+    "ko": "와탭이 제공하는 {value} 템플릿을 설치하여 클라우드 메트릭을 수집합니다. <br />아래 가이드 링크를 참조하여 메트릭 수집을 위한 {value} 설치 및 설정을 진행하세요.",
     "zh": "Collect cloud metrics by installing the {value} template provided by WhaTap. <br />Please refer to the guide link below to install and set up {value} for metrics collection.",
     "service_id": "DSC08641"
   },
@@ -59711,16 +59711,16 @@
   },
   "DSC08652": {
     "en": "<code class='_copy'>{ingressName}</code> Ingress was created at <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "zh": "<code class='_copy'>{ingressName}</code> Ingress was created at <code>{creationTime}</code>.",
     "service_id": "DSC08652"
   },
   "DSC08653": {
-    "en": "Additionally, this <code class='_copy'>{backend}</code> service of type <code class='_copy'>{serviceType}</code> has <code>{totalContainers}</code> container ports. Traffic is being routed to <code class='_copy'>{targetPort}</code>.",
+    "en": "Additionally, this <code class='_copy'>{backend}</code> service of type <code class='_copy'>{serviceType}</code> has <code class='_copy'>{targetPort}</ You are routing traffic to <code>{totalContainers}</code> containers using code>port.",
     "ja": "さらに、<code class='_copy'>{serviceType}</code> タイプのこの <code class='_copy'>{backend}</code> サービスは、<code>{totalContainers}</code> 件のコンテナポート<code class='_copy'>{targetPort}</code>へトラフィックをルーティングしています。",
-    "ko": "추가로 <code class='_copy'>{serviceType}</code> 타입의 이 <code class='_copy'>{backend}</code> 서비스는 <code>{totalContainers}</code>개의 컨테이너 포트 <code class='_copy'>{targetPort}</code>(으)로 트래픽을 라우팅하고 있습니다.",
-    "zh": "Additionally, this <code class='_copy'>{backend}</code> service of type <code class='_copy'>{serviceType}</code> has <code>{totalContainers}</code> container ports. Traffic is being routed to <code class='_copy'>{targetPort}</code>.",
+    "ko": "추가로 <code class='_copy'>{serviceType}</code> 타입의 이 <code class='_copy'>{backend}</code> 서비스는 <code class='_copy'>{targetPort}</code>포트를 사용하는 <code>{totalContainers}</code>개의 컨테이너로 트래픽을 라우팅하고 있습니다.",
+    "zh": "Additionally, this <code class='_copy'>{backend}</code> service of type <code class='_copy'>{serviceType}</code> has <code class='_copy'>{targetPort}</ You are routing traffic to <code>{totalContainers}</code> containers using code>port.",
     "service_id": "DSC08653"
   },
   "DSC08654": {
@@ -59836,10 +59836,10 @@
     "service_id": "TTL08669"
   },
   "DSC08670": {
-    "en": "You can enter up to {maxLength} characters.",
-    "ja": "最大{maxLength}文字まで入力できます。",
-    "ko": "최대 {maxLength}자까지 입력 가능합니다.",
-    "zh": "You can enter up to {maxLength} characters.",
+    "en": "You can enter less than {maxLength} bytes.",
+    "ja": "{maxLength} byte未満まで入力可能です。",
+    "ko": "{maxLength}byte 미만까지 입력 가능합니다.",
+    "zh": "You can enter less than {maxLength} bytes.",
     "service_id": "DSC08670"
   },
   "TTL08671": {
@@ -59848,6 +59848,48 @@
     "ko": "다운로드 명령어",
     "zh": "Download command",
     "service_id": "TTL08671"
+  },
+  "TTL08672": {
+    "en": "IP load performance trend",
+    "ja": "IP負荷パフォーマンスの推移",
+    "ko": "IP 로드 성능 추이",
+    "zh": "IP load performance trend",
+    "service_id": "TTL08672"
+  },
+  "TTL08673": {
+    "en": "Top 10 IP Load Times",
+    "ja": "IP ロード時間 Top10",
+    "ko": "IP 로드 시간 Top10",
+    "zh": "Top 10 IP Load Times",
+    "service_id": "TTL08673"
+  },
+  "TTL08674": {
+    "en": "Top 10 IP Load Count",
+    "ja": "IP負荷数 Top10",
+    "ko": "IP 로드 수 Top10",
+    "zh": "Top 10 IP Load Count",
+    "service_id": "TTL08674"
+  },
+  "TLT08675": {
+    "en": "There is no registered processing history.",
+    "ja": "登録された処理履歴はありません。",
+    "ko": "등록된 처리내역이 없습니다.",
+    "zh": "There is no registered processing history.",
+    "service_id": "TLT08675"
+  },
+  "TTL08676": {
+    "en": "IP Load Timeline",
+    "ja": "IPロードタイムライン",
+    "ko": "IP 로드 타임라인",
+    "zh": "IP Load Timeline",
+    "service_id": "TTL08676"
+  },
+  "DSC08677": {
+    "en": "If you register processing details, the repeat notification (escalation) function for the event will stop.",
+    "ja": "処理履歴を登録すると、そのイベントの繰り返し通知（エスカレーション）機能は停止します。",
+    "ko": "처리내역을 등록하면 해당 이벤트의 반복 알림(에스컬레이션) 기능은 중지됩니다.",
+    "zh": "If you register processing details, the repeat notification (escalation) function for the event will stop.",
+    "service_id": "DSC08677"
   },
   "": {
     "en": "#VALUE!",
@@ -60696,6 +60738,11 @@
     "en": "Agent Update",
     "ja": "エージェントアップデート",
     "ko": "에이전트 업데이트"
+  },
+  "side_dbCloudSetting": {
+    "en": "Cloud Settings",
+    "ja": "クラウド設定",
+    "ko": "클라우드 설정"
   },
   "side_event": {
     "en": "Alert",
@@ -61805,9 +61852,9 @@
     "ja": "リソース状況",
     "ko": "리소스 현황"
   },
-  "side_dbCloudSetting": {
-    "en": "Cloud Settings",
-    "ja": "クラウド設定",
-    "ko": "클라우드 설정"
+  "side_ingressList": {
+    "en": "Ingress List",
+    "ja": "Ingress List",
+    "ko": "Ingress 목록"
   }
 }
