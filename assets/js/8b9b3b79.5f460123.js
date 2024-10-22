@@ -891,7 +891,7 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-javascript",
               metastring: "title=\"ECMAScript Module(ESM)\"",
-              children: "var WhatapAgent = require('whatap').NodeAgent;\nimport http from 'http';\nimport setupApp from '../src/app';\nlet server = null;\nconst port = normalizePort(process.env.PORT || '3000');\n"
+              children: "import WhatapAgent from 'whatap';\nWhatapAgent.NodeAgent;\n"
             })
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
             type: "note",

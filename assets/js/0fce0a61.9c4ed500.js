@@ -49,6 +49,53 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
+        children: "Features"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 10월 22일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "../features/introduction",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Reference​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Beta",
+            children: "Beta"
+          }), " 피쳐 프로젝트(", (0,jsx_runtime.jsx)("code", {
+            class: "Features",
+            children: "Features"
+          }), ") ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-overview2",
+            children: "NGINX"
+          }), " ", (0,jsx_runtime.jsx)("b", {
+            children: "베타"
+          }), " 서비스 시작"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Beta",
+            children: "Beta"
+          }), " 피쳐 프로젝트(", (0,jsx_runtime.jsx)("code", {
+            class: "Features",
+            children: "Features"
+          }), ") ", (0,jsx_runtime.jsx)("code", {
+            class: "changelog-overview2",
+            children: "APACHE"
+          }), " ", (0,jsx_runtime.jsx)("b", {
+            children: "베타"
+          }), " 서비스 시작"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
         children: "Database"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
@@ -5594,7 +5641,7 @@ const overview_frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-10-16T19:30',
+	date: '2024-10-22T15:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -5609,7 +5656,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-10-16T19:30:00.000Z",
+  "date": "2024-10-22T15:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -5637,7 +5684,7 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-10-16T19:30",
+    "date": "2024-10-22T15:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
