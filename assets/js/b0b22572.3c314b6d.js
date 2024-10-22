@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[58464],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39273],{
 
 /***/ 57666:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1343,30 +1343,44 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "메트릭스 이벤트는 기본 이벤트(애플리케이션 이벤트, 서버 이벤트 등)보다 구체적이고 복잡한 이벤트를 설정할 때 사용합니다. 프로젝트에서 실시간으로 수집 중인 메트릭스 데이터를 기반으로 이벤트를 설정할 수 있습니다."
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "metrics-intro",
-                children: "다음 문서"
-              }), "를 참조하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+        product: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "metrics-intro",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["새로운 UI를 적용하여 사용자 편의성이 강화된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "side_eventSetting",
+                  className: "uitext"
+                }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                  class: "newfunc",
+                  children: "New"
+                }), "  메뉴에서 메트릭스 이벤트를 추가할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "metric-warning-notice-new",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
+              }), "\n"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["새로운 UI를 적용하여 사용자 편의성이 강화된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_eventSetting",
-                className: "uitext"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                class: "newfunc",
-                children: "New"
-              }), "  메뉴에서 메트릭스 이벤트를 추가할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "metric-warning-notice-new",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            }), "\n"]
-          }), "\n"]
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        product: "amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-intro",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          })
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1883,7 +1897,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 45065:
+/***/ 41359:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1908,25 +1922,25 @@ const frontMatter = {
 	title: '메트릭스 경고 알림',
 	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
 	keywords: [
-		'Tibero',
 		'경고 알림',
 		'메트릭스 이벤트',
-		'데이터베이스 모니터링'
+		'서버'
 	],
+	toc_max_heading_level: 3,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "tibero/metric-warning-notice",
+  "id": "server/metric-warning-notice",
   "title": "메트릭스 경고 알림",
   "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-  "source": "@site/docs/tibero/metric-warning-notice.mdx",
-  "sourceDirName": "tibero",
-  "slug": "/tibero/metric-warning-notice",
-  "permalink": "/whatap-docs/tibero/metric-warning-notice",
+  "source": "@site/docs/server/metric-warning-notice.mdx",
+  "sourceDirName": "server",
+  "slug": "/server/metric-warning-notice",
+  "permalink": "/whatap-docs/server/metric-warning-notice",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/tibero/metric-warning-notice.mdx",
+  "editUrl": "undefined/docs/server/metric-warning-notice.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -1934,21 +1948,21 @@ const metadata = {
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
     "keywords": [
-      "Tibero",
       "경고 알림",
       "메트릭스 이벤트",
-      "데이터베이스 모니터링"
+      "서버"
     ],
+    "toc_max_heading_level": 3,
     "isTranslationMissing": false
   },
-  "sidebar": "tiberoSidebar",
+  "sidebar": "serverSidebar",
   "previous": {
     "title": "이벤트 설정",
-    "permalink": "/whatap-docs/tibero/warning-notice-v2"
+    "permalink": "/whatap-docs/server/warning-notice-v2"
   },
   "next": {
     "title": "알림 메시지 사용자 정의",
-    "permalink": "/whatap-docs/tibero/set-notification-message"
+    "permalink": "/whatap-docs/server/set-notification-message"
   }
 };
 const assets = {
@@ -1961,10 +1975,372 @@ const assets = {
 
 
 
-const toc = [..._common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+const toc = [..._common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, {
+  "value": "복합 메트릭스 이벤트 템플릿",
+  "id": "composite-metrics-template",
+  "level": 2
+}, {
+  "value": "CPU",
+  "id": "cpu",
+  "level": 3
+}, {
+  "value": "<em><strong>CPU % is too high</strong></em>",
+  "id": "cpu--is-too-high",
+  "level": 4
+}, {
+  "value": "<em><strong>CPU User % is too high</strong></em>",
+  "id": "cpu-user--is-too-high",
+  "level": 4
+}, {
+  "value": "<em><strong>The number of agents with high CPU SYS % is too large</strong></em>",
+  "id": "the-number-of-agents-with-high-cpu-sys--is-too-large",
+  "level": 4
+}, {
+  "value": "Disk",
+  "id": "disk",
+  "level": 3
+}, {
+  "value": "<em><strong>The Disk I/O is too high</strong></em>",
+  "id": "the-disk-io-is-too-high",
+  "level": 4
+}, {
+  "value": "<em><strong>The Disk Used % is too high</strong></em>",
+  "id": "the-disk-used--is-too-high",
+  "level": 4
+}, {
+  "value": "Network",
+  "id": "network",
+  "level": 3
+}, {
+  "value": "<em><strong>Network Traffic I/O is too high</strong></em>",
+  "id": "network-traffic-io-is-too-high",
+  "level": 4
+}, {
+  "value": "<em><strong>Network Packet I/O is too high</strong></em>",
+  "id": "network-packet-io-is-too-high",
+  "level": 4
+}, {
+  "value": "<em><strong>Network Error I/O is too high</strong></em>",
+  "id": "network-error-io-is-too-high",
+  "level": 4
+}];
 function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    blockquote: "blockquote",
+    code: "code",
+    em: "em",
+    h2: "h2",
+    h3: "h3",
+    h4: "h4",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "composite-metrics-template",
+        children: "복합 메트릭스 이벤트 템플릿"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["복합 메트릭스 이벤트 추가 시 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "+"
+          })
+        }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "create_new_composite_mxql_event",
+          className: "uitext"
+        }), " 외 템플릿을 선택해 사용할 수 있습니다. CPU, Disk I/O, Network I/O 지표가 설정한 임계치 기준에 따라 알림을 발생시키는 템플릿을 제공합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "server-composite-metrics-template.png",
+        desc: "서버 복합 메트릭스 이벤트 템플릿"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "cpu",
+        children: "CPU"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["CPU 관련 지표는 다음과 같습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "cpu"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "user_cpu"
+          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "system_cpu"
+          })]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "cpu--is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "CPU % is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 CPU 관련 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["CPU utilization rate of the ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), " in the last minute > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          }), " %"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "cpu-user--is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "CPU User % is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "user_cpu"
+        }), " 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["CPU User utilization rate of the ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), " in the last minute > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_} "
+          }), "%"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "the-number-of-agents-with-high-cpu-sys--is-too-large",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "The number of agents with high CPU SYS % is too large"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "system_cpu"
+        }), " 지표가 70% 이상인 서버의 개수가 관련 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["The number of agents with a CPU SYS of 70% or more in the last minute > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          })]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "disk",
+        children: "Disk"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "the-disk-io-is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "The Disk I/O is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 Disk I/O가 관련 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["In the last minute, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), "'s Disk I/O > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          }), " %"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "the-disk-used--is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "The Disk Used % is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 Disk User I/O가 관련 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["In the last minute,", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), "'s Disk Used > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          }), " %"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "network",
+        children: "Network"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "network-traffic-io-is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Network Traffic I/O is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 Network I/O 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["In the last minute, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), "'s Network Traffic I/O > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          }), " %"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "network-packet-io-is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Network Packet I/O is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 Network Packet I/O 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["In the last minute, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), "'s Network Packet I/O > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          }), " %"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "network-error-io-is-too-high",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Network Error I/O is too high"
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["최근 1분 동안 가장 높게 측정된 Network Error I/O 지표가 임계치 설정값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "${_rule_}"
+        }), ")의 조건(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: ">"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "<"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "="
+        }), ")과 일치 시 알림이 발생합니다. 해당 알림은 에이전트(oname)별로 발생합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "message",
+          className: "uitext"
+        }), " 예시는 다음과 같습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["In the last minute, The maximum value of the ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${oname}"
+          }), "'s Network Error I/O > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "${_rule_}"
+          }), " %"]
+        }), "\n"]
+      })]
+    })]
   });
 }
 function MDXContent(props = {}) {
@@ -1978,6 +2354,9 @@ function MDXContent(props = {}) {
       ...props
     })
   }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 

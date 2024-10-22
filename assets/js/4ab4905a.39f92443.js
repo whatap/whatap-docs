@@ -1,5 +1,106 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[75788],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[7885],{
+
+/***/ 33719:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64844);
+/* harmony import */ var _common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(57666);
+/* harmony import */ var _common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(34168);
+/* harmony import */ var _common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26859);
+
+
+const frontMatter = {
+	id: 'metric-warning-notice',
+	title: '메트릭스 경고 알림',
+	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
+	keywords: [
+		'경고 알림',
+		'메트릭스 이벤트',
+		'클라우드',
+		'Amazon CloudWatch'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "amazon-cloudwatch/metric-warning-notice",
+  "title": "메트릭스 경고 알림",
+  "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
+  "source": "@site/docs/amazon-cloudwatch/metric-warning-notice.mdx",
+  "sourceDirName": "amazon-cloudwatch",
+  "slug": "/amazon-cloudwatch/metric-warning-notice",
+  "permalink": "/whatap-docs/amazon-cloudwatch/metric-warning-notice",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/amazon-cloudwatch/metric-warning-notice.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "metric-warning-notice",
+    "title": "메트릭스 경고 알림",
+    "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
+    "keywords": [
+      "경고 알림",
+      "메트릭스 이벤트",
+      "클라우드",
+      "Amazon CloudWatch"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "amazoncloudwatchSidebar",
+  "previous": {
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/amazon-cloudwatch/set-notice"
+  },
+  "next": {
+    "title": "이벤트 수신 설정",
+    "permalink": "/whatap-docs/amazon-cloudwatch/set-receive-event"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+
+
+const toc = [..._common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 57666:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1343,30 +1444,44 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "메트릭스 이벤트는 기본 이벤트(애플리케이션 이벤트, 서버 이벤트 등)보다 구체적이고 복잡한 이벤트를 설정할 때 사용합니다. 프로젝트에서 실시간으로 수집 중인 메트릭스 데이터를 기반으로 이벤트를 설정할 수 있습니다."
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "metrics-intro",
-                children: "다음 문서"
-              }), "를 참조하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+        product: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "metrics-intro",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["새로운 UI를 적용하여 사용자 편의성이 강화된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "side_eventSetting",
+                  className: "uitext"
+                }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                  class: "newfunc",
+                  children: "New"
+                }), "  메뉴에서 메트릭스 이벤트를 추가할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "metric-warning-notice-new",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
+              }), "\n"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["새로운 UI를 적용하여 사용자 편의성이 강화된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_eventSetting",
-                className: "uitext"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                class: "newfunc",
-                children: "New"
-              }), "  메뉴에서 메트릭스 이벤트를 추가할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "metric-warning-notice-new",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            }), "\n"]
-          }), "\n"]
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        product: "amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-intro",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          })
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -1877,107 +1992,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 23075:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64844);
-/* harmony import */ var _common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(57666);
-/* harmony import */ var _common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(34168);
-/* harmony import */ var _common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26859);
-
-
-const frontMatter = {
-	id: 'metric-warning-notice',
-	title: '메트릭스 경고 알림',
-	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
-	keywords: [
-		'경고 알림',
-		'메트릭스 이벤트',
-		'Naver Cloud Monitoring',
-		'클라우드'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "ncloud/metric-warning-notice",
-  "title": "메트릭스 경고 알림",
-  "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-  "source": "@site/docs/ncloud/metric-warning-notice.mdx",
-  "sourceDirName": "ncloud",
-  "slug": "/ncloud/metric-warning-notice",
-  "permalink": "/whatap-docs/ncloud/metric-warning-notice",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/ncloud/metric-warning-notice.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "metric-warning-notice",
-    "title": "메트릭스 경고 알림",
-    "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-    "keywords": [
-      "경고 알림",
-      "메트릭스 이벤트",
-      "Naver Cloud Monitoring",
-      "클라우드"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "ncloudSidebar",
-  "previous": {
-    "title": "알림 설정하기",
-    "permalink": "/whatap-docs/ncloud/set-notice"
-  },
-  "next": {
-    "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/ncloud/set-receive-event"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-
-
-
-const toc = [..._common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 

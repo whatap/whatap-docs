@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12024],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[32398],{
 
 /***/ 57666:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1757,30 +1757,44 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "메트릭스 이벤트는 기본 이벤트(애플리케이션 이벤트, 서버 이벤트 등)보다 구체적이고 복잡한 이벤트를 설정할 때 사용합니다. 프로젝트에서 실시간으로 수집 중인 메트릭스 데이터를 기반으로 이벤트를 설정할 수 있습니다."
         })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "metrics-intro",
-                children: "다음 문서"
-              }), "를 참조하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
+        product: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "metrics-intro",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["새로운 UI를 적용하여 사용자 편의성이 강화된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                  sid: "side_eventSetting",
+                  className: "uitext"
+                }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+                  class: "newfunc",
+                  children: "New"
+                }), "  메뉴에서 메트릭스 이벤트를 추가할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "metric-warning-notice-new",
+                  children: "다음 문서"
+                }), "를 참조하세요."]
+              }), "\n"]
             }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["새로운 UI를 적용하여 사용자 편의성이 강화된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_eventSetting",
-                className: "uitext"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-                class: "newfunc",
-                children: "New"
-              }), "  메뉴에서 메트릭스 이벤트를 추가할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "metric-warning-notice-new",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            }), "\n"]
-          }), "\n"]
+          })
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        product: "amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["메트릭스에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "metrics-intro",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          })
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -2297,7 +2311,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 4350:
+/***/ 37348:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2323,25 +2337,25 @@ const frontMatter = {
 	title: '메트릭스 경고 알림',
 	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
 	keywords: [
-		'SQL Server',
+		'Oracle',
 		'경고 알림',
 		'메트릭스 이벤트',
-		'데이터베이스 모니터링'
+		'데이터베이스'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/metric-warning-notice",
+  "id": "oracle/metric-warning-notice",
   "title": "메트릭스 경고 알림",
   "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
-  "source": "@site/docs/mssql/metric-warning-notice.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/metric-warning-notice",
-  "permalink": "/whatap-docs/mssql/metric-warning-notice",
+  "source": "@site/docs/oracle/metric-warning-notice.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/metric-warning-notice",
+  "permalink": "/whatap-docs/oracle/metric-warning-notice",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/metric-warning-notice.mdx",
+  "editUrl": "undefined/docs/oracle/metric-warning-notice.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2349,21 +2363,21 @@ const metadata = {
     "title": "메트릭스 경고 알림",
     "description": "구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.",
     "keywords": [
-      "SQL Server",
+      "Oracle",
       "경고 알림",
       "메트릭스 이벤트",
-      "데이터베이스 모니터링"
+      "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "이벤트 설정",
-    "permalink": "/whatap-docs/mssql/warning-notice-v2"
+    "permalink": "/whatap-docs/oracle/warning-notice-v2"
   },
   "next": {
     "title": "알림 메시지 사용자 정의",
-    "permalink": "/whatap-docs/mssql/set-notification-message"
+    "permalink": "/whatap-docs/oracle/set-notification-message"
   }
 };
 const assets = {
