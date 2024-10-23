@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "previewSidebar",
   "previous": {
-    "title": "Preview Release Notes",
-    "permalink": "/whatap-docs/release-notes/preview/"
+    "title": "Preview 2.11.0.a",
+    "permalink": "/whatap-docs/release-notes/preview/preview-2_11_0x"
   },
   "next": {
     "title": "Preview 2.9.0.a",
