@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[38225],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[88879],{
 
-/***/ 70509:
+/***/ 46559:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'server-solaris-1_3_4',
-	title: 'Server Solaris Agent v1.3.4',
+	id: 'server-aix-1_3_4',
+	title: 'Server AIX Agent v1.3.4',
 	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/server-solaris/server-solaris-1_3_4",
-  "title": "Server Solaris Agent v1.3.4",
+  "id": "release-notes/server-aix/server-aix-1_3_4",
+  "title": "Server AIX Agent v1.3.4",
   "description": "2024년 09월 19일",
-  "source": "@site/docs/release-notes/server-solaris/server-solaris-1.3.4.mdx",
-  "sourceDirName": "release-notes/server-solaris",
-  "slug": "/release-notes/server-solaris/server-solaris-1_3_4",
-  "permalink": "/whatap-docs/release-notes/server-solaris/server-solaris-1_3_4",
+  "source": "@site/docs/release-notes/server-aix/server-aix-1.3.4.mdx",
+  "sourceDirName": "release-notes/server-aix",
+  "slug": "/release-notes/server-aix/server-aix-1_3_4",
+  "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/server-solaris/server-solaris-1.3.4.mdx",
+  "editUrl": "undefined/docs/release-notes/server-aix/server-aix-1.3.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "server-solaris-1_3_4",
-    "title": "Server Solaris Agent v1.3.4",
+    "id": "server-aix-1_3_4",
+    "title": "Server AIX Agent v1.3.4",
     "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server AIX Agent v1.2.7",
-    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_2_7"
+    "title": "Server AIX Agent v1.3.5",
+    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_5"
   },
   "next": {
-    "title": "Server HP-UX",
-    "permalink": "/whatap-docs/release-notes/server-hpux/server-hpux-1_3_4"
+    "title": "Server AIX Agent v1.2.7",
+    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_2_7"
   }
 };
 const assets = {
@@ -101,36 +101,16 @@ function _createMdxContent(props) {
             children: "Fixed"
           }), " 에이전트를 최초 구동 후 OID 값을 고정하도록 개선"]
         }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "0",
-            children: "Fixed"
-          }), " Oracle Enterprise Edition 구동 환경에서 프로세스 정보를 수집할 때 에이전트가 멈추는 문제 수정"]
-        }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "info",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "다운로드"
-        }), ": Server Agent Solaris v1.3.4"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/sunos/11.2/whatap-infra.1.3.4.SPARC.pkg.tar.gz",
-              children: "Solaris 11.2 다운로드"
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/sunos/11/whatap-infra.1.3.4.SPARC.pkg.tar.gz",
-              children: "Solaris 11.3 다운로드"
-            })
-          }), "\n"]
-        }), "\n"]
+        }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/aix/noarch/whatap-infra-1.2-7.aix6.1.noarch.rpm",
+          children: "Server Agent AIX v1.3.4"
+        })]
       })]
     })]
   });

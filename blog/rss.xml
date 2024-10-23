@@ -4,7 +4,7 @@
         <title>WhaTap Docs Blog</title>
         <link>https://docs.whatap.io/whatap-docs/blog</link>
         <description>WhaTap Docs Blog</description>
-        <lastBuildDate>Tue, 22 Oct 2024 15:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Oct 2024 15:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[서비스 개요]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/overview</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/overview</guid>
-            <pubDate>Tue, 22 Oct 2024 15:30:00 GMT</pubDate>
+            <pubDate>Wed, 23 Oct 2024 15:30:00 GMT</pubDate>
             <description><![CDATA[New Feature Overview]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
@@ -21,6 +21,14 @@
 <br>
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
+<li>
+<code class="changelog-overview">Server</code>
+<code class="changelog-date">2024년 10월 23일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_9_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.9.7​</a></code>
+<ul>
+<li><code class="Feature">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 구성 정보</span> 메뉴에서 목록 내 선택 항목 <span class="uitext">삭제</span> 기능 추가</li>
+</ul>
+</li>
 <li>
 <code class="changelog-overview">Features</code>
 <code class="changelog-date">2024년 10월 22일</code>

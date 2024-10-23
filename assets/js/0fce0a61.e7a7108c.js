@@ -49,6 +49,41 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
+        children: "Server"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 10월 23일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_9_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.9.7​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "서버 목록"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "서버 구성 정보"
+          }), " 메뉴에서 목록 내 선택 항목 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "삭제"
+          }), " 기능 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
         children: "Features"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
@@ -5641,7 +5676,7 @@ const overview_frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-10-22T15:30',
+	date: '2024-10-23T15:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -5656,7 +5691,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-10-22T15:30:00.000Z",
+  "date": "2024-10-23T15:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -5684,7 +5719,7 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-10-22T15:30",
+    "date": "2024-10-23T15:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",

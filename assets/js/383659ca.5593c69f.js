@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[94215],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[74607],{
 
-/***/ 86485:
+/***/ 56754:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'server-hpux-1_3_4',
-	title: 'Server HP-UX Agent v1.3.4',
+	id: 'server-aix-1_3_5',
+	title: 'Server AIX Agent v1.3.5',
 	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/server-hpux/server-hpux-1_3_4",
-  "title": "Server HP-UX Agent v1.3.4",
-  "description": "2024년 09월 19일",
-  "source": "@site/docs/release-notes/server-hpux/server-hpux-1.3.4.mdx",
-  "sourceDirName": "release-notes/server-hpux",
-  "slug": "/release-notes/server-hpux/server-hpux-1_3_4",
-  "permalink": "/whatap-docs/release-notes/server-hpux/server-hpux-1_3_4",
+  "id": "release-notes/server-aix/server-aix-1_3_5",
+  "title": "Server AIX Agent v1.3.5",
+  "description": "2024년 10월 17일",
+  "source": "@site/docs/release-notes/server-aix/server-aix-1.3.5.mdx",
+  "sourceDirName": "release-notes/server-aix",
+  "slug": "/release-notes/server-aix/server-aix-1_3_5",
+  "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_5",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/server-hpux/server-hpux-1.3.4.mdx",
+  "editUrl": "undefined/docs/release-notes/server-aix/server-aix-1.3.5.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "server-hpux-1_3_4",
-    "title": "Server HP-UX Agent v1.3.4",
+    "id": "server-aix-1_3_5",
+    "title": "Server AIX Agent v1.3.5",
     "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server Solaris",
-    "permalink": "/whatap-docs/release-notes/server-solaris/server-solaris-1_3_4"
+    "title": "Server AIX Agent Release Notes",
+    "permalink": "/whatap-docs/release-notes/server-aix/"
   },
   "next": {
-    "title": "Kubernetes Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/k8s/"
+    "title": "Server AIX Agent v1.3.4",
+    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_4"
   }
 };
 const assets = {
@@ -66,71 +66,30 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    code: "code",
-    li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
-    pre: "pre",
     strong: "strong",
-    ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Status} = _components;
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 09월 19일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "1",
-            children: "New"
-          }), " HP-UX(IA64, PA-RISC) 11.24 버전 지원"]
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "1",
-            children: "New"
-          }), " 서버 구성 정보 수집 기능 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title=\"whatap.conf\"",
-            children: "# default false\nhostinfov2.enabled=true\n"
-          })
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "0",
-            children: "Fixed"
-          }), " 에이전트를 최초 구동 후 OID 값을 고정하도록 개선"]
-        }), "\n"]
-      }), "\n"]
+      children: "2024년 10월 17일"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+        priority: "1",
+        children: "Fixed"
+      }), " Oname 고정 옵션 미동작 수정"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
       type: "info",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "다운로드"
-        }), ": Server Agent HP-UX v1.3.4"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/hpux/ia64/11.23/whatap-infra.1.3.4.ia64.tar.gz",
-              children: "IA64 다운로드"
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/hpux/pa/11.23/whatap-infra.1.3.4.pa.tar.gz",
-              children: "PA-RISC 다운로드"
-            })
-          }), "\n"]
-        }), "\n"]
+        }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/aix/noarch/whatap-infra-1.2-7.aix6.1.noarch.rpm",
+          children: "Server Agent AIX v1.3.5"
+        })]
       })]
     })]
   });
