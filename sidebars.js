@@ -4071,12 +4071,17 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server-aix/server-aix-1_3_5',
+                  className: 'new'
+                },
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_3_4',
@@ -4086,10 +4091,23 @@ const sidebars = {
               ],
             },
             {
-              type: 'doc',
+              type: 'category',
               label: 'Server Solaris',
-              // className: 'new',
-              id: 'release-notes/server-solaris/server-solaris-1_3_4'
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server-solaris/server-solaris-1_3_5'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server-solaris/server-solaris-1_3_5',
+                  className: 'new'
+                },
+                'release-notes/server-solaris/server-solaris-1_3_4',
+              ],
             },
             {
               type: 'doc',
