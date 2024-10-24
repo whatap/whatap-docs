@@ -283,7 +283,9 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "time_selector",
               className: "uitext"
-            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다."]
+            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다. 이벤트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "발생"
+            }), " 시각을 기준으로 조회합니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {

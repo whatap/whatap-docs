@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[35335],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18598],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -283,7 +283,9 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "time_selector",
               className: "uitext"
-            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다."]
+            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다. 이벤트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "발생"
+            }), " 시각을 기준으로 조회합니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -606,7 +608,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 91116:
+/***/ 51002:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -628,25 +630,25 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'Oracle Cloud Monitor',
-		'클라우드',
+		'Oracle Pro',
 		'경고 알림',
-		'이벤트 기록'
+		'이벤트 기록',
+		'데이터베이스'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-cloud/set-event-history",
+  "id": "oracle-pro/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/oracle-cloud/set-event-history.mdx",
-  "sourceDirName": "oracle-cloud",
-  "slug": "/oracle-cloud/set-event-history",
-  "permalink": "/whatap-docs/oracle-cloud/set-event-history",
+  "source": "@site/docs/oracle-pro/set-event-history.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/set-event-history",
+  "permalink": "/whatap-docs/oracle-pro/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-cloud/set-event-history.mdx",
+  "editUrl": "undefined/docs/oracle-pro/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -654,21 +656,21 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "Oracle Cloud Monitor",
-      "클라우드",
+      "Oracle Pro",
       "경고 알림",
-      "이벤트 기록"
+      "이벤트 기록",
+      "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "oracleSidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/oracle-cloud/set-receive-event"
+    "permalink": "/whatap-docs/oracle-pro/set-receive-event"
   },
   "next": {
-    "title": "실시간 알림",
-    "permalink": "/whatap-docs/oracle-cloud/real-time-notification"
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/oracle-pro/set-event-format"
   }
 };
 const assets = {

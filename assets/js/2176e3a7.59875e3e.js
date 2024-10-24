@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[43760],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[679],{
 
-/***/ 19239:
+/***/ 92499:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -32,16 +32,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "altibase-v1/set-event-history",
+  "id": "altibase/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/altibase-v1/set-event-history.mdx",
-  "sourceDirName": "altibase-v1",
-  "slug": "/altibase-v1/set-event-history",
-  "permalink": "/whatap-docs/altibase-v1/set-event-history",
+  "source": "@site/docs/altibase/set-event-history.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/set-event-history",
+  "permalink": "/whatap-docs/altibase/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/altibase-v1/set-event-history.mdx",
+  "editUrl": "undefined/docs/altibase/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -56,14 +56,14 @@ const metadata = {
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "altibasev1Sidebar",
+  "sidebar": "altibaseSidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/altibase-v1/set-receive-event"
+    "permalink": "/whatap-docs/altibase/set-receive-event"
   },
   "next": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/altibase-v1/set-event-format"
+    "permalink": "/whatap-docs/altibase/set-event-format"
   }
 };
 const assets = {
@@ -376,7 +376,9 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "time_selector",
               className: "uitext"
-            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다."]
+            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다. 이벤트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "발생"
+            }), " 시각을 기준으로 조회합니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {

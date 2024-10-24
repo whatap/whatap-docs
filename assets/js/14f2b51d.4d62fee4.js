@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[77013],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11556],{
 
-/***/ 10146:
+/***/ 52658:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -23,24 +23,24 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'Amazon ECS',
 		'경고 알림',
-		'이벤트 기록'
+		'이벤트 기록',
+		'브라우저 모니터링'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "amazon-ecs/set-event-history",
+  "id": "browser/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/amazon-ecs/set-event-history.mdx",
-  "sourceDirName": "amazon-ecs",
-  "slug": "/amazon-ecs/set-event-history",
-  "permalink": "/whatap-docs/amazon-ecs/set-event-history",
+  "source": "@site/docs/browser/set-event-history.mdx",
+  "sourceDirName": "browser",
+  "slug": "/browser/set-event-history",
+  "permalink": "/whatap-docs/browser/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/amazon-ecs/set-event-history.mdx",
+  "editUrl": "undefined/docs/browser/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -48,20 +48,20 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "Amazon ECS",
       "경고 알림",
-      "이벤트 기록"
+      "이벤트 기록",
+      "브라우저 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "awsecsSidebar",
+  "sidebar": "rumsSidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/amazon-ecs/set-receive-event"
+    "permalink": "/whatap-docs/browser/set-receive-event"
   },
   "next": {
     "title": "실시간 알림",
-    "permalink": "/whatap-docs/amazon-ecs/real-time-notification"
+    "permalink": "/whatap-docs/browser/real-time-notification"
   }
 };
 const assets = {
@@ -374,7 +374,9 @@ function _createMdxContent(props) {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "time_selector",
               className: "uitext"
-            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다."]
+            }), ": 조회하려는 이벤트의 시간 범위를 설정할 수 있습니다. 이벤트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "발생"
+            }), " 시각을 기준으로 조회합니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
