@@ -568,7 +568,24 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title=\"whatap.conf\"",
-              children: "# example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender\nignore_log4j_appender_set=CONSOLE,ACCESS_APPENDER\n"
+              children: "weaving=log4j-2.17\n# example: ignore 'CONSOLE', 'ACCESS_APPENDER' appender\nignore_log4j_appender_set=CONSOLE,ACCESS_APPENDER\n"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: ["이 에이전트 옵션을 적용할 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "weaving=log4j-2.17"
+                  }), " 옵션을 추가 적용해야 합니다."]
+                }), "\n"]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                    children: "ACCESS_APPENDER"
+                  }), "는 예시로 사용한 값입니다. 사용자 환경에 맞는 appender 이름을 지정해야 합니다."]
+                }), "\n"]
+              }), "\n"]
             })
           }), "\n"]
         }), "\n"]
