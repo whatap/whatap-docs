@@ -4095,7 +4095,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server-solaris/server-solaris-1_3_5'
+                id: 'release-notes/server-solaris/index'
               },
               items: [
                 {
