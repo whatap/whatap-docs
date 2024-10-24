@@ -20,7 +20,8 @@ tags: [새로운 기능, 2024]
 |**공통**|
 |---| 
 
-> * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 및 <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> 등 경고 알림 기능이 개선되었습니다. 
+{/* > * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 및 <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> 등 경고 알림 기능이 개선되었습니다.  */}
+> * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴가 개선되었습니다.
 > * `Application`, `Kubernetes`, `Database` 상품군에서 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다. 
 
 {/* 공통 메뉴 개선 또는 이벤트 v2 메뉴 개선 
@@ -61,7 +62,8 @@ tags: [새로운 기능, 2024]
 |**Database**|
 |---|
 
-> * `Oracla Pro`, `Altibase`, `Cubrid` 상품 <code class="my">V2</code> 서비스를 정식으로 제공합니다.
+> * `Oracle`, `Altibase`, `Cubrid` 상품 <code class="my">V2</code> 서비스를 제공합니다.
+> * `Oracla Pro` 상품 **정식** 서비스를 제공합니다. 
 > * <Cmdname sid="side_dbScriptManager" className="uitext" /> 메뉴를 새롭게 제공합니다. 
 > * <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴의 기능 개선이 이루어졌습니다. 
 
@@ -105,7 +107,7 @@ tags: [새로운 기능, 2024]
 
 ## `공통`
 
-와탭 2024년 3분기 `공통` 부분에서 <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 및 <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> 등의 경고 알림 기능 개선 및 새롭게 개편된 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 소개합니다. 
+와탭 2024년 3분기 `공통` 부분에서 <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 개선 및 새롭게 개편된 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 소개합니다. 
 
 기존 <Cmdname sid="side_eventSettingV2" className="uitext" /> 및 새로운 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴에 검색 기능이 추가되었습니다. 이벤트 목록 오른쪽 상단의 검색 입력창을 통해 <Cmdname sid="event_title" className="uitext" />, <Cmdname sid="ITM07659" className="uitext" />를 기준으로 문자열을 입력하거나 <Cmdname sid="event_name" className="uitext" /> 또는 <Cmdname sid="event_tag" className="uitext" /> 중 원하는 기준을 선택 후 문자열을 입력하여 이벤트를 검색할 수 있습니다. 
 
@@ -115,7 +117,7 @@ tags: [새로운 기능, 2024]
 
 ![공통 메트릭스 차트 v2 분기 예시](/img/changelog/changelog-24q3-common-metrics-chart.gif)
 
-<Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴 인터페이스 개선으로 사용자는 시간, 대상, 인터벌 설정을 한 번에 처리하고 쉽게 차트를 추가할 수 있습니다. 또한 대시보드 위젯의 시간 범위를 자유롭게 변경할 수 있으며 일괄 변경 기능과 프리셋 기능을 통해 설정 관리가 간편해졌습니다. 이와 더불어 대시보드 레이아웃과 위젯도 자유롭게 조정할 수 있어 차트 분석이 더욱 효율적으로 개선되었습니다.
+사용자는 ***시간***, ***대상***, ***인터벌*** 설정을 한 번에 처리하고 쉽게 차트를 추가할 수 있습니다. 또한 대시보드 위젯의 시간 범위를 자유롭게 변경할 수 있으며 일괄 변경 기능과 프리셋 기능을 통해 설정 관리가 간편해졌습니다. 이와 더불어 대시보드 레이아웃과 위젯도 자유롭게 조정할 수 있어 차트 분석이 더욱 효율적으로 개선되었습니다.
 
 {/* 
 
@@ -425,7 +427,11 @@ import Kubernetes_agent_24q3 from "../crw-data/crwld-agent-24q3/_import-agent-24
 
 ## `Database`
 
-와탭 2024년 3분기 `Database` 부분에서 주목할 만한 신규 기능 및 변경 사항으로 **Oracle** 상품 <code class="my">V2</code> 출시와 **Oracle Pro** 베타 출시를 소개합니다. 
+와탭 2024년 3분기 `Database` 부분에서 주목할 만한 신규 기능 및 변경 사항으로 **Oracle Pro** 정식 출시와 **Oracle**, **Altibase**, **Cubrid** 상품 <code class="my">V2</code> 출시 및 새로운 <Cmdname sid="side_dbScriptManager" className="uitext" /> 메뉴 추가, <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴의 기능 개선에 대하여 소개합니다.
+
+와탭 데이베이스 상품군이 <code class="my">V2</code>로 전환되고 있습니다. 1분기 **Redis**와 **MongoDB**에 뒤이어 3분기에는 **Oracle** , **Altibase**, **Cubrid** <code class="my">V2</code> 서비스가 시작되었습니다. <code class="my">V2</code>는 데이터 전송팩의 구조가 변경되었으며 UI 역시 전반적으로 개선되었습니다. 
+
+또한 **Oracle Pro** 정식 서비스가 시작되었습니다. 와탭 **Oracle Pro**는 데이터베이스 서버의 메모리에 직접 접근해 성능 지표를 모니터링하며, 최대 1초에 20번까지 최신 성능 정보를 수집합니다. 디스크 I/O를 거치지 않아 시스템 부하를 최소화하고, 쿼리 실행 시간과 버퍼 캐시 상태 등의 정밀한 성능 분석을 제공합니다.
 
 
 다음 개요 안내를 통해 2024년 3분기 `Database` 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
@@ -506,14 +512,11 @@ import Cloud_24q3 from "../crw-data/crwld-service-24q3/_import-24q3-service-Clou
 
 :::note 
 
-* `Aerospike` 모니터링에 대한 자세한 내용은 자세한 내용은 [다음 문서](../features/aerospike-introduction)를 참조하세요. 
+* <code class="Beta">Beta</code> `Aerospike` 모니터링에 대한 자세한 내용은 자세한 내용은 [다음 문서](../features/aerospike-introduction)를 참조하세요. 
 
-* `Apache Pulsar` 모니터링에 대한 자세한 내용은  [다음 문서](../features/apache-pulsar-introduction)를 참조하세요. 
+* <code class="Beta">Beta</code> `Apache Pulsar` 모니터링에 대한 자세한 내용은  [다음 문서](../features/apache-pulsar-introduction)를 참조하세요. 
 
 :::
-
-{/* 새롭게 제공하는 `Feature` 프로젝트를 소개합니다. 와탭은 사용자가 원하는 소프트웨어의 모니터링 지원 여부를 쉽게 확인하고 간편하게 모니터링을 시작할 수 있도록 **피쳐 프로젝트**를 도입하였습니다. 피쳐 프로젝트는 기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다.  */}
-
 
 {/* <details className='changelog'>
 <summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
