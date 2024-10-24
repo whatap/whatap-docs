@@ -1642,6 +1642,7 @@ const sidebars = {
                 'postgresql/real-time-notification'
               ],
             },
+            'postgresql/linked-projects',
             'postgresql/labs'
           ]
         }
@@ -1978,6 +1979,7 @@ const sidebars = {
                 'oracle/real-time-notification'
               ],
             },
+            'oracle/linked-projects',
             'oracle/labs'
           ]
         }
@@ -2147,6 +2149,7 @@ const sidebars = {
                 'oracle-pro/real-time-notification'
               ],
             },
+            'oracle-pro/linked-projects',
             'oracle-pro/labs'
           ]
         }
@@ -2340,6 +2343,7 @@ const sidebars = {
                 'mysql/real-time-notification',
               ],
             },
+            'mysql/linked-projects',
             'mysql/labs'
           ]
         }
