@@ -2154,6 +2154,9 @@ main {
       display: block; 
       margin: 0 auto;
     }
+    img[src*='k8s-node-timeline-config.png'] {
+      max-width: 730px;
+    }
     img[alt*='sc'] {
       border: none;
       width: fit-content;
