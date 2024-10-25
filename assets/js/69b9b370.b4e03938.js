@@ -360,7 +360,10 @@ function _createMdxContent(props) {
           class: "Feature",
           type: "1",
           children: "Feature"
-        }), " 다음 메뉴 경로에서 멤버 목록을 CSV 형식의 파일로 다운로드할 수 있는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
+        }), " 다음 메뉴 경로(", (0,jsx_runtime.jsx)("span", {
+          class: "uitext",
+          children: "관리"
+        }), " 하위 프로젝트 멤버, 통합 멤버 관리, 멤버 목록)에서 멤버 목록을 CSV 형식의 파일로 다운로드할 수 있는 기능 추가 ", (0,jsx_runtime.jsx)("code", {
           class: "changelog-service",
           children: (0,jsx_runtime.jsx)("a", {
             href: "../release-notes/service/service-2_8_x",
@@ -4984,13 +4987,14 @@ function _2024_3q_summary_createMdxContent(props) {
       }), " 메뉴 하위의 ", (0,jsx_runtime.jsx)(Cmdname, {
         sid: "side_threadList",
         className: "uitext"
-      }), " 메뉴에 선택한 에이전트가 설치된 애플리케이션의 스레드 현황 조회 기능이 추가되었습니다."]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["또한 ", (0,jsx_runtime.jsx)(_components.code, {
-        children: "Node.js"
-      }), " 상품은 로그 모니터링을 지원합니다. ", (0,jsx_runtime.jsx)(_components.code, {
-        children: ".NET"
-      }), " 상품의 경우 라이브러리 범위 확대와 함께 멀티 트랜잭션을 지원합니다."]
+      }), " 메뉴에 선택한 에이전트가 설치된 애플리케이션의 스레드 현황 조회 기능 및 CPU 증가랑 컬럼이 추가되었습니다."]
+    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.img, {
+        alt: "애플리케이션 분기 안내 예시",
+        src: (__webpack_require__(18642)/* ["default"] */ .A) + "",
+        width: "1261",
+        height: "540"
+      })
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["다음 개요 안내를 통해 2024년 3분기 ", (0,jsx_runtime.jsx)(_components.code, {
         children: "Application"
@@ -5606,6 +5610,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/teamtwj-8ca548071cd575b2056335d511c4c2fc.svg");
+
+/***/ }),
+
+/***/ 18642:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/chagnelog-24q3-application-ba2aab64e6095f4281b38ca94f85b0a3.png");
 
 /***/ }),
 
