@@ -3943,7 +3943,7 @@ function _createMdxContent(props) {
       children: (0,jsx_runtime.jsxs)(_components.ul, {
         children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["연계 분석을 위해 등록한 데이터베이스 프로젝트에서 해당 DB가 선택한 트랜잭션의 SQL을 실행한 경우에만, ", (0,jsx_runtime.jsx)(Cmdname, {
+            children: ["연계분석을 위해 등록한 데이터베이스 프로젝트의 DB가 현재 선택한 트랜잭션의 SQL을 실행한 경우에만, ", (0,jsx_runtime.jsx)(Cmdname, {
               sid: "TTL06126",
               className: "uitext"
             }), " 탭에서 ", (0,jsx_runtime.jsx)(_components.img, {
