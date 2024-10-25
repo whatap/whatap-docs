@@ -745,7 +745,7 @@ function App() {
                 // Code to run when the form submits
                 const Searchparam = event.state.query;
                 if (Searchparam) {
-                    const searchUrl = `/search?whatap%5Bquery%5D=${encodeURIComponent(Searchparam)}`;
+                    const searchUrl = `search?whatap%5Bquery%5D=${encodeURIComponent(Searchparam)}`;
                     window.location.href = searchUrl;
                 }
             }
