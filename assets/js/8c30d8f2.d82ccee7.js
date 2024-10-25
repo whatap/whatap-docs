@@ -21,7 +21,7 @@ const frontMatter = {
 	slug: '2024-3q-summary',
 	title: '3분기 안내',
 	authors: 'ysj',
-	date: '2024-10-18T09:30',
+	date: '2024-10-21T09:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -36,7 +36,7 @@ const metadata = {
   "source": "@site/blog/2024-3q-summary.mdx",
   "title": "3분기 안내",
   "description": "와탭의 2024년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.",
-  "date": "2024-10-18T09:30:00.000Z",
+  "date": "2024-10-21T09:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -64,7 +64,7 @@ const metadata = {
     "slug": "2024-3q-summary",
     "title": "3분기 안내",
     "authors": "ysj",
-    "date": "2024-10-18T09:30",
+    "date": "2024-10-21T09:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
