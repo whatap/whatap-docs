@@ -1441,7 +1441,9 @@ function _createMdxContent(props) {
                   children: "ipcs -m"
                 }), " 명령어를 실행한 결과에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                   children: "perms"
-                }), " 값이 600이면 오직 Oracle 계정만 설치할 수 있습니다."]
+                }), " 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "640"
+                }), "이면, 같은 그룹에 속한 다른 계정으로 에이전트를 설치할 수 있습니다."]
               }), "\n"]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1449,7 +1451,18 @@ function _createMdxContent(props) {
                   children: "ipcs -m"
                 }), " 명령어를 실행한 결과에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                   children: "perms"
-                }), " 값이 640이면 같은 그룹에 속한 다른 계정도 설치할 수 있습니다."]
+                }), " 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "600"
+                }), "이면서, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Oracle 12c R2"
+                }), " 이상이라면, 다음과 같이 파라미터를 설정해 perms 값을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "640"
+                }), "으로 변경할 수 있습니다. 변경 사항을 적용하려면 DB를 재기동해야 합니다."]
+              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                  className: "language-sql",
+                  children: "alter system set allow_group_access_to_sga=true scope=spfile;\n"
+                })
               }), "\n"]
             }), "\n"]
           })]
