@@ -1142,15 +1142,15 @@ const _import_agent_24q3_java_contentTitle = (/* unused pure expression or super
 
 
 const _import_agent_24q3_java_toc = [{
-  "value": "<code class=\"changelog-service\">Java Agent v2.2.36</code> <code class=\"changelog-date\">2024년 07월 18일</code>",
+  "value": "<code class=\"changelog-service\"><a>Java Agent v2.2.36</a></code> <code class=\"changelog-date\">2024년 07월 18일</code>",
   "id": "java-agent-v2236-2024년-07월-18일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Java Agent v2.2.37</code> <code class=\"changelog-date\">2024년 07월 31일</code>",
+  "value": "<code class=\"changelog-service\"><a>Java Agent v2.2.37</a></code> <code class=\"changelog-date\">2024년 07월 31일</code>",
   "id": "java-agent-v2237-2024년-07월-31일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Java Agent v2.2.38</code> <code class=\"changelog-date\">2024년 08월 14일</code>",
+  "value": "<code class=\"changelog-service\"><a>Java Agent v2.2.38</a></code> <code class=\"changelog-date\">2024년 08월 14일</code>",
   "id": "java-agent-v2238-2024년-08월-14일",
   "level": 4
 }];
@@ -1168,7 +1168,10 @@ function _import_agent_24q3_java_createMdxContent(props) {
       id: "java-agent-v2236-2024년-07월-18일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Java Agent v2.2.36"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/java/java-2_2_36",
+          children: "Java Agent v2.2.36"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 18일"
@@ -1184,7 +1187,10 @@ function _import_agent_24q3_java_createMdxContent(props) {
       id: "java-agent-v2237-2024년-07월-31일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Java Agent v2.2.37"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/java/java-2_2_37",
+          children: "Java Agent v2.2.37"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 31일"
@@ -1201,7 +1207,10 @@ function _import_agent_24q3_java_createMdxContent(props) {
       id: "java-agent-v2238-2024년-08월-14일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Java Agent v2.2.38"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/java/java-2_2_38",
+          children: "Java Agent v2.2.38"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 14일"
@@ -1252,11 +1261,11 @@ const _import_agent_24q3_php_contentTitle = (/* unused pure expression or super 
 
 
 const _import_agent_24q3_php_toc = [{
-  "value": "<code class=\"changelog-service\">PHP Agent v2.8.1</code> <code class=\"changelog-date\">2024년 07월 24일</code>",
+  "value": "<code class=\"changelog-service\"><a>PHP Agent v2.8.1</a></code> <code class=\"changelog-date\">2024년 07월 24일</code>",
   "id": "php-agent-v281-2024년-07월-24일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">PHP Agent v2.8.2</code> <code class=\"changelog-date\">2024년 09월 11일</code>",
+  "value": "<code class=\"changelog-service\"><a>PHP Agent v2.8.2</a></code> <code class=\"changelog-date\">2024년 09월 11일</code>",
   "id": "php-agent-v282-2024년-09월-11일",
   "level": 4
 }];
@@ -1274,7 +1283,10 @@ function _import_agent_24q3_php_createMdxContent(props) {
       id: "php-agent-v281-2024년-07월-24일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "PHP Agent v2.8.1"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/php/php-2_8_1",
+          children: "PHP Agent v2.8.1"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 24일"
@@ -1299,7 +1311,10 @@ function _import_agent_24q3_php_createMdxContent(props) {
       id: "php-agent-v282-2024년-09월-11일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "PHP Agent v2.8.2"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/php/php-2_8_2",
+          children: "PHP Agent v2.8.2"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 11일"
@@ -1342,15 +1357,15 @@ const _import_agent_24q3_nodejs_contentTitle = (/* unused pure expression or sup
 
 
 const _import_agent_24q3_nodejs_toc = [{
-  "value": "<code class=\"changelog-service\">Node.js Agent v0.4.98</code> <code class=\"changelog-date\">2024년 07월 09일</code>",
+  "value": "<code class=\"changelog-service\"><a>Node.js Agent v0.4.98</a></code> <code class=\"changelog-date\">2024년 07월 09일</code>",
   "id": "nodejs-agent-v0498-2024년-07월-09일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Node.js Agent v0.5.0</code> <code class=\"changelog-date\">2024년 08월 12일</code>",
+  "value": "<code class=\"changelog-service\"><a>Node.js Agent v0.5.0</a></code> <code class=\"changelog-date\">2024년 08월 12일</code>",
   "id": "nodejs-agent-v050-2024년-08월-12일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Node.js Agent v0.5.1</code> <code class=\"changelog-date\">2024년 08월 28일</code>",
+  "value": "<code class=\"changelog-service\"><a>Node.js Agent v0.5.1</a></code> <code class=\"changelog-date\">2024년 08월 28일</code>",
   "id": "nodejs-agent-v051-2024년-08월-28일",
   "level": 4
 }];
@@ -1368,7 +1383,10 @@ function _import_agent_24q3_nodejs_createMdxContent(props) {
       id: "nodejs-agent-v0498-2024년-07월-09일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Node.js Agent v0.4.98"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/nodejs/nodejs-0_4_98",
+          children: "Node.js Agent v0.4.98"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 09일"
@@ -1384,7 +1402,10 @@ function _import_agent_24q3_nodejs_createMdxContent(props) {
       id: "nodejs-agent-v050-2024년-08월-12일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Node.js Agent v0.5.0"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_0",
+          children: "Node.js Agent v0.5.0"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 12일"
@@ -1425,7 +1446,10 @@ function _import_agent_24q3_nodejs_createMdxContent(props) {
       id: "nodejs-agent-v051-2024년-08월-28일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Node.js Agent v0.5.1"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_1",
+          children: "Node.js Agent v0.5.1"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 28일"
@@ -1476,15 +1500,15 @@ const _import_agent_24q3_python_contentTitle = (/* unused pure expression or sup
 
 
 const _import_agent_24q3_python_toc = [{
-  "value": "<code class=\"changelog-service\">Python Agent v1.6.8</code> <code class=\"changelog-date\">2024년 08월 27일</code>",
+  "value": "<code class=\"changelog-service\"><a>Python Agent v1.6.8</a></code> <code class=\"changelog-date\">2024년 08월 27일</code>",
   "id": "python-agent-v168-2024년-08월-27일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Python Agent v1.6.9</code> <code class=\"changelog-date\">2024년 09월 03일</code>",
+  "value": "<code class=\"changelog-service\"><a>Python Agent v1.6.9</a></code> <code class=\"changelog-date\">2024년 09월 03일</code>",
   "id": "python-agent-v169-2024년-09월-03일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Python Agent v1.6.10</code> <code class=\"changelog-date\">2024년 09월 05일</code>",
+  "value": "<code class=\"changelog-service\"><a>Python Agent v1.6.10</a></code> <code class=\"changelog-date\">2024년 09월 05일</code>",
   "id": "python-agent-v1610-2024년-09월-05일",
   "level": 4
 }];
@@ -1501,7 +1525,10 @@ function _import_agent_24q3_python_createMdxContent(props) {
       id: "python-agent-v168-2024년-08월-27일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Python Agent v1.6.8"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/python/python-v1_6_8",
+          children: "Python Agent v1.6.8"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 27일"
@@ -1520,7 +1547,10 @@ function _import_agent_24q3_python_createMdxContent(props) {
       id: "python-agent-v169-2024년-09월-03일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Python Agent v1.6.9"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/python/python-v1_6_9",
+          children: "Python Agent v1.6.9"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 03일"
@@ -1539,7 +1569,10 @@ function _import_agent_24q3_python_createMdxContent(props) {
       id: "python-agent-v1610-2024년-09월-05일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Python Agent v1.6.10"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/python/python-v1_6_10",
+          children: "Python Agent v1.6.10"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 05일"
@@ -1580,19 +1613,19 @@ const _import_agent_24q3_dotnet_contentTitle = (/* unused pure expression or sup
 
 
 const _import_agent_24q3_dotnet_toc = [{
-  "value": "<code class=\"changelog-service\">.NET Agent v2.2.9</code> <code class=\"changelog-date\">2024년 07월 05일</code>",
+  "value": "<code class=\"changelog-service\"><a>.NET Agent v2.2.9</a></code> <code class=\"changelog-date\">2024년 07월 05일</code>",
   "id": "net-agent-v229-2024년-07월-05일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">.NET Agent v2.3.1</code> <code class=\"changelog-date\">2024년 08월 26일</code>",
+  "value": "<code class=\"changelog-service\"><a>.NET Agent v2.3.1</a></code> <code class=\"changelog-date\">2024년 08월 26일</code>",
   "id": "net-agent-v231-2024년-08월-26일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">.NET Agent v2.3.2</code> <code class=\"changelog-date\">2024년 09월 05일</code>",
+  "value": "<code class=\"changelog-service\"><a>.NET Agent v2.3.2</a></code> <code class=\"changelog-date\">2024년 09월 05일</code>",
   "id": "net-agent-v232-2024년-09월-05일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">.NET Agent v2.3.3</code> <code class=\"changelog-date\">2024년 09월 25일</code>",
+  "value": "<code class=\"changelog-service\"><a>.NET Agent v2.3.3</a></code> <code class=\"changelog-date\">2024년 09월 25일</code>",
   "id": "net-agent-v233-2024년-09월-25일",
   "level": 4
 }];
@@ -1610,7 +1643,10 @@ function _import_agent_24q3_dotnet_createMdxContent(props) {
       id: "net-agent-v229-2024년-07월-05일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: ".NET Agent v2.2.9"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_2_9",
+          children: ".NET Agent v2.2.9"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 05일"
@@ -1626,7 +1662,10 @@ function _import_agent_24q3_dotnet_createMdxContent(props) {
       id: "net-agent-v231-2024년-08월-26일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: ".NET Agent v2.3.1"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_3_1",
+          children: ".NET Agent v2.3.1"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 26일"
@@ -1653,7 +1692,10 @@ function _import_agent_24q3_dotnet_createMdxContent(props) {
       id: "net-agent-v232-2024년-09월-05일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: ".NET Agent v2.3.2"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_3_2",
+          children: ".NET Agent v2.3.2"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 05일"
@@ -1670,7 +1712,10 @@ function _import_agent_24q3_dotnet_createMdxContent(props) {
       id: "net-agent-v233-2024년-09월-25일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: ".NET Agent v2.3.3"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/dotnet/dotnet-2_3_3",
+          children: ".NET Agent v2.3.3"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 25일"
@@ -1731,7 +1776,7 @@ const _import_agent_24q3_golang_contentTitle = (/* unused pure expression or sup
 
 
 const _import_agent_24q3_golang_toc = [{
-  "value": "<code class=\"changelog-service\">Go Agent v0.4.1</code> <code class=\"changelog-date\">2024년 08월 28일</code>",
+  "value": "<code class=\"changelog-service\"><a>Go Agent v0.4.1</a></code> <code class=\"changelog-date\">2024년 08월 28일</code>",
   "id": "go-agent-v041-2024년-08월-28일",
   "level": 4
 }];
@@ -1749,7 +1794,10 @@ function _import_agent_24q3_golang_createMdxContent(props) {
       id: "go-agent-v041-2024년-08월-28일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Go Agent v0.4.1"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/golang/golang-v0_4_1",
+          children: "Go Agent v0.4.1"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 28일"
@@ -1953,31 +2001,31 @@ const _import_agent_24q3_server_contentTitle = (/* unused pure expression or sup
 
 
 const _import_agent_24q3_server_toc = [{
-  "value": "<code class=\"changelog-service\">Server Agent v2.6.2</code> <code class=\"changelog-date\">2024년 07월 16일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server Agent v2.6.2</a></code> <code class=\"changelog-date\">2024년 07월 16일</code>",
   "id": "server-agent-v262-2024년-07월-16일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Server Agent v2.6.3</code> <code class=\"changelog-date\">2024년 07월 24일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server Agent v2.6.3</a></code> <code class=\"changelog-date\">2024년 07월 24일</code>",
   "id": "server-agent-v263-2024년-07월-24일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Server Agent v2.6.7</code> <code class=\"changelog-date\">2024년 09월 03일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server Agent v2.6.7</a></code> <code class=\"changelog-date\">2024년 09월 03일</code>",
   "id": "server-agent-v267-2024년-09월-03일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Server AIX Agent v1.3.4</code> <code class=\"changelog-date\">2024년 09월 19일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server AIX Agent v1.3.4</a></code> <code class=\"changelog-date\">2024년 09월 19일</code>",
   "id": "server-aix-agent-v134-2024년-09월-19일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Server HP-UX Agent v1.3.4</code> <code class=\"changelog-date\">2024년 09월 19일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server HP-UX Agent v1.3.4</a></code> <code class=\"changelog-date\">2024년 09월 19일</code>",
   "id": "server-hp-ux-agent-v134-2024년-09월-19일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Server Solaris Agent v1.3.4</code> <code class=\"changelog-date\">2024년 09월 19일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server Solaris Agent v1.3.4</a></code> <code class=\"changelog-date\">2024년 09월 19일</code>",
   "id": "server-solaris-agent-v134-2024년-09월-19일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Server Agent v2.6.8</code> <code class=\"changelog-date\">2024년 09월 20일</code>",
+  "value": "<code class=\"changelog-service\"><a>Server Agent v2.6.8</a></code> <code class=\"changelog-date\">2024년 09월 20일</code>",
   "id": "server-agent-v268-2024년-09월-20일",
   "level": 4
 }];
@@ -1995,7 +2043,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-agent-v262-2024년-07월-16일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server Agent v2.6.2"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server/server-2_6_2",
+          children: "Server Agent v2.6.2"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 16일"
@@ -2011,7 +2062,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-agent-v263-2024년-07월-24일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server Agent v2.6.3"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server/server-2_6_3",
+          children: "Server Agent v2.6.3"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 24일"
@@ -2027,7 +2081,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-agent-v267-2024년-09월-03일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server Agent v2.6.7"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server/server-2_6_7",
+          children: "Server Agent v2.6.7"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 03일"
@@ -2044,7 +2101,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-aix-agent-v134-2024년-09월-19일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server AIX Agent v1.3.4"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server-aix/server-aix-v1_3_4",
+          children: "Server AIX Agent v1.3.4"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 19일"
@@ -2061,7 +2121,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-hp-ux-agent-v134-2024년-09월-19일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server HP-UX Agent v1.3.4"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server-hp-ux/server-hp-ux-v1_3_4",
+          children: "Server HP-UX Agent v1.3.4"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 19일"
@@ -2088,7 +2151,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-solaris-agent-v134-2024년-09월-19일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server Solaris Agent v1.3.4"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server-solaris/server-solaris-v1_3_4",
+          children: "Server Solaris Agent v1.3.4"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 19일"
@@ -2105,7 +2171,10 @@ function _import_agent_24q3_server_createMdxContent(props) {
       id: "server-agent-v268-2024년-09월-20일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Server Agent v2.6.8"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/server/server-2_6_8",
+          children: "Server Agent v2.6.8"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 20일"
@@ -2965,27 +3034,27 @@ const _import_agent_24q3_k8s_contentTitle = (/* unused pure expression or super 
 
 
 const _import_agent_24q3_k8s_toc = [{
-  "value": "<code class=\"changelog-service\">Kubernetes Agent v1.7.6</code> <code class=\"changelog-date\">2024년 07월 01일</code>",
+  "value": "<code class=\"changelog-service\"><a>Kubernetes Agent v1.7.6</a></code> <code class=\"changelog-date\">2024년 07월 01일</code>",
   "id": "kubernetes-agent-v176-2024년-07월-01일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Kubernetes Agent v1.7.7</code> <code class=\"changelog-date\">2024년 07월 11일</code>",
+  "value": "<code class=\"changelog-service\"><a>Kubernetes Agent v1.7.7</a></code> <code class=\"changelog-date\">2024년 07월 11일</code>",
   "id": "kubernetes-agent-v177-2024년-07월-11일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Kubernetes Agent v1.7.8</code> <code class=\"changelog-date\">2024년 07월 24일</code>",
+  "value": "<code class=\"changelog-service\"><a>Kubernetes Agent v1.7.8</a></code> <code class=\"changelog-date\">2024년 07월 24일</code>",
   "id": "kubernetes-agent-v178-2024년-07월-24일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Kubernetes Agent v1.7.9</code> <code class=\"changelog-date\">2024년 08월 19일</code>",
+  "value": "<code class=\"changelog-service\"><a>Kubernetes Agent v1.7.9</a></code> <code class=\"changelog-date\">2024년 08월 19일</code>",
   "id": "kubernetes-agent-v179-2024년-08월-19일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Kubernetes Agent v1.7.10</code> <code class=\"changelog-date\">2024년 08월 29일</code>",
+  "value": "<code class=\"changelog-service\"><a>Kubernetes Agent v1.7.10</a></code> <code class=\"changelog-date\">2024년 08월 29일</code>",
   "id": "kubernetes-agent-v1710-2024년-08월-29일",
   "level": 4
 }, {
-  "value": "<code class=\"changelog-service\">Kubernetes Agent v1.7.11</code> <code class=\"changelog-date\">2024년 09월 11일</code>",
+  "value": "<code class=\"changelog-service\"><a>Kubernetes Agent v1.7.11</a></code> <code class=\"changelog-date\">2024년 09월 11일</code>",
   "id": "kubernetes-agent-v1711-2024년-09월-11일",
   "level": 4
 }];
@@ -3003,7 +3072,10 @@ function _import_agent_24q3_k8s_createMdxContent(props) {
       id: "kubernetes-agent-v176-2024년-07월-01일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Kubernetes Agent v1.7.6"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/k8s/k8s-1_7_6",
+          children: "Kubernetes Agent v1.7.6"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 01일"
@@ -3034,7 +3106,10 @@ function _import_agent_24q3_k8s_createMdxContent(props) {
       id: "kubernetes-agent-v177-2024년-07월-11일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Kubernetes Agent v1.7.7"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/k8s/k8s-1_7_7",
+          children: "Kubernetes Agent v1.7.7"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 11일"
@@ -3050,7 +3125,10 @@ function _import_agent_24q3_k8s_createMdxContent(props) {
       id: "kubernetes-agent-v178-2024년-07월-24일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Kubernetes Agent v1.7.8"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/k8s/k8s-1_7_8",
+          children: "Kubernetes Agent v1.7.8"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 24일"
@@ -3087,7 +3165,10 @@ function _import_agent_24q3_k8s_createMdxContent(props) {
       id: "kubernetes-agent-v179-2024년-08월-19일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Kubernetes Agent v1.7.9"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/k8s/k8s-1_7_9",
+          children: "Kubernetes Agent v1.7.9"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 19일"
@@ -3122,7 +3203,10 @@ function _import_agent_24q3_k8s_createMdxContent(props) {
       id: "kubernetes-agent-v1710-2024년-08월-29일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Kubernetes Agent v1.7.10"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/k8s/k8s-1_7_10",
+          children: "Kubernetes Agent v1.7.10"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 29일"
@@ -3145,7 +3229,10 @@ function _import_agent_24q3_k8s_createMdxContent(props) {
       id: "kubernetes-agent-v1711-2024년-09월-11일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "Kubernetes Agent v1.7.11"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/k8s/k8s-1_7_11",
+          children: "Kubernetes Agent v1.7.11"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 09월 11일"
@@ -3983,7 +4070,7 @@ const _import_agent_24q3_dbx_contentTitle = (/* unused pure expression or super 
 
 
 const _import_agent_24q3_dbx_toc = [{
-  "value": "<code class=\"changelog-service\">DBX v1.9.0</code> <code class=\"changelog-date\">2024년 07월 04일</code>",
+  "value": "<code class=\"changelog-service\"><a>DBX v1.9.0</a></code> <code class=\"changelog-date\">2024년 07월 04일</code>",
   "id": "dbx-v190-2024년-07월-04일",
   "level": 4
 }, {
@@ -3991,7 +4078,7 @@ const _import_agent_24q3_dbx_toc = [{
   "id": "oracle",
   "level": 5
 }, {
-  "value": "<code class=\"changelog-service\">DBX v1.9.1</code> <code class=\"changelog-date\">2024년 07월 19일</code>",
+  "value": "<code class=\"changelog-service\"><a>DBX v1.9.1</a></code> <code class=\"changelog-date\">2024년 07월 19일</code>",
   "id": "dbx-v191-2024년-07월-19일",
   "level": 4
 }, {
@@ -4003,7 +4090,7 @@ const _import_agent_24q3_dbx_toc = [{
   "id": "mongodb",
   "level": 5
 }, {
-  "value": "<code class=\"changelog-service\">DBX v1.9.5</code> <code class=\"changelog-date\">2024년 08월 13일</code>",
+  "value": "<code class=\"changelog-service\"><a>DBX v1.9.5</a></code> <code class=\"changelog-date\">2024년 08월 13일</code>",
   "id": "dbx-v195-2024년-08월-13일",
   "level": 4
 }, {
@@ -4011,7 +4098,7 @@ const _import_agent_24q3_dbx_toc = [{
   "id": "oracle-1",
   "level": 5
 }, {
-  "value": "<code class=\"changelog-service\">DBX v2.0.0</code> <code class=\"changelog-date\">2024년 08월 14일</code>",
+  "value": "<code class=\"changelog-service\"><a>DBX v2.0.0</a></code> <code class=\"changelog-date\">2024년 08월 14일</code>",
   "id": "dbx-v200-2024년-08월-14일",
   "level": 4
 }, {
@@ -4034,7 +4121,10 @@ function _import_agent_24q3_dbx_createMdxContent(props) {
       id: "dbx-v190-2024년-07월-04일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "DBX v1.9.0"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/db/dbx-1_9_0",
+          children: "DBX v1.9.0"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 04일"
@@ -4053,7 +4143,10 @@ function _import_agent_24q3_dbx_createMdxContent(props) {
       id: "dbx-v191-2024년-07월-19일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "DBX v1.9.1"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/db/dbx-1_9_1",
+          children: "DBX v1.9.1"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 07월 19일"
@@ -4084,7 +4177,10 @@ function _import_agent_24q3_dbx_createMdxContent(props) {
       id: "dbx-v195-2024년-08월-13일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "DBX v1.9.5"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/db/dbx-1_9_5",
+          children: "DBX v1.9.5"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 13일"
@@ -4104,7 +4200,10 @@ function _import_agent_24q3_dbx_createMdxContent(props) {
       id: "dbx-v200-2024년-08월-14일",
       children: [(0,jsx_runtime.jsx)("code", {
         class: "changelog-service",
-        children: "DBX v2.0.0"
+        children: (0,jsx_runtime.jsx)("a", {
+          href: "https://docs.whatap.io/release-notes/db/dbx-2_0_0",
+          children: "DBX v2.0.0"
+        })
       }), " ", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
         children: "2024년 08월 14일"
@@ -4240,6 +4339,8 @@ const assets = {
 > * 편의성 향상을 위해 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴가 개선되었습니다.
 
 */
+/*> * `Node.js` 상품이 로그 모니터링을 제공합니다.
+> * `.NET` 상품이 멀티 트랜잭션을 지원합니다.*/
 /*> * `.NET` Core 라이브러리 지원 범위가 확대되었으며 멀티 트랜잭션을 지원합니다.*/
 /*> * 애플리케이션과 데이터베이스 상품 연계 모니터링을 지원합니다. (10월)*/
 /*
@@ -4621,16 +4722,6 @@ function _2024_3q_summary_createMdxContent(props) {
             sid: "side_agentsConfiguration",
             className: "uitext"
           }), " 등 공통 메뉴가 개선되었습니다."]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
-          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.code, {
-              children: "Node.js"
-            }), " 상품이 로그 모니터링을 제공합니다."]
-          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-            children: [(0,jsx_runtime.jsx)(_components.code, {
-              children: ".NET"
-            }), " 상품이 멀티 트랜잭션을 지원합니다."]
-          }), "\n"]
         }), "\n"]
       }), (0,jsx_runtime.jsx)(_components.table, {
         children: (0,jsx_runtime.jsx)(_components.thead, {
@@ -4948,6 +5039,23 @@ function _2024_3q_summary_createMdxContent(props) {
           children: "Go"
         })
       }), (0,jsx_runtime.jsx)(_import_agent_24q3_golang_MDXContent, {})]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.admonition, {
+      type: "note",
+      children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "Node.js"
+            }), " 상품이 로그 모니터링을 제공합니다."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: ".NET"
+            }), " 상품이 멀티 트랜잭션을 지원합니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
     }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
       id: "server",
       children: (0,jsx_runtime.jsx)(_components.code, {
