@@ -573,7 +573,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-              children: ["선택한 트랜잭션에서 연계 프로젝트로 SQL을 실행한 트랜잭션일 때에만, 트랜잭션 상세 정보 창에 ", (0,jsx_runtime.jsx)(Cmdname, {
+              children: ["연계 분석을 위해 등록한 데이터베이스 프로젝트에서 해당 DB가 선택한 트랜잭션의 SQL을 실행한 경우에만, 트랜잭션 상세 정보 창에 ", (0,jsx_runtime.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
               }), " 버튼이 표시됩니다."]
@@ -587,6 +587,18 @@ function _createMdxContent(props) {
                 href: "#TTL07860",
                 children: "다음 문서"
               }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["이 기능을 지원하는 데이터베이스는 ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "PostgreSQL"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle Pro"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "MySQL"
+              }), " 플랫폼입니다."]
             }), "\n"]
           }), "\n"]
         })
@@ -656,10 +668,10 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-              children: ["선택한 트랜잭션에서 연계 프로젝트로 SQL을 실행한 트랜잭션일 때에만, ", (0,jsx_runtime.jsx)(Cmdname, {
+              children: ["연계 분석을 위해 등록한 데이터베이스 프로젝트에서 해당 DB가 선택한 트랜잭션의 SQL을 실행한 경우에만, ", (0,jsx_runtime.jsx)(Cmdname, {
                 sid: "TTL06126",
                 className: "uitext"
-              }), " 탭에서 ", (0,jsx_runtime.jsx)(_components.img, {
+              }), " 탭에 ", (0,jsx_runtime.jsx)(_components.img, {
                 alt: "연계 아이콘",
                 src: (__webpack_require__(71628)/* ["default"] */ .A) + "",
                 width: "24",
@@ -685,6 +697,18 @@ function _createMdxContent(props) {
                 href: "dashboard-hitmap-trace",
                 children: "다음 문서"
               }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["이 기능을 지원하는 데이터베이스는 ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "PostgreSQL"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle Pro"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "MySQL"
+              }), " 플랫폼입니다."]
             }), "\n"]
           }), "\n"]
         })
@@ -735,7 +759,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)(_components.ul, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-              children: ["선택한 트랜잭션에서 연계 프로젝트로 SQL을 실행한 트랜잭션일 때에만, ", (0,jsx_runtime.jsx)(Cmdname, {
+              children: ["연계 분석을 위해 등록한 데이터베이스 프로젝트에서 해당 DB가 선택한 트랜잭션의 SQL을 실행한 경우에만, ", (0,jsx_runtime.jsx)(Cmdname, {
                 sid: "acttx",
                 className: "uitext"
               }), " 창에 ", (0,jsx_runtime.jsx)(Cmdname, {
@@ -752,6 +776,18 @@ function _createMdxContent(props) {
                 href: "#TTL07860",
                 children: "다음 문서"
               }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["이 기능을 지원하는 데이터베이스는 ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "PostgreSQL"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle Pro"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "MySQL"
+              }), " 플랫폼입니다."]
             }), "\n"]
           }), "\n"]
         })

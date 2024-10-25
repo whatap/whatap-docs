@@ -4374,6 +4374,7 @@ const assets = {
 
 */
 /*공통 및 브라우저 뺄지??*/
+/*![공통 메트릭스 차트 v2 분기 예시2](/img/changelog/changelog-24q3-common-add_chart.gif)*/
 /*
 
 인터페이스가 단순화되어 사용자는 시간, 대상, 인터벌 등의 설정을 한 번에 처리하고 모니터링할 지표를 쉽게 선택해 차트를 추가할 수 있습니다. 또한 대시보드 위젯을 삭제하지 않고도 차트의 시간 범위를 자유롭게 변경할 수 있어 더 유연한 모니터링이 가능해졌습니다. 일괄 변경 기능이 도입되어 대시보드의 모든 위젯에 동일한 설정을 한 번에 적용할 수 있어 일관된 관리가 용이하며, 프리셋 기능을 통해 위젯 구성을 저장하고 필요할 때 불러와 반복 작업을 줄이고 다양한 분석 시나리오를 빠르게 실행할 수 있습니다. 이와 더불어, 대시보드 레이아웃과 위젯을 사용자 맞춤형으로 자유롭게 조정할 수 있어 차트 분석이 한층 더 편리해졌습니다.
@@ -4928,7 +4929,7 @@ function _2024_3q_summary_createMdxContent(props) {
         width: "1200",
         height: "661"
       })
-    }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+    }), "\n", "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: ["사용자는 ", (0,jsx_runtime.jsx)(_components.em, {
         children: (0,jsx_runtime.jsx)(_components.strong, {
           children: "시간"
@@ -4987,7 +4988,7 @@ function _2024_3q_summary_createMdxContent(props) {
       }), " 메뉴 하위의 ", (0,jsx_runtime.jsx)(Cmdname, {
         sid: "side_threadList",
         className: "uitext"
-      }), " 메뉴에 선택한 에이전트가 설치된 애플리케이션의 스레드 현황 조회 기능 및 CPU 증가랑 컬럼이 추가되었습니다."]
+      }), " 메뉴에 선택한 에이전트가 설치된 애플리케이션의 스레드 현황 조회 기능 및 CPU 증가량 컬럼이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
         alt: "애플리케이션 분기 안내 예시",
