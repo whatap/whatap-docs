@@ -759,10 +759,13 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["컬럼 항목에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              children: ["테이블의 컬럼 헤더에 마우스를 오버하면 해당 컬럼에 대한 상제 정보를 툴팁 형태로 제공합니다. 컬럼 항목에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                 href: "#columninfo",
                 children: "다음 문서"
               }), "를 참조하세요."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+              img: "browser-statistics-pagegroup-header.png",
+              desc: "Tooltip"
             }), "\n"]
           }), "\n"]
         })
@@ -998,10 +1001,13 @@ function _createMdxContent(props) {
                 }), "\n"]
               }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
                 children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: ["컬럼 항목에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  children: ["테이블의 컬럼 헤더에 마우스를 오버하면 해당 컬럼에 대한 상제 정보를 툴팁 형태로 제공합니다. 컬럼 항목에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                     href: "#columninfo",
                     children: "다음 문서"
                   }), "를 참조하세요."]
+                }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+                  img: "browser-statistics-pageurlpath-header.png",
+                  desc: "Tooltip"
                 }), "\n"]
               }), "\n"]
             })
