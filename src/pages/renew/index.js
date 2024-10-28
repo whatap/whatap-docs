@@ -251,6 +251,12 @@ export default function pages() {
 
         <Head>
             <meta name="robots" content="noindex, nofollow"/>
+            <title>
+                {translate({
+                    id: "index.pages.metaTitle",
+                    message: "실시간 옵저버빌리티 플랫폼 | WhaTap Docs"
+                })}
+            </title>
         </Head>
 
         <div className={styles.homehero}>

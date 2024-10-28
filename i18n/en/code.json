@@ -510,6 +510,9 @@
     "message": "New features",
     "description": "Navbar item with label 새로운 기능"
   },
+  "index.pages.metaTitle": {
+    "message": "Real-time Observability Platform | WhaTap Docs"
+  },
   "index.pages.register": {
     "message": "Sign up"
   },
