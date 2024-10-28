@@ -235,9 +235,9 @@ function RecommendedDoc() {
     } else if (currentLocale == "ja") {
         return (
             <>
-                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>ノードマップ</Link>,&nbsp;
-                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>メトリクスチャート <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/pod-init-perform-v2")} className={clsx(styles.white, styles.underline)}>Pod起動分析 <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>ノードマップ</Link>、
+                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>メトリクスチャート <code className={clsx(styles.newfunc)}>New</code></Link>、
+                <Link to={useBaseUrl("kubernetes/pod-init-perform-v2")} className={clsx(styles.white, styles.underline)}>Pod起動分析 <code className={clsx(styles.newfunc)}>New</code></Link>、
                 <Link to={useBaseUrl("reference/script-manager")} className={clsx(styles.white, styles.underline)}>スクリプトマネージャー</Link>
             </>
         );
