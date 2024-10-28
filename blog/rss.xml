@@ -3394,7 +3394,7 @@
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 ��링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알람 원복을 위한 stateful 추가</li>
 </ul>
@@ -3411,7 +3411,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직접 링크" title="dbx-v1633-2024년-03월-13일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직�접 링크" title="dbx-v1633-2024년-03월-13일에 대한 직접 링크">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.sh</em> 추가</li>
@@ -4114,7 +4114,7 @@
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">통합 보고서</span> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-1_104_x">Service 1.104.00</a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="�관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="��관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">계정 정보 관리</span> &gt; <span class="uitext">사용자 전화번호</span>, <span class="uitext">알림 수신 설정</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>

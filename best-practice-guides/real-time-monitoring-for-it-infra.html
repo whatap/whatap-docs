@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ko-KR" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-best-practice-guides/real-time-monitoring-for-it-infra" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">DX IT 운영을 위한 와탭 모니터링 | WhaTap Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" name="twitter:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" property="og:url" content="https://docs.whatap.io/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra"><meta data-rh="true" property="og:locale" content="ko_KR"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" property="og:locale:alternate" content="ja_JP"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="keywords" content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="DX IT 운영을 위한 와탭 모니터링 | WhaTap Docs"><meta data-rh="true" name="description" content="IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다."><meta data-rh="true" property="og:description" content="IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 통합 모니터링, 실시간 옵저버빌리티, 그리고 DX-IT 운영을 실현하기 위한 방법론을 제시합니다."><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/whatap-docs/img/whatap-favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.whatap.io/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra" hreflang="ko-KR"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/en/best-practice-guides/real-time-monitoring-for-it-infra" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/ja/best-practice-guides/real-time-monitoring-for-it-infra" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/whatap-docs/blog/rss.xml" title="WhaTap Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/whatap-docs/blog/atom.xml" title="WhaTap Docs Atom Feed">
+
+
+
+
+
+
+
+
+<script>!function(e,t,a,o,r,s){e=e[r]=e[r]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignoreOrigins:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(r=t.createElement(a)).async=1,r.src=o,(o=t.getElementsByTagName(a)[0]).parentNode.insertBefore(r,o)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent")</script>
+<script>let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script>
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E46TQ5VSCT"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E46TQ5VSCT",{anonymize_ip:!0})</script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script>window.dataLayer=window.dataLayer||[]</script>
+<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.8248926c.css">
+<script src="/whatap-docs/assets/js/runtime~main.f2c77fa5.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/main.844b8065.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script>
+
+<script async defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v17.0&amp;appId=169051789422006&amp;autoLogAppEvents=1" nonce="y4U7YSrt"></script>
+<div id="fb-root"></div>
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJSZDJR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="__docusaurus"><div role="region" aria-label="본문으로 건너뛰기"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">본문으로 건너뛰기</a></div><div class="announcementBar_mb4j" style="background-color:none;color:#ffffff" role="banner"><div class="content_knG7 announcementBarContent_xLdY"><div id="moniday-banner">This document pertains to <a href="https://preview.whatap.io" target="_blank">preview.whatap.io</a> and includes content not yet released as a service version.<br>For documentation on officially released features, please visit: <a href="https://docs.whatap.io" target="_blank">https://docs.whatap.io</a>.</div></div></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/whatap-docs/"><div class="navbar__logo"><img src="/whatap-docs/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height="43px" width="154px"><img src="/whatap-docs/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="43px" width="154px"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/whatap-docs/whatap-overview">시작하기</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/whatap-docs/learning-guides">학습하기</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">상품별 문서 바로가기</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/whatap-docs/java/introduction">Java</a></li><li><a class="dropdown__link" href="/whatap-docs/php/introduction">PHP</a></li><li><a class="dropdown__link" href="/whatap-docs/nodejs/introduction">Node.js</a></li><li><a class="dropdown__link" href="/whatap-docs/python/introduction">Python</a></li><li><a class="dropdown__link" href="/whatap-docs/dotnet/introduction">.NET</a></li><li><a class="dropdown__link" href="/whatap-docs/golang/introduction">Go</a></li><li><a class="dropdown__link" href="/whatap-docs/server/introduction">Server</a></li><li><a class="dropdown__link" href="/whatap-docs/kubernetes/introduction">Kubernetes</a></li><li><a class="dropdown__link" href="/whatap-docs/postgresql/monitoring-intro">PostgreSQL</a></li><li><a class="dropdown__link" href="/whatap-docs/oracle/monitoring-intro">Oracle</a></li><li><a class="dropdown__link" href="/whatap-docs/oracle-pro/monitoring-intro">Oracle Pro</a></li><li><a class="dropdown__link" href="/whatap-docs/mysql/monitoring-intro">MySQL</a></li><li><a class="dropdown__link" href="/whatap-docs/mssql/monitoring-intro">SQL Server</a></li><li><a class="dropdown__link" href="/whatap-docs/tibero/monitoring-intro">Tibero</a></li><li><a class="dropdown__link" href="/whatap-docs/cubrid/monitoring-intro">CUBRID</a></li><li><a class="dropdown__link" href="/whatap-docs/altibase/monitoring-intro">Altibase</a></li><li><a class="dropdown__link" href="/whatap-docs/redis/monitoring-intro">Redis</a></li><li><a class="dropdown__link" href="/whatap-docs/mongodb/monitoring-intro">MongoDB</a></li><li><a class="dropdown__link" href="/whatap-docs/url/url-intro">URL</a></li><li><a class="dropdown__link" href="/whatap-docs/browser">Browser</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/amazon-cloudwatch/install-agent">Amazon CloudWatch</a></li><li><a class="dropdown__link" href="/whatap-docs/amazon-ecs/introduction">Amazon ECS</a></li><li><a class="dropdown__link" href="/whatap-docs/aws-log/introduction">AWS Log</a></li><li><a class="dropdown__link" href="/whatap-docs/azure/install-agent">Azure Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/ncloud/install-agent">Naver Cloud Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/oracle-cloud/install-agent">Oracle Cloud Monitor</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/npm/introduction">Network Performance Monitoring</a></li><li><a class="dropdown__link narrow" href="/whatap-docs/features/introduction">Feature Project</a></li><li><a class="dropdown__link" href="/whatap-docs/log/introduction">Log</a></li><li><a class="dropdown__link" href="/whatap-docs/extensions">Extensions</a></li></ul></div><a class="navbar__item navbar__link hidden" href="/whatap-docs/java/introduction">Java 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/php/introduction">PHP 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/nodejs/introduction">Node.js 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/python/introduction">Python 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/dotnet/introduction">.NET 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/golang/introduction">Go 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/server/introduction">Server 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/kubernetes/introduction">Kubernetes 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/postgresql/monitoring-intro">PostgreSQL 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle-v1/monitoring-intro">Oracle V1 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle/monitoring-intro">Oracle V2 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle-pro/monitoring-intro">Oracle Pro 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mysql/monitoring-intro">MySQL 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mssql/monitoring-intro">SQL Server 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/tibero/monitoring-intro">Tibero 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/cubrid/monitoring-intro">CUBRID 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/altibase/monitoring-intro">Altibase 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/redis/monitoring-intro">Redis 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/mongodb/monitoring-intro">MongoDB 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/url/url-intro">URL 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/amazon-cloudwatch/install-agent">Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/amazon-ecs/introduction">Amazon ECS</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/aws-log/introduction">AWS Log</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/azure/install-agent">Azure Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/ncloud/install-agent">Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/oracle-cloud/install-agent">Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/log/introduction">Log 모니터링</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/browser">Browser</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/npm/introduction">NPM</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/extensions">확장 도구</a><a class="navbar__item navbar__link hidden" href="/whatap-docs/opentelemetry/introduction">OpenTelemetry</a><a class="navbar__item navbar__link" href="/whatap-docs/manage">관리 기능</a><a class="navbar__item navbar__link" href="/whatap-docs/openapi-spec">Open API</a><a class="navbar__item navbar__link" href="/whatap-docs/license/licenses">라이선스</a><a class="navbar__item navbar__link" href="/whatap-docs/release-notes">릴리스 노트</a><a class="navbar__item navbar__link" href="/whatap-docs/faq">FAQ</a><a class="navbar__item navbar__link iflang-link" href="/whatap-docs/blog">새로운 기능</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_DSK9"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><span class="langLabel_L4uU">KOR</span></a><ul class="dropdown__menu"><li><a href="/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ko-KR">KOR</a></li><li><a href="/whatap-docs/en/best-practice-guides/real-time-monitoring-for-it-infra" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">ENG</a></li><li><a href="/whatap-docs/ja/best-practice-guides/real-time-monitoring-for-it-infra" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ja-JP">JPN</a></li></ul></div><div class="navbarSearchContainer_dCNk"><div id="docsearch"></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="어두운 모드와 밝은 모드 전환하기 (현재 밝은 모드)" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 밝은 모드)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" class="lightToggleIcon_pyhR"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="맨 위로 스크롤하기" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_mhZE"><div class="hold-menu"><ul><li><a href="/" class="home">WhaTap Docs</a></li><li><a href="https://www.whatap.io" target="_blank" rel="noopener noreferrer" class="ext">와탭 홈페이지 바로가기</a></li></ul></div><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP menuWithAnnouncementBar_fPny"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--active" href="/whatap-docs/learning-guides">학습하기</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra">DX IT 운영을 위한 와탭 모니터링</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra">DX IT 운영을 위한 와탭 모니터링</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/whatap-docs/best-practice-guides/about-dashboard">대시보드 분석</a><button aria-label="Collapse sidebar category &#x27;대시보드 분석&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-apm-dashboard">애플리케이션 대시보드</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-apm-hitmap-class">히트맵 트랜잭션</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-server-dashboard">서버 리소스 보드</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/using-browser-monitoring">브라우저 모니터링</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" tabindex="0" href="/whatap-docs/best-practice-guides/about-apm-dbc">성능 장애 유형</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-apm-dbc">DB 연결 지연과 커넥션 풀</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" tabindex="0" href="/whatap-docs/best-practice-guides/about-apm-heap-memory">메트릭스 경고 알림 설정</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-apm-heap-memory">힙 메모리 메트릭스</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/set-db-metric-warning-notice">데이터베이스</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="true" tabindex="0" href="/whatap-docs/best-practice-guides/about-instance-performance-analysis">더 알아보기</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-instance-performance-analysis">인스턴스 성능 관리 활용</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/whatap-docs/best-practice-guides/about-tcp-port">TCP 포트 감시 활용</a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_z5aJ"><div class="docItemContainer_c0TR"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Alpn" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="홈" class="breadcrumbs__link" href="/whatap-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_xK9p"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/whatap-docs/learning-guides"><span itemprop="name">학습하기</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">DX IT 운영을 위한 와탭 모니터링</span><meta itemprop="position" content="2"></li></ul><div class="breadcrumbs-hidden"><span itemprop="name">학습하기<cite>&gt;</cite></span><span itemprop="name">DX IT 운영을 위한 와탭 모니터링</span></div></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_XdKt"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">이 페이지에서</button></div><div class="theme-doc-markdown markdown"><header><h1>DX IT 운영을 위한 와탭 모니터링</h1></header>
+<p>현대 IT 환경은 빠르게 진화하고 있으며, 이에 따라 IT 운영과 모니터링에 대한 요구도 급격히 변화하고 있습니다. 디지털 전환(Digital Transformation, DX)과 클라우드 기술의 확산은 IT 인프라의 복잡성을 증가시키고, 기존의 모니터링 방식으로는 이러한 변화를 따라잡기 어렵게 만들었습니다. 이 문서에서는 IT 모니터링이 직면한 주요 과제와 이를 해결하기 위한 Best Practices로서 <strong>통합 모니터링</strong>, <strong>실시간 옵저버빌리티</strong>, 그리고 <strong>DX-IT 운영</strong>을 실현하기 위한 방법론을 제시합니다.</p>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="it-모니터링-직면-과제">IT 모니터링 직면 과제<a href="#it-모니터링-직면-과제" class="hash-link" aria-label="IT 모니터링 직면 과제에 대한 직접 링크" title="IT 모니터링 직면 과제에 대한 직접 링크">​</a></h2></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-환경의-변화">IT 환경의 변화<a href="#it-환경의-변화" class="hash-link" aria-label="IT 환경의 변화에 대한 직접 링크" title="IT 환경의 변화에 대한 직접 링크">​</a></h3><p>현대의 IT 환경은 디지털 트랜스포메이션(DX)과 기술의 발전으로 인해 빠르게 변화하고 있습니다. 이러한 변화는 기업이 비즈니스 목표를 달성하기 위해 IT 운영 방식을 재구성하고 최적화하는 것을 요구합니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="디지털-트랜스포메이션dx의-영향">디지털 트랜스포메이션(DX)의 영향<a href="#디지털-트랜스포메이션dx의-영향" class="hash-link" aria-label="디지털 트랜스포메이션(DX)의 영향에 대한 직접 링크" title="디지털 트랜스포메이션(DX)의 영향에 대한 직접 링크">​</a></h4><p>디지털 트랜스포메이션은 기존의 비즈니스 모델을 재구성하고 기술을 통해 새로운 가치를 창출하는 과정입니다. 클라우드, 인공지능(AI), 빅데이터, 블록체인 등의 기술은 기업이 디지털 혁신을 통해 경쟁 우위를 확보할 수 있도록 지원합니다.</p><p><img decoding="async" loading="lazy" alt="DX" src="/whatap-docs/assets/images/dx-it-image-01-b22d2d8006b4b1911a77c107b05c7d98.png" width="1200" height="392" class="img_ev3q"></p><ul>
+<li>
+<p><strong>기술 기반의 혁신</strong>: 클라우드 서비스, IoT, 가상 현실(VR) 등의 기술은 비즈니스의 효율성을 높이고 새로운 시장 기회를 창출합니다.</p>
+</li>
+<li>
+<p><strong>신  규 비즈니스 모델 도입</strong>: DX는 기존의 레거시 시스템을 혁신하고 새로운 비즈니스 모델을 도입함으로써 기업의 경쟁력을 강화합니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="it-기술의-진화">IT 기술의 진화<a href="#it-기술의-진화" class="hash-link" aria-label="IT 기술의 진화에 대한 직접 링크" title="IT 기술의 진화에 대한 직접 링크">​</a></h4><p>IT 기술은 클라우드 컴퓨팅, 컨테이너화, 서버리스 아키텍처 등으로 빠르게 진화하고 있습니다. 이러한 기술들은 자원을 효율적으로 활용하고 온디맨드로 대규모 자원을 활용할 수 있게 합니다. 특히, 클라우드 기술의 진화는 다른 소프트웨어 기술의 진화를 견인하고 있습니다.</p><p><img decoding="async" loading="lazy" alt="IT technology" src="/whatap-docs/assets/images/dx-it-image-02-d0bbef5d8aac758fa03f5a1b0b12ce51.png" width="1200" height="547" class="img_ev3q"></p><ul>
+<li>
+<p><strong>클라우드와 컨테이너 기술의 도입</strong>: 기업은 퍼블릭 클라우드와 프라이빗 클라우드를 결합한 하이브리드 클라우드를 통해 인프라의 유연성을 극대화하고 있습니다.</p>
+</li>
+<li>
+<p><strong>온디맨드 자원 활용</strong>: 대규모 데이터 처리가 필요한 작업에서 자원을 효율적으로 사용하고 필요한 시점에 자원을 확장하거나 축소할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="마이크로서비스-아키텍처msa의-확산">마이크로서비스 아키텍처(MSA)의 확산<a href="#마이크로서비스-아키텍처msa의-확산" class="hash-link" aria-label="마이크로서비스 아키텍처(MSA)의 확산에 대한 직접 링크" title="마이크로서비스 아키텍처(MSA)의 확산에 대한 직접 링크">​</a></h4><p>마이크로서비스 아키텍처(MicroService Architecture, MSA)는 애플리케이션을 여러 개의 독립적인 서비스로 분리하여 운영하는 방식으로 IT 환경의 유연성과 확장성을 크게 향상시킵니다.</p><p><img decoding="async" loading="lazy" alt="MSA" src="/whatap-docs/assets/images/dx-it-image-03-ae06d6998dcc5fe81178385e42dbf54a.png" width="1200" height="608" class="img_ev3q"></p><ul>
+<li>
+<p><strong>애플리케이션의 경량화</strong>: 각 서비스는 독립적으로 개발되고 배포될 수 있어 변경이 필요할 때마다 전체 시스템을 수정할 필요가 없습니다.</p>
+</li>
+<li>
+<p><strong>서비스 간의 격리</strong>: 문제가 발생해도 다른 서비스에 영향을 주지 않도록 설계되어 시스템 안정성이 향상됩니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="컨테이너-기술의-도입">컨테이너 기술의 도입<a href="#컨테이너-기술의-도입" class="hash-link" aria-label="컨테이너 기술의 도입에 대한 직접 링크" title="컨테이너 기술의 도입에 대한 직접 링크">​</a></h4><p>컨테이너는 애플리케이션과 그에 필요한 모든 것을 패키징하여 경량화된 단위로 실행할 수 있게 합니다. 이는 자원의 효율성을 높이고 배포와 관리의 복잡성을 줄이는 데 기여합니다. 또한 적은 자원으로 서비스 단위의 격리와 운영을 가능케 하여 마이크로서비스의 확산을 더욱 가속화하고 있습니다.</p><p><img decoding="async" loading="lazy" alt="Container" src="/whatap-docs/assets/images/dx-it-image-04-a73aa1cd66a9db6200ec219fd185558c.png" width="1200" height="433" class="img_ev3q"></p><ul>
+<li>
+<p><strong>컨테이너의 경량화</strong>: 애플리케이션을 컨테이너화하여 다양한 환경에서 동일한 방식으로 실행할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>자동화된 배포와 관리</strong>: 컨테이너 오케스트레이션 도구인 Kubernetes를 통해 컨테이너의 배포와 관리를 자동화할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="서비스-운영성의-향상">서비스 운영성의 향상<a href="#서비스-운영성의-향상" class="hash-link" aria-label="서비스 운영성의 향상에 대한 직접 링크" title="서비스 운영성의 향상에 대한 직접 링크">​</a></h4><p>IT 기술의 진보는 서비스의 운영성을 크게 향상시켰습니다. 특히 클라우드 기술의 발전은 서비스의 유연성과 확장성을 높여주었으며 이는 기업의 비즈니스 민첩성을 강화하는 데 중요한 역할을 합니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-05.png" width="1200" height="426"></p><ul>
+<li>
+<p><strong>동적 스케일링</strong>: 필요에 따라 서비스의 규모를 자동으로 조정하여 자원을 효율적으로 활용할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>서비스의 단위 확장</strong>: 각 서비스는 독립적으로 확장 가능하며 이는 장애 확산을 방지하는 데 도움을 줍니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="it-시스템의-복잡성-증가">IT 시스템의 복잡성 증가<a href="#it-시스템의-복잡성-증가" class="hash-link" aria-label="IT 시스템의 복잡성 증가에 대한 직접 링크" title="IT 시스템의 복잡성 증가에 대한 직접 링크">​</a></h4><p>기술이 진보함에 따라 IT 시스템의 복잡성도 증가하고 있습니다. 특히 클라우드와 마이크로서비스 아키텍처의 도입으로 시스템 구성 요소가 다양해지고 상호 의존성이 높아졌습니다. 이러한 상황에서 기존의 IT 모니터링 방식으로는 시스템 전체를 파악하기 어렵다는 문제가 대두되고 있습니다.</p><p><img decoding="async" loading="lazy" src="https://ik.imagekit.io/h4gmuu7ol/d76285_129d9a09cb084c9ca10e8225d7e98_0e59b3f687.png?sp=racwdl&amp;st=2023-11-29T13:26:55Z&amp;se=2050-11-29T21:26:55Z&amp;spr=https&amp;sv=2022-11-02&amp;sr=c&amp;sig=cjlnEtXAZeiBo5U0aBoOwBU2azK6HmLaRgvCD9aT9Aw%3D&amp;tr=w-2048" alt="Obervability" class="img_ev3q"></p><p>출처: <a href="https://www.worth.nl/en/articles/5-reasons-to-fight-complexity-in-your-it-systems" target="_blank" rel="noopener noreferrer">https://www.worth.nl/en/articles/5-reasons-to-fight-complexity-in-your-it-systems</a></p><ul>
+<li>
+<p><strong>복잡성의 증가</strong>: 다양한 서비스와 기술이 결합되면서 시스템의 복잡성이 높아졌습니다.</p>
+</li>
+<li>
+<p><strong>새로운 관측 방식 필요</strong>: 기존의 모니터링 방식으로는 이러한 복잡한 시스템을 관리하기 어려워 새로운 관측 방식이 요구됩니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링-환경의-변화">모니터링 환경의 변화<a href="#모니터링-환경의-변화" class="hash-link" aria-label="모니터링 환경의 변화에 대한 직접 링크" title="모니터링 환경의 변화에 대한 직접 링크">​</a></h3><p>현대의 IT 환경은 기술의 발전과 함께 급격하게 변화하고 있습니다. 이러한 변화는 모니터링 환경에도 큰 영향을 미치며, 기존의 모니터링 방식으로는 복잡하고 동적인 IT 시스템을 효과적으로 관리하기 어려워졌습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="관측-대상의-변화">관측 대상의 변화<a href="#관측-대상의-변화" class="hash-link" aria-label="관측 대상의 변화에 대한 직접 링크" title="관측 대상의 변화에 대한 직접 링크">​</a></h4><p>전통적인 모니터링 방식은 주로 서버나 데이터베이스와 같은 특정 자원의 내부에 국한되어 있었습니다. 그러나 클라우드 서비스의 도입과 컨테이너, 쿠버네티스(Kubernetes) 등의 활용이 증가하면서 모니터링 대상이 크게 확장되었습니다. 이제는 자원의 내부뿐만 아니라 자원의 외부에서 발생하는 다양한 지표와 데이터를 수집해야 합니다. 클라우드 활용이 일반화되면서 클라우드 벤더가 확보하고 있는 플랫폼 정보 또한 함께 모니터링해야 하는 상황입니다.</p><p><img decoding="async" loading="lazy" alt="Obervability" src="/whatap-docs/assets/images/dx-it-image-07-450706f15240a54fd8a3545d71d688e2.png" width="1200" height="544" class="img_ev3q"></p><p>MSA 환경으로의 전환에 컨테이너 환경까지 결합되면서, 모니터링 대상이 확대되어 리소스, 애플리케이션, 그리고 서비스 호출 흐름까지 관측 대상에 포함되었습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링-기술의-진화">모니터링 기술의 진화<a href="#모니터링-기술의-진화" class="hash-link" aria-label="모니터링 기술의 진화에 대한 직접 링크" title="모니터링 기술의 진화에 대한 직접 링크">​</a></h4><p>모니터링 기술은 IT 시스템의 복잡성과 데이터 양이 증가함에 따라 지속적으로 발전하고 있습니다. 특히, 기존의 모니터링 방식으로는 수집할 수 없었던 데이터를 수집하기 위한 새로운 시도가 이루어지고 있으며 인공지능(AI)과 머신러닝(ML) 기술을 활용한 분석이 증가하고 있습니다. 다음은 그 대표적인 사례입니다.</p><p><img decoding="async" loading="lazy" alt="Obervability" src="/whatap-docs/assets/images/dx-it-image-08-d90264e1be6a9d0937aa27179c6184f8.png" width="1200" height="390" class="img_ev3q"></p><ul>
+<li>
+<p><strong>eBPF</strong> (<strong>Extended Berkeley Packet Filter</strong>): 리눅스 커널에서 실행되는 프로그램으로 커널 공간에서 데이터를 수집하는 데 사용됩니다.</p>
+</li>
+<li>
+<p><strong>Telegraf와 같은 데이터 수집 도구</strong>: 다양한 데이터 소스에서 메트릭을 수집하고 전송하는 역할을 합니다.</p>
+</li>
+<li>
+<p><strong>AI/ML을 통한 분석</strong>: 수집된 데이터를 기반으로 이상 탐지 및 예측 분석을 수행합니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링-사용자의-변화">모니터링 사용자의 변화<a href="#모니터링-사용자의-변화" class="hash-link" aria-label="모니터링 사용자의 변화에 대한 직접 링크" title="모니터링 사용자의 변화에 대한 직접 링크">​</a></h4><p>모니터링 대상이 확장됨에 따라 사용자층도 넓어졌습니다. 과거에는 주로 시스템 엔지니어(SE)나 운영자만이 모니터링 도구를 사용했습니다. 그러나 최근에는 애플리케이션을 서비스 단위로 개발하고 배포하는 체계에서 이전과 같은 역할 분담이 명확하지 않게 되었습니다. DevOps 팀과 개발자들도 모니터링 도구를 사용하여 시스템의 상태를 실시간으로 확인하고 문제를 해결하는 데 적극적으로 참여하고 있습니다. 더 나아가 SRE(Site Reliability Engineering)라는 직종이 등장하면서 모니터링 능력이 엔지니어 개인의 역량을 평가하는 중요한 요소가 되었습니다.</p><p>이러한 변화는 IT 시스템의 복잡성이 증가함에 따라, 모든 관련 팀이 시스템 상태를 이해하고 문제가 발생했을 때 빠르게 대응할 수 있도록 하기 위함입니다.</p></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링-니즈의-변화">모니터링 니즈의 변화<a href="#모니터링-니즈의-변화" class="hash-link" aria-label="모니터링 니즈의 변화에 대한 직접 링크" title="모니터링 니즈의 변화에 대한 직접 링크">​</a></h3><p>현대의 IT 환경은  디지털 트랜스포메이션(DX)의 가속화와 함께 빠르게 변화하고 있습니다. 이러한 변화는 모니터링 요구 사항의 변화를 초래하였으며 옵션에 그쳤던 요소가 이제는 필수 요소로 자리 잡고 있습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="옵션에서-필수로의-전환">옵션에서 필수로의 전환<a href="#옵션에서-필수로의-전환" class="hash-link" aria-label="옵션에서 필수로의 전환에 대한 직접 링크" title="옵션에서 필수로의 전환에 대한 직접 링크">​</a></h4><p>과거에는 특정 요소만 모니터링하는 것이 옵션 사항에 불과했지만, 현재는 모든 요소를 필수적으로 모니터링해야 하는 상황으로 변화하고 있습니다. 이는 시스템 구성 요소의 다양화와 더불어 관리 포인트가 증가한 결과입니다. 각 요소의 상태를 모니터링하는 것은 이제 비즈니스 연속성 유지와 시스템 안정성을 위해 필수적입니다.</p><p><img decoding="async" loading="lazy" alt="Obervability" src="/whatap-docs/assets/images/dx-it-image-09-fc736a6e63823db479a65567704a79fc.png" width="943" height="618" class="img_ev3q"></p><ul>
+<li>
+<p><strong>관리 포인트의 증가</strong>: 다양한 클라우드 서비스, 클라이언트, 웹, 모바일 등 복합적인 요소들이 추가되면서 모니터링 요구가 증가했습니다.</p>
+</li>
+<li>
+<p><strong>필수적인 모니터링</strong>: 모든 IT 자원과 서비스를 필수적으로 모니터링해야 할 필요성이 높아지고 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링-대상-자원의-증가">모니터링 대상 자원의 증가<a href="#모니터링-대상-자원의-증가" class="hash-link" aria-label="모니터링 대상 자원의 증가에 대한 직접 링크" title="모니터링 대상 자원의 증가에 대한 직접 링크">​</a></h4><p>모놀리식 아키텍처에서 마이크로서비스 아키텍처(MSA)로의 전환은 모니터링 대상 자원의 범위를 크게 확장했습니다. 이로 인해 기업들은 단일 서버나 네트워크 장치를 넘어, 분산 서버, 클라우드 서비스, 가상 네트워크 등 다양한 자원을 모니터링해야 하는 필요성이 생겼습니다.</p><p><img decoding="async" loading="lazy" alt="Increase taget to monitoring" src="/whatap-docs/assets/images/dx-it-image-10-aa21566204a0359cec808b4ae167db84.png" width="1200" height="485" class="img_ev3q"></p><ul>
+<li>
+<p><strong>모니터링 대상의 확장</strong>: 기존의 전통적인 서버와 네트워크 장비뿐만 아니라, 가상 서버, 클라우드 데이터베이스, 분산 애플리케이션 등 새로운 자원들도 모니터링 대상에 포함해야 합니다.</p>
+</li>
+<li>
+<p><strong>분산 아키텍처 지원</strong>: 분산된 서버와 네트워크에서의 성능을 효과적으로 모니터링하며 시스템 전반의 상태를 파악할 수 있는 능력이 필요합니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="성능-모니터링의-중요성">성능 모니터링의 중요성<a href="#성능-모니터링의-중요성" class="hash-link" aria-label="성능 모니터링의 중요성에 대한 직접 링크" title="성능 모니터링의 중요성에 대한 직접 링크">​</a></h4><p>마이크로서비스 아키텍처의 도입으로 인해 모니터링 대상이 확대됨에 따라 리소스와 애플리케이션의 성능을 모니터링하는 것이 중요해졌습니다. 이는 각 서비스 호출의 흐름과 성능을 모니터링하는 것을 포함하여 시스템의 전반적인 성능을 유지하는 데 필수적입니다. 또한 현대의 분산 아키텍처 환경에서는 가용 자원에 대한 동적 측정 및 평가, 증설 등을 자동으로 운영합니다. 이러한 이유로 서비스에 대한 성능 평가가 운영을 위한 기준으로서 중요해 졌습니다.</p><p>마이크로서비스 아키텍처의 도입으로 모니터링 대상이 확대되면서, 리소스와 애플리케이션 성능을 모니터링하는 것이 더욱 중요해졌습니다. 각 서비스 호출의 흐름과 성능을 모니터링하는 것은 시스템 전반의 성능을 유지하는 데 필수적입니다. 또한 현대의 분산 아키텍처 환경에서는 가용 자원에 대한 동적 측정 및 평가, 그리고 증설이 자동으로 이루어집니다. 이러한 이유로 서비스 성능 평가가 운영의 기준으로서 중요해졌습니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-11.png" alt="Performance monitoring" width="1200" height="798"></p><ul>
+<li>
+<p><strong>애플리케이션 성능 모니터링</strong>: 애플리케이션 성능을 실시간으로 모니터링하여 시스템 성능 저하를 조기에 감지하고 대응할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>서비스 호출 흐름 모니터링</strong>: 분산 환경에서 서비스 간 호출 흐름을 모니터링하여 시스템의 성능 문제를 신속히 파악할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dx-it-운영">DX-IT 운영<a href="#dx-it-운영" class="hash-link" aria-label="DX-IT 운영에 대한 직접 링크" title="DX-IT 운영에 대한 직접 링크">​</a></h4><p><strong>성능 모니터링</strong>은 시스템의 다양한 지표를 실시간으로 관측하고 분석함으로써 인프라 자원의 활용도를 최적화할 수 있습니다. 이는 시스템의 품질을 유지하는 데 있어 중요한 역할을 합니다. 특히, 클라우드와 같은 유동적인 인프라 환경에서는 리소스의 적절한 배분과 확장이 비즈니스 성과에 직결되기 때문에 <strong>성능 모니터링</strong>은 필수적인 도구입니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-12.png" alt="DX IT" width="1200" height="485"></p><p>과거에는 비즈니스와 IT 기술이 각기 독립적으로 운영되거나 최소한의 접점에서 융합하는 수준에 그쳤습니다. 그러나 디지털 트랜스포메이션(DX)의 가속화와 함께 IT는 단순한 지원 역할을 넘어 비즈니스 전략의 핵심으로 자리 잡게 되었습니다. 이제 IT와 비즈니스는 완전히 통합된 상태로 운영되어야 합니다. 이 과정에서 <strong>성능 모니터링</strong>은 필수적인 도구로 자리 잡게 되었습니다.</p><p><strong>성능 모니터링</strong>은 DX-IT 운영의 필수 요소로서 IT와 비즈니스의 일체화를 지원하는 핵심 도구입니다. 이는 단순히 시스템의 성능을 모니터링하는 것을 넘어 비즈니스 성과를 극대화하고, 기업의 경쟁력을 강화하는 데 필수적인 역할을 합니다. 앞으로도 <strong>성능 모니터링</strong>은 IT 운영의 중요한 부분으로 비즈니스와 IT가 일체화된 운영 모델을 실현하는 데 있어 중요한 역할을 지속적으로 담당하게 될 것입니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="통합-모니터링">통합 모니터링<a href="#통합-모니터링" class="hash-link" aria-label="통합 모니터링에 대한 직접 링크" title="통합 모니터링에 대한 직접 링크">​</a></h4><p>IT 시스템의 복잡성이 증가함에 따라 단일 도구로는 모든 모니터링 요구를 충족시키기 어려워졌습니다. <strong>통합 모니터링</strong>은 다양한 IT 자산(서버, 네트워크, 애플리케이션 등)을 하나의 플랫폼에서 모니터링하고 관리할 수 있는 능력을 제공합니다. 이는 DX-IT 운영을 지원하는 핵심 요소입니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-13.png" alt="Integrated Monitoring" width="1200" height="593"></p><ul>
+<li>
+<p><strong>시스템 전체의 가시성 확보</strong>: 통합 모니터링을 통해 모든 시스템 요소의 상태를 한눈에 파악할 수 있습니다. 이는 문제 발생 시 신속한 대응을 가능하게 하며 시스템의 안정성을 유지하는 데 필수적입니다.</p>
+</li>
+<li>
+<p><strong>효율적인 리소스 관리</strong>: 통합 모니터링은 리소스의 사용 현황을 정확히 파악하고 필요에 따라 최적화 방안을 마련할 수 있게 합니다. 이를 통해 불필요한 리소스 낭비를 줄이고 비용 효율성을 높일 수 있습니다.</p>
+</li>
+<li>
+<p><strong>단일 뷰 제공</strong>: 다양한 시스템과 애플리케이션에서 수집된 데이터를 한 곳에서 통합적으로 볼 수 있는 단일 뷰를 제공함으로써 운영자는 시스템 전반의 상태를 쉽게 모니터링할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="가시화의-필요성">가시화의 필요성<a href="#가시화의-필요성" class="hash-link" aria-label="가시화의 필요성에 대한 직접 링크" title="가시화의 필요성에 대한 직접 링크">​</a></h4><p>모니터링 데이터를 통해 시스템 상태를 가시화하는 것은 운영 효율성을 높이는 데 필수적입니다. 가시화된 데이터는 운영자에게 중요한 인사이트를 제공하며 빠른 의사결정을 지원합니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-14.png" alt="Integrated Monitoring" width="1200" height="456"></p><ul>
+<li>
+<p><strong>데이터 가시화</strong>: 다양한 자원에서 수집된 데이터를 효과적으로 시각화하여 운영자에게 중요한 정보를 직관적으로 제공할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>장애 탐지 및 대응</strong>: 시각화된 데이터를 통해 장애를 신속하게 탐지하고 효과적으로 대응할 수 있습니다.</p>
+</li>
+</ul><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>장애 탐지 시간과 <a href="https://chronosphere.io/learn/why-are-we-so-bad-at-mean-time-to-repair-mttr/?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_content=inline-mention&amp;utm_campaign=tns+platform" target="_blank" rel="noopener noreferrer">복구 시간</a>이 길어지면 운영에 부정적인 영향을 미칩니다. 이는 클라우드와 하이브리드 환경이 복잡해지면서 가시성이 낮아져 장애 발생 시 신속하게 서비스를 복구하는 것이 더 어려워지기 때문입니다.</p></div></div></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="it-모니터링-분야의-주요-과제">IT 모니터링 분야의 주요 과제<a href="#it-모니터링-분야의-주요-과제" class="hash-link" aria-label="IT 모니터링 분야의 주요 과제에 대한 직접 링크" title="IT 모니터링 분야의 주요 과제에 대한 직접 링크">​</a></h3><p>현대 IT 환경에서 모니터링은 필수적인 요소로 자리 잡았습니다. 그러나 모니터링 시스템이 효과적으로 작동하기 위해서는 여러 가지 도전과제를 극복해야 합니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dx를-지탱하는-it-운영">DX를 지탱하는 IT 운영<a href="#dx를-지탱하는-it-운영" class="hash-link" aria-label="DX를 지탱하는 IT 운영에 대한 직접 링크" title="DX를 지탱하는 IT 운영에 대한 직접 링크">​</a></h4><p>IT 퍼포먼스의 향상은 비즈니스 속도와 성과에 직접적인 영향을 미칩니다. IT 시스템의 성능이 최적화될수록 비즈니스의 성장과 발전이 가속화되며, 현대의 디지털 전환 시대에서 매우 중요한 요소로 자리 잡고 있습니다. IT와 비즈니스는 이제 분리될 수 없는 관계를 형성하고 있으며, IT 운영의 성공 여부가 곧 비즈니스 성과로 이어집니다.</p><p>디지털 트랜스포메이션 과정에서 성공적인 IT 운영은 단순히 시스템을 안정적으로 유지하는 것을 넘어, 비즈니스 속도를 높이고 경쟁력을 강화하는 핵심적인 역할을 담당합니다. 따라서 IT 퍼포먼스를 높이는 것은 디지털 전환의 성공을 좌우하는 중요한 요소이며, 궁극적으로 기업의 지속 가능한 성장과 성과를 보장하는 필수적인 조건으로 자리매김하고 있습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="운영-효율화와-비용-절감">운영 효율화와 비용 절감<a href="#운영-효율화와-비용-절감" class="hash-link" aria-label="운영 효율화와 비용 절감에 대한 직접 링크" title="운영 효율화와 비용 절감에 대한 직접 링크">​</a></h4><p>IT 모니터링 시스템의 구축과 운영에는 상당한 비용이 소요됩니다. 특히, 다양한 환경과 업무에 맞춰 각각의 모니터링 솔루션을 구축하고 유지하는 데는 많은 자원이 필요합니다. 운영 효율성을 극대화하고 비용을 절감하기 위해서는 통합된 모니터링 솔루션이 필요합니다. 이러한 통합은 중복된 투자와 유지 비용을 줄이고 운영 효율성을 높이는 데   기여할 수 있습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="운영-담당자의-부재와-스케일링-대응">운영 담당자의 부재와 스케일링 대응<a href="#운영-담당자의-부재와-스케일링-대응" class="hash-link" aria-label="운영 담당자의 부재와 스케일링 대응에 대한 직접 링크" title="운영 담당자의 부재와 스케일링 대응에 대한 직접 링크">​</a></h4><p>IT 시스템의 복잡성이 증가함에 따라 이를 관리할 수 있는 운영 담당자의 역할이 더욱 중요해졌습니다. 그러나 많은 기업들이 충분한 인력을 확보하지 못하거나 미성숙한 DevOps 환경에서 운영과 개발을 동시에 담당해야 하는 어려움을 겪고 있습니다. 또한 트래픽 증가할 때 시스템의 신속한 스케일링(확장)이 필요한데 이를 효과적으로 지원할 수 있는 운영 체계가 부족한 경우가 많습니다.</p><p>자동화된 모니터링과 스케일링 솔루션을 통해 운영 부담을 줄이고 비즈니스 요구에 맞춰 신속하게 대응할 수 있는 체계 구축이 필요합니다.</p><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
+<li>
+<p>지난 2016년부터 2021년 동 안 <a href="https://uptimeinstitute.com/about-ui/press-releases/uptime-institute-releases-3rd-annual-outage-analysis?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_content=inline-mention&amp;utm_campaign=tns+platform" target="_blank" rel="noopener noreferrer">42%의 기업</a>이 휴먼 에러로 인해 다운 타임을 경험했습니다.</p>
+</li>
+<li>
+<p><a href="https://cpl.thalesgroup.com/cloud-security-research?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_content=inline-mention&amp;utm_campaign=tns+platform" target="_blank" rel="noopener noreferrer">전 세계 기업의 40%</a>가 지난 12개월 동안 클라우드 기반 데이터 유출을 경험했습니다.</p>
+</li>
+<li>
+<p>고객을 <a href="https://opsworks.co/how-to-improve-website-performance-with-devops/?utm_source=the+new+stack&amp;utm_medium=referral&amp;utm_content=inline-mention&amp;utm_campaign=tns+platform" target="_blank" rel="noopener noreferrer">3초 이상</a> 기다리게 한다면 잠재 고객의 50%가 웹사이트를 이탈합니다.</p>
+</li>
+</ul></div></div></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="성능-모니터링과-시스템-품질-유지">성능 모니터링과 시스템 품질 유지<a href="#성능-모니터링과-시스템-품질-유지" class="hash-link" aria-label="성능 모니터링과 시스템 품질 유지에 대한 직접 링크" title="성능 모니터링과 시스템 품질 유지에 대한 직접 링크">​</a></h4><p>시스템 성능을 모니터링하고, 이를 기반으로 시스템 품질을 유지하는 것은 IT 운영의 핵심 과제 중 하나입니다. 그러나 분산된 애플리케이션과 복잡한 인프라에서 성능 데이터를 효과적으로 수집하고 분석하는 것은 매우 어려운 작업입니다. 이에 따라 성능 모니터링을 강화하고 시스템 품질을 유지하는 방법론이 요구됩니다.</p><p>고성능 모니터링 도구를 도입하여 실시간으로 성능 데이터를 수집하고 이를 바탕으로 시스템의 품질을 유지할 수 있습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="비즈니스-변화에-대한-대응성">비즈니스 변화에 대한 대응성<a href="#비즈니스-변화에-대한-대응성" class="hash-link" aria-label="비즈니스 변화에 대한 대응성에 대한 직접 링크" title="비즈니스 변화에 대한 대응성에 대한 직접 링크">​</a></h4><p>IT 환경은 비즈니스 요구에 따라 빠르게 변화합니다. 이러한 변화에 신속하게 대응하기 위해서는 모니터링 시스템도 유연하고 민첩하게 운영되어야 합니다. 그러나 기존의 고정된 모니터링 시스템은 비즈니스 변화에 대응하는 데 한계가 있습니다.</p><p>유연한 모니터링 솔루션을 도입하여 비즈니스 변화에 민첩하게 대응할 수 있도록 시스템을 설계해야 합니다.</p><hr></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="과제-해결-방안">과제 해결 방안<a href="#과제-해결-방안" class="hash-link" aria-label="과제 해결 방안에 대한 직접 링크" title="과제 해결 방안에 대한 직접 링크">​</a></h2></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="통합-모니터링-1">통합 모니터링<a href="#통합-모니터링-1" class="hash-link" aria-label="통합 모니터링에 대한 직접 링크" title="통합 모니터링에 대한 직접 링크">​</a></h3><p>현대의 IT 환경은 복잡하고 다양한 시스템이 상호 연관되어 작동하는 환경입니다. 이러한 환경에서 각 시스템의 상태를 효과적으로 파악하고 관리하기 위해서는 모니터링이 필수적입니다. 그러나 전통적인 모니터링 방식은 특정 대상이나 시스템에 국한되어 있었으며, 이는 전체적인 IT 인프라의 상태를 종합적으로 파악하는 데 한계가 있습니다. 이러한 문제를 해결하기 위해 통합 모니터링의 필요성이 점점 강조되고 있습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="지금까지의-모니터링">지금까지의 모니터링<a href="#지금까지의-모니터링" class="hash-link" aria-label="지금까지의 모니터링에 대한 직접 링크" title="지금까지의 모니터링에 대한 직접 링크">​</a></h4><ul>
+<li>
+<p><strong>대상별 모니터링</strong></p>
+<p>전통적인 모니터링 방식은 특정 자원이나 시스템에 집중하여 개별적으로 모니터링하는 형태였습니다. 예를 들어, 서버 모니터링, 네트워크 모니터링, 애플리케이션 모니터링 등 각기 다른 도구를 사용하여 각 요소를 독립적으로 모니터링하는 방식입니다. 이러한 접근 방식은 개별 시스템의 상태를 파악하는 데는 유용하지만, 시스템 간의 상호작용이나 전체적인 성능을 종합적으로 이해하는 데는 한계가 있었습니다.</p>
+<p><img decoding="async" loading="lazy" alt="Monitoring by target" src="/whatap-docs/assets/images/dx-it-image-15-0518ba3ade0820013088e1196134755d.png" width="1200" height="621" class="img_ev3q"></p>
+<ul>
+<li>
+<p><strong>사일로화된 정보</strong>: 각 시스템 간의 데이터가 분리되어 있어 전체적인 IT 인프라의 상태를 종합적으로 파악하기 어렵습니다.</p>
+</li>
+<li>
+<p><strong>장애 대응 지연</strong>: 특정 시스템에서 문제가 발생했을 때 해당 문제가 다른 시스템에 어떻게 영향을 미치는지를 파악하기 어렵기 때문에 장애 대응이 지연될 수 있습니다.</p>
+</li>
+<li>
+<p><strong>운영 비효율성</strong>: 여러 시스템에서 중복된 모니터링이 이루어지면서 운영의 효율성이 떨어지고 각 시스템 간의 데이터 일관성을 유지하기 어려워집니다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>  담당별 모니터링</strong></p>
+<p>기존의 모니터링은 주로 시스템 엔지니어, 네트워크 관리자, 애플리케이션 관리자 등 각기 다른 담당자가 각각의 도구를 사용하여 자신이 관리하는 영역만을 모니터링하는 방식이었습니다. 이러한 방식은 각 팀이 특정 영역의 성능과 상태를 깊이 있게 파악할 수 있도록 했지만 문제가 발생했을 때 서로 다른 팀 간의 협력이 어려워지고, 문제의 원인을 종합적으로 분석하는 데 시간이 소요되었습니다.</p>
+<p><img decoding="async" loading="lazy" alt="Monitoring by manage" src="/whatap-docs/assets/images/dx-it-image-16-34696ffb7dd09a92862d5443f94d5e81.png" width="1200" height="475" class="img_ev3q"></p>
+<ul>
+<li>
+<p><strong>커뮤니케이션 부족</strong>: 각 팀이 사용하는 도구와 관점이 다르기 때문에 문제가 발생하면 서로 다른 데이터를 기반으로 의사소통을 해야 하며 이로 인해 오해나 의사결정의 지연이 발생할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>문제의 근본 원인 파악의 어려움</strong>: 문제의 원인이 어느 시스템에 있는지 명확하지 않을 때는 각 팀이 서로에게 책임을 떠넘기며 문제 해결이 지연될 수 있습니다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>시스템별 모니터링</strong></p>
+<p>시스템별 모니터링은 각기 다른 시스템을 독립적으로 모니터링하는 방식입니다. 예를 들어, 데이터베이스 시스템은 데이터베이스 모니터링 도구로, 네트워크는 네트워크 모니터링 도구로 모니터링하는 식입니다. 이러한 방식은 각 시스템의 성능을 독립적으로 최적화할 수 있지만 시스템 간의 연계성이나 종합적인 성능을 모니터링하는 데는 한계가 있습니다.</p>
+<p><img decoding="async" loading="lazy" alt="Monitoring by system" src="/whatap-docs/assets/images/dx-it-image-17-d16ed236ffc1924605984bbc9579b0d0.png" width="1200" height="335" class="img_ev3q"></p>
+<ul>
+<li>
+<p><strong>워크로드 관리의 비효율성</strong>: 각 시스템이 서로 다른 워크로드를 가지고 있어 이를 효율적으로 관리하기 위해서는 통합된 모니터링 솔루션이 필요합니다.</p>
+</li>
+<li>
+<p><strong>비용 증가</strong>: 각 시스템을 개별적으로 모니터링하다 보면 모니터링 도구의 중복 사용으로 인한 비용이 증가할 수 있습니다.</p>
+</li>
+</ul>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링에서의-통합">모니터링에서의 통합<a href="#모니터링에서의-통합" class="hash-link" aria-label="모니터링에서의 통합에 대한 직접 링크" title="모니터링에서의 통합에 대한 직접 링크">​</a></h4><p>모니터링 환경의 변화에 따라 개별 시스템이나 영역에 국한된 모니터링 방식은 한계를 드러내고 있습니다. 이를 해결하기 위해 모니터링 대상, 기술, 업무, 그리고 환경을 통합하는 새로운 접근 방식이 필요합니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-18.png" alt="Integrated Monitoring" width="1200" height="595"></p><ul>
+<li>
+<p><strong>대상/기술의 통합</strong></p>
+<p>통합 모니터링의 첫 번째 단계는 다양한 모니터링 대상을 통합하는 것입니다. 서버, 네트워크, 애플리케이션, 데이터베이스 등 모든 IT 자원을 하나의 플랫폼에서 통합적으로 모니터링할 수 있어야 합니다. 또한 이들 기술을 통합하여 단일한 대시보드를 통해 모든 자원의 상태를 한눈에 파악할 수 있는 시스템이 필요합니다. 이를 통해 시스템 간의 연계성을 파악하고 전체 IT 인프라의 상태를 실시간으로 모니터링할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>업무의 통합</strong></p>
+<p>통합 모니터링은 IT 운영 팀 내에서의 업무 통합을 촉진합니다. 기존 의 담당별 모니터링에서 벗어나 통합 모니터링을 통해 모든 팀이 동일한 데이터를 기반으로 협력할 수 있습니다. 예를 들어, 시스템 엔지니어, 네트워크 관리자, 애플리케이션 관리자가 모두 동일한 모니터링 플랫폼을 사용하여 협업함으로써 문제 발생 시 신속하고 효과적으로 대응할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>환경/지역의 통합</strong></p>
+<p>현대의 IT 환경은 하이브리드 클라우드, 멀티 클라우드, 온프레미스 환경 등 다양한 인프라를 포함하고 있습니다. 이러한 환경의 통합 모니터링은 필수적입니다. 퍼블릭 클라우드와 프라이빗 클라우드, 온프레미스 환경을 아우르는 통합 모니터링을 통해 다양한 지역과 환경에서 운영되는 시스템을 일관되게 관리할 수 있습니다. 이는 글로벌 비즈니스를 운영하는 기업에게 특히 중요합니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="실시간-옵저버빌리티">실시간 옵저버빌리티<a href="#실시간-옵저버빌리티" class="hash-link" aria-label="실시간 옵저버빌리티에 대한 직접 링크" title="실시간 옵저버빌리티에 대한 직접 링크">​</a></h3><p>현대의 IT 환경에서 <strong>옵저버빌리티</strong>는 시스템의 가용성과 성능을 유지하고 비즈니스 요구에 신속하게 대응하는 데 필수적인 요소로 자리 잡고 있습니다. 복잡하고 분산된 시스템 구조에서는 단순한 모니터링만으로는 충분하지 않으며 시스템의 상태를 실시간으로 파악하고 문제를 즉시 해결할 수 있는 능력이 필요합니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="옵저버빌리티의-주요-구성-요소">옵저버빌리티의 주요 구성 요소<a href="#옵저버빌리티의-주요-구성-요소" class="hash-link" aria-label="옵저버빌리티의 주요 구성 요소에 대한 직접 링크" title="옵저버빌리티의 주요 구성 요소에 대한 직접 링크">​</a></h4><p>모니터링은 단순히 시스템의 활동을 관찰하고 기록하는 프로세스입니다. 모니터링 도구는 애플리케이션이 어떻게 작동하는지에 대한 데이터를 수집합니다. 모니터링을 통해 애플리케이션의 상태를 파악하여 알려진 장애 지점에 대한 경계를 유지할 수 있습니다.</p><p>모니터링의 상위 개념인 <strong>옵저버빌리티</strong>에는 이러한 모든 기능과 그 이상의 기능을 포함합니다. 복잡한 클라우드 네이티브 분산 시스템의 문제를 해결할 때는 더 많고 다양한 도구가 필요하기 때문입니다. 어떤 종류의 장애가 발생할지 예측할 수도 없고 미리 알 수도 없습니다. <strong>옵저버빌리티</strong>는 새로운 클라우드 네이티브 세계에서 소위 &#x27;알려지지 않은 미지의 문제&#x27;를 발견하고 해결하는 데 도움이 됩니다.</p><p>모니터링은 애플리케이션 성능을 감시하고 개선하는 데 사용됩니다. 반면에 <strong>옵저버빌리티</strong>는 클라우드 네이티브 시스템의 내부 측정을 통해 비즈니스 중심적인 결과나 목표에 영향을 미치는 것에 더 가깝습니다. 예를 들어, 사용자에게 미치는 영향은 무엇인가? 고객에게 어떤 영향을 미치나? 어떻게 하면 더 민첩하게 반복할 수 있을까? 그리고 어떻게 하면 비즈니스 전체에 더 많은 혜택을 더 빨리 제공할 수 있을까? <strong>옵저버빌리티</strong>는 시스템을 계속 가동하고 운영하기 위해 더 큰 그림으로 접근하는 것입니다.</p><p>다음은 <strong>옵저버빌리티</strong>를 구성하는 주요 요소입니다.</p><ul>
+<li>
+<p><strong>메트릭스</strong>(<strong>Metrics</strong>)</p>
+<p><strong>메트릭스</strong>는 시스템의 성능과 상태를 정량적으로 나타내는 지표입니다. CPU 사용률 및 메모리 사용량, 네트워크 대역폭, 트랜잭션 처리 속도 등이 대표적인 메트릭스입니다. 실시간 옵저버빌리티를 구현하기 위해서는 이러한 메트릭스를 초단위로 수집하여 분석하는 것이 중요합니다.</p>
+</li>
+<li>
+<p><strong>로그</strong>(<strong>Log</strong>)</p>
+<p><strong>로그</strong>는 시스템에서 발생하는 이벤트나 에러 정보를 기록한 데이터입니다. 로그를 통해 시스템에서 발생한 일련의 사건들을 추적하고 특정 문제의 원인을 파악할 수 있습니다. 실시간 옵저버빌리티에서는 로그 데이터를 실시간으로 수집하고 분석하여 문제가 발생한 시점과 원인을 신속하게 파악할 수 있어야 합니다.</p>
+</li>
+<li>
+<p><strong>트레이스</strong>(<strong>Trace</strong>) / 스팬(Span)</p>
+<p><strong>트레이스</strong>는 애플리케이션 내에서 수행된 작업의 흐름을 추적하는 데 사용됩니다. 이는 특히 분산 시스템에서 중요하며 각 서비스 간의 호출 관계와 처리 시간을 분석하여 병목 현상이나 성능 저하의 원인을 파악하는 데 유용합니다. 트레이스를 통해 모니터링 대상의 복잡한 실행 흐름을 가시화하고 문제 발생 시 신속하게 해결할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>프로파일러</strong>(<strong>Profiler</strong>)</p>
+<p><strong>프로파일러</strong>는 애플리케이션의 성능을 세부적으로 분석하고 최적화하는 데 사용합니다. 특정 코드나 함수의 실행 시간을 측정하고 리소스 소비를 모니터링하여 애플리케이션 내에서 성능 병목이 발생하는 부분을 식별하는 데 유용합니다. 실시간 옵저버빌리티 환경에서 프로파일러는 모니터링 대상의 성능을 심층적으로 분석하여 시스템이 최적의 상태에서 동작할 수 있도록 지원합니다. 이를  통해 성능 저하를 사전에 방지하고 최적화된 성능을 유지할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="분산-시스템과-실시간-옵저버빌리티의-필요성">분산 시스템과 실시간 옵저버빌리티의 필요성<a href="#분산-시스템과-실시간-옵저버빌리티의-필요성" class="hash-link" aria-label="분산 시스템과 실시간 옵저버빌리티의 필요성에 대한 직접 링크" title="분산 시스템과 실시간 옵저버빌리티의 필요성에 대한 직접 링크">​</a></h4><p>현대 IT 시스템은 마이크로서비스 아키텍처와 클라우드 환경의 도입으로 인해 더욱 복잡해지고 있습니다. 이러한 분산 시스템에서는 다양한 서비스와 애플리케이션이 상호작용하며 이들 간의 상태를 실시간으로 파악하는 것이 매우 중요합니다. 실시간 옵저버빌리티는 이러한 복잡한 시스템을 관리하고 문제를 즉시 파악하여 신속하게 대응할 수 있는 능력을 제공합니다.</p><p><img decoding="async" loading="lazy" alt="Distributed system" src="/whatap-docs/assets/images/dx-it-image-25-6626c059edbefbfc76feecd30253c8bc.png" width="1200" height="676" class="img_ev3q"></p><ul>
+<li>
+<p><strong>복잡성 증가</strong>: 분산 시스템과 마이크로서비스 아키텍처의 도입으로 시스템 간의 상호작용이 더욱 복잡해졌으며, 이를 관리하려면 실시간으로 데이터를 수집하고 분석할 수 있는 실시간 옵저버빌리티가 필요합니다.</p>
+</li>
+<li>
+<p><strong>동적 변화</strong>: 클라우드 환경에서 서비스의 동적인 변화에 빠르게 대응하기 위해서는 실시간으로 시스템 상태를 파악하고, 이를 기반으로 자동화된 조치를 취할 수 있는 기능이 중요합니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="실  시간-옵저버빌리티-구현의-주요-과제">실시간 옵저버빌리티 구현의 주요 과제<a href="#실시간-옵저버빌리티-구현의-주요-과제" class="hash-link" aria-label="실시간 옵저버빌리티 구현의 주요 과제에 대한 직접 링크" title="실시간 옵저버빌리티 구현의 주요 과제에 대한 직접 링크">​</a></h4><p><strong>실시간 옵저버빌리티</strong>란 즉시성이 요구되는 IT 서비스에서의 <strong>옵저버빌리티</strong>를 의미합니다. 사용자가 문제를 인지하기 전에, 시스템의 상태를 초 단위로 감시하고 복잡한 상황을 시각화할 수 있어야 합니다. 장애가 발생했을 때는 서비스 관점에서 문제 발생 지점과 유형을 빠르게 식별할 수 있어야 합니다. 마지막으로, 신속한 원인 분석을 위해 장애 재현이나 추가 정보 수집 없이 상시 기록된 고해상도 데이터를 통해 바로 문제의 원인을 탐색할 수 있어야 합니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-19.png" alt="Real-time Objevability" width="1600" height="879"></p><p>실시간 옵저버빌리티를 성공적으로 구현하기 위해서는 몇 가지 핵심 과제를 해결해야 합니다.</p><ul>
+<li>
+<p><strong>통합된 데이터 수집</strong></p>
+<p>효과적인 옵저버빌리티를 위해서는 시스템 전반에서 수집된 데이터를 통합하여 관리하는 것이 중요합니다. 성능 지표(메트릭스), 이벤트 기록(로그), 작업 흐름 기록(트레이스) 등의 데이터를 다양한 소스에서 실시간으로 수집하여 하나의 플랫폼에서 관리해야 합니다. 이를 통해 시스템의 전반적인 상태를 한눈에 파악할 수 있으며 문제가 발생했을 때 신속하게 원인을 분석할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>자동화된 경고 및 알림 시스템</strong></p>
+<p>실시간 옵저버빌리티는 특정 조건이 발생했을 때 자동으로 경고를 발 생시키고 이를 운영팀에 알리는 기능을 포함해야 합니다. 이러한 자동화된 경고 시스템은 문제 발생 시 신속한 대응을 가능하게 하며 시스템의 가용성을 유지하는 데 중요한 역할을 합니다.</p>
+</li>
+<li>
+<p><strong>통합된 가시성 제공</strong></p>
+<p>현대 IT 환경에서는 다양한 소스에서 많은 데이터가 유입되며, 이를 관리하기 위해 여러 도구를 사용하는 경우가 많습니다. 하지만 이러한 도구들 간에 전환 없이 모든 데이터를 한곳에서 통합해 볼 수 있는 시스템이 필요합니다. 통합된 가시성은 사용자가 여러 시스템과 애플리케이션에서 들어오는 데이터를 하나의 화면에서 쉽게 모니터링할 수 있도록 해줍니다.</p>
+<p>이를 통해 운영자는 시스템의 상태를 보다 명확하게 파악하고 필요한 조치를 신속하게 취할 수 있습니다. 이처럼 모든 데이터를 한눈에 볼 수 있는 통합된 뷰를 제공함으로써 전체 시스템에 대한 이해도를 높이고 운영 효율성을 극대화할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>고해상도 데이터 분석</strong></p>
+<p>초단위로 수집되는 고해상도 데이터를 실시간으로 분석하여 시스템의 미세한 변화도 즉시 감지할 수 있어야 합니다. 이를 통해 잠재적인 문제를 조기에 발견하고, 서비스 중단을 예방할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>상호 운용성 수용</strong></p>
+<p>데이터는 다양한 소스에서 다양한 형식으로 제공될 수 있습니다. 오픈 소스 도구, 상용 도구, 클라우드 환경 등에서 생성된 데이터를 하나의 플랫폼에서 통합적으로 관리하고 분석할 수 있어야 합니다. 이를 통해 전체 시스템에 대한 일관된 가시성을 확보하고 데이터를 일관되게 분석할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>풍부한 맥락 제공</strong></p>
+<p>데이터 자체도 중요하지만, 이를 둘러싼 상황적 정보(맥락)를 함께 이해하는 것이 매우 중요합니다. 문제 발생 시 해당 시점의 시스템 구성, 서버 상태, 그리고 평소와 다른 작업량이 있었는지를 파악하는 것이 문제 해결에 크게 기여할 수 있습니다. 이러한 맥락적 정보를 통해 데이터를 더 풍부하게 만들고, 이를 바탕으로 불필요한 정보를 제거하여 실제 문제를 식별할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>맞춤형 검색 및 분석 도구</strong></p>
+<p>각 조직의 비즈니스 요구 사항에 맞춘 맞춤형 검색 및 분석 도구는 옵저버빌리티의 가치를 극대화합니다. IT 운영 팀은 핵심 성과 지표(KPI)를 설정하고, 해당 지표를 바탕으로 시스템 성능을 모니터링할 수 있어야 합니다. 또한 자동화된 워크플로우와 외부 데이터를 실시간으로 통합하여 데이터를 분석하고 필요한 조치를 취할 수 있는 도구가 필요합니다.</p>
+<p>이러한 도구는 데이터 분석과 자동화된 워크플로우를 지원하며 IT 운영 팀이 신속하게 결정을 내리고 조치를 취할 수 있도록 도와줍니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="실시간-옵저버빌리티의-이점">실시간 옵저버빌리티의 이점<a href="#실시간-옵저버빌리티의-이점" class="hash-link" aria-label="실시간 옵저버빌리티의 이점에 대한 직접 링크" title="실시간 옵저버빌리티의 이점에 대한 직접 링크">​</a></h4><p>실시간 옵저버빌리티를 도입하면 다음과 같은 이점을 얻을 수 있습니다.</p><ul>
+<li>
+<p><strong>신속한 문제 해결</strong>: 문제가 발생했을 때 이를 실시간으로 감지하고 원인을 신속하게 파악하여 즉각적으로 대응할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>서비스 가용성 유지</strong>: 시스템의 상태를 실시간으로 파악하여   서비스 중단을 예방하고 비즈니스 연속성을 유지할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>운영 효율성 증대</strong>: 시스템 운영의 자동화를 통해 운영 효율성을 높이고, 인력 리소스를 절감할 수 있습니다.</p>
+</li>
+</ul><p>장애를 특정하고 원인을 찾는 데 오랜 시간이 걸린다면, 비즈니스 속도를 가속화하기 위해 빠르게 구현하고 운영해야 하는 IT에게는 큰 걸림돌이 될 수 있습니다. 실시간 옵저버빌리티는 이러한 문제를 해결하는 데 중요한 역할을 합니다.</p></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="dx-it-운영-1">DX-IT 운영<a href="#dx-it-운영-1" class="hash-link" aria-label="DX-IT 운영에 대한 직접 링크" title="DX-IT 운영에 대한 직접 링크">​</a></h3><p>현대의 IT 운영 환경은 디지털 트랜스포메이션(DX)의 요구에 부응하기 위해 빠르게 변화하고 있습니다.</p></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="dx-it-운영의-필요성">DX-IT 운영의 필요성<a href="#dx-it-운영의-필요성" class="hash-link" aria-label="DX-IT 운영의 필요성에 대한 직접 링크" title="DX-IT 운영의 필요성에 대한 직접 링크">​</a></h4><p>디지털 트랜스포메이션은 더 이상 선택이 아닌 필수입니다. 기업들은 디지털 기술을 활용해 운영의 효율성을 높이고 혁신을 가속화하며 시장에서의 경쟁 우위를 확보하려고 노력하고 있습니다. DX-IT 운영은 이러한 디지털 트랜스포메이션을 지원하는 핵심적인 역할을 합니다.</p><ul>
+<li>
+<p><strong>비즈니스와 IT의 융합</strong>: 비즈니스 속도와 IT 퍼포먼스의 일치가 중요해졌으며 비즈니스 요구 사항에 맞춰 IT 시스템을 빠르게 확장하고 최적화하는 것이 필수적입니다.</p>
+</li>
+<li>
+<p><strong>IT 운영의 민첩성</strong>: 빠 르게 변화하는 비즈니스 환경에서 IT 시스템이 민첩하게 대응할 수 있도록 지원하는 운영 모델이 요구됩니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="itil4-기반의-it-운영-모델">ITIL4 기반의 IT 운영 모델<a href="#itil4-기반의-it-운영-모델" class="hash-link" aria-label="ITIL4 기반의 IT 운영 모델에 대한 직접 링크" title="ITIL4 기반의 IT 운영 모델에 대한 직접 링크">​</a></h4><p>비즈니스와 애플리케이션의 변화 속도에 대응하려면 수동적이고 매뉴얼한 대응에서 벗어나 자동화와 셀프 서비스로의 진화가 필요합니다. DX-IT 운영을 효과적으로 구현하기 위해서는 최신의 <strong>ITIL4</strong> 운영 모델이 필수적입니다. <strong>ITIL4</strong>는 IT 운영의 표준 프레임워크로서, 서비스 관리의 효율성을 극대화하고 비즈니스와 IT의 연계성을 강화합니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-20.png" alt="ITIL4" width="1200" height="576"></p><ul>
+<li>
+<p><strong>프로세스 중심의 접근</strong>: <strong>ITIL4</strong>는 서비스 제공의 모든 단계를 체계적으로 관리하며 문제 해결, 변경 관리, 서비스 수준 관리 등을 통해 운영의 안정성을 확보합니다.</p>
+</li>
+<li>
+<p><strong>자동화와 표준화</strong>: <strong>ITIL4</strong> 기반의 운영 모델은 반복적인 작업의 자동화와 프로세스의 표준화를 통해 운영 효율성을 극대화할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="모니터링-관점에서의-dx-it-운영-실현">모니터링 관점에서의 DX-IT 운영 실현<a href="#모니터링-관점에서의-dx-it-운영-실현" class="hash-link" aria-label="모니터링 관점에서의 DX-IT 운영 실현에 대한 직접 링크" title="모니터링 관점에서의 DX-IT 운영 실현에 대한 직접 링크">​</a></h4><ul>
+<li>
+<p><strong>기존 IT 운영과 DX-IT 운영의 차이점</strong></p>
+<p>기존 IT 운영 방식에서는 장애 발생 시 시니어 엔지니어에 의한 트러블슈팅이 주요 대응 방식이었습니다. 시스템의 리소스에 대한 임계치 설정은 최대 부하를 예상하여 이루어졌으며, 온프레미스와 클라우드를 각각 다른 워크로드로 관리했습니다. 이러한 운영 방식은 암묵적인 지식에 의존하였고, OJT(On-the-Job Training)로 인력을 육성하는 방식이었습니다.</p>
+<p>반면 DX-IT 운영에서는 자동화된 에러 로그 분석과 특정이 가능해져 신속하게 대책을 수립할 수 있습니다. 시스템의 응답 시간에 따라 병목 현상을 자동으로 분석할 수 있으며, 온프레미스와 클라우드 환경을 일관된 워크로드로 관리할 수 있습니다. 또한 운영에서 개발까지 동일한 도구를 사용하여 실시간으로 정보를 공유함으로써 옵저버빌리티를 높이고 운영 레벨의 향상과 스킬의 균일화를 이루어낼 수 있습니다.</p>
+</li>
+<li>
+<p><strong>통합된 워크로드 관리</strong></p>
+<p>기존의 사일로식(Siloed) 모니터링 도구 대신 DX-IT 운영에서는 온프레미스와 클라우드 환경을 통합적으로 관리할 수 있는 시스템이 도입됩니다. 이로 인해 다양한 환경과 워크로드를 일관되게 모니터링할 수 있어 운영의 효율성을 높이고 비용 절감 효과를 기대할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>실시간 정보 공유와 운영 레벨의 향상</strong></p>
+<p>DX-IT 운영에서는 개발과 운영이 동일한 도구를 통해 실시간으로 정보를 공유할 수 있습니다. 이는 장애 발생 시 빠른 대응을 가능하게 하고 팀 간의 협력을 강화합니다. 또한 운영의 옵저버빌리티를 통해 운영 레벨을 향상시키고 전체적인 스킬을 균일하게 유지할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="it-모니터링-직면-과제의-해결">IT 모니터링 직면 과제의 해결<a href="#it-모니터링-직면-과제의-해결" class="hash-link" aria-label="IT 모니터링 직면 과제의 해결에 대한 직접 링크" title="IT 모니터링 직면 과제의 해결에 대한 직접 링크">​</a></h4><p>DX-IT 운영의 성공적인 실현을 위해서는 IT 모니터링의 주요 과제들을 해결해야 합니다. 이 과제들은 주로 시스템의 복잡성 증가와 운영 효율성 저하와 관련이 있으며, 이를 해결하기 위한 전략적 접근이 필요합니다.</p><ul>
+<li>
+<p><strong>통합 모니터링과 실시간 옵저버빌리티</strong>: 시스템 전반을 아우르는 통합 모니터링과 실시간 옵저버빌리티를 도입하여 시스템의 상태를 종합적으로 파악하고 실시간으로 문제를 감지할 수 있어야 합니다.</p>
+</li>
+<li>
+<p><strong>비용 절감과 운영 효율화</strong>: 중복된 모니터링 도구의 사용을 줄이고, 자동화된 시스템을 통해 운영 비용을 절감해 효율성을 극대화해야 합니다.</p>
+</li>
+</ul><hr></section>
+<section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="whatap-monitoring">WhaTap Monitoring<a href="#whatap-monitoring" class="hash-link" aria-label="WhaTap Monitoring에 대한 직접 링크" title="WhaTap Monitoring에 대한 직접 링크">​</a></h2><p>현대 IT 운영에서 DX-IT 운영은 빠르게 변화하는 비즈니스 환경에 대응하기 위한 필수적인 전략입니다. <strong>와탭</strong>을 통한 통합 모니터링 및 실시간 옵저버빌리티 구현을 중심으로 DX-IT 운영을 어떻게 실현할 수 있는지 살펴보겠습니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-21.png" alt="WhaTap" width="1200" height="649"></p></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="통합-모니터링-플랫폼">통합 모니터링 플랫폼<a href="#통합-모니터링-플랫폼" class="hash-link" aria-label="통합 모니터링 플랫폼에 대한 직접 링크" title="통합 모니터링 플랫폼에 대한 직접 링크">​</a></h3><p><strong>와탭</strong>은 SaaS형과 온프레미스형을 모두 지원하는 통합 모니터링 및 옵저버빌리티 플랫폼으로, 다양한 환경에서 운영되는 IT 시스템을 일원화하여 통합 모니터링할 수 있도록 설계되었습니다. 이를 통해 하이브리드 클라우드, 멀티 클라우드, 온프레미스 등 다양한 인프라 환경을 통합 관리할 수 있습니다.</p><ul>
+<li>
+<p><strong>다양한 환경의 통합 관리</strong>: 클라우드, 온프레미스, 하이브리드 환경을 아우르는 통합 모니터링 기능을 제공하여 모든 IT 자원을 하나의 플랫폼에서 관리할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>다양한 데이터 수집</strong>: 메트릭, 로그, 트레이스 데이터를 실시간으로 수집하여 이를 종합적으로 분석함으로써 시스템의 상태를 전반적으로 파악합니다.</p>
+</li>
+<li>
+<p><strong>End-to-End 풀 스택 통합 모니터링</strong>: IT 서비스를 이용하는 사용자가 처음 체감하는 프론트엔드의 브라우저에서 백엔드의 데이터베이스까지, 메트릭, 트레이스, 로그를 통해 End-to-End 풀 스택으로 통합 모니터링합니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="환경-및-리전-통합-관리">환경 및 리전 통합 관리<a href="#환경-및-리전-통합-관리" class="hash-link" aria-label="환경 및 리전 통합 관리에 대한 직접 링크" title="환경 및 리전 통합 관리에 대한 직접 링크">​</a></h3><p><strong>와탭</strong>은 클라우드 및 온프레미스 환경에 걸쳐 있는 다양한 시스템을 통합 관리합니다. 특히 시스템이 위치한 환경이나 리전을 통합하여 일원화된 관리가 가능하며, 이를 통해 글로벌 비즈니스 환경에서도 효율적인 운영이 가능합니다.</p><ul>
+<li>
+<p><strong>환경 및 리전 통합</strong>: 클라우드와 온프레미스 환경을 아우르는 통합 모니터링을 통해, 다양한 워크로드를 통합적으로 관리할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>일원화된 데이터 수집 및 저장</strong>: 각 환경에서 수집된 모니터링 데이터는 서비스가 위치한 환경에서 직접 수집되고 저장되어, 데이터의 일관성과 신뢰성을 높입니다 .</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="실시간-문제-탐지-및-대응">실시간 문제 탐지 및 대응<a href="#실시간-문제-탐지-및-대응" class="hash-link" aria-label="실시간 문제 탐지 및 대응에 대한 직접 링크" title="실시간 문제 탐지 및 대응에 대한 직접 링크">​</a></h3><p><strong>와탭</strong>은 초단위의 실시간 데이터 수집을 통해 시스템 상태를 모니터링하고, 문제가 발생할 경우 즉시 인지할 수 있는 능력을 제공합니다. 일반적인 모니터링 시스템이 60초에서 300초 간격으로 문제를 감지하는 반면, <strong>와탭</strong>은 5초 간격으로 시스템을 감시하여 실시간으로 문제 상황을 인지하고, 즉시 원인 조사에 착수할 수 있습니다. 또한 수행 중인 트랜잭션에서 발생하는 문제를 즉각적으로 탐지하고 신속히 문제를 해결할 수 있도록 지원합니다.</p><ul>
+<li>
+<p><strong>초단위 모니터링</strong>: 5초 간격으로 시스템을 모니터링하여 실시간으로 문제를 감지하고 이를 기반으로 신속한 대응이 가능합니다.</p>
+</li>
+<li>
+<p><strong>장애 상황 인지</strong>: 수행 중인 트랜잭션에서 발생하는 문제를 즉각적으로 탐지하여 실시간으로 원인 조사를 시작할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>신속한 문제 해결</strong>: 상시 수집된 데이터를 활용해 문제가 발생한 즉시 원인 조사를 시작하며 프로파일링 없이도 문제를 신속하게 해결할 수 있습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="연계-추적">연계 추적<a href="#연계-추적" class="hash-link" aria-label="연계 추적에 대한 직접 링크" title="연계 추적에 대한 직접 링크">​</a></h3><p><strong>와탭</strong>은 IT 시스템의 다양한 구성 요소 간의 상호작용을 실시간으로 추적할 수 있는 강력한 연계 추적 기능을 제공합니다. 이를 통해 애플리케이션과 데이터베이스, 브라우저와 애플리케이션 간의 상호작용을 추적하여 문제 발생 시 원인을 신속하게 파악할 수 있습니다.</p><ul>
+<li>
+<p><strong>Application - Database 연계 추적</strong>: 애플리케이션과 데이터베이스 간의 연계된 트랜잭션을 실시간으로 추적하여 문제 발생 시 어느 지점에서 문제가 발생했는지를 빠르게 파악할 수 있습니다. 복잡한 분산 시스템에서도 신속하게 문제를 해결할 수 있는 능력을 제공합니다.</p>
+<p><img decoding="async" loading="lazy" alt="Application - Database" src="/whatap-docs/assets/images/dx-it-image-23-c97ea6b32c894cddec854c0630881b78.png" width="1200" height="532" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Browser - Application 연계 추적</strong>: 브라우저에서 발생한 성능 문제를 애플리케이션과 연계하여 추적할 수 있습니다. 이를 통해 사용자가 겪는 문제를 신속하게 파악하고 문제의 원인을 정확히 진단하여 전체적인 성능 문제를 실시간으로 해결할 수 있습니다.</p>
+<p><img decoding="async" loading="lazy" alt="Browser - Application" src="/whatap-docs/assets/images/dx-it-image-24-917e52bd354f9f11b387efd954914bb3.png" width="1200" height="576" class="img_ev3q"></p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="통합-모니터링의-주요-기능">통합 모니터링의 주요 기능<a href="#통합-모니터링의-주요-기능" class="hash-link" aria-label="통합 모니터링의 주요 기능에 대한 직접 링크" title="통합 모니터링의 주요 기능에 대한 직접 링크">​</a></h3><p><strong>와탭</strong>은 브라우저, 서버, 네트워크, 애플리케이션, 데이터베이스 등 IT 시스템의 다양한 요소를 하나의 화면에서 통합 관리할 수 있습니다. 이러한 기능은 운영자가 시스템 상태를 한눈에 파악하고 필요한 조치를 신속히 취할 수 있도록 지원합니다.</p><p><img loading="lazy" src="/whatap-docs/img/best-p/dx-it-image-22.png" alt="Dashboard" width="1500" height="674"></p><ul>
+<li>
+<p><strong>통합 모니터링 대시보드</strong>: 모든 시스템 데이터를 한 화면에서 통합적으로 관리하여 운영의 효율성을 극대화합니다.</p>
+</li>
+<li>
+<p><strong>자동화된 경고 및 알림</strong>: 문제 발생 시 실시간으로 경고를 제공하고 자동화된 알림 시스템을 통해 빠르게 문제를 해결할 수 있도록 돕습니다.</p>
+</li>
+</ul></section>
+<section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="dx-it-운영의-실현">DX-IT 운영의 실현<a href="#dx-it-운영의-실현" class="hash-link" aria-label="DX-IT 운영의 실현에 대한 직접 링크" title="DX-IT 운영의 실현에 대한 직접 링크">​</a></h3><p><strong>와탭</strong>은 DX-IT 운영을 실현하기 위한 핵심 솔루션으로 자리 잡고 있습니다. <strong>와탭</strong>은 통합 모니터링과 실시간 옵저버빌리티를 통해 IT 시스템의 상태를 실시간으로 파악하고 빠르게 문제를 해결할 수 있는 기능을 제공합니다.</p><p> 실시간 모니터링과 문제 해결을 통해 시스템 가용성을 높이고, 비즈니스 연속성을 유지할 수 있습니다. 자동화된 모니터링과 문제 해결 기능을 통해 운영 효율성을 극대화하고 비용을 절감할 수 있습니다.</p></section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="문서 탐색"><a class="pagination-nav__link pagination-nav__link--prev" href="/whatap-docs/learning-guides"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">학습하기</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">DX IT 운영을 위한 와탭 모니터링</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class="fbsharebutton_dZBI" data-href="https://docs.whatap.io/whatap-docs/best-practice-guides/real-time-monitoring-for-it-infra" data-layout="" data-size=""><button type="button" class="fb_xfbml_parse_ignore_BpHP">공유</button></div><div class="btnprint_EBmh"><button>PDF</button></div><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">피드백</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
