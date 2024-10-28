@@ -398,7 +398,7 @@ function API() {
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
                 d: "M31.2868 0.862L22.5333 25.862H18.2966L27.0501 0.862H31.2868Z",
-                fill: "black"
+                fill: "currentColor"
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsx)("path", {
                 d: "M32.8559 18.5791L44.0254 13.5371L32.8559 7.79477V4.18833L48.7522 12.5917V14.7626L32.8559 22.1855V18.5791Z",
@@ -1006,7 +1006,7 @@ function RecommendedDoc() {
                     className: (0,clsx/* default */.A)(styles_module.white, styles_module.underline),
                     children: "\u30CE\u30FC\u30C9\u30DE\u30C3\u30D7"
                 }),
-                ",\xa0",
+                "\u3001",
                 /*#__PURE__*/ (0,jsx_runtime.jsxs)(Link/* default */.A, {
                     to: (0,useBaseUrl/* default */.Ay)("java/linked-projects"),
                     className: (0,clsx/* default */.A)(styles_module.white, styles_module.underline),
@@ -1018,7 +1018,7 @@ function RecommendedDoc() {
                         })
                     ]
                 }),
-                ",\xa0",
+                "\u3001",
                 /*#__PURE__*/ (0,jsx_runtime.jsxs)(Link/* default */.A, {
                     to: (0,useBaseUrl/* default */.Ay)("kubernetes/pod-init-perform-v2"),
                     className: (0,clsx/* default */.A)(styles_module.white, styles_module.underline),
@@ -1030,7 +1030,7 @@ function RecommendedDoc() {
                         })
                     ]
                 }),
-                ",\xa0",
+                "\u3001",
                 /*#__PURE__*/ (0,jsx_runtime.jsx)(Link/* default */.A, {
                     to: (0,useBaseUrl/* default */.Ay)("reference/script-manager"),
                     className: (0,clsx/* default */.A)(styles_module.white, styles_module.underline),

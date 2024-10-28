@@ -5249,6 +5249,10 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   display: block;
 }
 
+html[lang='ja-JP'] .newdoc_SJD5 {
+  font-size: 14px;
+}
+
 .underline_WuJU {
   text-decoration: underline;
 }
