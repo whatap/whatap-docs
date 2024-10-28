@@ -218,27 +218,27 @@ function RecommendedDoc() {
         return (
             <>
                 <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>노드 맵</Link>,&nbsp;
-                <Link to="java/linked-projects" className={clsx(styles.white, styles.underline)}>APM: 연계 프로젝트 관리</Link>,&nbsp;
-                <Link to="postgresql/linked-projects" className={clsx(styles.white, styles.underline)}>DB: 연계 프로젝트 관리</Link>,&nbsp;
-                <Link to="postgresql/cloudsettings" className={clsx(styles.white, styles.underline)}>DB: 클라우드 설정</Link>
+                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: 연계 프로젝트 관리</Link>,&nbsp;
+                <Link to={useBaseUrl("postgresql/linked-projects")} className={clsx(styles.white, styles.underline)}>DB: 연계 프로젝트 관리</Link>,&nbsp;
+                <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: 클라우드 설정</Link>
             </>
         );
     } else if (currentLocale == "en") {
         return (
             <>
-                <Link to="kubernetes/node-map" className={clsx(styles.white, styles.underline)}>Node Map</Link>,&nbsp;
-                <Link to="java/linked-projects" className={clsx(styles.white, styles.underline)}>Metrics Chart <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
-                <Link to="kubernetes/pod-init-perform-v2" className={clsx(styles.white, styles.underline)}>Pod Startup Analysis <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
-                <Link to="reference/script-manager" className={clsx(styles.white, styles.underline)}>Script Manager</Link>
+                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>Node Map</Link>,&nbsp;
+                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>Metrics Chart <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/pod-init-perform-v2")} className={clsx(styles.white, styles.underline)}>Pod Startup Analysis <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
+                <Link to={useBaseUrl("reference/script-manager")} className={clsx(styles.white, styles.underline)}>Script Manager</Link>
             </>
         );
     } else if (currentLocale == "ja") {
         return (
             <>
-                <Link to="kubernetes/node-map" className={clsx(styles.white, styles.underline)}>ノードマップ</Link>,&nbsp;
-                <Link to="java/linked-projects" className={clsx(styles.white, styles.underline)}>メトリクスチャート <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
-                <Link to="kubernetes/pod-init-perform-v2" className={clsx(styles.white, styles.underline)}>Pod起動分析 <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
-                <Link to="reference/script-manager" className={clsx(styles.white, styles.underline)}>スクリプトマネージャー</Link>
+                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>ノードマップ</Link>,&nbsp;
+                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>メトリクスチャート <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/pod-init-perform-v2")} className={clsx(styles.white, styles.underline)}>Pod起動分析 <code className={clsx(styles.newfunc)}>New</code></Link>,&nbsp;
+                <Link to={useBaseUrl("reference/script-manager")} className={clsx(styles.white, styles.underline)}>スクリプトマネージャー</Link>
             </>
         );
     }
