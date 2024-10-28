@@ -537,6 +537,9 @@
   "index.pages.welcome.para": {
     "message": "Welcome to the WhaTap Docs page."
   },
+  "index.pages.welcome.recommend": {
+    "message": "New docs: "
+  },
   "index.pages.section.gettingStart": {
     "message": "Getting started"
   },
