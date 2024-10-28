@@ -5217,6 +5217,9 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   color: #fff;
   -webkit-text-decoration: solid;
           text-decoration: solid;
+  text-align: left;
+  width: 700px;
+  margin: 0 auto 15px auto;
 }
 
 .homehero_IZR1 {
@@ -5225,10 +5228,36 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
   background-color: #ddd;
   align-content: center;
   text-align: center;
-  background: url(/whatap-docs/assets/images/home-hero-background-f41de2bf493dba21fd318f6cb31c2e47.png);
+  background: url(/whatap-docs/assets/images/home-hero-background-00419824fb1deacc7ddaca3bcaa7e27b.png);
   /* position: sticky;
   top: 76px;
   z-index: 100; */
+}
+
+.homehero_IZR1 .textleft_I9dL {
+  text-align: left;
+}
+
+.homehero_IZR1 .white_Y8SA {
+  color: #fff;
+}
+
+.newdoc_SJD5 {
+  font-size: 15px;
+  width: 700px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.underline_WuJU {
+  text-decoration: underline;
+}
+
+.newfunc__GoX {
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  font-family: "Oleo Script";
+  font-weight: 400;
 }
 
 .guidelink_SWNB:hover {
@@ -5237,6 +5266,7 @@ html:not([data-theme='dark']) .redocusaurus div[id^='react-tabs'] code {
 
 .appcontainer_AqcP {
   padding: 0 25%;
+  margin-bottom: 20pt;
 }
 .aa-Autocomplete_fHFR {
   width: 70%;
