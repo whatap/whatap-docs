@@ -510,6 +510,9 @@
     "message": "新しい機能",
     "description": "Navbar item with label 새로운 기능"
   },
+  "index.pages.metaTitle": {
+    "message": "リアルタイム・オブザーバビリティ・プラットフォーム | WhaTap Docs"
+  },
   "index.pages.register": {
     "message": "サインアップ"
   },
