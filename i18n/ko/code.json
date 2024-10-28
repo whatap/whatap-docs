@@ -537,6 +537,9 @@
   "index.pages.welcome.para": {
     "message": "와탭 Docs 페이지에 오신 것을 진심으로 환영합니다."
   },
+  "index.pages.welcome.recommend": {
+    "message": "신규 문서: "
+  },
   "index.pages.section.gettingStart": {
     "message": "시작하기 전에"
   },
@@ -703,7 +706,7 @@
     "message": "프로젝트에서 수행 중인 사용자의 행동을 추적할 수 있습니다."
   },
   "index.pages.section.updates": {
-    "message": "최신 업데이트"
+    "message": "What's New"
   },
   "index.pages.section.updates.news": {
     "message": "새로운 기능"
@@ -718,7 +721,7 @@
     "message": "최신 릴리스 정보를 빠르게 확인하세요."
   },
   "index.pages.section.reference": {
-    "message": "참조"
+    "message": "Reference"
   },
   "index.pages.section.reference.openApi": {
     "message": "Open API"
@@ -751,7 +754,7 @@
     "message": "와탭 모니터링 서비스를 사용하면서 발생할 수 있는 일반적인 문제들에 대한 해결 방법을 제공합니다."
   },
   "index.pages.section.learn": {
-    "message": "학습하기"
+    "message": "Learning"
   },
   "index.pages.section.learn.learning": {
     "message": "학습하기"

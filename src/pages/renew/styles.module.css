@@ -4,6 +4,9 @@
   margin-bottom: 35px;
   color: #fff;
   text-decoration: solid;
+  text-align: left;
+  width: 700px;
+  margin: 0 auto 15px auto;
 }
 
 .homehero {
@@ -18,12 +21,39 @@
   z-index: 100; */
 }
 
+.homehero .textleft {
+  text-align: left;
+}
+
+.homehero .white {
+  color: #fff;
+}
+
+.newdoc {
+  font-size: 15px;
+  width: 700px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.newfunc {
+  background-color: rgb(232, 225, 255);
+  color: rgb(139, 82, 255);
+  font-family: "Oleo Script";
+  font-weight: 400;
+}
+
 .guidelink:hover {
   text-decoration: none;
 }
 
 .appcontainer {
   padding: 0 25%;
+  margin-bottom: 20pt;
 }
 .aa-Autocomplete {
   width: 70%;
