@@ -3724,9 +3724,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_10_0x',
+          id: 'release-notes/preview/preview-2_11_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_10_0x',
         'release-notes/preview/preview-2_9_0x',
         'release-notes/preview/preview-2_8_0x',
         'release-notes/preview/preview-2_7_0x',
@@ -4047,9 +4048,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_6_9',
+                  id: 'release-notes/server/server-2_7_0',
                   className: 'new',
                 },
+                'release-notes/server/server-2_6_9',
                 'release-notes/server/server-2_6_8',
                 'release-notes/server/server-2_6_7',
                 'release-notes/server/server-2_6_6',
@@ -4058,7 +4060,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_3',
                 'release-notes/server/server-2_6_2',
                 'release-notes/server/server-2_6_1',
-                'release-notes/server/server-2_6_0',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4067,12 +4068,17 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
               },
               items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server-aix/server-aix-1_3_5',
+                  className: 'new'
+                },
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_3_4',
@@ -4082,10 +4088,23 @@ const sidebars = {
               ],
             },
             {
-              type: 'doc',
+              type: 'category',
               label: 'Server Solaris',
-              // className: 'new',
-              id: 'release-notes/server-solaris/server-solaris-1_3_4'
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server-solaris/index'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server-solaris/server-solaris-1_3_5',
+                  className: 'new'
+                },
+                'release-notes/server-solaris/server-solaris-1_3_4',
+              ],
             },
             {
               type: 'doc',
@@ -4098,7 +4117,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4106,9 +4125,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_12',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1_7_13',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_12',
                 'release-notes/k8s/k8s-1_7_11',
                 'release-notes/k8s/k8s-1_7_10',
                 'release-notes/k8s/k8s-1_7_9',
@@ -4117,7 +4137,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_7_6',
                 'release-notes/k8s/k8s-1_7_5',
                 'release-notes/k8s/k8s-1_7_4',
-                'release-notes/k8s/k8s-1_7_3',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -4288,6 +4307,7 @@ const sidebars = {
         id: 'learning-guides'
       },
       items: [
+        'best-practice-guides/real-time-monitoring-for-it-infra',
         {
           type: 'category',
           label: '대시보드 분석',
@@ -5724,6 +5744,12 @@ const sidebars = {
           type: 'doc',
           id: 'features/nginx-introduction',
           label: 'NGINX',
+          className: 'beta' 
+        },
+        {
+          type: 'doc',
+          id: 'features/apache-introduction',
+          label: 'APACHE',
           className: 'beta' 
         },
       ]
