@@ -1043,11 +1043,19 @@ function RecommendedDoc() {
 function pages() {
     return /*#__PURE__*/ (0,jsx_runtime.jsxs)(Layout/* default */.A, {
         children: [
-            /*#__PURE__*/ (0,jsx_runtime.jsx)(Head/* default */.A, {
-                children: /*#__PURE__*/ (0,jsx_runtime.jsx)("meta", {
-                    name: "robots",
-                    content: "noindex, nofollow"
-                })
+            /*#__PURE__*/ (0,jsx_runtime.jsxs)(Head/* default */.A, {
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("meta", {
+                        name: "robots",
+                        content: "noindex, nofollow"
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime.jsx)("title", {
+                        children: (0,Translate/* translate */.T)({
+                            id: "index.pages.metaTitle",
+                            message: "실시간 옵저버빌리티 플랫폼 | WhaTap Docs"
+                        })
+                    })
+                ]
             }),
             /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
                 className: styles_module.homehero,

@@ -4991,7 +4991,7 @@ function _2024_3q_summary_createMdxContent(props) {
       }), " 메뉴에 선택한 에이전트가 설치된 애플리케이션의 스레드 현황 조회 기능 및 CPU 증가량 컬럼이 추가되었습니다."]
     }), "\n", (0,jsx_runtime.jsx)(_components.p, {
       children: (0,jsx_runtime.jsx)(_components.img, {
-        alt: "애플리케이션 분기 안내 예시",
+        alt: "애플리케이션 분기 예시",
         src: (__webpack_require__(18642)/* ["default"] */ .A) + "",
         width: "1261",
         height: "540"

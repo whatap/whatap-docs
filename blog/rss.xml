@@ -1485,7 +1485,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-3q-summary#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 3분기 <code>Application</code> 부분의 주목할 만한 신규 기능 및 주요 변경 사항으로 공통 기능 개선 사항을 안내합니다.</p>
 <p>와탭 애플리케이션 모니터링은 이번 3분기에 <span class="uitext">통계</span> 메뉴에 특정 IP별로 호출한 URL 및 호출 건수를 조회할 수 있는 <span class="uitext">IP 트랜잭션</span> 메뉴를 제공합니다. 또한 <span class="uitext">인스턴스 성능 관리</span> 메뉴 하위의 <span class="uitext">스레드 목록/덤프</span> 메뉴에 선택한 에이전트가 설치된 애플리케이션의 스레드 현황 조회 기능 및 CPU 증가량 컬럼이 추가되었습니다.</p>
-<p><img decoding="async" loading="lazy" alt="애플리케이션 분기 안내 예시" src="https://docs.whatap.io/whatap-docs/assets/images/chagnelog-24q3-application-ba2aab64e6095f4281b38ca94f85b0a3.png" width="1261" height="540" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="애플리케이션 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/chagnelog-24q3-application-ba2aab64e6095f4281b38ca94f85b0a3.png" width="1261" height="540" class="img_ev3q"></p>
 <p>다음 개요 안내를 통해 2024년 3분기 <code>Application</code> 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
