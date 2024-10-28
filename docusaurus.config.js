@@ -43,7 +43,7 @@ const config = {
       },
     }
   },
-  // trailingSlash: false,
+  trailingSlash: false,
   clientModules: [
     require.resolve("./src/modules/amplitude.js")
   ],
