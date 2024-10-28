@@ -68,7 +68,7 @@ export function API() {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="49" height="26" viewBox="0 0 49 26" fill="none">
             <path d="M16.5763 22.1855L0.679932 14.7626V12.5917L16.5763 4.18833V7.79477L5.40682 13.5021L16.5763 18.5791V22.1855Z" fill="currentColor"/>
-            <path d="M31.2868 0.862L22.5333 25.862H18.2966L27.0501 0.862H31.2868Z" fill="black"/>
+            <path d="M31.2868 0.862L22.5333 25.862H18.2966L27.0501 0.862H31.2868Z" fill="currentColor"/>
             <path d="M32.8559 18.5791L44.0254 13.5371L32.8559 7.79477V4.18833L48.7522 12.5917V14.7626L32.8559 22.1855V18.5791Z" fill="currentColor"/>
         </svg>
     )
