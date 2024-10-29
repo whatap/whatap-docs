@@ -384,6 +384,14 @@ const toc = [{
   "value": "<Cmdname></Cmdname> 위젯",
   "id": "-위젯",
   "level": 4
+}, {
+  "value": "DB Connection 스텝에서 확인하기",
+  "id": "db-connection-스텝에서-확인하기",
+  "level": 5
+}, {
+  "value": "SQL 스텝에서 확인하기",
+  "id": "sql-스텝에서-확인하기",
+  "level": 5
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -393,6 +401,7 @@ function _createMdxContent(props) {
     h2: "h2",
     h3: "h3",
     h4: "h4",
+    h5: "h5",
     img: "img",
     li: "li",
     ol: "ol",
@@ -402,10 +411,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
-  }, {Cmdname, Details, ImgLang} = _components;
+  }, {Cmdname, Details, ImgLang, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!Details) _missingMdxReference("Details", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
     children: [(0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
@@ -618,6 +628,12 @@ function _createMdxContent(props) {
           sid: "side_appDashboard",
           className: "uitext"
         }), " 메뉴로 이동하세요."]
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h5",
+      children: [(0,jsx_runtime.jsx)(_components.h5, {
+        id: "db-connection-스텝에서-확인하기",
+        children: "DB Connection 스텝에서 확인하기"
       }), (0,jsx_runtime.jsx)(ImgLang, {
         img: "linked-projects-check-widget-03.png",
         desc: "Correlated project"
@@ -709,6 +725,113 @@ function _createMdxContent(props) {
               }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
                 children: "MySQL"
               }), " 플랫폼입니다."]
+            }), "\n"]
+          }), "\n"]
+        })
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h5",
+      children: [(0,jsx_runtime.jsx)(_components.h5, {
+        id: "sql-스텝에서-확인하기",
+        children: "SQL 스텝에서 확인하기"
+      }), (0,jsx_runtime.jsx)(ImgLang, {
+        img: "linked-projects-check-widget-03.png",
+        desc: "Correlated project"
+      }), (0,jsx_runtime.jsx)(ImgLang, {
+        img: "linked-projects-check-widget-06.png",
+        desc: "Correlated project"
+      }), (0,jsx_runtime.jsxs)(_components.ol, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["대시보드에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "AA005",
+              className: "uitext"
+            }), " 위젯의 차트 영역을 드래그하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "TTL06209",
+              className: "uitext"
+            }), " 창이 나타나면 조회하길 원하는 트랜잭션 항목을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["트랜잭션 상세 정보가 오른쪽에 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "TTL06126",
+              className: "uitext"
+            }), " 탭을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
+            children: "SQL 스텝에서 SQL 문을 선택하세요."
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(UI, {
+              children: "SQL"
+            }), " 창이 나타나면 ", (0,jsx_runtime.jsx)(Cmdname, {
+              sid: "BTN08518",
+              className: "uitext"
+            }), " 버튼을 선택하세요."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(Cmdname, {
+              sid: "TTL07860",
+              className: "uitext"
+            }), " 창이 나타나면 관련 지표를 확인하세요."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["연계분석을 위해 등록한 데이터베이스 프로젝트의 DB가 현재 선택한 트랜잭션의 SQL을 실행한 경우에만, ", (0,jsx_runtime.jsx)(UI, {
+                children: "SQL"
+              }), " 창에 ", (0,jsx_runtime.jsx)(Cmdname, {
+                sid: "BTN08518",
+                className: "uitext"
+              }), " 버튼이 표시됩니다."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(Cmdname, {
+                sid: "TTL07860",
+                className: "uitext"
+              }), " 창에 대한 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
+                href: "#TTL07860",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["이 기능을 지원하는 데이터베이스는 ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "PostgreSQL"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "Oracle Pro"
+              }), ", ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "MySQL"
+              }), " 플랫폼입니다."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "PostgreSQL"
+              }), " 플랫폼에서 ", (0,jsx_runtime.jsx)(Cmdname, {
+                sid: "active_sessions",
+                className: "uitext"
+              }), " 테이블의 ", (0,jsx_runtime.jsx)(UI, {
+                children: "PID"
+              }), " 항목은 ", (0,jsx_runtime.jsx)(UI, {
+                children: "SID"
+              }), " 항목과 같습니다."]
+            }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
+              img: "db-linked-projects-postgresql-pid-sid.png",
+              desc: "SID"
             }), "\n"]
           }), "\n"]
         })

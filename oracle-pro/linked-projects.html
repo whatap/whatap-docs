@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script>window.dataLayer=window.dataLayer||[]</script>
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/whatap-docs/assets/css/styles.bc672a73.css">
-<script src="/whatap-docs/assets/js/runtime~main.a349bb22.js" defer="defer"></script>
+<script src="/whatap-docs/assets/js/runtime~main.1aa6634f.js" defer="defer"></script>
 <script src="/whatap-docs/assets/js/main.42f17dd4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -89,11 +89,7 @@
 <li>
 <p>선택한 액티브 세션에 연계된 트랜잭션이 없다면 <span class="uitext">데이터 없음</span>으로 화면에 표시됩니다.</p>
 </li>
-</ul></div></div></section><section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="TTL07046"><span>연계 분석</span> 화면 안내<a href="#TTL07046" class="hash-link" aria-label="TTL07046에 대한 직접 링크" title="TTL07046에 대한 직접 링크">​</a></h3><p><span class="uitext">연계 분석</span> 창에서는 액티브 트랜잭션에 대한 상세 정보 및 Call Stack, SQL 문을 확인할 수 있습니다.</p><ul>
-<li>
-<p><em><strong>Active Transaction</strong></em>: 연계된 액티브 트랜잭션의 상세 정보를 확인할 수 있습니다.</p>
-<p><img loading="lazy" src="/whatap-docs/img/db-linked-project-detail-active-tx.png" alt="Active Transaction" width="auto" height="auto"></p>
-<ul>
+</ul></div></div></section><section class="remark-sectionize-h3"><h3 class="anchor anchorWithStickyNavbar_LWe7" id="TTL07046"><span>연계 분석</span> 화면 안내<a href="#TTL07046" class="hash-link" aria-label="TTL07046에 대한 직접 링크" title="TTL07046에 대한 직접 링크">​</a></h3><p><span class="uitext">연계 분석</span> 창에서는 액티브 트랜잭션에 대한 상세 정보 및 Call Stack, SQL 문을 확인할 수 있습니다.</p></section><section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="active-transaction"><em><strong>Active Transaction</strong></em><a href="#active-transaction" class="hash-link" aria-label="active-transaction에 대한 직접 링크" title="active-transaction에 대한 직접 링크">​</a></h4><p>연계된 액티브 트랜잭션의 상세 정보를 확인할 수 있습니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-linked-project-detail-active-tx.png" alt="Active Transaction" width="auto" height="auto"></p><ul>
 <li>
 <p><em><strong>DB Connection</strong></em>: 데이터베이스 연결 URL입니다.</p>
 </li>
@@ -102,6 +98,7 @@
 </li>
 <li>
 <p><em><strong>Sid</strong></em>: 선택한 액티브 세션의 ID입니다.</p>
+<!-- -->
 </li>
 <li>
 <p><em><strong>Thread Stat</strong></em>: 스레드의 현재 상태입니다.</p>
@@ -109,18 +106,7 @@
 <li>
 <p><em><strong>DB Type</strong></em>: 연계된 데이터베이스 플랫폼의 종류입니다.</p>
 </li>
-</ul>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>그 외 항목에 대한 자세한 내용은 <a href="/whatap-docs/oracle-pro/java/dashboard-hitmap-trace#anlaysis-trace-record-summary">다음 문서</a>를 참조하세요.</p></div></div>
-</li>
-<li>
-<p><em><strong>Call Stack</strong></em>: 메소드나 함수 호출의 순서를 추적하는 정보를 제공합니다.</p>
-<p><img loading="lazy" src="/whatap-docs/img/db-linked-project-detail-call-stack.png" alt="Call Stack" width="auto" height="auto"></p>
-</li>
-<li>
-<p><em><strong>SQL</strong></em>: 연계된 액티브 트랜잭션을 통해 실행된 SQL 쿼리입니다.</p>
-<p><img loading="lazy" src="/whatap-docs/img/db-linked-project-detail-sql.png" alt="SQL" width="auto" height="auto"></p>
-</li>
-</ul></section>
+</ul><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p>그 외 항목에 대한 자세한 내용은 <a href="/whatap-docs/oracle-pro/java/dashboard-hitmap-trace#anlaysis-trace-record-summary">다음 문서</a>를 참조하세요.</p></div></div></section><section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="call-stack"><em><strong>Call Stack</strong></em><a href="#call-stack" class="hash-link" aria-label="call-stack에 대한 직접 링크" title="call-stack에 대한 직접 링크">​</a></h4><p>메소드나 함수 호출의 순서를 추적하는 정보를 제공합니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-linked-project-detail-call-stack.png" alt="Call Stack" width="auto" height="auto"></p></section><section class="remark-sectionize-h4"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="sql"><em><strong>SQL</strong></em><a href="#sql" class="hash-link" aria-label="sql에 대한 직접 링크" title="sql에 대한 직접 링크">​</a></h4><p>연계된 액티브 트랜잭션을 통해 실행된 SQL 쿼리입니다.</p><p><img loading="lazy" src="/whatap-docs/img/db-linked-project-detail-sql.png" alt="SQL" width="auto" height="auto"></p></section>
 <!-- -->
 <!-- -->
 <section class="remark-sectionize-h2"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="removelinkedproject">연계 프로젝트 삭제하기<a href="#removelinkedproject" class="hash-link" aria-label="연계 프로젝트 삭제하기에 대한 직접 링크" title="연계 프로젝트 삭제하기에 대한 직접 링크">​</a></h2><ol>

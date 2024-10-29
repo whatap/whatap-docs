@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31401],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[12341],{
 
 /***/ 82725:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -373,6 +373,18 @@ const toc = [{
   "value": "<Cmdname></Cmdname> 화면 안내",
   "id": "TTL07046",
   "level": 3
+}, {
+  "value": "<em><strong>Active Transaction</strong></em>",
+  "id": "active-transaction",
+  "level": 4
+}, {
+  "value": "<em><strong>Call Stack</strong></em>",
+  "id": "call-stack",
+  "level": 4
+}, {
+  "value": "<em><strong>SQL</strong></em>",
+  "id": "sql",
+  "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -381,6 +393,7 @@ function _createMdxContent(props) {
     em: "em",
     h2: "h2",
     h3: "h3",
+    h4: "h4",
     img: "img",
     li: "li",
     ol: "ol",
@@ -390,11 +403,12 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, ProdImg} = _components;
+  }, {Cmdname, ImgLang, InDoc, ProdImg, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
   if (!ProdImg) _missingMdxReference("ProdImg", true);
+  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
       product: "java,php,python,nodejs,dotnet,golang",
@@ -618,91 +632,123 @@ function _createMdxContent(props) {
             sid: "TTL07046",
             className: "uitext"
           }), " 창에서는 액티브 트랜잭션에 대한 상세 정보 및 Call Stack, SQL 문을 확인할 수 있습니다."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h4",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "active-transaction",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Active Transaction"
+            })
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "연계된 액티브 트랜잭션의 상세 정보를 확인할 수 있습니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "db-linked-project-detail-active-tx.png",
+          desc: "Active Transaction"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "Active Transaction"
+                  children: "DB Connection"
                 })
-              }), ": 연계된 액티브 트랜잭션의 상세 정보를 확인할 수 있습니다."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-              img: "db-linked-project-detail-active-tx.png",
-              desc: "Active Transaction"
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "DB Connection"
-                    })
-                  }), ": 데이터베이스 연결 URL입니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Thread ID"
-                    })
-                  }), ": 해당 트랜잭션을 처리하는 데 사용된 스레드의 고유 식별자입니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              }), ": 데이터베이스 연결 URL입니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Thread ID"
+                })
+              }), ": 해당 트랜잭션을 처리하는 데 사용된 스레드의 고유 식별자입니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "Sid"
+                })
+              }), ": 선택한 액티브 세션의 ID입니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+              product: "postgresql",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+                type: "note",
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
                   children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                     children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
                       children: "Sid"
                     })
-                  }), ": 선택한 액티브 세션의 ID입니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "Thread Stat"
-                    })
-                  }), ": 스레드의 현재 상태입니다."]
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                  children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                      children: "DB Type"
-                    })
-                  }), ": 연계된 데이터베이스 플랫폼의 종류입니다."]
-                }), "\n"]
-              }), "\n"]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-              type: "note",
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-                children: ["그 외 항목에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "java/dashboard-hitmap-trace#anlaysis-trace-record-summary",
-                  children: "다음 문서"
-                }), "를 참조하세요."]
+                  }), "는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                    sid: "active_sessions",
+                    className: "uitext"
+                  }), " 테이블에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                    children: "PID"
+                  }), " 항목과 같은 값입니다. APM 프로젝트에서 SQL 정보의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                    children: "SID"
+                  }), " 항목과도 같습니다."]
+                }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+                  img: "db-linked-projects-postgresql-pid-sid.png",
+                  desc: "SID"
+                })]
               })
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "Call Stack"
+                  children: "Thread Stat"
                 })
-              }), ": 메소드나 함수 호출의 순서를 추적하는 정보를 제공합니다."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-              img: "db-linked-project-detail-call-stack.png",
-              desc: "Call Stack"
+              }), ": 스레드의 현재 상태입니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
                 children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                  children: "SQL"
+                  children: "DB Type"
                 })
-              }), ": 연계된 액티브 트랜잭션을 통해 실행된 SQL 쿼리입니다."]
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-              img: "db-linked-project-detail-sql.png",
-              desc: "SQL"
+              }), ": 연계된 데이터베이스 플랫폼의 종류입니다."]
             }), "\n"]
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["그 외 항목에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "java/dashboard-hitmap-trace#anlaysis-trace-record-summary",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          })
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h4",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "call-stack",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Call Stack"
+            })
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "메소드나 함수 호출의 순서를 추적하는 정보를 제공합니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "db-linked-project-detail-call-stack.png",
+          desc: "Call Stack"
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+        className: "remark-sectionize-h4",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "sql",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "SQL"
+            })
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "연계된 액티브 트랜잭션을 통해 실행된 SQL 쿼리입니다."
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "db-linked-project-detail-sql.png",
+          desc: "SQL"
         })]
       })]
     })]
@@ -728,7 +774,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 73817:
+/***/ 56254:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -751,49 +797,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'linked-projects',
 	title: '연계 프로젝트 관리',
-	description: '데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
+	description: '애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'Node.js',
+		'MySQL',
+		'데이터베이스',
 		'애플리케이션',
-		'연계 프로젝트',
-		'데이터베이스'
+		'연계 프로젝트'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/linked-projects",
+  "id": "oracle/linked-projects",
   "title": "연계 프로젝트 관리",
-  "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/nodejs/linked-projects.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/linked-projects",
-  "permalink": "/whatap-docs/nodejs/linked-projects",
+  "description": "애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
+  "source": "@site/docs/oracle/linked-projects.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/linked-projects",
+  "permalink": "/whatap-docs/oracle/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/linked-projects.mdx",
+  "editUrl": "undefined/docs/oracle/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "linked-projects",
     "title": "연계 프로젝트 관리",
-    "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
+    "description": "애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      "Node.js",
+      "MySQL",
+      "데이터베이스",
       "애플리케이션",
-      "연계 프로젝트",
-      "데이터베이스"
+      "연계 프로젝트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
-    "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/nodejs/instance-performance-analysis"
+    "title": "실시간 알림",
+    "permalink": "/whatap-docs/oracle/real-time-notification"
   },
   "next": {
-    "title": "Log 모니터링",
-    "permalink": "/whatap-docs/log/introduction"
+    "title": "실험실",
+    "permalink": "/whatap-docs/oracle/labs"
   }
 };
 const assets = {
@@ -802,9 +848,6 @@ const assets = {
 
 /*description*/
 /*연계 프로젝트 추가하기*/
-/*연계 프로젝트 확인하기*/
-/*import APMtoDBLinkedProject from "../common-items/_linked-projects-apm2db.mdx";*/
-/*<APMtoDBLinkedProject />*/
 /*연계 프로젝트 삭제하기*/
 
 
@@ -815,7 +858,7 @@ const assets = {
 const toc = [..._common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
