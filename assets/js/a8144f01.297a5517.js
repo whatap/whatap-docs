@@ -1,5 +1,96 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[13526],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[24232],{
+
+/***/ 2750:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_db_log_setting_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34253);
+
+
+const frontMatter = {
+	id: 'log-db',
+	title: '적용하기',
+	description: '데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.',
+	keywords: [
+		'로그 모니터링',
+		'데이터베이스',
+		'Altibase'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/log-db",
+  "title": "적용하기",
+  "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
+  "source": "@site/docs/altibase/log-db.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/log-db",
+  "permalink": "/whatap-docs/altibase/log-db",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/log-db.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-db",
+    "title": "적용하기",
+    "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
+    "keywords": [
+      "로그 모니터링",
+      "데이터베이스",
+      "Altibase"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "로그",
+    "permalink": "/whatap-docs/altibase/log-main"
+  },
+  "next": {
+    "title": "라이브 테일",
+    "permalink": "/whatap-docs/altibase/log-lt"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_db_log_setting_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_log_setting_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 34253:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -253,7 +344,7 @@ function _createMdxContent(props) {
                 children: "파라미터"
               }), " 섹션에서 아래의 항목을 입력하세요."]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template",
+              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDSLogAndEvent&templateURL=https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/db/WhaTapRDSLogInstall.template",
               target: "_blank",
               className: "ext-link",
               children: "AWS CloudFormation Install"
@@ -330,7 +421,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "로그 모니터링 세부 설정을 위해 다음 링크로 진입하세요."
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=whataprdseventforwarder&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogSetting.template",
+              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRDSLogAndEventSettings&templateURL=https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/db/WhaTapRDSLogSetting.template",
               target: "_blank",
               className: "ext-link",
               children: "AWS CloudFormation Setting"
@@ -551,97 +642,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 12379:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_db_log_setting_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34253);
-
-
-const frontMatter = {
-	id: 'log-db',
-	title: '적용하기',
-	description: '데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.',
-	keywords: [
-		'로그 모니터링',
-		'데이터베이스',
-		'PostgreSQL'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "postgresql/log-db",
-  "title": "적용하기",
-  "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
-  "source": "@site/docs/postgresql/log-db.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/log-db",
-  "permalink": "/whatap-docs/postgresql/log-db",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/log-db.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-db",
-    "title": "적용하기",
-    "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
-    "keywords": [
-      "로그 모니터링",
-      "데이터베이스",
-      "PostgreSQL"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "postgreSidebar",
-  "previous": {
-    "title": "로그",
-    "permalink": "/whatap-docs/postgresql/log-main"
-  },
-  "next": {
-    "title": "라이브 테일",
-    "permalink": "/whatap-docs/postgresql/log-lt"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_db_log_setting_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_log_setting_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 

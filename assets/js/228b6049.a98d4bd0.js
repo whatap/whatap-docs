@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18968],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[46582],{
 
 /***/ 34253:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -253,7 +253,7 @@ function _createMdxContent(props) {
                 children: "파라미터"
               }), " 섹션에서 아래의 항목을 입력하세요."]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDS&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogInstall.template",
+              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDSLogAndEvent&templateURL=https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/db/WhaTapRDSLogInstall.template",
               target: "_blank",
               className: "ext-link",
               children: "AWS CloudFormation Install"
@@ -330,7 +330,7 @@ function _createMdxContent(props) {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "로그 모니터링 세부 설정을 위해 다음 링크로 진입하세요."
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=whataprdseventforwarder&templateURL=https://whatapforwarder.s3.ap-northeast-2.amazonaws.com/WhaTapRDSLogSetting.template",
+              to: "https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRDSLogAndEventSettings&templateURL=https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/db/WhaTapRDSLogSetting.template",
               target: "_blank",
               className: "ext-link",
               children: "AWS CloudFormation Setting"
@@ -557,7 +557,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 53228:
+/***/ 83387:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -581,22 +581,22 @@ const frontMatter = {
 	keywords: [
 		'로그 모니터링',
 		'데이터베이스',
-		'CUBRID'
+		'MongoDB'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid/log-db",
+  "id": "mongodb/log-db",
   "title": "적용하기",
   "description": "데이터베이스와 AWS RDS의 로그를 수집하는 방법을 안내합니다.",
-  "source": "@site/docs/cubrid/log-db.mdx",
-  "sourceDirName": "cubrid",
-  "slug": "/cubrid/log-db",
-  "permalink": "/whatap-docs/cubrid/log-db",
+  "source": "@site/docs/mongodb/log-db.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/log-db",
+  "permalink": "/whatap-docs/mongodb/log-db",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid/log-db.mdx",
+  "editUrl": "undefined/docs/mongodb/log-db.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -606,18 +606,18 @@ const metadata = {
     "keywords": [
       "로그 모니터링",
       "데이터베이스",
-      "CUBRID"
+      "MongoDB"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "cubridSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "로그",
-    "permalink": "/whatap-docs/cubrid/log-main"
+    "permalink": "/whatap-docs/mongodb/log-main"
   },
   "next": {
     "title": "라이브 테일",
-    "permalink": "/whatap-docs/cubrid/log-lt"
+    "permalink": "/whatap-docs/mongodb/log-lt"
   }
 };
 const assets = {
