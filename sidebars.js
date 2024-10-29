@@ -2760,7 +2760,11 @@ const sidebars = {
               },
               items: [
                 'cubrid/metrics-data-list',
-                'cubrid/metrics-chart-v2',
+                {
+                  type: 'doc',
+                  id: 'cubrid/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'cubrid/metrics-chart',
                 'cubrid/metrics-search',
                 'cubrid/metrics-detect-anormal',

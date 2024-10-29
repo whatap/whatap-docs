@@ -2,13 +2,19 @@
 
 メトリクス情報に関する詳しい内容は、[次のリンク](https://docs.oracle.com/)を参照してください。
 
-<InDoc product="oracle">
+import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+
+<AgentStatus />
+
+<InDoc product="oracle,oracle-v1">
 
 ## db_oracle_counter {#db_oracle_counter}
 
+Oracleデータベースの全般的な性能メトリクスを収集し、システムの状態と性能をモニタリングするのに重要なカテゴリです。
+
 ### Tags {#db_oracle_counter-tags}
 
-次は`db_oracle_counter`カテゴリに収集されるタグ値のガイダンスです。
+次は`db_oracle_counter`カテゴリに収集されるタグに関する案内です。
 
 | タグ名         | 説明                  | 備考    |
 | ----------- | ------------------- | ----- |
@@ -21,7 +27,7 @@
 
 ### Field {#db_oracle_counter-filed}
 
-次は`db_oracle_counter`カテゴリに収集されるフィールド値の案内です。
+次は`db_oracle_counter`カテゴリに収集されるフィールドの案内です。
 
 </InDoc>
 
@@ -29,9 +35,11 @@
 
 ## db_oracle_dma_counter {#db_oracle_dma_counter}
 
+Oracleデータベースの全般的な性能メトリクスを収集し、システムの状態と性能をモニタリングするのに重要なカテゴリです。
+
 ### Tags {#db_oracle_dma_counter-tags}
 
-次は`db_oracle_dma_counter`カテゴリに収集されるタグ値の案内です。
+次は、`db_oracle_dma_counter`カテゴリに収集されるタグに関する案内です。
 
 | タグ名      | 説明         | 備考    |
 | -------- | ---------- | ----- |
@@ -40,7 +48,7 @@
 
 ### Field {#db_oracle_dma_counter-filed}
 
-次は`db_oracle_dma_counter`カテゴリに収集されるフィールド値の案内です。
+次は、`db_oracle_dma_counter`カテゴリに収集されるフィールドの案内です。
 
 </InDoc>
 
@@ -126,3 +134,57 @@
 | `shared pool free mem ratio`  | 共有プールの空きメモリ比率<br/>共有プールはSQL文、PL/SQLコード、及びデータディクショナリーキャッシュを保存するメモリ領域です。 適切な空きメモリ比率を維持することで、共有プールの効率的な運用と性能最適化を保証できます。             |
 
 </div>
+
+<InDoc product="oracle,oracle-v1">
+
+## db_oracle_tablespace {#db_oracle_tablespace}
+
+Oracleデータベースのテーブルスペース使用状況を1時間おきに収集したカテゴリです。 このカテゴリのメトリクスは、テーブルスペースの状態と容量をモニタリングし、ストレージリソースを効率的に管理し、データベースの性能の問題を事前に予防するのに役立ちます。
+
+### Tags {#db_oracle_tablespace-tags}
+
+次は、`db_oracle_tablespace`カテゴリに収集されるタグに関する案内です。
+
+| タグ名          | 説明                                                                    | 備考    |
+| ------------ | --------------------------------------------------------------------- | ----- |
+| `con_name`   | 接続されたコンテナのデータベース名です。 マルチテナント環境で、各Pluggable Database(PDB)を区分するのに役立ちます。 | -     |
+| `datfile`    | 各テーブルスペースに割り当てられたデータファイルのパスとファイル名です。                                  | -     |
+| `oname`      | エージェント名です。                                                            | ユニーク値 |
+| `tablespace` | テーブルスペースの名前です。                                                        | -     |
+
+### Field {#db_oracle_tablespace-filed}
+
+次は、`db_oracle_tablespace`カテゴリに収集されるフィールドの案内です。
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+## db_oracle_dma_tablespace {#db_oracle_dma_tablespace}
+
+Oracleデータベースのテーブルスペース使用状況を1時間おきに収集したカテゴリです。 このカテゴリのメトリクスは、テーブルスペースの状態と容量をモニタリングし、ストレージリソースを効率的に管理し、データベースの性能の問題を事前に予防するのに役立ちます。
+
+### Tags {#db_oracle_dma_tablespace-tags}
+
+次は、`db_oracle_dma_tablespace`カテゴリに収集されるタグに関する案内です。
+
+| タグ名          | 説明                                                                    | 備考    |
+| ------------ | --------------------------------------------------------------------- | ----- |
+| `con_name`   | 接続されたコンテナのデータベース名です。 マルチテナント環境で、各Pluggable Database(PDB)を区分するのに役立ちます。 | -     |
+| `datfile`    | 各テーブルスペースに割り当てられたデータファイルのパスとファイル名です。                                  | -     |
+| `oname`      | エージェント名です。                                                            | ユニーク値 |
+| `tablespace` | テーブルスペースの名前です。                                                        | -     |
+
+### Field {#db_oracle_dma_tablespace-filed}
+
+次は、`db_oracle_dma_tablespace`カテゴリに収集されるフィールドの案内です。
+
+</InDoc>
+
+| Metrics          | Description                           |
+| ---------------- | ------------------------------------- |
+| `autoextensible` | `YES`または`NO`で、データファイルが自動拡張の可能有無を示します。 |
+| `increment_by`   | データファイルが自動拡張された時に一度に拡張されるブロックの数です。    |
+| `maxsize`        | データファイルが自動的に拡張される時に設定された最大サイズです。      |
+| `size`           | テーブルスペースの現在割り当てられている容量の合計です。          |
+| `used`           | 現在使用中のテーブルスペースのサイズです。                 |

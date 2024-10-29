@@ -77,41 +77,11 @@ toc_max_heading_level: 3
 | MemoryPressure   | `true` / `false`         | `true`       |
 | Unschedulable    | `true` / `false`         | `true`       |
 
-{/* 
-
-- <span class='normal'>Normal</span>: <span class='normal'>青色</span>
-
-- <span class='slow'>Warning</span>: <span class='slow'>オレンジ色</span>
-
-- <span class='vslow'>Error</span>: <span class='vslow'>赤色</span>
-
-*/}
-
 ##### ノード状態表示の優先順位
 
 状態表示の優先順位は<span class='vslow'>Error</span>区間が一番高いです。 様々なメトリクスのうち、1つの項目でも<span class='vslow'>Error</span>区間に属する場合、当該ノードは優先的に<span class='vslow'>赤色</span>に表示されます。 次の例の場合、ノード![指示線a](/img/char-a.svg)とノード![指示線b](/img/char-b.svg)すべて<span class='vslow'>Error</span>に表示されます。 
 
 ![ノード状態表示の優先順位sc](/img/k8s-node-map-custom-err-col.png)
-
-{/* * **우선 순위** 예시 이미지 사용해서 노드 A, B 비교 */}
-
-{/* 
-
-また*String*タイプメトリクスの場合、特定の文字列が含まれる場合<span class='vslow'>Error</span>に指定されます。 例えば***Status (string)***メトリクスに`NotReady`というテキストが含まれる場合、そのノードは<span class='vslow'>Error</span>に指定され<span class='vslow'>赤色に</span>表示されます。 
-
-*/}
-
-{/* 
-
-:::note 
-
-**優先順位**
-
-예시 이미지 사용해서 노드 A, B 비교
-
-::: 
-
-*/}
 
 #### ラベル
 

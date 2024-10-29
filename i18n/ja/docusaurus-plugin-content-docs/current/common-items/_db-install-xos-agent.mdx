@@ -1,4 +1,14 @@
+<Xclude product="cubrid,cubrid-v1">
+
 ## XOSエージェントのインストール及びその他のオプションを適用する{#apply-xos-agent}
+
+</Xclude>
+
+<InDoc product="cubrid,cubrid-v1">
+
+## XOSエージェントのインストール(選択事項) {#apply-cubrid-xos-agent}
+
+</InDoc>
 
 データベースサーバーのリソースをさらにモニタリングする場合は、データベースサーバーに別のXOSエージェントを実行してデータを収集できます。
 
@@ -108,9 +118,11 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
 </InDoc>
 
-<InDoc product="redis,mongodb,cubrid">
+<InDoc product="redis,mongodb,cubrid,cubrid-v1">
 
-<ImgLang img='xos-agent.png' desc='' />
+<InDoc product="redis,mongodb"><ImgLang img='xos-agent.png' desc='' /></InDoc>
+
+<InDoc product="cubrid,cubrid-v1"><ImgLang img='xos-agent-cubrid.png' desc='' /></InDoc>
 
 1. DBXエージェントがインストールされたパスの*whatap.conf*ファイルに次のオプションを設定します。
 

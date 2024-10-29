@@ -6,6 +6,108 @@ pagination_next: release-notes/service/service-2_8_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.9.5
+
+2024年10月08日
+
+<div className="indentTab">
+
+### `共通`
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />メニューでWhaTapスターターパックに関するプロモーションイメージを変更
+
+</div>
+
+## Service 2.9.4
+
+2024年10月02日
+
+<div className="indentTab">
+
+### `共通`
+
+<Status priority='0'>Changed</Status>ページネーションコンポーネントスタイルを改善
+
+{/* 
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL08411" className="uitext" />で<UI>一括解消</UI>ボタンを修復
+
+*/}
+
+---
+
+### `Application`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューでデータ照会中にページネーションを無効にするように修正
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_statistics" className="uitext" />メニューでCSVダウンロードライン数が最大照会件数と一致するように変更
+    
+  - **修正前**
+
+    CSV：100,000 / 照会：10,000
+
+  - **修正後**
+
+    CSV：10,000 / 照会： 10,000
+
+</div>
+
+## Service 2.9.3
+
+2024年09月27日
+
+<div className="indentTab">
+
+### `Kubernetes`
+
+{/* - <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> 메뉴로 처음 진입할 때 간헐적으로 라벨이 제대로 표시되지 않는 문제 수정 */}
+
+<p><Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />メニューでノード全体を選択した後、<Cmdname sid="side_log" className="uitext" />メニューに移動するとログデータが照会されない問題を修正(キャッシュ問題の解決)</p>
+
+</div>
+
+## Service 2.9.2
+
+2024年09月26日
+
+<div className="indentTab">
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューの<Cmdname sid="side_serverInventoryGuide" className="uitext" />でWindowsオプション追加コマンドに抜けている逆スラッシュ(`\`) 文字を追加
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status>次のメニュー経路に進入する時、新機能に対する案内ポップアップを追加
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />
+
+  - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeTimeline" className="uitext" />
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_report" className="uitext" />メニューで報告書の様式を<Cmdname sid="A200_AppMonthlyReport" className="uitext" report/>、<Cmdname sid="A155_AppMonthPerformance" className="uitext" report />を選択した時、複数のエージェント、エージェントグループ、エージェントの種類を選択できるように修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />メニューでノード全体を選択した後、<Cmdname sid="side_log" className="uitext" />メニューに移動するとログデータが照会されない問題を修正
+
+---
+
+### `Database`
+
+#### 共通
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="TTL06224" className="uitext" />ウィンドでSQL文にコロン(`:`)が複数含まれている場合、これをバインド変数として認識する問題を修正
+
+#### Oracle <code className="my">V2</code>、Oracle Pro
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="TTL06224" className="uitext" />ウィンドウで<UI>Runtime Plan</UI>の平均データが合算されて計算される問題を修正
+
+#### PostgreSQL、MySQL
+
+<Status priority='0'>Fixed</Status>ダッシュボードの <Cmdname sid="active_sessions" className="uitext" />テーブルからクエリを選択してPlanを照会する時、Object Detailウィンドウでテーブルデータがない場合、カラム名のみを表示するように修正
+
+</div>
+
 ## Service 2.9.1
 
 2024年09月25日

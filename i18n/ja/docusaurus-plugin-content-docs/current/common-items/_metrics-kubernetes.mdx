@@ -489,3 +489,86 @@ WhaTapで使用するCluster RoleにHPAが追加されると、指標収集が�
 | lastScaleTime         | 整数      | 最後にスケールが変更されたTimeStamp             | -  |
 | maxReplicas           | 整数      | 最大レプリカ数                            | -  |
 | minReplicas           | 整数      | 最小レプリカ数                            | -  |
+
+### プロセス(`kube_process`) メトリクス{#kube_process}
+
+:::note 
+
+Kubernetesエージェント1.7.12バージョン以降が必要です。エージェントのアップデートの詳細については、[次の文書](agent-update)を参照してください。 
+
+:::
+
+ノードに存在するKubernetes関連のプロセスをモニタリングする時に収集されます。 
+
+- 対象：クラスタープロジェクト、ネームスペースプロジェクト 
+
+- 収集間隔：5秒 
+
+- 統計データ：5分 
+
+#### Tags {#kube_process_stat-tags}
+
+| タグ名        | 説明                 | タイプ     | 備考                         |
+| ---------- | ------------------ | ------- | -------------------------- |
+| ppid       | 親プロセスID            | String  | /proc/[pid]/status::PPid   |
+| pid        | プロセスID             | String  | /proc/[pid]/status::Pid    |
+| cmd1       | コマンド名              | String  | /proc/[pid]/status::Name   |
+| cmd2       | コマンドライン(全体コマンドと引数) | String  | /proc/[pid]/cmdline        |
+| ユーザー       | ユーザーIDまたはユーザー名     | String  | /proc/[pid]/status::Uid    |
+| onodeName  | プロセスのノード名          | String  | コンテナシステムの環境変数(`NODE_IP`)   |
+| createTime | プロセス開始時間           | タイムスタンプ | /proc/uptimeを通じて計算されたフィールド |
+
+#### Fields {#kube_process_stat-fields}
+
+| フィールド名              | 説明                             | 単位        | タイプ    | 備考                              |
+| ------------------- | ------------------------------ | --------- | ------ | ------------------------------- |
+| cpu                 | CPU使用率                         | パーセント (%) | float  | /proc/[pid]/statを通じて計算されたフィールド  |
+| memory              | メモリ使用率                         | パーセント (%) | float  | /proc/[pid]/statmを通じて計算されたフィールド |
+| rss                 | 実際のメモリ使用量(Resident Set Size)   | バイト(B)    | long   | /proc/[pid]/status::VmRSS       |
+| uid                 | ユーザーIDまたはユーザー名                 | 無し        | String | /proc/[pid]/status::Uid         |
+| state               | プロセス状態                         | 無し        | String | /proc/[pid]/status::State       |
+| SharedMemory        | 共有メモリのサイズ                      | バイト(B)    | long   | /proc/[pid]/statmを通じて計算されたフィールド |
+| openFileDescriptors | プロセスが開いているファイルディスクリプタの数        | 無し        | int    | /proc/[pid]/fdを通じて計算されたフィールド    |
+| vmSize              | 仮想メモリのサイズ(Virtual Memory Size) | バイト(B)    | long   | /proc/[pid]/status의 VmSize      |
+| threads             | プロセスが生成したスレッド数                 | 無し        | int    | /proc/[pid]/status의 Threads     |
+
+##### Kubernetes環境におけるLinuxプロセスの状態
+
+Linuxで_/proc/[pid]/status_ファイルの`State`フィールドがプロセスの現在の状態を表示します。各ステータス値の意味は次の通りです。
+
+| コード              | 説明     | 詳細説明                                                |
+| ---------------- | ------ | --------------------------------------------------- |
+| R (Running)      | 実行中    | プロセスが実行中または実行される準備ができている状態                          |
+| S (Sleeping)     | 待機中    | 割り込み可能な睡眠状態で、待機中でイベントを待っている状態                       |
+| D (Disk Sleep)   | ディスク睡眠 | 割り込み不可能な睡眠状態で、通常はI/O作業を待っている状態                      |
+| R (Zombie)       | ゾンビ状態  | プロセスが終了したが、まだ親プロセスが終了状態を収集していない状態                   |
+| T (Stopped)      | 中止     | プロセスが作業制御信号によって中止された状態(SIGSTOPなど) またはデバッガにより中止された状態 |
+| t (Tracing stop) | 追跡中止   | デバッガによって追跡中の状態(小文字tで表示される)                          |
+| X (Dead)         | 死んだ状態  | プロセスが死んだ状態(一般に見ない)                                  |
+| x (Dead)         | 死んだ状態  | カーネルスレッドの死状態(一般に見ない)                                |
+| K (WakeKill)     | 強制終了   | 目覚めの合図を無視して即死した状態                                   |
+| W (Waking)       | 目覚まし中  | 目覚まし信号を受けて覚まされている状態                                 |
+| I (Idle)         | アイドル状態 | カーネルスレッドがアイドル状態(一般的にユーザ空間プロセスには見えない)                |
+
+:::note 
+
+Kubernetesは、コンテナとノードのリソースを効率的に管理するため、コンテナ内部で実行される多数のプロセスが実際に待機状態を維持します。これにより、ほとんどのプロセスは`Sleeping`状態の可能性があります。
+
+:::
+
+### agent_status_summary {#agent_status_summary}
+
+エージェントの状態に関するメトリクスを10秒間隔で収集したカテゴリです。
+
+#### Fields {#agent_status_summary_filed}
+
+| フィールド名        |    単位   | 説明                        | 備考                                    |
+| ------------- | :-----: | ------------------------- | ------------------------------------- |
+| `inActTime`   | ミリ秒(ms) | エージェントが無効になったままの時間        | -                                     |
+| `isActive`    |    -    | 現在のエージェントの活性化状態           | `true` / `false`                      |
+| `isRestart`   |    -    | エージェントの再起動可否              | `true` / `false`                      |
+| `lastActTime` | ミリ秒(ms) | 最後にエージェントが活性化された状態の時刻     | `0`: 無効化された場合                         |
+| `oid`         |    -    | プロジェクトに含まれる各エージェントの固有の識別子 | -                                     |
+| `oType`       |    -    | エージェント種類                  | `1`: アプリケーションエージェント/ `2`: `subType`参照 |
+| `startTime`   | ミリ秒(ms) | エージェントが開始された時点を示すタイムスタンプ  | -                                     |
+| `subType`     |    -    | エージェント種類                  | `9`: ノードエージェント/ `10`: マスターエージェント      |
