@@ -264,8 +264,8 @@ const metadata = {
   },
   "sidebar": "dboracledmaSidebar",
   "previous": {
-    "title": "클라우드 설정",
-    "permalink": "/whatap-docs/oracle-pro/cloudsettings"
+    "title": "설정하기",
+    "permalink": "/whatap-docs/oracle-pro/agent-settings"
   },
   "next": {
     "title": "대시보드",

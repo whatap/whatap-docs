@@ -715,8 +715,8 @@ const metadata = {
     "permalink": "/whatap-docs/oracle-pro/troubleshooting"
   },
   "next": {
-    "title": "클라우드 설정",
-    "permalink": "/whatap-docs/oracle-pro/cloudsettings"
+    "title": "관리하기",
+    "permalink": "/whatap-docs/oracle-pro/agent-manage"
   }
 };
 const assets = {
