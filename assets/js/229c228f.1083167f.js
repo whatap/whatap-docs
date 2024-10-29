@@ -752,8 +752,8 @@ function _createMdxContent(props) {
             type: "note",
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: ["이 기능은 클러스터 프로젝트에만 적용되며, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "../k8s/k8s-1_7_12",
-                children: "쿠버네티스 에이전트 1.7.12 버전"
+                href: "../k8s/k8s-1_7_14",
+                children: "쿠버네티스 에이전트 1.7.14 버전"
               }), " 이상에서 지원합니다."]
             })
           }), "\n"]
