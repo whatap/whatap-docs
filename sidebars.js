@@ -6438,7 +6438,7 @@ const sidebars = {
                 'kubernetes/pending-pod-status',
                 'kubernetes/resource-application-list',
                 'kubernetes/deployment-list',
-                'kubernetes/service-list',
+                // 'kubernetes/service-list',
               ],
             },
             {
@@ -6455,6 +6455,8 @@ const sidebars = {
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/kube-apiserver-metrics-search',
+                'kubernetes/service-list',
+                'kubernetes/ingress-list',
                 'kubernetes/resource-namespace',
               ],
             },
