@@ -1172,7 +1172,7 @@
     "description": "The label for category 분석 in sidebar npmsidebar"
   },
   "sidebar.npmsidebar.category.알림 설정하기": {
-    "message": "アラート通知",
+    "message": "アラートの設定",
     "description": "The label for category 알림 설정하기 in sidebar npmsidebar"
   },
   "sidebar.rumsSidebar.category.메트릭스": {
@@ -1760,7 +1760,7 @@
     "description": "The label for category 분석과 통계 in sidebar altibasev1Sidebar"
   },
   "sidebar.altibasev1Sidebar.category.알림 설정하기": {
-    "message": "アラート通知",
+    "message": "アラートの設定",
     "description": "The label for category 알림 설정하기 in sidebar altibasev1Sidebar"
   },
   "sidebar.altibasev1Sidebar.doc.지원 환경": {
@@ -1852,7 +1852,7 @@
     "description": "The label for category 통계/보고서 in sidebar cubridV1Sidebar"
   },
   "sidebar.cubridV1Sidebar.category.알림 설정하기": {
-    "message": "アラート通知",
+    "message": "アラートの設定",
     "description": "The label for category 알림 설정하기 in sidebar cubridV1Sidebar"
   },
   "sidebar.cubridV1Sidebar.doc.지원 환경": {
@@ -1870,5 +1870,9 @@
   "sidebar.releaseSidebar.doc.Server HP-UX": {
     "message": "Server HP-UX",
     "description": "The label for the doc item Server HP-UX in sidebar releaseSidebar, linking to the doc release-notes/server-hpux/server-hpux-1_3_4"
+  },
+  "sidebar.featuremonitorSidebar.doc.vCenter": {
+    "message": "vCenter",
+    "description": "The label for the doc item vCenter in sidebar featuremonitorSidebar, linking to the doc features/vcenter-introduction"
   }
 }

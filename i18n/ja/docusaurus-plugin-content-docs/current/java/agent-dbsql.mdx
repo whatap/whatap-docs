@@ -60,11 +60,17 @@ keywords:
 
   トレース履歴にDBConnectionオープン情報を記録します。
 
-- **profile_dbc_close** <span class='type'>Boolean</span>
+- **trace_dbc_close_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.3 or later</code>
 
   既定値`false`
 
   `profile_connection_open_enabled`の値が`true`の場合のみ動作します。トレース履歴にDBConnectiondのクローズ情報を記録します。
+
+  :::note
+
+  **Javaエージェント2.2.3バージョン前**では`profile_dbc_close`オプション名を使用します。
+
+  :::
 
 - **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 
