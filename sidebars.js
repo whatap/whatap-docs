@@ -2012,7 +2012,6 @@ const sidebars = {
           ],
         },
         'oracle-pro/agent-settings',
-        'oracle-pro/cloudsettings',
         'oracle-pro/agent-manage',
         {
           type: 'category',
