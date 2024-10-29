@@ -830,7 +830,7 @@ function _createMdxContent(props) {
                 children: "SID"
               }), " 항목과 같습니다."]
             }), "\n", (0,jsx_runtime.jsx)(ImgLang, {
-              img: "db-linked-projects-postgresql-pid-sid.png",
+              img: "apm-linked-projects-postgresql-pid-sid.png",
               desc: "SID"
             }), "\n"]
           }), "\n"]
