@@ -1,6 +1,463 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[32551],{
 
+/***/ 16165:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "프로세스 상세",
+  "id": "k8s-node-process-details",
+  "level": 4
+}];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    em: "em",
+    h3: "h3",
+    h4: "h4",
+    img: "img",
+    li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ImgLang, InDoc} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL08441",
+          className: "uitext",
+          type: "node"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL08441",
+          className: "uitext",
+          type: "node"
+        }), " 탭에서 선택한 노드 구성 및 전반적인 리소스 사용량 정보를 요약해서 제공합니다. 해당 노드의 하드웨어 및 소프트웨어 구성 요소를 종합적으로 확인할 수 있습니다. 사용자는 노드의 리소스 사용 현황 및 각 구성 요소의 상태를 파악하고 성능 및 운영 안정성을 모니터링할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-node-timeline-config.png"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "노드 시스템 사양"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Architecture"
+                  })
+                }), ": 노드가 사용하고 있는 하드웨어 아키텍처"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Image"
+                  })
+                }), ": 노드가 실행 중인 운영 체제 이미지 정보"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "CapacityMemory"
+                  })
+                }), ": 노드의 총 메모리 용량"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "CapacityCpu"
+                  })
+                }), ": 노드의 총 CPU 용량"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "소프트웨어 구성"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "Container Runtime"
+                  })
+                }), ": 노드에서 사용되는 컨테이너 런타임의 버전 정보"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kubelet"
+                  })
+                }), ": 노드에서 실행 중인 쿠버네티스 kubelet의 버전 정보"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "kube-proxy"
+                  })
+                }), ": 네트워크 관리 역할을 하는 kube-proxy의 버전 정보"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "리소스 사용 현황"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "CPU"
+                  })
+                }), ": 노드의 CPU 사용량"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "메모리"
+                  })
+                }), ": 노드의 메모리 사용량"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "디스크"
+                  })
+                }), ": 노드에서 사용 중인 디스크 용량과 사용 비율"]
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                    children: "네트워크"
+                  })
+                }), ": 네트워크 전송량"]
+              }), "\n"]
+            }), "\n"]
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["CPU, 메모리, 디스크, 네트워크 클릭 시 조회 기간 동안 사용량 추이를 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "metrics",
+                className: "uitext"
+              }), " 탭으로 이동합니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "AVG"
+                })
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+                children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                  children: "MAX"
+                })
+              }), " 버튼을 클릭하여 조회 기간동안 평균 사용량과 최대 사용량을 확인할 수 있습니다."]
+            }), "\n"]
+          }), "\n"]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        pages: "resource-node-list",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+          type: "note",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "노드 구성"
+              })
+            }), " 탭은 클러스터 프로젝트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              class: "my",
+              children: "CP"
+            }), ")일 경우 조회할 수 있습니다."]
+          })]
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+        pages: "resource-node-list",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "-1",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "resource",
+            className: "uitext"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "resource",
+            className: "uitext"
+          }), " 탭에서 선택한 노드에 스케줄링된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Pod"
+            })
+          }), " 및 해당 Pod에서 실행 중인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "컨테이너"
+            })
+          }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "애플리케이션"
+            })
+          }), " 목록을 확인할 수 있습니다. 해당 정보는 선택한 시간 구간의 마지막 시점을 기준으로 1분간의 리소스 데이터를 반영하여 표시합니다. 이를 통해 해당 시점의 노드 상태와 각 Pod, 컨테이너, 애플리케이션의 동작 상태를 보다 명확하게 파악할 수 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "k8s-node-timeline-resource.png"
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "-2",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "process",
+          className: "uitext"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "process",
+          className: "uitext"
+        }), " 탭에서 선택한 노드 내부에 있는 주요 쿠버네티스 관리 프로세스 정보를 확인할 수 있습니다. 프로세스 문제로 발생하는 클러스터 장애를 예방하고 다운타임을 최소화할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-node-process.png"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "k8s-node-process-details",
+        children: "프로세스 상세"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["프로세스 목록 왼쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL08422",
+              className: "uitext"
+            }), " 컬럼에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "상세 보기 아이콘",
+              src: (__webpack_require__(65557)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " 아이콘 선택 시 해당 프로세스에 대한 상세 정보를 확인할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "AVG"
+              })
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "MAX"
+              })
+            }), " 버튼을 클릭하여 3일 이상의 장기 데이터 조회 시 불러올 통계 데이터의 합산 방식을 선택할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "프로세스 주요 정보 값 클릭 시 해당 값이 복사됩니다."
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "process",
+            className: "uitext"
+          }), " 탭은 쿠버네티스 에이전트 버전 1.7.14 이상부터 지원합니다."]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "-3",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "metrics",
+          className: "uitext"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "metrics",
+          className: "uitext"
+        }), " 탭에서 선택한 노드의 리소스 사용량 추이를 확인할 수 있습니다. 조회 기간 동안의 평균(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "AVG"
+          })
+        }), "), 최대값(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "MAX"
+          })
+        }), ")을 기준으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "CPU"
+          })
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "메모리"
+          })
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "네트워크"
+          })
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "디스크"
+          })
+        }), " 사용량의 변화를 조회할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-node-timeline-metrics.png"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "AVG"
+              })
+            }), ": 조회 기간 동안 평균 사용량"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "MAX"
+              })
+            }), ": 조회 기간 동안 최대 사용량"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "Total"
+              })
+            }), ": 여러 네트워크 인터페이스의 전체 트래픽 사용량 합산"]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "In/Out"
+              })
+            }), ": 특정 네트워크 인터페이스의 Inbound(수신) 및 Outbound(송신) 트래픽 사용량"]
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "K8s CPU Request / Allocatable CPU (%)"
+            })
+          }), " 위젯은 쿠버네티스 에이전트 버전 1.7.10 이상부터 지원합니다."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+        pages: "resource-node-list",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "-4",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "trace",
+            className: "uitext"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "trace",
+            className: "uitext"
+          }), " 탭에서 선택한 노드에서 실행 중인 애플리케이션 트레이스 정보를 확인할 수 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "k8s-resource-node-list-trace.png"
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "-5",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "event",
+          className: "uitext"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "event",
+          className: "uitext"
+        }), " 탭에서 선택한 노드에서 발생한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "K8s Node 이벤트"
+          })
+        }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "WhaTap Node 이벤트"
+          })
+        }), "를 확인할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "K8s Node 이벤트"
+          })
+        }), "는 노드의 상태 변화를 포함한 클러스터 내의 중요한 작업 기록을 포함하며, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "WhaTap Node 이벤트"
+          })
+        }), "는 사용자가 설정한 경고 알림 기준에 따른 이벤트 발생 정보를 제공합니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-node-timeline-event.png"
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 81337:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -14,7 +471,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16165);
 
 
 const frontMatter = {
@@ -100,7 +558,23 @@ const assets = {
 
 */
 /*사용자는 노드 블록 내부에 텍스트 라벨을 설정하여 지정한 주요 정보를 한눈에 볼 수 있습니다. <Cmdname sid="label" className="uitext" />을 ***CpuUsedPercent*** 지표 기준으로 설정한 경우 위의 예시 이미지와 같이 노드 블록 내부에서 해당 정보를 확인할 수 있습니다.*/
-/*노드 내 CPU, 메모리, 디스크, 네트워크 자원 사용 현황을 포함한 상세 정보를 확인할 수 있습니다.*/
+/*#### 노드 구성
+
+<Cmdname sid="TTL08441" className="uitext" type="node"/> 탭에서 노드 내 CPU, 메모리, 디스크, 네트워크 구성 및 사용량과 Container Runtime, kubelet, kube-proxy 등 쿠버네티스 시스템 프로세스 정보를 확인할 수 있습니다.
+
+#### 메트릭스
+
+<Cmdname sid="metrics" className="uitext" /> 탭에서 선택한 노드의 주요 메트릭 정보를 조회하고 리소스 사용 패턴을 확인할 수 있습니다. 이를 통해 리소스 관련 성능 최적화 및 문제점을 빠르게 식별할 수 있습니다.
+
+:::note[]
+
+***K8s CPU Request / Allocatable CPU (%)*** 위젯은 마스터 에이전트 버전 1.7.9 이상부터 지원합니다.
+
+:::
+
+#### 이벤트
+
+<Cmdname sid="event" className="uitext" /> 탭에서 ***K8s Node 이벤트***와 사용자가 설정한 ***WhaTap Node 이벤트***를 확인하여 클러스터 내 발생한 주요 이벤트 및 경고를 모니터링할 수 있습니다.*/
 /*
 
 노드 맵은 크게 **사용자 설정 영역**과 **차트 영역**으로 구성되어 있습니다.
@@ -172,6 +646,7 @@ const assets = {
 */
 
 
+
 const toc = [{
   "value": "기본 화면 안내",
   "id": "기본-화면-안내",
@@ -220,23 +695,7 @@ const toc = [{
   "value": "요약 보기 및 상세 분석",
   "id": "요약-보기-및-상세-분석",
   "level": 2
-}, {
-  "value": "대상 정보",
-  "id": "대상-정보",
-  "level": 4
-}, {
-  "value": "노드 구성",
-  "id": "노드-구성",
-  "level": 4
-}, {
-  "value": "메트릭스",
-  "id": "메트릭스",
-  "level": 4
-}, {
-  "value": "이벤트",
-  "id": "이벤트",
-  "level": 4
-}];
+}, ..._common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
@@ -260,7 +719,7 @@ function _createMdxContent(props) {
     thead: "thead",
     tr: "tr",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname, Column, Columns, ImgLang, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
@@ -880,10 +1339,13 @@ function _createMdxContent(props) {
         img: "k8s-node-map-summary.png"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "대상-정보",
-        children: "대상 정보"
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "TTL06782",
+          className: "uitext"
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL06782",
@@ -896,66 +1358,15 @@ function _createMdxContent(props) {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "Labels"
             })
-          }), " 지표는 마스터 에이전트 버전 1.7.9 이상부터 지원합니다."]
+          }), " 지표는 쿠버네티스 에이전트 버전 1.7.9 이상부터 지원합니다."]
         })]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "노드-구성",
-        children: "노드 구성"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL08441",
-          className: "uitext",
-          type: "node"
-        }), " 탭에서 노드 내 CPU, 메모리, 디스크, 네트워크 구성 및 사용량과 Container Runtime, kubelet, kube-proxy 등 쿠버네티스 시스템 프로세스 정보를 확인할 수 있습니다."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "메트릭스",
-        children: "메트릭스"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "metrics",
-          className: "uitext"
-        }), " 탭에서 선택한 노드의 주요 메트릭 정보를 조회하고 리소스 사용 패턴을 확인할 수 있습니다. 이를 통해 리소스 관련 성능 최적화 및 문제점을 빠르게 식별할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "K8s CPU Request / Allocatable CPU (%)"
-            })
-          }), " 위젯은 마스터 에이전트 버전 1.7.9 이상부터 지원합니다."]
-        })]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "이벤트",
-        children: "이벤트"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "event",
-          className: "uitext"
-        }), " 탭에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "K8s Node 이벤트"
-          })
-        }), "와 사용자가 설정한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "WhaTap Node 이벤트"
-          })
-        }), "를 확인하여 클러스터 내 발생한 주요 이벤트 및 경고를 모니터링할 수 있습니다."]
-      })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
@@ -1000,6 +1411,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS40Mjg3IDFIMTMuNDI4N0MxNS4wNjQ0IDEgMTYuMzk0NCAyLjMwOTA3IDE2LjQyODEgMy45MzU2OUMxNi43NjggNC4xMDQ1IDE3LjA5NjcgNC4yOTQ2MiAxNy40MTIyIDQuNTA0NzVDMTguODM4NiAzLjcyMDIxIDIwLjYzNzIgNC4yMTc0NiAyMS40NTUgNS42MzM5N0wyMi40NTUgNy4zNjYwM0MyMy4yNzMxIDguNzgyOTUgMjIuODAzOSAxMC41ODk4IDIxLjQxMSAxMS40MzIxQzIxLjQyMjggMTEuNjIwNiAyMS40Mjg3IDExLjgxIDIxLjQyODcgMTJDMjEuNDI4NyAxMi4xOSAyMS40MjI4IDEyLjM3OTQgMjEuNDExIDEyLjU2NzlDMjIuODA0MSAxMy40MTA4IDIzLjI3MjkgMTUuMjE3MyAyMi40NTUgMTYuNjM0TDIxLjQ1NSAxOC4zNjZDMjAuNjM3MSAxOS43ODI3IDE4LjgzODEgMjAuMjc5OSAxNy40MTIyIDE5LjQ5NTNDMTcuMDk2NiAxOS43MDU0IDE2Ljc2OCAxOS44OTU1IDE2LjQyODEgMjAuMDY0M0MxNi4zOTM4IDIxLjY5MTUgMTUuMDY0MSAyMyAxMy40Mjg3IDIzSDExLjQyODdDOS43OTMzNSAyMyA4LjQ2MzU5IDIxLjY5MTQgOC40Mjk0IDIwLjA2NDNDOC4wODk1IDE5Ljg5NTUgNy43NjA4MiAxOS43MDU0IDcuNDQ1MjYgMTkuNDk1M0M2LjAxODg2IDIwLjI3OTggNC4yMjAyOCAxOS43ODI1IDMuNDAyNDUgMTguMzY2TDIuNDAyNDUgMTYuNjM0QzEuNTg0MzkgMTUuMjE3MSAyLjA1MzU1IDEzLjQxMDIgMy40NDY0MiAxMi41Njc5QzMuNDM0NjUgMTIuMzc5NCAzLjQyODczIDEyLjE5IDMuNDI4NzMgMTJDMy40Mjg3MyAxMS44MSAzLjQzNDY1IDExLjYyMDYgMy40NDY0MiAxMS40MzIxQzIuMDUzNCAxMC41ODkyIDEuNTg0NTIgOC43ODI3MiAyLjQwMjQ1IDcuMzY2MDNMMy40MDI0NSA1LjYzMzk3QzQuMjIwMzkgNC4yMTcyNiA2LjAxOTM1IDMuNzIwMDcgNy40NDUyNyA0LjUwNDc0QzcuNzYwODIgNC4yOTQ2MSA4LjA4OTUgNC4xMDQ0OSA4LjQyOTQxIDMuOTM1NjhDOC40NjM2MyAyLjMwODUyIDkuNzkzMzcgMSAxMS40Mjg3IDFaTTEzLjQzNjYgMi44MzMzM0gxMS4zOTk2QzEwLjgzNzEgMi44MzMzMyAxMC4zODExIDMuMjg5MzQgMTAuMzgxMSAzLjg1MTg1TDEwLjM4MSA1LjE2NTYzQzkuMjk2NzYgNS40ODgzMyA4LjMyMDU5IDYuMDYyMDIgNy41MTk5IDYuODE5MzNMNi4zODAxMyA2LjE2MThDNS44OTI5OCA1Ljg4MDU0IDUuMjcwMDYgNi4wNDc0NSA0Ljk4ODgxIDYuNTM0NkwzLjk3MDI5IDguMjk4NzNDMy42ODkwMyA4Ljc4NTg4IDMuODU1OTQgOS40MDg4IDQuMzQzMDkgOS42OTAwNUw1LjQ4MDk0IDEwLjM0NzZDNS4zNTUwOSAxMC44Nzc5IDUuMjg4NDggMTEuNDMxMiA1LjI4ODQ4IDEyQzUuMjg4NDggMTIuNTY4OCA1LjM1NTA5IDEzLjEyMjEgNS40ODA5NCAxMy42NTI0TDQuMzQzMDkgMTQuMzA5OUMzLjg1NTk0IDE0LjU5MTIgMy42ODkwMyAxNS4yMTQxIDMuOTcwMjkgMTUuNzAxM0w0Ljk4ODgxIDE3LjQ2NTRDNS4yNzAwNiAxNy45NTI1IDUuODkyOTggMTguMTE5NSA2LjM4MDEzIDE3LjgzODJMNy41MTk5IDE3LjE4MDdDOC4zMjA1OSAxNy45MzggOS4yOTY3NiAxOC41MTE3IDEwLjM4MSAxOC44MzQ0TDEwLjM4MTEgMjAuMTQ4MUMxMC4zODExIDIwLjcxMDcgMTAuODM3MSAyMS4xNjY3IDExLjM5OTYgMjEuMTY2N0gxMy40MzY2QzEzLjk5OTEgMjEuMTY2NyAxNC40NTUyIDIwLjcxMDcgMTQuNDU1MiAyMC4xNDgxTDE0LjQ1NTggMTguODM0MkMxNS41Mzk5IDE4LjUxMTQgMTYuNTE1OCAxNy45Mzc4IDE3LjMxNjMgMTcuMTgwN0wxOC40NTYxIDE3LjgzODJDMTguOTQzMiAxOC4xMTk1IDE5LjU2NjIgMTcuOTUyNSAxOS44NDc0IDE3LjQ2NTRMMjAuODY1OSAxNS43MDEzQzIxLjE0NzIgMTUuMjE0MSAyMC45ODAzIDE0LjU5MTIgMjAuNDkzMSAxNC4zMDk5TDE5LjM1NTMgMTMuNjUyNEMxOS40ODExIDEzLjEyMjEgMTkuNTQ3NyAxMi41Njg4IDE5LjU0NzcgMTJDMTkuNTQ3NyAxMS40MzEyIDE5LjQ4MTEgMTAuODc3OSAxOS4zNTUzIDEwLjM0NzZMMjAuNDkzMSA5LjY5MDA1QzIwLjk4MDMgOS40MDg4IDIxLjE0NzIgOC43ODU4OCAyMC44NjU5IDguMjk4NzNMMTkuODQ3NCA2LjUzNDZDMTkuNTY2MiA2LjA0NzQ1IDE4Ljk0MzIgNS44ODA1NCAxOC40NTYxIDYuMTYxOEwxNy4zMTYzIDYuODE5MzNDMTYuNTE1OCA2LjA2MjE3IDE1LjUzOTkgNS40ODg1NiAxNC40NTU4IDUuMTY1ODJMMTQuNDU1MiAzLjg1MTg1QzE0LjQ1NTIgMy4yODkzNCAxMy45OTkxIDIuODMzMzMgMTMuNDM2NiAyLjgzMzMzWk0xMi40NzYzIDE1LjY2NjdDMTQuNTAxNCAxNS42NjY3IDE2LjE0MyAxNC4wMjUgMTYuMTQzIDEyQzE2LjE0MyA5Ljk3NDk2IDE0LjUwMTQgOC4zMzMzMyAxMi40NzYzIDguMzMzMzNDMTAuNDUxMyA4LjMzMzMzIDguODA5NjcgOS45NzQ5NiA4LjgwOTY3IDEyQzguODA5NjcgMTQuMDI1IDEwLjQ1MTMgMTUuNjY2NyAxMi40NzYzIDE1LjY2NjdaTTEyLjQ3NjMgMTMuODMzM0MxMS40NjM4IDEzLjgzMzMgMTAuNjQzIDEzLjAxMjUgMTAuNjQzIDEyQzEwLjY0MyAxMC45ODc1IDExLjQ2MzggMTAuMTY2NyAxMi40NzYzIDEwLjE2NjdDMTMuNDg4OSAxMC4xNjY3IDE0LjMwOTcgMTAuOTg3NSAxNC4zMDk3IDEyQzE0LjMwOTcgMTMuMDEyNSAxMy40ODg5IDEzLjgzMzMgMTIuNDc2MyAxMy44MzMzWiIgZmlsbD0iIzc1NzU3NSIvPgo8L3N2Zz4K");
+
+/***/ }),
+
+/***/ 65557:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAxNnB4O2hlaWdodDogMTZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtcGFnZXZpZXc8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjcxMS4wMDAwMDApIiBmaWxsPSIjMjk2Y2YyIj4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtcGFnZXZpZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgMzY1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMDAwMDAwLCA0LjAwMDAwMCkiIGlkPSJwYWdldmlldyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOCwwIEMxOS4wMzUyOTQxLDAgMTkuODkzNDI1NiwwLjc5NzIzMTgzNCAxOS45OTA3OTk5LDEuODA4MTAwOTYgTDIwLDIgTDE5Ljk5OSw1LjMzMyBMMTcuOTk5LDUuMzMzIEwxOCwyIEwyLDIgTDIsMTQgTDEyLDE0IEwxMiwxNiBMMiwxNiBDMC45NjQ3MDU4ODIsMTYgMC4xMDY1NzQzOTQsMTUuMjAyNzY4MiAwLjAwOTIwMDA4MTQyLDE0LjE5MTg5OSBMLTUuMzI5MDcwNTJlLTE1LDE0IEwtNS4zMjkwNzA1MmUtMTUsMiBDLTUuMzI5MDcwNTJlLTE1LDAuOTY0NzA1ODgyIDAuNzk3MjMxODM0LDAuMTA2NTc0Mzk0IDEuODA4MTAwOTYsMC4wMDkyMDAwODE0MiBMMiwwIEwxOCwwIFogTTEzLjE2NjY2NjcsNCBDMTUuNjU2NjY2Nyw0IDE3LjY2NjY2NjcsNi4wMSAxNy42NjY2NjY3LDguNSBDMTcuNjY2NjY2Nyw5LjM4IDE3LjQwNjY2NjcsMTAuMTkgMTYuOTY2NjY2NywxMC44OSBMMTkuODc2NjY2NywxMy43OSBMMTguNDU2NjY2NywxNS4yMSBMMTUuNTQ2NjY2NywxMi4zIEMxNC44NTY2NjY3LDEyLjc0IDE0LjAzNjY2NjcsMTMgMTMuMTU2NjY2NywxMyBDMTAuNjc2NjY2NywxMyA4LjY2NjY2NjY3LDEwLjk5IDguNjY2NjY2NjcsOC41IEM4LjY2NjY2NjY3LDYuMDEgMTAuNjc2NjY2Nyw0IDEzLjE2NjY2NjcsNCBaIE0xMy4xNjY2NjY3LDYgQzExLjc4NjY2NjcsNiAxMC42NjY2NjY3LDcuMTIgMTAuNjY2NjY2Nyw4LjUgQzEwLjY2NjY2NjcsOS44OCAxMS43ODY2NjY3LDExIDEzLjE2NjY2NjcsMTEgQzE0LjU0NjY2NjcsMTEgMTUuNjY2NjY2Nyw5Ljg4IDE1LjY2NjY2NjcsOC41IEMxNS42NjY2NjY3LDcuMTIgMTQuNTQ2NjY2Nyw2IDEzLjE2NjY2NjcsNiBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
 
 /***/ }),
 

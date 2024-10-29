@@ -427,176 +427,36 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 78110:
+/***/ 16165:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
 /* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_k8s_list_metric_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35895);
-/* harmony import */ var _common_items_k8s_list_filter_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(93421);
-/* harmony import */ var _common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85506);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
 
 
-const frontMatter = {
-	id: 'resource-node-list',
-	title: '노드 목록',
-	description: '현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.',
-	keywords: [
-		'쿠버네티스',
-		'쿠버네티스 모니터링',
-		'클러스터',
-		'노드 목록'
-	],
-	toc_max_heading_level: 2,
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "kubernetes/resource-node-list",
-  "title": "노드 목록",
-  "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
-  "source": "@site/docs/kubernetes/resource-node-list.mdx",
-  "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/resource-node-list",
-  "permalink": "/whatap-docs/kubernetes/resource-node-list",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/resource-node-list.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "resource-node-list",
-    "title": "노드 목록",
-    "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
-    "keywords": [
-      "쿠버네티스",
-      "쿠버네티스 모니터링",
-      "클러스터",
-      "노드 목록"
-    ],
-    "toc_max_heading_level": 2,
-    "isTranslationMissing": false
-  },
-  "sidebar": "kubeSidebar",
-  "previous": {
-    "title": "Deployment 목록",
-    "permalink": "/whatap-docs/kubernetes/deployment-list"
-  },
-  "next": {
-    "title": "노드 상세",
-    "permalink": "/whatap-docs/kubernetes/node-details"
-  }
-};
-const assets = {
-
-};
-
-/*## 노드 상세 {#nodedetails}
-
-***노드 상세*** 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다. 노드 셀렉터를 통해 조회를 원하는 노드를 선택할 수 있습니다.
-
-<ImgLang img='k8s-resource-node-detail.png' desc='노드 상세 화면' />
-
-* 상단 차트
-
-다음과 같은 4개의 차트 정보를 확인할 수 있습니다.
-
-* ***CPU Usage***: 노드의 CPU 사용량을 확인할 수 있습니다.
-
-* ***Memory Usage***: 노드의 메모리 사용량을 확인할 수 있습니다.
-
-* ***Network***: 노드의 네트워크 인터페이스의 입출력 트래픽과 오류 패킷을 확인할 수 있습니다.
-
-* ***Disk Usage***: 노드의 Disk 사용량을 확인할 수 있습니다.
-
-* 컨테이너 상세 정보
-
-* 노드 내 컨테이너 상세 정보 상단에서 `cpu_quota`, `cpu_request`, `cpu_total_milli`, `mem_limit`, `mem_request`, `mem_working_set` 지표의 합계를 확인할 수 있습니다.
-
-* 컨테이너 상세 정보는 다음 내용을 제공합니다.
-
-| 항목             | 설명                                              |
-| ---------------- | ------------------------------------------------- |
-| 상태             | 컨테이너 상태                                     |
-| 컨테이너         | Container ID                                      |
-| 이미지           | 컨테이너 이미지 정보                              |
-| 커맨드           | 컨테이너 실행 명령                                |
-| 애플리케이션     | 컨테이너에 설치된 와탭 APM 에이전트의 이름        |
-| Pod              | Pod 이름                                          |
-| CpuByLimit       | CPU Limit 기준 CPU 전체 사용률                    |
-| MemoryWsByLimit  | 컨테이너 메모리 Limit 기준 working set 사용량     |
-| CpuThrottledCnt  | 컨테이너 CPU Throttled 건수                       |
-| CpuThrottledTime | 컨테이너 CPU Throttled 시간                       |
-| MemLimit         | 컨테이너 메모리 Limit 크기                        |
-| MemRequest       | 컨테이너 메모리 Request 크기                      |
-| MemWs            | 컨테이너 메모리 working set                       |
-| IoReadBytes      | 컨테이너 전체 블럭 디바이스의 초당 읽은 바이트 합 |
-| IoReadIops       | 컨테이너 전체 블럭 디바이스의 초당 읽은 건수 합   |
-| IoWriteBytes     | 컨테이너 전체 블럭 디바이스의 초당 쓴 바이트 합   |
-| IoWriteIops      | 컨테이너 전체 블럭 디바이스의 초당 쓴 건수 합     |
-| NetRxBytes       | 컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합 |
-| NetRxDropped     | 컨테이너 네트워크 수신 dropped 건수               |
-| NetRxError       | 컨테이너 네트워크 수신 에러 건수                  |
-| NetRxIops        | 컨테이너 네트워크 수신 건수                       |
-| NetTxBytes        | 컨테이너 네트워크 송신 데이터 크기                |
-| NetTxDropped     | 컨테이너 네트워크 송신 dropped 건수               |
-| NetTxError       | 컨테이너 네트워크 송신 에러 건수                  |
-| NetTxIops        | 컨테이너 네트워크 송신 건수                       |*/
-/*ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
-
-다음 기능을 추가로 제공합니다.
-
-* ![비교하기 아이콘](/img/ico-compare.svg) ***비교하기***: 복수의 노드를 선택해 차트 기반으로 사용량을 비교할 수 있습니다.
-
-* ![CSV 다운로드 아이콘](/img/ico-csv.svg) ***CSV 다운로드***: 화면에 표시된 목록 데이터를 CSV 파일로 다운로드할 수 있습니다.
-
-서버 목록 페이지의 데이터는 60초 마다 자동 갱신됩니다. 사용자는 ![일시정지 아이콘](/img/ico-pause.svg) 버튼을 클릭해 데이터의 자동 갱신을 중지하거나 ![재생 아이콘](/img/ico-play-time.svg) 버튼을 클릭해 자동 갱신을 재시작할 수 있습니다.*/
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
 
 
 
 
 
 const toc = [{
-  "value": "기본 화면 안내",
-  "id": "기본-화면-안내",
-  "level": 2
-}, {
-  "value": "메트릭 정보",
-  "id": "메트릭-정보",
-  "level": 2
-}, ..._common_items_k8s_list_metric_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
-  "value": "필터",
-  "id": "필터",
-  "level": 2
-}, ..._common_items_k8s_list_filter_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
-  "value": "컬럼 선택",
-  "id": "컬럼-선택",
-  "level": 2
-}, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
-  "value": "비교하기",
-  "id": "비교하기",
-  "level": 2
-}, {
-  "value": "상세 보기",
-  "id": "node-list-details",
-  "level": 2
+  "value": "프로세스 상세",
+  "id": "k8s-node-process-details",
+  "level": 4
 }];
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
-    blockquote: "blockquote",
     em: "em",
-    h2: "h2",
     h3: "h3",
+    h4: "h4",
     img: "img",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
@@ -604,131 +464,14 @@ function _createMdxContent(props) {
     section: "section",
     strong: "strong",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang} = _components;
+  }, {Cmdname, ImgLang, InDoc} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
+  if (!InDoc) _missingMdxReference("InDoc", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "cluster",
-        className: "uitext"
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "node_list",
-        className: "uitext"
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-      type: "note",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "특정 컬럼의 데이터가 표시되지 않는 것은 쿠버네티스 노드 에이전트가 구 버전이기 때문일 수 있습니다. 이런 경우 충분한 데이터가 수집될 수 있도록 쿠버네티스 노드 에이전트 버전을 1.3.7 이상으로 업데이트하세요."
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "현재 프로젝트의 노드의 정보를 목록 형태로 확인할 수 있습니다."
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "10초 주기로 실시간 데이터를 업데이트합니다."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["노드 상태 요약, 비교, 필터 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "CSV"
-          }), " 파일 다운로드 기능을 제공합니다."]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["CSV 파일명, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "kubernetes_node_list_{pcode}_{timestamp}.csv"
-            })]
-          }), "\n"]
-        }), "\n"]
-      }), "\n"]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "기본-화면-안내",
-        children: "기본 화면 안내"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-resource-node-list-m.png",
-        desc: "노드 목록 기본 화면"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "node_list",
-          className: "uitext"
-        }), " 상단에서 원하는 옵션을 선택하여 데이터를 조회할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "전체 노드 개수 및 상태별 노드 개수를 확인할 수 있습니다."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["원하는 컬럼 선택 시 해당 컬럼 기준으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "node_list",
-              className: "uitext"
-            }), "을 정렬해 조회할 수 있습니다."]
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "메트릭-정보",
-        children: "메트릭 정보"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_metric_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "필터",
-        children: "필터"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_filter_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "컬럼-선택",
-        children: "컬럼 선택"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "비교하기",
-        children: "비교하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "비교"
-          })
-        }), " 옵션을 통해 여러 노드의 주요 지표에 대한 비교 차트를 확인할 수 있습니다. 목록에서 조회를 원하는 노드의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "비교"
-          })
-        }), " 컬럼의 체크 박스를 선택하면 다음과 같이 오른쪽에 해당 노드의 상세 정보를 비교하는 창이 나타납니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-resource-node-list-compare.png",
-        desc: "비교하기"
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "node-list-details",
-        children: "상세 보기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["노드 상세는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "상세"
-          })
-        }), " 옵션을 통해 선택한 노드에 대한 상세 정보를 확인할 수 있습니다. 목록에서 조회를 원하는 노드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "상세"
-          })
-        }), " 컬럼의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "상세 아이콘",
-          src: (__webpack_require__(65557)/* ["default"] */ .A) + "",
-          width: "24",
-          height: "24"
-        }), " 아이콘을 선택하면 오른쪽에 해당 노드의 상세 정보 창이 나타납니다."]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "",
@@ -883,51 +626,114 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+        pages: "resource-node-list",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+          type: "note",
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "노드 구성"
+              })
+            }), " 탭은 클러스터 프로젝트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              class: "my",
+              children: "CP"
+            }), ")일 경우 조회할 수 있습니다."]
+          })]
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+        pages: "resource-node-list",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "-1",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "resource",
+            className: "uitext"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "resource",
+            className: "uitext"
+          }), " 탭에서 선택한 노드에 스케줄링된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "노드 구성"
+              children: "Pod"
             })
-          }), " 탭은 클러스터 프로젝트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-            class: "my",
-            children: "CP"
-          }), ")일 경우 조회할 수 있습니다."]
+          }), " 및 해당 Pod에서 실행 중인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "컨테이너"
+            })
+          }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "애플리케이션"
+            })
+          }), " 목록을 확인할 수 있습니다. 해당 정보는 선택한 시간 구간의 마지막 시점을 기준으로 1분간의 리소스 데이터를 반영하여 표시합니다. 이를 통해 해당 시점의 노드 상태와 각 Pod, 컨테이너, 애플리케이션의 동작 상태를 보다 명확하게 파악할 수 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "k8s-node-timeline-resource.png"
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-1",
+        id: "-2",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "resource",
+          sid: "process",
           className: "uitext"
         })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "resource",
+          sid: "process",
           className: "uitext"
-        }), " 탭에서 선택한 노드에 스케줄링된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "Pod"
-          })
-        }), " 및 해당 Pod에서 실행 중인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "컨테이너"
-          })
-        }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "애플리케이션"
-          })
-        }), " 목록을 확인할 수 있습니다. 해당 정보는 선택한 시간 구간의 마지막 시점을 기준으로 1분간의 리소스 데이터를 반영하여 표시합니다. 이를 통해 해당 시점의 노드 상태와 각 Pod, 컨테이너, 애플리케이션의 동작 상태를 보다 명확하게 파악할 수 있습니다."]
+        }), " 탭에서 선택한 노드 내부에 있는 주요 쿠버네티스 관리 프로세스 정보를 확인할 수 있습니다. 프로세스 문제로 발생하는 클러스터 장애를 예방하고 다운타임을 최소화할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-node-timeline-resource.png"
+        img: "k8s-node-process.png"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "k8s-node-process-details",
+        children: "프로세스 상세"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["프로세스 목록 왼쪽 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL08422",
+              className: "uitext"
+            }), " 컬럼에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "상세 보기 아이콘",
+              src: (__webpack_require__(65557)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " 아이콘 선택 시 해당 프로세스에 대한 상세 정보를 확인할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "AVG"
+              })
+            }), " 또는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "MAX"
+              })
+            }), " 버튼을 클릭하여 3일 이상의 장기 데이터 조회 시 불러올 통계 데이터의 합산 방식을 선택할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "프로세스 주요 정보 값 클릭 시 해당 값이 복사됩니다."
+          }), "\n"]
+        }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "process",
+            className: "uitext"
+          }), " 탭은 쿠버네티스 에이전트 버전 1.7.14 이상부터 지원합니다."]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-2",
+        id: "-3",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "metrics",
           className: "uitext"
@@ -997,27 +803,36 @@ function _createMdxContent(props) {
             }), ": 특정 네트워크 인터페이스의 Inbound(수신) 및 Outbound(송신) 트래픽 사용량"]
           }), "\n"]
         }), "\n"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "K8s CPU Request / Allocatable CPU (%)"
+            })
+          }), " 위젯은 쿠버네티스 에이전트 버전 1.7.10 이상부터 지원합니다."]
+        })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
+        pages: "resource-node-list",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "-4",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "trace",
+            className: "uitext"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "trace",
+            className: "uitext"
+          }), " 탭에서 선택한 노드에서 실행 중인 애플리케이션 트레이스 정보를 확인할 수 있습니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+          img: "k8s-resource-node-list-trace.png"
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-3",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "trace",
-          className: "uitext"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "trace",
-          className: "uitext"
-        }), " 탭에서 선택한 노드에서 실행 중인 애플리케이션 트레이스 정보를 확인할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "k8s-resource-node-list-trace.png"
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "-4",
+        id: "-5",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "event",
           className: "uitext"
@@ -1051,7 +866,411 @@ function _createMdxContent(props) {
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 78110:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_k8s_list_metric_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35895);
+/* harmony import */ var _common_items_k8s_list_filter_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(93421);
+/* harmony import */ var _common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(85506);
+/* harmony import */ var _common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16165);
+
+
+const frontMatter = {
+	id: 'resource-node-list',
+	title: '노드 목록',
+	description: '현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.',
+	keywords: [
+		'쿠버네티스',
+		'쿠버네티스 모니터링',
+		'클러스터',
+		'노드 목록'
+	],
+	toc_max_heading_level: 2,
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "kubernetes/resource-node-list",
+  "title": "노드 목록",
+  "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
+  "source": "@site/docs/kubernetes/resource-node-list.mdx",
+  "sourceDirName": "kubernetes",
+  "slug": "/kubernetes/resource-node-list",
+  "permalink": "/whatap-docs/kubernetes/resource-node-list",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/kubernetes/resource-node-list.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "resource-node-list",
+    "title": "노드 목록",
+    "description": "현재 프로젝트의 노드 현황 정보 및 상세 정보를 확인할 수 있습니다.",
+    "keywords": [
+      "쿠버네티스",
+      "쿠버네티스 모니터링",
+      "클러스터",
+      "노드 목록"
+    ],
+    "toc_max_heading_level": 2,
+    "isTranslationMissing": false
+  },
+  "sidebar": "kubeSidebar",
+  "previous": {
+    "title": "Deployment 목록",
+    "permalink": "/whatap-docs/kubernetes/deployment-list"
+  },
+  "next": {
+    "title": "노드 상세",
+    "permalink": "/whatap-docs/kubernetes/node-details"
+  }
+};
+const assets = {
+
+};
+
+/*### <Cmdname sid="TTL08441" className="uitext" type="node" />
+
+<Cmdname sid="TTL08441" className="uitext" type="node" /> 탭에서 선택한 노드 구성 및 전반적인 리소스 사용량 정보를 요약해서 제공합니다. 해당 노드의 하드웨어 및 소프트웨어 구성 요소를 종합적으로 확인할 수 있습니다. 사용자는 노드의 리소스 사용 현황 및 각 구성 요소의 상태를 파악하고 성능 및 운영 안정성을 모니터링할 수 있습니다.
+
+<ImgLang img='k8s-node-timeline-config.png' />
+
+* **노드 시스템 사양**
+
+*	***Architecture***: 노드가 사용하고 있는 하드웨어 아키텍처
+
+*	***Image***: 노드가 실행 중인 운영 체제 이미지 정보
+
+*	***CapacityMemory***: 노드의 총 메모리 용량
+
+*	***CapacityCpu***: 노드의 총 CPU 용량
+
+* **소프트웨어 구성**
+
+* ***Container Runtime***: 노드에서 사용되는 컨테이너 런타임의 버전 정보
+
+* ***kubelet***: 노드에서 실행 중인 쿠버네티스 kubelet의 버전 정보
+
+* ***kube-proxy***: 네트워크 관리 역할을 하는 kube-proxy의 버전 정보
+
+* **리소스 사용 현황**
+
+*	***CPU***: 노드의 CPU 사용량
+
+*	***메모리***: 노드의 메모리 사용량
+
+*	***디스크***: 노드에서 사용 중인 디스크 용량과 사용 비율
+
+*	***네트워크***: 네트워크 전송량
+
+:::note[]
+
+* CPU, 메모리, 디스크, 네트워크 클릭 시 조회 기간 동안 사용량 추이를 확인할 수 있는 <Cmdname sid="metrics" className="uitext" /> 탭으로 이동합니다.
+
+* ***AVG***, ***MAX*** 버튼을 클릭하여 조회 기간동안 평균 사용량과 최대 사용량을 확인할 수 있습니다.
+
+:::
+
+:::note[]
+
+***노드 구성*** 탭은 클러스터 프로젝트(<code class='my'>CP</code>)일 경우 조회할 수 있습니다.
+
+:::
+
+
+### <Cmdname sid="resource" className="uitext" />
+
+<Cmdname sid="resource" className="uitext" /> 탭에서 선택한 노드에 스케줄링된 ***Pod*** 및 해당 Pod에서 실행 중인 ***컨테이너***와 ***애플리케이션*** 목록을 확인할 수 있습니다. 해당 정보는 선택한 시간 구간의 마지막 시점을 기준으로 1분간의 리소스 데이터를 반영하여 표시합니다. 이를 통해 해당 시점의 노드 상태와 각 Pod, 컨테이너, 애플리케이션의 동작 상태를 보다 명확하게 파악할 수 있습니다.
+
+<ImgLang img='k8s-node-timeline-resource.png' />
+
+### <Cmdname sid="metrics" className="uitext" />
+
+<Cmdname sid="metrics" className="uitext" /> 탭에서 선택한 노드의 리소스 사용량 추이를 확인할 수 있습니다. 조회 기간 동안의 평균(***AVG***), 최대값(***MAX***)을 기준으로 ***CPU***, ***메모리***, ***네트워크***, ***디스크*** 사용량의 변화를 조회할 수 있습니다.
+
+<ImgLang img='k8s-node-timeline-metrics.png' />
+
+* ***AVG***: 조회 기간 동안 평균 사용량
+
+* ***MAX***: 조회 기간 동안 최대 사용량
+
+* ***Total***: 여러 네트워크 인터페이스의 전체 트래픽 사용량 합산
+
+* ***In/Out***: 특정 네트워크 인터페이스의 Inbound(수신) 및 Outbound(송신) 트래픽 사용량
+
+### <Cmdname sid="trace" className="uitext" />
+
+<Cmdname sid="trace" className="uitext" /> 탭에서 선택한 노드에서 실행 중인 애플리케이션 트레이스 정보를 확인할 수 있습니다.
+
+<ImgLang img='k8s-resource-node-list-trace.png' />
+
+### <Cmdname sid="event" className="uitext" />
+
+<Cmdname sid="event" className="uitext" /> 탭에서 선택한 노드에서 발생한 ***K8s Node 이벤트***와 ***WhaTap Node 이벤트***를 확인할 수 있습니다. ***K8s Node 이벤트***는 노드의 상태 변화를 포함한 클러스터 내의 중요한 작업 기록을 포함하며, ***WhaTap Node 이벤트***는 사용자가 설정한 경고 알림 기준에 따른 이벤트 발생 정보를 제공합니다.
+
+<ImgLang img='k8s-node-timeline-event.png' />*/
+/*## 노드 상세 {#nodedetails}
+
+***노드 상세*** 화면은 상단의 4개 차트와 노드 내 컨테이너 상세 정보로 구성되어 있습니다. 노드 셀렉터를 통해 조회를 원하는 노드를 선택할 수 있습니다.
+
+<ImgLang img='k8s-resource-node-detail.png' desc='노드 상세 화면' />
+
+* 상단 차트
+
+다음과 같은 4개의 차트 정보를 확인할 수 있습니다.
+
+* ***CPU Usage***: 노드의 CPU 사용량을 확인할 수 있습니다.
+
+* ***Memory Usage***: 노드의 메모리 사용량을 확인할 수 있습니다.
+
+* ***Network***: 노드의 네트워크 인터페이스의 입출력 트래픽과 오류 패킷을 확인할 수 있습니다.
+
+* ***Disk Usage***: 노드의 Disk 사용량을 확인할 수 있습니다.
+
+* 컨테이너 상세 정보
+
+* 노드 내 컨테이너 상세 정보 상단에서 `cpu_quota`, `cpu_request`, `cpu_total_milli`, `mem_limit`, `mem_request`, `mem_working_set` 지표의 합계를 확인할 수 있습니다.
+
+* 컨테이너 상세 정보는 다음 내용을 제공합니다.
+
+| 항목             | 설명                                              |
+| ---------------- | ------------------------------------------------- |
+| 상태             | 컨테이너 상태                                     |
+| 컨테이너         | Container ID                                      |
+| 이미지           | 컨테이너 이미지 정보                              |
+| 커맨드           | 컨테이너 실행 명령                                |
+| 애플리케이션     | 컨테이너에 설치된 와탭 APM 에이전트의 이름        |
+| Pod              | Pod 이름                                          |
+| CpuByLimit       | CPU Limit 기준 CPU 전체 사용률                    |
+| MemoryWsByLimit  | 컨테이너 메모리 Limit 기준 working set 사용량     |
+| CpuThrottledCnt  | 컨테이너 CPU Throttled 건수                       |
+| CpuThrottledTime | 컨테이너 CPU Throttled 시간                       |
+| MemLimit         | 컨테이너 메모리 Limit 크기                        |
+| MemRequest       | 컨테이너 메모리 Request 크기                      |
+| MemWs            | 컨테이너 메모리 working set                       |
+| IoReadBytes      | 컨테이너 전체 블럭 디바이스의 초당 읽은 바이트 합 |
+| IoReadIops       | 컨테이너 전체 블럭 디바이스의 초당 읽은 건수 합   |
+| IoWriteBytes     | 컨테이너 전체 블럭 디바이스의 초당 쓴 바이트 합   |
+| IoWriteIops      | 컨테이너 전체 블럭 디바이스의 초당 쓴 건수 합     |
+| NetRxBytes       | 컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합 |
+| NetRxDropped     | 컨테이너 네트워크 수신 dropped 건수               |
+| NetRxError       | 컨테이너 네트워크 수신 에러 건수                  |
+| NetRxIops        | 컨테이너 네트워크 수신 건수                       |
+| NetTxBytes        | 컨테이너 네트워크 송신 데이터 크기                |
+| NetTxDropped     | 컨테이너 네트워크 송신 dropped 건수               |
+| NetTxError       | 컨테이너 네트워크 송신 에러 건수                  |
+| NetTxIops        | 컨테이너 네트워크 송신 건수                       |*/
+/*ImgLang img='whatap_kubernetes_resource_node_list.png' desc='노드 목록' />
+
+다음 기능을 추가로 제공합니다.
+
+* ![비교하기 아이콘](/img/ico-compare.svg) ***비교하기***: 복수의 노드를 선택해 차트 기반으로 사용량을 비교할 수 있습니다.
+
+* ![CSV 다운로드 아이콘](/img/ico-csv.svg) ***CSV 다운로드***: 화면에 표시된 목록 데이터를 CSV 파일로 다운로드할 수 있습니다.
+
+서버 목록 페이지의 데이터는 60초 마다 자동 갱신됩니다. 사용자는 ![일시정지 아이콘](/img/ico-pause.svg) 버튼을 클릭해 데이터의 자동 갱신을 중지하거나 ![재생 아이콘](/img/ico-play-time.svg) 버튼을 클릭해 자동 갱신을 재시작할 수 있습니다.*/
+
+
+
+
+
+
+const toc = [{
+  "value": "기본 화면 안내",
+  "id": "기본-화면-안내",
+  "level": 2
+}, {
+  "value": "메트릭 정보",
+  "id": "메트릭-정보",
+  "level": 2
+}, ..._common_items_k8s_list_metric_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
+  "value": "필터",
+  "id": "필터",
+  "level": 2
+}, ..._common_items_k8s_list_filter_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, {
+  "value": "컬럼 선택",
+  "id": "컬럼-선택",
+  "level": 2
+}, ..._common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, {
+  "value": "비교하기",
+  "id": "비교하기",
+  "level": 2
+}, {
+  "value": "상세 보기",
+  "id": "node-list-details",
+  "level": 2
+}, ..._common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    blockquote: "blockquote",
+    em: "em",
+    h2: "h2",
+    img: "img",
+    li: "li",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!ImgLang) _missingMdxReference("ImgLang", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "cluster",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "node_list",
+        className: "uitext"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+      type: "note",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "특정 컬럼의 데이터가 표시되지 않는 것은 쿠버네티스 노드 에이전트가 구 버전이기 때문일 수 있습니다. 이런 경우 충분한 데이터가 수집될 수 있도록 쿠버네티스 노드 에이전트 버전을 1.3.7 이상으로 업데이트하세요."
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: "현재 프로젝트의 노드의 정보를 목록 형태로 확인할 수 있습니다."
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "10초 주기로 실시간 데이터를 업데이트합니다."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["노드 상태 요약, 비교, 필터 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "CSV"
+          }), " 파일 다운로드 기능을 제공합니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["CSV 파일명, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "kubernetes_node_list_{pcode}_{timestamp}.csv"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "기본-화면-안내",
+        children: "기본 화면 안내"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-resource-node-list-m.png",
+        desc: "노드 목록 기본 화면"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "node_list",
+          className: "uitext"
+        }), " 상단에서 원하는 옵션을 선택하여 데이터를 조회할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "전체 노드 개수 및 상태별 노드 개수를 확인할 수 있습니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["원하는 컬럼 선택 시 해당 컬럼 기준으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "node_list",
+              className: "uitext"
+            }), "을 정렬해 조회할 수 있습니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "메트릭-정보",
+        children: "메트릭 정보"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_metric_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "필터",
+        children: "필터"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_filter_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "컬럼-선택",
+        children: "컬럼 선택"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_list_cl_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {})]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "비교하기",
+        children: "비교하기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "비교"
+          })
+        }), " 옵션을 통해 여러 노드의 주요 지표에 대한 비교 차트를 확인할 수 있습니다. 목록에서 조회를 원하는 노드의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "비교"
+          })
+        }), " 컬럼의 체크 박스를 선택하면 다음과 같이 오른쪽에 해당 노드의 상세 정보를 비교하는 창이 나타납니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-resource-node-list-compare.png",
+        desc: "비교하기"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "node-list-details",
+        children: "상세 보기"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["노드 상세는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "상세"
+          })
+        }), " 옵션을 통해 선택한 노드에 대한 상세 정보를 확인할 수 있습니다. 목록에서 조회를 원하는 노드 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "상세"
+          })
+        }), " 컬럼의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "상세 아이콘",
+          src: (__webpack_require__(65557)/* ["default"] */ .A) + "",
+          width: "24",
+          height: "24"
+        }), " 아이콘을 선택하면 오른쪽에 해당 노드의 상세 정보 창이 나타납니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
