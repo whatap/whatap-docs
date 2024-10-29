@@ -80,8 +80,14 @@ function _createMdxContent(props) {
         img: "k8s-node-disk-cl.png",
         desc: "컬럼 선택"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "ingress-list",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-ingress-list-cl.png",
+        desc: "컬럼 선택"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "deployment-list,resource-container-list,service-list,node-disk-list",
+      pages: "deployment-list,resource-container-list,service-list,node-disk-list,ingress-list",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
         desc: "컬럼 선택"

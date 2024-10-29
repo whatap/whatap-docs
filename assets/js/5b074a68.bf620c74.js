@@ -57,8 +57,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "kube-apiserver 메트릭스 조회",
-    "permalink": "/whatap-docs/kubernetes/kube-apiserver-metrics-search"
+    "title": "Ingress 목록",
+    "permalink": "/whatap-docs/kubernetes/ingress-list"
   },
   "next": {
     "title": "Pod 시작 분석",

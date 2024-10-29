@@ -618,8 +618,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/kube-apiserver-dashboard"
   },
   "next": {
-    "title": "네임스페이스 현황",
-    "permalink": "/whatap-docs/kubernetes/resource-namespace"
+    "title": "Service 목록",
+    "permalink": "/whatap-docs/kubernetes/service-list"
   }
 };
 const assets = {

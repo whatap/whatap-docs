@@ -80,8 +80,14 @@ function _createMdxContent(props) {
         img: "k8s-node-disk-cl.png",
         desc: "컬럼 선택"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "ingress-list",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-ingress-list-cl.png",
+        desc: "컬럼 선택"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "deployment-list,resource-container-list,service-list,node-disk-list",
+      pages: "deployment-list,resource-container-list,service-list,node-disk-list,ingress-list",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
         desc: "컬럼 선택"
@@ -320,7 +326,7 @@ const frontMatter = {
 	keywords: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
-		'워크로드',
+		'클러스터',
 		'Service 목록'
 	],
 	toc_max_heading_level: 2,
@@ -347,7 +353,7 @@ const metadata = {
     "keywords": [
       "쿠버네티스",
       "쿠버네티스 모니터링",
-      "워크로드",
+      "클러스터",
       "Service 목록"
     ],
     "toc_max_heading_level": 2,
@@ -355,12 +361,12 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "Deployment 목록",
-    "permalink": "/whatap-docs/kubernetes/deployment-list"
+    "title": "kube-apiserver 메트릭스 조회",
+    "permalink": "/whatap-docs/kubernetes/kube-apiserver-metrics-search"
   },
   "next": {
-    "title": "노드 목록",
-    "permalink": "/whatap-docs/kubernetes/resource-node-list"
+    "title": "Ingress 목록",
+    "permalink": "/whatap-docs/kubernetes/ingress-list"
   }
 };
 const assets = {
@@ -407,7 +413,7 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
       children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_workload",
+        sid: "side_cluster",
         className: "uitext"
       }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "side_kubeServiceList",

@@ -80,8 +80,14 @@ function _createMdxContent(props) {
         img: "k8s-node-disk-cl.png",
         desc: "컬럼 선택"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "ingress-list",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-ingress-list-cl.png",
+        desc: "컬럼 선택"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "deployment-list,resource-container-list,service-list,node-disk-list",
+      pages: "deployment-list,resource-container-list,service-list,node-disk-list,ingress-list",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
         desc: "컬럼 선택"
@@ -316,7 +322,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'node-disk-list',
 	title: '노드 디스크 목록',
-	description: 'Service 목록 메뉴를 안내합니다.',
+	description: '노드 디스크 목록 메뉴를 안내합니다.',
 	keywords: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
@@ -330,7 +336,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "kubernetes/node-disk-list",
   "title": "노드 디스크 목록",
-  "description": "Service 목록 메뉴를 안내합니다.",
+  "description": "노드 디스크 목록 메뉴를 안내합니다.",
   "source": "@site/docs/kubernetes/node-disk-list.mdx",
   "sourceDirName": "kubernetes",
   "slug": "/kubernetes/node-disk-list",
@@ -343,7 +349,7 @@ const metadata = {
   "frontMatter": {
     "id": "node-disk-list",
     "title": "노드 디스크 목록",
-    "description": "Service 목록 메뉴를 안내합니다.",
+    "description": "노드 디스크 목록 메뉴를 안내합니다.",
     "keywords": [
       "쿠버네티스",
       "쿠버네티스 모니터링",

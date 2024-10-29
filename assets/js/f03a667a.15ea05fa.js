@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[37536],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[49461],{
 
 /***/ 68159:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -149,8 +149,14 @@ function _createMdxContent(props) {
         img: "k8s-node-disk-cl.png",
         desc: "컬럼 선택"
       })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
+      pages: "ingress-list",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "k8s-ingress-list-cl.png",
+        desc: "컬럼 선택"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Xclude, {
-      pages: "deployment-list,resource-container-list,service-list,node-disk-list",
+      pages: "deployment-list,resource-container-list,service-list,node-disk-list,ingress-list",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "k8s-resource-node-list-cl.png",
         desc: "컬럼 선택"
@@ -835,7 +841,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 37899:
+/***/ 41449:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -857,61 +863,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'resource-application-list',
-	title: '컨테이너 애플리케이션 목록',
-	description: '컨테이너화 된 애플리케이션의 목록을 확인합니다.',
+	id: 'resource-pod-list',
+	title: 'Pod 목록',
+	description: 'Pod 목록을 확인합니다.',
 	keywords: [
 		'쿠버네티스',
 		'쿠버네티스 모니터링',
 		'워크로드',
-		'애플리케이션',
-		'애플리케이션 목록'
+		'Pod 목록'
 	],
 	toc_max_heading_level: 2,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "kubernetes/resource-application-list",
-  "title": "컨테이너 애플리케이션 목록",
-  "description": "컨테이너화 된 애플리케이션의 목록을 확인합니다.",
-  "source": "@site/docs/kubernetes/resource-application-list.mdx",
+  "id": "kubernetes/resource-pod-list",
+  "title": "Pod 목록",
+  "description": "Pod 목록을 확인합니다.",
+  "source": "@site/docs/kubernetes/resource-pod-list.mdx",
   "sourceDirName": "kubernetes",
-  "slug": "/kubernetes/resource-application-list",
-  "permalink": "/whatap-docs/kubernetes/resource-application-list",
+  "slug": "/kubernetes/resource-pod-list",
+  "permalink": "/whatap-docs/kubernetes/resource-pod-list",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/kubernetes/resource-application-list.mdx",
+  "editUrl": "undefined/docs/kubernetes/resource-pod-list.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "resource-application-list",
-    "title": "컨테이너 애플리케이션 목록",
-    "description": "컨테이너화 된 애플리케이션의 목록을 확인합니다.",
+    "id": "resource-pod-list",
+    "title": "Pod 목록",
+    "description": "Pod 목록을 확인합니다.",
     "keywords": [
       "쿠버네티스",
       "쿠버네티스 모니터링",
       "워크로드",
-      "애플리케이션",
-      "애플리케이션 목록"
+      "Pod 목록"
     ],
     "toc_max_heading_level": 2,
     "isTranslationMissing": false
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "Pending Pod 현황",
-    "permalink": "/whatap-docs/kubernetes/pending-pod-status"
+    "title": "Out Of Memory Killed 컨테이너",
+    "permalink": "/whatap-docs/kubernetes/analysis-oom-container"
   },
   "next": {
-    "title": "Deployment 목록",
-    "permalink": "/whatap-docs/kubernetes/deployment-list"
+    "title": "Pending Pod 현황",
+    "permalink": "/whatap-docs/kubernetes/pending-pod-status"
   }
 };
 const assets = {
 
 };
 
+/*
+>
+다국어 이미지 필요
+*/
 
 
 
@@ -947,32 +955,34 @@ function _createMdxContent(props) {
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {ImgLang} = _components;
+  }, {Cmdname, ImgLang} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "워크로드"
-        })
-      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "컨테이너 애플리케이션 목록"
-        })
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["홈 화면 > 프로젝트 선택 > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_workload",
+        className: "uitext"
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "podList",
+        className: "uitext"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "컨테이너화된 애플리케이션의 목록을 조회합니다. 원하는 컬럼 선택 시 해당 컬럼 기준으로 애플리케이션 목록을 정렬해 조회할 수 있습니다."
+      children: "Pod 목록을 조회합니다. 원하는 컬럼 선택 시 해당 컬럼 기준으로 Pod 목록을 정렬해 조회할 수 있습니다."
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-app-list.png",
-      desc: "애플리케이션 목록"
+      img: "k8s-pod-list.png",
+      desc: "Pod 목록"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
           children: "10초 주기로 실시간 데이터를 업데이트합니다."
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "좌측 상단에서 전체 Pod 개수와 상태별 Pod 개수를 확인할 수 있습니다."
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -982,7 +992,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["CSV 파일명, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.em, {
-              children: ["kubernetes_application_list_", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: ["kubernetes_pod_list_", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "{pcode}"
               }), "_", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "{timestamp}"
