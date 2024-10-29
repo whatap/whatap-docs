@@ -1183,6 +1183,28 @@ main {
         max-width: 50%;
       }
     }
+    .metricslist {
+      h2 {
+        border-top: 1px dashed;
+        padding-top: 20px;
+        margin-top: 45px;
+      }
+      h3 {
+        font-size: var(--ifm-h4-font-size);;
+      }
+    }
+
+    .metricslist-k8s {
+      h2 {
+        font-size: var(--ifm-h3-font-size);;
+        border-top: 1px dashed;
+        padding-top: 30px;
+        margin-top: 45px;
+      }
+      h3 {
+        font-size: var(--ifm-h4-font-size);;
+      }
+    }
     .steps {
       display: block;
       h2 {
