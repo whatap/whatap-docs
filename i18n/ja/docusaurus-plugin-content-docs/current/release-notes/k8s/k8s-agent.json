@@ -159,37 +159,6 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_7_13",
-    "ver": "v1.7.13",
-    "date": "2024-10-21",
-    "Lists": [
-      {
-        "ver": "v1.7.13",
-        "hash": "v1713",
-        "product": "Kubernetes Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクス照会</span> <code>kube_ingress</code> 카테고리 추가</p>",
-        "details": "<p>Ingress 리소스에 대한 메타 데이터 및 관련 정보를 수집합니다. 해당 카테고리는 향후 Ingress 리스트 및 라우팅 정책과 관련된 대시보드 구현 시 활용될 예정입니다.</p>"
-      },
-      {
-        "ver": "v1.7.13",
-        "hash": "v1713",
-        "product": "Kubernetes Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクス照会</span> <code>kube_oom_event</code> 카테고리에 컨테이너 식별 관련 메트릭스 추가</p>",
-        "details": "<p><em><strong>태그</strong></em>로 <em><strong>namespace</strong></em>, <em><strong>podUid</strong></em>, <em><strong>containerName</strong></em> 값을 추가하여 OOMKilled 이벤트 발생 시 컨테이너 식별이 가능합니다.</p>"
-      },
-      {
-        "ver": "v1.7.13",
-        "hash": "v1713",
-        "product": "Kubernetes Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクス照会</span> <code>container</code> 카테고리에 포트 정보 관련 메트릭스 추가</p>",
-        "details": "<p>컨테이너가 사용하는 <strong>containerPort</strong>와 관련된 메트릭스를 추가하였습니다. 쿠버네티스 서비스는 파드 내 컨테이너 포트를 기반으로 라우팅을 수행하므로, 해당 메트릭스를 통해 서비스, 파드, 컨테이너 간의 관계를 표현할 수 있습니다.</p>"
-      }
-    ]
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_7_7",
     "ver": "v1.7.7",
     "date": "2024-07-11",
