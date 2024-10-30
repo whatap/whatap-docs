@@ -1,279 +1,28 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[8035],{
 
-/***/ 37655:
+/***/ 15510:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  assets: () => (/* binding */ assets),
-  contentTitle: () => (/* binding */ metric_warning_notice_contentTitle),
-  "default": () => (/* binding */ metric_warning_notice_MDXContent),
-  frontMatter: () => (/* binding */ metric_warning_notice_frontMatter),
-  metadata: () => (/* binding */ metadata),
-  toc: () => (/* binding */ metric_warning_notice_toc)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-warning-notice.mdx
-var _metrics_warning_notice = __webpack_require__(64844);
-// EXTERNAL MODULE: ./docs/common-items/_composite-metrics-warning-notice.mdx
-var _composite_metrics_warning_notice = __webpack_require__(57666);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-event-modify-delete.mdx
-var _metrics_event_modify_delete = __webpack_require__(34168);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-event-condition-select-target-guide.mdx
-var _metrics_event_condition_select_target_guide = __webpack_require__(26859);
-;// CONCATENATED MODULE: ./docs/common-items/_metrics-warning-notice-browser.mdx
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64844);
+/* harmony import */ var _common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(57666);
+/* harmony import */ var _common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(34168);
+/* harmony import */ var _common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26859);
+/* harmony import */ var _common_items_metrics_warning_notice_browser_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(75735);
 
 
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "템플릿",
-  "id": "template",
-  "level": 2
-}, {
-  "value": "메트릭스 이벤트 템플릿",
-  "id": "메트릭스-이벤트-템플릿",
-  "level": 3
-}, {
-  "value": "복합 메트릭스 이벤트 템플릿",
-  "id": "composite-metrics-template",
-  "level": 3
-}];
-function _createMdxContent(props) {
-  const _components = {
-    code: "code",
-    em: "em",
-    h2: "h2",
-    h3: "h3",
-    li: "li",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ul: "ul",
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
-        id: "template",
-        children: "템플릿"
-      }), (0,jsx_runtime.jsx)(_components.p, {
-        children: "다음과 같이 경고 알림 템플릿을 제공합니다."
-      })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "메트릭스-이벤트-템플릿",
-        children: "메트릭스 이벤트 템플릿"
-      }), (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "경고 알림"
-          })
-        }), " > ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "이벤트 설정"
-          })
-        }), " > ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "메트릭스"
-          })
-        }), " 섹션에서 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "+ 이벤트 추가"
-          })
-        }), " 버튼을 선택하세요. ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "템플릿"
-          })
-        }), "에서 원하는 항목을 선택하세요."]
-      }), (0,jsx_runtime.jsxs)(_components.ul, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "페이지 로드 시간 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["페이지 그룹(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${page_group}"
-            }), ")의 페이지 로드 시간이 10초 이상 소요되면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "브라우저 에러 수 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: "10건 이상의 브라우저 에러가 발생하면 경고 알림을 보냅니다."
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "AJAX 응답 시간 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["AJAX Path(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${request_path}"
-            }), ")의 AJAX 응답 시간이 30초 이상 소요되면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
-        id: "composite-metrics-template",
-        children: "복합 메트릭스 이벤트 템플릿"
-      }), (0,jsx_runtime.jsxs)(_components.p, {
-        children: [(0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "경고 알림"
-          })
-        }), " > ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "이벤트 설정"
-          })
-        }), " > ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "복합 메트릭스"
-          })
-        }), " 섹션에서 ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "+ 이벤트 추가"
-          })
-        }), " 버튼을 선택하세요. ", (0,jsx_runtime.jsx)(_components.em, {
-          children: (0,jsx_runtime.jsx)(_components.strong, {
-            children: "템플릿"
-          })
-        }), "에서 원하는 항목을 선택하세요."]
-      }), (0,jsx_runtime.jsxs)(_components.ul, {
-        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 페이지 로드 시간 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["페이지 그룹(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${page_group}"
-            }), ")의 분당 평균 페이지 로드 시간이 10초 이상 소요되면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 페이지 로드 수 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["페이지 그룹(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${page_group}"
-            }), ")의 분당 페이지 로드 수가 100건 이상 발생하면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 라우터 변경 시간 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["페이지 그룹(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${page_group}"
-            }), ")의 분당 평균 라우터 변경 시간이 10초 이상 소요되면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 AJAX 응답 시간 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["AJAX Path(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${request_path}"
-            }), ")의 분당 평균 AJAX 응답 시간이 30초 이상 소요되면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 AJAX 요청 수 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["호스트(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${request_host}"
-            }), ")의 분당 AJAX 요청 수가 1000건 이상 발생하면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 AJAX 실패 건수 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["AJAX Path(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${request_path}"
-            }), ")의 분당 AJAX 실패 건수가 100건 이상 발생하면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-          children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
-            children: (0,jsx_runtime.jsx)(_components.em, {
-              children: (0,jsx_runtime.jsx)(_components.strong, {
-                children: "분당 브라우저 에러 수 이상"
-              })
-            })
-          }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["페이지 그룹(", (0,jsx_runtime.jsx)(_components.code, {
-              children: "${page_group}"
-            }), ")의 분당 브라우저 에러 수가 10건 이상 발생하면 경고 알림을 보냅니다."]
-          }), "\n"]
-        }), "\n"]
-      })]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
-    ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-;// CONCATENATED MODULE: ./docs/browser/metric-warning-notice.mdx
-
-
-const metric_warning_notice_frontMatter = {
+const frontMatter = {
 	id: 'metric-warning-notice',
 	title: '메트릭스 경고 알림',
 	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
@@ -284,7 +33,7 @@ const metric_warning_notice_frontMatter = {
 	],
 	isTranslationMissing: false
 };
-const metric_warning_notice_contentTitle = undefined;
+const contentTitle = undefined;
 const metadata = {
   "id": "browser/metric-warning-notice",
   "title": "메트릭스 경고 알림",
@@ -330,23 +79,23 @@ const assets = {
 
 
 
-const metric_warning_notice_toc = [..._metrics_warning_notice/* toc */.RM, ..._composite_metrics_warning_notice/* toc */.RM, ..._metrics_event_modify_delete/* toc */.RM, ..._metrics_event_condition_select_target_guide/* toc */.RM, ...toc];
-function metric_warning_notice_createMdxContent(props) {
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_metrics_warning_notice/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_composite_metrics_warning_notice/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_metrics_event_modify_delete/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_metrics_event_condition_select_target_guide/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
+const toc = [..._common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_metrics_warning_notice_browser_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_composite_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_browser_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
   });
 }
-function metric_warning_notice_MDXContent(props = {}) {
+function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(metric_warning_notice_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
-  }) : metric_warning_notice_createMdxContent(props);
+  }) : _createMdxContent(props);
 }
 
 
@@ -1579,6 +1328,259 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 75735:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "템플릿",
+  "id": "template",
+  "level": 2
+}, {
+  "value": "메트릭스 이벤트 템플릿",
+  "id": "메트릭스-이벤트-템플릿",
+  "level": 3
+}, {
+  "value": "복합 메트릭스 이벤트 템플릿",
+  "id": "composite-metrics-template",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    code: "code",
+    em: "em",
+    h2: "h2",
+    h3: "h3",
+    li: "li",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "template",
+        children: "템플릿"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "다음과 같이 경고 알림 템플릿을 제공합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "메트릭스-이벤트-템플릿",
+        children: "메트릭스 이벤트 템플릿"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "경고 알림"
+          })
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "이벤트 설정"
+          })
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "메트릭스"
+          })
+        }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "+ 이벤트 추가"
+          })
+        }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "템플릿"
+          })
+        }), "에서 원하는 항목을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "페이지 로드 시간 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["페이지 그룹(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${page_group}"
+            }), ")의 페이지 로드 시간이 10초 이상 소요되면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "브라우저 에러 수 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: "10건 이상의 브라우저 에러가 발생하면 경고 알림을 보냅니다."
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "AJAX 응답 시간 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["AJAX Path(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${request_path}"
+            }), ")의 AJAX 응답 시간이 30초 이상 소요되면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "composite-metrics-template",
+        children: "복합 메트릭스 이벤트 템플릿"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "경고 알림"
+          })
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "이벤트 설정"
+          })
+        }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "복합 메트릭스"
+          })
+        }), " 섹션에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "+ 이벤트 추가"
+          })
+        }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "템플릿"
+          })
+        }), "에서 원하는 항목을 선택하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 페이지 로드 시간 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["페이지 그룹(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${page_group}"
+            }), ")의 분당 평균 페이지 로드 시간이 10초 이상 소요되면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 페이지 로드 수 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["페이지 그룹(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${page_group}"
+            }), ")의 분당 페이지 로드 수가 100건 이상 발생하면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 라우터 변경 시간 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["페이지 그룹(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${page_group}"
+            }), ")의 분당 평균 라우터 변경 시간이 10초 이상 소요되면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 AJAX 응답 시간 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["AJAX Path(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${request_path}"
+            }), ")의 분당 평균 AJAX 응답 시간이 30초 이상 소요되면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 AJAX 요청 수 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["호스트(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${request_host}"
+            }), ")의 분당 AJAX 요청 수가 1000건 이상 발생하면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 AJAX 실패 건수 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["AJAX Path(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${request_path}"
+            }), ")의 분당 AJAX 실패 건수가 100건 이상 발생하면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "분당 브라우저 에러 수 이상"
+              })
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["페이지 그룹(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "${page_group}"
+            }), ")의 분당 브라우저 에러 수가 10건 이상 발생하면 경고 알림을 보냅니다."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

@@ -757,6 +757,141 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
+/***/ 16768:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": "템플릿",
+  "id": "template",
+  "level": 2
+}];
+function _createMdxContent(props) {
+  const _components = {
+    code: "code",
+    em: "em",
+    h2: "h2",
+    li: "li",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h2",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+      id: "template",
+      children: "템플릿"
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "경고 알림"
+        })
+      }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "이벤트 설정"
+        })
+      }), "에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "+ 이벤트 추가"
+        })
+      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "템플릿"
+        })
+      }), "에서 원하는 항목을 선택하세요. 다음과 같이 경고 알림 템플릿을 제공합니다."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "CNT06830",
+          className: "uitext"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["평균 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "jitter"
+          }), "(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "avg_jitter"
+          }), ")가 30ms를 초과하면 경고 알림을 보냅니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "CNT06831",
+          className: "uitext"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["평균 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "latency"
+          }), "(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "avg_latency"
+          }), ")가 200ms를 초과하면 경고 알림을 보냅니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "CNT06832",
+          className: "uitext"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["데이터 전송량(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "bps"
+          }), ")이 128Mib/s를 초과하면 경고 알림을 보냅니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "CNT06833",
+          className: "uitext"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["패킷 전송량(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "pps"
+          }), ")이 50Kpps 이상이면 경고 알림을 보냅니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "CNT06834",
+          className: "uitext"
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["세션(session) 집계량(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "session_count"
+          }), ")이 100 이상이면 경고 알림을 보냅니다."]
+        }), "\n"]
+      }), "\n"]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 64844:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1431,163 +1566,29 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 99977:
+/***/ 10985:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  assets: () => (/* binding */ assets),
-  contentTitle: () => (/* binding */ metric_warning_notice_contentTitle),
-  "default": () => (/* binding */ metric_warning_notice_MDXContent),
-  frontMatter: () => (/* binding */ metric_warning_notice_frontMatter),
-  metadata: () => (/* binding */ metadata),
-  toc: () => (/* binding */ metric_warning_notice_toc)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./src/components/InDoc.js
-var InDoc = __webpack_require__(19567);
-// EXTERNAL MODULE: ./src/components/XcludeDoc.js
-var XcludeDoc = __webpack_require__(13325);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-warning-notice.mdx
-var _metrics_warning_notice = __webpack_require__(64844);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-event-modify-delete.mdx
-var _metrics_event_modify_delete = __webpack_require__(34168);
-// EXTERNAL MODULE: ./docs/common-items/_metrics-event-condition-select-target-guide.mdx
-var _metrics_event_condition_select_target_guide = __webpack_require__(26859);
-;// CONCATENATED MODULE: ./docs/common-items/_metrics-warning-notice-npm.mdx
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(28453);
+/* harmony import */ var _site_src_components_InDoc_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19567);
+/* harmony import */ var _site_src_components_XcludeDoc_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13325);
+/* harmony import */ var _common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(64844);
+/* harmony import */ var _common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(34168);
+/* harmony import */ var _common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26859);
+/* harmony import */ var _common_items_metrics_warning_notice_npm_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16768);
 
 
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "템플릿",
-  "id": "template",
-  "level": 2
-}];
-function _createMdxContent(props) {
-  const _components = {
-    code: "code",
-    em: "em",
-    h2: "h2",
-    li: "li",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ul: "ul",
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  }, {Cmdname} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  return (0,jsx_runtime.jsxs)(_components.section, {
-    className: "remark-sectionize-h2",
-    children: [(0,jsx_runtime.jsx)(_components.h2, {
-      id: "template",
-      children: "템플릿"
-    }), (0,jsx_runtime.jsxs)(_components.p, {
-      children: [(0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "경고 알림"
-        })
-      }), " > ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "이벤트 설정"
-        })
-      }), "에서 ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "+ 이벤트 추가"
-        })
-      }), " 버튼을 선택하세요. ", (0,jsx_runtime.jsx)(_components.em, {
-        children: (0,jsx_runtime.jsx)(_components.strong, {
-          children: "템플릿"
-        })
-      }), "에서 원하는 항목을 선택하세요. 다음과 같이 경고 알림 템플릿을 제공합니다."]
-    }), (0,jsx_runtime.jsxs)(_components.ul, {
-      children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "CNT06830",
-          className: "uitext"
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["평균 ", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "jitter"
-          }), "(", (0,jsx_runtime.jsx)(_components.code, {
-            children: "avg_jitter"
-          }), ")가 30ms를 초과하면 경고 알림을 보냅니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "CNT06831",
-          className: "uitext"
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["평균 ", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "latency"
-          }), "(", (0,jsx_runtime.jsx)(_components.code, {
-            children: "avg_latency"
-          }), ")가 200ms를 초과하면 경고 알림을 보냅니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "CNT06832",
-          className: "uitext"
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["데이터 전송량(", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "bps"
-          }), ")이 128Mib/s를 초과하면 경고 알림을 보냅니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "CNT06833",
-          className: "uitext"
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["패킷 전송량(", (0,jsx_runtime.jsx)(_components.strong, {
-            children: "pps"
-          }), ")이 50Kpps 이상이면 경고 알림을 보냅니다."]
-        }), "\n"]
-      }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
-        children: ["\n", (0,jsx_runtime.jsx)(Cmdname, {
-          sid: "CNT06834",
-          className: "uitext"
-        }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
-          children: ["세션(session) 집계량(", (0,jsx_runtime.jsx)(_components.code, {
-            children: "session_count"
-          }), ")이 100 이상이면 경고 알림을 보냅니다."]
-        }), "\n"]
-      }), "\n"]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
-    ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-;// CONCATENATED MODULE: ./docs/npm/metric-warning-notice.mdx
-
-
-const metric_warning_notice_frontMatter = {
+const frontMatter = {
 	id: 'metric-warning-notice',
 	title: '메트릭스 경고 알림',
 	description: '구체적이고 복잡한 이벤트를 설정하려면 메트릭스 이벤트 설정을 사용하세요.',
@@ -1598,7 +1599,7 @@ const metric_warning_notice_frontMatter = {
 	],
 	isTranslationMissing: false
 };
-const metric_warning_notice_contentTitle = undefined;
+const contentTitle = undefined;
 const metadata = {
   "id": "npm/metric-warning-notice",
   "title": "메트릭스 경고 알림",
@@ -1646,23 +1647,23 @@ const assets = {
 
 
 
-const metric_warning_notice_toc = [..._metrics_warning_notice/* toc */.RM, ..._metrics_event_modify_delete/* toc */.RM, ..._metrics_event_condition_select_target_guide/* toc */.RM, ...toc];
-function metric_warning_notice_createMdxContent(props) {
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_metrics_warning_notice/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_metrics_event_modify_delete/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(_metrics_event_condition_select_target_guide/* default */.Ay, {}), "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {})]
+const toc = [..._common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_metrics_warning_notice_npm_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_modify_delete_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_event_condition_select_target_guide_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_metrics_warning_notice_npm_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {})]
   });
 }
-function metric_warning_notice_MDXContent(props = {}) {
+function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_7__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(metric_warning_notice_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
-  }) : metric_warning_notice_createMdxContent(props);
+  }) : _createMdxContent(props);
 }
 
 

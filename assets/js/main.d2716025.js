@@ -12809,9 +12809,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(19358)
     ],
     "12347e22": [
-        ()=>__webpack_require__.e(/* import() | 12347e22 */ 8035).then(__webpack_require__.bind(__webpack_require__, 37655)),
+        ()=>__webpack_require__.e(/* import() | 12347e22 */ 8035).then(__webpack_require__.bind(__webpack_require__, 15510)),
         "@site/docs/browser/metric-warning-notice.mdx",
-        /*require.resolve*/(37655)
+        /*require.resolve*/(15510)
     ],
     "12399c06": [
         ()=>Promise.all(/* import() | 12399c06 */[__webpack_require__.e(71869), __webpack_require__.e(77096)]).then(__webpack_require__.bind(__webpack_require__, 14612)),
@@ -21639,9 +21639,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(64485)
     ],
     "da9ebd83": [
-        ()=>Promise.all(/* import() | da9ebd83 */[__webpack_require__.e(71869), __webpack_require__.e(73019), __webpack_require__.e(62892), __webpack_require__.e(69525), __webpack_require__.e(39881)]).then(__webpack_require__.bind(__webpack_require__, 99977)),
+        ()=>Promise.all(/* import() | da9ebd83 */[__webpack_require__.e(71869), __webpack_require__.e(73019), __webpack_require__.e(62892), __webpack_require__.e(69525), __webpack_require__.e(39881)]).then(__webpack_require__.bind(__webpack_require__, 10985)),
         "@site/docs/npm/metric-warning-notice.mdx",
-        /*require.resolve*/(99977)
+        /*require.resolve*/(10985)
     ],
     "dabea68a": [
         ()=>__webpack_require__.e(/* import() | dabea68a */ 4905).then(__webpack_require__.bind(__webpack_require__, 91207)),
