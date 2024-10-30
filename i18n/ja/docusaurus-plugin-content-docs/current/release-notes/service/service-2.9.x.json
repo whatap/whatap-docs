@@ -1,6 +1,123 @@
 [
   {
     "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.5",
+    "date": "2024-10-08",
+    "Lists": [
+      {
+        "ver": "Service 2.9.5",
+        "hash": "service-295",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">利用状況</span> &gt; <span class=\"uitext\">決済情報</span>メニューでWhaTapスターターパックに関するプロモーションイメージを変更</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.4",
+    "date": "2024-10-02",
+    "Lists": [
+      {
+        "ver": "Service 2.9.4",
+        "hash": "service-294",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code>ページネーションコンポーネントスタイルを改善</p>"
+      },
+      {
+        "ver": "Service 2.9.4",
+        "hash": "service-294",
+        "product": "Application",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計</span>メニューでデータ照会中にページネーションを無効にするように修正</p>"
+      },
+      {
+        "ver": "Service 2.9.4",
+        "hash": "service-294",
+        "product": "Application",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">統計</span>メニューでCSVダウンロードライン数が最大照会件数と一致するように変更</p>",
+        "details": "<ul>\n<li>\n<p><strong>修正前</strong></p>\n<p>CSV：100,000 / 照会：10,000</p>\n</li>\n<li>\n<p><strong>修正後</strong></p>\n<p>CSV：10,000 / 照会： 10,000</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.3",
+    "date": "2024-09-27",
+    "Lists": [
+      {
+        "ver": "Service 2.9.3",
+        "hash": "service-293",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span>メニューでノード全体を選択した後、<span class=\"uitext\">ログ</span>メニューに移動するとログデータが照会されない問題を修正(キャッシュ問題の解決)</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.2",
+    "date": "2024-09-26",
+    "Lists": [
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー情報</span>メニューの<span class=\"uitext\">サーバー構成情報エージェントの案内</span>でWindowsオプション追加コマンドに抜けている逆スラッシュ(<code>\\</code>) 文字を追加</p>"
+      },
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のメニュー経路に進入する時、新機能に対する案内ポップアップを追加</p>",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードタイムライン</span></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Kubernetes",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">レポート</span>メニューで報告書の様式を<span class=\"uitext\">月次レポート：アプリケーション</span>、<span class=\"uitext\">月次レポート：性能比較</span>を選択した時、複数のエージェント、エージェントグループ、エージェントの種類を選択できるように修正</p>"
+      },
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">ノードマップ</span>メニューでノード全体を選択した後、<span class=\"uitext\">ログ</span>メニューに移動するとログデータが照会されない問題を修正</p>"
+      },
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL詳細</span>ウィンドでSQL文にコロン(<code>:</code>)が複数含まれている場合、これをバインド変数として認識する問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">SQL詳細</span>ウィンドウで<span class=\"uitext\">Runtime Plan</span>の平均データが合算されて計算される問題を修正</p>",
+        "category": "Oracle V2、Oracle Pro"
+      },
+      {
+        "ver": "Service 2.9.2",
+        "hash": "service-292",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>ダッシュボードの <span class=\"uitext\">アクティブセッション</span>テーブルからクエリを選択してPlanを照会する時、Object Detailウィンドウでテーブルデータがない場合、カラム名のみを表示するように修正</p>",
+        "category": "PostgreSQL、MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
     "ver": "Service 2.9.1",
     "date": "2024-09-25",
     "Lists": [

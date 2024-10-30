@@ -14,6 +14,20 @@
     ]
   },
   {
+    "url": "https://docs.whatap.io/ja/release-notes/server-aix/server-aix-1_3_5",
+    "ver": "v1.3.5",
+    "date": "2024-10-17",
+    "Lists": [
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Server AIX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> Oname 고정 옵션 미동작 수정</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/server-aix/server-aix-1_3_4",
     "ver": "v1.3.4",
     "date": "2024-09-19",
