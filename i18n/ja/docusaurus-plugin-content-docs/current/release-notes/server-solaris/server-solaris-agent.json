@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server-solaris/server-solaris-1_3_4",
+    "ver": "v1.3.4",
+    "date": "2024-09-19",
+    "Lists": [
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>サーバー構成情報の収集機能を追加</p>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>エージェントを最初に駆動した後、OID値を固定するように改善</p>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Oracle Enterprise Editionの駆動環境でプロセス情報を収集する際、エージェントが停止する問題を修正</p>"
+      }
+    ]
+  }
+]

@@ -50585,14 +50585,14 @@
   "NTC07341": {
     "en": "Thank you for subscribing.",
     "ja": "購読へ転換しました。",
-    "ko": "구독되었습니다.",
+    "ko": "재구독 요청이 성공적으로 완료되었습니다.",
     "zh": "You are subscribed.",
     "service_id": "NTC07341"
   },
   "NTC07342": {
     "en": "You have already subscribed.",
     "ja": "すでに購読中です。",
-    "ko": "이미 구독하셨습니다.",
+    "ko": "재구독 요청에 실패했습니다.",
     "zh": "You have already subscribed.",
     "service_id": "NTC07342"
   },
@@ -54041,10 +54041,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54881,10 +54881,10 @@
     "service_id": "DSC07958"
   },
   "DSC07959": {
-    "en": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
+    "en": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
     "ja": "次の内容に基づいて設定されたインストールファイルをダウンロードします。オプションは前のステップに戻って変更できます。",
     "ko": "다음 내용을 바탕으로 구성된 설치 파일을 다운로드합니다. 옵션은 이전 단계로 돌아가 변경할 수 있습니다.",
-    "zh": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
+    "zh": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
     "service_id": "DSC07959"
   },
   "TTL07960": {
@@ -55644,10 +55644,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete that item?",
+    "en": "Are you sure you want to delete this item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete that item?",
+    "zh": "Are you sure you want to delete this item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55721,10 +55721,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -55945,10 +55945,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56177,7 +56177,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "zh": "All widget charts will zoom in when you drag a chart.",
     "service_id": "CNT08143"
@@ -56610,10 +56610,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events occurring",
+    "en": "Number of events",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events occurring",
+    "zh": "Number of events",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -56939,10 +56939,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57724,7 +57724,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果の選択",
+    "ja": "検索結果を選択",
     "ko": "검색 결과 선택",
     "zh": "Select search results",
     "service_id": "CNT08366"
@@ -58143,10 +58143,10 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
-    "zh": "It will take approximately 30 seconds to 1 minute to complete the task.",
+    "zh": "It takes approximately 30 seconds to 1 minute to complete the task.",
     "service_id": "DSC08426"
   },
   "CNT08427": {
@@ -58179,7 +58179,7 @@
   },
   "DSC08431": {
     "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
-    "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した場合に備えて監視することをお勧めします。",
+    "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した時点での監視をお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
     "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
     "service_id": "DSC08431"
@@ -58430,10 +58430,10 @@
     "service_id": "ITM08466"
   },
   "ITM08467": {
-    "en": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and Socket count for X86)",
+    "en": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and number of Sockets for X86)",
     "ja": "CPU枚数情報を細分化(CPUコア、論理的コア、X86 の場合はソケット数)して収集",
     "ko": "CPU 수량 정보 세분화 (CPU Cores, Logical Cores 및 X86 의 경우 Socket 수)하여 수집",
-    "zh": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and Socket count for X86)",
+    "zh": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and number of Sockets for X86)",
     "service_id": "ITM08467"
   },
   "ITM08468": {
@@ -58563,10 +58563,10 @@
     "service_id": "CNT08485"
   },
   "CNT08486": {
-    "en": "Supported versions {version}",
+    "en": "Supported version {version}",
     "ja": "サポートバージョン{version}",
     "ko": "지원 버전 {version}",
-    "zh": "Supported versions {version}",
+    "zh": "Supported version {version}",
     "service_id": "CNT08486"
   },
   "CNT08487": {
@@ -58675,10 +58675,10 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "<b>Add the script file to the {path} path</b>.",
+    "en": "Add the script file to <b>{path}</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
-    "zh": "<b>Add the script file to the {path} path</b>.",
+    "zh": "Add the script file to <b>{path}</b>.",
     "service_id": "DSC08502"
   },
   "DSC08503": {
@@ -59087,115 +59087,115 @@
     "service_id": "TLT08562"
   },
   "TLT08563": {
-    "en": "It refers to the time it takes for the browser to completely load a web page.",
+    "en": "This represents the average time it takes the browser to completely load a web page, and is the time it takes for additional interactions to complete after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
     "ja": "ブラウザがWebページを完全に読み込むまでかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 완전히 불러오는데 걸리는 시간을 나타냅니다.",
-    "zh": "It refers to the time it takes for the browser to completely load a web page.",
+    "ko": "브라우저가 웹 페이지를 완전히 불러오는데 소요한 평균 시간을 나타내며, loadEventEnd 이후 추가 인터랙션을 완료하기까지의 시간입니다. 브라우저 에이전트가 측정한 페이지 로드 완료 시간을 의미합니다.",
+    "zh": "This represents the average time it takes the browser to completely load a web page, and is the time it takes for additional interactions to complete after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
     "service_id": "TLT08563"
   },
   "TLT08564": {
-    "en": "Represents a group of URLs on a page.",
+    "en": "This is a statistics group that provides URL paths by normalizing them using regular expressions.",
     "ja": "ページのURLグループを示します。",
-    "ko": "페이지의 URL 그룹을 나타냅니다.",
-    "zh": "Represents a group of URLs on a page.",
+    "ko": "URL 경로(URL Path)를 정규 표현식을 통해 정규화하여 제공하는 통계 그룹입니다.",
+    "zh": "This is a statistics group that provides URL paths by normalizing them using regular expressions.",
     "service_id": "TLT08564"
   },
   "TLT08565": {
-    "en": "Indicates the number of page loads.",
-    "ja": "ページロード数を示します。",
-    "ko": "페이지 로드 수를 나타냅니다.",
-    "zh": "Indicates the number of page loads.",
+    "en": "Number of page loads.",
+    "ja": "ページロード数。",
+    "ko": "페이지 로드 수입니다.",
+    "zh": "Number of page loads.",
     "service_id": "TLT08565"
   },
   "TLT08566": {
-    "en": "Indicates the processing time of the frontend area during page load.",
+    "en": "This represents the average processing time in the frontend area during page loading, meaning the time taken from domInteractive to loadEventEnd.",
     "ja": "ページロード中に、フロントエンド領域の処理にかかる時間を示します。",
-    "ko": "페이지 로드 중 프론트엔드 영역의 처리 시간을 나타냅니다.",
-    "zh": "Indicates the processing time of the frontend area during page load.",
+    "ko": "페이지 로드 중 프론트엔드 영역의 평균 처리 시간을 나타내며, domInteractive부터 loadEventEnd까지 소요된 시간을 의미합니다.",
+    "zh": "This represents the average processing time in the frontend area during page loading, meaning the time taken from domInteractive to loadEventEnd.",
     "service_id": "TLT08566"
   },
   "TLT08567": {
-    "en": "Indicates backend zone processing time during page load.",
+    "en": "This represents the average time processed by the backend during page load, from startTime to responseEnd.",
     "ja": "ページロード中に、バックエンド領域の処理にかかる時間を示します。",
-    "ko": "페이지 로드 중 백엔드 영역 처리 시간을 나타냅니다.",
-    "zh": "Indicates backend zone processing time during page load.",
+    "ko": "페이지 로드 중 백엔드에서 처리된 평균 시간을 나타내며, startTime부터 responseEnd까지 소요된 시간을 의미합니다.",
+    "zh": "This represents the average time processed by the backend during page load, from startTime to responseEnd.",
     "service_id": "TLT08567"
   },
   "TLT08568": {
-    "en": "Indicates the time at which the load event is completed, as measured by the browser.",
+    "en": "This represents the average time for a load event to be completed as measured by the browser, meaning the time taken from start to loadEventEnd.",
     "ja": "ブラウザが測定する load イベントが完了した時間を示します。",
-    "ko": "브라우저가 측정하는 load 이벤트가 완료되는 시간을 나타냅니다.",
-    "zh": "Indicates the time at which the load event is completed, as measured by the browser.",
+    "ko": "브라우저에서 측정하는 load 이벤트가 완료되는 평균 시간을 나타내며, 시작부터 loadEventEnd까지 소요된 시간을 의미합니다.",
+    "zh": "This represents the average time for a load event to be completed as measured by the browser, meaning the time taken from start to loadEventEnd.",
     "service_id": "TLT08568"
   },
   "TLT08569": {
-    "en": "Indicates the time it takes for the redirection process when the browser loads a web page.",
+    "en": "It represents the average time the browser spends in the redirection process while loading a web page, and refers to the time from redirectStart to redirectEnd.",
     "ja": "ブラウザのWebページロード中に、リダイレクト過程にかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 불러올 때 리다이렉트 과정에서 걸리는 시간을 나타냅니다.",
-    "zh": "Indicates the time it takes for the redirection process when the browser loads a web page.",
+    "ko": "브라우저가 웹 페이지를 불러오면서 리다이렉트 과정에서 소요한 평균 시간을 나타내며, redirectStart부터 redirectEnd까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time the browser spends in the redirection process while loading a web page, and refers to the time from redirectStart to redirectEnd.",
     "service_id": "TLT08569"
   },
   "TLT08570": {
-    "en": "This refers to the time the browser retrieves cached resources while loading a web page.",
+    "en": "It represents the average time the browser spends retrieving cached resources while loading a web page, and refers to the time elapsed from fetchStart to domainLookupStart.",
     "ja": "ブラウザのWebページロード中に、キャッシュされたリソースの取得にかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 불러오면서 캐시된 리소스를 검색하는 시간을 나타냅니다.",
-    "zh": "This refers to the time the browser retrieves cached resources while loading a web page.",
+    "ko": "브라우저가 웹 페이지를 불러오면서 캐시된 리소스를 검색하는데 소요한 평균 시간을 나타내며, fetchStart부터 domainLookupStart까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time the browser spends retrieving cached resources while loading a web page, and refers to the time elapsed from fetchStart to domainLookupStart.",
     "service_id": "TLT08570"
   },
   "TLT08571": {
-    "en": "Indicates the time the browser establishes a network connection with the server.",
+    "en": "It represents the average time the browser spends in the network connection process with the server, and refers to the time taken from connectStart to connectEnd.",
     "ja": "ブラウザがサーバーとのネットワーク接続にかかる時間を示します。",
-    "ko": "브라우저가 서버와의 네트워크 연결하는 시간을 나타냅니다.",
-    "zh": "Indicates the time the browser establishes a network connection with the server.",
+    "ko": "브라우저가 서버와의 네트워크 연결 과정에 소요한 평균 시간을 나타내며, connectStart부터 connectEnd까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time the browser spends in the network connection process with the server, and refers to the time taken from connectStart to connectEnd.",
     "service_id": "TLT08571"
   },
   "TLT08572": {
-    "en": "It refers to the time it takes for a browser to look up a website domain while loading a web page.",
+    "en": "It represents the average time it takes for a browser to look up a website domain while loading a web page, and refers to the time from domainLookupStart to domainLookupEnd.",
     "ja": "ブラウザのWebページロード中に、Webサイトドメインの照会にかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 불러오면서 웹사이트 도메인을 조회하는데 걸리는 시간을 나타냅니다.",
-    "zh": "It refers to the time it takes for a browser to look up a website domain while loading a web page.",
+    "ko": "브라우저가 웹 페이지를 불러오면서 웹사이트 도메인을 조회하는데 소요한 평균 시간을 나타내며, domainLookupStart부터 domainLookupEnd까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time it takes for a browser to look up a website domain while loading a web page, and refers to the time from domainLookupStart to domainLookupEnd.",
     "service_id": "TLT08572"
   },
   "TLT08573": {
-    "en": "Indicates the time it takes for the TCP handshake process when the browser loads a web page.",
+    "en": "This is the average time spent in the TCP handshake process when the browser loads a web page, meaning the time taken from secureConnectionStart to connectEnd.",
     "ja": "ブラウザのWebページロード中に、TCPハンドシェイクにかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 불러올 때 TCP 핸드셰이크 과정에서 걸리는 시간을 나타냅니다.",
-    "zh": "Indicates the time it takes for the TCP handshake process when the browser loads a web page.",
+    "ko": "브라우저가 웹 페이지를 불러오면서 TCP 헨드쉐이크 과정에서 소요한 평균으로, secureConnectionStart부터 connectEnd까지 소요된 시간을 의미합니다.",
+    "zh": "This is the average time spent in the TCP handshake process when the browser loads a web page, meaning the time taken from secureConnectionStart to connectEnd.",
     "service_id": "TLT08573"
   },
   "TLT08574": {
-    "en": "This refers to the time it takes for the browser to load a web page and download resources from the server.",
+    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
     "ja": "ブラウザのWebページロード中に、サーバーからのリソースダウンロードにかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 불러오면서 서버로부터 리소스를 다운로드하는데 걸리는 시간을 나타냅니다.",
-    "zh": "This refers to the time it takes for the browser to load a web page and download resources from the server.",
+    "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 소요한 평균 시간을 나타내며, domInteractive부터 domComplete까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
     "service_id": "TLT08574"
   },
   "TLT08575": {
-    "en": "This refers to the time it takes for a browser to load a web page, send a network request, and wait until the first byte is received from the server.",
+    "en": "It represents the average time it takes for the browser to send a network request while loading a web page and until the first byte is received from the server. It refers to the time from requestStart to responseStart.",
     "ja": "ブラウザのWebページロード中に、ネットワークリクエストを送信してからサーバーからの最初バイト受信までにかかる時間を示します。",
-    "ko": "브라우저가 웹 페이지를 불러오면서 네트워크 요청을 보낸 후 서버로부터 첫 번째 바이트가 수신될 때까지 소요한 시간을 나타냅니다.",
-    "zh": "This refers to the time it takes for a browser to load a web page, send a network request, and wait until the first byte is received from the server.",
+    "ko": "브라우저가 웹 페이지를 불러오면서 네트워크 요청을 보낸 후 서버로부터 첫 번째 바이트(byte)가 수신될 때까지 소요된 평균 시간을 나타내며, requestStart부터 responseStart까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time it takes for the browser to send a network request while loading a web page and until the first byte is received from the server. It refers to the time from requestStart to responseStart.",
     "service_id": "TLT08575"
   },
   "TLT08576": {
-    "en": "This refers to the time it takes for a web page to render its initial content and become interactive.",
+    "en": "It represents the average time taken by the browser to download resources from the server while loading a web page, and refers to the time from responseStart to responseEnd.",
     "ja": "Webページが初期コンテンツをレンダリングして相互作用できる状態になるまでかかる時間を示します。",
-    "ko": "웹 페이지가 초기 콘텐츠를 렌더링하고 상호 작용할 수 있는 상태가 되기까지의 걸리는 시간을 나타냅니다.",
-    "zh": "This refers to the time it takes for a web page to render its initial content and become interactive.",
+    "ko": "브라우저가 웹 페이지를 불러오면서 서버로부터 리소스를 다운로드하는데 소요한 평균 시간을 나타내며, responseStart부터 responseEnd까지 시간을 의미합니다.",
+    "zh": "It represents the average time taken by the browser to download resources from the server while loading a web page, and refers to the time from responseStart to responseEnd.",
     "service_id": "TLT08576"
   },
   "TLT08577": {
-    "en": "This refers to the time it takes for a web page to load and render all of its resources before the user can interact with it.",
+    "en": "Represents the average time it takes for a web page to render initial content and become interactive, from domContentLoadedEventStart to domContentLoadedEventEnd.",
     "ja": "Webページのすべてのリソースがロードされ、レンダリングが完了してからユーザーとの相互作用できる状態になるまでかかる時間を示します。",
-    "ko": "웹 페이지의 모든 자원이 로드되고 렌더링이 완료된 후 사용자가 상호 작용할 수 있는 상태가 되기까지의 시간을 나타냅니다.",
-    "zh": "This refers to the time it takes for a web page to load and render all of its resources before the user can interact with it.",
+    "ko": "웹 페이지가 초기 콘텐츠를 렌더링하고 상호 작용할 수 있는 상태가 되기까지의 평균 시간을 나타내며, domContentLoadedEventStart부터 domContentLoadedEventEnd까지 소요된 시간을 의미합니다.",
+    "zh": "Represents the average time it takes for a web page to render initial content and become interactive, from domContentLoadedEventStart to domContentLoadedEventEnd.",
     "service_id": "TLT08577"
   },
   "TLT08578": {
-    "en": "Indicates the average time it takes to render resources downloaded from the server on the screen and complete a page load event.",
+    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
     "ja": "サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するまでかかる平均時間を示します。",
-    "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 걸리는 평균 시간을 나타냅니다.",
-    "zh": "Indicates the average time it takes to render resources downloaded from the server on the screen and complete a page load event.",
+    "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 소요한 평균 시간을 나타내며, domInteractive부터 domComplete까지 소요된 시간을 의미합니다.",
+    "zh": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
     "service_id": "TLT08578"
   },
   "TLT08579": {
@@ -59213,10 +59213,10 @@
     "service_id": "BTN08580"
   },
   "DSC08581": {
-    "en": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "en": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "ja": "イベントの対象を変更した場合は、アラート通知の件数が変わる可能性があるため、<span class=\"{class}\">「シミュレーション」ボタンをもう一度実行してください。</span>",
     "ko": "이벤트 대상을 변경한 경우, 알림 건수가 달라질 수 있으니 <span class=\"{class}\">“시뮬레이션” 버튼을 다시 실행하세요.</span>",
-    "zh": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "zh": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "service_id": "DSC08581"
   },
   "DSC08582": {
@@ -59263,7 +59263,7 @@
   },
   "DSC08588": {
     "en": "The pattern is registered after the simulation is performed to ensure that the log is successfully parsed with the entered pattern.",
-    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
+    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "zh": "The pattern is registered after the simulation is performed to ensure that the log is successfully parsed with the entered pattern.",
     "service_id": "DSC08588"
@@ -59381,10 +59381,10 @@
     "service_id": "TTL08604"
   },
   "TLT08605": {
-    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "ja": "Browserモニタリングで有意味な統計グループを持つために、URLパスを正規化してページグループという名前で指定します。 URLパス 単位の分析に意味がないと判断した数字、日付などを疑問符(?)で置き換えます。 ",
     "ko": "브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL Path를 정규화해 페이지 그룹이라는 이름으로 제공합니다. URL Path 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다. ",
-    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "service_id": "TLT08605"
   },
   "DSC08606": {
@@ -59570,10 +59570,10 @@
     "service_id": "DSC08631"
   },
   "DSC08632": {
-    "en": "If you have difficulty setting up metrics, please refer to <b>WhaTap Docs</b>.",
-    "ja": "メトリクス設定が難しい場合は、<b> WhaTap Docs </b>を参照してください。",
-    "ko": "메트릭 설정이 어려운 경우 <b>WhaTap Docs</b>를 참고하세요.",
-    "zh": "If you have difficulty setting up metrics, please refer to <b>WhaTap Docs</b>.",
+    "en": "If setting metrics is difficult, refer to <a target=\"_blank\" href=\"{url}\" style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>. please refer to this. ",
+    "ja": "メトリクス設定が難しい場合は、<a target=\"_blank\" href=\"{url}\" style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>参照にしてください。",
+    "ko": "메트릭 설정이 어려운 경우 <a target=\"_blank\" href=\"{url}\" style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>를 참고하세요. ",
+    "zh": "If setting metrics is difficult, refer to <a target=\"_blank\" href=\"{url}\" style='text-decoration:underline!important;color:#757575'><b>WhaTap Docs</b></a>. please refer to this. ",
     "service_id": "DSC08632"
   },
   "TTL08633": {
@@ -59612,10 +59612,10 @@
     "service_id": "TTL08637"
   },
   "DSC08638": {
-    "en": "resourceID must be checked and entered in the monitored database console.",
-    "ja": "resourceIDは、監視対象のデータベースコンソールで確認して入力する必要があります。",
-    "ko": "resourceID 는 모니터링 대상 데이터베이스 콘솔에서 확인하고 입력해야합니다.",
-    "zh": "resourceID must be checked and entered in the monitored database console.",
+    "en": "Resource ID must be checked and entered in the monitored database console.",
+    "ja": "リソースIDは、監視対象のデータベースコンソールで確認して入力する必要があります。",
+    "ko": "Resource ID 는 모니터링 대상 데이터베이스 콘솔에서 확인하고 입력해야합니다.",
+    "zh": "Resource ID must be checked and entered in the monitored database console.",
     "service_id": "DSC08638"
   },
   "BTN08639": {
@@ -59647,10 +59647,10 @@
     "service_id": "DSC08642"
   },
   "DSC08643": {
-    "en": "Install the Azure Resource Manager template to collect cloud metrics.",
+    "en": "Collect cloud metrics by installing an Azure Resource Manager template.",
     "ja": "Azure Active Directory に App Registration を追加して、Azure Monitor メトリクスを収集します.",
     "ko": "Azure Resource Manager 템플릿을 설치하여 클라우드 메트릭을 수집합니다.",
-    "zh": "Install the Azure Resource Manager template to collect cloud metrics.",
+    "zh": "Collect cloud metrics by installing an Azure Resource Manager template.",
     "service_id": "DSC08643"
   },
   "DSC08644": {
@@ -59816,14 +59816,14 @@
   },
   "DSC08667": {
     "en": "If the problem persists, contact WhaTap.",
-    "ja": "問題が解決しない場合は、ワタップにお問い合わせください。",
+    "ja": "問題が続く場合は、カスタマーサポートへお問い合わせください。",
     "ko": "문제가 지속될 시 와탭에 문의하세요.",
     "zh": "If the problem persists, contact WhaTap.",
     "service_id": "DSC08667"
   },
   "DSC08668": {
     "en": "You can use the Azure Resource Manager (ARM) template provided by WhaTap to install a Function App that collects Azure Monitor metrics to the WhaTap server.<br />\nPlease refer to the guide below to set up metrics collection through ARM template and install the Functions App.",
-    "ja": "ワタップが提供するAzure Resource Manager（ARM）テンプレートを使用して、Azure Monitorメトリックをワタップサーバーとして収集するFunction Appをインストールできます。<br />\n以下のガイドを参照して、ARMテンプレートを使用してメトリックを収集するための設定を行い、Functions Appをインストールしてください。",
+    "ja": "WhaTap Monitoringが提供するAzure Resource Manager（ARM）テンプレートを使用して、Azure MonitorのメトリクスをWhaTapサーバーへ転送するよう、Function Appをインストールできます。<br />\n以下のガイドを参照して、ARMテンプレートを使用してメトリクスをWhaTapで収集するための設定を行い、Functions Appをインストールしてください。",
     "ko": "와탭이 제공하는 Azure Resource Manager(ARM) 템플릿을 사용하여 Azure Monitor 메트릭을 와탭 서버로 수집하는 Function App 을 설치할 수 있습니다.<br />\n아래 가이드를 참조하여 ARM 템플릿을 통해 메트릭 수집을 위한 설정을 하고 Functions App 을 설치하세요.",
     "zh": "You can use the Azure Resource Manager (ARM) template provided by WhaTap to install a Function App that collects Azure Monitor metrics to the WhaTap server.<br />\nPlease refer to the guide below to set up metrics collection through ARM template and install the Functions App.",
     "service_id": "DSC08668"
@@ -59837,42 +59837,42 @@
   },
   "DSC08670": {
     "en": "You can enter less than {maxLength} bytes.",
-    "ja": "{maxLength} byte未満まで入力可能です。",
+    "ja": "{maxLength} バイト未満まで入力できます。",
     "ko": "{maxLength}byte 미만까지 입력 가능합니다.",
     "zh": "You can enter less than {maxLength} bytes.",
     "service_id": "DSC08670"
   },
   "TTL08671": {
     "en": "Download command",
-    "ja": "ダウンロード命令",
+    "ja": "ダウンロードコマンド",
     "ko": "다운로드 명령어",
     "zh": "Download command",
     "service_id": "TTL08671"
   },
   "TTL08672": {
     "en": "IP load performance trend",
-    "ja": "IP負荷パフォーマンスの推移",
+    "ja": "IPロード性能の推移",
     "ko": "IP 로드 성능 추이",
     "zh": "IP load performance trend",
     "service_id": "TTL08672"
   },
   "TTL08673": {
     "en": "Top 10 IP Load Times",
-    "ja": "IP ロード時間 Top10",
+    "ja": "IPロード時間のTop10",
     "ko": "IP 로드 시간 Top10",
     "zh": "Top 10 IP Load Times",
     "service_id": "TTL08673"
   },
   "TTL08674": {
     "en": "Top 10 IP Load Count",
-    "ja": "IP負荷数 Top10",
+    "ja": "IPロード数のTop10",
     "ko": "IP 로드 수 Top10",
     "zh": "Top 10 IP Load Count",
     "service_id": "TTL08674"
   },
   "TLT08675": {
     "en": "There is no registered processing history.",
-    "ja": "登録された処理履歴はありません。",
+    "ja": "登録された処理履歴がありません。",
     "ko": "등록된 처리내역이 없습니다.",
     "zh": "There is no registered processing history.",
     "service_id": "TLT08675"
@@ -59891,11 +59891,221 @@
     "zh": "If you register processing details, the repeat notification (escalation) function for the event will stop.",
     "service_id": "DSC08677"
   },
+  "CNT08678": {
+    "en": "Are you sure you want to delete the selected item ({selectedLength}) from the list?",
+    "ja": "選択した項目（{selectedLength}）をリストから削除しますか？",
+    "ko": "선택한 항목({selectedLength})을 목록에서 삭제하시겠습니까?",
+    "zh": "Are you sure you want to delete the selected item ({selectedLength}) from the list?",
+    "service_id": "CNT08678"
+  },
+  "DSC08679": {
+    "en": "Items deleted from the <b>Server Inventory List</b> are<br />\nnot removed from the <b>Server List</b>.",
+    "ja": "<b>サーバー構成情報のリスト</b>から削除したアイテムは<br />\n<b>サーバーリスト</b>では削除されません。",
+    "ko": "<b>서버 구성 정보 목록</b>에서 삭제한 항목은<br />\n<b>서버 목록</b>에서는 삭제되지 않습니다.",
+    "zh": "Items deleted from the <b>Server Inventory List</b> are<br />\nnot removed from the <b>Server List</b>.",
+    "service_id": "DSC08679"
+  },
+  "BTN08680": {
+    "en": "Retry",
+    "ja": "リトライ",
+    "ko": "다시 시도하기",
+    "zh": "Retry",
+    "service_id": "BTN08680"
+  },
+  "BTN08681": {
+    "en": "Show disabled agents",
+    "ja": "非活性エージェントの表示",
+    "ko": "비활성화 에이전트 표시",
+    "zh": "Show disabled agents",
+    "service_id": "BTN08681"
+  },
+  "TTL08682": {
+    "en": "Resource load statistics",
+    "ja": "リソースロード統計",
+    "ko": "리소스 로드 통계",
+    "zh": "Resource load statistics",
+    "service_id": "TTL08682"
+  },
+  "NTC08683": {
+    "en": "Go to the selected project.",
+    "ja": "選択したプロジェクトへ移動します。",
+    "ko": "선택한 프로젝트로 이동합니다.",
+    "zh": "Go to the selected project.",
+    "service_id": "NTC08683"
+  },
+  "TLT08684": {
+    "en": "Please refer to the instructions page for instructions on activating the Server Inventory Map function.",
+    "ja": "サーバーインベントリマップ照会機能を有効にする方法については、ガイドページの内容を参照してください。",
+    "ko": "서버 인벤토리 맵 조회 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
+    "zh": "Please refer to the instructions page for instructions on activating the Server Inventory Map function.",
+    "service_id": "TLT08684"
+  },
+  "DSC08685": {
+    "en": "The Server Inventory Map menu is supported only on the following versions or higher for each operating system.",
+    "ja": "サーバーインベントリマップメニューは、OSごとに次のバージョン以降でのみサポートされています。",
+    "ko": "서버 인벤토리 맵 메뉴는 운영체제별로 다음 버전 이상에서만 지원됩니다.",
+    "zh": "The Server Inventory Map menu is supported only on the following versions or higher for each operating system.",
+    "service_id": "DSC08685"
+  },
+  "DSC08686": {
+    "en": "Download the installation file for Windows operating system through the download link and run it. After updating the agent, the service will restart.",
+    "ja": "ダウンロードリンクからWindows向けのインストールファイルをダウンロードして実行します。エージェントを更新してからサービスが再起動されます。",
+    "ko": "다운로드 링크를 통해 윈도우 운영체제용 설치 파일을 다운로드 후 실행하세요. 에이전트 업데이트 후 서비스가 재시작됩니다.",
+    "zh": "Download the installation file for Windows operating system through the download link and run it. After updating the agent, the service will restart.",
+    "service_id": "DSC08686"
+  },
+  "TTL08687": {
+    "en": "Setting Server Inventory Map options",
+    "ja": "サーバーインベントリマップオプションの設定",
+    "ko": "서버 인벤토리 맵 옵션 설정",
+    "zh": "Setting Server Inventory Map options",
+    "service_id": "TTL08687"
+  },
+  "DSC08688": {
+    "en": "The following settings are required to enable the Server Inventory Map Menu View feature.",
+    "ja": "サーバーインベントリマップメニュー照会機能を有効にするには、次の設定が必要です。",
+    "ko": "서버 인벤토리 맵 메뉴 조회 기능을 활성화하려면 다음 설정이 필요합니다.",
+    "zh": "The following settings are required to enable the Server Inventory Map Menu View feature.",
+    "service_id": "DSC08688"
+  },
+  "DSC08689": {
+    "en": "After setting additional options for each environment, restart the agent.",
+    "ja": "環境ごとにオプションを追加設定してから、エージェントを再起動してください。",
+    "ko": "환경별로 옵션 추가 설정 후 에이전트를 재시작하세요.",
+    "zh": "After setting additional options for each environment, restart the agent.",
+    "service_id": "DSC08689"
+  },
+  "TTL08690": {
+    "en": "backup",
+    "ja": "バックアップ",
+    "ko": "백업",
+    "zh": "backup",
+    "service_id": "TTL08690"
+  },
+  "TTL08691": {
+    "en": "recovery",
+    "ja": "復旧",
+    "ko": "복구",
+    "zh": "recovery",
+    "service_id": "TTL08691"
+  },
+  "ITM08692": {
+    "en": "weeks",
+    "ja": "週",
+    "ko": "주",
+    "zh": "weeks",
+    "service_id": "ITM08692"
+  },
+  "DSC08693": {
+    "en": "1st group",
+    "ja": "一次グループ",
+    "ko": "1차 그룹",
+    "zh": "1st group",
+    "service_id": "DSC08693"
+  },
+  "DSC08694": {
+    "en": "2nd group",
+    "ja": "二次グループ",
+    "ko": "2차 그룹",
+    "zh": "2nd group",
+    "service_id": "DSC08694"
+  },
+  "NTC08695": {
+    "en": "The maximum number of CSV lines that can be downloaded at one time from the current menu is {maxLimit} lines.",
+    "ja": "現在のメニューでは、一度にダウンロードできるCSV行数は最大{maxLimit}行です。",
+    "ko": "현재 메뉴에서 한 번에 다운로드 가능한 CSV 라인 수는 최대 {maxLimit}줄 입니다.",
+    "zh": "The maximum number of CSV lines that can be downloaded at one time from the current menu is {maxLimit} lines.",
+    "service_id": "NTC08695"
+  },
+  "TLT08696": {
+    "en": "You can check detailed statistical information for the selected group.",
+    "ja": "選択したグループの詳細な統計情報を確認できます。",
+    "ko": "선택한 그룹의 상세한 통계 정보를 확인할 수 있습니다.",
+    "zh": "You can check detailed statistical information for the selected group.",
+    "service_id": "TLT08696"
+  },
+  "TLT08697": {
+    "en": "This is a URL path that has not been normalized using a regular expression.",
+    "ja": "正規表現で正規化されていないURLパス（URL Path）。",
+    "ko": "정규 표현식을 통해 정규화하지 않은 URL 경로(URL Path)입니다.",
+    "zh": "This is a URL path that has not been normalized using a regular expression.",
+    "service_id": "TLT08697"
+  },
+  "DSC08698": {
+    "en": "To use the new Server Inventory Map feature<br/>\nRequires Server Inventory feature activation and agent updates.",
+    "ja": "新しいサーバーインベントリマップ機能を使用するには<br/>\nサーバー構成情報機能の有効化とエージェントの更新が必要です。",
+    "ko": "새로운 서버 인벤토리 맵 기능을 사용하기 위해서는<br/>\n서버 구성 정보 기능 활성화 및 에이전트 업데이트가 필요합니다.",
+    "zh": "To use the new Server Inventory Map feature<br/>\nRequires Server Inventory feature activation and agent updates.",
+    "service_id": "DSC08698"
+  },
+  "DSC08699": {
+    "en": "Support agent information: Linux {linux_version} or higher, AIX {aix_version} or higher, Solaris {solaris_version} or higher, Windows {windows_version}, FreeBSD {freebsd_version} or higher",
+    "ja": "サポートエージェント情報: Linux {linux_version}以上、AIX {aix_version}以上、Solaris {solaris_version}以上、Windows {windows_version}、FreeBSD {freebsd_version}以上",
+    "ko": "지원 에이전트 정보 : Linux {linux_version} 이상, AIX {aix_version} 이상, Solaris {solaris_version} 이상, Windows {windows_version}, FreeBSD {freebsd_version} 이상",
+    "zh": "Support agent information: Linux {linux_version} or higher, AIX {aix_version} or higher, Solaris {solaris_version} or higher, Windows {windows_version}, FreeBSD {freebsd_version} or higher",
+    "service_id": "DSC08699"
+  },
+  "DSC08700": {
+    "en": "Please refer to the instructions page for instructions on activating the server inventory map feature.",
+    "ja": "サーバーインベントリマップ機能を有効にする方法については、ガイドページの内容を参照してください。",
+    "ko": "서버 인벤토리 맵 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
+    "zh": "Please refer to the instructions page for instructions on activating the server inventory map feature.",
+    "service_id": "DSC08700"
+  },
+  "CNT08701": {
+    "en": "A subscription in AWS Marketplace is required, and once the subscription is confirmed, you can use the WhaTap service.",
+    "ja": "AWS Marketplace でサブスクリプションが必要です。サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
+    "ko": "AWS Marketplace 내 구독이 필요하며, 구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
+    "zh": "A subscription in AWS Marketplace is required, and once the subscription is confirmed, you can use the WhaTap service.",
+    "service_id": "CNT08701"
+  },
+  "CNT08702": {
+    "en": "To cancel your subscription, please follow these steps: [AWS Marketplace] → [Subscription Management] → [Select Product] → [Cancel Subscription]",
+    "ja": "購読をキャンセルするには、次の手順に従います。 [AWS Marketplace] → [サブスクリプション管理] → [製品選択] → [サブスクリプションのキャンセル]",
+    "ko": "구독을 취소하려면, 다음 단계를 따르세요. [AWS Marketplace] → [구독 관리] → [제품 선택] → [구독 취소]",
+    "zh": "To cancel your subscription, please follow these steps: [AWS Marketplace] → [Subscription Management] → [Select Product] → [Cancel Subscription]",
+    "service_id": "CNT08702"
+  },
+  "BTN08703": {
+    "en": "resubscribe",
+    "ja": "再購読",
+    "ko": "재구독",
+    "zh": "resubscribe",
+    "service_id": "BTN08703"
+  },
+  "BTN08704": {
+    "en": "Confirm your subscription",
+    "ja": "購読を確認",
+    "ko": "구독 확인",
+    "zh": "Confirm your subscription",
+    "service_id": "BTN08704"
+  },
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
     "": "",
     "service_id": "#N/A"
+  },
+  "CNT08706": {
+    "en": "Please enter your IP address.",
+    "ja": "IPアドレスを入力してください。",
+    "ko": "IP 주소를 입력하세요.",
+    "zh": "Please enter your IP address.",
+    "service_id": "CNT08706"
+  },
+  "CNT08707": {
+    "en": "Enter the page group.",
+    "ja": "ページグループを入力してください。",
+    "ko": "페이지 그룹을 입력하세요.",
+    "zh": "Enter the page group.",
+    "service_id": "CNT08707"
+  },
+  "CNT08708": {
+    "en": "Enter the page URL Path.",
+    "ja": "ページURLパスを入力してください。",
+    "ko": "페이지 URL Path를 입력하세요.",
+    "zh": "Enter the page URL Path.",
+    "service_id": "CNT08708"
   },
   "freetrial": {
     "en": "Get Started for free",
