@@ -1699,6 +1699,18 @@
     "width": 740,
     "height": 333
   },
+  "apm-linked-projects-postgresql-pid-sid-en.png": {
+    "width": 1150,
+    "height": 1430
+  },
+  "apm-linked-projects-postgresql-pid-sid-ja.png": {
+    "width": 1150,
+    "height": 1430
+  },
+  "apm-linked-projects-postgresql-pid-sid.png": {
+    "width": 1150,
+    "height": 1417
+  },
   "apm-stack-functions-en.png": {
     "width": 1200,
     "height": 221
@@ -3829,15 +3841,15 @@
   },
   "browser-event-history-en.png": {
     "width": 1200,
-    "height": 519
+    "height": 707
   },
   "browser-event-history-ja.png": {
     "width": 1200,
-    "height": 520
+    "height": 707
   },
   "browser-event-history.png": {
     "width": 1200,
-    "height": 517
+    "height": 707
   },
   "browser-fid-widget-en.png": {
     "width": 1200,
@@ -4223,6 +4235,18 @@
     "width": 600,
     "height": 370
   },
+  "browser-statistics-pagegroup-header-en.png": {
+    "width": 600,
+    "height": 156
+  },
+  "browser-statistics-pagegroup-header-ja.png": {
+    "width": 600,
+    "height": 157
+  },
+  "browser-statistics-pagegroup-header.png": {
+    "width": 600,
+    "height": 157
+  },
   "browser-statistics-pagel-url-path-list-en.png": {
     "width": 800,
     "height": 84
@@ -4363,6 +4387,18 @@
     "width": 1200,
     "height": 219
   },
+  "browser-statistics-pageurlpath-header-en.png": {
+    "width": 600,
+    "height": 155
+  },
+  "browser-statistics-pageurlpath-header-ja.png": {
+    "width": 600,
+    "height": 155
+  },
+  "browser-statistics-pageurlpath-header.png": {
+    "width": 600,
+    "height": 155
+  },
   "browser-statistics-perf-metrics-filter-en.png": {
     "width": 400,
     "height": 412
@@ -4447,6 +4483,10 @@
     "width": 1200,
     "height": 1008
   },
+  "chagnelog-24q3-application.png": {
+    "width": 1261,
+    "height": 540
+  },
   "changelog-24q2-app-preset.png": {
     "width": 1234,
     "height": 725
@@ -4478,6 +4518,46 @@
   "changelog-24q2-url.png": {
     "width": 1208,
     "height": 630
+  },
+  "changelog-24q3-common-add_chart.gif": {
+    "width": 1200,
+    "height": 689
+  },
+  "changelog-24q3-common-metrics-chart.gif": {
+    "width": 1200,
+    "height": 661
+  },
+  "changelog-24q3-common1.png": {
+    "width": 1208,
+    "height": 463
+  },
+  "changelog-24q3-db-custom.png": {
+    "width": 1200,
+    "height": 713
+  },
+  "changelog-24q3-db-scm.png": {
+    "width": 1200,
+    "height": 571
+  },
+  "changelog-24q3-feature.png": {
+    "width": 857,
+    "height": 596
+  },
+  "changelog-24q3-k8s-summary.gif": {
+    "width": 2532,
+    "height": 1414
+  },
+  "changelog-24q3-server-hp-ux.png": {
+    "width": 787,
+    "height": 415
+  },
+  "changelog-24q3-server-inventory.png": {
+    "width": 1210,
+    "height": 444
+  },
+  "changelog-24q3-server.png": {
+    "width": 1012,
+    "height": 746
   },
   "changelog-app-stat-instance.png": {
     "width": 1191,
@@ -4987,6 +5067,18 @@
     "width": 1223,
     "height": 1030
   },
+  "dashboard-hitmap-trace-db-connection-en.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "dashboard-hitmap-trace-db-connection-ja.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "dashboard-hitmap-trace-db-connection.png": {
+    "width": 1243,
+    "height": 354
+  },
   "dashboard-transaction-map-en.png": {
     "width": 1200,
     "height": 1055
@@ -5410,6 +5502,18 @@
   "db-cloudsettings-select-service-ja.png": {
     "width": 600,
     "height": 140
+  },
+  "db-cloudsettings-select-service-oracle-en.png": {
+    "width": 600,
+    "height": 140
+  },
+  "db-cloudsettings-select-service-oracle-ja.png": {
+    "width": 600,
+    "height": 140
+  },
+  "db-cloudsettings-select-service-oracle.png": {
+    "width": 600,
+    "height": 145
   },
   "db-cloudsettings-select-service.png": {
     "width": 600,
@@ -6939,6 +7043,18 @@
     "width": 1200,
     "height": 1054
   },
+  "db-instance-monitoring-linked-project-en.png": {
+    "width": 1190,
+    "height": 378
+  },
+  "db-instance-monitoring-linked-project-ja.png": {
+    "width": 1190,
+    "height": 378
+  },
+  "db-instance-monitoring-linked-project.png": {
+    "width": 1190,
+    "height": 378
+  },
   "db-instance-monitoring-mongodb-en.png": {
     "width": 1200,
     "height": 1054
@@ -7158,6 +7274,102 @@
   "db-layout-set.png": {
     "width": 600,
     "height": 427
+  },
+  "db-linked-project-detail-active-tx-en.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-active-tx-ja.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-active-tx.png": {
+    "width": 982,
+    "height": 555
+  },
+  "db-linked-project-detail-call-stack-en.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-call-stack-ja.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-call-stack.png": {
+    "width": 982,
+    "height": 555
+  },
+  "db-linked-project-detail-sql-en.png": {
+    "width": 983,
+    "height": 204
+  },
+  "db-linked-project-detail-sql-ja.png": {
+    "width": 972,
+    "height": 205
+  },
+  "db-linked-project-detail-sql.png": {
+    "width": 982,
+    "height": 206
+  },
+  "db-linked-project-instance-monitoring-mysql-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-mysql-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-mysql.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-oracle-pro.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-postgresql-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-postgresql-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-postgresql.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-management-en.png": {
+    "width": 1200,
+    "height": 245
+  },
+  "db-linked-project-management-ja.png": {
+    "width": 1200,
+    "height": 246
+  },
+  "db-linked-project-management.png": {
+    "width": 1200,
+    "height": 245
+  },
+  "db-linked-projects-postgresql-pid-sid-en.png": {
+    "width": 1150,
+    "height": 1417
+  },
+  "db-linked-projects-postgresql-pid-sid-ja.png": {
+    "width": 1150,
+    "height": 1430
+  },
+  "db-linked-projects-postgresql-pid-sid.png": {
+    "width": 1150,
+    "height": 1417
   },
   "db-locktree-cluster-chart-en.png": {
     "width": 1200,
@@ -8747,13 +8959,49 @@
     "width": 800,
     "height": 171
   },
+  "event-history-add-acknowledge-added-en.png": {
+    "width": 170,
+    "height": 50
+  },
+  "event-history-add-acknowledge-added-ja.png": {
+    "width": 171,
+    "height": 49
+  },
+  "event-history-add-acknowledge-added.png": {
+    "width": 172,
+    "height": 50
+  },
+  "event-history-add-acknowledge-en.png": {
+    "width": 600,
+    "height": 640
+  },
+  "event-history-add-acknowledge-history-en.png": {
+    "width": 600,
+    "height": 314
+  },
+  "event-history-add-acknowledge-history-ja.png": {
+    "width": 600,
+    "height": 310
+  },
+  "event-history-add-acknowledge-history.png": {
+    "width": 600,
+    "height": 313
+  },
+  "event-history-add-acknowledge-ja.png": {
+    "width": 600,
+    "height": 638
+  },
+  "event-history-add-acknowledge.png": {
+    "width": 600,
+    "height": 636
+  },
   "event-history-en.png": {
     "width": 1200,
-    "height": 686
+    "height": 708
   },
   "event-history-ja.png": {
     "width": 1200,
-    "height": 686
+    "height": 708
   },
   "event-history-server-en.png": {
     "width": 1200,
@@ -8769,7 +9017,7 @@
   },
   "event-history.png": {
     "width": 1200,
-    "height": 683
+    "height": 708
   },
   "apm-faq-hitmap-error.png": {
     "width": 1201,
@@ -10613,15 +10861,43 @@
   },
   "k8s-event-history-en.png": {
     "width": 1200,
-    "height": 683
+    "height": 727
   },
   "k8s-event-history-ja.png": {
     "width": 1200,
-    "height": 683
+    "height": 709
   },
   "k8s-event-history.png": {
     "width": 1200,
-    "height": 680
+    "height": 709
+  },
+  "k8s-ingress-list-cl.png": {
+    "width": 800,
+    "height": 394
+  },
+  "k8s-ingress-list-dt-en.png": {
+    "width": 1200,
+    "height": 614
+  },
+  "k8s-ingress-list-dt-ja.png": {
+    "width": 1200,
+    "height": 625
+  },
+  "k8s-ingress-list-dt.png": {
+    "width": 1195,
+    "height": 593
+  },
+  "k8s-ingress-list-en.png": {
+    "width": 1200,
+    "height": 252
+  },
+  "k8s-ingress-list-ja.png": {
+    "width": 1200,
+    "height": 251
+  },
+  "k8s-ingress-list.png": {
+    "width": 1200,
+    "height": 251
   },
   "k8s-install-master-node-addition-en.png": {
     "width": 1200,
@@ -10883,6 +11159,18 @@
     "width": 1200,
     "height": 671
   },
+  "k8s-node-process-en.png": {
+    "width": 1200,
+    "height": 320
+  },
+  "k8s-node-process-ja.png": {
+    "width": 1200,
+    "height": 318
+  },
+  "k8s-node-process.png": {
+    "width": 1200,
+    "height": 328
+  },
   "k8s-node-timeline-config-en.png": {
     "width": 800,
     "height": 940
@@ -11080,20 +11368,20 @@
     "height": 675
   },
   "k8s-performance-summary-en.png": {
-    "width": 1211,
-    "height": 1360
+    "width": 1200,
+    "height": 990
   },
   "k8s-performance-summary-ja.png": {
-    "width": 1211,
-    "height": 1361
+    "width": 1200,
+    "height": 993
   },
   "k8s-performance-summary-shortcut.png": {
     "width": 177,
     "height": 103
   },
   "k8s-performance-summary.png": {
-    "width": 1211,
-    "height": 1360
+    "width": 1200,
+    "height": 993
   },
   "k8s-pod-init-perform-cl-en.png": {
     "width": 1308,
@@ -11204,16 +11492,16 @@
     "height": 1200
   },
   "k8s-resource-cl-sum-co-en.png": {
-    "width": 1201,
-    "height": 1069
+    "width": 1076,
+    "height": 1200
   },
   "k8s-resource-cl-sum-co-ja.png": {
-    "width": 1201,
-    "height": 1066
+    "width": 1079,
+    "height": 1200
   },
   "k8s-resource-cl-sum-co.png": {
-    "width": 1201,
-    "height": 1065
+    "width": 1080,
+    "height": 1201
   },
   "k8s-resource-container-list-add-filter-en.png": {
     "width": 405,
@@ -11637,15 +11925,99 @@
   },
   "linked-project-management-en.png": {
     "width": 1200,
-    "height": 366
+    "height": 346
   },
   "linked-project-management-ja.png": {
     "width": 1200,
-    "height": 366
+    "height": 345
   },
   "linked-project-management.png": {
     "width": 1200,
-    "height": 366
+    "height": 345
+  },
+  "linked-projects-check-widget-01-en.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-01-ja.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-01.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-02-en.png": {
+    "width": 1243,
+    "height": 478
+  },
+  "linked-projects-check-widget-02-ja.png": {
+    "width": 1243,
+    "height": 478
+  },
+  "linked-projects-check-widget-02.png": {
+    "width": 1243,
+    "height": 478
+  },
+  "linked-projects-check-widget-03-en-1.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-03-en.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-03.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-04-en.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "linked-projects-check-widget-04-ja.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "linked-projects-check-widget-04.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "linked-projects-check-widget-05-en.png": {
+    "width": 1200,
+    "height": 794
+  },
+  "linked-projects-check-widget-05-ja.png": {
+    "width": 1200,
+    "height": 794
+  },
+  "linked-projects-check-widget-05.png": {
+    "width": 1200,
+    "height": 794
+  },
+  "linked-projects-check-widget-06-en.png": {
+    "width": 1243,
+    "height": 664
+  },
+  "linked-projects-check-widget-06-ja.png": {
+    "width": 1243,
+    "height": 664
+  },
+  "linked-projects-check-widget-06.png": {
+    "width": 1243,
+    "height": 664
+  },
+  "linked-projects-database-info-en.png": {
+    "width": 800,
+    "height": 403
+  },
+  "linked-projects-database-info-ja.png": {
+    "width": 800,
+    "height": 401
+  },
+  "linked-projects-database-info.png": {
+    "width": 800,
+    "height": 464
   },
   "log-1st-grok-en.png": {
     "width": 835,
@@ -12571,11 +12943,47 @@
     "width": 1200,
     "height": 1019
   },
+  "metric-warning-notice-new-basic-screen-browser-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-browser-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-browser.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-db-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-db-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-db.png": {
+    "width": 1200,
+    "height": 635
+  },
   "metric-warning-notice-new-basic-screen-en.png": {
     "width": 1200,
     "height": 635
   },
   "metric-warning-notice-new-basic-screen-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-server-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-server-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-server.png": {
     "width": 1200,
     "height": 635
   },
