@@ -21,6 +21,8 @@ const frontMatter = {
 	id: 'service-1_104_x',
 	title: 'Service 1.104.X',
 	toc_max_heading_level: 2,
+	pagination_next: 'release-notes/service/service-1_102_x',
+	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
@@ -41,7 +43,14 @@ const metadata = {
     "id": "service-1_104_x",
     "title": "Service 1.104.X",
     "toc_max_heading_level": 2,
+    "pagination_next": "release-notes/service/service-1_102_x",
+    "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
+  },
+  "sidebar": "releaseSidebar",
+  "next": {
+    "title": "Service 1.102.X",
+    "permalink": "/whatap-docs/release-notes/service/service-1_102_x"
   }
 };
 const assets = {

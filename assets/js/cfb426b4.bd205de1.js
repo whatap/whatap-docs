@@ -22,6 +22,7 @@ const frontMatter = {
 	title: 'Service 1.114.x',
 	toc_max_heading_level: 2,
 	pagination_next: 'release-notes/service/service-1_112_x',
+	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
@@ -43,8 +44,10 @@ const metadata = {
     "title": "Service 1.114.x",
     "toc_max_heading_level": 2,
     "pagination_next": "release-notes/service/service-1_112_x",
+    "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
+  "sidebar": "releaseSidebar",
   "next": {
     "title": "Service 1.112.x",
     "permalink": "/whatap-docs/release-notes/service/service-1_112_x"
