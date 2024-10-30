@@ -1,6 +1,75 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[32551],{
 
+/***/ 9221:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    li: "li",
+    p: "p",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "기본 정보: 노드의 클러스터 버전, 기동 시간, 현재 상태, 스케줄링 가능 여부, 내부 IP 주소, 그리고 리전 및 존 정보를 제공합니다."
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "운영체제 및 하드웨어 정보: 노드가 실행되는 운영체제, OS 이미지, CPU 아키텍처, 코어 수, 총 메모리 크기를 제공합니다. 노드의 메모리와 CPU에 대한 할당 가능 및 현재 사용량을 확인할 수 있습니다."
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "리소스 사용 현황: 노드에서 실행 중인 모든 컨테이너의 요청(Request)과 할당 가능 자원(CPU, 메모리)의 차이를 통해 잔여 자원을 파악합니다. 실제 CPU 사용률과 메모리 사용률을 포함하여 리소스 사용 상태를 요약합니다."
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "디스크 사용 현황: 노드에 연결된 디스크 정보, 파일 시스템 유형, 디바이스 ID, 마운트 지점, 총 용량 및 사용 중인 용량, 그리고 사용률을 제공합니다."
+      }), "\n"]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "Pod 상태 및 리소스 여유: 노드의 할당 가능한 전체 Pod 수와 현재 실행 중인 Pod 수를 비교하여, 추가 실행 가능한 Pod 수를 확인할 수 있습니다. 또한 MemoryPressure, DiskPressure, PidPressure 등의 상태를 통해 노드의 안정성을 점검합니다."
+      }), "\n"]
+    }), "\n"]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
+
 /***/ 16165:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -471,8 +540,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16165);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_k8s_node_summary_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9221);
+/* harmony import */ var _common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16165);
 
 
 const frontMatter = {
@@ -647,6 +717,7 @@ const assets = {
 
 
 
+
 const toc = [{
   "value": "기본 화면 안내",
   "id": "기본-화면-안내",
@@ -695,9 +766,14 @@ const toc = [{
   "value": "요약 보기 및 상세 분석",
   "id": "요약-보기-및-상세-분석",
   "level": 2
-}, ..._common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+}, {
+  "value": "Node 요약 분석",
+  "id": "node-summary-analysis",
+  "level": 4
+}, ..._common_items_import_k8s_node_summary_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    a: "a",
     admonition: "admonition",
     code: "code",
     em: "em",
@@ -719,7 +795,7 @@ function _createMdxContent(props) {
     thead: "thead",
     tr: "tr",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname, Column, Columns, ImgLang, UI} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
@@ -1341,7 +1417,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "",
+        id: "node-target-info",
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL06782",
           className: "uitext"
@@ -1350,8 +1426,26 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "TTL06782",
           className: "uitext"
-        }), " 탭에서 사용자가 선택한 노드의 주요 속성 정보를 확인할 수 있습니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        }), " 탭에서 사용자가 선택한 노드의 주요 속성 정보를 확인할 수 있습니다. 또한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "resource-node-list",
+          children: "노드 목록"
+        }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "container-map",
+          children: "컨테이너 맵"
+        }), " 메뉴로 이동할 수 있습니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h4",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+        id: "node-summary-analysis",
+        children: "Node 요약 분석"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["노드의 자원 할당 및 사용 현황 요약 정보를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Node 요약 분석"
+          })
+        }), "을 통해 확인할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_k8s_node_summary_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
         type: "note",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
@@ -1360,13 +1454,13 @@ function _createMdxContent(props) {
             })
           }), " 지표는 쿠버네티스 에이전트 버전 1.7.9 이상부터 지원합니다."]
         })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_k8s_node_details_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {})]
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

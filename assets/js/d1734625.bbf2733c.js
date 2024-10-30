@@ -45,6 +45,9 @@ function _createMdxContent(props) {
         }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "object-manifest",
           children: "오브젝트 매니페스트"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "container-map-target-info#node-summary-analysis",
+          children: "Nod 요약 분석"
         }), " 정보를 확인하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
           href: "resource-node-list",
           children: "노드 목록"
