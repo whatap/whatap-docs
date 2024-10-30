@@ -12209,9 +12209,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(95190)
     ],
     "0625fd1e": [
-        ()=>__webpack_require__.e(/* import() | 0625fd1e */ 82550).then(__webpack_require__.bind(__webpack_require__, 74370)),
+        ()=>__webpack_require__.e(/* import() | 0625fd1e */ 82550).then(__webpack_require__.bind(__webpack_require__, 99388)),
         "@site/docs/kubernetes/log.mdx",
-        /*require.resolve*/(74370)
+        /*require.resolve*/(99388)
     ],
     "062f85bc": [
         ()=>__webpack_require__.e(/* import() | 062f85bc */ 75781).then(__webpack_require__.bind(__webpack_require__, 45140)),
