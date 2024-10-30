@@ -49,8 +49,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Service Release Notes",
-    "permalink": "/whatap-docs/release-notes/service/"
+    "title": "Service 2.10.X",
+    "permalink": "/whatap-docs/release-notes/service/service-2_10_x"
   },
   "next": {
     "title": "Service 2.8.X",

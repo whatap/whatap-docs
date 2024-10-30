@@ -48,6 +48,10 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
+  "previous": {
+    "title": "Service Release Notes",
+    "permalink": "/whatap-docs/release-notes/service/"
+  },
   "next": {
     "title": "Service 2.9.X",
     "permalink": "/whatap-docs/release-notes/service/service-2_9_x"
@@ -982,6 +986,19 @@ function _createMdxContent(props) {
               width: "2358",
               height: "771"
             })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+              priority: "1",
+              children: "Changed"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_cluster",
+              className: "uitext"
+            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_nodeTimeline",
+              className: "uitext"
+            }), " 메뉴에서 최소 선택할 수 있는 시간 단위를 5분으로 고정하도록 수정"]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
