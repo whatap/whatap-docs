@@ -40,7 +40,7 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
         if (type) {
             // console.log(sid, '222222');
             let oType = whatapLocale[`${type}`][`${currentLocale}`];
-            oText = whatapLocale[sid][`${currentLocale}`].replace(/(\{type\}|\{object\})/g, oType)
+            oText = whatapLocale[sid][`${currentLocale}`].replace(/(\{type\}|\{object\}|\{category\})/g, oType)
             if (replace == "({count})") {
                 oText = oText.replace(replace, '(N)').trim();
             }
@@ -60,6 +60,9 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
             }
         } else {
             oText = whatapLocale[sid][`${currentLocale}`];
+        }
+        if (sid == "TTL08288") {
+            oText = whatapLocale[sid][`${currentLocale}`].replace('{n}', replace);
         }
         if (sid == "BTN07717") {
             oText = whatapLocale[sid][`${currentLocale}`].replace('{days}', days);

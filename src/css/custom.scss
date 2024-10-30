@@ -2832,6 +2832,23 @@ main {
         }
       }
     }
+    .c3-20-15-65 {
+      table {
+        tr {
+          td {
+            &:first-of-type {
+              width: 20%;
+            }
+            &:nth-of-type(2) {
+              width: 15%;
+            }
+            &:last-of-type {
+              width: 65%;
+            }
+          }
+        }
+      }
+    }
     .c3-30-60-10 {
       table {
         tr {
@@ -3270,12 +3287,18 @@ main {
       opacity: 0;
     }
   }
+  .tableScroll {
+    overflow-x: scroll;
+  }
 }
 @media (max-width: 559px) and (max-width: 360px) {
   main {
     .markdown {
       .flex-container-s {
         grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .tableScroll {
+        overflow-x: scroll;
       }
     }
   }
@@ -3287,7 +3310,9 @@ main {
       .flex-container-s {
         grid-template-columns: repeat(1, 1fr) !important;
       }
-
+      .tableScroll {
+        overflow-x: scroll;
+      }
     }
   }
 }
