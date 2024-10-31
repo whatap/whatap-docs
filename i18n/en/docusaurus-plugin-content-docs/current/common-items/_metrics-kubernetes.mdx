@@ -489,3 +489,86 @@ Metric collection starts only when HPA is added to the ClusterRole used by WhaTa
 | lastScaleTime             | Positive number      | Last scaled TimeStamp                       | -       |
 | maxReplicas               | Positive number      | Maximum Replica Count                       | -       |
 | minReplicas               | Positive number      | Minimum Replica Count                       | -       |
+
+### Process (`kube_process`) metrics {#kube_process}
+
+:::note 
+
+Kubernetes agent 1.7.12 or later is required. For more information about agent updates, see [the following](agent-update). 
+
+:::
+
+Kubernetes-related processes that exist in the node are collected during monitoring. 
+
+- Target: Cluster project, Namespace project 
+
+- Collection interval: 5 seconds 
+
+- Statistical data: 5 minutes 
+
+#### Tags {#kube_process_stat-tags}
+
+| Tag name   | Description                               | Type      | Remarks                                                  |
+| ---------- | ----------------------------------------- | --------- | -------------------------------------------------------- |
+| ppid       | Parent process ID                         | String    | /proc/[pid]/status::PPid                                 |
+| pid        | Process ID                                | String    | /proc/[pid]/status::Pid                                  |
+| cmd1       | Command name                              | String    | /proc/[pid]/status::Name                                 |
+| cmd2       | Command line (full command and arguments) | String    | /proc/[pid]/cmdline                                      |
+| user       | User ID or username                       | String    | /proc/[pid]/status::Uid                                  |
+| onodeName  | Node name of the process                  | String    | Environment variable of the container system (`NODE_IP`) |
+| createTime | Process start time                        | Timestamp | Field calculated through /proc/uptime                    |
+
+#### Fields {#kube_process_stat-fields}
+
+| Field name          | Description                                    | Unit        | Type   | Remarks                                    |
+| ------------------- | ---------------------------------------------- | ----------- | ------ | ------------------------------------------ |
+| cpu                 | CPU Utilization                                | Percent (%) | float  | Field calculated through /proc/[pid]/stat  |
+| memory              | Memory utilization                             | Percent (%) | float  | Field calculated through /proc/[pid]/statm |
+| rss                 | Actual memory usage (Resident Set Size)        | Byte (B)    | long   | /proc/[pid]/status::VmRSS                  |
+| uid                 | User ID or username                            | No          | String | /proc/[pid]/status::Uid                    |
+| state               | Process status                                 | No          | String | /proc/[pid]/status::State                  |
+| SharedMemory        | Shared memory size                             | Byte (B)    | long   | Field calculated through /proc/[pid]/statm |
+| openFileDescriptors | Number of file descriptors open by the process | No          | int    | Field calculated through /proc/[pid]/fd    |
+| vmSize              | Virtual memory size                            | Byte (B)    | long   | /proc/[pid]/status의 VmSize                 |
+| threads             | Number of threads created by the process       | No          | int    | /proc/[pid]/status의 Threads                |
+
+##### Linux process status in the Kubernetes environment
+
+On Linux, the `State` field in the _/proc/[pid]/status_ file displays the current state of the process. The meanings of each status are as follows:
+
+| Code             | Description         | Description detail                                                                                    |
+| ---------------- | ------------------- | ----------------------------------------------------------------------------------------------------- |
+| R (Running)      | Running             | The process is running or ready to run.                                                               |
+| S (Sleeping)     | Waiting             | Interruptible sleep state, waiting for an event.                                                      |
+| D (Disk Sleep)   | Disk sleeping       | Non-interruptible sleep state, waiting for an I/O operation.                                          |
+| R (Zombie)       | Zombie state        | The process has been terminated, but the parent process has not yet collected its termination status. |
+| T (Stopped)      | Stopped             | The process is stopped by a job control signal (such as SIGSTOP) or debugger.                         |
+| t (Tracing stop) | Tracing stopped     | The state in which tracing is performed by the debugger (indicated by a lowercase t).                 |
+| X (Dead)         | Dead state          | The process is dead (usually invisible).                                                              |
+| x (Dead)         | Dead state          | The kernel thread is dead (usually invisible).                                                        |
+| K (WakeKill)     | Forcibly terminated | Wake-up signal is ignored and immediately dead.                                                       |
+| W (Waking)       | Waking              | The process is being woken up after receiving a wake-up signal.                                       |
+| I (Idle)         | Idle state          | Kernel thread is idle (usually invisible to user space processes).                                    |
+
+:::note 
+
+Because Kubernetes manages the resources of containers and nodes efficiently, many processes running in containers are actually in waiting state. As a result, most processes may be in `Sleeping` state.
+
+:::
+
+### agent_status_summary {#agent_status_summary}
+
+This category collects metrics related to agent status every 10 seconds.
+
+#### Fields {#agent_status_summary_filed}
+
+| Field name    |       Unit      | Description                                              | Remarks                                     |
+| ------------- | :-------------: | -------------------------------------------------------- | ------------------------------------------- |
+| `inActTime`   | Millisecond(ms) | Amount of time the agent remains inactive                | -                                           |
+| `isActive`    |        -        | Whether the agent is active or not                       | `true` / `false`                            |
+| `isRestart`   |        -        | Whether the agent is restarted or not                    | `true` / `false`                            |
+| `lastActTime` | Millisecond(ms) | Time when the agent was last activated                   | `0`: If disabled                            |
+| `oid`         |        -        | Unique IDs for each agent in the project                 | -                                           |
+| `oType`       |        -        | Agent type                                               | `1`: Application agent / `2`: See `subType` |
+| `startTime`   | Millisecond(ms) | Timestamp indicating the time when the agent was started | -                                           |
+| `subType`     |        -        | Agent type                                               | `9`: Node agent / `10`: Master agent        |

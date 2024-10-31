@@ -77,41 +77,11 @@ If a string type (*String*) metric has a specific string, it is designated as <s
 | MemoryPressure       | `true` / `false`         | `true`       |
 | Unschedulable        | `true` / `false`         | `true`       |
 
-{/* 
-
-- <span class='normal'>Normal</span>: <span class='normal'>Blue</span>
-
-- <span class='slow'>Warning</span>: <span class='slow'>Orange</span>
-
-- <span class='vslow'>Error</span>: <span class='vslow'>Red</span>
-
-*/}
-
 ##### Node status display priority
 
 Its highest priority is the <span class='vslow'>Error</span> section. If any of the metrics falls into the <span class='vslow'>Error</span> section, the node appears in <span class='vslow'>red</span> at first. In the following example, both ![Leader line a](/img/char-a.svg) and ![Leader line b](/img/char-b.svg) nodes are marked as <span class='vslow'>Error</span>. 
 
 ![Node status display priority sc](/img/k8s-node-map-custom-err-col.png)
-
-{/* * **우선 순위** 예시 이미지 사용해서 노드 A, B 비교 */}
-
-{/* 
-
-If a string type (*String*) metric has a specific string, it is designated as <span class='vslow'>Error</span>. For example, if the ***Status (string)*** metric contains a text, `NotReady`, the node is marked as <span class='vslow'>Error</span> and displayed in <span class='vslow'>red</span>. 
-
-*/}
-
-{/* 
-
-:::note 
-
-**Priority**
-
-예시 이미지 사용해서 노드 A, B 비교
-
-::: 
-
-*/}
 
 #### Label
 

@@ -57,7 +57,7 @@ The following agent options allow you to trace the execution paths of each trans
 
   Default `1000`(1 second) / Min `100`(0.1 second)
 
-  It collects data only when the response time is longer than the option value you set. It collects up to 100 cases per second.
+  When the `expand_transaction_level` option is `true`, data is collected only when the response time is longer than the set time. The data is collected up to 100 cases per second.
 
 ## Exceptional handling {#exception}
 
