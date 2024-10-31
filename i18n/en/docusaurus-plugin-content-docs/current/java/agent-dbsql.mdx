@@ -60,11 +60,17 @@ The following provides various options for Java agents to handle the database an
 
   It records DB connection open data in the trace details.
 
-- **profile_dbc_close** <span class='type'>Boolean</span>
+- **trace_dbc_close_enabled** <span class='type'>Boolean</span> <code class="my">Java Agent v2.2.3 or later</code>
 
   Default `false`
 
   It works only when `profile_connection_open_enabled` is `true`. DB connection close-up data is recorded in the transaction trace details.
+
+  :::note
+
+  **For versions earlier than Java Agent 2.2.3**, use the `profile_dbc_close` option name.
+
+  :::
 
 - **profile_sql_param_enabled** <span class='type'>Boolean</span><ScrollToLink anchor='profile-sql-param' />
 

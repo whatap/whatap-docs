@@ -1,4 +1,14 @@
+<Xclude product="cubrid,cubrid-v1">
+
 ## Installing the additional agent (XOS) and applying other options {#apply-xos-agent}
+
+</Xclude>
+
+<InDoc product="cubrid,cubrid-v1">
+
+## XOS agent installation (optional) {#apply-cubrid-xos-agent}
+
+</InDoc>
 
 To additionally monitor the resources of the database server, run a separate XOS agent process on the database server to collect data.
 
@@ -108,9 +118,11 @@ aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIden
 
 </InDoc>
 
-<InDoc product="redis,mongodb,cubrid">
+<InDoc product="redis,mongodb,cubrid,cubrid-v1">
 
-<ImgLang img='xos-agent.png' desc='' />
+<InDoc product="redis,mongodb"><ImgLang img='xos-agent.png' desc='' /></InDoc>
+
+<InDoc product="cubrid,cubrid-v1"><ImgLang img='xos-agent-cubrid.png' desc='' /></InDoc>
 
 1. Set the following options in the _whatap.conf_ file in the path where the DBX agent has been installed.
 
