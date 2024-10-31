@@ -20,7 +20,7 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'service-2_10_x',
 	title: 'Service 2.10.X',
-	toc_max_heading_level: 3,
+	toc_max_heading_level: 2,
 	pagination_next: 'release-notes/service/service-2_9_x',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
@@ -29,7 +29,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_10_x",
   "title": "Service 2.10.X",
-  "description": "Service 2.10.1",
+  "description": "{/* ## Service 2.10.2",
   "source": "@site/docs/release-notes/service/service-2.10.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_10_x",
@@ -42,7 +42,7 @@ const metadata = {
   "frontMatter": {
     "id": "service-2_10_x",
     "title": "Service 2.10.X",
-    "toc_max_heading_level": 3,
+    "toc_max_heading_level": 2,
     "pagination_next": "release-notes/service/service-2_9_x",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
@@ -61,6 +61,17 @@ const assets = {
 
 };
 
+/*## Service 2.10.2
+
+2024년 10월 31일
+
+<div className="indentTab">
+
+### `공통`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code> 메뉴에서 <Cmdname sid="BTN07761" className="uitext" /> 기능을 이용할 때, <Cmdname sid="overwrite" className="uitext" /> 버튼을 클릭해도 확인 창이 나타나지 않는 문제 수정
+
+</div>*/
 
 
 const toc = [{
@@ -184,7 +195,7 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-2101",

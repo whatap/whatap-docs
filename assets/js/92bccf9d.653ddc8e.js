@@ -1367,10 +1367,85 @@ const assets = {
 
 
 
-const linked_projects_toc = [..._linked_projects_desc/* toc */.RM, ..._linked_projects_add/* toc */.RM, ...toc, ..._linked_projects_remove/* toc */.RM];
+const linked_projects_toc = [..._linked_projects_desc/* toc */.RM, ..._linked_projects_add/* toc */.RM, {
+  "value": "에이전트 옵션 설정하기",
+  "id": "에이전트-옵션-설정하기",
+  "level": 2
+}, ...toc, ..._linked_projects_remove/* toc */.RM];
 function linked_projects_createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    code: "code",
+    em: "em",
+    h2: "h2",
+    img: "img",
+    li: "li",
+    p: "p",
+    pre: "pre",
+    section: "section",
+    ul: "ul",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  }, {Cmdname} = _components;
+  if (!Cmdname) linked_projects_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: ["\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_desc/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_add/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", "\n", "\n", "\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_remove/* default */.Ay, {})]
+    children: ["\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_desc/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_add/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,jsx_runtime.jsx)(_components.h2, {
+        id: "에이전트-옵션-설정하기",
+        children: "에이전트 옵션 설정하기"
+      }), (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["데이터베이스 프로젝트와 연계 분석을 위해 다음과 같이 에이전트 설정 파일(", (0,jsx_runtime.jsx)(_components.em, {
+          children: "whatap.conf"
+        }), ")에 옵션을 설정해야 합니다. 또는 ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_management",
+          className: "uitext"
+        }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+          sid: "side_agentSetting",
+          className: "uitext"
+        }), " 메뉴에서 설정할 수 있습니다."]
+      }), (0,jsx_runtime.jsx)(_components.pre, {
+        children: (0,jsx_runtime.jsx)(_components.code, {
+          className: "language-ini",
+          metastring: "title=\"whatap.conf\"",
+          children: "dbc_sid_enabled=true\ndebug_dbc_sid_enabled=true\n"
+        })
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "dbc_sid_enabled"
+            }), ": SID 발급을 위한 옵션입니다. 값을 ", (0,jsx_runtime.jsx)(_components.code, {
+              children: "true"
+            }), "로 설정하면 연계 분석할 수 있습니다."]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: [(0,jsx_runtime.jsx)(_components.code, {
+              children: "debug_dbc_sid_enabled"
+            }), ": Java 에이전트 로그에 SID 관련 정보를 로깅하는 옵션입니다. 필수 옵션은 아닙니다."]
+          }), "\n"]
+        }), "\n"]
+      }), (0,jsx_runtime.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,jsx_runtime.jsxs)(_components.p, {
+          children: [(0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_management",
+            className: "uitext"
+          }), " > ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_agentSetting",
+            className: "uitext"
+          })]
+        }), (0,jsx_runtime.jsx)(_components.p, {
+          children: (0,jsx_runtime.jsx)(_components.img, {
+            alt: "Agent settings",
+            src: (__webpack_require__(87529)/* ["default"] */ .A) + "",
+            width: "1642",
+            height: "327"
+          })
+        })]
+      }), (0,jsx_runtime.jsx)(MDXContent, {}), (0,jsx_runtime.jsx)(_linked_projects_remove/* default */.Ay, {})]
+    })]
   });
 }
 function linked_projects_MDXContent(props = {}) {
@@ -1384,6 +1459,9 @@ function linked_projects_MDXContent(props = {}) {
       ...props
     })
   }) : linked_projects_createMdxContent(props);
+}
+function linked_projects_missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
 }
 
 
@@ -1417,6 +1495,16 @@ function linked_projects_MDXContent(props = {}) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIwIDIySDRWNmgydjE0aDEyVjZoMnYxNnptMi0xOGgtNWwtMS4xNDMtMkg4LjE0M0w3IDRIMnYyaDIwVjR6IgogICAgZmlsbD0iIzc1NzU3NSIgLz4KICA8cGF0aCBkPSJNOSA4aDJ2MTBIOVY4ek0xMyA4aDJ2MTBoLTJWOHoiIGZpbGw9IiM3NTc1NzUiIC8+Cjwvc3ZnPg==");
+
+/***/ }),
+
+/***/ 87529:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/linked-projects-agent-settings-f922696c7802e18654719680e4ff2a76.png");
 
 /***/ }),
 
