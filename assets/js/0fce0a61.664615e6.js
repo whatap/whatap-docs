@@ -283,13 +283,25 @@ function _createMdxContent(props) {
             class: "Feature",
             type: "1",
             children: "Feature"
-          }), " 다음 메뉴에서 노드 요약 분석 기능 추가"]
+          }), " 다음 메뉴에서 노드 요약 분석 기능 추가 (", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_containerMap",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeMap",
+            className: "uitext"
+          }), ")"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
             type: "1",
             children: "Feature"
-          }), " 다음 메뉴 경로에 프로세스 정보 추가"]
+          }), " 다음 메뉴 경로에 프로세스 정보 추가 (", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeList",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeMap",
+            className: "uitext"
+          }), ")"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
@@ -325,7 +337,13 @@ function _createMdxContent(props) {
             class: "Feature",
             type: "1",
             children: "Feature"
-          }), " 다음 메뉴 경로에서 Pod의 QoS Class 관련 안내 부분에 QoS Class 안내 팝오버 추가"]
+          }), " 다음 메뉴 경로에서 Pod의 QoS Class 관련 안내 부분에 QoS Class 안내 팝오버 추가 (", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_pendingPod",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_podInitPerf",
+            className: "uitext"
+          }), ")"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: [(0,jsx_runtime.jsx)("code", {
             class: "Feature",
@@ -766,7 +784,7 @@ function _createMdxContent(props) {
         children: (0,jsx_runtime.jsxs)("a", {
           href: "https://docs.whatap.io/release-notes/service/service-2_9_x",
           children: [(0,jsx_runtime.jsx)("img", {
-            src: "/whatap-docs/img/ic-link.svg",
+            src: "../img/ic-link.svg",
             width: "18px",
             height: "18px",
             class: "ico-link medium-zoom-image"
@@ -778,7 +796,13 @@ function _createMdxContent(props) {
             class: "Feature",
             type: "1",
             children: "Feature"
-          }), " 다음 메뉴 경로 진입 시 신규 기능에 대한 안내 팝업 추가"]
+          }), " 다음 메뉴 경로 진입 시 신규 기능에 대한 안내 팝업 추가 (", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeMap",
+            className: "uitext"
+          }), ", ", (0,jsx_runtime.jsx)(Cmdname, {
+            sid: "side_nodeTimeline",
+            className: "uitext"
+          }), ")"]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
