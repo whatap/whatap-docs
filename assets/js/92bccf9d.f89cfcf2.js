@@ -338,7 +338,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 49056:
+/***/ 86375:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -360,9 +360,7 @@ var jsx_runtime = __webpack_require__(74848);
 var lib = __webpack_require__(28453);
 // EXTERNAL MODULE: ./docs/common-items/_linked-projects-desc.mdx
 var _linked_projects_desc = __webpack_require__(36501);
-// EXTERNAL MODULE: ./docs/common-items/_linked-projects-add.mdx
-var _linked_projects_add = __webpack_require__(82725);
-;// CONCATENATED MODULE: ./docs/common-items/_linked-projects-apm2db.mdx
+;// CONCATENATED MODULE: ./docs/common-items/_import_linked-projects-role-oracle.mdx
 
 
 const frontMatter = {};
@@ -372,7 +370,61 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
-const toc = [{
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    code: "code",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return (0,jsx_runtime.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,jsx_runtime.jsx)(_components.mdxAdmonitionTitle, {}), (0,jsx_runtime.jsx)(_components.p, {
+      children: (0,jsx_runtime.jsx)(_components.strong, {
+        children: "권한 설정"
+      })
+    }), (0,jsx_runtime.jsx)(_components.p, {
+      children: "Oracle 및 Oralce Pro 플랫폼의 경우 연계 프로젝트를 추가하기 위해서는 다음과 같은 권한 설정이 필요합니다."
+    }), (0,jsx_runtime.jsx)(_components.pre, {
+      children: (0,jsx_runtime.jsx)(_components.code, {
+        className: "language-bash",
+        children: "grant select on sys.v_$session to DB접속계정;\n# ex) grant select on sys.v_$session to petapp;\n"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,lib/* useMDXComponents */.R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+    ...props,
+    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+// EXTERNAL MODULE: ./docs/common-items/_linked-projects-add.mdx
+var _linked_projects_add = __webpack_require__(82725);
+;// CONCATENATED MODULE: ./docs/common-items/_linked-projects-apm2db.mdx
+
+
+const _linked_projects_apm2db_frontMatter = {};
+const _linked_projects_apm2db_contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const _linked_projects_apm2db_toc = [{
   "value": "연계 프로젝트 지표 확인하기",
   "id": "checklinkedproject",
   "level": 2
@@ -393,7 +445,7 @@ const toc = [{
   "id": "sql-스텝에서-확인하기",
   "level": 5
 }];
-function _createMdxContent(props) {
+function _linked_projects_apm2db_createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
@@ -1281,17 +1333,17 @@ function _createMdxContent(props) {
     })]
   });
 }
-function MDXContent(props = {}) {
+function _linked_projects_apm2db_MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
     ...(0,lib/* useMDXComponents */.R)(),
     ...props.components
   };
   return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
+    children: (0,jsx_runtime.jsx)(_linked_projects_apm2db_createMdxContent, {
       ...props
     })
-  }) : _createMdxContent(props);
+  }) : _linked_projects_apm2db_createMdxContent(props);
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
@@ -1356,6 +1408,7 @@ const assets = {
 };
 
 /*description*/
+/*권한 설정하기*/
 /*연계 프로젝트 추가하기*/
 /*연계 프로젝트 확인하기*/
 /*import LinkedProject from "../common-items/_linked-projects.mdx";*/
@@ -1367,11 +1420,12 @@ const assets = {
 
 
 
-const linked_projects_toc = [..._linked_projects_desc/* toc */.RM, ..._linked_projects_add/* toc */.RM, {
+
+const linked_projects_toc = [..._linked_projects_desc/* toc */.RM, ...toc, ..._linked_projects_add/* toc */.RM, {
   "value": "에이전트 옵션 설정하기",
   "id": "에이전트-옵션-설정하기",
   "level": 2
-}, ...toc, ..._linked_projects_remove/* toc */.RM];
+}, ..._linked_projects_apm2db_toc, ..._linked_projects_remove/* toc */.RM];
 function linked_projects_createMdxContent(props) {
   const _components = {
     admonition: "admonition",
@@ -1390,7 +1444,7 @@ function linked_projects_createMdxContent(props) {
   }, {Cmdname} = _components;
   if (!Cmdname) linked_projects_missingMdxReference("Cmdname", true);
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: ["\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_desc/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_add/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+    children: ["\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_desc/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_linked_projects_add/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,jsx_runtime.jsx)(_components.h2, {
         id: "에이전트-옵션-설정하기",
@@ -1484,7 +1538,7 @@ function linked_projects_createMdxContent(props) {
             height: "464"
           })
         })]
-      }), (0,jsx_runtime.jsx)(MDXContent, {}), (0,jsx_runtime.jsx)(_linked_projects_remove/* default */.Ay, {})]
+      }), (0,jsx_runtime.jsx)(_linked_projects_apm2db_MDXContent, {}), (0,jsx_runtime.jsx)(_linked_projects_remove/* default */.Ay, {})]
     })]
   });
 }

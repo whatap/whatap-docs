@@ -1,72 +1,6 @@
 "use strict";
 (self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[27045],{
 
-/***/ 39141:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": "권한 설정",
-  "id": "권한-설정",
-  "level": 2
-}];
-function _createMdxContent(props) {
-  const _components = {
-    code: "code",
-    h2: "h2",
-    p: "p",
-    pre: "pre",
-    section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-    className: "remark-sectionize-h2",
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "권한-설정",
-      children: "권한 설정"
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "연계 프로젝트를 추가하기 위해서는 다음과 같은 권한 설정이 필요합니다."
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        className: "language-bash",
-        children: "grant select on sys.v_$session to DB접속계정;\n# ex) grant select on sys.v_$session to petapp;\n"
-      })
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
-
 /***/ 82725:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -853,12 +787,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(36501);
-/* harmony import */ var _common_items_import_linked_projects_role_oracle_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(39141);
-/* harmony import */ var _common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(82725);
-/* harmony import */ var _common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10891);
-/* harmony import */ var _common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(33878);
+/* harmony import */ var _common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(82725);
+/* harmony import */ var _common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(10891);
+/* harmony import */ var _common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(33878);
 
 
 const frontMatter = {
@@ -914,7 +847,6 @@ const assets = {
 };
 
 /*description*/
-/*권한 설정하기*/
 /*연계 프로젝트 추가하기*/
 /*연계 프로젝트 삭제하기*/
 
@@ -923,16 +855,15 @@ const assets = {
 
 
 
-
-const toc = [..._common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_import_linked_projects_role_oracle_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
+const toc = [..._common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_linked_projects_role_oracle_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_5__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

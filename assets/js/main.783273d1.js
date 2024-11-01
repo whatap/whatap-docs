@@ -18534,9 +18534,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(6252)
     ],
     "92bccf9d": [
-        ()=>__webpack_require__.e(/* import() | 92bccf9d */ 3631).then(__webpack_require__.bind(__webpack_require__, 49056)),
+        ()=>__webpack_require__.e(/* import() | 92bccf9d */ 3631).then(__webpack_require__.bind(__webpack_require__, 86375)),
         "@site/docs/java/linked-projects.mdx",
-        /*require.resolve*/(49056)
+        /*require.resolve*/(86375)
     ],
     "92ebdb8a": [
         ()=>__webpack_require__.e(/* import() | 92ebdb8a */ 92928).then(__webpack_require__.bind(__webpack_require__, 83657)),
