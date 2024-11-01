@@ -6945,7 +6945,7 @@
   },
   "limited_to_value": {
     "en": "Limited to {value}",
-    "ja": "{value}件に制限",
+    "ja": "{value}件まで表示",
     "ko": "{value}건 제한",
     "zh": "Limited to {value}",
     "service_id": "TTL01033"
@@ -20449,7 +20449,7 @@
   },
   "recent_1_day": {
     "en": "Recent 1 day",
-    "ja": "最近1日間",
+    "ja": "最近24時間",
     "ko": "최근 하루",
     "zh": "Recent a day",
     "service_id": "TTL02992"
@@ -54041,10 +54041,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54881,10 +54881,10 @@
     "service_id": "DSC07958"
   },
   "DSC07959": {
-    "en": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
+    "en": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
     "ja": "次の内容に基づいて設定されたインストールファイルをダウンロードします。オプションは前のステップに戻って変更できます。",
     "ko": "다음 내용을 바탕으로 구성된 설치 파일을 다운로드합니다. 옵션은 이전 단계로 돌아가 변경할 수 있습니다.",
-    "zh": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
+    "zh": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
     "service_id": "DSC07959"
   },
   "TTL07960": {
@@ -55224,10 +55224,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55644,10 +55644,10 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
-    "zh": "Are you sure you want to delete this item?",
+    "zh": "Are you sure you want to delete that item?",
     "service_id": "CNT08068"
   },
   "TLT08069": {
@@ -55945,10 +55945,10 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
-    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "zh": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "service_id": "DSC08111"
   },
   "TTL08112": {
@@ -56610,10 +56610,10 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
-    "zh": "Number of events",
+    "zh": "Number of events occurring",
     "service_id": "TTL08207"
   },
   "NTC08208": {
@@ -56939,10 +56939,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57080,7 +57080,7 @@
   },
   "ITM08273": {
     "en": "Custom",
-    "ja": "カスタマイズ",
+    "ja": "カスタム",
     "ko": "사용자 정의",
     "zh": "Custom",
     "service_id": "ITM08273"
@@ -57724,7 +57724,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果を選択",
+    "ja": "検索結果の選択",
     "ko": "검색 결과 선택",
     "zh": "Select search results",
     "service_id": "CNT08366"
@@ -57836,16 +57836,16 @@
   },
   "DSC08382": {
     "en": "This is the stable agent version of WhaTap. If you choose the Stable version, your cluster will all have a single version of the agent installed, even if nodes are added in the future.<br/>(Image version: {version}, Deployment date: {date})",
-    "ja": "ワタップの安定化されたエージェントバージョン。 Stableバージョンを選択した場合、将来のノードが追加されても、そのクラスタにはすべて1つのバージョンのエージェントがインストールされます。<br/>（イメージバージョン：{version}、デプロイ日：{date}）",
+    "ja": "WhaTap MonitoringのStableのエージェントバージョンです。 Stableバージョンを選択した場合、今後ノードが追加されても、当該のクラスタにはすべて同様バージョンのエージェントがインストールされます。<br/>（イメージバージョン：{version}、配布日：{date}）",
     "ko": "와탭의 안정화된 에이전트 버전입니다. Stable 버전을 선택하는 경우 향후 노드가 추가되더라도 해당 클러스터에는 모두 단일 버전의 에이전트가 설치됩니다.<br/>(이미지 버전: {version}, 배포 날짜: {date})",
     "zh": "This is the stable agent version of WhaTap. If you choose the Stable version, your cluster will all have a single version of the agent installed, even if nodes are added in the future.<br/>(Image version: {version}, Deployment date: {date})",
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
-    "ja": "WhaTapの最新エージェントバージョンです。プレビューバージョンを選択した場合、将来ノードが追加されると、そのノードが起動した時点の最新のエージェントバージョンがインストールされます。 ",
+    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
-    "zh": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "zh": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "service_id": "DSC08383"
   },
   "ITM08384": {
@@ -58143,10 +58143,10 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
-    "zh": "It takes approximately 30 seconds to 1 minute to complete the task.",
+    "zh": "It will take approximately 30 seconds to 1 minute to complete the task.",
     "service_id": "DSC08426"
   },
   "CNT08427": {
@@ -58430,10 +58430,10 @@
     "service_id": "ITM08466"
   },
   "ITM08467": {
-    "en": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and number of Sockets for X86)",
+    "en": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and Socket count for X86)",
     "ja": "CPU枚数情報を細分化(CPUコア、論理的コア、X86 の場合はソケット数)して収集",
     "ko": "CPU 수량 정보 세분화 (CPU Cores, Logical Cores 및 X86 의 경우 Socket 수)하여 수집",
-    "zh": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and number of Sockets for X86)",
+    "zh": "Collect CPU quantity information in detail (CPU Cores, Logical Cores, and Socket count for X86)",
     "service_id": "ITM08467"
   },
   "ITM08468": {
@@ -59136,10 +59136,10 @@
     "service_id": "TLT08569"
   },
   "TLT08570": {
-    "en": "It represents the average time the browser spends retrieving cached resources while loading a web page, and refers to the time elapsed from fetchStart to domainLookupStart.",
+    "en": "It represents the average time the browser spends retrieving cached resources while loading a web page, and refers to the time from fetchStart to domainLookupStart.",
     "ja": "ブラウザのWebページロード中に、キャッシュされたリソースの取得にかかる時間を示します。",
     "ko": "브라우저가 웹 페이지를 불러오면서 캐시된 리소스를 검색하는데 소요한 평균 시간을 나타내며, fetchStart부터 domainLookupStart까지 소요된 시간을 의미합니다.",
-    "zh": "It represents the average time the browser spends retrieving cached resources while loading a web page, and refers to the time elapsed from fetchStart to domainLookupStart.",
+    "zh": "It represents the average time the browser spends retrieving cached resources while loading a web page, and refers to the time from fetchStart to domainLookupStart.",
     "service_id": "TLT08570"
   },
   "TLT08571": {
@@ -59164,10 +59164,10 @@
     "service_id": "TLT08573"
   },
   "TLT08574": {
-    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
+    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, and refers to the time taken from domInteractive to domComplete.",
     "ja": "ブラウザのWebページロード中に、サーバーからのリソースダウンロードにかかる時間を示します。",
     "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 소요한 평균 시간을 나타내며, domInteractive부터 domComplete까지 소요된 시간을 의미합니다.",
-    "zh": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
+    "zh": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, and refers to the time taken from domInteractive to domComplete.",
     "service_id": "TLT08574"
   },
   "TLT08575": {
@@ -59192,10 +59192,10 @@
     "service_id": "TLT08577"
   },
   "TLT08578": {
-    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
+    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, and refers to the time taken from domInteractive to domComplete.",
     "ja": "サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するまでかかる平均時間を示します。",
     "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 소요한 평균 시간을 나타내며, domInteractive부터 domComplete까지 소요된 시간을 의미합니다.",
-    "zh": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
+    "zh": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, and refers to the time taken from domInteractive to domComplete.",
     "service_id": "TLT08578"
   },
   "TLT08579": {
@@ -59270,7 +59270,7 @@
   },
   "DSC08589": {
     "en": "Simulate that the log is parsed successfully. Simulation must be performed, and additional pattern registration may be required depending on the simulation results.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "zh": "Simulate that the log is parsed successfully. Simulation must be performed, and additional pattern registration may be required depending on the simulation results.",
     "service_id": "DSC08589"
@@ -59305,7 +59305,7 @@
   },
   "DSC08594": {
     "en": "{highlight} and additional pattern registration may be required depending on simulation results.",
-    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "zh": "{highlight} and additional pattern registration may be required depending on simulation results.",
     "service_id": "DSC08594"
@@ -59647,10 +59647,10 @@
     "service_id": "DSC08642"
   },
   "DSC08643": {
-    "en": "Collect cloud metrics by installing an Azure Resource Manager template.",
+    "en": "Install the Azure Resource Manager template to collect cloud metrics.",
     "ja": "Azure Active Directory に App Registration を追加して、Azure Monitor メトリクスを収集します.",
     "ko": "Azure Resource Manager 템플릿을 설치하여 클라우드 메트릭을 수집합니다.",
-    "zh": "Collect cloud metrics by installing an Azure Resource Manager template.",
+    "zh": "Install the Azure Resource Manager template to collect cloud metrics.",
     "service_id": "DSC08643"
   },
   "DSC08644": {
@@ -59711,7 +59711,7 @@
   },
   "DSC08652": {
     "en": "<code class='_copy'>{ingressName}</code> Ingress was created at <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "zh": "<code class='_copy'>{ingressName}</code> Ingress was created at <code>{creationTime}</code>.",
     "service_id": "DSC08652"
@@ -60026,21 +60026,21 @@
   },
   "TLT08697": {
     "en": "This is a URL path that has not been normalized using a regular expression.",
-    "ja": "正規表現で正規化されていないURLパス（URL Path）。",
+    "ja": "正規表現で正規化されていないURLパス（URL Path）です。",
     "ko": "정규 표현식을 통해 정규화하지 않은 URL 경로(URL Path)입니다.",
     "zh": "This is a URL path that has not been normalized using a regular expression.",
     "service_id": "TLT08697"
   },
   "DSC08698": {
     "en": "To use the new Server Inventory Map feature<br/>\nRequires Server Inventory feature activation and agent updates.",
-    "ja": "新しいサーバーインベントリマップ機能を使用するには<br/>\nサーバー構成情報機能の有効化とエージェントの更新が必要です。",
+    "ja": "新しいサーバーインベントリマップ機能を使用するには<br/>\nサーバー構成情報機能の有効化と、エージェントの更新が必要です。",
     "ko": "새로운 서버 인벤토리 맵 기능을 사용하기 위해서는<br/>\n서버 구성 정보 기능 활성화 및 에이전트 업데이트가 필요합니다.",
     "zh": "To use the new Server Inventory Map feature<br/>\nRequires Server Inventory feature activation and agent updates.",
     "service_id": "DSC08698"
   },
   "DSC08699": {
     "en": "Support agent information: Linux {linux_version} or higher, AIX {aix_version} or higher, Solaris {solaris_version} or higher, Windows {windows_version}, FreeBSD {freebsd_version} or higher",
-    "ja": "サポートエージェント情報: Linux {linux_version}以上、AIX {aix_version}以上、Solaris {solaris_version}以上、Windows {windows_version}、FreeBSD {freebsd_version}以上",
+    "ja": "サポートエージェント情報: Linux {linux_version}以降、AIX {aix_version}以降、Solaris {solaris_version}以降、Windows {windows_version}、FreeBSD {freebsd_version}以降",
     "ko": "지원 에이전트 정보 : Linux {linux_version} 이상, AIX {aix_version} 이상, Solaris {solaris_version} 이상, Windows {windows_version}, FreeBSD {freebsd_version} 이상",
     "zh": "Support agent information: Linux {linux_version} or higher, AIX {aix_version} or higher, Solaris {solaris_version} or higher, Windows {windows_version}, FreeBSD {freebsd_version} or higher",
     "service_id": "DSC08699"
@@ -60061,7 +60061,7 @@
   },
   "CNT08702": {
     "en": "To cancel your subscription, please follow these steps: [AWS Marketplace] → [Subscription Management] → [Select Product] → [Cancel Subscription]",
-    "ja": "購読をキャンセルするには、次の手順に従います。 [AWS Marketplace] → [サブスクリプション管理] → [製品選択] → [サブスクリプションのキャンセル]",
+    "ja": "購読をキャンセルするには、次の手順に従ってください。「AWS Marketplace ＞ サブスクリプション管理 ＞ 製品選択 ＞ サブスクリプションのキャンセル」",
     "ko": "구독을 취소하려면, 다음 단계를 따르세요. [AWS Marketplace] → [구독 관리] → [제품 선택] → [구독 취소]",
     "zh": "To cancel your subscription, please follow these steps: [AWS Marketplace] → [Subscription Management] → [Select Product] → [Cancel Subscription]",
     "service_id": "CNT08702"
@@ -60075,7 +60075,7 @@
   },
   "BTN08704": {
     "en": "Confirm your subscription",
-    "ja": "購読を確認",
+    "ja": "購読の確認",
     "ko": "구독 확인",
     "zh": "Confirm your subscription",
     "service_id": "BTN08704"
@@ -60106,6 +60106,34 @@
     "ko": "페이지 URL Path를 입력하세요.",
     "zh": "Enter the page URL Path.",
     "service_id": "CNT08708"
+  },
+  "NTC08709": {
+    "en": "This environment does not support AWS Marketplace.",
+    "ja": "AWS Marketplace をサポートしていない環境です。",
+    "ko": "AWS Marketplace를 지원하지 않는 환경입니다.",
+    "zh": "This environment does not support AWS Marketplace.",
+    "service_id": "NTC08709"
+  },
+  "TTL08710": {
+    "en": "AJAX Hitmap",
+    "ja": "AJAXヒートマップ",
+    "ko": "AJAX 히트맵",
+    "zh": "AJAX Hitmap",
+    "service_id": "TTL08710"
+  },
+  "TTL08711": {
+    "en": "Average AJAX response time",
+    "ja": "平均AJAX応答時間",
+    "ko": "평균 AJAX 응답시간",
+    "zh": "Average AJAX response time",
+    "service_id": "TTL08711"
+  },
+  "NTC08712": {
+    "en": "Your AWS Marketplace subscription is complete.",
+    "ja": "AWS Marketplaceのサブスクリプションが完了しました。",
+    "ko": "AWS Marketplace 구독이 완료되었습니다.",
+    "zh": "Your AWS Marketplace subscription is complete.",
+    "service_id": "NTC08712"
   },
   "freetrial": {
     "en": "Get Started for free",
@@ -62064,7 +62092,7 @@
   },
   "side_ingressList": {
     "en": "Ingress List",
-    "ja": "Ingress List",
+    "ja": "Ingress リスト",
     "ko": "Ingress 목록"
   }
 }

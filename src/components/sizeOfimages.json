@@ -10587,6 +10587,18 @@
     "width": 1200,
     "height": 678
   },
+  "k8s-container-list-compare-en.png": {
+    "width": 1200,
+    "height": 670
+  },
+  "k8s-container-list-compare-ja.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-container-list-compare.png": {
+    "width": 1200,
+    "height": 670
+  },
   "k8s-container-log-en.png": {
     "width": 1200,
     "height": 660
@@ -10982,6 +10994,18 @@
   "k8s-kuber-namespace.png": {
     "width": 744,
     "height": 407
+  },
+  "k8s-log-filter-settings-en.png": {
+    "width": 1200,
+    "height": 486
+  },
+  "k8s-log-filter-settings-ja.png": {
+    "width": 1200,
+    "height": 482
+  },
+  "k8s-log-filter-settings.png": {
+    "width": 1200,
+    "height": 486
   },
   "k8s-log-search-en.png": {
     "width": 1200,
@@ -11561,15 +11585,15 @@
   },
   "k8s-resource-container-list-m-en.png": {
     "width": 1200,
-    "height": 661
+    "height": 667
   },
   "k8s-resource-container-list-m-ja.png": {
     "width": 1200,
-    "height": 660
+    "height": 637
   },
   "k8s-resource-container-list-m.png": {
     "width": 1200,
-    "height": 661
+    "height": 677
   },
   "k8s-resource-container-list-metric-info-cl.png": {
     "width": 1200,
@@ -11935,6 +11959,10 @@
     "width": 1200,
     "height": 345
   },
+  "linked-projects-agent-settings.png": {
+    "width": 1642,
+    "height": 327
+  },
   "linked-projects-check-widget-01-en.png": {
     "width": 1243,
     "height": 313
@@ -12044,16 +12072,16 @@
     "height": 495
   },
   "log-1st-parser-add-en.png": {
-    "width": 1070,
-    "height": 759
+    "width": 1200,
+    "height": 817
   },
   "log-1st-parser-add-ja.png": {
-    "width": 1101,
-    "height": 754
+    "width": 1200,
+    "height": 822
   },
   "log-1st-parser-add.png": {
-    "width": 1008,
-    "height": 607
+    "width": 1200,
+    "height": 816
   },
   "log-1st-parser-list-en.png": {
     "width": 1207,
@@ -12092,16 +12120,16 @@
     "height": 609
   },
   "log-2nd-parser-add-en.png": {
-    "width": 948,
-    "height": 334
+    "width": 1200,
+    "height": 814
   },
   "log-2nd-parser-add-ja.png": {
-    "width": 948,
-    "height": 332
+    "width": 1200,
+    "height": 817
   },
   "log-2nd-parser-add.png": {
-    "width": 1208,
-    "height": 465
+    "width": 1200,
+    "height": 814
   },
   "log-2nd-parser-list-en.png": {
     "width": 1200,
@@ -12126,6 +12154,18 @@
   "log-2nd-status.png": {
     "width": 1200,
     "height": 625
+  },
+  "log-2st-parser-add-en.png": {
+    "width": 1200,
+    "height": 814
+  },
+  "log-2st-parser-add-ja.png": {
+    "width": 1200,
+    "height": 817
+  },
+  "log-2st-parser-add.png": {
+    "width": 1200,
+    "height": 814
   },
   "log-agent-conf-en.png": {
     "width": 1200,
@@ -12238,6 +12278,18 @@
   "log-filter-comp.png": {
     "width": 348,
     "height": 54
+  },
+  "log-filter-fav-en.png": {
+    "width": 800,
+    "height": 478
+  },
+  "log-filter-fav-ja.png": {
+    "width": 800,
+    "height": 482
+  },
+  "log-filter-fav.png": {
+    "width": 1200,
+    "height": 268
   },
   "log-filter-search-en.png": {
     "width": 1114,
@@ -12383,6 +12435,18 @@
     "width": 1605,
     "height": 891
   },
+  "log-grok-parser-input-en.png": {
+    "width": 1200,
+    "height": 1199
+  },
+  "log-grok-parser-input-ja.png": {
+    "width": 1200,
+    "height": 1197
+  },
+  "log-grok-parser-input.png": {
+    "width": 1200,
+    "height": 1202
+  },
   "log-grok-parser-simulation-en.png": {
     "width": 743,
     "height": 1200
@@ -12406,6 +12470,30 @@
   "log-highlight.png": {
     "width": 450,
     "height": 304
+  },
+  "log-jason-parser-input-en.png": {
+    "width": 1200,
+    "height": 1207
+  },
+  "log-jason-parser-input-ja.png": {
+    "width": 1200,
+    "height": 1205
+  },
+  "log-jason-parser-input.png": {
+    "width": 1200,
+    "height": 1206
+  },
+  "log-jason-parser-simulation-en.png": {
+    "width": 1200,
+    "height": 654
+  },
+  "log-jason-parser-simulation-ja.png": {
+    "width": 1200,
+    "height": 648
+  },
+  "log-jason-parser-simulation.png": {
+    "width": 1200,
+    "height": 659
   },
   "log-k8s-app-agent-setting-106-en.png": {
     "width": 1200,
@@ -12530,6 +12618,18 @@
   "log-parser-simulation.png": {
     "width": 761,
     "height": 722
+  },
+  "log-parser-simulation2-en.png": {
+    "width": 1200,
+    "height": 776
+  },
+  "log-parser-simulation2-ja.png": {
+    "width": 1200,
+    "height": 773
+  },
+  "log-parser-simulation2.png": {
+    "width": 1200,
+    "height": 772
   },
   "log-performance-en.png": {
     "width": 800,
