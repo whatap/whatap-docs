@@ -34,6 +34,8 @@ export NODE_OPTIONS="--max-old-space-size=24576" && USE_SIMPLE_CSS_MINIFIER=true
 * kubernetes/container-map-target-info.mdx
 * kubernetes/node-map.mdx
 * kubernetes/node-details.mdx
+* kubernetes/node-timeline.mdx
+* kubernetes/agent-list.mdx
 * features/vcenter-introduction.mdx
 * \_log-exp.mdx
 
