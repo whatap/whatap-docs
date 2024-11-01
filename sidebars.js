@@ -4319,11 +4319,11 @@ const sidebars = {
       },
       items: [
         'best-practice-guides/real-time-monitoring-for-it-infra',
-        {
-          type: 'doc',
-          label: 'DX IT 운영을 위한 와탭 모니터링',
-          id: 'best-practice-guides/real-time-monitoring-for-it-infra'
-        },
+        // {
+        //   type: 'doc',
+        //   label: 'DX IT 운영을 위한 와탭 모니터링',
+        //   id: 'best-practice-guides/real-time-monitoring-for-it-infra'
+        // },
         {
           type: 'category',
           label: '대시보드 분석',
