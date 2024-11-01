@@ -473,6 +473,80 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
+/***/ 8124:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    code: "code",
+    em: "em",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ScrollToLink} = _components;
+  if (!ScrollToLink) _missingMdxReference("ScrollToLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "다중 포트 감시"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
+        anchor: "tcp-port-multi"
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["여러 개의 포트를 감시하기 위해서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: "whatap.conf"
+      }), " 파일 내 추가 설정이 필요합니다. 다음 예시를 참고하세요."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        className: "language-ini",
+        metastring: "title='whatap.conf'",
+        children: "# port 8080, port 80 \ntcp.check.8080=tcp://127.0.0.1:8080\ntcp.check.80=tcp://127.0.0.1:80\n"
+      })
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
 /***/ 63126:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -703,6 +777,8 @@ function _missingMdxReference(id, component) {
 }
 
 
+// EXTERNAL MODULE: ./docs/common-items/_server-tcp-port-multi.mdx
+var _server_tcp_port_multi = __webpack_require__(8124);
 ;// CONCATENATED MODULE: ./docs/common-items/_server-adf-tcp-port.mdx
 
 
@@ -711,9 +787,11 @@ const _server_adf_tcp_port_contentTitle = (/* unused pure expression or super */
 
 
 
+/*다중 포트 감시 추가*/
 
 
-const _server_adf_tcp_port_toc = [];
+
+const _server_adf_tcp_port_toc = [..._server_tcp_port_multi/* toc */.RM];
 function _server_adf_tcp_port_createMdxContent(props) {
   const _components = {
     code: "code",
@@ -810,7 +888,7 @@ function _server_adf_tcp_port_createMdxContent(props) {
           })]
         }), "\n"]
       }), "\n"]
-    })]
+    }), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_server_tcp_port_multi/* default */.Ay, {})]
   });
 }
 function _server_adf_tcp_port_MDXContent(props = {}) {

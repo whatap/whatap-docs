@@ -14,7 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_server_tcp_port_multi_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8124);
 
 
 const frontMatter = {
@@ -81,6 +82,8 @@ TCP 포트 모니터링을 통해 특정 서비스가 정상적으로 작동하�
 /*다음과 같이 알림 템플릿 내 ***재시작***과 ***미수신*** 항목 활성화만으로 추가적인 조작이 필요없이 기본 알림 설정이 완료됩니다.
 
 먼저 모니터링 대상 서버의 기본 알림을 살펴보겠습니다.*/
+/*다중 포트 감시 추가*/
+
 
 
 const toc = [{
@@ -107,7 +110,7 @@ const toc = [{
   "value": "<em>whatap.conf</em>",
   "id": "whatapconf",
   "level": 4
-}, {
+}, ..._common_items_server_tcp_port_multi_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "메트릭스 조회",
   "id": "메트릭스-조회",
   "level": 4
@@ -131,7 +134,7 @@ function _createMdxContent(props) {
     section: "section",
     strong: "strong",
     ul: "ul",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {Cmdname, ImgLang, TabItem, Tabs} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
@@ -284,7 +287,7 @@ function _createMdxContent(props) {
           metastring: "title='whatap.conf'",
           children: "license=xxxxxxxxxx\nwhatap.server.host=xxx.xxx.xxx.xxx\ncreatedtime=xxxxxxxxxx\ntcp.check.8080=tcp://127.0.0.1:8080\n"
         })
-      })]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_server_tcp_port_multi_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {})]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
@@ -326,6 +329,80 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "이와 같은 와탭 서버 모니터링의 다양한 기능을 활성화하여 운영 중인 시스템의 네트워크와 서버 상태를 신속하게 파악하고 대응해 보세요. 와탭을 통해 비즈니스 연속성을 확보하고 서비스의 안정성을 극대화할 수 있습니다."
       })]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 8124:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    admonition: "admonition",
+    code: "code",
+    em: "em",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
+    p: "p",
+    pre: "pre",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {ScrollToLink} = _components;
+  if (!ScrollToLink) _missingMdxReference("ScrollToLink", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+    type: "note",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "다중 포트 감시"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ScrollToLink, {
+        anchor: "tcp-port-multi"
+      })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["여러 개의 포트를 감시하기 위해서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+        children: "whatap.conf"
+      }), " 파일 내 추가 설정이 필요합니다. 다음 예시를 참고하세요."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        className: "language-ini",
+        metastring: "title='whatap.conf'",
+        children: "# port 8080, port 80 \ntcp.check.8080=tcp://127.0.0.1:8080\ntcp.check.80=tcp://127.0.0.1:80\n"
+      })
     })]
   });
 }
