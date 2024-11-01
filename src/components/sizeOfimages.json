@@ -1687,6 +1687,18 @@
     "width": 740,
     "height": 333
   },
+  "apm-linked-projects-postgresql-pid-sid-en.png": {
+    "width": 1150,
+    "height": 1430
+  },
+  "apm-linked-projects-postgresql-pid-sid-ja.png": {
+    "width": 1150,
+    "height": 1430
+  },
+  "apm-linked-projects-postgresql-pid-sid.png": {
+    "width": 1150,
+    "height": 1417
+  },
   "apm-stack-functions-en.png": {
     "width": 1200,
     "height": 221
@@ -2843,6 +2855,186 @@
     "width": 800,
     "height": 253
   },
+  "dx-it-image-01.png": {
+    "width": 1200,
+    "height": 392
+  },
+  "dx-it-image-02.png": {
+    "width": 1200,
+    "height": 547
+  },
+  "dx-it-image-03.png": {
+    "width": 1200,
+    "height": 608
+  },
+  "dx-it-image-04.png": {
+    "width": 1200,
+    "height": 433
+  },
+  "dx-it-image-05-en.png": {
+    "width": 1200,
+    "height": 426
+  },
+  "dx-it-image-05-ja.png": {
+    "width": 1200,
+    "height": 426
+  },
+  "dx-it-image-05.png": {
+    "width": 1200,
+    "height": 426
+  },
+  "dx-it-image-06.png": {
+    "width": 1200,
+    "height": 583
+  },
+  "dx-it-image-07.png": {
+    "width": 1200,
+    "height": 544
+  },
+  "dx-it-image-08.png": {
+    "width": 1200,
+    "height": 390
+  },
+  "dx-it-image-09.png": {
+    "width": 943,
+    "height": 618
+  },
+  "dx-it-image-10.png": {
+    "width": 1200,
+    "height": 485
+  },
+  "dx-it-image-11-en.png": {
+    "width": 1200,
+    "height": 798
+  },
+  "dx-it-image-11-ja.png": {
+    "width": 1200,
+    "height": 798
+  },
+  "dx-it-image-11.png": {
+    "width": 1200,
+    "height": 798
+  },
+  "dx-it-image-12-en.png": {
+    "width": 1200,
+    "height": 485
+  },
+  "dx-it-image-12-ja.png": {
+    "width": 1200,
+    "height": 485
+  },
+  "dx-it-image-12.png": {
+    "width": 1200,
+    "height": 485
+  },
+  "dx-it-image-13-en.png": {
+    "width": 1200,
+    "height": 593
+  },
+  "dx-it-image-13-ja.png": {
+    "width": 1200,
+    "height": 593
+  },
+  "dx-it-image-13.png": {
+    "width": 1200,
+    "height": 593
+  },
+  "dx-it-image-14-en.png": {
+    "width": 1200,
+    "height": 456
+  },
+  "dx-it-image-14-ja.png": {
+    "width": 1200,
+    "height": 456
+  },
+  "dx-it-image-14.png": {
+    "width": 1200,
+    "height": 456
+  },
+  "dx-it-image-15.png": {
+    "width": 1200,
+    "height": 621
+  },
+  "dx-it-image-16.png": {
+    "width": 1200,
+    "height": 475
+  },
+  "dx-it-image-17.png": {
+    "width": 1200,
+    "height": 335
+  },
+  "dx-it-image-18-en.png": {
+    "width": 1200,
+    "height": 595
+  },
+  "dx-it-image-18-ja.png": {
+    "width": 1200,
+    "height": 593
+  },
+  "dx-it-image-18.png": {
+    "width": 1200,
+    "height": 595
+  },
+  "dx-it-image-19-en.png": {
+    "width": 1600,
+    "height": 879
+  },
+  "dx-it-image-19-ja.png": {
+    "width": 1600,
+    "height": 879
+  },
+  "dx-it-image-19.png": {
+    "width": 1600,
+    "height": 879
+  },
+  "dx-it-image-20-en.png": {
+    "width": 1200,
+    "height": 576
+  },
+  "dx-it-image-20-ja.png": {
+    "width": 1200,
+    "height": 576
+  },
+  "dx-it-image-20.png": {
+    "width": 1200,
+    "height": 576
+  },
+  "dx-it-image-21-en.png": {
+    "width": 1200,
+    "height": 654
+  },
+  "dx-it-image-21-ja.png": {
+    "width": 1200,
+    "height": 653
+  },
+  "dx-it-image-21.png": {
+    "width": 1200,
+    "height": 649
+  },
+  "dx-it-image-22-en.png": {
+    "width": 1500,
+    "height": 671
+  },
+  "dx-it-image-22-ja.png": {
+    "width": 1500,
+    "height": 671
+  },
+  "dx-it-image-22.png": {
+    "width": 1500,
+    "height": 674
+  },
+  "dx-it-image-23.png": {
+    "width": 1200,
+    "height": 532
+  },
+  "dx-it-image-24.png": {
+    "width": 1200,
+    "height": 576
+  },
+  "dx-it-image-25.png": {
+    "width": 1200,
+    "height": 676
+  },
   "hitmap-transaction-sample-00-en.png": {
     "width": 1200,
     "height": 880
@@ -3637,15 +3829,15 @@
   },
   "browser-event-history-en.png": {
     "width": 1200,
-    "height": 519
+    "height": 707
   },
   "browser-event-history-ja.png": {
     "width": 1200,
-    "height": 520
+    "height": 707
   },
   "browser-event-history.png": {
     "width": 1200,
-    "height": 517
+    "height": 707
   },
   "browser-fid-widget-en.png": {
     "width": 1200,
@@ -3803,6 +3995,18 @@
     "width": 1200,
     "height": 446
   },
+  "browser-pageload-statistics-en.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-pageload-statistics-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-pageload-statistics.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "browser-pageload-time-num-en.png": {
     "width": 1200,
     "height": 716
@@ -3923,6 +4127,10 @@
     "width": 1200,
     "height": 168
   },
+  "browser-session-replay-area-masking.png": {
+    "width": 1286,
+    "height": 701
+  },
   "browser-session-replay-masking-area.png": {
     "width": 600,
     "height": 451
@@ -3939,9 +4147,17 @@
     "width": 800,
     "height": 418
   },
+  "browser-session-replay-no-area-masking.png": {
+    "width": 1292,
+    "height": 701
+  },
   "browser-session-replay-player.png": {
     "width": 800,
     "height": 394
+  },
+  "browser-session-replay-text-masking.png": {
+    "width": 1322,
+    "height": 924
   },
   "browser-session-replay-timeline.png": {
     "width": 600,
@@ -3995,6 +4211,230 @@
     "width": 1091,
     "height": 527
   },
+  "browser-statistics-page-group-filter-en.png": {
+    "width": 600,
+    "height": 412
+  },
+  "browser-statistics-page-group-filter-ja.png": {
+    "width": 600,
+    "height": 366
+  },
+  "browser-statistics-page-group-filter.png": {
+    "width": 600,
+    "height": 370
+  },
+  "browser-statistics-pagegroup-header-en.png": {
+    "width": 600,
+    "height": 156
+  },
+  "browser-statistics-pagegroup-header-ja.png": {
+    "width": 600,
+    "height": 157
+  },
+  "browser-statistics-pagegroup-header.png": {
+    "width": 600,
+    "height": 157
+  },
+  "browser-statistics-pagel-url-path-list-en.png": {
+    "width": 800,
+    "height": 84
+  },
+  "browser-statistics-pagel-url-path-list-ja.png": {
+    "width": 800,
+    "height": 84
+  },
+  "browser-statistics-pagel-url-path-list.png": {
+    "width": 800,
+    "height": 84
+  },
+  "browser-statistics-pageload-count-en.png": {
+    "width": 800,
+    "height": 97
+  },
+  "browser-statistics-pageload-count-ja.png": {
+    "width": 800,
+    "height": 97
+  },
+  "browser-statistics-pageload-count-top-en.png": {
+    "width": 600,
+    "height": 293
+  },
+  "browser-statistics-pageload-count-top-ja.png": {
+    "width": 600,
+    "height": 293
+  },
+  "browser-statistics-pageload-count-top.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-pageload-count.png": {
+    "width": 800,
+    "height": 97
+  },
+  "browser-statistics-pageload-group-list-en.png": {
+    "width": 1200,
+    "height": 441
+  },
+  "browser-statistics-pageload-group-list-ja.png": {
+    "width": 1200,
+    "height": 441
+  },
+  "browser-statistics-pageload-group-list.png": {
+    "width": 1200,
+    "height": 440
+  },
+  "browser-statistics-pageload-time-en.png": {
+    "width": 800,
+    "height": 97
+  },
+  "browser-statistics-pageload-time-ja.png": {
+    "width": 800,
+    "height": 97
+  },
+  "browser-statistics-pageload-time-top-en.png": {
+    "width": 600,
+    "height": 295
+  },
+  "browser-statistics-pageload-time-top.png": {
+    "width": 600,
+    "height": 292
+  },
+  "browser-statistics-pageload-time-top10-en.png": {
+    "width": 800,
+    "height": 101
+  },
+  "browser-statistics-pageload-time-top10-ja.png": {
+    "width": 800,
+    "height": 101
+  },
+  "browser-statistics-pageload-time-top10.png": {
+    "width": 800,
+    "height": 101
+  },
+  "browser-statistics-pageload-time.png": {
+    "width": 800,
+    "height": 97
+  },
+  "browser-statistics-pageload-timeline-en.png": {
+    "width": 800,
+    "height": 71
+  },
+  "browser-statistics-pageload-timeline-ja.png": {
+    "width": 800,
+    "height": 71
+  },
+  "browser-statistics-pageload-timeline.png": {
+    "width": 800,
+    "height": 71
+  },
+  "browser-statistics-pageload-top10-en.png": {
+    "width": 800,
+    "height": 191
+  },
+  "browser-statistics-pageload-top10-ja.png": {
+    "width": 800,
+    "height": 191
+  },
+  "browser-statistics-pageload-top10.png": {
+    "width": 800,
+    "height": 191
+  },
+  "browser-statistics-pageload-trend-en.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "browser-statistics-pageload-trend-ja.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "browser-statistics-pageload-trend-pecent-en.png": {
+    "width": 1200,
+    "height": 218
+  },
+  "browser-statistics-pageload-trend-pecent-ja.png": {
+    "width": 1200,
+    "height": 218
+  },
+  "browser-statistics-pageload-trend-pecent.png": {
+    "width": 1200,
+    "height": 218
+  },
+  "browser-statistics-pageload-trend-select-time-en.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-statistics-pageload-trend-select-time-ja.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-statistics-pageload-trend-select-time.png": {
+    "width": 1200,
+    "height": 1057
+  },
+  "browser-statistics-pageload-trend.png": {
+    "width": 1200,
+    "height": 219
+  },
+  "browser-statistics-pageurlpath-header-en.png": {
+    "width": 600,
+    "height": 155
+  },
+  "browser-statistics-pageurlpath-header-ja.png": {
+    "width": 600,
+    "height": 155
+  },
+  "browser-statistics-pageurlpath-header.png": {
+    "width": 600,
+    "height": 155
+  },
+  "browser-statistics-perf-metrics-filter-en.png": {
+    "width": 400,
+    "height": 412
+  },
+  "browser-statistics-perf-metrics-filter-ja.png": {
+    "width": 400,
+    "height": 435
+  },
+  "browser-statistics-perf-metrics-filter.png": {
+    "width": 400,
+    "height": 446
+  },
+  "browser-statistics-set-custom-time-en.png": {
+    "width": 400,
+    "height": 417
+  },
+  "browser-statistics-set-custom-time-ja.png": {
+    "width": 400,
+    "height": 426
+  },
+  "browser-statistics-set-custom-time.png": {
+    "width": 400,
+    "height": 431
+  },
+  "browser-statistics-set-time-select-options-en.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-statistics-set-time-select-options-ja.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-statistics-set-time-select-options.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-statistics-setting-column-en.png": {
+    "width": 600,
+    "height": 774
+  },
+  "browser-statistics-setting-column-ja.png": {
+    "width": 600,
+    "height": 774
+  },
+  "browser-statistics-setting-column.png": {
+    "width": 600,
+    "height": 774
+  },
   "browser-user-env-en.png": {
     "width": 1200,
     "height": 300
@@ -4031,6 +4471,10 @@
     "width": 1200,
     "height": 1008
   },
+  "chagnelog-24q3-application.png": {
+    "width": 1261,
+    "height": 540
+  },
   "changelog-24q2-app-preset.png": {
     "width": 1234,
     "height": 725
@@ -4062,6 +4506,46 @@
   "changelog-24q2-url.png": {
     "width": 1208,
     "height": 630
+  },
+  "changelog-24q3-common-add_chart.gif": {
+    "width": 1200,
+    "height": 689
+  },
+  "changelog-24q3-common-metrics-chart.gif": {
+    "width": 1200,
+    "height": 661
+  },
+  "changelog-24q3-common1.png": {
+    "width": 1208,
+    "height": 463
+  },
+  "changelog-24q3-db-custom.png": {
+    "width": 1200,
+    "height": 713
+  },
+  "changelog-24q3-db-scm.png": {
+    "width": 1200,
+    "height": 571
+  },
+  "changelog-24q3-feature.png": {
+    "width": 857,
+    "height": 596
+  },
+  "changelog-24q3-k8s-summary.gif": {
+    "width": 2532,
+    "height": 1414
+  },
+  "changelog-24q3-server-hp-ux.png": {
+    "width": 787,
+    "height": 415
+  },
+  "changelog-24q3-server-inventory.png": {
+    "width": 1210,
+    "height": 444
+  },
+  "changelog-24q3-server.png": {
+    "width": 1012,
+    "height": 746
   },
   "changelog-app-stat-instance.png": {
     "width": 1191,
@@ -4571,6 +5055,18 @@
     "width": 1223,
     "height": 1030
   },
+  "dashboard-hitmap-trace-db-connection-en.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "dashboard-hitmap-trace-db-connection-ja.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "dashboard-hitmap-trace-db-connection.png": {
+    "width": 1243,
+    "height": 354
+  },
   "dashboard-transaction-map-en.png": {
     "width": 1200,
     "height": 1055
@@ -4866,6 +5362,178 @@
   "db-check-monitoring-agent-lists.png": {
     "width": 1200,
     "height": 213
+  },
+  "db-cloudsettings-added-aws-cloud-services-en.png": {
+    "width": 1280,
+    "height": 205
+  },
+  "db-cloudsettings-added-aws-cloud-services-ja.png": {
+    "width": 1280,
+    "height": 205
+  },
+  "db-cloudsettings-added-aws-cloud-services.png": {
+    "width": 1280,
+    "height": 205
+  },
+  "db-cloudsettings-added-azure-cloud-services-en.png": {
+    "width": 1280,
+    "height": 205
+  },
+  "db-cloudsettings-added-azure-cloud-services-ja.png": {
+    "width": 1280,
+    "height": 205
+  },
+  "db-cloudsettings-added-azure-cloud-services.png": {
+    "width": 1280,
+    "height": 205
+  },
+  "db-cloudsettings-aws-iam-policy-json.png": {
+    "width": 800,
+    "height": 378
+  },
+  "db-cloudsettings-aws-iam-policy.png": {
+    "width": 800,
+    "height": 557
+  },
+  "db-cloudsettings-azure-add-role.png": {
+    "width": 800,
+    "height": 629
+  },
+  "db-cloudsettings-azure-assignment-user.png": {
+    "width": 800,
+    "height": 700
+  },
+  "db-cloudsettings-azure-assignment.png": {
+    "width": 800,
+    "height": 706
+  },
+  "db-cloudsettings-azure-conditions.png": {
+    "width": 800,
+    "height": 707
+  },
+  "db-cloudsettings-azure-edit-parameters-en.png": {
+    "width": 1200,
+    "height": 1029
+  },
+  "db-cloudsettings-azure-edit-parameters-ja.png": {
+    "width": 1200,
+    "height": 1029
+  },
+  "db-cloudsettings-azure-edit-parameters.png": {
+    "width": 1200,
+    "height": 1029
+  },
+  "db-cloudsettings-azure-input-parameters-en.png": {
+    "width": 600,
+    "height": 197
+  },
+  "db-cloudsettings-azure-input-parameters-ja.png": {
+    "width": 600,
+    "height": 206
+  },
+  "db-cloudsettings-azure-input-parameters.png": {
+    "width": 600,
+    "height": 197
+  },
+  "db-cloudsettings-azure-project-details.png": {
+    "width": 1200,
+    "height": 1129
+  },
+  "db-cloudsettings-azure-resourceid.png": {
+    "width": 1200,
+    "height": 748
+  },
+  "db-cloudsettings-azure-template.png": {
+    "width": 1200,
+    "height": 803
+  },
+  "db-cloudsettings-check-metrics-category-aws.png": {
+    "width": 800,
+    "height": 447
+  },
+  "db-cloudsettings-check-metrics-category-azure.png": {
+    "width": 800,
+    "height": 446
+  },
+  "db-cloudsettings-input-parameters-db-identifier.png": {
+    "width": 600,
+    "height": 384
+  },
+  "db-cloudsettings-input-parameters-en.png": {
+    "width": 600,
+    "height": 173
+  },
+  "db-cloudsettings-input-parameters-ja.png": {
+    "width": 600,
+    "height": 173
+  },
+  "db-cloudsettings-input-parameters.png": {
+    "width": 600,
+    "height": 173
+  },
+  "db-cloudsettings-select-service-azure-en.png": {
+    "width": 600,
+    "height": 142
+  },
+  "db-cloudsettings-select-service-azure-ja.png": {
+    "width": 600,
+    "height": 137
+  },
+  "db-cloudsettings-select-service-azure.png": {
+    "width": 600,
+    "height": 148
+  },
+  "db-cloudsettings-select-service-en.png": {
+    "width": 600,
+    "height": 140
+  },
+  "db-cloudsettings-select-service-ja.png": {
+    "width": 600,
+    "height": 140
+  },
+  "db-cloudsettings-select-service-oracle-en.png": {
+    "width": 600,
+    "height": 140
+  },
+  "db-cloudsettings-select-service-oracle-ja.png": {
+    "width": 600,
+    "height": 140
+  },
+  "db-cloudsettings-select-service-oracle.png": {
+    "width": 600,
+    "height": 145
+  },
+  "db-cloudsettings-select-service.png": {
+    "width": 600,
+    "height": 145
+  },
+  "db-cloudsettings-set-cloud-formation-en.png": {
+    "width": 600,
+    "height": 157
+  },
+  "db-cloudsettings-set-cloud-formation-items.png": {
+    "width": 400,
+    "height": 502
+  },
+  "db-cloudsettings-set-cloud-formation-ja.png": {
+    "width": 600,
+    "height": 128
+  },
+  "db-cloudsettings-set-cloud-formation.png": {
+    "width": 600,
+    "height": 157
+  },
+  "db-cloudsettings-set-resource-manager-en.png": {
+    "width": 921,
+    "height": 145
+  },
+  "db-cloudsettings-set-resource-manager-ja.png": {
+    "width": 921,
+    "height": 135
+  },
+  "db-cloudsettings-set-resource-manager.png": {
+    "width": 921,
+    "height": 161
   },
   "db-common-folding-table-en.png": {
     "width": 600,
@@ -5429,27 +6097,39 @@
   },
   "db-database-size-mongodb-en.png": {
     "width": 1200,
-    "height": 619
+    "height": 536
   },
   "db-database-size-mongodb-ja.png": {
     "width": 1200,
-    "height": 619
+    "height": 536
   },
   "db-database-size-mongodb.png": {
     "width": 1200,
-    "height": 619
+    "height": 536
   },
   "db-database-size-mysql-en.png": {
     "width": 1200,
-    "height": 801
+    "height": 560
   },
   "db-database-size-mysql-ja.png": {
     "width": 1200,
-    "height": 801
+    "height": 560
   },
   "db-database-size-mysql.png": {
     "width": 1200,
-    "height": 801
+    "height": 560
+  },
+  "db-database-size-objectdetail-mysql-en.png": {
+    "width": 1200,
+    "height": 520
+  },
+  "db-database-size-objectdetail-mysql-ja.png": {
+    "width": 1200,
+    "height": 520
+  },
+  "db-database-size-objectdetail-mysql.png": {
+    "width": 1200,
+    "height": 520
   },
   "db-database-size-objectdetail-postgresql-en.png": {
     "width": 1200,
@@ -5465,87 +6145,87 @@
   },
   "db-database-size-postgresql-en.png": {
     "width": 1200,
-    "height": 569
+    "height": 583
   },
   "db-database-size-postgresql-ja.png": {
     "width": 1200,
-    "height": 569
+    "height": 587
   },
   "db-database-size-postgresql.png": {
     "width": 1200,
-    "height": 565
+    "height": 583
   },
   "db-database-size-select-db-mongodb-en.png": {
     "width": 1200,
-    "height": 619
+    "height": 438
   },
   "db-database-size-select-db-mongodb-ja.png": {
     "width": 1200,
-    "height": 619
+    "height": 438
   },
   "db-database-size-select-db-mongodb.png": {
     "width": 1200,
-    "height": 619
+    "height": 438
   },
   "db-database-size-select-db-mysql-en.png": {
     "width": 1200,
-    "height": 545
+    "height": 465
   },
   "db-database-size-select-db-mysql-ja.png": {
     "width": 1200,
-    "height": 545
+    "height": 465
   },
   "db-database-size-select-db-mysql.png": {
     "width": 1200,
-    "height": 545
+    "height": 465
   },
   "db-database-size-select-db-postgresql-en.png": {
     "width": 1200,
-    "height": 571
+    "height": 491
   },
   "db-database-size-select-db-postgresql-ja.png": {
     "width": 1200,
-    "height": 571
+    "height": 496
   },
   "db-database-size-select-db-postgresql.png": {
     "width": 1200,
-    "height": 570
+    "height": 493
   },
   "db-database-size-top50-mongodb-en.png": {
     "width": 1200,
-    "height": 992
+    "height": 907
   },
   "db-database-size-top50-mongodb-ja.png": {
     "width": 1200,
-    "height": 992
+    "height": 908
   },
   "db-database-size-top50-mongodb.png": {
     "width": 1200,
-    "height": 992
+    "height": 904
   },
   "db-database-size-top50-mysql-en.png": {
     "width": 1200,
-    "height": 803
+    "height": 785
   },
   "db-database-size-top50-mysql-ja.png": {
     "width": 1200,
-    "height": 803
+    "height": 788
   },
   "db-database-size-top50-mysql.png": {
     "width": 1200,
-    "height": 803
+    "height": 802
   },
   "db-database-size-top50-postgresql-en.png": {
     "width": 1200,
-    "height": 1026
+    "height": 1060
   },
   "db-database-size-top50-postgresql-ja.png": {
     "width": 1200,
-    "height": 1026
+    "height": 1060
   },
   "db-database-size-top50-postgresql.png": {
     "width": 1200,
-    "height": 1030
+    "height": 1060
   },
   "db-database-sql-stat-altibase-en.png": {
     "width": 1200,
@@ -6351,6 +7031,18 @@
     "width": 1200,
     "height": 1054
   },
+  "db-instance-monitoring-linked-project-en.png": {
+    "width": 1190,
+    "height": 378
+  },
+  "db-instance-monitoring-linked-project-ja.png": {
+    "width": 1190,
+    "height": 378
+  },
+  "db-instance-monitoring-linked-project.png": {
+    "width": 1190,
+    "height": 378
+  },
   "db-instance-monitoring-mongodb-en.png": {
     "width": 1200,
     "height": 1054
@@ -6570,6 +7262,102 @@
   "db-layout-set.png": {
     "width": 600,
     "height": 427
+  },
+  "db-linked-project-detail-active-tx-en.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-active-tx-ja.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-active-tx.png": {
+    "width": 982,
+    "height": 555
+  },
+  "db-linked-project-detail-call-stack-en.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-call-stack-ja.png": {
+    "width": 983,
+    "height": 556
+  },
+  "db-linked-project-detail-call-stack.png": {
+    "width": 982,
+    "height": 555
+  },
+  "db-linked-project-detail-sql-en.png": {
+    "width": 983,
+    "height": 204
+  },
+  "db-linked-project-detail-sql-ja.png": {
+    "width": 972,
+    "height": 205
+  },
+  "db-linked-project-detail-sql.png": {
+    "width": 982,
+    "height": 206
+  },
+  "db-linked-project-instance-monitoring-mysql-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-mysql-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-mysql.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-oracle-pro-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-oracle-pro-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-oracle-pro.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-postgresql-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-postgresql-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-instance-monitoring-postgresql.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-linked-project-management-en.png": {
+    "width": 1200,
+    "height": 245
+  },
+  "db-linked-project-management-ja.png": {
+    "width": 1200,
+    "height": 246
+  },
+  "db-linked-project-management.png": {
+    "width": 1200,
+    "height": 245
+  },
+  "db-linked-projects-postgresql-pid-sid-en.png": {
+    "width": 1150,
+    "height": 1417
+  },
+  "db-linked-projects-postgresql-pid-sid-ja.png": {
+    "width": 1150,
+    "height": 1430
+  },
+  "db-linked-projects-postgresql-pid-sid.png": {
+    "width": 1150,
+    "height": 1417
   },
   "db-locktree-cluster-chart-en.png": {
     "width": 1200,
@@ -7432,16 +8220,16 @@
     "height": 255
   },
   "db-stat-table-space-check-trend-oracle-pro-en.png": {
-    "width": 1200,
-    "height": 384
+    "width": 1201,
+    "height": 206
   },
   "db-stat-table-space-check-trend-oracle-pro-ja.png": {
-    "width": 1200,
-    "height": 385
+    "width": 1201,
+    "height": 206
   },
   "db-stat-table-space-check-trend-oracle-pro.png": {
     "width": 1200,
-    "height": 382
+    "height": 206
   },
   "db-stat-table-space-check-trend-tibero-en.png": {
     "width": 1200,
@@ -7525,15 +8313,15 @@
   },
   "db-stat-table-space-oracle-pro-en.png": {
     "width": 1200,
-    "height": 481
+    "height": 552
   },
   "db-stat-table-space-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 479
+    "height": 552
   },
   "db-stat-table-space-oracle-pro.png": {
     "width": 1200,
-    "height": 494
+    "height": 552
   },
   "db-stat-table-space-oracle.png": {
     "width": 1200,
@@ -7565,11 +8353,11 @@
   },
   "db-stat-table-space-size-details-oracle-pro-en.png": {
     "width": 1200,
-    "height": 402
+    "height": 401
   },
   "db-stat-table-space-size-details-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 402
+    "height": 401
   },
   "db-stat-table-space-size-details-oracle-pro.png": {
     "width": 1200,
@@ -7587,17 +8375,29 @@
     "width": 1200,
     "height": 394
   },
+  "db-stat-table-space-size-top50-altibase-en.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "db-stat-table-space-size-top50-altibase-ja.png": {
+    "width": 1200,
+    "height": 631
+  },
+  "db-stat-table-space-size-top50-altibase.png": {
+    "width": 1200,
+    "height": 656
+  },
   "db-stat-table-space-size-top50-oracle-pro-en.png": {
     "width": 1200,
-    "height": 823
+    "height": 733
   },
   "db-stat-table-space-size-top50-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 825
+    "height": 733
   },
   "db-stat-table-space-size-top50-oracle-pro.png": {
     "width": 1200,
-    "height": 827
+    "height": 733
   },
   "db-stat-table-space-tibero-en.png": {
     "width": 1200,
@@ -7680,16 +8480,16 @@
     "height": 236
   },
   "dbx-install-agent-on-agent-server-cubrid-en.png": {
-    "width": 1203,
-    "height": 604
+    "width": 735,
+    "height": 445
   },
   "dbx-install-agent-on-agent-server-cubrid-ja.png": {
-    "width": 1203,
-    "height": 604
+    "width": 735,
+    "height": 445
   },
   "dbx-install-agent-on-agent-server-cubrid.png": {
-    "width": 1203,
-    "height": 604
+    "width": 735,
+    "height": 445
   },
   "dbx-install-agent-on-agent-server-en.png": {
     "width": 1086,
@@ -7704,16 +8504,16 @@
     "height": 604
   },
   "dbx-install-agent-on-db-server-cubrid-en.png": {
-    "width": 1203,
-    "height": 604
+    "width": 886,
+    "height": 425
   },
   "dbx-install-agent-on-db-server-cubrid-ja.png": {
-    "width": 1203,
-    "height": 604
+    "width": 886,
+    "height": 425
   },
   "dbx-install-agent-on-db-server-cubrid.png": {
-    "width": 1203,
-    "height": 604
+    "width": 886,
+    "height": 425
   },
   "dbx-install-agent-on-db-server-dma-en.png": {
     "width": 1629,
@@ -8147,13 +8947,49 @@
     "width": 800,
     "height": 171
   },
+  "event-history-add-acknowledge-added-en.png": {
+    "width": 170,
+    "height": 50
+  },
+  "event-history-add-acknowledge-added-ja.png": {
+    "width": 171,
+    "height": 49
+  },
+  "event-history-add-acknowledge-added.png": {
+    "width": 172,
+    "height": 50
+  },
+  "event-history-add-acknowledge-en.png": {
+    "width": 600,
+    "height": 640
+  },
+  "event-history-add-acknowledge-history-en.png": {
+    "width": 600,
+    "height": 314
+  },
+  "event-history-add-acknowledge-history-ja.png": {
+    "width": 600,
+    "height": 310
+  },
+  "event-history-add-acknowledge-history.png": {
+    "width": 600,
+    "height": 313
+  },
+  "event-history-add-acknowledge-ja.png": {
+    "width": 600,
+    "height": 638
+  },
+  "event-history-add-acknowledge.png": {
+    "width": 600,
+    "height": 636
+  },
   "event-history-en.png": {
     "width": 1200,
-    "height": 686
+    "height": 708
   },
   "event-history-ja.png": {
     "width": 1200,
-    "height": 686
+    "height": 708
   },
   "event-history-server-en.png": {
     "width": 1200,
@@ -8169,7 +9005,7 @@
   },
   "event-history.png": {
     "width": 1200,
-    "height": 683
+    "height": 708
   },
   "apm-faq-hitmap-error.png": {
     "width": 1201,
@@ -9308,16 +10144,16 @@
     "height": 267
   },
   "ipa-thread-list-java-en.png": {
-    "width": 1622,
-    "height": 610
+    "width": 1200,
+    "height": 361
   },
   "ipa-thread-list-java-ja.png": {
-    "width": 1620,
-    "height": 582
+    "width": 1200,
+    "height": 362
   },
   "ipa-thread-list-java.png": {
-    "width": 1623,
-    "height": 579
+    "width": 1200,
+    "height": 359
   },
   "java-agent-log-oname.png": {
     "width": 1500,
@@ -9361,15 +10197,15 @@
   },
   "k8s-agent-list-en.png": {
     "width": 1200,
-    "height": 510
+    "height": 501
   },
   "k8s-agent-list-ja.png": {
     "width": 1200,
-    "height": 507
+    "height": 498
   },
   "k8s-agent-list.png": {
     "width": 1200,
-    "height": 509
+    "height": 499
   },
   "k8s-agent2application-en.png": {
     "width": 1200,
@@ -9739,6 +10575,18 @@
     "width": 1200,
     "height": 678
   },
+  "k8s-container-list-compare-en.png": {
+    "width": 1200,
+    "height": 670
+  },
+  "k8s-container-list-compare-ja.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-container-list-compare.png": {
+    "width": 1200,
+    "height": 670
+  },
   "k8s-container-log-en.png": {
     "width": 1200,
     "height": 660
@@ -10013,15 +10861,43 @@
   },
   "k8s-event-history-en.png": {
     "width": 1200,
-    "height": 683
+    "height": 727
   },
   "k8s-event-history-ja.png": {
     "width": 1200,
-    "height": 683
+    "height": 709
   },
   "k8s-event-history.png": {
     "width": 1200,
-    "height": 680
+    "height": 709
+  },
+  "k8s-ingress-list-cl.png": {
+    "width": 800,
+    "height": 394
+  },
+  "k8s-ingress-list-dt-en.png": {
+    "width": 1200,
+    "height": 614
+  },
+  "k8s-ingress-list-dt-ja.png": {
+    "width": 1200,
+    "height": 625
+  },
+  "k8s-ingress-list-dt.png": {
+    "width": 1195,
+    "height": 593
+  },
+  "k8s-ingress-list-en.png": {
+    "width": 1200,
+    "height": 252
+  },
+  "k8s-ingress-list-ja.png": {
+    "width": 1200,
+    "height": 251
+  },
+  "k8s-ingress-list.png": {
+    "width": 1200,
+    "height": 251
   },
   "k8s-install-master-node-addition-en.png": {
     "width": 1200,
@@ -10057,7 +10933,7 @@
   },
   "k8s-install-master-node-command.png": {
     "width": 1200,
-    "height": 1266
+    "height": 716
   },
   "k8s-install-master-node-download-en.png": {
     "width": 1200,
@@ -10069,19 +10945,19 @@
   },
   "k8s-install-master-node-download.png": {
     "width": 1200,
-    "height": 723
+    "height": 587
   },
   "k8s-install-master-node-method-en.png": {
     "width": 1200,
-    "height": 1070
+    "height": 895
   },
   "k8s-install-master-node-method-ja.png": {
     "width": 1200,
-    "height": 1099
+    "height": 895
   },
   "k8s-install-master-node-method.png": {
     "width": 1200,
-    "height": 1068
+    "height": 897
   },
   "k8s-kube-apiserver-en.png": {
     "width": 1200,
@@ -10106,6 +10982,18 @@
   "k8s-kuber-namespace.png": {
     "width": 744,
     "height": 407
+  },
+  "k8s-log-filter-settings-en.png": {
+    "width": 1200,
+    "height": 486
+  },
+  "k8s-log-filter-settings-ja.png": {
+    "width": 1200,
+    "height": 482
+  },
+  "k8s-log-filter-settings.png": {
+    "width": 1200,
+    "height": 486
   },
   "k8s-log-search-en.png": {
     "width": 1200,
@@ -10183,17 +11071,205 @@
     "width": 329,
     "height": 576
   },
+  "k8s-node-disk-compare-en.png": {
+    "width": 1200,
+    "height": 497
+  },
+  "k8s-node-disk-compare-ja.png": {
+    "width": 1200,
+    "height": 495
+  },
+  "k8s-node-disk-compare.png": {
+    "width": 1200,
+    "height": 497
+  },
   "k8s-node-disk-list-en.png": {
     "width": 1200,
-    "height": 401
+    "height": 307
   },
   "k8s-node-disk-list-ja.png": {
     "width": 1200,
-    "height": 401
+    "height": 307
   },
   "k8s-node-disk-list.png": {
     "width": 1200,
-    "height": 401
+    "height": 311
+  },
+  "k8s-node-map-addtional-settings-en.png": {
+    "width": 1544,
+    "height": 670
+  },
+  "k8s-node-map-addtional-settings-ja.png": {
+    "width": 1527,
+    "height": 670
+  },
+  "k8s-node-map-addtional-settings.png": {
+    "width": 1535,
+    "height": 670
+  },
+  "k8s-node-map-chart-en.png": {
+    "width": 1200,
+    "height": 823
+  },
+  "k8s-node-map-chart-ja.png": {
+    "width": 1200,
+    "height": 823
+  },
+  "k8s-node-map-chart.png": {
+    "width": 1200,
+    "height": 814
+  },
+  "k8s-node-map-custom-color.png": {
+    "width": 554,
+    "height": 381
+  },
+  "k8s-node-map-custom-en.png": {
+    "width": 2588,
+    "height": 1416
+  },
+  "k8s-node-map-custom-err-col.png": {
+    "width": 795,
+    "height": 452
+  },
+  "k8s-node-map-custom-ja.png": {
+    "width": 2584,
+    "height": 1416
+  },
+  "k8s-node-map-custom.png": {
+    "width": 2584,
+    "height": 1416
+  },
+  "k8s-node-map-en.png": {
+    "width": 1200,
+    "height": 670
+  },
+  "k8s-node-map-ja.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-node-map-label.png": {
+    "width": 300,
+    "height": 300
+  },
+  "k8s-node-map-pop-over.png": {
+    "width": 1084,
+    "height": 814
+  },
+  "k8s-node-map-summary-en.png": {
+    "width": 1200,
+    "height": 514
+  },
+  "k8s-node-map-summary-ja.png": {
+    "width": 1200,
+    "height": 514
+  },
+  "k8s-node-map-summary.png": {
+    "width": 1200,
+    "height": 568
+  },
+  "k8s-node-map.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-node-process-en.png": {
+    "width": 1200,
+    "height": 320
+  },
+  "k8s-node-process-ja.png": {
+    "width": 1200,
+    "height": 318
+  },
+  "k8s-node-process.png": {
+    "width": 1200,
+    "height": 328
+  },
+  "k8s-node-timeline-config-en.png": {
+    "width": 800,
+    "height": 940
+  },
+  "k8s-node-timeline-config-ja.png": {
+    "width": 800,
+    "height": 944
+  },
+  "k8s-node-timeline-config.png": {
+    "width": 800,
+    "height": 947
+  },
+  "k8s-node-timeline-drag-en.png": {
+    "width": 1200,
+    "height": 670
+  },
+  "k8s-node-timeline-drag-ja.png": {
+    "width": 1200,
+    "height": 670
+  },
+  "k8s-node-timeline-drag.gif": {
+    "width": 2528,
+    "height": 1412
+  },
+  "k8s-node-timeline-drag.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-node-timeline-en.png": {
+    "width": 1200,
+    "height": 669
+  },
+  "k8s-node-timeline-event-en.png": {
+    "width": 800,
+    "height": 739
+  },
+  "k8s-node-timeline-event-ja.png": {
+    "width": 800,
+    "height": 743
+  },
+  "k8s-node-timeline-event.png": {
+    "width": 800,
+    "height": 743
+  },
+  "k8s-node-timeline-ja.png": {
+    "width": 1200,
+    "height": 672
+  },
+  "k8s-node-timeline-metrics-en.png": {
+    "width": 800,
+    "height": 744
+  },
+  "k8s-node-timeline-metrics-ja.png": {
+    "width": 800,
+    "height": 741
+  },
+  "k8s-node-timeline-metrics.png": {
+    "width": 800,
+    "height": 741
+  },
+  "k8s-node-timeline-resource-en.png": {
+    "width": 800,
+    "height": 742
+  },
+  "k8s-node-timeline-resource-ja.png": {
+    "width": 800,
+    "height": 750
+  },
+  "k8s-node-timeline-resource.png": {
+    "width": 800,
+    "height": 750
+  },
+  "k8s-node-timeline-stage-en.png": {
+    "width": 1191,
+    "height": 407
+  },
+  "k8s-node-timeline-stage-ja.png": {
+    "width": 1186,
+    "height": 413
+  },
+  "k8s-node-timeline-stage.png": {
+    "width": 1191,
+    "height": 407
+  },
+  "k8s-node-timeline.png": {
+    "width": 1200,
+    "height": 672
   },
   "k8s-object-manifest-cm-en.png": {
     "width": 1200,
@@ -10304,20 +11380,20 @@
     "height": 675
   },
   "k8s-performance-summary-en.png": {
-    "width": 1211,
-    "height": 1360
+    "width": 1200,
+    "height": 990
   },
   "k8s-performance-summary-ja.png": {
-    "width": 1211,
-    "height": 1361
+    "width": 1200,
+    "height": 993
   },
   "k8s-performance-summary-shortcut.png": {
     "width": 177,
     "height": 103
   },
   "k8s-performance-summary.png": {
-    "width": 1211,
-    "height": 1360
+    "width": 1200,
+    "height": 993
   },
   "k8s-pod-init-perform-cl-en.png": {
     "width": 1308,
@@ -10428,16 +11504,16 @@
     "height": 1200
   },
   "k8s-resource-cl-sum-co-en.png": {
-    "width": 1201,
-    "height": 1069
+    "width": 1076,
+    "height": 1200
   },
   "k8s-resource-cl-sum-co-ja.png": {
-    "width": 1201,
-    "height": 1066
+    "width": 1079,
+    "height": 1200
   },
   "k8s-resource-cl-sum-co.png": {
-    "width": 1201,
-    "height": 1065
+    "width": 1080,
+    "height": 1201
   },
   "k8s-resource-container-list-add-filter-en.png": {
     "width": 405,
@@ -10497,15 +11573,15 @@
   },
   "k8s-resource-container-list-m-en.png": {
     "width": 1200,
-    "height": 661
+    "height": 667
   },
   "k8s-resource-container-list-m-ja.png": {
     "width": 1200,
-    "height": 660
+    "height": 637
   },
   "k8s-resource-container-list-m.png": {
     "width": 1200,
-    "height": 661
+    "height": 677
   },
   "k8s-resource-container-list-metric-info-cl.png": {
     "width": 1200,
@@ -10540,12 +11616,12 @@
     "height": 567
   },
   "k8s-resource-node-list-compare-en.png": {
-    "width": 1222,
-    "height": 633
+    "width": 1200,
+    "height": 846
   },
   "k8s-resource-node-list-compare-ja.png": {
-    "width": 1222,
-    "height": 634
+    "width": 1201,
+    "height": 845
   },
   "k8s-resource-node-list-compare-time-en.png": {
     "width": 1200,
@@ -10560,20 +11636,20 @@
     "height": 702
   },
   "k8s-resource-node-list-compare.png": {
-    "width": 1222,
-    "height": 628
+    "width": 1200,
+    "height": 848
   },
   "k8s-resource-node-list-m-en.png": {
-    "width": 1208,
-    "height": 282
+    "width": 1200,
+    "height": 351
   },
   "k8s-resource-node-list-m-ja.png": {
-    "width": 1208,
-    "height": 280
+    "width": 1200,
+    "height": 351
   },
   "k8s-resource-node-list-m.png": {
-    "width": 1208,
-    "height": 277
+    "width": 1200,
+    "height": 354
   },
   "k8s-resource-node-list-metric-info-cl.png": {
     "width": 731,
@@ -10582,6 +11658,18 @@
   "k8s-resource-node-list-metric-info.png": {
     "width": 645,
     "height": 254
+  },
+  "k8s-resource-node-list-trace-en.png": {
+    "width": 1200,
+    "height": 624
+  },
+  "k8s-resource-node-list-trace-ja.png": {
+    "width": 1200,
+    "height": 627
+  },
+  "k8s-resource-node-list-trace.png": {
+    "width": 1200,
+    "height": 629
   },
   "k8s-service-list-cl-en.png": {
     "width": 376,
@@ -10801,15 +11889,39 @@
   },
   "linked-project-db-instance-dahboard-en.png": {
     "width": 1200,
-    "height": 688
+    "height": 709
   },
   "linked-project-db-instance-dahboard-ja.png": {
     "width": 1200,
-    "height": 688
+    "height": 706
+  },
+  "linked-project-db-instance-dahboard-not-allowed-btn-en.png": {
+    "width": 800,
+    "height": 75
+  },
+  "linked-project-db-instance-dahboard-not-allowed-btn-ja.png": {
+    "width": 800,
+    "height": 76
+  },
+  "linked-project-db-instance-dahboard-not-allowed-btn.png": {
+    "width": 800,
+    "height": 80
+  },
+  "linked-project-db-instance-dahboard-select-instance-en.png": {
+    "width": 1200,
+    "height": 392
+  },
+  "linked-project-db-instance-dahboard-select-instance-ja.png": {
+    "width": 1200,
+    "height": 392
+  },
+  "linked-project-db-instance-dahboard-select-instance.png": {
+    "width": 1200,
+    "height": 392
   },
   "linked-project-db-instance-dahboard.png": {
     "width": 1200,
-    "height": 688
+    "height": 708
   },
   "linked-project-management-add-project-en.png": {
     "width": 800,
@@ -10825,15 +11937,103 @@
   },
   "linked-project-management-en.png": {
     "width": 1200,
-    "height": 366
+    "height": 346
   },
   "linked-project-management-ja.png": {
     "width": 1200,
-    "height": 366
+    "height": 345
   },
   "linked-project-management.png": {
     "width": 1200,
-    "height": 366
+    "height": 345
+  },
+  "linked-projects-agent-settings.png": {
+    "width": 1642,
+    "height": 327
+  },
+  "linked-projects-check-widget-01-en.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-01-ja.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-01.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-02-en.png": {
+    "width": 1243,
+    "height": 478
+  },
+  "linked-projects-check-widget-02-ja.png": {
+    "width": 1243,
+    "height": 478
+  },
+  "linked-projects-check-widget-02.png": {
+    "width": 1243,
+    "height": 478
+  },
+  "linked-projects-check-widget-03-en-1.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-03-en.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-03.png": {
+    "width": 1243,
+    "height": 313
+  },
+  "linked-projects-check-widget-04-en.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "linked-projects-check-widget-04-ja.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "linked-projects-check-widget-04.png": {
+    "width": 1243,
+    "height": 354
+  },
+  "linked-projects-check-widget-05-en.png": {
+    "width": 1200,
+    "height": 794
+  },
+  "linked-projects-check-widget-05-ja.png": {
+    "width": 1200,
+    "height": 794
+  },
+  "linked-projects-check-widget-05.png": {
+    "width": 1200,
+    "height": 794
+  },
+  "linked-projects-check-widget-06-en.png": {
+    "width": 1243,
+    "height": 664
+  },
+  "linked-projects-check-widget-06-ja.png": {
+    "width": 1243,
+    "height": 664
+  },
+  "linked-projects-check-widget-06.png": {
+    "width": 1243,
+    "height": 664
+  },
+  "linked-projects-database-info-en.png": {
+    "width": 800,
+    "height": 403
+  },
+  "linked-projects-database-info-ja.png": {
+    "width": 800,
+    "height": 401
+  },
+  "linked-projects-database-info.png": {
+    "width": 800,
+    "height": 464
   },
   "log-1st-grok-en.png": {
     "width": 835,
@@ -10860,16 +12060,16 @@
     "height": 495
   },
   "log-1st-parser-add-en.png": {
-    "width": 1070,
-    "height": 759
+    "width": 1200,
+    "height": 817
   },
   "log-1st-parser-add-ja.png": {
-    "width": 1101,
-    "height": 754
+    "width": 1200,
+    "height": 822
   },
   "log-1st-parser-add.png": {
-    "width": 1008,
-    "height": 607
+    "width": 1200,
+    "height": 816
   },
   "log-1st-parser-list-en.png": {
     "width": 1207,
@@ -10908,16 +12108,16 @@
     "height": 609
   },
   "log-2nd-parser-add-en.png": {
-    "width": 948,
-    "height": 334
+    "width": 1200,
+    "height": 814
   },
   "log-2nd-parser-add-ja.png": {
-    "width": 948,
-    "height": 332
+    "width": 1200,
+    "height": 817
   },
   "log-2nd-parser-add.png": {
-    "width": 1208,
-    "height": 465
+    "width": 1200,
+    "height": 814
   },
   "log-2nd-parser-list-en.png": {
     "width": 1200,
@@ -10942,6 +12142,18 @@
   "log-2nd-status.png": {
     "width": 1200,
     "height": 625
+  },
+  "log-2st-parser-add-en.png": {
+    "width": 1200,
+    "height": 814
+  },
+  "log-2st-parser-add-ja.png": {
+    "width": 1200,
+    "height": 817
+  },
+  "log-2st-parser-add.png": {
+    "width": 1200,
+    "height": 814
   },
   "log-agent-conf-en.png": {
     "width": 1200,
@@ -11054,6 +12266,18 @@
   "log-filter-comp.png": {
     "width": 348,
     "height": 54
+  },
+  "log-filter-fav-en.png": {
+    "width": 800,
+    "height": 478
+  },
+  "log-filter-fav-ja.png": {
+    "width": 800,
+    "height": 482
+  },
+  "log-filter-fav.png": {
+    "width": 1200,
+    "height": 268
   },
   "log-filter-search-en.png": {
     "width": 1114,
@@ -11199,6 +12423,18 @@
     "width": 1605,
     "height": 891
   },
+  "log-grok-parser-input-en.png": {
+    "width": 1200,
+    "height": 1199
+  },
+  "log-grok-parser-input-ja.png": {
+    "width": 1200,
+    "height": 1197
+  },
+  "log-grok-parser-input.png": {
+    "width": 1200,
+    "height": 1202
+  },
   "log-grok-parser-simulation-en.png": {
     "width": 743,
     "height": 1200
@@ -11222,6 +12458,30 @@
   "log-highlight.png": {
     "width": 450,
     "height": 304
+  },
+  "log-jason-parser-input-en.png": {
+    "width": 1200,
+    "height": 1207
+  },
+  "log-jason-parser-input-ja.png": {
+    "width": 1200,
+    "height": 1205
+  },
+  "log-jason-parser-input.png": {
+    "width": 1200,
+    "height": 1206
+  },
+  "log-jason-parser-simulation-en.png": {
+    "width": 1200,
+    "height": 654
+  },
+  "log-jason-parser-simulation-ja.png": {
+    "width": 1200,
+    "height": 648
+  },
+  "log-jason-parser-simulation.png": {
+    "width": 1200,
+    "height": 659
   },
   "log-k8s-app-agent-setting-106-en.png": {
     "width": 1200,
@@ -11347,6 +12607,18 @@
     "width": 761,
     "height": 722
   },
+  "log-parser-simulation2-en.png": {
+    "width": 1200,
+    "height": 776
+  },
+  "log-parser-simulation2-ja.png": {
+    "width": 1200,
+    "height": 773
+  },
+  "log-parser-simulation2.png": {
+    "width": 1200,
+    "height": 772
+  },
   "log-performance-en.png": {
     "width": 800,
     "height": 329
@@ -11414,6 +12686,14 @@
   "log-search.png": {
     "width": 1200,
     "height": 883
+  },
+  "log-server-file-separation.png": {
+    "width": 1201,
+    "height": 535
+  },
+  "log-server-multi-file.png": {
+    "width": 1200,
+    "height": 631
   },
   "log-simulation-fail-en.png": {
     "width": 795,
@@ -11750,6 +13030,154 @@
   "metric-edit-window.png": {
     "width": 1200,
     "height": 1019
+  },
+  "metric-warning-notice-new-basic-screen-browser-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-browser-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-browser.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-db-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-db-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-db.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-server-en.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-server-ja.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen-server.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-basic-screen.png": {
+    "width": 1200,
+    "height": 635
+  },
+  "metric-warning-notice-new-event-condition-category-en.png": {
+    "width": 600,
+    "height": 378
+  },
+  "metric-warning-notice-new-event-condition-category-ja.png": {
+    "width": 600,
+    "height": 378
+  },
+  "metric-warning-notice-new-event-condition-category.png": {
+    "width": 600,
+    "height": 391
+  },
+  "metric-warning-notice-new-event-condition.png": {
+    "width": 1200,
+    "height": 844
+  },
+  "metric-warning-notice-new-information-en.png": {
+    "width": 1200,
+    "height": 379
+  },
+  "metric-warning-notice-new-information-ja.png": {
+    "width": 1200,
+    "height": 370
+  },
+  "metric-warning-notice-new-information.png": {
+    "width": 1200,
+    "height": 379
+  },
+  "metric-warning-notice-new-num-of-events-en.png": {
+    "width": 600,
+    "height": 46
+  },
+  "metric-warning-notice-new-num-of-events-ja.png": {
+    "width": 600,
+    "height": 46
+  },
+  "metric-warning-notice-new-num-of-events.png": {
+    "width": 600,
+    "height": 49
+  },
+  "metric-warning-notice-new-pause-en.png": {
+    "width": 600,
+    "height": 82
+  },
+  "metric-warning-notice-new-pause-ja.png": {
+    "width": 600,
+    "height": 106
+  },
+  "metric-warning-notice-new-pause.png": {
+    "width": 600,
+    "height": 128
+  },
+  "metric-warning-notice-new-recovered-en.png": {
+    "width": 600,
+    "height": 52
+  },
+  "metric-warning-notice-new-recovered-ja.png": {
+    "width": 600,
+    "height": 52
+  },
+  "metric-warning-notice-new-recovered.png": {
+    "width": 600,
+    "height": 60
+  },
+  "metric-warning-notice-new-select-target-en.png": {
+    "width": 1200,
+    "height": 243
+  },
+  "metric-warning-notice-new-select-target-ja.png": {
+    "width": 1200,
+    "height": 243
+  },
+  "metric-warning-notice-new-select-target.png": {
+    "width": 1200,
+    "height": 243
+  },
+  "metric-warning-notice-new-set-metrics-en.png": {
+    "width": 800,
+    "height": 129
+  },
+  "metric-warning-notice-new-set-metrics-ja.png": {
+    "width": 800,
+    "height": 147
+  },
+  "metric-warning-notice-new-set-metrics.png": {
+    "width": 800,
+    "height": 135
+  },
+  "metric-warning-notice-new-simulation-en.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metric-warning-notice-new-simulation-ja.png": {
+    "width": 1200,
+    "height": 508
+  },
+  "metric-warning-notice-new-simulation.png": {
+    "width": 1200,
+    "height": 508
   },
   "metric-widget-data-en.png": {
     "width": 400,
@@ -14495,9 +15923,17 @@
     "width": 400,
     "height": 368
   },
+  "release-apm-statistics-btn-select.png": {
+    "width": 600,
+    "height": 146
+  },
   "release-apm-trace-add-serial-field.png": {
     "width": 1200,
     "height": 227
+  },
+  "release-changed-container.png": {
+    "width": 2358,
+    "height": 771
   },
   "release-container-list-column-change.png": {
     "width": 400,
@@ -14530,6 +15966,10 @@
   "release-k8s-container-group-application-count.png": {
     "width": 600,
     "height": 545
+  },
+  "release-log-live-tail-filter.png": {
+    "width": 1200,
+    "height": 318
   },
   "release-main-ui.png": {
     "width": 2384,
@@ -15175,6 +16615,18 @@
     "width": 1215,
     "height": 937
   },
+  "server-install-hp-ux-en.png": {
+    "width": 1273,
+    "height": 886
+  },
+  "server-install-hp-ux-ja.png": {
+    "width": 1273,
+    "height": 899
+  },
+  "server-install-hp-ux.png": {
+    "width": 1273,
+    "height": 886
+  },
   "server-install-lx-unx-en.png": {
     "width": 1264,
     "height": 648
@@ -15222,6 +16674,30 @@
   "server-install-windows.png": {
     "width": 1269,
     "height": 820
+  },
+  "server-inventory-cl-en.png": {
+    "width": 1200,
+    "height": 1202
+  },
+  "server-inventory-cl-ja.png": {
+    "width": 1200,
+    "height": 1213
+  },
+  "server-inventory-cl.png": {
+    "width": 800,
+    "height": 803
+  },
+  "server-inventory-en.png": {
+    "width": 1211,
+    "height": 669
+  },
+  "server-inventory-ja.png": {
+    "width": 1211,
+    "height": 669
+  },
+  "server-inventory.png": {
+    "width": 1211,
+    "height": 673
   },
   "server-list-agent-transfer-en.png": {
     "width": 1083,
@@ -16549,11 +18025,11 @@
   },
   "main-ui-profile-menu-en.png": {
     "width": 200,
-    "height": 293
+    "height": 295
   },
   "main-ui-profile-menu-ja.png": {
     "width": 200,
-    "height": 295
+    "height": 293
   },
   "main-ui-profile-menu.png": {
     "width": 200,
@@ -16703,6 +18179,18 @@
     "width": 800,
     "height": 148
   },
+  "url-check-region-ip-en.png": {
+    "width": 600,
+    "height": 174
+  },
+  "url-check-region-ip-ja.png": {
+    "width": 600,
+    "height": 175
+  },
+  "url-check-region-ip.png": {
+    "width": 600,
+    "height": 154
+  },
   "url-error-type-en.png": {
     "width": 1200,
     "height": 605
@@ -16753,15 +18241,15 @@
   },
   "url-input-field-en.png": {
     "width": 600,
-    "height": 745
+    "height": 818
   },
   "url-input-field-ja.png": {
     "width": 600,
-    "height": 747
+    "height": 818
   },
   "url-input-field.png": {
     "width": 600,
-    "height": 748
+    "height": 818
   },
   "url-monitoring-dt-en.png": {
     "width": 1046,
@@ -17350,6 +18838,18 @@
   "widget-topn-chart.png": {
     "width": 1200,
     "height": 912
+  },
+  "xos-agent-cubrid-en.png": {
+    "width": 1086,
+    "height": 605
+  },
+  "xos-agent-cubrid-ja.png": {
+    "width": 1086,
+    "height": 605
+  },
+  "xos-agent-cubrid.png": {
+    "width": 1086,
+    "height": 605
   },
   "xos-agent-en.png": {
     "width": 1086,
