@@ -62,8 +62,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/python/python-previous"
   },
   "next": {
-    "title": ".NET Agent v2.3.4",
-    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_3_4"
+    "title": ".NET Agent v2.3.5",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_3_5"
   }
 };
 const assets = {

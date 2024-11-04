@@ -132,8 +132,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": ".NET Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/dotnet/"
+    "title": ".NET Agent v2.3.5",
+    "permalink": "/whatap-docs/release-notes/dotnet/dotnet-2_3_5"
   },
   "next": {
     "title": ".NET Agent v2.3.3",
