@@ -556,6 +556,10 @@ const toc = [..._common_items_trs_view_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc *
   "value": "트랜잭션 에러 단계 INFO 처리",
   "id": "트랜잭션-에러-단계-info-처리",
   "level": 3
+}, {
+  "value": "메소드 예외 처리",
+  "id": "메소드-예외-처리",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -567,6 +571,7 @@ function _createMdxContent(props) {
     h3: "h3",
     img: "img",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     pre: "pre",
     section: "section",
@@ -800,6 +805,23 @@ function _createMdxContent(props) {
             })
           }), "\n"]
         }), "\n"]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "메소드-예외-처리",
+        children: "메소드 예외 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "hook_method_patterns"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "hook_service_patterns"
+        }), " 옵션을 통해 설정한 메소드가 수행 중 Exception을 발생시키는 경우, 해당 예외는 에러로 처리됩니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "Try-Catch 구문을 사용하여 메소드 내부에서 Exception을 처리한 경우, 자바 에이전트는 해당 Exception을 수집 대상에서 제외하여 에러로 처리하지 않습니다."
+        })]
       })]
     })]
   });
