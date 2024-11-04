@@ -72,6 +72,10 @@ const toc = [{
   "id": "browser",
   "level": 3
 }, {
+  "value": "<code>Log</code>",
+  "id": "log",
+  "level": 3
+}, {
   "value": "Preview 2.11.0.a1",
   "id": "preview-2110a1",
   "level": 2
@@ -93,7 +97,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Log</code>",
-  "id": "log",
+  "id": "log-1",
   "level": 3
 }, {
   "value": "Preview 2.11.0.a0",
@@ -207,6 +211,16 @@ function _createMdxContent(props) {
             sid: "TTL08103",
             className: "uitext"
           }), " 과금 표시"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "log",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Log"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "Changed"
+          }), " 로그 필터 즐겨찾기 제한 개수 10개에서 50개로 변경"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -636,7 +650,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "log",
+          id: "log-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Log"
           })
