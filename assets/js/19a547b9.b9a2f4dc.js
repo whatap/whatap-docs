@@ -73,7 +73,124 @@ const assets = {
 
 };
 
+/*
+
+### 기타
+
+위에서 안내한 방법으로 오류가 해결되지 않을 경우 상세한 디버깅 정보를 전달해 주세요. 디버깅 데이터 수집 과정은 다음과 같습니다.
+
+1. 다음 링크에서 모니터링 프로그램(*UdpMonitor.exe*)을 다운 후 실행하세요.
+
+* [모니터링 프로그램](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/UdpMonitor.exe)
+
+1. 디버깅용 에이전트를 다음 링크에서 다운 후 설치하세요.
+
+* [디버깅용 에이전트](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/whatap_dotnet_debug.exe)
+
+1. 트랜잭션을 발생시키세요.
+
+1. 트랜잭션을 충분히 유발한 경우 *UdpMonitor.exe*를 종료하세요.
+
+1. *UdpMonitor.exe*와 동일한 폴더에 *UdpMonitor.txt*가 생성됩니다.
+
+1. *UdpMonitor.txt* 파일을 담당자에게 전달해 주세요.
+
+1. 디버깅 완료 시 디버깅용 에이전트를 제거하세요.
+
+*/
 /*모니터링 대상이 되는 메소드에서 예외가 처리되지 않는 경우 트랜잭션 종료 시점을 알 수 없습니다. 이런 상황에 대비하여 웹 서비스 모니터링은 기본적으로 5초 후에 타임아웃 처리됩니다.*/
+/*
+#### WCF 소스 코드
+
+다음은 모니터링 대상이 되는 WCF 소스 코드 예제입니다.
+
+```c {3-13}
+namespace Whatap.DotNet.Examples
+{
+public class Service1 : IService1
+{
+public string GetData(int value)
+{
+...
+}
+
+public CompositeType GetDataUsingDataContract(CompositeType composite)
+{
+...
+}
+
+private string getFromDB()
+{
+...
+}
+
+private string getFromHttp()
+{
+...
+}
+}
+
+public class Service2 : IService1
+{
+...
+}
+
+public class Service3 : IService1
+{
+public string IwantToSeeOnlyThis(int value)
+{
+...
+}
+}
+}
+```
+
+* **GetData**
+
+`GetData()` 메소드는 `Whatap.DotNet.Examples.Service1` 클래스에 속해 있습니다. 또한 Public 메소드이기 때문에 모니터링 대상이 됩니다. 이 메소드는 설정 파일의 `webservice_method_prefix` 옵션에 명시된 값에 포함되기 때문에 트랜잭션으로 처리됩니다. 메소드의 호출 경로는 다음과 같습니다.
+
+> `Whatap.DotNet.Examples.Service1.GetData`
+
+* **GetDataUsingDataContract**
+
+`GetDataUsingDataContract()` 메소드는 Public 메소드이기 때문에 모니터링 대상이 됩니다. 메소드의 호출 경로는 다음과 같습니다.
+
+> `Whatap.DotNet.Examples.Service1.GetDataUsingDataContract`
+
+:::note[]
+
+* `getFromDB()`, `getFromHttp()` 메소드는 Private 메소드이기 때문에 모니터링 대상이 아닙니다.
+
+* `webservice_method_prefix` 옵션에 `Whatap.DotNet.Examples.Service3`를 추가할 경우 Public 메소드인 `IwantToSeeOnlyThis()` 메소드가 모니터링 대상이 될 수 있습니다.
+
+:::
+
+*/
+/*
+
+### 네임스페이스와 클래스 이름을 찾기 어려울 경우
+
+WCF 서버 메소드가 정의된 네임스페이스를 찾기 어려울 경우 다음 방법을 사용해 네임스페이스와 클래스 이름을 찾을 수 있습니다.
+
+1. 다음 링크에서 *GetNamesapces.exe* 파일을 다운로드하세요.
+
+* [GetNamesapces.exe](https://repo.whatap.io/windows/GetNamesapces.exe)
+
+1. 다음과 같이 웹 애플리케이션의 폴더 경로를 파라미터로 전달해 *GetNamesapces.exe* 파일을 실행하세요.
+
+```
+C:...\> GetNamesapces.exe C:\inetpub
+```
+
+1. 실행이 완료되면 해당 폴더와 그 하위 폴더에 있는 모든 *dll* 파일을 스캔해 네임스페이스와 클래스 이름을 목록으로 출력합니다.
+
+:::note[]
+
+결과 적용이 어려울 경우 *GetNamesapces.exe* 실행 후 동일한 폴더에 생성된 *GetNamesapces.txt* 파일을 담당자에게 전달하세요.
+
+:::
+
+*/
 
 
 const toc = [{
@@ -101,10 +218,6 @@ const toc = [{
   "id": "지원-환경-확인이-어렵거나-지원-대상인-경우",
   "level": 3
 }, {
-  "value": "기타",
-  "id": "기타",
-  "level": 3
-}, {
   "value": "WCF 및 공식 미지원 라이브러리 모니터링",
   "id": "wcf-및-공식-미지원-라이브러리-모니터링",
   "level": 2
@@ -121,19 +234,30 @@ const toc = [{
   "id": "whatapconf-수정",
   "level": 4
 }, {
-  "value": "WCF 소스 코드",
-  "id": "wcf-소스-코드",
-  "level": 4
+  "value": "네임스페이스와 클래스 이름 찾기",
+  "id": "네임스페이스와-클래스-이름-찾기",
+  "level": 2
 }, {
-  "value": "네임스페이스와 클래스 이름을 찾기 어려울 경우",
-  "id": "네임스페이스와-클래스-이름을-찾기-어려울-경우",
+  "value": "WCF의 경우",
+  "id": "wcf의-경우",
   "level": 3
+}, {
+  "value": "Web Service의 경우",
+  "id": "web-service의-경우",
+  "level": 3
+}, {
+  "value": "설정 예시",
+  "id": "설정-예시",
+  "level": 3
+}, {
+  "value": "트랜잭션은 잡히지만 스텝 정보가 표시되지 않거나 너무 적을 때",
+  "id": "트랜잭션은-잡히지만-스텝-정보가-표시되지-않거나-너무-적을-때",
+  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    blockquote: "blockquote",
     code: "code",
     em: "em",
     h2: "h2",
@@ -141,7 +265,6 @@ function _createMdxContent(props) {
     h4: "h4",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
-    ol: "ol",
     p: "p",
     pre: "pre",
     section: "section",
@@ -288,68 +411,6 @@ function _createMdxContent(props) {
                 children: ".NET 에이전트 지원 환경 분석"
               })
             }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h3",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "기타",
-        children: "기타"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "위에서 안내한 방법으로 오류가 해결되지 않을 경우 상세한 디버깅 정보를 전달해 주세요. 디버깅 데이터 수집 과정은 다음과 같습니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["다음 링크에서 모니터링 프로그램(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "UdpMonitor.exe"
-            }), ")을 다운 후 실행하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/UdpMonitor.exe",
-                children: "모니터링 프로그램"
-              })
-            }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "디버깅용 에이전트를 다음 링크에서 다운 후 설치하세요."
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/whatap_dotnet_debug.exe",
-                children: "디버깅용 에이전트"
-              })
-            }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "트랜잭션을 발생시키세요."
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["트랜잭션을 충분히 유발한 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "UdpMonitor.exe"
-            }), "를 종료하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "UdpMonitor.exe"
-            }), "와 동일한 폴더에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "UdpMonitor.txt"
-            }), "가 생성됩니다."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "UdpMonitor.txt"
-            }), " 파일을 담당자에게 전달해 주세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "디버깅 완료 시 디버깅용 에이전트를 제거하세요."
           }), "\n"]
         }), "\n"]
       })]
@@ -501,128 +562,87 @@ function _createMdxContent(props) {
           desc: "에이전트 설정"
         })]
       })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "네임스페이스와-클래스-이름-찾기",
+        children: "네임스페이스와 클래스 이름 찾기"
+      })
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h4",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-        id: "wcf-소스-코드",
-        children: "WCF 소스 코드"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "다음은 모니터링 대상이 되는 WCF 소스 코드 예제입니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-c",
-          metastring: "{3-13}",
-          children: "namespace Whatap.DotNet.Examples\n{\n    public class Service1 : IService1\n    {\n        public string GetData(int value)\n        {\n            ...\n        }\n\n        public CompositeType GetDataUsingDataContract(CompositeType composite)\n        {\n            ...\n        }\n\n        private string getFromDB()\n        {\n            ...\n        }\n\n        private string getFromHttp()\n        {\n            ...\n        }\n    }\n\n    public class Service2 : IService1\n    {\n        ...\n    }\n\n    public class Service3 : IService1\n    {\n        public string IwantToSeeOnlyThis(int value)\n        {\n            ...\n        }\n    }\n}\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "GetData"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "GetData()"
-            }), " 메소드는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "Whatap.DotNet.Examples.Service1"
-            }), " 클래스에 속해 있습니다. 또한 Public 메소드이기 때문에 모니터링 대상이 됩니다. 이 메소드는 설정 파일의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "webservice_method_prefix"
-            }), " 옵션에 명시된 값에 포함되기 때문에 트랜잭션으로 처리됩니다. 메소드의 호출 경로는 다음과 같습니다."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Whatap.DotNet.Examples.Service1.GetData"
-              })
-            }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "GetDataUsingDataContract"
-            })
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "GetDataUsingDataContract()"
-            }), " 메소드는 Public 메소드이기 때문에 모니터링 대상이 됩니다. 메소드의 호출 경로는 다음과 같습니다."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Whatap.DotNet.Examples.Service1.GetDataUsingDataContract"
-              })
-            }), "\n"]
-          }), "\n"]
-        }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "getFromDB()"
-              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "getFromHttp()"
-              }), " 메소드는 Private 메소드이기 때문에 모니터링 대상이 아닙니다."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "webservice_method_prefix"
-              }), " 옵션에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "Whatap.DotNet.Examples.Service3"
-              }), "를 추가할 경우 Public 메소드인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "IwantToSeeOnlyThis()"
-              }), " 메소드가 모니터링 대상이 될 수 있습니다."]
-            }), "\n"]
-          }), "\n"]
-        })]
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "wcf의-경우",
+        children: "WCF의 경우"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["WCF의 경우 배포 폴더에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "*.svc"
+        }), " 파일을 찾습니다. 이 파일을 메모장 등 텍스트 편집기로 열어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "Service"
+        }), " 항목에 명시된 값을 확인하세요. 해당 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "webservice_method_prefix"
+        }), "에 추가해야 할 정보입니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "dotnet-quick-pic-01.png",
+        desc: "WCF 설정 예시"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "네임스페이스와-클래스-이름을-찾기-어려울-경우",
-        children: "네임스페이스와 클래스 이름을 찾기 어려울 경우"
+        id: "web-service의-경우",
+        children: "Web Service의 경우"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["Web Service의 경우 배포 폴더에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "*.asmx"
+        }), " 파일을 찾습니다. 이 파일을 메모장으로 열어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "Class"
+        }), " 항목에 명시된 값을 확인하세요. 이 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "webservice_method_prefix"
+        }), "에 추가해야 할 정보입니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+        img: "dotnet-quick-pic-02.png",
+        desc: "Web Service 설정 예시"
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "설정-예시",
+        children: "설정 예시"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "WCF 서버 메소드가 정의된 네임스페이스를 찾기 어려울 경우 다음 방법을 사용해 네임스페이스와 클래스 이름을 찾을 수 있습니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
+        children: "다음의 설정 예시를 참조하세요."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-ini",
+          children: "webservice_method_enabled=true\nwebservice_method_prefix=wcfServer.Service1, WebServiceDemo.WebService\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "트랜잭션은-잡히지만-스텝-정보가-표시되지-않거나-너무-적을-때",
+        children: "트랜잭션은 잡히지만 스텝 정보가 표시되지 않거나 너무 적을 때"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["트랜잭션은 감지되지만 스텝 정보가 보이지 않거나 부족한 경우, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "Method hook"
+        }), "을 통해 모니터링 범위를 확대할 수 있습니다. 다음 설정 예시를 참조하세요. 예시 설정을 통해 기본 라이브러리에서 모니터링 범위에서 제외된 항목을 스텝 정보로 표시할 수 있습니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-ini",
+          children: "hook_methods_enabled=true\nhook_methods_prefix=System.Net.Http.HttpClient., System.Net.WebRequest., System.Data., System.Net.Http.,\n# hook_methods_ignores=get,set\n"
+        })
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["다음 링크에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "GetNamesapces.exe"
-            }), " 파일을 다운로드하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "https://repo.whatap.io/windows/GetNamesapces.exe",
-                children: "GetNamesapces.exe"
-              })
-            }), "\n"]
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "hook_methods_prefix"
+            }), ": 지정된 값으로 시작하는 모든 메소드를 스텝에 표시합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["다음과 같이 웹 애플리케이션의 폴더 경로를 파라미터로 전달해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "GetNamesapces.exe"
-            }), " 파일을 실행하세요."]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "C:...\\> GetNamesapces.exe C:\\inetpub\n"
-            })
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["실행이 완료되면 해당 폴더와 그 하위 폴더에 있는 모든 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "dll"
-            }), " 파일을 스캔해 네임스페이스와 클래스 이름을 목록으로 출력합니다."]
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "hook_methods_ignores"
+            }), ": 지정된 값으로 시작하는 모든 메소드를 모니터링에서 제외합니다."]
           }), "\n"]
         }), "\n"]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-        type: "note",
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["결과 적용이 어려울 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "GetNamesapces.exe"
-          }), " 실행 후 동일한 폴더에 생성된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-            children: "GetNamesapces.txt"
-          }), " 파일을 담당자에게 전달하세요."]
-        })]
       })]
     })]
   });
