@@ -103,6 +103,10 @@ const metadata = {
   "previous": {
     "title": "에이전트 설치",
     "permalink": "/whatap-docs/opentelemetry/install-agent"
+  },
+  "next": {
+    "title": "OTEL Agent v0.2.1",
+    "permalink": "/whatap-docs/release-notes/otel/otel-v0_2_1"
   }
 };
 const assets = {
