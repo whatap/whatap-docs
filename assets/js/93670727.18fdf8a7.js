@@ -401,7 +401,11 @@ function _createMdxContent(props) {
               }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "session_detail",
                 className: "uitext"
-              }), " 창에서 세션이 종료되더라도 sid와 serial# 정보가 유지되도록 변경"]
+              }), " 창에서 세션이 종료되더라도 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "sid"
+              }), "와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "serial#"
+              }), " 정보가 유지되도록 변경"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
