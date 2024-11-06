@@ -123,8 +123,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Java Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/java/"
+    "title": "Java Agent v2.2.40",
+    "permalink": "/whatap-docs/release-notes/java/java-2_2_40"
   },
   "next": {
     "title": "Java Agent v2.2.38",
