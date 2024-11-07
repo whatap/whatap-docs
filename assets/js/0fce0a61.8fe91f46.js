@@ -49,6 +49,48 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
+        children: "공통"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 07일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_10_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.10.5​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " 사이드 메뉴의 통합 검색 중 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "Agent/IP"
+          }), " 검색 시 비활성 에이전트 검색 기능 제공"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이용 내역"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "결제 정보"
+          }), " 메뉴에서 AWS 재구독 기능 제공"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
         children: "Kubernetes"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
