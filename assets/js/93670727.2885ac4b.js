@@ -236,7 +236,7 @@ function _createMdxContent(props) {
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "side_paymentInformation",
                 className: "uitext"
-              }), " 메뉴에서 AWS 재구독 기능 추가"]
+              }), " 메뉴에서 AWS 재구독 기능 제공"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
