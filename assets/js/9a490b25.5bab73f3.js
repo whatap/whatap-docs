@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18486],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31401],{
 
 /***/ 82725:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -218,12 +218,22 @@ function _createMdxContent(props) {
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "지원하는 데이터베이스: PostgreSQL, Oracle, MySQL, SQL Server, CUBRID, Altibase, Redis, MongoDB"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08519",
+                className: "uitext"
+              }), " 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "PostgreSQL, Oracle, MySQL, SQL Server, CUBRID, Altibase, Redis, MongoDB"
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "지원 에이전트: Java 에이전트 2.3.33 버전 이상"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08518",
+                className: "uitext"
+              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "PostgreSQL, Oracle, Oracle Pro, MySQL"
             }), "\n"]
           }), "\n"]
         })]
@@ -244,8 +254,11 @@ function _createMdxContent(props) {
               }), " 플랫폼만 지원합니다. 추후 업데이트를 통해 지원 플랫폼을 확장하겠습니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "와탭 Java 에이전트 2.3.33 버전 이상이 필요합니다."
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08518",
+                className: "uitext"
+              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -816,7 +829,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 14630:
+/***/ 73817:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -841,7 +854,7 @@ const frontMatter = {
 	title: '연계 프로젝트 관리',
 	description: '데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'.NET',
+		'Node.js',
 		'애플리케이션',
 		'연계 프로젝트',
 		'데이터베이스'
@@ -850,16 +863,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/linked-projects",
+  "id": "nodejs/linked-projects",
   "title": "연계 프로젝트 관리",
   "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/dotnet/linked-projects.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/linked-projects",
-  "permalink": "/whatap-docs/dotnet/linked-projects",
+  "source": "@site/docs/nodejs/linked-projects.mdx",
+  "sourceDirName": "nodejs",
+  "slug": "/nodejs/linked-projects",
+  "permalink": "/whatap-docs/nodejs/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/linked-projects.mdx",
+  "editUrl": "undefined/docs/nodejs/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -867,21 +880,21 @@ const metadata = {
     "title": "연계 프로젝트 관리",
     "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      ".NET",
+      "Node.js",
       "애플리케이션",
       "연계 프로젝트",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "nodejsSidebar",
   "previous": {
     "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/dotnet/instance-performance-analysis"
+    "permalink": "/whatap-docs/nodejs/instance-performance-analysis"
   },
   "next": {
-    "title": "실험실",
-    "permalink": "/whatap-docs/dotnet/labs"
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
   }
 };
 const assets = {

@@ -57,6 +57,7 @@ const assets = {
 
 };
 
+/*ALERT-133 수신 테스트시 설정된 수신자 태그 적용 항목의 경우 21일 이후 프리뷰 배포 가능성 있기 때문에 추적 및 대기 필요*/
 
 
 const toc = [{
@@ -184,7 +185,7 @@ function _createMdxContent(props) {
           children: "preview.whatap.io"
         }), "에서 다음 추가한 신기능과 수정한 내용을 미리 경험할 수 있습니다."]
       })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "preview-2110a3",

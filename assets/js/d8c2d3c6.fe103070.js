@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39208],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[92432],{
 
 /***/ 82725:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -218,12 +218,22 @@ function _createMdxContent(props) {
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "지원하는 데이터베이스: PostgreSQL, Oracle, MySQL, SQL Server, CUBRID, Altibase, Redis, MongoDB"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08519",
+                className: "uitext"
+              }), " 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "PostgreSQL, Oracle, MySQL, SQL Server, CUBRID, Altibase, Redis, MongoDB"
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "지원 에이전트: Java 에이전트 2.3.33 버전 이상"
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08518",
+                className: "uitext"
+              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "PostgreSQL, Oracle, Oracle Pro, MySQL"
             }), "\n"]
           }), "\n"]
         })]
@@ -244,8 +254,11 @@ function _createMdxContent(props) {
               }), " 플랫폼만 지원합니다. 추후 업데이트를 통해 지원 플랫폼을 확장하겠습니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "와탭 Java 에이전트 2.3.33 버전 이상이 필요합니다."
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "BTN08518",
+                className: "uitext"
+              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -816,7 +829,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 7742:
+/***/ 98562:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -841,7 +854,7 @@ const frontMatter = {
 	title: '연계 프로젝트 관리',
 	description: '애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'PostgreSQL',
+		'MySQL',
 		'데이터베이스',
 		'애플리케이션',
 		'연계 프로젝트'
@@ -850,16 +863,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "postgresql/linked-projects",
+  "id": "mysql/linked-projects",
   "title": "연계 프로젝트 관리",
   "description": "애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/postgresql/linked-projects.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/linked-projects",
-  "permalink": "/whatap-docs/postgresql/linked-projects",
+  "source": "@site/docs/mysql/linked-projects.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/linked-projects",
+  "permalink": "/whatap-docs/mysql/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/linked-projects.mdx",
+  "editUrl": "undefined/docs/mysql/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -867,21 +880,21 @@ const metadata = {
     "title": "연계 프로젝트 관리",
     "description": "애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      "PostgreSQL",
+      "MySQL",
       "데이터베이스",
       "애플리케이션",
       "연계 프로젝트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "postgreSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "실시간 알림",
-    "permalink": "/whatap-docs/postgresql/real-time-notification"
+    "permalink": "/whatap-docs/mysql/real-time-notification"
   },
   "next": {
     "title": "실험실",
-    "permalink": "/whatap-docs/postgresql/labs"
+    "permalink": "/whatap-docs/mysql/labs"
   }
 };
 const assets = {
