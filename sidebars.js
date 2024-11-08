@@ -3967,7 +3967,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3976,7 +3976,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_7_1',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_7_0',
                 'release-notes/python/python-1_6_10',
@@ -4024,7 +4024,7 @@ const sidebars = {
               label: 'Go',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/golang/index',
@@ -4033,7 +4033,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/golang/golang-0_4_3',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/golang/golang-0_4_2',
                 'release-notes/golang/golang-0_4_1',
@@ -4080,7 +4080,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4089,7 +4089,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_3_5',
-                  className: 'new'
+                  // className: 'new'
                 },
                 {
                   type: 'doc',
@@ -4104,7 +4104,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4113,7 +4113,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_3_5',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_3_4',
               ],
@@ -4157,7 +4157,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4166,7 +4166,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-2_1_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-2_1_1',
                 'release-notes/db/dbx-2_1_0',
@@ -4262,7 +4262,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'Amazon ECS',
-              className: 'new',
+              // className: 'new',
               id: 'release-notes/amazon-ecs/amazon-ecs-release-notes',
             },
             {
