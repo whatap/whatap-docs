@@ -29,7 +29,7 @@ const contentTitle = undefined;
 const metadata = {
   "id": "release-notes/service/service-2_10_x",
   "title": "Service 2.10.X",
-  "description": "Service 2.10.5",
+  "description": "Service 2.10.6",
   "source": "@site/docs/release-notes/service/service-2.10.x.mdx",
   "sourceDirName": "release-notes/service",
   "slug": "/release-notes/service/service-2_10_x",
@@ -64,6 +64,14 @@ const assets = {
 
 
 const toc = [{
+  "value": "Service 2.10.6",
+  "id": "service-2106",
+  "level": 2
+}, {
+  "value": "<code>Server</code>",
+  "id": "server",
+  "level": 3
+}, {
   "value": "Service 2.10.5",
   "id": "service-2105",
   "level": 2
@@ -149,7 +157,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Server</code>",
-  "id": "server",
+  "id": "server-1",
   "level": 3
 }, {
   "value": "<code>Kubernetes</code>",
@@ -225,6 +233,33 @@ function _createMdxContent(props) {
   if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "service-2106",
+        children: "Service 2.10.6"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "2024년 11월 08일"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        class: "indentTab",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "server",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Server"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "Changed"
+          }), " 사용자 행위 이력이 남는 API로 교체하여 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_serverList",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_serverInventory",
+            className: "uitext"
+          }), " 메뉴 삭제 기능 개선"]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "service-2105",
@@ -932,7 +967,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "server",
+          id: "server-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Server"
           })
