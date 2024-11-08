@@ -5312,6 +5312,7 @@ const sidebars = {
           label: '릴리스 노트',
           collapsible: true,
           collapsed: false,
+          className: 'new',
           items: [
             {
               type: 'doc',
