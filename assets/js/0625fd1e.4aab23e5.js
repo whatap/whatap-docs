@@ -39,11 +39,11 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 로그 필터 사용 여부를 설정합니다.
 
-* **log_fillter_allow_list** <span class='type'>list</span>
+* **log_filter_allow_list** <span class='type'>list</span>
 
 허용할 로그의 리스트를 설정합니다. 필터링 적용 시 포함할 항목을 의미합니다.
 
-* **log_fillter_deny_list** <span class='type'>list</span>
+* **log_filter_deny_list** <span class='type'>list</span>
 
 제외할 로그의 리스트를 설정합니다. 필터링 적용 시 제외할 항목을 의미합니다.
 
@@ -68,11 +68,11 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 로그 필터 사용 여부를 설정합니다.
 
-* **log_fillter_allow_list** <span class='type'>list</span>
+* **log_filter_allow_list** <span class='type'>list</span>
 
 허용할 로그의 리스트를 설정합니다. 필터링 적용 시 포함할 항목을 의미합니다.
 
-* **log_fillter_deny_list** <span class='type'>list</span>
+* **log_filter_deny_list** <span class='type'>list</span>
 
 제외할 로그의 리스트를 설정합니다. 필터링 적용 시 제외할 항목을 의미합니다.
 
@@ -210,7 +210,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "log_fillter_allow_list"
+              children: "log_filter_allow_list"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
               children: "list"
@@ -221,7 +221,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "log_fillter_deny_list"
+              children: "log_filter_deny_list"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
               class: "type",
               children: "list"
@@ -242,15 +242,15 @@ function _createMdxContent(props) {
         }), " 옵션이 활성화 된 경우에만 로그 필터가 동작합니다. 해당 옵션의 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "true"
         }), "로 설정된 상태에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "log_fillter_allow_list"
+          children: "log_filter_allow_list"
         }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "log_fillter_deny_list"
+          children: "log_filter_deny_list"
         }), "를 통해 로그를 선택적으로 수집할 수 있습니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["로그 필터는 블랙리스트 기반으로 작동합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
           children: "log_filter_enabled"
         }), " 활성화 후 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          children: "log_fillter_allow_list"
+          children: "log_filter_allow_list"
         }), " 옵션에 추가할 항목을 설정하지 않을 경우 기본적으로 모든 컨테이너의 로그 수집이 차단됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
         children: "또한 로그 필터는 allow 규칙 보다 deny 규칙의 우선 순위가 높습니다. 동일한 항목이 allow와 deny에 모두 설정된 경우, deny 규칙이 우선 적용되어 해당 로그는 수집되지 않습니다."
