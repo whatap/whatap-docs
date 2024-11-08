@@ -122,10 +122,6 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
-  "previous": {
-    "title": "Java Agent v2.2.31",
-    "permalink": "/whatap-docs/release-notes/java/java-2_2_31"
-  },
   "next": {
     "title": "Java Agent v2.2.29",
     "permalink": "/whatap-docs/release-notes/java/java-2_2_29"
