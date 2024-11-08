@@ -4137,9 +4137,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_14',
+                  id: 'release-notes/k8s/k8s-1_7_15',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_14',
                 'release-notes/k8s/k8s-1_7_13',
                 'release-notes/k8s/k8s-1_7_12',
                 'release-notes/k8s/k8s-1_7_11',
