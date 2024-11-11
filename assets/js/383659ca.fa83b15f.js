@@ -47,8 +47,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server AIX Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/server-aix/"
+    "title": "Server AIX Agent v1.3.6",
+    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_6"
   },
   "next": {
     "title": "Server AIX Agent v1.3.4",
@@ -87,7 +87,7 @@ function _createMdxContent(props) {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "다운로드"
         }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/aix/noarch/whatap-infra-1.2-7.aix6.1.noarch.rpm",
+          href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/aix/noarch/whatap-infra-1.3-5.aix6.1.noarch.rpm",
           children: "Server Agent AIX v1.3.5"
         })]
       })]

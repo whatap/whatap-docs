@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[88879],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71172],{
 
-/***/ 46559:
+/***/ 52376:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,41 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'server-aix-1_3_4',
-	title: 'Server AIX Agent v1.3.4',
+	id: 'server-solaris-1_3_5',
+	title: 'Server Solaris Agent v1.3.5',
 	toc_max_heading_level: 2,
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/server-aix/server-aix-1_3_4",
-  "title": "Server AIX Agent v1.3.4",
-  "description": "2024년 09월 19일",
-  "source": "@site/docs/release-notes/server-aix/server-aix-1.3.4.mdx",
-  "sourceDirName": "release-notes/server-aix",
-  "slug": "/release-notes/server-aix/server-aix-1_3_4",
-  "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_4",
+  "id": "release-notes/server-solaris/server-solaris-1_3_5",
+  "title": "Server Solaris Agent v1.3.5",
+  "description": "2024년 10월 17일",
+  "source": "@site/docs/release-notes/server-solaris/server-solaris-1.3.5.mdx",
+  "sourceDirName": "release-notes/server-solaris",
+  "slug": "/release-notes/server-solaris/server-solaris-1_3_5",
+  "permalink": "/whatap-docs/release-notes/server-solaris/server-solaris-1_3_5",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/server-aix/server-aix-1.3.4.mdx",
+  "editUrl": "undefined/docs/release-notes/server-solaris/server-solaris-1.3.5.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "server-aix-1_3_4",
-    "title": "Server AIX Agent v1.3.4",
+    "id": "server-solaris-1_3_5",
+    "title": "Server Solaris Agent v1.3.5",
     "toc_max_heading_level": 2,
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Server AIX Agent v1.3.5",
-    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_3_5"
+    "title": "Server Solaris Agent v1.3.6",
+    "permalink": "/whatap-docs/release-notes/server-solaris/server-solaris-1_3_6"
   },
   "next": {
-    "title": "Server AIX Agent v1.2.7",
-    "permalink": "/whatap-docs/release-notes/server-aix/server-aix-1_2_7"
+    "title": "Server Solaris Agent v1.3.4",
+    "permalink": "/whatap-docs/release-notes/server-solaris/server-solaris-1_3_4"
   }
 };
 const assets = {
@@ -66,11 +66,9 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
-    code: "code",
     li: "li",
     mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
-    pre: "pre",
     strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
@@ -79,27 +77,21 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 09월 19일"
+      children: "2024년 10월 17일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "1",
             children: "New"
-          }), " 서버 구성 정보 수집 기능 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            className: "language-ini",
-            metastring: "title=\"whatap.conf\"",
-            children: "# default false\nhostinfov2.enabled=true\n"
-          })
+          }), " Solaris 10 지원"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "0",
+            priority: "1",
             children: "Fixed"
-          }), " 에이전트를 최초 구동 후 OID 값을 고정하도록 개선"]
+          }), " Oname 고정 옵션 미동작 수정"]
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
@@ -107,10 +99,30 @@ function _createMdxContent(props) {
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "다운로드"
-        }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io.s3-ap-northeast-2.amazonaws.com/aix/noarch/whatap-infra-1.2-7.aix6.1.noarch.rpm",
-          children: "Server Agent AIX v1.3.4"
-        })]
+        }), ": Server Agent Solaris v1.3.5"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://repo.whatap.io/sunos/10/whatap-infra.1.3.5.SPARC.pkg.tar.gz",
+              children: "Solaris 10 다운로드"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://repo.whatap.io/sunos/11.2/whatap-infra.1.3.5.SPARC.pkg.tar.gz",
+              children: "Solaris 11.2 다운로드"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://repo.whatap.io/sunos/11/whatap-infra.1.3.5.SPARC.pkg.tar.gz",
+              children: "Solaris 11.3 이상 다운로드"
+            })
+          }), "\n"]
+        }), "\n"]
       })]
     })]
   });
