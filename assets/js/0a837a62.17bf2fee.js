@@ -49,8 +49,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Python Agent Release Notes",
-    "permalink": "/whatap-docs/release-notes/python/"
+    "title": "Python Agent v1.7.2",
+    "permalink": "/whatap-docs/release-notes/python/python-1_7_2"
   },
   "next": {
     "title": "Python Agent v1.7.0",

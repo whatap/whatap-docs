@@ -299,6 +299,16 @@ function _createMdxContent(props) {
                 children: "Fixed"
               }), " 컨테이너 개수가 많을 때 메트릭스 대시보드가 로딩 상태를 반복하는 문제 수정"]
             }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "0",
+                children: "Fixed"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_flexboard",
+                className: "uitext"
+              }), " 메뉴에서 특수 문자를 포함한 메트릭스 지표가 통합되어 표시되는 현상 수정"]
+            }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "database",

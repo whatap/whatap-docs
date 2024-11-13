@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[86582],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[97656],{
 
 /***/ 4352:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -181,7 +181,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 38472:
+/***/ 67334:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -199,32 +199,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'nodejs-0_5_2',
-	title: 'Node.js Agent v0.5.2',
+	id: 'nodejs-0_5_4',
+	title: 'Node.js Agent v0.5.4',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/nodejs/nodejs-0_5_1',
+	pagination_next: 'release-notes/nodejs/nodejs-0_5_2',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/nodejs/nodejs-0_5_2",
-  "title": "Node.js Agent v0.5.2",
-  "description": "2024년 10월 17일",
-  "source": "@site/docs/release-notes/nodejs/nodejs-0.5.2.mdx",
+  "id": "release-notes/nodejs/nodejs-0_5_4",
+  "title": "Node.js Agent v0.5.4",
+  "description": "2024년 11월 13일",
+  "source": "@site/docs/release-notes/nodejs/nodejs-0.5.4.mdx",
   "sourceDirName": "release-notes/nodejs",
-  "slug": "/release-notes/nodejs/nodejs-0_5_2",
-  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_5_2",
+  "slug": "/release-notes/nodejs/nodejs-0_5_4",
+  "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_5_4",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.5.2.mdx",
+  "editUrl": "undefined/docs/release-notes/nodejs/nodejs-0.5.4.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "nodejs-0_5_2",
-    "title": "Node.js Agent v0.5.2",
+    "id": "nodejs-0_5_4",
+    "title": "Node.js Agent v0.5.4",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/nodejs/nodejs-0_5_1",
+    "pagination_next": "release-notes/nodejs/nodejs-0_5_2",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
@@ -234,35 +234,21 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/nodejs/"
   },
   "next": {
-    "title": "Node.js Agent v0.5.1",
-    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_5_1"
+    "title": "Node.js Agent v0.5.2",
+    "permalink": "/whatap-docs/release-notes/nodejs/nodejs-0_5_2"
   }
 };
 const assets = {
 
 };
 
-/*
-
-:::info
-
-* 패키지 정보: https://www.npmjs.com/package/whatap
-
-* 설치 및 적용 방법
-
-```bash
-npm i whatap
-```
-
-:::
-
-*/
 
 
 
 const toc = [..._import_dl_nodejs_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
 function _createMdxContent(props) {
   const _components = {
+    code: "code",
     li: "li",
     p: "p",
     strong: "strong",
@@ -273,32 +259,88 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 10월 17일"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-        priority: "0",
-        children: "Fixed"
-      }), " SQL 프로파일 수정"]
+      children: "2024년 11월 13일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "SQL 조회 오류가 발생하면 에러 스택을 프로파일 하단에 표기합니다."
-        }), "\n"]
-      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["수정된 SQL 모듈은 다음과 같습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "MySQL"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "MariaDB"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "PostgreSQL"
-          }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-            children: "SQL Server"
-          })]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "New"
+          }), " 애플리케이션 성능 및 네트워크 오류 모니터링 위한 에이전트 옵션 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "profile_error_httpc_time_max"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "Number"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "10000"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["HTTPC 수행 시간이 지정된 값을 초과할 경우 TOO SLOW 에러로 처리합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "0"
+              }), "으로 설정하면 에러 처리를 하지 않습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "profile_error_sql_time_max"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "Number"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "30000"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["SQL 수행 시간이 설정한 값을 초과하면 TOO SLOW 에러로 처리합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "0"
+              }), "으로 설정하는 경우 에러 처리를 하지 않습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "profile_error_sql_fetch_max"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "Number"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "10000"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["SQL 결과 건수가 설정한 값을 초과하면 TOO MANY RECORDS 에러로 처리합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "0"
+              }), "으로 설정하는 경우 에러 처리를 하지 않습니다."]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "ignore_http_lost_connection"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+                class: "type",
+                children: "Boolean"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["기본값 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "false"
+              })]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              }), "로 설정할 경우 Lost connection 오류를 수집하지 않습니다."]
+            }), "\n"]
+          }), "\n"]
         }), "\n"]
       }), "\n"]
-    }), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_nodejs_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "0.5.2"
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_import_dl_nodejs_agent_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      ver: "0.5.4"
     })]
   });
 }

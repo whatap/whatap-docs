@@ -62,8 +62,8 @@ const metadata = {
     "permalink": "/whatap-docs/release-notes/nodejs/nodejs-previous"
   },
   "next": {
-    "title": "Python Agent v1.7.1",
-    "permalink": "/whatap-docs/release-notes/python/python-1_7_1"
+    "title": "Python Agent v1.7.2",
+    "permalink": "/whatap-docs/release-notes/python/python-1_7_2"
   }
 };
 const assets = {
