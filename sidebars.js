@@ -3939,7 +3939,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -3947,9 +3947,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_2',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_5_4',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_2',
                 'release-notes/nodejs/nodejs-0_5_1',
                 'release-notes/nodejs/nodejs-0_5_0',
                 'release-notes/nodejs/nodejs-0_4_98',
@@ -3967,7 +3968,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3975,9 +3976,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_1',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1_7_2',
+                  className: 'new',
                 },
+                'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
                 'release-notes/python/python-1_6_10',
                 'release-notes/python/python-1_6_9',
