@@ -80,6 +80,18 @@ const toc = [{
   "id": "애플리케이션명-패턴",
   "level": 3
 }, {
+  "value": "Open File Descriptor 사용량 수집",
+  "id": "open-file-descriptor-usage-collection",
+  "level": 2
+}, {
+  "value": "활성화 옵션",
+  "id": "활성화-옵션",
+  "level": 3
+}, {
+  "value": "수집 메트릭스",
+  "id": "수집-메트릭스",
+  "level": 3
+}, {
   "value": "AES 256 암호화 적용",
   "id": "aes-256-암호화-적용",
   "level": 2
@@ -99,11 +111,13 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     a: "a",
+    admonition: "admonition",
     code: "code",
     em: "em",
     h2: "h2",
     h3: "h3",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     ol: "ol",
     p: "p",
     pre: "pre",
@@ -186,6 +200,90 @@ function _createMdxContent(props) {
               children: "hostname"
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: "호스트 명"
+            })]
+          })]
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+        id: "open-file-descriptor-usage-collection",
+        children: "Open File Descriptor 사용량 수집"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "Python 웹 애플리케이션에서 Open File Descriptor 사용량을 모니터링하는 것은 시스템 자원 관리에 필수적입니다. 파일 디스크립터는 시스템에서 동시에 열 수 있는 파일의 수를 제한하는 중요한 리소스이므로, 사용량이 한계에 도달하면 애플리케이션에서 새로운 파일을 열 수 없게 되어 오류가 발생할 수 있습니다. 이러한 문제는 특히 멀티스레드 및 멀티프로세스 환경에서 빈번하게 발생합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "또한 파일 디스크립터 누수 발생 시 자원 고갈로 인해 시스템 성능이 저하되고 안정성이 손상될 수 있습니다. 이 기능은 파일 디스크립터 사용량을 모니터링하여 사용량이 높은 시점을 파악하고, 필요시 파일 디스크립터 한계를 증가시키거나 누수를 해결할 수 있도록 돕습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "요구 사항"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "와탭 Python 에이전트 1.7.2 버전 이상이 필요합니다."
+        })]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "활성화-옵션",
+        children: "활성화 옵션"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["다음 예시를 참조하여 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+          children: "whatap.conf"
+        }), " 파일을 수정하세요."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          className: "language-ini",
+          children: "#수집 기능 on/off 설정\nopen_file_descriptor_enabled=true\n\n#수집 주기 설정으로 생략 시 기본값 60초\nopen_file_descriptor_interval=60\n"
+        })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "수집-메트릭스",
+        children: "수집 메트릭스"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              children: "이름"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              children: "설명"
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "current_nofile_pct"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "현재 Open File Descriptor 사용량 비율(%)"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "currnet_nofile"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "현재 Open File Descriptor 개수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "max_nofile"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "프로세스의 최대 Open File Descriptor 허용 개수"
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "pid"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: "프로세스 ID"
             })]
           })]
         })]
