@@ -58,6 +58,17 @@ const assets = {
 };
 
 /*ALERT-133 수신 테스트시 설정된 수신자 태그 적용 항목의 경우 21일 이후 프리뷰 배포 가능성 있기 때문에 추적 및 대기 필요*/
+/*
+
+11월 정식 배포로 안내 제외
+
+#### SQL Server V2
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> 하위에 <Cmdname sid="side_dbSize" className="uitext" /> 메뉴 추가
+
+- <Status priority='0'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> 하위에 <Cmdname sid="side_deadLock" className="uitext" />
+
+*/
 
 
 const toc = [{
@@ -87,10 +98,6 @@ const toc = [{
 }, {
   "value": "Oracle, Oracle Pro",
   "id": "oracle-oracle-pro",
-  "level": 4
-}, {
-  "value": "SQL Server V2",
-  "id": "sql-server-v2",
   "level": 4
 }, {
   "value": "Preview 2.11.0.a2",
@@ -534,37 +541,6 @@ function _createMdxContent(props) {
               }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
                 children: "Plan Change History"
               }), " 탭에서 시간 간 발생한 데이터가 명확히 구분되도록 차트 수정"]
-            }), "\n"]
-          }), "\n"]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "sql-server-v2",
-          children: "SQL Server V2"
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                priority: "1",
-                children: "Feature"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_reportStat",
-                className: "uitext"
-              }), " 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_dbSize",
-                className: "uitext"
-              }), " 메뉴 추가"]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-                priority: "0",
-                children: "Feature"
-              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_analysis",
-                className: "uitext"
-              }), " 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_deadLock",
-                className: "uitext"
-              })]
             }), "\n"]
           }), "\n"]
         })]
