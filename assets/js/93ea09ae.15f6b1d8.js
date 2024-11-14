@@ -633,7 +633,7 @@ function _createMdxContent(props) {
             children: ["다운로드 명령어를 실행하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "TTL07853",
               className: "uitext"
-            }), " 탭에서 설치 파일을 다운로드하세요."]
+            }), " 탭에서 버전 선택 후 설치 파일을 다운로드하세요."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
               children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
