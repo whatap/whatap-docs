@@ -1980,7 +1980,7 @@ function _createMdxContent(props) {
                 sid: "side_reportStat",
                 className: "uitext"
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_tableSpace",
+                sid: "side_dbSize",
                 className: "uitext"
               }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "table_space_detail",
@@ -1999,7 +1999,7 @@ function _createMdxContent(props) {
                 sid: "side_reportStat",
                 className: "uitext"
               }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "side_dbSize",
+                sid: "TTL06026",
                 className: "uitext"
               }), " 메뉴에서 화이트 아웃 현상이 발생하는 문제 수정"]
             }), "\n"]

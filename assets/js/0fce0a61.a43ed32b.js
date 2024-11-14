@@ -558,10 +558,10 @@ function _createMdxContent(props) {
             children: "통계/보고서"
           }), " > ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
-            children: "테이블스페이스 사이즈"
+            children: "데이터베이스 사이즈"
           }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
             class: "uitext",
-            children: "테이블스페이스 사이즈 상세"
+            children: "사이즈 상세"
           }), " 테이블에 TOTAL 행 추가"]
         }), "\n"]
       }), "\n"]
