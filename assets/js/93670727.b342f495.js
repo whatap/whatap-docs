@@ -80,6 +80,10 @@ const toc = [{
   "id": "server",
   "level": 3
 }, {
+  "value": "<code>Browser</code>",
+  "id": "browser",
+  "level": 3
+}, {
   "value": "Preview 2.11.0.a3",
   "id": "preview-2110a3",
   "level": 2
@@ -141,7 +145,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "<code>Browser</code>",
-  "id": "browser",
+  "id": "browser-1",
   "level": 3
 }, {
   "value": "<code>Log</code>",
@@ -247,6 +251,22 @@ function _createMdxContent(props) {
           }), " 메뉴명을 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
             children: "서버 인벤토리"
           }), "로 변경"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "browser",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Browser"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_statistics",
+            className: "uitext"
+          }), " 메뉴 하위에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_ipLoadStatistics",
+            className: "uitext"
+          }), " 메뉴 추가"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -989,7 +1009,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "browser",
+          id: "browser-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Browser"
           })
