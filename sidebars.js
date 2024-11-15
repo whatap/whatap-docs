@@ -6147,6 +6147,7 @@ const sidebars = {
             // },
             'server/resourceboard',
             'server/compoundeye',
+            `server/server-inventory-map`,
             {
               type: 'category',
               label: 'Flex 보드',
