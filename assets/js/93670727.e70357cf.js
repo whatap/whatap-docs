@@ -136,6 +136,10 @@ const toc = [{
   "id": "database-1",
   "level": 3
 }, {
+  "value": "공통",
+  "id": "공통-2",
+  "level": 4
+}, {
   "value": "Database <code class=\"my\">V1</code>",
   "id": "database-v1",
   "level": 4
@@ -157,7 +161,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-2",
+  "id": "공통-3",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -842,6 +846,9 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "공통-2",
+          children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
             priority: "1",
@@ -884,7 +891,7 @@ function _createMdxContent(props) {
           }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TTL06224",
             className: "uitext"
-          }), " 칭 팝업 시 쿼리 텍스트가 보이지 않는 현상 수정"]
+          }), " 창 팝업 시 쿼리 텍스트가 보이지 않는 현상 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
           id: "oracle-oracle-pro-1",
           children: "Oracle, Oracle Pro"
@@ -1074,7 +1081,7 @@ function _createMdxContent(props) {
               }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "getting_started_log_monitoring",
                 className: "uitext"
-              }), "  탭 디자인 수정"]
+              }), " 탭 디자인 수정"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -1099,7 +1106,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-2",
+          id: "공통-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
