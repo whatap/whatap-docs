@@ -6385,15 +6385,17 @@ docusaurus-plugin-sass@^0.2.5:
   dependencies:
     sass-loader "^10.1.1"
 
-docusaurus-theme-redoc@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/docusaurus-theme-redoc/-/docusaurus-theme-redoc-2.1.1.tgz"
-  integrity sha512-a9yuYyGVhj7NgBYiqJyjLEkJg/yTdsqg9Rn/cG8YXMIFwxIpn4tanIplUqwisK2PS81ZxOv7SfSgvGm/FSi/wA==
+docusaurus-theme-redoc@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/docusaurus-theme-redoc/-/docusaurus-theme-redoc-2.2.0.tgz#085f1ba7e02df0c6c5b50fd67a1a4d17bd458e92"
+  integrity sha512-oeREQZ7xf3qbkHSAvPVciGlssSb80zx+1GkiymM0sZwuZbD6FbTc6g1Dz81j8oCv0asSiRbsGo62KnpAatjnOg==
   dependencies:
     "@redocly/openapi-core" "1.16.0"
     clsx "^1.2.1"
     lodash "^4.17.21"
     mobx "^6.12.4"
+    postcss "^8.4.45"
+    postcss-prefix-selector "^1.16.1"
     redoc "2.1.5"
     styled-components "^6.1.11"
 
@@ -10875,7 +10877,7 @@ picocolors@^1.0.0, picocolors@^1.0.1:
   resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.0.1.tgz"
   integrity sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==
 
-picocolors@^1.1.0:
+picocolors@^1.1.0, picocolors@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.1.tgz#3d321af3eab939b083c8f929a1d12cda81c26b6b"
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
@@ -11156,6 +11158,11 @@ postcss-ordered-values@^6.0.2:
     cssnano-utils "^4.0.2"
     postcss-value-parser "^4.2.0"
 
+postcss-prefix-selector@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/postcss-prefix-selector/-/postcss-prefix-selector-1.16.1.tgz#87a77523838b79c0e8aec29f173234b2987cdc04"
+  integrity sha512-Umxu+FvKMwlY6TyDzGFoSUnzW+NOfMBLyC1tAkIjgX+Z/qGspJeRjVC903D7mx7TuBpJlwti2ibXtWuA7fKMeQ==
+
 postcss-reduce-idents@^6.0.3:
   version "6.0.3"
   resolved "https://registry.npmjs.org/postcss-reduce-idents/-/postcss-reduce-idents-6.0.3.tgz"
@@ -11226,6 +11233,15 @@ postcss@8.4.38, postcss@^8.4.21, postcss@^8.4.24, postcss@^8.4.26, postcss@^8.4.
     nanoid "^3.3.7"
     picocolors "^1.0.0"
     source-map-js "^1.2.0"
+
+postcss@^8.4.45:
+  version "8.4.49"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.49.tgz#4ea479048ab059ab3ae61d082190fabfd994fe19"
+  integrity sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==
+  dependencies:
+    nanoid "^3.3.7"
+    picocolors "^1.1.1"
+    source-map-js "^1.2.1"
 
 preact@^10.10.0:
   version "10.22.1"
@@ -11778,13 +11794,13 @@ redoc@2.1.5:
     swagger2openapi "^7.0.8"
     url-template "^2.0.8"
 
-redocusaurus@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/redocusaurus/-/redocusaurus-2.1.1.tgz"
-  integrity sha512-uaiuSsty0TcYuibabEw72DzN5JL6eF9KTIR5dL61qP7smFwIY8THEsNogzKTfcKCb6MJ8ug4vohrnrANn3K3cg==
+redocusaurus@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/redocusaurus/-/redocusaurus-2.2.0.tgz#51a930e8222013bb92151e6b05344065d9b7450c"
+  integrity sha512-cf7kq5RRlwiLNtB4tMH6DBAhmLpZJ3UAOP9QkCHodvf2d46O9m5DOq1o7u6O4XZF65weCm3oDW8eFk6UvLrrtg==
   dependencies:
     docusaurus-plugin-redoc "2.1.1"
-    docusaurus-theme-redoc "2.1.1"
+    docusaurus-theme-redoc "2.2.0"
 
 reftools@^1.1.9:
   version "1.1.9"
@@ -12680,6 +12696,11 @@ sort-css-media-queries@2.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.0.tgz"
   integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
+
+source-map-js@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
+  integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
 
 source-map-support@^0.5.21, source-map-support@~0.5.20:
   version "0.5.21"
