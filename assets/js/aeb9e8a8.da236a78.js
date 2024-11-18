@@ -512,6 +512,7 @@ function _createMdxContent(props) {
     code: "code",
     em: "em",
     h3: "h3",
+    img: "img",
     li: "li",
     p: "p",
     section: "section",
@@ -564,6 +565,23 @@ function _createMdxContent(props) {
               children: "Connector/J 5.1.46"
             })
           }), "\n"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Select Operating Systems"
+          }), " 항목에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "Platform Independent"
+          }), " 항목을 선택하세요. 다운받은 파일의 압축을 풀고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "jdbc"
+          }), " 폴더로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "mysql-connector-*.jar"
+          }), " 파일을 이동하세요."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "JDBC Download",
+            src: (__webpack_require__(63839)/* ["default"] */ .A) + "",
+            width: "600",
+            height: "306"
+          })
         })]
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -2566,6 +2584,16 @@ function _missingMdxReference(id, component) {
 }
 
 
+
+/***/ }),
+
+/***/ 63839:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/db-mysql-download-jdbc-be77e7ae839a743942361b2732941dbf.png");
 
 /***/ }),
 
