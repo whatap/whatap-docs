@@ -35,7 +35,7 @@ Browser Monitoringサービスは、**ユーザーセッション**で、ユー�
 
 Browser Monitoringサービスで、意味のある統計グループを持つためのURLパス(URL Path)を正規表現式により正規化し**ページグループ**という名前で提供します。 URLパス(URL Path)単位分析に意味がないと判断した数字、日付などを疑問符(?)に置き換えて提供します。
 
-例えば、_/v2/project/sms/_`12`_/dashboard/resource_board_といったURLパス(URL Path)を_/v2/project/sms/_`?`_/dashboard/resource_board_のような形で提供します。
+例えば、*/v2/project/sms/*`12`*/dashboard/resource\_board* といったURLパス(URL Path)を */v2/project/sms/*`?`*/dashboard/resource\_board* のような形で提供します。
 
 ## ブラウザーエラー
 
