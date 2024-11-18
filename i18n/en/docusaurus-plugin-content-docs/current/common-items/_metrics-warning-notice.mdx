@@ -19,21 +19,33 @@ Metrics events are used to set more specific and complex events than basic event
 - Metrics Event
 - Composite metrics event
 
-:::note
-
-For more information about the metrics, see [the following](metrics-intro).
-
-:::
-
 </Xclude>
 
 <InDoc product='npm'>
 
 Metrics events are used to set more specific and complex events than basic events (application events, server events, and such). You can set events based on the metrics data being collected in real time from your projects.
 
+</InDoc>
+
+<Xclude product="amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud">
+
 :::note
 
-For more information about metrics, see [the following](../metrics/common-metrics-intro).
+- For more information about the metrics, see [the following](metrics-intro).
+
+- You can add metrics events from the <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code> menu, which has a new UI for improved usability. For more information, see [the following](metric-warning-notice-new).
+
+- This feature is only available to the members with the <Cmdname sid="sms_alert_settings" className="b500" /> role. For more information about member roles, see [the following](../project/project-structure#project-auth).
+
+:::
+
+</Xclude>
+
+<InDoc product="amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud">
+
+:::note
+
+For more information about the metrics, see [the following](metrics-intro).
 
 :::
 
