@@ -391,7 +391,7 @@ function _createMdxContent(props) {
               }), " 창의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "TTL06125",
                 className: "uitext"
-              }), " 탭에서 Pod명, 컨테이너 ID 필드 누락 수정"]
+              }), " 탭에서 Pod명, 컨테이너 ID 필드를 별도의 그룹으로 표시하도록 수정"]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

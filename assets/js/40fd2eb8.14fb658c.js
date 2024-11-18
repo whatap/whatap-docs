@@ -180,15 +180,13 @@ function _createMdxContent(props) {
                 className: "language-C",
                 children: "using System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        // 트레이스 시작 (도메인, Url, 사용자식별)\n        WhatapDiagnostic.TraceStart(\"127.0.0.1\", \"/api/test\", \"user123\");\n\n        try\n        {\n            // 스텝 시작\n            WhatapDiagnostic.StepStart(\"test Step\");\n\n            // 사용자 코드 영역\n\n            // 스텝 종료\n            WhatapDiagnostic.StepStop();\n        }\n        catch (Exception ex)\n        {\n            // 예외 발생 시 진단 정보에 예외 기록\n            WhatapDiagnostic.SetExceptionForTrace(ex);\n        }\n        finally\n        {\n            // 트레이스 종료\n            WhatapDiagnostic.TraceStop();\n        }\n    }\n}\n\n"
               })
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+              type: "note",
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: ".NET Framework 지원은 준비 중입니다."
+              })]
             }), "\n"]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-          type: "note",
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: ".NET Framework 지원은 준비 중입니다."
-          })]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: ["WhatapDiagnostic 코드는 다음과 같습니다. 형식은 상관없이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 children: "diagnosticSource.Write(…)"
