@@ -1,0 +1,125 @@
+---
+id: preview-2_11_0x
+title: Preview 2.11.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.11.0.a1
+
+October 31, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Added the No column in the table list of the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code> menu.
+
+- <Status priority='0'>Feature</Status> Added multilingual support for the WhaTap User Training Application form (Google Form).
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />, changed the event settings list to be exported as JSON as searched.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>, fixed the issue where the confirmation widow does not appear even if the <Cmdname sid="overwrite" className="uitext" /> button is clicked when using the <Cmdname sid="BTN07761" className="uitext" /> feature.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where widgets are not displayed in print mode when the dashboard has a responsive layout.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where PDF files are drawn abnormally when downloaded in some environments.
+
+- <Status priority='0'>Fixed</Status> Changed dark themes in Select box elements on the pagination UI.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />, added the feature to disable the ![Search icon](/img/ico-btn-search.png) button in the following situations:
+
+  - In case the filter values ​​(MTID/CUSTID, time, selected project) as the previous search are set
+
+  - In case any of the filter values ​​(MTID/CUSTID, time, selected project) is not entered
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />, fixed the issue where the project name appears differently from the actual one.
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="TTL06126" className="uitext" /> of the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where the height of SQL steps is printed larger than the actual.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />, fixed the issue where the selected project is not applied to searches.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> for the **Java** platform, changed the default value of the `sigar_enabled` option from `true` to `false`.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='0'>Feature</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_ingressList" className="uitext" />, the feature to display the agent update guidance screen has been added, when the Kubernetes agent version is lower than 1.7.13.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeTimeline" className="uitext" />, modified the minimum selectable time unit to be fixed to 5 minutes.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_instanceTopology" className="uitext" />, fixed the issue where the links in the context menu do not work.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the container's Stdout/Stderr logs are not displayed in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> for a namespace project.
+
+---
+
+### `Database`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />, added the feature to go to the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu when an event name is selected.
+
+- <Status priority='0'>Fixed</Status> When you select an event that exists in a real-time notification, modified to go to the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu and view the data based on the event occurrence time.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrendComparison" className="uitext" />, fixed the following:
+
+  - Modified to display chart colors differently between original and compared dates.
+
+  - Fixed the tooltip not to display the previous date.
+
+    > e.g. Previous: **2024-10-29 18:38:29** / Present: ***Compare Time: 18:38:29***
+
+  - Modified the tooltip to display the date and metrics.
+
+    e.g. Previous: **Innodb_buffer_pool_read_requests** / Present: ***Innodb_buffer_pool_read_requests (2024-10-29)***
+
+- <Status priority='0'>Fixed</Status> Removed the <UI>elapse</UI> column from <Cmdname sid="active_sessions" className="uitext" /> table in the following menus.
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrendComparison" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
+
+  :::note
+
+  Applied platforms: **PostgreSQL**, **Oracle** <code className="my">V2</code>, **Oracle Pro**
+
+  :::
+
+- <Status priority='0'>Fixed</Status> Hided the <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" /> menu on the Redis and MongoDB platforms.
+
+---
+
+### `Log`
+
+<Status priority='0'>Fixed</Status> Modified the save button to be disabled when there are no changes in the log retention period setting.
+
+</div>
+
+## Preview 2.11.0.a0
+
+October 25, 2024
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> Fixed the whiteout occurred when the <Cmdname sid="active_stack" className="uitext" /> button is selected in the <Cmdname sid="TTL06126" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window.
+
+</div>

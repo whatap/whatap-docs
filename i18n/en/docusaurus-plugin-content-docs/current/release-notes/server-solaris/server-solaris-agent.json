@@ -1,0 +1,73 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server-solaris/server-solaris-1_3_6",
+    "ver": "v1.3.6",
+    "date": "2024-11-11",
+    "Lists": [
+      {
+        "ver": "v1.3.6",
+        "hash": "v136",
+        "product": "Server Solaris Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">서버 인벤토리 맵</span> 데이터 수집 옵션 추가</p>",
+        "details": "<ul>\n<li>\n<p><strong>categoryv2.enabled</strong> <span class=\"type\">bool</span></p>\n<p>기본값 <code>false</code></p>\n<p>서버 인벤토리 맵 데이터 수집을 활성화합니다.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.3.6",
+        "hash": "v136",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>  zpool이 없을 때 에이전트가 구동되지 않는 현상 수정</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server-solaris/server-solaris-1_3_5",
+    "ver": "v1.3.5",
+    "date": "2024-10-17",
+    "Lists": [
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Server Solaris Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Solaris 10 지원</p>"
+      },
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> Oname 고정 옵션 미동작 수정</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server-solaris/server-solaris-1_3_4",
+    "ver": "v1.3.4",
+    "date": "2024-09-19",
+    "Lists": [
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the feature to collect server configuration data.</p>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved to fix the OID value after initial startup of the agent.</p>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the agent stops when collecting process data in the Oracle Enterprise Edition running environment.</p>"
+      }
+    ]
+  }
+]
