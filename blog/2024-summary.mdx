@@ -1,0 +1,133 @@
+---
+slug: 2024-summary
+title: 와탭 24년 안내
+authors: ysj
+date: 2024-11-19T19:30
+toc_max_heading_level: 2
+tags: [새로운 기능, 2024]
+---
+
+와탭의 2024년 1월부터 10월까지 진행된 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.
+
+{/* 새로운 기능 sc 이미지 국문과 영문 */}
+
+<ImgLang img='changelog/changelog-new3.png' desc='새로운 기능 sc' />
+
+{/* truncate */}
+
+<div class ='faq'>
+
+|**공통**|
+|---| 
+
+{/* > * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴 및 <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> 등 경고 알림 기능이 개선되었습니다.  */}
+> * 메트릭스 필드 중심의 사용자 경험을 강화한 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 기능을 새롭게 제공합니다. 
+> * **SSO 계정 연동** 기능이 추가되었습니다.
+> * <Cmdname sid="side_eventSettingV2" className="uitext" /> 메뉴가 개선되었습니다.
+> * `Application`, `Kubernetes`, `Database` 상품군에서 <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다. 
+
+{/* 공통 메뉴 개선 또는 이벤트 v2 메뉴 개선 
+
+> * 편의성 향상을 위해 <Cmdname sid="side_eventSettingV2" className="uitext" /> <code class="newfunc">New</code> 메뉴가 개선되었습니다.
+
+*/}
+
+|**Application**|
+|---|
+
+> * <Cmdname sid="side_statistics" className="uitext" /> 및 <Cmdname sid="side_agentsConfiguration" className="uitext" /> 메뉴 구조를 개선했습니다. 
+> * <Cmdname sid="side_transaction_map" className="uitext" />이 고도화되었습니다. 
+> * `Go` 상품 베타 서비스를 종료하고 **정식** 서비스를 제공합니다.
+> * <Cmdname sid="side_statistics" className="uitext" /> 및 <Cmdname sid="side_agentsConfiguration" className="uitext" /> 등 공통 메뉴가 개선되었습니다.
+> * <Cmdname sid="application_dashboard" className="uitext" />에 기본 프리셋 변경 기능이 추가되었습니다.
+> * `Java` 상품이 데이터베이스 **연계 분석**을 제공합니다.
+
+{/* > * `Node.js` 상품이 로그 모니터링을 제공합니다.
+> * `.NET` 상품이 멀티 트랜잭션을 지원합니다. */}
+
+{/* > * `.NET` Core 라이브러리 지원 범위가 확대되었으며 멀티 트랜잭션을 지원합니다.  */}
+{/* > * 애플리케이션과 데이터베이스 상품 연계 모니터링을 지원합니다. (10월) */}
+
+|**Server**|
+|---|
+
+> * Unix **AIX**, **Oracle Solaris**, **HP-UX** 설치 패키지를 제공합니다.
+> * <Cmdname sid="side_serverInventory" className="uitext" /> 메뉴를 새롭게 제공합니다. 
+
+|**Kubernetes**|
+|---|
+
+> * **컨트롤 플레인 모니터링**을 새롭게 제공합니다. 컨트롤 플레인 컴포넌트 중 kube-apiserver 모니터링을 위해 <Cmdname sid="side_kubeApiserverDashboard" className="uitext" /> 및 <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" /> 기능이 추가되었습니다. 
+> * 기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 <Cmdname sid="side_podInitPerf" className="uitext" />과 <Cmdname sid="side_objectManifest" className="uitext" /> 기능을 제공합니다. 
+> * Deployment 기준으로 관련 정보를 조회할 수 있는 <Cmdname sid="side_deploymentList" className="uitext" />, 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 <Cmdname sid="side_kubernetesAgentList" className="uitext" /> 기능이 추가되었습니다. 
+> * 마스터 및 노드 에이전트 설치 시 *Helm* 차트 설치를 지원합니다. 
+> * <Cmdname sid="agentInstall" className="uitext" /> 화면이 보다 손쉬운 옵션 선택 방식으로 개편되었습니다.
+> * <Cmdname sid="side_pendingPod" className="uitext" /> 메뉴가 새롭게 개편되었습니다. 
+> * <Cmdname sid="side_containerMap" className="uitext" /> 메뉴에서 ***리소스 관계도***를 제공합니다. 
+> * <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" />과 같은 신규 메뉴가 추가되었으며, 기존 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴가 개선되었습니다. 
+> * <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" />, <Cmdname sid="TTL08317" className="uitext" type="node" /> 기능을 새롭게 제공합니다. 
+> * <Cmdname sid="side_kubeServiceList" className="uitext" /> 메뉴를 새롭게 제공합니다.
+> * <UI>Ingress 목록</UI> 메뉴를 새롭게 제공합니다.  
+
+{/* 
+
+> * 쿠버네티스 노드 모니터링 확장의 일환으로 <Cmdname sid="side_nodeMap" className="uitext" />, <Cmdname sid="side_nodeTimeline" className="uitext" />, <Cmdname sid="side_nodeDiskList" className="uitext" />과 같은 신규 메뉴가 추가되었으며, 기존 <Cmdname sid="side_nodeList" className="uitext" /> 메뉴가 개선되었습니다. 
+> * 쿠버네티스 구성 요소의 분석 기능을 강화하여 <Cmdname sid="TTL08317" className="uitext" type="container" />, <Cmdname sid="TTL08317" className="uitext" type="kube_pod" /> 기능을 새롭게 제공합니다. 
+> * 쿠버네티스 모니터링 정보 확장의 일환으로 <Cmdname sid="side_kubeServiceList" className="uitext" /> 메뉴를 새롭게 제공합니다. 
+
+*/}
+
+|**Database**|
+|---|
+
+> * `MongoDB`와 `Redis`, `Oracle`, `Altibase`, `Cubrid` 상품에서 차트 및 수집 기능을 강화한 새로운 <code class="my">V2</code> 서비스를 제공합니다.
+> * `Oracla Pro` 상품 **정식** 서비스를 제공합니다. 
+> * <Cmdname sid="side_dbScriptManager" className="uitext" /> 메뉴를 새롭게 제공합니다. 
+> * <Cmdname sid="side_multiInstance" className="uitext" /> 메뉴의 기능 개선이 이루어졌습니다. 
+> * `PostgreSQL`, `MySQL`, `Oracle` <code class="my">V2</code> 및 `Oracla Pro` 상품이 애플리케이션 연계 분석을 제공합니다. 
+
+{/* > * 애플리케이션과 데이터베이스 상품 연계 모니터링을 지원합니다. (10월, 10월에 또 클라우드 지표 긁어오는 거 가능) */}
+
+|**Browser**|
+|---|
+
+> * <Cmdname sid="TTL07736" className="uitext" /> 기능을 새롭게 제공합니다. 
+> * <Cmdname sid="TTL08103" className="uitext" /> 기능을 새롭게 제공합니다. 
+> * <Cmdname sid="TTL08103" className="uitext" /> 기능 안정화가 이루어졌습니다. 
+> * <UI>페이지 로드 통계</UI> 기능을 새롭게 제공합니다. 
+
+
+|**Network**|
+|---|
+
+> **네트워크 성능 모니터링**(Network Performance Monitoring) 상품이 **정식**으로 출시되었습니다. 
+
+
+|**Features**|
+|---|
+
+> `Kafka`, `Aerospike`, `Apache Pulsar`, `Nginx`, `vCenter`, `Apache` **베타** 서비스를 제공합니다. 
+
+
+|**Log**|
+|---| 
+
+> * <UI>로그 검색</UI> 및 <UI>라이브 테일</UI> 메뉴에서 검색 조건 즐겨찾기 기능을 제공합니다. 
+
+
+
+{/* 
+
+오버뷰 추가 건들 
+
+- node.js: svelt 설치 가능 문서 업데이트 (완)
+
+- PostgreSQL: 티맥스 지원 (완)
+
+체인지로그 추가 건들
+
+- 디비 전 제품 지표 업데이트 
+
+*/}
+
+</div>
