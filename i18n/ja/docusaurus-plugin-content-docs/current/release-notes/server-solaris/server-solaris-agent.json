@@ -26,5 +26,26 @@
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Oracle Enterprise Editionの駆動環境でプロセス情報を収集する際、エージェントが停止する問題を修正</p>"
       }
     ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server-solaris/server-solaris-1_3_5",
+    "ver": "v1.3.5",
+    "date": "2024-10-17",
+    "Lists": [
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Server Solaris Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>Solaris 10 対応</p>"
+      },
+      {
+        "ver": "v1.3.5",
+        "hash": "v135",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code>Oname固定オプションの未動作を修正</p>"
+      }
+    ]
   }
 ]
