@@ -1108,7 +1108,7 @@
     "description": "The label for the doc item 히트맵 트랜잭션 in sidebar learningSidebar, linking to the doc best-practice-guides/about-apm-hitmap-class"
   },
   "sidebar.learningSidebar.doc.브라우저 모니터링": {
-    "message": "Browserモニタリング",
+    "message": "Browser Monitoring",
     "description": "The label for the doc item 브라우저 모니터링 in sidebar learningSidebar, linking to the doc best-practice-guides/using-browser-monitoring"
   },
   "sidebar.indexSidebar.link.Browser": {
@@ -1116,7 +1116,7 @@
     "description": "The label for link Browser in sidebar indexSidebar, linking to browser"
   },
   "sidebar.rumsSidebar.category.Browser 모니터링": {
-    "message": "Browserモニタリング",
+    "message": "Browser Monitoring",
     "description": "The label for category Browser 모니터링 in sidebar rumsSidebar"
   },
   "sidebar.nodejsSidebar.category.에이전트 설치": {
@@ -1508,7 +1508,7 @@
     "description": "The label for the doc item v1.0.3 in sidebar releaseSidebar, linking to the doc release-notes/mobile/mobile-app-v1_0_3"
   },
   "sidebar.rumsSidebar.category.브라우저 에이전트 적용": {
-    "message": "ブラウザーエージェントの適用",
+    "message": "ブラウザエージェントの適用",
     "description": "The label for category 브라우저 에이전트 적용 in sidebar rumsSidebar"
   },
   "sidebar.kubeSidebar.doc.설정하기": {

@@ -72,7 +72,24 @@
 
    </InDoc>
 
-<Xclude pages="nginx-introduction">
+   <InDoc pages="apache-introduction">
+
+   次のコマンドを実行してユーザー環境を自動的に認識した後、APACHEがインストールされたサーバーにインストールスクリプトを生成します。
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/apache/install_apache_monitoring.sh -o install_apache_monitoring.sh
+   ```
+
+   次のコマンドを実行して、APACHEエージェントをインストールします。
+
+   ```bash
+   chmod +x install_apache_monitoring.sh
+   sudo ./install_apache_monitoring.sh "x42uu23t8kl3a-z1e71pb8vhbpir-z62lcfeuerbcp2" "15.165.146.117"
+   ```
+
+   </InDoc>
+
+<Xclude pages="nginx-introduction,apache-introduction">
 
 3. エージェント設定および再起動後、**モニタリング**を**開始**します。  
 
