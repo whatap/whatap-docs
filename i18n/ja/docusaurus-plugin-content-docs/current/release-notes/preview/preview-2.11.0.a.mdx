@@ -1,0 +1,125 @@
+---
+id: preview-2_11_0x
+title: Preview 2.11.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験できます。 
+
+:::
+
+## Preview 2.11.0.a1
+
+2024年10月31日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>メニューのテーブルリストに順番(No) カラムを追加
+
+- <Status priority='0'>Feature</Status>WhaTapユーザーの教育申請書(グーグルフォーム)に対する多言語支援を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューで検索された結果通りにイベントの設定リストをJSON書き出し(export)するように変更
+
+- <Status priority='0'>Fixed</Status><Cmdname sid="side_event" className="uitext" />&gt;<Cmdname sid="side_eventSetting" className="uitext" /><code className="newfunc">New</code>メニューで<Cmdname sid="BTN07761" className="uitext" />機能を利用する際、<Cmdname sid="overwrite" className="uitext" />ボタンをクリックしても確認ウィンドウが表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボードが反応型レイアウトの場合、印刷モードでウィジェットが表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />メニューで一部の環境によってPDFファイルをダウンロードする時、異常に描かれる問題を修正
+
+- <Status priority='0'>Fixed</Status>ページネーションUIで選択ボックス(Select box) 要素のダークテーマを修正
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />メニューで次の状況に![検索アイコン](/img/ico-btn-search.png)ボタンを無効にする機能を追加
+
+  - 以前の検索と同じフィルター値(MTID/CUSTID、時間、選択したプロジェクト)を設定した場合
+
+  - フィルター値(MTID/CUSTID、時間、選択したプロジェクト) のいずれか一つでも入力をしていない場合
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />メニューでプロジェクト名が実際のプロジェクト名と異なるように見える問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウ<Cmdname sid="TTL06126" className="uitext" /> タブでSQLステップの高さが実際の領域よりも大きく出力される問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />メニューで選択したプロジェクトが検索に反映されない問題を修正
+
+- <Status priority='0'>Fixed</Status>**Java**プラットホームの<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューで`sigar_enabled`オプションのデフォルト値を`true`から`false`に変更
+
+---
+
+### `Kubernetes`
+
+- <Status priority='0'>Feature</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_ingressList" className="uitext" />メニューでクバネティスエージェントバージョンが1.7.13未満の時、エージェント更新の案内画面を表示
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeTimeline" className="uitext" />メニューで最小限選択できる時間単位を5分に固定するように修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_instanceTopology" className="uitext" />メニューでコンテキストメニューのリンクが動作しない問題を修正
+
+- <Status priority='0'>Fixed</Status>ネームスペースプロジェクトで<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューでコンテナのStdout/Stderrログが表示されない問題を修正
+
+---
+
+### `Database`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューでイベント名を選択すると、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動する機能を追加
+
+- <Status priority='0'>Fixed</Status>リアルタイム通知で発生したイベントを選択すると、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動し、イベントの発生時刻を基準にデータを照会するように修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrendComparison" className="uitext" />メニューで次の事項を修正
+
+  - 既存の日付と比較した日付間のチャートの色を異なって表示するように修正
+
+  - 既存の時間が表示されるツールチップに日付を表示しないように修正
+
+    > 例、既存：**2024-10-29 18:38:29** / 現在：***Compare Time：18:38:29***
+
+  - ツールチップに指標とともに日付を表示するように修正
+
+    例、既存：**Innodb_buffer_pool_read_requests** / 現在：***Innodb_buffer_pool_read_requests (2024-10-29)***
+
+- <Status priority='0'>Fixed</Status>次のメニューの<Cmdname sid="active_sessions" className="uitext" />テーブルで<UI>elapse</UI>カラムを削除
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbTrendComparison" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />
+
+  :::note
+
+  適用プラットフォーム：**PostgreSQL**、**Oracle**<code className="my">V2</code>、**Oracle Pro**
+
+  :::
+
+- <Status priority='0'>Fixed</Status> Redis、MongoDBプラットホームの<Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" />メニューを非表示にする
+
+---
+
+### `Log`
+
+<Status priority='0'>Fixed</Status>ログの保管期間を設定する時に変更された値がない場合、保存ボタンを無効にするように修正
+
+</div>
+
+## Preview 2.11.0.a0
+
+2024年10月25日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" />ウィンドウ<Cmdname sid="TTL06126" className="uitext" />タブで<Cmdname sid="active_stack" className="uitext" />ボタンを選択すると発生するホワイトアウト現象を修正
+
+</div>

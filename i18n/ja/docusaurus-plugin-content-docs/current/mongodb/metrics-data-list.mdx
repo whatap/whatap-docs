@@ -13,6 +13,9 @@ keywords:
 MongoDBでは`db.serverStatus`から主要指標を収集し、以下は収集する主要指標についての説明です。 その他の指標の詳細については、[次の文書](https://www.mongodb.com/docs/manual/reference/command/serverStatus/#output)を参照にしてください。
 
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<div className="metricslist">
 
 <AgentStatus />
 
@@ -52,12 +55,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | `bytesOut$decompressor$zlib$compression$network`             | zlib圧縮解除によって送信されたネットワークバイトの数です。                                    |
 | `bytesOut$decompressor$zstd$compression$network`             | zstd圧縮解除によって送信されたネットワークバイトの数です。                                    |
 | `bytesOut$network`                                           | MongoDBクライアントまたはその他のインスタンスの接続を通じてサーバーが送信したネットワークバイトの合計数です。         |
-| `clientsInTotal$fixed$serviceExecutors$network`              | 固定サービスエクゼキュータで処理されたクライアントの合計数です。                                   |
-| `clientsInTotal$passthrough$serviceExecutors$network`        | パススルーサービスエクゼキュータで処理されたクライアントの合計数です。                                |
-| `clientsRunning$fixed$serviceExecutors$network`              | 固定サービスエクゼキュータで実行されているクライアントの数です。                                   |
-| `clientsRunning$passthrough$serviceExecutors$network`        | パススルーサービスエクゼキュータで実行中のクライアントの数です。                                   |
-| `clientsWaitingForData$fixed$serviceExecutors$network`       | 固定サービスエクゼキュータでデータ待機中のクライアント数です。                                    |
-| `clientsWaitingForData$passthrough$serviceExecutors$network` | パススルーサービスエクゼキュータでデータ待機中のクライアント数です。                                 |
+| `clientsInTotal$fixed$serviceExecutors$network`              | 固定サービスExecutorで処理されたクライアントの合計数です。                                  |
+| `clientsInTotal$passthrough$serviceExecutors$network`        | パススルーサービスExecutorで処理されたクライアントの合計数です。                               |
+| `clientsRunning$fixed$serviceExecutors$network`              | 固定サービスExecutorで実行中のクライアントの数です。                                     |
+| `clientsRunning$passthrough$serviceExecutors$network`        | パススルーサービスExecutorで実行中のクライアントの数です。                                  |
+| `clientsWaitingForData$fixed$serviceExecutors$network`       | 固定サービスExecutorでデータ待機中のクライアント数です。                                   |
+| `clientsWaitingForData$passthrough$serviceExecutors$network` | パススルーサービスExecutorでデータ待機中のクライアント数です。                                |
 | `command$opcounters`                                         | データベースで実行されたコマンドの合計数です。                                            |
 | `connect_error`                                              | 接続エラーの数です。                                                         |
 | `cpu`                                                        | `extra_info`メトリクスの`user_time_us`および`system_time_us`値で計算したCPU使用率です。 |
@@ -102,12 +105,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | `rollovers$asserts`                                          | 発生したロールオーバー表明(assert)の数です。                                         |
 | `system_time_us$extra_info`                                  | システム時間(マイクロ秒)に関連する追加情報です。                                          |
 | `threaded$connections`                                       | スレッドベースの接続数です。                                                     |
-| `threadsRunning$fixed$serviceExecutors$network`              | 固定サービスエクゼキュータで実行されているスレッドの数です。                                     |
-| `threadsRunning$passthrough$serviceExecutors$network`        | パススルーサービスエクゼキュータで実行されているスレッドの数です。                                  |
+| `threadsRunning$fixed$serviceExecutors$network`              | 固定サービスExecutorで実行中のスレッドの数です。                                       |
+| `threadsRunning$passthrough$serviceExecutors$network`        | パススルーサービスExecutorで実行中のスレッドの数です。                                    |
 | `total$activeClients$globalLock`                             | 活性化されたクライアントの合計数(global lock)です。                                   |
-| `total$currentQueue$globalLock`                              | 現在待機中のクライアントの合計数(global lock)です。                                   |
+| `total$currentQueue$globalLock`                              | 待機中のクライアントの合計数(global lock)です。                                     |
 | `totalCreated$connections`                                   | 生成された接続の合計数です。                                                     |
-| `totalTime$globalLock`                                       | グローバルロック(global lock)に費やされた合計時間です。                                 |
+| `totalTime$globalLock`                                       | グローバルロック(global lock)でかかった合計時間です。                                  |
 | `tripwire$asserts`                                           | 発生したトリップワイヤ表明(assert)の数です。                                         |
 | `update$opcounters`                                          | 処理されたアップデートコマンドの数です。                                               |
 | `user$asserts`                                               | 発生したユーザー表明(assert)の数です。                                            |
@@ -117,7 +120,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | `warning count`                                              | 警告メッセージの数です。                                                       |
 | `warning$asserts`                                            | 発生した警告表明(assert)の数です。                                              |
 | `writers$activeClients$globalLock`                           | 活性化された書き込みクライアントの数(global lock)です。                                 |
-| `writers$currentQueue$globalLock`                            | 現在待機中の書き込みクライアントの数(global lock)です。                                 |
+| `writers$currentQueue$globalLock`                            | 待機中の書き込みクライアントの数(global lock)です。                                   |
 
 </div>
 
@@ -127,6 +130,6 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 :::
 
-import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
-
 <Xosmetrics />
+
+</div>

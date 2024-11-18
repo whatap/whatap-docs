@@ -14,8 +14,11 @@ keywords:
 メトリクスについての詳細は、[次の文書](https://www.cubrid.org/manuals)を参照してください。
 
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
 
 <AgentStatus />
+
+<div className="metricslist">
 
 ## db_cubrid_counter {#db_cubrid_counter}
 
@@ -107,8 +110,8 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | `num_query_iscans`                         | 処理されたインデックススキャンクエリ数です。                                                                                          | Query            |
 | `num_query_lscans`                         | 処理されたLISTスキャンクエリ数です。                                                                                            | Query            |
 | `num_query_methscans`                      | 処理されたMETHODスキャンクエリ数です。                                                                                          | Query            |
-| `num_query_mjoins`                         | 処理された結合ジョインクエリ数です。                                                                                              | Query            |
-| `num_query_nljoins`                        | 処理されたネストループ(Nested loop) ジョインクエリ数です。                                                                            | Query            |
+| `num_query_mjoins`                         | 処理されたマージジョインのクエリ数です。                                                                                            | Query            |
+| `num_query_nljoins`                        | 処理されたネストループ(Nested loop) ジョインのクエリ数です。                                                                           | Query            |
 | `num_query_objfetches`                     | 処理されたオブジェクトフェッチクエリの数です。                                                                                         | Query            |
 | `num_query_selects`                        | 処理されたSELECTクエリの数です。                                                                                             | Query            |
 | `num_query_setscans`                       | 処理されたSETスキャンクエリの数です。                                                                                            | Query            |
@@ -133,6 +136,6 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 </div>
 
-import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
-
 <Xosmetrics />
+
+</div>
