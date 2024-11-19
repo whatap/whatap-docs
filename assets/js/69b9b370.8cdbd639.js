@@ -5286,7 +5286,7 @@ function _2024_3q_summary_createMdxContent(props) {
       children: ["더불어 와탭 쿠버네티스 모니터링 정보 확대의 일환으로 ", (0,jsx_runtime.jsx)(Cmdname, {
         sid: "side_kubeServiceList",
         className: "uitext"
-      }), " 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태를 확인할 수 있습니다. 조회 시간 기준 최근 1분간 수집된 서비스 정보를 제공하며"]
+      }), " 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태를 확인할 수 있습니다. 조회 시간 기준 최근 1분간 수집된 서비스 정보를 제공합니다."]
     }), "\n", "\n", (0,jsx_runtime.jsx)(ImgLang, {
       img: "k8s-service-list.png",
       desc: "k8s Service 목록 분기 예시"
