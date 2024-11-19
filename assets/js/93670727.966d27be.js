@@ -96,6 +96,10 @@ const toc = [{
   "id": "database-v2",
   "level": 4
 }, {
+  "value": "Oracle, Oracle Pro",
+  "id": "oracle-oracle-pro",
+  "level": 4
+}, {
   "value": "<code>Browser</code>",
   "id": "browser",
   "level": 3
@@ -129,7 +133,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "Oracle, Oracle Pro",
-  "id": "oracle-oracle-pro",
+  "id": "oracle-oracle-pro-1",
   "level": 4
 }, {
   "value": "Preview 2.11.0.a2",
@@ -165,7 +169,7 @@ const toc = [{
   "level": 4
 }, {
   "value": "Oracle, Oracle Pro",
-  "id": "oracle-oracle-pro-1",
+  "id": "oracle-oracle-pro-2",
   "level": 4
 }, {
   "value": "<code>Browser</code>",
@@ -355,6 +359,22 @@ function _createMdxContent(props) {
             sid: "side_dbTrendComparison",
             className: "uitext"
           }), " 메뉴의 지표 선택 화면에서 지표가 보이지 않는 문제 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "oracle-oracle-pro",
+          children: "Oracle, Oracle Pro"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "1",
+            children: "Changed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_multiInstance",
+            className: "uitext"
+          }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+            children: "Disk Usage"
+          }), " 위젯의 크게 보기 창에서 여백에 대한 UI 변경"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "browser",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
@@ -675,7 +695,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracle-oracle-pro",
+          id: "oracle-oracle-pro-1",
           children: "Oracle, Oracle Pro"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
@@ -1019,7 +1039,7 @@ function _createMdxContent(props) {
             className: "uitext"
           }), " 창 팝업 시 쿼리 텍스트가 보이지 않는 현상 수정"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "oracle-oracle-pro-1",
+          id: "oracle-oracle-pro-2",
           children: "Oracle, Oracle Pro"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
