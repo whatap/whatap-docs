@@ -1,0 +1,67 @@
+{
+  "myapp_portal": {
+    "en": "My Apps portal",
+    "ja": "マイ アプリのポータル",
+    "ko": "내 앱 포털"
+  },
+  "myapps": {
+    "en": "My Apps",
+    "ja": "マイ アプリ",
+    "ko": "내 앱"
+  },
+  "appDashboard": {
+    "en": "App dashboard",
+    "ja": "アプリダッシュボード",
+    "ko": "앱 대시보드"
+  },
+  "etraIdentity": {
+    "en": "Identity",
+    "ja": "ID",
+    "ko": "ID"
+  },
+  "etraApplication": {
+    "en": "Applications",
+    "ja": "アプリケーション",
+    "ko": "애플리케이션"
+  },
+  "etraEntApp": {
+    "en": "Enterprise applications",
+    "ja": "エンタープライズ アプリケーション",
+    "ko": "엔터프라이즈 애플리케이션"
+  },
+  "etraNewApp": {
+    "en": "New application",
+    "ja": "新しいアプリケーション",
+    "ko": "새로운 애플리케이션"
+  },
+  "etraCreateMyApp": {
+    "en": "Create your own application",
+    "ja": "独自のアプリケーションの作成",
+    "ko": "자신만의 애플리케이션을 만드세요."
+  },
+  "etraOtherApp": {
+    "en": "Integrate any other application you don't find in the gallery (Non-gallery)",
+    "ja": "ギャラリーに見つからないその他のアプリケーションを統合します (ギャラリー以外)",
+    "ko": "갤러리에 없는 다른 애플리케이션 통합(비갤러리)"
+  },
+  "etrabtnCreate": {
+    "en": "Create",
+    "ja": "作成",
+    "ko": "만들기"
+  },
+  "etraAssignUsergroup": {
+    "en": "Assign users and groups",
+    "ja": "ユーザーとグループの割り当て",
+    "ko": "사용자 및 그룹 할당"
+  },
+  "etraAddUsergroup": {
+    "en": "Add user/group",
+    "ja": "ユーザーまたはグループの追加",
+    "ko": "사용자/그룹 추가"
+  },
+  "etraAddAssign": {
+    "en": "Add Assignment",
+    "ja": "ユーザーまたはグループの追加",
+    "ko": "할당 추가"
+  }
+}
