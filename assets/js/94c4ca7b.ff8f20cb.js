@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[25670],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6098],{
 
-/***/ 26554:
+/***/ 18883:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,8 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'sso',
-	title: 'SSO 계정 연동',
+	id: 'okta',
+	title: 'Okta 연동',
 	description: 'SSO 계정 연동을 통해서 하나의 아이디와 비밀번호를 이용해 간편하게 계정을 관리하세요.',
 	keywords: [
 		'SSO',
@@ -31,21 +31,21 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "account/sso",
-  "title": "SSO 계정 연동",
+  "id": "account/okta",
+  "title": "Okta 연동",
   "description": "SSO 계정 연동을 통해서 하나의 아이디와 비밀번호를 이용해 간편하게 계정을 관리하세요.",
-  "source": "@site/docs/account/sso.mdx",
+  "source": "@site/docs/account/okta.mdx",
   "sourceDirName": "account",
-  "slug": "/account/sso",
-  "permalink": "/whatap-docs/account/sso",
+  "slug": "/account/okta",
+  "permalink": "/whatap-docs/account/okta",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/account/sso.mdx",
+  "editUrl": "undefined/docs/account/okta.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "sso",
-    "title": "SSO 계정 연동",
+    "id": "okta",
+    "title": "Okta 연동",
     "description": "SSO 계정 연동을 통해서 하나의 아이디와 비밀번호를 이용해 간편하게 계정을 관리하세요.",
     "keywords": [
       "SSO",
@@ -57,12 +57,12 @@ const metadata = {
   },
   "sidebar": "manageSidebar",
   "previous": {
-    "title": "멀티팩터 인증",
-    "permalink": "/whatap-docs/account/mfa"
+    "title": "Single Sign-On 연동",
+    "permalink": "/whatap-docs/account/sso"
   },
   "next": {
-    "title": "프로젝트 구조 및 멤버 권한",
-    "permalink": "/whatap-docs/project/project-structure"
+    "title": "Microsoft Entra ID 연동",
+    "permalink": "/whatap-docs/account/ms-entra-id"
   }
 };
 const assets = {
@@ -136,17 +136,6 @@ function _createMdxContent(props) {
       }), "는 높은 수준의 보안 환경에서 수많은 애플리케이션을 하나의 계정으로 로그인할 수 있는 솔루션입니다. 조직 내에서 사용 중인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
         children: "Okta"
       }), " 계정으로 와탭 서비스에 로그인하고 주어진 권한 내에서 서비스를 이용할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-      type: "tip",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Single Sign-On(SSO)이란?"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Single Sign-On"
-        }), "(SSO)은 한 번의 사용자 인증으로 다수의 애플리케이션 및 웹사이트에 대한 사용자 로그인을 허용하는 인증 솔루션입니다. SSO 솔루션은 한 번 자격 증명이 검증된 사용자에게 반복되는 로그인 없이 모든 암호 보호 리소스에 액세스하여 보안과 사용자 경험을 모두 충족할 수 있습니다."]
-      })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "note",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -273,7 +262,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Applications"
+              children: "Applcations"
             }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "Applications"
             }), " 메뉴로 이동하세요."]
@@ -401,7 +390,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Applications"
+              children: "Applcations"
             }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "Applications"
             }), " 메뉴로 이동하세요."]
@@ -597,7 +586,7 @@ function _createMdxContent(props) {
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-              children: "Applications"
+              children: "Applcations"
             }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "Applications"
             }), " 메뉴로 이동하세요."]

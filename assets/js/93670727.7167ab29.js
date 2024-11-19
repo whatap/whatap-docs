@@ -344,7 +344,7 @@ function _createMdxContent(props) {
             }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "side_kubeEventList",
               className: "uitext"
-            }), " 메뉴에 상세 보기 기능 추가(Suggestions, 인접 로그)"]
+            }), " 메뉴에 상세 보기 기능 추가(Suggestions, 인접 로그, 이벤트 타임라인)"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: ["[feature] ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {

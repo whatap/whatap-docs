@@ -51,8 +51,8 @@ const metadata = {
   },
   "sidebar": "manageSidebar",
   "previous": {
-    "title": "SSO 계정 연동",
-    "permalink": "/whatap-docs/account/sso"
+    "title": "Microsoft Entra ID 연동",
+    "permalink": "/whatap-docs/account/ms-entra-id"
   },
   "next": {
     "title": "프로젝트 관리",

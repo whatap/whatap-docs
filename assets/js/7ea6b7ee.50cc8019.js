@@ -59,7 +59,7 @@ const metadata = {
     "permalink": "/whatap-docs/account/account-manage"
   },
   "next": {
-    "title": "SSO 계정 연동",
+    "title": "Single Sign-On 연동",
     "permalink": "/whatap-docs/account/sso"
   }
 };
