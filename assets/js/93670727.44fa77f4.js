@@ -84,6 +84,18 @@ const toc = [{
   "id": "server",
   "level": 3
 }, {
+  "value": "<code>Database</code>",
+  "id": "database",
+  "level": 3
+}, {
+  "value": "공통",
+  "id": "공통-1",
+  "level": 4
+}, {
+  "value": "Database <code class=\"my\">V2</code>",
+  "id": "database-v2",
+  "level": 4
+}, {
   "value": "<code>Browser</code>",
   "id": "browser",
   "level": 3
@@ -97,7 +109,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-1",
+  "id": "공통-2",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -113,7 +125,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database",
+  "id": "database-1",
   "level": 3
 }, {
   "value": "Oracle, Oracle Pro",
@@ -125,7 +137,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-2",
+  "id": "공통-3",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -141,11 +153,11 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-1",
+  "id": "database-2",
   "level": 3
 }, {
   "value": "공통",
-  "id": "공통-3",
+  "id": "공통-4",
   "level": 4
 }, {
   "value": "Database <code class=\"my\">V1</code>",
@@ -169,7 +181,7 @@ const toc = [{
   "level": 2
 }, {
   "value": "<code>공통</code>",
-  "id": "공통-4",
+  "id": "공통-5",
   "level": 3
 }, {
   "value": "<code>Application</code>",
@@ -181,7 +193,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "<code>Database</code>",
-  "id": "database-2",
+  "id": "database-3",
   "level": 3
 }, {
   "value": "<code>Log</code>",
@@ -305,6 +317,45 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+          id: "database",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "Database"
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
+          id: "공통-1",
+          children: "공통"
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dashboard",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dbMonitoring",
+            className: "uitext"
+          }), " 메뉴의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "active_sessions",
+            className: "uitext"
+          }), " 테이블에서 컬럼 변경 사항이 CSV 데이터에 반영되지 않는 문제 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h4, {
+          id: "database-v2",
+          children: ["Database ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+            className: "my",
+            children: "V2"
+          })]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+            priority: "0",
+            children: "Fixed"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_analysis",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "side_dbTrendComparison",
+            className: "uitext"
+          }), " 메뉴의 지표 선택 화면에서 지표가 보이지 않는 문제 수정"]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "browser",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Browser"
@@ -358,7 +409,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-1",
+          id: "공통-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -557,7 +608,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database",
+          id: "database-1",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
@@ -691,7 +742,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-2",
+          id: "공통-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -917,12 +968,12 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-1",
+          id: "database-2",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
-          id: "공통-3",
+          id: "공통-4",
           children: "공통"
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
@@ -1181,7 +1232,7 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         class: "indentTab",
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "공통-4",
+          id: "공통-5",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "공통"
           })
@@ -1439,7 +1490,7 @@ function _createMdxContent(props) {
             }), "\n"]
           }), "\n"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-          id: "database-2",
+          id: "database-3",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
             children: "Database"
           })
