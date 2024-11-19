@@ -4446,7 +4446,20 @@ const sidebars = {
       items: [
         'account/account-manage',
         'account/mfa',
-        'account/sso',
+        {
+          type: 'category',
+          label: 'Single Sign-On 연동',
+          collapsible: false,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'account/sso'
+          },
+          items: [
+            'account/okta',
+            'account/ms-entra-id'
+          ]
+        },
         'project/project-structure',
         'project/project-manage',
         'project/group',   
