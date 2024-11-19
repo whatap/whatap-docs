@@ -13,16 +13,16 @@ const config = {
   title: 'WhaTap Docs',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
-  // future: {
-  //   experimental_faster: {
-  //     swcJsLoader: false,
-  //     swcJsMinimizer: true,
-  //     swcHtmlMinimizer: true,
-  //     lightningCssMinimizer: true,
-  //     rspackBundler: false,
-  //     mdxCrossCompilerCache: true,
-  //   },
-  // },
+  future: {
+    experimental_faster: {
+      swcJsLoader: false,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: false,
+      mdxCrossCompilerCache: true,
+    },
+  },
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenAnchors: 'ignore',
