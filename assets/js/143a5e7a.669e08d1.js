@@ -2088,8 +2088,8 @@ const metadata = {
   },
   "sidebar": "javaSidebar",
   "previous": {
-    "title": "실시간 알림",
-    "permalink": "/whatap-docs/java/real-time-notification"
+    "title": "시스템 이벤트 안내",
+    "permalink": "/whatap-docs/java/common-alert"
   },
   "next": {
     "title": "연계 프로젝트 관리",

@@ -393,8 +393,8 @@ const metadata = {
     "permalink": "/whatap-docs/java/set-event-format"
   },
   "next": {
-    "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/java/instance-performance-analysis"
+    "title": "시스템 이벤트 안내",
+    "permalink": "/whatap-docs/java/common-alert"
   }
 };
 const assets = {
