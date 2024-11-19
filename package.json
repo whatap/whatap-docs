@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "DOCUSAURUS_SSR_CONCURRENCY=5 DOCUSAURUS_IGNORE_SSG_WARNINGS=false USE_SIMPLE_CSS_MINIFIER=true docusaurus build --no-minify",
+    "build": "DOCUSAURUS_SSR_CONCURRENCY=5 DOCUSAURUS_IGNORE_SSG_WARNINGS=true USE_SIMPLE_CSS_MINIFIER=true docusaurus build --no-minify",
     "build:fast": "BUILD_FAST=true yarn build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
