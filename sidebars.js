@@ -267,7 +267,8 @@ const sidebars = {
                 'java/set-receive-event',
                 'java/set-event-history',
                 'java/set-event-format',
-                'java/real-time-notification'
+                'java/real-time-notification',
+                'java/common-alert'
               ],
             },
             'java/instance-performance-analysis',
