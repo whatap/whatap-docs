@@ -335,25 +335,32 @@ function _createMdxContent(props) {
           })
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-              priority: "1",
-              children: "Feature"
-            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_cluster",
-              className: "uitext"
-            }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_kubeEventList",
-              className: "uitext"
-            }), " 메뉴에 상세 보기 기능 추가(Suggestions, 인접 로그, 이벤트 타임라인)"]
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "1",
+                children: "Feature"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_cluster",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_kubeEventList",
+                className: "uitext"
+              }), " 메뉴에 상세 보기 기능 추가(Suggestions, 인접 로그, 이벤트 타임라인)"]
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
+                priority: "1",
+                children: "Feature"
+              }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_cluster",
+                className: "uitext"
+              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "side_kubeEventList",
+                className: "uitext"
+              }), " 메뉴에 Type, Reason 개수 표시 및 시간별 이벤트 개수 차트에 Type 구분 표시 추가"]
+            }), "\n"]
           }), "\n"]
-        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["[feature] ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "side_cluster",
-            className: "uitext"
-          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "side_kubeEventList",
-            className: "uitext"
-          }), " 메뉴에 Type, Reason 개수 표시 및 시간별 이벤트 개수 차트에 Type 구분 표시 추가"]
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.hr, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
           id: "database",
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
