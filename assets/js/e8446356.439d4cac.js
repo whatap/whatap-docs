@@ -223,7 +223,7 @@ function _createMdxContent(props) {
         id: "noneaccount",
         children: "와탭에 계정이 없는 경우"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "Microsoft Entra ID에서 사용할 계정이 와탭에 없다면, 다음 안내에 따라 Microsoft Entra ID를 통해 와탭에 최초로 로그인할 계정을 생성하세요."
+        children: "Microsoft Entra ID에서 사용하는 계정이 와탭에 없다면, 사용자 확인을 위해 최초 1회의 인증 연동이 필요합니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -244,6 +244,9 @@ function _createMdxContent(props) {
               className: "b600",
               entra: true
             }), "에서 기존에 등록된 엔터프라이즈 애플리케이션을 통해서 와탭(WhaTap) 서비스에 접속하세요."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+            img: "ms-account-manage-02.png",
+            desc: "My account"
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
@@ -950,7 +953,7 @@ function _missingMdxReference(id, component) {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/ms2whatap-signup-d87868bb1b050f6febe54c31cfc38f36.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/ms2whatap-signup-61784c7e9952bd01740c7ac68eaf2e23.png");
 
 /***/ })
 
