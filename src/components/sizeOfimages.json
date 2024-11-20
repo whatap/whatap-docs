@@ -4843,6 +4843,18 @@
     "width": 1200,
     "height": 506
   },
+  "common-alert-event-blocked-by-system-en.png": {
+    "width": 800,
+    "height": 813
+  },
+  "common-alert-event-blocked-by-system-ja.png": {
+    "width": 800,
+    "height": 812
+  },
+  "common-alert-event-blocked-by-system.png": {
+    "width": 800,
+    "height": 803
+  },
   "compound-eye.png": {
     "width": 451,
     "height": 339
@@ -7803,6 +7815,10 @@
     "width": 1230,
     "height": 871
   },
+  "db-mysql-download-jdbc.png": {
+    "width": 600,
+    "height": 306
+  },
   "db-mysql-rds-diagram.jpg": {
     "width": 1199,
     "height": 515
@@ -8611,6 +8627,30 @@
     "width": 1200,
     "height": 726
   },
+  "dotnet-quick-pic-01-en.png": {
+    "width": 2228,
+    "height": 1257
+  },
+  "dotnet-quick-pic-01-ja.png": {
+    "width": 2231,
+    "height": 1252
+  },
+  "dotnet-quick-pic-01.png": {
+    "width": 2231,
+    "height": 1248
+  },
+  "dotnet-quick-pic-02-en.png": {
+    "width": 2232,
+    "height": 1254
+  },
+  "dotnet-quick-pic-02-ja.png": {
+    "width": 2228,
+    "height": 1255
+  },
+  "dotnet-quick-pic-02.png": {
+    "width": 2234,
+    "height": 1254
+  },
   "dotnet-trst01-en.png": {
     "width": 1195,
     "height": 870
@@ -8765,15 +8805,15 @@
   },
   "event-config-v2-condition-common-en.png": {
     "width": 800,
-    "height": 431
+    "height": 434
   },
   "event-config-v2-condition-common-ja.png": {
     "width": 800,
-    "height": 430
+    "height": 434
   },
   "event-config-v2-condition-common.png": {
     "width": 800,
-    "height": 430
+    "height": 434
   },
   "event-config-v2-db-mongodb-en.png": {
     "width": 1200,
@@ -8889,15 +8929,15 @@
   },
   "event-config-v2-simulation-common-en.png": {
     "width": 800,
-    "height": 267
+    "height": 261
   },
   "event-config-v2-simulation-common-ja.png": {
     "width": 800,
-    "height": 267
+    "height": 261
   },
   "event-config-v2-simulation-common.png": {
     "width": 800,
-    "height": 266
+    "height": 261
   },
   "event-config-v2-target-apm-en.png": {
     "width": 800,
@@ -11960,8 +12000,8 @@
     "height": 345
   },
   "linked-projects-agent-settings.png": {
-    "width": 1642,
-    "height": 327
+    "width": 1196,
+    "height": 464
   },
   "linked-projects-check-widget-01-en.png": {
     "width": 1243,
@@ -14639,6 +14679,210 @@
     "width": 1200,
     "height": 512
   },
+  "ms-account-manage-01.png": {
+    "width": 1200,
+    "height": 660
+  },
+  "ms-account-manage-02.png": {
+    "width": 1200,
+    "height": 667
+  },
+  "ms-entraid-enterprise-application-01-en.png": {
+    "width": 1200,
+    "height": 516
+  },
+  "ms-entraid-enterprise-application-01-ja.png": {
+    "width": 1200,
+    "height": 516
+  },
+  "ms-entraid-enterprise-application-01.png": {
+    "width": 1200,
+    "height": 516
+  },
+  "ms-entraid-enterprise-application-02-en.png": {
+    "width": 1200,
+    "height": 471
+  },
+  "ms-entraid-enterprise-application-02-ja.png": {
+    "width": 1200,
+    "height": 471
+  },
+  "ms-entraid-enterprise-application-02.png": {
+    "width": 1200,
+    "height": 451
+  },
+  "ms-entraid-enterprise-application-assign-01-en.png": {
+    "width": 1200,
+    "height": 462
+  },
+  "ms-entraid-enterprise-application-assign-01-ja.png": {
+    "width": 1200,
+    "height": 481
+  },
+  "ms-entraid-enterprise-application-assign-01.png": {
+    "width": 1200,
+    "height": 462
+  },
+  "ms-entraid-enterprise-application-assign-02-en.png": {
+    "width": 1200,
+    "height": 351
+  },
+  "ms-entraid-enterprise-application-assign-02-ja.png": {
+    "width": 1200,
+    "height": 351
+  },
+  "ms-entraid-enterprise-application-assign-02.png": {
+    "width": 1200,
+    "height": 351
+  },
+  "ms-entraid-enterprise-application-assign-03-en.png": {
+    "width": 1200,
+    "height": 389
+  },
+  "ms-entraid-enterprise-application-assign-03-ja.png": {
+    "width": 1200,
+    "height": 389
+  },
+  "ms-entraid-enterprise-application-assign-03.png": {
+    "width": 1200,
+    "height": 404
+  },
+  "ms-entraid-enterprise-application-sso-01-en.png": {
+    "width": 1200,
+    "height": 462
+  },
+  "ms-entraid-enterprise-application-sso-01-ja.png": {
+    "width": 1200,
+    "height": 481
+  },
+  "ms-entraid-enterprise-application-sso-01.png": {
+    "width": 1200,
+    "height": 462
+  },
+  "ms-entraid-enterprise-application-sso-02-en.png": {
+    "width": 1200,
+    "height": 401
+  },
+  "ms-entraid-enterprise-application-sso-02-ja.png": {
+    "width": 1200,
+    "height": 432
+  },
+  "ms-entraid-enterprise-application-sso-02.png": {
+    "width": 1200,
+    "height": 405
+  },
+  "ms-entraid-enterprise-application-sso-03-en.png": {
+    "width": 800,
+    "height": 338
+  },
+  "ms-entraid-enterprise-application-sso-03-ja.png": {
+    "width": 800,
+    "height": 361
+  },
+  "ms-entraid-enterprise-application-sso-03.png": {
+    "width": 800,
+    "height": 301
+  },
+  "ms-entraid-enterprise-application-sso-04-en.png": {
+    "width": 1200,
+    "height": 518
+  },
+  "ms-entraid-enterprise-application-sso-04-ja.png": {
+    "width": 1200,
+    "height": 518
+  },
+  "ms-entraid-enterprise-application-sso-04.png": {
+    "width": 1200,
+    "height": 518
+  },
+  "ms-entraid-enterprise-application-sso-05-en.png": {
+    "width": 800,
+    "height": 191
+  },
+  "ms-entraid-enterprise-application-sso-05-ja.png": {
+    "width": 800,
+    "height": 191
+  },
+  "ms-entraid-enterprise-application-sso-05.png": {
+    "width": 800,
+    "height": 191
+  },
+  "ms-entraid-enterprise-application-sso-06-en.png": {
+    "width": 800,
+    "height": 453
+  },
+  "ms-entraid-enterprise-application-sso-06-ja.png": {
+    "width": 800,
+    "height": 453
+  },
+  "ms-entraid-enterprise-application-sso-06.png": {
+    "width": 800,
+    "height": 453
+  },
+  "ms-entraid-enterprise-application-sso-07-en.png": {
+    "width": 800,
+    "height": 375
+  },
+  "ms-entraid-enterprise-application-sso-07-ja.png": {
+    "width": 800,
+    "height": 375
+  },
+  "ms-entraid-enterprise-application-sso-07.png": {
+    "width": 800,
+    "height": 375
+  },
+  "ms-entraid-enterprise-application-sso-08-en.png": {
+    "width": 800,
+    "height": 404
+  },
+  "ms-entraid-enterprise-application-sso-08-ja.png": {
+    "width": 800,
+    "height": 434
+  },
+  "ms-entraid-enterprise-application-sso-08.png": {
+    "width": 800,
+    "height": 394
+  },
+  "ms-entraid-enterprise-application-sso-test-01-en.png": {
+    "width": 800,
+    "height": 144
+  },
+  "ms-entraid-enterprise-application-sso-test-01-ja.png": {
+    "width": 800,
+    "height": 169
+  },
+  "ms-entraid-enterprise-application-sso-test-01.png": {
+    "width": 800,
+    "height": 144
+  },
+  "ms-entraid-enterprise-application-sso-test-02-en.png": {
+    "width": 800,
+    "height": 398
+  },
+  "ms-entraid-enterprise-application-sso-test-02-ja.png": {
+    "width": 800,
+    "height": 435
+  },
+  "ms-entraid-enterprise-application-sso-test-02.png": {
+    "width": 800,
+    "height": 375
+  },
+  "ms-entraid-enterprise-application-whatap-externalidp-en.png": {
+    "width": 678,
+    "height": 431
+  },
+  "ms-entraid-enterprise-application-whatap-externalidp-ja.png": {
+    "width": 678,
+    "height": 430
+  },
+  "ms-entraid-enterprise-application-whatap-externalidp.png": {
+    "width": 678,
+    "height": 414
+  },
+  "ms2whatap-signup.png": {
+    "width": 400,
+    "height": 377
+  },
   "multi-tx-additional-info-en.png": {
     "width": 1200,
     "height": 1049
@@ -14847,6 +15091,10 @@
     "width": 1200,
     "height": 632
   },
+  "new-feature-01-mssql.png": {
+    "width": 1200,
+    "height": 434
+  },
   "new-feature-01-mysql-en.png": {
     "width": 600,
     "height": 318
@@ -14912,6 +15160,10 @@
     "height": 1034
   },
   "new-feature-02-mongodb.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-mssql.png": {
     "width": 2309,
     "height": 1034
   },
@@ -15003,6 +15255,10 @@
     "width": 1200,
     "height": 420
   },
+  "new-feature-03-mssql.png": {
+    "width": 1200,
+    "height": 438
+  },
   "new-feature-03-mysql-en.png": {
     "width": 1200,
     "height": 438
@@ -15076,6 +15332,10 @@
     "height": 263
   },
   "new-feature-04-cubrid.png": {
+    "width": 1200,
+    "height": 274
+  },
+  "new-feature-04-mssql.png": {
     "width": 1200,
     "height": 274
   },
@@ -16661,7 +16921,7 @@
   },
   "server-install-oracle-solaris.png": {
     "width": 1273,
-    "height": 1001
+    "height": 1033
   },
   "server-install-unx-aix-en.png": {
     "width": 1264,
