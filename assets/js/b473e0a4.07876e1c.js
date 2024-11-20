@@ -1943,7 +1943,7 @@ function _createMdxContent(props) {
       }), " 기능이 추가되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "TTL07237",
         className: "uitext"
-      }), " 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다."]
+      }), " 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시각적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다."]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
       align: "center",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
