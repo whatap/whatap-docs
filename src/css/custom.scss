@@ -1288,6 +1288,10 @@ main {
     section h6 {
         font-size: var(--ifm-h6-font-size);
     }
+    ul.table-of-contents {
+      list-style-type: decimal;
+      margin-left: 18px;
+    }
     div.welcome {
       font-weight: 500;
       position: relative;
@@ -2193,6 +2197,11 @@ main {
     }
     img[alt*='cht'], img.width-600 {
       width: 600px;
+    }
+
+    img.width-800 {
+      width: 800px;
+      max-width: 800px;
     }
     img[alt*='cht2'] {
       width: 500px;
