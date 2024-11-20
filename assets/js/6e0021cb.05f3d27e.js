@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[92432],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[57548],{
 
 /***/ 82725:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -231,7 +231,7 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
-              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+              }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "PostgreSQL, Oracle, Oracle Pro, MySQL"
             }), "\n"]
@@ -258,7 +258,7 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
-              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다."]
+              }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -829,7 +829,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 98562:
+/***/ 75156:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -852,49 +852,49 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'linked-projects',
 	title: '연계 프로젝트 관리',
-	description: '애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
+	description: '데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'MySQL',
-		'데이터베이스',
+		'PHP',
 		'애플리케이션',
-		'연계 프로젝트'
+		'연계 프로젝트',
+		'데이터베이스'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/linked-projects",
+  "id": "php/linked-projects",
   "title": "연계 프로젝트 관리",
-  "description": "애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/mysql/linked-projects.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/linked-projects",
-  "permalink": "/whatap-docs/mysql/linked-projects",
+  "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
+  "source": "@site/docs/php/linked-projects.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/linked-projects",
+  "permalink": "/whatap-docs/php/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/linked-projects.mdx",
+  "editUrl": "undefined/docs/php/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "linked-projects",
     "title": "연계 프로젝트 관리",
-    "description": "애플리케이션 모니터링 프로젝트와 상호 연결하여 APM 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
+    "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      "MySQL",
-      "데이터베이스",
+      "PHP",
       "애플리케이션",
-      "연계 프로젝트"
+      "연계 프로젝트",
+      "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
-    "title": "시스템 이벤트 안내",
-    "permalink": "/whatap-docs/mysql/common-alert"
+    "title": "인스턴스 성능 관리",
+    "permalink": "/whatap-docs/php/instance-performance-analysis"
   },
   "next": {
-    "title": "실험실",
-    "permalink": "/whatap-docs/mysql/labs"
+    "title": "Log 모니터링",
+    "permalink": "/whatap-docs/log/introduction"
   }
 };
 const assets = {
@@ -903,6 +903,9 @@ const assets = {
 
 /*description*/
 /*연계 프로젝트 추가하기*/
+/*연계 프로젝트 확인하기*/
+/*import APMtoDBLinkedProject from "../common-items/_linked-projects-apm2db.mdx";*/
+/*<APMtoDBLinkedProject />*/
 /*연계 프로젝트 삭제하기*/
 
 
@@ -913,7 +916,7 @@ const assets = {
 const toc = [..._common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_add_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_linked_projects_remove_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {})]
   });
 }
 function MDXContent(props = {}) {

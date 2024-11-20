@@ -231,7 +231,7 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
-              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+              }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "PostgreSQL, Oracle, Oracle Pro, MySQL"
             }), "\n"]
@@ -258,7 +258,7 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
-              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다."]
+              }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {

@@ -270,7 +270,7 @@ import DBX_agent_1q from "../crw-data/crwld-agent/_import-agent-dbx.mdx";
 </details>*/
 /*:::note
 
-현재 애플리케이션과 데이터베이스 연계 분석은 **Java** 플랫폼만 지원합니다. 또한 연계 DB 세션 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. **연계 분석**에 대한 자세한 내용은 [다음 문서](../oracle/linked-projects)를 참조하세요. 애플리케이션 프로젝트에서 데이터베이스 프로젝트를 연계하는 방법에 대한 자세한 내용은 [다음 문서](../java/linked-projects)를 참조하세요.
+현재 애플리케이션과 데이터베이스 연계 분석은 **Java** 플랫폼만 지원합니다. 또한 연계 DB 세션 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다. **연계 분석**에 대한 자세한 내용은 [다음 문서](../oracle/linked-projects)를 참조하세요. 애플리케이션 프로젝트에서 데이터베이스 프로젝트를 연계하는 방법에 대한 자세한 내용은 [다음 문서](../java/linked-projects)를 참조하세요.
 
 :::*/
 /*와탭 2024년 1분기 `Browser` 상품의 주목할 만한 신규 기능 및 변경 사항으로 <Cmdname sid="TTL07736" className="uitext" /> 기능 및 ***사용자 정의 이벤트 수집 기능***을 소개합니다.*/
@@ -1492,7 +1492,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "연계 DB 세션"
         })
-      }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. 데이터베이스 플랫폼의 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+      }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다. 데이터베이스 플랫폼의 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         children: "PostgreSQL"
       }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         children: "MySQL"

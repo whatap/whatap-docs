@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31401],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80726],{
 
 /***/ 82725:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -231,7 +231,7 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
-              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
+              }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다. 해당 기능을 지원하는 데이터베이스 플랫폼은 다음과 같습니다."]
             }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
               children: "PostgreSQL, Oracle, Oracle Pro, MySQL"
             }), "\n"]
@@ -258,7 +258,7 @@ function _createMdxContent(props) {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
                 sid: "BTN08518",
                 className: "uitext"
-              }), " 기능의 경우 Java 에이전트 2.3.33 버전 이상이 필요합니다."]
+              }), " 기능의 경우 Java 에이전트 2.2.33 버전 이상이 필요합니다."]
             }), "\n"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -829,7 +829,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 73817:
+/***/ 6222:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -854,7 +854,7 @@ const frontMatter = {
 	title: '연계 프로젝트 관리',
 	description: '데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.',
 	keywords: [
-		'Node.js',
+		'Python',
 		'애플리케이션',
 		'연계 프로젝트',
 		'데이터베이스'
@@ -863,16 +863,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/linked-projects",
+  "id": "python/linked-projects",
   "title": "연계 프로젝트 관리",
   "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
-  "source": "@site/docs/nodejs/linked-projects.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/linked-projects",
-  "permalink": "/whatap-docs/nodejs/linked-projects",
+  "source": "@site/docs/python/linked-projects.mdx",
+  "sourceDirName": "python",
+  "slug": "/python/linked-projects",
+  "permalink": "/whatap-docs/python/linked-projects",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/linked-projects.mdx",
+  "editUrl": "undefined/docs/python/linked-projects.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -880,17 +880,17 @@ const metadata = {
     "title": "연계 프로젝트 관리",
     "description": "데이터베이스 모니터링 프로젝트와 상호 연결하여 DB 프로젝트에서 수집 중인 모니터링 데이터를 확인할 수 있습니다.",
     "keywords": [
-      "Node.js",
+      "Python",
       "애플리케이션",
       "연계 프로젝트",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "pySidebar",
   "previous": {
     "title": "인스턴스 성능 관리",
-    "permalink": "/whatap-docs/nodejs/instance-performance-analysis"
+    "permalink": "/whatap-docs/python/instance-performance-analysis"
   },
   "next": {
     "title": "Log 모니터링",
