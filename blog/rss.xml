@@ -21,7 +21,7 @@
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
 <ul>
 <li><strong>SSO 계정 연동</strong> 기능이 추가되었습니다.</li>
-<li>메트릭스 필드 중심의 사용자 경험을 강화한 <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다.</li>
+<li><span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다.</li>
 <li><code>Application</code>, <code>Kubernetes</code>, <code>Database</code> 상품군에서 <span class="uitext">메트릭스 차트</span> <code class="newfunc">New</code> 메뉴를 새롭게 제공합니다.</li>
 </ul>
 </blockquote><table><thead><tr><th><strong>Application</strong></th></tr></thead></table><blockquote>
@@ -130,7 +130,7 @@
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/changelog/changelog-app-tx-map.png" alt="sc" class="changelog-img" width="1142" height="761"></p>
 <p>또한 응답 시간 분포도 차트에서 선택한 항목만을 조회할 수 있는 <strong>커스텀 필터</strong> 기능을 새롭게 제공합니다. 기존 <em><strong>TOP 30</strong></em> 섹션 옆의 <span class="uitext">커스텀</span> 탭에서 조회를 원하는 특정 트랜잭션, 도메인, IP 항목에서 원하는 값을 직접 입력하거나 <em><strong>TOP 30</strong></em> 목록에서 제공하는 항목을 선택하세요. 선택한 항목들의 응답 시간 분포도가 차트에 실시간으로 필터링됩니다.</p>
 <p align="center"></p><p><img decoding="async" loading="lazy" alt="트랜잭션 맵 커스텀 필터 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-app-trs-map-f8697673ccb5a5e11ecb2cbc60f1598c.gif" width="1627" height="942" class="img_ev3q"></p><p></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션-대시보드-프리셋">애플리케이션 대시보드 프리셋<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%94%84%EB%A6%AC%EC%85%8B" class="hash-link" aria-label="애플리케이션 대시보드 프리셋에 대한 직접 링크" title="애플리케이션 대시보드 프리셋에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션-대시보드-프리셋">애플리케이션 대시보드 프리셋<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%94%84%EB%A6%AC%EC%85%8B" class="hash-link" aria-label="애플리케이션 대시보드 프리셋에 대한 직접 링크" title="애플리케이션 대시��보드 프리셋에 대한 직접 링크">​</a></h3>
 <p><span class="uitext">애플리케이션 대시보드</span> 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 <span class="uitext">기본으로 표시</span> 옵션을 활용해 보세요. 기본으로 지정한 대시보드는 프리셋 목록에서 <code class="default-tag">기본</code> 태그가 표시됩니다.</p>
 <p><img decoding="async" loading="lazy" alt="애플리케이션 대시보드 기본 프리셋 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-app-preset-396ec7afa5ede6de8e3df27c48c20156.png" width="1234" height="725" class="img_ev3q"></p>
 <!-- -->
@@ -165,7 +165,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%ED%99%95%EB%8C%80-%EB%B0%8F-%EC%84%A4%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%EF%BF%BD%EF%BF%BD%ED%99%95%EB%8C%80-%EB%B0%8F-%EC%84%A4%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
 <p>와탭은 <strong>Unix</strong> <code>AIX</code>, <code>Solaris</code>, <code>HP-UX</code> 설치 패키지를 제공합니다. 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다.</p>
 <ul>
 <li>
@@ -190,75 +190,6 @@
 <!-- -->
 <!-- -->
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><span class="uitext">서버 구성 정보</span> 메뉴에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/server/server-inventory">다음 문서</a>를 참조하세요.</p></div></div>
-<br>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
-<!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="컨트롤-플레인-모니터링">컨트롤 플레인 모니터링<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%8C%EB%A0%88%EC%9D%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="컨트롤 플레인 모니터링에 대한 직접 링크" title="컨트롤 플레인 모니터링에 대한 직접 링크">​</a></h3>
-<p>와탭 쿠버네티스 모니터링은 새롭게 <strong>컨트롤 플레인 모니터링</strong>을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 <span class="uitext">kube-apiserver 대시보드</span> 및 <span class="uitext">kube-apiserver 메트릭스 조회</span> 기능이 추가되었습니다.</p>
-<p><span class="uitext">kube-apiserver 대시보드</span>는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. <span class="uitext">kube-apiserver 메트릭스 조회</span>를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="컨트롤 플레인 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-kube-apiserver-c3a6ec1b34e8e287f3c9967d770287c9.png" width="1082" height="774" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deploytment-목록과-쿠버네티스-에이전트-목록">Deploytment 목록과 쿠버네티스 에이전트 목록<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#deploytment-%EB%AA%A9%EB%A1%9D%EA%B3%BC-%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="Deploytment 목록과 쿠버네티스 에이전트 목록에 대한 직접 링크" title="Deploytment 목록과 쿠버네티스 에이전트 목록에 대한 직접 링크">​</a></h3>
-<p>또한 Deployment 기준으로 관련 정보를 조회할 수 있는 <span class="uitext">Deployment 목록</span>, 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 <span class="uitext">쿠버네티스 에이전트 목록</span> 기능이 추가되었습니다.</p>
-<p>개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. <span class="uitext">Deployment 목록</span>에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다.</p>
-<p>또한 새롭게 추가된 <span class="uitext">쿠버네티스 에이전트 목록</span>에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pod-시작-분석과-오브젝트-매니페스트">Pod 시작 분석과 오브젝트 매니페스트<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pod-%EC%8B%9C%EC%9E%91-%EB%B6%84%EC%84%9D%EA%B3%BC-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EB%A7%A4%EB%8B%88%ED%8E%98%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크" title="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크">​</a></h3>
-<p>기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 <span class="uitext">Pod 시작 분석</span>과 <span class="uitext">오브젝트 매니페스트</span> 기능을 제공합니다. <span class="uitext">Pod 시작 분석</span>은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. <span class="uitext">오브젝트 매니페스트</span>는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시작 분석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
-<!-- -->
-<p>아울러 마스터 및 노드 에이전트 설치 시 기존 Yaml 파일 방식 외 운영 복잡도를 덜어줄 <strong>Helm</strong> 차트 설치 방식을 공식적으로 지원합니다.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pending-pod-현황">Pending Pod 현황<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pending-pod-%ED%98%84%ED%99%A9" class="hash-link" aria-label="Pending Pod 현황에 대한 직접 링크" title="Pending Pod 현황에 대한 직접 링크">​</a></h3>
-<p><span class="uitext">실험실</span> 메뉴에서 제공되던 <span class="uitext">Pending Pod 현황</span> 기능이 <code class="my">V2</code>로 개편되면서 <span class="uitext">워크로드</span> 하위 메뉴로 정식 배포되었습니다. <span class="uitext">Pending Pod 현황</span> 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-pending-pod-status-detail.png" alt="Pending Pod 상세 분기 예시" width="1200" height="677"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="리소스-관계">리소스 관계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EB%A6%AC%EC%86%8C%EC%8A%A4-%EA%B4%80%EA%B3%84" class="hash-link" aria-label="리소스 관계에 대한 직접 링크" title="리소스 관계에 대한 직접 링크">​</a></h3>
-<p>와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 <span class="uitext">컨테이너 맵</span> 개선 작업을 진행하였습니다. 그 일환으로 <span class="uitext">컨테이너 맵</span>에 <span class="uitext">리소스 관계</span> 기능이 추가되었습니다. <span class="uitext">리소스 관계</span> 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다.</p>
-<p align="center"></p><p><img decoding="async" loading="lazy" alt="리소스 관계 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/k8s-container-detail-rr-s-65b4b14aa928dfc3f09abaf91b64f4da.png" width="600" height="203" class="img_ev3q"></p><p></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="노드-모니터링-확장">노드 모니터링 확장<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EB%85%B8%EB%93%9C-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%99%95%EC%9E%A5" class="hash-link" aria-label="노드 모니터링 확장에 대한 직접 링크" title="노드 모니터링 확장에 대한 직접 링크">​</a></h3>
-<p>와탭 쿠버네티스 모니터링은 노드 모니터링 확장과 함께 여러 가지 새로운 기능을 제공합니다. <span class="uitext">노드 맵</span>, <span class="uitext">노드 타임라인</span>, <span class="uitext">노드 디스크 목록</span>과 같은 신규 메뉴가 추가되었으며, 기존 <span class="uitext">노드 목록</span> 메뉴가 보다 효율적으로 개선되었습니다.</p>
-<p><span class="uitext">노드 맵</span>을 통해 클러스터 관점에서 노드 상태를 모니터링할 수 있습니다. 노드의 실시간 상태, 리소스 사용 현황 및 노드 간 관계를 직관적으로 파악할 수 있으며, 그룹화, 임계치 설정, 라벨 등의 사용자 설정을 통해 사용자가 원하는 방식으로 대시보드를 구성할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-node-map-custom.png" alt="k8s 노드맵 분기 예시" width="2584" height="1416"></p>
-<p><span class="uitext">노드 타임라인</span> 메뉴에서 시간에 따라 노드의 상태 변화를 추적할 수 있습니다. 예를 들어 특정 노드의 제거 시점 및 해당 시점의 상태를 시각적으로 파악할 수 있습니다. 이를 통해 클러스터 운영 중 발생한 이슈 분석이나 과거 상황을 확인하는 데 유용합니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-node-timeline-stage.png" alt="k8s 노드 타임라인 분기 예시" width="1191" height="407"></p>
-<p><span class="uitext">노드 디스크 목록</span>을 통해 노드에 마운트된 개별 디스크의 상태를 실시간으로 모니터링할 수 있습니다. 그리고 기존 <span class="uitext">노드 목록</span> 메뉴의 비교 및 상세 정보 조회 기능이 개선되었습니다. <span class="uitext">노드 상세</span> 메뉴로 이동하는 대신 선택한 노드의 구성 및 리소스, 메트릭스, 이벤트 정보를 <span class="uitext">노드 목록</span> 상세 모달을 통해 확인할 수 있습니다.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="구성-요소-분석-강화">구성 요소 분석 강화<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C-%EB%B6%84%EC%84%9D-%EA%B0%95%ED%99%94" class="hash-link" aria-label="구성 요소 분석 강화에 대한 직접 링크" title="구성 요소 분석 강화에 대한 직접 링크">​</a></h3>
-<p><span class="uitext">컨테이너 요약 분석</span> 및 <span class="uitext">Pod 요약 분석</span>, <span class="uitext">노드 요약 분석</span> 기능이 새롭게 제공되어, 각 구성 요소의 성능과 상태를 종합적으로 분석할 수 있습니다. <span class="uitext">컨테이너 맵</span>과 <span class="uitext">노드 맵</span>의 <span class="uitext">대상 정보</span> 탭에서 원하는 요약 분석 정보를 확인할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="k8s 성능 요약 분석 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-k8s-summary-44e90958eb6e7b7b8fa528d1e8dce1dc.gif" width="2532" height="1414" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="쿠버네티스-진입부-모니터링-확장">쿠버네티스 진입부 모니터링 확장<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EC%A7%84%EC%9E%85%EB%B6%80-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%99%95%EC%9E%A5" class="hash-link" aria-label="쿠버네티스 진입부 모니터링 확장에 대한 직접 링크" title="쿠버네티스 진입부 모니터링 확장에 대한 직접 링크">​</a></h3>
-<p>와탭 쿠버네티스 모니터링 정보 확대의 일환으로 <span class="uitext">Service 목록</span> 메뉴와 <span class="uitext">Ingess 목록</span> 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태 및 쿠버네티스 클러스터로 들어오는 외부 트래픽의 흐름까지 확인할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-service-list.png" alt="k8s Service 목록 분기 예시" width="1200" height="693"></p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-ingress-list.png" alt="k8s 인그레스 목록 분기 예시" width="1200" height="251"></p>
-<!-- -->
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
-<li>
-<p><span class="uitext">kube-apiserver 대시보드</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/kube-apiserver-dashboard" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">kube-apiserver 메트릭스 조회</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/kube-apiserver-metrics-search" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">Deployment 목록</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/deployment-list" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">쿠버네티스 에이전트 목록</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/agent-list" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p>마스터 및 노드 에이전트 <em>Helm</em> 차트 설치 방식에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/install-master-node-agent#create-kubernetes-agent" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">노드 맵</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/node-map">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">노드 타임라인</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/node-timeline">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">노드 디스크 목록</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/node-disk-list">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">컨테이너 요약 분석</span> 및 <span class="uitext">Pod 요약 분석</span> 기능에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/container-map-target-info#kube-resource-summary-analysis">다음 문서</a>를 참조하세요.</p>
-</li>
-<li>
-<p><span class="uitext">Service 목록</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/service-list">다음 문서</a>를 참조하세요.</p>
-</li>
-</ul></div></div>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
 <!-- -->
@@ -308,7 +239,7 @@
 <p>새롭게 제공하는 <span class="uitext">세션 리플레이</span> 기능은 사용자가 웹 사이트에서 수행하는 모든 이벤트를 자동으로 기록하고 재생할 수 있는 기능입니다.</p>
 <p>사용자의 클릭, 스크롤, 입력, 페이지 전환 등과 같은 모든 이벤트를 정확하게 재현하여 웹 사이트와 사용자 사이의 상호작용을 분석할 수 있습니다. 이를 통해 실제 사용자 경험을 재현하여 잠재적인 문제를 빠르게 식별하고 해결할 수 있으며, 사용자의 웹 사이트 사용 방식에 대한 통찰을 제공하여 최적화를 도울 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="세션 리플레이 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-browser1-9a2a14b2625639c2309b88bb0facfd3e.png" width="1288" height="613" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="페이지-로드-통계">페이지 로드 통계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%93%9C-%ED%86%B5%EA%B3%84" class="hash-link" aria-label="페이지 로드 통계에 대한 직접 링크" title="페이지 로드 통계에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="페이지-로드-통��계">페이지 로드 통계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%93%9C-%ED%86%B5%EA%B3%84" class="hash-link" aria-label="페이지 로드 통계에 대한 직접 링크" title="페이지 로드 통계에 대한 직접 링크">​</a></h3>
 <p>새롭게 제공하는 <span class="uitext">페이지 로드 통계</span> 기능은 웹 사이트의 페이지별 로드 성능 정보를 제공합니다. 각 페이지의 로드 과정을 추적하여 성능 저하 원인을 파악하고, 최적화된 페이지의 개선 효과를 확인할 수 있습니다. <em><strong>페이지 그룹</strong></em>을 기준으로 페이지 로드 시간 및 DOM 로드 시간, 네트워크 지연 시간, 리소스 로드 시간 등 다양한 성능 지표를 제공합니다. 이를 통해 페이지 성능 최적화 여부를 확인할 수 있습니다</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-pageload-statistics.png" alt="페이지 로드 통계 분기 예시" width="1200" height="1055"></p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
@@ -364,7 +295,76 @@
 <p><code class="Beta">Beta</code> <code>APACHE</code> 모니터링에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/features/apache-introduction">다음 문서</a>를 참조하세요.</p>
 </li>
 </ul></div></div>
-]]></content:encoded>
+<!-- -->
+<br>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
+<!-- -->
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="컨트롤-플레인-모니터링">컨트롤 플레인 모니터링<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%8C%EB%A0%88%EC%9D%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="컨트롤 플레인 모니터링에 대한 직접 링크" title="컨트롤 플레인 모니터링에 대한 직접 링크">​</a></h3>
+<p>와탭 쿠버네티스 모니터링은 새롭게 <strong>컨트롤 플레인 모니터링</strong>을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 <span class="uitext">kube-apiserver 대시보드</span> 및 <span class="uitext">kube-apiserver 메트릭스 조회</span> 기능이 추가되었습니다.</p>
+<p><span class="uitext">kube-apiserver 대시보드</span>는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. <span class="uitext">kube-apiserver 메트릭스 조회</span>를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다.</p>
+<p><img decoding="async" loading="lazy" alt="컨트롤 플레인 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-kube-apiserver-c3a6ec1b34e8e287f3c9967d770287c9.png" width="1082" height="774" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deployment-목록과-쿠버네티스-에이전트-목록">Deployment 목록과 쿠버네티스 에이전트 목록<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#deployment-%EB%AA%A9%EB%A1%9D%EA%B3%BC-%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%AA%A9%EB%A1%9D" class="hash-link" aria-label="Deployment 목록과 쿠버네티스 에이전트 목록에 대한 직접 링크" title="Deployment 목록과 쿠버네티스 에이전트 목록에 대한 직접 링크">​</a></h3>
+<p>또한 Deployment 기준으로 관련 정보를 조회할 수 있는 <span class="uitext">Deployment 목록</span>, 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 <span class="uitext">쿠버네티스 에이전트 목록</span> 기능이 추가되었습니다.</p>
+<p>개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. <span class="uitext">Deployment 목록</span>에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다.</p>
+<p>또한 새롭게 추가된 <span class="uitext">쿠버네티스 에이전트 목록</span>에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pod-시작-분석과-오브젝트-매니페스트">Pod 시작 분석과 오브젝트 매니페스트<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pod-%EC%8B%9C%EC%9E%91-%EB%B6%84%EC%84%9D%EA%B3%BC-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EB%A7%A4%EB%8B%88%ED%8E%98%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크" title="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크">​</a></h3>
+<p>기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 <span class="uitext">Pod 시작 분석</span>과 <span class="uitext">오브젝트 매니페스트</span> 기능을 제공합니다. <span class="uitext">Pod 시작 분석</span>은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. <span class="uitext">오브젝트 매니페스트</span>는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.</p>
+<p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시작 분석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
+<!-- -->
+<p>아울러 마스터 및 노드 에이전트 설치 시 기존 Yaml 파일 방식 외 운영 복잡도를 덜어줄 <strong>Helm</strong> 차트 설치 방식을 공식적으로 지원합니다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pending-pod-현황">Pending Pod 현황<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pending-pod-%ED%98%84%ED%99%A9" class="hash-link" aria-label="Pending Pod 현황에 대한 직접 링크" title="Pending Pod 현황에 대한 직접 링크">​</a></h3>
+<p><span class="uitext">실험실</span> 메뉴에서 제공되던 <span class="uitext">Pending Pod 현황</span> 기능이 <code class="my">V2</code>로 개편되면서 <span class="uitext">워크로드</span> 하위 메뉴로 정식 배포되었습니다. <span class="uitext">Pending Pod 현황</span> 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다.</p>
+<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-pending-pod-status-detail.png" alt="Pending Pod 상세 분기 예시" width="1200" height="677"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="리소스-관계">리소스 관계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EB%A6%AC%EC%86%8C%EC%8A%A4-%EA%B4%80%EA%B3%84" class="hash-link" aria-label="리소스 관계에 대한 직접 링크" title="리소스 관계에 대한 직접 링크">​</a></h3>
+<p>와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 <span class="uitext">컨테이너 맵</span> 개선 작업을 진행하였습니다. 그 일환으로 <span class="uitext">컨테이너 맵</span>에 <span class="uitext">리소스 관계</span> 기능이 추가되었습니다. <span class="uitext">리소스 관계</span> 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다.</p>
+<p align="center"></p><p><img decoding="async" loading="lazy" alt="리소스 관계 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/k8s-container-detail-rr-s-65b4b14aa928dfc3f09abaf91b64f4da.png" width="600" height="203" class="img_ev3q"></p><p></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="노드-모니터링-확장">노드 모니터링 확장<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EB%85%B8%EB%93%9C-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%99%95%EC%9E%A5" class="hash-link" aria-label="노드 모니터링 확장에 대한 직접 링크" title="노드 모니터링 확장에 대한 직접 링크">​</a></h3>
+<p>와탭 쿠버네티스 모니터링은 노드 모니터링 확장과 함께 여러 가지 새로운 기능을 제공합니다. <span class="uitext">노드 맵</span>, <span class="uitext">노드 타임라인</span>, <span class="uitext">노드 디스크 목록</span>과 같은 신규 메뉴가 추가되었으며, 기존 <span class="uitext">노드 목록</span> 메뉴가 보다 효율적으로 개선되었습니다.</p>
+<p><span class="uitext">노드 맵</span>을 통해 클러스터 관점에서 노드 상태를 모니터링할 수 있습니다. 노드의 실시간 상태, 리소스 사용 현황 및 노드 간 관계를 직관적으로 파악할 수 있으며, 그룹화, 임계치 설정, 라벨 등의 사용자 설정을 통해 사용자가 원하는 방식으로 대시보드를 구성할 수 있습니다.</p>
+<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-node-map-custom.png" alt="k8s 노드맵 분기 예시" width="2584" height="1416"></p>
+<p><span class="uitext">노드 타임라인</span> 메뉴에서 시간에 따라 노드의 상태 변화를 추적할 수 있습니다. 예를 들어 특정 노드의 제거 시점 및 해당 시점의 상태를 시각적으로 파악할 수 있습니다. 이를 통해 클러스터 운영 중 발생한 이슈 분석이나 과거 상황을 확인하는 데 유용합니다.</p>
+<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-node-timeline-stage.png" alt="k8s 노드 타임라인 분기 예시" width="1191" height="407"></p>
+<p><span class="uitext">노드 디스크 목록</span>을 통해 노드에 마운트된 개별 디스크의 상태를 실시간으로 모니터링할 수 있습니다. 그리고 기존 <span class="uitext">노드 목록</span> 메뉴의 비교 및 상세 정보 조회 기능이 개선되었습니다. <span class="uitext">노드 상세</span> 메뉴로 이동하는 대신 선택한 노드의 구성 및 리소스, 메트릭스, 이벤트 정보를 <span class="uitext">노드 목록</span> 상세 모달을 통해 확인할 수 있습니다.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="구성-요소-분석-강화">구성 요소 분석 강화<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C-%EB%B6%84%EC%84%9D-%EA%B0%95%ED%99%94" class="hash-link" aria-label="구성 요소 분석 강화에 대한 직접 링크" title="구성 요소 분석 강화에 대한 직접 링크">​</a></h3>
+<p><span class="uitext">컨테이너 요약 분석</span> 및 <span class="uitext">Pod 요약 분석</span>, <span class="uitext">노드 요약 분석</span> 기능이 새롭게 제공되어, 각 구성 요소의 성능과 상태를 종합적으로 분석할 수 있습니다. <span class="uitext">컨테이너 맵</span>과 <span class="uitext">노드 맵</span>의 <span class="uitext">대상 정보</span> 탭에서 원하는 요약 분석 정보를 확인할 수 있습니다.</p>
+<p><img decoding="async" loading="lazy" alt="k8s 성능 요약 분석 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-k8s-summary-44e90958eb6e7b7b8fa528d1e8dce1dc.gif" width="2532" height="1414" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="쿠버네티스-진입부-모니터링-확장">쿠버네티스 진입부 모니터링 확장<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-%EC%A7%84%EC%9E%85%EB%B6%80-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%99%95%EC%9E%A5" class="hash-link" aria-label="쿠버네티스 진입부 모니터링 확장에 대한 직접 링크" title="쿠버네티스 ��진입부 모니터링 확장에 대한 직접 링크">​</a></h3>
+<p>와탭 쿠버네티스 모니터링 정보 확대의 일환으로 <span class="uitext">Service 목록</span> 메뉴와 <span class="uitext">Ingess 목록</span> 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태 및 쿠버네티스 클러스터로 들어오는 외부 트래픽의 흐름까지 확인할 수 있습니다.</p>
+<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-service-list.png" alt="k8s Service 목록 분기 예시" width="1200" height="693"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-ingress-list.png" alt="k8s 인그레스 목록 분기 예시" width="1200" height="251"></p>
+<!-- -->
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
+<li>
+<p><span class="uitext">kube-apiserver 대시보드</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/kube-apiserver-dashboard" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">kube-apiserver 메트릭스 조회</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/kube-apiserver-metrics-search" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">Deployment 목록</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/deployment-list" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">쿠버네티스 에이전트 목록</span>에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/agent-list" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p>마스터 및 노드 에이전트 <em>Helm</em> 차트 설치 방식에 대한 자세한 내용은 <a href="https://docs.whatap.io/kubernetes/install-master-node-agent#create-kubernetes-agent" target="_blank" rel="noopener noreferrer">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">노드 맵</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/node-map">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">노드 타임라인</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/node-timeline">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">노드 디스크 목록</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/node-disk-list">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">컨테이너 요약 분석</span> 및 <span class="uitext">Pod 요약 분석</span> 기능에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/container-map-target-info#kube-resource-summary-analysis">다음 문서</a>를 참조하세요.</p>
+</li>
+<li>
+<p><span class="uitext">Service 목록</span> 메뉴에 대한 더 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/kubernetes/service-list">다음 문서</a>를 참조하세요.</p>
+</li>
+</ul></div></div>]]></content:encoded>
             <author>ysjo@whatap.io (TW J)</author>
             <category>새로운 기능</category>
             <category>2024</category>

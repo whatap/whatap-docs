@@ -248,31 +248,6 @@ import Server_agent_1q from "../crw-data/crwld-agent/_import-agent-server.mdx";
 <Server_agent_1q />
 
 </details>*/
-/*와탭 2024년 1분기 `Kubernetes` 상품의 주목할 만한 신규 기능 및 변경 사항으로 새로운 기능인 **컨트롤 플레인 모니터링**, <Cmdname sid="side_kubernetesAgentList" className="uitext" />, <Cmdname sid="side_deploymentList" className="uitext" />, 그리고 개편된 기능인 <Cmdname sid="side_podInitPerf" className="uitext" />과 <Cmdname sid="side_objectManifest" className="uitext" />, 아울러 새로 추가된 **Helm** 차트 설치 지원 등에 대해서 소개합니다.*/
-/*
-
-뿐만 아니라 Deployment 기준으로 리소스 관계도 및 트레이스, 로그, 메트릭스와 같은 옵저버빌리티의 핵심 데이터를 한 눈에 확인할 수 있습니다.
-
-클러스터 관리 효율성 향상*/
-/*다음 개요 안내를 통해 2024년 1분기 `Kubernetes` 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
-
-<details className='changelog'>
-<summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
-
-import Kubernetes_1q from "../crw-data/crwld-service/_import-service-Kubernetes.mdx";
-
-<Kubernetes_1q />
-
-</details>
-
-<details className='changelog2'>
-<summary><b>에이전트 안내</b></summary>
-
-import Kubernetes_agent_1q from "../crw-data/crwld-agent/_import-agent-k8s.mdx";
-
-<Kubernetes_agent_1q />
-
-</details>*/
 /*와탭 2024년 1분기 `Database` 상품군의 주목할 만한 신규 기능 및 변경 사항으로 **Redis**와 **MongoDB** 상품 <code class="my">V2</code> 출시에 대해 소개합니다.*/
 /*<ImgLang img='linked-project-management.png' desc='연계 프로젝트 관리 분기 예시' />*/
 /*다음 개요 안내를 통해 2024년 1분기 `Database` 상품군의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.*/
@@ -356,6 +331,31 @@ import Log_1q from "../crw-data/crwld-service/_import-service-Log.mdx";
 </details>
 
 <br/>*/
+/*와탭 2024년 1분기 `Kubernetes` 상품의 주목할 만한 신규 기능 및 변경 사항으로 새로운 기능인 **컨트롤 플레인 모니터링**, <Cmdname sid="side_kubernetesAgentList" className="uitext" />, <Cmdname sid="side_deploymentList" className="uitext" />, 그리고 개편된 기능인 <Cmdname sid="side_podInitPerf" className="uitext" />과 <Cmdname sid="side_objectManifest" className="uitext" />, 아울러 새로 추가된 **Helm** 차트 설치 지원 등에 대해서 소개합니다.*/
+/*
+
+뿐만 아니라 Deployment 기준으로 리소스 관계도 및 트레이스, 로그, 메트릭스와 같은 옵저버빌리티의 핵심 데이터를 한 눈에 확인할 수 있습니다.
+
+클러스터 관리 효율성 향상*/
+/*다음 개요 안내를 통해 2024년 1분기 `Kubernetes` 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.
+
+<details className='changelog'>
+<summary><b>신규 기능 및 주요 변경 사항 안내</b></summary>
+
+import Kubernetes_1q from "../crw-data/crwld-service/_import-service-Kubernetes.mdx";
+
+<Kubernetes_1q />
+
+</details>
+
+<details className='changelog2'>
+<summary><b>에이전트 안내</b></summary>
+
+import Kubernetes_agent_1q from "../crw-data/crwld-agent/_import-agent-k8s.mdx";
+
+<Kubernetes_agent_1q />
+
+</details>*/
 
 
 const toc = [{
@@ -407,42 +407,6 @@ const toc = [{
   "id": "서버-구성-정보",
   "level": 3
 }, {
-  "value": "<code>Kubernetes</code>",
-  "id": "kubernetes",
-  "level": 2
-}, {
-  "value": "컨트롤 플레인 모니터링",
-  "id": "컨트롤-플레인-모니터링",
-  "level": 3
-}, {
-  "value": "Deploytment 목록과 쿠버네티스 에이전트 목록",
-  "id": "deploytment-목록과-쿠버네티스-에이전트-목록",
-  "level": 3
-}, {
-  "value": "Pod 시작 분석과 오브젝트 매니페스트",
-  "id": "pod-시작-분석과-오브젝트-매니페스트",
-  "level": 3
-}, {
-  "value": "Pending Pod 현황",
-  "id": "pending-pod-현황",
-  "level": 3
-}, {
-  "value": "리소스 관계",
-  "id": "리소스-관계",
-  "level": 3
-}, {
-  "value": "노드 모니터링 확장",
-  "id": "노드-모니터링-확장",
-  "level": 3
-}, {
-  "value": "구성 요소 분석 강화",
-  "id": "구성-요소-분석-강화",
-  "level": 3
-}, {
-  "value": "쿠버네티스 진입부 모니터링 확장",
-  "id": "쿠버네티스-진입부-모니터링-확장",
-  "level": 3
-}, {
   "value": "<code>Database</code>",
   "id": "database",
   "level": 2
@@ -486,6 +450,42 @@ const toc = [{
   "value": "<code>Features</code>",
   "id": "features",
   "level": 2
+}, {
+  "value": "<code>Kubernetes</code>",
+  "id": "kubernetes",
+  "level": 2
+}, {
+  "value": "컨트롤 플레인 모니터링",
+  "id": "컨트롤-플레인-모니터링",
+  "level": 3
+}, {
+  "value": "Deployment 목록과 쿠버네티스 에이전트 목록",
+  "id": "deployment-목록과-쿠버네티스-에이전트-목록",
+  "level": 3
+}, {
+  "value": "Pod 시작 분석과 오브젝트 매니페스트",
+  "id": "pod-시작-분석과-오브젝트-매니페스트",
+  "level": 3
+}, {
+  "value": "Pending Pod 현황",
+  "id": "pending-pod-현황",
+  "level": 3
+}, {
+  "value": "리소스 관계",
+  "id": "리소스-관계",
+  "level": 3
+}, {
+  "value": "노드 모니터링 확장",
+  "id": "노드-모니터링-확장",
+  "level": 3
+}, {
+  "value": "구성 요소 분석 강화",
+  "id": "구성-요소-분석-강화",
+  "level": 3
+}, {
+  "value": "쿠버네티스 진입부 모니터링 확장",
+  "id": "쿠버네티스-진입부-모니터링-확장",
+  "level": 3
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -537,7 +537,7 @@ function _createMdxContent(props) {
               children: "SSO 계정 연동"
             }), " 기능이 추가되었습니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["메트릭스 필드 중심의 사용자 경험을 강화한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "side_eventSettingV2",
               className: "uitext"
             }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
@@ -1366,342 +1366,6 @@ function _createMdxContent(props) {
         }), "를 참조하세요."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-      id: "kubernetes",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-        children: "Kubernetes"
-      })
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "컨트롤-플레인-모니터링",
-      children: "컨트롤 플레인 모니터링"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["와탭 쿠버네티스 모니터링은 새롭게 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "컨트롤 플레인 모니터링"
-      }), "을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubeApiserverDashboard",
-        className: "uitext"
-      }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubeApiserverMetricsSearch",
-        className: "uitext"
-      }), " 기능이 추가되었습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubeApiserverDashboard",
-        className: "uitext"
-      }), "는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubeApiserverMetricsSearch",
-        className: "uitext"
-      }), "를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "컨트롤 플레인 모니터링 sc cl",
-        src: (__webpack_require__(30471)/* ["default"] */ .A) + "",
-        width: "1082",
-        height: "774"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "deploytment-목록과-쿠버네티스-에이전트-목록",
-      children: "Deploytment 목록과 쿠버네티스 에이전트 목록"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["또한 Deployment 기준으로 관련 정보를 조회할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_deploymentList",
-        className: "uitext"
-      }), ", 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubernetesAgentList",
-        className: "uitext"
-      }), " 기능이 추가되었습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_deploymentList",
-        className: "uitext"
-      }), "에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["또한 새롭게 추가된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubernetesAgentList",
-        className: "uitext"
-      }), "에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "pod-시작-분석과-오브젝트-매니페스트",
-      children: "Pod 시작 분석과 오브젝트 매니페스트"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_podInitPerf",
-        className: "uitext"
-      }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_objectManifest",
-        className: "uitext"
-      }), " 기능을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_podInitPerf",
-        className: "uitext"
-      }), "은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_objectManifest",
-        className: "uitext"
-      }), "는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "오브젝트 매니페스트 및 Pod 시작 분석 sc cl",
-        src: (__webpack_require__(82326)/* ["default"] */ .A) + "",
-        width: "1010",
-        height: "771"
-      })
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["아울러 마스터 및 노드 에이전트 설치 시 기존 Yaml 파일 방식 외 운영 복잡도를 덜어줄 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-        children: "Helm"
-      }), " 차트 설치 방식을 공식적으로 지원합니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "pending-pod-현황",
-      children: "Pending Pod 현황"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_lab",
-        className: "uitext"
-      }), " 메뉴에서 제공되던 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_pendingPod",
-        className: "uitext"
-      }), " 기능이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
-        class: "my",
-        children: "V2"
-      }), "로 개편되면서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_workload",
-        className: "uitext"
-      }), " 하위 메뉴로 정식 배포되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_pendingPod",
-        className: "uitext"
-      }), " 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-pending-pod-status-detail.png",
-      desc: "Pending Pod 상세 분기 예시"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "리소스-관계",
-      children: "리소스 관계"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_containerMap",
-        className: "uitext"
-      }), " 개선 작업을 진행하였습니다. 그 일환으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_containerMap",
-        className: "uitext"
-      }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "TTL07237",
-        className: "uitext"
-      }), " 기능이 추가되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "TTL07237",
-        className: "uitext"
-      }), " 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-      align: "center",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "리소스 관계 분기 예시",
-          src: (__webpack_require__(45440)/* ["default"] */ .A) + "",
-          width: "600",
-          height: "203"
-        })
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "노드-모니터링-확장",
-      children: "노드 모니터링 확장"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["와탭 쿠버네티스 모니터링은 노드 모니터링 확장과 함께 여러 가지 새로운 기능을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeMap",
-        className: "uitext"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeTimeline",
-        className: "uitext"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeDiskList",
-        className: "uitext"
-      }), "과 같은 신규 메뉴가 추가되었으며, 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeList",
-        className: "uitext"
-      }), " 메뉴가 보다 효율적으로 개선되었습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeMap",
-        className: "uitext"
-      }), "을 통해 클러스터 관점에서 노드 상태를 모니터링할 수 있습니다. 노드의 실시간 상태, 리소스 사용 현황 및 노드 간 관계를 직관적으로 파악할 수 있으며, 그룹화, 임계치 설정, 라벨 등의 사용자 설정을 통해 사용자가 원하는 방식으로 대시보드를 구성할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-node-map-custom.png",
-      desc: "k8s 노드맵 분기 예시"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeTimeline",
-        className: "uitext"
-      }), " 메뉴에서 시간에 따라 노드의 상태 변화를 추적할 수 있습니다. 예를 들어 특정 노드의 제거 시점 및 해당 시점의 상태를 시각적으로 파악할 수 있습니다. 이를 통해 클러스터 운영 중 발생한 이슈 분석이나 과거 상황을 확인하는 데 유용합니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-node-timeline-stage.png",
-      desc: "k8s 노드 타임라인 분기 예시"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeDiskList",
-        className: "uitext"
-      }), "을 통해 노드에 마운트된 개별 디스크의 상태를 실시간으로 모니터링할 수 있습니다. 그리고 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeList",
-        className: "uitext"
-      }), " 메뉴의 비교 및 상세 정보 조회 기능이 개선되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeDetail",
-        className: "uitext"
-      }), " 메뉴로 이동하는 대신 선택한 노드의 구성 및 리소스, 메트릭스, 이벤트 정보를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_nodeList",
-        className: "uitext"
-      }), " 상세 모달을 통해 확인할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "구성-요소-분석-강화",
-      children: "구성 요소 분석 강화"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "TTL08317",
-        className: "uitext",
-        type: "container"
-      }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "TTL08317",
-        className: "uitext",
-        type: "kube_pod"
-      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "TTL08317",
-        className: "uitext",
-        type: "node"
-      }), " 기능이 새롭게 제공되어, 각 구성 요소의 성능과 상태를 종합적으로 분석할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_containerMap",
-        className: "uitext"
-      }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
-        children: "노드 맵"
-      }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "TTL06782",
-        className: "uitext"
-      }), " 탭에서 원하는 요약 분석 정보를 확인할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-        alt: "k8s 성능 요약 분석 분기 예시",
-        src: (__webpack_require__(98546)/* ["default"] */ .A) + "",
-        width: "2532",
-        height: "1414"
-      })
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-      id: "쿠버네티스-진입부-모니터링-확장",
-      children: "쿠버네티스 진입부 모니터링 확장"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["와탭 쿠버네티스 모니터링 정보 확대의 일환으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_kubeServiceList",
-        className: "uitext"
-      }), " 메뉴와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
-        children: "Ingess 목록"
-      }), " 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태 및 쿠버네티스 클러스터로 들어오는 외부 트래픽의 흐름까지 확인할 수 있습니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-service-list.png",
-      desc: "k8s Service 목록 분기 예시"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "k8s-ingress-list.png",
-      desc: "k8s 인그레스 목록 분기 예시"
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
-      type: "note",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_kubeApiserverDashboard",
-              className: "uitext"
-            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://docs.whatap.io/kubernetes/kube-apiserver-dashboard",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_kubeApiserverMetricsSearch",
-              className: "uitext"
-            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://docs.whatap.io/kubernetes/kube-apiserver-metrics-search",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_deploymentList",
-              className: "uitext"
-            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://docs.whatap.io/kubernetes/deployment-list",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_kubernetesAgentList",
-              className: "uitext"
-            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://docs.whatap.io/kubernetes/agent-list",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["마스터 및 노드 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-              children: "Helm"
-            }), " 차트 설치 방식에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "https://docs.whatap.io/kubernetes/install-master-node-agent#create-kubernetes-agent",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_nodeMap",
-              className: "uitext"
-            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../kubernetes/node-map",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_nodeTimeline",
-              className: "uitext"
-            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../kubernetes/node-timeline",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_nodeDiskList",
-              className: "uitext"
-            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../kubernetes/node-disk-list",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL08317",
-              className: "uitext",
-              type: "container"
-            }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "TTL08317",
-              className: "uitext",
-              type: "kube_pod"
-            }), " 기능에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../kubernetes/container-map-target-info#kube-resource-summary-analysis",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "side_kubeServiceList",
-              className: "uitext"
-            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-              href: "../kubernetes/service-list",
-              children: "다음 문서"
-            }), "를 참조하세요."]
-          }), "\n"]
-        }), "\n"]
-      })]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
       id: "database",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
         children: "Database"
@@ -2158,7 +1822,343 @@ function _createMdxContent(props) {
           }), "\n"]
         }), "\n"]
       })]
-    }), "\n"]
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
+      id: "kubernetes",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+        children: "Kubernetes"
+      })
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "컨트롤-플레인-모니터링",
+      children: "컨트롤 플레인 모니터링"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["와탭 쿠버네티스 모니터링은 새롭게 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "컨트롤 플레인 모니터링"
+      }), "을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubeApiserverDashboard",
+        className: "uitext"
+      }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubeApiserverMetricsSearch",
+        className: "uitext"
+      }), " 기능이 추가되었습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubeApiserverDashboard",
+        className: "uitext"
+      }), "는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubeApiserverMetricsSearch",
+        className: "uitext"
+      }), "를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        alt: "컨트롤 플레인 모니터링 sc cl",
+        src: (__webpack_require__(30471)/* ["default"] */ .A) + "",
+        width: "1082",
+        height: "774"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "deployment-목록과-쿠버네티스-에이전트-목록",
+      children: "Deployment 목록과 쿠버네티스 에이전트 목록"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["또한 Deployment 기준으로 관련 정보를 조회할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_deploymentList",
+        className: "uitext"
+      }), ", 마스터 및 노드 에이전트 설치 현황을 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubernetesAgentList",
+        className: "uitext"
+      }), " 기능이 추가되었습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["개별 Pod 보다 Pod 집합 상태를 모니터링하는 것이 서비스 안정성과 성능 확보를 위해 중요합니다. 애플리케이션 배포 및 업데이트를 담당하는 Deployment 모니터링은 그러한 의미에서 필수적입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_deploymentList",
+        className: "uitext"
+      }), "에서 리소스 관계도 및 클러스터 내 Pod, 컨테이너, 애플리케이션 현황 및 CPU, 메모리, 트랜잭션 수 등 주요 성능 지표를 Deployment 단위로 조회할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["또한 새롭게 추가된 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubernetesAgentList",
+        className: "uitext"
+      }), "에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "pod-시작-분석과-오브젝트-매니페스트",
+      children: "Pod 시작 분석과 오브젝트 매니페스트"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_podInitPerf",
+        className: "uitext"
+      }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_objectManifest",
+        className: "uitext"
+      }), " 기능을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_podInitPerf",
+        className: "uitext"
+      }), "은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_objectManifest",
+        className: "uitext"
+      }), "는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        alt: "오브젝트 매니페스트 및 Pod 시작 분석 sc cl",
+        src: (__webpack_require__(82326)/* ["default"] */ .A) + "",
+        width: "1010",
+        height: "771"
+      })
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["아울러 마스터 및 노드 에이전트 설치 시 기존 Yaml 파일 방식 외 운영 복잡도를 덜어줄 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "Helm"
+      }), " 차트 설치 방식을 공식적으로 지원합니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "pending-pod-현황",
+      children: "Pending Pod 현황"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_lab",
+        className: "uitext"
+      }), " 메뉴에서 제공되던 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_pendingPod",
+        className: "uitext"
+      }), " 기능이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+        class: "my",
+        children: "V2"
+      }), "로 개편되면서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_workload",
+        className: "uitext"
+      }), " 하위 메뉴로 정식 배포되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_pendingPod",
+        className: "uitext"
+      }), " 기능은 Pending 상태의 Pod에 대한 실시간 가시성을 제공함은 물론 Pending의 원인 분석을 가능하게 하는 연계 데이터를 함께 제공합니다. 이를 통해 클러스터 및 서비스의 가용성을 높일 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "k8s-pending-pod-status-detail.png",
+      desc: "Pending Pod 상세 분기 예시"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "리소스-관계",
+      children: "리소스 관계"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_containerMap",
+        className: "uitext"
+      }), " 개선 작업을 진행하였습니다. 그 일환으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_containerMap",
+        className: "uitext"
+      }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL07237",
+        className: "uitext"
+      }), " 기능이 추가되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL07237",
+        className: "uitext"
+      }), " 기능을 사용하면 쿠버네티스 리소스 간 계층 구조 및 연결 관계를 시작적으로 확인할 수 있기에 쿠버네티스 환경 분석은 물론 문제 발생 시 원인 파악 및 영향도를 한 눈에 파악할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
+      align: "center",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+          alt: "리소스 관계 분기 예시",
+          src: (__webpack_require__(45440)/* ["default"] */ .A) + "",
+          width: "600",
+          height: "203"
+        })
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "노드-모니터링-확장",
+      children: "노드 모니터링 확장"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["와탭 쿠버네티스 모니터링은 노드 모니터링 확장과 함께 여러 가지 새로운 기능을 제공합니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeMap",
+        className: "uitext"
+      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeTimeline",
+        className: "uitext"
+      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeDiskList",
+        className: "uitext"
+      }), "과 같은 신규 메뉴가 추가되었으며, 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeList",
+        className: "uitext"
+      }), " 메뉴가 보다 효율적으로 개선되었습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeMap",
+        className: "uitext"
+      }), "을 통해 클러스터 관점에서 노드 상태를 모니터링할 수 있습니다. 노드의 실시간 상태, 리소스 사용 현황 및 노드 간 관계를 직관적으로 파악할 수 있으며, 그룹화, 임계치 설정, 라벨 등의 사용자 설정을 통해 사용자가 원하는 방식으로 대시보드를 구성할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "k8s-node-map-custom.png",
+      desc: "k8s 노드맵 분기 예시"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeTimeline",
+        className: "uitext"
+      }), " 메뉴에서 시간에 따라 노드의 상태 변화를 추적할 수 있습니다. 예를 들어 특정 노드의 제거 시점 및 해당 시점의 상태를 시각적으로 파악할 수 있습니다. 이를 통해 클러스터 운영 중 발생한 이슈 분석이나 과거 상황을 확인하는 데 유용합니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "k8s-node-timeline-stage.png",
+      desc: "k8s 노드 타임라인 분기 예시"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeDiskList",
+        className: "uitext"
+      }), "을 통해 노드에 마운트된 개별 디스크의 상태를 실시간으로 모니터링할 수 있습니다. 그리고 기존 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeList",
+        className: "uitext"
+      }), " 메뉴의 비교 및 상세 정보 조회 기능이 개선되었습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeDetail",
+        className: "uitext"
+      }), " 메뉴로 이동하는 대신 선택한 노드의 구성 및 리소스, 메트릭스, 이벤트 정보를 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_nodeList",
+        className: "uitext"
+      }), " 상세 모달을 통해 확인할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "구성-요소-분석-강화",
+      children: "구성 요소 분석 강화"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL08317",
+        className: "uitext",
+        type: "container"
+      }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL08317",
+        className: "uitext",
+        type: "kube_pod"
+      }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL08317",
+        className: "uitext",
+        type: "node"
+      }), " 기능이 새롭게 제공되어, 각 구성 요소의 성능과 상태를 종합적으로 분석할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_containerMap",
+        className: "uitext"
+      }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+        children: "노드 맵"
+      }), "의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL06782",
+        className: "uitext"
+      }), " 탭에서 원하는 요약 분석 정보를 확인할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        alt: "k8s 성능 요약 분석 분기 예시",
+        src: (__webpack_require__(98546)/* ["default"] */ .A) + "",
+        width: "2532",
+        height: "1414"
+      })
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+      id: "쿠버네티스-진입부-모니터링-확장",
+      children: "쿠버네티스 진입부 모니터링 확장"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["와탭 쿠버네티스 모니터링 정보 확대의 일환으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "side_kubeServiceList",
+        className: "uitext"
+      }), " 메뉴와 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+        children: "Ingess 목록"
+      }), " 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태 및 쿠버네티스 클러스터로 들어오는 외부 트래픽의 흐름까지 확인할 수 있습니다."]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "k8s-service-list.png",
+      desc: "k8s Service 목록 분기 예시"
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+      img: "k8s-ingress-list.png",
+      desc: "k8s 인그레스 목록 분기 예시"
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+      type: "note",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_kubeApiserverDashboard",
+              className: "uitext"
+            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.whatap.io/kubernetes/kube-apiserver-dashboard",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_kubeApiserverMetricsSearch",
+              className: "uitext"
+            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.whatap.io/kubernetes/kube-apiserver-metrics-search",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_deploymentList",
+              className: "uitext"
+            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.whatap.io/kubernetes/deployment-list",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_kubernetesAgentList",
+              className: "uitext"
+            }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.whatap.io/kubernetes/agent-list",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["마스터 및 노드 에이전트 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+              children: "Helm"
+            }), " 차트 설치 방식에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "https://docs.whatap.io/kubernetes/install-master-node-agent#create-kubernetes-agent",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_nodeMap",
+              className: "uitext"
+            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../kubernetes/node-map",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_nodeTimeline",
+              className: "uitext"
+            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../kubernetes/node-timeline",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_nodeDiskList",
+              className: "uitext"
+            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../kubernetes/node-disk-list",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL08317",
+              className: "uitext",
+              type: "container"
+            }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "TTL08317",
+              className: "uitext",
+              type: "kube_pod"
+            }), " 기능에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../kubernetes/container-map-target-info#kube-resource-summary-analysis",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_kubeServiceList",
+              className: "uitext"
+            }), " 메뉴에 대한 더 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "../kubernetes/service-list",
+              children: "다음 문서"
+            }), "를 참조하세요."]
+          }), "\n"]
+        }), "\n"]
+      })]
+    })]
   });
 }
 function MDXContent(props = {}) {
