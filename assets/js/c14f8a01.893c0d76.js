@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[31229],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[25625],{
 
 /***/ 84721:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -242,6 +242,24 @@ function _createMdxContent(props) {
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "trace-mtx-mtid-chart.png",
         desc: "멀티 트랜잭션 추적"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["화면 하단의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "apply",
+            className: "uitext"
+          }), " 버튼은 다음 상황에서 비활성화됩니다."]
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "이전 검색과 동일한 필터값(MTID/CUSTID, 날짜, 선택 프로젝트)을 설정한 경우"
+            }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+              children: "필터값(MTID/CUSTID, 날짜, 선택 프로젝트)을 하나도 입력하지 않은 경우"
+            }), "\n"]
+          }), "\n"]
+        })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -576,7 +594,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 54028:
+/***/ 90964:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -598,7 +616,7 @@ const frontMatter = {
 	title: '멀티 트랜잭션 추적',
 	description: '시스템 내 또는 시스템 간에 발생하는 다양한 호출 관계를 한 눈에 파악하고 어느 부분에서 문제가 발생했는지 식별하여 개선할 수 있도록 트랜잭션과 트레이스 정보를 제공합니다.',
 	keywords: [
-		'Java',
+		'PHP',
 		'애플리케이션',
 		'멀티 트랜잭션'
 	],
@@ -606,16 +624,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/analysis-trace-mtx",
+  "id": "php/analysis-trace-mtx",
   "title": "멀티 트랜잭션 추적",
   "description": "시스템 내 또는 시스템 간에 발생하는 다양한 호출 관계를 한 눈에 파악하고 어느 부분에서 문제가 발생했는지 식별하여 개선할 수 있도록 트랜잭션과 트레이스 정보를 제공합니다.",
-  "source": "@site/docs/java/analysis-trace-mtx.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/analysis-trace-mtx",
-  "permalink": "/whatap-docs/java/analysis-trace-mtx",
+  "source": "@site/docs/php/analysis-trace-mtx.mdx",
+  "sourceDirName": "php",
+  "slug": "/php/analysis-trace-mtx",
+  "permalink": "/whatap-docs/php/analysis-trace-mtx",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/analysis-trace-mtx.mdx",
+  "editUrl": "undefined/docs/php/analysis-trace-mtx.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -623,20 +641,20 @@ const metadata = {
     "title": "멀티 트랜잭션 추적",
     "description": "시스템 내 또는 시스템 간에 발생하는 다양한 호출 관계를 한 눈에 파악하고 어느 부분에서 문제가 발생했는지 식별하여 개선할 수 있도록 트랜잭션과 트레이스 정보를 제공합니다.",
     "keywords": [
-      "Java",
+      "PHP",
       "애플리케이션",
       "멀티 트랜잭션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "phpSidebar",
   "previous": {
     "title": "히트맵",
-    "permalink": "/whatap-docs/java/analysis-hitmap"
+    "permalink": "/whatap-docs/php/analysis-hitmap"
   },
   "next": {
     "title": "트랜잭션 검색",
-    "permalink": "/whatap-docs/java/tx-profile"
+    "permalink": "/whatap-docs/php/tx-profile"
   }
 };
 const assets = {
