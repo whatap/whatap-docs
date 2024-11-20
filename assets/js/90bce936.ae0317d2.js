@@ -68,8 +68,8 @@ const metadata = {
     "permalink": "/whatap-docs/browser/metric-warning-notice"
   },
   "next": {
-    "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/browser/set-receive-event"
+    "title": "AJAX 히트맵 패턴",
+    "permalink": "/whatap-docs/browser/hitmap-notice"
   }
 };
 const assets = {

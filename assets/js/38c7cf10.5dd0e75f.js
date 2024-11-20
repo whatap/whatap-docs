@@ -72,8 +72,8 @@ const metadata = {
   },
   "sidebar": "rumsSidebar",
   "previous": {
-    "title": "이벤트 설정",
-    "permalink": "/whatap-docs/browser/warning-notice-v2"
+    "title": "AJAX 히트맵 패턴",
+    "permalink": "/whatap-docs/browser/hitmap-notice"
   },
   "next": {
     "title": "이벤트 기록",
