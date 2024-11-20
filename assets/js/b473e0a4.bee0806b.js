@@ -1931,10 +1931,7 @@ function _createMdxContent(props) {
       id: "리소스-관계",
       children: "리소스 관계"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["와탭 쿠버네티스 모니터링은 2024년 상반기 내내 지속적인 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "side_containerMap",
-        className: "uitext"
-      }), " 개선 작업을 진행하였습니다. 그 일환으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "side_containerMap",
         className: "uitext"
       }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
