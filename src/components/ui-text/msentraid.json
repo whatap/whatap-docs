@@ -9,9 +9,14 @@
     "ja": "マイ アプリ",
     "ko": "내 앱"
   },
+  "myAccount": {
+    "en": "My Account",
+    "ja": "マイ アカウント",
+    "ko": "내 계정"
+  },
   "entraAppDashboard": {
-    "en": "App dashboard",
-    "ja": "アプリダッシュボード",
+    "en": "Apps dashboard",
+    "ja": "アプリ ダッシュボード",
     "ko": "앱 대시보드"
   },
   "entraIdentity": {
