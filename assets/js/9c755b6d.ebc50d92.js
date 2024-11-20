@@ -588,19 +588,18 @@ const toc = [{
 function _createMdxContent(props) {
   const _components = {
     admonition: "admonition",
+    em: "em",
     h3: "h3",
     img: "img",
     li: "li",
     p: "p",
     section: "section",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, UI} = _components;
+  }, {Cmdname} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
-  if (!InDoc) _missingMdxReference("InDoc", true);
-  if (!UI) _missingMdxReference("UI", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
     className: "remark-sectionize-h3",
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
@@ -629,55 +628,36 @@ function _createMdxContent(props) {
       }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "instance",
         className: "uitext"
-      }), "를 선택하세요. 차트 위로 마우스를 오버하면 나타나는 툴팁을 통해서 데이터를 비교할 수 있습니다."]
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "postgresql,mysql,oracle-pro,oracle",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "db-compare-count-trend-tootip.png",
-        dsec: "Tooltip"
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "redis",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "db-compare-count-trend-tootip-redis.png",
-        dsec: "Tooltip"
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "altibase,cubrid",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-        img: "db-compare-count-trend-tootip-altibase.png",
-        dsec: "Tooltip",
-        multi: "true"
-      })
-    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
-      product: "mongodb",
-      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
-          alt: "Tooltip",
-          src: (__webpack_require__(70456)/* ["default"] */ .A) + "",
-          width: "800",
-          height: "206"
-        })
+      }), "를 선택하세요. 차트 위로 마우스를 오버하면 나타나는 툴팁을 통해서 해당 시점의 상세 데이터를 확인할 수 있습니다. 툴팁의 내용은 마우스의 위치에 따라 값이 업데이트됩니다."]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        alt: "Tooltip",
+        src: (__webpack_require__(26597)/* ["default"] */ .A) + "",
+        width: "800",
+        height: "206"
       })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["그래프 차트의 실선은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          children: ["시리즈별로 고유한 색상이 표시되어 시각적으로 쉽게 구분할 수 있습니다. 실선은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TTL06202",
             className: "uitext"
           }), "의 데이터, 점선은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TTL06203",
             className: "uitext"
-          }), "의 데이터를 표시합니다."]
+          }), "의 데이터를 의미합니다."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: ["툴팁에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
-            children: "(Comparison)"
-          }), "이 표시된 항목이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-            sid: "TTL06203",
-            className: "uitext"
-          }), "의 데이터입니다."]
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "Compare Time"
+            })
+          }), "은 현재 마우스 포인터가 위치한 데이터의 시간 값을 표시합니다."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "선택한 데이터 시점의 지푯값을 표시하며, 시리즈별로 구분하여 제공합니다. 각 시리즈는 데이터 포인트의 지표 이름, 날짜, 그리고 값을 포함합니다."
         }), "\n"]
       }), "\n"]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
@@ -2388,13 +2368,13 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 70456:
+/***/ 26597:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/db-compare-count-trend-tootip-mongodb-0664c0f039e4c63cc05d7390bd912db7.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/db-compare-count-trend-tootip-270f3f3a0a12c7b6a03fbb1b8e09c5b2.png");
 
 /***/ }),
 
