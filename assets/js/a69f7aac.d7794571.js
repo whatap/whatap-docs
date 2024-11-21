@@ -79,7 +79,7 @@ const toc = [{
   "level": 3
 }, {
   "value": "통계 기준 선택하기",
-  "id": "통계-기준-선택하기",
+  "id": "statcriteria",
   "level": 3
 }, {
   "value": "조회 결과 다운로드하기",
@@ -248,7 +248,10 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TTL08276",
             className: "uitext"
-          }), "에 대한 자세한 내용은 다음 문서를 참조하세요."]
+          }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "##statcriteria",
+            children: "다음 문서"
+          }), "를 참조하세요."]
         })
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
@@ -309,7 +312,7 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
-        id: "통계-기준-선택하기",
+        id: "statcriteria",
         children: "통계 기준 선택하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
