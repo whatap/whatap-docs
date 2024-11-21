@@ -61665,15 +61665,10 @@
     "ja": "サーバーリスト",
     "ko": "서버 목록"
   },
-  "side_serverInventory_new": {
+  "side_serverInventory": {
     "en": "Server Inventory",
     "ja": "サーバー インベントリ",
     "ko": "서버 인벤토리"
-  },
-  "side_serverInventory": {
-    "en": "Server Inventory",
-    "ja": "サーバー情報",
-    "ko": "서버 구성 정보"
   },
   "side_serverInventoryGuide": {
     "en": "Server Inventory Agent Guide",
