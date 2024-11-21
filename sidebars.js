@@ -6207,7 +6207,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'browser/pageload-stat'
+            'browser/pageload-stat',
+            'browser/ipload-stat'
           ]
         },
         {

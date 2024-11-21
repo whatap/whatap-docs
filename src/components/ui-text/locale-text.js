@@ -61,6 +61,8 @@ const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, rep
             } else if (replace == "horizontal" || replace == "vertical") {
                 let oType = whatapLocale[`${replace}`][`${currentLocale}`];
                 oText = whatapLocale[sid][`${currentLocale}`].replace('{mode}', oType)
+            } else if (replace === "ms") {
+                oText = whatapLocale[sid][`${currentLocale}`].replace('{unit}', replace)
             } else {
                 oText = whatapLocale[sid][`${currentLocale}`].replace(replace, '').trim();
             }

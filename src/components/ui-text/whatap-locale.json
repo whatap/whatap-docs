@@ -59857,16 +59857,16 @@
     "service_id": "TTL08672"
   },
   "TTL08673": {
-    "en": "Top 10 IP Load Times",
-    "ja": "IPロード時間のTop10",
-    "ko": "IP 로드 시간 Top10",
+    "en": "IP Load Times",
+    "ja": "IPロード時間",
+    "ko": "IP 로드 시간",
     "zh": "Top 10 IP Load Times",
     "service_id": "TTL08673"
   },
   "TTL08674": {
-    "en": "Top 10 IP Load Count",
-    "ja": "IPロード数のTop10",
-    "ko": "IP 로드 수 Top10",
+    "en": "IP Load Count",
+    "ja": "IPロード数",
+    "ko": "IP 로드 수",
     "zh": "Top 10 IP Load Count",
     "service_id": "TTL08674"
   },
