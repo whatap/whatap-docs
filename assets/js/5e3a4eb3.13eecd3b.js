@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[92196],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61489],{
 
 /***/ 72140:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -249,7 +249,7 @@ function _createMdxContent(props) {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "maximum_csv_lines",
             className: "uitext"
-          }), " 옵셔에 원하는 값을 입력하세요."]
+          }), " 옵션에 원하는 값을 입력하세요."]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -3412,7 +3412,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 55314:
+/***/ 90505:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -3453,7 +3453,7 @@ const frontMatter = {
 	description: '애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.',
 	keywords: [
 		'애플리케이션',
-		'Node.js',
+		'Go',
 		'분석',
 		'히트맵',
 		'트랜잭션'
@@ -3462,16 +3462,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "nodejs/trs-profile",
+  "id": "golang/trs-profile",
   "title": "트랜잭션 트레이싱",
   "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
-  "source": "@site/docs/nodejs/trs-profile.mdx",
-  "sourceDirName": "nodejs",
-  "slug": "/nodejs/trs-profile",
-  "permalink": "/whatap-docs/nodejs/trs-profile",
+  "source": "@site/docs/golang/trs-profile.mdx",
+  "sourceDirName": "golang",
+  "slug": "/golang/trs-profile",
+  "permalink": "/whatap-docs/golang/trs-profile",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/nodejs/trs-profile.mdx",
+  "editUrl": "undefined/docs/golang/trs-profile.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -3480,21 +3480,21 @@ const metadata = {
     "description": "애플리케이션에서 세부적인 트랜잭션 프로파일링을 구성하는 방법을 안내합니다. 트랜잭션 프로파일링을 통해 사용자는 애플리케이션 내부의 각각의 트랜잭션에 대한 성능 데이터를 수집하고 분석할 수 있으며, 이를 통해 애플리케이션의 성능을 개선하는 데 도움을 받을 수 있습니다.",
     "keywords": [
       "애플리케이션",
-      "Node.js",
+      "Go",
       "분석",
       "히트맵",
       "트랜잭션"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "nodejsSidebar",
+  "sidebar": "goSidebar",
   "previous": {
     "title": "트랜잭션 분석하기",
-    "permalink": "/whatap-docs/nodejs/trs-view"
+    "permalink": "/whatap-docs/golang/trs-view"
   },
   "next": {
     "title": "멀티 트랜잭션",
-    "permalink": "/whatap-docs/nodejs/trs-multi-trace"
+    "permalink": "/whatap-docs/golang/trs-multi-trace"
   }
 };
 const assets = {
