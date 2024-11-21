@@ -1,92 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[96247],{
-
-/***/ 53236:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_common_alert_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32907);
-
-
-const frontMatter = {
-	id: 'common-alert',
-	title: '시스템 이벤트 안내',
-	description: '와탭 모니터링에서는 플랫폼 전반에서 자동으로 탐지 및 생성되는 공용 이벤트에 대해 안내합니다.',
-	keywords: [
-		'와탭',
-		'경고 알림',
-		'시스템 이벤트'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "aws-log/common-alert",
-  "title": "시스템 이벤트 안내",
-  "description": "와탭 모니터링에서는 플랫폼 전반에서 자동으로 탐지 및 생성되는 공용 이벤트에 대해 안내합니다.",
-  "source": "@site/docs/aws-log/common-alert.mdx",
-  "sourceDirName": "aws-log",
-  "slug": "/aws-log/common-alert",
-  "permalink": "/whatap-docs/aws-log/common-alert",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/aws-log/common-alert.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "common-alert",
-    "title": "시스템 이벤트 안내",
-    "description": "와탭 모니터링에서는 플랫폼 전반에서 자동으로 탐지 및 생성되는 공용 이벤트에 대해 안내합니다.",
-    "keywords": [
-      "와탭",
-      "경고 알림",
-      "시스템 이벤트"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "awslogSidebar",
-  "previous": {
-    "title": "실시간 알림",
-    "permalink": "/whatap-docs/aws-log/real-time-notification"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_common_alert_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_common_alert_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[53713],{
 
 /***/ 32907:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -147,10 +60,11 @@ function _createMdxContent(props) {
         id: "event_blocked_by_system",
         children: "EVENT_BLOCKED_BY_SYSTEM"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "프로젝트 내에 짧은 시간 내에 과도한 이벤트가 탐지되면 시스템에 의해 이벤트를 차단하고 다음과 같은 메시지를 사용자에게 전달합니다. 시스템에 의해 이벤트가 차단되었다면 이벤트 설정을 점검하세요."
+        children: "프로젝트에서 짧은 시간에 과도한 이벤트가 발생하면, 와탭 시스템이 이를 탐지하여 이벤트를 차단하고 다음 메시지를 사용자에게 전달합니다. 이벤트가 차단되었다면 사용자의 이벤트 설정을 점검하세요."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "common-alert-event-blocked-by-system.png",
-        desc: "EVENT_BLOCKED_BY_SYSTEM"
+        desc: "EVENT_BLOCKED_BY_SYSTEM",
+        className: "width-600"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -161,18 +75,30 @@ function _createMdxContent(props) {
         children: "이벤트를 차단하는 기준은 다음과 같습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "한 개의 에이전트에서 1분 내에 10개의 이벤트가 발생하면 해당 에이전트에서 발생하는 이벤트를 차단합니다."
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["한 개의 에이전트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "1분"
+            }), " 내에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "10개"
+            }), "의 이벤트가 발생하면 해당 에이전트에서 발생하는 이벤트를 차단합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "1"
-            }), "의 경우에 의해 이벤트가 차단된 에이전트가 3개 이상이 되는 경우 프로젝트 전체에서 발생하는 이벤트를 차단합니다."]
+            }), "의 경우에 의해 이벤트가 차단된 에이전트가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "1분"
+            }), " 내에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "3개"
+            }), " 이상이 되는 경우 프로젝트 전체에서 발생하는 이벤트를 차단합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "한 개의 프로젝트에서 1분 내에 100개의 이벤트가 발생하면 프로젝트 전체에서 발생하는 이벤트를 차단합니다."
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["한 개의 프로젝트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "1분"
+            }), " 내에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "100개"
+            }), "의 이벤트가 발생하면 프로젝트 전체에서 발생하는 이벤트를 차단합니다."]
           }), "\n"]
         }), "\n"]
       })]
@@ -362,6 +288,97 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 7640:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_common_alert_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32907);
+
+
+const frontMatter = {
+	id: 'common-alert',
+	title: '시스템 이벤트 안내',
+	description: '와탭 모니터링에서는 플랫폼 전반에서 자동으로 탐지 및 생성되는 공용 이벤트에 대해 안내합니다.',
+	keywords: [
+		'와탭',
+		'경고 알림',
+		'시스템 이벤트'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "oracle-cloud/common-alert",
+  "title": "시스템 이벤트 안내",
+  "description": "와탭 모니터링에서는 플랫폼 전반에서 자동으로 탐지 및 생성되는 공용 이벤트에 대해 안내합니다.",
+  "source": "@site/docs/oracle-cloud/common-alert.mdx",
+  "sourceDirName": "oracle-cloud",
+  "slug": "/oracle-cloud/common-alert",
+  "permalink": "/whatap-docs/oracle-cloud/common-alert",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/oracle-cloud/common-alert.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "common-alert",
+    "title": "시스템 이벤트 안내",
+    "description": "와탭 모니터링에서는 플랫폼 전반에서 자동으로 탐지 및 생성되는 공용 이벤트에 대해 안내합니다.",
+    "keywords": [
+      "와탭",
+      "경고 알림",
+      "시스템 이벤트"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "oracleSidebar",
+  "previous": {
+    "title": "실시간 알림",
+    "permalink": "/whatap-docs/oracle-cloud/real-time-notification"
+  },
+  "next": {
+    "title": "실험실",
+    "permalink": "/whatap-docs/oracle-cloud/labs"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_common_alert_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_common_alert_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

@@ -60,10 +60,11 @@ function _createMdxContent(props) {
         id: "event_blocked_by_system",
         children: "EVENT_BLOCKED_BY_SYSTEM"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "프로젝트 내에 짧은 시간 내에 과도한 이벤트가 탐지되면 시스템에 의해 이벤트를 차단하고 다음과 같은 메시지를 사용자에게 전달합니다. 시스템에 의해 이벤트가 차단되었다면 이벤트 설정을 점검하세요."
+        children: "프로젝트에서 짧은 시간에 과도한 이벤트가 발생하면, 와탭 시스템이 이를 탐지하여 이벤트를 차단하고 다음 메시지를 사용자에게 전달합니다. 이벤트가 차단되었다면 사용자의 이벤트 설정을 점검하세요."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "common-alert-event-blocked-by-system.png",
-        desc: "EVENT_BLOCKED_BY_SYSTEM"
+        desc: "EVENT_BLOCKED_BY_SYSTEM",
+        className: "width-600"
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -74,18 +75,30 @@ function _createMdxContent(props) {
         children: "이벤트를 차단하는 기준은 다음과 같습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "한 개의 에이전트에서 1분 내에 10개의 이벤트가 발생하면 해당 에이전트에서 발생하는 이벤트를 차단합니다."
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["한 개의 에이전트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "1분"
+            }), " 내에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "10개"
+            }), "의 이벤트가 발생하면 해당 에이전트에서 발생하는 이벤트를 차단합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "1"
-            }), "의 경우에 의해 이벤트가 차단된 에이전트가 3개 이상이 되는 경우 프로젝트 전체에서 발생하는 이벤트를 차단합니다."]
+            }), "의 경우에 의해 이벤트가 차단된 에이전트가 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "1분"
+            }), " 내에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "3개"
+            }), " 이상이 되는 경우 프로젝트 전체에서 발생하는 이벤트를 차단합니다."]
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "한 개의 프로젝트에서 1분 내에 100개의 이벤트가 발생하면 프로젝트 전체에서 발생하는 이벤트를 차단합니다."
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["한 개의 프로젝트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "1분"
+            }), " 내에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "100개"
+            }), "의 이벤트가 발생하면 프로젝트 전체에서 발생하는 이벤트를 차단합니다."]
           }), "\n"]
         }), "\n"]
       })]
