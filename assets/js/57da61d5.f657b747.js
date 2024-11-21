@@ -226,7 +226,7 @@ function _createMdxContent(props) {
                   href: "https://content.whatap.io/24/11/01/003308whatap-apm-php-monitoring.pdf",
                   children: "PHP"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                  href: "https://content.whatap.io/24/11/01/003307whatap-apm-nodejs-monitoring.pdf",
+                  href: "https://content.whatap.io/24/11/21/084115whatap-apm-nodejs-monitoring.pdf",
                   children: "Node.js"
                 }), " | ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "https://content.whatap.io/24/11/01/003308whatap-apm-python-monitoring.pdf",
