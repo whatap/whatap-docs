@@ -14,13 +14,15 @@ keywords:
 
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
+<div className="metricslist">
+
 <AgentStatus />
 
 ## db_mssql_counter {#db_mssql_counter}
 
 ### Tags {#db_mssql_counter-tags}
 
-次は`db_mysql_counter`カテゴリに収集されるタグ値の案内です。
+次は`db_mysql_counter`カテゴリに収集されるタグに対する案内です。
 
 | タグ名         | 説明                  | 備考    |
 | ----------- | ------------------- | ----- |
@@ -33,14 +35,14 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 ### Field {#db_mssql_counter-filed}
 
-次は`db_mysql_counter`カテゴリに収集されるフィールド値の案内です。
+次は`db_mysql_counter`カテゴリに収集されるフィールドに対する案内です。
 
 | Metrics                                           | Description                                         |
 | ------------------------------------------------- | --------------------------------------------------- |
 | `active_sessions`                                 | 現在、活性化されているセッションの数です。                               |
 | `connect_error`                                   | 接続エラーの回数です。                                         |
 | `cpu`                                             | SQL Serverインスタンスが使用するCPUの合計比率です。                    |
-| `cpu_cores`                                       | 使用可能なCPUコアの数です。                                     |
+| `cpu_cores`                                       | 使用可能なCPUのコア数です。                                     |
 | `fatal_count`                                     | 致命的なエラーの発生回数です。                                     |
 | `lock_wait_sessions`                              | ロック待機により遅延したセッションの数です。                              |
 | `long_running_sessions`                           | 長時間実行中のセッションの数です。                                   |
@@ -135,3 +137,5 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | `WRITELOG(time)`                                  | ログの書き込み作業にかかった合計時間です。                               |
 | `XE_BUFFERMGR_ALLPROCESSED_EVENT(count)`          | すべてのイベントが処理された追跡バッファマ管理者のイベント数です。                   |
 | `XE_BUFFERMGR_ALLPROCESSED_EVENT(time)`           | すべてのイベントが処理された追跡バッファ管理者のイベントの処理時間です。                |
+
+</div>

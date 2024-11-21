@@ -20,18 +20,18 @@ import Metricsindex from "../common-items/_metrics-index.mdx";
 
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
+<div className="metricslist">
+
 <AgentStatus />
 
 ## server_base
-
-----
 
 サーバーリソースメトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags {#server_base-tags}
+### Tags {#server_base-tags}
 
 | タグ名       | 説明                   | 備考 |
 | --------- | -------------------- | -- |
@@ -41,7 +41,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | okindName | サーバー種類名              | -  |
 | os        | OSタイプ linuxまたはwindow | -  |
 
-#### Fields {#server_base-fields}
+### Fields {#server_base-fields}
 
 | フィールド名               | 単位    | 説明                       | 備考     |
 | -------------------- | ----- | ------------------------ | ------ |
@@ -87,14 +87,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 ## server_cpu_core
 
-----
-
 サーバーCPUコア別メトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：-
 
-#### Tags {#server_cpu_core-tags}
+### Tags {#server_cpu_core-tags}
 
 | タグ名   | 説明                   | 備考 |
 | ----- | -------------------- | -- |
@@ -103,7 +101,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname | サーバー名                | -  |
 | os    | OSタイプ linuxまたはwindow | -  |
 
-#### Fields {#server_cpu_core-fields}
+### Fields {#server_cpu_core-fields}
 
 | フィールド名               | 単位    | 説明                   | 備考     |
 | -------------------- | ----- | -------------------- | ------ |
@@ -122,14 +120,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 ## server_disk
 
-----
-
 各サーバーにマウントされたファイルシステム別メトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags {#server_disk-tags}
+### Tags {#server_disk-tags}
 
 | タグ名            | 説明                   | 備考 |
 | -------------- | -------------------- | -- |
@@ -141,7 +137,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname          | サーバー名                | -  |
 | os             | OSタイプ linuxまたはwindow | -  |
 
-#### Fields {#server_disk-fields}
+### Fields {#server_disk-fields}
 
 | フィールド名           | 単位    | 説明                                     | 備考    |
 | ---------------- | ----- | -------------------------------------- | ----- |
@@ -165,14 +161,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 ## server_network
 
-----
-
 各サーバーのネットワークインターフェースのメトリクスです。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags {#server_network-tags}
+### Tags {#server_network-tags}
 
 | タグ名      | 説明                   | 備考 |
 | -------- | -------------------- | -- |
@@ -183,7 +177,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname    | サーバー名                | -  |
 | os       | OSタイプ linuxまたはwindow | -  |
 
-#### Fields {#server_network-fields}
+### Fields {#server_network-fields}
 
 | フィールド名         | 単位  | 説明            | 備考 |
 | -------------- | --- | ------------- | -- |
@@ -202,14 +196,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 ## server_netstat
 
-----
-
 各サーバーごとのネットワークプロトコルの統計情報です。
 
 - 収集間隔：5秒
 - 統計データ：5分、1時間
 
-#### Tags {#server_netstat-tags}
+### Tags {#server_netstat-tags}
 
 | タグ名                         | 説明                   | 備考 |
 | --------------------------- | -------------------- | -- |
@@ -228,7 +220,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | whatap_product              | WhaTap製品タイプ          | -  |
 | whatap_version              | WhaTapエージェントバージョン    | -  |
 
-#### Fields {#server_netstat-fields}
+### Fields {#server_netstat-fields}
 
 | フィールド名                 | 単位 | 説明                     | 備考 |
 | ---------------------- | -- | ---------------------- | -- |
@@ -247,14 +239,12 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 ## server_process
 
-----
-
 サーバープロセス情報です。
 
 - 収集間隔：20秒
 - 統計データ ：5分
 
-#### Tags {#server_process-tags}
+### Tags {#server_process-tags}
 
 | タグ名   | 説明                  | 備考 |
 | ----- | ------------------- | -- |
@@ -266,7 +256,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname | サーバー名               | -  |
 | ユーザー  | プロセスを実行したLinuxユーザー名 | -  |
 
-#### Fields {#server_process-fields}
+### Fields {#server_process-fields}
 
 | フィールド名              | 単位    | 説明                     | 備考 |
 | ------------------- | ----- | ---------------------- | -- |
@@ -288,6 +278,8 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | wiopsAccmulated     | 整数    | WhaTap専用               | 共通 |
 | rss                 | バイト   | メモリRSSサイズ              | 共通 |
 | rssAccmulated       | バイト   | WhaTap専用               | 共通 |
+
+</div>
 
 ## 参考資料
 

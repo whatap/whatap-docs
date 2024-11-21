@@ -14,6 +14,162 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.10.0.a4
+
+2024年10月22日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />メニューでイベント処理履歴の機能を追加、これに伴うUIを変更
+
+  :::note
+
+  **Server**商品の機能をすべての商品に拡大・適用します。
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code className="newfunc">New</code>メニューの<Cmdname sid="metrics" className="uitext" />タブでイベント追加と修正、イベントリストに新しいUIを適用
+
+- <Status priority='0'>Fixed</Status>商品紹介画面で<Cmdname sid="BTN06900" className="uitext" />ボタンをクリックすると、断続的に選択した組織が解除される問題を修正
+
+---
+
+### `Application`
+
+#### Java
+
+- <Status priority='1'>Feature</Status> **MySQL**、**PostgreSQL**プロジェクトとリアルタイムおよび過去のトランザクションの連携・分析機能を追加
+
+---
+
+### `Server`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで**Solaris**オペレーティングシステム環境のインストールガイドを変更
+
+  - **Solaris**バージョン別のダウンロードリンクを提供
+
+  - *install.sh*スクリプトファイルを使用したインストール方式に変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでHP-UX環境におけるエージェント更新段階のスクリプトの誤字を修正
+
+- <Status priority='0'>Fixed</Status>言語設定が日本語の場合、<Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューでフィルター入力欄の案内文が切り捨てられて表示される問題を修正
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>New</Status> Ingressリソースに関するメタデータと関連情報をモニタリングできる<Cmdname sid="side_ingressList" className="uitext" />メニューを追加
+
+  :::note
+
+  <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_ingressList" className="uitext" />経路で確認できます。
+
+  :::
+
+- <Status priority='1'>Feature</Status>次のメニューパスにプロセス情報を追加
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />
+
+  - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" /> &gt; ![詳細表示アイコン](/img/ico-detail-view.svg) <Cmdname sid="BTN06342" className="uitext" />
+
+  :::note
+
+  この機能はクラスタープロジェクトにのみ適用され、[クバネティスエージェント1.7.12バージョン](../k8s/k8s-1_7_12) 以降から対応します。
+
+  :::
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />メニューに新規カラムを追加
+
+  - <Cmdname sid="TTL06705" className="uitext" />: AllocatablePods, DiskPressure, MemoryPressure, PIDPressure, Unschedulable, HasKubelet
+
+  - <Cmdname sid="cpu" className="uitext" />: AllocatableCpu
+
+  - <Cmdname sid="memory" className="uitext" />: AllocatableMemory
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_kubeServiceList" className="uitext" />メニューを<Cmdname sid="side_cluster" className="uitext" />メニュー下位に位置を変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />メニューで<UI>Deployment</UI>カラムを介して<Cmdname sid="side_deploymentList" className="uitext" />メニューに移動すると、選択したDeployment詳細情報がデフォルトで開くように修正
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />メニューで比較する機能のUIを変更
+
+  ![Changed](/img/release/release-changed-container.png)
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの要約を見る時、<Cmdname sid="trace" className="uitext" />タブとチャートで発生するメモリリーク(Leak) 問題を修正
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='1'>New</Status>クラウドデータベースサーバーのリソース状況を収集し、モニタリングできる <Cmdname sid="side_dbCloudSetting" className="uitext" />メニューを追加
+
+  :::note
+
+  - 対応するクラウドサービスおよび商品は以下の通りです。
+
+    - **Azure Monitor**: **PostgreSQL**, **MySQL**
+
+    - **AWS CloudWatch**: **PostgreSQL**, **Oracle**, **Oracle Pro**, **MySQL**
+
+  - <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" />経路で確認できます。
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="TTL07046" className="uitext" />ボタンの位置を<Cmdname sid="session_detail" className="uitext" />ウィンドウから<Cmdname sid="active_sessions" className="uitext" />テーブルに変更
+
+  :::note
+
+  この変更事項は**MySQL**<code className="my">V2</code>、**PostgreSQL**<code className="my">V2</code>、**Oracle** <code className="my">V2</code>、**Oracle Pro**商品に該当します。
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューで時間選択者の時間を変更すると、テーブルデータも一緒に変更するように修正
+
+- <Status priority='1'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューでリアルタイム照会を中止して過去の時間を照会すると、<UI>SQL Elapse Map</UI>ウィジェットのグラフが表示されない問題を修正
+
+- <Status priority='1'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューで<Cmdname sid="multi_view" className="uitext" />ボタンでクリックして<Cmdname sid="side_multiInstance" className="uitext" />メニューに移動すると、選択したインスタンスが適用されない問題を修正
+
+- <Status priority='0'>Fixed</Status>エージェントをインストールしていないプロジェクトに入ると、組織情報が解除される問題を修正
+
+#### MySQL <code className="my">V2</code>, PostgreSQL <code className="my">V2</code>
+
+<Status priority='1'>New</Status>**Application**プロジェクトとリアルタイムセッションの連携・分析機能を追加
+
+#### MySQL、PostgreSQL
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでRDSオプション設定を<Cmdname sid="side_dbCloudSetting" className="uitext" />メニューリンクに変更
+
+#### Oracle Pro
+
+<Status priority='0'>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで<UI>Oracleアカウント以外の場所でインストールする場合、</UI>ボタンのスタイルを修正
+
+#### Altibase
+
+<Status priority='1'>Deprecated</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでRDSオプション設定の内容を削除
+
+---
+
+### `Browser`
+
+<Status priority='1'>New</Status>ペイジのURLパス別のロード性能情報に関する統計を提供する<Cmdname sid="TTL08376" className="uitext" />メニューを追加
+
+:::note
+
+この機能は、<Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="TTL08376" className="uitext" />メニューで確認できます。 詳しい内容は、[次の文書](../../browser/pageload-stat)を参照してください。
+
+:::
+
+---
+
+### `Log`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />でシミュレーションとパフォーマンスを測定した結果、成功した時にパーサーパターンを適用できるように動線を変更
+
+</div>
+
 ## Preview 2.10.0.a3
 
 2024年10月11日
@@ -204,7 +360,7 @@ toc_max_heading_level: 2
 
 ### `URL`
 
-<Status priority='1'>Feature</Status> <UI>URL追加</UI>の画面で<UI>確認地域</UI>別IP案内を追加
+<Status priority='1'>Feature</Status> <Cmdname sid="add_url" className="uitext" />画面で<Cmdname sid="check_location" className="uitext" />セクションにIP案内を追加
 
 </div>
 

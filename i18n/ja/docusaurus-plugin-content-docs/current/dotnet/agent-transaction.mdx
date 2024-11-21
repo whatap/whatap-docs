@@ -39,7 +39,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
   オプション値を`true`に設定すると、トランザクションのURLの前にアプリケーションのフルネームを表示します。
 
-- **trace_db_command_methods** <span class='type'>String</span>
+- **trace_db_command_methods** <span class='type'>String</span> <Status priority='1'>Deprecated</Status>
 
   `System.Data.Common.DbCommand`クラスでモニタリングするメソッド名を入力します。2 つ以上の値を設定するには、コンマ(,)を区切り文字として利用します。すべてのメソッドをモニタリングするには、以下のように適用します。
 
@@ -51,7 +51,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
   既定値`false`
 
-  オプション値を`true`に設定すると、トランザクションの外部から発生するSQL、HTTPの呼び出しをトランザクションとして扱い、ヒートマップに表示します。
+  オプション値を`true`に設定すると、トランザクションの外部から発生するSQL、HTTPの呼び出しをトランザクションとして扱い、ヒットマップに表示します。
 
 - **expand_transaction_basetime** <span class='type'>Int</span>
 
@@ -183,7 +183,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 - **trace_ignore_url_prefix** <span class='type'>String</span>
 
-  トランザクションの収集から除外するURLのプレフィクス(prefix)を設定します。設定したプレフィクスと一致するURLは、トランザクションの性能を収集しません。複数の値を設定するには、コンマ(,)で区分してください。
+  トランザクションの収集から除外するURLのプレフィクス(prefix)を設定します。設定したプレフィクスと一致するURLは、トランザクションの性能を収集しません。複数の値を設定するには、コンマ(,)で区切りします。
 
   :::note
 
@@ -193,7 +193,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
 - **trace_ignore_url_suffix** <span class='type'>String</span>
 
-  トランザクションの収集から除外するURLのサフィックス(suffix)を設定します。設定したサフィックスと一致するURLは、トランザクションの性能を収集しません。複数の値を設定するには、コンマ(,)で区分してください。
+  トランザクションの収集から除外するURLのサフィックスを設定します。設定したサフィックスと一致するURLは、トランザクションの性能を収集しません。複数の値を設定するには、コンマ(,)で区切りします。
 
   :::note
 

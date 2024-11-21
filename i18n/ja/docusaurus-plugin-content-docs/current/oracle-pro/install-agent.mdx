@@ -82,9 +82,13 @@ import Accesskey from "../getting-started/_accesskey-v2.mdx";
 
 - Oracleこの生成した共有メモリ(shared memory)の読み込み権限(`read`)が必要です。
 
-- `ipcs -m`コマンドを実行した結果で`perms`値が600であれば、Oracleアカウントのみインストールできます。
+- `ipcs -m`コマンドを実行した結果で`perms`値が**640**の場合、同じグループに属する別のアカウントでエージェントをインストールできます。
 
-- `ipcs -m`コマンドを実行した結果で`perms`値が640であれば、同じグループに属する別のアカウントもインストールできます。
+- `ipcs -m`コマンドを実行した結果で`perms`値が**600**でありながら、**Oracle 12c R2**以降であれば、次のようにパラメータを設定し、perms値を**640**に変更できます。 変更事項を適用するには、DBを再起動する必要があります。
+
+  ```sql
+  alter system set allow_group_access_to_sga=true scope=spfile;
+  ```
 
 :::
 

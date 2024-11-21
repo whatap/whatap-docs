@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server-solaris/server-solaris-1_3_4",
+    "ver": "v1.3.4",
+    "date": "2024-09-19",
+    "Lists": [
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the feature to collect server configuration data.</p>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved to fix the OID value after initial startup of the agent.</p>"
+      },
+      {
+        "ver": "v1.3.4",
+        "hash": "v134",
+        "product": "Server Solaris Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the agent stops when collecting process data in the Oracle Enterprise Edition running environment.</p>"
+      }
+    ]
+  }
+]

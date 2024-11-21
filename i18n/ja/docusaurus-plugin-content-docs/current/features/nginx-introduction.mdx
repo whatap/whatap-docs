@@ -10,6 +10,7 @@ keywords:
 ---
 
 import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import HttpStatus from "../common-items/_import_feature-http-status.mdx";
 import TR from '@site/src/components/TR';
 
 :::note
@@ -28,7 +29,7 @@ WhaTapは、新しい**フィーチャープロジェクト**方式で***NGINX**
 
 - **ダッシュボード**: ダッシュボードを通じて、必要なメトリクスを効率的に照会して分析できます。
 
-WhaTap***NGINX***モニタリングを通じてNGINXサーバーの安定的な運営を管理してみてください。
+WhaTap***NGINX***モニタリングを通じてNGINXサーバーを安定的に運営し、管理してみてください。
 
 ## インストール
 
@@ -77,15 +78,7 @@ WhaTapが提供する***NGINXダッシュボード***は、ウェブサーバー
   <details>
   <summary>ダッシュボードのメトリクス案内</summary>
 
-  - ***Response2XX***: 正常に処理されたリクエストを意味します。 サーバーが正常に処理したリクエストの数をリアルタイムで表示します。
-
-  - ***Response3XX***: リダイレクトされたリクエストを追跡します。 
-
-  - ***Response4XX***: 間違ったリクエストなどのクライアントエラーに対する応答を表示します。
-
-  - ***Response5XX***: サーバー エラーの応答状態を追跡します。 
-
-  - ***Response503***: サービス不可エラー状態を追跡します。
+  <HttpStatus />
 
   </details>
 

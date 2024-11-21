@@ -2,6 +2,7 @@ import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import whatapLocale from './whatap-locale.json';
 import whatapReport from './whatap-report.json';
+import entraLocale from './msentraid.json';
 
 function isSplittableArray(input, delimiter = ',') {
     // Check if input is a string
@@ -16,11 +17,16 @@ function isSplittableArray(input, delimiter = ',') {
     return splitArray.length > 1;
 }
 
-const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, report}) => {
+const ReplacementLocaleText = ({sid, className, anchor, replace, type, days, report, entra}) => {
     const { i18n: {currentLocale} } = useDocusaurusContext();
     
     if (report) {
         let oText = whatapReport[sid][`${currentLocale}`];
+        return (
+            <span class={className} id={anchor}>{oText}</span>
+        );
+    } else if (entra) {
+        let oText = entraLocale[sid][`${currentLocale}`];
         return (
             <span class={className} id={anchor}>{oText}</span>
         );

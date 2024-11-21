@@ -72,7 +72,24 @@ After creating a **Feature Project** (<code class='Features'>Features</code>), t
 
    </InDoc>
 
-<Xclude pages="nginx-introduction">
+   <InDoc pages="apache-introduction">
+
+   Execute the following command to automatically have the system detect the user environment and generate an installation script for the server with APACHE installed.
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/apache/install_apache_monitoring.sh -o install_apache_monitoring.sh
+   ```
+
+   Execute the following command to install the Apache agent.
+
+   ```bash
+   chmod +x install_apache_monitoring.sh
+   sudo ./install_apache_monitoring.sh "x42uu23t8kl3a-z1e71pb8vhbpir-z62lcfeuerbcp2" "15.165.146.117"
+   ```
+
+   </InDoc>
+
+<Xclude pages="nginx-introduction,apache-introduction">
 
 3. After configuring and restarting the agent, **start** **monitoring**.  
 

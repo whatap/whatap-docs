@@ -82,9 +82,13 @@ The agent is recommended to be installed with an Oracle account and the Oracle c
 
 - You need the role (`read`) to read the shared memory created by Oracle.
 
-- If the `perms` value is 600 in the result of executing the `ipcs -m` command, installation is possible only with the Oracle account.
+- If the `perms` value is **640** in the output of the `ipcs -m` command, the agent can be installed by another account in the same group.
 
-- If the `perms` value is 640 in the result of executing the `ipcs -m` command, other accounts belonging to the same group can also perform installation.
+- If the `perms` value is ** 600 ** and ** in the result of the `ipcs -m` command for **Oracle 12c r2** or later, you can set the parameter to change the perms value to ** 640 \*\* as follows. To apply the changes, restart the DB.
+
+  ```sql
+  alter system set allow_group_access_to_sga=true scope=spfile;
+  ```
 
 :::
 

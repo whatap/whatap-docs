@@ -4,6 +4,8 @@
 
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
+<div className="metricslist">
+
 <AgentStatus />
 
 <InDoc product="oracle,oracle-v1">
@@ -57,7 +59,7 @@ Oracleデータベースの全般的な性能メトリクスを収集し、シ�
 | Metrics                                                      | Description                                                                          | Category       |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------ | -------------- |
 | `cpu_used_by_this_session`                                   | ユーザー呼び出しが開始された時点から終了するまでのセッションで使用したCPU時間(10ミリ秒単位)となります。                              | Performance    |
-| `db_time`                                                    | データベース内のユーザーレベルの呼び出しを実行するために必要な経過時間(microseconds)となります。                              | Performance    |
+| `db_time`                                                    | データベースでユーザーレベルの呼び出しを実行する際にかかった時間(microseconds)です。                                    | Performance    |
 | `active_sessions`                                            | 現在、活性化されたセッションの数です。                                                                  | Connection     |
 | `connect_error`                                              | 接続エラーの数です。                                                                           | Connection     |
 | `consistent_gets`                                            | 一貫したデータブロックの読み取り作業の回数です。                                                             | I/O            |
@@ -66,9 +68,9 @@ Oracleデータベースの全般的な性能メトリクスを収集し、シ�
 | `data_blocks_consistent_reads_-_undo_records_applied`        | 一貫したデータブロックの読み取りに適用されたUndoレコードの数です。                                                  | I/O            |
 | `db_block_changes`                                           | SGAのブロックで変更されたブロックの数です。                                                              | I/O            |
 | `db_block_gets`                                              | SGAのブロックでの直接読み取り作業の回数です。                                                             | I/O            |
-| `db_file_scattered_read_time_waited`                         | スキャッタード読み取りイベントを待機した時間です。                                                            | I/O            |
-| `db_file_scattered_read_total_timeouts`                      | スキャッタード読み取りイベントで発生したタイムアウト回数です。                                                      | I/O            |
-| `db_file_scattered_read_total_waits`                         | スキャッタード読み込みイベントで発生した待機回数の合計です。                                                       | I/O            |
+| `db_file_scattered_read_time_waited`                         | Scattered読み取りイベントを待機した時間です。                                                          | I/O            |
+| `db_file_scattered_read_total_timeouts`                      | Scattered読み取りイベントで発生したタイムアウト回数です。                                                    | I/O            |
+| `db_file_scattered_read_total_waits`                         | Scattered読み取りイベントで発生した待機回数の合計です。                                                     | I/O            |
 | `db_file_sequential_read_time_waited`                        | シーケンシャル読み取りイベントで待機した時間です。                                                            | I/O            |
 | `db_file_sequential_read_total_timeouts`                     | シーケンシャル読み取りイベントで発生したタイムアウト回数です。                                                      | I/O            |
 | `db_file_sequential_read_total_waits`                        | シーケンシャルの読み取りイベントで発生した待機回数の合計です。                                                      | I/O            |
@@ -81,13 +83,13 @@ Oracleデータベースの全般的な性能メトリクスを収集し、シ�
 | `enq:_TX_-_row_lock_contention_time_waited`                  | 行ロック(row lock) 競争で待機した時間です。                                                          | I/O            |
 | `enq:_TX_-_row_lock_contention_total_timeouts`               | 行ロック(row lock) 競争で発生したタイムアウトの回数です。                                                   | I/O            |
 | `enq:_TX_-_row_lock_contention_total_waits`                  | 行ロック(row lock) 競争で発生した、合計の待機回数です。                                                    | I/O            |
-| `enqueue_waits`                                              | キューの読み込みが遅れてキューの変換または読み込み中に発生した合計のキュー数です。                                            | I/O            |
+| `enqueue_waits`                                              | キューの読み取りが遅れてキューの変換または読み取り中に発生した待機回数の合計です。                                            | I/O            |
 | `execute_count`                                              | SQL文(statement)を実行した合計のコマンド数です。                                                      | Performance    |
 | `fatal_count`                                                | クリティカルなエラーが発生した回数です。                                                                 | Info           |
 | `iowait_cpu`                                                 | I/O待機状態で使用されたCPU時間の比率です。                                                             | Performance    |
-| `latch free time waited`                                     | ラッチフリー状態で待機した時間です。                                                                   | I/O            |
-| `latch free total timeouts`                                  | ラッチフリー状態で発生したタイムアウトの回数です。                                                            | I/O            |
-| `latch free total waits`                                     | ラッチフリー状態で発生した待機回数の合計です。                                                              | I/O            |
+| `latch free time waited`                                     | Latch free状態で待機した時間です。                                                               | I/O            |
+| `latch free total timeouts`                                  | Latch free状態で発生したタイムアウトの回数です。                                                        | I/O            |
+| `latch free total waits`                                     | Latch free状態で発生した待機回数の合計です。                                                          | I/O            |
 | `library cache lock time waited`                             | ライブラリキャッシュロックで待機した時間です。                                                              | I/O            |
 | `library cache lock total timeouts`                          | ライブラリキャッシュロックで発生したタイムアウトの回数です。                                                       | I/O            |
 | `library cache lock total waits`                             | ライブラリキャッシュロックで発生した待機回数の合計です。                                                         | I/O            |
@@ -101,7 +103,7 @@ Oracleデータベースの全般的な性能メトリクスを収集し、シ�
 | `opened_cursors_current`                                     | 現在、開いているカーソル(cursor) の数です。                                                           | Connection     |
 | `parse_count_(hard)`                                         | パーシング呼び出しの合計数(実際のパーシング)です。                                                           | Performance    |
 | `parse_count_(total)`                                        | パーシング呼び出しの合計数(hard, soft, describe)です。                                               | Performance    |
-| `physical_reads`                                             | ディスクで読み込んだデータブロックの数です。                                                               | I/O            |
+| `physical_reads`                                             | ディスクで読み取ったデータブロックの数です。                                                               | I/O            |
 | `physical_writes`                                            | データをディスクに記録したブロックの数です。 `physical writes direct`および`physical writes from cache`の合計です。 | I/O            |
 | `pq_sessions`                                                | 並列クエリセッションの数です。                                                                      | Connection     |
 | `redo_entries`                                               | 生成されたRedoエントリの数です。                                                                   | I/O            |
@@ -188,3 +190,5 @@ Oracleデータベースのテーブルスペース使用状況を1時間おき�
 | `maxsize`        | データファイルが自動的に拡張される時に設定された最大サイズです。      |
 | `size`           | テーブルスペースの現在割り当てられている容量の合計です。          |
 | `used`           | 現在使用中のテーブルスペースのサイズです。                 |
+
+</div>

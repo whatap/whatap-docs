@@ -10,6 +10,7 @@ keywords:
 ---
 
 import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import HttpStatus from "../common-items/_import_feature-http-status.mdx";
 import TR from '@site/src/components/TR';
 
 :::note
@@ -28,7 +29,7 @@ WhaTap provides the ***NGINX*** monitoring with a new **Feature Project** method
 
 - **Dashboard**: You can efficiently view and analyze the required metrics through the dashboard.
 
-Manage the operation of the NGINX server stably through the WhaTap ***NGINX*** monitoring.
+Operate and manage your NGINX server stably through WhaTap ***NGINX*** Monitoring.
 
 ## Installation
 
@@ -77,15 +78,7 @@ Home > Select **Feature Project** (<code class='Features'>Feature</code>) > ***N
   <details>
   <summary>Guide to dashboard metrics</summary>
 
-  - ***Response2XX***: It indicates a request that has been processed normally. It displays the number of requests successfully processed by the server in real time.
-
-  - ***Response3XX***: It traces redirected requests. 
-
-  - ***Response4XX***: It displays a response for a client error, such as wrong request.
-
-  - ***Response5XX***: It traces the response status for a server error. 
-
-  - ***Response503***: It traces the errors (unavailable service).
+  <HttpStatus />
 
   </details>
 
