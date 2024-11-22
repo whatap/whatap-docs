@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[47311],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[70626],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -334,7 +334,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "agent",
               className: "uitext"
             }), ": 특정 에이전트에서 발생한 이벤트만 선택해 필터링할 수 있습니다."]
           }), "\n"]
@@ -407,7 +407,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "oname",
               className: "uitext"
             }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "event_setting",
@@ -609,7 +609,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 4744:
+/***/ 32832:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -631,25 +631,25 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'.NET',
+		'MongoDB',
 		'경고 알림',
 		'이벤트 기록',
-		'애플리케이션 모니터링'
+		'데이터베이스 모니터링'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/set-event-history",
+  "id": "mongodb/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/dotnet/set-event-history.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/set-event-history",
-  "permalink": "/whatap-docs/dotnet/set-event-history",
+  "source": "@site/docs/mongodb/set-event-history.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/set-event-history",
+  "permalink": "/whatap-docs/mongodb/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/set-event-history.mdx",
+  "editUrl": "undefined/docs/mongodb/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -657,21 +657,21 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      ".NET",
+      "MongoDB",
       "경고 알림",
       "이벤트 기록",
-      "애플리케이션 모니터링"
+      "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/dotnet/set-receive-event"
+    "permalink": "/whatap-docs/mongodb/set-receive-event"
   },
   "next": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/dotnet/set-event-format"
+    "permalink": "/whatap-docs/mongodb/set-event-format"
   }
 };
 const assets = {

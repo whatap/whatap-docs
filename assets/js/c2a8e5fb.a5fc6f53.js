@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[11543],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[45453],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -334,7 +334,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "agent",
               className: "uitext"
             }), ": 특정 에이전트에서 발생한 이벤트만 선택해 필터링할 수 있습니다."]
           }), "\n"]
@@ -407,7 +407,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "oname",
               className: "uitext"
             }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "event_setting",
@@ -609,7 +609,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 30227:
+/***/ 66368:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -631,25 +631,25 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'Redis',
+		'Oracle',
 		'경고 알림',
 		'이벤트 기록',
-		'데이터베이스 모니터링'
+		'데이터베이스'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/set-event-history",
+  "id": "oracle/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/redis/set-event-history.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/set-event-history",
-  "permalink": "/whatap-docs/redis/set-event-history",
+  "source": "@site/docs/oracle/set-event-history.mdx",
+  "sourceDirName": "oracle",
+  "slug": "/oracle/set-event-history",
+  "permalink": "/whatap-docs/oracle/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/set-event-history.mdx",
+  "editUrl": "undefined/docs/oracle/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -657,21 +657,21 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "Redis",
+      "Oracle",
       "경고 알림",
       "이벤트 기록",
-      "데이터베이스 모니터링"
+      "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "dboracleV2Sidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/redis/set-receive-event"
+    "permalink": "/whatap-docs/oracle/set-receive-event"
   },
   "next": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/redis/set-event-format"
+    "permalink": "/whatap-docs/oracle/set-event-format"
   }
 };
 const assets = {

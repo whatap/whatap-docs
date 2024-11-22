@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[10810],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67278],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -334,7 +334,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "agent",
               className: "uitext"
             }), ": 특정 에이전트에서 발생한 이벤트만 선택해 필터링할 수 있습니다."]
           }), "\n"]
@@ -407,7 +407,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "oname",
               className: "uitext"
             }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "event_setting",
@@ -609,7 +609,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 1378:
+/***/ 20645:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -631,25 +631,24 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'Java',
+		'네트워크 성능 모니터링',
 		'경고 알림',
-		'이벤트 기록',
-		'애플리케이션 모니터링'
+		'이벤트 기록'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "java/set-event-history",
+  "id": "npm/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/java/set-event-history.mdx",
-  "sourceDirName": "java",
-  "slug": "/java/set-event-history",
-  "permalink": "/whatap-docs/java/set-event-history",
+  "source": "@site/docs/npm/set-event-history.mdx",
+  "sourceDirName": "npm",
+  "slug": "/npm/set-event-history",
+  "permalink": "/whatap-docs/npm/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/java/set-event-history.mdx",
+  "editUrl": "undefined/docs/npm/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -657,21 +656,20 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "Java",
+      "네트워크 성능 모니터링",
       "경고 알림",
-      "이벤트 기록",
-      "애플리케이션 모니터링"
+      "이벤트 기록"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "javaSidebar",
+  "sidebar": "npmsidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/java/set-receive-event"
+    "permalink": "/whatap-docs/npm/set-receive-event"
   },
   "next": {
-    "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/java/set-event-format"
+    "title": "실시간 알림",
+    "permalink": "/whatap-docs/npm/real-time-notification"
   }
 };
 const assets = {

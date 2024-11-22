@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[13125],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60940],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -334,7 +334,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "agent",
               className: "uitext"
             }), ": 특정 에이전트에서 발생한 이벤트만 선택해 필터링할 수 있습니다."]
           }), "\n"]
@@ -407,7 +407,7 @@ function _createMdxContent(props) {
         children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-              sid: "application",
+              sid: "oname",
               className: "uitext"
             }), ": ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "event_setting",
@@ -609,7 +609,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 58890:
+/***/ 12549:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -631,25 +631,25 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'PHP',
+		'Tibero',
 		'경고 알림',
 		'이벤트 기록',
-		'애플리케이션 모니터링'
+		'데이터베이스 모니터링'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "php/set-event-history",
+  "id": "tibero/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/php/set-event-history.mdx",
-  "sourceDirName": "php",
-  "slug": "/php/set-event-history",
-  "permalink": "/whatap-docs/php/set-event-history",
+  "source": "@site/docs/tibero/set-event-history.mdx",
+  "sourceDirName": "tibero",
+  "slug": "/tibero/set-event-history",
+  "permalink": "/whatap-docs/tibero/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/php/set-event-history.mdx",
+  "editUrl": "undefined/docs/tibero/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -657,21 +657,21 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "PHP",
+      "Tibero",
       "경고 알림",
       "이벤트 기록",
-      "애플리케이션 모니터링"
+      "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "phpSidebar",
+  "sidebar": "tiberoSidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/php/set-receive-event"
+    "permalink": "/whatap-docs/tibero/set-receive-event"
   },
   "next": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/php/set-event-format"
+    "permalink": "/whatap-docs/tibero/set-event-format"
   }
 };
 const assets = {
