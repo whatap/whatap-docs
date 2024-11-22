@@ -156,7 +156,7 @@ const toc = [{
   "id": "supportmenu",
   "level": 2
 }, {
-  "value": "공지사항 확인하기",
+  "value": "서비스 공지 확인하기",
   "id": "checknotice",
   "level": 3
 }, {
@@ -961,6 +961,17 @@ function _createMdxContent(props) {
                 children: "Agent / IP"
               })
             }), ": 프로젝트에 포함된 에이전트 이름 또는 IP 주소를 기준으로 프로젝트를 검색할 수 있습니다. 검색한 결과에는 입력한 문자열과 일치하는 프로젝트와 에이전트를 확인할 수 있습니다."]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
+            img: "main-ui-search-by-agentip.png",
+            desc: "Agent IP"
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["비활성 에이전트를 검색 결과에서 제외하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+                sid: "TLT06004",
+                className: "uitext"
+              }), " 옵션을 끄세요."]
+            })
           }), "\n"]
         }), "\n"]
       })]
@@ -1279,7 +1290,7 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "checknotice",
-        children: "공지사항 확인하기"
+        children: "서비스 공지 확인하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
           alt: "공지사항 아이콘",
@@ -1287,7 +1298,7 @@ function _createMdxContent(props) {
           width: "24",
           height: "24"
         }), " 버튼을 선택하세요. 와탭 모니터링 서비스의 정기 배포 소식 및 긴급 점검 등 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "TTL06763",
+          sid: "side_integratedNoticeSetting",
           className: "uitext"
         }), " 메뉴로 이동합니다."]
       })]
