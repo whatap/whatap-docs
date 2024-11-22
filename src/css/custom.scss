@@ -1182,6 +1182,13 @@ main {
         width: 50%;
         max-width: 50%;
       }
+      .row {
+        .col {
+          h3 {
+            padding-top: 0;
+          }
+        }
+      }
     }
     .metricslist {
       h2 {
