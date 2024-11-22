@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[87201],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63951],{
 
 /***/ 73793:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -963,74 +963,6 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 53694:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Ay: () => (/* binding */ MDXContent),
-/* harmony export */   RM: () => (/* binding */ toc)
-/* harmony export */ });
-/* unused harmony exports frontMatter, contentTitle */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [];
-function _createMdxContent(props) {
-  const _components = {
-    p: "p",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  }, {Cmdname, ImgLang} = _components;
-  if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!ImgLang) _missingMdxReference("ImgLang", true);
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
-      img: "db-sql-stat-details.png",
-      desc: "세션 상세 정보"
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: ["차트의 막대 그래프를 선택하면 5분 동안의 통계 정보를 확인할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "session_detail",
-        className: "uitext"
-      }), " 창이 나타납니다. 선택한 시간 동안의 SQL 실행 목록을 표시하며, 항목을 선택하면 새창과 함께 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "instance_monitoring",
-        className: "uitext"
-      }), " 메뉴로 이동합니다."]
-    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-        sid: "instance_monitoring",
-        className: "uitext"
-      }), " 메뉴에서는 선택한 시간대의 액티브 세션 테이블과 다양한 지표들의 추이를 확인할 수 있습니다."]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-function _missingMdxReference(id, component) {
-  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
 /***/ 10896:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1122,7 +1054,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-      product: "oracle,cubrid,altibase",
+      product: "cubrid,altibase",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["조회된 결과 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -1472,7 +1404,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 47288:
+/***/ 11518:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1485,23 +1417,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   toc: () => (/* binding */ toc)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(28453);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(28453);
 /* harmony import */ var _common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58321);
 /* harmony import */ var _common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(70222);
 /* harmony import */ var _common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(72610);
 /* harmony import */ var _common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(10896);
 /* harmony import */ var _common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(73793);
-/* harmony import */ var _common_items_db_stat_sql_details_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(53694);
-/* harmony import */ var _common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(98553);
-/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(19193);
+/* harmony import */ var _common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(98553);
+/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(19193);
 
 
 const frontMatter = {
 	id: 'stat',
 	title: 'SQL 통계',
-	description: 'MySQL의 데이터베이스별 통계 데이터를 제공합니다.',
+	description: 'SQL Server의 데이터베이스별 통계 데이터를 제공합니다.',
 	keywords: [
-		'MySQL',
+		'SQL Server',
 		'데이터베이스',
 		'통계'
 	],
@@ -1509,37 +1440,37 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/stat",
+  "id": "mssql/stat",
   "title": "SQL 통계",
-  "description": "MySQL의 데이터베이스별 통계 데이터를 제공합니다.",
-  "source": "@site/docs/mysql/stat.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/stat",
-  "permalink": "/whatap-docs/mysql/stat",
+  "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
+  "source": "@site/docs/mssql/stat.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/stat",
+  "permalink": "/whatap-docs/mssql/stat",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/stat.mdx",
+  "editUrl": "undefined/docs/mssql/stat.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "stat",
     "title": "SQL 통계",
-    "description": "MySQL의 데이터베이스별 통계 데이터를 제공합니다.",
+    "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
     "keywords": [
-      "MySQL",
+      "SQL Server",
       "데이터베이스",
       "통계"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
     "title": "메트릭스 이상 탐지",
-    "permalink": "/whatap-docs/mysql/metrics-detect-anormal"
+    "permalink": "/whatap-docs/mssql/metrics-detect-anormal"
   },
   "next": {
-    "title": "MYSQL SQL 통계",
-    "permalink": "/whatap-docs/mysql/mysql-sql-stat"
+    "title": "보고서",
+    "permalink": "/whatap-docs/mssql/report-intro"
   }
 };
 const assets = {
@@ -1559,34 +1490,17 @@ const assets = {
 
 
 
-
-const toc = [..._common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, {
-  "value": "상세 정보 확인하기",
-  "id": "session-details-info",
-  "level": 2
-}, ..._common_items_db_stat_sql_details_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM];
+const toc = [..._common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM];
 function _createMdxContent(props) {
-  const _components = {
-    h2: "h2",
-    section: "section",
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_9__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
-      className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "session-details-info",
-        children: "상세 정보 확인하기"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_details_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {
-        level: 2
-      })]
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {
+      level: 2
     })]
   });
 }
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_9__/* .useMDXComponents */ .R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_8__/* .useMDXComponents */ .R)(),
     ...props.components
   };
   return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {

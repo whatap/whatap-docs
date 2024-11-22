@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63951],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[71976],{
 
 /***/ 73793:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1054,7 +1054,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-      product: "oracle,cubrid,altibase",
+      product: "cubrid,altibase",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["조회된 결과 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -1404,7 +1404,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11518:
+/***/ 86166:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1430,9 +1430,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'stat',
 	title: 'SQL 통계',
-	description: 'SQL Server의 데이터베이스별 통계 데이터를 제공합니다.',
+	description: 'Oracle의 데이터베이스별 통계 데이터를 제공합니다.',
 	keywords: [
-		'SQL Server',
+		'Oracle',
 		'데이터베이스',
 		'통계'
 	],
@@ -1440,37 +1440,37 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mssql/stat",
+  "id": "oracle-v1/stat",
   "title": "SQL 통계",
-  "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
-  "source": "@site/docs/mssql/stat.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/stat",
-  "permalink": "/whatap-docs/mssql/stat",
+  "description": "Oracle의 데이터베이스별 통계 데이터를 제공합니다.",
+  "source": "@site/docs/oracle-v1/stat.mdx",
+  "sourceDirName": "oracle-v1",
+  "slug": "/oracle-v1/stat",
+  "permalink": "/whatap-docs/oracle-v1/stat",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mssql/stat.mdx",
+  "editUrl": "undefined/docs/oracle-v1/stat.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "stat",
     "title": "SQL 통계",
-    "description": "SQL Server의 데이터베이스별 통계 데이터를 제공합니다.",
+    "description": "Oracle의 데이터베이스별 통계 데이터를 제공합니다.",
     "keywords": [
-      "SQL Server",
+      "Oracle",
       "데이터베이스",
       "통계"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mssqlSidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
     "title": "메트릭스 이상 탐지",
-    "permalink": "/whatap-docs/mssql/metrics-detect-anormal"
+    "permalink": "/whatap-docs/oracle-v1/metrics-detect-anormal"
   },
   "next": {
-    "title": "보고서",
-    "permalink": "/whatap-docs/mssql/report-intro"
+    "title": "테이블스페이스 사이즈",
+    "permalink": "/whatap-docs/oracle-v1/table-space-size"
   }
 };
 const assets = {

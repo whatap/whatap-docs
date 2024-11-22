@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[95113],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52016],{
 
 /***/ 73793:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1054,7 +1054,7 @@ function _createMdxContent(props) {
         desc: "SQL 상세"
       })]
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(InDoc, {
-      product: "oracle,cubrid,altibase",
+      product: "cubrid,altibase",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["조회된 결과 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
@@ -1404,7 +1404,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 5646:
+/***/ 79103:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1430,9 +1430,9 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'stat',
 	title: 'SQL 통계',
-	description: 'Oracle의 데이터베이스별 통계 데이터를 제공합니다.',
+	description: 'CUBRID의 데이터베이스별 통계 데이터를 제공합니다.',
 	keywords: [
-		'Oracle Pro',
+		'CUBRID',
 		'데이터베이스',
 		'통계'
 	],
@@ -1440,37 +1440,37 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/stat",
+  "id": "cubrid-v1/stat",
   "title": "SQL 통계",
-  "description": "Oracle의 데이터베이스별 통계 데이터를 제공합니다.",
-  "source": "@site/docs/oracle-pro/stat.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/stat",
-  "permalink": "/whatap-docs/oracle-pro/stat",
+  "description": "CUBRID의 데이터베이스별 통계 데이터를 제공합니다.",
+  "source": "@site/docs/cubrid-v1/stat.mdx",
+  "sourceDirName": "cubrid-v1",
+  "slug": "/cubrid-v1/stat",
+  "permalink": "/whatap-docs/cubrid-v1/stat",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/stat.mdx",
+  "editUrl": "undefined/docs/cubrid-v1/stat.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "stat",
     "title": "SQL 통계",
-    "description": "Oracle의 데이터베이스별 통계 데이터를 제공합니다.",
+    "description": "CUBRID의 데이터베이스별 통계 데이터를 제공합니다.",
     "keywords": [
-      "Oracle Pro",
+      "CUBRID",
       "데이터베이스",
       "통계"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "cubridV1Sidebar",
   "previous": {
     "title": "메트릭스 이상 탐지",
-    "permalink": "/whatap-docs/oracle-pro/metrics-detect-anormal"
+    "permalink": "/whatap-docs/cubrid-v1/metrics-detect-anormal"
   },
   "next": {
-    "title": "테이블스페이스 사이즈",
-    "permalink": "/whatap-docs/oracle-pro/table-space-size"
+    "title": "테이블 사이즈 증감",
+    "permalink": "/whatap-docs/cubrid-v1/table-size"
   }
 };
 const assets = {
@@ -1480,11 +1480,6 @@ const assets = {
 /*SQL 통계*/
 /*SQL 통계 기본 사용 안내*/
 /*쿼리별 수행 추이, 자세히 보기*/
-/*## 상세 정보 확인하기 {#session-details-info}
-
-import Dbstatsqldetails from "../common-items/_db-stat-sql-details.mdx";
-
-<Dbstatsqldetails />*/
 /*필터 조건추가하기*/
 
 
@@ -1498,7 +1493,7 @@ import Dbstatsqldetails from "../common-items/_db-stat-sql-details.mdx";
 const toc = [..._common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {
+    children: ["\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_basic_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_stat_sql_view_query_details_summary_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_product_sql_stat_query_details_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), "\n", "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_sql_filter_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {
       level: 2
     })]
   });
