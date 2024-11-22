@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[7439],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[75781],{
 
 /***/ 10939:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -151,6 +151,70 @@ function _createMdxContent(props) {
         }), "\n"]
       })
     })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+function _missingMdxReference(id, component) {
+  throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 23466:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [];
+function _createMdxContent(props) {
+  const _components = {
+    li: "li",
+    p: "p",
+    ul: "ul",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  }, {Cmdname, Link} = _components;
+  if (!Cmdname) _missingMdxReference("Cmdname", true);
+  if (!Link) _missingMdxReference("Link", true);
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+    children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+      children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "lock_tree",
+        className: "uitext"
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["락 세션에 대한 정보와 Holder, Waiter 정보를 실시간으로 조회할 수 있습니다. 테이블의 컬럼에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
+          to: "#column-info",
+          children: "다음 문서"
+        }), "를 참조하세요."]
+      }), "\n"]
+    }), "\n"]
   });
 }
 function MDXContent(props = {}) {
@@ -386,7 +450,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 69737:
+/***/ 42962:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -408,7 +472,6 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 const toc = [];
 function _createMdxContent(props) {
   const _components = {
-    admonition: "admonition",
     code: "code",
     p: "p",
     table: "table",
@@ -419,9 +482,8 @@ function _createMdxContent(props) {
     tr: "tr",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, Link, TabItem, Tabs} = _components;
+  }, {Cmdname, TabItem, Tabs} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
-  if (!Link) _missingMdxReference("Link", true);
   if (!TabItem) _missingMdxReference("TabItem", true);
   if (!Tabs) _missingMdxReference("Tabs", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Tabs, {
@@ -430,13 +492,12 @@ function _createMdxContent(props) {
       value: "activesession",
       label: "Active session",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        children: ["다음은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "active_sessions",
           className: "uitext"
-        }), " 테이블의 컬럼 항목에 대한 설명입니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Link, {
-          to: "https://redis.io/commands/client-list/",
-          children: "다음 링크"
-        }), "를 참조하세요."]
+        }), " 섹션의 테이블에 표시되는 컬럼 정보입니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+          children: "currentOp"
+        }), " 명령으로 수집된 데이터입니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
         children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
@@ -449,124 +510,191 @@ function _createMdxContent(props) {
         }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "id"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "opid"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "고유한 64bit 클라이언트 아이디"
+              children: "operation의 고유 식별자(identifier)"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "addr"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "클라이언트의 IP 주소와 포트 번호"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "type"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: ["값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "op"
+              }), "인 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "op"
+              }), " 필드에서 작업 유형 확인 가능"]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "age"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "host"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "총 연결 시간"
+              children: "서버 이름"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "cmd"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "마지막으로 실행된 명령"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "db"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "현재 데이터베이스 아이디"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "events"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "desc"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
               children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "r"
-              }), ": 클라이언트 소켓을 읽을 수 있음(event loop)", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("br", {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                children: "w"
-              }), ": 클라이언트 소켓이 쓰기 가능(event loop)"]
+                children: "connectionId"
+              }), "를 포함한 클라이언트 설명"]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "fd"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "클라이언트 소켓 파일 디스크립터(file descriptor) 번호"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "active"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: ["작업이 시작되면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              }), ", idle이면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "false"
+              })]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "flags"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "currentOpTime"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "클라이언트의 종류, N은 정상 클라이언트를 의미합니다. (normal/master/replica/pubsub)"
+              children: "operation의 시작 시간"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "idle"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "연결이 유휴 상태(idle)인 시간(초)입니다."
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "op"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: ["operation 유형(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "none"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "update"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "insert"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "query"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "command"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "getmore"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "remove"
+              }), " 등)"]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "multi"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "MULTI/EXEC 컨텍스트의 명령 수"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "ns"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: ["네임스페이스 이름으로 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "Database"
+              }), ".", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "Collection"
+              }), " 으로 표시"]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "obl"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "numYields"
+              })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "출력 버퍼 길이"
+              children: "작업이 수행된 수"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "oll"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "출력 목록 길이(버퍼가 가득 차있을 경우 응답이 이 목록에 대기됨)"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "waitingForLock"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: ["락(lock)을 대기하고 있으면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              }), ", 락(lock)을 획득하였으면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "false"
+              })]
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "omem"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "클라이언트가 출력 버퍼에 사용하는 메모리 양"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "psub"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "subscriptions 패턴 매칭 수"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "qbuf"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "쿼리 버퍼 길이(0은 쿼리 의존이 아님)"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "qbuf-free"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "쿼리 버퍼 여유 공간(0은 버퍼가 가득차 있음을 의미, 여유 공간 없음)"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "sub"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "subscriptions 채널 수"
-            })]
-          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "user"
-            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "클라이언트의 인증된 사용자 이름"
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "waitingForFlowControl"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "flowcontrol"
+              }), "을 대기하고 있으면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "true"
+              })]
             })]
           })]
         })]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-          children: "와탭은 클라이언트와 관련한 정보를 기본 저장합니다."
-        })
       })]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TabItem, {
+      value: "locktree",
+      label: "Lock tree",
+      children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.table, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.thead, {
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              children: "항목"
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.th, {
+              children: "설명"
+            })]
+          })
+        }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tbody, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "holder type"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "holder"
+              }), " 세션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "type"
+              }), " (transaction id, tuple 등)"]
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "lock mode"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "holder_mode"
+              }), " (exclusive lock, shared lock 등)"]
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "waiter type"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "waiter"
+              }), " 세션의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "type"
+              }), " (transaction id, tuple 등)"]
+            })]
+          }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "lock request"
+              })
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.td, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "waiter_mode"
+              }), " (exclusive lock, shared lock 등)"]
+            })]
+          })]
+        })]
+      })
     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(TabItem, {
       value: "process-info",
       label: "Process information",
@@ -1255,6 +1383,73 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 82576:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Ay: () => (/* binding */ MDXContent),
+/* harmony export */   RM: () => (/* binding */ toc)
+/* harmony export */ });
+/* unused harmony exports frontMatter, contentTitle */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28453);
+
+
+const frontMatter = {};
+const contentTitle = (/* unused pure expression or super */ null && (undefined));
+
+
+
+
+
+const toc = [{
+  "value": " 액티브 세션 / 락 트리 / 프로세스 정보",
+  "id": "-액티브-세션--락-트리--프로세스-정보",
+  "level": 3
+}];
+function _createMdxContent(props) {
+  const _components = {
+    h3: "h3",
+    img: "img",
+    p: "p",
+    section: "section",
+    strong: "strong",
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+    className: "remark-sectionize-h3",
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h3, {
+      id: "-액티브-세션--락-트리--프로세스-정보",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+        src: (__webpack_require__(893)/* ["default"] */ .A) + "",
+        width: "35",
+        height: "35"
+      }), " 액티브 세션 / 락 트리 / 프로세스 정보"]
+    }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+      children: ["실시간 수행 중인 액티브 세션 및 락 트리, 프로세스 정보를 조회할 수 있습니다. 위젯에서 차트의 특정 시간을 선택하면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: "실시간 조회"
+      }), " 모드를 중지하고 선택한 시간에 수행한 세션 정보를 테이블에 표시합니다. 테이블 위에 5초 단위로 데이터를 조회할 수 있는 시간 선택 버튼이 나타납니다."]
+    })]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
@@ -1977,13 +2172,12 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
-    em: "em",
+    admonition: "admonition",
     h2: "h2",
     img: "img",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -2001,10 +2195,9 @@ function _createMdxContent(props) {
         src: (__webpack_require__(45430)/* ["default"] */ .A) + "",
         width: "20",
         height: "20"
-      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Metric Select"
-        })
+      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL06220",
+        className: "uitext"
       }), " 창이 나타납니다. 원하는 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "save",
         className: "uitext"
@@ -2036,6 +2229,31 @@ function _createMdxContent(props) {
             sid: "title",
             className: "uitext"
           }), ": 위젯의 이름을 입력하세요."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "숫자 7",
+            src: (__webpack_require__(19686)/* ["default"] */ .A) + "",
+            width: "35",
+            height: "35"
+          }), " 현재 선택한 위젯의 차트로 표시되는 지표 항목이 표시됩니다. 최대 4개의 지표를 선택할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["지표 항목의 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "알림 아이콘",
+              src: (__webpack_require__(37659)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " 버튼을 선택하면 해당 지표를 기준으로 경고 알림을 설정할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_eventSetting",
+              className: "uitext"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              className: "newfunc",
+              children: "New"
+            }), " 메뉴로 이동할 수 있습니다."]
+          })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -2359,162 +2577,86 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 80906:
+/***/ 45140:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  assets: () => (/* binding */ assets),
-  contentTitle: () => (/* binding */ instance_monitoring_contentTitle),
-  "default": () => (/* binding */ instance_monitoring_MDXContent),
-  frontMatter: () => (/* binding */ instance_monitoring_frontMatter),
-  metadata: () => (/* binding */ metadata),
-  toc: () => (/* binding */ instance_monitoring_toc)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(74848);
-// EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
-var lib = __webpack_require__(28453);
-// EXTERNAL MODULE: ./docs/common-items/_db-instance-monitoring-desc.mdx
-var _db_instance_monitoring_desc = __webpack_require__(87660);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-select.mdx
-var _db_v2_instance_monitoring_select = __webpack_require__(95168);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-widget.mdx
-var _db_v2_instance_monitoring_widget = __webpack_require__(66872);
-;// CONCATENATED MODULE: ./docs/common-items/_db-v2-instance-monitoring-activesession-desc-redis.mdx
-
-
-const frontMatter = {};
-const contentTitle = (/* unused pure expression or super */ null && (undefined));
-
-
-
-
-
-const toc = [{
-  "value": " 액티브 세션 / 프로세스 정보",
-  "id": "-액티브-세션--프로세스-정보",
-  "level": 3
-}];
-function _createMdxContent(props) {
-  const _components = {
-    h3: "h3",
-    img: "img",
-    p: "p",
-    section: "section",
-    strong: "strong",
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return (0,jsx_runtime.jsxs)(_components.section, {
-    className: "remark-sectionize-h3",
-    children: [(0,jsx_runtime.jsxs)(_components.h3, {
-      id: "-액티브-세션--프로세스-정보",
-      children: [(0,jsx_runtime.jsx)(_components.img, {
-        src: (__webpack_require__(893)/* ["default"] */ .A) + "",
-        width: "35",
-        height: "35"
-      }), " 액티브 세션 / 프로세스 정보"]
-    }), (0,jsx_runtime.jsxs)(_components.p, {
-      children: ["실시간 수행 중인 액티브 세션 및 프로세스 정보를 조회할 수 있습니다. 위젯에서 차트의 특정 시간을 선택하면 ", (0,jsx_runtime.jsx)(_components.strong, {
-        children: "실시간 조회"
-      }), " 모드를 중지하고 선택한 시간에 수행한 세션 정보를 테이블에 표시합니다. 테이블 위에 5초 단위로 데이터를 조회할 수 있는 시간 선택 버튼이 나타납니다."]
-    })]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
-    ...props,
-    children: (0,jsx_runtime.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(87660);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(95168);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(66872);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(82576);
+/* harmony import */ var _common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10939);
+/* harmony import */ var _common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(23466);
+/* harmony import */ var _common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(69163);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(57051);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(49352);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(5007);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5512);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(65201);
+/* harmony import */ var _common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(55289);
+/* harmony import */ var _common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(17186);
+/* harmony import */ var _common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(78085);
+/* harmony import */ var _common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(19193);
+/* harmony import */ var _common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(93782);
+/* harmony import */ var _common_items_db_mongodb_activesessions_columns_mdx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(42962);
 
 
-// EXTERNAL MODULE: ./docs/common-items/_db-dashboard-activesession-desc.mdx
-var _db_dashboard_activesession_desc = __webpack_require__(10939);
-// EXTERNAL MODULE: ./docs/common-items/_db-dashborad-process-info-desc.mdx
-var _db_dashborad_process_info_desc = __webpack_require__(69163);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-activesession-note.mdx
-var _db_v2_instance_monitoring_activesession_note = __webpack_require__(57051);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-select-metrics.mdx
-var _db_v2_instance_monitoring_select_metrics = __webpack_require__(49352);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-add-metrics.mdx
-var _db_v2_instance_monitoring_add_metrics = __webpack_require__(5007);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-change-merics.mdx
-var _db_v2_instance_monitoring_change_merics = __webpack_require__(5512);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-delete-metrics.mdx
-var _db_v2_instance_monitoring_delete_metrics = __webpack_require__(65201);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-instance-monitoring-preset.mdx
-var _db_v2_instance_monitoring_preset = __webpack_require__(55289);
-// EXTERNAL MODULE: ./docs/common-items/_db-using-area-active-session.mdx
-var _db_using_area_active_session = __webpack_require__(17186);
-// EXTERNAL MODULE: ./docs/common-items/_db-folding-activesession-table.mdx
-var _db_folding_activesession_table = __webpack_require__(78085);
-// EXTERNAL MODULE: ./docs/common-items/_db-v2-data-edit-column.mdx
-var _db_v2_data_edit_column = __webpack_require__(19193);
-// EXTERNAL MODULE: ./docs/common-items/_db-table-data-filtering.mdx
-var _db_table_data_filtering = __webpack_require__(93782);
-// EXTERNAL MODULE: ./docs/common-items/_db-redis-info-of-column.mdx
-var _db_redis_info_of_column = __webpack_require__(69737);
-;// CONCATENATED MODULE: ./docs/redis/instance-monitoring.mdx
-
-
-const instance_monitoring_frontMatter = {
+const frontMatter = {
 	id: 'instance-monitoring',
 	title: '인스턴스 모니터링',
-	description: '인스턴스 모니터링 메뉴에서는 Redis 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.',
+	description: '인스턴스 모니터링 메뉴에서는 MongoDB 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.',
 	keywords: [
-		'Redis',
+		'MongoDB',
 		'인스턴스',
 		'대시보드',
 		'데이터베이스'
 	],
 	isTranslationMissing: false
 };
-const instance_monitoring_contentTitle = undefined;
+const contentTitle = undefined;
 const metadata = {
-  "id": "redis/instance-monitoring",
+  "id": "mongodb/instance-monitoring",
   "title": "인스턴스 모니터링",
-  "description": "인스턴스 모니터링 메뉴에서는 Redis 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.",
-  "source": "@site/docs/redis/instance-monitoring.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/instance-monitoring",
-  "permalink": "/whatap-docs/redis/instance-monitoring",
+  "description": "인스턴스 모니터링 메뉴에서는 MongoDB 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.",
+  "source": "@site/docs/mongodb/instance-monitoring.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/instance-monitoring",
+  "permalink": "/whatap-docs/mongodb/instance-monitoring",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/instance-monitoring.mdx",
+  "editUrl": "undefined/docs/mongodb/instance-monitoring.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "instance-monitoring",
     "title": "인스턴스 모니터링",
-    "description": "인스턴스 모니터링 메뉴에서는 Redis 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.",
+    "description": "인스턴스 모니터링 메뉴에서는 MongoDB 데이터베이스 서버의 핵심 지표들에 대한 상세 정보를 실시간으로 확인할 수 있습니다.",
     "keywords": [
-      "Redis",
+      "MongoDB",
       "인스턴스",
       "대시보드",
       "데이터베이스"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "인스턴스 목록",
-    "permalink": "/whatap-docs/redis/instance-list"
+    "permalink": "/whatap-docs/mongodb/instance-list"
   },
   "next": {
     "title": "멀티 인스턴스 모니터링",
-    "permalink": "/whatap-docs/redis/multi-instance-monitoring"
+    "permalink": "/whatap-docs/mongodb/multi-instance-monitoring"
   }
 };
 const assets = {
@@ -2549,58 +2691,59 @@ const assets = {
 
 
 
-const instance_monitoring_toc = [..._db_instance_monitoring_desc/* toc */.RM, {
+
+const toc = [..._common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
   "value": "기본 화면 안내",
   "id": "기본-화면-안내",
   "level": 2
-}, ..._db_v2_instance_monitoring_select/* toc */.RM, ..._db_v2_instance_monitoring_widget/* toc */.RM, ...toc, ..._db_dashboard_activesession_desc/* toc */.RM, ..._db_dashborad_process_info_desc/* toc */.RM, ..._db_v2_instance_monitoring_activesession_note/* toc */.RM, ..._db_v2_instance_monitoring_select_metrics/* toc */.RM, ..._db_v2_instance_monitoring_add_metrics/* toc */.RM, ..._db_v2_instance_monitoring_change_merics/* toc */.RM, ..._db_v2_instance_monitoring_delete_metrics/* toc */.RM, ..._db_v2_instance_monitoring_preset/* toc */.RM, ..._db_using_area_active_session/* toc */.RM, ..._db_folding_activesession_table/* toc */.RM, ..._db_v2_data_edit_column/* toc */.RM, ..._db_table_data_filtering/* toc */.RM, {
+}, ..._common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM, ..._common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_6__/* .toc */ .RM, ..._common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_7__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_8__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_9__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_11__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_12__/* .toc */ .RM, ..._common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_13__/* .toc */ .RM, ..._common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_14__/* .toc */ .RM, ..._common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_15__/* .toc */ .RM, ..._common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* .toc */ .RM, ..._common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_17__/* .toc */ .RM, {
   "value": "컬럼 정보 안내",
   "id": "column-info",
   "level": 3
-}, ..._db_redis_info_of_column/* toc */.RM];
-function instance_monitoring_createMdxContent(props) {
+}, ..._common_items_db_mongodb_activesessions_columns_mdx__WEBPACK_IMPORTED_MODULE_18__/* .toc */ .RM];
+function _createMdxContent(props) {
   const _components = {
     h2: "h2",
     h3: "h3",
     section: "section",
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_19__/* .useMDXComponents */ .R)(),
     ...props.components
   }, {ProdImg} = _components;
   if (!ProdImg) _missingMdxReference("ProdImg", true);
-  return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(_db_instance_monitoring_desc/* default */.Ay, {}), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_instance_monitoring_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
-      children: [(0,jsx_runtime.jsx)(_components.h2, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
         id: "기본-화면-안내",
         children: "기본 화면 안내"
-      }), (0,jsx_runtime.jsx)(ProdImg, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ProdImg, {
         img: "db-instance-monitoring.png",
         desc: "인스턴스 모니터링"
-      }), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_select/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_widget/* default */.Ay, {}), (0,jsx_runtime.jsx)(MDXContent, {}), (0,jsx_runtime.jsx)(_db_dashboard_activesession_desc/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_dashborad_process_info_desc/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_activesession_note/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_select_metrics/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_add_metrics/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_change_merics/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_delete_metrics/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_instance_monitoring_preset/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_using_area_active_session/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_folding_activesession_table/* default */.Ay, {}), (0,jsx_runtime.jsx)(_db_v2_data_edit_column/* default */.Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_select_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_widget_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_activesession_desc_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashboard_locktree_desc_mdx__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_dashborad_process_info_desc_mdx__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_activesession_note_mdx__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_select_metrics_mdx__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_add_metrics_mdx__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_change_merics_mdx__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_delete_metrics_mdx__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_instance_monitoring_preset_mdx__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_using_area_active_session_mdx__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_folding_activesession_table_mdx__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Ay, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Ay, {
         level: 3
-      }), (0,jsx_runtime.jsx)(_db_table_data_filtering/* default */.Ay, {
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_table_data_filtering_mdx__WEBPACK_IMPORTED_MODULE_17__/* ["default"] */ .Ay, {
         level: 3
       })]
-    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
-      children: [(0,jsx_runtime.jsx)(_components.h3, {
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "column-info",
         children: "컬럼 정보 안내"
-      }), (0,jsx_runtime.jsx)(_db_redis_info_of_column/* default */.Ay, {})]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_mongodb_activesessions_columns_mdx__WEBPACK_IMPORTED_MODULE_18__/* ["default"] */ .Ay, {})]
     })]
   });
 }
-function instance_monitoring_MDXContent(props = {}) {
+function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = {
-    ...(0,lib/* useMDXComponents */.R)(),
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_19__/* .useMDXComponents */ .R)(),
     ...props.components
   };
-  return MDXLayout ? (0,jsx_runtime.jsx)(MDXLayout, {
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
     ...props,
-    children: (0,jsx_runtime.jsx)(instance_monitoring_createMdxContent, {
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
       ...props
     })
-  }) : instance_monitoring_createMdxContent(props);
+  }) : _createMdxContent(props);
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
@@ -2617,6 +2760,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/db-dashboard-move-widget-e9d8e64645d881f574870bbcfe77c951.png");
+
+/***/ }),
+
+/***/ 37659:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUzODk1IDcuMTY4N0MyLjE5MDA2IDQuOTE0MjkgMy40NjAyIDMuMTEyOTEgNS4zMzE0NSAxLjc5ODU1QzUuNzg4NDkgMS40Nzc1MiA2LjQyMzY3IDEuNTgxNTkgNi43NTAxNiAyLjAzMDk5QzcuMDc2NjUgMi40ODAzOSA2Ljk3MDgxIDMuMTA0OTQgNi41MTM3NyAzLjQyNTk3QzUuMDIyMjIgNC40NzM2MyA0LjAyMjEzIDUuODkyIDMuNDk1NiA3LjcxNTA3QzMuMzQyMTYgOC4yNDYzNSAyLjc3OTc2IDguNTU0NzIgMi4yMzk0NCA4LjQwMzg1QzEuNjk5MTMgOC4yNTI5NyAxLjM4NTUgNy42OTk5OCAxLjUzODk1IDcuMTY4N1pNMjIuNDYxMSA3LjE2ODdDMjEuODA5OSA0LjkxNDI5IDIwLjUzOTggMy4xMTI5MSAxOC42Njg2IDEuNzk4NTVDMTguMjExNSAxLjQ3NzUyIDE3LjU3NjMgMS41ODE1OSAxNy4yNDk4IDIuMDMwOTlDMTYuOTIzMyAyLjQ4MDM5IDE3LjAyOTIgMy4xMDQ5NCAxNy40ODYyIDMuNDI1OTdDMTguOTc3OCA0LjQ3MzYzIDE5Ljk3NzkgNS44OTIgMjAuNTA0NCA3LjcxNTA3QzIwLjY1NzggOC4yNDYzNSAyMS4yMjAyIDguNTU0NzIgMjEuNzYwNiA4LjQwMzg1QzIyLjMwMDkgOC4yNTI5NyAyMi42MTQ1IDcuNjk5OTggMjIuNDYxMSA3LjE2ODdaIiBmaWxsPSIjNzU3NTc1Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuMDI0OCAzLjVDMTQuMDI0OCAzLjU5NjQgMTQuMDE3OSAzLjY5MTIgMTQuMDA0OCAzLjc4Mzk2QzE2LjkwNjUgNC42MzgwOCAxOS4wMjQ4IDcuMzIxNjcgMTkuMDI0OCAxMC41VjE2LjVIMjBDMjAuNTUyMyAxNi41IDIxIDE2Ljk0NzcgMjEgMTcuNUMyMSAxOC4wNTIzIDIwLjU1MjMgMTguNSAyMCAxOC41SDE5LjAyNDhINS4wMjQ3N0g0QzMuNDQ3NzIgMTguNSAzIDE4LjA1MjMgMyAxNy41QzMgMTYuOTQ3NyAzLjQ0NzcyIDE2LjUgNCAxNi41SDUuMDI0NzdWMTAuNUw1LjAyODgyIDEwLjI1OTNDNS4xMzI2MiA3LjE4Njg0IDcuMjE2NTQgNC42MTY0NCAxMC4wNDQ4IDMuNzgzOTZDMTAuMDMxNiAzLjY5MTIgMTAuMDI0OCAzLjU5NjQgMTAuMDI0OCAzLjVDMTAuMDI0OCAyLjM5NTQzIDEwLjkyMDIgMS41IDEyLjAyNDggMS41QzEzLjEyOTMgMS41IDE0LjAyNDggMi4zOTU0MyAxNC4wMjQ4IDMuNVpNNy4wMjg1NCAxMC4yOTMxQzcuMTE4NDYgNy42Mzk5OSA5LjMyNzU4IDUuNSAxMi4wMjQ4IDUuNUMxNC43ODYyIDUuNSAxNy4wMjQ4IDcuNzM4NTggMTcuMDI0OCAxMC41VjE2LjVINy4wMjQ3N1YxMC41TDcuMDI4NTQgMTAuMjkzMVpNMTIuMDI0OCAyMi41QzEwLjM2NzkgMjIuNSA5LjAyNDc3IDIxLjE1NjkgOS4wMjQ3NyAxOS41SDE1LjAyNDhDMTUuMDI0OCAyMS4xNTY5IDEzLjY4MTYgMjIuNSAxMi4wMjQ4IDIyLjVaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=");
 
 /***/ }),
 

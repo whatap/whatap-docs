@@ -2516,13 +2516,12 @@ const toc = [{
 }];
 function _createMdxContent(props) {
   const _components = {
-    em: "em",
+    admonition: "admonition",
     h2: "h2",
     img: "img",
     li: "li",
     p: "p",
     section: "section",
-    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -2540,10 +2539,9 @@ function _createMdxContent(props) {
         src: (__webpack_require__(45430)/* ["default"] */ .A) + "",
         width: "20",
         height: "20"
-      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-          children: "Metric Select"
-        })
+      }), " 버튼을 선택하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        sid: "TTL06220",
+        className: "uitext"
       }), " 창이 나타납니다. 원하는 설정을 완료한 다음 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
         sid: "save",
         className: "uitext"
@@ -2575,6 +2573,31 @@ function _createMdxContent(props) {
             sid: "title",
             className: "uitext"
           }), ": 위젯의 이름을 입력하세요."]
+        }), "\n"]
+      }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+            alt: "숫자 7",
+            src: (__webpack_require__(19686)/* ["default"] */ .A) + "",
+            width: "35",
+            height: "35"
+          }), " 현재 선택한 위젯의 차트로 표시되는 지표 항목이 표시됩니다. 최대 4개의 지표를 선택할 수 있습니다."]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["지표 항목의 오른쪽에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.img, {
+              alt: "알림 아이콘",
+              src: (__webpack_require__(37659)/* ["default"] */ .A) + "",
+              width: "24",
+              height: "24"
+            }), " 버튼을 선택하면 해당 지표를 기준으로 경고 알림을 설정할 수 있는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "side_eventSetting",
+              className: "uitext"
+            }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("code", {
+              className: "newfunc",
+              children: "New"
+            }), " 메뉴로 이동할 수 있습니다."]
+          })
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
@@ -4128,6 +4151,16 @@ function _missingMdxReference(id, component) {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/db-dashboard-move-widget-e9d8e64645d881f574870bbcfe77c951.png");
+
+/***/ }),
+
+/***/ 37659:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUzODk1IDcuMTY4N0MyLjE5MDA2IDQuOTE0MjkgMy40NjAyIDMuMTEyOTEgNS4zMzE0NSAxLjc5ODU1QzUuNzg4NDkgMS40Nzc1MiA2LjQyMzY3IDEuNTgxNTkgNi43NTAxNiAyLjAzMDk5QzcuMDc2NjUgMi40ODAzOSA2Ljk3MDgxIDMuMTA0OTQgNi41MTM3NyAzLjQyNTk3QzUuMDIyMjIgNC40NzM2MyA0LjAyMjEzIDUuODkyIDMuNDk1NiA3LjcxNTA3QzMuMzQyMTYgOC4yNDYzNSAyLjc3OTc2IDguNTU0NzIgMi4yMzk0NCA4LjQwMzg1QzEuNjk5MTMgOC4yNTI5NyAxLjM4NTUgNy42OTk5OCAxLjUzODk1IDcuMTY4N1pNMjIuNDYxMSA3LjE2ODdDMjEuODA5OSA0LjkxNDI5IDIwLjUzOTggMy4xMTI5MSAxOC42Njg2IDEuNzk4NTVDMTguMjExNSAxLjQ3NzUyIDE3LjU3NjMgMS41ODE1OSAxNy4yNDk4IDIuMDMwOTlDMTYuOTIzMyAyLjQ4MDM5IDE3LjAyOTIgMy4xMDQ5NCAxNy40ODYyIDMuNDI1OTdDMTguOTc3OCA0LjQ3MzYzIDE5Ljk3NzkgNS44OTIgMjAuNTA0NCA3LjcxNTA3QzIwLjY1NzggOC4yNDYzNSAyMS4yMjAyIDguNTU0NzIgMjEuNzYwNiA4LjQwMzg1QzIyLjMwMDkgOC4yNTI5NyAyMi42MTQ1IDcuNjk5OTggMjIuNDYxMSA3LjE2ODdaIiBmaWxsPSIjNzU3NTc1Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuMDI0OCAzLjVDMTQuMDI0OCAzLjU5NjQgMTQuMDE3OSAzLjY5MTIgMTQuMDA0OCAzLjc4Mzk2QzE2LjkwNjUgNC42MzgwOCAxOS4wMjQ4IDcuMzIxNjcgMTkuMDI0OCAxMC41VjE2LjVIMjBDMjAuNTUyMyAxNi41IDIxIDE2Ljk0NzcgMjEgMTcuNUMyMSAxOC4wNTIzIDIwLjU1MjMgMTguNSAyMCAxOC41SDE5LjAyNDhINS4wMjQ3N0g0QzMuNDQ3NzIgMTguNSAzIDE4LjA1MjMgMyAxNy41QzMgMTYuOTQ3NyAzLjQ0NzcyIDE2LjUgNCAxNi41SDUuMDI0NzdWMTAuNUw1LjAyODgyIDEwLjI1OTNDNS4xMzI2MiA3LjE4Njg0IDcuMjE2NTQgNC42MTY0NCAxMC4wNDQ4IDMuNzgzOTZDMTAuMDMxNiAzLjY5MTIgMTAuMDI0OCAzLjU5NjQgMTAuMDI0OCAzLjVDMTAuMDI0OCAyLjM5NTQzIDEwLjkyMDIgMS41IDEyLjAyNDggMS41QzEzLjEyOTMgMS41IDE0LjAyNDggMi4zOTU0MyAxNC4wMjQ4IDMuNVpNNy4wMjg1NCAxMC4yOTMxQzcuMTE4NDYgNy42Mzk5OSA5LjMyNzU4IDUuNSAxMi4wMjQ4IDUuNUMxNC43ODYyIDUuNSAxNy4wMjQ4IDcuNzM4NTggMTcuMDI0OCAxMC41VjE2LjVINy4wMjQ3N1YxMC41TDcuMDI4NTQgMTAuMjkzMVpNMTIuMDI0OCAyMi41QzEwLjM2NzkgMjIuNSA5LjAyNDc3IDIxLjE1NjkgOS4wMjQ3NyAxOS41SDE1LjAyNDhDMTUuMDI0OCAyMS4xNTY5IDEzLjY4MTYgMjIuNSAxMi4wMjQ4IDIyLjVaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=");
 
 /***/ }),
 
