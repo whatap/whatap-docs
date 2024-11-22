@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84448],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[87278],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -582,6 +582,15 @@ function _createMdxContent(props) {
               className: "uitext"
             }), " 메뉴로 이동합니다."]
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "exclude_resolved_alerts",
+              className: "uitext"
+            }), ": 이벤트 기록 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "진행 중인 이벤트"
+            }), "만 조회할 수 있습니다."]
+          }), "\n"]
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
         level: 3
@@ -609,7 +618,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 89125:
+/***/ 67266:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -631,7 +640,7 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'CUBRID',
+		'Oracle',
 		'경고 알림',
 		'이벤트 기록',
 		'데이터베이스 모니터링'
@@ -640,16 +649,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid-v1/set-event-history",
+  "id": "oracle-v1/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/cubrid-v1/set-event-history.mdx",
-  "sourceDirName": "cubrid-v1",
-  "slug": "/cubrid-v1/set-event-history",
-  "permalink": "/whatap-docs/cubrid-v1/set-event-history",
+  "source": "@site/docs/oracle-v1/set-event-history.mdx",
+  "sourceDirName": "oracle-v1",
+  "slug": "/oracle-v1/set-event-history",
+  "permalink": "/whatap-docs/oracle-v1/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid-v1/set-event-history.mdx",
+  "editUrl": "undefined/docs/oracle-v1/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -657,21 +666,21 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "CUBRID",
+      "Oracle",
       "경고 알림",
       "이벤트 기록",
       "데이터베이스 모니터링"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "cubridV1Sidebar",
+  "sidebar": "dboracleSidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/cubrid-v1/set-receive-event"
+    "permalink": "/whatap-docs/oracle-v1/set-receive-event"
   },
   "next": {
     "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/cubrid-v1/set-event-format"
+    "permalink": "/whatap-docs/oracle-v1/set-event-format"
   }
 };
 const assets = {

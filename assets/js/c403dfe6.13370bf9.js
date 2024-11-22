@@ -1,96 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[92724],{
-
-/***/ 52704:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13897);
-
-
-const frontMatter = {
-	id: 'set-event-history',
-	title: '이벤트 기록',
-	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
-	keywords: [
-		'AWS Log',
-		'경고 알림',
-		'이벤트 기록'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "aws-log/set-event-history",
-  "title": "이벤트 기록",
-  "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/aws-log/set-event-history.mdx",
-  "sourceDirName": "aws-log",
-  "slug": "/aws-log/set-event-history",
-  "permalink": "/whatap-docs/aws-log/set-event-history",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/aws-log/set-event-history.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "set-event-history",
-    "title": "이벤트 기록",
-    "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-    "keywords": [
-      "AWS Log",
-      "경고 알림",
-      "이벤트 기록"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "awslogSidebar",
-  "previous": {
-    "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/aws-log/set-receive-event"
-  },
-  "next": {
-    "title": "실시간 알림",
-    "permalink": "/whatap-docs/aws-log/real-time-notification"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[18598],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -673,6 +582,15 @@ function _createMdxContent(props) {
               className: "uitext"
             }), " 메뉴로 이동합니다."]
           }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+              sid: "exclude_resolved_alerts",
+              className: "uitext"
+            }), ": 이벤트 기록 목록에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "진행 중인 이벤트"
+            }), "만 조회할 수 있습니다."]
+          }), "\n"]
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_v2_data_edit_column_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
         level: 3
@@ -694,6 +612,99 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 51002:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13897);
+
+
+const frontMatter = {
+	id: 'set-event-history',
+	title: '이벤트 기록',
+	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
+	keywords: [
+		'Oracle Pro',
+		'경고 알림',
+		'이벤트 기록',
+		'데이터베이스'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "oracle-pro/set-event-history",
+  "title": "이벤트 기록",
+  "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
+  "source": "@site/docs/oracle-pro/set-event-history.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/set-event-history",
+  "permalink": "/whatap-docs/oracle-pro/set-event-history",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/oracle-pro/set-event-history.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-event-history",
+    "title": "이벤트 기록",
+    "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
+    "keywords": [
+      "Oracle Pro",
+      "경고 알림",
+      "이벤트 기록",
+      "데이터베이스"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "dboracledmaSidebar",
+  "previous": {
+    "title": "이벤트 수신 설정",
+    "permalink": "/whatap-docs/oracle-pro/set-receive-event"
+  },
+  "next": {
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/oracle-pro/set-event-format"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 
