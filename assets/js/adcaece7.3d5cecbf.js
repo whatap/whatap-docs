@@ -1084,6 +1084,23 @@ function _python_track_http_trs_createMdxContent(props) {
           }), " 창에서 수집 제외됩니다."]
         })
       }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: [(0,jsx_runtime.jsx)(_components.strong, {
+          children: "trace_useragent_enabled"
+        }), " ", (0,jsx_runtime.jsx)("span", {
+          class: "type",
+          children: "Boolean"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["기본값 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "false"
+        })]
+      }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
+        children: ["값이 ", (0,jsx_runtime.jsx)(_components.code, {
+          children: "true"
+        }), "이면 트랜잭션의 유저 에이전트 정보를 수집합니다."]
+      }), "\n"]
     }), "\n"]
   });
 }
