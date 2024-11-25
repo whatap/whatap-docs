@@ -4227,7 +4227,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/index',
@@ -4235,9 +4235,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_7_0',
-                  // className: 'new',
+                  id: 'release-notes/server/server-2_7_1',
+                  className: 'new',
                 },
+                'release-notes/server/server-2_7_0',
                 'release-notes/server/server-2_6_9',
                 'release-notes/server/server-2_6_8',
                 'release-notes/server/server-2_6_7',
@@ -4302,7 +4303,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4310,9 +4311,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_15',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1_7_16',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_15',
                 'release-notes/k8s/k8s-1_7_14',
                 'release-notes/k8s/k8s-1_7_13',
                 'release-notes/k8s/k8s-1_7_12',
@@ -4321,8 +4323,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_7_9',
                 'release-notes/k8s/k8s-1_7_8',
                 'release-notes/k8s/k8s-1_7_7',
-                'release-notes/k8s/k8s-1_7_6',
-                'release-notes/k8s/k8s-1_7_5',
                 'release-notes/k8s/k8s-previous',
               ],
             },
