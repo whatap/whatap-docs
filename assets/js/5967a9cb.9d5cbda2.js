@@ -199,7 +199,7 @@ function _createMdxContent(props) {
               children: "그룹명"
             }), "과 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
               children: "그룹 내 서버의 개수"
-            }), " 정보를 바탕으로를 표시됩니다."]
+            }), " 정보를 바탕으로 표시됩니다."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.blockquote, {
             children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
               children: ["예, ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {

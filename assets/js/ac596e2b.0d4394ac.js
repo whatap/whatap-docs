@@ -646,7 +646,7 @@ function _createMdxContent(props) {
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: "전체 메모리 중 Used 메모리와 Cached 메모리의 합계 비율을 표시합니다."
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
-              children: "Windows는 ***[MEM] Used(%)***로 대체"
+              children: "Windows는 ***[MEM] Used(%)***로 표시"
             })]
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
