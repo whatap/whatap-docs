@@ -2398,8 +2398,10 @@ const sidebars = {
           },
           items: [
             'mssql/agent-dbx-settings',
+            'mssql/agent-xos-settings',
           ],
         },
+        'mssql/cloudsettings',
         'mssql/agent-manage',
         {
           type: 'category',
