@@ -6355,6 +6355,20 @@ const sidebars = {
             'server/compoundeye',
             {
               type: 'category',
+              label: '서버 인벤토리 맵',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: `server/server-inventory-map`,
+              },
+              items: [
+                `server/server-inventory-map-details`,
+                `server/server-inventory-map-group`
+              ]
+            },
+            {
+              type: 'category',
               label: 'Flex 보드',
               collapsible: true,
               collapsed: true,
