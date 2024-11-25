@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48218],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[39635],{
 
-/***/ 12676:
+/***/ 89227:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,39 +18,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const frontMatter = {
-	id: 'k8s-1_7_16',
-	title: 'Kubernetes Agent v1.7.16',
+	id: 'k8s-1_7_6',
+	title: 'Kubernetes Agent v1.7.6',
 	toc_max_heading_level: 2,
-	pagination_next: 'release-notes/k8s/k8s-1_7_15',
+	pagination_next: 'release-notes/k8s/k8s-1_7_5',
 	displayed_sidebar: 'releaseSidebar',
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "release-notes/k8s/k8s-1_7_16",
-  "title": "Kubernetes Agent v1.7.16",
-  "description": "2024년 11월 22일",
-  "source": "@site/docs/release-notes/k8s/k8s-1.7.16.mdx",
+  "id": "release-notes/k8s/k8s-1_7_6",
+  "title": "Kubernetes Agent v1.7.6",
+  "description": "2024년 07월 01일",
+  "source": "@site/docs/release-notes/k8s/k8s-1.7.6.mdx",
   "sourceDirName": "release-notes/k8s",
-  "slug": "/release-notes/k8s/k8s-1_7_16",
-  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_16",
+  "slug": "/release-notes/k8s/k8s-1_7_6",
+  "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_6",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.7.16.mdx",
+  "editUrl": "undefined/docs/release-notes/k8s/k8s-1.7.6.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "id": "k8s-1_7_16",
-    "title": "Kubernetes Agent v1.7.16",
+    "id": "k8s-1_7_6",
+    "title": "Kubernetes Agent v1.7.6",
     "toc_max_heading_level": 2,
-    "pagination_next": "release-notes/k8s/k8s-1_7_15",
+    "pagination_next": "release-notes/k8s/k8s-1_7_5",
     "displayed_sidebar": "releaseSidebar",
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
   "next": {
-    "title": "Kubernetes Agent v1.7.15",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_15"
+    "title": "Kubernetes Agent v1.7.5",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_5"
   }
 };
 const assets = {
@@ -64,8 +64,10 @@ function _createMdxContent(props) {
   const _components = {
     a: "a",
     admonition: "admonition",
+    code: "code",
     li: "li",
     p: "p",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -73,47 +75,87 @@ function _createMdxContent(props) {
   if (!Status) _missingMdxReference("Status", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-      children: "2024년 11월 22일"
+      children: "2024년 07월 01일"
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
       children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "1",
-            children: "New"
-          }), " etcd 모니터링을 위한 데이터 수집 활성화 및 비활성화 기능 추가"]
+            children: "Feature"
+          }), " 태그 카운트 추가"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "etcd 리더 존재 여부 수집"
-            }), "\n"]
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "kube_service_pod_mapping"
+            }), " 항목 추가"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "etcd 리더 변경 추이 수집"
-            }), "\n"]
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "kube_pod"
+            }), " 카네고리에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "podUid"
+            }), " 태그 추가"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "etcd commit & apply 추이 수집"
-            }), "\n"]
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "kube_service"
+            }), " 카테고리에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "externalIp"
+            }), " 태그, PORT(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "portName"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "nodePort"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "servicePort"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "targetPort"
+            }), ") 필드 추가"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "kube_event"
+            }), " 카테고리에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "watch_event_type"
+            }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "resource_version"
+            }), " 데이터 추가"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "kube_event"
+            }), " 중복 알림 현상 제거"]
           }), "\n"]
         }), "\n"]
       }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
           children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Status, {
-            priority: "1",
-            children: "New"
-          }), " Foreign Project 기능 활성화 및 비활성화 기능 추가"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.li, {
-            children: "Kubernetes 외부 프로젝트에서 활성화된 모니터링과의 연결 데이터 수집"
-          }), "\n"]
+            children: "Feature"
+          }), " ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+            children: "whatap-node-helper"
+          }), " 컨테이너 환경변수(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "env"
+          }), ")에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+            children: "WHATAP_JAVA_AGENT_PATH"
+          }), " 추가"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+          type: "note",
+          children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+                children: "해당 환경변수에 와탭 자바 에이전트 jar 파일 경로를 설정하면 컨테이너 id 연동할 수 있습니다."
+              }), "\n"]
+            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+                children: ["이 기능은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "../java/java-2_2_33",
+                  children: "Java agent 2.2.33"
+                }), " 버전 이상에서 지원합니다."]
+              }), "\n"]
+            }), "\n"]
+          })
         }), "\n"]
       }), "\n"]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
       type: "info",
       children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
         children: ["Agent download: ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-          href: "https://repo.whatap.io/docker/kube_mon_1.7.16.tar",
-          children: "kube_mon_1.7.16.tar"
+          href: "https://repo.whatap.io/docker/kube_mon_1.7.6.tar",
+          children: "kube_mon_1.7.6.tar"
         })]
       })
     })]

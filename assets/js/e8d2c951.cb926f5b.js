@@ -45,8 +45,8 @@ const metadata = {
   },
   "sidebar": "releaseSidebar",
   "previous": {
-    "title": "Kubernetes Agent v1.7.5",
-    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_5"
+    "title": "Kubernetes Agent v1.7.7",
+    "permalink": "/whatap-docs/release-notes/k8s/k8s-1_7_7"
   },
   "next": {
     "title": "DBX Agent Release Notes",
