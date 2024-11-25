@@ -2451,7 +2451,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/analysis-count-trend',
-                'mssql/analysis-lock-and-deadlock',
+                'mssql/analysis-lock-tree',
+                'mssql/analysis-deadlock',
                 'mssql/analysis-databaseparameter',
               ]
             },
@@ -2654,7 +2655,8 @@ const sidebars = {
                 'mssql-v1/set-receive-event',
                 'mssql-v1/set-event-history',
                 'mssql-v1/set-event-format',
-                'mssql-v1/real-time-notification'
+                'mssql-v1/real-time-notification',
+                'mssql-v1/common-alert'
               ],
             },
             'mssql-v1/labs'
