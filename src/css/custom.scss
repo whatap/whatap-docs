@@ -2216,6 +2216,10 @@ main {
     img[src*='whatap_kubernetes_application_agent_access_key'] {
       width: 800px;
     }
+    img[src*='k8s-foreign-project-container-map'] {
+      height: 800px;
+      max-width: 600px;
+    }
     img[alt*='light'], img[alt*='dark'] {
       background-color: #fff;
     }
