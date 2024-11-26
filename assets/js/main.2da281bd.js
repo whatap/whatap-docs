@@ -22254,9 +22254,9 @@ var routesChunkNames = __webpack_require__(84054);
         /*require.resolve*/(26305)
     ],
     "de5fbabe": [
-        ()=>__webpack_require__.e(/* import() | de5fbabe */ 91227).then(__webpack_require__.bind(__webpack_require__, 78352)),
+        ()=>__webpack_require__.e(/* import() | de5fbabe */ 91227).then(__webpack_require__.bind(__webpack_require__, 78961)),
         "@site/docs/release-notes/service/index.mdx",
-        /*require.resolve*/(78352)
+        /*require.resolve*/(78961)
     ],
     "de927b5f": [
         ()=>__webpack_require__.e(/* import() | de927b5f */ 12377).then(__webpack_require__.bind(__webpack_require__, 61127)),
