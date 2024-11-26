@@ -1594,7 +1594,7 @@ function billing_createMdxContent(props) {
           }), "\n"]
         }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
           children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
-            children: ["통계(5분/1시간) 데이터 보존 기간: ", (0,jsx_runtime.jsx)(_components.strong, {
+            children: ["통계 데이터(5분/1시간) 보존 기간: ", (0,jsx_runtime.jsx)(_components.strong, {
               children: "1년"
             })]
           }), "\n"]
@@ -1612,7 +1612,7 @@ function billing_createMdxContent(props) {
             children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
               children: [(0,jsx_runtime.jsx)(_components.strong, {
                 children: "Network"
-              }), " 상품의 경우, 통계(5분/1시간) 데이터 보존 기간은 ", (0,jsx_runtime.jsx)(_components.strong, {
+              }), " 상품의 경우, 통계 데이터(5분/1시간) 보존 기간은 ", (0,jsx_runtime.jsx)(_components.strong, {
                 children: "100일"
               }), "입니다."]
             }), "\n"]
