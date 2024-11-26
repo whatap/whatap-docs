@@ -2467,7 +2467,11 @@ const sidebars = {
               },
               items: [
                 'mssql/metrics-data-list',
-                'mssql/metrics-chart',
+                {
+                  type: 'doc',
+                  id: 'mssql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
               ]
@@ -2479,8 +2483,30 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/stat',
+                'mssql/procedure-stat',
+                'mssql/database-size',
                 'mssql/report-intro',
+                'mssql/job-info',
+                'mssql/backup-recovery-history'
               ],
+            },
+            {
+              type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/log-main'
+              },
+              items: [
+                'mssql/log-db',
+                'mssql/log-lt',
+                'mssql/log-exp',
+                'mssql/log-search',
+                'mssql/log-setting',
+                'mssql/log-parser',
+              ]
             },
             {
               type: 'category',
