@@ -718,7 +718,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
+        additionalLanguages: [ 'php', 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img:not(.ico-link)',
