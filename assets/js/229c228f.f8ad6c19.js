@@ -476,7 +476,7 @@ function _createMdxContent(props) {
           }), " 메뉴에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
             sid: "TTL06224",
             className: "uitext"
-          }), " 칭 팝업 시 쿼리 텍스트가 보이지 않는 현상 수정"]
+          }), " 창 팝업 시 쿼리 텍스트가 보이지 않는 현상 수정"]
         })]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
