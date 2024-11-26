@@ -2467,7 +2467,11 @@ const sidebars = {
               },
               items: [
                 'mssql/metrics-data-list',
-                'mssql/metrics-chart',
+                {
+                  type: 'doc',
+                  id: 'mssql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
               ]
@@ -2479,7 +2483,10 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/stat',
+                'mssql/procedure-stat',
+                'mssql/database-size',
                 'mssql/report-intro',
+                'mssql/job-info'
               ],
             },
             {
