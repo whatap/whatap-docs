@@ -6610,6 +6610,7 @@ const sidebars = {
                     'kubernetes/container-view',
                     'kubernetes/container-group',
                     'kubernetes/container-status',
+                    'kubernetes/foreign-project',
                   ]
                 },
                 {
