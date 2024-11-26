@@ -2497,7 +2497,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc',
-                id: 'mysql/log-main'
+                id: 'mssql/log-main'
               },
               items: [
                 'mssql/log-db',
