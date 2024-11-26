@@ -6267,6 +6267,7 @@ const sidebars = {
               id: 'browser/warning-notice-v2',
               className: 'newfunc'
             },
+            'browser/hitmap-notice',
             'browser/set-receive-event',
             'browser/set-event-history',
             'browser/real-time-notification',
