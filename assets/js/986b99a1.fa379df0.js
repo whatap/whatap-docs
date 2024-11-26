@@ -238,6 +238,10 @@ const billing_toc = [{
   "value": "와탭 상품의 이용 요금 계산 방식",
   "id": "countbilling",
   "level": 2
+}, {
+  "value": "데이터 보존 기간",
+  "id": "데이터-보존-기간",
+  "level": 2
 }];
 function billing_createMdxContent(props) {
   const _components = {
@@ -1573,6 +1577,56 @@ function billing_createMdxContent(props) {
         }), " 권한을 가진 계정의 이메일로 받을 수 있습니다. 전월 이용분은 1일에서 말일까지 이용한 내용입니다. 청구서는 계정별로 계정에 등록한 유료 상품 목록을 토대로 작성합니다."]
       }), (0,jsx_runtime.jsx)(_components.p, {
         children: "만약 유료 상품 가입 시기가 월 중일 때는 이용한 기간을 일할 계산하여 청구합니다."
+      })]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.section, {
+      className: "remark-sectionize-h2",
+      children: [(0,jsx_runtime.jsx)(_components.h2, {
+        id: "데이터-보존-기간",
+        children: "데이터 보존 기간"
+      }), (0,jsx_runtime.jsx)(_components.p, {
+        children: "와탭의 모든 상품별 데이터 보존 기간은 다음과 같이 제공합니다."
+      }), (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["RAW 데이터(실시간 데이터) 보존 기간: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1개월"
+            })]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["통계(5분/1시간) 데이터 보존 기간: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1년"
+            })]
+          }), "\n"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+            children: ["프로파일 데이터 보존 기간: ", (0,jsx_runtime.jsx)(_components.strong, {
+              children: "1개월"
+            })]
+          }), "\n"]
+        }), "\n"]
+      }), (0,jsx_runtime.jsx)(_components.admonition, {
+        type: "note",
+        children: (0,jsx_runtime.jsxs)(_components.ul, {
+          children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: [(0,jsx_runtime.jsx)(_components.strong, {
+                children: "Network"
+              }), " 상품의 경우, 통계(5분/1시간) 데이터 보존 기간은 ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "100일"
+              }), "입니다."]
+            }), "\n"]
+          }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+            children: ["\n", (0,jsx_runtime.jsxs)(_components.p, {
+              children: ["로그 모니터링 기능을 활성화한 경우, 로그 데이터의 보존 기간은 기본 ", (0,jsx_runtime.jsx)(_components.strong, {
+                children: "1일"
+              }), "입니다. 사용자가 원하는 기간으로 변경할 수 있습니다. 자세한 내용은 ", (0,jsx_runtime.jsx)(_components.a, {
+                href: "../log/log-setting#log-data-setting",
+                children: "다음 문서"
+              }), "를 참조하세요."]
+            }), "\n"]
+          }), "\n"]
+        })
       })]
     })]
   });
