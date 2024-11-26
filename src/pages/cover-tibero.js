@@ -28,7 +28,7 @@ export default function Cover() {
           Tibero Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2024.11.04
+            release date. 2024.12.02
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
