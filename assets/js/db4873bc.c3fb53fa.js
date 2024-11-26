@@ -362,7 +362,7 @@ function _createMdxContent(props) {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: ["Deployment의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "whatap-control-plane-helper"
-            }), " 컨테이너에 etcd 관련 설정을 추가하세요."]
+            }), " 컨테이너 내 args 섹션에 etcd 관련 설정을 추가하세요."]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-yaml",
