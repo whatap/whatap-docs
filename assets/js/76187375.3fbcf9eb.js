@@ -361,8 +361,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "kube-apiserver 메트릭스 조회",
-    "permalink": "/whatap-docs/kubernetes/kube-apiserver-metrics-search"
+    "title": "etcd 대시보드",
+    "permalink": "/whatap-docs/kubernetes/etcd-dashboard"
   },
   "next": {
     "title": "Ingress 목록",

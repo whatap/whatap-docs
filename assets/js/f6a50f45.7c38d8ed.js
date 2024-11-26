@@ -616,8 +616,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/kube-apiserver-dashboard"
   },
   "next": {
-    "title": "Service 목록",
-    "permalink": "/whatap-docs/kubernetes/service-list"
+    "title": "etcd 대시보드",
+    "permalink": "/whatap-docs/kubernetes/etcd-dashboard"
   }
 };
 const assets = {
