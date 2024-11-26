@@ -6695,6 +6695,7 @@ const sidebars = {
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/kube-apiserver-metrics-search',
+                'kubernetes/etcd-dashboard',
                 'kubernetes/service-list',
                 'kubernetes/ingress-list',
                 'kubernetes/resource-namespace',
