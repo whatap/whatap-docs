@@ -2363,7 +2363,7 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'SQL Server 모니터링',
+      label: 'SQL Server V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2398,8 +2398,10 @@ const sidebars = {
           },
           items: [
             'mssql/agent-dbx-settings',
+            'mssql/agent-xos-settings',
           ],
         },
+        'mssql/cloudsettings',
         'mssql/agent-manage',
         {
           type: 'category',
@@ -2449,7 +2451,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/analysis-count-trend',
-                'mssql/analysis-lock-and-deadlock',
+                'mssql/analysis-lock-tree',
+                'mssql/analysis-deadlock',
                 'mssql/analysis-databaseparameter',
               ]
             },
@@ -2464,7 +2467,11 @@ const sidebars = {
               },
               items: [
                 'mssql/metrics-data-list',
-                'mssql/metrics-chart',
+                {
+                  type: 'doc',
+                  id: 'mssql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
               ]
@@ -2476,8 +2483,30 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/stat',
+                'mssql/procedure-stat',
+                'mssql/database-size',
                 'mssql/report-intro',
+                'mssql/job-info',
+                'mssql/backup-recovery-history'
               ],
+            },
+            {
+              type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/log-main'
+              },
+              items: [
+                'mssql/log-db',
+                'mssql/log-lt',
+                'mssql/log-exp',
+                'mssql/log-search',
+                'mssql/log-setting',
+                'mssql/log-parser',
+              ]
             },
             {
               type: 'category',
@@ -2506,6 +2535,157 @@ const sidebars = {
               ],
             },
             'mssql/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  mssqlV1Sidebar: [
+    {
+      type: 'category',
+      label: 'SQL Server V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mssql-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mssql-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql-v1/install-agent',
+            'mssql-v1/after-install-agent',
+            'mssql-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql-v1/agent-settings'
+          },
+          items: [
+            'mssql-v1/agent-dbx-settings',
+          ],
+        },
+        'mssql-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/dashboard-intro'
+              },
+              items: [
+                'mssql-v1/instance-list',
+                'mssql-v1/instance-monitoring',
+                'mssql-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/flex-board',
+              },
+              items: [
+                'mssql-v1/flexboard-template',
+                'mssql-v1/flexboard-create',
+                'mssql-v1/flexboard-manage',
+                'mssql-v1/flexboard-metric-widget',
+                'mssql-v1/flexboard-widget-manage',
+                'mssql-v1/flexboard-widget-template',
+                'mssql-v1/flexboard-mode',
+                'mssql-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql-v1/analysis-count-trend',
+                'mssql-v1/analysis-lock-and-deadlock',
+                'mssql-v1/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/metrics-intro'
+              },
+              items: [
+                'mssql-v1/metrics-data-list',
+                'mssql-v1/metrics-chart',
+                'mssql-v1/metrics-search',
+                'mssql-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql-v1/stat',
+                'mssql-v1/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/set-notice',
+              },
+              items: [
+                'mssql-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mssql-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'mssql-v1/metric-warning-notice',
+                'mssql-v1/set-notification-message',
+                'mssql-v1/set-event-detect-anomal',
+                'mssql-v1/set-receive-event',
+                'mssql-v1/set-event-history',
+                'mssql-v1/set-event-format',
+                'mssql-v1/real-time-notification',
+                'mssql-v1/common-alert'
+              ],
+            },
+            'mssql-v1/labs'
           ]
         }
       ],

@@ -1395,17 +1395,23 @@ main {
         list-style: none;
         padding-left: 0;
         li {
-          border-bottom: 1px dotted;
+          border-top: 1px dotted;
           margin-top: 15px;
-          padding-bottom: 15px;
-          &:last-of-type {
-            border-bottom: none;
+          padding-top: 15px;
+          &:first-of-type {
+            border-top: none;
           }
           p{
+            margin-bottom: 0;
             &:first-of-type {
               font-size: 1.2rem;
             }
           }
+        }
+      }
+      ul + ul {
+        li {
+          border-top: 1px dotted !important;
         }
       }
     }
