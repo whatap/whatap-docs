@@ -121,8 +121,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/container-group"
   },
   "next": {
-    "title": "컨테이너 맵 상세 분석",
-    "permalink": "/whatap-docs/kubernetes/container-map-detail-mode"
+    "title": "외부 프로젝트 연동과 설정",
+    "permalink": "/whatap-docs/kubernetes/foreign-project"
   }
 };
 const assets = {

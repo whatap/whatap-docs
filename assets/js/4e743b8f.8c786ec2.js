@@ -55,8 +55,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "컨테이너 맵 지표와 상태",
-    "permalink": "/whatap-docs/kubernetes/container-status"
+    "title": "외부 프로젝트 연동과 설정",
+    "permalink": "/whatap-docs/kubernetes/foreign-project"
   },
   "next": {
     "title": "Target Information",
