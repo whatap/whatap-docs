@@ -2492,6 +2492,24 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mysql/log-main'
+              },
+              items: [
+                'mssql/log-db',
+                'mssql/log-lt',
+                'mssql/log-exp',
+                'mssql/log-search',
+                'mssql/log-setting',
+                'mssql/log-parser',
+              ]
+            },
+            {
+              type: 'category',
               label: '경고 알림',
               collapsible: true,
               collapsed: true,
