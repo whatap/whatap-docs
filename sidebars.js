@@ -2486,7 +2486,8 @@ const sidebars = {
                 'mssql/procedure-stat',
                 'mssql/database-size',
                 'mssql/report-intro',
-                'mssql/job-info'
+                'mssql/job-info',
+                'mssql/backup-recovery-history'
               ],
             },
             {
