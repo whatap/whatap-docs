@@ -762,7 +762,7 @@ function _createMdxContent(props) {
             sid: "agent_configuration",
             className: "uitext"
           }), " 메뉴에서 확인할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "../java/set-agent",
+            href: "set-agent",
             children: "다음 문서"
           }), "를 참조하세요."]
         })
