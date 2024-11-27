@@ -429,7 +429,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/opt/postgresql/logs/postgresql.log\nfile1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log\nfile2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log\nfile3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log\n"
+                children: "file=/opt/postgresql/logs/postgresql.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -438,7 +438,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/var/log/mysqld.log\nfile1=/var/log/mysql_history.log\nfile2=/var/lib/mysql/dbx-database-slow.log\n"
+                children: "file=/var/log/mysqld.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -495,6 +495,23 @@ function _createMdxContent(props) {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
                 children: "# example\nfile=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLOG\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "tip",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모니터링하려며는 로그 파일을 추가하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file1"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file2"
+              }), "과 같은 방식으로 옵션을 추가하세요."]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"xos.conf\"",
+                children: "file={log_file_path1}\nfile1={log_file_path2}\nfile2={log_file_path3}\nfile3={log_file_path4}\n"
               })
             })]
           }), "\n"]

@@ -428,6 +428,9 @@ function _createMdxContent(props) {
                   href: "log-php",
                   children: "PHP"
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "log-nodejs",
+                  children: "Node.js"
+                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-python",
                   children: "Python"
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {

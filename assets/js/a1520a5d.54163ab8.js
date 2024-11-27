@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[55845],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[84746],{
 
 /***/ 58317:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -427,6 +427,9 @@ function _createMdxContent(props) {
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-php",
                   children: "PHP"
+                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "log-nodejs",
+                  children: "Node.js"
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-python",
                   children: "Python"
@@ -2075,7 +2078,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 49245:
+/***/ 97681:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2100,23 +2103,22 @@ const frontMatter = {
 	keywords: [
 		'로그',
 		'로그 모니터링',
-		'설정하기',
-		'MySQL'
+		'설정하기'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/log-setting",
+  "id": "log/log-setting",
   "title": "로그 설정",
   "description": "로그 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/mysql/log-setting.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/log-setting",
-  "permalink": "/whatap-docs/mysql/log-setting",
+  "source": "@site/docs/log/log-setting.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-setting",
+  "permalink": "/whatap-docs/log/log-setting",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/log-setting.mdx",
+  "editUrl": "undefined/docs/log/log-setting.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2127,19 +2129,18 @@ const metadata = {
     "keywords": [
       "로그",
       "로그 모니터링",
-      "설정하기",
-      "MySQL"
+      "설정하기"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "logSidebar",
   "previous": {
-    "title": "로그 검색",
-    "permalink": "/whatap-docs/mysql/log-search"
+    "title": "Kubernetes",
+    "permalink": "/whatap-docs/log/log-k8s"
   },
   "next": {
     "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/mysql/log-parser"
+    "permalink": "/whatap-docs/log/log-parser"
   }
 };
 const assets = {

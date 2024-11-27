@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[90125],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[89631],{
 
 /***/ 20234:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -429,7 +429,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/opt/postgresql/logs/postgresql.log\nfile1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log\nfile2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log\nfile3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log\n"
+                children: "file=/opt/postgresql/logs/postgresql.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -438,7 +438,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/var/log/mysqld.log\nfile1=/var/log/mysql_history.log\nfile2=/var/lib/mysql/dbx-database-slow.log\n"
+                children: "file=/var/log/mysqld.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -495,6 +495,23 @@ function _createMdxContent(props) {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
                 children: "# example\nfile=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLOG\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "tip",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모니터링하려며는 로그 파일을 추가하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file1"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file2"
+              }), "과 같은 방식으로 옵션을 추가하세요."]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"xos.conf\"",
+                children: "file={log_file_path1}\nfile1={log_file_path2}\nfile2={log_file_path3}\nfile3={log_file_path4}\n"
               })
             })]
           }), "\n"]
@@ -663,7 +680,7 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 4940:
+/***/ 16797:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -686,51 +703,47 @@ __webpack_require__.r(__webpack_exports__);
 const frontMatter = {
 	id: 'agent-xos-settings',
 	title: 'XOS 에이전트 설정',
-	description: '데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.',
+	description: '데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.',
 	keywords: [
-		'Oracle',
-		'데이터베이스',
+		'CUBRID',
 		'데이터베이스 모니터링',
-		'에이전트',
-		'XOS'
+		'XOS 에이전트'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-v1/agent-xos-settings",
+  "id": "cubrid-v1/agent-xos-settings",
   "title": "XOS 에이전트 설정",
-  "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
-  "source": "@site/docs/oracle-v1/agent-xos-settings.mdx",
-  "sourceDirName": "oracle-v1",
-  "slug": "/oracle-v1/agent-xos-settings",
-  "permalink": "/whatap-docs/oracle-v1/agent-xos-settings",
+  "description": "데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
+  "source": "@site/docs/cubrid-v1/agent-xos-settings.mdx",
+  "sourceDirName": "cubrid-v1",
+  "slug": "/cubrid-v1/agent-xos-settings",
+  "permalink": "/whatap-docs/cubrid-v1/agent-xos-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-v1/agent-xos-settings.mdx",
+  "editUrl": "undefined/docs/cubrid-v1/agent-xos-settings.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "id": "agent-xos-settings",
     "title": "XOS 에이전트 설정",
-    "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
+    "description": "데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
     "keywords": [
-      "Oracle",
-      "데이터베이스",
+      "CUBRID",
       "데이터베이스 모니터링",
-      "에이전트",
-      "XOS"
+      "XOS 에이전트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracleSidebar",
+  "sidebar": "cubridV1Sidebar",
   "previous": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/oracle-v1/agent-dbx-settings"
+    "permalink": "/whatap-docs/cubrid-v1/agent-dbx-settings"
   },
   "next": {
-    "title": "관리하기",
-    "permalink": "/whatap-docs/oracle-v1/agent-manage"
+    "title": "XCUB 에이전트 설정",
+    "permalink": "/whatap-docs/cubrid-v1/agent-xcub-settings"
   }
 };
 const assets = {

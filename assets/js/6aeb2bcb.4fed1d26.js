@@ -1,5 +1,100 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60885],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[8262],{
+
+/***/ 52214:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58317);
+
+
+const frontMatter = {
+	id: 'log-setting',
+	title: '로그 설정',
+	description: '로그 모니터링 설정 방법을 안내합니다.',
+	toc_max_heading_level: 3,
+	keywords: [
+		'로그',
+		'로그 모니터링',
+		'설정하기',
+		'Altibase'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/log-setting",
+  "title": "로그 설정",
+  "description": "로그 모니터링 설정 방법을 안내합니다.",
+  "source": "@site/docs/altibase/log-setting.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/log-setting",
+  "permalink": "/whatap-docs/altibase/log-setting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/log-setting.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-setting",
+    "title": "로그 설정",
+    "description": "로그 모니터링 설정 방법을 안내합니다.",
+    "toc_max_heading_level": 3,
+    "keywords": [
+      "로그",
+      "로그 모니터링",
+      "설정하기",
+      "Altibase"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "로그 검색",
+    "permalink": "/whatap-docs/altibase/log-search"
+  },
+  "next": {
+    "title": "로그 파싱하기",
+    "permalink": "/whatap-docs/altibase/log-parser"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 58317:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -427,6 +522,9 @@ function _createMdxContent(props) {
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-php",
                   children: "PHP"
+                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "log-nodejs",
+                  children: "Node.js"
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-python",
                   children: "Python"
@@ -2069,101 +2167,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 38231:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58317);
-
-
-const frontMatter = {
-	id: 'log-setting',
-	title: '로그 설정',
-	description: '로그 모니터링 설정 방법을 안내합니다.',
-	toc_max_heading_level: 3,
-	keywords: [
-		'로그',
-		'로그 모니터링',
-		'설정하기',
-		'Oracle Pro'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "oracle-pro/log-setting",
-  "title": "로그 설정",
-  "description": "로그 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/oracle-pro/log-setting.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/log-setting",
-  "permalink": "/whatap-docs/oracle-pro/log-setting",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/log-setting.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-setting",
-    "title": "로그 설정",
-    "description": "로그 모니터링 설정 방법을 안내합니다.",
-    "toc_max_heading_level": 3,
-    "keywords": [
-      "로그",
-      "로그 모니터링",
-      "설정하기",
-      "Oracle Pro"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "dboracledmaSidebar",
-  "previous": {
-    "title": "로그 검색",
-    "permalink": "/whatap-docs/oracle-pro/log-search"
-  },
-  "next": {
-    "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/oracle-pro/log-parser"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 

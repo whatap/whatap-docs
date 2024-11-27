@@ -1,5 +1,110 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80879],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[6236],{
+
+/***/ 89183:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94959);
+/* harmony import */ var _common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20234);
+/* harmony import */ var _common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(87793);
+/* harmony import */ var _common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(82319);
+/* harmony import */ var _common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9050);
+
+
+const frontMatter = {
+	id: 'agent-xos-settings',
+	title: 'XOS 에이전트 설정',
+	description: '데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.',
+	keywords: [
+		'Altibase',
+		'데이터베이스',
+		'에이전트',
+		'XOS'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/agent-xos-settings",
+  "title": "XOS 에이전트 설정",
+  "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
+  "source": "@site/docs/altibase/agent-xos-settings.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/agent-xos-settings",
+  "permalink": "/whatap-docs/altibase/agent-xos-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/agent-xos-settings.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "agent-xos-settings",
+    "title": "XOS 에이전트 설정",
+    "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
+    "keywords": [
+      "Altibase",
+      "데이터베이스",
+      "에이전트",
+      "XOS"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "DBX 에이전트 설정",
+    "permalink": "/whatap-docs/altibase/agent-dbx-settings"
+  },
+  "next": {
+    "title": "관리하기",
+    "permalink": "/whatap-docs/altibase/agent-manage"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+
+
+
+
+const toc = [..._common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      ver: "1.9.0"
+    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
+  });
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 20234:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -429,7 +534,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/opt/postgresql/logs/postgresql.log\nfile1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log\nfile2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log\nfile3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log\n"
+                children: "file=/opt/postgresql/logs/postgresql.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -438,7 +543,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/var/log/mysqld.log\nfile1=/var/log/mysql_history.log\nfile2=/var/lib/mysql/dbx-database-slow.log\n"
+                children: "file=/var/log/mysqld.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -495,6 +600,23 @@ function _createMdxContent(props) {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
                 children: "# example\nfile=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLOG\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "tip",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모니터링하려며는 로그 파일을 추가하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file1"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file2"
+              }), "과 같은 방식으로 옵션을 추가하세요."]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"xos.conf\"",
+                children: "file={log_file_path1}\nfile1={log_file_path2}\nfile2={log_file_path3}\nfile3={log_file_path4}\n"
               })
             })]
           }), "\n"]
@@ -731,111 +853,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 5636:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94959);
-/* harmony import */ var _common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20234);
-/* harmony import */ var _common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(87793);
-/* harmony import */ var _common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(82319);
-/* harmony import */ var _common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9050);
-
-
-const frontMatter = {
-	id: 'agent-xos-settings',
-	title: 'XOS 에이전트 설정',
-	description: '데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.',
-	keywords: [
-		'SQL Server',
-		'데이터베이스',
-		'에이전트',
-		'XOS'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "mssql/agent-xos-settings",
-  "title": "XOS 에이전트 설정",
-  "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
-  "source": "@site/docs/mssql/agent-xos-settings.mdx",
-  "sourceDirName": "mssql",
-  "slug": "/mssql/agent-xos-settings",
-  "permalink": "/whatap-docs/mssql/agent-xos-settings",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/mssql/agent-xos-settings.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "agent-xos-settings",
-    "title": "XOS 에이전트 설정",
-    "description": "데이터베이스 프로세스 모니터링 설정에 대해 알아봅니다.",
-    "keywords": [
-      "SQL Server",
-      "데이터베이스",
-      "에이전트",
-      "XOS"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "mssqlSidebar",
-  "previous": {
-    "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/mssql/agent-dbx-settings"
-  },
-  "next": {
-    "title": "클라우드 설정",
-    "permalink": "/whatap-docs/mssql/cloudsettings"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-
-
-
-
-const toc = [..._common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
-      ver: "2.2.0"
-    }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
-  });
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_6__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 

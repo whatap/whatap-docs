@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[98427],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[68632],{
 
 /***/ 20234:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -429,7 +429,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/opt/postgresql/logs/postgresql.log\nfile1=/opt/postgresql/data/logs/pg10/postgresql-Sun.log\nfile2=/opt/postgresql/data/logs/pg10/postgresql-Mon.log\nfile3=/opt/postgresql/data/logs/pg10/postgresql-Tue.log\n"
+                children: "file=/opt/postgresql/logs/postgresql.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -438,7 +438,7 @@ function _createMdxContent(props) {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
-                children: "file=/var/log/mysqld.log\nfile1=/var/log/mysql_history.log\nfile2=/var/lib/mysql/dbx-database-slow.log\n"
+                children: "file=/var/log/mysqld.log\n"
               })
             })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -495,6 +495,23 @@ function _createMdxContent(props) {
                 className: "language-ini",
                 metastring: "title='xos.conf'",
                 children: "# example\nfile=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLOG\n"
+              })
+            })]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+            type: "tip",
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: ["모니터링하려며는 로그 파일을 추가하려면 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file1"
+              }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "file2"
+              }), "과 같은 방식으로 옵션을 추가하세요."]
+            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                className: "language-ini",
+                metastring: "title=\"xos.conf\"",
+                children: "file={log_file_path1}\nfile1={log_file_path2}\nfile2={log_file_path3}\nfile3={log_file_path4}\n"
               })
             })]
           }), "\n"]
@@ -737,7 +754,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11897:
+/***/ 91106:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -751,10 +768,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20234);
-/* harmony import */ var _common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87793);
-/* harmony import */ var _common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(82319);
-/* harmony import */ var _common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(94959);
+/* harmony import */ var _common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94959);
+/* harmony import */ var _common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20234);
+/* harmony import */ var _common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(87793);
+/* harmony import */ var _common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(82319);
 /* harmony import */ var _common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9050);
 
 
@@ -763,7 +780,7 @@ const frontMatter = {
 	title: 'XOS 에이전트 설정',
 	description: '데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.',
 	keywords: [
-		'CUBRID',
+		'MySQL',
 		'데이터베이스 모니터링',
 		'XOS 에이전트'
 	],
@@ -771,16 +788,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid/agent-xos-settings",
+  "id": "mysql/agent-xos-settings",
   "title": "XOS 에이전트 설정",
   "description": "데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
-  "source": "@site/docs/cubrid/agent-xos-settings.mdx",
-  "sourceDirName": "cubrid",
-  "slug": "/cubrid/agent-xos-settings",
-  "permalink": "/whatap-docs/cubrid/agent-xos-settings",
+  "source": "@site/docs/mysql/agent-xos-settings.mdx",
+  "sourceDirName": "mysql",
+  "slug": "/mysql/agent-xos-settings",
+  "permalink": "/whatap-docs/mysql/agent-xos-settings",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid/agent-xos-settings.mdx",
+  "editUrl": "undefined/docs/mysql/agent-xos-settings.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -788,20 +805,20 @@ const metadata = {
     "title": "XOS 에이전트 설정",
     "description": "데이터베이스 서버의 자원을 추가로 모니터링하기 위한 설정 방법을 제공합니다.",
     "keywords": [
-      "CUBRID",
+      "MySQL",
       "데이터베이스 모니터링",
       "XOS 에이전트"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "cubridSidebar",
+  "sidebar": "mysqlSidebar",
   "previous": {
     "title": "DBX 에이전트 설정",
-    "permalink": "/whatap-docs/cubrid/agent-dbx-settings"
+    "permalink": "/whatap-docs/mysql/agent-dbx-settings"
   },
   "next": {
-    "title": "XCUB 에이전트 설정",
-    "permalink": "/whatap-docs/cubrid/agent-xcub-settings"
+    "title": "클라우드 설정",
+    "permalink": "/whatap-docs/mysql/cloudsettings"
   }
 };
 const assets = {
@@ -815,11 +832,11 @@ const assets = {
 
 
 
-const toc = [..._common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
+const toc = [..._common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* .toc */ .RM, ..._common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* .toc */ .RM, ..._common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* .toc */ .RM, ..._common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, ..._common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* .toc */ .RM];
 function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {
-      ver: "2.0.0"
+    children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_agent_xos_settings_desc_mdx__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_whatap_conf_mdx__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Ay, {}), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_xos_conf_mdx__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_import_v2_file_option_note_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {
+      ver: "1.6.8"
     }), "\n", "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_db_run_xos_mdx__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Ay, {})]
   });
 }

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[63627],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60885],{
 
 /***/ 58317:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -427,6 +427,9 @@ function _createMdxContent(props) {
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-php",
                   children: "PHP"
+                }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+                  href: "log-nodejs",
+                  children: "Node.js"
                 }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
                   href: "log-python",
                   children: "Python"
@@ -2075,7 +2078,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 6838:
+/***/ 38231:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2101,22 +2104,22 @@ const frontMatter = {
 		'로그',
 		'로그 모니터링',
 		'설정하기',
-		'Redis'
+		'Oracle Pro'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "redis/log-setting",
+  "id": "oracle-pro/log-setting",
   "title": "로그 설정",
   "description": "로그 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/redis/log-setting.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/log-setting",
-  "permalink": "/whatap-docs/redis/log-setting",
+  "source": "@site/docs/oracle-pro/log-setting.mdx",
+  "sourceDirName": "oracle-pro",
+  "slug": "/oracle-pro/log-setting",
+  "permalink": "/whatap-docs/oracle-pro/log-setting",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/redis/log-setting.mdx",
+  "editUrl": "undefined/docs/oracle-pro/log-setting.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2128,18 +2131,18 @@ const metadata = {
       "로그",
       "로그 모니터링",
       "설정하기",
-      "Redis"
+      "Oracle Pro"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "redisSidebar",
+  "sidebar": "dboracledmaSidebar",
   "previous": {
     "title": "로그 검색",
-    "permalink": "/whatap-docs/redis/log-search"
+    "permalink": "/whatap-docs/oracle-pro/log-search"
   },
   "next": {
     "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/redis/log-parser"
+    "permalink": "/whatap-docs/oracle-pro/log-parser"
   }
 };
 const assets = {
