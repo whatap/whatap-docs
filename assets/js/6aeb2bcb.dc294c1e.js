@@ -1,5 +1,100 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[5055],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[8262],{
+
+/***/ 52214:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58317);
+
+
+const frontMatter = {
+	id: 'log-setting',
+	title: '로그 설정',
+	description: '로그 모니터링 설정 방법을 안내합니다.',
+	toc_max_heading_level: 3,
+	keywords: [
+		'로그',
+		'로그 모니터링',
+		'설정하기',
+		'Altibase'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "altibase/log-setting",
+  "title": "로그 설정",
+  "description": "로그 모니터링 설정 방법을 안내합니다.",
+  "source": "@site/docs/altibase/log-setting.mdx",
+  "sourceDirName": "altibase",
+  "slug": "/altibase/log-setting",
+  "permalink": "/whatap-docs/altibase/log-setting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/altibase/log-setting.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "log-setting",
+    "title": "로그 설정",
+    "description": "로그 모니터링 설정 방법을 안내합니다.",
+    "toc_max_heading_level": 3,
+    "keywords": [
+      "로그",
+      "로그 모니터링",
+      "설정하기",
+      "Altibase"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "altibaseSidebar",
+  "previous": {
+    "title": "로그 검색",
+    "permalink": "/whatap-docs/altibase/log-search"
+  },
+  "next": {
+    "title": "로그 파싱하기",
+    "permalink": "/whatap-docs/altibase/log-parser"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 58317:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -18,6 +113,7 @@ const contentTitle = (/* unused pure expression or super */ null && (undefined))
 
 
 
+/*<Cmdname sid="DSC08751" className="uitext" />*/
 /*설정하기 문서에서는 각 패턴별 이미지 안내 제외 1031*/
 /*<ImgLang img='log-1st-grok.png' desc='GROK 파서 패턴 등록'/>*/
 /*<ImgLang img='log-1st-json.png' desc='JSON 포맷 파서 패턴 등록'/>*/
@@ -89,11 +185,11 @@ const toc = [{
   "id": "log-data-setting",
   "level": 3
 }, {
-  "value": "데이터 보존 기간",
+  "value": "로그 보존 기간",
   "id": "data-retention",
   "level": 4
 }, {
-  "value": "카테고리별 데이터 보존 기간",
+  "value": "로그 사용량",
   "id": "data-retention-per-category",
   "level": 4
 }, {
@@ -228,10 +324,11 @@ function _createMdxContent(props) {
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .useMDXComponents */ .R)(),
     ...props.components
-  }, {Cmdname, ImgLang, InDoc, Xclude} = _components;
+  }, {Cmdname, ImgLang, InDoc, UI, Xclude} = _components;
   if (!Cmdname) _missingMdxReference("Cmdname", true);
   if (!ImgLang) _missingMdxReference("ImgLang", true);
   if (!InDoc) _missingMdxReference("InDoc", true);
+  if (!UI) _missingMdxReference("UI", true);
   if (!Xclude) _missingMdxReference("Xclude", true);
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InDoc, {
@@ -527,9 +624,8 @@ function _createMdxContent(props) {
         }), " 영역에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "log_usage",
           className: "uitext"
-        }), "을 확인할 수 있습니다. 또한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-          sid: "data_retention",
-          className: "uitext"
+        }), "을 확인할 수 있습니다. 또한 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+          children: "로그 보존 기간"
         }), " 및 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "log_lookup_password",
           className: "uitext"
@@ -539,9 +635,15 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "data-retention",
-        children: "데이터 보존 기간"
+        children: "로그 보존 기간"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["공통으로 적용할 기본(default) 데이터 보존 기간입니다. 미지정 시 기본값은 1일입니다. 카테고리별 데이터 보존 기간을 별도로 설정하지 않으면 이 데이터 보존 기간이 기본적으로 적용됩니다. 카테고리별 데이터 보존 기간을 설정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+        children: ["공통으로 적용할 기본(default) 데이터 보존 기간입니다. 미지정 시 기본값은 1일입니다. 로그 보존 기간 선택 옵션 외에 사용자가 원하는 기간을 입력할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "log_usage",
+          className: "uitext"
+        }), " 목록에서 별도로 설정하지 않으면 이 로그 데이터 보존 기간이 기본적으로 적용됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "log_usage",
+          className: "uitext"
+        }), " 목록에서 카테고리별 데이터 보존 기간을 설정하고 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "initialized",
           className: "uitext"
         }), " 버튼을 선택하면 기본 데이터 보존 기간으로 초기화됩니다."]
@@ -550,9 +652,12 @@ function _createMdxContent(props) {
       className: "remark-sectionize-h4",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h4, {
         id: "data-retention-per-category",
-        children: "카테고리별 데이터 보존 기간"
+        children: "로그 사용량"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-        children: ["카테고리별 로그 데이터 보존 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+          sid: "log_usage",
+          className: "uitext"
+        }), " 목록에서 카테고리별 로그 데이터 보존 기간을 지정할 수 있습니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
           children: "로그 수"
         }), "는 해당 기간 동안 쌓인 로그 건수를 의미합니다. 예를 들어 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
           sid: "daily_log_count",
@@ -2059,101 +2164,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 43825:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(58317);
-
-
-const frontMatter = {
-	id: 'log-setting',
-	title: '로그 설정',
-	description: '로그 모니터링 설정 방법을 안내합니다.',
-	toc_max_heading_level: 3,
-	keywords: [
-		'로그',
-		'로그 모니터링',
-		'설정하기',
-		'PostgreSQL'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "postgresql/log-setting",
-  "title": "로그 설정",
-  "description": "로그 모니터링 설정 방법을 안내합니다.",
-  "source": "@site/docs/postgresql/log-setting.mdx",
-  "sourceDirName": "postgresql",
-  "slug": "/postgresql/log-setting",
-  "permalink": "/whatap-docs/postgresql/log-setting",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/postgresql/log-setting.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-setting",
-    "title": "로그 설정",
-    "description": "로그 모니터링 설정 방법을 안내합니다.",
-    "toc_max_heading_level": 3,
-    "keywords": [
-      "로그",
-      "로그 모니터링",
-      "설정하기",
-      "PostgreSQL"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "postgreSidebar",
-  "previous": {
-    "title": "로그 검색",
-    "permalink": "/whatap-docs/postgresql/log-search"
-  },
-  "next": {
-    "title": "로그 파싱하기",
-    "permalink": "/whatap-docs/postgresql/log-parser"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_settings_102_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 
