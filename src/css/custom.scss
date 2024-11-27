@@ -320,7 +320,7 @@ html[lang='ja-JP'] {
       color: #333333;
       font-size: var(--ifm-body-small-size);
       font-weight: normal;
-      &:nth-of-type(13), &:last-of-type() {
+      &:nth-of-type(13), &:last-of-type {
         margin-bottom: 0px;
       }
       a {
