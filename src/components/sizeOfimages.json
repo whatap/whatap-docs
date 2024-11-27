@@ -3257,11 +3257,11 @@
   },
   "billing-pay-list-en.png": {
     "width": 1200,
-    "height": 521
+    "height": 520
   },
   "billing-pay-list-ja.png": {
     "width": 1200,
-    "height": 521
+    "height": 520
   },
   "billing-pay-list.png": {
     "width": 1200,
@@ -3839,6 +3839,18 @@
     "width": 1200,
     "height": 277
   },
+  "browser-event-ajax-hitmap-en.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "browser-event-ajax-hitmap-ja.png": {
+    "width": 1200,
+    "height": 668
+  },
+  "browser-event-ajax-hitmap.png": {
+    "width": 1200,
+    "height": 668
+  },
   "browser-event-history-en.png": {
     "width": 1200,
     "height": 707
@@ -3874,6 +3886,42 @@
   "browser-flexboard-custom-event-widget.png": {
     "width": 1200,
     "height": 527
+  },
+  "browser-ip-statistics-set-custom-time-en.png": {
+    "width": 400,
+    "height": 417
+  },
+  "browser-ip-statistics-set-custom-time-ja.png": {
+    "width": 400,
+    "height": 426
+  },
+  "browser-ip-statistics-set-custom-time.png": {
+    "width": 400,
+    "height": 431
+  },
+  "browser-ip-statistics-set-time-select-options-en.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-ip-statistics-set-time-select-options-ja.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-ip-statistics-set-time-select-options.png": {
+    "width": 600,
+    "height": 200
+  },
+  "browser-ipload-statistics-en.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "browser-ipload-statistics-ja.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "browser-ipload-statistics.png": {
+    "width": 1200,
+    "height": 1054
   },
   "browser-lcp-widget-en.png": {
     "width": 1200,
@@ -4222,6 +4270,150 @@
   "browser-start.png": {
     "width": 1091,
     "height": 527
+  },
+  "browser-statistics-ip-group-filter-en.png": {
+    "width": 600,
+    "height": 399
+  },
+  "browser-statistics-ip-group-filter-ja.png": {
+    "width": 600,
+    "height": 371
+  },
+  "browser-statistics-ip-group-filter.png": {
+    "width": 600,
+    "height": 359
+  },
+  "browser-statistics-ip-group-list-en.png": {
+    "width": 800,
+    "height": 87
+  },
+  "browser-statistics-ip-group-list-ja.png": {
+    "width": 800,
+    "height": 87
+  },
+  "browser-statistics-ip-group-list.png": {
+    "width": 800,
+    "height": 88
+  },
+  "browser-statistics-ipgroup-header-en.png": {
+    "width": 400,
+    "height": 169
+  },
+  "browser-statistics-ipgroup-header-ja.png": {
+    "width": 400,
+    "height": 169
+  },
+  "browser-statistics-ipgroup-header.png": {
+    "width": 400,
+    "height": 175
+  },
+  "browser-statistics-ipload-count-en.png": {
+    "width": 800,
+    "height": 156
+  },
+  "browser-statistics-ipload-count-ja.png": {
+    "width": 800,
+    "height": 157
+  },
+  "browser-statistics-ipload-count-top-en.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-ipload-count-top-ja.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-ipload-count-top.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-ipload-count.png": {
+    "width": 800,
+    "height": 160
+  },
+  "browser-statistics-ipload-group-list-en.png": {
+    "width": 1200,
+    "height": 438
+  },
+  "browser-statistics-ipload-group-list-ja.png": {
+    "width": 1200,
+    "height": 438
+  },
+  "browser-statistics-ipload-group-list.png": {
+    "width": 1200,
+    "height": 438
+  },
+  "browser-statistics-ipload-time-en.png": {
+    "width": 800,
+    "height": 158
+  },
+  "browser-statistics-ipload-time-ja.png": {
+    "width": 800,
+    "height": 158
+  },
+  "browser-statistics-ipload-time-top-en.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-ipload-time-top-ja.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-ipload-time-top.png": {
+    "width": 600,
+    "height": 294
+  },
+  "browser-statistics-ipload-time.png": {
+    "width": 800,
+    "height": 158
+  },
+  "browser-statistics-ipload-timeline-en.png": {
+    "width": 800,
+    "height": 74
+  },
+  "browser-statistics-ipload-timeline-ja.png": {
+    "width": 800,
+    "height": 74
+  },
+  "browser-statistics-ipload-timeline.png": {
+    "width": 800,
+    "height": 74
+  },
+  "browser-statistics-ipload-trend-en.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "browser-statistics-ipload-trend-ja.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "browser-statistics-ipload-trend-pecent-ja.png": {
+    "width": 1200,
+    "height": 215
+  },
+  "browser-statistics-ipload-trend-pecent.png": {
+    "width": 1200,
+    "height": 215
+  },
+  "browser-statistics-ipload-trend-pecent=en.png": {
+    "width": 1200,
+    "height": 215
+  },
+  "browser-statistics-ipload-trend-select-time-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-statistics-ipload-trend-select-time-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-statistics-ipload-trend-select-time.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-statistics-ipload-trend.png": {
+    "width": 1200,
+    "height": 217
   },
   "browser-statistics-page-group-filter-en.png": {
     "width": 600,
@@ -5247,6 +5439,30 @@
     "width": 1200,
     "height": 610
   },
+  "db-analysis-sql-plan-change-filter-01-en.png": {
+    "width": 400,
+    "height": 244
+  },
+  "db-analysis-sql-plan-change-filter-01-ja.png": {
+    "width": 400,
+    "height": 244
+  },
+  "db-analysis-sql-plan-change-filter-01.png": {
+    "width": 400,
+    "height": 244
+  },
+  "db-analysis-sql-plan-change-filter-en.png": {
+    "width": 400,
+    "height": 244
+  },
+  "db-analysis-sql-plan-change-filter-ja.png": {
+    "width": 400,
+    "height": 244
+  },
+  "db-analysis-sql-plan-change-filter.png": {
+    "width": 400,
+    "height": 244
+  },
   "db-analysis-sql-plan-change-history-diff-en.png": {
     "width": 1200,
     "height": 1055
@@ -5271,6 +5487,10 @@
     "width": 1200,
     "height": 693
   },
+  "db-analysis-wait-class-oracle.png": {
+    "width": 400,
+    "height": 244
+  },
   "db-analysis-wait-en.png": {
     "width": 1200,
     "height": 714
@@ -5279,6 +5499,26 @@
     "width": 1200,
     "height": 714
   },
+  "db-analysis-wait-oracle-en.png": {
+    "width": 1200,
+    "height": 809
+  },
+  "db-analysis-wait-oracle-ja.png": {
+    "width": 1200,
+    "height": 809
+  },
+  "db-analysis-wait-oracle.png": {
+    "width": 1200,
+    "height": 809
+  },
+  "db-analysis-wait-stat-top5-oracle.png": {
+    "width": 400,
+    "height": 242
+  },
+  "db-analysis-wait-top5-oracle.png": {
+    "width": 400,
+    "height": 243
+  },
   "db-analysis-wait-top5.png": {
     "width": 1200,
     "height": 225
@@ -5286,6 +5526,18 @@
   "db-analysis-wait.png": {
     "width": 1200,
     "height": 714
+  },
+  "db-backup-history-mssql-en.png": {
+    "width": 1200,
+    "height": 252
+  },
+  "db-backup-history-mssql-ja.png": {
+    "width": 1200,
+    "height": 248
+  },
+  "db-backup-history-mssql.png": {
+    "width": 1200,
+    "height": 255
   },
   "db-bottom-table-filter-altibase-en.png": {
     "width": 600,
@@ -5607,6 +5859,18 @@
     "width": 1200,
     "height": 326
   },
+  "db-compare-count-trend-activesession-mssql-en.png": {
+    "width": 1200,
+    "height": 326
+  },
+  "db-compare-count-trend-activesession-mssql-ja.png": {
+    "width": 1200,
+    "height": 326
+  },
+  "db-compare-count-trend-activesession-mssql.png": {
+    "width": 1200,
+    "height": 326
+  },
   "db-compare-count-trend-activesession-mysql-en.png": {
     "width": 1200,
     "height": 326
@@ -5715,6 +5979,18 @@
     "width": 1200,
     "height": 1067
   },
+  "db-compare-count-trend-mssql-v2-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-compare-count-trend-mssql-v2-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-compare-count-trend-mssql-v2.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "db-compare-count-trend-mssql.png": {
     "width": 1200,
     "height": 1067
@@ -5820,8 +6096,8 @@
     "height": 206
   },
   "db-compare-count-trend-tootip.png": {
-    "width": 800,
-    "height": 206
+    "width": 600,
+    "height": 314
   },
   "db-count-trend-1x3-cubrid-en.png": {
     "width": 1200,
@@ -6119,6 +6395,18 @@
     "width": 1200,
     "height": 525
   },
+  "db-database-size-details-db-mssql-en.png": {
+    "width": 1500,
+    "height": 541
+  },
+  "db-database-size-details-db-mssql-ja.png": {
+    "width": 1500,
+    "height": 541
+  },
+  "db-database-size-details-db-mssql.png": {
+    "width": 1500,
+    "height": 541
+  },
   "db-database-size-mongodb-en.png": {
     "width": 1200,
     "height": 536
@@ -6130,6 +6418,18 @@
   "db-database-size-mongodb.png": {
     "width": 1200,
     "height": 536
+  },
+  "db-database-size-mssql-en.png": {
+    "width": 1200,
+    "height": 559
+  },
+  "db-database-size-mssql-ja.png": {
+    "width": 1200,
+    "height": 568
+  },
+  "db-database-size-mssql.png": {
+    "width": 1200,
+    "height": 559
   },
   "db-database-size-mysql-en.png": {
     "width": 1200,
@@ -6191,6 +6491,18 @@
     "width": 1200,
     "height": 438
   },
+  "db-database-size-select-db-mssql-en.png": {
+    "width": 1200,
+    "height": 467
+  },
+  "db-database-size-select-db-mssql-ja.png": {
+    "width": 1200,
+    "height": 467
+  },
+  "db-database-size-select-db-mssql.png": {
+    "width": 1200,
+    "height": 467
+  },
   "db-database-size-select-db-mysql-en.png": {
     "width": 1200,
     "height": 465
@@ -6226,6 +6538,18 @@
   "db-database-size-top50-mongodb.png": {
     "width": 1200,
     "height": 904
+  },
+  "db-database-size-top50-mssql-en.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-database-size-top50-mssql-ja.png": {
+    "width": 1200,
+    "height": 1058
+  },
+  "db-database-size-top50-mssql.png": {
+    "width": 1200,
+    "height": 1058
   },
   "db-database-size-top50-mysql-en.png": {
     "width": 1200,
@@ -6297,15 +6621,15 @@
   },
   "db-database-sql-stat-mssql-en.png": {
     "width": 1200,
-    "height": 480
+    "height": 458
   },
   "db-database-sql-stat-mssql-ja.png": {
     "width": 1200,
-    "height": 480
+    "height": 458
   },
   "db-database-sql-stat-mssql.png": {
     "width": 1200,
-    "height": 478
+    "height": 458
   },
   "db-database-sql-stat-mysql-en.png": {
     "width": 1200,
@@ -6505,15 +6829,15 @@
   },
   "db-databaseparameter-changed-mssql-en.png": {
     "width": 1200,
-    "height": 576
+    "height": 582
   },
   "db-databaseparameter-changed-mssql-ja.png": {
     "width": 1200,
-    "height": 576
+    "height": 582
   },
   "db-databaseparameter-changed-mssql.png": {
     "width": 1200,
-    "height": 576
+    "height": 582
   },
   "db-databaseparameter-changed-mysql-en.png": {
     "width": 1200,
@@ -6621,15 +6945,15 @@
   },
   "db-databaseparameter-compare-today-mssql-en.png": {
     "width": 1200,
-    "height": 316
+    "height": 308
   },
   "db-databaseparameter-compare-today-mssql-ja.png": {
     "width": 1200,
-    "height": 318
+    "height": 308
   },
   "db-databaseparameter-compare-today-mssql.png": {
     "width": 1200,
-    "height": 316
+    "height": 308
   },
   "db-databaseparameter-compare-today-mysql-en.png": {
     "width": 1200,
@@ -6724,16 +7048,16 @@
     "height": 507
   },
   "db-databaseparameter-mssql-en.png": {
-    "width": 1208,
-    "height": 529
+    "width": 1200,
+    "height": 675
   },
   "db-databaseparameter-mssql-ja.png": {
-    "width": 1208,
-    "height": 529
+    "width": 1200,
+    "height": 675
   },
   "db-databaseparameter-mssql.png": {
     "width": 1200,
-    "height": 529
+    "height": 673
   },
   "db-databaseparameter-mysql-en.png": {
     "width": 1200,
@@ -6810,6 +7134,18 @@
   "db-databaseparameter.png": {
     "width": 1200,
     "height": 1030
+  },
+  "db-deadlock-basic-mssql-v2-en.png": {
+    "width": 1200,
+    "height": 437
+  },
+  "db-deadlock-basic-mssql-v2-ja.png": {
+    "width": 1200,
+    "height": 437
+  },
+  "db-deadlock-basic-mssql-v2.png": {
+    "width": 1200,
+    "height": 414
   },
   "db-deadlock-basic-mysql-en.png": {
     "width": 1200,
@@ -7187,6 +7523,18 @@
     "width": 1200,
     "height": 1054
   },
+  "db-instance-monitoring-seltime-mssql-en.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-instance-monitoring-seltime-mssql-ja.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-instance-monitoring-seltime-mssql.png": {
+    "width": 1200,
+    "height": 1054
+  },
   "db-instance-monitoring-seltime-mysql-en.png": {
     "width": 1200,
     "height": 1035
@@ -7247,6 +7595,18 @@
     "width": 1200,
     "height": 1058
   },
+  "db-instance-monitoring-v2-mssql-en.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-instance-monitoring-v2-mssql-ja.png": {
+    "width": 1200,
+    "height": 1056
+  },
+  "db-instance-monitoring-v2-mssql.png": {
+    "width": 1200,
+    "height": 1056
+  },
   "db-instance-monitoring.png": {
     "width": 3354,
     "height": 1826
@@ -7262,6 +7622,18 @@
   "db-instancemonitoring2sqlstatics.png": {
     "width": 1200,
     "height": 311
+  },
+  "db-job-info-mssql-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-job-info-mssql-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-job-info-mssql.png": {
+    "width": 1200,
+    "height": 1055
   },
   "db-kill-session-confirm-en.png": {
     "width": 600,
@@ -7439,6 +7811,18 @@
     "width": 1200,
     "height": 557
   },
+  "db-locktress-basic-mssql-v2-en.png": {
+    "width": 1200,
+    "height": 652
+  },
+  "db-locktress-basic-mssql-v2-ja.png": {
+    "width": 1200,
+    "height": 652
+  },
+  "db-locktress-basic-mssql-v2.png": {
+    "width": 1200,
+    "height": 652
+  },
   "db-locktress-basic-mssql.png": {
     "width": 1200,
     "height": 556
@@ -7578,6 +7962,18 @@
   "db-metrics-select-mongodb.png": {
     "width": 1200,
     "height": 1055
+  },
+  "db-metrics-select-mssql-en.png": {
+    "width": 1200,
+    "height": 1052
+  },
+  "db-metrics-select-mssql-ja.png": {
+    "width": 1200,
+    "height": 1052
+  },
+  "db-metrics-select-mssql.png": {
+    "width": 1200,
+    "height": 1052
   },
   "db-metrics-select-mysql-en.png": {
     "width": 1200,
@@ -7735,6 +8131,18 @@
     "width": 1200,
     "height": 1058
   },
+  "db-multi-instance-mssql-v2-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-multi-instance-mssql-v2-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-multi-instance-mssql-v2.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "db-multi-instance-mssql.png": {
     "width": 1200,
     "height": 1058
@@ -7883,6 +8291,26 @@
     "width": 400,
     "height": 295
   },
+  "db-procedure-stat-details-mssql.png": {
+    "width": 1200,
+    "height": 582
+  },
+  "db-procedure-stat-mssql.png": {
+    "width": 1200,
+    "height": 582
+  },
+  "db-recovery-history-mssql-en.png": {
+    "width": 1200,
+    "height": 227
+  },
+  "db-recovery-history-mssql-ja.png": {
+    "width": 1200,
+    "height": 227
+  },
+  "db-recovery-history-mssql.png": {
+    "width": 1200,
+    "height": 230
+  },
   "db-select-count-en.png": {
     "width": 1200,
     "height": 1042
@@ -7903,17 +8331,29 @@
     "width": 1201,
     "height": 841
   },
+  "db-session-details-info-mssql-en.png": {
+    "width": 1200,
+    "height": 1173
+  },
+  "db-session-details-info-mssql-ja.png": {
+    "width": 1200,
+    "height": 1173
+  },
+  "db-session-details-info-mssql.png": {
+    "width": 1200,
+    "height": 1173
+  },
   "db-session-details-info-oracle-pro-en.png": {
     "width": 1201,
-    "height": 1040
+    "height": 1173
   },
   "db-session-details-info-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 1070
+    "height": 1171
   },
   "db-session-details-info-oracle-pro.png": {
     "width": 1200,
-    "height": 1026
+    "height": 1172
   },
   "db-session-details-info.png": {
     "width": 1200,
@@ -8043,6 +8483,22 @@
     "width": 1085,
     "height": 653
   },
+  "db-sql-analysis-filter-condition-color.png": {
+    "width": 400,
+    "height": 40
+  },
+  "db-sql-analysis-filter-modify-en.png": {
+    "width": 400,
+    "height": 213
+  },
+  "db-sql-analysis-filter-modify-ja.png": {
+    "width": 400,
+    "height": 213
+  },
+  "db-sql-analysis-filter-modify.png": {
+    "width": 400,
+    "height": 213
+  },
   "db-sql-details-common-en.png": {
     "width": 1200,
     "height": 561
@@ -8055,17 +8511,29 @@
     "width": 1200,
     "height": 561
   },
+  "db-sql-details-mssql-en.png": {
+    "width": 1200,
+    "height": 500
+  },
+  "db-sql-details-mssql-ja.png": {
+    "width": 1200,
+    "height": 500
+  },
+  "db-sql-details-mssql.png": {
+    "width": 1200,
+    "height": 500
+  },
   "db-sql-details-oracle-pro-en.png": {
     "width": 1200,
-    "height": 728
+    "height": 716
   },
   "db-sql-details-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 728
+    "height": 716
   },
   "db-sql-details-oracle-pro.png": {
     "width": 1200,
-    "height": 728
+    "height": 716
   },
   "db-sql-details-postgresql-en.png": {
     "width": 1200,
@@ -8781,27 +9249,27 @@
   },
   "event-config-v2-apm-en.png": {
     "width": 1200,
-    "height": 254
+    "height": 297
   },
   "event-config-v2-apm-ja.png": {
     "width": 1200,
-    "height": 253
+    "height": 300
   },
   "event-config-v2-apm.png": {
     "width": 1200,
-    "height": 252
+    "height": 300
   },
   "event-config-v2-browser-en.png": {
     "width": 1200,
-    "height": 228
+    "height": 217
   },
   "event-config-v2-browser-ja.png": {
     "width": 1200,
-    "height": 226
+    "height": 219
   },
   "event-config-v2-browser.png": {
     "width": 1200,
-    "height": 223
+    "height": 218
   },
   "event-config-v2-condition-common-en.png": {
     "width": 800,
@@ -8817,51 +9285,75 @@
   },
   "event-config-v2-db-mongodb-en.png": {
     "width": 1200,
-    "height": 163
+    "height": 243
   },
   "event-config-v2-db-mongodb-ja.png": {
     "width": 1200,
-    "height": 163
+    "height": 244
   },
   "event-config-v2-db-mongodb.png": {
     "width": 1200,
-    "height": 162
+    "height": 244
+  },
+  "event-config-v2-db-mysql-en.png": {
+    "width": 1200,
+    "height": 353
+  },
+  "event-config-v2-db-mysql-ja.png": {
+    "width": 1200,
+    "height": 353
+  },
+  "event-config-v2-db-mysql.png": {
+    "width": 1200,
+    "height": 353
+  },
+  "event-config-v2-db-oracle-en.png": {
+    "width": 1200,
+    "height": 268
+  },
+  "event-config-v2-db-oracle-ja.png": {
+    "width": 1200,
+    "height": 268
+  },
+  "event-config-v2-db-oracle.png": {
+    "width": 1200,
+    "height": 273
   },
   "event-config-v2-db-redis-en.png": {
     "width": 1200,
-    "height": 163
+    "height": 272
   },
   "event-config-v2-db-redis-ja.png": {
     "width": 1200,
-    "height": 163
+    "height": 272
   },
   "event-config-v2-db-redis.png": {
     "width": 1200,
-    "height": 161
+    "height": 244
   },
   "event-config-v2-db01-en.png": {
     "width": 1200,
-    "height": 200
+    "height": 274
   },
   "event-config-v2-db01-ja.png": {
     "width": 1200,
-    "height": 197
+    "height": 272
   },
   "event-config-v2-db01.png": {
     "width": 1200,
-    "height": 200
+    "height": 272
   },
   "event-config-v2-db02-en.png": {
     "width": 1200,
-    "height": 174
+    "height": 244
   },
   "event-config-v2-db02-ja.png": {
     "width": 1200,
-    "height": 173
+    "height": 244
   },
   "event-config-v2-db02.png": {
     "width": 1200,
-    "height": 173
+    "height": 244
   },
   "event-config-v2-info-receive-common-en.png": {
     "width": 800,
@@ -8893,15 +9385,15 @@
   },
   "event-config-v2-k8s-en.png": {
     "width": 1200,
-    "height": 359
+    "height": 435
   },
   "event-config-v2-k8s-ja.png": {
     "width": 1200,
-    "height": 359
+    "height": 433
   },
   "event-config-v2-k8s.png": {
     "width": 1200,
-    "height": 359
+    "height": 436
   },
   "event-config-v2-npm-en.png": {
     "width": 1200,
@@ -8917,15 +9409,15 @@
   },
   "event-config-v2-server-en.png": {
     "width": 1200,
-    "height": 416
+    "height": 492
   },
   "event-config-v2-server-ja.png": {
     "width": 1200,
-    "height": 415
+    "height": 490
   },
   "event-config-v2-server.png": {
     "width": 1200,
-    "height": 414
+    "height": 489
   },
   "event-config-v2-simulation-common-en.png": {
     "width": 800,
@@ -10688,28 +11180,28 @@
     "height": 788
   },
   "k8s-container-map-chart-en.png": {
-    "width": 1200,
-    "height": 942
+    "width": 1046,
+    "height": 1126
   },
   "k8s-container-map-chart-ja.png": {
-    "width": 1200,
-    "height": 944
+    "width": 1046,
+    "height": 1126
   },
   "k8s-container-map-chart.png": {
-    "width": 1181,
-    "height": 1091
+    "width": 1046,
+    "height": 1126
   },
   "k8s-container-map-en.png": {
-    "width": 1200,
-    "height": 995
+    "width": 1230,
+    "height": 988
   },
   "k8s-container-map-group.png": {
     "width": 853,
     "height": 547
   },
   "k8s-container-map-ja.png": {
-    "width": 1200,
-    "height": 995
+    "width": 1230,
+    "height": 985
   },
   "k8s-container-map-setting-en.png": {
     "width": 769,
@@ -10780,8 +11272,8 @@
     "height": 711
   },
   "k8s-container-map.png": {
-    "width": 1205,
-    "height": 1195
+    "width": 1230,
+    "height": 987
   },
   "k8s-container-sum-en.png": {
     "width": 1173,
@@ -10895,6 +11387,18 @@
     "width": 400,
     "height": 592
   },
+  "k8s-etcd-dashboard-en.png": {
+    "width": 2048,
+    "height": 1080
+  },
+  "k8s-etcd-dashboard-ja.png": {
+    "width": 2048,
+    "height": 1080
+  },
+  "k8s-etcd-dashboard.png": {
+    "width": 2048,
+    "height": 1080
+  },
   "k8s-event-default2.png": {
     "width": 1200,
     "height": 806
@@ -10922,6 +11426,30 @@
   "k8s-event-history.png": {
     "width": 1200,
     "height": 709
+  },
+  "k8s-foreign-project-check-en.png": {
+    "width": 874,
+    "height": 226
+  },
+  "k8s-foreign-project-check-ja.png": {
+    "width": 872,
+    "height": 214
+  },
+  "k8s-foreign-project-check.png": {
+    "width": 698,
+    "height": 250
+  },
+  "k8s-foreign-project-container-map-en.png": {
+    "width": 513,
+    "height": 737
+  },
+  "k8s-foreign-project-container-map-ja.png": {
+    "width": 513,
+    "height": 737
+  },
+  "k8s-foreign-project-container-map.png": {
+    "width": 598,
+    "height": 805
   },
   "k8s-ingress-list-cl.png": {
     "width": 800,
@@ -12879,6 +13407,18 @@
     "width": 600,
     "height": 622
   },
+  "main-ui-search-by-agentip-en.png": {
+    "width": 400,
+    "height": 93
+  },
+  "main-ui-search-by-agentip-ja.png": {
+    "width": 400,
+    "height": 93
+  },
+  "main-ui-search-by-agentip.png": {
+    "width": 400,
+    "height": 93
+  },
   "main-ui-search-by-group-en.png": {
     "width": 1200,
     "height": 646
@@ -14679,13 +15219,29 @@
     "width": 1200,
     "height": 512
   },
+  "ms-account-manage-01-en.png": {
+    "width": 1200,
+    "height": 562
+  },
+  "ms-account-manage-01-ja.png": {
+    "width": 1200,
+    "height": 562
+  },
   "ms-account-manage-01.png": {
     "width": 1200,
-    "height": 660
+    "height": 560
+  },
+  "ms-account-manage-02-en.png": {
+    "width": 800,
+    "height": 350
+  },
+  "ms-account-manage-02-ja.png": {
+    "width": 800,
+    "height": 440
   },
   "ms-account-manage-02.png": {
-    "width": 1200,
-    "height": 667
+    "width": 800,
+    "height": 441
   },
   "ms-entraid-enterprise-application-01-en.png": {
     "width": 1200,
@@ -14882,6 +15438,10 @@
   "ms2whatap-signup.png": {
     "width": 400,
     "height": 377
+  },
+  "mssql-register-windows-service.png": {
+    "width": 720,
+    "height": 225
   },
   "multi-tx-additional-info-en.png": {
     "width": 1200,
@@ -15091,9 +15651,17 @@
     "width": 1200,
     "height": 632
   },
+  "new-feature-01-mssql-en.png": {
+    "width": 1200,
+    "height": 633
+  },
+  "new-feature-01-mssql-ja.png": {
+    "width": 1200,
+    "height": 633
+  },
   "new-feature-01-mssql.png": {
     "width": 1200,
-    "height": 434
+    "height": 633
   },
   "new-feature-01-mysql-en.png": {
     "width": 600,
@@ -15160,6 +15728,14 @@
     "height": 1034
   },
   "new-feature-02-mongodb.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-mssql-en.png": {
+    "width": 2309,
+    "height": 1034
+  },
+  "new-feature-02-mssql-ja.png": {
     "width": 2309,
     "height": 1034
   },
@@ -15255,6 +15831,14 @@
     "width": 1200,
     "height": 420
   },
+  "new-feature-03-mssql-en.png": {
+    "width": 1200,
+    "height": 403
+  },
+  "new-feature-03-mssql-ja.png": {
+    "width": 1200,
+    "height": 403
+  },
   "new-feature-03-mssql.png": {
     "width": 1200,
     "height": 438
@@ -15335,9 +15919,17 @@
     "width": 1200,
     "height": 274
   },
-  "new-feature-04-mssql.png": {
+  "new-feature-04-mssql-en.png": {
     "width": 1200,
     "height": 274
+  },
+  "new-feature-04-mssql-ja.png": {
+    "width": 1200,
+    "height": 274
+  },
+  "new-feature-04-mssql.png": {
+    "width": 1200,
+    "height": 266
   },
   "new-feature-04-mysql-en.png": {
     "width": 1200,
@@ -16383,9 +16975,21 @@
     "width": 600,
     "height": 600
   },
+  "rt-notification-download-csv-en.png": {
+    "width": 800,
+    "height": 160
+  },
+  "rt-notification-download-csv-ja.png": {
+    "width": 800,
+    "height": 160
+  },
+  "rt-notification-download-csv.png": {
+    "width": 800,
+    "height": 148
+  },
   "rt-notification-en.png": {
     "width": 1200,
-    "height": 939
+    "height": 640
   },
   "rt-notification-filter-en.png": {
     "width": 1200,
@@ -16413,7 +17017,7 @@
   },
   "rt-notification-ja.png": {
     "width": 1200,
-    "height": 908
+    "height": 662
   },
   "rt-notification-snapshot-en.png": {
     "width": 1200,
@@ -16429,7 +17033,7 @@
   },
   "rt-notification.png": {
     "width": 1200,
-    "height": 953
+    "height": 640
   },
   "rum-ajax-count-en.png": {
     "width": 1200,
@@ -16959,6 +17563,10 @@
     "width": 800,
     "height": 803
   },
+  "server-inventory-custom-cl-ex.png": {
+    "width": 1208,
+    "height": 500
+  },
   "server-inventory-en.png": {
     "width": 1211,
     "height": 669
@@ -16966,6 +17574,62 @@
   "server-inventory-ja.png": {
     "width": 1211,
     "height": 669
+  },
+  "server-inventory-map-chart-en.png": {
+    "width": 1200,
+    "height": 976
+  },
+  "server-inventory-map-chart-ja.png": {
+    "width": 1200,
+    "height": 977
+  },
+  "server-inventory-map-chart.png": {
+    "width": 1200,
+    "height": 977
+  },
+  "server-inventory-map-details.png": {
+    "width": 1200,
+    "height": 827
+  },
+  "server-inventory-map-en.png": {
+    "width": 1200,
+    "height": 813
+  },
+  "server-inventory-map-group-select-en.png": {
+    "width": 420,
+    "height": 644
+  },
+  "server-inventory-map-group-select-ja.png": {
+    "width": 422,
+    "height": 638
+  },
+  "server-inventory-map-group-select.png": {
+    "width": 414,
+    "height": 640
+  },
+  "server-inventory-map-group.png": {
+    "width": 1200,
+    "height": 982
+  },
+  "server-inventory-map-ja.png": {
+    "width": 1200,
+    "height": 818
+  },
+  "server-inventory-map-summary-en.png": {
+    "width": 1204,
+    "height": 984
+  },
+  "server-inventory-map-summary-ja.png": {
+    "width": 1204,
+    "height": 985
+  },
+  "server-inventory-map-summary.png": {
+    "width": 1204,
+    "height": 984
+  },
+  "server-inventory-map.png": {
+    "width": 1200,
+    "height": 816
   },
   "server-inventory.png": {
     "width": 1211,
@@ -17741,11 +18405,11 @@
   },
   "sso-externalidp-button-en.png": {
     "width": 853,
-    "height": 205
+    "height": 224
   },
   "sso-externalidp-button-ja.png": {
     "width": 622,
-    "height": 205
+    "height": 235
   },
   "sso-externalidp-button.png": {
     "width": 600,
