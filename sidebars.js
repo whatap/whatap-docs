@@ -267,7 +267,8 @@ const sidebars = {
                 'java/set-receive-event',
                 'java/set-event-history',
                 'java/set-event-format',
-                'java/real-time-notification'
+                'java/real-time-notification',
+                'java/common-alert'
               ],
             },
             'java/instance-performance-analysis',
@@ -516,7 +517,8 @@ const sidebars = {
                 'php/set-receive-event',
                 'php/set-event-history',
                 'php/set-event-format',
-                'php/real-time-notification'
+                'php/real-time-notification',
+                'php/common-alert'
               ],
             },
             'php/instance-performance-analysis',
@@ -750,7 +752,8 @@ const sidebars = {
                 'nodejs/set-receive-event',
                 'nodejs/set-event-history',
                 'nodejs/set-event-format',
-                'nodejs/real-time-notification'
+                'nodejs/real-time-notification',
+                'nodejs/common-alert'
               ],
             },
             'nodejs/instance-performance-analysis',
@@ -985,7 +988,8 @@ const sidebars = {
                 'python/set-receive-event',
                 'python/set-event-history',
                 'python/set-event-format',
-                'python/real-time-notification'
+                'python/real-time-notification',
+                'python/common-alert'
               ],
             },
             'python/instance-performance-analysis',
@@ -1220,6 +1224,7 @@ const sidebars = {
                 'dotnet/set-event-history',
                 'dotnet/set-event-format',
                 'dotnet/real-time-notification',
+                'dotnet/common-alert'
               ],
             },
             'dotnet/instance-performance-analysis',
@@ -1437,7 +1442,8 @@ const sidebars = {
                 'golang/set-receive-event',
                 'golang/set-event-history',
                 'golang/set-event-format',
-                'golang/real-time-notification'
+                'golang/real-time-notification',
+                'golang/common-alert'
               ],
             },
             'golang/instance-performance-analysis',
@@ -1639,7 +1645,8 @@ const sidebars = {
                 'postgresql/set-receive-event',
                 'postgresql/set-event-history',
                 'postgresql/set-event-format',
-                'postgresql/real-time-notification'
+                'postgresql/real-time-notification',
+                'postgresql/common-alert'
               ],
             },
             'postgresql/linked-projects',
@@ -1794,7 +1801,8 @@ const sidebars = {
                 'oracle-v1/set-receive-event',
                 'oracle-v1/set-event-history',
                 'oracle-v1/set-event-format',
-                'oracle-v1/real-time-notification'
+                'oracle-v1/real-time-notification',
+                'oracle-v1/common-alert'
               ],
             },
             'oracle-v1/labs'
@@ -1976,7 +1984,8 @@ const sidebars = {
                 'oracle/set-receive-event',
                 'oracle/set-event-history',
                 'oracle/set-event-format',
-                'oracle/real-time-notification'
+                'oracle/real-time-notification',
+                'oracle/common-alert'
               ],
             },
             'oracle/linked-projects',
@@ -2145,7 +2154,8 @@ const sidebars = {
                 'oracle-pro/set-receive-event',
                 'oracle-pro/set-event-history',
                 'oracle-pro/set-event-format',
-                'oracle-pro/real-time-notification'
+                'oracle-pro/real-time-notification',
+                'oracle-pro/common-alert'
               ],
             },
             'oracle-pro/linked-projects',
@@ -2340,6 +2350,7 @@ const sidebars = {
                 'mysql/set-event-history',
                 'mysql/set-event-format',
                 'mysql/real-time-notification',
+                'mysql/common-alert'
               ],
             },
             'mysql/linked-projects',
@@ -2352,7 +2363,7 @@ const sidebars = {
   mssqlSidebar: [
     {
       type: 'category',
-      label: 'SQL Server 모니터링',
+      label: 'SQL Server V2 모니터링',
       collapsible: false,
       collapsed: false,
       link: {
@@ -2387,8 +2398,10 @@ const sidebars = {
           },
           items: [
             'mssql/agent-dbx-settings',
+            'mssql/agent-xos-settings',
           ],
         },
+        'mssql/cloudsettings',
         'mssql/agent-manage',
         {
           type: 'category',
@@ -2438,7 +2451,8 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/analysis-count-trend',
-                'mssql/analysis-lock-and-deadlock',
+                'mssql/analysis-lock-tree',
+                'mssql/analysis-deadlock',
                 'mssql/analysis-databaseparameter',
               ]
             },
@@ -2453,7 +2467,11 @@ const sidebars = {
               },
               items: [
                 'mssql/metrics-data-list',
-                'mssql/metrics-chart',
+                {
+                  type: 'doc',
+                  id: 'mssql/metrics-chart-v2',
+                  className: 'newfunc'
+                },
                 'mssql/metrics-search',
                 'mssql/metrics-detect-anormal',
               ]
@@ -2465,8 +2483,30 @@ const sidebars = {
               collapsed: true,
               items: [
                 'mssql/stat',
+                'mssql/procedure-stat',
+                'mssql/database-size',
                 'mssql/report-intro',
+                'mssql/job-info',
+                'mssql/backup-recovery-history'
               ],
+            },
+            {
+              type: 'category',
+              label: '로그',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql/log-main'
+              },
+              items: [
+                'mssql/log-db',
+                'mssql/log-lt',
+                'mssql/log-exp',
+                'mssql/log-search',
+                'mssql/log-setting',
+                'mssql/log-parser',
+              ]
             },
             {
               type: 'category',
@@ -2490,10 +2530,162 @@ const sidebars = {
                 'mssql/set-receive-event',
                 'mssql/set-event-history',
                 'mssql/set-event-format',
-                'mssql/real-time-notification'
+                'mssql/real-time-notification',
+                'mssql/common-alert'
               ],
             },
             'mssql/labs'
+          ]
+        }
+      ],
+    }
+  ],
+  mssqlV1Sidebar: [
+    {
+      type: 'category',
+      label: 'SQL Server V1 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'mssql-v1/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'mssql-v1/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql-v1/install-agent',
+            'mssql-v1/after-install-agent',
+            'mssql-v1/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql-v1/agent-settings'
+          },
+          items: [
+            'mssql-v1/agent-dbx-settings',
+          ],
+        },
+        'mssql-v1/agent-manage',
+        {
+          type: 'category',
+          label: '주요 메뉴 알아보기',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            {
+              type: 'category',
+              label: '대시보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/dashboard-intro'
+              },
+              items: [
+                'mssql-v1/instance-list',
+                'mssql-v1/instance-monitoring',
+                'mssql-v1/multi-instance-monitoring',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Flex 보드',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/flex-board',
+              },
+              items: [
+                'mssql-v1/flexboard-template',
+                'mssql-v1/flexboard-create',
+                'mssql-v1/flexboard-manage',
+                'mssql-v1/flexboard-metric-widget',
+                'mssql-v1/flexboard-widget-manage',
+                'mssql-v1/flexboard-widget-template',
+                'mssql-v1/flexboard-mode',
+                'mssql-v1/flexboard-share',
+              ],
+            },
+            {
+              type: 'category',
+              label: '분석',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql-v1/analysis-count-trend',
+                'mssql-v1/analysis-lock-and-deadlock',
+                'mssql-v1/analysis-databaseparameter',
+              ]
+            },
+            {
+              type: 'category',
+              label: '메트릭스',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/metrics-intro'
+              },
+              items: [
+                'mssql-v1/metrics-data-list',
+                'mssql-v1/metrics-chart',
+                'mssql-v1/metrics-search',
+                'mssql-v1/metrics-detect-anormal',
+              ]
+            },
+            {
+              type: 'category',
+              label: '통계/보고서',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mssql-v1/stat',
+                'mssql-v1/report-intro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '경고 알림',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'mssql-v1/set-notice',
+              },
+              items: [
+                'mssql-v1/warning-notice',
+                {
+                  type: 'doc',
+                  id: 'mssql-v1/warning-notice-v2',
+                  className: 'newfunc'
+                },
+                'mssql-v1/metric-warning-notice',
+                'mssql-v1/set-notification-message',
+                'mssql-v1/set-event-detect-anomal',
+                'mssql-v1/set-receive-event',
+                'mssql-v1/set-event-history',
+                'mssql-v1/set-event-format',
+                'mssql-v1/real-time-notification',
+                'mssql-v1/common-alert'
+              ],
+            },
+            'mssql-v1/labs'
           ]
         }
       ],
@@ -2644,7 +2836,8 @@ const sidebars = {
                 'tibero/set-receive-event',
                 'tibero/set-event-history',
                 'tibero/set-event-format',
-                'tibero/real-time-notification'
+                'tibero/real-time-notification',
+                'tibero/common-alert'
               ],
             },
             'tibero/labs'
@@ -2822,7 +3015,8 @@ const sidebars = {
                 'cubrid/set-receive-event',
                 'cubrid/set-event-history',
                 'cubrid/set-event-format',
-                'cubrid/real-time-notification'
+                'cubrid/real-time-notification',
+                'cubrid/common-alert'
               ],
             },
             'cubrid/labs'
@@ -2976,7 +3170,8 @@ const sidebars = {
                 'cubrid-v1/set-receive-event',
                 'cubrid-v1/set-event-history',
                 'cubrid-v1/set-event-format',
-                'cubrid-v1/real-time-notification'
+                'cubrid-v1/real-time-notification',
+                'cubrid-v1/common-alert'
               ],
             },
             'cubrid-v1/labs'
@@ -3151,7 +3346,8 @@ const sidebars = {
                 'altibase/set-receive-event',
                 'altibase/set-event-history',
                 'altibase/set-event-format',
-                'altibase/real-time-notification'
+                'altibase/real-time-notification',
+                'altibase/common-alert'
               ],
             },
             'altibase/labs'
@@ -3293,7 +3489,8 @@ const sidebars = {
                 'altibase-v1/set-receive-event',
                 'altibase-v1/set-event-history',
                 'altibase-v1/set-event-format',
-                'altibase-v1/real-time-notification'
+                'altibase-v1/real-time-notification',
+                'altibase-v1/common-alert'
               ],
             },
             'altibase-v1/labs'
@@ -3457,6 +3654,7 @@ const sidebars = {
                 'redis/set-event-history',
                 'redis/set-event-format',
                 'redis/real-time-notification',
+                'redis/common-alert'
               ],
             },
             'redis/labs'
@@ -3630,6 +3828,7 @@ const sidebars = {
                 'mongodb/set-event-history',
                 'mongodb/set-event-format',
                 'mongodb/real-time-notification',
+                'mongodb/common-alert'
               ],
             },
             'mongodb/labs'
@@ -3715,7 +3914,8 @@ const sidebars = {
             },
             'npm/set-receive-event',
             'npm/set-event-history',
-            'npm/real-time-notification'
+            'npm/real-time-notification',
+            'npm/common-alert'
           ],
         },
         'npm/labs'
@@ -3735,9 +3935,10 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_11_0x',
+          id: 'release-notes/preview/preview-2_12_0x',
           className: 'new',
         },
+        'release-notes/preview/preview-2_11_0x',
         'release-notes/preview/preview-2_10_0x',
         'release-notes/preview/preview-2_9_0x',
         'release-notes/preview/preview-2_8_0x',
@@ -3858,7 +4059,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -3867,7 +4068,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_41',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_40',
                 'release-notes/java/java-2_2_39',
@@ -4005,9 +4206,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_5',
+                  id: 'release-notes/dotnet/dotnet-2_3_6',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_5',
                 'release-notes/dotnet/dotnet-2_3_4',
                 'release-notes/dotnet/dotnet-2_3_3',
                 'release-notes/dotnet/dotnet-2_3_2',
@@ -4017,7 +4219,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
                 'release-notes/dotnet/dotnet-2_2_6',
-                'release-notes/dotnet/dotnet-2_2_5',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -4062,9 +4263,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_7_0',
+                  id: 'release-notes/server/server-2_7_1',
                   className: 'new',
                 },
+                'release-notes/server/server-2_7_0',
                 'release-notes/server/server-2_6_9',
                 'release-notes/server/server-2_6_8',
                 'release-notes/server/server-2_6_7',
@@ -4137,9 +4339,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_7_15',
+                  id: 'release-notes/k8s/k8s-1_7_16',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_7_15',
                 'release-notes/k8s/k8s-1_7_14',
                 'release-notes/k8s/k8s-1_7_13',
                 'release-notes/k8s/k8s-1_7_12',
@@ -4148,8 +4351,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_7_9',
                 'release-notes/k8s/k8s-1_7_8',
                 'release-notes/k8s/k8s-1_7_7',
-                'release-notes/k8s/k8s-1_7_6',
-                'release-notes/k8s/k8s-1_7_5',
                 'release-notes/k8s/k8s-previous',
               ],
             },
@@ -4158,7 +4359,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4166,18 +4367,18 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_1_2',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_2_2',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-2_2_1',
+                'release-notes/db/dbx-2_2_0',
+                'release-notes/db/dbx-2_1_7',
+                'release-notes/db/dbx-2_1_6',
+                'release-notes/db/dbx-2_1_5',
+                'release-notes/db/dbx-2_1_4',
+                'release-notes/db/dbx-2_1_3',
+                'release-notes/db/dbx-2_1_2',
                 'release-notes/db/dbx-2_1_1',
-                'release-notes/db/dbx-2_1_0',
-                'release-notes/db/dbx-2_0_2',
-                'release-notes/db/dbx-2_0_1',
-                'release-notes/db/dbx-2_0_0',
-                'release-notes/db/dbx-1_9_5',
-                'release-notes/db/dbx-1_9_4',
-                'release-notes/db/dbx-1_9_3',
-                'release-notes/db/dbx-1_9_2',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -4295,7 +4496,20 @@ const sidebars = {
       items: [
         'account/account-manage',
         'account/mfa',
-        'account/sso',
+        {
+          type: 'category',
+          label: 'Single Sign-On 연동',
+          collapsible: false,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'account/sso'
+          },
+          items: [
+            'account/okta',
+            'account/ms-entra-id'
+          ]
+        },
         'project/project-structure',
         'project/project-manage',
         'project/group',   
@@ -4780,7 +4994,8 @@ const sidebars = {
                     'amazon-ecs/warning-and-history',
                     'amazon-ecs/metric-warning-notice',
                     'amazon-ecs/set-receive-event',
-                    'amazon-ecs/real-time-notification'
+                    'amazon-ecs/real-time-notification',
+                    'amazon-ecs/common-alert'
                   ]
                 },
               ],
@@ -4843,7 +5058,8 @@ const sidebars = {
                     'amazon-cloudwatch/warning-and-history',
                     'amazon-cloudwatch/metric-warning-notice',
                     'amazon-cloudwatch/set-receive-event',
-                    'amazon-cloudwatch/real-time-notification'
+                    'amazon-cloudwatch/real-time-notification',
+                    'amazon-cloudwatch/common-alert'
                   ]
                 },
               ],
@@ -4907,7 +5123,8 @@ const sidebars = {
                     'azure/warning-and-history',
                     'azure/metric-warning-notice',
                     'azure/set-receive-event',
-                    'azure/real-time-notification'
+                    'azure/real-time-notification',
+                    'azure/common-alert'
                   ]
                 },
               ],
@@ -4970,6 +5187,8 @@ const sidebars = {
                     'ncloud/warning-and-history',
                     'ncloud/metric-warning-notice',
                     'ncloud/set-receive-event',
+                    'ncloud/real-time-notification',
+                    'ncloud/common-alert'
                   ]
                 },
               ],
@@ -5032,7 +5251,8 @@ const sidebars = {
                     'oracle-cloud/warning-and-history',
                     'oracle-cloud/metric-warning-notice',
                     'oracle-cloud/set-receive-event',
-                    'oracle-cloud/real-time-notification'
+                    'oracle-cloud/real-time-notification',
+                    'oracle-cloud/common-alert'
                   ]
                 },
               ],
@@ -5221,7 +5441,8 @@ const sidebars = {
             'aws-log/set-notice',
             'aws-log/set-receive-event',
             'aws-log/set-event-history',
-            'aws-log/real-time-notification'
+            'aws-log/real-time-notification',
+            'aws-log/common-alert'
           ],
         }
       ]
@@ -5399,7 +5620,8 @@ const sidebars = {
                 'amazon-ecs/metric-warning-notice',
                 'amazon-ecs/set-receive-event',
                 'amazon-ecs/set-event-history',
-                'amazon-ecs/real-time-notification'
+                'amazon-ecs/real-time-notification',
+                'amazon-ecs/common-alert'
               ]
             },
             'amazon-ecs/labs'
@@ -5480,7 +5702,8 @@ const sidebars = {
                 'amazon-cloudwatch/metric-warning-notice',
                 'amazon-cloudwatch/set-receive-event',
                 'amazon-cloudwatch/set-event-history',
-                'amazon-cloudwatch/real-time-notification'
+                'amazon-cloudwatch/real-time-notification',
+                'amazon-cloudwatch/common-alert'
               ]
             },
             'amazon-cloudwatch/labs'
@@ -5561,7 +5784,8 @@ const sidebars = {
                 'azure/metric-warning-notice',
                 'azure/set-receive-event',
                 'azure/set-event-history',
-                'azure/real-time-notification'
+                'azure/real-time-notification',
+                'azure/common-alert'
               ]
             },
             'azure/labs'
@@ -5642,7 +5866,8 @@ const sidebars = {
                 'ncloud/metric-warning-notice',
                 'ncloud/set-receive-event',
                 'ncloud/set-event-history',
-                'ncloud/real-time-notification'
+                'ncloud/real-time-notification',
+                'ncloud/common-alert'
               ]
             },
             'ncloud/labs'
@@ -5723,7 +5948,8 @@ const sidebars = {
                 'oracle-cloud/metric-warning-notice',
                 'oracle-cloud/set-receive-event',
                 'oracle-cloud/set-event-history',
-                'oracle-cloud/real-time-notification'
+                'oracle-cloud/real-time-notification',
+                'oracle-cloud/common-alert'
               ]
             },
             'oracle-cloud/labs'
@@ -6006,7 +6232,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            'browser/pageload-stat'
+            'browser/pageload-stat',
+            'browser/ipload-stat'
           ]
         },
         {
@@ -6041,9 +6268,11 @@ const sidebars = {
               id: 'browser/warning-notice-v2',
               className: 'newfunc'
             },
+            'browser/hitmap-notice',
             'browser/set-receive-event',
             'browser/set-event-history',
-            'browser/real-time-notification'
+            'browser/real-time-notification',
+            'browser/common-alert'
           ],
         },
         'browser/collect-data',
@@ -6263,7 +6492,8 @@ const sidebars = {
                 'server/set-receive-event',
                 'server/set-event-history',
                 'server/set-event-format',
-                'server/real-time-notification'
+                'server/real-time-notification',
+                'server/common-alert'
               ]
             },
             {
@@ -6587,7 +6817,8 @@ const sidebars = {
                 'kubernetes/set-event-log',
                 'kubernetes/set-receive-event',
                 'kubernetes/set-event-history',
-                'kubernetes/real-time-notification'
+                'kubernetes/real-time-notification',
+                'kubernetes/common-alert'
               ],
             },
             'kubernetes/labs'
@@ -6757,7 +6988,8 @@ const sidebars = {
             'log/set-notice',
             'log/set-receive-event',
             'log/set-event-history',
-            'log/real-time-notification'
+            'log/real-time-notification',
+            'log/common-alert'
           ],
         },
       ]  

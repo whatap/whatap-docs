@@ -535,7 +535,14 @@ const config = {
             type: 'doc',
             docId: 'mssql/monitoring-intro',
             position: "left",
-            label: 'SQL Server 모니터링',
+            label: 'SQL Server V2 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'mssql-v1/monitoring-intro',
+            position: "left",
+            label: 'SQL Server V1 모니터링',
             className: 'hidden',
           },
           {
@@ -549,14 +556,28 @@ const config = {
             type: 'doc',
             docId: 'cubrid/monitoring-intro',
             position: "left",
-            label: 'CUBRID 모니터링',
+            label: 'CUBRID V2 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'cubrid-v1/monitoring-intro',
+            position: "left",
+            label: 'CUBRID V1 모니터링',
             className: 'hidden',
           },
           {
             type: 'doc',
             docId: 'altibase/monitoring-intro',
             position: "left",
-            label: 'Altibase 모니터링',
+            label: 'Altibase V2 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'altibase-v1/monitoring-intro',
+            position: "left",
+            label: 'Altibase V1 모니터링',
             className: 'hidden',
           },
           {
@@ -728,7 +749,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
-        additionalLanguages: [ 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
+        additionalLanguages: [ 'php', 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
       },
       zoom: {
         selector: '.markdown :not(em, div) > img:not(.ico-link)',
