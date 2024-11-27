@@ -426,8 +426,6 @@ const assets = {
 
 };
 
-/*mysql, mariadb, CUBRID 지원*/
-/*{@include: ../common-items/_db-database-size.mdx}*/
 /*oracle, tibero, CUBRID*/
 /*{@include: ../common-items/_db-tablespace-size.mdx}*/
 /*oracle, tibero*/
@@ -441,7 +439,7 @@ const assets = {
 const stat_toc = [...toc, ..._db_trend_by_query_toc, ..._db_detail_view_query_toc];
 function stat_createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: [(0,jsx_runtime.jsx)(MDXContent, {}), "\n", "\n", (0,jsx_runtime.jsx)(_db_trend_by_query_MDXContent, {}), "\n", "\n", (0,jsx_runtime.jsx)(_db_detail_view_query_MDXContent, {}), "\n", "\n", "\n", "\n", "\n", "\n"]
+    children: [(0,jsx_runtime.jsx)(MDXContent, {}), "\n", "\n", (0,jsx_runtime.jsx)(_db_trend_by_query_MDXContent, {}), "\n", "\n", (0,jsx_runtime.jsx)(_db_detail_view_query_MDXContent, {}), "\n", "\n", "\n", "\n"]
   });
 }
 function stat_MDXContent(props = {}) {

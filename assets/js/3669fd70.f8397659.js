@@ -333,8 +333,6 @@ const assets = {
 
 };
 
-/*Postgresql, Oracle 지원 프로세스 모니터링*/
-/*{@include: ../common-items/_db-agent-xos-process-monitoring.mdx}*/
 /*서버 이름을 임의로 부여해 관리하기*/
 /*AES 256 암호화 적용*/
 /*에이전트 업데이트*/
@@ -348,7 +346,7 @@ const assets = {
 const agent_manage_toc = [...toc, ..._db_aes_256_encrypt/* toc */.RM, ..._db_update_agent/* toc */.RM, ..._db_uninstall_agent_toc];
 function agent_manage_createMdxContent(props) {
   return (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-    children: ["\n", "\n", "\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_db_aes_256_encrypt/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_db_update_agent/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_db_uninstall_agent_MDXContent, {})]
+    children: ["\n", "\n", (0,jsx_runtime.jsx)(MDXContent, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_db_aes_256_encrypt/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_db_update_agent/* default */.Ay, {}), "\n", "\n", "\n", (0,jsx_runtime.jsx)(_db_uninstall_agent_MDXContent, {})]
   });
 }
 function agent_manage_MDXContent(props = {}) {

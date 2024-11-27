@@ -263,7 +263,7 @@ function _createMdxContent(props) {
           }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.tr, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
-                children: "HoBId"
+                children: "HoBT Id"
               })
             }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.td, {
               children: "데드락이 발생한 리소스(Heap or B-Tree)의 ID입니다."
