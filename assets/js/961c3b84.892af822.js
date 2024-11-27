@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[48659],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[76861],{
 
 /***/ 20144:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -450,7 +450,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 51467:
+/***/ 97649:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -472,7 +472,7 @@ const frontMatter = {
 	title: '트랜잭션 분석하기',
 	description: '트랜잭션 관련 메뉴 화면을 안내합니다.',
 	keywords: [
-		'.NET',
+		'Java',
 		'트랜잭션',
 		'트랜잭션 분석하기',
 		'히트맵',
@@ -482,16 +482,16 @@ const frontMatter = {
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "dotnet/trs-view",
+  "id": "java/trs-view",
   "title": "트랜잭션 분석하기",
   "description": "트랜잭션 관련 메뉴 화면을 안내합니다.",
-  "source": "@site/docs/dotnet/trs-view.mdx",
-  "sourceDirName": "dotnet",
-  "slug": "/dotnet/trs-view",
-  "permalink": "/whatap-docs/dotnet/trs-view",
+  "source": "@site/docs/java/trs-view.mdx",
+  "sourceDirName": "java",
+  "slug": "/java/trs-view",
+  "permalink": "/whatap-docs/java/trs-view",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/dotnet/trs-view.mdx",
+  "editUrl": "undefined/docs/java/trs-view.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -499,7 +499,7 @@ const metadata = {
     "title": "트랜잭션 분석하기",
     "description": "트랜잭션 관련 메뉴 화면을 안내합니다.",
     "keywords": [
-      ".NET",
+      "Java",
       "트랜잭션",
       "트랜잭션 분석하기",
       "히트맵",
@@ -507,14 +507,14 @@ const metadata = {
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dotNetSidebar",
+  "sidebar": "javaSidebar",
   "previous": {
     "title": "트랜잭션",
-    "permalink": "/whatap-docs/dotnet/track-transactions-intro"
+    "permalink": "/whatap-docs/java/track-transactions-intro"
   },
   "next": {
     "title": "트랜잭션 트레이싱",
-    "permalink": "/whatap-docs/dotnet/trs-profile"
+    "permalink": "/whatap-docs/java/trs-profile"
   }
 };
 const assets = {
@@ -525,20 +525,40 @@ const assets = {
 
 
 const toc = [..._common_items_trs_view_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM, {
-  "value": "예외 처리 기준",
-  "id": "예외-처리-기준",
+  "value": "Java 에이전트의 예외 처리(<strong>WARNING</strong>) 기준",
+  "id": "java-agent-exception",
   "level": 2
 }, {
   "value": "서비스 화면에서 에러 표시",
   "id": "서비스-화면에서-에러-표시",
   "level": 3
 }, {
+  "value": "Spring ExceptionHandler 통과 시 에러 처리",
+  "id": "spring-exceptionhandler-통과-시-에러-처리",
+  "level": 3
+}, {
   "value": "Status Code 400 이상 에러 처리",
   "id": "status-code-400-이상-에러-처리",
   "level": 3
 }, {
+  "value": "JDBC driver 호출 시 에러 처리",
+  "id": "jdbc-driver-호출-시-에러-처리",
+  "level": 3
+}, {
+  "value": "HTTP call 에러 처리",
+  "id": "http-call-에러-처리",
+  "level": 3
+}, {
+  "value": "와탭에서 정의한 에러 처리",
+  "id": "와탭에서-정의한-에러-처리",
+  "level": 3
+}, {
   "value": "트랜잭션 에러 단계 INFO 처리",
   "id": "트랜잭션-에러-단계-info-처리",
+  "level": 3
+}, {
+  "value": "메소드 예외 처리",
+  "id": "메소드-예외-처리",
   "level": 3
 }];
 function _createMdxContent(props) {
@@ -551,9 +571,11 @@ function _createMdxContent(props) {
     h3: "h3",
     img: "img",
     li: "li",
+    mdxAdmonitionTitle: "mdxAdmonitionTitle",
     p: "p",
     pre: "pre",
     section: "section",
+    strong: "strong",
     ul: "ul",
     ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
     ...props.components
@@ -562,21 +584,16 @@ function _createMdxContent(props) {
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_trs_view_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {}), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h2",
-      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h2, {
-        id: "예외-처리-기준",
-        children: "예외 처리 기준"
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: ".NET 애플리케이션 환경에서 발생하는 에러를 .NET 에이전트가 예외 처리하는 기준에 대해서 안내합니다. .NET 에이전트는 다음 기준의 경우에만 에러 처리를 합니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "사용자의 애플리케이션 환경에서 핸들링되지 않은 Exception 발생 시"
-          }), "\n"]
-        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-            children: "Status Code 400 이상 발생 시"
-          }), "\n"]
-        }), "\n"]
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.h2, {
+        id: "java-agent-exception",
+        children: ["Java 에이전트의 예외 처리(", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+          children: "WARNING"
+        }), ") 기준"]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["Java 언어를 사용하는 애플리케이션 환경에서 발생하는 에러를 Java 에이전트가 예외 처리하는 기준에 대해서 안내합니다. 다음 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+          href: "../release-notes/java/java-2_2_27",
+          children: "Java 에이전트 v2.2.27"
+        }), " 기준으로 작성되었습니다."]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -608,26 +625,117 @@ function _createMdxContent(props) {
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
       children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "spring-exceptionhandler-통과-시-에러-처리",
+        children: "Spring ExceptionHandler 통과 시 에러 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["Spring 프레임워크에서는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "org.springframework.web.servlet.DispatcherServlet.processHandlerException"
+        }), " 메소드를 통과하는 경우 에러로 처리합니다. 다만 개발자가 Try-Catch 문을 사용하는 경우 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "ExceptionHandler"
+        }), "를 통과하지 않으므로 와탭에서는 에러 처리하지 않습니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
         id: "status-code-400-이상-에러-처리",
         children: "Status Code 400 이상 에러 처리"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "HTTP 응답 코드가 400 이상인 경우에는 예외 클래스(Exception Class)가 발생하지 않더라도 에러로 처리합니다. 다음은 HTTP 상태 코드 기반 에러 처리 활성화 여부를 설정하는 에이전트 옵션입니다."
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-          className: "language-ini",
-          metastring: "title=\"whatap.conf\"",
-          children: "transaction_status_error_enable=true\n"
-        })
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
-        type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-          children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-            children: "transaction_status_error_enable"
-          }), " 옵션에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-            href: "agent-transaction#transaction_status_error_enable",
-            children: "다음 문서"
-          }), "를 참조하세요."]
-        })
+        children: "HTTP 응답 코드가 400 이상인 경우에는 예외 클래스(Exception Class)가 발생하지 않더라도 에러로 처리합니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "jdbc-driver-호출-시-에러-처리",
+        children: "JDBC driver 호출 시 에러 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "JDBC 연결 호출이나 SQL 실행 호출 시에 발생하는 에러는 에러로 처리됩니다."
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "http-call-에러-처리",
+        children: "HTTP call 에러 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: ["HTTP 호출 중 발생하는 에러는 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "SLOW_HTTPC"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "httpc error"
+        }), " 등의 형태로 표시됩니다."]
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "와탭에서-정의한-에러-처리",
+        children: "와탭에서 정의한 에러 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+        children: "와탭 모니터링 서비스에서는 특정한 조건에 따라 에러로 처리합니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
+        children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "TOO_MANY_RECORDS"
+            }), ": fetch 건수 10,000건 이상"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["관련한 에이전트 옵션은 다음 문서를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "agent-dbsql#profile_error_jdbc_fetch_max",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "profile_error_jdbc_fetch_max=10000"
+              })
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "SLOW_SQL"
+            }), ": SQL 시간 30,000ms 이상"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["관련한 에이전트 옵션은 다음 문서를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "agent-dbsql#profile_error_sql_time_max",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "profile_error_sql_time_max=30000"
+              })
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "SLOW_HTTPC"
+            }), ": HTTP call 경과 시간이 10,000ms 이상"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["관련한 에이전트 옵션은 다음 문서를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "agent-httpcapicall#profile_error_httpc_time_max",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "profile_error_httpc_time_max=10000"
+              })
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "httpc error"
+            }), ": HTTP call status code 400 이상인 경우"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["관련한 에이전트 옵션은 다음 문서를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "agent-transaction#httpc_status_error_enable",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "httpc_status_error_enable=true"
+              })
+            })]
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+              children: "status error"
+            }), ": 트랜잭션 status code 400 이상인 경우"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+            children: ["관련한 에이전트 옵션은 다음 문서를 참조하세요. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+              href: "agent-transaction#transaction_status_error_enable",
+              children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "transaction_status_error_enable=true"
+              })
+            })]
+          }), "\n"]
+        }), "\n"]
       })]
     }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
       className: "remark-sectionize-h3",
@@ -642,101 +750,113 @@ function _createMdxContent(props) {
           class: "normal",
           children: "INFO"
         }), "(파란색)입니다."]
-      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "다음 조건에 해당하면 에러 처리하지 않습니다."
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "transaction_status_error_enable"
-            }), " 옵션의 값이 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "false"
-            }), "인 경우"]
+              children: "biz_exceptions"
+            }), ": 레코드 에러 표시"]
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title=\"whatap.conf\"",
-              children: "# default true\ntransaction_status_error_enable=false\n"
+              children: "biz_exceptions=io.home.test.baseapp.base.exception.custom.CustomParameterizedException\n"
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
             children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "ignore_exceptions"
+            }), ": 레코드 에러 미표시"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "ignore_exceptions=org.springframework.web.util.NestedServletException\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               children: "status_ignore"
-            }), " 옵션에 정의된 상태 코드인 경우"]
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title=\"whatap.conf\"",
-              children: "# Separated by commas(,)\nstatus_ignore=400,404,500\n"
+              children: "status_ignore=408,500,200\n"
             })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-              children: "status_ignore_set"
-            }), " 옵션에 정의된 URL과 상태 코드 조합인 경우"]
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "httpc_status_ignore"
+            })
           }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
             children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
               className: "language-ini",
               metastring: "title=\"whatap.conf\"",
-              children: "# URL:StatusCode\nstatus_ignore_set=/api/auth/token:401,/health-check:503\n"
+              children: "httpc_status_ignore=403,401\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "status_ignore_set"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "status_ignore_set=/api/posts/test/timeout:200,/error:500\n"
+            })
+          }), "\n"]
+        }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
+          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              children: "httpc_status_url_ignore_set"
+            })
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.pre, {
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+              className: "language-ini",
+              metastring: "title=\"whatap.conf\"",
+              children: "httpc_status_url_ignore_set=/api/posts/test/timeout:408,/api/apache/httpclient/posts/timeout:500\n"
             })
           }), "\n"]
         }), "\n"]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
         type: "note",
-        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-          children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-              children: ["에이전트 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
-                children: "whatap.conf"
-              }), " 파일을 편집하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "management",
-                className: "uitext"
-              }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
-                sid: "agent_configuration",
-                className: "uitext"
-              }), " 메뉴에서 확인할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                href: "set-agent",
-                children: "다음 문서"
-              }), "를 참조하세요."]
-            }), "\n"]
-          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-            children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-              children: "에이전트 설정 옵션에 대한 자세한 내용은 다음 문서를 참조하세요."
-            }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ul, {
-              children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "agent-transaction#transaction_status_error_enable",
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "transaction_status_error_enable"
-                    })
-                  })
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "agent-transaction#status_ignore",
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "status_ignore"
-                    })
-                  })
-                }), "\n"]
-              }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
-                children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-                  children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
-                    href: "agent-transaction#status_ignore_set",
-                    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
-                      children: "status_ignore_set"
-                    })
-                  })
-                }), "\n"]
-              }), "\n"]
-            }), "\n"]
-          }), "\n"]
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["에이전트 설정은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.em, {
+            children: "whatap.conf"
+          }), " 파일을 편집하거나 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "management",
+            className: "uitext"
+          }), " > ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "agent_configuration",
+            className: "uitext"
+          }), " 메뉴에서 확인할 수 있습니다. 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "set-agent",
+            children: "다음 문서"
+          }), "를 참조하세요."]
         })
+      })]
+    }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.section, {
+      className: "remark-sectionize-h3",
+      children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.h3, {
+        id: "메소드-예외-처리",
+        children: "메소드 예외 처리"
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "hook_method_patterns"
+        }), ", ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+          children: "hook_service_patterns"
+        }), " 옵션을 통해 설정한 메소드가 수행 중 Exception을 발생시키는 경우, 해당 예외는 에러로 처리됩니다."]
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.admonition, {
+        type: "note",
+        children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.mdxAdmonitionTitle, {}), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
+          children: "Try-Catch 구문을 사용하여 메소드 내부에서 Exception을 처리한 경우, 자바 에이전트는 해당 Exception을 수집 대상에서 제외하여 에러로 처리하지 않습니다."
+        })]
       })]
     })]
   });
