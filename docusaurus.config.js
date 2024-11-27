@@ -13,6 +13,16 @@ const config = {
   title: 'WhaTap Docs',
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
   baseUrl: '/whatap-docs/',
   onBrokenLinks: 'ignore',
   onBrokenAnchors: 'ignore',
@@ -180,28 +190,28 @@ const config = {
       },
     ]
   ],
-  webpack: {
-    jsLoader: (isServer) => ({
-      loader: require.resolve("swc-loader"),
-      options: {
-        jsc: {
-          parser: {
-            syntax: "typescript",
-            tsx: true,
-          },
-          transform: {
-            react: {
-              runtime: 'automatic',
-            },
-          },
-          target: "es2017",
-        },
-        module: {
-          type: isServer ? "commonjs" : "es6",
-        },
-      },
-    }),
-  },
+  // webpack: {
+  //   jsLoader: (isServer) => ({
+  //     loader: require.resolve("swc-loader"),
+  //     options: {
+  //       jsc: {
+  //         parser: {
+  //           syntax: "typescript",
+  //           tsx: true,
+  //         },
+  //         transform: {
+  //           react: {
+  //             runtime: 'automatic',
+  //           },
+  //         },
+  //         target: "es2017",
+  //       },
+  //       module: {
+  //         type: isServer ? "commonjs" : "es6",
+  //       },
+  //     },
+  //   }),
+  // },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
