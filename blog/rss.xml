@@ -35,7 +35,7 @@
 </blockquote><table><thead><tr><th><strong>Server</strong></th></tr></thead></table><blockquote>
 <ul>
 <li>Unix <strong>AIX</strong>, <strong>Oracle Solaris</strong>, <strong>HP-UX</strong> 설치 패키지를 제공합니다.</li>
-<li><span class="uitext">서버 인벤토리</span> 메뉴를 새롭게 제공합니다.</li>
+<li><span class="uitext">서버 구성 정보</span> 메뉴를 새롭게 제공합니다.</li>
 </ul>
 </blockquote><table><thead><tr><th><strong>Kubernetes</strong></th></tr></thead></table><blockquote>
 <ul>
@@ -117,7 +117,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-정식-�출시"><code>Go</code> 정식 출시<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#go-%EC%A0%95%EC%8B%9D-%EC%B6%9C%EC%8B%9C" class="hash-link" aria-label="go-정식-출시에 대한 직접 링크" title="go-정식-출시에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-정식-출시"><code>Go</code> 정식 출시<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#go-%EC%A0%95%EC%8B%9D-%EC%B6%9C%EC%8B%9C" class="hash-link" aria-label="go-정식-출시에 대한 직접 링크" title="go-정식-출시에 대한 직접 링크">​</a></h3>
 <p><code>Go</code> 애플리케이션 모니터링이 베타 버전 종료 후 <strong>정식</strong> 서비스를 시작했습니다. 와탭의 <code>Go</code> 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-메뉴-개선">공통 메뉴 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EA%B3%B5%ED%86%B5-%EB%A9%94%EB%89%B4-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="공통 메뉴 개선에 대한 직접 링크" title="공통 메뉴 개선에 대한 직접 링크">​</a></h3>
 <p><span class="uitext">통계</span>와 <span class="uitext">인스턴스 성능 관리</span> 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 동선과 안정성 향상을 위한 개선 작업이 이루어졌습니다.</p>
@@ -183,13 +183,13 @@
 <!-- -->
 <!-- -->
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="서버-구성-정보">서버 구성 정보<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%84%9C%EB%B2%84-%EA%B5%AC%EC%84%B1-%EC%A0%95%EB%B3%B4" class="hash-link" aria-label="서버 구성 정보에 대한 직접 링크" title="서버 구성 정보에 대한 직접 링크">​</a></h3>
-<p>와탭은 새롭게 <span class="uitext">서버 인벤토리</span> 메뉴를 제공합니다. <span class="uitext">서버 인벤토리</span>는 서버의 물리적 특성 및 가상적 특성, 운영 환경 등을 체계적으로 관리하기 위한 기능입니다. 자동으로 수집된 서버 구성 요소와 사용자 정의 항목을 통해 서버의 구성을 상세하게 파악하고 관리하는 것이 가능합니다.</p>
+<p>와탭은 새롭게 <span class="uitext">서버 구성 정보</span> 메뉴를 제공합니다. <span class="uitext">서버 구성 정보</span>는 서버의 물리적 특성 및 가상적 특성, 운영 환경 등을 체계적으로 관리하기 위한 기능입니다. 자동으로 수집된 서버 구성 요소와 사용자 정의 항목을 통해 서버의 구성을 상세하게 파악하고 관리하는 것이 가능합니다.</p>
 <p><img decoding="async" loading="lazy" alt="서버 구성 요소 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-server-inventory-f487dcc54c2c467739cfc7fea9745b97.png" width="1210" height="444" class="img_ev3q"></p>
-<p>사용자 정의 항목을 통해 커스텀 컬럼을 구성하여 서버 상태 및 성능을 더욱 세밀하게 모니터링하고 이슈 상황에 대응할 수 있습니다. 예를 들어 각 서버 담당자와 직접적인 소통이 용이하도록 운영 담당자 정보를 추가하여 문제 시 빠른 대응이 가능합니다. 또한 <span class="uitext">서버 인벤토리</span> 메뉴는 3단계의 다중 정렬을 통해 조건에 맞는 서버를 빠르게 필터링 할 수 있습니다. 기본 정렬은 <em><strong>OS 타입</strong></em>, <em><strong>모델</strong></em>, 그리고 <em><strong>시리얼 정보</strong></em> 기준입니다.</p>
+<p>사용자 정의 항목을 통해 커스텀 컬럼을 구성하여 서버 상태 및 성능을 더욱 세밀하게 모니터링하고 이슈 상황에 대응할 수 있습니다. 예를 들어 각 서버 담당자와 직접적인 소통이 용이하도록 운영 담당자 정보를 추가하여 문제 시 빠른 대응이 가능합니다. 또한 <span class="uitext">서버 구성 정보</span> 메뉴는 3단계의 다중 정렬을 통해 조건에 맞는 서버를 빠르게 필터링 할 수 있습니다. 기본 정렬은 <em><strong>OS 타입</strong></em>, <em><strong>모델</strong></em>, 그리고 <em><strong>시리얼 정보</strong></em> 기준입니다.</p>
 <!-- -->
 <!-- -->
 <!-- -->
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><span class="uitext">서버 인벤토리</span> 메뉴에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/server/server-inventory">다음 문서</a>를 참조하세요.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><span class="uitext">서버 구성 정보</span> 메뉴에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/server/server-inventory">다음 문서</a>를 참조하세요.</p></div></div>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#database" class="hash-link" aria-label="database에 대한 직접 링크" title="database에 대한 직접 링크">​</a></h2>
 <!-- -->
@@ -239,7 +239,7 @@
 <p>새롭게 제공하는 <span class="uitext">세션 리플레이</span> 기능은 사용자가 웹 사이트에서 수행하는 모든 이벤트를 자동으로 기록하고 재생할 수 있는 기능입니다.</p>
 <p>사용자의 클릭, 스크롤, 입력, 페이지 전환 등과 같은 모든 이벤트를 정확하게 재현하여 웹 사이트와 사용자 사이의 상호작용을 분석할 수 있습니다. 이를 통해 실제 사용자 경험을 재현하여 잠재적인 문제를 빠르게 식별하고 해결할 수 있으며, 사용자의 웹 사이트 사용 방식에 대한 통찰을 제공하여 최적화를 도울 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="세션 리플레이 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-browser1-9a2a14b2625639c2309b88bb0facfd3e.png" width="1288" height="613" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="페이지-로드-통계">페이지 로드 통계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%93%9C-%ED%86%B5%EA%B3%84" class="hash-link" aria-label="페이지 로드 통계에 대한 직접 링크" title="페이지 로드 통계에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="페이지-로드-통��계">페이지 로드 통계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%93%9C-%ED%86%B5%EA%B3%84" class="hash-link" aria-label="페이지 로드 통계에 대한 직접 링크" title="페이지 로드 통계에 대한 직접 링크">​</a></h3>
 <p>새롭게 제공하는 <span class="uitext">페이지 로드 통계</span> 기능은 웹 사이트의 페이지별 로드 성능 정보를 제공합니다. 각 페이지의 로드 과정을 추적하여 성능 저하 원인을 파악하고, 최적화된 페이지의 개선 효과를 확인할 수 있습니다. <em><strong>페이지 그룹</strong></em>을 기준으로 페이지 로드 시간 및 DOM 로드 시간, 네트워크 지연 시간, 리소스 로드 시간 등 다양한 성능 지표를 제공합니다. 이를 통해 페이지 성능 최적화 여부를 확인할 수 있습니다</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-pageload-statistics.png" alt="페이지 로드 통계 분기 예시" width="1200" height="1055"></p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
@@ -1868,7 +1868,7 @@
 </blockquote><table><thead><tr><th><strong>Server</strong></th></tr></thead></table><blockquote>
 <ul>
 <li>Unix <strong>HP-UX</strong> 설치 패키지를 제공합니다.</li>
-<li><span class="uitext">서버 인벤토리</span> 메뉴를 새롭게 제공합니다.</li>
+<li><span class="uitext">서버 구성 정보</span> 메뉴를 새롭게 제공합니다.</li>
 </ul>
 </blockquote><table><thead><tr><th><strong>Kubernetes</strong></th></tr></thead></table><blockquote>
 <ul>
@@ -2168,10 +2168,10 @@
 </ul></div></div>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-3q-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
-<p>와탭 2024년 3분기 <code>Server</code> 부분의 주목할 만한 신규 기능으로 <strong>Unix</strong> <code>HP-UX</code> 설치 패키지 제공과 새로운 <span class="uitext">서버 인벤토리</span> 메뉴에 대해 소개합니다.</p>
-<p>와탭 서버 모니터링은 이번 3분기에 새롭게 <span class="uitext">서버 인벤토리</span> 메뉴를 제공합니다. <span class="uitext">서버 인벤토리</span>는 서버의 물리적 특성 및 가상적 특성, 운영 환경 등을 체계적으로 관리하기 위한 기능입니다. 자동으로 수집된 서버 구성 요소와 사용자 정의 항목을 통해 서버의 구성을 상세하게 파악하고 관리하는 것이 가능합니다.</p>
+<p>와탭 2024년 3분기 <code>Server</code> 부분의 주목할 만한 신규 기능으로 <strong>Unix</strong> <code>HP-UX</code> 설치 패키지 제공과 새로운 <span class="uitext">서버 구성 정보</span> 메뉴에 대해 소개합니다.</p>
+<p>와탭 서버 모니터링은 이번 3분기에 새롭게 <span class="uitext">서버 구성 정보</span> 메뉴를 제공합니다. <span class="uitext">서버 구성 정보</span>는 서버의 물리적 특성 및 가상적 특성, 운영 환경 등을 체계적으로 관리하기 위한 기능입니다. 자동으로 수집된 서버 구성 요소와 사용자 정의 항목을 통해 서버의 구성을 상세하게 파악하고 관리하는 것이 가능합니다.</p>
 <p><img decoding="async" loading="lazy" alt="서버 구성 요소 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-server-inventory-f487dcc54c2c467739cfc7fea9745b97.png" width="1210" height="444" class="img_ev3q"></p>
-<p>사용자 정의 항목을 통해 커스텀 컬럼을 구성하여 서버 상태 및 성능을 더욱 세밀하게 모니터링하고 이슈 상황에 대응할 수 있습니다. 예를 들어 각 서버 담당자와 직접적인 소통이 용이하도록 운영 담당자 정보를 추가하여 문제 시 빠른 대응이 가능합니다. 또한 <span class="uitext">서버 인벤토리</span> 메뉴는 3단계의 다중 정렬을 통해 조건에 맞는 서버를 빠르게 필터링 할 수 있습니다. 기본 정렬은 <em><strong>OS 타입</strong></em>, <em><strong>모델</strong></em>, 그리고 <em><strong>시리얼 정보</strong></em> 기준입니다.</p>
+<p>사용자 정의 항목을 통해 커스텀 컬럼을 구성하여 서버 상태 및 성능을 더욱 세밀하게 모니터링하고 이슈 상황에 대응할 수 있습니다. 예를 들어 각 서버 담당자와 직접적인 소통이 용이하도록 운영 담당자 정보를 추가하여 문제 시 빠른 대응이 가능합니다. 또한 <span class="uitext">서버 구성 정보</span> 메뉴는 3단계의 다중 정렬을 통해 조건에 맞는 서버를 빠르게 필터링 할 수 있습니다. 기본 정렬은 <em><strong>OS 타입</strong></em>, <em><strong>모델</strong></em>, 그리고 <em><strong>시리얼 정보</strong></em> 기준입니다.</p>
 <!-- -->
 <p><strong>Unix</strong> <code>HP-UX</code> 에이전트 설치 패키지를 제공합니다. <code>HP-UX</code>는 Hewlett-Packard(HP)에서 개발한 고성능 Unix 운영 체제로, Itanium 및 PA-RISC 시스템에서의 안정성과 성능으로 잘 알려져 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="서버 모니터링 설치 페이지 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-server-hp-ux-64c837d1d683dbbfaeb16fc0e8aa95da.png" width="787" height="415" class="img_ev3q"></p>
@@ -2232,7 +2232,7 @@
 <p><code class="Feature" type="1">Feature</code> 윈도우즈 서버 디스크 성능 카운터가 존재하지 않으면 대체 카운터를 사용하도록 개선</p>
 </li>
 </ul></div></div></details>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><span class="uitext">서버 인벤토리</span> 메뉴에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/server/server-inventory">다음 문서</a>를 참조하세요.</p></div></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><p><span class="uitext">서버 구성 정보</span> 메뉴에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/server/server-inventory">다음 문서</a>를 참조하세요.</p></div></div>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-3q-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 3분기 <code>Kubernetes</code> 부분의 주목할 만한 신규 기능 및 변경 사항으로 새로운 <span class="uitext">노드 맵</span>, <span class="uitext">노드 타임라인</span>, <span class="uitext">노드 디스크 목록</span>, <span class="uitext">Service 목록</span> 및 <span class="uitext">컨테이너 요약 분석</span>, <span class="uitext">Pod 요약 분석</span> 기능을 소개합니다.</p>
