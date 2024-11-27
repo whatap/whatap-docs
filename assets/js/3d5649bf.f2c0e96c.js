@@ -48,6 +48,10 @@ const metadata = {
     "isTranslationMissing": false
   },
   "sidebar": "releaseSidebar",
+  "previous": {
+    "title": "Service Release Notes",
+    "permalink": "/whatap-docs/release-notes/service/"
+  },
   "next": {
     "title": "Service 2.10.X",
     "permalink": "/whatap-docs/release-notes/service/service-2_10_x"
@@ -1053,6 +1057,17 @@ function _createMdxContent(props) {
                 }), " 값을 상태명으로 표시하도록 변경"]
               }), "\n"]
             }), "\n"]
+          }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+            type: "note",
+            children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+              children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(UI, {
+                children: "Session Info"
+              }), "에 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.code, {
+                children: "command"
+              }), " 값을 상태명으로 표시하는 기능은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
+                children: "DBX 에이전트 2.2.3 버전"
+              }), " 이상에서 지원합니다."]
+            })
           }), "\n"]
         }), "\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
