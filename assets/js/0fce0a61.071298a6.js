@@ -49,6 +49,496 @@ function _createMdxContent(props) {
     children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
       children: ["\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-overview",
+        children: "신규 기능 출시"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview2",
+        children: "Server"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "New",
+            type: "1",
+            children: "New"
+          }), " 클라우드 및 엔터프라이즈 온프레미스 인프라 모니터링을 지원하는 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "서버 인벤토리 맵"
+          }), " 메뉴 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "신규 기능 출시"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview2",
+        children: "Kubernetes"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "New",
+            type: "1",
+            children: "New"
+          }), " 쿠버네티스 환경에서 클러스터 상태 관련 데이터 저장소를 역할을 담당하고 있는 etcd 컴포넌트를 모니터링할 수 있는 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "etcd 대시보드"
+          }), " 메뉴 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "신규 기능 출시"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview2",
+        children: "Database"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "New",
+            type: "1",
+            children: "New"
+          }), " ", (0,jsx_runtime.jsx)("strong", {
+            children: "SQL Server"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "my",
+            children: "V2"
+          }), " 서비스 시작"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "신규 기능 출시"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview2",
+        children: "Browser"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "New",
+            type: "1",
+            children: "New"
+          }), " IP 주소 그룹 단위로 통계를 분석할 수 있는 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "IP 로드 통계"
+          }), " 메뉴 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "공통"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "경고 알림"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이벤트 설정"
+          }), " ", (0,jsx_runtime.jsx)("code", {
+            class: "newfunc",
+            children: "New"
+          }), " 메뉴의 테이블 목록에 순번(No) 컬럼 추가"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "프로젝트 목록"
+          }), " 화면에서 ", (0,jsx_runtime.jsx)("img", {
+            loading: "lazy",
+            src: "/img/ic-setting.svg",
+            alt: "설정 아이콘",
+            width: "auto",
+            height: "auto"
+          }), " 설정 드롭다운 메뉴 내 마우스 호버 스타일 추가 제공"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "경고 알림"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이벤트 기록"
+          }), " 메뉴에서 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "진행 중인 이벤트만 보기"
+          }), " 기능 제공"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "실시간 알림 목록"
+          }), "에서 CSV 다운로드 기능 추가"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이용 내역"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "프로젝트 유료 전환"
+          }), " 메뉴에서 프로젝트 전체 및 개별 프로젝트의 과금 단위 요약 추가"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "0",
+            children: "Feature"
+          }), " 와탭 사용자 교육 신청서(구글폼)에 대한 다국어 지원 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Application"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "분석"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "멀티 트랜잭션 추적"
+          }), " 메뉴에서 다음 상황에 ", (0,jsx_runtime.jsx)("img", {
+            decoding: "async",
+            loading: "lazy",
+            alt: "검색 아이콘",
+            src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NGYxMDZkYi1mOWQ1LTRkNWItYjg1Mi01N2E4OWQ4N2NiODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM0RjAyQzM1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM0RjAyQzI1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphMzM1ZWVmNC1mYjZhLTRkNzctOWI5MS0yZDViNTU2OTE4YTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRmMTA2ZGItZjlkNS00ZDViLWI4NTItNTdhODlkODdjYjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xFhE8QAAA2NJREFUeNrMl0tIVGEUx//fd2fm3nGaZHwkA+KjFylBWG5amG10GRGW9AKjRVFRCSJEQUPRokioNulCAhFsV2LiKogIwl7SoiyVsdJ8Vb5G5z3f1/luumk12lynw2WGy1zm/L7z+J9zmZRy4u1gIs/XEV78OC5g0xjostwSEojTR6mXw3fYcO3aok2y15/j83suL7rBgeI8bj4opfUwbOnAw5MCoOv5DVdAG8luvPR1RuqbCUSsAcTfluNmmA5J+MdFlA8Q2cZcjrhAWkz5Vf4VB3dQgUik15R/xcFV7mSaaZR/xcH/9U9SeRDbarpAUJ5HpgVkhO6X4pyZzZDjYogl1ghG04DpRYm5XxKHKm3YV26HywkMjAnc64nBPyxQULh6eUgahpOPnwGJBYrGk6sZ2LvDhukFIEhtWbWToa5Kx/nmEDpexFDs5dZGJhKTCISBRw1OE+Ts/RAePIubVWfYgYcXDbRecELjEh29CRR4Vt6lSR9hbFbi+G4NVWU2HL0dRHtXFN4sIN8D2DWJGl8IbwYTuFLrhJ2OGFuFbvGkW4+iUlvhwMB3gc6XceQVa9BtzJxluW6OGNVO0+MICjYwVJdwTAWkNTBqqAkHQyZ1y3xQQvw1TNUYcdDvs4t/ALLWUVfFLYqMjZ5iVDOfRhIo26TByABmCIovAdmpyySlsWKbRrUFvKKu8mRYBKPMlcnQ1B2lAgVaTuoI07rhnxCYmJMY9gtkehnqDxjo7o2i/wvdZzDruimXQt9PJ/a1h+E7ZmB7iw3NPREMEFRlqYb6/QZ0BzA+Q3pE7R+MSLh0tqJNYEWil0/6cas7ZgLcrHPi7imnOXVVeNueRjFFqWo8qMPjAk7fCUN4AbfBTMVOKYzqKFU7RTkMne/i6Hq/gHJS2zxKX983gbFRWgGoXlQdNdTocFOxn2kNmxEy7Cz1kVmW+CLaP9QM+kAR6hsF1uu0JRJYiIr8WlsEBqXrRLWOwuwohmhPUaKY1NwrOReYp293qlbJWFzS5gZku1R6JBykRUnOqQBHCk05tZNzDwlgMCrNhUlaVcBJAxGEqT1W6cxaGF9e+dJpy6svj9LgSTOL6V9x8K30vuT/IUwNSYcpv8q/4uDXjxj08gIM0ZxR4VqrlC37Un6Vf8XB/qd37d8CDAAmlWmEg71//QAAAABJRU5ErkJggg==",
+            width: "35",
+            height: "29",
+            class: "img_ev3q"
+          }), " 버튼을 비활성화하는 기능 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Kubernetes"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "클러스터"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "쿠버네티스 이벤트"
+          }), " 메뉴에서 다음 기능 추가"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "컨테이너 맵"
+          }), " 및 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "통합 컨테이너 맵"
+          }), " 메뉴에서 외부 프로젝트 에이전트가 설치된 컨테이너 식별 및 해당 프로젝트 이동 기능 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Database"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview2",
+        children: "공통"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "경고 알림"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이벤트 기록"
+          }), " 메뉴에서 이벤트 이름을 선택하면 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "인스턴스 모니터링"
+          }), " 메뉴로 이동하는 기능 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Database"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsx)("br", {}), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview2",
+        children: "Oracle, Oracle Pro"
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "대시보드"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "멀티 인스턴스 모니터링"
+          }), " 메뉴에 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "Disk Usage"
+          }), " 위젯 추가"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "분석"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "SQL 분석"
+          }), " 메뉴에서 다음 기능 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Browser"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이용내역"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "사용량"
+          }), " 및 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "청구서 미리보기"
+          }), "에서 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "세션 리플레이"
+          }), " 과금 표시"]
+        }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "경고 알림"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "이벤트 설정"
+          }), " 메뉴에 ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "AJAX 히트맵 패턴"
+          }), " 알림 설정 추가"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
+        children: "Log"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-date",
+        children: "2024년 11월 27일"
+      }), "\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-service",
+        children: (0,jsx_runtime.jsxs)("a", {
+          href: "https://docs.whatap.io/release-notes/service/service-2_11_x",
+          children: [(0,jsx_runtime.jsx)("img", {
+            src: "../img/ic-link.svg",
+            width: "18px",
+            height: "18px",
+            class: "ico-link medium-zoom-image"
+          }), " Service 2.11.0​"]
+        })
+      }), "\n", (0,jsx_runtime.jsxs)(_components.ul, {
+        children: ["\n", (0,jsx_runtime.jsxs)(_components.li, {
+          children: [(0,jsx_runtime.jsx)("code", {
+            class: "Feature",
+            type: "1",
+            children: "Feature"
+          }), " ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "로그"
+          }), " > ", (0,jsx_runtime.jsx)("span", {
+            class: "uitext",
+            children: "로그 설정"
+          }), " 메뉴에서 다음 기능 추가 및 수정"]
+        }), "\n"]
+      }), "\n"]
+    }), "\n", (0,jsx_runtime.jsxs)(_components.li, {
+      children: ["\n", (0,jsx_runtime.jsx)("code", {
+        class: "changelog-overview",
         children: "공통"
       }), "\n", (0,jsx_runtime.jsx)("code", {
         class: "changelog-date",
@@ -6278,7 +6768,7 @@ const overview_frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-11-07T15:30',
+	date: '2024-11-27T19:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -6293,7 +6783,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-11-07T15:30:00.000Z",
+  "date": "2024-11-27T19:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -6321,7 +6811,7 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-11-07T15:30",
+    "date": "2024-11-27T19:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
@@ -6330,13 +6820,9 @@ const metadata = {
     "isTranslationMissing": false
   },
   "unlisted": false,
-  "prevItem": {
+  "nextItem": {
     "title": "와탭 24년 안내",
     "permalink": "/whatap-docs/blog/2024-summary"
-  },
-  "nextItem": {
-    "title": "3분기 안내",
-    "permalink": "/whatap-docs/blog/2024-3q-summary"
   }
 };
 const assets = {

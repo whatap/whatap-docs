@@ -4322,8 +4322,8 @@ const metadata = {
   },
   "unlisted": false,
   "prevItem": {
-    "title": "서비스 개요",
-    "permalink": "/whatap-docs/blog/overview"
+    "title": "와탭 24년 안내",
+    "permalink": "/whatap-docs/blog/2024-summary"
   },
   "nextItem": {
     "title": "2분기 안내",

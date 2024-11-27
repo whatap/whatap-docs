@@ -23,7 +23,7 @@ const frontMatter = {
 	slug: 'overview',
 	title: '서비스 개요',
 	authors: 'ysj',
-	date: '2024-11-07T15:30',
+	date: '2024-11-27T19:30',
 	toc_max_heading_level: 2,
 	tags: [
 		'새로운 기능',
@@ -38,7 +38,7 @@ const metadata = {
   "source": "@site/blog/overview.mdx",
   "title": "서비스 개요",
   "description": "New Feature Overview",
-  "date": "2024-11-07T15:30:00.000Z",
+  "date": "2024-11-27T19:30:00.000Z",
   "tags": [
     {
       "inline": true,
@@ -66,7 +66,7 @@ const metadata = {
     "slug": "overview",
     "title": "서비스 개요",
     "authors": "ysj",
-    "date": "2024-11-07T15:30",
+    "date": "2024-11-27T19:30",
     "toc_max_heading_level": 2,
     "tags": [
       "새로운 기능",
@@ -75,13 +75,9 @@ const metadata = {
     "isTranslationMissing": false
   },
   "unlisted": false,
-  "prevItem": {
+  "nextItem": {
     "title": "와탭 24년 안내",
     "permalink": "/whatap-docs/blog/2024-summary"
-  },
-  "nextItem": {
-    "title": "3분기 안내",
-    "permalink": "/whatap-docs/blog/2024-3q-summary"
   }
 };
 const assets = {
