@@ -6718,7 +6718,7 @@ const sidebars = {
                 'kubernetes/node-disk-list',
                 'kubernetes/node-timeline',
                 'kubernetes/object-manifest',
-                // 'kubernetes/kubernetes-event',
+                'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/kube-apiserver-metrics-search',
                 'kubernetes/etcd-dashboard',
