@@ -850,7 +850,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"

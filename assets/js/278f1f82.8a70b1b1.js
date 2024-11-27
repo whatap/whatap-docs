@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[80338],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[52851],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1005,7 +1005,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"
@@ -2627,7 +2627,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 96615:
+/***/ 37943:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2653,22 +2653,22 @@ const frontMatter = {
 		'로그',
 		'로그 검색',
 		'UI',
-		'Oracle Pro'
+		'SQL Server'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/log-search",
+  "id": "mssql/log-search",
   "title": "로그 검색",
   "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-  "source": "@site/docs/oracle-pro/log-search.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/log-search",
-  "permalink": "/whatap-docs/oracle-pro/log-search",
+  "source": "@site/docs/mssql/log-search.mdx",
+  "sourceDirName": "mssql",
+  "slug": "/mssql/log-search",
+  "permalink": "/whatap-docs/mssql/log-search",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/log-search.mdx",
+  "editUrl": "undefined/docs/mssql/log-search.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2680,18 +2680,18 @@ const metadata = {
       "로그",
       "로그 검색",
       "UI",
-      "Oracle Pro"
+      "SQL Server"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "mssqlSidebar",
   "previous": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/oracle-pro/log-exp"
+    "permalink": "/whatap-docs/mssql/log-exp"
   },
   "next": {
     "title": "로그 설정",
-    "permalink": "/whatap-docs/oracle-pro/log-setting"
+    "permalink": "/whatap-docs/mssql/log-setting"
   }
 };
 const assets = {

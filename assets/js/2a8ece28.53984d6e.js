@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[47445],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[28031],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1005,7 +1005,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"
@@ -2627,7 +2627,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 56877:
+/***/ 4077:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2652,23 +2652,23 @@ const frontMatter = {
 		'로그 모니터링',
 		'로그',
 		'로그 검색',
-		'UI',
-		'MongoDB'
+		'UI'
 	],
+	toc_max_heading_level: 3,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mongodb/log-search",
+  "id": "log/log-search",
   "title": "로그 검색",
   "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-  "source": "@site/docs/mongodb/log-search.mdx",
-  "sourceDirName": "mongodb",
-  "slug": "/mongodb/log-search",
-  "permalink": "/whatap-docs/mongodb/log-search",
+  "source": "@site/docs/log/log-search.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-search",
+  "permalink": "/whatap-docs/log/log-search",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mongodb/log-search.mdx",
+  "editUrl": "undefined/docs/log/log-search.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2679,19 +2679,19 @@ const metadata = {
       "로그 모니터링",
       "로그",
       "로그 검색",
-      "UI",
-      "MongoDB"
+      "UI"
     ],
+    "toc_max_heading_level": 3,
     "isTranslationMissing": false
   },
-  "sidebar": "mongodbSidebar",
+  "sidebar": "logSidebar",
   "previous": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/mongodb/log-exp"
+    "permalink": "/whatap-docs/log/log-exp"
   },
   "next": {
-    "title": "로그 설정",
-    "permalink": "/whatap-docs/mongodb/log-setting"
+    "title": "알림 설정하기",
+    "permalink": "/whatap-docs/log/set-notice"
   }
 };
 const assets = {

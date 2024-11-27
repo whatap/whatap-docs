@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[64589],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[72032],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -850,7 +850,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"
@@ -2323,7 +2323,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 29402:
+/***/ 48413:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2348,22 +2348,22 @@ const frontMatter = {
 		'로그 모니터링',
 		'라이브 테일',
 		'UI',
-		'CUBRID'
+		'MongoDB'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "cubrid/log-lt",
+  "id": "mongodb/log-lt",
   "title": "라이브 테일",
   "description": "로그 모니터링 라이브 테일을 안내합니다.",
-  "source": "@site/docs/cubrid/log-lt.mdx",
-  "sourceDirName": "cubrid",
-  "slug": "/cubrid/log-lt",
-  "permalink": "/whatap-docs/cubrid/log-lt",
+  "source": "@site/docs/mongodb/log-lt.mdx",
+  "sourceDirName": "mongodb",
+  "slug": "/mongodb/log-lt",
+  "permalink": "/whatap-docs/mongodb/log-lt",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/cubrid/log-lt.mdx",
+  "editUrl": "undefined/docs/mongodb/log-lt.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2374,18 +2374,18 @@ const metadata = {
       "로그 모니터링",
       "라이브 테일",
       "UI",
-      "CUBRID"
+      "MongoDB"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "cubridSidebar",
+  "sidebar": "mongodbSidebar",
   "previous": {
     "title": "적용하기",
-    "permalink": "/whatap-docs/cubrid/log-db"
+    "permalink": "/whatap-docs/mongodb/log-db"
   },
   "next": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/cubrid/log-exp"
+    "permalink": "/whatap-docs/mongodb/log-exp"
   }
 };
 const assets = {

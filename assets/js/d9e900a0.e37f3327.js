@@ -1,5 +1,98 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[9666],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[44419],{
+
+/***/ 15569:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_log_lt_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20850);
+
+
+const frontMatter = {
+	id: 'aws-log-lt',
+	title: '라이브 테일',
+	description: 'AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.',
+	keywords: [
+		'AWS Log',
+		'로그',
+		'라이브 테일',
+		'UI'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "aws-log/aws-log-lt",
+  "title": "라이브 테일",
+  "description": "AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.",
+  "source": "@site/docs/aws-log/aws-log-lt.mdx",
+  "sourceDirName": "aws-log",
+  "slug": "/aws-log/aws-log-lt",
+  "permalink": "/whatap-docs/aws-log/aws-log-lt",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/aws-log/aws-log-lt.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "aws-log-lt",
+    "title": "라이브 테일",
+    "description": "AWS Log 모니터링 라이브 테일 메뉴를 안내합니다.",
+    "keywords": [
+      "AWS Log",
+      "로그",
+      "라이브 테일",
+      "UI"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "awslogSidebar",
+  "previous": {
+    "title": "로그 파싱하기",
+    "permalink": "/whatap-docs/aws-log/log-parser"
+  },
+  "next": {
+    "title": "로그 트렌드",
+    "permalink": "/whatap-docs/aws-log/aws-log-exp"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_log_lt_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_lt_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
+}
+
+
+
+/***/ }),
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -850,7 +943,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"
@@ -2317,99 +2410,6 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
-}
-
-
-
-/***/ }),
-
-/***/ 30056:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_log_lt_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20850);
-
-
-const frontMatter = {
-	id: 'log-lt',
-	title: '라이브 테일',
-	description: '로그 모니터링 라이브 테일을 안내합니다.',
-	keywords: [
-		'로그 모니터링',
-		'라이브 테일',
-		'UI',
-		'Redis'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "redis/log-lt",
-  "title": "라이브 테일",
-  "description": "로그 모니터링 라이브 테일을 안내합니다.",
-  "source": "@site/docs/redis/log-lt.mdx",
-  "sourceDirName": "redis",
-  "slug": "/redis/log-lt",
-  "permalink": "/whatap-docs/redis/log-lt",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/redis/log-lt.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "log-lt",
-    "title": "라이브 테일",
-    "description": "로그 모니터링 라이브 테일을 안내합니다.",
-    "keywords": [
-      "로그 모니터링",
-      "라이브 테일",
-      "UI",
-      "Redis"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "redisSidebar",
-  "previous": {
-    "title": "적용하기",
-    "permalink": "/whatap-docs/redis/log-db"
-  },
-  "next": {
-    "title": "로그 트렌드",
-    "permalink": "/whatap-docs/redis/log-exp"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_log_lt_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_log_lt_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
 }
 
 

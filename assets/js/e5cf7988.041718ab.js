@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[61769],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[42714],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -1005,7 +1005,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"
@@ -2627,7 +2627,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 45553:
+/***/ 96493:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2653,22 +2653,22 @@ const frontMatter = {
 		'로그',
 		'로그 검색',
 		'UI',
-		'MySQL'
+		'PostgreSQL'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "mysql/log-search",
+  "id": "postgresql/log-search",
   "title": "로그 검색",
   "description": "로그 모니터링의 로그 검색 메뉴를 안내합니다.",
-  "source": "@site/docs/mysql/log-search.mdx",
-  "sourceDirName": "mysql",
-  "slug": "/mysql/log-search",
-  "permalink": "/whatap-docs/mysql/log-search",
+  "source": "@site/docs/postgresql/log-search.mdx",
+  "sourceDirName": "postgresql",
+  "slug": "/postgresql/log-search",
+  "permalink": "/whatap-docs/postgresql/log-search",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/mysql/log-search.mdx",
+  "editUrl": "undefined/docs/postgresql/log-search.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2680,18 +2680,18 @@ const metadata = {
       "로그",
       "로그 검색",
       "UI",
-      "MySQL"
+      "PostgreSQL"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "mysqlSidebar",
+  "sidebar": "postgreSidebar",
   "previous": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/mysql/log-exp"
+    "permalink": "/whatap-docs/postgresql/log-exp"
   },
   "next": {
     "title": "로그 설정",
-    "permalink": "/whatap-docs/mysql/log-setting"
+    "permalink": "/whatap-docs/postgresql/log-setting"
   }
 };
 const assets = {

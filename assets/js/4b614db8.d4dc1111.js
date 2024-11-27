@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[74773],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[60992],{
 
 /***/ 29129:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -850,7 +850,7 @@ function _createMdxContent(props) {
           children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.strong, {
             children: "즐겨찾기"
           })
-        }), "는 최대 10개까지 저장됩니다."]
+        }), "는 최대 50개까지 저장됩니다."]
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ImgLang, {
         img: "log-filter-fav.png",
         desc: "로그 필터 즐겨찾기"
@@ -2323,7 +2323,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 11291:
+/***/ 73341:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -2347,23 +2347,23 @@ const frontMatter = {
 	keywords: [
 		'로그 모니터링',
 		'라이브 테일',
-		'UI',
-		'Oracle Pro'
+		'UI'
 	],
+	toc_max_heading_level: 3,
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "oracle-pro/log-lt",
+  "id": "log/log-lt",
   "title": "라이브 테일",
   "description": "로그 모니터링 라이브 테일을 안내합니다.",
-  "source": "@site/docs/oracle-pro/log-lt.mdx",
-  "sourceDirName": "oracle-pro",
-  "slug": "/oracle-pro/log-lt",
-  "permalink": "/whatap-docs/oracle-pro/log-lt",
+  "source": "@site/docs/log/log-lt.mdx",
+  "sourceDirName": "log",
+  "slug": "/log/log-lt",
+  "permalink": "/whatap-docs/log/log-lt",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/oracle-pro/log-lt.mdx",
+  "editUrl": "undefined/docs/log/log-lt.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -2373,19 +2373,19 @@ const metadata = {
     "keywords": [
       "로그 모니터링",
       "라이브 테일",
-      "UI",
-      "Oracle Pro"
+      "UI"
     ],
+    "toc_max_heading_level": 3,
     "isTranslationMissing": false
   },
-  "sidebar": "dboracledmaSidebar",
+  "sidebar": "logSidebar",
   "previous": {
-    "title": "적용하기",
-    "permalink": "/whatap-docs/oracle-pro/log-db"
+    "title": "주요 메뉴 알아보기",
+    "permalink": "/whatap-docs/log/learn-main-menu"
   },
   "next": {
     "title": "로그 트렌드",
-    "permalink": "/whatap-docs/oracle-pro/log-exp"
+    "permalink": "/whatap-docs/log/log-exp"
   }
 };
 const assets = {
