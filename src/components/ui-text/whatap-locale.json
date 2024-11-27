@@ -54182,7 +54182,7 @@
   },
   "NTC07859": {
     "en": "In progress. This may take a moment.",
-    "ja": "適用中です。しばらく時間がかかる場合があります。",
+    "ja": "適用中です。しばらく時間がかかることがあります。",
     "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
     "zh": "In progress. This may take a moment.",
     "service_id": "NTC07859"
@@ -54251,10 +54251,10 @@
     "service_id": "DSC07868"
   },
   "DSC07869": {
-    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "en": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "ja": "詳細については、<a href=\"{url}\" target=\"_blank\">ロックツリー</a>を参考してください。",
     "ko": "자세한 내용은 <a href=\"{url}\" target=\"_blank\">락트리</a>에서 확인하세요.",
-    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rocktree</a>.",
+    "zh": "For more information, please visit <a href=\"{url}\" target=\"_blank\">Rock Tree</a>.",
     "service_id": "DSC07869"
   },
   "DSC07870": {
@@ -54881,10 +54881,10 @@
     "service_id": "DSC07958"
   },
   "DSC07959": {
-    "en": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
+    "en": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
     "ja": "次の内容に基づいて設定されたインストールファイルをダウンロードします。オプションは前のステップに戻って変更できます。",
     "ko": "다음 내용을 바탕으로 구성된 설치 파일을 다운로드합니다. 옵션은 이전 단계로 돌아가 변경할 수 있습니다.",
-    "zh": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
+    "zh": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
     "service_id": "DSC07959"
   },
   "TTL07960": {
@@ -54973,7 +54973,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55224,10 +55224,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest for each object from the past",
+    "zh": "Check the manifest of each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55519,7 +55519,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "zh": "You can only register Korean mobile phone numbers.",
     "service_id": "DSC08050"
@@ -56065,7 +56065,7 @@
   },
   "CNT08128": {
     "en": "Please select a date and time.",
-    "ja": "日時を選択してください。",
+    "ja": "日付と時刻を選択してください。",
     "ko": "날짜와 시간을 선택해 주세요.",
     "zh": "Please select a date and time.",
     "service_id": "CNT08128"
@@ -56177,7 +56177,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "zh": "All widget charts will zoom in when you drag a chart.",
     "service_id": "CNT08143"
@@ -56261,7 +56261,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間バッチ初期化",
+    "ja": "時間一括初期化",
     "ko": "시간 일괄 초기화",
     "zh": "Time batch reset",
     "service_id": "BTN08155"
@@ -56939,10 +56939,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57051,10 +57051,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
+    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
+    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57527,10 +57527,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
@@ -57605,7 +57605,7 @@
   },
   "ITM08349": {
     "en": "Log view detail setting",
-    "ja": "ログ表示詳細設定",
+    "ja": "ログ表示の詳細設定",
     "ko": "로그 표시 상세 설정",
     "zh": "Log view detail setting",
     "service_id": "ITM08349"
@@ -57724,7 +57724,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果の選択",
+    "ja": "検索結果を選択",
     "ko": "검색 결과 선택",
     "zh": "Select search results",
     "service_id": "CNT08366"
@@ -57842,10 +57842,10 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
-    "zh": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "zh": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "service_id": "DSC08383"
   },
   "ITM08384": {
@@ -58220,10 +58220,10 @@
     "service_id": "DSC08436"
   },
   "DSC08437": {
-    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "ja": "<b> {resource}使用率</b>が平均{avg}から最大{max}まで増加し、<b>断続的に高い負荷が発生する可能性</b>があります。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}에서 최대 {max}까지 증가하여 <b>간헐적으로 높은 부하가 발생할 가능성</b>이 있습니다.",
-    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "service_id": "DSC08437"
   },
   "DSC08438": {
@@ -58234,10 +58234,10 @@
     "service_id": "DSC08438"
   },
   "DSC08439": {
-    "en": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. You can increase resource utilization by periodically monitoring resource usage patterns, optimizing resource allocation, and distributing workloads.",
+    "en": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. Resource utilization can be increased through periodic resource usage pattern monitoring, resource allocation optimization, and workload distribution.",
     "ja": "<b> {resource}使用率</b>は、平均{avg}、最大{max}で<b>継続的に低い状態</b>です。定期的にリソースの使用パターンの監視し、リソース割り当ての最適化やワークロードの配布を通じて、リソースの使用率を向上させることができます。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}, 최대 {max}로 <b>지속적으로 낮은 상태</b>입니다. 주기적인 리소스 사용 패턴 모니터링과 리소스 할당 최적화, 작업 부하 분배를 통해 자원 활용도를 높일 수 있습니다.",
-    "zh": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. You can increase resource utilization by periodically monitoring resource usage patterns, optimizing resource allocation, and distributing workloads.",
+    "zh": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. Resource utilization can be increased through periodic resource usage pattern monitoring, resource allocation optimization, and workload distribution.",
     "service_id": "DSC08439"
   },
   "DSC08440": {
@@ -58563,10 +58563,10 @@
     "service_id": "CNT08485"
   },
   "CNT08486": {
-    "en": "Supported version {version}",
+    "en": "Supported versions {version}",
     "ja": "サポートバージョン{version}",
     "ko": "지원 버전 {version}",
-    "zh": "Supported version {version}",
+    "zh": "Supported versions {version}",
     "service_id": "CNT08486"
   },
   "CNT08487": {
@@ -58675,10 +58675,10 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "Add the script file to <b>{path}</b>.",
+    "en": "<b>Add the script file to the {path} path</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
-    "zh": "Add the script file to <b>{path}</b>.",
+    "zh": "<b>Add the script file to the {path} path</b>.",
     "service_id": "DSC08502"
   },
   "DSC08503": {
@@ -58907,7 +58907,7 @@
   },
   "TTL08537": {
     "en": "Introducing the node map feature!",
-    "ja": "ノードマップ機能を紹介します！",
+    "ja": "ノードマップ機能をご紹介します！",
     "ko": "노드 맵 기능을 소개합니다!",
     "zh": "Introducing the node map feature!",
     "service_id": "TTL08537"
@@ -59171,10 +59171,10 @@
     "service_id": "TLT08574"
   },
   "TLT08575": {
-    "en": "It represents the average time it takes for the browser to send a network request while loading a web page and until the first byte is received from the server. It refers to the time from requestStart to responseStart.",
+    "en": "It represents the average time it takes for the browser to load a web page, send a network request, and receive the first byte from the server. It refers to the time from requestStart to responseStart.",
     "ja": "ブラウザのWebページロード中に、ネットワークリクエストを送信してからサーバーからの最初バイト受信までにかかる時間を示します。",
     "ko": "브라우저가 웹 페이지를 불러오면서 네트워크 요청을 보낸 후 서버로부터 첫 번째 바이트(byte)가 수신될 때까지 소요된 평균 시간을 나타내며, requestStart부터 responseStart까지 소요된 시간을 의미합니다.",
-    "zh": "It represents the average time it takes for the browser to send a network request while loading a web page and until the first byte is received from the server. It refers to the time from requestStart to responseStart.",
+    "zh": "It represents the average time it takes for the browser to load a web page, send a network request, and receive the first byte from the server. It refers to the time from requestStart to responseStart.",
     "service_id": "TLT08575"
   },
   "TLT08576": {
@@ -59263,14 +59263,14 @@
   },
   "DSC08588": {
     "en": "The pattern is registered after the simulation is performed to ensure that the log is successfully parsed with the entered pattern.",
-    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
+    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "zh": "The pattern is registered after the simulation is performed to ensure that the log is successfully parsed with the entered pattern.",
     "service_id": "DSC08588"
   },
   "DSC08589": {
     "en": "Simulate that the log is parsed successfully. Simulation must be performed, and additional pattern registration may be required depending on the simulation results.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "zh": "Simulate that the log is parsed successfully. Simulation must be performed, and additional pattern registration may be required depending on the simulation results.",
     "service_id": "DSC08589"
@@ -59305,7 +59305,7 @@
   },
   "DSC08594": {
     "en": "{highlight} and additional pattern registration may be required depending on simulation results.",
-    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "zh": "{highlight} and additional pattern registration may be required depending on simulation results.",
     "service_id": "DSC08594"
@@ -59381,10 +59381,10 @@
     "service_id": "TTL08604"
   },
   "TLT08605": {
-    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "ja": "Browserモニタリングで有意味な統計グループを持つために、URLパスを正規化してページグループという名前で指定します。 URLパス 単位の分析に意味がないと判断した数字、日付などを疑問符(?)で置き換えます。 ",
     "ko": "브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL Path를 정규화해 페이지 그룹이라는 이름으로 제공합니다. URL Path 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다. ",
-    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "service_id": "TLT08605"
   },
   "DSC08606": {
@@ -59647,10 +59647,10 @@
     "service_id": "DSC08642"
   },
   "DSC08643": {
-    "en": "Collect cloud metrics by installing an Azure Resource Manager template.",
+    "en": "Install the Azure Resource Manager template to collect cloud metrics.",
     "ja": "Azure Active Directory に App Registration を追加して、Azure Monitor メトリクスを収集します.",
     "ko": "Azure Resource Manager 템플릿을 설치하여 클라우드 메트릭을 수집합니다.",
-    "zh": "Collect cloud metrics by installing an Azure Resource Manager template.",
+    "zh": "Install the Azure Resource Manager template to collect cloud metrics.",
     "service_id": "DSC08643"
   },
   "DSC08644": {
@@ -60054,7 +60054,7 @@
   },
   "CNT08701": {
     "en": "A subscription within AWS Marketplace is required.{br}Once your subscription is confirmed, you can use the WhaTap service.",
-    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
+    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "zh": "A subscription within AWS Marketplace is required.{br}Once your subscription is confirmed, you can use the WhaTap service.",
     "service_id": "CNT08701"
@@ -60473,8 +60473,8 @@
     "service_id": "CNT08761"
   },
   "TTL08762": {
-    "en": "Once the agent is updated<br/>\nYou can manage and retrieve server\binventory.",
-    "ja": "エージェントを更新すると<br/>\nサーバーインベントリを管理して照会できます。",
+    "en": "Once the agent is updated<br/>\nYou can manage and retrieve server inventory.",
+    "ja": "エージェントを更新すると<br/>\nサーバーインベントリを管理及び照会できます。",
     "ko": "에이전트를 업데이트하면<br/>\n서버 인벤토리를 관리하고 조회할 수 있어요",
     "zh": "Once the agent is updated<br/>\nYou can manage and retrieve server inventory.",
     "service_id": "TTL08762"
@@ -60571,10 +60571,10 @@
     "service_id": "DSC08775"
   },
   "TTL08776": {
-    "en": "To use the \"Server Inventory Map\" function properly, the Agent version must meet the following:",
+    "en": "To use the “Server Inventory Map” function properly, the Agent version must meet the following:",
     "ja": "「サーバーインベントリマップ」機能を正常に使用するには、エージェントのバージョンが以下を満たす必要があります。",
     "ko": "\"서버 인벤토리 맵\" 기능을 정상적으로 사용하기 위해서는 Agent 버전이 다음을 충족해야 합니다.",
-    "zh": "To use the \"Server Inventory Map\" function properly, the Agent version must meet the following:",
+    "zh": "To use the “Server Inventory Map” function properly, the Agent version must meet the following:",
     "service_id": "TTL08776"
   },
   "DSC08777": {
@@ -60681,6 +60681,188 @@
     "ko": "컨테이너 실행을 위해 필요한 외부 리소스 연결 설정이 정확한지 확인합니다.",
     "zh": "Verify that the external resource connection settings required to run the container are correct.",
     "service_id": "DSC08791"
+  },
+  "LNK08792": {
+    "en": "View Service List",
+    "ja": "サービスリストを見る",
+    "ko": "Service 목록 보기",
+    "zh": "View Service List",
+    "service_id": "LNK08792"
+  },
+  "DSC08793": {
+    "en": "Introducing the Kubernetes etcd monitoring feature!",
+    "ja": "Kubernetesでのetcd監視機能をご紹介します！",
+    "ko": "쿠버네티스 etcd 모니터링 기능을 소개합니다!",
+    "zh": "Introducing the Kubernetes etcd monitoring feature!",
+    "service_id": "DSC08793"
+  },
+  "DSC08794": {
+    "en": "A monitoring function for <b>etcd, which serves as the core repository of Kubernetes, has been released</b>. You can check the status of problems with etcd by checking the load status and performance of etcd through a visualized dashboard.",
+    "ja": "Kubernetesでの主要リポジトリである<b> etcdを監視する機能をリリース</b>しました。可視化したダッシュボードを通じて、etcdの負荷状態と性能を確認することで、etcdにおける問題の状態を確認できます。",
+    "ko": "쿠버네티스의 핵심 저장소 역할을 하고 있는 <b>etcd에 대한 모니터링 기능이 출시</b>되었습니다. 시각화된 대시보드를 통해 etcd의 부하 상태 및 성능을 확인함으로써 etcd에 대한 문제 상태를 점검할 수 있습니다.",
+    "zh": "A monitoring function for <b>etcd, which serves as the core repository of Kubernetes, has been released</b>. You can check the status of problems with etcd by checking the load status and performance of etcd through a visualized dashboard.",
+    "service_id": "DSC08794"
+  },
+  "DSC08795": {
+    "en": "The etcd monitoring feature requires <strong>WhaTap Kubernetes Agent {version} or higher and requires additional work, such as enabling the feature and configuring certificates for communication</strong>.",
+    "ja": "etcd監視機能を使用するには、WhaTap Kubernetes Agent {version}以降が必要です。機能の有効化と、通信のための証明書の設定など、追加作業が必要です。",
+    "ko": "etcd 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 {version} 이상이 필요하며 기능 활성화와 통신을 위한 인증서 설정 등 추가 작업이 필요</strong>합니다.",
+    "zh": "The etcd monitoring feature requires <strong>WhaTap Kubernetes Agent {version} or higher and requires additional work, such as enabling the feature and configuring certificates for communication</strong>.",
+    "service_id": "DSC08795"
+  },
+  "DSC08796": {
+    "en": "Check out the WhaTap Docs below to learn more about etcd monitoring!",
+    "ja": "以下のWhaTap Docsから、etcd監視機能の詳細を参照してください！",
+    "ko": "아래 WhaTap Docs를 통해 etcd 모니터링에 대한 자세한 내용을 확인해보세요!",
+    "zh": "Check out the WhaTap Docs below to learn more about etcd monitoring!",
+    "service_id": "DSC08796"
+  },
+  "TLT08797": {
+    "en": "Average quantity for calculating billing amount (log, excluding browser)",
+    "ja": "課金額を算出するための平均数量（ログ、ブラウザを除く）",
+    "ko": "과금액 산출을 위한 평균 수량 (로그, 브라우저 제외)",
+    "zh": "Average quantity for calculating billing amount (log, excluding browser)",
+    "service_id": "TLT08797"
+  },
+  "TLT08798": {
+    "en": "Log: Monthly total log Unit",
+    "ja": "ログ：月合計ログユニット",
+    "ko": "로그: 월 합산 로그 Unit",
+    "zh": "Log: Monthly total log Unit",
+    "service_id": "TLT08798"
+  },
+  "TLT08799": {
+    "en": "Browser/Session Replay: Combined monthly sessions",
+    "ja": "ブラウザ/セッションリプレイ：月合計セッション数",
+    "ko": "브라우저/세션 리플레이: 월 합산 세션 수",
+    "zh": "Browser/Session Replay: Combined monthly sessions",
+    "service_id": "TLT08799"
+  },
+  "DSC08800": {
+    "en": "The following features require user settings to enable them. For more information, see WhaTap Docs.",
+    "ja": "以下は、機能を有効にするためにユーザー設定が必要な機能です。詳しくはWhaTap Docsを参照してください。",
+    "ko": "다음은 기능 활성화를 위해 사용자 설정이 필요한 기능입니다. 자세한 내용은 WhaTap Docs를 참고하세요.",
+    "zh": "The following features require user settings to enable them. For more information, see WhaTap Docs.",
+    "service_id": "DSC08800"
+  },
+  "DSC08801": {
+    "en": "Through the etcd dashboard menu, etcd's job processing status and performance metrics can be collected and monitored to track etcd's job delays, leader selection, load, etc. to early identify problems that may occur across the cluster.",
+    "ja": "etcdダッシュボードメニューを通じて、etcdのジョブ処理状況と性能メトリクスを収集して、etcdのジョブ遅延、Leaderの選択、負荷などを追跡。クラスタ全体で発生し得る問題を早期に識別できるように監視します。",
+    "ko": "etcd 대시보드 메뉴를 통해 etcd의 작업 처리 상태와 성능 메트릭을 수집하여 etcd의 작업 지연, 리더 선발 여부, 부하 등을 추적해 클러스터 전역에서 발생할 수 있는 문제를 조기에 식별할 수 있도록 모니터링할 수 있습니다.",
+    "zh": "Through the etcd dashboard menu, etcd's job processing status and performance metrics can be collected and monitored to track etcd's job delays, leader selection, load, etc. to early identify problems that may occur across the cluster.",
+    "service_id": "DSC08801"
+  },
+  "TTL08802": {
+    "en": "Event last occurrence time",
+    "ja": "イベント最終発生時刻",
+    "ko": "이벤트 마지막 발생 시간",
+    "zh": "Event last occurrence time",
+    "service_id": "TTL08802"
+  },
+  "TTL08803": {
+    "en": "Event Timeline",
+    "ja": "イベントタイムライン",
+    "ko": "이벤트 타임라인",
+    "zh": "Event Timeline",
+    "service_id": "TTL08803"
+  },
+  "TTL08804": {
+    "en": "Page load time by IP",
+    "ja": "IP別のページロード時間",
+    "ko": "IP 별 페이지 로드 시간",
+    "zh": "Page load time by IP",
+    "service_id": "TTL08804"
+  },
+  "TTL08805": {
+    "en": "Page loads by IP",
+    "ja": "IP別のページロード数",
+    "ko": "IP 별 페이지 로드 수",
+    "zh": "Page loads by IP",
+    "service_id": "TTL08805"
+  },
+  "DSC08806": {
+    "en": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "ja": "インストールされたエージェントのバージョンが以下のバージョンより低い場合、「サーバーインベントリマップ」にサーバーアイコンは表示されますが、サーバーインベントリマップのグループ性能統計情報、右サマリパネル、詳細ビューなどのファイルシステム情報、メトリクスは正常に表示されないことがあります。",
+    "ko": "설치된 Agent 버전이 아래의 지원 버전보다 낮을 경우, \"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만 서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
+    "zh": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "service_id": "DSC08806"
+  },
+  "ITM08807": {
+    "en": "By name A-Z",
+    "ja": "名前順A-Z",
+    "ko": "이름순 A-Z",
+    "zh": "By name A-Z",
+    "service_id": "ITM08807"
+  },
+  "ITM08808": {
+    "en": "By name Z-A",
+    "ja": "名前順Z-A",
+    "ko": "이름순 Z-A",
+    "zh": "By name Z-A",
+    "service_id": "ITM08808"
+  },
+  "ITM08809": {
+    "en": "Max",
+    "ja": "マックス",
+    "ko": "Max",
+    "zh": "Max",
+    "service_id": "ITM08809"
+  },
+  "ITM08810": {
+    "en": "Avg",
+    "ja": "Avg",
+    "ko": "Avg",
+    "zh": "Avg",
+    "service_id": "ITM08810"
+  },
+  "DSC08811": {
+    "en": "No information has been retrieved.",
+    "ja": "情報が検索されませんでした。",
+    "ko": "정보가 조회되지 않았습니다.",
+    "zh": "No information has been retrieved.",
+    "service_id": "DSC08811"
+  },
+  "DSC08812": {
+    "en": "Please try again or check if you have permission to view the object.",
+    "ja": "もう一度やり直すか、オブジェクトの照会権限があることを確認してください。",
+    "ko": "다시 시도하거나 오브젝트 조회 권한이 있는지 확인하세요.",
+    "zh": "Please try again or check if you have permission to view the object.",
+    "service_id": "DSC08812"
+  },
+  "DSC08813": {
+    "en": "You can set object query permissions using the following command.",
+    "ja": "次のコマンドを使用して、オブジェクト照会権限を設定できます。",
+    "ko": "다음 명령어를 사용하여 오브젝트 조회 권한을 설정할 수 있습니다.",
+    "zh": "You can set object query permissions using the following command.",
+    "service_id": "DSC08813"
+  },
+  "TTL08814": {
+    "en": "Encryption of sensitive information",
+    "ja": "機密情報の暗号化",
+    "ko": "민감정보 암호화",
+    "zh": "Encryption of sensitive information",
+    "service_id": "TTL08814"
+  },
+  "DSC08815": {
+    "en": "When you enter a field subject to encryption, it is saved in an encrypted state.",
+    "ja": "暗号化対象となるフィールドを入力時に暗号化状態で保存されます。",
+    "ko": "암호화 대상이 되는 필드를 입력 시 암호화 상태로 저장됩니다.",
+    "zh": "When you enter a field subject to encryption, it is saved in an encrypted state.",
+    "service_id": "DSC08815"
+  },
+  "ITM08816": {
+    "en": "7 days ago",
+    "ja": "7日前",
+    "ko": "7일 전",
+    "zh": "7 days ago",
+    "service_id": "ITM08816"
+  },
+  "DSC08817": {
+    "en": "Enter the fields you want to encrypt. Press Enter and it will be added.",
+    "ja": "暗号化するフィールドを入力してください。 Enterを押すと追加されます。",
+    "ko": "암호화할 필드를 입력하세요. Enter를 누르면 추가됩니다.",
+    "zh": "Enter the fields you want to encrypt. Press Enter and it will be added.",
+    "service_id": "DSC08817"
   },
   "": {
     "en": "#VALUE!",
@@ -60994,6 +61176,11 @@
     "en": "DBX Agent Setting",
     "ja": "DBXエージェントの設定",
     "ko": "DBX 에이전트 설정"
+  },
+  "side_kubeEventList": {
+    "en": "Kubernetes Event",
+    "ja": "Kubernetesイベント",
+    "ko": "쿠버네티스 이벤트"
   },
   "side_common": {
     "en": "Common",
