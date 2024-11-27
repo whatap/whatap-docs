@@ -6617,6 +6617,7 @@ const sidebars = {
                     'kubernetes/container-view',
                     'kubernetes/container-group',
                     'kubernetes/container-status',
+                    'kubernetes/foreign-project',
                   ]
                 },
                 {
@@ -6701,6 +6702,7 @@ const sidebars = {
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/kube-apiserver-metrics-search',
+                'kubernetes/etcd-dashboard',
                 'kubernetes/service-list',
                 'kubernetes/ingress-list',
                 'kubernetes/resource-namespace',
