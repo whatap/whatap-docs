@@ -6378,6 +6378,20 @@ const sidebars = {
             'server/compoundeye',
             {
               type: 'category',
+              label: '서버 인벤토리 맵',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: `server/server-inventory-map`,
+              },
+              items: [
+                `server/server-inventory-map-details`,
+                `server/server-inventory-map-group`
+              ]
+            },
+            {
+              type: 'category',
               label: 'Flex 보드',
               collapsible: true,
               collapsed: true,
@@ -6617,6 +6631,7 @@ const sidebars = {
                     'kubernetes/container-view',
                     'kubernetes/container-group',
                     'kubernetes/container-status',
+                    'kubernetes/foreign-project',
                   ]
                 },
                 {
@@ -6701,6 +6716,7 @@ const sidebars = {
                 // 'kubernetes/kubernetes-event',
                 'kubernetes/kube-apiserver-dashboard',
                 'kubernetes/kube-apiserver-metrics-search',
+                'kubernetes/etcd-dashboard',
                 'kubernetes/service-list',
                 'kubernetes/ingress-list',
                 'kubernetes/resource-namespace',
