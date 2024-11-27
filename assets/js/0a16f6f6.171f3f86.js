@@ -1,98 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[36541],{
-
-/***/ 32011:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   assets: () => (/* binding */ assets),
-/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
-/* harmony export */   "default": () => (/* binding */ MDXContent),
-/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
-/* harmony export */   metadata: () => (/* binding */ metadata),
-/* harmony export */   toc: () => (/* binding */ toc)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
-/* harmony import */ var _common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13897);
-
-
-const frontMatter = {
-	id: 'set-event-history',
-	title: '이벤트 기록',
-	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
-	keywords: [
-		'클라우드',
-		'Amazon CloudWatch',
-		'경고 알림',
-		'이벤트 기록'
-	],
-	isTranslationMissing: false
-};
-const contentTitle = undefined;
-const metadata = {
-  "id": "amazon-cloudwatch/set-event-history",
-  "title": "이벤트 기록",
-  "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/amazon-cloudwatch/set-event-history.mdx",
-  "sourceDirName": "amazon-cloudwatch",
-  "slug": "/amazon-cloudwatch/set-event-history",
-  "permalink": "/whatap-docs/amazon-cloudwatch/set-event-history",
-  "draft": false,
-  "unlisted": false,
-  "editUrl": "undefined/docs/amazon-cloudwatch/set-event-history.mdx",
-  "tags": [],
-  "version": "current",
-  "frontMatter": {
-    "id": "set-event-history",
-    "title": "이벤트 기록",
-    "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-    "keywords": [
-      "클라우드",
-      "Amazon CloudWatch",
-      "경고 알림",
-      "이벤트 기록"
-    ],
-    "isTranslationMissing": false
-  },
-  "sidebar": "amazoncloudwatchSidebar",
-  "previous": {
-    "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/amazon-cloudwatch/set-receive-event"
-  },
-  "next": {
-    "title": "실시간 알림",
-    "permalink": "/whatap-docs/amazon-cloudwatch/real-time-notification"
-  }
-};
-const assets = {
-
-};
-
-
-
-
-const toc = [..._common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
-function _createMdxContent(props) {
-  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
-}
-function MDXContent(props = {}) {
-  const {wrapper: MDXLayout} = {
-    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
-    ...props.components
-  };
-  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
-    ...props,
-    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
-      ...props
-    })
-  }) : _createMdxContent(props);
-}
-
-
-
-/***/ }),
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[47311],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -585,11 +492,25 @@ function _createMdxContent(props) {
         id: "alertacknowledge",
         children: "처리 내역 등록하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "처리 내역을 등록하면 해당 이벤트의 반복 알림을 중지할 수 있고, 해당 이벤트의 진행 상황을 추적하고 문제 발생 시 신속하게 대응할 수 있습니다."
+        children: "처리 내역을 등록하면 이벤트 처리 상황에 대한 업데이트와 이력 관리를 쉽게 할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "caution",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["처리 내역을 등록하면 해당 이벤트의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06149",
+            className: "uitext"
+          }), "은 중지됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06149",
+            className: "uitext"
+          }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "set-receive-event#escalation",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["처리 내역을 등록한 이벤트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            children: ["처리 내역을 등록할 이벤트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "sms_alert_acknowledge",
               className: "uitext"
             }), " 버튼을 선택하세요."]
@@ -705,6 +626,99 @@ function MDXContent(props = {}) {
 }
 function _missingMdxReference(id, component) {
   throw new Error("Expected " + (component ? "component" : "object") + " `" + id + "` to be defined: you likely forgot to import, pass, or provide it.");
+}
+
+
+
+/***/ }),
+
+/***/ 4744:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   assets: () => (/* binding */ assets),
+/* harmony export */   contentTitle: () => (/* binding */ contentTitle),
+/* harmony export */   "default": () => (/* binding */ MDXContent),
+/* harmony export */   frontMatter: () => (/* binding */ frontMatter),
+/* harmony export */   metadata: () => (/* binding */ metadata),
+/* harmony export */   toc: () => (/* binding */ toc)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74848);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28453);
+/* harmony import */ var _common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13897);
+
+
+const frontMatter = {
+	id: 'set-event-history',
+	title: '이벤트 기록',
+	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
+	keywords: [
+		'.NET',
+		'경고 알림',
+		'이벤트 기록',
+		'애플리케이션 모니터링'
+	],
+	isTranslationMissing: false
+};
+const contentTitle = undefined;
+const metadata = {
+  "id": "dotnet/set-event-history",
+  "title": "이벤트 기록",
+  "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
+  "source": "@site/docs/dotnet/set-event-history.mdx",
+  "sourceDirName": "dotnet",
+  "slug": "/dotnet/set-event-history",
+  "permalink": "/whatap-docs/dotnet/set-event-history",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "undefined/docs/dotnet/set-event-history.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-event-history",
+    "title": "이벤트 기록",
+    "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
+    "keywords": [
+      ".NET",
+      "경고 알림",
+      "이벤트 기록",
+      "애플리케이션 모니터링"
+    ],
+    "isTranslationMissing": false
+  },
+  "sidebar": "dotNetSidebar",
+  "previous": {
+    "title": "이벤트 수신 설정",
+    "permalink": "/whatap-docs/dotnet/set-receive-event"
+  },
+  "next": {
+    "title": "이벤트 수신 포맷",
+    "permalink": "/whatap-docs/dotnet/set-event-format"
+  }
+};
+const assets = {
+
+};
+
+
+
+
+const toc = [..._common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* .toc */ .RM];
+function _createMdxContent(props) {
+  return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_common_items_set_event_history_mdx__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, {});
+}
+function MDXContent(props = {}) {
+  const {wrapper: MDXLayout} = {
+    ...(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__/* .useMDXComponents */ .R)(),
+    ...props.components
+  };
+  return MDXLayout ? (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MDXLayout, {
+    ...props,
+    children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_createMdxContent, {
+      ...props
+    })
+  }) : _createMdxContent(props);
 }
 
 

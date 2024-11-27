@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[26792],{
+(self["webpackChunkWhaTap_Docs"] = self["webpackChunkWhaTap_Docs"] || []).push([[67278],{
 
 /***/ 19193:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -492,11 +492,25 @@ function _createMdxContent(props) {
         id: "alertacknowledge",
         children: "처리 내역 등록하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "처리 내역을 등록하면 해당 이벤트의 반복 알림을 중지할 수 있고, 해당 이벤트의 진행 상황을 추적하고 문제 발생 시 신속하게 대응할 수 있습니다."
+        children: "처리 내역을 등록하면 이벤트 처리 상황에 대한 업데이트와 이력 관리를 쉽게 할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "caution",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["처리 내역을 등록하면 해당 이벤트의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06149",
+            className: "uitext"
+          }), "은 중지됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06149",
+            className: "uitext"
+          }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "set-receive-event#escalation",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["처리 내역을 등록한 이벤트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            children: ["처리 내역을 등록할 이벤트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "sms_alert_acknowledge",
               className: "uitext"
             }), " 버튼을 선택하세요."]
@@ -618,7 +632,7 @@ function _missingMdxReference(id, component) {
 
 /***/ }),
 
-/***/ 2792:
+/***/ 20645:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -640,25 +654,24 @@ const frontMatter = {
 	title: '이벤트 기록',
 	description: '이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.',
 	keywords: [
-		'Go',
+		'네트워크 성능 모니터링',
 		'경고 알림',
-		'이벤트 기록',
-		'애플리케이션 모니터링'
+		'이벤트 기록'
 	],
 	isTranslationMissing: false
 };
 const contentTitle = undefined;
 const metadata = {
-  "id": "golang/set-event-history",
+  "id": "npm/set-event-history",
   "title": "이벤트 기록",
   "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
-  "source": "@site/docs/golang/set-event-history.mdx",
-  "sourceDirName": "golang",
-  "slug": "/golang/set-event-history",
-  "permalink": "/whatap-docs/golang/set-event-history",
+  "source": "@site/docs/npm/set-event-history.mdx",
+  "sourceDirName": "npm",
+  "slug": "/npm/set-event-history",
+  "permalink": "/whatap-docs/npm/set-event-history",
   "draft": false,
   "unlisted": false,
-  "editUrl": "undefined/docs/golang/set-event-history.mdx",
+  "editUrl": "undefined/docs/npm/set-event-history.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -666,21 +679,20 @@ const metadata = {
     "title": "이벤트 기록",
     "description": "이벤트 기록 메뉴를 통해 발생한 경고 알림 이력을 확인할 수 있습니다.",
     "keywords": [
-      "Go",
+      "네트워크 성능 모니터링",
       "경고 알림",
-      "이벤트 기록",
-      "애플리케이션 모니터링"
+      "이벤트 기록"
     ],
     "isTranslationMissing": false
   },
-  "sidebar": "goSidebar",
+  "sidebar": "npmsidebar",
   "previous": {
     "title": "이벤트 수신 설정",
-    "permalink": "/whatap-docs/golang/set-receive-event"
+    "permalink": "/whatap-docs/npm/set-receive-event"
   },
   "next": {
-    "title": "이벤트 수신 포맷",
-    "permalink": "/whatap-docs/golang/set-event-format"
+    "title": "실시간 알림",
+    "permalink": "/whatap-docs/npm/real-time-notification"
   }
 };
 const assets = {

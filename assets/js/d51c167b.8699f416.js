@@ -585,11 +585,25 @@ function _createMdxContent(props) {
         id: "alertacknowledge",
         children: "처리 내역 등록하기"
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.p, {
-        children: "처리 내역을 등록하면 해당 이벤트의 반복 알림을 중지할 수 있고, 해당 이벤트의 진행 상황을 추적하고 문제 발생 시 신속하게 대응할 수 있습니다."
+        children: "처리 내역을 등록하면 이벤트 처리 상황에 대한 업데이트와 이력 관리를 쉽게 할 수 있습니다."
+      }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.admonition, {
+        type: "caution",
+        children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
+          children: ["처리 내역을 등록하면 해당 이벤트의 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06149",
+            className: "uitext"
+          }), "은 중지됩니다. ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            sid: "TTL06149",
+            className: "uitext"
+          }), "에 대한 자세한 내용은 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_components.a, {
+            href: "set-receive-event#escalation",
+            children: "다음 문서"
+          }), "를 참조하세요."]
+        })
       }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.ol, {
         children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.li, {
           children: ["\n", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components.p, {
-            children: ["처리 내역을 등록한 이벤트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
+            children: ["처리 내역을 등록할 이벤트에서 ", (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Cmdname, {
               sid: "sms_alert_acknowledge",
               className: "uitext"
             }), " 버튼을 선택하세요."]
