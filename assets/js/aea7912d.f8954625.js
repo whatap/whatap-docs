@@ -445,8 +445,8 @@ const metadata = {
   },
   "sidebar": "kubeSidebar",
   "previous": {
-    "title": "오브젝트 매니페스트",
-    "permalink": "/whatap-docs/kubernetes/object-manifest"
+    "title": "쿠버네티스 이벤트",
+    "permalink": "/whatap-docs/kubernetes/kubernetes-event"
   },
   "next": {
     "title": "kube-apiserver 메트릭스 조회",

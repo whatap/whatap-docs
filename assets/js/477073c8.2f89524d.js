@@ -61,8 +61,8 @@ const metadata = {
     "permalink": "/whatap-docs/kubernetes/node-timeline"
   },
   "next": {
-    "title": "kube-apiserver 대시보드",
-    "permalink": "/whatap-docs/kubernetes/kube-apiserver-dashboard"
+    "title": "쿠버네티스 이벤트",
+    "permalink": "/whatap-docs/kubernetes/kubernetes-event"
   }
 };
 const assets = {
