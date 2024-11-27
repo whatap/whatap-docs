@@ -15,11 +15,11 @@ const config = {
   url: 'https://docs.whatap.io',
   future: {
     experimental_faster: {
-      swcJsLoader: false,
+      swcJsLoader: true,
       swcJsMinimizer: true,
       swcHtmlMinimizer: true,
       lightningCssMinimizer: true,
-      rspackBundler: false,
+      rspackBundler: true,
       mdxCrossCompilerCache: true,
     },
   },
