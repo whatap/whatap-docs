@@ -3984,9 +3984,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_10_x',
+              id: 'release-notes/service/service-2_11_x',
               className: 'new',
             },
+            'release-notes/service/service-2_10_x',
             'release-notes/service/service-2_9_x',
             'release-notes/service/service-2_8_x',
             'release-notes/service/service-2_7_x',
@@ -3995,7 +3996,6 @@ const sidebars = {
             'release-notes/service/service-2_4_x',
             'release-notes/service/service-2_3_x',
             'release-notes/service/service-2_2_x',
-            'release-notes/service/service-2_1_x',
             'release-notes/service/service-previous',
           ]
         },
@@ -4284,7 +4284,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4293,7 +4293,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_3_6',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-aix/server-aix-1_3_5',
                 'release-notes/server-aix/server-aix-1_3_4',
@@ -4305,7 +4305,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4314,7 +4314,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_3_6',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_3_5',
                 'release-notes/server-solaris/server-solaris-1_3_4',
