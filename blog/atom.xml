@@ -86,8 +86,13 @@
 <code class="changelog-date">2024년 11월 27일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴에서 다음 기능 추가 (상세 보기 및 이벤트 유형 구분 표시)</li>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너 맵</span> 및 <span class="uitext">통합 컨테이너 맵</span> 메뉴에서 외부 프로젝트 에이전트가 설치된 컨테이너 식별 및 해당 프로젝트 이동 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴에서 다음 기능 추가<!-- -->
+<ul>
+<li>상세 보기 기능(<span class="uitext">Suggestions</span>, <span class="uitext">인접 로그</span>, <span class="uitext">이벤트 타임라인</span>)</li>
+<li>Type, Reason 개수 표시 및 시간별 이벤트 개수 차트에 Type 구분 표시</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
