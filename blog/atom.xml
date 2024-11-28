@@ -86,7 +86,7 @@
 <code class="changelog-date">2024년 11월 27일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴에서 다음 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴에서 다음 기능 추가 (상세 보기 및 이벤트 유형 구분 표시)</li>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너 맵</span> 및 <span class="uitext">통합 컨테이너 맵</span> 메뉴에서 외부 프로젝트 에이전트가 설치된 컨테이너 식별 및 해당 프로젝트 이동 기능 추가</li>
 </ul>
 </li>
@@ -108,7 +108,12 @@
 <code class="changelog-overview2">Oracle, Oracle Pro</code>
 <ul>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에 <span class="uitext">Disk Usage</span> 위젯 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">SQL 분석</span> 메뉴에서 다음 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">SQL 분석</span> 메뉴에서 다음 기능 추가<!-- -->
+<ul>
+<li><span class="uitext">Plan Change History</span> 탭에서 <code>sql_id</code>, <code>sql_hash_value</code>, <code>PLAN_HASH_VALUE</code>로 검색할 수 있는 필터 기능</li>
+<li><span class="uitext">Plan Change History</span> 탭에서 Plan Diff 확인 시 새 창으로 보기</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -125,7 +130,12 @@
 <code class="changelog-date">2024년 11월 27일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">로그</span> &gt; <span class="uitext">로그 설정</span> 메뉴에서 다음 기능 추가 및 수정</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">로그</span> &gt; <span class="uitext">로그 설정</span> 메뉴에서 다음 기능 추가 및 수정<!-- -->
+<ul>
+<li>로그 데이터 보존 기간을 직접 입력하여 변경할 수 있는 기능 추가</li>
+<li>로그 데이터 보존 기간의 데이터 표시 방식 수정</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
