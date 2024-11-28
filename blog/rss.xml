@@ -67,7 +67,7 @@
 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
 <ul>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴의 테이블 목록에 순번(No) 컬럼 추가</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">프로젝트 목록</span> 화면에서 <img loading="lazy" src="https://docs.whatap.io/img/ic-setting.svg" alt="설정 아이콘" width="auto" height="auto"> 설정 드롭다운 메뉴 내 마우스 호버 스타일 추가 제공</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">프로젝트 목록</span> 화면에서 <img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/ic-setting.svg" alt="설정 아이콘" width="auto" height="auto"> 설정 드롭다운 메뉴 내 마우스 호버 스타일 추가 제공</li>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 기록</span> 메뉴에서 <span class="uitext">진행 중인 이벤트만 보기</span> 기능 제공</li>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">실시간 알림 목록</span>에서 CSV 다운로드 기능 추가</li>
 <li><code class="Feature" type="1">Feature</code> <span class="uitext">이용 내역</span> &gt; <span class="uitext">프로젝트 유료 전환</span> 메뉴에서 프로젝트 전체 및 개별 프로젝트의 과금 단위 요약 추가</li>
