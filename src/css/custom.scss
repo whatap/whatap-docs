@@ -1096,6 +1096,10 @@ div.history_overview{
         }
       }
     }
+    // 기능 단락 추가 시
+    li > ul > li > ul {
+      margin-bottom: -16px !important;
+    }
   }
 }
 
