@@ -146,6 +146,14 @@
 </li>
 <li>
 <code class="changelog-overview">공통</code>
+<code class="changelog-date">2024년 11월 20일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/account/ms-entra-id"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference</a></code>
+<ul>
+<li><code class="New" type="1">New</code> <b>SSO</b> Microsoft Entra 연동</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">공통</code>
 <code class="changelog-date">2024년 11월 07일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_10_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.10.5​</a></code>
 <ul>
