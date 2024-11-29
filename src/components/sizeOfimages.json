@@ -11168,28 +11168,28 @@
     "height": 788
   },
   "k8s-container-map-chart-en.png": {
-    "width": 1200,
-    "height": 942
+    "width": 1046,
+    "height": 1126
   },
   "k8s-container-map-chart-ja.png": {
-    "width": 1200,
-    "height": 944
+    "width": 1046,
+    "height": 1126
   },
   "k8s-container-map-chart.png": {
-    "width": 1181,
-    "height": 1091
+    "width": 1046,
+    "height": 1126
   },
   "k8s-container-map-en.png": {
-    "width": 1200,
-    "height": 995
+    "width": 1230,
+    "height": 988
   },
   "k8s-container-map-group.png": {
     "width": 853,
     "height": 547
   },
   "k8s-container-map-ja.png": {
-    "width": 1200,
-    "height": 995
+    "width": 1230,
+    "height": 985
   },
   "k8s-container-map-setting-en.png": {
     "width": 769,
@@ -11260,8 +11260,8 @@
     "height": 711
   },
   "k8s-container-map.png": {
-    "width": 1205,
-    "height": 1195
+    "width": 1230,
+    "height": 987
   },
   "k8s-container-sum-en.png": {
     "width": 1200,
@@ -11375,6 +11375,18 @@
     "width": 400,
     "height": 592
   },
+  "k8s-etcd-dashboard-en.png": {
+    "width": 2048,
+    "height": 1080
+  },
+  "k8s-etcd-dashboard-ja.png": {
+    "width": 2048,
+    "height": 1080
+  },
+  "k8s-etcd-dashboard.png": {
+    "width": 2048,
+    "height": 1080
+  },
   "k8s-event-default2.png": {
     "width": 1200,
     "height": 806
@@ -11402,6 +11414,30 @@
   "k8s-event-history.png": {
     "width": 1200,
     "height": 709
+  },
+  "k8s-foreign-project-check-en.png": {
+    "width": 874,
+    "height": 226
+  },
+  "k8s-foreign-project-check-ja.png": {
+    "width": 872,
+    "height": 214
+  },
+  "k8s-foreign-project-check.png": {
+    "width": 698,
+    "height": 250
+  },
+  "k8s-foreign-project-container-map-en.png": {
+    "width": 513,
+    "height": 737
+  },
+  "k8s-foreign-project-container-map-ja.png": {
+    "width": 513,
+    "height": 737
+  },
+  "k8s-foreign-project-container-map.png": {
+    "width": 598,
+    "height": 805
   },
   "k8s-ingress-list-cl.png": {
     "width": 800,
@@ -11502,6 +11538,30 @@
   "k8s-kube-apiserver.png": {
     "width": 1200,
     "height": 672
+  },
+  "k8s-kuber-event-details-en.png": {
+    "width": 1204,
+    "height": 673
+  },
+  "k8s-kuber-event-details-ja.png": {
+    "width": 1204,
+    "height": 675
+  },
+  "k8s-kuber-event-details.png": {
+    "width": 1204,
+    "height": 677
+  },
+  "k8s-kuber-event-en.png": {
+    "width": 1225,
+    "height": 668
+  },
+  "k8s-kuber-event-ja.png": {
+    "width": 1225,
+    "height": 669
+  },
+  "k8s-kuber-event.png": {
+    "width": 1225,
+    "height": 669
   },
   "k8s-kuber-namespace-en.png": {
     "width": 744,
@@ -12944,16 +13004,16 @@
     "height": 832
   },
   "log-getting-started-en.png": {
-    "width": 1200,
-    "height": 776
+    "width": 1601,
+    "height": 890
   },
   "log-getting-started-ja.png": {
-    "width": 1201,
-    "height": 778
+    "width": 1601,
+    "height": 896
   },
   "log-getting-started.png": {
-    "width": 1605,
-    "height": 891
+    "width": 1601,
+    "height": 897
   },
   "log-grok-parser-input-en.png": {
     "width": 1200,
@@ -17515,6 +17575,10 @@
     "width": 800,
     "height": 803
   },
+  "server-inventory-custom-cl-ex.png": {
+    "width": 1208,
+    "height": 500
+  },
   "server-inventory-en.png": {
     "width": 1211,
     "height": 669
@@ -17522,6 +17586,70 @@
   "server-inventory-ja.png": {
     "width": 1211,
     "height": 669
+  },
+  "server-inventory-map-chart-en.png": {
+    "width": 1200,
+    "height": 976
+  },
+  "server-inventory-map-chart-ja.png": {
+    "width": 1200,
+    "height": 977
+  },
+  "server-inventory-map-chart.png": {
+    "width": 1200,
+    "height": 977
+  },
+  "server-inventory-map-details-en.png": {
+    "width": 1200,
+    "height": 826
+  },
+  "server-inventory-map-details-ja.png": {
+    "width": 1200,
+    "height": 826
+  },
+  "server-inventory-map-details.png": {
+    "width": 1200,
+    "height": 827
+  },
+  "server-inventory-map-en.png": {
+    "width": 1200,
+    "height": 813
+  },
+  "server-inventory-map-group-select-en.png": {
+    "width": 420,
+    "height": 644
+  },
+  "server-inventory-map-group-select-ja.png": {
+    "width": 422,
+    "height": 638
+  },
+  "server-inventory-map-group-select.png": {
+    "width": 414,
+    "height": 640
+  },
+  "server-inventory-map-group.png": {
+    "width": 1200,
+    "height": 982
+  },
+  "server-inventory-map-ja.png": {
+    "width": 1200,
+    "height": 818
+  },
+  "server-inventory-map-summary-en.png": {
+    "width": 1204,
+    "height": 984
+  },
+  "server-inventory-map-summary-ja.png": {
+    "width": 1204,
+    "height": 985
+  },
+  "server-inventory-map-summary.png": {
+    "width": 1204,
+    "height": 984
+  },
+  "server-inventory-map.png": {
+    "width": 1200,
+    "height": 816
   },
   "server-inventory.png": {
     "width": 1211,
