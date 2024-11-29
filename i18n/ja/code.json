@@ -782,5 +782,9 @@
   },
   "index.pages.section.learn.glossary.desc": {
     "message": "モニタリングサービスをより便利に利用できるように用語辞典を提供します。"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   }
 }

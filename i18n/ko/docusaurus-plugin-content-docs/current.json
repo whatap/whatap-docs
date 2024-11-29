@@ -1894,5 +1894,61 @@
   "sidebar.rumsSidebar.category.경고 알림": {
     "message": "경고 알림",
     "description": "The label for category 경고 알림 in sidebar rumsSidebar"
+  },
+  "sidebar.mssqlSidebar.category.SQL Server V2 모니터링": {
+    "message": "SQL Server V2 모니터링",
+    "description": "The label for category SQL Server V2 모니터링 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlSidebar.category.로그": {
+    "message": "로그",
+    "description": "The label for category 로그 in sidebar mssqlSidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.SQL Server V1 모니터링": {
+    "message": "SQL Server V1 모니터링",
+    "description": "The label for category SQL Server V1 모니터링 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.주요 메뉴 알아보기": {
+    "message": "주요 메뉴 알아보기",
+    "description": "The label for category 주요 메뉴 알아보기 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar mssqlV1Sidebar"
+  },
+  "sidebar.mssqlV1Sidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar mssqlV1Sidebar, linking to the doc mssql-v1/monitoring-support"
+  },
+  "sidebar.serverSidebar.category.서버 인벤토리 맵": {
+    "message": "서버 인벤토리 맵",
+    "description": "The label for category 서버 인벤토리 맵 in sidebar serverSidebar"
   }
 }

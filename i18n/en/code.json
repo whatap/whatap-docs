@@ -782,5 +782,9 @@
   },
   "index.pages.section.learn.glossary.desc": {
     "message": "A glossary of terms is provided for easier use of the monitoring service."
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   }
 }

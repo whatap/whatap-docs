@@ -11551,6 +11551,30 @@
     "width": 1200,
     "height": 672
   },
+  "k8s-kuber-event-details-en.png": {
+    "width": 1204,
+    "height": 673
+  },
+  "k8s-kuber-event-details-ja.png": {
+    "width": 1204,
+    "height": 675
+  },
+  "k8s-kuber-event-details.png": {
+    "width": 1204,
+    "height": 677
+  },
+  "k8s-kuber-event-en.png": {
+    "width": 1225,
+    "height": 668
+  },
+  "k8s-kuber-event-ja.png": {
+    "width": 1225,
+    "height": 669
+  },
+  "k8s-kuber-event.png": {
+    "width": 1225,
+    "height": 669
+  },
   "k8s-kuber-namespace-en.png": {
     "width": 744,
     "height": 401
@@ -12992,16 +13016,16 @@
     "height": 832
   },
   "log-getting-started-en.png": {
-    "width": 1200,
-    "height": 776
+    "width": 1601,
+    "height": 890
   },
   "log-getting-started-ja.png": {
-    "width": 1201,
-    "height": 778
+    "width": 1601,
+    "height": 896
   },
   "log-getting-started.png": {
-    "width": 1605,
-    "height": 891
+    "width": 1601,
+    "height": 897
   },
   "log-grok-parser-input-en.png": {
     "width": 1200,
@@ -17586,6 +17610,14 @@
   "server-inventory-map-chart.png": {
     "width": 1200,
     "height": 977
+  },
+  "server-inventory-map-details-en.png": {
+    "width": 1200,
+    "height": 826
+  },
+  "server-inventory-map-details-ja.png": {
+    "width": 1200,
+    "height": 826
   },
   "server-inventory-map-details.png": {
     "width": 1200,
