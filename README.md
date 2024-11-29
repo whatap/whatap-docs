@@ -38,6 +38,7 @@ export NODE_OPTIONS="--max-old-space-size=24576" && USE_SIMPLE_CSS_MINIFIER=true
 * kubernetes/agent-list.mdx
 * features/vcenter-introduction.mdx
 * \_log-exp.mdx
+* 2024-3q-summary.mdx
 
 ```
 crowdin upload -b main

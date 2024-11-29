@@ -509,5 +509,9 @@
   "theme.blog.newFeatures": {
     "message": "新しい機能",
     "description": "Navbar item with label 새로운 기능"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
   }
 }
