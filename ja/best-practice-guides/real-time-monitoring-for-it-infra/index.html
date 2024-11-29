@@ -1,0 +1,353 @@
+<!doctype html><html lang=ja-JP dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-best-practice-guides/real-time-monitoring-for-it-infra" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.6.3"><title data-rh=true>DX-IT運用の実現に向けてのWhaTap Monitoring | WhaTap Docs</title><meta data-rh=true name=viewport content="width=device-width,initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true name=twitter:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true property=og:url content=https://docs.whatap.io/ja/best-practice-guides/real-time-monitoring-for-it-infra><meta data-rh=true property=og:locale content=ja_JP><meta data-rh=true property=og:locale:alternate content=ko_KR><meta data-rh=true property=og:locale:alternate content=en_US><meta data-rh=true name=docusaurus_locale content=ja><meta data-rh=true name=docsearch:language content=ja><meta data-rh=true name=keywords content="WhaTap,와탭,매뉴얼,사용법,WhaTap 사용법,WhaTap 매뉴얼,기술 문서,APM,애플리케이션 모니터링,로그 모니터링,쿠버네티스 모니터링,서버 모니터링,데이터베이스 모니터링,URL 모니터링,클라우드 모니터링,브라우저 모니터링,Browser monitoring,Application Monitoring,Log Monitoring,Kubernetes Monitoring,Server Monitoring,Database Monitoring,URL Monitoring,Cloud Monitoring,Manual,User Guide,Docs,WhaTap Manual,WhaTap Docs,WhaTap Documents,트랜잭션,Transaction,트레이싱,Tracing,마스터,Master,노드,Node,데드락,Deadlock,락 트리,Lock tree,멀티 트랜잭션,Multi Trancsaction,메트릭스,Metrics,소프트웨어 프록시,Software proxy,스택,Stack,슬로우 쿼리,Slow query,액티브 트랜잭션,Active transaction,컨테이너,Container,히트맵,Hitmap,Garbage Collection,GC,MXQL,Method 추적,Trace method,OOM Killed 컨테이너,OOM Killed Container,Oracle,Tibero,PostgreSQL,MySQL,MongoDB,SQL Server,CUBRID,Altibase,Redis,WebLogic,WebSphere"><meta data-rh=true name=naver-site-verification content=0c21fc5664a467108fb762ade47a3f81ee9b88ed><meta data-rh=true name=google-site-verification content=rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="DX-IT運用の実現に向けてのWhaTap Monitoring | WhaTap Docs"><meta data-rh=true name=description content="ITモニタリングが直面している主な課題とこれを解決するためのBest Practicesとして、統合モニタリング、リアルタイム・オブザーバビリティ、そしてDX-IT運用を実現するための方法論を提示します。"><meta data-rh=true property=og:description content="ITモニタリングが直面している主な課題とこれを解決するためのBest Practicesとして、統合モニタリング、リアルタイム・オブザーバビリティ、そしてDX-IT運用を実現するための方法論を提示します。"><meta data-rh=true name=robots content="noindex, nofollow"><link data-rh=true rel=icon href=/ja/img/whatap-favicon.ico><link data-rh=true rel=canonical href=https://docs.whatap.io/ja/best-practice-guides/real-time-monitoring-for-it-infra><link data-rh=true rel=alternate href=https://docs.whatap.io/best-practice-guides/real-time-monitoring-for-it-infra hreflang=ko-KR><link data-rh=true rel=alternate href=https://docs.whatap.io/en/best-practice-guides/real-time-monitoring-for-it-infra hreflang=en-US><link data-rh=true rel=alternate href=https://docs.whatap.io/ja/best-practice-guides/real-time-monitoring-for-it-infra hreflang=ja-JP><link data-rh=true rel=alternate href=https://docs.whatap.io/best-practice-guides/real-time-monitoring-for-it-infra hreflang=x-default><link rel=alternate type=application/rss+xml href=/ja/blog/rss.xml title="WhaTap Docs RSS Feed"><link rel=alternate type=application/atom+xml href=/ja/blog/atom.xml title="WhaTap Docs Atom Feed"><script>!function(e,t,a,c,n,o){e=e[n]=e[n]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignoreOrigins:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(n=t.createElement(a)).async=1,n.src=c,(c=t.getElementsByTagName(a)[0]).parentNode.insertBefore(n,c)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent",0);let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",(s=(d=document).createElement("script")).src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E46TQ5VSCT"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E46TQ5VSCT",{anonymize_ip:!0})</script><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-WJSZDJR")</script><link rel=stylesheet href=/ja/assets/css/styles.38fb17d1.css><script src=/ja/assets/js/runtime~main.ee014228.js defer></script><script src=/ja/assets/js/main.139efce7.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":(window.matchMedia("(prefers-color-scheme: light)").matches,"light"),document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><script async defer crossorigin src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v17.0&appId=169051789422006&autoLogAppEvents=1" nonce=y4U7YSrt></script>
+<div id=fb-root></div>
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJSZDJR" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label=本文へスキップ><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>本文へスキップ</a></div><nav aria-label=メイン class="navbar navbar--fixed-top"><div class=navbar__inner><div class=navbar__items><button aria-label=ナビゲーションバーをトーグルする aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ja/><div class=navbar__logo><img src=/ja/img/whatap-docs-logo.svg alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height=43px width=154px><img src=/ja/img/whatap-docs-logo.svg alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height=43px width=154px></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href=/ja/whatap-overview>はじめに</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/ja/learning-guides>WhaTap活用</a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link>製品</a><ul class=dropdown__menu><li><a class=dropdown__link href=/ja/java/introduction>Java</a><li><a class=dropdown__link href=/ja/php/introduction>PHP</a><li><a class=dropdown__link href=/ja/nodejs/introduction>Node.js</a><li><a class=dropdown__link href=/ja/python/introduction>Python</a><li><a class=dropdown__link href=/ja/dotnet/introduction>.NET</a><li><a class=dropdown__link href=/ja/golang/introduction>Go</a><li><a class=dropdown__link href=/ja/server/introduction>Server</a><li><a class=dropdown__link href=/ja/kubernetes/introduction>Kubernetes</a><li><a class=dropdown__link href=/ja/postgresql/monitoring-intro>PostgreSQL</a><li><a class=dropdown__link href=/ja/oracle/monitoring-intro>Oracle</a><li><a class=dropdown__link href=/ja/oracle-pro/monitoring-intro>Oracle Pro</a><li><a class=dropdown__link href=/ja/mysql/monitoring-intro>MySQL</a><li><a class=dropdown__link href=/ja/mssql/monitoring-intro>SQL Server</a><li><a class=dropdown__link href=/ja/tibero/monitoring-intro>Tibero</a><li><a class=dropdown__link href=/ja/cubrid/monitoring-intro>CUBRID</a><li><a class=dropdown__link href=/ja/altibase/monitoring-intro>Altibase</a><li><a class=dropdown__link href=/ja/redis/monitoring-intro>Redis</a><li><a class=dropdown__link href=/ja/mongodb/monitoring-intro>MongoDB</a><li><a class=dropdown__link href=/ja/url/url-intro>URL</a><li><a class=dropdown__link href=/ja/browser>Browser</a><li><a class="dropdown__link narrow" href=/ja/amazon-cloudwatch/install-agent>Amazon CloudWatch</a><li><a class=dropdown__link href=/ja/amazon-ecs/introduction>Amazon ECS</a><li><a class=dropdown__link href=/ja/aws-log/introduction>AWS Log</a><li><a class=dropdown__link href=/ja/azure/install-agent>Azure Monitor</a><li><a class="dropdown__link narrow" href=/ja/ncloud/install-agent>Naver Cloud Monitoring</a><li><a class="dropdown__link narrow" href=/ja/oracle-cloud/install-agent>Oracle Cloud Monitor</a><li><a class="dropdown__link narrow" href=/ja/npm/introduction>Network Performance Monitoring</a><li><a class="dropdown__link narrow" href=/ja/features/introduction>Feature Project</a><li><a class=dropdown__link href=/ja/log/introduction>Log</a><li><a class=dropdown__link href=/ja/extensions>Extensions</a></ul></div><a class="navbar__item navbar__link hidden" href=/ja/java/introduction>Javaモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/php/introduction>PHPモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/nodejs/introduction>Node.jsモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/python/introduction>Pythonモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/dotnet/introduction>.NETモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/golang/introduction>Goモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/server/introduction>Serverモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/kubernetes/introduction>Kubernetesモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/postgresql/monitoring-intro>PostgreSQLモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/oracle-v1/monitoring-intro>Oracle V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/oracle/monitoring-intro>Oracle V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/oracle-pro/monitoring-intro>Oracle Proモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mysql/monitoring-intro>MySQLモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mssql/monitoring-intro>SQL Server V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mssql-v1/monitoring-intro>SQL Server V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/tibero/monitoring-intro>Tiberoモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/cubrid/monitoring-intro>CUBRID V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/cubrid-v1/monitoring-intro>CUBRID V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/altibase/monitoring-intro>Altibase V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/altibase-v1/monitoring-intro>Altibase V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/redis/monitoring-intro>Redisモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mongodb/monitoring-intro>MongoDBモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/url/url-intro>URLモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/amazon-cloudwatch/install-agent>Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href=/ja/amazon-ecs/introduction>Amazon ECS</a><a class="navbar__item navbar__link hidden" href=/ja/aws-log/introduction>AWS Log</a><a class="navbar__item navbar__link hidden" href=/ja/azure/install-agent>Azure Monitor</a><a class="navbar__item navbar__link hidden" href=/ja/ncloud/install-agent>Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href=/ja/oracle-cloud/install-agent>Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href=/ja/log/introduction>Logモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/browser>Browser</a><a class="navbar__item navbar__link hidden" href=/ja/npm/introduction>NPM</a><a class="navbar__item navbar__link hidden" href=/ja/extensions>拡張ツール</a><a class="navbar__item navbar__link hidden" href=/ja/opentelemetry/introduction>OpenTelemetry</a><a class="navbar__item navbar__link" href=/ja/manage>管理機能</a><a class="navbar__item navbar__link" href=/ja/openapi-spec>Open API</a><a class="navbar__item navbar__link" href=/ja/license/licenses>ライセンス</a><a class="navbar__item navbar__link" href=/ja/release-notes>リリースノート</a><a class="navbar__item navbar__link" href=/ja/faq/>FAQ</a><a class="navbar__item navbar__link iflang-link" href=/ja/blog/overview>新しい機能</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href=# aria-haspopup=true aria-expanded=false role=button class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_DSK9><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span class=langLabel_L4uU>JPN</span></a><ul class=dropdown__menu><li><a href=/best-practice-guides/real-time-monitoring-for-it-infra rel="noopener noreferrer" class=dropdown__link lang=ko-KR>KOR</a><li><a href=/en/best-practice-guides/real-time-monitoring-for-it-infra rel="noopener noreferrer" class=dropdown__link lang=en-US>ENG</a><li><a href=/ja/best-practice-guides/real-time-monitoring-for-it-infra rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ja-JP>JPN</a></ul></div><div class=navbarSearchContainer_dCNk><div id=docsearch></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="ダークモードとライトモードの切り替え(現在 ライトモード)" aria-label="ダークモードとライトモードの切り替え(現在 ライトモード)" aria-live=polite aria-pressed=false><svg viewBox="0 0 24 24" width=24 height=24 fill=none class=lightToggleIcon_pyhR><path fill=currentColor fill-rule=evenodd clip-rule=evenodd d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 class=darkToggleIcon_wfgR><path fill=currentColor d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label=一番上へスクロールする class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_mhZE><div class=hold-menu><ul><li><a href=/ja class=home>WhaTap Docs</a><li><a href=https://www.whatap.io/ja target=_blank rel="noopener noreferrer" class=ext>WhaTapのホームページへ移動します。</a></ul></div><nav aria-label=Docsサイドバー class="menu thin-scrollbar menu_Y1UP"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--active" href=/ja/learning-guides>WhaTap活用</a></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/ja/best-practice-guides/real-time-monitoring-for-it-infra>DX-IT運用の実現に向けてのWhaTap Monitoring</a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist" tabindex=0 href=/ja/best-practice-guides/about-dashboard>ダッシュボード分析</a><button aria-label="Collapse sidebar category 'ダッシュボード分析'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-apm-dashboard>アプリケーションダッシュボード</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-apm-hitmap-class>ヒットマップトランザクション</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-server-dashboard>サーバーリソースボード</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/using-browser-monitoring>Browser Monitoring</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=true tabindex=0 href=/ja/best-practice-guides/about-apm-dbc>性能トラブルの類型</a></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-apm-dbc>DB connection遅延とConnection Pool</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=true tabindex=0 href=/ja/best-practice-guides/about-apm-heap-memory>メトリクスのアラート通知設定</a></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-apm-heap-memory>ヒープメモリメトリクス</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/set-db-metric-warning-notice>データベース</a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=true tabindex=0 href=/ja/best-practice-guides/about-instance-performance-analysis>詳細</a></div><ul style=display:block;overflow:visible;height:auto class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-instance-performance-analysis>インスタンス性能管理の活用</a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/ja/best-practice-guides/about-tcp-port>TCPポートモニタリングの活用</a></ul></ul></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Alpn" aria-label=Breadcrumbs><ul class=breadcrumbs itemscope itemtype=https://schema.org/BreadcrumbList><li class=breadcrumbs__item><a aria-label=ホーム class=breadcrumbs__link href=/ja/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_xK9p><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class=breadcrumbs__item><a class=breadcrumbs__link itemprop=item href=/ja/learning-guides><span itemprop=name>WhaTap活用</span></a><meta itemprop=position content=1><li itemscope itemprop=itemListElement itemtype=https://schema.org/ListItem class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link itemprop=name>DX-IT運用の実現に向けてのWhaTap Monitoring</span><meta itemprop=position content=2></ul><div class=breadcrumbs-hidden><span itemprop=name>WhaTap活用<cite>></cite></span><span itemprop=name>DX-IT運用の実現に向けてのWhaTap Monitoring</span></div></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_XdKt"><button type=button class="clean-btn tocCollapsibleButton_TO0P">このページでは</button></div><div class="theme-doc-markdown markdown"><header><h1>DX-IT運用の実現に向けてのWhaTap Monitoring</h1></header>
+<p>昨今のIT環境は急速に進化しており、これに伴いIT運用とモニタリングに対するニーズも目まぐるしく変化しています。 デジタルトランスフォーメーション（Digital Transformation、DX）とクラウド技術の拡散によってITインフラの複雑性が増加し、従来のモニタリング方法ではその変化に追いつくのがだんだん難しくなります。 本文書では、ITモニタリングが直面している主な課題とこれを解決するためのBest Practicesとして、<strong>統合モニタリング</strong>、<strong>リアルタイム・オブザーバビリティ</strong>、そして<strong>DX-IT運用</strong>を実現するための方法を提示します。</p>
+<section class=remark-sectionize-h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id=itモニタリングが直面している課題>ITモニタリングが直面している課題<a href=#itモニタリングが直面している課題 class=hash-link aria-label=ITモ��ニタリングが直面している課題への直接リンク title=ITモニタリングが直面している課題への直接リンク>​</a></h2></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=it環境の変化>IT環境の変化<a href=#it環境の変化 class=hash-link aria-label=IT環境の変化への直接リンク title=IT環境の変化への直接リンク>​</a></h3><p>昨今のIT環境は、DXとテクノロジーの発展により急速に変化しています。 このような変化により、企業はビジネス目標を達成するためにIT運用方法を再構成して最適化するよう求められいます。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=dxの影響>DXの影響<a href=#dxの影響 class=hash-link aria-label=DXの影響への直接リンク title=DXの影響への直接リンク>​</a></h4><p>DXは、既存のビジネスモデルを再構成して、デジタル新技術を通じて新たな価値を創出する過程です。 クラウド、人工知能（AI）、ビッグデータ、ブロックチェーンなどのデジタル新技術は、企業がDXを通じて競争で優位な位置を確保できるよう実現します。<p><img decoding=async loading=lazy alt=DX src=/ja/assets/images/dx-it-image-01-b22d2d8006b4b1911a77c107b05c7d98.png width=1200 height=392 class=img_ev3q><ul>
+<li>
+<p><strong>デジタル新技術による革新</strong>：クラウドサービス、IoT、仮想現実（VR）などのデジタル新技術は、ビジネスの効率性を高めて、新たな市場機会を創出します。</p>
+</li>
+<li>
+<p><strong>新規ビジネスモデルの創出</strong>：DXは、既存のレガシーシステムを変革して、新しいビジネスモデルを創出することで、企業の競争力を強化します。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=itテクノロジーの進化>ITテクノロジーの進化<a href=#itテクノロジーの進化 class=hash-link aria-label=ITテクノロジーの進化への直接リンク title=ITテクノロジーの進化への直接リンク>​</a></h4><p>ITテクノロジーは、クラウドコンピューティング、コンテナ化、マイクロサービスアーキテクチャなどによって急速に進化しています。 これらのデジタル新技術はITリソースの活用を効率化し、オンデマンドで大規模なリソースを活用できるようになりました。 特に、クラウド技術の進化は他のソフトウェア技術の進化を牽引しています。<p><img decoding=async loading=lazy alt="IT technology" src=/ja/assets/images/dx-it-image-02-d0bbef5d8aac758fa03f5a1b0b12ce51.png width=1200 height=547 class=img_ev3q><ul>
+<li>
+<p><strong>クラウドとコンテナ技術の活用</strong>：企業は、パブリッククラウドとプライベートクラウドを組み合わせたハイブリッドクラウドを利用して、インフラの柔軟性を最大化しています。</p>
+</li>
+<li>
+<p><strong>オンデマンド資源活用</strong>：大規模なデータ処理が求められる作業でITリソースを効率的に使用して、必要に応じてリソースを拡張または縮小することができます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=マイクロサービスアーキテクチャmsaの拡散>マイクロサービスアーキテクチャ（MSA）の拡散<a href=#マイクロサービスアーキテクチャmsaの拡散 class=hash-link aria-label=マイクロサービスアーキテクチャ（MSA）の拡散への直接リンク title=マイクロサービスアーキテクチャ（MSA）の拡散への直接リンク>​</a></h4><p>マイクロサービスアーキテクチャ（MicroService Architecture、MSA）は、アプリケーションを複数の独立したサービスに分離して運用することによって、IT運用上の柔軟性と拡張性を大きく向上させます。<p><img decoding=async loading=lazy alt=MSA src=/ja/assets/images/dx-it-image-03-ae06d6998dcc5fe81178385e42dbf54a.png width=1200 height=608 class=img_ev3q><ul>
+<li>
+<p><strong>アプリケーションの軽量化</strong>：各サービスは、独立的に開発及び配布されるため、変更が必要な度にシステム全体を修正する必要がありません。</p>
+</li>
+<li>
+<p><strong>サービス間の隔離</strong>：問題が発生しても他のサービスに影響を与えないよう設計されているため、システムの安定性が向上します。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=コンテナ技術の活用>コンテナ技術の活用<a href=#コンテナ技術の活用 class=hash-link aria-label=コンテナ技術の活用への直接リンク title=コンテナ技術の活用への直接リンク>​</a></h4><p>コンテナは、アプリケーションとそれに必要なすべてをパッケージ化して、軽量化された単位で実行できるようにします。 これは、リソース効率性の向上、配布と管理の複雑性の軽減に貢献します。 また、少ないリソースでサービス単位の隔離と運用を可能して、マイクロサービスの拡散をさらに加速化させています。<p><img decoding=async loading=lazy alt=Container src=/ja/assets/images/dx-it-image-04-a73aa1cd66a9db6200ec219fd185558c.png width=1200 height=433 class=img_ev3q><ul>
+<li>
+<p><strong>コンテナの軽量化</strong>：アプリケーションをコンテナ化することで、さまざまな環境下で同じ形を用いて実行できます。</p>
+</li>
+<li>
+<p><strong>自動化された配布と管理</strong>：コンテナオーケストレーションツールであるKubernetesを通じて、コンテナの配布と管理を自動化できます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=サービスの運用性の向上>サービスの運用性の向上<a href=#サービスの運用性の向上 class=hash-link aria-label=サービスの運用性の向上への直接リンク title=サービスの運用性の向上への直接リンク>​</a></h4><p>ITテクノロジーの進歩は、サービスの運用性を大きく向上させました。 特に、クラウド技術の発展は、サービスの柔軟性と拡張性を高め、これは企業のビジネスアジリティ強化において重要な役割を果たしています。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-05-ja.png width=1200 height=426><ul>
+<li>
+<p><strong>動的スケーリング</strong>：必要に応じてサービスの規模を自動調整し、リソースを効率的に活用することができます。</p>
+</li>
+<li>
+<p><strong>サービス単位の拡張</strong>：各サービスは独立的に拡張が可能で、これは障害拡散の防止に役立ちます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=itシステムの複雑性増加>ITシステムの複雑性増加<a href=#itシステムの複雑性増加 class=hash-link aria-label=ITシステムの複雑性増加への直接リンク title=ITシステムの複雑性増加への直接リンク>​</a></h4><p>ITテクノロジーの進歩に伴い、ITシステムの複雑性も高まっています。 特に、クラウドとマイクロサービスアーキテクチャの導入によってシステムの構成要素は多様化し、相互依存性が一層高まりました。 このような状況で、従来のITモニタリング方法では、システム全体を把握するのは困難だという問題が持ち上がっています。<p><img decoding=async loading=lazy src="https://ik.imagekit.io/h4gmuu7ol/d76285_129d9a09cb084c9ca10e8225d7e98_0e59b3f687.png?sp=racwdl&st=2023-11-29T13:26:55Z&se=2050-11-29T21:26:55Z&spr=https&sv=2022-11-02&sr=c&sig=cjlnEtXAZeiBo5U0aBoOwBU2azK6HmLaRgvCD9aT9Aw%3D&tr=w-2048" alt=Obervability class=img_ev3q><p>出典：<a href=https://www.worth.nl/en/articles/5-reasons-to-fight-complexity-in-your-it-systems target=_blank rel="noopener noreferrer">https://www.worth.nl/en/articles/5-reasons-to-fight-complexity-in-your-it-systems</a><ul>
+<li>
+<p><strong>複雑性の増加</strong>：さまざまなサービスと技術が組み合わさることによって、システムの複雑性が高まりました。</p>
+</li>
+<li>
+<p><strong>新たな観測方法が必要</strong>：従来のモニタリング方法では、このような複雑なシステムを管理するのが困難なため、新しい観測方法が求められています。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリング環境の変化>モニタリング環境の変化<a href=#モニタリング環境の変化 class=hash-link aria-label=モニタリング環境の変化への直接リンク title=モニタリング環境の変化への直接リンク>​</a></h3><p>昨今のIT環境は、テクノロジーの発展とともに急速に変化しています。 このような変化は、モニタリング環境にも大きな影響を与え、従来のモニタリング方法では複雑で動的なITシステムを効率的に管理するのが困難になりました。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=観測対象の変化>観測対象の変化<a href=#観測対象の変化 class=hash-link aria-label=観測対象の変化への直接リンク title=観測対象の変化への直接リンク>​</a></h4><p>伝統的なモニタリング方法は、主にサーバー、データベースなど特定ITリソースの内部監視に限られていました。 しかし、クラウドサービスの導入、コンテナ、Kubernetesなどの活用が増えるにつれ、モニタリング対象が拡大されました。 これからは、ITリソースの内部だけでなく、リソースの外部で発生するさまざまな指標、データを収集しなければなりません。 クラウドの活用が一般化されるにつれ、クラウドベンダーが確保しているプラットフォーム情報も同時にモニタリングしなければならなくなりました。<p><img decoding=async loading=lazy alt=Obervability src=/ja/assets/images/dx-it-image-07-450706f15240a54fd8a3545d71d688e2.png width=1200 height=544 class=img_ev3q><p>MSA環境への転換に加え、コンテナ環境まで組み合わさることにより、モニタリング対象は拡大され、リソース、アプリケーション、そしてサービスの呼び出し関係まで観測対象に含まれるようになりました。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリング技術の進化>モニタリング技術の進化<a href=#モニタリング技術の進化 class=hash-link aria-label=モニタリング技術の進化への直接リンク title=モニタリング技術の進化への直接リンク>​</a></h4><p>モニタリング技術は、ITシステムの複雑性とデータ量の増加とともに進化し続けています。 特に、従来のモニタリング方法では収集できなかったデータを収集するための新たな試みが行われ、人工知能（AI）、マシンラーニング（ML）技術を活用した分析が増えています。 以下は、その代表的な例です。<p><img decoding=async loading=lazy alt=Obervability src=/ja/assets/images/dx-it-image-08-d90264e1be6a9d0937aa27179c6184f8.png width=1200 height=390 class=img_ev3q><ul>
+<li>
+<p><strong>eBPF</strong>（<strong>Extended Berkeley Packet Filter</strong>）：Linuxカーネルで実行されるプログラムで、カーネルスペースでのデータ収集目的で使用されます。</p>
+</li>
+<li>
+<p><strong>Telegrafなどのデータ収集ツール</strong>：さまざまなデータソースからメトリクスを収集して送信する役割を果たします。</p>
+</li>
+<li>
+<p><strong>AI/MLを通じた分析</strong>：収集されたデータをもとに、異常検知および予測分析を実行します。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリングユーザーの変化>モニタリングユーザーの変化<a href=#モニタリングユーザーの変化 class=hash-link aria-label=モニタリングユーザーの変化への直接リンク title=モニタリングユーザーの変化への直接リンク>​</a></h4><p>モニタリング対象の拡大に伴い、ユーザー層も広がりました。 従来には、主にシステムエンジニア（SE）、IT運用者のみがモニタリングツールを使用しました。 しかし今では、アプリケーションをサービス単位で開発及び配布するようになったため、以前のような役割分担があいまいになりました。 DevOpsチームや開発者もモニタリングツールを利用してシステムの状態をリアルタイムで確認し、問題解決に積極的に参加しています。 さらには、SRE（Site Reliability Engineering）という職種の登場とともに、モニタリング能力がエンジニア個人の力量評価において重要な要素となりました。<p>このような変化は、ITシステムの複雑性の増加に伴い、すべての関連チームがシステムの状態を理解して、問題発生時には速やかに対応できるようにするためのものです。</section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリングニーズの変化>モニタリングニーズの変化<a href=#モニタリングニーズの変化 class=hash-link aria-label=モニタリングニーズの変化への直接リンク title=モニタリングニーズの変化への直接リンク>​</a></h3><p>昨今のIT環境は、DXの加速化とともに、急速に変化しています。 このような変化は、モニタリングに対するニーズに変化をもたらし、オプションに止まっていたものがが、今や必須項目として定着しています。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=オプションから必須への転換>オプションから必須への転換<a href=#オプションから必須への転換 class=hash-link aria-label=オプションから必須への転換への直接リンク title=オプションから必須への転換への直接リンク>​</a></h4><p>従来には、特定要素のみに対してモニターリングを行っていましたが、今は、ITを構成するすべての要素に対するモニタリングが必須になりました。 これは、システム構成要素の多様化とともに、管理ポイントが増加した結果です。 各要素の状態に対するモニタリングは、今やビジネス継続性の維持とシステム安定性において不可欠です。<p><img decoding=async loading=lazy alt=Obervability src=/ja/assets/images/dx-it-image-09-fc736a6e63823db479a65567704a79fc.png width=943 height=618 class=img_ev3q><ul>
+<li>
+<p><strong>管理ポイントの増加</strong>：さまざまなクラウドサービス、クライアント、ウェブ、モバイルなど複合的な要素が加わりながら、モニタリングに対するニーズが高まりました。</p>
+</li>
+<li>
+<p><strong>必須モニタリング</strong>：すべてのITリソースとサービスに対する必須モニタリングの必要性が高まっています。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリング対象リソースの増加>モニタリング対象リソースの増加<a href=#モニタリング対象リソースの増加 class=hash-link aria-label=モニタリング対象リソースの増加への直接リンク title=モニタリング対象リソースの増加への直接リンク>​</a></h4><p>モノリスからマイクロサービスアーキテクチャ（MSA）への転換は、モニタリング対象リソースの幅を大きく広げました。 これにより企業は、単一サーバーやネットワークデバイスを超え、分散サーバー、クラウドサービス、仮想ネットワークなどさまざまなITリソースに対するモニタリングを求められるようになりました。<p><img decoding=async loading=lazy alt="Increase taget to monitoring" src=/ja/assets/images/dx-it-image-10-aa21566204a0359cec808b4ae167db84.png width=1200 height=485 class=img_ev3q><ul>
+<li>
+<p><strong>モニタリング対象の拡大</strong>：従来のサーバー、ネットワークデバイスだけでなく、仮想サーバー、クラウドデータベース、分散アプリケーションなど新しいITリソースもモニタリング対象に含めなければならなくなりました。</p>
+</li>
+<li>
+<p><strong>分散アーキテクチャ対応</strong>：分散したサーバー、ネットワークの性能を効果的にモニタリングして、システム全体の状態を把握できる能力が求められています。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=性能モニタリングの重要性>性能モニタリングの重要性<a href=#性能モニタリングの重要性 class=hash-link aria-label=性能モニタリングの重要性への直接リンク title=性能モニタリングの重要性への直接リンク>​</a></h4><p>マイクロサービスアーキテクチャの導入によるモニタリング対象の拡大に伴い、リソースとアプリケーションの性能モニタリングの重要性が高まりました。 これには、各サービスの呼び出し関係と性能に対するモニタリングが含まれ、システム全般の性能維持において必要不可欠です。 また、昨今の分散アーキテクチャ環境では、使用可能なリソースに対する動的測定・評価、増設などを自動的に運用します。 このにより、運用のための基準として、サービスに対する性能評価の重要性が高まりました。<p>マイクロサービスアーキテクチャの導入によるモニタリング対象の拡大に伴い、リソースとアプリケーションの性能モニタリングに対する重要性はさらに高まりました。 各サービスの呼び出し関係と性能に対するモニタリングは、システム全般の性能維持において必要不可欠です。 また、昨今の分散アーキテクチャ環境では、使用可能なリソースに対する動的測定・評価、そして増設が自動的に行われます。 このにより、運用のための基準として、サービスに対する性能評価の重要性が高まりました。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-11-ja.png alt="Performance monitoring" width=1200 height=798><ul>
+<li>
+<p><strong>アプリケーション性能のモニターリング</strong>：アプリケーションの性能をリアルタイムでモニタリングして、システムの性能低下を早期に検知及び対応できます。</p>
+</li>
+<li>
+<p><strong>サービス呼び出し関係のモニターリング</strong>：分散環境でサービス間の呼び出し関係をモニタリングすることで、システムの性能問題を速やかに把握できます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=dx-it運用の実現>DX-IT運用の実現<a href=#dx-it運用の実現 class=hash-link aria-label=DX-IT運用の実現への直接リンク title=DX-IT運用の実現への直接リンク>​</a></h4><p><strong>性能モニタリング</strong>は、システムの多様な指標をリアルタイムで観測及び分析することで、インフラリソースの活用を最適化できます。 これは、システムの品質維持において重要な役割を果たします。 特に、クラウドなどの動的なインフラ環境では、リソースの適切な配分と拡張がビジネス成果に直結するため、<strong>性能モニタリング</strong>は必須です。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-12-ja.png alt="DX IT" width=1200 height=485><p>従来は、ビジネスとITテクノロジーが各々独立して運用されたり、最小限の接点で結合するレベルにとどまっていました。 しかし、DXの加速化とともに、ITは単なるサポート的な役割を超え、ビジネス戦略の中核として定着しました。 これからITとビジネスは、完全に一体化した形で運用されなければなりません。 その過程で、<strong>性能モニタリング</strong>は必要不可欠な項目として定着しました。<p><strong>性能モニタリング</strong>は、DX-IT運用の実現の必須要素として、ITとビジネスの一体化をサポートするコア項目です。 これは、単なるシステムの性能に対するモニタリングを超え、ビジネス成果の最大化と企業の競争力強化において不可欠な役割を担います。 これからも、<strong>性能モニタリング</strong>は、IT<strong>運用の重要な一部として、ビジネスと</strong>ITが一体化した運用運用モデルの実現において重要な役割を担うこととなるでしょう。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=統合モニタリング>統合モニタリング<a href=#統合モニタリング class=hash-link aria-label=統合モニタリングへの直接リンク title=統合モニタリングへの直接リンク>​</a></h4><p>ITシステムの複雑性が高まるにつれ、単一ツールではすべてのモニタリングニーズを満たすのが困難になりました。 <strong>統合モニタリング</strong>は、さまざまなIT資産(サーバー、ネットワーク、アプリケーションなど)を一つのプラットフォームでモニタリングして管理できる能力を提供します。 これは、DX-IT運用の実現をサポートする重要要素です。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-13-ja.png alt="Integrated Monitoring" width=1200 height=593><ul>
+<li>
+<p><strong>システム全体の可視性確保</strong>:統合モニタリングを通じて、すべてのシステム要素の状態をひと目で把握できます。 これは、問題発生時に迅速な対応を可能にして、システムの安定性維持において不可欠です。</p>
+</li>
+<li>
+<p><strong>効率的なリソース管理</strong>：統合モニタリングは、リソースの使用状況を正確に把握して、必要に応じて最適化案を提供してくれます。 これにより不要なリソース浪費を減らし、費用の効率性を高めることができます。</p>
+</li>
+<li>
+<p><strong>単一ビュー提供</strong>：さまざまなシステムとアプリケーションで収集されたデータを一か所で統合的に把握できる単一ビューを提供することで、運用者はシステム全般の状態を手軽にモニタリングできます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=可視化の必要性>可視化の必要性<a href=#可視化の必要性 class=hash-link aria-label=可視化の必要性への直接リンク title=可視化の必要性への直接リンク>​</a></h4><p>モニタリングしたデータに基づくシステムの状態の可視化は、運用の効率性向上において必要不可欠です。 可視化されたデータは運用者に重要なインサイトを提供し、迅速な意思決定を支援します。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-14-ja.png alt="Integrated Monitoring" width=1200 height=456><ul>
+<li>
+<p><strong>データの可視化</strong>：さまざまなリソースで収集されたデータを効率的に可視化して、運用者に重要な情報を直観的に提供できます。</p>
+</li>
+<li>
+<p><strong>障害検知と対応</strong>：可視化されたデータをもとに障害を迅速に検知して、効率的に対応できます。</p>
+</li>
+</ul><div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>ノート</div><div class=admonitionContent_BuS1><p>障害検知時間と<a href="https://chronosphere.io/learn/why-are-we-so-bad-at-mean-time-to-repair-mttr/?utm_source=the+new+stack&utm_medium=referral&utm_content=inline-mention&utm_campaign=tns+platform" target=_blank rel="noopener noreferrer">復旧時間</a>が長くなるほどど運用に悪影響を与えます。 これは、クラウドとハイブリッド環境の複雑化に伴い、可視性が下がり、障害発生時に迅速なサービス復旧がより困難なためです。</div></div></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=itモニターリングにおける主な課題>ITモニターリングにおける主な課題<a href=#itモニターリングにおける主な課題 class=hash-link aria-label=ITモニターリングにおける主な課題への直接リンク title=ITモニターリングにおける主な課題への直接リンク>​</a></h3><p>昨今のIT環境において、モニタリングは必須要素として定着しました。 しかし、モニタリングシステムが効果的に作動するためには、直面している様々な課題を克服しなければなりません。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=dxを支えるit運用>DXを支えるIT運用<a href=#dxを支えるit運用 class=hash-link aria-label=DXを支えるIT運用への直接リンク title=DXを支えるIT運用への直接リンク>​</a></h4><p>ITパフォーマンスの向上は、ビジネスの速度と成果に直接影響を与えます。 ITシステムの性能が最適化されるほど、ビジネスの成長と発展は加速化されるため、昨今のDX時代において、非常に重要な要素として定着しています。 今のITとビジネスは、切っても切れない関係を築いており、IT運用の成功の有無はビジネス成果につながります。<p>DXの過程におけるIT運用の成功は、単なるシステムの安定的な維持を超え、ビジネス速度を高めて競争力を強化する中核的な役割を担います。 そのため、ITパフォーマンスを高めることは、DXの成功を左右する重要な要素となり、ついには企業の持続可能な成長と成果を保証する必須条件として定着しました。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=運用の効率化と費用削減>運用の効率化と費用削減<a href=#運用の効率化と費用削減 class=hash-link aria-label=運用の効率化と費用削減への直接リンク title=運用の効率化と費用削減への直接リンク>​</a></h4><p>ITモニタリングシステムの構築と運用には、相当なコストを要します。特に、多様な環境と業務に合わせたモニタリングソリューションを構築及び維持するためには、多くのリソースが必要となります。 運用の効率性を最大化して費用を削減するためには、統合されたモニタリングソリューションが必要です。 このような統合は、重複投資と維持費用を減らし、運用効率性の向上に貢献します。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=運用担当者の不在とスケーリング対応>運用担当者の不在とスケーリング対応<a href=#運用担当者の不在とスケーリング対応 class=hash-link aria-label=運用担当者の不在とスケーリング対応への直接リンク title=運用担当者の不在とスケーリング対応への直接リンク>​</a></h4><p>ITシステムの複雑性が高まるにつれ、これらを管理できる運用担当者の役割はさらに重要度が増しました。 しかし、多くの企業は十分な人材を確保できなかったり、未熟なDevOps環境で運用と開発を同時に担当しなければならない困難を抱えています。 また、トラフィック増加時にシステムの迅速なスケーリング（拡張）が求められますが、これを効果的にサポートできる体制が十分ではなかったりします。<p>自動化されたモニタリングとスケーリングソリューションを通じて運用の負担を減らし、ビジネスニーズに合わせて迅速に対応できるシステムを構築する必要があります。<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"/></svg></span>ノート</div><div class=admonitionContent_BuS1><ul>
+<li>
+<p>2016から2021年にわたり<a href="https://uptimeinstitute.com/about-ui/press-releases/uptime-institute-releases-3rd-annual-outage-analysis?utm_source=the+new+stack&utm_medium=referral&utm_content=inline-mention&utm_campaign=tns+platform" target=_blank rel="noopener noreferrer">42%の企業</a>がヒューマンエラーによるダウンタイムを経験しました。</p>
+</li>
+<li>
+<p><a href="https://cpl.thalesgroup.com/cloud-security-research?utm_source=the+new+stack&utm_medium=referral&utm_content=inline-mention&utm_campaign=tns+platform" target=_blank rel="noopener noreferrer">世界中の企業の40%</a>が去る12か月間、クラウド基盤のデータ流出を経験しました。</p>
+</li>
+<li>
+<p>顧客を<a href="https://opsworks.co/how-to-improve-website-performance-with-devops/?utm_source=the+new+stack&utm_medium=referral&utm_content=inline-mention&utm_campaign=tns+platform" target=_blank rel="noopener noreferrer">3秒以上</a>待たせた場合、潜在顧客の50%がウェブサイトを離脱します。</p>
+</li>
+</ul></div></div></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=性能モニタリングとシステムの品質維持>性能モニタリングとシステムの品質維持<a href=#性能モニタリングとシステムの品質維持 class=hash-link aria-label=性能モニタリングとシステムの品質維持への直接リンク title=性能モニタリングとシステムの品質維持への直接リンク>​</a></h4><p>システムの性能をモニタリングして、これをもとにシステムの品質を維持することは、IT運用において中核課題のひとつです。 しかし、分散されたアプリケーションと複雑なインフラで性能データを効果的に収集及び分析する作業は、困難を極めます。 そのため、性能モニタリングを強化して、システムの品質を維持するメソッドが求められています。<p>モニターリングツールを導入して、リアルタイムで性能データを収集し、これをもとにシステムの品質を維持できます。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=ビジネスの変化に対する対応性>ビジネスの変化に対する対応性<a href=#ビジネスの変化に対する対応性 class=hash-link aria-label=ビジネスの変化に対する対応性への直接リンク title=ビジネスの変化に対する対応性への直接リンク>​</a></h4><p>IT環境は、ビジネスニーズに伴い急速に変化します。 この変化に迅速に対応するためには、モニタリングシステムもフレキシブルかつ俊敏に運用されなければなりません。 しかし、従来の固定モニタリングシステムでは、ビジネス変化への対応に限界があります。<p>フレキシブルなモニタリングソリューションを導入して、ビジネスの変化に俊敏に対応できるようシステムを設計する必要があります。<hr></section>
+<section class=remark-sectionize-h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id=課題への解決>課題への解決<a href=#課題への解決 class=hash-link aria-label=課題への解決への直接リンク title=課題への解決への直接リンク>​</a></h2></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=統合モニタリング-1>統合モニタリング<a href=#統合モニタリング-1 class=hash-link aria-label=統合モニタリングへの直接リンク title=統合モニタリングへの直接リンク>​</a></h3><p>昨今のIT環境は複雑で、色んなシステムが相互に関連し合って作動する環境です。 このような環境で各システムの状態を効果的に把握及び管理するのに、モニタリングは必要不可欠です。 しかし、従来のモニタリング方法は、特定の対象やシステムに限られているため、全体的なITインフラの状態を総合的に把握するには限界があります。 この問題を解決するため、統合モニタリングの必要性は日増しに高まっています。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=これまでのモニタリング>これまでのモニタリング<a href=#これまでのモニタリング class=hash-link aria-label=これまでのモニタリングへの直接リンク title=これまでのモニタリングへの直接リンク>​</a></h4><ul>
+<li>
+<p><strong>対象別のモニタリング</strong></p>
+<p>従来のモニタリング方法は、特定のリソースやシステムに集中して個別にモニタリングしていました。 例えば、サーバーモニタリング、ネットワークモニタリング、アプリケーションモニタリングなど、各々異なるツールを利用して、各要素を独立的にモニタリングする方法が用いられました。 このようなアプローチは、各システムの状態把握には有用ですが、システム間の相互作用や全体的な性能を総合的に理解するには限界があります。</p>
+<p><img decoding=async loading=lazy alt="Monitoring by target" src=/ja/assets/images/dx-it-image-15-0518ba3ade0820013088e1196134755d.png width=1200 height=621 class=img_ev3q></p>
+<ul>
+<li>
+<p><strong>サイロ化した情報</strong>：システム間のデータは分離されているため、全体的なITインフラの状態を総合的に判断するのは困難です。</p>
+</li>
+<li>
+<p><strong>障害への対応遅延</strong>：特定のシステムで問題が発生時に、この問題が別のシステムにどのような影響を及ぼすかを把握するのは困難なため、障害対応が遅延する場合があります。</p>
+</li>
+<li>
+<p><strong>運用の非効率性</strong>：複数のシステムで重複したモニタリングが実行されると、運用の効率性が下がり、システム間のデータの一貫性を維持するのが困難になります。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>担当別のモニタリング</strong></p>
+<p>従来のモニタリングは、主にシステムエンジニア、ネットワーク管理者、アプリケーション管理者など、各担当者が各々のツールを利用して、自らが管理する領域のみをモニタリングする方法を用いていました。 この方法は、各チームが特定領域の性能と状態を深く把握することは可能ですが、問題発生時には他のチーム同士の協力が困難で、問題の原因を総合的に分析するにも時間がかかります。</p>
+<p><img decoding=async loading=lazy alt="Monitoring by manage" src=/ja/assets/images/dx-it-image-16-34696ffb7dd09a92862d5443f94d5e81.png width=1200 height=475 class=img_ev3q></p>
+<ul>
+<li>
+<p><strong>コミュニケーション不足</strong>：各チームが使用するツールと観点が異なるため、問題発生時には、互いに異なるデータをもとにコミュニケーションを行うことになり、これにより誤解や意思決定の遅延が発生する場合があります。</p>
+</li>
+<li>
+<p><strong>問題の根本原因の把握が困難</strong>：問題の原因がどのシステムにあるのか明確に分からない場合、各チームが互いに責任をダライ回しし、、問題解決が遅延する場合があります。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>システム別のモニタリング</strong></p>
+<p>システム別のモニタリングは、各々異なるシステムを独立的にモニタリングする方法です。 例えば、データベースのシステムはデータベースモニタリングツールで、ネットワークはネットワークモニタリングツールでモニタリングする方法です。 この方法は、各システムの性能を独立的に最適化できますが、システム間の連携性や総合的な性能モニタリングには限界があります。</p>
+<p><img decoding=async loading=lazy alt="Monitoring by system" src=/ja/assets/images/dx-it-image-17-d16ed236ffc1924605984bbc9579b0d0.png width=1200 height=335 class=img_ev3q></p>
+<ul>
+<li>
+<p><strong>ワークロード管理の非効率性</strong>：各システムが互いに異なるワークロードを持っており、これを効率的に管理するためには、統合されたモニタリングソリューションが必要です。</p>
+</li>
+<li>
+<p><strong>費用増加</strong>：システムを個別にモニタリングする場合、モニタリングツールの重複使用によって費用が増すことがあります。</p>
+</li>
+</ul>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリングにおける統合>モニタリングにおける統合<a href=#モニタリングにおける統合 class=hash-link aria-label=モニタリングにおける統合への直接リンク title=モニタリングにおける統合への直接リンク>​</a></h4><p>モニタリング環境の変化に伴い、個別のシステムや領域に限られていたモニタリング方法は、限界に達しています。 これを解決するため、モニタリング対象、技術、業務、そして環境を統合する新たなアプローチが求められています。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-18-ja.png alt="Integrated Monitoring" width=1200 height=593><ul>
+<li>
+<p><strong>対象及び技術の統合</strong></p>
+<p>統合モニタリングの第一段階は、さまざまなモニタリング対象の統合です。 サーバー、ネットワーク、アプリケーション、データベースなどすべてのITリソースを一つのプラットフォームで統合的にモニタリングできなければなりません。 また、これらの技術を統合して、単一ダッシュボードを通じてすべてのリソースの状態をひと目で把握できるシステムが必要です。 これにより、システム間の連携性を把握し、IT全体のインフラ状態をリアルタイムでモニタリングできます。</p>
+</li>
+<li>
+<p><strong>業務の統合</strong></p>
+<p>統合モニタリングは、IT運用部門内の業務統合を促進します。 従来の担当別のモニタリングの殻を破り、統合モニタリングを通じてすべてのチームが同じデータをもとに協力できるようになります。 例えば、システムエンジニア、ネットワーク管理者、アプリケーション管理者がすべて同じモニタリングプラットフォームを使用して協力することで、問題発生時に迅速かつ効果的に対応できます。</p>
+</li>
+<li>
+<p><strong>環境及び地域の統合</strong></p>
+<p>昨今のIT環境は、ハイブリッドクラウド、マルチクラウド、オンプレミス環境などさまざまなインフラを含んでいます。 このような環境において、統合モニタリングは必要不可欠です。 パブリッククラウド、プライベートクラウド、オンプレミス環境を包括する統合モニタリングで、さまざまな地域と環境で運用されるシステムを一貫して管理できます。 これは、多拠点のグローバルビジネスを展開している企業にとって特に重要です。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=リアルタイムオブザーバビリティ>リアルタイム・オブザーバビリティ<a href=#リアルタイムオブザーバビリティ class=hash-link aria-label=リアルタイム・オブザーバビリティへの直接リンク title=リアルタイム・オブザーバビリティへの直接リンク>​</a></h3><p>昨今のIT環境において<strong>オブザーバビリティ</strong>は、システムの可用性と性能を維持して、ビジネスニーズに対する迅速な対応において必須要素として定着しています。 複雑かつ分散されたシステム構造では、単なるモニタリングだけでは不十分で、システムの状態をリアルタイムで把握して、問題を即時に解決できる能力が必要です。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=オブザーバビリティの主な構成要素>オブザーバビリティの主な構成要素<a href=#オブザーバビリティの主な構成要素 class=hash-link aria-label=オブザーバビリティの主な構成要素への直接リンク title=オブザーバビリティの主な構成要素への直接リンク>​</a></h4><p>モニタリングは、システムの状態を監視して記録するプロセスです。 モニタリングツールは、アプリケーションの作動状態に対するデータを収集します。 次に、ソフトウェアは、そのデータをダッシュボードへ送信して分析、設定された限界値を超過する場合はトリガー警告を発することができます。 モニタリングを通じてアプリケーションの状態を把握し、把握した障害地点に対する警戒を維持することができます。<p>複雑なクラウドネイティブ分散システムでの問題を解決するには、モニタリングの他にも、見えない問題の発生状況を検知し、その原因を速やかに調査する必要があります。 <strong>オブザーバビリティ</strong>は、新しいクラウドネイティブ世界で、言わば「知られていない未知の問題」を発見及び解決するのに役立ちます。<p>モニタリングは、アプリケーションの性能を監視及び改善するのに使用されます。 反面、<strong>オブザーバビリティ</strong>は、クラウドネイティブシステムの常態測定を通じて、ビジネスの主な結果や目標に影響を与えます。 例えば、ユーザーに与える影響は何か？ 顧客にどのような影響を与えるか？ どうすればより俊敏に繰り返せるか？ そして、どうすればビジネス全体により多くの優遇を一層速やかに提供できるか？ <strong>オブザーバビリティ</strong>は、システムを継続的に稼働及び運用するため、ビッグピクチャーを描いてアプローチします。<p>以下は、<strong>オブザーバビリティ</strong>の主な構成要素です。<ul>
+<li>
+<p><strong>メトリクス</strong>（<strong>Metrics</strong>）</p>
+<p><strong>メトリクス</strong>は、システムの性能と状態を定量的に表す指標です。 CPU使用率、メモリ使用量、ネットワーク帯域幅、トランザクション処理速度などが代表的なメトリクスです。 リアルタイム・オブザーバビリティを具現化するためには、このメトリクスを秒単位で収集及び分析することが重要です。</p>
+</li>
+<li>
+<p><strong>ログ</strong>（<strong>Log</strong>）</p>
+<p><strong>ログ</strong>は、システムで発生するイベントやエラー情報を記録したデータです。 ログを通じてシステムで発生した一連の事件を追跡して、特定問題の原因を把握することができます。 リアルタイム・オブザーバビリティでは、ログデータをリアルタイムで収集及び分析して、問題が発生した時点と原因を迅速に把握できなければなりません。</p>
+</li>
+<li>
+<p><strong>トレース</strong>（<strong>Trace</strong>） / スパン（Span）</p>
+<p><strong>トレース</strong>は、アプリケーション内で実行された作業の流れを追跡するのに使用されます。 これは特に、分散システムにおいて重要で、サービス間の呼び出し関係と処理時間を分析し、ボトルネック現象や性能低下の原因を把握するのに有用です。 トレースを通じてモニタリング対象の複雑な実行フローを視認化することで、問題発生時に迅速に解決できます。</p>
+</li>
+<li>
+<p><strong>プロファイラー</strong>（<strong>Profiler</strong>）</p>
+<p><strong>プロファイラー</strong>は、アプリケーションの性能を細かく分析して最適化するのに使用します。 特定のコードや関数の実行時間を測定、リソースの消費をモニタリングして、アプリケーション内で性能ボトルネックが発生する部分を識別するのに役立ちます。 リアルタイム・オブザーバビリティ環境においてプロファイラーは、モニタリング対象の性能を深く分析して、システムが最適の状態で作動できるようサポートします。 これを通じて性能低下を未然に防ぎ、最適化された性能を維持できます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=分散システムとリアルタイムオブザーバビリティの必要性>分散システムとリアルタイム・オブザーバビリティの必要性<a href=#分散システムとリアルタイムオブザーバビリティの必要性 class=hash-link aria-label=分散システムとリアルタイム・オブザーバビリティの必要性への直接リンク title=分散システムとリアルタイム・オブザーバビリティの必要性への直接リンク>​</a></h4><p>昨今のITシステムは、マイクロサービスアーキテクチャとクラウド環境の導入により、さらに複雑化しています。 このような分散システムでは、さまざまなサービスとアプリケーションが相互作用するため、互いの状態をリアルタイムで把握することが非常に重要です。 リアルタイム・オブザーバビリティは、このような複雑なシステムを管理して問題を即時に把握し、迅速に対応できる能力を提供します。<p><img decoding=async loading=lazy alt="Distributed system" src=/ja/assets/images/dx-it-image-25-6626c059edbefbfc76feecd30253c8bc.png width=1200 height=676 class=img_ev3q><ul>
+<li>
+<p><strong>複雑性の増加</strong>：分散システムとマイクロサービスアーキテクチャの導入により、システム間の相互作用はさらに複雑化しています。これを管理するには、リアルタイムでデータを収集及び分析できるリアルタイム・オブザーバビリティが必要です。</p>
+</li>
+<li>
+<p><strong>動的変化</strong>：クラウド環境でサービスの動的変化に速やかに対応するには、リアルタイムでシステムの状態を把握し、これをもとに自動化された措置を講じられる機能が重要です。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=リアルタイムオブザーバビリティ実装における主な課題>リアルタイム・オブザーバビリティ実装における主な課題<a href=#リアルタイムオブザーバビリティ実装における主な課題 class=hash-link aria-label=リアルタイム・オブザーバビリティ実装における主な課題への直接リンク title=リアルタイム・オブザーバビリティ実装における主な課題への直接リンク>​</a></h4><p><strong>リアルタイム・オブザーバビリティ</strong>とは、即時性が求められるITサービスにおける<strong>オブザーバビリティ</strong>を意味します。 ユーザーが問題を認識する前にシステムの状態を秒単位で監視して、複雑な状況を視覚化できなければなりません。 障害発生時には、サービスの観点で問題発生地点とタイプを速やかに識別する必要があります。 最後に、速やかに原因を分析するため、障害の再現や追加情報を収集せずに、常時記録された高解像度データを通じて即時に問題の原因を探索できなければなりません。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-19-ja.png alt="Real-time Objevability" width=1600 height=879><p>リアルタイム・オブザーバビリティの実装に成功するためには、いくつかのコア課題を解決する必要があります。<ul>
+<li>
+<p><strong>統合されたデータ収集</strong></p>
+<p>効果的なオブザーバビリティのためには、システム全般で収集されたデータを統合管理することが重要です。 性能指標（メトリクス）、イベント記録（ログ）、実行履歴の記録（トレース）などのデータをさまざまなソースからリアルタイムで収集して、ひとつのプラットフォームで管理しなければなりません。 これによってシステム全般の状態をひと目で把握でき、問題発生時には速やかに原因を分析できます。</p>
+</li>
+<li>
+<p><strong>自動化された警告および通知システム</strong></p>
+<p>リアルタイム・オブザーバビリティには、特定条件が発生時に自動的に警告を発して、これを運用チームに知らせる機能が求められます。 このように自動化された警告システムは、問題発生時に迅速な対応を可能にし、システムの可用性維持において重要な役割を果たします。</p>
+</li>
+<li>
+<p><strong>統合された可視性提供</strong></p>
+<p>昨今のIT環境では、さまざまなソースから多くのデータが流れ込むため、これを管理するためには複数のツールを使用するケースが多いです。 そのため、これらのツールを切り替えることなく、すべてのデータを一か所に統合して確認できるシステムが必要です。 統合された可視性によって、ユーザーは複数のシステムとアプリケーションから入ってきたデータを一つの画面で手軽にモニタリングできます。</p>
+<p>これにより運用者は、システムの状態をより正確に把握して、必要な措置を速やかに講じることができます。 このように、全てのデータをひと目で確認できる統合されたビューを提供することで、システム全体に対する理解度を高め、運用の効率性を最大化できます。</p>
+</li>
+<li>
+<p><strong>高解像度データの分析</strong></p>
+<p>秒単位で収集される高解像度データをリアルタイムで分析して、システムの微細な変化も即時に検知できなければなりません。 これによって潜在的な問題を早期に発見し、サービスの中断を予防できます。</p>
+</li>
+<li>
+<p><strong>相互運用性の受容</strong></p>
+<p>データは、さまざまなソースからさまざまな形式で提供されます。 そのため、オープンソースツール、商用ツール、クラウド環境などで作成されたデータをひとつのプラットフォームで統合的に管理及び分析できなければなりません。 これによってシステム全体に対する一貫した可視性を確保し、データを一貫して分析できます。</p>
+</li>
+<li>
+<p><strong>豊富な状況情報の提供</strong></p>
+<p>データ自体も重要ですが、これを取り囲む状況情報を同時に理解することも非常に重要です。 問題発生時にその時点のシステム構成、サーバーの状態、そして普段とは違う作業量がないかを把握することは、問題解決に大きく役立ちます。 この状況情報を通じてデータをより豊富に作成し、これをもとに不要な情報を取り除くことで、実際の問題を識別することができます。</p>
+</li>
+<li>
+<p><strong>カスタマイズ型探索及び分析ツール</strong></p>
+<p>各組織のビジネスニーズに合ったカスタマイズ型探索及び分析ツールは、オブザーバビリティの価値を最大化します。 IT運用チームは、重要業績評価指標（KPI）を設定して、その指標をもとにシステムの性能モニタリングできなければなりません。 また、自動化されたワークフローと外部データをリアルタイムで統合してデータを分析し、必要な措置を講じられるツールが必要です。</p>
+<p>このツールは、データ分析と自動化されたワークフローに対応して、IT運用チームが迅速に決定を下し、措置を講じられるようサポートします。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=リアルタイムオブザーバビリティの利点>リアルタイム・オブザーバビリティの利点<a href=#リアルタイムオブザーバビリティの利点 class=hash-link aria-label=リアルタイム・オブザーバビリティの利点への直接リンク title=リアルタイム・オブザーバビリティの利点への直接リンク>​</a></h4><p>リアルタイム・オブザーバビリティを導入すると、次のような利点が得られます。<ul>
+<li>
+<p><strong>迅速な問題解決</strong>：問題発生時にリアルタイムで検知し、原因を速やかに把握して即時に対応できます。</p>
+</li>
+<li>
+<p><strong>サービスの可用性維持</strong>：システムの状態をリアルタイムで把握してサービスの中断を予防するため、ビジネスの連続性を維持できます。</p>
+</li>
+<li>
+<p><strong>運用の効率性増大</strong>：システム運用の自動化を通じて運用の効率性を高め、人的リソースを削減できます。</p>
+</li>
+</ul><p>ビジネス速度の加速化のために速やかに実装して運用しなければならないITにとって、障害の特定と原因分析に費やされる長い時間は大きな妨げになります。 リアルタイム・オブザーバビリティは、この問題を解決するのに重要な役割を果たします。</section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=dx-it運用>DX-IT運用<a href=#dx-it運用 class=hash-link aria-label=DX-IT運用への直接リンク title=DX-IT運用への直接リンク>​</a></h3><p>昨今のIT運用環境は、DXのニーズに応じるために急速に変化しています。</section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=dx-it運用の必要性>DX-IT運用の必要性<a href=#dx-it運用の必要性 class=hash-link aria-label=DX-IT運用の必要性への直接リンク title=DX-IT運用の必要性への直接リンク>​</a></h4><p>DXは、今や選択ではなく必須です。 企業は、デジタル新技術を活用して運用の効率性を高めて革新を加速化し、市場の競争で優位を確保するため努力しています。 DX-IT運用は、このようなDXをサポートする中核的役割を果たします。<ul>
+<li>
+<p><strong>ビジネスとITの融合</strong>：ビジネス速度とITパフォーマンスの一致の重要度が増し、ビジネスニーズに合わせてITシステムを速やかに拡張して最適化することは不可欠です。</p>
+</li>
+<li>
+<p><strong>IT運用におけるアジリティ</strong>：急速に変化するビジネス環境では、ITシステムが俊敏に対応できるよう支援する運用モデルが要求されます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=itil4基盤のit運用モデル>ITIL4基盤のIT運用モデル<a href=#itil4基盤のit運用モデル class=hash-link aria-label=ITIL4基盤のIT運用モデルへの直接リンク title=ITIL4基盤のIT運用モデルへの直接リンク>​</a></h4><p>ビジネスとアプリケーションの変化速度に対応するには、受け身的なマニュアル対応の殻を破り、自動化とセルフサービスへ進化する必要があります。 DX-ITの運用を効果的に実現するためには、<strong>ITIL4</strong>基盤の運用モデルの採用が必要不可欠です。 <strong>ITIL4</strong>は、IT運用の標準フレームワークで、サービス管理の効率性を最大化し、ビジネスとITの連携性を強化します。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-20-ja.png alt=ITIL4 width=1200 height=576><ul>
+<li>
+<p><strong>プロセス中心のアプローチ</strong>：<strong>ITIL4</strong>は、サービス提供のすべての段階を体系的に管理して、問題解決、変更管理、サービス水準管理などを通じて運営の安定性を確保します。</p>
+</li>
+<li>
+<p><strong>自動化と標準化</strong>：<strong>ITIL4</strong>基盤の運用モデルは、繰り返し作業の自動化とプロセスの標準化を通じて運用の効率性を最大化できます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=モニタリング観点におけるdx-it運用の実現>モニタリング観点におけるDX-IT運用の実現<a href=#モニタリング観点におけるdx-it運用の実現 class=hash-link aria-label=モニタリング観点におけるDX-IT運用の実現への直接リンク title=モニタリング観点におけるDX-IT運用の実現への直接リンク>​</a></h4><ul>
+<li>
+<p><strong>既存のIT運用とDX-IT運用の違い</strong></p>
+<p>従来のIT運用スタイルは、障害発生時にシニアエンジニアによるトラブルシューティングが主な対応方法でした。 システムのリソースに対する限界値設定は最大負荷を予想して行われ、オンプレミスとクラウドを異なるワークロードで管理しました。 この運用スタイルは、暗黙的な知識に依存し、OJT（On-the-Job Training）で人材を育成する方法が用いられました。</p>
+<p>反面、DX-IT運用は、自動化されたエラーログ分析と特定が可能になり、速やかに対策を講じられます。 システムの回答時間によってボトルネック現象を自動的に分析でき、オンプレミスとクラウド環境を一貫したワークロードで管理できます。 また、運用から開発まで同じツールを使用して、リアルタイムで情報を共有することでオブザーバビリティを高め、運用レベルの向上とスキルのレベリングを実現できます。</p>
+</li>
+<li>
+<p><strong>統合されたワークロードの管理</strong></p>
+<p>従来のサイロ型（Siloed）モニタリングツールの代わりに、DX-IT運用では、オンプレミスとクラウド環境を統合管理できるシステムが導入されます。 これにより、さまざまな環境とワークロードを一貫してモニタリングでき、運用の効率性向上と費用削減効果を期待できます。</p>
+</li>
+<li>
+<p><strong>リアルタイム情報共有と運用レベルの向上</strong></p>
+<p>DX-IT運用では、開発と運用に同じツールが使用されるため、リアルタイムで情報を共有できます。 これは、障害発生時に迅速な対応を可能にし、チーム同士の協力を強化します。 また、運用のオブザーバビリティを通じて運用レベルを向上させ、全体的なスキルを均一に保てます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=itモニタリングが直面する課題の解決>ITモニタリングが直面する課題の解決<a href=#itモニタリングが直面する課題の解決 class=hash-link aria-label=ITモニタリングが直面する課題の解決への直接リンク title=ITモニタリングが直面する課題の解決への直接リンク>​</a></h4><p>DX-IT運用の実現を成功に導くためには、ITモニタリングの主な課題を解決する必要があります。 この課題は、主にシステムの複雑性増大と運用効率性の低下と関連しており、これを解決するためには、戦略的にアプローチする必要があります。<ul>
+<li>
+<p><strong>統合モニタリングとリアルタイム・オブザーバビリティ</strong>：システム全般を包括する統合モニタリングとリアルタイム・オブザーバビリティを導入して、システムの状態を総合的に把握し、リアルタイムで問題を検知できなければなりません。</p>
+</li>
+<li>
+<p><strong>費用削減と運用の効率化</strong>：重複するモニタリングツールの使用を減らして、自動化されたシステムで運用費用を削減し、効率性を最大化する必要があります。</p>
+</li>
+</ul><hr></section>
+<section class=remark-sectionize-h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id=whatap-monitoring>WhaTap Monitoring<a href=#whatap-monitoring class=hash-link aria-label="WhaTap Monitoringへの直接リンク" title="WhaTap Monitoringへの直接リンク">​</a></h2><p>昨今のIT運用においてDX-IT運用は、急速に変化するビジネス環境に対応するための必須戦略です。 <strong>WhaTap Monitoring</strong>を通じた統合モニタリングとリアルタイム・オブザーバビリティの実装をもとに、DX-IT運用をどう実現できるかをご紹介します。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-21-ja.png alt=WhaTap width=1200 height=653></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=統合モニタリングプラットフォーム>統合モニタリングプラットフォーム<a href=#統合モニタリングプラットフォーム class=hash-link aria-label=統合モニタリングプラットフォームへの直接リンク title=統合モニタリングプラットフォームへの直接リンク>​</a></h3><p><strong>WhaTap Monitoring</strong>は、SaaS型とオンプレミス型のどちらにも対応する統合モニタリングおよびオブザーバビリティプラットフォームで、さまざまな環境で運用されるITシステムを一元化して、統合モニタリングできるよう設計されました。 そのため、ハイブリッドクラウド、マルチクラウド、オンプレミスなどさまざまなインフラ環境を統合管理できます。<ul>
+<li>
+<p><strong>多様な環境の統合管理</strong>：クラウド、オンプレミス、ハイブリッド環境を包括する統合モニタリング機能を提供して、すべてのIT資源をひとつのプラットフォームで管理できます。</p>
+</li>
+<li>
+<p><strong>多様なデータ収集</strong>：メトリクス、ログ、トレース、データをリアルタイムで収集して、これを総合的に分析することで、システム全体の状態を把握します。</p>
+</li>
+<li>
+<p><strong>End-to-Endフルスタック統合モニタリング</strong>：ITサービスを利用するユーザーが初めて体感するフロントエンドのブラウザからバックエンドのデータベースまで、メトリクス、トレース、ログを通じてEnd-to-Endフルスタックで統合モニタリングします。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=環境とリージョンの統合管理>環境とリージョンの統合管理<a href=#環境とリージョンの統合管理 class=hash-link aria-label=環境とリージョンの統合管理への直接リンク title=環境とリージョンの統合管理への直接リンク>​</a></h3><p><strong>WhaTap Monitoring</strong>は、クラウドとオンプレミス環境におけるさまざまなシステムを統合管理します。 特に、システムがある環境やリージョンを統合することで一元化された管理を可能にし、これを通じてグローバルビジネス環境でも効率的な運用を実現します。<ul>
+<li>
+<p><strong>環境とリージョンの統合</strong>：クラウドとオンプレミス環境を包括する統合モニタリングを通じて、さまざまなワークロードを統合的に管理できます。</p>
+</li>
+<li>
+<p><strong>一元化されたデータ収集及び保存</strong>：各環境で収集されたモニタリングデータは、サービスがある環境で直接収集及び保存され、データの一貫性と信頼性を高めます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=リアルタイム問題検知及び対応>リアルタイム問題検知及び対応<a href=#リアルタイム問題検知及び対応 class=hash-link aria-label=リアルタイム問題検知及び対応への直接リンク title=リアルタイム問題検知及び対応への直接リンク>​</a></h3><p><strong>WhaTap Monitoring</strong>は、秒単位でリアルタイムデータ収集を実行してシステムの状態をモニタリングし、問題発生時に即時に認識できる能力を提供します。 一般的なモニタリングシステムは、60秒から300秒間隔で問題を検知しますが、<strong>WhaTap Monitoring</strong>は5秒間隔でシステムを検知して、リアルタイムで問題状況を認識し、即時に原因調査に乗り出します。 また、実行中のトランザクションで発生する問題を即時に検知して、速やかに問題を解決できるようサポートします。<ul>
+<li>
+<p><strong>秒単位のモニタリング</strong>：5秒間閣でシステムをモニタリングして、リアルタイムで問題を検知し、これをもとに迅速な対応を可能にします。</p>
+</li>
+<li>
+<p><strong>障害状況の把握</strong>：実行中のトランザクションで発生する問題を即時に検知して、リアルタイムで原因調査を開始できます。</p>
+</li>
+<li>
+<p><strong>迅速な問題解決</strong>：常時収集されたデータを活用して、問題発生時には即時に調査を開始し、プロファイリングなしでも問題を速やかに解決できます。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=連携追跡>連携追跡<a href=#連携追跡 class=hash-link aria-label=連携追跡への直接リンク title=連携追跡への直接リンク>​</a></h3><p><strong>WhaTap Monitoring</strong>は、ITシステムのさまざまな構成要素間の相互作用をリアルタイムで追跡できる強力な連携追跡機能を提供します。 これにより、アプリケーションとデータベース、ブラウザとアプリケーション間の相互作用を追跡して、問題発生時に原因を速やかに把握することができます。<ul>
+<li>
+<p><strong>Application - Databaseの連携追跡</strong>：アプリケーションとデータベース間の連携されたトランザクションをリアルタイムで追跡して、問題発生時にどの地点で問題が発生したかを速やかに把握することができます。 複雑な分散システムでも速やかに問題を解決できる能力を提供します。</p>
+<p><img decoding=async loading=lazy alt="Application - Database" src=/ja/assets/images/dx-it-image-23-c97ea6b32c894cddec854c0630881b78.png width=1200 height=532 class=img_ev3q></p>
+</li>
+<li>
+<p><strong>Browser - Applicationの連携追跡</strong>：ブラウザで発生した性能問題をアプリケーションと連携して追跡できます。 こうによって、ユーザーが直面している問題を速やかに把握し、問題の原因を正確に診断して、全体的な性能問題をリアルタイムで解決できます。</p>
+<p><img decoding=async loading=lazy alt="Browser - Application" src=/ja/assets/images/dx-it-image-24-917e52bd354f9f11b387efd954914bb3.png width=1200 height=576 class=img_ev3q></p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=統合モニタリングの主な機能>統合モニタリングの主な機能<a href=#統合モニタリングの主な機能 class=hash-link aria-label=統合モニタリングの主な機能への直接リンク title=統合モニタリングの主な機能への直接リンク>​</a></h3><p><strong>WhaTap Monitoring</strong>は、ブラウザ、サーバー、ネットワーク、アプリケーション、データベースなどITシステムのさまざまな要素を一つの画面で統合管理できます。 この機能は、運用者がシステムの状態をひと目で把握して、必要な措置を速やかに講じられるよう支援します。<p><img loading=lazy src=/ja/img/best-p/dx-it-image-22-ja.png alt=Dashboard width=1500 height=671><ul>
+<li>
+<p><strong>統合モニタリングダッシュボード</strong>：すべてのシステムデータを一つの画面で統合管理して、運用の効率性を最大化します。</p>
+</li>
+<li>
+<p><strong>自動化された警告と通知</strong>：問題発生時にリアルタイムで警告を提供して、自動化された通知システムを通じて速やかに問題解決できるようサポートします。</p>
+</li>
+</ul></section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=dx-it運用の実現-1>DX-IT運用の実現<a href=#dx-it運用の実現-1 class=hash-link aria-label=DX-IT運用の実現への直接リンク title=DX-IT運用の実現への直接リンク>​</a></h3><p><strong>WhaTap Monitoring</strong>は、DX-IT運用を実現するための中核ソリューションとして定着しています。 <strong>WhaTap Monitoring</strong>は、統合モニタリングとリアルタイム・オブザーバビリティを通じてITシステムの状態をリアルタイムで把握し、速やかに問題を解決できる機能を提供します。<p>リアルタイムモニタリングと問題解決を通じてシステムの可用性を高め、ビジネスの連続性を維持できます。 自動化されたモニタリングと問題解決機能を通じて運営の効率性を最大化し、費用を削減できます。</section></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class=col><div class=btnwrapper_gsW7><button class=modalopenbtn_jIdz>フィードバック</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label=文書検索><a class="pagination-nav__link pagination-nav__link--prev" href=/ja/learning-guides><div class=pagination-nav__sublabel>前へ</div><div class=pagination-nav__label>WhaTap活用</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/ja/best-practice-guides/about-dashboard><div class=pagination-nav__sublabel>次へ</div><div class=pagination-nav__label>ダッシュボード分析</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_pzBX thin-scrollbar"></div><div class=fbsharebutton_dZBI data-href=https://docs.whatap.io/ja/best-practice-guides/real-time-monitoring-for-it-infra data-layout="" data-size=""><button type=button class=fb_xfbml_parse_ignore_BpHP>共有</button></div><div class=btnprint_EBmh><button>PDF</button></div><div class=btnwrapper_gsW7><button class=modalopenbtn_jIdz>フィードバック</button></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>

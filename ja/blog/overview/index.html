@@ -1,1082 +1,1454 @@
-<!doctype html>
-<html lang="ja-JP" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
-<head>
-<meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.5.2">
-<title data-rh="true">サービス概要 | WhaTap Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" name="twitter:image" content="https://www.whatap.io/img/og/whatap.png"><meta data-rh="true" property="og:url" content="https://docs.whatap.io/ja/blog/overview"><meta data-rh="true" property="og:locale" content="ja_JP"><meta data-rh="true" property="og:locale:alternate" content="ko_KR"><meta data-rh="true" property="og:locale:alternate" content="en_US"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="keywords" content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere"><meta data-rh="true" name="naver-site-verification" content="0c21fc5664a467108fb762ade47a3f81ee9b88ed"><meta data-rh="true" name="google-site-verification" content="rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE"><meta data-rh="true" property="og:title" content="サービス概要 | WhaTap Docs"><meta data-rh="true" name="description" content="New Feature Overview"><meta data-rh="true" property="og:description" content="New Feature Overview"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2024-08-23T16:30:00.000Z"><meta data-rh="true" property="article:tag" content="新機能,サービス概要"><link data-rh="true" rel="icon" href="/ja/img/whatap-favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.whatap.io/ja/blog/overview"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/blog/overview" hreflang="ko-KR"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/en/blog/overview" hreflang="en-US"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/ja/blog/overview" hreflang="ja-JP"><link data-rh="true" rel="alternate" href="https://docs.whatap.io/blog/overview" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://docs.whatap.io/ja/blog/overview","mainEntityOfPage":"https://docs.whatap.io/ja/blog/overview","url":"https://docs.whatap.io/ja/blog/overview","headline":"サービス概要","name":"サービス概要","description":"New Feature Overview","datePublished":"2024-08-23T16:30:00.000Z","author":{"@type":"Person","name":"TW J","description":"Technical Writer","email":"ysjo@whatap.io","image":"./img/teamtwj.svg"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://docs.whatap.io/ja/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/ja/blog/rss.xml" title="WhaTap Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/ja/blog/atom.xml" title="WhaTap Docs Atom Feed">
+<!doctype html><html lang=ja-JP dir=ltr class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.6.3"><title data-rh=true>サービス概要 | WhaTap Docs</title><meta data-rh=true name=viewport content="width=device-width,initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true name=twitter:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true property=og:url content=https://docs.whatap.io/ja/blog/overview><meta data-rh=true property=og:locale content=ja_JP><meta data-rh=true property=og:locale:alternate content=ko_KR><meta data-rh=true property=og:locale:alternate content=en_US><meta data-rh=true name=docusaurus_locale content=ja><meta data-rh=true name=docusaurus_tag content=default><meta data-rh=true name=docsearch:language content=ja><meta data-rh=true name=docsearch:docusaurus_tag content=default><meta data-rh=true name=keywords content="WhaTap,와탭,매뉴얼,사용법,WhaTap 사용법,WhaTap 매뉴얼,기술 문서,APM,애플리케이션 모니터링,로그 모니터링,쿠버네티스 모니터링,서버 모니터링,데이터베이스 모니터링,URL 모니터링,클라우드 모니터링,브라우저 모니터링,Browser monitoring,Application Monitoring,Log Monitoring,Kubernetes Monitoring,Server Monitoring,Database Monitoring,URL Monitoring,Cloud Monitoring,Manual,User Guide,Docs,WhaTap Manual,WhaTap Docs,WhaTap Documents,트랜잭션,Transaction,트레이싱,Tracing,마스터,Master,노드,Node,데드락,Deadlock,락 트리,Lock tree,멀티 트랜잭션,Multi Trancsaction,메트릭스,Metrics,소프트웨어 프록시,Software proxy,스택,Stack,슬로우 쿼리,Slow query,액티브 트랜잭션,Active transaction,컨테이너,Container,히트맵,Hitmap,Garbage Collection,GC,MXQL,Method 추적,Trace method,OOM Killed 컨테이너,OOM Killed Container,Oracle,Tibero,PostgreSQL,MySQL,MongoDB,SQL Server,CUBRID,Altibase,Redis,WebLogic,WebSphere"><meta data-rh=true name=naver-site-verification content=0c21fc5664a467108fb762ade47a3f81ee9b88ed><meta data-rh=true name=google-site-verification content=rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE><meta data-rh=true property=og:title content="サービス概要 | WhaTap Docs"><meta data-rh=true name=description content="New Feature Overview"><meta data-rh=true property=og:description content="New Feature Overview"><meta data-rh=true property=og:type content=article><meta data-rh=true property=article:published_time content=2024-10-31T15:30:00.000Z><meta data-rh=true property=article:tag content=新しい機能,サービス概要><link data-rh=true rel=icon href=/ja/img/whatap-favicon.ico><link data-rh=true rel=canonical href=https://docs.whatap.io/ja/blog/overview><link data-rh=true rel=alternate href=https://docs.whatap.io/blog/overview hreflang=ko-KR><link data-rh=true rel=alternate href=https://docs.whatap.io/en/blog/overview hreflang=en-US><link data-rh=true rel=alternate href=https://docs.whatap.io/ja/blog/overview hreflang=ja-JP><link data-rh=true rel=alternate href=https://docs.whatap.io/blog/overview hreflang=x-default><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@id":"https://docs.whatap.io/ja/blog/overview","@type":"BlogPosting","author":{"@type":"Person","description":"テクニカルライター","email":"ysjo@whatap.io","image":"./img/teamtwj.svg","name":"TW J"},"datePublished":"2024-10-31T15:30:00.000Z","description":"New Feature Overview","headline":"サービス概要","isPartOf":{"@id":"https://docs.whatap.io/ja/blog","@type":"Blog","name":"Blog"},"keywords":[],"mainEntityOfPage":"https://docs.whatap.io/ja/blog/overview","name":"サービス概要","url":"https://docs.whatap.io/ja/blog/overview"}</script><link rel=alternate type=application/rss+xml href=/ja/blog/rss.xml title="WhaTap Docs RSS Feed"><link rel=alternate type=application/atom+xml href=/ja/blog/atom.xml title="WhaTap Docs Atom Feed"><script>!function(e,t,a,c,n,o){e=e[n]=e[n]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignoreOrigins:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(n=t.createElement(a)).async=1,n.src=c,(c=t.getElementsByTagName(a)[0]).parentNode.insertBefore(n,c)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent",0);let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",(s=(d=document).createElement("script")).src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><link rel=preconnect href=https://www.google-analytics.com><link rel=preconnect href=https://www.googletagmanager.com><script async src="https://www.googletagmanager.com/gtag/js?id=G-E46TQ5VSCT"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E46TQ5VSCT",{anonymize_ip:!0})</script><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-WJSZDJR")</script><link rel=stylesheet href=/ja/assets/css/styles.38fb17d1.css><script src=/ja/assets/js/runtime~main.ee014228.js defer></script><script src=/ja/assets/js/main.139efce7.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":(window.matchMedia("(prefers-color-scheme: light)").matches,"light"),document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><script async defer crossorigin src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v17.0&appId=169051789422006&autoLogAppEvents=1" nonce=y4U7YSrt></script>
+<div id=fb-root></div>
 
 
 
 
-
-
-
-
-<script>!function(e,t,a,o,r,s){e=e[r]=e[r]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignoreOrigins:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(r=t.createElement(a)).async=1,r.src=o,(o=t.getElementsByTagName(a)[0]).parentNode.insertBefore(r,o)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent")</script>
-<script>let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",d=document,s=d.createElement("script"),s.src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script>
-
-
-<link rel="preconnect" href="https://www.google-analytics.com">
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E46TQ5VSCT"></script>
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-E46TQ5VSCT",{anonymize_ip:!0})</script>
-<link rel="preconnect" href="https://www.googletagmanager.com">
-<script>window.dataLayer=window.dataLayer||[]</script>
-<script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-WJSZDJR",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><link rel="stylesheet" href="/ja/assets/css/styles.3066c714.css">
-<script src="/ja/assets/js/runtime~main.2cfee2d1.js" defer="defer"></script>
-<script src="/ja/assets/js/main.5807d148.js" defer="defer"></script>
-</head>
-<body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
-
-<script async defer="defer" crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&amp;version=v17.0&amp;appId=169051789422006&amp;autoLogAppEvents=1" nonce="y4U7YSrt"></script>
-<div id="fb-root"></div>
-
-
-
-
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJSZDJR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="__docusaurus"><div role="region" aria-label="本文へスキップ"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">本文へスキップ</a></div><nav aria-label="メイン" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="ナビゲーションバーをトーグルする" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ja/"><div class="navbar__logo"><img src="/ja/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height="43px" width="154px"><img src="/ja/img/whatap-docs-logo.svg" alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="43px" width="154px"></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href="/ja/whatap-overview">はじめに</a><a class="navbar__item navbar__link" href="/ja/learning-guides">WhaTap活用</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">製品</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/ja/java/introduction">Java</a></li><li><a class="dropdown__link" href="/ja/php/introduction">PHP</a></li><li><a class="dropdown__link" href="/ja/nodejs/introduction">Node.js</a></li><li><a class="dropdown__link" href="/ja/python/introduction">Python</a></li><li><a class="dropdown__link" href="/ja/dotnet/introduction">.NET</a></li><li><a class="dropdown__link" href="/ja/golang/introduction">Go</a></li><li><a class="dropdown__link" href="/ja/server/introduction">Server</a></li><li><a class="dropdown__link" href="/ja/kubernetes/introduction">Kubernetes</a></li><li><a class="dropdown__link" href="/ja/postgresql/monitoring-intro">PostgreSQL</a></li><li><a class="dropdown__link" href="/ja/oracle/monitoring-intro">Oracle</a></li><li><a class="dropdown__link" href="/ja/oracle-pro/monitoring-intro">Oracle Pro</a></li><li><a class="dropdown__link" href="/ja/mysql/monitoring-intro">MySQL</a></li><li><a class="dropdown__link" href="/ja/mssql/monitoring-intro">SQL Server</a></li><li><a class="dropdown__link" href="/ja/tibero/monitoring-intro">Tibero</a></li><li><a class="dropdown__link" href="/ja/cubrid/monitoring-intro">CUBRID</a></li><li><a class="dropdown__link" href="/ja/altibase/monitoring-intro">Altibase</a></li><li><a class="dropdown__link" href="/ja/redis/monitoring-intro">Redis</a></li><li><a class="dropdown__link" href="/ja/mongodb/monitoring-intro">MongoDB</a></li><li><a class="dropdown__link" href="/ja/url/url-intro">URL</a></li><li><a class="dropdown__link" href="/ja/browser">Browser</a></li><li><a class="dropdown__link narrow" href="/ja/amazon-cloudwatch/install-agent">Amazon CloudWatch</a></li><li><a class="dropdown__link" href="/ja/amazon-ecs/introduction">Amazon ECS</a></li><li><a class="dropdown__link" href="/ja/aws-log/introduction">AWS Log</a></li><li><a class="dropdown__link" href="/ja/azure/install-agent">Azure Monitor</a></li><li><a class="dropdown__link narrow" href="/ja/ncloud/install-agent">Naver Cloud Monitoring</a></li><li><a class="dropdown__link narrow" href="/ja/oracle-cloud/install-agent">Oracle Cloud Monitor</a></li><li><a class="dropdown__link narrow" href="/ja/npm/introduction">Network Performance Monitoring</a></li><li><a class="dropdown__link narrow" href="/ja/features/introduction">Feature Project</a></li><li><a class="dropdown__link" href="/ja/log/introduction">Log</a></li><li><a class="dropdown__link" href="/ja/extensions">Extensions</a></li></ul></div><a class="navbar__item navbar__link hidden" href="/ja/java/introduction">Javaモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/php/introduction">PHPモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/nodejs/introduction">Node.jsモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/python/introduction">Pythonモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/dotnet/introduction">.NETモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/golang/introduction">Goモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/server/introduction">Serverモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/kubernetes/introduction">Kubernetesモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/postgresql/monitoring-intro">PostgreSQLモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/oracle-v1/monitoring-intro">Oracle V1モニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/oracle/monitoring-intro">Oracle V2モニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/oracle-pro/monitoring-intro">Oracle Proモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/mysql/monitoring-intro">MySQLモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/mssql/monitoring-intro">SQL Serverモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/tibero/monitoring-intro">Tiberoモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/cubrid/monitoring-intro">CUBRIDモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/altibase/monitoring-intro">Altibaseモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/redis/monitoring-intro">Redisモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/mongodb/monitoring-intro">MongoDBモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/url/url-intro">URLモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/amazon-cloudwatch/install-agent">Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href="/ja/amazon-ecs/introduction">Amazon ECS</a><a class="navbar__item navbar__link hidden" href="/ja/aws-log/introduction">AWS Log</a><a class="navbar__item navbar__link hidden" href="/ja/azure/install-agent">Azure Monitor</a><a class="navbar__item navbar__link hidden" href="/ja/ncloud/install-agent">Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href="/ja/oracle-cloud/install-agent">Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href="/ja/log/introduction">Logモニタリング</a><a class="navbar__item navbar__link hidden" href="/ja/browser">Browser</a><a class="navbar__item navbar__link hidden" href="/ja/npm/introduction">NPM</a><a class="navbar__item navbar__link hidden" href="/ja/extensions">拡張ツール</a><a class="navbar__item navbar__link hidden" href="/ja/opentelemetry/introduction">OpenTelemetry</a><a class="navbar__item navbar__link" href="/ja/manage">管理機能</a><a class="navbar__item navbar__link" href="/ja/openapi-spec">Open API</a><a class="navbar__item navbar__link" href="/ja/license/licenses">ライセンス</a><a class="navbar__item navbar__link" href="/ja/release-notes">リリースノート</a><a class="navbar__item navbar__link" href="/ja/faq/">FAQ</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ja/blog">新しい機能</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_DSK9"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><span class="langLabel_L4uU">JPN</span></a><ul class="dropdown__menu"><li><a href="/blog/overview" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ko-KR">KOR</a></li><li><a href="/en/blog/overview" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en-US">ENG</a></li><li><a href="/ja/blog/overview" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="ja-JP">JPN</a></li></ul></div><div class="navbarSearchContainer_dCNk"><div id="docsearch"></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="ダークモードとライトモードの切り替え(現在 ライトモード)" aria-label="ダークモードとライトモードの切り替え(現在 ライトモード)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" class="lightToggleIcon_pyhR"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_brwN thin-scrollbar" aria-label="最近のブログ記事を見る"><ul class="sidebarItemList_QwSx clean-list"><li><div><a aria-current="page" class="active" href="/ja/blog/">新しい機能</a></div><ul><li><a class="sidebarItemLink_yNGZ" href="/ja/blog/index">새로운 기능이란?</a></li><li><a aria-current="page" class="sidebarItemLink_yNGZ sidebarItemLinkActive_oSRm" href="/ja/blog/overview">サービス概要</a></li></ul></li><li><div><a href="/ja/blog/tags/2024">2024</a></div><ul><li><a class="sidebarItemLink_yNGZ" href="/ja/blog/2024-2q-summary">2분기 안내</a></li><li><a class="sidebarItemLink_yNGZ" href="/ja/blog/2024-1q-summary">1분기 안내</a></li></ul></li><li><div><a href="/ja/blog/tags/2023">2023</a></div><ul><li><a class="sidebarItemLink_yNGZ" href="/ja/blog/2023-4q-summary">4분기 안내</a></li><li><a class="sidebarItemLink_yNGZ" href="/ja/blog/2023-3q-summary">3분기 안내</a></li></ul></li></ul></nav></aside><main class="col col--7"><article><header><h1 class="title_f1Hy">サービス概要</h1><div class="container_mt6G margin-vert--md"><time datetime="2024-08-23T16:30:00.000Z">2024年8月23日</time></div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="mailto:ysjo@whatap.io" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_XqGP" src="/ja/assets/images/teamtwj-8ca548071cd575b2056335d511c4c2fc.svg" alt="TW J"></a><div class="avatar__intro authorDetails_lV9A"><div class="avatar__name"><a href="mailto:ysjo@whatap.io" target="_blank" rel="noopener noreferrer"><span class="authorName_yefp">TW J</span></a></div><small class="authorTitle_nd0D" title="Technical Writer">Technical Writer</small><div class="authorSocials_rSDt"></div></div></div></div></div></header><div id="__blog-post-container" class="markdown"><p><img decoding="async" loading="lazy" alt="New Feature Overview" src="/ja/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
-<p>ワタップが提供するサービスの新機能概要をご一読ください。</p>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJSZDJR" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label=本文へスキップ><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>本文へスキップ</a></div><nav aria-label=メイン class="navbar navbar--fixed-top"><div class=navbar__inner><div class=navbar__items><button aria-label=ナビゲーションバーをトーグルする aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/ja/><div class=navbar__logo><img src=/ja/img/whatap-docs-logo.svg alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--light_NVdE" height=43px width=154px><img src=/ja/img/whatap-docs-logo.svg alt="WhaTap Docs" class="themedComponent_mlkZ themedComponent--dark_xIcU" height=43px width=154px></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href=/ja/whatap-overview>はじめに</a><a class="navbar__item navbar__link" href=/ja/learning-guides>WhaTap活用</a><div class="navbar__item dropdown dropdown--hoverable"><a href=# aria-haspopup=true aria-expanded=false role=button class=navbar__link>製品</a><ul class=dropdown__menu><li><a class=dropdown__link href=/ja/java/introduction>Java</a><li><a class=dropdown__link href=/ja/php/introduction>PHP</a><li><a class=dropdown__link href=/ja/nodejs/introduction>Node.js</a><li><a class=dropdown__link href=/ja/python/introduction>Python</a><li><a class=dropdown__link href=/ja/dotnet/introduction>.NET</a><li><a class=dropdown__link href=/ja/golang/introduction>Go</a><li><a class=dropdown__link href=/ja/server/introduction>Server</a><li><a class=dropdown__link href=/ja/kubernetes/introduction>Kubernetes</a><li><a class=dropdown__link href=/ja/postgresql/monitoring-intro>PostgreSQL</a><li><a class=dropdown__link href=/ja/oracle/monitoring-intro>Oracle</a><li><a class=dropdown__link href=/ja/oracle-pro/monitoring-intro>Oracle Pro</a><li><a class=dropdown__link href=/ja/mysql/monitoring-intro>MySQL</a><li><a class=dropdown__link href=/ja/mssql/monitoring-intro>SQL Server</a><li><a class=dropdown__link href=/ja/tibero/monitoring-intro>Tibero</a><li><a class=dropdown__link href=/ja/cubrid/monitoring-intro>CUBRID</a><li><a class=dropdown__link href=/ja/altibase/monitoring-intro>Altibase</a><li><a class=dropdown__link href=/ja/redis/monitoring-intro>Redis</a><li><a class=dropdown__link href=/ja/mongodb/monitoring-intro>MongoDB</a><li><a class=dropdown__link href=/ja/url/url-intro>URL</a><li><a class=dropdown__link href=/ja/browser>Browser</a><li><a class="dropdown__link narrow" href=/ja/amazon-cloudwatch/install-agent>Amazon CloudWatch</a><li><a class=dropdown__link href=/ja/amazon-ecs/introduction>Amazon ECS</a><li><a class=dropdown__link href=/ja/aws-log/introduction>AWS Log</a><li><a class=dropdown__link href=/ja/azure/install-agent>Azure Monitor</a><li><a class="dropdown__link narrow" href=/ja/ncloud/install-agent>Naver Cloud Monitoring</a><li><a class="dropdown__link narrow" href=/ja/oracle-cloud/install-agent>Oracle Cloud Monitor</a><li><a class="dropdown__link narrow" href=/ja/npm/introduction>Network Performance Monitoring</a><li><a class="dropdown__link narrow" href=/ja/features/introduction>Feature Project</a><li><a class=dropdown__link href=/ja/log/introduction>Log</a><li><a class=dropdown__link href=/ja/extensions>Extensions</a></ul></div><a class="navbar__item navbar__link hidden" href=/ja/java/introduction>Javaモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/php/introduction>PHPモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/nodejs/introduction>Node.jsモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/python/introduction>Pythonモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/dotnet/introduction>.NETモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/golang/introduction>Goモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/server/introduction>Serverモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/kubernetes/introduction>Kubernetesモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/postgresql/monitoring-intro>PostgreSQLモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/oracle-v1/monitoring-intro>Oracle V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/oracle/monitoring-intro>Oracle V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/oracle-pro/monitoring-intro>Oracle Proモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mysql/monitoring-intro>MySQLモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mssql/monitoring-intro>SQL Server V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mssql-v1/monitoring-intro>SQL Server V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/tibero/monitoring-intro>Tiberoモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/cubrid/monitoring-intro>CUBRID V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/cubrid-v1/monitoring-intro>CUBRID V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/altibase/monitoring-intro>Altibase V2モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/altibase-v1/monitoring-intro>Altibase V1モニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/redis/monitoring-intro>Redisモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/mongodb/monitoring-intro>MongoDBモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/url/url-intro>URLモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/amazon-cloudwatch/install-agent>Amazon CloudWatch</a><a class="navbar__item navbar__link hidden" href=/ja/amazon-ecs/introduction>Amazon ECS</a><a class="navbar__item navbar__link hidden" href=/ja/aws-log/introduction>AWS Log</a><a class="navbar__item navbar__link hidden" href=/ja/azure/install-agent>Azure Monitor</a><a class="navbar__item navbar__link hidden" href=/ja/ncloud/install-agent>Naver Cloud Monitoring</a><a class="navbar__item navbar__link hidden" href=/ja/oracle-cloud/install-agent>Oracle Cloud Monitor</a><a class="navbar__item navbar__link hidden" href=/ja/log/introduction>Logモニタリング</a><a class="navbar__item navbar__link hidden" href=/ja/browser>Browser</a><a class="navbar__item navbar__link hidden" href=/ja/npm/introduction>NPM</a><a class="navbar__item navbar__link hidden" href=/ja/extensions>拡張ツール</a><a class="navbar__item navbar__link hidden" href=/ja/opentelemetry/introduction>OpenTelemetry</a><a class="navbar__item navbar__link" href=/ja/manage>管理機能</a><a class="navbar__item navbar__link" href=/ja/openapi-spec>Open API</a><a class="navbar__item navbar__link" href=/ja/license/licenses>ライセンス</a><a class="navbar__item navbar__link" href=/ja/release-notes>リリースノート</a><a class="navbar__item navbar__link" href=/ja/faq/>FAQ</a><a aria-current=page class="navbar__item navbar__link iflang-link navbar__link--active" href=/ja/blog/overview>新しい機能</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href=# aria-haspopup=true aria-expanded=false role=button class="navbar__link oneColumn localeDropdown"><svg viewBox="0 0 24 24" width=20 height=20 aria-hidden=true class=iconLanguage_DSK9><path fill=currentColor d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><span class=langLabel_L4uU>JPN</span></a><ul class=dropdown__menu><li><a href=/blog/overview rel="noopener noreferrer" class=dropdown__link lang=ko-KR>KOR</a><li><a href=/en/blog/overview rel="noopener noreferrer" class=dropdown__link lang=en-US>ENG</a><li><a href=/ja/blog/overview rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang=ja-JP>JPN</a></ul></div><div class=navbarSearchContainer_dCNk><div id=docsearch></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="ダークモードとライトモードの切り替え(現在 ライトモード)" aria-label="ダークモードとライトモードの切り替え(現在 ライトモード)" aria-live=polite aria-pressed=false><svg viewBox="0 0 24 24" width=24 height=24 fill=none class=lightToggleIcon_pyhR><path fill=currentColor fill-rule=evenodd clip-rule=evenodd d="M10.9901 0H13.0099V4.06189C15.2205 4.33486 17.1538 5.49222 18.4373 7.16513L21.9901 5.13397L23 6.86603L19.4486 8.89635C19.8546 9.8507 20.0791 10.8994 20.0791 12C20.0791 13.1006 19.8546 14.1493 19.4486 15.1036L23 17.134L21.9901 18.866L18.4373 16.8349C17.1538 18.5078 15.2205 19.6651 13.0099 19.9381V24H10.9901V19.9381C8.77946 19.6651 6.84617 18.5078 5.56273 16.8349L2.00989 18.866L1 17.134L4.5514 15.1036C4.14535 14.1493 3.9209 13.1006 3.9209 12C3.9209 10.8994 4.14535 9.8507 4.5514 8.89635L1 6.86603L2.00989 5.13397L5.56273 7.16513C6.84617 5.49222 8.77946 4.33486 10.9901 4.06189V0ZM5.94068 12C5.94068 8.68629 8.65353 6 12 6C15.3465 6 18.0593 8.68629 18.0593 12C18.0593 15.3137 15.3465 18 12 18C8.65353 18 5.94068 15.3137 5.94068 12Z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 class=darkToggleIcon_wfgR><path fill=currentColor d="M5.05011 4.409C6.46482 2.9943 8.14585 2.02264 9.90788 1.5C8.84446 5.08024 9.63565 8.99454 12.3303 11.6892C15.025 14.3839 18.9393 15.1751 22.5191 14.1129C21.9969 15.8737 21.0253 17.5548 19.6106 18.9695C15.322 23.2581 8.58587 23.4752 4.56511 19.4545C0.544352 15.4337 0.761495 8.69762 5.05011 4.409ZM7.26586 5.19608C6.97785 5.42391 6.70099 5.67022 6.43684 5.93437C2.99054 9.38066 2.80435 14.782 6.02096 17.9986C9.23756 21.2152 14.6389 21.029 18.0852 17.5827C18.4373 17.2307 18.7577 16.856 19.0448 16.4625C15.9881 16.4646 13.0552 15.3261 10.8743 13.1452C8.77411 11.045 7.6407 8.24751 7.56194 5.31354L7.55754 4.97444L7.26586 5.19608ZM17.3387 2.30478H19.3979V4.36394H21.4571V6.4231H19.3979V8.48226H17.3387V6.4231H15.2795V4.36394H17.3387V2.30478Z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class=row><aside class="col col--3"><nav class="sidebar_brwN thin-scrollbar" aria-label=最近のブログ記事を見る><ul class="sidebarItemList_QwSx clean-list"><li class=iflink_TnhG><div><a aria-current=page class=active href=/ja/blog/>新しい機能</a></div><ul><li class=iflang_yyvc><a class=sidebarItemLink_yNGZ href=/ja/blog/index>新機能とは？</a><li class=news_mTGW><a aria-current=page class="sidebarItemLink_yNGZ sidebarItemLinkActive_oSRm" href=/ja/blog/overview>サービス概要</a></ul><li class=iflang_yyvc><div><a href=/ja/blog/tags/2024>2024</a></div><ul><li class=iflang_yyvc><a class=sidebarItemLink_yNGZ href=/ja/blog/2024-3q-summary>第3四半期のご案内</a><li class=iflang_yyvc><a class=sidebarItemLink_yNGZ href=/ja/blog/2024-2q-summary>第2四半期のご案内</a><li class=iflang_yyvc><a class=sidebarItemLink_yNGZ href=/ja/blog/2024-1q-summary>第1四半期のご案内</a></ul><li class=iflang_yyvc><div><a href=/ja/blog/tags/2023>2023</a></div><ul><li class=iflang_yyvc><a class=sidebarItemLink_yNGZ href=/ja/blog/2023-4q-summary>第4四半期のご案内</a><li class=iflang_yyvc><a class=sidebarItemLink_yNGZ href=/ja/blog/2023-3q-summary>第3四半期のご案内</a></ul></ul></nav></aside><main class="col col--7"><article><header><h1 class=title_f1Hy>サービス概要</h1><div class="container_mt6G margin-vert--md"><time datetime=2024-10-31T15:30:00.000Z>2024年10月31日</time></div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href=mailto:ysjo@whatap.io target=_blank rel="noopener noreferrer" class=avatar__photo-link><img class="avatar__photo authorImage_XqGP" src=/ja/assets/images/teamtwj-8ca548071cd575b2056335d511c4c2fc.svg alt="TW J"></a><div class="avatar__intro authorDetails_lV9A"><div class=avatar__name><a href=mailto:ysjo@whatap.io target=_blank rel="noopener noreferrer"><span class=authorName_yefp>TW J</span></a></div><small class=authorTitle_nd0D title=テクニカルライター>テクニカルライター</small><div class=authorSocials_rSDt></div></div></div></div></div></header><div id=__blog-post-container class=markdown><p><img decoding=async loading=lazy alt="New Feature Overview" src=/ja/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png width=934 height=161 class=img_ev3q></p>
+<p>WhaTapが提供するサービスの新機能概要を一目でご覧ください。</p>
 <!-- -->
 <!-- -->
 <br>
 <br>
-<div class="history_overview" id="overview_test"><li><div><ul>
+<div class=history_overview id=overview_test><li><div><ul>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年07月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.3​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年10月31日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.1​</a></code>
+<ul>
+<li><code class=Feature type=0>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>Ingress リスト</span>メニューでクバネティスエージェントバージョンが1.7.13未満の時、エージェント更新の案内画面を表示</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">MySQL</code>
+<code class=changelog-overview2>Kubernetes</code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューで権限に関する案内文句を追加</li>
+<li><code class=New type=1>New</code> Ingressリソースに関するメタデータと関連情報をモニタリングできる<span class=uitext>Ingress リスト</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">Database</code>
+<code class=changelog-overview2>Database</code>
 <ul>
-<li><code class="New" type="1">New</code> <strong>Oracle V2</strong>サービスを開始！</li>
-<li><code class="New" type="1">New</code> <strong>Oracle Pro</strong>サービスを開始！</li>
+<li><code class=New type=1>New</code>クラウドデータベースサーバーのリソース状況を収集し、モニタリングできる <span class=uitext>クラウド設定</span>メニューを追加</li>
+<li><code class=New type=1>New</code><strong>MySQL</strong>、<strong>PostgreSQL</strong>プラットホームの<code class=my>V2</code>プロジェクトで<strong>Java</strong>プラットフォームプロジェクトとリアルタイムでセッションを連携・分析する機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">Kubernetes</code>
+<code class=changelog-overview2>Browser</code>
 <ul>
-<li><code class="New" type="1">New</code> Kubernetesクラスター内で実行中のすべてのサービスの状態と情報を総合的に提供する<span class="uitext">Service リスト</span>メニューを追加</li>
-<li><code class="New" type="1">New</code>ノードの観点でディスクモニタリングのための<span class="uitext">ノードディスクリスト</span> メニューを追加</li>
+<li><code class=New type=1>New</code>ペイジのURLパス別のロード性能情報に関する統計を提供する<span class=uitext>ページロード統計</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code>サイドメニューで<span class="uitext">全プロジェクト</span>を選択してプロジェクト一覧を開くと、プロジェクトの検索入力欄に自動フォーカスされる機能を追加</li>
-<li><code class="Feature" type="1">Feature</code> サイドメニューの統合検索でエージェントをIPアドレスで検索できる機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント履歴</span>メニューでイベント処理履歴の機能を追加、これに伴うUIを変更</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code>次のメニューパスで照会内容をCSVファイルにダウンロードする機能を追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェント設定</span>メニューパスで選択したエージェントのエージェント設定(<em>whatap.conf</em>)ファイルダウンロード機能を追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">インスタンス性能管理</span> &gt; <span class="uitext">スレッドリスト/ダンプ</span>メニューのテーブルで、CPU時間の増加量を表示するカラムを追加</li>
+<li><code class=Feature type=1>Feature</code><strong>Java</strong>プラットフォームプロジェクトで<strong>MySQL</strong>、<strong>PostgreSQL</strong>プロジェクトとリアルタイムおよび過去のトランザクションの連携・分析機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの要約で<span class="uitext">対象情報</span>タブに<span class="uitext">コンテナ要約分析</span>機能を追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの要約で<span class="uitext">対象情報</span>及び<span class="uitext">リソース関係</span>タブに<strong>Service</strong>情報を追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューの<span class="uitext">ログ</span> &gt; <span class="uitext">ログ検索</span>タブ(要約または詳細を見る)で<span class="uitext">ログTail</span>メニューに移動できるリンクを追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">コンテナー</span> &gt; <span class="uitext">コンテナリスト</span>メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">コンテナアプリケーションリスト</span>メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">コンテナアプリケーションリスト</span>メニューの<span class="uitext">リソース</span>グループに<span class="uitext">Image</span>カラムを追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">Kubernetesイベント</span>メニューのイベントリストテーブルに<span class="uitext">イベントの初回発生時刻</span>と<span class="uitext">イベント発生件数</span>カラムを追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">ノード詳細</span>メニューにPod一覧を追加</li>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">トレース分析</span>画面の<span class="uitext">レコード要約</span>タブで<strong>Container Id</strong>、<strong>Pod Name</strong>情報を提供し、その情報をクリックすると、それぞれコンテナリスト、パドリストページに移動する機能を追加</li>
-<li><code class="Feature" type="1">Feature</code>Kubernetesエージェントが非活性化されると、ユーザーがすぐに認知できるように画面上部にエージェント状態表示を追加</li>
+<li><code class=Feature type=1>Feature</code>次のメニューでノード要約の分析機能を追加 (<span class=uitext>コンテナマップ</span>, <span class=uitext>ノードマップ</span>)</li>
+<li><code class=Feature type=1>Feature</code>次のメニューパスにプロセス情報を追加 (<span class=uitext>ノードリスト</span>, <span class=uitext>ノードマップ</span>)</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>ノードリスト</span>メニューに新規カラムを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>クラスターサマリー</span>メニューの<span class=uitext>Objecct数</span>ウィジェットで<span class=uitext>Object Manifest</span>メニューに移動できるリンクを追加</li>
+<li><code class=Feature type=1>Feature</code>次のメニュー経路でPodのQoS Class関連の案内部分にQoS Class案内ポップオーバーを追加 (<span class=uitext>Pending Pod状況</span>, <span class=uitext>Pod起動分析</span>)</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>クラスターサマリー</span>メニューにノードの状態別個数と個数推移を表示するウィジェットを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature" type="1">Feature</code>特定の日付を基準に設定された時間帯のSQLの推移を比較し、騰落を確認できる<span class="uitext">分析</span> &gt; <span class="uitext">Top SQL比較</span>メニューを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>実験室</span> > <span class=uitext>スクリプト·マネージャー</span>メニューでスクリプトリストへのデフォルトのソートを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント設定</span> <code class=oldfunc>Old</code>メニューでメトリックスイベントのテンプレートを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年07月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_7_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL / MySQL</code>
+<code class=changelog-overview2>Oracle V2、Oracle Pro</code>
 <ul>
-<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューにDBが起動してからどれくらい時間が経ったのかを確認できる<em><strong>Uptime</strong></em>ウィジェットを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>テーブルスペース容量増減</span>メニューで<span class=uitext>テーブルスペースサイズ詳細</span>テーブルにTOTAL行を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">Flexボード / 統合Flexボード</code>
+<code class=changelog-overview2>Altibase</code>
 <ul>
-<li><code class="Feature">Feature</code>ウィジェットに<span class="uitext">選択したプロジェクト</span>表示機能の追加: ウィジェットにデータを呼び出すプロジェクトの一覧を確認可能</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>テーブルスペース容量増減</span>メニューにセグメントサイズを確認できるテーブルを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
 <br>
-<code class="changelog-overview2">利用状況</code>
+<code class=changelog-overview2>CUBRID</code>
 <ul>
-<li><code class="Feature">Feature</code>決済手段登録/修正メニューのUI/UXの改編(プロフィールアイコン&gt; <span class="uitext">利用状況</span> &gt; <span class="uitext">決済情報</span>)</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>テーブルスペース容量増減</span>メニューで<span class=uitext>テーブルスペースサイズ詳細</span>テーブルにTOTAL行を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>URL</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>URL追加</span>画面で<span class=uitext>チェック位置</span>セクションにIP案内を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Log</code>
+<code class=changelog-date>2024年10月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_10_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.10.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ログTail</span>メニューでログのタグをクリックすると、検索フィルターにタグを追加できるドロップダウン機能をサポート</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ログ検索</span>および<span class=uitext>ログTail</span>メニューで希望する検索条件をお気に入りに登録できる機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年10月23日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.7​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>サーバーリスト</span> > <span class=uitext>サーバー情報</span>メニューでリスト内の選択項目の<span class=uitext>削除</span>機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Features</code>
+<code class=changelog-date>2024年10月22日</code>
+<code class=changelog-service><a href=../features/introduction><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class=Beta>Beta</code> Featureプロジェク(<code class=Features>Features</code>)<code class=changelog-overview2>NGINX</code><b>ベータ</b>サービス開始</li>
+<li><code class=Beta>Beta</code> Featureプロジェク(<code class=Features>Features</code>)<code class=changelog-overview2>APACHE</code><b>ベータ</b>サービス開始</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年10月08日</code>
+<code class=changelog-service><a href=../postgresql/monitoring-support><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class=Spec>Spec</code> <code class=changelog-overview2>PostgreSQL</code> Tmax OpenSQL バージョン 9.2以上をサポート</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Features</code>
+<code class=changelog-date>2024年10月07日</code>
+<code class=changelog-service><a href=../features/vcenter-introduction><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class=Beta>Beta</code> Featureプロジェク(<code class=Features>Features</code>)<code class=changelog-overview2>vCenter</code><b>ベータ</b>サービス開始</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年09月27日</code>
+<code class=changelog-service><a href=../nodejs/install-agent-svelte><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class=Docs>Docs</code> <code class=changelog-overview2>Node.js</code> Svelte環境のインストールガイド</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年09月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.2​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code>次のメニュー経路に進入する時、新機能に対する案内ポップアップを追加(<span class=uitext>ノードマップ</span>, <span class=uitext>ノードタイムライン</span>)</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
 <br>
-<code class="changelog-overview2">ダッシューボード</code>
+<code class=changelog-overview2>Server</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アプリケーション</span>メニューで基本プリセット変更の機能追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">アプリケーション</span> メニューでエージェントの検索機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">TXマップ</span>メニューで<span class="uitext">TOP 30</span>フィルター内の項目を直接検索して追加する<span class="uitext">カスタム</span>機能を追加</li>
+<li><code class=New type=1>New</code>インフラサーバー運営に必要な情報をエージェントが自動収集および保存、ユーザー定義フィールドを通じて追加した情報を照会し管理できる<span class=uitext>サーバー情報</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
 <br>
-<code class="changelog-overview2">統計</code>
+<code class=changelog-overview2>Kubernetes</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">統計</span>下位メニューの機能改善</li>
+<li><code class=New type=1>New</code>ノード(Node)についての詳細情報が確認できる<span class=uitext>ノードマップ</span>メニューを追加</li>
+<li><code class=New type=1>New</code>時間の流れによるノードの現状を確認できる<span class=uitext>ノードタイムライン</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Server</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューに<strong>Oracle Solaris OS</strong>インストール案内のページを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
 <br>
-<code class="changelog-overview2">コンテナマップ</code>
+<code class=changelog-overview2>Database</code>
 <ul>
-<li><code class="Feature">Feature</code>概要を表示の<span class="uitext">対象情報</span>タブに<span class="uitext">Containter State</span>表示と説明を追加</li>
+<li><code class=New type=1>New</code> <strong>CUBRID</strong> <code class=my>V2</code>サービスを開始</li>
+<li><code class=New type=1>New</code>SQLスクリプトを実行して結果を確認できる<span class=uitext>スクリプト·マネージャー</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>統合Flexボード</span>または<span class=uitext>Flexボード</span>メニューの<span class=uitext>ビューモード</span>でグループウィジェットレイアウトの閉じる機能を追加</li>
+<li><code class=Feature type=1>Feature</code>ログ関連メニューでテーブルカラムの幅を調整できる機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>アカウント管理</span> > <span class=uitext>アカウント情報</span>メニューでユーザーの登録された電話番号の削除機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>リアルタイムアラート</span>メニューで<span class=uitext>解除されたイベントを見る</span>機能のOn/Off設定を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>インスタンス性能管理</span> > <span class=uitext>スレッドリスト/ダンプ</span>メニューで選択したエージェントがインストールされているアプリケーションのスレッド状況(RUNNABLE、WAITING、合計)を表示する機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <b>HP-UX</b>OSシステム環境をサポートするエージェントのインストールを提供</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>ノードリスト</span>メニューの比較および詳細表示の機能を改善</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>クラスター</span>> <span class=uitext>ノードディスクリスト</span>メニューで<span class=uitext>比較</span>カラムを追加、<span class=uitext>比較</span>カラム項目を選択したディスクの使用量推移が確認できる詳細画面を提供</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>管理</span> > <span class=uitext>Kubernetesエージェントリスト</span>メニューの<span class=uitext>詳細</span>でメトリクスデータを確認できる<span class=uitext>メトリックス</span>タブを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントインストール</span>メニューでエージェントバージョンを選択できるオプションを追加(<span class=uitext>Stable（推奨） </span>/<span class=uitext>Preview</span>)</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
 <br>
-<code class="changelog-overview2">クラスター</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ノードリスト</span>メニューで<span class="uitext">ノード情報</span>下位カラムに<span class="uitext">capacityType</span>を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニューでユーザー定義ウィジェットに次の機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>Log</code>
+<code class=changelog-date>2024年09月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_9_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.9.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ログ</span> > <span class=uitext>ログTail</span>および<span class=uitext>ログ検索</span>メニューでフィルターの入力画面にカーソルが位置している時、ECSキーを押すとポップオーバーが閉じられるように改善</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">ワークロード</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code>Pending状態のPodを素早く把握できる<span class="uitext">Pending Pod状況</span>メニューを追加(<span class="uitext">実験室</span> &gt; <span class="uitext">Pending Pods</span>メニューから<span class="uitext">ワークロード</span>下位メニューに移動)</li>
+<li><code class=New type=1>New</code> <span class=uitext>分析</span> > <span class=uitext>メトリクスチャート</span> <code class=newfunc>New</code>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>Application</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">パラメータ</span>メニューで<span class="uitext">基準日</span>と<span class="uitext">比較日</span>をすべて今日の日付に設定すると、リアルタイムデータと保存された最後のデータを照会して比較する機能を追加</li>
+<li><code class=New type=1>New</code> <strong>Node.js</strong>の商品にログモニタリング機能を追加</li>
+<li><code class=New type=1>New</code>特定のIP別に呼び出したURLと呼出件数を照会できる<span class=uitext>IP Transaction</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024年06月26日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_6_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ページロードヒットマップ</span>, <span class="uitext">Ajaxヒットマップ</span>, <span class="uitext">ユーザーセッションログ検索</span>メニューにユーザーがウェブサイトで行うすべてのイベントを記録し、再生できる<span class="uitext">セッションリプレイ</span>機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年06月03日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.8​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">トレース分析</span>画面のURLをコピーするボタンを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年05月30日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.7​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">性能推移</span>メニューで連続検索を防止する機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年05月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">Flexボード / 統合Flexボード</code>
+<code class=changelog-overview2>Database</code>
 <ul>
-<li><code class="Feature">Feature</code>ダッシュボードのエクスポート機能を利用する際、プロジェクト情報を除いてエクスポートする機能を追加</li>
-<li><code class="Feature">Feature</code>カウント形態のウィジェットにフィールド選択機能を追加</li>
-<li><code class="Feature">Feature</code>補助チャートの設定でグループ内のオプションを共有できる<span class="uitext">グループ内のウィジェット全体に適用</span>機能を追加</li>
-<li><code class="Feature">Feature</code>グループウィジェットに<span class="uitext">プロジェクト選択</span>機能を追加、グループ下位ウィジェットに<span class="uitext">グループウィジェットに選択されたプロジェクト</span>選択オプションを追加</li>
-<li><code class="Feature">Feature</code>ウィジェットに関する説明の添付機能を追加</li>
+<li><code class=New type=1>New</code> Altibase <code class=my>V2</code>サービスを開始！</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年05月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">アラート通知</code>
+<code class=changelog-overview2>統合Flexボード / Flexボード</code>
 <ul>
-<li><code class="Feature">Feature</code>ログモニタリングに対応するプラットフォームの<span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューでログイベント設定機能を追加</li>
+<li><code class=Feature type=1>Feature</code>メトリクスタイプのフィルタ内の条件間<code>OR</code>オプションを追加</li>
+<li><code class=Feature type=1>Feature</code>リーチ(Rich) テキストウィジェットのフォント色の選択オプションを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Server</code>
-<code class="changelog-date">2024年05月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">サーバーリスト</span>メニューで<span class="uitext">エージェント名</span>と<span class="uitext">ホスト名</span>を区分されたカラムで表示するように修正</li>
-<li><code class="Feature">Feature</code> <span class="uitext">サーバーリスト</span> &gt; <span class="uitext">サーバー 詳細</span>メニューの<span class="uitext">サーバー情報</span>セクションでAgent NameとHost Nameを区分された項目で表示し、ユーザーが修正できる機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年05月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アプリケーション</span>カテゴリに<span class="uitext">インスタンス性能管理</span>メニューを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">実験室</span> &gt; <span class="uitext">Pending Pod状況</span>メニューの詳細タブの改編</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年05月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL</code>
+<code class=changelog-overview2>アラート通知</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Wait分析</span>メニューのテーブルウィジェットでマウスオーバーすると、項目の全体名を確認できるツールチップを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>通知設定</span>メニューでOffice 365コネクタ方式が中止されたことにより、<strong>Teams Workflows</strong>を通じて警告通知を受信できるサードパーティプラグインを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>通知設定</span>メニューで<strong>PagerDuty</strong>を通じて警告通知を受信できるサードパーティプラグインを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>イベント設定</span> <code class=newfunc>New</code>メニューで<span class=uitext>イベント名</span>または<span class=uitext>イベント受信タグ</span>で検索できる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">Flexボード / 統合Flexボード</code>
+<code class=changelog-overview2>管理</code>
 <ul>
-<li><code class="Feature">Feature</code> <b>統合サービス2</b>ダッシュボードテンプレートを追加</li>
+<li><code class=Feature type=1>Feature</code>次のメニューパスで、メンバー一覧をCSV形式のファイルにダウンロードできる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>トレース分析</span>画面の<span class=uitext>テーブルビュー</span>タブでバインド変数がマッピングされたSQL文をダウンロードできる機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>コンテナマップ</span>メニューの要約で<span class=uitext>Pod要約分析</span>機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>Podリスト</span>メニューの<span class=uitext>詳細</span>で<span class=uitext>Pod要約分析</span>機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>コンテナマップ</span>メニューの <span class=uitext>対象情報</span>タブで<span class=uitext>Service リスト</span>移動リンクを追加し、サービス<strong>オブジェクトメニフェスト</strong>情報を確認できる機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>ノードディスクリスト</span>メニューのノードリストに<span class=uitext>FileSystem</span>カラムを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>Podリスト</span>メニューのPodリストにコンテナ数、アプリケーション数のカラムを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">アカウント管理</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アカウント管理</span>メニューの<span class="uitext">ユーザー電話番号</span>セクションで一般の携帯電話に国・地域コードの選択機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>セッション中止</span>機能を成功または失敗した場合、ユーザー行為として記録する機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニューで指標を選択できるユーザー定義ウィジェットを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントインストール</span>メニューでエージェントファイルをZIP形式でダウンロードできる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">アプリケーション</span> メニューの<span class="uitext">アクティブTXイコライザー</span>ウィジェットに非活性エージェントを表示するオプションを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニューに、現在進行中のvacuumプロセス数が確認できる<span class=uitext>Vacuum Sessions</span>ウィジェットを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Server</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューに<span class="uitext">ログファイル / Windowsウイベント</span>設定を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューからイベント詳細画面に移動すると、<span class="uitext">アラート前後</span>項目の時間設定に応じてプロセスチャートの時間範囲が変更されるように改善</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">Deployment リスト</span>メニューの<span class="uitext">詳細</span>画面の<span class="uitext">リソース</span>タブにReplicasetリストを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューで<span class="uitext">リソース関係</span>タブを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">Object Manifest</span>メニューで<span class="uitext">Kubernetesイベント</span>連動機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">Database V2</code>
+<code class=changelog-overview2>Oracle Pro</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">インスタンスモニタリング</span>メニューで<span class="uitext">アクティブセッション</span>テーブルのデータを1分おきに照会できるボタンを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>分析</span> > <span class=uitext>ロックツリー</span>メニューでクラスターを選択する際、グローバルロックを表示する機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年08月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_8_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.8.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL</code>
+<code class=changelog-overview2>Oracle V2、Oracle Pro</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Topオブジェクト</span>メニューの<span class="uitext">Age</span>タブに<span class="uitext">per_to_wraparound</span>カラムを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>SQL詳細</span>画面の<span class=uitext>Runtime Plan</span>、<span class=uitext>Explain Plan</span>テーブルに<span class=uitext>FILTER_PREDICATES</span>カラムを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年04月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
+<code class=changelog-overview>Features</code>
+<code class=changelog-date>2024年08月23日</code>
+<code class=changelog-service><a href=../features/introduction><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class=Beta>Beta</code> Featureプロジェク(<code class=Features>Features</code>) <code class=changelog-overview2>Aerospike</code> <b>Beta</b>バージョンが利用可能です。</li>
+<li><code class=Beta>Beta</code> Featureプロジェク(<code class=Features>Features</code>) <code class=changelog-overview2>Apache Pulsar</code> <b>Beta</b>バージョンが利用可能です。</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年07月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.3​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL / MySQL</code>
+<code class=changelog-overview2>MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューでディスク使用の推移が確認できる詳細なポップアウトを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューでウィジェットを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントインストール</span>メニューで権限に関する案内文句を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年04月09日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.14​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューで既存のイベント設定メニューのイベントタブを表示し、<span class="uitext">JSON一括修正</span>、<span class="uitext">JSON 一括ダウンロード</span>機能を追加</li>
-<li><code class="Feature">Feature</code>サイドメニューでプロジェクト一覧の幅を調整できる機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年03月29日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.5​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューで次のように複合メトリクスイベントテンプレートを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年03月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.2​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューでHelmを利用したエージェントのインストール案内を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
-<code class="changelog-overview2">Database</code>
+<code class=changelog-overview2>Database</code>
 <ul>
-<li><code class="New">New</code> Redis, MongoDB <code class="my">V2</code>サービス開始！</li>
+<li><code class=New type=1>New</code> <strong>Oracle V2</strong>サービスを開始！</li>
+<li><code class=New type=1>New</code> <strong>Oracle Pro</strong>サービスを開始！</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
-<code class="changelog-overview2">Kubernetes</code>
+<code class=changelog-overview2>Kubernetes</code>
 <ul>
-<li><code class="New">New</code> kube-apiserver収集指標リストを照会できる<span class="uitext">kube-apiserver メトリクス照会</span>メニューを追加</li>
-<li><code class="New">New</code> Deploymentを基準にReplicaSet数及びコンテナ数、主な性能情報の統計、Pod個数などの情報を提供する<span class="uitext">Deployment リスト</span>メニューを追加</li>
+<li><code class=New type=1>New</code> Kubernetesクラスター内で実行中のすべてのサービスの状態と情報を総合的に提供する<span class=uitext>Service リスト</span>メニューを追加</li>
+<li><code class=New type=1>New</code>ノードの観点でディスクモニタリングのための<span class=uitext>ノードディスクリスト</span> メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code>サイドメニューで<span class=uitext>全プロジェクト</span>を選択してプロジェクト一覧を開くと、プロジェクトの検索入力欄に自動フォーカスされる機能を追加</li>
+<li><code class=Feature type=1>Feature</code> サイドメニューの統合検索でエージェントをIPアドレスで検索できる機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code>次のメニューパスで照会内容をCSVファイルにダウンロードする機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェント設定</span>メニューパスで選択したエージェントのエージェント設定(<em>whatap.conf</em>)ファイルダウンロード機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>インスタンス性能管理</span> > <span class=uitext>スレッドリスト/ダンプ</span>メニューのテーブルで、CPU時間の増加量を表示するカラムを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
+<ul>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>コンテナマップ</span>メニューの要約で<span class=uitext>対象情報</span>タブに<span class=uitext>コンテナ要約分析</span>機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>コンテナマップ</span>メニューの要約で<span class=uitext>対象情報</span>及び<span class=uitext>リソース関係</span>タブに<strong>Service</strong>情報を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>コンテナマップ</span>メニューの<span class=uitext>ログ</span> > <span class=uitext>ログ検索</span>タブ(要約または詳細を見る)で<span class=uitext>ログTail</span>メニューに移動できるリンクを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>コンテナー</span> > <span class=uitext>コンテナリスト</span>メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>コンテナアプリケーションリスト</span>メニューで次のカラムの各項目に関連リストメニューに移動できるボタンを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>コンテナアプリケーションリスト</span>メニューの<span class=uitext>リソース</span>グループに<span class=uitext>Image</span>カラムを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>Kubernetesイベント</span>メニューのイベントリストテーブルに<span class=uitext>イベントの初回発生時刻</span>と<span class=uitext>イベント発生件数</span>カラムを追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>ノード詳細</span>メニューにPod一覧を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>トレース分析</span>画面の<span class=uitext>レコード要約</span>タブで<strong>Container Id</strong>、<strong>Pod Name</strong>情報を提供し、その情報をクリックすると、それぞれコンテナリスト、パドリストページに移動する機能を追加</li>
+<li><code class=Feature type=1>Feature</code>Kubernetesエージェントが非活性化されると、ユーザーがすぐに認知できるように画面上部にエージェント状態表示を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
-<code class="changelog-overview2">Browser</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="New">New</code>ユーザーセッション ログを検索できる<span class="uitext">ユーザーセッションログ検索</span>メニュー追加</li>
+<li><code class=Feature type=1>Feature</code>特定の日付を基準に設定された時間帯のSQLの推移を比較し、騰落を確認できる<span class=uitext>分析</span> > <span class=uitext>Top SQL比較</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年07月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_7_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.7.0​</a></code>
 <br>
-<code class="changelog-overview2">アラート通知</code>
+<code class=changelog-overview2>PostgreSQL / MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">通知設定</span>メニューから3rdパーティープラグインでOpsgenieプラットフォーム登録機能を追加</li>
+<li><code class=Feature type=1>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニューにDBが起動してからどれくらい時間が経ったのかを確認できる<em><strong>Uptime</strong></em>ウィジェットを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>Flexボード / 統合Flexボード</code>
 <ul>
-<li><code class="Feature">Feature</code>エージェント選択オプションのエージェントリスト間隔の調整と検索機能の追加、名前順に並べ替えて表示</li>
-<li><code class="Feature">Feature</code>エージェントごとのアクティブトランザクションを表示する<span class="uitext">エージェントアクティブTX</span>ウィジェットを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">TXマップ</span>メニューの<span class="uitext">Top 30</span>セクションでIPフィルター項目として希望するIPアドレスを追加・削除・フィルタリングできる機能を追加</li>
+<li><code class=Feature>Feature</code>ウィジェットに<span class=uitext>選択したプロジェクト</span>表示機能の追加: ウィジェットにデータを呼び出すプロジェクトの一覧を確認可能</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Server</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート設定</span>メニューの<span class="uitext">ログファイル / Windowsウイベント</span>タブで受信者タグの設定機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Pod初期化性能</span>メニューの改編とメニュー名を<span class="uitext">Pod起動分析</span>に変更</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューからリストメニューに移動するリンクを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューで選択したカテゴリのPod Phase情報及びPhase案内を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">コンテナアプリケーションリスト</span>メニューのアプリケーション詳細情報に<span class="uitext">呼出し情報</span>タブを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">コンテナマップ</span>メニューの<span class="uitext">詳細</span>から対象(コンテイナ/ファド) の一覧から選択したものだけが確認できる<span class="uitext">選択のみ表示</span>オプションを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">統合コンテナマップ</span>メニューの<span class="uitext">グループ化</span>オプション項目として<span class="uitext">WhatapProject</span>追加：WhaTapプロジェクト別グループ化機能</li>
-<li><code class="Feature">Feature</code>Kubernetesクラスタープロジェクトの<span class="uitext">クラスター</span> &gt; <span class="uitext">ノードリスト</span>メニューでノード情報カラムを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ワークロード</span> &gt; <span class="uitext">コンテナイメージ</span>メニューの画面上に画像の総数を表示</li>
-<li><code class="Feature">Feature</code> Podカテゴリに<span class="uitext">1分以内に生成されたコンテナを表示する</span>オプションを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>利用状況</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">Flexボード</span>メニューでアクティブセッションテーブルフィルターを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">セッション詳細</span>ウィンドウにリアルタイム/停止照会及び更新ボタンを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">SQL統計</span>メニューでマルチフィルタ選択機能を追加</li>
+<li><code class=Feature>Feature</code>決済手段登録/修正メニューのUI/UXの改編(プロフィールアイコン> <span class=uitext>利用状況</span> > <span class=uitext>決済情報</span>)</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL、MySQL</code>
+<code class=changelog-overview2>ダッシューボード</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニュー機能の改編</li>
-<li><code class="Feature">Feature</code> <span class="uitext">Default(xos)</span>、<span class="uitext">Default(rds)</span>プリセットを追加</li>
-<li><code class="Feature">Feature</code>ダッシュボードの<span class="uitext">SQL Elapse Map</span>と<span class="uitext">Slow Query</span>ウィジェットで変更したY軸値を保存する機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アプリケーション</span>メニューで基本プリセット変更の機能追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アプリケーション</span> メニューでエージェントの検索機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>TXマップ</span>メニューで<span class=uitext>TOP 30</span>フィルター内の項目を直接検索して追加する<span class=uitext>カスタム</span>機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL</code>
+<code class=changelog-overview2>統計</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントインストール</span>メニューのデザイン改善及びインストール案内を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">PG SQL統計</span>メニューでマルチフィルタ選択機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計</span>下位メニューの機能改善</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントインストール</span>メニューに<strong>Oracle Solaris OS</strong>インストール案内のページを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">MySQL</code>
+<code class=changelog-overview2>コンテナマップ</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">MYSQL SQL統計</span>メニューでマルチフィルタ選択機能を追加</li>
+<li><code class=Feature>Feature</code>概要を表示の<span class=uitext>対象情報</span>タブに<span class=uitext>Containter State</span>表示と説明を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">MongoDB</code>
+<code class=changelog-overview2>クラスター</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">DBサイズ</span>メニューのUI変更</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ノードリスト</span>メニューで<span class=uitext>ノード情報</span>下位カラムに<span class=uitext>capacityType</span>を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024年03月27日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code>次のメニューパスにユーザーセッション分析機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年03月20日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.9​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">トレース分析</span>ウィンドウの<span class="uitext">テーブルビュー</span>で<b>DB Connection</b>、<b>SQL</b>ステップをクリックすると活性化されるモーダルに<span class="uitext">SERIAL</span>フィールドを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年02月29日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.4​</a></code>
-<ul>
-<li><code class="New">New</code> Goモニタリング製品のBetaサービスを終了し、正式サービスを開始します。</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>ワークロード</code>
 <ul>
-<li><code class="New">New</code> サイドメニューを改編</li>
-<li><code class="New">New</code> SSOアカウントの連動機能を追加</li>
-<li><code class="New">New</code>メトリクスのフィールド(Field) 中心のユーザー体験を強化した<span class="uitext">アラート設定</span> <code class="newfunc">New</code> 機能を追加</li>
+<li><code class=Feature>Feature</code>Pending状態のPodを素早く把握できる<span class=uitext>Pending Pod状況</span>メニューを追加(<span class=uitext>実験室</span> > <span class=uitext>Pending Pods</span>メニューから<span class=uitext>ワークロード</span>下位メニューに移動)</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">新機能リリーズ</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
 <br>
-<code class="changelog-overview2">Kubernetes</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="New">New</code>マスター及びノードエージェントのインストール状況が確認できる<span class="uitext">Kubernetesエージェントリスト</span>メニューを追加</li>
-<li><code class="New">New</code> kube-apiserverの状態と性能メトリクスの収集、応答時間、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<span class="uitext">kube-apiserver ダッシュボード</span>メニューを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>パラメータ</span>メニューで<span class=uitext>基準日</span>と<span class=uitext>比較日</span>をすべて今日の日付に設定すると、リアルタイムデータと保存された最後のデータを照会して比較する機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Browser</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_6_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.6.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>ページロードヒットマップ</span>, <span class=uitext>Ajaxヒットマップ</span>, <span class=uitext>ユーザーセッションログ検索</span>メニューにユーザーがウェブサイトで行うすべてのイベントを記録し、再生できる<span class=uitext>セッションリプレイ</span>機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Feature</code>
+<code class=changelog-date>2024年06月26日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/features/kafka-introduction><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Reference​</a></code>
+<ul>
+<li><code class=Beta>Beta</code> Featureプロジェク(<code class=Features>Features</code>)<code class=changelog-overview2>Kafka</code><b>ベータ</b>サービス開始</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年06月03日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.8​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>トレース分析</span>画面のURLをコピーするボタンを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年05月30日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.7​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>性能推移</span>メニューで連続検索を防止する機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年05月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <br>
-<code class="changelog-overview2">Flexボード / ダッシュボード</code>
+<code class=changelog-overview2>Flexボード / 統合Flexボード</code>
 <ul>
-<li><code class="Feature">Feature</code>グループウィジェットコピー機能を追加</li>
-<li><code class="Feature">Feature</code>ダッシュボードのApdex*100ウィジェットに<span class="uitext">複数プロジェクトのマージ</span>メトリクス項目を追加</li>
-<li><code class="Feature">Feature</code>ウィジェットに該当製品のダッシュボードに移動可能なボタンを追加</li>
+<li><code class=Feature>Feature</code>ダッシュボードのエクスポート機能を利用する際、プロジェクト情報を除いてエクスポートする機能を追加</li>
+<li><code class=Feature>Feature</code>カウント形態のウィジェットにフィールド選択機能を追加</li>
+<li><code class=Feature>Feature</code>補助チャートの設定でグループ内のオプションを共有できる<span class=uitext>グループ内のウィジェット全体に適用</span>機能を追加</li>
+<li><code class=Feature>Feature</code>グループウィジェットに<span class=uitext>プロジェクト選択</span>機能を追加、グループ下位ウィジェットに<span class=uitext>グループウィジェットに選択されたプロジェクト</span>選択オプションを追加</li>
+<li><code class=Feature>Feature</code>ウィジェットに関する説明の添付機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年05月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <br>
-<code class="changelog-overview2">アラート通知</code>
+<code class=changelog-overview2>アラート通知</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">アラート設定</span>メニューでメトリクスイベントを追加または編集する時、<span class="uitext">カテゴリ</span>項目の製品ロゴに適用されているダークテーマの視認性を改善</li>
+<li><code class=Feature>Feature</code>ログモニタリングに対応するプラットフォームの<span class=uitext>アラート通知</span> > <span class=uitext>イベント設定</span>メニューでログイベント設定機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年05月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">TXマップ</span>メニューに新しいUIを適用し、機能を変更</li>
+<li><code class=Feature>Feature</code> <span class=uitext>サーバーリスト</span>メニューで<span class=uitext>エージェント名</span>と<span class=uitext>ホスト名</span>を区分されたカラムで表示するように修正</li>
+<li><code class=Feature>Feature</code> <span class=uitext>サーバーリスト</span> > <span class=uitext>サーバー 詳細</span>メニューの<span class=uitext>サーバー情報</span>セクションでAgent NameとHost Nameを区分された項目で表示し、ユーザーが修正できる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Server</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年05月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code>AIX OSに対してエージェントインストールパッケージ及び案内を提供</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アプリケーション</span>カテゴリに<span class=uitext>インスタンス性能管理</span>メニューを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>実験室</span> > <span class=uitext>Pending Pod状況</span>メニューの詳細タブの改編</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年05月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_5_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.5.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> XOS2指標の代替に関する案内事項を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">アラート設定</span> &gt; <span class="uitext">データベース</span>タブでエージェントイベントの復旧通知(<span class="uitext">イベント状態が解決されたら追加で通知する</span>) 機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントリスト</span>メニューでデータベースサーバーのIPアドレスを表記する<span class="uitext">DB IPアドレス</span>カラムを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>Wait分析</span>メニューのテーブルウィジェットでマウスオーバーすると、項目の全体名を確認できるツールチップを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">Database V2</code>
+<code class=changelog-overview2>Flexボード / 統合Flexボード</code>
 <ul>
-<li><code class="Feature">Feature</code>次のメニュー経路で<span class="uitext">ロックツリー</span>テーブルのカラムをクリックすると、セッションの詳細ウィンドウを表示する機能を追加</li>
+<li><code class=Feature>Feature</code> <b>統合サービス2</b>ダッシュボードテンプレートを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL V2</code>
+<code class=changelog-overview2>アカウント管理</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">データベースパラメタ</span> メニューで<span class="uitext">Value</span>カラム表記時、一部の値に対して単位表記を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アカウント管理</span>メニューの<span class=uitext>ユーザー電話番号</span>セクションで一般の携帯電話に国・地域コードの選択機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">MySQL V2</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code> JSON形式でのPlan照会機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">データベースサイズ</span>メニューの<span class="uitext">テーブルサイズ(トップ50)</span>テーブルで<span class="uitext">TABLENAME</span>カラム項目をクリックすると<b>column</b>、<b>index</b>構成を確認できる機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>アプリケーション</span> メニューの<span class=uitext>アクティブTXイコライザー</span>ウィジェットに非活性エージェントを表示するオプションを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">コンテナマップ</span>メニューでレプリケーションコントローラ(Replication Controller) のグループ化オプションを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント設定</span> <code class=newfunc>New</code>メニューに<span class=uitext>ログファイル / Windowsウイベント</span>設定を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント履歴</span>メニューからイベント詳細画面に移動すると、<span class=uitext>アラート前後</span>項目の時間設定に応じてプロセスチャートの時間範囲が変更されるように改善</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code>ページロードヒッ トマップデータにネットワークステータスに関する指標を追加：<span class="uitext">有効接続タイプ</span>、<span class="uitext">RTT</span>、<span class="uitext">実効帯域幅</span></li>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Page Load Hitmap</span>メニューの<span class="uitext">ページロード</span> <span class="uitext">詳細</span>ウィンドウでリソースデータに指標を追加：<span class="uitext">状態コード</span>、<span class="uitext">Delivery Type</span></li>
-<li><code class="Feature">Feature</code> AJAXヒットマップデータにネットワークステータスに関する指標を追加：<span class="uitext">有効接続タイプ</span>、<span class="uitext">RTT</span>、<span class="uitext">実効帯域幅</span>、<span class="uitext">Delivery Type</span></li>
+<li><code class=Feature>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>Deployment リスト</span>メニューの<span class=uitext>詳細</span>画面の<span class=uitext>リソース</span>タブにReplicasetリストを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>コンテナマップ</span>メニューで<span class=uitext>リソース関係</span>タブを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>クラスター</span> > <span class=uitext>Object Manifest</span>メニューで<span class=uitext>Kubernetesイベント</span>連動機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">ネットワーク</code>
-<code class="changelog-date">2024年02月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_2_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code>エージェントのインストール時にAWSのリソースを識別するためのオプションを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">ネットワーク</code>
-<code class="changelog-date">2024年02月01日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_1_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.7​</a></code>
-<ul>
-<li><code class="New">New</code><b>ネットワークパフォーマンスモニタリング</b>(<b>Network Performance Monitoring</b>)サービスをオープンします。 <b>ネットワーク性能モニタリング</b>は、ネットワーク間の  混雑や障害を把握し、ユーザーのネットワーク性能の改善に活用するために、プロセスのネットワーク通信情報を収集して可視化するモニタリングソリューションです。</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年01月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_1_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューで次の機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年01月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_1_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">DB V2</code>
+<code class=changelog-overview2>Database V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">ロックツリー</span>メニューで次の機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>インスタンスモニタリング</span>メニューで<span class=uitext>アクティブセッション</span>テーブルのデータを1分おきに照会できるボタンを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年01月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_1_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">リソース</span> &gt; <span class="uitext">Object Manifest</span>メニューで過去のオブジェクトマニフェストを照会・比較できるように改善(Kubernetesエージェントv1.5.0以降に対応)</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Log</code>
-<code class="changelog-date">2024年01月24日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_1_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ログトレンド</span>メニューで<span class="uitext">フィルター</span>一覧にない値を直接入力して選択可能</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">AWS Log</code>
-<code class="changelog-date">2024年01月19日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.6​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">WhaTap Forwarderインストール</span>タブの2番目の<span class="uitext">AWS Region</span>一覧にVirginia(us-east-1) 項目を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">ダッシュボード</code>
+<code class=changelog-overview2>PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">Flexボード</span>メニューで補助チャートの小数点以下桁数の調整機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>Topオブジェクト</span>メニューの<span class=uitext>Age</span>タブに<span class=uitext>per_to_wraparound</span>カラムを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年04月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_4_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.4.0​</a></code>
 <br>
-<code class="changelog-overview2">利用内訳</code>
+<code class=changelog-overview2>PostgreSQL / MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">請求書プレビュー</span>メニューから使用量数値をクリックすると、使用量の詳細情報を表示する機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニューでディスク使用の推移が確認できる詳細なポップアウトを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニューでウィジェットを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年04月09日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.14​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アプリケーションダッシュボード</span>メニューの各ウィジェットにツールチップや関連情報、多言語対応を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">TXマップ</span>メニューの変更</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント設定</span> <code class=newfunc>New</code>メニューで既存のイベント設定メニューのイベントタブを表示し、<span class=uitext>JSON一括修正</span>、<span class=uitext>JSON 一括ダウンロード</span>機能を追加</li>
+<li><code class=Feature>Feature</code>サイドメニューでプロジェクト一覧の幅を調整できる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年03月29日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.5​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント設定</span>メニューで次のように複合メトリクスイベントテンプレートを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年03月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.2​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントインストール</span>メニューでHelmを利用したエージェントのインストール案内を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>Database</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">SQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">#VALUE!</span> &gt; <span class="uitext">エージェントアップデート</span>メニューの新しいUI適用及び機能の変更</li>
+<li><code class=New>New</code> Redis, MongoDB <code class=my>V2</code>サービス開始！</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL / MySQL</code>
+<code class=changelog-overview2>Kubernetes</code>
 <ul>
-<li><code class="Feature">Feature</code>プロジェクトで<code class="my">V2</code>に対応していないエージェントバージョンがインストールされている場合、エージェント更新の案内文をヘッダーに表示する機能を追加</li>
+<li><code class=New>New</code> kube-apiserver収集指標リストを照会できる<span class=uitext>kube-apiserver メトリクス照会</span>メニューを追加</li>
+<li><code class=New>New</code> Deploymentを基準にReplicaSet数及びコンテナ数、主な性能情報の統計、Pod個数などの情報を提供する<span class=uitext>Deployment リスト</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">PosgreSQL V2</code>
+<code class=changelog-overview2>Browser</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Wait分析</span>メニューから、エージェント設定方法の案内モーダルを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Wait分析</span>メニューから、機能紹介モーダルを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">PG SQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</li>
-<li><code class="Feature">Feature</code>次のメニュー経路で<b>column</b>、<b>index</b>構成を確認できる機能を追加</li>
+<li><code class=New>New</code>ユーザーセッション ログを検索できる<span class=uitext>ユーザーセッションログ検索</span>メニュー追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">MySQL V2</code>
+<code class=changelog-overview2>アラート通知</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">統計/レポート</span> &gt; <span class="uitext">MYSQLのSQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>通知設定</span>メニューから3rdパーティープラグインでOpsgenieプラットフォーム登録機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">リソース</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code>次のメニューで画面上段のステータスアイコンを選択すると、選択したステータスのリソースだけがフィルタリングされる機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">リソース</span>メニューの下位に、次のメニューを追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">コンテナリスト</span>メニューで<span class="uitext">Node</span>カラム項目を選択すると、該当ノード一覧がフィルタリングされた<span class="uitext">ノードリスト</span>メニューに移動する機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">クラスターサマリー</span>メニューに<b>Service</b>、<b>Ingress</b>、<b>Job</b>、<b>CronJob</b>オブジェクト一覧を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">ノードリスト</span> メニューに指標を追加 - <b>beta.kubernetes.io/instance-type</b></li>
-<li><code class="Feature">Feature</code> <span class="uitext">コンテナイメージ</span>メニューに指標を追加 - <b>Total Container CPU</b>、<b>Total Container Memory</b></li>
+<li><code class=Feature>Feature</code>エージェント選択オプションのエージェントリスト間隔の調整と検索機能の追加、名前順に並べ替えて表示</li>
+<li><code class=Feature>Feature</code>エージェントごとのアクティブトランザクションを表示する<span class=uitext>エージェントアクティブTX</span>ウィジェットを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>TXマップ</span>メニューの<span class=uitext>Top 30</span>セクションでIPフィルター項目として希望するIPアドレスを追加・削除・フィルタリングできる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート設定</span>メニューの<span class=uitext>ログファイル / Windowsウイベント</span>タブで受信者タグの設定機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>Pod初期化性能</span>メニューの改編とメニュー名を<span class=uitext>Pod起動分析</span>に変更</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>コンテナマップ</span>メニューからリストメニューに移動するリンクを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>コンテナマップ</span>メニューで選択したカテゴリのPod Phase情報及びPhase案内を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>コンテナアプリケーションリスト</span>メニューのアプリケーション詳細情報に<span class=uitext>呼出し情報</span>タブを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>コンテナマップ</span>メニューの<span class=uitext>詳細</span>から対象(コンテイナ/ファド) の一覧から選択したものだけが確認できる<span class=uitext>選択のみ表示</span>オプションを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統合コンテナマップ</span>メニューの<span class=uitext>グループ化</span>オプション項目として<span class=uitext>WhatapProject</span>追加：WhaTapプロジェクト別グループ化機能</li>
+<li><code class=Feature>Feature</code>Kubernetesクラスタープロジェクトの<span class=uitext>クラスター</span> > <span class=uitext>ノードリスト</span>メニューでノード情報カラムを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ワークロード</span> > <span class=uitext>コンテナイメージ</span>メニューの画面上に画像の総数を表示</li>
+<li><code class=Feature>Feature</code> Podカテゴリに<span class=uitext>1分以内に生成されたコンテナを表示する</span>オプションを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">ログ</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">WhaTapイベント</span>: <code>#WhatapEvent</code>カテゴリのログデータの照会機能を追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">クーバーネティスイベント</span>：プロジェクト単位でKubernetesイベントに対する照会と検索機能</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>Flexボード</span>メニューでアクティブセッションテーブルフィルターを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>セッション詳細</span>ウィンドウにリアルタイム/停止照会及び更新ボタンを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>SQL統計</span>メニューでマルチフィルタ選択機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">etc</code>
+<code class=changelog-overview2>PostgreSQL、MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">管理</span>メニュー下位に <span class="uitext">相関プロジェクト管理</span>メニューを追加：連携プロジェクトの登録、照会、削除機能</li>
-<li><code class="Feature">Feature</code>登録された連携プロジェクトがあった場合は<span class="uitext">トレース分析</span> &gt; <span class="uitext">テーブルビュー</span>でSQL対象サーバー情報とHTTPURL Connection情報について<span class="uitext">連携分析</span>ビューを提供</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシューボード</span> > <span class=uitext>マルチインスタンス</span>メニュー機能の改編</li>
+<li><code class=Feature>Feature</code> <span class=uitext>Default(xos)</span>、<span class=uitext>Default(rds)</span>プリセットを追加</li>
+<li><code class=Feature>Feature</code>ダッシュボードの<span class=uitext>SQL Elapse Map</span>と<span class=uitext>Slow Query</span>ウィジェットで変更したY軸値を保存する機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Log</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ログ検索</span>, <span class="uitext">ログTail</span>メニューから、ログ検索フィルター機能を改善</li>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">アラート設定</span>メニューでリアルタイムログイベントを追加または修正しながらAPIリクエストに失敗した場合、失敗の原因をメッセージとして表示するよう改善</li>
-<li><code class="Feature">Feature</code>エージェントオプションが設定された場合、ログレベルを表示する色表示機能を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Browser</code>
-<code class="changelog-date">2024年01月10日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
-<ul>
-<li><code class="Feature">Feature</code>次のメニューから、ユーザーIDを基準に検索できるようにフィルター項目を追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2023年12月18日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.10​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダッシュボード</span> &gt; <span class="uitext">アプリケーションダッシュボード</span>メニューでプリセット保存時、エージェント選択状態まで保存できるオプションを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Application</code>
-<code class="changelog-date">2023年12月01日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.4​</a></code>
-<ul>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">TX検索</span>メニューで<span class="uitext">マルチTXID</span>フィルターを選択した状態で<span class="uitext">TXID</span>フィルターを除いた他のフィルターを適用できないという案内メッセージを追加</li>
-</ul>
-</li>
-<li>
-<code class="changelog-overview">Applicatoin</code>
-<code class="changelog-date">2023年11月28日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.3​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">ダッシュボード</code>
+<code class=changelog-overview2>PostgreSQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">トレース分析</span>画面のテーブルで<span class="uitext">エラークラス</span>カラムを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントインストール</span>メニューのデザイン改善及びインストール案内を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>PG SQL統計</span>メニューでマルチフィルタ選択機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">Flexボード</code>
+<code class=changelog-overview2>MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code>シリーズタイプのウィジェットに補助テーブルを設定した場合、テーブルのカラム表示を変更できるようにUIを追加</li>
-<li><code class="Feature">Feature</code>Apdexウィジェットから選択できるチャートの種類を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>MYSQL SQL統計</span>メニューでマルチフィルタ選択機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
 <br>
-<code class="changelog-overview2">メンテナンス計画</code>
+<code class=changelog-overview2>MongoDB</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">管理</span>&gt;<span class="uitext">メンテナンス計画</span>メニューの機能を改善</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>DBサイズ</span>メニューのUI変更</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Browser</code>
+<code class=changelog-date>2024年03月27日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_3_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.3.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code>次のメニューパスにユーザーセッション分析機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年03月20日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.9​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>トレース分析</span>ウィンドウの<span class=uitext>テーブルビュー</span>で<b>DB Connection</b>、<b>SQL</b>ステップをクリックすると活性化されるモーダルに<span class=uitext>SERIAL</span>フィールドを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年02月29日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.4​</a></code>
+<ul>
+<li><code class=New>New</code> Goモニタリング製品のBetaサービスを終了し、正式サービスを開始します。</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">アラート通知</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">アラート通知</span>&gt;<span class="uitext">イベント履歴</span> メニューから、タイトル以外にもメッセージフィールドに対する検索機能を対応</li>
+<li><code class=New>New</code> サイドメニューを改編</li>
+<li><code class=New>New</code> SSOアカウントの連動機能を追加</li>
+<li><code class=New>New</code>メトリクスのフィールド(Field) 中心のユーザー体験を強化した<span class=uitext>アラート設定</span> <code class=newfunc>New</code> 機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>新機能リリーズ</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">利用内訳</code>
+<code class=changelog-overview2>Kubernetes</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">請求書プレビュー</span>メニューから、使用量を測るオプションの追加と金額表示の改善</li>
+<li><code class=New>New</code>マスター及びノードエージェントのインストール状況が確認できる<span class=uitext>Kubernetesエージェントリスト</span>メニューを追加</li>
+<li><code class=New>New</code> kube-apiserverの状態と性能メトリクスの収集、応答時間、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能をモニタリングできる<span class=uitext>kube-apiserver ダッシュボード</span>メニューを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Server</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">アラート通知</code>
+<code class=changelog-overview2>Flexボード / ダッシュボード</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">  アラート設定</span>メニューから、サーバー/プロセスイベントに<span class="uitext">イベント受信タグ</span>オプションを追加</li>
+<li><code class=Feature>Feature</code>グループウィジェットコピー機能を追加</li>
+<li><code class=Feature>Feature</code>ダッシュボードのApdex*100ウィジェットに<span class=uitext>複数プロジェクトのマージ</span>メトリクス項目を追加</li>
+<li><code class=Feature>Feature</code>ウィジェットに該当製品のダッシュボードに移動可能なボタンを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>アラート通知</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">統計/レポート</span>&gt; <span class="uitext">SQL統計</span>メニューから棒グラフをクリックすると、５分間の詳しい統計情報画面を表示する機能を追加</li>
-<li><code class="Feature">Feature</code><span class="uitext">ダッシュボード</span>&gt;<span class="uitext">インスタンス</span>、<span class="uitext">マルチインスタンス</span>メニューから<span class="uitext">アクティブセッション</span>テーブル折りたたむ(folding)ボタンの追加し、グラフチャート領域をより広い画面で確認できます。</li>
-<li><code class="Feature">Feature</code>ユーザービリティーのための<span class="uitext">SQL詳細</span>画面のUIを改善</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>アラート設定</span>メニューでメトリクスイベントを追加または編集する時、<span class=uitext>カテゴリ</span>項目の製品ロゴに適用されているダークテーマの視認性を改善</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>TXマップ</span>メニューに新しいUIを適用し、機能を変更</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code>AIX OSに対してエージェントインストールパッケージ及び案内を提供</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">PostgreSQL</code>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code>Plan照会をJSON形式で照会できる機能を追加</li>
-<li><code class="Feature">Feature</code><code class="my">V2</code><span class="uitext">分析</span>&gt;<span class="uitext">Topオブジェ  クト</span>、新規メニューの追加</li>
-<li><code class="Feature">Feature</code><code class="my">V2</code><span class="uitext">アラート通知</span>&gt;<span class="uitext">アラート設定</span>メニューから、メトリクス/複合メトリクスイベントのテンプレートを追加</li>
+<li><code class=Feature>Feature</code> XOS2指標の代替に関する案内事項を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>アラート設定</span> > <span class=uitext>データベース</span>タブでエージェントイベントの復旧通知(<span class=uitext>イベント状態が解決されたら追加で通知する</span>) 機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>管理</span> > <span class=uitext>エージェントリスト</span>メニューでデータベースサーバーのIPアドレスを表記する<span class=uitext>DB IPアドレス</span>カラムを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">ダッシュボード</code>
+<code class=changelog-overview2>Database V2</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">コンテナマップ</span> メニューから、1分間消えたコンテナ/Podのブロックを表示する機能を追加</li>
+<li><code class=Feature>Feature</code>次のメニュー経路で<span class=uitext>ロックツリー</span>テーブルのカラムをクリックすると、セッションの詳細ウィンドウを表示する機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">リソース</code>
+<code class=changelog-overview2>PostgreSQL V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">クラスターサマリー</span>メニューの追加</li>
-<li><code class="Feature">Feature</code><span class="uitext">ノード詳細情報</span>メニューから<span class="uitext">コンテナ</span>テーブルに<span class="uitext">ステータス</span>カラムを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>データベースパラメタ</span>メニューで<span class=uitext>Value</span>カラム表記時、一部の値に対して単位表記を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <br>
-<code class="changelog-overview2">その他</code>
+<code class=changelog-overview2>MySQL V2</code>
 <ul>
-<li><code class="Feature">Feature</code>ネームスペースプロジェクトの実験室メニューとして<span class="uitext">Pending Pods</span>追加</li>
+<li><code class=Feature>Feature</code> JSON形式でのPlan照会機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>データベースサイズ</span>メニューの<span class=uitext>テーブルサイズ(トップ50)</span>テーブルで<span class=uitext>TABLENAME</span>カラム項目をクリックすると<b>column</b>、<b>index</b>構成を確認できる機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Log</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">ログ設定</span>メニューから<span class="uitext">ログプライマリパーサ設定</span>、<span class="uitext">ログセカンダリーパーサの設定</span>の内容をJSON形式としてエクスポート、またはインポートする機能の追加</li>
-<li><code class="Feature">Feature</code><span class="uitext">ログ設定</span>メニューから<span class="uitext">高速インデックス</span>の設定内容をJSON形式としてエクスポート、またはインポートする機能の追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>コンテナマップ</span>メニューでレプリケーションコントローラ(Replication Controller) のグループ化オプションを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Browser</code>
-<code class="changelog-date">2023年11月22日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<code class=changelog-overview>Browser</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">AJAX Hitmap</span>メニューやウィジェット、<span class="uitext">Ajax</span><span class="uitext">分析</span>機能におけるユーザビリティ向上のためのUIの改善</li>
+<li><code class=Feature>Feature</code>ページロードヒットマップデータにネットワークステータスに関する指標を追加：<span class=uitext>有効接続タイプ</span>、<span class=uitext>RTT</span>、<span class=uitext>実効帯域幅</span></li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>Page Load Hitmap</span>メニューの<span class=uitext>ページロード</span> <span class=uitext>詳細</span>ウィンドウでリソースデータに指標を追加：<span class=uitext>状態コード</span>、<span class=uitext>Delivery Type</span></li>
+<li><code class=Feature>Feature</code> AJAXヒットマップデータにネットワークステータスに関する指標を追加：<span class=uitext>有効接続タイプ</span>、<span class=uitext>RTT</span>、<span class=uitext>実効帯域幅</span>、<span class=uitext>Delivery Type</span></li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">URL</code>
-<code class="changelog-date">2023年11月01日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.3​</a></code>
+<code class=changelog-overview>ネットワーク</code>
+<code class=changelog-date>2024年02月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_2_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.2.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code>URL追加、編集時<span class="uitext">収集周期</span>を選択できるUIの追加</li>
+<li><code class=Feature>Feature</code>エージェントのインストール時にAWSのリソースを識別するためのオプションを追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">共通</code>
-<code class="changelog-date">2023年10月25日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<code class=changelog-overview>ネットワーク</code>
+<code class=changelog-date>2024年02月01日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_1_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.1.7​</a></code>
+<ul>
+<li><code class=New>New</code><b>ネットワークパフォーマンスモニタリング</b>(<b>Network Performance Monitoring</b>)サービスをオープンします。 <b>ネットワーク性能モニタリング</b>は、ネットワーク間の混雑や障害を把握し、ユーザーのネットワーク性能の改善に活用するために、プロセスのネットワーク通信情報を収集して可視化するモニタリングソリューションです。</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年01月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_1_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>イベント履歴</span>メニューで次の機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年01月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_1_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
 <br>
-<code class="changelog-overview2">User Interface</code>
+<code class=changelog-overview2>DB V2</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">サービスカタログ</span>ページでユーザー体験を向上するためのデザイン変更</li>
-<li><code class="Feature">Feature</code>サイドバー幅の調整機能の追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>ロックツリー</span>メニューで次の機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Database</code>
-<code class="changelog-date">2023年10月25日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年01月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_1_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>リソース</span> > <span class=uitext>Object Manifest</span>メニューで過去のオブジェクトマニフェストを照会・比較できるように改善(Kubernetesエージェントv1.5.0以降に対応)</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Log</code>
+<code class=changelog-date>2024年01月24日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_1_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.1.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>ログトレンド</span>メニューで<span class=uitext>フィルター</span>一覧にない値を直接入力して選択可能</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>AWS Log</code>
+<code class=changelog-date>2024年01月19日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.6​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>WhaTap Forwarderインストール</span>タブの2番目の<span class=uitext>AWS Region</span>一覧にVirginia(us-east-1) 項目を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <br>
-<code class="changelog-overview2">共通</code>
+<code class=changelog-overview2>ダッシュボード</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">ダッシュボード</span>&gt;<span class="uitext">インスタンス</span>メニューから、非リアルタイムモードになったらその時刻の<span class="uitext">SQL統計</span>メニューへ移動できるボタンの追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>Flexボード</span>メニューで補助チャートの小数点以下桁数の調整機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Kubernetes</code>
-<code class="changelog-date">2023年10月25日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>利用内訳</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">ダ  ッシュボード</span>&gt;<span class="uitext">コンテナマップ</span>メニューから、ブロックカラー表示指標にアプリケーション関連フィールドも選択できるように追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>請求書プレビュー</span>メニューから使用量数値をクリックすると、使用量の詳細情報を表示する機能を追加</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Cloud</code>
-<code class="changelog-date">2023年10月25日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">サイトマップ</span>&gt;<span class="uitext">ユーザー行為</span>メニューの追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アプリケーションダッシュボード</span>メニューの各ウィジェットにツールチップや関連情報、多言語対応を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>TXマップ</span>メニューの変更</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Log</code>
-<code class="changelog-date">2023年10月25日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>共通</code>
 <ul>
-<li><code class="Feature">Feature</code><span class="uitext">ログ</span>&gt;<span class="uitext">ログ設定</span>&gt;<span class="uitext">ログプライマリパーサ設定</span>タブからパーサーを追加する場合、<span class="uitext">ログ検出条件</span>の検索値入力時の予約語に対する有効性検証を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>SQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>#VALUE!</span> > <span class=uitext>エージェントアップデート</span>メニューの新しいUI適用及び機能の変更</li>
 </ul>
 </li>
 <li>
-<code class="changelog-overview">Browser</code>
-<code class="changelog-date">2023年10月25日</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>PostgreSQL / MySQL</code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">サイトマップ</span> &gt; <span class="uitext">ユーザー行為</span> メニューの追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">AJAX Hitmap</span> メニューの追加</li>
+<li><code class=Feature>Feature</code>プロジェクトで<code class=my>V2</code>に対応していないエージェントバージョンがインストールされている場合、エージェント更新の案内文をヘッダーに表示する機能を追加</li>
 </ul>
 </li>
-</ul></div></li></div></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>タグ：</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/ja/blog/tags/新機能">新機能</a></li><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/ja/blog/tags/サービス概要">サービス概要</a></li></ul></div></div><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><div class="btnwrapper_gsW7"><button class="modalopenbtn_jIdz">フィードバック</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="ブログ記事の検索"><a class="pagination-nav__link pagination-nav__link--next" href="/ja/blog/2024-2q-summary"><div class="pagination-nav__sublabel">次の記事へ</div><div class="pagination-nav__label">2분기 안내</div></a></nav></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
-</body>
-</html>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>PosgreSQL V2</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>Wait分析</span>メニューから、エージェント設定方法の案内モーダルを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>Wait分析</span>メニューから、機能紹介モーダルを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>PG SQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</li>
+<li><code class=Feature>Feature</code>次のメニュー経路で<b>column</b>、<b>index</b>構成を確認できる機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>MySQL V2</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>統計/レポート</span> > <span class=uitext>MYSQLのSQL統計</span>メニューから、クエリ(query)にマウスオーバー時のクエリプレビュー機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>リソース</code>
+<ul>
+<li><code class=Feature>Feature</code>次のメニューで画面上段のステータスアイコンを選択すると、選択したステータスのリソースだけがフィルタリングされる機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>リソース</span>メニューの下位に、次のメニューを追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>コンテナリスト</span>メニューで<span class=uitext>Node</span>カラム項目を選択すると、該当ノード一覧がフィルタリングされた<span class=uitext>ノードリスト</span>メニューに移動する機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>クラスターサマリー</span>メニューに<b>Service</b>、<b>Ingress</b>、<b>Job</b>、<b>CronJob</b>オブジェクト一覧を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>ノードリスト</span> メニューに指標を追加 - <b>beta.kubernetes.io/instance-type</b></li>
+<li><code class=Feature>Feature</code> <span class=uitext>コンテナイメージ</span>メニューに指標を追加 - <b>Total Container CPU</b>、<b>Total Container Memory</b></li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>ログ</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>WhaTapイベント</span>: <code>#WhatapEvent</code>カテゴリのログデータの照会機能を追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>クーバーネティスイベント</span>：プロジェクト単位でKubernetesイベントに対する照会と検索機能</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<br>
+<code class=changelog-overview2>etc</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>管理</span>メニュー下位に <span class=uitext>相関プロジェクト管理</span>メニューを追加：連携プロジェクトの登録、照会、削除機能</li>
+<li><code class=Feature>Feature</code>登録された連携プロジェクトがあった場合は<span class=uitext>トレース分析</span> > <span class=uitext>テーブルビュー</span>でSQL対象サーバー情報とHTTPURL Connection情報について<span class=uitext>連携分析</span>ビューを提供</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Log</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>ログ検索</span>, <span class=uitext>ログTail</span>メニューから、ログ検索フィルター機能を改善</li>
+<li><code class=Feature>Feature</code> <span class=uitext>アラート通知</span> > <span class=uitext>アラート設定</span>メニューでリアルタイムログイベントを追加または修正しながらAPIリクエストに失敗した場合、失敗の原因をメッセージとして表示するよう改善</li>
+<li><code class=Feature>Feature</code>エージェントオプションが設定された場合、ログレベルを表示する色表示機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Browser</code>
+<code class=changelog-date>2024年01月10日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-2_0_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 2.0.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code>次のメニューから、ユーザーIDを基準に検索できるようにフィルター項目を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2023年12月18日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.10​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span> > <span class=uitext>アプリケーションダッシュボード</span>メニューでプリセット保存時、エージェント選択状態まで保存できるオプションを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Application</code>
+<code class=changelog-date>2023年12月01日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.4​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>TX検索</span>メニューで<span class=uitext>マルチTXID</span>フィルターを選択した状態で<span class=uitext>TXID</span>フィルターを除いた他のフィルターを適用できないという案内メッセージを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Applicatoin</code>
+<code class=changelog-date>2023年11月28日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.3​</a></code>
+<br>
+<code class=changelog-overview2>ダッシュボード</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>トレース分析</span>画面のテーブルで<span class=uitext>エラークラス</span>カラムを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>Flexボード</code>
+<ul>
+<li><code class=Feature>Feature</code>シリーズタイプのウィジェットに補助テーブルを設定した場合、テーブルのカラム表示を変更できるようにUIを追加</li>
+<li><code class=Feature>Feature</code>Apdexウィジェットから選択できるチャートの種類を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>メンテナンス計画</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>管理</span>><span class=uitext>メンテナンス計画</span>メニューの機能を改善</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>アラート通知</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>アラート通知</span>><span class=uitext>イベント履歴</span> メニューから、タイトル以外にもメッセージフィールドに対する検索機能を対応</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>利用内訳</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>請求書プレビュー</span>メニューから、使用量を測るオプションの追加と金額表示の改善</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Server</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>アラート通知</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>アラート設定</span>メニューから、サーバー/プロセスイベントに<span class=uitext>イベント受信タグ</span>オプションを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>共通</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>統計/レポート</span>> <span class=uitext>SQL統計</span>メニューから棒グラフをクリックすると、５分間の詳しい統計情報画面を表示する機能を追加</li>
+<li><code class=Feature>Feature</code><span class=uitext>ダッシュボード</span>><span class=uitext>インスタンス</span>、<span class=uitext>マルチインスタンス</span>メニューから<span class=uitext>アクティブセッション</span>テーブル折りたたむ(folding)ボタンの追加し、グラフチャート領域をより広い画面で確認できます。</li>
+<li><code class=Feature>Feature</code>ユーザービリティーのための<span class=uitext>SQL詳細</span>画面のUIを改善</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>PostgreSQL</code>
+<ul>
+<li><code class=Feature>Feature</code>Plan照会をJSON形式で照会できる機能を追加</li>
+<li><code class=Feature>Feature</code><code class=my>V2</code><span class=uitext>分析</span>><span class=uitext>Topオブジェクト</span>、新規メニューの追加</li>
+<li><code class=Feature>Feature</code><code class=my>V2</code><span class=uitext>アラート通知</span>><span class=uitext>アラート設定</span>メニューから、メトリクス/複合メトリクスイベントのテンプレートを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>ダッシュボード</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>コンテナマップ</span> メニューから、1分間消えたコンテナ/Podのブロックを表示する機能を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>リソース</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>クラスターサマリー</span>メニューの追加</li>
+<li><code class=Feature>Feature</code><span class=uitext>ノード詳細情報</span>メニューから<span class=uitext>コンテナ</span>テーブルに<span class=uitext>ステータス</span>カラムを追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<br>
+<code class=changelog-overview2>その他</code>
+<ul>
+<li><code class=Feature>Feature</code>ネームスペースプロジェクトの実験室メニューとして<span class=uitext>Pending Pods</span>追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Log</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>ログ設定</span>メニューから<span class=uitext>ログプライマリパーサ設定</span>、<span class=uitext>ログセカンダリーパーサの設定</span>の内容をJSON形式としてエクスポート、またはインポートする機能の追加</li>
+<li><code class=Feature>Feature</code><span class=uitext>ログ設定</span>メニューから<span class=uitext>高速インデックス</span>の設定内容をJSON形式としてエクスポート、またはインポートする機能の追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Browser</code>
+<code class=changelog-date>2023年11月22日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_114_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.114.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>AJAX Hitmap</span>メニューやウィジェット、<span class=uitext>Ajax</span><span class=uitext>分析</span>機能におけるユーザビリティ向上のためのUIの改善</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>URL</code>
+<code class=changelog-date>2023年11月01日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.3​</a></code>
+<ul>
+<li><code class=Feature>Feature</code>URL追加、編集時<span class=uitext>収集周期</span>を選択できるUIの追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>共通</code>
+<code class=changelog-date>2023年10月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<br>
+<code class=changelog-overview2>User Interface</code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>サービスカタログ</span>ページでユーザー体験を向上するためのデザイン変更</li>
+<li><code class=Feature>Feature</code>サイドバー幅の調整機能の追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Database</code>
+<code class=changelog-date>2023年10月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<br>
+<code class=changelog-overview2>共通</code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>ダッシュボード</span>><span class=uitext>インスタンス</span>メニューから、非リアルタイムモードになったらその時刻の<span class=uitext>SQL統計</span>メニューへ移動できるボタンの追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Kubernetes</code>
+<code class=changelog-date>2023年10月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>ダッシュボード</span>><span class=uitext>コンテナマップ</span>メニューから、ブロックカラー表示指標にアプリケーション関連フィールドも選択できるように追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Cloud</code>
+<code class=changelog-date>2023年10月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>サイトマップ</span>><span class=uitext>ユーザー行為</span>メニューの追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Log</code>
+<code class=changelog-date>2023年10月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code><span class=uitext>ログ</span>><span class=uitext>ログ設定</span>><span class=uitext>ログプライマリパーサ設定</span>タブからパーサーを追加する場合、<span class=uitext>ログ検出条件</span>の検索値入力時の予約語に対する有効性検証を追加</li>
+</ul>
+</li>
+<li>
+<code class=changelog-overview>Browser</code>
+<code class=changelog-date>2023年10月25日</code>
+<code class=changelog-service><a href=https://docs.whatap.io/ja/release-notes/service/service-1_112_x><img src=../img/ic-link.svg width=18px height=18px class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
+<ul>
+<li><code class=Feature>Feature</code> <span class=uitext>サイトマップ</span> > <span class=uitext>ユーザー行為</span> メニューの追加</li>
+<li><code class=Feature>Feature</code> <span class=uitext>分析</span> > <span class=uitext>AJAX Hitmap</span> メニューの追加</li>
+</ul>
+</li>
+</ul></div></li></div></div><footer class=docusaurus-mt-lg><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><b>タグ：</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a class="tag_zVej tagRegular_sFm0" href=/ja/blog/tags/新しい機能>新しい機能</a><li class=tag_QGVx><a class="tag_zVej tagRegular_sFm0" href=/ja/blog/tags/サービス概要>サービス概要</a></ul></div></div><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class=col><div class=btnwrapper_gsW7><button class=modalopenbtn_jIdz>フィードバック</button></div></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label=ブログ記事の検索><a class="pagination-nav__link pagination-nav__link--next" href=/ja/blog/2024-3q-summary><div class=pagination-nav__sublabel>次の記事へ</div><div class=pagination-nav__label>第3四半期のご案内</div></a></nav></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2023 WhaTap Labs Inc. All right reserved. Built with Docusaurus.</div></div></div></footer></div>
