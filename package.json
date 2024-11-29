@@ -25,7 +25,6 @@
     "@docusaurus/core": "^3.6.3",
     "@docusaurus/faster": "^3.6.3",
     "@docusaurus/logger": "^3.6.3",
-    "@docusaurus/module-type-aliases": "^3.6.3",
     "@docusaurus/plugin-client-redirects": "^3.6.3",
     "@docusaurus/plugin-google-analytics": "^3.6.3",
     "@docusaurus/plugin-google-gtag": "^3.6.3",
@@ -76,7 +75,6 @@
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.6.3",
-    "@docusaurus/module-type-aliases": "^3.6.3",
     "@docusaurus/tsconfig": "^3.6.3",
     "@docusaurus/types": "^3.6.3",
     "@types/color": "^3.0.4",
