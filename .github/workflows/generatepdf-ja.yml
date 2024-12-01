@@ -102,6 +102,16 @@ jobs:
         pdfcpu annot remove -pages 1 ./pdf/whatap-browser-monitoring-ja.pdf
         npx docusaurus-prince-pdf -u https://docs.whatap.io/ja/cover-npm --prince-args="--page-size='a4' --page-margin='10mm' --style=pdf-print.css" -o ./pdf/whatap-network-performance-monitoring-ja.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-network-performance-monitoring-ja.pdf
+        npx docusaurus-prince-pdf -u https://docs.whatap.io/ja/cover-openapi --prince-args="--page-size='a4' --page-margin='10mm' --style='$PATH_NAME/pdf-print.css'" -o ./pdf/whatap-open-api-ja.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-open-api-ja.pdf
+        npx docusaurus-prince-pdf -u https://docs.whatap.io/ja/best-practice-guides/about-apm-dashboard --prince-args="--page-size='a4' --page-margin='10mm' --style='$PATH_NAME/pdf-print.css'" -o ./pdf/whatap-best-practice-guides-about-apm-dashboard-ja.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-about-apm-dashboard-ja.pdf
+        npx docusaurus-prince-pdf -u https://docs.whatap.io/ja/best-practice-guides/about-apm-hitmap-class --prince-args="--page-size='a4' --page-margin='10mm' --style='$PATH_NAME/pdf-print.css'" -o ./pdf/whatap-best-practice-guides-about-apm-hitmap-class-ja.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-about-apm-hitmap-class-ja.pdf
+        npx docusaurus-prince-pdf -u https://docs.whatap.io/ja/best-practice-guides/about-server-dashboard --prince-args="--page-size='a4' --page-margin='10mm' --style='$PATH_NAME/pdf-print.css'" -o ./pdf/whatap-best-practice-guides-about-server-dashboard-ja.pdf --dest ./pdf --include-index --selector 'none'
+        pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-about-server-dashboard-ja.pdf
+        npx docusaurus-prince-pdf -u https://docs.whatap.io/ja/best-practice-guides/about-apm-dbc --prince-args="--page-size='a4' --page-margin='10mm' --style='$PATH_NAME/pdf-print.css'" -o ./pdf/whatap-best-practice-guides-about-apm-dbc-ja.pdf --dest ./pdf --include-index --selector 'none'
+        pdfcpu annot remove -pages 1 ./pdf/whatap-best-practice-guides-about-apm-dbc-ja.pdf
 
     - name: Create Release
       id: create_release
@@ -423,4 +433,54 @@ jobs:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-network-performance-monitoring-ja.pdf
         asset_name: whatap-network-performance-monitoring-ja.pdf
+        asset_content_type: application/pdf
+
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-open-api-ja.pdf
+        asset_name: whatap-open-api-ja.pdf
+        asset_content_type: application/pdf
+
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-best-practice-guides-about-apm-dashboard-ja.pdf
+        asset_name: whatap-best-practice-guides-about-apm-dashboard-ja.pdf
+        asset_content_type: application/pdf
+
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-best-practice-guides-about-apm-hitmap-class-ja.pdf
+        asset_name: whatap-best-practice-guides-about-apm-hitmap-class-ja.pdf
+        asset_content_type: application/pdf
+
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-best-practice-guides-about-server-dashboard-ja.pdf
+        asset_name: whatap-best-practice-guides-about-server-dashboard-ja.pdf
+        asset_content_type: application/pdf
+
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-best-practice-guides-about-apm-dbc-ja.pdf
+        asset_name: whatap-best-practice-guides-about-apm-dbc-ja.pdf
         asset_content_type: application/pdf
