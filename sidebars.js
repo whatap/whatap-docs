@@ -6794,25 +6794,21 @@ const sidebars = {
           label: '로그 처리하기',
           id: 'log/log-process',
         },
+        'log/log-lt',
+        'log/log-exp',
+        'log/log-search', 
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '경고 알림',
           collapsible: true,
           collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'log/learn-main-menu',
-          },
           items: [
-            'log/log-lt',
-            'log/log-exp',
-            'log/log-search',           
             'log/set-notice',
             'log/set-receive-event',
             'log/set-event-history',
             'log/real-time-notification',
-            'log/common-alert'
-          ],
+            'log/common-alert',
+          ]
         },
       ]  
     }
