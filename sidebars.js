@@ -4493,11 +4493,11 @@ const sidebars = {
       items: [
         'whatap-overview',
         // 수정 후 오픈 예정
-        {
-          type: 'doc',
-          label: '와탭 기술 문서 안내',
-          id: 'welcome-to-whatapdocs'
-        },
+        // {
+        //   type: 'doc',
+        //   label: '와탭 기술 문서 안내',
+        //   id: 'welcome-to-whatapdocs'
+        // },
         'support-env',
         'quick-guide',
         {
