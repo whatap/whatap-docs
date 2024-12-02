@@ -3,9 +3,9 @@
     "message": "はじめに",
     "description": "Navbar item with label 시작하기"
   },
-  "item.label.상품별 문서 바로가기": {
+  "item.label.상품": {
     "message": "製品",
-    "description": "Navbar item with label 상품별 문서 바로가기"
+    "description": "Navbar item with label 상품"
   },
   "item.label.Java 모니터링": {
     "message": "Javaモニタリング",

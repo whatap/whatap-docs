@@ -10,6 +10,13 @@
     "@algolia/autocomplete-plugin-algolia-insights" "1.17.7"
     "@algolia/autocomplete-shared" "1.17.7"
 
+"@algolia/autocomplete-core@1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.7.4.tgz#85ff36b2673654a393c8c505345eaedd6eaa4f70"
+  integrity sha512-daoLpQ3ps/VTMRZDEBfU8ixXd+amZcNJ4QSP3IERGyzqnL5Ch8uSRFt/4G8pUvW9c3o6GA4vtVv4I4lmnkdXyg==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.7.4"
+
 "@algolia/autocomplete-core@1.9.3":
   version "1.9.3"
   resolved "https://registry.npmjs.org/@algolia/autocomplete-core/-/autocomplete-core-1.9.3.tgz"
@@ -17,6 +24,17 @@
   dependencies:
     "@algolia/autocomplete-plugin-algolia-insights" "1.9.3"
     "@algolia/autocomplete-shared" "1.9.3"
+
+"@algolia/autocomplete-js@1.17.7":
+  version "1.17.7"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-js/-/autocomplete-js-1.17.7.tgz#4262262dce6303a14e30666a90d40e0c08f708cd"
+  integrity sha512-4rCCg2B5x6GYzLfDZ3QipWydznbaMjoIwNSEbjpJ9cd/0+4nDpRWuBPxgOSsGmE4BFEor2iwQw4uCY6RrBdpjA==
+  dependencies:
+    "@algolia/autocomplete-core" "1.17.7"
+    "@algolia/autocomplete-preset-algolia" "1.17.7"
+    "@algolia/autocomplete-shared" "1.17.7"
+    htm "^3.1.1"
+    preact "^10.13.2"
 
 "@algolia/autocomplete-plugin-algolia-insights@1.17.7":
   version "1.17.7"
@@ -31,6 +49,21 @@
   integrity sha512-a/yTUkcO/Vyy+JffmAnTWbr4/90cLzw+CC3bRbhnULr/EM0fGNvM13oQQ14f2moLMcVDyAx/leczLlAOovhSZg==
   dependencies:
     "@algolia/autocomplete-shared" "1.9.3"
+
+"@algolia/autocomplete-plugin-query-suggestions@^1.9.3":
+  version "1.17.7"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-plugin-query-suggestions/-/autocomplete-plugin-query-suggestions-1.17.7.tgz#d531f1c13b2ceee775c785a11b956a1f463d54c8"
+  integrity sha512-X8p6q5ZafdY9npvZijzmC2xWCO4nXprgz5j31obRehiq+R2HqiqPiwjpMlHr6s/fvj5vOsNN3+w2vriljfefCw==
+  dependencies:
+    "@algolia/autocomplete-core" "1.17.7"
+    "@algolia/autocomplete-js" "1.17.7"
+    "@algolia/autocomplete-preset-algolia" "1.17.7"
+    "@algolia/autocomplete-shared" "1.17.7"
+
+"@algolia/autocomplete-plugin-tags@^1.10.0":
+  version "1.17.7"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-plugin-tags/-/autocomplete-plugin-tags-1.17.7.tgz#4775493c57acc89ad854925e422d2eca8a020723"
+  integrity sha512-Id9xXk49BU+ufs3tp/dq4X+PRYN8yZijD4DWPPQWBPAnHREq9b+hh15FnHVNjTKXXg6mcA8NldFpz46gtFFv7A==
 
 "@algolia/autocomplete-preset-algolia@1.17.7":
   version "1.17.7"
@@ -51,10 +84,20 @@
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.17.7.tgz#105e84ad9d1a31d3fb86ba20dc890eefe1a313a0"
   integrity sha512-o/1Vurr42U/qskRSuhBH+VKxMvkkUVTLU6WZQr+L5lGZZLYWyhdzWjW0iGXY7EkwRTjBqvN2EsR81yCTGV/kmg==
 
+"@algolia/autocomplete-shared@1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.7.4.tgz#78aea1140a50c4d193e1f06a13b7f12c5e2cbeea"
+  integrity sha512-2VGCk7I9tA9Ge73Km99+Qg87w0wzW4tgUruvWAn/gfey1ZXgmxZtyIRBebk35R1O8TbK77wujVtCnpsGpRy1kg==
+
 "@algolia/autocomplete-shared@1.9.3":
   version "1.9.3"
   resolved "https://registry.npmjs.org/@algolia/autocomplete-shared/-/autocomplete-shared-1.9.3.tgz"
   integrity sha512-Wnm9E4Ye6Rl6sTTqjoymD+l8DjSTHsHboVRYrKgEt8Q7UHm9nYbqhN/i0fhUYA3OAEH7WA8x3jfpnmJm3rKvaQ==
+
+"@algolia/autocomplete-theme-classic@^1.10.0":
+  version "1.17.4"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-theme-classic/-/autocomplete-theme-classic-1.17.4.tgz#141a3761c1a546085f1917a73c301868a993ed8b"
+  integrity sha512-HK72OAhj0R5yYwjEO97gae+WbI7zsGeItl0Awo4H7b9VsYW5RyS4Z9EpO+WiWbYITu1EVz3mu2A6Vh/gNEszOg==
 
 "@algolia/cache-browser-local-storage@4.23.3":
   version "4.23.3"
@@ -3444,7 +3487,14 @@
   dependencies:
     "@types/mdx" "^2.0.0"
 
-"@meilisearch/instant-meilisearch@^0.22.0":
+"@meilisearch/autocomplete-client@*":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@meilisearch/autocomplete-client/-/autocomplete-client-0.4.1.tgz#6f5d45d4c08bb36c14aa34edce7623cd3dc6c9d1"
+  integrity sha512-vl+cZuo9Yjjfl6l81ElIrvyiM4ikRMNipHYhRq1MmgATPIOZ9hLDfpSGDZmrk2aCUFzVtInuLUB0657OlfAJeg==
+  dependencies:
+    "@meilisearch/instant-meilisearch" "*"
+
+"@meilisearch/instant-meilisearch@*", "@meilisearch/instant-meilisearch@^0.22.0":
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.22.0.tgz#8cfaee69406708d0dd65efe31c298e62d7bb366f"
   integrity sha512-vIIzUMgyIIqzrtukGRN3w2OEcTgVJjZpU1wTMnVVN6YPpIOZwMxOnuuufTV7xa5b5WIX53oFYVLG2MtINDShew==
@@ -8536,7 +8586,7 @@ hpack.js@^2.1.6:
     readable-stream "^2.0.1"
     wbuf "^1.1.0"
 
-htm@^3.0.0:
+htm@^3.0.0, htm@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/htm/-/htm-3.1.1.tgz"
   integrity sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==
@@ -12276,6 +12326,11 @@ preact@^10.10.0:
   version "10.22.1"
   resolved "https://registry.npmjs.org/preact/-/preact-10.22.1.tgz"
   integrity sha512-jRYbDDgMpIb5LHq3hkI0bbl+l/TQ9UnkdQ0ww+lp+4MMOdqaUYdFc5qeyP+IV8FAd/2Em7drVPeKdQxsiWCf/A==
+
+preact@^10.13.2:
+  version "10.23.2"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.23.2.tgz#52deec92796ae0f0cc6b034d9c66e0fbc1b837dc"
+  integrity sha512-kKYfePf9rzKnxOAKDpsWhg/ysrHPqT+yQ7UW4JjdnqjFIeNUnNcEJvhuA8fDenxAGWzUqtd51DfVg7xp/8T9NA==
 
 prebuild-install@^7.1.1:
   version "7.1.2"

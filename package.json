@@ -67,7 +67,12 @@
     "sass": "^1.81.0",
     "sharp": "^0.32.6",
     "styled-components": "^6.1.13",
-    "webpack": "^5.95.0"
+    "webpack": "^5.95.0",
+    "@algolia/autocomplete-core": "1.7.4",
+    "@algolia/autocomplete-plugin-query-suggestions": "^1.9.3",
+    "@algolia/autocomplete-plugin-tags": "^1.10.0",
+    "@algolia/autocomplete-theme-classic": "^1.10.0",
+    "@meilisearch/autocomplete-client": "*"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.6.3",
