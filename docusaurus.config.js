@@ -58,6 +58,7 @@ const config = {
     require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
+    [ './src/redocusaurus-preload', {}],
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
@@ -190,28 +191,6 @@ const config = {
       },
     ]
   ],
-  // webpack: {
-  //   jsLoader: (isServer) => ({
-  //     loader: require.resolve("swc-loader"),
-  //     options: {
-  //       jsc: {
-  //         parser: {
-  //           syntax: "typescript",
-  //           tsx: true,
-  //         },
-  //         transform: {
-  //           react: {
-  //             runtime: 'automatic',
-  //           },
-  //         },
-  //         target: "es2017",
-  //       },
-  //       module: {
-  //         type: isServer ? "commonjs" : "es6",
-  //       },
-  //     },
-  //   }),
-  // },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
