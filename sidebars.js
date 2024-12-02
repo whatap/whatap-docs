@@ -6178,28 +6178,8 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'server/learn-main-menu',
-          },
+          label: '대시보드',
           items: [
-            // {
-            //   type: 'category',
-            //   label: '대시보드',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   link: {
-            //     type: 'doc',
-            //     id: 'server/dashboard-intro'
-            //   },
-            //   items: [
-            //     'server/resourceboard',
-            //     'server/compoundeye',
-            //   ]
-            // },
             'server/resourceboard',
             'server/compoundeye',
             {
@@ -6215,109 +6195,115 @@ const sidebars = {
                 `server/server-inventory-map-details`,
                 `server/server-inventory-map-group`
               ]
-            },
+            }, 
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/flex-board',
+          },
+          items: [
+            'server/flexboard-template',
+            'server/flexboard-create',
+            'server/flexboard-manage',
+            'server/flexboard-metric-widget',
+            'server/flexboard-widget-manage',
+            'server/flexboard-widget-template',
+            'server/flexboard-mode',
+            'server/flexboard-share',
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/metrics-intro'
+          },
+          items: [
+            'server/metrics-server',
+            'server/metrics-search',
+            'server/metrics-chart',
+            'server/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '서버 목록',
+          collapsible: true,
+          collapsed: true,
+          // link: {
+          //   type: 'doc',
+          //   id: 'server/metrics-intro'
+          //},
+          items: [
+            'server/server-inventory',
+            'server/server-list',
+            'server/server-detail',
+            'server/server-detail-process-group',
+          ]
+        },
+        // 'server/server-list',
+        // 'server/server-detail',
+        'server/cube',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/report-intro'
+          },
+          items: [
+            'server/report',
+            'server/integrated-report',
+          ]
+        },
+        // {
+        //   type: 'category',
+        //   label: '분석하기',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   items: [
+        //     'server/server-list',
+        //     'server/server-detail',
+        //     {
+        //       type: 'category',
+        //       label: '보고서',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       link: {
+        //         type: 'doc',
+        //         id: 'server/report-intro'
+        //       },
+        //       items: [
+        //         'server/report',
+        //         'server/integrated-report',
+        //       ]
+        //     }
+        //   ]
+        // },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/set-notice'
+          },
+          items: [
             {
               type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'server/flex-board',
-              },
-              items: [
-                'server/flexboard-template',
-                'server/flexboard-create',
-                'server/flexboard-manage',
-                'server/flexboard-metric-widget',
-                'server/flexboard-widget-manage',
-                'server/flexboard-widget-template',
-                'server/flexboard-mode',
-                'server/flexboard-share',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'server/metrics-intro'
-              },
-              items: [
-                'server/metrics-server',
-                'server/metrics-search',
-                'server/metrics-chart',
-                'server/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '서버 목록',
-              collapsible: true,
-              collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'server/metrics-intro'
-              //},
-              items: [
-                'server/server-inventory',
-                'server/server-list',
-                'server/server-detail',
-                'server/server-detail-process-group',
-              ]
-            },
-            // 'server/server-list',
-            // 'server/server-detail',
-            'server/cube',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'server/report-intro'
-              },
-              items: [
-                'server/report',
-                'server/integrated-report',
-              ]
-            },
-            // {
-            //   type: 'category',
-            //   label: '분석하기',
-            //   collapsible: true,
-            //   collapsed: true,
-            //   items: [
-            //     'server/server-list',
-            //     'server/server-detail',
-            //     {
-            //       type: 'category',
-            //       label: '보고서',
-            //       collapsible: true,
-            //       collapsed: true,
-            //       link: {
-            //         type: 'doc',
-            //         id: 'server/report-intro'
-            //       },
-            //       items: [
-            //         'server/report',
-            //         'server/integrated-report',
-            //       ]
-            //     }
-            //   ]
-            // },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'server/set-notice'
-              },
+              label: '이벤트 설정',
               items: [
                 'server/warning-notice',
                 {
@@ -6329,21 +6315,21 @@ const sidebars = {
                 'server/set-notification-message',
                 'server/set-event-detect-anomal',
                 'server/set-event-log',
-                'server/set-receive-event',
-                'server/set-event-history',
-                'server/set-event-format',
-                'server/real-time-notification',
-                'server/common-alert'
               ]
-            },
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
-            'server/labs'
-          ],
+            },           
+            'server/set-receive-event',
+            'server/set-event-history',
+            'server/set-event-format',
+            'server/real-time-notification',
+            'server/common-alert'
+          ]
         },
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+        'server/labs'
       ]  
     }
   ],
