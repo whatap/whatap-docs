@@ -58,6 +58,7 @@ const config = {
     require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
+    [ './src/redocusaurus-preload', {}],
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
@@ -190,28 +191,6 @@ const config = {
       },
     ]
   ],
-  // webpack: {
-  //   jsLoader: (isServer) => ({
-  //     loader: require.resolve("swc-loader"),
-  //     options: {
-  //       jsc: {
-  //         parser: {
-  //           syntax: "typescript",
-  //           tsx: true,
-  //         },
-  //         transform: {
-  //           react: {
-  //             runtime: 'automatic',
-  //           },
-  //         },
-  //         target: "es2017",
-  //       },
-  //       module: {
-  //         type: isServer ? "commonjs" : "es6",
-  //       },
-  //     },
-  //   }),
-  // },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -706,21 +685,21 @@ const config = {
             position: 'left',
             label: 'FAQ',
           },
-          // {
-          //   to: 'blog', 
-          //   label: '새로운 기능', 
-          //   position: 'left', 
-          //   className: 'iflang-link',
-          // },
+          {
+            to: 'learning-guides', 
+            label: 'Learning', 
+            position: 'left', 
+            className: 'iflang-link',
+          },
           // 다국어 조건 블로그
           {
             to: (function () {
               const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
               return locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog';
             })(),
-            label: '새로운 기능',
-            position: 'left',
-            className: 'iflang-link',
+            label: 'What\'s New',
+            position: 'right',
+            className: 'iflang-link box',
           },
           {
             type: 'localeDropdown',
