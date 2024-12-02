@@ -787,7 +787,7 @@ export default function pages() {
                     </Description>
                 </FlexCard>
 
-                <FlexCard icons="Docs" type="document" url="welcome-to-whatapdocs" >
+                {/* <FlexCard icons="Docs" type="document" url="welcome-to-whatapdocs" >
                     <Heading as="h5">
                         {translate({
                             id: "index.pages.section.reference.docs",
@@ -800,7 +800,7 @@ export default function pages() {
                             message: "WhaTap Docs 페이지 활용법을 안내합니다."
                         })}
                     </Description>
-                </FlexCard>
+                </FlexCard> */}
 
                 <FlexCard icons="Book" type="document" url="license/licenses" >
                     <Heading as="h5">

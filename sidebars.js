@@ -4622,11 +4622,12 @@ const sidebars = {
       collapsed: false,
       items: [
         'whatap-overview',
-        {
-          type: 'doc',
-          label: '와탭 기술 문서 안내',
-          id: 'welcome-to-whatapdocs'
-        },
+        // 수정 후 오픈 예정
+        // {
+        //   type: 'doc',
+        //   label: '와탭 기술 문서 안내',
+        //   id: 'welcome-to-whatapdocs'
+        // },
         'support-env',
         'quick-guide',
         {
@@ -4634,8 +4635,8 @@ const sidebars = {
           label: '모바일 앱',
           id: 'mobile-app'
         },
-        'about-billing',
-        'software-proxy',
+        // 'about-billing',
+        // 'software-proxy',
         'main-ui-intro-v2',
         {
           type: 'html',
@@ -5023,30 +5024,27 @@ const sidebars = {
         id: 'reference'
       },
       items: [
-        'metrics/common-metrics-intro',
+        {
+          type: 'link',
+          label: 'Open API',
+          href: 'openapi-spec' 
+        },
+        'software-proxy',
+        // {
+        //   type: 'doc',
+        //   label: '와탭 기술 문서 안내',
+        //   id: 'welcome-to-whatapdocs'
+        // },
         {
           type: 'category',
-          label: 'MXQL',
-          collapsible: true,
-          collapsed: true,
-          // description: 'MXQL은 와탭의 성능 데이터(메트릭스)를 유연한게 조회하기 위한 쿼리 언어입니다.',
+          label: '라이선스',
           link: {
             type: 'doc',
-            id: 'mxql/mxql-overview',
+            id: 'license/licenses'
           },
           items: [
-            'mxql/mxql-guide',
-            {
-              type: 'category',
-              label: '단계별 명령어 가이드',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mxql/mxql-select',
-                'mxql/mxql-loading',
-                'mxql/mxql-calculate',
-              ]
-            },
+            'license/license-open-sources',
+            'license/license-open-sources-lib',
           ]
         },
         {
@@ -5062,10 +5060,38 @@ const sidebars = {
             'faq/db-faq',
             'faq/log-faq',
             'faq/agent-faq',
+            'about-billing',
             'faq/support-faq',
           ]
         },
-        'glossary/glossary',
+
+        // 'metrics/common-metrics-intro',
+        // {
+        //   type: 'category',
+        //   label: 'MXQL',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   // description: 'MXQL은 와탭의 성능 데이터(메트릭스)를 유연한게 조회하기 위한 쿼리 언어입니다.',
+        //   link: {
+        //     type: 'doc',
+        //     id: 'mxql/mxql-overview',
+        //   },
+        //   items: [
+        //     'mxql/mxql-guide',
+        //     {
+        //       type: 'category',
+        //       label: '단계별 명령어 가이드',
+        //       collapsible: true,
+        //       collapsed: true,
+        //       items: [
+        //         'mxql/mxql-select',
+        //         'mxql/mxql-loading',
+        //         'mxql/mxql-calculate',
+        //       ]
+        //     },
+        //   ]
+        // },
+        // 'glossary/glossary',
       ]
     }
   ],
