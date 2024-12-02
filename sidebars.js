@@ -4534,6 +4534,7 @@ const sidebars = {
       },
       items: [
         'best-practice-guides/real-time-monitoring-for-it-infra',
+        // 'metrics/common-metrics-intro',
         {
           type: 'category',
           label: '대시보드 분석',
@@ -4610,7 +4611,52 @@ const sidebars = {
             },
             'best-practice-guides/about-tcp-port',
           ]
-        }
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
+          type: 'category',
+          label: 'MXQL',
+          collapsible: true,
+          collapsed: true,
+          // description: 'MXQL은 와탭의 성능 데이터(메트릭스)를 유연한게 조회하기 위한 쿼리 언어입니다.',
+          link: {
+            type: 'doc',
+            id: 'mxql/mxql-overview',
+          },
+          items: [
+            'mxql/mxql-guide',
+            {
+              type: 'category',
+              label: '단계별 명령어 가이드',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mxql/mxql-select',
+                'mxql/mxql-loading',
+                'mxql/mxql-calculate',
+              ]
+            },
+          ]
+        },
+        // 'glossary/glossary',
+        {
+          type: 'category',
+          label: '용어 알아보기',
+          collapsible: true,
+          collapsed: true,
+          // description: 'MXQL은 와탭의 성능 데이터(메트릭스)를 유연한게 조회하기 위한 쿼리 언어입니다.',
+          // link: {
+          //   type: 'doc',
+          //   id: 'mxql/mxql-overview',
+          // },
+          items: [
+            'metrics/common-metrics-intro',
+            'glossary/glossary',
+          ]
+        },
       ]
     }
   ],
