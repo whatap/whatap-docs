@@ -4536,6 +4536,10 @@ const sidebars = {
         'best-practice-guides/real-time-monitoring-for-it-infra',
         // 'metrics/common-metrics-intro',
         {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
+        {
           type: 'category',
           label: '대시보드 분석',
           collapsible: true,
@@ -6422,225 +6426,219 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          // link: {
+          //   type: 'doc',
+          //   id: 'kubernetes/container-map',
+          // },
+          items: [
+            {
+              type: 'category',
+              label: '컨테이너 맵',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/container-map',
+              },
+              items: [
+                'kubernetes/container-view',
+                'kubernetes/container-group',
+                'kubernetes/container-status',
+                'kubernetes/foreign-project',
+              ]
+            },
+            {
+              type: 'category',
+              label: '컨테이너 맵 상세 분석',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/container-map-detail-mode'
+              },
+              items: [
+                'kubernetes/container-map-target-info',
+                'kubernetes/container-map-trace',
+                'kubernetes/container-map-metrics',
+                'kubernetes/container-map-log',
+                'kubernetes/container-map-event',
+                'kubernetes/container-map-call-information',
+              ],
+            },
+            'kubernetes/node-map',
+            'kubernetes/performance-summary',
+            'kubernetes/cluster-summary',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'kubernetes/learn-kubernetes-main-menu'
+            id: 'kubernetes/flex-board',
+          },
+          items: [
+            'kubernetes/flexboard-template',
+            'kubernetes/flexboard-create',
+            'kubernetes/flexboard-manage',
+            'kubernetes/flexboard-metric-widget',
+            'kubernetes/flexboard-widget-manage',
+            'kubernetes/flexboard-widget-template',
+            'kubernetes/flexboard-mode',
+            'kubernetes/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '컨테이너',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/resource-container-list',
+            'kubernetes/resource-container-volume',
+            'kubernetes/container-images',
+            'kubernetes/analysis-oom-container',
+          ],
+        },
+        {
+          type: 'category',
+          label: '워크로드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/resource-pod-list',
+            'kubernetes/pending-pod-status',
+            'kubernetes/resource-application-list',
+            'kubernetes/deployment-list',
+            // 'kubernetes/service-list',
+          ],
+        },
+        {
+          type: 'category',
+          label: '클러스터',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/resource-node-list',
+            'kubernetes/node-details',
+            'kubernetes/node-disk-list',
+            'kubernetes/node-timeline',
+            'kubernetes/object-manifest',
+            'kubernetes/kubernetes-event',
+            'kubernetes/kube-apiserver-dashboard',
+            'kubernetes/kube-apiserver-metrics-search',
+            'kubernetes/etcd-dashboard',
+            'kubernetes/service-list',
+            'kubernetes/ingress-list',
+            'kubernetes/resource-namespace',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              id: 'kubernetes/pod-init-perform-v2',
+              className: 'newfunc'
+            },
+            'kubernetes/pod-init-perform',
+            'kubernetes/trs-view',
+            'kubernetes/multiservice-hitmap',
+            'kubernetes/analysis-msa',
+            'kubernetes/analysis-stack',
+          ],
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/metrics-intro'
+          },
+          items: [
+            'kubernetes/metrics-kubernetes',
+            'kubernetes/metrics-search',
+            {
+              type: 'doc',
+              id: 'kubernetes/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'kubernetes/metrics-chart',
+            'kubernetes/metrics-detect-anormal',
+          ]
+        },
+        'kubernetes/log',
+        'kubernetes/report-intro',
+        'kubernetes/integrated-report',
+        {
+          type: 'category',
+          label: '애플리케이션',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/dashboard',
+            'kubernetes/dashboard-hitmap-trace',
+            'kubernetes/application-daily-stat',
+            'kubernetes/tx-profile',
+            // 'kubernetes/instance-performance-analysis',
+            {
+              type: 'category',
+              label: '인스턴스 성능 모니터링',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  type: 'link',
+                  label: 'Java',
+                  href: '../java/instance-performance-analysis',
+                },
+                {
+                  type: 'link',
+                  label: 'Node.js',
+                  href: '../nodejs/instance-performance-analysis',
+                },
+                {
+                  type: 'link',
+                  label: 'Python',
+                  href: '../python/instance-performance-analysis',
+                },
+                {
+                  type: 'link',
+                  label: 'PHP',
+                  href: '../php/instance-performance-analysis',
+                },
+                {
+                  type: 'link',
+                  label: 'Go',
+                  href: '../golang/instance-performance-analysis',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'kubernetes/set-notice'
           },
           items: [
             {
               type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              // link: {
-              //   type: 'doc',
-              //   id: 'kubernetes/container-map',
-              // },
-              items: [
-                {
-                  type: 'category',
-                  label: '컨테이너 맵',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'kubernetes/container-map',
-                  },
-                  items: [
-                    'kubernetes/container-view',
-                    'kubernetes/container-group',
-                    'kubernetes/container-status',
-                    'kubernetes/foreign-project',
-                  ]
-                },
-                {
-                  type: 'category',
-                  label: '컨테이너 맵 상세 분석',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'kubernetes/container-map-detail-mode'
-                  },
-                  items: [
-                    'kubernetes/container-map-target-info',
-                    'kubernetes/container-map-trace',
-                    'kubernetes/container-map-metrics',
-                    'kubernetes/container-map-log',
-                    'kubernetes/container-map-event',
-                    'kubernetes/container-map-call-information',
-                  ],
-                },
-                'kubernetes/node-map',
-                'kubernetes/performance-summary',
-                'kubernetes/cluster-summary',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'kubernetes/flex-board',
-              },
-              items: [
-                'kubernetes/flexboard-template',
-                'kubernetes/flexboard-create',
-                'kubernetes/flexboard-manage',
-                'kubernetes/flexboard-metric-widget',
-                'kubernetes/flexboard-widget-manage',
-                'kubernetes/flexboard-widget-template',
-                'kubernetes/flexboard-mode',
-                'kubernetes/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '컨테이너',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'kubernetes/resource-container-list',
-                'kubernetes/resource-container-volume',
-                'kubernetes/container-images',
-                'kubernetes/analysis-oom-container',
-              ],
-            },
-            {
-              type: 'category',
-              label: '워크로드',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'kubernetes/resource-pod-list',
-                'kubernetes/pending-pod-status',
-                'kubernetes/resource-application-list',
-                'kubernetes/deployment-list',
-                // 'kubernetes/service-list',
-              ],
-            },
-            {
-              type: 'category',
-              label: '클러스터',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'kubernetes/resource-node-list',
-                'kubernetes/node-details',
-                'kubernetes/node-disk-list',
-                'kubernetes/node-timeline',
-                'kubernetes/object-manifest',
-                'kubernetes/kubernetes-event',
-                'kubernetes/kube-apiserver-dashboard',
-                'kubernetes/kube-apiserver-metrics-search',
-                'kubernetes/etcd-dashboard',
-                'kubernetes/service-list',
-                'kubernetes/ingress-list',
-                'kubernetes/resource-namespace',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                {
-                  type: 'doc',
-                  id: 'kubernetes/pod-init-perform-v2',
-                  className: 'newfunc'
-                },
-                'kubernetes/pod-init-perform',
-                'kubernetes/trs-view',
-                'kubernetes/multiservice-hitmap',
-                'kubernetes/analysis-msa',
-                'kubernetes/analysis-stack',
-              ],
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'kubernetes/metrics-intro'
-              },
-              items: [
-                'kubernetes/metrics-kubernetes',
-                'kubernetes/metrics-search',
-                {
-                  type: 'doc',
-                  id: 'kubernetes/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'kubernetes/metrics-chart',
-                'kubernetes/metrics-detect-anormal',
-              ]
-            },
-            'kubernetes/log',
-            'kubernetes/report-intro',
-            'kubernetes/integrated-report',
-            {
-              type: 'category',
-              label: '애플리케이션',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'kubernetes/dashboard',
-                'kubernetes/dashboard-hitmap-trace',
-                'kubernetes/application-daily-stat',
-                'kubernetes/tx-profile',
-                // 'kubernetes/instance-performance-analysis',
-                {
-                  type: 'category',
-                  label: '인스턴스 성능 모니터링',
-                  collapsible: true,
-                  collapsed: true,
-                  items: [
-                    {
-                      type: 'link',
-                      label: 'Java',
-                      href: '../java/instance-performance-analysis',
-                    },
-                    {
-                      type: 'link',
-                      label: 'Node.js',
-                      href: '../nodejs/instance-performance-analysis',
-                    },
-                    {
-                      type: 'link',
-                      label: 'Python',
-                      href: '../python/instance-performance-analysis',
-                    },
-                    {
-                      type: 'link',
-                      label: 'PHP',
-                      href: '../php/instance-performance-analysis',
-                    },
-                    {
-                      type: 'link',
-                      label: 'Go',
-                      href: '../golang/instance-performance-analysis',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'kubernetes/set-notice'
-              },
+              label: '이벤트 설정',
               items: [
                 'kubernetes/container-warning-notice',
                 {
@@ -6653,15 +6651,15 @@ const sidebars = {
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
                 'kubernetes/set-event-log',
-                'kubernetes/set-receive-event',
-                'kubernetes/set-event-history',
-                'kubernetes/real-time-notification',
-                'kubernetes/common-alert'
-              ],
+              ]
             },
-            'kubernetes/labs'
+            'kubernetes/set-receive-event',
+            'kubernetes/set-event-history',
+            'kubernetes/real-time-notification',
+            'kubernetes/common-alert'
           ],
-        }
+        },
+        'kubernetes/labs'
       ]
     }
   ],
