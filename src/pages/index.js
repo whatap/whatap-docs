@@ -360,7 +360,7 @@ export default function pages() {
         </section>
         <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-            <Heading as="h2" className={styles.textcenter}>
+            <Heading as="h2" className={styles.textcenter} id="shortcut-product">
                 {translate({
                     id: "index.pages.section.product",
                     message: "상품"
