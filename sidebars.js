@@ -4897,7 +4897,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Open API',
-          href: 'openapi-spec' 
+          href: '/openapi-spec' 
         },
         'software-proxy',
         // {
