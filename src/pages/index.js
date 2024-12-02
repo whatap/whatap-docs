@@ -100,7 +100,7 @@ function ThereeSteps() {
     return (
         <section className={clsx(styles.gettingStart, styles.guide, styles.justifycontentcenter)}>
             <Step order={1}>
-                <Link to="quick-guide/#account" className={styles.guidelink}>
+                <Link to="quick-guide#account" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.register",
@@ -117,7 +117,7 @@ function ThereeSteps() {
             </Step>
             <RightArrow/>
             <Step order={2}>
-                <Link to="quick-guide/#cproject" className={styles.guidelink}>
+                <Link to="quick-guide#cproject" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.project",
@@ -134,7 +134,7 @@ function ThereeSteps() {
             </Step>
             <RightArrow/>
             <Step order={3}>
-                <Link to="quick-guide/#install" className={styles.guidelink}>
+                <Link to="quick-guide#install" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.agentInstall",
@@ -151,7 +151,7 @@ function ThereeSteps() {
             </Step>
             <RightArrow/>
             <Step order={4}>
-                <Link to="quick-guide/#dashboard" className={styles.guidelink}>
+                <Link to="quick-guide#dashboard" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.viewDashboard",
