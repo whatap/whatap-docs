@@ -4728,341 +4728,341 @@ const sidebars = {
       ]
     }
   ],
-  cloudSidebar: [
-    {
-      type: 'category',
-      label: '클라우드 모니터링',
-      collapsible: false,
-      collapsed: false,
-      link: {
-        type: 'doc',
-        id: 'ref-cloud/cloud',
-      },
-      items: [
-        {
-          type: 'category',
-          label: 'Amazon ECS',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'amazon-ecs/introduction'
-          },
-          items: [
-            'amazon-ecs/install-agent',
-            {
-              type: 'category',
-              label: '주요 메뉴 알아보기',
-              collapsible: true,
-              collapsed: false,
-              link: {
-                type: 'doc',
-                id: 'amazon-ecs/learn-main-menu'
-              },
-              items: [
-                'amazon-ecs/dashboard',
-                {
-                  type: 'category',
-                  label: 'Flex 보드',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'amazon-ecs/flexboard',
-                  },
-                  items: [
-                    'amazon-ecs/flexboard-template',
-                    'amazon-ecs/flexboard-create',
-                    'amazon-ecs/flexboard-manage',
-                    'amazon-ecs/flexboard-metric-widget',
-                    'amazon-ecs/flexboard-widget-manage',
-                    'amazon-ecs/flexboard-widget-template',
-                    'amazon-ecs/flexboard-mode',
-                    'amazon-ecs/flexboard-share',
-                  ]
-                },
-                'amazon-ecs/metrics-intro',
-                {
-                  type: 'category',
-                  label: '알림 설정하기',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'amazon-ecs/set-notice',
-                  },
-                  items: [
-                    'amazon-ecs/warning-and-history',
-                    'amazon-ecs/metric-warning-notice',
-                    'amazon-ecs/set-receive-event',
-                    'amazon-ecs/real-time-notification',
-                    'amazon-ecs/common-alert'
-                  ]
-                },
-              ],
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Amazon CloudWatch',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'amazon-cloudwatch/install-agent'
-          },
-          items: [
-            'amazon-cloudwatch/install-agent',
-            {
-              type: 'category',
-              label: '주요 메뉴 알아보기',
-              collapsible: true,
-              collapsed: false,
-              link: {
-                type: 'doc',
-                id: 'amazon-cloudwatch/learn-main-menu'
-              },
-              items: [
-                'amazon-cloudwatch/dashboard',
-                {
-                  type: 'category',
-                  label: 'Flex 보드',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'amazon-cloudwatch/flexboard',
-                  },
-                  items: [
-                    'amazon-cloudwatch/flexboard-template',
-                    'amazon-cloudwatch/flexboard-create',
-                    'amazon-cloudwatch/flexboard-manage',
-                    'amazon-cloudwatch/flexboard-metric-widget',
-                    'amazon-cloudwatch/flexboard-widget-manage',
-                    'amazon-cloudwatch/flexboard-widget-template',
-                    'amazon-cloudwatch/flexboard-mode',
-                    'amazon-cloudwatch/flexboard-share',
-                  ]
-                },
-                'amazon-cloudwatch/metrics-intro',
-                {
-                  type: 'category',
-                  label: '알림 설정하기',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'amazon-cloudwatch/set-notice',
-                  },
-                  items: [
-                    'amazon-cloudwatch/warning-and-history',
-                    'amazon-cloudwatch/metric-warning-notice',
-                    'amazon-cloudwatch/set-receive-event',
-                    'amazon-cloudwatch/real-time-notification',
-                    'amazon-cloudwatch/common-alert'
-                  ]
-                },
-              ],
+  // cloudSidebar: [
+  //   {
+  //     type: 'category',
+  //     label: '클라우드 모니터링',
+  //     collapsible: false,
+  //     collapsed: false,
+  //     link: {
+  //       type: 'doc',
+  //       id: 'ref-cloud/cloud',
+  //     },
+  //     items: [
+  //       {
+  //         type: 'category',
+  //         label: 'Amazon ECS',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'amazon-ecs/introduction'
+  //         },
+  //         items: [
+  //           'amazon-ecs/install-agent',
+  //           {
+  //             type: 'category',
+  //             label: '주요 메뉴 알아보기',
+  //             collapsible: true,
+  //             collapsed: false,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'amazon-ecs/learn-main-menu'
+  //             },
+  //             items: [
+  //               'amazon-ecs/dashboard',
+  //               {
+  //                 type: 'category',
+  //                 label: 'Flex 보드',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'amazon-ecs/flexboard',
+  //                 },
+  //                 items: [
+  //                   'amazon-ecs/flexboard-template',
+  //                   'amazon-ecs/flexboard-create',
+  //                   'amazon-ecs/flexboard-manage',
+  //                   'amazon-ecs/flexboard-metric-widget',
+  //                   'amazon-ecs/flexboard-widget-manage',
+  //                   'amazon-ecs/flexboard-widget-template',
+  //                   'amazon-ecs/flexboard-mode',
+  //                   'amazon-ecs/flexboard-share',
+  //                 ]
+  //               },
+  //               'amazon-ecs/metrics-intro',
+  //               {
+  //                 type: 'category',
+  //                 label: '알림 설정하기',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'amazon-ecs/set-notice',
+  //                 },
+  //                 items: [
+  //                   'amazon-ecs/warning-and-history',
+  //                   'amazon-ecs/metric-warning-notice',
+  //                   'amazon-ecs/set-receive-event',
+  //                   'amazon-ecs/real-time-notification',
+  //                   'amazon-ecs/common-alert'
+  //                 ]
+  //               },
+  //             ],
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         type: 'category',
+  //         label: 'Amazon CloudWatch',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'amazon-cloudwatch/install-agent'
+  //         },
+  //         items: [
+  //           'amazon-cloudwatch/install-agent',
+  //           {
+  //             type: 'category',
+  //             label: '주요 메뉴 알아보기',
+  //             collapsible: true,
+  //             collapsed: false,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'amazon-cloudwatch/learn-main-menu'
+  //             },
+  //             items: [
+  //               'amazon-cloudwatch/dashboard',
+  //               {
+  //                 type: 'category',
+  //                 label: 'Flex 보드',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'amazon-cloudwatch/flexboard',
+  //                 },
+  //                 items: [
+  //                   'amazon-cloudwatch/flexboard-template',
+  //                   'amazon-cloudwatch/flexboard-create',
+  //                   'amazon-cloudwatch/flexboard-manage',
+  //                   'amazon-cloudwatch/flexboard-metric-widget',
+  //                   'amazon-cloudwatch/flexboard-widget-manage',
+  //                   'amazon-cloudwatch/flexboard-widget-template',
+  //                   'amazon-cloudwatch/flexboard-mode',
+  //                   'amazon-cloudwatch/flexboard-share',
+  //                 ]
+  //               },
+  //               'amazon-cloudwatch/metrics-intro',
+  //               {
+  //                 type: 'category',
+  //                 label: '알림 설정하기',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'amazon-cloudwatch/set-notice',
+  //                 },
+  //                 items: [
+  //                   'amazon-cloudwatch/warning-and-history',
+  //                   'amazon-cloudwatch/metric-warning-notice',
+  //                   'amazon-cloudwatch/set-receive-event',
+  //                   'amazon-cloudwatch/real-time-notification',
+  //                   'amazon-cloudwatch/common-alert'
+  //                 ]
+  //               },
+  //             ],
               
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Azure Monitor',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'azure/install-agent'
-          },
-          items: [
-            'azure/install-agent',
-            {
-              type: 'category',
-              label: '주요 메뉴 알아보기',
-              collapsible: true,
-              collapsed: false,
-              link: {
-                type: 'doc',
-                id: 'azure/learn-main-menu'
-              },
-              items: [
-                // 'azure/dashboard',
-                {
-                  type: 'category',
-                  label: 'Flex 보드',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'azure/flexboard',
-                  },
-                  items: [
-                    'azure/flexboard-template',
-                    'azure/flexboard-create',
-                    'azure/flexboard-manage',
-                    'azure/flexboard-metric-widget',
-                    'azure/flexboard-widget-manage',
-                    'azure/flexboard-widget-template',
-                    'azure/flexboard-mode',
-                    'azure/flexboard-share',
-                  ]
-                },
-                'azure/metrics-intro',
-                {
-                  type: 'category',
-                  label: '알림 설정하기',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'azure/set-notice',
-                  },
-                  items: [
-                    'azure/warning-and-history',
-                    'azure/metric-warning-notice',
-                    'azure/set-receive-event',
-                    'azure/real-time-notification',
-                    'azure/common-alert'
-                  ]
-                },
-              ],
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Naver Cloud Monitoring',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'ncloud/install-agent'
-          },
-          items: [
-            'ncloud/install-agent',
-            {
-              type: 'category',
-              label: '주요 메뉴 알아보기',
-              collapsible: true,
-              collapsed: false,
-              link: {
-                type: 'doc',
-                id: 'ncloud/learn-main-menu'
-              },
-              items: [
-                // 'ncloud/dashboard',
-                {
-                  type: 'category',
-                  label: 'Flex 보드',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'ncloud/flexboard',
-                  },
-                  items: [
-                    'ncloud/flexboard-template',
-                    'ncloud/flexboard-create',
-                    'ncloud/flexboard-manage',
-                    'ncloud/flexboard-metric-widget',
-                    'ncloud/flexboard-widget-manage',
-                    'ncloud/flexboard-widget-template',
-                    'ncloud/flexboard-mode',
-                    'ncloud/flexboard-share',
-                  ]
-                },
-                'ncloud/metrics-intro',
-                {
-                  type: 'category',
-                  label: '알림 설정하기',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'ncloud/set-notice',
-                  },
-                  items: [
-                    'ncloud/warning-and-history',
-                    'ncloud/metric-warning-notice',
-                    'ncloud/set-receive-event',
-                    'ncloud/real-time-notification',
-                    'ncloud/common-alert'
-                  ]
-                },
-              ],
-            }
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Oracle Cloud Monitor',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-cloud/install-agent'
-          },
-          items: [
-            'oracle-cloud/install-agent',
-            {
-              type: 'category',
-              label: '주요 메뉴 알아보기',
-              collapsible: true,
-              collapsed: false,
-              link: {
-                type: 'doc',
-                id: 'oracle-cloud/learn-main-menu'
-              },
-              items: [
-                // 'oracle-cloud/dashboard',
-                {
-                  type: 'category',
-                  label: 'Flex 보드',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'oracle-cloud/flexboard',
-                  },
-                  items: [
-                    'oracle-cloud/flexboard-template',
-                    'oracle-cloud/flexboard-create',
-                    'oracle-cloud/flexboard-manage',
-                    'oracle-cloud/flexboard-metric-widget',
-                    'oracle-cloud/flexboard-widget-manage',
-                    'oracle-cloud/flexboard-widget-template',
-                    'oracle-cloud/flexboard-mode',
-                    'oracle-cloud/flexboard-share',
-                  ]
-                },
-                'oracle-cloud/metrics-intro',
-                {
-                  type: 'category',
-                  label: '알림 설정하기',
-                  collapsible: true,
-                  collapsed: true,
-                  link: {
-                    type: 'doc',
-                    id: 'oracle-cloud/set-notice',
-                  },
-                  items: [
-                    'oracle-cloud/warning-and-history',
-                    'oracle-cloud/metric-warning-notice',
-                    'oracle-cloud/set-receive-event',
-                    'oracle-cloud/real-time-notification',
-                    'oracle-cloud/common-alert'
-                  ]
-                },
-              ],
-            }
-          ]
-        },
-      ],
-    }
-  ],
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         type: 'category',
+  //         label: 'Azure Monitor',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'azure/install-agent'
+  //         },
+  //         items: [
+  //           'azure/install-agent',
+  //           {
+  //             type: 'category',
+  //             label: '주요 메뉴 알아보기',
+  //             collapsible: true,
+  //             collapsed: false,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'azure/learn-main-menu'
+  //             },
+  //             items: [
+  //               // 'azure/dashboard',
+  //               {
+  //                 type: 'category',
+  //                 label: 'Flex 보드',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'azure/flexboard',
+  //                 },
+  //                 items: [
+  //                   'azure/flexboard-template',
+  //                   'azure/flexboard-create',
+  //                   'azure/flexboard-manage',
+  //                   'azure/flexboard-metric-widget',
+  //                   'azure/flexboard-widget-manage',
+  //                   'azure/flexboard-widget-template',
+  //                   'azure/flexboard-mode',
+  //                   'azure/flexboard-share',
+  //                 ]
+  //               },
+  //               'azure/metrics-intro',
+  //               {
+  //                 type: 'category',
+  //                 label: '알림 설정하기',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'azure/set-notice',
+  //                 },
+  //                 items: [
+  //                   'azure/warning-and-history',
+  //                   'azure/metric-warning-notice',
+  //                   'azure/set-receive-event',
+  //                   'azure/real-time-notification',
+  //                   'azure/common-alert'
+  //                 ]
+  //               },
+  //             ],
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         type: 'category',
+  //         label: 'Naver Cloud Monitoring',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'ncloud/install-agent'
+  //         },
+  //         items: [
+  //           'ncloud/install-agent',
+  //           {
+  //             type: 'category',
+  //             label: '주요 메뉴 알아보기',
+  //             collapsible: true,
+  //             collapsed: false,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'ncloud/learn-main-menu'
+  //             },
+  //             items: [
+  //               // 'ncloud/dashboard',
+  //               {
+  //                 type: 'category',
+  //                 label: 'Flex 보드',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'ncloud/flexboard',
+  //                 },
+  //                 items: [
+  //                   'ncloud/flexboard-template',
+  //                   'ncloud/flexboard-create',
+  //                   'ncloud/flexboard-manage',
+  //                   'ncloud/flexboard-metric-widget',
+  //                   'ncloud/flexboard-widget-manage',
+  //                   'ncloud/flexboard-widget-template',
+  //                   'ncloud/flexboard-mode',
+  //                   'ncloud/flexboard-share',
+  //                 ]
+  //               },
+  //               'ncloud/metrics-intro',
+  //               {
+  //                 type: 'category',
+  //                 label: '알림 설정하기',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'ncloud/set-notice',
+  //                 },
+  //                 items: [
+  //                   'ncloud/warning-and-history',
+  //                   'ncloud/metric-warning-notice',
+  //                   'ncloud/set-receive-event',
+  //                   'ncloud/real-time-notification',
+  //                   'ncloud/common-alert'
+  //                 ]
+  //               },
+  //             ],
+  //           }
+  //         ]
+  //       },
+  //       {
+  //         type: 'category',
+  //         label: 'Oracle Cloud Monitor',
+  //         collapsible: true,
+  //         collapsed: true,
+  //         link: {
+  //           type: 'doc',
+  //           id: 'oracle-cloud/install-agent'
+  //         },
+  //         items: [
+  //           'oracle-cloud/install-agent',
+  //           {
+  //             type: 'category',
+  //             label: '주요 메뉴 알아보기',
+  //             collapsible: true,
+  //             collapsed: false,
+  //             link: {
+  //               type: 'doc',
+  //               id: 'oracle-cloud/learn-main-menu'
+  //             },
+  //             items: [
+  //               // 'oracle-cloud/dashboard',
+  //               {
+  //                 type: 'category',
+  //                 label: 'Flex 보드',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'oracle-cloud/flexboard',
+  //                 },
+  //                 items: [
+  //                   'oracle-cloud/flexboard-template',
+  //                   'oracle-cloud/flexboard-create',
+  //                   'oracle-cloud/flexboard-manage',
+  //                   'oracle-cloud/flexboard-metric-widget',
+  //                   'oracle-cloud/flexboard-widget-manage',
+  //                   'oracle-cloud/flexboard-widget-template',
+  //                   'oracle-cloud/flexboard-mode',
+  //                   'oracle-cloud/flexboard-share',
+  //                 ]
+  //               },
+  //               'oracle-cloud/metrics-intro',
+  //               {
+  //                 type: 'category',
+  //                 label: '알림 설정하기',
+  //                 collapsible: true,
+  //                 collapsed: true,
+  //                 link: {
+  //                   type: 'doc',
+  //                   id: 'oracle-cloud/set-notice',
+  //                 },
+  //                 items: [
+  //                   'oracle-cloud/warning-and-history',
+  //                   'oracle-cloud/metric-warning-notice',
+  //                   'oracle-cloud/set-receive-event',
+  //                   'oracle-cloud/real-time-notification',
+  //                   'oracle-cloud/common-alert'
+  //                 ]
+  //               },
+  //             ],
+  //           }
+  //         ]
+  //       },
+  //     ],
+  //   }
+  // ],
   referSidebar: [
     {
       type: 'category',
@@ -5381,17 +5381,7 @@ const sidebars = {
       },
       items: [
         'amazon-ecs/install-agent',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'amazon-ecs/learn-main-menu'
-          },
-          items: [
-            'amazon-ecs/dashboard',
+        'amazon-ecs/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -5431,7 +5421,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -5446,9 +5436,7 @@ const sidebars = {
                 'amazon-ecs/common-alert'
               ]
             },
-            'amazon-ecs/labs'
-          ],
-        }
+            'amazon-ecs/labs',
       ]
     }
   ],
@@ -5464,17 +5452,7 @@ const sidebars = {
       // },
       items: [
         'amazon-cloudwatch/install-agent',
-        {
-          type: 'category',
-          label: '주요 메뉴 알아보기',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: 'doc',
-            id: 'amazon-cloudwatch/learn-main-menu'
-          },
-          items: [
-            'amazon-cloudwatch/dashboard',
+        'amazon-cloudwatch/dashboard',
             {
               type: 'category',
               label: 'Flex 보드',
@@ -5513,7 +5491,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '알림 설정하기',
+              label: '경고 알림',
               collapsible: true,
               collapsed: true,
               link: {
@@ -5528,9 +5506,7 @@ const sidebars = {
                 'amazon-cloudwatch/common-alert'
               ]
             },
-            'amazon-cloudwatch/labs'
-          ],
-        }
+            'amazon-cloudwatch/labs',
       ]
     }
   ],
@@ -5546,73 +5522,61 @@ const sidebars = {
       // },
       items: [
         'azure/install-agent',
+        // 'azure/dashboard',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: 'Flex 보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'azure/learn-main-menu'
+            id: 'azure/flexboard',
           },
           items: [
-            // 'azure/dashboard',
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'azure/flexboard',
-              },
-              items: [
-                'azure/flexboard-template',
-                'azure/flexboard-create',
-                'azure/flexboard-manage',
-                'azure/flexboard-metric-widget',
-                'azure/flexboard-widget-manage',
-                'azure/flexboard-widget-template',
-                'azure/flexboard-mode',
-                'azure/flexboard-share',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'azure/metrics-intro',
-              },
-              items: [
-                'azure/metrics-search',
-                'azure/metrics-cube',
-                'azure/metrics-chart',
-                'azure/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'azure/set-notice',
-              },
-              items: [
-                'azure/metric-warning-notice',
-                'azure/set-receive-event',
-                'azure/set-event-history',
-                'azure/real-time-notification',
-                'azure/common-alert'
-              ]
-            },
-            'azure/labs'
-          ],
-        }
+            'azure/flexboard-template',
+            'azure/flexboard-create',
+            'azure/flexboard-manage',
+            'azure/flexboard-metric-widget',
+            'azure/flexboard-widget-manage',
+            'azure/flexboard-widget-template',
+            'azure/flexboard-mode',
+            'azure/flexboard-share',
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'azure/metrics-intro',
+          },
+          items: [
+            'azure/metrics-search',
+            'azure/metrics-cube',
+            'azure/metrics-chart',
+            'azure/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'azure/set-notice',
+          },
+          items: [
+            'azure/metric-warning-notice',
+            'azure/set-receive-event',
+            'azure/set-event-history',
+            'azure/real-time-notification',
+            'azure/common-alert'
+          ]
+        },
+        'azure/labs'
       ]
     }
   ],
@@ -5628,73 +5592,61 @@ const sidebars = {
       // },
       items: [
         'ncloud/install-agent',
+        // 'ncloud/dashboard',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: 'Flex 보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'ncloud/learn-main-menu'
+            id: 'ncloud/flexboard',
           },
           items: [
-            // 'ncloud/dashboard',
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'ncloud/flexboard',
-              },
-              items: [
-                'ncloud/flexboard-template',
-                'ncloud/flexboard-create',
-                'ncloud/flexboard-manage',
-                'ncloud/flexboard-metric-widget',
-                'ncloud/flexboard-widget-manage',
-                'ncloud/flexboard-widget-template',
-                'ncloud/flexboard-mode',
-                'ncloud/flexboard-share',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'ncloud/metrics-intro',
-              },
-              items: [
-                'ncloud/metrics-search',
-                'ncloud/metrics-cube',
-                'ncloud/metrics-chart',
-                'ncloud/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'ncloud/set-notice',
-              },
-              items: [
-                'ncloud/metric-warning-notice',
-                'ncloud/set-receive-event',
-                'ncloud/set-event-history',
-                'ncloud/real-time-notification',
-                'ncloud/common-alert'
-              ]
-            },
-            'ncloud/labs'
-          ],
-        }
+            'ncloud/flexboard-template',
+            'ncloud/flexboard-create',
+            'ncloud/flexboard-manage',
+            'ncloud/flexboard-metric-widget',
+            'ncloud/flexboard-widget-manage',
+            'ncloud/flexboard-widget-template',
+            'ncloud/flexboard-mode',
+            'ncloud/flexboard-share',
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'ncloud/metrics-intro',
+          },
+          items: [
+            'ncloud/metrics-search',
+            'ncloud/metrics-cube',
+            'ncloud/metrics-chart',
+            'ncloud/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'ncloud/set-notice',
+          },
+          items: [
+            'ncloud/metric-warning-notice',
+            'ncloud/set-receive-event',
+            'ncloud/set-event-history',
+            'ncloud/real-time-notification',
+            'ncloud/common-alert'
+          ]
+        },
+        'ncloud/labs'
       ]
     }
   ],
@@ -5710,73 +5662,61 @@ const sidebars = {
       // },
       items: [
         'oracle-cloud/install-agent',
+        // 'oracle-cloud/dashboard',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: 'Flex 보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'oracle-cloud/learn-main-menu'
+            id: 'oracle-cloud/flexboard',
           },
           items: [
-            // 'oracle-cloud/dashboard',
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-cloud/flexboard',
-              },
-              items: [
-                'oracle-cloud/flexboard-template',
-                'oracle-cloud/flexboard-create',
-                'oracle-cloud/flexboard-manage',
-                'oracle-cloud/flexboard-metric-widget',
-                'oracle-cloud/flexboard-widget-manage',
-                'oracle-cloud/flexboard-widget-template',
-                'oracle-cloud/flexboard-mode',
-                'oracle-cloud/flexboard-share',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-cloud/metrics-intro',
-              },
-              items: [
-                'oracle-cloud/metrics-search',
-                'oracle-cloud/metrics-cube',
-                'oracle-cloud/metrics-chart',
-                'oracle-cloud/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-cloud/set-notice',
-              },
-              items: [
-                'oracle-cloud/metric-warning-notice',
-                'oracle-cloud/set-receive-event',
-                'oracle-cloud/set-event-history',
-                'oracle-cloud/real-time-notification',
-                'oracle-cloud/common-alert'
-              ]
-            },
-            'oracle-cloud/labs'
-          ],
-        }
+            'oracle-cloud/flexboard-template',
+            'oracle-cloud/flexboard-create',
+            'oracle-cloud/flexboard-manage',
+            'oracle-cloud/flexboard-metric-widget',
+            'oracle-cloud/flexboard-widget-manage',
+            'oracle-cloud/flexboard-widget-template',
+            'oracle-cloud/flexboard-mode',
+            'oracle-cloud/flexboard-share',
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-cloud/metrics-intro',
+          },
+          items: [
+            'oracle-cloud/metrics-search',
+            'oracle-cloud/metrics-cube',
+            'oracle-cloud/metrics-chart',
+            'oracle-cloud/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-cloud/set-notice',
+          },
+          items: [
+            'oracle-cloud/metric-warning-notice',
+            'oracle-cloud/set-receive-event',
+            'oracle-cloud/set-event-history',
+            'oracle-cloud/real-time-notification',
+            'oracle-cloud/common-alert'
+          ]
+        },
+        'oracle-cloud/labs'
       ]
     }
   ],
