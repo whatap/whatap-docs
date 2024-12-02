@@ -58,7 +58,22 @@ const config = {
     require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
-    [ './src/redocusaurus-preload', {}],
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: "openapi", // plugin id
+        docsPluginId: "classic", // configured for preset-classic
+        config: {
+          openapi: {
+            specPath: "i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml",
+            outputDir: "docs/openapi-spec",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          }
+        }
+      }
+    ],
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
@@ -116,7 +131,8 @@ const config = {
   },
   themes: [
     '@docusaurus/theme-mermaid',
-    '@saucelabs/theme-github-codeblock'
+    '@saucelabs/theme-github-codeblock',
+    'docusaurus-theme-openapi-docs'
   ],
   presets: [
     [
@@ -125,6 +141,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+          docItemComponent: "@theme/ApiItem",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           rehypePlugins: [ rehypeExtendedTable ],
@@ -158,37 +175,7 @@ const config = {
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
         }
-      },
-    ],
-    [
-      'redocusaurus',
-      {
-        // Plugin Options for loading OpenAPI files
-        specs: [
-          // Pass it a path to a local OpenAPI YAML file
-          {
-            // Redocusaurus will automatically bundle your spec into a single file during the build
-            id: 'openapi-spec',
-            spec: 'docs/apidoc/openapi.yaml',
-            // route: '/openapi-spec',
-          },
-          {
-            id: 'openapi-spec-en',
-            spec: 'i18n/en/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
-            // route: '/openapi-spec-en',
-          },
-          {
-            id: 'openapi-spec-ja',
-            spec: 'i18n/ja/docusaurus-plugin-content-docs/current/apidoc/openapi.yaml',
-            // route: '/openapi-spec-ja',
-          }
-        ],
-        // Theme Options for modifying how redoc renders them
-        theme: {
-          // Change with your site colors
-          primaryColor: '#1890ff',
-        },
-      },
+      }
     ]
   ],
   themeConfig:
