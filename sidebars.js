@@ -4637,47 +4637,28 @@ const sidebars = {
         'about-billing',
         'software-proxy',
         'main-ui-intro-v2',
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
         'reference',
         'glossary/glossary',
         {
           type: 'link',
           label: "상세 검색",
           href: 'search'
-        }
-      ]
-    },
-    {
-      type: 'category',
-      label: '관리',
-      collapsible: false,
-      collapsed: false,
-      items: [
-        {
-          type: 'link',
-          label: '관리 기능',
-          href: 'manage' 
-        },
-        {
-          type: 'link',
-          label: 'Open API',
-          href: 'openapi-spec' 
-        },
-        {
-          type: 'link',
-          label: '라이선스',
-          href: 'license/licenses' 
-        },
-        {
-          type: 'link',
-          label: '참조 문서',
-          href: 'reference' 
         },
         {
           type: 'link',
           label: '릴리스 노트',
           href: 'release-notes',
         },
-      ],
+        {
+          type: 'link',
+          label: '라이선스',
+          href: 'license/licenses' 
+        }
+      ]
     }
   ],
   lsSidebar: [
