@@ -108,179 +108,167 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'java/learn-apm-main-menu'
+            id: 'java/dashboard-intro'
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/dashboard-intro'
-              },
-              items: [
-                'java/dashboard',
-                'java/dashboard-transactionmap',
-                'java/dashboard-active-transaction',
-                'java/dashboard-hitmap-trace',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/flex-board',
-              },
-              items: [
-                'java/flexboard-template',
-                'java/flexboard-create',
-                'java/flexboard-manage',
-                'java/flexboard-metric-widget',
-                'java/flexboard-widget-manage',
-                'java/flexboard-widget-template',
-                'java/flexboard-mode',
-                'java/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/analysis-report-intro'
-              },
-              items: [
-                'java/application-daily-stat',
-                'java/performance-trend',
-                'java/analysis-apm',
-                'java/cube',
-                'java/analysis-hitmap',
-                'java/analysis-trace-mtx',
-                'java/tx-profile',
-                'java/analysis-msa'
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/metrics-intro'
-              },
-              items: [
-                'java/metrics-app',
-                'java/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'java/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'java/metrics-chart',
-                'java/metrics-search',
-                'java/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/track-transactions-intro'
-              },
-              items: [
-                'java/trs-view',
-                'java/trs-profile',
-                'java/active-transactions',
-                'java/trs-multi-trace',
-                'java/trs-endpoint-setting',
-                'java/collect-stacks',
-              ]
-            },
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/topology',
-              },
-              items: [
-                'java/topology-basic',
-                'java/topology-type',
-                'java/topology-add-function',
-                'java/topology-settings'
-              ],
-            },
-            'java/analysis-apm-trs',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/report-intro'
-              },
-              items: [
-                'java/report-apm',
-                'java/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'java/apm-set-notice',
-              },
-              items: [
-                'java/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'java/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'java/metric-warning-notice',
-                'java/set-notification-message',
-                'java/hitmap-notice',
-                'java/set-event-detect-anomal',
-                'java/set-event-log',
-                'java/set-receive-event',
-                'java/set-event-history',
-                'java/set-event-format',
-                'java/real-time-notification',
-                'java/common-alert'
-              ],
-            },
-            'java/instance-performance-analysis',
-            'java/linked-projects',
+            'java/dashboard',
+            'java/dashboard-transactionmap',
+            'java/dashboard-active-transaction',
+            'java/dashboard-hitmap-trace',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/flex-board',
+          },
+          items: [
+            'java/flexboard-template',
+            'java/flexboard-create',
+            'java/flexboard-manage',
+            'java/flexboard-metric-widget',
+            'java/flexboard-widget-manage',
+            'java/flexboard-widget-template',
+            'java/flexboard-mode',
+            'java/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/analysis-report-intro'
+          },
+          items: [
+            'java/application-daily-stat',
+            'java/performance-trend',
+            'java/analysis-apm',
+            'java/cube',
+            'java/analysis-hitmap',
+            'java/analysis-trace-mtx',
+            'java/tx-profile',
+            'java/analysis-msa'
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/metrics-intro'
+          },
+          items: [
+            'java/metrics-app',
+            'java/metrics-performance-counter',
             {
               type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
+              id: 'java/metrics-chart-v2',
+              className: 'newfunc'
             },
-            'java/labs'
+            'java/metrics-chart',
+            'java/metrics-search',
+            'java/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '트랜잭션',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/track-transactions-intro'
+          },
+          items: [
+            'java/trs-view',
+            'java/trs-profile',
+            'java/active-transactions',
+            'java/trs-multi-trace',
+            'java/trs-endpoint-setting',
+            'java/collect-stacks',
+          ]
+        },
+        {
+          type: 'category',
+          label: '토폴로지',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/topology',
+          },
+          items: [
+            'java/topology-basic',
+            'java/topology-type',
+            'java/topology-add-function',
+            'java/topology-settings'
           ],
-        }
+        },
+        'java/analysis-apm-trs',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/report-intro'
+          },
+          items: [
+            'java/report-apm',
+            'java/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'java/apm-set-notice',
+          },
+          items: [
+            'java/warning-notice',
+            {
+              type: 'doc',
+              id: 'java/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'java/metric-warning-notice',
+            'java/set-notification-message',
+            'java/hitmap-notice',
+            'java/set-event-detect-anomal',
+            'java/set-event-log',
+            'java/set-receive-event',
+            'java/set-event-history',
+            'java/set-event-format',
+            'java/real-time-notification',
+            'java/common-alert'
+          ],
+        },
+        'java/instance-performance-analysis',
+        'java/linked-projects',
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+        'java/labs'
       ]
     },
   ],
@@ -365,172 +353,164 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/dashboard-intro'
-              },
-              items: [
-                'php/dashboard',
-                'php/dashboard-transactionmap',
-                'php/dashboard-active-transaction',
-                'php/dashboard-hitmap-trace',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/flex-board',
-              },
-              items: [
-                'php/flexboard-template',
-                'php/flexboard-create',
-                'php/flexboard-manage',
-                'php/flexboard-metric-widget',
-                'php/flexboard-widget-manage',
-                'php/flexboard-widget-template',
-                'php/flexboard-mode',
-                'php/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/analysis-report-intro'
-              },
-              items: [
-                'php/application-daily-stat',
-                'php/performance-trend',
-                'php/cube',
-                'php/analysis-hitmap',
-                'php/analysis-trace-mtx',
-                'php/tx-profile',
-                'php/analysis-msa'
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/metrics-intro'
-              },
-              items: [
-                'php/metrics-app',
-                'php/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'php/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'php/metrics-chart',
-                'php/metrics-search',
-                'php/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/track-transactions-intro'
-              },
-              items: [
-                'php/trs-view',
-                'php/trs-profile',
-                'php/trs-multi-trace',
-                'php/collect-stacks',
-              ]
-            },
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/topology',
-              },
-              items: [
-                'php/topology-basic',
-                'php/topology-type',
-                'php/topology-add-function',
-                'php/topology-settings'
-              ],
-            },
-            'php/analysis-apm-trs',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/report-intro'
-              },
-              items: [
-                'php/report-apm',
-                'php/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'php/apm-set-notice',
-              },
-              items: [
-                'php/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'php/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'php/metric-warning-notice',
-                'php/set-notification-message',
-                'php/hitmap-notice',
-                'php/set-event-detect-anomal',
-                'php/set-event-log',
-                'php/set-receive-event',
-                'php/set-event-history',
-                'php/set-event-format',
-                'php/real-time-notification',
-                'php/common-alert'
-              ],
-            },
-            'php/instance-performance-analysis',
-            'php/linked-projects',
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
-            'php/labs'
+            'php/dashboard',
+            'php/dashboard-transactionmap',
+            'php/dashboard-active-transaction',
+            'php/dashboard-hitmap-trace',
           ],
         },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/flex-board',
+          },
+          items: [
+            'php/flexboard-template',
+            'php/flexboard-create',
+            'php/flexboard-manage',
+            'php/flexboard-metric-widget',
+            'php/flexboard-widget-manage',
+            'php/flexboard-widget-template',
+            'php/flexboard-mode',
+            'php/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/analysis-report-intro'
+          },
+          items: [
+            'php/application-daily-stat',
+            'php/performance-trend',
+            'php/cube',
+            'php/analysis-hitmap',
+            'php/analysis-trace-mtx',
+            'php/tx-profile',
+            'php/analysis-msa'
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/metrics-intro'
+          },
+          items: [
+            'php/metrics-app',
+            'php/metrics-performance-counter',
+            {
+              type: 'doc',
+              id: 'php/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'php/metrics-chart',
+            'php/metrics-search',
+            'php/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '트랜잭션',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/track-transactions-intro'
+          },
+          items: [
+            'php/trs-view',
+            'php/trs-profile',
+            'php/trs-multi-trace',
+            'php/collect-stacks',
+          ]
+        },
+        {
+          type: 'category',
+          label: '토폴로지',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/topology',
+          },
+          items: [
+            'php/topology-basic',
+            'php/topology-type',
+            'php/topology-add-function',
+            'php/topology-settings'
+          ],
+        },
+        'php/analysis-apm-trs',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/report-intro'
+          },
+          items: [
+            'php/report-apm',
+            'php/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'php/apm-set-notice',
+          },
+          items: [
+            'php/warning-notice',
+            {
+              type: 'doc',
+              id: 'php/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'php/metric-warning-notice',
+            'php/set-notification-message',
+            'php/hitmap-notice',
+            'php/set-event-detect-anomal',
+            'php/set-event-log',
+            'php/set-receive-event',
+            'php/set-event-history',
+            'php/set-event-format',
+            'php/real-time-notification',
+            'php/common-alert'
+          ],
+        },
+        'php/instance-performance-analysis',
+        'php/linked-projects',
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+        'php/labs'
       ]
     },
   ],
@@ -596,176 +576,164 @@ const sidebars = {
         'nodejs/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'nodejs/learn-apm-main-menu'
+            id: 'nodejs/dashboard-intro'
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/dashboard-intro'
-              },
-              items: [
-                'nodejs/dashboard',
-                'nodejs/dashboard-transactionmap',
-                'nodejs/dashboard-active-transaction',
-                'nodejs/dashboard-hitmap-trace',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/flex-board',
-              },
-              items: [
-                'nodejs/flexboard-template',
-                'nodejs/flexboard-create',
-                'nodejs/flexboard-manage',
-                'nodejs/flexboard-metric-widget',
-                'nodejs/flexboard-widget-manage',
-                'nodejs/flexboard-widget-template',
-                'nodejs/flexboard-mode',
-                'nodejs/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/analysis-report-intro'
-              },
-              items: [
-                'nodejs/application-daily-stat',
-                'nodejs/performance-trend',
-                'nodejs/cube',
-                'nodejs/analysis-hitmap',
-                'nodejs/analysis-trace-mtx',
-                'nodejs/tx-profile',
-                'nodejs/analysis-msa'
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/metrics-intro'
-              },
-              items: [
-                'nodejs/metrics-app',
-                'nodejs/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'nodejs/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'nodejs/metrics-chart',
-                'nodejs/metrics-search',
-                'nodejs/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/track-transactions-intro'
-              },
-              items: [
-                'nodejs/trs-view',
-                'nodejs/trs-profile',
-                'nodejs/trs-multi-trace',
-                'nodejs/trs-endpoint-setting',
-                'nodejs/collect-stacks',
-              ]
-            },
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/topology',
-              },
-              items: [
-                'nodejs/topology-basic',
-                'nodejs/topology-type',
-                'nodejs/topology-add-function',
-                'nodejs/topology-settings'
-              ],
-            },
-            'nodejs/analysis-apm-trs',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/report-intro'
-              },
-              items: [
-                'nodejs/report-apm',
-                'nodejs/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'nodejs/apm-set-notice',
-              },
-              items: [
-                'nodejs/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'nodejs/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'nodejs/metric-warning-notice',
-                'nodejs/set-notification-message',
-                'nodejs/hitmap-notice',
-                'nodejs/set-event-detect-anomal',
-                'nodejs/set-receive-event',
-                'nodejs/set-event-history',
-                'nodejs/set-event-format',
-                'nodejs/real-time-notification',
-                'nodejs/common-alert'
-              ],
-            },
-            'nodejs/instance-performance-analysis',
-            'nodejs/linked-projects',
+            'nodejs/dashboard',
+            'nodejs/dashboard-transactionmap',
+            'nodejs/dashboard-active-transaction',
+            'nodejs/dashboard-hitmap-trace',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/flex-board',
+          },
+          items: [
+            'nodejs/flexboard-template',
+            'nodejs/flexboard-create',
+            'nodejs/flexboard-manage',
+            'nodejs/flexboard-metric-widget',
+            'nodejs/flexboard-widget-manage',
+            'nodejs/flexboard-widget-template',
+            'nodejs/flexboard-mode',
+            'nodejs/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/analysis-report-intro'
+          },
+          items: [
+            'nodejs/application-daily-stat',
+            'nodejs/performance-trend',
+            'nodejs/cube',
+            'nodejs/analysis-hitmap',
+            'nodejs/analysis-trace-mtx',
+            'nodejs/tx-profile',
+            'nodejs/analysis-msa'
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/metrics-intro'
+          },
+          items: [
+            'nodejs/metrics-app',
+            'nodejs/metrics-performance-counter',
             {
               type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
+              id: 'nodejs/metrics-chart-v2',
+              className: 'newfunc'
             },
-            'nodejs/labs'
+            'nodejs/metrics-chart',
+            'nodejs/metrics-search',
+            'nodejs/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '트랜잭션',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/track-transactions-intro'
+          },
+          items: [
+            'nodejs/trs-view',
+            'nodejs/trs-profile',
+            'nodejs/trs-multi-trace',
+            'nodejs/trs-endpoint-setting',
+            'nodejs/collect-stacks',
+          ]
+        },
+        {
+          type: 'category',
+          label: '토폴로지',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/topology',
+          },
+          items: [
+            'nodejs/topology-basic',
+            'nodejs/topology-type',
+            'nodejs/topology-add-function',
+            'nodejs/topology-settings'
           ],
-        }
+        },
+        'nodejs/analysis-apm-trs',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/report-intro'
+          },
+          items: [
+            'nodejs/report-apm',
+            'nodejs/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nodejs/apm-set-notice',
+          },
+          items: [
+            'nodejs/warning-notice',
+            {
+              type: 'doc',
+              id: 'nodejs/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'nodejs/metric-warning-notice',
+            'nodejs/set-notification-message',
+            'nodejs/hitmap-notice',
+            'nodejs/set-event-detect-anomal',
+            'nodejs/set-receive-event',
+            'nodejs/set-event-history',
+            'nodejs/set-event-format',
+            'nodejs/real-time-notification',
+            'nodejs/common-alert'
+          ],
+        },
+        'nodejs/instance-performance-analysis',
+        'nodejs/linked-projects',
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+        'nodejs/labs'
       ]
     },
   ],
@@ -830,178 +798,166 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'python/learn-apm-main-menu'
+            id: 'python/dashboard-intro'
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/dashboard-intro'
-              },
-              items: [
-                'python/dashboard',
-                'python/dashboard-transactionmap',
-                'python/dashboard-active-transaction',
-                'python/dashboard-hitmap-trace',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/flex-board',
-              },
-              items: [
-                'python/flexboard-template',
-                'python/flexboard-create',
-                'python/flexboard-manage',
-                'python/flexboard-metric-widget',
-                'python/flexboard-widget-manage',
-                'python/flexboard-widget-template',
-                'python/flexboard-mode',
-                'python/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/analysis-report-intro'
-              },
-              items: [
-                'python/application-daily-stat',
-                'python/performance-trend',
-                'python/analysis-apm',
-                'python/cube',
-                'python/analysis-hitmap',
-                'python/analysis-trace-mtx',
-                'python/tx-profile',
-                'python/analysis-msa'
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/metrics-intro'
-              },
-              items: [
-                'python/metrics-app',
-                'python/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'python/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'python/metrics-chart',
-                'python/metrics-search',
-                'python/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/track-transactions-intro'
-              },
-              items: [
-                'python/trs-view',
-                'python/trs-profile',
-                'python/active-transactions',
-                'python/trs-multi-trace',
-                'python/trs-endpoint-setting',
-                'python/collect-stacks',
-              ]
-            },
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/topology',
-              },
-              items: [
-                'python/topology-basic',
-                'python/topology-type',
-                'python/topology-add-function',
-              ],
-            },
-            'python/analysis-apm-trs',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/report-intro'
-              },
-              items: [
-                'python/report-apm',
-                'python/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'python/apm-set-notice',
-              },
-              items: [
-                'python/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'python/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'python/metric-warning-notice',
-                'python/set-notification-message',
-                'python/hitmap-notice',
-                'python/set-event-detect-anomal',
-                'python/set-event-log',
-                'python/set-receive-event',
-                'python/set-event-history',
-                'python/set-event-format',
-                'python/real-time-notification',
-                'python/common-alert'
-              ],
-            },
-            'python/instance-performance-analysis',
-            'python/linked-projects',
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
-            'python/labs'
+            'python/dashboard',
+            'python/dashboard-transactionmap',
+            'python/dashboard-active-transaction',
+            'python/dashboard-hitmap-trace',
           ],
         },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/flex-board',
+          },
+          items: [
+            'python/flexboard-template',
+            'python/flexboard-create',
+            'python/flexboard-manage',
+            'python/flexboard-metric-widget',
+            'python/flexboard-widget-manage',
+            'python/flexboard-widget-template',
+            'python/flexboard-mode',
+            'python/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/analysis-report-intro'
+          },
+          items: [
+            'python/application-daily-stat',
+            'python/performance-trend',
+            'python/analysis-apm',
+            'python/cube',
+            'python/analysis-hitmap',
+            'python/analysis-trace-mtx',
+            'python/tx-profile',
+            'python/analysis-msa'
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/metrics-intro'
+          },
+          items: [
+            'python/metrics-app',
+            'python/metrics-performance-counter',
+            {
+              type: 'doc',
+              id: 'python/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'python/metrics-chart',
+            'python/metrics-search',
+            'python/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '트랜잭션',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/track-transactions-intro'
+          },
+          items: [
+            'python/trs-view',
+            'python/trs-profile',
+            'python/active-transactions',
+            'python/trs-multi-trace',
+            'python/trs-endpoint-setting',
+            'python/collect-stacks',
+          ]
+        },
+        {
+          type: 'category',
+          label: '토폴로지',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/topology',
+          },
+          items: [
+            'python/topology-basic',
+            'python/topology-type',
+            'python/topology-add-function',
+          ],
+        },
+        'python/analysis-apm-trs',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/report-intro'
+          },
+          items: [
+            'python/report-apm',
+            'python/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'python/apm-set-notice',
+          },
+          items: [
+            'python/warning-notice',
+            {
+              type: 'doc',
+              id: 'python/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'python/metric-warning-notice',
+            'python/set-notification-message',
+            'python/hitmap-notice',
+            'python/set-event-detect-anomal',
+            'python/set-event-log',
+            'python/set-receive-event',
+            'python/set-event-history',
+            'python/set-event-format',
+            'python/real-time-notification',
+            'python/common-alert'
+          ],
+        },
+        'python/instance-performance-analysis',
+        'python/linked-projects',
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+        'python/labs'
       ]
     },
   ],
@@ -1065,173 +1021,161 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'dotnet/learn-apm-main-menu'
+            id: 'dotnet/dashboard-intro'
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/dashboard-intro'
-              },
-              items: [
-                'dotnet/dashboard',
-                'dotnet/dashboard-transactionmap',
-                'dotnet/dashboard-active-transaction',
-                'dotnet/dashboard-iis-perf-count',
-                'dotnet/dashboard-hitmap-trace',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/flex-board',
-              },
-              items: [
-                'dotnet/flexboard-template',
-                'dotnet/flexboard-create',
-                'dotnet/flexboard-manage',
-                'dotnet/flexboard-metric-widget',
-                'dotnet/flexboard-widget-manage',
-                'dotnet/flexboard-widget-template',
-                'dotnet/flexboard-mode',
-                'dotnet/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/analysis-report-intro'
-              },
-              items: [
-                'dotnet/application-daily-stat',
-                'dotnet/performance-trend',
-                'dotnet/analysis-apm',
-                'dotnet/cube',
-                'dotnet/analysis-hitmap',
-                'dotnet/analysis-trace-mtx',
-                'dotnet/tx-profile',
-                'dotnet/analysis-msa'
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/metrics-intro'
-              },
-              items: [
-                'dotnet/metrics-app',
-                'dotnet/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'dotnet/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'dotnet/metrics-chart',
-                'dotnet/metrics-search',
-                'dotnet/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/track-transactions-intro'
-              },
-              items: [
-                'dotnet/trs-view',
-                'dotnet/trs-profile',
-                'dotnet/active-transactions',
-                'dotnet/trs-multi-trace',
-                'dotnet/collect-stacks',
-              ]
-            },
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/topology',
-              },
-              items: [
-                'dotnet/topology-basic',
-                'dotnet/topology-type',
-                'dotnet/topology-add-function',
-                'dotnet/topology-settings'
-              ],
-            },
-            'dotnet/analysis-apm-trs',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/report-intro'
-              },
-              items: [
-                'dotnet/report-apm',
-                'dotnet/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'dotnet/apm-set-notice',
-              },
-              items: [
-                'dotnet/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'dotnet/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'dotnet/metric-warning-notice',
-                'dotnet/set-notification-message',
-                'dotnet/hitmap-notice',
-                'dotnet/set-event-detect-anomal',
-                'dotnet/set-receive-event',
-                'dotnet/set-event-history',
-                'dotnet/set-event-format',
-                'dotnet/real-time-notification',
-                'dotnet/common-alert'
-              ],
-            },
-            'dotnet/instance-performance-analysis',
-            'dotnet/linked-projects',
-            'dotnet/labs'
+            'dotnet/dashboard',
+            'dotnet/dashboard-transactionmap',
+            'dotnet/dashboard-active-transaction',
+            'dotnet/dashboard-iis-perf-count',
+            'dotnet/dashboard-hitmap-trace',
           ],
         },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/flex-board',
+          },
+          items: [
+            'dotnet/flexboard-template',
+            'dotnet/flexboard-create',
+            'dotnet/flexboard-manage',
+            'dotnet/flexboard-metric-widget',
+            'dotnet/flexboard-widget-manage',
+            'dotnet/flexboard-widget-template',
+            'dotnet/flexboard-mode',
+            'dotnet/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/analysis-report-intro'
+          },
+          items: [
+            'dotnet/application-daily-stat',
+            'dotnet/performance-trend',
+            'dotnet/analysis-apm',
+            'dotnet/cube',
+            'dotnet/analysis-hitmap',
+            'dotnet/analysis-trace-mtx',
+            'dotnet/tx-profile',
+            'dotnet/analysis-msa'
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/metrics-intro'
+          },
+          items: [
+            'dotnet/metrics-app',
+            'dotnet/metrics-performance-counter',
+            {
+              type: 'doc',
+              id: 'dotnet/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'dotnet/metrics-chart',
+            'dotnet/metrics-search',
+            'dotnet/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '트랜잭션',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/track-transactions-intro'
+          },
+          items: [
+            'dotnet/trs-view',
+            'dotnet/trs-profile',
+            'dotnet/active-transactions',
+            'dotnet/trs-multi-trace',
+            'dotnet/collect-stacks',
+          ]
+        },
+        {
+          type: 'category',
+          label: '토폴로지',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/topology',
+          },
+          items: [
+            'dotnet/topology-basic',
+            'dotnet/topology-type',
+            'dotnet/topology-add-function',
+            'dotnet/topology-settings'
+          ],
+        },
+        'dotnet/analysis-apm-trs',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/report-intro'
+          },
+          items: [
+            'dotnet/report-apm',
+            'dotnet/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'dotnet/apm-set-notice',
+          },
+          items: [
+            'dotnet/warning-notice',
+            {
+              type: 'doc',
+              id: 'dotnet/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'dotnet/metric-warning-notice',
+            'dotnet/set-notification-message',
+            'dotnet/hitmap-notice',
+            'dotnet/set-event-detect-anomal',
+            'dotnet/set-receive-event',
+            'dotnet/set-event-history',
+            'dotnet/set-event-format',
+            'dotnet/real-time-notification',
+            'dotnet/common-alert'
+          ],
+        },
+        'dotnet/instance-performance-analysis',
+        'dotnet/linked-projects',
+        'dotnet/labs'
       ]
     },
   ],
@@ -1286,176 +1230,164 @@ const sidebars = {
         'golang/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
-            id: 'golang/learn-apm-main-menu'
+            id: 'golang/dashboard-intro'
           },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/dashboard-intro'
-              },
-              items: [
-                'golang/dashboard',
-                'golang/dashboard-transactionmap',
-                'golang/dashboard-active-transaction',
-                'golang/dashboard-hitmap-trace',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/flex-board',
-              },
-              items: [
-                'golang/flexboard-template',
-                'golang/flexboard-create',
-                'golang/flexboard-manage',
-                'golang/flexboard-metric-widget',
-                'golang/flexboard-widget-manage',
-                'golang/flexboard-widget-template',
-                'golang/flexboard-mode',
-                'golang/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/analysis-report-intro'
-              },
-              items: [
-                'golang/application-daily-stat',
-                'golang/performance-trend',
-                'golang/cube',
-                'golang/analysis-hitmap',
-                'golang/analysis-trace-mtx',
-                'golang/tx-profile',
-                'golang/analysis-msa'
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/metrics-intro'
-              },
-              items: [
-                'golang/metrics-app',
-                'golang/metrics-performance-counter',
-                {
-                  type: 'doc',
-                  id: 'golang/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'golang/metrics-chart',
-                'golang/metrics-search',
-                'golang/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '트랜잭션',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/track-transactions-intro'
-              },
-              items: [
-                'golang/trs-view',
-                'golang/trs-profile',
-                // 'golang/active-transactions',
-                'golang/trs-multi-trace',
-                'golang/collect-stacks',
-              ]
-            },
-            {
-              type: 'category',
-              label: '토폴로지',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/topology',
-              },
-              items: [
-                'golang/topology-basic',
-                'golang/topology-type',
-                'golang/topology-add-function',
-              ],
-            },
-            'golang/analysis-apm-trs',
-            {
-              type: 'category',
-              label: '보고서',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/report-intro'
-              },
-              items: [
-                'golang/report-apm',
-                'golang/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'golang/apm-set-notice',
-              },
-              items: [
-                'golang/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'golang/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'golang/metric-warning-notice',
-                'golang/set-notification-message',
-                'golang/hitmap-notice',
-                'golang/set-event-detect-anomal',
-                'golang/set-event-log',
-                'golang/set-receive-event',
-                'golang/set-event-history',
-                'golang/set-event-format',
-                'golang/real-time-notification',
-                'golang/common-alert'
-              ],
-            },
-            'golang/instance-performance-analysis',
-            'golang/linked-projects',
-            {
-              type: 'doc',
-              label: 'Log 모니터링',
-              id: 'log/introduction'
-            },
-            'golang/labs'
+            'golang/dashboard',
+            'golang/dashboard-transactionmap',
+            'golang/dashboard-active-transaction',
+            'golang/dashboard-hitmap-trace',
           ],
         },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/flex-board',
+          },
+          items: [
+            'golang/flexboard-template',
+            'golang/flexboard-create',
+            'golang/flexboard-manage',
+            'golang/flexboard-metric-widget',
+            'golang/flexboard-widget-manage',
+            'golang/flexboard-widget-template',
+            'golang/flexboard-mode',
+            'golang/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/analysis-report-intro'
+          },
+          items: [
+            'golang/application-daily-stat',
+            'golang/performance-trend',
+            'golang/cube',
+            'golang/analysis-hitmap',
+            'golang/analysis-trace-mtx',
+            'golang/tx-profile',
+            'golang/analysis-msa'
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/metrics-intro'
+          },
+          items: [
+            'golang/metrics-app',
+            'golang/metrics-performance-counter',
+            {
+              type: 'doc',
+              id: 'golang/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'golang/metrics-chart',
+            'golang/metrics-search',
+            'golang/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '트랜잭션',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/track-transactions-intro'
+          },
+          items: [
+            'golang/trs-view',
+            'golang/trs-profile',
+            // 'golang/active-transactions',
+            'golang/trs-multi-trace',
+            'golang/collect-stacks',
+          ]
+        },
+        {
+          type: 'category',
+          label: '토폴로지',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/topology',
+          },
+          items: [
+            'golang/topology-basic',
+            'golang/topology-type',
+            'golang/topology-add-function',
+          ],
+        },
+        'golang/analysis-apm-trs',
+        {
+          type: 'category',
+          label: '보고서',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/report-intro'
+          },
+          items: [
+            'golang/report-apm',
+            'golang/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'golang/apm-set-notice',
+          },
+          items: [
+            'golang/warning-notice',
+            {
+              type: 'doc',
+              id: 'golang/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'golang/metric-warning-notice',
+            'golang/set-notification-message',
+            'golang/hitmap-notice',
+            'golang/set-event-detect-anomal',
+            'golang/set-event-log',
+            'golang/set-receive-event',
+            'golang/set-event-history',
+            'golang/set-event-format',
+            'golang/real-time-notification',
+            'golang/common-alert'
+          ],
+        },
+        'golang/instance-performance-analysis',
+        'golang/linked-projects',
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+        'golang/labs'
       ]
     },
   ],
@@ -1516,143 +1448,135 @@ const sidebars = {
         'postgresql/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'postgresql/dashboard-intro'
-              },
-              items: [
-                'postgresql/instance-list',
-                'postgresql/instance-monitoring',
-                'postgresql/multi-instance-monitoring',
-                'postgresql/slow-query',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'postgresql/flex-board',
-              },
-              items: [
-                'postgresql/flexboard-template',
-                'postgresql/flexboard-create',
-                'postgresql/flexboard-manage',
-                'postgresql/flexboard-metric-widget',
-                'postgresql/flexboard-widget-manage',
-                'postgresql/flexboard-widget-template',
-                'postgresql/flexboard-mode',
-                'postgresql/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'postgresql/analysis-count-trend',
-                'postgresql/analysis-lock-and-deadlock',
-                'postgresql/analysis-session-history',
-                'postgresql/analysis-wait-events',
-                'postgresql/analysis-top-object',
-                'postgresql/analysis-compare-top-sql',
-                'postgresql/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'postgresql/metrics-intro'
-              },
-              items: [
-                'postgresql/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'postgresql/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'postgresql/metrics-chart',
-                'postgresql/metrics-search',
-                'postgresql/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'postgresql/stat',
-                'postgresql/pg-sql-stat',
-                'postgresql/database-size',
-                'postgresql/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'postgresql/log-main'
-              },
-              items: [
-                'postgresql/log-db',
-                'postgresql/log-lt',
-                'postgresql/log-exp',
-                'postgresql/log-search',
-                'postgresql/log-setting',
-                'postgresql/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'postgresql/set-notice',
-              },
-              items: [
-                'postgresql/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'postgresql/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'postgresql/metric-warning-notice',
-                'postgresql/set-notification-message',
-                'postgresql/set-event-detect-anomal',
-                'postgresql/set-event-log',
-                'postgresql/set-receive-event',
-                'postgresql/set-event-history',
-                'postgresql/set-event-format',
-                'postgresql/real-time-notification',
-                'postgresql/common-alert'
-              ],
-            },
-            'postgresql/linked-projects',
-            'postgresql/labs'
+            'postgresql/instance-list',
+            'postgresql/instance-monitoring',
+            'postgresql/multi-instance-monitoring',
+            'postgresql/slow-query',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql/flex-board',
+          },
+          items: [
+            'postgresql/flexboard-template',
+            'postgresql/flexboard-create',
+            'postgresql/flexboard-manage',
+            'postgresql/flexboard-metric-widget',
+            'postgresql/flexboard-widget-manage',
+            'postgresql/flexboard-widget-template',
+            'postgresql/flexboard-mode',
+            'postgresql/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'postgresql/analysis-count-trend',
+            'postgresql/analysis-lock-and-deadlock',
+            'postgresql/analysis-session-history',
+            'postgresql/analysis-wait-events',
+            'postgresql/analysis-top-object',
+            'postgresql/analysis-compare-top-sql',
+            'postgresql/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql/metrics-intro'
+          },
+          items: [
+            'postgresql/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'postgresql/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'postgresql/metrics-chart',
+            'postgresql/metrics-search',
+            'postgresql/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'postgresql/stat',
+            'postgresql/pg-sql-stat',
+            'postgresql/database-size',
+            'postgresql/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql/log-main'
+          },
+          items: [
+            'postgresql/log-db',
+            'postgresql/log-lt',
+            'postgresql/log-exp',
+            'postgresql/log-search',
+            'postgresql/log-setting',
+            'postgresql/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'postgresql/set-notice',
+          },
+          items: [
+            'postgresql/warning-notice',
+            {
+              type: 'doc',
+              id: 'postgresql/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'postgresql/metric-warning-notice',
+            'postgresql/set-notification-message',
+            'postgresql/set-event-detect-anomal',
+            'postgresql/set-event-log',
+            'postgresql/set-receive-event',
+            'postgresql/set-event-history',
+            'postgresql/set-event-format',
+            'postgresql/real-time-notification',
+            'postgresql/common-alert'
+          ],
+        },
+        'postgresql/linked-projects',
+        'postgresql/labs'
       ],
     }
   ],
@@ -1700,114 +1624,106 @@ const sidebars = {
         'oracle-v1/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-v1/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v1/dashboard-intro'
-              },
-              items: [
-                'oracle-v1/instance-list',
-                'oracle-v1/instance-monitoring',
-                'oracle-v1/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v1/flex-board',
-              },
-              items: [
-                'oracle-v1/flexboard-template',
-                'oracle-v1/flexboard-create',
-                'oracle-v1/flexboard-manage',
-                'oracle-v1/flexboard-metric-widget',
-                'oracle-v1/flexboard-widget-manage',
-                'oracle-v1/flexboard-widget-template',
-                'oracle-v1/flexboard-mode',
-                'oracle-v1/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle-v1/analysis-count-trend',
-                'oracle-v1/analysis-lock-and-deadlock',
-                'oracle-v1/analysis-pq-tree',
-                'oracle-v1/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v1/metrics-intro'
-              },
-              items: [
-                'oracle-v1/metrics-data-list',
-                'oracle-v1/metrics-chart',
-                'oracle-v1/metrics-search',
-                'oracle-v1/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle-v1/stat',
-                'oracle-v1/table-space-size',
-                'oracle-v1/sga-size',
-                'oracle-v1/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-v1/set-notice',
-              },
-              items: [
-                'oracle-v1/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'oracle-v1/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'oracle-v1/metric-warning-notice',
-                'oracle-v1/set-notification-message',
-                'oracle-v1/set-event-detect-anomal',
-                'oracle-v1/set-receive-event',
-                'oracle-v1/set-event-history',
-                'oracle-v1/set-event-format',
-                'oracle-v1/real-time-notification',
-                'oracle-v1/common-alert'
-              ],
-            },
-            'oracle-v1/labs'
+            'oracle-v1/instance-list',
+            'oracle-v1/instance-monitoring',
+            'oracle-v1/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-v1/flex-board',
+          },
+          items: [
+            'oracle-v1/flexboard-template',
+            'oracle-v1/flexboard-create',
+            'oracle-v1/flexboard-manage',
+            'oracle-v1/flexboard-metric-widget',
+            'oracle-v1/flexboard-widget-manage',
+            'oracle-v1/flexboard-widget-template',
+            'oracle-v1/flexboard-mode',
+            'oracle-v1/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-v1/analysis-count-trend',
+            'oracle-v1/analysis-lock-and-deadlock',
+            'oracle-v1/analysis-pq-tree',
+            'oracle-v1/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-v1/metrics-intro'
+          },
+          items: [
+            'oracle-v1/metrics-data-list',
+            'oracle-v1/metrics-chart',
+            'oracle-v1/metrics-search',
+            'oracle-v1/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-v1/stat',
+            'oracle-v1/table-space-size',
+            'oracle-v1/sga-size',
+            'oracle-v1/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-v1/set-notice',
+          },
+          items: [
+            'oracle-v1/warning-notice',
+            {
+              type: 'doc',
+              id: 'oracle-v1/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'oracle-v1/metric-warning-notice',
+            'oracle-v1/set-notification-message',
+            'oracle-v1/set-event-detect-anomal',
+            'oracle-v1/set-receive-event',
+            'oracle-v1/set-event-history',
+            'oracle-v1/set-event-format',
+            'oracle-v1/real-time-notification',
+            'oracle-v1/common-alert'
+          ],
+        },
+        'oracle-v1/labs'
       ],
     }
   ],
@@ -1856,142 +1772,134 @@ const sidebars = {
         'oracle/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle/dashboard-intro'
-              },
-              items: [
-                'oracle/instance-list',
-                'oracle/instance-monitoring',
-                'oracle/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle/flex-board',
-              },
-              items: [
-                'oracle/flexboard-template',
-                'oracle/flexboard-create',
-                'oracle/flexboard-manage',
-                'oracle/flexboard-metric-widget',
-                'oracle/flexboard-widget-manage',
-                'oracle/flexboard-widget-template',
-                'oracle/flexboard-mode',
-                'oracle/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle/analysis-count-trend',
-                'oracle/analysis-lock-and-deadlock',
-                'oracle/analysis-session-history',
-                'oracle/analysis-wait-events',
-                'oracle/analysis-sql',
-                'oracle/analysis-compare-top-sql',
-                'oracle/analysis-pq-tree',
-                'oracle/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle/metrics-intro'
-              },
-              items: [
-                'oracle/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'oracle/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'oracle/metrics-chart',
-                'oracle/metrics-search',
-                'oracle/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle/stat',
-                'oracle/table-space-size',
-                'oracle/sga-size',
-                'oracle/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle/log-main'
-              },
-              items: [
-                'oracle/log-db',
-                'oracle/log-lt',
-                'oracle/log-exp',
-                'oracle/log-search',
-                'oracle/log-setting',
-                'oracle/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle/set-notice',
-              },
-              items: [
-                'oracle/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'oracle/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'oracle/metric-warning-notice',
-                'oracle/set-notification-message',
-                'oracle/set-event-detect-anomal',
-                'oracle/set-receive-event',
-                'oracle/set-event-history',
-                'oracle/set-event-format',
-                'oracle/real-time-notification',
-                'oracle/common-alert'
-              ],
-            },
-            'oracle/linked-projects',
-            'oracle/labs'
+            'oracle/instance-list',
+            'oracle/instance-monitoring',
+            'oracle/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/flex-board',
+          },
+          items: [
+            'oracle/flexboard-template',
+            'oracle/flexboard-create',
+            'oracle/flexboard-manage',
+            'oracle/flexboard-metric-widget',
+            'oracle/flexboard-widget-manage',
+            'oracle/flexboard-widget-template',
+            'oracle/flexboard-mode',
+            'oracle/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle/analysis-count-trend',
+            'oracle/analysis-lock-and-deadlock',
+            'oracle/analysis-session-history',
+            'oracle/analysis-wait-events',
+            'oracle/analysis-sql',
+            'oracle/analysis-compare-top-sql',
+            'oracle/analysis-pq-tree',
+            'oracle/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/metrics-intro'
+          },
+          items: [
+            'oracle/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'oracle/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'oracle/metrics-chart',
+            'oracle/metrics-search',
+            'oracle/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle/stat',
+            'oracle/table-space-size',
+            'oracle/sga-size',
+            'oracle/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/log-main'
+          },
+          items: [
+            'oracle/log-db',
+            'oracle/log-lt',
+            'oracle/log-exp',
+            'oracle/log-search',
+            'oracle/log-setting',
+            'oracle/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/set-notice',
+          },
+          items: [
+            'oracle/warning-notice',
+            {
+              type: 'doc',
+              id: 'oracle/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'oracle/metric-warning-notice',
+            'oracle/set-notification-message',
+            'oracle/set-event-detect-anomal',
+            'oracle/set-receive-event',
+            'oracle/set-event-history',
+            'oracle/set-event-format',
+            'oracle/real-time-notification',
+            'oracle/common-alert'
+          ],
+        },
+        'oracle/linked-projects',
+        'oracle/labs'
       ],
     }
   ],
@@ -2026,142 +1934,134 @@ const sidebars = {
         'oracle-pro/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-pro/dashboard-intro'
-              },
-              items: [
-                'oracle-pro/instance-list',
-                'oracle-pro/instance-monitoring',
-                'oracle-pro/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-pro/flex-board',
-              },
-              items: [
-                'oracle-pro/flexboard-template',
-                'oracle-pro/flexboard-create',
-                'oracle-pro/flexboard-manage',
-                'oracle-pro/flexboard-metric-widget',
-                'oracle-pro/flexboard-widget-manage',
-                'oracle-pro/flexboard-widget-template',
-                'oracle-pro/flexboard-mode',
-                'oracle-pro/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle-pro/analysis-count-trend',
-                'oracle-pro/analysis-lock-and-deadlock',
-                'oracle-pro/analysis-session-history',
-                'oracle-pro/analysis-wait-events',
-                'oracle-pro/analysis-sql',
-                'oracle-pro/analysis-compare-top-sql',
-                'oracle-pro/analysis-pq-tree',
-                'oracle-pro/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-pro/metrics-intro'
-              },
-              items: [
-                'oracle-pro/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'oracle-pro/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'oracle-pro/metrics-chart',
-                'oracle-pro/metrics-search',
-                'oracle-pro/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'oracle-pro/stat',
-                'oracle-pro/table-space-size',
-                'oracle-pro/sga-size',
-                'oracle-pro/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-pro/log-main'
-              },
-              items: [
-                'oracle-pro/log-db',
-                'oracle-pro/log-lt',
-                'oracle-pro/log-exp',
-                'oracle-pro/log-search',
-                'oracle-pro/log-setting',
-                'oracle-pro/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'oracle-pro/set-notice',
-              },
-              items: [
-                // 'oracle-pro/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'oracle-pro/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'oracle-pro/metric-warning-notice',
-                'oracle-pro/set-notification-message',
-                'oracle-pro/set-event-detect-anomal',
-                'oracle-pro/set-receive-event',
-                'oracle-pro/set-event-history',
-                'oracle-pro/set-event-format',
-                'oracle-pro/real-time-notification',
-                'oracle-pro/common-alert'
-              ],
-            },
-            'oracle-pro/linked-projects',
-            'oracle-pro/labs'
+            'oracle-pro/instance-list',
+            'oracle-pro/instance-monitoring',
+            'oracle-pro/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/flex-board',
+          },
+          items: [
+            'oracle-pro/flexboard-template',
+            'oracle-pro/flexboard-create',
+            'oracle-pro/flexboard-manage',
+            'oracle-pro/flexboard-metric-widget',
+            'oracle-pro/flexboard-widget-manage',
+            'oracle-pro/flexboard-widget-template',
+            'oracle-pro/flexboard-mode',
+            'oracle-pro/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-pro/analysis-count-trend',
+            'oracle-pro/analysis-lock-and-deadlock',
+            'oracle-pro/analysis-session-history',
+            'oracle-pro/analysis-wait-events',
+            'oracle-pro/analysis-sql',
+            'oracle-pro/analysis-compare-top-sql',
+            'oracle-pro/analysis-pq-tree',
+            'oracle-pro/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/metrics-intro'
+          },
+          items: [
+            'oracle-pro/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'oracle-pro/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'oracle-pro/metrics-chart',
+            'oracle-pro/metrics-search',
+            'oracle-pro/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-pro/stat',
+            'oracle-pro/table-space-size',
+            'oracle-pro/sga-size',
+            'oracle-pro/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/log-main'
+          },
+          items: [
+            'oracle-pro/log-db',
+            'oracle-pro/log-lt',
+            'oracle-pro/log-exp',
+            'oracle-pro/log-search',
+            'oracle-pro/log-setting',
+            'oracle-pro/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/set-notice',
+          },
+          items: [
+            // 'oracle-pro/warning-notice',
+            {
+              type: 'doc',
+              id: 'oracle-pro/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'oracle-pro/metric-warning-notice',
+            'oracle-pro/set-notification-message',
+            'oracle-pro/set-event-detect-anomal',
+            'oracle-pro/set-receive-event',
+            'oracle-pro/set-event-history',
+            'oracle-pro/set-event-format',
+            'oracle-pro/real-time-notification',
+            'oracle-pro/common-alert'
+          ],
+        },
+        'oracle-pro/linked-projects',
+        'oracle-pro/labs'
       ],
     }
   ],
@@ -2222,141 +2122,133 @@ const sidebars = {
         'mysql/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/dashboard-intro'
-              },
-              items: [
-                'mysql/instance-list',
-                'mysql/instance-monitoring',
-                'mysql/multi-instance-monitoring',
-                'mysql/slow-query',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/flex-board',
-              },
-              items: [
-                'mysql/flexboard-template',
-                'mysql/flexboard-create',
-                'mysql/flexboard-manage',
-                'mysql/flexboard-metric-widget',
-                'mysql/flexboard-widget-manage',
-                'mysql/flexboard-widget-template',
-                'mysql/flexboard-mode',
-                'mysql/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mysql/analysis-count-trend',
-                'mysql/analysis-lock-and-deadlock',
-                'mysql/analysis-compare-top-sql',
-                'mysql/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/metrics-intro'
-              },
-              items: [
-                'mysql/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'mysql/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'mysql/metrics-chart',
-                'mysql/metrics-search',
-                'mysql/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mysql/stat',
-                'mysql/mysql-sql-stat',
-                'mysql/table-size',
-                'mysql/database-size',
-                'mysql/report-intro',
-              ]
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/log-main'
-              },
-              items: [
-                'mysql/log-db',
-                'mysql/log-lt',
-                'mysql/log-exp',
-                'mysql/log-search',
-                'mysql/log-setting',
-                'mysql/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mysql/set-notice',
-              },
-              items: [
-                'mysql/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'mysql/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'mysql/metric-warning-notice',
-                'mysql/set-notification-message',
-                'mysql/set-event-detect-anomal',
-                'mysql/set-event-log',
-                'mysql/set-receive-event',
-                'mysql/set-event-history',
-                'mysql/set-event-format',
-                'mysql/real-time-notification',
-                'mysql/common-alert'
-              ],
-            },
-            'mysql/linked-projects',
-            'mysql/labs'
+            'mysql/instance-list',
+            'mysql/instance-monitoring',
+            'mysql/multi-instance-monitoring',
+            'mysql/slow-query',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/flex-board',
+          },
+          items: [
+            'mysql/flexboard-template',
+            'mysql/flexboard-create',
+            'mysql/flexboard-manage',
+            'mysql/flexboard-metric-widget',
+            'mysql/flexboard-widget-manage',
+            'mysql/flexboard-widget-template',
+            'mysql/flexboard-mode',
+            'mysql/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql/analysis-count-trend',
+            'mysql/analysis-lock-and-deadlock',
+            'mysql/analysis-compare-top-sql',
+            'mysql/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/metrics-intro'
+          },
+          items: [
+            'mysql/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'mysql/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'mysql/metrics-chart',
+            'mysql/metrics-search',
+            'mysql/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql/stat',
+            'mysql/mysql-sql-stat',
+            'mysql/table-size',
+            'mysql/database-size',
+            'mysql/report-intro',
+          ]
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/log-main'
+          },
+          items: [
+            'mysql/log-db',
+            'mysql/log-lt',
+            'mysql/log-exp',
+            'mysql/log-search',
+            'mysql/log-setting',
+            'mysql/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/set-notice',
+          },
+          items: [
+            'mysql/warning-notice',
+            {
+              type: 'doc',
+              id: 'mysql/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'mysql/metric-warning-notice',
+            'mysql/set-notification-message',
+            'mysql/set-event-detect-anomal',
+            'mysql/set-event-log',
+            'mysql/set-receive-event',
+            'mysql/set-event-history',
+            'mysql/set-event-format',
+            'mysql/real-time-notification',
+            'mysql/common-alert'
+          ],
+        },
+        'mysql/linked-projects',
+        'mysql/labs'
       ],
     }
   ],
@@ -2405,138 +2297,130 @@ const sidebars = {
         'mssql/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql/dashboard-intro'
-              },
-              items: [
-                'mssql/instance-list',
-                'mssql/instance-monitoring',
-                'mssql/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql/flex-board',
-              },
-              items: [
-                'mssql/flexboard-template',
-                'mssql/flexboard-create',
-                'mssql/flexboard-manage',
-                'mssql/flexboard-metric-widget',
-                'mssql/flexboard-widget-manage',
-                'mssql/flexboard-widget-template',
-                'mssql/flexboard-mode',
-                'mssql/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mssql/analysis-count-trend',
-                'mssql/analysis-lock-tree',
-                'mssql/analysis-deadlock',
-                'mssql/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql/metrics-intro'
-              },
-              items: [
-                'mssql/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'mssql/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'mssql/metrics-search',
-                'mssql/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mssql/stat',
-                'mssql/procedure-stat',
-                'mssql/database-size',
-                'mssql/report-intro',
-                'mssql/job-info',
-                'mssql/backup-recovery-history'
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql/log-main'
-              },
-              items: [
-                'mssql/log-db',
-                'mssql/log-lt',
-                'mssql/log-exp',
-                'mssql/log-search',
-                'mssql/log-setting',
-                'mssql/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql/set-notice',
-              },
-              items: [
-                'mssql/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'mssql/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'mssql/metric-warning-notice',
-                'mssql/set-notification-message',
-                'mssql/set-event-detect-anomal',
-                'mssql/set-receive-event',
-                'mssql/set-event-history',
-                'mssql/set-event-format',
-                'mssql/real-time-notification',
-                'mssql/common-alert'
-              ],
-            },
-            'mssql/labs'
+            'mssql/instance-list',
+            'mssql/instance-monitoring',
+            'mssql/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/flex-board',
+          },
+          items: [
+            'mssql/flexboard-template',
+            'mssql/flexboard-create',
+            'mssql/flexboard-manage',
+            'mssql/flexboard-metric-widget',
+            'mssql/flexboard-widget-manage',
+            'mssql/flexboard-widget-template',
+            'mssql/flexboard-mode',
+            'mssql/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql/analysis-count-trend',
+            'mssql/analysis-lock-tree',
+            'mssql/analysis-deadlock',
+            'mssql/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/metrics-intro'
+          },
+          items: [
+            'mssql/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'mssql/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'mssql/metrics-search',
+            'mssql/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql/stat',
+            'mssql/procedure-stat',
+            'mssql/database-size',
+            'mssql/report-intro',
+            'mssql/job-info',
+            'mssql/backup-recovery-history'
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/log-main'
+          },
+          items: [
+            'mssql/log-db',
+            'mssql/log-lt',
+            'mssql/log-exp',
+            'mssql/log-search',
+            'mssql/log-setting',
+            'mssql/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql/set-notice',
+          },
+          items: [
+            'mssql/warning-notice',
+            {
+              type: 'doc',
+              id: 'mssql/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'mssql/metric-warning-notice',
+            'mssql/set-notification-message',
+            'mssql/set-event-detect-anomal',
+            'mssql/set-receive-event',
+            'mssql/set-event-history',
+            'mssql/set-event-format',
+            'mssql/real-time-notification',
+            'mssql/common-alert'
+          ],
+        },
+        'mssql/labs'
       ],
     }
   ],
@@ -2583,111 +2467,103 @@ const sidebars = {
         'mssql-v1/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql-v1/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql-v1/dashboard-intro'
-              },
-              items: [
-                'mssql-v1/instance-list',
-                'mssql-v1/instance-monitoring',
-                'mssql-v1/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql-v1/flex-board',
-              },
-              items: [
-                'mssql-v1/flexboard-template',
-                'mssql-v1/flexboard-create',
-                'mssql-v1/flexboard-manage',
-                'mssql-v1/flexboard-metric-widget',
-                'mssql-v1/flexboard-widget-manage',
-                'mssql-v1/flexboard-widget-template',
-                'mssql-v1/flexboard-mode',
-                'mssql-v1/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mssql-v1/analysis-count-trend',
-                'mssql-v1/analysis-lock-and-deadlock',
-                'mssql-v1/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql-v1/metrics-intro'
-              },
-              items: [
-                'mssql-v1/metrics-data-list',
-                'mssql-v1/metrics-chart',
-                'mssql-v1/metrics-search',
-                'mssql-v1/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mssql-v1/stat',
-                'mssql-v1/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mssql-v1/set-notice',
-              },
-              items: [
-                'mssql-v1/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'mssql-v1/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'mssql-v1/metric-warning-notice',
-                'mssql-v1/set-notification-message',
-                'mssql-v1/set-event-detect-anomal',
-                'mssql-v1/set-receive-event',
-                'mssql-v1/set-event-history',
-                'mssql-v1/set-event-format',
-                'mssql-v1/real-time-notification',
-                'mssql-v1/common-alert'
-              ],
-            },
-            'mssql-v1/labs'
+            'mssql-v1/instance-list',
+            'mssql-v1/instance-monitoring',
+            'mssql-v1/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql-v1/flex-board',
+          },
+          items: [
+            'mssql-v1/flexboard-template',
+            'mssql-v1/flexboard-create',
+            'mssql-v1/flexboard-manage',
+            'mssql-v1/flexboard-metric-widget',
+            'mssql-v1/flexboard-widget-manage',
+            'mssql-v1/flexboard-widget-template',
+            'mssql-v1/flexboard-mode',
+            'mssql-v1/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql-v1/analysis-count-trend',
+            'mssql-v1/analysis-lock-and-deadlock',
+            'mssql-v1/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql-v1/metrics-intro'
+          },
+          items: [
+            'mssql-v1/metrics-data-list',
+            'mssql-v1/metrics-chart',
+            'mssql-v1/metrics-search',
+            'mssql-v1/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mssql-v1/stat',
+            'mssql-v1/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mssql-v1/set-notice',
+          },
+          items: [
+            'mssql-v1/warning-notice',
+            {
+              type: 'doc',
+              id: 'mssql-v1/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'mssql-v1/metric-warning-notice',
+            'mssql-v1/set-notification-message',
+            'mssql-v1/set-event-detect-anomal',
+            'mssql-v1/set-receive-event',
+            'mssql-v1/set-event-history',
+            'mssql-v1/set-event-format',
+            'mssql-v1/real-time-notification',
+            'mssql-v1/common-alert'
+          ],
+        },
+        'mssql-v1/labs'
       ],
     }
   ],
@@ -2735,114 +2611,106 @@ const sidebars = {
         'tibero/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'tibero/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'tibero/dashboard-intro'
-              },
-              items: [
-                'tibero/instance-list',
-                'tibero/instance-monitoring',
-                'tibero/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'tibero/flex-board',
-              },
-              items: [
-                'tibero/flexboard-template',
-                'tibero/flexboard-create',
-                'tibero/flexboard-manage',
-                'tibero/flexboard-metric-widget',
-                'tibero/flexboard-widget-manage',
-                'tibero/flexboard-widget-template',
-                'tibero/flexboard-mode',
-                'tibero/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'tibero/analysis-count-trend',
-                'tibero/analysis-lock-and-deadlock',
-                'tibero/analysis-pq-tree',
-                'tibero/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'tibero/metrics-intro'
-              },
-              items: [
-                'tibero/metrics-data-list',
-                'tibero/metrics-chart',
-                'tibero/metrics-search',
-                'tibero/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'tibero/stat',
-                'tibero/table-space-size',
-                'tibero/sga-size',
-                'tibero/report-intro',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'tibero/set-notice',
-              },
-              items: [
-                'tibero/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'tibero/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'tibero/metric-warning-notice',
-                'tibero/set-notification-message',
-                'tibero/set-event-detect-anomal',
-                'tibero/set-receive-event',
-                'tibero/set-event-history',
-                'tibero/set-event-format',
-                'tibero/real-time-notification',
-                'tibero/common-alert'
-              ],
-            },
-            'tibero/labs'
+            'tibero/instance-list',
+            'tibero/instance-monitoring',
+            'tibero/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'tibero/flex-board',
+          },
+          items: [
+            'tibero/flexboard-template',
+            'tibero/flexboard-create',
+            'tibero/flexboard-manage',
+            'tibero/flexboard-metric-widget',
+            'tibero/flexboard-widget-manage',
+            'tibero/flexboard-widget-template',
+            'tibero/flexboard-mode',
+            'tibero/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'tibero/analysis-count-trend',
+            'tibero/analysis-lock-and-deadlock',
+            'tibero/analysis-pq-tree',
+            'tibero/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'tibero/metrics-intro'
+          },
+          items: [
+            'tibero/metrics-data-list',
+            'tibero/metrics-chart',
+            'tibero/metrics-search',
+            'tibero/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'tibero/stat',
+            'tibero/table-space-size',
+            'tibero/sga-size',
+            'tibero/report-intro',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'tibero/set-notice',
+          },
+          items: [
+            'tibero/warning-notice',
+            {
+              type: 'doc',
+              id: 'tibero/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'tibero/metric-warning-notice',
+            'tibero/set-notification-message',
+            'tibero/set-event-detect-anomal',
+            'tibero/set-receive-event',
+            'tibero/set-event-history',
+            'tibero/set-event-format',
+            'tibero/real-time-notification',
+            'tibero/common-alert'
+          ],
+        },
+        'tibero/labs'
       ],
     }
   ],
@@ -2891,137 +2759,129 @@ const sidebars = {
         'cubrid/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid/dashboard-intro'
-              },
-              items: [
-                'cubrid/instance-list',
-                'cubrid/instance-monitoring',
-                'cubrid/multi-instance-monitoring',
-                'cubrid/slow-query',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid/flex-board',
-              },
-              items: [
-                'cubrid/flexboard-template',
-                'cubrid/flexboard-create',
-                'cubrid/flexboard-manage',
-                'cubrid/flexboard-metric-widget',
-                'cubrid/flexboard-widget-manage',
-                'cubrid/flexboard-widget-template',
-                'cubrid/flexboard-mode',
-                'cubrid/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'cubrid/analysis-count-trend',
-                'cubrid/analysis-lock-and-deadlock',
-                'cubrid/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid/metrics-intro'
-              },
-              items: [
-                'cubrid/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'cubrid/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'cubrid/metrics-chart',
-                'cubrid/metrics-search',
-                'cubrid/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'cubrid/stat',
-                'cubrid/table-size',
-                'cubrid/database-size',
-                'cubrid/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid/log-main'
-              },
-              items: [
-                'cubrid/log-db',
-                'cubrid/log-lt',
-                'cubrid/log-exp',
-                'cubrid/log-search',
-                'cubrid/log-setting',
-                'cubrid/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid/set-notice',
-              },
-              items: [
-                'cubrid/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'cubrid/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'cubrid/metric-warning-notice',
-                'cubrid/set-notification-message',
-                'cubrid/set-event-detect-anomal',
-                'cubrid/set-receive-event',
-                'cubrid/set-event-history',
-                'cubrid/set-event-format',
-                'cubrid/real-time-notification',
-                'cubrid/common-alert'
-              ],
-            },
-            'cubrid/labs'
+            'cubrid/instance-list',
+            'cubrid/instance-monitoring',
+            'cubrid/multi-instance-monitoring',
+            'cubrid/slow-query',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/flex-board',
+          },
+          items: [
+            'cubrid/flexboard-template',
+            'cubrid/flexboard-create',
+            'cubrid/flexboard-manage',
+            'cubrid/flexboard-metric-widget',
+            'cubrid/flexboard-widget-manage',
+            'cubrid/flexboard-widget-template',
+            'cubrid/flexboard-mode',
+            'cubrid/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'cubrid/analysis-count-trend',
+            'cubrid/analysis-lock-and-deadlock',
+            'cubrid/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/metrics-intro'
+          },
+          items: [
+            'cubrid/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'cubrid/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'cubrid/metrics-chart',
+            'cubrid/metrics-search',
+            'cubrid/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'cubrid/stat',
+            'cubrid/table-size',
+            'cubrid/database-size',
+            'cubrid/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/log-main'
+          },
+          items: [
+            'cubrid/log-db',
+            'cubrid/log-lt',
+            'cubrid/log-exp',
+            'cubrid/log-search',
+            'cubrid/log-setting',
+            'cubrid/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid/set-notice',
+          },
+          items: [
+            'cubrid/warning-notice',
+            {
+              type: 'doc',
+              id: 'cubrid/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'cubrid/metric-warning-notice',
+            'cubrid/set-notification-message',
+            'cubrid/set-event-detect-anomal',
+            'cubrid/set-receive-event',
+            'cubrid/set-event-history',
+            'cubrid/set-event-format',
+            'cubrid/real-time-notification',
+            'cubrid/common-alert'
+          ],
+        },
+        'cubrid/labs'
       ],
     }
   ],
@@ -3070,113 +2930,105 @@ const sidebars = {
         'cubrid-v1/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid-v1/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid-v1/dashboard-intro'
-              },
-              items: [
-                'cubrid-v1/instance-list',
-                'cubrid-v1/instance-monitoring',
-                'cubrid-v1/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid-v1/flex-board',
-              },
-              items: [
-                'cubrid-v1/flexboard-template',
-                'cubrid-v1/flexboard-create',
-                'cubrid-v1/flexboard-manage',
-                'cubrid-v1/flexboard-metric-widget',
-                'cubrid-v1/flexboard-widget-manage',
-                'cubrid-v1/flexboard-widget-template',
-                'cubrid-v1/flexboard-mode',
-                'cubrid-v1/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'cubrid-v1/analysis-count-trend',
-                'cubrid-v1/analysis-databaseparameter',
-                'cubrid-v1/analysis-lock-and-deadlock',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid-v1/metrics-intro'
-              },
-              items: [
-                'cubrid-v1/metrics-data-list',
-                'cubrid-v1/metrics-chart',
-                'cubrid-v1/metrics-search',
-                'cubrid-v1/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'cubrid-v1/stat',
-                'cubrid-v1/table-size',
-                'cubrid-v1/database-size',
-                'cubrid-v1/report-intro',
-              ],
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'cubrid-v1/set-notice',
-              },
-              items: [
-                'cubrid-v1/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'cubrid-v1/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'cubrid-v1/metric-warning-notice',
-                'cubrid-v1/set-notification-message',
-                'cubrid-v1/set-event-detect-anomal',
-                'cubrid-v1/set-receive-event',
-                'cubrid-v1/set-event-history',
-                'cubrid-v1/set-event-format',
-                'cubrid-v1/real-time-notification',
-                'cubrid-v1/common-alert'
-              ],
-            },
-            'cubrid-v1/labs'
+            'cubrid-v1/instance-list',
+            'cubrid-v1/instance-monitoring',
+            'cubrid-v1/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid-v1/flex-board',
+          },
+          items: [
+            'cubrid-v1/flexboard-template',
+            'cubrid-v1/flexboard-create',
+            'cubrid-v1/flexboard-manage',
+            'cubrid-v1/flexboard-metric-widget',
+            'cubrid-v1/flexboard-widget-manage',
+            'cubrid-v1/flexboard-widget-template',
+            'cubrid-v1/flexboard-mode',
+            'cubrid-v1/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'cubrid-v1/analysis-count-trend',
+            'cubrid-v1/analysis-databaseparameter',
+            'cubrid-v1/analysis-lock-and-deadlock',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid-v1/metrics-intro'
+          },
+          items: [
+            'cubrid-v1/metrics-data-list',
+            'cubrid-v1/metrics-chart',
+            'cubrid-v1/metrics-search',
+            'cubrid-v1/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'cubrid-v1/stat',
+            'cubrid-v1/table-size',
+            'cubrid-v1/database-size',
+            'cubrid-v1/report-intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: '알림 설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'cubrid-v1/set-notice',
+          },
+          items: [
+            'cubrid-v1/warning-notice',
+            {
+              type: 'doc',
+              id: 'cubrid-v1/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'cubrid-v1/metric-warning-notice',
+            'cubrid-v1/set-notification-message',
+            'cubrid-v1/set-event-detect-anomal',
+            'cubrid-v1/set-receive-event',
+            'cubrid-v1/set-event-history',
+            'cubrid-v1/set-event-format',
+            'cubrid-v1/real-time-notification',
+            'cubrid-v1/common-alert'
+          ],
+        },
+        'cubrid-v1/labs'
       ],
     }
   ],
@@ -3224,135 +3076,127 @@ const sidebars = {
         'altibase/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase/dashboard-intro'
-              },
-              items: [
-                'altibase/instance-list',
-                'altibase/instance-monitoring',
-                'altibase/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase/flex-board',
-              },
-              items: [
-                'altibase/flexboard-template',
-                'altibase/flexboard-create',
-                'altibase/flexboard-manage',
-                'altibase/flexboard-metric-widget',
-                'altibase/flexboard-widget-manage',
-                'altibase/flexboard-widget-template',
-                'altibase/flexboard-mode',
-                'altibase/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'altibase/analysis-count-trend',
-                'altibase/analysis-lock-and-deadlock',
-                'altibase/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase/metrics-intro'
-              },
-              items: [
-                'altibase/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'altibase/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'altibase/metrics-chart',
-                'altibase/metrics-search',
-                'altibase/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'altibase/stat',
-                'altibase/table-space-size',
-                'altibase/report-intro',
-              ]
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase/log-main'
-              },
-              items: [
-                'altibase/log-db',
-                'altibase/log-lt',
-                'altibase/log-exp',
-                'altibase/log-search',
-                'altibase/log-setting',
-                'altibase/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase/set-notice',
-              },
-              items: [
-                'altibase/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'altibase/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'altibase/metric-warning-notice',
-                'altibase/set-notification-message',
-                'altibase/set-event-detect-anomal',
-                'altibase/set-receive-event',
-                'altibase/set-event-history',
-                'altibase/set-event-format',
-                'altibase/real-time-notification',
-                'altibase/common-alert'
-              ],
-            },
-            'altibase/labs'
+            'altibase/instance-list',
+            'altibase/instance-monitoring',
+            'altibase/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/flex-board',
+          },
+          items: [
+            'altibase/flexboard-template',
+            'altibase/flexboard-create',
+            'altibase/flexboard-manage',
+            'altibase/flexboard-metric-widget',
+            'altibase/flexboard-widget-manage',
+            'altibase/flexboard-widget-template',
+            'altibase/flexboard-mode',
+            'altibase/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase/analysis-count-trend',
+            'altibase/analysis-lock-and-deadlock',
+            'altibase/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/metrics-intro'
+          },
+          items: [
+            'altibase/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'altibase/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'altibase/metrics-chart',
+            'altibase/metrics-search',
+            'altibase/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase/stat',
+            'altibase/table-space-size',
+            'altibase/report-intro',
+          ]
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/log-main'
+          },
+          items: [
+            'altibase/log-db',
+            'altibase/log-lt',
+            'altibase/log-exp',
+            'altibase/log-search',
+            'altibase/log-setting',
+            'altibase/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase/set-notice',
+          },
+          items: [
+            'altibase/warning-notice',
+            {
+              type: 'doc',
+              id: 'altibase/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'altibase/metric-warning-notice',
+            'altibase/set-notification-message',
+            'altibase/set-event-detect-anomal',
+            'altibase/set-receive-event',
+            'altibase/set-event-history',
+            'altibase/set-event-format',
+            'altibase/real-time-notification',
+            'altibase/common-alert'
+          ],
+        },
+        'altibase/labs'
       ],
     }
   ],
@@ -3402,100 +3246,92 @@ const sidebars = {
         'altibase-v1/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '실시간 DB 성능 지표 확인',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase-v1/dashboard-intro'
-              },
-              items: [
-                'altibase-v1/instance-list',
-                'altibase-v1/instance-monitoring',
-                'altibase-v1/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase-v1/flex-board',
-              },
-              items: [
-                'altibase-v1/flexboard-template',
-                'altibase-v1/flexboard-create',
-                'altibase-v1/flexboard-manage',
-                'altibase-v1/flexboard-metric-widget',
-                'altibase-v1/flexboard-widget-manage',
-                'altibase-v1/flexboard-mode',
-                'altibase-v1/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase-v1/metrics-intro'
-              },
-              items: [
-                'altibase-v1/metrics-chart',
-                'altibase-v1/metrics-search',
-                'altibase-v1/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '분석과 통계',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'altibase-v1/analysis-function',
-                'altibase-v1/stat',
-                'altibase-v1/report-intro',
-                'altibase-v1/integrated-report',
-              ]
-            },
-            {
-              type: 'category',
-              label: '알림 설정하기',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'altibase-v1/set-notice',
-              },
-              items: [
-                'altibase-v1/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'altibase-v1/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'altibase-v1/metric-warning-notice',
-                'altibase-v1/set-notification-message',
-                'altibase-v1/set-event-detect-anomal',
-                'altibase-v1/set-receive-event',
-                'altibase-v1/set-event-history',
-                'altibase-v1/set-event-format',
-                'altibase-v1/real-time-notification',
-                'altibase-v1/common-alert'
-              ],
-            },
-            'altibase-v1/labs'
+            'altibase-v1/instance-list',
+            'altibase-v1/instance-monitoring',
+            'altibase-v1/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/flex-board',
+          },
+          items: [
+            'altibase-v1/flexboard-template',
+            'altibase-v1/flexboard-create',
+            'altibase-v1/flexboard-manage',
+            'altibase-v1/flexboard-metric-widget',
+            'altibase-v1/flexboard-widget-manage',
+            'altibase-v1/flexboard-mode',
+            'altibase-v1/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/metrics-intro'
+          },
+          items: [
+            'altibase-v1/metrics-chart',
+            'altibase-v1/metrics-search',
+            'altibase-v1/metrics-detect-anormal',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '분석과 통계',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'altibase-v1/analysis-function',
+            'altibase-v1/stat',
+            'altibase-v1/report-intro',
+            'altibase-v1/integrated-report',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'altibase-v1/set-notice',
+          },
+          items: [
+            'altibase-v1/warning-notice',
+            {
+              type: 'doc',
+              id: 'altibase-v1/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'altibase-v1/metric-warning-notice',
+            'altibase-v1/set-notification-message',
+            'altibase-v1/set-event-detect-anomal',
+            'altibase-v1/set-receive-event',
+            'altibase-v1/set-event-history',
+            'altibase-v1/set-event-format',
+            'altibase-v1/real-time-notification',
+            'altibase-v1/common-alert'
+          ],
+        },
+        'altibase-v1/labs'
       ],
     }
   ],
@@ -3543,123 +3379,115 @@ const sidebars = {
         'redis/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'redis/dashboard-intro'
-              },
-              items: [
-                'redis/instance-list',
-                'redis/instance-monitoring',
-                'redis/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'redis/flex-board',
-              },
-              items: [
-                'redis/flexboard-template',
-                'redis/flexboard-create',
-                'redis/flexboard-manage',
-                'redis/flexboard-metric-widget',
-                'redis/flexboard-widget-manage',
-                'redis/flexboard-widget-template',
-                'redis/flexboard-mode',
-                'redis/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'redis/analysis-count-trend',
-                'redis/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'redis/metrics-intro'
-              },
-              items: [
-                'redis/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'redis/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'redis/metrics-chart',
-                'redis/metrics-search',
-                'redis/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'redis/log-main'
-              },
-              items: [
-                'redis/log-db',
-                'redis/log-lt',
-                'redis/log-exp',
-                'redis/log-search',
-                'redis/log-setting',
-                'redis/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'redis/set-notice',
-              },
-              items: [
-                'redis/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'redis/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'redis/metric-warning-notice',
-                'redis/set-notification-message',
-                'redis/set-event-detect-anomal',
-                'redis/set-receive-event',
-                'redis/set-event-history',
-                'redis/set-event-format',
-                'redis/real-time-notification',
-                'redis/common-alert'
-              ],
-            },
-            'redis/labs'
+            'redis/instance-list',
+            'redis/instance-monitoring',
+            'redis/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/flex-board',
+          },
+          items: [
+            'redis/flexboard-template',
+            'redis/flexboard-create',
+            'redis/flexboard-manage',
+            'redis/flexboard-metric-widget',
+            'redis/flexboard-widget-manage',
+            'redis/flexboard-widget-template',
+            'redis/flexboard-mode',
+            'redis/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'redis/analysis-count-trend',
+            'redis/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/metrics-intro'
+          },
+          items: [
+            'redis/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'redis/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'redis/metrics-chart',
+            'redis/metrics-search',
+            'redis/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/log-main'
+          },
+          items: [
+            'redis/log-db',
+            'redis/log-lt',
+            'redis/log-exp',
+            'redis/log-search',
+            'redis/log-setting',
+            'redis/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'redis/set-notice',
+          },
+          items: [
+            'redis/warning-notice',
+            {
+              type: 'doc',
+              id: 'redis/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'redis/metric-warning-notice',
+            'redis/set-notification-message',
+            'redis/set-event-detect-anomal',
+            'redis/set-receive-event',
+            'redis/set-event-history',
+            'redis/set-event-format',
+            'redis/real-time-notification',
+            'redis/common-alert'
+          ],
+        },
+        'redis/labs'
       ],
     }
   ],
@@ -3707,133 +3535,125 @@ const sidebars = {
         'mongodb/agent-manage',
         {
           type: 'category',
-          label: '주요 메뉴 알아보기',
+          label: '대시보드',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/dashboard-intro'
+          },
           items: [
-            {
-              type: 'category',
-              label: '대시보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mongodb/dashboard-intro'
-              },
-              items: [
-                'mongodb/instance-list',
-                'mongodb/instance-monitoring',
-                'mongodb/multi-instance-monitoring',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Flex 보드',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mongodb/flex-board',
-              },
-              items: [
-                'mongodb/flexboard-template',
-                'mongodb/flexboard-create',
-                'mongodb/flexboard-manage',
-                'mongodb/flexboard-metric-widget',
-                'mongodb/flexboard-widget-manage',
-                'mongodb/flexboard-widget-template',
-                'mongodb/flexboard-mode',
-                'mongodb/flexboard-share',
-              ],
-            },
-            {
-              type: 'category',
-              label: '분석',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mongodb/analysis-count-trend',
-                'mongodb/analysis-databaseparameter',
-              ]
-            },
-            {
-              type: 'category',
-              label: '메트릭스',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mongodb/metrics-intro'
-              },
-              items: [
-                'mongodb/metrics-data-list',
-                {
-                  type: 'doc',
-                  id: 'mongodb/metrics-chart-v2',
-                  className: 'newfunc'
-                },
-                'mongodb/metrics-chart',
-                'mongodb/metrics-search',
-                'mongodb/metrics-detect-anormal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '통계/보고서',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'mongodb/database-size',
-                // 'mongodb/report-intro'
-              ],
-            },
-            {
-              type: 'category',
-              label: '로그',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mongodb/log-main'
-              },
-              items: [
-                'mongodb/log-db',
-                'mongodb/log-lt',
-                'mongodb/log-exp',
-                'mongodb/log-search',
-                'mongodb/log-setting',
-                'mongodb/log-parser',
-              ]
-            },
-            {
-              type: 'category',
-              label: '경고 알림',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'mongodb/set-notice',
-              },
-              items: [
-                'mongodb/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'mongodb/warning-notice-v2',
-                  className: 'newfunc'
-                },
-                'mongodb/metric-warning-notice',
-                'mongodb/set-notification-message',
-                'mongodb/set-event-detect-anomal',
-                'mongodb/set-receive-event',
-                'mongodb/set-event-history',
-                'mongodb/set-event-format',
-                'mongodb/real-time-notification',
-                'mongodb/common-alert'
-              ],
-            },
-            'mongodb/labs'
+            'mongodb/instance-list',
+            'mongodb/instance-monitoring',
+            'mongodb/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/flex-board',
+          },
+          items: [
+            'mongodb/flexboard-template',
+            'mongodb/flexboard-create',
+            'mongodb/flexboard-manage',
+            'mongodb/flexboard-metric-widget',
+            'mongodb/flexboard-widget-manage',
+            'mongodb/flexboard-widget-template',
+            'mongodb/flexboard-mode',
+            'mongodb/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mongodb/analysis-count-trend',
+            'mongodb/analysis-databaseparameter',
           ]
-        }
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/metrics-intro'
+          },
+          items: [
+            'mongodb/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'mongodb/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'mongodb/metrics-chart',
+            'mongodb/metrics-search',
+            'mongodb/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mongodb/database-size',
+            // 'mongodb/report-intro'
+          ],
+        },
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/log-main'
+          },
+          items: [
+            'mongodb/log-db',
+            'mongodb/log-lt',
+            'mongodb/log-exp',
+            'mongodb/log-search',
+            'mongodb/log-setting',
+            'mongodb/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mongodb/set-notice',
+          },
+          items: [
+            'mongodb/warning-notice',
+            {
+              type: 'doc',
+              id: 'mongodb/warning-notice-v2',
+              className: 'newfunc'
+            },
+            'mongodb/metric-warning-notice',
+            'mongodb/set-notification-message',
+            'mongodb/set-event-detect-anomal',
+            'mongodb/set-receive-event',
+            'mongodb/set-event-history',
+            'mongodb/set-event-format',
+            'mongodb/real-time-notification',
+            'mongodb/common-alert'
+          ],
+        },
+        'mongodb/labs'
       ],
     }
   ],
