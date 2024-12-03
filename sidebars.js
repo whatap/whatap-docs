@@ -4140,10 +4140,23 @@ const sidebars = {
               ],
             },
             {
-              type: 'doc',
+              type: 'category',
               label: 'Server HP-UX',
-              // className: 'new',
-              id: 'release-notes/server-hpux/server-hpux-1_3_4'
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/server-hpux/server-hpux-1_3_6'
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/server-hpux/server-hpux-1_3_6',
+                  className: 'new'
+                },
+                'release-notes/server-hpux/server-hpux-1_3_4',
+              ],
             },
             {
               type: 'category',
