@@ -18,6 +18,10 @@
     "postgen": "docusaurus-post-generator"
   },
   "dependencies": {
+    "@algolia/autocomplete-core": "1.7.4",
+    "@algolia/autocomplete-plugin-query-suggestions": "^1.9.3",
+    "@algolia/autocomplete-plugin-tags": "^1.10.0",
+    "@algolia/autocomplete-theme-classic": "^1.10.0",
     "@amplitude/analytics-browser": "^2.11.9",
     "@crowdin/cli": "^4.4.0",
     "@crowdin/crowdin-api-client": "^1.39.1",
@@ -38,10 +42,12 @@
     "@docusaurus/utils": "^3.6.3",
     "@docusaurus/utils-common": "^3.6.3",
     "@mdx-js/react": "^3.0.0",
+    "@meilisearch/autocomplete-client": "*",
     "@meilisearch/instant-meilisearch": "^0.22.0",
     "@saucelabs/theme-github-codeblock": "^0.3.0",
     "@whatap-docs/remark-sectionize": "^0.0.2",
     "axios": "^1.7.2",
+    "babel-plugin-styled-components": "^2",
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.0.0",
     "docusaurus-plugin-image-zoom": "^2.0.0",
@@ -67,12 +73,7 @@
     "sass": "^1.81.0",
     "sharp": "^0.32.6",
     "styled-components": "^6.1.13",
-    "webpack": "^5.95.0",
-    "@algolia/autocomplete-core": "1.7.4",
-    "@algolia/autocomplete-plugin-query-suggestions": "^1.9.3",
-    "@algolia/autocomplete-plugin-tags": "^1.10.0",
-    "@algolia/autocomplete-theme-classic": "^1.10.0",
-    "@meilisearch/autocomplete-client": "*"
+    "webpack": "^5.95.0"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.6.3",

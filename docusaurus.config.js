@@ -58,7 +58,6 @@ const config = {
     require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
-    [ './src/redocusaurus-preload', {}],
     [ './src/whatap-plugin-facebook', {}],
     [ './src/whatap-plugin-browser', {}],
     [ 'docusaurus-plugin-sass', {} ],
