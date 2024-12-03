@@ -1950,5 +1950,81 @@
   "sidebar.serverSidebar.category.서버 인벤토리 맵": {
     "message": "Server Inventory Map",
     "description": "The label for category 서버 인벤토리 맵 in sidebar serverSidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.대시보드": {
+    "message": "Dashboard",
+    "description": "The label for category 대시보드 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.altibasev1Sidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar altibasev1Sidebar"
+  },
+  "sidebar.releaseSidebar.category.Server HP-UX": {
+    "message": "Server HP-UX",
+    "description": "The label for category Server HP-UX in sidebar releaseSidebar"
+  },
+  "sidebar.learningSidebar.category.MXQL": {
+    "message": "MXQL",
+    "description": "The label for category MXQL in sidebar learningSidebar"
+  },
+  "sidebar.learningSidebar.category.단계별 명령어 가이드": {
+    "message": "Step-by-step command guide",
+    "description": "The label for category 단계별 명령어 가이드 in sidebar learningSidebar"
+  },
+  "sidebar.learningSidebar.category.용어 알아보기": {
+    "message": "Glossary Glossary",
+    "description": "The label for category 용어 알아보기 in sidebar learningSidebar"
+  },
+  "sidebar.referSidebar.category.라이선스": {
+    "message": "License",
+    "description": "The label for category 라이선스 in sidebar referSidebar"
+  },
+  "sidebar.referSidebar.link.Open API": {
+    "message": "Open API",
+    "description": "The label for link Open API in sidebar referSidebar, linking to /openapi-spec"
+  },
+  "sidebar.awslogSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar awslogSidebar"
+  },
+  "sidebar.awsecsSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar awsecsSidebar"
+  },
+  "sidebar.amazoncloudwatchSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar amazoncloudwatchSidebar"
+  },
+  "sidebar.azuremonitorSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar azuremonitorSidebar"
+  },
+  "sidebar.ncloudSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar ncloudSidebar"
+  },
+  "sidebar.oracleSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar oracleSidebar"
+  },
+  "sidebar.serverSidebar.category.대시보드": {
+    "message": "Dashboard",
+    "description": "The label for category 대시보드 in sidebar serverSidebar"
+  },
+  "sidebar.serverSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar serverSidebar"
+  },
+  "sidebar.serverSidebar.category.이벤트 설정": {
+    "message": "Event Configuration",
+    "description": "The label for category 이벤트 설정 in sidebar serverSidebar"
+  },
+  "sidebar.kubeSidebar.category.이벤트 설정": {
+    "message": "Event Configuration",
+    "description": "The label for category 이벤트 설정 in sidebar kubeSidebar"
+  },
+  "sidebar.logSidebar.category.경고 알림": {
+    "message": "Alert",
+    "description": "The label for category 경고 알림 in sidebar logSidebar"
   }
 }
