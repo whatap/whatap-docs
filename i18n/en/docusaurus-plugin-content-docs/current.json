@@ -1972,7 +1972,7 @@
     "description": "The label for category 단계별 명령어 가이드 in sidebar learningSidebar"
   },
   "sidebar.learningSidebar.category.용어 알아보기": {
-    "message": "Glossary Glossary",
+    "message": "Learn About The Glossary",
     "description": "The label for category 용어 알아보기 in sidebar learningSidebar"
   },
   "sidebar.referSidebar.category.라이선스": {
