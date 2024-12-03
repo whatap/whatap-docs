@@ -282,5 +282,13 @@
   "item.label.Altibase V1 모니터링": {
     "message": "Altibase V1 Monitoring",
     "description": "Navbar item with label Altibase V1 모니터링"
+  },
+  "item.label.Learning": {
+    "message": "Learning",
+    "description": "Navbar item with label Learning"
+  },
+  "item.label.What's New": {
+    "message": "What's New",
+    "description": "Navbar item with label What's New"
   }
 }
