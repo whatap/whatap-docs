@@ -33,7 +33,7 @@ html[lang='ja-JP'] .iflink div > a {
   margin-left: 1rem;
 }
 
-::marker {
+.menu__list ::marker {
   content: none !important;
 }
 
