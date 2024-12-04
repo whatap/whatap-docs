@@ -582,7 +582,7 @@ paths:
   /open/api/json/event/history:
     post:
       summary: 이벤트 기록 조회
-      descirption: 프로젝트에서 발생한 이벤트 기록을 조회할 수 있습니다.
+      description: 프로젝트에서 발생한 이벤트 기록을 조회할 수 있습니다.
       tags:
         - 이벤트 기록
       requestBody:
@@ -644,10 +644,10 @@ paths:
                     description: 프로젝트 코드
                   onodeName:
                     type: string
-                    description: 종류별 에이전트 그룹 이름
+                    description: 서버별 에이전트 그룹 이름
                   displayTag:
                     type: string
-                    description: 이벤트 상태
+                    description: 이벤트 상태 태그 표시를 위한 값
                   metricValue:
                     type: float
                     description: 지푯값
@@ -656,7 +656,7 @@ paths:
                     description: 에이전트 고유 식별자(ID)
                   title:
                     type: string
-                    description: 이벤트 이름
+                    description: 이벤트 제목
                   uuid:
                     type: integer
                     description: 이벤트 고유 식별자
@@ -672,28 +672,27 @@ paths:
                     description: 이벤트 발생 시간
                   disabled:
                     type: boolean
-                    description: null
+                    description: |
+                      이벤트 종료 여부
+                      - 임계치 미만 값 발생으로 이벤트가 해소된 경우
+                      - 사용자가 의도적으로 이벤트 룰(Rule)을 비활성화한 경우
+                      - 대량 알림 등의 이유로 차단된 이벤트인 경우
+                      - 처리내역이 추가된 이벤트인 경우
                   id:
                     type: integer
-                    description: null
+                    description: 이벤트 고유 식별자(ID)
                   acknowledges:
                     type: array
                     description: 처리 내역
                   stateful:
                     type: boolean
-                    description: null
-                  process:
-                    type: integer
-                    description: null
+                    description: 해소된 이벤트 알림 기능 사용 여부
                   product:
                     type: string
                     description: 서버 유형
                   level:
                     type: string
                     description: 경고 레벨
-                  triggerId:
-                    type: integer
-                    description: null
                   updateTime:
                     type: integer
                     format: int64
@@ -712,24 +711,28 @@ paths:
                     description: 반복 알림 여부
                   tagCount:
                     type: boolean
-                    description: 이벤트 태그 수신 여부
+                    description: TagCount 카테고리 이벤트 여부
                   systemEvent:
                     type: boolean
                     description: 시스템 이벤트 여부
                   offTime:
                     type: integer
-                    description: null
+                    description: 해소된 시각
                   category:
                     type: string
-                    description: 지표 카테고리
+                    description: TagCount 카테고리
                   okindName:
                     type: sting
                     description: 종류별 에이전트 그룹 이름
                   onode:
                     type: integer
                     description: 서버별 에이전트 그룹 고유 식별자(ID)
-                  snapshot: null
-                  status: null
+                  snapshot:
+                    type: string
+                    description: 이벤트 발생 시점의 스냅샷(서버 기본 이벤트만 해당)
+                  status:
+                    type: string
+                    description: 이벤트 상태
               example:
                 - metricName: mem
                   pcode: '7'
@@ -755,6 +758,38 @@ paths:
                   metricThreshold: '90'
                   oname: front
                   escalation: true
+                  tagCount: true
+                  systemEvent: false
+                  offTime: 0
+                  category: app_host_resource
+                  okindName: ''
+                  onode: 0
+                  snapshot: null
+                  status: 'ON'
+                - metricName: cpu
+                  pcode: 7
+                  onodeName: ''
+                  displayTag: inprogress
+                  metricValue: '19.947985'
+                  oid: -17079562
+                  title: Server CPU
+                  uuid: 5d7a40d11a1144a8b7bad7e2c71cda2e
+                  okind: 0
+                  ackCount: 0
+                  eventTime: 1733288325022
+                  disabled: false
+                  id: 42
+                  acknowledges: []
+                  stateful: true
+                  process: 0
+                  product: ap
+                  level: Warning
+                  triggerId: 0
+                  updateTime: 1733288325055
+                  message: Server CPU = 19.948
+                  metricThreshold: '0'
+                  oname: front
+                  escalation: false
                   tagCount: true
                   systemEvent: false
                   offTime: 0
