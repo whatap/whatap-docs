@@ -71,7 +71,8 @@ function BlogSidebarMobileSecondaryMenu({sidebar}) {
                   isNavLink
                   to={convertLinkForLanguage(category.link, currentLang)}
                   className="menu__link"
-                  activeClassName="menu__link--active">
+                  // activeClassName="menu__link--active"
+                  >
                   {category.tr_code ? (
                     translate({
                       id: `${category.tr_code}`,
@@ -80,16 +81,6 @@ function BlogSidebarMobileSecondaryMenu({sidebar}) {
                     category.label
                   )}
                 </Link>
-
-                // <a href={convertLinkForLanguage(category.link, currentLang)} className="menu__link">
-                //   {category.tr_code ? (
-                //     translate({
-                //       id: `${category.tr_code}`,
-                //     })
-                //   ) : (
-                //     category.label
-                //   )}
-                // </a>
               ) : (
                 <span>{category.label}</span>
               )}
