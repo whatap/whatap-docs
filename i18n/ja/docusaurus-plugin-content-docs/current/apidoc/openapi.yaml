@@ -533,7 +533,7 @@ paths:
               -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
               "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
   /open/api/json/event/history:
-    post:
+    get:
       summary: イベント記録照会
       description: プロジェクトで発生したイベント履歴を照会できます。
       tags:
