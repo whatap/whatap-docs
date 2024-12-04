@@ -397,6 +397,10 @@ html[lang='ja-JP'] {
   background: var(--ifm-active-menu-color);
 }
 .menu__list {
+  list-style: none;
+  ul {
+    list-style: none;
+  }
   ._productlink {
     a::after {
       content: '';
