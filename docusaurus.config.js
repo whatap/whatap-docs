@@ -646,6 +646,12 @@ const config = {
           },
           // 여기까지 검색 시 문서 경로 표현을 위한 보이지 않는 메뉴 
           {
+            type: 'doc',
+            docId: 'manage',
+            position: 'left',
+            label: '관리 기능',
+          },
+          {
             to: 'openapi-spec',
             position: 'left',
             label: 'Open API',
