@@ -15,9 +15,18 @@ html[lang='ja-JP'] .iflink div > a {
   pointer-events: none !important;
 }
 
+/* 인덱스에 추가할 링크 막기 */
+.disableLinks div > a {
+  pointer-events: none !important;
+}
+
 /* 메뉴 항목 스타일 */
 .menuCategory {
   margin-bottom: 1rem;
+  /* font-weight: 500; */
+  div > a {
+    font-weight: var(--ifm-font-weight-bold);
+  }
 }
 
 .menuItem {
@@ -75,3 +84,10 @@ ul > li.news > a::after {
   margin-left: 5px; 
   transform: none;
 }
+
+/* @media (max-width: 768px) {
+  html[lang='en-US'] .iflink div > a,
+  html[lang='ja-JP'] .iflink div > a {
+    pointer-events: none !important;
+  }
+} */
