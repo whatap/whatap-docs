@@ -6,6 +6,7 @@ import {
   BlogSidebarItemList,
 } from '@docusaurus/plugin-content-blog/client';
 import {NavbarSecondaryMenuFiller} from '@docusaurus/theme-common';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 // 링크 변환 함수 추가
@@ -66,7 +67,11 @@ function BlogSidebarMobileSecondaryMenu({sidebar}) {
           <li key={index} className={clsx(category.className, styles.menuCategory)}>
             <div>
               {category.link ? (
-                <a href={convertLinkForLanguage(category.link, currentLang)} className="menu__link">
+                <Link
+                  isNavLink
+                  to={convertLinkForLanguage(category.link, currentLang)}
+                  className="menu__link"
+                  activeClassName="menu__link--active">
                   {category.tr_code ? (
                     translate({
                       id: `${category.tr_code}`,
@@ -74,7 +79,17 @@ function BlogSidebarMobileSecondaryMenu({sidebar}) {
                   ) : (
                     category.label
                   )}
-                </a>
+                </Link>
+
+                // <a href={convertLinkForLanguage(category.link, currentLang)} className="menu__link">
+                //   {category.tr_code ? (
+                //     translate({
+                //       id: `${category.tr_code}`,
+                //     })
+                //   ) : (
+                //     category.label
+                //   )}
+                // </a>
               ) : (
                 <span>{category.label}</span>
               )}
@@ -89,10 +104,13 @@ function BlogSidebarMobileSecondaryMenu({sidebar}) {
 
                 return (
                   <li key={itemIndex} className={item.className ? styles[item.className] : ''}>
-                    <a href={convertLinkForLanguage(item.link, currentLang)} className="menu__link">
-                      {/* getItemTitle()로 타이틀 처리 */}
+                    <Link
+                      isNavLink
+                      to={convertLinkForLanguage(item.link, currentLang)}
+                      className="menu__link"
+                      activeClassName="menu__link--active">
                       {getItemTitle(item.link)}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
