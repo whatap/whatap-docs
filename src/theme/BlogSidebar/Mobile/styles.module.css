@@ -55,3 +55,23 @@ html[lang='ja-JP'] .iflink div > a {
 .menu__list-item--active > .menu__link {
   color: var(--ifm-color-primary); /* 링크 hover 시 강조 */
 }
+
+
+ul > li.news > a::after {
+  content: 'N';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(225, 229, 255);
+  color: rgb(82, 114, 255);
+  font-family: "Oleo Script";
+  font-size: 9.5px;
+  font-weight: 500;
+  border: none;
+  position: relative;
+  margin-left: 5px; 
+  transform: none;
+}
