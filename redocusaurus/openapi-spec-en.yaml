@@ -615,63 +615,23 @@ paths:
               -H "x-whatap-token: {{ACCOUNT_API_TOKEN}}" \
               "https://api.whatap.io/open/api/json/group/{groupKey}/projects"
   /open/api/json/event/history:
-    post:
+    get:
       summary: Querying the event history
       description: You can querying the event records that occurred in the project.
       tags:
         - Event History
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                stime:
-                  type: integer
-                  format: int64
-                  description: Query start time (UNIX epoch time, millisecond)
-                etime:
-                  type: integer
-                  format: int64
-                  description: Query end time (UNIX epoch time, millisecond)
-                progress:
-                  type: boolean
-                  description: |
-                    * `true`: Query only events in progress
-                    * `false`: Query all events, including those in progress
-                oid:
-                  type: integer
-                  format: int32
-                  description: >-
-                    Agent's unique identifier (ID). You can enter multiple
-                    values ​​using commas (,) as the delimiter.
-                okinds:
-                  type: integer
-                  format: int32
-                  description: >-
-                    Agent Group IDs for each Type. You can enter multiple values
-                    ​​using commas (,) as the delimiter.
-                onodes:
-                  type: integer
-                  format: int32
-                  description: >-
-                    Agent Group IDs for each Server, You can enter multiple
-                    values ​​using commas (,) as the delimiter.
-              required:
-                - stime
-                - etime
-            example:
-              stime: 1690850183000
-              etime: 1693321200000
-              oid: 17079562,352247167 → -17079562%2C352247167(URL encoded required)
-              okinds: 17079562,352247167 → -17079562%2C352247167(URL encoded required)
-              onodes: 17079562,352247167 → -17079562%2C352247167(URL encoded required)
-            parameters:
-              - $ref: parameters.yaml#/WhatapTokenHeader
-              - $ref: parameters.yaml#/WhatapPcodeHeader
+      parameters:
+        - $ref: '#/components/parameters/WhatapAccoutTokenHeader'
+        - $ref: '#/components/parameters/WhatapPcodeHeader'
+        - $ref: '#/components/parameters/StartTimeQuery'
+        - $ref: '#/components/parameters/EndTimeQuery'
+        - $ref: '#/components/parameters/Progress'
+        - $ref: '#/components/parameters/OidPathopt'
+        - $ref: '#/components/parameters/OkindQuery'
+        - $ref: '#/components/parameters/OnodesQuery'
       responses:
         '200':
-          description: Call Success
+          description: Query success
           content:
             application/json:
               schema:
@@ -853,12 +813,12 @@ paths:
 
             -w "\n" \
 
-            "https://api.whatap.io/open/api/json/event/history?stime=1733065200000&etime=1733103557000&progress=true&oids=-17079562%2C352247167"
-            \
-
             -H 'x-whatap-token: {{PROJECT_API_TOKEN}}' \
 
             -H 'x-whatap-pcode: {{projectCode}}' \
+
+            "https://api.whatap.io/open/api/json/event/history?stime=1733065200000&etime=1733103557000&progress=true&oids=-17079562%2C352247167"
+            \
   /open/api/v2/agent/list:
     post:
       summary: Calling the oid list
@@ -3489,6 +3449,67 @@ components:
       schema:
         type: integer
       description: Group's unique identifier (ID)
+    StartTimeQuery:
+      name: stime
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+        description: Query start time (UNIX epoch time, millisecond)
+    EndTimeQuery:
+      name: etime
+      in: query
+      required: true
+      schema:
+        type: integer
+        format: int64
+        description: Query end time (UNIX epoch time, millisecond)
+    Progress:
+      name: progress
+      in: query
+      required: false
+      schema:
+        type: boolean
+        description: |
+          * `true`: Query only events in progress
+          * `false`: Query all events, including those in progress
+    OidPathopt:
+      name: oid
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        description: >
+          - Agent's unique identifier (ID). You can enter multiple values
+          ​​using commas (,) as the delimiter.
+
+          - URL encoded required: 17079562,352247167 → -17079562%2C352247167
+    OkindQuery:
+      name: okinds
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        description: >
+          - Agent group IDs for each type. You can enter multiple values ​​using
+          commas (,) as the delimiter.
+
+          - URL encoded required: 17079562,352247167 → -17079562%2C352247167
+    OnodesQuery:
+      name: onodes
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        description: >
+          - Agent group IDs for each server, You can enter multiple values
+          ​​using commas (,) as the delimiter.
+
+          - URL encoded required: 17079562,352247167 → -17079562%2C352247167
     StartTimePath:
       name: stime
       in: path
@@ -3576,22 +3597,6 @@ components:
         description: >-
           Query condition (if `filterkey` is `caller_url` or `url`, base64
           encoding is applied)
-    StartTimeQuery:
-      name: stime
-      in: query
-      required: true
-      schema:
-        type: integer
-        format: int64
-        description: Query start time (UNIX epoch time, millisecond)
-    EndTimeQuery:
-      name: etime
-      in: query
-      required: true
-      schema:
-        type: integer
-        format: int64
-        description: Query end time (UNIX epoch time, millisecond)
     TimeMergeQuery:
       name: timeMerge
       in: query
