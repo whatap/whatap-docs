@@ -559,52 +559,18 @@ paths:
       description: You can querying the event records that occurred in the project.
       tags:
         - Event History
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                stime:
-                  type: integer
-                  format: int64
-                  description: Query start time (UNIX epoch time, millisecond)
-                etime:
-                  type: integer
-                  format: int64
-                  description: Query end time (UNIX epoch time, millisecond)
-                progress:
-                  type: boolean
-                  description: |
-                    * `true`: Query only events in progress
-                    * `false`: Query all events, including those in progress
-                oid:
-                  type: integer
-                  format: int32
-                  description: Agent's unique identifier (ID). You can enter multiple values ​​using commas (,) as the delimiter.
-                okinds:
-                  type: integer
-                  format: int32
-                  description: Agent Group IDs for each Type. You can enter multiple values ​​using commas (,) as the delimiter.
-                onodes:
-                  type: integer
-                  format: int32
-                  description: Agent Group IDs for each Server, You can enter multiple values ​​using commas (,) as the delimiter.
-              required:
-                - stime
-                - etime
-            example:
-              stime: 1690850183000
-              etime: 1693321200000
-              oid: "17079562,352247167 → -17079562%2C352247167(URL encoded required)"
-              okinds: "17079562,352247167 → -17079562%2C352247167(URL encoded required)"
-              onodes: "17079562,352247167 → -17079562%2C352247167(URL encoded required)"
-            parameters:
-              - $ref: 'parameters.yaml#/WhatapTokenHeader'
-              - $ref: 'parameters.yaml#/WhatapPcodeHeader'
+      parameters:
+        - $ref: 'parameters.yaml#/WhatapAccoutTokenHeader'
+        - $ref: 'parameters.yaml#/WhatapPcodeHeader'
+        - $ref: 'parameters.yaml#/StartTimeQuery'
+        - $ref: 'parameters.yaml#/EndTimeQuery'
+        - $ref: 'parameters.yaml#/Progress'
+        - $ref: 'parameters.yaml#/OidPathopt'
+        - $ref: 'parameters.yaml#/OkindQuery'
+        - $ref: 'parameters.yaml#/OnodesQuery'
       responses:
         '200':
-          description: Call Success
+          description: Query success
           content:
             application/json:
               schema:
