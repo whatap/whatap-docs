@@ -713,7 +713,7 @@ export default function pages() {
             
             <div className={styles.flexContainer}>
 
-                <FlexCard icons="Newfunc" type="document" url="blog" >
+                <FlexCard icons="Newfunc" type="document" url="blog/overview" >
                     <Heading as="h5">
                         {translate({
                             id: "index.pages.section.updates.news",
