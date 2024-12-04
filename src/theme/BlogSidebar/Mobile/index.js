@@ -31,7 +31,7 @@ const BlogSidebarMobileSecondaryMenu = ({ sidebar }) => {
 
   const getItemTitle = (permalink) => {
     const item = items.find(
-      (sideitem) => sideitem.permalink.replace(/(\/en|\/ja)/g, '') === permalink
+      (sideitem) => sideitem.permalink.replace('/whatap-docs', '').replace(/(\/en|\/ja)/g, "") === permalink
     );
     return item ? item.title : permalink;
   };
