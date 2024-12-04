@@ -72,8 +72,7 @@ function BlogSidebarDesktop({sidebar}) {
                     isNavLink
                     to={item.link}
                     className={styles.sidebarItemLink}
-                    activeClassName={clsx(styles.sidebarItemLinkActive, 'menu__link')}>
-                      {/* {clsx(styles.sidebarItemLinkActive, 'menu__lin')} */}
+                    activeClassName={styles.sidebarItemLinkActive}>
                     {getItemTitle(item.link)}
                   </Link>
                 </li>

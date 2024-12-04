@@ -16,13 +16,13 @@ html[lang='ja-JP'] .iflink div > a {
 }
 
 /* 메뉴 항목 스타일 */
-/* .menuCategory {
+.menuCategory {
   margin-bottom: 1rem;
 }
 
 .menuItem {
   margin-left: 1rem;
-} */
+}
 
 ::marker {
   content: none !important;
