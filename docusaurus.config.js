@@ -220,7 +220,7 @@ const config = {
       ],
       blog: {
         sidebar: {
-          groupByYear: true
+          groupByYear: false
         }
       },
       docs: {
