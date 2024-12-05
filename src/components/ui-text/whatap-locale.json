@@ -14942,21 +14942,24 @@
     "service_id": "_02199"
   },
   "infra_rule_template_for_processcount": {
-    "": "",
+    "en": "Among the data collected every 5 seconds, if the <b>number of processes</b> whose names and users match, is </b> {count.lower} or more but less than {count.upper}, the <span style=\"color:#ffbf00;\">[Warning notification]</span> occurs. If it is </br><b> {count.upper} or more</b>, the <span style=\"color:red;\">[Danger notification]</span> occurs.",
     "ja": "5秒単位収集データの中からプロセス名とユーザーが一致する<b>プロセスの数</b>が</br><b>{count.lower}件以上{count.upper}件未満</b>の場合、<span style=\"color:#ffbf00;\">[警告アラート]</span>が発生し、</br><b>{count.upper}件以上</b>の場合は<span style=\"color:red;\">[危険アラート]</span>が発生します。",
     "ko": "5초 단위 수집 데이터 중에서, 프로세스 명과 사용자가 일치하는 <b>프로세스의 수</b>가</br><b>{count.lower}개 이상 {count.upper}개 미만</b>인 경우 <span style=\"color:#ffbf00;\">[경고 알림]</span> 발생하며,</br><b>{count.upper}개 이상</b>인 경우 <span style=\"color:red;\">[위험 알림]</span>이 발생합니다.",
+    "": "Among the data collected every 5 seconds, if the <b>number of processes</b> whose names and users match, is </b> {count.lower} or more but less than {count.upper}, the <span style=\"color:#ffbf00;\">[Warning notification]</span> occurs. If it is </br><b> {count.upper} or more</b>, the <span style=\"color:red;\">[Danger notification]</span> occurs.",
     "service_id": "_02200"
   },
   "infra_rule_template_for_processmem": {
-    "": "",
+    "en": "If the <b>memory usage of processes</b> whose names and users match is, <b>{warn} % or more but less than {fatal} %</b> and its status keeps for the period of <b>{warn.duration}</b>, a <span style=\"color:#ffbf00;\">[Warning notification]</span> occurs. </b> </br> If the usage is <b>{fatal} % or more and the status keeps for the period of <b>{fatal.duration}</b>, a <span style=\"color:red;\">[Danger notification]</span> occurs.",
     "ja": "プロセス名とユーザーが一致する<b>プロセスのメモリ使用率</b>が</br> <b>{warn} %以上{fatal} %未満</b>の状態が<b>{warn.duration}</b>に該当する時間の間続く場合、<span style=\"color:#ffbf00;\"> [警告アラート]</span>が発生し、</br> <b>{fatal} %</b>の状態が<b>{fatal.duration}</b>に該当する時間の間続く場合には<span style=\"color:red;\">[危険アラート]</span>が発生します。",
     "ko": "프로세스 명과 사용자가 일치하는 <b>프로세스의 메모리 사용율</b>이</br> <b>{warn} % 이상 {fatal} % 미만</b>인 상태가 <b>{warn.duration}</b>에 해당하는 시간동안 지속될 경우 <span style=\"color:#ffbf00;\"> [경고 알림]</span>이 발생하며,</br> <b>{fatal} %</b> 이상인 상태가 <b>{fatal.duration}</b>에 해당하는 시간 동안 지속될 경우 <span style=\"color:red;\">[위험 알림]</span>이 발생합니다.",
+    "": "If the <b>memory usage of processes</b> whose names and users match is, <b>{warn} % or more but less than {fatal} %</b> and its status keeps for the period of <b>{warn.duration}</b>, a <span style=\"color:#ffbf00;\">[Warning notification]</span> occurs. </b> </br> If the usage is <b>{fatal} % or more and the status keeps for the period of <b>{fatal.duration}</b>, a <span style=\"color:red;\">[Danger notification]</span> occurs.",
     "service_id": "_02201"
   },
   "infra_rule_template_for_processcpu": {
-    "": "",
+    "en": "If the <b>CPU usage of processes</b> whose names and users match</b> is, <b>{warn} % or more but less that {fatal} % and the status keeps for the period of <b>{warn.duration}</b>, a <span style=\"color:#ffbf00;\">[Warning notification]</span> occurs. If the usage is <b>{fatal} %</b> or more and the status keeps for the period of <b>{fatal.duration}</b>, a <span style=\"color:red;\">[Danger notification]</span> occurs.",
     "ja": "プロセス名とユーザーが一致する<b>プロセスのCPU使用率</b>が</br> <b>{warn} %以上{fatal} %未満の状態が<b>{warn.duration}</b>に該当する時間の間続く場合、<span style=\"color:#ffbf00;\"> [警告アラート]</span>が発生し、</br> <b>{fatal} %</b>以上の状態が<b>{fatal.duration}</b>に該当する時間の間続く場合には<span style=\"color:red;\">[危険アラート]</span>が発生します。",
     "ko": "프로세스 명과 사용자가 일치하는 <b>프로세스의 CPU 사용율</b>이</br> <b>{warn} % 이상 {fatal} % 미만인 상태가 <b>{warn.duration}</b>에 해당하는 시간동안 지속될 경우 <span style=\"color:#ffbf00;\"> [경고 알림]</span>이 발생하며,</br> <b>{fatal} %</b> 이상인 상태가 <b>{fatal.duration}</b>에 해당하는 시간 동안 지속될 경우 <span style=\"color:red;\">[위험 알림]</span>이 발생합니다.",
+    "": "If the <b>CPU usage of processes</b> whose names and users match</b> is, <b>{warn} % or more but less that {fatal} % and the status keeps for the period of <b>{warn.duration}</b>, a <span style=\"color:#ffbf00;\">[Warning notification]</span> occurs. If the usage is <b>{fatal} %</b> or more and the status keeps for the period of <b>{fatal.duration}</b>, a <span style=\"color:red;\">[Danger notification]</span> occurs.",
     "service_id": "_02202"
   },
   "project_selection": {
@@ -19272,7 +19275,7 @@
     "service_id": "_02821"
   },
   "dashboard_copy_info": {
-    "": "",
+    "en": "The current dashboard is added to the account below. <br/>\nThe later changes to the dashboard are not shared.",
     "ja": "現在の状態のダッシュボードを以下のアカウントに追加します。<br/>\n以後のダッシュボードの変更事項は共有されません。",
     "ko": "현재 상태의 대시보드를 아래 계정에 추가합니다. <br/>\n이후 편집한 대시보드 변경사항은 공유되지 않습니다.  ",
     "zh": "Add a dashboard with the current status to the account you entered.<br/>The changes after that is not shared.",
@@ -54041,10 +54044,10 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
-    "zh": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
+    "zh": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
     "service_id": "DSC07839"
   },
   "DSC07840": {
@@ -54973,7 +54976,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "zh": "Run the following command to create an agent.",
     "service_id": "DSC07972"
@@ -55224,10 +55227,10 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
-    "zh": "Check the manifest of each object from the past",
+    "zh": "Check the manifest for each object from the past",
     "service_id": "DSC08008"
   },
   "DSC08009": {
@@ -55721,10 +55724,10 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
-    "zh": "Please enter the product name in English or another search term.",
+    "zh": "Please enter the product name in English or enter another search term.",
     "service_id": "DSC08079"
   },
   "DSC08080": {
@@ -56421,10 +56424,10 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
-    "zh": "Does not fit IP format.",
+    "zh": "It does not fit the IP format.",
     "service_id": "DSC08180"
   },
   "DSC08181": {
@@ -56939,10 +56942,10 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
-    "zh": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "zh": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "service_id": "NTC08253"
   },
   "DSC08254": {
@@ -57051,10 +57054,10 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
-    "zh": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "zh": "Set the 1 hour data (cube) storage period for the replica yard.",
     "service_id": "CNT08269"
   },
   "CNT08270": {
@@ -57527,10 +57530,10 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
-    "zh": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "zh": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "service_id": "DSC08338"
   },
   "DSC08339": {
@@ -57842,10 +57845,10 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
-    "zh": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "zh": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "service_id": "DSC08383"
   },
   "ITM08384": {
@@ -58178,10 +58181,10 @@
     "service_id": "DSC08430"
   },
   "DSC08431": {
-    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
+    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
     "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した時点での監視をお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
-    "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
+    "zh": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
     "service_id": "DSC08431"
   },
   "DSC08432": {
@@ -58220,10 +58223,10 @@
     "service_id": "DSC08436"
   },
   "DSC08437": {
-    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
+    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
     "ja": "<b> {resource}使用率</b>が平均{avg}から最大{max}まで増加し、<b>断続的に高い負荷が発生する可能性</b>があります。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}에서 최대 {max}까지 증가하여 <b>간헐적으로 높은 부하가 발생할 가능성</b>이 있습니다.",
-    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
+    "zh": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
     "service_id": "DSC08437"
   },
   "DSC08438": {
@@ -58234,10 +58237,10 @@
     "service_id": "DSC08438"
   },
   "DSC08439": {
-    "en": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. Resource utilization can be increased through periodic resource usage pattern monitoring, resource allocation optimization, and workload distribution.",
+    "en": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. You can increase resource utilization by periodically monitoring resource usage patterns, optimizing resource allocation, and distributing workloads.",
     "ja": "<b> {resource}使用率</b>は、平均{avg}、最大{max}で<b>継続的に低い状態</b>です。定期的にリソースの使用パターンの監視し、リソース割り当ての最適化やワークロードの配布を通じて、リソースの使用率を向上させることができます。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}, 최대 {max}로 <b>지속적으로 낮은 상태</b>입니다. 주기적인 리소스 사용 패턴 모니터링과 리소스 할당 최적화, 작업 부하 분배를 통해 자원 활용도를 높일 수 있습니다.",
-    "zh": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. Resource utilization can be increased through periodic resource usage pattern monitoring, resource allocation optimization, and workload distribution.",
+    "zh": "<b>{resource} utilization</b> is <b>consistently low</b> with average {avg} and maximum {max}. You can increase resource utilization by periodically monitoring resource usage patterns, optimizing resource allocation, and distributing workloads.",
     "service_id": "DSC08439"
   },
   "DSC08440": {
@@ -58675,10 +58678,10 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "<b>Add the script file to the {path} path</b>.",
+    "en": "Add the script file to <b>{path}</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
-    "zh": "<b>Add the script file to the {path} path</b>.",
+    "zh": "Add the script file to <b>{path}</b>.",
     "service_id": "DSC08502"
   },
   "DSC08503": {
@@ -58907,7 +58910,7 @@
   },
   "TTL08537": {
     "en": "Introducing the node map feature!",
-    "ja": "ノードマップ機能をご紹介します！",
+    "ja": "ノードマップ機能を紹介します！",
     "ko": "노드 맵 기능을 소개합니다!",
     "zh": "Introducing the node map feature!",
     "service_id": "TTL08537"
@@ -59012,7 +59015,7 @@
   },
   "DSC08552": {
     "en": "The Active Connection of ${oname} is ${active$connections}.",
-    "ja": "${oname} の Active Connection は ${active$connections} です。",
+    "ja": "${oname}のActive Connectionは${active$connections}です。",
     "ko": "${oname}의 Active Connection이 ${active$connections}입니다.",
     "zh": "The Active Connection of ${oname} is ${active$connections}.",
     "service_id": "DSC08552"
@@ -59087,10 +59090,10 @@
     "service_id": "TLT08562"
   },
   "TLT08563": {
-    "en": "This represents the average time it takes the browser to completely load a web page, and is the time it takes to complete additional interactions after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
+    "en": "This represents the average time it takes the browser to completely load a web page, and is the time it takes for additional interactions to complete after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
     "ja": "ブラウザがWebページを完全に読み込むまでかかる時間を示します。",
     "ko": "브라우저가 웹 페이지를 완전히 불러오는데 소요한 평균 시간을 나타내며, loadEventEnd 이후 추가 인터랙션을 완료하기까지의 시간입니다. 브라우저 에이전트가 측정한 페이지 로드 완료 시간을 의미합니다.",
-    "zh": "This represents the average time it takes the browser to completely load a web page, and is the time it takes to complete additional interactions after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
+    "zh": "This represents the average time it takes the browser to completely load a web page, and is the time it takes for additional interactions to complete after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
     "service_id": "TLT08563"
   },
   "TLT08564": {
@@ -59150,10 +59153,10 @@
     "service_id": "TLT08571"
   },
   "TLT08572": {
-    "en": "It represents the average time it takes for a browser to look up a website domain while loading a web page, and refers to the time taken from domainLookupStart to domainLookupEnd.",
+    "en": "It represents the average time the browser takes to look up a website domain while loading a web page, and refers to the time taken from domainLookupStart to domainLookupEnd.",
     "ja": "ブラウザのWebページロード中に、Webサイトドメインの照会にかかる時間を示します。",
     "ko": "브라우저가 웹 페이지를 불러오면서 웹사이트 도메인을 조회하는데 소요한 평균 시간을 나타내며, domainLookupStart부터 domainLookupEnd까지 소요된 시간을 의미합니다.",
-    "zh": "It represents the average time it takes for a browser to look up a website domain while loading a web page, and refers to the time taken from domainLookupStart to domainLookupEnd.",
+    "zh": "It represents the average time the browser takes to look up a website domain while loading a web page, and refers to the time taken from domainLookupStart to domainLookupEnd.",
     "service_id": "TLT08572"
   },
   "TLT08573": {
@@ -59213,10 +59216,10 @@
     "service_id": "BTN08580"
   },
   "DSC08581": {
-    "en": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "en": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "ja": "イベントの対象を変更した場合は、アラート通知の件数が変わる可能性があるため、<span class=\"{class}\">「シミュレーション」ボタンをもう一度実行してください。</span>",
     "ko": "이벤트 대상을 변경한 경우, 알림 건수가 달라질 수 있으니 <span class=\"{class}\">“시뮬레이션” 버튼을 다시 실행하세요.</span>",
-    "zh": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "zh": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "service_id": "DSC08581"
   },
   "DSC08582": {
@@ -59305,7 +59308,7 @@
   },
   "DSC08594": {
     "en": "{highlight} and additional pattern registration may be required depending on simulation results.",
-    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "zh": "{highlight} and additional pattern registration may be required depending on simulation results.",
     "service_id": "DSC08594"
@@ -59381,10 +59384,10 @@
     "service_id": "TTL08604"
   },
   "TLT08605": {
-    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "en": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "ja": "Browserモニタリングで有意味な統計グループを持つために、URLパスを正規化してページグループという名前で指定します。 URLパス 単位の分析に意味がないと判断した数字、日付などを疑問符(?)で置き換えます。 ",
     "ko": "브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL Path를 정규화해 페이지 그룹이라는 이름으로 제공합니다. URL Path 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다. ",
-    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are deemed meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
+    "zh": "In order to have meaningful statistical groups in the browser monitoring service, the URL Path is normalized and provided under the name of page group. Numbers, dates, etc. that are judged to be meaningless in URL Path unit analysis are replaced with question marks (?) and provided. ",
     "service_id": "TLT08605"
   },
   "DSC08606": {
@@ -59402,10 +59405,10 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
+    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
-    "zh": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
+    "zh": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
     "service_id": "DSC08608"
   },
   "ITM08609": {
@@ -59647,10 +59650,10 @@
     "service_id": "DSC08642"
   },
   "DSC08643": {
-    "en": "Install the Azure Resource Manager template to collect cloud metrics.",
+    "en": "Collect cloud metrics by installing an Azure Resource Manager template.",
     "ja": "Azure Active Directory に App Registration を追加して、Azure Monitor メトリクスを収集します.",
     "ko": "Azure Resource Manager 템플릿을 설치하여 클라우드 메트릭을 수집합니다.",
-    "zh": "Install the Azure Resource Manager template to collect cloud metrics.",
+    "zh": "Collect cloud metrics by installing an Azure Resource Manager template.",
     "service_id": "DSC08643"
   },
   "DSC08644": {
@@ -59878,10 +59881,10 @@
     "service_id": "TLT08675"
   },
   "TTL08676": {
-    "en": "IP Load Timeline",
+    "en": "IP load timeline",
     "ja": "IPロードタイムライン",
     "ko": "IP 로드 타임라인",
-    "zh": "IP Load Timeline",
+    "zh": "IP load timeline",
     "service_id": "TTL08676"
   },
   "DSC08677": {
@@ -60054,7 +60057,7 @@
   },
   "CNT08701": {
     "en": "A subscription within AWS Marketplace is required.{br}Once your subscription is confirmed, you can use the WhaTap service.",
-    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
+    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "zh": "A subscription within AWS Marketplace is required.{br}Once your subscription is confirmed, you can use the WhaTap service.",
     "service_id": "CNT08701"
@@ -60214,10 +60217,10 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Update the agent version to the latest version.",
+    "en": "Please update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
-    "zh": "Update the agent version to the latest version.",
+    "zh": "Please update the agent version to the latest version.",
     "service_id": "DSC08725"
   },
   "TTL08726": {
@@ -60704,10 +60707,10 @@
     "service_id": "DSC08794"
   },
   "DSC08795": {
-    "en": "The etcd monitoring feature requires <strong>WhaTap Kubernetes Agent {version} or higher and requires additional work, such as enabling the feature and configuring certificates for communication</strong>.",
+    "en": "To use the etcd monitoring feature, <strong>WhaTap Kubernetes Agent {version} or higher is required and additional work is required</strong>, such as enabling the feature and setting up a certificate for communication.",
     "ja": "etcd監視機能を使用するには、WhaTap Kubernetes Agent {version}以降が必要です。機能の有効化と、通信のための証明書の設定など、追加作業が必要です。",
     "ko": "etcd 모니터링 기능을 사용하려면 <strong>와탭 쿠버네티스 에이전트 {version} 이상이 필요하며 기능 활성화와 통신을 위한 인증서 설정 등 추가 작업이 필요</strong>합니다.",
-    "zh": "The etcd monitoring feature requires <strong>WhaTap Kubernetes Agent {version} or higher and requires additional work, such as enabling the feature and configuring certificates for communication</strong>.",
+    "zh": "To use the etcd monitoring feature, <strong>WhaTap Kubernetes Agent {version} or higher is required and additional work is required</strong>, such as enabling the feature and setting up a certificate for communication.",
     "service_id": "DSC08795"
   },
   "DSC08796": {
@@ -60781,10 +60784,10 @@
     "service_id": "TTL08805"
   },
   "DSC08806": {
-    "en": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "en": "If the installed Agent version is lower than the supported versions below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
     "ja": "インストールされたエージェントのバージョンが以下のバージョンより低い場合、「サーバーインベントリマップ」にサーバーアイコンは表示されますが、サーバーインベントリマップのグループ性能統計情報、右サマリパネル、詳細ビューなどのファイルシステム情報、メトリクスは正常に表示されないことがあります。",
     "ko": "설치된 Agent 버전이 아래의 지원 버전보다 낮을 경우, \"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만 서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
-    "zh": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "zh": "If the installed Agent version is lower than the supported versions below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
     "service_id": "DSC08806"
   },
   "ITM08807": {
@@ -60831,23 +60834,23 @@
   },
   "DSC08813": {
     "en": "You can set object query permissions using the following command.",
-    "ja": "次のコマンドを使用して、オブジェクト照会権限を設定できます。",
+    "ja": "次のコマンドを使用してオブジェクト照会権限を設定できます。",
     "ko": "다음 명령어를 사용하여 오브젝트 조회 권한을 설정할 수 있습니다.",
     "zh": "You can set object query permissions using the following command.",
     "service_id": "DSC08813"
   },
   "TTL08814": {
-    "en": "Encryption of sensitive information",
-    "ja": "機密情報の暗号化",
-    "ko": "민감정보 암호화",
-    "zh": "Encryption of sensitive information",
+    "en": "De-identification of personal information",
+    "ja": "個人情報の非識別",
+    "ko": "개인정보 비식별화",
+    "zh": "De-identification of personal information",
     "service_id": "TTL08814"
   },
   "DSC08815": {
-    "en": "When you enter a field subject to encryption, it is saved in an encrypted state.",
-    "ja": "暗号化対象となるフィールドを入力時に暗号化状態で保存されます。",
-    "ko": "암호화 대상이 되는 필드를 입력 시 암호화 상태로 저장됩니다.",
-    "zh": "When you enter a field subject to encryption, it is saved in an encrypted state.",
+    "en": "If you add a search key containing personal information, the data is encrypted, stored, and masked.",
+    "ja": "個人情報を含む検索キーを追加すると、そのデータを暗号化して保存してマスキングします。",
+    "ko": "개인정보가 포함된 검색 키를 추가하면 해당 데이터를 암호화하여 저장하고 마스킹 처리 합니다.",
+    "zh": "If you add a search key containing personal information, the data is encrypted, stored, and masked.",
     "service_id": "DSC08815"
   },
   "ITM08816": {
@@ -60858,11 +60861,235 @@
     "service_id": "ITM08816"
   },
   "DSC08817": {
-    "en": "Enter the fields you want to encrypt. Press Enter and it will be added.",
-    "ja": "暗号化するフィールドを入力してください。 Enterを押すと追加されます。",
-    "ko": "암호화할 필드를 입력하세요. Enter를 누르면 추가됩니다.",
-    "zh": "Enter the fields you want to encrypt. Press Enter and it will be added.",
+    "en": "Enter the search key to encrypt.",
+    "ja": "暗号化する検索キーを入力してください。",
+    "ko": "암호화할 검색 키를 입력하세요.",
+    "zh": "Enter the search key to encrypt.",
     "service_id": "DSC08817"
+  },
+  "DSC08818": {
+    "en": "Display personal information",
+    "ja": "個人情報の表示",
+    "ko": "개인정보 표시",
+    "zh": "Display personal information",
+    "service_id": "DSC08818"
+  },
+  "BTN08818": {
+    "en": "Display personal information",
+    "ja": "個人情報の表示",
+    "ko": "개인정보 표시",
+    "zh": "Display personal information",
+    "service_id": "BTN08818"
+  },
+  "TLT08819": {
+    "en": "De-identified personal information is restored and displayed.",
+    "ja": "非識別化された個人情報を復元して表示します。",
+    "ko": "비식별화된 개인정보를 복원하여 표시합니다.",
+    "zh": "De-identified personal information is restored and displayed.",
+    "service_id": "TLT08819"
+  },
+  "DSC08820": {
+    "en": "Show legend",
+    "ja": "凡例を表示",
+    "ko": "범례 표시",
+    "zh": "Show legend",
+    "service_id": "DSC08820"
+  },
+  "TLT08821": {
+    "en": "Invalid input.",
+    "ja": "無効な入力です。",
+    "ko": "잘못된 입력입니다.",
+    "zh": "Invalid input.",
+    "service_id": "TLT08821"
+  },
+  "DSC08822": {
+    "en": "The name of a namespace project is the same as the namespace name and cannot be changed.",
+    "ja": "名前空間プロジェクトの名前は対応する名前空間名と同じであり、変更はできません。",
+    "ko": "네임스페이스 프로젝트의 이름은 해당 네임스페이스 이름과 동일하며, 변경이 불가능합니다.",
+    "zh": "The name of a namespace project is the same as the namespace name and cannot be changed.",
+    "service_id": "DSC08822"
+  },
+  "DSC08824": {
+    "en": "Encryption storage and masking of personal information data is processed from logs collected after registration of search key, and search keys with de-identified personal information can be found in the log menu (Tail, Trend, Search).\n It appears to be changed to {tag1} or {tag2}.",
+    "ja": "個人情報データの暗号化保存およびマスキング操作は、検索キー登録後に収集されたログから処理されます。\n {tag1}または{tag2}に変更されているようです。",
+    "ko": "개인정보 데이터의 암호화 저장 및 마스킹 작업은 검색 키 등록 이후에 수집된 로그부터 처리되며{br}개인정보 비식별화 처리된 검색 키는 로그 메뉴(테일, 트렌드, 검색)에서\n {tag1} 혹은 {tag2} 로 변경되어 보입니다.",
+    "zh": "Encryption storage and masking of personal information data is processed from logs collected after registration of search key, and search keys with de-identified personal information can be found in the log menu (Tail, Trend, Search).\n It appears to be changed to {tag1} or {tag2}.",
+    "service_id": "DSC08824"
+  },
+  "DSC08825": {
+    "en": "Encryption target search key registered by the agent or primary parser",
+    "ja": "エージェントまたはプライマリパーサーによって登録された暗号化ターゲット検索キー",
+    "ko": "에이전트 혹은 1차 파서에서 등록한 암호화 대상 검색 키",
+    "zh": "Encryption target search key registered by the agent or primary parser",
+    "service_id": "DSC08825"
+  },
+  "DSC08826": {
+    "en": "Target search key for de-identified personal information",
+    "ja": "個人情報の非識別設定したターゲット検索キー",
+    "ko": "개인정보 비식별화 설정한 대상 검색 키",
+    "zh": "Target search key for de-identified personal information",
+    "service_id": "DSC08826"
+  },
+  "DSC08827": {
+    "en": "Try {desc} at the top.",
+    "ja": "上部の{desc}を試してください。",
+    "ko": "상단의 {desc}해보세요.",
+    "zh": "Try {desc} at the top.",
+    "service_id": "DSC08827"
+  },
+  "CNT08828": {
+    "en": "Click the Add button to set a search key",
+    "ja": "追加ボタンを押して検索キーを設定する",
+    "ko": "추가하기 버튼을 눌러 검색 키를 설정",
+    "zh": "Click the Add button to set a search key",
+    "service_id": "CNT08828"
+  },
+  "CNT08829": {
+    "en": "Log personal information inquiry",
+    "ja": "ログ個人情報の照会",
+    "ko": "로그 개인정보 조회",
+    "zh": "Log personal information inquiry",
+    "service_id": "CNT08829"
+  },
+  "CNT08830": {
+    "en": "You can check log personal information.",
+    "ja": "ログのプライバシーを確​​認できます。",
+    "ko": "로그 개인정보를 조회할 수 있습니다.",
+    "zh": "You can check log personal information.",
+    "service_id": "CNT08830"
+  },
+  "DSC08831": {
+    "en": "invalid access",
+    "ja": "無効なアクセス",
+    "ko": "유효하지 않은 접근",
+    "zh": "invalid access",
+    "service_id": "DSC08831"
+  },
+  "DSC08832": {
+    "en": "Search key for de-identifying personal information",
+    "ja": "個人情報の非識別を進めたい検索キー",
+    "ko": "개인정보 비식별화를 진행하고자 하는 검색 키",
+    "zh": "Search key for de-identifying personal information",
+    "service_id": "DSC08832"
+  },
+  "DSC08833": {
+    "en": "Predefined de-identified target search keys in the agent or primary parser (search keys ending in .p)",
+    "ja": "エージェントまたはプライマリパーサーで事前定義された非識別化ターゲット検索キー（.pで終わる検索キー）",
+    "ko": "에이전트 또는 1차 파서에서 사전 정의된 비식별화 대상 검색 키 (.p로 끝나는 검색 키)",
+    "zh": "Predefined de-identified target search keys in the agent or primary parser (search keys ending in .p)",
+    "service_id": "DSC08833"
+  },
+  "DSC08834": {
+    "en": "In addition to the designated search key, a de-identified target search key to be additionally specified (search key corresponding to additional personal information and sensitive information)",
+    "ja": "指定された検索キーに加えてさらに指定する非識別化対象検索キー（追加の個人情報および機密情報に対応する検索キー）",
+    "ko": "지정된 검색 키 외에 추가로 지정할 비식별화 대상 검색 키 (추가적인 개인정보 및 민감정보에 해당하는 검색 키)",
+    "zh": "In addition to the designated search key, a de-identified target search key to be additionally specified (search key corresponding to additional personal information and sensitive information)",
+    "service_id": "DSC08834"
+  },
+  "TTL08835": {
+    "en": "specified search key",
+    "ja": "指定された検索キー",
+    "ko": "지정된 검색 키",
+    "zh": "specified search key",
+    "service_id": "TTL08835"
+  },
+  "TTL08836": {
+    "en": "Search key to add",
+    "ja": "追加する検索キー",
+    "ko": "추가할 검색 키",
+    "zh": "Search key to add",
+    "service_id": "TTL08836"
+  },
+  "NTC08837": {
+    "en": "There are no bind variables to copy.",
+    "ja": "コピーするバインド変数がありません。",
+    "ko": "복사할 바인드 변수가 없습니다.",
+    "zh": "There are no bind variables to copy.",
+    "service_id": "NTC08837"
+  },
+  "NTC08838": {
+    "en": "Bind variables were batch copied.",
+    "ja": "バインド変数が一括コピーされました。",
+    "ko": "바인드 변수가 일괄 복사되었습니다.",
+    "zh": "Bind variables were batch copied.",
+    "service_id": "NTC08838"
+  },
+  "TLT08839": {
+    "en": "You can batch copy bind variables and paste them into DB linkage analysis SQL.",
+    "ja": "バインド変数を一括コピーして、DB連携分析SQLに一括貼り付けることができます。",
+    "ko": "바인드 변수를 일괄 복사하여 DB 연계 분석 SQL에 일괄 붙여넣기를 할 수있습니다.",
+    "zh": "You can batch copy bind variables and paste them into DB linkage analysis SQL.",
+    "service_id": "TLT08839"
+  },
+  "BTN08840": {
+    "en": "Copy bind variables",
+    "ja": "バインド変数のコピー",
+    "ko": "바인드 변수 복사",
+    "zh": "Copy bind variables",
+    "service_id": "BTN08840"
+  },
+  "DSC08841": {
+    "en": "Select the search keys you want to encrypt and store and mask.",
+    "ja": "暗号化保存およびマスキング処理する検索キーを選択します。",
+    "ko": "암호화 저장 및 마스킹 처리할 검색 키를 선택합니다.",
+    "zh": "Select the search keys you want to encrypt and store and mask.",
+    "service_id": "DSC08841"
+  },
+  "TTL08842": {
+    "en": "filter value",
+    "ja": "フィルタ値",
+    "ko": "필터 값",
+    "zh": "filter value",
+    "service_id": "TTL08842"
+  },
+  "DSC08843": {
+    "en": "After selecting the filter key and value, you can search the data by pressing the search button.",
+    "ja": "フィルタキーと値を選択したら、検索ボタンを押してデータを照会できます。",
+    "ko": "필터 키와 값을 선택한 후 검색 버튼을 눌러 데이터를 조회할 수 있습니다.",
+    "zh": "After selecting the filter key and value, you can search the data by pressing the search button.",
+    "service_id": "DSC08843"
+  },
+  "TTL08844": {
+    "en": "Smart Message (AI)",
+    "ja": "スマートメッセージ(AI)",
+    "ko": "Smart 메시지 (AI)",
+    "zh": "Smart Message (AI)",
+    "service_id": "TTL08844"
+  },
+  "ITM08845": {
+    "en": "Get AI notifications",
+    "ja": "AI通知で受信",
+    "ko": "AI 알림으로 받기",
+    "zh": "Get AI notifications",
+    "service_id": "ITM08845"
+  },
+  "BTN08846": {
+    "en": "Paste variables",
+    "ja": "変数を貼り付ける",
+    "ko": "변수 붙여넣기",
+    "zh": "Paste variables",
+    "service_id": "BTN08846"
+  },
+  "TLT08847": {
+    "en": "You can paste copied bind variables in batches.",
+    "ja": "コピーしたバインド変数を一括ペーストできます。",
+    "ko": "복사된 바인드 변수를 일괄 붙여넣기 할 수 있습니다.",
+    "zh": "You can paste copied bind variables in batches.",
+    "service_id": "TLT08847"
+  },
+  "TLT08848": {
+    "en": "No bind variable values ​​were copied.",
+    "ja": "コピーされたバインド変数の値はありません。",
+    "ko": "복사된 바인드 변수 값이 없습니다.",
+    "zh": "No bind variable values ​​were copied.",
+    "service_id": "TLT08848"
+  },
+  "BTN08849": {
+    "en": "Display {value}",
+    "ja": "{value} 表示",
+    "ko": "{value} 표시",
+    "zh": "Display {value}",
+    "service_id": "BTN08849"
   },
   "": {
     "en": "#VALUE!",
@@ -61874,7 +62101,7 @@
   },
   "side_serverInventoryGuide": {
     "en": "Server Inventory Agent Guide",
-    "ja": "サーバー構成情報エージェントの案内",
+    "ja": "サーバー インベントリ エージェントの案内",
     "ko": "서버 인벤토리 에이전트 안내"
   },
   "side_serverCube": {
@@ -62915,15 +63142,60 @@
     "ja": "リソース状況",
     "ko": "리소스 현황"
   },
+  "side_deviceManagement": {
+    "en": "Device Management",
+    "ja": "デバイス管理",
+    "ko": "디바이스 관리"
+  },
+  "side_device": {
+    "en": "Device",
+    "ja": "デバイス",
+    "ko": "디바이스"
+  },
+  "side_deviceTrend": {
+    "en": "Device Trend",
+    "ja": "デバイスの傾向",
+    "ko": "디바이스 추이"
+  },
+  "side_deviceDetail": {
+    "en": "Device Detail",
+    "ja": "デバイス詳細",
+    "ko": "디바이스 상세"
+  },
+  "side_mibUpload": {
+    "en": "MIB Upload",
+    "ja": "MIBアップロード",
+    "ko": "MIB 업로드"
+  },
+  "side_oidManagement": {
+    "en": "OID Management",
+    "ja": "OID管理",
+    "ko": "OID 관리"
+  },
   "side_ingressList": {
     "en": "Ingress List",
     "ja": "Ingress リスト",
     "ko": "Ingress 목록"
   },
+  "side_trapSetting": {
+    "en": "Trap Setting",
+    "ja": "トラップ設定",
+    "ko": "Trap 설정"
+  },
+  "side_nmsDashboard": {
+    "en": "Dashboard",
+    "ja": "ダッシュボード",
+    "ko": "대시보드"
+  },
   "side_etcdDashboard": {
     "en": "etcd Dashboard",
     "ja": "etcd ダッシュボード",
     "ko": "etcd 대시보드"
+  },
+  "side_mibBrowser": {
+    "en": "MIB Browser",
+    "ja": "MIB Browser",
+    "ko": "MIB 브라우저"
   },
   "side_emAccountManage": {
     "en": "EM Account Management",
