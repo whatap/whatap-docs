@@ -137,9 +137,9 @@ html[lang='en-US'] {
   //     display: none;
   //   }
   // }
-  // nav.pagination-nav {
-  //   display: none;
-  // }
+  nav.pagination-nav {
+    display: none;
+  }
   // 영문 블로그 날짜2
   div.history_overview ul li > .changelog-date {
     position: absolute;
@@ -166,9 +166,9 @@ html[lang='ja-JP'] {
   //     display: none;
   //   }
   // }
-  // nav.pagination-nav {
-  //   display: none;
-  // }
+  nav.pagination-nav {
+    display: none;
+  }
   // 일문 블로그 날짜2
   div.history_overview ul li > .changelog-date {
     position: absolute;
@@ -222,6 +222,13 @@ footer.footer {
     margin: 0 auto;
     min-height: 88px;
     padding: var(--ifm-footer-padding-vertical) var(--ifm-footer-padding-horizontal);
+  }
+}
+
+footer.footer.full--width {
+  .container {
+    max-width: 100%;
+    margin: 0;
   }
 }
 
