@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
 
 :root {
+  --doc-full-width: 1440px;
   --ifm-pre-background: none;
   --doc-sidebar-width: 220px !important;
   --ifm-color-primary: #296cf2;
@@ -202,9 +203,24 @@ html[lang='ja-JP'] {
   padding: 0;
 }
 #__docusaurus {
-  max-width: 1400px;
+  // max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
 }
+
+footer.footer {
+  background-color: unset;
+  padding-top: 0;
+  padding-bottom: 0;
+  .container {
+    background-color: var(--ifm-footer-background-color);
+    max-width: var(--doc-full-width);
+    margin: 0 auto;
+    min-height: 88px;
+    padding: var(--ifm-footer-padding-vertical) var(--ifm-footer-padding-horizontal);
+  }
+}
+
 .tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
   border: 1px solid rgba(41, 108, 242, 0.7) !important; 
 }
@@ -270,11 +286,14 @@ html[lang='ja-JP'] {
   }
 }
 .navbar {
-  padding: 24px 16px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 0;
   .navbar__inner {
     align-items: center;
     flex-wrap: inherit;
+    max-width: var(--doc-full-width);
+    margin: 0 auto;
+    padding: 24px 8px;
+    border-bottom: 1px solid #f0f0f0;
   }
 }
 .navbar__brand {
@@ -835,6 +854,8 @@ article div[class*='fbsharebutton'] {
 // UI
 // OpenAPI
 .redocusaurus {
+  margin: 0;
+  max-width: 100%;
   div.redoc-wrap {
     .menu-content {
       .scrollbar-container {
@@ -844,7 +865,7 @@ article div[class*='fbsharebutton'] {
       }
     }
     div.api-content {
-      width: calc(100% - 220px) !important;
+      width: calc(100% - 240px) !important;
     }
   }
   h1 {
@@ -1170,6 +1191,10 @@ code.Features {
   color: rgb(234, 92, 202);
   border: none;
   padding: 2px 5px;
+}
+
+div[class*="docsWrapper"] {
+  margin: 0 auto;
 }
 
 // document
@@ -1509,6 +1534,7 @@ main {
         text-decoration: none;
         color: var(--ifm-font-color-doc-card);
         border-color: var(--ifm-font-color-doc-card);
+        min-height: 124.81px;
         h2 {
           padding: 0 0 6px 0;
           line-height: 1.5;
@@ -3239,6 +3265,13 @@ main {
   }
 }
 @media (max-width: 996px) {
+  .navbar {
+    padding: 0;
+    .navbar__inner {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
   .container.margin-vert--lg main.col--7 {
     max-width: 98% !important;
     margin-left: 10px;
