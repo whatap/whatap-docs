@@ -725,27 +725,27 @@
   },
   "analysis-tx-active-stack-en.png": {
     "width": 800,
-    "height": 517
+    "height": 334
   },
   "analysis-tx-active-stack-ja.png": {
     "width": 800,
-    "height": 516
+    "height": 336
   },
   "analysis-tx-active-stack.png": {
     "width": 800,
-    "height": 533
+    "height": 334
   },
   "analysis-tx-http-call-en.png": {
     "width": 800,
-    "height": 264
+    "height": 382
   },
   "analysis-tx-http-call-ja.png": {
     "width": 800,
-    "height": 260
+    "height": 381
   },
   "analysis-tx-http-call.png": {
     "width": 800,
-    "height": 174
+    "height": 382
   },
   "analysis-tx-main-column-en.png": {
     "width": 600,
@@ -785,15 +785,15 @@
   },
   "analysis-tx-method-summary-en.png": {
     "width": 800,
-    "height": 330
+    "height": 432
   },
   "analysis-tx-method-summary-ja.png": {
     "width": 800,
-    "height": 316
+    "height": 434
   },
   "analysis-tx-method-summary.png": {
     "width": 800,
-    "height": 358
+    "height": 430
   },
   "analysis-tx-multi-en.png": {
     "width": 800,
@@ -821,15 +821,15 @@
   },
   "analysis-tx-sql-summary-en.png": {
     "width": 800,
-    "height": 169
+    "height": 372
   },
   "analysis-tx-sql-summary-ja.png": {
     "width": 800,
-    "height": 169
+    "height": 372
   },
   "analysis-tx-sql-summary.png": {
     "width": 800,
-    "height": 144
+    "height": 369
   },
   "analysis-tx-table-view-en.png": {
     "width": 1200,
@@ -905,7 +905,7 @@
   },
   "analysis-tx-transaction-log-en.png": {
     "width": 800,
-    "height": 397
+    "height": 357
   },
   "analysis-tx-transaction-log-highlight-keyword-en.png": {
     "width": 400,
@@ -921,11 +921,11 @@
   },
   "analysis-tx-transaction-log-ja.png": {
     "width": 800,
-    "height": 415
+    "height": 356
   },
   "analysis-tx-transaction-log.png": {
     "width": 800,
-    "height": 367
+    "height": 357
   },
   "analysis-tx-tree-view-en.png": {
     "width": 800,
@@ -9532,8 +9532,8 @@
     "height": 843
   },
   "event-history-server.png": {
-    "width": 1200,
-    "height": 743
+    "width": 1218,
+    "height": 584
   },
   "event-history.png": {
     "width": 1200,
@@ -15447,6 +15447,18 @@
     "width": 678,
     "height": 414
   },
+  "ms-entraid-login-fail-en.png": {
+    "width": 600,
+    "height": 614
+  },
+  "ms-entraid-login-fail-ja.png": {
+    "width": 600,
+    "height": 614
+  },
+  "ms-entraid-login-fail.png": {
+    "width": 600,
+    "height": 614
+  },
   "ms2whatap-signup.png": {
     "width": 400,
     "height": 377
@@ -19267,17 +19279,29 @@
     "width": 400,
     "height": 295
   },
+  "whatap-docs-main-r-en.png": {
+    "width": 1200,
+    "height": 979
+  },
+  "whatap-docs-main-r-ja.png": {
+    "width": 1200,
+    "height": 1010
+  },
+  "whatap-docs-main-r.png": {
+    "width": 1200,
+    "height": 981
+  },
   "whatap-docs-upper-en.png": {
     "width": 1200,
-    "height": 67
+    "height": 79
   },
   "whatap-docs-upper-ja.png": {
     "width": 1200,
-    "height": 71
+    "height": 80
   },
   "whatap-docs-upper.png": {
     "width": 1200,
-    "height": 58
+    "height": 80
   },
   "whatap-forwarder-subnet.png": {
     "width": 1966,
