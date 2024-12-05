@@ -51,7 +51,7 @@
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.0.0",
     "docusaurus-plugin-image-zoom": "^2.0.0",
-    "docusaurus-plugin-sass": "^0.2.5",
+    "docusaurus-plugin-sass": "^0.2.6",
     "docusaurus-prince-pdf": "^1.2.1",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
