@@ -186,6 +186,11 @@ const config = {
         theme: {
           // Change with your site colors
           primaryColor: '#1890ff',
+          theme: {
+            sidebar: {
+              width: "240px"
+            }
+          }
         },
       },
     ]

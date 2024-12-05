@@ -1,3 +1,8 @@
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .frontheading {
   font-weight: 400;
   font-size: 1.8rem;
@@ -5,7 +10,6 @@
   color: #fff;
   text-decoration: solid;
   text-align: left;
-  width: 700px;
   margin: 0 auto 15px auto;
 }
 
@@ -21,6 +25,12 @@
   z-index: 100; */
 }
 
+.homehero .headtitle {
+  margin: auto;
+  width: 49%;
+  margin: 0 auto;
+}
+
 .homehero .textleft {
   text-align: left;
 }
@@ -31,7 +41,7 @@
 
 .newdoc {
   font-size: 15px;
-  width: 700px;
+  width: 49%;
   margin: 10px auto 0 auto;
   display: block;
 }
@@ -462,5 +472,17 @@ html[lang='en-US'] p.small {
     stroke: #aaa;
     stroke-width: 2;
     stroke-linejoin: round;
+  }
+}
+@media (max-width: 997px) {
+  .homehero .headtitle,
+  .homehero .newdoc {
+    width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  .frontheading {
+    font-size: 1.2rem;
   }
 }
