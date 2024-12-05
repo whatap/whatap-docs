@@ -25,10 +25,7 @@ export default function NavbarLayout({children}) {
   const mobileSidebar = useNavbarMobileSidebar();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
   const location = useLocation();
-  const isOpenapi = location.pathname == "/openapi-spec";
-  
-  // const canRender = !hidden && toc.length > 0;
-  // const mobile = canRender ? <DocItemTOCMobile /> : undefined;
+  const isOpenapi = location.pathname.includes("openapi-spec");
   
   return (
     <nav
