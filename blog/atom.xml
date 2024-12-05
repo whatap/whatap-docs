@@ -21,14 +21,6 @@
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
 <li>
-<code class="changelog-overview">공통</code>
-<code class="changelog-date">2024년 12월 04일</code>
-<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.4​</a></code>
-<ul>
-<li><code class="Feature" type="1">Feature</code> 이벤트 알림 메시지에 해당 시간대의 대시보드로 이동할 수 있는 링크 추가</li>
-</ul>
-</li>
-<li>
 <code class="changelog-overview">Application</code>
 <code class="changelog-date">2024년 12월 04일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.4​</a></code>
@@ -3863,7 +3855,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">쿠버네티스 이벤트</span>: 프로젝트 단위로 쿠버네티스 이벤트에 대한 조회와 검색 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">WhaTap 이벤트</span>: <code>#WhatapEvent</code> 카테고리의 로그 데이터 조회 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <!-- -->: <code>#WhatapEvent</code> 카테고리의 로그 데이터 조회 기능 추가 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
 </li>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> 메뉴에서 복합 메트릭스 이벤트 템플릿 추가 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.5​</code></a></code></p>
@@ -4067,7 +4059,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직접 링크" title="dbx-v1633-2024년-03월-13일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직접 링크" title="dbx-v1633-2024��년-03월-13일에 대한 직접 링크">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.sh</em> 추가</li>
@@ -4082,7 +4074,7 @@
 <ul>
 <li><code class="Feature">Feature</code> MongoDB <code class="my">V2</code> 추가</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="redis-1">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#redis-1" class="hash-link" aria-label="Redis​에 대한 직접 링크" title="Redis​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="redis-1">Redis​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#redis-1" class="hash-link" aria-label="Redis​에 대한 직��접 링크" title="Redis​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> Redis <code class="my">V2</code> 추가</li>
 </ul></div></div></details>
