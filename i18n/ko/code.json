@@ -786,5 +786,8 @@
   "theme.blog.author.noPosts": {
     "message": "This author has not written any posts yet.",
     "description": "The text for authors with 0 blog post"
+  },
+  "pages.dbfunctions.title": {
+    "message": "데이터베이스별 지원 기능 비교"
   }
 }

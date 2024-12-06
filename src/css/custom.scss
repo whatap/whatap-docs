@@ -1168,6 +1168,19 @@ code.Features {
   padding: 2px 5px;
 }
 
+.tabulator {
+  position: sticky !important;
+  top: 176px;
+  height: calc(100vh - 277px) !important;
+  .tabulator-col-title-holder {
+    text-align: center;
+  }
+  .tabulator-group {
+    background: #618ce4 !important;
+    color: #fff;
+  }
+}
+
 // document
 main {
   .imgError {
