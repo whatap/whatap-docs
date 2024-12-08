@@ -931,7 +931,7 @@ export default function App() {
       oraclev1: "",
       oraclepro: true,
       mysql: true,
-      mysqlv1: true,
+      mysqlv1: "",
       mssql: "",
       mssqlv1: "",
       tibero: "",
