@@ -57,6 +57,7 @@ export default function App() {
   const eventSetting = menuItem("side_eventSetting"); // 이벤트 설정
   const eventNoti = menuItem("side_eventNoti"); // 이벤트 수신 설정
   const eventHistory = menuItem("side_eventHistory"); // 이벤트 기록
+  const correlatedProjectManagement = menuItem("side_correlatedProjectManagement"); // 연계 프로젝트 관리
   const instanceDashboard = menuItem("TTL08442"); // 인스턴스 대시보드
   const linkedDbinfo = menuItem("TTL07860"); // 연계 데이터베이스 정보
   const dbCloudSetting = menuItem("side_dbCloudSetting"); // 클라우드 설정
@@ -879,7 +880,29 @@ export default function App() {
     },
     {
       category: "Correlation analysis",
-      function: instanceDashboard,
+      function: correlatedProjectManagement,
+      pgsql: true,
+      pgsqlv1: "",
+      oracle: true,
+      oraclev1: "",
+      oraclepro: true,
+      mysql: true,
+      mysqlv1: "",
+      mssql: "",
+      mssqlv1: "",
+      tibero: "",
+      cubrid: "",
+      cubridv1: "",
+      altibase: "",
+      altibasev1: "",
+      redis: "",
+      redisv1: "",
+      mongodb: "",
+      mongodbv1: "",
+    },
+    {
+      category: "Correlation analysis",
+      function: `${instanceDashboard} (APM → DB)`,
       pgsql: true,
       pgsqlv1: true,
       oracle: true,
@@ -908,7 +931,7 @@ export default function App() {
       oraclev1: "",
       oraclepro: true,
       mysql: true,
-      mysqlv1: true,
+      mysqlv1: "",
       mssql: "",
       mssqlv1: "",
       tibero: "",
