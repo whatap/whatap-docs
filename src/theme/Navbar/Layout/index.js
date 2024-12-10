@@ -25,7 +25,7 @@ export default function NavbarLayout({children}) {
   const mobileSidebar = useNavbarMobileSidebar();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
   const location = useLocation();
-  const isOpenapi = location.pathname.includes("openapi-spec");
+  const isOpenapi = location.pathname.includes("openapi-spec") || location.pathname.includes("db-support-functions");
   
   return (
     <nav
