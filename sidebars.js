@@ -106,6 +106,7 @@ const sidebars = {
             'java/scale-in-auto-delete',
           ]
         },
+        'java/usage-ui',
         {
           type: 'category',
           label: '대시보드',
