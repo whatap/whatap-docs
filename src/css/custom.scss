@@ -1215,6 +1215,15 @@ div[class*="docsWrapper"] {
   width: 100%;
 }
 
+.tabulator {
+  position: sticky !important;
+  top: 176px;
+  height: calc(100vh - 277px) !important;
+  .tabulator-col-title-holder {
+    text-align: center;
+  }
+}
+
 // document
 main {
   .imgError {
