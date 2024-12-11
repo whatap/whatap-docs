@@ -126,6 +126,8 @@ const config = {
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
           // exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx', 'release-notes/otel/*.mdx' ],
           // 재환님 요청으로 오픈텔레메트리 릴리스 노트 문서를 오픈텔레메트리 문서 하위에서 확인 가능하도록 수정 1106
         },
