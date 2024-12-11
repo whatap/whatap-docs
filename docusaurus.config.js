@@ -6,6 +6,8 @@ const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 const {rehypeExtendedTable} = require("rehype-extended-table");
 // const rehypeSectionHeadings = require("rehype-section-headings");
+const isDev = process.env.NODE_ENV === 'development';
+
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -14,14 +16,7 @@ const config = {
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   future: {
-    experimental_faster: {
-      swcJsLoader: true,
-      swcJsMinimizer: true,
-      swcHtmlMinimizer: true,
-      lightningCssMinimizer: true,
-      rspackBundler: true,
-      mdxCrossCompilerCache: true,
-    },
+    experimental_faster: isDev ? false : true
   },
   baseUrl: '/',
   onBrokenLinks: 'ignore',
