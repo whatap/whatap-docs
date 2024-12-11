@@ -5190,9 +5190,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/otel/otel-v0_2_1',
+              id: 'release-notes/otel/otel-v0_2_2',
               className: 'new',
             },
+            'release-notes/otel/otel-v0_2_1',
             'release-notes/otel/otel-v0_2_0',
           ]
         }
