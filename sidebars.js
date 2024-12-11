@@ -5073,6 +5073,7 @@ const sidebars = {
           label: '설정하기',
           id: 'aws-log/aws-log-setting',
         },
+        'aws-log/usage-ui',
         {
           type: 'doc',
           label: '로그 파싱하기',
@@ -5081,7 +5082,6 @@ const sidebars = {
         'aws-log/aws-log-lt',
         'aws-log/aws-log-exp',
         'aws-log/aws-log-search',
-        'aws-log/usage-ui',
         {
           type: 'category',
           label: 'Flex 보드',
