@@ -243,17 +243,35 @@ const sidebars = {
             id: 'java/apm-set-notice',
           },
           items: [
-            'java/warning-notice',
             {
-              type: 'doc',
-              id: 'java/warning-notice-v2',
-              className: 'newfunc'
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'java/warning-notice',
+                'java/metric-warning-notice',
+                'java/set-notification-message',
+                'java/hitmap-notice',
+                'java/set-event-detect-anomal',
+                'java/set-event-log',
+              ]
             },
-            'java/metric-warning-notice',
-            'java/set-notification-message',
-            'java/hitmap-notice',
-            'java/set-event-detect-anomal',
-            'java/set-event-log',
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'java/warning-notice-v2'
+              },
+              items: [
+                'java/basic-event-setting',
+                'java/metric-warning-notice-new',
+              ]
+            },
             'java/set-receive-event',
             'java/set-event-history',
             'java/set-event-format',
