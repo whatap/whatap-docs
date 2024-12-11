@@ -749,11 +749,13 @@ export default function pages() {
 
             <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                <Heading as="h2" className={styles.textcenter}>
+                <Heading as="h2" className={styles.textcenter} >
+                    <Link to="reference" className={styles.link} id="reference-link">
                     {translate({
                         id: "index.pages.section.reference",
                         message: "참조"
                     })}
+                    </Link>
                 </Heading>
                 
                 <div className={styles.flexContainer}>
