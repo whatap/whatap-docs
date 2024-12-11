@@ -936,6 +936,18 @@ article div[class*='fbsharebutton'] {
     }
   }
 }
+// 메인 참조 링크 하이퍼링크 스타일 없애기
+a#reference-link {
+  text-decoration: none; 
+  color: var(--ifm-font-color-base);
+  color-scheme: var(--ifm-color-scheme);
+}
+
+a:hover#reference-link {
+    text-decoration: none; 
+    color: var(--ifm-font-color-base)
+}
+
 // 블로그 콘텐츠 내 간격
 div[class*='BlogPostItem'] > div.avatar {
   margin-bottom: 0px !important;
