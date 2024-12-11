@@ -1236,6 +1236,17 @@ div[class*="docsWrapper"] {
   }
 }
 
+// index 페이지
+.aa-ItemContent a {
+  text-decoration: none;
+  .content {
+    color: #333;
+    mark {
+      background-color: yellow;
+    }
+  }
+}
+
 // document
 main {
   .imgError {

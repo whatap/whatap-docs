@@ -16,48 +16,48 @@ export function ProductItem({ hit, components }) {
 
     return (
         <div className="aa-ItemContent">
-            <div className="aa-ItemTitle">
-            <div key={hit.id}>
-                <Link to={durl} target="_blank">
-                    <h3>{title[0]}</h3>
-                    <div className='hit-breadcrums'>
-                        <span className="hit-name lvl0">
-                            <components.Highlight attribute="hierarchy_lvl0" hit={hit} />
-                        </span>
-                        {hit.hierarchy_lvl1 && (
-                            <span className="hit-name">
-                                <components.Highlight attribute="hierarchy_lvl1" hit={hit} />
-                            </span>
-                        )}
-                        {hit.hierarchy_lvl2 && (
-                            <span className="hit-name">
-                                <components.Highlight attribute="hierarchy_lvl2" hit={hit} />
-                            </span>
-                        )}
-                        {hit.hierarchy_lvl3 && (
-                            <span className="hit-name">
-                                <components.Highlight attribute="hierarchy_lvl3" hit={hit} />
-                            </span>
-                        )}
-                        {hit.hierarchy_lvl4 && (
-                            <span className="hit-name">
-                                <components.Highlight attribute="hierarchy_lvl4" hit={hit} />
-                            </span>
-                        )}
-                        {hit.hierarchy_lvl5 && (
-                            <span className="hit-name last">
-                                <components.Highlight attribute="hierarchy_lvl5" hit={hit} />
-                            </span>
+            <Link to={durl} target="_blank">
+                <div className="aa-ItemTitle">
+                    <div key={hit.id}>
+                            <h3>{title[0]}</h3>
+                            <div className='hit-breadcrums'>
+                                <span className="hit-name lvl0">
+                                    <components.Highlight attribute="hierarchy_lvl0" hit={hit} />
+                                </span>
+                                {hit.hierarchy_lvl1 && (
+                                    <span className="hit-name">
+                                        <components.Highlight attribute="hierarchy_lvl1" hit={hit} />
+                                    </span>
+                                )}
+                                {hit.hierarchy_lvl2 && (
+                                    <span className="hit-name">
+                                        <components.Highlight attribute="hierarchy_lvl2" hit={hit} />
+                                    </span>
+                                )}
+                                {hit.hierarchy_lvl3 && (
+                                    <span className="hit-name">
+                                        <components.Highlight attribute="hierarchy_lvl3" hit={hit} />
+                                    </span>
+                                )}
+                                {hit.hierarchy_lvl4 && (
+                                    <span className="hit-name">
+                                        <components.Highlight attribute="hierarchy_lvl4" hit={hit} />
+                                    </span>
+                                )}
+                                {hit.hierarchy_lvl5 && (
+                                    <span className="hit-name last">
+                                        <components.Highlight attribute="hierarchy_lvl5" hit={hit} />
+                                    </span>
+                                )}
+                            </div>
+                        {hit.content && (
+                            <div className="content">
+                                <components.Snippet attribute="content" hit={hit} />
+                            </div>
                         )}
                     </div>
-                </Link>
-                {hit.content && (
-                    <div className="content">
-                        <components.Snippet attribute="content" hit={hit} />
-                    </div>
-                )}
-            </div>
-            </div>
+                </div>
+            </Link>
         </div>
     );
 }
