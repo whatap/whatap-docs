@@ -1,7 +1,7 @@
 ---
 id: node-timeline
 title: ノードタイムライン
-description: ノードのタイムラインメニューをご案内します。
+description: ノードのタイムラインメニューを案内します。
 keywords:
   - Kubernetes
   - Kubernetesモニタリング
@@ -16,7 +16,7 @@ toc_max_heading_level: 3
 
 **要求事項**
 
-- WhaTap Kubernetesエージェント1.7.11バージョン以降が必要です。 タイムラインデータは、1.7.11バージョン以降で収集された時点から提供されます。 つまり、エージェントが更新された後に収集されたデータから反映します。
+- WhaTap Kubernetesエージェント1.7.11バージョン以降が必要です。 タイムラインデータは、1.7.11バージョン以降で収集された時点から提供されます。 つまり、エージェント更新後に収集されたデータから反映されます。
 
 - Kubernetesクラスタープロジェクト(<code class='my'>CP</code>)の場合、該当メニューを照会できます。
 
@@ -26,7 +26,7 @@ toc_max_heading_level: 3
 
 ## 基本画面ガイド
 
-<Cmdname sid="side_nodeTimeline" className="uitext" />メニューに入ると、次のように最近の7日間収集されたノードのリストが表示されます。 時間軸に沿ってノードの状態変化を視覚的に確認できます。 各時間区間にマウスを上げると、その区間の開始時間と終了時間、そしてノードの状態(***Ready***、***NotReady***など)がツールチップとして表示されます。
+<Cmdname sid="side_nodeTimeline" className="uitext" />メニューに入ると、次のように最近7日間に収集されたノードのリストが表示されます。 時間軸に沿ってノードの状態変化を視覚的に確認できます。 各時間の区間にマウスをかざすと、その区間の開始時刻と終了時刻、そしてノードの状態(***Ready***、***NotReady***など)がツールチップに表示されます。
 
 <ImgLang img='k8s-node-timeline.png' />
 
@@ -34,7 +34,7 @@ toc_max_heading_level: 3
 
 <ImgLang img='k8s-node-timeline-drag.png' />
 
-また、特定の期間を選択する時、その期間のノード状態を**詳細を見る**を通じて詳しく確認できます。 詳しい内容は、次の[ノードタイムラインの詳細](#node-timeline-details) 案内を参照してください。 
+また、特定の期間を選択する時、その期間のノード状態を**詳細画面**で詳しく確認できます。 詳しい内容は、次の[ノードタイムラインの詳細](#node-timeline-details) 案内を参照してください。 
 
 :::note 
 
@@ -50,7 +50,7 @@ toc_max_heading_level: 3
 
 - 詳細情報を照会したい区間を選択し、右側の**詳細を見る**画面を通じてその時点のノードに対する詳細を照会できます。 
 
-- チャートの左側にあるリストで照会したいノード名を選択し、右側の**詳細を見る**画面を通じて照会期間内のそのノードの全体状態を確認できます。 
+- チャート左側のリストから照会するノード名を選択すると、右側の**詳細**画面から照会期間中の該当ノードの全体な状態を確認できます。 
 
 ### <Cmdname sid="TTL08441" className="uitext" type="node" />
 
@@ -106,8 +106,6 @@ toc_max_heading_level: 3
 
 <ImgLang img='k8s-node-timeline-metrics.png' />
 
-{/* 이러한 데이터를 통해 특정 기간 동안 발생한 자원 사용 패턴을 분석하고, 이상 징후를 파악할 수 있습니다. */}
-
 - ***AVG***：照会期間中の平均使用量
 
 - ***MAX***：照会期間中の最大使用量
@@ -118,6 +116,6 @@ toc_max_heading_level: 3
 
 ### <Cmdname sid="event" className="uitext" />
 
-<Cmdname sid="event" className="uitext" />タブでタイムラインに表示された時間中に発生した***K8s Nodeイベント***と***WhaTap Nodeイベント***を確認できます。 ***K8s Nodeイベント***はノードの状態変化を含むクラスター内の重要な作業記録を含み、***WhaTap Nodeイベント***はユーザーが設定したアラート通知の基準に基づくイベント発生情報を提供します。
+<Cmdname sid="event" className="uitext" />タブでタイムラインに表示された時間中に発生した***K8s Nodeイベント***と***WhaTap Nodeイベント***を確認できます。 ***K8s Nodeイベント***はノードの状態変化を含めて、クラスターの重要な作業記録を提供し、***WhaTap Nodeイベント***はユーザーが設定したアラート通知の基準に基づくイベント発生情報を提供します。
 
 <ImgLang img='k8s-node-timeline-event.png' />

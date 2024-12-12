@@ -63,13 +63,13 @@ import Transaction from "../common-items/_transaction.mdx";
 
 以下は、アプリケーションで発生する例外を管理およびモニタリングするためのオプションです。ビジネス例外を登録し、関連する統計を収集することで、アプリケーションの安定性を確認できます。また、特定の例外を無視したりHTTPステータスコードがエラーの場合、エラーとして処理するかどうかを設定できます。例外として処理された項目は、<Cmdname sid="side_hitmap" className="uitext" />または<Cmdname sid="TTL06209" className="uitext" />画面で、正常なトランザクションとして表示されます。
 
-- **transaction_status_error_enable** <span class='type'>Boolean</span>
+- **transaction_status_error_enable** <span class='type'>Boolean</span> <ScrollToLink anchor='transaction_status_error_enable' />
 
   既定値 `true`
 
   正常応答ではなくHTTP401、403のようなステータスコードがリターンされた場合、エラーとして処理するかどうかを設定します。
 
-- **status_ignore** <span class='type'>String</span>
+- **status_ignore** <span class='type'>String</span> <ScrollToLink anchor='status_ignore' />
 
   無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 
@@ -84,7 +84,7 @@ import Transaction from "../common-items/_transaction.mdx";
 
   :::
 
-- **status_ignore_set** <span class='type'>String</span>
+- **status_ignore_set** <span class='type'>String</span> <ScrollToLink anchor='status_ignore_set' />
 
   `whatap.error.STATUS_ERROR`を無視します。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
 

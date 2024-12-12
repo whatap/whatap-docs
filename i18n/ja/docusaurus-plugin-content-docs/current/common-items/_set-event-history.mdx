@@ -82,9 +82,15 @@
 
 ## 処理履歴を登録する{#alertacknowledge}
 
-処理履歴を登録すると、当該イベントの繰り返し通知を中止でき、当該イベントの進行状況を追跡し、問題が発生した場合、迅速に対応できます。
+処理履歴を登録すると、イベント処理状況のアップデートと履歴管理が簡単にできます。
 
-1. 処理履歴を登録したイベントで<Cmdname sid="sms_alert_acknowledge" className="uitext" />ボタンを選択します。
+:::caution
+
+処理履歴を登録すると、当該イベントの<Cmdname sid="TTL06149" className="uitext" />は中止となります。<Cmdname sid="TTL06149" className="uitext" />についての詳細は、[次の文書](set-receive-event#escalation)を参照してください。
+
+:::
+
+1. 処理履歴を登録するイベントで<Cmdname sid="sms_alert_acknowledge" className="uitext" />ボタンを選択します。
 
 2. <Cmdname sid="sms_alert_acknowledge_add" className="uitext" />画面が表示されたら、処理履歴を入力します。
 
@@ -113,6 +119,8 @@
 - **_CSV_**：参照したイベント履歴結果をcsvファイルとして保存することができます。<Cmdname sid="maximum_csv_lines" className="uitext" />を入力し <Cmdname sid="download" className="uitext" /> ボタンを選択してください。
 
 - <Cmdname sid="event_setting" className="uitext" />: <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />メニューに移動します。
+
+- <Cmdname sid="exclude_resolved_alerts" className="uitext" />：イベント記録一覧で**進行中のイベント**のみ照会できます。
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
