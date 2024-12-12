@@ -140,6 +140,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           blogSidebarTitle: '새로운 기능',
           blogSidebarCount: 'ALL',
+          onUntruncatedBlogPosts: 'ignore',
           include: [ '**/*.mdx' ],
           rehypePlugins: [ rehypeExtendedTable ],
           // groupByYear: true, (canary 버전 옵션)
