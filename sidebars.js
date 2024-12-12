@@ -4893,6 +4893,26 @@ const sidebars = {
   //     ],
   //   }
   // ],
+  faqSidebar: [
+    {
+      type: 'category',
+      label: '자주 묻는 질문',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'faq/index'
+      },
+      items: [
+        'faq/apm-faq',
+        'faq/db-faq',
+        'faq/log-faq',
+        'faq/agent-faq',
+        'about-billing',
+        'faq/support-faq',
+      ]
+    }
+  ],
   referSidebar: [
     {
       type: 'category',
@@ -4926,25 +4946,7 @@ const sidebars = {
             'license/license-open-sources',
             'license/license-open-sources-lib',
           ]
-        },
-        {
-          type: 'category',
-          label: '자주 묻는 질문',
-          // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
-          link: {
-            type: 'doc',
-            id: 'faq/index'
-          },
-          items: [
-            'faq/apm-faq',
-            'faq/db-faq',
-            'faq/log-faq',
-            'faq/agent-faq',
-            'about-billing',
-            'faq/support-faq',
-          ]
-        },
-
+        }
         // 'metrics/common-metrics-intro',
         // {
         //   type: 'category',
