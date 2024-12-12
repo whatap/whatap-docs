@@ -1,6 +1,57 @@
 [
   {
     "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.9",
+    "date": "2024-10-29",
+    "Lists": [
+      {
+        "ver": "Service 2.9.9",
+        "hash": "service-299",
+        "product": "Kubernetes",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでKubernetesエージェントのイメージバージョンの説明が正常に表示されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.8",
+    "date": "2024-10-25",
+    "Lists": [
+      {
+        "ver": "Service 2.9.8",
+        "hash": "service-298",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Top SQL比較</span>メニューでデータ騰落が一貫しない問題を修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.9.8",
+        "hash": "service-298",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューで<span class=\"uitext\">セッション詳細</span>ウィンドウで古いセッションを照会する時、データが照会されない問題を修正</p>",
+        "category": "Oracle Pro"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
+    "ver": "Service 2.9.7",
+    "date": "2024-10-23",
+    "Lists": [
+      {
+        "ver": "Service 2.9.7",
+        "hash": "service-297",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニューでリスト内の選択項目の<span class=\"uitext\">削除</span>機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_9_x",
     "ver": "Service 2.9.5",
     "date": "2024-10-08",
     "Lists": [
@@ -66,7 +117,7 @@
         "hash": "service-292",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー情報</span>メニューの<span class=\"uitext\">サーバー構成情報エージェントの案内</span>でWindowsオプション追加コマンドに抜けている逆スラッシュ(<code>\\</code>) 文字を追加</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニューの<span class=\"uitext\">サーバー インベントリ エージェントの案内</span>でWindowsオプション追加コマンドに抜けている逆スラッシュ(<code>\\</code>) 文字を追加</p>"
       },
       {
         "ver": "Service 2.9.2",
@@ -140,7 +191,7 @@
         "hash": "service-290",
         "product": "新機能リリーズ",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code>インフラサーバー運営に必要な情報をエージェントが自動収集および保存、ユーザー定義フィールドを通じて追加した情報を照会し管理できる<span class=\"uitext\">サーバー情報</span>メニューを追加</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>インフラサーバー運用に必要な情報をエージェントが自動収集および保存、ユーザー定義フィールドを通じて追加した情報を照会し管理できる<span class=\"uitext\">サーバー インベントリ</span>メニューを追加</p>",
         "category": "Server"
       },
       {
@@ -209,7 +260,7 @@
         "product": "共通",
         "type": "Changed",
         "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">リアルタイムアラート</span>メニューで次の事項を変更</p>",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">リアルタイム通知設定</span>オプションのUI改善</p>\n</li>\n<li>\n<p><span class=\"uitext\">ポップアップ通知</span>機能のOn/Offトグルボタンの位置を<span class=\"uitext\">リアルタイム通知設定</span>内に位置を変更</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">リアルタイム通知設定</span>オプションのUI改善</p>\n</li>\n<li>\n<p><span class=\"uitext\">ポップアップ通知</span>機能のOn/Offトグルボタンの位置を<span class=\"uitext\">リアルタイム通知設定</span>内に変更</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.9.0",
@@ -386,7 +437,7 @@
         "hash": "service-290",
         "product": "Kubernetes",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\">Deprecated</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェント設定</span>メニューで<span class=\"uitext\">旧バージョン</span>ボタンを削除</p>"
+        "desc": "<p><code class=\"Deprecated\" type=\"1\">Deprecated</code> <span class=\"uitext\">クラスター</span> &gt; <span class=\"uitext\">ノードリスト</span>メニューから<span class=\"uitext\">以前のバージョンで見る</span>機能を削除</p>"
       },
       {
         "ver": "Service 2.9.0",
@@ -444,7 +495,7 @@
         "type": "Fixed",
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">エージェントインストール</span>メニューでエージェントのインストール内容を修正</p>",
         "category": "Oracle Pro",
-        "details": "<ul>\n<li>\n<p>Oracleアカウントではない他のOSアカウントでインストールする方法の説明を補完</p>\n</li>\n<li>\n<p>ZIPファイルのダウンロード機能を削除</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p>Oracleアカウントではない他のOSアカウントでインストールする方法の説明を追記</p>\n</li>\n<li>\n<p>ZIPファイルのダウンロード機能を削除</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.9.0",

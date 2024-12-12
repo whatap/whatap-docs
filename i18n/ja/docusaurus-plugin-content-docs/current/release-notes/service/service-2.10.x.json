@@ -1,6 +1,135 @@
 [
   {
     "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.10",
+    "date": "2024-11-22",
+    "Lists": [
+      {
+        "ver": "Service 2.10.10",
+        "hash": "service-21010",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>メニューの<span class=\"uitext\">SQL Elapse Map</span>ウィジェットでデータが重複する問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.9",
+    "date": "2024-11-18",
+    "Lists": [
+      {
+        "ver": "Service 2.10.9",
+        "hash": "service-2109",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>組織内で<span class=\"uitext\">通知メッセージ設定</span>移動後、組織内の照会が正常に動作しない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.8",
+    "date": "2024-11-13",
+    "Lists": [
+      {
+        "ver": "Service 2.10.8",
+        "hash": "service-2108",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>  <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニューでカスタムカラムを修正した後、保存されない現象を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.7",
+    "date": "2024-11-11",
+    "Lists": [
+      {
+        "ver": "Service 2.10.7",
+        "hash": "service-2107",
+        "product": "共通",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">利用状況</span> &gt; <span class=\"uitext\">決済情報</span>メニューでAWS Marketplaceの再購入ボタンが有効化されない現象を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.6",
+    "date": "2024-11-08",
+    "Lists": [
+      {
+        "ver": "Service 2.10.6",
+        "hash": "service-2106",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>ユーザー行為の履歴が残るAPIに置き換えて<span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニュー削除機能を改善</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.5",
+    "date": "2024-11-07",
+    "Lists": [
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>サイドメニューの統合検索中<span class=\"uitext\">Agent/IP</span>検索時に無効なエージェント検索機能を提供</p>"
+      },
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">利用状況</span> &gt; <span class=\"uitext\">決済情報</span>メニューでAWS再購読の機能を提供</p>"
+      },
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "共通",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">メトリクスチャート</span> <code class=\"newfunc\">New</code>メニューでウィジェットのデータ表示形式を小数点2桁まで表示するように改善</p>"
+      },
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span>メニューで<span class=\"uitext\">SQL詳細</span>画面のポップアップ時にクエリテキストが表示されない現象を修正</p>",
+        "category": "Database V1"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.3",
+    "date": "2024-11-01",
+    "Lists": [
+      {
+        "ver": "Service 2.10.3",
+        "hash": "service-2103",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">MYSQL SQL統計</span>メニューでフィルターが正常に動作しない問題を修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.10.3",
+        "hash": "service-2103",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">PG SQL統計</span>メニューでフィルターが正常に動作しない問題を修正</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_10_x",
     "ver": "Service 2.10.2",
     "date": "2024-10-31",
     "Lists": [
@@ -98,7 +227,7 @@
         "hash": "service-2100",
         "product": "共通",
         "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">統合Flexボード</span>または<span class=\"uitext\">Flexボード</span>メニューでダッシュボードがない場合、または一覧の読み込み中に表示される案内メッセージの縦ソートを中央に変更</p>"
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">統合Flexボード</span>または<span class=\"uitext\">Flexボード</span>メニューでダッシュボードがない場合、または一覧の読み取り中に表示される案内メッセージの縦ソートを中央に変更</p>"
       },
       {
         "ver": "Service 2.10.0",
@@ -199,14 +328,14 @@
         "hash": "service-2100",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>言語設定が日本語の場合、<span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー情報</span>メニューでフィルター入力欄の案内文が切り捨てられて表示される問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>言語設定が日本語の場合、<span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニューでフィルター入力欄の案内文が切り捨てられて表示される問題を修正</p>"
       },
       {
         "ver": "Service 2.10.0",
         "hash": "service-2100",
         "product": "Server",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー情報</span>メニューでユーザー定義フィールドに入力した値が断続的に保存されない問題を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニューでユーザー定義フィールドに入力した値が断続的に保存されない問題を修正</p>"
       },
       {
         "ver": "Service 2.10.0",
@@ -227,7 +356,7 @@
         "hash": "service-2100",
         "product": "Server",
         "type": "Deprecated",
-        "desc": "<p><code class=\"Deprecated\" type=\"1\">Deprecated</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー情報</span>メニューの<span class=\"uitext\">カラム設定</span>機能のうちソートオプションを削除</p>"
+        "desc": "<p><code class=\"Deprecated\" type=\"1\">Deprecated</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー インベントリ</span>メニューの<span class=\"uitext\">カラム設定</span>機能のうちソートオプションを削除</p>"
       },
       {
         "ver": "Service 2.10.0",
@@ -538,7 +667,7 @@
         "hash": "service-2100",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">テーブルスペース容量増減</span>メニューで<span class=\"uitext\">テーブルスペースサイズ詳細</span>テーブルにTOTAL行を追加</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">DBサイズ</span>メニューで<span class=\"uitext\">テーブルスペースサイズ詳細</span>テーブルにTOTAL行を追加</p>",
         "category": "CUBRID"
       },
       {
@@ -546,7 +675,7 @@
         "hash": "service-2100",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code class=\"my\">V2</code>プロジェクトの<span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">DBサイズ</span>メニューでホワイトアウト現象が発生する問題を修正</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code class=\"my\">V2</code>プロジェクトの<span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">サイズ詳細</span>メニューでホワイトアウト現象が発生する問題を修正</p>",
         "category": "CUBRID"
       },
       {
