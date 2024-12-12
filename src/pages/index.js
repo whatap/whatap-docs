@@ -71,9 +71,11 @@ function App() {
                     const curid = state.state.activeItemId !== null ? state.state.activeItemId : false;
                     if (curid !== false) {
                         const activeUrl = state.state.collections[0].items[curid].url;
+                        const curOrigin = window.location.origin;
+                        const goUrl = activeUrl.replace("https://docs.whatap.io", curOrigin);
                         window.onkeydown = (e) => {
                             if (e.keyCode === 13) {
-                                window.location.href = activeUrl;
+                                window.location.href = goUrl;
                             }
                         }
                     }
