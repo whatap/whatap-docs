@@ -4145,7 +4145,7 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server-hpux/server-hpux-1_3_6'
+                id: 'release-notes/server-hpux/index'
               },
               items: [
                 {
