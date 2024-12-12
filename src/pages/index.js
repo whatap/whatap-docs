@@ -66,6 +66,20 @@ function App() {
                         window.location.href = searchUrl;
                     }
                 }}
+                onStateChange={(state) => {
+                    // 검색 결과 목록에서 Enter를 입력하면 해당 item으로 이동하는 코드
+                    const curid = state.state.activeItemId !== null ? state.state.activeItemId : false;
+                    if (curid !== false) {
+                        const activeUrl = state.state.collections[0].items[curid].url;
+                        const curOrigin = window.location.origin;
+                        const goUrl = activeUrl.replace("https://docs.whatap.io", curOrigin);
+                        window.onkeydown = (e) => {
+                            if (e.keyCode === 13) {
+                                window.location.href = goUrl;
+                            }
+                        }
+                    }
+                }}
             />
         </div>
     );
