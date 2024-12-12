@@ -22,19 +22,19 @@ Kubernetes containerStdOutログはノードの*/var/log/containers/*パスの�
 
   ログフィルターの使用有無を設定します。 
 
-- **log_fillter_allow_list** <span class='type'>list</span>
+- **log_filter_allow_list** <span class='type'>list</span>
 
   許可するログの一覧を設定します。 フィルタリングの適用時に含める項目を意味します。 
 
-- **log_fillter_deny_list** <span class='type'>list</span>
+- **log_filter_deny_list** <span class='type'>list</span>
 
   除外するログの一覧を設定します。 フィルタリングの適用時に除外する項目を意味します。 
 
 ### ログフィルター動作
 
-`log_filter_enabled`オプションが有効になっている場合にのみ、ログフィルターが動作します。 当該オプションの値が`true`に設定された状態で`log_fillter_allow_list`および`log_fillter_deny_list`を通じてログを選択的に収集できます。 
+`log_filter_enabled`オプションが有効になっている場合にのみ、ログフィルターが動作します。 該当オプションの値が`true`に設定された状態で、`log_filter_allow_list`および`log_filter_deny_list`を通じてログを選択的に収集できます。 
 
-ログフィルターはブラックリストベースで動作します。 例えば、`log_filter_enabled`活性化した後、`log_fillter_allow_list`オプションに追加する項目を設定しない場合、デフォルトではすべてのコンテナのログ収集がブロックされます。 
+ログフィルターはブラックリストベースで動作します。 例えば、`log_filter_enabled`活性化した後`log_filter_allow_list`オプションに追加する項目を設定しない場合、デフォルトではすべてのコンテナーのログ収集がブロックされます。 
 
 また、ログフィルターはallowルールよりdenyルールの優先順位が高いです。 同一の項目がallowとdenyの両方に設定されている場合、denyルールが優先的に適用され、そのログは収集されません。
 
@@ -100,11 +100,11 @@ Kubernetesログは、コンテナベースで収集されます。 ノードの
 
   ログフィルターの使用有無を設定します。 
 
-- **log_fillter_allow_list** <span class='type'>list</span>
+- **log_filter_allow_list** <span class='type'>list</span>
 
   許可するログの一覧を設定します。 フィルタリングの適用時に含める項目を意味します。 
 
-- **log_fillter_deny_list** <span class='type'>list</span>
+- **log_filter_deny_list** <span class='type'>list</span>
 
   除外するログの一覧を設定します。 フィルタリングの適用時に除外する項目を意味します。 
 
@@ -128,11 +128,11 @@ Kubernetesログは、コンテナベースで収集されます。 ノードの
 
   ログフィルターの使用有無を設定します。 
 
-- **log_fillter_allow_list** <span class='type'>list</span>
+- **log_filter_allow_list** <span class='type'>list</span>
 
   許可するログの一覧を設定します。 フィルタリングの適用時に含める項目を意味します。 
 
-- **log_fillter_deny_list** <span class='type'>list</span>
+- **log_filter_deny_list** <span class='type'>list</span>
 
   除外するログの一覧を設定します。 フィルタリングの適用時に除外する項目を意味します。  
 

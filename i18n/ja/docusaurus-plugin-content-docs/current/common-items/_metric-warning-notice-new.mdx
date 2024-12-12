@@ -30,13 +30,13 @@
 
 <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code>メニューで<Cmdname sid="metrics" className="uitext" />タブを選択します。 ユーザーが追加したメトリクスイベントの一覧を確認し、メトリクスイベントを追加または修正、削除できます。
 
-<Xclude product="server,postgresql,oracle,oracle-pro,mysql,mssql,tibero,cubrid,altibase,redis,mongodb,browser"><ImgLang img="metric-warning-notice-new-basic-screen.png" desc="Event configuration" /></Xclude>
+<Xclude product="server,postgresql,oracle,oracle-pro,mysql,mssql,mssql-v1,tibero,cubrid,altibase,redis,mongodb,browser"><ImgLang img="metric-warning-notice-new-basic-screen.png" desc="Event configuration" /></Xclude>
 
 <InDoc product="server"><ImgLang img="metric-warning-notice-new-basic-screen-server.png" desc="Event configuration" /></InDoc>
 
 <InDoc product="browser"><ImgLang img="metric-warning-notice-new-basic-screen-browser.png" desc="Event configuration" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,tibero,cubrid,altibase,redis,mongodb"><ImgLang img="metric-warning-notice-new-basic-screen-db.png" desc="Event configuration" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,mssql-v1,tibero,cubrid,altibase,redis,mongodb"><ImgLang img="metric-warning-notice-new-basic-screen-db.png" desc="Event configuration" /></InDoc>
 
 メトリクスイベント一覧の主な要素は次の通りです。
 
@@ -184,13 +184,15 @@
 
 #### <Cmdname sid="CNT08326" className="uitext" /> {#CNT08326}
 
-<span className="vslow">Critical</span>または<span className="slow">Warning</span>レベルのイベントが解消されると、正常(**RECOVERED**) ステータスの通知を送信します。 トグルボタンを選択し、機能をオンまたはオフできます。
+<Cmdname sid="CNT08326" className="uitext" />オプションを有効にすると<Cmdname sid="side_eventHistory" className="uitext" />メニューで<Cmdname sid="in_progress" className="uitext" />のイベントで表示されます。 <span className="vslow">Critical</span>または<span className="slow">Warning</span>レベルのイベントが解消されると、正常(**RECOVERED**) ステータスの通知を受信します。 トグルボタンを選択し、機能をオンまたはオフできます。
 
 <ImgLang img="metric-warning-notice-new-recovered.png" desc="Resolved notification" />
 
 :::note
 
-このオプションは、通知レベルを<span className="vslow">Critical</span>または<span className="slow">Warning</span>を選択した時に表示されます。
+- このオプションは、通知レベルを<span className="vslow">Critical</span>または<span className="slow">Warning</span>を選択した時に表示されます。
+
+- <Cmdname sid="side_eventHistory" className="uitext" />メニューの詳細は[次の文書](set-event-history)を参照してください。
 
 :::
 
@@ -293,7 +295,7 @@ ex. ${4xxErrorType} == '401'
 
   </InDoc>
 
-  <InDoc product="postgresql,mysql,oracle,oracle-v1,mssql,tibero,cubrid,cubrid-v1,altibase,altibase-v1,redis,mongodb">
+  <InDoc product="postgresql,mysql,oracle,oracle-v1,mssql,mssql-v1,tibero,cubrid,cubrid-v1,altibase,altibase-v1,redis,mongodb">
 
   メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は[次の文書](metrics-data-list)を参照してください。
 
@@ -361,7 +363,7 @@ ex. ${4xxErrorType} == '401'
 
 メトリクスイベント設定をJSON形式に修正できます。
 
-1. 画面右上の<span class="uitext">JSON</span> <LinkImage img="ico-export.svg" className="ico" />ボタンを選択します。
+1. 画面右上に<span class="uitext">JSON</span> <LinkImage img="ico-export.svg" className="ico" />ボタンを選択します。
 
 2. 編集ウィンドウが表示されたら、JSON形式に合わせて内容を修正します。
 
