@@ -50,7 +50,7 @@ const config = {
   },
   trailingSlash: false,
   clientModules: [
-    require.resolve("./src/modules/amplitude.js")
+    // require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
