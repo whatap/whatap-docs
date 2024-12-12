@@ -1,0 +1,19 @@
+1. XOS 에이전트 실행 권한을 부여하세요.
+
+    ```bash
+    chmod +x ./whatap.agent.xos*
+    ```
+
+1. XOS 에이전트를 실행하세요.
+
+    ```bash
+    ./start.sh
+    ```
+
+:::note
+
+* DBX 에이전트로 모니터링한 데이터를 전송하기 위해 `dbx_port`로 설정한 포트(default 3002)가 열려 있어야 합니다. (**UDP Outbound**)
+
+* XOS 에이전트를 백그라운드로 실행하려면 *./startd.sh* 파일을 실행하세요.
+
+:::
