@@ -77,7 +77,7 @@
 
 - **アプリケーションモニタリング**
 
-  **_適用する_**メニューの下にある固有のアプリケーション手順を確認してください。 次の説明書[Java](log-java)、[PHP](log-php)、[Python](log-python)、[Go](log-go) などを参照してください。
+  **_適用する_**メニューの下にある固有のアプリケーション手順を確認してください。 次の説明書[Java](log-java)、[PHP](log-php)、[Node.js](log-nodejs)、[Python](log-python)、[Go](log-go)などをご参照ください。
 
 - **サーバーモニタリング**
 
@@ -118,15 +118,17 @@
 
 ### ログモニタリングのデータ設定 {#log-data-setting}
 
-![number 2](/img/number-02.png)領域で<Cmdname sid="log_usage" className="uitext" />が確認できます。 また<Cmdname sid="data_retention" className="uitext" />および<Cmdname sid="log_lookup_password" className="uitext" />設定を変更できます。
+![number 2](/img/number-02.png)領域で<Cmdname sid="log_usage" className="uitext" />が確認できます。 また<UI>ログ保存期間</UI>と<Cmdname sid="log_lookup_password" className="uitext" />設定を変更できます。
 
-#### データ保存期間 {#data-retention}
+#### ログ保存期間{#data-retention}
 
-共通に適用する基本(default) データ保持期間です。 未指定の場合、既定値は1日です。 カテゴリごとのデータ保存期間を個別で設定しない場合は、このデータ保存期間がデフォルトとして適用されます。 カテゴリごとのデータ保存期間を設定し、<Cmdname sid="initialized" className="uitext" />ボタンを選択すると、基本データの保存期間が初期化されます。
+{/* <Cmdname sid="DSC08751" className="uitext" /> */}
 
-#### カテゴリ別のデータ保存期間 {#data-retention-per-category}
+共通に適用する基本(default) データ保持期間です。 未指定の場合、既定値は1日です。 ログ保存期間の選択オプションの他に、ユーザーが希望する期間を入力できます。 <Cmdname sid="log_usage" className="uitext" />一覧で別に設定しない場合、このログデータの保存期間がデフォルトで適用されます。 <Cmdname sid="log_usage" className="uitext" />一覧でカテゴリごとのデータ保存期間を設定し<Cmdname sid="initialized" className="uitext" />ボタンを選択すると、デフォルトのデータ保存期間に初期化されます。 
 
-カテゴリごとのログデータの保存期間を指定できます。 **ログ数**は、当該期間中に蓄積されたログの件数を意味します。 例えば、<Cmdname sid="daily_log_count" className="uitext" />は、1日にたまったログ件数、<Cmdname sid="expected_log_count" className="uitext" />は、データ保持日に今日のログ数を掛けたログ件数を意味します。 
+#### ログ使用量{#data-retention-per-category}
+
+<Cmdname sid="log_usage" className="uitext" />一覧でカテゴリ別のログデータの保存期間を指定できます。 **ログ数**は、当該期間中に蓄積されたログの件数を意味します。 例えば、<Cmdname sid="daily_log_count" className="uitext" />は、1日にたまったログ件数、<Cmdname sid="expected_log_count" className="uitext" />は、データ保持日に今日のログ数を掛けたログ件数を意味します。
 
 ログデータの保存期間を次のように指定できます。 期間指定により、古いデータを削除してスペースを確保できます。
 

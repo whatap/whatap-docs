@@ -6,6 +6,108 @@ pagination_next: release-notes/service/service-2_9_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.10.10
+
+2024年11月22日
+
+<div class='indentTab'>
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューの<UI>SQL Elapse Map</UI>ウィジェットでデータが重複する問題を修正
+
+</div>
+
+## Service 2.10.9
+
+2024年11月18日
+
+<div class='indentTab'>
+
+### `共通`
+
+<Status priority='0'>Fixed</Status>組織内で<Cmdname sid="goto_alertTemplate" className="uitext" />移動後、組織内の照会が正常に動作しない問題を修正
+
+</div>
+
+## Service 2.10.8
+
+2024年11月13日
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='0'>Fixed</Status>  <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューでカスタムカラムを修正した後、保存されない現象を修正
+
+</div>
+
+## Service 2.10.7
+
+2024年11月11日
+
+<div class='indentTab'>
+
+### `共通`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />メニューでAWS Marketplaceの再購入ボタンが有効化されない現象を修正
+
+</div>
+
+## Service 2.10.6
+
+2024年11月08日
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='1'>Changed</Status>ユーザー行為の履歴が残るAPIに置き換えて<Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニュー削除機能を改善
+
+</div>
+
+## Service 2.10.5
+
+2024年11月07日
+
+<div className="indentTab">
+
+### `共通`
+
+- <Status priority='1'>Feature</Status>サイドメニューの統合検索中<UI>Agent/IP</UI>検索時に無効なエージェント検索機能を提供
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />メニューでAWS再購読の機能を提供
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code className="newfunc">New</code>メニューでウィジェットのデータ表示形式を小数点2桁まで表示するように改善
+
+---
+
+### `Database`
+
+#### Database <code class='my'>V1</code>
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />メニューで<Cmdname sid="TTL06224" className="uitext" />画面のポップアップ時にクエリテキストが表示されない現象を修正
+
+</div>
+
+## Service 2.10.3
+
+2024年11月01日
+
+<div className="indentTab">
+
+### `Database`
+
+#### MySQL
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_mysqlStat" className="uitext" />メニューでフィルターが正常に動作しない問題を修正
+
+#### PostgreSQL
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_pgStat" className="uitext" />メニューでフィルターが正常に動作しない問題を修正
+
+</div>
+
 ## Service 2.10.2
 
 2024年10月31日
@@ -124,7 +226,7 @@ Service 2.10.0リリーズに含まれる新機能を紹介します。
 
   :::
 
-- <Status priority='1'>Changed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボードがない場合、または一覧の読み込み中に表示される案内メッセージの縦ソートを中央に変更
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボードがない場合、または一覧の読み取り中に表示される案内メッセージの縦ソートを中央に変更
 
 - <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューの<Cmdname sid="TTL06656" className="uitext" />で<UI>Webhook JSON</UI>入力フィールドの内容を最新化
 
@@ -370,9 +472,9 @@ Service 2.10.0リリーズに含まれる新機能を紹介します。
 
 #### CUBRID
 
-- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューで<Cmdname sid="table_space_detail" className="uitext" />テーブルにTOTAL行を追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューで<Cmdname sid="table_space_detail" className="uitext" />テーブルにTOTAL行を追加
 
-- <Status priority='0'>Fixed</Status> <code className="my">V2</code>プロジェクトの<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューでホワイトアウト現象が発生する問題を修正
+- <Status priority='0'>Fixed</Status> <code className="my">V2</code>プロジェクトの<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="TTL06026" className="uitext" />メニューでホワイトアウト現象が発生する問題を修正
 
 #### MongoDB
 

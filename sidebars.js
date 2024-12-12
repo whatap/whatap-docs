@@ -3904,9 +3904,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_44',
+                  id: 'release-notes/java/java-2_2_45',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_44',
                 'release-notes/java/java-2_2_43',
                 'release-notes/java/java-2_2_42',
                 'release-notes/java/java-2_2_41',
@@ -3915,7 +3916,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_38',
                 'release-notes/java/java-2_2_37',
                 'release-notes/java/java-2_2_36',
-                'release-notes/java/java-2_2_35',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3948,7 +3948,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3956,9 +3956,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_8_2',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_9_0',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_8_2',
                 'release-notes/php/php-2_8_1',
                 'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
@@ -3967,7 +3968,6 @@ const sidebars = {
                 'release-notes/php/php-2_6_3',
                 'release-notes/php/php-2_6_2',
                 'release-notes/php/php-2_6_1',
-                'release-notes/php/php-2_6_0',
                 'release-notes/php/php-previous',
               ],
             },
@@ -4910,6 +4910,26 @@ const sidebars = {
   //     ],
   //   }
   // ],
+  faqSidebar: [
+    {
+      type: 'category',
+      label: '자주 묻는 질문',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'faq/index'
+      },
+      items: [
+        'faq/apm-faq',
+        'faq/db-faq',
+        'faq/log-faq',
+        'faq/agent-faq',
+        'about-billing',
+        'faq/support-faq',
+      ]
+    }
+  ],
   referSidebar: [
     {
       type: 'category',
@@ -4943,25 +4963,7 @@ const sidebars = {
             'license/license-open-sources',
             'license/license-open-sources-lib',
           ]
-        },
-        {
-          type: 'category',
-          label: '자주 묻는 질문',
-          // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
-          link: {
-            type: 'doc',
-            id: 'faq/index'
-          },
-          items: [
-            'faq/apm-faq',
-            'faq/db-faq',
-            'faq/log-faq',
-            'faq/agent-faq',
-            'about-billing',
-            'faq/support-faq',
-          ]
-        },
-
+        }
         // 'metrics/common-metrics-intro',
         // {
         //   type: 'category',
@@ -5208,9 +5210,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/otel/otel-v0_2_1',
+              id: 'release-notes/otel/otel-v0_2_2',
               className: 'new',
             },
+            'release-notes/otel/otel-v0_2_1',
             'release-notes/otel/otel-v0_2_0',
           ]
         }

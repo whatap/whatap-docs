@@ -44,12 +44,6 @@
 
   ホストのCPU使用率(`cpu`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
-- **_Server Disk_**
-
-  カテゴリ：[`app_host_resource`](metrics-app#app_host_resource)
-
-  ホストのディスク使用率(`disk`)が70%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
-
 - **_Server Memory_**
 
   カテゴリ：[`app_host_resource`](metrics-app#app_host_resource)
@@ -297,7 +291,7 @@
 
   Podの再起動回数(`RestartCount`)が5つを超えると警告(<span class="slow">Warning</span>)レベルの通知を送信します。
 
-- **_Transaction Error Count_**
+- **_Transaction Error_**
 
   カテゴリ：<Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
 
@@ -331,7 +325,7 @@
 
 <InDoc product="mysql">
 
-<ImgLang img='event-config-v2-db01.png' desc='イベントリスト' />
+<ImgLang img='event-config-v2-db-mysql.png' desc='イベント一覧' />
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
@@ -353,11 +347,29 @@
 
   :::
 
+- **_CPU_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  CPU使用率(`cpu(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、90%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Connection Failed_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  データベース接続が15回以上失敗(`connect_error`)であれば、危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
 - **_Lock Wait Sessions_**
 
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が3つを超えると警告(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Long running session count_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  長時間実行中のセッション数(`long_running_sessions`)が1つを超えるとアラート(<span class="slow">Warning</span>)レベルの通知を、5つを超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
 
 - **_Memory_**
 
@@ -376,6 +388,18 @@
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   Replication構造の場合、relication dbに反映される遅延時間(`replication_delay`)この50秒を超えると警告(<span class="slow">Warning</span>)レベルの通知を、100秒を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Replication broken_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  Replication構造の場合、複製に失敗(`replication_broken`) が発生すると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Uptime_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  サーバーの稼働時間が120秒以下だと危険(<span class="vslow">Critical</span>) レベルの通知を送信します。
 
 </InDoc>
 
@@ -443,7 +467,7 @@
 
 <InDoc product="oracle,oracle-v1">
 
-<ImgLang img='event-config-v2-db02.png' desc='イベントリスト' />
+<ImgLang img='event-config-v2-db-oracle.png' desc='イベント一覧' />
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
@@ -505,7 +529,7 @@
 
 <InDoc product="oracle-pro">
 
-<ImgLang img='event-config-v2-db02.png' desc='イベントリスト' />
+<ImgLang img='event-config-v2-db-oracle.png' desc='イベント一覧' />
 
 提供するイベントテンプレートは次のとおりです。 <Cmdname sid="ITM07578" className="uitext" />項目に設定された既定値は、ユーザーが希望する値に変更できます。
 
@@ -733,7 +757,7 @@
 
 </InDoc>
 
-<InDoc product="mssql">
+<InDoc product="mssql,mssql-v1">
 
 <ImgLang img='event-config-v2-db02.png' desc='イベントリスト' />
 
@@ -774,6 +798,18 @@
   カテゴリ：[`db_mysql_counter`](metrics-data-list)
 
   現在row lockを取得するために待機中のセッション数(`lock_wait_sessions`)が30個を超えると警告(<span class="slow">Warning</span>)レベルの通知を、50個を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+- **_Memory_**
+
+  カテゴリ：[`db_mysql_counter`](metrics-data-list)
+
+  メモリ使用率(`mem(xos)`)が80%を超えると警告(<span class="slow">Warning</span>)レベルの通知を、95%を超えると危険(<span class="vslow">Critical</span>)レベルの通知を送信します。
+
+  :::note
+
+  このテンプレートは、XOSエージェントを設定して実行した場合にのみ使用できます。 XOSエージェント設定の詳細については、[次の文書](agent-xos-settings)を参照してください。
+
+  :::
 
 </InDoc>
 
