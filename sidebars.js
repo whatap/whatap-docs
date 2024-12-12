@@ -4535,6 +4535,7 @@ const sidebars = {
         // 'about-billing',
         // 'software-proxy',
         'main-ui-intro-v2',
+        'usage-ui',
         {
           type: 'html',
           value: '<hr class="distnq"/>'
