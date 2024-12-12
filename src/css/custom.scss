@@ -1237,12 +1237,25 @@ div[class*="docsWrapper"] {
 }
 
 // index 페이지
-.aa-ItemContent a {
-  text-decoration: none;
-  .content {
-    color: #333;
-    mark {
-      background-color: yellow;
+.aa-ItemContent {
+  a {
+    text-decoration: none;
+    .aa-ItemTitle {
+      h3 {
+        font-size: 1.2rem;
+      }
+      .hit-breadcrums {
+        color: #333;
+        mark {
+          background-color: yellow;
+        }
+      }
+    }
+    .content {
+      color: #333;
+      mark {
+        background-color: yellow;
+      }
     }
   }
 }
