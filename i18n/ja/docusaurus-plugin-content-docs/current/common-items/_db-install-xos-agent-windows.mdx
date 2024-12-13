@@ -1,20 +1,20 @@
-*xos* 폴더의 배치 파일로 에이전트를 실행하세요.
+*xos*フォルダの配置ファイルでエージェントを実行します。
 
 ```bash
 start.bat
 ```
 
-화면에 표시되는 실행 로그에 에러가 없는지 확인하고 실행을 종료한 후, 다음 순서에 따라 서비스에 등록하세요.
+画面に表示される実行ログにエラーがないことを確認し、実行を終了した後、次の手順に従ってサービスに登録します。
 
-* **서비스 등록**
+* **サービスを登録**
 
-  xos 폴더에 있는 *install_WindowsService.bat* 파일을 다음과 같이 실행하여 서비스에 등록하세요. 만약 `create` 옵션 다음에 이름을 입력하지 않으면 **WhatapXOSAgent** 이름으로 서비스에 기본 등록됩니다.
+  xxosフォルダにある*install_WindowsService.bat*ファイルを次のように実行して、サービスに登録します。 もし`create`オプションの次に名前を入力しないと、**WhatapXOSAgent**名前でサービスに基本登録されます。
 
   ```bash
   install_WindowsService.bat create WhatapXOSAgent
   ```
 
-* **서비스 삭제**
+* **サービスを削除**
 
   ```bash
   install_WindowsService.bat delete WhatapXOSAgent
@@ -22,6 +22,6 @@ start.bat
 
 :::note
 
-DBX 에이전트로 모니터링한 데이터를 전송하기 위해 `dbx_port`로 설정한 포트(default 3002)가 열려 있어야 합니다. (**UDP Outbound**)
+DBXエージェントでモニタリングしたデータを転送するために`dbx_port`に設定したポート(default 3002)が開いている必要があります。(**UDP Outbound**)
 
 :::

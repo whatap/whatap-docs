@@ -14,7 +14,7 @@ You can check the details of the transaction in real time through active transac
 
 The <Cmdname sid="side_correlatedProjectManagement" className="uitext" /> feature allows you to go beyond product-/equipment-centric monitoring and view monitoring data across multiple projects. This is useful for analyzing how different system components such as applications and databases, interact together. In particular, when performance degradation occurs, you can quickly determine whether it is a hardware problem or an individual application problem, which can significantly reduce the troubleshooting time. Through <Cmdname sid="side_correlatedProjectManagement" className="uitext" />, you can comprehensively analyze performance data at the user system level and obtain more visible insights.
 
-<InDoc product="java,php,python,nodejs,dotnet,golang">
+<InDoc product="php,python,nodejs,dotnet,golang">
 
 :::note
 
@@ -26,13 +26,33 @@ The <Cmdname sid="side_correlatedProjectManagement" className="uitext" /> featur
 
 </InDoc>
 
+<InDoc product="java">
+
+:::note
+
+**Notes before you begin**
+
+- The database platforms that support the <Cmdname sid="BTN08519" className="uitext" /> feature are as follows:
+
+  PostgreSQL, Oracle, MySQL, SQL Server, CUBRID, Altibase, Redis, MongoDB
+
+- The <Cmdname sid="BTN08518" className="uitext" /> feature requires Java agent 2.2.33 or later. Database platforms that support this feature are as follows:
+
+  PostgreSQL, Oracle, Oracle Pro, MySQL
+
+:::
+
+</InDoc>
+
 <InDoc product="postgresql,oracle,oracle-pro,mysql">
 
 :::note
 
 **Notes before you begin**
 
-- Currently, only the **Java** platform is supported. The supported platforms are to be expanded through upcoming updates.
+- Currently, only the **Java** platform is supported. The supported platforms are to be expanded through upcoming updates. 
+
+- The <Cmdname sid="BTN08518" className="uitext" /> feature requires Java agent 2.2.33 or later.
 
 - For more information on how to link a database project to the application project, see [the following](../java/linked-projects).
 

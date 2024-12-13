@@ -8,6 +8,9 @@ keywords:
   - Statistic
 ---
 
+{/* Note */}
+import TimequeryNotes from "../common-items/_browser-stat-time-query-note.mdx"
+
 Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_pageLoadStatistics" className="uitext" />
 
 The <Cmdname sid="side_pageLoadStatistics" className="uitext" /> menu provides the load performance data for each page of the website. This menu allows you to trace in detail how each page is loaded, identify pages that are underperforming, and analyze the performance of improved pages. You can also get useful information to improve user experience of the web application.
@@ -28,7 +31,7 @@ For more information about the data collected in <Cmdname sid="side_pageLoadStat
 
 ## Basic usage guide
 
-Various performance metrics are provided such as page load time, DOM load time, network latency, and resource load time based on the page URL path. This helps you determine if the page has been optimized for performance.
+You can check various performance metrics such as **page load time**, **DOM load time**, **network latency**, and **resource load time** based on the URL path of the page. This allows you to evaluate the performance of each page and determine whether it has been optimized.
 
 <ImgLang img="browser-pageload-statistics.png" desc="Page Load Statistics" />
 
@@ -42,7 +45,7 @@ You can see the performance metrics of the time range searched for through graph
 
 :::note
 
-For more information about <Cmdname sid="TTL08276" className="uitext" />, see the following.
+For more information about <Cmdname sid="TTL08276" className="uitext" />, see [the following](#statcriteria).
 
 :::
 
@@ -68,7 +71,7 @@ Set the date and time to view the performance metrics in <Cmdname sid="time" cla
 
 :::
 
-### Selecting statistical criteria
+### Selecting the statistical criteria {#statcriteria}
 
 <Cmdname sid="TTL08276" className="uitext" /> is an option that allows users to check the statistical metrics to analyze based on the following selection criteria:
 
@@ -88,15 +91,10 @@ Set the date and time to view the performance metrics in <Cmdname sid="time" cla
 
   - <Cmdname sid="TTL08288" className="uitext" replace="50" />: The median means that half of all users loaded the page faster than the time, and half of them loaded the page slower.
 
-:::tip
+{/* Tip */}
+import CriteriaTip from "../common-items/_browser-stat-criteria-tip.mdx";
 
-- <Cmdname sid="merge_avg" className="uitext" /> is useful for getting an overall performance status, but it can be difficult to detect cases where performance degradation occurs intermittently. At this time, by using the <Cmdname sid="merge_max" className="uitext" /> and <Cmdname sid="ITM08291" className="uitext" /> options together, you can check the time when the performance degradation occurred and how severe it was.
-
-- <Cmdname sid="merge_min" className="uitext" /> can be used as a reference when setting the performance optimization goals or evaluating how effective a specific optimization is. However, because it is difficult to evaluate the consistency of performance with this value alone, it is recommended to analyze the statistical data together with the <Cmdname sid="merge_avg" className="uitext" /> or <Cmdname sid="ITM08291" className="uitext" /> option.
-
-- The <Cmdname sid="ITM08291" className="uitext" /> option is ideal for analyzing performance data at a more precise level than simple averages, providing valuable data for improving user experience. This option allows you to identify the percentage of users experiencing performance degradation and effectively select the target pages to optimize.
-
-:::
+<CriteriaTip/>
 
 ### Downloading the viewed result
 
@@ -106,7 +104,7 @@ You can download the searched data as a CSV format file. Select ![Download icon]
 
 ### <Cmdname sid="TTL08305" /> {#TTL08305}
 
-This chart visualizes the changes in page load count and performance metric (response time) over time. This graph allows you to see if there have been any performance fluctuations over a specific period. 
+This chart visualizes the trend for page load counts and performance metrics (response time) over time. This graph allows you to see if there have been any performance fluctuations over a specific period. 
 
 - If you select the blue bar graph for a specific time, the data can be viewed in the <Cmdname sid="TTL08306" className="uitext" />, <Cmdname sid="TTL08304" className="uitext" />, <Cmdname sid="TTL08445" className="uitext" /> sections for the selected time range.
 
@@ -168,23 +166,7 @@ It is a list where you can check various performance metrics based on the page g
 
 - ![Column Icon](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" />: You can hide the table header columns or add desired items. You can also change the column order. For more information, see [the following](#setcolumn).
 
-:::note
-
-- When you move from the <Cmdname sid="side_pageLoadStatistics" className="uitext" /> menu to the <Cmdname sid="side_userSessionEventSearch" className="uitext" /> menu, the data before and after the specific time range may also be included.
-
-  - **View for 2 hours or more**: Data is searched every 1 hour, with 1 hour added before and after the query time range.
-
-    > For example, if you search for 3 hours from **11:00 to 14:00** on October 21, 2024, the actual search range is extended to **5 hours** from **10:00 to 15:00** on October 21, 2024.
-
-  - **Query within 2 hours**: Data is retrieved every 5 minutes, with 5 minutes added before and after the query time range.
-
-    > For example, if you search for 30 minutes from **11:00 to 11:30** on October 21, 2024, the actual search range is extended to **40 minutes** from **10:55 to 11:35** on October 21, 2024.
-
-- If you hover your mouse over a column header in the table, the detailed information about the column is provided in a tooltip format. For more information about column entries, see [the following](#columninfo).
-
-  <ImgLang img="browser-statistics-pagegroup-header.png" desc="Tooltip" />
-
-:::
+<TimequeryNotes sid="side_pageLoadStatistics" img="browser-statistics-pagegroup-header.png" />
 
 ### <Cmdname sid="TTL08448" /> {#TTL08448}
 
@@ -248,49 +230,16 @@ You can check the statistics details for the selected page group.
 
   - You can go to the <Cmdname sid="side_userSessionEventSearch" className="uitext" /> menu by selecting ![Right arrow icon](/img/right-arrow.svg) in the <Cmdname sid="TTL08449" className="uitext" /> column. You can check the results by applying the selected page group URL and query time as filters.
 
-  :::note
+  <TimequeryNotes sid="TTL08446" img="browser-statistics-pageurlpath-header.png" />
 
-  - If you move from <Cmdname sid="TTL08446" className="uitext" /> to <Cmdname sid="side_userSessionEventSearch" className="uitext" />, the data before and after a specific time range may also be included.
+{/* 데이터 수집 제한 */}
+import DatacollectInfo from "../common-items/_browser-stat-data-info.mdx";
 
-    - **View for 2 hours or more**: Data is searched every 1 hour, with 1 hour added before and after the query time range.
-
-      > For example, if you search for 3 hours from **11:00 to 14:00** on October 21, 2024, the actual search range is extended to **5 hours** from **10:00 to 15:00** on October 21, 2024.
-
-    - **Query within 2 hours**: Data is retrieved every 5 minutes, with 5 minutes added before and after the query time range.
-
-      > For example, if you search for 30 minutes from **11:00 to 11:30** on October 21, 2024, the actual search range is extended to **40 minutes** from **10:55 to 11:35** on October 21, 2024.
-
-  - If you hover your mouse over a column header in the table, the detailed information about the column is provided in a tooltip format. For more information about column entries, see [the following](#columninfo).
-
-    <ImgLang img="browser-statistics-pageurlpath-header.png" desc="Tooltip" />
-
-  :::
-
-:::info
-
-- **Data collection restrictions**
-
-  - The list of up to 5,000 page URL paths are generated every 5 minutes and it is sent to the server.
-
-  - If the number of unique URL paths exceeds 5,000 for 5 minutes, additional data is ignored.
-
-- **Data accuracy**
-
-  **Navigation Timing API** may collect some detailed time information as 0. This may cause some performance metrics not to be displayed.
-
-- **Charting interval**
-
-  The chart interval is determined by the time unit of the data being viewed.
-
-  - If you query with 1-hour data, the chart interval is displayed as 1 hour.
-
-  - If you query with 5-minute data, the chart interval is displayed as 5 minutes.
-
-:::
+<DatacollectInfo/>
 
 ## Filtering the searched results
 
-You can filter the retrieved statistical data based on <Cmdname sid="page_group" className="uitext" /> or <Cmdname sid="TTL08292" className="uitext" /> to focus on analyzing the desired content.
+You can filter the retrieved statistical data based on <Cmdname sid="page_group" className="uitext" /> or <Cmdname sid="TTL08292" className="uitext" replace="ms" /> to focus on analyzing the desired content.
 
 ### Page group filter
 
@@ -304,99 +253,17 @@ The page groups can be selected up to 3 groups.
 
 :::
 
-### Performance metrics filters
+{/* 성능 지표 필터 */}
+import PermetricsFilter from "../common-items/_browser-stat-perf-metrics-filter.mdx";
 
-Performance metrics include the page load time, redirection time, download time, and such. You can perform query by applying thresholds to various performance metrics. Select the desired metrics from the <Cmdname sid="TTL08292" className="uitext" /> option, and then apply the thresholds and operator conditions.
+<PermetricsFilter/>
 
-<ImgLang img="browser-statistics-perf-metrics-filter.png" desc="Performance indicators" />
+{/* 컬럼 설정하기 */}
+import Coumnsetting from "../common-items/_browser-stat-column-setting.mdx";
 
-- Operators: `>` (greater than), `>=` (greater than or equal to), `<` (less than), `<=` (less than or equal to), `==` (equal to)
+<Coumnsetting/>
 
-- You can enter a positive number, negative number, or 0 as the threshold, but whether to enter a negative number may differ depending on the selected performance metrics.
+{/* 컬럼 및 용어 안내 */}
+import Statcolumn from "../common-items/_browser-stat-column-info.mdx";
 
-- You can apply filters and search for a single performance metric.
-
-:::note
-
-For more information about the performance metrics that can be selected, see [the following](#columninfo).
-
-:::
-
-## Setting columns {#setcolumn}
-
-You can hide table header columns or add desired items in <Cmdname sid="TTL08445" className="uitext" />. You can also change the column order. Select ![Column icon](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" />.
-
-<ImgLang img="browser-statistics-setting-column.png" desc="Column Settings" />
-
-:::note
-
-To sort the list on the left in ascending or descending order, select the ![Sort icon](/img/ic-sort-up.svg) / ![Sort icon](/img/ic-sort-down.svg) button.
-
-:::
-
-### Adding columns
-
-1. Select columns to add from the list on the left.
-
-2. Check that the selected columns are added to the list on the right.
-
-3. Once you have added all the desired columns, select <Cmdname sid="confirm" className="uitext" />.
-
-:::note
-
-- To select all columns, click <Cmdname sid="select_all" className="uitext" /> at the top of the list on the left.
-
-- For more information about column entries, see [the following](#columninfo).
-
-:::
-
-### Deleting columns
-
-1. Select ![Delete icon](/img/ico-remove.svg) on the right of the column to delete from the list on the right.
-
-2. Make sure the checkboxes for the deleted columns are unchecked in the list on the left.
-
-3. Once you have deleted all the desired columns, select <Cmdname sid="confirm" className="uitext" />.
-
-### Changing the column order
-
-The following features allow you to change the order of columns or fix the desired items.
-
-- You can change the order of the columns by dragging items to change in the list on the right to the desired positions. 
-
-- Select ![Pin Icon](/img/ic-pin.svg) on the right of a column entry. The selected column is fixed on the top. The fixed columns are fixed to the utmost left in the table list.
-
-After all settings are finished, select<Cmdname sid="confirm" className="uitext" />.
-
-### Initializing the column settings
-
-To cancel all changes and reset them, select ![Reset icon](/img/ico-reset.svg) <Cmdname sid="initialized" className="uitext" />. Select <Cmdname sid="confirm" className="uitext" /> to reflect the initialized settings.
-
-## Guide to the columns and terms {#columninfo}
-
-<div className="c3-20-15-65 tableScroll">
-
-| Columns                                            | Unit        | Description                                                                                                                                                                                                                           |
-| -------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <Cmdname sid="backend_time" className="uitext" />  | millisecond | This represents the average time processed in the backend during page load, meaning the time taken from `startTime` to `responseEnd`.                                                                                                 |
-| <Cmdname sid="frontend_time" className="uitext" /> | millisecond | This represents the average processed time of the front-end area during page load, meaning the time taken from `domInteractive` to `loadEventEnd`.                                                                                    |
-| <Cmdname sid="ITM08283" className="uitext" />      | millisecond | This displays the average time taken for the browser to load a web page and go through the redirection process, meaning the time taken from `redirectStart` to `redirectEnd`.                                                         |
-| <Cmdname sid="cache_time" className="uitext" />    | millisecond | This represents the average time taken for the browser to retrieve cached resources while loading a web page, measured from `fetchStart` to `domainLookupStart`.                                                                      |
-| <Cmdname sid="ITM08284" className="uitext" />      | millisecond | This represents the average time taken for a browser to view a website domain while loading web pages, measured from `domainLookupStart` to `domainLookupEnd`.                                                                        |
-| <Cmdname sid="connect_time" className="uitext" />  | millisecond | This represents the average time taken for the browser to establish a network connection with the server, measured from `connectStart` to `connectEnd`.                                                                               |
-| <Cmdname sid="ssl_time" className="uitext" />      | millisecond | The average time taken by a browser during the TCP handshake process while loading web pages, measured from `secureConnection Start` to `connectEnd`.                                                                                 |
-| <Cmdname sid="ITM08285" className="uitext" />      | millisecond | This represents the average time taken for a browser to send a network request while loading a web page and receive the first byte from the server, measured from `requestStart` to `responseStart`.                                  |
-| <Cmdname sid="download_time" className="uitext" /> | millisecond | This represents the average time taken for a browser to download resources from the server while loading a web page, measured from `responseStart` to `responseEnd`.                                                                  |
-| <Cmdname sid="ITM08286" className="uitext" />      | millisecond | This represents the average time taken for a web page to render its initial content and become interactive, measured from `domContentLoadedEventStart` to `domContentLoadedEventEnd`.                                                 |
-| <Cmdname sid="domload_time" className="uitext" />  | millisecond | It represents the average time taken for a web page to load all resources and complete rendering until it is ready for user interaction. This indicates the time taken from loadEventStart to loadEventEnd.                           |
-| <Cmdname sid="render_time" className="uitext" />   | millisecond | This represents the average time taken to render resources downloaded from the server on the screen and complete the page load event, meaning the time taken from `domInteractive` to `domComplete`.                                  |
-| <Cmdname sid="TTL08498" className="uitext" />      | millisecond | This represents the average time taken for a load event to be completed as measured by a browser, meaning the time taken from the start to `loadEventEnd`.                                                                            |
-| <Cmdname sid="TTL06361" className="uitext" />      | millisecond | This is the average time taken for a browser to fully load a web page, which is the time until an additional interaction is completed after `loadEventEnd`. It indicates the page load completion time measured by the browser agent. |
-| <Cmdname sid="count" className="uitext" />         | Count       | Number of page loads.                                                                                                                                                                                                                 |
-| <Cmdname sid="page_group" className="uitext" />    | URL text    | It is a group of statistics that provides URL paths normalized using regular expressions. For more information, see [the following](before-starting#page-group).                                                                      |
-| <Cmdname sid="TTL08449" className="uitext" />      | URL text    | It is a URL path that has not been normalized using a regular expression.                                                                                                                                                             |
-| <Cmdname sid="browser" className="uitext" />       | Text        | It is the type of browser used by the end user, such as Chrome, Edge, Safari, and the like.                                                                                                                                           |
-| <Cmdname sid="os" className="uitext" />            | Text        | It is the type of OS that the end users are using on their device, such as macOS, Windows, or Linux.                                                                                                                                  |
-| <Cmdname sid="device" className="uitext" />        | Text        | It is the type of device used by the end user, such as Desktop, Mobile, or Tablet.                                                                                                                                                    |
-
-</div>
+<Statcolumn/>

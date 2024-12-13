@@ -44,12 +44,6 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   If the host's CPU utilization (`cpu`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
-- **_Server Disk_**
-
-  Category: [`app_host_resource`](metrics-app#app_host_resource)
-
-  If the host's disk utilization (`disk`) exceeds 70%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
-
 - **_Server Memory_**
 
   Category: [`app_host_resource`](metrics-app#app_host_resource)
@@ -297,7 +291,7 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   If the number of Pod restarts (`RestartCount`) exceeds 5, a warning (<span class="slow">Warning</span>) level notification is sent.
 
-- **_Transaction Error Count_**
+- **_Transaction Error_**
 
   Category: <Link to="../java/metrics-app#app_counter" target="_blank"><code>app_counter</code></Link>
 
@@ -331,7 +325,7 @@ For more information about the fields applied to the basic event templates, see 
 
 <InDoc product="mysql">
 
-<ImgLang img='event-config-v2-db01.png' desc='Event list' />
+<ImgLang img='event-config-v2-db-mysql.png' desc='Event list' />
 
 The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
 
@@ -353,11 +347,29 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
   :::
 
+- **_CPU_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
 - **_Lock Wait Sessions_**
 
   Category: [`db_mysql_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Long running session count_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the number of long-running sessions (`long_running_sessions`) exceeds 1, a warning (<span class="slow">Warning</span>) level notification is sent, and if it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
 
 - **_Memory_**
 
@@ -376,6 +388,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
   Category: [`db_mysql_counter`](metrics-data-list)
 
   In the case of a replication structure, if the delay time (`replication_delay`) reflected in the replication DB exceeds 50 seconds, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 100 seconds, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Replication broken_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  In case of replication structure, if the replication failure (`replication_broken`) occurs, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Uptime_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the server uptime falls is 120 seconds or less, a <span class="vslow">Critical</span> level notification is sent.
 
 </InDoc>
 
@@ -443,7 +467,7 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 <InDoc product="oracle,oracle-v1">
 
-<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+<ImgLang img='event-config-v2-db-oracle.png' desc='Event list' />
 
 The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
 
@@ -505,7 +529,7 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 <InDoc product="oracle-pro">
 
-<ImgLang img='event-config-v2-db02.png' desc='Event list' />
+<ImgLang img='event-config-v2-db-oracle.png' desc='Event list' />
 
 The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
 
@@ -733,7 +757,7 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 </InDoc>
 
-<InDoc product="mssql">
+<InDoc product="mssql,mssql-v1">
 
 <ImgLang img='event-config-v2-db02.png' desc='Event list' />
 
@@ -774,6 +798,18 @@ The provided event templates are as follows. The default value set in <Cmdname s
   Category: [`db_mysql_counter`](metrics-data-list)
 
   If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Memory_**
+
+  Category: [`db_mysql_counter`](metrics-data-list)
+
+  If the memory utilization (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
 
 </InDoc>
 

@@ -6,6 +6,108 @@ pagination_next: release-notes/service/service-2_9_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.10.10
+
+November 22, 2024
+
+<div class='indentTab'>
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, fixed the data duplication issue in <UI>SQL Elapse Map</UI> widget.
+
+</div>
+
+## Service 2.10.9
+
+November 18, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> Fixed the issue where the search in the organization do not work normally after moving <Cmdname sid="goto_alertTemplate" className="uitext" />.
+
+</div>
+
+## Service 2.10.8
+
+November 13, 2024
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='0'>Fixed</Status>  In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />, fixed the issue where custom columns are not saved after modification.
+
+</div>
+
+## Service 2.10.7
+
+November 11, 2024
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />, fixed the issue where the AWS Marketplace resubscription button is not activated.
+
+</div>
+
+## Service 2.10.6
+
+November 8, 2024
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='1'>Changed</Status> Improved the deletion feature of <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" /> by replacing it with an API that leaves user action logs.
+
+</div>
+
+## Service 2.10.5
+
+November 7, 2024
+
+<div className="indentTab">
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> The inactive agent search feature is provided when searching for <UI>Agent/IP</UI> in the integrated search of side menus.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />, provided the AWS resubscription feature.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code className="newfunc">New</code>, improved the data display format for widgets to display up to two decimal places.
+
+---
+
+### `Database`
+
+#### Database <code class='my'>V1</code>
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />, fixed the issue where query text is not visible when the <Cmdname sid="TTL06224" className="uitext" /> window pops up.
+
+</div>
+
+## Service 2.10.3
+
+November 1, 2024
+
+<div className="indentTab">
+
+### `Database`
+
+#### MySQL
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_mysqlStat" className="uitext" />, fixed the issue where the filter does not work normally.
+
+#### PostgreSQL
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_pgStat" className="uitext" />, fixed the issue where the filter does not work normally.
+
+</div>
+
 ## Service 2.10.2
 
 October 31, 2024
@@ -370,9 +472,9 @@ This feature can be seen in the <Cmdname sid="side_statistics" className="uitext
 
 #### CUBRID
 
-- <Status priority='1'>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, added the TOTAL row into the <Cmdname sid="table_space_detail" className="uitext" /> table.
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, added the TOTAL row into the <Cmdname sid="table_space_detail" className="uitext" /> table.
 
-- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> for the <code className="my">V2</code> project, fixed the whiteout occurrence.
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="TTL06026" className="uitext" /> for the <code className="my">V2</code> project, fixed the whiteout occurrence.
 
 #### MongoDB
 

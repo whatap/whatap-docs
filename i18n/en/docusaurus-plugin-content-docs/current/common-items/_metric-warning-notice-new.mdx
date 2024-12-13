@@ -30,13 +30,13 @@ The following explains how to create and manage event notifications based on met
 
 In <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code>, select the <Cmdname sid="metrics" className="uitext" /> tab. You can view the list of metrics events added by users, and add, edit, or delete the metrics events.
 
-<Xclude product="server,postgresql,oracle,oracle-pro,mysql,mssql,tibero,cubrid,altibase,redis,mongodb,browser"><ImgLang img="metric-warning-notice-new-basic-screen.png" desc="Event configuration" /></Xclude>
+<Xclude product="server,postgresql,oracle,oracle-pro,mysql,mssql,mssql-v1,tibero,cubrid,altibase,redis,mongodb,browser"><ImgLang img="metric-warning-notice-new-basic-screen.png" desc="Event configuration" /></Xclude>
 
 <InDoc product="server"><ImgLang img="metric-warning-notice-new-basic-screen-server.png" desc="Event configuration" /></InDoc>
 
 <InDoc product="browser"><ImgLang img="metric-warning-notice-new-basic-screen-browser.png" desc="Event configuration" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,tibero,cubrid,altibase,redis,mongodb"><ImgLang img="metric-warning-notice-new-basic-screen-db.png" desc="Event configuration" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,mssql-v1,tibero,cubrid,altibase,redis,mongodb"><ImgLang img="metric-warning-notice-new-basic-screen-db.png" desc="Event configuration" /></InDoc>
 
 The major elements of the list of metrics events are as follows:
 
@@ -184,13 +184,15 @@ If you have enabled the <Cmdname sid="CNT08326" className="uitext" /> feature, n
 
 #### <Cmdname sid="CNT08326" className="uitext" /> {#CNT08326}
 
-When an event whose level is <span className="vslow">Critical</span> or <span className="slow">Warning</span>, is cleared, a normal (**RECOVERED**) notification is sent. This function can be enabled or disabled by selecting the toggle button.
+If the <Cmdname sid="CNT08326" className="uitext" /> option is activated, it is displayed as the event of <Cmdname sid="side_eventHistory" className="uitext" /> in the <Cmdname sid="in_progress" className="uitext" /> menu. When an event of <span className="vslow">Critical</span> or <span className="slow">Warning</span> level is resolved, normal (**RECOVERED**) notifications are received. This function can be enabled or disabled by selecting the toggle button.
 
 <ImgLang img="metric-warning-notice-new-recovered.png" desc="Resolved notification" />
 
 :::note
 
-This option appears when <span className="vslow">Critical</span> or <span className="slow">Warning</span> is selected for the notification level.
+- This option appears when <span className="vslow">Critical</span> or <span className="slow">Warning</span> is selected for the notification level.
+
+- For more information about <Cmdname sid="side_eventHistory" className="uitext" />, see [the following](set-event-history).
 
 :::
 
@@ -293,7 +295,7 @@ Set the event name, message, and recipients.
 
   </InDoc>
 
-  <InDoc product="postgresql,mysql,oracle,oracle-v1,mssql,tibero,cubrid,cubrid-v1,altibase,altibase-v1,redis,mongodb">
+  <InDoc product="postgresql,mysql,oracle,oracle-v1,mssql,mssql-v1,tibero,cubrid,cubrid-v1,altibase,altibase-v1,redis,mongodb">
 
   For the `${Tag}` and `${Field}` variables that can be entered as the message, see [the following](metrics-data-list).
 

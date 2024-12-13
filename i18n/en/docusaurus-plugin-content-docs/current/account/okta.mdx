@@ -1,6 +1,6 @@
 ---
 id: okta
-title: SSO account linking
+title: Okta integration
 description: Conveniently manage accounts by using an ID and password through SSO account linking.
 keywords:
   - SSO
@@ -11,17 +11,11 @@ displayed_sidebar: manageSidebar
 
 You can integrate WhaTap Monitoring with **Okta**, a cloud-based solution for managing user accounts and access permissions. The **Okta** solution allows you to log on to numerous applications with a single account in high-level security environments. You can log on to the WhaTap services with the **Okta** account in your organization and use the services with the given roles.
 
-:::tip
-
-**What is Single Sign-On (SSO)?**
-
-**Single Sign-On** (SSO) is an authentication solution that allows users to log on to multiple applications and websites with a single user authentication. This SSO solution can meet both security and user experience requirements by allowing authorized users to access all password-protected resources without repeated logins.
-
-:::
-
 :::note
 
-To enable the log on to WhaTap, a user must have an **Okta** account.
+- To enable the log on to WhaTap, a user must have an **Okta** account.
+
+- For more information about **Okta**, see the [following link](https://www.okta.com).
 
 :::
 
@@ -39,7 +33,7 @@ Follow the instructions below to configure the Okta integration with the WhaTap 
 
 4. In the menu on the right of the screen, select <Cmdname sid="ssoIntegrations" className="uitext" />.
 
-5. Enter the key name in <Cmdname sid="BTN07473" className="uitext" /> within the **_Service provider ID (WhaTap)_** section.
+5. Enter the key name in <Cmdname sid="BTN07473" className="uitext" /> within the ***Service provider ID (WhaTap)*** section.
 
    The key name can be entered by the user.
 
@@ -57,7 +51,7 @@ Follow the instructions below to configure the Okta integration with the WhaTap 
 
 - Select <Cmdname sid="BTN07476" className="uitext" />, add the SSO key, and then proceed with the next procedure.
 
-- For the added SSO information, select and check the list box in **_Key Name_**.
+- For the added SSO information, select and check the list box in ***Key Name***.
 
 :::
 
@@ -77,9 +71,9 @@ Follow the instructions below to configure the Okta integration with the WhaTap 
 
    ![Okta - SAML Settings](/img/okta-samil-settings-general.png)
 
-   - **Single sign-on URL**: Enter the **_Sign-On URL_** among the SSO-related data issued from WhaTap.
+   - **Single sign-on URL**: Enter the ***Sign-On URL*** among the SSO-related data issued from WhaTap.
 
-   - **Audience URI** (**SP Entity ID**): Enter the value for **_EntityID_** from the SSO data issued from WhaTap.
+   - **Audience URI** (**SP Entity ID**): Enter the value for ***EntityID*** from the SSO data issued from WhaTap.
 
    - In the **Application username** list, select **Email**.
 
@@ -89,7 +83,7 @@ Follow the instructions below to configure the Okta integration with the WhaTap 
 
 8. Select **Next**.
 
-9. In the following screen, select **This is an internal app that we have created** and then select **Finish**.
+9. On the next screen, select **This is an internal app that we have created** and then select **Finish**.
 
 ### Copying the Okta meta data {#copymetadata}
 
@@ -143,7 +137,7 @@ The SSO linking is now finished.
 
    ![Assignments](/img/sso-assignments-assign-save.png)
 
-8. Finish all the steps and then select **_Done_**.
+8. Finish all the steps and then select ***Done***.
 
    ![Assignments](/img/sso-assignments-assign-done.png)
 
@@ -179,7 +173,7 @@ If you can log on to the WhaTap monitoring service, the connection is successful
 
 1. In the WhaTap monitoring service, go to <Cmdname sid="ssoIntegrations" className="uitext" />.
 
-2. In the **_Service provider ID (WhaTap)_** section, select the **_Key Name_** to delete from <Cmdname sid="TTL07478" className="uitext" />.
+2. In the ***Service provider ID (WhaTap)*** section, select the ***Key Name*** to delete from <Cmdname sid="TTL07478" className="uitext" />.
 
    <ImgLang img='sso-delete-sso-key.png' desc='Delete SSO Key' />
 
