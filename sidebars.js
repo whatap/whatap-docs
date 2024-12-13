@@ -4118,7 +4118,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4126,9 +4126,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_3_6',
-                  // className: 'new'
+                  id: 'release-notes/server-aix/server-aix-1_3_7',
+                  className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_3_6',
                 'release-notes/server-aix/server-aix-1_3_5',
                 'release-notes/server-aix/server-aix-1_3_4',
                 'release-notes/server-aix/server-aix-1_2_7'
@@ -4167,9 +4168,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/server-hpux-1_3_6',
+                  id: 'release-notes/server-hpux/server-hpux-1_3_7',
                   className: 'new'
                 },
+                'release-notes/server-hpux/server-hpux-1_3_6',
                 'release-notes/server-hpux/server-hpux-1_3_4',
               ],
             },
