@@ -10,9 +10,9 @@ keywords:
 
 Home &gt; <Cmdname sid="side_integratedRealtimeAlert" className="uitext" />
 
-<ImgLang img='rt-notification.png' desc='Real-time Alert List' />
-
 You can see the alerts of all projects for which you have permission in real time and check their status at a glance. You can also see them classified by timeline, alert title, project, and application.
+
+<ImgLang img='rt-notification.png' desc='Real-time Alert List' />
 
 The interval to fetch the alert list in real time is 20 seconds. Select <Cmdname sid="refresh" className="uitext" /> on the upper right of the screen to newly update the list of alerts that occurred 20 seconds ago.
 
@@ -81,6 +81,20 @@ From the real-time notification list, all event in progress can be cleared in ba
 - The event clearing notification can be disabled through event modification in <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />. Disable the <Cmdname sid="CNT08320" className="uitext" /> or <Cmdname sid="CNT08326" className="uitext" /> option.
 
 :::
+
+## Downloading the alarm list
+
+You can download the list viewed for the selected time period in CSV format.
+
+1. Select ![csv icon](/img/ic-csv-download-ms.svg) on the upper right of the screen.
+
+   <ImgLang img="rt-notification-download-csv.png" desc="CSV" />
+
+2. Enter a desired value in the <Cmdname sid="maximum_csv_lines" className="uitext" /> option.
+
+3. Select <Cmdname sid="download" className="uitext" />.
+
+The downloaded CSV file name has the format of _notifications_`YYYY-MM-DD`.csv_.
 
 ## Checking the snapshot
 

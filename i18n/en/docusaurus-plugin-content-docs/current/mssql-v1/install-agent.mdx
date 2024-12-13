@@ -30,7 +30,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
+3. Enter the unzipped folder and then check the *whatap.conf* file. In *whatap.conf*, enter the project access key, WhaTap server data, and DB connection data.
 
    ```ini title='whatap.conf'
    license=Project Access Key
@@ -55,7 +55,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
    :::
 
-4. Download the JDBC driver to the following directory. _/unzipped folder/jdbc_
+4. Download the JDBC driver to the following directory. */unzipped folder/jdbc*
 
    Download the JDBC driver for the OS and version of your database server.
 
@@ -66,7 +66,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 :::note
 
-In _/unzipped folder/jdbc/README.md_, you can also see the JDBC driver installation paths for each database.
+In */unzipped folder/jdbc/README.md*, you can also see the JDBC driver installation paths for each database.
 
 :::
 
@@ -107,7 +107,7 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 ## Monitoring ASW CloudWatch resources
 
-Set the following options in the _whatap.conf_ file on the agent server. Due to the nature of CloudWatch, it is recommended to call every 60 seconds (`cloud_watch_interval`).
+Set the following options in the *whatap.conf* file on the agent server. Due to the nature of CloudWatch, it is recommended to call every 60 seconds (`cloud_watch_interval`).
 
 ```ini title='whatap.conf'
 aws_region={AWS_RDS_Region_Name}

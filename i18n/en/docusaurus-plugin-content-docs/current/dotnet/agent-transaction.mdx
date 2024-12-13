@@ -63,13 +63,13 @@ The following agent options allow you to trace the execution paths of each trans
 
 The following options are used to manage and monitor exceptions that occur in applications. You can check the stability of applications by registering business exceptions and collecting related statistics. You can also set whether to ignore specific exceptions or treat them as errors if the HTTP status code is an error. Exception-handled items appear as normal transactions in the <Cmdname sid="side_hitmap" className="uitext" /> or <Cmdname sid="TTL06209" className="uitext" /> window.
 
-- **transaction_status_error_enable** <span class='type'>Boolean</span>
+- **transaction_status_error_enable** <span class='type'>Boolean</span> <ScrollToLink anchor='transaction_status_error_enable' />
 
   Default `true`
 
   If an HTTP status code that is not a normal response such as HTTP 401 or 403, is returned, set whether or not to handle it as an error.
 
-- **status_ignore** <span class='type'>String</span>
+- **status_ignore** <span class='type'>String</span> <ScrollToLink anchor='status_ignore' />
 
   You can set the HTTP status codes to ignore. For multiple values, use comma (,) as the delimiter.
 
@@ -84,7 +84,7 @@ The following options are used to manage and monitor exceptions that occur in ap
 
   :::
 
-- **status_ignore_set** <span class='type'>String</span>
+- **status_ignore_set** <span class='type'>String</span> <ScrollToLink anchor='status_ignore_set' />
 
   `whatap.error.STATUS_ERROR` is ignored. For multiple values, use comma (,) as the delimiter.
 

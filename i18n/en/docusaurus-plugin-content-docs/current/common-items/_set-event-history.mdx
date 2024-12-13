@@ -82,9 +82,15 @@ The following are descriptions of the items that appear in the event list.
 
 ## Registering the processed records {#alertacknowledge}
 
-By registering the processed records, you can stop repeated notifications for the event, trace its progress, and respond quickly when a problem occurs.
+When you register the processing history, it makes it easy to update the event processing status and manage its history.
 
-1. Select <Cmdname sid="sms_alert_acknowledge" className="uitext" /> in the event where the processed records were registered.
+:::caution
+
+When you register the processing history, the <Cmdname sid="TTL06149" className="uitext" /> of the event is suspended. For more information about <Cmdname sid="TTL06149" className="uitext" />, see [the following](set-receive-event#escalation).
+
+:::
+
+1. In the event to handle the processing history, select <Cmdname sid="sms_alert_acknowledge" className="uitext" />.
 
 2. When the <Cmdname sid="sms_alert_acknowledge_add" className="uitext" /> window appears, enter the processed results.
 
@@ -113,6 +119,8 @@ Processed details can be entered up to 255 Bytes.
 - **_CSV_**: You can save the viewed event records as a CSV file. Enter the <Cmdname sid="maximum_csv_lines" className="uitext" /> and then select <Cmdname sid="download" className="uitext" />.
 
 - <Cmdname sid="event_setting" className="uitext" />: Go to <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="event_setting" className="uitext" />.
+
+- <Cmdname sid="exclude_resolved_alerts" className="uitext" />: You can view only the **ongoing events** in the event history list.
 
 import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
 
