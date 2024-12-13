@@ -7,7 +7,7 @@ const darkTheme = themes.dracula;
 const {rehypeExtendedTable} = require("rehype-extended-table");
 // const rehypeSectionHeadings = require("rehype-section-headings");
 const isDev = process.env.NODE_ENV === 'development';
-
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -673,13 +673,20 @@ const config = {
           },
           // 다국어 조건 블로그
           {
-            to: (function () {
-              const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
-              return locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog';
-            })(),
+            type: 'dropdown',
             label: 'What\'s New',
             position: 'right',
-            className: 'iflang-link box',
+            className: 'oneColumn iflang-link box',
+            items: [
+              {
+                to: locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog',
+                label: '새로운 기능'
+              },
+              {
+                to: 'release-notes',
+                label: '릴리스 노트'
+              }
+            ]
           },
           {
             type: 'localeDropdown',
