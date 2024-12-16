@@ -6493,19 +6493,32 @@ const sidebars = {
             {
               type: 'category',
               label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
               items: [
                 'server/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'server/warning-notice-v2',
-                  className: 'newfunc'
-                },
                 'server/metric-warning-notice',
                 'server/set-notification-message',
                 'server/set-event-detect-anomal',
                 'server/set-event-log',
               ]
-            },           
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'server/warning-notice-v2',
+              },
+              items: [
+                // 'server/warning-notice-v2',
+                'server/basic-event-setting',
+                'server/metric-warning-notice-new',
+              ]
+            }, 
             'server/set-receive-event',
             'server/set-event-history',
             'server/set-event-format',
@@ -6815,18 +6828,30 @@ const sidebars = {
             {
               type: 'category',
               label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
               items: [
                 'kubernetes/container-warning-notice',
-                {
-                  type: 'doc',
-                  id: 'kubernetes/warning-notice-v2',
-                  className: 'newfunc'
-                },
                 'kubernetes/metric-warning-notice',
                 'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
                 'kubernetes/set-event-log',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'kubernetes/warning-notice-v2',
+              },
+              items: [
+                'kubernetes/basic-event-setting',
+                'kubernetes/metric-warning-notice-new',
               ]
             },
             'kubernetes/set-receive-event',
