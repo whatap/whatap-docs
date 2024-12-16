@@ -5810,7 +5810,6 @@ const sidebars = {
             'browser/pageload-dashboard',
             'browser/resource-dashboard',
             'browser/ajax-dashboard',
-            'browser/using-dashboard',
             'browser/dashboard-widget-setting',
           ],
         },
