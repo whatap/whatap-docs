@@ -241,18 +241,20 @@ function RecommendedDoc() {
     } else if (currentLocale == "en") {
         return (
             <>
+                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>Server inventory map</Link>,&nbsp;
                 <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>Node Map</Link>,&nbsp;
-                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: Correlated Project Management</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/linked-projects")} className={clsx(styles.white, styles.underline)}>DB: Correlated Project Management</Link>,&nbsp;
+                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
+                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: Correlated project management</Link>,&nbsp;
                 <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: Cloud Settings</Link>
             </>
         );
     } else if (currentLocale == "ja") {
         return (
             <>
+                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>サーバーインベントリマップ</Link>,&nbsp;
                 <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>ノードマップ</Link>,&nbsp;
+                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
                 <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: 連携プロジェクト管理</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/linked-projects")} className={clsx(styles.white, styles.underline)}>DB: 連携プロジェクト管理</Link>,&nbsp;
                 <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: クラウド設定</Link>
             </>
         );
