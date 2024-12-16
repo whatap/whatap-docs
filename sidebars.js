@@ -2044,15 +2044,24 @@ const sidebars = {
             id: 'oracle-pro/set-notice',
           },
           items: [
-            // 'oracle-pro/warning-notice',
             {
-              type: 'doc',
-              id: 'oracle-pro/warning-notice-v2',
-              className: 'newfunc'
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'oracle-pro/warning-notice-v2'
+              },
+              items: [
+                'oracle-pro/basic-event-setting',
+                'oracle-pro/metric-warning-notice-new',
+                'oracle-pro/set-notification-message',
+                'oracle-pro/set-event-detect-anomal',
+                'oracle-pro/set-event-log',
+              ]
             },
-            'oracle-pro/metric-warning-notice',
-            'oracle-pro/set-notification-message',
-            'oracle-pro/set-event-detect-anomal',
             'oracle-pro/set-receive-event',
             'oracle-pro/set-event-history',
             'oracle-pro/set-event-format',
@@ -3471,15 +3480,33 @@ const sidebars = {
             id: 'redis/set-notice',
           },
           items: [
-            'redis/warning-notice',
             {
-              type: 'doc',
-              id: 'redis/warning-notice-v2',
-              className: 'newfunc'
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'redis/metric-warning-notice',
+                'redis/set-notification-message',
+                'redis/set-event-detect-anomal',
+                'redis/set-event-log',
+              ]
             },
-            'redis/metric-warning-notice',
-            'redis/set-notification-message',
-            'redis/set-event-detect-anomal',
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'redis/warning-notice-v2'
+              },
+              items: [
+                'redis/basic-event-setting',
+                'redis/metric-warning-notice-new',
+              ]
+            },
             'redis/set-receive-event',
             'redis/set-event-history',
             'redis/set-event-format',
@@ -3637,15 +3664,33 @@ const sidebars = {
             id: 'mongodb/set-notice',
           },
           items: [
-            'mongodb/warning-notice',
             {
-              type: 'doc',
-              id: 'mongodb/warning-notice-v2',
-              className: 'newfunc'
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                'mongodb/metric-warning-notice',
+                'mongodb/set-notification-message',
+                'mongodb/set-event-detect-anomal',
+                'mongodb/set-event-log',
+              ]
             },
-            'mongodb/metric-warning-notice',
-            'mongodb/set-notification-message',
-            'mongodb/set-event-detect-anomal',
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'mongodb/warning-notice-v2'
+              },
+              items: [
+                'mongodb/basic-event-setting',
+                'mongodb/metric-warning-notice-new',
+              ]
+            },
             'mongodb/set-receive-event',
             'mongodb/set-event-history',
             'mongodb/set-event-format',
@@ -6075,19 +6120,32 @@ const sidebars = {
             {
               type: 'category',
               label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
               items: [
                 'server/warning-notice',
-                {
-                  type: 'doc',
-                  id: 'server/warning-notice-v2',
-                  className: 'newfunc'
-                },
                 'server/metric-warning-notice',
                 'server/set-notification-message',
                 'server/set-event-detect-anomal',
                 'server/set-event-log',
               ]
-            },           
+            }, 
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'server/warning-notice-v2',
+              },
+              items: [
+                // 'server/warning-notice-v2',
+                'server/basic-event-setting',
+                'server/metric-warning-notice-new',
+              ]
+            }, 
             'server/set-receive-event',
             'server/set-event-history',
             'server/set-event-format',
@@ -6396,18 +6454,30 @@ const sidebars = {
             {
               type: 'category',
               label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
               items: [
                 'kubernetes/container-warning-notice',
-                {
-                  type: 'doc',
-                  id: 'kubernetes/warning-notice-v2',
-                  className: 'newfunc'
-                },
                 'kubernetes/metric-warning-notice',
                 'kubernetes/set-notification-message',
                 'kubernetes/hitmap-notice',
                 'kubernetes/set-event-detect-anomal',
                 'kubernetes/set-event-log',
+              ]
+            },
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'kubernetes/warning-notice-v2',
+              },
+              items: [
+                'kubernetes/basic-event-setting',
+                'kubernetes/metric-warning-notice-new',
               ]
             },
             'kubernetes/set-receive-event',
