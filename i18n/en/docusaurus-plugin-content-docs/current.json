@@ -2026,5 +2026,9 @@
   "sidebar.logSidebar.category.경고 알림": {
     "message": "Alert",
     "description": "The label for category 경고 알림 in sidebar logSidebar"
+  },
+  "sidebar.faqSidebar.category.자주 묻는 질문": {
+    "message": "FAQ",
+    "description": "The label for category 자주 묻는 질문 in sidebar faqSidebar"
   }
 }

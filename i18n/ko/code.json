@@ -541,7 +541,7 @@
     "message": "와탭 Docs 페이지에 오신 것을 진심으로 환영합니다."
   },
   "index.pages.welcome.recommend": {
-    "message": "신규 문서: "
+    "message": "추천 문서: "
   },
   "index.pages.section.gettingStart": {
     "message": "시작하기 전에"
@@ -786,5 +786,8 @@
   "theme.blog.author.noPosts": {
     "message": "This author has not written any posts yet.",
     "description": "The text for authors with 0 blog post"
+  },
+  "pages.dbfunctions.title": {
+    "message": "데이터베이스별 지원 기능 비교"
   }
 }

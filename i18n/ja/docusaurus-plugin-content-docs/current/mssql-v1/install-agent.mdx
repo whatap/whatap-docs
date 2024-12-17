@@ -30,7 +30,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認してください。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -55,7 +55,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
    :::
 
-4. 次のディレクトリにJDBCドライバーをダウンロードしてください。_/圧縮を解凍したフォルダ/jdbc_
+4. 次のディレクトリにJDBCドライバーをダウンロードします。 *解凍されたフォルダ/jdbc*
 
    データベースサーバーのOSとバージョンに合わせてJDBCドライバをダウンロードします。
 
@@ -107,7 +107,7 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 ## AWS CloudWatchリソースをモニタリングする
 
-エージェントサーバーにある*whatap.conf*ファイルに次のオプションを設定してください。CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
+エージェントサーバーにある*whatap.conf*ファイルに次のオプションを設定してください。 CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
 
 ```ini title='whatap.conf'
 aws_region={AWS_RDS_Region_Name}
@@ -118,7 +118,7 @@ cloud_watch_interval=60
 cloud_watch_metrics=CPUUtilization,FreeableMemory,FreeStorageSpace,NetworkTransmitThroughput,NetworkReceiveThroughput
 ```
 
-AWS CloudWatch指標照会のために次のコマンドを実行します。`DB_Instance_Name`項目を変更してコマンドを実行します。
+AWS CloudWatch指標照会のために次のコマンドを実行します。 `DB_Instance_Name`項目を変更してコマンドを実行します。
 
 ```bash
 aws cloudwatch list-metrics --namespace AWS/RDS --dimensions Name=DBInstanceIdentifier,Value={DB_Instance_Name}

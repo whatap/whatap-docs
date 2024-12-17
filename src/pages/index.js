@@ -66,6 +66,20 @@ function App() {
                         window.location.href = searchUrl;
                     }
                 }}
+                onStateChange={(state) => {
+                    // 검색 결과 목록에서 Enter를 입력하면 해당 item으로 이동하는 코드
+                    const curid = state.state.activeItemId !== null ? state.state.activeItemId : false;
+                    if (curid !== false) {
+                        const activeUrl = state.state.collections[0].items[curid].url;
+                        const curOrigin = window.location.origin;
+                        const goUrl = activeUrl.replace("https://docs.whatap.io", curOrigin);
+                        window.onkeydown = (e) => {
+                            if (e.keyCode === 13) {
+                                window.location.href = goUrl;
+                            }
+                        }
+                    }
+                }}
             />
         </div>
     );
@@ -227,18 +241,20 @@ function RecommendedDoc() {
     } else if (currentLocale == "en") {
         return (
             <>
+                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>Server inventory map</Link>,&nbsp;
                 <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>Node Map</Link>,&nbsp;
-                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: Correlated Project Management</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/linked-projects")} className={clsx(styles.white, styles.underline)}>DB: Correlated Project Management</Link>,&nbsp;
+                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
+                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: Correlated project management</Link>,&nbsp;
                 <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: Cloud Settings</Link>
             </>
         );
     } else if (currentLocale == "ja") {
         return (
             <>
+                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>サーバーインベントリマップ</Link>,&nbsp;
                 <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>ノードマップ</Link>,&nbsp;
+                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
                 <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: 連携プロジェクト管理</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/linked-projects")} className={clsx(styles.white, styles.underline)}>DB: 連携プロジェクト管理</Link>,&nbsp;
                 <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: クラウド設定</Link>
             </>
         );
@@ -749,11 +765,13 @@ export default function pages() {
 
             <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                <Heading as="h2" className={styles.textcenter}>
+                <Heading as="h2" className={styles.textcenter} >
+                    <Link to="reference" className={styles.link} id="reference-link">
                     {translate({
                         id: "index.pages.section.reference",
                         message: "참조"
                     })}
+                    </Link>
                 </Heading>
                 
                 <div className={styles.flexContainer}>

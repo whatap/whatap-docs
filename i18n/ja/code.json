@@ -541,7 +541,7 @@
     "message": "WhaTapのDocsページへようこそ。"
   },
   "index.pages.welcome.recommend": {
-    "message": "新規ドキュメント："
+    "message": "推奨ドキュメント："
   },
   "index.pages.section.gettingStart": {
     "message": "始める前に"
@@ -786,5 +786,8 @@
   "theme.blog.author.noPosts": {
     "message": "This author has not written any posts yet.",
     "description": "The text for authors with 0 blog post"
+  },
+  "pages.dbfunctions.title": {
+    "message": "データベースごとのサポート機能の比較"
   }
 }

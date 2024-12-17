@@ -26,7 +26,7 @@ import Envnote from "./getting-started/_env-note.mdx";
 | ----------- | ------------------------------------------------------------------------------- |
 | Java        | Java 6 to Java 21                                                               |
 | Node.js     | Node.js 16.4.0 or later                                                         |
-| PHP         | PHP 5.2 or later, 7.0 or later, 8.0 to 8.3                                      |
+| PHP         | PHP 5.2 or later, 7.0 or later, 8.0 to 8.4                                      |
 | Python      | WSGI Application (Python 3.6 to 3.11)<br/>ASGI Application (Python 3.7 to 3.11) |
 | .NET        | .NET Framework 4.5 or later                                                     |
 | Go          | Go 1.14 or later                                                                |
@@ -85,61 +85,21 @@ import Envnote from "./getting-started/_env-note.mdx";
 
 :::
 
-### Comparison between supported functions{#compare-db}
+### V2 support versions by platform
 
-<div class='db-support-type'>
+The following describes the DBX agent versions that support the V2 project for each platform.
 
-| Category   | Function type                    |                                      PostgreSQL                                      |                                    Oracle                                   |              MySQL              |            SQL Server           |
-| ---------- | -------------------------------- | :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-----------------------------: | :-----------------------------: |
-| Monitoring | Instance List                    |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Instance Monitoring              |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Multi Database (tenant) function | <span class='emoji-ok'>✅</span><br/>(multi db stat is possible only in some metrics) | <span class='emoji-ok'>✅</span><br/>(12c or later, in case of multi tenant) | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Slow Query                       |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-no'>❌</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| Analysis   | Trends                           |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Trends Compare                   |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Lock Tree                        |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Parallel Query Tree              |                            <span class='emoji-no'>❌</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Dead Lock                        |                            <span class='emoji-no'>❌</span>                           |                       <span class='emoji-no'>❌</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> |
-| ^          | DB Parameters                    |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Statistics | SQL Stat                         |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Table Size                       |                                   Scheduled support                                  |                              Scheduled support                              | <span class='emoji-ok'>✅</span> |        Scheduled support        |
-| ^          | Database (TableSpace) Size       |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> |        Scheduled support        |
-| ^          | SGA Size                         |                            <span class='emoji-no'>❌</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Report     | Daily/Weekly/Monthly Report      |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Event      | Event List                       |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Stat                       |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Setting                    |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Notification                     |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Management | Agent Setup                      |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Agent List                       |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Project Management               |                            <span class='emoji-ok'>✅</span>                           |                       <span class='emoji-ok'>✅</span>                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-
-| Category   | Function type                    |              Tibero             |              CUBRID             |             Altibase            |              Redis              |             MongoDB             |
-| ---------- | -------------------------------- | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: | :-----------------------------: |
-| Monitoring | Instance List                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Instance Monitoring              | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Multi Database (tenant) function | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Slow Query                       | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Analysis   | Trends                           | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Trends Compare                   | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Lock Tree                        | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Parallel Query Tree              | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Dead Lock                        | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | DB Parameters                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Statistics | SQL Stat                         | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Table Size                       |        Scheduled support        | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| ^          | Database (TableSpace) Size       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-ok'>✅</span> |
-| ^          | SGA Size                         | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Report     | Daily/Weekly/Monthly Report      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-no'>❌</span> | <span class='emoji-no'>❌</span> |
-| Event      | Event List                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Stat                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Event Setting                    | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Notification                     | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| Management | Agent Setup                      | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Agent List                       | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-| ^          | Project Management               | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> | <span class='emoji-ok'>✅</span> |
-
-</div>
+| Platform   | Agent Version                        |
+| ---------- | ------------------------------------ |
+| PostgreSQL | [v1.6.7](release-notes/db/dbx-1_6_7) |
+| MySQL      | [v1.6.8](release-notes/db/dbx-1_6_8) |
+| Oracle     | [v1.9.0](release-notes/db/dbx-1_9_0) |
+| Oracle Pro | DMX agent is separately provided.    |
+| MongoDB    | [v1.7.0](release-notes/db/dbx-1_7_0) |
+| Redis      | [v1.7.0](release-notes/db/dbx-1_7_0) |
+| Altibase   | [v2.0.0](release-notes/db/dbx-2_0_0) |
+| CUBRID     | [v2.1.0](release-notes/db/dbx-2_1_0) |
+| SQL Server | 2.2.0 (TBA)                          |
 
 ----
 

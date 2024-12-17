@@ -77,7 +77,7 @@ Check the agent version and settings to start the log monitoring. Select **_Chec
 
 - **Server Monitoring**
 
-  Under **_Apply_**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Python](log-python), [Go](log-go).
+  Under **_Apply_**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Node.js](log-nodejs), [Python](log-python), [Go](log-go).
 
 - **DB Monitoring**
 
@@ -118,15 +118,17 @@ Select <Cmdname sid="use_log_monitoring" className="uitext" /> to set whether or
 
 ### Log monitoring data setting {#log-data-setting}
 
-In the ![number 2](/img/number-02.png) area, you can see the <Cmdname sid="log_usage" className="uitext" />. Furthermore, you can change the settings for <Cmdname sid="data_retention" className="uitext" /> and <Cmdname sid="log_lookup_password" className="uitext" />.
+In the ![number 2](/img/number-02.png) area, you can see the <Cmdname sid="log_usage" className="uitext" />. You can also change the <UI>Log retention period</UI> and <Cmdname sid="log_lookup_password" className="uitext" /> settings.
 
-#### Data retention {#data-retention}
+#### Log retention period {#data-retention}
 
-This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. If you do not set the data retention periods for each category, this data retention period is applied by default. If you set the data retention periods for each category and select <Cmdname sid="initialized" className="uitext" />, the default data retention period is reset.
+{/* <Cmdname sid="DSC08751" className="uitext" /> */}
 
-#### Data retention per category {#data-retention-per-category}
+This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. In addition to the option to select a log retention period, you can enter a desired period of time. If not set separately in the <Cmdname sid="log_usage" className="uitext" /> list, this log data retention period is applied by default. If you set the data retention periods for each category in the <Cmdname sid="log_usage" className="uitext" /> list and select <Cmdname sid="initialized" className="uitext" />, the default data retention period is reset. 
 
-You can specify the log data retention periods for each category. **Log Count** means the number of logs stacked for the period. For example, <Cmdname sid="daily_log_count" className="uitext" /> is the number of logs accumulated during the day, and <Cmdname sid="expected_log_count" className="uitext" /> is the number of logs of the today's log count multiplied by the days of data retention. 
+#### Log usage amount {#data-retention-per-category}
+
+You can specify the log data retention periods for each category in the <Cmdname sid="log_usage" className="uitext" /> list. **Log Count** means the number of logs stacked for the period. For example, <Cmdname sid="daily_log_count" className="uitext" /> is the number of logs accumulated during the day, and <Cmdname sid="expected_log_count" className="uitext" /> is the number of logs of the today's log count multiplied by the days of data retention.
 
 You can specify the log data retention period as follows. You can free the space by deleting old data according to the specified period.
 

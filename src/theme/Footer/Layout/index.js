@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import {useLocation} from '@docusaurus/router';
 export default function FooterLayout({style, links, logo, copyright}) {
   const location = useLocation();
-  const isOpenapi = location.pathname.includes("openapi-spec");
+  const isOpenapi = location.pathname.includes("openapi-spec") || location.pathname.includes("db-support-functions");
   return (
     <footer
       className={clsx('footer', {

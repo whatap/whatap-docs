@@ -22,19 +22,19 @@ The Kubernetes containerStdOut logs are generated under the */var/log/containers
 
   It sets whether to use log filters. 
 
-- **log_fillter_allow_list** <span class='type'>list</span>
+- **log_filter_allow_list** <span class='type'>list</span>
 
   It sets the list of logs to allow. It indicates the items to be included for filtering. 
 
-- **log_fillter_deny_list** <span class='type'>list</span>
+- **log_filter_deny_list** <span class='type'>list</span>
 
   It sets the list of logs to exclude. It indicates the items to be excluded for filtering. 
 
 ### Log filtering operation
 
-Log filters work only when the `log_filter_enabled` option is active. You can selectively collect logs via `log_fillter_allow_list` and `log_fillter_deny_list` when the value of the option is set to `true`. 
+Log filters work only when the `log_filter_enabled` option is active. You can selectively collect logs via `log_filter_allow_list` and `log_filter_deny_list` when the value of the option is set to `true`. 
 
-Log filters work on a blacklist basis. For example, if you enable `log_filter_enabled` and do not set any items to add to the `log_filter_allow_list` option, log collection for all containers is blocked by default. 
+Log filters work on a blacklist basis. For example, if you enable `log_filter_enabled` and do not set the items to be added to the `log_filter_allow_list` option, the log collection for all containers is blocked by default. 
 
 Additionally, in the log filters, deny rules take precedence over allow rules. If the same items are set in both allow and deny rules, the deny rule takes precedence and logs are not collected.
 
@@ -100,11 +100,11 @@ Kubernetes logs are collected on a container basis. They are created under the /
 
   It sets whether to use log filters. 
 
-- **log_fillter_allow_list** <span class='type'>list</span>
+- **log_filter_allow_list** <span class='type'>list</span>
 
   It sets the list of logs to allow. It indicates the items to be included for filtering. 
 
-- **log_fillter_deny_list** <span class='type'>list</span>
+- **log_filter_deny_list** <span class='type'>list</span>
 
   It sets the list of logs to exclude. It indicates the items to be excluded for filtering. 
 
@@ -128,11 +128,11 @@ It provides filtering options to select the information needed in the containerS
 
   It sets whether to use log filters. 
 
-- **log_fillter_allow_list** <span class='type'>list</span>
+- **log_filter_allow_list** <span class='type'>list</span>
 
   It sets the list of logs to allow. It indicates the items to be included for filtering. 
 
-- **log_fillter_deny_list** <span class='type'>list</span>
+- **log_filter_deny_list** <span class='type'>list</span>
 
   It sets the list of logs to exclude. It indicates the items to be excluded for filtering.  
 

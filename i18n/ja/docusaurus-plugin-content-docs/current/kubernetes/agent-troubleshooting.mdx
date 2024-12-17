@@ -53,7 +53,7 @@ kubectl delete clusterrole whatap
 
 ### `whatap-monitoring`ネームスペースが使用できない場合{#whatap-monitoring-namespace-unavailable}
 
-基本的にWhaTap Kubernetesエージェントは`whatap-monitoring`ネームスペースにインストールされます。 ただし、当該ネームスペースが使用できない場合、またはユーザーが特定のネームスペースを指定する必要がある場合は、次の手順を参考にして、必要なネームスペースにエージェントのインストールを進めてください。 
+基本的にWhaTap Kubernetesエージェントは`whatap-monitoring`ネームスペースにインストールされます。 ただし、該当ネームスペースが使用できない場合、またはユーザーが特定のネームスペースを指定する必要がある場合は、次の手順を参考にして、必要なネームスペースにエージェントをインストールします。 
 
 #### 事前準備
 
@@ -75,7 +75,7 @@ kubectl delete clusterrole whatap
 
 #### インストール手順
 
-使用したいネームスペース名を`<namespace>`に入力し、次のコマンドを実行してエージェントをインストールします。 
+使用するネームスペース名を`<namespace>`に入力し、次のコマンドを実行してエージェントをインストールします。 
 
 ```bash
 helm install whatap-kube-agent whatap/kube --create-namespace --namespace <namespace> --set namespaceOverrideEnabled=true --wait -f values.yaml

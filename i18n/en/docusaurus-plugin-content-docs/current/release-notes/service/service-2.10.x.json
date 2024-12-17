@@ -1,6 +1,135 @@
 [
   {
     "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.10",
+    "date": "2024-11-22",
+    "Lists": [
+      {
+        "ver": "Service 2.10.10",
+        "hash": "service-21010",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span>, fixed the data duplication issue in <span class=\"uitext\">SQL Elapse Map</span> widget.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.9",
+    "date": "2024-11-18",
+    "Lists": [
+      {
+        "ver": "Service 2.10.9",
+        "hash": "service-2109",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the search in the organization do not work normally after moving <span class=\"uitext\">Notification Message Settings</span>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.8",
+    "date": "2024-11-13",
+    "Lists": [
+      {
+        "ver": "Service 2.10.8",
+        "hash": "service-2108",
+        "product": "Server",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>  In <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Inventory</span>, fixed the issue where custom columns are not saved after modification.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.7",
+    "date": "2024-11-11",
+    "Lists": [
+      {
+        "ver": "Service 2.10.7",
+        "hash": "service-2107",
+        "product": "Common",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">My Usage</span> &gt; <span class=\"uitext\">Payment Information</span>, fixed the issue where the AWS Marketplace resubscription button is not activated.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.6",
+    "date": "2024-11-08",
+    "Lists": [
+      {
+        "ver": "Service 2.10.6",
+        "hash": "service-2106",
+        "product": "Server",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved the deletion feature of <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Inventory</span> by replacing it with an API that leaves user action logs.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.5",
+    "date": "2024-11-07",
+    "Lists": [
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> The inactive agent search feature is provided when searching for <span class=\"uitext\">Agent/IP</span> in the integrated search of side menus.</p>"
+      },
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">My Usage</span> &gt; <span class=\"uitext\">Payment Information</span>, provided the AWS resubscription feature.</p>"
+      },
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "Common",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Metrics Chart</span> <code class=\"newfunc\">New</code>, improved the data display format for widgets to display up to two decimal places.</p>"
+      },
+      {
+        "ver": "Service 2.10.5",
+        "hash": "service-2105",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span>, fixed the issue where query text is not visible when the <span class=\"uitext\">SQL details</span> window pops up.</p>",
+        "category": "Database V1"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
+    "ver": "Service 2.10.3",
+    "date": "2024-11-01",
+    "Lists": [
+      {
+        "ver": "Service 2.10.3",
+        "hash": "service-2103",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">MYSQL SQL Statistics</span>, fixed the issue where the filter does not work normally.</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "Service 2.10.3",
+        "hash": "service-2103",
+        "product": "Database",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">PG SQL Statistics</span>, fixed the issue where the filter does not work normally.</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_10_x",
     "ver": "Service 2.10.2",
     "date": "2024-10-31",
     "Lists": [
@@ -538,7 +667,7 @@
         "hash": "service-2100",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Tablespace Size</span>, added the TOTAL row into the <span class=\"uitext\">Tablespace size details</span> table.</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">DB size</span>, added the TOTAL row into the <span class=\"uitext\">Tablespace size details</span> table.</p>",
         "category": "CUBRID"
       },
       {
@@ -546,7 +675,7 @@
         "hash": "service-2100",
         "product": "Database",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">DB size</span> for the <code class=\"my\">V2</code> project, fixed the whiteout occurrence.</p>",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Size details</span> for the <code class=\"my\">V2</code> project, fixed the whiteout occurrence.</p>",
         "category": "CUBRID"
       },
       {

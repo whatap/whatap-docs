@@ -6,6 +6,8 @@ const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 const {rehypeExtendedTable} = require("rehype-extended-table");
 // const rehypeSectionHeadings = require("rehype-section-headings");
+const isDev = process.env.NODE_ENV === 'development';
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
 
 /** @type {import('@docusaurus/types').Config} */
 
@@ -14,14 +16,7 @@ const config = {
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   future: {
-    experimental_faster: {
-      swcJsLoader: true,
-      swcJsMinimizer: true,
-      swcHtmlMinimizer: true,
-      lightningCssMinimizer: true,
-      rspackBundler: true,
-      mdxCrossCompilerCache: true,
-    },
+    experimental_faster: isDev ? false : true
   },
   baseUrl: '/',
   onBrokenLinks: 'ignore',
@@ -55,7 +50,7 @@ const config = {
   },
   // trailingSlash: false,
   clientModules: [
-    require.resolve("./src/modules/amplitude.js")
+    // require.resolve("./src/modules/amplitude.js")
   ],
   plugins: [
     [ './src/whatap-plugin-facebook', {}],
@@ -131,6 +126,8 @@ const config = {
           editUrl: 'undefined', // 'https://gitlab.whatap.io/whatap-inc/docs/-/blob/main/',
           include: [ '**/*.mdx' ],
           exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx' ],
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
           // exclude: [ 'weaving/*.mdx', 'weaving/**/*.mdx', 'wip/*.mdx', 'common-items/*.mdx', '**/_*.mdx', 'release-notes/otel/*.mdx' ],
           // 재환님 요청으로 오픈텔레메트리 릴리스 노트 문서를 오픈텔레메트리 문서 하위에서 확인 가능하도록 수정 1106
         },
@@ -143,6 +140,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           blogSidebarTitle: '새로운 기능',
           blogSidebarCount: 'ALL',
+          onUntruncatedBlogPosts: 'ignore',
           include: [ '**/*.mdx' ],
           rehypePlugins: [ rehypeExtendedTable ],
           // groupByYear: true, (canary 버전 옵션)
@@ -675,13 +673,20 @@ const config = {
           },
           // 다국어 조건 블로그
           {
-            to: (function () {
-              const locale = process.env.DOCUSAURUS_CURRENT_LOCALE; // 현재 로케일
-              return locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog';
-            })(),
+            type: 'dropdown',
             label: 'What\'s New',
             position: 'right',
-            className: 'iflang-link box',
+            className: 'oneColumn iflang-link box',
+            items: [
+              {
+                to: locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog',
+                label: '새로운 기능'
+              },
+              {
+                to: 'release-notes',
+                label: '릴리스 노트'
+              }
+            ]
           },
           {
             type: 'localeDropdown',

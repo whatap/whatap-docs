@@ -3887,9 +3887,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_44',
+                  id: 'release-notes/java/java-2_2_46',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_45',
+                'release-notes/java/java-2_2_44',
                 'release-notes/java/java-2_2_43',
                 'release-notes/java/java-2_2_42',
                 'release-notes/java/java-2_2_41',
@@ -3897,8 +3899,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_39',
                 'release-notes/java/java-2_2_38',
                 'release-notes/java/java-2_2_37',
-                'release-notes/java/java-2_2_36',
-                'release-notes/java/java-2_2_35',
                 'release-notes/java/java-previous',
               ],
             },
@@ -3931,7 +3931,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -3939,9 +3939,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_8_2',
-                  // className: 'new',
+                  id: 'release-notes/php/php-2_9_0',
+                  className: 'new',
                 },
+                'release-notes/php/php-2_8_2',
                 'release-notes/php/php-2_8_1',
                 'release-notes/php/php-2_8_0',
                 'release-notes/php/php-2_7_2',
@@ -3950,7 +3951,6 @@ const sidebars = {
                 'release-notes/php/php-2_6_3',
                 'release-notes/php/php-2_6_2',
                 'release-notes/php/php-2_6_1',
-                'release-notes/php/php-2_6_0',
                 'release-notes/php/php-previous',
               ],
             },
@@ -3959,7 +3959,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -3968,7 +3968,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_5_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_5_2',
                 'release-notes/nodejs/nodejs-0_5_1',
@@ -3988,7 +3988,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3997,7 +3997,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_7_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
@@ -4008,7 +4008,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_6',
                 'release-notes/python/python-1_6_5',
                 'release-notes/python/python-1_6_4',
-                'release-notes/python/python-1_6_3',
                 'release-notes/python/python-previous',
               ],
             },
@@ -4017,7 +4016,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -4026,7 +4025,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_3_6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_3_5',
                 'release-notes/dotnet/dotnet-2_3_4',
@@ -4037,7 +4036,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_2_9',
                 'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-2_2_7',
-                'release-notes/dotnet/dotnet-2_2_6',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -4082,9 +4080,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_7_2',
+                  id: 'release-notes/server/server-2_7_3',
                   className: 'new',
                 },
+                'release-notes/server/server-2_7_2',
                 'release-notes/server/server-2_7_1',
                 'release-notes/server/server-2_7_0',
                 'release-notes/server/server-2_6_9',
@@ -4094,7 +4093,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_5',
                 'release-notes/server/server-2_6_4',
                 'release-notes/server/server-2_6_3',
-                'release-notes/server/server-2_6_2',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4103,7 +4101,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4111,9 +4109,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_3_6',
-                  // className: 'new'
+                  id: 'release-notes/server-aix/server-aix-1_3_7',
+                  className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_3_6',
                 'release-notes/server-aix/server-aix-1_3_5',
                 'release-notes/server-aix/server-aix-1_3_4',
                 'release-notes/server-aix/server-aix-1_2_7'
@@ -4147,14 +4146,15 @@ const sidebars = {
               className: 'new',
               link: {
                 type: 'doc',
-                id: 'release-notes/server-hpux/server-hpux-1_3_6'
+                id: 'release-notes/server-hpux/index'
               },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/server-hpux-1_3_6',
+                  id: 'release-notes/server-hpux/server-hpux-1_3_7',
                   className: 'new'
                 },
+                'release-notes/server-hpux/server-hpux-1_3_6',
                 'release-notes/server-hpux/server-hpux-1_3_4',
               ],
             },
@@ -4163,7 +4163,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4172,7 +4172,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_7_16',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_7_15',
                 'release-notes/k8s/k8s-1_7_14',
@@ -4199,18 +4199,18 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_2_2',
+                  id: 'release-notes/db/dbx-2_2_7',
                   className: 'new',
                 },
+                'release-notes/db/dbx-2_2_6',
+                'release-notes/db/dbx-2_2_5',
+                'release-notes/db/dbx-2_2_4',
+                'release-notes/db/dbx-2_2_3',
+                'release-notes/db/dbx-2_2_2',
                 'release-notes/db/dbx-2_2_1',
                 'release-notes/db/dbx-2_2_0',
                 'release-notes/db/dbx-2_1_7',
                 'release-notes/db/dbx-2_1_6',
-                'release-notes/db/dbx-2_1_5',
-                'release-notes/db/dbx-2_1_4',
-                'release-notes/db/dbx-2_1_3',
-                'release-notes/db/dbx-2_1_2',
-                'release-notes/db/dbx-2_1_1',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -4895,6 +4895,26 @@ const sidebars = {
   //     ],
   //   }
   // ],
+  faqSidebar: [
+    {
+      type: 'category',
+      label: '자주 묻는 질문',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'faq/index'
+      },
+      items: [
+        'faq/apm-faq',
+        'faq/db-faq',
+        'faq/log-faq',
+        'faq/agent-faq',
+        'about-billing',
+        'faq/support-faq',
+      ]
+    }
+  ],
   referSidebar: [
     {
       type: 'category',
@@ -4928,25 +4948,7 @@ const sidebars = {
             'license/license-open-sources',
             'license/license-open-sources-lib',
           ]
-        },
-        {
-          type: 'category',
-          label: '자주 묻는 질문',
-          // description: '와탭 모니터링 서비스에 대한 FAQ 문서입니다.',
-          link: {
-            type: 'doc',
-            id: 'faq/index'
-          },
-          items: [
-            'faq/apm-faq',
-            'faq/db-faq',
-            'faq/log-faq',
-            'faq/agent-faq',
-            'about-billing',
-            'faq/support-faq',
-          ]
-        },
-
+        }
         // 'metrics/common-metrics-intro',
         // {
         //   type: 'category',
@@ -5192,9 +5194,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/otel/otel-v0_2_1',
+              id: 'release-notes/otel/otel-v0_2_2',
               className: 'new',
             },
+            'release-notes/otel/otel-v0_2_1',
             'release-notes/otel/otel-v0_2_0',
           ]
         }
