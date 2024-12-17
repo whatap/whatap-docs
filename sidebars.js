@@ -5603,6 +5603,7 @@ const sidebars = {
           label: 'APACHE',
           className: 'beta' 
         },
+        'features/uninstall-agent',
       ]
     }
   ],
