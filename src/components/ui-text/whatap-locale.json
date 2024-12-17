@@ -46328,7 +46328,7 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
     "service_id": "DSC07839"
@@ -46449,7 +46449,7 @@
   },
   "NTC07859": {
     "en": "In progress. This may take a moment.",
-    "ja": "適用中です。しばらく時間がかかることがあります。",
+    "ja": "適用中です。しばらく時間がかかる場合があります。",
     "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
     "service_id": "NTC07859"
   },
@@ -47595,7 +47595,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
+    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "service_id": "DSC08050"
   },
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48344,7 +48344,7 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
     "service_id": "DSC08175"
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -49316,7 +49316,7 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
     "service_id": "DSC08338"
@@ -49383,7 +49383,7 @@
   },
   "ITM08349": {
     "en": "Log view detail setting",
-    "ja": "ログ表示の詳細設定",
+    "ja": "ログ表示詳細設定",
     "ko": "로그 표시 상세 설정",
     "service_id": "ITM08349"
   },
@@ -49485,7 +49485,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果の選択",
+    "ja": "検索結果を選択",
     "ko": "검색 결과 선택",
     "service_id": "CNT08366"
   },
@@ -49586,7 +49586,7 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
     "service_id": "DSC08383"
@@ -49760,7 +49760,7 @@
     "service_id": "TTL08411"
   },
   "ITM08412": {
-    "en": "pop-up notification",
+    "en": "Pop-up notification",
     "ja": "ポップアップ通知",
     "ko": "팝업 알림",
     "service_id": "ITM08412"
@@ -49844,7 +49844,7 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
     "service_id": "DSC08426"
@@ -49874,8 +49874,8 @@
     "service_id": "DSC08430"
   },
   "DSC08431": {
-    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend monitoring periodically when load occurs.",
-    "ja": "このノードはほとんどの時間にわたって余分な使用量を維持しますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。モニタリングをお勧めします。",
+    "en": "This node maintains light usage most of the time, but <b>occasionally experiences moderate load on {resources}</b>. If you want stable operation, we recommend periodic monitoring in preparation for when load occurs.",
+    "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した時点での監視をお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
     "service_id": "DSC08431"
   },
@@ -49910,7 +49910,7 @@
     "service_id": "DSC08436"
   },
   "DSC08437": {
-    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potentially resulting in intermittent high load</b>.",
+    "en": "<b>{resource} utilization</b> may increase from average {avg} up to {max}, <b>potential for intermittent high load</b>.",
     "ja": "<b> {resource}使用率</b>が平均{avg}から最大{max}まで増加し、<b>断続的に高い負荷が発生する可能性</b>があります。",
     "ko": "<b>{resource} 사용률</b>이 평균 {avg}에서 최대 {max}까지 증가하여 <b>간헐적으로 높은 부하가 발생할 가능성</b>이 있습니다.",
     "service_id": "DSC08437"
@@ -50168,7 +50168,7 @@
     "service_id": "TTL08479"
   },
   "TTL08480": {
-    "en": "Script List",
+    "en": "Script list",
     "ja": "スクリプトリスト",
     "ko": "스크립트 목록",
     "service_id": "TTL08480"
@@ -50499,7 +50499,7 @@
   },
   "TTL08537": {
     "en": "Introducing the node map feature!",
-    "ja": "ノードマップ機能を紹介します！",
+    "ja": "ノードマップ機能をご紹介します！",
     "ko": "노드 맵 기능을 소개합니다!",
     "service_id": "TTL08537"
   },
@@ -50547,7 +50547,7 @@
   },
   "DSC08545": {
     "en": "A Pod with a QoS Class of Guaranteed is in the Pending state. Please check the node's free resources or node schedule policy.",
-    "ja": "QoS ClassがGuaranteedのPodがPending状態です。",
+    "ja": "QoS ClassがGuaranteedのPodがPending状態です。ノードの空きリソースまたはノードスケジュールポリシーを確認してください。",
     "ko": "QoS Class가 Guaranteed인 Pod가 Pending 상태입니다. 노드의 여유 리소스 또는 노드 스케줄 정책을 확인해 주세요.",
     "service_id": "DSC08545"
   },
@@ -50589,7 +50589,7 @@
   },
   "DSC08552": {
     "en": "The Active Connection of ${oname} is ${active$connections}.",
-    "ja": "${oname}のActive Connectionは${active$connections}です。",
+    "ja": "${oname} の Active Connection は ${active$connections} です。",
     "ko": "${oname}의 Active Connection이 ${active$connections}입니다.",
     "service_id": "DSC08552"
   },
@@ -50654,7 +50654,7 @@
     "service_id": "TLT08562"
   },
   "TLT08563": {
-    "en": "This represents the average time it takes the browser to completely load a web page, and is the time it takes for additional interactions to complete after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
+    "en": "This represents the average time it takes the browser to completely load a web page, and is the time it takes to complete additional interactions after loadEventEnd. The time to complete a page load, as measured by the browser agent.",
     "ja": "ブラウザがWebページを完全に読み込むまでかかる時間を示します。",
     "ko": "브라우저가 웹 페이지를 완전히 불러오는데 소요한 평균 시간을 나타내며, loadEventEnd 이후 추가 인터랙션을 완료하기까지의 시간입니다. 브라우저 에이전트가 측정한 페이지 로드 완료 시간을 의미합니다.",
     "service_id": "TLT08563"
@@ -50720,7 +50720,7 @@
     "service_id": "TLT08573"
   },
   "TLT08574": {
-    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
+    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, and refers to the time taken from domInteractive to domComplete.",
     "ja": "ブラウザのWebページロード中に、サーバーからのリソースダウンロードにかかる時間を示します。",
     "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 소요한 평균 시간을 나타내며, domInteractive부터 domComplete까지 소요된 시간을 의미합니다.",
     "service_id": "TLT08574"
@@ -50744,7 +50744,7 @@
     "service_id": "TLT08577"
   },
   "TLT08578": {
-    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, representing the time from domInteractive to domComplete.",
+    "en": "It represents the average time taken to render the resources downloaded from the server on the screen and complete the page load event, and refers to the time taken from domInteractive to domComplete.",
     "ja": "サーバーからダウンロードしたリソースを画面にレンダリングし、ページロードイベントを完了するまでかかる平均時間を示します。",
     "ko": "서버로부터 다운로드한 리소스를 화면에 렌더링하고 페이지 로드 이벤트를 완료하는데 소요한 평균 시간을 나타내며, domInteractive부터 domComplete까지 소요된 시간을 의미합니다.",
     "service_id": "TLT08578"
@@ -50805,7 +50805,7 @@
   },
   "DSC08588": {
     "en": "The pattern is registered after the simulation is performed to ensure that the log is successfully parsed with the entered pattern.",
-    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
+    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "service_id": "DSC08588"
   },
@@ -51189,7 +51189,7 @@
   },
   "DSC08652": {
     "en": "<code class='_copy'>{ingressName}</code> Ingress was created at <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "service_id": "DSC08652"
   },
@@ -51332,7 +51332,7 @@
     "service_id": "TLT08675"
   },
   "TTL08676": {
-    "en": "IP load timeline",
+    "en": "IP Load Timeline",
     "ja": "IPロードタイムライン",
     "ko": "IP 로드 타임라인",
     "service_id": "TTL08676"
@@ -51620,7 +51620,7 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Please update the agent version to the latest version.",
+    "en": "Update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
@@ -51932,7 +51932,7 @@
     "service_id": "TTL08776"
   },
   "DSC08777": {
-    "en": "If the Agent version is lower than the version defined above,<br />the server icon is displayed normally in the \"Server Inventory Map\", but<br />the file system in the server inventory map's group performance statistics information, right summary panel, and detailed view etc. Information and Metrics may not be displayed properly.",
+    "en": "If the Agent version is lower than the version defined above,<br />the server icon will be displayed normally in the \"Server Inventory Map\", but<br />file system information such as group performance statistics information in the server inventory map, summary panel on the right, and detailed view will not be displayed. Information and Metrics may not be displayed properly.",
     "ja": "Agentのバージョンが上記のバージョンより低い場合、<br /> 「サーバーインベントリマップ」にはサーバーアイコンが表示されますが、<br />サーバーインベントリマップのグループ性能統計情報、右のサマリーパネル、および詳細ビューなどのファイルシステム情報、メトリクスが正常に表示されないことがあります。",
     "ko": "Agent 버전이 위 정의된 버전보다 낮을 경우,<br />\"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만<br />서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
     "service_id": "DSC08777"
@@ -52106,7 +52106,7 @@
     "service_id": "TTL08805"
   },
   "DSC08806": {
-    "en": "If the installed Agent version is lower than the supported versions below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "en": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
     "ja": "インストールされたエージェントのバージョンが以下のバージョンより低い場合、「サーバーインベントリマップ」にサーバーアイコンは表示されますが、サーバーインベントリマップのグループ性能統計情報、右サマリパネル、詳細ビューなどのファイルシステム情報、メトリクスは正常に表示されないことがあります。",
     "ko": "설치된 Agent 버전이 아래의 지원 버전보다 낮을 경우, \"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만 서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
     "service_id": "DSC08806"
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value} 表示",
+    "ja": "{value}を表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52418,7 +52418,7 @@
     "service_id": "TTL08857"
   },
   "CNT08858": {
-    "en": "3rd Party",
+    "en": "3rd party",
     "ja": "3rd Party",
     "ko": "3rd Party",
     "service_id": "CNT08858"
@@ -52466,7 +52466,7 @@
     "service_id": "CNT08865"
   },
   "TTL08866": {
-    "en": "Load count trend by resource type",
+    "en": "Trends in load count by resource type",
     "ja": "リソースタイプ別ロード数の推移",
     "ko": "리소스 타입 별 로드 수 추이",
     "service_id": "TTL08866"
@@ -52478,7 +52478,7 @@
     "service_id": "ITM08867"
   },
   "TTL08868": {
-    "en": "Trend comparison",
+    "en": "Compare trends",
     "ja": "推移比較",
     "ko": "추이 비교",
     "service_id": "TTL08868"
@@ -52527,7 +52527,7 @@
   },
   "TLT08877": {
     "en": "Indicates the time taken to establish a server connection, and refers to the time taken from connectStart to connectEnd.",
-    "ja": "サーバー接続設定に費やされた時間を表し、connectStartからconnectEndまでの時間を意味します。",
+    "ja": "サーバー接続設定に費やされた時間を示し、connectStartからconnectEndまでの時間を意味します。",
     "ko": "서버 연결 설정에 소요된 시간을 나타내며, connectStart부터 connectEnd까지 소요된 시간을 의미합니다.",
     "service_id": "TLT08877"
   },
