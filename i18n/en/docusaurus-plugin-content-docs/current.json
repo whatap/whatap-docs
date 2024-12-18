@@ -2030,5 +2030,17 @@
   "sidebar.faqSidebar.category.자주 묻는 질문": {
     "message": "FAQ",
     "description": "The label for category 자주 묻는 질문 in sidebar faqSidebar"
+  },
+  "sidebar.apmSidebar.category.APM Reference": {
+    "message": "APM Reference",
+    "description": "The label for category APM Reference in sidebar apmSidebar"
+  },
+  "sidebar.dbSidebar.category.Database Reference": {
+    "message": "Database Reference",
+    "description": "The label for category Database Reference in sidebar dbSidebar"
+  },
+  "sidebar.dbSidebar.link.데이터베이스별 지원 기능 비교": {
+    "message": "Comparison between supported functions by database",
+    "description": "The label for link 데이터베이스별 지원 기능 비교 in sidebar dbSidebar, linking to ../db-support-functions"
   }
 }

@@ -6424,10 +6424,15 @@ const sidebars = {
   apmSidebar: [
     {
       type: 'category',
-      label: 'Category',
+      label: 'APM Reference',
       collapsible: false,
       collapsed: false,
       items: [
+        'reference/changes-analysis-trace',
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
         {
           type: 'link',
           label: 'Java',
@@ -6469,10 +6474,22 @@ const sidebars = {
   dbSidebar: [
     {
       type: 'category',
-      label: 'Database',
+      label: 'Database Reference',
       collapsible: false,
       collapsed: false,
       items: [
+        'reference/changes-db-xos-metrics-guide',
+        'reference/cloudwatch-metric-guide',
+        'reference/script-manager',
+        {
+          type: 'link',
+          href: '../db-support-functions',
+          label: '데이터베이스별 지원 기능 비교'
+        },
+        {
+          type: 'html',
+          value: '<hr class="distnq"/>'
+        },
         {
           type: 'link',
           label: 'PostgreSQL',
