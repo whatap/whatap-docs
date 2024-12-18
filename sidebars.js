@@ -6230,7 +6230,8 @@ const sidebars = {
           collapsed: true,
           items: [
             'browser/pageload-stat',
-            'browser/ipload-stat'
+            'browser/ipload-stat',
+            'browser/resourceload-stat'
           ]
         },
         {
