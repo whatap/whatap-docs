@@ -3988,7 +3988,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -3996,9 +3996,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_2',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1_7_3',
+                  className: 'new',
                 },
+                'release-notes/python/python-1_7_2',
                 'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
                 'release-notes/python/python-1_6_10',
@@ -4007,7 +4008,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_7',
                 'release-notes/python/python-1_6_6',
                 'release-notes/python/python-1_6_5',
-                'release-notes/python/python-1_6_4',
                 'release-notes/python/python-previous',
               ],
             },
@@ -4191,7 +4191,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4200,7 +4200,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dbx-2_2_7',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dbx-2_2_6',
                 'release-notes/db/dbx-2_2_5',
