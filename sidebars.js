@@ -4584,7 +4584,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4592,18 +4592,18 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_2_7',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_3_1',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-2_3_0',
+                'release-notes/db/dbx-2_2_9',
+                'release-notes/db/dbx-2_2_8',
+                'release-notes/db/dbx-2_2_7',
                 'release-notes/db/dbx-2_2_6',
                 'release-notes/db/dbx-2_2_5',
                 'release-notes/db/dbx-2_2_4',
                 'release-notes/db/dbx-2_2_3',
                 'release-notes/db/dbx-2_2_2',
-                'release-notes/db/dbx-2_2_1',
-                'release-notes/db/dbx-2_2_0',
-                'release-notes/db/dbx-2_1_7',
-                'release-notes/db/dbx-2_1_6',
                 'release-notes/db/dbx-previous',
               ]
             },
