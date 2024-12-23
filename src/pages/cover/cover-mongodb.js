@@ -28,7 +28,7 @@ export default function Cover() {
             MongoDB Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2024.12.02
+            release date. 2024.12.30
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
