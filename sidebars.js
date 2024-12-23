@@ -3804,9 +3804,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_11_x',
+              id: 'release-notes/service/service-2_12_x',
               className: 'new',
             },
+            'release-notes/service/service-2_11_x',
             'release-notes/service/service-2_10_x',
             'release-notes/service/service-2_9_x',
             'release-notes/service/service-2_8_x',
@@ -3815,7 +3816,6 @@ const sidebars = {
             'release-notes/service/service-2_5_x',
             'release-notes/service/service-2_4_x',
             'release-notes/service/service-2_3_x',
-            'release-notes/service/service-2_2_x',
             'release-notes/service/service-previous',
           ]
         },
