@@ -2221,6 +2221,12 @@ main {
       background-color: rgb(230, 230, 230);
       color: #333;
     }
+
+    code.time {
+      background-color: #02B543;
+      color: #fff;
+      font-weight: bold;
+    }
     sup > code {
       font-size: .6em;
     }
