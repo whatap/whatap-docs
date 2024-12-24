@@ -231,9 +231,10 @@ function RecommendedDoc() {
     if (currentLocale == "ko") {
         return (
             <>
+                <Link to={useBaseUrl("usage-ui#timeselector")} className={clsx(styles.white, styles.underline)}>UI 사용 안내: 시간 선택자</Link>,&nbsp;
+                <Link to={useBaseUrl("browser/resourceload-stat")} className={clsx(styles.white, styles.underline)}>Browser: 리소스 로드 통계</Link>,&nbsp;
                 <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>서버 인벤토리 맵</Link>,&nbsp;
                 <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>노드 맵</Link>,&nbsp;
-                <Link to={useBaseUrl("mssql/monitoring-intro")} className={clsx(styles.white, styles.underline)}>SQL Server V2</Link>,&nbsp;
                 <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: 연계 프로젝트 관리</Link>,&nbsp;
                 <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: 클라우드 설정</Link>
             </>
