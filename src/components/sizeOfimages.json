@@ -557,27 +557,27 @@
   },
   "alert_receving_setting-en.png": {
     "width": 1200,
-    "height": 1250
+    "height": 1002
   },
   "alert_receving_setting-ja.png": {
     "width": 1200,
-    "height": 1257
+    "height": 1002
   },
   "alert_receving_setting-url-en.png": {
     "width": 1200,
-    "height": 915
+    "height": 1003
   },
   "alert_receving_setting-url-ja.png": {
     "width": 1200,
-    "height": 924
+    "height": 1003
   },
   "alert_receving_setting-url.png": {
     "width": 1200,
-    "height": 903
+    "height": 986
   },
   "alert_receving_setting.png": {
     "width": 1200,
-    "height": 1192
+    "height": 986
   },
   "alert_status-en.png": {
     "width": 600,
@@ -1713,15 +1713,27 @@
   },
   "apm-statistic-basic-operator-en.png": {
     "width": 1200,
-    "height": 254
+    "height": 257
   },
   "apm-statistic-basic-operator-ja.png": {
     "width": 1200,
-    "height": 254
+    "height": 257
   },
   "apm-statistic-basic-operator.png": {
     "width": 1200,
     "height": 256
+  },
+  "apm-statistic-tx-compare-trend-en.png": {
+    "width": 1200,
+    "height": 680
+  },
+  "apm-statistic-tx-compare-trend-ja.png": {
+    "width": 1200,
+    "height": 681
+  },
+  "apm-statistic-tx-compare-trend.png": {
+    "width": 1200,
+    "height": 680
   },
   "apm-timeselector-setting-en.png": {
     "width": 600,
@@ -4115,6 +4127,114 @@
     "width": 1200,
     "height": 985
   },
+  "browser-resourceload-stat-basic-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-resourceload-stat-basic-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-resourceload-stat-basic.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "browser-resourceload-stat-group-list-en.png": {
+    "width": 1200,
+    "height": 440
+  },
+  "browser-resourceload-stat-group-list-ja.png": {
+    "width": 1200,
+    "height": 440
+  },
+  "browser-resourceload-stat-group-list.png": {
+    "width": 1200,
+    "height": 440
+  },
+  "browser-resourceload-stat-perf-metrics-filter-en.png": {
+    "width": 440,
+    "height": 371
+  },
+  "browser-resourceload-stat-perf-metrics-filter-ja.png": {
+    "width": 440,
+    "height": 397
+  },
+  "browser-resourceload-stat-perf-metrics-filter.png": {
+    "width": 400,
+    "height": 372
+  },
+  "browser-resourceload-stat-resoponse-top-en.png": {
+    "width": 600,
+    "height": 295
+  },
+  "browser-resourceload-stat-resoponse-top-ja.png": {
+    "width": 600,
+    "height": 295
+  },
+  "browser-resourceload-stat-resoponse-top.png": {
+    "width": 600,
+    "height": 295
+  },
+  "browser-resourceload-stat-resource-path-filter-en.png": {
+    "width": 600,
+    "height": 541
+  },
+  "browser-resourceload-stat-resource-path-filter-ja.png": {
+    "width": 600,
+    "height": 443
+  },
+  "browser-resourceload-stat-resource-path-filter.png": {
+    "width": 600,
+    "height": 447
+  },
+  "browser-resourceload-stat-resource-type-trend-en.png": {
+    "width": 1200,
+    "height": 219
+  },
+  "browser-resourceload-stat-resource-type-trend-ja.png": {
+    "width": 1200,
+    "height": 219
+  },
+  "browser-resourceload-stat-resource-type-trend-select-time-en.png": {
+    "width": 1200,
+    "height": 949
+  },
+  "browser-resourceload-stat-resource-type-trend-select-time-ja.png": {
+    "width": 1200,
+    "height": 949
+  },
+  "browser-resourceload-stat-resource-type-trend-select-time.png": {
+    "width": 1200,
+    "height": 949
+  },
+  "browser-resourceload-stat-resource-type-trend.png": {
+    "width": 1200,
+    "height": 219
+  },
+  "browser-resourceload-stat-setting-column-en.png": {
+    "width": 600,
+    "height": 749
+  },
+  "browser-resourceload-stat-setting-column-ja.png": {
+    "width": 600,
+    "height": 749
+  },
+  "browser-resourceload-stat-setting-column.png": {
+    "width": 600,
+    "height": 749
+  },
+  "browser-resourceload-stat-size-top-en.png": {
+    "width": 600,
+    "height": 293
+  },
+  "browser-resourceload-stat-size-top-ja.png": {
+    "width": 600,
+    "height": 293
+  },
+  "browser-resourceload-stat-size-top.png": {
+    "width": 600,
+    "height": 293
+  },
   "browser-search-user-session-category.png": {
     "width": 988,
     "height": 310
@@ -5035,6 +5155,90 @@
     "width": 800,
     "height": 803
   },
+  "ui-timeselector-date-picker-en.png": {
+    "width": 1392,
+    "height": 747
+  },
+  "ui-timeselector-date-picker-ja.png": {
+    "width": 1392,
+    "height": 747
+  },
+  "ui-timeselector-date-picker.png": {
+    "width": 1392,
+    "height": 747
+  },
+  "ui-timeselector-live-en.png": {
+    "width": 828,
+    "height": 100
+  },
+  "ui-timeselector-live-ja.png": {
+    "width": 828,
+    "height": 100
+  },
+  "ui-timeselector-live.png": {
+    "width": 817,
+    "height": 100
+  },
+  "ui-timeselector-live2specific.gif": {
+    "width": 1016,
+    "height": 80
+  },
+  "ui-timeselector-paste.gif": {
+    "width": 2188,
+    "height": 222
+  },
+  "ui-timeselector-realtime-range-5m-en.png": {
+    "width": 600,
+    "height": 509
+  },
+  "ui-timeselector-realtime-range-5m-ja.png": {
+    "width": 600,
+    "height": 509
+  },
+  "ui-timeselector-realtime-range-5m.png": {
+    "width": 600,
+    "height": 512
+  },
+  "ui-timeselector-realtime-range-en.png": {
+    "width": 600,
+    "height": 234
+  },
+  "ui-timeselector-realtime-range-ja.png": {
+    "width": 600,
+    "height": 235
+  },
+  "ui-timeselector-realtime-range.png": {
+    "width": 600,
+    "height": 236
+  },
+  "ui-timeselector-select-custom-en.png": {
+    "width": 960,
+    "height": 588
+  },
+  "ui-timeselector-select-custom-ja.png": {
+    "width": 960,
+    "height": 694
+  },
+  "ui-timeselector-select-custom.png": {
+    "width": 960,
+    "height": 588
+  },
+  "ui-timeselector-timerange-en.png": {
+    "width": 998,
+    "height": 100
+  },
+  "ui-timeselector-timerange-ja.png": {
+    "width": 998,
+    "height": 100
+  },
+  "ui-timeselector-timerange-mov.gif": {
+    "width": 812,
+    "height": 80
+  },
+  "ui-timeselector-timerange.png": {
+    "width": 951,
+    "height": 100
+  },
   "compound-eye.png": {
     "width": 451,
     "height": 339
@@ -5398,6 +5602,30 @@
   "db-analysis-compare-top-sql.png": {
     "width": 1200,
     "height": 706
+  },
+  "db-analysis-sql-access-object-filter-add-en.png": {
+    "width": 600,
+    "height": 281
+  },
+  "db-analysis-sql-access-object-filter-add-ja.png": {
+    "width": 600,
+    "height": 281
+  },
+  "db-analysis-sql-access-object-filter-add.png": {
+    "width": 600,
+    "height": 281
+  },
+  "db-analysis-sql-access-object-filter-edit-en.png": {
+    "width": 600,
+    "height": 233
+  },
+  "db-analysis-sql-access-object-filter-edit-ja.png": {
+    "width": 600,
+    "height": 230
+  },
+  "db-analysis-sql-access-object-filter-edit.png": {
+    "width": 600,
+    "height": 233
   },
   "db-analysis-sql-access-statistics-en.png": {
     "width": 1200,
@@ -5813,7 +6041,7 @@
   },
   "db-compare-count-trend-activesession-altibase-en.png": {
     "width": 1200,
-    "height": 329
+    "height": 331
   },
   "db-compare-count-trend-activesession-altibase-ja.png": {
     "width": 1200,
@@ -5837,39 +6065,39 @@
   },
   "db-compare-count-trend-activesession-mongodb-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 332
   },
   "db-compare-count-trend-activesession-mongodb-ja.png": {
     "width": 1200,
-    "height": 326
+    "height": 332
   },
   "db-compare-count-trend-activesession-mongodb.png": {
     "width": 1200,
-    "height": 326
+    "height": 332
   },
   "db-compare-count-trend-activesession-mssql-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 330
   },
   "db-compare-count-trend-activesession-mssql-ja.png": {
     "width": 1200,
-    "height": 326
+    "height": 330
   },
   "db-compare-count-trend-activesession-mssql.png": {
     "width": 1200,
-    "height": 326
+    "height": 330
   },
   "db-compare-count-trend-activesession-mysql-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 329
   },
   "db-compare-count-trend-activesession-mysql-ja.png": {
     "width": 1200,
-    "height": 326
+    "height": 330
   },
   "db-compare-count-trend-activesession-mysql.png": {
     "width": 1200,
-    "height": 326
+    "height": 330
   },
   "db-compare-count-trend-activesession-oracle-pro-en.png": {
     "width": 1200,
@@ -5885,7 +6113,7 @@
   },
   "db-compare-count-trend-activesession-postgresql-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 329
   },
   "db-compare-count-trend-activesession-postgresql-ja.png": {
     "width": 1200,
@@ -5893,19 +6121,19 @@
   },
   "db-compare-count-trend-activesession-postgresql.png": {
     "width": 1200,
-    "height": 326
+    "height": 329
   },
   "db-compare-count-trend-activesession-redis-en.png": {
     "width": 1200,
-    "height": 164
+    "height": 332
   },
   "db-compare-count-trend-activesession-redis-ja.png": {
     "width": 1200,
-    "height": 164
+    "height": 332
   },
   "db-compare-count-trend-activesession-redis.png": {
     "width": 1200,
-    "height": 163
+    "height": 332
   },
   "db-compare-count-trend-activesession.png": {
     "width": 1200,
@@ -5985,15 +6213,15 @@
   },
   "db-compare-count-trend-mysql-en.png": {
     "width": 1200,
-    "height": 1035
+    "height": 1055
   },
   "db-compare-count-trend-mysql-ja.png": {
     "width": 1200,
-    "height": 1035
+    "height": 1055
   },
   "db-compare-count-trend-mysql.png": {
     "width": 1200,
-    "height": 1035
+    "height": 1055
   },
   "db-compare-count-trend-oracle-en.png": {
     "width": 1200,
@@ -6021,15 +6249,15 @@
   },
   "db-compare-count-trend-postgresql-en.png": {
     "width": 1200,
-    "height": 1035
+    "height": 1056
   },
   "db-compare-count-trend-postgresql-ja.png": {
     "width": 1200,
-    "height": 1035
+    "height": 1056
   },
   "db-compare-count-trend-postgresql.png": {
     "width": 1200,
-    "height": 1035
+    "height": 1056
   },
   "db-compare-count-trend-redis-en.png": {
     "width": 1200,
@@ -6061,11 +6289,11 @@
   },
   "db-compare-count-trend-tootip-en.png": {
     "width": 800,
-    "height": 206
+    "height": 268
   },
   "db-compare-count-trend-tootip-ja.png": {
     "width": 800,
-    "height": 206
+    "height": 269
   },
   "db-compare-count-trend-tootip-mongodb.png": {
     "width": 800,
@@ -6084,8 +6312,8 @@
     "height": 206
   },
   "db-compare-count-trend-tootip.png": {
-    "width": 600,
-    "height": 314
+    "width": 800,
+    "height": 268
   },
   "db-count-trend-1x3-cubrid-en.png": {
     "width": 1200,
@@ -9235,13 +9463,25 @@
     "width": 917,
     "height": 87
   },
+  "event-config-v2-apm-duplicated-alert-en.png": {
+    "width": 440,
+    "height": 42
+  },
+  "event-config-v2-apm-duplicated-alert-ja.png": {
+    "width": 451,
+    "height": 42
+  },
+  "event-config-v2-apm-duplicated-alert.png": {
+    "width": 400,
+    "height": 45
+  },
   "event-config-v2-apm-en.png": {
     "width": 1200,
     "height": 297
   },
   "event-config-v2-apm-ja.png": {
     "width": 1200,
-    "height": 300
+    "height": 297
   },
   "event-config-v2-apm.png": {
     "width": 1200,
@@ -9543,6 +9783,14 @@
     "width": 1201,
     "height": 545
   },
+  "fb-alert-list-widget-time-selector.png": {
+    "width": 800,
+    "height": 450
+  },
+  "fb-alert-list-widget-view-mode.png": {
+    "width": 800,
+    "height": 453
+  },
   "fb-alert-list-widget.png": {
     "width": 800,
     "height": 449
@@ -9574,6 +9822,10 @@
   "fb-db-honey-chart-widget.png": {
     "width": 800,
     "height": 448
+  },
+  "fb-event-timeline-widget-view-mode.png": {
+    "width": 800,
+    "height": 454
   },
   "fb-event-timeline-widget.png": {
     "width": 800,
@@ -11469,15 +11721,15 @@
   },
   "k8s-install-master-node-addition-en.png": {
     "width": 1200,
-    "height": 629
+    "height": 646
   },
   "k8s-install-master-node-addition-ja.png": {
     "width": 1200,
-    "height": 652
+    "height": 648
   },
   "k8s-install-master-node-addition.png": {
-    "width": 1200,
-    "height": 587
+    "width": 1201,
+    "height": 651
   },
   "k8s-install-master-node-application-en.png": {
     "width": 1200,
@@ -12615,6 +12867,18 @@
     "width": 1243,
     "height": 664
   },
+  "linked-projects-copy-bind-var-en.png": {
+    "width": 800,
+    "height": 531
+  },
+  "linked-projects-copy-bind-var-ja.png": {
+    "width": 800,
+    "height": 531
+  },
+  "linked-projects-copy-bind-var.png": {
+    "width": 800,
+    "height": 531
+  },
   "linked-projects-database-info-en.png": {
     "width": 800,
     "height": 403
@@ -13737,15 +14001,15 @@
   },
   "metric-warning-notice-new-recovered-en.png": {
     "width": 600,
-    "height": 52
+    "height": 54
   },
   "metric-warning-notice-new-recovered-ja.png": {
     "width": 600,
-    "height": 52
+    "height": 58
   },
   "metric-warning-notice-new-recovered.png": {
     "width": 600,
-    "height": 60
+    "height": 69
   },
   "metric-warning-notice-new-select-target-en.png": {
     "width": 1200,
@@ -14273,15 +14537,15 @@
   },
   "metrics-chart-new-change-time-en.png": {
     "width": 800,
-    "height": 334
+    "height": 361
   },
   "metrics-chart-new-change-time-ja.png": {
     "width": 800,
-    "height": 334
+    "height": 361
   },
   "metrics-chart-new-change-time.png": {
     "width": 800,
-    "height": 341
+    "height": 361
   },
   "metrics-chart-new-chart-batch-change-en.png": {
     "width": 800,
@@ -14320,12 +14584,12 @@
     "height": 53
   },
   "metrics-chart-new-chart-details-en.png": {
-    "width": 600,
-    "height": 511
+    "width": 601,
+    "height": 501
   },
   "metrics-chart-new-chart-details-ja.png": {
-    "width": 600,
-    "height": 493
+    "width": 601,
+    "height": 501
   },
   "metrics-chart-new-chart-details.png": {
     "width": 601,
@@ -14336,7 +14600,7 @@
     "height": 469
   },
   "metrics-chart-new-chart-drag-time-ja.png": {
-    "width": 1200,
+    "width": 1122,
     "height": 469
   },
   "metrics-chart-new-chart-drag-time.png": {
@@ -14369,31 +14633,31 @@
   },
   "metrics-chart-new-chart-options-filter-en.png": {
     "width": 900,
-    "height": 904
+    "height": 890
   },
   "metrics-chart-new-chart-options-filter-ja.png": {
     "width": 900,
-    "height": 907
+    "height": 892
   },
   "metrics-chart-new-chart-options-filter.png": {
     "width": 900,
-    "height": 904
+    "height": 895
   },
   "metrics-chart-new-chart-overlay-en.png": {
     "width": 1200,
-    "height": 612
+    "height": 590
   },
   "metrics-chart-new-chart-overlay-ja.png": {
     "width": 1200,
-    "height": 592
+    "height": 590
   },
   "metrics-chart-new-chart-overlay.png": {
     "width": 1200,
-    "height": 612
+    "height": 590
   },
   "metrics-chart-new-chart-reset-time-en.png": {
     "width": 1200,
-    "height": 249
+    "height": 244
   },
   "metrics-chart-new-chart-reset-time-ja.png": {
     "width": 1200,
@@ -14429,19 +14693,19 @@
   },
   "metrics-chart-new-db-select-metrics-en.png": {
     "width": 1200,
-    "height": 454
+    "height": 489
   },
   "metrics-chart-new-db-select-metrics-ja.png": {
     "width": 1200,
-    "height": 455
+    "height": 492
   },
   "metrics-chart-new-db-select-metrics.png": {
     "width": 1200,
-    "height": 418
+    "height": 456
   },
   "metrics-chart-new-interval-en.png": {
     "width": 1200,
-    "height": 511
+    "height": 498
   },
   "metrics-chart-new-interval-ja.png": {
     "width": 1200,
@@ -14449,7 +14713,7 @@
   },
   "metrics-chart-new-interval.png": {
     "width": 1200,
-    "height": 515
+    "height": 498
   },
   "metrics-chart-new-k8s-chart-batch-change-en.png": {
     "width": 800,
@@ -14487,25 +14751,53 @@
     "width": 1200,
     "height": 417
   },
+  "metrics-chart-new-legend-filter.gif": {
+    "width": 600,
+    "height": 491
+  },
+  "metrics-chart-new-legend-on-off-en.png": {
+    "width": 1200,
+    "height": 618
+  },
+  "metrics-chart-new-legend-on-off-ja.png": {
+    "width": 1200,
+    "height": 618
+  },
+  "metrics-chart-new-legend-on-off.png": {
+    "width": 1200,
+    "height": 575
+  },
+  "metrics-chart-new-legend-order-en.png": {
+    "width": 600,
+    "height": 450
+  },
+  "metrics-chart-new-legend-order-ja.png": {
+    "width": 600,
+    "height": 492
+  },
+  "metrics-chart-new-legend-order.png": {
+    "width": 600,
+    "height": 468
+  },
   "metrics-chart-new-main-apm-en.png": {
     "width": 1200,
-    "height": 1044
+    "height": 1007
   },
   "metrics-chart-new-main-apm-ja.png": {
     "width": 1200,
-    "height": 1040
+    "height": 1007
   },
   "metrics-chart-new-main-apm.png": {
     "width": 1200,
-    "height": 1039
+    "height": 1007
   },
   "metrics-chart-new-main-db-en.png": {
     "width": 1200,
-    "height": 1006
+    "height": 1101
   },
   "metrics-chart-new-main-db-ja.png": {
     "width": 1200,
-    "height": 1006
+    "height": 1101
   },
   "metrics-chart-new-main-db.png": {
     "width": 1200,
@@ -14572,16 +14864,16 @@
     "height": 270
   },
   "metrics-chart-new-select-metrics-en.png": {
-    "width": 1200,
-    "height": 457
+    "width": 1201,
+    "height": 440
   },
   "metrics-chart-new-select-metrics-ja.png": {
-    "width": 1200,
+    "width": 1201,
     "height": 450
   },
   "metrics-chart-new-select-metrics.png": {
     "width": 1201,
-    "height": 441
+    "height": 440
   },
   "metrics-chart-new-set-custom-time-en.png": {
     "width": 600,
@@ -14625,11 +14917,11 @@
   },
   "metrics-chart-new-size-widget-ja.png": {
     "width": 1200,
-    "height": 515
+    "height": 514
   },
   "metrics-chart-new-size-widget.png": {
     "width": 1200,
-    "height": 515
+    "height": 506
   },
   "metrics-chart-server-en.png": {
     "width": 1227,
@@ -16743,6 +17035,10 @@
     "width": 180,
     "height": 158
   },
+  "db-dbtrendcompare-release.png": {
+    "width": 600,
+    "height": 200
+  },
   "hitmap-button-after.png": {
     "width": 524,
     "height": 190
@@ -16758,6 +17054,14 @@
   "interval-option-before.png": {
     "width": 527,
     "height": 228
+  },
+  "java-2-246-release-1.png": {
+    "width": 1200,
+    "height": 734
+  },
+  "java-2-246-release.png": {
+    "width": 1200,
+    "height": 281
   },
   "k8s-container-map-log-category-sort-change.png": {
     "width": 293,
@@ -16826,6 +17130,10 @@
   "release-container-list-column-change.png": {
     "width": 400,
     "height": 453
+  },
+  "release-db-activesesseion-table.png": {
+    "width": 1200,
+    "height": 426
   },
   "release-db-object-details-db-size.png": {
     "width": 1200,
@@ -16914,6 +17222,10 @@
   "release-real-time-alert-changed.png": {
     "width": 667,
     "height": 154
+  },
+  "release-timeselector.png": {
+    "width": 1200,
+    "height": 619
   },
   "release-trace-analysis-filter-changes.png": {
     "width": 1000,
@@ -17587,6 +17899,30 @@
     "width": 800,
     "height": 803
   },
+  "server-inventory-csv-error-en.png": {
+    "width": 1200,
+    "height": 426
+  },
+  "server-inventory-csv-error-ja.png": {
+    "width": 1200,
+    "height": 409
+  },
+  "server-inventory-csv-error.png": {
+    "width": 1200,
+    "height": 444
+  },
+  "server-inventory-csv-preview-en.png": {
+    "width": 1200,
+    "height": 563
+  },
+  "server-inventory-csv-preview-ja.png": {
+    "width": 1200,
+    "height": 563
+  },
+  "server-inventory-csv-preview.png": {
+    "width": 1200,
+    "height": 559
+  },
   "server-inventory-custom-cl-ex.png": {
     "width": 1208,
     "height": 500
@@ -18033,11 +18369,11 @@
   },
   "set-event-abnormal-en.png": {
     "width": 1200,
-    "height": 648
+    "height": 650
   },
   "set-event-abnormal-ja.png": {
     "width": 1200,
-    "height": 561
+    "height": 559
   },
   "set-event-abnormal.png": {
     "width": 1200,
@@ -18498,6 +18834,30 @@
   "telegraf-sync-structure.png": {
     "width": 1200,
     "height": 625
+  },
+  "telegram-set-smart-ai-message-en.png": {
+    "width": 1200,
+    "height": 158
+  },
+  "telegram-set-smart-ai-message-ja.png": {
+    "width": 1200,
+    "height": 148
+  },
+  "telegram-set-smart-ai-message.png": {
+    "width": 1200,
+    "height": 137
+  },
+  "telegram-smart-ai-message-en.png": {
+    "width": 961,
+    "height": 368
+  },
+  "telegram-smart-ai-message-ja.png": {
+    "width": 961,
+    "height": 368
+  },
+  "telegram-smart-ai-message.png": {
+    "width": 961,
+    "height": 364
   },
   "temp-resourcemap.png": {
     "width": 506,
@@ -19149,7 +19509,7 @@
   },
   "url-check-region-ip-en.png": {
     "width": 600,
-    "height": 174
+    "height": 175
   },
   "url-check-region-ip-ja.png": {
     "width": 600,
@@ -19157,7 +19517,7 @@
   },
   "url-check-region-ip.png": {
     "width": 600,
-    "height": 154
+    "height": 162
   },
   "url-error-type-en.png": {
     "width": 1200,
@@ -19177,15 +19537,15 @@
   },
   "url-event-history-en.png": {
     "width": 1200,
-    "height": 674
+    "height": 430
   },
   "url-event-history-ja.png": {
     "width": 1200,
-    "height": 730
+    "height": 433
   },
   "url-event-history.png": {
-    "width": 1201,
-    "height": 730
+    "width": 1200,
+    "height": 430
   },
   "url-event-ja.png": {
     "width": 1200,
@@ -19209,7 +19569,7 @@
   },
   "url-input-field-en.png": {
     "width": 600,
-    "height": 818
+    "height": 819
   },
   "url-input-field-ja.png": {
     "width": 600,
@@ -19293,15 +19653,15 @@
   },
   "whatap-docs-upper-en.png": {
     "width": 1200,
-    "height": 79
+    "height": 66
   },
   "whatap-docs-upper-ja.png": {
     "width": 1200,
-    "height": 80
+    "height": 59
   },
   "whatap-docs-upper.png": {
     "width": 1200,
-    "height": 80
+    "height": 65
   },
   "whatap-forwarder-subnet.png": {
     "width": 1966,
