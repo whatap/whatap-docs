@@ -1,3 +1,65 @@
+- <code class='changelog-overview'>공통</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> 개별 메뉴에서 시간 선택자(타임 셀렉터)의 컴포넌트 교체
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에서 <span class="uitext">해소된 알림</span> 옵션에 대한 설명 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 수신 설정</span> 메뉴에서 알림 메시지를 AI를 통해 사용자 친화적인 내용으로 전송할 수 있는 <span class="uitext">Smart 메시지 (AI)</span> 옵션 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">Flex 보드</span> 또는 <span class="uitext">통합 Flex 보드</span> 메뉴의 <span class="uitext">알림 목록</span> 위젯에 다음 기능 추가
+    - <Cmdname sid="ITM08413" className="uitext" /> 옵션 추가
+    - 대시보드에 설정된 시간과 별개로 조회 시간을 선택할 수 있는 옵션 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">메트릭스 차트</span> <code class="newfunc">New</code> 메뉴에서 다음 기능 추가
+    - 대시보드의 위젯 범례 표시 여부에 따라 다른 UI 노출
+    - 위젯의 범례 필터링 기능
+    - 위젯의 범례에 마우스 오버 시 해당하는 차트 라인 하이라이팅 기능
+    - 차트 라인이 많을 때, 그래프의 컬러가 흐려지지 않도록 처리
+
+- <code class='changelog-overview'>Application</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">테이블 뷰</span> 탭에서 SQL 상세 정보 확인 시 바인드 변수 복사 기능 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">통계</span> &gt; <span class="uitext">트랜잭션</span> 메뉴에서 여러 개의 트랜잭션을 선택해 상세 정보를 확인할 수 있는 <span class="uitext">추이 비교</span> 기능 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">경고 알림</span> &gt; <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에서 애플리케이션의 <span class="uitext">에이전트 중복 알림</span> 옵션 추가
+
+- <code class='changelog-overview'>Server</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 인벤토리</span> 메뉴에서 CSV 파일을 업로드해 서버 목록의 사용자 정의 컬럼을 교체하는 기능 추가
+
+- <code class='changelog-overview'>Kubernetes</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">Ingress 목록</span> 메뉴의 상세 정보에 애플리케이션 정보 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">etcd 대시보드</span> 메뉴에 안내 메시지 모달 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">etcd 대시보드</span> 메뉴를 진입하면 설치한 에이전트 버전이 지원 버전보다 낮을 경우 업데이트 안내 화면 표시하는 기능 추가
+  - <code class="Feature" type="1">Feature</code> 다음 메뉴 경로의 <span class="uitext">상세</span> 창에서 각 메뉴로 이동할 수 있는 링크를 리소스 목록에 추가
+    - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeTimeline" className="uitext" />
+    - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_ingressList" className="uitext" />
+  - <code class="Feature" type="1">Feature</code> 다음 메뉴 경로의 상세 정보에서 제공하는 <span class="uitext">노드 구성</span> 탭의 CPU, 메모리, 디스크의 total 값 추가
+    - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_nodeMap" className="uitext" />
+    - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />
+    - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeTimeline" className="uitext" />
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+<br/><code class='changelog-overview2'>공통</code>
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 업데이트</span> 메뉴에서 사용자가 에이전트를 업데이트하면 <span class="uitext">사용자 행위</span> 메뉴에서 확인할 수 있는 기능 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">실험실</span> &gt; <span class="uitext">스크립트 매니저</span> 메뉴에서 사용자가 SQL 실행 시 <span class="uitext">사용자 행위</span> 메뉴에서 확인할 수 있는 기능 추가
+  - <code class="Feature" type="1">Feature</code> 다음 메뉴 경로의 <span class="uitext">액티브 세션</span> 테이블에 페이지네이션 적용
+    - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+    - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+<br/><code class='changelog-overview2'>Database V2</code>
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴의 사용자 정의 위젯에 선택한 지표의 단위를 표시하도록 추가
+  - <code class="Feature" type="1">Feature</code> APM 프로젝트의 <span class="uitext">트레이스 분석</span> 창에서 복사한 바인드 변수 값을 <span class="uitext">연계 데이터베이스 정보</span> 창에서 붙여 넣는 버튼 추가
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+<br/><code class='changelog-overview2'>Oracle, Oracle Pro</code>
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴의 <span class="uitext">SQL 상세</span> 창에 액티브 세션 정보 추가
+  - <code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">SQL 분석</span> 메뉴의 <span class="uitext">필터</span> 옵션에 <code>object_name</code> 조건 추가
+
+- <code class='changelog-overview'>Browser</code>
+<code class='changelog-date'>2024년 12월 24일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_12_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.12.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> 리소스별 성능 데이터를 시각적으로 제공하며, 로드 시간, 리소스 크기, 유형별 성능 추이 등을 분석할 수 있는 <span class="uitext">리소스 로드 통계</span> 메뉴 추가
+
 - <code class='changelog-overview'>Application</code>
 <code class='changelog-date'>2024년 12월 04일</code> <code class='changelog-service'><a href="https://docs.whatap.io/release-notes/service/service-2_11_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.11.4​</a></code>
   - <code class="Feature" type="1">Feature</code> <span class="uitext">트레이스 분석</span> 창의 <span class="uitext">SQL 요약</span>, <span class="uitext">HTTP Call 요약</span>, <span class="uitext">메소드 요약</span>, <span class="uitext">액티브 스택</span> 탭에서 텍스트 다운로드 기능 추가
