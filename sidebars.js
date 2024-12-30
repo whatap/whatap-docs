@@ -4323,7 +4323,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -4332,7 +4332,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_9_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_8_2',
                 'release-notes/php/php-2_8_1',
@@ -4472,9 +4472,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_7_4',
+                  id: 'release-notes/server/server-2_7_5',
                   className: 'new',
                 },
+                'release-notes/server/server-2_7_4',
                 'release-notes/server/server-2_7_3',
                 'release-notes/server/server-2_7_2',
                 'release-notes/server/server-2_7_1',
@@ -4483,8 +4484,6 @@ const sidebars = {
                 'release-notes/server/server-2_6_8',
                 'release-notes/server/server-2_6_7',
                 'release-notes/server/server-2_6_6',
-                'release-notes/server/server-2_6_5',
-                'release-notes/server/server-2_6_4',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4493,7 +4492,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4502,7 +4501,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_3_7',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-aix/server-aix-1_3_6',
                 'release-notes/server-aix/server-aix-1_3_5',
@@ -4535,7 +4534,7 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-hpux/index'
@@ -4544,7 +4543,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-hpux/server-hpux-1_3_7',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-hpux/server-hpux-1_3_6',
                 'release-notes/server-hpux/server-hpux-1_3_4',
@@ -4575,7 +4574,6 @@ const sidebars = {
                 'release-notes/k8s/k8s-1_7_11',
                 'release-notes/k8s/k8s-1_7_10',
                 'release-notes/k8s/k8s-1_7_9',
-                'release-notes/k8s/k8s-1_7_8',
                 'release-notes/k8s/k8s-previous',
               ],
             },
