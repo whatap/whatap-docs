@@ -5371,60 +5371,6 @@ const sidebars = {
       ]
     }
   ],
-  openapiSidebar: [
-    {
-      type: 'category',
-      label: 'Open API',
-      collapsible: false,
-      collapsed: false,
-      // description: 'Open API를 통해 수집 중인 모니터링 정보를 추출해 활용할 수 있습니다.',
-      link: {
-        type: 'doc',
-        id: 'openapi-old',
-      },
-      items: [
-        'apidoc/openapi-spec',
-        {
-          type: 'category',
-          label: 'Open API 호출',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'apidoc/openapi-call',
-          },
-          items: [
-            'apidoc/openapi-call-meta',
-            {
-              type: 'category',
-              label: 'Application',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'apidoc/openapi-call-apm-spot',
-                'apidoc/openapi-call-apm-stat-data',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Server',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                'apidoc/openapi-call-server-spot',
-                'apidoc/openapi-call-server-stat-data',
-              ],
-            },
-            'apidoc/openapi-call-db',
-            'apidoc/openapi-call-project-stat',
-            'apidoc/openapi-call-long-stat',
-            'apidoc/openapi-call-short-stat',
-          ]
-        },
-        'apidoc/openapi-mxql',
-      ]
-    },
-  ],
   awslogSidebar: [
     {
       type: 'category',
