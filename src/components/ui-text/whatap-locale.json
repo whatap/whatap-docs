@@ -48453,7 +48453,7 @@
   },
   "NTC08194": {
     "en": "An unknown error occurred. Please try again later.",
-    "ja": "不明なエラーが発生しました。しばらくしてからもう一度進めてください。",
+    "ja": "不明なエラーが発生しました。しばらくしてからもう一度お試しください。",
     "ko": "알 수 없는 오류가 발생했습니다. 잠시 후 다시 진행하세요.",
     "service_id": "NTC08194"
   },
@@ -52761,13 +52761,13 @@
   },
   "DSC08916": {
     "en": "This Pod has low overall resource usage, but <b>intermittently experiences high load on {resources}</b>. Consider optimizing resources or scaling strategies for peak times.",
-    "ja": "このポッドは全体的にリソース使用量が低くなりますが、<b>断続的に{resources}で高い負荷</b>が発生します。",
+    "ja": "このポッドは全体的にリソース使用量が低くなりますが、<b>断続的に{resources}で高い負荷</b>が発生します。ピーク時のリソース最適化またはスケーリング戦略を検討してください。",
     "ko": "이 Pod는 전반적으로 리소스 사용량이 낮지만, <b>간헐적으로 {resources}에서 높은 부하</b>가 발생합니다. 피크 타임에 대비한 리소스 최적화 또는 스케일링 전략을 고려하세요.",
     "service_id": "DSC08916"
   },
   "DSC08917": {
     "en": "This Pod has normal resource usage most of the time, but <b>intermittently encounters high load on {resources}</b>. Consider balancing resources and reviewing the scaleability.",
-    "ja": "このポッドはほとんどの時間にわたって一般的なリソース使用量を維持しますが、<b>断続的に{resources}で高い負荷</b>が発生し、スケーリング戦略を確認してください。",
+    "ja": "このポッドはほとんどの時間にわたって一般的なリソース使用量を維持しますが、<b>断続的に{resources}で高い負荷</b>が発生します。リソースのバランスをとり、スケーリング戦略を確認してください。",
     "ko": "이 Pod는 대부분의 시간 동안 일반적인 리소스 사용량을 유지하지만, <b>간헐적으로 {resources}에서 높은 부하</b>가 발생합니다. 리소스 균형을 유지하고 스케일링 전략을 검토하세요.",
     "service_id": "DSC08917"
   },
