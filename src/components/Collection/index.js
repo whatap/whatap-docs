@@ -7,8 +7,8 @@ const Collection = ({ docs }) => {
 
   return (
     <>
-      {docs.map(({ Component, props }, index) => (
-        <Component key={index} {...(props || {})} />
+      {docs.map(({ Topic, props }, index) => (
+        <Topic key={index} {...(props || {})} />
       ))}
     </>
   );
