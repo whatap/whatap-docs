@@ -218,7 +218,7 @@ const config = {
         },
         {
           name: 'google-site-verification',
-          content: 'nO_wrAffJ4zPi5ITqOMVr2q7i9lX_EdEi-T2EPv2jKs',
+          content: 'rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE',
         }
       ],
       blog: {
