@@ -3224,13 +3224,24 @@ main {
         }
       }
     }
-    .rum-compatibility {
+    .width--same-8 {
       table {
         tr {
           td {
-            width: 10%;
+            width: 8%;
+          }
+        }
+      }
+    }
+    .session-replay {
+      table {
+        tr {
+          td {
             &:first-of-type {
               width: 20%;
+            }
+            &:nth-of-type(2) {
+              width: 80%;
             }
           }
         }
