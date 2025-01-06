@@ -1,0 +1,294 @@
+{
+  "item.label.시작하기": {
+    "message": "はじめに",
+    "description": "Navbar item with label 시작하기"
+  },
+  "item.label.상품": {
+    "message": "サービス",
+    "description": "Navbar item with label 상품"
+  },
+  "item.label.Java 모니터링": {
+    "message": "Javaモニタリング",
+    "description": "Navbar item with label Java 모니터링"
+  },
+  "item.label.PHP 모니터링": {
+    "message": "PHPモニタリング",
+    "description": "Navbar item with label PHP 모니터링"
+  },
+  "item.label.Node.js 모니터링": {
+    "message": "Node.jsモニタリング",
+    "description": "Navbar item with label Node.js 모니터링"
+  },
+  "item.label.Python 모니터링": {
+    "message": "Pythonモニタリング",
+    "description": "Navbar item with label Python 모니터링"
+  },
+  "item.label..NET 모니터링": {
+    "message": ".NETモニタリング",
+    "description": "Navbar item with label .NET 모니터링"
+  },
+  "item.label.Server 모니터링": {
+    "message": "Serverモニタリング",
+    "description": "Navbar item with label Server 모니터링"
+  },
+  "item.label.Kubernetes 모니터링": {
+    "message": "Kubernetesモニタリング",
+    "description": "Navbar item with label Kubernetes 모니터링"
+  },
+  "item.label.PostgreSQL 모니터링": {
+    "message": "PostgreSQLモニタリング",
+    "description": "Navbar item with label PostgreSQL 모니터링"
+  },
+  "item.label.Oracle 모니터링": {
+    "message": "Oracleモニタリング",
+    "description": "Navbar item with label Oracle 모니터링"
+  },
+  "item.label.SQL Server 모니터링": {
+    "message": "SQL Serverモニタリング",
+    "description": "Navbar item with label SQL Server 모니터링"
+  },
+  "item.label.Tibero 모니터링": {
+    "message": "Tiberoモニタリング",
+    "description": "Navbar item with label Tibero 모니터링"
+  },
+  "item.label.CUBRID 모니터링": {
+    "message": "CUBRIDモニタリング",
+    "description": "Navbar item with label CUBRID 모니터링"
+  },
+  "item.label.Altibase 모니터링": {
+    "message": "Altibaseモニタリング",
+    "description": "Navbar item with label Altibase 모니터링"
+  },
+  "item.label.Redis 모니터링": {
+    "message": "Redisモニタリング",
+    "description": "Navbar item with label Redis 모니터링"
+  },
+  "item.label.MongoDB 모니터링": {
+    "message": "MongoDBモニタリング",
+    "description": "Navbar item with label MongoDB 모니터링"
+  },
+  "item.label.URL 모니터링": {
+    "message": "URLモニタリング",
+    "description": "Navbar item with label URL 모니터링"
+  },
+  "item.label.Amazon CloudWatch": {
+    "message": "Amazon CloudWatch",
+    "description": "Navbar item with label Amazon CloudWatch"
+  },
+  "item.label.Amazon ECS": {
+    "message": "Amazon ECS",
+    "description": "Navbar item with label Amazon ECS"
+  },
+  "item.label.Azure Monitor": {
+    "message": "Azure Monitor",
+    "description": "Navbar item with label Azure Monitor"
+  },
+  "item.label.Naver Cloud Monitoring": {
+    "message": "Naver Cloud Monitoring",
+    "description": "Navbar item with label Naver Cloud Monitoring"
+  },
+  "item.label.Oracle Cloud Monitor": {
+    "message": "Oracle Cloud Monitor",
+    "description": "Navbar item with label Oracle Cloud Monitor"
+  },
+  "item.label.Log 모니터링": {
+    "message": "Logモニタリング",
+    "description": "Navbar item with label Log 모니터링"
+  },
+  "item.label.확장 도구": {
+    "message": "拡張ツール",
+    "description": "Navbar item with label 확장 도구"
+  },
+  "item.label.관리 기능": {
+    "message": "管理機能",
+    "description": "Navbar item with label 관리 기능"
+  },
+  "item.label.릴리스 노트": {
+    "message": "リリースノート",
+    "description": "Navbar item with label 릴리스 노트"
+  },
+  "item.label.Java": {
+    "message": "Java",
+    "description": "Navbar item with label Java"
+  },
+  "item.label.PHP": {
+    "message": "PHP",
+    "description": "Navbar item with label PHP"
+  },
+  "item.label.Node.js": {
+    "message": "Node.js",
+    "description": "Navbar item with label Node.js"
+  },
+  "item.label.Python": {
+    "message": "Python",
+    "description": "Navbar item with label Python"
+  },
+  "item.label..NET": {
+    "message": ".NET",
+    "description": "Navbar item with label .NET"
+  },
+  "item.label.Server": {
+    "message": "Server",
+    "description": "Navbar item with label Server"
+  },
+  "item.label.Kubernetes": {
+    "message": "Kubernetes",
+    "description": "Navbar item with label Kubernetes"
+  },
+  "item.label.PostgreSQL": {
+    "message": "PostgreSQL",
+    "description": "Navbar item with label PostgreSQL"
+  },
+  "item.label.Oracle": {
+    "message": "Oracle",
+    "description": "Navbar item with label Oracle"
+  },
+  "item.label.MySQL": {
+    "message": "MySQL",
+    "description": "Navbar item with label MySQL"
+  },
+  "item.label.SQL Server": {
+    "message": "SQL Server",
+    "description": "Navbar item with label SQL Server"
+  },
+  "item.label.Tibero": {
+    "message": "Tibero",
+    "description": "Navbar item with label Tibero"
+  },
+  "item.label.CUBRID": {
+    "message": "CUBRID",
+    "description": "Navbar item with label CUBRID"
+  },
+  "item.label.Altibase": {
+    "message": "Altibase",
+    "description": "Navbar item with label Altibase"
+  },
+  "item.label.Redis": {
+    "message": "Redis",
+    "description": "Navbar item with label Redis"
+  },
+  "item.label.MongoDB": {
+    "message": "MongoDB",
+    "description": "Navbar item with label MongoDB"
+  },
+  "item.label.URL": {
+    "message": "URL",
+    "description": "Navbar item with label URL"
+  },
+  "item.label.Log": {
+    "message": "Log",
+    "description": "Navbar item with label Log"
+  },
+  "item.label.Extensions": {
+    "message": "Extensions",
+    "description": "Navbar item with label Extensions"
+  },
+  "logo.alt": {
+    "message": "WhaTap Docs",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Browser": {
+    "message": "Browser",
+    "description": "Navbar item with label Browser"
+  },
+  "item.label.라이선스": {
+    "message": "ライセンス",
+    "description": "Navbar item with label 라이선스"
+  },
+  "item.label.AWS Log": {
+    "message": "AWS Log",
+    "description": "Navbar item with label AWS Log"
+  },
+  "item.label.Go 모니터링": {
+    "message": "Goモニタリング",
+    "description": "Navbar item with label Go 모니터링"
+  },
+  "item.label.Go": {
+    "message": "Go",
+    "description": "Navbar item with label Go"
+  },
+  "item.label.NPM": {
+    "message": "NPM",
+    "description": "Navbar item with label NPM"
+  },
+  "item.label.Open API": {
+    "message": "Open API",
+    "description": "Navbar item with label Open API"
+  },
+  "item.label.Network Performance Monitoring": {
+    "message": "Network Performance Monitoring",
+    "description": "Navbar item with label Network Performance Monitoring"
+  },
+  "item.label.학습하기": {
+    "message": "WhaTap活用",
+    "description": "Navbar item with label 학습하기"
+  },
+  "item.label.OpenTelemetry": {
+    "message": "OpenTelemetry",
+    "description": "Navbar item with label OpenTelemetry"
+  },
+  "item.label.MySQL 모니터링": {
+    "message": "MySQLモニタリング",
+    "description": "Navbar item with label MySQL 모니터링"
+  },
+  "item.label.새로운 기능": {
+    "message": "新しい機能",
+    "description": "Navbar item with label 새로운 기능"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Feature Project": {
+    "message": "Feature Project",
+    "description": "Navbar item with label Feature Project"
+  },
+  "item.label.Oracle V1 모니터링": {
+    "message": "Oracle V1モニタリング",
+    "description": "Navbar item with label Oracle V1 모니터링"
+  },
+  "item.label.Oracle V2 모니터링": {
+    "message": "Oracle V2モニタリング",
+    "description": "Navbar item with label Oracle V2 모니터링"
+  },
+  "item.label.Oracle Pro 모니터링": {
+    "message": "Oracle Proモニタリング",
+    "description": "Navbar item with label Oracle Pro 모니터링"
+  },
+  "item.label.Oracle Pro": {
+    "message": "Oracle Pro",
+    "description": "Navbar item with label Oracle Pro"
+  },
+  "item.label.SQL Server V2 모니터링": {
+    "message": "SQL Server V2モニタリング",
+    "description": "Navbar item with label SQL Server V2 모니터링"
+  },
+  "item.label.SQL Server V1 모니터링": {
+    "message": "SQL Server V1モニタリング",
+    "description": "Navbar item with label SQL Server V1 모니터링"
+  },
+  "item.label.CUBRID V2 모니터링": {
+    "message": "CUBRID V2モニタリング",
+    "description": "Navbar item with label CUBRID V2 모니터링"
+  },
+  "item.label.CUBRID V1 모니터링": {
+    "message": "CUBRID V1モニタリング",
+    "description": "Navbar item with label CUBRID V1 모니터링"
+  },
+  "item.label.Altibase V2 모니터링": {
+    "message": "Altibase V2 モニタリング",
+    "description": "Navbar item with label Altibase V2 모니터링"
+  },
+  "item.label.Altibase V1 모니터링": {
+    "message": "Altibase V1 モニタリング",
+    "description": "Navbar item with label Altibase V1 모니터링"
+  },
+  "item.label.Learning": {
+    "message": "Learning",
+    "description": "Navbar item with label Learning"
+  },
+  "item.label.What's New": {
+    "message": "What's New",
+    "description": "Navbar item with label What's New"
+  }
+}

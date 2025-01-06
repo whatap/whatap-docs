@@ -1,0 +1,73 @@
+---
+id: set-agent
+title: 設定
+description: Goエージェントの基本設定の方法を提供します。
+keywords:
+  - Go
+  - 設定
+---
+
+WhaTapエージェントは、エージェントごとに必要な設定を_whatap.conf_ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
+
+別な設定がない場合、エージェントのパスを_whatap.conf_ファイルに実装しました。5秒ごとに、_whatap.conf_ファイルをチェックしてリロードします。
+
+ユーザーの利便性を高めるために、[WhaTapモニタリングサービス](https://service.whatap.io/)は、エージェント設定機能を提供します。
+
+{/_서비스 화면에서 에이전트 설정하기 start_/}
+
+## サービス画面でエージェントを設定する{#set-agent-service}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />
+
+import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
+
+<Desc name='whatap.conf'/>
+
+{/_Notes_/}
+import Setagentinservicedescnotes from "../common-items/_set-agent-in-service-desc-notes.mdx";
+
+<Setagentinservicedescnotes />
+
+{/_옵션추가하기_/}
+import Setagentinserviceaddoptions from "../common-items/_set-agent-in-service-add-options.mdx";
+
+<Setagentinserviceaddoptions />
+
+{/_옵션 수정 또는 삭제 _/}
+import Setagentinservicemodifyoptions from "../common-items/_set-agent-in-service-modify-options.mdx";
+
+<Setagentinservicemodifyoptions />
+
+{/_ 여러에이전트 동시 적용 _/}
+import Setagentinservicemuliagent from "../common-items/_set-agent-in-service-muli-agent.mdx";
+
+<Setagentinservicemuliagent />
+
+{/_ 에이전트 기본값 적용 _/}
+import Setagentinserviceapplydafaultdesc from "../common-items/_set-agent-in-service-apply-dafault-desc.mdx";
+
+<Setagentinserviceapplydafaultdesc />
+
+import DefaultItems from '../common-items/_import_set-agent-in-service-default-item.mdx';
+
+<DefaultItems name='whatap.conf'/>
+
+{/_Notes_/}
+import Setagentinservicedefaultnotes from "../common-items/_set-agent-in-service-default-notes.mdx";
+
+<Setagentinservicedefaultnotes />
+
+{/_설정 공유하기_/}
+import Setagentsharing from "../common-items/_set-agent-sharing.mdx";
+
+<Setagentsharing />
+
+{/_서비스 화면에서 에이전트 설정하기 end_/}
+
+## エージェント設定オプションの案内
+
+次のリンクは、設定できるオプションについて説明します。
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList/>

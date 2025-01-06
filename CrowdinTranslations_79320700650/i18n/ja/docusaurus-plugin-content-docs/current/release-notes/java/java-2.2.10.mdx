@@ -1,0 +1,51 @@
+---
+id: java-2_2_10
+title: Java Agent v2.2.10
+toc_max_heading_level: 2
+displayed_sidebar: releaseSidebar
+---
+
+2023年6月29日
+
+## 新機能 <sup><Status>New</Status></sup>
+
+- Apache HttpClient5追跡
+
+- logback-1.2.8追跡
+
+  ```ini title='whatap.conf'
+  # 既定値 
+  # 適用方法
+  weaving=logback-1.2.8
+
+  # logbackで収集するerror_stack長さ
+  logback_stack_depth=50
+
+  # コンソールログの収集有無
+  logback_save_console_enabled=true
+
+  # appenderログの収集有無
+  logback_save_appender_enabled=false
+
+  # 特定appnederログのみを収集したい場合、区切り文字はコンマ(,)
+  logback_save_appender_set=fileLogback,errorLogback,consoleLogback
+  ```
+
+  :::note
+
+  全体のappenderを収集する場合、`logback_save_appender_set`設定は不要です。
+
+  :::
+
+- Ribbon追跡
+
+  ```ini title='whatap.conf'
+  #適用
+  weaving=ribbon
+  ```
+
+## バグ修正 <sup><Status>Fixed</Status></sup>
+
+- weblogic-10.3、tomcat 6 のトランザクション追跡時にエラーが発生しないように修正
+
+- アプリケーションのTPSが500を超える場合、関連する追跡IDの発行率が増加しないように修正

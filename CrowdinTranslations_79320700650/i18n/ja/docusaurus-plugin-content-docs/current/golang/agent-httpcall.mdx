@@ -1,0 +1,25 @@
+---
+id: agent-httpcall
+title: HTTPC, API Call
+description: PHPエージェントのHTTPC、API Call関連のオプションを提供します。
+keywords:
+  - Go
+  - HTTP呼出し
+  - API Call
+---
+
+- **trace_httpc_normalize_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  トランザクション内のHTTPC URLをパーシング及び正規化する機能を有効にします。
+
+- **trace_httpc_normalize_urls** <span class='type'>String</span>
+
+  正規化するHTTPC URLパターンを定義します。呼び出しURLパターンをパーシングして、パスパラメータを削除します。
+
+  :::note
+
+  例）`/a/{v}/b`と宣言すると、`a/123/b` → `a/{v}/b`に置き換えます。複数を登録する場合は、コンマ(,)を区切り文字として使用します。 置換パターンをクリーンアップした後、補足する必要があります。
+
+  :::
