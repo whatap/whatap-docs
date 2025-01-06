@@ -114,7 +114,7 @@ const config = {
   ],
   presets: [
     [
-      '@docusaurus/plugin-content-docs',
+      '@docusaurus/preset-classic',
       {
         docs: {
           routeBasePath: '/',
