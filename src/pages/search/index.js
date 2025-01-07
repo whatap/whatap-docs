@@ -45,6 +45,7 @@ export default function App() {
             <div key={hit.id}>
                 <Link to={durl} target="_blank">
                     <h3>{title[0]}</h3>
+                    {/* 문서 경로를 표시하는 단계 */}
                     <div className='hit-breadcrums'>
                         <div className="hit-name lvl0">
                             <Highlight attribute="hierarchy_lvl0" hit={hit} />
@@ -96,7 +97,7 @@ export default function App() {
                 })}
             </h1>
             <InstantSearch 
-                indexName="whatap" 
+                indexName="whatap" // 문서 인덱스 이름
                 searchClient={searchClient}
                 routing={true}
                 future={{
@@ -119,7 +120,7 @@ export default function App() {
                         attributesToSnippet={['description:20']}
                         snippetEllipsisText={'...'}
                         filters={`lang=${lang} AND hierarchy_lvl0!=Documentation`}
-                        // filters={`lang=${lang}`} 필터를 통해 현재 페이지의 언어와 카테고리가 분류되지 않은 문서는 출력하지 않음
+                        // 필터를 통해 현재 페이지의 언어와 카테고리가 분류되지 않은 문서는 출력하지 않음
                     />
                     <Stats />
                 </div>
