@@ -20,10 +20,11 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function App() {
     const { i18n: {currentLocale} } = useDocusaurusContext();
-    const lang = currentLocale;
+    const lang = currentLocale; // 현재 페이지의 언어를 호출
 
-    const docsURL = "https://docs.whatap.io";
+    const docsURL = "https://docs.whatap.io"; // 문서 URL
 
+    // MeiliSearch 클라이언트 설정
     const { searchClient } = instantMeiliSearch(
         'https://meilsearch.whatap.io',
         'dgoMBc2t6fVzILDGqhh63uBXACGOmJbKNnE_Xv8_Hqk',
@@ -34,6 +35,7 @@ export default function App() {
     );
     
     const Hit = ({ hit }) => {
+        // 검색 결과 데이터 셋으로부터 문서 경로를 만드는 함수
         const titles = [ hit.hierarchy_radio_lvl0, hit.hierarchy_radio_lvl1, hit.hierarchy_radio_lvl2, hit.hierarchy_radio_lvl3, hit.hierarchy_radio_lvl4, hit.hierarchy_radio_lvl5 ];
         const title = titles.filter(
             (element, i) => element !== null
@@ -104,18 +106,20 @@ export default function App() {
                 <div className="left-panel">
                     <ClearRefinements />
                     <h2>Category</h2>
+                    {/* 문서 카테고리를 표시하는 모듈 */}
                     <RefinementList 
                         searchable
                         attribute="hierarchy_lvl0" 
                         limit="50"
                         // transformItems={transformItems}
                     />
+                    {/* 문서 검색 결과를 표시하는 모듈 */}
                     <Configure
                         hitsPerPage={20}
                         attributesToSnippet={['description:20']}
                         snippetEllipsisText={'...'}
                         filters={`lang=${lang} AND hierarchy_lvl0!=Documentation`}
-                        // filters={`lang=${lang}`}
+                        // filters={`lang=${lang}`} 필터를 통해 현재 페이지의 언어와 카테고리가 분류되지 않은 문서는 출력하지 않음
                     />
                     <Stats />
                 </div>
