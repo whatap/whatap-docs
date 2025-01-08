@@ -4515,7 +4515,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4523,9 +4523,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_3_6',
-                  // className: 'new'
+                  id: 'release-notes/server-solaris/server-solaris-1_3_7',
+                  className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_3_6',
                 'release-notes/server-solaris/server-solaris-1_3_5',
                 'release-notes/server-solaris/server-solaris-1_3_4',
               ],
