@@ -1852,7 +1852,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-정식-�출시"><code>Go</code> 정식 출시<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#go-%EC%A0%95%EC%8B%9D-%EC%B6%9C%EC%8B%9C" class="hash-link" aria-label="go-정식-출시에 대한 직접 링크" title="go-정식-출시에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-정식-출시"><code>Go</code> 정식 출시<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#go-%EC%A0%95%EC%8B%9D-%EC%B6%9C%EC%8B%9C" class="hash-link" aria-label="go-정식-출시에 대한 직접 링크" title="go-정식-출시에 대한 직접 링크">​</a></h3>
 <p><code>Go</code> 애플리케이션 모니터링이 베타 버전 종료 후 <strong>정식</strong> 서비스를 시작했습니다. 와탭의 <code>Go</code> 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-메뉴-개선">공통 메뉴 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EA%B3%B5%ED%86%B5-%EB%A9%94%EB%89%B4-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="공통 메뉴 개선에 대한 직접 링크" title="공통 메뉴 개선에 대한 직접 링크">​</a></h3>
 <p><span class="uitext">통계</span>와 <span class="uitext">인스턴스 성능 관리</span> 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 동선과 안정성 향상을 위한 개선 작업이 이루어졌습니다.</p>
@@ -1865,7 +1865,7 @@
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/changelog/changelog-app-tx-map.png" alt="sc" class="changelog-img" width="1142" height="761"></p>
 <p>또한 응답 시간 분포도 차트에서 선택한 항목만을 조회할 수 있는 <strong>커스텀 필터</strong> 기능을 새롭게 제공합니다. 기존 <em><strong>TOP 30</strong></em> 섹션 옆의 <span class="uitext">커스텀</span> 탭에서 조회를 원하는 특정 트랜잭션, 도메인, IP 항목에서 원하는 값을 직접 입력하거나 <em><strong>TOP 30</strong></em> 목록에서 제공하는 항목을 선택하세요. 선택한 항목들의 응답 시간 분포도가 차트에 실시간으로 필터링됩니다.</p>
 <p align="center"></p><p><img decoding="async" loading="lazy" alt="트랜잭션 맵 커스텀 필터 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-app-trs-map-f8697673ccb5a5e11ecb2cbc60f1598c.gif" width="1627" height="942" class="img_ev3q"></p><p></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션-대시보드-프리셋">애플리케이션 대시보드 프리셋<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%94%84%EB%A6%AC%EC%85%8B" class="hash-link" aria-label="애플리케이션 대시보드 프리셋에 대한 직접 링크" title="애플리케이션 대시��보드 프리셋에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션-대시보드-프리셋">애플리케이션 대시보드 프리셋<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%94%84%EB%A6%AC%EC%85%8B" class="hash-link" aria-label="애플리케이션 대시보드 프리셋에 대한 직접 링크" title="애플리케이션 대시보드 프리�셋에 대한 직접 링크">​</a></h3>
 <p><span class="uitext">애플리케이션 대시보드</span> 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 <span class="uitext">기본으로 표시</span> 옵션을 활용해 보세요. 기본으로 지정한 대시보드는 프리셋 목록에서 <code class="default-tag">기본</code> 태그가 표시됩니다.</p>
 <p><img decoding="async" loading="lazy" alt="애플리케이션 대시보드 기본 프리셋 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-app-preset-396ec7afa5ede6de8e3df27c48c20156.png" width="1234" height="725" class="img_ev3q"></p>
 <!-- -->
@@ -1900,7 +1900,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%EF%BF%BD%EF%BF%BD%ED%99%95%EB%8C%80-%EB%B0%8F-%EC%84%A4%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%ED%99%95%EB%8C%80-%EB%B0%8F-%EC%84%A4%EF%BF%BD%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
 <p>와탭은 <strong>Unix</strong> <code>AIX</code>, <code>Solaris</code>, <code>HP-UX</code> 설치 패키지를 제공합니다. 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다.</p>
 <ul>
 <li>
@@ -4148,7 +4148,7 @@
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링��크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알람 원복을 위한 stateful 추가</li>
 </ul>
@@ -4868,7 +4868,7 @@
 <ul>
 <li><code class="Feature">Feature</code> <span class="uitext">통합 보고서</span> 메뉴에서 일간 타입 보고서의 시간 선택 제한 수정 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-1_104_x">Service 1.104.00</a></code></li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="�관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="관리">관리​<a href="https://docs.whatap.io/whatap-docs/blog/2023-3q-summary#%EA%B4%80%EB%A6%AC" class="hash-link" aria-label="관리​에 대한 직접 링크" title="관리​에 대한 직접 링크">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">계정 정보 관리</span> &gt; <span class="uitext">사용자 전화번호</span>, <span class="uitext">알림 수신 설정</span> 메뉴에서 <b>WhatsApp</b> 알림 설정 추가 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/service/service-1_104_x">Service 1.104.00</a></code></p>
