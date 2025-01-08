@@ -85,8 +85,8 @@ crowdin download -b main -l en-US
 - &amp;gt; -> &gt;
 - ~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&*()_+=-[]`
 - <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
-- ${Tag} -> &#36;&#123;Tag&#125;
-- ${Field} -> &#36;&#123;Field&#125;
+- <code>${Tag}</code> -> <code>&#36;&#123;Tag&#125;</code>
+- <code>${Field}</code> -> <code>&#36;&#123;Field&#125;</code>
 - {user_id} -> \{user_id\} (install-agent-quick-setup.mdx 파일에서도 확인해볼것)
 - {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}
 - e.g. _kubernetes_container_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes_container_images\_\{pcode\}\_\{timestamp\}.csv_
