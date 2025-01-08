@@ -1867,7 +1867,7 @@
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/changelog/changelog-app-tx-map.png" alt="sc" class="changelog-img" width="1142" height="761"></p>
 <p>또한 응답 시간 분포도 차트에서 선택한 항목만을 조회할 수 있는 <strong>커스텀 필터</strong> 기능을 새롭게 제공합니다. 기존 <em><strong>TOP 30</strong></em> 섹션 옆의 <span class="uitext">커스텀</span> 탭에서 조회를 원하는 특정 트랜잭션, 도메인, IP 항목에서 원하는 값을 직접 입력하거나 <em><strong>TOP 30</strong></em> 목록에서 제공하는 항목을 선택하세요. 선택한 항목들의 응답 시간 분포도가 차트에 실시간으로 필터링됩니다.</p>
 <p align="center"></p><p><img decoding="async" loading="lazy" alt="트랜잭션 맵 커스텀 필터 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-app-trs-map-f8697673ccb5a5e11ecb2cbc60f1598c.gif" width="1627" height="942" class="img_ev3q"></p><p></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션-대시보드-프리셋">애플리케이션 대시보드 프리셋<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%94%84%EB%A6%AC%EC%85%8B" class="hash-link" aria-label="애플리케이션 대시보드 프리셋에 대한 직접 링크" title="애플리케이션 대시보드 프리�셋에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="애플리케이션-대시보드-프리셋">애플리케이션 대시보드 프리셋<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%94%84%EB%A6%AC%EC%85%8B" class="hash-link" aria-label="애플리케이션 대시보드 프리셋에 대한 직접 링크" title="애플리케이션 대시보드 프�리셋에 대한 직접 링크">​</a></h3>
 <p><span class="uitext">애플리케이션 대시보드</span> 메뉴로 처음 진입했을 때 조회할 수 있는 대시보드 기본 프리셋을 변경할 수 있습니다. 선호하는 대시보드 구성을 기본 프리셋으로 설정함으로써 보다 개인화된 사용자 경험을 제공합니다. 위젯 선택과 배치를 원하는대로 수정 후 대시보드 오른쪽 위에 있는 프리셋 선택 상자에서 <span class="uitext">기본으로 표시</span> 옵션을 활용해 보세요. 기본으로 지정한 대시보드는 프리셋 목록에서 <code class="default-tag">기본</code> 태그가 표시됩니다.</p>
 <p><img decoding="async" loading="lazy" alt="애플리케이션 대시보드 기본 프리셋 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-app-preset-396ec7afa5ede6de8e3df27c48c20156.png" width="1234" height="725" class="img_ev3q"></p>
 <!-- -->
@@ -1902,7 +1902,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%ED%99%95%EB%8C%80-%EB%B0%8F-%EC%84%A4%EF%BF%BD%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%ED%99%95%EB%8C%80-%EB%B0%8F-%EF%BF%BD%EC%84%A4%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
 <p>와탭은 <strong>Unix</strong> <code>AIX</code>, <code>Solaris</code>, <code>HP-UX</code> 설치 패키지를 제공합니다. 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다.</p>
 <ul>
 <li>
@@ -2046,7 +2046,7 @@
 <p>또한 새롭게 추가된 <span class="uitext">쿠버네티스 에이전트 목록</span>에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pod-시작-분석과-오브젝트-매니페스트">Pod 시작 분석과 오브젝트 매니페스트<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pod-%EC%8B%9C%EC%9E%91-%EB%B6%84%EC%84%9D%EA%B3%BC-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EB%A7%A4%EB%8B%88%ED%8E%98%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크" title="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크">​</a></h3>
 <p>기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 <span class="uitext">Pod 시작 분석</span>과 <span class="uitext">오브젝트 매니페스트</span> 기능을 제공합니다. <span class="uitext">Pod 시작 분석</span>은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. <span class="uitext">오브젝트 매니페스트</span>는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시작 분석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시작 분��석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
 <!-- -->
 <p>아울러 마스터 및 노드 에이전트 설치 시 기존 Yaml 파일 방식 외 운영 복잡도를 덜어줄 <strong>Helm</strong> 차트 설치 방식을 공식적으로 지원합니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pending-pod-현황">Pending Pod 현황<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pending-pod-%ED%98%84%ED%99%A9" class="hash-link" aria-label="Pending Pod 현황에 대한 직접 링크" title="Pending Pod 현황에 대한 직접 링크">​</a></h3>
