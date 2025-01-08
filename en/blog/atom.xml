@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.whatap.io/en/blog</id>
     <title>WhaTap Docs Blog</title>
-    <updated>2024-10-31T15:30:00.000Z</updated>
+    <updated>2024-12-24T19:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.whatap.io/en/blog"/>
     <subtitle>WhaTap Docs Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Service overview]]></title>
         <id>https://docs.whatap.io/en/blog/overview</id>
         <link href="https://docs.whatap.io/en/blog/overview"/>
-        <updated>2024-10-31T15:30:00.000Z</updated>
+        <updated>2024-12-24T19:30:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature Overview]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/en/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>Take a look at the overview of new features for the services provided by WhaTap at a glance.</p>
@@ -20,6 +20,254 @@
 <br>
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
+<li>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> Replaced components of the time selector in each individual menu.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Flex Board</span> or <span class="uitext">Integrated Flex Board</span>, added the following features in the <span class="uitext">Alert list</span> widget.<!-- -->
+<ul>
+<li>Added the <span class="uitext">View resolved events</span> option.</li>
+<li>Added the option to select a query time independent of the time set on the dashboard.</li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> Added the following features in <span class="uitext">Analysis</span> &gt; <span class="uitext">Metrics Chart</span> <code class="newfunc">New</code>.<!-- -->
+<ul>
+<li>Different UI display depending on whether the widget legend is to be shown on the dashboard</li>
+<li>Legend filtering of widgets</li>
+<li>Highlighting the chart line when hovering over the legend of the widget</li>
+<li>When there are many chart lines, provided the feature so that the graph color does not become blurred.</li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> <code class="newfunc">New</code>, added the description to the <span class="uitext">Resolved notification</span> option.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Notifications</span>, added the <span class="uitext">Smart message (AI)</span> option to send notification messages with user-friendly content via AI.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Application</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">Table view</span> tab of the <span class="uitext">Trace analysis</span> window, added the bind variable copying feature when checking the SQL information details.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Statistics</span> &gt; <span class="uitext">Transaction</span>, added the <span class="uitext">Trend comparison</span> feature that allows you to see the information details by selecting multiple transactions.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> <code class="newfunc">New</code>, added the <span class="uitext">Agent duplication alert</span> option for the application.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Server</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Server List</span> &gt; <span class="uitext">Server Inventory</span>, added the feature that replaces the custom columns in the server list by uploading a CSV file.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Kubernetes</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In the detailed information of the <span class="uitext">Cluster</span> &gt; <span class="uitext">Ingress List</span> menu, added the application information.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">etcd Dashboard</span>, added the guide message modal.</li>
+<li><code class="Feature" type="1">Feature</code> If the version of the installed agent is less than the supported version when the <span class="uitext">Cluster</span> &gt; <span class="uitext">etcd Dashboard</span> menu is entered, the display feature of the update guide screen has been added.</li>
+<li><code class="Feature" type="1">Feature</code> Added the link to the resource list in the <span class="uitext">Detail</span> window in the following menu paths:<!-- -->
+<ul>
+<li><span class="uitext">Cluster</span> &gt; <span class="uitext">Node Timeline</span></li>
+<li><span class="uitext">Cluster</span> &gt; <span class="uitext">Ingress List</span></li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">Node configuration</span> tab for the detailed information provided by the following menu path, added the total values for CPU, memory, and disk.<!-- -->
+<ul>
+<li><span class="uitext">Dashboard</span> &gt; <span class="uitext">Node Map</span></li>
+<li><span class="uitext">Cluster</span> &gt; <span class="uitext">Node List</span></li>
+<li><span class="uitext">Cluster</span> &gt; <span class="uitext">Node Timeline</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<br>
+<code class="changelog-overview2">Common</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> Provided the pagination feature in the <span class="uitext">Active sessions</span> table.<!-- -->
+<ul>
+<li><span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span></li>
+<li><span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span></li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> Added the feature to check the result from the <span class="uitext">User Behavior</span> menu when a user updated the agent in <span class="uitext">Management</span> &gt; <span class="uitext">Agent Update</span>.</li>
+<li><code class="Feature" type="1">Feature</code> Added the feature to check the result from the <span class="uitext">User Behavior</span> menu when a user executed SQLs in <span class="uitext">Laboratory</span> &gt; <span class="uitext">Script Manager</span>.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<br>
+<code class="changelog-overview2">Database V2</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span>, added the feature to display the unit for the metric selected in the custom widget.</li>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">Correlated DB information</span> window, added the button that pastes the bind variable value copied from the <span class="uitext">Trace analysis</span> window for the APM project.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<br>
+<code class="changelog-overview2">Oracle, Oracle Pro</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">SQL details</span> window of the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span> menu, added the active session information.</li>
+<li><code class="Feature" type="1">Feature</code> In the <span class="uitext">Filter</span> option of the <span class="uitext">Analysis</span> &gt; <span class="uitext">SQL Analysis</span> menu, added the condition, <code>object_name</code>.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Browser</code>
+<code class="changelog-date">2024-12-24</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Resource Load Statistics</span> menu to visually provide performance data for each resource and to analyze the load time, resource size, performance trends by type, and the like.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Server</code>
+<ul>
+<li><code class="New" type="1">New</code> Added the <span class="uitext">Server Inventory Map</span> menu that supports the clouds and enterprise on-premise infrastructure.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Kubernetes</code>
+<ul>
+<li><code class="New" type="1">New</code> Added the <span class="uitext">etcd Dashboard</span> menu to monitor the etcd component which plays a role of cluster status related data storage in the Kubernetes environment.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Database</code>
+<ul>
+<li><code class="New" type="1">New</code> Launched the <strong>SQL Server</strong> <code class="my">V2</code> service.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Release of new features</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Browser</code>
+<ul>
+<li><code class="New" type="1">New</code> Added the <span class="uitext">IP Load Statistics</span> menu that can analyze the statistics based on the IP address group.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> Added the No column in the table list of the <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> <code class="newfunc">New</code> menu.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event History</span>, provided the <span class="uitext">View only events in progress</span> feature.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Real-time Alert List</span>, added the CSV download feature.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">My Usage</span> &gt; <span class="uitext">Project Subscription Status</span>, added the billing unit summary for the entire project and individual projects.</li>
+<li><code class="Feature" type="1">Feature</code> On the <span class="uitext">Project list</span> screen, additionally provided the mouse hover style within the <img loading="lazy" src="https://docs.whatap.io/en/img/ic-setting.svg" alt="설정 아이콘" width="auto" height="auto"> configuration dropdown menu.</li>
+<li><code class="Feature" type="0">Feature</code> Added multilingual support for the WhaTap User Training Application form (Google Form).</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Application</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Multiple Transaction Trace</span>, added the feature to disable the <img decoding="async" loading="lazy" alt="Search icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NGYxMDZkYi1mOWQ1LTRkNWItYjg1Mi01N2E4OWQ4N2NiODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM0RjAyQzM1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM0RjAyQzI1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphMzM1ZWVmNC1mYjZhLTRkNzctOWI5MS0yZDViNTU2OTE4YTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRmMTA2ZGItZjlkNS00ZDViLWI4NTItNTdhODlkODdjYjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xFhE8QAAA2NJREFUeNrMl0tIVGEUx//fd2fm3nGaZHwkA+KjFylBWG5amG10GRGW9AKjRVFRCSJEQUPRokioNulCAhFsV2LiKogIwl7SoiyVsdJ8Vb5G5z3f1/luumk12lynw2WGy1zm/L7z+J9zmZRy4u1gIs/XEV78OC5g0xjostwSEojTR6mXw3fYcO3aok2y15/j83suL7rBgeI8bj4opfUwbOnAw5MCoOv5DVdAG8luvPR1RuqbCUSsAcTfluNmmA5J+MdFlA8Q2cZcjrhAWkz5Vf4VB3dQgUik15R/xcFV7mSaaZR/xcH/9U9SeRDbarpAUJ5HpgVkhO6X4pyZzZDjYogl1ghG04DpRYm5XxKHKm3YV26HywkMjAnc64nBPyxQULh6eUgahpOPnwGJBYrGk6sZ2LvDhukFIEhtWbWToa5Kx/nmEDpexFDs5dZGJhKTCISBRw1OE+Ts/RAePIubVWfYgYcXDbRecELjEh29CRR4Vt6lSR9hbFbi+G4NVWU2HL0dRHtXFN4sIN8D2DWJGl8IbwYTuFLrhJ2OGFuFbvGkW4+iUlvhwMB3gc6XceQVa9BtzJxluW6OGNVO0+MICjYwVJdwTAWkNTBqqAkHQyZ1y3xQQvw1TNUYcdDvs4t/ALLWUVfFLYqMjZ5iVDOfRhIo26TByABmCIovAdmpyySlsWKbRrUFvKKu8mRYBKPMlcnQ1B2lAgVaTuoI07rhnxCYmJMY9gtkehnqDxjo7o2i/wvdZzDruimXQt9PJ/a1h+E7ZmB7iw3NPREMEFRlqYb6/QZ0BzA+Q3pE7R+MSLh0tqJNYEWil0/6cas7ZgLcrHPi7imnOXVVeNueRjFFqWo8qMPjAk7fCUN4AbfBTMVOKYzqKFU7RTkMne/i6Hq/gHJS2zxKX983gbFRWgGoXlQdNdTocFOxn2kNmxEy7Cz1kVmW+CLaP9QM+kAR6hsF1uu0JRJYiIr8WlsEBqXrRLWOwuwohmhPUaKY1NwrOReYp293qlbJWFzS5gZku1R6JBykRUnOqQBHCk05tZNzDwlgMCrNhUlaVcBJAxGEqT1W6cxaGF9e+dJpy6svj9LgSTOL6V9x8K30vuT/IUwNSYcpv8q/4uDXjxj08gIM0ZxR4VqrlC37Un6Vf8XB/qd37d8CDAAmlWmEg71//QAAAABJRU5ErkJggg==" width="35" height="29" class="img_ev3q"> button in the following situations:<!-- -->
+<ul>
+<li>In case the filter values ​​(MTID/CUSTID, time, selected project) as the previous search are set</li>
+<li>In case any of the filter values ​​(MTID/CUSTID, time, selected project) is not entered</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Kubernetes</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Container Map</span>, <span class="uitext">Integrated Container Map</span>, added the feature to identify containers with external project agents installed and move the corresponding projects.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">Kubernetes Event</span>, added the following features:<!-- -->
+<ul>
+<li>Display Detail feature (Suggestions, adjacent logs, event timelines)</li>
+<li>Displayed the numbers of types and reasons, and differentiated the type in the timely event count chart.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Common</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event History</span>, added the feature to go to the <span class="uitext">Monitoring a Database Instance</span> menu when an event name is selected.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Oracle, Oracle Pro</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Disk Usage</span> widget in the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span> menu.</li>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">SQL Analysis</span>, added the following features:<!-- -->
+<ul>
+<li>Filtering feature to search by <code>sql_id</code>, <code>sql_hash_value</code>, and <code>PLAN_HASH_VALUE</code> in the <span class="uitext">Plan Change History</span> tab.</li>
+<li>In the <span class="uitext">Plan Change History</span> tab, a new window appears when checking the Plan Diff.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Browser</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> Added the <span class="uitext">Session replay</span> billing in <span class="uitext">My usage</span> &gt; <span class="uitext">Metering</span> and <span class="uitext">Invoice Preview History</span>.</li>
+<li><code class="Feature" type="1">Feature</code> Added the <span class="uitext">AJAX hitmap pattern</span> notification setting in the <span class="uitext">Alert</span> &gt; <span class="uitext">Event Configuration</span> menu.</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Log</code>
+<code class="changelog-date">2024-11-27</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> In <span class="uitext">Log</span> &gt; <span class="uitext">Log Configuration</span>, added and modified the following features:<!-- -->
+<ul>
+<li>Added the feature to change the log data retention period by entering it directly.</li>
+<li>Modified the display method for log data retention periods.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Common</code>
+<code class="changelog-date">2024-11-20</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/en/account/ms-entra-id"><img src="https://docs.whatap.io/en/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference</a></code>
+<ul>
+<li><code class="Docs" type="1">Docs</code> Support for <b>SSO</b> Microsoft Entra</li>
+</ul>
+</li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
 <code class="changelog-date">2024-10-31</code>
@@ -1516,6 +1764,7 @@
 <p><img decoding="async" loading="lazy" alt="Common event search branching example" src="https://docs.whatap.io/en/assets/images/changelog-24q3-common1-804675c07c8dd9dd134a5365091f6350.png" width="1208" height="463" class="img_ev3q"></p>
 <p>The <code>Application</code>, <code>Kubernetes</code>, and <code>Database</code> product suites newly reorganized the <span class="uitext">Metrics Chart</span> <code class="newfunc">New</code> menu. <span class="uitext">Metrics Chart</span> <code class="newfunc">New</code> is designed to enable monitoring tasks more efficient by significantly improving the user experience.</p>
 <p><img decoding="async" loading="lazy" alt="Common metrics chart v2 branching example" src="https://docs.whatap.io/en/assets/images/changelog-24q3-common-metrics-chart-a2b9ddcc453253d55e7b04e9d4e81f13.gif" width="1200" height="661" class="img_ev3q"></p>
+<!-- -->
 <p>You can easily add charts by processing <em><strong>Time</strong></em>, <em><strong>Target</strong></em>, and <em><strong>Interval</strong></em> settings at a time. You can also freely change the time range of the dashboard widget, and the batch change and preset features make configuration management easier. In addition, you can freely adjust the dashboard layout and widgets, making chart analysis more efficient.</p>
 <p>The following overview guide helps you understand what's new and what's not in the Common section for the 3rd quarter in 2024, along with the released versions.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>Guide to new features and major changes</b></summary><div><div class="collapsibleContent_i85q"><ul>
@@ -1607,7 +1856,7 @@
 <p><code class="Changed" type="1">Changed</code> In <span class="uitext">Alert</span> &gt; <span class="uitext">Event configuration</span>, changed the <em><strong>TOO_MANY_ACTX</strong></em> event template conditions. <code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><code class="changelog-service">Service 2.7.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Changed" type="0">Changed</code> In <img decoding="async" loading="lazy" alt="sitemap icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=" width="24" height="24" class="img_ev3q"> <span class="uitext">Sitemap</span> &gt; <span class="uitext">Topology</span> &gt; <span class="uitext">Netstat Topology</span>, changed the example image to English. <code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><code class="changelog-service">Service 2.7.0​</code></a></code></p>
+<p><code class="Changed" type="0">Changed</code> In <img decoding="async" loading="lazy" alt="Sitemap icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjkwNzM0IDJIMlYyMS42OTExSDcuOTA3MzRIOS44NzY0NUgxMS44NDU2VjE5LjcyMkg5Ljg3NjQ1VjkuODc2NDVIMTkuNzIyVjEyLjgzMDFIMjEuNjkxMVY5Ljg3NjQ1VjcuOTA3MzRWMkg5Ljg3NjQ1SDcuOTA3MzRaTTcuOTA3MzQgMy45NjkxMUgzLjk2OTExVjE5LjcyMkg3LjkwNzM0VjMuOTY5MTFaTTkuODc2NDUgMy45NjkxMVY3LjkwNzM0SDE5LjcyMlYzLjk2OTExSDkuODc2NDVaTTE5LjgyMzcgMTguNDMxM0MyMC43MTU3IDE2LjkyMTEgMjAuNTEyOCAxNC45NDMzIDE5LjIxNTMgMTMuNjQ1OEMxNy42NzczIDEyLjEwNzggMTUuMTgzNyAxMi4xMDc4IDEzLjY0NTggMTMuNjQ1OEMxMi4xMDc4IDE1LjE4MzcgMTIuMTA3OCAxNy42NzczIDEzLjY0NTggMTkuMjE1M0MxNC45NDMzIDIwLjUxMjggMTYuOTIxMSAyMC43MTU3IDE4LjQzMTMgMTkuODIzN0wyMC42MDc2IDIyTDIyIDIwLjYwNzZMMTkuODIzNyAxOC40MzEzWk0xNS4wMzgxIDE3LjgyMjlDMTUuODA3MSAxOC41OTE5IDE3LjA1MzkgMTguNTkxOSAxNy44MjI5IDE3LjgyMjlDMTguNTkxOSAxNy4wNTM5IDE4LjU5MTkgMTUuODA3MSAxNy44MjI5IDE1LjAzODFDMTcuMDUzOSAxNC4yNjkxIDE1LjgwNzEgMTQuMjY5MSAxNS4wMzgxIDE1LjAzODFDMTQuMjY5MSAxNS44MDcxIDE0LjI2OTEgMTcuMDUzOSAxNS4wMzgxIDE3LjgyMjlaIiBmaWxsPSIjNzU3NTc1Ii8+Cjwvc3ZnPgo=" width="24" height="24" class="img_ev3q"> <span class="uitext">Sitemap</span> &gt; <span class="uitext">Topology</span> &gt; <span class="uitext">Netstat Topology</span>, changed the example image to English. <code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><code class="changelog-service">Service 2.7.0​</code></a></code></p>
 </li>
 <li>
 <p><code class="Changed" type="0">Changed</code> In the sub menus under <span class="uitext">Statistics</span>, increased the width of the search field. <code class="changelog-service"><a href="https://docs.whatap.io/en/release-notes/service/service-2_7_x"><code class="changelog-service">Service 2.7.0​</code></a></code></p>
@@ -1860,8 +2109,8 @@
 <p>You can monitor the status of individual disks mounted on the node in real time via <span class="uitext">Node Disk List</span>. And the comparison and detailed information search of the existing <span class="uitext">Node List</span> menu have been improved. Instead of moving to the <span class="uitext">Node Detail</span> menu, the configuration, resources, metrics, and events for the selected node can be checked via the <span class="uitext">Node List</span> detail modal.</p>
 <p>Additionally, WhaTap Kubernetes component analysis feature has been improved. The <span class="uitext">Container summary analysis</span> and <span class="uitext">Pod summary analysis</span> features have been newly provided to enable comprehensive analysis of the performance and status of each component. You can see the summary analysis information in the <span class="uitext">Target information</span> tab of <span class="uitext">Container Map</span>.</p>
 <p><img decoding="async" loading="lazy" alt="k8s performance summary branching example" src="https://docs.whatap.io/en/assets/images/changelog-24q3-k8s-summary-44e90958eb6e7b7b8fa528d1e8dce1dc.gif" width="2532" height="1414" class="img_ev3q"></p>
-<p>In addition, as part of the expansion of WhaTap Kubernetes monitoring information, the new <span class="uitext">Service List</span> menu has been added, allowing you to check the configuration of each service and the status of the connected Pods. It provides service information collected over the past 1 minute based on the query time.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/en/img/k8s-service-list-en.png" alt="k8s Service list branching example" width="1200" height="694"></p>
+<p>In addition, as part of the expansion of WhaTap Kubernetes monitoring information, the new <span class="uitext">Service List</span> menu has been added, allowing you to check the configuration of each service and the status of the connected Pods. It provides the service information collected over the past one minute based on the query time.</p>
+<p><img loading="lazy" src="https://docs.whatap.io/en/img/k8s-service-list-en.png" alt="k8s Service List quarter example" width="1200" height="694"></p>
 <p>Through the following overview guide, check the new features and major changes in the <code>Kubernetes</code> product in Q3 2024 along with the release versions.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>Guide to new features and major changes</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>

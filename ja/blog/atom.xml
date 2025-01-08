@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.whatap.io/ja/blog</id>
     <title>WhaTap Docs Blog</title>
-    <updated>2024-10-31T15:30:00.000Z</updated>
+    <updated>2024-12-24T19:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.whatap.io/ja/blog"/>
     <subtitle>WhaTap Docs Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[サービス概要]]></title>
         <id>https://docs.whatap.io/ja/blog/overview</id>
         <link href="https://docs.whatap.io/ja/blog/overview"/>
-        <updated>2024-10-31T15:30:00.000Z</updated>
+        <updated>2024-12-24T19:30:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature Overview]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/ja/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>WhaTapが提供するサービスの新機能概要を一目でご覧ください。</p>
@@ -20,6 +20,253 @@
 <br>
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
+<li>
+<code class="changelog-overview">共通</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code>個別メニューでタイムセレクターのコンポーネントを交替</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">Flexボード</span>または<span class="uitext">統合Flexボード</span>メニューの<span class="uitext">アラートリスト</span>ウィジェットに次の機能を追加<!-- -->
+<ul>
+<li><span class="uitext">解除されたイベントを見る</span>オプションを追加</li>
+<li>ダッシュボードに設定された時間とは別に照会時間を選択できるオプションを追加</li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">メトリクスチャート</span> <code class="newfunc">New</code>メニューで次の機能を追加<!-- -->
+<ul>
+<li>ダッシュボードのウィジェット凡例表示有無によって異なるUIを表示</li>
+<li>ウィジェットの凡例フィルタリング機能</li>
+<li>ウィジェットの凡例にマウスオーバー時、該当するチャートラインのハイライト機能</li>
+<li>チャートラインが多い時、グラフのカラーがぼやけないように処理</li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューで<span class="uitext">解消された通知</span>オプションに関する説明を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">通知設定</span>メニューで通知メッセージをAIを通じてユーザーフレンドリーな内容で送信できる<span class="uitext">Smartメッセージ(AI)</span>オプションを追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Application</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">トレース分析</span>ウィンドウの<span class="uitext">テーブルビュー</span>タブでSQL詳細情報を確認する時、バインド変数コピー機能を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">統計</span> &gt; <span class="uitext">トランザクション</span>メニューで複数のトランザクションを選択して詳細情報を確認できる<span class="uitext">推移比較</span> 機能を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューでアプリケーションの<span class="uitext">エージェント重複イベント</span>オプションを追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Server</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">サーバーリスト</span> &gt; <span class="uitext">サーバー インベントリ</span>メニューでCSVファイルをアップロードしてサーバー一覧のユーザー定義コラムを交換する機能を追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Kubernetes</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">Ingress リスト</span>メニューの詳細情報にアプリケーション情報を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">etcd ダッシュボード</span>メニューに案内メッセージのモーダルを追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">etcd ダッシュボード</span>メニューに入ると、インストールしたエージェントバージョンがサポートバージョンより低い場合、アップデート案内画面を表示する機能を追加</li>
+<li><code class="Feature" type="1">Feature</code>次のメニュー経路の<span class="uitext">詳細</span>画面で各メニューに移動できるリンクをリソース 一覧に追加<!-- -->
+<ul>
+<li><span class="uitext">クラスター</span> &gt; <span class="uitext">ノードタイムライン</span></li>
+<li><span class="uitext">クラスター</span> &gt; <span class="uitext">Ingress リスト</span></li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code>次のメニューパスの詳細情報で提供する<span class="uitext">ノード 構成</span>タブのCPU、メモリ、ディスクのtotal値を追加<!-- -->
+<ul>
+<li><span class="uitext">ダッシューボード</span> &gt; <span class="uitext">ノードマップ</span></li>
+<li><span class="uitext">クラスター</span> &gt; <span class="uitext">ノードリスト</span></li>
+<li><span class="uitext">クラスター</span> &gt; <span class="uitext">ノードタイムライン</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<br>
+<code class="changelog-overview2">共通</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code>次のメニューパスの<span class="uitext">アクティブセッション</span>テーブルにページネーションを適用<!-- -->
+<ul>
+<li><span class="uitext">ダッシューボード</span> &gt; <span class="uitext">インスタンスモニタリング</span></li>
+<li><span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span></li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">管理</span> &gt; <span class="uitext">エージェントアップデート</span>メニューでユーザーがエージェントをアップデートすると<span class="uitext">ユーザー行為</span>メニューで確認できる機能を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">実験室</span> &gt; <span class="uitext">スクリプト·マネージャー</span>メニューでユーザーがSQLを実行した場合<span class="uitext">ユーザー行為</span>メニューで確認できる機能を追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<br>
+<code class="changelog-overview2">Database V2</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューのカスタムウィジェットに選択した指標の単位を表示するように追加</li>
+<li><code class="Feature" type="1">Feature</code>APMプロジェクトの<span class="uitext">トレース分析</span>ウィンドウでコピーしたバインド変数の値を<span class="uitext">連携データベース情報</span>ウィンドウで貼り付けるボタンを追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<br>
+<code class="changelog-overview2">Oracle、Oracle Pro</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">インスタンスモニタリング</span>メニューの<span class="uitext">SQL詳細</span>ウィンドウにアクティブセッション情報を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">SQL分析</span>メニューの<span class="uitext">フィルター</span>オプションに<code>object_name</code>条件を追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Browser</code>
+<code class="changelog-date">2024年12月24日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_12_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.12.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code>リソース別の性能データを視覚的に提供し、ロード時間、リソースサイズ、タイプ別の性能推移などを分析できる<span class="uitext">リソース負荷統計</span>メニューを追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">新機能リリーズ</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Server</code>
+<ul>
+<li><code class="New" type="1">New</code>クラウドおよびエンタープライズのオンプレミスインフラのモニタリングをサポートする<span class="uitext">サーバーインベントリマップ</span>メニューを追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">新機能リリーズ</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Kubernetes</code>
+<ul>
+<li><code class="New" type="1">New</code>Kubernetes環境でクラスター状態関連のデータ保存場所の役割を果たすetcdコンポーネントをモニタリングできる<span class="uitext">etcd ダッシュボード</span>メニュー追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">新機能リリーズ</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Database</code>
+<ul>
+<li><code class="New" type="1">New</code> <strong>SQL Server</strong> <code class="my">V2</code>サービス開始</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">新機能リリーズ</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Browser</code>
+<ul>
+<li><code class="New" type="1">New</code>IPアドレスグループ単位で統計を分析できる<span class="uitext">IP負荷統計</span>メニューを追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">共通</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューのテーブルリストに順番(No) カラムを追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューで<span class="uitext">進行中イベントのみ表示</span>機能を提供</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">リアルタイムアラート</span>でCSVダウンロード機能を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">利用状況</span> &gt; <span class="uitext">プロジェクト課金状況</span>メニューでプロジェクト全体および個別プロジェクトの課金単位の要約を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">プロジェクト一覧</span>画面で<img loading="lazy" src="https://docs.whatap.io/ja/img/ic-setting.svg" alt="설정 아이콘" width="auto" height="auto">設定ドロップダウンメニュー内のマウスホバースタイルを追加提供</li>
+<li><code class="Feature" type="0">Feature</code>WhaTapユーザーの教育申請書(グーグルフォーム)に対する多言語支援を追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Application</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">マルチTX</span>メニューで次の状況に<img decoding="async" loading="lazy" alt="検索アイコン" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAdCAYAAAAgqdWEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMC1jMDAwIDc5LjE3MWMyN2ZhYiwgMjAyMi8wOC8xNi0yMjozNTo0MSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NGYxMDZkYi1mOWQ1LTRkNWItYjg1Mi01N2E4OWQ4N2NiODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM0RjAyQzM1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM0RjAyQzI1MTBFMTFFRDk1NTBFNTZGQjUwMkEyQzYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDphMzM1ZWVmNC1mYjZhLTRkNzctOWI5MS0yZDViNTU2OTE4YTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTRmMTA2ZGItZjlkNS00ZDViLWI4NTItNTdhODlkODdjYjgwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+xFhE8QAAA2NJREFUeNrMl0tIVGEUx//fd2fm3nGaZHwkA+KjFylBWG5amG10GRGW9AKjRVFRCSJEQUPRokioNulCAhFsV2LiKogIwl7SoiyVsdJ8Vb5G5z3f1/luumk12lynw2WGy1zm/L7z+J9zmZRy4u1gIs/XEV78OC5g0xjostwSEojTR6mXw3fYcO3aok2y15/j83suL7rBgeI8bj4opfUwbOnAw5MCoOv5DVdAG8luvPR1RuqbCUSsAcTfluNmmA5J+MdFlA8Q2cZcjrhAWkz5Vf4VB3dQgUik15R/xcFV7mSaaZR/xcH/9U9SeRDbarpAUJ5HpgVkhO6X4pyZzZDjYogl1ghG04DpRYm5XxKHKm3YV26HywkMjAnc64nBPyxQULh6eUgahpOPnwGJBYrGk6sZ2LvDhukFIEhtWbWToa5Kx/nmEDpexFDs5dZGJhKTCISBRw1OE+Ts/RAePIubVWfYgYcXDbRecELjEh29CRR4Vt6lSR9hbFbi+G4NVWU2HL0dRHtXFN4sIN8D2DWJGl8IbwYTuFLrhJ2OGFuFbvGkW4+iUlvhwMB3gc6XceQVa9BtzJxluW6OGNVO0+MICjYwVJdwTAWkNTBqqAkHQyZ1y3xQQvw1TNUYcdDvs4t/ALLWUVfFLYqMjZ5iVDOfRhIo26TByABmCIovAdmpyySlsWKbRrUFvKKu8mRYBKPMlcnQ1B2lAgVaTuoI07rhnxCYmJMY9gtkehnqDxjo7o2i/wvdZzDruimXQt9PJ/a1h+E7ZmB7iw3NPREMEFRlqYb6/QZ0BzA+Q3pE7R+MSLh0tqJNYEWil0/6cas7ZgLcrHPi7imnOXVVeNueRjFFqWo8qMPjAk7fCUN4AbfBTMVOKYzqKFU7RTkMne/i6Hq/gHJS2zxKX983gbFRWgGoXlQdNdTocFOxn2kNmxEy7Cz1kVmW+CLaP9QM+kAR6hsF1uu0JRJYiIr8WlsEBqXrRLWOwuwohmhPUaKY1NwrOReYp293qlbJWFzS5gZku1R6JBykRUnOqQBHCk05tZNzDwlgMCrNhUlaVcBJAxGEqT1W6cxaGF9e+dJpy6svj9LgSTOL6V9x8K30vuT/IUwNSYcpv8q/4uDXjxj08gIM0ZxR4VqrlC37Un6Vf8XB/qd37d8CDAAmlWmEg71//QAAAABJRU5ErkJggg==" width="35" height="29" class="img_ev3q">ボタンを無効にする機能を追加<!-- -->
+<ul>
+<li>以前の検索と同じフィルター値(MTID/CUSTID、時間、選択したプロジェクト)を設定した場合</li>
+<li>フィルター値(MTID/CUSTID、時間、選択したプロジェクト) のいずれか一つでも入力をしていない場合</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Kubernetes</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">コンテナマップ</span>および<span class="uitext">統合コンテナマップ</span>メニューで外部プロジェクトエージェントがインストールされたコンテナの識別とそのプロジェクト移動機能を追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">クラスター</span> &gt; <span class="uitext">Kubernetesイベント</span>メニューで次の機能を追加<!-- -->
+<ul>
+<li>詳細を見る機能(Suggestions、隣接ログ、イベントタイムライン)</li>
+<li>Type、Reason個数表示および時間別イベント個数チャートにType区分を表示</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">共通</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューでイベント名を選択すると、<span class="uitext">インスタンスモニタリング</span>メニューに移動する機能を追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<br>
+<code class="changelog-overview2">Oracle、Oracle Pro</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューに<span class="uitext">Disk Usage</span>ウィジェットを追加</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">SQL分析</span>メニューで次の機能を追加<!-- -->
+<ul>
+<li><span class="uitext">Plan Change History</span>タブで<code>sql_id</code>、<code>sql_hash_value</code>、<code>PLAN_HASH_VALUE</code>で検索できるフィルター機能</li>
+<li><span class="uitext">Plan Change History</span>タブでPlan Diffを確認する時、新しい画面で見る</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Browser</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">利用内訳</span> &gt; <span class="uitext">使用量</span>と<span class="uitext">請求書プレビュー</span>で<span class="uitext">セッションリプレイ</span>課金を表示</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span>メニューに<span class="uitext">AJAXヒットマップのパターン</span>通知設定を追加</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Log</code>
+<code class="changelog-date">2024年11月27日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_11_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.11.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">ログ</span> &gt; <span class="uitext">ログ設定</span>メニューで次の機能を追加および修正<!-- -->
+<ul>
+<li>ログデータ保存期間を直接入力して変更できる機能を追加</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">共通</code>
+<code class="changelog-date">2024年11月20日</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/ja/account/ms-entra-id"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference</a></code>
+<ul>
+<li><code class="Docs" type="1">Docs</code> <b>SSO</b> Microsoft Entra 対応</li>
+</ul>
+</li>
 <li>
 <code class="changelog-overview">Kubernetes</code>
 <code class="changelog-date">2024年10月31日</code>
@@ -1456,8 +1703,15 @@
 <code class="changelog-date">2023年10月25日</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><img src="https://docs.whatap.io/ja/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 1.112.0​</a></code>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">サイトマップ</span> &gt; <span class="uitext">ユーザー行為</span> メニューの追加</li>
-<li><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">AJAX Hitmap</span> メニューの追加</li>
+<li>
+<p><code class="Feature">Feature</code> <span class="uitext">サイトマップ</span> &gt; <span class="uitext">ユーザー行為</span> メニューの追加</p>
+</li>
+<li>
+<p><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">AJAX Hitmap</span> メニューの追加</p>
+<ul>
+<li>ログデータ保存期間のデータ表示方式を修正</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul></div></li></div>]]></content>
@@ -1516,6 +1770,7 @@
 <p><img decoding="async" loading="lazy" alt="共通イベント検索四半期の例" src="https://docs.whatap.io/ja/assets/images/changelog-24q3-common1-804675c07c8dd9dd134a5365091f6350.png" width="1208" height="463" class="img_ev3q"></p>
 <p><code>Application</code>、<code>Kubernetes</code>、<code>Database</code>製品群の共通で<span class="uitext">メトリクスチャート</span> <code class="newfunc">New</code>メニューが新しく改編されました。 <span class="uitext">メトリクスチャート</span> <code class="newfunc">New</code>は、ユーザーエクスペリエンスを大幅に改善し、モニタリング作業をより効率的に行えるように設計されました。</p>
 <p><img decoding="async" loading="lazy" alt="共通メトリクスチャート v2 四半期の例" src="https://docs.whatap.io/ja/assets/images/changelog-24q3-common-metrics-chart-a2b9ddcc453253d55e7b04e9d4e81f13.gif" width="1200" height="661" class="img_ev3q"></p>
+<!-- -->
 <p>ユーザーは<em><strong>時間</strong></em>、<em><strong>対象</strong></em>、<em><strong>インターバル</strong></em>設定を一度に処理し、簡単にチャートを追加できます。 また、ダッシュボードウィジェットの時間範囲を自由に変更でき、一括変更機能とプリセット機能により設定管理が簡単になりました。 これに加えて、ダッシュボードレイアウトとウィジェットも自由に調整でき、チャート分析がより効率的に改善されました。</p>
 <p>以下の概要案内に通じて、2024年第3四半期の共通部分の新規機能および主要変更事項を当該リリースバージョンと一緒に確認してみてください。</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>新規機能および主な変更事項のご案内</b></summary><div><div class="collapsibleContent_i85q"><ul>
@@ -1860,8 +2115,8 @@
 <p><span class="uitext">ノードディスクリスト</span>を通じて、ノードにマウントされた個々のディスクの状態をリアルタイムでモニタリングできます。 そして既存の<span class="uitext">ノードリスト</span>メニューの比較と詳細情報の照会機能が改善されました。 <span class="uitext">ノード詳細</span>メニューに移動する代わりに、選択したノードの構成とリソース、メトリクス、イベント情報を<span class="uitext">ノードリスト</span>詳細モーダルで確認できます。</p>
 <p>また、WhaTapのKubernetes構成要素の分析機能が強化されました。 <span class="uitext">コンテナ要約分析</span>と<span class="uitext">Pod要約分析</span>機能が新たに提供され、各構成要素の性能と状態を総合的に分析できます。 <span class="uitext">コンテナマップ</span>の<span class="uitext">対象情報</span>タブで希望する要約分析情報を確認できます。</p>
 <p><img decoding="async" loading="lazy" alt="k8s性能要約分析四半期の例" src="https://docs.whatap.io/ja/assets/images/changelog-24q3-k8s-summary-44e90958eb6e7b7b8fa528d1e8dce1dc.gif" width="2532" height="1414" class="img_ev3q"></p>
-<p>加えて、WhaTapのKubernetesモニタリング情報拡大の一環として<span class="uitext">Service リスト</span>メニューが新たに追加され、各サービスの構成に接続されたPodの状態を確認できます。 照会時間を基準に最近1分間収集されたサービス情報を提供し</p>
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img/k8s-service-list-ja.png" alt="k8s Service リスト四半期の例" width="1200" height="695"></p>
+<p>加えて、WhaTapのKubernetesモニタリング情報拡大の一環として<span class="uitext">Service リスト</span>メニューが新たに追加され、各サービスの構成に接続されたPodの状態を確認できます。 照会時間を基準に、最近1分間収集されたサービス情報を提供します。</p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/k8s-service-list-ja.png" alt="k8s Serviceリスト四半期の例" width="1200" height="695"></p>
 <p>以下の概要案内により、2024年第3四半期<code>Kubernetes</code>製品の新規機能および主な変更事項を当該リリースバージョンと一緒に確認してみてください。</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>新規機能および主な変更事項のご案内</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -2248,7 +2503,7 @@
 <!-- -->
 <ul>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">アカウント管理</span>メニューの<span class="uitext">ユーザー電話番号</span>セクションで一般の携帯電話に国・地域コードの選択機能を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><code class="changelog-service">Service 2.4.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">アカウント管理</span>メニューの<span class="uitext">ユーザー電話番号</span>セクションで携帯電話に国・地域コードの選択機能を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><code class="changelog-service">Service 2.4.0​</code></a></code></p>
 </li>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">アカウント管理</span> &gt; <span class="uitext">アラート受信設定</span>セクションでモバイル機器を削除すると、モバイル機器リストを新しく読み込むように修正 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><code class="changelog-service">Service 2.5.0​</code></a></code></p>
@@ -2433,9 +2688,9 @@
 <li><code class="New">New</code> linux aarch64対応</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#nodejs" class="hash-link" aria-label="nodejsへの直接リンク" title="nodejsへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0495-2024年04月29日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_95">Node.js Agent v0.4.95</a></code> <code class="changelog-date">2024年04月29日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#nodejs-agent-v0495-2024%E5%B9%B404%E6%9C%8829%E6%97%A5" class="hash-link" aria-label="nodejs-agent-v0495-2024年04月29日への直接リンク" title="nodejs-agent-v0495-2024年04月29日への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code>プロファイルデータを圧縮転送するためのエージェントオプションを追加</li>
+<li><code class="Feature">Feature</code>プロファイルデータの圧縮転送のエージェントオプションを追加</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0496-2024年05月30日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_96">Node.js Agent v0.4.96</a></code> <code class="changelog-date">2024年05月30日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#nodejs-agent-v0496-2024%E5%B9%B405%E6%9C%8830%E6%97%A5" class="hash-link" aria-label="nodejs-agent-v0496-2024年05月30日への直接リンク" title="nodejs-agent-v0496-2024年05月30日への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0496-2024年05月30日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_96">Node.js Agent v0.4.96</a></code> <code class="changelog-date">2024年05月30日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#nodejs-agent-v0496-2024%E5%B9%B405%E6%9C%8830%E6%97%A5" class="hash-link" aria-label="nodejs-agent-v0496-2024年05月30日への直接リンク" title="nodejs-agent-v0496-2024年05�月30日への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code>サーバでクライアントにデータを送信する際、データ収集のためのwebsocketパッケージモニタリングを追加</p>
@@ -2446,12 +2701,12 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0497-2024年06月03日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_97">Node.js Agent v0.4.97</a></code> <code class="changelog-date">2024年06月03日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#nodejs-agent-v0497-2024%E5%B9%B406%E6%9C%8803%E6%97%A5" class="hash-link" aria-label="nodejs-agent-v0497-2024年06月03日への直接リンク" title="nodejs-agent-v0497-2024年06月03日への直接リンク">​</a></h4>
 <ul>
-<li><code class="New">New</code>Kubernetes環境の使用可否を環境変数として適用可能</li>
+<li><code class="New">New</code>Kubernetes環境の使用有無を環境変数として適用可能</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="net"><code>.NET</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net" class="hash-link" aria-label="netへの直接リンク" title="netへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v221-2024年04月09日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_1">.NET Agent v2.2.1</a></code> <code class="changelog-date">2024年04月09日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net-agent-v221-2024%E5%B9%B404%E6%9C%8809%E6%97%A5" class="hash-link" aria-label="net-agent-v221-2024年04月09日への直接リンク" title="net-agent-v221-2024年04月09日への直接リンク">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code>エージェントオプションの追加</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v222-2024年04月18日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_2">.NET Agent v2.2.2</a></code> <code class="changelog-date">2024年04月18日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net-agent-v222-2024%E5%B9%B404%E6%9C%8818%E6%97%A5" class="hash-link" aria-label="net-agent-v222-2024年04月18日への�直接リンク" title="net-agent-v222-2024年04月18日への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v222-2024年04月18日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_2">.NET Agent v2.2.2</a></code> <code class="changelog-date">2024年04月18日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net-agent-v222-2024%E5%B9%B404%E6%9C%8818%E6%97%A5" class="hash-link" aria-label="net-agent-v222-2024年04月18日への直接リンク" title="net-agent-v222-2024年04月18日への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="New">New</code> DataAdapter.Fill() メソッドモニタリングを追加</p>
@@ -2463,7 +2718,7 @@
 <p><code class="Feature">Feature</code> エージェントオプション<code>trace_http_client_ip_header_key</code>追加、詳しい内容は、<a href="https://docs.whatap.io/dotnet/agent-number-of-user#trace_http_client_ip_header_key">次の文書</a>を参照してください。</p>
 </li>
 <li>
-<p><code class="Deprecated">Deprecated</code>エージェントがボディを読み込んでいる間に衝突が起こる可能性があるので<code>profile_http_body_enabled</code>オプションの対応を中止</p>
+<p><code class="Deprecated">Deprecated</code>エージェントがbodyを読み込む際にバッティングする恐れがあり<code>profile_http_body_enabled</code>オプションのサポートを中止</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v224-2024年04月30日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_4">.NET Agent v2.2.4</a></code> <code class="changelog-date">2024年04月30日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net-agent-v224-2024%E5%B9%B404%E6%9C%8830%E6%97%A5" class="hash-link" aria-label="net-agent-v224-2024年04月30日への直接リンク" title="net-agent-v224-2024年04月30日への直接リンク">​</a></h4>
@@ -2487,12 +2742,12 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v228-2024年06月19日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_8">.NET Agent v2.2.8</a></code> <code class="changelog-date">2024年06月19日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net-agent-v228-2024%E5%B9%B406%E6%9C%8819%E6%97%A5" class="hash-link" aria-label="net-agent-v228-2024年06月19日への直接リンク" title="net-agent-v228-2024年06月19日への直接リンク">​</a></h4>
 <ul>
-<li><code class="New">New</code> .NET 6、7、8バージョンの追加対応</li>
+<li><code class="New">New</code> .NET 6、7、8バージョンをサポート</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="net-agent-v229-2024年07月05日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_2_9">.NET Agent v2.2.9</a></code> <code class="changelog-date">2024年07月05日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#net-agent-v229-2024%E5%B9%B407%E6%9C%8805%E6%97%A5" class="hash-link" aria-label="net-agent-v229-2024年07月05日への直接リンク" title="net-agent-v229-2024年07月05日への直接リンク">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code>マルチトランザクションのモニタリングに対応: WhaTapモニタリングプラットフォームのプロジェクトとして登録されたアプリケーションサービス間の呼び出しを追跡できます。</li>
-</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#go" class="hash-link" aria-label="goへの直接リンク" title="goへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v040-2024年06月19日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/golang/golang-0_4_0">Go Agent v0.4.0</a></code> <code class="changelog-date">2024年06月19日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#go-agent-v040-2024%E5%B9%B406%E6%9C%8819%E6%97%A5" class="hash-link" aria-label="go-agent-v040-2024年06月19日への直接リンク" title="go-agent-v040-2024年06月19日への直接リンク">​</a></h4>
+</ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#go" class="hash-link" aria-label="goへの直接リンク" title="goへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v040-2024年06月19日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/golang/golang-0_4_0">Go Agent v0.4.0</a></code> <code class="changelog-date">2024年06月19日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#go-agent-v040-2024%EF%BF%BD%E5%B9%B406%E6%9C%8819%E6%97%A5" class="hash-link" aria-label="go-agent-v040-2024年06月19日への直接リンク" title="go-agent-v040-2024年06月19日への直接リンク">​</a></h4>
 <ul>
 <li><code class="New">New</code> linux aarch64対応</li>
 </ul></div></div></details>
@@ -2525,7 +2780,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント設定</span> <code class="newfunc">New</code>メニューに<span class="uitext">ログファイル / Windowsウイベント</span>設定を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><code class="changelog-service">Service 2.4.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Changed">Changed</code> <span class="uitext">エージェントインストール</span>段階に入る前に、OS選択の段階を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><code class="changelog-service">Service 2.5.0​</code></a></code></p>
+<p><code class="Changed">Changed</code> <span class="uitext">エージェントインストール</span>手順に入る前に、OS選択の手順を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><code class="changelog-service">Service 2.5.0​</code></a></code></p>
 </li>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">サーバーリスト</span>メニューでユーザビリティを改善するため、画面上にサーバーの状態を表示および操作ボタンのレイアウトを変更 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><code class="changelog-service">Service 2.5.0​</code></a></code></p>
@@ -2563,7 +2818,7 @@
 <p><code class="Feature">Feature</code> vxfs v8対応の追加</p>
 </li>
 <li>
-<p><code class="Feature">Feature</code>収集負荷の増加(サーバー過負荷)時、プロセスモニタリングの収集周期20秒から60秒に臨時変更の機能を追加</p>
+<p><code class="Feature">Feature</code>収集負荷の増加(サーバー過負荷)時、プロセスモニタリングの収集周期を20秒から60秒に一時的に変更する機能を追加</p>
 </li>
 </ul></div></div></details>
 <br>
@@ -2714,7 +2969,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">分析</span> &gt; <span class="uitext">Wait分析</span>メニューのテーブルウィジェットでマウスオーバーすると、項目の全体名を確認できるツールチップを追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_5_x"><code class="changelog-service">Service 2.5.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql">PostgreSQL / MySQL​<a href="https://docs.whatap.io/ja/blog/2024-2q-summary#postgresql--mysql" class="hash-link" aria-label="PostgreSQL / MySQL​への直接リンク" title="PostgreSQL / MySQL​への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql--mysql">PostgreSQL / MySQL​<a href="https://docs.whatap.io/ja/blog/2024-2q-summary#postgresql--mysql" class="hash-link" aria-label="PostgreSQL / MySQL​への直接リンク" title="PostgreSQL / MySQL�​への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">ダッシューボード</span> &gt; <span class="uitext">マルチインスタンス</span>メニューでウィジェットを追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_4_x"><code class="changelog-service">Service 2.4.0​</code></a></code></p>
@@ -2784,7 +3039,7 @@
 <!-- -->
 <details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>エージェントガイド</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v136-2024年05月30日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/browser/browser-v1_3_6">Browser Agent v1.3.6</a></code> <code class="changelog-date">2024年05月30日</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#browser-agent-v136-2024%E5%B9%B405%E6%9C%8830%E6%97%A5" class="hash-link" aria-label="browser-agent-v136-2024年05月30日への直接リンク" title="browser-agent-v136-2024年05月30日への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code>ブラウザエージェントのバンドルサイズの改善</li>
+<li><code class="Feature">Feature</code>WhaTap Browserエージェントのバンドルサイズの改善</li>
 </ul></div></div></details>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p><span class="uitext">セッションリプレイ</span>機能についての詳細は、<a href="https://docs.whatap.io/browser/session-replay" target="_blank" rel="noopener noreferrer">次の文書</a>を参照してください。</p></div></div>
 <!-- -->
@@ -2798,7 +3053,7 @@
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>ノート</div><div class="admonitionContent_BuS1"><p>フィーチャープロジェクトと<code>KAFKA</code>モニタリングの詳細は、<a href="https://docs.whatap.io/features/kafka-introduction" target="_blank" rel="noopener noreferrer">次の文書</a>を参照してください。</p></div></div>
 <br>
 <!-- -->
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="url"><code>URL</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#url" class="hash-link" aria-label="urlへ�の直接リンク" title="urlへの直接リンク">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="url"><code>URL</code><a href="https://docs.whatap.io/ja/blog/2024-2q-summary#url" class="hash-link" aria-label="urlへの直接リンク" title="urlへの直接リンク">​</a></h2>
 <p>WhaTap2024年第2四半期<code>URL</code>部分の変更点をご紹介します。 <span class="uitext">URLリスト</span>メニューおよび当該メニュー内の<span class="uitext">URL修正</span>画面のUIがユーザーの利便性向上のために全般的に改編されました。 また、<span class="uitext">URLの削除</span>も編集画面ではなく、一覧照会時に削除できるように変更されました。 <em><strong>URLの詳細</strong></em>画面の場合、個別の比較を容易にするためにポップアウト方式で提供します。</p>
 <p><img decoding="async" loading="lazy" alt="URL sc" src="https://docs.whatap.io/ja/assets/images/changelog-24q2-url-054773016dbb0499bde47324e094a4f9.png" width="1208" height="630" class="img_ev3q"></p>
 <!-- -->
@@ -2879,7 +3134,7 @@
 <p>プロジェクト一覧を選択した部分だけを開いて確認でき、縦の領域を確保してより楽に多様な機能メニューを照会できます。 また、簡単な星形の(<img loading="lazy" src="https://docs.whatap.io/ja/img/ic-star.svg" alt="비교하기 아이콘" width="auto" height="auto">) アイコンをクリックすると、製品別プロジェクトメニュー内でよく使う機能をお気に入りにできます。</p>
 <p><img loading="lazy" src="https://docs.whatap.io/ja/img/release/release-main-ui-ja.png" alt="サイドメニュー改編cl分岐例" width="auto" height="auto"></p>
 <p>また<strong>SSOアカウント連動機能</strong>が追加されました。 クラウドベースのユーザーアカウント管理およびアクセス権限の管理ソリューション<strong>Okta</strong>とWhaTapモニタリングを連動できます。 組織内で使用中の<strong>Okta</strong>アカウントを利用してWhaTapサービスにログインした後、サービスを利用できます。</p>
-<p><img loading="lazy" src="https://docs.whatap.io/ja/img/sso-check-sso-info-ja.png" alt="sso-info cl ブランチの例" width="800" height="398"></p>
+<p><img loading="lazy" src="https://docs.whatap.io/ja/img/sso-check-sso-info-ja.png" alt="sso-info cl 分岐例" width="800" height="398"></p>
 <p>新しい<span class="uitext">イベント設定</span> <code class="newfunc">New</code>機能はフィールド(Field) 中心のユーザーエクスペリエンスを強化し、カテゴリよりもフィールドを先に選択する方法で、ユーザーが認知するメトリクスとイベント設定の不一致を解消しました。 また、商品に適した基本的なイベントテンプレートを提供することで、より簡単に警告通知イベントを設定できます。</p>
 <p><img decoding="async" loading="lazy" alt="イベントv2 cl四半期の例" src="https://docs.whatap.io/ja/assets/images/changelog-common-event-v2-1dca8eba6848781ab8443580555a0057.png" width="800" height="513" class="img_ev3q"></p>
 <p>次の概要案内を通じて、2024年第1四半期共通部分の新規機能および主要変更事項を該当リリースバージョンと共に確認してみてください。</p>
@@ -2907,7 +3162,7 @@
 <p><code class="Changed">Changed</code> <b>修正</b>または<b>通知設定</b>権限を持ったメンバーが<span class="uitext">メンテナンス計画</span>メニューを利用できるように権限を調整 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_3_x"><code class="changelog-service">Service 2.3.0​</code></a></code></p>
 </li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="flexボード--ダッシュボード">Flexボード / ダッシュボード​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#flex%E3%83%9C%E3%83%BC%E3%83%89--%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89" class="hash-link" aria-label="Flexボード / ダッシュ��ボード​への直接リンク" title="Flexボード / ダッシュボード​への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="flexボード--ダッシュボード">Flexボード / ダッシュボード​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#flex%E3%83%9C%E3%83%BC%E3%83%89--%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89" class="hash-link" aria-label="Flexボード / ダッシュボード​への直接リンク" title="Flexボード / ダッシュボード​への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Changed">Changed</code> <span class="uitext">Flexボード</span>メニューでTopNウィジェットの順位更新時、グラフチャートがつながらないように変更 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -3078,7 +3333,7 @@
 <p><code class="Feature">Feature</code>エージェントログに<code>threadName</code>、<code>className</code>, <code>methodName</code>、<code>lineNumber</code>を収集して表示</p>
 </li>
 <li>
-<p><code class="Feature">Feature</code>エージェントログの形態を修正</p>
+<p><code class="Feature">Feature</code>エージェントログの形式を修正</p>
 </li>
 <li>
 <p><code class="Feature">Feature</code> Tiberoの<code>CallableStatement</code>を追跡</p>
@@ -3131,7 +3386,7 @@
 <p><code class="Feature">Feature</code> PHP 8.3バージョンに対応</p>
 </li>
 <li>
-<p><code class="Feature">Feature</code>マルチトランザクショントレースでTrace context(W3C) に対応</p>
+<p><code class="Feature">Feature</code>マルチトランザクションのトレースでTrace context(W3C)に対応</p>
 </li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="python"><code>Python</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#python" class="hash-link" aria-label="pythonへの直接リンク" title="pythonへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="python-agent-v162-2024年03月29日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/python/python-1_6_2">Python Agent v1.6.2</a></code> <code class="changelog-date">2024年03月29日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#python-agent-v162-2024%E5%B9%B403%E6%9C%8829%E6%97%A5" class="hash-link" aria-label="python-agent-v162-2024年03月29日への直接リンク" title="python-agent-v162-2024年03月29日への直接リンク">​</a></h4>
 <ul>
@@ -3154,7 +3409,7 @@
 </li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="go"><code>Go</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#go" class="hash-link" aria-label="goへの直接リンク" title="goへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="go-agent-v030-2024年01月10日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/golang/golang-0_3_0">Go Agent v0.3.0</a></code> <code class="changelog-date">2024年01月10日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#go-agent-v030-2024%E5%B9%B401%E6%9C%8810%E6%97%A5" class="hash-link" aria-label="go-agent-v030-2024年01月10日への直接リンク" title="go-agent-v030-2024年01月10日への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code>マルチトランザクショントレースでTrace context(W3C) に対応</li>
+<li><code class="Feature">Feature</code>マルチトランザクションのトレースでTrace context(W3C)に対応</li>
 </ul></div></div></details>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#server" class="hash-link" aria-label="serverへの直接リンク" title="serverへの直接リンク">​</a></h2>
@@ -3308,7 +3563,7 @@
 </ul>
 <!-- -->
 <!-- -->
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ログ">ログ​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#%E3%83%AD%E3%82%B0" class="hash-link" aria-label="ログ​�への直接リンク" title="ログ​への直接リンク">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="ログ">ログ​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#%E3%83%AD%E3%82%B0" class="hash-link" aria-label="ログ​への直接リンク" title="ログ​への直接リンク">​</a></h4>
 <ul>
 <li>
 <p><code class="Feature">Feature</code> <span class="uitext">Kubernetesイベント</span>：プロジェクト単位でKubernetesイベントに対する照会と検索機能 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-2_0_x"><code class="changelog-service">Service 2.0.0​</code></a></code></p>
@@ -3498,7 +3753,7 @@
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1618-2024年01月25日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/dbx-1_6_18">DBX v1.6.18</a></code> <code class="changelog-date">2024年01月25日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#dbx-v1618-2024%E5%B9%B401%E6%9C%8825%E6%97%A5" class="hash-link" aria-label="dbx-v1618-2024年01月25日への直接リンク" title="dbx-v1618-2024年01月25日への直接リンク">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="共通">共通​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#%E5%85%B1%E9%80%9A" class="hash-link" aria-label="共通​への直接リンク" title="共通​への直接リンク">​</a></h5>
 <ul>
-<li><code class="Feature">Feature</code>データベースの通知も復旧メッセージを受け取るよう<code>uuid</code>、<code>statefulset</code>を追加</li>
+<li><code class="Feature">Feature</code>データベースの通知も復旧メッセージを受けるように<code>uuid</code>、<code>statefulset</code>を追加</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024年02月02日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024年02月02日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#dbx-v1620-2024%E5%B9%B402%E6%9C%8802%E6%97%A5" class="hash-link" aria-label="dbx-v1620-2024年02月02日への直接リンク" title="dbx-v1620-2024年02月02日への直接リンク">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="共通-1">共通​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#%E5%85%B1%E9%80%9A-1" class="hash-link" aria-label="共通​への直接リンク" title="共通​への直接リンク">​</a></h5>
@@ -3516,17 +3771,17 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1630-2024年02月29日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/dbx-1_6_30">DBX v1.6.30</a></code> <code class="changelog-date">2024年02月29日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#dbx-v1630-2024%E5%B9%B402%E6%9C%8829%E6%97%A5" class="hash-link" aria-label="dbx-v1630-2024年02月29日への直接リンク" title="dbx-v1630-2024年02月29日への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code>イベント解消の通知機能を追加</li>
+<li><code class="Feature">Feature</code> イベント解消の通知機能を追加</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024年03月13日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024年03月13日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#dbx-v1633-2024%E5%B9%B403%E6%9C%8813%E6%97%A5" class="hash-link" aria-label="dbx-v1633-2024年03月13日への直接リンク" title="dbx-v1633-2024年03月13日への直接リンク">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​への直接リンク" title="PostgreSQL​への直接リンク">​</a></h5>
 <ul>
-<li><code class="Feature">Feature</code>エージェントのインストール ファイルに<em>setup.sh</em>を追加</li>
+<li><code class="Feature">Feature</code> エージェントのインストールファイルに<em>setup.sh</em>を追加</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1635-2024年03月15日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/dbx-1_6_35">DBX v1.6.35</a></code> <code class="changelog-date">2024年03月15日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#dbx-v1635-2024%E5%B9%B403%E6%9C%8815%E6%97%A5" class="hash-link" aria-label="dbx-v1635-2024年03月15日への直接リンク" title="dbx-v1635-2024年03月15日への直接リンク">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql-1">PostgreSQL​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#postgresql-1" class="hash-link" aria-label="PostgreSQL​への直接リンク" title="PostgreSQL​への直接リンク">​</a></h5>
 <ul>
-<li><code class="Feature">Feature</code>エージェントのインストール ファイルに<em>setup.bat</em>を追加</li>
+<li><code class="Feature">Feature</code> エージェントのインストールファイルに<em>setup.bat</em>を追加</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v170-2024年03月25日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/dbx-1_7_0">DBX v1.7.0</a></code> <code class="changelog-date">2024年03月25日</code><a href="https://docs.whatap.io/ja/blog/2024-1q-summary#dbx-v170-2024%E5%B9%B403%E6%9C%8825%E6%97%A5" class="hash-link" aria-label="dbx-v170-2024年03月25日への直接リンク" title="dbx-v170-2024年03月25日への直接リンク">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="mongodb">MongoDB​<a href="https://docs.whatap.io/ja/blog/2024-1q-summary#mongodb" class="hash-link" aria-label="MongoDB​への直接リンク" title="MongoDB​への直接リンク">​</a></h5>
@@ -3731,7 +3986,7 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="アラート通知">アラート通知​<a href="https://docs.whatap.io/ja/blog/2023-4q-summary#%E3%82%A2%E3%83%A9%E3%83%BC%E3%83%88%E9%80%9A%E7%9F%A5" class="hash-link" aria-label="アラート通知​への直接リンク" title="アラート通知​への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューからタイトル以外にもメッセージフィールドに対する検索機能を対応 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
+<li><code class="Feature">Feature</code> <span class="uitext">アラート通知</span> &gt; <span class="uitext">イベント履歴</span>メニューからタイトル以外にもメッセージフィールドに対する検索機能を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="管理">管理​<a href="https://docs.whatap.io/ja/blog/2023-4q-summary#%E7%AE%A1%E7%90%86" class="hash-link" aria-label="管理​への直接リンク" title="管理​への直接リンク">​</a></h4>
 <ul>
@@ -3750,7 +4005,7 @@
 <p><code class="Feature">Feature</code> <span class="uitext">決済情報</span>メニューから決済情報を登録すると通話選択機能を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.6​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">請求書プレビュー</span>メニューから、使用量を測るオプションの追加と金額表示の改善 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">請求書プレビュー</span>メニューから、使用量を隠すオプションの追加と金額表示の改善 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="user-interface">User Interface​<a href="https://docs.whatap.io/ja/blog/2023-4q-summary#user-interface" class="hash-link" aria-label="User Interface​への直接リンク" title="User Interface​への直接リンク">​</a></h4>
@@ -3759,7 +4014,7 @@
 <p><code class="Feature">Feature</code> サイドバー幅の調整機能の追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">サービスカタログ</span>ページでユーザー体験を向上するためのデザイン変更 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">サービスカタログ</span>ページでUX(ユーザー体験)を向上させるためのデザイン改編 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></p>
 </li>
 </ul>
 </div></div></details>
@@ -3846,7 +4101,7 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="java-agent-v2225-2023年12月20日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/java/java-2_2_25">Java Agent v2.2.25</a></code> <code class="changelog-date">2023年12月20日</code><a href="https://docs.whatap.io/ja/blog/2023-4q-summary#java-agent-v2225-2023%E5%B9%B412%E6%9C%8820%E6%97%A5" class="hash-link" aria-label="java-agent-v2225-2023年12月20日への直接リンク" title="java-agent-v2225-2023年12月20日への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code>ログモニタリングJavaアプリケーションログにマルチトランザクションID(<code>@mtid</code>タグ) 追加</li>
+<li><code class="Feature">Feature</code>ログモニタリングのJavaアプリケーションログにマルチトランザクションID(<code>@mtid</code>タグ)を追加</li>
 </ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs"><code>Node.js</code><a href="https://docs.whatap.io/ja/blog/2023-4q-summary#nodejs" class="hash-link" aria-label="nodejsへの直接リンク" title="nodejsへの直接リンク">​</a></h3><h4 class="anchor anchorWithStickyNavbar_LWe7" id="nodejs-agent-v0483-2023年12月11日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_4_83">Node.js Agent v0.4.83</a></code> <code class="changelog-date">2023年12月11日</code><a href="https://docs.whatap.io/ja/blog/2023-4q-summary#nodejs-agent-v0483-2023%E5%B9%B412%E6%9C%8811%E6%97%A5" class="hash-link" aria-label="nodejs-agent-v0483-2023年12月11日への直接リンク" title="nodejs-agent-v0483-2023年12月11日への直接リンク">​</a></h4>
 <ul>
 <li><code class="Feature">Feature</code>エージェントオプションの追加</li>
@@ -4040,7 +4295,7 @@
 <p><code class="New">New</code>Topオブジェクト情報収集カテゴリの追加</p>
 </li>
 <li>
-<p><code class="New">New</code>プラン(Plan)をリアルタイムで照会する時、JSON形式で照会できる機能を追加</p>
+<p><code class="New">New</code>Planをリアルタイムで照会する時、JSON形式で照会できる機能を追加</p>
 </li>
 <li>
 <p><code class="New">New</code>テーブルレイアウトのリアルタイム照会</p>
@@ -4061,10 +4316,10 @@
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos">XOS<a href="https://docs.whatap.io/ja/blog/2023-4q-summary#xos" class="hash-link" aria-label="XOSへの直接リンク" title="XOSへの直接リンク">​</a></h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id="xos-v116j-2023年10月13日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/db/xos-1_1_6j">xos v1.1.6j</a></code> <code class="changelog-date">2023年10月13日</code><a href="https://docs.whatap.io/ja/blog/2023-4q-summary#xos-v116j-2023%E5%B9%B410%E6%9C%8813%E6%97%A5" class="hash-link" aria-label="xos-v116j-2023年10月13日への直接リンク" title="xos-v116j-2023年10月13日への直接リンク">​</a></h4>
 <ul>
 <li>
-<p><code class="New">New</code>プロセス(process)モニタリング機能の追加。プロセスの実行状態がモニタリングできます。</p>
+<p><code class="New">New</code>プロセス(process)モニタリング機能の追加: プロセスの実行状況がモニタリングできます。</p>
 </li>
 <li>
-<p><code class="New">New</code>データベースサーバーのIP一覧の収集。秒単位(最小3秒)で周期(interval)を設定すると収集できます。</p>
+<p><code class="New">New</code>データベースサーバーのIP一覧の収集: 秒単位(最小3秒)で時間間隔(interval)を設定すると収集されます。</p>
 </li>
 </ul></div></div></details>
 <br>
@@ -4106,10 +4361,10 @@
 <p><code class="Feature">Feature</code>ユーザーID設定インターフェイスの追加</p>
 </li>
 <li>
-<p><code class="Feature">Feature</code>必須収集ユーザーID設定インターフェイスの追加</p>
+<p><code class="Feature">Feature</code>必須で収集するユーザーIDを設定できるインターフェイスを追加</p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <code>Iframe</code>で読み込まれたページの場合は収集対象から除外</p>
+<p><code class="Feature">Feature</code> <code>Iframe</code>でロードされたページの場合は収集対象から除外</p>
 </li>
 </ul></div></div></details>
 <br>
@@ -4130,16 +4385,16 @@
 <p><code class="Feature">Feature</code> <span class="uitext">ログ検索</span>メニューからログ検索フィルター文法ガイドUIを追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">ログ検索</span>、<span class="uitext">ログトレンド</span>、<span class="uitext">ログTail</span>メニューから<span class="uitext">タイムスタンプ</span>、<span class="uitext">ログ</span>のみを確認できる全体画面切り替え機能の追加。画面右上の<img loading="lazy" src="https://docs.whatap.io/ja/img/ic-fullscreen.svg" alt="全画面アイコン" width="auto" height="auto">ボタンを選択してください。 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">ログ検索</span>、<span class="uitext">ログトレンド</span>、<span class="uitext">ログTail</span>メニューから<span class="uitext">タイムスタンプ</span>、<span class="uitext">ログ</span>のみを確認できる全体画面切り替え機能の追加。画面右上にある<img loading="lazy" src="https://docs.whatap.io/ja/img/ic-fullscreen.svg" alt="全画面アイコン" width="auto" height="auto">ボタンを選択します。 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_110_x"><code class="changelog-service">Service 1.110.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">ログ</span> &gt; <span class="uitext">ログ設定</span> &gt; <span class="uitext">ログプライマリパーサ設定</span>タブからパーサを追加する場合、<span class="uitext">ログ検出条件</span>の検索値入力時の予約語に対する有効性検証を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">ログ</span> &gt; <span class="uitext">ログ設定</span> &gt; <span class="uitext">ログプライマリパーサ設定</span>タブでパーサを追加する場合、<span class="uitext">ログ検出条件</span>の検索キーワードを入力する際に予約語に対する有効性検証を追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_112_x"><code class="changelog-service">Service 1.112.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">ログ設定</span>メニューから<span class="uitext">高速インデックス</span>の設定内容をJSON形式としてエクスポート、またはインポートする機能の追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">ログ設定</span>メニューから<span class="uitext">高速インデックス</span>の設定内容をJSON形式でエクスポート、またはインポートする機能の追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> <span class="uitext">ログ設定</span>メニューから<span class="uitext">ログプライマリパーサ設定</span>、<span class="uitext">ログセカンダリーパーサの設定</span>の内容をJSON形式としてエクスポート、またはインポートする機能の追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
+<p><code class="Feature">Feature</code> <span class="uitext">ログ設定</span>メニューから<span class="uitext">ログプライマリパーサ設定</span>、<span class="uitext">ログセカンダリーパーサの設定</span>の内容をJSON形式でエクスポート、またはインポートする機能の追加 <code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/service/service-1_114_x"><code class="changelog-service">Service 1.114.0​</code></a></code></p>
 </li>
 </ul></div></div></details>
 <br>]]></content>
@@ -4445,7 +4700,7 @@
 <details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>エージェントガイド</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v136-2023年9月25日"><code class="changelog-service">Kubernetes Agent v1.3.6</code> <code class="changelog-date">2023年9月25日</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#kubernetes-agent-v136-2023%E5%B9%B49%E6%9C%8825%E6%97%A5" class="hash-link" aria-label="kubernetes-agent-v136-2023年9月25日への直接リンク" title="kubernetes-agent-v136-2023年9月25日への直接リンク">​</a></h4><ul>
 <li><code class="Feature">Feature</code>ノード一覧改編のためのノード情報(クラスターバージョン、ノード状態など)を追加</li>
 </ul><h4 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes-agent-v137-2023年9月27日"><code class="changelog-service">Kubernetes Agent v1.3.7</code> <code class="changelog-date">2023年9月27日</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#kubernetes-agent-v137-2023%E5%B9%B49%E6%9C%8827%E6%97%A5" class="hash-link" aria-label="kubernetes-agent-v137-2023年9月27日への直接リンク" title="kubernetes-agent-v137-2023年9月27日への直接リンク">​</a></h4><ul>
-<li><code class="Feature">Feature</code>変更されるアプリケーション一覧メニューから、ノード一覧連動のためのキー値を追加</li>
+<li><code class="Feature">Feature</code> 更新予定のアプリケーション一覧メニューから、ノード一覧と連携するためのキー値を追加</li>
 </ul></div></div></details>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="database"><code>Database</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#database" class="hash-link" aria-label="databaseへの直接リンク" title="databaseへの直接リンク">​</a></h2>
@@ -4531,7 +4786,7 @@
 <p>WhaTap2023年第3四半期<code>Browser</code>商品の注目すべき新機能と変更事項により<em><strong>ページロードヒットマップ</strong></em>メニューの改善と<span class="uitext">ブラウザエラー</span>エラーの詳細追加について紹介します。</p>
 <p><em><strong>ページロードヒットマップ</strong></em>メニューの場合、詳細ページのロードデータにOSバージョンとクライアントIP情報が追加され、フィルター機能を新たに提供します。</p>
 <p>これから<span class="uitext">ブラウザエラー</span>メニューの<em><strong>エラーメッセージテーブル</strong></em>一覧でエラーメッセージを選択すると、エラーメッセージに基づいてエラーに関する詳細な統計情報を確認できます。 それだけでなく、時間帯別に発生したエラーログも確認できます。</p>
-<img loading="lazy" src="https://docs.whatap.io/ja/img/browser-error-details-log.png" alt="Error log 분기 예시" width="1200" height="638">
+<img loading="lazy" src="https://docs.whatap.io/ja/img/browser-error-details-log.png" alt="Error log分岐の例" width="1200" height="638">
 <p>以下の概要案内により、2023年第3四半期<code>Browser</code>製品の新規機能および主な変更事項を当該リリースバージョンと一緒に確認してみてください。</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>新規機能および主な変更事項のご案内</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="ダッシュボード">ダッシュボード​<a href="https://docs.whatap.io/ja/blog/2023-3q-summary#%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89" class="hash-link" aria-label="ダッシュボード​への直接リンク" title="ダッシュボード​への直接リンク">​</a></h4>
 <ul>
@@ -4553,10 +4808,10 @@
 <details class="details_lb9f alert alert--info details_b_Ee changelog2" data-collapsed="true"><summary><b>エージェントガイド</b></summary><div><div class="collapsibleContent_i85q"><h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v121-2023年7月6日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/browser/browser-1_2_1">Browser Agent v1.2.1</a></code> <code class="changelog-date">2023年7月6日</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#browser-agent-v121-2023%E5%B9%B47%E6%9C%886%E6%97%A5" class="hash-link" aria-label="browser-agent-v121-2023年7月6日への直接リンク" title="browser-agent-v121-2023年7月6日への直接リンク">​</a></h4>
 <ul>
 <li>
-<p><code class="Feature">Feature</code> 同一エラーの場合は5秒に1回収集するよう設定</p>
+<p><code class="Feature">Feature</code> 同じエラーの場合は、5秒に1回収集するよう設定</p>
 </li>
 <li>
-<p><code class="Feature">Feature</code> Webブラウザエージェントファイル内にバージョン表記</p>
+<p><code class="Feature">Feature</code> WhaTap Browserエージェントファイルにバージョン表記</p>
 </li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v130-2023年9月6日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/browser/browser-1_3_0">Browser Agent v1.3.0</a></code> <code class="changelog-date">2023年9月6日</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#browser-agent-v130-2023%E5%B9%B49%E6%9C%886%E6%97%A5" class="hash-link" aria-label="browser-agent-v130-2023年9月6日への直接リンク" title="browser-agent-v130-2023年9月6日への直接リンク">​</a></h4>
@@ -4576,11 +4831,11 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="browser-agent-v131-2023年9月25日"><code class="changelog-service"><a href="https://docs.whatap.io/ja/release-notes/browser/browser-1_3_1">Browser Agent v1.3.1</a></code> <code class="changelog-date">2023年9月25日</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#browser-agent-v131-2023%E5%B9%B49%E6%9C%8825%E6%97%A5" class="hash-link" aria-label="browser-agent-v131-2023年9月25日への直接リンク" title="browser-agent-v131-2023年9月25日への直接リンク">​</a></h4>
 <ul>
-<li><code class="Feature">Feature</code><code>cookieSecure</code>オプションの追加。ブラウザエージェントがブラウザクッキーストレージにuser id、session idなどの値を保存する時に、secureオプションを設定できます。</li>
+<li><code class="Feature">Feature</code><code>cookieSecure</code>オプションの追加。WhaTap Browserエージェントがブラウザクッキーストレージにuser id、session idなどの値を保存する際に、secureオプションを設定できます。</li>
 </ul></div></div></details>
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="network"><code>Network</code><a href="https://docs.whatap.io/ja/blog/2023-3q-summary#network" class="hash-link" aria-label="networkへの直接リンク" title="networkへの直接リンク">​</a></h2>
-<p>WhaTap2023年第3四半期にネットワーク間の混雑や障害を把握し、ユーザのネットワーク性能改善のためにプロセスのネットワーク情報を収集する<strong>ネットワークパフォーマンスモニタリング</strong>(<strong>Network Performance Monitoring</strong>) 製品ベータサービスがリリースされました。 商品の詳細については、<a href="https://docs.whatap.io/npm/introduction" target="_blank" rel="noopener noreferrer">次のドキュメント</a>を参照してください。</p>
+<p>WhaTap2023年第3四半期にネットワーク間の混雑や障害を把握し、ユーザのネットワーク性能改善のためにプロセスのネットワーク情報を収集する<strong>ネットワークパフォーマンスモニタリング</strong>(<strong>Network Performance Monitoring</strong>) 製品ベータサービスがリリースされました。 商品の詳細については、<a href="https://docs.whatap.io/npm/introduction" target="_blank" rel="noopener noreferrer">次の文書</a>を参照してください。</p>
 <br>
 <!-- -->
 <!-- -->
