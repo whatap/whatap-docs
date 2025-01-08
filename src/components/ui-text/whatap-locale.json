@@ -47342,7 +47342,7 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
     "service_id": "DSC08008"
@@ -48453,7 +48453,7 @@
   },
   "NTC08194": {
     "en": "An unknown error occurred. Please try again later.",
-    "ja": "不明なエラーが発生しました。しばらくしてからもう一度お試しください。",
+    "ja": "不明なエラーが発生しました。しばらくしてからもう一度進めてください。",
     "ko": "알 수 없는 오류가 발생했습니다. 잠시 후 다시 진행하세요.",
     "service_id": "NTC08194"
   },
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -49316,7 +49316,7 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
     "service_id": "DSC08338"
@@ -49485,7 +49485,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果を選択",
+    "ja": "検索結果の選択",
     "ko": "검색 결과 선택",
     "service_id": "CNT08366"
   },
@@ -49760,7 +49760,7 @@
     "service_id": "TTL08411"
   },
   "ITM08412": {
-    "en": "Pop-up notification",
+    "en": "pop-up notification",
     "ja": "ポップアップ通知",
     "ko": "팝업 알림",
     "service_id": "ITM08412"
@@ -49844,7 +49844,7 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
     "service_id": "DSC08426"
@@ -49875,7 +49875,7 @@
   },
   "DSC08431": {
     "en": "This node maintains a low usage level most of the time, but <b>occasionally encounters moderate loads on {resources}</b>. To ensure stable operation, it is recommended to periodically monitor for peak load times.",
-    "ja": "このノードはほとんどの時間にわたって余裕を持っていますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。安定した運用が必要な場合は、定期的に負荷が発生した時点での監視をお勧めします。",
+    "ja": "このノードは、ほとんどの時間にわたって余裕のある使用量を維持しますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。モニタリングをお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
     "service_id": "DSC08431"
   },
@@ -50300,7 +50300,7 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "<b>Add the script file to the {path} path</b>.",
+    "en": "Add the script file to <b>{path}</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
     "service_id": "DSC08502"
@@ -50805,13 +50805,13 @@
   },
   "DSC08588": {
     "en": "After performing a simulation to see if the log is successfully parsed with the entered pattern, register the pattern.",
-    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
+    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "service_id": "DSC08588"
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須であり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
+    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -51189,7 +51189,7 @@
   },
   "DSC08652": {
     "en": "The <code class='_copy'>{ingressName}</code> Ingress is created in <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "service_id": "DSC08652"
   },
@@ -51483,7 +51483,7 @@
   },
   "CNT08701": {
     "en": "A subscription for AWS Marketplace is required. Once the subscription is confirmed, you can use the WhaTap services.",
-    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
+    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "service_id": "CNT08701"
   },
@@ -51620,7 +51620,7 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Update the agent version to the latest version.",
+    "en": "Please update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
@@ -51926,7 +51926,7 @@
     "service_id": "DSC08775"
   },
   "TTL08776": {
-    "en": "To use the “Server Inventory Map” function properly, the Agent version must meet the following:",
+    "en": "To use the \"Server Inventory Map\" function properly, the Agent version must meet the following:",
     "ja": "「サーバーインベントリマップ」機能を正常に使用するには、エージェントのバージョンが以下を満たす必要があります。",
     "ko": "\"서버 인벤토리 맵\" 기능을 정상적으로 사용하기 위해서는 Agent 버전이 다음을 충족해야 합니다.",
     "service_id": "TTL08776"
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value} 表示",
+    "ja": "{value}を表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52611,7 +52611,7 @@
   },
   "NTC08891": {
     "en": "This is a duplicate ID.",
-    "ja": "重複したIDです。",
+    "ja": "重複したID。",
     "ko": "중복된 ID 입니다.",
     "service_id": "NTC08891"
   },
@@ -52749,104 +52749,368 @@
   },
   "DSC08914": {
     "en": "This Pod is generally in <b>low resource usage</b>. Consider adding additional workloads to improve resource utilization, or review resource optimization for the cluster.",
-    "ja": "このポッドは、<b>全体的にリソース使用率が低い状態</b>です。リソース使用率を向上させるために、追加のワークロードを検討したり、クラスタのリソース最適化を確認したりできます。",
+    "ja": "このPodは、<b>全体的にリソース使用率が低い状態</b>です。リソース使用率を上げるために、追加のワークロードを検討したり、クラスタのリソース最適化を検討したりできます。",
     "ko": "이 Pod는 <b>전반적으로 리소스 사용량이 낮은 상태</b>입니다. 리소스 활용도를 높이기 위해 추가적인 워크로드를 고려하거나, 클러스터의 리소스 최적화를 검토할 수 있습니다.",
     "service_id": "DSC08914"
   },
   "DSC08915": {
     "en": "This Pod has low resource usage most of the time, but <b>intermittently encounters moderate load on {resources}</b>. Consider monitoring upon load occurrence to ensure stability.",
-    "ja": "このポッドはほとんどの時間でリソース使用率が低くなりますが、<b>断続的に{resources}で中間レベルの負荷</b>が発生します。安定した運用のために負荷が発生した時点の監視をお勧めします。",
+    "ja": "このPodはほとんどの時間でリソース使用率が低いですが、<b>断続的に{resources}で中間レベルの負荷</b>が発生しています。安定した運用のために負荷が発生する時点に対する監視が必要です。",
     "ko": "이 Pod는 대부분의 시간 동안 리소스 사용량이 낮지만, <b>간헐적으로 {resources}에서 중간 수준의 부하</b>가 발생합니다. 안정적인 운영을 위해 부하가 발생하는 시점에 대한 모니터링을 권장합니다.",
     "service_id": "DSC08915"
   },
   "DSC08916": {
     "en": "This Pod has low overall resource usage, but <b>intermittently experiences high load on {resources}</b>. Consider optimizing resources or scaling strategies for peak times.",
-    "ja": "このポッドは全体的にリソース使用量が低くなりますが、<b>断続的に{resources}で高い負荷</b>が発生します。ピーク時のリソース最適化またはスケーリング戦略を検討してください。",
+    "ja": "このPodは全体的にリソース使用量が低いですが、<b>断続的に{resources}で高レベルの負荷</b>が発生しています。ピーク時のリソース最適化、またはスケーリング対策が必要です。",
     "ko": "이 Pod는 전반적으로 리소스 사용량이 낮지만, <b>간헐적으로 {resources}에서 높은 부하</b>가 발생합니다. 피크 타임에 대비한 리소스 최적화 또는 스케일링 전략을 고려하세요.",
     "service_id": "DSC08916"
   },
   "DSC08917": {
     "en": "This Pod has normal resource usage most of the time, but <b>intermittently encounters high load on {resources}</b>. Consider balancing resources and reviewing the scaleability.",
-    "ja": "このポッドはほとんどの時間にわたって一般的なリソース使用量を維持しますが、<b>断続的に{resources}で高い負荷</b>が発生します。リソースのバランスをとり、スケーリング戦略を確認してください。",
+    "ja": "このPodはほとんどの時間で一般的なリソース使用量を維持しますが、<b>断続的に{resources}で高レベルの負荷</b>が発生しています。リソースのバランスを取り、スケーリング対策が必要です。",
     "ko": "이 Pod는 대부분의 시간 동안 일반적인 리소스 사용량을 유지하지만, <b>간헐적으로 {resources}에서 높은 부하</b>가 발생합니다. 리소스 균형을 유지하고 스케일링 전략을 검토하세요.",
     "service_id": "DSC08917"
   },
   "DSC08918": {
     "en": "This Pod is <b>operating</b> stably, with both average and peak usage of resources such as CPU and memory at normal levels.",
-    "ja": "このポッドは、CPU、メモリなどのリソースの平均および最大使用量がすべて一般的なレベルを維持しており、<b>安定的に動作</b>しています。",
+    "ja": "このPodはCPU、メモリなどのリソースの平均および最大使用量が一般的なレベルを維持していて、<b>安定的に動作</b>しています。",
     "ko": "이 Pod는 CPU, 메모리와 같은 리소스의 평균 및 최대 사용량이 모두 일반적인 수준을 유지하고 있어 <b>안정적으로 동작</b>하고 있습니다.",
     "service_id": "DSC08918"
   },
   "DSC08919": {
     "en": "This Pod is generally <b>encountering high resource usage</b>, which may result in poor performance and failures. Consider optimizing resources, balancing load, or scaling the Pod.",
-    "ja": "このポッドは<b>全体的に高いリソース使用量</b>を示しており、パフォーマンスが低下し、障害が発生する可能性があります。リソースの最適化、負荷分散、またはPodの拡張を検討してください。",
+    "ja": "このPodは<b>全体的に高レベルのリソース使用量</b>を示していて、性能低下や障害の可能性があります。リソースの最適化、負荷分散、もしくはPodの拡張への検討が必要です。",
     "ko": "이 Pod는 <b>전반적으로 높은 리소스 사용량</b>을 보이고 있어 성능 저하 및 장애 발생 가능성이 있습니다. 리소스 최적화, 부하 분산, 또는 Pod 확장을 고려하세요.",
     "service_id": "DSC08919"
   },
   "DSC08920": {
     "en": "The Pod's resource usage is <b>primarily focused on {resources}</b>. Consider mitigating overload through intensive resource monitoring and load balancing.",
-    "ja": "Podのリソース使用量は<b>主に{resources}に焦点を当てる</b>です。集中的なリソース監視と負荷分散戦略による過負荷を軽減するための措置を確認してください。",
+    "ja": "Podのリソース使用量が<b>主に{resources}に集中しています。</b>焦点を当てたリソース監視と、負荷分散対策を通じて過負荷を軽減する必要があります。",
     "ko": "Pod의 리소스 사용이 <b>주로 {resources}에 집중</b>되어 있습니다. 집중적인 리소스 모니터링과 부하 분산 전략을 통해 과부하를 완화하는 조치를 검토하세요.",
     "service_id": "DSC08920"
   },
   "TLT08921": {
-    "en": "There is no PV associated with the PVC.",
-    "ja": "PVCに関連付けられたPVはありません。",
+    "en": "There is no PV connected to PVC.",
+    "ja": "PVCにバインドされたPVがありません。",
     "ko": "PVC와 연결된 PV가 없습니다.",
     "service_id": "TLT08921"
   },
   "TLT08922": {
-    "en": "There is no PVC connected to the PV.",
-    "ja": "PVに関連付けられたPVCはありません。",
+    "en": "There is no PVC connected to PV.",
+    "ja": "PVにバインドされたPVCがありません。",
     "ko": "PV와 연결된 PVC가 없습니다.",
     "service_id": "TLT08922"
   },
   "DSC08923": {
-    "en": "It is ready to use, not yet bound to any PVC.",
-    "ja": "まだどのPVCにもバインドされていない、使用可能な状態です。",
+    "en": "It is available for use, not yet bound to any PVC.",
+    "ja": "まだどのPVCにもバインドされていなく、使用可能な状態です。",
     "ko": "아직 어떤 PVC에도 바인딩되지 않은, 사용 가능한 상태입니다.",
     "service_id": "DSC08923"
   },
   "DSC08924": {
     "en": "It is bound to a specific PVC.",
-    "ja": "特定のPVCにバインドされている状態。",
+    "ja": "特定のPVCにバインドされた状態です。",
     "ko": "특정 PVC에 바인딩된 상태입니다.",
     "service_id": "DSC08924"
   },
   "DSC08925": {
-    "en": "The PVC has been deleted, but has not yet been returned.",
-    "ja": "PVCが削除されたがまだ返されていません。",
+    "en": "The PVC has been deleted, but not yet returned.",
+    "ja": "PVCが削除されてからまだ返されていません。",
     "ko": "PVC가 삭제되었으나, 아직 반환되지 않은 상태입니다.",
     "service_id": "DSC08925"
   },
   "DSC08926": {
-    "en": "Automatic return has failed and has become unusable.",
-    "ja": "自動返却などに失敗して使用できなくなった状態です。",
+    "en": "Automatic return or equivalent failed so it is unavailable.",
+    "ja": "自動返却などに失敗したため、使用できなくなった状態です。",
     "ko": "자동 반환 등에 실패해 사용할 수 없게 된 상태입니다.",
     "service_id": "DSC08926"
   },
   "DSC08927": {
-    "en": "There are no matched PVs yet or they are waiting for provisioning.",
-    "ja": "まだ一致したPVが存在しないか、プロビジョニングを待っている状態。",
+    "en": "There is no matched PV or it is waiting to be provisioned.",
+    "ja": "まだバインドされたPVが存在しないか、プロビジョニングを待っています。",
     "ko": "아직 매칭된 PV가 없거나 프로비저닝 대기 중인 상태입니다.",
     "service_id": "DSC08927"
   },
   "DSC08928": {
-    "en": "It is bound to PV and is currently in use.",
+    "en": "It is bound to PV and is in use.",
     "ja": "PVにバインドされ、現在使用中の状態です。",
     "ko": "PV에 바인딩되어 현재 사용 중인 상태입니다.",
     "service_id": "DSC08928"
   },
   "DSC08929": {
-    "en": "The bound PV has disappeared or is no longer valid, so it does not meet the requirements.",
-    "ja": "バインドされたPVが消えているか、もはや有効ではなく、要件を満たしていません。",
+    "en": "The bound PV has disappeared or is no longer valid, and thus no longer meets the requirements.",
+    "ja": "バインドされたPVがなくなっているか、もう有効ではなく、リクエストを満たしていません。",
     "ko": "바인딩되었던 PV가 사라지거나 더 이상 유효하지 않아, 요구사항을 충족하지 못한 상태입니다.",
     "service_id": "DSC08929"
   },
+  "ITM08931": {
+    "en": "Add filter with not equal",
+    "ja": "not equalでフィルタを追加",
+    "ko": "not equal로 필터 추가",
+    "service_id": "ITM08931"
+  },
+  "ITM08932": {
+    "en": "Add filter with equal",
+    "ja": "equalでフィルタを追加する",
+    "ko": "equal로 필터 추가",
+    "service_id": "ITM08932"
+  },
+  "DSC08933": {
+    "en": "Search for the field name.",
+    "ja": "フィールド名を検索してください。",
+    "ko": "필드명을 검색하세요.",
+    "service_id": "DSC08933"
+  },
+  "DSC08934": {
+    "en": "The average {resource} usage is appropriate for <code>limit</code>.",
+    "ja": "平均{resource}使用率は<code>limit</code>と比較して適切なレベルです。",
+    "ko": "평균 {resource} 사용량이 <code>limit</code> 대비 적절한 수준입니다.",
+    "service_id": "DSC08934"
+  },
+  "DSC08935": {
+    "en": "The average {resource} usage is appropriate for the node resource.",
+    "ja": "平均 {resource} 使用量は、ノードのリソースに対して適切なレベルです。",
+    "ko": "평균 {resource} 사용량이 노드 자원 대비 적절한 수준입니다.",
+    "service_id": "DSC08935"
+  },
+  "DSC08936": {
+    "en": "The average {resource} usage is close to <b><code>request</code>, possibly causing performance degradation. <b>Adjust the <code>request</code> settings</b>.",
+    "ja": "平均{resource}使用率が<b> <code> request </code>に近いため、パフォーマンスが低下する可能性</b>があります。 <b> <code> request </code>設定を調整</b>します。",
+    "ko": "평균 {resource} 사용량이 <b><code>request</code>에 근접하여 성능 저하 가능성</b>이 있습니다. <b><code>request</code> 설정을 조정</b>하세요.",
+    "service_id": "DSC08936"
+  },
+  "DSC08937": {
+    "en": "The average {resource} usage is very high compared to <b><code>limit</code>, possibly causing resource shortage or performance degradation. <b>Adjust the <code>limit</code> setting or increase the resources.</b>",
+    "ja": "平均{resource}使用率は<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
+    "ko": "평균 {resource} 사용량이 <b><code>limit</code> 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
+    "service_id": "DSC08937"
+  },
+  "DSC08938": {
+    "en": "The maximum {resource} usage is stable compared to <code>limit</code>.",
+    "ja": "最大{resource}使用率は<code>limit</code>と比較して安定したレベルです。",
+    "ko": "최대 {resource} 사용량이 <code>limit</code> 대비 안정적인 수준입니다.",
+    "service_id": "DSC08938"
+  },
+  "DSC08939": {
+    "en": "The maximum {resource} usage is stable compared to node resources.",
+    "ja": "最大{resource}使用量は、ノード・リソースに対して安定したレベルです。",
+    "ko": "최대 {resource} 사용량이 노드 자원 대비 안정적인 수준입니다.",
+    "service_id": "DSC08939"
+  },
+  "DSC08940": {
+    "en": "The maximum {resource} usage is <b>approaching the <code>limit</code>. Monitor the usage increase.",
+    "ja": "最大{resource}使用率は<b> <code> limit </code>に近い</b>です。使用量の増加を監視してください。",
+    "ko": "최대 {resource} 사용량이 <b><code>limit</code>에 근접</b>하고 있습니다. 사용량 증가를 모니터링하세요.",
+    "service_id": "DSC08940"
+  },
+  "DSC08941": {
+    "en": "Maximum {resource} usage is <b>high compared to node resources</b>. Monitor the usage increase.",
+    "ja": "最大{resource}使用率は<b>ノードリソースに対して高いレベル</b>です。使用量の増加を監視してください。",
+    "ko": "최대 {resource} 사용량이 <b>노드 자원 대비 높은 수준</b>입니다. 사용량 증가를 모니터링하세요.",
+    "service_id": "DSC08941"
+  },
+  "DSC08942": {
+    "en": "The maximum {resource} usage is <b>approaching or exceeding the <code>limit</code>, possibley causing poor performance or resource conflicts. Adjust the <code>limit</code> setting or increase the resources.",
+    "ja": "最大{resource}使用率が<b> <code>limit</code>に近づくか超えているため、パフォーマンスの低下やリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ko": "최대 {resource} 사용량이 <b><code>limit</code>에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
+    "service_id": "DSC08942"
+  },
+  "DSC08943": {
+    "en": "The maximum {resource} usage <b>is close to or exceeds the node resource limit, possibly causing performance degradation or resource conflicts</b>. Adjust the <code>limit</code> setting or increase the resources.",
+    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下またはリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ko": "최대 {resource} 사용량이 <b>노드 가용 자원에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
+    "service_id": "DSC08943"
+  },
+  "DSC08944": {
+    "en": "The process of acquiring Netstat topology does not provide an automatic update because it causes a load to the agent. <br>Data is retrieved upon user request via the Search button.",
+    "ja": "Netstatトポロジーを取得する過程では、エージェントに負荷が掛かるため、自動更新機能を提供していません。<br>検索ボタンをクリックして、ユーザーからのリクエストがある場合、データを参照します。",
+    "ko": "Netstat 토폴로지를 취득하는 과정은 에이전트의 부하를 유발하므로 자동 갱신 기능을 제공하지 않습니다.<br>검색 버튼을 통해 사용자의 요청이 있는 경우 데이터를 조회합니다.",
+    "service_id": "DSC08944"
+  },
+  "DSC08945": {
+    "en": "The applications included in the project, the listening information, and outbound calls of the applications are expressed as nodes. <br> The relationship with the listening port is expressed as a straight line, and the relationship with the outbound call is expressed as a curve.",
+    "ja": "プロジェクトに含まれるアプリケーションと、アプリケーションのリスニング情報、<br>アウトバウンド呼び出し情報をノードとして表示します。<br>リスニングポートとの関係は直線として、アウトバウンドの呼び出し情報との関係は曲線として表示します。",
+    "ko": "프로젝트에 포함된 애플리케이션과 애플리케이션의 리스닝 정보, 아웃바운드 호출 정보를 노드로 표현합니다.<br>리스닝 포트와의 관계는 직선으로 아웃바운드 호출 정보와의 관계는 곡선으로 표현합니다.",
+    "service_id": "DSC08945"
+  },
+  "DSC08946": {
+    "en": "Update of the agent installed in the Windows environment",
+    "ja": "Windows環境にインストールされたエージェントの更新です。",
+    "ko": "윈도우 환경에 설치된 에이전트의 업데이트",
+    "service_id": "DSC08946"
+  },
+  "DSC08947": {
+    "en": "The agent installed in the Windows environment does not support a self-update.",
+    "ja": "Windows環境にインストールされたエージェントは、自己更新機能を提供していません。",
+    "ko": "윈도우 환경에 설치된 에이전트는 자체 업데이트 기능을 지원하지 않습니다.",
+    "service_id": "DSC08947"
+  },
+  "DSC08948": {
+    "en": "Reinstall the agent to the latest version or put the latest version of whatap.agent.dbx-*.jar in the existing folder and then register the service again.",
+    "ja": "最新のエージェントに再インストールするか、最新のwhatap.agent.dbx-*.jarを既存のエージェントフォルダに入れてサービスを再登録してください。",
+    "ko": "최신 에이전트로 재설치 하시거나 최신 whatap.agent.dbx-*.jar를 기존의 에이전트 폴더에 넣고 서비스를 재등록해주세요.",
+    "service_id": "DSC08948"
+  },
+  "DSC08949": {
+    "en": "install_WindowsService.bat delete WhatapDBXAgent (previous service name)",
+    "ja": "install_WindowsService.bat delete WhatapDBXAgent (既存のサービス名)",
+    "ko": "install_WindowsService.bat delete WhatapDBXAgent (기존 서비스명)",
+    "service_id": "DSC08949"
+  },
+  "DSC08950": {
+    "en": "install_WindowsService.bat create WhatapDBXAgent (previous service name)",
+    "ja": "install_WindowsService.bat create WhatapDBXAgent (既存のサービス名)",
+    "ko": "install_WindowsService.bat create WhatapDBXAgent (기존 서비스명)",
+    "service_id": "DSC08950"
+  },
+  "DSC08951": {
+    "en": "The average {resource} usage is <b><code>very low compared to the requests</code>, causing resource waste. Adjust the <code>request</code> settings.",
+    "ja": "平均{resource}使用量が<b> <code> request </code>と比較して非常に低く、リソースの無駄遣いが発生します</b>。 <code>request</code>設定を調整してください。",
+    "ko": "평균 {resource} 사용량이 <b><code>request</code> 대비 매우 낮아 리소스 낭비가 발생</b>하고 있습니다. <code>request</code> 설정을 조정하세요.",
+    "service_id": "DSC08951"
+  },
+  "DSC08952": {
+    "en": "The average {resource} usage is low compared to <code>limit</code>.",
+    "ja": "平均{resource}使用量が<code>limit</code>と比較して低いです。",
+    "ko": "평균 {resource} 사용량이 <code>limit</code> 대비 낮습니다.",
+    "service_id": "DSC08952"
+  },
+  "DSC08953": {
+    "en": "The average {resource} usage is low compared to node resources.",
+    "ja": "平均 {resource} 使用量がノードのリソースと比較して低いです。",
+    "ko": "평균 {resource} 사용량이 노드 자원 대비 대비 낮습니다.",
+    "service_id": "DSC08953"
+  },
+  "DSC08954": {
+    "en": "The average {resource} usage is appropriate compared to <code>requests</code>.",
+    "ja": "平均{resource}使用量が<code>request</code>と比較して適切なレベルです。",
+    "ko": "평균 {resource} 사용량이 <code>request</code> 대비 적절한 수준입니다.",
+    "service_id": "DSC08954"
+  },
+  "DSC08955": {
+    "en": "The average {resource} usage is <b>very high compared to node resources, possibly causing resource shortage or performance degradation. Adjust the <b><code>limit</code> setting or increase the resources.</b>",
+    "ja": "平均{resource}使用量が<b>ノードのリソースと比較して非常に高く、リソース不足、または性能低下の恐れ</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
+    "ko": "평균 {resource} 사용량이 <b>노드 자원 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
+    "service_id": "DSC08955"
+  },
+  "TLT08957": {
+    "en": "Enter the region of the DB you want to monitor. If you enter a different region, you will not be able to view metrics.",
+    "ja": "監視したいDBのリージョンを入力してください。他のリージョンを入力すると、マトリクスが照会できません。",
+    "ko": "모니터링하려는 DB의 리전을 입력하세요. 다른 리전을 입력하면 매트릭을 조회할 수 없습니다.",
+    "service_id": "TLT08957"
+  },
+  "TTL08958": {
+    "en": "{object} timeline",
+    "ja": "{object}タイムライン",
+    "ko": "{object} 타임라인",
+    "service_id": "TTL08958"
+  },
+  "TTL08959": {
+    "en": "Resource load statistics details",
+    "ja": "リソースロード統計の詳細",
+    "ko": "리소스 로드 통계 상세",
+    "service_id": "TTL08959"
+  },
+  "TTL08960": {
+    "en": "Resource page load count trend",
+    "ja": "リソースページのロード数の推移",
+    "ko": "리소스 페이지 로드 수 추이",
+    "service_id": "TTL08960"
+  },
+  "TTL08961": {
+    "en": "Resource page load time trend",
+    "ja": "リソースページのロード時間の推移",
+    "ko": "리소스 페이지 로드 시간 추이",
+    "service_id": "TTL08961"
+  },
+  "TTL08962": {
+    "en": "Resource page load size trend",
+    "ja": "リソースページのロードサイズの推移",
+    "ko": "리소스 페이지 로드 사이즈 추이",
+    "service_id": "TTL08962"
+  },
+  "TTL08963": {
+    "en": "Resource load timeline",
+    "ja": "リソースロードタイムライン",
+    "ko": "리소스 로드 타임라인",
+    "service_id": "TTL08963"
+  },
+  "TTL08964": {
+    "en": "Average time per SQL",
+    "ja": "SQL当りの平均時間",
+    "ko": "SQL 당 평균 시간",
+    "service_id": "TTL08964"
+  },
+  "TTL08965": {
+    "en": "Average time per HTTP call",
+    "ja": "HTTP呼出し当りの平均時間",
+    "ko": "HTTP 호출 당 평균 시간",
+    "service_id": "TTL08965"
+  },
+  "TTL08966": {
+    "en": "Average time per SQL patch",
+    "ja": "SQLパッチ当りの平均時間",
+    "ko": "SQL 패치 당 평균 시간",
+    "service_id": "TTL08966"
+  },
+  "TTL08967": {
+    "en": "Today's Syslog",
+    "ja": "本日Syslog",
+    "ko": "금일 Syslog",
+    "service_id": "TTL08967"
+  },
+  "ITM08968": {
+    "en": "Resource size",
+    "ja": "リソースサイズ",
+    "ko": "리소스 사이즈",
+    "service_id": "ITM08968"
+  },
+  "ITM08969": {
+    "en": "Resource load count",
+    "ja": "リソースロード数",
+    "ko": "리소스 로드 수",
+    "service_id": "ITM08969"
+  },
+  "TTL08970": {
+    "en": "Current event status",
+    "ja": "進行中のイベントの状況",
+    "ko": "진행 중 이벤트 현황",
+    "service_id": "TTL08970"
+  },
+  "TTL08971": {
+    "en": "Restart count trend",
+    "ja": "再起動数の推移",
+    "ko": "재기동 수 추이",
+    "service_id": "TTL08971"
+  },
+  "TTL08972": {
+    "en": "Trend of number of preemption attempts",
+    "ja": "プリエンプション試行回数の推移",
+    "ko": "선점 시도 횟수 추이",
+    "service_id": "TTL08972"
+  },
+  "TTL08973": {
+    "en": "Trend of number of victims of preemption",
+    "ja": "プリエンプションの被害者数の推移",
+    "ko": "선점 피해자 수 추이",
+    "service_id": "TTL08973"
+  },
+  "TTL08974": {
+    "en": "Trends by Pending Pods Reason",
+    "ja": "Pending Pods Reasonによる推移",
+    "ko": "Pending Pods Reason별 추이",
+    "service_id": "TTL08974"
+  },
+  "BTN08975": {
+    "en": "Pod Startup Analysis",
+    "ja": "Pod開始性能分析",
+    "ko": "Pod 시작 분석",
+    "service_id": "BTN08975"
+  },
   "": {
-    "": "",
     "en": "#VALUE!",
     "ja": "#VALUE!",
+    "": "",
     "service_id": "#N/A"
   },
   "freetrial": {
@@ -54144,15 +54408,20 @@
     "ja": "URLリスト",
     "ko": "URL 목록"
   },
-  "side_urlDashboard": {
-    "en": "URL Dashboard",
-    "ja": "URL Dashboard",
-    "ko": "URL 대시보드"
+  "side_urlStatusList": {
+    "en": "URL List",
+    "ja": "URL List",
+    "ko": "URL 리스트"
   },
-  "side_urlErrorDashboard": {
-    "en": "Error URL",
-    "ja": "Error URL",
-    "ko": "비정상 URL"
+  "side_urlStatusDashboard": {
+    "en": "URL Status",
+    "ja": "URL Status",
+    "ko": "URL 현황 대시보드"
+  },
+  "side_urlErrorStatusDashboard": {
+    "en": "Error URL Status",
+    "ja": "Error URL Status",
+    "ko": "장애 URL 현황 대시보드"
   },
   "side_urlListManage": {
     "en": "URL List Manage",
@@ -54163,6 +54432,11 @@
     "en": "Monitoring Category Management",
     "ja": "Monitoring Category Management",
     "ko": "모니터링 분류 설정"
+  },
+  "side_urlRegistration": {
+    "en": "URL Registration",
+    "ja": "URL Registration",
+    "ko": "URL 등록"
   },
   "side_urlGridLayout": {
     "en": "URL Grid Layout",
