@@ -1,5 +1,5 @@
 {
-  "name": "WhaTap-Docs",
+  "name": "whatap-docs",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -50,6 +50,7 @@
     "babel-plugin-styled-components": "^2",
     "cheerio": "^1.0.0-rc.12",
     "clsx": "^2.0.0",
+    "dayjs": "^1.11.13",
     "docusaurus-plugin-image-zoom": "^2.0.0",
     "docusaurus-plugin-sass": "^0.2.6",
     "docusaurus-prince-pdf": "^1.2.1",
@@ -108,5 +109,13 @@
   },
   "engines": {
     "node": ">=18.0"
-  }
+  },
+  "description": "WhaTap Docs 문서 관리 플랫폼 Docusaurus 입니다.",
+  "main": "addheadhash.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
