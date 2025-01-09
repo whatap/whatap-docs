@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Coptic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Coptic&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap');
 
 @prince-pdf {
   -prince-pdf-page-layout: single-page;
