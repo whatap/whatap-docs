@@ -6306,6 +6306,7 @@ const sidebars = {
             'server/agent-name',
             'server/agent-network',
             'server/agent-pcounter',
+            'server/agent-resource',
           ],
         },
         'server/advanced-feature',
