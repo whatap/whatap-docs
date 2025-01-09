@@ -2,6 +2,7 @@ import React from 'react';
 import ApiDoc from '@theme/ApiDoc';
 import useSpecData from '@theme/useSpecData';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import './style.css';
 
 function CustomPage() {
   const specDataKo = useSpecData('openapi-spec');
