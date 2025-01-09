@@ -4300,6 +4300,10 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
+              customProps: {
+                badges: ['new', 'green'],
+                featured: true,
+              },
               link: {
                 type: 'doc',
                 id: 'release-notes/java-batch/index',
