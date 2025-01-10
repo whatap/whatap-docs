@@ -45454,7 +45454,7 @@
   "DSC07691": {
     "en": "If you are using managed Kubernetes such as Amazon EKS, kube-apiserver Pod information will not be displayed.",
     "ja": "Amazon EKSなどのマネージドKubernetesを使用している場合、kube-apiserver Pod情報は表示されません。",
-    "ko": "Amazon EKS 등 관리형 쿠버네티스를 사용하는 경우 kube-apiserver Pod 정보는 표시되지 않습니다.",
+    "ko": "관리형 쿠버네티스를 사용하는 경우 kube-apiserver Pod 성능 정보는 표시되지 않습니다.",
     "service_id": "DSC07691"
   },
   "DSC07692": {
@@ -46737,7 +46737,7 @@
   },
   "DSC07907": {
     "en": "- Click the ‘Add API Key’ button. ",
-    "ja": "- 「Add API Key」ボタンをクリックします。 ",
+    "ja": "- 「Add API Key」ボタンをクリックします。",
     "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
     "service_id": "DSC07907"
   },
@@ -47127,7 +47127,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "service_id": "DSC07972"
   },
@@ -47595,7 +47595,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "service_id": "DSC08050"
   },
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48344,7 +48344,7 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
     "service_id": "DSC08175"
@@ -48530,7 +48530,7 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
     "service_id": "TTL08207"
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -49760,7 +49760,7 @@
     "service_id": "TTL08411"
   },
   "ITM08412": {
-    "en": "pop-up notification",
+    "en": "Pop-up notification",
     "ja": "ポップアップ通知",
     "ko": "팝업 알림",
     "service_id": "ITM08412"
@@ -49875,7 +49875,7 @@
   },
   "DSC08431": {
     "en": "This node maintains a low usage level most of the time, but <b>occasionally encounters moderate loads on {resources}</b>. To ensure stable operation, it is recommended to periodically monitor for peak load times.",
-    "ja": "このノードは、ほとんどの時間にわたって余裕のある使用量を維持しますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。モニタリングをお勧めします。",
+    "ja": "このノードはほとんどの時間にわたって余分な使用量を維持しますが、<b>断続的に{resources}で中程度の負荷が発生する状態</b>です。モニタリングをお勧めします。",
     "ko": "이 노드는 대부분의 시간 동안 여유로운 사용량을 유지하지만, <b>간헐적으로 {resources}에서 중간 정도의 부하가 발생하는 상태</b>입니다. 안정적인 운영을 원한다면 주기적으로 부하가 발생하는 시점에 대비한 모니터링을 권장합니다.",
     "service_id": "DSC08431"
   },
@@ -50300,7 +50300,7 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "Add the script file to <b>{path}</b>.",
+    "en": "<b>Add the script file to the {path} path</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
     "service_id": "DSC08502"
@@ -50547,7 +50547,7 @@
   },
   "DSC08545": {
     "en": "The Pod with the QoS class guaranteed is in pending state. Be sure to check the node's free resources or node scheduling policy.",
-    "ja": "QoS ClassがGuaranteedのPodがPending状態です。ノードの空きリソースまたはノードスケジュールポリシーを確認してください。",
+    "ja": "QoS ClassがGuaranteedのPodがPending状態です。",
     "ko": "QoS Class가 Guaranteed인 Pod가 Pending 상태입니다. 노드의 여유 리소스 또는 노드 스케줄 정책을 확인해 주세요.",
     "service_id": "DSC08545"
   },
@@ -50589,7 +50589,7 @@
   },
   "DSC08552": {
     "en": "The Active Connection of ${oname} is ${active$connections}.",
-    "ja": "${oname} の Active Connection は ${active$connections} です。",
+    "ja": "${oname}のActive Connectionは${active$connections}です。",
     "ko": "${oname}의 Active Connection이 ${active$connections}입니다.",
     "service_id": "DSC08552"
   },
@@ -50805,7 +50805,7 @@
   },
   "DSC08588": {
     "en": "After performing a simulation to see if the log is successfully parsed with the entered pattern, register the pattern.",
-    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
+    "ja": "入力したパターンにログが正常に解析されるかどうか、シミュレーションの進行後にパターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "service_id": "DSC08588"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
+    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -51483,7 +51483,7 @@
   },
   "CNT08701": {
     "en": "A subscription for AWS Marketplace is required. Once the subscription is confirmed, you can use the WhaTap services.",
-    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
+    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "service_id": "CNT08701"
   },
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value}を表示",
+    "ja": "{value} 表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52881,7 +52881,7 @@
   },
   "DSC08937": {
     "en": "The average {resource} usage is very high compared to <b><code>limit</code>, possibly causing resource shortage or performance degradation. <b>Adjust the <code>limit</code> setting or increase the resources.</b>",
-    "ja": "平均{resource}使用率は<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
+    "ja": "平均{resource}使用率が<b> <code>limit</code>と比較して非常に高く、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
     "ko": "평균 {resource} 사용량이 <b><code>limit</code> 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
     "service_id": "DSC08937"
   },
@@ -52899,13 +52899,13 @@
   },
   "DSC08940": {
     "en": "The maximum {resource} usage is <b>approaching the <code>limit</code>. Monitor the usage increase.",
-    "ja": "最大{resource}使用率は<b> <code> limit </code>に近い</b>です。使用量の増加を監視してください。",
+    "ja": "最大{resource}使用率は<b> <code> limit</code>に近い</b>です。使用量の増加を監視してください。",
     "ko": "최대 {resource} 사용량이 <b><code>limit</code>에 근접</b>하고 있습니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08940"
   },
   "DSC08941": {
     "en": "Maximum {resource} usage is <b>high compared to node resources</b>. Monitor the usage increase.",
-    "ja": "最大{resource}使用率は<b>ノードリソースに対して高いレベル</b>です。使用量の増加を監視してください。",
+    "ja": "最大{resource}使用量が<b>ノードリソースと比較して高いレベル</b>です。",
     "ko": "최대 {resource} 사용량이 <b>노드 자원 대비 높은 수준</b>입니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08941"
   },
@@ -52917,7 +52917,7 @@
   },
   "DSC08943": {
     "en": "The maximum {resource} usage <b>is close to or exceeds the node resource limit, possibly causing performance degradation or resource conflicts</b>. Adjust the <code>limit</code> setting or increase the resources.",
-    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下またはリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下やリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
     "ko": "최대 {resource} 사용량이 <b>노드 가용 자원에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
     "service_id": "DSC08943"
   },
@@ -53072,7 +53072,7 @@
     "service_id": "ITM08969"
   },
   "TTL08970": {
-    "en": "Current event status",
+    "en": "Active event status",
     "ja": "進行中のイベントの状況",
     "ko": "진행 중 이벤트 현황",
     "service_id": "TTL08970"
@@ -53084,28 +53084,238 @@
     "service_id": "TTL08971"
   },
   "TTL08972": {
-    "en": "Trend of number of preemption attempts",
+    "en": "Preemption attempt count trend",
     "ja": "プリエンプション試行回数の推移",
     "ko": "선점 시도 횟수 추이",
     "service_id": "TTL08972"
   },
   "TTL08973": {
-    "en": "Trend of number of victims of preemption",
+    "en": "Preemption victim count trend",
     "ja": "プリエンプションの被害者数の推移",
     "ko": "선점 피해자 수 추이",
     "service_id": "TTL08973"
   },
   "TTL08974": {
-    "en": "Trends by Pending Pods Reason",
+    "en": "Trends by pending Pods reason",
     "ja": "Pending Pods Reasonによる推移",
     "ko": "Pending Pods Reason별 추이",
     "service_id": "TTL08974"
   },
   "BTN08975": {
-    "en": "Pod Startup Analysis",
+    "en": "If you are using managed Kubernetes, you will not see performance information for the kube-apiserver container.",
     "ja": "Pod開始性能分析",
     "ko": "Pod 시작 분석",
     "service_id": "BTN08975"
+  },
+  "TTL08976": {
+    "en": "Top 10 traps in recent 24 hours",
+    "ja": "最近24時 Trap Top 10",
+    "ko": "최근 24시 Trap Top 10",
+    "service_id": "TTL08976"
+  },
+  "TTL08977": {
+    "en": "Start date",
+    "ja": "開始日",
+    "ko": "시작 날짜",
+    "service_id": "TTL08977"
+  },
+  "DSC08978": {
+    "en": "If you are using the managed Kubernetes, the performance information for the kube-apiserver container does not appear.",
+    "ja": "マネージドKubernetesを使用している場合、kube-apiserverコンテナのパフォーマンス情報は表示されません。",
+    "ko": "관리형 쿠버네티스를 사용하는 경우 kube-apiserver 컨테이너 성능 정보는 표시되지 않습니다.",
+    "service_id": "DSC08978"
+  },
+  "TTL08979": {
+    "en": "Log's personal information de-identification checking",
+    "ja": "ログ個人情報の非識別チェック",
+    "ko": "로그 개인정보 비식별화 점검",
+    "service_id": "TTL08979"
+  },
+  "DSC08980": {
+    "en": "It de-identifies the accumulated logs.",
+    "ja": "以前に積み重ねられたログを非識別化します。",
+    "ko": "이전에 쌓인 로그들을 비식별화 처리합니다.",
+    "service_id": "DSC08980"
+  },
+  "ITM08981": {
+    "en": "Personal information entity",
+    "ja": "個人情報項目",
+    "ko": "개인정보 항목",
+    "service_id": "ITM08981"
+  },
+  "ITM08982": {
+    "en": "Pattern",
+    "ja": "パターン",
+    "ko": "패턴",
+    "service_id": "ITM08982"
+  },
+  "ITM08983": {
+    "en": "Whether to apply substitution",
+    "ja": "置換を適用するかどうか",
+    "ko": "치환 적용 여부",
+    "service_id": "ITM08983"
+  },
+  "ITM08984": {
+    "en": "Value to substitute",
+    "ja": "置換値",
+    "ko": "치환 값",
+    "service_id": "ITM08984"
+  },
+  "BTN08985": {
+    "en": "Start inspection",
+    "ja": "点検開始",
+    "ko": "점검 시작",
+    "service_id": "BTN08985"
+  },
+  "BTN08986": {
+    "en": "Stop inspection",
+    "ja": "チェックを中止",
+    "ko": "점검 중지",
+    "service_id": "BTN08986"
+  },
+  "TLT08987": {
+    "en": "The entered characters are substitued in the {value} format.",
+    "ja": "入力した文字は{value}形式で置き換えられます。",
+    "ko": "입력한 문자는 {value} 형식으로 치환됩니다.",
+    "service_id": "TLT08987"
+  },
+  "TLT08988": {
+    "en": "[Caution] The substitution value pattern cannot be longer than the original value.",
+    "ja": "[注意] 置換値パターンは元の値より長くできません。",
+    "ko": "[주의] 치환 값 패턴은 원본 값보다 길 수 없습니다.",
+    "service_id": "TLT08988"
+  },
+  "ITM08989": {
+    "en": "Search start time",
+    "ja": "検索開始時間",
+    "ko": "검색 시작 시간",
+    "service_id": "ITM08989"
+  },
+  "ITM08990": {
+    "en": "Search end time",
+    "ja": "検索終了時間",
+    "ko": "검색 종료 시간",
+    "service_id": "ITM08990"
+  },
+  "ITM08991": {
+    "en": "Personal information pattern",
+    "ja": "個人情報パターン",
+    "ko": "개인정보 패턴",
+    "service_id": "ITM08991"
+  },
+  "ITM08992": {
+    "en": "Inspection start time",
+    "ja": "検査作業開始時間",
+    "ko": "점검 작업 시작 시간",
+    "service_id": "ITM08992"
+  },
+  "ITM08993": {
+    "en": "Inspection end time",
+    "ja": "チェックジョブ終了時間",
+    "ko": "점검 작업 종료 시간",
+    "service_id": "ITM08993"
+  },
+  "ITM08994": {
+    "en": "Pattern matching result",
+    "ja": "パターンマッチング結果",
+    "ko": "패턴 매칭 결과",
+    "service_id": "ITM08994"
+  },
+  "ITM08995": {
+    "en": "Inspection result",
+    "ja": "検査作業結果",
+    "ko": "점검 작업 결과",
+    "service_id": "ITM08995"
+  },
+  "DSC08996": {
+    "en": "After entering the inspection conditions, click \"Start inspection.\"",
+    "ja": "確認条件を入力したら、[確認の開始]をクリックしてください。",
+    "ko": "점검 조건을 입력한 후 '점검 시작'을 클릭하세요.",
+    "service_id": "DSC08996"
+  },
+  "ITM08997": {
+    "en": "Resident registration number",
+    "ja": "住民登録番号",
+    "ko": "주민등록번호",
+    "service_id": "ITM08997"
+  },
+  "ITM08998": {
+    "en": "Passport number",
+    "ja": "パスポート番号",
+    "ko": "여권번호",
+    "service_id": "ITM08998"
+  },
+  "ITM08999": {
+    "en": "Driver's license number",
+    "ja": "運転免許番号",
+    "ko": "운전면허번호",
+    "service_id": "ITM08999"
+  },
+  "ITM09000": {
+    "en": "Foreign registration number",
+    "ja": "外国人登録番号",
+    "ko": "외국인등록번호",
+    "service_id": "ITM09000"
+  },
+  "ITM09001": {
+    "en": "Credit card number",
+    "ja": "クレジットカード番号",
+    "ko": "신용카드번호",
+    "service_id": "ITM09001"
+  },
+  "ITM09002": {
+    "en": "Mobile phone number",
+    "ja": "携帯電話番号",
+    "ko": "휴대폰번호",
+    "service_id": "ITM09002"
+  },
+  "ITM09003": {
+    "en": "Email address",
+    "ja": "メールアドレス",
+    "ko": "이메일 주소",
+    "service_id": "ITM09003"
+  },
+  "ITM09004": {
+    "en": "Bank account number",
+    "ja": "銀行口座番号",
+    "ko": "은행계좌번호",
+    "service_id": "ITM09004"
+  },
+  "ITM09005": {
+    "en": "Business registration number",
+    "ja": "事業者登録番号",
+    "ko": "사업자등록번호",
+    "service_id": "ITM09005"
+  },
+  "ITM09006": {
+    "en": "Corporate registration number",
+    "ja": "法人登録番号",
+    "ko": "법인등록번호",
+    "service_id": "ITM09006"
+  },
+  "TTL09007": {
+    "en": "Maximum recent 24-hour throughput interface",
+    "ja": "最近24時までのThroughputインターフェース",
+    "ko": "최근 24시 최대 Throughput 인터페이스",
+    "service_id": "TTL09007"
+  },
+  "TTL09008": {
+    "en": "Maximum recent 24-hour PPS interface",
+    "ja": "最近24時の最大PPSインターフェース ",
+    "ko": "최근 24시 최대 PPS 인터페이스 ",
+    "service_id": "TTL09008"
+  },
+  "DSC09009": {
+    "en": "You can monitor performance metrics, SQLs, and locks of {platform}, as well as analyzing and comparing trends over time.",
+    "ja": "{platform} のパフォーマンス指標と SQL、ロック情報をモニターし、トレンドの分析と比較を行うことができます。",
+    "ko": "{platform}의 성능 지표 및 SQL, Lock 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.",
+    "service_id": "DSC09009"
+  },
+  "BTN09010": {
+    "en": "Copy CSV",
+    "ja": "CSVコピー",
+    "ko": "CSV 복사",
+    "service_id": "BTN09010"
   },
   "": {
     "en": "#VALUE!",
@@ -54408,11 +54618,6 @@
     "ja": "URLリスト",
     "ko": "URL 목록"
   },
-  "side_urlStatusList": {
-    "en": "URL List",
-    "ja": "URL List",
-    "ko": "URL 리스트"
-  },
   "side_urlStatusDashboard": {
     "en": "URL Status",
     "ja": "URL Status",
@@ -54423,20 +54628,15 @@
     "ja": "Error URL Status",
     "ko": "장애 URL 현황 대시보드"
   },
-  "side_urlListManage": {
-    "en": "URL List Manage",
-    "ja": "URL List Manage",
+  "side_urlListManagement": {
+    "en": "URL List Management",
+    "ja": "URL List Management",
     "ko": "URL 목록 관리"
   },
-  "side_urlCategoryManage": {
-    "en": "Monitoring Category Management",
-    "ja": "Monitoring Category Management",
-    "ko": "모니터링 분류 설정"
-  },
-  "side_urlRegistration": {
-    "en": "URL Registration",
-    "ja": "URL Registration",
-    "ko": "URL 등록"
+  "side_urlClassificationManagement": {
+    "en": "Monitoring Classification Management",
+    "ja": "Monitoring Classification Management",
+    "ko": "모니터링 분류 관리"
   },
   "side_urlGridLayout": {
     "en": "URL Grid Layout",
