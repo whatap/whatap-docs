@@ -69,7 +69,7 @@ db_port=1433
 If any SSL authentication issue occurs, set the following options in the _whatap.conf_ file.
 
 ```ini title="whatap.conf"
-connect_option=?useSSL=true&verifyServerCertificate=false
+connect_option=?encrypt=true;trustServerCertificate=true
 ```
 
 :::
