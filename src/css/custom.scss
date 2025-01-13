@@ -2239,7 +2239,7 @@ main {
     code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
       color: rgb(139, 82, 255);
-      font-family: "Oleo Script";
+      font-family: "Oleo Script" !important;
       font-weight: 400;
     }
     code.btn {
