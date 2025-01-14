@@ -338,6 +338,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'db2/monitoring-intro',
+                label: 'IBM DB2',
+              },
+              {
+                type: 'doc',
                 docId: 'url/url-intro',
                 label: 'URL',
               },
@@ -556,6 +561,13 @@ const config = {
             docId: 'mongodb/monitoring-intro',
             position: "left",
             label: 'MongoDB 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'db2/monitoring-intro',
+            position: "left",
+            label: 'IBM DB2 모니터링',
             className: 'hidden',
           },
           {
