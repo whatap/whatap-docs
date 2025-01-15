@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_7_6",
+    "ver": "v2.7.6",
+    "date": "2025-01-06",
+    "Lists": [
+      {
+        "ver": "v2.7.6",
+        "hash": "v276",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code>ログの収集時にProxy IP及びpcodeを指定できるように機能を改善</p>"
+      },
+      {
+        "ver": "v2.7.6",
+        "hash": "v276",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>一部のWindowsサーバーでWhatap Infraのサービス開始時に発生する失敗現象を修正</p>"
+      }
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 [
   {
-    "url": "https://docs.whatap.io/release-notes/java/java-2_2_49",
+    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_49",
     "ver": "v2.2.49",
     "date": "2025-01-10",
     "Lists": [
@@ -9,13 +9,13 @@
         "hash": "v2249",
         "product": "Java Agent",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> log4j 로그 수집 기능 확장</p>",
-        "details": "<ul><li><p>log4j-2.17 사용 시, <code>org.apache.logging.log4j.core.layout.AbstractStringLayout</code>의 serialize를 구현한 경우에도 로그를 수집할 수 있는 기능 추가</p></li><li><p>예, AbstractStringLayout을 상속 받아 사용자 정의에 의해 serialize를 구현한 경우</p></li></ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> log4jログの収集機能拡張</p>",
+        "details": "<ul>\n<li>\n<p>log4j-2.17の使用時に、<code>org.apache.logging.log4j.core.layout.AbstractStringLayout</code>のserializeを実装した場合にもログの収集ができる機能を追加</p>\n</li>\n<li>\n<p>例え、AbstractStringLayoutを継承してユーザの定義によりserializeを実装した場合</p>\n</li>\n</ul>"
       }
     ]
   },
   {
-    "url": "https://docs.whatap.io/release-notes/java/java-2_2_48",
+    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_48",
     "ver": "v2.2.48",
     "date": "2025-01-07",
     "Lists": [
@@ -24,36 +24,36 @@
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tomcat 10 기반 spring-boot-3.0 이상 버전에서 <strong>spring-security</strong> 호출 시 발생하는 에러 수정</p>",
-        "details": "<p>에이전트에서 수집하는 상태 코드(status code)가 실제 상태 코드와 일치하도록 수정했습니다.</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tomcat 10 基盤のspring-boot-3.0以上のバージョンで<strong>spring-security</strong>呼び出し時に発生するエラーを修正</p>",
+        "details": "<p>エージェントで収集するステータスコード(status code)が実際のステータスコードと一致するように修正しました。</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tomcat 10 기반 애플리케이션에서 HTTP 호출 시 Java 에이전트 플러그인이 <strong>HttpSession attribute</strong>를 사용할 수 있도록 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tomcat 10 基盤のアプリケーションでHTTPを呼び出し時、Javaエージェントプラグインが<strong>HttpSession attribute</strong>を使用できるように修正</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 샘플링 설정 적용 시 <code>hook_service_patterns</code>로 시작하는 트랜잭션을 과도하게 수집하여 TPS가 높아지는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>サンプリング設定の適用時に<code>hook_service_patterns</code>で始まるトランザクションを過度に収集し、TPSが高くなる問題を修正</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 샘플링 설정 적용 시 APDEX 지표가 실제보다 낮게 수집되는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>サンプリング設定の適用時にAPDEXの指標が実際より低く収集される問題を修正</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 샘플링 설정 적용 시 스피드 차트에서 에러가 수집되는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>サンプリング設定の適用時に、スピードチャートでエラーが収集される問題を修正</p>"
       }
     ]
   }

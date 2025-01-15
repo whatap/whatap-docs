@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_7_6",
+    "ver": "v2.7.6",
+    "date": "2025-01-06",
+    "Lists": [
+      {
+        "ver": "v2.7.6",
+        "hash": "v276",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved the feature to allow specifying the proxy IP and pcode when collecting logs.</p>"
+      },
+      {
+        "ver": "v2.7.6",
+        "hash": "v276",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the startup failure of the WhaTap infra service in some Windows servers.</p>"
+      }
+    ]
+  }
+]

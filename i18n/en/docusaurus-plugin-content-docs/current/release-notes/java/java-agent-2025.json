@@ -1,21 +1,6 @@
 [
   {
-    "url": "https://docs.whatap.io/release-notes/java/java-2_2_49",
-    "ver": "v2.2.49",
-    "date": "2025-01-10",
-    "Lists": [
-      {
-        "ver": "v2.2.49",
-        "hash": "v2249",
-        "product": "Java Agent",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> log4j 로그 수집 기능 확장</p>",
-        "details": "<ul><li><p>log4j-2.17 사용 시, <code>org.apache.logging.log4j.core.layout.AbstractStringLayout</code>의 serialize를 구현한 경우에도 로그를 수집할 수 있는 기능 추가</p></li><li><p>예, AbstractStringLayout을 상속 받아 사용자 정의에 의해 serialize를 구현한 경우</p></li></ul>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/release-notes/java/java-2_2_48",
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_48",
     "ver": "v2.2.48",
     "date": "2025-01-07",
     "Lists": [
@@ -24,36 +9,51 @@
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tomcat 10 기반 spring-boot-3.0 이상 버전에서 <strong>spring-security</strong> 호출 시 발생하는 에러 수정</p>",
-        "details": "<p>에이전트에서 수집하는 상태 코드(status code)가 실제 상태 코드와 일치하도록 수정했습니다.</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the error when calling <strong>spring-security</strong> in spring-boot-3.0 or later based on Tomcat 10.</p>",
+        "details": "<p>Modified the status code collected by the agent to match the actual one.</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tomcat 10 기반 애플리케이션에서 HTTP 호출 시 Java 에이전트 플러그인이 <strong>HttpSession attribute</strong>를 사용할 수 있도록 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the Java agent plug-in to use <strong>HttpSession attribute</strong> when calling HTTP from Tomcat 10 based applications.</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 샘플링 설정 적용 시 <code>hook_service_patterns</code>로 시작하는 트랜잭션을 과도하게 수집하여 TPS가 높아지는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where excessive collection of transactions starting with <code>hook_service_patterns</code> when applying the sampling settings, resulting in high TPS.</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 샘플링 설정 적용 시 APDEX 지표가 실제보다 낮게 수집되는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where APDEX metrics are collected lower than actual value when applying the sampling settings.</p>"
       },
       {
         "ver": "v2.2.48",
         "hash": "v2248",
         "product": "Java Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 샘플링 설정 적용 시 스피드 차트에서 에러가 수집되는 문제 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where errors are collected in the speed chart when applying the sampling settings.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_49",
+    "ver": "v2.2.49",
+    "date": "2025-01-10",
+    "Lists": [
+      {
+        "ver": "v2.2.49",
+        "hash": "v2249",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Extended the log4j log collection feature.</p>",
+        "details": "<ul>\n<li>\n<p>Added the feature to collect logs even when serialization of <code>org.apache.logging.log4j.core.layout.AbstractStringLayout</code> is implemented when using log4j-2.17.</p>\n</li>\n<li>\n<p>For example, in case you AbstractStringLayout is inherited and custom serialization is implemented</p>\n</li>\n</ul>"
       }
     ]
   }
