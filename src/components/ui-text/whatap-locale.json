@@ -46737,7 +46737,7 @@
   },
   "DSC07907": {
     "en": "- Click the ‘Add API Key’ button. ",
-    "ja": "- 「Add API Key」ボタンをクリックします。 ",
+    "ja": "- 「Add API Key」ボタンをクリックします。",
     "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
     "service_id": "DSC07907"
   },
@@ -50811,7 +50811,7 @@
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須であり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -51796,7 +51796,7 @@
   "CNT08754": {
     "en": "Linux {linux_version} or later, Solaris {solaris_version} or later, Windows {windows_version} or later",
     "ja": "Linux{linux_version}以降、Solaris{solaris_version}以降、Windows{windows_version}以降をサポートします。",
-    "ko": "Linux {linux_version} 이상, Solaris {solaris_version} 이상, Windows {windows_version} 이상 지원",
+    "ko": "AIX {aix_version} 이상, Linux {linux_version} 이상, Solaris {solaris_version} 이상, Windows {windows_version} 이상 지원",
     "service_id": "CNT08754"
   },
   "CNT08755": {
@@ -52875,13 +52875,13 @@
   },
   "DSC08936": {
     "en": "The average {resource} usage is close to <b><code>request</code>, possibly causing performance degradation. <b>Adjust the <code>request</code> settings</b>.",
-    "ja": "平均{resource}使用率が<b> <code> request </code>に近づいてパフォーマンスが低下する可能性</b>があります。<b> <code> request </code>",
+    "ja": "平均{resource}使用率が<b> <code> request </code>に近いため、パフォーマンスが低下する可能性</b>があります。 <b> <code> request </code>設定を調整</b>します。",
     "ko": "평균 {resource} 사용량이 <b><code>request</code>에 근접하여 성능 저하 가능성</b>이 있습니다. <b><code>request</code> 설정을 조정</b>하세요.",
     "service_id": "DSC08936"
   },
   "DSC08937": {
     "en": "The average {resource} usage is very high compared to <b><code>limit</code>, possibly causing resource shortage or performance degradation. <b>Adjust the <code>limit</code> setting or increase the resources.</b>",
-    "ja": "平均{resource}使用率が<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。増やしてください。</b>",
+    "ja": "平均{resource}使用率が<b> <code>limit</code>と比較して非常に高く、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
     "ko": "평균 {resource} 사용량이 <b><code>limit</code> 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
     "service_id": "DSC08937"
   },
@@ -52899,7 +52899,7 @@
   },
   "DSC08940": {
     "en": "The maximum {resource} usage is <b>approaching the <code>limit</code>. Monitor the usage increase.",
-    "ja": "最大{resource}使用率は<b> <code> limit</code>に近い</b>です。使用量の増加を監視してください。",
+    "ja": "最大{resource}使用率は<b> <code> limit </code>に近い</b>です。使用量の増加を監視してください。",
     "ko": "최대 {resource} 사용량이 <b><code>limit</code>에 근접</b>하고 있습니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08940"
   },
@@ -53301,7 +53301,7 @@
   },
   "TTL09008": {
     "en": "Maximum recent 24-hour PPS interface",
-    "ja": "最近24時の最大PPSインターフェース",
+    "ja": "最近24時の最大PPSインターフェース ",
     "ko": "최근 24시 최대 PPS 인터페이스 ",
     "service_id": "TTL09008"
   },
@@ -53378,33 +53378,33 @@
     "service_id": "CNT09020"
   },
   "TTL09021": {
-    "en": "Take advantage of the new <b>Metrix Explorer</b>.<br/>Update your agent to the latest version and enable the <b>Category V2 option</b> to take advantage of the new <b>Metrix Explorer</b> features. Experience it in the lab.",
-    "ja": "新しい<b>メトリックスエクスプローラ</b>を活用してください。<br/>最新バージョンでエージェントを更新し、<b>Category V2オプション</b>を有効にして、新しい<b>メトリックスエクスプローラ</b>機能をラボで体験してください。",
-    "ko": "새로운 <b>메트릭스 익스플로러</b>를 활용해 보세요.<br/>최신 버전으로 에이전트를 업데이트하고 <b>Category V2 옵션</b>을 활성화하여 새로운 <b>메트릭스 익스플로러</b> 기능을 실험실에서 경험해 보세요.",
+    "en": "Experience the new Metrics Explorer",
+    "ja": "新しいメトリックスエクスプローラを体験してください",
+    "ko": "새로운 메트릭스 익스플로러를 경험해 보세요",
     "service_id": "TTL09021"
   },
   "CNT09022": {
-    "en": "<b>Metrics Explorer</b> allows you to analyze <b>past performance data</b> more intuitively. You can easily explore specific metrics for the desired server with <b>a simple mouse click</b> and quickly identify performance issues.<br/><b>Metrics Explorer</b> allows <b>collect more detailed performance data. </b> and <b>providing expanded indicators</b> further enhances the <b>accuracy</b> and <b>convenience</b> of server monitoring.<br/>With the latest agent Category V2 option Apply and utilize real-time data exploration and historical performance analysis more effectively.",
-    "ja": "<b>メトリックスエクスプローラ</b>を使用すると、<b>過去のパフォーマンスデータ</b>をより直感的に分析できます。目的のサーバーの特定の指標を<b>簡単にマウスクリック</b>するだけで、簡単にナビゲートし、パフォーマンスの問題をすばやく把握できます。 </b>と<b>拡張指標を提供</b>することで、サーバー監視の<b>正確性</b>と<b>利便性</b>強化します。<br/>最新のエージェントとCategory V2オプションを適用し、リアルタイムのデータナビゲーションと過去のパフォーマンス分析をより効果的に活用してください。",
-    "ko": "<b>메트릭스 익스플로러</b>를 통해 <b>과거 성능 데이터</b>를 보다 직관적으로 분석할 수 있습니다. 원하는 서버의 특정 지표를 <b>간편한 마우스 클릭</b>만으로 손쉽게 탐색하고 성능 이슈를 빠르게 파악할 수 있습니다.<br/><b>메트릭스 익스플로러</b>는 <b>더 세밀한 성능 데이터 수집</b>과 <b>확장된 지표 제공</b>을 통해 서버 모니터링의 <b>정확성</b>과 <b>편의성</b>을 한층 강화합니다.<br/>최신 에이전트와 Category V2 옵션을 적용하고, 실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
+    "en": "<b>Update your agent to the latest version and enable the Category V2 option</b></br>to take better advantage of real-time data exploration and historical performance analysis.",
+    "ja": "<b>最新バージョンにエージェントを更新し、Category V2オプションを有効にする</b></br>リアルタイムデータのナビゲーションと過去のパフォーマンス分析をより効果的に活用してください。",
+    "ko": "<b>최신 버전으로 에이전트를 업데이트하고 Category V2 옵션을 활성화</b>하여</br>실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
     "service_id": "CNT09022"
   },
   "DSC09023": {
-    "en": "Metrics that can be collected in 2 second increments of performance data in terms of overall utilization and 5 second increments in individual process/physical disk/NIC data have been expanded.",
-    "ja": "全体使用率の観点からパフォーマンスデータ2秒、個別プロセス/Physical Disk/NICなどのデータ5秒単位で収集可能なMetricsが拡張されました。",
-    "ko": "전체 사용율 관점의 성능 데이터 2초, 개별 프로세스/Physical Disk/NIC 등의 데이터 5초 단위로 수집 가능한 Metrics 가 확장 되었습니다.",
+    "en": "Provides precise performance data with <b>shorter collection intervals</b>.",
+    "ja": "<b>短い収集間隔</b>で正確なパフォーマンスデータを提供します。",
+    "ko": "<b>더 짧은 수집 간격</b>으로 정밀한 성능 데이터를 제공합니다.",
     "service_id": "DSC09023"
   },
   "DSC09024": {
-    "en": "System kernel indicators",
-    "ja": "システムカーネル指標",
-    "ko": "System kernel 지표",
+    "en": "Performance data in terms of overall usage rate is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
+    "ja": "全体使用率の観点からの性能データは2秒、個別プロセス/Physical Disk/NICなどのデータは5秒単位で収集して提供します。",
+    "ko": "전체 사용율 관점의 성능 데이터는 2초, 개별 프로세스/Physical Disk/NIC 등의 데이터는5초 단위로 수집하여 제공합니다.",
     "service_id": "DSC09024"
   },
   "DSC09025": {
-    "en": "Physical Disk related indicators",
-    "ja": "Physical Disk関連指標",
-    "ko": "Physical Disk 관련 지표",
+    "en": "System Kernel, Physical Disk, Process Group, and Process TopN indicators have been added, and the indicators that can be analyzed will be expanded step by step.",
+    "ja": "Systme Kernel、Physical Disk、Process Group、Process TopN指標などが追加され、分析可能な指標は段階的に拡張される予定です。",
+    "ko": "Systme Kernel, Physical Disk, Process Group, Process TopN 지표 등이 추가되었으며 분석 가능한 지표는 단계적으로 확장될 예정입니다.",
     "service_id": "DSC09025"
   },
   "DSC09026": {
@@ -53426,9 +53426,9 @@
     "service_id": "DSC09028"
   },
   "DSC09029": {
-    "en": "Collect performance data at shorter intervals.",
-    "ja": "より短いインターバルでパフォーマンスデータを収集します。",
-    "ko": "좀더 짧은 인터벌로 성능 데이터를 수집 합니다.",
+    "en": "You can easily explore specific <b>metrics</b> for your desired server and quickly identify performance issues.",
+    "ja": "目的のサーバーの特定の<b>指標を簡単に検索</b>し、パフォーマンスの問題をすばやく把握できます。",
+    "ko": "원하는 서버의 특정 <b>지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
   },
   "TTL09030": {
@@ -53523,12 +53523,12 @@
   },
   "CNT09046": {
     "en": "<b>Collectable metric itmes have been expanded.</b>",
-    "ja": "<b>収集可能な指標項目が拡張されました。</b>",
-    "ko": "<b>수집 가능한 메트릭 항목이 확장되었습니다.</b>",
+    "ja": "収集可能な<b>メトリックアイテム</b>が拡張されました。",
+    "ko": "수집 가능한 <b>메트릭 항목</b>이 확장되었습니다.",
     "service_id": "CNT09046"
   },
   "CNT09047": {
-    "en": "<b>Indicators that can be analyzed will be expanded step by step.</b>",
+    "en": "<b>Analyzable metrics are scheduled to be expanded gradually.</b>",
     "ja": "<b>分析可能な指標は段階的に拡大する予定です。</b>",
     "ko": "<b>분석 가능한 지표는 단계적으로 확장될 예정입니다.</b>",
     "service_id": "CNT09047"
@@ -55629,10 +55629,10 @@
     "ja": "デバイスの傾向",
     "ko": "디바이스 추이"
   },
-  "side_deviceDetail": {
-    "en": "Device Detail",
-    "ja": "デバイス詳細",
-    "ko": "디바이스 상세"
+  "side_interfaceStatus": {
+    "en": "Interface Status",
+    "ja": "インターフェース状態",
+    "ko": "인터페이스 상태"
   },
   "side_mibUpload": {
     "en": "MIB Upload",
