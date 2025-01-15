@@ -14,6 +14,188 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.13.0.a2
+
+2025年01月09日
+
+<div class='indentTab'>
+
+### `共通`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />又は<Cmdname sid="side_flexboard" className="uitext" />メニューでダッシュボード変更後、時間セレクターを操作すると変更前のダッシュボードに初期化される問題を修正
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />メニューでトランザクション件数を基準に計算した<Cmdname sid="TTL06959" className="uitext" />, <Cmdname sid="TTL06956" className="uitext" />, <Cmdname sid="TTL06953" className="uitext" />のカラムを追加
+
+  :::note
+
+  変更事項については、以下を参照してください。
+
+  **カラム名の変更**
+
+  - <Cmdname sid="TTL06959" className="b500" /> → <Cmdname sid="TTL08965" className="uitext" />：HTTP呼び出しの合計時間/トランザクションで発生したHTTP呼び出しの合計件数
+
+  - <Cmdname sid="TTL06956" className="b500" /> → <Cmdname sid="TTL08964" className="uitext" />：SQLの合計時間/トランザクションで発生したSQLの合計件数
+
+  - <Cmdname sid="TTL06953" className="b500" /> → <Cmdname sid="TTL08966" className="uitext" />：SQLパッチの合計時間/トランザクションで発生したSQLパッチの合計件数
+
+  **新たに追加された平均値のカラム項目**
+
+  - <Cmdname sid="TTL06959" className="uitext" />：HTTP呼び出しの合計時間/トランザクションの発生件数
+
+  - <Cmdname sid="TTL06956" className="uitext" />: 총 SQL 시간 / 트랜잭션 발생 건수
+
+  - <Cmdname sid="TTL06953" className="uitext" />：SQLパッチの合計時間/トランザクションの発生件数
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_netstatTopology" className="uitext" />メニューの初期画面に案内メッセージを追加
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューでエージェントフィルターの適用事項が<Cmdname sid="acttx" className="uitext" />ポップアップウィンドウに適用されない問題の修正
+
+  :::note
+
+  <Cmdname sid="acttx" className="uitext" />ポップアップウィンドウは<Cmdname sid="AA001" className="uitext" />ウィジェットと<Cmdname sid="AA002" className="uitext" />ウィジェットをクリックすると確認できます。
+
+  :::
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" />メニューでチェックボックスが一部切られて表示される問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />メニューで<Cmdname sid="clientOs" className="uitext" />カラムの内容が表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status>組織を選択した状態で<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />メニューに入る時、時間セレクターで発生するエラーを修正
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューでサーバーのアクティブ状態を表示するデフォルトカラムを追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューで<Cmdname sid="TTL08087" className="uitext" />カラムにオペレーティングシステム別のアイコンを表示
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューの<Cmdname sid="column_settings" className="uitext" />で<Cmdname sid="TTL08086" className="uitext" />カラムのチェックを解除できる問題を修正、基本カラムに変更
+
+:::note
+
+基本カラムは<Cmdname sid="column_settings" className="uitext" />で追加または削除することはできず、順序を変更することもできません。
+
+:::
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューで<UI>Session Table</UI>ウィジェットのオプションをプリセットに保存する機能を追加
+
+  プリセットに保存されるオプションは次のとおりです。
+
+  - <Cmdname sid="column_selector" className="uitext" />機能で選択したテーブルカラム
+
+  - ユーザーが設定した個別カラムの幅
+
+  - テーブルに適用したフィルター
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" />メニューでAWSリージョン選択のオプションを追加
+
+  :::note
+
+  適用プラットフォーム：**PostgreSQL**、**Oracle**、**MySQL**、**SQL Server**
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューでテーブルのヘッダーに指標名を表示するように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューでチャート領域の高さが小さくなるとスクロールが使えるように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgentUpdate" className="uitext" />メニューでWindowsオペレーティングシステムを使用する環境についての案内メッセージを追加
+
+- <Status priority='1'>Deprecated</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでXOSエージェントの実行権限付与のコマンドを削除
+
+#### Oracle
+
+<Status priority='1'>Changed</Status>エージェントインストール画面のデザインを変更
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="session_detail" className="uitext" />及び<Cmdname sid="TTL06224" className="uitext" />ウィンドウのPlan Treeにチューニングガイド機能を追加
+
+  ![SQL Detail](/img/release/release-oracle-pro-sql-detail.png)
+
+  :::note
+
+  チューニングガイドは、PlanTreeのノードに`FULL`又は`CARTESIAN`キーワードを含む場合に表示されます。
+
+  :::
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="session_detail" className="uitext" />及び<Cmdname sid="TTL06224" className="uitext" />ウィンドウのPlan Tree構造デザインの変更
+
+#### SQL Server
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbProcedureStat" className="uitext" />メニューで同じクエリは一つにまとめて表示するように変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbProcedureStat" className="uitext" />メニューで<Cmdname sid="filter" className="uitext" />オプションの設定事項を<UI>Procedure Statistics</UI>テーブルにのみ適用するように修正
+
+</div>
+
+## Preview 2.13.0.a1
+
+2024年01月02日
+
+<div class='indentTab'>
+
+### `kubernetes`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの<Cmdname sid="TTL06782" className="uitext" />タブでVolume情報を確認できる機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />メニューで関連メニューに移動できるリンクを提供
+
+  - **podName**: <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_podList" className="uitext" />
+
+  - **containerId**: <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />
+
+  - **onodeName**: <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_cluster" className="uitext" />下位にPersistent Volume関連の新規メニューを追加
+
+  - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubePvList" className="uitext" />
+
+  - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubePvcList" className="uitext" />
+
+  :::note
+
+  この機能は[クバネティスエージェント1.8.1バージョン](../k8s/k8s-1_8_1) 以降から対応します。
+
+  :::
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />メニューに最初に入る時、エージェント一覧が表示されない問題を修正
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューでデータベースタグが多くなると非表示にするように変更
+
+#### SQL Server
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbProcedureStat" className="uitext" />メニューの機能及びUIの改善
+
+- <UI>definition</UI>カラムを選択した時にテーブルの行(row)色を追加
+
+- クエリー統計テーブルに<UI>plan_handle</UI>カラムを追加
+
+- 数値データにフォーマッティングを適用
+
+- 時間関連のデータに単位(μs)の表示
+
+</div>
+
 ## Preview 2.13.0.a0
 
 2024年12月26日

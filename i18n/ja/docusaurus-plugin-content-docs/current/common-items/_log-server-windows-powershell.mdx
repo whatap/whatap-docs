@@ -7,7 +7,7 @@
 
 - ***カテゴリでインストール***
 
-  ```powershell title='Windows Powershell' {7-11,14,15,20,21,24-26} showLineNumbers
+  ```powershell title='Windows Powershell' {7-11,14,15,20,21,24-26,29-30} showLineNumbers
   # 管理者権限が必要
   New-Item -type "Directory" -Path "C:\Program Files\WhatapInfra\extension"
 
@@ -34,6 +34,10 @@
   ## プロジェクトコード及びプロジェクトライセンスの入力時、ログを同じリージョンの希望するプロジェクトに転送可能
   # pcode = プロジェクトコード
   # license = "プロジェクトライセンス"
+
+  [[inputs.logsink.file]]
+  # whatap_host_ip = "収集サーバーIP1/収集サーバーIP2"
+  # whatap_host_port = 6600
 
   "@
 
