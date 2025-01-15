@@ -1,45 +1,23 @@
 [
   {
-    "url": "https://docs.whatap.io/release-notes/dotnet/dotnet-2_3_8",
-    "ver": "v2.3.8",
-    "date": "2025-01-15",
-    "Lists": [
-      {
-        "ver": "v2.3.8",
-        "hash": "v238",
-        "product": ".NET Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> <b>LINQ to SQL</b>(<code>System.Data.Linq</code>) 모니터링 지원</p>"
-      },
-      {
-        "ver": "v2.3.8",
-        "hash": "v238",
-        "product": ".NET Agent",
-        "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> 모니터링에서 제외할 section 이름을 선택할 수 있는 에이전트 옵션 추가",
-        "details": "<div class=\"language-ini codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color: #bfc7d5; --prism-background-color: #292d3e;\"><div class=\"codeBlockTitle_Ktv7\">whatap.conf</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-ini codeBlock_bY9V thin-scrollbar\" style=\"color: rgb(191, 199, 213); background-color: rgb(41, 45, 62);\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color: rgb(191, 199, 213);\"><span class=\"token key attr-name\" style=\"color: rgb(255, 203, 107);\">disabled_section_names</span><span class=\"token punctuation\" style=\"color: rgb(199, 146, 234);\">=</span><span class=\"token value attr-value\">AspNetCoreMvc2,AspNetMvc,AspNetWebApi2</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"클립보드에 코드 복사\" title=\"복사\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewBox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div><ul><li><p>2개 이상의 값을 설정하려면 쉼표(,)를 구분자로 이용하세요.</p></li><li><p>선택할 수 있는 section 이름은 다음과 같습니다.</p><blockquote><p>AspNetCoreMvc2, AspNetMvc, AspNetWebApi2, AspNetWebForm, DbCommand, IDbCommand, SqlCommand, OracleCommand, WebRequest, HttpMessageHandler, HttpClient, WebClient, ServiceStackRedis, StackExchangeRedis, StackExchangeRedis2, LINQ</p></blockquote></li><li><p>옵션을 적용한 후 IIS 서비스를 재시작하세요.</p></li></ul>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/release-notes/dotnet/dotnet-2_3_7",
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_3_7",
     "ver": "v2.3.7",
-    "date": "2025-01-02",
+    "date": "2025-01-20",
     "Lists": [
       {
         "ver": "v2.3.7",
         "hash": "v237",
         "product": ".NET Agent",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> .NET Core에 MySQL 드라이버 지원 추가</p>",
-        "details": "<p><b>ADO.NET</b>을 통한 MySQL 드라이버뿐만 아니라 <b>MySQL Connector/Net</b>과 같은 직접적인 MySQL 데이터 공급자도 지원합니다.</p>"
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added support of the MySQL driver to .NET Core.</p>",
+        "details": "<p>It supports MySQL drivers through <strong>ADO.NET</strong> as well as direct MySQL data providers such as <strong>MySQL Connector/Net</strong>.</p>"
       },
       {
         "ver": "v2.3.7",
         "hash": "v237",
         "product": ".NET Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"1\">Fixed</code> .NET Core에서 클라이언트 IP 주소가 0.0.0.0으로 표시되는 오류 수정</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the error where the client IP address appears as 0.0.0.0 in .NET Core.</p>"
       }
     ]
   }
