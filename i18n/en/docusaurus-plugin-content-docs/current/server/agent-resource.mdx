@@ -1,0 +1,53 @@
+---
+id: agent-resource
+title: Preventing the agent overload
+description: It provides a method to configure the related agents to minimize the impact on resource usage of user servers when any overload occurs.
+keywords:
+  - Server
+  - Agent
+  - Resource protection
+toc_max_heading_level: 3
+---
+
+{/* Linux 및 Windows 서버에서 사용하는 와탭 서버 모니터링 에이전트는 서버의 안정성을 유지하고, 과부하 상황에서도 사용자 서버의 자원 사용량에 미치는 영향을 최소화하기 위해 다음과 같은 방식으로 동작합니다. */}
+
+The WhaTap server monitoring agent for Linux and Windows servers provides the following agent settings to help maintain server stability and minimize the resource usage impact when any overload occurs.
+
+## Linux / Windows
+
+### Memory usage protection
+
+The WhaTap agent automatically restarts the process when the memory usage exceeds the threshold (100 MB) to protect available memory on your server.
+
+```bash
+memory.usage.limit=104857600  # Memory usage threshold (100 MB, unit of byte)
+```
+
+### Automatic restart
+
+The WhaTap agent automatically restarts once a day. The cycle can be adjusted via user settings. This feature is provided to address data collection failures and temporary process malfunctions.
+
+```bash
+housekeeping.enabled=true             # Activation of automatic restart (Default: true)
+housekeeping.hour=2                   # Restart time (based on the server time, Default: 2 O'clock)
+housekeeping.exitoncheckfail=true     # Automatic restart upon collection failure (Default: true)
+```
+
+### CPU usage protection
+
+When the CPU usage exceeds the threshold, the WhaTap agent automatically adjusts the execution speed to protect the CPU availability of the server. It is disabled by default and can be enabled if necessary.
+
+```bash
+cpu.limit.enabled=false           # Disable the CPU usage protection (Default: false)
+cpu.usage.limit=50                # CPU usage threshold (50% based on the sigle core)
+```
+
+## Windows
+
+### Handle usage protection
+
+In the Windows environment, if the number of handles used by the WhaTap agent exceeds the threshold (1,000), it is automatically restarted to protect the available handles of the user server.
+
+```bash
+windows.handle.threshold=1000    # Handle usage threshold (Default: 1,000)
+```

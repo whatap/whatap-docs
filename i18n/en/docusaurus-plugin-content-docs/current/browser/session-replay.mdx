@@ -22,6 +22,26 @@ The <Cmdname sid="TTL08103" className="uitext" /> feature can be used by the mem
 
 :::
 
+## Supported browsers {#supportedbrowser}
+
+Data collected for session replay is collected from only the browsers that support the `requestIdleCallback` API. Check the supported versions for each browser.
+
+<div className='width--same-8'>
+
+| Chrome |  Edge | Safari | Firefox | Opera | Chrome Android | Safari iOS | Samsung Internet |
+| :----: | :---: | :----: | :-----: | :---: | :------------: | :--------: | :--------------: |
+| \> 47  | \> 79 |    ❌   |   \> 6  | \> 55 |      \> 47     |      ❌     |       \> 5       |
+
+</div>
+
+:::note
+
+To avoid overheads during **session replay** data collection, data is collected in idle time of the main thread. For this purpose, use the `requestIdleCallback` API. To avoid performance degradation, we have disabled collecting the **session replay** data on the browsers that do not support the `requestIdleCallback` API.
+
+The `requestIdleCallback` API is designed to perform a callback when the browser is idle, making sure that it does not interfere with the main tasks while collecting the **session replay** data. For more information, see the [following link](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback).
+
+:::
+
 ## Collection methods
 
 Instead of recording the actual screen or capturing it as an image, it collects DOM changes and CSS style information in text format. To avoid overhead, it only collects changes and transfers data when the browser's main thread is idle.
@@ -53,7 +73,7 @@ To apply the session replay feature, apply the browser agent option. See the fol
 </script>
 ```
 
-- **sessionReplaySampleRate** <span class='type'>Int</span>
+- **sessionReplaySampleRate** <span class='type'>Number</span>
 
   The percentage of session replay collection during the entire collection session can be set from 0 to 100. For example, if `sampleRate` is **100** and `sessionReplaySampleRate` is **50**, only 50% of all sessions is recorded for the session replay.
 

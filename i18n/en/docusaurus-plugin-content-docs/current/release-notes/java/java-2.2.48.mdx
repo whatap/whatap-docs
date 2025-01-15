@@ -1,0 +1,25 @@
+---
+id: java-2_2_48
+title: Java Agent v2.2.48
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_47
+displayed_sidebar: releaseSidebar
+---
+
+January 7, 2025
+
+- <Status priority='0'>Fixed</Status> Fixed the error when calling **spring-security** in spring-boot-3.0 or later based on Tomcat 10.
+
+  Modified the status code collected by the agent to match the actual one.
+
+- <Status priority='0'>Fixed</Status> Modified the Java agent plug-in to use **HttpSession attribute** when calling HTTP from Tomcat 10 based applications.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where excessive collection of transactions starting with `hook_service_patterns` when applying the sampling settings, resulting in high TPS.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where APDEX metrics are collected lower than actual value when applying the sampling settings.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where errors are collected in the speed chart when applying the sampling settings.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.48" />

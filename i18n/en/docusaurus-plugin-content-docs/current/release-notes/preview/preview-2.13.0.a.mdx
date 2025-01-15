@@ -14,6 +14,188 @@ In [preview.whatap.io](https://preview.whatap.io), the following new features an
 
 :::
 
+## Preview 2.13.0.a2
+
+January 9, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" />, fixed the issue where handling the time selector after a change of the dashboard causes the dashboard to be reset to the previous state.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />, added the <Cmdname sid="TTL06959" className="uitext" />, <Cmdname sid="TTL06956" className="uitext" />, and <Cmdname sid="TTL06953" className="uitext" /> columns calculated based on the number of transactions.
+
+  :::note
+
+  For the changed items, see the following.
+
+  **Changing the column name**
+
+  - <Cmdname sid="TTL06959" className="b500" /> → <Cmdname sid="TTL08965" className="uitext" />: Total HTTP call time / Total number of HTTP calls in transactions
+
+  - <Cmdname sid="TTL06956" className="b500" /> → <Cmdname sid="TTL08964" className="uitext" />: Total SQL time / Total number of SQLs in transactions
+
+  - <Cmdname sid="TTL06953" className="b500" /> → <Cmdname sid="TTL08966" className="uitext" />: Total SQL patch time / Total number of SQL patches in transactions
+
+  **Newly added average value columns**
+
+  - <Cmdname sid="TTL06959" className="uitext" />: Total HTTP call time / Number of transactions
+
+  - <Cmdname sid="TTL06956" className="uitext" />: 총 SQL 시간 / 트랜잭션 발생 건수
+
+  - <Cmdname sid="TTL06953" className="uitext" />: Total SQL patch time / Number of transactions
+
+  :::
+
+- <Status priority='1'>Changed</Status> Added a guide message in the initial screen of <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_netstatTopology" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where the agent filters are not applied in the <Cmdname sid="acttx" className="uitext" /> popup window.
+
+  :::note
+
+  The <Cmdname sid="acttx" className="uitext" /> pop-up window can be checked when the <Cmdname sid="AA001" className="uitext" /> and <Cmdname sid="AA002" className="uitext" /> widgets are clicked.
+
+  :::
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" />, fixed the issue where some checkboxes are partially cropped.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />, fixed the issue where the content of the <Cmdname sid="clientOs" className="uitext" /> column does not appear.
+
+- <Status priority='0'>Fixed</Status> Fixed the error that occurs in the time selector when entering the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" /> menu with an organization selected.
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />, added a default column to display the server activities.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />, displayed icons for each OS in the <Cmdname sid="TTL08087" className="uitext" /> column.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="column_settings" className="uitext" /> of the <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" /> menu, fixed the issue where the <Cmdname sid="TTL08086" className="uitext" /> column can be unchecked; changed it to a default column.
+
+:::note
+
+The default column can be added or deleted in <Cmdname sid="column_settings" className="uitext" /> but its order cannot be changed.
+
+:::
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the feature to save the options of the <UI>Session Table</UI> widget in the preset.
+
+  The options saved in the preset are as follows:
+
+  - Table column selected using the <Cmdname sid="column_selector" className="uitext" /> feature
+
+  - Widths of individual columns set by the user
+
+  - Filter applied to the table
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" />, added the AWS region selection option.
+
+  :::note
+
+  Applied platforms: **PostgreSQL**, **Oracle**, **MySQL**, **SQL Server**
+
+  :::
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, changed to display the metric name in the table header.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, changed to enable scrolling when the chart height gets smaller.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgentUpdate" className="uitext" />, added a guide message for environments using the Windows system.
+
+- <Status priority='1'>Deprecated</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, removed the XOS agent execution role assignment command.
+
+#### Oracle
+
+<Status priority='1'>Changed</Status> Changed the design of the agent installation screen.
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> Added the tuning guide feature to the plan tree in the <Cmdname sid="session_detail" className="uitext" /> and <Cmdname sid="TTL06224" className="uitext" /> windows.
+
+  ![SQL Detail](/img/release/release-oracle-pro-sql-detail.png)
+
+  :::note
+
+  Tuning guide appears when a node in the plan tree contains the keyword: `FULL` or `CARTESIAN`.
+
+  :::
+
+- <Status priority='1'>Changed</Status> Changed the design of the plan tree structure in the <Cmdname sid="session_detail" className="uitext" /> and <Cmdname sid="TTL06224" className="uitext" /> windows.
+
+#### SQL Server
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbProcedureStat" className="uitext" />, changed to display identical queries as one.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbProcedureStat" className="uitext" />, modified the setting of the <Cmdname sid="filter" className="uitext" /> option to apply only to the <UI>Procedure Statistics</UI> table.
+
+</div>
+
+## Preview 2.13.0.a1
+
+January 2, 2024
+
+<div class='indentTab'>
+
+### `kubernetes`
+
+- <Status priority='1'>Feature</Status> In the <Cmdname sid="TTL06782" className="uitext" /> tab of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" /> menu, added the feature to check the volume information.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />, provided the links to the related menus.
+
+  - **podName**: <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="side_podList" className="uitext" />
+
+  - **containerId**: <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_containerList" className="uitext" />
+
+  - **onodeName**: <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeList" className="uitext" />
+
+- <Status priority='1'>Feature</Status> Added a new Persistent Volume-related menu under <Cmdname sid="side_cluster" className="uitext" />.
+
+  - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubePvList" className="uitext" />
+
+  - <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubePvcList" className="uitext" />
+
+  :::note
+
+  This feature is supported in [Kubernetes agent 1.8.1](../k8s/k8s-1_8_1) or later.
+
+  :::
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the agent list does not appear when you go to the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" /> menu for the first time.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, changed to hide the tags when there are too many database tags.
+
+#### SQL Server
+
+<Status priority='1'>Feature</Status> Improved the features and UI design of the <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbProcedureStat" className="uitext" /> menu.
+
+- Added colors for table rows when the <UI>definition</UI> column is selected.
+
+- Added the <UI>plan_handle</UI> column in the query statistics table.
+
+- Applied formatting for numeric data.
+
+- Displayed the unit (μs) for time data.
+
+</div>
+
 ## Preview 2.13.0.a0
 
 December 26, 2024
