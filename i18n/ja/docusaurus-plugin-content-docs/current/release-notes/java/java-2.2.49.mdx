@@ -1,0 +1,19 @@
+---
+id: java-2_2_49
+title: Java Agent v2.2.49
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_48
+displayed_sidebar: releaseSidebar
+---
+
+2025年01月10日
+
+<Status priority='1'>Feature</Status> log4jログの収集機能拡張
+
+- log4j-2.17の使用時に、`org.apache.logging.log4j.core.layout.AbstractStringLayout`のserializeを実装した場合にもログの収集ができる機能を追加
+
+- 例え、AbstractStringLayoutを継承してユーザの定義によりserializeを実装した場合
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.49" />

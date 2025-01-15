@@ -4609,9 +4609,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_3_7',
+                  id: 'release-notes/dotnet/dotnet-2_3_8',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_3_7',
                 'release-notes/dotnet/dotnet-2_3_6',
                 'release-notes/dotnet/dotnet-2_3_5',
                 'release-notes/dotnet/dotnet-2_3_4',
@@ -4620,7 +4621,6 @@ const sidebars = {
                 'release-notes/dotnet/dotnet-2_3_1',
                 'release-notes/dotnet/dotnet-2_3_0',
                 'release-notes/dotnet/dotnet-2_2_9',
-                'release-notes/dotnet/dotnet-2_2_8',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
@@ -4657,7 +4657,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/index',
@@ -4666,7 +4666,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_7_6',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_7_5',
                 'release-notes/server/server-2_7_4',

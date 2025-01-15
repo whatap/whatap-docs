@@ -1,0 +1,25 @@
+---
+id: java-2_2_48
+title: Java Agent v2.2.48
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_47
+displayed_sidebar: releaseSidebar
+---
+
+2025年01月07日
+
+- <Status priority='0'>Fixed</Status> Tomcat 10 基盤のspring-boot-3.0以上のバージョンで**spring-security**呼び出し時に発生するエラーを修正
+
+  エージェントで収集するステータスコード(status code)が実際のステータスコードと一致するように修正しました。
+
+- <Status priority='0'>Fixed</Status> Tomcat 10 基盤のアプリケーションでHTTPを呼び出し時、Javaエージェントプラグインが**HttpSession attribute**を使用できるように修正
+
+- <Status priority='0'>Fixed</Status>サンプリング設定の適用時に`hook_service_patterns`で始まるトランザクションを過度に収集し、TPSが高くなる問題を修正
+
+- <Status priority='0'>Fixed</Status>サンプリング設定の適用時にAPDEXの指標が実際より低く収集される問題を修正
+
+- <Status priority='0'>Fixed</Status>サンプリング設定の適用時に、スピードチャートでエラーが収集される問題を修正
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.48" />
