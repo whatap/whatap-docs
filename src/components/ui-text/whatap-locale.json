@@ -5712,7 +5712,7 @@
     "service_id": "TTL00987"
   },
   "critical": {
-    "en": "Fatal",
+    "en": "Critical",
     "ja": "危険",
     "ko": "위험",
     "service_id": "_00988"
@@ -46449,7 +46449,7 @@
   },
   "NTC07859": {
     "en": "In progress. This may take a moment.",
-    "ja": "適用中です。しばらく時間がかかることがあります。",
+    "ja": "適用中です。しばらく時間がかかる場合があります。",
     "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
     "service_id": "NTC07859"
   },
@@ -47048,7 +47048,7 @@
     "service_id": "DSC07958"
   },
   "DSC07959": {
-    "en": "Download the setup file configured based on the following: Options can be changed by going back to previous steps.",
+    "en": "Download the installation file configured based on the following information: Options can be changed by going back to previous steps.",
     "ja": "次の内容に基づいて設定されたインストールファイルをダウンロードします。オプションは前のステップに戻って変更できます。",
     "ko": "다음 내용을 바탕으로 구성된 설치 파일을 다운로드합니다. 옵션은 이전 단계로 돌아가 변경할 수 있습니다.",
     "service_id": "DSC07959"
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48159,7 +48159,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "service_id": "CNT08143"
   },
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -49316,7 +49316,7 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
     "service_id": "DSC08338"
@@ -49485,7 +49485,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果を選択",
+    "ja": "検索結果の選択",
     "ko": "검색 결과 선택",
     "service_id": "CNT08366"
   },
@@ -49844,7 +49844,7 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
     "service_id": "DSC08426"
@@ -50805,7 +50805,7 @@
   },
   "DSC08588": {
     "en": "After performing a simulation to see if the log is successfully parsed with the entered pattern, register the pattern.",
-    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
+    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "service_id": "DSC08588"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
+    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -51189,7 +51189,7 @@
   },
   "DSC08652": {
     "en": "The <code class='_copy'>{ingressName}</code> Ingress is created in <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "service_id": "DSC08652"
   },
@@ -51908,7 +51908,7 @@
     "service_id": "ITM08772"
   },
   "DSC08773": {
-    "en": "Please refer to the instructions page for instructions on activating the server inventory function.",
+    "en": "Please refer to the instructions page for instructions on activating the server inventory feature.",
     "ja": "サーバーインベントリ機能を有効にする方法については、ガイドの内容を参照してください。",
     "ko": "서버 인벤토리 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
     "service_id": "DSC08773"
@@ -52845,7 +52845,7 @@
   },
   "ITM08931": {
     "en": "Add filter with not equal",
-    "ja": "not equalでフィルタを追加する",
+    "ja": "not equalでフィルタを追加",
     "ko": "not equal로 필터 추가",
     "service_id": "ITM08931"
   },
@@ -52899,7 +52899,7 @@
   },
   "DSC08940": {
     "en": "The maximum {resource} usage is <b>approaching the <code>limit</code>. Monitor the usage increase.",
-    "ja": "最大{resource}使用率は<b> <code> limit </code>に近い</b>です。使用量の増加を監視してください。",
+    "ja": "最大{resource}使用率は<b> <code> limit</code>に近い</b>です。使用量の増加を監視してください。",
     "ko": "최대 {resource} 사용량이 <b><code>limit</code>에 근접</b>하고 있습니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08940"
   },
@@ -53316,6 +53316,222 @@
     "ja": "CSVコピー",
     "ko": "CSV 복사",
     "service_id": "BTN09010"
+  },
+  "TTL09011": {
+    "en": "Device status",
+    "ja": "デバイスの状態",
+    "ko": "디바이스 상태",
+    "service_id": "TTL09011"
+  },
+  "TTL09012": {
+    "en": "Device selection",
+    "ja": "デバイスの選択",
+    "ko": "디바이스 선택",
+    "service_id": "TTL09012"
+  },
+  "BTN09013": {
+    "en": "Load device",
+    "ja": "デバイスを読み込む",
+    "ko": "디바이스 불러오기",
+    "service_id": "BTN09013"
+  },
+  "CNT09014": {
+    "en": "There is no device registered.",
+    "ja": "登録されたデバイスはありません。",
+    "ko": "등록된 디바이스가 없습니다.",
+    "service_id": "CNT09014"
+  },
+  "BTN09015": {
+    "en": "Display OID",
+    "ja": "OID表示",
+    "ko": "OID 표시",
+    "service_id": "BTN09015"
+  },
+  "BTN09016": {
+    "en": "Display module name",
+    "ja": "モジュール名表示",
+    "ko": "모듈명 표시",
+    "service_id": "BTN09016"
+  },
+  "BTN09017": {
+    "en": "Add device",
+    "ja": "デバイスの追加",
+    "ko": "디바이스 추가",
+    "service_id": "BTN09017"
+  },
+  "BTN09018": {
+    "en": "Add OID",
+    "ja": "OIDの追加",
+    "ko": "OID 추가",
+    "service_id": "BTN09018"
+  },
+  "CNT09019": {
+    "en": "Enter the OID.",
+    "ja": "OIDを入力してください。",
+    "ko": "OID를 입력하세요.",
+    "service_id": "CNT09019"
+  },
+  "CNT09020": {
+    "en": "Enter its description.",
+    "ja": "説明を入力してください。",
+    "ko": "설명을 입력하세요.",
+    "service_id": "CNT09020"
+  },
+  "TTL09021": {
+    "en": "Take advantage of the new <b>Metrix Explorer</b>.<br/>Update your agent to the latest version and enable the <b>Category V2 option</b> to take advantage of the new <b>Metrix Explorer</b> features. Experience it in the lab.",
+    "ja": "新しい<b>メトリックスエクスプローラ</b>を活用してください。<br/>最新バージョンでエージェントを更新し、<b>Category V2オプション</b>を有効にして、新しい<b>メトリックスエクスプローラ</b>機能をラボで体験してください。",
+    "ko": "새로운 <b>메트릭스 익스플로러</b>를 활용해 보세요.<br/>최신 버전으로 에이전트를 업데이트하고 <b>Category V2 옵션</b>을 활성화하여 새로운 <b>메트릭스 익스플로러</b> 기능을 실험실에서 경험해 보세요.",
+    "service_id": "TTL09021"
+  },
+  "CNT09022": {
+    "en": "<b>Metrics Explorer</b> allows you to analyze <b>past performance data</b> more intuitively. You can easily explore specific metrics for the desired server with <b>a simple mouse click</b> and quickly identify performance issues.<br/><b>Metrics Explorer</b> allows <b>collect more detailed performance data. </b> and <b>providing expanded indicators</b> further enhances the <b>accuracy</b> and <b>convenience</b> of server monitoring.<br/>With the latest agent Category V2 option Apply and utilize real-time data exploration and historical performance analysis more effectively.",
+    "ja": "<b>メトリックスエクスプローラ</b>を使用すると、<b>過去のパフォーマンスデータ</b>をより直感的に分析できます。目的のサーバーの特定の指標を<b>簡単にマウスクリック</b>するだけで、簡単にナビゲートし、パフォーマンスの問題をすばやく把握できます。 </b>と<b>拡張指標を提供</b>することで、サーバー監視の<b>正確性</b>と<b>利便性</b>強化します。<br/>最新のエージェントとCategory V2オプションを適用し、リアルタイムのデータナビゲーションと過去のパフォーマンス分析をより効果的に活用してください。",
+    "ko": "<b>메트릭스 익스플로러</b>를 통해 <b>과거 성능 데이터</b>를 보다 직관적으로 분석할 수 있습니다. 원하는 서버의 특정 지표를 <b>간편한 마우스 클릭</b>만으로 손쉽게 탐색하고 성능 이슈를 빠르게 파악할 수 있습니다.<br/><b>메트릭스 익스플로러</b>는 <b>더 세밀한 성능 데이터 수집</b>과 <b>확장된 지표 제공</b>을 통해 서버 모니터링의 <b>정확성</b>과 <b>편의성</b>을 한층 강화합니다.<br/>최신 에이전트와 Category V2 옵션을 적용하고, 실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
+    "service_id": "CNT09022"
+  },
+  "DSC09023": {
+    "en": "Metrics that can be collected in 2 second increments of performance data in terms of overall utilization and 5 second increments in individual process/physical disk/NIC data have been expanded.",
+    "ja": "全体使用率の観点からパフォーマンスデータ2秒、個別プロセス/Physical Disk/NICなどのデータ5秒単位で収集可能なMetricsが拡張されました。",
+    "ko": "전체 사용율 관점의 성능 데이터 2초, 개별 프로세스/Physical Disk/NIC 등의 데이터 5초 단위로 수집 가능한 Metrics 가 확장 되었습니다.",
+    "service_id": "DSC09023"
+  },
+  "DSC09024": {
+    "en": "System kernel indicators",
+    "ja": "システムカーネル指標",
+    "ko": "System kernel 지표",
+    "service_id": "DSC09024"
+  },
+  "DSC09025": {
+    "en": "Physical Disk related indicators",
+    "ja": "Physical Disk関連指標",
+    "ko": "Physical Disk 관련 지표",
+    "service_id": "DSC09025"
+  },
+  "DSC09026": {
+    "en": "Process Group Metrics",
+    "ja": "Process Group指標",
+    "ko": "Process Group 지표",
+    "service_id": "DSC09026"
+  },
+  "DSC09027": {
+    "en": "Process Top N indicators, etc.",
+    "ja": "Process Top N 指標など",
+    "ko": "Process Top N 지표 등",
+    "service_id": "DSC09027"
+  },
+  "DSC09028": {
+    "en": "Supports AIX {aix_version} or higher, Linux {linux_version} or higher, Solaris {solaris_version} or higher, Windows {windows_version} or higher",
+    "ja": "AIX {aix_version}以上、Linux {linux_version}以上、Solaris {solaris_version}以上、Windows {windows_version}以上をサポート",
+    "ko": "AIX {aix_version} 이상, Linux {linux_version} 이상, Solaris {solaris_version} 이상, Windows {windows_version} 이상 지원",
+    "service_id": "DSC09028"
+  },
+  "DSC09029": {
+    "en": "Collect performance data at shorter intervals.",
+    "ja": "より短いインターバルでパフォーマンスデータを収集します。",
+    "ko": "좀더 짧은 인터벌로 성능 데이터를 수집 합니다.",
+    "service_id": "DSC09029"
+  },
+  "TTL09030": {
+    "en": "To use the new metrics explorer feature, <br/>the Server Inventory feature must be enabled and the agent must be updated.",
+    "ja": "新しいメトリックスエクスプローラ機能を使用するには、<br/>サーバーインベントリ機能の有効化とエージェントアップデートが必要です。",
+    "ko": "새로운 메트릭스 익스플로러 기능을 사용하기 위해서는<br/>서버 인벤토리 기능 활성화 및 에이전트 업데이트가 필요합니다.",
+    "service_id": "TTL09030"
+  },
+  "TTL09031": {
+    "en": "Device modification",
+    "ja": "デバイスの変更",
+    "ko": "디바이스 수정",
+    "service_id": "TTL09031"
+  },
+  "TTL09032": {
+    "en": "OID selection",
+    "ja": "OIDの選択",
+    "ko": "OID 선택",
+    "service_id": "TTL09032"
+  },
+  "TTL09033": {
+    "en": "OID modification",
+    "ja": "OIDの修正",
+    "ko": "OID 수정",
+    "service_id": "TTL09033"
+  },
+  "CNT09034": {
+    "en": "Enter the manufacturer name.",
+    "ja": "メーカーを入力してください。",
+    "ko": "제조사를 입력하세요.",
+    "service_id": "CNT09034"
+  },
+  "CNT09035": {
+    "en": "Select a  category.",
+    "ja": "カテゴリを選択してください。",
+    "ko": "카테고리를 선택하세요.",
+    "service_id": "CNT09035"
+  },
+  "TTL09036": {
+    "en": "Trap configuration",
+    "ja": "トラップ設定",
+    "ko": "Trap 설정",
+    "service_id": "TTL09036"
+  },
+  "TTL09037": {
+    "en": "Syslog configuration",
+    "ja": "Syslogの設定",
+    "ko": "Syslog 설정",
+    "service_id": "TTL09037"
+  },
+  "TLT09039": {
+    "en": "Directly enter the maximum value of the Y-axis.",
+    "ja": "Y軸の最大値を直接入力します。",
+    "ko": "Y축 최댓값을 직접 입력합니다.",
+    "service_id": "TLT09039"
+  },
+  "NTC09040": {
+    "en": "OID deletion was successful.",
+    "ja": "OIDの削除に成功しました。",
+    "ko": "OID 삭제에 성공하였습니다.",
+    "service_id": "NTC09040"
+  },
+  "NTC09041": {
+    "en": "OID deletion failed.",
+    "ja": "OIDの削除に失敗しました。",
+    "ko": "OID 삭제에 실패하였습니다.",
+    "service_id": "NTC09041"
+  },
+  "NTC09042": {
+    "en": "Device deletion was successful.",
+    "ja": "デバイスの削除に成功しました。",
+    "ko": "디바이스 삭제에 성공하였습니다.",
+    "service_id": "NTC09042"
+  },
+  "NTC09043": {
+    "en": "Device deletion failed.",
+    "ja": "デバイスの削除に失敗しました。",
+    "ko": "디바이스 삭제에 실패하였습니다.",
+    "service_id": "NTC09043"
+  },
+  "BTN09044": {
+    "en": "Copy image",
+    "ja": "画像のコピー",
+    "ko": "이미지 복사",
+    "service_id": "BTN09044"
+  },
+  "CNT09045": {
+    "en": "<b>Provides precise performance data with shorter collection intervals</b>",
+    "ja": "<b>より短い収集間隔で正確なパフォーマンスデータを提供します。</b>",
+    "ko": "<b>더 짧은 수집 간격으로 정밀한 성능 데이터 제공합니다.</b>",
+    "service_id": "CNT09045"
+  },
+  "CNT09046": {
+    "en": "<b>Collectable metric itmes have been expanded.</b>",
+    "ja": "<b>収集可能な指標項目が拡張されました。</b>",
+    "ko": "<b>수집 가능한 메트릭 항목이 확장되었습니다.</b>",
+    "service_id": "CNT09046"
+  },
+  "CNT09047": {
+    "en": "<b>Analyzable metrics are scheduled to be expanded gradually.</b>",
+    "ja": "<b>分析可能な指標は段階的に拡大する予定です。</b>",
+    "ko": "<b>분석 가능한 지표는 단계적으로 확장될 예정입니다.</b>",
+    "service_id": "CNT09047"
   },
   "": {
     "en": "#VALUE!",
@@ -54340,6 +54556,11 @@
     "ja": "サーバー インベントリ エージェントの案内",
     "ko": "서버 인벤토리 에이전트 안내"
   },
+  "side_serverMetricsExplorer": {
+    "en": "Metrics Explorer",
+    "ja": "メトリクスエクスプローラー",
+    "ko": "메트릭스 익스플로러"
+  },
   "side_serverCube": {
     "en": "Cube",
     "ja": "キューブ",
@@ -54557,6 +54778,11 @@
     "en": "Parallel Query Tree",
     "ja": "並列クエリツリー",
     "ko": "병렬 쿼리 트리"
+  },
+  "side_dbDeadLock": {
+    "en": "Dead Lock",
+    "ja": "デッドロック",
+    "ko": "데드락"
   },
   "side_deadLock": {
     "en": "Dead Lock",
@@ -55403,10 +55629,10 @@
     "ja": "デバイスの傾向",
     "ko": "디바이스 추이"
   },
-  "side_deviceDetail": {
-    "en": "Device Detail",
-    "ja": "デバイス詳細",
-    "ko": "디바이스 상세"
+  "side_interfaceStatus": {
+    "en": "Interface Status",
+    "ja": "インターフェース状態",
+    "ko": "인터페이스 상태"
   },
   "side_mibUpload": {
     "en": "MIB Upload",
@@ -55453,9 +55679,24 @@
     "ja": "EM アカウント管理",
     "ko": "EM 계정 관리"
   },
+  "side_podTimeline": {
+    "en": "Pod Timeline",
+    "ja": "Podタイムライン",
+    "ko": "Pod 타임라인"
+  },
+  "side_containerTimeline": {
+    "en": "Container Timeline",
+    "ja": "コンテナタイムライン",
+    "ko": "컨테이너 타임라인"
+  },
   "side_nmsTopology": {
     "en": "Topology",
     "ja": "トポロジー",
     "ko": "토폴로지"
+  },
+  "side_kubeSchedulerDashboard": {
+    "en": "kube-scheduler Dashboard",
+    "ja": "kube-scheduler ダッシュボード",
+    "ko": "kube-scheduler 대시보드"
   }
 }
