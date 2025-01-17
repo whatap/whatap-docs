@@ -1527,19 +1527,7 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           items: [
-            {
-              type: 'category',
-              label: '에이전트 설치',
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: 'db2/install-agent'
-              },
-              items: [
-                'db2/install-agent-quick-setup',
-              ],
-            },
+            'db2/install-agent',
             'db2/after-install-agent',
             'db2/troubleshooting',
           ],
