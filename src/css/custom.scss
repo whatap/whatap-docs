@@ -2384,6 +2384,11 @@ main {
     img[src*='k8s-node-timeline-config.png'] {
       max-width: 730px;
     }
+    img[src*='k8s-pv-list-cl.png'] {
+      max-height: 600px;
+      display: block; 
+      margin: 0 auto;
+    }
     img[alt*='sc'] {
       border: none;
       width: fit-content;
