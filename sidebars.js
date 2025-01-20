@@ -6680,6 +6680,7 @@ const sidebars = {
             'kubernetes/kube-apiserver-dashboard',
             'kubernetes/kube-apiserver-metrics-search',
             'kubernetes/etcd-dashboard',
+            'kubernetes/kube-scheduler-dashboard',
             'kubernetes/service-list',
             'kubernetes/ingress-list',
             'kubernetes/resource-namespace',
