@@ -7110,6 +7110,11 @@ const sidebars = {
           type: 'link',
           label: 'MongoDB',
           href: '../mongodb/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'IBM DB2',
+          href: '../db2/monitoring-intro',
         }
       ],
     }
