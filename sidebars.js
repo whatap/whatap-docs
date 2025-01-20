@@ -4646,9 +4646,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/xos-1_1_8f',
+                  id: 'release-notes/db/xos-1_1_8v',
                   // className: 'new',
                 },
+                'release-notes/db/xos-1_1_8f',
                 'release-notes/db/xos-1_1_8b',
                 'release-notes/db/xos-1_1_8a',
                 'release-notes/db/xos-1_1_6j',
