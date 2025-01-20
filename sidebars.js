@@ -3467,7 +3467,7 @@ const sidebars = {
             'cubrid-v1/report-intro',
           ],
         },
-        'cubrid-v1/integrated-report'
+        'cubrid-v1/integrated-report',
         {
           type: 'category',
           label: '알림 설정하기',
