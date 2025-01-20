@@ -1822,6 +1822,7 @@ const sidebars = {
             'postgresql/report-intro',
           ],
         },
+        'postgresql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2561,6 +2562,7 @@ const sidebars = {
             'mysql/report-intro',
           ]
         },
+        'mysql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3795,7 +3797,6 @@ const sidebars = {
             'altibase-v1/analysis-function',
             'altibase-v1/stat',
             'altibase-v1/report-intro',
-            'altibase-v1/integrated-report',
           ]
         },
         {
