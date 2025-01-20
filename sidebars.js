@@ -1822,6 +1822,7 @@ const sidebars = {
             'postgresql/report-intro',
           ],
         },
+        'postgresql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2561,6 +2562,7 @@ const sidebars = {
             'mysql/report-intro',
           ]
         },
+        'mysql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3795,7 +3797,6 @@ const sidebars = {
             'altibase-v1/analysis-function',
             'altibase-v1/stat',
             'altibase-v1/report-intro',
-            'altibase-v1/integrated-report',
           ]
         },
         {
@@ -4823,9 +4824,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/xos-1_1_8f',
+                  id: 'release-notes/db/xos-1_1_8v',
                   // className: 'new',
                 },
+                'release-notes/db/xos-1_1_8f',
                 'release-notes/db/xos-1_1_8b',
                 'release-notes/db/xos-1_1_8a',
                 'release-notes/db/xos-1_1_6j',
@@ -4834,7 +4836,6 @@ const sidebars = {
                 'release-notes/db/xos-1_1_3b',
                 'release-notes/db/xos-1_1_3',
                 'release-notes/db/xos-1_1_2',
-                'release-notes/db/xos-1_1_1b',
                 'release-notes/db/xos-previous',
               ]
             },
