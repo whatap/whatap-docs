@@ -6508,7 +6508,24 @@ const sidebars = {
           label: 'Log 모니터링',
           id: 'log/introduction'
         },
-        'server/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/labs',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'server/metrics-explorer',
+              label: '메트릭스 익스플로러',
+              className: 'beta'
+            },
+          ]
+        }, 
       ]  
     }
   ],
