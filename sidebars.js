@@ -4384,7 +4384,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -4392,9 +4392,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_3',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1_7_4',
+                  className: 'new',
                 },
+                'release-notes/python/python-1_7_3',
                 'release-notes/python/python-1_7_2',
                 'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
@@ -4403,7 +4404,6 @@ const sidebars = {
                 'release-notes/python/python-1_6_8',
                 'release-notes/python/python-1_6_7',
                 'release-notes/python/python-1_6_6',
-                'release-notes/python/python-1_6_5',
                 'release-notes/python/python-previous',
               ],
             },
