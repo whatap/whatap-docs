@@ -7,7 +7,7 @@
 
 - ***カテゴリでインストール***
 
-  ```bash title='Linux Shell' {7-12,14,15,25,26,29-31} showLineNumbers
+  ```bash title='Linux Shell' {7-12,14,15,25,26,29-31,34-35} showLineNumbers
   cd /usr/whatap/infra
   sudo mkdir extension
 
@@ -39,6 +39,10 @@
     ## プロジェクトコード及びプロジェクトライセンスの入力時、ログを同じリージョンの希望するプロジェクトに転送可能
     # pcode = プロジェクトコード
     # license = "プロジェクトライセンス"
+
+    [[inputs.logsink.file]]
+    # whatap_host_ip = "収集サーバーIP1/収集サーバーIP2"
+    # whatap_host_port = 6600
   EOL
 
   sudo service whatap-infra restart

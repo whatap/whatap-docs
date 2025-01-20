@@ -8,16 +8,16 @@ keywords:
   - アプリケーション
 ---
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="application" className="uitext" />タブ選択
-
-アプリケーションのリソース使用量と進行中のトランザクション、エラー状況のイベント条件を通じて警告通知を送信します。
-
-<ImgLang img='set-events-app.png' desc='イベント設定 - アプリケーション' />
-
+import ShortDesc from "../common-items/_apm-warning-notice-desc.mdx";
+import EventSettingNewNote from "../common-items/_warning-notice-note.mdx";
 import Seteventbasic from "../common-items/_set-event-basic.mdx";
-
-<Seteventbasic />
-
 import Seteventbyitems from "../common-items/_set-event-by-items.mdx";
 
-<Seteventbyitems />
+<Collection docs={
+  [
+    {Topic: ShortDesc},
+    {Topic: EventSettingNewNote},
+    {Topic: Seteventbasic},
+    {Topic: Seteventbyitems}
+  ]} 
+/>

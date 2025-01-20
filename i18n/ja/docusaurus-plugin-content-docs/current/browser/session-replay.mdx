@@ -22,6 +22,26 @@ keywords:
 
 :::
 
+## 対応ブラウザ{#supportedbrowser}
+
+セッションリプレイのための収集データは`requestIdleCallback` APIに対応するブラウザでのみ収集します。 ブラウザ別の対応バージョンを確認してください。
+
+<div className='width--same-8'>
+
+| Chrome |  Edge | Safari | Firefox | Opera | Chrome Android | Safari iOS | Samsung Internet |
+| :----: | :---: | :----: | :-----: | :---: | :------------: | :--------: | :--------------: |
+| \> 47  | \> 79 |    ❌   |   \> 6  | \> 55 |      \> 47     |      ❌     |       \> 5       |
+
+</div>
+
+:::note
+
+**セッションリプレイ**データの収集時にオーバーヘッドを防ぐために、メインスレッドの空き時間にデータを収集します。 このために`requestIdleCallback` APIを活用します。 `requestIdleCallback` APIに対応しないブラウザでは、パフォーマンスの低下を防止するため、**セッションリプレイ**のデータを収集しないように設定しました。
+
+`requestIdleCallback` APIはブラウザが空き状態の時、コールバックを実行するように設計されたAPIで、**セッションリプレイ**データの収集時に主要作業への影響がないように保障します。 詳細については、[次のリンク](https://developer.mozilla.org/docs/Web/API/Window/requestIdleCallback)を参照してください。
+
+:::
+
 ## 収集方法
 
 実際の画面を録画したり、画像でキャプチャーしたりする代わりに、DOM変更事項とCSSスタイル情報などをテキスト形式で収集します。 この時、オーバーヘッドを防止するためにブラウザのメインスレッドがアイドル状態の場合にのみ変更を収集し、データを送信します。
@@ -53,7 +73,7 @@ keywords:
 </script>
 ```
 
-- **sessionReplaySampleRate** <span class='type'>Int</span>
+- **sessionReplaySampleRate** <span class='type'>Number</span>
 
   すべての収集セッションからセッションリプレイを収集する比率を0から100まで設定できます。 例えば、`sampleRate`が**100**であり、`sessionReplaySampleRate`が**50**であると、全体セッションから50%のセッションリプレイが記録されます。
 
