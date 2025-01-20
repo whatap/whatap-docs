@@ -4780,7 +4780,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4788,19 +4788,38 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_3_1',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_3_5',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-2_3_4',
+                'release-notes/db/dbx-2_3_3',
+                'release-notes/db/dbx-2_3_2',
+                'release-notes/db/dbx-2_3_1',
                 'release-notes/db/dbx-2_3_0',
                 'release-notes/db/dbx-2_2_9',
                 'release-notes/db/dbx-2_2_8',
                 'release-notes/db/dbx-2_2_7',
                 'release-notes/db/dbx-2_2_6',
-                'release-notes/db/dbx-2_2_5',
-                'release-notes/db/dbx-2_2_4',
-                'release-notes/db/dbx-2_2_3',
-                'release-notes/db/dbx-2_2_2',
                 'release-notes/db/dbx-previous',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'DMX',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/db/dmx-agent',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/db/dmx-1_0_1y',
+                  className: 'new',
+                },
+                'release-notes/db/dmx-1_0_1x',
               ]
             },
             {
@@ -4955,7 +4974,7 @@ const sidebars = {
         id: 'learning-guides'
       },
       items: [
-        'best-practice-guides/real-time-monitoring-for-it-infra',
+        // 'best-practice-guides/real-time-monitoring-for-it-infra',
         // 'metrics/common-metrics-intro',
         {
           type: 'html',
