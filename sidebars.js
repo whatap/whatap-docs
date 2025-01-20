@@ -1625,6 +1625,7 @@ const sidebars = {
             'db2/report-intro',
           ],
         },
+        'db2/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2008,6 +2009,7 @@ const sidebars = {
             'oracle-v1/report-intro',
           ],
         },
+        'oracle-v1/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -2184,6 +2186,7 @@ const sidebars = {
             'oracle/report-intro',
           ],
         },
+        'oracle/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2366,6 +2369,7 @@ const sidebars = {
             'oracle-pro/report-intro',
           ],
         },
+        'oracle-pro/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2756,6 +2760,7 @@ const sidebars = {
             'mssql/backup-recovery-history'
           ],
         },
+        'mssql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2936,6 +2941,7 @@ const sidebars = {
             'mssql-v1/report-intro',
           ],
         },
+        'mssql-v1/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -3103,6 +3109,7 @@ const sidebars = {
             'tibero/report-intro',
           ]
         },
+        'tibero/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -3275,6 +3282,7 @@ const sidebars = {
             'cubrid/report-intro',
           ],
         },
+        'cubrid/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3459,6 +3467,7 @@ const sidebars = {
             'cubrid-v1/report-intro',
           ],
         },
+        'cubrid-v1/integrated-report'
         {
           type: 'category',
           label: '알림 설정하기',
@@ -3628,6 +3637,7 @@ const sidebars = {
             'altibase/report-intro',
           ]
         },
+        'altibase/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3799,6 +3809,7 @@ const sidebars = {
             'altibase-v1/report-intro',
           ]
         },
+        'altibase-v1/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
