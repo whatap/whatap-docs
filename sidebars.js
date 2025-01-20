@@ -4658,7 +4658,6 @@ const sidebars = {
                 'release-notes/db/xos-1_1_3b',
                 'release-notes/db/xos-1_1_3',
                 'release-notes/db/xos-1_1_2',
-                'release-notes/db/xos-1_1_1b',
                 'release-notes/db/xos-previous',
               ]
             },
