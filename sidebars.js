@@ -4785,7 +4785,7 @@ const sidebars = {
         id: 'learning-guides'
       },
       items: [
-        'best-practice-guides/real-time-monitoring-for-it-infra',
+        // 'best-practice-guides/real-time-monitoring-for-it-infra',
         // 'metrics/common-metrics-intro',
         {
           type: 'html',
