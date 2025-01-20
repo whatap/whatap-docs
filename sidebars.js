@@ -4674,7 +4674,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4682,9 +4682,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_3_7',
-                  // className: 'new'
+                  id: 'release-notes/server-aix/server-aix-1_3_8',
+                  className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_3_7',
                 'release-notes/server-aix/server-aix-1_3_6',
                 'release-notes/server-aix/server-aix-1_3_5',
                 'release-notes/server-aix/server-aix-1_3_4',
@@ -4704,9 +4705,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_3_7',
+                  id: 'release-notes/server-solaris/server-solaris-1_3_8',
                   className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_3_7',
                 'release-notes/server-solaris/server-solaris-1_3_6',
                 'release-notes/server-solaris/server-solaris-1_3_5',
                 'release-notes/server-solaris/server-solaris-1_3_4',
@@ -4766,7 +4768,7 @@ const sidebars = {
               label: 'DBX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dbx-agent',
@@ -4774,19 +4776,38 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_3_1',
-                  // className: 'new',
+                  id: 'release-notes/db/dbx-2_3_5',
+                  className: 'new',
                 },
+                'release-notes/db/dbx-2_3_4',
+                'release-notes/db/dbx-2_3_3',
+                'release-notes/db/dbx-2_3_2',
+                'release-notes/db/dbx-2_3_1',
                 'release-notes/db/dbx-2_3_0',
                 'release-notes/db/dbx-2_2_9',
                 'release-notes/db/dbx-2_2_8',
                 'release-notes/db/dbx-2_2_7',
                 'release-notes/db/dbx-2_2_6',
-                'release-notes/db/dbx-2_2_5',
-                'release-notes/db/dbx-2_2_4',
-                'release-notes/db/dbx-2_2_3',
-                'release-notes/db/dbx-2_2_2',
                 'release-notes/db/dbx-previous',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'DMX',
+              collapsible: true,
+              collapsed: true,
+              className: 'new',
+              link: {
+                type: 'doc',
+                id: 'release-notes/db/dmx-agent',
+              },
+              items: [
+                {
+                  type: 'doc',
+                  id: 'release-notes/db/dmx-1_0_1y',
+                  className: 'new',
+                },
+                'release-notes/db/dmx-1_0_1x',
               ]
             },
             {
@@ -4802,9 +4823,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/xos-1_1_8f',
+                  id: 'release-notes/db/xos-1_1_8v',
                   // className: 'new',
                 },
+                'release-notes/db/xos-1_1_8f',
                 'release-notes/db/xos-1_1_8b',
                 'release-notes/db/xos-1_1_8a',
                 'release-notes/db/xos-1_1_6j',
@@ -4813,7 +4835,6 @@ const sidebars = {
                 'release-notes/db/xos-1_1_3b',
                 'release-notes/db/xos-1_1_3',
                 'release-notes/db/xos-1_1_2',
-                'release-notes/db/xos-1_1_1b',
                 'release-notes/db/xos-previous',
               ]
             },
@@ -4941,7 +4962,7 @@ const sidebars = {
         id: 'learning-guides'
       },
       items: [
-        'best-practice-guides/real-time-monitoring-for-it-infra',
+        // 'best-practice-guides/real-time-monitoring-for-it-infra',
         // 'metrics/common-metrics-intro',
         {
           type: 'html',

@@ -1,0 +1,19 @@
+---
+id: java-2_2_49
+title: Java Agent v2.2.49
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_48
+displayed_sidebar: releaseSidebar
+---
+
+January 10, 2025
+
+<Status priority='1'>Feature</Status> Extended the log4j log collection feature.
+
+- Added the feature to collect logs even when serialization of `org.apache.logging.log4j.core.layout.AbstractStringLayout` is implemented when using log4j-2.17.
+
+- For example, in case you AbstractStringLayout is inherited and custom serialization is implemented
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.49" />

@@ -40,10 +40,15 @@ The WhaTap browser agent is provided in the form of an inline script. Add the sc
 Select one of the following two methods to apply the agent.
 
 - **_Async_** (Asynchronous Load): Loads the WhaTap browser agent asynchronously in your web application. 
+
   - It does not affect the load performance of your web application. 
+
   - There may be missing data such as AJAX or errors that occurred before loading the browser agent.
+
 - **_Sync_** (Synchronous Load): Loads the WhaTap browser agent synchronously in your web application.
+
   - It is recommended if you want to collect all data when loading your web application. 
+
   - It may affect the load performance of your web application.
 
 ## Setting the WhaTap browser agent's options {#setting-agent}
@@ -55,24 +60,304 @@ config: {
   projectAccessKey: {projec_access_key},
   pcode: {pcode},
   sampleRate: 100,
-  ignoreOrigins: [ 'https://ignore-site.com/' , '/^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i' ],
-  collectUserClick: false
+  ignoreOrigins: [ 'https://ignore-site.com/', /^(https?://)([^/]*)(ignore-site.io)(/)(.*)/i ],
 }
 ```
 
-- **_projectAccessKey_**: Project access key
+### Option parameters
 
-- **pcode**: Project code.
+<Columns>
+<Column className="text--left width--40">
 
-- **sampleRate**: You can set the rate of user sessions that are collected.
+**projectAccessKey** <span class='type'>String</span> <code className="my">required</code>
 
-- **ignoreOrigins**: You can add specific resource domains to be excluded from statistics collection in the form of an array of strings. You can also apply regular expressions.
+It is a project access key. You can see in the project installation guide (<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />). 
 
-- **collectUserClick**: Click events can be collected. The default value is `false`.
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {2}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**pcode** <span class='type'>Number</span> <code className="my">required</code>
+
+It is a project access key. You can see in the project installation guide (<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />). 
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {3}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**sampleRate** <span class='type'>Number</span> <code className="my">required</code>
+
+You can set the ratio of user sessions to be collected. You can set it from 0 to 100.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {4}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**proxyBaseUrl** <span class='type'>String</span> <code className="my">required</code>
+
+It is the agent collection data transmission URL.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {5}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**ignorePageUrls** <span class='type'>Array\<string \| RegExp\></span> <code className="my">optional</code>
+
+It is a list of page URLs to exclude from collection. String matching is performed using the `startsWith` method.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  ignorePageUrls: ["https://test.webpage.com/", "http://localhost:2003/page1/", /^.localhost.$/i]
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**ignoreResources** <span class='type'>Array\<string \| RegExp\></span> <code className="my">optional</code>
+
+It is a list of resource URLs to exclude from collection. String matching is performed using the `startsWith` method.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  ignoreResources: ["https://test.web.com/yard/api/flush", "http://localhost:2003/whatap-browser-agent.js",  /^.\/path1\/api.$/i]
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**ignoreErrors** <span class='type'>Array\<string \| RegExp\></span> <code className="my">optional</code>
+
+It is a list of browser errors to exclude from collection. String matching is performed using the `includes` method.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  ignoreErrors: ["cannot read", "cors", "basic"]
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**collectUserClick** <span class='type'>Boolean</span> <code className="my">optional</code>
+
+Default `false`
+
+It can collect user click events. For the method to find the collected data, see [the following](user-session-log-search#click--rapid_click).
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  collectUserClick: true
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**sessionReplaySampleRate** <span class='type'>Number</span> <code className="my">optional</code>
+
+Default `0`
+
+It is the ratio of sessions to collect the session replay data. You can set from 0 to 100 for user sessions to collect.
+
+For example, if `sampleRate` is set to **50** and `sessionReplaySampleRate` to **20**, 50% of all sessions are collected, and for only 20% of those sessions, the session replay data is collected.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  sessionReplaySampleRate: 50
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**sessionReplayMaskAllTexts** <span class='type'>Boolean</span> <code className="my">optional</code>
+
+Default `true`
+
+If you set the value to `false`, all text data is collected without masking.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {7}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  sessionReplaySampleRate: 50, 
+  sessionReplayMaskAllTexts: false
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**sessionReplayMaskAllInputs** <span class='type'>Boolean</span> <code className="my">optional</code>
+
+Default `true`
+
+If you set the value to `false`, the data in all input fields is collected without masking.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {7}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  sessionReplaySampleRate: 50, 
+  sessionReplayMaskAllInputs: false
+}
+```
+
+</Column>
+</Columns>
+
+<Columns>
+<Column className="text--left width--40">
+
+**sessionReplayCollectAllBrowser** <span class='type'>Boolean</span> <code className="my">optional</code>
+
+Default `false`
+
+The session replay data is collected even in the browsers that do not support `requestIdleCallback()`. e.g. Safari, Safari on iOS
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {7}
+config: {
+  projectAccessKey: {projec_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js"
+  sessionReplaySampleRate: 50, 
+  sessionReplayCollectAllBrowser: true
+}
+```
+
+</Column>
+</Columns>
 
 :::note
 
-The `projectAccessKey` and `pcode` values are recommended to import the script code in the installation guide for use.
+- For more information about the session replay, see [the following](session-replay).
+
+- For more information about the browsers that support session replay collection, see [the following](session-replay#supportedbrowser).
 
 :::
 

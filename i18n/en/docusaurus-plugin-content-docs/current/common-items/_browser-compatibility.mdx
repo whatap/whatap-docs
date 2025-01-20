@@ -13,5 +13,14 @@ The data that WhaTap browser agent can collect may differ depending on the brows
 | console error                                   |  \> 4  | \> 12 |  \> 3.1  |  \> 4    | \> 11.5 |    107         |  \> 3.2    |    \> 4          |
 | Exception unhandled promise error               | \> 49  | \> 79 |  \> 11   |  \> 69   |  \> 36  |    107         |  \> 11.3   |    \> 5          |
 | Exception unhandled Java script error           | \> 10  | \> 12 |  \> 5.1  |  \> 6    |  \> 15  |    107         |   \> 5     |    \> 4          |
+| Session Replay                                  | \> 47  | \> 79 |   ❌      |  \> 6    |  \> 55  |   \> 47        |    ❌       |    \> 5          |
 
 </div>
+
+:::note
+
+To avoid overheads during **session replay** data collection, data is collected in idle time of the main thread. For this purpose, use the `requestIdleCallback` API. To avoid performance degradation, we have disabled collecting the **session replay** data on the browsers that do not support the `requestIdleCallback` API.
+
+The `requestIdleCallback` API is designed to perform a callback when the browser is idle, making sure that it does not interfere with the main tasks while collecting the **session replay** data. For more information, see the [following link](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback).
+
+:::

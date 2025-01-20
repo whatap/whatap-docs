@@ -8,16 +8,16 @@ keywords:
   - Application
 ---
 
-Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; Select <Cmdname sid="application" className="uitext" /> tab
-
-Alerts are sent through the resource usage, active transactions, and event conditions in error conditions of the application.
-
-<ImgLang img='set-events-app.png' desc='Event Setting - application' />
-
+import ShortDesc from "../common-items/_apm-warning-notice-desc.mdx";
+import EventSettingNewNote from "../common-items/_warning-notice-note.mdx";
 import Seteventbasic from "../common-items/_set-event-basic.mdx";
-
-<Seteventbasic />
-
 import Seteventbyitems from "../common-items/_set-event-by-items.mdx";
 
-<Seteventbyitems />
+<Collection docs={
+  [
+    {Topic: ShortDesc},
+    {Topic: EventSettingNewNote},
+    {Topic: Seteventbasic},
+    {Topic: Seteventbyitems}
+  ]} 
+/>

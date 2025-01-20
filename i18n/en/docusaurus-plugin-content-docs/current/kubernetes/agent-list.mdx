@@ -10,9 +10,9 @@ keywords:
 toc_max_heading_level: 2
 ---
 
-Home > Select Cluster Project > **_Management_** > **_Kubernetes Agent List_** 
+Select Home screen &gt; cluster project (<code class='my'>CP</code>) &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_kubernetesAgentList" className="uitext" />
 
-You can go to **_Kubernetes Agent List_** under **_Management_** for the cluster project (<code class='my'>CP</code>). 
+Under the <Cmdname sid="side_management" className="uitext" />  menu of the cluster project (<code class='my'>CP</code>), you can go to the <Cmdname sid="side_kubernetesAgentList" className="uitext" /> menu. 
 
 <ImgLang img='k8s-agent-list.png' desc='Kubernetes agent list' />
 
@@ -49,6 +49,27 @@ Because the amount of data collected and processed by the WhaTap agent differs d
 If the ![Refresh icon](/img/ic-refresh2.svg) **_Refresh_** icon is selected at the top, you can update the data based on the current time.
 
 #### Select Column
+
+| Group                                         | Column name           | Description                                                                                                                         |
+| --------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <Cmdname sid="TTL06700" className="uitext" /> | **_Name_**            | It indicates the agent alias when the agent name or agent alias is set.                                                             |
+| ^                                             | **_Original Name_**   | It is the agent name. It is usually the same as the node name.                                                                      |
+| ^                                             | **_Alias_**           | It indicates the custom agent's alias.                                                                                              |
+| ^                                             | **_Initial_**         | It is an abbreviation used when indicating the agent.                                                                               |
+| ^                                             | **_Id_**              | It is a unique ID of the agent.                                                                                                     |
+| ^                                             | **_Start Time_**      | It is the time when the agent first started running.                                                                                |
+| ^                                             | **_Active Time_**     | It is the time when the agent is currently active and starts collecting the monitoring data.                                        |
+| ^                                             | **_Inactive Time_**   | It is the time when the agent became inactive and data collection stopped.                                                          |
+| ^                                             | **_Version_**         | It is the current software version of the agent.                                                                                    |
+| ^                                             | **_IP_**              | It indicates the IP address of the server where the agent has been installed.                                                       |
+| ^                                             | **_CPU Cores_**       | It indicates the number of CPU cores on the server where the agent has been installed.                                              |
+| <Cmdname sid="TTL06705" className="uitext" /> | **_OnodeName_**       | It is the name of the node where the agent has been installed.                                                                      |
+| ^                                             | **_Onode_**           | It is a hash value that has converted the name of the node where the agent has been installed.                                      |
+| ^                                             | **_Age_**             | It indicates the time elapsed since node creation.                                                                                  |
+| ^                                             | **_CapacityCpu_**     | It indicates the total CPU capacity of the node.                                                                                    |
+| ^                                             | **_CapacityMemory_**  | It indicates the total memory capacity of the node.                                                                                 |
+| <Cmdname sid="TTL07377" className="uitext" /> | **_PodsCount_**       | It indicates the number of Pods running on a node where the node agent has been installed. Separated namespaces are excluded.       |
+| ^                                             | **_ContainersCount_** | It indicates the number of containers running on a node where the node agent has been installed. Separated namespaces are excluded. |
 
 When using the **_Select column_** option, you can select a desired agent to view the agent list. 
 

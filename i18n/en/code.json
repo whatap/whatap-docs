@@ -788,6 +788,6 @@
     "description": "The text for authors with 0 blog post"
   },
   "pages.dbfunctions.title": {
-    "message": "Comparison of supported features for each database"
+    "message": "Comparison between supported functions by database"
   }
 }
