@@ -46737,7 +46737,7 @@
   },
   "DSC07907": {
     "en": "- Click the ‘Add API Key’ button. ",
-    "ja": "- 「Add API Key」ボタンをクリックします。",
+    "ja": "- 「Add API Key」ボタンをクリックします。 ",
     "ko": "- 'Add API Key' 버튼을 클릭합니다. ",
     "service_id": "DSC07907"
   },
@@ -47342,7 +47342,7 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
     "service_id": "DSC08008"
@@ -47595,7 +47595,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "service_id": "DSC08050"
   },
@@ -47702,7 +47702,7 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete this item?",
+    "en": "Are you sure you want to delete that item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
     "service_id": "CNT08068"
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The created heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48159,7 +48159,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "service_id": "CNT08143"
   },
@@ -48453,7 +48453,7 @@
   },
   "NTC08194": {
     "en": "An unknown error occurred. Please try again later.",
-    "ja": "不明なエラーが発生しました。しばらくしてからもう一度進めてください。",
+    "ja": "不明なエラーが発生しました。しばらくしてからもう一度お試しください。",
     "ko": "알 수 없는 오류가 발생했습니다. 잠시 후 다시 진행하세요.",
     "service_id": "NTC08194"
   },
@@ -48530,7 +48530,7 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events occurring",
+    "en": "Number of events",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
     "service_id": "TTL08207"
@@ -49383,7 +49383,7 @@
   },
   "ITM08349": {
     "en": "Log view detail setting",
-    "ja": "ログ表示の詳細設定",
+    "ja": "ログ表示詳細設定",
     "ko": "로그 표시 상세 설정",
     "service_id": "ITM08349"
   },
@@ -49586,7 +49586,7 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
     "service_id": "DSC08383"
@@ -50300,7 +50300,7 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "<b>Add the script file to the {path} path</b>.",
+    "en": "Add the script file to <b>{path}</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
     "service_id": "DSC08502"
@@ -50805,13 +50805,13 @@
   },
   "DSC08588": {
     "en": "After performing a simulation to see if the log is successfully parsed with the entered pattern, register the pattern.",
-    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
+    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "service_id": "DSC08588"
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
+    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -51483,7 +51483,7 @@
   },
   "CNT08701": {
     "en": "A subscription for AWS Marketplace is required. Once the subscription is confirmed, you can use the WhaTap services.",
-    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
+    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "service_id": "CNT08701"
   },
@@ -51620,7 +51620,7 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Please update the agent version to the latest version.",
+    "en": "Update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
@@ -51908,7 +51908,7 @@
     "service_id": "ITM08772"
   },
   "DSC08773": {
-    "en": "Please refer to the instructions page for instructions on activating the server inventory function.",
+    "en": "Please refer to the instructions page for instructions on activating the server inventory feature.",
     "ja": "サーバーインベントリ機能を有効にする方法については、ガイドの内容を参照してください。",
     "ko": "서버 인벤토리 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
     "service_id": "DSC08773"
@@ -51926,13 +51926,13 @@
     "service_id": "DSC08775"
   },
   "TTL08776": {
-    "en": "To use the “Server Inventory Map” function properly, the Agent version must meet the following:",
+    "en": "To use the \"Server Inventory Map\" function properly, the Agent version must meet the following:",
     "ja": "「サーバーインベントリマップ」機能を正常に使用するには、エージェントのバージョンが以下を満たす必要があります。",
     "ko": "\"서버 인벤토리 맵\" 기능을 정상적으로 사용하기 위해서는 Agent 버전이 다음을 충족해야 합니다.",
     "service_id": "TTL08776"
   },
   "DSC08777": {
-    "en": "If the Agent version is lower than the version defined above,<br />the server icon will be displayed normally in the \"Server Inventory Map\", but<br />file system information such as group performance statistics information in the server inventory map, summary panel on the right, and detailed view will not be displayed. Information and Metrics may not be displayed properly.",
+    "en": "If the Agent version is lower than the version defined above,<br />the server icon is displayed normally in the \"Server Inventory Map\", but<br />the file system in the server inventory map's group performance statistics information, right summary panel, and detailed view etc. Information and Metrics may not be displayed properly.",
     "ja": "Agentのバージョンが上記のバージョンより低い場合、<br /> 「サーバーインベントリマップ」にはサーバーアイコンが表示されますが、<br />サーバーインベントリマップのグループ性能統計情報、右のサマリーパネル、および詳細ビューなどのファイルシステム情報、メトリクスが正常に表示されないことがあります。",
     "ko": "Agent 버전이 위 정의된 버전보다 낮을 경우,<br />\"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만<br />서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
     "service_id": "DSC08777"
@@ -52072,7 +52072,7 @@
   "DSC08800": {
     "en": "The following features require user settings to activate. For more information, see the WhaTap Docs.",
     "ja": "以下は、機能を有効にするためにユーザー設定が必要な機能です。詳しくはWhaTap Docsを参照してください。",
-    "ko": "다음은 기능 활성화를 위해 사용자 설정이 필요한 기능입니다. 자세한 내용은 WhaTap Docs를 참고하세요.",
+    "ko": "다음은 사용자의 추가 설정 작업이 필요한 모니터링 기능입니다. 자세한 내용은 각 기능별 WhaTap Docs를 참고하세요.\n",
     "service_id": "DSC08800"
   },
   "DSC08801": {
@@ -52106,7 +52106,7 @@
     "service_id": "TTL08805"
   },
   "DSC08806": {
-    "en": "If the installed Agent version is lower than the supported versions below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "en": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
     "ja": "インストールされたエージェントのバージョンが以下のバージョンより低い場合、「サーバーインベントリマップ」にサーバーアイコンは表示されますが、サーバーインベントリマップのグループ性能統計情報、右サマリパネル、詳細ビューなどのファイルシステム情報、メトリクスは正常に表示されないことがあります。",
     "ko": "설치된 Agent 버전이 아래의 지원 버전보다 낮을 경우, \"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만 서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
     "service_id": "DSC08806"
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value}を表示",
+    "ja": "{value} 表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52875,13 +52875,13 @@
   },
   "DSC08936": {
     "en": "The average {resource} usage is close to <b><code>request</code>, possibly causing performance degradation. <b>Adjust the <code>request</code> settings</b>.",
-    "ja": "平均{resource}使用率が<b> <code> request </code>に近いため、パフォーマンスが低下する可能性</b>があります。 <b> <code> request </code>設定を調整</b>します。",
+    "ja": "平均{resource}使用率が<b><code>request</code>に近いため、パフォーマンスが低下する可能性</b>があります。 <b><code>request</code>設定を調整</b>します。",
     "ko": "평균 {resource} 사용량이 <b><code>request</code>에 근접하여 성능 저하 가능성</b>이 있습니다. <b><code>request</code> 설정을 조정</b>하세요.",
     "service_id": "DSC08936"
   },
   "DSC08937": {
     "en": "The average {resource} usage is very high compared to <b><code>limit</code>, possibly causing resource shortage or performance degradation. <b>Adjust the <code>limit</code> setting or increase the resources.</b>",
-    "ja": "平均{resource}使用率が<b> <code>limit</code>と比較して非常に高く、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
+    "ja": "平均{resource}使用率は<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
     "ko": "평균 {resource} 사용량이 <b><code>limit</code> 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
     "service_id": "DSC08937"
   },
@@ -52899,7 +52899,7 @@
   },
   "DSC08940": {
     "en": "The maximum {resource} usage is <b>approaching the <code>limit</code>. Monitor the usage increase.",
-    "ja": "最大{resource}使用率は<b> <code> limit </code>に近い</b>です。使用量の増加を監視してください。",
+    "ja": "最大{resource}使用率は<b> <code>limit</code>に近い</b>です。使用量の増加を監視してください。",
     "ko": "최대 {resource} 사용량이 <b><code>limit</code>에 근접</b>하고 있습니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08940"
   },
@@ -52965,7 +52965,7 @@
   },
   "DSC08951": {
     "en": "The average {resource} usage is <b><code>very low compared to the requests</code>, causing resource waste. Adjust the <code>request</code> settings.",
-    "ja": "平均{resource}使用量が<b> <code> request </code>と比較して非常に低く、リソースの無駄遣いが発生します</b>。 <code>request</code>設定を調整してください。",
+    "ja": "平均{resource}使用量が<b><code>request</code>と比較して非常に低く、リソースの無駄遣いが発生します</b>。 <code>request</code>設定を調整してください。",
     "ko": "평균 {resource} 사용량이 <b><code>request</code> 대비 매우 낮아 리소스 낭비가 발생</b>하고 있습니다. <code>request</code> 설정을 조정하세요.",
     "service_id": "DSC08951"
   },
@@ -53055,7 +53055,7 @@
   },
   "TTL08967": {
     "en": "Today's Syslog",
-    "ja": "本日Syslog",
+    "ja": "本日のSyslog",
     "ko": "금일 Syslog",
     "service_id": "TTL08967"
   },
@@ -53073,7 +53073,7 @@
   },
   "TTL08970": {
     "en": "Active event status",
-    "ja": "進行中のイベントの状況",
+    "ja": "進行中イベントの状況",
     "ko": "진행 중 이벤트 현황",
     "service_id": "TTL08970"
   },
@@ -53097,19 +53097,19 @@
   },
   "TTL08974": {
     "en": "Trends by pending Pods reason",
-    "ja": "Pending Pods Reasonによる推移",
+    "ja": "Pending Pods Reason別の推移",
     "ko": "Pending Pods Reason별 추이",
     "service_id": "TTL08974"
   },
   "BTN08975": {
-    "en": "If you are using managed Kubernetes, you will not see performance information for the kube-apiserver container.",
+    "en": "Pod Startup Analysis",
     "ja": "Pod開始性能分析",
     "ko": "Pod 시작 분석",
     "service_id": "BTN08975"
   },
   "TTL08976": {
     "en": "Top 10 traps in recent 24 hours",
-    "ja": "最近24時 Trap Top 10",
+    "ja": "最近24時間のTrap Top 10",
     "ko": "최근 24시 Trap Top 10",
     "service_id": "TTL08976"
   },
@@ -53121,7 +53121,7 @@
   },
   "DSC08978": {
     "en": "If you are using the managed Kubernetes, the performance information for the kube-apiserver container does not appear.",
-    "ja": "マネージドKubernetesを使用している場合、kube-apiserverコンテナのパフォーマンス情報は表示されません。",
+    "ja": "マネージドKubernetesを使用している場合、kube-apiserverコンテナの性能情報は表示されません。",
     "ko": "관리형 쿠버네티스를 사용하는 경우 kube-apiserver 컨테이너 성능 정보는 표시되지 않습니다.",
     "service_id": "DSC08978"
   },
@@ -53133,7 +53133,7 @@
   },
   "DSC08980": {
     "en": "It de-identifies the accumulated logs.",
-    "ja": "以前に積み重ねられたログを非識別化します。",
+    "ja": "収集されてあるログを非識別化します。",
     "ko": "이전에 쌓인 로그들을 비식별화 처리합니다.",
     "service_id": "DSC08980"
   },
@@ -53151,7 +53151,7 @@
   },
   "ITM08983": {
     "en": "Whether to apply substitution",
-    "ja": "置換を適用するかどうか",
+    "ja": "置換の適用有無",
     "ko": "치환 적용 여부",
     "service_id": "ITM08983"
   },
@@ -53163,13 +53163,13 @@
   },
   "BTN08985": {
     "en": "Start inspection",
-    "ja": "点検開始",
+    "ja": "チェック開始",
     "ko": "점검 시작",
     "service_id": "BTN08985"
   },
   "BTN08986": {
     "en": "Stop inspection",
-    "ja": "チェックを中止",
+    "ja": "チェック中止",
     "ko": "점검 중지",
     "service_id": "BTN08986"
   },
@@ -53187,13 +53187,13 @@
   },
   "ITM08989": {
     "en": "Search start time",
-    "ja": "検索開始時間",
+    "ja": "検索開始時刻",
     "ko": "검색 시작 시간",
     "service_id": "ITM08989"
   },
   "ITM08990": {
     "en": "Search end time",
-    "ja": "検索終了時間",
+    "ja": "検索終了時刻",
     "ko": "검색 종료 시간",
     "service_id": "ITM08990"
   },
@@ -53205,37 +53205,37 @@
   },
   "ITM08992": {
     "en": "Inspection start time",
-    "ja": "検査作業開始時間",
+    "ja": "チェック作業の開始時刻",
     "ko": "점검 작업 시작 시간",
     "service_id": "ITM08992"
   },
   "ITM08993": {
     "en": "Inspection end time",
-    "ja": "チェックジョブ終了時間",
+    "ja": "チェック作業の終了時刻",
     "ko": "점검 작업 종료 시간",
     "service_id": "ITM08993"
   },
   "ITM08994": {
     "en": "Pattern matching result",
-    "ja": "パターンマッチング結果",
+    "ja": "パターンのマッチング結果",
     "ko": "패턴 매칭 결과",
     "service_id": "ITM08994"
   },
   "ITM08995": {
     "en": "Inspection result",
-    "ja": "検査作業結果",
+    "ja": "チェック作業の結果",
     "ko": "점검 작업 결과",
     "service_id": "ITM08995"
   },
   "DSC08996": {
     "en": "After entering the inspection conditions, click \"Start inspection.\"",
-    "ja": "確認条件を入力したら、[確認の開始]をクリックしてください。",
+    "ja": "チェックの条件を入力してから「チェック開始」をクリックしてください。",
     "ko": "점검 조건을 입력한 후 '점검 시작'을 클릭하세요.",
     "service_id": "DSC08996"
   },
   "ITM08997": {
     "en": "Resident registration number",
-    "ja": "住民登録番号",
+    "ja": "個人識別番号",
     "ko": "주민등록번호",
     "service_id": "ITM08997"
   },
@@ -53247,7 +53247,7 @@
   },
   "ITM08999": {
     "en": "Driver's license number",
-    "ja": "運転免許番号",
+    "ja": "運転免許証番号",
     "ko": "운전면허번호",
     "service_id": "ITM08999"
   },
@@ -53295,19 +53295,19 @@
   },
   "TTL09007": {
     "en": "Maximum recent 24-hour throughput interface",
-    "ja": "最近24時までのThroughputインターフェース",
+    "ja": "最近24時間までのスループットのインターフェース",
     "ko": "최근 24시 최대 Throughput 인터페이스",
     "service_id": "TTL09007"
   },
   "TTL09008": {
     "en": "Maximum recent 24-hour PPS interface",
-    "ja": "最近24時の最大PPSインターフェース ",
+    "ja": "最近24時間の最大PPSのインターフェース ",
     "ko": "최근 24시 최대 PPS 인터페이스 ",
     "service_id": "TTL09008"
   },
   "DSC09009": {
     "en": "You can monitor performance metrics, SQLs, and locks of {platform}, as well as analyzing and comparing trends over time.",
-    "ja": "{platform} のパフォーマンス指標と SQL、ロック情報をモニターし、トレンドの分析と比較を行うことができます。",
+    "ja": "{platform} の性能指標と SQL、ロック情報を監視し、トレンドの分析と比較を行うことができます。",
     "ko": "{platform}의 성능 지표 및 SQL, Lock 정보를 모니터링하고 추이 분석 및 비교할 수 있습니다.",
     "service_id": "DSC09009"
   },
@@ -53331,13 +53331,13 @@
   },
   "BTN09013": {
     "en": "Load device",
-    "ja": "デバイスを読み込む",
+    "ja": "デバイスの読込み",
     "ko": "디바이스 불러오기",
     "service_id": "BTN09013"
   },
   "CNT09014": {
     "en": "There is no device registered.",
-    "ja": "登録されたデバイスはありません。",
+    "ja": "登録されたデバイスがありません。",
     "ko": "등록된 디바이스가 없습니다.",
     "service_id": "CNT09014"
   },
@@ -53349,7 +53349,7 @@
   },
   "BTN09016": {
     "en": "Display module name",
-    "ja": "モジュール名表示",
+    "ja": "モジュール名の表示",
     "ko": "모듈명 표시",
     "service_id": "BTN09016"
   },
@@ -53379,61 +53379,49 @@
   },
   "TTL09021": {
     "en": "Experience the new Metrics Explorer",
-    "ja": "新しいメトリックスエクスプローラを体験してください",
+    "ja": "新しいメトリクスエクスプローラを体験してみましょう。",
     "ko": "새로운 메트릭스 익스플로러를 경험해 보세요",
     "service_id": "TTL09021"
   },
   "CNT09022": {
     "en": "<b>Update your agent to the latest version and enable the Category V2 option</b></br>to take better advantage of real-time data exploration and historical performance analysis.",
-    "ja": "<b>最新バージョンにエージェントを更新し、Category V2オプションを有効にする</b></br>リアルタイムデータのナビゲーションと過去のパフォーマンス分析をより効果的に活用してください。",
+    "ja": "<b>最新バージョンにエージェントを更新し、Category V2オプションを有効にします。</b></br>リアルタイムなデータ照会と過去性能の分析がより効果的に活用できます。",
     "ko": "<b>최신 버전으로 에이전트를 업데이트하고 Category V2 옵션을 활성화</b>하여</br>실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
     "service_id": "CNT09022"
   },
   "DSC09023": {
     "en": "Provides precise performance data with <b>shorter collection intervals</b>.",
-    "ja": "<b>短い収集間隔</b>で正確なパフォーマンスデータを提供します。",
+    "ja": "<b>より短い収集間隔</b>で、精密な性能データを提供します。",
     "ko": "<b>더 짧은 수집 간격</b>으로 정밀한 성능 데이터를 제공합니다.",
     "service_id": "DSC09023"
   },
   "DSC09024": {
-    "en": "Performance data in terms of overall usage rate is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
-    "ja": "全体使用率の観点からの性能データは2秒、個別プロセス/Physical Disk/NICなどのデータは5秒単位で収集して提供します。",
+    "en": "Performance data in terms of overall utilization is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
+    "ja": "全体使用率の観点からの性能データは2秒、個別プロセス/Physical Disk/NICなどのデータは5秒間隔で収集します。",
     "ko": "전체 사용율 관점의 성능 데이터는 2초, 개별 프로세스/Physical Disk/NIC 등의 데이터는5초 단위로 수집하여 제공합니다.",
     "service_id": "DSC09024"
   },
   "DSC09025": {
     "en": "System Kernel, Physical Disk, Process Group, and Process TopN indicators have been added, and the indicators that can be analyzed will be expanded step by step.",
-    "ja": "Systme Kernel、Physical Disk、Process Group、Process TopN指標などが追加され、分析可能な指標は段階的に拡張される予定です。",
-    "ko": "Systme Kernel, Physical Disk, Process Group, Process TopN 지표 등이 추가되었으며 분석 가능한 지표는 단계적으로 확장될 예정입니다.",
+    "ja": "System Kernel、Physical Disk、Process Group、Process TopN指標などが追加されました。今後も分析できる指標が段階的に追加される予定です。",
+    "ko": "System Kernel, Physical Disk, Process Group, Process TopN 지표 등이 추가되었으며 분석 가능한 지표는 단계적으로 확장될 예정입니다.",
     "service_id": "DSC09025"
-  },
-  "DSC09026": {
-    "en": "Process Group Metrics",
-    "ja": "Process Group指標",
-    "ko": "Process Group 지표",
-    "service_id": "DSC09026"
-  },
-  "DSC09027": {
-    "en": "Process Top N indicators, etc.",
-    "ja": "Process Top N 指標など",
-    "ko": "Process Top N 지표 등",
-    "service_id": "DSC09027"
   },
   "DSC09028": {
     "en": "Supports AIX {aix_version} or higher, Linux {linux_version} or higher, Solaris {solaris_version} or higher, Windows {windows_version} or higher",
-    "ja": "AIX {aix_version}以上、Linux {linux_version}以上、Solaris {solaris_version}以上、Windows {windows_version}以上をサポート",
+    "ja": "AIX {aix_version}以降、Linux {linux_version}以降、Solaris {solaris_version}以降、Windows {windows_version}以降に対応しています。",
     "ko": "AIX {aix_version} 이상, Linux {linux_version} 이상, Solaris {solaris_version} 이상, Windows {windows_version} 이상 지원",
     "service_id": "DSC09028"
   },
   "DSC09029": {
     "en": "You can easily explore specific <b>metrics</b> for your desired server and quickly identify performance issues.",
-    "ja": "目的のサーバーの特定の<b>指標を簡単に検索</b>し、パフォーマンスの問題をすばやく把握できます。",
+    "ja": "サーバーの指標を<b>簡単に検索</b>して、性能の問題を迅速に把握できます。",
     "ko": "원하는 서버의 특정 <b>지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
   },
   "TTL09030": {
     "en": "To use the new metrics explorer feature, <br/>the Server Inventory feature must be enabled and the agent must be updated.",
-    "ja": "新しいメトリックスエクスプローラ機能を使用するには、<br/>サーバーインベントリ機能の有効化とエージェントアップデートが必要です。",
+    "ja": "新しいメトリクスエクスプローラ機能を使用するには、<br/>サーバーインベントリ機能の有効化とエージェントアップデートが必要です。",
     "ko": "새로운 메트릭스 익스플로러 기능을 사용하기 위해서는<br/>서버 인벤토리 기능 활성화 및 에이전트 업데이트가 필요합니다.",
     "service_id": "TTL09030"
   },
@@ -53469,7 +53457,7 @@
   },
   "TTL09036": {
     "en": "Trap configuration",
-    "ja": "トラップ設定",
+    "ja": "Trapの設定",
     "ko": "Trap 설정",
     "service_id": "TTL09036"
   },
@@ -53517,21 +53505,27 @@
   },
   "CNT09045": {
     "en": "<b>Provides precise performance data with shorter collection intervals</b>",
-    "ja": "<b>より短い収集間隔で正確なパフォーマンスデータを提供します。</b>",
+    "ja": "<b>より短い収集間隔</b>で、精密な性能データを提供します。",
     "ko": "<b>더 짧은 수집 간격으로 정밀한 성능 데이터 제공합니다.</b>",
     "service_id": "CNT09045"
   },
   "CNT09046": {
     "en": "<b>Collectable metric itmes have been expanded.</b>",
-    "ja": "収集可能な<b>メトリックアイテム</b>が拡張されました。",
+    "ja": "収集できる<b>メトリクス項目</b>が追加されました。",
     "ko": "수집 가능한 <b>메트릭 항목</b>이 확장되었습니다.",
     "service_id": "CNT09046"
   },
-  "CNT09047": {
-    "en": "<b>Analyzable metrics are scheduled to be expanded gradually.</b>",
-    "ja": "<b>分析可能な指標は段階的に拡大する予定です。</b>",
-    "ko": "<b>분석 가능한 지표는 단계적으로 확장될 예정입니다.</b>",
-    "service_id": "CNT09047"
+  "DSC09048": {
+    "en": "The kube-scheduler dashboard menu allows you to identify any propagation of Pod placement issue early as possible across the cluster through the kube-scheduler performance, Pod preemption attempts and eviction trends, and Pending trends.",
+    "ja": "kube-schedulerダッシュボードメニューを使用すると、Cubernetesスケジューラのリアルタイムな性能、Podプリエンプションとエスケープの推移、Pendingの増加によるクラスターとビジネスの問題を早期に把握できます。",
+    "ko": "kube-scheduler 대시보드 메뉴를 통해 쿠버네티스 스케줄러의 실시간 성능, Pod 선점 및 축출 추이, Pending 증가로 인한 클러스터 및 비즈니스 이슈를 조기에 파악할 수 있습니다.",
+    "service_id": "DSC09048"
+  },
+  "TTL09049": {
+    "en": "Initial creation time",
+    "ja": "最初の作成時間",
+    "ko": "최초 생성 시간",
+    "service_id": "TTL09049"
   },
   "": {
     "en": "#VALUE!",
