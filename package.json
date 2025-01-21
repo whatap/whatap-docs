@@ -45,7 +45,7 @@
     "@meilisearch/autocomplete-client": "*",
     "@meilisearch/instant-meilisearch": "^0.22.0",
     "@saucelabs/theme-github-codeblock": "^0.3.0",
-    "@whatap-docs/remark-sectionize": "^0.0.2",
+    "@whatap-docs/remark-sectionize": "^0.0.3",
     "axios": "^1.7.2",
     "babel-plugin-styled-components": "^2",
     "cheerio": "^1.0.0-rc.12",

@@ -3703,10 +3703,10 @@
     "@webassemblyjs/ast" "1.12.1"
     "@xtuc/long" "4.2.2"
 
-"@whatap-docs/remark-sectionize@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/@whatap-docs/remark-sectionize/-/remark-sectionize-0.0.2.tgz"
-  integrity sha512-r1z2Xc6IrFHmD3veN7FVT2JRsHNo4APOPipG9YhbGdvu09so27Vm+gseRL4a97FDEiQRFIONq9ljOGLvTfwZSA==
+"@whatap-docs/remark-sectionize@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@whatap-docs/remark-sectionize/-/remark-sectionize-0.0.3.tgz#003c005b8d14cdae0b6a7ba62a282852e2024fe6"
+  integrity sha512-O/snS7+vQxPR84VtCw/QjjSaGgUVUseAC6RoCw+TSjo+tuML43OLwuOtGUhbfqmCD8nARkSBbWR1si2oRRI8yA==
   dependencies:
     unist-util-find-after "^4.0.1"
     unist-util-visit "^4.1.2"
