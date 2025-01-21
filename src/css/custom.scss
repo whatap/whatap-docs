@@ -2246,6 +2246,21 @@ main {
       font-weight: 300;
       font-size: 98%;
     }
+    code.beta-lab {
+      // border: none;
+      // position: absolute;
+      font-style: italic;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 0 3px;
+      border: none;
+      background-color: rgb(235, 235, 235);
+      color: rgb(82, 114, 255);
+      font-family: "Oleo Script" !important;
+      margin-top: -4px;
+      font-weight: 300;
+      // font-size: 80%;
+    }
     code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
       color: rgb(139, 82, 255);
