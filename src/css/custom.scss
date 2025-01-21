@@ -1329,6 +1329,9 @@ main {
       background-color: #fff;
       margin: 8px 0;
     }
+    h2 + .container:has(h3) {
+      margin-top: 24px;
+    }
     .container {
       margin-left: 0;
       img {
@@ -1358,6 +1361,13 @@ main {
       .width--50 {
         width: 50%;
         max-width: 50%;
+      }
+      .width--60 {
+        width: 60%;
+        max-width: 60%;
+      }
+      .padding-r--10 {
+        padding-right: 10px;
       }
       .row {
         .col {

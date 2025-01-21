@@ -1505,6 +1505,184 @@ const sidebars = {
       ]
     },
   ],
+  db2Sidebar: [
+    {
+      type: 'category',
+      label: 'IBM DB2 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'db2/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'db2/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'db2/install-agent',
+            'db2/after-install-agent',
+            'db2/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/agent-settings'
+          },
+          items: [
+            'db2/agent-dbx-settings',
+            'db2/agent-xos-settings',
+          ],
+        },
+        'db2/agent-manage',
+        'db2/usage-ui',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/dashboard-intro'
+          },
+          items: [
+            'db2/instance-list',
+            'db2/instance-monitoring',
+            'db2/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/flex-board',
+          },
+          items: [
+            'db2/flexboard-template',
+            'db2/flexboard-create',
+            'db2/flexboard-manage',
+            'db2/flexboard-metric-widget',
+            'db2/flexboard-widget-manage',
+            'db2/flexboard-widget-template',
+            'db2/flexboard-mode',
+            'db2/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'db2/analysis-count-trend',
+            'db2/analysis-lock-tree',
+            'db2/analysis-databaseparameter',
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/metrics-intro'
+          },
+          items: [
+            'db2/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'db2/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'db2/metrics-chart',
+            'db2/metrics-search',
+            'db2/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'db2/stat',
+            'db2/report-intro',
+          ],
+        },
+        'db2/integrated-report',
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/log-main'
+          },
+          items: [
+            'db2/log-db',
+            'db2/log-lt',
+            'db2/log-exp',
+            'db2/log-search',
+            'db2/log-setting',
+            'db2/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'db2/set-notice',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'db2/warning-notice-v2'
+              },
+              items: [
+                'db2/basic-event-setting',
+                'db2/metric-warning-notice-new',
+                'db2/set-notification-message',
+                'db2/set-event-detect-anomal',
+                'db2/set-event-log',
+              ]
+            },
+            'db2/set-receive-event',
+            'db2/set-event-history',
+            'db2/set-event-format',
+            'db2/real-time-notification',
+            'db2/common-alert'
+          ],
+        },
+        'db2/labs'
+      ],
+    }
+  ],
   postgreSidebar: [
     {
       type: 'category',
@@ -1645,6 +1823,7 @@ const sidebars = {
             'postgresql/report-intro',
           ],
         },
+        'postgresql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -1830,6 +2009,7 @@ const sidebars = {
             'oracle-v1/report-intro',
           ],
         },
+        'oracle-v1/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -2006,6 +2186,7 @@ const sidebars = {
             'oracle/report-intro',
           ],
         },
+        'oracle/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2188,6 +2369,7 @@ const sidebars = {
             'oracle-pro/report-intro',
           ],
         },
+        'oracle-pro/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2384,6 +2566,7 @@ const sidebars = {
             'mysql/report-intro',
           ]
         },
+        'mysql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2577,6 +2760,7 @@ const sidebars = {
             'mssql/backup-recovery-history'
           ],
         },
+        'mssql/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -2757,6 +2941,7 @@ const sidebars = {
             'mssql-v1/report-intro',
           ],
         },
+        'mssql-v1/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -2924,6 +3109,7 @@ const sidebars = {
             'tibero/report-intro',
           ]
         },
+        'tibero/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -3096,6 +3282,7 @@ const sidebars = {
             'cubrid/report-intro',
           ],
         },
+        'cubrid/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3280,6 +3467,7 @@ const sidebars = {
             'cubrid-v1/report-intro',
           ],
         },
+        'cubrid-v1/integrated-report',
         {
           type: 'category',
           label: '알림 설정하기',
@@ -3449,6 +3637,7 @@ const sidebars = {
             'altibase/report-intro',
           ]
         },
+        'altibase/integrated-report',
         {
           type: 'category',
           label: '로그',
@@ -3618,9 +3807,9 @@ const sidebars = {
             'altibase-v1/analysis-function',
             'altibase-v1/stat',
             'altibase-v1/report-intro',
-            'altibase-v1/integrated-report',
           ]
         },
+        'altibase-v1/integrated-report',
         {
           type: 'category',
           label: '경고 알림',
@@ -6954,6 +7143,11 @@ const sidebars = {
           type: 'link',
           label: 'MongoDB',
           href: '../mongodb/monitoring-intro',
+        },
+        {
+          type: 'link',
+          label: 'IBM DB2',
+          href: '../db2/monitoring-intro',
         }
       ],
     }

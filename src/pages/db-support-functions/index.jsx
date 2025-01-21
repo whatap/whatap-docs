@@ -85,6 +85,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Dashboard",
@@ -107,6 +108,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Dashboard",
@@ -129,6 +131,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Dashboard",
@@ -151,6 +154,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Dashboard",
@@ -173,6 +177,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Analysis",
@@ -195,6 +200,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Analysis",
@@ -217,6 +223,7 @@ export default function App() {
       redisv1: true,
       mongodb: "",
       mongodbv1: true,
+      db2: ""
     },
     {
       category: "Analysis",
@@ -239,6 +246,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Analysis",
@@ -261,6 +269,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Analysis",
@@ -283,6 +292,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Analysis",
@@ -327,6 +337,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Analysis",
@@ -349,6 +360,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Analysis",
@@ -371,6 +383,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Analysis",
@@ -393,6 +406,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Analysis",
@@ -415,6 +429,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Analysis",
@@ -437,6 +452,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Analysis",
@@ -459,6 +475,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Analysis",
@@ -481,6 +498,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Stat/Report",
@@ -503,6 +521,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Stat/Report",
@@ -525,6 +544,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -547,6 +567,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -569,6 +590,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -591,6 +613,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -613,6 +636,7 @@ export default function App() {
       redisv1: "",
       mongodb: true,
       mongodbv1: true,
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -635,6 +659,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -657,6 +682,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -679,6 +705,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Stat/Report",
@@ -701,6 +728,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Stat/Report",
@@ -723,6 +751,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Log",
@@ -745,6 +774,7 @@ export default function App() {
       redisv1: "",
       mongodb: true,
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Log",
@@ -767,6 +797,7 @@ export default function App() {
       redisv1: "",
       mongodb: true,
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Log",
@@ -789,6 +820,7 @@ export default function App() {
       redisv1: "",
       mongodb: true,
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Log",
@@ -811,6 +843,7 @@ export default function App() {
       redisv1: "",
       mongodb: true,
       mongodbv1: "",
+      db2: true
     },
     {
       category: "Alert",
@@ -833,6 +866,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Alert",
@@ -855,6 +889,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Alert",
@@ -877,6 +912,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Correlation analysis",
@@ -899,6 +935,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Correlation analysis",
@@ -921,6 +958,7 @@ export default function App() {
       redisv1: true,
       mongodb: true,
       mongodbv1: true,
+      db2: true
     },
     {
       category: "Correlation analysis",
@@ -943,6 +981,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Management",
@@ -965,6 +1004,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: ""
     },
     {
       category: "Labs",
@@ -987,6 +1027,7 @@ export default function App() {
       redisv1: "",
       mongodb: "",
       mongodbv1: "",
+      db2: true
     }
   ];
 
@@ -1063,6 +1104,7 @@ export default function App() {
               { title: "V1", field: "mongodbv1", hozAlign: "center", headerHozAlign: "center", headerVertical:false, headerSort: false,width:157, formatter: "adaptable" },
             ]
           },
+          { title: "IBM DB2", field: "db2", hozAlign: "center", headerHozAlign: "center", headerVertical:false, headerSort: false,width:157, formatter: "adaptable" },
         ],
       });
     }, []); // 컴포넌트가 마운트될 때 한 번 실행
