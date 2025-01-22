@@ -6,6 +6,10 @@
   --cutomplatform-color: #dfdfdf;
 }
 
+header + .release_items {
+  margin-top: 45px !important;
+}
+
 h2 + .release_items {
   margin-top: 45px;
 }
