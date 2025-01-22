@@ -231,12 +231,12 @@ function RecommendedDoc() {
     if (currentLocale == "ko") {
         return (
             <>
-                <Link to={useBaseUrl("usage-ui#timeselector")} className={clsx(styles.white, styles.underline)}>UI 사용 안내: 시간 선택자</Link>,&nbsp;
-                <Link to={useBaseUrl("browser/resourceload-stat")} className={clsx(styles.white, styles.underline)}>Browser: 리소스 로드 통계</Link>,&nbsp;
-                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>서버 인벤토리 맵</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/node-map")} className={clsx(styles.white, styles.underline)}>노드 맵</Link>,&nbsp;
-                <Link to={useBaseUrl("java/linked-projects")} className={clsx(styles.white, styles.underline)}>APM: 연계 프로젝트 관리</Link>,&nbsp;
-                <Link to={useBaseUrl("postgresql/cloudsettings")} className={clsx(styles.white, styles.underline)}>DB: 클라우드 설정</Link>
+                <Link to={useBaseUrl("db2/monitoring-intro")} className={clsx(styles.white, styles.underline)}>IBM DB2</Link>,&nbsp;
+                <Link to={useBaseUrl("server/metrics-explorer")} className={clsx(styles.white, styles.underline)}>메트릭스 익스플로러</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/kube-scheduler-dashboard")} className={clsx(styles.white, styles.underline)}>kube-scheduler 대시보드</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/container-timeline")} className={clsx(styles.white, styles.underline)}>컨테이너 타임라인</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/pod-timeline")} className={clsx(styles.white, styles.underline)}>Pod 타임라인</Link>,&nbsp;
+                <Link to={useBaseUrl("kubernetes/pv-list")} className={clsx(styles.white, styles.underline)}>PV/PVC 목록</Link>
             </>
         );
     } else if (currentLocale == "en") {
@@ -505,13 +505,6 @@ export default function pages() {
                         </FlexCard>
 
                         <FlexCard icons="index-icon/product-mongodb-l.svg" product="Mongodb" type="Database" url="mongodb/monitoring-intro">
-                            {translate({
-                                id: "index.pages.section.product.mongodb",
-                                message: "성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다."
-                            })}
-                        </FlexCard>
-
-                        <FlexCard icons="index-icon/product-db2.svg" product="IBM DB2" type="Database" url="db2/monitoring-intro">
                             {translate({
                                 id: "index.pages.section.product.mongodb",
                                 message: "성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다."
