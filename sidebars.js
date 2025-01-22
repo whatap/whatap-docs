@@ -6909,6 +6909,7 @@ const sidebars = {
             'kubernetes/etcd-dashboard',
             'kubernetes/kube-scheduler-dashboard',
             'kubernetes/service-list',
+            'kubernetes/pv-list',
             'kubernetes/ingress-list',
             'kubernetes/resource-namespace',
           ],
