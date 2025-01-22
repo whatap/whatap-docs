@@ -6872,6 +6872,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'kubernetes/resource-container-list',
+            'kubernetes/container-timeline',
             'kubernetes/resource-container-volume',
             'kubernetes/container-images',
             'kubernetes/analysis-oom-container',
@@ -6884,6 +6885,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'kubernetes/resource-pod-list',
+            'kubernetes/pod-timeline',
             'kubernetes/pending-pod-status',
             'kubernetes/resource-application-list',
             'kubernetes/deployment-list',

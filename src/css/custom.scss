@@ -2406,14 +2406,18 @@ main {
       top: 3px;
       border: none;
     }
-    img[src*='k8s-node-timeline-config.png'], img[src*='k8s-node-timeline-resource.png'], img[src*='k8s-node-timeline-metrics.png'], img[src*='k8s-node-timeline-event.png'] {
+    img[src*='k8s-node-timeline-resource.png'], img[src*='k8s-node-timeline-metrics.png'], img[src*='k8s-node-timeline-event.png'] {
       max-height: 700px;
+      // max-width: 500px;
       // 중앙 정렬
       display: block; 
       margin: 0 auto;
     }
     img[src*='k8s-node-timeline-config.png'] {
-      max-width: 730px;
+      max-width: 650px;
+      max-height: 750px;
+      display: block; 
+      margin: 0 auto;
     }
     img[alt*='sc'] {
       border: none;
