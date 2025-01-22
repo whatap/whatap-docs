@@ -6718,6 +6718,50 @@ const sidebars = {
       ]  
     }
   ],
+  nmsSidebar: [
+    {
+      type: 'category',
+      label: 'Network 관리 시스템',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'nms/introduction'
+      },
+      items: [
+        'nms/supported-spec',
+        'nms/install-agent',
+        'nms/usage-ui',
+        'nms/device-dashboard',
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nms/flex-board',
+          },
+          items: [
+            'nms/flexboard-template',
+            'nms/flexboard-create',
+            'nms/flexboard-manage',
+            'nms/flexboard-metric-widget',
+            'nms/flexboard-widget-manage',
+            'nms/flexboard-widget-template',
+            'nms/flexboard-mode',
+            'nms/flexboard-share',
+          ],
+        },
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+      ]
+    }
+
+  ],
   kubeSidebar: [
     {
       type: 'category',
