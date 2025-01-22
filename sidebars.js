@@ -6698,7 +6698,24 @@ const sidebars = {
           label: 'Log 모니터링',
           id: 'log/introduction'
         },
-        'server/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/labs',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'server/metrics-explorer',
+              label: '메트릭스 익스플로러',
+              className: 'beta'
+            },
+          ]
+        }, 
       ]  
     }
   ],
@@ -6856,6 +6873,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'kubernetes/resource-container-list',
+            'kubernetes/container-timeline',
             'kubernetes/resource-container-volume',
             'kubernetes/container-images',
             'kubernetes/analysis-oom-container',
@@ -6868,6 +6886,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'kubernetes/resource-pod-list',
+            'kubernetes/pod-timeline',
             'kubernetes/pending-pod-status',
             'kubernetes/resource-application-list',
             'kubernetes/deployment-list',
@@ -6889,6 +6908,7 @@ const sidebars = {
             'kubernetes/kube-apiserver-dashboard',
             'kubernetes/kube-apiserver-metrics-search',
             'kubernetes/etcd-dashboard',
+            'kubernetes/kube-scheduler-dashboard',
             'kubernetes/service-list',
             'kubernetes/ingress-list',
             'kubernetes/resource-namespace',

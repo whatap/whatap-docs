@@ -2104,6 +2104,12 @@ main {
       border-left: 1px solid #B7CEFF;
       border-right: 1px solid #B7CEFF;
     }
+    code.filter.gr {
+      background-color: #d9d9d9;
+      color: #767676;
+      border: none;
+      border-radius: 1.5px;
+    }
     code.custom-cl{
       background-color: #A3A3A3;
       color: #fff;
@@ -2227,6 +2233,21 @@ main {
       margin-top: -4px;
       font-weight: 300;
       font-size: 98%;
+    }
+    code.beta-lab {
+      // border: none;
+      // position: absolute;
+      font-style: italic;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 0 3px;
+      border: none;
+      background-color: rgb(235, 235, 235);
+      color: rgb(82, 114, 255);
+      font-family: "Oleo Script" !important;
+      margin-top: -4px;
+      font-weight: 300;
+      // font-size: 80%;
     }
     code.newfunc, code.oldfunc {
       background-color: rgb(232, 225, 255);
@@ -2385,14 +2406,18 @@ main {
       top: 3px;
       border: none;
     }
-    img[src*='k8s-node-timeline-config.png'], img[src*='k8s-node-timeline-resource.png'], img[src*='k8s-node-timeline-metrics.png'], img[src*='k8s-node-timeline-event.png'] {
+    img[src*='k8s-node-timeline-resource.png'], img[src*='k8s-node-timeline-metrics.png'], img[src*='k8s-node-timeline-event.png'] {
       max-height: 700px;
+      // max-width: 500px;
       // 중앙 정렬
       display: block; 
       margin: 0 auto;
     }
     img[src*='k8s-node-timeline-config.png'] {
-      max-width: 730px;
+      max-width: 650px;
+      max-height: 750px;
+      display: block; 
+      margin: 0 auto;
     }
     img[alt*='sc'] {
       border: none;
