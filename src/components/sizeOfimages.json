@@ -4141,27 +4141,27 @@
   },
   "browser-resourceload-stat-basic-en.png": {
     "width": 1200,
-    "height": 1055
+    "height": 806
   },
   "browser-resourceload-stat-basic-ja.png": {
     "width": 1200,
-    "height": 1055
+    "height": 806
   },
   "browser-resourceload-stat-basic.png": {
     "width": 1200,
-    "height": 1055
+    "height": 805
   },
   "browser-resourceload-stat-group-list-en.png": {
     "width": 1200,
-    "height": 440
+    "height": 327
   },
   "browser-resourceload-stat-group-list-ja.png": {
     "width": 1200,
-    "height": 440
+    "height": 326
   },
   "browser-resourceload-stat-group-list.png": {
     "width": 1200,
-    "height": 440
+    "height": 318
   },
   "browser-resourceload-stat-perf-metrics-filter-en.png": {
     "width": 440,
@@ -4209,15 +4209,15 @@
   },
   "browser-resourceload-stat-resource-type-trend-select-time-en.png": {
     "width": 1200,
-    "height": 949
+    "height": 700
   },
   "browser-resourceload-stat-resource-type-trend-select-time-ja.png": {
     "width": 1200,
-    "height": 949
+    "height": 700
   },
   "browser-resourceload-stat-resource-type-trend-select-time.png": {
     "width": 1200,
-    "height": 949
+    "height": 700
   },
   "browser-resourceload-stat-resource-type-trend.png": {
     "width": 1200,
@@ -4722,6 +4722,42 @@
   "browser-statistics-perf-metrics-filter.png": {
     "width": 400,
     "height": 446
+  },
+  "browser-statistics-resource-header-en.png": {
+    "width": 400,
+    "height": 127
+  },
+  "browser-statistics-resource-header-ja.png": {
+    "width": 400,
+    "height": 128
+  },
+  "browser-statistics-resource-header.png": {
+    "width": 400,
+    "height": 129
+  },
+  "browser-statistics-resource-stat-detail-loadcount-trend.png": {
+    "width": 800,
+    "height": 108
+  },
+  "browser-statistics-resource-stat-detail-loadsize-trend.png": {
+    "width": 800,
+    "height": 105
+  },
+  "browser-statistics-resource-stat-detail-resourcegroup.png": {
+    "width": 800,
+    "height": 261
+  },
+  "browser-statistics-resource-stat-detail-time-graph.png": {
+    "width": 800,
+    "height": 414
+  },
+  "browser-statistics-resource-stat-detail-timeline.png": {
+    "width": 800,
+    "height": 76
+  },
+  "browser-statistics-resource-stat-detail-trend.png": {
+    "width": 800,
+    "height": 106
   },
   "browser-statistics-set-custom-time-en.png": {
     "width": 400,
@@ -5803,6 +5839,18 @@
     "width": 600,
     "height": 225
   },
+  "db-bottom-table-filter-db2-en.png": {
+    "width": 600,
+    "height": 246
+  },
+  "db-bottom-table-filter-db2-ja.png": {
+    "width": 600,
+    "height": 245
+  },
+  "db-bottom-table-filter-db2.png": {
+    "width": 600,
+    "height": 239
+  },
   "db-bottom-table-filter-mongodb-en.png": {
     "width": 600,
     "height": 246
@@ -6214,6 +6262,18 @@
   "db-compare-count-trend-cubrid.png": {
     "width": 1200,
     "height": 1055
+  },
+  "db-compare-count-trend-db2-en.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-compare-count-trend-db2-ja.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "db-compare-count-trend-db2.png": {
+    "width": 1200,
+    "height": 1054
   },
   "db-compare-count-trend-mongodb-en.png": {
     "width": 1200,
@@ -6867,6 +6927,18 @@
     "width": 1200,
     "height": 375
   },
+  "db-database-sql-stat-db2-en.png": {
+    "width": 1200,
+    "height": 401
+  },
+  "db-database-sql-stat-db2-ja.png": {
+    "width": 1200,
+    "height": 401
+  },
+  "db-database-sql-stat-db2.png": {
+    "width": 1200,
+    "height": 401
+  },
   "db-database-sql-stat-en.png": {
     "width": 1200,
     "height": 383
@@ -7062,6 +7134,18 @@
   "db-databaseparameter-changed-cubrid.png": {
     "width": 1200,
     "height": 576
+  },
+  "db-databaseparameter-changed-db2-en.png": {
+    "width": 1200,
+    "height": 340
+  },
+  "db-databaseparameter-changed-db2-ja.png": {
+    "width": 1200,
+    "height": 340
+  },
+  "db-databaseparameter-changed-db2.png": {
+    "width": 1200,
+    "height": 340
   },
   "db-databaseparameter-changed-en.png": {
     "width": 1200,
@@ -7283,6 +7367,18 @@
     "width": 1200,
     "height": 479
   },
+  "db-databaseparameter-db2-en.png": {
+    "width": 1200,
+    "height": 476
+  },
+  "db-databaseparameter-db2-ja.png": {
+    "width": 1200,
+    "height": 476
+  },
+  "db-databaseparameter-db2.png": {
+    "width": 1200,
+    "height": 476
+  },
   "db-databaseparameter-en.png": {
     "width": 1200,
     "height": 1030
@@ -7487,6 +7583,18 @@
     "width": 1200,
     "height": 291
   },
+  "db-instance-list-db2-en.png": {
+    "width": 1200,
+    "height": 294
+  },
+  "db-instance-list-db2-ja.png": {
+    "width": 1200,
+    "height": 294
+  },
+  "db-instance-list-db2.png": {
+    "width": 1200,
+    "height": 294
+  },
   "db-instance-list-mongodb-en.png": {
     "width": 1200,
     "height": 355
@@ -7647,6 +7755,18 @@
     "width": 1200,
     "height": 1054
   },
+  "db-instance-monitoring-db2-en.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-instance-monitoring-db2-ja.png": {
+    "width": 1200,
+    "height": 1055
+  },
+  "db-instance-monitoring-db2.png": {
+    "width": 1200,
+    "height": 1055
+  },
   "db-instance-monitoring-linked-project-en.png": {
     "width": 1190,
     "height": 378
@@ -7767,6 +7887,18 @@
     "width": 1200,
     "height": 1054
   },
+  "db-instance-monitoring-seltime-db2-en.png": {
+    "width": 1200,
+    "height": 471
+  },
+  "db-instance-monitoring-seltime-db2-ja.png": {
+    "width": 1200,
+    "height": 471
+  },
+  "db-instance-monitoring-seltime-db2.png": {
+    "width": 1200,
+    "height": 471
+  },
   "db-instance-monitoring-seltime-mongodb-en.png": {
     "width": 1200,
     "height": 1054
@@ -7838,6 +7970,10 @@
   "db-instance-monitoring-seltime-redis.png": {
     "width": 1200,
     "height": 870
+  },
+  "db-instance-monitoring-seltime.png": {
+    "width": 1200,
+    "height": 471
   },
   "db-instance-monitoring-tibero-en.png": {
     "width": 1200,
@@ -8059,6 +8195,18 @@
     "width": 1200,
     "height": 603
   },
+  "db-locktress-basic-db2-en.png": {
+    "width": 1200,
+    "height": 557
+  },
+  "db-locktress-basic-db2-ja.png": {
+    "width": 1200,
+    "height": 557
+  },
+  "db-locktress-basic-db2.png": {
+    "width": 1200,
+    "height": 557
+  },
   "db-locktress-basic-mssql-en.png": {
     "width": 1200,
     "height": 557
@@ -8207,6 +8355,18 @@
     "width": 1200,
     "height": 1052
   },
+  "db-metrics-select-db2-en.png": {
+    "width": 1200,
+    "height": 749
+  },
+  "db-metrics-select-db2-ja.png": {
+    "width": 1200,
+    "height": 749
+  },
+  "db-metrics-select-db2.png": {
+    "width": 1200,
+    "height": 749
+  },
   "db-metrics-select-mongodb-en.png": {
     "width": 1200,
     "height": 1055
@@ -8314,6 +8474,18 @@
   "db-multi-instance-cubrid.png": {
     "width": 1200,
     "height": 1057
+  },
+  "db-multi-instance-db2-en.png": {
+    "width": 1200,
+    "height": 750
+  },
+  "db-multi-instance-db2-ja.png": {
+    "width": 1200,
+    "height": 750
+  },
+  "db-multi-instance-db2.png": {
+    "width": 1200,
+    "height": 750
   },
   "db-multi-instance-mongodb-en.png": {
     "width": 1200,
@@ -8780,6 +8952,18 @@
     "height": 561
   },
   "db-sql-details-common.png": {
+    "width": 1200,
+    "height": 561
+  },
+  "db-sql-details-db2-en.png": {
+    "width": 1200,
+    "height": 561
+  },
+  "db-sql-details-db2-ja.png": {
+    "width": 1200,
+    "height": 561
+  },
+  "db-sql-details-db2.png": {
     "width": 1200,
     "height": 561
   },
@@ -9271,6 +9455,14 @@
     "width": 1200,
     "height": 236
   },
+  "db-xos-conf-port-check-metrics.png": {
+    "width": 1200,
+    "height": 293
+  },
+  "db-xos-conf-process-check-metrics.png": {
+    "width": 1200,
+    "height": 279
+  },
   "dbx-install-agent-on-agent-server-cubrid-en.png": {
     "width": 735,
     "height": 445
@@ -9591,6 +9783,18 @@
     "width": 800,
     "height": 434
   },
+  "event-config-v2-db-db2-en.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "event-config-v2-db-db2-ja.png": {
+    "width": 1200,
+    "height": 217
+  },
+  "event-config-v2-db-db2.png": {
+    "width": 1200,
+    "height": 217
+  },
   "event-config-v2-db-mongodb-en.png": {
     "width": 1200,
     "height": 243
@@ -9774,6 +9978,18 @@
   "event-config-v2-target-db.png": {
     "width": 800,
     "height": 193
+  },
+  "event-config-v2-target-db2-en.png": {
+    "width": 800,
+    "height": 165
+  },
+  "event-config-v2-target-db2-ja.png": {
+    "width": 800,
+    "height": 155
+  },
+  "event-config-v2-target-db2.png": {
+    "width": 800,
+    "height": 168
   },
   "event-config-v2-target-npm-en.png": {
     "width": 800,
@@ -14012,16 +14228,16 @@
     "height": 551
   },
   "member-modify-authority-0508-en.png": {
-    "width": 680,
-    "height": 731
+    "width": 600,
+    "height": 828
   },
   "member-modify-authority-0508-ja.png": {
-    "width": 682,
-    "height": 870
+    "width": 600,
+    "height": 828
   },
   "member-modify-authority-0508.png": {
-    "width": 683,
-    "height": 731
+    "width": 600,
+    "height": 828
   },
   "metric-edit-window-en.png": {
     "width": 1200,
@@ -14250,6 +14466,18 @@
   "metrics-chart-all-cubrid.png": {
     "width": 1200,
     "height": 1006
+  },
+  "metrics-chart-all-db2-en.png": {
+    "width": 1200,
+    "height": 709
+  },
+  "metrics-chart-all-db2-ja.png": {
+    "width": 1200,
+    "height": 709
+  },
+  "metrics-chart-all-db2.png": {
+    "width": 1200,
+    "height": 709
   },
   "metrics-chart-all-en.png": {
     "width": 1200,
@@ -15151,6 +15379,18 @@
     "width": 1200,
     "height": 139
   },
+  "metrics-chart-widget-upper-db2-en.png": {
+    "width": 1200,
+    "height": 134
+  },
+  "metrics-chart-widget-upper-db2-ja.png": {
+    "width": 1200,
+    "height": 131
+  },
+  "metrics-chart-widget-upper-db2.png": {
+    "width": 1200,
+    "height": 150
+  },
   "metrics-chart-widget-upper-en.png": {
     "width": 800,
     "height": 41
@@ -15656,16 +15896,16 @@
     "height": 475
   },
   "modify-organize-member-authority-en.png": {
-    "width": 684,
-    "height": 775
+    "width": 600,
+    "height": 883
   },
   "modify-organize-member-authority-ja.png": {
-    "width": 682,
-    "height": 923
+    "width": 600,
+    "height": 961
   },
   "modify-organize-member-authority.png": {
-    "width": 683,
-    "height": 775
+    "width": 600,
+    "height": 883
   },
   "move-project-from-group-en.png": {
     "width": 1200,
@@ -17074,6 +17314,22 @@
   "project-member-list.png": {
     "width": 1200,
     "height": 458
+  },
+  "project-member-role-log-masking-option-en.png": {
+    "width": 1200,
+    "height": 339
+  },
+  "project-member-role-log-masking-option-ja.png": {
+    "width": 1200,
+    "height": 329
+  },
+  "project-member-role-log-masking-option.png": {
+    "width": 1200,
+    "height": 339
+  },
+  "project-member-role-log-masking.png": {
+    "width": 1200,
+    "height": 169
   },
   "project-organize-manage-en.png": {
     "width": 554,
