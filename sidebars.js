@@ -4545,7 +4545,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -4553,9 +4553,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_4',
-                  // className: 'new',
+                  id: 'release-notes/nodejs/nodejs-0_5_6',
+                  className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_4',
                 'release-notes/nodejs/nodejs-0_5_2',
                 'release-notes/nodejs/nodejs-0_5_1',
                 'release-notes/nodejs/nodejs-0_5_0',
@@ -4565,7 +4566,6 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_95',
                 'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-0_4_90',
-                'release-notes/nodejs/nodejs-0_4_89',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
