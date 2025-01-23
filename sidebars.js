@@ -5130,6 +5130,7 @@ const sidebars = {
         // 'software-proxy',
         'main-ui-intro-v2',
         'usage-ui',
+        'reference/data-collection-retention',
         {
           type: 'html',
           value: '<hr class="distnq"/>'
