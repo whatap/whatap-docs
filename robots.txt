@@ -1,0 +1,3 @@
+User-agent: meta-externalagent
+User-agent: ClaudeBot
+Disallow: /
