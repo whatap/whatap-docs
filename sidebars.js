@@ -6730,6 +6730,7 @@ const sidebars = {
       },
       items: [
         'nms/supported-spec',
+        `nms/service-components-and-port-info`,
         'nms/install-agent',
         {
           type: 'category',
