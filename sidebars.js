@@ -6720,6 +6720,121 @@ const sidebars = {
       ]  
     }
   ],
+  nmsSidebar: [
+    {
+      type: 'category',
+      label: 'Network 관리 시스템',
+      collapsible: false,
+      collapsed: false,
+      className: 'beta',
+      link: {
+        type: 'doc',
+        id: 'nms/introduction'
+      },
+      items: [
+        'nms/supported-spec',
+        `nms/service-components-and-port-info`,
+        'nms/install-agent',
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'nms/conf-device-management',
+            'nms/conf-oid-management',
+            'nms/conf-trap-setting',
+            'nms/conf-syslog-setting',
+          ]
+        },
+        'nms/usage-ui',
+        'nms/device-dashboard',
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nms/flex-board',
+          },
+          items: [
+            'nms/flexboard-template',
+            'nms/flexboard-create',
+            'nms/flexboard-manage',
+            'nms/flexboard-metric-widget',
+            'nms/flexboard-widget-manage',
+            'nms/flexboard-widget-template',
+            'nms/flexboard-mode',
+            'nms/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '디바이스',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'nms/device-trend',
+            'nms/interface-status',
+          ]
+        },
+        'nms/mib-browser',
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'nms/set-notice'
+          },
+          items: [
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                // 'server/warning-notice',
+                'nms/metric-warning-notice',
+                // 'nms/set-notification-message',
+                // 'server/set-event-detect-anomal',
+                'nms/set-event-log',
+              ]
+            }, 
+            // {
+            //   type: 'category',
+            //   label: '이벤트 설정',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   className: 'newfunc',
+            //   link: {
+            //     type: 'doc',
+            //     id: 'nms/warning-notice-v2',
+            //   },
+            //   items: [
+            //     'server/warning-notice-v2',
+            //     'nms/basic-event-setting',
+            //     'nms/metric-warning-notice-new',
+            //   ]
+            // }, 
+            'nms/set-receive-event',
+            'nms/set-event-history',
+            // 'server/set-event-format',
+            'nms/real-time-notification',
+            'nms/common-alert'
+          ]
+        },
+        {
+          type: 'doc',
+          label: 'Log 모니터링',
+          id: 'log/introduction'
+        },
+      ]
+    }
+
+  ],
   kubeSidebar: [
     {
       type: 'category',

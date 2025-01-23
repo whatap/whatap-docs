@@ -86,6 +86,8 @@ export default function CheckProduct() {
         product = '-npm';
     }else if (cProdt === 'feature') {
         product = '-feature';
+    } else if (cProdt === 'nms') {
+        product = '-nms';
     } else {
         product = '';
     }

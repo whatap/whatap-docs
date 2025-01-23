@@ -415,6 +415,12 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'nms/introduction',
+                label: 'Network Management System',
+                className: 'narrow',
+              },
+              {
+                type: 'doc',
                 docId: 'features/introduction',
                 label: 'Feature Project', 
                 className: 'narrow',
