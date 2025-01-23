@@ -4469,9 +4469,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_49',
+                  id: 'release-notes/java/java-2_2_50',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_49',
                 'release-notes/java/java-2_2_48',
                 'release-notes/java/java-2_2_47',
                 'release-notes/java/java-2_2_46',
@@ -4480,7 +4481,6 @@ const sidebars = {
                 'release-notes/java/java-2_2_43',
                 'release-notes/java/java-2_2_42',
                 'release-notes/java/java-2_2_41',
-                'release-notes/java/java-2_2_40',
                 'release-notes/java/java-previous',
               ],
             },
@@ -4752,7 +4752,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4761,7 +4761,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_8_2',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_8_1',
                 'release-notes/k8s/k8s-1_8_0',
@@ -4809,7 +4809,7 @@ const sidebars = {
               label: 'DMX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dmx-agent',
@@ -4818,7 +4818,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dmx-1_0_1y',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dmx-1_0_1x',
               ]
