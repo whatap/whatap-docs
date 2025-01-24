@@ -1,325 +1,325 @@
 {
-  "management_event_alertnow_step_01-en.png": {
+  "3rdparty/management_event_alertnow_step_01-en.png": {
     "width": 731,
     "height": 877
   },
-  "management_event_alertnow_step_01-ja.png": {
+  "3rdparty/management_event_alertnow_step_01-ja.png": {
     "width": 705,
     "height": 867
   },
-  "management_event_alertnow_step_01.png": {
+  "3rdparty/management_event_alertnow_step_01.png": {
     "width": 280,
     "height": 338
   },
-  "management_event_alertnow_step_02-en.png": {
+  "3rdparty/management_event_alertnow_step_02-en.png": {
     "width": 780,
     "height": 167
   },
-  "management_event_alertnow_step_02-ja.png": {
+  "3rdparty/management_event_alertnow_step_02-ja.png": {
     "width": 780,
     "height": 147
   },
-  "management_event_alertnow_step_02.png": {
+  "3rdparty/management_event_alertnow_step_02.png": {
     "width": 608,
     "height": 135
   },
-  "management_event_alertnow_step_03.png": {
+  "3rdparty/management_event_alertnow_step_03.png": {
     "width": 257,
     "height": 86
   },
-  "management_event_alertnow_step_04-en.png": {
+  "3rdparty/management_event_alertnow_step_04-en.png": {
     "width": 1368,
     "height": 637
   },
-  "management_event_alertnow_step_04-ja.png": {
+  "3rdparty/management_event_alertnow_step_04-ja.png": {
     "width": 1342,
     "height": 637
   },
-  "management_event_alertnow_step_04.png": {
+  "3rdparty/management_event_alertnow_step_04.png": {
     "width": 1284,
     "height": 650
   },
-  "management_event_alertnow_step_05-en.png": {
+  "3rdparty/management_event_alertnow_step_05-en.png": {
     "width": 952,
     "height": 209
   },
-  "management_event_alertnow_step_05-ja.png": {
+  "3rdparty/management_event_alertnow_step_05-ja.png": {
     "width": 953,
     "height": 189
   },
-  "management_event_alertnow_step_05.png": {
+  "3rdparty/management_event_alertnow_step_05.png": {
     "width": 932,
     "height": 179
   },
-  "management_event_alertnow_step_06-en.png": {
+  "3rdparty/management_event_alertnow_step_06-en.png": {
     "width": 1056,
     "height": 438
   },
-  "management_event_alertnow_step_06-ja.png": {
+  "3rdparty/management_event_alertnow_step_06-ja.png": {
     "width": 1466,
     "height": 604
   },
-  "management_event_alertnow_step_06.png": {
+  "3rdparty/management_event_alertnow_step_06.png": {
     "width": 1922,
     "height": 646
   },
-  "management_event_jandi_step_01-en.png": {
+  "3rdparty/management_event_jandi_step_01-en.png": {
     "width": 1210,
     "height": 724
   },
-  "management_event_jandi_step_01-ja.png": {
+  "3rdparty/management_event_jandi_step_01-ja.png": {
     "width": 1210,
     "height": 709
   },
-  "management_event_jandi_step_01.png": {
+  "3rdparty/management_event_jandi_step_01.png": {
     "width": 1211,
     "height": 707
   },
-  "management_event_jandi_step_02-en.png": {
+  "3rdparty/management_event_jandi_step_02-en.png": {
     "width": 957,
     "height": 311
   },
-  "management_event_jandi_step_02-ja.png": {
+  "3rdparty/management_event_jandi_step_02-ja.png": {
     "width": 957,
     "height": 319
   },
-  "management_event_jandi_step_02.png": {
+  "3rdparty/management_event_jandi_step_02.png": {
     "width": 955,
     "height": 291
   },
-  "management_event_new_teams_step_01-en.png": {
+  "3rdparty/management_event_new_teams_step_01-en.png": {
     "width": 600,
     "height": 855
   },
-  "management_event_new_teams_step_01-ja.png": {
+  "3rdparty/management_event_new_teams_step_01-ja.png": {
     "width": 600,
     "height": 728
   },
-  "management_event_new_teams_step_01.png": {
+  "3rdparty/management_event_new_teams_step_01.png": {
     "width": 600,
     "height": 649
   },
-  "management_event_new_teams_step_02-en.png": {
+  "3rdparty/management_event_new_teams_step_02-en.png": {
     "width": 1000,
     "height": 140
   },
-  "management_event_new_teams_step_02-ja.png": {
+  "3rdparty/management_event_new_teams_step_02-ja.png": {
     "width": 1000,
     "height": 157
   },
-  "management_event_new_teams_step_02.png": {
+  "3rdparty/management_event_new_teams_step_02.png": {
     "width": 568,
     "height": 77
   },
-  "management_event_new_teams_step_03-en.png": {
+  "3rdparty/management_event_new_teams_step_03-en.png": {
     "width": 1000,
     "height": 838
   },
-  "management_event_new_teams_step_03-ja.png": {
+  "3rdparty/management_event_new_teams_step_03-ja.png": {
     "width": 1000,
     "height": 839
   },
-  "management_event_new_teams_step_03.png": {
+  "3rdparty/management_event_new_teams_step_03.png": {
     "width": 762,
     "height": 612
   },
-  "management_event_new_teams_step_04-en.png": {
+  "3rdparty/management_event_new_teams_step_04-en.png": {
     "width": 1000,
     "height": 344
   },
-  "management_event_new_teams_step_04-ja.png": {
+  "3rdparty/management_event_new_teams_step_04-ja.png": {
     "width": 1000,
     "height": 326
   },
-  "management_event_new_teams_step_04.png": {
+  "3rdparty/management_event_new_teams_step_04.png": {
     "width": 1000,
     "height": 325
   },
-  "management_event_opsgenie_step_01.png": {
+  "3rdparty/management_event_opsgenie_step_01.png": {
     "width": 996,
     "height": 462
   },
-  "management_event_opsgenie_step_02.png": {
+  "3rdparty/management_event_opsgenie_step_02.png": {
     "width": 2064,
     "height": 279
   },
-  "management_event_opsgenie_step_03.png": {
+  "3rdparty/management_event_opsgenie_step_03.png": {
     "width": 2064,
     "height": 762
   },
-  "management_event_opsgenie_step_04.png": {
+  "3rdparty/management_event_opsgenie_step_04.png": {
     "width": 2064,
     "height": 1356
   },
-  "set-event-3rd-party-plugin-add-opsgenie-options-en.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-opsgenie-options-en.png": {
     "width": 800,
     "height": 175
   },
-  "set-event-3rd-party-plugin-add-opsgenie-options-ja.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-opsgenie-options-ja.png": {
     "width": 800,
     "height": 174
   },
-  "set-event-3rd-party-plugin-add-opsgenie-options.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-opsgenie-options.png": {
     "width": 800,
     "height": 172
   },
-  "set-event-3rd-party-plugin-add-pagerduty-options-en.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-pagerduty-options-en.png": {
     "width": 800,
     "height": 161
   },
-  "set-event-3rd-party-plugin-add-pagerduty-options-ja.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-pagerduty-options-ja.png": {
     "width": 800,
     "height": 156
   },
-  "set-event-3rd-party-plugin-add-pagerduty-options.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-pagerduty-options.png": {
     "width": 800,
     "height": 157
   },
-  "set-event-3rd-party-plugin-add-slack-en.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-slack-en.png": {
     "width": 800,
     "height": 791
   },
-  "set-event-3rd-party-plugin-add-slack-ja.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-slack-ja.png": {
     "width": 800,
     "height": 791
   },
-  "set-event-3rd-party-plugin-add-slack.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-slack.png": {
     "width": 800,
     "height": 791
   },
-  "set-event-3rd-party-plugin-add-teams-en.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-teams-en.png": {
     "width": 600,
     "height": 173
   },
-  "set-event-3rd-party-plugin-add-teams-ja.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-teams-ja.png": {
     "width": 600,
     "height": 173
   },
-  "set-event-3rd-party-plugin-add-teams.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-teams.png": {
     "width": 600,
     "height": 167
   },
-  "set-event-3rd-party-plugin-add-telegram-license.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-telegram-license.png": {
     "width": 600,
     "height": 61
   },
-  "set-event-3rd-party-plugin-add-telegram.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-telegram.png": {
     "width": 400,
     "height": 121
   },
-  "set-event-3rd-party-plugin-add-webhook-json-options-en.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-json-options-en.png": {
     "width": 600,
     "height": 214
   },
-  "set-event-3rd-party-plugin-add-webhook-json-options-ja.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-json-options-ja.png": {
     "width": 600,
     "height": 210
   },
-  "set-event-3rd-party-plugin-add-webhook-json-options.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-json-options.png": {
     "width": 600,
     "height": 214
   },
-  "set-event-3rd-party-plugin-add-webhook-json.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-json.png": {
     "width": 733,
     "height": 275
   },
-  "set-event-3rd-party-plugin-add-webhook-options-en.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-options-en.png": {
     "width": 600,
     "height": 163
   },
-  "set-event-3rd-party-plugin-add-webhook-options-ja.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-options-ja.png": {
     "width": 600,
     "height": 164
   },
-  "set-event-3rd-party-plugin-add-webhook-options.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook-options.png": {
     "width": 600,
     "height": 167
   },
-  "set-event-3rd-party-plugin-add-webhook.png": {
+  "3rdparty/set-event-3rd-party-plugin-add-webhook.png": {
     "width": 600,
     "height": 136
   },
-  "teams_workflows_step_01-en.png": {
+  "3rdparty/teams_workflows_step_01-en.png": {
     "width": 640,
     "height": 618
   },
-  "teams_workflows_step_01-ja.png": {
+  "3rdparty/teams_workflows_step_01-ja.png": {
     "width": 600,
     "height": 559
   },
-  "teams_workflows_step_01.png": {
+  "3rdparty/teams_workflows_step_01.png": {
     "width": 640,
     "height": 618
   },
-  "teams_workflows_step_02-en.png": {
+  "3rdparty/teams_workflows_step_02-en.png": {
     "width": 1200,
     "height": 612
   },
-  "teams_workflows_step_02-ja.png": {
+  "3rdparty/teams_workflows_step_02-ja.png": {
     "width": 1200,
     "height": 539
   },
-  "teams_workflows_step_02.png": {
+  "3rdparty/teams_workflows_step_02.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_03-en.png": {
+  "3rdparty/teams_workflows_step_03-en.png": {
     "width": 640,
     "height": 627
   },
-  "teams_workflows_step_03-ja.png": {
+  "3rdparty/teams_workflows_step_03-ja.png": {
     "width": 600,
     "height": 528
   },
-  "teams_workflows_step_03.png": {
+  "3rdparty/teams_workflows_step_03.png": {
     "width": 640,
     "height": 627
   },
-  "teams_workflows_step_04-en.png": {
+  "3rdparty/teams_workflows_step_04-en.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_04-ja.png": {
+  "3rdparty/teams_workflows_step_04-ja.png": {
     "width": 1200,
     "height": 571
   },
-  "teams_workflows_step_04.png": {
+  "3rdparty/teams_workflows_step_04.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_05-en.png": {
+  "3rdparty/teams_workflows_step_05-en.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_05-ja.png": {
+  "3rdparty/teams_workflows_step_05-ja.png": {
     "width": 1200,
     "height": 516
   },
-  "teams_workflows_step_05.png": {
+  "3rdparty/teams_workflows_step_05.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_06-en.png": {
+  "3rdparty/teams_workflows_step_06-en.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_06-ja.png": {
+  "3rdparty/teams_workflows_step_06-ja.png": {
     "width": 3700,
     "height": 2704
   },
-  "teams_workflows_step_06.png": {
+  "3rdparty/teams_workflows_step_06.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_07-en.png": {
+  "3rdparty/teams_workflows_step_07-en.png": {
     "width": 1200,
     "height": 613
   },
-  "teams_workflows_step_07-ja.png": {
+  "3rdparty/teams_workflows_step_07-ja.png": {
     "width": 1200,
     "height": 530
   },
-  "teams_workflows_step_07.png": {
+  "3rdparty/teams_workflows_step_07.png": {
     "width": 1200,
     "height": 613
   },
@@ -761,7 +761,7 @@
   },
   "analysis-tx-main-en.png": {
     "width": 1200,
-    "height": 326
+    "height": 325
   },
   "analysis-tx-main-error-en.png": {
     "width": 1200,
@@ -777,7 +777,7 @@
   },
   "analysis-tx-main-ja.png": {
     "width": 1200,
-    "height": 326
+    "height": 325
   },
   "analysis-tx-main.png": {
     "width": 1200,
@@ -841,11 +841,11 @@
   },
   "analysis-tx-table-view-mode-en.png": {
     "width": 800,
-    "height": 876
+    "height": 873
   },
   "analysis-tx-table-view-mode-ja.png": {
     "width": 800,
-    "height": 876
+    "height": 874
   },
   "analysis-tx-table-view-mode-none-actx-en.png": {
     "width": 800,
@@ -861,7 +861,7 @@
   },
   "analysis-tx-table-view-mode.png": {
     "width": 800,
-    "height": 851
+    "height": 874
   },
   "analysis-tx-table-view-none-actx-en.png": {
     "width": 1200,
@@ -2491,623 +2491,659 @@
     "width": 278,
     "height": 46
   },
-  "about-billing-member-recipient-en.png": {
+  "best-p/about-billing-member-recipient-en.png": {
     "width": 600,
     "height": 178
   },
-  "about-billing-member-recipient-ja.png": {
+  "best-p/about-billing-member-recipient-ja.png": {
     "width": 600,
     "height": 177
   },
-  "about-billing-member-recipient.png": {
+  "best-p/about-billing-member-recipient.png": {
     "width": 600,
     "height": 183
   },
-  "about-billing-member-role-en.png": {
+  "best-p/about-billing-member-role-en.png": {
     "width": 1200,
     "height": 700
   },
-  "about-billing-member-role-ja.png": {
+  "best-p/about-billing-member-role-ja.png": {
     "width": 1200,
     "height": 681
   },
-  "about-billing-member-role.png": {
+  "best-p/about-billing-member-role.png": {
     "width": 1200,
     "height": 694
   },
-  "about-billing-subscription-en.png": {
+  "best-p/about-billing-subscription-en.png": {
     "width": 1200,
     "height": 715
   },
-  "about-billing-subscription-ja.png": {
+  "best-p/about-billing-subscription-ja.png": {
     "width": 1200,
     "height": 715
   },
-  "about-billing-subscription.png": {
+  "best-p/about-billing-subscription.png": {
     "width": 1200,
     "height": 715
   },
-  "about-heap-memory-en.png": {
+  "best-p/about-heap-memory-en.png": {
     "width": 1200,
     "height": 697
   },
-  "about-heap-memory-ja.png": {
+  "best-p/about-heap-memory-ja.png": {
     "width": 1200,
     "height": 698
   },
-  "about-heap-memory-metrics-chart-01-en.png": {
+  "best-p/about-heap-memory-metrics-chart-01-en.png": {
     "width": 1659,
     "height": 700
   },
-  "about-heap-memory-metrics-chart-01-ja.png": {
+  "best-p/about-heap-memory-metrics-chart-01-ja.png": {
     "width": 1660,
     "height": 700
   },
-  "about-heap-memory-metrics-chart-01.png": {
+  "best-p/about-heap-memory-metrics-chart-01.png": {
     "width": 1624,
     "height": 674
   },
-  "about-heap-memory-metrics-chart-02-en.png": {
+  "best-p/about-heap-memory-metrics-chart-02-en.png": {
     "width": 1695,
     "height": 919
   },
-  "about-heap-memory-metrics-chart-02-ja.png": {
+  "best-p/about-heap-memory-metrics-chart-02-ja.png": {
     "width": 1695,
     "height": 898
   },
-  "about-heap-memory-metrics-chart-02.png": {
+  "best-p/about-heap-memory-metrics-chart-02.png": {
     "width": 1691,
     "height": 919
   },
-  "about-heap-memory-metrics-chart-03-en.png": {
+  "best-p/about-heap-memory-metrics-chart-03-en.png": {
     "width": 1665,
     "height": 948
   },
-  "about-heap-memory-metrics-chart-03-ja.png": {
+  "best-p/about-heap-memory-metrics-chart-03-ja.png": {
     "width": 1665,
     "height": 948
   },
-  "about-heap-memory-metrics-chart-03.png": {
+  "best-p/about-heap-memory-metrics-chart-03.png": {
     "width": 1628,
     "height": 948
   },
-  "about-heap-memory-metrics-event-01-en.png": {
+  "best-p/about-heap-memory-metrics-event-01-en.png": {
     "width": 1276,
     "height": 1082
   },
-  "about-heap-memory-metrics-event-01-ja.png": {
+  "best-p/about-heap-memory-metrics-event-01-ja.png": {
     "width": 1272,
     "height": 1085
   },
-  "about-heap-memory-metrics-event-01.png": {
+  "best-p/about-heap-memory-metrics-event-01.png": {
     "width": 1274,
     "height": 1083
   },
-  "about-heap-memory-metrics-event-02-en.png": {
+  "best-p/about-heap-memory-metrics-event-02-en.png": {
     "width": 1263,
     "height": 926
   },
-  "about-heap-memory-metrics-event-02-ja.png": {
+  "best-p/about-heap-memory-metrics-event-02-ja.png": {
     "width": 1257,
     "height": 926
   },
-  "about-heap-memory-metrics-event-02.png": {
+  "best-p/about-heap-memory-metrics-event-02.png": {
     "width": 1270,
     "height": 905
   },
-  "about-heap-memory.png": {
+  "best-p/about-heap-memory.png": {
     "width": 1200,
     "height": 694
   },
-  "about-instance-loaded-class1-en.png": {
+  "best-p/about-instance-loaded-class1-en.png": {
     "width": 957,
     "height": 315
   },
-  "about-instance-loaded-class1-ja.png": {
+  "best-p/about-instance-loaded-class1-ja.png": {
     "width": 919,
     "height": 309
   },
-  "about-instance-loaded-class1.png": {
+  "best-p/about-instance-loaded-class1.png": {
     "width": 906,
     "height": 275
   },
-  "about-instance-thread-list-dump1.png": {
+  "best-p/about-instance-thread-list-dump1.png": {
     "width": 1622,
     "height": 595
   },
-  "about-instance-thread-list-dump2.png": {
+  "best-p/about-instance-thread-list-dump2.png": {
     "width": 1623,
     "height": 607
   },
-  "about-instance-thread-list-dump3-en.png": {
+  "best-p/about-instance-thread-list-dump3-en.png": {
     "width": 1660,
     "height": 819
   },
-  "about-instance-thread-list-dump3-ja.png": {
+  "best-p/about-instance-thread-list-dump3-ja.png": {
     "width": 1663,
     "height": 819
   },
-  "about-instance-thread-list-dump3.png": {
+  "best-p/about-instance-thread-list-dump3.png": {
     "width": 1663,
     "height": 819
   },
-  "about-instance-thread-list-dump4-en.png": {
+  "best-p/about-instance-thread-list-dump4-en.png": {
     "width": 1243,
     "height": 280
   },
-  "about-instance-thread-list-dump4-ja.png": {
+  "best-p/about-instance-thread-list-dump4-ja.png": {
     "width": 1245,
     "height": 280
   },
-  "about-instance-thread-list-dump4.png": {
+  "best-p/about-instance-thread-list-dump4.png": {
     "width": 1248,
     "height": 284
   },
-  "about-server-adf-tcp-port-en.png": {
+  "best-p/about-server-adf-tcp-port-en.png": {
     "width": 1200,
     "height": 971
   },
-  "about-server-adf-tcp-port-ja.png": {
+  "best-p/about-server-adf-tcp-port-ja.png": {
     "width": 1200,
     "height": 970
   },
-  "about-server-adf-tcp-port-ms-en.png": {
+  "best-p/about-server-adf-tcp-port-ms-en.png": {
     "width": 1200,
     "height": 348
   },
-  "about-server-adf-tcp-port-ms-ja.png": {
+  "best-p/about-server-adf-tcp-port-ms-ja.png": {
     "width": 1200,
     "height": 350
   },
-  "about-server-adf-tcp-port-ms.png": {
+  "best-p/about-server-adf-tcp-port-ms.png": {
     "width": 1204,
     "height": 352
   },
-  "about-server-adf-tcp-port.png": {
+  "best-p/about-server-adf-tcp-port.png": {
     "width": 1200,
     "height": 970
   },
-  "about-tcp-port-rs-s.png": {
+  "best-p/about-tcp-port-rs-s.png": {
     "width": 513,
     "height": 360
   },
-  "about-tcp-port-rs.png": {
+  "best-p/about-tcp-port-rs.png": {
     "width": 1188,
     "height": 764
   },
-  "apm-dashboard-best-practice.png": {
+  "best-p/analysis-tx-main-en.png": {
+    "width": 1200,
+    "height": 326
+  },
+  "best-p/analysis-tx-main-ja.png": {
+    "width": 1200,
+    "height": 326
+  },
+  "best-p/analysis-tx-main.png": {
+    "width": 1200,
+    "height": 325
+  },
+  "best-p/analysis-tx-table-view-en.png": {
+    "width": 1200,
+    "height": 575
+  },
+  "best-p/analysis-tx-table-view-ja.png": {
+    "width": 1200,
+    "height": 575
+  },
+  "best-p/analysis-tx-table-view-mode-en.png": {
+    "width": 800,
+    "height": 876
+  },
+  "best-p/analysis-tx-table-view-mode-ja.png": {
+    "width": 800,
+    "height": 876
+  },
+  "best-p/analysis-tx-table-view-mode.png": {
+    "width": 800,
+    "height": 851
+  },
+  "best-p/analysis-tx-table-view.png": {
+    "width": 1200,
+    "height": 575
+  },
+  "best-p/apm-dashboard-best-practice.png": {
     "width": 3102,
     "height": 2062
   },
-  "apm-dashboard-cpu-usage.png": {
+  "best-p/apm-dashboard-cpu-usage.png": {
     "width": 3108,
     "height": 2062
   },
-  "apm-dashboard-service.png": {
+  "best-p/apm-dashboard-service.png": {
     "width": 2570,
     "height": 404
   },
-  "apm-dashboard-top-stack-en.png": {
+  "best-p/apm-dashboard-top-stack-en.png": {
     "width": 1200,
     "height": 573
   },
-  "apm-dashboard-top-stack-ja.png": {
+  "best-p/apm-dashboard-top-stack-ja.png": {
     "width": 1200,
     "height": 573
   },
-  "apm-dashboard-top-stack.png": {
+  "best-p/apm-dashboard-top-stack.png": {
     "width": 1200,
     "height": 573
   },
-  "apm-dashboard-tx-01-en.png": {
+  "best-p/apm-dashboard-tx-01-en.png": {
     "width": 1200,
     "height": 517
   },
-  "apm-dashboard-tx-01-ja.png": {
+  "best-p/apm-dashboard-tx-01-ja.png": {
     "width": 1200,
     "height": 518
   },
-  "apm-dashboard-tx-01.png": {
+  "best-p/apm-dashboard-tx-01.png": {
     "width": 1200,
     "height": 518
   },
-  "apm-dashboard-user-service-resource.png": {
+  "best-p/apm-dashboard-user-service-resource.png": {
     "width": 1842,
     "height": 372
   },
-  "apm-dbc-hitmap-drag-en.png": {
+  "best-p/apm-dbc-hitmap-drag-en.png": {
     "width": 1000,
     "height": 377
   },
-  "apm-dbc-hitmap-drag-ja.png": {
+  "best-p/apm-dbc-hitmap-drag-ja.png": {
     "width": 1000,
     "height": 377
   },
-  "apm-dbc-hitmap-drag.png": {
+  "best-p/apm-dbc-hitmap-drag.png": {
     "width": 1000,
     "height": 377
   },
-  "apm-dbc-hitmap-hitmap-tx-en.png": {
+  "best-p/apm-dbc-hitmap-hitmap-tx-en.png": {
     "width": 1408,
     "height": 877
   },
-  "apm-dbc-hitmap-hitmap-tx-ja.png": {
+  "best-p/apm-dbc-hitmap-hitmap-tx-ja.png": {
     "width": 1408,
     "height": 877
   },
-  "apm-dbc-hitmap-hitmap-tx.png": {
+  "best-p/apm-dbc-hitmap-hitmap-tx.png": {
     "width": 1408,
     "height": 877
   },
-  "apm-dbc-hitmap-hl-en.png": {
+  "best-p/apm-dbc-hitmap-hl-en.png": {
     "width": 1200,
     "height": 526
   },
-  "apm-dbc-hitmap-hl-ja.png": {
+  "best-p/apm-dbc-hitmap-hl-ja.png": {
     "width": 1200,
     "height": 526
   },
-  "apm-dbc-hitmap-hl.png": {
+  "best-p/apm-dbc-hitmap-hl.png": {
     "width": 1200,
     "height": 526
   },
-  "apm-dbc-hitmap-tr-list-en.png": {
+  "best-p/apm-dbc-hitmap-tr-list-en.png": {
     "width": 1328,
     "height": 660
   },
-  "apm-dbc-hitmap-tr-list-ja.png": {
+  "best-p/apm-dbc-hitmap-tr-list-ja.png": {
     "width": 1328,
     "height": 660
   },
-  "apm-dbc-hitmap-tr-list.png": {
+  "best-p/apm-dbc-hitmap-tr-list.png": {
     "width": 1328,
     "height": 660
   },
-  "apm-dbc-mcht-en.png": {
+  "best-p/apm-dbc-mcht-en.png": {
     "width": 1489,
     "height": 937
   },
-  "apm-dbc-mcht-ja.png": {
+  "best-p/apm-dbc-mcht-ja.png": {
     "width": 1489,
     "height": 937
   },
-  "apm-dbc-mcht.png": {
+  "best-p/apm-dbc-mcht.png": {
     "width": 1489,
     "height": 937
   },
-  "apm-dbc-tx-tr-en.png": {
+  "best-p/apm-dbc-tx-tr-en.png": {
     "width": 1679,
     "height": 907
   },
-  "apm-dbc-tx-tr-ja.png": {
+  "best-p/apm-dbc-tx-tr-ja.png": {
     "width": 1679,
     "height": 907
   },
-  "apm-dbc-tx-tr.png": {
+  "best-p/apm-dbc-tx-tr.png": {
     "width": 1679,
     "height": 907
   },
-  "best-p-hitmap-transaction-en.png": {
+  "best-p/best-p-hitmap-transaction-en.png": {
     "width": 1105,
     "height": 601
   },
-  "best-p-hitmap-transaction-ja.png": {
+  "best-p/best-p-hitmap-transaction-ja.png": {
     "width": 1105,
     "height": 601
   },
-  "best-p-hitmap-transaction.png": {
+  "best-p/best-p-hitmap-transaction.png": {
     "width": 1105,
     "height": 601
   },
-  "blog_03.webp": {
+  "best-p/blog_03.webp": {
     "width": 962,
     "height": 600
   },
-  "blog_04.webp": {
+  "best-p/blog_04.webp": {
     "width": 962,
     "height": 600
   },
-  "blog_05.webp": {
+  "best-p/blog_05.webp": {
     "width": 962,
     "height": 600
   },
-  "blog_06.webp": {
+  "best-p/blog_06.webp": {
     "width": 962,
     "height": 600
   },
-  "blog_07.webp": {
+  "best-p/blog_07.webp": {
     "width": 962,
     "height": 600
   },
-  "db-add-metrics-event-category-process-en.png": {
+  "best-p/db-add-metrics-event-category-process-en.png": {
     "width": 800,
     "height": 331
   },
-  "db-add-metrics-event-category-process-ja.png": {
+  "best-p/db-add-metrics-event-category-process-ja.png": {
     "width": 800,
     "height": 333
   },
-  "db-add-metrics-event-category-process-sample-00-en.png": {
+  "best-p/db-add-metrics-event-category-process-sample-00-en.png": {
     "width": 800,
     "height": 68
   },
-  "db-add-metrics-event-category-process-sample-00-ja.png": {
+  "best-p/db-add-metrics-event-category-process-sample-00-ja.png": {
     "width": 800,
     "height": 68
   },
-  "db-add-metrics-event-category-process-sample-00.png": {
+  "best-p/db-add-metrics-event-category-process-sample-00.png": {
     "width": 800,
     "height": 70
   },
-  "db-add-metrics-event-category-process-sample-01-en.png": {
+  "best-p/db-add-metrics-event-category-process-sample-01-en.png": {
     "width": 800,
     "height": 69
   },
-  "db-add-metrics-event-category-process-sample-01-ja.png": {
+  "best-p/db-add-metrics-event-category-process-sample-01-ja.png": {
     "width": 800,
     "height": 71
   },
-  "db-add-metrics-event-category-process-sample-01.png": {
+  "best-p/db-add-metrics-event-category-process-sample-01.png": {
     "width": 800,
     "height": 70
   },
-  "db-add-metrics-event-category-process-sample-02-en.png": {
+  "best-p/db-add-metrics-event-category-process-sample-02-en.png": {
     "width": 800,
     "height": 69
   },
-  "db-add-metrics-event-category-process-sample-02-ja.png": {
+  "best-p/db-add-metrics-event-category-process-sample-02-ja.png": {
     "width": 800,
     "height": 68
   },
-  "db-add-metrics-event-category-process-sample-02.png": {
+  "best-p/db-add-metrics-event-category-process-sample-02.png": {
     "width": 800,
     "height": 69
   },
-  "db-add-metrics-event-category-process.png": {
+  "best-p/db-add-metrics-event-category-process.png": {
     "width": 800,
     "height": 253
   },
-  "dx-it-image-01.png": {
+  "best-p/dx-it-image-01.png": {
     "width": 1200,
     "height": 392
   },
-  "dx-it-image-02.png": {
+  "best-p/dx-it-image-02.png": {
     "width": 1200,
     "height": 547
   },
-  "dx-it-image-03.png": {
+  "best-p/dx-it-image-03.png": {
     "width": 1200,
     "height": 608
   },
-  "dx-it-image-04.png": {
+  "best-p/dx-it-image-04.png": {
     "width": 1200,
     "height": 433
   },
-  "dx-it-image-05-en.png": {
+  "best-p/dx-it-image-05-en.png": {
     "width": 1200,
     "height": 426
   },
-  "dx-it-image-05-ja.png": {
+  "best-p/dx-it-image-05-ja.png": {
     "width": 1200,
     "height": 426
   },
-  "dx-it-image-05.png": {
+  "best-p/dx-it-image-05.png": {
     "width": 1200,
     "height": 426
   },
-  "dx-it-image-06.png": {
+  "best-p/dx-it-image-06.png": {
     "width": 1200,
     "height": 583
   },
-  "dx-it-image-07.png": {
+  "best-p/dx-it-image-07.png": {
     "width": 1200,
     "height": 544
   },
-  "dx-it-image-08.png": {
+  "best-p/dx-it-image-08.png": {
     "width": 1200,
     "height": 390
   },
-  "dx-it-image-09.png": {
+  "best-p/dx-it-image-09.png": {
     "width": 943,
     "height": 618
   },
-  "dx-it-image-10.png": {
+  "best-p/dx-it-image-10.png": {
     "width": 1200,
     "height": 485
   },
-  "dx-it-image-11-en.png": {
+  "best-p/dx-it-image-11-en.png": {
     "width": 1200,
     "height": 798
   },
-  "dx-it-image-11-ja.png": {
+  "best-p/dx-it-image-11-ja.png": {
     "width": 1200,
     "height": 798
   },
-  "dx-it-image-11.png": {
+  "best-p/dx-it-image-11.png": {
     "width": 1200,
     "height": 798
   },
-  "dx-it-image-12-en.png": {
+  "best-p/dx-it-image-12-en.png": {
     "width": 1200,
     "height": 485
   },
-  "dx-it-image-12-ja.png": {
+  "best-p/dx-it-image-12-ja.png": {
     "width": 1200,
     "height": 485
   },
-  "dx-it-image-12.png": {
+  "best-p/dx-it-image-12.png": {
     "width": 1200,
     "height": 485
   },
-  "dx-it-image-13-en.png": {
+  "best-p/dx-it-image-13-en.png": {
     "width": 1200,
     "height": 593
   },
-  "dx-it-image-13-ja.png": {
+  "best-p/dx-it-image-13-ja.png": {
     "width": 1200,
     "height": 593
   },
-  "dx-it-image-13.png": {
+  "best-p/dx-it-image-13.png": {
     "width": 1200,
     "height": 593
   },
-  "dx-it-image-14-en.png": {
+  "best-p/dx-it-image-14-en.png": {
     "width": 1200,
     "height": 456
   },
-  "dx-it-image-14-ja.png": {
+  "best-p/dx-it-image-14-ja.png": {
     "width": 1200,
     "height": 456
   },
-  "dx-it-image-14.png": {
+  "best-p/dx-it-image-14.png": {
     "width": 1200,
     "height": 456
   },
-  "dx-it-image-15.png": {
+  "best-p/dx-it-image-15.png": {
     "width": 1200,
     "height": 621
   },
-  "dx-it-image-16.png": {
+  "best-p/dx-it-image-16.png": {
     "width": 1200,
     "height": 475
   },
-  "dx-it-image-17.png": {
+  "best-p/dx-it-image-17.png": {
     "width": 1200,
     "height": 335
   },
-  "dx-it-image-18-en.png": {
+  "best-p/dx-it-image-18-en.png": {
     "width": 1200,
     "height": 595
   },
-  "dx-it-image-18-ja.png": {
+  "best-p/dx-it-image-18-ja.png": {
     "width": 1200,
     "height": 593
   },
-  "dx-it-image-18.png": {
+  "best-p/dx-it-image-18.png": {
     "width": 1200,
     "height": 595
   },
-  "dx-it-image-19-en.png": {
+  "best-p/dx-it-image-19-en.png": {
     "width": 1600,
     "height": 879
   },
-  "dx-it-image-19-ja.png": {
+  "best-p/dx-it-image-19-ja.png": {
     "width": 1600,
     "height": 879
   },
-  "dx-it-image-19.png": {
+  "best-p/dx-it-image-19.png": {
     "width": 1600,
     "height": 879
   },
-  "dx-it-image-20-en.png": {
+  "best-p/dx-it-image-20-en.png": {
     "width": 1200,
     "height": 576
   },
-  "dx-it-image-20-ja.png": {
+  "best-p/dx-it-image-20-ja.png": {
     "width": 1200,
     "height": 576
   },
-  "dx-it-image-20.png": {
+  "best-p/dx-it-image-20.png": {
     "width": 1200,
     "height": 576
   },
-  "dx-it-image-21-en.png": {
+  "best-p/dx-it-image-21-en.png": {
     "width": 1200,
     "height": 654
   },
-  "dx-it-image-21-ja.png": {
+  "best-p/dx-it-image-21-ja.png": {
     "width": 1200,
     "height": 653
   },
-  "dx-it-image-21.png": {
+  "best-p/dx-it-image-21.png": {
     "width": 1200,
     "height": 649
   },
-  "dx-it-image-22-en.png": {
+  "best-p/dx-it-image-22-en.png": {
     "width": 1500,
     "height": 671
   },
-  "dx-it-image-22-ja.png": {
+  "best-p/dx-it-image-22-ja.png": {
     "width": 1500,
     "height": 671
   },
-  "dx-it-image-22.png": {
+  "best-p/dx-it-image-22.png": {
     "width": 1500,
     "height": 674
   },
-  "dx-it-image-23.png": {
+  "best-p/dx-it-image-23.png": {
     "width": 1200,
     "height": 532
   },
-  "dx-it-image-24.png": {
+  "best-p/dx-it-image-24.png": {
     "width": 1200,
     "height": 576
   },
-  "dx-it-image-25.png": {
+  "best-p/dx-it-image-25.png": {
     "width": 1200,
     "height": 676
   },
-  "hitmap-transaction-sample-00-en.png": {
+  "best-p/hitmap-transaction-sample-00-en.png": {
     "width": 1200,
     "height": 880
   },
-  "hitmap-transaction-sample-00-ja.png": {
+  "best-p/hitmap-transaction-sample-00-ja.png": {
     "width": 1200,
     "height": 880
   },
-  "hitmap-transaction-sample-00.png": {
+  "best-p/hitmap-transaction-sample-00.png": {
     "width": 1200,
     "height": 880
   },
-  "hitmap-transaction-sample-01-en.png": {
+  "best-p/hitmap-transaction-sample-01-en.png": {
     "width": 1200,
     "height": 796
   },
-  "hitmap-transaction-sample-01-ja.png": {
+  "best-p/hitmap-transaction-sample-01-ja.png": {
     "width": 1200,
     "height": 796
   },
-  "hitmap-transaction-sample-01.png": {
+  "best-p/hitmap-transaction-sample-01.png": {
     "width": 1200,
     "height": 796
   },
-  "hitmap-transaction-sample-02-en.png": {
+  "best-p/hitmap-transaction-sample-02-en.png": {
     "width": 2420,
     "height": 1054
   },
-  "hitmap-transaction-sample-02-ja.png": {
+  "best-p/hitmap-transaction-sample-02-ja.png": {
     "width": 2420,
     "height": 1054
   },
-  "hitmap-transaction-sample-02.png": {
+  "best-p/hitmap-transaction-sample-02.png": {
     "width": 2420,
     "height": 1054
   },
-  "hitmap-transaction-sample-08-en.png": {
+  "best-p/hitmap-transaction-sample-08-en.png": {
     "width": 1198,
     "height": 805
   },
-  "hitmap-transaction-sample-08-ja.png": {
+  "best-p/hitmap-transaction-sample-08-ja.png": {
     "width": 1198,
     "height": 805
   },
-  "hitmap-transaction-sample-08.png": {
+  "best-p/hitmap-transaction-sample-08.png": {
     "width": 1198,
     "height": 805
   },
-  "hitmap-transaction-sample.png": {
+  "best-p/hitmap-transaction-sample.png": {
     "width": 600,
     "height": 395
   },
-  "response_time_example_01.png": {
+  "best-p/response_time_example_01.png": {
     "width": 1800,
     "height": 1200
   },
-  "tps-user-net-error.png": {
+  "best-p/tps-user-net-error.png": {
     "width": 1801,
     "height": 1198
   },
-  "tps_example_02.png": {
+  "best-p/tps_example_02.png": {
     "width": 1800,
     "height": 1200
   },
@@ -4819,243 +4855,243 @@
     "width": 1200,
     "height": 1008
   },
-  "chagnelog-24q3-application.png": {
+  "changelog/chagnelog-24q3-application.png": {
     "width": 1261,
     "height": 540
   },
-  "changelog-24q2-app-preset.png": {
+  "changelog/changelog-24q2-app-preset.png": {
     "width": 1234,
     "height": 725
   },
-  "changelog-24q2-app-trs-map.gif": {
+  "changelog/changelog-24q2-app-trs-map.gif": {
     "width": 1627,
     "height": 942
   },
-  "changelog-24q2-browser1.png": {
+  "changelog/changelog-24q2-browser1.png": {
     "width": 1288,
     "height": 613
   },
-  "changelog-24q2-common.png": {
+  "changelog/changelog-24q2-common.png": {
     "width": 2268,
     "height": 1154
   },
-  "changelog-24q2-db.png": {
+  "changelog/changelog-24q2-db.png": {
     "width": 1200,
     "height": 739
   },
-  "changelog-24q2-feature1.png": {
+  "changelog/changelog-24q2-feature1.png": {
     "width": 848,
     "height": 587
   },
-  "changelog-24q2-server.png": {
+  "changelog/changelog-24q2-server.png": {
     "width": 1012,
     "height": 735
   },
-  "changelog-24q2-url.png": {
+  "changelog/changelog-24q2-url.png": {
     "width": 1208,
     "height": 630
   },
-  "changelog-24q3-common-add_chart.gif": {
+  "changelog/changelog-24q3-common-add_chart.gif": {
     "width": 1200,
     "height": 689
   },
-  "changelog-24q3-common-metrics-chart.gif": {
+  "changelog/changelog-24q3-common-metrics-chart.gif": {
     "width": 1200,
     "height": 661
   },
-  "changelog-24q3-common1.png": {
+  "changelog/changelog-24q3-common1.png": {
     "width": 1208,
     "height": 463
   },
-  "changelog-24q3-db-custom.png": {
+  "changelog/changelog-24q3-db-custom.png": {
     "width": 1200,
     "height": 713
   },
-  "changelog-24q3-db-scm.png": {
+  "changelog/changelog-24q3-db-scm.png": {
     "width": 1200,
     "height": 571
   },
-  "changelog-24q3-feature.png": {
+  "changelog/changelog-24q3-feature.png": {
     "width": 857,
     "height": 596
   },
-  "changelog-24q3-k8s-summary.gif": {
+  "changelog/changelog-24q3-k8s-summary.gif": {
     "width": 2532,
     "height": 1414
   },
-  "changelog-24q3-server-hp-ux.png": {
+  "changelog/changelog-24q3-server-hp-ux.png": {
     "width": 787,
     "height": 415
   },
-  "changelog-24q3-server-inventory.png": {
+  "changelog/changelog-24q3-server-inventory.png": {
     "width": 1210,
     "height": 444
   },
-  "changelog-24q3-server.png": {
+  "changelog/changelog-24q3-server.png": {
     "width": 1012,
     "height": 746
   },
-  "changelog-app-stat-instance.png": {
+  "changelog/changelog-app-stat-instance.png": {
     "width": 1191,
     "height": 665
   },
-  "changelog-app-tx-map-en.png": {
+  "changelog/changelog-app-tx-map-en.png": {
     "width": 1142,
     "height": 760
   },
-  "changelog-app-tx-map-ja.png": {
+  "changelog/changelog-app-tx-map-ja.png": {
     "width": 1142,
     "height": 760
   },
-  "changelog-app-tx-map.png": {
+  "changelog/changelog-app-tx-map.png": {
     "width": 1142,
     "height": 761
   },
-  "changelog-browser-ajax.png": {
+  "changelog/changelog-browser-ajax.png": {
     "width": 812,
     "height": 475
   },
-  "changelog-common-event-v2.png": {
+  "changelog/changelog-common-event-v2.png": {
     "width": 800,
     "height": 513
   },
-  "changelog-db.png": {
+  "changelog/changelog-db.png": {
     "width": 772,
     "height": 484
   },
-  "changelog-ex.png": {
+  "changelog/changelog-ex.png": {
     "width": 801,
     "height": 826
   },
-  "changelog-k8s-kube-apiserver.png": {
+  "changelog/changelog-k8s-kube-apiserver.png": {
     "width": 1082,
     "height": 774
   },
-  "changelog-k8s-om-podinit.png": {
+  "changelog/changelog-k8s-om-podinit.png": {
     "width": 1010,
     "height": 771
   },
-  "changelog-maintenance-plan.png": {
+  "changelog/changelog-maintenance-plan.png": {
     "width": 808,
     "height": 496
   },
-  "changelog-mobile-app.png": {
+  "changelog/changelog-mobile-app.png": {
     "width": 606,
     "height": 596
   },
-  "changelog-network.png": {
+  "changelog/changelog-network.png": {
     "width": 972,
     "height": 984
   },
-  "changelog-new.png": {
+  "changelog/changelog-new.png": {
     "width": 1212,
     "height": 712
   },
-  "changelog-new2.png": {
+  "changelog/changelog-new2.png": {
     "width": 1167,
     "height": 677
   },
-  "changelog-new3-en.png": {
+  "changelog/changelog-new3-en.png": {
     "width": 1109,
     "height": 657
   },
-  "changelog-new3.png": {
+  "changelog/changelog-new3.png": {
     "width": 1109,
     "height": 657
   },
-  "changelog-server-aix.png": {
+  "changelog/changelog-server-aix.png": {
     "width": 790,
     "height": 418
   },
-  "changelog-stat-instance.png": {
+  "changelog/changelog-stat-instance.png": {
     "width": 574,
     "height": 527
   },
-  "changelog-whatap-info.png": {
+  "changelog/changelog-whatap-info.png": {
     "width": 612,
     "height": 346
   },
-  "new_feature_overview_txt.png": {
+  "changelog/new_feature_overview_txt.png": {
     "width": 934,
     "height": 161
   },
-  "new_feature_overview_txt_gl.png": {
+  "changelog/new_feature_overview_txt_gl.png": {
     "width": 934,
     "height": 161
   },
-  "changes-transaction-list-after.png": {
+  "changes/changes-transaction-list-after.png": {
     "width": 2394,
     "height": 888
   },
-  "changes-transaction-list-before.png": {
+  "changes/changes-transaction-list-before.png": {
     "width": 2480,
     "height": 898
   },
-  "changes-transaction-multi-tx-after.png": {
+  "changes/changes-transaction-multi-tx-after.png": {
     "width": 1192,
     "height": 1414
   },
-  "changes-transaction-multi-tx-before.png": {
+  "changes/changes-transaction-multi-tx-before.png": {
     "width": 2592,
     "height": 1418
   },
-  "changes-transaction-summary-after.png": {
+  "changes/changes-transaction-summary-after.png": {
     "width": 1194,
     "height": 1304
   },
-  "changes-transaction-summary-before.png": {
+  "changes/changes-transaction-summary-before.png": {
     "width": 2584,
     "height": 492
   },
-  "changes-transaction-table-view-after.png": {
+  "changes/changes-transaction-table-view-after.png": {
     "width": 1194,
     "height": 1304
   },
-  "changes-transaction-table-view-before.png": {
+  "changes/changes-transaction-table-view-before.png": {
     "width": 1280,
     "height": 852
   },
-  "changes-transaction-tree-view-after.png": {
+  "changes/changes-transaction-tree-view-after.png": {
     "width": 1198,
     "height": 1334
   },
-  "changes-transaction-tree-view-before.png": {
+  "changes/changes-transaction-tree-view-before.png": {
     "width": 2588,
     "height": 1424
   },
-  "refer-db-agent-update-170-en.png": {
+  "changes/refer-db-agent-update-170-en.png": {
     "width": 1047,
     "height": 297
   },
-  "refer-db-agent-update-170-ja.png": {
+  "changes/refer-db-agent-update-170-ja.png": {
     "width": 1047,
     "height": 297
   },
-  "refer-db-agent-update-170.png": {
+  "changes/refer-db-agent-update-170.png": {
     "width": 1047,
     "height": 280
   },
-  "refer-db-alert-xos-en.png": {
+  "changes/refer-db-alert-xos-en.png": {
     "width": 1047,
     "height": 279
   },
-  "refer-db-alert-xos-ja.png": {
+  "changes/refer-db-alert-xos-ja.png": {
     "width": 1047,
     "height": 281
   },
-  "refer-db-alert-xos.png": {
+  "changes/refer-db-alert-xos.png": {
     "width": 1047,
     "height": 278
   },
-  "refer-db-alert-xos2-en.png": {
+  "changes/refer-db-alert-xos2-en.png": {
     "width": 1047,
     "height": 279
   },
-  "refer-db-alert-xos2-ja.png": {
+  "changes/refer-db-alert-xos2-ja.png": {
     "width": 1047,
     "height": 281
   },
-  "refer-db-alert-xos2.png": {
+  "changes/refer-db-alert-xos2.png": {
     "width": 1047,
     "height": 278
   },
@@ -5191,87 +5227,87 @@
     "width": 800,
     "height": 803
   },
-  "ui-timeselector-date-picker-en.png": {
+  "common-ui/ui-timeselector-date-picker-en.png": {
     "width": 1392,
     "height": 747
   },
-  "ui-timeselector-date-picker-ja.png": {
+  "common-ui/ui-timeselector-date-picker-ja.png": {
     "width": 1392,
     "height": 747
   },
-  "ui-timeselector-date-picker.png": {
+  "common-ui/ui-timeselector-date-picker.png": {
     "width": 1392,
     "height": 747
   },
-  "ui-timeselector-live-en.png": {
+  "common-ui/ui-timeselector-live-en.png": {
     "width": 828,
     "height": 100
   },
-  "ui-timeselector-live-ja.png": {
+  "common-ui/ui-timeselector-live-ja.png": {
     "width": 828,
     "height": 100
   },
-  "ui-timeselector-live.png": {
+  "common-ui/ui-timeselector-live.png": {
     "width": 817,
     "height": 100
   },
-  "ui-timeselector-live2specific.gif": {
+  "common-ui/ui-timeselector-live2specific.gif": {
     "width": 1016,
     "height": 80
   },
-  "ui-timeselector-paste.gif": {
+  "common-ui/ui-timeselector-paste.gif": {
     "width": 2188,
     "height": 222
   },
-  "ui-timeselector-realtime-range-5m-en.png": {
+  "common-ui/ui-timeselector-realtime-range-5m-en.png": {
     "width": 600,
     "height": 509
   },
-  "ui-timeselector-realtime-range-5m-ja.png": {
+  "common-ui/ui-timeselector-realtime-range-5m-ja.png": {
     "width": 600,
     "height": 509
   },
-  "ui-timeselector-realtime-range-5m.png": {
+  "common-ui/ui-timeselector-realtime-range-5m.png": {
     "width": 600,
     "height": 512
   },
-  "ui-timeselector-realtime-range-en.png": {
+  "common-ui/ui-timeselector-realtime-range-en.png": {
     "width": 600,
     "height": 234
   },
-  "ui-timeselector-realtime-range-ja.png": {
+  "common-ui/ui-timeselector-realtime-range-ja.png": {
     "width": 600,
     "height": 235
   },
-  "ui-timeselector-realtime-range.png": {
+  "common-ui/ui-timeselector-realtime-range.png": {
     "width": 600,
     "height": 236
   },
-  "ui-timeselector-select-custom-en.png": {
+  "common-ui/ui-timeselector-select-custom-en.png": {
     "width": 960,
     "height": 588
   },
-  "ui-timeselector-select-custom-ja.png": {
+  "common-ui/ui-timeselector-select-custom-ja.png": {
     "width": 960,
     "height": 694
   },
-  "ui-timeselector-select-custom.png": {
+  "common-ui/ui-timeselector-select-custom.png": {
     "width": 960,
     "height": 588
   },
-  "ui-timeselector-timerange-en.png": {
+  "common-ui/ui-timeselector-timerange-en.png": {
     "width": 998,
     "height": 100
   },
-  "ui-timeselector-timerange-ja.png": {
+  "common-ui/ui-timeselector-timerange-ja.png": {
     "width": 998,
     "height": 100
   },
-  "ui-timeselector-timerange-mov.gif": {
+  "common-ui/ui-timeselector-timerange-mov.gif": {
     "width": 812,
     "height": 80
   },
-  "ui-timeselector-timerange.png": {
+  "common-ui/ui-timeselector-timerange.png": {
     "width": 951,
     "height": 100
   },
@@ -9511,6 +9547,10 @@
     "width": 1086,
     "height": 604
   },
+  "default-placeholder-image.webp": {
+    "width": 1200,
+    "height": 800
+  },
   "demo-project-en.png": {
     "width": 1862,
     "height": 554
@@ -9658,6 +9698,18 @@
   "ecs_fargate_whatap_monitoring.png": {
     "width": 963,
     "height": 815
+  },
+  "event-check-receive-status-en.png": {
+    "width": 400,
+    "height": 77
+  },
+  "event-check-receive-status-ja.png": {
+    "width": 400,
+    "height": 72
+  },
+  "event-check-receive-status.png": {
+    "width": 400,
+    "height": 72
   },
   "event-config-message-example.png": {
     "width": 1200,
@@ -10063,7 +10115,7 @@
     "width": 1200,
     "height": 708
   },
-  "apm-faq-hitmap-error.png": {
+  "faq/apm-faq-hitmap-error.png": {
     "width": 1201,
     "height": 545
   },
@@ -11765,15 +11817,15 @@
   },
   "k8s-container-map-sum-select-en.png": {
     "width": 1200,
-    "height": 671
+    "height": 673
   },
   "k8s-container-map-sum-select-ja.png": {
     "width": 1200,
-    "height": 674
+    "height": 667
   },
   "k8s-container-map-sum-select.png": {
     "width": 1200,
-    "height": 666
+    "height": 673
   },
   "k8s-container-map-thresholds.png": {
     "width": 870,
@@ -11822,6 +11874,42 @@
   "k8s-container-sum.png": {
     "width": 1200,
     "height": 689
+  },
+  "k8s-container-timeline-details-en.png": {
+    "width": 1202,
+    "height": 680
+  },
+  "k8s-container-timeline-details-ja.png": {
+    "width": 1202,
+    "height": 680
+  },
+  "k8s-container-timeline-details.png": {
+    "width": 1202,
+    "height": 680
+  },
+  "k8s-container-timeline-drag-en.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-container-timeline-drag-ja.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-container-timeline-drag.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-container-timeline-en.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-container-timeline-ja.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "k8s-container-timeline.png": {
+    "width": 1200,
+    "height": 675
   },
   "k8s-container-volume-en.png": {
     "width": 1201,
@@ -12017,15 +12105,15 @@
   },
   "k8s-install-master-node-addition-en.png": {
     "width": 1200,
-    "height": 646
+    "height": 649
   },
   "k8s-install-master-node-addition-ja.png": {
     "width": 1200,
-    "height": 648
+    "height": 647
   },
   "k8s-install-master-node-addition.png": {
-    "width": 1201,
-    "height": 651
+    "width": 1200,
+    "height": 631
   },
   "k8s-install-master-node-application-en.png": {
     "width": 1200,
@@ -12087,6 +12175,18 @@
     "width": 1200,
     "height": 672
   },
+  "k8s-kube-scheduler-dashboard-en.png": {
+    "width": 1200,
+    "height": 672
+  },
+  "k8s-kube-scheduler-dashboard-ja.png": {
+    "width": 1200,
+    "height": 671
+  },
+  "k8s-kube-scheduler-dashboard.png": {
+    "width": 1200,
+    "height": 672
+  },
   "k8s-kuber-event-details-en.png": {
     "width": 1204,
     "height": 673
@@ -12137,11 +12237,11 @@
   },
   "k8s-log-search-en.png": {
     "width": 1200,
-    "height": 660
+    "height": 566
   },
   "k8s-log-search-ja.png": {
     "width": 1200,
-    "height": 660
+    "height": 556
   },
   "k8s-log-search-to-log-search.png": {
     "width": 1208,
@@ -12149,7 +12249,7 @@
   },
   "k8s-log-search.png": {
     "width": 1200,
-    "height": 660
+    "height": 568
   },
   "k8s-namespace-mng-en.png": {
     "width": 1200,
@@ -12630,6 +12730,78 @@
   "k8s-pod-startup-analysis.png": {
     "width": 1201,
     "height": 689
+  },
+  "k8s-pod-timeline-details-en.png": {
+    "width": 1200,
+    "height": 692
+  },
+  "k8s-pod-timeline-details-ja.png": {
+    "width": 1200,
+    "height": 692
+  },
+  "k8s-pod-timeline-details.png": {
+    "width": 1200,
+    "height": 690
+  },
+  "k8s-pod-timeline-drag-en.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "k8s-pod-timeline-drag-ja.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "k8s-pod-timeline-drag.png": {
+    "width": 1200,
+    "height": 673
+  },
+  "k8s-pod-timeline-en.png": {
+    "width": 1200,
+    "height": 676
+  },
+  "k8s-pod-timeline-ja.png": {
+    "width": 1200,
+    "height": 676
+  },
+  "k8s-pod-timeline.png": {
+    "width": 1200,
+    "height": 676
+  },
+  "k8s-pv-list-cl-en.png": {
+    "width": 600,
+    "height": 778
+  },
+  "k8s-pv-list-cl-ja.png": {
+    "width": 600,
+    "height": 782
+  },
+  "k8s-pv-list-cl.png": {
+    "width": 600,
+    "height": 776
+  },
+  "k8s-pv-list-en.png": {
+    "width": 1200,
+    "height": 562
+  },
+  "k8s-pv-list-ja.png": {
+    "width": 1200,
+    "height": 564
+  },
+  "k8s-pv-list.png": {
+    "width": 1200,
+    "height": 563
+  },
+  "k8s-pvc-list-en.png": {
+    "width": 1200,
+    "height": 563
+  },
+  "k8s-pvc-list-ja.png": {
+    "width": 1200,
+    "height": 562
+  },
+  "k8s-pvc-list.png": {
+    "width": 1200,
+    "height": 561
   },
   "k8s-resource-cl-sum-ci-en.png": {
     "width": 1200,
@@ -13414,6 +13586,62 @@
   "log-content-search.png": {
     "width": 1362,
     "height": 102
+  },
+  "log-de-identification-check-en.png": {
+    "width": 1200,
+    "height": 455
+  },
+  "log-de-identification-check-ja.png": {
+    "width": 1200,
+    "height": 473
+  },
+  "log-de-identification-check.png": {
+    "width": 1200,
+    "height": 460
+  },
+  "log-de-identification-content.png": {
+    "width": 1244,
+    "height": 363
+  },
+  "log-de-identification-en.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "log-de-identification-ja.png": {
+    "width": 1200,
+    "height": 675
+  },
+  "log-de-identification-list-en.png": {
+    "width": 1200,
+    "height": 226
+  },
+  "log-de-identification-list-ja.png": {
+    "width": 1200,
+    "height": 222
+  },
+  "log-de-identification-list.png": {
+    "width": 1200,
+    "height": 224
+  },
+  "log-de-identification.png": {
+    "width": 1200,
+    "height": 670
+  },
+  "log-display-pi-1st-parser.png": {
+    "width": 1200,
+    "height": 491
+  },
+  "log-display-pi-en.png": {
+    "width": 924,
+    "height": 82
+  },
+  "log-display-pi-ja.png": {
+    "width": 772,
+    "height": 84
+  },
+  "log-display-pi.png": {
+    "width": 758,
+    "height": 96
   },
   "log-filter-comp.png": {
     "width": 348,
@@ -15611,155 +15839,155 @@
     "width": 1444,
     "height": 882
   },
-  "mobile-app-account-en.png": {
+  "mobile/mobile-app-account-en.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-account-ja.png": {
+  "mobile/mobile-app-account-ja.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-account.png": {
+  "mobile/mobile-app-account.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-alerts-en.png": {
+  "mobile/mobile-app-alerts-en.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-alerts-ja.png": {
+  "mobile/mobile-app-alerts-ja.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-alerts.png": {
+  "mobile/mobile-app-alerts.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-category-list-en.png": {
+  "mobile/mobile-app-category-list-en.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-category-list-ja.png": {
+  "mobile/mobile-app-category-list-ja.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-category-list.png": {
+  "mobile/mobile-app-category-list.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-category.png": {
+  "mobile/mobile-app-category.png": {
     "width": 45,
     "height": 45
   },
-  "mobile-app-home-en.png": {
+  "mobile/mobile-app-home-en.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-home-ja.png": {
+  "mobile/mobile-app-home-ja.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-home.png": {
+  "mobile/mobile-app-home.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-login-en.png": {
+  "mobile/mobile-app-login-en.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-login-ja.png": {
+  "mobile/mobile-app-login-ja.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-login.png": {
+  "mobile/mobile-app-login.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-main-tab-en.png": {
+  "mobile/mobile-app-main-tab-en.png": {
     "width": 591,
     "height": 97
   },
-  "mobile-app-main-tab-ja.png": {
+  "mobile/mobile-app-main-tab-ja.png": {
     "width": 591,
     "height": 97
   },
-  "mobile-app-main-tab.png": {
+  "mobile/mobile-app-main-tab.png": {
     "width": 591,
     "height": 133
   },
-  "mobile-app-notice.png": {
+  "mobile/mobile-app-notice.png": {
     "width": 45,
     "height": 45
   },
-  "mobile-app-project-alert-en.png": {
+  "mobile/mobile-app-project-alert-en.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-alert-ja.png": {
+  "mobile/mobile-app-project-alert-ja.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-alert.png": {
+  "mobile/mobile-app-project-alert.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-card-en.png": {
+  "mobile/mobile-app-project-card-en.png": {
     "width": 591,
     "height": 549
   },
-  "mobile-app-project-card-ja.png": {
+  "mobile/mobile-app-project-card-ja.png": {
     "width": 591,
     "height": 552
   },
-  "mobile-app-project-card.png": {
+  "mobile/mobile-app-project-card.png": {
     "width": 591,
     "height": 554
   },
-  "mobile-app-project-dashboard-en.png": {
+  "mobile/mobile-app-project-dashboard-en.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-dashboard-ja.png": {
+  "mobile/mobile-app-project-dashboard-ja.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-dashboard.png": {
+  "mobile/mobile-app-project-dashboard.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-setting-en.png": {
+  "mobile/mobile-app-project-setting-en.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-setting-ja.png": {
+  "mobile/mobile-app-project-setting-ja.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-project-setting.png": {
+  "mobile/mobile-app-project-setting.png": {
     "width": 591,
     "height": 1159
   },
-  "mobile-app-search-result-en.png": {
+  "mobile/mobile-app-search-result-en.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-search-result-ja.png": {
+  "mobile/mobile-app-search-result-ja.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-search-result.png": {
+  "mobile/mobile-app-search-result.png": {
     "width": 591,
     "height": 1184
   },
-  "mobile-app-status-icon.png": {
+  "mobile/mobile-app-status-icon.png": {
     "width": 45,
     "height": 45
   },
-  "whatap-app-android.png": {
+  "mobile/whatap-app-android.png": {
     "width": 600,
     "height": 600
   },
-  "whatap-app-ios.png": {
+  "mobile/whatap-app-ios.png": {
     "width": 600,
     "height": 600
   },
@@ -17131,7 +17359,7 @@
     "width": 1200,
     "height": 364
   },
-  "opentelemetry-overview.png": {
+  "otel/opentelemetry-overview.png": {
     "width": 1200,
     "height": 604
   },
@@ -17363,259 +17591,259 @@
     "width": 1200,
     "height": 859
   },
-  "after-transaction-chart.png": {
+  "release/after-transaction-chart.png": {
     "width": 186,
     "height": 154
   },
-  "apm-dashboad-editable-widget.png": {
+  "release/apm-dashboad-editable-widget.png": {
     "width": 1200,
     "height": 749
   },
-  "apm-dashboard-preset-feature.png": {
+  "release/apm-dashboard-preset-feature.png": {
     "width": 1200,
     "height": 431
   },
-  "apm-transaction-list-after-change.png": {
+  "release/apm-transaction-list-after-change.png": {
     "width": 1200,
     "height": 437
   },
-  "apm-transaction-list-after.png": {
+  "release/apm-transaction-list-after.png": {
     "width": 1602,
     "height": 422
   },
-  "apm-transaction-list-before.png": {
+  "release/apm-transaction-list-before.png": {
     "width": 1200,
     "height": 377
   },
-  "before-transaction-chart.png": {
+  "release/before-transaction-chart.png": {
     "width": 180,
     "height": 158
   },
-  "db-dbtrendcompare-release.png": {
+  "release/db-dbtrendcompare-release.png": {
     "width": 600,
     "height": 200
   },
-  "hitmap-button-after.png": {
+  "release/hitmap-button-after.png": {
     "width": 524,
     "height": 190
   },
-  "hitmap-button-before.png": {
+  "release/hitmap-button-before.png": {
     "width": 460,
     "height": 148
   },
-  "interval-option-after.png": {
+  "release/interval-option-after.png": {
     "width": 534,
     "height": 228
   },
-  "interval-option-before.png": {
+  "release/interval-option-before.png": {
     "width": 527,
     "height": 228
   },
-  "java-2-246-release-1.png": {
+  "release/java-2-246-release-1.png": {
     "width": 1200,
     "height": 734
   },
-  "java-2-246-release.png": {
+  "release/java-2-246-release.png": {
     "width": 1200,
     "height": 281
   },
-  "k8s-container-map-log-category-sort-change.png": {
+  "release/k8s-container-map-log-category-sort-change.png": {
     "width": 293,
     "height": 126
   },
-  "k8s-metric-summary-01.png": {
+  "release/k8s-metric-summary-01.png": {
     "width": 356,
     "height": 277
   },
-  "k8s-metric-summary-02.png": {
+  "release/k8s-metric-summary-02.png": {
     "width": 1318,
     "height": 246
   },
-  "k8s-metric-summary-03.png": {
+  "release/k8s-metric-summary-03.png": {
     "width": 1086,
     "height": 502
   },
-  "k8s-performance-sum-rn.jpg": {
+  "release/k8s-performance-sum-rn.jpg": {
     "width": 1280,
     "height": 642
   },
-  "none-realtime-mode.png": {
+  "release/none-realtime-mode.png": {
     "width": 1200,
     "height": 384
   },
-  "preview-k8s-containermap.png": {
+  "release/preview-k8s-containermap.png": {
     "width": 924,
     "height": 381
   },
-  "preview-k8s-pod-column-changes.png": {
+  "release/preview-k8s-pod-column-changes.png": {
     "width": 1029,
     "height": 588
   },
-  "r-1_105_14-k8s-container-map-details.png": {
+  "release/r-1_105_14-k8s-container-map-details.png": {
     "width": 479,
     "height": 362
   },
-  "r-1_105_14-k8s-multi-container-map.png": {
+  "release/r-1_105_14-k8s-multi-container-map.png": {
     "width": 381,
     "height": 157
   },
-  "r-1_105_14-k8s-summary-cluster.png": {
+  "release/r-1_105_14-k8s-summary-cluster.png": {
     "width": 1074,
     "height": 429
   },
-  "realtime-mode.png": {
+  "release/realtime-mode.png": {
     "width": 1200,
     "height": 384
   },
-  "release-apm-dashboard-tx-map-custom.png": {
+  "release/release-apm-dashboard-tx-map-custom.png": {
     "width": 400,
     "height": 368
   },
-  "release-apm-statistics-btn-select.png": {
+  "release/release-apm-statistics-btn-select.png": {
     "width": 600,
     "height": 146
   },
-  "release-apm-trace-add-serial-field.png": {
+  "release/release-apm-trace-add-serial-field.png": {
     "width": 1200,
     "height": 227
   },
-  "release-changed-container.png": {
+  "release/release-changed-container.png": {
     "width": 2358,
     "height": 771
   },
-  "release-container-list-column-change.png": {
+  "release/release-container-list-column-change.png": {
     "width": 400,
     "height": 453
   },
-  "release-db-activesesseion-table.png": {
+  "release/release-db-activesesseion-table.png": {
     "width": 1200,
     "height": 426
   },
-  "release-db-object-details-db-size.png": {
+  "release/release-db-object-details-db-size.png": {
     "width": 1200,
     "height": 660
   },
-  "release-db-object-details-monitoring.png": {
+  "release/release-db-object-details-monitoring.png": {
     "width": 1200,
     "height": 609
   },
-  "release-db-object-details-topobject.png": {
+  "release/release-db-object-details-topobject.png": {
     "width": 1200,
     "height": 423
   },
-  "release-java-log.png": {
+  "release/release-java-log.png": {
     "width": 1200,
     "height": 30
   },
-  "release-k8s-container-add-option.png": {
+  "release/release-k8s-container-add-option.png": {
     "width": 600,
     "height": 253
   },
-  "release-k8s-container-block.png": {
+  "release/release-k8s-container-block.png": {
     "width": 1200,
     "height": 1302
   },
-  "release-k8s-container-group-application-count.png": {
+  "release/release-k8s-container-group-application-count.png": {
     "width": 600,
     "height": 545
   },
-  "release-log-live-tail-filter.png": {
+  "release/release-log-live-tail-filter.png": {
     "width": 1200,
     "height": 318
   },
-  "release-main-ui.png": {
+  "release/release-main-ui.png": {
     "width": 2384,
     "height": 702
   },
-  "release-mobile-app-add-home.png": {
+  "release/release-mobile-app-add-home.png": {
     "width": 400,
     "height": 850
   },
-  "release-mobile-app-favorite.png": {
+  "release/release-mobile-app-favorite.png": {
     "width": 400,
     "height": 334
   },
-  "release-mobile-app-logining.png": {
+  "release/release-mobile-app-logining.png": {
     "width": 400,
     "height": 241
   },
-  "release-mobile-app-test-alert.png": {
+  "release/release-mobile-app-test-alert.png": {
     "width": 400,
     "height": 849
   },
-  "release-multi-tx-chartview.png": {
+  "release/release-multi-tx-chartview.png": {
     "width": 826,
     "height": 122
   },
-  "release-node-details-container-table.png": {
+  "release/release-node-details-container-table.png": {
     "width": 1200,
     "height": 270
   },
-  "release-note-tx-new-feature-en.png": {
+  "release/release-note-tx-new-feature-en.png": {
     "width": 1232,
     "height": 406
   },
-  "release-note-tx-new-feature-ja.png": {
+  "release/release-note-tx-new-feature-ja.png": {
     "width": 1202,
     "height": 406
   },
-  "release-note-tx-new-feature.png": {
+  "release/release-note-tx-new-feature.png": {
     "width": 1200,
     "height": 406
   },
-  "release-note-whatap-info.png": {
+  "release/release-note-whatap-info.png": {
     "width": 265,
     "height": 353
   },
-  "release-notes-add-sidebar-product.png": {
+  "release/release-notes-add-sidebar-product.png": {
     "width": 1200,
     "height": 955
   },
-  "release-npm-topology.png": {
+  "release/release-npm-topology.png": {
     "width": 1730,
     "height": 824
   },
-  "release-oracle-pro-sql-detail.png": {
+  "release/release-oracle-pro-sql-detail.png": {
     "width": 1200,
     "height": 665
   },
-  "release-real-time-alert-changed.png": {
+  "release/release-real-time-alert-changed.png": {
     "width": 667,
     "height": 154
   },
-  "release-timeselector.png": {
+  "release/release-timeselector.png": {
     "width": 1200,
     "height": 619
   },
-  "release-trace-analysis-filter-changes.png": {
+  "release/release-trace-analysis-filter-changes.png": {
     "width": 1000,
     "height": 285
   },
-  "release-usage-subcribe-column.png": {
+  "release/release-usage-subcribe-column.png": {
     "width": 400,
     "height": 177
   },
-  "rl-report-time-set.png": {
+  "release/rl-report-time-set.png": {
     "width": 600,
     "height": 119
   },
-  "series-chart-after.png": {
+  "release/series-chart-after.png": {
     "width": 570,
     "height": 312
   },
-  "series-chart-before.png": {
+  "release/series-chart-before.png": {
     "width": 536,
     "height": 210
   },
-  "transaction-profile-trace-after.png": {
+  "release/transaction-profile-trace-after.png": {
     "width": 600,
     "height": 111
   },
-  "transaction-profile-trace-before.png": {
+  "release/transaction-profile-trace-before.png": {
     "width": 600,
     "height": 181
   },
-  "url-widget-changed.png": {
+  "release/url-widget-changed.png": {
     "width": 963,
     "height": 304
   },
@@ -18289,11 +18517,11 @@
   },
   "server-inventory-en.png": {
     "width": 1211,
-    "height": 669
+    "height": 672
   },
   "server-inventory-ja.png": {
     "width": 1211,
-    "height": 669
+    "height": 674
   },
   "server-inventory-map-chart-en.png": {
     "width": 1200,
@@ -18361,7 +18589,7 @@
   },
   "server-inventory.png": {
     "width": 1211,
-    "height": 673
+    "height": 676
   },
   "server-list-agent-transfer-en.png": {
     "width": 1083,
@@ -18470,6 +18698,54 @@
   "server-log-windows.png": {
     "width": 1095,
     "height": 1406
+  },
+  "server-metrics-explorer-chart-batch-change-en.png": {
+    "width": 1200,
+    "height": 1047
+  },
+  "server-metrics-explorer-chart-batch-change-ja.png": {
+    "width": 1200,
+    "height": 1050
+  },
+  "server-metrics-explorer-chart-batch-change.png": {
+    "width": 1200,
+    "height": 1054
+  },
+  "server-metrics-explorer-chart-details-en.png": {
+    "width": 819,
+    "height": 736
+  },
+  "server-metrics-explorer-chart-details-ja.png": {
+    "width": 819,
+    "height": 736
+  },
+  "server-metrics-explorer-chart-details.png": {
+    "width": 819,
+    "height": 736
+  },
+  "server-metrics-explorer-en.png": {
+    "width": 1200,
+    "height": 742
+  },
+  "server-metrics-explorer-ja.png": {
+    "width": 1200,
+    "height": 746
+  },
+  "server-metrics-explorer-select-en.png": {
+    "width": 1200,
+    "height": 515
+  },
+  "server-metrics-explorer-select-ja.png": {
+    "width": 1200,
+    "height": 520
+  },
+  "server-metrics-explorer-select.png": {
+    "width": 1200,
+    "height": 482
+  },
+  "server-metrics-explorer.png": {
+    "width": 1200,
+    "height": 747
   },
   "server-notice-escalation-en.png": {
     "width": 400,
@@ -18714,6 +18990,18 @@
   "set-agent-category.png": {
     "width": 400,
     "height": 126
+  },
+  "set-event-3rd-party-plugin-add-slack-en.png": {
+    "width": 800,
+    "height": 791
+  },
+  "set-event-3rd-party-plugin-add-slack-ja.png": {
+    "width": 800,
+    "height": 791
+  },
+  "set-event-3rd-party-plugin-add-slack.png": {
+    "width": 800,
+    "height": 791
   },
   "set-event-3rd-party-plugin-en.png": {
     "width": 800,
@@ -19187,23 +19475,23 @@
     "width": 600,
     "height": 387
   },
-  "whale-none-crisp-chat-icon.png": {
+  "support-faq/whale-none-crisp-chat-icon.png": {
     "width": 600,
     "height": 370
   },
-  "whale-prevent-trace-01.png": {
+  "support-faq/whale-prevent-trace-01.png": {
     "width": 400,
     "height": 293
   },
-  "whale-prevent-trace-02.png": {
+  "support-faq/whale-prevent-trace-02.png": {
     "width": 400,
     "height": 155
   },
-  "whale-prevent-trace-03.png": {
+  "support-faq/whale-prevent-trace-03.png": {
     "width": 400,
     "height": 295
   },
-  "whale-visible-crisp-chat-icon.png": {
+  "support-faq/whale-visible-crisp-chat-icon.png": {
     "width": 600,
     "height": 368
   },
@@ -19567,315 +19855,327 @@
     "width": 400,
     "height": 571
   },
-  "main-project-compact-card-view-en.png": {
+  "ui-home/main-project-compact-card-view-en.png": {
     "width": 1200,
     "height": 412
   },
-  "main-project-compact-card-view-ja.png": {
+  "ui-home/main-project-compact-card-view-ja.png": {
     "width": 1200,
     "height": 411
   },
-  "main-project-compact-card-view.png": {
+  "ui-home/main-project-compact-card-view.png": {
     "width": 1200,
     "height": 413
   },
-  "main-project-extend-card-view-en.png": {
+  "ui-home/main-project-extend-card-view-en.png": {
     "width": 1200,
     "height": 464
   },
-  "main-project-extend-card-view-ja.png": {
+  "ui-home/main-project-extend-card-view-ja.png": {
     "width": 1200,
     "height": 464
   },
-  "main-project-extend-card-view.png": {
+  "ui-home/main-project-extend-card-view.png": {
     "width": 1200,
     "height": 463
   },
-  "main-project-favorite-list-en.png": {
+  "ui-home/main-project-favorite-list-en.png": {
     "width": 960,
     "height": 317
   },
-  "main-project-favorite-list-ja.png": {
+  "ui-home/main-project-favorite-list-ja.png": {
     "width": 960,
     "height": 317
   },
-  "main-project-favorite-list.png": {
+  "ui-home/main-project-favorite-list.png": {
     "width": 960,
     "height": 315
   },
-  "main-project-filter-en.png": {
+  "ui-home/main-project-filter-en.png": {
     "width": 220,
     "height": 369
   },
-  "main-project-filter-ja.png": {
+  "ui-home/main-project-filter-ja.png": {
     "width": 220,
     "height": 370
   },
-  "main-project-filter.png": {
+  "ui-home/main-project-filter.png": {
     "width": 221,
     "height": 366
   },
-  "main-project-free-trial-en.png": {
+  "ui-home/main-project-free-trial-en.png": {
     "width": 400,
     "height": 60
   },
-  "main-project-free-trial-ja.png": {
+  "ui-home/main-project-free-trial-ja.png": {
     "width": 400,
     "height": 62
   },
-  "main-project-free-trial.png": {
+  "ui-home/main-project-free-trial.png": {
     "width": 400,
     "height": 60
   },
-  "main-project-list-card-view-en.png": {
+  "ui-home/main-project-list-card-view-en.png": {
     "width": 1200,
     "height": 471
   },
-  "main-project-list-card-view-ja.png": {
+  "ui-home/main-project-list-card-view-ja.png": {
     "width": 1200,
     "height": 472
   },
-  "main-project-list-card-view.png": {
+  "ui-home/main-project-list-card-view.png": {
     "width": 1200,
     "height": 471
   },
-  "main-project-select-view-en.png": {
+  "ui-home/main-project-select-view-en.png": {
     "width": 600,
     "height": 79
   },
-  "main-project-select-view-ja.png": {
+  "ui-home/main-project-select-view-ja.png": {
     "width": 600,
     "height": 79
   },
-  "main-project-select-view.png": {
+  "ui-home/main-project-select-view.png": {
     "width": 600,
     "height": 76
   },
-  "main-project-set-favorite-en.png": {
+  "ui-home/main-project-set-favorite-en.png": {
     "width": 400,
     "height": 148
   },
-  "main-project-set-favorite-ja.png": {
+  "ui-home/main-project-set-favorite-ja.png": {
     "width": 400,
     "height": 150
   },
-  "main-project-set-favorite.png": {
+  "ui-home/main-project-set-favorite.png": {
     "width": 400,
     "height": 145
   },
-  "main-ui-adjust-sidebar-en.png": {
+  "ui-home/main-ui-adjust-sidebar-en.png": {
     "width": 1200,
     "height": 647
   },
-  "main-ui-adjust-sidebar-ja.png": {
+  "ui-home/main-ui-adjust-sidebar-ja.png": {
     "width": 1200,
     "height": 647
   },
-  "main-ui-adjust-sidebar.png": {
+  "ui-home/main-ui-adjust-sidebar.png": {
     "width": 1200,
     "height": 647
   },
-  "main-ui-adjust-size-project-list-en.png": {
+  "ui-home/main-ui-adjust-size-project-list-en.png": {
     "width": 600,
     "height": 298
   },
-  "main-ui-adjust-size-project-list-ja.png": {
+  "ui-home/main-ui-adjust-size-project-list-ja.png": {
     "width": 600,
     "height": 297
   },
-  "main-ui-adjust-size-project-list.png": {
+  "ui-home/main-ui-adjust-size-project-list.png": {
     "width": 600,
     "height": 306
   },
-  "main-ui-filter-project-en.png": {
+  "ui-home/main-ui-filter-project-en.png": {
     "width": 600,
     "height": 472
   },
-  "main-ui-filter-project-ja.png": {
+  "ui-home/main-ui-filter-project-ja.png": {
     "width": 600,
     "height": 471
   },
-  "main-ui-filter-project.png": {
+  "ui-home/main-ui-filter-project.png": {
     "width": 600,
     "height": 468
   },
-  "main-ui-fold-extend-sidemenu-en.png": {
+  "ui-home/main-ui-fold-extend-sidemenu-en.png": {
     "width": 1200,
     "height": 462
   },
-  "main-ui-fold-extend-sidemenu-ja.png": {
+  "ui-home/main-ui-fold-extend-sidemenu-ja.png": {
     "width": 1200,
     "height": 462
   },
-  "main-ui-fold-extend-sidemenu.png": {
+  "ui-home/main-ui-fold-extend-sidemenu.png": {
     "width": 1200,
     "height": 462
   },
-  "main-ui-home-to-project-move-01-en.png": {
+  "ui-home/main-ui-home-to-project-move-01-en.png": {
     "width": 600,
     "height": 384
   },
-  "main-ui-home-to-project-move-01-ja.png": {
+  "ui-home/main-ui-home-to-project-move-01-ja.png": {
     "width": 600,
     "height": 380
   },
-  "main-ui-home-to-project-move-01.png": {
+  "ui-home/main-ui-home-to-project-move-01.png": {
     "width": 600,
     "height": 380
   },
-  "main-ui-home-to-project-move-02-en.png": {
+  "ui-home/main-ui-home-to-project-move-02-en.png": {
     "width": 700,
     "height": 814
   },
-  "main-ui-home-to-project-move-02-ja.png": {
+  "ui-home/main-ui-home-to-project-move-02-ja.png": {
     "width": 694,
     "height": 807
   },
-  "main-ui-home-to-project-move-02.png": {
+  "ui-home/main-ui-home-to-project-move-02.png": {
     "width": 700,
     "height": 814
   },
-  "main-ui-profile-menu-en.png": {
+  "ui-home/main-ui-profile-menu-en.png": {
     "width": 200,
     "height": 295
   },
-  "main-ui-profile-menu-ja.png": {
+  "ui-home/main-ui-profile-menu-ja.png": {
     "width": 200,
     "height": 293
   },
-  "main-ui-profile-menu.png": {
+  "ui-home/main-ui-profile-menu.png": {
     "width": 200,
     "height": 295
   },
-  "main-ui-project-card-en.png": {
+  "ui-home/main-ui-project-card-en.png": {
     "width": 416,
     "height": 381
   },
-  "main-ui-project-card-ja.png": {
+  "ui-home/main-ui-project-card-ja.png": {
     "width": 416,
     "height": 381
   },
-  "main-ui-project-card.png": {
+  "ui-home/main-ui-project-card.png": {
     "width": 416,
     "height": 381
   },
-  "main-ui-realtime-notification-all-history-en.png": {
+  "ui-home/main-ui-realtime-notification-all-history-en.png": {
     "width": 600,
     "height": 300
   },
-  "main-ui-realtime-notification-all-history-ja.png": {
+  "ui-home/main-ui-realtime-notification-all-history-ja.png": {
     "width": 600,
     "height": 299
   },
-  "main-ui-realtime-notification-all-history.png": {
+  "ui-home/main-ui-realtime-notification-all-history.png": {
     "width": 600,
     "height": 299
   },
-  "main-ui-realtime-notification-en.png": {
+  "ui-home/main-ui-realtime-notification-en.png": {
     "width": 600,
     "height": 897
   },
-  "main-ui-realtime-notification-ja.png": {
+  "ui-home/main-ui-realtime-notification-ja.png": {
     "width": 600,
     "height": 856
   },
-  "main-ui-realtime-notification-popup-en.png": {
+  "ui-home/main-ui-realtime-notification-popup-en.png": {
     "width": 400,
     "height": 163
   },
-  "main-ui-realtime-notification-popup-ja.png": {
+  "ui-home/main-ui-realtime-notification-popup-ja.png": {
     "width": 400,
     "height": 163
   },
-  "main-ui-realtime-notification-popup.png": {
+  "ui-home/main-ui-realtime-notification-popup.png": {
     "width": 400,
     "height": 163
   },
-  "main-ui-realtime-notification-resolve-en.png": {
+  "ui-home/main-ui-realtime-notification-resolve-en.png": {
     "width": 600,
     "height": 307
   },
-  "main-ui-realtime-notification-resolve-ja.png": {
+  "ui-home/main-ui-realtime-notification-resolve-ja.png": {
     "width": 600,
     "height": 307
   },
-  "main-ui-realtime-notification-resolve.png": {
+  "ui-home/main-ui-realtime-notification-resolve.png": {
     "width": 600,
     "height": 306
   },
-  "main-ui-realtime-notification-select-time-en.png": {
+  "ui-home/main-ui-realtime-notification-select-time-en.png": {
     "width": 600,
     "height": 510
   },
-  "main-ui-realtime-notification-select-time-ja.png": {
+  "ui-home/main-ui-realtime-notification-select-time-ja.png": {
     "width": 600,
     "height": 475
   },
-  "main-ui-realtime-notification-select-time.png": {
+  "ui-home/main-ui-realtime-notification-select-time.png": {
     "width": 600,
     "height": 475
   },
-  "main-ui-realtime-notification-settings-en.png": {
+  "ui-home/main-ui-realtime-notification-settings-en.png": {
     "width": 600,
     "height": 324
   },
-  "main-ui-realtime-notification-settings-ja.png": {
+  "ui-home/main-ui-realtime-notification-settings-ja.png": {
     "width": 600,
     "height": 324
   },
-  "main-ui-realtime-notification-settings.png": {
+  "ui-home/main-ui-realtime-notification-settings.png": {
     "width": 600,
     "height": 324
   },
-  "main-ui-realtime-notification.png": {
+  "ui-home/main-ui-realtime-notification.png": {
     "width": 600,
     "height": 861
   },
-  "main-ui-set-favorite-menu-en.png": {
-    "width": 400,
-    "height": 340
-  },
-  "main-ui-set-favorite-menu-ja.png": {
-    "width": 400,
-    "height": 340
-  },
-  "main-ui-set-favorite-menu.png": {
-    "width": 400,
-    "height": 361
-  },
-  "main-ui-setting-by-org-en.png": {
-    "width": 400,
-    "height": 105
-  },
-  "main-ui-setting-by-org-ja.png": {
-    "width": 400,
-    "height": 106
-  },
-  "main-ui-setting-by-org.png": {
-    "width": 400,
-    "height": 101
-  },
-  "main-ui-ver2-en.png": {
+  "ui-home/main-ui-search-by-group-en.png": {
     "width": 1200,
     "height": 646
   },
-  "main-ui-ver2-ja.png": {
+  "ui-home/main-ui-search-by-group-ja.png": {
     "width": 1200,
     "height": 646
   },
-  "main-ui-ver2.png": {
+  "ui-home/main-ui-search-by-group.png": {
     "width": 1200,
     "height": 647
   },
-  "main-ui-view-only-favorite-en.png": {
+  "ui-home/main-ui-set-favorite-menu-en.png": {
+    "width": 400,
+    "height": 340
+  },
+  "ui-home/main-ui-set-favorite-menu-ja.png": {
+    "width": 400,
+    "height": 340
+  },
+  "ui-home/main-ui-set-favorite-menu.png": {
+    "width": 400,
+    "height": 361
+  },
+  "ui-home/main-ui-setting-by-org-en.png": {
+    "width": 400,
+    "height": 105
+  },
+  "ui-home/main-ui-setting-by-org-ja.png": {
+    "width": 400,
+    "height": 106
+  },
+  "ui-home/main-ui-setting-by-org.png": {
+    "width": 400,
+    "height": 101
+  },
+  "ui-home/main-ui-ver2-en.png": {
+    "width": 1200,
+    "height": 646
+  },
+  "ui-home/main-ui-ver2-ja.png": {
+    "width": 1200,
+    "height": 646
+  },
+  "ui-home/main-ui-ver2.png": {
+    "width": 1200,
+    "height": 647
+  },
+  "ui-home/main-ui-view-only-favorite-en.png": {
     "width": 400,
     "height": 161
   },
-  "main-ui-view-only-favorite-ja.png": {
+  "ui-home/main-ui-view-only-favorite-ja.png": {
     "width": 400,
     "height": 152
   },
-  "main-ui-view-only-favorite.png": {
+  "ui-home/main-ui-view-only-favorite.png": {
     "width": 400,
     "height": 156
   },

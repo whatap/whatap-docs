@@ -17,7 +17,7 @@ async function readFilesInDirectory(directory, callback) {
 
             if (isFile && isImageFile(filePath)) {
                 const metadata = await sharp(filePath).metadata();
-                callback(file, metadata);
+                callback(filePath, metadata);
             } else if (!isFile) {
                 // 디렉토리인 경우 재귀적으로 탐색
                 await readFilesInDirectory(filePath, callback);
@@ -39,7 +39,8 @@ const imageInfo = {};
 
 // 파일 정보를 수집하는 콜백 함수
 function collectFileInfo(file, metadata) {
-    imageInfo[file] = { width: metadata.width, height: metadata.height };
+    const fileName = file.replace('static/img/', '');
+    imageInfo[fileName] = { width: metadata.width, height: metadata.height };
 }
 
 // 디렉토리와 그 하위 디렉토리의 이미지 파일 정보를 수집
@@ -47,7 +48,7 @@ readFilesInDirectory(directoryPath, collectFileInfo)
     .then(() => {
         // 최종 결과를 JSON 파일로 저장
         const jsonOutput = JSON.stringify(imageInfo, null, 2);
-        return fs.writeFile("./src/components/sizeOfimages.json", jsonOutput, 'utf-8');
+        return fs.writeFile("./static/img/sizeOfimages.json", jsonOutput, 'utf-8');
     })
     .then(() => {
         console.log("Complete");
