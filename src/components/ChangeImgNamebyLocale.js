@@ -35,9 +35,9 @@ export default function ChangeImgName({ img, desc, className }) {
             try {
                 // Dynamically adjust the fetch path based on the currentLocale
                 const jsonPath =
-                    currentLocale === 'ko'
-                        ? '/img/sizeOfimages.json'
-                        : `/${currentLocale}/img/sizeOfimages.json`;
+                    currentLocale === 'ko' // preview 환경에서는 whatap-docs를 추가한다.
+                        ? '/whatap-docs/img/sizeOfimages.json'
+                        : `/whatap-docs/${currentLocale}/img/sizeOfimages.json`;
 
                 const response = await fetch(jsonPath);
 
