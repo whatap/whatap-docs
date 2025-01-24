@@ -13599,8 +13599,6 @@
     "width": 1362,
     "height": 102
   },
-<<<<<<< HEAD:src/components/sizeOfimages.json
-=======
   "log-de-identification-check-en.png": {
     "width": 1200,
     "height": 455
@@ -13613,26 +13611,17 @@
     "width": 1200,
     "height": 460
   },
->>>>>>> origin/img-component-re:static/img/sizeOfimages.json
   "log-de-identification-content.png": {
     "width": 1244,
     "height": 363
   },
   "log-de-identification-en.png": {
     "width": 1200,
-<<<<<<< HEAD:src/components/sizeOfimages.json
-    "height": 669
-  },
-  "log-de-identification-ja.png": {
-    "width": 1200,
-    "height": 670
-=======
     "height": 674
   },
   "log-de-identification-ja.png": {
     "width": 1200,
     "height": 675
->>>>>>> origin/img-component-re:static/img/sizeOfimages.json
   },
   "log-de-identification-list-en.png": {
     "width": 1200,
@@ -13648,11 +13637,7 @@
   },
   "log-de-identification.png": {
     "width": 1200,
-<<<<<<< HEAD:src/components/sizeOfimages.json
-    "height": 671
-=======
     "height": 670
->>>>>>> origin/img-component-re:static/img/sizeOfimages.json
   },
   "log-display-pi-1st-parser.png": {
     "width": 1200,
@@ -16921,6 +16906,18 @@
   "new-feature-06.png": {
     "width": 1200,
     "height": 653
+  },
+  "nms-install-agent-en.png": {
+    "width": 1200,
+    "height": 957
+  },
+  "nms-install-agent-ja.png": {
+    "width": 1200,
+    "height": 957
+  },
+  "nms-install-agent.png": {
+    "width": 1200,
+    "height": 958
   },
   "node-custom-name.png": {
     "width": 400,
