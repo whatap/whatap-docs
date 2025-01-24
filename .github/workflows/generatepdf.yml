@@ -76,6 +76,8 @@ jobs:
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-redis-monitoring.pdf
         npx docusaurus-prince-pdf -u https://docs.whatap.io/cover/cover-mongodb --prince-args="--page-size='a4' --page-margin='10mm' --style=pdf-print.css" -o ./pdf/whatap-db-mongodb-monitoring.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-mongodb-monitoring.pdf
+        npx docusaurus-prince-pdf -u https://docs.whatap.io/cover/cover-db2 --prince-args="--page-size='a4' --page-margin='10mm' --style=pdf-print.css" -o ./pdf/whatap-db-db2-monitoring.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-db-db2-monitoring.pdf
         npx docusaurus-prince-pdf -u https://docs.whatap.io/cover/cover-log --prince-args="--page-size='a4' --page-margin='10mm' --style=pdf-print.css" -o ./pdf/whatap-log-monitoring.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-log-monitoring.pdf
         npx docusaurus-prince-pdf -u https://docs.whatap.io/cover/cover-url --prince-args="--page-size='a4' --page-margin='10mm' --style=pdf-print.css" -o ./pdf/whatap-url-monitoring.pdf --dest ./pdf --include-index
