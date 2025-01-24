@@ -41,8 +41,8 @@ export default function ImageChecker({ img, desc, className, multi }) {
                 // currentLocale에 따라 JSON 경로 동적으로 설정
                 const jsonPath =
                     currentLocale === 'ko'
-                        ? '/img/sizeOfimages.json'
-                        : `/${currentLocale}/img/sizeOfimages.json`;
+                        ? '/whatap-docs/img/sizeOfimages.json'
+                        : `/whatap-docs/${currentLocale}/img/sizeOfimages.json`;
 
                 const response = await fetch(jsonPath);
 

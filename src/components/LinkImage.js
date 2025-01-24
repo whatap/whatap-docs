@@ -16,8 +16,8 @@ export default function LinkImage({ img, desc, className }) {
                 // 언어에 따라 JSON 경로 동적으로 설정
                 const jsonPath =
                     currentLocale === 'ko'
-                        ? '/img/sizeOfimages.json'
-                        : `/${currentLocale}/img/sizeOfimages.json`;
+                        ? '/whatap-docs/img/sizeOfimages.json'
+                        : `/whatap-docs/${currentLocale}/img/sizeOfimages.json`;
 
                 const response = await fetch(jsonPath);
 
