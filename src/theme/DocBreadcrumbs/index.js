@@ -58,7 +58,8 @@ function BreadcrumbsItem({children, active, index, addMicrodata}) {
       })}
       className={clsx('breadcrumbs__item', {
         'breadcrumbs__item--active': active,
-      }, String(index + 1))}>
+      }, 'item-' + String(index + 1)
+      )}>
       {children}
       <meta itemProp="position" content={String(index + 1)} />
     </li>
