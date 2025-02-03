@@ -44,7 +44,7 @@ const DocsSidebar = () => {
   }
 
   return (
-    <section>
+    <section id='toc'>
       <ul>
         {sidebar.items.map((item, index) => (
           <SidebarItem key={index} item={item} />
