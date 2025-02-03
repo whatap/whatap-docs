@@ -45,6 +45,7 @@
     "@meilisearch/autocomplete-client": "*",
     "@meilisearch/instant-meilisearch": "^0.22.0",
     "@saucelabs/theme-github-codeblock": "^0.3.0",
+    "@whatap-docs/docusaurus-prince-pdf": "^1.2.4",
     "@whatap-docs/remark-sectionize": "^0.0.2",
     "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
