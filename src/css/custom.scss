@@ -3646,10 +3646,10 @@ main {
     width: 125%; /* 스케일 다운을 보정 */
   }
 
-  .breadcrumbs__item--active.item-1 { prince-bookmark-level: 1 }
-  .breadcrumbs__item--active.item-2 { prince-bookmark-level: 2 }
-  .breadcrumbs__item--active.item-3 { prince-bookmark-level: 3 }
-  .breadcrumbs__item--active.item-4 { prince-bookmark-level: 4 }
+  .breadcrumbs__item--active.item-1 { -prince-bookmark-level: 1 }
+  .breadcrumbs__item--active.item-2 { -prince-bookmark-level: 2 }
+  .breadcrumbs__item--active.item-3 { -prince-bookmark-level: 3 }
+  .breadcrumbs__item--active.item-4 { -prince-bookmark-level: 4 }
   
   html[lang='en-US'] {
     word-wrap: keep-all;
