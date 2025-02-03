@@ -74,7 +74,8 @@
     "sharp": "^0.32.6",
     "styled-components": "^6.1.13",
     "tabulator-tables": "^6.3.0",
-    "webpack": "^5.95.0"
+    "webpack": "^5.95.0",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.6.3",
