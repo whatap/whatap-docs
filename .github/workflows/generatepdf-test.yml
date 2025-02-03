@@ -1,4 +1,4 @@
-name: Generate PDF KO
+name: Generate PDF KO(test)
 
 on:
   workflow_dispatch:
