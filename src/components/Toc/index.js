@@ -12,7 +12,7 @@ const SidebarItem = ({ item }) => {
   if (item.type === 'category') {
     return (
       <li>
-        <span>{item.label}</span>
+        {item.href ? <Link to={item.href} className={styles.tocList}>{item.label}</Link> : <span>{item.label}</span>}
         {Array.isArray(item.items) && item.items.length > 0 && (
           <ul>
             {item.items.map((subItem, index) => (
