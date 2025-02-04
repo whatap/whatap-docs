@@ -45,7 +45,8 @@ files: [
     "/crw-data/crwld-service-23q3-2/**/*",
     "/crw-data/crwld-service-23q4-2/**/*",
     "/crw-data/crwld-service-23q2/**/*",
-    "/crw-data/crwld-service-23q1/**/*"
+    "/crw-data/crwld-service-23q1/**/*",
+    "/crw-data/backup/**/*"
   ],
   "escape_special_characters": 0,
  },
