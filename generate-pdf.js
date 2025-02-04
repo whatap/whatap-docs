@@ -111,6 +111,27 @@ async function requestPage(url) {
         console.log(`Writing buffer (${buffer.size} links) to ${listFile}`);
         fs.writeFileSync(listFile, [...buffer].join('\n'), 'utf-8');
 
+        if (argv.url.indexOf('cover-java') > 0) {
+          console.log('labs 페이지 추가');
+          fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/java/labs', 'utf-8');
+        } else if (argv.url.indexOf('cover-php') > 0) {
+          console.log('labs 페이지 추가');
+          fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/php/labs', 'utf-8');
+        } else if (argv.url.indexOf('cover-nodejs') > 0) {
+          console.log('labs 페이지 추가');
+          fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/nodejs/labs', 'utf-8');
+        } else if (argv.url.indexOf('cover-python') > 0) {
+          console.log('labs 페이지 추가');
+          fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/python/labs', 'utf-8');
+        } else if (argv.url.indexOf('cover-go') > 0) {
+          console.log('labs 페이지 추가');
+          fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/golang/labs', 'utf-8');
+        } else if (argv.url.indexOf('cover-server') > 0) {
+          console.log('labs 페이지 추가');
+          fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/server/labs\nhttps://docs.whatap.io/server/metrics-explorer', 'utf-8');
+        }
+        return;
+
         if (!argv['list-only']) {
           await generatePdf(listFile, pdfFile, argv.cookie);
         }
