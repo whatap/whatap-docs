@@ -182,7 +182,7 @@ const config = {
           lastmod: 'date',
           changefreq: 'always',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ['/tags/**', '/toc'],
           filename: 'sitemap.xml',
         }
       },
