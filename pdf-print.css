@@ -120,6 +120,10 @@
   h5 { -prince-bookmark-level: none }
   h6 { -prince-bookmark-level: none }
 
+  section#toc a::after {
+    content: target-counter(attr(href), page);
+  }
+
   .redocusaurus div.redoc-wrap div.api-content {
     width: 100% !important;
   }
