@@ -6,7 +6,7 @@ import Head from '@docusaurus/Head';
 
 export default function Cover() {
   const bgPath = useBaseUrl('/img/cover-background.png');
-  const cover = useBaseUrl('/aws-log/introduction');
+  const cover = useBaseUrl('/aws-log/toc');
   return (
     <Layout>
     <Head>

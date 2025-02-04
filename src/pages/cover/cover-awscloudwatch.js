@@ -6,7 +6,7 @@ import Head from '@docusaurus/Head';
 
 export default function Cover() {
   const bgPath = useBaseUrl('/img/cover-background.png');
-  const cover = useBaseUrl('/amazon-cloudwatch/install-agent');
+  const cover = useBaseUrl('/amazon-cloudwatch/toc');
   return (
     <Layout>
     <Head>
