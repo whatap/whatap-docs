@@ -130,7 +130,6 @@ async function requestPage(url) {
           console.log('labs 페이지 추가');
           fs.appendFileSync(listFile, '\nhttps://docs.whatap.io/server/labs\nhttps://docs.whatap.io/server/metrics-explorer', 'utf-8');
         }
-        return;
 
         if (!argv['list-only']) {
           await generatePdf(listFile, pdfFile, argv.cookie);
