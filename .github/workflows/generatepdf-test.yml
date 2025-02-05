@@ -40,14 +40,14 @@ jobs:
 
     - name: Build PDF
       run: |
-        node generate-pdf -u https://docs.whatap.io/cover/cover-java --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-apm-java-monitoring.pdf --dest ./pdf --include-index
-        pdfcpu annot remove -pages 1 ./pdf/whatap-apm-java-monitoring.pdf
+        node generate-pdf -u https://docs.whatap.io/cover/cover-extensions --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-extensions.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-extensions.pdf
 
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_PDF_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: v2.13.2 # 생성할 Release의 태그 이름
         release_name: "v2.13.2_KO"
@@ -58,9 +58,9 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_PDF_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-apm-java-monitoring.pdf
-        asset_name: whatap-apm-java-monitoring.pdf
+        asset_path: pdf/whatap-extensions.pdf
+        asset_name: whatap-extensions.pdf
         asset_content_type: application/pdf
