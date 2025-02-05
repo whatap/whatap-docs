@@ -581,6 +581,13 @@ export default function pages() {
                             })}
                         </FlexCard>
 
+                        <FlexCard icons="index-icon/product-nms-l.svg" product="Network Management System" type="NMS" url="nms/introduction" status="Beta">
+                            {translate({
+                                id: "index.pages.section.product.nms",
+                                message: "네트워크 장비의 성능 지표와 상태를 실시간으로 모니터링합니다."
+                            })}
+                        </FlexCard>
+
                         <FlexCard icons="index-icon/product-feature-l.svg" product="Feature Project" type="Features" url="features/introduction" status="Beta">
                             {translate({
                                 id: "index.pages.section.product.feature",

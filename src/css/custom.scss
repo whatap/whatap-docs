@@ -494,6 +494,23 @@ footer.footer.full--width {
 .menu__list-item.newfunc > a {
   display: inline-block;
 }
+.theme-doc-sidebar-item-category.beta > div > a::after {
+  display: inline;
+  content: 'Beta';
+  // position: absolute;
+  // font-style: italic;
+  // font-weight: bold;
+  border-radius: 4px;
+  padding: 0 3px;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  color: rgb(82, 114, 255);
+  font-family: "Oleo Script";
+  margin-left: 5px;
+  // margin-top: 4px;
+  font-weight: 300;
+  font-size: 80%;
+}
 // 베타 필요??
 .menu__list-item.beta > a::after {
   display: inline;
@@ -1226,6 +1243,12 @@ code.Cloud {
   padding: 2px 5px;
 }
 code.Network {
+  background-color: rgb(255, 237, 207);
+  color: rgb(255, 160, 18);
+  border: none;
+  padding: 2px 5px;
+}
+code.NMS {
   background-color: rgb(255, 237, 207);
   color: rgb(255, 160, 18);
   border: none;
