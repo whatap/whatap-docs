@@ -4696,9 +4696,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_3_8',
+                  id: 'release-notes/server-aix/server-aix-1_4_0',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_3_8',
                 'release-notes/server-aix/server-aix-1_3_7',
                 'release-notes/server-aix/server-aix-1_3_6',
                 'release-notes/server-aix/server-aix-1_3_5',
@@ -4719,9 +4720,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_3_8',
+                  id: 'release-notes/server-solaris/server-solaris-1_4_0',
                   className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_3_8',
                 'release-notes/server-solaris/server-solaris-1_3_7',
                 'release-notes/server-solaris/server-solaris-1_3_6',
                 'release-notes/server-solaris/server-solaris-1_3_5',
@@ -4733,7 +4735,7 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-hpux/index'
@@ -4741,9 +4743,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/server-hpux-1_3_7',
-                  // className: 'new'
+                  id: 'release-notes/server-hpux/server-hpux-1_4_0',
+                  className: 'new'
                 },
+                'release-notes/server-hpux/server-hpux-1_3_7',
                 'release-notes/server-hpux/server-hpux-1_3_6',
                 'release-notes/server-hpux/server-hpux-1_3_4',
               ],
