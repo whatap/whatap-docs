@@ -25,6 +25,9 @@ jobs:
       with:
         node-version: 20
 
+    - name: Install dependencies
+      run: yarn install
+
     - name: Install Prince
       run: |
         curl https://www.princexml.com/download/prince-${{ env.PRINCE_VER }}-macos.zip -O
