@@ -1,0 +1,66 @@
+name: Generate PDF KO (test)
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Deployment?"
+        default: "WhaTap"
+
+permissions:
+  contents: write
+
+env:
+  PRINCE_VER: 15.3
+
+jobs:
+  build-n-deploy:
+    name: Generate PDF
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Install Prince
+      run: |
+        curl https://www.princexml.com/download/prince-${{ env.PRINCE_VER }}-macos.zip -O
+        tar zxf prince-${{ env.PRINCE_VER }}-macos.zip
+        cd prince-${{ env.PRINCE_VER }}-macos
+        yes "" | sudo ./install.sh
+
+    - name: Install pdfcpu
+      run: brew install pdfcpu
+
+    - name: Build PDF
+      run: |
+        node generate-pdf -u https://docs.whatap.io/cover/cover-java --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-apm-java-monitoring.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-apm-java-monitoring.pdf
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        tag_name: v2.13.2 # 생성할 Release의 태그 이름
+        release_name: "v2.13.2_KO"
+        body: "WhaTap Docs v2.13.2 기준으로 생성된 PDF 파일입니다."
+        draft: false
+        prerelease: false
+    
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-apm-java-monitoring.pdf
+        asset_name: whatap-apm-java-monitoring.pdf
+        asset_content_type: application/pdf
