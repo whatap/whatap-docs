@@ -6783,7 +6783,8 @@ const sidebars = {
             'nms/interface-status',
           ]
         },
-        'nms/mib-browser',
+        // 현재 문서 없음 0205
+        // 'nms/mib-browser',
         {
           type: 'category',
           label: '경고 알림',
