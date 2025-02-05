@@ -117,7 +117,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: v2.13.0@ja # 생성할 Release의 태그 이름
         release_name: "v2.13.0_JA"
@@ -128,7 +128,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-apm-java-monitoring-ja.pdf
@@ -138,7 +138,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-apm-php-monitoring-ja.pdf
@@ -148,7 +148,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-apm-nodejs-monitoring-ja.pdf
@@ -158,7 +158,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-apm-python-monitoring-ja.pdf
@@ -168,7 +168,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-apm-dotnet-monitoring-ja.pdf
@@ -178,7 +178,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-apm-go-monitoring-ja.pdf
@@ -188,7 +188,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-server-monitoring-ja.pdf
@@ -198,7 +198,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-kubernetes-monitoring-ja.pdf
@@ -208,7 +208,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-postgresql-monitoring-ja.pdf
@@ -218,7 +218,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-oracle-v2-monitoring-ja.pdf
@@ -228,7 +228,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-oracle-pro-monitoring-ja.pdf
@@ -238,7 +238,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-mysql-monitoring-ja.pdf
@@ -248,7 +248,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-mssql-monitoring-ja.pdf
@@ -258,7 +258,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-tibero-monitoring-ja.pdf
@@ -268,7 +268,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-cubrid-monitoring-ja.pdf
@@ -278,7 +278,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-altibase-monitoring-ja.pdf
@@ -288,7 +288,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-redis-monitoring-ja.pdf
@@ -298,7 +298,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-mongodb-monitoring-ja.pdf
@@ -308,7 +308,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-log-monitoring-ja.pdf
@@ -318,7 +318,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-url-monitoring-ja.pdf
@@ -328,7 +328,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-manage-ja.pdf
@@ -338,7 +338,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-reference-ja.pdf
@@ -348,7 +348,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-extensions-ja.pdf
@@ -358,7 +358,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-amazon-cloudwatch-ja.pdf
@@ -368,7 +368,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-amazon-ecs-ja.pdf
@@ -378,7 +378,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-azure-ja.pdf
@@ -388,7 +388,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-ncloud-ja.pdf
@@ -398,7 +398,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-oracle-cloud-ja.pdf
@@ -408,7 +408,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-aws-log-monitoring-ja.pdf
@@ -418,7 +418,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-browser-monitoring-ja.pdf
@@ -428,7 +428,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-network-performance-monitoring-ja.pdf
@@ -438,7 +438,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-open-api-ja.pdf
@@ -448,7 +448,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-best-practice-guides-about-apm-dashboard-ja.pdf
@@ -458,7 +458,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-best-practice-guides-about-apm-hitmap-class-ja.pdf
@@ -468,7 +468,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-best-practice-guides-about-server-dashboard-ja.pdf
@@ -478,7 +478,7 @@ jobs:
     - name: Upload to Release
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-best-practice-guides-about-apm-dbc-ja.pdf
