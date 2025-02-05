@@ -65,302 +65,302 @@ jobs:
         asset_name: whatap-apm-java-monitoring.pdf
         asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-apm-php-monitoring.pdf
-        asset_name: whatap-apm-php-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-apm-php-monitoring.pdf
+    #     asset_name: whatap-apm-php-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-apm-nodejs-monitoring.pdf
-        asset_name: whatap-apm-nodejs-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-apm-nodejs-monitoring.pdf
+    #     asset_name: whatap-apm-nodejs-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-apm-python-monitoring.pdf
-        asset_name: whatap-apm-python-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-apm-python-monitoring.pdf
+    #     asset_name: whatap-apm-python-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-apm-dotnet-monitoring.pdf
-        asset_name: whatap-apm-dotnet-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-apm-dotnet-monitoring.pdf
+    #     asset_name: whatap-apm-dotnet-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-apm-go-monitoring.pdf
-        asset_name: whatap-apm-go-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-apm-go-monitoring.pdf
+    #     asset_name: whatap-apm-go-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-server-monitoring.pdf
-        asset_name: whatap-server-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-server-monitoring.pdf
+    #     asset_name: whatap-server-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-kubernetes-monitoring.pdf
-        asset_name: whatap-kubernetes-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-kubernetes-monitoring.pdf
+    #     asset_name: whatap-kubernetes-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-postgresql-monitoring.pdf
-        asset_name: whatap-db-postgresql-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-postgresql-monitoring.pdf
+    #     asset_name: whatap-db-postgresql-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-oracle-v2-monitoring.pdf
-        asset_name: whatap-db-oracle-v2-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-oracle-v2-monitoring.pdf
+    #     asset_name: whatap-db-oracle-v2-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-oracle-pro-monitoring.pdf
-        asset_name: whatap-db-oracle-pro-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-oracle-pro-monitoring.pdf
+    #     asset_name: whatap-db-oracle-pro-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-mysql-monitoring.pdf
-        asset_name: whatap-db-mysql-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-mysql-monitoring.pdf
+    #     asset_name: whatap-db-mysql-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-mssql-monitoring.pdf
-        asset_name: whatap-db-mssql-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-mssql-monitoring.pdf
+    #     asset_name: whatap-db-mssql-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-tibero-monitoring.pdf
-        asset_name: whatap-db-tibero-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-tibero-monitoring.pdf
+    #     asset_name: whatap-db-tibero-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-cubrid-monitoring.pdf
-        asset_name: whatap-db-cubrid-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-cubrid-monitoring.pdf
+    #     asset_name: whatap-db-cubrid-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-altibase-monitoring.pdf
-        asset_name: whatap-db-altibase-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-altibase-monitoring.pdf
+    #     asset_name: whatap-db-altibase-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-redis-monitoring.pdf
-        asset_name: whatap-db-redis-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-redis-monitoring.pdf
+    #     asset_name: whatap-db-redis-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-db-mongodb-monitoring.pdf
-        asset_name: whatap-db-mongodb-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-db-mongodb-monitoring.pdf
+    #     asset_name: whatap-db-mongodb-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-log-monitoring.pdf
-        asset_name: whatap-log-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-log-monitoring.pdf
+    #     asset_name: whatap-log-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-url-monitoring.pdf
-        asset_name: whatap-url-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-url-monitoring.pdf
+    #     asset_name: whatap-url-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-manage.pdf
-        asset_name: whatap-manage.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-manage.pdf
+    #     asset_name: whatap-manage.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-reference.pdf
-        asset_name: whatap-reference.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-reference.pdf
+    #     asset_name: whatap-reference.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-extensions.pdf
-        asset_name: whatap-extensions.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-extensions.pdf
+    #     asset_name: whatap-extensions.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-amazon-cloudwatch.pdf
-        asset_name: whatap-amazon-cloudwatch.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-amazon-cloudwatch.pdf
+    #     asset_name: whatap-amazon-cloudwatch.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-amazon-ecs.pdf
-        asset_name: whatap-amazon-ecs.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-amazon-ecs.pdf
+    #     asset_name: whatap-amazon-ecs.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-azure.pdf
-        asset_name: whatap-azure.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-azure.pdf
+    #     asset_name: whatap-azure.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-ncloud.pdf
-        asset_name: whatap-ncloud.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-ncloud.pdf
+    #     asset_name: whatap-ncloud.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-oracle-cloud.pdf
-        asset_name: whatap-oracle-cloud.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-oracle-cloud.pdf
+    #     asset_name: whatap-oracle-cloud.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-aws-log-monitoring.pdf
-        asset_name: whatap-aws-log-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-aws-log-monitoring.pdf
+    #     asset_name: whatap-aws-log-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-browser-monitoring.pdf
-        asset_name: whatap-browser-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-browser-monitoring.pdf
+    #     asset_name: whatap-browser-monitoring.pdf
+    #     asset_content_type: application/pdf
 
-    - name: Upload to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdf/whatap-network-performance-monitoring.pdf
-        asset_name: whatap-network-performance-monitoring.pdf
-        asset_content_type: application/pdf
+    # - name: Upload to Release
+    #   uses: actions/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.WHATAP_DOCS_TOKEN }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: pdf/whatap-network-performance-monitoring.pdf
+    #     asset_name: whatap-network-performance-monitoring.pdf
+    #     asset_content_type: application/pdf
