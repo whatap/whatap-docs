@@ -7,7 +7,7 @@
     "className": "iflink",
     "items": [
       { "link": "/blog/index" , "className": "iflang" },
-      { "link": "/blog/overview", "className": "news" }
+      { "link": "/blog/overview" }
     ]
   },
   {
