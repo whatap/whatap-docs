@@ -2900,7 +2900,7 @@ paths:
 
             -H "x-whatap-pcode: {{projectCode}}" \
 
-            "https://api.whatap.io/open/json/stat/sm_stat?{stime}&{etime}&{filter}&{oid}"
+            "https://api.whatap.io/open/json/stat/sm_stat?stime={stime}&etime={etime}&{filter}&{oid}"
   /open/api/json/db/database_params?oid={oid}&baseTime={baseTime}&comparisonTime={comparisonTime}:
     get:
       summary: 파라미터 변경 사항 조회
