@@ -4461,7 +4461,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -4470,7 +4470,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_50',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_49',
                 'release-notes/java/java-2_2_48',
@@ -4574,7 +4574,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -4583,7 +4583,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/python/python-1_7_4',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/python/python-1_7_3',
                 'release-notes/python/python-1_7_2',
@@ -4602,7 +4602,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -4611,7 +4611,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_3_9',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_3_8',
                 'release-notes/dotnet/dotnet-2_3_7',
