@@ -200,3 +200,15 @@ The following agent options trace and record various data related to HTTP reques
   The URLs registered through this option are excluded from the <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />, or <Cmdname sid="TTL06527" className="uitext" /> window for collection.
 
   :::
+
+- **disabled_section_names** <span class='type'>String</span>
+
+  Set the section names to exclude from monitoring. To set multiple values, use comma (,) as a delimiter. Restart the IIS service after applying this option.
+
+  :::note
+
+  The section names that can be selected are as follows:
+
+  AspNetCoreMvc2, AspNetMvc, AspNetWebApi2, AspNetWebForm, DbCommand, IDbCommand, SqlCommand, OracleCommand, WebRequest, HttpMessageHandler, HttpClient, WebClient, ServiceStackRedis, StackExchangeRedis, StackExchangeRedis2, LINQ
+
+  :::

@@ -20,16 +20,32 @@ Select the query time and target on the screen. Select the <Cmdname sid="time" c
 
   ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
 
+{/* 쿼리 자세히 보기 */}
+import QueryDetails from "../common-items/_db-query-details.mdx";
+
+<InDoc product="oracle">
+
 :::note
 
 For more information on how to use the <Cmdname sid="time" className="uitext" /> option, see [the following](usage-ui#timeselector).
 
 :::
 
-{/* 쿼리 자세히 보기 */}
-import QueryDetails from "../common-items/_db-query-details.mdx";
-
 <QueryDetails level={3} />
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+:::note
+
+- For more information on how to use the <Cmdname sid="time" className="uitext" /> option, see [the following](usage-ui#timeselector).
+
+- If the ***query_text*** column is selected from the table list, the <Cmdname sid="TTL06224" className="uitext" /> window appears. For more information about the <Cmdname sid="TTL06224" className="uitext" /> window, see [the following](usage-ui#query-details).
+
+:::
+
+</InDoc>
 
 ### Filtering the searched results
 

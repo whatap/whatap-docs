@@ -1,0 +1,29 @@
+---
+id: dotnet-2_3_8
+title: .NET Agent v2.3.8
+toc_max_heading_level: 2
+pagination_next: release-notes/dotnet/dotnet-2_3_7
+displayed_sidebar: releaseSidebar
+---
+
+January 15, 2025
+
+- <Status priority='1'>New</Status> Supported **LIthe NQ to SQL** (`System.Data.Linq`) monitoring.
+
+- <Status priority='1'>New</Status> Added the agent option to set the section name to exclude from monitoring.
+
+  ```ini title="whatap.conf"
+  disabled_section_names=AspNetCoreMvc2,AspNetMvc,AspNetWebApi2
+  ```
+
+  - To set multiple values, use comma (,) as the delimiter.
+
+  - The section names that can be selected are as follows:
+
+    > AspNetCoreMvc2, AspNetMvc, AspNetWebApi2, AspNetWebForm, DbCommand, IDbCommand, SqlCommand, OracleCommand, WebRequest, HttpMessageHandler, HttpClient, WebClient, ServiceStackRedis, StackExchangeRedis, StackExchangeRedis2, LINQ
+
+  - After applying the option(s), restart the IIS service.
+
+import DownloadAgent from "./_download-dotnet-agent.mdx";
+
+<DownloadAgent />

@@ -2,7 +2,7 @@
 
 The types of widgets that can be placed on the dashboard are as follows.
 
-<Xclude product="redis">
+<Xclude product="redis,db2">
 
 ### XOS widgets
 
@@ -77,7 +77,7 @@ For information on how to configure the agent for inquiry of AWS CloudWatch metr
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,mongodb,mssql">
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,mongodb,mssql,db2">
 
 ### Database widgets
 
@@ -85,7 +85,19 @@ The provided widgets allow you to check the status of various system resources, 
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,cubrid,mssql">
+<InDoc product="db2">
+
+- ***CPU*** (`cpu_usage_total`)
+
+  You can see the CPU utilization (%) for each instance. This value is calculated using the CPU metric in the `SYSIBMADM.ENV_SYS_RESOURCE` management view's metadata.
+
+- ***Memory*** (`mem`)
+
+  You can see the memory utilization (%) for each instance. This value is calculated using the memory metric in the `SYSIBMADM.ENV_SYS_RESOURCE` management view's metadata.
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,cubrid,mssql,db2">
 
 - ***Active Sessions***
 
@@ -536,5 +548,33 @@ The provided widgets allow you to check the status of various system resources, 
 A global lock is a mechanism used by MongoDB to maintain data consistency. It is applied to both read and write tasks, and acquiring a global lock is required for clients to perform the tasks.
 
 :::
+
+</InDoc>
+
+<InDoc product="db2">
+
+- ***Index Physical Reads*** (`index_physical_reads`)
+
+  It is the number of index pages read from disk in the database. This important metric evaluates the disk I/O performance. A higher value indicates increase in disk operation. It is used to identify disk I/O bottlenecks or analyze the index efficiency.
+
+- ***Logical I/O*** (`data_logical_reads`)
+
+  It is the total number of pages read from the buffer pool in the database. It is the metric of the caching operations in memory of the system. A high value may indicate that the buffer pool is operating efficiently. By comparing logical reads and physical reads, the efficiency of the buffer pool can be analyzed.
+
+- ***Physical I/O*** (`data_physical_reads`)
+
+  It is the total number of pages read from disk in the database. This metric displays physical I/O operations and may increase if the buffer pool is unable to cache data. You can identify disk I/O bottlenecks and tune them to reduce physical disk accesses.
+
+- ***Data Hit Ratio(%)*** (`data_hit_ratio`)
+
+  It is the ratio of logical reads to physical reads, indicating the proportion of data cached in the buffer pool. A high value indicates that most data read operations are being processed in memory. It is used when analyzing the buffer pool size and policy for optimization of the database performance.
+
+- ***Index Hit Ratio(%)*** (`index_hit_ratio`)
+
+  It is the ratio of logical index reads to physical index reads. A high value indicates that the index is being processed efficiently in memory.
+
+- ***Total Hit Ratio(%)*** (`total_hit_ratio`)
+
+  It is the ratio of logical reads to physical reads for all data and index reads. It is a key metric for evaluating the caching efficiency of the entire database. It can be used to analyze the overall caching performance of the database operating environment and to prioritize tuning.
 
 </InDoc>

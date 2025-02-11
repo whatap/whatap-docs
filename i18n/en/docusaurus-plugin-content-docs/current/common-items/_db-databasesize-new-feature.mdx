@@ -6,7 +6,11 @@ Database size can affect the performance. You can prepare to troubleshoot perfor
 
 The trend in database size helps you understand usage patterns and data growth. You can predict future capacity requirements and take possible actions. Monitoring these changes helps you optimize the resources and costs.
 
+## Before use
+
 <InDoc product='mysql'>
+
+### Assigning the query role
 
 MySQL database size can be seen in `information_schema.tables`, and the monitoring account must have the table search role for aggregation. Role settings are required as follows.
 
@@ -16,32 +20,96 @@ grant select on {DB_NAME}.* to whatap;
 
 :::note
 
-- The sizes for `information_schema` and `performance_schema` are not collected. 
+- If the database is `information_schema`, `performance_schema`, `sys`, or `mysql`, the database size is not collected.
 
 - The collection cycle is collected once every hour.
 
 :::
+
+### Setting the agent options
+
+You can set the following agent options to collect the database sizes.
+
+- **tables** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the table sizes. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, you can see the table size by selecting the database.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time when data is to be collected to store the table sizes. The default value is `5` and collection starts at 5 AM.
+
+- **tables_min_row** <span class='type'>Int</span>
+
+  Default `10000`
+
+  When collecting the table information, table data with the number of rows smaller than the set value is not collected.
+
+- **table_filesize** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  When collecting the table size, the `file_size` of `innodb_tablespaces` is also collected.
 
 </InDoc>
 
 <InDoc product='postgresql'>
 
-The total database size is queried with the `pg_database_size` function, and the monitoring account must have the connect or `pg_read_all_stats` role. `template database` is excluded from collection.
+### Assigning the query role
+
+The total database size is queried with the `pg_database_size` function, and the monitoring account must have the connect or `pg_read_all_stats` role.
 
 Individual table sizes can be queried with the `pg_relation_size`, `pg_indexes_size`, and `pg_total_relation_size` functions, and the query role for the corresponding schema is required.
 
 ```sql
-grant pg_read_all_stats to whatap;
 grant usage on schema {schema_name} to whatap;
+grant select on all tables in schema {schema_name} to whatap;
 ```
 
 :::note
 
-- The sizes for the `pg_catalog`, `sys`, `information_schema`, and `pg_toast` schemata are not collected.
+- If the `skip_schema` and `skip_db` options are set in the agent, the database size is not collected.
 
 - The collection cycle is collected once every hour.
 
 :::
+
+### Setting the agent options
+
+You can set the following agent options to collect the database sizes.
+
+- **tables** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the table sizes. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, you can see the table size by selecting the database.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time when data is to be collected to store the table sizes. The default value is `5` and collection starts at 5 AM.
+
+- **tables_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  When collecting the table information, table data of the size smaller than the set value is not collected. The minimum unit for collecting table data is 10 MB based on `pg_total_relation_size`.
+
+- **skip_schema** <span class='type'>String</span>
+
+  Default: pg_catalog, sys, information_schema, pg_toast
+
+  It does not collect tables for the schema set with the option value.
+
+- **skip_db** <span class='type'>String</span>
+
+  Default: edb, postgres
+
+  It does not collect tables for the database set with the option value.
 
 </InDoc>
 

@@ -112,15 +112,59 @@ It provides a table for all resources loaded on the web page. You can check deta
 
 <ImgLang img="browser-resourceload-stat-group-list.png" desc="Resource group list" />
 
+- When you select ![Detail icon](/img/ico-detail-view.svg) <Cmdname sid="detail" className="uitext" /> on the utmost left of the list, the <Cmdname sid="TTL08959" className="uitext" /> screen appears. You can check detailed statistical information of the selected resource group through the <Cmdname sid="TTL08959" className="uitext" /> screen. For more information, see [the following](#TTL08663).
+
 - If you click a header column in the table, the list is sorted based on the column. 
 
 - When you hover your mouse over a header column, you can see a tooltip explaining the column.
+
+  <ImgLang img="browser-statistics-resource-header.png" desc="Tooltip" />
 
 - ![Column Icon](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" />: You can hide the table header columns or add desired items. You can also change the column order. For more information, see [the following](#setcolumn).
 
 - ![Pop-up icon](/img/ic-popup.svg): It displays the resource group list in full screen.
 
 - ![Left arrow icon](/img/left-arrow.svg) / ![Right arrow icon](/img/right-arrow.svg): When there are many resource lists, you can select a button to move between pages.
+
+### <Cmdname sid="TTL08959" /> {#TTL08959}
+
+You can check detailed statistical information of the selected resource group.
+
+- <Cmdname sid="TTL08963" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-timeline.png" />
+
+  The overall load performance information is provided for the selected resource group. It displays the resource load times and the average times for each load step. You can see the overall performance of your browser applications through this. For more information, see [the following](dashboard#pageloadtimeline).
+
+- <Cmdname sid="TTL08961" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-trend.png" />
+
+  You can check the page load time over time for the selected resource group. You can select various performance metrics from the selection box. For more information about the performance metrics, see [the following](#columninfo).
+
+- <Cmdname sid="TTL08962" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-loadsize-trend.png" />
+
+  You can see the total size of page resources loaded for each time zone of the selected resource group. You can analyze the network load and page optimization status through the page load size trend.
+
+- <Cmdname sid="TTL08960" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-loadcount-trend.png" />
+
+  You can see the numbers of page resources loaded for each time zone of the selected resource group. If you see a sudden or abnormal increase in the number of resources, you can check if a specific page made excessive resource requests.
+
+- <Cmdname sid="ITM08284" className="uitext" /> / <Cmdname sid="ITM08876" className="uitext" /> / <Cmdname sid="ITM08285" className="uitext" /> / <Cmdname sid="download_time" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-time-graph.png" />
+
+  You can see the average time for DNS query in each time zone, the average time to establish connection with the server, the average time to receive the first byte, and the average time to download resources.
+
+- <Cmdname sid="TTL08862" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-resourcegroup.png" />
+
+  It is the list of tables that provide various performance metrics for individual resources included in the selected resource group.
 
 ## Filtering the searched results
 

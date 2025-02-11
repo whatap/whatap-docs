@@ -6,7 +6,7 @@ The <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-main-k8s.png" desc="Metrics Chart" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1"><ImgLang img="metrics-chart-new-main-db.png" desc="Metrics Chart" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-main-db.png" desc="Metrics Chart" /></InDoc>
 
 - You can visually check various metrics via time series charts, and analyze multiple metrics upon failure at a time.
 
@@ -96,7 +96,7 @@ Select a target agent to monitor. Then the list that can be selected on the <Cmd
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-select-metrics.png" desc="Select metrics" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1"><ImgLang img="metrics-chart-new-db-select-metrics.png" desc="Select metrics" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-db-select-metrics.png" desc="Select Metric" /></InDoc>
 
 A chart widget for the selected metric is placed on the dashboard on the right. You can add chart widgets by selecting additional metrics. To enlarge the chart area, select ![Close icon](/img/ico-close.svg) on the right of the <Cmdname sid="time" className="uitext" /> option. The <Cmdname sid="target" className="uitext" /> and <Cmdname sid="metric" className="uitext" /> panels disappear, leaving only the chart area visible on the screen.
 
@@ -116,7 +116,7 @@ A chart widget for the selected metric is placed on the dashboard on the right. 
 
 </InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1">
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2">
 
 - You can also search by metric category and field name. For more information about the categories and fields, see [the following](metrics-data-list).
 
@@ -138,7 +138,7 @@ A chart widget for the selected metric is placed on the dashboard on the right. 
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-select-interval.png" desc="interval" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1"><ImgLang img="metrics-chart-new-db-select-interval.png" desc="Interval" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-db-select-interval.png" desc="Interval" /></InDoc>
 
 </Column>
 
@@ -260,27 +260,65 @@ You can check the monitoring targets displayed on the chart through the legend a
 
 <ImgLang img="metrics-chart-new-legend-on-off.png" desc="Show widget legend" />
 
+- You can select or unselect monitoring targets by selecting <Cmdname sid="select_all" className="uitext" />/<Cmdname sid="deselect_all" className="uitext" />.
+
 - In the legend list, you can sort monitored objects by name, maximum value, or average value.
 
   <ImgLang img="metrics-chart-new-legend-order.png" desc="Show widget legend" />
 
-- Hovering over each item in the legend list can highlight the graph for the monitored object. Alternatively, you can filter by selecting a target from the legend list.
+- If you hover the mouse over each item in the legend list, the highlighted graph for the monitoring targets appears and a tooltip indicating the specific time at which the maximum value is recorded. Alternatively, you can filter by selecting a target from the legend list.
 
   ![Widget legend display](/img/metrics-chart-new-legend-filter.gif)
+
+### Changing the legend color
+
+<Columns>
+<Column className="text--left width--50">
+
+<ImgLang img="metrics-chart-new-change-color.png" desc="Color change" />
+
+</Column>
+<Column className="text--left">
+
+You can change the graph color corresponding to a monitoring target. In the legend list, select the square box on the left of the target to change its color. Select a desired color and then click <Cmdname sid="apply" className="uitext" />.
+
+:::note
+
+The set colors are not saved via the preset feature. This feature is to be provided in a future update.
+
+:::
+
+</Column>
+</Columns>
 
 ### Using additional options
 
 If you select ![More icon](/img/ico-more.svg) on the upper right of the chart widget, you can select the following additional options.
 
-- <Cmdname sid="sms_summary_download_csv" className="uitext" />: You can download the data searched from the chart as a CSV file.
+<Columns>
+<Column className="text--left width--50">
 
-- <Cmdname sid="BTN07750" className="uitext" />: You can download the chart as an image file.
+<ImgLang img="metrics-chart-new-more-settings.png" desc="Widget Settings" />
+
+</Column>
+<Column className="text--left">
 
 - <Cmdname sid="setting" className="uitext" />
 
   - <Cmdname sid="CNT08116" className="uitext" />: The size of the Y-axis can be automatically adjusted within the searched range.
 
   - <Cmdname sid="CNT08117" className="uitext" />: You can display the maximum value in the graph area of ​​the chart.
+
+- <Cmdname sid="BTN07750" className="uitext" />: You can download the chart as an image file.
+
+- <Cmdname sid="BTN09044" className="uitext" />: You can copy the chart to the clipboard as an image format.
+
+- <Cmdname sid="sms_summary_download_csv" className="uitext" />: You can download the data searched from the chart as a CSV file.
+
+- <Cmdname sid="BTN09010" className="uitext" />: You can copy the data viewed in the chart to the clipboard in a CSV format.
+
+</Column>
+</Columns>
 
 ## Setting presets {#setpreset}
 
@@ -362,7 +400,7 @@ It provides the feature to apply detailed options to the chart widgets on the sc
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-chart-batch-change.png" desc="Batch Change" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1"><ImgLang img="metrics-chart-new-db-chart-batch-change.png" desc="Batch Change" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-db-chart-batch-change.png" desc="Batch Change" /></InDoc>
 
 - <Cmdname sid="time" className="uitext" />: You can set the data query range for the chart.
 

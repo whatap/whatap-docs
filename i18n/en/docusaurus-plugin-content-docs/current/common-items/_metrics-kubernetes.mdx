@@ -96,7 +96,7 @@ The `container` category collects all custom labels set on the container's pods 
 | ^                       | ^               | Container Memory Limit Size                                                                                                                                    |
 | mem_maxusage            | Byte            | MemMaxUsage                                                                                                                                                    |
 | ^                       | ^               | Container Memory Max Usage (byte)                                                                                                                              |
-| ^                       | ^               | Recorded Value for Container Memory Maximum Usage                                                                                                              |
+| ^                       | ^               | Recorded maximum container memory usage <br/> (See [the guide below](#scrollTo-memmaxusage) for details.)                                                      |
 | mem_percent             | Percent         | MemWsByLimit                                                                                                                                                   |
 | ^                       | ^               | Container Memory Working Set by Limit (%)                                                                                                                      |
 | ^                       | ^               | Working Set Usage based on Container Memory Limit<br/>= mem_usage/mem_limit \* 100                                                                             |
@@ -170,6 +170,12 @@ The `container` category collects all custom labels set on the container's pods 
 | status                  | String          | ConStatus                                                                                                                                                      |
 | ^                       | ^               | Container Current Status                                                                                                                                       |
 | ^                       | ^               | Container State Information<br/>① running: Displays the uptime information<br/>② waiting/terminated: Displays the reason of the state                          |
+
+:::note 
+
+`mem_maxusage` indicates the maximum memory usage recorded while the container was running. However, if the Linux kernel version is lower than 5.19, the raw data for this metric may not be supported. In this case, the value may be displayed as 0. Update the Linux kernel version to 5.19 or later to collect this metric. <ScrollToLink anchor='scrollTo-memmaxusage' />
+
+:::
 
 ## Kubernetes node (`kube_node`) metric {#kube_node}
 

@@ -1,3 +1,27 @@
+<section class="remark-sectionize-h3">
+
+<Title level={props.level} hashid="create-db-user">DB user file creation</Title>
+
+<InDoc product="mongodb">
+
+:::tip
+
+If you do not use the user and password (you can access MongoDB without authentication), you can skip the **_Create database user file_** step.
+
+:::
+
+</InDoc>
+
+<InDoc product="redis">
+
+:::tip
+
+If you do not use the user and password (you can access Redis without authentication), you can skip the **_DB user file creation_** step.
+
+:::
+
+</InDoc>
+
 Generate an encrypted UID for database connection. Enter the username and password and then run the shell script (or batch file). 
 
 <InDoc product='redis'>
@@ -7,3 +31,5 @@ Generate an encrypted UID for database connection. Enter the username and passwo
 - **Redis 6 or later**: The <em>uid.sh</em> shell script file (or <em>uid.bat</em> batch file) can be found in the path where the WhaTap database agent has been installed. If there is only a password without username, set <code>DB_USER</code> as <code>default</code>. e.g. `./uid.sh default whatap\!pwd`
 
 </InDoc>
+
+</section>

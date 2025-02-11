@@ -20,6 +20,20 @@ If you move to another menu while updating an agent, you cannot check its progre
 
 :::
 
+:::note
+
+The agents installed in the Windows environment do not support the automatic update. Manually reinstall the latest agent or place the latest _whatap.agent.dbx-\*.jar_ file in the previous agent folder and register the service again.
+
+```bash
+# 1. Delete Windows service
+install_WindowsService.bat delete WhatapDBXAgent # existing service name
+
+# 2. Create Windows service
+install_WindowsService.bat create WhatapDBXAgent # existing service name
+```
+
+:::
+
 ### In case of update failure
 
 #### In case of no agent restart

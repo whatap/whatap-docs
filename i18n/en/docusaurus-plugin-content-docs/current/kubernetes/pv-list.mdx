@@ -1,0 +1,197 @@
+---
+id: pv-list
+title: PV/PVC List
+description: The following guides the PV/PVC list menu.
+keywords:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Cluster
+  - Persistent Volume List
+  - Persistent Volume Claim List
+toc_max_heading_level: 2
+---
+
+:::note 
+
+**Requirements**
+
+- The WhaTap Kubernetes agent 1.8.1 or later is required. 
+
+- If it is a Kubernetes cluster project (<code class='my'>CP</code>), you can view the corresponding menu.
+
+:::
+
+{/* 선언적 요청서 / 선언적 요청 객체 */}
+
+**Persistent Volume** (PV) indicates a physical storage resource available in the Kubernetes cluster. **Persistent Volume Claim** (PVC) is an object that declaratively defines the storage requirements of the Pod. PVC is associated with a PV and provides an access path for the Pod to read and write data.
+
+{/* Pod가 필요한 스토리지를 요청하는 선언적 요청서
+Pod의 스토리지 요구사항을 선언적으로 정의하는 객체 */}
+
+WhaTap Kubernetes can monitor the storage status of the cluster through the ***Persistent Volume List*** and ***Persistent Volume Claim List*** menus. This menu intuitively provides the usage status and connection relationships of storage resources, and allows you to check information such as storage capacity, access mode, and event status at a glance.
+
+## Persistent Volume List
+
+Home &gt; Select Project &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; ***Persistent Volume List***
+
+In ***Persistent Volume List***, you can view the PVs that exist in the cluster. The list is displayed based on the PV information collected over the last minute on the query time. You can intuitively check the connection with PVC and the binding of PV. You can also easily check the PVC information details associated with the PV. 
+
+<ImgLang img="k8s-pv-list.png" desc="Persistent Volume List" />
+
+- If the ![Download icon](/img/ico-download.svg) ***CSV*** button is clicked, you can download the *CSV* file.
+
+- If the ***>*** button is clicked on the right of the ***PvcVolumeName*** column, the ***Persistent Volume Claim List*** menu appears.
+
+{/* 
+
+또한 PvVolumeName 옆 '>' 버튼을 통해 해당 PV와 연결된 PVC 상세 정보로 이동할 수 있습니다. 
+또한 ***PvVolumeName*** 컬럼 오른쪽 버튼 클릭 시 해당 PV와 연결된 PVC 상세 정보를 간편하게 확인할 수 있습니다. 
+
+*/}
+
+{/* 
+
+### 컬럼 
+
+| Column name              | Description                                                                                                      |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| ***PvUid***              | Unique ID of the persistent volume.                                                                              |
+| ***PvName***             | Name of the persistent volume.                                                                                   |
+| ***PvPhase***            | It displays the current status of the persistent volume.                                                         |
+| ***PvType***             | It is a storage type of persistent volume that supports various storage backends such as NFS, Ceph, and AWS EBS. |
+| ***Path***               | It displays the mounting path of the persistent volume.                                                          |
+| ***PvReclaimPolicy***    | It indicates the reclamation policy of the persistent volume and can be set to Retain, Recycle, or Delete.       |
+| ***PvStorageClassName*** | It indicates the name of the storage class assigned to the PV.                                                   |
+| ***PvVolumeMode***       | It indicates the volume mode of the persistent volume, supporting Filesystem or Block.                           |
+| ***PvCapacity***         | It indicates the total storage capacity of the persistent volume.                                                |
+| ***PvMessage***          | It provides Kubernetes event messages related to PV.                                                             |
+| ***PvReason***           | It describes the cause of a PV event.                                                                            |
+
+#### ***PvPhase***
+
+***PvPhase*** displays the status of the persistent volume.
+
+| Phase           | Description                                                      |      |
+| --------------- | ---------------------------------------------------------------- | ---- |
+| ***Available*** | The PV is not yet bound to any PVC.                              |      |
+| ***Bound***     | The PV is bound to a specific PVC and is in use.                 |      |
+| ***Released***  | The PVC has been deleted, but the PV has not yet been reclaimed. |      |
+| ***Failed***    | PV is unusable because it failed to auto-reclaim.                |  |
+
+*/}
+
+## Persistent Volume Claim List
+
+Home &gt; Select Project &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; ***Persistent Volume Claim List***
+
+In ***Persistent Volume Claim List***, you can view the PVCs that exist in the cluster. The list is displayed based on the PVC information collected over the last minute on the query time. You can intuitively check the connection with PV and the binding of PVC. You can also easily check the PV information details associated with the PVC. 
+
+<ImgLang img="k8s-pvc-list.png" desc="Persistent Volume Claim List" />
+
+- If the ![Download icon](/img/ico-download.svg) ***CSV*** button is clicked, you can download the *CSV* file.
+
+- Click the ***>*** button on the right of the ***PvName*** column. Then the ***Persistent Volume List*** menu appears.
+
+{/* 
+
+### 컬럼 
+
+| Column name                   | Description                                                                                     |
+| ----------------------------- | ----------------------------------------------------------------------------------------------- |
+| ***PvcUid***                  | Unique ID of the persistent volume claim.                                                       |
+| ***PvcName / PvcVolumeName*** | It indicates the name of the PVC and the name of the PV associated with the PVC.                |
+| ***PvcNamespace***            | It indicates the namespace to which the PVC belongs.                                            |
+| ***PvcStorageClassName***     | It indicates the name of the storage class set in the PVC.                                      |
+| ***PvcAccessModes***          | It describes the access mode of PVC, supporting ReadWriteOnce, ReadOnlyMany, and ReadWriteMany. |
+| ***PvcRequestedStorage***     | It indicates the storage capacity requested by the PVC.                                         |
+
+#### ***PvcPhase***
+
+***PvcPhase*** indicates the status of the persistent volume claim. 
+
+| Phase         | Description                                                                 |      |
+| ------------- | --------------------------------------------------------------------------- | ---- |
+| ***Pending*** | The PVC is not yet bound to a PV or is waiting for PV allocation.           |      |
+| ***Bound***   | The PVC is bound to a specific PV and is in use.                            |      |
+| ***Lost***    | The connected PV has been deleted or is no longer valid and cannot be used. |  |
+
+*/}
+
+## Filtering
+
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
+
+<K8slistfilter />
+
+## Columns
+
+| Group                       | Column name                                        | Description                                                                                                                            |
+| --------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| ***PersistentVolume***      | ***PvUid***                                        | Unique ID of the persistent volume.                                                                                                    |
+| ^                           | ***PvName***                                       | Name of the persistent volume.                                                                                                         |
+| ^                           | ***PvPhase***                                      | It displays the current status of the persistent volume.                                                                               |
+| ^                           | ***PvType***                                       | Storage type of the persistent volume.                                                                                                 |
+| ^                           | ***Path***                                         | It indicates the mounting path of the persistent volume.                                                                               |
+| ^                           | ***PvReclaimPolicy***                              | It indicates the reclamation policy of the persistent volume.                                                                          |
+| ^                           | ***PvStorageClassName***                           | Name of the storage class assigned to the PV.                                                                                          |
+| ^                           | ***PvVolumeMode***                                 | It indicates the volume mode property of the persistent volume.                                                                        |
+| ^                           | ***PvCapacity***                                   | It displays the total storage capacity of the persistent volume.                                                                       |
+| ^                           | ***PvMessage***                                    | This message explains why the current persistent volume had a specific phase.                                                          |
+| ^                           | ***PvReason***                                     | This keyword displays the errors related to the persistent volumes, briefly indicating the cause of the problem or the current status. |
+| ***PersistentVolumeClaim*** | ***PvcUid***                                       | Unique ID of the persistent volume claim.                                                                                              |
+| ^                           | ***PvcVolumeName*** (PV) <br/> ***PvcName*** (PVC) | Name of the persistent volume claim.                                                                                                   |
+| ^                           | ***PvcNamespace***                                 | It indicates the namespace to which the persistent volume claim belongs.                                                               |
+| ^                           | ***PvcStorageClassName***                          | Name of the storage class set for the persistent volume claim.                                                                         |
+| ^                           | ***PvcAccessModes***                               | It indicates the access mode of the persistent volume claim.                                                                           |
+| ^                           | ***PvcRequestedStorage***                          | Storage capacity requested by the persistent volume claim.                                                                             |
+
+:::note 
+
+- For more information about the reclamation policy of the persistent volume, see [the following](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/#%EB%B0%98%ED%99%98-reclaiming). 
+
+  > ***Retain***, ***Delete***
+
+- For more information about the volume mode of the persistent volume, see [the following](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/#%EB%B3%BC%EB%A5%A8-%EB%AA%A8%EB%93%9C). 
+
+  > ***Filesystem***, ***Block***
+
+- For more information about the access mode of the persistent volume, see [the following](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/#%EC%A0%91%EA%B7%BC-%EB%AA%A8%EB%93%9C). 
+
+  > ***ReadWriteOnce***, ***ReadOnlyMany***, ***ReadWriteMany***
+
+:::
+
+### Phase
+
+#### ***PvPhase***
+
+***PvPhase*** displays the status of the persistent volume.
+
+| Phase           | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| ***Available*** | The PV is not yet bound to any PVC.                              |
+| ***Bound***     | The PV is bound to a specific PVC and is in use.                 |
+| ***Released***  | The PVC has been deleted, but the PV has not yet been reclaimed. |
+| ***Failed***    | PV is unusable because it failed to auto-reclaim.                |
+
+#### ***PvcPhase***
+
+***PvcPhase*** indicates the status of the persistent volume claim. 
+
+| Phase         | Description                                                                 |
+| ------------- | --------------------------------------------------------------------------- |
+| ***Pending*** | The PVC is not yet bound to a PV or is waiting for PV allocation.           |
+| ***Bound***   | The PVC is bound to a specific PV and is in use.                            |
+| ***Lost***    | The connected PV has been deleted or is no longer valid and cannot be used. |
+
+### Select Column
+
+import K8slistcl from "../common-items/_k8s-list-cl.mdx";
+
+<K8slistcl />
+
+:::note 
+
+You can bulk select or unselect ***PersistentVolume*** or ***PersistentVolumeClaim*** column group.
+
+:::

@@ -1,6 +1,6 @@
 ## Setting presets {#preset}
 
-<InDoc product="java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-pro">
+<InDoc product="java,php,python,nodejs,dotnet,golang">
 
 <ImgLang img="apm-dashboard-preset-list.png" desc="Preset" />
 
@@ -16,11 +16,13 @@ You can save and load the settings and layouts for widgets on the dashboard. You
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,altibase,cubrid">
+<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,altibase,cubrid,redis,mongodb,db2">
 
 You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
 
-<ImgLang img='db-preset-list.png' desc='Preset' />
+![Preset](/img/db-common-multidb-preset.png)
+
+<InDoc product="postgresql,mysql">
 
 - **_Default_**: This preset consists of XOS metrics, AWS RDS CloudWatch metrics, and major DB metrics.
 
@@ -28,23 +30,39 @@ You can save and load the settings and layouts for widgets on the dashboard. You
 
 - **_Default(rds)_**: This preset consists of AWS RDS CloudWatch metrics and major DB metrics.
 
-:::note
+</InDoc>
 
-The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed.
+<InDoc product="oracle,oracle-pro">
 
-:::
+- **_Default_**: It is a preset consisting of key DB metrics and XOS metrics.
+
+- **_Default (RAC)_**: If you are using Oracle Real Application Cluster (RAC), this preset allows you to check metrics based on the instances running on the RAC database.
 
 </InDoc>
 
-<InDoc product="mssql">
+<InDoc product="mssql,altibase,cubrid,redis,mongodb">
 
-You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
+- **_Default_**: This preset consists of major DB metrics.
 
-**_Default_**: It is a preset consisting of key DB metrics and XOS metrics.
+- **_Default(xos)_**: This preset consists of XOS metrics and major DB metrics. 
+
+</InDoc>
 
 :::note
 
-The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed.
+- The dashboard settings that can be stored into a preset are as follows:
+
+  - Widget size and location
+
+  - Settings defined in the custom widget
+
+  - Width, filter, and selected column values ​​of the table defined in the <UI>Session Table</UI> widget.
+
+- The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be changed.
+
+- Depending on the database environment, some presets may not be supported.
+
+- You can save or modify the presets with the <Cmdname sid="edit_project" className="uitext" /> role. For more information about the member roles, see [the following](../project/project-structure#member-auth).
 
 :::
 
@@ -60,7 +78,7 @@ The default preset (<Cmdname sid="kube_default" className="uitext" />) cannot be
 
    <InDoc product="java,python,php,nodejs,dotnet,golang"><ImgLang img='apm-dashboard-preset-save.png' desc='Save preset' /></InDoc>
 
-   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid,mssql"><ImgLang img='db-dashboard-preset-save.png' desc='Preset' /></InDoc>
+   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid,mssql,db2"><ImgLang img='db-dashboard-preset-save.png' desc='Preset' /></InDoc>
 
    To save the selected agent data, select <Cmdname sid="ITM07345" className="uitext" />.
 

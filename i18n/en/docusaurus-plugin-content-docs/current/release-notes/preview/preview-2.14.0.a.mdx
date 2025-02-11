@@ -1,0 +1,91 @@
+---
+id: preview-2_14_0x
+title: Preview 2.14.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.14.0.a0
+
+January 23, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the <Cmdname sid="ITM08413" className="uitext" /> switch UI does not appear when there is no data in the notification list widget of the <Cmdname sid="side_integratedFlexboard" className="uitext" /> or <Cmdname sid="side_flexboard" className="uitext" /> menu.
+
+- <Status priority='0'>Fixed</Status> Applied the tooltips for <Cmdname sid="DSC07196" className="uitext" /> displayed in the event list of the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> menu and multi languages.
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="aboids_large_number_alerts" className="uitext" /> section of the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" /> menu, modified to display the SMS blocking thresholds depending on the configuration.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the changed time is not applied when the time is changed using the keyboard in the time selector.
+
+- <Status priority='0'>Fixed</Status> Applied multi languages to the message displayed when changing the time selector to real-time mode.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, added the WhaTap Docs link to the <Cmdname sid="realtime_user" className="uitext" /> widget guide.
+
+- <Status priority='1'>Feature</Status> In the project selection filter of the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" /> menu, modified to always expose the current project at the top.
+
+  :::note
+
+  The current project is always selected and cannot be released.
+
+  :::
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />, fixed the issue where the displayed date at the top of the pop-up window is not changed when using the <Cmdname sid="TTL08868" className="uitext" /> feature.
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> In the detailed view of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu, added the following features.
+
+  - Added the <UI>Free(GB)</UI> column in the table of the <Cmdname sid="TTL08662" className="uitext" />.
+
+  - Added the column key that has the numeric type value in the filter of the <Cmdname sid="TTL08662" className="uitext" /> tab.
+
+- <Status priority='1'>Feature</Status> At the top of the <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> menu, added the Disk Total (sum of all disk sizes모든 disk) item.
+
+- <Status priority='1'>Changed</Status> For the support of features in the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu, added the agent installation guide for the AIX OS environment.
+
+---
+
+### `Kubernetes`
+
+<Status priority='1'>Feature</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, added guidance to the activation of the kube-scheduler feature.
+
+---
+
+### `Database`
+
+#### Common
+
+<Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, changed the following when there are no agents to monitor.
+
+- Fixed the table list to display the message that the agent is not installed.
+
+- Changed not to go to the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu.
+
+#### Oracle Pro
+
+<Status priority='0'>Fixed</Status> Fixed the issue where the active session information is not viewed when the <Cmdname sid="TTL06224" className="uitext" /> window is entered through the <UI>SQL Elapse Map</UI> widget of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> menu.
+
+#### IBM DB2
+
+<Status priority='0'>Fixed</Status> In the list of the <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" /> menu, fixed the issue where the last two digits of the sqlHash value are truncated when the value is negative.
+
+</div>

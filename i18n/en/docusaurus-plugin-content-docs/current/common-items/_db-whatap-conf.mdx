@@ -2,6 +2,22 @@
 
 Go to the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
+<InDoc product="oracle">
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+
+dbms=oracle
+db={DB_Name(SID)}
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
+
+exclude_background=3
+```
+
+</InDoc>
+
 <InDoc product="altibase">
 
 ```ini title='whatap.conf'
@@ -53,7 +69,7 @@ broker=query_editor,broker1
 <InDoc product="mssql">
 
 ```ini title="whatap.conf"
-license=x6054vg8d8e5e-z16ovlmhlau3st-z2uj26egaj4mt4
+license={AccessKey}
 whatap.server.host=13.124.11.223/13.209.172.35
 
 dbms=mssql
@@ -73,5 +89,19 @@ connect_option=?encrypt=true;trustServerCertificate=true
 ```
 
 :::
+
+</InDoc>
+
+<InDoc product="db2">
+
+```ini title='whatap.conf'
+license={AccessKey}
+whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
+
+dbms=db2
+db={DB}
+db_ip={DB_Server_IP}
+db_port={DB_Server_Port} 
+```
 
 </InDoc>
