@@ -1,0 +1,50 @@
+---
+id: java-2_2_50
+title: Java Agent v2.2.50
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_49
+displayed_sidebar: releaseSidebar
+---
+
+January 22, 2025
+
+- <Status priority='1'>New</Status> logstash-logback-encoder-7.3 tracing
+
+  Tracing is performed when `net.logstash.logback.encoder.LogstashEncoder` is set with the logback encoder.
+
+  ```ini title="whatap.conf"
+  weaving=logback-1.2.8,logstash-logback-encoder-7.3
+  ```
+
+- <Status priority='1'>New</Status> logback-ecs-encoder-1.5.0 tracing
+
+  Tracing is performed when `co.elastic.logging.logback.EcsEncoder` is set with the logback encoder.
+
+  ```ini title="whatap.conf"
+  weaving=logback-1.2.8,logback-ecs-encoder-1.5.0
+  ```
+
+- <Status priority='1'>Feature</Status> logback async appender tracing
+
+  Tracing is performed when async appender is set with the logback appender.
+
+  ```ini title="whatap.conf"
+  weaving=logback-1.2.8
+  ```
+
+- <Status priority='1'>Feature</Status> Added the return method in the `service_name_mode` option.
+
+  ```ini title="whatap.conf"
+  service_name_mode=return
+  ```
+
+  In case of specifying the return value of the test method of the `io.home.Test` class as the transaction name
+
+  ```ini title="whatap.conf"
+  hook_service_patterns=io.home.Test.test
+  service_name_mode=return
+  ```
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.50" />

@@ -2,15 +2,25 @@
 
 Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of the screen, you can see the real-time active sessions. The following provides the guide for the button on the upper right of the table.
 
-<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid,mssql'>
+<Xclude product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid,mssql,db2'>
 
 - ![Stop icon](/img/ico-pause.svg): You can stop changing the data collected in real time. To restart it again, select ![Start icon](/img/ico-play-grey.svg).
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid,mssql'>
+<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid,mssql,db2'>
 
 - ![Filter icon](/img/ico-filter.svg): Using the column header entries in the table, the list can be filtered.
+
+  <InDoc product="db2">
+
+  :::note
+
+  For more information about , see [the following](usage-ui#tablefilter).
+
+  :::
+
+  </InDoc>
 
 </InDoc>
 
@@ -18,7 +28,17 @@ Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of th
 
 - ![Column icon](/img/ico-column.svg): The column header entries in the table can be displayed or hidden.
 
-<InDoc product='postgresql,mysql,oracle-pro,oracle,altibase,cubrid,mssql'>
+  <InDoc product="oracle-pro,db2">
+
+  :::note
+
+  For more information about the column configuration, see [the following](usage-ui#change-column).
+
+  :::
+
+  </InDoc>
+
+<InDoc product='postgresql,mysql,oracle-pro,oracle,altibase,cubrid,mssql,db2'>
 
 - ![Session Kill icon](/img/ico-kill-session.svg): The active session can be stopped.
 
@@ -30,7 +50,7 @@ Through <Cmdname sid="active_sessions" className="uitext" /> at the bottom of th
 
 </InDoc>
 
-<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid,mssql'>
+<InDoc product='postgresql,mysql,redis,mongodb,oracle-pro,oracle,altibase,cubrid,mssql,db2'>
 
 - ![Download icon](/img/ico-download.svg): You can download the content of the table as a CSV file.
 

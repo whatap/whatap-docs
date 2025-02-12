@@ -1,0 +1,269 @@
+---
+id: kube-scheduler-dashboard
+title: kube-scheduler Dashboard
+description: It provides the guide to the kube-apiserver dashboard.
+keywords:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - kube-scheduler
+  - Control Plane
+toc_max_heading_level: 2
+---
+
+Home &gt; cluster project (<code class='my'>CP</code>) &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; ***kube-scheduler Dashboard***
+
+:::note
+
+**Requirements**
+
+- The WhaTap Kubernetes agent 1.8.1 or later is required.
+
+- If it is a Kubernetes cluster project (<code class='my'>CP</code>), you can view the corresponding menu.
+
+- You can use this menu if the cluster can observe the vanilla Kubernetes or `kube-scheduler` Pods. 
+
+:::
+
+`kube-scheduler` is a major component responsible for scheduling Pods in the Kubernetes environment. WhaTap provides the ***kube-scheduler dashboard*** to monitor the performance and scheduling status of `kube-scheduler` in real time. ***The kube-scheduler dashboard*** can help you proactively prevent the cluster from entering an unschedulable state or encountering issues due to scheduler overload in advance. 
+
+## Basic screen guide
+
+<ImgLang img="k8s-kube-scheduler-dashboard.png" desc="kube-scheduler dashboard" />
+
+The ***kube-scheduler dashboard*** provides visualization of key metrics collected over the past 1 hour, broken down at 1-minute intervals. The key metrics you can see on the dashboard are as follows. For the metrics details, see the [metric guide](#kube-scheduler-metrics) at the bottom. 
+
+- It provides the resource usage trend, Pod restart count, and detailed logs for `kube-scheduler`.
+
+- It provides the trend for the numbers of preemption attempts by `kube-scheduler` and the number of victims due to preemption.
+
+- It provides the trends for each reason of pending Pods assigned to the pending queue inside the `kube-scheduler` Pod.
+
+{/* * kube-scheduler Pod의 Pending Queue에 대기 중인 Pod의 상태를 원인별로 분류하여 추이를 제공합니다.  */}
+
+{/* 
+
+선점 시도 횟수 및 피해자 수?
+
+스케줄러가 특정 노드에 자리를 확보하기 위해 다른 파드를 축출/설점하려 시도한 횟수, 피해자 수는 선점으로 인해 노드에서 축출된 파드의 수 
+
+활용 목적?
+선점 시도 및 축출된 Pod 수를 모니터링하여 스케줄링 효율성과 클러스터 안정성 분석 
+
+파드 펜딩 큐
+
+스케줄러가 아직 스케줄링하지 못한 파드들의 대기열 
+
+펜딩 상태의 파드: 리소스 부족, 노드 할당 실패, 권한 문제 등의 원인별 분류 가능..
+
+*/}
+
+## Enabling the kube-scheduler monitoring
+
+### Enabling requirements
+
+- You must be able to observe the `kube-scheduler` Pod via the command, `kubectl get pods -n kube-system -l component=kube-scheduler`. 
+
+- To enable secure communication with `kube-scheduler`, change the `--bind-address` setting to be accessible from outside. Typically `0.0.0.0` is used.
+
+### Enabling procedure
+
+:::note 
+
+**Enabling order**
+
+1. Add the `GET` role for `secrets` to RBAC of the whatap service account.
+
+2. Generate `secrets` based on the whatap service account.
+
+3. Apply the `kube-scheduler` monitoring activation option to the `whatap-master-agent` deployment.
+
+:::
+
+1. **Role configuration** 
+
+   Add the `secrets` resource to the resources accessible from `rules` of whatap ClusterRole inside the `whatap-monitoring` namespace. After creating the following content as a *yaml* file, execute the `kubectl apply -f <yaml file name>.yaml` command for application. 
+
+   ```yaml title='ClusterRole.yaml' {25}
+   apiVersion: "rbac.authorization.k8s.io/v1"
+   kind: "ClusterRole"
+   metadata:
+     annotations:
+       rbac.authorization.kubernetes.io/autoupdate: "true"
+     name: "whatap"
+     namespace: "whatap-monitoring"
+   rules:
+   - apiGroups:
+     - "*"
+     resources:
+     - "namespaces"
+     - "pods"
+     - "pods/log"
+     - "configmaps"
+     - "services"
+     - "endpoints"
+     - "daemonsets"
+     - "ingresses"
+     - "deployments"
+     - "nodes"
+     - "persistentvolumes"
+     - "persistentvolumeclaims"
+     - "events"
+     - "secrets"
+     - "replicasets"
+     - "roles"
+     - "rolebindings"
+     - "clusterroles"
+     - "clusterrolebindings"
+     - "jobs"
+     - "cronjobs"
+     - "statefulsets"
+     - "serviceaccounts"
+     - "configmaps"
+     - "storageclasses"
+     - "horizontalpodautoscalers"
+     - "replicationcontrollers"
+     verbs:
+     - "get"
+     - "list"
+     - "watch"
+   - apiGroups:
+     - ""
+     resources:
+     - "pods/exec"
+     verbs:
+     - "create"
+   - apiGroups:
+     - ""
+     resources:
+     - "configmaps"
+     verbs:
+     - "*"
+   - nonResourceURLs:
+     - "/metrics"
+     verbs:
+     - "*"
+   ```
+
+2. **Creating the secret**
+
+   After creating the following content as a *yaml* file, execute the `kubectl apply -f yamlfilename.yaml` command for application. 
+
+   ```yaml title='secrets.yaml'
+   apiVersion: v1
+   kind: Secret
+   type: kubernetes.io/service-account-token
+   metadata:
+     name: whatap-scheduler-monitoring-token
+     namespace: whatap-monitoring
+     annotations:
+       kubernetes.io/service-account.name: "whatap"
+   ```
+
+3. **Deployment modification**
+
+   After modifying the `whatap-master-agent` deployment content, execute the `kubectl apply -f <yaml파일명>.yaml` command for application. 
+
+   - **Addition of environment variables**
+
+     Add the following to the `env` section of the `whatap-master-agent` container under `containers`.
+
+     ```yaml
+     env:
+     - name: "collect_kube_scheduler_monitoring_enabled"
+       value: "true"
+     ```
+
+   - **Adding command arguments** 
+
+     Add the following to the `args` section of the `whatap-control-plane-helper` container under `containers`. 
+
+     ```yaml
+     - args:
+       - "-collect_kube_scheduler_monitoring_enabled=true"
+     ```
+
+   See the following example for adding environment variables and command arguments. 
+
+   ```yaml {30-31,51}
+   apiVersion: "apps/v1"
+   kind: "Deployment"
+   metadata:
+     name: "whatap-master-agent"
+     namespace: "whatap-monitoring"
+   spec:
+     replicas: 1
+     selector:
+       matchLabels:
+         name: "whatap-master-agent"
+     template:
+       metadata:
+         labels:
+           name: "whatap-master-agent"
+       spec:
+         priorityClassName: high-priority
+         containers:
+         - command:
+           - "/bin/entrypoint.sh"
+           env:
+           - name: "WHATAP_LICENSE"
+             value: "c1024123i1kko-241245127abdbe-612632344235"
+           - name: "WHATAP_HOST"
+             value: "192.168.1.0"
+           - name: "WHATP_MEM_LIMIT"
+             valueFrom:
+               resourceFieldRef:
+                 containerName: "whatap-master-agent"
+                 resource: "limits.memory"
+           - name: "collect_kube_scheduler_monitoring_enabled"
+             value: "true"
+           image: "whatap/kube_mon"
+           name: "whatap-master-agent"
+           ports:
+           - containerPort: 6600
+           resources:
+             limits:
+               cpu: "200m"
+               memory: "350Mi"
+             requests:
+               cpu: "100m"
+               memory: "300Mi"
+           volumeMounts:
+           - mountPath: "/bin/entrypoint.sh"
+             name: "start-script-volume"
+             readOnly: true
+             subPath: "entrypoint.sh"
+           - mountPath: "/whatap_conf"
+             name: "whatap-config-volume"
+         - args:
+           - "-collect_kube_scheduler_monitoring_enabled=true"
+           command:
+           - "/data/agent/master/whatap_control_plane_helper"
+           image: "whatap/kube_mon"
+           imagePullPolicy: "Always"
+           name: "whatap-control-plane-helper"
+           ports:
+           - containerPort: 9496
+         serviceAccount: "whatap"
+         volumes:
+         - configMap:
+             defaultMode: 448
+             name: "master-start-script"
+           name: "start-script-volume"
+         - emptyDir: {}
+           name: "whatap-config-volume"
+   ```
+
+## kube-scheduler metrics {#kube-scheduler-metrics}
+
+| Type                                          | Description                                                              |
+| --------------------------------------------- | ------------------------------------------------------------------------ |
+| ***Number of Pods***                          | Number of `kube-scheduler` Pods running                                  |
+| ***kube-scheduler restart count trend***      | Trend of sums of restarts of the `kube-scheduler` Pod                    |
+| ***CPU usage sum***                           | Total CPU usage of the `kube-scheduler` Pod                              |
+| ***CPU usage***                               | CPU usage trend of the `kube-scheduler` Pod                              |
+| ***Memory usage sum***                        | Total memory usage of the `kube-scheduler` Pod                           |
+| ***Memory usage***                            | Memory usage trend of the `kube-scheduler` Pod                           |
+| ***kube-scheduler log***                      | Log generated from the `kube-scheduler` Pod                              |
+| ***Trend of numbers of preemption attempts*** | Trend of numbers of preemption attempts for Pod scheduling               |
+| ***Trend of numbers of preemption victims***  | Trend of numbers of Pods evicted due to preemption                       |
+| ***Trend by pending Pod reason***             | Trend by reason of waiting Pods in pending state without being scheduled |

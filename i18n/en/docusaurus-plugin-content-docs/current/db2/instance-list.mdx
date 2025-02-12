@@ -1,0 +1,26 @@
+---
+id: instance-list
+title: Instance List
+description: You can see the list of database servers in which the agent has been installed.
+keywords:
+  - IBM DB2
+  - Instance
+  - Dashboard
+  - Database Monitoring
+---
+
+import Dbinstancelistdesc from "../common-items/_db-instance-list-desc.mdx";
+import Dbinstancelistbasicusage from "../common-items/_db-instance-list-basic-usage.mdx";
+import TipinstanceName from "../common-items/_db-instance-list-set-name-guide.mdx";
+import Dbcomapreinstanceperformance from "../common-items/_db-comapre-instance-performance.mdx";
+import Dbcolumndisplayhide from "../common-items/_db-column-display-hide.mdx";
+
+<Collection docs={
+  [
+    {Topic: Dbinstancelistdesc, props: {level: 2, desc: '개요'}},
+    {Topic: Dbinstancelistbasicusage, props: {level: 2, desc: '기본 화면 안내'}},
+    {Topic: TipinstanceName, props: {desc: 'Tip'}},
+    {Topic: Dbcomapreinstanceperformance, props: {level: 2, desc: '인스턴스 성능 지표 비교하기'}},
+    {Topic: Dbcolumndisplayhide, props: {level: 2, desc: '컬럼 표시 또는 숨기기'}},
+  ]}
+/>

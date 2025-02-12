@@ -1,0 +1,72 @@
+---
+id: install-agent
+title: Agent Installation
+description: The following guides you to the basic installation method for using the WhaTap database monitoring service.
+keywords:
+  - IBM DB2
+  - Database Monitoring
+  - Agent
+---
+
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+import NextStep from "../common-items/_db-next-step.mdx";
+
+The following guides you to the basic installation method for using the WhaTap database monitoring service.
+
+<Collection docs={
+  [
+    {Topic: Agentsignupguide, props: {desc: "개요"}},
+    {Topic: Createprojectv2, props: {level: "프로젝트 생성하기"}},
+  ]}
+/>
+
+<Steps>
+
+<Collection docs={
+  [
+    {Topic: CheckType, props: {desc: "구성도 확인하기"}},
+    {Topic: Dbcreatemonitoringaccount, props: {desc: "계정 생성"}},
+    {Topic: Accesskeyv2, props: {desc: "액세스 키 확인"}},
+    {Topic: DownloadDBXagent, props: {desc: "DBX 에이전트 다운로드"}},
+    {Topic: SettingsDBXagent, props: {desc: "DBX 에이전트 설정"}},
+    {Topic: Whatapconf, props: {desc: "whatap.conf 설정"}},
+  ]}
+/>
+
+### Downloading JDBC
+
+Copy the *db2jcc4.jar* file from the */`db2_instance_path`/sqllib/java* path of the DB server and then place it in the */`agent_installation_path`/jdbc* folder.
+
+```txt
+/unzipped folder/jdbc
+```
+
+:::note
+
+For more information about the JDBC driver configuration in IBM DB2, see the [following link](https://www.ibm.com/docs/baw/23.x?topic=installation-configuring-jdbc-drivers).
+
+:::
+
+<Collection docs={
+  [
+    {Topic: DBuserDesc, props: {level: 3, desc: "DB 유저 파일 생성"}},
+    {Topic: Dbcreatedbuserfilebody, props: {desc: "DB 유저 파일 생성 Note"}},
+    {Topic: Dbrunagent, props: {desc: "DB 모니터링 시작하기"}},
+    {Topic: Dbinstallxosagent, props: {desc: "XOS 에이전트 설치"}},
+  ]}
+/>
+
+</Steps>
+
+<NextStep />

@@ -40,21 +40,24 @@ Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" 
 
 It collects statistics for transactions. Every 5 minutes, up to 5,000 URL-specific performance statistics are collected and sent to the server. If the number of URLs for 5 minutes exceeds 5,000, this is ignored.
 
-| Columns                            | Description                                          |
-| ---------------------------------- | ---------------------------------------------------- |
-| <Cmdname sid="TTL06918" />         | Transaction address                                  |
-| <Cmdname sid="count" />            | Number of execution cases                            |
-| <Cmdname sid="error" />            | Error occurrence count for the executed transactions |
-| <Cmdname sid="TTL06960" /> (ms)    | Average of the total response time                   |
-| <Cmdname sid="TTL06963" /> (ms)    | Sum of response times                                |
-| <Cmdname sid="TTL06961" /> (ms)    | Maximum response time                                |
-| <Cmdname sid="TTL06965" />         | Average of the CPU usage time                        |
-| <Cmdname sid="httpc_count" />      | HTTP call count                                      |
-| <Cmdname sid="TTL06959" /> (ms)    | Average of the total HTTP call time                  |
-| <Cmdname sid="TTL06097" />         | SQL execution count                                  |
-| <Cmdname sid="TTL06956" /> (ms)    | Average SQL execution time                           |
-| <Cmdname sid="sqlFetch" />         | SQL Fetch Count                                      |
-| <Cmdname sid="TTL06953" /> (ms)    | Average of the total SQL patch time                  |
+| Columns                            | Description                                                                  |
+| ---------------------------------- | ---------------------------------------------------------------------------- |
+| <Cmdname sid="TTL06918" />         | Transaction address                                                          |
+| <Cmdname sid="count" />            | Number of execution cases                                                    |
+| <Cmdname sid="error" />            | Error occurrence count for the executed transactions                         |
+| <Cmdname sid="TTL06960" /> (ms)    | Average of the total response time                                           |
+| <Cmdname sid="TTL06963" /> (ms)    | Sum of response times                                                        |
+| <Cmdname sid="TTL06961" /> (ms)    | Maximum response time                                                        |
+| <Cmdname sid="TTL06965" />         | Average of the CPU usage time                                                |
+| <Cmdname sid="httpc_count" />      | HTTP Call Count                                                              |
+| <Cmdname sid="TTL06959" /> (ms)    | Total HTTP call time / Number of transactions                                |
+| <Cmdname sid="TTL08965" /> (ms)    | Total HTTP call time / Total number of HTTP calls in transactions            |
+| <Cmdname sid="TTL06097" />         | SQL execution count                                                          |
+| <Cmdname sid="TTL06956" /> (ms)    | Total SQL time / Number of transactions                                      |
+| <Cmdname sid="TTL08964" /> (ms)    | Total SQL time / Total number of SQL patches in transactions                 |
+| <Cmdname sid="sqlFetch" />         | SQL Fetch Count                                                              |
+| <Cmdname sid="TTL06953" /> (ms)    | Total SQL patch time / Number of transactions                                |
+| <Cmdname sid="TTL08966" /> (ms)    | Total SQL patch time / Total number of SQL patches in transactions           |
 
 :::note
 
@@ -129,6 +132,7 @@ Through the collected data, you can identify the processing status of URLs for e
 | <Cmdname sid="count" />         | Number of execution cases                            |
 | <Cmdname sid="error" />         | Error occurrence count for the executed transactions |
 | <Cmdname sid="timeAvg_ms" />    | Average of the total response time                   |
+| <Cmdname sid="timeSum_ms" />    | Sum of response times                                |
 
 ## Transaction caller statistics
 
@@ -268,6 +272,7 @@ Through the collected data, you can see the referer data on the statistics.
 | <Cmdname sid="count" />         | Number of execution cases                            |
 | <Cmdname sid="error" />         | Error occurrence count for the executed transactions |
 | <Cmdname sid="timeAvg_ms" />    | Average of the total response time                   |
+| <Cmdname sid="timeSum_ms" />    | Sum of response times                                |
 
 ## Error Statistics
 
@@ -275,12 +280,16 @@ Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" 
 
 They are statistics on the service errors that occurred for 5 minutes. They collect different errors and transaction names with the keys. They provide the stacks upon error occurrence. The statistics appear for up to 1,000 errors every 5 minutes.
 
-| Columns                       | Description           |
-| ----------------------------- | --------------------- |
-| <Cmdname sid="class" />       | Error Class           |
-| <Cmdname sid="TTL06918" />    | Transaction address   |
-| <Cmdname sid="msg" />         | Error Message         |
-| <Cmdname sid="count" />       | Error Count           |
+| Columns                       | Description                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| <Cmdname sid="class" />       | Error Class                                                                                                   |
+| <Cmdname sid="TTL06918" />    | Transaction address                                                                                           |
+| <Cmdname sid="msg" />         | Error Message                                                                                                 |
+| <Cmdname sid="count" />       | Error Count                                                                                                   |
+| <Cmdname sid="type_oid" />    | Agent name                                                                                                    |
+| <Cmdname sid="type_onode" />  | Group unit categorized as `whatap.onode`                                                                      |
+| <Cmdname sid="type_okind" />  | Group unit categorized as `whatap.okind`                                                                      |
+| <Cmdname sid="TTL09049" />    | Statistical time (5 minutes or 1 hour) when the transaction error was first generated during the query period |
 
 ## SQL execution statistics
 
@@ -324,6 +333,7 @@ They collect the statistics of calls outside the applications for 5 minutes via 
 | <Cmdname sid="timeSum_ms" />    | Sum of response times                                                    |
 | <Cmdname sid="timeMin_ms" />    | Minimum response time                                                    |
 | <Cmdname sid="timeMax_ms" />    | Maximum response time                                                    |
+| <Cmdname sid="TTL06915" />      | Standard deviation for the HTTP call time                                |
 
 ## Number of calls for each client IP region
 

@@ -14,30 +14,149 @@ This menu allows you to monitor and manage the usage status of the database tabl
 
 By monitoring the usage of tablespaces in real time, you can check the used amount and manage its appropriate capacity. Trace the tablespaces and segments with high usage and then take measures for capacity management and performance optimization. You can also detect and respond to excessive tablespace usage in advance.
 
+<InDoc product="altibase">
+
+:::note
+
+**table user**(owner) collects segments (table, index) that are not `SYSTEM_`.
+
+:::
+
+## Before use
+
+To collect the tablespace size, it is required to set the agent options.
+
+- **segments** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
+
+- **segments_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect the segment size information. The default value is `5` and collection starts at 5 am.
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  The minimum unit for collecting segment size information, the default value is 10 MB. When collecting segment sizes, the segment sizes less than the set value are not collected.
+
+</InDoc>
+
+<InDoc product="tibero">
+
+## Before use
+
+To collect tablespace sizes, you need to set the database roles and agent options. Segment sizes are collected once a day, and the settings must be completed as follows.
+
+### Assigning the query role
+
+To collect segment sizes, assign the monitoring users appropriate database roles. Use the following SQL command to set the roles.
+
+```sql title="SQL"
+grant select any dictionary to whatap;
+```
+
+:::note
+
+The tablespace size is not collected when the `tables_exclude_sys` option is specified.
+
+:::
+
+### Setting the agent options
+
+You can set the criteria for collecting the tablespace size via the agent options.
+
+- **tables** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the table size information. In <Cmdname sid="side_reportStat" className="uitext" />&gt;<Cmdname sid="side_tableSpace" className="uitext" />, you can see the table size by selecting the database.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect data for storing the table size information. The default value is `5` and collection starts at 5 am.
+
+- **tables_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  When collecting the table data, the table data smaller than the set value is not collected. The minimum collection value for the table is 10 MB by default.
+
+- **tables_exclude_sys** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  Set whether to collect table data owned by SYS, OUTLN, SYSGIS, and SYSCAT for collection. If set to `true`, the table data is not collected.
+
+</InDoc>
+
 <Xclude product="altibase,tibero">
 
 ## Before use
 
 To collect tablespace sizes, you need to set the database roles and agent options. Segment sizes are collected once a day, and the settings must be completed as follows.
 
-### DB roles configuration
+### Assigning the query role
 
 To collect segment sizes, assign the monitoring users appropriate database roles. Use the following SQL command to set the roles.
 
 ```sql title="SQL"
-grant select any dictionary to monitoring_user;
+grant select any dictionary to whatap;
 -- or --
-grant select on dba_segments to monitoring_user;
+grant select on dba_segments to whatap;
 ```
 
-### Agent CONFIG.
+:::note
 
-You can set the criteria for collecting segment sizes through the agent options. The default setting is to collect segments greater than 10 MB every day at 5:00 am.
+If the tablespace is `SYSTEM`, `SYSAUX`, `TEMP`, or `UNDOTBS1`, data collection does not happen.
 
-```ini title="whatap.conf"
-segments_min_size=10
-segments_hour=5
-```
+:::
+
+### Setting the agent options
+
+You can set the criteria for collecting the segment size via the agent options.
+
+- **segments** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
+
+- **segments_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time to collect the segment size information. The default value is `5` and collection starts at 5 am.
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  The minimum unit for collecting segment size information, the default value is 10 MB. When collecting segment sizes, the segment sizes less than the set value are not collected.
+
+- **segments_exclude_sys** <span class='type'>Int</span>
+
+  Default `1`
+
+  The sizes are collected except for accounts corresponding to sys.
+
+- **segments_sys** <span class='type'>String</span>
+
+  Default 'SYS', 'OUTLN', 'SYSTEM', 'AUDSYS', 'DBSNMP', 'GSMADMIN_INTERNAL', 'XDB', 'WMSYS', 'OJVMSYS', 'CTXSYS', 'ORDSYS', 'ORDDATA', 'MDSYS', 'LBACSYS', 'DVSYS', 'DBSFWUSER', 'APPQOSSYS', 'OLAPSYS'
+
+  It is the list of accounts corresponding to sys. To add to the above accounts, you can add with `segments_sys+='xxx'`.
+
+- **segments_max_count** <span class='type'>Int</span>
+
+  Default `50`
+
+  Only 50 large segments are collected and stored for each tablespace.
 
 </Xclude>
 

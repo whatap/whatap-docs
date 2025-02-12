@@ -54,25 +54,26 @@ You can flexibly grant different roles to different members for each project or 
 
 <div class='c5-3-5-avg'>
 
-| Role scheme                      | Description                                                                                                       |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| View                             | Viewing a project                                                                                                 |
-| Edit                             | Moving, modifying, and deleting an organization, group, project or maintenance plan                               |
-| View Log                         | Log inquiry and access of log-related functions                                                                   |
-| Log Edit                         | Editing the log settings                                                                                          |
-| Project flexboard update         | <Cmdname sid="flexboard" className="uitext" /> editing of the project                                             |
-| Member Management                | Modifying member roles and adding or excluding members                                                            |
-| Alert Reception                  | Alert Reception                                                                                                   |
-| Alert Config                     | Alert notification setting, maintenance plan, process grouping for the server product                             |
-| Billing                          | Charging the bill                                                                                                 |
+| Role scheme                          | Description                                                                           |
+| ------------------------------------ | ------------------------------------------------------------------------------------- |
+| <Cmdname sid="view_and_analysis" />  | Viewing a project                                                                     |
+| <Cmdname sid="edit" />               | Moving, modifying, and deleting an organization, group, project or maintenance plan   |
+| <Cmdname sid="log_read" />           | Log inquiry and access of log-related functions                                       |
+| <Cmdname sid="CNT08829" />           | Role to view personal information contained in the log                                |
+| <Cmdname sid="log_update" />         | Editing the log settings                                                              |
+| <Cmdname sid="ITM06494" />           | <Cmdname sid="flexboard" className="uitext" /> editing of the project                 |
+| <Cmdname sid="member_management" />  | Modifying member roles and adding or excluding members                                |
+| <Cmdname sid="alert_reception" />    | Alert Reception                                                                       |
+| <Cmdname sid="sms_alert_settings" /> | Alert notification setting, maintenance plan, process grouping for the server product |
+| <Cmdname sid="billing" />            | Charging the bill                                                                     |
 
 </div>
 
-### Inquiry and analysis
+### <Cmdname sid="view_and_analysis" /> {#view_and_analysis}
 
 This role is granted to members by default when inviting them to an organization, group, or project. You can view the <Cmdname sid="dashboard" className="uitext" /> and other menus.
 
-### Edit
+### <Cmdname sid="edit" /> {#edit}
 
 - You can modify the functions of the project. For example, you can add, modify, and delete <Cmdname sid="dashboard" className="uitext" />. 
 
@@ -90,19 +91,19 @@ This role is granted to members by default when inviting them to an organization
 
 :::
 
-### Member Management
+### <Cmdname sid="member_management" /> {#member_management}
 
 - You can add or delete members and modify roles for each organization, group, or project.
 
 - There must be at least one member with the **Member Management** role.
 
-### Alert Reception
+### <Cmdname sid="alert_reception" /> {#alert_reception}
 
 - In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />, you can manage the alert reception settings.
 
 - If you do not set the **Alert Reception** role, you can handle only the reception settings for your own account.
 
-### Alert Config
+### <Cmdname sid="sms_alert_settings" /> {#sms_alert_settings}
 
 - In <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />, the alerts can be added, deleted, or modified. You can also manage other functions.
 
@@ -118,7 +119,7 @@ This role is granted to members by default when inviting them to an organization
 
 :::
 
-### View Log
+### <Cmdname sid="log_read" /> {#log_read}
 
 - You can search the logs. This role is granted to members by default when inviting them to an organization, group, or project.
 
@@ -132,7 +133,39 @@ This role is granted to members by default when inviting them to an organization
 
   - <Cmdname sid="log" className="uitext" /> tab in <b>Summary Detail</b> or <b>Display Detail</b> under Container Map
 
-### Log Edit
+### <Cmdname sid="CNT08829" /> {#CNT08829}
+
+It is the role to view personal information included in the log. The log may contain personal information for customers who are using the service. WhaTap masks personal information included in the log. All users with WhaTap accounts can view the logs with their personal information masked by default.
+
+![Log](/img/project-member-role-log-masking.png)
+
+For items classified as personal information, see the following:
+
+- Resident registration number
+
+- Passport number
+
+- Driver's license number
+
+- Alien registration number
+
+- Credit card number
+
+- Account number
+
+- Biometric information
+
+Users with the <Cmdname sid="CNT08829" /> role see the toggle button in the log-related menus that can display personal information. If you activate the <Cmdname sid="BTN08818" className="uitext" /> toggle button, the masking is removed and personal information can be viewed.
+
+<ImgLang img="project-member-role-log-masking-option.png" desc="Log" />
+
+:::note
+
+For more information about de-identification of personal information in the log, see [the following](../log/log-setting).
+
+:::
+
+### <Cmdname sid="log_update" /> {#log_update}
 
 It is the role to edit the settings in <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" />. If you have the <b>Log Edit</b> role, you can use the <Cmdname sid="log_setting" className="uitext" /> menu.
 
@@ -142,7 +175,7 @@ Even if you have the **Log Edit** role, you cannot use the <Cmdname sid="log_set
 
 :::
 
-### Project flexboard update
+### <Cmdname sid="ITM06494" /> {#ITM06494}
 
 It is the role to edit the dashboards in the project's <Cmdname sid="flexboard" className="uitext" /> menu. In <Cmdname sid="flexboard" className="uitext" /> under the project, you can access to <Cmdname sid="edit_mode" className="uitext" />, <Cmdname sid="admin" className="uitext" /> Mode, and <Cmdname sid="filter" className="uitext" />.
 
@@ -152,7 +185,7 @@ For more information about Flex Board, see [the following](../java/flex-board).
 
 :::
 
-### Billing
+### <Cmdname sid="billing" /> {#billing}
 
 - Each organization, group, or project provides the **billing** role to only one person. There must be only 1 member with the billing role.
 
@@ -170,7 +203,7 @@ For more information about Flex Board, see [the following](../java/flex-board).
 
 ### Modifying the project member role
 
-You can modify the roles of members in the list of the selected organization, group, or project. 
+You can modify the roles of members in the member list of the project that does not belong to an organization or group.
 
 <ImgLang img='member-modify-authority-0508.png' desc='Modify member role' />
 
@@ -178,7 +211,7 @@ You can set roles by selecting the toggle button on the right. After configurati
 
 ### Modifying the roles of the organization or group members
 
-You can set member roles for a group or project that belongs to an organization or subgroup.
+You can modify the member roles for a project that belongs to an organization or subgroup.
 
 <ImgLang img='modify-organize-member-authority.png' desc='Modify member role' />
 

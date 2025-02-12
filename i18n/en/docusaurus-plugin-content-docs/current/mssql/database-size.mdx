@@ -16,6 +16,53 @@ Database size can affect the performance. You can prepare to troubleshoot perfor
 
 The trend in database size helps you understand usage patterns and data growth. You can predict future capacity requirements and take possible actions. Monitoring these changes helps you optimize the resources and costs.
 
+## Before use
+
+### Assigning the query role
+
+To collect the database sizes, it is required to set the following roles:
+
+```sql
+grant connect any database to whatap;
+grant view any definition to whatap;
+```
+
+:::note
+
+For the tables that fall under the following cases, size collection does not happen.
+
+- Tables that start with `dt`
+
+- `is_ms_shipped=0` (excluding system objects from `sys.objects`)
+
+- `object_id` \> 255
+
+- For the Azure SQL Server, the master database size cannot be collected.
+
+:::
+
+### Setting the agent options
+
+You can set the following agent options to collect the database sizes.
+
+- **tables** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the table sizes. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />, you can see the table size by selecting the database.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  Set the time when data is to be collected to store the table sizes. The default value is `5` and collection starts at 5 AM.
+
+- **tables_min_row** <span class='type'>Int</span>
+
+  Default `10000`
+
+  When collecting the table information, table data with the number of rows smaller than the set value is not collected.
+
 ## Basic screen guide
 
 <ImgLang img='db-database-size-mssql.png' desc='Database size'/>

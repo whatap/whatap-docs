@@ -1,0 +1,74 @@
+<Title hashid='column-info' level={props.level}>Column information guide</Title>
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| Item                  | Description                                                                   |
+| --------------------- | ----------------------------------------------------------------------------- |
+| `instance`            | Name of the DB2 instance (agent).                                             |
+| `dbname`              | Database name.                                                                |
+| `application_handle`  | Unique handle value that identifies a specific application.                   |
+| `username`            | User name of the current session.                                             |
+| `state`               | Current state of the session.                                                 |
+| `activity_type`       | Type of the operation running in the session.                                 |
+| `query`               | Content of the SQL query running in the session.                              |
+| `application_id`      | Unique ID for the application used to distinguish sessions.                   |
+| `application_name`    | Name of the application the session is running in.                            |
+| `client_hostname`     | Hostname or IP address of the client that initiated the session.              |
+| `last_reference_time` | Time when a final action was executed in the session.                         |
+| `local_start_time`    | Local time when the session was initialized.                                  |
+| `query_hash`          | Unique hash value for the query being executed to identify the query content. |
+| `runtime`             | Time when the current session was run.                                        |
+| `time`                | Total time the session was spent for tasks.                                   |
+
+:::note
+
+WhaTap basically stores the client-related information.
+
+:::
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| Item                      | Description                                                 |
+| ------------------------- | ----------------------------------------------------------- |
+| `instance`                | Name of the DB2 instance (agent).                           |
+| `application_handle`      | Unique handle value that identifies a specific application. |
+| `dbname`                  | Database name.                                              |
+| `username`                | User name of the current session.                           |
+| `runtime`                 | Time when the current session was run.                      |
+| `state`                   | Current state of the session.                               |
+| `activity_type`           | Type of the operation running in the session.               |
+| `query`                   | Content of the SQL query running in the session.            |
+| `lock_name`               | Unique ID of the lock.                                      |
+| `lock_object_type`        | Type of the object to which the lock was applied.           |
+| `table_name`              | Name of the table to which the lock was applied.            |
+| `holder_application_name` | Name of the application with the lock.                      |
+| `holder_member`           | ID of the member with the lock.                             |
+| `waiter_application_name` | Name of the application waiting for lock.                   |
+| `waiter_member`           | ID of the member waiting for lock.                          |
+| `wait_time`               | Lock waiting time.                                          |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+The following items are the metrics collected if the XOS agent has been installed.
+
+| Item       | Description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| `pid`      | PID of the database process.                                                              |
+| `cputime`  | CPU usage time.                                                                           |
+| `cpuusage` | CPU utilization                                                                           |
+| `elapse`   | CPU usage time.                                                                           |
+| `vsize`    | Virtual memory size (Kb)                                                                  |
+| `rss`      | Resident Set Size (RSS) that is the number of physical pages associated with the process. |
+| `state`    | Process status.                                                                           |
+| `ioread`   | Actual time spent reading the block (milliseconds).                                       |
+| `iowrite`  | Actual time spent writing the block (milliseconds)                                        |
+| `pss`      | Process specific memory usage + Percentage of shared memory occupied by one process       |
+
+</TabItem>
+</Tabs>

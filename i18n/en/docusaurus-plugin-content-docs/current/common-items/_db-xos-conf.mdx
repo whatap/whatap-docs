@@ -30,31 +30,55 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
   It displays the disk utilization, free sizes, and total sizes for each instance. If the value is `0`, the disk utilization is not collected.
 
-- **process** <span class='type'>String</span>
+- **port_check** <span class='type'>String</span>
+
+  The XOS agent attempts to connect directly to the port specified as an option. If it fails, the port list is sent to the `db_port_check` category.
+
+  ```ini title="xos.conf"
+  port_check=192.168.122.113:3333,192.168.122.113:3334
+  ```
+
+  If access cannot be made via the specified port, you can check it after selecting the `db_port_check` category in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />.
+
+  ![port_check](/img/db-xos-conf-port-check-metrics.png)
+
+- **process_check** <span class='type'>String</span>
 
   You can monitor the running status of processes. Enter the process name as an option. You can register multiple items using comma (,) as the delimiter.
 
   ```ini title='xos.conf'
-  process={process_name}
+  process_check=pmon,smon,tnslsnr,melong,haha
   ```
 
-  For example, to set the top and lock.sh processes to be monitored, set the options as follows:
+  When the process containing the string is not monitored, the data is sent to the `db_process_check` category. For example, if there have no **melong** and **haha** processes, you can check it after selecting the `db_process_check` category from the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" /> menu.
 
-  ```ini title='xos.conf'
-  process=top,lock.sh
-  ```
+  ![process_check](/img/db-xos-conf-process-check-metrics.png)
 
   :::note
 
-  You can use the `process` option to send an alert when a process running in the database ends. For more information, see [the following](../best-practice-guides/set-db-metric-warning-notice).
+  You can use the `process_check` option to send an alert when a process running in the database ends. For more information, see [the following](../best-practice-guides/set-db-metric-warning-notice).
 
   :::
 
+- **process_check_interval** <span class='type'>Second</span>
+
+  Default `6`
+
+  The `process_check` option sets the time interval for collecting the process execution status.
+
 - **iplist_interval** <span class='type'>Second</span>
 
-  You can collect a list of IPs for your database servers. Set the time interval in seconds (at least 3 seconds) for collection.
+  Default `0` (Off)
 
-<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql">
+  Set the time interval for collecting the IP list for the database server. You can set the time interval in seconds (minimum of 3 seconds).
+
+  :::note
+
+  If the `xos_dbip=true` option is set in the _whatap.conf_ file, it is sent to the `db_ip_list` category. You can check it after selecting the `db_ip_list` category from the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" /> menu.
+
+  :::
+
+<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql,db2">
 
 - **file** <span class='type'>String</span>
 
@@ -121,6 +145,23 @@ Copy the _xos_ directory to the database server, and then enter the agent server
   # example
   file=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLOG
   ```
+
+  </InDoc>
+
+  <InDoc product='db2'>
+
+  See the following example:
+
+  ```ini title='xos.conf'
+  # example
+  file=/home/dbuser/sqllib/db2dump/db2diag.log
+  ```
+
+  :::note
+
+  For more information about the log file location in IBM DB2, see the [following link](https://www.ibm.com/docs/db2/11.1?topic=parameters-logpath-location-log-files).
+
+  :::
 
   </InDoc>
 

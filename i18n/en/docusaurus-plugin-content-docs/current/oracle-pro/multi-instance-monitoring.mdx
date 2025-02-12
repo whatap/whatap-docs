@@ -79,15 +79,31 @@ import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-n
 
 <Dbv2mimactivesessionnote />
 
-{/*## 세션 상세 정보 확인하기*/}
-import Dbv2sessiondetailsinfo from "../common-items/_db-v2-session-details-info.mdx";
+### Checking the session information details {#session-details}
 
-<Dbv2sessiondetailsinfo />
+If you select a session in the <Cmdname sid="active_sessions" className="uitext" /> tab, the <Cmdname sid="session_detail" className="uitext" /> window appears. You can see the information details about the selected session.
 
-{/*쿼리 자세히 보기*/}
-import Dbquerydetails from "../common-items/_db-query-details.mdx";
+<ImgLang img='db-session-details-info-oracle-pro.png' desc='Session Details' />
 
-<Dbquerydetails level={3} />
+:::note
+
+For more information about the <Cmdname sid="session_detail" className="uitext" /> window, see [the following](usage-ui#checksessioninfo).
+
+:::
+
+### See query details {#query-details}
+
+To check the SQL query information of the current session or past sessions, check the <UI>query_text</UI> column. The <Cmdname sid="TTL06224" className="uitext" /> window appears to display the query statement and SQL plan.
+
+<ImgLang img="db-sql-details-new-oracle-pro.png" desc="SQL 상세" />
+
+:::note
+
+- For more information about the <Cmdname sid="TTL06224" className="uitext" /> window, see [the following](usage-ui#query-details).
+
+- You can see the tuning guide after selecting the ![Tuning icon](/img/ic-chat-red.svg) button in the Plan tree. The tuning guide can be viewed when the nodes in the Plan Tree are `TABLE ACCESS (FULL)` and `INDEX (SKIP SCAN)` and the nodes contain the keyword, `CARTESIAN`.
+
+:::
 
 import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
 

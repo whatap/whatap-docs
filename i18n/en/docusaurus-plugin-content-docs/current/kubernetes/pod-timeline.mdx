@@ -1,0 +1,27 @@
+---
+id: pod-timeline
+title: Pod 타임라인
+description: "It guides you to the \bpod timeline menu."
+keywords:
+  - Kubernetes
+  - Kubernetes Monitoring
+  - Dashboard
+  - Pod 타임라인
+toc_max_heading_level: 3
+---
+
+import TimelineBS from '../common-items/_import_k8s-timeline-basic.mdx';
+
+Home &gt; Select Project &gt; <Cmdname sid="side_workload" className="uitext" /> &gt; ***Pod Timeline***
+
+<TimelineBS menu='Pod 타임라인' object='Pod' linkobject='pod' />
+
+{/* Pod 종료 및 재시작 시간을 추적할 수 있습니다.
+과거 특정 시점의 **Pod 상태(Running, Pending, Succeeded, Failed)**를 확인할 수 있습니다. */}
+
+{/* 다음과 같이 최근 7일 동안 수집된 노드 목록이 나타납니다. You can visually see the state changes of nodes along the time axis. If you hover your mouse over each time zone, the start and end times for the zone appears as tooltips together with the node's status (***Ready***, ***NotReady***, etc.).
+
+특정 시점의 Pod 상태(Running, Pending, Succeeded, Failed)를 확인할 수 있습니다. 
+Pod 이름, 네임스페이스 등으로 필터링할 수 있습니다. 최근 1시간 동안 수집된 데이터를 시간 축 기반으로 시각화하고, 마우스를 가져다 대면 해당 시점의 Pod 상태, 시작 시간, 종료 시간 등의 세부 정보를 툴팁으로 제공합니다. 특정 시간 범위를 드래그하여 과거 데이터를 확인할 수 있으며, 특정 Pod를 클릭하면 리소스 사용량, 실행 중인 컨테이너, 소유 정보(ownerReference) 등을 포함한 Pod의 상세 정보를 확인할 수 있습니다. */}
+
+{/* Pod 타임라인 메뉴의 요약 탭에서는 Pod의 리소스 사용량, 실행 중인 노드 정보, ownerReference, 실행 중인 컨테이너 목록 등의 정보를 제공합니다. Pod와 컨테이너의 리소스 사용량은 평균 및 최대 사용률을 기준으로 정상, 과소 사용, 과다 사용 상태를 구분할 수 있습니다. Pod 및 컨테이너 타임라인은 장애 발생 시점 파악, 리소스 과사용 감지, 안정성 모니터링에 효과적으로 활용할 수 있습니다. */}

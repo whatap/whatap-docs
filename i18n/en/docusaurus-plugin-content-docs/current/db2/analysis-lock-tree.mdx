@@ -1,0 +1,41 @@
+---
+id: analysis-lock-tree
+title: Lock tree
+description: You can analyze the lock trend during the day and check deadlocked queries.
+keywords:
+  - IBM DB2
+  - DATABASE
+  - Lock
+  - Lock tree
+---
+
+import Dblocktreedesc from "../common-items/_db-locktree-desc.mdx";
+import Dblocktreeusingbasic from "../common-items/_db-locktree-using-basic.mdx";
+
+<Collection docs={
+  [
+    {Topic: Dblocktreedesc, props: {level: 2, desc: '락트리'}},
+    {Topic: Dblocktreeusingbasic, props: {level: 2, desc: '기본 사용 안내'}},
+  ]}
+/>
+
+## Column information guide
+
+| Item                      | Description                                                 |
+| ------------------------- | ----------------------------------------------------------- |
+| `instance`                | Name of the DB2 instance (agent).                           |
+| `application_handle`      | Unique handle value that identifies a specific application. |
+| `dbname`                  | Database name.                                              |
+| `username`                | User name of the current session.                           |
+| `runtime`                 | Time when the current session was run.                      |
+| `state`                   | Current state of the session.                               |
+| `activity_type`           | Type of the operation running in the session.               |
+| `query`                   | Content of the SQL query running in the session.            |
+| `lock_name`               | Unique ID of the lock.                                      |
+| `lock_object_type`        | Type of the object to which the lock was applied.           |
+| `table_name`              | Name of the table to which the lock was applied.            |
+| `holder_application_name` | Name of the application with the lock.                      |
+| `holder_member`           | ID of the member with the lock.                             |
+| `waiter_application_name` | Name of the application waiting for lock.                   |
+| `waiter_member`           | ID of the member waiting for lock.                          |
+| `wait_time`               | Lock waiting time.                                          |

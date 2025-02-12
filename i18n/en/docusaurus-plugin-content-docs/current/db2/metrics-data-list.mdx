@@ -1,0 +1,112 @@
+---
+id: metrics-data-list
+title: IBM DB2 metrics
+description: It guides you to IBM DB2 database metrics.
+keywords:
+  - IBM DB2
+  - Metrics
+  - DATABASE
+  - Database Monitoring
+---
+
+Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
+
+For more information about other metrics, see [the link](https://www.postgresql.org/docs/).
+
+import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<div className="metricslist">
+
+<AgentStatus />
+
+## db_db2_counter {#db_db2_counter}
+
+- Collection interval: 5 seconds
+
+- Statistical data: 5 minutes, 1 hour
+
+### Tags {#db_db2_counter-tags}
+
+The following lists the tags that are collected in the `db_db2_counter` category.
+
+| Tag name    | Description                     | Remarks      |
+| ----------- | ------------------------------- | ------------ |
+| `dbType`    | Database type.                  | -            |
+| `dbVersion` | Version of the database in use. | -            |
+| `oname`     | Agent name                      | Unique value |
+
+### Field {#db_db2_counter-filed}
+
+The following lists the fields that are collected in the `db_db2_counter` category.
+
+| Metrics                    | Description                              |
+| -------------------------- | ---------------------------------------- |
+| `active_sessions`          | Number of active sessions                |
+| `col_hit_ratio`            | Hit ratio of the column cache            |
+| `col_logical_reads`        | Number of logical reads for columns      |
+| `col_physical_reads`       | Number of physical reads for columns     |
+| `col_reads_total`          | Total number of reads for columns        |
+| `connect_error`            | Number of database connection errors     |
+| `cpu_cores`                | Number of CPU cores in use               |
+| `cpu_usage_total`          | Total CPU usage (%)                      |
+| `data_hit_ratio`           | Data cache hit ratio                     |
+| `data_logical_reads`       | Number of logical reads for data         |
+| `data_physical_reads`      | Number of physical reads for data        |
+| `data_reads_total`         | Total number of reads for data           |
+| `direct_read`              | Number of direct reads                   |
+| `direct_readtime`          | Direct reading time                      |
+| `direct_write`             | Number of direct writes                  |
+| `direct_writetime`         | Direct writing time                      |
+| `fatal`                    | Number of fatal errors                   |
+| `count`                    | Total number of specific events or items |
+| `gbp_column_hit_ratio`     | Hit ratio of the GBP column cache        |
+| `gbp_data_hit_ratio`       | Hit ratio of the GBP data cache          |
+| `gbp_index_hit_ratio`      | Hit ratio of the GBP index cache         |
+| `gbp_index_logical_reads`  | Number of GBP index logical reads        |
+| `gbp_index_physical_reads` | Number of GBP index physical reads       |
+| `gbp_logical_reads`        | Number of GBP data logical reads         |
+| `gbp_physical_reads`       | Number of GBP data physical reads        |
+| `gbp_total_hit_ratio`      | Hit ratio of the GBP total cache         |
+| `gbp_xda_hit_ratio`        | Hit ratio of the GBP XDA cache           |
+| `gbp_xda_logical_reads`    | Number of GBP XDA logical reads          |
+| `gbp_xda_physical_reads`   | Number of GBP XDA physical reads         |
+| `index_hit_ratio`          | Hit ratio of the index cache             |
+| `index_logical_reads`      | Number of index logical reads            |
+| `index_physical_reads`     | Number of index physical reads           |
+| `index_reads_total`        | Number of all index reads                |
+| `lock_wait_sessions`       | Number of lock waiting sessions          |
+| `log_reads`                | Number of log reads                      |
+| `log_writes`               | Number of log writes                     |
+| `max_appls`                | Maximum application count                |
+| `max_connections`          | Maximum connection count                 |
+| `mem`                      | Memory usage                             |
+| `memory_free`              | Available memory size (GB)               |
+| `memory_swap_free`         | Available swap memory size (GB)          |
+| `memory_swap_total`        | Total swap memory size (GB)              |
+| `memory_total`             | Total memory size (GB)                   |
+| `reads_total`              | Number of all reads                      |
+| `rows_deleted`             | Number of deleted rows                   |
+| `rows_inserted`            | Number of inserted rows                  |
+| `rows_modified`            | Number of modified rows                  |
+| `rows_read`                | Number of read rows                      |
+| `rows_returned`            | Number of returned rows                  |
+| `rows_updated`             | Number of updated rows                   |
+| `total_commit_count`       | Number of all commits                    |
+| `total_hit_ratio`          | Total cache hit ratio                    |
+| `total_log_available`      | Available total log capacity (GB)        |
+| `total_log_used`           | Available total log capacity (GB)        |
+| `total_log_used_percent`   | Used total log ratio (%)                 |
+| `total_rollback_count`     | Number of all rollbacks                  |
+| `total_rollback_time`      | Total rollback time (ms)                 |
+| `total_runstats_time`      | Total statistics execution time          |
+| `total_sessions`           | Number of all sessions                   |
+| `warning`                  | Number of warnings occurred              |
+| `xda_hit_ratio`            | XDA cache hit ratio                      |
+| `xda_logical_reads`        | Number of XDA logical reads              |
+| `xda_physical_reads`       | Number of XDA physical reads             |
+| `xda_reads_total`          | Number of all XDA reads                  |
+
+<Xosmetrics />
+
+</div>

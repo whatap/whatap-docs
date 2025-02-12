@@ -1,0 +1,42 @@
+---
+id: data-collection-retention
+title: Data collection and retention periods
+description: The following provides information on the collection and retention periods for monitoring data in the WhaTap monitoring service.
+keywords:
+  - Data collection
+  - Retention period
+---
+
+The following provides information on the collection and retention periods for monitoring data in the WhaTap monitoring service.
+
+## Data collection
+
+| Search Scope of Metrics            | Default query                 | Selective query             |
+| ---------------------------------- | ----------------------------- | --------------------------- |
+| 3 hours or less                    | **RAW data** (real-time data) | 5-minute data / 1-hour data |
+| More than 3 hours, 15 days or less | 5-minute data                 | 1 hour data                 |
+| More than 15 days                  | 1 hour data                   | -                           |
+
+:::note
+
+**RAW data** is real-time data transmitted from the monitoring agent, and the data transmission cycle is set at intervals such as 3 seconds, 5 seconds, and 10 seconds.
+
+:::
+
+## Data retention period
+
+The data retention periods for each WhaTap product are provided as follows:
+
+- RAW data (real-time data) retention period: **1 month**
+
+- Statistical data (5 min/1 hour) retention period: **1 year**
+
+- Profile data retention period: **1 month**
+
+:::note
+
+- In case of the **Network** product, the statistical data (5 min/1 hour) retention period is **100 days**.
+
+- If the log monitoring feature is enabled, the default retention period for log data is **1 day**. You can change it to a desired period. For more information, see [the following](../log/log-setting#log-data-setting).
+
+:::

@@ -2,7 +2,7 @@
 id: metrics-server
 title: Server metrics
 description: It guides you to the server monitoring metrics.
-toc_max_heading_level: 2
+toc_max_heading_level: 3
 keywords:
   - Server
   - Metrics
@@ -18,20 +18,60 @@ import Metricsindex from "../common-items/_metrics-index.mdx";
 
 It guides you to the server monitoring metrics.
 
+{/* 
+
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+
+*/}
 
 <div className="metricslist">
 
-<AgentStatus />
+{/* <AgentStatus /> */}
 
-## server_base
+## Category V1
+
+### agent_status_summary {#agent_status_summary}
+
+This category collects metrics related to agent status every 10 seconds.
+
+#### Fields {#agent_status_summary_filed}
+
+| Field name    |       Unit      | Description                                    | Remarks          |
+| ------------- | :-------------: | ---------------------------------------------- | ---------------- |
+| `inActTime`   | Millisecond(ms) | Amount of time the agent remains inactive      | -                |
+| `isActive`    |        -        | Whether the agent is active or not             | `true` / `false` |
+| `isRebooted`  |        -        | Whether the server has been recently restarted | `true` / `false` |
+| `lastActTime` | Millisecond(ms) | Time when the agent was last activated         | `0`: If disabled |
+| `oid`         |        -        | Unique IDs for each agent in the project       | -                |
+| `startTime`   | Millisecond(ms) | Timestamp when the agent was started.          | -                |
+| `status`      |        -        | Status of the current agent                    | -                |
+| `uptime`      |   Second (sec)  | Server's uptime                                | -                |
+
+:::note
+
+The values ​​in the `status` field are distinguished as follows:
+
+- `ok`: The server is in normal status where it is active.
+
+- `inactive`: The server is disabled.
+
+- `warning`: A warning event is in progress on the server.
+
+- `fatal`: A critical event is in progress on the server.
+
+- `paused`: The agent has paused data collection.
+
+:::
+
+### server_base
 
 It is the metric for server resources.
 
 - Collection interval: 5 seconds
+
 - Statistical data: 5 minutes, 1 hour
 
-### Tags {#server_base-tags}
+#### Tags {#server_base-tags}
 
 | Tag name  | Description                | Remarks |
 | --------- | -------------------------- | ------- |
@@ -41,7 +81,7 @@ It is the metric for server resources.
 | okindName | Server type name           | -       |
 | os        | OS type (Linux or Windows) | -       |
 
-### Fields {#server_base-fields}
+#### Fields {#server_base-fields}
 
 | Field name           | Unit            | Description                                  | Remarks |
 | -------------------- | --------------- | -------------------------------------------- | ------- |
@@ -85,14 +125,15 @@ It is the metric for server resources.
 | processorQueueLength | Positive number | Process queue length                         | Windows |
 | uptime               | Positive number | Server uptime after a boot (TimeStamp)       | Common  |
 
-## server_cpu_core
+### server_cpu_core
 
 Metrics for each server CPU core
 
 - Collection interval: 5 seconds
+
 - Statistical data: -
 
-### Tags {#server_cpu_core-tags}
+#### Tags {#server_cpu_core-tags}
 
 | Tag name | Description                | Remarks |
 | -------- | -------------------------- | ------- |
@@ -101,7 +142,7 @@ Metrics for each server CPU core
 | oname    | Server name                | -       |
 | os       | OS type (Linux or Windows) | -       |
 
-### Fields {#server_cpu_core-fields}
+#### Fields {#server_cpu_core-fields}
 
 | Field name           | Unit            | Description                      | Remarks |
 | -------------------- | --------------- | -------------------------------- | ------- |
@@ -118,14 +159,15 @@ Metrics for each server CPU core
 | sys                  | Percent         | Core sys utilization             | Linux   |
 | usr                  | Percent         | Core usr utilization             | Linux   |
 
-## server_disk
+### server_disk
 
 It has metrics for each file system mounted on each server.
 
 - Collection interval: 5 seconds
+
 - Statistical data: 5 minutes, 1 hour
 
-### Tags {#server_disk-tags}
+#### Tags {#server_disk-tags}
 
 | Tag name       | Description                    | Remarks |
 | -------------- | ------------------------------ | ------- |
@@ -137,7 +179,7 @@ It has metrics for each file system mounted on each server.
 | oname          | Server name                    | -       |
 | os             | OS type (Linux or Windows)     | -       |
 
-### Fields {#server_disk-fields}
+#### Fields {#server_disk-fields}
 
 | Field name       | Unit            | Description                                                             | Remarks |
 | ---------------- | --------------- | ----------------------------------------------------------------------- | ------- |
@@ -159,14 +201,15 @@ It has metrics for each file system mounted on each server.
 | readIops         | Prime number    | Read count per second                                                   | Common  |
 | writeIops        | Prime number    | Written count per second                                                | Common  |
 
-## server_network
+### server_network
 
 Network interface metrics for each server
 
 - Collection interval: 5 seconds
+
 - Statistical data: 5 minutes, 1 hour
 
-### Tags {#server_network-tags}
+#### Tags {#server_network-tags}
 
 | Tag name | Description                    | Remarks |
 | -------- | ------------------------------ | ------- |
@@ -177,7 +220,7 @@ Network interface metrics for each server
 | oname    | Server name                    | -       |
 | os       | OS type (Linux or Windows)     | -       |
 
-### Fields {#server_network-fields}
+#### Fields {#server_network-fields}
 
 | Field name     | Unit            | Description      | Remarks |
 | -------------- | --------------- | ---------------- | ------- |
@@ -194,14 +237,15 @@ Network interface metrics for each server
 | trafficOut     | bps             | Outbound traffic | -       |
 | trafficOutAcct | Positive number | WhaTap only      | -       |
 
-## server_netstat
+### server_netstat
 
 It provides the network protocol statistics for each server.
 
 - Collection interval: 5 seconds
+
 - Statistical data: 5 minutes, 1 hour
 
-### Tags {#server_netstat-tags}
+#### Tags {#server_netstat-tags}
 
 | Tag name                        | Description                     | Remarks |
 | ------------------------------- | ------------------------------- | ------- |
@@ -220,7 +264,7 @@ It provides the network protocol statistics for each server.
 | whatap_product                  | WhaTap product type             | -       |
 | whatap_version                  | WhaTap agent version            | -       |
 
-### Fields {#server_netstat-fields}
+#### Fields {#server_netstat-fields}
 
 | Field name             | Unit            | Description                        | Remarks |
 | ---------------------- | --------------- | ---------------------------------- | ------- |
@@ -237,14 +281,15 @@ It provides the network protocol statistics for each server.
 | netstat_Unknown        | Positive number | Number of unknown sockets          | Common  |
 | Server_Filedescriptors | Positive number | Number of OS file descriptors      | Common  |
 
-## server_process
+### server_process
 
 It has the server process information.
 
 - Collection interval: 20 seconds
+
 - Statistical data: 5 minutes
 
-### Tags {#server_process-tags}
+#### Tags {#server_process-tags}
 
 | Tag name | Description                     | Remarks |
 | -------- | ------------------------------- | ------- |
@@ -256,7 +301,7 @@ It has the server process information.
 | oname    | Server name                     | -       |
 | user     | Linux user name for the process | -       |
 
-### Fields {#server_process-fields}
+#### Fields {#server_process-fields}
 
 | Field name          | Unit            | Description                          | Remarks |
 | ------------------- | --------------- | ------------------------------------ | ------- |
@@ -279,9 +324,179 @@ It has the server process information.
 | rss                 | Byte            | RSS memory size                      | Common  |
 | rssAccmulated       | Byte            | WhaTap only                          | Common  |
 
+## Catetory V2
+
+### infra_cpu
+
+It is a metric related to the server's CPU usage.
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra_cpu-fields}
+
+| Field name  | Description                                                                                                                                           | OS Name                             |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| total       | It displays the sum of the utilization in user mode (User) and kernel mode (Sys) out of the total CPU utilization.                                    | HP-UX, AIX, Solaris, Linux, Windows |
+| user        | It displays the sum of the utilization in user mode (User) and kernel mode (Sys) out of the total CPU utilization.                                    | HP-UX, AIX, Solaris, Linux, Windows |
+| sys         | It indicates the utilization in kernel mode (Sys) out of the total CPU utilization.                                                                   | HP-UX, AIX, Solaris, Linux, Windows |
+| nice        | It indicates the CPU utilization of low-priority (niced) processes. The utilization of high-priority and default processes appears in user (percent). | HP-UX, Linux                        |
+| wait        | It indicates the time ratio consumed to wait for finishing the I/O operations out of the total CPU utilization.                                       | HP-UX, AIX, Solaris, Linux          |
+| total_wait  | It indicates the sum of the utilization in user mode (User), kernel mode (Sys), and I/O waiting (wait) out of the total CPU utilization.              | HP-UX, AIX, Solaris, Linux          |
+| idle        | It indicates the percentage of CPU idle time, not performing any work.                                                                                | HP-UX, AIX, Solaris, Linux, Windows |
+| lCores      | It indicates the number of logical cores allocated to the OS.                                                                                         | HP-UX, AIX, Solaris, Linux, Windows |
+| irq         | It indicates the CPU utilization used to process the hardware interrupt requests.                                                                     | Linux                               |
+| softirq     | It indicates the CPU utilization used to process the software interrupt requests.                                                                     | Linux                               |
+| steal       | In a virtualized environment, it indicates the time ratio that the virtual CPU waits involuntarily while the hypervisor is servicing another process. | Linux                               |
+| procUtil    | This Windows-only metric indicates the total CPU utilization for all processors in the system (Windows Task Manager's CPU utilization).               | Windows                             |
+| loadavg_1m  | It indicates the average load of the system over the past one minute.                                                                                 | HP-UX, AIX, Solaris, Linux          |
+| loadavg_5m  | It indicates the average load of the system over the past five minutes.                                                                               | HP-UX, AIX, Solaris, Linux          |
+| loadavg_15m | It indicates the average load of the system over the past 15 minutes.                                                                                 | HP-UX, AIX, Solaris, Linux          |
+
+### infra_mem
+
+It is a metric related to the server's memory usage. 
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra_mem-fields}
+
+| Field name          | Description                                                                                                                                 | OS Name                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| pUsed               | It indicates only the memory utilization for user processes or the kernel out of the total memory utilization (excluding buffer and cache). | HP-UX, AIX, Solaris, Linux, Windows |
+| used                | It displays the memory usage in bytes for user processes or the kernel, excluding buffer and cache areas from the total memory.             | HP-UX, AIX, Solaris, Linux, Windows |
+| pCache              | It indicates the ratio of the area used as cache among the total memory.                                                                    | HP-UX, AIX, Solaris, Linux          |
+| cache               | It displays the amount of memory used as cache among the total memory in bytes.                                                             | HP-UX, AIX, Solaris, Linux          |
+| buffer              | This Linux-only metric displays the amount of buffer used for I/O operations out of the total memory in bytes.                              | Linux                               |
+| pUsed_pCache        | It displays the memory utilization as the sum of memory and cache areas used by user processes or the kernel.                               | HP-UX, AIX, Solaris, Linux          |
+| size                | It displays the total memory size allocated to the server in bytes.                                                                         | HP-UX, AIX, Solaris, Linux, Windows |
+| available           | It displays the available memory size in bytes.                                                                                             | Linux                               |
+| sreclaimable        | It displays the size of the cache memory used by the kernel that can be reclaimed if necessary in bytes.                                    | Linux                               |
+| sunreclaim          | It displays the size of the cache memory being used by the kernel that cannot be reclaimed in bytes.                                        | Linux                               |
+| slab                | It displays the size of cache memory used by the kernel in bytes, representing the sum of sreclaimable and sunreclaim.                      | Linux                               |
+| pageFaults          | It is the number of cases that when a process accesses memory, the corresponding data does not exist in physical memory.                    | Linux                               |
+| poolPaged           | This Windows-only metric displays the bytes in the paged pool, which represents the memory area that can be swapped out to disk.            | Windows                             |
+| poolNonPaged        | This Windows-only metric displays the bytes in the nonpaged pool, which is an area that is always resident in memory.                       | Windows                             |
+| systemCacheResident | This Windows-only metric displays the bytes in the system cache memory.                                                                     | Windows                             |
+| swapIn              | It displays the number of pages per second moved from the swap (paging space) area of ​​the disk into memory.                               | HP-UX, AIX, Solaris, Linux, Windows |
+| swapOut             | It displays the number of pages per second moved from the memory to the disk swap (paging space) area.                                      | HP-UX, AIX, Solaris, Linux, Windows |
+| fsIn                | It displays the number of pages per second loaded into memory based on the read operation on the file system.                               | HP-UX, AIX, Solaris, Linux, Windows |
+| fsOut               | It displays the number of pages per second written to disk based on the write operation on the file system.                                 | HP-UX, AIX, Solaris, Linux, Windows |
+| scanned             | It is the number of pages scanned per second for swap out or page replacement.                                                              | HP-UX, AIX, Solaris                 |
+| freed               | It is the number of pages of free memory space created per second when a swap out occurs.                                                   | HP-UX, AIX, Solaris                 |
+
+### infra_swap
+
+It is a metric related to the server's swap usage.
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra_swap-fields}
+
+| Field name | Description                                                  | OS Name                             |
+| ---------- | ------------------------------------------------------------ | ----------------------------------- |
+| size       | It displays the size of the total allocated swaps in bytes.  | HP-UX, AIX, Solaris, Linux, Windows |
+| pUsed      | It displays the size of the swaps in use as a percentage.    | HP-UX, AIX, Solaris, Linux, Windows |
+| used       | It displays the size of the allocated active swaps in bytes. | HP-UX, AIX, Solaris, Linux, Windows |
+
+### infra_kernel
+
+It is a performance metric related to the server's resource usage of the system and kernel.
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra_kernel-fields}
+
+| Field name | Description                                                                                                                               | OS Name                             |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| runq       | It is the number of processes (or threads) that are ready to run but have not yet been assigned CPU.                                      | HP-UX, AIX, Solaris, Linux, Windows |
+| blockq     | This indicates the number of processes (or threads) in the queue for I/O, paging, and such.                                               | HP-UX, AIX, Solaris, Linux          |
+| pendingq   | It is an AIX-only metric, indicating the number of threads waiting for response messages for I/O on raw devices.                          | AIX                                 |
+| waitq      | It indicates the number of processes (or threads) that have been swapped out but are temporarily in sleep state.                          | HP-UX, Solaris                      |
+| fork       | It indicates the average number of forks per second. (fork: a system call that creates a new process by duplicating the existing process) | HP-UX, AIX, Solaris, Linux          |
+| exec       | It indicates the average number of exec calls per second. (exec: a system call that replaces the current process with a new program)      | HP-UX, AIX, Solaris                 |
+| interrupt  | It displays the number of cases per second where the CPU handled hardware interrupts.                                                     | HP-UX, AIX, Solaris, Linux, Windows |
+| syscall    | It displays the number of cases per second where the kernel processed system calls.                                                       | HP-UX, AIX, Solaris, Windows        |
+| ctxswitch  | It displays the number of context switches per second between processes.                                                                  | HP-UX, AIX, Solaris, Linux, Windows |
+
+### infra_disk
+
+It is the metric related to the server's physical disk capacity and input/output (IO) performance. 
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra_disk-fields}
+
+| Field name | Description                                                                                                       | OS Name                             |
+| ---------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| read       | It displays the total amount of data read from all physical disks on the server in bytes.                         | HP-UX, AIX, Solaris, Linux, Windows |
+| write      | It displays the total amount of data written to all physical disks on the server in bytes.                        | HP-UX, AIX, Solaris, Linux, Windows |
+| total      | It displays the total amount of data read and written in all physical disks on the server in bytes.               | HP-UX, AIX, Solaris, Linux, Windows |
+| readIops   | It displays the number of read operations processed per second across all physical disks on the server.           | HP-UX, AIX, Solaris, Linux, Windows |
+| writeIops  | It displays the number of write operations processed per second across all physical disks on the server.          | HP-UX, AIX, Solaris, Linux, Windows |
+| totalIops  | It displays the number of read and write operations processed per second across all physical disks on the server. | HP-UX, AIX, Solaris, Linux, Windows |
+
+### infra_network
+
+It is a metric related to the total network traffic of the server. 
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra_network-fields}
+
+| Field name | Description                                                                                                                                  | OS Name                             |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| rxbps      | It displays the amount of data received (Rx) via all NICs (excluding loopback) on the server in bits per second (bps).                       | HP-UX, AIX, Solaris, Linux, Windows |
+| txbps      | It displays the amount of data transmitted (Tx) via all NICs (excluding loopback) on the server in bits per second (bps).                    | HP-UX, AIX, Solaris, Linux, Windows |
+| totalbps   | It displays the total amount of data received and transmitted (Tx) via all NICs (excluding loopback) on the server in bits per second (bps). | HP-UX, AIX, Solaris, Linux, Windows |
+| rxpps      | It displays the packets per second received (Rx) via all NICs (excluding loopback) on the server.                                            | HP-UX, AIX, Solaris, Linux, Windows |
+| txpps      | It displays packets per second transmitted (Tx) via all NICs (excluding loopback) on the server.                                             | HP-UX, AIX, Solaris, Linux, Windows |
+| totalpps   | It displays packets per second received (Rx) and transmitted (Tx) via all NICs (excluding loopback) on the server.                           | HP-UX, AIX, Solaris, Linux, Windows |
+
+:::note 
+
+The loopback interface (lo) traffic is excluded from aggregation.
+
+:::
+
+### infra_process
+
+It is a metric related to the status of active processes and resources on the server. 
+
+- Collection interval: 2 seconds 
+
+- Statistical data: 5 minutes, 1 hour
+
+#### Fields {#infra-process-fields}
+
+| Field name       | Description                                                                | OS Name                             |
+| ---------------- | -------------------------------------------------------------------------- | ----------------------------------- |
+| procTotal        | This value displays the total number of processes running on the server.   | HP-UX, AIX, Solaris, Linux, Windows |
+| threadTotal      | This value displays the total number of threads running on the server.     | HP-UX, AIX, Solaris, Linux, Windows |
+| handleTotal      | This value displays the total number of handles running on the Windows OS. | Windows                             |
+| defunctTotal     | This value indicates the number of defunct processes.                      | HP-UX, AIX, Solaris, Linux          |
+
+:::note 
+
+It displays the numbers of processes, threads, handles, and defunct processes running on the server.
+
+:::
+
 </div>
 
-## References
+### References
 
 - [Windows metrics material](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/cpu-analysis)
+
 - [Linux metrics material](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index)

@@ -1,28 +1,35 @@
 Home &gt; <Cmdname sid="side_integratedReport" className="uitext" />
 
-On the initial screen of the WhaTap monitoring service, select <Cmdname sid="side_integratedReport" className="uitext" /> from the side menu without selecting a project. <Cmdname sid="side_integratedReport" className="uitext" /> allows you to easily generate reports for multiple projects. 
-
-You can proceed with creating a report after selecting a report type and a desired report, and then you can check its progress in the report generation list. If an error occurs in a project during creation, you can check the error details. You can view a created report right away or share it with others by downloading and printing.
+You can create and share reports that have integrated multiple projects. You can also create a report by selecting a report type and the projects to include, and check the task progress in the creation list. If an error occurs in a specific project, you can see the error details. The reports that have been created can be viewed immediately or shared with the download and print features.
 
 <ImgLang img='integration_report_01.png' />
 
-The functions of the <Cmdname sid="side_integratedReport" className="uitext" /> are as follows.
+:::note
+
+The <Cmdname sid="side_integratedReport" className="uitext" /> menu can generate only the reports for projects of **Application**, **Server**, **Kubernetes**, and **Database** products.
+
+:::
+
+## Guide to major features
+
+The <Cmdname sid="side_integratedReport" className="uitext" /> menu provide the following features:
 
 - **Supporting multiple projects**
 
-  In <Cmdname sid="side_integratedReport" className="uitext" />, you can easily select and create multiple projects at a time. Under the previous <Cmdname sid="side_report" className="uitext" /> menu, the reports must be created for each project.
+  It is convenient to be able to generate reports at once by selecting multiple projects. The <Cmdname sid="side_report" className="uitext" /> menu available in any project can generate reports only for a desired project.
 
 - **Create Report by Kind**
 
-  In <Cmdname sid="create_report" className="uitext" />, you can select a project by the business and save it as a template. This function is useful in the micro service architecture (MSA) environment where projects are divided into business units.
+  In the <Cmdname sid="create_report" className="uitext" /> feature, you can select projects by the work unit to save as a template. This feature is useful in the Micro Service Architecture (MSA) environment where projects are usually divided by the
+  work unit.
 
 - **Big Data Optimization**
 
-  With an aid of <Cmdname sid="side_integratedReport" className="uitext" />, the report creation time has been drastically reduced. Even if an error occurs while creating a project report, you can view the result of the report.
+  With an aid of this, the report creation time has been drastically reduced. Even if an error occurs while creating a project report, you can view the result of the report.
 
 - **Simultaneous operation during report generation**
 
-  In <Cmdname sid="side_integratedReport" className="uitext" />, you can create a report while performing other tasks. In the previous <Cmdname sid="side_report" className="uitext" /> menu, you have to wait until the generation task is finished.
+  You can do other tasks while generating a report. In the <Cmdname sid="side_report" className="uitext" /> menu available in any project, you must wait until the report generation is completed.
 
   In <Cmdname sid="side_integratedReport" className="uitext" />, you can go to another page while creating a report. You can also see its progress and view the created report from the report result list.
 
@@ -32,72 +39,161 @@ The functions of the <Cmdname sid="side_integratedReport" className="uitext" /> 
 
 ## Difference between the report and integrated report
 
-<Cmdname sid="side_report" className="uitext" /> menu generates a report for a single project. Accordingly, this menu can be accessed through <Cmdname sid="side_reportStat" className="uitext" /> or <Cmdname sid="side_report" className="uitext" /> after selecting a project.
+The <Cmdname sid="side_report" className="uitext" /> menu available in any project generates reports for the project. You can access it through <Cmdname sid="side_report" className="uitext" /> or <Cmdname sid="side_reportStat" className="uitext" /> in the side menu after selecting a project on the initial screen.
 
-<Cmdname sid="side_integratedReport" className="uitext" /> menu is used to create a report for multiple projects. It can be accessed from the main menus without selecting a project. For more information about the <Cmdname sid="side_report" className="uitext" />, see [the following](report-intro).
+The <Cmdname sid="side_integratedReport" className="uitext" /> menu can generate reports for multiple projects. It can be accessed from Home screen without selecting a project.
 
-## How to create reports
+## Create Report
 
-1. **Selecting the report type**  
+<Columns>
+<Column className="text--left width--60 padding-r--10">
 
-   <ImgLang img='integration_report_02.png' />
+### Selecting the report type
 
-   If you select a desired report type in <Cmdname sid="report_type" className="uitext" />, the <Cmdname sid="create_report" className="uitext" /> button is activated. The ***icon*** before the report name indicates the project platform supported by the report form.
+If you select a desired report type in the <Cmdname sid="report_type" className="uitext" /> list, the <Cmdname sid="create_report" className="uitext" /> button is activated. The ***icon*** before the report name indicates the project platform that supports report creation.
 
-   - ![Platform Application icon](/img/platform-application.svg) indicates the **Application** project platform.
-   - ![Platform Kubernetes icon](/img/platform-kubernetes.svg) indicates the **Kubernetes** project platform.
-   - ![Platform Server icon](/img/platform-server.svg) indicates the **Server** project platform.  
+- ![Platform Application icon](/img/platform-application.svg) indicates the **Application** project platform.
 
-2. **Detailed settings**  
+- ![Platform Database icon](/img/platform-database.svg) indicates the **_Database_** project platform.
 
-   <ImgLang img='master_report.png' />
+- ![Platform Kubernetes icon](/img/platform-kubernetes.svg) indicates the **Kubernetes** project platform.
 
-   After selecting a report type, click <Cmdname sid="create_report" className="uitext" />. The detailed settings are configured as follows:
+- ![Platform Server icon](/img/platform-server.svg) indicates the **Server** project platform.
 
-   - **Report Title**
+</Column>
 
-     If there are multiple reports of the same type, the report names make it easier to distinguish the report results.
+<Column className="text--left">
 
-   - **Time**
+<ImgLang img='integration_report_02.png' />
 
-     Select a period for the data to be used in the report. The period differs depending on the report type (daily, weekly, monthly).  
+</Column>
+</Columns>
 
-   - **Select Project**
+<Columns>
+<Column className="text--left width--60 padding-r--10">
 
-     Select a project for report creation. Selection is possible on the group and project basis.  
+### Configuring in detail
 
-   - **Saving and importing report forms**
+When the <Cmdname sid="create_report" className="uitext" /> window appears, set each item.
 
-     You can save the specified report settings as a template and import it from the type list upon later creation. This function is useful for those who frequently use projects on a task basis.
+- <Cmdname sid="title" className="uitext" />: If there are multiple reports of the same type, the report names make it easier to distinguish the report results.
 
-3. **Create Report**
+- <Cmdname sid="time" className="uitext" />: Select a period for the data to be used in the report. The period differs depending on the report type (daily, weekly, monthly).
 
-   After configuration, click <Cmdname sid="create_report" className="uitext" /> to create a report.
+- <Cmdname sid="project" className="uitext" />: Select a project to create a report. You can select a group or project. The desired project can be searched via the <Cmdname sid="search" className="uitext" /> field.
 
-## Checking the job list
+- <Cmdname sid="save_report_template" className="uitext" />: You can save the settings of the current report as a template. You can load it from the <Cmdname sid="type" className="uitext" /> list when creating a new report.
 
-<ImgLang img='integration_report_03.png' />
+After configuration, select <Cmdname sid="create_report" className="uitext" />.
+
+</Column>
+
+<Column className="text--left">
+
+<ImgLang img='master_report.png' />
+
+</Column>
+</Columns>
+
+:::tip
+
+The methods how to set the query period depending on the format of the selected report are as follows:
+
+- **Daily report**: You can select the start/end date and time.
+
+- **Weekly report**: Simply select a start date. Then the end date is selected automatically after calculation.
+
+- **Monthly report**: Simply select a start date. Then the end date is selected automatically after calculation.
+
+  - If the start date is the 1st date, up to the end of the month is automatically selected.
+
+  - If the start date is not the 1st date, up to the date before the next month is automatically selected.
+
+Example 1: If the start date is **January 1**, from **January 1 00:00:00** to **January 31 23:59:59** is automatically selected.
+
+Example 2: If the start date is **January 10**, from **January 10 00:00:00** to **February 9 23:59:59** is automatically selected.
+
+:::
+
+:::note
+
+- For more information on how to use the <Cmdname sid="time" className="uitext" /> option, see [the following](../usage-ui#timeselector).
+
+- For more information on how to load the saved report forms, see [the following](#loadcustomtemplate).
+
+:::
+
+### Loading the report forms {#loadcustomtemplate}
+
+<Columns>
+<Column className="text--left width--60 padding-r--10">
+
+When creating a new report, the form saved with the <Cmdname sid="save_report_template" className="uitext" /> feature can be checked in <Cmdname sid="type" className="uitext" /> when creating a subsequent report.
+
+Users who frequently use projects as work units can find this highly useful.
+
+- ![Edit icon](/img/ic-edit.svg): You can modify any saved report form.
+
+- ![Delete icon](/img/ico-trash.svg): You can delete any saved report form.
+
+</Column>
+<Column className="text--left">
+
+<ImgLang img="int-report-type-custom-template.png" />
+
+</Column>
+</Columns>
+
+## Checking the report list
+
+<Columns>
+<Column className="text--left width--60 padding-r--10">
 
 You can see the reports that were created and are being created in <Cmdname sid="generation_report_list" className="uitext" />.
 
-In the <Cmdname sid="all" className="uitext" /> list, as well as the reports created by you, the reports created by other people with the same permission can be seen. In the <Cmdname sid="my_report" className="uitext" /> list, you can see your own reports after being filtered.
+- In the <Cmdname sid="all" className="uitext" /> tab, you can see the reports created by you and the reports created by users with the same roles.
 
-A report created with no error has the <span class='woer'>![Check icon](/img/ic-check-bl.svg) check</span> icon. In case of a report with any error, the <span class='wer'>![Warning icon](/img/ic-warning-org.svg) warning</span> icon is displayed together. If you click the <span class='wer'>![Warning icon](/img/ic-warning-org.svg) warning</span> icon, you can see in which project the error occurred.
+- In the <Cmdname sid="my_report" className="uitext" /> tab, you can see only the reports created by you.
 
-## Viewing and sharing reports
+- If you select ![More icon](/img/ico-more.svg) on the upper right of a report item, you can use a feature to copy or delete the report.
 
-<ImgLang img='integration_report_04.png' />
+</Column>
+<Column className="text--left padding-r--10">
 
-The reports are provided in three different ways:
+<ImgLang img='integration_report_03.png' />
+
+</Column>
+</Columns>
+
+:::note
+
+- A report created with no error has the ![Check icon](/img/ic-check-bl.svg) icon. In case of a report with any error, the ![Warning icon](/img/ic-warning-org.svg) warning icon is displayed together. If you select the ![Warning icon](/img/ic-warning-org.svg) icon, you can see in which project the error occurred.
+
+- The generated reports are stored for 7 days, up to a maximum of 100 records.
+
+:::
+
+## Viewing and sharing
+
+<Columns>
+<Column className="text--left width--40 padding-r--10">
 
 - **Viewing on the screen**
 
-  If you select a report created in the job list, the report can be seen on the screen.
+  In the <Cmdname sid="generation_report_list" className="uitext" /> list, if you select a created report, you can see its details.
 
 - **Download**
 
-  If you click <Cmdname sid="download" className="uitext" />, the files same as reports in the quick view are downloaded in HTML format. Reports can be shared with the people with no management permission for monitoring.
+  Select <Cmdname sid="download" className="uitext" /> to download the viewed report as an HTML file. You can share the report with users who do not have the monitoring management role.
 
 - **Printing and saving PDF**
 
-  If you click <Cmdname sid="print" className="uitext" />, you can print it with the printer connected to your computer or save it in PDF format.
+  Select <Cmdname sid="print" className="uitext" /> to print the report via a printer or save it as a PDF file. 
+
+</Column>
+<Column className="text--left">
+
+<ImgLang img='integration_report_04.png' />
+
+</Column>
+</Columns>

@@ -111,8 +111,6 @@ Configure necessary settings in _whatap.conf_ for monitoring applications such a
 
     This agent manages Kubernetes network interfaces (VPC CNI) in the AWS environment. This process allocates and releases AWS network resources (ENIs) for inter-Pod communication. If a problem occurs, it may cause network connection failures or resource allocation errors. 
 
-    {/* 이 프로세스는 포드 간의 네트워크 트래픽을 처리하기 위해 Elastic Network Interface(ENI)를 동적으로 할당 및 해제하는 작업을 수행합니다. It plays an important role in debugging the issues related to network connection failures. */}
-
   - **kube-proxy** 
 
     This process for routing network traffic is performed in the Kubernetes cluster. This process runs on each node and enables communication between services and Pods. It also uses Linux networking technologies like iptables or IPVS to deliver the cluster's internal requests to the correct Pods. This enables service discovery and load balancing in the Kubernetes cluster.
