@@ -112,15 +112,59 @@ import CSVdownload from "../common-items/_browser-stat-download-csv.mdx";
 
 <ImgLang img="browser-resourceload-stat-group-list.png" desc="リソースグループ一覧" />
 
+- 一覧の一番左の![詳細アイコン](/img/ico-detail-view.svg) <Cmdname sid="detail" className="uitext" />ボタンを選択すると<Cmdname sid="TTL08959" className="uitext" />画面が表示されます。 <Cmdname sid="TTL08959" className="uitext" />画面を通じて選択したリソースグループの詳細な統計情報を確認できます。 詳細については、[次の文書](#TTL08663)を参照してください。
+
 - テーブルのヘッダーカラムをクリックすると、そのカラムを基準に一覧をソートできます。 
 
 - ヘッダーカラムにマウスをオーバーすると、そのカラムの説明をツールチップで確認できます。
+
+  <ImgLang img="browser-statistics-resource-header.png" desc="Tooltip" />
 
 - ![カラムアイコン](/img/ic-column.svg) <Cmdname sid="BTN06441" className="uitext" />: テーブルヘッダーカラムを非表示にしたり、必要な項目を追加できます。 カラムの順序を変更することもできます。 詳細については、[次の文書](#setcolumn)を参照してください。
 
 - ![ポップアップアイコン](/img/ic-popup.svg) : リソースグループの一覧を全画面で確認できます。
 
 - ![左方向アイコン](/img/left-arrow.svg) / ![右方向アイコン](/img/right-arrow.svg) : リソース一覧が多い場合は、ボタンを選択してページを移動できます。
+
+### <Cmdname sid="TTL08959" /> {#TTL08959}
+
+選択したリソースグループの詳細な統計情報を確認できます。
+
+- <Cmdname sid="TTL08963" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-timeline.png" />
+
+  選択したリソースグループのフルロードの性能情報を提供します。 リソースロード時間と読み込み段階別プロセスを平均時間で示します。 これにより、ブラウザーアプリケーションの全体的な性能を把握できます。 詳細については、[次の文書](dashboard#pageloadtimeline)を参照してください。
+
+- <Cmdname sid="TTL08961" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-trend.png" />
+
+  選択したリソースグループの時間に応じたページロード時間を確認できます。 選択ボックスで様々な性能メトリクスを選択できます。 性能メトリクスの詳細については、[次の文書](#columninfo)を参照してください。
+
+- <Cmdname sid="TTL08962" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-loadsize-trend.png" />
+
+  選択したリソースグループのタイムゾーンごとにロードされたページリソースの合計サイズを確認できます。 ページのロードサイズの推移により、ネットワーク負荷とページ最適化ステータスを分析できます。
+
+- <Cmdname sid="TTL08960" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-loadcount-trend.png" />
+
+  選択したリソースグループのタイムゾーンごとにロードされたリソースの数を確認できます。 リソースの数が急増したり、異常に増加したりする場合、特定のページで過剰なリソース要求が発生したことを確認できます。
+
+- <Cmdname sid="ITM08284" className="uitext" /> / <Cmdname sid="ITM08876" className="uitext" /> / <Cmdname sid="ITM08285" className="uitext" /> / <Cmdname sid="download_time" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-time-graph.png" />
+
+  タイムゾーンごとにDNS照会にかかった平均時間やサーバーとの接続を設定するためにかかった平均時間、最初のバイトを受けるためにかかった平均時間、リソースをダウンロードするためにかかった平均時間を確認することができます。
+
+- <Cmdname sid="TTL08862" className="uitext" />
+
+  <ImgLang img="browser-statistics-resource-stat-detail-resourcegroup.png" />
+
+  選択したリソースグループに含まれる個別リソースのさまざまな性能指標を確認できるテーブル一覧です。
 
 ## 参照結果フィルタリング
 

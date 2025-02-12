@@ -96,7 +96,7 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | ^                       | ^     | コンテナのメモリLimitサイズ                                                                                                                     |
 | mem_maxusage            | バイト   | MemMaxUsage                                                                                                                          |
 | ^                       | ^     | Container Memory Max Usage (byte)                                                                                                    |
-| ^                       | ^     | コンテナメモリの最大使用量の記録値                                                                                                                    |
+| ^                       | ^     | コンテナメモリの最大使用量の記録値<br/> (詳細は[下記案内](#scrollTo-memmaxusage)を参照してください。)                                                                  |
 | mem_percent             | パーセント | MemWsByLimit                                                                                                                         |
 | ^                       | ^     | Container Memory Working Set by Limit (%)                                                                                            |
 | ^                       | ^     | コンテナメモリLimit基準working set使用量<br/>= mem_working_set / mem_limit \* 100                                                                |
@@ -170,6 +170,12 @@ Kubernetesから収集される指標の一部は、サーバーモニタリン�
 | status                  | 文字列   | ConStatus                                                                                                                            |
 | ^                       | ^     | Container Current Status                                                                                                             |
 | ^                       | ^     | コンテナステータス情報<br/>① runningステータス：uptime情報表示<br/>② waiting/terminatedステータス：ステータスに対するreason情報の表示                                         |
+
+:::note 
+
+`mem_maxusage`は、コンテナの実行中に記録されたメモリの最大使用量を示します。しかし、Linuxカーネルバージョンが5.19より低い場合、この指標の原本データが対応できない場合があります。このような場合、その値が0になる可能性があります。該当指標を正常に収集するためには、Linuxカーネルバージョンを5.19以上にアップデートする必要があります。<ScrollToLink anchor='scrollTo-memmaxusage' />
+
+:::
 
 ## Kubernetesノード(`kube_node`) 指標 {#kube_node}
 

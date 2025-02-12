@@ -14,8 +14,6 @@ import ShortDesc from "../common-items/_db-analysis-wait-event-short-desc.mdx";
 
 <ShortDesc />
 
-## 基本画面ガイド
-
 照会する<Cmdname sid="time" className="uitext" />と<Cmdname sid="instance" className="uitext" />を選択します。 設定した時間とインスタンスに該当する待機情報を確認することができます。 照会期間中に待機(遅延)が頻繁に発生したアクティブセッションがあったら、どのようなタイプの待機イベントが発生したのかを分析するのに活用できます。
 
 <ImgLang img='db-analysis-wait-oracle.png' desc='Wait分析' />
@@ -84,20 +82,16 @@ import ShortDesc from "../common-items/_db-analysis-wait-event-short-desc.mdx";
 
 :::note
 
-- ***Active Session***セクションの一覧で***instance***カラム項目を選択すると、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動します。 <Cmdname sid="side_dbMonitoring" className="uitext" />メニューの詳細は[次の文書](instance-monitoring)を参照してください。
-
-- ***Active Session***セクションの一覧でセッション項目を選択すると、<Cmdname sid="session_detail" className="uitext" />画面が表示されます。 <Cmdname sid="session_detail" className="uitext" />画面についての詳細は、[次の文書](multi-instance-monitoring#session-details)を参照してください。
-
-- ***Active Session***セクションの一覧で***query***カラム項目を選択すると、<Cmdname sid="TTL06224" className="uitext" /> 画面が表示されます。 <Cmdname sid="TTL06224" className="uitext" />画面の詳細については[次の文書](multi-instance-monitoring#query-details)を参照してください。
-
 - <Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](usage-ui#timeselector)を参照してください。
 
+- ***Active Session***セクションの一覧で***instance***カラム項目を選択すると、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューに移動します。 <Cmdname sid="side_dbMonitoring" className="uitext" />メニューの詳細は[次の文書](instance-monitoring)を参照してください。
+
+- ***Active Session***セクションの一覧でセッション項目を選択すると、<Cmdname sid="session_detail" className="uitext" />画面が表示されます。 <Cmdname sid="session_detail" className="uitext" />ウィンドウの詳細については[次の文書](usage-ui#session-details)を参照してください。
+
+- ***Active Session***セクション一覧で***query_text***カラム項目を選択すると<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06224" className="uitext" />ウィンドウの詳細については[次の文書](usage-ui#query-details)を参照してください。
+
+- テーブルヘッダーカラムを非表示にしたり、希望する項目を追加できます。 カラムの順序を変更することもできます。 詳細については、[次の文書](usage-ui#change-column)を参照してください。
+
+- テーブルデータをフィルタリングして、目的のアイテムをすばやく照会できます。 詳しい内容は、[次の文書](usage-ui#tablefilter)を参照してください。
+
 :::
-
-import Dbtabledatafiltering from "../common-items/_db-table-data-filtering.mdx";
-
-<Dbtabledatafiltering level={2} />
-
-import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
-
-<Dbv2dataeditcolumn level={2} />

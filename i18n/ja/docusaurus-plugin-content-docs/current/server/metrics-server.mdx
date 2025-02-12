@@ -2,7 +2,7 @@
 id: metrics-server
 title: サーバーメトリクス
 description: サーバーモニタリングメトリクスについて案内します。
-toc_max_heading_level: 2
+toc_max_heading_level: 3
 keywords:
   - Server
   - メトリクス
@@ -18,20 +18,60 @@ import Metricsindex from "../common-items/_metrics-index.mdx";
 
 サーバーモニタリングメトリクスについて次のように案内します。
 
+{/* 
+
 import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+
+*/}
 
 <div className="metricslist">
 
-<AgentStatus />
+{/* <AgentStatus /> */}
 
-## server_base
+## Category V1
+
+### agent_status_summary {#agent_status_summary}
+
+エージェントの状態に関するメトリクスを10秒間隔で収集したカテゴリです。
+
+#### Fields {#agent_status_summary_filed}
+
+| フィールド名        |    単位   | 説明                        | 備考               |
+| ------------- | :-----: | ------------------------- | ---------------- |
+| `inActTime`   | ミリ秒(ms) | エージェントが無効になったままの時間        | -                |
+| `isActive`    |    -    | 現在のエージェントの活性化状態           | `true` / `false` |
+| `isRebooted`  |    -    | サーバーの再起動可否                | `true` / `false` |
+| `lastActTime` | ミリ秒(ms) | 最後にエージェントが活性化された状態の時刻     | `0`: 無効化された場合    |
+| `oid`         |    -    | プロジェクトに含まれる各エージェントの固有の識別子 | -                |
+| `startTime`   | ミリ秒(ms) | エージェントが開始された時点でのタイムスタンプ   | -                |
+| `status`      |    -    | 現在のエージェントの状態              | -                |
+| `uptime`      |  秒(sec) | サーバーが稼働している時間             | -                |
+
+:::note
+
+`status`フィールドの値は、次のように区切ります。
+
+- `ok`: サーバーが有効になっている正常な状態です。
+
+- `inactive`: サーバーが無効になっている状態です。
+
+- `warning`: サーバーに警告(warning) イベントが進行中の状態です。
+
+- `fatal`: サーバーに危険(critical) イベントが進行中の状態です。
+
+- `paused`: エージェントがデータの収集を一時停止した状態です。
+
+:::
+
+### server_base
 
 サーバーリソースメトリクスです。
 
 - 収集間隔：5秒
+
 - 統計データ：5分、1時間
 
-### Tags {#server_base-tags}
+#### Tags {#server_base-tags}
 
 | タグ名       | 説明                   | 備考 |
 | --------- | -------------------- | -- |
@@ -41,7 +81,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | okindName | サーバー種類名              | -  |
 | os        | OSタイプ linuxまたはwindow | -  |
 
-### Fields {#server_base-fields}
+#### Fields {#server_base-fields}
 
 | フィールド名               | 単位    | 説明                       | 備考     |
 | -------------------- | ----- | ------------------------ | ------ |
@@ -85,14 +125,15 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | processorQueueLength | 整数    | プロセッサキューの長さ              | window |
 | uptime               | 整数    | 起動後サーバーの稼働時間（TimeStamp）  | 共通     |
 
-## server_cpu_core
+### server_cpu_core
 
 サーバーCPUコア別メトリクスです。
 
 - 収集間隔：5秒
+
 - 統計データ：-
 
-### Tags {#server_cpu_core-tags}
+#### Tags {#server_cpu_core-tags}
 
 | タグ名   | 説明                   | 備考 |
 | ----- | -------------------- | -- |
@@ -101,7 +142,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname | サーバー名                | -  |
 | os    | OSタイプ linuxまたはwindow | -  |
 
-### Fields {#server_cpu_core-fields}
+#### Fields {#server_cpu_core-fields}
 
 | フィールド名               | 単位    | 説明                   | 備考     |
 | -------------------- | ----- | -------------------- | ------ |
@@ -118,14 +159,15 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | sys                  | パーセント | コアsys使用率             | linux  |
 | usr                  | パーセント | コアusr使用率             | linux  |
 
-## server_disk
+### server_disk
 
 各サーバーにマウントされたファイルシステム別メトリクスです。
 
 - 収集間隔：5秒
+
 - 統計データ：5分、1時間
 
-### Tags {#server_disk-tags}
+#### Tags {#server_disk-tags}
 
 | タグ名            | 説明                   | 備考 |
 | -------------- | -------------------- | -- |
@@ -137,7 +179,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname          | サーバー名                | -  |
 | os             | OSタイプ linuxまたはwindow | -  |
 
-### Fields {#server_disk-fields}
+#### Fields {#server_disk-fields}
 
 | フィールド名           | 単位    | 説明                                     | 備考    |
 | ---------------- | ----- | -------------------------------------- | ----- |
@@ -159,14 +201,15 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | readIops         | 少数    | 毎秒読み込み数                                | 共通    |
 | writeIops        | 少数    | 毎秒書き込み数                                | 共通    |
 
-## server_network
+### server_network
 
 各サーバーのネットワークインターフェースのメトリクスです。
 
 - 収集間隔：5秒
+
 - 統計データ：5分、1時間
 
-### Tags {#server_network-tags}
+#### Tags {#server_network-tags}
 
 | タグ名      | 説明                   | 備考 |
 | -------- | -------------------- | -- |
@@ -177,7 +220,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname    | サーバー名                | -  |
 | os       | OSタイプ linuxまたはwindow | -  |
 
-### Fields {#server_network-fields}
+#### Fields {#server_network-fields}
 
 | フィールド名         | 単位  | 説明            | 備考 |
 | -------------- | --- | ------------- | -- |
@@ -194,14 +237,15 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | trafficOut     | bps | アウトバウンドトラフィック | -  |
 | trafficOutAcct | 整数  | WhaTap専用      | -  |
 
-## server_netstat
+### server_netstat
 
 各サーバーごとのネットワークプロトコルの統計情報です。
 
 - 収集間隔：5秒
+
 - 統計データ：5分、1時間
 
-### Tags {#server_netstat-tags}
+#### Tags {#server_netstat-tags}
 
 | タグ名                         | 説明                   | 備考 |
 | --------------------------- | -------------------- | -- |
@@ -220,7 +264,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | whatap_product              | WhaTap製品タイプ          | -  |
 | whatap_version              | WhaTapエージェントバージョン    | -  |
 
-### Fields {#server_netstat-fields}
+#### Fields {#server_netstat-fields}
 
 | フィールド名                 | 単位 | 説明                     | 備考 |
 | ---------------------- | -- | ---------------------- | -- |
@@ -237,14 +281,15 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | netstat_Unknown        | 整数 | Unknownステータスソケット数      | 共通 |
 | Server_Filedescriptors | 整数 | OS file descriptor個数   | 共通 |
 
-## server_process
+### server_process
 
 サーバープロセス情報です。
 
 - 収集間隔：20秒
-- 統計データ ：5分
 
-### Tags {#server_process-tags}
+- 統計データ：5分
+
+#### Tags {#server_process-tags}
 
 | タグ名   | 説明                  | 備考 |
 | ----- | ------------------- | -- |
@@ -256,7 +301,7 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | oname | サーバー名               | -  |
 | ユーザー  | プロセスを実行したLinuxユーザー名 | -  |
 
-### Fields {#server_process-fields}
+#### Fields {#server_process-fields}
 
 | フィールド名              | 単位    | 説明                     | 備考 |
 | ------------------- | ----- | ---------------------- | -- |
@@ -279,9 +324,179 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 | rss                 | バイト   | メモリRSSサイズ              | 共通 |
 | rssAccmulated       | バイト   | WhaTap専用               | 共通 |
 
+## Catetory V2
+
+### infra_cpu
+
+サーバのCPU使用量に関する指標です。
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra_cpu-fields}
+
+| フィールド名      | 説明                                                                                | OS名                                 |
+| ----------- | --------------------------------------------------------------------------------- | ----------------------------------- |
+| total       | 全CPU使用率のうち、ユーザーモード(User)とカーネルモード(Sys)での使用率の合計を表示します。                              | HP-UX, AIX, Solaris, Linux, Windows |
+| ユーザー        | 全CPU使用率のうち、ユーザーモード(User)での使用率を意味します。                                              | HP-UX, AIX, Solaris, Linux, Windows |
+| sys         | 全CPU使用率の中でカーネルモード(Sys)での使用率を意味します。                                                | HP-UX, AIX, Solaris, Linux, Windows |
+| nice        | 全CPU使用率の中で低い優先順位(niced)プロセスの使用率を意味します。高い優先順位および基本優先順位プロセスの使用率はuser(パーセント)に表示されます。 | HP-UX, Linux                        |
+| wait        | 全CPU使用率のうち、CPUがI/O作業完了を待つのに費やした時間の割合を意味します。                                       | HP-UX, AIX, Solaris, Linux          |
+| total_wait  | 全CPU使用率のうち、ユーザーモード(User)、カーネルモード(Sys)、I/O待機(wait)の使用率の合計を意味します。                   | HP-UX, AIX, Solaris, Linux          |
+| idle        | CPUがアイドル状態で、タスクを実行していない時間の割合を意味します。                                               | HP-UX, AIX, Solaris, Linux, Windows |
+| lCores      | OSに割り当てられたLogical Coreの数を意味します。                                                   | HP-UX, AIX, Solaris, Linux, Windows |
+| irq         | ハードウェアInterrupt Requestの処理に使用されたCPU使用率を意味します。                                     | Linux                               |
+| softirq     | ソフトウェアInterrupt Requestの処理に使用されたCPU使用率を意味します。                                     | Linux                               |
+| steal       | 仮想化環境でハイパーバイザーが他のプロセスをサービスする間、仮想CPUが非自発的に待機する時間の割合を意味します。                         | Linux                               |
+| procUtil    | Windows専用指標で、システムのすべてのプロセッサーの総CPU使用率を意味します(Windows作業管理者のCPU使用率)。                  | Windows                             |
+| loadavg_1m  | 直近1分間のシステムの平均負荷を意味します。                                                            | HP-UX, AIX, Solaris, Linux          |
+| loadavg_5m  | 直近5分間のシステムの平均負荷を意味します。                                                            | HP-UX, AIX, Solaris, Linux          |
+| loadavg_15m | 直近15分間のシステムの平均負荷を意味します。                                                           | HP-UX, AIX, Solaris, Linux          |
+
+### infra_mem
+
+サーバーのメモリ使用量に関する指標です。 
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra_mem-fields}
+
+| フィールド名              | 説明                                                                   | OS名                                 |
+| ------------------- | -------------------------------------------------------------------- | ----------------------------------- |
+| pUsed               | 全メモリ使用率のうち、ユーザプロセスやカーネルによって使用されたメモリの使用率のみを意味します。（buffer及びcacheを除く）   | HP-UX, AIX, Solaris, Linux, Windows |
+| used                | 全メモリからバッファおよびキャッシュ領域を除き、ユーザプロセスやカーネルによって使用されたメモリの使用量をByte単位で表示します。   | HP-UX, AIX, Solaris, Linux, Windows |
+| pCache              | 全メモリのうち、キャッシュとして使用される領域の割合を意味します。                                    | HP-UX, AIX, Solaris, Linux          |
+| cache               | 全メモリのうち、キャッシュとして使用されるメモリの使用量をByte 単位で表示します。                          | HP-UX, AIX, Solaris, Linux          |
+| buffer              | Linux専用指標で、全メモリのうちI/O入出力のために使用されるバッファ使用量をByte単位で表示します。               | Linux                               |
+| pUsed_pCache        | メモリ使用率を、ユーザー プロセスまたはカーネルによって使用されたメモリとキャッシュ領域の使用率の合計として表示します。         | HP-UX, AIX, Solaris, Linux          |
+| size                | サーバーに割り当てられた全メモリサイズをByte単位で表示します。                                    | HP-UX, AIX, Solaris, Linux, Windows |
+| available           | 現在使用可能なメモリサイズをByte単位で表示します。                                          | Linux                               |
+| sreclaimable        | カーネルで使用中のキャッシュメモリのうち、必要により回収可能な領域のサイズをByte単位で表示します。                  | Linux                               |
+| sunreclaim          | カーネルで使用中のキャッシュメモリのうち、回収できない領域のサイズをByte単位で表示します。                      | Linux                               |
+| slab                | カーネルで使用中のキャッシュメモリのサイズをByte単位で表示します。sreclaimableとsunreclaimの合計を意味します。 | Linux                               |
+| pageFaults          | プロセスがメモリにアクセスしたときに、そのデータが物理メモリに存在しなかった回数を意味します。                      | Linux                               |
+| poolPaged           | Windows専用指標でページングされたプールのByte数を表示します。ディスクにスワップできるメモリ領域を意味します。         | Windows                             |
+| poolNonPaged        | Windows専用指標で非ページングされたプールのByte数を表示します。常にメモリに常駐する領域を意味します。             | Windows                             |
+| systemCacheResident | Windows専用指標でシステムキャッシュメモリのByte数を表示します。                                | Windows                             |
+| swapIn              | ディスクのスワップ（ページングスペース）領域からメモリに移動した1秒あたりのページ数を意味します。                    | HP-UX, AIX, Solaris, Linux, Windows |
+| swapOut             | メモリ内のディスクスワップ(ページングスペース)領域に移動した1秒あたりのページ数を意味します。                     | HP-UX, AIX, Solaris, Linux, Windows |
+| fsIn                | ファイルシステムの読み取り操作に応じて、メモリにロードした1秒あたりのページ数を意味します。                       | HP-UX, AIX, Solaris, Linux, Windows |
+| fsOut               | ファイル システムの書き込み操作に応じて、ディスクに記録した1秒あたりのページ数を意味します。                      | HP-UX, AIX, Solaris, Linux, Windows |
+| scanned             | スワップアウトまたはページ交換のために1秒あたりにスキャンされたページ数を意味します。                          | HP-UX, AIX, Solaris                 |
+| freed               | スワップアウトの発生時に1秒あたりに生成されたフリーメモリ領域のページ数を意味します。                          | HP-UX, AIX, Solaris                 |
+
+### infra_swap
+
+サーバのSwap使用量に関する指標です。
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra_swap-fields}
+
+| フィールド名 | 説明                             | OS名                                 |
+| ------ | ------------------------------ | ----------------------------------- |
+| size   | 割り当てられた全体SwapのサイズをBytesで表示します。 | HP-UX, AIX, Solaris, Linux, Windows |
+| pUsed  | 現在使用中のSwapのサイズをパーセンテージで表示します。  | HP-UX, AIX, Solaris, Linux, Windows |
+| used   | 現在使用中のSwapのサイズをBytesで表示します。    | HP-UX, AIX, Solaris, Linux, Windows |
+
+### infra_kernel
+
+サーバーのシステムおよびカーネルリソースの使用量に関する性能指標です。
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra_kernel-fields}
+
+| フィールド名    | 説明                                                               | OS名                                 |
+| --------- | ---------------------------------------------------------------- | ----------------------------------- |
+| runq      | 実行準備ができているが、まだCPUを割り当てられていないプロセス(またはThread)の数を意味します。             | HP-UX, AIX, Solaris, Linux, Windows |
+| blockq    | I/O、ページング等のためにキューにあるプロセス(またはThread)の数を意味します。                     | HP-UX, AIX, Solaris, Linux          |
+| pendingq  | AIX専用指標で、raw deviceのI/Oに対する応答メッセージを待つThreadの数を意味します。             | AIX                                 |
+| waitq     | Swap outされたが一時的に待機(Sleep)状態のプロセス(またはThread)の数を意味します。             | HP-UX, Solaris                      |
+| fork      | 1秒あたりの平均forkの発生回数を意味します。(fork: 既存のプロセスを複製して新しいプロセスを生成するシステム呼び出し) | HP-UX, AIX, Solaris, Linux          |
+| exec      | 1秒あたりの平均exec呼び出し回数を意味します。(exec: 現在のプロセスを新しいプログラムに置き換えるシステム呼び出し)  | HP-UX, AIX, Solaris                 |
+| interrupt | 1秒当たりのCPUがハードウェア割り込みを処理した回数を意味します。                               | HP-UX, AIX, Solaris, Linux, Windows |
+| syscall   | 1秒当たりのカーネルがシステム呼び出しを処理した回数を意味します。                                | HP-UX, AIX, Solaris, Windows        |
+| ctxswitch | 1秒あたりのプロセス間のコンテキスト切り替えの発生回数を意味します。                               | HP-UX, AIX, Solaris, Linux, Windows |
+
+### infra_disk
+
+サーバーの物理ディスク容量および入出力(IO)性能に関する指標です。 
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra_disk-fields}
+
+| フィールド名    | 説明                                              | OS名                                 |
+| --------- | ----------------------------------------------- | ----------------------------------- |
+| read      | サーバーの全体物理ディスクからの読み取りデータの総量をBytes単位で表示します。       | HP-UX, AIX, Solaris, Linux, Windows |
+| write     | サーバーの全体物理ディスクからの書き込みデータの総量をBytes単位で表示します。       | HP-UX, AIX, Solaris, Linux, Windows |
+| total     | サーバーの全体物理ディスクからの読み込み・書き込みデータの総量をBytes単位で表示します。  | HP-UX, AIX, Solaris, Linux, Windows |
+| readIops  | サーバー上の全体物理ディスクで1秒あたりに処理された読み取りタスクの数を表示します。      | HP-UX, AIX, Solaris, Linux, Windows |
+| writeIops | サーバー上の全体物理ディスクで1秒あたりに処理された書き込みタスクの数を表示します。      | HP-UX, AIX, Solaris, Linux, Windows |
+| totalIops | サーバー上の全体物理ディスクで1秒あたりに処理された読み取り・書き込みタスクの数を表示します。 | HP-UX, AIX, Solaris, Linux, Windows |
+
+### infra_network
+
+サーバーの全体ネットワークの通信量に関する指標です。 
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra_network-fields}
+
+| フィールド名   | 説明                                                                                | OS名                                 |
+| -------- | --------------------------------------------------------------------------------- | ----------------------------------- |
+| rxbps    | サーバーの全体NIC(Loopback除外)を通じて受信(Rx)されたデータの量をbps(bit per second)単位で表示します。             | HP-UX, AIX, Solaris, Linux, Windows |
+| txbps    | サーバーの全体NIC(Loopback除外)を通じて送信(Tx)されたデータの量をbps(bit per second)単位で表示します。             | HP-UX, AIX, Solaris, Linux, Windows |
+| totalbps | サーバーの全体NIC(Loopback除外)を通じて受信(Rx)及び送信(Tx)されたデータの総量をbps(bit per second)単位で表示します。    | HP-UX, AIX, Solaris, Linux, Windows |
+| rxpps    | サーバーの全体NIC(Loopback除外)を通じて受信(Rx)されたデータの1秒あたりのパケット数(packets per second)を表示します。     | HP-UX, AIX, Solaris, Linux, Windows |
+| txpps    | サーバーの全体NIC(Loopback除外)を通じて送信(Tx)されたデータの1秒あたりのパケット数(packets per second)を表示します。     | HP-UX, AIX, Solaris, Linux, Windows |
+| totalpps | サーバーの全体NIC(Loopback除外)を通じて受信(Rx)及び送信(Tx)されたデータの合計パケット数(packets per second)を表示します。 | HP-UX, AIX, Solaris, Linux, Windows |
+
+:::note 
+
+ループバックインターフェース(loopback, lo)のトラフィックは集計から除外されます。
+
+:::
+
+### infra_process
+
+サーバーで実行されているプロセスとリソースの状態に関する指標です。 
+
+- 収集間隔：2秒 
+
+- 統計：5分、1時間
+
+#### Fields {#infra-process-fields}
+
+| フィールド名       | 説明                                           | OS名                                 |
+| ------------ | -------------------------------------------- | ----------------------------------- |
+| procTotal    | サーバーで実行中のプロセス全体の数を表示した値です。                   | HP-UX, AIX, Solaris, Linux, Windows |
+| threadTotal  | サーバーで実行中のスレッドの総数を表示した値です。                    | HP-UX, AIX, Solaris, Linux, Windows |
+| handleTotal  | Windows OSで実行中の全体handle数を表示した値です。            | Windows                             |
+| defunctTotal | defunctプロセスの数を表示した値です。                       | HP-UX, AIX, Solaris, Linux          |
+
+:::note 
+
+サーバーで実行中のプロセス全体の数、スレッドの数、ハンドルの数、そしてdefunctプロセスの数を表示します。
+
+:::
+
 </div>
 
-## 参考資料
+### 参考資料
 
 - [ウィンドウインデックスデータ](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/cpu-analysis)
+
 - [linuxメトリクス資料](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/monitoring_and_managing_system_status_and_performance/index)

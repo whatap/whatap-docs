@@ -16,6 +16,53 @@ keywords:
 
 データベースサイズの推移により、使用量のパターンとデータの成長が理解できます。 将来の容量要件を予測し、対策を講じられます。 これらの変化をモニタリングすることは、リソースとコストを最適化するのに役立ちます。
 
+## 使用する前に
+
+### 権限を割り当てる
+
+データベースのサイズ情報を収集するために、次のような権限設定が必要です。
+
+```sql
+grant connect any database to whatap;
+grant view any definition to whatap;
+```
+
+:::note
+
+次の場合に該当するテーブルはサイズを収集しません。
+
+- `dt`で始まるテーブル
+
+- `is_ms_shipped=0` (`sys.objects`でシステムオブジェクトを除外)
+
+- `object_id` \> 255
+
+- Azure SQL Serverの場合、マスターデータベースのサイズは収集不可
+
+:::
+
+### エージェントオプションを設定する
+
+データベースサイズの情報を収集するために、次のエージェントオプションを設定できます。
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズの情報を収集します。 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズの情報を保存するために情報を収集する時刻を設定します。 既定値は`5`であり、朝の5時に収集を始めます。
+
+- **tables_min_row** <span class='type'>Int</span>
+
+  既定値`10000`
+
+  テーブル情報を収集する場合、設定した値より小さいrow番号のテーブル情報は収集しません。
+
 ## 基本画面ガイド
 
 <ImgLang img='db-database-size-mssql.png' desc='Database size'/>

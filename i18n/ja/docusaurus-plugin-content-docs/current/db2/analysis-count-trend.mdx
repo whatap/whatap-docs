@@ -1,0 +1,30 @@
+---
+id: analysis-count-trend
+title: カウント推移の比較
+description: データベースの稼働の推移を確認し、比較できます。
+keywords:
+  - IBM DB2
+  - データベース
+  - 分析
+  - カウント推移
+---
+
+import Dbv2counttrenddesc from "../common-items/_db-v2-count-trend-desc.mdx";
+import Dbv2counttrendbasicusage from "../common-items/_db-v2-count-trend-basic-usage.mdx";
+import Dbv2counttrendselectinstance from "../common-items/_db-v2-count-trend-select-instance.mdx";
+import Dbv2counttrendcompare from "../common-items/_db-v2-count-trend-compare.mdx";
+import Dbv2counttrendcomparetime from "../common-items/_db-v2-count-trend-compare-time.mdx";
+import Dbv2counttrendspreset from "../common-items/_db-v2-count-trends-preset.mdx";
+import SessionColumn from "../common-items/_db-db2-column.mdx";
+
+<Collection docs={
+  [
+    {Topic: Dbv2counttrenddesc, props: {level: 2, desc: '개요'}},
+    {Topic: Dbv2counttrendbasicusage, props: {level: 2, desc: '기본 화면 안내'}},
+    {Topic: Dbv2counttrendselectinstance, props: {level: 3, desc: '비교 대상 선택하기'}},
+    {Topic: Dbv2counttrendcompare, props: {level: 3, desc: '액티브 세션 정보 비교하기'}},
+    {Topic: Dbv2counttrendcomparetime, props: {level: 3, desc: '특정 시간 비교하기'}},
+    {Topic: Dbv2counttrendspreset, props: {level: 2, desc: '프리셋'}},
+    {Topic: SessionColumn, props: {level: 2, desc: '컬럼 정보 안내'}},
+  ]}
+/>

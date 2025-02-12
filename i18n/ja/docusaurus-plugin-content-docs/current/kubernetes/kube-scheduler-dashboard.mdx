@@ -1,0 +1,269 @@
+---
+id: kube-scheduler-dashboard
+title: kube-scheduler ダッシュボード
+description: kube-apiserverダッシュボードを案内します。
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - kube-scheduler
+  - コントロールプレーン
+toc_max_heading_level: 2
+---
+
+ホーム画面 &gt; クラスタープロジェクト選択(<code class='my'>CP</code>) &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; ***kube-scheduler ダッシュボード***
+
+:::note
+
+**要求事項**
+
+- WhaTap Kubernetesエージェント1.8.1バージョン以降が必要です。
+
+- Kubernetesクラスタープロジェクト(<code class='my'>CP</code>)の場合、該当メニューを照会できます。
+
+- Vanilla Kubernetesまたは`kube-scheduler` Podを観測できるクラスターの場合は、そのメニューを使用できます。 
+
+:::
+
+`kube-scheduler`はKubernetes環境でPodのスケジューリングを担当する主要なコンポーネントです。 WhaTapは`kube-scheduler`の性能とスケジューリング状態をリアルタイムでモニタリングできる***kube-schedulerダッシュボード***を提供します。 ***kube-schedulerダッシュボード***を通じてクラスターがスケジューリング不能に陥る場合や、スケジューラの負荷による問題を事前に回避できます。 
+
+## 基本画面ガイド
+
+<ImgLang img="k8s-kube-scheduler-dashboard.png" desc="kube-scheduler ダッシュボード" />
+
+***kube-schedulerダッシュボード***は、1時間に収集された主要指標を1分単位で視覚化して提供します。 ダッシュボードで確認できる主メトリクスは次の通りです。 メトリクス詳細は、下段の[メトリクス案内](#kube-scheduler-metrics)を参照してください。 
+
+- `kube-scheduler`が使用するリソースの推移、Pod再起動の回数、そして詳細ログを提供します。
+
+- `kube-scheduler`の先取り試行の回数と先取りによる被害者数の推移を提供します。
+
+- `kube-scheduler` Pod内部のPending Queueに割り当てられたPending PodのReason別推移を提供します。
+
+{/* * kube-scheduler Pod의 Pending Queue에 대기 중인 Pod의 상태를 원인별로 분류하여 추이를 제공합니다.  */}
+
+{/* 
+
+선점 시도 횟수 및 피해자 수?
+
+스케줄러가 특정 노드에 자리를 확보하기 위해 다른 파드를 축출/설점하려 시도한 횟수, 피해자 수는 선점으로 인해 노드에서 축출된 파드의 수 
+
+활용 목적?
+선점 시도 및 축출된 Pod 수를 모니터링하여 스케줄링 효율성과 클러스터 안정성 분석 
+
+파드 펜딩 큐
+
+스케줄러가 아직 스케줄링하지 못한 파드들의 대기열 
+
+펜딩 상태의 파드: 리소스 부족, 노드 할당 실패, 권한 문제 등의 원인별 분류 가능..
+
+*/}
+
+## kube-schedulerモニタリングの活性化
+
+### 活性化の要求条件
+
+- `kubectl get pods -n kube-system -l component=kube-scheduler`コマンドを通じて`kube-scheduler` Podを観測できるようにする必要があります。 
+
+- `kube-scheduler`とのセキュリティ通信のため`--bind-address`の設定を外部からアクセスできるように変更する必要があります。 一般的に`0.0.0.0`を使います。
+
+### 活性化の過程
+
+:::note 
+
+**活性化の順序**
+
+1. whatap service accountのRBACに`secrets`に対する`GET`権限を追加してください。
+
+2. whatap service accountをもとに`secrets`を作成してください。
+
+3. `whatap-master-agent` deploymentに`kube-scheduler`モニタリングの活性化オプションを適用してくだ活性化
+
+:::
+
+1. **権限設定** 
+
+   `whatap-monitoring`のネームスペース内でwhatap ClusterRoleの`rules`にアクセス可能なリソースに`secrets`リソースを追加してください。 次の内容を*yaml*ファイルに作成した後、`kubectl apply -f <yaml파일명>.yaml`を実行して適用してください。 
+
+   ```yaml title='ClusterRole.yaml' {25}
+   apiVersion: "rbac.authorization.k8s.io/v1"
+   kind: "ClusterRole"
+   metadata:
+     annotations:
+       rbac.authorization.kubernetes.io/autoupdate: "true"
+     name: "whatap"
+     namespace: "whatap-monitoring"
+   rules:
+   - apiGroups:
+     - "*"
+     resources:
+     - "namespaces"
+     - "pods"
+     - "pods/log"
+     - "configmaps"
+     - "services"
+     - "endpoints"
+     - "daemonsets"
+     - "ingresses"
+     - "deployments"
+     - "nodes"
+     - "persistentvolumes"
+     - "persistentvolumeclaims"
+     - "events"
+     - "secrets"
+     - "replicasets"
+     - "roles"
+     - "rolebindings"
+     - "clusterroles"
+     - "clusterrolebindings"
+     - "jobs"
+     - "cronjobs"
+     - "statefulsets"
+     - "serviceaccounts"
+     - "configmaps"
+     - "storageclasses"
+     - "horizontalpodautoscalers"
+     - "replicationcontrollers"
+     verbs:
+     - "get"
+     - "list"
+     - "watch"
+   - apiGroups:
+     - ""
+     resources:
+     - "pods/exec"
+     verbs:
+     - "create"
+   - apiGroups:
+     - ""
+     resources:
+     - "configmaps"
+     verbs:
+     - "*"
+   - nonResourceURLs:
+     - "/metrics"
+     verbs:
+     - "*"
+   ```
+
+2. **Secret生成**
+
+   次の内容を*yaml*ファイルに作成した後、`kubectl apply -f yamlファイル名.yaml`を実行して適用してください。 
+
+   ```yaml title='secrets.yaml'
+   apiVersion: v1
+   kind: Secret
+   type: kubernetes.io/service-account-token
+   metadata:
+     name: whatap-scheduler-monitoring-token
+     namespace: whatap-monitoring
+     annotations:
+       kubernetes.io/service-account.name: "whatap"
+   ```
+
+3. **Deployment修正**
+
+   `whatap-master-agent` deploymentの内容を修正した後、`kubectl apply -f <yaml파일명>.yaml`のコマンドを使って適用してください。 
+
+   - **環境変数の追加**
+
+     `containers`項目下位の`whatap-master-agent`コンテナの`env`セクションに次の内容を追加してください。
+
+     ```yaml
+     env:
+     - name: "collect_kube_scheduler_monitoring_enabled"
+       value: "true"
+     ```
+
+   - **コマンド因子の追加** 
+
+     `containers`項目下位の`whatap-control-plane-helper`コンテナの`args`セクションに次の内容を追加してください。 
+
+     ```yaml
+     - args:
+       - "-collect_kube_scheduler_monitoring_enabled=true"
+     ```
+
+   環境変数およびコマンド因子を追加する場合は、次の例を参照してください。 
+
+   ```yaml {30-31,51}
+   apiVersion: "apps/v1"
+   kind: "Deployment"
+   metadata:
+     name: "whatap-master-agent"
+     namespace: "whatap-monitoring"
+   spec:
+     replicas: 1
+     selector:
+       matchLabels:
+         name: "whatap-master-agent"
+     template:
+       metadata:
+         labels:
+           name: "whatap-master-agent"
+       spec:
+         priorityClassName: high-priority
+         containers:
+         - command:
+           - "/bin/entrypoint.sh"
+           env:
+           - name: "WHATAP_LICENSE"
+             value: "c1024123i1kko-241245127abdbe-612632344235"
+           - name: "WHATAP_HOST"
+             value: "192.168.1.0"
+           - name: "WHATP_MEM_LIMIT"
+             valueFrom:
+               resourceFieldRef:
+                 containerName: "whatap-master-agent"
+                 resource: "limits.memory"
+           - name: "collect_kube_scheduler_monitoring_enabled"
+             value: "true"
+           image: "whatap/kube_mon"
+           name: "whatap-master-agent"
+           ports:
+           - containerPort: 6600
+           resources:
+             limits:
+               cpu: "200m"
+               memory: "350Mi"
+             requests:
+               cpu: "100m"
+               memory: "300Mi"
+           volumeMounts:
+           - mountPath: "/bin/entrypoint.sh"
+             name: "start-script-volume"
+             readOnly: true
+             subPath: "entrypoint.sh"
+           - mountPath: "/whatap_conf"
+             name: "whatap-config-volume"
+         - args:
+           - "-collect_kube_scheduler_monitoring_enabled=true"
+           command:
+           - "/data/agent/master/whatap_control_plane_helper"
+           image: "whatap/kube_mon"
+           imagePullPolicy: "Always"
+           name: "whatap-control-plane-helper"
+           ports:
+           - containerPort: 9496
+         serviceAccount: "whatap"
+         volumes:
+         - configMap:
+             defaultMode: 448
+             name: "master-start-script"
+           name: "start-script-volume"
+         - emptyDir: {}
+           name: "whatap-config-volume"
+   ```
+
+## kube-schedulerのメトリック{#kube-scheduler-metrics}
+
+| 区分                           | 説明                                  |
+| ---------------------------- | ----------------------------------- |
+| ***Pod数***                   | 現在実行中の`kube-scheduler` Podの数        |
+| ***kube-schedulerの再起動数の推移*** | `kube-scheduler` Podの再起動回数の合計推移     |
+| ***CPUの合計使用量***              | `kube-scheduler` Podの総CPU使用量        |
+| ***CPU使用量***                 | `kube-scheduler` PodのCPU使用量推移       |
+| ***Memoryの合計使用量***           | `kube-scheduler` Podの総メモリ使用量        |
+| ***Memory使用量***              | `kube-scheduler` Podのメモリ使用量の推移      |
+| ***kube-scheduler ログ***      | `kube-scheduler` Podで発生したログ         |
+| ***先取り試みの回数推移***             | Podスケジューリングのために先取りを試みた回数の推移         |
+| ***先取り被害者数の推移***             | 先取りによって追い出されたPod数の推移                |
+| ***Pending Pod Reason別の推移*** | スケジューリングされずにPending状態で待機中のPodの原因別推移 |

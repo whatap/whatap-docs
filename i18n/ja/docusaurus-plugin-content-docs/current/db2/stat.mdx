@@ -1,0 +1,29 @@
+---
+id: stat
+title: SQL統計
+description: IBM DB2のデータベースごとの統計データを提供します。
+keywords:
+  - IBM DB2
+  - データベース
+  - 統計
+---
+
+import Dbstatsqldesc from "../common-items/_db-stat-sql-desc.mdx";
+import Dbstatsqlbasic from "../common-items/_db-stat-sql-basic.mdx";
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Collection docs={
+  [
+    {Topic: Dbstatsqldesc, props: {level: 2, desc: '개요'}},
+    {Topic: Dbstatsqlbasic, props: {level: 2, desc: '기본 사용 안내'}},
+    {Topic: Dbstatsqlviewquery, props: {level: 2, desc: '쿼리별 수행 추이, 미리보기'}},
+    {Topic: Dbstatsqlviewquerydetailssummary, props: {level: 2, desc: '자세히 보기'}},
+    {Topic: Dbproductsqlstatquerydetails, props: {level: 2, desc: '자세히 보기'}},
+    {Topic: Dbsqlfilter, props: {level: 2, desc: '필터 조건추가하기'}},
+    {Topic: Dbv2dataeditcolumn, props: {level: 2, desc: '컬럼 설정하기'}},
+  ]}
+/>

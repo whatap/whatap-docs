@@ -290,5 +290,13 @@
   "item.label.What's New": {
     "message": "What's New",
     "description": "Navbar item with label What's New"
+  },
+  "item.label.IBM DB2 모니터링": {
+    "message": "IBM DB2 モニタリング",
+    "description": "Navbar item with label IBM DB2 모니터링"
+  },
+  "item.label.IBM DB2": {
+    "message": "IBM DB2",
+    "description": "Navbar item with label IBM DB2"
   }
 }

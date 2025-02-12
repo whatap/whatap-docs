@@ -1,0 +1,19 @@
+## 受信状態の確認{#check-receive-status}
+
+メールアドレスを間違って入力したり、その他の理由で通知を受信できない場合、<Cmdname sid="alert_receive_settings_by_member" className="uitext" />セッションのユーザー一覧で通知の受信状態を確認できます。
+
+<ImgLang img="event-check-receive-status.png" />
+
+通知の受信状態は、次のように区別できます。 メールで通知を受信できなかった場合は、受信状況を確認し、適切な措置を取ってください。
+
+- <Cmdname sid="bounce_transient" className="uitext" />：メールアカウントが無効になっているか、メールボックスにスペースがないため、通知を送信するときに一時的なエラーが発生しています。 メールアカウントの状態を確認してください。
+
+- <Cmdname sid="bounce_unsubscribe" className="uitext" />：受信拒否により通知サービスが停止している状態です。
+
+- <Cmdname sid="bounce_permanent" className="uitext" />：メールアドレスが存在しないか、メール形式に従っていないため、メールの受信が制限されます。
+
+:::note
+
+本人のメールのみ、送信ブロックを解除できます。
+
+:::

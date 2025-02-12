@@ -23,7 +23,7 @@ import DBsupportNote from "../common-items/_db-support-functions-note.mdx";
 
 WhaTapのOracle Proモニタリング製品は、従来のクエリ(Query) ベースのデータ収集方式を一段階上回る革新を提示します。 既存のクエリベースの方法は、データベースサーバーにかなりの負荷を与え、これはシステム性能の低下につながる可能性があります。 一方、Direct Memory Access(DMA) 技術を活用したWhaTapのアプローチは、サーバーのメモリに直接アクセスして必要なデータを抽出することによって、データベースサーバーに負荷をほとんど、または全く発生させません。 これは、特に高性能を必要とするデータベース環境において大きな利点として機能します。
 
-また、クエリベースの収集方式はデータ更新サイクルが遅く、特定のクエリ実行時点にのみデータを収集できます。 これに比べ、Oracle Proモニタリングはメモリへのアクセスを通じてデータをほぼリアルタイムで収集でき、少なくとも1/20秒間隔でセッション及びSQL性能データを収集できます。 これにより、データベース管理者はシステムの性能をより詳細にモニタリングし、問題が発生したときにすぐに対応できるようになります。
+また、クエリベースの収集方式はデータ更新サイクルが遅く、特定のクエリ実行時点にのみデータを収集できます。 これに比べ、Oracle Proモニタリングはメモリへのアクセスを通じてデータをほぼリアルタイムで収集でき、少なくとも1/20秒の間隔でセッション及びSQL性能データを収集できます。 これにより、データベース管理者はシステムの性能をより詳細にモニタリングし、問題が発生したときにすぐに対応できるようになります。
 
 Oracle Proモニタリング製品のもう一つの重要な特徴は、システム障害やHang状況でもデータ収集が中断されないことです。 従来のクエリベースの方法では、これらのシナリオではデータの収集が困難になる可能性があります。 Oracle Proを使用することで、データベース管理者はいかなる状況でもデータの連続性を保証され、これによってシステムの安定性と可用性を最大化できます。
 
@@ -44,35 +44,3 @@ Oracle Proモニタリング製品のもう一つの重要な特徴は、シス�
 - **DB Hang状態でもモニタリング分析が可能**
 
   DB障害やHang状況でもOracle Proはデータ収集が中断されません。 これにより、データの連続性が保証され、障害のある状況でも分析および対応が可能になり、システムの安定性と可用性が最大化されます。
-
-## 対応機能
-
-次に利用可能な機能一覧です。
-
-| カテゴリ       | 機能区分                            |                                                           サポートの有無                                                           |
-| ---------- | ------------------------------- | :-------------------------------------------------------------------------------------------------------------------------: |
-| Monitoring | Instance List                   |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Instancs Monitoring             |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Multi DataBase (tenant)         |                                <span class='emoji-ok'>✅</span><br/>12cバージョン以降、multi tenantの場合                               |
-| ^          | Slow Query                      |                                               <span class='emoji-no'>❌</span>                                               |
-| Analysis   | Trends Compare                  |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Lock Tree                       |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Session History                 |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Wait Analysis                   |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | SQL Analysis                    |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Top SQL Comparison              |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Parallel Query Tree             |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Dead Lock                       |                                                       ログモニタリングによりサポート                                                       |
-| ^          | DB Parameter                    |                                               <span class='emoji-ok'>✅</span>                                               |
-| Statistics | SQL Stat                        |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Table Size                      | <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューでサポート |
-| ^          | Database(TableSpace) Size       |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | SGA Size                        |                                               <span class='emoji-ok'>✅</span>                                               |
-| Report     | Daily / Weekly / Monthly Report |                                               <span class='emoji-ok'>✅</span>                                               |
-| Event      | Event List                      |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Event Stat                      |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Event Setting                   |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Notification                    |                                               <span class='emoji-ok'>✅</span>                                               |
-| Management | Agent Setup                     |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Agent List                      |                                               <span class='emoji-ok'>✅</span>                                               |
-| ^          | Project Management              |                                               <span class='emoji-ok'>✅</span>                                               |

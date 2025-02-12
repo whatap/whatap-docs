@@ -8,17 +8,14 @@ keywords:
   - クラウド
 ---
 
-{/* description */}
-import CloudSettingsDesc from "../common-items/_db-cloudsettings-desc.mdx";
-
-<CloudSettingsDesc />
-
-{/* AWS CloudWatch 설정 */}
-import CloudWatchSettings from "../common-items/_db-cloudsettings-awscloudwatch.mdx";
-
-<CloudWatchSettings />
-
-{/* Azure 설정 */}
+import CloudSettingsDesc from "../common-items/_db-cloudsettings-desc.mdx"; 
+import CloudWatchSettings from "../common-items/_db-cloudsettings-awscloudwatch.mdx"; 
 import AzureSettings from "../common-items/_db-cloudsettings-azure.mdx";
 
-<AzureSettings />
+<Collection docs={
+  [
+    {Topic: CloudSettingsDesc},
+    {Topic: CloudWatchSettings},
+    {Topic: AzureSettings}
+  ]} 
+/>

@@ -6,7 +6,11 @@
 
 データベースサイズの推移により、使用量のパターンとデータの成長が理解できます。 将来の容量要件を予測し、対策を講じられます。 これらの変化をモニタリングすることは、リソースとコストを最適化するのに役立ちます。
 
+## 使用する前に
+
 <InDoc product='mysql'>
+
+### 権限を割り当てる
 
 MySQLのデータベースサイズ情報は、`information_schema.tables`で照会するため、モニタリングアカウントにテーブル照会権限が必要です。 次のように権限設定が必要です。
 
@@ -16,32 +20,96 @@ grant select on {DB_NAME}.* to whatap;
 
 :::note
 
-- `information_schema`、`performance_schema`のサイズは収集されません。 
+- データベースが`information_schema`、`performance_schema`、`sys`、`mysql`の場合、データベースのサイズ情報を収集しません。
 
 - 収集サイクルは1時間に1回収集します。
 
 :::
+
+### エージェントオプションを設定する
+
+データベースサイズの情報を収集するために、次のエージェントオプションを設定できます。
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズの情報を収集します。 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズの情報を保存するために情報を収集する時刻を設定します。 既定値は`5`であり、朝の5時に収集を始めます。
+
+- **tables_min_row** <span class='type'>Int</span>
+
+  既定値`10000`
+
+  テーブル情報を収集する場合、設定した値より小さいrow番号のテーブル情報は収集しません。
+
+- **table_filesize** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズの収集時に`innodb_tablespaces`の`file_size`を一緒に収集します。
 
 </InDoc>
 
 <InDoc product='postgresql'>
 
-全データベースサイズは、`pg_database_size`関数で照会するため、モニタリングアカウントにconnect権限または`pg_read_all_stats`権限が必要です。 `template database`は収集から除外されます。
+### 権限を割り当てる
+
+全データベースサイズは、`pg_database_size`関数で照会するため、モニタリングアカウントにconnect権限または`pg_read_all_stats`権限が必要です。
 
 個別テーブルのサイズは、`pg_relation_size`、`pg_indexes_size`、`pg_total_relation_size`関数で照会するため、その照会権限が必要です。
 
 ```sql
-grant pg_read_all_stats to whatap;
 grant usage on schema {schema_name} to whatap;
+grant select on all tables in schema {schema_name} to whatap;
 ```
 
 :::note
 
-- `pg_catalog`、`sys`、`information_schema`、`pg_toast`スキーマのサイズは収集しません。
+- エージェント設定で`skip_schema`、`skip_db`のオプションに該当する場合は、データベースのサイズ情報を収集しません。
 
 - 収集サイクルは1時間に1回収集します。
 
 :::
+
+### エージェントオプションを設定する
+
+データベースサイズの情報を収集するために、次のエージェントオプションを設定できます。
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズの情報を収集します。 <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" /> メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズの情報を保存するために情報を収集する時刻を設定します。 既定値は`5`であり、朝の5時に収集を始めます。
+
+- **tables_min_size** <span class='type'>Int</span>
+
+  既定値`10`
+
+  テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。 テーブルデータを収集する既定値の最小単位は`pg_total_relation_size`基準10MBです。
+
+- **skip_schema** <span class='type'>String</span>
+
+  既定値：pg_catalog、sys、information_schema、pg_toast
+
+  オプション値に設定したスキーマのテーブルは収集しません。
+
+- **skip_db** <span class='type'>String</span>
+
+  既定値：edb、postgres
+
+  オプション値に設定したデータベースのテーブルは収集しません。
 
 </InDoc>
 

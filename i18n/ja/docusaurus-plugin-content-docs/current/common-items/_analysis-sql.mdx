@@ -20,16 +20,32 @@
 
   ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
 
+{/* 쿼리 자세히 보기 */}
+import QueryDetails from "../common-items/_db-query-details.mdx";
+
+<InDoc product="oracle">
+
 :::note
 
 <Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](usage-ui#timeselector)を参照してください。
 
 :::
 
-{/* 쿼리 자세히 보기 */}
-import QueryDetails from "../common-items/_db-query-details.mdx";
-
 <QueryDetails level={3} />
+
+</InDoc>
+
+<InDoc product="oracle-pro">
+
+:::note
+
+- <Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](usage-ui#timeselector)を参照してください。
+
+- テーブル一覧で***query_text***項目を選択すると<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 <Cmdname sid="TTL06224" className="uitext" />ウィンドウの詳細については[次の文書](usage-ui#query-details)を参照してください。
+
+:::
+
+</InDoc>
 
 ### 参照結果フィルタリング
 

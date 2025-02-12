@@ -19,139 +19,53 @@ import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
 
 <Agentsignupguide />
 
-<Youtube ko='e_UpCgapfQY' en='MIo3HRIOt8M' ja='MIo3HRIOt8M' />
-
-<Steps>
-
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
 
-import Accesskey from "../getting-started/_accesskey.mdx";
+<Steps>
 
-<Accesskey />
+{/* ## 구성도 확인 */}
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
-## WhaTapデータベースエージェントのダウンロード
-
-import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
-
-<Dbinstallagentsteps />
-
-3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
-
-   ```ini title='whatap.conf'
-   license={AccessKey}
-   whatap.server.host=13.124.11.223/13.209.172.35 # WhaTap server information
-   dbms=oracle
-   db={DB_Name(sid)}
-   db_ip={DB_Server_IP}
-   db_port={DB_Server_Port}
-   ```
-
-4. 次のディレクトリにJDBCドライバーをダウンロードします。 _解凍されたフォルダ/jdbc_
-
-   データベースサーバーのOSとバージョン用のJDBCドライバをダウンロードします。 
-
-   **Oracle 10g R2バージョン以降**：https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
-
-{/* 공통 Notes */}
-import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
-
-<Dbinstallagentcommonnotes />
+<CheckType />
 
 {/* 모니터링용 계정 생성 */}
 import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
 <Dbcreatemonitoringaccount />
 
-- 一般的な場合
+import Accesskey from "../getting-started/_accesskey-v2.mdx";
 
-  ```sql
-  create user whatap identified by DB_PASSWORD;
-  grant create session to whatap;
-  grant select any dictionary to whatap;
-  ```
+<Accesskey />
 
-- 12c以降で、マルチテナントの場合(接頭語c##)
+{/* DBX 에이전트 다운로드 */}
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
-  ```sql
-  create user c##whatap identified by DB_PASSWORD;
-  grant create session to c##whatap;
-  grant select any dictionary to c##whatap;
-  alter user c##whatap set container_data = ALL container = CURRENT;
-  ```
+<DownloadDBXagent />
 
-- kill session機能を使用する場合
+{/* ## DBX 에이전트 설정 */}
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
 
-  ```sql
-  grant alter system to whatap
-  ```
+<SettingsDBXagent />
 
-<details>
+{/* ### whatap.conf 설정 */}
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
 
-<summary>権限による対応機能を確認する</summary>
+<Whatapconf />
 
-**基本権限**外の権限は、ユーザーの環境によって付与する必要はありません。ただし、一部の機能が動作しないことがあります。
+{/* ### JDBC 다운로드 */}
+import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
-<div className="c5-10-25-25-15-25">
+<JDBCDownload />
 
-| 権限                                                | command (Single DB)                                                            | command (Multitenant DB)                                                                                                                                                                         | メニューと機能                                                                                                                                                                | 詳細履歴                                     |
-| ------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| 基本権限                                              | `grant create session to whatap;`                                              | `grant create session to c##whatap;`                                                                                                                                                             | 접속                                                                                                                                                                     | -                                        |
-| \^                                                | <code>grant <span class="vslow">select any dictionary</span> to whatap;</code> | <code>grant <span class="vslow">select any dictionary</span> to c##whatap;</code>                                                                                                                | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | 個別権限の付与時、次の表の内容を参照                       |
-| \^                                                | -                                                                              | `alter user c##whatap set container_data = ALL container = CURRENT;`                                                                                                                             | \^                                                                                                                                                                     | マルチテナントDBを使用する場合(12C以降) pdb照会のための必須権限である |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap;`                                                                                                                                                               | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                        |
-| ヒドゥンパラメータの照会                                      | \>                                                                             | `create view sys.whatap_vw_ksppi as select * from sys.x$ksppi;`<br/>`grant select on sys.whatap_vw_ksppi to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppi for sys.whatap_vw_ksppi;`      | パラメータ照会メニューにヒドゥンパラメータの内容を含む                                                                                                                                            | ヒドゥンパラメータを照会するには、別のビュー/シノニムの生成および権限付与が必要 |
-| \^                                                | \>                                                                             | `create view sys.whatap_vw_ksppcv as select * from sys.x$ksppcv;`<br/>`grant select on sys.whatap_vw_ksppcv to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppcv for sys.whatap_vw_ksppcv;` | \^                                                                                                                                                                     | \^                                       |
-
-</div>
-
-<code><span class="vslow">select any dictionary</span></code>の代わりに、次の権限を個別に付与しても構いません。
-
-<div className="c3-3">
-
-| 権限                                                                        | command (Single DB)                                 | command (Multitenant DB)                                 |
-| ------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
-| <Cmdname sid="active_sessions" /> / <Cmdname sid="lock_tree" /> / メトリクス情報 | `grant select on v_$sqlarea to whatap;`             | `grant select on v_$sqlarea to c##whatap;`               |
-| \^                                                                        | `grant select on v_$transaction to whatap;`         | `grant select on v_$transaction to c##whatap;`           |
-| \^                                                                        | `grant select on v_$instance to whatap;`            | `grant select on v_$instance to c##whatap;`              |
-| \^                                                                        | `grant select on v_$sysstat to whatap;`             | `grant select on v_$sysstat to c##whatap;`               |
-| \^                                                                        | `grant select on v_$lock to whatap;`                | `grant select on v_$lock to c##whatap;`                  |
-| \^                                                                        | `grant select on v_$sesstat to whatap;`             | `grant select on v_$sesstat to c##whatap;`               |
-| \^                                                                        | `grant select on v_$event_name to whatap;`          | `grant select on v_$event_name to c##whatap;`            |
-| \^                                                                        | `grant select on v_$session to whatap;`             | `grant select on v_$session to c##whatap;`               |
-| \^                                                                        | `grant select on v_$sql to whatap;`                 | `grant select on v_$sql to c##whatap;`                   |
-| \^                                                                        | `grant select on v_$process to whatap;`             | `grant select on v_$process to c##whatap;`               |
-| \^                                                                        | `grant select on v_$statname to whatap;`            | `grant select on v_$statname to c##whatap;`              |
-| \^                                                                        | `grant select on v_$system_event to whatap;`        | `grant select on v_$system_event to c##whatap;`          |
-| \^                                                                        | `grant select on v_$osstat to whatap;`              | `grant select on v_$osstat to c##whatap;`                |
-| \^                                                                        | `grant select on v_$px_session to whatap;`          | `grant select on v_$px_session to c##whatap;`            |
-| \^                                                                        | `grant select on v_$sga to whatap;`                 | `grant select on v_$sga to c##whatap;`                   |
-| \^                                                                        | -                                                   | `grant select on v_$con_sysstat to c##whatap;`           |
-| パラメータ情報                                                                   | `grant select on v_$parameter to whatap;`           | `grant select on v_$parameter to c##whatap;`             |
-| Wait情報/Event情報                                                            | `grant select on v_$event_name to whatap;`          | `grant select on v_$event_name to c##whatap;`            |
-| \^                                                                        | `grant select on v_$system_event to whatap`         | `grant select on v_$con_system_event to c##whatap;`      |
-| \^                                                                        | `grant select on v_$system_wait_class to whatap;`   | `grant select on v_$system_wait_class to c##whatap;`     |
-| \^                                                                        | -                                                   | `grant select on v_$con_system_wait_class to c##whatap;` |
-| Tablespace情報                                                              | `grant select on dba_data_files to whatap;`         | `grant select on cdb_data_files to c##whatap;`           |
-| \^                                                                        | `grant select on dba_free_space to whatap;`         | `grant select on cdb_free_space to c##whatap;`           |
-| \^                                                                        | `grant select on dba_temp_files to whatap;`         | `grant select on v_$sort_segment to c##whatap;`          |
-| \^                                                                        | `grant select on v_$temp_extent_pool to whatap;`    | `grant select on v_$tempfile to c##whatap;`              |
-| \^                                                                        | `grant select on v_$containers to whatap;` (12c 이상) | `grant select on v_$containers to c##whatap;`            |
-
-</div>
-
-</details>
-
-## データベースユーザーファイルの生成 {#create-db-user}
-
-<DBuserDesc />
+<DBuserDesc level={3} />
 
 import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
 
 <Dbcreatedbuserfilebody />
 
-{/*## 에이전트 실행*/}
+{/*모니터링 시작하기*/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />

@@ -54,25 +54,26 @@ WhaTapのモニタリングプロジェクトは、モニタリング単位を�
 
 <div class='c5-3-5-avg'>
 
-| 権限体系                    | 説明                                                                        |
-| ----------------------- | ------------------------------------------------------------------------- |
-| 照会および分析                 | プロジェクト参照                                                                  |
-| 修正                      | 組織、グループ、プロジェクトの移動、修正、削除、メンテナンス計画                                          |
-| ログ読取り                   | ログ参照、ログ関連機能へのアクセス                                                         |
-| ログエディター                 | ログ設定の編集                                                                   |
-| プロジェクトのFlexボードの修正       | プロジェクトの<Cmdname sid="flexboard" className="uitext" />編集                   |
-| メンバー管理                  | メンバー権限の修正、メンバーの追加と除外                                                      |
-| アラート通知受信                | アラート通知受信                                                                  |
-| アラート設定                  | 通知受信の設定、メンテナンス計画、サーバー製品のプロセスグループ化機能                                       |
-| 課金                      | 金額請求                                                                      |
+| 権限体系                                 | 説明                                                      |
+| ------------------------------------ | ------------------------------------------------------- |
+| <Cmdname sid="view_and_analysis" />  | プロジェクト参照                                                |
+| <Cmdname sid="edit" />               | 組織、グループ、プロジェクトの移動、修正、削除、メンテナンス計画                        |
+| <Cmdname sid="log_read" />           | ログ参照、ログ関連機能へのアクセス                                       |
+| <Cmdname sid="CNT08829" />           | ログに含まれている個人情報を照会する権限                                    |
+| <Cmdname sid="log_update" />         | ログ設定の編集                                                 |
+| <Cmdname sid="ITM06494" />           | プロジェクトの<Cmdname sid="flexboard" className="uitext" />編集 |
+| <Cmdname sid="member_management" />  | メンバー権限の修正、メンバーの追加と除外                                    |
+| <Cmdname sid="alert_reception" />    | アラート通知受信                                                |
+| <Cmdname sid="sms_alert_settings" /> | 通知受信の設定、メンテナンス計画、サーバー製品のプロセスグループ化機能                     |
+| <Cmdname sid="billing" />            | 金額請求                                                    |
 
 </div>
 
-### 照会および分析
+### <Cmdname sid="view_and_analysis" /> {#view_and_analysis}
 
 組織、グループ、プロジェクトにメンバーを招待する場合、これらのメンバーに基本的に付与する権限です。<Cmdname sid="dashboard" className="uitext" />およびその他のメニューページを表示することができます。
 
-### 修正
+### <Cmdname sid="edit" /> {#edit}
 
 - プロジェクトの機能を修正できます。例えば、<Cmdname sid="dashboard" className="uitext" />の追加、修正、削除などができます。 
 
@@ -90,19 +91,19 @@ WhaTapのモニタリングプロジェクトは、モニタリング単位を�
 
 :::
 
-### メンバー管理
+### <Cmdname sid="member_management" /> {#member_management}
 
 - 組織、グループ、プロジェクトごとに所属するメンバーの追加、削除、権限の編集ができます。
 
 - 必ず1人以上の**メンバー管理**権限を持つメンバーが必要です。
 
-### アラート通知受信
+### <Cmdname sid="alert_reception" /> {#alert_reception}
 
 - <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />メニューから通知受信設定を制御できます。
 
 - **通知受信**権限を設定しない場合は、アカウントにの受信設定のみを行うことができます。
 
-### アラート設定
+### <Cmdname sid="sms_alert_settings" /> {#sms_alert_settings}
 
 - <Cmdname sid="event_statistic" className="uitext" /> > <Cmdname sid="event_receive_configuration" className="uitext" />メニューからアラート通知の追加、削除、修正ができます。それ以外は、すべての機能を制御できます。
 
@@ -118,7 +119,7 @@ WhaTapのモニタリングプロジェクトは、モニタリング単位を�
 
 :::
 
-### ログの照会
+### <Cmdname sid="log_read" /> {#log_read}
 
 - ログを検索することができます。組織、グループ、プロジェクトにメンバーを招待する場合、そのメンバーに基本的に付与する権限です。
 
@@ -132,7 +133,39 @@ WhaTapのモニタリングプロジェクトは、モニタリング単位を�
 
   - コンテナマップメニューから**概要の表示**、**詳細ビュー**の<Cmdname sid="log" className="uitext" />タブ
 
-### ログの編集
+### <Cmdname sid="CNT08829" /> {#CNT08829}
+
+ログに含まれている個人情報を照会する権限です。ログには、ユーザーのサービスを利用する顧客の個人情報が含まれる場合があります。WhaTapは、ログに含まれている個人情報をマスキング処理します。WhaTapアカウントのすべてのユーザーは、基本的に個人情報がマスキングされたログを照会することになります。
+
+![Log](/img/project-member-role-log-masking.png)
+
+個人情報として分類する項目については、以下を参照してください。
+
+- 住民登録番号
+
+- パスポート番号
+
+- 運転免許証の番号
+
+- 外国人登録番号
+
+- クレジットカードの番号
+
+- 口座番号
+
+- 生体情報
+
+<Cmdname sid="CNT08829" />権限を持つユーザーは、ログ関連のメニューで個人情報を表示できるトグルボタンが表示されます。<Cmdname sid="BTN08818" className="uitext" />トグルボタンを有効にすると、マスキングを解除して個人情報を照会することができます。
+
+<ImgLang img="project-member-role-log-masking-option.png" desc="Log" />
+
+:::note
+
+ログで個人情報の非識別化設定の詳細は[次の文書](../log/log-setting)を参照してください。
+
+:::
+
+### <Cmdname sid="log_update" /> {#log_update}
 
 <Cmdname sid="log" className="uitext" /> > <Cmdname sid="log_setting" className="uitext" />メニューで設定を編集する権限です。<b>ログ編集</b>権限がある場合は、<Cmdname sid="log_setting" className="uitext" />メニューを使用できます。
 
@@ -142,7 +175,7 @@ WhaTapのモニタリングプロジェクトは、モニタリング単位を�
 
 :::
 
-### プロジェクトのFlexボードの修正
+### <Cmdname sid="ITM06494" /> {#ITM06494}
 
 プロジェクトの<Cmdname sid="flexboard" className="uitext" />メニューでダッシュボードを修正できる権限です。プロジェクト内の<Cmdname sid="flexboard" className="uitext" />メニューから<Cmdname sid="edit_mode" className="uitext" />および<Cmdname sid="admin" className="uitext" />モード、<Cmdname sid="filter" className="uitext" />機能にアクセスできます。
 
@@ -152,7 +185,7 @@ Flexボードの詳細については、[次の文書](../java/flex-board)を参
 
 :::
 
-### 課金
+### <Cmdname sid="billing" /> {#billing}
 
 - 組織、グループ、プロジェクト別に**課金**権限を1人が持ちます。課金権限を持つメンバーは、1人必要です。
 
@@ -170,7 +203,7 @@ Flexボードの詳細については、[次の文書](../java/flex-board)を参
 
 ### プロジェクトメンバー権限の修正
 
-現在選択している組織やグループ、プロジェクトのメンバー一覧で所属メンバーのユーザー権限を修正できます。 
+組織またはグループに属していないプロジェクトのメンバー一覧で、所属メンバーの権限を修正できます。
 
 <ImgLang img='member-modify-authority-0508.png' desc='メンバーの権限を変更する' />
 
@@ -178,7 +211,7 @@ Flexボードの詳細については、[次の文書](../java/flex-board)を参
 
 ### 組織またはグループメンバー権限の修正
 
-組織またはグループの下位に属するグループまたはプロジェクトに対してメンバーのアクセス権限を設定できます。
+組織またはグループに属するプロジェクトのメンバーの権限を修正できます。
 
 <ImgLang img='modify-organize-member-authority.png' desc='メンバーの権限を修正する' />
 

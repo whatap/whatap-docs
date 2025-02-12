@@ -30,31 +30,55 @@
 
   インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。値が'0'の場合、ディスク使用率は収集しません。
 
-- **process** <span class='type'>String</span>
+- **port_check** <span class='type'>String</span>
+
+  XOSエージェントでオプション値として指定したポートに直接接続を試みた後、失敗した場合、そのポート一覧を`db_port_check`カテゴリに転送します。
+
+  ```ini title="xos.conf"
+  port_check=192.168.122.113:3333,192.168.122.113:3334
+  ```
+
+  指定したポートに接続できない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_port_check`カテゴリを選択した後、確認することができます。
+
+  ![port_check](/img/db-xos-conf-port-check-metrics.png)
+
+- **process_check** <span class='type'>String</span>
 
   プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力してください。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
 
   ```ini title='xos.conf'
-  process={process_name}
+  process_check=pmon,smon,tnslsnr,melong,haha
   ```
 
-  例えば、topとlock.shプロセスをモニタリング対象に設定するには、次のようにオプションを設定してください。
+  該当の文字列を含むプロセスが監視されない場合、`db_process_check`カテゴリにデータを転送します。例えば、**melong**、**haha**の2つのプロセスがない場合、<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_process_check`カテゴリを選択した後、確認できます。
 
-  ```ini title='xos.conf'
-  process=top,lock.sh
-  ```
+  ![process_check](/img/db-xos-conf-process-check-metrics.png)
 
   :::note
 
-  `process`オプションを使用して、データベースの実行されているプロセスが終了した場合はアラート通知を送信できます。詳細は[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照してください。
+  `process_check`オプションを使用して、データベースで実行されているプロセスが終了した場合はアラート通知を送信できます。詳細は[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照してください。
 
   :::
 
+- **process_check_interval** <span class='type'>Second</span>
+
+  既定値 `6`
+
+  `process_check`オプションを通じてプロセスの実行状態を収集する時間間隔を設定します。
+
 - **iplist_interval** <span class='type'>Second</span>
 
-  データベースサーバーのIP一覧を収集できます。秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
+  既定値`0`(off)
 
-<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql">
+  データベースサーバーのIP一覧を収集する時間間隔を設定します。秒単位(最小3秒)で時間間隔(interval)を設定できます。
+
+  :::note
+
+  *whatap.conf*のファイルに`xos_dbip=true`オプションを設定すると`db_ip_list`のカテゴリに転送します。<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_ip_list`カテゴリを選択した後、確認することができます。
+
+  :::
+
+<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql,db2">
 
 - **file** <span class='type'>String</span>
 
@@ -121,6 +145,23 @@
   # example
   file=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLOG
   ```
+
+  </InDoc>
+
+  <InDoc product='db2'>
+
+  次の例を参照にしてください。
+
+  ```ini title='xos.conf'
+  # example
+  file=/home/dbuser/sqllib/db2dump/db2diag.log
+  ```
+
+  :::note
+
+  IBM DB2におけるログファイル場所の詳細は[次のリンク](https://www.ibm.com/docs/db2/11.1?topic=parameters-logpath-location-log-files)を参照してください。
+
+  :::
 
   </InDoc>
 

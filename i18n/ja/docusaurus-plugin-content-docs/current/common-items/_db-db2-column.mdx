@@ -1,0 +1,74 @@
+<Title hashid='column-info' level={props.level}>カラム情報ガイド</Title>
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
+
+| 項目                    | 説明                                   |
+| --------------------- | ------------------------------------ |
+| `instance`            | DB2インスタンス(エージェント)名です。                |
+| `dbname`              | データベース名です。                           |
+| `application_handle`  | 特定のアプリケーションを識別する固有のハンドル値です。          |
+| `username`            | 現在のセッションのユーザー名です。                    |
+| `state`               | セッションの状況です。                          |
+| `activity_type`       | セッションで実行されているタスクのタイプです。              |
+| `query`               | セッションで実行中のSQLクエリの内容です。               |
+| `application_id`      | アプリケーションの固有IDで、セッションを区別する時に使用します。    |
+| `application_name`    | セッションが実行されているアプリケーション名です。            |
+| `client_hostname`     | セッションを始めたクライアントホストの名前またはIPアドレスです。    |
+| `last_reference_time` | セッションで最後にタスクを実行した時間です。               |
+| `local_start_time`    | セッションを開始したローカル時間です。                  |
+| `query_hash`          | 実行中のクエリの固有のハッシュ値で、クエリの内容を識別するための値です。 |
+| `runtime`             | 現在のセッションが実行されている時間です。                |
+| `time`                | セッションがタスクに費やした合計時間です。                |
+
+:::note
+
+WhaTapは、クライアントに関する情報をデフォルトで保存します。
+
+:::
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| 項目                        | 説明                          |
+| ------------------------- | --------------------------- |
+| `instance`                | DB2インスタンス(エージェント)名です。       |
+| `application_handle`      | 特定のアプリケーションを識別する固有のハンドル値です。 |
+| `dbname`                  | データベース名です。                  |
+| `username`                | 現在のセッションのユーザー名です。           |
+| `runtime`                 | 現在のセッションが実行されている時間です。       |
+| `state`                   | セッションの状況です。                 |
+| `activity_type`           | セッションで実行されているタスクのタイプです。     |
+| `query`                   | セッションで実行中のSQLクエリの内容です。      |
+| `lock_name`               | ロックの固有の識別子です。               |
+| `lock_object_type`        | ロックが適用されているオブジェクトのタイプです。    |
+| `table_name`              | ロックが適用されているテーブルの名前です。       |
+| `holder_application_name` | ロックを保持しているアプリケーションの名前です。    |
+| `holder_member`           | ロックを保有しているメンバーのIDです。        |
+| `waiter_application_name` | ロック待機中のアプリケーションの名前です。       |
+| `waiter_member`           | ロック待機中のメンバーのIDです。           |
+| `wait_time`               | ロックの待機時間です。                 |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+次の項目は、XOSエージェントをインストールした場合に収集される指標です。
+
+| 項目         | 説明                                          |
+| ---------- | ------------------------------------------- |
+| `pid`      | データベースプロセスのPIDです。                           |
+| `cputime`  | CPU使用時間です。                                  |
+| `cpuusage` | CPU使用率です。                                   |
+| `elapse`   | CPU使用経過時間です。                                |
+| `vsize`    | 仮想メモリサイズ(Kb)です。                             |
+| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理的ページの数です。 |
+| `state`    | プロセス状態です。                                   |
+| `ioread`   | ブロックの読み取りにかかった実際の時間(milliseconds)です。        |
+| `iowrite`  | ブロックの書き込みにかかった実際の時間(milliseconds)です。        |
+| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合        |
+
+</TabItem>
+</Tabs>

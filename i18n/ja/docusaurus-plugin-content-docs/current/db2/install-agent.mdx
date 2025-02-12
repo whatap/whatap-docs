@@ -1,0 +1,72 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+keywords:
+  - IBM DB2
+  - データベースモニタリング
+  - エージェント
+---
+
+import Agentsignupguide from "../common-items/_agent-signup-guide.mdx";
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+import CheckType from "../common-items/_db-install-agent-check-type.mdx";
+import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
+import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
+import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
+import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
+import Whatapconf from "../common-items/_db-whatap-conf.mdx";
+import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
+import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body.mdx";
+import Dbrunagent from "../common-items/_db-run-agent.mdx";
+import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
+import NextStep from "../common-items/_db-next-step.mdx";
+
+WhaTapデータベースモニタリングサービスを使用するための基本的なインストール方法について説明します。
+
+<Collection docs={
+  [
+    {Topic: Agentsignupguide, props: {desc: "개요"}},
+    {Topic: Createprojectv2, props: {level: "프로젝트 생성하기"}},
+  ]}
+/>
+
+<Steps>
+
+<Collection docs={
+  [
+    {Topic: CheckType, props: {desc: "구성도 확인하기"}},
+    {Topic: Dbcreatemonitoringaccount, props: {desc: "계정 생성"}},
+    {Topic: Accesskeyv2, props: {desc: "액세스 키 확인"}},
+    {Topic: DownloadDBXagent, props: {desc: "DBX 에이전트 다운로드"}},
+    {Topic: SettingsDBXagent, props: {desc: "DBX 에이전트 설정"}},
+    {Topic: Whatapconf, props: {desc: "whatap.conf 설정"}},
+  ]}
+/>
+
+### JDBCダウンロード
+
+DBサーバーの*/`db2_instance_path`/sqllib/java*経路から*db2jcc4.jar*ファイルをコピーして*/`agent_installation_path`/jdbc*フォルダに張り付けをしてください。
+
+```txt
+/圧縮を解凍したフォルダ/jdbc
+```
+
+:::note
+
+IBM DB2のJDBCドライバー構成の詳細については、[次のリンク](https://www.ibm.com/docs/baw/23.x?topic=installation-configuring-jdbc-drivers)を参照してください。
+
+:::
+
+<Collection docs={
+  [
+    {Topic: DBuserDesc, props: {level: 3, desc: "DB 유저 파일 생성"}},
+    {Topic: Dbcreatedbuserfilebody, props: {desc: "DB 유저 파일 생성 Note"}},
+    {Topic: Dbrunagent, props: {desc: "DB 모니터링 시작하기"}},
+    {Topic: Dbinstallxosagent, props: {desc: "XOS 에이전트 설치"}},
+  ]}
+/>
+
+</Steps>
+
+<NextStep />

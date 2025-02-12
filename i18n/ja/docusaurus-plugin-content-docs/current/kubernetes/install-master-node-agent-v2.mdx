@@ -31,7 +31,7 @@ EKS Fargateは、対応予定です。
 
 1. WhaTap Kubernetesエージェントのイメージバージョンを推奨する**_Stable_**バージョンと**_Preview_**バージョンの中から選択します。
 
-2. ***YAML***ファイルと**_Helm_**チャートのインストール方法の中から希望する**インストール方式**を選択します。 
+2. ***YAML***ファイルと***Helm***チャートのインストール方法の中から希望する**インストール方式**を選択します。 
 
 3. **_1.16以降_**バージョンまたは**_1.16未満_**バージョンの中で該当する**Kubernetesバージョン**を選択します。 
 
@@ -60,6 +60,8 @@ WhaTap Kubernetesモニタリングは、現在**コントロールプレーン�
 - <Cmdname sid="side_kubeApiserverMetricsSearch" className="uitext" /> [ショートカット](/kubernetes/kube-apiserver-metrics-search)
 
 - <Cmdname sid="side_etcdDashboard" className="uitext" /> [ショートカット](/kubernetes/etcd-dashboard)
+
+- **_kube-schedulerダッシュボード_** [ショートカット](/kubernetes/kube-scheduler-dashboard)
 
 :::
 
@@ -124,7 +126,7 @@ WhaTap Kubernetesエージェントのインストール時**Yaml**ファイル�
 
 #### Yamlファイル基準インストール
 
-**_インストール方法の選択_**タブで**_Yaml_**ファイルのインストール方法を選択した場合は、エージェントを生成するために次のコマンドを実行します。 
+**_インストール方法の選択_**タブで***Yaml***ファイルのインストール方法を選択した場合は、エージェントを生成するために次のコマンドを実行します。 
 
 ```bash
 kubectl apply -f whatap_kube_agent.yaml
@@ -148,9 +150,9 @@ WhaTap Kubernetesエージェントは基本的に`whatap-monitoring`ネーム�
 
 :::
 
-**_インストール方法の選択_**タブで**_Helm_**チャートのインストール方法を選択した場合は、次のガイドを参照してください。 
+**_インストール方法の選択_**タブで***Helm***チャートのインストール方法を選択した場合は、次のガイドを参照してください。 
 
-1. 次のコマンドを通じて_Helm_バージョンを確認します。 3.xバージョン以降をサポートします。 
+1. 次のコマンドを通じて*Helm*バージョンを確認します。 3.xバージョン以降をサポートします。 
 
    ```bash
    helm Version
