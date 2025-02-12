@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_6",
+    "ver": "v0.5.6",
+    "date": "2025-01-23",
+    "Lists": [
+      {
+        "ver": "v0.5.6",
+        "hash": "v056",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved the metrics collection logic for ECS-environment systems.</p>"
+      },
+      {
+        "ver": "v0.5.6",
+        "hash": "v056",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the maximum size for hitmap data transmission.</p>"
+      }
+    ]
+  }
+  ]
