@@ -1,0 +1,41 @@
+---
+id: analysis-lock-tree
+title: ロックツリー
+description: 1日に発生したロックの推移を分析し、デッドロック状態のクエリを確認できます。
+keywords:
+  - IBM DB2
+  - データベース
+  - Lock
+  - ロックツリー
+---
+
+import Dblocktreedesc from "../common-items/_db-locktree-desc.mdx";
+import Dblocktreeusingbasic from "../common-items/_db-locktree-using-basic.mdx";
+
+<Collection docs={
+  [
+    {Topic: Dblocktreedesc, props: {level: 2, desc: '락트리'}},
+    {Topic: Dblocktreeusingbasic, props: {level: 2, desc: '기본 사용 안내'}},
+  ]}
+/>
+
+## カラム情報ガイド
+
+| 項目                        | 説明                          |
+| ------------------------- | --------------------------- |
+| `instance`                | DB2インスタンス(エージェント)名です。       |
+| `application_handle`      | 特定のアプリケーションを識別する固有のハンドル値です。 |
+| `dbname`                  | データベース名です。                  |
+| `username`                | 現在のセッションのユーザー名です。           |
+| `runtime`                 | 現在のセッションが実行されている時間です。       |
+| `state`                   | セッションの状況です。                 |
+| `activity_type`           | セッションで実行されているタスクのタイプです。     |
+| `query`                   | セッションで実行中のSQLクエリの内容です。      |
+| `lock_name`               | ロックの固有の識別子です。               |
+| `lock_object_type`        | ロックが適用されているオブジェクトのタイプです。    |
+| `table_name`              | ロックが適用されているテーブルの名前です。       |
+| `holder_application_name` | ロックを保持しているアプリケーションの名前です。    |
+| `holder_member`           | ロックを保有しているメンバーのIDです。        |
+| `waiter_application_name` | ロック待機中のアプリケーションの名前です。       |
+| `waiter_member`           | ロック待機中のメンバーのIDです。           |
+| `wait_time`               | ロックの待機時間です。                 |

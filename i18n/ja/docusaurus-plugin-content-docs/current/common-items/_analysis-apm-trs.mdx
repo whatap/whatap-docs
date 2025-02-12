@@ -40,21 +40,24 @@ WhaTapモニタリングサービスのメイン画面でプロジェクトを�
 
 トランザクション統計を収集します。5分ごとに最大5,000個のURLごとの実行統計を収集してサーバーに送信します。異なるURLの数が5分間で5,000個を超えた場合は無視されます。
 
-| カラム                             | 説明                               |
-| ------------------------------- | -------------------------------- |
-| <Cmdname sid="TTL06918" />      | トランザクションアドレス                     |
-| <Cmdname sid="count" />         | 実行件数                             |
-| <Cmdname sid="error" />         | 実行されたトランザクションのエラー発生件数            |
-| <Cmdname sid="TTL06960" /> (ms) | 応答時間の合計の平均                       |
-| <Cmdname sid="TTL06963" /> (ms) | 応答時間の合計                          |
-| <Cmdname sid="TTL06961" /> (ms) | 最大応答時間                           |
-| <Cmdname sid="TTL06965" />      | CPU使用時間の平均                       |
-| <Cmdname sid="httpc_count" />   | HTTP Call件数                      |
-| <Cmdname sid="TTL06959" /> (ms) | HTTP Call時間の合計の平均                |
-| <Cmdname sid="TTL06097" />      | SQL実行件数                          |
-| <Cmdname sid="TTL06956" /> (ms) | 平均SQL実行時間                        |
-| <Cmdname sid="sqlFetch" />      | SQLフェッチ件数                        |
-| <Cmdname sid="TTL06953" /> (ms) | SQLフェッチ時間の合計の平均                  |
+| カラム                             | 説明                                                       |
+| ------------------------------- | -------------------------------------------------------- |
+| <Cmdname sid="TTL06918" />      | トランザクションアドレス                                             |
+| <Cmdname sid="count" />         | 実行件数                                                     |
+| <Cmdname sid="error" />         | 実行されたトランザクションのエラー発生件数                                    |
+| <Cmdname sid="TTL06960" /> (ms) | 応答時間の合計の平均                                               |
+| <Cmdname sid="TTL06963" /> (ms) | 応答時間の合計                                                  |
+| <Cmdname sid="TTL06961" /> (ms) | 最大応答時間                                                   |
+| <Cmdname sid="TTL06965" />      | CPU使用時間の平均                                               |
+| <Cmdname sid="httpc_count" />   | HTTPコール件数                                                |
+| <Cmdname sid="TTL06959" /> (ms) | HTTP呼び出しの合計時間/トランザクションの発生件数                              |
+| <Cmdname sid="TTL08965" /> (ms) | HTTP呼び出しの合計時間/トランザクションで発生したHTTP呼び出しの合計件数                 |
+| <Cmdname sid="TTL06097" />      | SQL実行件数                                                  |
+| <Cmdname sid="TTL06956" /> (ms) | SQLの合計時間/トランザクションの発生件数                                   |
+| <Cmdname sid="TTL08964" /> (ms) | SQLの合計時間/トランザクションで発生したSQLの合計件数                           |
+| <Cmdname sid="sqlFetch" />      | SQLフェッチ件数                                                |
+| <Cmdname sid="TTL06953" /> (ms) | SQLパッチの合計時間/トランザクションの発生件数                                |
+| <Cmdname sid="TTL08966" /> (ms) | SQLパッチの合計時間/トランザクションで発生したSQLパッチの合計件数                     |
 
 :::note
 
@@ -129,6 +132,7 @@ whatap.stat_domain_enabled=true
 | <Cmdname sid="count" />      | 実行件数                             |
 | <Cmdname sid="error" />      | 実行されたトランザクションのエラー発生件数            |
 | <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                       |
+| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                          |
 
 ## TX Caller統計
 
@@ -268,6 +272,7 @@ whatap.stat_referer_enabled=true
 | <Cmdname sid="count" />      | 実行件数                             |
 | <Cmdname sid="error" />      | 実行されたトランザクションのエラー発生件数            |
 | <Cmdname sid="timeAvg_ms" /> | 応答時間の合計の平均                       |
+| <Cmdname sid="timeSum_ms" /> | 応答時間の合計                          |
 
 ## エラー統計
 
@@ -275,12 +280,16 @@ whatap.stat_referer_enabled=true
 
 5分間に発生したサービスエラーに関する統計です。異なるエラーとトランザクション名をキーとして発生件数を収集します。エラー発生時点のスタックを提供します。5分あたり最大1,000個の異なるエラーを統計化します。
 
-| カラム                        | 説明            |
-| -------------------------- | ------------- |
-| <Cmdname sid="class" />    | エラークラス        |
-| <Cmdname sid="TTL06918" /> | トランザクションアドレス  |
-| <Cmdname sid="msg" />      | エラーメッセージ      |
-| <Cmdname sid="count" />    | エラー発生件数       |
+| カラム                          | 説明                                        |
+| ---------------------------- | ----------------------------------------- |
+| <Cmdname sid="class" />      | エラークラス                                    |
+| <Cmdname sid="TTL06918" />   | トランザクションアドレス                              |
+| <Cmdname sid="msg" />        | エラーメッセージ                                  |
+| <Cmdname sid="count" />      | エラー発生件数                                   |
+| <Cmdname sid="type_oid" />   | エージェント名                                   |
+| <Cmdname sid="type_onode" /> | `whatap.onode`に分類されたエージェントグループのユニット       |
+| <Cmdname sid="type_okind" /> | `whatap.okind`に分類されたエージェントグループのユニット       |
+| <Cmdname sid="TTL09049" />   | 照会期間中にトランザクションのエラーが最初に生成された統計時間(5分または1時間) |
 
 ## SQL実行統計
 
@@ -324,6 +333,7 @@ HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケー�
 | <Cmdname sid="timeSum_ms" /> | 応答時間の合計                                               |
 | <Cmdname sid="timeMin_ms" /> | 最小応答時間                                                |
 | <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                |
+| <Cmdname sid="TTL06915" />   | HTTPコール時間の標準偏差                                        |
 
 ## クライアントIPリージョン別の呼び出し件数
 

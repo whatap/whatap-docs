@@ -20,6 +20,20 @@
 
 :::
 
+:::note
+
+Windows環境にインストールされたエージェントは、自動更新機能をサポートしません。手動で最新のエージェントに再インストールするか、最新の_whatap.agent.dbx-\*.jar_ファイルを既存のエージェントフォルダーに入れて、サービスを再登録してください。
+
+```bash
+# 1. Delete Windows service
+install_WindowsService.bat delete WhatapDBXAgent # existing service name
+
+# 2. Create Windows service
+install_WindowsService.bat create WhatapDBXAgent # existing service name
+```
+
+:::
+
 ### アップデートに失敗した場合
 
 #### エージェントが再起動しない場合

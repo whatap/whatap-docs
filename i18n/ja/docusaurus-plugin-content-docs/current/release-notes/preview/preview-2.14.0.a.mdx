@@ -1,0 +1,91 @@
+---
+id: preview-2_14_0x
+title: Preview 2.14.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+[preview.whatap.io](https://preview.whatap.io)で、次の新機能と変更した内容を事前に体験できます。 
+
+:::
+
+## Preview 2.14.0.a0
+
+2025年01月23日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />または<Cmdname sid="side_flexboard" className="uitext" />メニューの通知リストウィジェットにデータがない場合<Cmdname sid="ITM08413" className="uitext" />スイッチUIが表示されない問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューのイベント一覧に表示される<Cmdname sid="DSC07196" className="uitext" />に対する説明のツールチップ及び多言語を適用
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューの<Cmdname sid="aboids_large_number_alerts" className="uitext" />セクションで設定によるSMS遮断のしきい値を表示するように修正
+
+- <Status priority='0'>Fixed</Status>時間セレクター(タイムセレクター)でキーボードを利用した時間変更後、検索ボタンをクリックすると変更された時間が適用されない問題を修正
+
+- <Status priority='0'>Fixed</Status>時間セレクター(タイムセレクター)をリアルタイムモードに変更する際に出力されるメッセージに多言語を適用
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />メニューの<Cmdname sid="realtime_user" className="uitext" />ウィジェットガイドにWhaTap Docsのリンクを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_multi_server_tx_trace" className="uitext" />メニューのプロジェクト選択フィルターで現在のプロジェクトを常に最上段に露出するように修正
+
+  :::note
+
+  現在のプロジェクトは常に選択されており、解除できません。
+
+  :::
+
+- <Status priority='0'>Fixed</Status>  <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />メニューで<Cmdname sid="TTL08868" className="uitext" />機能を利用する時に表示されるポップアップウィンドウの上部に日付が変更されない問題を修正
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />メニューのグループ詳細表示で次の機能を追加
+
+  - <Cmdname sid="TTL08662" className="uitext" />タブのテーブルに<UI>Free(GB)</UI>のカラムを追加
+
+  - <Cmdname sid="TTL08662" className="uitext" />タブのフィルターに(大小の比較が可能な)数字タイプの値を持つカラムキーを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューの上段にDisk Total(すべてのdiskサイズの合計)項目を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />メニューの機能に対応するためのAIX OS環境のエージェント設置に関する案内文書を追加
+
+---
+
+### `Kubernetes`
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューでkube-scheduler機能活性化の案内を追加
+
+---
+
+### `Database`
+
+#### 共通
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />メニューからモニタリング中のエージェントがいない場合、次の事項を変更
+
+- テーブル一覧にエージェントがインストールされていないというメッセージを表示するように修正
+
+- <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューに移動しないように変更
+
+#### Oracle Pro
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューの<UI>SQL Elapse Map</UI>ウィジェットを通じて<Cmdname sid="TTL06224" className="uitext" />ウィンドウに入るとアクティブセッション情報が照会されない問題を修正
+
+#### IBM DB2
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューのリストでsqlHash値が負の数の場合、最後の2桁が切れる問題を修正
+
+</div>

@@ -25,21 +25,33 @@
 start.bat
 ```
 
-Windowsシステムの起動時、自動的にエージェントを起動するようにサービスに登録できます。次のコマンドを参考にしてください。
+画面に表示された実行ログにエラーがないか確認し、ダッシュボード画面(<Cmdname sid="side_instanceList" className="uitext" />)にチャートが正常に表示されることを確認します。異常がなければCtrl+Cを押して実行を終了し、次の手順に従ってウィンドウサービスに登録します。
+
+### サービスを登録する
+
+次のコマンドを実行して、サービスを登録します。
 
 ```bash
-# サービス登録時
 install_WindowsService.bat create WhatapDBXAgent
-
-# サービス削除時
-install_WindowsService.bat delete WhatapDBXAgent
 ```
+
+サービスを登録すると、Windowsのサービス管理ツールで以下のように確認できます。該当サービスを探して右クリックし、スタート(Start) オプションを選択してサービスを開始します。
+
+![Register a service](/img/mssql-register-windows-service.png)
 
 :::note
 
 **コントロールパネル** > **Windowsツール** > **サービス**(services.msc)で**WhatapDBXAgent** サービスを開始または停止できます。使用するWindowsバージョンによって**サービス**経路は異なる場合があります。
 
 :::
+
+### サービスを削除する
+
+次のコマンドを実行して、サービスを削除できます。
+
+```bash
+install_WindowsService.bat delete WhatapDBXAgent
+```
 
 </TabItem>
 </Tabs>

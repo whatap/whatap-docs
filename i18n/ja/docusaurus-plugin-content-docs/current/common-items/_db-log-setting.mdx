@@ -84,9 +84,20 @@ file=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLO
 
 </InDoc>
 
+<InDoc product='db2'>
+
+次の例を参照にしてください。
+
+```ini title='xos.conf'
+# example
+  file=/home/dbuser/sqllib/db2dump/db2diag.log
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid,mssql'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid,mssql,db2'>
 
 適用する前に、XOSエージェントをインストールしてエージェント設定を行う必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
@@ -100,7 +111,7 @@ file=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLO
 
 :::
 
-<Xclude product="altibase,cubrid">
+<Xclude product="altibase,cubrid,db2">
 
 ## AWS RDS Logに適用する
 

@@ -1,0 +1,112 @@
+---
+id: metrics-data-list
+title: IBM DB2指標
+description: IBM DB2データベース指標を案内します。
+keywords:
+  - IBM DB2
+  - メトリクス
+  - データベース
+  - データベースモニタリング
+---
+
+データベース指標は、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+
+その他のメトリクスに関する詳細については、[次のリンク](https://www.postgresql.org/docs)を参照してください。
+
+import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<div className="metricslist">
+
+<AgentStatus />
+
+## db_db2_counter {#db_db2_counter}
+
+- 収集間隔：5秒
+
+- 統計データ：5分、1時間
+
+### Tags {#db_db2_counter-tags}
+
+次に、`db_db2_counter`カテゴリに収集されるタグ値の案内です。
+
+| タグ名         | 説明                  | 備考    |
+| ----------- | ------------------- | ----- |
+| `dbType`    | データベースの種類です。        | -     |
+| `dbVersion` | 利用中のデータベースのバージョンです。 | -     |
+| `oname`     | エージェント名です。          | ユニーク値 |
+
+### Field {#db_db2_counter-filed}
+
+次に、`db_db2_counter`カテゴリに収集されるフィールド値の案内です。
+
+| Metrics                    | Description          |
+| -------------------------- | -------------------- |
+| `active_sessions`          | 現在のアクティブセッションの数      |
+| `col_hit_ratio`            | カラムキャッシュヒット率         |
+| `col_logical_reads`        | カラムの論理読み取り回数         |
+| `col_physical_reads`       | カラムの物理読み取り回数         |
+| `col_reads_total`          | カラムの総読み取り回数          |
+| `connect_error`            | データベース接続エラー回数        |
+| `cpu_cores`                | 使用中のCPUコアの数です。       |
+| `cpu_usage_total`          | 総CPU使用量(%)           |
+| `data_hit_ratio`           | データキャッシュヒット率         |
+| `data_logical_reads`       | データの論理読み取り回数         |
+| `data_physical_reads`      | データの物理読み取り回数         |
+| `data_reads_total`         | データの総読み取り回数          |
+| `direct_read`              | 直接読み取り回数             |
+| `direct_readtime`          | 直接読み込み所要時間           |
+| `direct_write`             | 直接書き込み回数             |
+| `direct_writetime`         | 直接書き込み所要時間           |
+| `fatal`                    | 致命的なエラー発生回数          |
+| `count`                    | 特定のイベントまたは項目の合計数     |
+| `gbp_column_hit_ratio`     | GBPカラムのキャッシュヒット率     |
+| `gbp_data_hit_ratio`       | GBPデータのキャッシュヒット率     |
+| `gbp_index_hit_ratio`      | GBPインデックスのキャッシュヒット率  |
+| `gbp_index_logical_reads`  | GBPインデックスの論理的読み取り回数  |
+| `gbp_index_physical_reads` | GBPインデックスの物理的読み取り回数  |
+| `gbp_logical_reads`        | GBPデータの論理読み取り回数      |
+| `gbp_physical_reads`       | GBPデータの物理的読み取り回数     |
+| `gbp_total_hit_ratio`      | GBPキャッシュヒット率         |
+| `gbp_xda_hit_ratio`        | GBP XDAキャッシュヒット率     |
+| `gbp_xda_logical_reads`    | GBP XDA論理的読み取り回数     |
+| `gbp_xda_physical_reads`   | GBP XDA物理的読み取り回数     |
+| `index_hit_ratio`          | インデックスキャッシュヒット率      |
+| `index_logical_reads`      | インデックス論理読み取り回数       |
+| `index_physical_reads`     | インデックス物理的読み取り回数      |
+| `index_reads_total`        | インデックス総読み回数          |
+| `lock_wait_sessions`       | ロック待機セッション数          |
+| `log_reads`                | ログ読み取り回数             |
+| `log_writes`               | ログ書き込み回数             |
+| `max_appls`                | 最大アプリケーション数          |
+| `max_connections`          | 最大接続数                |
+| `mem`                      | メモリ使用量               |
+| `memory_free`              | 使用可能なメモリサイズ(GB)      |
+| `memory_swap_free`         | 使用可能なスワップメモリ サイズ(GB) |
+| `memory_swap_total`        | 合計スワップメモリサイズ(GB)     |
+| `memory_total`             | 総メモリサイズ(GB)          |
+| `reads_total`              | 総読み取り回数              |
+| `rows_deleted`             | 削除された行数              |
+| `rows_inserted`            | 挿入された行数              |
+| `rows_modified`            | 修正された行数              |
+| `rows_read`                | 読み取り行数               |
+| `rows_returned`            | 返された行数               |
+| `rows_updated`             | 更新された行数              |
+| `total_commit_count`       | 全体コミット回数             |
+| `total_hit_ratio`          | 全体キャッシュヒット率          |
+| `total_log_available`      | 使用可能な全体ログ容量(GB)      |
+| `total_log_used`           | 使用されたログ容量(GB)        |
+| `total_log_used_percent`   | 使用された全体ログ割合(%)       |
+| `total_rollback_count`     | 全体ロールバック回数           |
+| `total_rollback_time`      | 全体ロールバック所要時間(ms)     |
+| `total_runstats_time`      | 全体実行統計時間(ms)         |
+| `total_sessions`           | 全体セッション数             |
+| `warning`                  | 警告発生回数               |
+| `xda_hit_ratio`            | XDAキャッシュヒット率         |
+| `xda_logical_reads`        | XDA論理的読み取り回数         |
+| `xda_physical_reads`       | XDA物理的読み取り回数         |
+| `xda_reads_total`          | XDA総読み取り回数           |
+
+<Xosmetrics />
+
+</div>

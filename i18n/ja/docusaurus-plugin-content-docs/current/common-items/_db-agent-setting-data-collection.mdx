@@ -4,11 +4,35 @@
 
   DBパラメータの収集有無を設定します。
 
+<InDoc product="db2">
+
+- **connect_timeout** <span class='type'>Int</span>
+
+  デフォルト値`15`(秒)
+
+  クエリの収集が指定された時間を超えた場合は、そのクエリのデータ収集を停止します。
+
+- **db2_opt** <span class='type'>Int</span>
+
+  既定値`0`
+
+  アクティブセッションの収集条件を設定します。
+
+  - `0`：`activity_state`が**EXECUTING**状態のセッションのみ収集します。
+
+  - `1`：`activity_state`が**EXECUTING**、**RECEIVING**、**SUSPENDED**状態のセッションをすべて収集します。
+
+</InDoc>
+
+<Xclude product="db2">
+
 - **conn_fail_count** <span class='type'>Int</span>
 
   既定値 `15`
 
   15回連続コネクションエラーが発生した時に通知を送信します。希望する回数を入力して、通知の発生基準を調整できます。
+
+</Xclude>
 
 <InDoc product ='mysql'>
 
@@ -20,26 +44,6 @@
 
 </InDoc>
 
-<InDoc product="postgresql,mysql">
-
-- **tables** <span class='type'>Boolean</span>
-
-  既定値 `true`
-
-  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます
-
-</InDoc>
-
-<Xclude product ='redis,mongodb,oracle,oracle-v1,altibase'>
-
-- **tables_hour** <span class='type'>Int</span>
-
-  既定値`5`
-
-  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
-
-</Xclude>
-
 <Xclude product ='redis,mongodb,oracle,oracle-v1'>
 
 - **long_run_session_sec** <span class='type'>Second</span>
@@ -49,6 +53,56 @@
   設定した時間より長く実行されているセッションを、long runセッションで処理します。
 
 </Xclude>
+
+<InDoc product="postgresql,mysql,cubrid,mssql">
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSize" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます.
+
+</InDoc>
+
+<InDoc product="tibero">
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます.
+
+</InDoc>
+
+<InDoc product="mysql">
+
+- **table_filesize** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズの収集時に`innodb_tablespaces`の`file_size`を一緒に収集します。
+
+</InDoc>
+
+<Xclude product='redis,mongodb,oracle,oracle-v1,altibase,db2'>
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+</Xclude>
+
+<InDoc product="postgresql">
+
+- **tables_min_size** <span class='type'>Int</span>
+
+  既定値`10`
+
+  テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位は、`pg_total_relation_size`既定値では10MBです。
+
+</InDoc>
 
 <InDoc product='tibero'>
 
@@ -60,13 +114,13 @@
 
 - **tables_exclude_sys** <span class='type'>Boolean</span>
 
-  既定値`false`
+  既定値 `true`
 
-  テーブル情報を収集する際に、sys所有のテーブル情報の収集有無を設定します。 `true`に設定すると、sys所有のテーブル情報は収集されません。
+  テーブル情報を収集する時、SYS、OUTLN、SYSGIS、SYSCAT所有のテーブル情報の収集有無を設定します。`true`に設定すると、当該テーブル情報は収集しません。
 
 </InDoc>
 
-<InDoc product="cubrid">
+<InDoc product="cubrid,mysql,mssql">
 
 - **tables_min_row** <span class='type'>Int</span>
 
@@ -76,7 +130,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb,altibase,mssql'>
+<Xclude product='cubrid,redis,mongodb,altibase,mssql,db2'>
 
 - **replication_name** <span class='type'>String</span>
 
@@ -87,6 +141,18 @@
 </Xclude>
 
 <InDoc product='postgresql'>
+
+- **skip_schema** <span class='type'>String</span>
+
+  既定値：pg_catalog、sys、information_schema、pg_toast
+
+  オプション値に設定したスキーマのテーブルは収集しません。
+
+- **skip_db** <span class='type'>String</span>
+
+  既定値：edb、postgres
+
+  オプション値に設定したデータベースのテーブルは収集しません。
 
 - **slave_ip** <span class='type'>string</span>
 
@@ -112,7 +178,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb'>
+<Xclude product='cubrid,redis,mongodb,db2'>
 
 - **skip_whatap_session** <span class='type'>Int</span>
 
@@ -279,7 +345,7 @@
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase">
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,db2">
 
 - **xview_min_sec** <span class='type'>Int</span>
 

@@ -14,30 +14,149 @@
 
 テーブルスペースの使用状況をリアルタイムでモニタリングすることで、使用量を確認し、適切な容量管理ができます。使用量の高いテーブルスペースとセグメントを追跡し、容量管理と性能最適化のための措置を取ってください。また、テーブルスペースの過剰使用を事前に感知して対応できます。
 
+<InDoc product="altibase">
+
+:::note
+
+**table user**(owner)が`SYSTEM_`ではないsegment(table,index)を収集します。
+
+:::
+
+## 使用する前に
+
+テーブルスペースのサイズデータを収集するには、エージェントオプションの設定が必要です。
+
+- **segments** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  セグメントサイズの情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューで当該データベースまたはテーブルスペースを選択すると、サイズ情報が確認できます。
+
+- **segments_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  セグメントサイズの情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  既定値`10`
+
+  セグメントサイズの情報を収集する最小単位として既定値は10MBです。セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。
+
+</InDoc>
+
+<InDoc product="tibero">
+
+## 使用する前に
+
+テーブルスペースのサイズ データを収集するには、データベース権限の設定とエージェントオプションの設定が必要です。セグメントのサイズ データは、1日に1回収集され、次のように設定を完了する必要があります。
+
+### 権限を割り当てる
+
+セグメントのサイズ データを収集するには、モニタリングユーザーに適切なデータベース権限を付与する必要があります。次のSQLコマンドを使用して権限を設定してください。
+
+```sql title="SQL"
+grant select any dictionary to whatap;
+```
+
+:::note
+
+`tables_exclude_sys`オプションに該当する場合、テーブルスペースのサイズ情報を収集しません。
+
+:::
+
+### エージェントオプションを設定する
+
+エージェントオプションにより、テーブルスペースのサイズデータの収集基準を設定できます。
+
+- **tables** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブルサイズ情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューでそのデータベースを選択すると、テーブルサイズ情報が確認できます.
+
+- **tables_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  テーブルサイズ情報を保存するために、情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+- **tables_min_size** <span class='type'>Int</span>
+
+  既定値`10`
+
+  テーブル情報を収集する場合、設定した値より小さいサイズのテーブル情報は収集しません。テーブルデータを収集する最小単位は、既定値では10MBです。
+
+- **tables_exclude_sys** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  テーブル情報を収集する時、SYS、OUTLN、SYSGIS、SYSCAT所有のテーブル情報の収集有無を設定します。`true`に設定すると、当該テーブル情報は収集しません。
+
+</InDoc>
+
 <Xclude product="altibase,tibero">
 
 ## 使用する前に
 
 テーブルスペースのサイズ データを収集するには、データベース権限の設定とエージェントオプションの設定が必要です。セグメントのサイズ データは、1日に1回収集され、次のように設定を完了する必要があります。
 
-### DB権限設定
+### 権限を割り当てる
 
 セグメントのサイズ データを収集するには、モニタリングユーザーに適切なデータベース権限を付与する必要があります。次のSQLコマンドを使用して権限を設定してください。
 
 ```sql title="SQL"
-grant select any dictionary to monitoring_user;
+grant select any dictionary to whatap;
 -- or --
-grant select on dba_segments to monitoring_user;
+grant select on dba_segments to whatap;
 ```
 
-### エージェント設定
+:::note
 
-エージェントオプションを使用して、セグメントサイズのデータ収集基準を設定できます。デフォルト設定は、10MB以上のセグメントを毎日午前5時に収集することです。
+テーブルスペース(Tablespace)が`SYSTEM`、`SYSAUX`、`TEMP`、`UNDOTBS1`の場合は収集しません。
 
-```ini title="whatap.conf"
-segments_min_size=10
-segments_hour=5
-```
+:::
+
+### エージェントオプションを設定する
+
+エージェントオプションにより、セグメントのサイズデータの収集基準を設定できます。
+
+- **segments** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  セグメントサイズの情報を収集します。<Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューで当該データベースまたはテーブルスペースを選択すると、サイズ情報が確認できます。
+
+- **segments_hour** <span class='type'>Int</span>
+
+  既定値`5`
+
+  セグメントサイズの情報を収集する時刻を設定します。既定値は`5`であり、朝の5時に収集を始めます。
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  既定値`10`
+
+  セグメントサイズの情報を収集する最小単位として既定値は10MBです。セグメントサイズ情報を収集する時に設定した値よりも小さいサイズのセグメントサイズ情報は収集しません。
+
+- **segments_exclude_sys** <span class='type'>Int</span>
+
+  既定値`1`
+
+  sysに該当するアカウントを除いて、サイズ情報を収集します。
+
+- **segments_sys** <span class='type'>String</span>
+
+  既定値 'SYS', 'OUTLN', 'SYSTEM', 'AUDSYS', 'DBSNMP', 'GSMADMIN_INTERNAL', 'XDB', 'WMSYS', 'OJVMSYS', 'CTXSYS', 'ORDSYS', 'ORDDATA', 'MDSYS', 'LBACSYS', 'DVSYS', 'DBSFWUSER', 'APPQOSSYS', 'OLAPSYS'
+
+  sysに該当するアカウントの一覧です。上記のアカウントに追加したい場合は`segments_sys+='xxx'`で追加できます。
+
+- **segments_max_count** <span class='type'>Int</span>
+
+  既定値`50`
+
+  テーブルスペースごとにサイズの大きいセグメント50個だけを収集して保存します。
 
 </Xclude>
 

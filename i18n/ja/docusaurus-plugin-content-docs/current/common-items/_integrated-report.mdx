@@ -1,28 +1,34 @@
 ホーム画面 &gt; <Cmdname sid="side_integratedReport" className="uitext" />
 
-WhaTapモニタリングサービスの初期画面でプロジェクトを選択せず、サイドメニューの<Cmdname sid="side_integratedReport" className="uitext" />を選択します。<Cmdname sid="side_integratedReport" className="uitext" />は、複数のプロジェクトに関するレポートを簡単に作成できます。 
-
-レポートの種類と目的のプロジェクトを選択してレポートを作成でき、レポート作成一覧からタスクの進行状況を確認できます。レポート作成中に特定のプロジェクトでエラーが発生した場合、エラー内容を確認できます。作業が完了したレポートを直接表示したり、ダウンロードおよび印刷機能を使用して、他のユーザーとレポートを共有できます。
+ユーザーは、複数のプロジェクトを統合したレポートを作成および共有できます。レポートの種類と含めるプロジェクトを選択してレポートを生成することができ、生成一覧で作業の進行状況を確認できます。特定のプロジェクトでエラーが発生すると、エラーの内容を確認できます。作成が完了したレポートは、すぐに照会するか、ダウンロードおよび印刷機能で共有できます。
 
 <ImgLang img='integration_report_01.png' />
 
-<Cmdname sid="side_integratedReport" className="uitext" />の機能は次のとおりです。
+:::note
+
+<Cmdname sid="side_integratedReport" className="uitext" />メニューは**Application**、**Server**、**Kubernetes**、**Database**商品のプロジェクトに関するレポートのみ作成できます。
+
+:::
+
+## 主な機能の案内
+
+<Cmdname sid="side_integratedReport" className="uitext" />メニューで提供する機能は次のとおりです。
 
 - **マルチプロジェクトサポート**
 
-  <Cmdname sid="side_integratedReport" className="uitext" />メニューから複数のプロジェクトを選択して、一括でレポートを作成できます。既存の<Cmdname sid="side_report" className="uitext" />メニューでは、プロジェクトごとにレポートを作成する必要がありました。
+  複数のプロジェクトを選択して一度にレポートを生成できるので便利です。プロジェクトで利用できる<Cmdname sid="side_report" className="uitext" />メニューは、そのプロジェクトに関するレポートのみ作成できます。
 
 - **タスクごとのレポート作成**
 
-  <Cmdname sid="create_report" className="uitext" />メニューからタスクごとにプロジェクトを選択し、テンプレートとして保存できます。通常タスクごとにプロジェクトを分割して使用するマイクロサービスアーキテクチャ(MSA、Micro Service Architecture)の環境で有効な機能です。
+  <Cmdname sid="create_report" className="uitext" />機能はタスクごとにプロジェクトを選択し、テンプレートとして保存できます。通常タスクごとにプロジェクトを分割して使用するマイクロサービスアーキテクチャ(Micro Service Architecture、MSA)の環境で有効な機能です。
 
 - **大容量データの最適化**
 
-  <Cmdname sid="side_integratedReport" className="uitext" />メニューを使用すると、レポートの生成時間が大幅に短縮されます。また、一部のプロジェクトレポートの生成中にエラーが発生した場合でも、レポートの結果を表示できます。
+  レポートの生成時間が大幅に短縮されます。また、一部のプロジェクトレポートの生成中にエラーが発生した場合でも、レポートの結果を表示できます。
 
 - **レポート作成中に同時作業が可能**
 
-  <Cmdname sid="side_integratedReport" className="uitext" />メニューからレポートを生成すると同時に、他のタスクを行うことができます。既存の<Cmdname sid="side_report" className="uitext" />メニューでは、生成が完了するまで待ちました。
+  レポートを作成すると同時に、他の業務を進めます。プロジェクトで利用できる<Cmdname sid="side_report" className="uitext" />メニューは、レポート作成タスクを完了するまで待つ必要があります。
 
   <Cmdname sid="side_integratedReport" className="uitext" />メニューからレポートの生成を開始した後、別のページに移動できます。また、レポートの結果一覧から進捗状況と生成されたレポートを照会できます。
 
@@ -32,72 +38,161 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ## レポートと統合レポートの違い
 
-<Cmdname sid="side_report" className="uitext" />は、一つのプロジェクトに対するレポートを作成するメニューです。従って、プロジェクトを選択した後、左部の<Cmdname sid="side_reportStat" className="uitext" /> または<Cmdname sid="side_report" className="uitext" />メニューからアクセスできます。
+プロジェクトで利用できる<Cmdname sid="side_report" className="uitext" />メニューでは、そのプロジェクトに関するレポートを作成できます。初期画面でプロジェクトを選択し、サイドメニューの<Cmdname sid="side_report" className="uitext" />または<Cmdname sid="side_reportStat" className="uitext" />メニューでアクセスできます。
 
-<Cmdname sid="side_integratedReport" className="uitext" />は、複数のプロジェクトのレポートを作成するメニューです。プロジェクトを選択することなく、メインメニューからアクセスできます。<Cmdname sid="side_report" className="uitext" />の詳細は[次の文書](report-intro)で確認できます。
+<Cmdname sid="side_integratedReport" className="uitext" />メニューでは、複数のプロジェクトに関するレポートを作成できます。プロジェクトを選択することなく、初期画面でアクセスできます。
 
-## レポート作成の方法
+## レポート作成
 
-1. **レポートの種類の選択**  
+<Columns>
+<Column className="text--left width--60 padding-r--10">
 
-   <ImgLang img='integration_report_02.png' />
+### レポートの種類を選択
 
-   <Cmdname sid="report_type" className="uitext" />メニューから目的のレポートのタイプを選択すると、<Cmdname sid="create_report" className="uitext" />ボタンが活性化されます。レポート名の前にある**アイコン**は、レポートのフォームがサポートするプロジェクトプラットのフォームを意味します。
+<Cmdname sid="report_type" className="uitext" />一覧で希望するレポートタイプを選択すると<Cmdname sid="create_report" className="uitext" />ボタンが有効になります。レポート名の前の**アイコン**は、レポート作成に対応するプロジェクトプラットフォームを意味します。
 
-   - ![プラットフォームアプリケーションicon](/img/platform-application.svg) **Application**プロジェクトプラットフォームを示します。
-   - ![プラットフォームKubernetes icon](/img/platform-kubernetes.svg) **Kubernetes**プロジェクトのプラットフォームを示します。
-   - ![プラットフォームサーバicon](/img/platform-server.svg) **Server**プロジェクトプラットフォームを示します。  
+- ![プラットフォームアプリケーションicon](/img/platform-application.svg) **Application**プロジェクトプラットフォームを示します。
 
-2. **詳細設定**  
+- ![プラットフォームデータベースicon](/img/platform-database.svg) **Database**プロジェクトプラットフォームを示します。
 
-   <ImgLang img='master_report.png' />
+- ![プラットフォームKubernetes icon](/img/platform-kubernetes.svg) **Kubernetes**プロジェクトのプラットフォームを示します。
 
-   レポートの種類を選択した後、<Cmdname sid="create_report" className="uitext" />ボタンをクリックしてください。次のように詳細設定ができます。
+- ![プラットフォームサーバicon](/img/platform-server.svg) **Server**プロジェクトプラットフォームを示します。
 
-   - **レポートのタイトル**
+</Column>
 
-     同じ種類のレポートが複数ある場合、名前を指定するとレポートの結果を区別するときに役に立ちます。
+<Column className="text--left">
 
-   - **時間**
+<ImgLang img='integration_report_02.png' />
 
-     レポートで使用するデータの期間を選択します。期間はレポートの種類(日、週、月)によって異なります。  
+</Column>
+</Columns>
 
-   - **プロジェクト選択**
+<Columns>
+<Column className="text--left width--60 padding-r--10">
 
-     レポートを作成するプロジェクトを選択します。グループまたは個別のプロジェクト別に選択できます。  
+### 詳細設定を行う
 
-   - **レポートフォームの保存と読み込み**
+<Cmdname sid="create_report" className="uitext" />画面が表示されたら、各項目を設定してください。
 
-     現在入力されたレポートの設定をテンプレートとして保存し、次回作成時にリスト一覧から読み込むことができます。この機能は、プロジェクトベースで頻繁に使用することが多い場合に便利です。
+- <Cmdname sid="title" className="uitext" />: 同じ種類のレポートが複数ある場合、名前を指定するとレポートの結果を区別するときに役に立ちます。
 
-3. **レポート作成**
+- <Cmdname sid="time" className="uitext" />: レポートで使用するデータの期間を選択します。期間はレポートの種類(日、週、月)によって異なります。
 
-   設定が完了したら、<Cmdname sid="create_report" className="uitext" />ボタンを押してレポートを作成します。
+- <Cmdname sid="project" className="uitext" />：レポートを作成するプロジェクトを選択してください。グループおよび個別のプロジェクト単位で選択できます。<Cmdname sid="search" className="uitext" />フィールドを使用して、目的のプロジェクトを検索できます。
 
-## タスク一覧を確認
+- <Cmdname sid="save_report_template" className="uitext" />：現在入力したレポートの設定をテンプレートとして保存できます。今後、新しい報告書を作成する際<Cmdname sid="type" className="uitext" />一覧で読み込めます。
 
-<ImgLang img='integration_report_03.png' />
+設定を完了したら、<Cmdname sid="create_report" className="uitext" />ボタンを選択します。
+
+</Column>
+
+<Column className="text--left">
+
+<ImgLang img='master_report.png' />
+
+</Column>
+</Columns>
+
+:::tip
+
+選択したレポートの様式に従って照会期間を設定する方法は次のとおりです。
+
+- **日刊報告書**: 開始と終了の日付、時間を選択できます。
+
+- **週間報告書**: 開始日のみを選択すると、終了日を計算して自動的に選択します。
+
+- **月間報告書**: 開始日のみを選択すると、終了日を計算して自動的に選択します。
+
+  - 開始日が1日であれば、その月の月末までに自動的に選択されます。
+
+  - 開始日が1日でなければ、来月の前日までに自動選択されます。
+
+例1、開始日が**1月1日**であれば、**1月1日00時00分00秒**から**1月31日23時59分59秒**を自動選択します。
+
+例2、開始日が**1月10日**であれば、**1月10日00時00分00秒**から**2月9日23時59分59秒**を自動選択します。
+
+:::
+
+:::note
+
+- <Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](../usage-ui#timeselector)を参照してください。
+
+- 保存したレポート様式を読み込み方法の詳細は[次の文書](#loadcustomtemplate)を参照してください。
+
+:::
+
+### レポートフォームの読み込み{#loadcustomtemplate}
+
+<Columns>
+<Column className="text--left width--60 padding-r--10">
+
+新しいレポートを作成するとき<Cmdname sid="save_report_template" className="uitext" />機能を使用して保存した様式は、その後のレポート作成時に<Cmdname sid="type" className="uitext" />項目で確認できます。
+
+業務単位でプロジェクトを頻繁に使用するユーザーは、アクティブに活用できます。
+
+- ![修正アイコン](/img/ic-edit.svg)：保存したレポートフォームを修正できます。
+
+- ![削除アイコン](/img/ico-trash.svg)：保存したレポートフォームを削除できます。
+
+</Column>
+<Column className="text--left">
+
+<ImgLang img="int-report-type-custom-template.png" />
+
+</Column>
+</Columns>
+
+## レポート一覧を確認する
+
+<Columns>
+<Column className="text--left width--60 padding-r--10">
 
 <Cmdname sid="generation_report_list" className="uitext" />で以前に作成したレポートと現在作業中のレポートを確認できます。
 
-<Cmdname sid="all" className="uitext" />一覧では、自分が作成したレポート以外に、自分と同じ権限を持つユーザーが作成したレポートも確認できます。<Cmdname sid="my_report" className="uitext" />一覧では、自分が作成したレポートのみをフィルタリングして確認できます。
+- <Cmdname sid="all" className="uitext" />タブでは、ユーザー本人が作成したレポートの他にも、同じ権限を持つユーザーが作成したレポートを一緒に確認できます。
 
-エラーなく作成されたレポートは<span class='woer'>![チェックicon](/img/ic-check-bl.svg)チェック</span>アイコンとして表示され、エラーが含まれている場合は<span class='wer'>![警告icon](/img/ic-warning-org.svg)警告</span>アイコンが一緒に表示されます。<span class='wer'>![警告icon](/img/ic-warning-org.svg)警告</span>アイコンをクリックすると、どのプロジェクトでエラーが発生したのか確認できます。
+- <Cmdname sid="my_report" className="uitext" />タブでは、ユーザー本人が作成したレポートのみ確認できます。
+
+- レポート項目の右上に![続きを読むアイコン](/img/ico-more.svg)ボタンを選択すると、そのレポートをコピーまたは削除できる機能を利用できます。
+
+</Column>
+<Column className="text--left padding-r--10">
+
+<ImgLang img='integration_report_03.png' />
+
+</Column>
+</Columns>
+
+:::note
+
+- エラーなく作成されたレポートは![チェックicon](/img/ic-check-bl.svg)アイコンで表示され、エラーが含まれている場合は![警告icon](/img/ic-warning-org.svg)アイコンで表示されます。![警告icon](/img/ic-warning-org.svg)アイコンを選択すると、どのプロジェクトでエラーが発生したかを確認できます。
+
+- 作成したレポートは最大100個まで7日間保管できます。
+
+:::
 
 ## 表示と共有
 
-<ImgLang img='integration_report_04.png' />
-
-レポートは、次の 3 つの方法で表示されます。
+<Columns>
+<Column className="text--left width--40 padding-r--10">
 
 - **画面照会**
 
-  タスク一覧から作成したレポートを選択すると、画面上で直接表示できます。
+  <Cmdname sid="generation_report_list" className="uitext" />一覧で作成したレポートを選択すると、レポートの詳細を確認できます。
 
 - **ダウンロード**
 
-  <Cmdname sid="download" className="uitext" />ボタンをクリックすると、レポートと同じファイルがHTML形式でダウンロードされます。モニタリングの管理権限がないユーザーとレポートを共有できます。
+  現在照会中のレポートをhtml形式のファイルでダウンロードするには<Cmdname sid="download" className="uitext" />ボタンを選択してください。モニタリングの管理権限のない人にレポートを共有できます。
 
 - **印刷およびPDF保存**
 
-  <Cmdname sid="print" className="uitext" />ボタンを押すと、パソコンに接続されたプリンターで印刷または、PDF形式で保存できます。
+  レポートをプリンターで印刷するか、PDF形式のファイルとして保存するには<Cmdname sid="print" className="uitext" />ボタンを選択してください。 
+
+</Column>
+<Column className="text--left">
+
+<ImgLang img='integration_report_04.png' />
+
+</Column>
+</Columns>

@@ -1,0 +1,189 @@
+---
+id: pv-list
+title: PV/PVC リスト
+description: PV/PVC 一覧メニューを案内します。
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - クラスター
+  - Persistent Volume リスト
+  - Persistent Volume Claim リスト
+toc_max_heading_level: 2
+---
+
+:::note 
+
+**要求事項**
+
+- WhaTap Kubernetesエージェント1.8.1バージョン以降が必要です。 
+
+- Kubernetesクラスタープロジェクト(<code class='my'>CP</code>)の場合、該当メニューを照会できます。
+
+:::
+
+{/* 선언적 요청서 / 선언적 요청 객체 */}
+
+**Persistent Volume**(PV)はKubernetesクラスターで使用可能な物理的ストレージリソースを意味します。 **Persistent Volume Claim**(PVC)はPodのストレージ要件を宣言的に定義するオブジェクトです。 PVCはPVと接続され、これを通じてPodがデータを読み書きできるアクセス経路を提供します。
+
+{/* Pod가 필요한 스토리지를 요청하는 선언적 요청서
+Pod의 스토리지 요구사항을 선언적으로 정의하는 객체 */}
+
+WhaTapのKubernetesは***Persistent Volume一覧***と***Persistent Volume Claim一覧***メニューからクラスターのストレージ状態をモニタリングできます。 このメニューは、リポジトリリソースの使用状態と接続関係を直観的に提供し、リポジトリ容やアクセスモード、イベント状態などの情報を一目で確認できます。
+
+## Persistent Volume リスト
+
+ホーム画面 &gt; プロジェクト選択  &gt; <Cmdname sid="side_cluster" className="uitext" />  &gt; Persistent Volume 一覧
+
+***Persistent Volume一覧***メニューで現在クラスターに存在するPVを照会することができます。 照会時間を基準に、最近1分間収集されたPV情報に基づいて一覧を表示します。 PVCとの接続状態及びPVのバインディング状態を直観的に確認することができます。 また、該当PVと接続されたPVCの詳細情報を簡単に確認できます。 
+
+<ImgLang img="k8s-pv-list.png" desc="Persistent Volume 一覧" />
+
+- ![ダウンロードアイコン](/img/ico-download.svg) ***CSV***ボタンをクリックすると*CSV*ファイルをダウンロードできます。
+
+- ***PvcVolumeName***カラムの右側***>***ボタンをクリックすると***Persistent Volume Claim一覧***メニューに移動します。
+
+{/* 
+
+또한 PvVolumeName 옆 '>' 버튼을 통해 해당 PV와 연결된 PVC 상세 정보로 이동할 수 있습니다. 
+또한 ***PvVolumeName*** 컬럼 오른쪽 버튼 클릭 시 해당 PV와 연결된 PVC 상세 정보를 간편하게 확인할 수 있습니다. 
+
+*/}
+
+{/* ### 컬럼 
+
+| カラム名                     | 説明                                                                  |
+| ------------------------ | ------------------------------------------------------------------- |
+| ***PvUid***              | Persistent Volumeの一意識別子です。                                          |
+| ***PvName***             | Persistent Volumeの名前です。                                             |
+| ***PvPhase***            | Persistent Volumeの現在状態を表示します。                                       |
+| ***PvType***             | Persistent Volumeのストレージタイプで、NFS、Ceph、AWS、EBSなど様々なストレージバックエンドに対応します。 |
+| ***Path***               | Persistent Volumeがマウントされた経路を示します。                                   |
+| ***PvReclaimPolicy***    | Persistent Volumeの返還ポリシーを意味し、Retain、Recycle、Deleteのいずれかに設定されます。     |
+| ***PvStorageClassName*** | 該当PVに割り当てられたストレージクラス名を示します。                                         |
+| ***PvVolumeMode***       | Persistent Volumeのボリュームモードを表し、FilesystemまたはBlockに対応します。             |
+| ***PvCapacity***         | Persistent Volumeの総保存容量を示します。                                       |
+| ***PvMessage***          | PVに関するKubernetesのイベントメッセージを提供します。                                   |
+| ***PvReason***           | PVイベント発生の原因を説明します。                                                  |
+
+#### ***PvPhase***
+
+***PvPhase***項目はPersistent Volumeの状態を表示します。
+
+| Phase           | 説明                              |      |
+| --------------- | ------------------------------- | ---- |
+| ***Available*** | PVがまだどのPVCともバインディングされていない状態です。  |      |
+| ***Bound***     | PVが特定のPVCにバインドされて使用中の状態です。      |      |
+| ***Released***  | PVCは削除されましたが、PVがまだ返却されていない状態です。 |      |
+| ***Failed***    | PVが自動返却に失敗し、使用できない状態です。         |  |*/}
+
+## Persistent Volume Claim リスト
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; ***Persistent Volume Claim 一覧***
+
+***Persistent Volume Claim一覧***メニューで現在クラスターに存在するPVCを照会することができます。 照会時間を基準に、最近1分間収集されたPVC情報に基づいて一覧を表示します。 PVとの接続状態およびPVCのバインディング状態を直観的に確認できます。 また、該当PVCと接続されたPV詳細情報を簡単に確認することができます。 
+
+<ImgLang img="k8s-pvc-list.png" desc="Persistent Volume Claim 一覧" />
+
+- ![ダウンロードアイコン](/img/ico-download.svg) ***CSV***ボタンをクリックすると*CSV*ファイルをダウンロードできます。
+
+- ***PvName***カラムの右側***>***ボタンをクリックすると***Persistent Volume一覧***メニューに移動します。
+
+{/* ### 컬럼 
+
+| カラム名                          | 説明                                                              |
+| ----------------------------- | --------------------------------------------------------------- |
+| ***PvcUid***                  | Persistent Volume Claimの一意識別子です。                                |
+| ***PvcName / PvcVolumeName*** | PVCの名前およびそのPVCと接続されたPVの名前を示します。                                 |
+| ***PvcNamespace***            | PVCが属するネームスペースを意味します。                                           |
+| ***PvcStorageClassName***     | PVCに設定されたストレージクラスの名前を示します。                                      |
+| ***PvcAccessModes***          | PVCのアクセスモードを説明し、ReadWriteOnce、ReadOnlyMany、ReadWriteManyに対応します。 |
+| ***PvcRequestedStorage***     | PVCが要求したストレージ容量を示します。                                           |
+
+#### ***PvcPhase***
+
+***PvcPhase***項目はPersistent Volume Claimの状態を表示します。 
+
+| Phase         | 説明                                      |      |
+| ------------- | --------------------------------------- | ---- |
+| ***Pending*** | PVCがPVとまだバインディングされていないか、PV割り当て待機中の状態です。 |      |
+| ***Bound***   | PVCがPVとバインディングされて使用中の状態です。              |      |
+| ***Lost***    | 接続されたPVが削除されたり、非アクティブになったため使用できない状態です。  |  | */}
+
+## フィルター
+
+import K8slistfilter from "../common-items/_k8s-list-filter.mdx";
+
+<K8slistfilter />
+
+## カラム
+
+| グループ                        | カラム名                                               | 説明                                                      |
+| --------------------------- | -------------------------------------------------- | ------------------------------------------------------- |
+| ***PersistentVolume***      | ***PvUid***                                        | Persistent Volumeの一意識別子です。                              |
+| ^                           | ***PvName***                                       | Persistent Volumeの名前です。                                 |
+| ^                           | ***PvPhase***                                      | Persistent Volumeの現在状態を表示します。                           |
+| ^                           | ***PvType***                                       | Persistent Volumeのストレージタイプです。                           |
+| ^                           | ***Path***                                         | Persistent Volumeがマウントされた経路を意味します。                      |
+| ^                           | ***PvReclaimPolicy***                              | Persistent Volumeの返還ポリシーを意味します。                         |
+| ^                           | ***PvStorageClassName***                           | 該当PVに割り当てられたストレージクラス名です。                                |
+| ^                           | ***PvVolumeMode***                                 | Persistent Volumeのボリュームモードプロパティを意味します。                  |
+| ^                           | ***PvCapacity***                                   | Persistent Volumeの総保存容量を表示します。                          |
+| ^                           | ***PvMessage***                                    | 現在、Persistent Volumeが特定のPhaseを持つようになった原因を説明するメッセージです。   |
+| ^                           | ***PvReason***                                     | Persistent Volumeに関わるエラーを表すキーワードで、問題の原因や現在の状態を簡単に表示します。 |
+| ***PersistentVolumeClaim*** | ***PvcUid***                                       | Persistent Volume Claimの一意識別子です。                        |
+| ^                           | ***PvcVolumeName*** (PV) <br/> ***PvcName*** (PVC) | Persistent Volume Claimの名前です。                           |
+| ^                           | ***PvcNamespace***                                 | Persistent Volume Claimが属するネームスペースを意味します。               |
+| ^                           | ***PvcStorageClassName***                          | Persistent Volume Claimに設定されたストレージのクラス名です。              |
+| ^                           | ***PvcAccessModes***                               | Persistent Volume Claimのアクセスモードを表示します。                  |
+| ^                           | ***PvcRequestedStorage***                          | Persistent Volume Claimが要求したストレージ容量を示します。               |
+
+:::note 
+
+- Persistent Volumeの返還ポリシーに関する詳細は[次の文書](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/#%EB%B0%98%ED%99%98-reclaiming)を参照してください。 
+
+  > ***Retain***, ***Delete***
+
+- Persistent Volumeのボリュームモードの詳細は[次の文書](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/#%EB%B3%BC%EB%A5%A8-%EB%AA%A8%EB%93%9C)を参照してください。 
+
+  > ***Filesystem***, ***Block***
+
+- Persistent Volume Claimアクセスモードの詳細は[次の文書](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/#%EC%A0%91%EA%B7%BC-%EB%AA%A8%EB%93%9C)を参照してください。 
+
+  > ***ReadWriteOnce***, ***ReadOnlyMany***, ***ReadWriteMany***
+
+:::
+
+### Phase
+
+#### ***PvPhase***
+
+***PvPhase***項目はPersistent Volumeの状態を表示します。
+
+| Phase           | 説明                              |
+| --------------- | ------------------------------- |
+| ***Available*** | PVがまだどのPVCともバインディングされていない状態です。  |
+| ***Bound***     | PVが特定のPVCにバインドされて使用中の状態です。      |
+| ***Released***  | PVCは削除されましたが、PVがまだ返却されていない状態です。 |
+| ***Failed***    | PVが自動返却に失敗し、使用できない状態です。         |
+
+#### ***PvcPhase***
+
+***PvcPhase***項目はPersistent Volume Claimの状態を表示します。 
+
+| Phase         | 説明                                      |
+| ------------- | --------------------------------------- |
+| ***Pending*** | PVCがPVとまだバインディングされていないか、PV割り当て待機中の状態です。 |
+| ***Bound***   | PVCがPVとバインディングされて使用中の状態です。              |
+| ***Lost***    | 接続されたPVが削除されたり、非アクティブになったため使用できない状態です。  |
+
+### カラム選択
+
+import K8slistcl from "../common-items/_k8s-list-cl.mdx";
+
+<K8slistcl />
+
+:::note 
+
+***PersistentVolume***または***PersistentVolumeClaim***のカラムグループを一括選択および解除することができます。
+
+:::

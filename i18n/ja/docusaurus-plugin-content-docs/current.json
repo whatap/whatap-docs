@@ -2134,5 +2134,69 @@
   "sidebar.rumsSidebar.category.이벤트 설정": {
     "message": "イベント設定",
     "description": "The label for category 이벤트 설정 in sidebar rumsSidebar"
+  },
+  "sidebar.db2Sidebar.category.IBM DB2 모니터링": {
+    "message": "IBM DB2 モニタリング",
+    "description": "The label for category IBM DB2 모니터링 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.설치하기": {
+    "message": "インストール",
+    "description": "The label for category 설치하기 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.설정하기": {
+    "message": "設定",
+    "description": "The label for category 설정하기 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.대시보드": {
+    "message": "ダッシューボード",
+    "description": "The label for category 대시보드 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.Flex 보드": {
+    "message": "Flexボード",
+    "description": "The label for category Flex 보드 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.분석": {
+    "message": "分析",
+    "description": "The label for category 분석 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.메트릭스": {
+    "message": "メトリクス",
+    "description": "The label for category 메트릭스 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.통계/보고서": {
+    "message": "統計/レポート",
+    "description": "The label for category 통계/보고서 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.로그": {
+    "message": "ログ",
+    "description": "The label for category 로그 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.경고 알림": {
+    "message": "アラート通知",
+    "description": "The label for category 경고 알림 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.이벤트 설정": {
+    "message": "イベント設定",
+    "description": "The label for category 이벤트 설정 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.doc.지원 환경": {
+    "message": "サポート環境",
+    "description": "The label for the doc item 지원 환경 in sidebar db2Sidebar, linking to the doc db2/monitoring-support"
+  },
+  "sidebar.releaseSidebar.category.DMX": {
+    "message": "DMX",
+    "description": "The label for category DMX in sidebar releaseSidebar"
+  },
+  "sidebar.serverSidebar.category.실험실": {
+    "message": "実験室",
+    "description": "The label for category 실험실 in sidebar serverSidebar"
+  },
+  "sidebar.serverSidebar.doc.메트릭스 익스플로러": {
+    "message": "メトリクスエクスプローラー",
+    "description": "The label for the doc item 메트릭스 익스플로러 in sidebar serverSidebar, linking to the doc server/metrics-explorer"
+  },
+  "sidebar.dbSidebar.link.IBM DB2": {
+    "message": "IBM DB2",
+    "description": "The label for link IBM DB2 in sidebar dbSidebar, linking to ../db2/monitoring-intro"
   }
 }

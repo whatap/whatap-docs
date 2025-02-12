@@ -1,3 +1,5 @@
+{/* 개인정보 비식별화 탭 추가로 로그 설정 전체 업데이트 필요 1212 */}
+
 <InDoc product='aws-log'>
 
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
@@ -245,6 +247,18 @@
 - ログパーサ登録時、同じ<Cmdname sid="category" className="uitext" />のパーサを重複で登録できません。
 
 - フィルター条件に合ったログデータのみパターンを適用します。 <Cmdname sid="ITM06439" className="uitext" />を指定しない場合は、すべてのログにパターンを適用します。
+
+:::
+
+:::note 
+
+**個人情報の非識別化**
+
+<Cmdname sid="log_parser_setting_primary" className="uitext" />タブでその時の検索キー名を<code class='filter'>検索キー.p</code>に指定した場合、デフォルトでは非識別化の対象となります。 <Cmdname sid="TTL08814" className="uitext" />タブで追加または修正時に該当の<Cmdname sid="category" className="uitext" />を選択した後、<Cmdname sid="TTL08835" className="uitext" />で確認できます。 マスキング処理を希望しない場合は解除できます。
+
+> 例、<code class='filter'>myname.p</code> `***`
+
+WhaTapは、パーサー設定中に非識別化の対象を指定する方式よりも<Cmdname sid="TTL08814" className="uitext" />タブの使用を勧めます。 個人情報の非識別化の詳細は[次の文書](#log-deidentification-of-personal-info)で参照してください。 
 
 :::
 
@@ -604,3 +618,184 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 3. 追加した設定で<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />データを次のように確認できます。
 
    <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='ログ期保存統計ウィジェット'/>
+
+## 個人情報の非識別化{#log-deidentification-of-personal-info}
+
+<Cmdname sid="TTL08814" className="uitext" />ではログデータ内に含まれる個人情報を保護するマスキング処理とデータ置換の2つの主要機能を提供します。 <Cmdname sid="TTL08814" className="uitext" />機能により、新規のログデータ内で個人情報の項目をマスキング処理したり、<Cmdname sid="TTL08979" className="uitext" />機能により、既存のログデータの機密な情報を安全な値に変更できます。 この機能は、機密なデータを扱う環境でセキュリティを強化するための不可欠ツールです。
+
+- 暗号化の保存：指定された機密な情報は暗号化され、データベースに保存されます。
+
+- マスキング処理：ログ画面に表示される時、機密な情報は基本的にマスキング(`***`)処理されて表示されます。
+
+- 置換処理：機密な情報をユーザーが指定した安全な値に変更します。 
+
+{/* 
+
+<Cmdname sid="TTL08814" className="uitext" />タブでログデータ内に含まれた個人情報を暗号化及びマスキング処理して機密な情報の露出を防止できます。
+
+<Cmdname sid="TTL08814" className="uitext" />機能は、ログデータ内に含まれる個人情報を暗号化およびマスキング処理することで、機密な情報の露出を防止し、個人情報保護に関する法規を遵守するために設計されました。 この機能は、機密なデータを扱う環境でセキュリティを強化するための不可欠ツールとして提供されます。 
+*/}
+
+### 個人情報の分類{#log-personal-info-list}
+
+一般的に個人情報として分類する項目は次のとおりです。 一般の個人情報以外にも機密な情報として処理すべき項目があれば<Cmdname sid="TTL08814" className="uitext" />機能を通じて、ログ内で必要な項目をマスキング処理または置換処理してください。 
+
+<Columns> 
+<Column className="text--left width--50">
+*住民登録番号
+
+- パスポート番号
+
+- 運転免許証の番号
+
+- 外国人登録番号
+</Column>
+<Column className="text--left">
+
+- クレジットカードの番号
+
+- 口座番号
+
+- 生体情報
+</Column>
+</Columns>
+
+### 要求権限
+
+個人情報は非識別化過程を通じてマスキング処理されます。 **ログの個人情報照会**権限が付与されたユーザーのみ個人情報を照会できます。 **ログの個人情報照会**権限を持つユーザーは、ログ一覧の上部で<Cmdname sid="BTN08818" className="uitext" />トグルボタンを確認できます。 <Cmdname sid="BTN08818" className="uitext" />活性化により、マスキング解除時に個人情報を確認できます。 非識別化の対象検索キーの追加及び修正は、**ログ編集**権限のあるユーザーのみ可能です。  
+
+:::note 
+
+**ログの個人情報照会**権限及び**ログ編集**権限の詳細は[次の文書](/project/project-structure#CNT08829)を確認してください。 
+
+:::
+
+### 個人情報の非識別化設定{#log-deidentification-pi-setting}
+
+<Cmdname sid="TTL08814" className="uitext" />設定から今後生成されるデータに対してマスキング処理を適用し、リアルタイムで機密な情報を隠し、セキュリティを強化できます。 マスキング処理されたデータは、元の情報が表示されないように処理され、個人情報が表示されないように管理できます。
+
+<ImgLang img="log-de-identification.png" desc="ログ個人情報の非識別化" />
+
+1. <Cmdname sid="TTL08814" className="uitext" />タブで<Cmdname sid="adding" className="uitext" />ボタンを選択してください。
+
+2. 右側の<Cmdname sid="TTL08814" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で<Cmdname sid="category" className="uitext" />を選択してください。 
+
+3. 右側の<Cmdname sid="TTL08814" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で暗号化およびマスキング処理する<Cmdname sid="ITM06429" className="uitext" />を入力してください。 
+
+4. 右側の<Cmdname sid="TTL08814" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で下段の<Cmdname sid="add" className="uitext" />ボタンをクリックしてその設定を追加してください。 
+
+5. <Cmdname sid="TTL08814" className="uitext" />一覧で非識別化項目を確認した後、右上の<Cmdname sid="save" className="uitext" />ボタンを押して現在の設定を保存してください。
+
+   <ImgLang img="log-de-identification-list.png" desc="ログ個人情報の非識別化リスト" />
+
+   - 非識別化処理された検索キーの場合、ログコンテンツ内の<code class='filter'>検索キー.pii</code>形式で出力されます。
+
+   - <Cmdname sid="TTL08814" className="uitext" />一覧内の<Cmdname sid="enable" className="uitext" />カラムで非識別化項目を![トグル活性化アイコン](/img/ic-toggle-on.svg)<Cmdname sid="enable" className="uitext" />にできます。
+
+   - <Cmdname sid="TTL08814" className="uitext" />一覧内の<Cmdname sid="TLT08066" className="uitext" />カラムで![修正アイコン](/img/ic-edit.svg) ***修正***及び![除去アイコン](/img/ic-delete-critical.svg) ***除去***できます。
+
+:::note 
+
+<Cmdname sid="log_parser_setting_primary" className="uitext" />タブでその時の検索キー名を<code class='filter'>検索キー.p</code>に指定した場合、デフォルトでは非識別化の対象となります。 <Cmdname sid="TTL08814" className="uitext" />タブで追加または修正時に該当の<Cmdname sid="category" className="uitext" />を選択した後、<Cmdname sid="TTL08835" className="uitext" />で確認できます。 マスキング処理を希望しない場合は解除できます。 WhaTapは、パーサー設定中に非識別化の対象を指定する方式よりも<Cmdname sid="TTL08814" className="uitext" />タブの使用を勧めます。
+
+{/* ![指定された検索キーの例](/img/log-display-pi-1st-parser.png) */}
+
+:::
+
+#### 個人情報の表示{#log-pi-toggle}
+
+<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />メニューのログ一覧に表示されるマスキングデータのソースデータを照会できます。 <Cmdname sid="TTL08814" className="uitext" />設定項目は基本的にマスキング処理された状態で維持され、**ログの個人情報照会**権限のないユーザーは<Cmdname sid="BTN08818" className="uitext" />ボタンを使用できません。 ログ一覧内の<Cmdname sid="BTN08818" className="uitext" />活性化![トグル活性化アイコン](/img/ic-toggle-on.svg)ボタンをクリックすると、次のように元のデータを確認できます。
+
+![ログの個人情報表示sc](/img/log-de-identification-content.png)
+
+:::note 
+
+<Cmdname sid="TTL08814" className="uitext" />タブで指定した検索キーは、ログメニュー内のログコンテンツから<code class='filter'>検索キー.pii</code>形式で表示されます。
+
+> 例: <code class='filter'>status.pii 例</code> `***`
+
+:::
+
+{/* 로그 1차 파서 설정 탭에서 검색 키 이름을 검색 키.p로 지정하면 개인정보 비식별화 탭에서는 지정된 검색 키로 표시되면서 기본적인 비식별화 대상이 됩니다.
+指定された検索キーの他に、業務上の機密な情報として処理すべき検索キーがあれば、追加的に暗号化の保存および非識別化の対象に指定できます。 */}
+
+{/* :::note 
+
+<Cmdname sid="log_parser_setting_primary" className="uitext" />タブでその時の検索キー名を<code class='filter'>検索キー.p</code>に指定した場合、デフォルトでは非識別化の対象となります。 <Cmdname sid="TTL08814" className="uitext" />タブで追加または修正時に該当の<Cmdname sid="category" className="uitext" />を選択した後、<Cmdname sid="TTL08835" className="uitext" />で確認できます。 マスキング処理を希望しない場合は解除できます。 パーサー設定中に非識別化の対象を指定する方式より<Cmdname sid="TTL08814" className="uitext" />タブの使用を勧めます。 個人情報の非識別化の詳細は[次の文書](#log-deidentification-of-personal-info)で参照してください。
+
+::: */}
+
+{/* 사용자가 비식별화 설정을 하지 않아도 비식별화 처리됩니다. この場合、<Cmdname sid="TTL08814" className="uitext" />タブで操作できません。 */}
+
+### ログの個人情報の非識別化点検{#log-deidentification-pi-check}
+
+:::caution 
+
+<Cmdname sid="TTL08979" className="uitext" />機能を通じて既存のデータを置き換える場合、そのデータは元に戻すことができません。
+
+:::
+
+<Cmdname sid="TTL08979" className="uitext" />機能は、既存のログデータ内に含まれる個人情報項目を識別し、これをユーザーが指定した<Cmdname sid="ITM08984" className="uitext" />に置き換える機能です。 これにより、既存に保存されたログデータ内の個人情報を非識別化し、個人情報の保護を強化できます。
+
+<ImgLang img="log-de-identification-check.png" desc="ログ個人情報の非識別化点検" />
+
+1. 開始時間と終了時間を設定してください。 
+
+2. <Cmdname sid="category" className="uitext" />を設定します。
+
+3. <Cmdname sid="ITM08981" className="uitext" />を例の中から選択または<Cmdname sid="direct_input" className="uitext" />を選択してください。
+
+   :::note 
+
+   <Cmdname sid="direct_input" className="uitext" />選択時に個人情報を識別するための正規表現式パターンを直接入力します。
+
+   :::
+
+4. <Cmdname sid="ITM08983" className="uitext" />トグルで個人情報が識別された場合、該当情報の置換有無を選択してください。
+
+5. 既存のログで正規表現式パターンに識別された文字列を変更する<Cmdname sid="ITM08984" className="uitext" />を入力してください。 
+
+   :::note 
+
+   - <Cmdname sid="ITM08984" className="uitext" />は元の値より長くしてはなりません。
+
+   - <Cmdname sid="ITM08983" className="uitext" />トグルの活性化時に、必ず<Cmdname sid="ITM08984" className="uitext" />を入力する必要があります。
+
+   :::
+
+6. 条件を入力した後、<Cmdname sid="BTN08985" className="uitext" />ボタンを選択してください。 点検中の場合はいつでも<Cmdname sid="BTN08986" className="uitext" />ボタンで点検過程を中止できます。 
+
+7. 点検作業の完了時に、例の画像のように右側から<Cmdname sid="ITM08995" className="uitext" />を確認できます。 
+
+   - <Cmdname sid="category" className="uitext" />：点検されたカテゴリ情報を表示します。
+
+   - <Cmdname sid="ITM08989" className="uitext" />及び<Cmdname sid="ITM08990" className="uitext" />：点検が実行された時間範囲を表示します。
+
+   - <Cmdname sid="ITM08981" className="uitext" />：点検された個人情報の項目を表示します。
+
+   - <Cmdname sid="ITM08991" className="uitext" />：使用された正規表現式のパターンを表示します。
+
+   - <Cmdname sid="ITM08984" className="uitext" />：適用された置換値を表示します。
+
+   - <Cmdname sid="ITM08995" className="uitext" />：個人情報が識別された結果を表示します。
+
+     > `SUCCESS`(点検成功)、`FAILED`(点検失敗)、`STOP`(点検中止)、`TIMED_OUT`(時間超過による点検終了)
+
+#### 個人情報のパターン{#log-pi-pattern}
+
+既存のログデータから個人情報を識別する際に使用される正規表現式のパターンの例は以下の通りです。
+
+| 個人情報のパターン   | 個人情報の例               | 正規表現式パターン                                                        | 置換される値                |
+| ----------- | -------------------- | ---------------------------------------------------------------- | --------------------- |
+| 住民登録番号      | 123456-1234567       | `([0-9]{6}-[1-4]{1}[0-9]{6})`                                             | `******-*******`      |
+| パスポート番号     | M12345678            | `([a-zA-Z])`                                                     | `*********`           |
+| 運転免許証の番号    | 01-23-456789-00      | `(\d{2}-\d{2}-\d{6}-\d{2})`                                      | `**-**-******-**`     |
+| 外国人登録番号     | 987654-1234567       | `([0-9]{6}-[0-9]{7})` | `******-*******`      |
+| クレジットカードの番号 | 1234-5678-9012-3456  | `([34569][0-9]{3}[~- ][0-9]{4}[~- ][0-9]{4}[~- ][0-9]{4})`       | `****-****-****-****` |
+| 電話番号        | 010-1234-5678        | `(\d{2,3}[ ,-]?\d{3,4}[ ,-]?\d{4})`                              | `***-****-****`       |
+| メールアドレス     | `example@domain.com` | `(([\w!#._-])@([\w.]\.\w{2,3}))`                                 | `***@***.***`         |
+| 口座番号        | 1111-04-031111       | `(\d{4}-\d{2}-\d{7})`                                            | `****-**-******`      |
+| 事業者登録番号     | 111-11-01111         | `(\d{3}-\d{2}-\d{5})`                                            | `***-**-*****`        |
+| 法人番号        | 111111-1111111       | `(\d{6}-\d{7})`                                                  | `******-*******`      |
+
+{/* 이 섹션에서는 기존 데이터에 대해 치환 값을 설정하여 개인정보를 완전히 치환합니다. 設定された置換値は、元のデータと同じタイプを維持しながら、機密な情報を安全な値に変更します。 置換されたデータは復元できないため、慎重に適用する必要があります。 */}

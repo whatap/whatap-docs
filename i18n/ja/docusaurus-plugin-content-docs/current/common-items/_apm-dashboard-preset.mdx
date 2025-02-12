@@ -1,6 +1,6 @@
 ## プリセットを設定する{#preset}
 
-<InDoc product="java,php,python,nodejs,dotnet,golang,redis,mongodb,oracle-pro">
+<InDoc product="java,php,python,nodejs,dotnet,golang">
 
 <ImgLang img="apm-dashboard-preset-list.png" desc="Preset" />
 
@@ -16,11 +16,13 @@
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,altibase,cubrid">
+<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,altibase,cubrid,redis,mongodb,db2">
 
 ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。 ウィジェットのサイズを調整し、希望する場所に配置して新しいプリセットを作成できます。
 
-<ImgLang img='db-preset-list.png' desc='プリセット' />
+![Preset](/img/db-common-multidb-preset.png)
+
+<InDoc product="postgresql,mysql">
 
 - **_Default_**：XOS指標とAWS RDS CloudWatch指標、主なDB指標で構成されたプリセットです。
 
@@ -28,23 +30,39 @@
 
 - **_Default(rds)_**：AWS RDS CloudWatchの指標と主なDB指標で構成されたプリセットです。
 
-:::note
+</InDoc>
 
-基本プリセット(<Cmdname sid="kube_default" className="uitext" />)は変更できません。
+<InDoc product="oracle,oracle-pro">
 
-:::
+- **_Default_**：主要DBメトリクスとXOSメトリクスで構成されたプリセットです。
+
+- **_Default(RAC)_**: Oracle Real Application Cluster(RAC)を利用すれば、RACデータベースで実行中のインスタンスを基準に指標を確認できるプリセットです。
 
 </InDoc>
 
-<InDoc product="mssql">
+<InDoc product="mssql,altibase,cubrid,redis,mongodb">
 
-ダッシュボードからユーザーが設定したウィジェットの設定とレイアウト状態を保存して読み込むことができます。 ウィジェットのサイズを調整し、希望する場所に配置して新しいプリセットを作成できます。
+- **_Default_**：主要DB指標で構成されたプリセットです。
 
-**_Default_**：主要DBメトリクスとXOSメトリクスで構成されたプリセットです。
+- **_Default(xos)_**：XOS指標と主なDB指標で構成されたプリセットです。 
+
+</InDoc>
 
 :::note
 
-基本プリセット(<Cmdname sid="kube_default" className="uitext" />)は変更できません。
+- プリセットに保存できるダッシュボードの設定は次のとおりです。
+
+  - ウィジェットのサイズ、位置
+
+  - ユーザー定義ウィジェットに定義された設定
+
+  - <UI>Session Table</UI>ウィジェットに定義されたテーブルの幅とフィルター、選択したカラム値
+
+- 基本プリセット(<Cmdname sid="kube_default" className="uitext" />)は変更できません。
+
+- データベース環境によって、一部のプリセットはサポートされない場合があります。
+
+- <Cmdname sid="edit_project" className="uitext" />権限のあるメンバーのみがプリセットを保存または変更できます。 メンバー権限の詳細については、[次の文書](../project/project-structure#member-auth)を参照してください。
 
 :::
 
@@ -60,7 +78,7 @@
 
    <InDoc product="java,python,php,nodejs,dotnet,golang"><ImgLang img='apm-dashboard-preset-save.png' desc='プリセット保存' /></InDoc>
 
-   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid,mssql"><ImgLang img='db-dashboard-preset-save.png' desc='Preset' /></InDoc>
+   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid,mssql,db2"><ImgLang img='db-dashboard-preset-save.png' desc='Preset' /></InDoc>
 
    エージェント選択履歴を一緒に保存するには、<Cmdname sid="ITM07345" className="uitext" />を選択してください。
 

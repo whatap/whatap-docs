@@ -200,3 +200,15 @@ import Transaction from "../common-items/_transaction.mdx";
   このオプションを通じて登録したURLは、<Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="TTL06209" className="uitext" />または<Cmdname sid="TTL06527" className="uitext" />画面で収集が除外されます。
 
   :::
+
+- **disabled_section_names** <span class='type'>String</span>
+
+  モニタリングから除外するセクション名を設定します。2つ以上の値を設定するために、コンマ(、)を区切り記号として利用できます。オプションを適用した後、IISサービスを再起動してください。
+
+  :::note
+
+  選択できるセクション名は次のとおりです。
+
+  AspNetCoreMvc2, AspNetMvc, AspNetWebApi2, AspNetWebForm, DbCommand, IDbCommand, SqlCommand, OracleCommand, WebRequest, HttpMessageHandler, HttpClient, WebClient, ServiceStackRedis, StackExchangeRedis, StackExchangeRedis2, LINQ
+
+  :::

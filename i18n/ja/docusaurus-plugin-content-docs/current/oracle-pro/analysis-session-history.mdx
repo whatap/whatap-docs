@@ -13,11 +13,10 @@ import SessionHistory from "../common-items/_db-analysis-session-history.mdx";
 
 <SessionHistory/>
 
-{/*쿼리 자세히 보기*/}
-import Dbquerydetails from "../common-items/_db-query-details.mdx";
+:::note
 
-<Dbquerydetails level={3} />
+- セッションテーブル一覧で***query_text***のカラム項目を選択すると、SQLクエリ文とPlan情報を確認できる<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 詳しい内容は、[次の文書](usage-ui#query-details)を参照してください。
 
-import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+- テーブルヘッダーカラムを非表示にしたり、希望する項目を追加できます。 カラムの順序を変更することもできます。 詳細については、[次の文書](usage-ui#change-column)を参照してください。
 
-<Dbv2dataeditcolumn level={2} />
+:::

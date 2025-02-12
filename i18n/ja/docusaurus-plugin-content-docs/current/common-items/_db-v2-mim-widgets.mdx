@@ -2,7 +2,7 @@
 
 ダッシュボードに配置できるウィジェットの種類は次のとおりです。
 
-<Xclude product="redis">
+<Xclude product="redis,db2">
 
 ### XOSウィジェット
 
@@ -77,7 +77,7 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,mongodb,mssql">
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,mongodb,mssql,db2">
 
 ### Databaseウィジェット
 
@@ -85,7 +85,19 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,cubrid,mssql">
+<InDoc product="db2">
+
+- ***CPU*** (`cpu_usage_total`)
+
+  インスタンス別のCPU使用量(%)を確認できます。 `SYSIBMADM.ENV_SYS_RESOURCE`管理ビューのメタデータのCPU指標で計算した値です。
+
+- ***Memory*** (`mem`)
+
+  インスタンス別のメモリ使用量(%)を確認できます。 `SYSIBMADM.ENV_SYS_RESOURCE`管理ビューメのタデータのメモリ指標で計算した値です。
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,cubrid,mssql,db2">
 
 - ***Active Sessions***
 
@@ -536,5 +548,33 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 グローバルロック(globl lock)は、MongoDBでデータの一貫性を維持するために使用されるメカニズムです。 読み取りと書き込みの両方に適用され、タスクを実行しようとするクライアントは、グローバルロックを取得する必要があります。
 
 :::
+
+</InDoc>
+
+<InDoc product="db2">
+
+- ***Index Physical Reads*** (`index_physical_reads`)
+
+  データベースからディスクを通じて読み込まれたインデックスページの数です。 ディスクのI/O性能を評価する上で重要な指標であり、高い値はディスク作業が増加したことを意味します。 ディスクI/Oのボトルネックを識別したり、インデックスの効率性を分析するために使用されます。
+
+- ***Logical I/O*** (`data_logical_reads`)
+
+  データベースのバッファープールからデータを読み込んだ総ページ数です。 システムのメモリ内キャッシング動作を示す指標で、高い値はバッファープールが効率的に動作していることを示します。 論理的読み取りと物理的読み取りを比較して、バッファープールの効率を分析します。
+
+- ***Physical I/O*** (`data_physical_reads`)
+
+  データベースからディスクを通じて読み込んだ総ページ数です。 物理的なI/O活動を示す指標で、バッファープールがデータをキャッシングできない場合、増加する場合があります。 ディスクI/Oのボトルネックの問題を把握し、物理的なディスクへのアクセスを減らす方にチューニングできます。
+
+- ***Data Hit Ratio(%)*** (`data_hit_ratio`)
+
+  論理的読み取りと物理的読み取りの比率で、データがバッファープールにキャッシングされた比率です。 高い値は、ほとんどのデータ読み取りタスクがメモリ内で処理されていることを示します。 データベースの性能を最適化するために、バッファープールのサイズとポリシーを分析する時に使用します。
+
+- ***Index Hit Ratio(%)*** (`index_hit_ratio`)
+
+  論理的なインデックス読み取りと物理的なインデックス読み取りの比率です。 高い値は、インデックスがメモリで効率的に処理されていることを意味します。
+
+- ***Total Hit Ratio(%)*** (`total_hit_ratio`)
+
+  すべてのデータとインデックスの読み取りに対する論理的読み取りと物理的読み取りの比率です。 データベース全体のキャッシング効率を評価する重要な指標です。 データベース運営環境の全般的なキャッシング性能を分析し、チューニングの優先順位を決めるのに活用できます。
 
 </InDoc>

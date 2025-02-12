@@ -30,6 +30,16 @@ AWSクラウド環境で実行中のデータベースの状態とリソース�
 
 - ***Interval***: メトリクス収集間隔を選択します。 (60秒/300秒)
 
+- ***Region***：モニタリングしたいAWSデータベースに適用されたリージョンを選択してください。 別のリージョンを入力すると、指標の照会ができません。
+
+  :::note
+
+  入力フィールドに文字列を入力すると、一致する結果をすばやく確認して選択できます。
+
+  <ImgLang img="db-cloudsettings-input-parameters-region.png" desc="Region" />
+
+  :::
+
 ### AWS CloudFormationを設定する
 
 WhaTapで提供する**AWS CloudFormation**テンプレートをインストールします。 このテンプレートを使用して、CloudWatchメトリクスをWhaTapで収集できます。 <UI>AWS CloudFormation</UI> <Cmdname sid="setting" className="uitext" />ボタンを選択すると、インストールを開始し、設定プロセスを実行できます。

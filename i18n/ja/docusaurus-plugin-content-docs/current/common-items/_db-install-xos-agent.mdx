@@ -1,3 +1,5 @@
+<section>
+
 <Xclude product="cubrid,cubrid-v1">
 
 ## XOSエージェントのインストール及びその他のオプションを適用する{#apply-xos-agent}
@@ -69,7 +71,7 @@ mem_limit=10240
 import Xoslinux from "../common-items/_db-install-xos-agent-linux.mdx";
 import Xoswindows from "../common-items/_db-install-xos-agent-windows.mdx";
 
-<Xclude product="oracle,oracle-v1,mssql,mssql-v1,tibero,redis,mongodb">
+<Xclude product="mssql,mssql-v1,tibero,redis,mongodb">
 
 <Tabs groupId='os'>
 <TabItem value='linux' label='Linux' default>
@@ -103,8 +105,10 @@ import Xoswindows from "../common-items/_db-install-xos-agent-windows.mdx";
 
 </InDoc>
 
-<InDoc product="oracle,oracle-v1,tibero,redis,mongodb">
+<InDoc product="tibero,redis,mongodb">
 
 <Xoslinux/>
 
 </InDoc>
+
+</section>
