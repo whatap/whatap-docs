@@ -1,0 +1,31 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_4",
+    "ver": "v1.7.4",
+    "date": "2025-01-20",
+    "Lists": [
+      {
+        "ver": "v1.7.4",
+        "hash": "v174",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Redisで特定の関数のみモニタリングするように変更：<code>GET</code>、<code>SET</code>、<code>DEL</code>、<code>HSET</code>、<code>HGET</code></p>"
+      },
+      {
+        "ver": "v1.7.4",
+        "hash": "v174",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> SQLプロファイル転送エラーの修正</p>"
+      },
+      {
+        "ver": "v1.7.4",
+        "hash": "v174",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> RabbitMQモニタリングモジュール(pika)のエラー修正</p>",
+        "details": "<p>pika原本関数の実行エラーを修正しました。</p>"
+      }
+    ]
+  }
+]
