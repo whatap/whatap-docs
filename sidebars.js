@@ -4698,9 +4698,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_0',
+                  id: 'release-notes/server-aix/server-aix-1_4_1',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_4_0',
                 'release-notes/server-aix/server-aix-1_3_8',
                 'release-notes/server-aix/server-aix-1_3_7',
                 'release-notes/server-aix/server-aix-1_3_6',
@@ -4722,9 +4723,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_4_0',
+                  id: 'release-notes/server-solaris/server-solaris-1_4_1',
                   className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_4_0',
                 'release-notes/server-solaris/server-solaris-1_3_8',
                 'release-notes/server-solaris/server-solaris-1_3_7',
                 'release-notes/server-solaris/server-solaris-1_3_6',
