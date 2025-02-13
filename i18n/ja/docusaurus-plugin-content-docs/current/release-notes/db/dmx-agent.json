@@ -1,0 +1,46 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dmx-1_0_1y",
+    "ver": "v1.0.1y",
+    "date": "2024-12-24",
+    "Lists": [
+      {
+        "ver": "v1.0.1y",
+        "hash": "v101y",
+        "product": "DMX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> prxでdmxエージェントを再実行する周期を調整</p>",
+        "details": "<ul>\n<li>\n<p>基本周期<strong>20回</strong>：基本周期は10秒、<em>prx.conf</em>ファイルに<code>interval</code>オプションで設定できます。</p>\n</li>\n<li>\n<p>以後1分ごとに10回、その以後10分ごとに5回、その以後は1時間ごとに再実行を試みます。</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dmx-1_0_1x",
+    "ver": "v1.0.1",
+    "date": "2024-12-20",
+    "Lists": [
+      {
+        "ver": "v1.0.1x",
+        "hash": "v101x",
+        "product": "DMX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>tablespace</code>オプションを追加</p>",
+        "details": "<p>free space照会時にquery timeoutが発生し、オプションによって異なるビューを照会するようにします。</p>"
+      },
+      {
+        "ver": "v1.0.1x",
+        "hash": "v101x",
+        "product": "DMX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <code>object_info</code>にsequence追加</p>"
+      },
+      {
+        "ver": "v1.0.1x",
+        "hash": "v101x",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>エージェントと同じ経路にファイル名(32文字以上)の長いファイルがある場合、<strong>SIGSEGV</strong>問題修正</p>"
+      }
+    ]
+  }
+  ]
