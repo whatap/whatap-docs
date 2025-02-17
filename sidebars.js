@@ -1934,6 +1934,7 @@ const sidebars = {
           ],
         },
         'oracle-v1/agent-manage',
+        'oracle-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
