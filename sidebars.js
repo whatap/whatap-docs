@@ -3394,6 +3394,7 @@ const sidebars = {
           ],
         },
         'cubrid-v1/agent-manage',
+        'cubrid-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
