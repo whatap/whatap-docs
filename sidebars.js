@@ -4461,7 +4461,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -4469,9 +4469,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_50',
-                  // className: 'new',
+                  id: 'release-notes/java/java-2_2_52',
+                  className: 'new',
                 },
+                'release-notes/java/java-2_2_50',
                 'release-notes/java/java-2_2_49',
                 'release-notes/java/java-2_2_48',
                 'release-notes/java/java-2_2_47',
