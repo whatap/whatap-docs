@@ -3394,6 +3394,7 @@ const sidebars = {
           ],
         },
         'cubrid-v1/agent-manage',
+        'cubrid-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -3750,6 +3751,7 @@ const sidebars = {
           ],
         },
         'altibase-v1/agent-manage',
+        'altibase-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
