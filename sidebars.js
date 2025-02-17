@@ -4576,7 +4576,7 @@ const sidebars = {
               label: 'Python',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/python/index',
@@ -4584,9 +4584,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_4',
-                  // className: 'new',
+                  id: 'release-notes/python/python-1_7_5',
+                  className: 'new',
                 },
+                'release-notes/python/python-1_7_4',
                 'release-notes/python/python-1_7_3',
                 'release-notes/python/python-1_7_2',
                 'release-notes/python/python-1_7_1',
