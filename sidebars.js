@@ -4567,8 +4567,6 @@ const sidebars = {
                 'release-notes/nodejs/nodejs-0_4_98',
                 'release-notes/nodejs/nodejs-0_4_97',
                 'release-notes/nodejs/nodejs-0_4_96',
-                'release-notes/nodejs/nodejs-0_4_95',
-                'release-notes/nodejs/nodejs-0_4_94',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
