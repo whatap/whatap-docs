@@ -1985,6 +1985,11 @@ main {
       font-style: normal !important;
       font-weight: normal;
     }
+    // db 역슬래시 테스트
+    span.highlight-backslash {
+      font-weight: 800; 
+      color: #21af90;
+    }
     span.type {
       color: var(--ifm-safe-color);
       margin-left: 10px;
