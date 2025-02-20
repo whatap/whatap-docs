@@ -152,13 +152,13 @@
   "account_invalid_password": {
     "en": "Invalid password. (9 digits composed of upper and lowercase letters, numbers and special characters)",
     "ja": "パスワードは英大小文字、数字、特殊文字を組み合わせて9文字以上で入力してください。",
-    "ko": "잘못된 비밀번호 형식 입니다. (영문 대/소문자, 숫자, 특수문자를 조합하여 최소 9자리 이상)",
+    "ko": "잘못된 비밀번호 형식입니다. (영문 대/소문자, 숫자, 특수문자를 조합하여 최소 9자리 이상)",
     "service_id": "_00041"
   },
   "account_invalid_email": {
     "en": "Invalid email.",
     "ja": "Eメール形式として入力ください。",
-    "ko": "잘못된 Email 형식 입니다.",
+    "ko": "잘못된 Email 형식입니다.",
     "service_id": "_00042"
   },
   "account_empty_value": {
@@ -11538,7 +11538,7 @@
   "login_count": {
     "en": "Login count",
     "ja": "ログイン回数",
-    "ko": "로그인 회수",
+    "ko": "로그인 횟수",
     "service_id": "TTL01989"
   },
   "are_you_old_sms_user": {
@@ -17192,9 +17192,9 @@
     "service_id": "TTL02933"
   },
   "many_text_messages_have_been_sent": {
-    "en": "Multiple text messages have been sent. (more than 200 / day)",
-    "ja": "大量のSMSを転送しました。(200件以上 / 日)",
-    "ko": "다량의 문자메시지가 전송되었습니다. (200건 / 일)",
+    "en": "Multiple text messages have been sent. (more than {limit} / day)",
+    "ja": "大量のSMSを転送しました。({limit}件以上 / 日)",
+    "ko": "다량의 문자메시지가 전송되었습니다. ({limit}건 / 일)",
     "service_id": "_02934"
   },
   "text_message_notifications_are_paused": {
@@ -29360,9 +29360,9 @@
     "service_id": "_04968"
   },
   "stateful_alert_description_cleared": {
-    "en": "When the event is resolved, notify the status of \"RECOVERED@\".",
-    "ja": "イベントが解決されたら、「RECOVERED@」状態のアラートを通知します。",
-    "ko": "이벤트가 해결되면 “RECOVERED@” 상태의 알림을 수신합니다.",
+    "en": "When the event is resolved, notify the status of \"RECOVERED:\".",
+    "ja": "イベントが解決されたら、「RECOVERED:」状態のアラートを通知します。",
+    "ko": "이벤트가 해결되면 “RECOVERED:” 상태의 알림을 수신합니다.",
     "service_id": "_04969"
   },
   "enter_category_self": {
@@ -33008,7 +33008,7 @@
     "service_id": "DSC05578"
   },
   "solved": {
-    "en": "solved",
+    "en": "Solved",
     "ja": "解決",
     "ko": "해결",
     "service_id": "_05579"
@@ -35489,7 +35489,7 @@
     "en": "Container name/table space name",
     "ja": "コンテナ/テーブルスペース名",
     "ko": "컨테이너 이름/테이블스페이스 이름",
-    "service_id": "TTL05991"
+    "service_id": "컨테이너 이름/테이블스페이스 이름"
   },
   "ITM05991": {
     "en": "Receive notifications when event reception tags are not set.",
@@ -39214,19 +39214,19 @@
   "NTC06632": {
     "en": "Invalid password format. (You cannot set a password with a continuous layout keys.)",
     "ja": "無効なパスワード形式です。 連続したキーボード配列でパスワードを設定できません。",
-    "ko": "잘못된 비밀번호 형식 입니다. (연속된 키보드 배열로 비밀번호를 설정할 수 없습니다.)",
+    "ko": "잘못된 비밀번호 형식입니다. (연속된 키보드 배열로 비밀번호를 설정할 수 없습니다.)",
     "service_id": "NTC06632"
   },
   "NTC06633": {
     "en": "Invalid password format. (You cannot set a password with consecutive numbers.)",
     "ja": "無効なパスワード形式です。 連続した数字でパスワードを設定することはできません。",
-    "ko": "잘못된 비밀번호 형식 입니다. (연속된 숫자로 비밀번호를 설정할 수 없습니다.)",
+    "ko": "잘못된 비밀번호 형식입니다. (연속된 숫자로 비밀번호를 설정할 수 없습니다.)",
     "service_id": "NTC06633"
   },
   "NTC06634": {
     "en": "Invalid password format. (You cannot set a password with consecutive alphabetic characters.)",
     "ja": "無効なパスワード形式です。 連続アルファベットでパスワードを設定することはできません。",
-    "ko": "잘못된 비밀번호 형식 입니다. (연속된 알파벳으로 비밀번호를 설정할 수 없습니다.)",
+    "ko": "잘못된 비밀번호 형식입니다. (연속된 알파벳으로 비밀번호를 설정할 수 없습니다.)",
     "service_id": "NTC06634"
   },
   "TLT06635": {
@@ -42496,7 +42496,7 @@
   "DSC07196": {
     "en": "Invalid tag",
     "ja": "無効なタグです。",
-    "ko": "유효하지 않는 태그",
+    "ko": "유효하지 않은 태그",
     "service_id": "DSC07196"
   },
   "TTL07197": {
@@ -45747,7 +45747,7 @@
   },
   "DSC07739": {
     "en": "Click Run GC to clean up invalid memory (Garbage).",
-    "ja": "無効なメモリ(Garbage)をクリーンアップするには、[Run GC]ボタンをクリックします。",
+    "ja": "無効なメモリ(Garbage)をクリーンアップするには、「GC実行」をクリックします。",
     "ko": "GC 실행 버튼을 클릭하면 유효하지 않은 메모리 (Garbage)를 정리합니다.",
     "service_id": "DSC07739"
   },
@@ -46328,7 +46328,7 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
     "service_id": "DSC07839"
@@ -46496,7 +46496,7 @@
     "service_id": "DSC07866"
   },
   "DSC07867": {
-    "en": "Lists tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) do.",
+    "en": "Tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) are displayed in the list.",
     "ja": "エージェント設定(whatap.conf)の<code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示します。",
     "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다.",
     "service_id": "DSC07867"
@@ -47342,7 +47342,7 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest for each object from the past",
+    "en": "Check the manifest of each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
     "service_id": "DSC08008"
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/ >The generated heap dump file can be checked in the {Agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/>The generated heap dump file can be checked in the {agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48159,7 +48159,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "service_id": "CNT08143"
   },
@@ -48530,7 +48530,7 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
     "service_id": "TTL08207"
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -48908,7 +48908,7 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
     "service_id": "CNT08269"
@@ -49214,9 +49214,9 @@
     "service_id": "CNT08320"
   },
   "TLT08321": {
-    "en": "When an event is resolved, you will receive a “RECOVERED@” notification.",
-    "ja": "イベントが解消されると、「RECOVERED@」状態の通知を受け取ります。",
-    "ko": "이벤트가 해소되면 “RECOVERED@” 상태의 알림을 수신합니다.",
+    "en": "When an event is resolved, you will receive a “RECOVERED:” notification.",
+    "ja": "イベントが解消されると、「RECOVERED：」状態の通知を受け取ります。",
+    "ko": "이벤트가 해소되면 “RECOVERED:” 상태의 알림을 수신합니다.",
     "service_id": "TLT08321"
   },
   "DSC08322": {
@@ -49316,7 +49316,7 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
     "service_id": "DSC08338"
@@ -49586,14 +49586,14 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
     "service_id": "DSC08383"
   },
   "ITM08384": {
     "en": "Stable (recommended) ",
-    "ja": "Stable（推奨） ",
+    "ja": "Stable（推奨）",
     "ko": "Stable(권장) ",
     "service_id": "ITM08384"
   },
@@ -50168,7 +50168,7 @@
     "service_id": "TTL08479"
   },
   "TTL08480": {
-    "en": "Script list",
+    "en": "Script List",
     "ja": "スクリプトリスト",
     "ko": "스크립트 목록",
     "service_id": "TTL08480"
@@ -50300,7 +50300,7 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "Add the script file to <b>{path}</b>.",
+    "en": "<b>Add the script file to the {path} path</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
     "service_id": "DSC08502"
@@ -50811,7 +50811,7 @@
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -50841,7 +50841,7 @@
   },
   "DSC08594": {
     "en": "It must be {highlighted}. Additional pattern registration may be required depending on the simulation result.",
-    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08594"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
+    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -51189,7 +51189,7 @@
   },
   "DSC08652": {
     "en": "The <code class='_copy'>{ingressName}</code> Ingress is created in <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "service_id": "DSC08652"
   },
@@ -51620,7 +51620,7 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Update the agent version to the latest version.",
+    "en": "Please update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
@@ -51908,7 +51908,7 @@
     "service_id": "ITM08772"
   },
   "DSC08773": {
-    "en": "Please refer to the instructions page for instructions on activating the server inventory feature.",
+    "en": "Please refer to the instructions page for instructions on activating the server inventory function.",
     "ja": "サーバーインベントリ機能を有効にする方法については、ガイドの内容を参照してください。",
     "ko": "서버 인벤토리 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
     "service_id": "DSC08773"
@@ -51932,7 +51932,7 @@
     "service_id": "TTL08776"
   },
   "DSC08777": {
-    "en": "If the Agent version is lower than the version defined above,<br />the server icon is displayed normally in the \"Server Inventory Map\", but<br />the file system in the server inventory map's group performance statistics information, right summary panel, and detailed view etc. Information and Metrics may not be displayed properly.",
+    "en": "If the Agent version is lower than the version defined above, the server icon will be displayed normally in the \"Server Inventory Map\", but group performance statistics information, file system information such as the right summary panel and detailed view, and Metrics in the server inventory map may not be displayed properly.",
     "ja": "Agentのバージョンが上記のバージョンより低い場合、<br /> 「サーバーインベントリマップ」にはサーバーアイコンが表示されますが、<br />サーバーインベントリマップのグループ性能統計情報、右のサマリーパネル、および詳細ビューなどのファイルシステム情報、メトリクスが正常に表示されないことがあります。",
     "ko": "Agent 버전이 위 정의된 버전보다 낮을 경우,<br />\"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만<br />서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
     "service_id": "DSC08777"
@@ -52106,7 +52106,7 @@
     "service_id": "TTL08805"
   },
   "DSC08806": {
-    "en": "If the installed Agent version is lower than the supported version below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information in the server inventory map, file system information such as the right summary panel and detailed view, and Metrics are not displayed properly. It may not be possible.",
+    "en": "If the installed Agent version is lower than the supported versions below, the server icon is displayed normally in the \"Server Inventory Map\", but group performance statistics information, file system information such as the right summary panel and detailed view, and Metrics in the server inventory map may not be displayed properly.",
     "ja": "インストールされたエージェントのバージョンが以下のバージョンより低い場合、「サーバーインベントリマップ」にサーバーアイコンは表示されますが、サーバーインベントリマップのグループ性能統計情報、右サマリパネル、詳細ビューなどのファイルシステム情報、メトリクスは正常に表示されないことがあります。",
     "ko": "설치된 Agent 버전이 아래의 지원 버전보다 낮을 경우, \"서버 인벤토리 맵\" 에 서버 아이콘은 정상적으로 표시 되지만 서버 인벤토리 맵의 그룹 성능 통계 정보, 우측 요약 패널 및 상세 보기등의 파일시스템 정보, Metrics 가 정상 표시 되지 않을 수 있습니다.",
     "service_id": "DSC08806"
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value} 表示",
+    "ja": "{value}を表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52395,7 +52395,7 @@
   },
   "TLT08854": {
     "en": "Bind variable is not in the correct format. Paste the value in the format {\"bind\": [\"example\"]}.",
-    "ja": "バインド変数が正しい形式ではありません。 {\"bind\": [\"example\"]} 形式の値を貼り付けます。",
+    "ja": "バインド変数が正しい形式ではありません。",
     "ko": "바인드 변수가 올바른 형식이 아닙니다. {\"bind\": [\"example\"]} 형식의 값을 붙여 넣으세요.",
     "service_id": "TLT08854"
   },
@@ -52881,7 +52881,7 @@
   },
   "DSC08937": {
     "en": "The average {resource} usage is very high compared to <b><code>limit</code>, possibly causing resource shortage or performance degradation. <b>Adjust the <code>limit</code> setting or increase the resources.</b>",
-    "ja": "平均{resource}使用率は<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
+    "ja": "平均{resource}使用率が<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。<b> <code>limit</code>",
     "ko": "평균 {resource} 사용량이 <b><code>limit</code> 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
     "service_id": "DSC08937"
   },
@@ -53361,7 +53361,7 @@
   },
   "BTN09018": {
     "en": "Add OID",
-    "ja": "OIDを追加",
+    "ja": "OIDの追加",
     "ko": "OID 추가",
     "service_id": "BTN09018"
   },
@@ -53384,15 +53384,15 @@
     "service_id": "TTL09021"
   },
   "CNT09022": {
-    "en": "<b>Update your agent to the latest version and enable the Category V2 option</b></br>to take better advantage of real-time data exploration and historical performance analysis.",
-    "ja": "<b>最新バージョンにエージェントを更新し、Category V2オプションを有効にします。</b></br>リアルタイムなデータ照会と過去性能の分析がより効果的に活用できます。",
-    "ko": "<b>최신 버전으로 에이전트를 업데이트하고 Category V2 옵션을 활성화</b>하여</br>실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
+    "en": "<b style=\"color:unset\">Update your agent to the latest version and enable the Category V2 option</b></br>to better utilize real-time data exploration and historical performance analysis.",
+    "ja": "<b style=\"color:unset\">最新バージョンにエージェントを更新し、Category V2オプションを有効にします。</b></br>リアルタイムなデータ照会と過去性能の分析がより効果的に活用できます。",
+    "ko": "<b style=\"color:unset\">최신 버전으로 에이전트를 업데이트하고 Category V2 옵션을 활성화</b>하여</br>실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
     "service_id": "CNT09022"
   },
   "DSC09023": {
-    "en": "Provides precise performance data with <b>shorter collection intervals</b>.",
-    "ja": "<b>より短い収集間隔</b>で、精密な性能データを提供します。",
-    "ko": "<b>더 짧은 수집 간격</b>으로 정밀한 성능 데이터를 제공합니다.",
+    "en": "<b style=\"color:unset\">Shorter collection intervals</b> provide precise performance data.",
+    "ja": "<b style=\"color:unset\">より短い収集間隔</b>で、精密な性能データを提供します。",
+    "ko": "<b style=\"color:unset\">더 짧은 수집 간격</b>으로 정밀한 성능 데이터를 제공합니다.",
     "service_id": "DSC09023"
   },
   "DSC09024": {
@@ -53414,9 +53414,9 @@
     "service_id": "DSC09028"
   },
   "DSC09029": {
-    "en": "You can easily explore specific <b>metrics</b> for your desired server and quickly identify performance issues.",
-    "ja": "サーバーの指標を<b>簡単に検索</b>して、性能の問題を迅速に把握できます。",
-    "ko": "원하는 서버의 특정 <b>지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
+    "en": "You can easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
+    "ja": "サーバーの指標を<b style=\"color:unset\">簡単に検索</b>して、性能の問題を迅速に把握できます。",
+    "ko": "원하는 서버의 특정 <b style=\"color:unset\">지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
   },
   "TTL09030": {
@@ -53504,15 +53504,15 @@
     "service_id": "BTN09044"
   },
   "CNT09045": {
-    "en": "<b>Provides precise performance data with shorter collection intervals</b>",
+    "en": "<b style=\"color:unset\">Provides precise performance data with shorter collection intervals</b>",
     "ja": "<b>より短い収集間隔</b>で、精密な性能データを提供します。",
-    "ko": "<b>더 짧은 수집 간격으로 정밀한 성능 데이터 제공합니다.</b>",
+    "ko": "<b style=\"color:unset\">더 짧은 수집 간격으로 정밀한 성능 데이터 제공합니다.</b>",
     "service_id": "CNT09045"
   },
   "CNT09046": {
-    "en": "<b>Collectable metric itmes have been expanded.</b>",
-    "ja": "収集できる<b>メトリクス項目</b>が追加されました。",
-    "ko": "수집 가능한 <b>메트릭 항목</b>이 확장되었습니다.",
+    "en": "<b style=\"color:unset\">Collectable metric itmes have been expanded.</b>",
+    "ja": "収集できる<b style=\"color:unset\">メトリクス項目</b>が追加されました。",
+    "ko": "수집 가능한 <b style=\"color:unset\">메트릭 항목</b>이 확장되었습니다.",
     "service_id": "CNT09046"
   },
   "DSC09048": {
@@ -53523,14 +53523,512 @@
   },
   "TTL09049": {
     "en": "Initial creation time",
-    "ja": "最初の作成時間",
+    "ja": "最初作成時刻",
     "ko": "최초 생성 시간",
     "service_id": "TTL09049"
+  },
+  "CNT09050": {
+    "en": "Number of devices",
+    "ja": "デバイス数",
+    "ko": "디바이스 수",
+    "service_id": "CNT09050"
+  },
+  "TLT09051": {
+    "en": "Receiving notifications may not work properly. Be sure to delete it.",
+    "ja": "通知の受信が正常に動作しない可能性があります。削除してください。",
+    "ko": "알림 수신이 정상적으로 동작하지 않을 수 있습니다. 삭제해주시기 바랍니다.",
+    "service_id": "TLT09051"
+  },
+  "DSC09052": {
+    "en": "Agent is not installed.",
+    "ja": "エージェントがインストールされていません。",
+    "ko": "에이전트가 설치되지 않았습니다.",
+    "service_id": "DSC09052"
+  },
+  "DSC09053": {
+    "en": "There is currently no agent installed that can collect monitoring information.",
+    "ja": "現在、モニタリング情報を収集するエージェントがインストールされていません。",
+    "ko": "현재 모니터링 정보를 수집할 수 있는 에이전트가 설치되지 않았습니다.",
+    "service_id": "DSC09053"
+  },
+  "DSC09054": {
+    "en": "Install the agent from the <b>Manage > Install Agent</b> page.",
+    "ja": "<b>管理 >エージェントのインストール</b>ページでエージェントをインストールします。",
+    "ko": "<b>관리 > 에이전트 설치</b> 페이지에서 에이전트를 설치하세요.",
+    "service_id": "DSC09054"
+  },
+  "BTN09055": {
+    "en": "Display VLAN",
+    "ja": "VLANの表示",
+    "ko": "VLAN 표시",
+    "service_id": "BTN09055"
+  },
+  "BTN09056": {
+    "en": "Interface display format",
+    "ja": "インタフェース表示形式",
+    "ko": "인터페이스 표시 형식",
+    "service_id": "BTN09056"
+  },
+  "TTL09057": {
+    "en": "Event status",
+    "ja": "イベント状態",
+    "ko": "이벤트 상태",
+    "service_id": "TTL09057"
+  },
+  "DSC09058": {
+    "en": "Invalid search phrase!",
+    "ja": "無効な検索構文です。",
+    "ko": "잘못된 검색 구문입니다.",
+    "service_id": "DSC09058"
+  },
+  "ITM09059": {
+    "en": "Maintenance plan",
+    "ja": "メンテナンス",
+    "ko": "정비계획",
+    "service_id": "ITM09059"
+  },
+  "ITM09060": {
+    "en": "Processing",
+    "ja": "処理中",
+    "ko": "처리 중",
+    "service_id": "ITM09060"
+  },
+  "ITM09061": {
+    "en": "Blocked",
+    "ja": "ブロック",
+    "ko": "차단",
+    "service_id": "ITM09061"
+  },
+  "DSC09062": {
+    "en": "The server response time has exceeded. Please try again later.",
+    "ja": "サーバーからの応答がタイムアウトしました。しばらくしてからもう一度試してください。",
+    "ko": "서버 응답 시간이 초과되었습니다. 잠시 후 다시 시도해주세요.",
+    "service_id": "DSC09062"
+  },
+  "BTN09063": {
+    "en": "Retry",
+    "ja": "再試行",
+    "ko": "재시도",
+    "service_id": "BTN09063"
+  },
+  "TTL09064": {
+    "en": "Automatic expansion",
+    "ja": "自動拡張",
+    "ko": "자동 확장",
+    "service_id": "TTL09064"
+  },
+  "TTL09065": {
+    "en": "Expansion size",
+    "ja": "拡張サイズ",
+    "ko": "확장 크기",
+    "service_id": "TTL09065"
+  },
+  "TTL09066": {
+    "en": "Maximum expansion size",
+    "ja": "最大拡張サイズ",
+    "ko": "최대 확장 크기",
+    "service_id": "TTL09066"
+  },
+  "DSC09067": {
+    "en": "The coollection time and target can be adjusted with <br/>tables_min_row and tables_hour of whatap.conf.<br/> (default: 10,000 or more, collected at 5 am)",
+    "ja": "収集時間と対象は、whatap.confの<br/>tables_min_row、tables_hourで調整できます。<br/>（デフォルト：10000件以上、午前5時収集）",
+    "ko": "수집시간과 대상은 whatap.conf의<br/>tables_min_row, tables_hour로 조정할 수 있습니다.<br/>(기본값: 10000건 이상, 새벽 5시 수집)",
+    "service_id": "DSC09067"
+  },
+  "TTL09068": {
+    "en": "Average activity loading time",
+    "ja": "平均アクティビティロード時間",
+    "ko": "평균 액티비티 로드 시간",
+    "service_id": "TTL09068"
+  },
+  "TTL09069": {
+    "en": "HTTP hitmap",
+    "ja": "HTTPヒットマップ",
+    "ko": "HTTP 히트맵",
+    "service_id": "TTL09069"
+  },
+  "TTL09070": {
+    "en": "Assign access to all CustomResource",
+    "ja": "すべてのCustomResourceへのアクセス許可周期",
+    "ko": "모든 CustomResource 에 대한 접근 권한 주기",
+    "service_id": "TTL09070"
+  },
+  "DSC09071": {
+    "en": "If you select Assign access to all CustomResources, the whatap service accounts acquire the get, list, and watch roles for all cluster resources.",
+    "ja": "すべてのCustomResourceののアクセス許可周期を選択すると、whatapサービスアカウントにクラスタ全体のリソースに対するget、list、watch権限が与えられます。",
+    "ko": "모든 CustomResource 에 대한 접근 권한 주기를 선택하면 whatap 서비스 계정이 클러스터 전체 리소스에 대해 get, list, watch 권한을 가지게 됩니다.",
+    "service_id": "DSC09071"
+  },
+  "TLT09072": {
+    "en": "DCGM_FI_DEV_GPU_UTIL: GPU utilization for each device",
+    "ja": "DCGM_FI_DEV_GPU_UTIL: デバイス固有のGPU使用率",
+    "ko": "DCGM_FI_DEV_GPU_UTIL: 디바이스별 GPU 사용률",
+    "service_id": "TLT09072"
+  },
+  "TLT09073": {
+    "en": "DCGM_FI_DEV_MEM_CLOCK: GPU memory clock speed",
+    "ja": "DCGM_FI_DEV_MEM_CLOCK: GPUメモリクロック速度",
+    "ko": "DCGM_FI_DEV_MEM_CLOCK: GPU 메모리 클럭 속도",
+    "service_id": "TLT09073"
+  },
+  "TLT09074": {
+    "en": "DCGM_FI_DEV_FB_USED: Frame buffer memory capacity in use",
+    "ja": "DCGM_FI_DEV_FB_USED: 現在使用中のフレームバッファメモリ容量",
+    "ko": "DCGM_FI_DEV_FB_USED: 현재 사용 중인 프레임버퍼 메모리 용량",
+    "service_id": "TLT09074"
+  },
+  "TLT09075": {
+    "en": "DCGM_FI_DEV_THERMAL_VIOLATION: Time when the GPU's performance was limited due to thermal limitation",
+    "ja": "DCGM_FI_DEV_THERMAL_VIOLATION: GPUが温度制限のため性能が制限された時間",
+    "ko": "DCGM_FI_DEV_THERMAL_VIOLATION: GPU가 온도(Thermal) 제한으로 인해 성능이 제한된 시간",
+    "service_id": "TLT09075"
+  },
+  "TLT09076": {
+    "en": "DCGM_FI_DEV_GPU_TEMP: GPU temperature for each device",
+    "ja": "DCGM_FI_DEV_GPU_TEMP: デバイス別GPU温度",
+    "ko": "DCGM_FI_DEV_GPU_TEMP: 디바이스별 GPU 온도",
+    "service_id": "TLT09076"
+  },
+  "TLT09077": {
+    "en": "DCGM_FI_DEV_FB_FREE: Available frame buffer memory capacity",
+    "ja": "DCGM_FI_DEV_FB_FREE: 使用可能なフレームバッファメモリ容量",
+    "ko": "DCGM_FI_DEV_FB_FREE: 사용 가능한 프레임버퍼 메모리 용량",
+    "service_id": "TLT09077"
+  },
+  "TLT09078": {
+    "en": "DCGM_FI_DEV_MEM_COPY_UTIL: Utilization of GPU's memory copy",
+    "ja": "DCGM_FI_DEV_MEM_COPY_UTIL: GPUのメモリコピー操作（Memory Copy）の使用率",
+    "ko": "DCGM_FI_DEV_MEM_COPY_UTIL: GPU의 메모리 복사 작업(Memory Copy)의 사용률",
+    "service_id": "TLT09078"
+  },
+  "TLT09079": {
+    "en": "DCGM_FI_DEV_SM_CLOCK: Device GPU streaming multi-processor clock frequency",
+    "ja": "DCGM_FI_DEV_SM_CLOCK: デバイスGPUストリーミングマルチプロセッサクロック周波数",
+    "ko": "DCGM_FI_DEV_SM_CLOCK: 디바이스 GPU 스트리밍 멀티프로세서 클럭 주파수",
+    "service_id": "TLT09079"
+  },
+  "TLT09080": {
+    "en": "DCGM_FI_DEV_XID_ERRORS: XID (Execution ID) error code occurred from GPU. 0 → No GPU error (normal), 1 or more → Occurrence of GPU errors of a specific type",
+    "ja": "DCGM_FI_DEV_XID_ERRORS: GPUで発生したXID(Execution ID)エラーコード. 0 → GPU エラーなし(正常), 1 以上 → 特定タイプのGPU エラーが発生",
+    "ko": "DCGM_FI_DEV_XID_ERRORS: GPU에서 발생한 XID(Execution ID) 에러 코드. 0일 경우 GPU 오류 없음(정상), 1 이상일 경우 특정 유형의 GPU 오류 발생을 의미",
+    "service_id": "TLT09080"
+  },
+  "TLT09081": {
+    "en": "DCGM_FI_DEV_POWER_VIOLATION: Cumulative time when the GPU performance is limited due to power constraints",
+    "ja": "DCGM_FI_DEV_POWER_VIOLATION: GPUがパワー(Power)制限のため性能が制限された時間(累積)",
+    "ko": "DCGM_FI_DEV_POWER_VIOLATION: GPU가 전력(Power) 제한으로 인해 성능이 제한된 시간(누적)",
+    "service_id": "TLT09081"
+  },
+  "DSC09082": {
+    "en": "Key search",
+    "ja": "キー検索",
+    "ko": "Key 검색",
+    "service_id": "DSC09082"
+  },
+  "TTL09083": {
+    "en": "Activity name",
+    "ja": "アクティビティ名",
+    "ko": "액티비티 이름",
+    "service_id": "TTL09083"
+  },
+  "TTL09084": {
+    "en": "Network connection type",
+    "ja": "ネットワーク接続タイプ",
+    "ko": "네트워크 연결 유형",
+    "service_id": "TTL09084"
+  },
+  "TTL09085": {
+    "en": "Request method",
+    "ja": "リクエストメソッド",
+    "ko": "요청 메소드",
+    "service_id": "TTL09085"
+  },
+  "TTL09086": {
+    "en": "Network protocol version",
+    "ja": "ネットワークプロトコルバージョン",
+    "ko": "네트워크 프로토콜 버전",
+    "service_id": "TTL09086"
+  },
+  "TTL09087": {
+    "en": "Screen name",
+    "ja": "スクリーン名",
+    "ko": "스크린 이름",
+    "service_id": "TTL09087"
+  },
+  "TTL09088": {
+    "en": "Server address",
+    "ja": "サーバーアドレス",
+    "ko": "서버 주소",
+    "service_id": "TTL09088"
+  },
+  "TTL09089": {
+    "en": "Server port",
+    "ja": "サーバーポート",
+    "ko": "서버 포트",
+    "service_id": "TTL09089"
+  },
+  "TTL09090": {
+    "en": "Request URL",
+    "ja": "リクエストURL",
+    "ko": "요청 URL",
+    "service_id": "TTL09090"
+  },
+  "DSC09091": {
+    "en": "You can check the data by selecting the time you want to view in the Lock Wait Sessions chart.",
+    "ja": "Lock Wait Sessionsチャートで照会したい時点を選択すると、当該時点のデータを確認できます。",
+    "ko": "Lock Wait Sessions 차트에서 조회를 원하는 시점 선택 시 데이터를 확인할 수 있습니다.",
+    "service_id": "DSC09091"
+  },
+  "CNT09092": {
+    "en": "Selection of {total} items",
+    "ja": "{total}件の選択",
+    "ko": "{total}개 선택",
+    "service_id": "CNT09092"
+  },
+  "TTL09093": {
+    "en": "Load trend by {category}",
+    "ja": "{category} 別ロードの推移",
+    "ko": "{category} 별 로드 추이",
+    "service_id": "TTL09093"
+  },
+  "NTC09094": {
+    "en": "Check the network, disk, and hardware status of the node.",
+    "ja": "ノードのネットワーク、ディスク、ハードウェアの状態を確認してください。 ",
+    "ko": "노드의 네트워크, 디스크, 하드웨어 상태를 점검하세요. ",
+    "service_id": "NTC09094"
+  },
+  "NTC09095": {
+    "en": "Check that the {resourceName} resources are sufficient in the node.",
+    "ja": "ノードの{resourceName}リソースが十分なのかを確認してください。",
+    "ko": "노드의 {resourceName} 리소스가 충분한지 확인하세요.",
+    "service_id": "NTC09095"
+  },
+  "TTL09096": {
+    "en": "HTTP analysis",
+    "ja": "HTTP分析",
+    "ko": "HTTP 분석",
+    "service_id": "TTL09096"
+  },
+  "TTL09097": {
+    "en": "Activity analysis",
+    "ja": "アクティビティ分析",
+    "ko": "액티비티 분석",
+    "service_id": "TTL09097"
+  },
+  "TTL09098": {
+    "en": "Activity hitmap",
+    "ja": "アクティビティヒットマップ",
+    "ko": "액티비티 히트맵",
+    "service_id": "TTL09098"
+  },
+  "TTL09099": {
+    "en": "Average HTTP response time",
+    "ja": "平均HTTP応答時間",
+    "ko": "평균 HTTP 응답 시간",
+    "service_id": "TTL09099"
+  },
+  "TTL09100": {
+    "en": "Number of ANR cases per screen",
+    "ja": "画面別ANR件数",
+    "ko": "화면별 ANR 건수",
+    "service_id": "TTL09100"
+  },
+  "TTL09101": {
+    "en": "Number of crashes per exception message",
+    "ja": "Exceptionメッセージ別のクラッシュ件数",
+    "ko": "Exception 메시지별 크래시 건수",
+    "service_id": "TTL09101"
+  },
+  "TTL09102": {
+    "en": "Number of crashes by exception type",
+    "ja": "Exceptionタイプ別のクラッシュ件数",
+    "ko": "Exception 타입별 크래시 건수",
+    "service_id": "TTL09102"
+  },
+  "TTL09103": {
+    "en": "Crashes by type",
+    "ja": "デバイス別のクラッシュ件数",
+    "ko": "디바이스별 크래시",
+    "service_id": "TTL09103"
+  },
+  "TTL09104": {
+    "en": "Number of HTTP cases by status",
+    "ja": "状態別のHTTP件数",
+    "ko": "상태별 HTTP 건수",
+    "service_id": "TTL09104"
+  },
+  "TTL09105": {
+    "en": "Number of activity loads",
+    "ja": "アクティビティロード数",
+    "ko": "액티비티 로드 수",
+    "service_id": "TTL09105"
+  },
+  "TTL09106": {
+    "en": "Number of today's sessions",
+    "ja": "本日のセッション数",
+    "ko": "금일 세션 수",
+    "service_id": "TTL09106"
+  },
+  "ITM09107": {
+    "en": "Default plan inquiry",
+    "ja": "デフォルトプランの照会",
+    "ko": "디폴트 플랜 조회",
+    "service_id": "ITM09107"
+  },
+  "TTL09108": {
+    "en": "Use default plan lookup",
+    "ja": "デフォルトプラン照会の使用",
+    "ko": "디폴트 플랜 조회 사용",
+    "service_id": "TTL09108"
+  },
+  "DSC09109": {
+    "en": "When setting up as shown below, you can search plan information through the DB connection information you entered in advance without having to enter connection information every time.",
+    "ja": "以下のように設定すると、毎回接続情報を入力することなく、事前に入力したDB接続情報からプラン情報を照会できます。",
+    "ko": "아래와 같이 설정 시 매번 접속정보를 입력할 필요 없이 미리 입력한 DB 접속 정보를 통해 플랜 정보를 조회할 수 있습니다.",
+    "service_id": "DSC09109"
+  },
+  "DSC09110": {
+    "en": "Enter <b>plan_db={db}</b> in whatap.conf.",
+    "ja": "whatap.conf に <b>plan_db={db}</b>を入力します。",
+    "ko": "whatap.conf에 <b>plan_db={db}</b>를 입력하세요.",
+    "service_id": "DSC09110"
+  },
+  "DSC09111": {
+    "en": "If user and pwd contain <b>special characters</b>, add <b>Escape Character</b> for each special character in the description.",
+    "ja": "userとpwdに<b>特殊文字が含まれた場合</b>、説明に<b>各特殊文字ごとにEscape Character</b>を付けてください。",
+    "ko": "user와 pwd에 <b>특수문자가 포함될 경우</b>, 설명에 <b>각 특수문자마다 Escape Character</b>를 붙여주세요.",
+    "service_id": "DSC09111"
+  },
+  "DSC09112": {
+    "en": "For <b>Window</b>: set user/pwd to planuid.bat \"user\" \"pwd\"",
+    "ja": "<b>Windows</b>の場合：planuid.bat \"user\" \"pwd\"としてuser / pwdを設定します。",
+    "ko": "<b>Window</b>인 경우 : planuid.bat \"user\" \"pwd\"로 user/pwd를 설정",
+    "service_id": "DSC09112"
+  },
+  "DSC09113": {
+    "en": "For <b>Linux</b>: Set user/pwd to ./planuid.sh user pwd",
+    "ja": "<b> Linux </b>の場合：./planuid.sh user pwdとしてuser / pwdを設定します。",
+    "ko": "<b>Linux</b>인 경우 : ./planuid.sh user pwd로 user/pwd를 설정",
+    "service_id": "DSC09113"
+  },
+  "TTL09114": {
+    "en": "Inventory map settings",
+    "ja": "インベントリマップの設定",
+    "ko": "인벤토리 맵 설정",
+    "service_id": "TTL09114"
+  },
+  "ITM09115": {
+    "en": "Display no primary group",
+    "ja": "一次グループなし表示",
+    "ko": "1차 그룹 없음 표시",
+    "service_id": "ITM09115"
+  },
+  "ITM09116": {
+    "en": "Display the metric area at the bottom of group",
+    "ja": "グループ下段メトリック領域の表示",
+    "ko": "그룹 하단 메트릭 영역 표시",
+    "service_id": "ITM09116"
+  },
+  "ITM09117": {
+    "en": "Displayed item",
+    "ja": "表示項目",
+    "ko": "표시 항목",
+    "service_id": "ITM09117"
+  },
+  "DSC09118": {
+    "en": "Because there is no content for the classification criteria, no item appears.",
+    "ja": "その分類基準で定義された内容がないため、表示する項目はありません。",
+    "ko": "해당 분류기준으로 정의된 내용이 없어, 표시할 항목이 없습니다.",
+    "service_id": "DSC09118"
+  },
+  "DSC09119": {
+    "en": "Enable \"Display no primary group\" or select another classification criteria.",
+    "ja": "1次グループなし表示設定を有効にするか、他の分類基準を選択してください。",
+    "ko": "1차 그룹 없음 표시 설정 활성화 또는 다른 분류 기준을 선택해 주세요.",
+    "service_id": "DSC09119"
+  },
+  "DSC09120": {
+    "en": "<b>Account Requirements:</b> The installation must be performed by an account that is either included in sudoers or has root privileges.",
+    "ja": "<b>必要事項 :</b> sudoerに入っているアカウントまたは、rootでインストールする必要があります。",
+    "ko": "<b>계정 요구사항:</b> 계정이 sudoer에 포함되어 있거나 root 계정으로 설치를 진행할 수 있습니다.",
+    "service_id": "DSC09120"
+  },
+  "TTL09121": {
+    "en": "Real times by Java area",
+    "ja": "Java領域別リアルタイム",
+    "ko": "자바 영역별 실시간",
+    "service_id": "TTL09121"
+  },
+  "DSC09122": {
+    "en": "Icon label",
+    "ja": "アイコンラベル",
+    "ko": "아이콘 라벨",
+    "service_id": "DSC09122"
+  },
+  "ITM09123": {
+    "en": "No grouping",
+    "ja": "グループ化なし",
+    "ko": "그룹화 없음",
+    "service_id": "ITM09123"
+  },
+  "ITM09124": {
+    "en": "Select grouping",
+    "ja": "グループ化の選択",
+    "ko": "그룹화 선택",
+    "service_id": "ITM09124"
+  },
+  "ITM09125": {
+    "en": "Error type",
+    "ja": "エラータイプ",
+    "ko": "에러 타입",
+    "service_id": "ITM09125"
+  },
+  "TLT09126": {
+    "en": "Up to <b>{count} items</b> are displayed.",
+    "ja": "<b>最大{count}件</b>まで表示されます。",
+    "ko": "<b>최대 {count}건</b>까지 표시됩니다.",
+    "service_id": "TLT09126"
+  },
+  "TLT09127": {
+    "en": "This feature groups data based on specific criteria and determine whether to display it or not.",
+    "ja": "データを特定の基準に従ってまとめ、必要に応じて表示するかどうかを決定する機能です。",
+    "ko": "데이터를 특정 기준에 따라 묶고 필요 시 표시 여부를 결정할 수 있는 기능입니다.",
+    "service_id": "TLT09127"
+  },
+  "TTL09128": {
+    "en": "Grouping filter",
+    "ja": "グループ化フィルタ",
+    "ko": "그룹화 필터",
+    "service_id": "TTL09128"
+  },
+  "ITM09129": {
+    "en": "Namespace/Host",
+    "ja": "名前空間/ホスト",
+    "ko": "네임스페이스 / 호스트",
+    "service_id": "ITM09129"
+  },
+  "NTC09130": {
+    "en": "Device addition was successful!",
+    "ja": "デバイスの追加に成功しました。",
+    "ko": "디바이스 추가에 성공하였습니다.",
+    "service_id": "NTC09130"
+  },
+  "NTC09131": {
+    "en": "Device addition failed!",
+    "ja": "デバイスの追加に失敗しました。",
+    "ko": "디바이스 추가에 실패하였습니다.",
+    "service_id": "NTC09131"
+  },
+  "NTC09132": {
+    "en": "Enter the host.",
+    "ja": "ホストを入力してください",
+    "ko": "호스트를 입력해주세요",
+    "service_id": "NTC09132"
   },
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
-    "": "",
+    "": "#VALUE!",
     "service_id": "#N/A"
   },
   "freetrial": {
@@ -54838,10 +55336,15 @@
     "ja": "URLリスト",
     "ko": "URL 목록"
   },
-  "side_urlStatusDashboard": {
-    "en": "URL Status",
-    "ja": "URL Status",
-    "ko": "URL 현황 대시보드"
+  "side_urlCategoryStatusDashboard": {
+    "en": "URL Category Status",
+    "ja": "URL Category Status",
+    "ko": "URL 카테고리 현황 대시보드"
+  },
+  "side_urlTagStatusDashboard": {
+    "en": "URL Issue Status",
+    "ja": "URL Issue Status",
+    "ko": "URL 이슈 현황 대시보드"
   },
   "side_urlErrorStatusDashboard": {
     "en": "Error URL Status",
@@ -54853,10 +55356,20 @@
     "ja": "URL List Management",
     "ko": "URL 목록 관리"
   },
-  "side_urlClassificationManagement": {
-    "en": "Monitoring Classification Management",
-    "ja": "Monitoring Classification Management",
-    "ko": "모니터링 분류 관리"
+  "side_urlCategoryManagement": {
+    "en": "Category Management",
+    "ja": "Category Management",
+    "ko": "카테고리 관리"
+  },
+  "side_urlTagManagement": {
+    "en": "Issue Management",
+    "ja": "Issue Management",
+    "ko": "이슈 관리"
+  },
+  "side_urlCustomColumnsManagement": {
+    "en": "Custom Field Management",
+    "ja": "Custom Field Management",
+    "ko": "커스텀 필드 관리"
   },
   "side_urlGridLayout": {
     "en": "URL Grid Layout",
@@ -55468,6 +55981,11 @@
     "ja": "リソース負荷統計",
     "ko": "리소스 로드 통계"
   },
+  "side_errorLoadStatistics": {
+    "en": "Error Load Statistics",
+    "ja": "エラー負荷統計",
+    "ko": "에러 로드 통계"
+  },
   "side_npmDashboard": {
     "en": "Network Topology",
     "ja": "ネットワークトポロジ",
@@ -55608,6 +56126,11 @@
     "ja": "リソース状況",
     "ko": "리소스 현황"
   },
+  "side_deviceInventory": {
+    "en": "Device Inventory",
+    "ja": "デバイスインベントリ",
+    "ko": "디바이스 인벤토리"
+  },
   "side_deviceManagement": {
     "en": "Device Management",
     "ja": "デバイス管理",
@@ -55692,5 +56215,15 @@
     "en": "kube-scheduler Dashboard",
     "ja": "kube-scheduler ダッシュボード",
     "ko": "kube-scheduler 대시보드"
+  },
+  "side_deviceSetting": {
+    "en": "Device Setting",
+    "ja": "デバイス設定",
+    "ko": "디바이스 설정"
+  },
+  "side_kubeGpuDashboard": {
+    "en": "GPU Dashboard",
+    "ja": "GPU ダッシュボード",
+    "ko": "GPU 대시보드"
   }
 }
