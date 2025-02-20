@@ -158,7 +158,7 @@
   "account_invalid_email": {
     "en": "Invalid email.",
     "ja": "Eメール形式として入力ください。",
-    "ko": "잘못된 Email 형식 입니다.",
+    "ko": "잘못된 Email 형식입니다.",
     "service_id": "_00042"
   },
   "account_empty_value": {
@@ -39214,19 +39214,19 @@
   "NTC06632": {
     "en": "Invalid password format. (You cannot set a password with a continuous layout keys.)",
     "ja": "無効なパスワード形式です。 連続したキーボード配列でパスワードを設定できません。",
-    "ko": "잘못된 비밀번호 형식 입니다. (연속된 키보드 배열로 비밀번호를 설정할 수 없습니다.)",
+    "ko": "잘못된 비밀번호 형식입니다. (연속된 키보드 배열로 비밀번호를 설정할 수 없습니다.)",
     "service_id": "NTC06632"
   },
   "NTC06633": {
     "en": "Invalid password format. (You cannot set a password with consecutive numbers.)",
     "ja": "無効なパスワード形式です。 連続した数字でパスワードを設定することはできません。",
-    "ko": "잘못된 비밀번호 형식 입니다. (연속된 숫자로 비밀번호를 설정할 수 없습니다.)",
+    "ko": "잘못된 비밀번호 형식입니다. (연속된 숫자로 비밀번호를 설정할 수 없습니다.)",
     "service_id": "NTC06633"
   },
   "NTC06634": {
     "en": "Invalid password format. (You cannot set a password with consecutive alphabetic characters.)",
     "ja": "無効なパスワード形式です。 連続アルファベットでパスワードを設定することはできません。",
-    "ko": "잘못된 비밀번호 형식 입니다. (연속된 알파벳으로 비밀번호를 설정할 수 없습니다.)",
+    "ko": "잘못된 비밀번호 형식입니다. (연속된 알파벳으로 비밀번호를 설정할 수 없습니다.)",
     "service_id": "NTC06634"
   },
   "TLT06635": {
@@ -45747,7 +45747,7 @@
   },
   "DSC07739": {
     "en": "Click Run GC to clean up invalid memory (Garbage).",
-    "ja": "無効なメモリ(Garbage)をクリーンアップするには、[Run GC]ボタンをクリックします。",
+    "ja": "無効なメモリ(Garbage)をクリーンアップするには、「GC実行」をクリックします。",
     "ko": "GC 실행 버튼을 클릭하면 유효하지 않은 메모리 (Garbage)를 정리합니다.",
     "service_id": "DSC07739"
   },
@@ -46328,7 +46328,7 @@
     "service_id": "DSC07838"
   },
   "DSC07839": {
-    "en": "There seems to be a problem retrieving the container image. Check if there are any problems with the image and imagePullPolicy defined in the container.",
+    "en": "There seems to be a problem retrieving the container image. Make sure there are no problems with the image and imagePullPolicy defined in the container.",
     "ja": "コンテナイメージの取得で問題が発生しました。コンテナで定義されているimageとimagePullPolicyを確認してください。",
     "ko": "컨테이너 이미지를 가져오는데 문제가 있는 것 같습니다. 컨테이너에 정의된 image와 imagePullPolicy에 문제가 없는지 확인하세요.",
     "service_id": "DSC07839"
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java Agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/>The generated heap dump file can be checked in the {agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/>The generated heap dump file can be checked in the {agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48530,7 +48530,7 @@
     "service_id": "TTL08206"
   },
   "TTL08207": {
-    "en": "Number of events",
+    "en": "Number of events occurring",
     "ja": "イベント発生件数",
     "ko": "이벤트 발생 건수",
     "service_id": "TTL08207"
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -49593,7 +49593,7 @@
   },
   "ITM08384": {
     "en": "Stable (recommended) ",
-    "ja": "Stable（推奨） ",
+    "ja": "Stable（推奨）",
     "ko": "Stable(권장) ",
     "service_id": "ITM08384"
   },
@@ -50168,7 +50168,7 @@
     "service_id": "TTL08479"
   },
   "TTL08480": {
-    "en": "Script list",
+    "en": "Script List",
     "ja": "スクリプトリスト",
     "ko": "스크립트 목록",
     "service_id": "TTL08480"
@@ -50811,7 +50811,7 @@
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
+    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -52395,7 +52395,7 @@
   },
   "TLT08854": {
     "en": "Bind variable is not in the correct format. Paste the value in the format {\"bind\": [\"example\"]}.",
-    "ja": "バインド変数が正しい形式ではありません。 {\"bind\": [\"example\"]} 形式の値を貼り付けます。",
+    "ja": "バインド変数が正しい形式ではありません。",
     "ko": "바인드 변수가 올바른 형식이 아닙니다. {\"bind\": [\"example\"]} 형식의 값을 붙여 넣으세요.",
     "service_id": "TLT08854"
   },
@@ -52881,7 +52881,7 @@
   },
   "DSC08937": {
     "en": "The average {resource} usage is very high compared to <b><code>limit</code>, possibly causing resource shortage or performance degradation. <b>Adjust the <code>limit</code> setting or increase the resources.</b>",
-    "ja": "平均{resource}使用率は<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。 <b> <code>limit</code>設定を調整するか、リソースを増やしてください。</b>",
+    "ja": "平均{resource}使用率が<b> <code>limit</code>と比較して非常に高いため、リソース不足またはパフォーマンスが低下する可能性</b>があります。<b> <code>limit</code>",
     "ko": "평균 {resource} 사용량이 <b><code>limit</code> 대비 매우 높아 자원 부족 또는 성능 저하 가능성</b>이 있습니다. <b><code>limit</code> 설정을 조정하거나 자원을 늘리세요.</b>",
     "service_id": "DSC08937"
   },
@@ -53361,7 +53361,7 @@
   },
   "BTN09018": {
     "en": "Add OID",
-    "ja": "OIDを追加",
+    "ja": "OIDの追加",
     "ko": "OID 추가",
     "service_id": "BTN09018"
   },
@@ -53414,7 +53414,7 @@
     "service_id": "DSC09028"
   },
   "DSC09029": {
-    "en": "Easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
+    "en": "You can easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
     "ja": "サーバーの指標を<b style=\"color:unset\">簡単に検索</b>して、性能の問題を迅速に把握できます。",
     "ko": "원하는 서버의 특정 <b style=\"color:unset\">지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
@@ -53552,7 +53552,7 @@
     "service_id": "DSC09053"
   },
   "DSC09054": {
-    "en": "Install the agent from the <b>Management > Install Agent</b> page.",
+    "en": "Install the agent from the <b>Manage > Install Agent</b> page.",
     "ja": "<b>管理 >エージェントのインストール</b>ページでエージェントをインストールします。",
     "ko": "<b>관리 > 에이전트 설치</b> 페이지에서 에이전트를 설치하세요.",
     "service_id": "DSC09054"
@@ -53660,63 +53660,63 @@
     "service_id": "DSC09071"
   },
   "TLT09072": {
-    "en": "GPU utilization for each DCGM_FI_DEV_GPU_UTIL device,",
-    "ja": "DCGM_FI_DEV_GPU_UTIL デバイス固有のGPU使用率",
-    "ko": "DCGM_FI_DEV_GPU_UTIL 디바이스별 GPU 사용률,",
+    "en": "DCGM_FI_DEV_GPU_UTIL: GPU utilization for each device",
+    "ja": "DCGM_FI_DEV_GPU_UTIL: デバイス固有のGPU使用率",
+    "ko": "DCGM_FI_DEV_GPU_UTIL: 디바이스별 GPU 사용률",
     "service_id": "TLT09072"
   },
   "TLT09073": {
-    "en": "GPU memory clock speed\\nDCGM_FI_DEV_MEM_CLOCK,",
-    "ja": "GPUメモリクロック速度\\nDCGM_FI_DEV_MEM_CLOCK",
-    "ko": "GPU 메모리 클럭 속도\\nDCGM_FI_DEV_MEM_CLOCK,",
+    "en": "DCGM_FI_DEV_MEM_CLOCK: GPU memory clock speed",
+    "ja": "DCGM_FI_DEV_MEM_CLOCK: GPUメモリクロック速度",
+    "ko": "DCGM_FI_DEV_MEM_CLOCK: GPU 메모리 클럭 속도",
     "service_id": "TLT09073"
   },
   "TLT09074": {
-    "en": "DCGM_FI_DEV_FB_USED\\nFrame buffer memory capacity in use\\n,",
-    "ja": "DCGM_FI_DEV_FB_USED\\n現在使用中のフレームバッファメモリ容量\\n",
-    "ko": "DCGM_FI_DEV_FB_USED\\n현재 사용 중인 프레임버퍼 메모리 용량\\n,",
+    "en": "DCGM_FI_DEV_FB_USED: Frame buffer memory capacity in use",
+    "ja": "DCGM_FI_DEV_FB_USED: 現在使用中のフレームバッファメモリ容量",
+    "ko": "DCGM_FI_DEV_FB_USED: 현재 사용 중인 프레임버퍼 메모리 용량",
     "service_id": "TLT09074"
   },
   "TLT09075": {
-    "en": "DCGM_FI_DEV_THERMAL_VIOLATION\\nTime when the GPU's performance was limited due to thermal limitation,",
-    "ja": "DCGM_FI_DEV_THERMAL_VIOLATION\\nGPUが温度制限のため性能が制限された時間",
-    "ko": "DCGM_FI_DEV_THERMAL_VIOLATION\\nGPU가 온도(Thermal) 제한으로 인해 성능이 제한된 시간,",
+    "en": "DCGM_FI_DEV_THERMAL_VIOLATION: Time when the GPU's performance was limited due to thermal limitation",
+    "ja": "DCGM_FI_DEV_THERMAL_VIOLATION: GPUが温度制限のため性能が制限された時間",
+    "ko": "DCGM_FI_DEV_THERMAL_VIOLATION: GPU가 온도(Thermal) 제한으로 인해 성능이 제한된 시간",
     "service_id": "TLT09075"
   },
   "TLT09076": {
-    "en": "DCGM_FI_DEV_GPU_TEMP\\nGPU temperature for each device,",
-    "ja": "DCGM_FI_DEV_GPU_TEMP\\nデバイス別GPU温度",
-    "ko": "DCGM_FI_DEV_GPU_TEMP\\n디바이스별 GPU 온도,",
+    "en": "DCGM_FI_DEV_GPU_TEMP: GPU temperature for each device",
+    "ja": "DCGM_FI_DEV_GPU_TEMP: デバイス別GPU温度",
+    "ko": "DCGM_FI_DEV_GPU_TEMP: 디바이스별 GPU 온도",
     "service_id": "TLT09076"
   },
   "TLT09077": {
-    "en": "DCGM_FI_DEV_FB_FREE\\nAvailable frame buffer memory capacity,",
-    "ja": "DCGM_FI_DEV_FB_FREE\\n使用可能なフレームバッファメモリ容量",
-    "ko": "DCGM_FI_DEV_FB_FREE\\n사용 가능한 프레임버퍼 메모리 용량,",
+    "en": "DCGM_FI_DEV_FB_FREE: Available frame buffer memory capacity",
+    "ja": "DCGM_FI_DEV_FB_FREE: 使用可能なフレームバッファメモリ容量",
+    "ko": "DCGM_FI_DEV_FB_FREE: 사용 가능한 프레임버퍼 메모리 용량",
     "service_id": "TLT09077"
   },
   "TLT09078": {
-    "en": "DCGM_FI_DEV_MEM_COPY_UTIL\\nUtilization of GPU's memory copy,",
-    "ja": "DCGM_FI_DEV_MEM_COPY_UTIL\\nGPUのメモリコピー操作（Memory Copy）の使用率",
-    "ko": "DCGM_FI_DEV_MEM_COPY_UTIL\\nGPU의 메모리 복사 작업(Memory Copy)의 사용률,",
+    "en": "DCGM_FI_DEV_MEM_COPY_UTIL: Utilization of GPU's memory copy",
+    "ja": "DCGM_FI_DEV_MEM_COPY_UTIL: GPUのメモリコピー操作（Memory Copy）の使用率",
+    "ko": "DCGM_FI_DEV_MEM_COPY_UTIL: GPU의 메모리 복사 작업(Memory Copy)의 사용률",
     "service_id": "TLT09078"
   },
   "TLT09079": {
-    "en": "DCGM_FI_DEV_SM_CLOCK\\nDevice GPU streaming multi-processor clock frequency,",
-    "ja": "DCGM_FI_DEV_SM_CLOCK\\nデバイスGPUストリーミングマルチプロセッサクロック周波数",
-    "ko": "DCGM_FI_DEV_SM_CLOCK\\n디바이스 GPU 스트리밍 멀티프로세서 클럭 주파수,",
+    "en": "DCGM_FI_DEV_SM_CLOCK: Device GPU streaming multi-processor clock frequency",
+    "ja": "DCGM_FI_DEV_SM_CLOCK: デバイスGPUストリーミングマルチプロセッサクロック周波数",
+    "ko": "DCGM_FI_DEV_SM_CLOCK: 디바이스 GPU 스트리밍 멀티프로세서 클럭 주파수",
     "service_id": "TLT09079"
   },
   "TLT09080": {
-    "en": "DCGM_FI_DEV_XID_ERRORS\\n\\nXID (Execution ID) error code occurred from GPU\\n\\n0 → No GPU error (normal)\\n1 or more → Occurrence of GPU errors of a specific type,",
-    "ja": "DCGM_FI_DEV_XID_ERRORS\\n\\nGPUで発生したXID(Execution ID)エラーコード\\n\\n0 → GPU エラーなし(正常)\\n1 以上 → 特定タイプのGPU エラーが発生",
-    "ko": "DCGM_FI_DEV_XID_ERRORS\\n\\nGPU에서 발생한 XID(Execution ID) 에러 코드\\n\\n0 → GPU 오류 없음 (정상)\\n1 이상 → 특정 유형의 GPU 오류 발생,",
+    "en": "DCGM_FI_DEV_XID_ERRORS: XID (Execution ID) error code occurred from GPU. 0 → No GPU error (normal), 1 or more → Occurrence of GPU errors of a specific type",
+    "ja": "DCGM_FI_DEV_XID_ERRORS: GPUで発生したXID(Execution ID)エラーコード. 0 → GPU エラーなし(正常), 1 以上 → 特定タイプのGPU エラーが発生",
+    "ko": "DCGM_FI_DEV_XID_ERRORS: GPU에서 발생한 XID(Execution ID) 에러 코드. 0일 경우 GPU 오류 없음(정상), 1 이상일 경우 특정 유형의 GPU 오류 발생을 의미",
     "service_id": "TLT09080"
   },
   "TLT09081": {
-    "en": "DCGM_FI_DEV_POWER_VIOLATION\\nCumulative time when the GPU performance is limited due to power constraints",
-    "ja": "DCGM_FI_DEV_POWER_VIOLATION\\nGPUがパワー(Power)制限のため性能が制限された時間(累積)",
-    "ko": "DCGM_FI_DEV_POWER_VIOLATION\\nGPU가 전력(Power) 제한으로 인해 성능이 제한된 시간(누적)",
+    "en": "DCGM_FI_DEV_POWER_VIOLATION: Cumulative time when the GPU performance is limited due to power constraints",
+    "ja": "DCGM_FI_DEV_POWER_VIOLATION: GPUがパワー(Power)制限のため性能が制限された時間(累積)",
+    "ko": "DCGM_FI_DEV_POWER_VIOLATION: GPU가 전력(Power) 제한으로 인해 성능이 제한된 시간(누적)",
     "service_id": "TLT09081"
   },
   "DSC09082": {
@@ -53906,9 +53906,9 @@
     "service_id": "DSC09112"
   },
   "DSC09113": {
-    "en": "For <b>Linux</b>: Set user/pwd to ./planuid.sh \"user\" \"pwd\"",
-    "ja": "<b> Linux </b>の場合：./planuid.sh \"user\" \"pwd\"としてuser / pwdを設定します。",
-    "ko": "<b>Linux</b>인 경우 : ./planuid.sh \"user\" \"pwd\"로 user/pwd를 설정",
+    "en": "For <b>Linux</b>: Set user/pwd to ./planuid.sh user pwd",
+    "ja": "<b> Linux </b>の場合：./planuid.sh user pwdとしてuser / pwdを設定します。",
+    "ko": "<b>Linux</b>인 경우 : ./planuid.sh user pwd로 user/pwd를 설정",
     "service_id": "DSC09113"
   },
   "TTL09114": {
@@ -53920,7 +53920,7 @@
   "ITM09115": {
     "en": "Display no primary group",
     "ja": "一次グループなし表示",
-    "ko": "1차 그룹없음 표시",
+    "ko": "1차 그룹 없음 표시",
     "service_id": "ITM09115"
   },
   "ITM09116": {
@@ -53943,8 +53943,8 @@
   },
   "DSC09119": {
     "en": "Enable \"Display no primary group\" or select another classification criteria.",
-    "ja": "1次グループなし表示設定を有効にするか、別の分類基準を選択してください。",
-    "ko": "1차 그룹없음 표시 설정을 활성화 하시거나 다른 분류 기준을 선택해 주세요.",
+    "ja": "1次グループなし表示設定を有効にするか、他の分類基準を選択してください。",
+    "ko": "1차 그룹 없음 표시 설정 활성화 또는 다른 분류 기준을 선택해 주세요.",
     "service_id": "DSC09119"
   },
   "DSC09120": {
@@ -53982,6 +53982,48 @@
     "ja": "エラータイプ",
     "ko": "에러 타입",
     "service_id": "ITM09125"
+  },
+  "TLT09126": {
+    "en": "Up to <b>{count} items</b> are displayed.",
+    "ja": "<b>最大{count}件</b>まで表示されます。",
+    "ko": "<b>최대 {count}건</b>까지 표시됩니다.",
+    "service_id": "TLT09126"
+  },
+  "TLT09127": {
+    "en": "This feature groups data based on specific criteria and determine whether to display it or not.",
+    "ja": "データを特定の基準に従ってまとめ、必要に応じて表示するかどうかを決定する機能です。",
+    "ko": "데이터를 특정 기준에 따라 묶고 필요 시 표시 여부를 결정할 수 있는 기능입니다.",
+    "service_id": "TLT09127"
+  },
+  "TTL09128": {
+    "en": "Grouping filter",
+    "ja": "グループ化フィルタ",
+    "ko": "그룹화 필터",
+    "service_id": "TTL09128"
+  },
+  "ITM09129": {
+    "en": "Namespace/Host",
+    "ja": "名前空間/ホスト",
+    "ko": "네임스페이스 / 호스트",
+    "service_id": "ITM09129"
+  },
+  "NTC09130": {
+    "en": "Device addition was successful!",
+    "ja": "デバイスの追加に成功しました。",
+    "ko": "디바이스 추가에 성공하였습니다.",
+    "service_id": "NTC09130"
+  },
+  "NTC09131": {
+    "en": "Device addition failed!",
+    "ja": "デバイスの追加に失敗しました。",
+    "ko": "디바이스 추가에 실패하였습니다.",
+    "service_id": "NTC09131"
+  },
+  "NTC09132": {
+    "en": "Enter the host.",
+    "ja": "ホストを入力してください",
+    "ko": "호스트를 입력해주세요",
+    "service_id": "NTC09132"
   },
   "": {
     "en": "#VALUE!",
@@ -55939,6 +55981,11 @@
     "ja": "リソース負荷統計",
     "ko": "리소스 로드 통계"
   },
+  "side_errorLoadStatistics": {
+    "en": "Error Load Statistics",
+    "ja": "エラー負荷統計",
+    "ko": "에러 로드 통계"
+  },
   "side_npmDashboard": {
     "en": "Network Topology",
     "ja": "ネットワークトポロジ",
@@ -56078,6 +56125,11 @@
     "en": "Resource Status",
     "ja": "リソース状況",
     "ko": "리소스 현황"
+  },
+  "side_deviceInventory": {
+    "en": "Device Inventory",
+    "ja": "デバイスインベントリ",
+    "ko": "디바이스 인벤토리"
   },
   "side_deviceManagement": {
     "en": "Device Management",
