@@ -6413,7 +6413,8 @@ const sidebars = {
           items: [
             'browser/pageload-stat',
             'browser/ipload-stat',
-            'browser/resourceload-stat'
+            'browser/resourceload-stat',
+            'browser/errorload-stat'
           ]
         },
         {
