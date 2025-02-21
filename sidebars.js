@@ -4797,9 +4797,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_3_8',
+                  id: 'release-notes/db/dbx-2_4_0',
                   className: 'new',
                 },
+                'release-notes/db/dbx-2_3_9',
+                'release-notes/db/dbx-2_3_8',
                 'release-notes/db/dbx-2_3_7',
                 'release-notes/db/dbx-2_3_6',
                 'release-notes/db/dbx-2_3_5',
