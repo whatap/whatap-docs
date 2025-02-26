@@ -22,6 +22,152 @@
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
 <li>
+<code class="changelog-overview">Application</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">애플리케이션 대시보드</span> 메뉴의 <span class="uitext">동시접속 사용자</span> 위젯 가이드에 WhaTap Docs 링크 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">멀티 트랜잭션 추적</span> 메뉴의 프로젝트 선택 필터에서 현재 프로젝트를 항상 최상단에 노출하도록 수정</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">인스턴스 성능 관리</span> 메뉴 최초 진입 시 선택된 에이전트 정보가 있을 경우 해당 에이전트 위치로 자동 스크롤 기능 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Server</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴에서 그룹 <span class="uitext">상세 보기</span> 화면 내 서버 전체 선택 및 전체 해제 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴에서 숫자 타입 값을 갖는 필터 키 선택 시 조건에 대소 비교 연산자 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴에서 <span class="uitext">1차 그룹 없음 표시</span> 옵션 추가 (기본 활성화)</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴에서 <span class="uitext">그룹 하단 메트릭 영역 표시</span> 옵션 추가 (기본 활성화)</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴에서 그룹 패널 아이콘에 표시할 <span class="uitext">라벨</span> 선택 옵션 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴에서 그룹 요약 패널과 상세 보기에서 현재 시각 기준 24시간 내의 진행 중인 이벤트를 조회할 수 있는 <span class="uitext">진행 중 이벤트 현황</span> 탭 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">서버 인벤토리 맵</span> 메뉴의 그룹 상세 보기에서 다음 기능 추가<!-- -->
+<ul>
+<li><span class="uitext">파일 시스템 사용 정보</span> 탭의 테이블에 <span class="uitext">Free(GB)</span> 컬럼 추가</li>
+<li><span class="uitext">파일 시스템 사용 정보</span> 탭의 필터에 숫자 타입 값을 갖는 컬럼 키 추가</li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴의 상단에 <em><strong>Disk Total</strong></em> 항목 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Kubernetes</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">오브젝트 매니페스트</span> 메뉴에서 Custom Resource Definition 오브젝트 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 추가 기능 적용 단계에 Custom Resource 관련 옵션 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 kube-scheduler 기능 활성화 안내 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">Pod 시작 분석</span> 메뉴에서 시간 선택 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> 노드 할당 가능한 리소스에서 노드에 배치된 모든 컨테이너의 요청 리소스의 합산을 뺀 값인 <span class="uitext">AvailableRequestCpu</span> 및 <span class="uitext">AvailableRequestMemory</span> 지표 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span> 메뉴에 컨테이너 성능 지표 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">클러스터</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴에서 “Node is not ready” 이벤트에 대한 <span class="uitext">Suggestions</span> 제공</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">Out Of Memory Killed 컨테이너</span> 메뉴에서 <em><strong>microOname</strong></em> 컬럼 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너</span>
+&gt; <span class="uitext">컨테이너 이미지</span> 메뉴에서 Image 컬럼 추가</li>
+<li><code class="Feature" type="1">Feature</code> 다음 메뉴의 상세 화면에서 요약 분석 제공<!-- -->
+<ul>
+<li><span class="uitext">워크로드</span> &gt; <span class="uitext">컨테이너 애플리케이션 목록</span></li>
+<li><span class="uitext">클러스터</span> &gt; <span class="uitext">노드 상세</span></li>
+<li><span class="uitext">클러스터</span> &gt; <span class="uitext">노드 목록</span></li>
+<li><span class="uitext">클러스터</span> &gt; <span class="uitext">Ingress 목록</span></li>
+<li><span class="uitext">클러스터</span> &gt; <span class="uitext">노드 타임라인</span></li>
+</ul>
+</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">사이트맵</span> &gt; <span class="uitext">대시보드</span> &gt; <span class="uitext">GPU 대시보드</span> 메뉴 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<br>
+<code class="changelog-overview2">공통</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">데이터베이스 파라미터</span> 메뉴에서 CSV 다운로드 추가 및 Key 값 기준 결과 내 검색 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">락 트리</span> 메뉴에서 1분 단위 차트 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 Alarm State 위젯 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 인스턴스 선택자에 인스턴스의 상태 표시 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 목록</span> 메뉴에서 에이전트 이름 클릭 시 <span class="uitext">인스턴스 모니터링</span> 메뉴로 이동하는 링크 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<br>
+<code class="changelog-overview2">PostgreSQL, Oracle, MySQL, Sql Server, Tibero, Cubrid, Altibase</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">SQL 상세</span> 팝아웃 창에 디폴트 플랜 조회 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 운영체제별 디폴트 플랜 조회 기능 사용 방법 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<br>
+<code class="changelog-overview2">Oracle, Oracle Pro, Altibase</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">테이블스페이스 사이즈</span> 메뉴에 기능 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<br>
+<code class="changelog-overview2">MySQL, PostgreSQL, SQL Server, MongoDB</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">데이터베이스 사이즈</span> 메뉴에서 XOS 설정 시 디스크 사용량 확인할 수 있는 테이블 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<br>
+<code class="changelog-overview2">Oracle, Oracle Pro</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">통계/보고서</span> &gt; <span class="uitext">테이블스페이스 사이즈</span> 메뉴에서 세그먼트 사이즈(Top 50) 드로어 내 오브젝트 상세 조회 기능 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<br>
+<code class="changelog-overview2">PostgreSQL</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">락 트리</span> 메뉴에서 xact_runtime 컬럼을 runtime 뒤에, xact_start 컬럼을 마지막에 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Azure</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> 클라우드 <span class="uitext">Flex 보드</span> 템플릿에 Azure 템플릿 3개 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Browser</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">통계</span> &gt; <span class="uitext">에러 로드 통계</span> 메뉴 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Log</code>
+<code class="changelog-date">2025년 02월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_14_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.14.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">로그</span> &gt; <span class="uitext">로그 트렌드</span> 메뉴에서 차트 드래그 기능 및 차트 영역 패널 사이즈 조절 기능 추가</li>
+</ul>
+</li>
+<li>
 <code class="changelog-overview">Network Management</code>
 <code class="changelog-date">2025년 01월 23일</code>
 <code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/nms/introduction"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Reference​</a></code>
