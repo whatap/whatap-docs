@@ -6911,6 +6911,14 @@
     "width": 1200,
     "height": 493
   },
+  "db-database-size-top50-en.png": {
+    "width": 1200,
+    "height": 638
+  },
+  "db-database-size-top50-ja.png": {
+    "width": 1200,
+    "height": 638
+  },
   "db-database-size-top50-mongodb-en.png": {
     "width": 1200,
     "height": 907
@@ -6958,6 +6966,10 @@
   "db-database-size-top50-postgresql.png": {
     "width": 1200,
     "height": 1060
+  },
+  "db-database-size-top50.png": {
+    "width": 1200,
+    "height": 630
   },
   "db-database-sql-stat-altibase-en.png": {
     "width": 1200,
@@ -9453,15 +9465,15 @@
   },
   "db-stat-table-space-size-top50-oracle-pro-en.png": {
     "width": 1200,
-    "height": 733
+    "height": 670
   },
   "db-stat-table-space-size-top50-oracle-pro-ja.png": {
     "width": 1200,
-    "height": 733
+    "height": 670
   },
   "db-stat-table-space-size-top50-oracle-pro.png": {
     "width": 1200,
-    "height": 733
+    "height": 670
   },
   "db-stat-table-space-tibero-en.png": {
     "width": 1200,
