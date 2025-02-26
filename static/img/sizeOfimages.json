@@ -4415,6 +4415,50 @@
     "width": 1091,
     "height": 527
   },
+  "browser-statistics-error-stat-en.png": {
+    "width": 1200,
+    "height": 657
+  },
+  "browser-statistics-error-stat-gr-en.png": {
+    "width": 1200,
+    "height": 160
+  },
+  "browser-statistics-error-stat-gr-ja.png": {
+    "width": 1200,
+    "height": 156
+  },
+  "browser-statistics-error-stat-gr-tb.png": {
+    "width": 1200,
+    "height": 234
+  },
+  "browser-statistics-error-stat-gr.png": {
+    "width": 1200,
+    "height": 159
+  },
+  "browser-statistics-error-stat-ja.png": {
+    "width": 1200,
+    "height": 660
+  },
+  "browser-statistics-error-stat-ungr-en.png": {
+    "width": 1200,
+    "height": 157
+  },
+  "browser-statistics-error-stat-ungr-ja.png": {
+    "width": 1200,
+    "height": 159
+  },
+  "browser-statistics-error-stat-ungr-tb.png": {
+    "width": 1200,
+    "height": 157
+  },
+  "browser-statistics-error-stat-ungr.png": {
+    "width": 1200,
+    "height": 159
+  },
+  "browser-statistics-error-stat.png": {
+    "width": 1200,
+    "height": 670
+  },
   "browser-statistics-ip-group-filter-en.png": {
     "width": 600,
     "height": 399
@@ -8171,6 +8215,26 @@
     "width": 1150,
     "height": 1417
   },
+  "db-lock-tree-1-min-lock-trends-5min.png": {
+    "width": 1200,
+    "height": 364
+  },
+  "db-lock-tree-1-min-lock-trends-5sec.png": {
+    "width": 1200,
+    "height": 375
+  },
+  "db-lock-tree-1-min-lock-trends1.png": {
+    "width": 1200,
+    "height": 153
+  },
+  "db-lock-tree-1-min-lock-trends2.png": {
+    "width": 1200,
+    "height": 489
+  },
+  "db-lock-tree-1-min-lock-trends3.png": {
+    "width": 1200,
+    "height": 386
+  },
   "db-locktree-cluster-chart-en.png": {
     "width": 1200,
     "height": 551
@@ -8285,11 +8349,11 @@
   },
   "db-locktress-basic-oracle-pro.png": {
     "width": 1200,
-    "height": 715
+    "height": 530
   },
   "db-locktress-basic-oracle.png": {
     "width": 1200,
-    "height": 648
+    "height": 530
   },
   "db-locktress-basic-postgresql-en.png": {
     "width": 1200,
@@ -12105,15 +12169,15 @@
   },
   "k8s-install-master-node-addition-en.png": {
     "width": 1200,
-    "height": 649
+    "height": 763
   },
   "k8s-install-master-node-addition-ja.png": {
     "width": 1200,
-    "height": 647
+    "height": 782
   },
   "k8s-install-master-node-addition.png": {
     "width": 1200,
-    "height": 631
+    "height": 765
   },
   "k8s-install-master-node-application-en.png": {
     "width": 1200,
@@ -12720,16 +12784,16 @@
     "height": 468
   },
   "k8s-pod-startup-analysis-en.png": {
-    "width": 1201,
-    "height": 751
+    "width": 1200,
+    "height": 667
   },
   "k8s-pod-startup-analysis-ja.png": {
-    "width": 1201,
-    "height": 751
+    "width": 1200,
+    "height": 670
   },
   "k8s-pod-startup-analysis.png": {
-    "width": 1201,
-    "height": 689
+    "width": 1200,
+    "height": 668
   },
   "k8s-pod-timeline-details-en.png": {
     "width": 1200,
@@ -12929,11 +12993,11 @@
   },
   "k8s-resource-node-list-compare-en.png": {
     "width": 1200,
-    "height": 846
+    "height": 671
   },
   "k8s-resource-node-list-compare-ja.png": {
-    "width": 1201,
-    "height": 845
+    "width": 1200,
+    "height": 670
   },
   "k8s-resource-node-list-compare-time-en.png": {
     "width": 1200,
@@ -12949,7 +13013,7 @@
   },
   "k8s-resource-node-list-compare.png": {
     "width": 1200,
-    "height": 848
+    "height": 668
   },
   "k8s-resource-node-list-m-en.png": {
     "width": 1200,
@@ -16895,6 +16959,50 @@
     "width": 1200,
     "height": 653
   },
+  "nms-conf-device-mng-add.png": {
+    "width": 800,
+    "height": 523
+  },
+  "nms-conf-device-mng.png": {
+    "width": 1200,
+    "height": 261
+  },
+  "nms-conf-oid-mng.png": {
+    "width": 1200,
+    "height": 537
+  },
+  "nms-conf-syslog-st.png": {
+    "width": 800,
+    "height": 465
+  },
+  "nms-conf-trap-st.png": {
+    "width": 800,
+    "height": 531
+  },
+  "nms-device-dashboard.png": {
+    "width": 2048,
+    "height": 1171
+  },
+  "nms-device-trend.png": {
+    "width": 1200,
+    "height": 674
+  },
+  "nms-install-agent-en.png": {
+    "width": 1200,
+    "height": 957
+  },
+  "nms-install-agent-ja.png": {
+    "width": 1200,
+    "height": 957
+  },
+  "nms-install-agent.png": {
+    "width": 1200,
+    "height": 958
+  },
+  "nms-interface-status.png": {
+    "width": 1200,
+    "height": 671
+  },
   "node-custom-name.png": {
     "width": 400,
     "height": 417
@@ -18565,7 +18673,7 @@
   },
   "server-inventory-map-group.png": {
     "width": 1200,
-    "height": 982
+    "height": 936
   },
   "server-inventory-map-ja.png": {
     "width": 1200,
@@ -19557,7 +19665,7 @@
   },
   "topology-control.png": {
     "width": 1200,
-    "height": 676
+    "height": 670
   },
   "topology-element-en.png": {
     "width": 1200,
@@ -19605,7 +19713,7 @@
   },
   "topology-select-node.png": {
     "width": 1200,
-    "height": 947
+    "height": 671
   },
   "trace-mtx-chart-timebar.png": {
     "width": 800,
