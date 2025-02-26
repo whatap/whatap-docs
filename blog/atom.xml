@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.whatap.io/whatap-docs/blog</id>
     <title>WhaTap Docs Blog</title>
-    <updated>2025-01-23T18:30:00.000Z</updated>
+    <updated>2025-02-26T18:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.whatap.io/whatap-docs/blog"/>
     <subtitle>WhaTap Docs Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[서비스 개요]]></title>
         <id>https://docs.whatap.io/whatap-docs/blog/overview</id>
         <link href="https://docs.whatap.io/whatap-docs/blog/overview"/>
-        <updated>2025-01-23T18:30:00.000Z</updated>
+        <updated>2025-02-26T18:30:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature Overview]]></summary>
         <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
@@ -2131,7 +2131,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="application"><code>Application</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#application" class="hash-link" aria-label="application에 대한 직접 링크" title="application에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-정식-출시"><code>Go</code> 정식 출시<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#go-%EC%A0%95%EC%8B%9D-%EC%B6%9C%EC%8B%9C" class="hash-link" aria-label="go-정식-출시에 대한 직접 링크" title="go-정식-출시에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-정�식-출시"><code>Go</code> 정식 출시<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#go-%EC%A0%95%EC%8B%9D-%EC%B6%9C%EC%8B%9C" class="hash-link" aria-label="go-정식-출시에 대한 직접 링크" title="go-정식-출시에 대한 직접 링크">​</a></h3>
 <p><code>Go</code> 애플리케이션 모니터링이 베타 버전 종료 후 <strong>정식</strong> 서비스를 시작했습니다. 와탭의 <code>Go</code> 애플리케이션 모니터링은 웹 프레임워크를 지원하고, Go Runtime 패키지의 정보를 지속적으로 수집합니다. 또한 MSA 환경에서 연계 추적을 통해 호출 관계를 수집합니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="공통-메뉴-개선">공통 메뉴 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EA%B3%B5%ED%86%B5-%EB%A9%94%EB%89%B4-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="공통 메뉴 개선에 대한 직접 링크" title="공통 메뉴 개선에 대한 직접 링크">​</a></h3>
 <p><span class="uitext">통계</span>와 <span class="uitext">인스턴스 성능 관리</span> 메뉴의 경우 각 메뉴의 탭 메뉴 구성을 개별 하위 메뉴로 구성하는 등 동선과 안정성 향상을 위한 개선 작업이 이루어졌습니다.</p>
@@ -2179,7 +2179,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="server"><code>Server</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#server" class="hash-link" aria-label="server에 대한 직접 링크" title="server에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%ED%99%95%EB%8C%80-%EF%BF%BD%EF%BF%BD%EB%B0%8F-%EC%84%A4%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-기반-운영체제-지원-확대-및-설치-개선">Unix 기반 운영체제 지원 확대 및 설치 개선<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#unix-%EA%B8%B0%EB%B0%98-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%A7%80%EC%9B%90-%ED%99%95%EB%8C%80-%EB%B0%8F-%EC%84%A4%EC%B9%98-%EA%B0%9C%EC%84%A0" class="hash-link" aria-label="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크" title="Unix 기반 운영체제 지원 확대 및 설치 개선에 대한 직접 링크">​</a></h3>
 <p>와탭은 <strong>Unix</strong> <code>AIX</code>, <code>Solaris</code>, <code>HP-UX</code> 설치 패키지를 제공합니다. 해당 패키지를 다운로드 받은 후 실행하는 것만으로 간단하게 설치할 수 있습니다.</p>
 <ul>
 <li>
@@ -2323,7 +2323,7 @@
 <p>또한 새롭게 추가된 <span class="uitext">쿠버네티스 에이전트 목록</span>에서는 마스터 및 노드 에이전트 설치 현황을 한 눈에 살펴볼 수 있습니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pod-시작-분석과-오브젝트-매니페스트">Pod 시작 분석과 오브젝트 매니페스트<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pod-%EC%8B%9C%EC%9E%91-%EB%B6%84%EC%84%9D%EA%B3%BC-%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8-%EB%A7%A4%EB%8B%88%ED%8E%98%EC%8A%A4%ED%8A%B8" class="hash-link" aria-label="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크" title="Pod 시작 분석과 오브젝트 매니페스트에 대한 직접 링크">​</a></h3>
 <p>기존의 Pod 초기화 성능 기능 및 마스터 메타 정보 기능을 개편해 각 <span class="uitext">Pod 시작 분석</span>과 <span class="uitext">오브젝트 매니페스트</span> 기능을 제공합니다. <span class="uitext">Pod 시작 분석</span>은 Pod별 시작 시점 정밀 분석을 통해 기동에 소요되는 시간과 리소스 사용량에 대한 상세 데이터를 제공합니다. <span class="uitext">오브젝트 매니페스트</span>는 오브젝트별 과거 조회 및 비교 기능이 추가되어 클러스터 내 변동 사항을 쉽게 추적할 수 있습니다.</p>
-<p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시��작 분석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="오브젝트 매니페스트 및 Pod 시작 분석 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-om-podinit-539a2c819836711bd67ccce0f57fdbf3.png" width="1010" height="771" class="img_ev3q"></p>
 <!-- -->
 <p>아울러 마스터 및 노드 에이전트 설치 시 기존 Yaml 파일 방식 외 운영 복잡도를 덜어줄 <strong>Helm</strong> 차트 설치 방식을 공식적으로 지원합니다.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pending-pod-현황">Pending Pod 현황<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#pending-pod-%ED%98%84%ED%99%A9" class="hash-link" aria-label="Pending Pod 현황에 대한 직접 링크" title="Pending Pod 현황에 대한 직접 링크">​</a></h3>
@@ -4436,7 +4436,7 @@
 <li><code class="Feature">Feature</code> 데이터베이스 알림도 원복 메세지를 받을 수 있도록 <code>uuid</code>, <code>statefulset</code> 추가</li>
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1620-2024년-02월-02일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_20">DBX v1.6.20</a></code> <code class="changelog-date">2024년 02월 02일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1620-2024%EB%85%84-02%EC%9B%94-02%EC%9D%BC" class="hash-link" aria-label="dbx-v1620-2024년-02월-02일에 대한 직접 링크" title="dbx-v1620-2024년-02월-02일에 대한 직접 링크">​</a></h4>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 ��링크">​</a></h5>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="공통-1">공통​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#%EA%B3%B5%ED%86%B5-1" class="hash-link" aria-label="공통​에 대한 직접 링크" title="공통​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 데이터베이스 알람 원복을 위한 stateful 추가</li>
 </ul>
@@ -4453,7 +4453,7 @@
 <ul>
 <li><code class="Feature">Feature</code> 이벤트 해소 알림 기능 추가</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직�접 링크" title="dbx-v1633-2024년-03월-13일에 대한 직접 링크">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="dbx-v1633-2024년-03월-13일"><code class="changelog-service"><a href="https://docs.whatap.io/whatap-docs/release-notes/db/dbx-1_6_33">DBX v1.6.33</a></code> <code class="changelog-date">2024년 03월 13일</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#dbx-v1633-2024%EB%85%84-03%EC%9B%94-13%EC%9D%BC" class="hash-link" aria-label="dbx-v1633-2024년-03월-13일에 대한 직접 링크" title="dbx-v1633-2024년-03월-13일에 대한 직접 링크">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="postgresql">PostgreSQL​<a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#postgresql" class="hash-link" aria-label="PostgreSQL​에 대한 직접 링크" title="PostgreSQL​에 대한 직접 링크">​</a></h5>
 <ul>
 <li><code class="Feature">Feature</code> 에이전트 설치 파일에 <em>setup.sh</em> 추가</li>
