@@ -231,12 +231,11 @@ function RecommendedDoc() {
     if (currentLocale == "ko") {
         return (
             <>
-                <Link to={useBaseUrl("db2/monitoring-intro")} className={clsx(styles.white, styles.underline)}>IBM DB2</Link>,&nbsp;
-                <Link to={useBaseUrl("server/metrics-explorer")} className={clsx(styles.white, styles.underline)}>메트릭스 익스플로러</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/kube-scheduler-dashboard")} className={clsx(styles.white, styles.underline)}>kube-scheduler 대시보드</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/container-timeline")} className={clsx(styles.white, styles.underline)}>컨테이너 타임라인</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/pod-timeline")} className={clsx(styles.white, styles.underline)}>Pod 타임라인</Link>,&nbsp;
-                <Link to={useBaseUrl("kubernetes/pv-list")} className={clsx(styles.white, styles.underline)}>PV/PVC 목록</Link>
+                <Link to={useBaseUrl("kubernetes/install-master-node-agent-v2#custom-resource-features")} className={clsx(styles.white, styles.underline)}>Custom Resource 모니터링 활성화</Link>,&nbsp;
+                <Link to={useBaseUrl("server/server-inventory-map")} className={clsx(styles.white, styles.underline)}>서버 인벤토리 맵</Link>,&nbsp;
+                <Link to={useBaseUrl("oracle/analysis-lock-and-deadlock")} className={clsx(styles.white, styles.underline)}>락 트리</Link>,&nbsp;
+                <Link to={useBaseUrl("oracle/usage-ui#check-default-db-id-values-planuid")} className={clsx(styles.white, styles.underline)}>디폴트 플랜 조회</Link>,&nbsp;
+                <Link to={useBaseUrl("browser/errorload-stat")} className={clsx(styles.white, styles.underline)}>에러 로드 통계</Link>
             </>
         );
     } else if (currentLocale == "en") {
