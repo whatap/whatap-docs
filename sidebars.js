@@ -4587,9 +4587,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_5',
+                  id: 'release-notes/python/python-1_7_6',
                   className: 'new',
                 },
+                'release-notes/python/python-1_7_5',
                 'release-notes/python/python-1_7_4',
                 'release-notes/python/python-1_7_3',
                 'release-notes/python/python-1_7_2',
