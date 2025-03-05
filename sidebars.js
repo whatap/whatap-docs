@@ -4522,7 +4522,7 @@ const sidebars = {
               label: 'PHP',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/php/index',
@@ -4531,7 +4531,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/php/php-2_10_0',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/php/php-2_9_0',
                 'release-notes/php/php-2_8_2',
@@ -4551,7 +4551,7 @@ const sidebars = {
               label: 'Node.js',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/nodejs/index',
@@ -4560,7 +4560,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/nodejs/nodejs-0_5_8',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/nodejs/nodejs-0_5_7',
                 'release-notes/nodejs/nodejs-0_5_6',
@@ -4696,7 +4696,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4705,7 +4705,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_4_1',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-aix/server-aix-1_4_0',
                 'release-notes/server-aix/server-aix-1_3_8',
@@ -4721,7 +4721,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4730,7 +4730,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_4_1',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_4_0',
                 'release-notes/server-solaris/server-solaris-1_3_8',
@@ -4745,7 +4745,7 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-hpux/index'
@@ -4754,7 +4754,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-hpux/server-hpux-1_4_0',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-hpux/server-hpux-1_3_7',
                 'release-notes/server-hpux/server-hpux-1_3_6',
@@ -4766,7 +4766,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4775,7 +4775,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/k8s/k8s-1_8_5',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/k8s/k8s-1_8_4',
                 'release-notes/k8s/k8s-1_8_2',
@@ -4827,7 +4827,7 @@ const sidebars = {
               label: 'DMX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dmx-agent',
@@ -4836,7 +4836,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/dmx-1_0_2d',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/dmx-1_0_2b',
                 'release-notes/db/dmx-1_0_2a',
