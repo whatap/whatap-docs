@@ -2403,7 +2403,6 @@
         <updated>2024-10-21T09:30:00.000Z</updated>
         <summary type="html"><![CDATA[와탭의 2024년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.]]></summary>
         <content type="html"><![CDATA[<p>와탭의 2024년 3분기 서비스 신규 기능 및 주목할 만한 변경 사항 개요를 안내합니다. 와탭이 새롭게 제공하는 기능들을 한 눈에 살펴보세요.</p>
-<!-- -->
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/changelog/changelog-new3.png" alt="새로운 기능 sc" width="auto" height="auto"></p>
 <!-- -->
 <div class="faq"><table><thead><tr><th><strong>공통</strong></th></tr></thead></table><blockquote>
@@ -2437,17 +2436,13 @@
 <p>상품별 신규 기능 외 변경 사항 개요 및 해당 릴리스 버전, 에이전트 변경 사항은 다음 안내를 통해 확인할 수 있습니다.</p>
 <br>
 <br>
-<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="공통"><code>공통</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-3q-summary#%EA%B3%B5%ED%86%B5" class="hash-link" aria-label="공통에 대한 직접 링크" title="공통에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 3분기 <code>공통</code> 부분에서 <span class="uitext">이벤트 설정</span> 메뉴 개선 및 새롭게 개편된 <span class="uitext">메트릭스 차트</span> <code class="newfunc">New</code> 메뉴를 소개합니다.</p>
 <p>기존 <span class="uitext">이벤트 설정</span> 및 새로운 <span class="uitext">이벤트 설정</span> <code class="newfunc">New</code> 메뉴에 검색 기능이 추가되었습니다. 이벤트 목록 오른쪽 상단의 검색 입력창을 통해 <span class="uitext">이벤트 이름</span>, <span class="uitext">지표 이름</span>를 기준으로 문자열을 입력하거나 <span class="uitext">이벤트명</span> 또는 <span class="uitext">이벤트 수신 태그</span> 중 원하는 기준을 선택 후 문자열을 입력하여 이벤트를 검색할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="공통 이벤트 검색 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-common1-804675c07c8dd9dd134a5365091f6350.png" width="1208" height="463" class="img_ev3q"></p>
 <p><code>Application</code>, <code>Kubernetes</code>, <code>Database</code> 상품군 공통으로 <span class="uitext">메트릭스 차트</span> <code class="newfunc">New</code> 메뉴가 새롭게 개편되었습니다. <span class="uitext">메트릭스 차트</span> <code class="newfunc">New</code>는 사용자 경험을 대폭 개선하여 모니터링 작업을 더욱 효율적으로 수행할 수 있도록 설계되었습니다.</p>
 <p><img decoding="async" loading="lazy" alt="공통 메트릭스 차트 v2 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-common-metrics-chart-a2b9ddcc453253d55e7b04e9d4e81f13.gif" width="1200" height="661" class="img_ev3q"></p>
-<!-- -->
 <p>사용자는 <em><strong>시간</strong></em>, <em><strong>대상</strong></em>, <em><strong>인터벌</strong></em> 설정을 한 번에 처리하고 쉽게 차트를 추가할 수 있습니다. 또한 대시보드 위젯의 시간 범위를 자유롭게 변경할 수 있으며 일괄 변경 기능과 프리셋 기능을 통해 설정 관리가 간편해졌습니다. 이와 더불어 대시보드 레이아웃과 위젯도 자유롭게 조정할 수 있어 차트 분석이 더욱 효율적으로 개선되었습니다.</p>
-<!-- -->
-<!-- -->
 <p>다음 개요 안내를 통해 2024년 3분기 공통 부분의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -2720,7 +2715,6 @@
 <p>와탭 서버 모니터링은 이번 3분기에 새롭게 <span class="uitext">서버 인벤토리</span> 메뉴를 제공합니다. <span class="uitext">서버 인벤토리</span>는 서버의 물리적 특성 및 가상적 특성, 운영 환경 등을 체계적으로 관리하기 위한 기능입니다. 자동으로 수집된 서버 구성 요소와 사용자 정의 항목을 통해 서버의 구성을 상세하게 파악하고 관리하는 것이 가능합니다.</p>
 <p><img decoding="async" loading="lazy" alt="서버 구성 요소 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-server-inventory-f487dcc54c2c467739cfc7fea9745b97.png" width="1210" height="444" class="img_ev3q"></p>
 <p>사용자 정의 항목을 통해 커스텀 컬럼을 구성하여 서버 상태 및 성능을 더욱 세밀하게 모니터링하고 이슈 상황에 대응할 수 있습니다. 예를 들어 각 서버 담당자와 직접적인 소통이 용이하도록 운영 담당자 정보를 추가하여 문제 시 빠른 대응이 가능합니다. 또한 <span class="uitext">서버 인벤토리</span> 메뉴는 3단계의 다중 정렬을 통해 조건에 맞는 서버를 빠르게 필터링 할 수 있습니다. 기본 정렬은 <em><strong>OS 타입</strong></em>, <em><strong>모델</strong></em>, 그리고 <em><strong>시리얼 정보</strong></em> 기준입니다.</p>
-<!-- -->
 <p><strong>Unix</strong> <code>HP-UX</code> 에이전트 설치 패키지를 제공합니다. <code>HP-UX</code>는 Hewlett-Packard(HP)에서 개발한 고성능 Unix 운영 체제로, Itanium 및 PA-RISC 시스템에서의 안정성과 성능으로 잘 알려져 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="서버 모니터링 설치 페이지 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-server-hp-ux-64c837d1d683dbbfaeb16fc0e8aa95da.png" width="787" height="415" class="img_ev3q"></p>
 <p>와탭은 <code>HP-UX</code> Itanium 버전 11.23과 PA-RISC-UX 버전 11.23을 지원합니다. <code>HP-UX</code> 설치 패키지는 간단한 다운로드 및 실행만으로 쉽게 설치할 수 있으며, 와탭 서버 모니터링을 통해 <code>HP-UX</code> 운영 체제를 효과적으로 관리하고 모니터링할 수 있습니다.</p>
@@ -2788,17 +2782,12 @@
 <p><span class="uitext">노드 맵</span>을 통해 클러스터 관점에서 노드 상태를 모니터링할 수 있습니다. 노드의 실시간 상태, 리소스 사용 현황 및 노드 간 관계를 직관적으로 파악할 수 있으며, 그룹화, 임계치 설정, 라벨 등의 사용자 설정을 통해 사용자가 원하는 방식으로 대시보드를 구성할 수 있습니다.</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-node-map-custom.png" alt="k8s 노드맵 분기 예시" width="auto" height="auto"></p>
 <p><span class="uitext">노드 타임라인</span> 메뉴에서 시간에 따라 노드의 상태 변화를 추적할 수 있습니다. 예를 들어 특정 노드의 제거 시점 및 해당 시점의 상태를 시각적으로 파악할 수 있습니다. 이를 통해 클러스터 운영 중 발생한 이슈 분석이나 과거 상황을 확인하는 데 유용합니다.</p>
-<!-- -->
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-node-timeline-stage.png" alt="k8s 노드 타임라인 분기 예시" width="auto" height="auto"></p>
 <p><span class="uitext">노드 디스크 목록</span>을 통해 노드에 마운트된 개별 디스크의 상태를 실시간으로 모니터링할 수 있습니다. 그리고 기존 <span class="uitext">노드 목록</span> 메뉴의 비교 및 상세 정보 조회 기능이 개선되었습니다. <span class="uitext">노드 상세</span> 메뉴로 이동하는 대신 선택한 노드의 구성 및 리소스, 메트릭스, 이벤트 정보를 <span class="uitext">노드 목록</span> 상세 모달을 통해 확인할 수 있습니다.</p>
 <p>또한 와탭 쿠버네티스 구성 요소 분석 기능이 강화되었습니다. <span class="uitext">컨테이너 요약 분석</span> 및 <span class="uitext">Pod 요약 분석</span> 기능이 새롭게 제공되어, 각 구성 요소의 성능과 상태를 종합적으로 분석할 수 있습니다. <span class="uitext">컨테이너 맵</span>의 <span class="uitext">대상 정보</span> 탭에서 원하는 요약 분석 정보를 확인할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="k8s 성능 요약 분석 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-k8s-summary-44e90958eb6e7b7b8fa528d1e8dce1dc.gif" width="2532" height="1414" class="img_ev3q"></p>
-<!-- -->
 <p>더불어 와탭 쿠버네티스 모니터링 정보 확대의 일환으로 <span class="uitext">Service 목록</span> 메뉴가 새롭게 추가되어, 각 서비스의 구성과 연결된 파드 상태를 확인할 수 있습니다. 조회 시간 기준 최근 1분간 수집된 서비스 정보를 제공합니다.</p>
-<!-- -->
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/k8s-service-list.png" alt="k8s Service 목록 분기 예시" width="auto" height="auto"></p>
-<!-- -->
-<!-- -->
 <p>다음 개요 안내를 통해 2024년 3분기 <code>Kubernetes</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q"><ul>
 <li>
@@ -3120,14 +3109,10 @@
 <p><span class="uitext">멀티 인스턴스 모니터링</span> 메뉴의 사용자 정의 위젯에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/oracle/multi-instance-monitoring#customwidget">다음 문서</a>를 참조하세요.</p>
 </li>
 </ul></div></div>
-<!-- -->
-<!-- -->
-<!-- -->
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="feature"><code>Feature</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-3q-summary#feature" class="hash-link" aria-label="feature에 대한 직접 링크" title="feature에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 3분기에 피쳐 프로젝트(<code class="Features">Features</code>) 방식으로 <code>Aerospike</code> 모니터링과 <code>Apache Pulsar</code> 모니터링 <strong>베타</strong> 서비스를 시작하였습니다. 추후 정식 배포 예정이며 지원 범위 역시 확대될 예정입니다.</p>
 <p><img decoding="async" loading="lazy" alt="피쳐 프로젝트 분기 예시" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q3-feature-c643cb72621cdd4f2b8c97ffd367ba85.png" width="857" height="596" class="img_ev3q"></p>
-<!-- -->
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
 <li>
 <p><code class="Beta">Beta</code> <code>Aerospike</code> 모니터링에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/features/aerospike-introduction">다음 문서</a>를 참조하세요.</p>
@@ -3136,11 +3121,7 @@
 <p><code class="Beta">Beta</code> <code>Apache Pulsar</code> 모니터링에 대한 자세한 내용은 <a href="https://docs.whatap.io/whatap-docs/features/apache-pulsar-introduction">다음 문서</a>를 참조하세요.</p>
 </li>
 </ul></div></div>
-<!-- -->
-<br>
-<!-- -->
-<!-- -->
-]]></content>
+<br>]]></content>
         <author>
             <name>TW J</name>
             <email>ysjo@whatap.io</email>
