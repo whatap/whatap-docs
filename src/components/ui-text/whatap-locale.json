@@ -46449,7 +46449,7 @@
   },
   "NTC07859": {
     "en": "In progress. This may take a moment.",
-    "ja": "適用中です。しばらく時間がかかる場合があります。",
+    "ja": "適用中です。しばらく時間がかかることがあります。",
     "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
     "service_id": "NTC07859"
   },
@@ -46496,7 +46496,7 @@
     "service_id": "DSC07866"
   },
   "DSC07867": {
-    "en": "Tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) are displayed in the list.",
+    "en": "Tables and indexes with values ​​greater than the collection criteria set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) are displayed in the list.",
     "ja": "エージェント設定(whatap.conf)の<code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示します。",
     "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다.",
     "service_id": "DSC07867"
@@ -47127,7 +47127,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを作成するには、次のコマンドを実行します。",
+    "ja": "エージェントを生成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "service_id": "DSC07972"
   },
@@ -47768,7 +47768,7 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or enter another search term.",
+    "en": "Please enter the product name in English or another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
     "service_id": "DSC08079"
@@ -48159,7 +48159,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "service_id": "CNT08143"
   },
@@ -48344,7 +48344,7 @@
     "service_id": "DSC08174"
   },
   "DSC08175": {
-    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default: 10MB or more, collection at 5 AM)",
+    "en": "The collection time and target can be adjusted with segments_min_size and segments_hour in whatap.conf.<br/>(Default value: 10MB or more, collection at 5 AM)",
     "ja": "収集時間とターゲットは、whatap.confの<br/>segmets_min_size、segments_hourで変更できます。<br/>（デフォルト：10MB以上、午前5時収集）",
     "ko": "수집시간과 대상은 whatap.conf의<br/>segmets_min_size, segments_hour로 조정할 수 있습니다.<br/>(기본값: 10MB 이상, 새벽 5시 수집)",
     "service_id": "DSC08175"
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -48908,7 +48908,7 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for the replica yard.",
+    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
     "service_id": "CNT08269"
@@ -49316,7 +49316,7 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
     "service_id": "DSC08338"
@@ -50300,7 +50300,7 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "<b>Add the script file to the {path} path</b>.",
+    "en": "Add the script file to <b>{path}</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
     "service_id": "DSC08502"
@@ -50811,7 +50811,7 @@
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須でなければならず、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -50841,7 +50841,7 @@
   },
   "DSC08594": {
     "en": "It must be {highlighted}. Additional pattern registration may be required depending on the simulation result.",
-    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08594"
   },
@@ -50924,7 +50924,7 @@
     "service_id": "TLT08607"
   },
   "DSC08608": {
-    "en": "If you press the simulation button after setting the conditions, you can check the expected number of notifications.",
+    "en": "After setting the conditions, you can press the simulation button<br/>to check the expected number of notifications.",
     "ja": "条件を設定してからシミュレーションボタンを押すと、通知の予想件数を確認できます。",
     "ko": "조건 설정 후 시뮬레이션 버튼을 누르면<br/>알림 예상 건수를 확인할 수 있습니다.",
     "service_id": "DSC08608"
@@ -51483,7 +51483,7 @@
   },
   "CNT08701": {
     "en": "A subscription for AWS Marketplace is required. Once the subscription is confirmed, you can use the WhaTap services.",
-    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
+    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "service_id": "CNT08701"
   },
@@ -51620,7 +51620,7 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Update the agent version to the latest version.",
+    "en": "Please update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
@@ -51746,7 +51746,7 @@
     "service_id": "ITM08745"
   },
   "TLT08746": {
-    "en": "The log usage refresh cycle is 20 minutes.",
+    "en": "The log usage refresh interval is 20 minutes.",
     "ja": "ログ使用量の更新周期は20分です。",
     "ko": "로그 사용량의 갱신 주기는 20분입니다.",
     "service_id": "TLT08746"
@@ -52149,7 +52149,7 @@
   },
   "DSC08813": {
     "en": "You can set object query permissions using the following command.",
-    "ja": "次のコマンドを使用して、オブジェクト照会権限を設定できます。",
+    "ja": "次のコマンドを使用してオブジェクト照会権限を設定できます。",
     "ko": "다음 명령어를 사용하여 오브젝트 조회 권한을 설정할 수 있습니다.",
     "service_id": "DSC08813"
   },
@@ -52365,14 +52365,14 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value}を表示",
+    "ja": "{value} 表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
   "BTN08850": {
     "en": "Access control with SSO",
-    "ja": "SSOによるアクセス制御",
-    "ko": "SSO로 액세스 제어",
+    "ja": "SSOによるログインのみ許可",
+    "ko": "SSO를 통한 로그인만 허용",
     "service_id": "BTN08850"
   },
   "DSC08851": {
@@ -52905,7 +52905,7 @@
   },
   "DSC08941": {
     "en": "Maximum {resource} usage is <b>high compared to node resources</b>. Monitor the usage increase.",
-    "ja": "最大{resource}使用量が<b>ノードリソースと比較して高いレベル</b>です。",
+    "ja": "最大{resource}使用率は<b>ノードリソースに対して高いレベル</b>です。使用量の増加を監視してください。",
     "ko": "최대 {resource} 사용량이 <b>노드 자원 대비 높은 수준</b>입니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08941"
   },
@@ -52917,7 +52917,7 @@
   },
   "DSC08943": {
     "en": "The maximum {resource} usage <b>is close to or exceeds the node resource limit, possibly causing performance degradation or resource conflicts</b>. Adjust the <code>limit</code> setting or increase the resources.",
-    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下やリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスが低下したり、リソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
     "ko": "최대 {resource} 사용량이 <b>노드 가용 자원에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
     "service_id": "DSC08943"
   },
@@ -53396,7 +53396,7 @@
     "service_id": "DSC09023"
   },
   "DSC09024": {
-    "en": "Performance data in terms of overall utilization is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
+    "en": "Performance data in terms of overall usage rate is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
     "ja": "全体使用率の観点からの性能データは2秒、個別プロセス/Physical Disk/NICなどのデータは5秒間隔で収集します。",
     "ko": "전체 사용율 관점의 성능 데이터는 2초, 개별 프로세스/Physical Disk/NIC 등의 데이터는5초 단위로 수집하여 제공합니다.",
     "service_id": "DSC09024"
@@ -53414,7 +53414,7 @@
     "service_id": "DSC09028"
   },
   "DSC09029": {
-    "en": "Easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
+    "en": "You can easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
     "ja": "サーバーの指標を<b style=\"color:unset\">簡単に検索</b>して、性能の問題を迅速に把握できます。",
     "ko": "원하는 서버의 특정 <b style=\"color:unset\">지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
@@ -53943,7 +53943,7 @@
   },
   "DSC09119": {
     "en": "Enable \"Display no primary group\" or select another classification criteria.",
-    "ja": "一次グループなし表示設定を有効にするか、他の分類基準を選択してください。",
+    "ja": "1次グループなし表示設定を有効にするか、他の分類基準を選択してください。",
     "ko": "1차 그룹 없음 표시 설정 활성화 또는 다른 분류 기준을 선택해 주세요.",
     "service_id": "DSC09119"
   },
@@ -54063,20 +54063,20 @@
   },
   "ITM09139": {
     "en": "Total",
-    "ja": "総順",
-    "ko": "총계순",
+    "ja": "総数順",
+    "ko": "총 개수 순",
     "service_id": "ITM09139"
   },
   "ITM09140": {
     "en": "Abnormal Rate",
-    "ja": "異常率順",
-    "ko": "비정상률순",
+    "ja": "非正常(比率)",
+    "ko": "비정상 비율 순",
     "service_id": "ITM09140"
   },
   "ITM09141": {
     "en": "Abnormal Count",
-    "ja": "異常数順",
-    "ko": "비정상 수순",
+    "ja": "非正常(件数)",
+    "ko": "비정상 개수 순",
     "service_id": "ITM09141"
   },
   "ITM09142": {
@@ -54093,7 +54093,7 @@
   },
   "ITM09144": {
     "en": "Abnormal",
-    "ja": "異常",
+    "ja": "非正常",
     "ko": "비정상",
     "service_id": "ITM09144"
   },
@@ -54111,7 +54111,7 @@
   },
   "TTL09147": {
     "en": "List of URLs by issue",
-    "ja": "課題別URLリスト",
+    "ja": "イシュー別URLリスト",
     "ko": "이슈별 URL 목록",
     "service_id": "TTL09147"
   },
@@ -54147,19 +54147,19 @@
   },
   "ITM09153": {
     "en": "Issue",
-    "ja": "問題",
+    "ja": "イシュー",
     "ko": "이슈",
     "service_id": "ITM09153"
   },
   "ITM09154": {
     "en": "Check area",
-    "ja": "確認エリア",
+    "ja": "チェック位置",
     "ko": "확인 지역",
     "service_id": "ITM09154"
   },
   "ITM09155": {
     "en": "Monitoring interval",
-    "ja": "モニタリングサイクル",
+    "ja": "モニタリング周期",
     "ko": "모니터링 주기",
     "service_id": "ITM09155"
   },
@@ -54207,7 +54207,7 @@
   },
   "ITM09163": {
     "en": "Hidden",
-    "ja": "隠す",
+    "ja": "非表示",
     "ko": "숨김",
     "service_id": "ITM09163"
   },
@@ -54231,7 +54231,7 @@
   },
   "TTL09167": {
     "en": "URL details",
-    "ja": "URLの詳細",
+    "ja": "URL詳細",
     "ko": "URL 상세",
     "service_id": "TTL09167"
   },
@@ -54261,7 +54261,7 @@
   },
   "ITM09172": {
     "en": "Full log",
-    "ja": "完全なログ",
+    "ja": "全体ログ",
     "ko": "전체 로그",
     "service_id": "ITM09172"
   },
@@ -54279,7 +54279,7 @@
   },
   "ITM09175": {
     "en": "Occurrence time",
-    "ja": "発生時間",
+    "ja": "発生時刻",
     "ko": "발생 시각",
     "service_id": "ITM09175"
   },
@@ -54291,7 +54291,7 @@
   },
   "ITM09177": {
     "en": "Status code",
-    "ja": "ステータスコード",
+    "ja": "状態コード",
     "ko": "상태 코드",
     "service_id": "ITM09177"
   },
@@ -54327,19 +54327,19 @@
   },
   "TTL09183": {
     "en": "24-hour status check",
-    "ja": "24時間ステータスチェック",
+    "ja": "24時間状態チェック",
     "ko": "24시간 상태 체크",
     "service_id": "TTL09183"
   },
   "DSC09184": {
     "en": "No notification",
-    "ja": "発生した通知なし",
+    "ja": "発生したアラートがありません。",
     "ko": "발생한 알림 없음",
     "service_id": "DSC09184"
   },
   "TTL09185": {
     "en": "URL trend",
-    "ja": "URLステータスの推移",
+    "ja": "URL状態の推移",
     "ko": "URL 상태 추이",
     "service_id": "TTL09185"
   },
@@ -54363,7 +54363,7 @@
   },
   "DSC09189": {
     "en": "{count} notifications occurred",
-    "ja": "{count}件の通知が発生しました",
+    "ja": "{count}件の通知が発生しました。",
     "ko": "{count}건의 알림 발생",
     "service_id": "DSC09189"
   },
@@ -54416,9 +54416,9 @@
     "service_id": "CNT09197"
   },
   "BTN09198": {
-    "en": "Resolvable",
-    "ja": "解消可能",
-    "ko": "해소 가능",
+    "en": "Check the cause",
+    "ja": "原因の確認",
+    "ko": "원인 확인",
     "service_id": "BTN09198"
   },
   "TTL09199": {
@@ -54429,14 +54429,14 @@
   },
   "TTL09200": {
     "en": "URL being monitored",
-    "ja": "監視しているURL",
+    "ja": "監視中のURL",
     "ko": "모니터링 중인 URL",
     "service_id": "TTL09200"
   },
   "BTN09201": {
-    "en": "Resolved",
-    "ja": "解消",
-    "ko": "해소",
+    "en": "Treat as normal",
+    "ja": "通常の処理",
+    "ko": "정상 처리",
     "service_id": "BTN09201"
   },
   "TTL09202": {
@@ -54453,13 +54453,13 @@
   },
   "TTL09204": {
     "en": "Abnormal page name",
-    "ja": "異常ページ名",
+    "ja": "非正常ページ名",
     "ko": "비정상 페이지명",
     "service_id": "TTL09204"
   },
   "TTL09205": {
     "en": "Detected abnormal page name",
-    "ja": "検出された異常ページ名",
+    "ja": "検知済み非正常ページ名",
     "ko": "감지된 비정상 페이지명",
     "service_id": "TTL09205"
   },
@@ -54477,56 +54477,56 @@
   },
   "TTL09208": {
     "en": "Abnormal URL",
-    "ja": "異常URL",
+    "ja": "非正常URL",
     "ko": "비정상 URL",
     "service_id": "TTL09208"
   },
   "TTL09209": {
     "en": "Detected abnormal URL",
-    "ja": "検出された異常URL",
+    "ja": "検知済み非正常URL",
     "ko": "감지된 비정상 URL",
     "service_id": "TTL09209"
   },
   "NTC09210": {
     "en": "Do you want to delete the above page name?",
-    "ja": "上記のページ名を削除してもよろしいですか？",
+    "ja": "上記のページ名を削除しますか？",
     "ko": "위 페이지명을 삭제하시겠습니까?",
     "service_id": "NTC09210"
   },
   "DSC09211": {
     "en": "If detected as the above page name, it is judged as a failure.",
-    "ja": "以降、上記ページ名で検出された場合、障害と判断されます。",
+    "ja": "これからは上記のページ名で検出された場合は障害と判断されます。",
     "ko": "이후 위 페이지명으로 감지되는 경우 장애로 판단됩니다.",
     "service_id": "DSC09211"
   },
   "NTC09212": {
     "en": "Do you want to delete the above URL?",
-    "ja": "上記のURLを削除してもよろしいですか？",
+    "ja": "上記のURLを削除しますか？",
     "ko": "위 URL을 삭제하시겠습니까?",
     "service_id": "NTC09212"
   },
   "DSC09213": {
     "en": "If detected as the above URL, it is judged as a failure.",
-    "ja": "その後、上記のURLで検出された場合は障害と判断されます。",
+    "ja": "これからは上記のURLで検出された場合は障害と判断されます。",
     "ko": "이후 위 URL로 감지되는 경우 장애로 판단됩니다.",
     "service_id": "DSC09213"
   },
   "NTC09214": {
     "en": "Do you want to delete the registered record?",
-    "ja": "登録された履歴を削除しますか？",
+    "ja": "履歴を削除しますか？",
     "ko": "등록된 내역을 삭제하시겠습니까?",
     "service_id": "NTC09214"
   },
   "TTL09215": {
     "en": "Number of socket opens",
-    "ja": "ソケットオープン個数案内",
+    "ja": "ソケットオープン数の案内",
     "ko": "소켓 오픈 개수 안내",
     "service_id": "TTL09215"
   },
   "CNT09216": {
-    "en": "When calling the <span class=\"body_s_5_bold\">connect and getInputStream methods</span> of the Java Socket class, the IP and port of the <span class=\"body_s_5_bold\">SocketAddress are collected</span>.",
-    "ja": "Java Socket クラスの <span class=\"body_s_5_bold\">connect, getInputStream メソッド</span> を呼び出す場合、<span class=\"body_s_5_bold\">SocketAddress の ip と port を収集</span>します。",
-    "ko": "Java Socket 클래스의 <span class=\"body_s_5_bold\">connect, getInputStream 메소드</span>를 호출하는 경우 <span class=\"body_s_5_bold\">SocketAddress의 ip 와 port 를 수집</span>합니다.",
+    "en": "When calling the <span class=\"boldTheme\">connect and getInputStream methods</span> of the Java Socket class, the IP and port of the <span class=\"boldTheme\">SocketAddress are collected</span>.",
+    "ja": "Java Socket クラスの <span class=\"boldTheme\">connect, getInputStream メソッド</span> を呼び出す場合、<span class=\"boldTheme\">SocketAddress のIPとPort を収集</span>します。",
+    "ko": "Java Socket 클래스의 <span class=\"boldTheme\">connect, getInputStream 메소드</span>를 호출하는 경우 <span class=\"boldTheme\">SocketAddress의 ip 와 port 를 수집</span>합니다.",
     "service_id": "CNT09216"
   },
   "CNT09217": {
@@ -54537,7 +54537,7 @@
   },
   "ITM09218": {
     "en": "{count} cases",
-    "ja": "{count}個",
+    "ja": "{count}件",
     "ko": "{count}개",
     "service_id": "ITM09218"
   },
@@ -54579,7 +54579,7 @@
   },
   "BTN09225": {
     "en": "Register URL",
-    "ja": "URLを登録する",
+    "ja": "URL登録",
     "ko": "URL 등록하기",
     "service_id": "BTN09225"
   },
@@ -54590,14 +54590,14 @@
     "service_id": "BTN09226"
   },
   "TTL09227": {
-    "en": "Modification of all monitoring intervals",
-    "ja": "フルモニタリングサイクルの修正",
+    "en": "Modification of all monitoring cycles",
+    "ja": "全体モニタリング周期の修正",
     "ko": "전체 모니터링 주기 수정",
     "service_id": "TTL09227"
   },
   "TTL09228": {
     "en": "Batch edit",
-    "ja": "一括編集",
+    "ja": "一括修正",
     "ko": "일괄 수정",
     "service_id": "TTL09228"
   },
@@ -54608,104 +54608,104 @@
     "service_id": "TTL09229"
   },
   "NTC09230": {
-    "en": "Do you want to delete the selected URLs in bulk?",
-    "ja": "選択したURLを一括削除してもよろしいですか？",
-    "ko": "선택된 URL을 일괄 삭제하시겠습니까?",
+    "en": "Are you sure you want to delete {count} selected items?",
+    "ja": "選択した{count}件を削除しますか？",
+    "ko": "선택된 {count}개를 삭제하시겠습니까?",
     "service_id": "NTC09230"
   },
   "DSC09231": {
-    "en": "When deleting a URL, all data about that URL will be deleted.",
-    "ja": "URLを削除すると、そのURLのデータはすべて削除されます。",
+    "en": "When deleting a URL, all the related data is also deleted.",
+    "ja": "URLを削除すると、該当URLのデータはすべて削除されます。",
     "ko": "URL 삭제 시 해당 URL에 대한 데이터는 모두 삭제됩니다.",
     "service_id": "DSC09231"
   },
   "DSC09232": {
-    "en": "Changes the monitoring cycle for all URLs to a selected time interval.",
-    "ja": "すべてのURLの監視サイクルを選択した時間間隔に変更します。",
+    "en": "The monitoring cycle for all URLs is changed to the selected time interval.",
+    "ja": "すべてのURLの監視周期を選択した間隔に変更します。",
     "ko": "모든 URL의 모니터링 주기를 선택한 시간 간격으로 변경합니다.",
     "service_id": "DSC09232"
   },
   "NTC09233": {
-    "en": "The URL cannot be empty.",
-    "ja": "URLを空にできません。",
+    "en": "The URL cannot be left empty.",
+    "ja": "URLを空白で指定できません。",
     "ko": "URL을 비워둘 수 없습니다.",
     "service_id": "NTC09233"
   },
   "TLT09234": {
-    "en": "Please enter the URL.",
+    "en": "Enter the URL.",
     "ja": "URLを入力してください。",
     "ko": "URL을 입력해주세요.",
     "service_id": "TLT09234"
   },
   "NTC09235": {
-    "en": "The page name cannot be empty.",
-    "ja": "ページ名を空白にできません。",
+    "en": "The page name cannot be left empty.",
+    "ja": "ページ名を空白で指定できません。",
     "ko": "페이지명을 비워둘 수 없습니다.",
     "service_id": "NTC09235"
   },
   "DSC09236": {
-    "en": "Enter the name of the monitoring item. We recommend names that are easily identifiable.",
+    "en": "Enter the name of the monitoring target. It is recommended to have a name that can be distinguished easily.",
     "ja": "監視項目の名前を入力してください。簡単に区別できる名前をお勧めします。",
     "ko": "모니터링 항목의 이름을 입력하세요. 쉽게 구분할 수 있는 이름을 추천합니다.",
     "service_id": "DSC09236"
   },
   "TLT09237": {
-    "en": "Please enter the page name.",
+    "en": "Enter the page name.",
     "ja": "ページ名を入力してください。",
     "ko": "페이지명을 입력해주세요.",
     "service_id": "TLT09237"
   },
   "NTC09238": {
-    "en": "Please select a confirmation region.",
-    "ja": "確認エリアを選択してください。",
+    "en": "Select a confirmed region.",
+    "ja": "チェック位置を選択してください。",
     "ko": "확인 지역을 선택해 주세요.",
     "service_id": "NTC09238"
   },
   "DSC09239": {
-    "en": "Select the region you want to monitor. Check the response status in your selected region.",
-    "ja": "監視するリージョンを選択してください。選択した地域での応答状態を確認します。",
+    "en": "Select a region for monitoring. Check the response status in the selected region.",
+    "ja": "チェックするリージョンを選択してください。選択した地域からの応答状態をチェックします。",
     "ko": "모니터링할 리전을 선택하세요. 선택한 지역에서의 응답 상태를 확인합니다.",
     "service_id": "DSC09239"
   },
   "DSC09240": {
-    "en": "Select the monitoring cycle. The URL status is checked according to the selected cycle.",
-    "ja": "監視サイクルを選択してください。選択したサイクルに基づいてURLのステータスを確認します。",
+    "en": "Select a monitoring cycle. According to the selected cycle, URLs are checked.",
+    "ja": "チェック周期を選択してください。選択した周期ごとにURLのステータスを確認します。",
     "ko": "모니터링 주기를 선택하세요. 선택한 주기에 따라 URL 상태를 점검합니다.",
     "service_id": "DSC09240"
   },
   "DSC09241": {
-    "en": "The grouped structure allows for more systematic monitoring.",
+    "en": "By using the grouped structure, more systematic monitoring is possible.",
     "ja": "グループ化された構造を活用すると、より体系的な監視が可能になります。",
     "ko": "그룹화된 구조를 활용하면 더 체계적인 모니터링이 가능합니다.",
     "service_id": "DSC09241"
   },
   "TLT09242": {
-    "en": "Please search and select a category.",
+    "en": "Search and select a category.",
     "ja": "カテゴリを検索して選択してください。",
     "ko": "카테고리를 검색 및 선택해주세요.",
     "service_id": "TLT09242"
   },
   "DSC09243": {
-    "en": "You can easily classify and search monitoring items using issues.",
-    "ja": "問題を活用して、監視項目を簡単に分類して検索できます。",
+    "en": "You can easily classify and search monitoring targets by using issues.",
+    "ja": "イシューごとに監視項目を簡単に分類して検索できます。",
     "ko": "이슈를 활용하여 모니터링 항목을 쉽게 분류하고 검색할 수 있습니다.",
     "service_id": "DSC09243"
   },
   "TLT09244": {
-    "en": "Please search and select an issue.",
-    "ja": "問題を検索して選択してください。",
+    "en": "Search and select an issue.",
+    "ja": "イシューを検索して選択してください。",
     "ko": "이슈를 검색 및 선택해주세요.",
     "service_id": "TLT09244"
   },
   "TLT09245": {
-    "en": "Please enter {label}.",
+    "en": "Enter the {label}.",
     "ja": "{label}を入力してください。",
     "ko": "{label}을(를) 입력해주세요.",
     "service_id": "TLT09245"
   },
   "DSC09246": {
-    "en": "Afterwards, it will change to activated status.",
-    "ja": "その後、アクティブ状態に変わります。",
+    "en": "Then it is changed to active status.",
+    "ja": "これからアクティブ状態に変わります。",
     "ko": "이후 활성화 상태로 변경됩니다.",
     "service_id": "DSC09246"
   },
@@ -54716,20 +54716,20 @@
     "service_id": "NTC09247"
   },
   "DSC09248": {
-    "en": "When deleting a URL, all data about that URL will be deleted.",
-    "ja": "URLを削除すると、そのURLのデータはすべて削除されます。",
+    "en": "When deleting a URL, all the related data is also deleted.",
+    "ja": "URLを削除すると、該当URLのデータはすべて削除されます。",
     "ko": "URL 삭제 시 해당 URL에 대한 데이터는 모두 삭제됩니다.",
     "service_id": "DSC09248"
   },
   "TTL09249": {
-    "en": "Edit URL",
-    "ja": "URLを編集",
+    "en": "URL modification",
+    "ja": "URLの修正",
     "ko": "URL 수정",
     "service_id": "TTL09249"
   },
   "TTL09250": {
-    "en": "Copy URL",
-    "ja": "URLをコピー",
+    "en": "URL copying",
+    "ja": "URLのコピー",
     "ko": "URL 복사",
     "service_id": "TTL09250"
   },
@@ -54753,61 +54753,61 @@
   },
   "NTC09254": {
     "en": "URL modification was successful.",
-    "ja": "URLの編集に成功しました。",
+    "ja": "URLの修正に成功しました。",
     "ko": "URL 수정에 성공했습니다.",
     "service_id": "NTC09254"
   },
   "NTC09255": {
     "en": "URL modification failed.",
-    "ja": "URLの編集に失敗しました。",
+    "ja": "URLの修正に失敗しました。",
     "ko": "URL 수정에 실패했습니다.",
     "service_id": "NTC09255"
   },
   "NTC09256": {
     "en": "Batch URL modification was successful.",
-    "ja": "URL一括編集に成功しました。",
+    "ja": "URL一括修正に成功しました。",
     "ko": "URL 일괄 수정에 성공했습니다.",
     "service_id": "NTC09256"
   },
   "NTC09257": {
-    "en": "URL batch modification failed.",
-    "ja": "URLの一括編集に失敗しました。",
+    "en": "Batch URL modification failed.",
+    "ja": "URLの一括修正に失敗しました。",
     "ko": "URL 일괄 수정에 실패했습니다.",
     "service_id": "NTC09257"
   },
   "NTC09258": {
-    "en": "URL status change successful.",
+    "en": "URL status change was successful.",
     "ja": "URLステータスの変更に成功しました。",
     "ko": "URL 상태 변경에 성공했습니다.",
     "service_id": "NTC09258"
   },
   "NTC09259": {
-    "en": "Changing URL state failed.",
-    "ja": "URL 状態の変更に失敗しました。",
+    "en": "URL status change failed.",
+    "ja": "URLステータスの変更に失敗しました。",
     "ko": "URL 상태 변경에 실패했습니다.",
     "service_id": "NTC09259"
   },
   "NTC09260": {
-    "en": "URL batch status change was successful.",
-    "ja": "URLバッチステータスの変更に成功しました。",
+    "en": "Batch URL status change was successful.",
+    "ja": "URLの一括ステータス変更に成功しました。",
     "ko": "URL 일괄 상태 변경에 성공했습니다.",
     "service_id": "NTC09260"
   },
   "NTC09261": {
-    "en": "URL batch status change failed.",
-    "ja": "URLバッチステータスの変更に失敗しました。",
+    "en": "Batch URL status change failed.",
+    "ja": "URLの一括ステータス変更に失敗しました。",
     "ko": "URL 일괄 상태 변경에 실패했습니다.",
     "service_id": "NTC09261"
   },
   "NTC09262": {
-    "en": "The monitoring cycle batch change was successful.",
-    "ja": "監視サイクルの一括変更に成功しました。",
+    "en": "Batch monitoring interval change was successful.",
+    "ja": "監視周期の一括変更に成功しました。",
     "ko": "모니터링 주기 일괄 변경에 성공했습니다.",
     "service_id": "NTC09262"
   },
   "NTC09263": {
-    "en": "Batch change of monitoring cycle failed.",
-    "ja": "監視サイクルの一括変更に失敗しました。",
+    "en": "Batch monitoring interval change failed.",
+    "ja": "監視周期の一括変更に失敗しました。",
     "ko": "모니터링 주기 일괄 변경에 실패했습니다.",
     "service_id": "NTC09263"
   },
@@ -54824,25 +54824,25 @@
     "service_id": "NTC09265"
   },
   "NTC09266": {
-    "en": "Batch deletion of URLs was successful.",
-    "ja": "URL一括削除に成功しました。",
+    "en": "Batch URL deletion was successful",
+    "ja": "URLの一括削除に成功しました。",
     "ko": "URL 일괄 삭제에 성공했습니다.",
     "service_id": "NTC09266"
   },
   "NTC09267": {
-    "en": "Bulk deletion of URLs failed.",
+    "en": "Batch URL deletion failed.",
     "ja": "URLの一括削除に失敗しました。",
     "ko": "URL 일괄 삭제에 실패했습니다.",
     "service_id": "NTC09267"
   },
   "NTC09268": {
-    "en": "Successfully added URL management details.",
+    "en": "URL management history addition was successful.",
     "ja": "URL管理履歴の追加に成功しました。",
     "ko": "URL 관리 내역 추가에 성공했습니다.",
     "service_id": "NTC09268"
   },
   "NTC09269": {
-    "en": "Failed to add URL management details.",
+    "en": "URL management history addition failed.",
     "ja": "URL管理履歴の追加に失敗しました。",
     "ko": "URL 관리 내역 추가에 실패했습니다.",
     "service_id": "NTC09269"
@@ -54854,31 +54854,31 @@
     "service_id": "NTC09270"
   },
   "NTC09271": {
-    "en": "Failed to delete URL management history.",
+    "en": "URL management history deletion failed.",
     "ja": "URL管理履歴の削除に失敗しました。",
     "ko": "URL 관리 내역 삭제에 실패했습니다.",
     "service_id": "NTC09271"
   },
   "DSC09272": {
-    "en": "Category settings are a feature that helps you classify and manage data efficiently. This feature allows you to separate information into different categories, making it easier for users to find and organize what they want.",
-    "ja": "カテゴリ設定は、データの効率的な分類と管理を支援する機能です。この機能により、情報を複数のカテゴリに分けて区別することができ、ユーザーが望む項目を簡単に見つけて整理することができます。",
+    "en": "Category setting helps you to efficiently classify and manage data. This feature can calssify data into several categories, making it easy for users to find and organize the desired items.",
+    "ja": "カテゴリ設定は、データの効率的な分類と管理を手伝う機能です。この機能により、情報を複数のカテゴリに分けて区分することができ、項目を簡単に見つけて整理することができます。",
     "ko": "카테고리 설정은 데이터를 효율적으로 분류하고 관리할 수 있도록 돕는 기능입니다. 이 기능을 통해 정보를 여러 카테고리로 나누어 구분할 수 있으며, 사용자가 원하는 항목을 쉽게 찾고 정리할 수 있습니다.",
     "service_id": "DSC09272"
   },
   "TLT09273": {
-    "en": "Category Search",
+    "en": "It searches a category.",
     "ja": "カテゴリ検索",
     "ko": "카테고리 검색",
     "service_id": "TLT09273"
   },
   "TTL09274": {
-    "en": "Add category",
-    "ja": "カテゴリを追加",
+    "en": "Category addition",
+    "ja": "カテゴリ追加",
     "ko": "카테고리 추가",
     "service_id": "TTL09274"
   },
   "TTL09275": {
-    "en": "Category Item",
+    "en": "Category",
     "ja": "カテゴリ項目",
     "ko": "카테고리 항목",
     "service_id": "TTL09275"
@@ -54890,8 +54890,8 @@
     "service_id": "ITM09276"
   },
   "NTC09277": {
-    "en": "The category name cannot be empty.",
-    "ja": "カテゴリ名を空にできません。",
+    "en": "The category name cannot be left empty.",
+    "ja": "カテゴリ名を空白に指定できません。",
     "ko": "카테고리명을 비워둘 수 없습니다.",
     "service_id": "NTC09277"
   },
@@ -54902,20 +54902,20 @@
     "service_id": "NTC09278"
   },
   "TLT09279": {
-    "en": "Please enter the category name.",
+    "en": "Enter the category name.",
     "ja": "カテゴリ名を入力してください。",
     "ko": "카테고리명을 입력해주세요.",
     "service_id": "TLT09279"
   },
   "NTC09280": {
-    "en": "Are you sure you want to delete this category item?",
-    "ja": "そのカテゴリ項目を削除してもよろしいですか？",
+    "en": "Do you want to delete the category?",
+    "ja": "該当カテゴリ項目を削除しますか？",
     "ko": "해당 카테고리 항목을 삭제하시겠습니까?",
     "service_id": "NTC09280"
   },
   "TTL09281": {
-    "en": "Edit Category",
-    "ja": "カテゴリを編集",
+    "en": "Category modification",
+    "ja": "カテゴリの修正",
     "ko": "카테고리 수정",
     "service_id": "TTL09281"
   },
@@ -54926,13 +54926,13 @@
     "service_id": "ITM09282"
   },
   "TLT09283": {
-    "en": "Please search the URL or page name.",
+    "en": "Search the URL or page name.",
     "ja": "URLまたはページ名を検索してください。",
     "ko": "URL 또는 페이지명을 검색해주세요.",
     "service_id": "TLT09283"
   },
   "NTC09284": {
-    "en": "Please add the URL to apply.",
+    "en": "Add the URL to apply.",
     "ja": "適用するURLを追加してください。",
     "ko": "적용할 URL을 추가해주세요.",
     "service_id": "NTC09284"
@@ -54950,20 +54950,20 @@
     "service_id": "NTC09286"
   },
   "NTC09287": {
-    "en": "Failed to add category.",
+    "en": "Category addition failed.",
     "ja": "カテゴリの追加に失敗しました。",
     "ko": "카테고리 추가에 실패했습니다.",
     "service_id": "NTC09287"
   },
   "NTC09288": {
     "en": "Category modification was successful.",
-    "ja": "カテゴリの編集に成功しました。",
+    "ja": "カテゴリの修正に成功しました。",
     "ko": "카테고리 수정에 성공했습니다.",
     "service_id": "NTC09288"
   },
   "NTC09289": {
-    "en": "Failed to edit category.",
-    "ja": "カテゴリの編集に失敗しました。",
+    "en": "Category modification failed.",
+    "ja": "カテゴリの修正に失敗しました。",
     "ko": "카테고리 수정에 실패했습니다.",
     "service_id": "NTC09289"
   },
@@ -54974,68 +54974,68 @@
     "service_id": "NTC09290"
   },
   "NTC09291": {
-    "en": "Failed to delete category.",
+    "en": "Category deletion failed.",
     "ja": "カテゴリの削除に失敗しました。",
     "ko": "카테고리 삭제에 실패했습니다.",
     "service_id": "NTC09291"
   },
   "DSC09292": {
-    "en": "You can easily group related items by adding the same issue to multiple items. This allows you to highlight and quickly access important information or features when managing large amounts of data.",
-    "ja": "複数のアイテムに同じ問題を追加することで、関連するアイテムを簡単にグループ化することができます。",
+    "en": "You can easily perform grouping by adding the same issue to multiple items. This highlights and accesses important information or features quickly when managing a large volume of data.",
+    "ja": "複数の項目に同じイシューを追加することで、関連した項目が簡単にグループ化できます。",
     "ko": "여러 항목에 동일한 이슈를 추가하여 관련된 항목들을 쉽게 그룹화할 수 있습니다. 이를 통해 대량의 데이터를 관리할 때 중요한 정보나 특징을 강조하고 빠르게 접근할 수 있습니다.",
     "service_id": "DSC09292"
   },
   "TLT09293": {
-    "en": "Issue Search",
-    "ja": "問題の検索",
+    "en": "It searches for issues.",
+    "ja": "イシューの検索",
     "ko": "이슈 검색",
     "service_id": "TLT09293"
   },
   "TTL09294": {
-    "en": "Add issue",
-    "ja": "問題の追加",
+    "en": "Issue addition",
+    "ja": "イシューの追加",
     "ko": "이슈 추가",
     "service_id": "TTL09294"
   },
   "TTL09295": {
-    "en": "issue item",
-    "ja": "問題項目",
+    "en": "Issue",
+    "ja": "イシュー項目",
     "ko": "이슈 항목",
     "service_id": "TTL09295"
   },
   "ITM09296": {
     "en": "Issue name",
-    "ja": "問題名",
+    "ja": "イシュー名",
     "ko": "이슈명",
     "service_id": "ITM09296"
   },
   "NTC09297": {
-    "en": "The issue name cannot be empty.",
-    "ja": "問題名を空にできません。",
+    "en": "The issue name cannot be left empty.",
+    "ja": "イシュー名を空白に指定できません。",
     "ko": "이슈명을 비워둘 수 없습니다.",
     "service_id": "NTC09297"
   },
   "TLT09298": {
-    "en": "Please enter the issue name.",
-    "ja": "問題名を入力してください。",
+    "en": "Enter the issue name.",
+    "ja": "イシュー名を入力してください。",
     "ko": "이슈명을 입력해주세요.",
     "service_id": "TLT09298"
   },
   "ITM09299": {
-    "en": "Set issue period",
-    "ja": "課題期間の設定",
+    "en": "Issue period setting",
+    "ja": "イシュー期間の設定",
     "ko": "이슈 기간 설정",
     "service_id": "ITM09299"
   },
   "ITM09300": {
     "en": "Disabled",
-    "ja": "無効",
+    "ja": "使用しない",
     "ko": "사용 안함",
     "service_id": "ITM09300"
   },
   "ITM09301": {
     "en": "Enabled",
-    "ja": "使用",
+    "ja": "使用する",
     "ko": "사용",
     "service_id": "ITM09301"
   },
@@ -55046,121 +55046,121 @@
     "service_id": "ITM09302"
   },
   "TLT09303": {
-    "en": "Please search and select a category.",
+    "en": "Search and select the cagtegory.",
     "ja": "カテゴリを検索して選択してください。",
     "ko": "카테고리를 검색 및 선택해주세요.",
     "service_id": "TLT09303"
   },
   "DSC09304": {
-    "en": "You can set only the start time, or both start and end times.",
+    "en": "You can set only the start time, or both the start and end times.",
     "ja": "開始時刻のみを設定するか、開始時刻と終了時刻の両方を設定できます。",
     "ko": "시작 시각만 설정하거나, 시작과 종료 시각을 모두 설정할 수 있습니다.",
     "service_id": "DSC09304"
   },
   "ITM09305": {
-    "en": "start time",
+    "en": "Start time",
     "ja": "開始時刻",
     "ko": "시작 시각",
     "service_id": "ITM09305"
   },
   "ITM09306": {
-    "en": "end time",
+    "en": "End time",
     "ja": "終了時刻",
     "ko": "종료 시각",
     "service_id": "ITM09306"
   },
   "NTC09307": {
-    "en": "The start time cannot be left blank.",
-    "ja": "開始時刻を空にできません。",
+    "en": "The start time cannot be left empty.",
+    "ja": "開始時刻を空白に指定できません。",
     "ko": "시작 시각을 비워둘 수 없습니다.",
     "service_id": "NTC09307"
   },
   "NTC09308": {
-    "en": "You cannot select after the end time.",
-    "ja": "終了時刻以降は選択できません。",
+    "en": "The time after the end time cannot be selected.",
+    "ja": "終了時刻より後は選択できません。",
     "ko": "종료 시각 이후를 선택할 수 없습니다.",
     "service_id": "NTC09308"
   },
   "NTC09309": {
-    "en": "You cannot select an earlier start time.",
-    "ja": "開始時刻の移行は選択できません。",
+    "en": "The time before the start time cannot be selected.",
+    "ja": "開始時刻より前は選択できません。",
     "ko": "시작 시각 이전을 선택할 수 없습니다.",
     "service_id": "NTC09309"
   },
   "NTC09310": {
-    "en": "Are you sure you want to delete this issue item?",
-    "ja": "その問題項目を削除してもよろしいですか？",
+    "en": "Do you want to delete the issue?",
+    "ja": "該当のイシュー項目を削除しますか？",
     "ko": "해당 이슈 항목을 삭제하시겠습니까?",
     "service_id": "NTC09310"
   },
   "TTL09311": {
-    "en": "Issue fix",
-    "ja": "問題の修正",
+    "en": "Issue modification",
+    "ja": "イシューの修正",
     "ko": "이슈 수정",
     "service_id": "TTL09311"
   },
   "NTC09312": {
-    "en": "The issue was successfully added.",
-    "ja": "課題の追加に成功しました。",
+    "en": "Issue addition was successful.",
+    "ja": "イシューの追加に成功しました。",
     "ko": "이슈 추가에 성공했습니다.",
     "service_id": "NTC09312"
   },
   "NTC09313": {
-    "en": "Failed to add issue.",
-    "ja": "課題の追加に失敗しました。",
+    "en": "Issue addition failed.",
+    "ja": "イシューの追加に失敗しました。",
     "ko": "이슈 추가에 실패했습니다.",
     "service_id": "NTC09313"
   },
   "NTC09314": {
-    "en": "The issue has been successfully fixed.",
-    "ja": "問題の修正に成功しました。",
+    "en": "Issue modification was successful.",
+    "ja": "イシューの修正に成功しました。",
     "ko": "이슈 수정에 성공했습니다.",
     "service_id": "NTC09314"
   },
   "NTC09315": {
-    "en": "Failed to fix issue.",
-    "ja": "問題の修正に失敗しました。",
+    "en": "Issue modification failed.",
+    "ja": "イシューの修正に失敗しました。",
     "ko": "이슈 수정에 실패했습니다.",
     "service_id": "NTC09315"
   },
   "NTC09316": {
-    "en": "The issue was successfully deleted.",
-    "ja": "問題の削除に成功しました。",
+    "en": "Issue deletion was successful.",
+    "ja": "イシューの削除に成功しました。",
     "ko": "이슈 삭제에 성공했습니다.",
     "service_id": "NTC09316"
   },
   "NTC09317": {
-    "en": "Failed to delete issue.",
-    "ja": "問題の削除に失敗しました。",
+    "en": "Issue deletion failed.",
+    "ja": "イシューの削除に失敗しました。",
     "ko": "이슈 삭제에 실패했습니다.",
     "service_id": "NTC09317"
   },
   "TTL09318": {
-    "en": "custom field",
+    "en": "Custom field",
     "ja": "カスタムフィールド",
     "ko": "커스텀 필드",
     "service_id": "TTL09318"
   },
   "DSC09319": {
-    "en": "Custom fields are a feature that allows users to add and manage customized information needed in the system. This function allows you to create specific data items and utilize them for business processes or reports.",
-    "ja": "カスタムフィールドは、ユーザーがシステムに必要な情報をカスタマイズして追加および管理できるようにする機能です。この機能を使用すると、特定のデータ項目を作成したり、ワークプロセスやレポートに合わせて使用​​したりできます。",
+    "en": "Custom fields allows users to add and manage customized information required in the system. This feature allows you to create specific data and use them according to business processes or reports.",
+    "ja": "カスタムフィールドは、ユーザーがシステムに必要な情報をカスタマイズして追加および管理できるようにする機能です。この機能を使用すると、特定のデータ項目を作成したり、業務プロセスやレポートに合わせて使用​​したりできます。",
     "ko": "커스텀 필드는 사용자가 시스템에서 필요한 정보를 맞춤형으로 추가하고 관리할 수 있는 기능입니다. 이 기능을 통해 특정 데이터 항목을 생성하고, 이를 업무 프로세스나 보고서에 맞게 활용할 수 있습니다.",
     "service_id": "DSC09319"
   },
   "TLT09320": {
-    "en": "Custom Field Search",
+    "en": "It searches for custom fields.",
     "ja": "カスタムフィールドの検索",
     "ko": "커스텀 필드 검색",
     "service_id": "TLT09320"
   },
   "TTL09321": {
-    "en": "Add custom fields",
+    "en": "Custom field addition",
     "ja": "カスタムフィールドの追加",
     "ko": "커스텀 필드 추가",
     "service_id": "TTL09321"
   },
   "TTL09322": {
-    "en": "custom field items",
+    "en": "Custom field",
     "ja": "カスタムフィールド項目",
     "ko": "커스텀 필드 항목",
     "service_id": "TTL09322"
@@ -55172,37 +55172,37 @@
     "service_id": "ITM09323"
   },
   "NTC09324": {
-    "en": "Custom field names cannot be empty.",
-    "ja": "カスタムフィールド名を空にできません。",
+    "en": "The custom field name cannot be left empty.",
+    "ja": "カスタムフィールド名を空白に指定できません。",
     "ko": "커스텀 필드명을 비워둘 수 없습니다.",
     "service_id": "NTC09324"
   },
   "TLT09325": {
-    "en": "Please enter a custom field name.",
+    "en": "Enter the custom field name.",
     "ja": "カスタムフィールド名を入力してください。",
     "ko": "커스텀 필드명을 입력해주세요.",
     "service_id": "TLT09325"
   },
   "NTC09326": {
-    "en": "Are you sure you want to delete this custom field item?",
-    "ja": "そのカスタムフィールド項目を削除しますか？",
+    "en": "Do you want to delete the custome field?",
+    "ja": "該当のカスタムフィールド項目を削除しますか？",
     "ko": "해당 커스텀 필드 항목을 삭제하시겠습니까?",
     "service_id": "NTC09326"
   },
   "TTL09327": {
-    "en": "Edit custom fields",
-    "ja": "カスタムフィールドの変更",
+    "en": "Custom field modification",
+    "ja": "カスタムフィールドの修正",
     "ko": "커스텀 필드 수정",
     "service_id": "TTL09327"
   },
   "NTC09328": {
-    "en": "Successfully added custom field.",
+    "en": "Custom field addition was successful.",
     "ja": "カスタムフィールドの追加に成功しました。",
     "ko": "커스텀 필드 추가에 성공했습니다.",
     "service_id": "NTC09328"
   },
   "NTC09329": {
-    "en": "Failed to add custom field.",
+    "en": "Custom field addition failed.",
     "ja": "カスタムフィールドの追加に失敗しました。",
     "ko": "커스텀 필드 추가에 실패했습니다.",
     "service_id": "NTC09329"
@@ -55214,140 +55214,140 @@
     "service_id": "NTC09330"
   },
   "NTC09331": {
-    "en": "Failed to edit custom field.",
-    "ja": "カスタムフィールドの変更に失敗しました。",
+    "en": "Custom field modification failed.",
+    "ja": "カスタムフィールドの修正に失敗しました。",
     "ko": "커스텀 필드 수정에 실패했습니다.",
     "service_id": "NTC09331"
   },
   "NTC09332": {
-    "en": "The custom field was successfully deleted.",
+    "en": "Custom field deletion was successful.",
     "ja": "カスタムフィールドの削除に成功しました。",
     "ko": "커스텀 필드 삭제에 성공했습니다.",
     "service_id": "NTC09332"
   },
   "NTC09333": {
-    "en": "Failed to delete custom field.",
+    "en": "Custom field deletion failed.",
     "ja": "カスタムフィールドの削除に失敗しました。",
     "ko": "커스텀 필드 삭제에 실패했습니다.",
     "service_id": "NTC09333"
   },
   "NTC09334": {
-    "en": "List upload was successful.",
+    "en": "List uploading was successful.",
     "ja": "リストのアップロードに成功しました。",
     "ko": "목록 업로드를 성공했습니다.",
     "service_id": "NTC09334"
   },
   "NTC09335": {
-    "en": "List upload failed.",
+    "en": "List uploading failed.",
     "ja": "リストのアップロードに失敗しました。",
     "ko": "목록 업로드를 실패했습니다.",
     "service_id": "NTC09335"
   },
   "NTC09336": {
-    "en": "File download failed.",
+    "en": "File downloading failed.",
     "ja": "ファイルのダウンロードに失敗しました。",
     "ko": "파일 다운로드에 실패했습니다.",
     "service_id": "NTC09336"
   },
   "NTC09337": {
-    "en": "Sample download failed.",
+    "en": "Sample downloading failed.",
     "ja": "サンプルのダウンロードに失敗しました。",
     "ko": "샘플 다운로드에 실패했습니다.",
     "service_id": "NTC09337"
   },
   "CNT09338": {
-    "en": "({field1}) Status code is {field2}.",
+    "en": "The ({field1}) status code is {field2}.",
     "ja": "（{field1}）ステータスコードは{field2}です。",
     "ko": "({field1}) 상태 코드가 {field2} 입니다.",
     "service_id": "CNT09338"
   },
   "TTL09339": {
-    "en": "status code error",
-    "ja": "ステータスコード以上",
+    "en": "Status code error",
+    "ja": "ステータスコード異常",
     "ko": "상태 코드 이상",
     "service_id": "TTL09339"
   },
   "CNT09340": {
-    "en": "({field1}) connection time delayed to {field2}.",
-    "ja": "（{field1}）接続時間が{field2}に遅れています。",
+    "en": "The ({field1}) connectio time has been delayed due to {field2}.",
+    "ja": "（{field1}）接続時間が{field2}に遅くなっています。",
     "ko": "({field1}) 연결 시간이 {field2} 로 지연되었습니다.",
     "service_id": "CNT09340"
   },
   "TTL09341": {
-    "en": "connection delay",
+    "en": "Connection delay",
     "ja": "接続遅延",
     "ko": "접속 지연",
     "service_id": "TTL09341"
   },
   "CNT09342": {
-    "en": "({field1}) The web page title has been changed to \"{field2}\".",
+    "en": "The ({field1}) web page title has been changed to \"{field2}.\"",
     "ja": "（{field1}）Webページのタイトルが「{field2}」に変更されました。",
     "ko": "({field1}) 웹 페이지 타이틀이 \"{field2}\" 로 변경되었습니다.",
     "service_id": "CNT09342"
   },
   "TTL09343": {
     "en": "Title change detection",
-    "ja": "タイトル変更検知",
+    "ja": "タイトル変更の検知",
     "ko": "타이틀 변경 감지",
     "service_id": "TTL09343"
   },
   "CNT09344": {
-    "en": "({field1}) The final page has been changed to {field2}.",
+    "en": "The ({field1}) final page has been changed to {field2}.",
     "ja": "（{field1}）最終ページが{field2}に変更されました。",
     "ko": "({field1}) 최종 페이지가 {field2} 로 변경되었습니다.",
     "service_id": "CNT09344"
   },
   "TTL09345": {
-    "en": "Page location changed",
+    "en": "Page connection changed",
     "ja": "ページリンクが変更されました",
     "ko": "페이지 연결 변경됨",
     "service_id": "TTL09345"
   },
   "CNT09346": {
-    "en": "{field1} cannot be linked. Reason: {field2}",
+    "en": "{field1} cannot be connected. Reason: {field2}",
     "ja": "{field1} を接続できません。理由: {field2}",
     "ko": "{field1} 을 연결할 수 없습니다. 사유: {field2}",
     "service_id": "CNT09346"
   },
   "TTL09347": {
-    "en": "Page cannot be accessed",
+    "en": "Page connection impossible",
     "ja": "ページ接続不可",
     "ko": "페이지 접속 불가",
     "service_id": "TTL09347"
   },
   "NTC09348": {
-    "en": "The obstacle was successfully resolved.",
-    "ja": "障害解消に成功しました。",
+    "en": "Failure resolution was successful.",
+    "ja": "障害の解消に成功しました。",
     "ko": "장애 해소에 성공했습니다.",
     "service_id": "NTC09348"
   },
   "NTC09349": {
-    "en": "Failed to clear fault.",
+    "en": "Failure resolution failed.",
     "ja": "障害の解消に失敗しました。",
     "ko": "장애 해소에 실패했습니다.",
     "service_id": "NTC09349"
   },
   "NTC09350": {
-    "en": "Deleting the normal page name was successful.",
+    "en": "Normal page name deletion was successful.",
     "ja": "正常ページ名の削除に成功しました。",
     "ko": "정상 페이지명 삭제에 성공했습니다.",
     "service_id": "NTC09350"
   },
   "NTC09351": {
-    "en": "Failed to delete normal page name.",
-    "ja": "正常なページ名の削除に失敗しました。",
+    "en": "Normal page name deletion failed.",
+    "ja": "正常ページ名の削除に失敗しました。",
     "ko": "정상 페이지명 삭제에 실패했습니다.",
     "service_id": "NTC09351"
   },
   "NTC09352": {
     "en": "Normal URL deletion was successful.",
-    "ja": "正常なURLの削除に成功しました。",
+    "ja": "正常URLの削除に成功しました。",
     "ko": "정상 URL 삭제에 성공했습니다.",
     "service_id": "NTC09352"
   },
   "NTC09353": {
     "en": "Normal URL deletion failed.",
-    "ja": "通常のURLの削除に失敗しました。",
+    "ja": "正常URLの削除に失敗しました。",
     "ko": "정상 URL 삭제에 실패했습니다.",
     "service_id": "NTC09353"
   },
@@ -55364,22 +55364,274 @@
     "service_id": "ITM09355"
   },
   "ITM09356": {
-    "en": "exception",
+    "en": "Exception",
     "ja": "除外",
     "ko": "제외",
     "service_id": "ITM09356"
   },
   "ITM09357": {
-    "en": "Edit target",
+    "en": "Modification target",
     "ja": "修正対象",
     "ko": "수정 대상",
     "service_id": "ITM09357"
   },
   "ITM09358": {
-    "en": "Modifications",
+    "en": "Modification details",
     "ja": "修正内容",
     "ko": "수정 내용",
     "service_id": "ITM09358"
+  },
+  "TTL09359": {
+    "en": "Number of stack lines",
+    "ja": "スタックライン数",
+    "ko": "스택 라인 수",
+    "service_id": "TTL09359"
+  },
+  "DSC09360": {
+    "en": "{field1} cases selected",
+    "ja": "{field1}件を選択しました。",
+    "ko": "{field1}개 선택",
+    "service_id": "DSC09360"
+  },
+  "BTN09361": {
+    "en": "File system",
+    "ja": "ファイルシステム",
+    "ko": "파일 시스템",
+    "service_id": "BTN09361"
+  },
+  "TLT09362": {
+    "en": "Select it to allow logins only via SSO after configuring the SSO integration.",
+    "ja": "SSO連携設定後にSSOを通じたログインのみを許可する必要がある場合は、選択してください。",
+    "ko": "SSO 연동 설정 후 SSO를 통한 로그인만 허용해야 하는 경우 선택하세요.",
+    "service_id": "TLT09362"
+  },
+  "DSC09363": {
+    "en": "To use database monitoring V2, it must be {description}.",
+    "ja": "データベース監視V2を利用するには{description}でなければなりません。",
+    "ko": "데이터베이스 모니터링 V2를 이용하기 위해서는 {description} 이어야 합니다.",
+    "service_id": "DSC09363"
+  },
+  "DSC09364": {
+    "en": "Agent version {version} or higher, project version V2",
+    "ja": "エージェントバージョン{version}以降、プロジェクトバージョンV2",
+    "ko": "에이전트 버전 {version}이상, 프로젝트 버전 V2",
+    "service_id": "DSC09364"
+  },
+  "ITM09365": {
+    "en": "SSO key name",
+    "ja": "SSOキー名",
+    "ko": "SSO 키 이름",
+    "service_id": "ITM09365"
+  },
+  "ITM09366": {
+    "en": "Whether to restrict any service login",
+    "ja": "サービスログインの制限有無",
+    "ko": "서비스 로그인 제한 여부",
+    "service_id": "ITM09366"
+  },
+  "TTL09367": {
+    "en": "Number of crashes by app version",
+    "ja": "アプリバージョン別クラッシュ件数",
+    "ko": "앱 버전별 크래시 건수",
+    "service_id": "TTL09367"
+  },
+  "TTL09368": {
+    "en": "Number of crashes by screen",
+    "ja": "画面別クラッシュ件数",
+    "ko": "화면별 크래시 건수",
+    "service_id": "TTL09368"
+  },
+  "DSC09369": {
+    "en": "Monitoring is enabled for the URL.",
+    "ja": "該当URLの監視が有効になっている状態",
+    "ko": "해당 URL에 대한 모니터링이 활성화된 상태",
+    "service_id": "DSC09369"
+  },
+  "DSC09370": {
+    "en": "Monitoring of the URL is suspended until the user is changed.",
+    "ja": "該当URLの監視をユーザーが変更するまで無期限に停止します。",
+    "ko": "해당 URL에 대한 모니터링을 사용자 변경 전까지 무기한 정지",
+    "service_id": "DSC09370"
+  },
+  "DSC09371": {
+    "en": "Monitoring of the URL is stopped for a set period of time and switched to active status after that period.",
+    "ja": "該当URLの監視を設定された期間まで停止し、その期間後にはアクティブ状態に切り替えます。",
+    "ko": "해당 URL에 대한 모니터링을 설정된 기간까지 중지하며, 해당 기간 후 활성화 상태로 전환",
+    "service_id": "DSC09371"
+  },
+  "DSC09372": {
+    "en": "The URl is not displayed and included in aggregation on the dashboard.",
+    "ja": "ダッシュボードで該当URLを表示したり、集計したりしません。",
+    "ko": "대시보드에서 해당 URL을 나타내거나 집계하지 않음",
+    "service_id": "DSC09372"
+  },
+  "TTL09373": {
+    "en": "Addition of the health check target",
+    "ja": "ヘルスチェック対象の追加",
+    "ko": "헬스체크 대상 추가",
+    "service_id": "TTL09373"
+  },
+  "TLT09374": {
+    "en": "Search for the page name.",
+    "ja": "ページ名を検索してください。",
+    "ko": "페이지명을 검색하세요.",
+    "service_id": "TLT09374"
+  },
+  "ITM09375": {
+    "en": "Full URL",
+    "ja": "全体URLの状況",
+    "ko": "전체 URL 현황",
+    "service_id": "ITM09375"
+  },
+  "ITM09376": {
+    "en": "Category",
+    "ja": "カテゴリの現況",
+    "ko": "카테고리 현황",
+    "service_id": "ITM09376"
+  },
+  "ITM09377": {
+    "en": "Issue",
+    "ja": "イシューの現況",
+    "ko": "이슈 현황",
+    "service_id": "ITM09377"
+  },
+  "ITM09378": {
+    "en": "Details by category",
+    "ja": "カテゴリ別ステータス",
+    "ko": "카테고리별 상태",
+    "service_id": "ITM09378"
+  },
+  "ITM09379": {
+    "en": "Details by category (only errors)",
+    "ja": "カテゴリ別ステータス（エラーのみ）",
+    "ko": "카테고리별 상태 (에러만)",
+    "service_id": "ITM09379"
+  },
+  "ITM09380": {
+    "en": "Details by issue",
+    "ja": "イシュー別ステータス",
+    "ko": "이슈별 상태",
+    "service_id": "ITM09380"
+  },
+  "ITM09381": {
+    "en": "Details by issue (only errors)",
+    "ja": "イシュー別ステータス（エラーのみ）",
+    "ko": "이슈별 상태 (에러만)",
+    "service_id": "ITM09381"
+  },
+  "ITM09382": {
+    "en": "Job",
+    "ja": "業務",
+    "ko": "업무",
+    "service_id": "ITM09382"
+  },
+  "ITM09383": {
+    "en": "Number of transactions",
+    "ja": "トランザクション数",
+    "ko": "트랜잭션 수",
+    "service_id": "ITM09383"
+  },
+  "ITM09384": {
+    "en": "Response time",
+    "ja": "応答時間",
+    "ko": "응답 시간",
+    "service_id": "ITM09384"
+  },
+  "ITM09385": {
+    "en": "Transaction error rate",
+    "ja": "トランザクションエラー率",
+    "ko": "트랜잭션 에러율",
+    "service_id": "ITM09385"
+  },
+  "ITM09386": {
+    "en": "Number of erroneous transactions",
+    "ja": "エラートランザクション数",
+    "ko": "에러 트랜잭션 수",
+    "service_id": "ITM09386"
+  },
+  "ITM09387": {
+    "en": "Number of active transactions",
+    "ja": "アクティブトランザクション数",
+    "ko": "액티브 트랜잭션 수",
+    "service_id": "ITM09387"
+  },
+  "NTC09388": {
+    "en": "The page names and URLs detected as abnormal are changed to normal for normal operation.",
+    "ja": "非正常として検出されたページ名とURLを正常に変更して正常として処理します。",
+    "ko": "비정상으로 감지된 페이지명과 URL을 정상으로 변경하여 정상 처리합니다.",
+    "service_id": "NTC09388"
+  },
+  "TTL09389": {
+    "en": "Troubleshooting",
+    "ja": "障害の解消",
+    "ko": "장애 해소",
+    "service_id": "TTL09389"
+  },
+  "TTL09390": {
+    "en": "Top 10 activity load times",
+    "ja": "アクティビティロード時間 Top10",
+    "ko": "액티비티 로드 시간 Top10",
+    "service_id": "TTL09390"
+  },
+  "TTL09391": {
+    "en": "Top 10 activity load counts",
+    "ja": "アクティビティロード数 Top10",
+    "ko": "액티비티 로드 수 Top10",
+    "service_id": "TTL09391"
+  },
+  "BTN09392": {
+    "en": "Allowlist",
+    "ja": "許可リスト",
+    "ko": "허용 목록",
+    "service_id": "BTN09392"
+  },
+  "ITM09393": {
+    "en": "Activity",
+    "ja": "アクティビティ",
+    "ko": "액티비티",
+    "service_id": "ITM09393"
+  },
+  "TTL09394": {
+    "en": "Activity load performance trend",
+    "ja": "アクティビティ負荷パフォーマンスの推移",
+    "ko": "액티비티 로드 성능 추이",
+    "service_id": "TTL09394"
+  },
+  "TTL09395": {
+    "en": "Activity list",
+    "ja": "アクティビティ一覧",
+    "ko": "액티비티 목록",
+    "service_id": "TTL09395"
+  },
+  "ITM09396": {
+    "en": "App version",
+    "ja": "アプリのバージョン",
+    "ko": "앱 버전",
+    "service_id": "ITM09396"
+  },
+  "ITM09397": {
+    "en": "Activity name",
+    "ja": "アクティビティ名",
+    "ko": "액티비티 명",
+    "service_id": "ITM09397"
+  },
+  "TTL09398": {
+    "en": "Activity load count trend",
+    "ja": "アクティビティロード数推移",
+    "ko": "액티비티 로드 수 추이",
+    "service_id": "TTL09398"
+  },
+  "TTL09399": {
+    "en": "Activity load time trend",
+    "ja": "アクティビティロード時間の推移",
+    "ko": "액티비티 로드 시간 추이",
+    "service_id": "TTL09399"
+  },
+  "TTL09400": {
+    "en": "Excluding agents",
+    "ja": "エージェントの除外",
+    "ko": "에이전트 제외",
+    "service_id": "TTL09400"
   },
   "": {
     "en": "#VALUE!",
@@ -55754,6 +56006,11 @@
     "ja": "ダッシューボード",
     "ko": "대시보드"
   },
+  "side_agentResourceDashboard": {
+    "en": "Agent Resource Dashboard",
+    "ja": "エージェントリソースダッシュボード",
+    "ko": "Agent별 리소스 대시보드"
+  },
   "side_flexboard": {
     "en": "Flex Board",
     "ja": "Flexボード",
@@ -55788,6 +56045,11 @@
     "en": "Application Dashboard",
     "ja": "アプリケーション",
     "ko": "애플리케이션 대시보드"
+  },
+  "side_appContextDashboard": {
+    "en": "Context Dashboard",
+    "ja": "Context Dashboard",
+    "ko": "컨텍스트 대시보드"
   },
   "side_iisDashboard": {
     "en": "IIS Perf. Count",
@@ -56693,49 +56955,44 @@
     "ko": "URL 목록"
   },
   "side_urlCategoryStatusDashboard": {
-    "en": "URL Category Status",
-    "ja": "URL Category Status",
-    "ko": "URL 카테고리 현황 대시보드"
+    "en": "Category Status",
+    "ja": "カテゴリー現況ダッシュボード",
+    "ko": "카테고리 현황 대시보드"
   },
   "side_urlTagStatusDashboard": {
-    "en": "URL Issue Status",
-    "ja": "URL Issue Status",
-    "ko": "URL 이슈 현황 대시보드"
+    "en": "Issue Status",
+    "ja": "課題状況ダッシュボード",
+    "ko": "이슈 현황 대시보드"
   },
   "side_urlErrorStatusDashboard": {
-    "en": "Error URL Status",
-    "ja": "Error URL Status",
-    "ko": "장애 URL 현황 대시보드"
+    "en": "Error Status",
+    "ja": "障害状況ダッシュボード",
+    "ko": "장애 현황 대시보드"
   },
   "side_urlDetailPage": {
     "en": "URL Detail",
-    "ja": "URL Detail",
+    "ja": "URL詳細",
     "ko": "URL 상세"
   },
   "side_urlListManagement": {
     "en": "URL List Management",
-    "ja": "URL List Management",
+    "ja": "URLリスト管理",
     "ko": "URL 목록 관리"
   },
   "side_urlCategoryManagement": {
     "en": "Category Management",
-    "ja": "Category Management",
+    "ja": "カテゴリー管理",
     "ko": "카테고리 관리"
   },
   "side_urlTagManagement": {
     "en": "Issue Management",
-    "ja": "Issue Management",
+    "ja": "課題管理",
     "ko": "이슈 관리"
   },
   "side_urlCustomColumnsManagement": {
     "en": "Custom Field Management",
-    "ja": "Custom Field Management",
+    "ja": "カスタムフィールド管理",
     "ko": "커스텀 필드 관리"
-  },
-  "side_urlGridLayout": {
-    "en": "URL Grid Layout",
-    "ja": "URL Grid Layout",
-    "ko": "URL Grid Layout"
   },
   "side_containerMap": {
     "en": "Container Map",
