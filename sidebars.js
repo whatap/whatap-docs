@@ -5538,6 +5538,7 @@ const sidebars = {
         id: 'faq/index'
       },
       items: [
+        'faq/common-faq',
         'faq/apm-faq',
         'faq/db-faq',
         'faq/log-faq',
