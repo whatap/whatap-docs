@@ -4586,9 +4586,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_6',
+                  id: 'release-notes/python/python-1_7_7',
                   className: 'new',
                 },
+                'release-notes/python/python-1_7_6',
                 'release-notes/python/python-1_7_5',
                 'release-notes/python/python-1_7_4',
                 'release-notes/python/python-1_7_3',
@@ -4596,10 +4597,6 @@ const sidebars = {
                 'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
                 'release-notes/python/python-1_6_10',
-                'release-notes/python/python-1_6_9',
-                'release-notes/python/python-1_6_8',
-                'release-notes/python/python-1_6_7',
-                'release-notes/python/python-1_6_6',
                 'release-notes/python/python-previous',
               ],
             },
