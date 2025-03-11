@@ -46449,7 +46449,7 @@
   },
   "NTC07859": {
     "en": "In progress. This may take a moment.",
-    "ja": "適用中です。しばらく時間がかかることがあります。",
+    "ja": "適用中です。しばらく時間がかかる場合があります。",
     "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
     "service_id": "NTC07859"
   },
@@ -46496,7 +46496,7 @@
     "service_id": "DSC07866"
   },
   "DSC07867": {
-    "en": "Tables and indexes with values ​​greater than the collection criteria set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) are displayed in the list.",
+    "en": "Tables and indexes with values ​​greater than the collection standard set in <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code> in agent settings (whatap.conf) are displayed in the list.",
     "ja": "エージェント設定(whatap.conf)の<code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>で設定された収集基準より大きい値を持つテーブルとインデックスをリストに表示します。",
     "ko": "에이전트 설정(whatap.conf)의 <code style=\"background-color: #eee;\">table[index]_bloat_ratio[bytes]</code>에 설정된 수집 기준보다 큰 값을 가지는 테이블과 인덱스를 목록에 표시합니다.",
     "service_id": "DSC07867"
@@ -47127,7 +47127,7 @@
   },
   "DSC07972": {
     "en": "Run the following command to create an agent.",
-    "ja": "エージェントを生成するには、次のコマンドを実行します。",
+    "ja": "エージェントを作成するには、次のコマンドを実行します。",
     "ko": "에이전트를 생성하기 위해 다음 명령어를 실행하세요.",
     "service_id": "DSC07972"
   },
@@ -47342,7 +47342,7 @@
     "service_id": "DSC08007"
   },
   "DSC08008": {
-    "en": "Check the manifest of each object from the past",
+    "en": "Check the manifest for each object from the past",
     "ja": "過去時点のオブジェクト別マニフェストを確認します。",
     "ko": "과거 시점의 오브젝트별 매니페스트를 확인",
     "service_id": "DSC08008"
@@ -47702,7 +47702,7 @@
     "service_id": "DSC08067"
   },
   "CNT08068": {
-    "en": "Are you sure you want to delete that item?",
+    "en": "Are you sure you want to delete this item?",
     "ja": "該当の項目を削除してもよろしいですか？",
     "ko": "해당 항목을 삭제하시겠습니까?",
     "service_id": "CNT08068"
@@ -48159,7 +48159,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "service_id": "CNT08143"
   },
@@ -48368,7 +48368,7 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "It does not fit the IP format.",
+    "en": "Does not fit IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
     "service_id": "DSC08180"
@@ -48812,7 +48812,7 @@
     "service_id": "NTC08252"
   },
   "NTC08253": {
-    "en": "Searching for \"{category}\" as there are no logs that match your search criteria.",
+    "en": "Searching for \"{category}\" as there are no logs matching the search criteria.",
     "ja": "検索条件に一致するログがないため、「{category}」を検索します。",
     "ko": "검색 조건과 일치하는 로그가 없어 \"{category}\"를(을) 조회합니다.",
     "service_id": "NTC08253"
@@ -48908,7 +48908,7 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1-hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
     "service_id": "CNT08269"
@@ -49586,7 +49586,7 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
     "service_id": "DSC08383"
@@ -49844,7 +49844,7 @@
     "service_id": "TTL08425"
   },
   "DSC08426": {
-    "en": "It will take approximately 30 seconds to 1 minute to complete the task.",
+    "en": "It takes approximately 30 seconds to 1 minute to complete the task.",
     "ja": "作業完了まで1分程かかることがあります。",
     "ko": "작업 완료까지 약 30초에서 1분 정도 소요됩니다.",
     "service_id": "DSC08426"
@@ -50811,7 +50811,7 @@
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須であり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -50841,7 +50841,7 @@
   },
   "DSC08594": {
     "en": "It must be {highlighted}. Additional pattern registration may be required depending on the simulation result.",
-    "ja": "{highlight}する必要があり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
+    "ja": "{highlight}する必要があり、シミュレーション結果によってはパターン登録が必要になる場合があります。",
     "ko": "{highlight}되어야 하며, 시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08594"
   },
@@ -51189,7 +51189,7 @@
   },
   "DSC08652": {
     "en": "The <code class='_copy'>{ingressName}</code> Ingress is created in <code>{creationTime}</code>.",
-    "ja": "<code class='_copy'>{ingressName}</code> Ingress が <code>{creationTime}</code> に作成されました。",
+    "ja": "<code class='_copy'>{ingressName}</code> Ingress は <code>{creationTime}</code> で作成されました。",
     "ko": "<code class='_copy'>{ingressName}</code> Ingress는 <code>{creationTime}</code>에 생성되었습니다.",
     "service_id": "DSC08652"
   },
@@ -51620,7 +51620,7 @@
     "service_id": "DSC08724"
   },
   "DSC08725": {
-    "en": "Please update the agent version to the latest version.",
+    "en": "Update the agent version to the latest version.",
     "ja": "エージェントのバージョンを最新バージョンに更新してください。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
@@ -51908,7 +51908,7 @@
     "service_id": "ITM08772"
   },
   "DSC08773": {
-    "en": "Please refer to the instructions page for instructions on activating the server inventory function.",
+    "en": "Please refer to the instructions page for instructions on activating the server inventory feature.",
     "ja": "サーバーインベントリ機能を有効にする方法については、ガイドの内容を参照してください。",
     "ko": "서버 인벤토리 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
     "service_id": "DSC08773"
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value} 表示",
+    "ja": "{value}を表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52611,7 +52611,7 @@
   },
   "NTC08891": {
     "en": "This is a duplicate ID.",
-    "ja": "重複したIDです。",
+    "ja": "重複したID。",
     "ko": "중복된 ID 입니다.",
     "service_id": "NTC08891"
   },
@@ -52917,7 +52917,7 @@
   },
   "DSC08943": {
     "en": "The maximum {resource} usage <b>is close to or exceeds the node resource limit, possibly causing performance degradation or resource conflicts</b>. Adjust the <code>limit</code> setting or increase the resources.",
-    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスが低下したり、リソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下またはリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
     "ko": "최대 {resource} 사용량이 <b>노드 가용 자원에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
     "service_id": "DSC08943"
   },
@@ -53396,7 +53396,7 @@
     "service_id": "DSC09023"
   },
   "DSC09024": {
-    "en": "Performance data in terms of overall usage rate is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
+    "en": "Performance data in terms of overall utilization is collected and provided every 2 seconds, and data on individual processes/Physical Disk/NIC, etc. is collected and provided every 5 seconds.",
     "ja": "全体使用率の観点からの性能データは2秒、個別プロセス/Physical Disk/NICなどのデータは5秒間隔で収集します。",
     "ko": "전체 사용율 관점의 성능 데이터는 2초, 개별 프로세스/Physical Disk/NIC 등의 데이터는5초 단위로 수집하여 제공합니다.",
     "service_id": "DSC09024"
@@ -53414,7 +53414,7 @@
     "service_id": "DSC09028"
   },
   "DSC09029": {
-    "en": "You can easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
+    "en": "Easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
     "ja": "サーバーの指標を<b style=\"color:unset\">簡単に検索</b>して、性能の問題を迅速に把握できます。",
     "ko": "원하는 서버의 특정 <b style=\"color:unset\">지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
@@ -53535,7 +53535,7 @@
   },
   "TLT09051": {
     "en": "Receiving notifications may not work properly. Be sure to delete it.",
-    "ja": "通知の受信が正常に動作しない可能性があります。削除してください。",
+    "ja": "通知の受信が正常に動作しない場合があります。",
     "ko": "알림 수신이 정상적으로 동작하지 않을 수 있습니다. 삭제해주시기 바랍니다.",
     "service_id": "TLT09051"
   },
@@ -53552,7 +53552,7 @@
     "service_id": "DSC09053"
   },
   "DSC09054": {
-    "en": "Install the agent from the <b>Manage > Install Agent</b> page.",
+    "en": "Install the agent from the <b>Management > Install Agent</b> page.",
     "ja": "<b>管理 >エージェントのインストール</b>ページでエージェントをインストールします。",
     "ko": "<b>관리 > 에이전트 설치</b> 페이지에서 에이전트를 설치하세요.",
     "service_id": "DSC09054"
@@ -53943,7 +53943,7 @@
   },
   "DSC09119": {
     "en": "Enable \"Display no primary group\" or select another classification criteria.",
-    "ja": "1次グループなし表示設定を有効にするか、他の分類基準を選択してください。",
+    "ja": "一次グループなし表示設定を有効にするか、他の分類基準を選択してください。",
     "ko": "1차 그룹 없음 표시 설정 활성화 또는 다른 분류 기준을 선택해 주세요.",
     "service_id": "DSC09119"
   },
@@ -54231,7 +54231,7 @@
   },
   "TTL09167": {
     "en": "URL details",
-    "ja": "URL詳細",
+    "ja": "URLの詳細",
     "ko": "URL 상세",
     "service_id": "TTL09167"
   },
@@ -55632,6 +55632,156 @@
     "ja": "エージェントの除外",
     "ko": "에이전트 제외",
     "service_id": "TTL09400"
+  },
+  "TTL09403": {
+    "en": "Maximum throughput interface",
+    "ja": "最大 Throughput インターフェイス",
+    "ko": "최대 Throughput 인터페이스",
+    "service_id": "TTL09403"
+  },
+  "TTL09404": {
+    "en": "Maximum PPS interface",
+    "ja": "最大PPSインターフェース ",
+    "ko": "최대 PPS 인터페이스 ",
+    "service_id": "TTL09404"
+  },
+  "TTL09405": {
+    "en": "Top 10 trap events",
+    "ja": "Trap発生量 TOP 10",
+    "ko": "Trap 발생량 TOP 10",
+    "service_id": "TTL09405"
+  },
+  "NTC09406": {
+    "en": "The health check target has been deleted.",
+    "ja": "ヘルスチェック対象の削除に成功しました。",
+    "ko": "헬스체크 대상 삭제에 성공하였습니다.",
+    "service_id": "NTC09406"
+  },
+  "NTC09407": {
+    "en": "Deletion of the health check target failed due to unknown reasons.",
+    "ja": "不明な理由でヘルスチェック対象の削除に失敗しました。",
+    "ko": "알 수 없는 이유로 헬스체크 대상 삭제에 실패하였습니다.",
+    "service_id": "NTC09407"
+  },
+  "NTC09408": {
+    "en": "Addition of the health check target was successful.",
+    "ja": "ヘルスチェック対象の追加に成功しました。",
+    "ko": "헬스체크 대상 추가에 성공하였습니다.",
+    "service_id": "NTC09408"
+  },
+  "NTC09409": {
+    "en": "Deletion of the health check target failed due to unknown reasons.",
+    "ja": "不明な理由でヘルスチェック対象の削除に失敗しました。",
+    "ko": "알 수 없는 이유로 헬스체크 대상 삭제에 실패하였습니다.",
+    "service_id": "NTC09409"
+  },
+  "NTC09410": {
+    "en": "Modification of the health check target was successful.",
+    "ja": "ヘルスチェック対象の修正に成功しました。",
+    "ko": "헬스체크 대상 수정에 성공하였습니다.",
+    "service_id": "NTC09410"
+  },
+  "NTC09411": {
+    "en": "Modification of the health check target failed due to unknown reasons.",
+    "ja": "不明な理由でヘルスチェック対象の修正に失敗しました。",
+    "ko": "알 수 없는 이유로 헬스체크 대상 수정에 실패하였습니다.",
+    "service_id": "NTC09411"
+  },
+  "CNT09412": {
+    "en": "Selected agent: {count}",
+    "ja": "選択したエージェント：{count}",
+    "ko": "선택된 에이전트: {count}",
+    "service_id": "CNT09412"
+  },
+  "DSC09413": {
+    "en": "To exclude agents",
+    "ja": "エージェントを除外する",
+    "ko": "에이전트를 제외하기 위해",
+    "service_id": "DSC09413"
+  },
+  "DSC09414": {
+    "en": "directly input this.",
+    "ja": "を直接入力してください。",
+    "ko": "를 직접 입력하세요.",
+    "service_id": "DSC09414"
+  },
+  "TTL09415": {
+    "en": "Changing the payment role",
+    "ja": "お支払い権限の変更",
+    "ko": "결제 권한 변경",
+    "service_id": "TTL09415"
+  },
+  "DSC09416": {
+    "en": "The sub group/project has any payment role setting.",
+    "ja": "サブグループ/プロジェクトに支払い権限が設定された履歴があります。",
+    "ko": "하위 그룹/프로젝트에 결제 권한이 설정된 내역이 있습니다.",
+    "service_id": "DSC09416"
+  },
+  "DSC09417": {
+    "en": "Do you want to remove the payment role of the sub group/project and apply the inherited payment role changes?",
+    "ja": "サブグループ/プロジェクトに支払い権限をオフにし、変更される支払い権限の継承を適用​​しますか？",
+    "ko": "하위 그룹/프로젝트에 결제 권한을 해제하고 변경되는 결제 권한 상속을 적용 하시겠습니까?",
+    "service_id": "DSC09417"
+  },
+  "DSC09418": {
+    "en": "Select a project to apply the role inheritance and then click \"Apply.\"",
+    "ja": "権限の継承を適用​​するプロジェクトを選択し、「適用」ボタンをクリックします。",
+    "ko": "권한 상속을 적용할 프로젝트를 선택한 후 “적용” 버튼을 클릭하세요.",
+    "service_id": "DSC09418"
+  },
+  "DSC09419": {
+    "en": "The agent is excluded from the project.",
+    "ja": "プロジェクトからそのエージェントを除外します。",
+    "ko": "프로젝트에서 해당 에이전트를 제외합니다.",
+    "service_id": "DSC09419"
+  },
+  "BTN09420": {
+    "en": "Display logical interface",
+    "ja": "論理インターフェースの表示",
+    "ko": "논리 인터페이스 표시",
+    "service_id": "BTN09420"
+  },
+  "ITM09421": {
+    "en": "Payment Authorization Account",
+    "ja": "お支払い権限アカウント",
+    "ko": "결제 권한 계정",
+    "service_id": "ITM09421"
+  },
+  "TLT09422": {
+    "en": "If no data is collected from an agent within the set time, the agent is marked as inactive.",
+    "ja": "設定された時間内にエージェントから収集されたデータがない場合は、そのエージェントを非アクティブ状態で表示します。",
+    "ko": "설정된 시간 내에 에이전트로부터 수집된 데이터가 없을 경우, 해당 에이전트를 비활성 상태로 표시합니다.",
+    "service_id": "TLT09422"
+  },
+  "ITM09423": {
+    "en": "Confirm agent deactivation",
+    "ja": "エージェントの無効化の確認",
+    "ko": "에이전트 비활성화 확인",
+    "service_id": "ITM09423"
+  },
+  "TTL09424": {
+    "en": "Do you want to pause the agent?",
+    "ja": "エージェントを一時停止しますか？",
+    "ko": "에이전트를 일시정지 하시겠습니까?",
+    "service_id": "TTL09424"
+  },
+  "TTL09425": {
+    "en": "Would you like to restart the agent?",
+    "ja": "エージェントを再起動しますか？",
+    "ko": "에이전트를 재시작 하시겠습니까?",
+    "service_id": "TTL09425"
+  },
+  "NTC09426": {
+    "en": "Are you sure you want to delete the selected preset ({name})?",
+    "ja": "選択したプリセット（{name}）を削除しますか？",
+    "ko": "선택한 프리셋({name})을 삭제하시겠습니까?",
+    "service_id": "NTC09426"
+  },
+  "DSC09427": {
+    "en": "Deleted presets cannot be recovered.",
+    "ja": "削除されたプリセットは復元できません。",
+    "ko": "삭제된 프리셋은 복구할 수 없습니다.",
+    "service_id": "DSC09427"
   },
   "": {
     "en": "#VALUE!",
