@@ -88,6 +88,8 @@ export default function CheckProduct() {
         product = '-feature';
     } else if (cProdt === 'nms') {
         product = '-nms';
+    } else if (cProdt === 'sapase') {
+        product = '-sapase';
     } else {
         product = '';
     }
