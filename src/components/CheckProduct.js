@@ -90,6 +90,8 @@ export default function CheckProduct() {
         product = '-nms';
     } else if (cProdt === 'sapase') {
         product = '-sapase';
+    } else if (cProdt === 'db2') {
+        product = '-db2';
     } else {
         product = '';
     }
