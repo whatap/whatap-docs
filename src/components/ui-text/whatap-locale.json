@@ -46449,7 +46449,7 @@
   },
   "NTC07859": {
     "en": "In progress. This may take a moment.",
-    "ja": "適用中です。しばらく時間がかかる場合があります。",
+    "ja": "適用中です。しばらく時間がかかることがあります。",
     "ko": "적용 중입니다. 잠시 시간이 걸릴 수 있습니다.",
     "service_id": "NTC07859"
   },
@@ -48159,7 +48159,7 @@
   },
   "CNT08143": {
     "en": "All widget charts will zoom in when you drag a chart.",
-    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括して変更されます。",
+    "ja": "チャート時間を変更すると、すべてのウィジェットの時間が一括で変更されます。",
     "ko": "차트 시간 변경 시 모든 위젯들의 시간이 일괄로 변경됩니다.",
     "service_id": "CNT08143"
   },
@@ -48368,7 +48368,7 @@
     "service_id": "TTL08179"
   },
   "DSC08180": {
-    "en": "Does not fit IP format.",
+    "en": "It does not fit the IP format.",
     "ja": "IPアドレスの形式が正しくありません。",
     "ko": "IP 형식에 맞지 않습니다.",
     "service_id": "DSC08180"
@@ -48453,7 +48453,7 @@
   },
   "NTC08194": {
     "en": "An unknown error occurred. Please try again later.",
-    "ja": "不明なエラーが発生しました。しばらくしてからもう一度進めてください。",
+    "ja": "不明なエラーが発生しました。しばらくしてからもう一度お試しください。",
     "ko": "알 수 없는 오류가 발생했습니다. 잠시 후 다시 진행하세요.",
     "service_id": "NTC08194"
   },
@@ -48908,7 +48908,7 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for the replica yard.",
+    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
     "service_id": "CNT08269"
@@ -49586,7 +49586,7 @@
     "service_id": "DSC08382"
   },
   "DSC08383": {
-    "en": "This is WhaTap’s latest agent version. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
+    "en": "This is the latest agent version of WhaTap. If you select the Preview version, if nodes are added in the future, the latest agent version at the time the node is started will be installed. ",
     "ja": "WhaTap Monitoringの最新エージェントバージョンです。Previewバージョンを選択した場合、今後ノードが追加されると、当該ノードが起動した時点の最新バージョンのエージェントがインストールされます。 ",
     "ko": "와탭의 최신 에이전트 버전입니다. Preview 버전을 선택하는 경우 향후에 노드가 추가되면 해당 노드가 기동된 시점의 최신 에이전트 버전이 설치됩니다. ",
     "service_id": "DSC08383"
@@ -50762,7 +50762,7 @@
     "service_id": "BTN08580"
   },
   "DSC08581": {
-    "en": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "en": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "ja": "イベントの対象を変更した場合は、アラート通知の件数が変わる可能性があるため、<span class=\"{class}\">「シミュレーション」ボタンをもう一度実行してください。</span>",
     "ko": "이벤트 대상을 변경한 경우, 알림 건수가 달라질 수 있으니 <span class=\"{class}\">“시뮬레이션” 버튼을 다시 실행하세요.</span>",
     "service_id": "DSC08581"
@@ -51483,7 +51483,7 @@
   },
   "CNT08701": {
     "en": "A subscription for AWS Marketplace is required. Once the subscription is confirmed, you can use the WhaTap services.",
-    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
+    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "service_id": "CNT08701"
   },
@@ -52365,7 +52365,7 @@
   },
   "BTN08849": {
     "en": "Display {value}",
-    "ja": "{value}を表示",
+    "ja": "{value} 表示",
     "ko": "{value} 표시",
     "service_id": "BTN08849"
   },
@@ -52395,7 +52395,7 @@
   },
   "TLT08854": {
     "en": "Bind variable is not in the correct format. Paste the value in the format {\"bind\": [\"example\"]}.",
-    "ja": "バインド変数が正しい形式ではありません。 {\"bind\": [\"example\"]} 形式の値を貼り付けます。",
+    "ja": "バインド変数が正しい型ではありません。{\"bind\": [\"example\"]} 型の値を貼り付けます。",
     "ko": "바인드 변수가 올바른 형식이 아닙니다. {\"bind\": [\"example\"]} 형식의 값을 붙여 넣으세요.",
     "service_id": "TLT08854"
   },
@@ -52917,7 +52917,7 @@
   },
   "DSC08943": {
     "en": "The maximum {resource} usage <b>is close to or exceeds the node resource limit, possibly causing performance degradation or resource conflicts</b>. Adjust the <code>limit</code> setting or increase the resources.",
-    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下またはリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下やリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
     "ko": "최대 {resource} 사용량이 <b>노드 가용 자원에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
     "service_id": "DSC08943"
   },
@@ -53384,7 +53384,7 @@
     "service_id": "TTL09021"
   },
   "CNT09022": {
-    "en": "<b style=\"color:unset\">Update your agent to the latest version and enable the Category V2 option</b></br>to better utilize real-time data exploration and historical performance analysis.",
+    "en": "<b style=\"color:unset\">Update your agent to the latest version and enable the Category V2 option</b> to take better advantage of real-time data exploration and historical performance analysis.",
     "ja": "<b style=\"color:unset\">最新バージョンにエージェントを更新し、Category V2オプションを有効にします。</b></br>リアルタイムなデータ照会と過去性能の分析がより効果的に活用できます。",
     "ko": "<b style=\"color:unset\">최신 버전으로 에이전트를 업데이트하고 Category V2 옵션을 활성화</b>하여</br>실시간 데이터 탐색 및 과거 성능 분석을 더욱 효과적으로 활용해 보세요.",
     "service_id": "CNT09022"
@@ -53414,7 +53414,7 @@
     "service_id": "DSC09028"
   },
   "DSC09029": {
-    "en": "Easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
+    "en": "You can easily explore specific <b style=\"color:unset\">metrics</b> for the server of your choice and quickly identify performance issues.",
     "ja": "サーバーの指標を<b style=\"color:unset\">簡単に検索</b>して、性能の問題を迅速に把握できます。",
     "ko": "원하는 서버의 특정 <b style=\"color:unset\">지표를 손쉽게 탐색</b>하고 성능 이슈를 빠르게 파악할 수 있습니다.",
     "service_id": "DSC09029"
@@ -53535,7 +53535,7 @@
   },
   "TLT09051": {
     "en": "Receiving notifications may not work properly. Be sure to delete it.",
-    "ja": "通知の受信が正常に動作しない場合があります。",
+    "ja": "通知の受信が正常に動作しない可能性があります。削除してください。",
     "ko": "알림 수신이 정상적으로 동작하지 않을 수 있습니다. 삭제해주시기 바랍니다.",
     "service_id": "TLT09051"
   },
@@ -53552,7 +53552,7 @@
     "service_id": "DSC09053"
   },
   "DSC09054": {
-    "en": "Install the agent from the <b>Management > Install Agent</b> page.",
+    "en": "Install the agent from the <b>Manage > Install Agent</b> page.",
     "ja": "<b>管理 >エージェントのインストール</b>ページでエージェントをインストールします。",
     "ko": "<b>관리 > 에이전트 설치</b> 페이지에서 에이전트를 설치하세요.",
     "service_id": "DSC09054"
@@ -55742,13 +55742,13 @@
     "service_id": "BTN09420"
   },
   "ITM09421": {
-    "en": "Payment Authorization Account",
+    "en": "Payment role account",
     "ja": "お支払い権限アカウント",
     "ko": "결제 권한 계정",
     "service_id": "ITM09421"
   },
   "TLT09422": {
-    "en": "If no data is collected from an agent within the set time, the agent is marked as inactive.",
+    "en": "If no data is collected from the agent within the set period, the agent is marked as inactive.",
     "ja": "設定された時間内にエージェントから収集されたデータがない場合は、そのエージェントを非アクティブ状態で表示します。",
     "ko": "설정된 시간 내에 에이전트로부터 수집된 데이터가 없을 경우, 해당 에이전트를 비활성 상태로 표시합니다.",
     "service_id": "TLT09422"
@@ -55766,22 +55766,292 @@
     "service_id": "TTL09424"
   },
   "TTL09425": {
-    "en": "Would you like to restart the agent?",
+    "en": "Do you want to restart the agent?",
     "ja": "エージェントを再起動しますか？",
     "ko": "에이전트를 재시작 하시겠습니까?",
     "service_id": "TTL09425"
   },
   "NTC09426": {
-    "en": "Are you sure you want to delete the selected preset ({name})?",
+    "en": "Do you want to delete the selected preset ({name})?",
     "ja": "選択したプリセット（{name}）を削除しますか？",
     "ko": "선택한 프리셋({name})을 삭제하시겠습니까?",
     "service_id": "NTC09426"
   },
   "DSC09427": {
-    "en": "Deleted presets cannot be recovered.",
+    "en": "The deleted presets cannot be recovered.",
     "ja": "削除されたプリセットは復元できません。",
     "ko": "삭제된 프리셋은 복구할 수 없습니다.",
     "service_id": "DSC09427"
+  },
+  "NTC09428": {
+    "en": "There is no payment data registered for the {account} account.{br} Register the payment information first.",
+    "ja": "{account}アカウントにお支払い情報は登録されていません。{br}お支払い情報を最初に登録してください。",
+    "ko": "{account} 계정에는 결제 정보가 등록되어 있지 않습니다.{br}결제 정보를 먼저 등록해 주세요.",
+    "service_id": "NTC09428"
+  },
+  "NTC09429": {
+    "en": "There is payment data registered for the {accunt} account of the {group}.{br} When setting the payment roles, the organization, group, and project are charged separately.",
+    "ja": "{group}の{account}アカウントに登録されている\nお支払い情報があります。{br}お支払い権限を設定するとき\n該当する組織/グループ/プロジェクトは別途料金が発生します。",
+    "ko": "{group}의 {account} 계정에 등록된\n결제 정보가 있습니다.{br}결제 권한 설정 시\n해당 조직 / 그룹 / 프로젝트는 별도로 비용이 청구됩니다.",
+    "service_id": "NTC09429"
+  },
+  "NTC09430": {
+    "en": "The billing role is set for the {account} account.{br}\nOnly one person can have the billing authority.{br}\nDo you want to transfer the payment role?",
+    "ja": "{account}アカウントにビリング権限が設定されています。{br}\nビリング権限は1人のみ設定できます。{br}\nお支払い権限を譲渡しますか？",
+    "ko": "{account} 계정에 빌링 권한이 설정되어 있습니다.{br}\n빌링 권한은 1명만 설정 가능합니다.{br}\n결제 권한을 이양하시겠습니까?",
+    "service_id": "NTC09430"
+  },
+  "NTC09431": {
+    "en": "There must be at least a single user for the payment role.{br} Set the payment role for the account where payment information is registered.",
+    "ja": "お支払い権限を持つユーザーが少なくとも1人である必要があります。{br}お支払い情報が登録されているアカウントにお支払い権限を設定してください。",
+    "ko": "결제 권한이 있는 사용자가 최소 1인은 있어야 합니다.{br}결제 정보가 등록된 계정에 결제 권한을 설정해주세요.",
+    "service_id": "NTC09431"
+  },
+  "TTL09432": {
+    "en": "ANR statistics",
+    "ja": "ANR統計",
+    "ko": "ANR 통계",
+    "service_id": "TTL09432"
+  },
+  "ITM09433": {
+    "en": "ANR screen name",
+    "ja": "ANR画面名",
+    "ko": "ANR 화면 이름",
+    "service_id": "ITM09433"
+  },
+  "TTL09434": {
+    "en": "ANR trend",
+    "ja": "ANR推移",
+    "ko": "ANR 추이",
+    "service_id": "TTL09434"
+  },
+  "TTL09435": {
+    "en": "Top 10 ANR cases by screen",
+    "ja": "画面別ANR件数トップ10",
+    "ko": "화면 별 ANR 건수 Top 10",
+    "service_id": "TTL09435"
+  },
+  "TTL09436": {
+    "en": "Top 10 ANR elapsed times by screen",
+    "ja": "画面別ANR経過時間トップ10",
+    "ko": "화면 별 ANR 경과시간 Top 10",
+    "service_id": "TTL09436"
+  },
+  "TTL09437": {
+    "en": "ANR lists by screen",
+    "ja": "画面別ANRリスト",
+    "ko": "화면 별 ANR 목록",
+    "service_id": "TTL09437"
+  },
+  "TTL09438": {
+    "en": "Device name",
+    "ja": "デバイス名",
+    "ko": "디바이스 이름",
+    "service_id": "TTL09438"
+  },
+  "DSC09439": {
+    "en": "Enter the email address of the member to share with.",
+    "ja": "共有するメンバーのEメールを入力してください。",
+    "ko": "공유할 멤버의 이메일을 입력하세요.",
+    "service_id": "DSC09439"
+  },
+  "DSC09440": {
+    "en": "Add the account to share the dashboard with. Afterwards, changes in the dashboard are shared.",
+    "ja": "ダッシュボードを共有するアカウントを追加します。その後、ダッシュボードの変更が共有されます。",
+    "ko": "대시보드를 공유할 계정을 추가합니다. 이후 대시보드의 변경사항이 공유됩니다.",
+    "service_id": "DSC09440"
+  },
+  "BTN09441": {
+    "en": "Share",
+    "ja": "共有",
+    "ko": "공유",
+    "service_id": "BTN09441"
+  },
+  "TTL09442": {
+    "en": "Dashboard owner",
+    "ja": "ダッシュボード所有メンバー",
+    "ko": "대시보드 소유 멤버",
+    "service_id": "TTL09442"
+  },
+  "TTL09443": {
+    "en": "Members to share",
+    "ja": "共有メンバー",
+    "ko": "공유 멤버",
+    "service_id": "TTL09443"
+  },
+  "TTL09444": {
+    "en": "Do you want to remove from the members to share?",
+    "ja": "共有メンバーから削除しますか？",
+    "ko": "공유 멤버에서 삭제하시겠습니까?",
+    "service_id": "TTL09444"
+  },
+  "DSC09445": {
+    "en": "If removed, the member is removed from the list on the dashboard.",
+    "ja": "共有メンバーから削除すると、そのメンバーのダッシュボードリストから削除されます。",
+    "ko": "공유 멤버에서 삭제 시, 해당 멤버의 대시보드 목록에서 제거됩니다.",
+    "service_id": "DSC09445"
+  },
+  "TTL09446": {
+    "en": "Start of inspection for personal information de-identification",
+    "ja": "個人情報の非識別チェックを開始",
+    "ko": "개인정보 비식별화 점검 시작",
+    "service_id": "TTL09446"
+  },
+  "DSC09447": {
+    "en": "The value that matches the selected personal information pattern is replaced.",
+    "ja": "選択した個人情報パターンに一致する値を置き換えます。",
+    "ko": "선택하신 개인정보 패턴에 매칭되는 값을 치환합니다.",
+    "service_id": "DSC09447"
+  },
+  "DSC09448": {
+    "en": "Data cannot be restored after replacement.",
+    "ja": "置換後のデータの元にはなりません。",
+    "ko": "치환 이후 데이터 원복은 되지 않습니다.",
+    "service_id": "DSC09448"
+  },
+  "DSC09449": {
+    "en": "If replacement is required, see below.",
+    "ja": "置換が必要な場合",
+    "ko": "치환을 원하신다면 아래",
+    "service_id": "DSC09449"
+  },
+  "DSC09450": {
+    "en": "Replace",
+    "ja": "置換する",
+    "ko": "치환하기",
+    "service_id": "DSC09450"
+  },
+  "CNT09451": {
+    "en": "Please enter directly.",
+    "ja": "を直接入力してください。",
+    "ko": "를 직접 입력하세요.",
+    "service_id": "CNT09451"
+  },
+  "BTN09452": {
+    "en": "OK",
+    "ja": "確認",
+    "ko": "확인",
+    "service_id": "BTN09452"
+  },
+  "DSC09453": {
+    "en": "The number of matched logs is {n} and the number of sampled logs is {m}.",
+    "ja": "一致するログの数は{n}、サンプリングされたログの数は{m}です。",
+    "ko": "매칭된 로그 갯수는 {n}이며, 샘플링된 로그 갯수는 {m}입니다.",
+    "service_id": "DSC09453"
+  },
+  "BTN09454": {
+    "en": "Check results",
+    "ja": "結果の確認",
+    "ko": "결과 확인",
+    "service_id": "BTN09454"
+  },
+  "TTL09455": {
+    "en": "Number of HTTP cases",
+    "ja": "HTTP件数",
+    "ko": "HTTP 건수",
+    "service_id": "TTL09455"
+  },
+  "TTL09456": {
+    "en": "Number of crashes",
+    "ja": "クラッシュ件数",
+    "ko": "크래시 건수",
+    "service_id": "TTL09456"
+  },
+  "BTN09457": {
+    "en": "Runnable thread",
+    "ja": "Runnable スレッド",
+    "ko": "Runnable 스레드",
+    "service_id": "BTN09457"
+  },
+  "BTN09458": {
+    "en": "HTTPC statistics",
+    "ja": "HTTPC統計",
+    "ko": "HTTPC 통계",
+    "service_id": "BTN09458"
+  },
+  "TTL09459": {
+    "en": "Resource details",
+    "ja": "リソース詳細",
+    "ko": "리소스 상세",
+    "service_id": "TTL09459"
+  },
+  "TTL09460": {
+    "en": "Statistics Top {n}",
+    "ja": "統計トップ{n}",
+    "ko": "통계 Top {n}",
+    "service_id": "TTL09460"
+  },
+  "NTC09461": {
+    "en": "Download is in progress. Please try again later.",
+    "ja": "ダウンロードが進行中です。しばらくしてからもう一度お試しください。",
+    "ko": "다운로드가 진행 중입니다. 잠시 후 다시 시도해주세요.",
+    "service_id": "NTC09461"
+  },
+  "TTL09462": {
+    "en": "ANR count trend",
+    "ja": "ANR件数推移",
+    "ko": "ANR 건수 추이",
+    "service_id": "TTL09462"
+  },
+  "TTL09463": {
+    "en": "ANR elapsed time trend",
+    "ja": "ANR経過時間の推移",
+    "ko": "ANR 경과 시간 추이",
+    "service_id": "TTL09463"
+  },
+  "TTL09464": {
+    "en": "Crash statistics",
+    "ja": "クラッシュ統計",
+    "ko": "크래시 통계",
+    "service_id": "TTL09464"
+  },
+  "TTL09465": {
+    "en": "Count trends by exception message",
+    "ja": "例外メッセージ別件数推移",
+    "ko": "예외 메세지 별 건수 추이",
+    "service_id": "TTL09465"
+  },
+  "ITM09466": {
+    "en": "Exception message",
+    "ja": "例外メッセージ",
+    "ko": "예외 메세지",
+    "service_id": "ITM09466"
+  },
+  "ITM09467": {
+    "en": "Exception type",
+    "ja": "例外タイプ",
+    "ko": "예외 타입",
+    "service_id": "ITM09467"
+  },
+  "ITM09468": {
+    "en": "Thread name",
+    "ja": "スレッド名",
+    "ko": "쓰레드 이름",
+    "service_id": "ITM09468"
+  },
+  "TTL09469": {
+    "en": "To change the payment role, approval is required.",
+    "ja": "お支払い権限を変更するには承認が必要です。",
+    "ko": "결제 권한을 변경하려면 승인이 필요합니다.",
+    "service_id": "TTL09469"
+  },
+  "CNT09470": {
+    "en": "An approval email is sent to the following account. {br} After approval, the changed payment role setting is applied.",
+    "ja": "以下のアカウントに承認メールが送信されます。{br}メール承認が完了すると、お支払い権限の設定が適用されます。",
+    "ko": "아래의 계정으로 승인 이메일을 발송됩니다.{br}이메일 승인 완료 시 결제 권한 설정이 적용됩니다.",
+    "service_id": "CNT09470"
+  },
+  "TLT09471": {
+    "en": "The corresponding page appears.",
+    "ja": "そのページに移動します。",
+    "ko": "해당 페이지로 이동합니다.",
+    "service_id": "TLT09471"
+  },
+  "CNT09472": {
+    "en": "Connection Status",
+    "ja": "接続状態",
+    "ko": "연결 상태",
+    "service_id": "CNT09472"
   },
   "": {
     "en": "#VALUE!",
@@ -56200,6 +56470,11 @@
     "en": "Context Dashboard",
     "ja": "Context Dashboard",
     "ko": "컨텍스트 대시보드"
+  },
+  "side_appOutboundDashboard": {
+    "en": "Outbound Dashboard",
+    "ja": "Outbound Dashboard",
+    "ko": "아웃바운드 대시보드"
   },
   "side_iisDashboard": {
     "en": "IIS Perf. Count",
