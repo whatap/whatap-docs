@@ -53,7 +53,7 @@ The settings required for the Kubernetes internal application agent can be confi
 
 - If no value is set in _whatap.conf_ or container `env`, the default value is used.
 
-- In case of the `license` and `whatap.server.host` options, use the **container environment variable** settings. 
+- Use the In case of 'license' and 'whatap.server.host options, use the **container environment variables** settings. For more information, check [the following] (#application-conf-check).
 
 If any settings in the configuration file are changed or important settings are lost, the configuration may not work properly. Therefore, it is recommended to configure **container environment variables** in the Kubernetes environment. For more information about other agent control options, see [the following](https://docs.whatap.io/java/agent-control-function).
 
@@ -70,6 +70,32 @@ If any settings in the configuration file are changed or important settings are 
 - `whatap.name`: Unique name by which the collection server identifies agents. The name is generated based on the object on which the agent is running. Random assignment of users may cause problems with agent identification. 
 
 - `whatap.onode`: The Kubernetes cluster node name is set by default. It is used to receive information about the node to which the agent belongs. When specified by the user, it may be difficult to accurately identify the node. 
+
+:::
+
+:::note
+
+**Checking the `whatap.server.host` setting of the application** <ScrollToLink anchor='application-conf-check' />
+
+In some container images, you cannot directly set environment variables with `.` such as `whatap.server.host`. If this keeps the application agent from starting normally, directly modify the _whatap.conf_ file to set the `whatap.server.host` value. The procedure how to check the `whatap.server.host` setting of the application is as follows: 
+
+1. Enter into the WhaTap application container. 
+
+2. By executing the following command, check whether the `whatap.server.host` value is included.
+
+   ````
+   ```bash 
+   $ env | grep whatap.server.host
+   ```
+   ````
+
+   **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the _whatap.conf_ file and then manually set the `whatap.server.host` value as follows: 
+
+   ````
+   ```bash
+   whatap.server.host={WhaTap Collection Server IP}
+   ```
+   ````
 
 :::
 
@@ -211,7 +237,7 @@ The following guides you to include **the specified version of the agent** in th
 
    - If no value is set in _whatap.conf_ or container `env`, the default value is used.
 
-   - In case of the `license` and `whatap.server.host` options, use the **container environment variable** settings. 
+   - Use the In case of `license` and `whatap.server.host` options, use the **container environment variables** settings. For more information, check [the following] (#application-conf-check2).
 
    If any settings in the configuration file are changed or important settings are lost, the configuration may not work properly. Therefore, it is recommended to configure **container environment variables** in the Kubernetes environment. For more information about other agent control options, see [the following](https://docs.whatap.io/java/agent-control-function).
 
@@ -256,6 +282,32 @@ The following guides you to include **the specified version of the agent** in th
 - If the agent's file name is _whatap.agent-1.2.3.jar_, change the **X.Y.Z** part to **1.2.3**.
 
 - For more information about addition of JVM options, see [the following](https://docs.whatap.io/java/install-agent#addjvmopt).
+
+:::
+
+:::note
+
+**Checking the `whatap.server.host` setting of the application** <ScrollToLink anchor='application-conf-check2' />
+
+In some container images, you cannot directly set environment variables with `.` such as `whatap.server.host`. If this keeps the application agent from starting normally, directly modify the _whatap.conf_ file to set the `whatap.server.host` value. The procedure how to check the `whatap.server.host` setting of the application is as follows: 
+
+1. Enter into the WhaTap application container. 
+
+2. By executing the following command, check whether the `whatap.server.host` value is included.
+
+   ````
+   ```bash 
+   $ env | grep whatap.server.host
+   ```
+   ````
+
+   **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the _whatap.conf_ file and then manually set the `whatap.server.host` value as follows: 
+
+   ````
+   ```bash
+   whatap.server.host={WhaTap Collection Server IP}
+   ```
+   ````
 
 :::
 

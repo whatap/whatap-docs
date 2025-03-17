@@ -1,0 +1,58 @@
+---
+id: java-2_2_52
+title: Java Agent v2.2.52
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_50
+displayed_sidebar: releaseSidebar
+---
+
+February 13, 2025
+
+- <Status priority='1'>New</Status> Changed to send the notification when a thread is interrupted by OutOfMemoryError.
+
+  ```ini
+  # Default: false  
+  event_oom_enabled=true  
+  ```
+
+- <Status priority='1'>New</Status> Supported TraceContext for open source tracing.
+
+  - Added the traceparent header to support tracing in various HTTP client libraries.
+
+  :::note 
+
+  **Supported libraries**
+
+  - spring-boot-2 ~: RestTemplate, WebClient, RestClient
+  - okhttp
+  - feign client
+  - Apache HttpClient4, Apache HttpClient5
+  - HttpURLConnection
+
+  :::
+
+- <Status priority='1'>Feature</Status> Added `java.util.function.Function` to the CompletableFuture tracing scope.
+
+  :::note 
+
+  For more details, see [the following](/java/async-tracking#completablefuture). 
+
+  :::
+
+- <Status priority='1'>Feature</Status> Modified to handle `java.io.IOException` caused by outbound calls in transactions with the biz_exceptions setting.
+
+- <Status priority='1'>Changed</Status> Separated the hikari settings from the spring-boot settings.
+
+  ```bash
+  ex. spring-boot-3.0  
+  weaving=spring-boot-3.0,hikari-5.0  
+
+  ex. spring-boot-2.7  
+  weaving=spring-boot-2.7,hikari-4.0  
+  ```
+
+- <Status priority='0'>Fixed</Status> Modified the agent's status code to match to the actual status code, when a spring-security error occurs in the Tomcat9-based spring-boot versions.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.52" />

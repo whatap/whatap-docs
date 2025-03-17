@@ -41,9 +41,9 @@ Check the access key and then select the **_Choose installation method_** tab on
 
 6. After selecting an installation method, click **_Next_** at the lower right of the screen or select the **_Apply additional features_** tab on the left to move to the next step.
 
-## Apply additional features
+## Additional features {#additional-features}
 
-WhaTap Kubernetes Monitoring currently provides **Control plane monitoring** as an additional feature. To apply additional features, select the **_Control Plane_** check box. 
+WhaTap Kubernetes Monitoring provides various features in addition. 
 
 <ImgLang img='k8s-install-master-node-addition.png' desc='Select additional feature'/>
 
@@ -51,9 +51,9 @@ The more additional features are applied, the greater the amount of data collect
 
 After selecting whether or not to apply additional features, click **_Next_** at the lower right of the screen, or select the **_Download installation file_** tab on the left to move to the next step. 
 
-:::note 
+### Control Plane monitoring activation {#control-plane-features}
 
-For more information about **control plane monitoring**, see the following:
+For more information about **control plane monitoring** activation and individual features, see the following.
 
 - <Cmdname sid="side_kubeApiserverDashboard" className="uitext" /> [Shortcut](/kubernetes/kube-apiserver-dashboard)
 
@@ -61,7 +61,98 @@ For more information about **control plane monitoring**, see the following:
 
 - <Cmdname sid="side_etcdDashboard" className="uitext" /> [Shortcut](/kubernetes/etcd-dashboard)
 
-- **_kube-scheduler dashboard_** [Shortcut](/kubernetes/kube-scheduler-dashboard)
+- <Cmdname sid="side_kubeSchedulerDashboard" className="uitext" /> [Shortcut](/kubernetes/kube-scheduler-dashboard)
+
+### Custom Resource monitoring activation {#custom-resource-features}
+
+<Tabs>
+<TabItem value='cr_yaml' label='Yaml' default>
+
+In the WhaTap Kubernetes agent installation _YAML_ file, add `customResource` to use in the `resources` under `rules` of the `ClusterRole` resource. 
+
+```yaml {38,39}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: "2025-01-15T01:48:26Z"
+  name: whatap
+  resourceVersion: "125200773"
+  uid: 54b0bcdb-1f12-4779-b0cb-e8de2f6be64a
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - namespaces
+  - pods
+  - pods/log
+  - configmaps
+  - services
+  - endpoints
+  - daemonsets
+  - ingresses
+  - deployments
+  - nodes
+  - persistentvolumes
+  - persistentvolumeclaims
+  - events
+  - replicasets
+  - roles
+  - rolebindings
+  - clusterroles
+  - clusterrolebindings
+  - jobs
+  - cronjobs
+  - statefulsets
+  - serviceaccounts
+  - configmaps
+  - storageclasses
+  - horizontalpodautoscalers
+  - replicationcontrollers
+  - customresourcedefinitions # Addition of the CRD collection role
+  - samplecrds # Addition of the name of custom resource to monitor
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods/exec
+  verbs:
+  - create
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - '*'
+- nonResourceURLs:
+  - /metrics
+  verbs:
+  - '*'
+```
+
+</TabItem>
+
+<TabItem value='cr_helm' label='Helm Chart' default>
+
+When installing the WhTtap Kubernetes agent by using the Helm chart, add the custom resource names to be monitored in the default _values.yaml_ file. Add the custom resource name in `resources` as follows: 
+
+```yaml
+collect_custom_resource: true
+clusterrole:
+  extraResources:
+    - "customresourcedefinitions" ##Addition of the CRD collection role
+    - "samplecrds" ##Addition of the custom resource to collect
+```
+
+</TabItem>
+
+</Tabs>
+
+:::note 
+
+The <Cmdname sid="side_masterMetaInfo" className="uitext" /> menu can perform **custom resource monitoring**.
 
 :::
 

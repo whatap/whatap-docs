@@ -1,0 +1,23 @@
+---
+id: conf-trap-setting
+title: Trap Setting
+description: It guides you to the Trap configuration menu.
+keywords:
+  - NMS
+  - Configuration
+  - Trap Setting
+---
+
+{/* 다국어 이미지 미작업 */}
+
+Home &gt; Select Project &gt; <Cmdname sid="side_setting" className="uitext" /> &gt; <Cmdname sid="side_trapSetting" className="uitext" />
+
+The SNMP trap feature transmits the events that have occurred from network equipment to NMS in real time. You can configure the required settings when collecting trap messages in the <Cmdname sid="side_trapSetting" className="uitext" /> menu. Trap messages are sent to NMS through the trap port and community string set for each device.
+
+<ImgLang img="nms-conf-trap-st.png" desc="Trap Setting" />
+
+- ***Port***: SNMP trap messages are transmitted by default over the UDP port 162. You can set other ports if required.
+
+- ***Community***: Set the community string required to collect trap messages. This string determines access permissions for data.
+
+- ***Activate***: ![Toggle icon](/img/ic-toggle-on.svg) Select whether to enable or disable the setting with the toggle button. 

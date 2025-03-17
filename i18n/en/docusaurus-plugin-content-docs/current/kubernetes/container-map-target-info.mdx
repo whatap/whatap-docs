@@ -28,13 +28,23 @@ import TargetInfo from "../common-items/_import_k8s-container-map-target-resourc
 
 <TargetInfo />
 
+:::note 
+
+- The volume type provided by WhaTap Kubernetes agent is as follows: 
+
+  > `HostPath`, `ConfigMap`, `Projected`, `EmptyDir`, `PersistentVolumeClaim` (PVC), `Secret`
+
+- You can see the types of volumes supported by Kubernetes in the [Official Kubernetes documentation](https://kubernetes.io/ko/docs/concepts/storage/volumes/).
+
+:::
+
 ### Kubernetes status summary analysis {#kube-summary-analysis}
 
 It provides a summary analysis report on the performance and resources for each container, Pod, and node in the Kubernetes environment. You can monitor the resource allocation and usage for containers, Pods, and nodes in the clusters and namespaces in real time and respond effectively by referencing the suggestions of the reports. 
 
 :::note 
 
-Currently, each summary analysis is available only in Korean. 
+The summary analysis of the current node is available only in Korean. 
 
 :::
 
@@ -47,6 +57,8 @@ Currently, each summary analysis is available only in Korean.
 - Node Information: It provides hardware information about the node where the container is running, such as OS, IP address, number of CPU cores, and memory size.
 
 - Resource usage: It provides the CPU and memory usage of the container and their utilization compared to the configured limit and request values.
+
+- Service networking info: You can see the connected service and Ingress information. 
 
 #### Pod summary analysis {#pod-summary-analysis}
 

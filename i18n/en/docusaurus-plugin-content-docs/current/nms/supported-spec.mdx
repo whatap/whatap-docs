@@ -1,0 +1,126 @@
+---
+id: supported-spec
+title: Support Environment
+description: It provides information details about the supported environment for the WhaTap NMS agent.
+keywords:
+  - NMS
+  - Support Environment
+---
+
+WhaTap ***Network Management System*** is installed on a standalone virtual machine (VM). This allows the network management system to operate independently and reliably provide all the features for network monitoring and management.
+
+## System requirements
+
+The following are the recommended minimum specifications to ensure stable performance of the WhaTap ***Network Management System***. 
+
+| Item       | Specifications                       |
+| ---------- | ------------------------------------ |
+| **CPU**    | 4 Core or later (recommended)        |
+| **Memory** | At least 8 GB                        |
+| **Disk**   | At least 30 GB                       |
+| **OS**     | Rocky Linux 9.4, Ubuntu Server 22.04 |
+
+## Collection scope
+
+WhaTap's ***Network Management System*** supports the following network data collection methods.
+
+- **SNMP Polling** 
+
+  It periodically requests and collects network equipment status and performance. The `SNMP v1` and `v2c` protocols are supported. 
+
+- **SNMP Trap** 
+
+  The events and notifications transmitted asynchronously from network devices are collected.
+
+- **Syslog** 
+
+  The log data generated from network devices is collected and analyzed in real time.
+
+:::note 
+
+Collection of network connection status and delay time (ping response time) via the **ICMP protocol** is scheduled for future development.
+
+:::
+
+## Default MIB supporting items {#supported-mib}
+
+WhaTap's ***Network Management System*** basically supports the devices from the following vendors: 
+
+<Columns>
+<Column className="text--left width--40">
+
+- 3com
+
+- A10
+
+- Arista
+
+- ArubaOS
+
+- ArubaOS-CX
+
+- Avaya
+
+- Brother
+
+- Checkpoint
+
+- Cisco
+
+- Citrix
+
+- Dell
+
+- EMC
+
+- Extreme
+
+</Column>
+<Column className="text--left">
+
+- F5
+
+- Fortinet
+
+- Fujitsu
+
+- Hitachi
+
+- HP
+
+- Huawei
+
+- Juniper
+
+- Netgear
+
+- Radware Alteon
+
+- SonicWall
+
+- Sophos
+
+- Synology
+
+- VMware
+
+</Column>
+</Columns>
+
+:::note 
+
+For the devices from specific vendors not included in the list of **Basic MIB supporting items**, you can monitor them by uploading the MIB file of the product.
+
+:::
+
+## Supporting the browser
+
+import Supportedbrowser from "../getting-started/_supported-browser.mdx";
+
+<Supportedbrowser />
+
+## Firewall
+
+import Proxy from "../getting-started/_proxy.mdx";
+
+<Proxy />

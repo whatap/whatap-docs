@@ -21,7 +21,7 @@ Add the CompletableFuture method to hook into your Java application project as a
 
 - Method name: Fixed to `trace`.
 
-- ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
+- ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`, `Function`
 
 ```java
 package io.home.test.util;
@@ -43,6 +43,9 @@ public class W {
     public static <T> Future<T> trace(Future<T> f) {
         return f;
     }
+    public static <T, R> Function<T, R> trace(Function<T, R> f) {
+    return f;
+}
 }
 ```
 

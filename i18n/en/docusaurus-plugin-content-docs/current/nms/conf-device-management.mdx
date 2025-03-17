@@ -1,0 +1,49 @@
+---
+id: conf-device-management
+title: Device management
+description: It guides you to the device management menu.
+keywords:
+  - NMS
+  - Configuration
+  - Device management
+---
+
+{/* 다국어 이미지 미작업 */}
+
+Home &gt; Select Project &gt; <Cmdname sid="side_setting" className="uitext" /> &gt; <Cmdname sid="side_deviceManagement" className="uitext" />
+
+In <Cmdname sid="side_deviceManagement" className="uitext" />, the devices to monitor are registered and managed to activate the network management system.
+
+## Basic screen guide
+
+<ImgLang img="nms-conf-device-mng.png" desc="Device Management" />
+
+### Adding a device
+
+To register a device, select an agent on the upper left and then click <UI>+</UI> <Cmdname sid="BTN09017" className="uitext" />. In the <Cmdname sid="BTN09017" className="uitext" /> window, enter the following items: 
+
+<ImgLang img="nms-conf-device-mng-add.png" desc="Add Device" />
+
+- ***Host***: Enter the IP address of the target device.
+
+- ***Port***: Set the port number to be used for SNMP communication. The port 161 is used by default.
+
+- ***Alias***: Set the alias of the device. This allows the administrator to easily identify each device.
+
+- ***Version***: Select an SNMP protocol version (v1, v2c, v3). Each version has different security features and functionality.
+
+- ***Community***: Enter the SNMP community string. This string defines access rights to SNMP data.
+
+- ***OIDs***: Set the list of OIDs to collect via SNMP polling. Basically it contains IF-MIB::ifTable OID. OIDs are used to trace various performance metrics for the network equipment.
+
+- ***Active***: Enable or disable the SNMP polling collection by the toggle.
+
+- ***Description***: Enter additional description for the device, such as device's intention.
+
+- ***SysContact***: Enter the contact information of the device administrator or the person in charge.
+
+- ***SysLocation***: Enter the physical location of the device.
+
+### Modifying and deleting a device
+
+To modify the device information or delete a device, click the Edit or Delete icon in the ***Edit*** column on the left of the device list. 

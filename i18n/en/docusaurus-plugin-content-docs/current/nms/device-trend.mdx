@@ -1,0 +1,56 @@
+---
+id: device-trend
+title: Device Trend
+description: It guides you to the device trend.
+keywords:
+  - NMS
+  - Device
+  - Device Trend
+toc_max_heading_level: 2
+---
+
+{/* 다국어 이미지 미작업 */}
+
+Home &gt; Select Project &gt; <Cmdname sid="side_device" className="uitext" /> &gt; <Cmdname sid="side_deviceTrend" className="uitext" />
+
+In <Cmdname sid="side_deviceTrend" className="uitext" />, you can check the data related to the device status change in real time. It provides visual metrics for devices and interfaces, allowing you to immediately identify changes in the network performance.
+
+## Basic screen guide
+
+<ImgLang img="nms-device-trend.png" desc="Device Trend" />
+
+The <Cmdname sid="side_deviceTrend" className="uitext" /> menu consists of a **device list** area on the left and a **chart** area on the right. For the metrics details that can be checked, see the [metric guide](#device-trend-metrics) at the bottom.
+
+- You can see in real time the list of devices configured based on the information registered through the <Cmdname sid="side_deviceManagement" className="uitext" /> menu in the **Device list** on the left.
+
+- If interface information is enabled in the **Device list** area on the left, you can see the list of interfaces connected to each device. 
+
+- When you select a device or interface in the **Device list** area on the left, you can see the corresponding metric in the **Chart** area on the right. 
+
+- You can unfold the chart area by selecting the ![List hiding icon](/img/ico-collapse-list.svg) in the **Device list** area on the left. 
+
+## Device and interface metrics {#device-trend-metrics}
+
+### Device Metrics
+
+- ***Total Throughput***: It displays the total data transfer volume of the device.
+
+- ***Inbound Throughput***: It displays the amount of data coming into the device.
+
+- ***Outbound Throughput***: It displays the amount of data sent from the device.
+
+- ***CPU***: It displays the CPU usage of the device.
+
+- ***Memory***: It monitors the memory usage of the device.
+
+- ***Session***: It displays the number of network sessions that occurred on the device.
+
+### Interface Metrics
+
+- ***Throughput In/Out***: It displays the amounts of transmitted and received traffic on each interface.
+
+- ***Discarded In/Out***: It displays the number of packets discarded due to network errors.
+
+- ***Error In/Out***: It displays the number of erroneous packets during transmission and reception.
+
+- ***PPS In/Out***: It displays the numbers of packets transmitted and received per second.

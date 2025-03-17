@@ -59,3 +59,41 @@ If any lock occurs during the set period, you can analyze whether locks are conc
 :::
 
 </InDoc>
+
+<Title hashid="lockwaitsessions" level={props.level+1}><UI>Lock Wait Sessions</UI></Title>
+
+The **_Lock Wait Sessions_** feature allows you to analyze the lock wait sessions. Depending on the query period, the lock wait session data is provided at 5-minute intervals when the query is for 3 hours or more, and at 5-second intervals when the query is for less than 3 hours. You can also adjust the time range by dragging the chart flexibly.
+
+<Title hashid="1minlocktrend" level={props.level+1}><UI>1-Min Lock Trends</UI></Title>
+
+If you click a specific time zone in **_Lock Wait Sessions_**, the lock occurrence status for 30 minutes, from 15 minutes before to 15 minutes after is visualized. This allows you to effectively analyze the lock occurrence trend at 30-minute intervals. 
+
+:::note 
+
+**_Total Locks_** indicates the total number of locks generated in the time zone.
+
+:::
+
+<Title hashid="selecttimelocktree" level={props.level+1}>Viewing time</Title>
+
+**_1-Min Lock Trends_** and **_Lock Tree_** tables are timed based on the maximum number of locks that occurred at the clicked time in **_Lock Wait Sessions_**. This allows you to find the zone with the most locks. 
+
+![Time viewing 1](/img/db-lock-tree-1-min-lock-trends2.png)
+
+If you click the bar of a different time zone in the **_1-Min Lock Trends_** chart with the **_Lock Wait Sessions_** unchanged, the time range is synced to the **_Lock Tree_** table by using the seconds with the highest number of locks for the minute. This allows you to see the information reflected in the **_Lock Tree_** table when changing the time zone.
+
+![Time viewing 2](/img/db-lock-tree-1-min-lock-trends3.png)
+
+- **Viewing for 3 hours or more** (using 5-minute data)
+
+  The bar color of the 5-minute zone from the time of inquiry appears more prominent. 
+
+  > When the `07:15:00` time point is clicked, the color of the `07:15:00-07:20:00` zone's bar chart appears more prominent.
+
+  ![5-minute pack viewing](/img/db-lock-tree-1-min-lock-trends-5min.png)
+
+- **Viewing for less than 3 hours** (using 5-minute data)
+
+  It is useful for analyzing the locks that occur within short time intervals. 
+
+  ![5-second pack viewing](/img/db-lock-tree-1-min-lock-trends-5sec.png)

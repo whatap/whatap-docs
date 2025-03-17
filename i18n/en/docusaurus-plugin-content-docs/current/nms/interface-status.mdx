@@ -1,0 +1,37 @@
+---
+id: interface-status
+title: Interface status
+description: It guides you to the interface status menu.
+keywords:
+  - NMS
+  - Device
+  - Interface status
+---
+
+{/* 다국어 이미지 미작업 */}
+
+Home &gt; Select Project &gt; <Cmdname sid="side_device" className="uitext" /> &gt; <Cmdname sid="side_interfaceStatus" className="uitext" /> 
+
+In <Cmdname sid="side_interfaceStatus" className="uitext" />, you can monitor the network interface status of the device in real time. It visually displays the connection to interfaces and provides detailed information about each interface, allowing you to easily analyze the network performance.
+
+## Basic screen guide
+
+<ImgLang img="nms-interface-status.png" desc="Interface Status" />
+
+The <Cmdname sid="side_interfaceStatus" className="uitext" /> menu consists of an interface list area on the left, an interface status area on the upper right, and an interface detail area on the lower right. When an interface is selected to view in the interface area on the left, you can see the interface status and its details in the area on the right.
+
+### Interface status
+
+You can see the connection status of the interface. 
+
+- <span class='snormal'>Connected</span> ![Connection icon](/img/ic-connected.svg): The interface is normally connected. It appears when both the link status and Admin status are "up."
+
+- <span class='k8s-normal'>Link Down</span> ![Link down icon](/img/ico-connection-link-down.svg): The network link is down. The link status appears upon "down" and the Admin status appears upon "up."
+
+- <span class='k8s-normal'>Admin Down</span> ![Link down icon](/img/ico-connection-down.svg): The interface is disabled by the administrator. It appears when both the link status and Admin status are "down."
+
+- <span class='k8s-normal'>Unavailable</span> ![Question mark icon](/img/ic-question-circle.svg): It indicates the number of unusable interfaces, such as virtual interfaces that are not physically active, loopback interfaces, or fiber interfaces that do not have an SFP module inserted.
+
+### Interface details
+
+It displays information details about each interface in a list format. If an interface is clicked, the device trend page appears to display the status in more detail.

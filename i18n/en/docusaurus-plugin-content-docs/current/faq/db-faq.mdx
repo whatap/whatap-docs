@@ -17,7 +17,7 @@ Check out frequently asked questions from users about the WhaTap database monito
 
 > When I checked the _dbx.log_ while connecting to the DB after installing the agent, the error, `Authentication plugin 'caching_sha2_password' cannot be loaded` occurred. What should I do?
 
-It can happen when using MySQL 8.0, and its default authentication plug-in is `caching_sha2_password`. To use the `caching_sha2_password`, use the SSL-secured connection or a non-encrypted connection with the RSA security applied. The easiest way to solve this problem is to use the `mysql_native_password` when generating passwords as follows.
+This can happen when you use MySQL 8.0. The default authentication plugin for MySql 8.0 is `caching_sha2_password`. To use `caching_sha2_password`, use the SSL-secured connection or unencrypted connection with the RSA security applied. The easiest way to solve this problem is to use the previous `mysql_native_password` method when generating the password, as follows:
 
 ```sql
 ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword';
@@ -29,6 +29,26 @@ See the following.
 
 - 2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
 - 6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+
+:::
+
+### JAVA command not found error
+
+> If you run `startd.sh` when starting the agent, the `Java command not found` error occurs. How can this error be fixed?
+
+This error occurs only when Java 1.8 or later has been installed to run the DB agent. In order to run the agent, Java 1.8 or later must have been installed. Under Java installation after checking the environment, the agent can be run normally.
+
+Through the following command, check the current Java version. 
+
+```bash
+java -version
+```
+
+:::note 
+
+See the following. 
+
+- Java installation and configuration - https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
 
 :::
 

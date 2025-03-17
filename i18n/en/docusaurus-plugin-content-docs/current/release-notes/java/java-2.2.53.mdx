@@ -1,0 +1,23 @@
+---
+id: java-2_2_53
+title: Java Agent v2.2.53
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_52
+displayed_sidebar: releaseSidebar
+---
+
+February 27, 2025
+
+- <Status priority='1'>Feature</Status> Added the traceparent HTTP header issuance feature when using `okhttp3` and `okhttp3-4.4` settings.
+
+- <Status priority='1'>Changed</Status> Changed Jakarta tracing to be possible without setting `weaving=tomcat10`.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where `{port}` data set in `whatap.name` is not collected when using embedded-tomcat in the Spring Boot environment.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where linkage tracking is broken in the multi-transaction tab while using the `okhttp` library when tracing with the OpenTelemetry agent.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where Pod names without ‘-’ are collected as `null`.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.53" />

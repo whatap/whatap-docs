@@ -13,3 +13,11 @@
 - ***ServiceName***: You can check the [Object manifest](object-manifest) and go to the [Service list](service-list) menu. 
 
 - ***Volume***: You can see the volume and mount path used by the container.
+
+  - You can see the name of the ![Leader line](/img/char-a.svg) volume used in the Pod and the type of the ![Leader line](/img/char-b.svg) volume. 
+
+    > e.g. ***Volume*** ![Leader line](/img/char-a.svg)`containerddomainsocket` ![Leader line](/img/char-b.svg)`HostPath` 
+
+  - When the ***HostPath*** volume type is used, you can see the file path of the ![Leader line](/img/char-c.svg) host system. This path connects the file system between the Pod and the host system.
+
+    > e.g. ***Host Path*** ![Leader line](/img/char-c.svg)`/run/containerd/containerd.sock`

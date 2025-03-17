@@ -9,6 +9,8 @@ keywords:
   - Server
 ---
 
+import ServerInventoryFilter from "../common-items/_server-inventory-filter.mdx";
+
 Home &gt; Select Project &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />
 
 You can check detailed information about the server group selected from the <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu on the ***Display Detail*** screen. Click ![Display Detail icon](/img/ico-detail-mode.svg) ***Display Detail*** on the upper right of the **View summary** panel. The server group information in Display Detail is updated in real time.
@@ -29,7 +31,9 @@ Key summary information on the selected server group can be viewed through the s
 
 - You can specify a target server to query from the chart area and server list within the server group card. 
 
-- You can select up to 10 servers, and you can check information of the selected server in each tab on the right when you select a target server. 
+- When selecting a server from the server list, you can select all or deselect all. 
+
+- When selecting a server, you can see the information of the selected server in individual tabs on the right.
 
 ## Server Inventory
 
@@ -37,17 +41,9 @@ You can check the detailed configuration of the selected server in list format i
 
 ### Filtering
 
-{/* 필터 설정 시 드로워 제거가 안되어서 바로 추가가 안됨.. */}
-
 The <Cmdname sid="side_serverInventory" className="uitext" /> menu provides the server filtering feature based on the column list set in the menu.
 
-- ***Filter key***: Filters can be set based on the default collection columns provided in the <Cmdname sid="side_serverInventory" className="uitext" /> menu and user-defined custom columns.
-
-  - Default collection columns: Items automatically collected from <Cmdname sid="side_serverInventory" className="uitext" /> are ***server type***, ***default group***, ***OS type***, ***OS version***, ***model***, and ***serial*** columns.
-
-  - Custom columns: They are the items added and managed on a project basis.
-
-- ***Filter condition***: Filter conditions can be set as string conditions such as matched, mismatched, included, and excluded. All filters are string-based, and numeric conditions (e.g. `≥`, `≤`) are not supported.
+<ServerInventoryFilter />
 
 ### Column Settings
 
@@ -82,20 +78,19 @@ In the <Cmdname sid="TTL08666" className="uitext" /> tab, you can see the file s
 | ***Used Space(GB)***  | It displays the storage space currently used on the file system in GB.                                                    |
 | ***Used(%)***         | It displays the percentage of storage space in use compared to the total storage space on the file system.                |
 | ***i-node Used(%)***  | It displays the percentage of i-nodes allocated to the file system that are in use.                                       |
+| ***Free(GB)***        | It displays the free space on the file system in GB.                                                                      |
 
 :::note 
 
 **i-node**
 
-An i-node is a space in the file system that stores the data about files and directories. When this usage reaches 100%, you can no longer write files, even if Used (%) is not 100%.
+An i-node is a space in the file system that stores the data about files and directories. When this usage reaches 100%, you can no longer write files, even if <UI>Used(%)</UI> is not 100%.
 
 :::
 
-{/* 파일 시스템에 할당된 i-node 중 사용 중인 i-node의 비율을 백분율로 표시합니다. An i-node is a unit that stores data about files and directories in the file system. When its percentage reaches 100%, no additional files can be created even if Used (%) is not 100%. */}
-
 ### Filtering
 
-The server filtering feature is provided. ***Filter Key*** provides the ***Server Name*** and ***Mount Point***. The filtering ***conditions*** can be set as a string such as matched, mismatched, included, and excluded.
+The server filtering feature is provided. ***Filter Key*** provides the ***Server Name*** and ***Mount Point***. The filter, ***condition*** can be set as a string such as Equal, Unequal, Includes, and Excludes.
 
 ### Download CSV
 
@@ -134,3 +129,7 @@ You can see the performance metrics charts for the server selected from the serv
 | ***[Process] TotalCount***        | It displays the current total number of processes.                                                                                                      | -                                            |
 | ***[Thread] TotalCount***         | It displays the current total number of threads.                                                                                                        | -                                            |
 | ***[Defunct] TotalCount***        | It displays the current total number of defunct processes.                                                                                              | -                                            |
+
+## Events in progress
+
+You can see the events in progress in the server selected from the server group cards or list on the left. You can see <Cmdname sid="event_title" className="uitext" />, <Cmdname sid="event_time" className="uitext" />, <Cmdname sid="TTL08086" className="uitext" />, and <Cmdname sid="message" className="uitext" /> in the list. 

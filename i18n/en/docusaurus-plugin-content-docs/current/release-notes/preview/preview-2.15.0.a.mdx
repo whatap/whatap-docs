@@ -1,0 +1,175 @@
+---
+id: preview-2_15_0x
+title: Preview 2.15.0.a
+toc_max_heading_level: 2
+---
+
+<head>
+<meta name="robots" content="noindex, nofollow"/>
+</head>
+
+:::note
+
+In [preview.whatap.io](https://preview.whatap.io), the following new features and enhancements can be experienced in advance. 
+
+:::
+
+## Preview 2.15.0.a1
+
+March 6, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Added the option to allow only SSO logins.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code class="newfunc">New</code>, modified the last selected time to be retained even when closing the sidebar.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="side_adminMetering" className="uitext" />, changed the usage detail table upon billing by the namespace unit.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_paymentHistory" className="uitext" /> and <Cmdname sid="side_billingPreview" className="uitext" /> under the <Cmdname sid="side_myUsage" className="uitext" /> menu, added the expression for namespace-unit billing of any Kubernetes target.
+
+- <Status priority='1'>Changed</Status> Changed the speaker icon when activating sound without any notifications in the notification list.
+
+- <Status priority='1'>Changed</Status> Improved the filtering behaviors of the sidebar project list.
+
+  - Changed the behaviors to be the same as unselecting all.
+
+  - Modified to display all groups upon selection of all.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" />, enlarged the width of the search UI.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_loadedClasses" className="uitext" />, added the <Cmdname sid="TTL08085" className="uitext" /> copying and txt downloading features.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_agentSettingOld" className="uitext" /> <code class='oldfunc'>Old</code>, modified the API calling method enabled by clicking <Cmdname sid="apply_all" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="TTL06377" className="uitext" /> tab and <Cmdname sid="side_multi_server_tx_trace" className="uitext" /> menu inside the <Cmdname sid="TTL06209" className="uitext" /> window, fixed the issue where node clicks do not work when there are multiple starting point transactions.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the pre-selected agent is not automatically selected when you enter into the <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_agentSettingOld" className="uitext" /> <code class="oldfunc">Old</code> menu.
+
+- <Status priority='0'>Fixed</Status> Modified the agent selector's design.
+
+  - Fixed the issue where selection status is not visually displayed when selecting an agent.
+
+  - Fixed the cursor to be changed to a pointer when hovering over an agent.
+
+  - Fixed the issue where the icon appears blurry when hovering over the modification icon.
+
+---
+
+### `Server`
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="sms_resource_board" className="uitext" />, fixed the issue where some servers are hidden when the server selection panel list becomes long after dragging the <Cmdname sid="side_resourceMap" className="uitext" /> chart and moving <Cmdname sid="side_resourceMap" className="uitext" /> becauses the scroll is not displayed.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />, fixed the issue where the conditions and server list in the <Cmdname sid="server_alert_list" className="uitext" /> drawer inside the <Cmdname sid="server_info" className="uitext" /> panel is cut off and the entire content is not visible.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />, added the container name searching feature.
+
+- <Status priority='1'>Feature</Status> Added the tag meta information in the <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" /> menu.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />, added the ***Container Memory Working Set By Limit*** chart into the detail drawer to display the memory utilization (%) against the container limit.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />, renamed the container memory utilization chart under Display Detail.
+
+  - Before: **Memory Working Set per Container (byte)**
+
+  - After: ***Container Memory Working Set***
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />, changed the Pod memory utilization chart under Display Detail.
+
+  - Before: **Memory utilization** chart
+
+  - After: Changed to the ***Pod Memory Working Set By Limit*** chart that displays the utilization (%) against the limit.
+
+- <Status priority='1'>Deprecated</Status> <Status priority='1'>Feature</Status> In <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />, removed the `state` column.
+
+---
+
+### `Database`
+
+<Status priority='1'>New</Status> Launched the **SAP ASE** monitoring product.
+
+#### Common
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, changed the database list at the top to display more tags.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />, fixed the issue where some bar charts do not appear.
+
+#### Oracle, Oracle Pro, Altibase, MySQL, PostgreSQL, SQL Server, Cubrid V2, IBM DB2
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, changed the order of table columns and adjusted the default width when dragging the <UI>SQL Elapse Map</UI> widget.
+
+#### MySQL, PostgreSQL, Oracle, Oracle Pro
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />, changed the order of table columns that appear when dragging <UI>Elapse Map</UI> .
+
+#### Oracle V2, Oracle Pro
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, modified to display the tooltip in the whole content after displaying the ellipsis (`...`) when ​​the `FILTER_PREDICATES` and `ACCESS_PREDICATES` columns are too long in the <Cmdname sid="TTL06224" className="uitext" /> window that appears by clicking a query in the <Cmdname sid="active_sessions" className="uitext" /> tab.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />, changed the `username` column in the table that appears by clicking <UI>Elapse Map</UI> to the `schemaname` column.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, changed the `username` column in the table that appears by clicking <UI>Elapse Map</UI> to the `schemaname` column.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the `planHash` value to default to `plan_hash_value` of the query on the left in the <Cmdname sid="TTL06224" className="uitext" /> window that appears by clicking a query in the table that opens after dragging <UI>Elapse Map</UI>.
+
+#### IBM DB2
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="side_tableSpace" className="uitext" /> menu that allows you to monitor the tablespace usage status under <Cmdname sid="side_reportStat" className="uitext" /> menu.
+
+- <Status priority='1'>Changed</Status> Changed some columns in the <Cmdname sid="lock_tree" className="uitext" /> table.
+
+</div>
+
+## Preview 2.15.0.a0
+
+February 27, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Added the group name searching feature upon searching a project in the widget of the <Cmdname sid="side_flexboard" className="uitext" /> menu.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_flexboard" className="uitext" />, modified the icon's background color to white upon addition of a widget.
+
+- <Status priority='1'>Changed</Status> Changed the URL product icon in the project list upon selection of a product.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_accountManagement" className="uitext" />, changed the form not to display the warning message when there is no input value when changing the password.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_accountManagement" className="uitext" />, changed the checkbox UI for the days of the week when setting the notification reception.
+
+- <Status priority='0'>Fixed</Status> Displayed the group name of the project selected in the sidebar.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_report" className="uitext" />, fixed the issue where the theme color is not applied in the options area at the top.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_maintenancePlan" className="uitext" />, fixed the broken theme color and style.
+
+---
+
+### `Application`
+
+<Status priority='1'>Feature</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />, added the maximum value displaying feature in the detailed statistical chart.
+
+---
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />, fixed the issue where the OS icon size is changed when adjusting the OS type column's size.
+
+---
+
+### `Database`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the area margins at the top.
+
+</div>
