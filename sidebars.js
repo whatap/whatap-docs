@@ -1772,6 +1772,19 @@ const sidebars = {
             'sapase/analysis-databaseparameter',
           ]
         },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/metrics-intro'
+          },
+          items: [
+            'sapase/metrics-data-list',
+          ]
+        },
       ],
     }
   ],
