@@ -1683,6 +1683,98 @@ const sidebars = {
       ],
     }
   ],
+  sapaseSidebar: [
+    {
+      type: 'category',
+      label: 'SAP ASE 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'sapase/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'sapase/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/install-agent',
+            'sapase/after-install-agent',
+            'sapase/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/agent-settings'
+          },
+          items: [
+            'sapase/agent-dbx-settings',
+            'sapase/agent-xos-settings',
+          ],
+        },
+        'sapase/agent-manage',
+        'sapase/usage-ui',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/dashboard-intro'
+          },
+          items: [
+            'sapase/instance-list',
+            'sapase/instance-monitoring',
+            'sapase/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/flex-board',
+          },
+          items: [
+            'sapase/flexboard-template',
+            'sapase/flexboard-create',
+            'sapase/flexboard-manage',
+            'sapase/flexboard-metric-widget',
+            'sapase/flexboard-widget-manage',
+            'sapase/flexboard-widget-template',
+            'sapase/flexboard-mode',
+            'sapase/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/analysis-count-trend',
+            'sapase/analysis-lock-tree',
+            'sapase/analysis-databaseparameter',
+          ]
+        },
+      ],
+    }
+  ],
   postgreSidebar: [
     {
       type: 'category',
