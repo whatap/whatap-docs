@@ -1,5 +1,96 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_8_1",
+    "ver": "v2.8.1",
+    "date": "2025-03-04",
+    "Lists": [
+      {
+        "ver": "v2.8.1",
+        "hash": "v281",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the <code>ipreg</code> option does not work.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_8_0",
+    "ver": "v2.8.0",
+    "date": "2025-02-24",
+    "Lists": [
+      {
+        "ver": "v2.8.0",
+        "hash": "v280",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to collect the I/O performance data of the NFS mount.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_7_9",
+    "ver": "v2.7.9",
+    "date": "2025-02-18",
+    "Lists": [
+      {
+        "ver": "v2.7.9",
+        "hash": "v279",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added the Windows 2008 agent installation package.</p>"
+      },
+      {
+        "ver": "v2.7.9",
+        "hash": "v279",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the Windows agent collection stop error.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_7_8",
+    "ver": "v2.7.8",
+    "date": "2025-02-10",
+    "Lists": [
+      {
+        "ver": "v2.7.8",
+        "hash": "v278",
+        "product": "Server Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the health check warmup time error for the Windows agent.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_7_7",
+    "ver": "v2.7.7",
+    "date": "2025-02-03",
+    "Lists": [
+      {
+        "ver": "v2.7.7",
+        "hash": "v277",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Removed the WMI dependency from collection of Windows agent's default metrics.</p>"
+      },
+      {
+        "ver": "v2.7.7",
+        "hash": "v277",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved and customized the response speed of the self-recovery (HouseKeeping) feature when performance collection anomalies occur.</p>"
+      },
+      {
+        "ver": "v2.7.7",
+        "hash": "v277",
+        "product": "Server Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added the collection of process TCP outbound connection performance.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/server/server-2_7_6",
     "ver": "v2.7.6",
     "date": "2025-01-06",

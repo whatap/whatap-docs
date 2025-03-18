@@ -1,5 +1,55 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_9",
+    "ver": "v0.5.9",
+    "date": "2025-03-05",
+    "Lists": [
+      {
+        "ver": "v0.5.9",
+        "hash": "v059",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the database operation tracing feature when using the Prisma ORM.</p>"
+      },
+      {
+        "ver": "v0.5.9",
+        "hash": "v059",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved the automatic cleanup logic for the agent log file.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_8",
+    "ver": "v0.5.8",
+    "date": "2025-02-18",
+    "Lists": [
+      {
+        "ver": "v0.5.8",
+        "hash": "v058",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added monitoring for GraphQL modules (@apollo/server).</p>",
+        "details": "<ul>\n<li>\n<p><strong>profile_graphql_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>true</code></p>\n<p>Set whether or not to enable the GraphQL monitoring.</p>\n</li>\n<li>\n<p><strong>profile_graphql_variable_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>false</code></p>\n<p>Set whether to include variables from GraphQL requests in the transaction profile.</p>\n</li>\n<li>\n<p><strong>ignore_graphql_operation</strong> <span class=\"type\">String</span></p>\n<p>It sets monitoring of the specified operation name to be ignored. For multiple values, use comma (<code>,</code>) as the delimiter.</p>\n<div class=\"language-ini codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">whatap.conf</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-ini codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token key attr-name\" style=\"color:rgb(255, 203, 107)\">ignore_graphql_operation</span><span class=\"token punctuation\" style=\"color:rgb(199, 146, 234)\">=</span><span class=\"token value attr-value\">operationNameA,operationNameB</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_7",
+    "ver": "v0.5.7",
+    "date": "2025-02-07",
+    "Lists": [
+      {
+        "ver": "v0.5.7",
+        "hash": "v057",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the agent version does not appear.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_6",
     "ver": "v0.5.6",
     "date": "2025-01-23",
