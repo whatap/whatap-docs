@@ -1,5 +1,40 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/server-hpux/server-hpux-1_4_0",
+    "ver": "v1.4.0",
+    "date": "2025-02-05",
+    "Lists": [
+      {
+        "ver": "v1.4.0",
+        "hash": "v140",
+        "product": "Server HP-UX Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the data collection option in <span class=\"uitext\">Server Inventory Map</span>.</p>"
+      },
+      {
+        "ver": "v1.4.0",
+        "hash": "v140",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved the installation failure issue by adding the option to disable the file system checking when performing swinstall.</p>"
+      },
+      {
+        "ver": "v1.4.0",
+        "hash": "v140",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved the consistency checking when updating <em>whatap.conf</em>.</p>"
+      },
+      {
+        "ver": "v1.4.0",
+        "hash": "v140",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the libgcc library reference error.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/server-hpux/server-hpux-1_3_6",
     "ver": "v1.3.6",
     "date": "2024-12-03",

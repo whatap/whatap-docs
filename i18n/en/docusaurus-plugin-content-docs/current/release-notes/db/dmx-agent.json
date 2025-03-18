@@ -1,5 +1,61 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2d",
+    "ver": "v1.0.2",
+    "date": "2025-02-04",
+    "Lists": [
+      {
+        "ver": "v1.0.2",
+        "hash": "v102",
+        "product": "DMX d",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where <code>db.user</code> is not generated and the \"invalid user or password\" error occurs when <code>uid.sh</code> is run due to a bug in the <em>plan.user</em> file creation process in version 1.0.2a.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2b",
+    "ver": "v1.0.2",
+    "date": "2025-01-21",
+    "Lists": [
+      {
+        "ver": "v1.0.2",
+        "hash": "v102",
+        "product": "DMX b",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>sqlstat_send_interval=5</code> option (unit: minute).</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2a",
+    "ver": "v1.0.2",
+    "date": "2025-01-21",
+    "Lists": [
+      {
+        "ver": "v1.0.2",
+        "hash": "v102",
+        "product": "DMX a",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to create the <em>plan.user</em> file.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2",
+    "ver": "v1.0.2",
+    "date": "2025-01-21",
+    "Lists": [
+      {
+        "ver": "v1.0.2",
+        "hash": "v102",
+        "product": "DMX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Increased the <code>max_shm</code> and <code>max_tmpfs</code> values to <code>20</code> and <code>2000</code> respectively.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_1y",
     "ver": "v1.0.1y",
     "date": "2024-12-24",
