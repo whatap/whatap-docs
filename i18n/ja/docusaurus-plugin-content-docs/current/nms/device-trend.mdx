@@ -1,0 +1,56 @@
+---
+id: device-trend
+title: デバイス推移
+description: デバイスの推移を案内します。
+keywords:
+  - NMS
+  - デバイス
+  - デバイス推移
+toc_max_heading_level: 2
+---
+
+{/* 다국어 이미지 미작업 */}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_device" className="uitext" /> &gt; <Cmdname sid="side_deviceTrend" className="uitext" />
+
+<Cmdname sid="side_deviceTrend" className="uitext" />メニューからデバイスの状態変化に関連するデータをリアルタイムで確認できます。 デバイスとインターフェイスの指標を視覚的に提供することで、ネットワーク 性能の変化を即座に把握できます。
+
+## 基本画面ガイド
+
+<ImgLang img="nms-device-trend.png" desc="Device Trend" />
+
+<Cmdname sid="side_deviceTrend" className="uitext" />メニューは、左側の**デバイスリスト**領域と右側の**チャート**領域で構成されています。 確認できるメトリクス詳細は、下段の[メトリクス案内](#device-trend-metrics)を参照してください。
+
+- 左側の**デバイスリスト**領域で<Cmdname sid="side_deviceManagement" className="uitext" />メニューを通じて登録した情報に基づいて構成されたデバイスリストをリアルタイムで確認できます。
+
+- 左側の**デバイスリスト**領域でインターフェイス情報が活性化されている場合は、各デバイスのサブに接続されているインターフェイスのリストを確認できます。 
+
+- 左側の**デバイスリスト**領域でデバイスまたはインターフェイスを選択する場合、右側の**チャート**領域でその指標情報を確認できます。 
+
+- 左側の**デバイスリスト**領域で![リスト非表示アイコン](/img/ico-collapse-list.svg)選択時にチャート領域を拡張できます。 
+
+## デバイス及びインターフェイスメトリクス{#device-trend-metrics}
+
+### デバイスメトリクス
+
+- ***Total Throughput***: デバイスの全データ転送量を表示します。
+
+- ***Inbound Throughput***: デバイスに入ってきたデータ量を表示します。
+
+- ***Outbound Throughput***: デバイスから送信されたデータ量を表示します。
+
+- ***CPU***: デバイスのCPU使用量を表示します。
+
+- ***Memory***: デバイスのメモリ使用量をモニタリングします。
+
+- ***Session***: デバイスで発生したネットワーク セッションの数を表示します。
+
+### インターフェースメトリクス
+
+- ***Throughput In/Out***: 各インターフェイスの転送及び受信トラフィック量を表示します。
+
+- ***Discarded In/Out***: ネットワークエラーが原因で廃棄されたパケットの数を表示します。
+
+- ***Error In/Out***: 転送及び受信中にエラーが発生したパケットの数を表示します。
+
+- ***PPS In/Out***: 1秒あたりの転送と受信したパケットの数を表示します。

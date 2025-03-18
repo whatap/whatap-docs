@@ -17,7 +17,7 @@ WhaTapデータベースモニタリングサービスのユーザーからよ�
 
 > エージェントインストール後、DBに接続して*dbx.log*を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続ができない場合、どうすれば良いでしょうか？
 
-MySQL 8.0のデフォルト認証プラグインが、`caching_sha2_password`であるため発生する可能性があります。`caching_sha2_password`を使用するには、SSLで保護されたセキュリティ接続を使用するか、RSAセキュリティを使用した非暗号化接続を使用する必要があります。この問題を最も簡単に解決する方法は、パスワード生成時に、以前の`mysql_native_password`方式を使用することです。
+MySQL 8.0 のデフォルト認証プラグインが、`caching_sha2_password`であるため発生する可能性があります。`caching_sha2_password`を使用するには、SSLで保護されたセキュリティ接続を使用するか、RSAセキュリティを使用した非暗号化接続を使用する必要があります。この問題を最も簡単に解決する方法は、パスワード生成時に、以前の`mysql_native_password`方式を使用することです。
 
 ```sql
 ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword';
@@ -29,6 +29,26 @@ ALTER USER 'yourusername' IDENTIFIED WITH mysql_native_password BY 'youpassword'
 
 - 2.11.4 Changes in MySQL 8.0 - https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html
 - 6.4.1.2 Caching SHA-2 Pluggable Authentication - https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html
+
+:::
+
+### JAVA command not foundエラー
+
+> エージェント起動時`startd.sh`実行すると`Javaコマンドが見つかりません。`というエラーが発生します。どうやって解決できますか？
+
+このエラーは、DB Agentが起動するためにJava 1.8 以降がインストールされると発生する問題です。 エージェントを起動するには、Java 1.8 以降がインストールされている必要があり、その環境を確認した後、Javaのインストールを進めると、エージェントを正常に起動できます。
+
+次のコマンドで現在インストールされているJavaバージョンを確認します。 
+
+```bash
+java -version
+```
+
+:::note 
+
+次の文書を参照してください。 
+
+- Javaインストールと設定 - https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
 
 :::
 

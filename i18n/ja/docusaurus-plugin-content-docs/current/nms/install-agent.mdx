@@ -1,0 +1,121 @@
+---
+id: install-agent
+title: エージェントのインストール
+description: WhaTap Network管理システムエージェントのインストールを案内します。
+keywords:
+  - NMS
+  - エージェントのインストール
+---
+
+WhaTap**NMS**を使うためには、[会員登録](https://www.whatap.io/ko/signup/)後、プロジェクトを作成し**NMS**エージェントをインストールする必要があります。
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
+
+## エージェントのインストール
+
+<ImgLang img="nms-install-agent.png" desc="NMSエージェントのインストール" />
+
+### Rocky Linux
+
+:::note 
+
+WhaTap***Network Management System***は、Rocky Linux 9.4 環境に対応しています。 
+
+:::
+
+<Cmdname sid="TTL07075" className="uitext" />案内セクションでプロジェクトアクセスキーを確認した後、次の案内通りにインストールを進めてください。
+
+1. 次のコマンドを実行して、WhaTap**リポジトリ**を登録します。 
+
+   ```bash
+   sudo rpm --import https://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   ```
+
+2. 次のコマンドを実行して**パッケージ**をインストールします。 
+
+   ```bash
+   sudo dnf install -y whatap-nms
+   ```
+
+3. 次のコマンドを実行してください。 **アクセスキー**を入力して、WhaTapサーバー**ホスト**を設定します。
+
+   ```bash
+   # アクセスキー入力とホスト設定 
+   sudo wtinitset -a x42vc20h0tcvl-z517iuvl5ac7as-x3df8vn2mfasn9 -s 15.165.146.117
+
+   # オプション確認
+   sudo wtinitset --help
+   usage: wtinitset [-h] -a LICENSE -s HOST
+
+   Whatap-nms access key manager tool
+
+   options:
+   -h, --help            show this help message and exit
+   -a LICENSE, --accesskey LICENSE
+   Access key for project
+   -s HOST, --server HOST
+   Whatap host ip address for data transfer
+   ```
+
+4. インストールが完了した後、次のコマンドを実行して、NMSエージェントが正常に実行中であることを確認します。 
+
+   ```bash
+   sudo service nmscore status
+   ```
+
+### Ubuntu
+
+:::note 
+
+WhaTap***Network Management System***は、Ubuntu 22.04 環境に対応しています。 
+
+:::
+
+<Cmdname sid="TTL07075" className="uitext" />案内セクションでプロジェクトアクセスキーを確認した後、次の案内通りにインストールを進めてください。
+
+1. 次のコマンドを実行して、WhaTap**リポジトリ**を登録します。 
+
+   ```bash
+   curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
+   echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
+   ```
+
+2. 次のコマンドを実行して**パッケージ**をインストールします。 
+
+   ```bash
+   sudo apt-get update
+   sudo apt-get install -y whatap-nms
+   ```
+
+3. 次のコマンドを実行してください。 **アクセスキー**を入力して、WhaTapサーバー**ホスト**を設定します。
+
+   ```bash
+   # アクセスキー入力とホスト設定 
+   sudo wtinitset -a x42vc20h0tcvl-z517iuvl5ac7as-x3df8vn2mfasn9 -s 15.165.146.117
+
+   # オプション確認
+   sudo wtinitset --help
+   usage: wtinitset [-h] -a LICENSE -s HOST
+
+   Whatap-nms access key manager tool
+
+   options:
+   -h, --help            show this help message and exit
+   -a LICENSE, --accesskey LICENSE
+   Access key for project
+   -s HOST, --server HOST
+   Whatap host ip address for data transfer
+   ```
+
+4. インストールが完了した後、次のコマンドを実行して、NMSエージェントが正常に実行中であることを確認します。 
+
+   ```bash
+   sudo service nmscore status
+   ```

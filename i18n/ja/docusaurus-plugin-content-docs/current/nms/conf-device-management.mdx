@@ -1,0 +1,49 @@
+---
+id: conf-device-management
+title: デバイス管理
+description: デバイス管理メニューを案内します。
+keywords:
+  - NMS
+  - 設定
+  - デバイス管理
+---
+
+{/* 다국어 이미지 미작업 */}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_setting" className="uitext" /> &gt; <Cmdname sid="side_deviceManagement" className="uitext" />
+
+<Cmdname sid="side_deviceManagement" className="uitext" />メニューでネットワーク管理システムを活性化するためにモニタリングするデバイスを登録・管理します。
+
+## 基本画面ガイド
+
+<ImgLang img="nms-conf-device-mng.png" desc="Device Management" />
+
+### デバイス追加
+
+デバイスを登録するには、左上でエージェントを選択し<UI>+</UI> <Cmdname sid="BTN09017" className="uitext" />ボタンをクリックします。 <Cmdname sid="BTN09017" className="uitext" />画面で次の情報を入力します。 
+
+<ImgLang img="nms-conf-device-mng-add.png" desc="デバイス追加" />
+
+- ***Host***: 対象デバイスのIPアドレスを入力します。
+
+- ***Port***: SNMP通信に使用されるポート番号を設定します。 基本的には、161番ポートが使用されます。
+
+- ***Alias***: そのデバイスのエイリアスを設定します。 これにより、管理者は各デバイスを簡単に識別できます。
+
+- ***Version***: SNMPプロトコルバージョン(v1、v2c、v3)を選択します。 各バージョンは、セキュリティ機能と機能に違いがあります。
+
+- ***Community***: SNMPコミュニティ文字列を入力します。 この文字列は、SNMPデータへのアクセス権限を定義します。
+
+- ***OIDs***: SNMP Pollingを通じて収集するOIDリストを設定します。 基本的にIF-MIB::ifTable OIDが入っています。 OIDは、ネットワーク機器の様々な性能指標を追跡するために使用されます。
+
+- ***Active***: トグルを通じてSNMP Polling収集を活性化・非活性化します。
+
+- ***Description***: そのデバイスについて、機器の用途などの追加の説明を入力します。
+
+- ***SysContact***: デバイス管理者またはその機器の責任者の連絡先情報を入力します。
+
+- ***SysLocation***: デバイスの物理的位置を入力します。
+
+### デバイスの修正・削除
+
+デバイス情報を修正するか、デバイスを削除するには、デバイスリストの左側の***Edit***カラムで修正または削除アイコンをクリックします。 

@@ -1,0 +1,80 @@
+import HighlightBackslash from '@site/src/components/HighlightBackslash';
+
+<Title level={props.level} hashid="check-default-db-id-values-planuid">デフォルトプランを照会する</Title>
+
+<InDoc pages='install-agent'>
+
+**デフォルトプランユーザーファイル**作成時、エージェントが事前定義されたDB情報を使用してプランを自動的に照会するように設定できます。 
+
+</InDoc>
+
+<Xclude pages='install-agent'>
+
+**デフォルトプランユーザーファイル**作成時、エージェントが事前定義されたDB情報を使用してプランを自動的に照会するように設定できます。 <Cmdname sid="ITM09107" className="uitext" />項目のチェックボックスを選択した後、次のように予め入力したDB接続情報を通じてプラン情報を照会します。
+
+</Xclude>
+
+<Tabs>
+<TabItem value='linux-dfp' label='Linux' default>
+
+1. エージェント設定(*whatap.conf*)ファイルに`plan_db`オプションを追加し、DB名を入力します。
+
+   ```ini title='whatap.conf'
+   plan_db=(dbname)
+   ```
+
+2. DB設定後`planuid.sh`スクリプトを使用してユーザーとパスワードを設定します。
+
+   <pre
+   tabIndex="0"
+   className="prism-code language-bash codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar"
+   style={{ color: "rgb(191, 199, 213)", backgroundColor: "rgb(41, 45, 62)" }}
+   >
+   <code className="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
+       <span className="token-line" style={{ color: "rgb(191, 199, 213)" }}>
+       <span className="token function">./planuid.sh </span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>user</strong></span> 
+       <span className="token plain" style={{ color: "rgb(255, 255, 0)" }}>&nbsp;</span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>pwd</strong></span>
+       </span>
+   </code>
+   </pre>
+
+   :::note 
+
+   ユーザー(`user`)とパスワード(`pwd`)に特殊文字が含まれている場合、各特殊文字の前に逆スラッシュ(`\`)を追加します。
+
+   <HighlightBackslash />
+   > 例、 <code>user$example</code> → <code className="highlight-backslash">user\\$example</code>
+
+   :::
+
+</TabItem>
+
+<TabItem value='windows-dfp' label='Windows' default>
+
+1. エージェント設定(*whatap.conf*)ファイルに`plan_db`オプションを追加し、DB名を入力します。
+
+   ```ini title='whatap.conf'
+   plan_db=(dbname)
+   ```
+
+2. DB設定後`planuid.bat`スクリプトを使用してユーザーとパスワードを設定します。
+
+   <pre
+   tabIndex="0"
+   className="prism-code language-bash codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar"
+   style={{ color: "rgb(191, 199, 213)", backgroundColor: "rgb(41, 45, 62)" }}
+   >
+   <code className="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
+       <span className="token-line" style={{ color: "rgb(191, 199, 213)" }}>
+       <span className="token function">planuid.bat </span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>user</strong></span> 
+       <span className="token plain" style={{ color: "rgb(255, 255, 0)" }}>&nbsp;</span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>pwd</strong></span>
+       </span>
+   </code>
+   </pre>
+
+</TabItem>
+</Tabs>

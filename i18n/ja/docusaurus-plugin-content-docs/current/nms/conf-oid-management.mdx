@@ -1,0 +1,41 @@
+---
+id: conf-oid-management
+title: OID管理
+description: OID管理メニューを案内します。
+keywords:
+  - NMS
+  - 設定
+  - OID管理
+---
+
+{/* 다국어 이미지 미작업 */}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_setting" className="uitext" /> &gt; <Cmdname sid="side_oidManagement" className="uitext" />
+
+<Cmdname sid="side_oidManagement" className="uitext" />メニューでSNMP Pollingを通じて収集するOIDを登録できます。 OIDは、ネットワーク機器の様々な性能指標を収集するための識別子です。
+
+## 基本画面
+
+基本的にOIDは、システムにあらかじめ登録されており、特定デバイスの専用指標を収集するために追加できます。 追加されたOIDは、デバイス管理画面で該当デバイスに接続してSNMP Pollingを通じてデータを収集するために使用されます。 
+
+<ImgLang img="nms-conf-oid-mng.png" desc="OID管理" />
+
+#### OID追加
+
+特定の機器が提供するユーザー定義指標を収集するには、OIDを手動で追加できます。
+
+1. 左上でエージェントを選択します。 
+
+2. 右上で<UI>+</UI> <Cmdname sid="BTN09018" className="uitext" />ボタンをクリックした後<Cmdname sid="BTN09018" className="uitext" />画面で次の情報を入力します。 
+
+   > ***OID***, ***Description***, ***Manufacture***, ***Category*** 
+
+   :::note 
+
+   ***Category***は、各OIDが収集するリソースを定義するために使用されます。 これにより、OIDが収集する指標を分類し、管理できます。
+
+   :::
+
+#### OID修正
+
+OIDリストの左側***Edit***カラムで![修正アイコン](/img/ic-edit.svg)修正アイコンを選択して、関連情報を修正できます。 

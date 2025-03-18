@@ -1,0 +1,58 @@
+---
+id: java-2_2_52
+title: Java Agent v2.2.52
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_50
+displayed_sidebar: releaseSidebar
+---
+
+2025年02月13日
+
+- <Status priority='1'>New</Status> ThreadがOutOfMemoryErrorで中断される場合、通知を送信
+
+  ```ini
+  # デフォルト値: false  
+  event_oom_enabled=true  
+  ```
+
+- <Status priority='1'>New</Status> オープンソース追跡のためのTrace Contextに対応
+
+  - traceparent ヘッダーを追加して、様々なHTTPクライアントライブラリでの追跡に対応
+
+  :::note 
+
+  **対応ライブラリ**
+
+  - spring-boot-2 ~: RestTemplate, WebClient, RestClient
+  - okhttp
+  - feign client
+  - Apache HttpClient4, Apache HttpClient5
+  - HttpURLConnection
+
+  :::
+
+- <Status priority='1'>Feature</Status>  CompletableFuture追跡範囲に`java.util.function.Function`を追加
+
+  :::note 
+
+  詳しい内容は、[次の文書](/java/async-tracking#completablefuture)を参照してください。 
+
+  :::
+
+- <Status priority='1'>Feature</Status> トランザクションで外部呼び出しによって発生した`java.io.IOException`をbiz_exceptions 設定で処理できるように修正
+
+- <Status priority='1'>Changed</Status> spring-boot設定でhikari設定を分離
+
+  ```bash
+  ex. spring-boot-3.0  
+  weaving=spring-boot-3.0,hikari-5.0  
+
+  ex. spring-boot-2.7  
+  weaving=spring-boot-2.7,hikari-4.0  
+  ```
+
+- <Status priority='0'>Fixed</Status> Tomcat9ベースのspring-bootバージョンでspring-securityエラーが発生した場合、エージェントでstatus codeの値が実際のstatus codeと一致するように修正
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.52" />

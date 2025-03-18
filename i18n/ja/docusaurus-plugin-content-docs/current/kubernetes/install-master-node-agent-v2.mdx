@@ -41,9 +41,9 @@ EKS Fargateは、対応予定です。
 
 6. インストール方法に関する項目を選択した後、画面右下の**_次_**ボタンをクリックするか、左の**_追加機能の適用_**タブを選択して次のステップへ移動します。
 
-## 追加機能の適用
+## 追加機能の適用{#additional-features}
 
-WhaTap Kubernetesモニタリングは、現在**コントロールプレーンモニタリング**を追加機能として提供します。 追加機能の適用を希望する場合、**_Control Plane_**チェックボックスを選択します。 
+WhaTap Kubernetesモニタリングは、様々な追加機能を提供します。 
 
 <ImgLang img='k8s-install-master-node-addition.png' desc='追加機能の適用'/>
 
@@ -51,9 +51,9 @@ WhaTap Kubernetesモニタリングは、現在**コントロールプレーン�
 
 追加機能を適用するかどうかを選択した後、画面右下の**_次へ_**ボタンをクリックするか、左の**_インストールファイルのダウンロード_**タブを選択して次のステップへ移動します。 
 
-:::note 
+### コントロールプレーンモニタリング活性化{#control-plane-features}
 
-**コントロールプレーンモニタリング**の詳細については、次の文書を参照してください。
+**コントロールプレーンモニタリング**アクティベーションと各機能の詳細については、次の文書を参照してください。
 
 - <Cmdname sid="side_kubeApiserverDashboard" className="uitext" /> [ショートカット](/kubernetes/kube-apiserver-dashboard)
 
@@ -61,7 +61,98 @@ WhaTap Kubernetesモニタリングは、現在**コントロールプレーン�
 
 - <Cmdname sid="side_etcdDashboard" className="uitext" /> [ショートカット](/kubernetes/etcd-dashboard)
 
-- **_kube-schedulerダッシュボード_** [ショートカット](/kubernetes/kube-scheduler-dashboard)
+- <Cmdname sid="side_kubeSchedulerDashboard" className="uitext" /> [ショートカット](/kubernetes/kube-scheduler-dashboard)
+
+### Custom Resourceモニタリング活性化{#custom-resource-features}
+
+<Tabs>
+<TabItem value='cr_yaml' label='Yaml' default>
+
+WhaTap Kubernetesエージェント設置*YAML*ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
+
+```yaml {38,39}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: "2025-01-15T01:48:26Z"
+  name: whatap
+  resourceVersion: "125200773"
+  uid: 54b0bcdb-1f12-4779-b0cb-e8de2f6be64a
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - namespaces
+  - pods
+  - pods/log
+  - configmaps
+  - services
+  - endpoints
+  - daemonsets
+  - ingresses
+  - deployments
+  - nodes
+  - persistentvolumes
+  - persistentvolumeclaims
+  - events
+  - replicasets
+  - roles
+  - rolebindings
+  - clusterroles
+  - clusterrolebindings
+  - jobs
+  - cronjobs
+  - statefulsets
+  - serviceaccounts
+  - configmaps
+  - storageclasses
+  - horizontalpodautoscalers
+  - replicationcontrollers
+  - customresourcedefinitions # CRD収集権限を追加
+  - samplecrds # モニタリングするCustom Resourceの名前を追加
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods/exec
+  verbs:
+  - create
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - '*'
+- nonResourceURLs:
+  - /metrics
+  verbs:
+  - '*'
+```
+
+</TabItem>
+
+<TabItem value='cr_helm' label='Helm Chart' default>
+
+WhaTap KubernetesエージェントをHelmチャート方式で設置する場合、基本*values.yaml*ファイルにモニタリングするCustom Resource名前を追加します。 次のように`resources`項目に該当Custom Resource名前を追加します。 
+
+```yaml
+collect_custom_resource: true
+clusterrole:
+  extraResources:
+    - "customresourcedefinitions" ##crd収集権限を追加
+    - "samplecrds" ##収集しようとするcustom resourceを追加
+```
+
+</TabItem>
+
+</Tabs>
+
+:::note 
+
+<Cmdname sid="side_masterMetaInfo" className="uitext" />メニューで**Custom Resourceモニタリング**ができます。
 
 :::
 

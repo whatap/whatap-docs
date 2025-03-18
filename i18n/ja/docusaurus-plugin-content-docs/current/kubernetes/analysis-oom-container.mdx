@@ -10,9 +10,9 @@ keywords:
   - Out Of Memory
 ---
 
-ホーム画面 > プロジェクト選択 > **_コンテナー_** > **_OOM Killedコンテナ_**
+ホーム画面 > プロジェクト選択 > <Cmdname sid="side_container" className="uitext" /> > <Cmdname sid="side_oomContainer" className="uitext" />
 
-**_Out Of Memory Killedコンテナ_**メニューを通じて**Out Of Memory**(**OOM**)が発生したコンテナを素早く検索し、その時点でのメモリ使用量の変化の推移を確認できます。変化の推移は、急激または漸進的である可能性があります。これを確認することで、適切なPOD数とメモリ臨界点に対する客観的な判断が可能です。
+<Cmdname sid="side_oomContainer" className="uitext" />メニューを通じて**Out Of Memory**(**OOM**)が発生したコンテナをすばやく検索し、その時点でのメモリ使用量の変化の推移を確認できます。変化の推移は急激または漸進的である可能性があります。これを確認し、適切なPOD数とメモリの臨界点に対する客観的な判断が可能です。
 
 :::note 
 
@@ -32,7 +32,7 @@ keywords:
 
 ### OOM Killedコンテナ情報
 
-**_Out Of Memory Killedコンテナ_**メニューで提供するカラム情報を次のように案内します。
+<Cmdname sid="side_oomContainer" className="uitext" />メニューで提供するカラム情報を次のように案内します。
 
 | カラム                     | 意味                                 |
 | ----------------------- | ---------------------------------- |
@@ -48,6 +48,7 @@ keywords:
 | **_memLimit_**          | コンテナのメモリLimitサイズ                   |
 | **_namespace_**         | コンテナのPodが属するnamespace名             |
 | **_memory_workingset_** | コンテナで非活性化されているメモリを除いて実際に使用中のメモリ    |
+| **_microOname_**        | コンテナで実行中のアプリケーション名                 |
 
 :::note 
 
@@ -56,5 +57,7 @@ keywords:
 - **_containerId_**をクリックすると[コンテナ一覧](/kubernetes/resource-container-list)メニューに移動します。
 
 - **_onodeName_**をクリックすると[ノード一覧](/kubernetes/resource-node-list)メニューに移動します。 
+
+- **_microOname_**クリックすると、該当アプリケーションが検索された[コンテナアプリケーションリスト](/kubernetes/resource-application-list)メニューに移動します。 
 
 :::
