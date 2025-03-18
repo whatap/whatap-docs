@@ -49,8 +49,13 @@ npm run crowdin upload
 
 ### 번역 다운로드
 
-```
+```bash
+# 영어
 crowdin download -b main -l en-US
+
+# 일어
+crowdin download -b main -l ja
+
 ```
 
 언어별 다운로드 `crowdin download -l en-US -b main`
