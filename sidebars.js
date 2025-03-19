@@ -6984,7 +6984,6 @@ const sidebars = {
             },
             'kubernetes/node-map',
             'kubernetes/performance-summary',
-            'kubernetes/cluster-summary',
           ]
         },
         {
@@ -7006,6 +7005,37 @@ const sidebars = {
             'kubernetes/flexboard-mode',
             'kubernetes/flexboard-share',
           ],
+        },
+        {
+          type: 'category',
+          label: '클러스터',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/cluster-summary',
+            'kubernetes/resource-namespace',
+            'kubernetes/object-manifest',
+            'kubernetes/kubernetes-event',
+            'kubernetes/kube-apiserver-dashboard',
+            'kubernetes/kube-apiserver-metrics-search',
+            'kubernetes/etcd-dashboard',
+            'kubernetes/kube-scheduler-dashboard',
+            'kubernetes/service-list',
+            'kubernetes/pv-list',
+            'kubernetes/ingress-list',
+          ],
+        },
+        {
+          type: 'category',
+          label: '노드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/resource-node-list',
+            'kubernetes/node-timeline',
+            'kubernetes/node-details',
+            'kubernetes/node-disk-list',
+          ]
         },
         {
           type: 'category',
