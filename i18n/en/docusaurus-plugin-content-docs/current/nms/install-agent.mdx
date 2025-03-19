@@ -1,0 +1,121 @@
+---
+id: install-agent
+title: Agent Installation
+description: It guides you to the installation of the WhaTap network management system's agent.
+keywords:
+  - NMS
+  - Agent Installation
+---
+
+To use the WhaTap **NMS**, after [Sign up](https://www.whatap.io/en/signup/), create a project and then install the **NMS** agent.
+
+import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
+
+<Createprojectv2 />
+
+import Accesskey from "../getting-started/_accesskey.mdx";
+
+<Accesskey />
+
+## Agent Installation
+
+<ImgLang img="nms-install-agent.png" desc="Install NMS agent" />
+
+### Rocky Linux
+
+:::note 
+
+WhaTap's ***Network Management System*** supports the Rocky Linux 9.4 environment. 
+
+:::
+
+After checking the project access key in the <Cmdname sid="TTL07075" className="uitext" /> guidance section, proceed with the installation according to the following instructions.
+
+1. Execute the following command to register the WhaTap **repository**. 
+
+   ```bash
+   sudo rpm --import https://repo.whatap.io/centos/release.gpg
+   sudo rpm -Uvh https://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
+   ```
+
+2. Execute the following command to install the **package**. 
+
+   ```bash
+   sudo dnf install -y whatap-nms
+   ```
+
+3. Execute the following command. Enter the **access key** and then set the WhaTap server's **host**.
+
+   ```bash
+   # Entering the access key and setting the host 
+   sudo wtinitset -a x42vc20h0tcvl-z517iuvl5ac7as-x3df8vn2mfasn9 -s 15.165.146.117
+
+   # Checking the option
+   sudo wtinitset --help
+   usage: wtinitset [-h] -a LICENSE -s HOST
+
+   Whatap-nms access key manager tool
+
+   options:
+   -h, --help            show this help message and exit
+   -a LICENSE, --accesskey LICENSE
+   Access key for project
+   -s HOST, --server HOST
+   Whatap host ip address for data transfer
+   ```
+
+4. After installation, execute the following command to check that the NMS agent is running normally. 
+
+   ```bash
+   sudo service nmscore status
+   ```
+
+### Ubuntu
+
+:::note 
+
+WhaTap's ***Network Management System*** supports the Ubuntu 22.04 environment. 
+
+:::
+
+After checking the project access key in the <Cmdname sid="TTL07075" className="uitext" /> guidance section, proceed with the installation according to the following instructions.
+
+1. Execute the following command to register the WhaTap **repository**. 
+
+   ```bash
+   curl -s https://repo.whatap.io/debian/release.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/whatap-release.gpg > /dev/null
+   echo "deb [signed-by=/etc/apt/trusted.gpg.d/whatap-release.gpg] https://repo.whatap.io/debian unstable/" | sudo tee /etc/apt/sources.list.d/whatap.list
+   ```
+
+2. Execute the following command to install the **package**. 
+
+   ```bash
+   sudo apt-get update
+   sudo apt-get install -y whatap-nms
+   ```
+
+3. Execute the following command. Enter the **access key** and then set the WhaTap server's **host**.
+
+   ```bash
+   # Entering the access key and setting the host 
+   sudo wtinitset -a x42vc20h0tcvl-z517iuvl5ac7as-x3df8vn2mfasn9 -s 15.165.146.117
+
+   # Checking the option
+   sudo wtinitset --help
+   usage: wtinitset [-h] -a LICENSE -s HOST
+
+   Whatap-nms access key manager tool
+
+   options:
+   -h, --help            show this help message and exit
+   -a LICENSE, --accesskey LICENSE
+   Access key for project
+   -s HOST, --server HOST
+   Whatap host ip address for data transfer
+   ```
+
+4. After installation, execute the following command to check that the NMS agent is running normally. 
+
+   ```bash
+   sudo service nmscore status
+   ```

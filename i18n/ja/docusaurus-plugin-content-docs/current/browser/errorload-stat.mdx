@@ -1,0 +1,115 @@
+---
+id: errorload-stat
+title: エラーロード統計
+description: エラーロード統計は、全体のエラー状況情報を提供します。
+keywords:
+  - Browser Monitoring
+  - エラー
+  - 統計
+---
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_errorLoadStatistics" className="uitext" />
+
+<Cmdname sid="side_errorLoadStatistics" className="uitext" />メニューで全体のエラー現況を視覚的に提供し、発生したエラーを効率的に分析できます。 様々なフィルターオプションを通じて、希望するデータをグループ化したり、特定の条件に合った情報を照会でき、これによってユーザーはより細かいエラー分析を行うことができます。
+
+## 基本的な使い方
+
+数値化したエラーメッセージを通じて、ユーザーはエラー発生推移をリアルタイムでモニタリングし、各エラーメッセージに対する発生情報を分析できます。 タイムセレクターを通じて照会を希望する時間帯を設定し、該当時間帯のエラー現況を確認します。
+
+<ImgLang img="browser-statistics-error-stat.png" desc="エラーロード統計" />
+
+1. <Cmdname sid="time" className="uitext" />で照会する日付と時間を設定します。
+
+2. <Cmdname sid="filter" className="uitext" />と<Cmdname sid="groupby" className="uitext" />を通じて照会したい条件を選択します。
+
+3. 条件設定後***エラーメッセージ別ロード数推移***チャートとエラーテーブルを確認します。 
+
+選択した時間範囲のエラー現況をチャート及びリストを通じて照会できます。 バーチャートで特定区間を選択する時、該当区間のエラー現況をエラーテーブルを通じて確認できます。 
+
+{/* 조회 시간 설정하기 */}
+import Settime from "../common-items/_browser-stat-set-time.mdx";
+
+<Settime/>
+
+### グループ化及びフィルター基準の選択
+
+<Cmdname sid="groupby" className="uitext" />及び<Cmdname sid="filter" className="uitext" />基準を選択して、ユーザーが希望する方法でデータをフィルタリングできます。
+
+#### グループ化
+
+グループ化オプションを選択して、データを特定の基準に基づいてグループ化できます。 グループ化の基準としては、<Cmdname sid="ITM09123" className="uitext" />の他に<Cmdname sid="ITM09125" className="uitext" />、<Cmdname sid="ITM06770" className="uitext" />、<Cmdname sid="TTL06358" className="uitext" />、<Cmdname sid="device" className="uitext" />などが提供されます。 ユーザーは、特定の条件に合ったエラーデータをまとめて分析し、必要に応じてグループ化されたデータを表示したり、個別のデータを照会できます。
+
+- **グループ化未適用**: <Cmdname sid="ITM09123" className="uitext" />を選択する時、データが個別項目として一覧表示され、各項目の発生回数を直接確認できます。 
+
+- **グループ化適用**: <Cmdname sid="ITM09125" className="uitext" />、<Cmdname sid="ITM06770" className="uitext" />、<Cmdname sid="TTL06358" className="uitext" />、<Cmdname sid="device" className="uitext" />のうち選択した基準に合わせて、エラーメッセージがグループ化された形式で表示されます。
+
+#### フィルタリング
+
+フィルタリング機能により、特定の条件に合ったデータのみを照会できます。 フィルタリング可能な項目は、<Cmdname sid="ITM09125" className="uitext" />、<Cmdname sid="ITM06770" className="uitext" />、<Cmdname sid="TTL06358" className="uitext" />、<Cmdname sid="device" className="uitext" />などです。 フィルタリング条件を選択した後![検索アイコン](/img/ic-search-on-press.svg)検索ボタンをクリックします。 フィルタリングされた条件に従ってエラーメッセージを抽出し、特定のエラータイプやオペレーティングシステムで発生したエラーのみを選択的に確認できます。
+
+### ユーザーセッションログの確認
+
+***Error Message***カラムの右側で![右方向アイコン](/img/right-arrow.svg)ボタンを選択すると<Cmdname sid="side_userSessionEventSearch" className="uitext" />メニューに移動できます。 選択したエラータイプとメッセージをフィルターで適用した結果を確認できます。
+
+{/* 조회 결과 다운로드하기 */}
+import CSVdownload from "../common-items/_browser-stat-download-csv.mdx";
+
+<CSVdownload filename="Error_LoadStatistics" />
+
+## 画面構成
+
+### エラーメッセージ別ロード数推移
+
+エラー発生数を時間帯別にバーチャート形式で視覚化し、ユーザーは特定時間帯に発生したエラーの発生頻度を簡単に確認できます。 バーチャートで特定区間を選択する時、該当区間のエラー現況をエラーテーブルを通じて確認できます。 
+
+- **グループ化未適用** 
+
+    時間帯別の全体エラー発生量を単一グラフで視覚化し、全体的なエラー発生トレンドを把握できます。 
+
+  <ImgLang img="browser-statistics-error-stat-ungr.png" desc="グループ化未適用 " />
+
+- **グループ化適用** 
+
+    スタックチャートとドーナツチャートで各グループ別エラー発生量と比重を視覚化し、時間帯別発生量をより具体的に分析できます。
+
+  <ImgLang img="browser-statistics-error-stat-gr.png" desc="グループ化適用" />
+
+### エラーテーブル
+
+エラーメッセージ、発生回数、エラータイプ、OS及びブラウザなどの詳細情報をテーブル形式で提供します。 このテーブルにより、ユーザーは各エラー メッセージに関する追加情報を簡単に確認できます。
+
+- **グループ化未適用** 
+
+    グループ化しない場合、すべてのデータが個別のアイテムとして一覧されます。 これにより、各項目の発生回数やエラーメッセージなどを直接確認できます。
+
+    ![グループ化未適用](/img/browser-statistics-error-stat-ungr-tb.png)
+
+- **グループ化適用** 
+
+    選択した基準に合わせてデータをグループ化し、ツリー構造で構成できます。 また、下位項目を![アイコン](/img/ic-caret-down.svg)アイコンを介して折りたたんだり展開したりして、より効率的に探索できます。 
+
+    ![グループ化適用](/img/browser-statistics-error-stat-gr-tb.png)
+
+## カラム及び用語の案内
+
+### カラムガイド
+
+| カラム                 | 説明                      |
+| ------------------- | ----------------------- |
+| ***Error Message*** | 発生したエラーメッセージの内容です。      |
+| ***Count***         | 該当エラーメッセージが発生した回数です。    |
+| ***Error Type***    | エラーのタイプを意味します。          |
+| ***OS***            | エラーが発生したオペレーティングシステムです。 |
+| ***Browser***       | エラーが発生したブラウザです。         |
+
+### エラータイプの案内
+
+ブラウザで発生する**エラータイプ**(***Error Type***)は次のように区分します。 
+
+- 「console」: 開発者が定義したエラーで、ブラウザーコンソールで発生するエラーです。
+
+- `onError`: 特定のリソースの読み込みに失敗したり、スクリプトエラーが発生した場合に発生するエラーです。
+
+- `fetchError`: fetch APIを使用してHTTPリクエストを送る時に発生するエラーです。
+
+- `xhrError`: XMLHttpRequest(XHR)HTTPリクエストを送る時に発生するエラーです。

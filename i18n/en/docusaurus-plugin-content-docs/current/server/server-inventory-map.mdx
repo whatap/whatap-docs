@@ -68,7 +68,25 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
   </TabItem>
   </Tabs>
 
-- **Unix** Solaris: 1.3.6 or later
+- **Unix** 1.3.7 or later
+
+  <Tabs>
+  <TabItem value='aix' label='AIX' default>
+
+  If an update is needed, check the following command.
+
+  ```bash
+  stopsrc -s whatap-infra
+  cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+  rpm -e whatap-infra
+  rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  startsrc -s whatap-infra
+  ```
+
+  </TabItem>
+
+  <TabItem value='solaris' label='Solaris' default>
 
   If an update is needed, check the following command.
 
@@ -80,6 +98,10 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
   cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
   /etc/init.d/whatap-infra start
   ```
+
+  </TabItem>
+
+  </Tabs>
 
 - **Windows**: 2.7.2 or later
 
@@ -116,21 +138,30 @@ The following settings are required to enable the <Cmdname sid="side_serverInven
      </TabItem>
      </Tabs>
 
-   - **Unix** Solaris
+   - **Unix**
 
      <Tabs>
      <TabItem value="unix-opt" label="Add option command" default>
 
-     ```bash title='Oracle Solaris'
+     ```bash
      grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
      ```
 
      </TabItem>
      <TabItem value="unix-restart" label="Restart agent">
 
-     ```bash title='Oracle Solaris'
-     /etc/init.d/whatap-infra restart
-     ```
+     - **AIX** 
+
+       ```bash title='AIX'
+       stopsrc -s whatap-infra
+       startsrc -s whatap-infra
+       ```
+
+     - **Solaris**
+
+       ```bash title='Solaris'
+       /etc/init.d/whatap-infra restart
+       ```
 
      </TabItem>
      </Tabs>
@@ -202,39 +233,40 @@ You can classify servers by selecting ***1st group*** and ***2nd group*** sequen
 
 </Columns>
 
-{/* 
-
-Primary group: group, Secondary group: sub group, card
-
-Cards are for group summary information, server group charts, and server group metrics information summaries. 
-
-*/}
-
-{/* 
-
-Primary group - group, secondary group - sub group
-
-You can classify servers by selecting ***1st group*** and ***2nd group*** sequentially. 
-
-Panels are created in the grid area for each group. Secondary group is for group grid. 
-
-When grouped, data is visually displayed in the group grid area of ​​the ![Leader line 3](/img/number-03.png) chart. 2차 그룹은 
-
-It displays servers grouped in detail within the primary group, represented as a list of servers distinguished by the chart and border. 
-
-*/}
-
 :::note 
 
 For more information about ***grouping***, see [the following](server-inventory-map-group). 
 
 :::
 
+#### Label
+
+<Cmdname sid="side_serverInventoryMap" className="uitext" /> provides the <Cmdname sid="label" className="uitext" /> option that clearly displays the server information. When the desired <Cmdname sid="label" className="uitext" /> option is selected, you can see the labels for each server in the chart.
+
+| Label              | Description                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| ***Server name***  | The actual hostname of each server appears as a label.      |
+| ***Server alias*** | It displays the user-specified alias as a label.            |
+| ***IP Address***   | The IP address of the server appears as a label.            |
+| ***CPU(%)***       | The current CPU utilization (%) appears as a label.         |
+| ***Memory(%)***    | The current memory utilization (%) appears as a label.      |
+| ***Swap(%)***      | The current swap memory utilization (%) appears as a label. |
+| ***Disk Busy(%)*** | The current disk utilization (%) appears as a label.        |
+| ***Network***      | The network status appears as a label.                      |
+
 #### Filtering
 
 <Cmdname sid="side_serverInventoryMap" className="uitext" /> provides the feature to filter the server types to display on the dashboard. Data applied through filtering is reflected into the server group chart, summary view, and detailed view.
 
 <ServerInventoryFilter />
+
+#### Inventory map configuration
+
+<Cmdname sid="side_serverInventoryMap" className="uitext" /> provides the <Cmdname sid="TTL09114" className="uitext" /> option. Select the ![Configuration icon](/img/ic-setting.svg) icon on the upper right, and then enable or disable the following options.
+
+- <Cmdname sid="ITM09115" className="uitext" />: Select whether to display server group cards with no settings for the ***primary group*** during ***grouping***. The default settings appear.
+
+- <Cmdname sid="ITM09116" className="uitext" />: Select whether to display metric information at the bottom of the server group card. The default settings appear.
 
 ### ![2](/img/number-02.png) Server configuration status
 
@@ -249,8 +281,6 @@ For more information about ***grouping***, see [the following](server-inventory-
 ### ![3](/img/number-03.png) Server group card
 
 <Cmdname sid="side_serverInventoryMap" className="uitext" /> provides individual cards based on the grouped server configuration. The <Cmdname sid="side_serverInventoryMap" className="uitext" /> card consists of three major elements as follows.
-
-{/* <Cmdname sid="side_serverInventoryMap" className="uitext" />은 그룹화 한 서버 구성 정보별로 카드를 제공합니다. When grouping is not applied, all server information is displayed within a single card. When applying grouping, cards are organized by each group unit. The card in <Cmdname sid="side_serverInventoryMap" className="uitext" /> consists of the following three elements.  */}
 
 <ImgLang img='server-inventory-map-chart.png' desc='Server inventory map chart' />
 
@@ -269,11 +299,7 @@ It provides the counts for each status of the servers that belong to the group n
 
 #### ![Leader line b](/img/char-b.svg) Server group chart
 
-{/* 그룹 내 서버의 상태 및 성능 데이터를 시각화하여 제공합니다. When ***secondary grouping*** is applied, data appears in subgroup format within the chart. Additionally, if you hover your mouse over a subgroup, you can see brief information for each server in popover format. For the example image, the primary and secondary groupings are applied with the basic collection items: ***server type*** and ***OS type***.  */}
-
 It provides visualization of the status and performance for servers within the group. When the ***secondary grouping*** is applied, data is additionally divided and displayed in subgroup format within the chart. Additionally, if you hover your mouse over a subgroup, you can briefly check the main status of the servers included in the corresponding group in popover format. 
-
-{/* 예시 이미지에서는 기본 수집 항목인 ***서버 타입***과 ***OS 타입***을 기준으로 1차와 2차 그룹화가 적용된 차트를 확인할 수 있습니다. */}
 
 #### ![Leader line c](/img/char-c.svg) Metrics
 
@@ -373,3 +399,7 @@ The <Cmdname sid="metrics" className="uitext" /> tab allows you to view key serv
 | ***[Disk] Write (Bytes)*** | It displays the sum of write speeds per second of the entire disk in bytes.                                                                                                |
 
 {/* 상세 내 커스텀 컬럼 추가/수정/삭제의 경우 프로젝트 수정 권한 필요 */}
+
+### Events in progress
+
+You can see the list of active events in the server group selected in the <Cmdname sid="TTL08970" className="uitext" /> tab.

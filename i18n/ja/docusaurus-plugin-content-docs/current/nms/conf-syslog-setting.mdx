@@ -1,0 +1,21 @@
+---
+id: conf-syslog-setting
+title: Syslog設定
+description: Syslog設定メニューを案内します。
+keywords:
+  - NMS
+  - 設定
+  - Syslog設定
+---
+
+{/* 다국어 이미지 미작업 */}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_setting" className="uitext" /> &gt; <Cmdname sid="side_syslogSetting" className="uitext" />
+
+Syslogは、デバイスで発生するログメッセージを収集する標準プロトコルです。 各デバイスは、NMSサーバーのIPアドレスと指定されたポートを通じてSyslogメッセージを送信するように設定する必要があります。 <Cmdname sid="side_syslogSetting" className="uitext" />メニューでログ収集のためのポートを活性化できます。 
+
+<ImgLang img="nms-conf-syslog-st.png" desc="Sylog Setting" />
+
+- ***Port***: デバイスで生成されたSyslogメッセージを収集するために、NMSで指定されたポートを活性化します。 Syslogメッセージ収集のために基本的にUDP 514番受信ポートを使用します。
+
+- ***Activate***: ![トグルアイコン](/img/ic-toggle-on.svg)活性化トグルボタンを使用して、その設定の活性化有無を選択します。 

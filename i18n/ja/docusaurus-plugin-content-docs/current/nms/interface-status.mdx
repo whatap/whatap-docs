@@ -1,0 +1,37 @@
+---
+id: interface-status
+title: インターフェース状態
+description: インターフェイス状態メニューを案内します。
+keywords:
+  - NMS
+  - デバイス
+  - インターフェース状態
+---
+
+{/* 다국어 이미지 미작업 */}
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_device" className="uitext" /> &gt; <Cmdname sid="side_interfaceStatus" className="uitext" /> 
+
+<Cmdname sid="side_interfaceStatus" className="uitext" />メニューでデバイスのネットワークインターフェイスの状態をリアルタイムでモニタリングできます。 インターフェイスの接続状態を視覚的に表示し、各インターフェイスに関する詳細な情報を提供することで、ネットワークの性能を簡単に分析できます。
+
+## 基本画面ガイド
+
+<ImgLang img="nms-interface-status.png" desc="Interface Status" />
+
+<Cmdname sid="side_interfaceStatus" className="uitext" />メニューは左インターフェースリスト領域と右上インターフェース状態、右下インターフェース詳細領域で構成されています。 左側のインターフェース領域で照会を希望するインターフェースを選択すると、右側の領域でインターフェースの状態及び詳細を確認できます。
+
+### インターフェース状態
+
+インターフェイスの接続状態を確認できます。 
+
+- <span class='snormal'>Connected</span> ![コネクションアイコン](/img/ic-connected.svg): インターフェイスが正常に接続された状態です。 Link StatusとAdmin Statusともに"up"の時に表示されます。
+
+- <span class='k8s-normal'>Link Down</span> ![リンクダウンアイコン](/img/ico-connection-link-down.svg): ネットワーク リンクがダウンした状態です。 Link Statusは"down"、Admin Statusは"up"状態の時に表示されます。
+
+- <span class='k8s-normal'>Admin Down</span> ![リンクダウンアイコン](/img/ico-connection-down.svg): 管理者がそのインターフェイスを非活性化した状態です。 Link StatusとAdmin Statusともに"down"の時に表示されます。
+
+- <span class='k8s-normal'>Unavailable</span> ![はてなアイコン](/img/ic-question-circle.svg): 物理的に活性化されていない仮想インターフェース、ループバックインターフェース、またはSFPモジュールが未挿入されたFiberインターフェースなど、使用できないインターフェースの数を示します。
+
+### インターフェース詳細
+
+各インターフェースの詳細情報を一覧形式で表示し、ユーザーがインターフェースをクリックすると、該当デバイスの推移ページに移動してより具体的な状態を確認できます。

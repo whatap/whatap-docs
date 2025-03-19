@@ -1,0 +1,248 @@
+---
+id: k8s-collection-server-ip
+title: Kubernetes収集サーバーIP変更
+description: Kubernetes製品収集サーバーIPの変更方法を案内します。
+keywords:
+  - 収集サーバーIP
+---
+
+Kubernetesモニタリングサービスを利用する顧客を対象に収集サーバーIP情報の変更方法を案内します。 Kubernetesモニタリングを設定した後、特定の環境で収集サーバーIPの変更が必要な場合は、次の過程を参考にして変更します。
+
+<Tabs>
+<TabItem value='cs-yaml' label='Yaml' default>
+
+## Yamlファイル基準
+
+1. 次の位置で`whatap_host`値を変更します。 
+
+   - *yaml*ファイルで`whatap-master-agent`コンテナの下位の`env`項目のうち`WHATAP_HOST`値を`61.109.237.237/61.109.238.166
+     `に変更します。 
+
+   - *yaml*ファイルで`whatap-node-agent`コンテナの下位の`env`項目のうち`WHATAP_HOST`値を`61.109.237.237/61.109.238.166
+     `に変更します。 
+
+2. 変更した*yaml*ファイルをKubernetesクラスターに適用します。 
+
+   ```bash
+   kubectl apply -f 変更したyamlファイル名.yaml
+   ```
+
+### 例
+
+```yaml title='Yaml' showLineNumbers{22-23,121-122}
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "whatap-master-agent"
+  namespace: "whatap-monitoring"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: "whatap-master-agent"
+  template:
+    metadata:
+      labels:
+        name: "whatap-master-agent"
+    spec:
+      containers:
+      - command:
+        - "/bin/entrypoint.sh"
+        env:
+        - name: "WHATAP_LICENSE"
+          value: "x22gg93735j9v-z63jpk29lgtn68-x52sdl202an6h"
+        - name: "WHATAP_HOST"
+          value: "61.109.237.237/61.109.238.166"
+        - name: "WHATAP_PORT"
+          value: "6600"
+        - name: "WHATP_MEM_LIMIT"
+          valueFrom:
+            resourceFieldRef:
+              containerName: "whatap-master-agent"
+              resource: "limits.memory"
+        image: "whatap/kube_mon"
+        name: "whatap-master-agent"
+        ports:
+        - containerPort: 6600
+        resources:
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          requests:
+            cpu: "100m"
+            memory: "300Mi"
+        volumeMounts:
+        - mountPath: "/bin/entrypoint.sh"
+          name: "start-script-volume"
+          readOnly: true
+          subPath: "entrypoint.sh"
+        - mountPath: "/whatap_conf"
+          name: "whatap-config-volume"
+      serviceAccount: "whatap"
+      volumes:
+      - configMap:
+          defaultMode: 448
+          name: "master-start-script"
+        name: "start-script-volume"
+      - emptyDir: {}
+        name: "whatap-config-volume"
+---
+apiVersion: "apps/v1"
+kind: "DaemonSet"
+metadata:
+  labels:
+    name: "whatap-node-agent"
+  name: "whatap-node-agent"
+  namespace: "whatap-monitoring"
+spec:
+  selector:
+    matchLabels:
+      name: "whatap-node-agent"
+  template:
+    metadata:
+      labels:
+        name: "whatap-node-agent"
+    spec:
+      containers:
+      - command:
+        - "/data/agent/node/cadvisor_helper"
+        - "-port"
+        - "6801"
+        env:
+        - name: "NODE_NAME"
+          valueFrom:
+            fieldRef:
+              fieldPath: "spec.nodeName"
+        image: "whatap/kube_mon"
+        name: "whatap-node-helper"
+        ports:
+        - containerPort: 6801
+          name: "helperport"
+        resources:
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
+        volumeMounts:
+        - mountPath: "/rootfs"
+          name: "rootfs"
+          readOnly: true
+        - mountPath: "/sys"
+          name: "hostsys"
+          readOnly: true
+        - mountPath: "/dev/disk"
+          name: "hostdiskdevice"
+          readOnly: true
+        - mountPath: "/var/run/docker.sock"
+          name: "dockerdomainsocket"
+      - command:
+        - "/bin/entrypoint.sh"
+        env:
+        - name: "NODE_IP"
+          valueFrom:
+            fieldRef:
+              fieldPath: "status.hostIP"
+        - name: "NODE_NAME"
+          valueFrom:
+            fieldRef:
+              fieldPath: "spec.nodeName"
+        - name: "WHATAP_LICENSE"
+          value: "x22gg93735j9v-z63jpk29lgtn68-x52sdl202an6h"
+        - name: "WHATAP_HOST"
+          value: "61.109.237.237/61.109.238.166"
+        - name: "WHATAP_PORT"
+          value: "6600"
+        - name: "HOST_PREFIX"
+          value: "/rootfs"
+        - name: "WHATP_MEM_LIMIT"
+          valueFrom:
+            resourceFieldRef:
+              containerName: "whatap-node-agent"
+              resource: "limits.memory"
+        image: "whatap/kube_mon"
+        name: "whatap-node-agent"
+        ports:
+        - containerPort: 6600
+          name: "nodeport"
+        resources:
+          limits:
+            cpu: "200m"
+            memory: "350Mi"
+          requests:
+            cpu: "100m"
+            memory: "300Mi"
+        volumeMounts:
+        - mountPath: "/rootfs"
+          name: "rootfs"
+          readOnly: true
+        - mountPath: "/bin/entrypoint.sh"
+          name: "start-script-volume"
+          readOnly: true
+          subPath: "entrypoint.sh"
+        - mountPath: "/whatap_conf"
+          name: "whatap-config-volume"
+      initContainers:
+      - command:
+        - "/data/agent/tools/whatap_debugger"
+        - "run"
+        image: "whatap/kube_mon"
+        name: "whatap-node-debug"
+        volumeMounts:
+        - mountPath: "/rootfs"
+          name: "rootfs"
+          readOnly: true
+      serviceAccount: "whatap"
+      tolerations:
+      - effect: "NoSchedule"
+        key: "node-role.kubernetes.io/master"
+      - effect: "NoSchedule"
+        key: "node-role.kubernetes.io/control-plane"
+      volumes:
+      - hostPath:
+          path: "/"
+        name: "rootfs"
+      - hostPath:
+          path: "/sys"
+        name: "hostsys"
+      - hostPath:
+          path: "/dev/disk"
+        name: "hostdiskdevice"
+      - configMap:
+          defaultMode: 448
+          name: "node-start-script"
+        name: "start-script-volume"
+      - emptyDir: {}
+        name: "whatap-config-volume"
+      - hostPath:
+          path: "/var/run/docker.sock"
+        name: "dockerdomainsocket"
+      - hostPath:
+          path: "/var/lib/docker"
+        name: "hostdocker"
+```
+
+</TabItem>
+
+<TabItem value='cs-helm' label='Helm Chart' default>
+
+## Helmチャート基準
+
+1. Helmチャートを通じてKubernetesエージェントを配布した場合*values.yaml*で次の項目を修正します。 
+
+   ```yaml title='Helm' showLineNumbers{3}
+   whatap:
+     license: # <license-key>
+     host: "61.109.237.237/61.109.238.166" # <whatap-server-host>
+   ```
+
+2. 修正したHelmチャートを適用します。
+
+   ```bash
+   helm upgrade whatap-kube-agent whatap/kube -f values.yaml
+   ```
+
+</TabItem>
+
+</Tabs>

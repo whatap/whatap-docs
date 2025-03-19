@@ -28,13 +28,23 @@ import TargetInfo from "../common-items/_import_k8s-container-map-target-resourc
 
 <TargetInfo />
 
+:::note 
+
+- WhaTap Kubernetesエージェントが提供するボリュームタイプは次のとおりです。 
+
+  > `HostPath`, `ConfigMap`, `Projected`, `EmptyDir`, `PersistentVolumeClaim` (PVC), `Secret`
+
+- Kubernetesで対応するボリュームのタイプと案内は、次の[Kubernetes公式文書](https://kubernetes.io/ko/docs/concepts/storage/volumes/)で確認できます。
+
+:::
+
 ### クバネティス状態の要約分析{#kube-summary-analysis}
 
 クバネティス環境における各コンテナ、Pod、ノードのパフォーマンスとリソースに関する要約分析レポートを提供します。 クラスターとネームスペースのコンテナ、Pod、ノードのリソース割り当てと使用状況をリアルタイムでモニタリングし、レポート内の提案を参考にして効果的に対応できます。 
 
 :::note 
 
-現在、要約分析機能は韓国語でのみ提供しています。 
+現在、ノード要約分析機能は韓国語のみで提供しています。 
 
 :::
 
@@ -47,6 +57,8 @@ import TargetInfo from "../common-items/_import_k8s-container-map-target-resourc
 - ノード情報: コンテナが実行されるノードのOS、IPアドレス、CPUコア数、メモリサイズなどのハードウェア情報を提供します。
 
 - リソース使用状況: コンテナのCPUとメモリリソースの使用量、設定された限度(Limit)および要請(Request)の数と比較した使用率を提供します。
+
+- サービスネットワーキング情報: 接続されたService及びIngress情報を確認できます。 
 
 #### Pod要約分析 {#pod-summary-analysis}
 

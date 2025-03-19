@@ -1,0 +1,80 @@
+import HighlightBackslash from '@site/src/components/HighlightBackslash';
+
+<Title level={props.level} hashid="check-default-db-id-values-planuid">Viewing the default plan</Title>
+
+<InDoc pages='install-agent'>
+
+When creating the **default plan user file**, you can configure the agent to automatically view the plan by using the predefined DB information. 
+
+</InDoc>
+
+<Xclude pages='install-agent'>
+
+When creating the **default plan user file**, you can configure the agent to automatically view the plan by using the predefined DB information. After checking the box for <Cmdname sid="ITM09107" className="uitext" />, search for the plan through the specified DB connection information as follows.
+
+</Xclude>
+
+<Tabs>
+<TabItem value='linux-dfp' label='Linux' default>
+
+1. Add the `plan_db` option to the agent configuration (*whatap.conf*) file and then enter the DB name.
+
+   ```ini title='whatap.conf'
+   plan_db=(dbname)
+   ```
+
+2. After configuring the DB, use the `planuid.sh` script to set the user and password.
+
+   <pre
+   tabIndex="0"
+   className="prism-code language-bash codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar"
+   style={{ color: "rgb(191, 199, 213)", backgroundColor: "rgb(41, 45, 62)" }}
+   >
+   <code className="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
+       <span className="token-line" style={{ color: "rgb(191, 199, 213)" }}>
+       <span className="token function">./planuid.sh </span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>user</strong></span> 
+       <span className="token plain" style={{ color: "rgb(255, 255, 0)" }}>&nbsp;</span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>pwd</strong></span>
+       </span>
+   </code>
+   </pre>
+
+   :::note 
+
+   If the user (`user`) and password (`pwd`) include special characters, add backslashes (`\`) before each special character.
+
+   <HighlightBackslash />
+   > e.g. <code>user$example</code> → <code className="highlight-backslash">user\\$example</code>
+
+   :::
+
+</TabItem>
+
+<TabItem value='windows-dfp' label='Windows' default>
+
+1. Add the `plan_db` option to the agent configuration (*whatap.conf*) file and then enter the DB name.
+
+   ```ini title='whatap.conf'
+   plan_db=(dbname)
+   ```
+
+2. After configuring the DB, use the `planuid.bat` script to set the user and password.
+
+   <pre
+   tabIndex="0"
+   className="prism-code language-bash codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar"
+   style={{ color: "rgb(191, 199, 213)", backgroundColor: "rgb(41, 45, 62)" }}
+   >
+   <code className="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
+       <span className="token-line" style={{ color: "rgb(191, 199, 213)" }}>
+       <span className="token function">planuid.bat </span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>user</strong></span> 
+       <span className="token plain" style={{ color: "rgb(255, 255, 0)" }}>&nbsp;</span>
+       <span className="token plain" style={{ color: "#ff9900" }}><strong>pwd</strong></span>
+       </span>
+   </code>
+   </pre>
+
+</TabItem>
+</Tabs>

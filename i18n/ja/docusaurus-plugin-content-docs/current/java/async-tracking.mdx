@@ -21,7 +21,7 @@ Javaエージェント設定を通じてCompletableFutureメソッドを収集�
 
 - メソッド名：'trace'で統一
 
-- ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`
+- ReturnType: `Supplier`, `Consumer`, `Runnable`, `Future`, `Function`
 
 ```java
 package io.home.test.util;
@@ -43,6 +43,9 @@ public class W {
     public static <T> Future<T> trace(Future<T> f) {
         return f;
     }
+    public static <T, R> Function<T, R> trace(Function<T, R> f) {
+    return f;
+}
 }
 ```
 

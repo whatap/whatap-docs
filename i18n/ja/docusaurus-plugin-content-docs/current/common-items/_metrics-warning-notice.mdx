@@ -12,7 +12,7 @@
 
 ## メトリクスイベントとは
 
-<Xclude product='npm'>
+<Xclude product='npm,nms'>
 
 メトリクスイベントは、基本イベント(アプリケーションイベント、サーバーイベントなど)より具体的で複雑なイベントを設定するために使用します。プロジェクトがリアルタイムで収集中のメトリクスデータに基づいてイベントを設定できます。使用状況に応じて、2つの設定方法のいずれかを選択してイベントを設定できます。
 
@@ -21,13 +21,13 @@
 
 </Xclude>
 
-<InDoc product='npm'>
+<InDoc product='npm,nms'>
 
 メトリクスイベントは、基本イベント(アプリケーションイベント、サーバーイベントなど)より具体的で複雑なイベントを設定するために使用します。プロジェクトがリアルタイムで収集中のメトリクスデータに基づいてイベントを設定できます。
 
 </InDoc>
 
-<Xclude product="amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud">
+<Xclude product="amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud,nms">
 
 :::note
 
@@ -46,6 +46,18 @@
 :::note
 
 メトリクスの詳細については、[次の文書](metrics-intro)を参照してください。
+
+:::
+
+</InDoc>
+
+{/* nms(Network Management System)의 경우 임시 */}
+
+<InDoc product="nms">
+
+:::note
+
+<Cmdname sid="sms_alert_settings" className="b500" />権限のあるメンバーのみが利用できます。メンバー権限についての詳細は、[次の文書](../project/project-structure#project-auth)を参照してください。
 
 :::
 
@@ -113,7 +125,7 @@
 
   - イベント発生時に出力する通知メッセージを入力します。<code>&#36;&#123;Tag&#125;</code>または<code>&#36;&#123;Field&#125;</code>を入力してメッセージに変数を適用できます。変数に入力するキーは、選択したメトリクス データ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。<Cmdname sid="tag_count" className="uitext" />メニューで入力できるタグまたはフィールドキーを確認できます。
 
-    <ImgLang img='event-config-message-example.png' desc='Message example' />
+    ![Message example](/img/event-config-message-example.png)
 
   - ![時間アイコン](/img/ico-timing.svg)ボタンをクリックすると、以前に入力したメッセージの履歴を確認できます。
 

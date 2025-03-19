@@ -1,5 +1,68 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_4_0",
+    "ver": "v2.4.0",
+    "date": "2025-03-04",
+    "Lists": [
+      {
+        "ver": "v2.4.0",
+        "hash": "v240",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Supported transaction monitoring for WCF, ASP, CGI, ISAPI, and such by using the ISAPI filter.</p>"
+      },
+      {
+        "ver": "v2.4.0",
+        "hash": "v240",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where X-Forwarded-For is not applied in WebForm.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_3_9",
+    "ver": "v2.3.9",
+    "date": "2025-01-23",
+    "Lists": [
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": ".NET Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved backward compatibility with .NET framework 4.5 or earlier.</p>"
+      },
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": ".NET Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved the method hook process.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_3_8",
+    "ver": "v2.3.8",
+    "date": "2025-01-15",
+    "Lists": [
+      {
+        "ver": "v2.3.8",
+        "hash": "v238",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Supported <strong>LIthe NQ to SQL</strong> (<code>System.Data.Linq</code>) monitoring.</p>"
+      },
+      {
+        "ver": "v2.3.8",
+        "hash": "v238",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the agent option to set the section name to exclude from monitoring.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_3_7",
     "ver": "v2.3.7",
     "date": "2025-01-20",

@@ -1,0 +1,41 @@
+---
+id: conf-oid-management
+title: OID Management
+description: It guides you to the OID management menu.
+keywords:
+  - NMS
+  - Configuration
+  - OID Management
+---
+
+{/* 다국어 이미지 미작업 */}
+
+Home &gt; Select Project &gt; <Cmdname sid="side_setting" className="uitext" /> &gt; <Cmdname sid="side_oidManagement" className="uitext" />
+
+In <Cmdname sid="side_oidManagement" className="uitext" />, you can register OIDs to be collected via SNMP polling. OID is an identifier for collecting various performance metrics of the network equipment.
+
+## Basic screen
+
+By default, OIDs are pre-registered in the system and can be added to collect dedicated metrics for specific devices. The added OIDs are used to connect to the device from the device management screen and collect data via SNMP polling. 
+
+<ImgLang img="nms-conf-oid-mng.png" desc="OID Management" />
+
+#### Adding OID
+
+You can manually add OIDs to collect custom metrics provided by a specific device.
+
+1. Select an agent on the upper left. 
+
+2. Click the <UI>+</UI> <Cmdname sid="BTN09018" className="uitext" /> button on the upper right, and then enter the following information in the <Cmdname sid="BTN09018" className="uitext" /> window. 
+
+   > ***OID***, ***Description***, ***Manufacture***, ***Category*** 
+
+   :::note 
+
+   ***Category*** is used to define the resources that each OID collects. This allows you to categorize and manage the metrics that the OID collects.
+
+   :::
+
+#### Modifying the OID
+
+You can modify the related information by selecting the ![Edit icon](/img/ic-edit.svg) Edit icon in the ***Edit*** column on the left of the OID list. 

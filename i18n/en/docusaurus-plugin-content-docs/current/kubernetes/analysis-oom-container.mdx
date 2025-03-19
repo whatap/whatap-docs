@@ -10,9 +10,9 @@ keywords:
   - Out Of Memory
 ---
 
-Home > Select Project > **_Container_** > **_Out Of Memory Killed Container_**
+Home > Select Project > <Cmdname sid="side_container" className="uitext" /> > <Cmdname sid="side_oomContainer" className="uitext" />
 
-Through the **_Out Of Memory Killed Container_** menu, you can quickly search for containers where **Out Of Memory** (**OOM)** occurred, and you can check changes in the memory usage (abrupt or gradual) at each time. This allows an objective determination of the eligible number of PODs and the memory thresholds.
+Through the <Cmdname sid="side_oomContainer" className="uitext" /> menu, you can quickly search for containers where **Out Of Memory** (**OOM**) occurred and check the change trend in memory usage. This change trend may be sudden or gradual. By checking this, you can objectively determine the appropriate number of PODs and the memory threshold.
 
 :::note 
 
@@ -32,7 +32,7 @@ Out Of Memory occurs when the container's memory usage exceeds its limit, or the
 
 ### OOM killed container information
 
-The columns in **_Out Of Memory Killed Container_** are as follows:
+The columns provided in the <Cmdname sid="side_oomContainer" className="uitext" /> menu are as follows:
 
 | Columns                 | Meaning                                                              |
 | ----------------------- | -------------------------------------------------------------------- |
@@ -48,6 +48,7 @@ The columns in **_Out Of Memory Killed Container_** are as follows:
 | **_memLimit_**          | Container's memory limit size                                        |
 | **_namespace_**         | Name of the namespace to which the container's Pod belongs           |
 | **_memory_workingset_** | Actual memory in use, excluding the memory disabled in the container |
+| **_microOname_**        | Name of the application running in the container.                    |
 
 :::note 
 
@@ -56,5 +57,7 @@ The columns in **_Out Of Memory Killed Container_** are as follows:
 - If you click **_containerId_**, the [Container list](/kubernetes/resource-container-list) menu appears.
 
 - If you click **_onodeName_**, the [Node list](/kubernetes/resource-node-list) menu appears. 
+
+- If you click **_microOname_**, the [Container application list](/kubernetes/resource-application-list) menu appears where the application is found. 
 
 :::

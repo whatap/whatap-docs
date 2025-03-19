@@ -8,17 +8,17 @@ import LogDeIdentification from "../common-items/_log-de-identification-common.m
 
 <Xclude product='aws-log'>
 
-ホーム画面 > プロジェクト選択 > **_ログ_** > **_ログトレンド_**
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />
 
 </Xclude>
 
 <InDoc product='aws-log'>
 
-ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_ログトレンド_**
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />
 
 </InDoc>
 
-**_ログトレンド_**メニューでタイプごとに分類されたログの発生件数とその推移から特定のエラータイプの発生パターンを確認したり、時間ごとの詳細なログデータを確認できます。ハイライト機能で、必要なログをすばやく識別できます。カテゴリ別に収集されたログの推移を照会できます。<Loguimainterm />
+<Cmdname sid="side_logExplorer" className="uitext" />メニューでタイプ別に分類されたログの発生件数の推移を通じて、特定エラータイプの発生パターンを確認し、時間別詳細ログデータを確認できます。ハイライト機能により、目的のログをすばやく識別できます。カテゴリ別に収集されたログの推移を照会できます。<Loguimainterm />
 
 <ImgLang img='log-trend.png' desc='ログトレンド'/>
 
@@ -42,6 +42,8 @@ import LogDeIdentification from "../common-items/_log-de-identification-common.m
 
   <LogCl />
 
+{/* 개인정보 비식별화 */}
+
 <LogDeIdentification />
 
 ## ログContentの確認
@@ -54,7 +56,7 @@ import Logcontentscheck from "../common-items/_log-contents-check.mdx";
 
 <ImgLang img='log-trend-bar.png' desc='ログトレンド棒チャート'/>
 
-- 棒チャートで![aアイコン](/img/char-a.svg)目的の時間をクリックすると、その時間のログを確認できます。 
+- バーチャートで![aアイコン](/img/char-a.svg)目的の時間領域バーをクリックまたはドラッグして、その時間範囲のログを確認できます。 
 
 - 棒チャートの下のログテーブル上部左側の![bアイコン](/img/char-b.svg)時間選択オプションを使用して、次のように選択した時間帯をさらに細分化してログを検索することができます。
 

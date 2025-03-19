@@ -2,7 +2,7 @@ Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" />
 
 <InDoc product='cubrid,postgresql,oracle,oracle-pro,oracle-v1,altibase,tibero,db2'>
 
-This tool analyzes the trend of locks that occurred during the day. This function allows you to visually check the tree structure of the session that generated the lock (lock holder) and the session waiting for the lock (lock waiter). You can analyze the relationship between the holder and waiter of the lock that occurred at a specific time point.
+This tool analyzes the trend of locks that occurred during the day. This function allows you to visually check the tree structure of the session that generated the lock (lock holder) and the session waiting for the lock (lock waiter). You can analyze the relationship between the holder and waiter of the lock that occurred at a specific time point. Through the WhaTap's <Cmdname sid="side_dbLockTree" className="uitext" /> feature, the DB administrator can identify and resolve the DB lock issues and optimize the DB performance.
 
 Key features are as follows:
 
@@ -11,8 +11,6 @@ Key features are as follows:
 - **Check lock holder and waiter**: You can see the holder and waiter for each lock in a tree structure. Through this, when a specific lock occurs, you can check the relationship between the session that generated the lock and the waiting session.
 
 - **Inter-session relationship analysis**: By analyzing the relationship between the session that generated the lock and the waiting session, you can identify the cause of the lock that occurred during the query execution and transaction handling.
-
-This allows the database administrator to quickly identify and resolve lock-related issues and optimize the database performance.
 
 </InDoc>
 
@@ -33,3 +31,5 @@ The provided key features are as follows:
 - **Provision of session information**: It provides detailed information about the sessions that caused the lock in a table format. You can check information such as each session status, waiting time, waiting type, and SQL statement being executed.
 
 </InDoc>
+
+- **Visual lock trend by time**: Through the <UI>1-Min Lock Trends</UI> and <UI>Lock Wait Sessions</UI> features, the lock occurrence data can be analyzed in time zones.

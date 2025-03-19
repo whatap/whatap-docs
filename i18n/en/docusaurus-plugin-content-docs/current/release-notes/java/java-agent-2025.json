@@ -1,5 +1,149 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_54",
+    "ver": "v2.2.54",
+    "date": "2025-02-28",
+    "Lists": [
+      {
+        "ver": "v2.2.54",
+        "hash": "v2254",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Avoided sending unnecessary metric data.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_53",
+    "ver": "v2.2.53",
+    "date": "2025-02-27",
+    "Lists": [
+      {
+        "ver": "v2.2.53",
+        "hash": "v2253",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the traceparent HTTP header issuance feature when using <code>okhttp3</code> and <code>okhttp3-4.4</code> settings.</p>"
+      },
+      {
+        "ver": "v2.2.53",
+        "hash": "v2253",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed Jakarta tracing to be possible without setting <code>weaving=tomcat10</code>.</p>"
+      },
+      {
+        "ver": "v2.2.53",
+        "hash": "v2253",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where <code>{port}</code> data set in <code>whatap.name</code> is not collected when using embedded-tomcat in the Spring Boot environment.</p>"
+      },
+      {
+        "ver": "v2.2.53",
+        "hash": "v2253",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where linkage tracking is broken in the multi-transaction tab while using the <code>okhttp</code> library when tracing with the OpenTelemetry agent.</p>"
+      },
+      {
+        "ver": "v2.2.53",
+        "hash": "v2253",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where Pod names without ‘-’ are collected as <code>null</code>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_52",
+    "ver": "v2.2.52",
+    "date": "2025-02-13",
+    "Lists": [
+      {
+        "ver": "v2.2.52",
+        "hash": "v2252",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Changed to send the notification when a thread is interrupted by OutOfMemoryError.</p>"
+      },
+      {
+        "ver": "v2.2.52",
+        "hash": "v2252",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Supported TraceContext for open source tracing.</p>",
+        "details": "<ul>\n<li>Added the traceparent header to support tracing in various HTTP client libraries.</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.52",
+        "hash": "v2252",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>java.util.function.Function</code> to the CompletableFuture tracing scope.</p>"
+      },
+      {
+        "ver": "v2.2.52",
+        "hash": "v2252",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Modified to handle <code>java.io.IOException</code> caused by outbound calls in transactions with the biz_exceptions setting.</p>"
+      },
+      {
+        "ver": "v2.2.52",
+        "hash": "v2252",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Separated the hikari settings from the spring-boot settings.</p>"
+      },
+      {
+        "ver": "v2.2.52",
+        "hash": "v2252",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the agent's status code to match to the actual status code, when a spring-security error occurs in the Tomcat9-based spring-boot versions.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_50",
+    "ver": "v2.2.50",
+    "date": "2025-01-22",
+    "Lists": [
+      {
+        "ver": "v2.2.50",
+        "hash": "v2250",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> logstash-logback-encoder-7.3 tracing</p>",
+        "details": "<p>Tracing is performed when <code>net.logstash.logback.encoder.LogstashEncoder</code> is set with the logback encoder.</p>"
+      },
+      {
+        "ver": "v2.2.50",
+        "hash": "v2250",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> logback-ecs-encoder-1.5.0 tracing</p>",
+        "details": "<p>Tracing is performed when <code>co.elastic.logging.logback.EcsEncoder</code> is set with the logback encoder.</p>"
+      },
+      {
+        "ver": "v2.2.50",
+        "hash": "v2250",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> logback async appender tracing</p>",
+        "details": "<p>Tracing is performed when async appender is set with the logback appender.</p>"
+      },
+      {
+        "ver": "v2.2.50",
+        "hash": "v2250",
+        "product": "Java Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the return method in the <code>service_name_mode</code> option.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_48",
     "ver": "v2.2.48",
     "date": "2025-01-07",

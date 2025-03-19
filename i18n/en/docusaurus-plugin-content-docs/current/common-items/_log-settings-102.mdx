@@ -62,8 +62,8 @@ In the ![number 1](/img/number-01.png) area, click the <Cmdname sid="use_log_mon
 
 <ImgLang img='log-start-aws.png' desc='Starting the log monitoring'/>
 
-- If you turn on the ![Icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
-- If you turn off the ![Icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
+- If you turn on the ![Toggle icon](/img/ic-toggle-on.svg) toggle button, the log monitoring is enabled. You can try it for free for 15 days from the activation date.
+- If you turn off the ![Toggle icon](/img/ic-toggle-off.svg) toggle button, the log monitoring is disabled. Logs are no longer saved. 
 
 </InDoc>
 
@@ -698,7 +698,7 @@ You can hide sensitive information in real time and enhance the security by mask
 
 If the search key name is specified as <code class='filter'>search-key.p</code> in the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab, de-identification is applied by default. When adding or modifying in the <Cmdname sid="TTL08814" className="uitext" /> tab, you can select the corresponding <Cmdname sid="category" className="uitext" /> and then check it in <Cmdname sid="TTL08835" className="uitext" />. You can disable masking, if you do not want. WhaTap recommends using the <Cmdname sid="TTL08814" className="uitext" /> tab rather than specifying the de-identification target during parser configuration.
 
-{/* ![Example of the specified search key](/img/log-display-pi-1st-parser.png) 다국어 미처리 */}
+{/* ![Example of the specified search key](/img/log-display-pi-1st-parser.png) */}
 
 :::
 
@@ -799,3 +799,5 @@ Examples of regular expression patterns used to identify personal information in
 | Corporate registration number | 111111-1111111               | `(\d{6}-\d{7})`                                                  | `******-*******`      |
 
 {/* 이 섹션에서는 기존 데이터에 대해 치환 값을 설정하여 개인정보를 완전히 치환합니다. The set replacement value is used to change sensitive information to a safe value with maintaining the same type as the original data. Replaced data cannot be recovered. Therefore, apply it with caution. */}
+
+{/* 250203 번역 발주 작업 후에 개인정보 패턴 안내 수정 사항 발생 */}

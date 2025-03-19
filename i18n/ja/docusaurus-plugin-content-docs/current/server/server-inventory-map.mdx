@@ -68,7 +68,25 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
   </TabItem>
   </Tabs>
 
-- **Unix** Solaris：1.3.6以降
+- **Unix**：1.3.7以降
+
+  <Tabs>
+  <TabItem value='aix' label='AIX' default>
+
+  アップデートが必要な場合は、次のコマンドを確認します。
+
+  ```bash
+  stopsrc -s whatap-infra
+  cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+  rpm -e whatap-infra
+  rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+  startsrc -s whatap-infra
+  ```
+
+  </TabItem>
+
+  <TabItem value='solaris' label='Solaris' default>
 
   アップデートが必要な場合は、次のコマンドを確認します。
 
@@ -80,6 +98,10 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
   cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
   /etc/init.d/whatap-infra start
   ```
+
+  </TabItem>
+
+  </Tabs>
 
 - **Windows**：2.7.2以降
 
@@ -116,21 +138,30 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
      </TabItem>
      </Tabs>
 
-   - **Unix** Solaris
+   - **Unix**
 
      <Tabs>
      <TabItem value="unix-opt" label="オプション追加コマンド" default>
 
-     ```bash title='Oracle Solaris'
+     ```bash
      grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
      ```
 
      </TabItem>
      <TabItem value="unix-restart" label="エージェント再起動">
 
-     ```bash title='Oracle Solaris'
-     /etc/init.d/whatap-infra restart
-     ```
+     - **AIX** 
+
+       ```bash title='AIX'
+       stopsrc -s whatap-infra
+       startsrc -s whatap-infra
+       ```
+
+     - **Solaris**
+
+       ```bash title='Solaris'
+       /etc/init.d/whatap-infra restart
+       ```
 
      </TabItem>
      </Tabs>
@@ -202,39 +233,40 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
 
 </Columns>
 
-{/* 
-
-1次グループ：グループ、2次グループ：サブグループ、カード
-
-カードはグループ要約情報、サーバーグループチャート、サーバーグループのメトリクス情報要約 
-
-*/}
-
-{/* 
-
-1次グループ - グループ、2次グループ - サブグループ
-
-***1次グループ***と***2次グループ***を順次選択してサーバーを分類できます。 
-
-グループごとにグリッド領域にパネルが生成されます。 2次グループはグループグリッド 
-
-グループ化する時、![指示線3](/img/number-03.png)チャートのグループグリッド領域に視覚的に表示されます。 2차 그룹은 
-
-1次グループ内で詳細にグループ化されたサーバーを表示し、チャートと枠で区切られたサーバーの一覧で表現されます。 
-
-*/}
-
 :::note 
 
 ***グループ化***についての詳細は、[次の文書](server-inventory-map-group)を参照してください。 
 
 :::
 
+#### ラベル
+
+<Cmdname sid="side_serverInventoryMap" className="uitext" />は、サーバ情報を明確に確認できるよう <Cmdname sid="label" className="uitext" />オプションを提供します。 希望する<Cmdname sid="label" className="uitext" /> オプションを選択すると、チャートでサーバー別の該当ラベル情報を確認できます。
+
+| ラベル                | 説明                           |
+| ------------------ | ---------------------------- |
+| ***サーバー名***        | 各サーバーの実際のホスト名をラベル表示します。      |
+| ***サーバーエイリアス***    | ユーザーが指定したエイリアスをラベルで表示します。    |
+| ***IP Address***   | 該当サーバーのIPアドレスをラベルで表示します。     |
+| ***CPU(%)***       | 現在のCPU使用率(%)をラベルで表示します。      |
+| ***Memory(%)***    | 現在のメモリ使用率(%)をラベルで表示します。      |
+| ***Swap(%)***      | 現在のスワップメモリ使用率(%)をラベルで表示します。  |
+| ***Disk Busy(%)*** | 現在のディスク使用率(%)をラベルで表示します。ディスク |
+| ***Network***      | ネットワーク状態をラベルで表示します。          |
+
 #### フィルター
 
 <Cmdname sid="side_serverInventoryMap" className="uitext" />は、ダッシュボードに表示するサーバー種類のフィルター機能を提供します。 フィルターを介して適用されたデータは、サーバー グループチャート、要約ビュー、および詳細ビューに反映されます。
 
 <ServerInventoryFilter />
+
+#### インベントリマップ設定
+
+<Cmdname sid="side_serverInventoryMap" className="uitext" />は<Cmdname sid="TTL09114" className="uitext" />オプションを提供します。 右上で![設定アイコン](/img/ic-setting.svg)アイコンを選択し、次のオプションの活性化有無を設定します。
+
+- <Cmdname sid="ITM09115" className="uitext" />: ***グループ化***する時に選択した***1次グループ***の設定のないサーバーグループカードの表示有無を選択します。 デフォルト設定は表示します。
+
+- <Cmdname sid="ITM09116" className="uitext" />: サーバーグループカードの下部で、メトリクス情報の表示有無を選択します。 デフォルト設定は表示します。
 
 ### ![2](/img/number-02.png)サーバー構成状況
 
@@ -249,8 +281,6 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
 ### ![3](/img/number-03.png)サーバーグループカード
 
 <Cmdname sid="side_serverInventoryMap" className="uitext" />は、グループ化されたサーバー構成情報に基づいて個別のカードを提供します。 <Cmdname sid="side_serverInventoryMap" className="uitext" />のカードは、次の3つの主要な要素で構成されます。
-
-{/* <Cmdname sid="side_serverInventoryMap" className="uitext" />은 그룹화 한 서버 구성 정보별로 카드를 제공합니다. グループ化を適用していない場合、サーバー全体の情報が1つの大きなカード内に表示されます。 グループ化を適用すると、各グループ単位でカードを構成します。 <Cmdname sid="side_serverInventoryMap" className="uitext" />のカードは次の3つの要素で構成されます。  */}
 
 <ImgLang img='server-inventory-map-chart.png' desc='サーバーインベントリマップチャート' />
 
@@ -269,11 +299,7 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
 
 #### ![指示線b](/img/char-b.svg)サーバーグループチャート
 
-{/* 그룹 내 서버의 상태 및 성능 데이터를 시각화하여 제공합니다. ***2次グループ化***が適用されている場合、チャート内にサブグループ形式で表示されます。 また、サブグループにマウスオーバーする場合、簡単な各サーバーの状態情報をポップオーバー形式で確認できます。 例示画像の場合、基本収集項目である***サーバータイプ***と***OSタイプ***で1次と2次グループ化が適用されています。  */}
-
 グループ内のサーバーの状態と性能データを視覚化して提供します。 ***2次グループ化***が適用された場合、チャート内でサブグループ形式でデータがさらに区切られて表示されます。 また、サブグループにマウスオーバーすると、そのグループに含まれたサーバーの主要状態情報をポップオーバー形式で簡単に確認できます。 
-
-{/* 예시 이미지에서는 기본 수집 항목인 ***서버 타입***과 ***OS 타입***을 기준으로 1차와 2차 그룹화가 적용된 차트를 확인할 수 있습니다. */}
 
 #### ![指示線c](/img/char-c.svg)メトリクス
 
@@ -373,3 +399,7 @@ WhaTapは<Cmdname sid="side_serverInventoryMap" className="uitext" />これに�
 | ***[Disk] Write (Bytes)*** | ディスク全体の1秒当たりの書き込み速度の合計をBytes単位で表示します。                                        |
 
 {/* 상세 내 커스텀 컬럼 추가/수정/삭제의 경우 프로젝트 수정 권한 필요 */}
+
+### 進行中のイベント現況
+
+<Cmdname sid="TTL08970" className="uitext" />タブで選択したサーバーグループで進行中のイベントのステータスリストを確認できます。

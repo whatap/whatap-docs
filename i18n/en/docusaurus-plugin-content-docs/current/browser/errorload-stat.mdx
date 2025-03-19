@@ -1,0 +1,115 @@
+---
+id: errorload-stat
+title: Error Load Statistics
+description: The error load statistics provides the overall error status.
+keywords:
+  - Browser Monitoring
+  - Error
+  - Statistics
+---
+
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_errorLoadStatistics" className="uitext" />
+
+In <Cmdname sid="side_errorLoadStatistics" className="uitext" />, you can efficiently analyze errors that have occurred by visually providing the overall error status. With various filter options, you can group the desired data or retrieve information that meets specific conditions, enabling more detailed error analysis.
+
+## Basic usage guide
+
+Through numerical error messages, you can monitor error occurrence trends in real time and analyze the occurrence for each error message. Use the time selector to set the desired time zone to view, and then check the error status of the time zone.
+
+<ImgLang img="browser-statistics-error-stat.png" desc="Error Load Statistics" />
+
+1. In <Cmdname sid="time" className="uitext" />, set the date and time to view.
+
+2. Select the conditions to view through <Cmdname sid="filter" className="uitext" /> and <Cmdname sid="groupby" className="uitext" />.
+
+3. After setting the conditions, check the ***load count trend by error message*** chart and error table. 
+
+You can view the error status for the selected time range through the chart and list. When you select a specific section in the bar chart, you can see the error status of the section through the error table. 
+
+{/* 조회 시간 설정하기 */}
+import Settime from "../common-items/_browser-stat-set-time.mdx";
+
+<Settime/>
+
+### Selecting the grouping and filtering criteria
+
+You can filter the data as you want by selecting the <Cmdname sid="groupby" className="uitext" /> and <Cmdname sid="filter" className="uitext" /> criteria.
+
+#### Grouping
+
+You can select a grouping option to group the data based on specific criteria. In addition to <Cmdname sid="ITM09123" className="uitext" />, the grouping criteria include <Cmdname sid="ITM09125" className="uitext" />, <Cmdname sid="ITM06770" className="uitext" />, <Cmdname sid="TTL06358" className="uitext" />, <Cmdname sid="device" className="uitext" />, and such. You can group and analyze the error data that meets specific conditions, and display grouped data or query individual data if required.
+
+- **Grouping not applied**: When <Cmdname sid="ITM09123" className="uitext" /> is selected, each data is listed, allowing you to directly check the number of occurrences of each item. 
+
+- **Grouping applied**: Grouped error messages appear based on the criteria selected among <Cmdname sid="ITM09125" className="uitext" />, <Cmdname sid="ITM06770" className="uitext" />, <Cmdname sid="TTL06358" className="uitext" />, and <Cmdname sid="device" className="uitext" />.
+
+#### Filtering
+
+The filtering feature displays only the data that meets specific conditions. Filterable items include <Cmdname sid="ITM09125" className="uitext" />, <Cmdname sid="ITM06770" className="uitext" />, <Cmdname sid="TTL06358" className="uitext" />, <Cmdname sid="device" className="uitext" />, and such. After selecting the filtering conditions, click the ![Search icon](/img/ic-search-on-press.svg) Search button. You can extract error messages based on the filtered conditions and see only the errors that occurred in specific error types or operating systems.
+
+### Checking the user session log
+
+You can go to the <Cmdname sid="side_userSessionEventSearch" className="uitext" /> menu by selecting the ![Right arrow icon](/img/right-arrow.svg) button on the right of the ***Error Message*** column. You can see the result of applying the selected error type and message as filters.
+
+{/* 조회 결과 다운로드하기 */}
+import CSVdownload from "../common-items/_browser-stat-download-csv.mdx";
+
+<CSVdownload filename="Error_LoadStatistics" />
+
+## Screen layout
+
+### Load count trend by error message
+
+By visualizing the number of errors occurring for each time zone in the bar chart, you can easily see the frequency of errors in a specific time zone. When you select a specific section in the bar chart, you can see the error status of the section through the error table. 
+
+- **Grouping not applied** 
+
+    You can visualize the total number of errors by time zone in a single graph to understand the overall error occurrence trend. 
+
+  <ImgLang img="browser-statistics-error-stat-ungr.png" desc="Ungrouped" />
+
+- **Grouping applied** 
+
+    You can visualize the number and proportion of errors by group using the stack chart and donut chart to analyze the number of occurrences by time zone in more detail.
+
+  <ImgLang img="browser-statistics-error-stat-gr.png" desc="Grouped" />
+
+### Error table
+
+It provides detailed information such as error messages, number of occurrences, error types, OS and browser in the table. This table allows you to easily view additional information about each error message.
+
+- **Grouping not applied** 
+
+    If you do not group the data, all data is listed as individual items. This allows you to directly see the number of occurrences for each item, error messages, and such.
+
+    ![Grouping not applied](/img/browser-statistics-error-stat-ungr-tb.png)
+
+- **Grouping applied** 
+
+    You can organize the data into a tree structure by grouping it according to the selected criteria. You can also expand/collapse sub-items using the ![Icon](/img/ic-caret-down.svg) icon for more efficient navigation. 
+
+    ![Grouping applied](/img/browser-statistics-error-stat-gr-tb.png)
+
+## Columns and terms
+
+### Column guide
+
+| Columns             | Description                                           |
+| ------------------- | ----------------------------------------------------- |
+| ***Error Message*** | It is the content of the error message that occurred. |
+| ***Count***         | Number of occurrences of the error message.           |
+| ***Error Type***    | It indicates the error type.                          |
+| ***OS***            | Operating system on which the error occurred.         |
+| ***Browser***       | Browser on which the error occurred.                  |
+
+### Error types
+
+**Error types** that occur in the browser are classified as follows: 
+
+- `console`: This developer-defined error appears on the browser console.
+
+- `onError`: This error occurs when a specific resource fails to be loaded or the script error occurs.
+
+- `fetchError`: This error occurs when sending HTTP requests through the fetch API.
+
+- `xhrError`: This error occurs when sending HTTP requests through XMLHttpRequest (XHR).

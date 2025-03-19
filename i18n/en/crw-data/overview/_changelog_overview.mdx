@@ -1,3 +1,92 @@
+- <code class='changelog-overview'>Application</code>
+<code class='changelog-date'>2025-03-07</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.4​</a></code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Application Dashboard</span>, added the option to select the 7-day prior comparison date into the <span class="uitext">Today's TPS</span> and <span class="uitext">Today's visits</span> widgets.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Instance Performance Management</span> &gt; <span class="uitext">Opened Socket Count</span>, added the feature description at the top.
+  - <code class="Feature" type="1">Feature</code> In the <span class="uitext">Table view</span> tab of the <span class="uitext">Trace analysis</span> window, added the stack information in the method step.
+
+- <code class='changelog-overview'>Application</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Application Dashboard</span>, added the WhaTap Docs link to the <span class="uitext">Concurrent user</span> widget guide.
+  - <code class="Feature" type="1">Feature</code> In the project selection filter of the <span class="uitext">Analysis</span> &gt; <span class="uitext">Multiple Transaction Trace</span> menu, modified to always expose the current project at the top.
+  - <code class="Feature" type="1">Feature</code> Added the auto-scrolling feature to the selected agent when there is information about the agent while entering into the <span class="uitext">Instance Performance Management</span> menu for the first time.
+
+- <code class='changelog-overview'>Server</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span>, added the overall server selection and deselection feature in the group <span class="uitext">Display Detail</span> screen.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span>, added case comparison operator in the conditions when selecting a filter key with a numeric value.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span>, added the <span class="uitext">Display no primary group</span> option (enabled by default).
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span>, added the <span class="uitext">Display the metric area at the bottom of group</span> option (enabled by default).
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span>, added the <span class="uitext">Label</span> selection option to display on the group panel icon.
+  - <code class="Feature" type="1">Feature</code> Added the <span class="uitext">Active event status</span> tab in the group summary panel and detailed view of the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span> menu to view active events within the past 24 hours based on the current time.
+  - <code class="Feature" type="1">Feature</code> In the detailed view of the <span class="uitext">Dashboard</span> &gt; <span class="uitext">Server Inventory Map</span> menu, added the following features.
+  - <code class="Feature" type="1">Feature</code> At the top of the <span class="uitext">Server List</span> &gt; <span class="uitext">Server Detail</span> menu, added the <em><strong>Disk Total</strong></em> item.
+
+- <code class='changelog-overview'>Kubernetes</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">Object Manifest</span>, added the Custom Resource Definition object.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, added the custom resource-related options to the additional feature application step.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, added guidance to the activation of the kube-scheduler feature.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Pod Startup Analysis</span>, added the time selection feature.
+  - <code class="Feature" type="1">Feature</code> Added the <span class="uitext">AvailableRequestCpu</span> and <span class="uitext">AvailableRequestMemory</span> metrics that are values obtained by subtracting the sum of requested resources for all containers from the allocatable resources on the node.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Workload</span> &gt; <span class="uitext">Container Application List</span>, added the container performance metrics.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Cluster</span> &gt; <span class="uitext">Kubernetes Event</span>, provided <span class="uitext">Suggestions</span> about the “Node is not ready” event.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Container</span> &gt; <span class="uitext">Out Of Memory Killed Container</span>, added the <em><strong>microOname</strong></em> column.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Container</span>
+&gt; <span class="uitext">Container Images</span>, added the Image column.
+  - <code class="Feature" type="1">Feature</code> Provided the summary analysis in the detail screen of the following menu.
+  - <code class="Feature" type="1">Feature</code> Added the <span class="uitext">Sitemap</span> &gt; <span class="uitext">Dashboard</span> &gt; <span class="uitext">GPU Dashboard</span> menu.
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+<br/><code class='changelog-overview2'>Common</code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Database Parameter</span>, added the CSV downloading feature and the searching feature for the results based on the key value.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Lock Tree</span>, added the 1-minute chart.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring Multiple Instances</span>, added the Alarm State widget.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Dashboard</span> &gt; <span class="uitext">Monitoring a Database Instance</span>, added the instance status displaying feature in the instance selector.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent List</span>, added the link to the <span class="uitext">Monitoring a Database Instance</span> menu when the agent name is clicked.
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+<br/><code class='changelog-overview2'>PostgreSQL, Oracle, MySQL, Sql Server, Tibero, Cubrid, Altibase</code>
+  - <code class="Feature" type="1">Feature</code> Added the default plan query feature in the <span class="uitext">SQL details</span> pop-out window.
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Management</span> &gt; <span class="uitext">Agent Installation</span>, added the method to use the default plan query feature for each OS.
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+<br/><code class='changelog-overview2'>Oracle, Oracle Pro, Altibase</code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">Tablespace Size</span>, added several features.
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+<br/><code class='changelog-overview2'>MySQL, PostgreSQL, SQL Server, MongoDB</code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">DB size</span>, added the table to check the disk usage when configuring the XOS.
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+<br/><code class='changelog-overview2'>Oracle, Oracle Pro</code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Stat/Report</span> &gt; <span class="uitext">Tablespace Size</span>, added the feature to view object details in the segment size (Top 50) drawer.
+
+- <code class='changelog-overview'>Database</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+<br/><code class='changelog-overview2'>PostgreSQL</code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Analysis</span> &gt; <span class="uitext">Lock Tree</span>, added the xact_runtime column after runtime and the xact_start column at the end.
+
+- <code class='changelog-overview'>Azure</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> Added 3 Azure templates in the cloud <span class="uitext">Flex Board</span> template.
+
+- <code class='changelog-overview'>Browser</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> Added the <span class="uitext">Statistics</span> &gt; <span class="uitext">Error Load Statistics</span> menu.
+
+- <code class='changelog-overview'>Log</code>
+<code class='changelog-date'>2025-02-26</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_14_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.14.0​</a></code>
+  - <code class="Feature" type="1">Feature</code> In <span class="uitext">Log</span> &gt; <span class="uitext">Log Trend</span>, added the chart dragging feature and chart area panel's size adjustment feature.
+
+- <code class='changelog-overview'>Network Management</code>
+<code class='changelog-date'>2025-01-23</code> <code class='changelog-service'><a href="../nms/introduction"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Reference​</a></code>
+  - <code class="Beta">Beta</code> **Network Management System** <code class='changelog-overview2'>NMS</code> <b>Beta</b> service launched.
+
 - <code class='changelog-overview'>Release of new features</code>
 <code class='changelog-date'>2025-01-22</code> <code class='changelog-service'><a href="https://docs.whatap.io/en/release-notes/service/service-2_13_x"><img src="../img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"></img> Service 2.13.0​</a></code>
 <br/><code class='changelog-overview2'>Database</code>

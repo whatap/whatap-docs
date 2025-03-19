@@ -1,0 +1,31 @@
+---
+id: python-1_7_6
+title: Python Agent v1.7.6
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_7_5
+displayed_sidebar: releaseSidebar
+---
+
+2025年03月04日
+
+- <Status priority='1'>New</Status> ロギングモジュール(logging、loguru) モニタリングでmtid値の追跡を追加
+
+  - **trace_logging_mtid_enabled** <span class='type'>Boolean</span>
+
+    既定値`false`
+
+    `trace_logging_enabled`値が`true`の場合は活性化されmtid値が存在する場合はログに出力します。 
+
+  - **trace_loguru_mtid_enabled** <span class='type'>Boolean</span>
+
+    既定値`false`
+
+    `trace_loguru_enabled`値が`true`の場合は活性化されmtid値が存在する場合はログに出力します。 
+
+- <Status priority='0'>Fixed</Status> Celery Taskで例外が発生する時にReraiseされない現象を修正
+
+:::note
+
+Agent download: [whatap-python v1.7.6](https://pypi.org/project/whatap-python/1.7.6/)
+
+:::

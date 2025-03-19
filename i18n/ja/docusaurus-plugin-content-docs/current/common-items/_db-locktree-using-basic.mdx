@@ -59,3 +59,41 @@
 :::
 
 </InDoc>
+
+<Title hashid="lockwaitsessions" level={props.level+1}><UI>Lock Wait Sessions</UI></Title>
+
+**_Lock Wait Sessions_**は、ロック待機セッションの情報を分析できる機能です。照会期間によってロック待機セッションデータを3時間以上照会すると5分間隔で、3時間未満照会すると5秒間隔で提供します。また、チャートをドラッグして時間範囲を流動的に調整できます。
+
+<Title hashid="1minlocktrend" level={props.level+1}><UI>1-Min Lock Trends</UI></Title>
+
+**_Lock Wait Sessions_**で特定の時間帯をクリックすると、その時間基準で15分前から15分後までの計30分間のロック発生現況を視覚化して表示します。これにより、30分単位でロック発生トレンドを効果的に分析できます。 
+
+:::note 
+
+**_Total Locks_**は、その時間帯に発生したロックの合計個数を意味します。
+
+:::
+
+<Title hashid="selecttimelocktree" level={props.level+1}>時間照会</Title>
+
+**_Lock Wait Sessions_**でクリックした時間に発生した最大ロック数を基準に**_1-Min Lock Trends_**と**_Lock Tree_**テーブルの時間が設定されます。これにより、ロックが最も多く発生した区間を把握できます。 
+
+![時間照会1](/img/db-lock-tree-1-min-lock-trends2.png)
+
+**_Lock Wait Sessions_**はそのままにして**_1-Min Lock Trends_**チャートで他の時間帯のバーをクリックした場合、その分の最大ロック数を持つ秒で**_Lock Tree_**テーブルの時間範囲が同期されます。これにより、時間帯を変更する時に**_Lock Tree_**テーブルに反映された情報を確認できます。
+
+![時間照会2](/img/db-lock-tree-1-min-lock-trends3.png)
+
+- **3時間以上照会した場合** (5分単位のデータ使用)
+
+  照会時点から5分の区間でバーの色が濃く表示されます。 
+
+  > `07:15:00`時点をクリックした場合、`07:15:00~07:20:00`区間バーのチャートの色が濃く表示されます。
+
+  ![5分パック照会](/img/db-lock-tree-1-min-lock-trends-5min.png)
+
+- **3時間未満照会した場合** (5秒単位のデータ使用)
+
+  短い時間間隔で発生したロック状況を分析する時に役立ちます。 
+
+  ![5秒パック照会](/img/db-lock-tree-1-min-lock-trends-5sec.png)

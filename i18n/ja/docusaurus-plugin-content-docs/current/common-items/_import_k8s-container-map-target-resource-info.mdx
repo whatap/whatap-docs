@@ -13,3 +13,11 @@
 - ***ServiceName***: [Object Manifes](object-manifest) 情報を確認し、[Serviceリスト](service-list) メニューへ移動できます。 
 
 - ***Volume***：コンテナが使用するボリュームとマウント経路の情報を確認できます。
+
+  - Podで使用する![指示線](/img/char-a.svg)ボリュームの名前と![指示線](/img/char-b.svg)ボリュームタイプを確認できます。 
+
+    > 例、***Volume*** ![指示線](/img/char-a.svg)`containerddomainsocket` ![指示線](/img/char-b.svg)`HostPath` 
+
+  - ***HostPath***ボリュームタイプを使用する場合![指示線](/img/char-c.svg)ホストシステムのファイルパスを確認できます。 このパスは、ファハドとホストシステム間のファイルシステムを接続するパスです。
+
+    > 例、***Host Path*** ![指示線](/img/char-c.svg)`/run/containerd/containerd.sock`

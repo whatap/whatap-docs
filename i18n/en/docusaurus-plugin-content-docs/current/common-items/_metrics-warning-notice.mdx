@@ -12,7 +12,7 @@ Home &gt; Select Project &gt; <Cmdname sid="event_statistic" className="uitext" 
 
 ## What is the metrics event?
 
-<Xclude product='npm'>
+<Xclude product='npm,nms'>
 
 Metrics events are used to set more specific and complex events than basic events (application events, server events, and such). You can set events based on the metrics data being collected in real time from your projects. Depending on the usage, you can set any event by selecting one of two methods.
 
@@ -21,13 +21,13 @@ Metrics events are used to set more specific and complex events than basic event
 
 </Xclude>
 
-<InDoc product='npm'>
+<InDoc product='npm,nms'>
 
 Metrics events are used to set more specific and complex events than basic events (application events, server events, and such). You can set events based on the metrics data being collected in real time from your projects.
 
 </InDoc>
 
-<Xclude product="amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud">
+<Xclude product="amazon-cloudwatch,amazon-ecs,azure,ncloud,oracle-cloud,nms">
 
 :::note
 
@@ -46,6 +46,18 @@ Metrics events are used to set more specific and complex events than basic event
 :::note
 
 For more information about the metrics, see [the following](metrics-intro).
+
+:::
+
+</InDoc>
+
+{/* nms(Network Management System)의 경우 임시 */}
+
+<InDoc product="nms">
+
+:::note
+
+This feature is only available to the members with the <Cmdname sid="sms_alert_settings" className="b500" /> role. For more information about member roles, see [the following](../project/project-structure#project-auth).
 
 :::
 
@@ -113,7 +125,7 @@ For more information about the event templates for metrics, see [the following](
 
   - Enter a notification message to be displayed when events occur. By entering <code>&#36;&#123;Tag&#125;</code> or <code>&#36;&#123;Field&#125;</code>, you can apply the variable to the message. The key to enter in the variable must be included in <Cmdname sid="category" className="uitext" /> of the selected metrics data. You can see the tags or field keys that can be entered in <Cmdname sid="tag_count" className="uitext" />.
 
-    <ImgLang img='event-config-message-example.png' desc='Message example' />
+    ![Message example](/img/event-config-message-example.png)
 
   - If the ![Start icon](/img/ico-timing.svg) button is clicked, you can see the history of previously entered messages.
 
@@ -151,7 +163,7 @@ For more information about the event templates for metrics, see [the following](
 
 - After the event setting is made, the option value is managed as the <Cmdname sid="metrics_rule_direct" className="uitext" /> option. Afterwards, if switched to the <Cmdname sid="metrics_rule_select" className="uitext" /> option, the option value can be initialized.
 
-- Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&*()_+=-[]`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>\$\{\}</code>) as shown in the following example:
+- Upon entry of event occurrence conditions and targets, an error may occur, if you enter a field name that contains special characters (<code>~!@#$%^&\*()_+=-[]\`</code>) or begins with a number. In this case, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option and then enter values enclosing with curly brackets (<code>\$\{\}</code>) as shown in the following example:
 
   ```text
   ${4xxErrorType} == '401'

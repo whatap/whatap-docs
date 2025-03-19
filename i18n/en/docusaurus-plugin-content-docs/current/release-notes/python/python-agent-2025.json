@@ -1,5 +1,55 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_6",
+    "ver": "v1.7.6",
+    "date": "2025-03-04",
+    "Lists": [
+      {
+        "ver": "v1.7.6",
+        "hash": "v176",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the tracing of mtid values in the logging module (logging, loguru) monitoring.</p>",
+        "details": "<ul>\n<li>\n<p><strong>trace_logging_mtid_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>false</code></p>\n<p>It is enabled if the <code>trace_logging_enabled</code> value is <code>true</code>, while it is output in the log if the mtid value exists.</p>\n</li>\n<li>\n<p><strong>trace_loguru_mtid_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>false</code></p>\n<p>It is enabled if the <code>trace_loguru_enabled</code> value is <code>true</code>, while it is output in the log if the mtid value exists.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.7.6",
+        "hash": "v176",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where it is not reraised when an exception occurs in Celery Task.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_5",
+    "ver": "v1.7.5",
+    "date": "2025-02-17",
+    "Lists": [
+      {
+        "ver": "v1.7.5",
+        "hash": "v175",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the automatic search and configuration of the <em>whatap.conf</em> file when the <code>WHATAP_HOME</code> environment variables are not set.</p>"
+      },
+      {
+        "ver": "v1.7.5",
+        "hash": "v175",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where MySQL and PostgreSQL database error messages are displayed incorrectly.</p>"
+      },
+      {
+        "ver": "v1.7.5",
+        "hash": "v175",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where no response is received when retrieving data after connection in Redis single mode.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_4",
     "ver": "v1.7.4",
     "date": "2025-01-20",
