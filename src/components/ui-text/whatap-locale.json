@@ -35492,8 +35492,8 @@
     "service_id": "컨테이너 이름/테이블스페이스 이름"
   },
   "ITM05991": {
-    "en": "Receive notifications when event reception tags are not set.",
-    "ja": "受信タグ未設定のアラート通知を受信する",
+    "en": "Notify for untagged",
+    "ja": "受信タグ未設定のアラート",
     "ko": "수신 태그 미설정 알림 받기",
     "service_id": "ITM05992"
   },
@@ -47595,7 +47595,7 @@
   },
   "DSC08050": {
     "en": "You can only register Korean mobile phone numbers.",
-    "ja": "電話番号は<span style=\"color: #F34747;\">韓国の携帯電話番号のみ登録</span>できます。",
+    "ja": "電話番号は<span style = \"color：＃F34747;\">韓国の携帯電話番号のみを登録</span>できます。",
     "ko": "전화번호는 <span style=\"color: #F34747;\">한국 휴대 전화 번호만 등록</span>할 수 있습니다.",
     "service_id": "DSC08050"
   },
@@ -47768,7 +47768,7 @@
     "service_id": "DSC08078"
   },
   "DSC08079": {
-    "en": "Please enter the product name in English or another search term.",
+    "en": "Please enter the product name in English or enter another search term.",
     "ja": "商品名をで入力するか、別の検索語を入力してください。",
     "ko": "상품명을 영어로 입력하거나 다른 검색어를 입력하세요.",
     "service_id": "DSC08079"
@@ -47960,7 +47960,7 @@
     "service_id": "NTC08110"
   },
   "DSC08111": {
-    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java Agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/>The generated heap dump file can be checked in the {agent installation folder}dump directory.",
+    "en": "To obtain a heap dump, use <span class=\"body_s_5_bold\">Java agent version 1.5.2</span> and set the <span class=\"body_s_5_bold\">heapdump_enabled option to true</span>.<br/>The generated heap dump file can be checked in the {agent installation folder}dump directory.",
     "ja": "ヒープダンプを取得するには、<span class=\"body_s_5_bold\">Javaエージェント1.5.2バージョン</span>を使用し、<span class=\"body_s_5_bold\">heapdump_enabledオプションをtrue</span>に設定します。<br/ >生成されたヒープダンプファイルは、{エージェントインストールフォルダ} dumpディレクトリから確認できます。",
     "ko": "힙 덤프 확보를 위해서는 <span class=\"body_s_5_bold\">Java 에이전트 1.5.2버전</span>을 사용하고, <span class=\"body_s_5_bold\">heapdump_enabled 옵션을 true</span>로 설정하세요.<br/>생성된 힙 덤프 파일은 {에이전트 설치 폴더}dump 디렉토리에서 확인하실 수 있습니다.",
     "service_id": "DSC08111"
@@ -48231,7 +48231,7 @@
   },
   "BTN08155": {
     "en": "Time batch reset",
-    "ja": "時間一括初期化",
+    "ja": "時間バッチ初期化",
     "ko": "시간 일괄 초기화",
     "service_id": "BTN08155"
   },
@@ -48453,7 +48453,7 @@
   },
   "NTC08194": {
     "en": "An unknown error occurred. Please try again later.",
-    "ja": "不明なエラーが発生しました。しばらくしてからもう一度お試しください。",
+    "ja": "不明なエラーが発生しました。しばらくしてからもう一度進めてください。",
     "ko": "알 수 없는 오류가 발생했습니다. 잠시 후 다시 진행하세요.",
     "service_id": "NTC08194"
   },
@@ -48908,7 +48908,7 @@
     "service_id": "CNT08268"
   },
   "CNT08269": {
-    "en": "Set the 1-hour data (cube) storage period for Replica yard.",
+    "en": "Set the 1 hour data (cube) storage period for the replica yard.",
     "ja": "Replica yardの1時間データ（キューブ）の保存期間を設定します。",
     "ko": "Replica yard의 1시간 데이터(큐브) 저장기간을 설정합니다.",
     "service_id": "CNT08269"
@@ -49316,7 +49316,7 @@
     "service_id": "DSC08337"
   },
   "DSC08338": {
-    "en": "8. Enter the <b>Channel Name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
+    "en": "8. Enter the <b>Channel name</b> and the created <b>Workflow URL</b> below, then click the <b>Register</b> button.",
     "ja": "8. <b>チャンネル名</b>と生成された<b>ワークフローURL</b>を下に入力し、<b>登録</b>ボタンをクリックします。",
     "ko": "8. <b>채널 이름</b>과 생성된 <b>워크플로 URL</b>을 아래에 입력한 후, <b>등록</b> 버튼을 클릭하세요.",
     "service_id": "DSC08338"
@@ -49383,7 +49383,7 @@
   },
   "ITM08349": {
     "en": "Log view detail setting",
-    "ja": "ログ表示の詳細設定",
+    "ja": "ログ表示詳細設定",
     "ko": "로그 표시 상세 설정",
     "service_id": "ITM08349"
   },
@@ -49485,7 +49485,7 @@
   },
   "CNT08366": {
     "en": "Select search results",
-    "ja": "検索結果の選択",
+    "ja": "検索結果を選択",
     "ko": "검색 결과 선택",
     "service_id": "CNT08366"
   },
@@ -50300,7 +50300,7 @@
     "service_id": "DSC08501"
   },
   "DSC08502": {
-    "en": "Add the script file to <b>{path}</b>.",
+    "en": "<b>Add the script file to the {path} path</b>.",
     "ja": "スクリプトファイルを<b> {path}パスに追加</b>します。",
     "ko": "스크립트 파일을 <b>{path} 경로에 추가</b>하세요.",
     "service_id": "DSC08502"
@@ -50313,7 +50313,7 @@
   },
   "DSC08504": {
     "en": "The SQL query statement appears here.",
-    "ja": "SQLクエリ文がここに表示されます。",
+    "ja": "SQLクエリステートメントがここに表示されます。",
     "ko": "SQL 쿼리문이 여기에 표시됩니다.",
     "service_id": "DSC08504"
   },
@@ -50762,7 +50762,7 @@
     "service_id": "BTN08580"
   },
   "DSC08581": {
-    "en": "If you change the event target, the number of notifications may change. <span class=\"{class}\">Run the “Simulation” button again.</span>",
+    "en": "If you change the event target, the number of notifications may change, so <span class=\"{class}\">Run the “Simulation” button again.</span>",
     "ja": "イベントの対象を変更した場合は、アラート通知の件数が変わる可能性があるため、<span class=\"{class}\">「シミュレーション」ボタンをもう一度実行してください。</span>",
     "ko": "이벤트 대상을 변경한 경우, 알림 건수가 달라질 수 있으니 <span class=\"{class}\">“시뮬레이션” 버튼을 다시 실행하세요.</span>",
     "service_id": "DSC08581"
@@ -50805,13 +50805,13 @@
   },
   "DSC08588": {
     "en": "After performing a simulation to see if the log is successfully parsed with the entered pattern, register the pattern.",
-    "ja": "入力したパターンにログが正常に解析されるかどうかシミュレーションの進行後にパターンを登録します。",
+    "ja": "入力したパターンでログが正常に解析されるかどうかをシミュレートし、パターンを登録します。",
     "ko": "입력한 패턴으로 로그가 성공적으로 파싱되는지 시뮬레이션 진행 후 패턴을 등록합니다.",
     "service_id": "DSC08588"
   },
   "DSC08589": {
     "en": "Simulate to check whether the log is successfully parsed. Be sure to perform simulation and then perform additional pattern registration depending on the simulation result.",
-    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは必須であり、シミュレーションの結果に応じてパターン登録が必要になる場合があります。",
+    "ja": "ログが正常に解析されるかどうかをシミュレートします。シミュレーションは本質的に実行する必要があり、シミュレーション結果によってはパターン登録がさらに必要になる場合があります。",
     "ko": "로그가 성공적으로 파싱되는지 시뮬레이션합니다. 시뮬레이션은 필수적으로 수행되어야 하며,시뮬레이션 결과에 따라 패턴 등록이 추가로 필요할 수 있습니다.",
     "service_id": "DSC08589"
   },
@@ -51483,7 +51483,7 @@
   },
   "CNT08701": {
     "en": "A subscription for AWS Marketplace is required. Once the subscription is confirmed, you can use the WhaTap services.",
-    "ja": "AWS Marketplace でサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTap サービスを利用できます。",
+    "ja": "AWS Marketplaceにサブスクリプションが必要です。{br}サブスクリプションが確認されたら、WhaTapサービスを利用できます。",
     "ko": "AWS Marketplace 내 구독이 필요하며,{br}구독이 확인되면 WhaTap 서비스를 이용할 수 있습니다.",
     "service_id": "CNT08701"
   },
@@ -51621,7 +51621,7 @@
   },
   "DSC08725": {
     "en": "Update the agent version to the latest version.",
-    "ja": "エージェントのバージョンを最新バージョンに更新してください。",
+    "ja": "エージェントのバージョンを最新バージョンに更新します。",
     "ko": "에이전트 버전을 최신 버전으로 업데이트하세요.",
     "service_id": "DSC08725"
   },
@@ -51908,7 +51908,7 @@
     "service_id": "ITM08772"
   },
   "DSC08773": {
-    "en": "Please refer to the instructions page for instructions on activating the server inventory feature.",
+    "en": "Please refer to the instructions page for instructions on activating the server inventory function.",
     "ja": "サーバーインベントリ機能を有効にする方法については、ガイドの内容を参照してください。",
     "ko": "서버 인벤토리 기능 활성화를 위한 방법은 안내 페이지의 내용을 참고하세요.",
     "service_id": "DSC08773"
@@ -52149,7 +52149,7 @@
   },
   "DSC08813": {
     "en": "You can set object query permissions using the following command.",
-    "ja": "次のコマンドを使用してオブジェクト照会権限を設定できます。",
+    "ja": "次のコマンドを使用して、オブジェクト照会権限を設定できます。",
     "ko": "다음 명령어를 사용하여 오브젝트 조회 권한을 설정할 수 있습니다.",
     "service_id": "DSC08813"
   },
@@ -52395,7 +52395,7 @@
   },
   "TLT08854": {
     "en": "Bind variable is not in the correct format. Paste the value in the format {\"bind\": [\"example\"]}.",
-    "ja": "バインド変数が正しい型ではありません。{\"bind\": [\"example\"]} 型の値を貼り付けます。",
+    "ja": "バインド変数が正しい形式ではありません。 {\"bind\": [\"example\"]} 形式の値を貼り付けます。",
     "ko": "바인드 변수가 올바른 형식이 아닙니다. {\"bind\": [\"example\"]} 형식의 값을 붙여 넣으세요.",
     "service_id": "TLT08854"
   },
@@ -52574,7 +52574,7 @@
     "service_id": "DSC08884"
   },
   "DSC08885": {
-    "en": "Columns can be added in the inventory list ‘Add Column’. Server deletions and additions are not reflected.",
+    "en": "Adding a column is possible in the inventory list ‘Add Column’. Server deletions and additions are not reflected.",
     "ja": "カラムの追加は、インベントリリストの「カラム追加」で可能です。サーバーの削除、追加は反映されません。",
     "ko": "컬럼 추가는 인벤토리 목록 ‘컬럼 추가'에서 가능합니다. 서버 삭제, 추가는 반영되지 않습니다.",
     "service_id": "DSC08885"
@@ -52893,7 +52893,7 @@
   },
   "DSC08939": {
     "en": "The maximum {resource} usage is stable compared to node resources.",
-    "ja": "最大{resource}使用量は、ノード・リソースに対して安定したレベルです。",
+    "ja": "最大 {resource} 使用率は、ノードのリソースに対して安定したレベルです。",
     "ko": "최대 {resource} 사용량이 노드 자원 대비 안정적인 수준입니다.",
     "service_id": "DSC08939"
   },
@@ -52905,7 +52905,7 @@
   },
   "DSC08941": {
     "en": "Maximum {resource} usage is <b>high compared to node resources</b>. Monitor the usage increase.",
-    "ja": "最大{resource}使用率は<b>ノードリソースに対して高いレベル</b>です。使用量の増加を監視してください。",
+    "ja": "最大{resource}使用率が<b>ノードリソースに対して高いレベル</b>です。",
     "ko": "최대 {resource} 사용량이 <b>노드 자원 대비 높은 수준</b>입니다. 사용량 증가를 모니터링하세요.",
     "service_id": "DSC08941"
   },
@@ -52917,7 +52917,7 @@
   },
   "DSC08943": {
     "en": "The maximum {resource} usage <b>is close to or exceeds the node resource limit, possibly causing performance degradation or resource conflicts</b>. Adjust the <code>limit</code> setting or increase the resources.",
-    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれを超えているため、パフォーマンスの低下やリソースの競合の可能性</b>が高くなります。 <code>limit</code>設定を調整するか、リソースを増やしてください。",
+    "ja": "最大{resource}使用率が<b>ノード利用可能なリソースに近いかそれ以上であるため、パフォーマンスの低下またはリソースの競合の可能性</b>が高くなります。<code>limit</code>",
     "ko": "최대 {resource} 사용량이 <b>노드 가용 자원에 근접하거나 초과하여 성능 저하 또는 자원 충돌 가능성</b>이 높습니다. <code>limit</code> 설정을 조정하거나 자원을 늘리세요.",
     "service_id": "DSC08943"
   },
@@ -53091,7 +53091,7 @@
   },
   "TTL08973": {
     "en": "Preemption victim count trend",
-    "ja": "プリエンプションの被害者数の推移",
+    "ja": "プリエンプション被害者数の推移",
     "ko": "선점 피해자 수 추이",
     "service_id": "TTL08973"
   },
@@ -53361,7 +53361,7 @@
   },
   "BTN09018": {
     "en": "Add OID",
-    "ja": "OIDの追加",
+    "ja": "OIDを追加",
     "ko": "OID 추가",
     "service_id": "BTN09018"
   },
@@ -53535,7 +53535,7 @@
   },
   "TLT09051": {
     "en": "Receiving notifications may not work properly. Be sure to delete it.",
-    "ja": "通知の受信が正常に動作しない可能性があります。削除してください。",
+    "ja": "通知の受信が正常に動作しない可能性があります。",
     "ko": "알림 수신이 정상적으로 동작하지 않을 수 있습니다. 삭제해주시기 바랍니다.",
     "service_id": "TLT09051"
   },
@@ -55299,7 +55299,7 @@
   },
   "TTL09345": {
     "en": "Page connection changed",
-    "ja": "ページリンクが変更されました",
+    "ja": "ページ接続が変更されました",
     "ko": "페이지 연결 변경됨",
     "service_id": "TTL09345"
   },
@@ -55569,13 +55569,13 @@
   },
   "TTL09390": {
     "en": "Top 10 activity load times",
-    "ja": "アクティビティロード時間 Top10",
+    "ja": "アクティビティロード時間トップ10",
     "ko": "액티비티 로드 시간 Top10",
     "service_id": "TTL09390"
   },
   "TTL09391": {
     "en": "Top 10 activity load counts",
-    "ja": "アクティビティロード数 Top10",
+    "ja": "アクティビティロード数トップ10",
     "ko": "액티비티 로드 수 Top10",
     "service_id": "TTL09391"
   },
@@ -55593,7 +55593,7 @@
   },
   "TTL09394": {
     "en": "Activity load performance trend",
-    "ja": "アクティビティ負荷パフォーマンスの推移",
+    "ja": "アクティビティロード性能の推移",
     "ko": "액티비티 로드 성능 추이",
     "service_id": "TTL09394"
   },
@@ -55617,7 +55617,7 @@
   },
   "TTL09398": {
     "en": "Activity load count trend",
-    "ja": "アクティビティロード数推移",
+    "ja": "アクティビティロード数の推移",
     "ko": "액티비티 로드 수 추이",
     "service_id": "TTL09398"
   },
@@ -55635,7 +55635,7 @@
   },
   "TTL09403": {
     "en": "Maximum throughput interface",
-    "ja": "最大 Throughput インターフェイス",
+    "ja": "最大スループットインターフェイス",
     "ko": "최대 Throughput 인터페이스",
     "service_id": "TTL09403"
   },
@@ -55647,7 +55647,7 @@
   },
   "TTL09405": {
     "en": "Top 10 trap events",
-    "ja": "Trap発生量 TOP 10",
+    "ja": "トラップ発生量トップ10",
     "ko": "Trap 발생량 TOP 10",
     "service_id": "TTL09405"
   },
@@ -55695,7 +55695,7 @@
   },
   "DSC09413": {
     "en": "To exclude agents",
-    "ja": "エージェントを除外する",
+    "ja": "エージェントを除外するため",
     "ko": "에이전트를 제외하기 위해",
     "service_id": "DSC09413"
   },
@@ -55719,19 +55719,19 @@
   },
   "DSC09417": {
     "en": "Do you want to remove the payment role of the sub group/project and apply the inherited payment role changes?",
-    "ja": "サブグループ/プロジェクトに支払い権限をオフにし、変更される支払い権限の継承を適用​​しますか？",
+    "ja": "サブグループ/プロジェクトから支払い権限を解除し、支払い権限の継承を適用​​しますか？",
     "ko": "하위 그룹/프로젝트에 결제 권한을 해제하고 변경되는 결제 권한 상속을 적용 하시겠습니까?",
     "service_id": "DSC09417"
   },
   "DSC09418": {
     "en": "Select a project to apply the role inheritance and then click \"Apply.\"",
-    "ja": "権限の継承を適用​​するプロジェクトを選択し、「適用」ボタンをクリックします。",
+    "ja": "権限継承を適用​​するプロジェクトを選択し、「適用」ボタンをクリックします。",
     "ko": "권한 상속을 적용할 프로젝트를 선택한 후 “적용” 버튼을 클릭하세요.",
     "service_id": "DSC09418"
   },
   "DSC09419": {
     "en": "The agent is excluded from the project.",
-    "ja": "プロジェクトからそのエージェントを除外します。",
+    "ja": "プロジェクトから該当のエージェントを除外します。",
     "ko": "프로젝트에서 해당 에이전트를 제외합니다.",
     "service_id": "DSC09419"
   },
@@ -55749,13 +55749,13 @@
   },
   "TLT09422": {
     "en": "If no data is collected from the agent within the set period, the agent is marked as inactive.",
-    "ja": "設定された時間内にエージェントから収集されたデータがない場合は、そのエージェントを非アクティブ状態で表示します。",
+    "ja": "設定された時間内にエージェントからの収集データがなかった場合は、該当のエージェントを非アクティブ状態で表示します。",
     "ko": "설정된 시간 내에 에이전트로부터 수집된 데이터가 없을 경우, 해당 에이전트를 비활성 상태로 표시합니다.",
     "service_id": "TLT09422"
   },
   "ITM09423": {
     "en": "Confirm agent deactivation",
-    "ja": "エージェントの無効化の確認",
+    "ja": "エージェント無効化の確認",
     "ko": "에이전트 비활성화 확인",
     "service_id": "ITM09423"
   },
@@ -55785,25 +55785,25 @@
   },
   "NTC09428": {
     "en": "There is no payment data registered for the {account} account.{br} Register the payment information first.",
-    "ja": "{account}アカウントにお支払い情報は登録されていません。{br}お支払い情報を最初に登録してください。",
+    "ja": "{account}アカウントにお支払い情報は登録されてありません。{br}お支払い情報を先に登録してください。",
     "ko": "{account} 계정에는 결제 정보가 등록되어 있지 않습니다.{br}결제 정보를 먼저 등록해 주세요.",
     "service_id": "NTC09428"
   },
   "NTC09429": {
     "en": "There is payment data registered for the {accunt} account of the {group}.{br} When setting the payment roles, the organization, group, and project are charged separately.",
-    "ja": "{group}の{account}アカウントに登録されている\nお支払い情報があります。{br}お支払い権限を設定するとき\n該当する組織/グループ/プロジェクトは別途料金が発生します。",
+    "ja": "{group}の{account}アカウントに登録された\nお支払い情報があります。{br}お支払い権限を設定すると、\n該当する組織/グループ/プロジェクトは別途料金が発生します。",
     "ko": "{group}의 {account} 계정에 등록된\n결제 정보가 있습니다.{br}결제 권한 설정 시\n해당 조직 / 그룹 / 프로젝트는 별도로 비용이 청구됩니다.",
     "service_id": "NTC09429"
   },
   "NTC09430": {
     "en": "The billing role is set for the {account} account.{br}\nOnly one person can have the billing authority.{br}\nDo you want to transfer the payment role?",
-    "ja": "{account}アカウントにビリング権限が設定されています。{br}\nビリング権限は1人のみ設定できます。{br}\nお支払い権限を譲渡しますか？",
+    "ja": "{account}アカウントにお支払い権限が設定されています。{br}\nお支払い権限は一つのアカウントのみ指定できます。{br}\nお支払い権限を委任しますか？",
     "ko": "{account} 계정에 빌링 권한이 설정되어 있습니다.{br}\n빌링 권한은 1명만 설정 가능합니다.{br}\n결제 권한을 이양하시겠습니까?",
     "service_id": "NTC09430"
   },
   "NTC09431": {
     "en": "There must be at least a single user for the payment role.{br} Set the payment role for the account where payment information is registered.",
-    "ja": "お支払い権限を持つユーザーが少なくとも1人である必要があります。{br}お支払い情報が登録されているアカウントにお支払い権限を設定してください。",
+    "ja": "お支払い権限を持つアカウントが少なくとも一つ必要です。{br}お支払い情報が登録されてあるアカウントにお支払い権限を設定してください。",
     "ko": "결제 권한이 있는 사용자가 최소 1인은 있어야 합니다.{br}결제 정보가 등록된 계정에 결제 권한을 설정해주세요.",
     "service_id": "NTC09431"
   },
@@ -55851,7 +55851,7 @@
   },
   "DSC09439": {
     "en": "Enter the email address of the member to share with.",
-    "ja": "共有するメンバーのEメールを入力してください。",
+    "ja": "共有するメンバーのeメールを入力してください。",
     "ko": "공유할 멤버의 이메일을 입력하세요.",
     "service_id": "DSC09439"
   },
@@ -55893,7 +55893,7 @@
   },
   "TTL09446": {
     "en": "Start of inspection for personal information de-identification",
-    "ja": "個人情報の非識別チェックを開始",
+    "ja": "個人情報の非識別チェックの開始",
     "ko": "개인정보 비식별화 점검 시작",
     "service_id": "TTL09446"
   },
@@ -55905,19 +55905,19 @@
   },
   "DSC09448": {
     "en": "Data cannot be restored after replacement.",
-    "ja": "置換後のデータの元にはなりません。",
+    "ja": "置き換え後はデータの復元ができません。",
     "ko": "치환 이후 데이터 원복은 되지 않습니다.",
     "service_id": "DSC09448"
   },
   "DSC09449": {
     "en": "If replacement is required, see below.",
-    "ja": "置換が必要な場合",
+    "ja": "置き換えが必要な場合は",
     "ko": "치환을 원하신다면 아래",
     "service_id": "DSC09449"
   },
   "DSC09450": {
     "en": "Replace",
-    "ja": "置換する",
+    "ja": "置き換え",
     "ko": "치환하기",
     "service_id": "DSC09450"
   },
@@ -55959,7 +55959,7 @@
   },
   "BTN09457": {
     "en": "Runnable thread",
-    "ja": "Runnable スレッド",
+    "ja": "Runnableスレッド",
     "ko": "Runnable 스레드",
     "service_id": "BTN09457"
   },
@@ -55983,13 +55983,13 @@
   },
   "NTC09461": {
     "en": "Download is in progress. Please try again later.",
-    "ja": "ダウンロードが進行中です。しばらくしてからもう一度お試しください。",
+    "ja": "ダウンロードが進行中です。しばらくしてからもう一度試してください。",
     "ko": "다운로드가 진행 중입니다. 잠시 후 다시 시도해주세요.",
     "service_id": "NTC09461"
   },
   "TTL09462": {
     "en": "ANR count trend",
-    "ja": "ANR件数推移",
+    "ja": "ANR件数の推移",
     "ko": "ANR 건수 추이",
     "service_id": "TTL09462"
   },
@@ -56007,7 +56007,7 @@
   },
   "TTL09465": {
     "en": "Count trends by exception message",
-    "ja": "例外メッセージ別件数推移",
+    "ja": "例外メッセージ別件数の推移",
     "ko": "예외 메세지 별 건수 추이",
     "service_id": "TTL09465"
   },
@@ -56037,21 +56037,171 @@
   },
   "CNT09470": {
     "en": "An approval email is sent to the following account. {br} After approval, the changed payment role setting is applied.",
-    "ja": "以下のアカウントに承認メールが送信されます。{br}メール承認が完了すると、お支払い権限の設定が適用されます。",
+    "ja": "以下のアカウントへ承認メールを送信します。{br}メール承認が完了すると、お支払い権限の設定が適用されます。",
     "ko": "아래의 계정으로 승인 이메일을 발송됩니다.{br}이메일 승인 완료 시 결제 권한 설정이 적용됩니다.",
     "service_id": "CNT09470"
   },
   "TLT09471": {
     "en": "The corresponding page appears.",
-    "ja": "そのページに移動します。",
+    "ja": "該当のページへ移動します。",
     "ko": "해당 페이지로 이동합니다.",
     "service_id": "TLT09471"
   },
   "CNT09472": {
-    "en": "Connection Status",
+    "en": "Connection status",
     "ja": "接続状態",
     "ko": "연결 상태",
     "service_id": "CNT09472"
+  },
+  "BTN09473": {
+    "en": "Check inspection history",
+    "ja": "チェック履歴の確認",
+    "ko": "점검 이력 확인",
+    "service_id": "BTN09473"
+  },
+  "DSC09474": {
+    "en": "Enter the recipient's tag name.",
+    "ja": "受信者のタグ名を入力してください。",
+    "ko": "수신자 태그명을 입력하세요",
+    "service_id": "DSC09474"
+  },
+  "NTC09475": {
+    "en": "Check the Pod's configuration for {resourceName} requests and restrictions.",
+    "ja": "Podの{resourceName}リクエストと制限の設定を確認してください。",
+    "ko": "Pod의 {resourceName} 요청 및 제한 설정을 확인하세요.",
+    "service_id": "NTC09475"
+  },
+  "TTL09476": {
+    "en": "Temporary storage",
+    "ja": "一時ストレージ",
+    "ko": "임시 스토리지",
+    "service_id": "TTL09476"
+  },
+  "NTC09477": {
+    "en": "Check that the {value} setting is applied correctly.",
+    "ja": "{value}設定が正しく適用されていることを確認してください。",
+    "ko": "{value} 설정이 올바르게 적용되었는지 확인합니다.",
+    "service_id": "NTC09477"
+  },
+  "TTL09478": {
+    "en": "Permissions",
+    "ja": "権限",
+    "ko": "권한",
+    "service_id": "TTL09478"
+  },
+  "DSC09479": {
+    "en": "<span class=\"{className}\">RPS(Request Per Seconds)</span> on the left is the number of request transactions per second, and the layer in the center is the transaction being processed. <span class=\"{className}\">TPS(Transaction Per Seconds)</span> on the right is the number of transactions processed per second. You can intuitively understand the real-time transaction processing speed by referring to the corresponding indicator value.",
+    "ja": "左側の <span class=\"{className}\">RPS(Request Per Seconds)</span>は秒当りに要求されたトランザクション数で、中央のレイヤーは処理中のトランザクションです。右側の<span class=\"{className}\">TPS(Transaction Per Seconds)</span>は秒当りに処理されたトランザクション数です。この指標を参考にして、リアルタイムのトランザクション処理速度を直感的に把握することができます。",
+    "ko": "왼쪽의 <span class=\"{className}\">RPS(Request Per Seconds)</span>는 초당 요청 트랜잭션 건수이며, 중앙의 레이어는 처리 중인 트랜잭션입니다. 오른쪽의 <span class=\"{className}\">TPS(Transaction Per Seconds)</span>는 초당 처리된 트랜잭션 건수입니다. 해당 지푯값을 참고하여 실시간 트랜잭션 처리 속도를 직관적으로 파악할 수 있습니다.",
+    "service_id": "DSC09479"
+  },
+  "DSC09480": {
+    "en": "Speed ​​chart widget that visualizes the rate of active transactions occurring on the monitored target.",
+    "ja": "監視対象で発生するアクティブトランザクションの処理速度を可視化するスピードチャートウィジェット。",
+    "ko": "모니터링 대상에서 발생하는 활성 트랜잭션의 속도를 시각화하는 스피드 차트 위젯입니다.",
+    "service_id": "DSC09480"
+  },
+  "DSC09481": {
+    "en": "There are no instances configured as a cluster.",
+    "ja": "クラスターで構成されたインスタンスはありません。",
+    "ko": "클러스터로 구성된 인스턴스가 없습니다.",
+    "service_id": "DSC09481"
+  },
+  "common_xos": {
+    "en": "Common/XOS",
+    "ja": "共通/XOS",
+    "ko": "공통/XOS",
+    "service_id": "common_xos"
+  },
+  "sql_server": {
+    "en": "SQL Server",
+    "ja": "SQL Server",
+    "ko": "SQL Server",
+    "service_id": "sql_server"
+  },
+  "NTC09484": {
+    "en": "We have sent a payment authorization verification email to the {email} account. Payment authorization settings are applied when email verification is completed.",
+    "ja": "{email} アカウントにお支払い権限の認証メールを送信しました。電子メール認証が完了すると、支払い権限設定が適用されます。",
+    "ko": "{email} 계정에 결제 권한 인증 메일을 보냈습니다. 이메일 인증 완료 시 결제 권한 설정이 적용됩니다.",
+    "service_id": "NTC09484"
+  },
+  "TLT09485": {
+    "en": "The following items are excluded when calculating the disk capacity because they are remote volumes or can be double-calculated when simply summed.",
+    "ja": "リモートボリュームまたは単純な合計で容量が重複して計算されるため、以下の項目はディスク容量の計算から除外されます。",
+    "ko": "원격 볼륨이거나 단순 합산 시 용량이 중복 계산될 수 있어 아래 항목은 디스크 용량 계산 시 제외됩니다.",
+    "service_id": "TLT09485"
+  },
+  "DSC09486": {
+    "en": "Displays inactive servers",
+    "ja": "非アクティブサーバーの表示",
+    "ko": "비활성 서버 표시",
+    "service_id": "DSC09486"
+  },
+  "TTL09487": {
+    "en": "Chart interval information",
+    "ja": "チャートインターバルガイド",
+    "ko": "차트 인터벌 안내",
+    "service_id": "TTL09487"
+  },
+  "DSC09488": {
+    "en": "Check your agent version and agent settings to display one-minute summary data.",
+    "ja": "1分単位のサマリーデータを表示するには、エージェントのバージョンとエージェントの設定を確認してください。",
+    "ko": "1분 단위의 서머리 데이터를 표시하려면에이전트 버전과 에이전트 설정을 확인하세요.",
+    "service_id": "DSC09488"
+  },
+  "DSC09489": {
+    "en": "Agent version <span class=\"highlight-text\">{version} or higher</span>",
+    "ja": "エージェントのバージョン<span class=\"highlight-text\"> {version}以降</span>",
+    "ko": "에이전트 버전 <span class=\"highlight-text\">{version} 이상</span>",
+    "service_id": "DSC09489"
+  },
+  "DSC09490": {
+    "en": "Set <span class=\"highlight-text\">{settings}</span> in whatap.conf",
+    "ja": "whatap.conf を <span class=\"highlight-text\">{settings}</span> に設定",
+    "ko": "whatap.conf에 <span class=\"highlight-text\">{settings}</span>로 설정",
+    "service_id": "DSC09490"
+  },
+  "TTL09491": {
+    "en": "Server state rotator",
+    "ja": "サーバー状態ローテーター",
+    "ko": "서버 상태 로테이터",
+    "service_id": "TTL09491"
+  },
+  "TTL09492": {
+    "en": "State rotator",
+    "ja": "状態ローテーター",
+    "ko": "상태 로테이터",
+    "service_id": "TTL09492"
+  },
+  "TTL09493": {
+    "en": "Server group topology",
+    "ja": "サーバーグループトポロジ",
+    "ko": "서버 그룹 토폴로지",
+    "service_id": "TTL09493"
+  },
+  "BTN09494": {
+    "en": "Threshold setting",
+    "ja": "しきい値の設定",
+    "ko": "임계치 설정",
+    "service_id": "BTN09494"
+  },
+  "BTN09495": {
+    "en": "Alias ​​settings",
+    "ja": "エイリアス設定",
+    "ko": "별칭 설정",
+    "service_id": "BTN09495"
+  },
+  "DSC09496": {
+    "en": "Project fees will be charged to the payment information registered in {account} account of {group}.",
+    "ja": "{group}の{account}アカウントに登録されているお支払い情報にプロジェクト費用が課金されます。",
+    "ko": "{group}의 {account} 계정에 등록된 결제 정보로 프로젝트 비용이 청구됩니다.",
+    "service_id": "DSC09496"
+  },
+  "TTL09497": {
+    "en": "Add subcategory",
+    "ja": "サブカテゴリを追加",
+    "ko": "하위 카테고리 추가",
+    "service_id": "TTL09497"
   },
   "": {
     "en": "#VALUE!",
@@ -57234,6 +57384,11 @@
     "ja": "マルチインスタンス",
     "ko": "멀티 인스턴스 모니터링"
   },
+  "side_racMonitoring": {
+    "en": "RAC Monitoring",
+    "ja": "RAC モニタリング",
+    "ko": "RAC 모니터링"
+  },
   "side_dbTrend": {
     "en": "Counts Trend",
     "ja": "カウント推移",
@@ -57303,6 +57458,11 @@
     "en": "Script Manager",
     "ja": "スクリプト·マネージャー",
     "ko": "스크립트 매니저"
+  },
+  "side_dbTopSql": {
+    "en": "Top SQL",
+    "ja": "Top SQL",
+    "ko": "Top SQL"
   },
   "side_pqTree": {
     "en": "Parallel Query Tree",
@@ -58268,5 +58428,25 @@
     "en": "GPU Dashboard",
     "ja": "GPU ダッシュボード",
     "ko": "GPU 대시보드"
+  },
+  "side_node": {
+    "en": "Node",
+    "ja": "ノード",
+    "ko": "노드"
+  },
+  "side_serviceNetworking": {
+    "en": "Service Networking",
+    "ja": "サービスネットワーキング",
+    "ko": "서비스 네트워킹"
+  },
+  "side_storage": {
+    "en": "Storage",
+    "ja": "ストレージ",
+    "ko": "스토리지"
+  },
+  "side_controlPlane": {
+    "en": "Control Plane",
+    "ja": "コントロールプレーン",
+    "ko": "컨트롤 플레인"
   }
 }
