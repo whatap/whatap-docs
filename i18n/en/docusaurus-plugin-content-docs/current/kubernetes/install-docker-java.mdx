@@ -83,19 +83,19 @@ In some container images, you cannot directly set environment variables with `.`
 
 2. By executing the following command, check whether the `whatap.server.host` value is included.
 
-   ````
+   
    ```bash 
    $ env | grep whatap.server.host
    ```
-   ````
+   
 
    **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the _whatap.conf_ file and then manually set the `whatap.server.host` value as follows: 
 
-   ````
+   
    ```bash
    whatap.server.host={WhaTap Collection Server IP}
    ```
-   ````
+   
 
 :::
 
@@ -295,19 +295,19 @@ In some container images, you cannot directly set environment variables with `.`
 
 2. By executing the following command, check whether the `whatap.server.host` value is included.
 
-   ````
+   
    ```bash 
    $ env | grep whatap.server.host
    ```
-   ````
+   
 
    **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the _whatap.conf_ file and then manually set the `whatap.server.host` value as follows: 
 
-   ````
+   
    ```bash
    whatap.server.host={WhaTap Collection Server IP}
    ```
-   ````
+   
 
 :::
 
