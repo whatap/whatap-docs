@@ -2,16 +2,16 @@ const fs = require('fs');
 
 const whatapjson = require('./src/components/ui-text/whatap-locale.json');
 
-const koData = require('./menu.ko');
+const koData = require('./menu.ko.ts');
 const koMenuKey = Object.keys(koData.menuData);
 
 // console.log(koData.menuData["usage"].title);
 
-const enData = require('./menu.en');
+const enData = require('./menu.en.ts');
 
 // console.log(enData.menuData["usage"].title);
 
-const jaData = require('./menu.ja');
+const jaData = require('./menu.ja.ts');
 
 let sid;
 
