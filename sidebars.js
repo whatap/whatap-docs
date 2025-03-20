@@ -121,6 +121,7 @@ const sidebars = {
             'java/dashboard-transactionmap',
             'java/dashboard-active-transaction',
             'java/dashboard-hitmap-trace',
+            'java/agent-resource-dashboard',
           ],
         },
         {
