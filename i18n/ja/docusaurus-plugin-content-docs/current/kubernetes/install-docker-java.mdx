@@ -83,19 +83,19 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 2. 次のコマンドを実行して`whatap.server.host`値が含まれていることを確認します。
 
-   ````
+   
    ```bash 
    $ env | grep whatap.server.host
    ```
-   ````
+   
 
    **値が出力されない場合**当該コンテナの画像が`.`が含まれる環境変数の設定に対応していないことです。この場合、環境変数ではなく設定ファイルを活用する必要があります。*whatap.conf*ファイルを開いて次のように `whatap.server.host`値を手動で設定します。 
 
-   ````
+   
    ```bash
    whatap.server.host={WhaTap収集サーバーIP}
    ```
-   ````
+   
 
 :::
 
@@ -295,19 +295,19 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 2. 次のコマンドを実行して`whatap.server.host`値が含まれていることを確認します。
 
-   ````
+   
    ```bash 
    $ env | grep whatap.server.host
    ```
-   ````
+   
 
    **値が出力されない場合**当該コンテナの画像が`.`が含まれる環境変数の設定に対応していないことです。この場合、環境変数ではなく設定ファイルを活用する必要があります。*whatap.conf*ファイルを開いて次のように `whatap.server.host`値を手動で設定します。 
 
-   ````
+   
    ```bash
    whatap.server.host={WhaTap収集サーバーIP}
    ```
-   ````
+   
 
 :::
 
