@@ -4719,9 +4719,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_4_0',
+                  id: 'release-notes/dotnet/dotnet-2_4_1',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_4_0',
                 'release-notes/dotnet/dotnet-2_3_9',
                 'release-notes/dotnet/dotnet-2_3_8',
                 'release-notes/dotnet/dotnet-2_3_7',
