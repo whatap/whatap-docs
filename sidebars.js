@@ -6368,6 +6368,12 @@ const sidebars = {
           label: 'APACHE',
           className: 'beta' 
         },
+        {
+          type: 'doc',
+          id: 'features/milvus-introduction',
+          label: 'Milvus',
+          className: 'beta' 
+        },
         'features/uninstall-agent',
       ]
     }
