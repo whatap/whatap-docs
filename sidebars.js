@@ -1784,8 +1784,80 @@ const sidebars = {
           },
           items: [
             'sapase/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'sapase/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'sapase/metrics-search',
+            'sapase/metrics-detect-anormal',
           ]
         },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/stat',
+            'sapase/report-intro',
+          ],
+        },
+        'sapase/integrated-report',
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/log-main'
+          },
+          items: [
+            'sapase/log-db',
+            'sapase/log-lt',
+            'sapase/log-exp',
+            'sapase/log-search',
+            'sapase/log-setting',
+            'sapase/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/set-notice',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'sapase/warning-notice-v2'
+              },
+              items: [
+                'sapase/basic-event-setting',
+                'sapase/metric-warning-notice-new',
+                'sapase/set-notification-message',
+                'sapase/set-event-detect-anomal',
+                'sapase/set-event-log',
+              ]
+            },
+            'sapase/set-receive-event',
+            'sapase/set-event-history',
+            'sapase/set-event-format',
+            'sapase/real-time-notification',
+            'sapase/common-alert'
+          ],
+        },
+        'sapase/labs'
       ],
     }
   ],
