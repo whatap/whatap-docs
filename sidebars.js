@@ -1623,6 +1623,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'db2/stat',
+            'db2/table-space-size',
             'db2/report-intro',
           ],
         },
