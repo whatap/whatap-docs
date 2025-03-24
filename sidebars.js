@@ -4805,9 +4805,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_7',
+                  id: 'release-notes/python/python-1_7_8',
                   className: 'new',
                 },
+                'release-notes/python/python-1_7_7',
                 'release-notes/python/python-1_7_6',
                 'release-notes/python/python-1_7_5',
                 'release-notes/python/python-1_7_4',
@@ -4921,9 +4922,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_2',
+                  id: 'release-notes/server-aix/server-aix-1_4_3',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_4_2',
                 'release-notes/server-aix/server-aix-1_4_1',
                 'release-notes/server-aix/server-aix-1_4_0',
                 'release-notes/server-aix/server-aix-1_3_8',
@@ -4986,7 +4988,7 @@ const sidebars = {
               label: 'Kubernetes',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/k8s/index',
@@ -4994,9 +4996,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_8_5',
-                  // className: 'new',
+                  id: 'release-notes/k8s/k8s-1_8_6',
+                  className: 'new',
                 },
+                'release-notes/k8s/k8s-1_8_5',
                 'release-notes/k8s/k8s-1_8_4',
                 'release-notes/k8s/k8s-1_8_2',
                 'release-notes/k8s/k8s-1_8_1',
