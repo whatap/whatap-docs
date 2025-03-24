@@ -2116,6 +2116,7 @@ const sidebars = {
             'oracle/instance-list',
             'oracle/instance-monitoring',
             'oracle/multi-instance-monitoring',
+            'oracle/rac-monitoring',
           ],
         },
         {
@@ -2299,6 +2300,7 @@ const sidebars = {
             'oracle-pro/instance-list',
             'oracle-pro/instance-monitoring',
             'oracle-pro/multi-instance-monitoring',
+            'oracle-pro/rac-monitoring',
           ],
         },
         {
