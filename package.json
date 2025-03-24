@@ -47,7 +47,7 @@
     "@saucelabs/theme-github-codeblock": "^0.3.0",
     "@whatap-docs/remark-sectionize": "^0.0.3",
     "axios": "^1.7.2",
-    "cheerio": "^1.0.0-rc.12",
+    "cheerio": "^0.22.0",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.13",
     "docusaurus-plugin-image-zoom": "^2.0.0",
