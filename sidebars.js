@@ -4704,9 +4704,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_2',
+                  id: 'release-notes/server-aix/server-aix-1_4_3',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_4_2',
                 'release-notes/server-aix/server-aix-1_4_1',
                 'release-notes/server-aix/server-aix-1_4_0',
                 'release-notes/server-aix/server-aix-1_3_8',
