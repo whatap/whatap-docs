@@ -4738,9 +4738,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_10',
+                  id: 'release-notes/nodejs/nodejs-0_5_12',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_10',
                 'release-notes/nodejs/nodejs-0_5_9',
                 'release-notes/nodejs/nodejs-0_5_8',
                 'release-notes/nodejs/nodejs-0_5_7',
