@@ -2431,7 +2431,19 @@ const sidebars = {
           ],
         },
         'oracle/linked-projects',
-        'oracle/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle/labs'
+          },
+          items: [
+            'oracle/top-sql',
+          ],
+        },
       ],
     }
   ],
@@ -2604,7 +2616,19 @@ const sidebars = {
           ],
         },
         'oracle-pro/linked-projects',
-        'oracle-pro/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/labs'
+          },
+          items: [
+            'oracle-pro/top-sql',
+          ],
+        },
       ],
     }
   ],
@@ -2811,7 +2835,19 @@ const sidebars = {
           ],
         },
         'mysql/linked-projects',
-        'mysql/labs'
+        {
+          type: 'category',
+          label: '실험실',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'mysql/labs'
+          },
+          items: [
+            'mysql/top-sql',
+          ],
+        },
       ],
     }
   ],
