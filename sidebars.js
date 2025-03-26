@@ -121,6 +121,7 @@ const sidebars = {
             'java/dashboard-transactionmap',
             'java/dashboard-active-transaction',
             'java/dashboard-hitmap-trace',
+            'java/agent-resource-dashboard',
           ],
         },
         {
@@ -6371,6 +6372,12 @@ const sidebars = {
           label: 'APACHE',
           className: 'beta' 
         },
+        {
+          type: 'doc',
+          id: 'features/milvus-introduction',
+          label: 'Milvus',
+          className: 'beta' 
+        },
         'features/uninstall-agent',
       ]
     }
@@ -7166,7 +7173,6 @@ const sidebars = {
             },
             'kubernetes/node-map',
             'kubernetes/performance-summary',
-            'kubernetes/cluster-summary',
           ]
         },
         {
@@ -7188,6 +7194,28 @@ const sidebars = {
             'kubernetes/flexboard-mode',
             'kubernetes/flexboard-share',
           ],
+        },
+        {
+          type: 'category',
+          label: '클러스터',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/cluster-summary',
+            'kubernetes/resource-namespace',
+          ],
+        },
+        {
+          type: 'category',
+          label: '노드',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/resource-node-list',
+            'kubernetes/node-timeline',
+            'kubernetes/node-details',
+            'kubernetes/node-disk-list',
+          ]
         },
         {
           type: 'category',
@@ -7213,37 +7241,47 @@ const sidebars = {
             'kubernetes/pending-pod-status',
             'kubernetes/resource-application-list',
             'kubernetes/deployment-list',
-            // 'kubernetes/service-list',
           ],
         },
         {
           type: 'category',
-          label: '클러스터',
+          label: '서비스 네트워킹',
           collapsible: true,
           collapsed: true,
           items: [
-            'kubernetes/resource-node-list',
-            'kubernetes/node-details',
-            'kubernetes/node-disk-list',
-            'kubernetes/node-timeline',
-            'kubernetes/object-manifest',
-            'kubernetes/kubernetes-event',
+            'kubernetes/service-list',
+            'kubernetes/ingress-list',
+          ]
+        },
+        {
+          type: 'category',
+          label: '스토리지',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'kubernetes/pv-list',
+          ]
+        },
+        {
+          type: 'category',
+          label: '컨트롤 플레인',
+          collapsible: true,
+          collapsed: true,
+          items: [
             'kubernetes/kube-apiserver-dashboard',
             'kubernetes/kube-apiserver-metrics-search',
             'kubernetes/etcd-dashboard',
             'kubernetes/kube-scheduler-dashboard',
-            'kubernetes/service-list',
-            'kubernetes/pv-list',
-            'kubernetes/ingress-list',
-            'kubernetes/resource-namespace',
-          ],
-        },
+          ]
+        }, 
         {
           type: 'category',
           label: '분석',
           collapsible: true,
           collapsed: true,
           items: [
+            'kubernetes/object-manifest',
+            'kubernetes/kubernetes-event',
             {
               type: 'doc',
               id: 'kubernetes/pod-init-perform-v2',

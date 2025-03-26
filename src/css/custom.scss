@@ -2398,6 +2398,10 @@ main {
     img.rl-img-top8 {
       margin-top: 8px;
     }
+    img[src*='log-de-identification-confirm.png'] {
+      max-height: 200px;
+      margin: 0 auto;
+    }
     img[src*='tomcat-win.png'], img[src*='blog_12.webp'] {
       max-width: 50%;
     }
