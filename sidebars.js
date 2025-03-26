@@ -1683,6 +1683,183 @@ const sidebars = {
       ],
     }
   ],
+  sapaseSidebar: [
+    {
+      type: 'category',
+      label: 'SAP ASE 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'sapase/monitoring-intro'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: '지원 환경',
+          id: 'sapase/monitoring-support',
+        },
+        {
+          type: 'category',
+          label: '설치하기',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/install-agent',
+            'sapase/after-install-agent',
+            'sapase/troubleshooting',
+          ],
+        },
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/agent-settings'
+          },
+          items: [
+            'sapase/agent-dbx-settings',
+            'sapase/agent-xos-settings',
+          ],
+        },
+        'sapase/agent-manage',
+        'sapase/usage-ui',
+        {
+          type: 'category',
+          label: '대시보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/dashboard-intro'
+          },
+          items: [
+            'sapase/instance-list',
+            'sapase/instance-monitoring',
+            'sapase/multi-instance-monitoring',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flex 보드',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/flex-board',
+          },
+          items: [
+            'sapase/flexboard-template',
+            'sapase/flexboard-create',
+            'sapase/flexboard-manage',
+            'sapase/flexboard-metric-widget',
+            'sapase/flexboard-widget-manage',
+            'sapase/flexboard-widget-template',
+            'sapase/flexboard-mode',
+            'sapase/flexboard-share',
+          ],
+        },
+        {
+          type: 'category',
+          label: '분석',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/analysis-count-trend',
+            'sapase/analysis-lock-tree',
+            'sapase/analysis-databaseparameter',
+          ]
+        },
+        {
+          type: 'category',
+          label: '메트릭스',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/metrics-intro'
+          },
+          items: [
+            'sapase/metrics-data-list',
+            {
+              type: 'doc',
+              id: 'sapase/metrics-chart-v2',
+              className: 'newfunc'
+            },
+            'sapase/metrics-search',
+            'sapase/metrics-detect-anormal',
+          ]
+        },
+        {
+          type: 'category',
+          label: '통계/보고서',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/stat',
+            'sapase/report-intro',
+          ],
+        },
+        'sapase/integrated-report',
+        {
+          type: 'category',
+          label: '로그',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/log-main'
+          },
+          items: [
+            'sapase/log-db',
+            'sapase/log-lt',
+            'sapase/log-exp',
+            'sapase/log-search',
+            'sapase/log-setting',
+            'sapase/log-parser',
+          ]
+        },
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'sapase/set-notice',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '이벤트 설정',
+              collapsible: true,
+              collapsed: true,
+              className: 'newfunc',
+              link: {
+                type: 'doc',
+                id: 'sapase/warning-notice-v2'
+              },
+              items: [
+                'sapase/basic-event-setting',
+                'sapase/metric-warning-notice-new',
+                'sapase/set-notification-message',
+                'sapase/set-event-detect-anomal',
+                'sapase/set-event-log',
+              ]
+            },
+            'sapase/set-receive-event',
+            'sapase/set-event-history',
+            'sapase/set-event-format',
+            'sapase/real-time-notification',
+            'sapase/common-alert'
+          ],
+        },
+        'sapase/labs'
+      ],
+    }
+  ],
   postgreSidebar: [
     {
       type: 'category',

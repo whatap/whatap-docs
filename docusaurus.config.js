@@ -364,6 +364,11 @@ const config = {
               },
               {
                 type: 'doc',
+                docId: 'sapase/monitoring-intro',
+                label: 'SAP ASE',
+              },
+              {
+                type: 'doc',
                 docId: 'url/url-intro',
                 label: 'URL',
               },
@@ -595,6 +600,13 @@ const config = {
             docId: 'db2/monitoring-intro',
             position: "left",
             label: 'IBM DB2 모니터링',
+            className: 'hidden',
+          },
+          {
+            type: 'doc',
+            docId: 'sapase/monitoring-intro',
+            position: "left",
+            label: 'SAP ASE 모니터링',
             className: 'hidden',
           },
           {
