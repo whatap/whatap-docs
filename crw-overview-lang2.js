@@ -8,7 +8,8 @@ const urls = {
     ko: [
         // 'https://whatap.github.io/whatap-docs/release-notes/service/service-2_14_x',
         // 'https://docs.whatap.io/release-notes/service/service-2_13_x',
-        'https://whatap.github.io/whatap-docs/release-notes/service/service-2_14_x',
+        // 'https://whatap.github.io/whatap-docs/release-notes/service/service-2_14_x',
+        'https://whatap.github.io/whatap-docs/release-notes/service/service-2_15_x',
     ],
     en: [
         // 'https://docs.whatap.io/en/release-notes/service/service-2_7_x',
