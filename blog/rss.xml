@@ -4,7 +4,7 @@
         <title>WhaTap Docs Blog</title>
         <link>https://docs.whatap.io/whatap-docs/blog</link>
         <description>WhaTap Docs Blog</description>
-        <lastBuildDate>Fri, 21 Mar 2025 18:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Mar 2025 18:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ko</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[서비스 개요]]></title>
             <link>https://docs.whatap.io/whatap-docs/blog/overview</link>
             <guid>https://docs.whatap.io/whatap-docs/blog/overview</guid>
-            <pubDate>Fri, 21 Mar 2025 18:30:00 GMT</pubDate>
+            <pubDate>Wed, 26 Mar 2025 18:30:00 GMT</pubDate>
             <description><![CDATA[New Feature Overview]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="New Feature Overview" src="https://docs.whatap.io/whatap-docs/assets/images/new_feature_overview_txt-ee61ae3ec473e9be0678e02bdd89b0b9.png" width="934" height="161" class="img_ev3q"></p>
 <p>와탭이 제공하는 서비스 새로운 기능 개요를 한 눈에 살펴보세요.</p>
@@ -21,6 +21,128 @@
 <br>
 <br>
 <div class="history_overview" id="overview_test"><li><div><ul>
+<li>
+<code class="changelog-overview">신규 기능 출시</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">Database</code>
+<ul>
+<li><code class="New" type="1">New</code> <strong>SAP ASE</strong> 모니터링 상품 출시</li>
+<li><code class="New" type="1">New</code> <strong>Oracle</strong>, <strong>Oracle Pro</strong> 플랫폼에서 <span class="uitext">대시보드</span> &gt; <span class="uitext">RAC 모니터링</span> 신규 메뉴 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">신규 기능 출시</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">Application</code>
+<ul>
+<li><code class="New" type="1">New</code> <strong>Java</strong> 플랫폼에서 <span class="uitext">대시보드</span> &gt; <span class="uitext">Agent별 리소스 대시보드</span> 신규 메뉴 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">공통</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">통합 Flex 보드</span> 메뉴의 <span class="uitext">대시보드 목록</span>에서 <span class="uitext">대시보드 공유하기</span> 모달 내 공유된 사용자 확인 및 제거 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">Flex 보드</span> 메뉴에서 위젯 내 프로젝트 선택 창에서 키보드로 프로젝트를 선택할 수 있는 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">Flex 보드</span> 메뉴의 위젯에서 프로젝트 검색 시 그룹명 검색 추가</li>
+<li><code class="Feature" type="1">Feature</code> SSO 로그인만 허용하는 옵션 추가</li>
+<li><code class="Feature" type="1">Feature</code> 결제 권한 부여 시 이메일 승인 절차를 통해 부여하도록 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> 결제 권한 부여 시 하위 레벨 집단(그룹, 프로젝트)에 결제 권한을 일괄 부여할 수 있도록 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> 시간 선택자(타임 셀렉터) <strong>선택 시간 유지</strong> 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <img decoding="async" loading="lazy" alt="공지 아이콘" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNnB4O2hlaWdodDogMjZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZXZlbnQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjM5MS4wMDAwMDApIiBmaWxsPSIjNzk3OTc5Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtZXZlbnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDEuMDAwMDAwKSIgaWQ9IkNvbWJpbmVkLVNoYXBlIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTcsMTkgTDEzLDE5IEMxMywyMC42NTY4NTQyIDExLjY1Njg1NDIsMjIgMTAsMjIgQzguNDAyMzE5MTIsMjIgNy4wOTYzMzkxMiwyMC43NTEwOCA3LjAwNTA5MjY5LDE5LjE3NjI3MjggTDcsMTkgTDEzLDE5IFogTTEwLDAgQzExLjEwNDU2OTUsMCAxMiwwLjg5NTQzMDUgMTIsMiBDMTIsMi4wOTY5NzY1MyAxMS45OTMwOTc5LDIuMTkyMzQwOTkgMTEuOTc5NzU4MiwyLjI4NTYyODk1IEMxNC44ODE4MDcyLDMuMTM4MTQ1MzcgMTcsNS44MjE3MDc0NyAxNyw5IEwxNywxNSBMMTksMTUgQzE5LjU1MjI4NDcsMTUgMjAsMTUuNDQ3NzE1MyAyMCwxNiBDMjAsMTYuNTUyMjg0NyAxOS41NTIyODQ3LDE3IDE5LDE3IEwxLDE3IEMwLjQ0NzcxNTI1LDE3IDYuNzYzNTM3NTFlLTE3LDE2LjU1MjI4NDcgMCwxNiBDLTYuNzYzNTM3NTFlLTE3LDE1LjQ0NzcxNTMgMC40NDc3MTUyNSwxNSAxLDE1IEwzLDE1IEwzLDkgTDMuMDA0MDU5MDIsOC43NTkzNTAyNSBDMy4xMDc4NTc5NSw1LjY4Njg3MzI3IDUuMTkxNzI1NDIsMy4xMTY1MDAwNCA4LjAxOTkwNDkxLDIuMjgzOTg3MDYgQzguMDA2OTAyMDYsMi4xOTIzNDA5OSA4LDIuMDk2OTc2NTMgOCwyIEM4LDAuODk1NDMwNSA4Ljg5NTQzMDUsMCAxMCwwIFogTTEwLDQgQzcuMzAyODE1OCw0IDUuMDkzNjkxMTksNi4xMzk5ODcwNyA1LjAwMzc3NDU5LDguNzkzMDc5MjggTDUsOSBMNSwxNSBMMTUsMTUgTDE1LDkgQzE1LDYuMjM4NTc2MjUgMTIuNzYxNDIzNyw0IDEwLDQgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" width="24" height="24" class="img_ev3q"> <span class="uitext">실시간 알림</span>의 설정을 개인 설정으로 저장하도록 변경</li>
+<li><code class="Feature" type="1">Feature</code> <img decoding="async" loading="lazy" alt="공지 아이콘" src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iU1ZHSW5saW5lLXN2ZyIgc3R5bGU9IndpZHRoOiAyNnB4O2hlaWdodDogMjZweDsiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPCEtLSA8dGl0bGU+aWMtZXZlbnQ8L3RpdGxlPiAtLT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9Ikljb24tU2V0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iV2hhVGFwX0ljb25fU2V0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguMDAwMDAwLCAtMjM5MS4wMDAwMDApIiBmaWxsPSIjNzk3OTc5Ij4KICAgICAgICAgICAgPGcgaWQ9ImFwcGxpY2F0aW9uLWljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MC4wMDAwMDAsIDIzNDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iaWMtZXZlbnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjAwMDAwMCwgNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDAwMDAsIDEuMDAwMDAwKSIgaWQ9IkNvbWJpbmVkLVNoYXBlIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTcsMTkgTDEzLDE5IEMxMywyMC42NTY4NTQyIDExLjY1Njg1NDIsMjIgMTAsMjIgQzguNDAyMzE5MTIsMjIgNy4wOTYzMzkxMiwyMC43NTEwOCA3LjAwNTA5MjY5LDE5LjE3NjI3MjggTDcsMTkgTDEzLDE5IFogTTEwLDAgQzExLjEwNDU2OTUsMCAxMiwwLjg5NTQzMDUgMTIsMiBDMTIsMi4wOTY5NzY1MyAxMS45OTMwOTc5LDIuMTkyMzQwOTkgMTEuOTc5NzU4MiwyLjI4NTYyODk1IEMxNC44ODE4MDcyLDMuMTM4MTQ1MzcgMTcsNS44MjE3MDc0NyAxNyw5IEwxNywxNSBMMTksMTUgQzE5LjU1MjI4NDcsMTUgMjAsMTUuNDQ3NzE1MyAyMCwxNiBDMjAsMTYuNTUyMjg0NyAxOS41NTIyODQ3LDE3IDE5LDE3IEwxLDE3IEMwLjQ0NzcxNTI1LDE3IDYuNzYzNTM3NTFlLTE3LDE2LjU1MjI4NDcgMCwxNiBDLTYuNzYzNTM3NTFlLTE3LDE1LjQ0NzcxNTMgMC40NDc3MTUyNSwxNSAxLDE1IEwzLDE1IEwzLDkgTDMuMDA0MDU5MDIsOC43NTkzNTAyNSBDMy4xMDc4NTc5NSw1LjY4Njg3MzI3IDUuMTkxNzI1NDIsMy4xMTY1MDAwNCA4LjAxOTkwNDkxLDIuMjgzOTg3MDYgQzguMDA2OTAyMDYsMi4xOTIzNDA5OSA4LDIuMDk2OTc2NTMgOCwyIEM4LDAuODk1NDMwNSA4Ljg5NTQzMDUsMCAxMCwwIFogTTEwLDQgQzcuMzAyODE1OCw0IDUuMDkzNjkxMTksNi4xMzk5ODcwNyA1LjAwMzc3NDU5LDguNzkzMDc5MjggTDUsOSBMNSwxNSBMMTUsMTUgTDE1LDkgQzE1LDYuMjM4NTc2MjUgMTIuNzYxNDIzNyw0IDEwLDQgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" width="24" height="24" class="img_ev3q"> <span class="uitext">실시간 알림</span>에 수신자 태그 필터링 기능 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Server</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴에서 <span class="uitext">프로세스</span> 목록 내 <span class="uitext">메모리</span> 컬럼에 메모리 용량 표시 추가</li>
+<li><code class="Feature" type="0">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴에서 <span class="uitext">서버 선택</span> 시 비활성 서버 표시 활성화 토글 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴에서 <em><strong>Disk Used Space (%)</strong></em> 차트 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">서버 목록</span> &gt; <span class="uitext">서버 상세</span> 메뉴에서 우측 하단 영역에 <em><strong>File System</strong></em> 탭 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Kubernetes</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">Out Of Memory Killed 컨테이너</span> 메뉴에서 컨테이너 이름 검색 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">Out Of Memory Killed 컨테이너</span> 메뉴에서  태그 메타 정보 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">컨테이너</span> &gt; <span class="uitext">Out Of Memory Killed 컨테이너</span> 메뉴에서 상세 드로워에 컨테이너 제한값 대비 메모리 사용률(%)를 보여주는 <em><strong>Container Memory Working Set By Limit</strong></em> 차트 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 Docker Java 설치 안내 중 <code>env</code>의 <code>whatap.server.host</code>가 인식되지 않는 경우 다국어 안내 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">쿠버네티스 이벤트</span> 메뉴의 상세 보기에 <span class="uitext">Pod 요약 분석</span> 및 <span class="uitext">노드 요약 분석</span> 탭 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">분석</span> &gt; <span class="uitext">오브젝트 매니페스트</span> 메뉴의 상세 보기 내 검색 기능 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">공통</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 메뉴에서 인스턴스 선택자 옵션을 알파벳 기준으로 정렬</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 Database Map 신규 위젯 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">PostgreSQL, Oracle, MySQL, SQL Server, Cubrid, Altibase V2, IBM DB2</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">관리</span> &gt; <span class="uitext">에이전트 설치</span> 메뉴에서 <span class="uitext">DB 서버에 부가 에이전트 (XOS) 설치 및 기타 옵션 설정</span> 섹션의 <span class="uitext">XOS(Windows)</span> 탭 하위에 <code>msvcp120.dll</code>, <code>msvcr120.dll</code> 누락 시 해결 방법 안내 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">MySQL, Oracle V2, Oracle Pro</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">실험실</span> &gt; <span class="uitext">Top SQL</span> 신규 메뉴 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">MongoDB</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">대시보드</span> &gt; <span class="uitext">인스턴스 모니터링</span> 및 <span class="uitext">멀티 인스턴스 모니터링</span> 메뉴에서 DocumentDB 프리셋 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Database</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<br>
+<code class="changelog-overview2">IBM DB2</code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">통계/보고서</span> 메뉴 하위에 테이블스페이스 사용 현황을 모니터링할 수있는 <span class="uitext">테이블스페이스 사이즈</span> 메뉴 추가</li>
+</ul>
+</li>
+<li>
+<code class="changelog-overview">Log</code>
+<code class="changelog-date">2025년 03월 26일</code>
+<code class="changelog-service"><a href="https://docs.whatap.io/release-notes/service/service-2_15_x"><img src="https://docs.whatap.io/whatap-docs/img/ic-link.svg" width="18px" height="18px" class="ico-link medium-zoom-image"> Service 2.15.0​</a></code>
+<ul>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">로그 설정</span> &gt; <span class="uitext">개인정보 비식별화</span> 탭에서 <span class="uitext">치환하기</span> 선택 후 <span class="uitext">점검 시작</span> 시 확인 과정 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">로그 설정</span> &gt; <span class="uitext">개인정보 비식별화</span> 탭에서 점검 종료 후 점검 결과에 대한 샘플 로그 확인 기능 추가</li>
+<li><code class="Feature" type="1">Feature</code> <span class="uitext">로그 설정</span> &gt; <span class="uitext">개인정보 비식별화</span> 탭에서 <span class="uitext">점검 이력 확인</span> 기능 추가</li>
+</ul>
+</li>
 <li>
 <code class="changelog-overview">Server</code>
 <code class="changelog-date">2025년 03월 21일</code>
