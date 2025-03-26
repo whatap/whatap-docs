@@ -517,6 +517,13 @@ export default function pages() {
                             })}
                         </FlexCard>
 
+                        <FlexCard icons="index-icon/product-sapase-l.svg" product="SAP ASE" type="Database" url="sapase/monitoring-intro">
+                            {translate({
+                                id: "index.pages.section.product.mongodb",
+                                message: "성능 지표 모니터링과 추이 분석 및 비교할 수 있습니다."
+                            })}
+                        </FlexCard>
+
                         <FlexCard icons="index-icon/product-url-l.svg" product="URL" type="URL" url="url/url-intro">
                             {translate({
                                 id: "index.pages.section.product.url",
