@@ -4691,9 +4691,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_54',
+                  id: 'release-notes/java/java-2_2_55',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_54',
                 'release-notes/java/java-2_2_53',
                 'release-notes/java/java-2_2_52',
                 'release-notes/java/java-2_2_50',
@@ -4711,7 +4712,7 @@ const sidebars = {
               label: 'Java Batch',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               customProps: {
                 badges: ['new', 'green'],
                 featured: true,
@@ -4723,9 +4724,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_25',
-                  // className: 'new',
+                  id: 'release-notes/java-batch/java-batch-2_2_26',
+                  className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_25',
                 'release-notes/java-batch/java-batch-2_2_24',
                 'release-notes/java-batch/java-batch-2_2_23',
                 'release-notes/java-batch/java-batch-2_2_22',

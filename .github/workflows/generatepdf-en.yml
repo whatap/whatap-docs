@@ -76,6 +76,8 @@ jobs:
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-redis-monitoring-en.pdf
         node generate-pdf -u https://docs.whatap.io/en/cover/cover-mongodb --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-db-mongodb-monitoring-en.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-mongodb-monitoring-en.pdf
+        node generate-pdf -u https://docs.whatap.io/cover/cover-db2 --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-db-db2-monitoring-en.pdf --dest ./pdf --include-index
+        pdfcpu annot remove -pages 1 ./pdf/whatap-db-db2-monitoring-en.pdf
         node generate-pdf -u https://docs.whatap.io/en/cover/cover-log --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-log-monitoring-en.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-log-monitoring-en.pdf
         node generate-pdf -u https://docs.whatap.io/en/cover/cover-url --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-url-monitoring-en.pdf --dest ./pdf --include-index
@@ -109,9 +111,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v2.13.0@en # 생성할 Release의 태그 이름
-        release_name: "v2.13.0_EN"
-        body: "This is a PDF file created based on WhaTap Docs v2.13.0."
+        tag_name: v2.14.0@en # 생성할 Release의 태그 이름
+        release_name: "v2.14.0_EN"
+        body: "This is a PDF file created based on WhaTap Docs v2.14.0."
         draft: false
         prerelease: false
     
@@ -293,6 +295,16 @@ jobs:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: pdf/whatap-db-mongodb-monitoring-en.pdf
         asset_name: whatap-db-mongodb-monitoring-en.pdf
+        asset_content_type: application/pdf
+
+    - name: Upload to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: pdf/whatap-db-db2-monitoring-en.pdf
+        asset_name: whatap-db-db2-monitoring-en.pdf
         asset_content_type: application/pdf
 
     - name: Upload to Release
