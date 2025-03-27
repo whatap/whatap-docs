@@ -76,7 +76,7 @@ jobs:
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-redis-monitoring-en.pdf
         node generate-pdf -u https://docs.whatap.io/en/cover/cover-mongodb --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-db-mongodb-monitoring-en.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-mongodb-monitoring-en.pdf
-        node generate-pdf -u https://docs.whatap.io/cover/cover-db2 --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-db-db2-monitoring-en.pdf --dest ./pdf --include-index
+        node generate-pdf -u https://docs.whatap.io/en/cover/cover-db2 --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-db-db2-monitoring-en.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-db-db2-monitoring-en.pdf
         node generate-pdf -u https://docs.whatap.io/en/cover/cover-log --prince-args="--page-size='a4' --page-margin='10mm' --style=./pdf-print.css" -o ./pdf/whatap-log-monitoring-en.pdf --dest ./pdf --include-index
         pdfcpu annot remove -pages 1 ./pdf/whatap-log-monitoring-en.pdf
