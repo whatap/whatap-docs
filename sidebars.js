@@ -1083,7 +1083,8 @@ const sidebars = {
             'dotnet/agent-number-of-user',
             'dotnet/agent-static',
             'dotnet/agent-topology',
-            'dotnet/agent-webservice'
+            'dotnet/agent-webservice',
+            'dotnet/isapi-filter-based-tx-tracking',
           ]
         },
         {
