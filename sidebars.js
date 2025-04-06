@@ -5030,9 +5030,12 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_4_7',
+                  id: 'release-notes/db/dbx-2_5_0',
                   className: 'new',
                 },
+                'release-notes/db/dbx-2_4_9',
+                'release-notes/db/dbx-2_4_8',
+                'release-notes/db/dbx-2_4_7',
                 'release-notes/db/dbx-2_4_6',
                 'release-notes/db/dbx-2_4_5',
                 'release-notes/db/dbx-2_4_4',
@@ -5051,7 +5054,7 @@ const sidebars = {
               label: 'DMX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/db/dmx-agent',
@@ -5059,9 +5062,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dmx-1_0_2d',
-                  // className: 'new',
+                  id: 'release-notes/db/dmx-1_0_4h',
+                  className: 'new',
                 },
+                'release-notes/db/dmx-1_0_2d',
                 'release-notes/db/dmx-1_0_2b',
                 'release-notes/db/dmx-1_0_2a',
                 'release-notes/db/dmx-1_0_2',
