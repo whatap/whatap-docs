@@ -4780,9 +4780,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_12',
+                  id: 'release-notes/nodejs/nodejs-0_5_14',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_12',
                 'release-notes/nodejs/nodejs-0_5_10',
                 'release-notes/nodejs/nodejs-0_5_9',
                 'release-notes/nodejs/nodejs-0_5_8',
@@ -4895,9 +4896,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_8_3',
+                  id: 'release-notes/server/server-2_8_4',
                   className: 'new',
                 },
+                'release-notes/server/server-2_8_3',
                 'release-notes/server/server-2_8_2',
                 'release-notes/server/server-2_8_1',
                 'release-notes/server/server-2_8_0',
@@ -4945,7 +4947,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4954,7 +4956,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-solaris/server-solaris-1_4_2',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-solaris/server-solaris-1_4_1',
                 'release-notes/server-solaris/server-solaris-1_4_0',
@@ -4970,7 +4972,7 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-hpux/index'
@@ -4979,7 +4981,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-hpux/server-hpux-1_4_2',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-hpux/server-hpux-1_4_0',
                 'release-notes/server-hpux/server-hpux-1_3_7',
