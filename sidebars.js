@@ -5032,9 +5032,11 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_5_0',
+                  id: 'release-notes/db/dbx-2_5_2',
                   className: 'new',
                 },
+                'release-notes/db/dbx-2_5_1',
+                'release-notes/db/dbx-2_5_0',
                 'release-notes/db/dbx-2_4_9',
                 'release-notes/db/dbx-2_4_8',
                 'release-notes/db/dbx-2_4_7',
