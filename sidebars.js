@@ -4693,9 +4693,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_55',
+                  id: 'release-notes/java/java-2_2_56',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_55',
                 'release-notes/java/java-2_2_54',
                 'release-notes/java/java-2_2_53',
                 'release-notes/java/java-2_2_52',
