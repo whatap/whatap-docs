@@ -2,7 +2,7 @@
 # Your Crowdin credentials
 #
 "project_id" : "4"
-"api_token" : "7bf5b1886a970c82005381a0659144a83e90057736282017ab8128281152f8acac40ed513ea60ba5"
+"api_token" : "f98fa1709dd81161b11f6099f29878711f26fea5651cb07d7d9c600245cf83c1bb806831f9d93129"
 "base_path" : "."
 "base_url" : "https://whatap.crowdin.com"
 
