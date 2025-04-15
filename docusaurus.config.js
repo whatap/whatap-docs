@@ -94,13 +94,6 @@ const config = {
       }
     ],
     [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-E46TQ5VSCT',
-        anonymizeIP: true,
-      },
-    ],
-    [
       '@docusaurus/plugin-google-tag-manager',
       {
         containerId: 'GTM-KT747XQX',
