@@ -4691,9 +4691,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_56',
+                  id: 'release-notes/java/java-2_2_57',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_56',
                 'release-notes/java/java-2_2_55',
                 'release-notes/java/java-2_2_54',
                 'release-notes/java/java-2_2_53',
@@ -4779,9 +4780,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_14',
+                  id: 'release-notes/nodejs/nodejs-0_5_16',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_14',
                 'release-notes/nodejs/nodejs-0_5_12',
                 'release-notes/nodejs/nodejs-0_5_10',
                 'release-notes/nodejs/nodejs-0_5_9',
@@ -4808,9 +4810,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_7_9',
+                  id: 'release-notes/python/python-1_8_0',
                   className: 'new',
                 },
+                'release-notes/python/python-1_7_9',
                 'release-notes/python/python-1_7_8',
                 'release-notes/python/python-1_7_7',
                 'release-notes/python/python-1_7_6',
