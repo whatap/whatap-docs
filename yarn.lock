@@ -3918,17 +3918,10 @@
     "@webassemblyjs/ast" "1.14.1"
     "@xtuc/long" "4.2.2"
 
-<<<<<<< HEAD
-"@whatap-docs/remark-sectionize@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@whatap-docs/remark-sectionize/-/remark-sectionize-0.0.3.tgz#003c005b8d14cdae0b6a7ba62a282852e2024fe6"
-  integrity sha512-O/snS7+vQxPR84VtCw/QjjSaGgUVUseAC6RoCw+TSjo+tuML43OLwuOtGUhbfqmCD8nARkSBbWR1si2oRRI8yA==
-=======
 "@whatap-docs/remark-sectionize@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@whatap-docs/remark-sectionize/-/remark-sectionize-0.0.2.tgz#599577f869d87839d23e4405262097e6be6bc2a9"
   integrity sha512-r1z2Xc6IrFHmD3veN7FVT2JRsHNo4APOPipG9YhbGdvu09so27Vm+gseRL4a97FDEiQRFIONq9ljOGLvTfwZSA==
->>>>>>> 7cde7590ef03f9ae924aa38ed2a58ed9e4a9ef9e
   dependencies:
     unist-util-find-after "^4.0.1"
     unist-util-visit "^4.1.2"
@@ -13859,10 +13852,5 @@ yocto-queue@^1.0.0:
 
 zwitch@^2.0.0:
   version "2.0.4"
-<<<<<<< HEAD
-  resolved "https://registry.npmjs.org/zwitch/-/zwitch-2.0.4.tgz"
-  integrity sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==
-=======
   resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-2.0.4.tgz#c827d4b0acb76fc3e685a4c6ec2902d51070e9d7"
   integrity sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==
->>>>>>> 7cde7590ef03f9ae924aa38ed2a58ed9e4a9ef9e
