@@ -1802,6 +1802,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'sapase/stat',
+            'sapase/database-size',
             'sapase/report-intro',
           ],
         },
