@@ -789,5 +789,8 @@
   },
   "pages.dbfunctions.title": {
     "message": "데이터베이스별 지원 기능 비교"
+  },
+  "index.pages.section.product.nms": {
+    "message": "네트워크 장비의 성능 지표와 상태를 실시간으로 모니터링합니다."
   }
 }

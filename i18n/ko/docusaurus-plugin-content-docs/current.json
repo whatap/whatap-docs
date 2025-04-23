@@ -2134,5 +2134,177 @@
   "sidebar.rumsSidebar.category.이벤트 설정": {
     "message": "이벤트 설정",
     "description": "The label for category 이벤트 설정 in sidebar rumsSidebar"
+  },
+  "sidebar.db2Sidebar.category.IBM DB2 모니터링": {
+    "message": "IBM DB2 모니터링",
+    "description": "The label for category IBM DB2 모니터링 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.로그": {
+    "message": "로그",
+    "description": "The label for category 로그 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.category.이벤트 설정": {
+    "message": "이벤트 설정",
+    "description": "The label for category 이벤트 설정 in sidebar db2Sidebar"
+  },
+  "sidebar.db2Sidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar db2Sidebar, linking to the doc db2/monitoring-support"
+  },
+  "sidebar.sapaseSidebar.category.SAP ASE 모니터링": {
+    "message": "SAP ASE 모니터링",
+    "description": "The label for category SAP ASE 모니터링 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.설치하기": {
+    "message": "설치하기",
+    "description": "The label for category 설치하기 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.대시보드": {
+    "message": "대시보드",
+    "description": "The label for category 대시보드 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.분석": {
+    "message": "분석",
+    "description": "The label for category 분석 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.메트릭스": {
+    "message": "메트릭스",
+    "description": "The label for category 메트릭스 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.통계/보고서": {
+    "message": "통계/보고서",
+    "description": "The label for category 통계/보고서 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.로그": {
+    "message": "로그",
+    "description": "The label for category 로그 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.category.이벤트 설정": {
+    "message": "이벤트 설정",
+    "description": "The label for category 이벤트 설정 in sidebar sapaseSidebar"
+  },
+  "sidebar.sapaseSidebar.doc.지원 환경": {
+    "message": "지원 환경",
+    "description": "The label for the doc item 지원 환경 in sidebar sapaseSidebar, linking to the doc sapase/monitoring-support"
+  },
+  "sidebar.dboracleV2Sidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar dboracleV2Sidebar"
+  },
+  "sidebar.dboracledmaSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar dboracledmaSidebar"
+  },
+  "sidebar.mysqlSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar mysqlSidebar"
+  },
+  "sidebar.releaseSidebar.category.DMX": {
+    "message": "DMX",
+    "description": "The label for category DMX in sidebar releaseSidebar"
+  },
+  "sidebar.featuremonitorSidebar.doc.Milvus": {
+    "message": "Milvus",
+    "description": "The label for the doc item Milvus in sidebar featuremonitorSidebar, linking to the doc features/milvus-introduction"
+  },
+  "sidebar.serverSidebar.category.실험실": {
+    "message": "실험실",
+    "description": "The label for category 실험실 in sidebar serverSidebar"
+  },
+  "sidebar.serverSidebar.doc.메트릭스 익스플로러": {
+    "message": "메트릭스 익스플로러",
+    "description": "The label for the doc item 메트릭스 익스플로러 in sidebar serverSidebar, linking to the doc server/metrics-explorer"
+  },
+  "sidebar.nmsSidebar.category.Network 관리 시스템": {
+    "message": "Network 관리 시스템",
+    "description": "The label for category Network 관리 시스템 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.설정하기": {
+    "message": "설정하기",
+    "description": "The label for category 설정하기 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.Flex 보드": {
+    "message": "Flex 보드",
+    "description": "The label for category Flex 보드 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.디바이스": {
+    "message": "디바이스",
+    "description": "The label for category 디바이스 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.경고 알림": {
+    "message": "경고 알림",
+    "description": "The label for category 경고 알림 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.category.이벤트 설정": {
+    "message": "이벤트 설정",
+    "description": "The label for category 이벤트 설정 in sidebar nmsSidebar"
+  },
+  "sidebar.nmsSidebar.doc.Log 모니터링": {
+    "message": "Log 모니터링",
+    "description": "The label for the doc item Log 모니터링 in sidebar nmsSidebar, linking to the doc log/introduction"
+  },
+  "sidebar.kubeSidebar.category.노드": {
+    "message": "노드",
+    "description": "The label for category 노드 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.서비스 네트워킹": {
+    "message": "서비스 네트워킹",
+    "description": "The label for category 서비스 네트워킹 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.스토리지": {
+    "message": "스토리지",
+    "description": "The label for category 스토리지 in sidebar kubeSidebar"
+  },
+  "sidebar.kubeSidebar.category.컨트롤 플레인": {
+    "message": "컨트롤 플레인",
+    "description": "The label for category 컨트롤 플레인 in sidebar kubeSidebar"
+  },
+  "sidebar.dbSidebar.link.IBM DB2": {
+    "message": "IBM DB2",
+    "description": "The label for link IBM DB2 in sidebar dbSidebar, linking to ../db2/monitoring-intro"
   }
 }
