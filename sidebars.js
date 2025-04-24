@@ -4813,9 +4813,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_8_0',
+                  id: 'release-notes/python/python-1_8_1',
                   className: 'new',
                 },
+                'release-notes/python/python-1_8_0',
                 'release-notes/python/python-1_7_9',
                 'release-notes/python/python-1_7_8',
                 'release-notes/python/python-1_7_7',
@@ -4826,7 +4827,6 @@ const sidebars = {
                 'release-notes/python/python-1_7_2',
                 'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
-                'release-notes/python/python-1_6_10',
                 'release-notes/python/python-previous',
               ],
             },
@@ -4935,9 +4935,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_3',
+                  id: 'release-notes/server-aix/server-aix-1_4_4',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_4_3',
                 'release-notes/server-aix/server-aix-1_4_2',
                 'release-notes/server-aix/server-aix-1_4_1',
                 'release-notes/server-aix/server-aix-1_4_0',
@@ -4954,7 +4955,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4962,9 +4963,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_4_2',
-                  // className: 'new'
+                  id: 'release-notes/server-solaris/server-solaris-1_4_4',
+                  className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_4_2',
                 'release-notes/server-solaris/server-solaris-1_4_1',
                 'release-notes/server-solaris/server-solaris-1_4_0',
                 'release-notes/server-solaris/server-solaris-1_3_8',
@@ -4979,7 +4981,7 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-hpux/index'
@@ -4987,9 +4989,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/server-hpux-1_4_2',
-                  // className: 'new'
+                  id: 'release-notes/server-hpux/server-hpux-1_4_4',
+                  className: 'new'
                 },
+                'release-notes/server-hpux/server-hpux-1_4_2',
                 'release-notes/server-hpux/server-hpux-1_4_0',
                 'release-notes/server-hpux/server-hpux-1_3_7',
                 'release-notes/server-hpux/server-hpux-1_3_6',
