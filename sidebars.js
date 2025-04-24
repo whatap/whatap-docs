@@ -4812,9 +4812,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/python/python-1_8_0',
+                  id: 'release-notes/python/python-1_8_1',
                   className: 'new',
                 },
+                'release-notes/python/python-1_8_0',
                 'release-notes/python/python-1_7_9',
                 'release-notes/python/python-1_7_8',
                 'release-notes/python/python-1_7_7',
@@ -4825,7 +4826,6 @@ const sidebars = {
                 'release-notes/python/python-1_7_2',
                 'release-notes/python/python-1_7_1',
                 'release-notes/python/python-1_7_0',
-                'release-notes/python/python-1_6_10',
                 'release-notes/python/python-previous',
               ],
             },
@@ -4913,11 +4913,6 @@ const sidebars = {
                 'release-notes/server/server-2_7_8',
                 'release-notes/server/server-2_7_7',
                 'release-notes/server/server-2_7_6',
-                'release-notes/server/server-2_7_5',
-                'release-notes/server/server-2_7_4',
-                'release-notes/server/server-2_7_3',
-                'release-notes/server/server-2_7_2',
-                'release-notes/server/server-2_7_1',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4934,9 +4929,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_3',
+                  id: 'release-notes/server-aix/server-aix-1_4_4',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_4_3',
                 'release-notes/server-aix/server-aix-1_4_2',
                 'release-notes/server-aix/server-aix-1_4_1',
                 'release-notes/server-aix/server-aix-1_4_0',
@@ -4953,7 +4949,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -4961,9 +4957,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_4_2',
-                  // className: 'new'
+                  id: 'release-notes/server-solaris/server-solaris-1_4_4',
+                  className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_4_2',
                 'release-notes/server-solaris/server-solaris-1_4_1',
                 'release-notes/server-solaris/server-solaris-1_4_0',
                 'release-notes/server-solaris/server-solaris-1_3_8',
@@ -4978,7 +4975,7 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-hpux/index'
@@ -4986,9 +4983,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/server-hpux-1_4_2',
-                  // className: 'new'
+                  id: 'release-notes/server-hpux/server-hpux-1_4_4',
+                  className: 'new'
                 },
+                'release-notes/server-hpux/server-hpux-1_4_2',
                 'release-notes/server-hpux/server-hpux-1_4_0',
                 'release-notes/server-hpux/server-hpux-1_3_7',
                 'release-notes/server-hpux/server-hpux-1_3_6',
@@ -5040,24 +5038,15 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_5_2',
+                  id: 'release-notes/db/dbx-2_50_02',
                   className: 'new',
                 },
+                'release-notes/db/dbx-2_50_01',
+                'release-notes/db/dbx-2_5_4',
+                'release-notes/db/dbx-2_5_3',
+                'release-notes/db/dbx-2_5_2',
                 'release-notes/db/dbx-2_5_1',
                 'release-notes/db/dbx-2_5_0',
-                'release-notes/db/dbx-2_4_9',
-                'release-notes/db/dbx-2_4_8',
-                'release-notes/db/dbx-2_4_7',
-                'release-notes/db/dbx-2_4_6',
-                'release-notes/db/dbx-2_4_5',
-                'release-notes/db/dbx-2_4_4',
-                'release-notes/db/dbx-2_4_3',
-                'release-notes/db/dbx-2_4_2',
-                'release-notes/db/dbx-2_4_1',
-                'release-notes/db/dbx-2_4_0',
-                'release-notes/db/dbx-2_3_9',
-                'release-notes/db/dbx-2_3_8',
-                'release-notes/db/dbx-2_3_7',
                 'release-notes/db/dbx-previous',
               ]
             },
