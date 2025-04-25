@@ -2,11 +2,10 @@
 # Your Crowdin credentials
 #
 "project_id" : "4"
-"api_token" : "f98fa1709dd81161b11f6099f29878711f26fea5651cb07d7d9c600245cf83c1bb806831f9d93129"
+"api_token" : "d906799e56595a65d8cd594f41f0b183b83196bc190f698c481a03535cfe0b3f43d1f984963fec18"
 "base_path" : "."
 "base_url" : "https://whatap.crowdin.com"
 
-#
 # Choose file structure in Crowdin
 # e.g. true or false
 #
