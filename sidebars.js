@@ -4693,9 +4693,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java/java-2_2_57',
+                  id: 'release-notes/java/java-2_2_58',
                   className: 'new',
                 },
+                'release-notes/java/java-2_2_57',
                 'release-notes/java/java-2_2_56',
                 'release-notes/java/java-2_2_55',
                 'release-notes/java/java-2_2_54',
@@ -4842,9 +4843,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_4_1',
+                  id: 'release-notes/dotnet/dotnet-2_4_2',
                   className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_4_1',
                 'release-notes/dotnet/dotnet-2_4_0',
                 'release-notes/dotnet/dotnet-2_3_9',
                 'release-notes/dotnet/dotnet-2_3_8',
