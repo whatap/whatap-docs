@@ -124,8 +124,6 @@ In the ![number 2](/img/number-02.png) area, you can see the <Cmdname sid="log_u
 
 #### Log retention period {#data-retention}
 
-{/* <Cmdname sid="DSC08751" className="uitext" /> */}
-
 This is the default data retention period to be applied commonly. If not specified, the default value is 1 day. In addition to the option to select a log retention period, you can enter a desired period of time. If not set separately in the <Cmdname sid="log_usage" className="uitext" /> list, this log data retention period is applied by default. If you set the data retention periods for each category in the <Cmdname sid="log_usage" className="uitext" /> list and select <Cmdname sid="initialized" className="uitext" />, the default data retention period is reset. 
 
 #### Log usage amount {#data-retention-per-category}
@@ -368,29 +366,6 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 - After **_parser simulation_**, you can register a pattern. 
 
 :::
-
-{/* 
-    \* **시뮬레이션 성공 화면**
-
-```
-  <ImgLang img='log-simulation-success.png' desc='시뮬레이션 성공'/>
-
-* **시뮬레이션 실패 화면**
-
-  <ImgLang img='log-simulation-fail.png' desc='시뮬레이션 실패'/>  
-```
-
-*/}
-
-{/* 
-
-### Performance measurement {#log-performance}
-
-After successful simulation, click <Cmdname sid="performance_measurement" className="uitext" /> to measure the performance of the parser. After measuring the parser's repetitive parsing time for the string to be simulated, you can check the measurement result on a pop-up as follows:
-
-<ImgLang img='log-performance.png' desc='Performance measurement'/>
-
-*/}
 
 ### Parsing success {#log-parsed}
 
@@ -649,16 +624,19 @@ The items classified as personal information are as follows: If there are any it
 - Driver's license number
 
 - Alien registration number
-  </Column>
-  <Column className="text--left">
+
+</Column>
+
+<Column className="text--left">
 
 - Credit card number
 
 - Account number
 
 - Biometric information
-  </Column>
-  </Columns>
+</Column>
+
+</Columns>
 
 ### Required roles
 
