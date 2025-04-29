@@ -1,0 +1,60 @@
+---
+id: metrics-data-list
+title: SAP ASE指標
+description: SAP ASEデータベース指標を案内します。
+keywords:
+  - SAP ASE
+  - メトリクス
+  - データベース
+  - データベースモニタリング
+---
+
+データベース指標は、データベースの作業量とリソース使用量を包括的に収集します。 WhaTapモニタリングサービスは、継続的にメトリクスを収集してデータベースのボトルネックを特定し、性能問題の根本原因を特定するのに役立つデータを提供します。
+
+<div className="metricslist">
+
+import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+
+<AgentStatus />
+
+## db_sap_ase_counter {#db_sap_ase_counter}
+
+### Field {#db_sap_ase_counter-filed}
+
+次は`db_sap_ase_counter`カテゴリに収集されるフィールド値の案内です。
+
+| Metrics                 | Description                                                | Category    |
+| ----------------------- | ---------------------------------------------------------- | ----------- |
+| `active_sessions`       | クエリが実行されているセッションの数                                         | Connection  |
+| `total_sessions`        | 現在接続されているセッション数、Number of active inbound connections       | Connection  |
+| `connect_error`         | エージェントがDB接続に失敗した場合にカウントされる数                                | Connection  |
+| `total_elapse_time`     | active sessionの実行時間の合計                                     | Performance |
+| `long_running_sessions` | long running time(デフォルト値: 10秒)以上実行中のセッション数                 | Performance |
+| `lock_wait_sessions`    | lock待機するセッション数でアクティブセッションで照会されたBlocking SPIDが0より大きいセッションの数 | Performance |
+| `max_connections`       | 最大接続できるセッション数                                              | Connection  |
+| `BytesReceived`         | 受信したバイト数、monNetworkIOの値                                    | ネットワーク      |
+| `BytesSent`             | 送信されたバイト数、monNetworkIOの値                                   | ネットワーク      |
+| `cpu`                   | CPU使用率で@@cpu_busy+@@io_busy値(単位: pct)                      | Performance |
+| `cpu_cores`             | CPU core数                                                  | Info        |
+| `Reads`                 | デバイスから読み取った数(APF除外), monDeviceIOのReads値                    | IO          |
+| `IOTime`                | I/Oリクエストが満たされるまで待つのにかかった総時間(単位: ms)でmonDeviceIOのIOTime値    | IO          |
+| `Writes`                | デバイスへの書き込み回数でmonDeviceIOのWrites値                           | IO          |
+| `LockRequests`          | オブジェクトへのロックリクエスト数                                          | Throughput  |
+| `LogicalReads`          | ディスクから読み込まずにバッファキャッシュからバッファを検索した総回数                        | IO          |
+| `Operations`            | オブジェクトにアクセスした回数、monOpenObjectActivityの値                    | Throughput  |
+| `PacketsReceived`       | 受信したパケット数、monNetworkIOの値                                   | ネットワーク      |
+| `PacketsSent`           | 送信されたパケット数、monNetworkIOの値                                  | ネットワーク      |
+| `PagesRead`             | 読み込んだページ数                                                  | IO          |
+| `PagesWritten`          | ディスクに記録されたページ数                                             | IO          |
+| `PhysicalReads`         | ディスクから読み取ったバッファの数                                          | IO          |
+| `PhysicalWrites`        | ディスクに記録されたバッファの数                                           | IO          |
+| `RowsDeleted`           | 削除されたrowの数                                                 | Throughput  |
+| `RowsInserted`          | 挿入されたrowの数                                                 | Throughput  |
+| `RowsUpdated`           | 修正されたrowの数                                                 | Throughput  |
+| `UsedCount`             | 実行計画でオブジェクトが使用された回数で、monOpenObjectActivityの値               | Throughput  |
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />
+
+</div>

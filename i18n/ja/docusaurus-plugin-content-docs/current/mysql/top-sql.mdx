@@ -1,0 +1,53 @@
+---
+id: top-sql
+title: Top SQL
+description: 最大30日、最小1分単位で、指標と推移チャートでSQL発生パターンを容易に把握できます。
+keywords:
+  - MySQL
+  - データベース
+  - Top SQL
+---
+
+{/* 기본 화면, trend 차트 안내*/}
+
+import Dbstattopsqldesc from "../common-items/_db-stat-top-sql-desc.mdx";
+
+<Dbstattopsqldesc />
+
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
+
+<Dbstatsqlviewquery />
+
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
+
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
+
+## 詳細チャートを確認する{#chart-details-info}
+
+import Dbstatsqlchartdetails from "../common-items/_db-stat-sql-chart-details.mdx";
+
+<Dbstatsqlchartdetails />
+
+## 詳細情報を確認する{#session-details-info}
+
+<ImgLang img='db-top-sql-details.png' desc='세션 상세 정보' />
+
+チャートの棒グラフを選択すると、5分間の統計情報が確認できる<Cmdname sid="session_detail" className="uitext" />画面が表示されます。 選択した時間のSQL実行一覧を表示し、項目を選択すると新しい画面とともに<Cmdname sid="instance_monitoring" className="uitext" />メニューへ移動します。
+
+<Cmdname sid="instance_monitoring" className="uitext" />メニューからは、選択した時間帯のアクティブセッションテーブルと、様々な指標の推移を確認することができます。
+
+{/* 필터 조건추가하기*/}
+
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter level={2} />
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn level={2} />

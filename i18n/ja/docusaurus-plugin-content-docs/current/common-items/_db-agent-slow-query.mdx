@@ -1,0 +1,103 @@
+スロークエリを収集するには、まずデータベース(DB)を設定した上で、ユーザの環境(オンプレミスまたはAWS RDS/Aurora)によってWhaTapの設定方法が異なります。
+
+:::note
+
+スロークエリー機能は**MySQL**と**PostgreSQL**に限って対応します。
+
+:::
+
+<InDoc product="mysql">
+
+:::caution
+
+**データベース設定を確認する**
+
+WhaTap設定前、MySQLデータベース(DB)に対してスロウクエリ関連のパラメータを設定する必要があります。 スロークエリーログ機能が活性化されていることを確認し、WhaTapの設定を進めます。
+
+```ini
+slow_query_log=on  
+long_query_time=3  # 3秒 
+```
+
+:::
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+:::caution
+
+**データベース設定を確認する**
+
+WhaTap設定前、PostgreSQLデータベース(DB)に対してスロウクエリ関連のパラメータを設定する必要があります。 スロークエリーログ機能が活性化されていることを確認し、WhaTapの設定を進めます。
+
+```ini
+log_min_duration_statement=3000  # 3秒
+```
+
+:::
+
+</InDoc>
+
+<InDoc product="mysql">
+
+### オンプレミス環境
+
+独自のサーバーで運用する場合、WhaTap의 DBX/XOS設定方式を使用します。 **DBXエージェントのインストール以外に、DBサーバーにXOSを必ずインストールする必要があります。** XOSエージェントの設定方法は[次の文書](agent-xos-settings)を参考にしてください。
+
+1. DBX*whatap.conf*ファイルに'slow_query_log=on'オプションを追加します。
+
+   - **slow_query_log** <span class='type'>Boolean</span>\
+       スロークエリーロギング機能を活性化(`on`)するか、非活性化(`off`)します。 MySQLのデフォルト値は`on`となります。
+
+2. XOSがインストールされている場合は、ファイル名を自動認識します。 ファイル名が自動的に認識されない場合は、XOS*whatap.conf*パイルに`slow_query=`に設定します。
+
+### AWS RDS/Aurora環境
+
+AWS RDS/Aurora環境はXOSエージェントをインストールできないので、**DBXエージェント設定**または**クラウド設定**により、スロー クエリを収集できます。
+
+- **DBXエージェントの設定**
+
+    AWS RDS/Aurora環境からスロークエリを収集するためにDBX whatap.confファイルに次のように設定します。
+
+  ```ini title="whatap.conf"
+  slow_query_log=on  # クラウド設定
+  cloud_watch=on
+  aws_region=
+  aws_arn=
+  cloud_watch_metrics=
+  cloud_watch_instance= 
+  ```
+
+- **クラウド設定**
+
+  <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" />メニューで提供されるガイドに従って実行すると、ユーザーのAWS環境で自動的にモニタリングリソースを生成し、スロークエリーデータを収集します. 別途の追加設定は必要ありません。 詳しい内容は、[次の文書](cloudsettings)を参照してください。
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### オンプレミス環境
+
+独自のサーバーで運用する場合、WhaTap의 DBX/XOS設定方式を使用します。 **DBXエージェントのインストール以外に、DBサーバーにXOSを必ずインストールする必要があります。** XOSエージェントの設定方法は[次の文書](agent-xos-settings)を参考にしてください。
+
+1. DBX*whatap.conf*ファイルに'slow_query_log=on'オプションを追加します。 
+
+   - **slow_query_log** <span class='type'>Boolean</span>\
+       スロークエリーロギング機能を活性化(`on`)するか、非活性化(`off`)します。 PostgreSQLのデフォルト値は`off`です。 
+
+2. XOSがインストールされている場合は、ファイル名を自動認識します。 ファイル名が自動的に認識されない場合は、XOS*whatap.conf*パイルに`slow_query=`に設定します。
+
+### AWS RDS/Aurora環境
+
+AWS RDS/Aurora環境はXOSエージェントをインストールできないので、**クラウド設定**により、スロー クエリを収集できます。 
+
+<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" />メニューで提供されるガイドに従って実行すると、ユーザーのAWS環境で自動的にモニタリングリソースを生成し、スロークエリーデータを収集します. 別途の追加設定は必要ありません。 詳しい内容は、[次の文書](cloudsettings)を参照してください。
+
+:::note
+
+PostgreSQLはDBXエージェント設定方式に対応していません。 クラウド設定メニューを活用すると、CloudWatch指標とともにスロークエリーデータを収集できます。
+
+:::
+
+</InDoc>

@@ -1,0 +1,25 @@
+---
+id: agent-xos-settings
+title: XOSエージェント設定
+description: データベースサーバーのリソースを追加でモニタリングするための設定方法を提供します。
+keywords:
+  - SAP ASE
+  - データベースモニタリング
+  - XOSエージェント
+---
+
+import Dbagentxossettingsdesc from "../common-items/_db-agent-xos-settings-desc.mdx";
+import Dbxoswhatapconf from "../common-items/_db-xos-whatap-conf.mdx";
+import Dbxosconf from "../common-items/_db-xos-conf.mdx";
+import FileOptNote from '../common-items/_import_v2-file-option-note.mdx';
+import Dbrunxos from "../common-items/_db-run-xos.mdx";
+
+<Collection docs={
+  [
+    {Topic: Dbagentxossettingsdesc, props: {desc: '개요'}},
+    {Topic: Dbxoswhatapconf, props: {desc: 'whatap.conf 파일 설정'}},
+    {Topic: Dbxosconf, props: {desc: 'xos.conf 파일 설정'}},
+    {Topic: FileOptNote, props: {desc: 'V2 Note', ver: '2.3.3'}},
+    {Topic: Dbrunxos, props: {desc: 'XOS 에이전트 실행'}},
+  ]}
+/>
