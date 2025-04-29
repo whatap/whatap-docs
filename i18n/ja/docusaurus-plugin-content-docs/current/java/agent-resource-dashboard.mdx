@@ -1,0 +1,173 @@
+---
+id: agent-resource-dashboard
+title: Agent別のリソースダッシュボード
+description: エージェント別のリソースダッシュボードを案内します。
+keywords:
+  - Java
+  - ダッシューボード
+  - アプリケーション
+---
+
+ホーム画面 &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_agentResourceDashboard" className="uitext" />
+
+:::note 
+
+**要求事項**
+
+WhaTap Javaエージェントの2.2.39バージョン以降が必要です。 
+
+:::
+
+<Cmdname sid="side_agentResourceDashboard" className="uitext" />メニューで個別のJavaエージェントのメモリ、トランザクション、スレッドなどの主要指標をリアルタイムでモニタリングし、最大3時間前の過去の時点まで照会できます。 これにより、メモリ使用量の変化、活性化されたトランザクション、実行中のスレッド情報を把握し、リソースの問題を引き起こす原因を分析できます。
+
+<ImgLang img="apm-java-agent-resource-dashboard.png" desc="Agent Resource Dashboard" />
+
+## 基本画面
+
+<Cmdname sid="side_agentResourceDashboard" className="uitext" />により、現在実行中のエージェントのメモリプール状態と関連指標の変化の推移を一目で確認できます。 ダッシュボードで確認できるリアルタイムのJavaメモリ領域及び主な指標は次のとおりです。
+
+### ウィジェット案内
+
+#### リアルタイムJavaメモリ領域ウィジェット
+
+<Cmdname sid="TTL09121" className="uitext" />ウィジェットを通じてJVMの主要メモリプールの状態をリアルタイムで確認できます。 各Javaメモリ領域チャートは、使用中の容量(MB)と比率(%)を表示します。
+
+{/* 다음 각 자바 메모리 영역 차트는 사용 중인 용량(MB)과 비율(%)을 표시하며, 100%에 가까울수록 해당 영역에 대한 모니터링이 필요합니다. */}
+
+- ***Metaspace***
+
+  クラスメタデータを保存する領域です。 
+
+- ***CodeHeap non-profiled nmethod***, ***CodeHeap profiled nmethod***, ***CodeHeap non-nmethods***
+
+  JIT(Just-In-Time)コンパイラが生成したマシンコードを保存する領域であり、***CodeHeap non-profiled nmethod***、***CodeHeap profiled nmethod***、***CodeHeap non-nmethods***は、それぞれコンパイルされたコードを用途に応じて区切って保管します。
+
+- ***G1 Survivor Space***
+
+  G1 GCで生き残ったオブジェクトが一時的に保存される領域です。
+
+- ***G1 Eden Space***
+
+  新しく作成されたオブジェクトが最初に割り当てられる領域です。
+
+- ***G1 Old Gen***
+
+  Young GCを経て、生き残ったオブジェクトが移動する領域です。 メモリが増加した場合、Old Genを中心にリークが発生しているかを確認できます。
+
+- ***Compressed Class Space***
+
+  クラス関連のポインタを圧縮して保存する領域で、Metaspaceとは別に管理されます。
+
+:::note 
+
+- ![個別イコライザーアイコン](/img/ic-equalizer-chart.svg)個別チャート: 各指標を別の棒形式で表示し、指標ごとに最大値を明確に比較できます。 
+
+- ![統合イコライザーアイコン](/img/ic-bar-chart.svg)統合チャート: 全体に対する各指標の相対的な大きさを一目で把握できます。
+
+- ![ドーナツチャートアイコン](/img/ic-pie-chart.svg)ドーナツチャート: 全体を円形の割合で表現し、各指標が占める割合を確認できます。 
+
+- ![マルチラインチャートアイコン](/img/ic-multiline-chart2.svg)マルチラインチャート: 全指標の推移を確認できます。 
+
+:::
+
+#### 主要指標ウィジェット
+
+<Columns>
+<Column className="text--left width--60">
+
+- ***Memory***
+
+  全体メモリ使用率(%)を表示します。 Eden、Old Gen、Metaspaceなど内部構成を総合した総使用量です。
+
+- ***CpuTime***
+
+  JVMがアプリケーションコードの実行に費やされたCPU時間をミリ秒(ms)単位で示します。 
+
+- ***GCCount***, ***GCOldgenCount***
+
+  ***GCCount***は、一定周期内に発生したGC回数、***GCOldgenCount***は、Old領域を対象としたGC回数のみ別途集計します。
+
+- ***GCTime***
+
+  Garbage Collectionに費やされた時間をms単位で表示します。 
+
+</Column>
+<Column className="text--left">
+
+- ***Cpu***
+
+  JVMプロセスのCPU使用率(%)を示します。
+
+- ***TPS***
+
+  1秒あたりのトランザクション処理回数を表示します。 
+
+- ***FileDescriptor***
+
+  開いているファイルやソケットなど、現在使用中のファイルディスクリプターの数を示します。
+
+- ***ObjectPendingFinalizationCount***
+
+  GCが処理すべきオブジェクトが`finalize()`待機状態のまま残っている個数を表示します。 
+
+</Column>
+</Columns>
+
+### リアルタイム照会
+
+リアルタイム照会時、上段右側の<Cmdname sid="heap_histogram" className="uitext" />、<Cmdname sid="active_transaction" className="uitext" />、<Cmdname sid="BTN09457" className="uitext" />ボタンを通して<Cmdname sid="TTL09459" className="uitext" />パネルを確認できます。 
+
+<ImgLang img="apm-java-agent-resource-dashboard-resource.png" desc="Agent Resource Dashboard Realtime" />
+
+#### <Cmdname sid="heap_histogram" className="uitext" />
+
+<Cmdname sid="heap_histogram" className="uitext" />タブで現在ヒープメモリに常駐しているJavaクラスの情報を分析し、メモリを最も多く占めるクラスTOP100を照会できます。 過度にメモリを占有するクラスがある場合、メモリリークの可能性が疑われます。
+
+#### <Cmdname sid="active_transaction" className="uitext" />
+
+<Cmdname sid="active_transaction" className="uitext" />タブで実行中のトランザクションのリストを照会できます。 開始時刻、トランザクション経過時間、SQL/HTTP呼び出しなどの詳細情報を確認できます。 特定のトランザクションが時間がかかるか、リソースを大量に使用しているかを確認することで、ボトルネック区間を特定できます。
+
+#### <Cmdname sid="BTN09457" className="uitext" />
+
+<Cmdname sid="BTN09457" className="uitext" />タブで現在JVMでRunnable状態のスレッドリストをリアルタイムで確認できます。 CPU使用量が高くなったり、レスポンスが遅れたりする場合、どのスレッドが問題を引き起こすかを把握するのに役立ちます。
+
+### 過去時点照会
+
+タイムセレクターは、過去の特定時点を選択した後、その時点のリソースの状態を確認できます。 最大3時間前のリソース状態を照会し、その時点で発生したトランザクション、SQL、HTTP呼び出し情報を分析できます。 これにより、CPUやメモリ使用量が急騰したり、TPSが急減した時点の原因を効果的に追跡できます。
+
+<Columns>
+<Column className="text--left width--40">
+<ImgLang img="apm-java-agent-resource-dashboard-history.png" desc="History Data sc" />
+</Column>
+<Column className="text--left width--60">
+過去の時点を照会する際、上段右側の<Cmdname sid="transaction" className="uitext" />、<Cmdname sid="statistics_sql" className="uitext" />、<Cmdname sid="BTN09458" className="uitext" />ボタンをクリックすると、各上位30個の統計情報が確認できる<UI>統計Top 30</UI>パネルを照会できます。 
+</Column>
+</Columns>
+
+<ImgLang img="apm-java-agent-resource-dashboard-stat.png" desc="Agent Resource Dashboard History" />
+
+#### <Cmdname sid="transaction_statistics" className="uitext" />
+
+<Cmdname sid="transaction" className="uitext" />タブで特定時点に行われたトランザクションをレスポンスタイム、実行回数などの条件でソートし、上位30個のリストを照会できます。 レスポンスタイムが長いか、実行回数が多い項目を優先的に確認できます。
+
+:::note 
+
+**<Cmdname sid="TTL06975" />照会設定**
+
+過去時点のトランザクション統計で<Cmdname sid="TTL06975" className="uitext" />項目が表示されない場合は、次のオプションを活性化有無を確認します。 ただし、このオプションは平均TPSが高いアプリケーションでは性能の影響が発生する可能性があるため、**平均TPS 300 以下の環境**でのみ適用をお勧めします。
+
+- **trace_malloc_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  トランザクションごとの平均メモリ割当量を収集します。
+
+:::
+
+#### <Cmdname sid="statistics_sql" className="uitext" />
+
+<UI>SQL</UI>タブで特定の時点で実行されたSQLクエリを実行回数、全体時間などのソート条件によって上位30個のリストを照会できます。 DB負荷が増加した場合、同一時点で実行されたSQLクエリの中で高いコストを占めるクエリを把握できます。
+
+#### <Cmdname sid="BTN09458" className="uitext" />
+
+<UI>HTTPC</UI>タブで外部HTTP呼び出し情報をソートして上位30個のリストを照会できます。 外部APIや内部HTTPリクエストが多い時点でボトルネック発生有無を確認できます。

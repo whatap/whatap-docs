@@ -1,0 +1,29 @@
+---
+id: python-1_7_7
+title: Python Agent v1.7.7
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_7_6
+displayed_sidebar: releaseSidebar
+---
+
+2025年03月11日
+
+- <Status priority='1'>New</Status> *whatap.conf*で、WhaTapモジュールのログ出力制御オプションを追加
+
+  - **ignore_whatap_stdout** <span class='type'>Boolean</span>
+
+    既定値`false`
+
+    `true`に設定すると、WhaTap Pythonエージェントモジュールで発生するすべての標準出力ログを非活性化します。
+
+- <Status priority='0'>Fixed</Status>環境変数`OKIND`設定後、マルチトランザクション追跡時にエラー発生問題を修正
+
+- <Status priority='0'>Fixed</Status> SQL Connectionが2つ以上の場合`execute`実行時にDBモニタリングエラーを改善
+
+- <Status priority='0'>Fixed</Status> `sqlalchemy`で`aiomysql`使用時にクエリのバインディング変数が表示されない問題を修正
+
+:::note
+
+Agent download: [whatap-python v1.7.7](https://pypi.org/project/whatap-python/1.7.7/)
+
+:::
