@@ -1,0 +1,18 @@
+---
+id: java-2_2_56
+title: Java Agent v2.2.56
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_55
+displayed_sidebar: releaseSidebar
+---
+
+April 9, 2025
+
+<Status priority='1'>New</Status> Added the feature to trace using a separate transaction when calling methods with the `spring async-annotation` (`org.springframework.scheduling.annotation.Async`).
+
+- Used by adding the spring-boot setting.
+
+  ```bash
+  # example using spring-boot-2.5.10
+  weaving=spring-boot-2.5
+  ```

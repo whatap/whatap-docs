@@ -1,6 +1,6 @@
 ## Account creation {#uid}
 
-<Xclude product="db2">
+<Xclude product="db2,sapase">
 
 Create an account with roles required for database monitoring. Log in with the root account and then create accounts.
 
@@ -155,6 +155,52 @@ GRANT SELECT ON TABLE SYSIBMADM.MON_LOCKWAITS TO USER {DB_User};
 
 </InDoc>
 
+<InDoc product="sapase">
+
+In SAP ASE, you must create a separate user account in the database, and then add the login account and grant roles.
+
+1. Create a login account.
+
+   ```sql
+   sp_addlogin '{login}','{Password}'
+   go
+   ```
+
+2. Register the created login account as a database user.
+
+   ```sql
+   use {db}
+   go
+   sp_adduser '{login}','{user}'
+   go
+   ```
+
+3. Grant the user the necessary roles.
+
+   ```sql
+   --Default monitoring permissions
+   grant role mon_role to {login}
+   go
+
+   --kill session permission
+   grant role sa_role to {login}
+   go
+   ```
+
+4. Set the parameters required to enable the monitoring.
+
+   ```sql
+   sp_configure 'enable monitoring', 1
+   sp_configure 'wait event timing', 1
+   sp_configure 'max SQL text monitored', 1024
+   sp_configure 'SQL batch capture', 1
+   sp_configure 'per object statistics active', 1
+   sp_configure 'statement statistics active', 1
+   sp_configure 'object lockwait timing', 1
+   ```
+
+</InDoc>
+
 <InDoc product="oracle,oracle-pro">
 
 - In general cases
@@ -262,7 +308,7 @@ Instead of <code><span class="vslow">select any dictionary</span></code>, you ca
 
 :::note
 
-<Xclude product="postgresql,mysql,altibase,mssql,db2">
+<Xclude product="postgresql,mysql,altibase,mssql,db2,sapase">
 
 - To use the previous accounts, go to [Create DB User File](#create-db-user). If you do not have any permission, you may not be able to proceed with normal monitoring.
 
@@ -278,6 +324,20 @@ Instead of <code><span class="vslow">select any dictionary</span></code>, you ca
 
 </InDoc>
 
+<Xclude product="sapase">
+
 - Enter your password in `DB_Password` in the example code.
+
+</Xclude>
+
+<InDoc product="sapase">
+
+If you have an account with roles, skip this step and then proceed to [Next Step](#check-accesskey).
+
+- In the example code, `login` is the user authentication information to connect to the database server. `user` is the user account to use for a specific database. Change it to the desired user account name.
+
+- Enter your password in `Password` in the example code.
+
+</InDoc>
 
 :::

@@ -78,7 +78,15 @@ Copy the _xos_ directory to the database server, and then enter the agent server
 
   :::
 
-<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql,db2">
+<InDoc product='mysql,postgresql'>
+
+- **slow_query** <span class='type'>String</span>
+
+  It collects slow queries from the database. If XOS is installed on the monitored DB but does not automatically recognize the file name, set `slow_query=` in the XOS _whatap.conf_ file.
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql,db2,sapase">
 
 - **file** <span class='type'>String</span>
 
@@ -162,6 +170,17 @@ Copy the _xos_ directory to the database server, and then enter the agent server
   For more information about the log file location in IBM DB2, see the [following link](https://www.ibm.com/docs/db2/11.1?topic=parameters-logpath-location-log-files).
 
   :::
+
+  </InDoc>
+
+  <InDoc product='sapase'>
+
+  See the following example:
+
+  ```ini title='xos.conf'
+  # example
+  file=/opt/sap/ase-12_5/install/instance1.log
+  ```
 
   </InDoc>
 

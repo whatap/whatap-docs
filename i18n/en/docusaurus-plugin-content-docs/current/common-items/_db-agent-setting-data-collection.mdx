@@ -84,7 +84,7 @@
 
 </InDoc>
 
-<Xclude product='redis,mongodb,oracle,oracle-v1,altibase,db2'>
+<Xclude product='redis,mongodb,oracle,oracle-v1,altibase,db2,sapase'>
 
 - **tables_hour** <span class='type'>Int</span>
 
@@ -130,7 +130,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb,altibase,mssql,db2'>
+<Xclude product='cubrid,redis,mongodb,altibase,mssql,db2,sapase'>
 
 - **replication_name** <span class='type'>String</span>
 
@@ -178,7 +178,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb,db2'>
+<Xclude product='cubrid,redis,mongodb,db2,sapase'>
 
 - **skip_whatap_session** <span class='type'>Int</span>
 
@@ -345,13 +345,29 @@
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,db2">
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,db2,sapase">
 
 - **xview_min_sec** <span class='type'>Int</span>
 
   Default `0`
 
   When collecting xview, collection is performed only when the query execution time is longer than the set time. The default setting is to collect all queries whose execution time is longer than 0 seconds.
+
+</InDoc>
+
+<InDoc product="sapase">
+
+- **include_cpu_io** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It sets whether to include the `io_busy` value when collecting CPU data.
+
+- **check_suspect_db_interval** <span class='type'>Second</span>
+
+  Default `60` (unit: second)
+
+  Set the cycle for the agent to collect Suspect DB.
 
 </InDoc>
 

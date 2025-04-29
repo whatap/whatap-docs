@@ -6,6 +6,24 @@ start.bat
 
 After confirming that there are no errors in the execution log displayed on the screen and terminating the execution, register for the service in the following order.
 
+<InDoc product="postgresql,oracle,mysql,mssql,cubrid,altibase,db2">
+
+:::note
+
+**How to fix missing of msvcp120.dll and msvcr120.dll**
+
+If you cannot run the xos agent because the *msvcp120.dll* and *msvcr120.dll* files are missing, it is because Microsoft Visual C++ 2013 Redistributable 2013 is not installed or is corrupted. You can resolve this issue by installing the **Microsoft Visual C++ 2013 Redistributable Package**.
+
+Download and install the package that matches the system environment from the following link.\
+[Microsoft Visual C++ 2013 Redistributable (x86 & x64)](https://www.microsoft.com/ko-kr/download/details.aspx?id=40784)
+
+- **vcredist_x86.exe**: For running 32-bit applications
+- **vcredist_x64.exe**: For running 64-bit applications
+
+:::
+
+</InDoc>
+
 - **Service registration**
 
   Register in the service by running the *install_WindowsService.bat* file in the xos folder as follows. If you do not enter a name after the `create` option, the service is registered by default with the name of **WhatapXOSAgent**.

@@ -15,7 +15,19 @@ The PHP application server's functions can be controlled.
 
   Default `true`
 
-  The statistics tracing is enabled. The statistical data includes transactions, SQLs, HTTP calls, user agents, and client IPs that are collected every 5 minutes.
+  Statistical data such as transactions, SQL, HTTPCALL, UserAgent, and client IP collected in every 5 minutes are applicable.
+
+- **whatap.stat_ipurl_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Among the side menus of the project, the <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statIp" className="uitext" /> menu sets whether or not to collect the statistics data. 
+
+  :::note 
+
+  Please see [Next document](/php/analysis-apm-trs#statiptx).
+
+  :::
 
 - **whatap.license** <span class='type'>String</span>
 

@@ -1,0 +1,60 @@
+---
+id: metrics-data-list
+title: SAP ASE metrics
+description: It guides you to SAP ASE database metrics.
+keywords:
+  - SAP ASE
+  - Metrics
+  - DATABASE
+  - Database Monitoring
+---
+
+Database metrics are a comprehensive collection of database workloads and resource usages. The WhaTap monitoring service continuously collects metrics to identify bottlenecks in the database and provides data to help identify the root causes of performance issues.
+
+<div className="metricslist">
+
+import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
+
+<AgentStatus />
+
+## db_sap_ase_counter {#db_sap_ase_counter}
+
+### Field {#db_sap_ase_counter-filed}
+
+The following lists the fields that are collected in the `db_sap_ase_counter` category.
+
+| Metrics                 | Description                                                                                                        | Category    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------- |
+| `active_sessions`       | Number of sessions running queries                                                                                 | Connection  |
+| `total_sessions`        | Total number of connected sessions, Number of active inbound connections                                           | Connection  |
+| `connect_error`         | Counted number when the agent failed to access the database                                                        | Connection  |
+| `total_elapse_time`     | Sum of execution times of active sessions                                                                          | Performance |
+| `long_running_sessions` | Number of sessions running for more than the long running time (default:10 seconds)                                | Performance |
+| `lock_wait_sessions`    | Number of sessions waiting for lock, where the BlockingSPID queried in active sessions is greater than 0.          | Performance |
+| `max_connections`       | Maximum number of connectable sessions                                                                             | Connection  |
+| `BytesReceived`         | Received bytes, value of monNetworkIO                                                                              | Network     |
+| `BytesSent`             | Transmitted bytes, value of monNetworkIO                                                                           | Network     |
+| `cpu`                   | @@cpu_busy+@@io_busy value as CPU usage (unit: pct)                                                                | Performance |
+| `cpu_cores`             | Number of CPU cores                                                                                                | Info        |
+| `Reads`                 | Number of reads from the device (excluding APF), Reads value of monDeviceIO                                        | IO          |
+| `IOTime`                | IOTime value of monDeviceIO as the total time (unit: ms) spent waiting for the I/O request to be satisfied.        | IO          |
+| `Writes`                | Writes value of monDeviceIO as the number of writes to the device                                                  | IO          |
+| `LockRequests`          | Number of lock requests for objects                                                                                | Throughput  |
+| `LogicalReads`          | Total number of cases where buffer was searched from the buffer cache without reading from disk                    | IO          |
+| `Operations`            | Number of accesses to objects, value of monOpenObjectActivity                                                      | Throughput  |
+| `PacketsReceived`       | Received packet count, value of monNetworkIO                                                                       | Network     |
+| `PacketsSent`           | Transmitted packet count, value of monNetworkIO                                                                    | Network     |
+| `PagesRead`             | Number of read pages                                                                                               | IO          |
+| `PagesWritten`          | Number of pages written to disk                                                                                    | IO          |
+| `PhysicalReads`         | Number of buffers read from disk                                                                                   | IO          |
+| `PhysicalWrites`        | Number of buffers written to disk                                                                                  | IO          |
+| `RowsDeleted`           | Number of deleted rows                                                                                             | Throughput  |
+| `RowsInserted`          | Number of inserted rows                                                                                            | Throughput  |
+| `RowsUpdated`           | Number of modified rows                                                                                            | Throughput  |
+| `UsedCount`             | Number of cases where objects were used in the execution plan, as determined by the value of monOpenObjectActivity | Throughput  |
+
+import Xosmetrics from "../common-items/_db-xos-metrics.mdx";
+
+<Xosmetrics />
+
+</div>
