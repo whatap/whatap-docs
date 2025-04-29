@@ -10,7 +10,7 @@ keywords:
   - Out Of Memory
 ---
 
-ホーム画面 > プロジェクト選択 > <Cmdname sid="side_container" className="uitext" /> > <Cmdname sid="side_oomContainer" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_container" className="uitext" /> &gt; <Cmdname sid="side_oomContainer" className="uitext" />
 
 <Cmdname sid="side_oomContainer" className="uitext" />メニューを通じて**Out Of Memory**(**OOM**)が発生したコンテナをすばやく検索し、その時点でのメモリ使用量の変化の推移を確認できます。変化の推移は急激または漸進的である可能性があります。これを確認し、適切なPOD数とメモリの臨界点に対する客観的な判断が可能です。
 
@@ -28,36 +28,39 @@ keywords:
 
 - 左上のタイムセレクターをクリックして照会したい時間帯を選択できます。最大2日まで照会できます。
 
-- OOM Killedコンテナ情報をリスト形式で提供します。詳細については、以下の案内を参考にしてください。
+- 右上の検索入力画面でコンテナ名を入力すると、照会したい特定のコンテナ情報をすばやく確認できます。
+
+- リストの右の![詳細アイコン](/img/ic-static.svg)詳細アイコンをクリックすると、選択したコンテナのメモリ使用の推移を確認できます。 
+
+- OOMが発生したコンテナ情報をリスト形式で提供します。コンテナの詳細については、次のガイドを参照してください。
 
 ### OOM Killedコンテナ情報
 
 <Cmdname sid="side_oomContainer" className="uitext" />メニューで提供するカラム情報を次のように案内します。
 
-| カラム                     | 意味                                 |
-| ----------------------- | ---------------------------------- |
-| **_OomKilledAt_**       | Out Of Memory Killedが発生したTimeStamp |
-| **_name_**              | コンテナ名                              |
-| **_podName_**           | コンテナが属するPod名                       |
-| **_containerId_**       | コンテナのID                            |
-| **_created_**           | コンテナが生成されたTimeStamp                |
-| **_command_**           | コンテナの実行コマンド                        |
-| **_imageName_**         | コンテナのイメージ名                         |
-| **_onodeName_**         | コンテナが動作しているノード名                    |
-| **_state_**             | コンテナ状態                             |
-| **_memLimit_**          | コンテナのメモリLimitサイズ                   |
-| **_namespace_**         | コンテナのPodが属するnamespace名             |
-| **_memory_workingset_** | コンテナで非活性化されているメモリを除いて実際に使用中のメモリ    |
-| **_microOname_**        | コンテナで実行中のアプリケーション名                 |
+| カラム                   | 意味                                 |
+| --------------------- | ---------------------------------- |
+| **_OomKilledAt_**     | Out Of Memory Killedが発生したTimeStamp |
+| **_ContainerName_**   | コンテナ名                              |
+| **_ContainerId_**     | コンテナのID                            |
+| **_Pod_**             | コンテナが属するPod名                       |
+| **_ApplicationName_** | コンテナで実行中のアプリケーション名                 |
+| **_Created_**         | コンテナが生成されたTimeStamp                |
+| **_Command_**         | コンテナの実行コマンド                        |
+| **_Image_**           | コンテナのイメージ名                         |
+| **_Namespace_**       | コンテナのPodが属するネームスペースの名前             |
+| **_Node_**            | コンテナが動作しているノード名                    |
+| **_MemLimit_**        | コンテナのメモリLimitサイズ                   |
+| **_MemWs_**           | コンテナで非活性化されているメモリを除いて実際に使用中のメモリ    |
 
 :::note 
 
-- **_podName_**をクリックすると[Pod一覧](/kubernetes/resource-pod-list)メニューに移動します。 
+- **_ContainerId_**をクリックすると[コンテナ一覧](/kubernetes/resource-container-list)メニューに移動します。
 
-- **_containerId_**をクリックすると[コンテナ一覧](/kubernetes/resource-container-list)メニューに移動します。
+- **_Pod_**をクリックすると[Pod一覧](/kubernetes/resource-pod-list)メニューに移動します。 
 
-- **_onodeName_**をクリックすると[ノード一覧](/kubernetes/resource-node-list)メニューに移動します。 
+- **_ApplicationName_**クリックすると、該当アプリケーションが検索された[コンテナアプリケーションリスト](/kubernetes/resource-application-list)メニューに移動します。 
 
-- **_microOname_**クリックすると、該当アプリケーションが検索された[コンテナアプリケーションリスト](/kubernetes/resource-application-list)メニューに移動します。 
+- **_Node_**をクリックすると[ノード一覧](/kubernetes/resource-node-list)メニューに移動します。 
 
 :::

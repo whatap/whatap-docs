@@ -64,26 +64,26 @@ crowdin download -b main -l en-US
 정규표현식 찾아 바꾸기
 
 * /\\_([a-z]) -> /_$1
-* ^\{/_ -> {/*
-* \{/_ -> {/*
+* ^\{/* -> {/*
+* \{/* -> {/*
 * ^\{\/\\\* -> {/*
 * _\/\}$ -> */}
 * _\}$ -> */}
 * \\\*\/\} -> */}
 * \{(duration: .+)\} -> \{$1\}
-* <!---->\n\n -> (빈값으로 변경)
+* \n\n -> (빈값으로 변경)
 * i18n/en/docusaurus-plugin-content-docs/current/server/set-event-format.mdx
   * (\$)\{([^>]+?)\} -> $1\{$2\}
 
 일반 찾아바꾸기
 
-- {/\* -> {/*
+- {/* -> {/*
 - : \_ -> : _
-- \[ -> [
+- [ -> [
 - \: -> :
-- _/} -> */}
+- */} -> */}
 - &amp;gt; -> &gt;
-- ~!@#$%^&\*()\_+=-\[]\` -> ~!@#$%^&*()_+=-[]`
+- ~!@#$%^&\*()\_+=-[]\` -> ~!@#$%^&*()_+=-[]`
 - <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
 - <code>${Tag}</code> -> <code>&#36;&#123;Tag&#125;</code>
 - <code>${Field}</code> -> <code>&#36;&#123;Field&#125;</code>
@@ -122,11 +122,11 @@ code(```) sql title='에이전트별 액티브TX 건수, <구간별> 건수, 최
 
 일본어 찾아 바꾸기
 
-_yaml_ -> *yaml*
-_helm_ -> *helm*
-_values.yaml_ -> *values.yaml*
-_whatap.conf_ -> *whatap.conf*
-_security.conf_ -> *security.conf*
-_paramkey.txt_ -> *paramkey.txt*
-_/whatap/logs_ -> */whatap/logs*
-_logs/whatap-`{boot、またはinstall}`-yyyymmdd.log_ -> *logs/whatap-`{boot、またはinstall}`-yyyymmdd.log*
+*yaml* -> *yaml*
+*helm* -> *helm*
+*values.yaml* -> *values.yaml*
+*whatap.conf* -> *whatap.conf*
+*security.conf* -> *security.conf*
+*paramkey.txt* -> *paramkey.txt*
+*/whatap/logs* -> */whatap/logs*
+*logs/whatap-`{boot、またはinstall}`-yyyymmdd.log* -> *logs/whatap-`{boot、またはinstall}`-yyyymmdd.log*

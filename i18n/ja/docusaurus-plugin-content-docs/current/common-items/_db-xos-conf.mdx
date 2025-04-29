@@ -78,7 +78,15 @@
 
   :::
 
-<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql,db2">
+<InDoc product='mysql,postgresql'>
+
+- **slow_query** <span class='type'>String</span>
+
+  データベースのスロークエリを収集します。モニタリング対象DBにXOSがインストールされているものの、ファイル名を自動的に認識できない場合は、XOS *whatap.conf*ファイルに`slow_query=`と設定します。
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,redis,mongodb,oracle,altibase,cubrid,mssql,db2,sapase">
 
 - **file** <span class='type'>String</span>
 
@@ -162,6 +170,17 @@
   IBM DB2におけるログファイル場所の詳細は[次のリンク](https://www.ibm.com/docs/db2/11.1?topic=parameters-logpath-location-log-files)を参照してください。
 
   :::
+
+  </InDoc>
+
+  <InDoc product='sapase'>
+
+  次の例を参照にしてください。
+
+  ```ini title='xos.conf'
+  # example
+  file=/opt/sap/ase-12_5/install/instance1.log
+  ```
 
   </InDoc>
 

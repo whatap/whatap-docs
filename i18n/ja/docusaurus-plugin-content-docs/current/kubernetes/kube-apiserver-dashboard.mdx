@@ -10,19 +10,19 @@ keywords:
 toc_max_heading_level: 2
 ---
 
-ホーム画面 > クラスタープロジェクト選択 > **_クラスター_** > **_kube-apiserverダッシュボード_**
+ホーム画面&gt;クラスタープロジェクト(<code class='my'>CP</code>)選択&gt; <Cmdname sid="side_controlPlane" className="uitext" /> &gt; <Cmdname sid="side_kubeApiserverDashboard" className="uitext" /> 
 
 import K8skubeapiservercommon from "../common-items/_k8s-kube-apiserver-common.mdx";
 
 <K8skubeapiservercommon />
 
-kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 **_kube-apiserverダッシュボード_**メニューを通じてkube-apiserverの状態と性能メトリクスを収集した後、kube-apiserverのリスポンスタイム、処理量、リクエストの失敗などを追跡し、クラスターの可用性と性能を簡単にモニタリングできます。
+kube-apiserverは、**コントロールプレーン**(Control Plane) 内外部のリクエストを処理するコンポーネントです。 <Cmdname sid="side_kubeApiserverDashboard" className="uitext" />メニューを通じてkube-apiserverの状態と性能メトリックを収集した後、kube-apiserverのレスポンスタイム、処理量、リクエスト失敗などを追跡し、クラスターの可用性と性能を簡単にモニタリングできます。
 
 ## 基本画面ガイド
 
 <ImgLang img='k8s-kube-apiserver.png' desc='kube-apiserver ダッシュボード'/>
 
-**_kube-apiserverダッシュボード_**メニューは、直近1時間のkube-apiserverの主要な指標を1分周期で反映します。 以下の指標を確認することができます。 指標詳細は、下段の[メトリクス案内](#kube-apiserever-metric)を参考にしてください。
+<Cmdname sid="side_kubeApiserverDashboard" className="uitext" />メニューは最近1時間のkube-apiserver主要指標を1分周期で反映します。 以下の指標を確認することができます。 指標詳細は、下段の[メトリクス案内](#kube-apiserever-metric)を参考にしてください。
 
 - クラスタの負荷と使用量をモニタリングするために、メソッド、リソース、リスポンスコードごとのリクエスト回数の状況と推移を提供します。 
 

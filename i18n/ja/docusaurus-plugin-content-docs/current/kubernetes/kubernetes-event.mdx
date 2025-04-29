@@ -11,18 +11,9 @@ displayed_sidebar: kubeSidebar
 toc_max_heading_level: 2
 ---
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />
 
 WhaTap<Cmdname sid="side_kubeEventList" className="uitext" />メニューを通じて、コマンドなしでKubernetesイベントに対する様々な照会と検索が可能です。 ユーザーのクラスターイベントを確認でき、時間セレクタを通じて過去のイベントも照会できます。 
-
-{/* 
-Kubernetesイベント数の推移をタイプ別に確認し、各原因
-
-WhaTap<Cmdname sid="side_kubeEventList" className="uitext" />メニューを通じて、コマンドなしで簡単にKubernetesイベントを照会できます。 
-
-プロジェクト単位でKubernetesイベント数の推移をタイプ別に確認し 
-
-このメニューは簡単なフィルタリングを通じて、希望するイベントタイプを素早く確認でき、過去に発生したイベントも簡単に照会できます。 */}
 
 <ImgLang img='k8s-kuber-event.png' desc='クーバーネティスイベント'/>
 
@@ -77,13 +68,13 @@ WhaTap<Cmdname sid="side_kubeEventList" className="uitext" />メニューを通�
 
 :::note 
 
-現在<span class='slow'>Warning</span>タイプの***BackOff***, ***NodNotReady***イベントのみが提供される機能です。 
+現在<span class='slow'>Warning</span>タイプの**_BackOff_**, **_NodNotReady_**イベントのみが提供される機能です。 
 
 :::
 
 ### 隣接ログ
 
-選択したイベントの発生時点に基づいて、隣接するログを確認できます。 時間選択ボタンにより、希望の隣接範囲を設定できます。
+選択したイベント発生時点を基準に隣接したログ照会を通じてイベント発生前後の脈絡を確認できます。 時間選択ボタンにより、希望の隣接範囲を設定できます。
 
 :::note 
 
@@ -97,4 +88,8 @@ WhaTap<Cmdname sid="side_kubeEventList" className="uitext" />メニューを通�
 
 ### イベントタイムライン
 
-選択したイベントの対象(**_Kind_**)が生成してから現在までに発生したすべてのイベントをタイムライン形式で提供します。 これにより、対象のイベント履歴を一目で把握できます。
+選択したイベントの対象(**_Kind_**)が生成してから現在までに発生したすべてのイベントをタイムライン形式で提供します。 これにより、対象のイベント履歴を一目で把握できます。 これにより、対象リソースの生成、正常動作、警告発生、復旧など、ライフサイクル全般を一目で把握できます。
+
+### 要約分析
+
+イベントが発生した対象であるPodまたはNodeの性能と資源状態を一目で把握できるように要約情報を提供します。 

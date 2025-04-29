@@ -89,6 +89,16 @@
 
    </InDoc>
 
+   <InDoc pages="milvus-introduction">
+
+   次のコマンドを実行してユーザー環境を自動的に認識した後、Milvusがインストールされたサーバーにインストールスクリプトを生成します。
+
+   ```bash
+   curl http://repo.whatap.io/telegraf/feature/milvus/install_milvus_monitoring.sh -o install_milvus_monitoring.sh
+   ```
+
+   </InDoc>
+
 <Xclude pages="nginx-introduction,apache-introduction">
 
 3. エージェント設定および再起動後、**モニタリング**を**開始**します。  
@@ -135,6 +145,17 @@
    ```bash
    chmod +x install_vcenter_monitoring.sh
    sudo ./install_vcenter_monitoring.sh "x42u520ie21jb-z76vslonvu6qp8-x7dv18dj7fknuq" "15.165.146.117"
+   ```
+
+   </InDoc>
+
+   <InDoc pages="milvus-introduction">
+
+   WhaTapサーバーモニタリングエージェントとテレグラフサイドカーをインストールするために、次のコマンドを実行します。
+
+   ```bash
+   chmod +x install_milvus_monitoring.sh
+   sudo ./install_milvus_monitoring.sh "x434522kkhbtj-x5cv0fliua45of-zmgqva9eakmg9" "15.165.146.117"
    ```
 
    </InDoc>

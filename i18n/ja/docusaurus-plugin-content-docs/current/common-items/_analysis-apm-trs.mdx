@@ -184,7 +184,7 @@ stat_mtrace_enabled=true
 
 <InDoc product="php">
 
-```ini title='whatap.ini of \[front]'
+```ini title='whatap.ini of [front]'
 whatap.mtrace_rate=100
 whatap.mtrace_spec=v1
 whatap.stat_mtrace_enabled=true
@@ -223,6 +223,26 @@ whatap.stat_mtrace_enabled=true
 
 <Cmdname sid="filter" className="uitext" />オプションを通じてIPアドレスまたはトランザクションアドレスをフィルタリングし、条件に合うデータを素早く照会できます。特定のIPやトランザクションアドレスのパターンを分析する時に役立ちます。
 
+<InDoc product="php">
+
+IPトランザクション統計を収集するには、次のオプション設定が必要です。デフォルト値は`false`です。
+
+```ini title='whatap.ini'
+whatap.stat_ipurl_enabled=true
+```
+
+</InDoc>
+
+<InDoc product="java">
+
+IPトランザクション統計を収集するには、次のオプション設定が必要です。デフォルト値は`false`です。
+
+```ini title='whatap.conf'
+stat_ipurl_enabled=true
+```
+
+</InDoc>
+
 | カラム                          | 説明                                        |
 | ---------------------------- | ----------------------------------------- |
 | <Cmdname sid="ip" />         | リクエストを発生させたクライアントのIPアドレス                  |
@@ -245,7 +265,7 @@ whatap.stat_mtrace_enabled=true
 
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statReferer" className="uitext" />
 
-WhaTapエージェントは、Refererごとにトランザクション統計を収集できます。次のオプションを設定してください。
+WhaTapエージェントは、Refererごとにトランザクション統計を収集できます。次のオプションを設定してください。デフォルト値は`false`です。 
 
 <Xclude product="php">
 
@@ -335,7 +355,7 @@ HTTPおよびHTTPSプロトコルを使用して、５分間のアプリケー�
 | <Cmdname sid="timeMax_ms" /> | 最大応答時間                                                |
 | <Cmdname sid="TTL06915" />   | HTTPコール時間の標準偏差                                        |
 
-## クライアントIPリージョン別の呼び出し件数
+## クライアントIPの地域別呼び出し件数{#client_tx_stat}
 
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statRemote" className="uitext" />
 

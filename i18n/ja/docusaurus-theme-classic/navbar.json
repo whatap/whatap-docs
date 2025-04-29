@@ -295,8 +295,20 @@
     "message": "IBM DB2 モニタリング",
     "description": "Navbar item with label IBM DB2 모니터링"
   },
+  "item.label.SAP ASE 모니터링": {
+    "message": "SAP ASEモニタリング",
+    "description": "Navbar item with label SAP ASE 모니터링"
+  },
   "item.label.IBM DB2": {
     "message": "IBM DB2",
     "description": "Navbar item with label IBM DB2"
+  },
+  "item.label.SAP ASE": {
+    "message": "SAP ASE",
+    "description": "Navbar item with label SAP ASE"
+  },
+  "item.label.Network Management System": {
+    "message": "Network Management System",
+    "description": "Navbar item with label Network Management System"
   }
 }

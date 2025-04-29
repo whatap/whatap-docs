@@ -8,7 +8,7 @@
 
   エージェントが収集したデータを送信するWhaTap収集サーバーのIPアドレスを設定します。収集サーバーの冗長化で2つ以上のIPを所有する場合は、コンマ(,)を区切り文字として使用します。設定したIPアドレスには、収集サーバーproxyデーモンがリスニング状態でサービスされる必要があります。
 
-<Xclude product="oracle-pro">
+<Xclude product="oracle-pro,sapase">
 
 - **whatap.server.port** <span class='type'>String</span>
 
@@ -27,6 +27,28 @@
   :::
 
 </Xclude>
+
+<InDoc product="sapase">
+
+- **dbms** <span class='type'>String</span>
+
+  `sap_ase`
+
+  :::caution
+
+  別のオプション値を入力すると、モニティリングのデータ収集が正常に動作しない場合があります。
+
+  :::
+
+</InDoc>
+
+<InDoc product="oracle,postgresql,mssql,altibase,tibero,db2,sapase">
+
+- **db** <span class='type'>String</span>
+
+  接続するデータベース名です。
+
+</InDoc>
 
 <InDoc product="oracle-pro">
 

@@ -95,9 +95,20 @@ file=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLO
 
 </InDoc>
 
+<InDoc product='sapase'>
+
+次の例を参照にしてください。
+
+```ini title='xos.conf'
+# example
+  file=/opt/sap/ase-12_5/install/instance1.log
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid,mssql,db2'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid,mssql,db2,sapase'>
 
 適用する前に、XOSエージェントをインストールしてエージェント設定を行う必要があります。 詳細については、[次の文書](agent-xos-settings)を参照してください。
 
@@ -111,7 +122,7 @@ file=C:/Program Files/Microsoft SQL Server/MSSQL16.MSSQLSERVER/MSSQL/Log/ERRORLO
 
 :::
 
-<Xclude product="altibase,cubrid,db2">
+<Xclude product="altibase,cubrid,db2,sapase">
 
 ## AWS RDS Logに適用する
 

@@ -72,7 +72,7 @@ In most cases, the explicit type casting is required because objects are returne
 
 ### Writing the start time of the set method in the transaction trace
 
-1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
+1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in *whatap.conf*.
 
    ```ini title='$WHATAP_HOME/whatap.conf'
    hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
@@ -95,7 +95,7 @@ Display the method start time in the transaction trace as follows.
 
 ### Recording the set method's end time and execution time in the transaction trace
 
-1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in _whatap.conf_.
+1. Write the method to apply in the Java agent's `hook_trace_helper_patterns` option in *whatap.conf*.
 
    ```ini title='$WHATAP_HOME/whatap.conf'
    hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*

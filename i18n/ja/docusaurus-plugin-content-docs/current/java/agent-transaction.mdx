@@ -156,3 +156,17 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
   既定値`false`
 
   `weblogic.net.http.HttpURLConnection`クラスのメソッドの最初の呼び出し時にも追跡できるように設定できます。
+
+## メモリ割当量の収集
+
+- **trace_malloc_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  トランザクションごとの平均メモリ割当量を収集します。
+
+  :::note 
+
+  当該オプションの値を`true`に設定し、活性化時に<Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="TTL06125" className="uitext" />タップで<Cmdname sid="TTL06974" className="uitext" />が確認できます。詳細は[次の文書](/java/dashboard-hitmap-trace#anlaysis-trace-record-summary)を参照してください。
+
+  :::

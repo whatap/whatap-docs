@@ -4,13 +4,13 @@ If any service failure occurs after applying the PHP Monitoring, check the error
 
 In the content of the error log, check for any error messages such as `segmentation fault` and `sig bus`. The messages include phrases like `kill child process`, `exit child`, and `exit process`. 
 
-If any error occurs, it can be seen that a conflict happened in the PHP extension module, _whatap.so_. Stop the PHP extension module, _whatap.so_, and then restart Apache or PHP-FPM.
+If any error occurs, it can be seen that a conflict happened in the PHP extension module, *whatap.so*. Stop the PHP extension module, *whatap.so*, and then restart Apache or PHP-FPM.
 
-In the environment that does not affect the service, add the `Core dump` setting and then reload _whatap.so_. If any error occurs, the _dump_ file is generated. Analyze the _dump_ file by using gdb for resolving the root cause. 
+In the environment that does not affect the service, add the `Core dump` setting and then reload *whatap.so*. If any error occurs, the *dump* file is generated. Analyze the *dump* file by using gdb for resolving the root cause. 
 
 ### Core dump configuration
 
-1. Give permission for the directory to generate the _dump_ file.
+1. Give permission for the directory to generate the *dump* file.
 
    ```java
    chmod 0777 /home/httpd-core
@@ -37,7 +37,7 @@ In the environment that does not affect the service, add the `Core dump` setting
 
 2. Restart Apache to complete the configuration. 
 
-3. If any error occurs, the _dump_ file is generated. If the _dump_ file has been generated, check the root cause of the error through gdb. Use the `bt full` command to check the entire stack information.
+3. If any error occurs, the *dump* file is generated. If the *dump* file has been generated, check the root cause of the error through gdb. Use the `bt full` command to check the entire stack information.
 
    ```java
    # gdb /usr/sbin/httpd /home/httpd-core/core-httpd.31832
@@ -57,7 +57,7 @@ In the environment that does not affect the service, add the `Core dump` setting
 
 2. Restart PHP-FPM to complete the configuration. 
 
-3. If any error occurs, the _dump_ file is generated. If the _dump_ file has been generated, check the root cause of the error through gdb. Use the `bt full` command to check the entire stack information.
+3. If any error occurs, the *dump* file is generated. If the *dump* file has been generated, check the root cause of the error through gdb. Use the `bt full` command to check the entire stack information.
 
    ```java
    # gdb /usr/sbin/php-fpm /home/httpd-core/core-php-fpm.31832

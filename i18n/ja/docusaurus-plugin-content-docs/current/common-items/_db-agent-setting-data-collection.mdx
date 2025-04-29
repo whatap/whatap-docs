@@ -84,7 +84,7 @@
 
 </InDoc>
 
-<Xclude product='redis,mongodb,oracle,oracle-v1,altibase,db2'>
+<Xclude product='redis,mongodb,oracle,oracle-v1,altibase,db2,sapase'>
 
 - **tables_hour** <span class='type'>Int</span>
 
@@ -130,7 +130,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb,altibase,mssql,db2'>
+<Xclude product='cubrid,redis,mongodb,altibase,mssql,db2,sapase'>
 
 - **replication_name** <span class='type'>String</span>
 
@@ -178,7 +178,7 @@
 
 </InDoc>
 
-<Xclude product='cubrid,redis,mongodb,db2'>
+<Xclude product='cubrid,redis,mongodb,db2,sapase'>
 
 - **skip_whatap_session** <span class='type'>Int</span>
 
@@ -345,13 +345,29 @@
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,db2">
+<InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,db2,sapase">
 
 - **xview_min_sec** <span class='type'>Int</span>
 
   既定値`0`
 
   xview収集時、クエリの実行時間が設定された時間よりも長くかかる場合にのみ収集します。デフォルトとしては、実行時間が0秒以上のすべてのクエリを収集します。
+
+</InDoc>
+
+<InDoc product="sapase">
+
+- **include_cpu_io** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  CPU収集詩`io_busy`値を含めるかどうかを設定します。
+
+- **check_suspect_db_interval** <span class='type'>Second</span>
+
+  既定値`60` (単位：秒)
+
+  Suspect DBを収集する周期を設定します。
 
 </InDoc>
 
