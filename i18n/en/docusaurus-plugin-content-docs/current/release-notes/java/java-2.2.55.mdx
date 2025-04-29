@@ -1,0 +1,32 @@
+---
+id: java-2_2_55
+title: Java Agent v2.2.55
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_54
+displayed_sidebar: releaseSidebar
+---
+
+March 27, 2025
+
+- <Status priority='1'>Feature</Status> Added the status code collection feature and expanded the exception tracing scope in `undertow-server 2.3.0` or later.
+
+- <Status priority='1'>Changed</Status> Changed not to generate the traceparent header if there is no `mtid`.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue of transaction data being collected repeatedly when implementing `spring-webflux 6.0` or later under `undertow-server 2.3.0` or later.
+
+  ```makefile
+  ## example using spring-boot-3.4.3 on undertow-2.3.18.Final
+  weaving=spring-boot-3.2,undertow-2.3.0  
+  ```
+
+- <Status priority='0'>Fixed</Status> Fixed the issue of transaction data being collected repeatedly when calling the Jakarta Filter under `undertow-server 2.3.0` or later.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the collection server is not connected when `whatap.oname` has not been specified when running `tomcat` or `embedded-tomcat`.
+
+- <Status priority='1'>Deprecated</Status> Ended the configuration support of `webflux`, and the existing configuration has been replaced with the `spring-boot` configuration.
+
+  > `webflux-5.3` → `spring-boot-2.1` or `spring-boot-2.5` or `spring-boot-2.7`
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.55" />

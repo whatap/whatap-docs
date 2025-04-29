@@ -106,7 +106,11 @@ To create a **CloudFormation** stack, set the following AWS roles:
       "Action": [
         "logs:CreateLogGroup",
         "logs:CreateLogStream",
-        "logs:PutLogEvents"
+        "logs:PutLogEvents",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:GetLogEvents",
+        "logs:FilterLogEvents"
       ],
       "Resource": "*"
     },

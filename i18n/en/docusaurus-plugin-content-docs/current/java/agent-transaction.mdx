@@ -104,7 +104,7 @@ Agent support scope: <code class="my">Java Agent v2.2.4 or later</code>
 
 ## Modifying the trace URL name
 
-- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>string</span> <code class="my">Java Agent v2.2.4 or later</code>
+- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>String</span> <code class="my">Java Agent v2.2.4 or later</code>
 
   You can modify the name of the trace URL when calling a specific URL or method. For example, if the `test100000()` method is called while calling a URL registered in `io.home.test.TestController.test1`, you can see it as `/api/100000+test1+test100000` on the service screen.
 
@@ -156,3 +156,17 @@ The following options are used to trace HTTP calls by using the `HttpURLConnecti
   Default `false`
 
   You can set to trace methods in the `weblogic.net.http.HttpURLConnection` class even when called for the first time.
+
+## Collecting memory quota
+
+- **trace_malloc_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  It collects average allocated memory per transaction
+
+  :::note 
+
+  When it is enabled by setting the option to `true`, you can check <Cmdname sid="TTL06974" className="uitext" /> in the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window. For more information, see [the following](/java/dashboard-hitmap-trace#anlaysis-trace-record-summary).
+
+  :::

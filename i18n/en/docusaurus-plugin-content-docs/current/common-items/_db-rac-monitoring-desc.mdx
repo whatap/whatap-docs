@@ -1,0 +1,27 @@
+Home &gt; Select Project &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <UI>RAC Monitoring</UI>
+
+***RAC Monitoring*** is configured to allow monitoring of databases formed as a cluster in Oracle Database. The default presets provided in the ***RAC Monitoring*** menu are optimized for the monitoring. The edit role is required to save, delete, and change the presets.
+
+You can compare and analyze key performance metrics occurring in each instance at a glance. You can effectively perform monitoring by aggregating data such as the number of agents running, the sum of all active sessions, and the number of transactions. Users can easily check the changes in metric values ​​over time and high performance metrics for each instance through graph charts.
+
+Additionally, users can see the longest-lasting active sessions, which can be used as a basis for diagnosing and resolving the system performance bottlenecks.
+
+<ProdImg img='db-rac-monitoring.png' desc='RAC Monitoring Basic screen' />
+
+:::tip
+
+**Difference from Multiple instance monitoring**
+
+The RAC monitoring screen was provided as an instance selector that can select RAC presets and clusters in the previous multi-instance monitoring, but has been separated into a dashboard.
+
+- Available widgets may differ.
+
+  - [RAC] Load Balance
+  - [RAC] Interconnect Bandwidth
+  - [RAC] Main Waits
+
+- The default preset is optimized for RAC monitoring.
+
+- Instance Select has been changed to Cluster Select.
+
+:::

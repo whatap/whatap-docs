@@ -1,0 +1,51 @@
+Home &gt; Select Project &gt; <Cmdname sid="laboratory" className="uitext" /> &gt; ***Top SQL***
+
+***TOP SQL*** extends the existing SQL statistics functionality to allow you to query and analyze data over a long period of time. You can search data for 1 minute to 30 days intervals, and provides analysis metrics in tab format so you can see them at a glance. Additionally, you can add trend charts to easily identify SQL occurrence patterns over a specific time period.
+
+## Basic screen guide
+
+<InDoc product='mysql,oracle,oracle-pro'><ProdImg img='db-top-sql-stat.png' desc='Top SQL' /></InDoc>
+
+1. In ![Number 1](/img/number-01.png) <Cmdname sid="time" className="uitext" />, select the time and date to view data. You can also select a lookup time by clicking the green button.
+
+2. In ![number 1](/img/number-01.png) <Cmdname sid="instance" className="uitext" />, select a target to view the data.
+
+3. Select ![Search icon](/img/ico-btn-search.png).
+
+:::note
+
+- If you click the text range for date and time, the option appears to select the date and time.
+
+- If you select each column in the table header, you can sort the list by the selected item.
+
+- Data is displayed in a table for 10 to 100 items. In <Cmdname sid="TTL07773" className="uitext" />, you can set the number of items to display in the table. After all settings are finished, select <LinkImage img="ico-btn-search.png" className="ico" />.
+
+- To download the viewed data as a CSV file, select ![Download icon](/img/ico-download.svg).
+
+- For more information on how to use the <Cmdname sid="time" className="uitext" /> option, see [the following](usage-ui#timeselector).
+
+:::
+
+### Checking the trends chart {#trends-chart}
+
+<InDoc product='mysql,oracle,oracle-pro'><ProdImg img='db-top-sql-trends-chart.png' desc='Top SQL' /></InDoc>
+
+The SQL statistics data collection period and data query range of the ![Number 3](/img/number-03.png) ***Trends*** chart may differ depending on the following criteria. 
+
+- **3 hours or less**
+  - **If the SQL statistical data collection cycle option is set to 1 minute**: Data is collected at 1-minute intervals.
+  - **If the SQL statistical data collection cycle option is not set to 1 minute**: Data is collected at 5-minute intervals.
+- **1 day or less**: Data is collected at 5-minute intervals.
+- **30 days or less**: Data is collected at 1-hour intervals.  
+
+:::note
+
+**Setting the collection cycle option for SQL statistical data (chart interval)**
+
+To display 1-minute summary data, it is required to check the agent version and its settings.
+
+1. Update to Agent 2.4.5 or later.
+
+2. Add the `sqlstat_send_interval = 1` setting in the whatap.conf file.
+
+:::

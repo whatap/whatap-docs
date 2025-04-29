@@ -1,0 +1,53 @@
+---
+id: top-sql
+title: Top SQL
+description: Data can be viewed for a minimum of 1 minute and up to 30 days, making it easy to identify SQL occurrence patterns through metrics and trend charts.
+keywords:
+  - Oracle
+  - DATABASE
+  - Top SQL
+---
+
+{/* 기본 화면, trend 차트 안내*/}
+
+import Dbstattopsqldesc from "../common-items/_db-stat-top-sql-desc.mdx";
+
+<Dbstattopsqldesc />
+
+{/* 쿼리별 수행 추이, 자세히 보기*/}
+
+import Dbstatsqlviewquery from "../common-items/_db-stat-sql-view-query.mdx";
+
+<Dbstatsqlviewquery />
+
+import Dbstatsqlviewquerydetailssummary from "../common-items/_db-stat-sql-view-query-details-summary.mdx";
+
+<Dbstatsqlviewquerydetailssummary />
+
+import Dbproductsqlstatquerydetails from "../common-items/_db-product-sql-stat-query-details.mdx";
+
+<Dbproductsqlstatquerydetails />
+
+## Checking the chart details {#chart-details-info}
+
+import Dbstatsqlchartdetails from "../common-items/_db-stat-sql-chart-details.mdx";
+
+<Dbstatsqlchartdetails />
+
+## Checking the information details {#session-details-info}
+
+<ImgLang img='db-top-sql-details.png' desc='the session information details' />
+
+When the bar graph is selected in the chart, the <Cmdname sid="session_detail" className="uitext" /> window appears where you can check statistical data for 5 minutes. The list of SQL executions appears for the selected time. When an item is selected, it goes to the <Cmdname sid="instance_monitoring" className="uitext" /> menu with a new window.
+
+In <Cmdname sid="instance_monitoring" className="uitext" />, you can check active sessions in the table and trends of various metrics in the selected time zone.
+
+{/* 필터 조건추가하기*/}
+
+import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";
+
+<Dbsqlfilter level={2} />
+
+import Dbv2dataeditcolumn from "../common-items/_db-v2-data-edit-column.mdx";
+
+<Dbv2dataeditcolumn level={2} />

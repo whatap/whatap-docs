@@ -101,7 +101,7 @@ semanticな単語すべて、正規表現に書き換えできます。 GROKパ�
   - regular expression: `.*?`
 
 ```text title='GROK parsing pattern'
-\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]
+[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]
 ```
 
 上記の内容でパーシングすると、次のようにタグを抽出できます。 このようにGROKの`%{SYNTAX:SEMANTIC}`パターンは、複雑で長い正規表現を簡単に適用できる機能を提供します。
@@ -202,7 +202,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 4. <Cmdname sid="pattern" className="uitext" />と<Cmdname sid="log" className="uitext" />入力後、<Cmdname sid="simulation" className="uitext" />ボタンをクリックして、適用するパターンでパーシングに成功することを確認します。
 
-   > <Cmdname sid="pattern" className="uitext" />例: `\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
+   > <Cmdname sid="pattern" className="uitext" />例: `[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
    >
    > <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 
@@ -264,7 +264,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 > <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 >
-> <Cmdname sid="pattern" className="uitext" />例: `\[%{TIMESTAMP_ISO8601:date}\sGMT\]\[%{LOGLEVEL:level}\s\]\[%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
+> <Cmdname sid="pattern" className="uitext" />例: `[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
 
 1. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で<Cmdname sid="simulation" className="uitext" />ボタンを選択します。
 

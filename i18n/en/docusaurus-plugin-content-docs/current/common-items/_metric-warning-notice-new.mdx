@@ -82,7 +82,7 @@ You can set event conditions to receive notifications.
 
 {/* <ImgLang img="metric-warning-notice-new-event-condition.png" desc="이벤트 조건 정의" /> */}
 
-<Xclude product="server,db2">
+<Xclude product="server,db2,sapase">
 
 #### <Cmdname sid="template" className="uitext" /> {#select_template}
 
@@ -263,7 +263,7 @@ Set the event name, message, and recipients.
 
 - <Cmdname sid="message" className="uitext" />: Enter the notification message to deliver to users. You can use variables to contain dynamic data.
 
-  ![Message example](/img/event-config-message-example.png)
+  <ImgLang img='event-config-message-example.png' desc='Message example' />
 
   - By entering `${Tag}` or `${Field}`, you can apply the variable to the message. The variable must be a value contained in the selected metrics data <Cmdname sid="category" className="uitext" />. You can check the `${Tag}` and `${Field}` variables that can be entered in the <Cmdname sid="tag_count" className="uitext" /> menu.
 
@@ -276,6 +276,8 @@ Set the event name, message, and recipients.
   In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />, select <Cmdname sid="category" className="uitext" /> and then check the `${Tag}` and `${Field}` variables that can be entered. For the <Cmdname sid="category" className="uitext" /> name of the current event template, see the <b>Category</b> in <Link to="#basic-template">the following</Link>
 
   :::
+
+  <Xclude product='db2,sapase'>
 
   :::note
 
@@ -328,6 +330,8 @@ Set the event name, message, and recipients.
   </InDoc>
 
   :::
+
+  </Xclude>
 
 - <Cmdname sid="alert_test" className="uitext" />: When receiving notifications as events, you can pre-check the specified event name and message. Testing is possible only when the required items (<Cmdname sid="TTL07365" className="uitext" replace="</br>" />, <Cmdname sid="event_title" className="uitext" />, and <Cmdname sid="TTL06883" className="uitext" />) are all entered.
 

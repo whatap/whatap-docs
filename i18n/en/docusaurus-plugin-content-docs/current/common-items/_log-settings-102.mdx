@@ -609,15 +609,15 @@ If a setting is added as follows, statistical data is generated with a key value
 
 1. Create a widget by searching <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> in <Cmdname sid="widget_template" className="uitext" /> of <Cmdname sid="side_integratedFlexboard" className="uitext" />.
 
-    <ImgLang img='log-flexboard-widget-long-term.png' desc='Log long-term archive statistics widget template'/>
+   <ImgLang img='log-flexboard-widget-long-term.png' desc='Log long-term archive statistics widget template'/>
 
 2. Enter the <Cmdname sid="category" className="uitext" /> and <Cmdname sid="ITM06438" className="uitext" /> to view and then select <Cmdname sid="apply" className="uitext" />.
 
-    <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='Log long-term archive statistics widget category and key selection'/>
+   <ImgLang img='log-flexboard-widget-setting-long-term.png' desc='Log long-term archive statistics widget category and key selection'/>
 
 3. With the added settings, you can check the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> data as follows.
 
-    <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='Log long-term archive statistics chart widget'/>
+   <ImgLang img='log-flexboard-widget-chart-long-term.png' desc='Log long-term archive statistics chart widget'/>
 
 ## Personal information de-identification {#log-deidentification-of-personal-info}
 
@@ -649,16 +649,16 @@ The items classified as personal information are as follows: If there are any it
 - Driver's license number
 
 - Alien registration number
-</Column>
-<Column className="text--left">
+  </Column>
+  <Column className="text--left">
 
 - Credit card number
 
 - Account number
 
 - Biometric information
-</Column>
-</Columns>
+  </Column>
+  </Columns>
 
 ### Required roles
 
@@ -686,19 +686,18 @@ You can hide sensitive information in real time and enhance the security by mask
 
 5. After checking the de-identified items in the <Cmdname sid="TTL08814" className="uitext" /> list, click <Cmdname sid="save" className="uitext" /> on the upper right to save the current settings.
 
-    <ImgLang img="log-de-identification-list.png" desc="Log Data De-identification List" />
+   <ImgLang img="log-de-identification-list.png" desc="Log Data De-identification List" />
 
-    - The de-identified search keys are output in the format of <code class='filter'>search key.pii</code> in the log content.
+   - The de-identified search keys are output in the format of <code class='filter'>search key.pii</code> in the log content.
 
-    - You can perform ![Toggle enabling icon](/img/ic-toggle-on.svg)<Cmdname sid="enable" className="uitext" /> for de-identified items in the <Cmdname sid="enable" className="uitext" /> column of the <Cmdname sid="TTL08814" className="uitext" /> list.
+   - You can perform ![Toggle enabling icon](/img/ic-toggle-on.svg)<Cmdname sid="enable" className="uitext" /> for de-identified items in the <Cmdname sid="enable" className="uitext" /> column of the <Cmdname sid="TTL08814" className="uitext" /> list.
 
-    - You can ![Edit icon](/img/ic-edit.svg) ***modify*** and ![Remove icon](/img/ic-delete-critical.svg) ***remove*** in the <Cmdname sid="TLT08066" className="uitext" /> column of the <Cmdname sid="TTL08814" className="uitext" /> list.
+   - You can ![Edit icon](/img/ic-edit.svg) ***modify*** and ![Remove icon](/img/ic-delete-critical.svg) ***remove*** in the <Cmdname sid="TLT08066" className="uitext" /> column of the <Cmdname sid="TTL08814" className="uitext" /> list.
 
 :::note 
 
 If the search key name is specified as <code class='filter'>search-key.p</code> in the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab, de-identification is applied by default. When adding or modifying in the <Cmdname sid="TTL08814" className="uitext" /> tab, you can select the corresponding <Cmdname sid="category" className="uitext" /> and then check it in <Cmdname sid="TTL08835" className="uitext" />. You can disable masking, if you do not want. WhaTap recommends using the <Cmdname sid="TTL08814" className="uitext" /> tab rather than specifying the de-identification target during parser configuration.
 
-{/* ![Example of the specified search key](/img/log-display-pi-1st-parser.png) */}
 
 :::
 
@@ -741,62 +740,90 @@ The <Cmdname sid="TTL08979" className="uitext" /> feature identifies personal it
 
 1. Specify the start time and end time. 
 
-1. Set values for <Cmdname sid="category" className="uitext" />.
+2. Set values for <Cmdname sid="category" className="uitext" /> .
 
-1. Select <Cmdname sid="ITM08981" className="uitext" /> from the examples or <Cmdname sid="direct_input" className="uitext" />.
+3. Select <Cmdname sid="ITM08981" className="uitext" /> from the examples or <Cmdname sid="direct_input" className="uitext" />.
 
-    :::note 
+   :::note 
 
-    When selecting <Cmdname sid="direct_input" className="uitext" />, directly enter a regular expression pattern to identify personal information.
+   When selecting <Cmdname sid="direct_input" className="uitext" />, directly enter a regular expression pattern to identify personal information.
 
-    :::
+   :::
 
-1. Select whether to replace personal information, if it is identified via the <Cmdname sid="ITM08983" className="uitext" /> toggle.
+4. Select whether to replace personal information, if it is identified via the <Cmdname sid="ITM08983" className="uitext" /> toggle.
 
-1. Enter <Cmdname sid="ITM08984" className="uitext" /> to change the string identified by the regular expression pattern in the existing log. 
+5. Enter <Cmdname sid="ITM08984" className="uitext" /> to change the string identified by the regular expression pattern in the existing log. 
 
-    :::note 
+   :::note 
 
-    - <Cmdname sid="ITM08984" className="uitext" /> must not be longer than the original value.
+   - <Cmdname sid="ITM08984" className="uitext" /> must not be longer than the original value.
 
-    - When enabling the <Cmdname sid="ITM08983" className="uitext" /> toggle, be sure to enter <Cmdname sid="ITM08984" className="uitext" />.
+   - When enabling the <Cmdname sid="ITM08983" className="uitext" /> toggle, be sure to enter <Cmdname sid="ITM08984" className="uitext" />.
 
-    :::
+   :::
 
-1. Enter the conditions and then select <Cmdname sid="BTN08985" className="uitext" />. You can stop this step at any time by clicking <Cmdname sid="BTN08986" className="uitext" /> during the checkup. 
+6. Enter the conditions and then select <Cmdname sid="BTN08985" className="uitext" />. 
 
-1. When the inspection is finished, you can see <Cmdname sid="ITM08995" className="uitext" /> on the right as in the example image. 
+   :::note 
 
-    - <Cmdname sid="category" className="uitext" />: It displays the categories checked.
+   You can stop this step at any time by clicking <Cmdname sid="BTN08986" className="uitext" /> during the checkup. 
 
-    - <Cmdname sid="ITM08989" className="uitext" />  and <Cmdname sid="ITM08990" className="uitext" />: It displays the time range for the checkup.
+   :::
 
-    - <Cmdname sid="ITM08981" className="uitext" />: It displays the personal items that have been checked.
+7. When applying substitution, enter <Cmdname sid="DSC09450" className="uitext" /> in the <Cmdname sid="TTL09446" className="uitext" /> confirmation window, and then click the <Cmdname sid="BTN09452" className="uitext" /> button. 
 
-    - <Cmdname sid="ITM08991" className="uitext" />: It displays the regular expression pattern used.
+   <ImgLang img="log-de-identification-confirm.png" desc="Checking the log's personal information de-identification" />
 
-    - <Cmdname sid="ITM08984" className="uitext" />: It displays the applied replacement value.
+8. After the inspection is finished, you can see <Cmdname sid="ITM08995" className="uitext" /> on the right as in the example image. 
 
-    - <Cmdname sid="ITM08995" className="uitext" />: It displays the result where personal information has been identified.
+   - <Cmdname sid="category" className="uitext" />: It displays the categories checked.
 
-      > `SUCCESS` (check success), `FAILED` (check failure), `STOP` (check stop), `TIMED_OUT` (check ended due to timeout)
+   - <Cmdname sid="ITM08989" className="uitext" />  and <Cmdname sid="ITM08990" className="uitext" />: It displays the time range for the checkup.
+
+   - <Cmdname sid="ITM08981" className="uitext" />: It displays the personal items that have been checked.
+
+   - <Cmdname sid="ITM08991" className="uitext" />: It displays the regular expression pattern used.
+
+   - <Cmdname sid="ITM08984" className="uitext" />: It displays the applied replacement value.
+
+   - <Cmdname sid="ITM08994" className="uitext" />: The number of personal data identified is displayed. You can check the sample logs by clicking <Cmdname sid="BTN09454" className="uitext" />.
+
+   - <Cmdname sid="ITM08995" className="uitext" />: It displays the result where personal information has been identified.
+
+     > `SUCCESS` (check success), `FAILED` (check failure), `STOP` (check stop), `TIMED_OUT` (check ended due to timeout)
+
+#### <Cmdname sid="BTN09473" /> {#log-de-identification-check-history}
+
+To view the results of past checks after performing de-identification check for the log's personal information, click the <Cmdname sid="BTN09473" className="uitext" /> button at the upper right. You can trace the substitution history, inspection time, and applied personal information items. You can also download the list information in _CSV_ file format by clicking the ![Download icon](/img/ico-download.svg) **_CSV_** button at the upper right of the <Cmdname sid="BTN09473" className="uitext" /> window. 
+
+<ImgLang img="log-de-identification-check-history.png" desc="Checking the history of log's personal information de-identification" />
 
 #### Personal information pattern {#log-pi-pattern}
 
+export const regexJumin = `(?<!\w)\d{2}(0[1-9]|1[0-2])([0-2][0-9]|3[0-1])-[1-4]\d{6}(?!\w)`;
+export const regexPhone = `(?<!\w)(\+82-?1[016789]-?\d{3,4}-?\d{4}|01[016789]-?\d{3,4}-?\d{4})(?!\w)`;
+export const regexID = `(?<!\w)\d{6}-?[5-8]\d{6}(?!\w)`;
+export const regexCar= `(?<!\w)\d{2}-\d{2}-\d{6}-\d{2}(?!\w)`;
+export const regexCard=`(?<!\w)\d{4}-\d{4}-\d{4}-\d{4}(?!\w)`;
+export const regexEmail=`([a-zA-Z0-9][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})`;
+export const regexAccount=`(?<!\w)\d{6}-\d{2}-\d{6}(?!\w)`;
+export const regexBiz=`(?<!\w)\d{3}-\d{2}-\d{5}(?!\w)`;
+export const regexLb=`(?<!\w)\d{6}-?\d{7}(?!\w)`;
+
 Examples of regular expression patterns used to identify personal information in the existing log are as follows:
 
-| Personal information pattern  | Personal information example | Regular expression pattern                                       | Replacement value     |
-| ----------------------------- | ---------------------------- | ---------------------------------------------------------------- | --------------------- |
-| Resident registration number  | 123456-1234567               | `([0-9]{6}-[1-4]{1}[0-9]{6})`                                             | `******-*******`      |
-| Passport number               | M12345678                    | `([a-zA-Z])`                                                     | `*********`           |
-| Driver's license number       | 01-23-456789-00              | `(\d{2}-\d{2}-\d{6}-\d{2})`                                      | `**-**-******-**`     |
-| Alien registration number     | 987654-1234567               | `([0-9]{6}-[0-9]{7})` | `******-*******`      |
-| Credit card number            | 1234-5678-9012-3456          | `([34569][0-9]{3}[~- ][0-9]{4}[~- ][0-9]{4}[~- ][0-9]{4})`       | `****-****-****-****` |
-| Phone number                  | 010-1234-5678                | `(\d{2,3}[ ,-]?\d{3,4}[ ,-]?\d{4})`                              | `***-****-****`       |
-| Email Address                 | `example@domain.com`         | `(([\w!#._-])@([\w.]\.\w{2,3}))`                                 | `***@***.***`         |
-| Account number                | 1111-04-031111               | `(\d{4}-\d{2}-\d{7})`                                            | `****-**-******`      |
-| Business registration number  | 111-11-01111                 | `(\d{3}-\d{2}-\d{5})`                                            | `***-**-*****`        |
-| Corporate registration number | 111111-1111111               | `(\d{6}-\d{7})`                                                  | `******-*******`      |
+| Personal information pattern  | Personal information example | Regular expression pattern       | Replacement value     |
+| ----------------------------- | ---------------------------- | -------------------------------- | --------------------- |
+| Resident registration number  | 123456-1234567               | <pre>{regexJumin}</pre>          | `******-*******`      |
+| Passport number               | M1234567                     | <pre>([MSRODTC][0-9]{7}\b)</pre> | `********`            |
+| Driver's license number       | 01-23-456789-00              | <pre>{regexCar}</pre>            | `**-**-******-**`     |
+| Alien registration number     | 987654-1234567               | <pre>{regexID}</pre>             | `******-*******`      |
+| Credit card number            | 1234-5678-9012-3456          | <pre>{regexCard}</pre>           | `****-****-****-****` |
+| Phone number                  | 010-1234-5678                | <pre>{regexPhone}</pre>          | `***-****-****`       |
+| Email Address                 | `example@domain.com`         | <pre>{regexEmail}</pre>          | `***@***.***`         |
+| Account number                | 123456-01-654321             | <pre>{regexAccount}</pre>        | `******-**-******`    |
+| Business registration number  | 111-11-01111                 | <pre>{regexBiz}</pre>            | `***-**-*****`        |
+| Corporate registration number | 111111-1111111               | <pre>{regexLb}</pre>             | `******-*******`      |
 
 {/* 이 섹션에서는 기존 데이터에 대해 치환 값을 설정하여 개인정보를 완전히 치환합니다. The set replacement value is used to change sensitive information to a safe value with maintaining the same type as the original data. Replaced data cannot be recovered. Therefore, apply it with caution. */}
 

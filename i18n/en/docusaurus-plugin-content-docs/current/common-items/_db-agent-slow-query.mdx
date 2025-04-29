@@ -1,0 +1,103 @@
+To collect slow queries, first configure the database (DB). The WhaTap configuration method differs depending on the environment (on-premises or AWS RDS/Aurora).
+
+:::note
+
+The slow query feature is supported only for **MySQL** and **PostgreSQL**.
+
+:::
+
+<InDoc product="mysql">
+
+:::caution
+
+**Check the database settings**
+
+Before configuring WhaTap, set the slow query related parameters in the MySQL database (DB). Check that the slow query logging feature is enabled and proceed with the WhaTap configuration.
+
+```ini
+slow_query_log=on  
+long_query_time=3  # 3 seconds 
+```
+
+:::
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+:::caution
+
+**Check the database settings**
+
+Before configuring WhaTap, set the slow query related parameters in the PostgreSQL database (DB). Check that the slow query logging feature is enabled and proceed with the WhaTap configuration.
+
+```ini
+log_min_duration_statement=3000  # 3 seconds
+```
+
+:::
+
+</InDoc>
+
+<InDoc product="mysql">
+
+### On-premise environment
+
+When running on your own server, use the WhaTap's DBX/XOS configuration method. **In addition to the DBX agent installation, be sure to install XOS on the DB server.** For the XOS agent configuration method, see [the following](agent-xos-settings).
+
+1. Add the `slow_query_log=on` option to the DBX *whatap.conf* file.
+
+   - **slow_query_log** <span class='type'>Boolean</span>\
+       It enables (`on`) or disables (`off`) the slow query logging feature. The default value in MySQL is `on`.
+
+2. If XOS has been installed, the file name is automatically recognized. If the file name is not automatically recognized, set `slow_query=` in the XOS *whatap.conf* file.
+
+### AWS RDS/Aurora Environment
+
+Because in the AWS RDS/Aurora environment, the XOS agent cannot be installed, slow queries can be collected through **DBX agent settings** or **Cloud settings**.
+
+- **DBX Agent Setting**
+
+    To collect slow queries in the AWS RDS/Aurora environment, set the DBX whatap.conf file as follows.
+
+  ```ini title="whatap.conf"
+  slow_query_log=on  # Cloud Settings
+  cloud_watch=on
+  aws_region=
+  aws_arn=
+  cloud_watch_metrics=
+  cloud_watch_instance= 
+  ```
+
+- **Cloud Settings**
+
+  Follow the guide provided in the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" /> menu to automatically create monitoring resources in the AWS environment and collect slow query data. No additional configuration is required. For more details, see [the following](cloudsettings).
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### On-premise environment
+
+When running on your own server, use the WhaTap's DBX/XOS configuration method. **In addition to the DBX agent installation, be sure to install XOS on the DB server.** For the XOS agent configuration method, see [the following](agent-xos-settings).
+
+1. Add the `slow_query_log=on` option to the DBX *whatap.conf* file. 
+
+   - **slow_query_log** <span class='type'>Boolean</span>\
+       It enables (`on`) or disables (`off`) the slow query logging feature. The default value in PostgreSQL is `on`. 
+
+2. If XOS has been installed, the file name is automatically recognized. If the file name is not automatically recognized, set `slow_query=` in the XOS *whatap.conf* file.
+
+### AWS RDS/Aurora Environment
+
+Because in the AWS RDS/Aurora environment, the XOS agent cannot be installed, slow queries can be collected through **Cloud settings**. 
+
+Follow the guide provided in the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbCloudSetting" className="uitext" /> menu to automatically create monitoring resources in the AWS environment and collect slow query data. No additional configuration is required. For more details, see [the following](cloudsettings).
+
+:::note
+
+PostgreSQL does not support the DBX agent configuration. The Cloud settings menu allows you to collect slow query data along with CloudWatch metric.
+
+:::
+
+</InDoc>

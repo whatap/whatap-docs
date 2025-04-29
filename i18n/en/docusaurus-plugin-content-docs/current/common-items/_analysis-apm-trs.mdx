@@ -223,6 +223,26 @@ It provides the feature to view the URLs and number of calls from applications f
 
 You can filter IP addresses or transaction addresses through the <Cmdname sid="filter" className="uitext" /> option to quickly retrieve data that meets your criteria. This is useful when analyzing specific IPs or transaction address patterns.
 
+<InDoc product="php">
+
+The following option needs to be set to collect IP transaction statistics. The default value is `false`.
+
+```ini title='whatap.ini'
+whatap.stat_ipurl_enabled=true
+```
+
+</InDoc>
+
+<InDoc product="java">
+
+The following option needs to be set to collect IP transaction statistics. The default value is `false`.
+
+```ini title='whatap.conf'
+stat_ipurl_enabled=true
+```
+
+</InDoc>
+
 | Columns                          | Description                                                                            |
 | -------------------------------- | -------------------------------------------------------------------------------------- |
 | <Cmdname sid="ip" />             | IP address of the client that made the request.                                        |
@@ -245,7 +265,7 @@ You can filter IP addresses or transaction addresses through the <Cmdname sid="f
 
 Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statReferer" className="uitext" />
 
-The WhaTap agent can collect transaction statistics for each referer. Set the following option:
+The WhaTap agent can collect transaction statistics for each referer. Set the following option: The default value is `false`. 
 
 <Xclude product="php">
 
@@ -335,7 +355,7 @@ They collect the statistics of calls outside the applications for 5 minutes via 
 | <Cmdname sid="timeMax_ms" />    | Maximum response time                                                    |
 | <Cmdname sid="TTL06915" />      | Standard deviation for the HTTP call time                                |
 
-## Number of calls for each client IP region
+## Number of calls for each client IP region {#client_tx_stat}
 
 Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statRemote" className="uitext" />
 

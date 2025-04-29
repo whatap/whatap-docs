@@ -16,7 +16,7 @@ You can save and load the settings and layouts for widgets on the dashboard. You
 
 </InDoc>
 
-<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,altibase,cubrid,redis,mongodb,db2">
+<InDoc product="postgresql,oracle,oracle-pro,mysql,mssql,altibase,cubrid,redis,mongodb,db2,sapase">
 
 You can save and load the settings and layouts for widgets on the dashboard. You can create a new preset by adjusting its size and placing it on the desired position.
 
@@ -36,15 +36,21 @@ You can save and load the settings and layouts for widgets on the dashboard. You
 
 - **_Default_**: It is a preset consisting of key DB metrics and XOS metrics.
 
-- **_Default (RAC)_**: If you are using Oracle Real Application Cluster (RAC), this preset allows you to check metrics based on the instances running on the RAC database.
-
 </InDoc>
 
-<InDoc product="mssql,altibase,cubrid,redis,mongodb">
+<InDoc product="mssql,altibase,cubrid,redis">
 
 - **_Default_**: This preset consists of major DB metrics.
 
 - **_Default(xos)_**: This preset consists of XOS metrics and major DB metrics. 
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+- **_Default_**: This preset consists of major DB metrics.
+
+- **_DocumentDB_**: It consists of key DocumentDB metrics (current connections, available connections, number of insert/query/update/delete operations, transaction status, open cursors, number of documents returned, etc).
 
 </InDoc>
 
@@ -78,7 +84,7 @@ You can save and load the settings and layouts for widgets on the dashboard. You
 
    <InDoc product="java,python,php,nodejs,dotnet,golang"><ImgLang img='apm-dashboard-preset-save.png' desc='Save preset' /></InDoc>
 
-   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid,mssql,db2"><ImgLang img='db-dashboard-preset-save.png' desc='Preset' /></InDoc>
+   <InDoc product="postgresql,mysql,oracle,oracle-pro,redis,mongodb,altibase,cubrid,mssql,db2,sapase"><ImgLang img='db-dashboard-preset-save.png' desc='Preset' /></InDoc>
 
    To save the selected agent data, select <Cmdname sid="ITM07345" className="uitext" />.
 

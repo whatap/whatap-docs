@@ -353,6 +353,31 @@ config: {
 </Column>
 </Columns>
 
+<Columns>
+<Column className="text--left width--40">
+
+**ignoreStatusZero** <span class='type'>Boolean</span> <code className="my">optional</code>
+
+Default `false`
+
+This option excludes data from collection when the status code of the AJAX request is `0`.
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {project_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js",
+  ignoreStatusZero: true
+}
+```
+
+</Column>
+</Columns>
+
 :::note
 
 - For more information about the session replay, see [the following](session-replay).

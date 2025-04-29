@@ -367,6 +367,50 @@ The provided event templates are as follows. The default value set in <Cmdname s
 
 </InDoc>
 
+<InDoc product="sapase">
+
+<ImgLang img='event-config-v2-db-db2.png' desc='Event List' />
+
+The provided event templates are as follows. The default value set in <Cmdname sid="ITM07578" className="uitext" /> can be changed to a desired one.
+
+- **_Active Sessions_**
+
+  Category: [`db_sap_ase_counter`](metrics-data-list)
+
+  If the number of sessions running query (`active_sessions`) exceeds 30, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 50, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_CPU Utilization_**
+
+  Category: [`db_sap_ase_counter`](metrics-data-list)
+
+  If the CPU utilization (`cpu(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 90%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+- **_Connection Failed_**
+
+  Category: [`db_sap_ase_counter`](metrics-data-list)
+
+  If database connection fails 15 times(`connect_error`) or more, a <span class="vslow">Critical</span> level alert is sent.
+
+- **_Memory Utilization_**
+
+  Category: [`db_sap_ase_counter`](metrics-data-list)
+
+  If the memory usage (`mem(xos)`) exceeds 80%, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 95%, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+  :::note
+
+  This template is only available if you have configured and run the XOS agent. For more information about the XOS agent configuration, see [the following](agent-xos-settings).
+
+  :::
+
+- **_lock wait Sessions_**
+
+  Category: [`db_sap_ase_counter`](metrics-data-list)
+
+  If the number of sessions waiting to acquire the row lock (`lock_wait_sessions`) exceeds 3, a warning (<span class="slow">Warning</span>) level notification is sent. If it exceeds 5, a critical (<span class="vslow">Critical</span>) level notification is sent.
+
+</InDoc>
+
 <InDoc product="mysql">
 
 <ImgLang img='event-config-v2-db-mysql.png' desc='Event list' />
