@@ -4557,10 +4557,9 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'release-notes/preview/preview-2_16_0x',
+          id: 'release-notes/preview/preview-2_15_0x',
           className: 'new',
         },
-        'release-notes/preview/preview-2_15_0x',
         'release-notes/preview/preview-2_14_0x',
         'release-notes/preview/preview-2_13_0x',
         'release-notes/preview/preview-2_12_0x',
@@ -4610,10 +4609,9 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_17_x',
+              id: 'release-notes/service/service-2_16_x',
               className: 'new',
             },
-            'release-notes/service/service-2_16_x',
             'release-notes/service/service-2_15_x',
             'release-notes/service/service-2_14_x',
             'release-notes/service/service-2_13_x',
@@ -5011,9 +5009,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/k8s/k8s-1_8_6',
+                  id: 'release-notes/k8s/k8s-1_8_7',
                   className: 'new',
                 },
+                'release-notes/k8s/k8s-1_8_6',
                 'release-notes/k8s/k8s-1_8_5',
                 'release-notes/k8s/k8s-1_8_4',
                 'release-notes/k8s/k8s-1_8_2',
@@ -6009,9 +6008,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/otel/otel-v0_2_3',
+              id: 'release-notes/otel/otel-v0_2_4',
               className: 'new',
             },
+            'release-notes/otel/otel-v0_2_3',
             'release-notes/otel/otel-v0_2_2',
             'release-notes/otel/otel-v0_2_1',
             'release-notes/otel/otel-v0_2_0',
@@ -7045,7 +7045,7 @@ const sidebars = {
           ]
         },
         // 현재 문서 없음 0205
-        'nms/mib-browser',
+        // 'nms/mib-browser',
         {
           type: 'category',
           label: '경고 알림',
