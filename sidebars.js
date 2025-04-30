@@ -5775,6 +5775,7 @@ const sidebars = {
         'faq/apm-faq',
         'faq/db-faq',
         'faq/log-faq',
+        'faq/server-faq',
         'faq/agent-faq',
         'about-billing',
         'faq/support-faq',
