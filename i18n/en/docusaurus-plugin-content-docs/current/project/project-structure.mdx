@@ -187,17 +187,29 @@ For more information about Flex Board, see [the following](../java/flex-board).
 
 ### <Cmdname sid="billing" /> {#billing}
 
+- You can grant **payment** role on an organization, group, or project basis.
+
+- When transferring the **payment** role within an organization, group, or project, you can apply them to subgroups and projects in bulk.
+
 - Each organization, group, or project provides the **billing** role to only one person. There must be only 1 member with the billing role.
 
 - <Cmdname sid="billing" className="uitext" /> appears next to the member with the <b>billing</b> role.
 
 - If A has transferred the **billing** role to B, A no longer has the right to make **billing**.
 
+- When the **payment** role is transferred, a verification email is sent to the target member. The **payment** role is finally granted after an approval via the verification email.
+
 - The member to whom the **billing** role is transferred must have registered the billing information. The billing information can be registered in <Cmdname sid="my_usage" className="uitext" />. For more information, see [the following](../management/billing).
 
 - If there are billing staff for each organization, group, and project, the billing roles are granted in the order of project, group, and organization. If there is no billing staff for a group or project, billing is charged to the parent group or organization's staff with the billing role.
 
   <ImgLang img='project-str-billing.png' desc='' className='noneborder'/>
+
+:::note 
+
+For more information about transferring payment permissions, see [the following](/about-billing#transferpayauth).
+
+:::
 
 ## Editing Member Role{#modify-auth}
 

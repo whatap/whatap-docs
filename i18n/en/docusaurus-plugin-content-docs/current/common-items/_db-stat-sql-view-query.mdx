@@ -8,7 +8,7 @@ To classify and view data by usage category, select the desired tab from ![numbe
 
 </Xclude>
 
-<InDoc product='postgresql,mysql,oracle,cubrid,oracle-pro,oracle-v1,altibase,mssql,mssql-v1'>
+<InDoc product='postgresql,mssql,cubrid,oracle-v1,altibase,mssql-v1'>
 
 To classify and view data by usage category, select the desired tab from ![number2](/img/number-02.png).
 
@@ -16,7 +16,40 @@ On the utmost left for each item of the table, select ![number3](/img/number-03.
 
 </InDoc>
 
-<InDoc product="postgresql,mysql,altibase,db2">
+<InDoc product='mysql,oracle,oracle-pro'>
+
+You can classify and search the desired data by usage type or change the sorting order. Select the desired tab from ![Number 2](/img/number-02.png).
+
+On the utmost left for each item of the table, select ![number4](/img/number-04.png) ►. A chart appears that displays the number of executions every 5 minutes and the average execution time of the query statement. If you hover your mouse over each bar graph, you can see the number of that time.
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+| Sorting criteria | Description                                |
+| ---------------- | ------------------------------------------ |
+| elapse avg (sec) | Sort by the longest average execution time |
+| execute count    | Sort by the greatest number of executions  |
+| elapse sum (sec) | Sort by the longest total execution time   |
+| elapse max (sec) | Sort by the longest maximum execution time |
+
+</InDoc>
+
+<InDoc product='oracle,oracle-pro'>
+
+| Sorting criteria      | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| elapse avg (sec)      | Sort by the longest average execution time                  |
+| execute count         | Sort by the greatest number of executions                   |
+| elapse sum (sec)      | Sort by the longest total execution time                    |
+| elapse max (sec)      | Sort by the longest maximum execution time                  |
+| elapse wait           | Sort by the longest waiting time for queries                |
+| physical read         | Sort by the greatest number of data blocks read from disk   |
+| session logical reads | Sort by the greatest number of data blocks read from memory |
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,altibase,db2,sapase">
 
 :::note
 

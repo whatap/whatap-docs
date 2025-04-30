@@ -353,6 +353,31 @@ config: {
 </Column>
 </Columns>
 
+<Columns>
+<Column className="text--left width--40">
+
+**ignoreStatusZero** <span class='type'>Boolean</span> <code className="my">optional</code>
+
+既定値`false`
+
+AJAXリクエストのステータスコードが`0`の場合、該当データを収集から除外するオプションです。
+
+</Column>
+<Column className="text--left">
+
+```js showLineNumbers {6}
+config: {
+  projectAccessKey: {project_access_key},
+  pcode: {pcode},
+  sampleRate: 100,
+  proxyBaseUrl: "https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js",
+  ignoreStatusZero: true
+}
+```
+
+</Column>
+</Columns>
+
 :::note
 
 - セッションリプレイについての詳細は、[次の文書](session-replay)を参照してください。

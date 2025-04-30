@@ -52,6 +52,28 @@ java -version
 
 :::
 
+### DBモニタリングリソースデータ収集
+
+> DBモニタリングでCPU、Memoryなどのリソース指標が見えません。
+
+DBサーバーのリソースデータを収集するには、環境によって方法が異なります。
+
+- **DB Agent環境**: DB LocalサーバーにXOSモジュールをインストールしないと、リソースデータを収集できません。 
+
+:::note 
+
+詳細な設定方法は、DB Agent環境に合わせたプラットフォームの[文書](https://docs.whatap.io/search?whatap%5Bquery%5D=XOS%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%84%A4%EC%A0%95)を参考にしてください。
+
+:::
+
+- **RDS環境**: RDSはLocalサーバーにインストールされない環境なので、AWS CloudWatchと連動して関連メトリックを収集できます。 
+
+:::note 
+
+詳細な設定方法は、RDS環境に合わせたプラットフォームの[文書](https://docs.whatap.io/search?whatap%5Bquery%5D=RDS%20CloudWatch)を参考にしてください。
+
+:::
+
 ### DBインスタンスにデータベースを追加して作成後にモニタリングされない場合
 
 > DBインスタンスにデータベースを追加で作成しましたが、WhaTapでモニタリングされません。どうすればいいですか？

@@ -11,18 +11,9 @@ displayed_sidebar: kubeSidebar
 toc_max_heading_level: 2
 ---
 
-Home &gt; Select Project &gt; <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />
+Home &gt; Select Project &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />
 
 The WhaTap <Cmdname sid="side_kubeEventList" className="uitext" /> menu allows you to perform various queries and searches for Kubernetes events without using commands. You can check the cluster events and also view past events through the time selector. 
-
-{/* 
-You can see the Kubernetes event count trend and find each reason of them.
-
-You can easily view Kubernetes events without using commands through the WhaTap <Cmdname sid="side_kubeEventList" className="uitext" /> menu. 
-
-It allows you to check the count trend of Kubernetes events by type on a project basis. 
-
-Through this menu, you can quickly find the desired event type through simple filtering, and easily view events that occurred in the past. */}
 
 <ImgLang img='k8s-kuber-event.png' desc='Kubernetes event'/>
 
@@ -83,7 +74,7 @@ Currently, only the **_BackOff_** and **_NodNotReady_** events of the <span clas
 
 ### Adjacent logs
 
-You can see adjacent logs based on the time of occurrence of the selected event. You can set the desired adjacent range by using the time selection button.
+You can check the context before and after an event by viewing adjacent logs based upon occurrence of the selected event. You can set the desired adjacent range by using the time selection button.
 
 :::note 
 
@@ -97,4 +88,8 @@ You can see adjacent logs based on the time of occurrence of the selected event.
 
 ### Event timeline
 
-It provides all events that occurred from the time the target of the selected event (**_Kind_**) was created to the present in a timeline format. This allows you to see the target's event history at a glance.
+It provides all events that occurred from the time the target of the selected event (**_Kind_**) was created to the present in a timeline format. This allows you to see the target's event history at a glance. This provides a comprehensive view for the resource lifecycle, including creation, normal operation, alert generation, and recovery.
+
+### Summary analysis
+
+It provides a summary at a glance so you can see the performance and resource status for the Pod or node where the event occurred. 

@@ -1,0 +1,42 @@
+---
+id: java-batch-2_2_26
+title: Java Batch Agent v2.2.26
+toc_max_heading_level: 2
+pagination_next: release-notes/java-batch/java-batch-2_2_25
+displayed_sidebar: releaseSidebar
+---
+
+2025年03月27日
+
+- <Status priority='1'>New</Status>バインド変数の収集機能を追加
+
+  - バッチプロセス及びバッチホストの設定が必要
+
+    <Columns>
+    <Column className="text--left width--50-2">
+    ```bash title='batch'
+    # default: false  
+    hook_batch_pstmt_param_enabled=true
+    ```
+    </Column>
+    <Column className="text--left">
+    ```bash title='batch-host'
+    # default: false
+    trace_batch_host_param_enabled=true
+    ```
+    </Column>
+    </Columns>
+
+    :::caution
+
+    バインド変数の収集時のアプリケーションの性能に影響を与える可能性があります。
+
+    :::
+
+- <Status priority='1'>Feature</Status>トランザクション及びSQL統計収集機能を追加
+
+- <Status priority='1'>Feature</Status>トランザクションのDB Connection Time、SQL Fetch Count、SQL Fetch Time収集を追加
+
+import DownloadJavaBatchAgent from "./_import_dl-java-batch-agent.mdx";
+
+<DownloadJavaBatchAgent />

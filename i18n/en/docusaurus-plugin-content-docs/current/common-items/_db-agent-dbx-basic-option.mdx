@@ -8,7 +8,7 @@
 
   Specify the IP address of the collection server to transfer the data collected by the agent. If there are multiple IP addresses for collection server redundancy, use comma (,) as the delimiter. The collection server proxy daemon must be serviced in the listening state for the set IP address.
 
-<Xclude product="oracle-pro">
+<Xclude product="oracle-pro,sapase">
 
 - **whatap.server.port** <span class='type'>String</span>
 
@@ -27,6 +27,28 @@
   :::
 
 </Xclude>
+
+<InDoc product="sapase">
+
+- **dbms** <span class='type'>String</span>
+
+  `sap_ase`
+
+  :::caution
+
+  If other option values are entered, data collection for monitoring may not work.
+
+  :::
+
+</InDoc>
+
+<InDoc product="oracle,postgresql,mssql,altibase,tibero,db2,sapase">
+
+- **db** <span class='type'>String</span>
+
+  Database name.
+
+</InDoc>
 
 <InDoc product="oracle-pro">
 

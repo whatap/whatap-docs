@@ -1,0 +1,51 @@
+ホーム画面&gt;プロジェクト選択&gt; <Cmdname sid="laboratory" className="uitext" /> &gt; ***Top SQL***
+
+***TOP SQL***は、既存のSQL統計メニューの機能を拡張し、長い期間データを照会して分析できます。 最大30日~最低1分単位で照会でき、分析指標をタブの形で提供して一目で見ることができます。 また、推移チャートを追加して特定時間のSQL発生パターンを簡単に把握できます。
+
+## 基本画面ガイド
+
+<InDoc product='mysql,oracle,oracle-pro'><ProdImg img='db-top-sql-stat.png' desc='Top SQL' /></InDoc>
+
+1. ![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />でデータを照会する時間と日付を選択します。 緑のボタンを選択して照会時間を選択することもできます。
+
+2. ![数字1](/img/number-01.png) <Cmdname sid="instance" className="uitext" />でデータを照会する対象を選択します。
+
+3. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択してください。
+
+:::note
+
+- 日付と時間テキスト領域をクリックして、日付と時間を選択するオプションを表示します。
+
+- テーブルヘッダーの各カラムをクリックすると、選択したカラムをソートすることができます。
+
+- データは 10 ~100件までテーブルに表示します。 <Cmdname sid="TTL07773" className="uitext" />から、テーブルに表示する件数を設定できます。 設定が完了した後<LinkImage img="ico-btn-search.png" className="ico" />ボタンをクリックします。
+
+- 照会した内容をCSV形式のファイルにダウンロードするには、![ダウンロードアイコン](/img/ico-download.svg)ボタンを選択します。
+
+- <Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](usage-ui#timeselector)を参照してください。
+
+:::
+
+### Trendsチャートを確認する {#trends-chart}
+
+<InDoc product='mysql,oracle,oracle-pro'><ProdImg img='db-top-sql-trends-chart.png' desc='Top SQL' /></InDoc>
+
+![数字 3](/img/number-03.png) ***Trends*** チャートのSQL統計データ収集周期とデータ照会範囲は、以下の基準によって異なります。 
+
+- **3時間以下**
+  - **SQL統計データ収集サイクルオプションが1分に設定された場合**: 1分間隔でデータ収集
+  - **SQL統計データ収集サイクルオプションが1分に設定されていない場合**: 5分間隔でデータ収集
+- **1日以下**: 5分間隔でデータ収集
+- **30日以下**: 1時間間隔でデータ収集  
+
+:::note
+
+**SQL統計データ収集サイクルオプションの設定(チャート·インターバル)**
+
+1分単位のサマリー データを表示するには、エージェントバージョンとエージェントの設定を確認する必要があります。
+
+1. エージェントバージョン2.4.5以降に更新します。
+
+2. whatap.confファイルに`sqlstat_send_interval = 1`の設定を追加します。
+
+:::

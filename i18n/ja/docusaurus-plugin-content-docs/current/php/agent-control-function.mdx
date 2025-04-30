@@ -17,6 +17,18 @@ PHPアプリケーションサーバーの機能を制御できます。
 
   統計情報の追跡機能をアクティブにします。 5分単位で収集されるトランザクション、SQL、HTTPCALL、UserAgent、Client IPなどの統計データなどが含まれます。
 
+- **whatap.stat_ipurl_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  プロジェクトサイドメニューの中で<Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statIp" className="uitext" />統計の収集有無を設定します。 
+
+  :::note 
+
+  [次の文書](/php/analysis-apm-trs#statiptx)を参照してください。
+
+  :::
+
 - **whatap.license** <span class='type'>String</span>
 
   エージェントのインストール時にサーバーから割り当てられたアクセスキーを設定します。アクセスキーには、エージェントが属するプロジェクトとセキュリティ通信のためのパスワードキーが含まれています。

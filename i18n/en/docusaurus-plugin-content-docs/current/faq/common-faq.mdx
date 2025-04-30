@@ -1,0 +1,49 @@
+---
+id: common-faq
+title: Common FAQs
+description: This is the common FAQ document used when using the WhaTap monitoring service.
+keywords:
+  - Common
+  - FAQ
+---
+
+This is the common FAQ document used when using the WhaTap monitoring service.
+
+<div className="faqs">
+
+### Data according to the data query range
+
+> Why isn't real-time data displayed when I query long-term data?
+
+WhaTap displays different data formats depending on the data query range. As the query range gets wider, the data aggregation interval also gets longer.
+
+- **Less than 3 hours**: Real-time data at 5-second intervals
+
+- **3 hours to 15 days**: Statistical data at 5-minute intervals
+
+- **16 days or more**: Statistical data at 1-hour intervals
+
+### Changed the agent data collection project {#agent-project-change}
+
+> How can I change my Agent data collection project? 
+
+After modifying the **collection server IP** and **project access key** in the *whatap.conf* file within the WhaTap Agent installation directory, restart the agent. **Collection Server IP** and **Project Access Key** can be found in the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> menu on the WhaTap service screen. 
+
+```bash
+whatap.server.host= # Collection server IP
+license= # Project Access Key
+```
+
+:::note
+
+For Kubernetes monitoring products, see [the following](/kubernetes/k8s-collection-server-ip). 
+
+:::
+
+#### Application of the Multiple Agent
+
+For application and server monitoring products, you can change multiple agent settings at once by selecting the ***Apply Multiple Agents*** option in the <Cmdname sid="side_agentSetting" className="uitext" /> menu. 
+
+**If deployed in the container environment** You have to modify the *whatap.conf* file within the image containing the Whatap agent, and rebuild and redeploy the image to apply the changes. Note that the previous image settings are kept when making changes in the UI.
+
+</div>

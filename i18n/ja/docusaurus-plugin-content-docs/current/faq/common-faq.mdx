@@ -1,0 +1,49 @@
+---
+id: common-faq
+title: Common FAQs
+description: WhaTapモニタリングサービス利用中の共通FAQ文書です。
+keywords:
+  - 共通
+  - FAQ
+---
+
+WhaTapモニタリングサービス利用中の共通FAQ文書です。
+
+<div className="faqs">
+
+### データ照会範囲によるデータ
+
+> 長期間データを照会すると、リアルタイムのデータが出てこないのはなぜですか？
+
+WhaTapは、データ照会範囲によって表示されるデータ形式が異なります。 照会範囲が長くなるほど、データ集計間隔も長くなります。
+
+- **3時間未満**: 5秒間隔のリアルタイムデータ
+
+- **3時間以上~15日以下**: 5分間隔の統計データ
+
+- **16日以上**: 1時間間隔の統計データ
+
+### エージェントデータ収集プロジェクトの変更{#agent-project-change}
+
+> エージェントデータ収集プロジェクトはどのように変更しますか？ 
+
+WhaTapエージェントインストールディレクトリ内の*whatap.conf*ファイルで**収集サーバーIP**と**プロジェクトアクセスキー**を修正した後、エージェントを再起動します。 **収集サーバーIP**及び**プロジェクトアクセスキー**は、WhaTapサービス画面の<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューで確認できます。 
+
+```bash
+whatap.server.host= # 収集サーバーIP
+license= # プロジェクトアクセスキー
+```
+
+:::note
+
+Kubernetesモニタリング製品の場合は[次の文書](/kubernetes/k8s-collection-server-ip)を参照してください。 
+
+:::
+
+#### マルチエージェント適用
+
+アプリケーションとサーバーモニタリング製品の場合は、<Cmdname sid="side_agentSetting" className="uitext" />メニューで***マルチエージェント適用***オプションの選択時に複数のエージェント設定を一度に変更できます。 
+
+**コンテナ環境で配布された場合**WhaTapエージェントを含む画像内の*whatap.conf*ファイルの修正後、画像を再ビルド及び再配布する必要があります。 UIで変更すると、既存のイメージ設定が維持されるので注意が必要です。
+
+</div>

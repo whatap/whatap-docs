@@ -82,7 +82,7 @@
 
 {/* <ImgLang img="metric-warning-notice-new-event-condition.png" desc="이벤트 조건 정의" /> */}
 
-<Xclude product="server,db2">
+<Xclude product="server,db2,sapase">
 
 #### <Cmdname sid="template" className="uitext" /> {#select_template}
 
@@ -263,7 +263,7 @@ ex. ${4xxErrorType} == '401'
 
 - <Cmdname sid="message" className="uitext" />: ユーザーに配信する通知メッセージの内容を入力します。 変数を使用して動的データを包含できます。
 
-  ![Message example](/img/event-config-message-example.png)
+  <ImgLang img='event-config-message-example.png' desc='Message example' />
 
   - `${Tag}`または`${Field}`を入力してメッセージに変数を適用できます。 変数は選択したメトリクスデータ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。 <Cmdname sid="tag_count" className="uitext" />メニューで入力できる`${Tag}`または`${Field}`変数を確認できます。
 
@@ -276,6 +276,8 @@ ex. ${4xxErrorType} == '401'
   <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで<Cmdname sid="category" className="uitext" />を選択した上で入力できる`${Tag}`または`${Field}`変数を確認します。 現在のイベントテンプレートの<Cmdname sid="category" className="uitext" />名前は、<Link to="#basic-template">次の文書</Link>の<b>カテゴリ</b>項目を参考にしてください。
 
   :::
+
+  <Xclude product='db2,sapase'>
 
   :::note
 
@@ -328,6 +330,8 @@ ex. ${4xxErrorType} == '401'
   </InDoc>
 
   :::
+
+  </Xclude>
 
 - <Cmdname sid="alert_test" className="uitext" />：現在のイベントで発生する通知受信時に入力したイベント名とメッセージを事前にチェックすることができます。 必須項目(<Cmdname sid="TTL07365" className="uitext" replace="</br>" />、<Cmdname sid="event_title" className="uitext" />、<Cmdname sid="TTL06883" className="uitext" />)をすべて入力しないとテストできません。
 

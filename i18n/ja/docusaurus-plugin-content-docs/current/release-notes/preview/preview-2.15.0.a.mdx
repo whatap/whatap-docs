@@ -14,6 +14,241 @@ toc_max_heading_level: 2
 
 :::
 
+## Preview 2.15.0.a4
+
+2025年03月20日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status>決済権限付与時にEメール承認手続きを通じて付与するように機能追加
+
+- <Status priority='1'>Feature</Status>決済権限を付与する時、下位レベル集団(グループ、プロジェクト)に決済権限を一括付与できるように機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" />メニューでウィジェット内のプロジェクト選択画面でキーボードでプロジェクトを選択できる機能を追加
+
+- <Status priority='1'>Feature</Status>タイムセレクターの選択時間を維持する機能を追加
+
+  :::note 
+
+  <Cmdname sid="side_report" className="uitext" />など一部のメニューでは適用されない場合があります。
+
+  :::
+
+- <Status priority='1'>Feature</Status> ![お知らせアイコン](/img/ico-noti.svg) <Cmdname sid="sms_alert_status" className="uitext" />の設定を個人設定で保存するように変更
+
+- <Status priority='1'>Feature</Status> ![お知らせアイコン](/img/ico-noti.svg) <Cmdname sid="sms_alert_status" className="uitext" />に受信者タグをフィルタリングする機能を追加
+
+- <Status priority='1'>Changed</Status> ![お知らせアイコン](/img/ico-noti.svg) <Cmdname sid="sms_alert_status" className="uitext" />リストで通知をクリックすると、新しい画面で開くように変更
+
+- <Status priority='0'>Fixed</Status>区間モードのタイムセレクターがリアルタイム状態の時、タイマークリック時に時間が停止しない現象を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_agentSetting" className="uitext" />及び<Cmdname sid="side_serverSetting" className="uitext" />メニューで<Cmdname sid="okind_default" className="uitext" />, <Cmdname sid="project_default" className="uitext" />内オプションの削除時に適用されない現象を修正
+
+---
+
+### `Application`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="AA001" className="uitext" />チャート内のトランザクション数を表示するUIの位置を変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" />メニューで画像をダウンロードする時に異常にキャプチャーされる現象を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_txSearch" className="uitext" />メニューで次のページのデータを照会する時、前のページのデータが重複表示される現象を修正
+
+#### Java
+
+<Status priority='1'>New</Status> <Cmdname sid="side_agentResourceDashboard" className="uitext" />メニュー追加
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverDetail" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューで<Cmdname sid="process" className="uitext" />リスト内の<Cmdname sid="memory" className="uitext" />カラムにメモリ容量表示を追加
+
+- <Status priority='0'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューで<Cmdname sid="select_server" className="uitext" />時、非活性サーバー表示を活性化するトグルを追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューで既存の**状態**カラム名を<Cmdname sid="CNT09472" className="uitext" />に変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューで既存の**whatap_infradVersion**カラム名を***Agent Version***に変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverInventory" className="uitext" />メニューで***Agent Version***カラム選択時、テーブルヘッダーにカラム名が表示されない現象を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverList" className="uitext" />メニュー進入時に断続的にホワイトアウトが発生する問題を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="sms_resource_board" className="uitext" /> &gt; <UI>Server Status Map</UI>パネルのハニカムビューで`paused`状態のサーバーが`ok`状態で表示される現象を修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" />メニューで<Cmdname sid="server_status" className="uitext" />ウィジェットの`paused`状態の色を<Cmdname sid="sms_resource_board" className="uitext" /> 色と一致するように修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューでDisk Totalの容量を合算した場合`ZFS`ファイルシステムを合算除外対象に含める
+
+  - 既存除外対象: `FUSE`、`NFS`、`NFS4`、`NFSD`、`PNFS`、`CIFS`、`SMBFS`
+
+  - 追加除外対象: `ZFS`
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_kubeEventList" className="uitext" />メニューの詳細を見るに<Cmdname sid="TTL08317" className="uitext" type="kube_pod" />及び<Cmdname sid="TTL08317" className="uitext" type="node" />タブを追加
+
+- <Status priority='1'>Changed</Status>サイドバーメニューの構造改編
+
+  ![サイドバーメニューの構造改編](/img/release/k8s-sidemenu-change2.png)
+
+---
+
+### `Database`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />及び<Cmdname sid="side_multiInstance" className="uitext" />メニューでDocumentDBプリセットを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューでインスタンスのセレクターオプションをアルファベットベースでソート
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />メニューでDatabase Mapの新規ウィジェットを追加
+
+#### MySQL, Oracle V2, Oracle Pro
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; <UI>Top SQL</UI>新規メニュー追加
+
+#### Oracle、Oracle Pro
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <UI>RACモニタリング</UI>新規メニュー追加
+
+---
+
+{/* 로그 관련 로케일 업데이트 필요 */}
+
+### `Log`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_logSetting" className="uitext" /> &gt; <Cmdname sid="TTL08814" className="uitext" />タップで<Cmdname sid="DSC09450" className="uitext" />選択後<Cmdname sid="BTN08985" className="uitext" />時の確認機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_logSetting" className="uitext" /> &gt; <Cmdname sid="TTL08814" className="uitext" />タブで点検終了後、点検結果に対するサンプルログの確認機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_logSetting" className="uitext" /> &gt; <Cmdname sid="TTL08814" className="uitext" />タブで点検履歴を確認する機能を追加
+
+</div>
+
+## Preview 2.15.0.a3
+
+2025年03月13日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューの<Cmdname sid="dashboard_list" className="uitext" />で<Cmdname sid="share_dashboard" className="uitext" />モーダル内に共有されたユーザー確認及び削除機能を追加
+
+- <Status priority='1'>Changed</Status>プリセットリストで保存されたプリセットを削除すると、確認プロセスを追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="dashboard_list" className="uitext" />で保存された<Cmdname sid="flexboard" className="uitext" />削除時に確認プロセスを追加
+
+- <Status priority='1'>Changed</Status>既存<Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニュー内<Cmdname sid="BTN07592" className="uitext" />間隔選択オプションを<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agents" className="uitext" />メニューに移動
+
+- <Status priority='1'>Changed</Status>フィルター画面を閉じたり<Cmdname sid="apply" className="uitext" />ボタンクリック時にフィルターが直ちに反映されるようフィルターの使用方式を改善
+
+  <details>
+  <summary><b>フィルター改善適用メニュー</b></summary>
+
+  - ![サイトマップアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_metricsChart" className="uitext" /> <code class="oldfunc">Old</code> 
+
+  - ![サイトマップアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_metricsML" className="uitext" /> 
+
+  - ![サイトマップアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_integratedLogSearch" className="uitext" />
+
+  - <Cmdname sid="site_management" className="uitext" /> &gt; <Cmdname sid="side_metricsCategory" className="uitext" /> &gt; <Cmdname sid="side_metricsRebuild" className="uitext" />
+
+  - <Cmdname sid="side_flexboard" className="uitext" />
+
+  - <Cmdname sid="side_integratedTopology" className="uitext" />
+
+  - <Cmdname sid="side_integratedRealtimeAlert" className="uitext" />
+
+  - サーバーモニタリング&gt; <Cmdname sid="side_report" className="uitext" /> &gt; <Cmdname sid="S100_ServerDailyReport" className="uitext" />
+
+  </details>
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />メニューでテキストダウンロード機能を追加
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />メニューでスレッドダンプが表示されない現象を修正
+
+#### Java
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで<Cmdname sid="JAVA-agent-setup-2-subject" className="uitext" />案内を修正
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューで***Disk Used Space (%)***チャートを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />メニューの右下領域に***File System***タブを追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverList" className="uitext" />メニューで<Cmdname sid="management" className="uitext" />機能の動作方式を改善
+
+  - <Cmdname sid="restart" className="uitext" /> / <Cmdname sid="paused" className="uitext" />: 既存のツールチップによる動作確認方式をポップオーバー方式に変更
+
+  - <Cmdname sid="ITM09356" className="uitext" />:
+
+    - 既存**解除する**を<Cmdname sid="ITM09356" className="uitext" />に変更
+
+    - 既存のツールチップによる動作確認方式をモーダルで選択したエージェントリストを確認し、直接`delete`入力後、除外する方式に変更
+
+--- 
+
+### `Kubernetes`
+
+:::note 
+
+<Cmdname sid="side_objectManifest" className="uitext" />メニューが既存の<Cmdname sid="side_cluster" className="uitext" />メニューの下位から<Cmdname sid="side_analysis" className="uitext" />メニューの下位に移動します。
+
+:::
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_objectManifest" className="uitext" />メニューの詳細表示に検索機能を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_containerMap" className="uitext" />メニューの要約表示内の<Cmdname sid="log" className="uitext" /> &gt; <Cmdname sid="container_stdout_stderr" className="uitext" />タブでコンテナ選択オプションUIを変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_projectList" className="uitext" />のカードビューで、ネームスペースプロジェクトの場合<Cmdname sid="edit_project_name" className="uitext" />オプションが表示されないように修正
+
+---
+
+### `Database`
+
+#### PostgreSQL, Oracle, MySQL, SQL Server, Cubrid, Altibase V2, IBM DB2
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで<UI>DBサーバーに付加エージェント(XOS)インストール及びその他のオプション設定</UI>セクションの <UI>XOS(Windows)</UI>タブの下位に`msvcp120.dll`、`msvcr120.dll`欠落時の解決方法の案内を追加
+
+</div>
+
+## Preview 2.15.0.a2
+
+2025年03月10日
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでサーバーイベントの追加及び修正時に<Cmdname sid="alert_rule" className="uitext" />内の<Cmdname sid="active" className="uitext" />トグルスタイルを変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューでサーバーイベントの追加及び修正時にイベントタイプを変更する場合は、案内モーダルスタイルを変更
+
+### `Database`
+
+#### SAP ASE
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="instance_monitoring" className="uitext" />メニュー修正
+
+- アクティブセッションテーブルでSPID値がすべて同じように表示される問題を修正
+
+- アクティブ セッション テーブルのキルセッションチェックボックスですべての項目がチェックされる問題を修正
+
+- ***Network(packets)***ウィジェット名を修正
+
+</div>
+
 ## Preview 2.15.0.a1
 
 2025年03月06日

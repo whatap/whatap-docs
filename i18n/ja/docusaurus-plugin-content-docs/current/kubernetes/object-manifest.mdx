@@ -9,7 +9,7 @@ keywords:
   - Object Manifest情報
 ---
 
-ホーム画面 > プロジェクトを選択 > <Cmdname sid="cluster" className="uitext" /> > **_Object Manifest_** 
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_objectManifest" className="uitext" />
 
 :::note 
 
@@ -96,7 +96,7 @@ containers:
 
 ### Object Manifest情報の詳細
 
-オブジェクト一覧で![アイコン](/img/ico-detail-view.svg) **_詳細を見る_**ボタンの選択時**_オブジェクトマニフェスト詳細_**ウィンドウで選択したオブジェクトのマニフェストを照会できます。 
+オブジェクト一覧で![アイコン](/img/ico-detail-view.svg) **_詳細を見る_**ボタンの選択時**_オブジェクトマニフェスト詳細_**ウィンドウで選択したオブジェクトのマニフェストを照会できます。
 
 <ImgLang img='k8s-object-manifest-detail.png' desc='Object Manifest詳細' />
 
@@ -113,6 +113,12 @@ containers:
 オブジェクトマニフェストが保存される警告イベントは、WarningタイプのKubernetesイベントオブジェクトを意味します。
 
 :::
+
+#### オブジェクトマニフェスト検索と探索
+
+**_オブジェクトマニフェスト詳細_**画面でオブジェクトマニフェスト内の特定のキーワードを見つけるための検索機能を提供します。 検索バーに入力した文字列は、オブジェクトマニフェスト内でハイライトされます。 これにより、複雑なマニフェスト構造で特定の設定やフィールドをすばやく確認できます。 
+
+また**_オブジェクトマニフェスト詳細_**画面の右側に、マニフェスト全体の構造をツリー形式で要約したナビゲーションパネルを提供します。 これにより、大容量マニフェスト文書を扱う際に、別途のスクロールなしに主要項目を確認できます。 
 
 #### Kubernetesイベント連携
 

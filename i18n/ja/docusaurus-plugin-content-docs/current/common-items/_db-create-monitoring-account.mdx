@@ -1,6 +1,6 @@
 ## アカウント生成 {#uid}
 
-<Xclude product="db2">
+<Xclude product="db2,sapase">
 
 データベースモニタリングをするために必要な権限を持つアカウントを作成します。root(admin) アカウントでログインしてアカウントを作成してください。
 
@@ -155,6 +155,52 @@ GRANT SELECT ON TABLE SYSIBMADM.MON_LOCKWAITS TO USER {DB_User};
 
 </InDoc>
 
+<InDoc product="sapase">
+
+SAP ASEでは、ユーザーアカウントをデータベース内で別途作成した後、ログインアカウントを追加して権限を付与する必要があります。
+
+1. ログインアカウントを作成します。
+
+   ```sql
+   sp_addlogin '{login}','{Password}'
+   go
+   ```
+
+2. 作成したログインアカウントをデータベース ユーザーとして登録します。
+
+   ```sql
+   use {db}
+   go
+   sp_adduser '{login}','{user}'
+   go
+   ```
+
+3. ユーザーに必要な権限を付与します。
+
+   ```sql
+   --基本モニタリング権限
+   grant role mon_role to {login}
+   go
+
+   --killセッション権限
+   grant role sa_role to {login}
+   go
+   ```
+
+4. モニタリングを活性化するために必要なパラメータを設定します。
+
+   ```sql
+   sp_configure 'enable monitoring', 1
+   sp_configure 'wait event timing', 1
+   sp_configure 'max SQL text monitored', 1024
+   sp_configure 'SQL batch capture', 1
+   sp_configure 'per object statistics active', 1
+   sp_configure 'statement statistics active', 1
+   sp_configure 'object lockwait timing', 1
+   ```
+
+</InDoc>
+
 <InDoc product="oracle,oracle-pro">
 
 - 一般的な場合
@@ -262,7 +308,7 @@ GRANT SELECT ON TABLE SYSIBMADM.MON_LOCKWAITS TO USER {DB_User};
 
 :::note
 
-<Xclude product="postgresql,mysql,altibase,mssql,db2">
+<Xclude product="postgresql,mysql,altibase,mssql,db2,sapase">
 
 - 既に存在するアカウントを使用する場合は、[DBユーザーファイルの作成](#create-db-user)に進みます。権限がない場合は、モニタリングを開始できません。
 
@@ -278,6 +324,20 @@ GRANT SELECT ON TABLE SYSIBMADM.MON_LOCKWAITS TO USER {DB_User};
 
 </InDoc>
 
+<Xclude product="sapase">
+
 - コード例の`DB_Password`には、ユーザーパスワードを入力します。
+
+</Xclude>
+
+<InDoc product="sapase">
+
+権限を持つアカウントがある場合は、このステップを省略して[次の段階](#check-accesskey)に移ります。
+
+- 例示コードの`login`は、データベースサーバーに接続するためのユーザー認証情報です。`user`は特定のデータベースで使用するユーザーアカウントです。ユーザーが利用するユーザーアカウント名に変更します。
+
+- 例示コードの`password`にユーザーパスワードを入力します。
+
+</InDoc>
 
 :::

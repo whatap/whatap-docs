@@ -1,0 +1,42 @@
+---
+id: java-batch-2_2_26
+title: Java Batch Agent v2.2.26
+toc_max_heading_level: 2
+pagination_next: release-notes/java-batch/java-batch-2_2_25
+displayed_sidebar: releaseSidebar
+---
+
+March 27, 2025
+
+- <Status priority='1'>New</Status> Added the bind variables collection function.
+
+  - The batch process and batch host setting are required.
+
+    <Columns>
+    <Column className="text--left width--50-2">
+    ```bash title='batch'
+    # default: false  
+    hook_batch_pstmt_param_enabled=true
+    ```
+    </Column>
+    <Column className="text--left">
+    ```bash title='batch-host'
+    # default: false
+    trace_batch_host_param_enabled=true
+    ```
+    </Column>
+    </Columns>
+
+    :::caution
+
+    Collecting bind variables can affect the application performance.
+
+    :::
+
+- <Status priority='1'>Feature</Status> Added the transaction and SQL statistics collection feature.
+
+- <Status priority='1'>Feature</Status> Added collection of DB connection time, SQL fetch count, and SQL fetch time for transactions.
+
+import DownloadJavaBatchAgent from "./_import_dl-java-batch-agent.mdx";
+
+<DownloadJavaBatchAgent />

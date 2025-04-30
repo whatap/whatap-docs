@@ -70,7 +70,7 @@ WhaTapモニタリングでの決済情報登録、決済権限譲渡及びプ�
 
 ### ![2](/img/number-02.png) 決済権限の変更 {#transferpayauth}
 
-**決済**権限は、**1個のアカウント**へのみ付与できます。 例えば、AアカウントからBアカウントに決済権限を譲渡する場合、Aアカウントはこれ以上決済権限を保有しなくなります。 また、**決済**権限を受け取るアカウントが決済情報を登録した状態でなければ**決済**権限は譲渡できません。
+**決済**権限は組織、グループ、プロジェクト単位で付与でき**1人**だけ持つことができます。 例えば、AアカウントからBアカウントに決済権限を譲渡する場合、Aアカウントはこれ以上決済権限を保有しなくなります。 また、**決済**の権限を移譲するアカウントは、決済情報を登録した状態でEメール認証手続きを通じて承認を受ける方式で移譲できます。 
 
 #### 決済権限を受け取るアカウントの決済情報登録
 
@@ -82,9 +82,9 @@ WhaTapモニタリングでの決済情報登録、決済権限譲渡及びプ�
 
 1. [WhaTapモニタリング](https://service.whatap.io)で、**決済**権限と**修正**権限を持ったアカウントとしてログインしてください。
 
-2. ホーム画面から、決済権限を譲渡するプロジェクトを選択してください。 
+2. ホーム画面から、決済権限を譲渡する組織やグループ、またはプロジェクトを選択します。 
 
-3. <Cmdname sid="management" className="uitext" />メニュー下位の<Cmdname sid="project_member" className="uitext" />メニューへ移動してください。
+3. 選択した単位のメンバー管理メニューに移動します。 単位別メンバー管理メニューの移動の詳細については[次の文書](/about-billing#o-member-management)を参照してください。 
 
 4. 画面右上の<Cmdname sid="invite_member" className="uitext" />ボタンを選択します。
 
@@ -92,19 +92,57 @@ WhaTapモニタリングでの決済情報登録、決済権限譲渡及びプ�
 
 6. <Cmdname sid="member_invite_list" className="uitext" replace=" ({length})" />に該当アカウントが登録されたことを確認してから、<Cmdname sid="complete" className="uitext" />ボタンをクリックしてください。
 
+:::note 
+
+**組織メンバー管理メニューの移動** <ScrollToLink anchor='o-member-management' />
+
+1. サイドメニュー上段の組織メニューの横の![右方向アイコン](/img/right-arrow.svg)ボタンを選択します。 
+
+2. 組織リストパネル内の組織名の横の![設定アイコン](/img/ico-setting.svg) ボタンを選択します。 
+
+3. <Cmdname sid="side_organizationManagement" className="uitext" />画面で<Cmdname sid="side_organizationMembers" className="uitext" />メニューに移動します。
+
+**グループメンバー管理メニューの移動** 
+
+1. サイドメニュー上段の<Cmdname sid="BTN07332" className="uitext" />メニューを選択します。 
+
+2. グループ及びプロジェクトリストパネルにおいて、グループ名の横の![右方向アイコン](/img/right-arrow.svg)ボタンを選択します。 
+
+3. <Cmdname sid="side_groupMember" className="uitext" />メニューに移動します。
+
+**プロジェクトメンバー管理メニューの移動**
+
+<Cmdname sid="management" className="uitext" />メニュー下位の<Cmdname sid="project_member" className="uitext" />メニューに移動します。
+
+:::
+
 #### 権限の修正
+
+{/* 이미지 추가 필요 */}
 
 <ImgLang img='best-p/about-billing-member-role.png' desc='権限修正sc' />
 
-1. <Cmdname sid="project_member" className="uitext" />一覧から決済権限を譲渡するアカウントの右側に<LinkImage img="char-a.svg" desc="指示線 a" /><LinkImage img="ico-edit.svg" desc="편집 아이콘" />ボタンをクリックしてください。
+1. 選択した単位のメンバーリストから決済権限を移譲するアカウントの右側に<LinkImage img="char-a.svg" desc="지시선 a" /> <LinkImage img="ico-edit.svg" desc="편집 아이콘" />ボタンを選択します。
 
 2. <Cmdname sid="edit_member_role" className="uitext" /> 画面が表示されたら権限のうち、<LinkImage img="char-b.svg" desc="指示線 b" /> <Cmdname sid="billing" className="uitext" />権限を許可してください。
 
-3. 設定を完了したら、<LinkImage img="char-c.svg" desc="指示線 c" /> <Cmdname sid="apply" className="uitext" />ボタンを選択します。
+3. <Cmdname sid="billing" className="uitext" />権限トグルを活性化した後<Cmdname sid="edit_member_role" className="uitext" />画面で<LinkImage img="char-c.svg" desc="지시선 c" /> <Cmdname sid="apply" className="uitext" />ボタンを選択します。
+
+4. 決済確認画面が表示されたら<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+
+5. <Cmdname sid="TTL09415" className="uitext" />画面で下位グループまたは下位プロジェクトに同じ権限の付与有無を設定した後<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+
+   <ImgLang img='faq/about-billing-member-role-check.png' desc='결제 권한 변경' />
+
+6. 当該アカウントに決済権限の変更を承認するためのEメール送信案内を確認した後<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+
+7. 決済権限変更対象アカウント**Eメール**通じて**承認**時、決済権限が最終的に変更されます。 
 
 :::note
 
 - 決済権限を持ったメンバーの場合、<Cmdname sid="project_member" className="uitext" />一覧で名前の右側に<code class='pay'>決済</code>タグが表示されます。 
+
+- 他のメンバーに決済権限を付与する場合は、Eメール認証による承認手続きが必要です。 しかし、メンバー本人に直接決済権限を付与する場合、該当承認手続きが省略されます。
 
 - <Cmdname sid="edit_member_role" className="uitext" />画面は、プロジェクトメンバー権限の修正か、または組織およびグループメンバー権限の修正かによって異なります。 メンバー権限の詳細については、<Link to="/project/project-structure#project-auth">次の文書</Link>を参照してください。
 

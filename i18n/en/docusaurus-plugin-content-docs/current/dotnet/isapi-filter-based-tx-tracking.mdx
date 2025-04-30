@@ -1,0 +1,91 @@
+---
+id: isapi-filter-based-tx-tracking
+title: Analysis of ISAPI filter-based transactions
+description: It explains how to apply the transaction tracing feature based on the ISAPI filter.
+keywords:
+  - .NET
+---
+
+The WhaTap .NET agent provides the ISAPI filtering feature to enable tracing transactions for various applications running on IIS. This allows for a wide range of monitoring, including requests based on technologies other than .NET, such as ASP, ASP.NET, CGI, and ISAPI extensions.
+
+:::note 
+
+**Requirements**
+
+The ISAPI filtering feature is supported in WhaTap .NET Agent v2.4.0 or later.
+
+:::
+
+## Installation
+
+1. Install the .NET agent following the [Agent installation](/dotnet/install-agent) instructions. 
+
+2. After installing the agent, copy the *whatap_isapi_filter.dll* file to the root directory of the target site. 
+
+   ```bash
+   C:..> copy "C:\Program Files\WhaTap .NET\whatap_isapi_filter.dll" C:\inetpub\yoursite
+   ```
+
+   - If you copy the filter file into the directory where the IIS website is running, no additional setup is required. 
+
+   - The filter file does not necessarily have to be located in the directory where the website is hosted, but the path and file must have **read and execute roles** granted to the **IIS_IUSRS** group.
+
+## Setting the ISAPI filter
+
+ISAPI filters can be applied **server-wide** or **individually to sites**.
+
+### Applying the server-wide filter
+
+To apply filters to requests from all websites hosted on IIS, set it as follows. 
+
+<ImgLang img="dotnet-isapi-pic-001.png" desc="Apply server-wide filter" />
+
+1. Run the IIS Manager.
+
+2. In the tree on the left, select a server node.
+
+3. Double-click the ISAPI filter icon in the center area.
+
+### Applying individual site filters
+
+To filter transactions on individual sites, set as follows. 
+
+<ImgLang img="dotnet-isapi-pic-002.png" desc="Apply individual site filters" />
+
+1. Run the IIS Manager.
+
+2. In the tree on the left, select a target site. 
+
+3. Double-click the ISAPI filter icon in the center area. 
+
+### Adding filter items
+
+<ImgLang img="dotnet-isapi-pic-003.png" desc="Added a filter" />
+
+1. Click the Add button in the task pane on the right. 
+
+2. Specify the filter name freely.
+
+3. Locate and select the *whatap_isapi_filter.dll* file.
+
+4. Click. 
+
+## If the ISAPI filter does not work
+
+If it does not work after setting the filter, you may need to add **ISAPI and CGI restrictions**.
+
+<ImgLang img="dotnet-isapi-pic-004-2.png" desc="filter does not work sc" />
+
+1. In the tree on the left in IIS Manager, select a server. 
+
+2. Double-click the ISAPI and CGI restriction icons in the center area. 
+
+3. Click the Add button in the task pane on the right. 
+
+4. Select the *whatap_isapi_filter.dll* file. 
+
+5. Enter the item name. 
+
+6. Check in the Allow extended path execution. 
+
+7. Click. 

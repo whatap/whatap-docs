@@ -1,0 +1,29 @@
+---
+id: python-1_7_7
+title: Python Agent v1.7.7
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_7_6
+displayed_sidebar: releaseSidebar
+---
+
+March 11, 2025
+
+- <Status priority='1'>New</Status> Added the option to control whatap module's log output in *whatap.conf*.
+
+  - **ignore_whatap_stdout** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    If it is set to `true`, all standard output logs from the WhaTap Python agent module are disabled.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where an error occurs when tracing multiple transactions after setting the environment variable `OKIND`.
+
+- <Status priority='0'>Fixed</Status> Improved the DB monitoring error when executing the `execute` command when there are multiple SQL connections.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where binding variables for query are not displayed when using `aiomysql` in `sqlalchemy`.
+
+:::note
+
+Agent download: [whatap-python v1.7.7](https://pypi.org/project/whatap-python/1.7.7/)
+
+:::

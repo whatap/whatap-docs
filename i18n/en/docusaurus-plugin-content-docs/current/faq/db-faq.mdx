@@ -52,6 +52,28 @@ See the following.
 
 :::
 
+### Collecting resource data for DB monitoring
+
+> Resource metrics such as CPU and memory are not visible in the DB monitoring.
+
+There are different methods for collecting resource data from the DB server depending on the environment.
+
+- **DB Agent Environment**: Installing the XOS modules on the DB local server is required to collect resource data. 
+
+:::note 
+
+For detailed configuration instructions, see the [document](https://docs.whatap.io/search?whatap%5Bquery%5D=XOS%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%84%A4%EC%A0%95) for the platform that matches your DB agent environment.
+
+:::
+
+- **RDS Environment**: Because RDS cannot be installed on a local server, you can collect related metrics by linking with the AWS CloudWatch. 
+
+:::note 
+
+For detailed configuration instructions, see the [document](https://docs.whatap.io/search?whatap%5Bquery%5D=RDS%20CloudWatch) for the platform that matches your RDS environment.
+
+:::
+
 ### In case monitoring is not possible after creating an additional database in the DB instance
 
 > I created an additional database in the DB instance, but it was not monitored by WhaTap. What should I do?

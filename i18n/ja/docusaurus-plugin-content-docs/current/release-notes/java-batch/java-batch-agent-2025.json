@@ -1,0 +1,31 @@
+[
+  {
+    "url": "https://docs.whatap.io/release-notes/java-batch/java-batch-2_2_26/",
+    "ver": "v2.2.26",
+    "date": "2025-03-27",
+    "Lists": [
+      {
+        "ver": "v2.2.26",
+        "hash": "v2226",
+        "product": "Java Batch Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> 바인드 변수 수집 기능 추가</p>",
+        "details": "<ul>\n<li>\n<p>배치 프로세스 및 배치 호스트 설정 필요</p>\n<div class=\"container center\"><div class=\"row\"><div class=\"col text--left width--50-2\"><div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">batch</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token comment\" style=\"color:rgb(105, 112, 152);font-style:italic\"># default: false  </span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token assign-left variable\" style=\"color:rgb(191, 199, 213)\">hook_batch_pstmt_param_enabled</span><span class=\"token operator\" style=\"color:rgb(137, 221, 255)\">=</span><span class=\"token plain\">true</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"클립보드에 코드 복사\" title=\"복사\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div></div><div class=\"col text--left\"><div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">batch-host</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token comment\" style=\"color:rgb(105, 112, 152);font-style:italic\"># default: false</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token assign-left variable\" style=\"color:rgb(191, 199, 213)\">trace_batch_host_param_enabled</span><span class=\"token operator\" style=\"color:rgb(137, 221, 255)\">=</span><span class=\"token plain\">true</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"클립보드에 코드 복사\" title=\"복사\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div></div></div></div>\n<div class=\"theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"><svg viewbox=\"0 0 16 16\"><path fill-rule=\"evenodd\" d=\"M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z\"></path></svg></span>주의</div><div class=\"admonitionContent_BuS1\"><p>바인드 변수 수집 시 애플리케이션 성능에 영향을 줄 수 있습니다.</p></div></div>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.26",
+        "hash": "v2226",
+        "product": "Java Batch Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 트랜잭션 및 SQL 통계 수집 기능 추가</p>"
+      },
+      {
+        "ver": "v2.2.26",
+        "hash": "v2226",
+        "product": "Java Batch Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 트랜잭션의 DB Connection Time, SQL Fetch Count, SQL Fetch Time 수집 추가</p>"
+      }
+    ]
+  }
+]

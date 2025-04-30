@@ -789,5 +789,8 @@
   },
   "pages.dbfunctions.title": {
     "message": "データベース別のサポート機能比較"
+  },
+  "index.pages.section.product.nms": {
+  "message": "ネットワーク機器の性能指標と状態をリアルタイムでモニタリングします。"
   }
 }

@@ -1,0 +1,55 @@
+---
+id: multi-instance-monitoring
+title: マルチインスタンス
+description: 複数のデータベースインスタンスの主要メトリクスを統合および表示できる機能を提供します。
+keywords:
+  - SAP ASE
+  - インスタンス
+  - ダッシューボード
+  - データベースモニタリング
+  - マルチインスタンス
+---
+
+import Dbv2mulitinstancemonitoringdesc from "../common-items/_db-v2-mulit-instance-monitoring-desc.mdx";
+import Dbmultiinstancemonitoringdescnotes from "../common-items/_db-multi-instance-monitoring-desc-notes.mdx";
+import Apmdashboardsetpasttime from "../common-items/_apm-dashboard-set-past-time.mdx";
+import Apmdashboardcheckagent from "../common-items/_apm-dashboard-check-agent.mdx";
+import Apmdashboradeditwidget from "../common-items/_apm-dashborad-edit-widget.mdx";
+import CustomWidget from "../common-items/_db-mim-custom-widget.mdx";
+import Apmdashboardwidgetoptions from "../common-items/_apm-dashboard-widget-options.mdx";
+import Apmdashboardpreset from "../common-items/_apm-dashboard-preset.mdx";
+import Dbv2mimchartarea from "../common-items/_db-v2-mim-widgets.mdx";
+import Dbv2mimactivesessiondesc from "../common-items/_db-v2-mim-activesession-desc.mdx";
+import Dbdashboardactivesessiondesc from "../common-items/_db-dashboard-activesession-desc.mdx";
+import Dbdashboardlocktreedesc from "../common-items/_db-dashboard-locktree-desc.mdx";
+import Dbv2mimactivesessionnote from "../common-items/_db-v2-mim-activesession-note.mdx";
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+import Postgresqlcolumn from "../common-items/_db_postgresql-column.mdx";
+import SessionColumn from "../common-items/_db-db2-column.mdx";
+import Dbdashboardsessiontabledownload from "../common-items/_db-dashboard-session-table-download.mdx";
+import Dbdashboardsessiontablenew from "../common-items/_db-dashboard-session-table-new.mdx";
+
+<Dbv2mulitinstancemonitoringdesc />
+
+<ProdImg img='db-multi-instance.png' desc='マルチインスタンス' />
+
+<Collection docs={
+  [
+    {Topic: Dbmultiinstancemonitoringdescnotes, props: {level: 2, desc: '개요 Note'}},
+    {Topic: Apmdashboardsetpasttime, props: {level: 2, desc: '과거 데이터 조회하기'}},
+    {Topic: Apmdashboardcheckagent, props: {level: 2, desc: '에이전트 확인하기'}},
+    {Topic: Apmdashboradeditwidget, props: {level: 2, desc: '위젯 편집하기'}},
+    {Topic: CustomWidget, props: {level: 2, desc: '사용자 정의 위젯'}},
+    {Topic: Apmdashboardwidgetoptions, props: {level: 2, desc: '위젯 옵션 이용하기'}},
+    {Topic: Apmdashboardpreset, props: {level: 2, desc: '프리셋'}},
+    {Topic: Dbv2mimchartarea, props: {level: 2, desc: '주요 위젯 알아보기'}},
+    {Topic: Dbv2mimactivesessiondesc, props: {level: 2, desc: 'Session Table 위젯'}},
+    {Topic: Dbdashboardactivesessiondesc, props: {desc: 'Active sessions'}},
+    {Topic: Dbdashboardlocktreedesc, props: {desc: 'Lock tress'}},
+    {Topic: Dbv2mimactivesessionnote, props: {desc: 'Note'}},
+    {Topic: Dbquerydetails, props: {level: 3, desc: '쿼리 자세히 보기'}},
+    {Topic: SessionColumn, props: {level: 3, desc: '컬럼 정보 안내'}},
+    {Topic: Dbdashboardsessiontabledownload, props: {level: 3, desc: '조회 목록 다운로드하기'}},
+    {Topic: Dbdashboardsessiontablenew, props: {level: 3, desc: '새창으로 보기'}},
+  ]}
+/>

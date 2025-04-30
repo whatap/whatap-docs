@@ -1,6 +1,6 @@
 - <Cmdname sid="BTN06225" className="uitext" />: You can go to the <Cmdname sid="statistics_sql" className="uitext" /> menu where you can check statistical information related to the SQL query statement.
 
-<InDoc product='postgresql,mysql,altibase,cubrid,mssql,mssql-v1,db2'>
+<InDoc product='postgresql,mysql,altibase,cubrid,mssql,mssql-v1,db2,sapase'>
 
 - **_Default Bind_**: You can bind the part set as a variable in the query sentence to the default value.
 
@@ -32,22 +32,6 @@
 
 </InDoc>
 
-<InDoc product='mysql'>
-
-- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
-
-  - **_Text_**: You can check plan information in text format.
-
-  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
-
-  :::note
-
-  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.15 or later.
-
-  :::
-
-</InDoc>
-
 <InDoc product='oracle-pro,oracle'>
 
 - **_Runtime Plan_**: It provides the execution plan and runtime information for a selected SQL query. It provides the information details such as execution count, average execution time, and average physical reads.
@@ -61,6 +45,22 @@
   :::note
 
   This is a value captured in the database (`v$sql_bind_capture`), not a bind value executed in real time. If the number of cases is too large, it displays up to 100.
+
+  :::
+
+</InDoc>
+
+<InDoc product='mysql'>
+
+- **_Plan_**: To check plan information, enter **DB Name**, **User Name**, and **Password**, and then select ![Search icon](/img/ico-btn-search.png).
+
+  - **_Text_**: You can check plan information in text format.
+
+  - **_JSON_**: By viewing the plan information in Json format, you can quickly find the points where bottlenecks occur.
+
+  :::note
+
+  The function to view plan information in **_JSON_** format is supported only in DBX agent 1.6.15 or later.
 
   :::
 

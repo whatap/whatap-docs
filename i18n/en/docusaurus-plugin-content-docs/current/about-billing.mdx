@@ -28,9 +28,6 @@ To continue using the service during the free trial period or when the free usag
 
 </div>
 
-{/* <Steps type="yl"> */}
-
-{/* <Steps> */}
 
 <div className="faq-about-billing">
 
@@ -70,7 +67,7 @@ Before registering the payment information, check the **billing** role. The **bi
 
 ### ![2](/img/number-02.png) Transferring the billing role {#transferpayauth}
 
-Only **1 person** can have the **billing** role. For example, when the billing role is transferred from the account A to the account B, the account A no longer has the billing role. Additionally, to transfer the **billing** role, only the account with the payment information can transfer the **billing** role.
+The billing permission can be granted at the organization, group, or project level, and only one person can have it. For example, when the billing role is transferred from the account A to the account B, the account A no longer has the billing role. Additionally, the **payment** role can be transferred to an account that has registered its payment information and completes the approval process through email verification. 
 
 #### Registering the payment information for the account to transfer the billing role to
 
@@ -82,9 +79,9 @@ Only **1 person** can have the **billing** role. For example, when the billing r
 
 1. In [WhaTap monitoring service](https://service.whatap.io), log in with the account with the **Billing** and **Edit** roles.
 
-2. In Home screen, select a project to transfer the billing role. 
+2. In Home screen, select an organization, group, or project to transfer the billing role. 
 
-3. Go to <Cmdname sid="project_member" className="uitext" /> that is under <Cmdname sid="management" className="uitext" />.
+3. Go to the member management menu of the selected unit. For more information about the unit-level member management menu, see [the following](/about-billing#o-member-management). 
 
 4. Select <Cmdname sid="invite_member" className="uitext" /> on the upper right of the screen.
 
@@ -92,19 +89,55 @@ Only **1 person** can have the **billing** role. For example, when the billing r
 
 6. Check whether the account has been registered in <Cmdname sid="member_invite_list" className="uitext" replace=" ({length})" />, and then select <Cmdname sid="complete" className="uitext" />.
 
+:::note 
+
+**Move the Organization Member Management menu** <ScrollToLink anchor='o-member-management' />
+
+1. Select the ![Right arrow icon](/img/right-arrow.svg) button next to the Organization menu at the top of the side menu. 
+
+2. Select the ![Configuration icon](/img/ico-setting.svg) button next to the organization name in the Organizations list panel. 
+
+3. Go to <Cmdname sid="side_organizationManagement" className="uitext" /> > <Cmdname sid="side_organizationMembers" className="uitext" />.
+
+**Move the Group Member Management menu** 
+
+1. On the top of the side menu, select <Cmdname sid="BTN07332" className="uitext" />. 
+
+2. In the groups and projects list panel, select the ![Right arrow icon](/img/right-arrow.svg) button next to the group name. 
+
+3. Go to <Cmdname sid="side_groupMember" className="uitext" />.
+
+**Move the Project Member Management menu**
+
+Go to <Cmdname sid="management" className="uitext" /> > <Cmdname sid="project_member" className="uitext" />.
+
+:::
+
 #### Modifying the role
 
 <ImgLang img='best-p/about-billing-member-role.png' desc='Edit Role' />
 
-1. In the <Cmdname sid="project_member" className="uitext" /> list, select <LinkImage img="char-a.svg" desc="Leader line a" /> <LinkImage img="ico-edit.svg" desc="Edit icon" /> on the right of the account to transfer the billing role to.
+1. <LinkImage img="char-a.svg" desc="Leader line a" /><LinkImage img="ico-edit.svg" desc="Edit icon" />
 
 2. If the <Cmdname sid="edit_member_role" className="uitext" /> window appears, among the roles, grant only <LinkImage img="char-b.svg" desc="Leader line b" /> <Cmdname sid="billing" className="uitext" />.
 
-3. After configuration, select <LinkImage img="char-c.svg" desc="Leader line c" /> <Cmdname sid="apply" className="uitext" />.
+3. After enabling the <Cmdname sid="billing" className="uitext" /> role toggle, select the <LinkImage img="char-c.svg" desc="지시선 c" /> <Cmdname sid="apply" className="uitext" /> button in the <Cmdname sid="edit_member_role" className="uitext" /> window.
+
+4. If the payment confirmation window appears, select <Cmdname sid="apply" className="uitext" />.
+
+5. In the <Cmdname sid="TTL09415" className="uitext" /> window, set whether to grant the same roles to the subgroups or subprojects, and then select the <Cmdname sid="apply" className="uitext" /> button.
+
+   <ImgLang img='faq/about-billing-member-role-check.png' desc='Modified the payment information' />
+
+6. After checking the email sent to approve the change of payment role for the account, select the <Cmdname sid="apply" className="uitext" /> button.
+
+7. The final change in the payment role is made upon **approval** via **email** of the account to which payment role is to be changed. 
 
 :::note
 
 - In case of the member with the billing role, on the left of the name in the <Cmdname sid="project_member" className="uitext" /> list, the <code class='pay'>Payment</code> tag appears. 
+
+- If you grant the payment role to another member, an approval process is required via email authentication. However, if you grant the payment role directly to another member, the approval process is omitted.
 
 - The <Cmdname sid="edit_member_role" className="uitext" /> window appears differently depending on whether the project member role or the organization or group member role is modified. For more information about the member roles, see <Link to="/project/project-structure#project-auth">the following</Link>.
 
@@ -129,7 +162,5 @@ After registration of the payment information, the <Cmdname sid="side_projectSub
 For more information about <Cmdname sid="side_projectSubscription" className="uitext" />, see <Link to="management/billing#project-subscription">the following</Link>.
 
 :::
-
-{/* </Steps> */}
 
 </div>

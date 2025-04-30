@@ -10,7 +10,7 @@ After log monitoring has been applied, installed DB is displayed as `#DB`, AWS R
 
 ## Applying to the server-installed DB
 
-To monitor logs in server-installed databases, apply the following options in _xos.conf_ file.
+To monitor logs in server-installed databases, apply the following options in *xos.conf* file.
 
 <InDoc product='mysql'>
 
@@ -95,9 +95,20 @@ See the following example:
 
 </InDoc>
 
+<InDoc product='sapase'>
+
+See the following example:
+
+```ini title='xos.conf'
+# example
+  file=/opt/sap/ase-12_5/install/instance1.log
+```
+
+</InDoc>
+
 :::note
 
-<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid,mssql,db2'>
+<InDoc product='mysql,postgresql,oracle,altibase,redis,mongodb,cubrid,mssql,db2,sapase'>
 
 Before application, install the XOS agent and then proceed with agent configuration. For more information, see [the following](agent-xos-settings).
 
@@ -111,7 +122,7 @@ Before application, install the XOS agent and then proceed with agent configurat
 
 :::
 
-<Xclude product="altibase,cubrid,db2">
+<Xclude product="altibase,cubrid,db2,sapase">
 
 ## Applying to the AWS RDS logs
 

@@ -789,5 +789,8 @@
   },
   "pages.dbfunctions.title": {
     "message": "Comparison between supported functions by database"
+  },
+  "index.pages.section.product.nms": {
+    "message": "It monitors the performance metrics and conditions of the network equipment in real time."
   }
 }

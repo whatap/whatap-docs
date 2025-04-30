@@ -6,11 +6,11 @@
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-main-k8s.png" desc="Metrics Chart" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-main-db.png" desc="Metrics Chart" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2,sapase"><ImgLang img="metrics-chart-new-main-db.png" desc="Metrics Chart" /></InDoc>
 
 - 様々なメトリクスを時系列チャートを通じて視覚的に確認でき、障害発生時点の様々なメトリクスを一度に分析できます。
 
-- 特定の時間範囲を選択して過去のデータを照会し、その期間中の性能を分析できます。
+- 特定の時間範囲を選択して過去のデータを照会し、その期間の性能を分析できます。
 
 - 特定の時間帯や条件に合ったデータをフィルタリングすることで、より正確な分析ができます。
 
@@ -96,7 +96,7 @@
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-select-metrics.png" desc="指標の選択" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-db-select-metrics.png" desc="指標選択" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2,sapase"><ImgLang img="metrics-chart-new-db-select-metrics.png" desc="指標の選択" /></InDoc>
 
 選択したメトリクスに対応するチャートウィジェットが右側のダッシュボードに配置されます。 他のメトリクスを選択し、チャートウィジェットを追加できます。 チャート領域を拡大して見るには、<Cmdname sid="time" className="uitext" />オプションの右にある![閉じるアイコン](/img/ico-close.svg)ボタンを選択します。 <Cmdname sid="target" className="uitext" />と<Cmdname sid="metric" className="uitext" />パネルが消え、チャート領域のみが画面に表示されます。
 
@@ -138,7 +138,7 @@
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-select-interval.png" desc="間隔" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-db-select-interval.png" desc="インターバル" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2,sapase"><ImgLang img="metrics-chart-new-db-select-interval.png" desc="間隔" /></InDoc>
 
 </Column>
 
@@ -400,7 +400,7 @@
 
 <InDoc product="kubernetes"><ImgLang img="metrics-chart-new-k8s-chart-batch-change.png" desc="一括変更" /></InDoc>
 
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2"><ImgLang img="metrics-chart-new-db-chart-batch-change.png" desc="一括変更" /></InDoc>
+<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,redis,mongodb,altibase,altibase-v1,cubrid,cubrid-v1,mssql,mssql-v1,db2,sapase"><ImgLang img="metrics-chart-new-db-chart-batch-change.png" desc="一括変更" /></InDoc>
 
 - <Cmdname sid="time" className="uitext" />: チャートのデータ照会範囲を設定できます。
 
@@ -434,7 +434,7 @@
 
 - ![CSVアイコン](/img/ic-csv-download.svg) : 照会中のデータに基づいて、チャートをCSV形式のファイルとしてダウンロードできます。
 
-- 右側のセクションでは、各メトリクスごとのエージェントの一覧を確認できます。 個々のエージェントの色は、チャートのグラフの色と一致します。
+- 右側のセクションでは、メトリクスごとのエージェントの一覧を確認できます。 個々のエージェントの色は、チャートのグラフの色と一致します。
 
   {/* y축 값 조정하는 옵션에 대해 문의 */}
 
@@ -444,7 +444,7 @@
 
 ### CSVファイルでダウンロードする
 
-ダッシュボードに配置したウィジェットのデータをCSV形式のファイルとしてダウンロードできます。 <Cmdname sid="download" className="uitext" /> &gt; <Cmdname sid="sms_summary_download_csv" className="uitext" />を選択します。 各時間帯のメトリクスのデータを確認できます。
+ダッシュボードに配置したウィジェットのデータをCSV形式のファイルとしてダウンロードできます。 <Cmdname sid="download" className="uitext" /> &gt; <Cmdname sid="sms_summary_download_csv" className="uitext" />を選択します。 時間帯のメトリクスのデータを確認できます。
 
 ### イメージファイルでダウンロードする
 

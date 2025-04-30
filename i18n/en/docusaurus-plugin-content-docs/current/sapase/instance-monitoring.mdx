@@ -1,0 +1,59 @@
+---
+id: instance-monitoring
+title: Monitoring a Database Instance
+description: In the instance monitoring menu, you can check the information details on key metrics of the IBM DB2 database server in real time.
+keywords:
+  - SAP ASE
+  - Instance
+  - Dashboard
+  - DATABASE
+---
+
+import Dbinstancemonitoringdesc from "../common-items/_db-instance-monitoring-desc.mdx";
+import Dbv2instancemonitoringselect from "../common-items/_db-v2-instance-monitoring-select.mdx";
+import Dbv2instancemonitoringwidget from "../common-items/_db-v2-instance-monitoring-widget.mdx";
+import Dbv2instancemonitoringactivesessiondesc from "../common-items/_db-v2-instance-monitoring-activesession-desc.mdx";
+import Dbdashboardactivesessiondesc from "../common-items/_db-dashboard-activesession-desc.mdx";
+import Dbdashboardlocktreedesc from "../common-items/_db-dashboard-locktree-desc.mdx";
+import Dbdashboradprocessinfodesc from "../common-items/_db-dashborad-process-info-desc.mdx";
+import Dbv2instancemonitoringactivesessionnote from "../common-items/_db-v2-instance-monitoring-activesession-note.mdx";
+import Dbv2instancemonitoringselectmetrics from "../common-items/_db-v2-instance-monitoring-select-metrics.mdx";
+import Dbv2instancemonitoringaddmetrics from "../common-items/_db-v2-instance-monitoring-add-metrics.mdx";
+import Dbv2instancemonitoringchangemerics from "../common-items/_db-v2-instance-monitoring-change-merics.mdx";
+import Dbv2instancemonitoringdeletemetrics from "../common-items/_db-v2-instance-monitoring-delete-metrics.mdx";
+import Dbv2instancemonitoringpreset from "../common-items/_db-v2-instance-monitoring-preset.mdx";
+import Dbusingareaactivesession from "../common-items/_db-using-area-active-session.mdx";
+import Dbinstance2sqlstatic from "../common-items/_db-instance2sqlstatic.mdx";
+import Dbquerydetails from "../common-items/_db-query-details.mdx";
+import Dbv2instancemonitoringkiilsession from "../common-items/_db-v2-instance-monitoring-kiil-session.mdx";
+import Dbfoldingactivesessiontable from "../common-items/_db-folding-activesession-table.mdx";
+import SessionColumn from "../common-items/_db-db2-column.mdx";
+
+<Dbinstancemonitoringdesc />
+
+## Basic screen guide
+
+<ProdImg img='db-instance-monitoring.png' desc='Instance Monitoring' />
+
+<Collection docs={
+  [
+    {Topic: Dbv2instancemonitoringselect, props: {level: 2, desc: '조회 시간 및 대상 선택하기'}},
+    {Topic: Dbv2instancemonitoringwidget, props: {level: 2, desc: '그래프 차트 위젯 영역'}},
+    {Topic: Dbv2instancemonitoringactivesessiondesc, props: {level: 2, desc: '액티브 세션 락트리 프로세스정보'}},
+    {Topic: Dbdashboardactivesessiondesc, props: {desc: '액티브 세션 개요'}},
+    {Topic: Dbdashboardlocktreedesc, props: {desc: '락트리 설명'}},
+    {Topic: Dbdashboradprocessinfodesc, props: {desc: '프로세스 설명'}},
+    {Topic: Dbv2instancemonitoringactivesessionnote, props: {desc: '액티브 세션 Note'}},
+    {Topic: Dbv2instancemonitoringselectmetrics, props: {level: 2, desc: '지표 선택하기'}},
+    {Topic: Dbv2instancemonitoringaddmetrics, props: {level: 3, desc: '지표 추가하기'}},
+    {Topic: Dbv2instancemonitoringchangemerics, props: {level: 3, desc: '지표 변경하기'}},
+    {Topic: Dbv2instancemonitoringdeletemetrics, props: {level: 3, desc: '지표 삭제하기'}},
+    {Topic: Dbv2instancemonitoringpreset, props: {level: 2, desc: '프리셋'}},
+    {Topic: Dbusingareaactivesession, props: {level: 2, desc: '액티브 세션 영역 활용'}},
+    {Topic: Dbinstance2sqlstatic, props: {level: 3, desc: 'SQL 통계 확인하기'}},
+    {Topic: Dbquerydetails, props: {level: 3, desc: '쿼리 자세히 보기'}},
+    {Topic: Dbv2instancemonitoringkiilsession, props: {level: 3, desc: '진행 중인 세션 확인하기'}},
+    {Topic: Dbfoldingactivesessiontable, props: {level: 3, desc: '그래프 차트 섹션 확대하기'}},
+    {Topic: SessionColumn, props: {level: 3, desc: '컬럼 정보 안내'}},
+  ]}
+/>

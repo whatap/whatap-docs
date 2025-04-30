@@ -1,0 +1,200 @@
+---
+id: milvus-introduction
+title: Milvus Monitoring
+description: This document is an introductory page for the Milvus monitoring product.
+displayed_sidebar: featuremonitorSidebar
+toc_max_heading_level: 2
+keywords:
+  - milvus
+  - Feature
+---
+
+import InstallFeature from '../common-items/_import_feature-install-agent.mdx';
+import TR from '@site/src/components/TR';
+
+:::note
+
+**Feature Project**<ScrollToLink anchor='feature-project' />
+
+WhaTap newly introduced **Feature Project** (<code class='Features'>Features</code>) so that users can easily check whether the desired software supports monitoring and easily start monitoring. The Feature Project provides an optimized monitoring solution by repackaging existing monitoring products to fit the software to monitor. Manage your services for stability and performance more effectively through the WhaTap's Feature Project. 
+
+:::
+
+{/* 와탭 Milvus 모니터링은 Milvus Vector Database의 성능과 상태를 실시간으로 확인할 수 있도록 도와줍니다. 다양한 지표와 대시보드를 통해 빠른 문제 식별과 효율적인 운영이 가능합니다. 다양한 이벤트 기능을 통해 시스템 상태를 사전에 파악하고 장애를 예방할 수 있습니다. */}
+
+The Milvus open source database is used for high-performance management and search of large vector data. The WhaTap ***Milvus*** monitoring traces the performance and resource usage for Proxy, Root Coordinator, Query Node, and such that make up the Milvus cluster in real time and historically, helps you quickly discover and resolve search delays, memory shortages, and transaction failures.
+
+WhaTap provides *** Milvus*** monitoring in a new **feature project** manner. By tracing the performance and status of Milvus database in real time, it helps you identify and resolve problems early as possible.
+
+## Installation
+
+This guide provides the basic installation instructions for using the WhaTap Milvus monitoring service. 
+
+To use the WhaTap monitoring service, after [Sign up](https://www.whatap.io/en/signup/), create a project and then install the agent to the target server. For more information about membership registration, see [the following](../account/account-manage). 
+
+:::note 
+
+**Supported environment**<ScrollToLink anchor='milvus-supported-env' />
+
+Before installing the WhaTap *** Milvus*** monitoring agent, check the support environment. 
+
+- **Milvus**: Milvus 2.x or equivalent
+
+- **Ubuntu**: Ubuntu 12.04 or later
+
+- **OS**: Red Hat 6 or equivalent (CentOS, Rocky Linux, Amazon Linux)
+
+- **OS Architecture**: Amd64/X86_64, Arm64/Aarch64
+
+:::
+
+### Creating a Feature Project
+
+import CreateFeature from "../common-items/_import_feature-project-create.mdx";
+
+<CreateFeature />
+
+### Milvus agent installation
+
+<InstallFeature name='Milvus 에이전트 설치' />
+
+## Learn about the main features
+
+### Dashboard
+
+Select Home screen &gt; **Feature project**(<code class='Features'>Features</code>) &gt; *** Milvus*** &gt; *** Milvus Dashboard***
+
+The WhaTap ***Milvus*** monitoring provides key metrics and graphs by each component of the Milvus that is the vector search database. The ** Milvus Dashboard** provided by WhaTap consists of the following three presets:
+
+- ***Milvus Proxy and Root Coordinator***
+
+  This preset provides comprehensive monitoring of Proxy latency, QPS, Root Coordinator's collections and entities, and DML/DDL operation status in the Milvus system.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  #### ***Proxy Monitoring***
+
+  - **Latency and request events**
+
+    You can visualize the latency of requests processed by the proxy as a histogram and check the number of requests per second (QPS), and the like.
+
+  - **Process status**
+
+    By displaying the CPU and memory usage of Milvus Proxy in a time series graph, the status of system resources can be checked.
+
+  #### ***Root Coordinator Monitoring***
+
+  - **Collection and entity information**
+
+    Check the database size through the number of collections and entities in operation.
+
+  - **DML and DDL operations**
+
+    By visualizing the DML operations such as Insert and Delete and DDL operations such as Create and Drop, you can check the frequency of operations.
+
+  - **Streams and Message Channels**
+
+    By tracing the numbers of data streams and message channels, you can check the internal data flow within Milvus.
+
+  </details>
+
+- ***Milvus Search and Compute Performance***
+
+  This preset monitors the search performance such as ANN, Brute Force, and DiskANN.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  #### ***Approximate Nearest Neighbor (ANN) Metrics***
+
+  - **Search request delay time**
+
+    You can analyze the search performance by checking the delay time of ANN search in the form of histogram. 
+
+  - **Number of search requests (QPS) and total latency**
+
+    You can monitor the system load by checking the number of search requests processed per second and cumulative search latency.
+
+  #### ***BF (Brute Force) Search***
+
+  - **Number of objects compared per BF search request**
+
+    Check the number of objects compared per request through the Brute Force search.
+
+  - **Total BF computation amount**
+
+    You can trace computational costs and find optimization opportunities through the number of object comparisons.
+
+  #### ***Bitset Ratio***
+
+  - **Bitset utilization and calculation amount**
+
+    You can analyze opportunities to improve the search speed by monitoring whether operations are optimized using Bitset.
+
+  - **Number of Bitset application requests and number of objects applied**
+
+    You can evaluate the effectiveness of the indexing strategy by checking the percentage of search requests that use Bitset. 
+
+  #### ***DiskANN***
+
+  - **DiskANN search and index performance**
+
+    You can analyze the performance for disk-based searches by tracing the latency and search count of search requests using DiskANN.
+
+  - **DiskANN index size and number of search requests**
+
+    You can optimize the efficiency by comparing the space occupied by the disk index with the number of search requests. 
+
+  </details>
+
+- ***Milvus Query Coordinator & Query Node Metrics***
+
+  This preset monitors the status and performance metrics for QueryCoord and QueryNode in real time.
+
+  <details>
+  <summary>Guide to dashboard metrics</summary>
+
+  #### ***Query Coordinator***
+
+  - ***Number of collections***
+
+    It indicates the number of collections managed by QueryCoord.
+
+  - ***Number of partitions***
+
+    By monitoring the number of partitions within a collection, you can check the data partitioning status.
+
+  - ***Number of QueryNodes***
+
+    It displays the number of QueryNodes managed by QueryCoord.
+
+  - ***Resource Group Info***
+
+    It analyzes query execution resources by checking the resource group allocated in QueryCoord.
+
+  #### ***Query Node***
+
+  - ***Disk used size(MB)***
+
+    It monitors the disk space used by QueryNode to optimize the storage.
+
+  - ***Number of ready read tasks in readyQueue***
+
+    It monitors the number of pending query requests to analyze whether there are any search bottlenecks.
+
+  #### ***Data Coordinator & Data Node***
+
+  - ***Number of collections***
+
+    It traces data size by displaying the number of collections managed by DataCoord.
+
+  - ***Number of data nodes***
+
+    You can check the storage management status through the number of DataNodes managed by DataCoord.
+
+  - ***Import tasks grouping by type and state***
+
+    You can analyze the loading and process speeds by classifying data import tasks by type and status.
+
+  </details>
