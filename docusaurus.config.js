@@ -710,22 +710,10 @@ const config = {
             position: 'left', 
             className: 'iflang-link',
           },
-          // 다국어 조건 블로그
           {
-            type: 'dropdown',
-            label: 'What\'s New',
-            position: 'right',
-            className: 'oneColumn iflang-link box',
-            items: [
-              {
-                to: locale === 'en' || locale === 'ja' ? 'blog/overview' : 'blog',
-                label: '새로운 기능'
-              },
-              {
-                to: 'release-notes',
-                label: '릴리스 노트'
-              }
-            ]
+            to: 'release-notes',
+            label: 'Release Notes',
+            position: 'left',
           },
           {
             type: 'localeDropdown',
@@ -743,7 +731,7 @@ const config = {
         links: [
 
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
+        copyright: `Copyright © WhaTap Labs Inc. All right reserved. Built with Docusaurus.`,
       },
       prism: {
         additionalLanguages: [ 'php', 'java', 'scala', 'bash', 'powershell', 'batch', 'apacheconf', 'docker', 'properties', 'ini', 'sql', 'go', 'python', 'json', 'yaml', 'log', 'csharp', 'typescript', 'javascript' ],
