@@ -4731,9 +4731,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/java-batch/java-batch-2_2_26',
+                  id: 'release-notes/java-batch/java-batch-2_2_27',
                   className: 'new',
                 },
+                'release-notes/java-batch/java-batch-2_2_26',
                 'release-notes/java-batch/java-batch-2_2_25',
                 'release-notes/java-batch/java-batch-2_2_24',
                 'release-notes/java-batch/java-batch-2_2_23',
