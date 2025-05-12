@@ -28,7 +28,7 @@ export default function Cover() {
             Naver Cloud Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2025.03.26
+            release date. 2025.04.23
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
