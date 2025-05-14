@@ -28,7 +28,7 @@ export default function Cover() {
             Redis Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2025.03.26
+            release date. 2025.02.26
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
