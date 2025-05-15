@@ -1,5 +1,113 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_1",
+    "ver": "v1.8.1",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "v1.8.1",
+        "hash": "v181",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>starlette</code>基盤のWebSocket送信追跡機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_9",
+    "ver": "v1.7.9",
+    "date": "2025-03-31",
+    "Lists": [
+      {
+        "ver": "v1.7.9",
+        "hash": "v179",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> HTTPトランザクションの正常信号(Status: <code>2xx</code>、<code>3xx</code>)収集及び表示機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_8",
+    "ver": "v1.7.8",
+    "date": "2025-03-24",
+    "Lists": [
+      {
+        "ver": "v1.7.8",
+        "hash": "v178",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> HTTPトランザクションのリクエストMethod収集及び表示機能を追加</p>"
+      },
+      {
+        "ver": "v1.7.8",
+        "hash": "v178",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> HTTPトランザクションエラー発生時、HTTP Status収集及び表示機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_7",
+    "ver": "v1.7.7",
+    "date": "2025-03-11",
+    "Lists": [
+      {
+        "ver": "v1.7.7",
+        "hash": "v177",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <em>whatap.conf</em>で、WhaTapモジュールのログ出力制御オプションを追加</p>",
+        "details": "<ul>\n<li>\n<p><strong>ignore_whatap_stdout</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p><code>true</code>に設定すると、WhaTap Pythonエージェントモジュールで発生するすべての標準出力ログを非活性化します。</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_7",
+    "ver": "v1.7.7",
+    "date": "2025-03-11",
+    "Lists": [
+      {
+        "ver": "v1.7.7",
+        "hash": "v177",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <em>whatap.conf</em>で、WhaTapモジュールのログ出力制御オプションを追加</p>",
+        "details": "<ul>\n<li>\n<p><strong>ignore_whatap_stdout</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p><code>true</code>に設定すると、WhaTap Pythonエージェントモジュールで発生するすべての標準出力ログを非活性化します。</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_6",
+    "ver": "v1.7.6",
+    "date": "2025-03-04",
+    "Lists": [
+      {
+        "ver": "v1.7.6",
+        "hash": "v176",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> ロギングモジュール(logging、loguru) モニタリングでmtid値の追跡を追加</p>",
+        "details": "<ul>\n<li>\n<p><strong>trace_logging_mtid_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p><code>trace_logging_enabled</code>値が<code>true</code>の場合は活性化されmtid値が存在する場合はログに出力します。</p>\n</li>\n<li>\n<p><strong>trace_loguru_mtid_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>既定値<code>false</code></p>\n<p><code>trace_loguru_enabled</code>値が<code>true</code>の場合は活性化されmtid値が存在する場合はログに出力します。</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_5",
+    "ver": "v1.7.5",
+    "date": "2025-02-17",
+    "Lists": [
+      {
+        "ver": "v1.7.5",
+        "hash": "v175",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>WHATAP_HOME</code>環境変数を設定しない場合、<em>whatap.conf</em>ファイルを自動的に探索して設定するように追加</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/python/python-1_7_4",
     "ver": "v1.7.4",
     "date": "2025-01-20",

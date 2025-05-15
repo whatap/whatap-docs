@@ -1,5 +1,68 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_2",
+    "ver": "v2.4.2",
+    "date": "2025-04-26",
+    "Lists": [
+      {
+        "ver": "v2.4.2",
+        "hash": "v242",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>インストールされるサーバーの.NETランタイムバージョンに従って自動的にバージョンが選択されるように修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_4_1",
+    "ver": "v2.4.1",
+    "date": "2025-03-21",
+    "Lists": [
+      {
+        "ver": "v2.4.1",
+        "hash": "v241",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the ISAPI filter-based transaction tracing feature.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_0",
+    "ver": "v2.4.0",
+    "date": "2025-03-04",
+    "Lists": [
+      {
+        "ver": "v2.4.0",
+        "hash": "v240",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> ISAPIフィルターを活用してWCF、ASP、CGI、ISAPIなどのトランザクションモニタリングに対応</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_3_8",
+    "ver": "v2.3.8",
+    "date": "2025-01-15",
+    "Lists": [
+      {
+        "ver": "v2.3.8",
+        "hash": "v238",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>LINQ to SQL</strong>(<code>System.Data.Linq</code>)モニタリングの支援</p>"
+      },
+      {
+        "ver": "v2.3.8",
+        "hash": "v238",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>モニタリングで除外するsection名を設定できるエージェントオプションを追加</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_3_7",
     "ver": "v2.3.7",
     "date": "2025-01-02",

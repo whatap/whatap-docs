@@ -1,5 +1,33 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_8_6",
+    "ver": "v1.8.6",
+    "date": "2025-03-28",
+    "Lists": [
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>containerStdOut</code>ログに<code>podUid</code>タグを追加</p>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>kube_oom_event</code>タグカウントに<code>containerid</code>タグを追加</p>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> MIG環境で<code>container_gpu</code>カテゴリーに<code>GPU_I_PROFILE</code>、<code>GPU_I_ID</code>、<code>DCGM_FI_DRIVER_VERSION</code>メトリクスを追加</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/k8s/k8s-1_8_5",
     "ver": "v1.8.5",
     "date": "2025-02-17",

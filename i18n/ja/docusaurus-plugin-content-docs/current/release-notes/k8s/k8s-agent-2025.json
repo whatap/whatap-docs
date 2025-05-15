@@ -1,5 +1,62 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/k8s/k8s-1_8_6",
+    "ver": "v1.8.6",
+    "date": "2025-03-28",
+    "Lists": [
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <code>podUid</code> tag to the <code>containerStdOut</code> log.</p>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <code>containerid</code> tag to the <code>kube_oom_event</code> tag count.</p>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <code>GPU_I_PROFILE</code>, <code>GPU_I_ID</code>, and <code>DCGM_FI_DRIVER_VERSION</code> metrics to the <code>container_gpu</code> category in the MIG environment.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_8_5",
+    "ver": "v1.8.5",
+    "date": "2025-02-17",
+    "Lists": [
+      {
+        "ver": "v1.8.5",
+        "hash": "v185",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> 追加機能により、Kubernetesカスタムリソース関連メトリクス収集に対応</p>",
+        "details": "<ul>\n<li>\n<p>基本機能ではなく、追加機能の適用を通じてwhatap-master-agentのコンテナに<code>collect_custom_resources</code> オプションを追加</p>\n<p><strong>collect_custom_resources</strong> <span class=\"type\">bool</span></p>\n<p>既定値<code>false</code></p>\n<p><code>true</code>設定する時に<span class=\"uitext\">メトリクス照会</span>メニューで<code>kube_cr</code>及び<code>kube_crd</code>カテゴリの確認が可能です。 収集されたデータは<span class=\"uitext\">Object Manifest</span>及び<strong>タグカウント</strong>で確認できます。</p>\n<div class=\"theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"><svg viewbox=\"0 0 14 16\"><path fill-rule=\"evenodd\" d=\"M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z\"></path></svg></span>ノート</div><div class=\"admonitionContent_BuS1\"><ul>\n<li>\n<p><code>kube_crd</code>: CustomResourceDefinition(CRD)メトリクスを収集</p>\n</li>\n<li>\n<p><code>kube_cr</code>: CRDで定義されたCustom Resource(CR)メトリクスを収集</p>\n</li>\n</ul></div></div>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.8.5",
+        "hash": "v185",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>container_gpu</code>カテゴリに<code>DCGM_FI_DEV_POWER_USAGE</code>データを追加してGPUモニタリングを改善</p>"
+      },
+      {
+        "ver": "v1.8.5",
+        "hash": "v185",
+        "product": "Kubernetes Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>ログに<code>#whatapSysLog</code>カテゴリを追加してノードエージェントコンテナを実行する時にユーザー環境ランタイム情報を伝達</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/k8s/k8s-1_8_2",
     "ver": "v1.8.2",
     "date": "2025-01-08",

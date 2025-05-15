@@ -1,5 +1,61 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_8_6",
+    "ver": "v2.8.6",
+    "date": "2025-04-22",
+    "Lists": [
+      {
+        "ver": "v2.8.6",
+        "hash": "v286",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>ログ収集でJSON array分離機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_8_5",
+    "ver": "v2.8.5",
+    "date": "2025-04-17",
+    "Lists": [
+      {
+        "ver": "v2.8.5",
+        "hash": "v285",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Nvidia MIGモニタリング追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_8_4",
+    "ver": "v2.8.4",
+    "date": "2025-04-04",
+    "Lists": [
+      {
+        "ver": "v2.8.4",
+        "hash": "v284",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Nvidia新規データ収集オプション追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/server/server-2_8_0",
+    "ver": "v2.8.0",
+    "date": "2025-02-24",
+    "Lists": [
+      {
+        "ver": "v2.8.0",
+        "hash": "v280",
+        "product": "Server Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>  NFSマウントのI/O性能の収集機能を追加</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/server/server-2_7_6",
     "ver": "v2.7.6",
     "date": "2025-01-06",
