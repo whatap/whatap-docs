@@ -10,8 +10,6 @@ keywords:
 toc_max_heading_level: 3
 ---
 
-{/* 프로젝트 데이터가 없음. 다국어 이미지는 나중에 */}
-
 Select Home &gt; cluster project (<code class='my'>CP</code>) &gt; <Cmdname sid="side_controlPlane" className="uitext" /> &gt; <Cmdname sid="side_etcdDashboard" className="uitext" />
 
 :::note 
@@ -36,14 +34,7 @@ Select Home &gt; cluster project (<code class='my'>CP</code>) &gt; <Cmdname sid=
 
 - The commits and number of applies in etcd are provided. 
 
-- It provides the existence status of etcd leaders and the history of leader changes. 
-
-{/* •	etcd 리소스 사용량
-•	Provision of data for CPU and memory usage, number of Pod restarts, and related log data
-•	Job processing status
-•	Numbers of etcd commits and applies
-•	Reader status tracking
-•	etcd reader existence and reader change history */}
+- It provides the existence status of etcd leaders and the history of leader changes.
 
 ## Activation of the etcd monitoring
 
@@ -62,8 +53,6 @@ An mTLS certificate is required for etcd. The etcd certificates are typically st
 - *server.key*
 
 On the machine where the `kubectl` command is executed, check if the certificate exists using the following command. 
-
-{/* 경로에서 필요한 인증서 파일(*ca.crt*, *server.crt*, *server.key*)이 존재하는지 확인하려면 다음 명령어를 실행하세요. */}
 
 ```bash
 sudo ls /etc/kubernetes/pki/etcd
@@ -84,8 +73,6 @@ secret/whatap-etcd-cert created
 ```
 
 ##### In case the root account is unavailable
-
-{/* root 계정에서 `kubectl` 명령을 사용할 수 없는 경우 인증서 파일을 복제한 뒤 소유자를 변경하여 등록하세요.  */}
 
 If you cannot use the `kubectl` command from the root account, see the following instructions. 
 

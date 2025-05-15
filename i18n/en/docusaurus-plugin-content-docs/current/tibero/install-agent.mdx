@@ -30,7 +30,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. Enter the unzipped folder and then check the *whatap.conf* file. In *whatap.conf*, enter the project access key, WhaTap server data, and DB connection data.
+3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key, WhaTap server data, and DB connection data.
 
    ```ini title='whatap.conf'
    license=Project access key
@@ -67,23 +67,21 @@ grant select any dictionary to whatap;
 grant alter system to whatap;
 ```
 
-{/* ## DB 유저 파일 생성{#create-db-user} */}
+{/* ## DB 유저 파일 생성{#create-db-user} _/}
 import Dbcreatedbuserfile from "../common-items/_db-create-db-user-file.mdx";
 
 <Dbcreatedbuserfile level={2} />
 
-{/* 디폴트 플랜 조회하기 */}
+{/* 디폴트 플랜 조회하기 _/}
 
 import CheckDefaultPlan from '../common-items/_import_db-check-default-plan.mdx';
 
 <CheckDefaultPlan level={3} />
 
-{/*## 에이전트 실행*/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />
 
-{/*## XOS 에이전트 설치*/}
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />

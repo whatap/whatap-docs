@@ -13,7 +13,7 @@ To install the PHP monitoring agent in the Google Cloud App engine, the custom d
 
 **Defaults of Google App Engine PHP cannot run PHP extension modules and service daemons**. Install them via Docker Container. 
 
-In the *app.yaml* file (Google App engine's configuration file), configure the settings with the `flex` environment and `custom` run-time.
+In the _app.yaml_ file (Google App engine's configuration file), configure the settings with the `flex` environment and `custom` run-time.
 
 ```yaml title=SH
 $ vi app.yaml
@@ -21,7 +21,7 @@ env: flex
 runtime: custom
 ```
 
-To run with the custom Docker, create *Dockerfile* in the same location as *app.yaml* set with the `flex` environment and the `custom` run-time. See the default PHP Docker image for the Google App engine.
+To run with the custom Docker, create _Dockerfile_ in the same location as _app.yaml_ set with the `flex` environment and the `custom` run-time. See the default PHP Docker image for the Google App engine.
 
 ```docker title=Docker
 # google-appengine php php56, php70, php71
@@ -88,7 +88,7 @@ Add firewall rules for the network that is used by the Google App engine. TCP tr
 
 ## Checking the deployment and instance
 
-Deploy *app.yaml* and *Dockerfile* that have been set through the Google Cloud SDK.
+Deploy _app.yaml_ and _Dockerfile_ that have been set through the Google Cloud SDK.
 
 ```bash title=SH
 $ gcloud app deploy
@@ -96,7 +96,7 @@ $ gcloud app deploy
 
 Check the App engine instance generated in the Google Cloud Console.
 
-{/* 
+{/\* 
 
 Adding firewall rules 
 
@@ -107,4 +107,4 @@ Adding firewall rules
 
 ![gae_instance](https://img.whatap.io/media/agent_php/install/tinified/gae_instance.png)
 
-*/}
+\*/}

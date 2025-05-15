@@ -109,29 +109,3 @@ This document guides you to additional settings required in the <span class='vpc
    :::
 
 </div>
-
-{/* 
-
-#### Subnets
-
-- Access the Internet through **IGW** with **Public IP** of the **NAT Gateway**.
-
-- To connect the Internet via **IGW**, **Public IP** is required. _ENI_ of Lambda cannot allocate **Public IP**.
-
-- The request is not sent to **Private Subnet**, the Internet gateway. Accordingly, select a subnet on which outbound traffic is routed to **NAT Gateway**.
-
-- **WhatTap Forwarder** in **Private Subnet** and **Public Subnet**
-
-  ![Subnet sc](/img/whatap-forwarder-subnet.png)
-
-#### Security groups
-
-- A security group with the **outbound** open is required.
-
-*/}
-
-{/* 
-
-  ![보안 그룹](/img/whatap-forwarder-vpc-sg-outbound.png)
-
-*/}

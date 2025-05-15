@@ -35,7 +35,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. Enter the unzipped folder and then check the *whatap.conf* file. In *whatap.conf*, enter the project access key(`license`), WhaTap server data(`whatap.server.host`), and DB connection data(`dbms`, `db_ip`, `db_port`).
+3. Enter the unzipped folder and then check the _whatap.conf_ file. In _whatap.conf_, enter the project access key(`license`), WhaTap server data(`whatap.server.host`), and DB connection data(`dbms`, `db_ip`, `db_port`).
 
    ```ini title='whatap.conf'
    license={Access_Key}
@@ -46,17 +46,15 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
    db_port={DB_server_port}
    ```
 
-{/* 공통 Notes*/}
 import Dbinstallagentcommonnotes from "../common-items/_db-install-agent-common-notes.mdx";
 
 <Dbinstallagentcommonnotes />
 
-{/* 모니터링용 계정 생성*/}
 import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
 <Dbcreatemonitoringaccount />
 
-{/* Redis */}
+{/* Redis _/}
 
 ```sql
 ACL SETUSER {whatap} on >{DB_Password} +client +config +info +cluster
@@ -68,7 +66,7 @@ For more information about the account creation in the Redis environment, see [t
 
 :::
 
-{/* ## DB user file creation {#create-db-user} */}
+{/* ## DB user file creation {#create-db-user} _/}
 
 <DBuserDesc level={2} />
 
@@ -76,17 +74,14 @@ import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body
 
 <Dbcreatedbuserfilebody />
 
-{/*## 에이전트 실행*/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />
 
-{/*## XOS 에이전트 설치*/}
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
 
-{/* ## 다음 단계 */}
 import NextStep from "../common-items/_db-next-step.mdx";
 
 <NextStep />

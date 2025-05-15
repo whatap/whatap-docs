@@ -13,7 +13,7 @@ import V2Note from "../common-items/_import_v2-note.mdx";
 
 <V2Note product="Oracle" />
 
-Write the settings for the DBX agent in the *whatap.conf* file. For the options that can be set, see the following.
+Write the settings for the DBX agent in the _whatap.conf_ file. For the options that can be set, see the following.
 
 ## Default options
 
@@ -23,9 +23,149 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
 ## Collecting data {#collect-data}
 
-import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data-collection.mdx";
+- **conn_fail_count** <span class='type'>Int</span>
 
-<Dbagentsettingdatacollection />
+  Default `15`
+
+  It sends a notification when 15 consecutive connection errors occur. You can adjust the notification occurrence criteria by entering the desired number.
+
+- **db_param_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It sets whether or not to collect the DB parameters.
+
+- **event** <span class='type'>String</span>
+
+  Default: 
+
+  <details>
+
+  <summary>Viewing all 8 events</summary>
+
+    `db file scattered read`, `db file sequential read`, `direct path read`, `direct path write`,\
+    `enq: TX - row lock contention`, `latch free`, `library cache lock`, `library cache pin`
+
+  </details>
+
+  In the RAC environment, two additional metrics are collected by default: gc cr block receive time and gc current block receive time.
+
+  The values for the above metrics are collected from `v$system_event`. You can check it in the db_oracle_counter category, which collects the following three values ​​for a single event.
+
+  - time waited: Total time (1/100 seconds) waited for the event e.g. db file sequential read time waited
+  - timeouts: Number of waits that ended in timeout e.g. db file sequential read total timeouts
+  - total waits: Total number of the events occurred e.g. db file sequential read total waits
+
+  cf.) In Oracle Pro, you can set additional metrics other than the defaults by writing in the manner of `event+=`. However, this product does not support it.
+
+- **interval_sec** <span class='type'>Boolean</span> <code class="my">DBX agent v1.7.3 or later</code>
+
+  Default `true`
+
+  This option is used to convert the data collected from the agent every 5 seconds in seconds (`delta` value for 1 second) and report it.
+
+- **ora_bind_saving** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  If the SQL execution time is more than 5 seconds, the bind value of the SQL is collected by `v$sql_bind_capture`. (excluding the sys account)
+
+  cf.) In Oracle Pro, the options are divided into bind_interval, bind_max_count, and bind_elapse.
+
+- **ora_plan_saving** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  If the SQL plan has changed or the SQL execution time is more than 5 seconds, the plan information is collected from `v$sql_plan`. (excluding the sys account)
+
+  cf.) In Oracle Pro, the options are divided into plan_change and plan_elapse.
+
+- **ora_ratio** <span class='type'>Boolean</span> <code class="my">DBX agent v1.6.11 or later</code>
+
+  Default `false`
+
+  You can additionally collect various ratio metrics. The metrics to collect are as follows:
+
+  - `buffer cache hit ratio`
+  - `soft parse ratio`
+  - `hard parse ratio`
+  - `library cache hit ratio`
+  - `library cache pin hit ratio`
+  - `library cache get hit ratio`
+  - `latch hit ratio`
+  - `shared pool free mem ratio`
+
+- **segments** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
+
+- **segments_exclude_sys** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  The sizes are collected except for accounts corresponding to sys.
+
+- **segments_hour** <span class='type'>Int</span>
+
+  Default `5`
+
+  It sets the time to collect segment sizes. The default value is `5` and collection starts at 5 AM.
+
+- **segments_max_count** <span class='type'>Int</span>
+
+  Default `50`
+
+  Only 50 large segments are collected and stored for each tablespace.
+
+- **segments_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  The minimum unit for collecting segment sizes is 10 MB by default. When collecting the segment sizes, the segment sizes less than the set value are not collected.
+
+- **segments_sys** <span class='type'>String</span>
+
+  Default: 
+
+  <details>
+    <summary>Viewing all 18 accounts</summary>
+
+    `SYS`, `OUTLN`, `SYSTEM`, `AUDSYS`, `DBSNMP`, `GSMADMIN_INTERNAL`,\
+    `XDB`, `WMSYS`, `OJVMSYS`, `CTXSYS`, `ORDSYS`, `ORDDATA`,\
+    `MDSYS`, `LBACSYS`, `DVSYS`, `DBSFWUSER`, `APPQOSSYS`, `OLAPSYS`  
+
+  </details>
+
+  It is the list of accounts corresponding to sys. To add to the above account, write additionally including the above content with `segments_sys='xxx','xxx','xxx'`.
+
+- **stat** <span class='type'>String</span>
+
+  Default: 
+
+  <details>
+
+  <summary>Viewing all 22 metrics</summary>
+
+    `consistent gets`, `cpu used by this session`, `db block changes`, `db block gets`, `db time`,\
+    `data blocks consistent reads - undo records applied`, `enqueue waits`, `execute count`,\
+    `logons current`, `opened cursors current`, `parse count (hard)`, `parse count (total)`,\
+    `physical reads`, `physical writes`, `redo entries`, `rollback changes - undo records applied`,\
+    `session logical reads`, `sorts (disk)`, `sorts (memory)`, `transaction tables consistent reads - undo records applied`,
+    `user commits`, `user rollbacks`
+
+  </details>
+
+  The values for the above metrics are collected from `v$sysstat`. You can check it in the db_oracle_counter category.
+
+  cf.) In Oracle Pro, you can set additional metrics other than the defaults by writing in the manner of `stat+=`. However, this product does not support it.
+
+- **xview_min_sec** <span class='type'>Int</span>
+
+  Default `0`
+
+  When collecting xview, it is collected only when the query execution time takes longer than the specified time. By default, it collects all queries whose execution time takes more than 0 seconds.
 
 ## Application of AWS RDS CloudWatch{#using-aws-rds}
 
@@ -35,7 +175,6 @@ import Dbagentaws from "../common-items/_db-agent-aws.mdx";
 
 <Dbagentaws />
 
-{/* AES 256 암호화 적용 */}
 import Dbaes256encrypt from "../common-items/_db-aes-256-encrypt.mdx";
 
 <Dbaes256encrypt />

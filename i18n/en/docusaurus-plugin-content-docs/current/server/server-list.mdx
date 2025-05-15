@@ -45,13 +45,61 @@ It displays the current status of the collection server by status. The status is
 
 - ![Icon](/img/ic-s-pause.svg) <Cmdname sid="status_paused" className="b600" />: The agent temporarily paused collecting data.
 
-## ![](/img/number-02.png) Searching
+## ![](/img/number-01.png) Searching
 
-Using the ![number-s](/img/number-02.png) **_search bar_** at the upper right corner, you can filter the list of servers that include input values from the server name (ONAME), server ID (OID), and tags.
+You can search for agent names and IPs by using the ![number-s](/img/number-01.png) **_search bar_** at the upper right.
+
+## ![](/img/number-02.png) Filter
+
+You can specify the filter by directly entering a value in the input field or by adding a filter. The filter tags are entered in the following order: `filter key`, `condition`, and `search value`. 
+
+#### Enter the filter key, condition, and search value.
+
+- When you enter the `filter key`, it provides the following options: Agent Name, CPU Used %, Memory Used %, Disk Used %, Disk I/O %, Network Traffic, and private_ip.
+
+- When entering a `condition`, the options such as `>`, `<`, `<=`, `>=`, `==`, and `!=` are provided.
+
+- Upon entry of the `search value` for matched search (`>`, `<`, `<=`, `>=`, `==`), it is highlighted in <span class='normal'>blue</span>, In case of excluded search (`!=`), it is highlighted in <span class='vslow'>red</span>. 
+
+- Upon entry of the `search value`, you can search using the case-sensitive option.
+
+:::note 
+
+- If the filter tags exceed 2 lines, you can fold it by selecting the ![Icon](/img/up-arrow.svg) **_Fold_** icon.
+
+- After entering a filter tag, you can use the Shift and Tab keys simultaneously in the input field to go to the previous filter tag. 
+
+- After entering a filter tag, you can use the Tab key in the input field to go to the next filter tag. 
+
+:::
+
+#### Deleting filter tags
+
+- A tag can be deleted with the Backspace key.
+
+- You can delete a tag by selecting the **_X_** icon for it.
+
+- You can delete all tags by selecting the Delete All **_X_** icon in the input field.
+
+#### Filter favorites {#log-filter-fav}
+
+You can select the ![Favorites icon](/img/ic-star.svg) **_Favorites_** icon on the right of the input window to **_add_**, **_delete_**, and select desired filter search conditions in the favorites.
+
+#### Exceptional cases for application of filters
+
+- In the tag with a numeric index (`search key` that ends with `.n`), only numbers can be input for the `search value`.
+
+- Duplicate ‘search key’ and ‘search value’ cannot be entered.
+
+- Searching is not possible when there is a tag that does not have either `condition key` or `search value`. Invalid tags are displayed in <span class='mstop'>gray</span>.
 
 ## ![](/img/number-03.png) Server Status
 
 It displays the status of all servers to which agents are assigned. If an agent is selected in the list, the <Cmdname sid="side_serverDetail" className="uitext" /> page appears. For more information about <Cmdname sid="side_serverDetail" className="uitext" />, see [the following](server-detail).
+
+#### File system information
+
+**_File system information_** can be checked by clicking the ![File system detailed view icon](/img/ico-detail-view-gr.svg) icon on the left of the agent name to view in detail.
 
 ### Column Settings
 
@@ -81,31 +129,25 @@ It displays the status of all servers to which agents are assigned. If an agent 
 
   :::
 
+#### Preset management
+
+In <Cmdname sid="side_serverList" className="uitext" /> &amp;gt; <Cmdname sid="side_serverList" className="uitext" />, if you click ![Column icon](/img/ic-column.svg) <Cmdname sid="column_settings" className="uitext" />, you can manage and share the presets.
+
+The selected column combination can be saved as a preset, and shared with other users who access the same project. Recently used presets are stored in the personal browser and automatically loaded when connection is made again. If the recent preset is deleted, it is reset to the default preset (<Cmdname sid="kube_default" className="uitext" />). For information on how to set presets, see [the following](metrics-explorer#setpreset).
+
+- The widths and alignments for each column are saved in the user's browser and automatically applied when the menu is re-accessed. These settings are applied only to the user and cannot be shared with other users.
+
+:::caution
+
+**Only the users with the project edit role can save and delete presets.** For more information about member roles, see [the following](https://docs.whatap.io/project/project-structure#member-auth).
+
+:::
+
+<ImgLang img='server-list-cl-preset.png' desc='컬럼 설정 > Preset' />
+
 ### Refresh
 
 If you click ![Refresh icon](/img/ic-refresh2.svg) <Cmdname sid="refresh" className="uitext" />, the data is updated based on the current time.
-
-### Filtering
-
-![number-s](/img/number-03.png) If you click ![Filter icon](/img/ico-filter.svg) <Cmdname sid="filter" className="uitext" /> in the menu at the top, you can filter servers by using the tags. 
-
-Tags are automatically assigned when installing the agent. You can add input values. It identifies collection servers or filter the server status through tags.
-
-<ImgLang img='server-list-filter.png' desc='Server list filter'/>
-
-- ![number-s](/img/number-04.png) By selecting a tag in the area, you can filter servers. 
-
-- You can enable new tag features by entering tags for each agent. Check the input field in the ![number-s](/img/number-05.png) area.
-
-### Monitoring Management
-
-This function manages servers through agent commands. Click ![Server Management icon](/img/ico-setting.svg) <Cmdname sid="sms_management" className="uitext" /> and then select a server to apply the management features from the list. On the right, <Cmdname sid="paused_agent" className="uitext" />, <Cmdname sid="resume_agent" className="uitext" />, and <Cmdname sid="closed_agent" className="uitext" /> buttons are activated.
-
-- ![Pause icon](/img/ic-s-pause.svg) <Cmdname sid="paused_agent" className="uitext" />: Data collection for the agent is paused. It is displayed as the paused state in the server list.
-
-- ![Restart icon](/img/ic-caret-right.svg) <Cmdname sid="resume_agent" className="uitext" />: The agent is restarted.
-
-- ![Terminate icon](/img/ic-delete-critical.svg) <Cmdname sid="exclude" className="uitext" />: The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.
 
 ### Agent Transfer
 
@@ -151,3 +193,13 @@ If you click ![Chart comparison icon](/img/ic-multiline-chart2.svg) <Cmdname sid
 - If you select <Cmdname sid="check_period" className="uitext" />, the past data can be retrieved.
 
 :::
+
+### Monitoring Management
+
+This function manages servers through agent commands. Click ![Server Management icon](/img/ico-setting.svg) <Cmdname sid="sms_management" className="uitext" /> and then select a server to apply the management features from the list. On the right, <Cmdname sid="paused_agent" className="uitext" />, <Cmdname sid="resume_agent" className="uitext" />, and <Cmdname sid="closed_agent" className="uitext" /> buttons are activated.
+
+- ![Pause icon](/img/ic-s-pause.svg) <Cmdname sid="paused_agent" className="uitext" />: Data collection for the agent is paused. It is displayed as the paused state in the server list.
+
+- ![Restart icon](/img/ic-caret-right.svg) <Cmdname sid="resume_agent" className="uitext" />: The agent is restarted.
+
+- ![Terminate icon](/img/ic-delete-critical.svg) <Cmdname sid="exclude" className="uitext" />: The agent operation is stopped. It is excluded from the server list and the server status cannot be checked.

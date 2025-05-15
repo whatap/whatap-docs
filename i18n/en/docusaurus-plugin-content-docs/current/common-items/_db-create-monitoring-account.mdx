@@ -175,7 +175,7 @@ In SAP ASE, you must create a separate user account in the database, and then ad
    go
    ```
 
-3. Grant the user the necessary roles.
+3. Grant users the required roles depending on the functionality and environment.
 
    ```sql
    --Default monitoring permissions
@@ -192,7 +192,6 @@ In SAP ASE, you must create a separate user account in the database, and then ad
    ```sql
    sp_configure 'enable monitoring', 1
    sp_configure 'wait event timing', 1
-   sp_configure 'max SQL text monitored', 1024
    sp_configure 'SQL batch capture', 1
    sp_configure 'per object statistics active', 1
    sp_configure 'statement statistics active', 1
@@ -261,7 +260,7 @@ The roles other than the **Default role** do not need to be assigned depending o
 | Default role                                      | `grant create session to whatap;`                                              | `grant create session to c##whatap;`                                                                                                                                                             | Access                                                                                                                                                                 | -                                                                                            |
 | \^                                                | <code>grant <span class="vslow">select any dictionary</span> to whatap;</code> | <code>grant <span class="vslow">select any dictionary</span> to c##whatap;</code>                                                                                                                | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | When granting individual roles, see the following table                                      |
 | \^                                                | -                                                                              | `alter user c##whatap set container_data = ALL container = CURRENT;`                                                                                                                             | \^                                                                                                                                                                     | When using a multi-tenant DB (12C or higher), this is a required role to query the pdb.      |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap;`                                                                                                                                                               | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                                                                            |
+| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap;`                                                                                                                                                               | <Cmdname sid="active_sessions" className="uitext" /> &amp;gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                                                                            |
 | Hidden parameter query                            | \>                                                                             | `create view sys.whatap_vw_ksppi as select * from sys.x$ksppi;`<br/>`grant select on sys.whatap_vw_ksppi to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppi for sys.whatap_vw_ksppi;`      | Hidden parameters are included in the parameter query menu.                                                                                                            | To query hidden parameters, separate view/synonym creation and role assignment are required. |
 | \^                                                | \>                                                                             | `create view sys.whatap_vw_ksppcv as select * from sys.x$ksppcv;`<br/>`grant select on sys.whatap_vw_ksppcv to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppcv for sys.whatap_vw_ksppcv;` | \^                                                                                                                                                                     | \^                                                                                           |
 
@@ -341,3 +340,17 @@ If you have an account with roles, skip this step and then proceed to [Next Step
 </InDoc>
 
 :::
+
+<InDoc product="sapase">
+
+#### In case the sql text does not appear
+
+Changes are not reflected immediately and the agent restart is required.
+
+````
+```sql
+sp_configure 'max SQL text monitored', 1024
+```
+````
+
+</InDoc>

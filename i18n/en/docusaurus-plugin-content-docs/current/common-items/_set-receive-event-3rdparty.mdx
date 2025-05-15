@@ -2,7 +2,7 @@
 
 You can receive alerts through external applications such as Slack, Telegram, Teams, Jandi, and Webhooks.
 
-1. In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />, select <Cmdname sid="adding" className="uitext" /> in the <Cmdname sid="3rd_party_plugin" className="uitext" /> section.
+1. In <Cmdname sid="event_statistic" className="uitext" /> &amp;gt; <Cmdname sid="eventNoti" className="uitext" />, select <Cmdname sid="adding" className="uitext" /> in the <Cmdname sid="3rd_party_plugin" className="uitext" /> section.
 
 2. Select a desired service.
 
@@ -218,25 +218,25 @@ To use workflows, you need an account with access to **Microsoft Teams** and a b
 
 <summary>Webhook JSON</summary>
 
-1. Register a webhook to receive alerts. The notification data is sent to the registered URL in JSON format by using the POST method.
+1. Register a Webhook to receive notifications. The notifications are sent in JSON format to the registered URL by using the POST method. For alternative variables that can be included in JSON, see the **Available variables** section.
 
    ```json
    {
-       "pcode": 1234,
-       "projectName": "Sample project",
-       "time": 1577840400000,
-       "oid": 1234567890,
-       "oname": "WAS-01", // Optional
-       "title": "Alert Title",
-       "message": "Sample warning message",
-       "level": "Warning",
-       "status": "on",
-       "metricName": "cpu", // Optional
-       "metricValue": "99.99", // Optional
-       "metricThreshold": "90", // Optional
-       "uuid": "ba5db108b788475c95195***********",
-       "okind": "WAS-okind-01", // Optional
-       "onode": "WAS-onode-01", // Optional
+       "pcode": "${pcode}",
+       "projectName": "${projectName}",
+       "time": "${time}",
+       "oid": "${oid}",
+       "oname": "${oname}",
+       "title": "${title}",
+       "message": "${message}",
+       "level": "${level}",
+       "status": "${status}",
+       "metricName": "${metricName}",
+       "metricValue": "${metricValue}",
+       "metricThreshold": "${metricThreshold}",
+       "uuid": "${uuid}",
+       "okind": "${okind}",
+       "onode": "${onode}"
    }
    ```
 

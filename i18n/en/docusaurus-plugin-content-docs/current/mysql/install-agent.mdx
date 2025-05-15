@@ -22,17 +22,16 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Createprojectv2 />
 
-{/* ## 구성도 확인 */}
+{/* ## 구성도 확인 _/}
 import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
 <CheckType />
 
-{/* 모니터링용 계정 생성*/}
 import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-account.mdx";
 
 <Dbcreatemonitoringaccount />
 
-{/* MySQL*/}
+{/* MySQL_/}
 
 <Tabs groupId="mysql-db">
 <TabItem value="mysql" label="MySQL">
@@ -175,22 +174,22 @@ Instead of <code><span className="vslow">performance_schema.*</span></code>, you
 
 </details>
 
-{/* 액세스 키 확인 */}
+{/* 액세스 키 확인 _/}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-{/* DBX 에이전트 다운로드 */}
+{/* DBX 에이전트 다운로드 _/}
 import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
 <DownloadDBXagent />
 
-{/* ## DBX 에이전트 설정 */}
+{/* ## DBX 에이전트 설정 _/}
 import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
 
 <SettingsDBXagent />
 
-{/* ### whatap.conf 설정 */}
+{/* ### whatap.conf 설정 _/}
 import Whatapconf from "../common-items/_db-whatap-conf.mdx";
 
 <Whatapconf />
@@ -214,19 +213,19 @@ connect_option=?useSSL=true&verifyServerCertificate=false
 
 #### In case the serverTimeZone setting is required upon accessing the JDBC driver
 
-If you use the JDBC driver version 8.x or later, you may need to set `serverTimezone` for the connection URL. Set the following options in the *whatap.conf* file:
+If you use the JDBC driver version 8.x or later, you may need to set `serverTimezone` for the connection URL. Set the following options in the _whatap.conf_ file:
 
 ```ini title="whatap.conf"
 connect_option=?serverTimezone=SERVER_TIMEZONE
 # connect_option=?serverTimezone=UTC
 ```
 
-{/* ### JDBC 다운로드 */}
+{/* ### JDBC 다운로드 _/}
 import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
 <JDBCDownload />
 
-{/* ### DB 유저 파일 생성 {#create-db-user} */}
+{/* ### DB 유저 파일 생성 {#create-db-user} _/}
 
 <DBuserDesc level={3} />
 
@@ -234,17 +233,16 @@ import Dbcreatedbuserfilebody from "../common-items/_db-create-db-user-file-body
 
 <Dbcreatedbuserfilebody />
 
-{/*모니터링 시작하기*/}
+{/*모니터링 시작하기_/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />
 
-{/*XOS 에이전트 설치*/}
+{/*XOS 에이전트 설치_/}
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
 
-{/* ## 다음 단계 */}
 import NextStep from "../common-items/_db-next-step.mdx";
 
 <NextStep />

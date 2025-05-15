@@ -14,25 +14,9 @@ import ServerInventoryFilter from "../common-items/_server-inventory-filter.mdx"
 
 Home &gt; Select Project &gt; <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />
 
-{/* :::note 
-
-**Requirements**
-
-To use the server inventory map dashboard, enable the server inventory and server inventory map features. Use the new server inventory map dashboard along with the server inventory. For more information about the server inventory activation, see [the following](server-inventory).  
-
-::: */}
-
 On the initial screen of the WhaTap monitoring service, select a project, and then select the <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu under the <Cmdname sid="side_dashboard" className="uitext" /> menu. <Cmdname sid="side_serverInventoryMap" className="uitext" /> is a visualization dashboard that allows administrators to group and organize servers based on the classification criteria for monitoring purposes based on <Cmdname sid="side_serverInventory" className="uitext" />. 
 
 WhaTap allows users to intuitively check and analyze the server operation status through <Cmdname sid="side_serverInventoryMap" className="uitext" />. The administrators can add and manage the user-defined information such as work classification, person in charge, and server location as custom columns, and easily create visualized dashboards based on this. <Cmdname sid="side_serverInventoryMap" className="uitext" /> also provides the grouping feature to meet different perspectives for monitoring purposes. Improve the server operation management efficiency through <Cmdname sid="side_serverInventoryMap" className="uitext" />.
-
-{/* 
-
-Additionally, it provides the group-specific summary and information details to help run the infrastructure efficiently.
-
-Simplify the server operation management by using the server inventory map and visually provide key metrics to simultaneously improve the infrastructure management efficiency and operation productivity. 
-
-*/}
 
 ## Requirements
 
@@ -210,9 +194,6 @@ For more information on how to use the time selector, see [the following](usage-
 
 #### Grouping
 
-{/* 1. 업무그룹 대 - 업무 그룹 중 (활용 예시)(나중에 12월?)
-2. Infrastructure domain - Work group major (11 guidance method upon release) (English groups to be provided up to major level) */}
-
 <Columns>
 
 <Column className="text--left width--20">
@@ -338,35 +319,13 @@ Click ![Detailed view icon](/img/ico-detail-mode.svg) ***Display Detail*** on th
 
 In the <Cmdname sid="group_info" className="uitext" /> tab, you can effectively check the main operation status and resources of the selected server group as follows.
 
-{/* 서버 업타임 */}
-
 #### <Cmdname sid="TTL08660" className="uitext" />
 
 It divides the operation period into sections since the server booting and visualizes the number of servers in the section in bar chart format. When a bar chart is selected, the detailed information of servers belonging to the section is highlighted in the <Cmdname sid="TTL08767" className="uitext" /> list below. If you click the same bar chart, the selection is released. 
 
-{/* 
-
-Displaying counts for each operation period section:
-
-- The number of servers in the corresponding section is visualized in the bar chart format by dividing the sections based on the elapsed operation period since the server booting.
-
-- Interaction feature:
-
-- When you click on a bar chart, the details of the servers belonging to the corresponding section appear in the server configuration table below, with the selected items highlighted.
-
-- If you click the same bar chart again, the selection is released.
-
-This allows the administrators to intuitively check the server uptime distribution and easily check server information that belongs to a specific section. 
-
-*/}
-
-{/* 서버 인벤토리 */}
-
 #### <Cmdname sid="TTL08767" className="uitext" />
 
 You can see key information about the servers in the selected server group in list format. You can filter the data by entering the hostname or IP address in the input fields on the right. It provides ***server name***, ***IP address***, ***OS version***, ***CPU cores***, ***memory (GB)***, and ***server uptime*** columns.
-
-{/* 파일 시스템 사용 정보 */}
 
 #### <Cmdname sid="TTL08662" className="uitext" />
 
@@ -397,8 +356,6 @@ The <Cmdname sid="metrics" className="uitext" /> tab allows you to view key serv
 | ***[NET] Tx (bps)***       | It displays the amount of data transmitted (Tx) over the network in bits per second (bps).                                                                                 |
 | ***[Disk] Read (Bytes)***  | It displays the sum of the read speeds of the entire disk in bytes per second.                                                                                             |
 | ***[Disk] Write (Bytes)*** | It displays the sum of write speeds per second of the entire disk in bytes.                                                                                                |
-
-{/* 상세 내 커스텀 컬럼 추가/수정/삭제의 경우 프로젝트 수정 권한 필요 */}
 
 ### Events in progress
 

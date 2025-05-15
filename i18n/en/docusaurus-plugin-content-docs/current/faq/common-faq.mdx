@@ -46,4 +46,13 @@ For application and server monitoring products, you can change multiple agent se
 
 **If deployed in the container environment** You have to modify the *whatap.conf* file within the image containing the Whatap agent, and rebuild and redeploy the image to apply the changes. Note that the previous image settings are kept when making changes in the UI.
 
+### Event duration time
+
+> Why doesn't the event get resolved after occurrence?
+
+Check the **Duration (number of occurrences)** setting of the occurred event. The duration (number of occurrences) setting for events applies not only when the event occurs, but also when it is resolved. If the set conditions are not met, the event is not resolved and is maintained. 
+
+e.g. if the condition (number) for transaction error events is 10 cases and the duration is 30 seconds\
+An event occurs when the number of transaction errors exceeds 10 and continues for 30 seconds, and the event is resolved when the number of errors is 10 or less and continues for 30 seconds.
+
 </div>
