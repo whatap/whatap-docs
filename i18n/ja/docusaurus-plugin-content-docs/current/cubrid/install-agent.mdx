@@ -26,7 +26,6 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Steps>
 
-{/* ## 구성도 확인 */}
 import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
 <CheckType />
@@ -45,32 +44,26 @@ cm_admin adduser whatap whatap
 
 :::
 
-{/* 액세스 키 확인 */}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-{/* DBX 에이전트 다운로드 */}
 import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
 <DownloadDBXagent />
 
-{/* ## DBX 에이전트 설정 */}
 import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
 
 <SettingsDBXagent />
 
-{/* ### whatap.conf 설정 */}
 import Whatapconf from "../common-items/_db-whatap-conf.mdx";
 
 <Whatapconf />
 
-{/* ### JDBC 다운로드 */}
 import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
 <JDBCDownload />
 
-{/* ### DB 유저 파일 생성 */}
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 <DBuserDesc level={3} />
@@ -104,7 +97,7 @@ XOSエージェントを一緒にインストールすると、XOSポートを�
 
 ### xcub.confファイルの設定
 
-データベースサーバーのxcubフォルダパスにある*xcub.conf*ファイルにDBXエージェントサーバー情報を入力し、追加オプションを設定します。
+データベースサーバーのxcubフォルダパスにある_xcub.conf_ファイルにDBXエージェントサーバー情報を入力し、追加オプションを設定します。
 
 ```ini titile="xcub.conf"
 db=demodb@127.0.0.1
@@ -115,7 +108,7 @@ dbx_port=3002
 
 - `db`: **dbname@dbサーバーIP**形式で入力します。
 
-- `dba_pwd`: パスワードを設定すると、最初の実行時に*xcub.pwd*ファイルを作成します。以降*xcub.conf*ファイルでは`dba_pwd`項目を削除します。
+- `dba_pwd`: パスワードを設定すると、最初の実行時に_xcub.pwd_ファイルを作成します。以降_xcub.conf_ファイルでは`dba_pwd`項目を削除します。
 
 - `dbx_ip`: DBXエージェントをインストールしたサーバーのIPアドレスを入力しんます。
 
@@ -149,19 +142,16 @@ XCUBエージェントをバックグラウンドで実行するには、_./star
 
 :::
 
-{/*모니터링 시작하기*/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />
 
-{/*XOS 에이전트 설치*/}
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
 
 </Steps>
 
-{/* ## 다음 단계 */}
 import NextStep from "../common-items/_db-next-step.mdx";
 
 <NextStep />

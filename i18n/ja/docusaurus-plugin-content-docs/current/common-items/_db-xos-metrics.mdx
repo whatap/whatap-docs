@@ -1,31 +1,31 @@
 ## XOS関連メトリクス {#xosmetrics}
 
-次は、XOSエージェントから収集されるメトリクスについての説明です。
+XOSエージェントから収集されるメトリクスについての説明です。
 
 <div class='metric'>
 
-| Metric                  | Unit  | Description                                                             |
-| ----------------------- | ----- | ----------------------------------------------------------------------- |
-| `cpu(xos)`              | pct   | CPU使用率、`cpu_user` + `cpu_sys` + `cpu_iowait`の合計です。                      |
-| `cpu_user(xos)`         | pct   | CPUがユーザーコードを実行する際にかかった時間です。                                             |
-| `cpu_sys(xos)`          | pct   | CPUがKernel codeを実行した時間です。                                               |
-| `cpu_iowait(xos)`       | pct   | CPUがIOを待機した時間です。                                                        |
-| `cpu_idle(xos)`         | pct   | CPUプロセッサのアイドルタイムです。                                                     |
-| `disk_reads(xos)`       | block | ディスクから読み取ったデータの量です。                                                     |
-| `disk_read_bytes(xos)`  | バイト   | ディスクから読み取ったデータの量です。                                                     |
-| `disk_writes(xos)`      | block | ディスクに書き込んだデータの量です。                                                      |
-| `disk_write_bytes(xos)` | バイト   | ディスクに書き込んだデータの量です。                                                      |
-| `mem(xos)`              | pct   | メモリ使用率です。                                                               |
-| `mem_total(xos)`        | MB    | 全体のメモリ量です。                                                              |
-| `mem_free(xos)`         | MB    | システムで使用していないメモリの量です。                                                    |
-| `mem_used(xos)`         | MB    | システムで使用しているメモリ量です。                                                      |
-| `mem_buffcache(xos)`    | MB    | buff/cacheで使用中のメモリ量です。                                                  |
-| `mem_swaptotal(xos)`    | MB    | Swap全体サイズ、物理メモリが不足している場合に備えて設定します。                                      |
-| `mem_swapfree(xos)`     | MB    | Swapの未使用領域、Swap領域はディスク領域が解放されるため、Swapを使用している場合は、システム性能が大幅に低下する可能性があります。 |
-| `mem_available(xos)`    | MB    | メモリの可用領域です。                                                             |
-| `net_recv_bytes(xos)`   | バイト   | ネットワークで受信されたデータの量です。                                                    |
-| `net_recv_packets(xos)` | -     | ネットワークで受信されたデータパケットの数です。                                                |
-| `net_send_bytes(xos)`   | バイト   | ネットワークで送信したデータの量です。                                                     |
-| `net_send_packets(xos)` | -     | ネットワークに送信したデータパケットの数です。                                                 |
+| Metric                  | Unit  | Description                                            |
+| ----------------------- | ----- | ------------------------------------------------------ |
+| `cpu(xos)`              | pct   | CPU使用率<br/> `cpu_user` + `cpu_sys` + `cpu_iowait`の合計   |
+| `cpu_idle(xos)`         | pct   | CPUが遊休状態の時間                                            |
+| `cpu_iowait(xos)`       | pct   | CPUがI/O作業を待機した時間                                       |
+| `cpu_sys(xos)`          | pct   | CPUがカーネルコードの実行に使用された時間                                 |
+| `cpu_user(xos)`         | pct   | CPUがユーザーコードの実行に使用された時間                                 |
+| `disk_read_bytes(xos)`  | バイト   | ディスクから読み取ったデータ量                                        |
+| `disk_reads(xos)`       | block | ディスクで読み取られたブロック数                                       |
+| `disk_write_bytes(xos)` | バイト   | ディスクに記録されたデータ量                                         |
+| `disk_writes(xos)`      | block | ディスクに記録されたブロック数                                        |
+| `mem(xos)`              | pct   | メモリ使用率                                                 |
+| `mem_available(xos)`    | MB    | 使用可能なメモリサイズ                                            |
+| `mem_buffcache(xos)`    | MB    | buff/cache用途に使用中のメモリサイズ                                |
+| `mem_free(xos)`         | MB    | 使用していないメモリサイズ                                          |
+| `mem_swapfree(xos)`     | MB    | 未使用のスワップ領域サイズ<br/>スワップはディスク領域を使用するため、使用時に性能が低下する可能性がある |
+| `mem_swaptotal(xos)`    | MB    | 全体スワップ(Swap)サイズ<br/>物理メモリ不足時に使用                        |
+| `mem_total(xos)`        | MB    | 全体メモリのサイズ                                              |
+| `mem_used(xos)`         | MB    | 使用中のメモリサイズ                                             |
+| `net_recv_bytes(xos)`   | バイト   | ネットワークから受信したデータ量                                       |
+| `net_recv_packets(xos)` | count | ネットワークから受信したパケット数                                      |
+| `net_send_bytes(xos)`   | バイト   | ネットワークで送信したデータ量                                        |
+| `net_send_packets(xos)` | count | ネットワークで送信したパケット数                                       |
 
 </div>

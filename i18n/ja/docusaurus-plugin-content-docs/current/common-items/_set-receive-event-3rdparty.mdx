@@ -218,25 +218,25 @@ WhaTapのサポート範囲に含まれていないアラート連携は、標�
 
 <summary>Webhook JSON</summary>
 
-1. 通知を受けるWebhookを登録します。登録したURLに、POST Methodで通知データがJSONで転送されます。
+1. 通知を受け取るWebhookを登録します。登録したURLにPOST Methodで通知データがJSON形式で送信されます。JSON内に含める代替変数については**使用可能変数**部分を参照してください。
 
    ```json
    {
-       "pcode": 1234,
-       "projectName": "Sample project",
-       "time": 1577840400000,
-       "oid": 1234567890,
-       "oname": "WAS-01", // Optional
-       "title": "Alert Title",
-       "message": "Sample warning message",
-       "level": "Warning",
-       "status": "on",
-       "metricName": "cpu", // Optional
-       "metricValue": "99.99", // Optional
-       "metricThreshold": "90", // Optional
-       "uuid": "ba5db108b788475c95195***********",
-       "okind": "WAS-okind-01", // Optional
-       "onode": "WAS-onode-01", // Optional
+       "pcode": "${pcode}",
+       "projectName": "${projectName}",
+       "time": "${time}",
+       "oid": "${oid}",
+       "oname": "${oname}",
+       "title": "${title}",
+       "message": "${message}",
+       "level": "${level}",
+       "status": "${status}",
+       "metricName": "${metricName}",
+       "metricValue": "${metricValue}",
+       "metricThreshold": "${metricThreshold}",
+       "uuid": "${uuid}",
+       "okind": "${okind}",
+       "onode": "${onode}"
    }
    ```
 

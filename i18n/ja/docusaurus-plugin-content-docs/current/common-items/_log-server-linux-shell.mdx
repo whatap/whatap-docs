@@ -43,6 +43,13 @@
     [[inputs.logsink.file]]
     # whatap_host_ip = "収集サーバーIP1/収集サーバーIP2"
     # whatap_host_port = 6600
+
+    [[inputs.logsink.file]]
+    path = "/tmp/mixed.log"
+    disabled = false
+    encoding = "utf-8"
+    ## [{"A":1,"B":2},{"C":3,"D":4},...] 形態をそれぞれのログに分離できる{"A":1,"B":2} {"C":3,"D":4}
+    multiline_pattern = "simple_json_array"
   EOL
 
   sudo service whatap-infra restart
