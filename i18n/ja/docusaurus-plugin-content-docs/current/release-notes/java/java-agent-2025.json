@@ -49,12 +49,6 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_54",
-    "ver": "v2.2.54",
-    "date": "2025-02-28",
-    "Lists": []
-  },
-  {
     "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_53",
     "ver": "v2.2.53",
     "date": "2025-02-27",
@@ -141,7 +135,7 @@
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>service_name_mode</code>オプションにreturn方式の追加</p>"
       }
     ]
-  }
+  },
   {
     "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_49",
     "ver": "v2.2.49",

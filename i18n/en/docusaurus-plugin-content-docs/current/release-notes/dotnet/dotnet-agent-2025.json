@@ -23,7 +23,7 @@
         "hash": "v241",
         "product": ".NET Agent",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> ISAPIフィルターベースのトランザクション追跡機能を追加</p>"
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the ISAPI filter-based transaction tracing feature.</p>"
       }
     ]
   },
