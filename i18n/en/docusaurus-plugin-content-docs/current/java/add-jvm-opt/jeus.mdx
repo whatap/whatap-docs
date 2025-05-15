@@ -15,8 +15,8 @@ This guide explains how to add required JVM options to effectively use the Java 
 
 1. Refer to the path of the configuration file for startup options depending on the JEUS version, and then add the `-javaagent` option.
 
-   <Tabs>
-   <TabItem value='jeus7' label='JEUS 7' default>
+ <Tabs>
+ <TabItem value='jeus7' label='JEUS 7' default>
 
    ```xml title="$JEUS_HOME/domains/jeus_domain/config.xml" {6-9} showLineNumbers
    <domain>
@@ -35,8 +35,8 @@ This guide explains how to add required JVM options to effectively use the Java 
    </domain>
    ```
 
-   </TabItem>
-   <TabItem value='jeus6' label='JEUS 6'>
+ </TabItem>
+ <TabItem value='jeus6' label='JEUS 6'>
 
    ```xml title="$JEUS_HOME/config/$hostname/JEUSMain.xml" {6-9} showLineNumbers
    <node>
@@ -52,8 +52,8 @@ This guide explains how to add required JVM options to effectively use the Java 
    </node>
    ```
 
-   </TabItem>
-   </Tabs>
+ </TabItem>
+ </Tabs>
 
 2. Restart the application server.
 

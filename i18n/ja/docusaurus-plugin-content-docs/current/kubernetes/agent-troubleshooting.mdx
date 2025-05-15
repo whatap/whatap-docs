@@ -112,21 +112,19 @@ helm install whatap-kube-agent whatap/kube --create-namespace --namespace <names
 | Unrecognized VM option 'UseCGroupMemoryLimitForHeap'<br/>Error: Could not create the Java Virtual Machine.<br/>Error: A fatal exception has occurred. Program will exit. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-**2022年8月24日以前**にダウンロードしたインストール*YAML*を通じてWhaTapのKubernetesモニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生し、起動に失敗する場合があります。 
+**2022年8月24日以前**にダウンロードしたインストール*yaml*を通じてWhaTapのKubernetesモニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生し、起動に失敗する場合があります。 
 
-原因は以下のとおりです。 2022年8月24日以前にダウンロードしたインストール*YAML*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
+原因は以下のとおりです。 2022年8月24日以前にダウンロードしたインストール*yaml*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
 
-WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) バージョンからエージェント内部で使用するJDKがアップグレードされおり、アップグレードされたJDKバージョンは、これ以上`UseCGroupMemoryLimitForHeap`オプションを提供していません。 **2022年8月24日以前**にダウンロードした*YAML*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
+WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) バージョンからエージェント内部で使用するJDKがアップグレードされおり、アップグレードされたJDKバージョンは、これ以上`UseCGroupMemoryLimitForHeap`オプションを提供していません。 **2022年8月24日以前**にダウンロードした*yaml*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
 
 #### 解決方法
 
 この問題を解決するために、次のようにKubernetesモニタリングを再インストールします。 
 
-{/* 다음 단계를 통해 와탭 쿠버네티스 모니터링을 재설치하세요. */}
-
 1. <Cmdname sid="side_management" className="uitext" />  > <Cmdname sid="agentInstall" className="uitext" />画面で最新の*YAML*ファイルをダウンロードします。
 
-2. ユーザーKubernetes環境でダウンロードした*YAML*ファイルを使用してエージェントをインストールしてください。 
+2. ユーザーKubernetes環境でダウンロードした*yaml*ファイルを使用してエージェントをインストールしてください。 
 
 3. ユーザーKubernetes環境でインストール中にエラーの出力有無を確認してください。
 
@@ -140,21 +138,43 @@ WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) 
 
 5. <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="side_kubernetesAgentList" className="uitext" />メニューで、各モニタリングエージェントで発生するログを確認します。
 
+### DockerHubイメージpull limitでエージェントが正常にインストールされない場合、{#troubleshooting-pull-limit}
+
+複数のノードで同時に画像をpullする場合、以下のようなエラーが発生し、インストールに失敗することがあります。 問題が発生した場合、以下のコマンドでyamlにイメージを変更して再インストールする必要があります。
+
+#### エラー照会
+
+```yaml
+kubectl describe pod/<WhaTap k8s エージェントPod名> -n whatap-monitoring
+```
+
+#### 照会結果
+
+```yaml
+> > Failed to pull image "whatap/kube_mon:latest": rpc error: code = Unknown desc = toomanyrequests: You have reached your pull rate limit. Please try again later or log in to increase your rate limit.
+```
+
+この場合、`yaml`ファイル内のDockerHubイメージをpublic.ecr.awsレポに変更した後、再インストールが必要です。
+
+- エージェントインストール画面でデフォルトインストール用のyamlをダウンロードした場合、以下のコマンドを使用して画像を変更できます。 コマンド実行時、yamlにある既存のdocker Hubイメージが[public.ecr.aws](http://public.ecr.aws)リポジトリイメージに置き換えられます。
+
+  ```yaml
+  sed -i 's|image: "whatap/kube_mon|image: "public.ecr.aws/whatap/kube_mon|g' kube_agent.yaml
+  ```
+
 </div>
 
 ## アプリケーション連動問題の解決{#troubleshooting-k8s-application}
 
 ### コンテナマップにJavaモニタリングデータが表示されない場合
 
-Kubernetes環境でCgroupsの設定や管理方法によっては、特定の状況でコンテナIDを確保できない問題が発生する可能性があります。 WhaTapは、このような状況に対応するために、Kubernetesモニタリングのコンテナとアプリケーション間のマッピングメカニズムを変更しました。 当該変更事項の場合は、WhaTap**Kubernetesエージェント1.7.7**バージョンと**Javaエージェント2.2.33**バージョンから適用され、Cgroupsの影響でコンテナIDが漏れる問題を解決します。 
-
-{/* 사용자 쿠버네티스 환경에 따라 내부 Cgroups의 영향으로 컨테이너 ID를 확보하지 못하는 경우가 발생할 수 있습니다. WhaTapは、このような状況に対応するために、Kubernetesモニタリングのコンテナとアプリケーション間のマッピングメカニズムを変更しました。 当該変更事項の場合は、Kubernetesエージェント1.7.7およびJavaエージェント2.2.33バージョンから適用されました。  */}
+Kubernetes環境でCgroupsの設定や管理方法によっては、特定の状況でコンテナIDを確保できない問題が発生する可能性があります。 WhaTapは、このような状況に対応するために、Kubernetesモニタリングのコンテナとアプリケーション間のマッピングメカニズムを変更しました。 当該変更事項の場合は、WhaTap**Kubernetesエージェント1.7.7**バージョンと**Javaエージェント2.2.42**バージョンから適用され、Cgroupsの影響でコンテナIDが漏れる問題を解決します。 
 
 #### 解決方法
 
 ##### エージェントのアップデート
 
-Kubernetes環境で発生するコンテナIDの識別問題を解決するためには、WhaTapのKubernetesエージェントとAPMが互いにやり取りするデータを正確に識別できるよう、サポートする最新バージョンを使用する必要があります。 **クバネティス·エージェント**は**1.7.7バージョン以降**をを設置し、**Javaエージェント**は**2.2.33バージョン以降**をインストールします。 
+Kubernetes環境で発生するコンテナIDの識別問題を解決するためには、WhaTapのKubernetesエージェントとAPMが互いにやり取りするデータを正確に識別できるよう、サポートする最新バージョンを使用する必要があります。 **クバネティス·エージェント**は**1.7.7バージョン以降**をを設置し、**Javaエージェント**は**2.2.42バージョン以降**をインストールします。 
 
 :::note
 現在はJavaエージェントのみサポートしており、他の言語のAPMは今後サポートする予定です。 
@@ -162,7 +182,7 @@ Kubernetes環境で発生するコンテナIDの識別問題を解決するた�
 
 ##### 追加環境変数の設定　
 
-エージェントバージョンのアップデート以降も、<Cmdname sid="side_containerMap" className="uitext" />にJavaアプリケーション情報が表示されない場合、ユーザー環境変数を追加して問題を解決できます。 この設定は、Java APMがインストールされたコンテナマニフェスト(*YAML*)の環境変数に、当該コンテナ内のJavaエージェントの絶対パスを表す`WHATAP_JAVA_AGENT_PATH`オプションを追加します。 
+エージェントバージョンのアップデート以降も、<Cmdname sid="side_containerMap" className="uitext" />にJavaアプリケーション情報が表示されない場合、ユーザー環境変数を追加して問題を解決できます。 この設定は、Java APMがインストールされたコンテナマニフェスト(*yaml*)の環境変数に、当該コンテナ内のJavaエージェントの絶対パスを表す`WHATAP_JAVA_AGENT_PATH`オプションを追加します。 
 
 次はJava APMがインストールされたコンテナ環境変数に当該オプションを追加した例です。 
 

@@ -31,7 +31,7 @@ EKS Fargateは、対応予定です。
 
 1. WhaTap Kubernetesエージェントのイメージバージョンを推奨する**_Stable_**バージョンと**_Preview_**バージョンの中から選択します。
 
-2. ***YAML***ファイルと***Helm***チャートのインストール方法の中から希望する**インストール方式**を選択します。 
+2. ***yaml***ファイルと***helm***チャートのインストール方法の中から希望する**インストール方式**を選択します。 
 
 3. **_1.16以降_**バージョンまたは**_1.16未満_**バージョンの中で該当する**Kubernetesバージョン**を選択します。 
 
@@ -40,6 +40,28 @@ EKS Fargateは、対応予定です。
 5. **ユーザーKubernetes環境**(GKE, OpenShift, Istio, GPU Cluster) の中、該当する項目がある場合は選択します。
 
 6. インストール方法に関する項目を選択した後、画面右下の**_次_**ボタンをクリックするか、左の**_追加機能の適用_**タブを選択して次のステップへ移動します。
+
+### WhaTap Kubernetesエージェントイメージリポジトリの追加対応
+
+WhaTap Kubernetesエージェントは、従来のDockerHubの他にPublic ECRに追加対応します。 使用環境に応じて、2つのイメージリポジトリのいずれかを選択してインストールできます。
+
+#### Public ECR
+
+- リポジトリ: `public.ecr.aws/whatap/kube_mon` <code class='my'>推奨</code>
+
+ECRは、pull制限ポリシーの影響を受けないため、頻繁なアップデートや大規模な配布環境で安定的に使用できるのでお勧めします。
+
+#### DockerHub
+
+- リポジトリ: `whatap/kube_mon`
+
+DockerHubは、認証されていないクライアントに対してpull制限(policy)が適用されることがあります。 ノード数が多かったり、同時にpullリクエストが発生した場合、rate limitに引っかかってインストールが失敗する可能性が高いです。 詳しくは[DockerHubポリシー案内](https://docs.docker.com/docker-hub/usage/)の公式文書を参考にしてください。
+
+:::caution 
+
+pull制限が発生した場合は、[次の文書](../kubernetes/agent-troubleshooting#troubleshooting-pull-limit)を参考にしてください。 
+
+:::
 
 ## 追加機能の適用{#additional-features}
 
@@ -68,7 +90,7 @@ WhaTap Kubernetesモニタリングは、様々な追加機能を提供します
 <Tabs>
 <TabItem value='cr_yaml' label='Yaml' default>
 
-WhaTap Kubernetesエージェント設置*YAML*ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
+WhaTap Kubernetesエージェント設置*yaml*ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
 
 ```yaml {38,39}
 apiVersion: rbac.authorization.k8s.io/v1
@@ -162,7 +184,7 @@ clusterrole:
 
 <ImgLang img='k8s-install-master-node-download.png' desc='インストールファイルのダウンロード'/>
 
-ダウンロード後、画面右下の**_次へ_**ボタンをクリックするか、**_実行コマンドの入力_**タブを選択して次のステップへ移動します。 
+ダウンロード後、画面右下の**_次へ_**ボタンをクリックするか、**_実行コマンドの入力_**タブを選択して次のステップへ移動します。
 
 ## 実行コマンドの入力
 
@@ -217,7 +239,7 @@ WhaTap Kubernetesエージェントのインストール時**Yaml**ファイル�
 
 #### Yamlファイル基準インストール
 
-**_インストール方法の選択_**タブで***Yaml***ファイルのインストール方法を選択した場合は、エージェントを生成するために次のコマンドを実行します。 
+**_インストール方法の選択_**タブで***yaml***ファイルのインストール方法を選択した場合は、エージェントを生成するために次のコマンドを実行します。 
 
 ```bash
 kubectl apply -f whatap_kube_agent.yaml
@@ -225,7 +247,7 @@ kubectl apply -f whatap_kube_agent.yaml
 
 :::note
 
-**マスターエージェントが使用するリソースの量**は、**ユーザー環境のノード数**にある程度**比例**します。 つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する可能性があります。 マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール*YAML*ファイルから変更できます。
+**マスターエージェントが使用するリソースの量**は、**ユーザー環境のノード数**にある程度**比例**します。 つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する可能性があります。 マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール*yaml*ファイルから変更できます。
 
 :::
 
@@ -241,9 +263,9 @@ WhaTap Kubernetesエージェントは基本的に`whatap-monitoring`ネーム�
 
 :::
 
-**_インストール方法の選択_**タブで***Helm***チャートのインストール方法を選択した場合は、次のガイドを参照してください。 
+**_インストール方法の選択_**タブで***helm***チャートのインストール方法を選択した場合は、次のガイドを参照してください。 
 
-1. 次のコマンドを通じて*Helm*バージョンを確認します。 3.xバージョン以降をサポートします。 
+1. 次のコマンドを通じて*helm*バージョンを確認します。 3.xバージョン以降をサポートします。 
 
    ```bash
    helm Version

@@ -104,7 +104,7 @@ import Javatracetransaction from "../common-items/_java-trace-transaction.mdx";
 
 ## トレースURL名を修正する
 
-- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>string</span> <code class="my">Java Agent v2.2.4 or later</code>
+- **hook_tx_name_patterns / hook_tx_name_mode** <span class='type'>String</span> <code class="my">Java Agent v2.2.4 or later</code>
 
   特定URLおよび特定メソッド(method)を呼び出す時にトレースURLの名前を修正できます。例えば`io.home.test.TestController.test1`に登録したURLを呼び出すと`test100000()`メソッドが呼び出される場合、サービス画面から`/api/100000+test1+test100000`で確認できます。
 
