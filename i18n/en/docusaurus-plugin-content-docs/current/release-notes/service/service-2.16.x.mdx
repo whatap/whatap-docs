@@ -1,0 +1,315 @@
+---
+id: service-2_16_x
+title: Service 2.16.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_15_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.16.2
+
+April 29, 2025 
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">New</code>, added ascending sorting for agents and metric names.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="billingPreview" className="uitext" />, <Cmdname sid="side_paymentHistory" className="uitext" />, and <Cmdname sid="usage" className="uitext" />, added separate billings by application namespace for Kubernetes products.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Changed</Status> In the detailed window of the <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> &gt; <Cmdname sid="AA010" className="uitext" /> widget, changed the System GC button to be activated based on the edit role.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" />, changed the visual format to be displayed correctly when downloading CSV.
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" />, added the agent name and IP search input.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" />, added the pop-up for the file system information.
+
+</div>
+
+## Service 2.16.1
+
+April 23, 2025 
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_serverList" className="uitext" />, deleted the agent search input.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" />, fixed the issue where the agent name column is duplicated.
+
+</div>
+
+## Service 2.16.0
+
+April 23, 2025 
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Improved the project description to be displayed when hovering your mouse over the project list.
+
+- <Status priority='1'>Feature</Status> Occurrence of real-time notifications can also be checked through the browser.
+
+- <Status priority='1'>Feature</Status> Added the horizontal line option to the TopN widget of <Cmdname sid="side_flexboard" className="uitext" />.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_eventSetting" className="uitext" />, added the event action time.
+    
+  - **Event Setting V1**
+
+    Metrics/composite metrics/outlier detection/composite real-time log/server log → Added them above the event reception tag.
+
+    Hitmap pattern → Added it at the bottom of the card.
+
+  - **Event Setting V2**
+
+    Basic/metrics → Added to the following items for the resolved notifications.
+
+    The other items are the same as V1.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_organizationMembers" className="uitext" /> 및 <Cmdname sid="invite_member" className="uitext" />, added the feature to display whether MFA and SSO are enabled next to the member email.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />, added the custom feature for the Webhook JSON response value in the 3rd party plugin.
+
+- <Status priority='1'>Feature</Status> When configuring the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> metrics events, added the metrics search feature in the category selection, metrics settings, and target event selection steps.
+
+- <Status priority='1'>Changed</Status> In the chart tooltip of <Cmdname sid="side_flexboard" className="uitext" />, displayed the data for WriteLatency and ReadLatency up to 5 decimal places.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_flexboard" className="uitext" />, changed the tooltip position of <Cmdname sid="project_selected_from other widgets" className="uitext" /> when configuring the widget <Cmdname sid="project_selection" className="uitext" />.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="site_management" className="uitext" /> &gt; <Cmdname sid="side_metricsCategory" className="uitext" /> &gt; <Cmdname sid="side_metricsRebuild" className="uitext" />, modified so that re-request is impossible when a request has not been processed.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, modified for users with no notification setting role to view the allocated event reception tags.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where fixed time disappears or duplicate times are saved in the time selector.
+
+- <Status priority='0'>Fixed</Status> Fixed the duplicate alarm registration issue when setting the <Cmdname sid="side_event" className="uitext" /> event with JSON.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> Added the feature to select traces with keyboard arrow keys when the list is focused in the <Cmdname sid="TTL06209" className="uitext" /> window.
+
+- <Status priority='1'>Feature</Status> On the <Cmdname sid="AA002" className="uitext" /> screen, a list of active transactions can be downloaded as CSV.
+
+- <Status priority='1'>Feature</Status> Enhanced the <Cmdname sid="transaction_map" className="uitext" /> past data searching feature.
+
+  - Extended the maximum searchable time range (10 minutes → 1 hour).
+
+  - Adding filter items
+
+      {/* - When the `ui_transaction_map_custom_filter` option (value: `true`/`false`) in the front.config is set to `true`, the custom filtering feature is activated. */}
+
+    <details>
+      <summary>Added filters</summary>
+
+    - **General filters**  
+
+    - **Referer**\
+      Login ID, WClientId, transaction ID, multi transaction ID, custom TID, error (including class, step, and message), city, country, HTTP method, user agent
+
+    - **Trace step-related filters**\
+      DBC, SQL, HTTPC, METHOD, MESSAGE
+
+    - **Number input filter**\
+      Elapsed time, HTTP call time, HTTP call count, SQL time, SQL count, status
+
+    </details>
+
+  - Added display of total number of transactions (read items) searched by the filter data.
+
+  - Added description tooltips for Read and Limit.
+
+  - Added the pause feature when searching the past data.
+
+    - When the search button is clicked while searching the past data (loading), searching is paused.
+
+    - If you search again with the same conditions (time, filter), the data is retrieved from the stopped point.\
+      (when changing the search conditions, the chart is initialized and a new drawing begins)
+
+- <Status priority='1'>Changed</Status> Changed the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="tx_search" className="uitext" /> CSV downloading method.
+
+- <Status priority='0'>Fixed</Status> Fixed some query errors when trace information from other projects is included in the multi-transaction.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where loading does not end intermittently when searching the <Cmdname sid="transaction_map" className="uitext" /> past data.
+
+#### Java
+
+<Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_agentResourceDashboard" className="uitext" />, modified the GC-related widget name.
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />, added display of the event count by status to the popover that appears when the mouse hovers over the server.
+
+- <Status priority='1'>Feature</Status> In the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" /> &gt; **Display Detail** window, added display of state-specific event counts in a popover when hovering the mouse over the server.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverList" className="uitext" />, the presets can be managed and shared with other users when the <Cmdname sid="column_settings" className="uitext" /> button is clicked.
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="side_serverInventory" className="uitext" /> GPU Count column.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverMetricsExplorer" className="uitext" />, added the category in which multiple metrics for a single server can be viewed in a chart.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="report" className="uitext" />, upon selection of a disk filter template, added the mount point selector UI (e.g. daily hour-based server's key metrics report)
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" />, added the filter and favorite addition feature.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_serverList" className="uitext" />, deleted the tag search and tagging features.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> Upon <Cmdname sid="side_appl" className="uitext" /> monitoring, in the <Cmdname sid="TTL06125" className="uitext" /> tab of the <Cmdname sid="TTL06209" className="uitext" /> window, added the container and Pod summary analyzing feature.
+
+- <Status priority='1'>Feature</Status> When the expand button is clicked on the left of the <Cmdname sid="side_node" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" /> column, added the disk information.
+
+- <Status priority='1'>Changed</Status> In the metric selection option of the container view of the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="container_map" className="uitext" /> menu, set the KubeConState metric as the default option and added the metric description.
+
+- <Status priority='1'>Changed</Status> Changed the EventConState metric name of the <Cmdname sid="side_dashboard" className="uitext" />  &gt; <Cmdname sid="container_map" className="uitext" /> menu to WhaTapScore.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_report" className="uitext" />, modified the download file name format to change according to the `ui_report_download_label` setting in the *front.conf* option.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> and <Cmdname sid="side_multiInstance" className="uitext" /> menus, added the sorting priority display when multi-sorting for tables.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" /> and <Cmdname sid="side_tableSpace" className="uitext" /> menus, displayed the `string` as the DB name for the instances other than multi db.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, added the sorting priority display when multi-sorting for tables.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="laboratory" className="uitext" /> &gt;  ***Top SQL***, added the sorting priority display when multi-sorting for tables.
+
+- <Status priority='1'>Feature</Status> Added the feature to download chart images on the screen.
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" /> &gt; ***Custom widget***
+
+  - ***Analysis*** > ***Counts Trend Comparison***
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, added new widget editing and preset saving features.
+
+- <Status priority='1'>Feature</Status> In the <UI>Session Table</UI> filter, added the key searching feature and alphabetical sorting feature.
+
+- <Status priority='1'>Changed</Status> Improved the <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" /> and <Cmdname sid="side_tableSpace" className="uitext" /> screens.
+
+  - When changing the time selector and instance selection, modified to immediately retrieve data and removed the view button.
+  - Improved the way to view the disk usage table data when configuring the XOS agent.
+
+- <Status priority='0'>Fixed</Status> When entering the <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" /> menu, fixed the selected instance on the previous screen to remain in the instance selector.
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="side_flexboard" className="uitext" /> database widget.
+
+  - CloudWatch instance-based CPU utilization (%)
+
+  - CloudWatch instance-based free memory
+
+  - CloudWatch instance-based free storage
+
+#### Oracle, Oracle Pro
+
+- <Status priority='1'>Feature</Status> In the metrics of the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> menu, added the tooltip where you can check the unit.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <UI>RAC monitoring</UI>, modified to save the selected cluster.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <UI>RAC monitoring</UI>, improved to display notifications for the instances in the notification widget.
+
+- <Status priority='1'>Changed</Status> Changed the data query table in the <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> Top 5 table and 및 Latch and Enqueue charts as `db_(platform)event_wait_top` → `db(platform)_event_time_top`.
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="TTL06224" className="uitext" /> window that is displayed when the query is clicked in <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, modified the times under the Runtime Plan, Plan History, and Bind Capture tabs to be displayed the same in the <Cmdname sid="TTL06224" className="uitext" /> window.
+
+- <Status priority='0'>Fixed</Status> When entering the <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbTopSql" className="uitext" /> menu, modified to maintain the selected instance in the instance selector.
+
+- <Status priority='0'>Fixed</Status> Modified the plan table to be displayed with the plan_hash_value that is selected by default in the <Cmdname sid="TTL06224" className="uitext" /> window of the <UI>SQL Elapse Map</UI> widget.
+
+#### IBM DB2
+
+<Status priority='0'>Fixed</Status> In the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> session table, added the query_param column.
+
+#### MySQL V1
+
+<Status priority='0'>Fixed</Status> When a query statement is clicked in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />, fixed the error where the query statement, `undefined` appears in the SQL detailed window.
+
+#### SAP ASE
+
+- <Status priority='1'>Feature</Status> Added the installation page.
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" /> menu.
+
+#### SQL Server
+
+<Status priority='1'>Feature</Status> Added widgets in <Cmdname sid="side_integratedFlexboard" className="uitext" /> and <Cmdname sid="side_flexboard" className="uitext" />.
+
+```
+- SQL Server Active Session List
+
+- SQL Server SQL Elapse Map
+
+- SQL Server Instance-based Active Session Count
+
+- SQL Server Long Active Session Count
+
+- SQL Server Long Waiting Session Count
+```
+
+---
+
+### `Cloud`
+
+#### Common
+
+<Status priority='1'>Feature</Status> Added the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_maintenancePlan" className="uitext" /> menu.
+
+#### Amazon CloudWatch
+
+<Status priority='0'>Fixed</Status> In the installation guide of the<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu, modified to display the UI setting value for `cloud_auth_account_no` in the account ID.
+
+---
+
+### `Browser`
+
+- <Status priority='1'>Feature</Status> When sharing the <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_browserErrorTracking" className="uitext" /> and <Cmdname sid="side_userSessionEventSearch" className="uitext" /> URLs, improved to maintain the status (time, filer, etc).
+
+  - <Cmdname sid="side_browserErrorTracking" className="uitext" />: Time clicked in the time and chart bars.
+  - <Cmdname sid="side_userSessionEventSearch" className="uitext" />: Sort by time, filter, oldest time, and latest time.
+
+---
+
+### `Log`
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_logSearch" className="uitext" /> and <Cmdname sid="side_logTail" className="uitext" />, added the filter favorite and project sharing features.
+
+- <Status priority='1'>Feature</Status> When the <Cmdname sid="side_logExplorer" className="uitext" /> and <Cmdname sid="side_logSearch" className="uitext" /> logs contain `@txid`, and `@mtid`, added the feature to check the trace pop-up through the transaction information drop-down (Log-Trace integrated).
+
+- <Status priority='1'>Feature</Status> Added the button to move from the trace log to the log search.
+  (The APM pages are integrated that can check the transaction information such as ***Application dashboard***, <Cmdname sid="transaction_map" className="uitext" />, <Cmdname sid="tx_search" className="uitext" />, and <Cmdname sid="multi_server_transaction_trace" className="uitext" />)
+
+- <Status priority='1'>Feature</Status> Improved to maintain the UI status (time, filter, etc) when sharing the <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logTail" className="uitext" /> and <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> URLs.
+
+  - <Cmdname sid="side_logTail" className="uitext" />: Category, filter
+  - <Cmdname sid="side_logExplorer" className="uitext" />: Time clicked in the time, category, and chart bars.
+  - <Cmdname sid="side_logSearch" className="uitext" />: Sort by time, filter, oldest time, and latest time.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logExplorer" className="uitext" />, and <Cmdname sid="side_logSearch" className="uitext" />, modified for monitoring trial customers to be impossible to enable the log monitoring and to display the subscription guide modal when entering the side menu.
+
+- <Status priority='1'>Changed</Status>  Changed the column names of the log table (timestamp → collectiontime, agenttime → logtime).
+
+</div>

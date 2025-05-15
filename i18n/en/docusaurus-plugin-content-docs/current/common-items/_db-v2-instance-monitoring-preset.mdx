@@ -4,13 +4,13 @@
 
 You can save and recall user-defined widget settings and active session table arrangements as presets. The following presets are provided by default, and the **_Default_** presets cannot be changed.
 
-<ImgLang img='db-preset-list.png' desc='Preset' />
-
 - **_Default_**: It consists of major DB metrics.
 
 - **_Default(xos)_**: It consists of key DB metrics and XOS metrics (CPU and memory utilization, memory SWAP usage, disk I/O, etc.).
 
 - **_Default(rds)_**: It consists of key DB metrics and RDS CloudWatch metrics (CPU utilization, free memory space, free storage space, network, etc.).
+
+<ImgLang img='db-preset-list.png' desc='Preset' />
 
 </InDoc>
 
@@ -26,15 +26,17 @@ You can save and recall user-defined widget settings and active session table ar
 
 You can save and recall user-defined widget settings and active session table arrangements as presets. The **_Default_** preset cannot be modified.
 
-<ImgLang img='db-preset-list-mongodb.png' desc='preset' />
-
 - **_Default_**: It consists of major DB metrics.
 
 - **_DocumentDB_**: It consists of key DocumentDB metrics (current connections, available connections, number of insert/query/update/delete operations, transaction status, open cursors, number of documents returned, etc).
 
+<ImgLang img='db-preset-list-mongodb.png' desc='preset' />
+
 </InDoc>
 
 ### Save Preset
+
+In the <Cmdname sid="preset" className="uitext" /> list, select a saved item to fetch the settings.
 
 1. Add or modify the widget metrics.
 
@@ -42,13 +44,35 @@ You can save and recall user-defined widget settings and active session table ar
 
 3. In <Cmdname sid="save_preset" className="uitext" />, change the name and then select <Cmdname sid="save" className="uitext" />.
 
-In the <Cmdname sid="preset" className="uitext" /> list, select a saved item to fetch the settings.
-
 :::note
 
 - The **_Default_** preset cannot be modified. 
 
-- You can create custom presets up to 5. Including the modified metric graph, the column order, column width, and filter application content of the active sessions are also applied.
+- Depending on the database environment, some presets may not be supported.
+
+- Including the modified metric graph, the column order, column width, and filter application content of the active sessions are also applied for custom presets.
+
+- You can save or modify the presets with the <Cmdname sid="edit_project" className="uitext" /> role. For more information about the member roles, see [the following](../project/project-structure#member-auth).
+
+:::
+
+### Creating a preset {#newpreset}
+
+1. Place the widgets in the desired format on the dashboard. You can also resize and place only the widgets to be frequently checked.
+
+2. On the upper right of the screen, click the ![Save icon](/img/ic-save.svg) icon.
+
+3. Enter a new preset name.
+
+4. Click <Cmdname sid="save" className="uitext" />. You can see the newly saved preset from the preset list.
+
+:::note
+
+- If any changes are made to the newly created preset, save the preset again. Click the ![Save icon](/img/ic-save.svg) icon and then save the preset with the same name. Any changes are overwritten in the existing preset.
+
+- If you go to another menu without saving changes on the dashboard, the changes are not saved.
+
+- Presets are saved on a project basis and can be shared with other users.
 
 :::
 

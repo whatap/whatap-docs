@@ -98,9 +98,11 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 ## ログのタグオプション {#log-tag-options}
 
-ログのタグを選択すると、次のようにドロップダウンメニューが表示されます。<Cmdname sid="search" className="uitext" />、<Cmdname sid="exclusion_search" className="uitext" />、<Cmdname sid="TTL06582" className="uitext" />オプションを確認できます。 
+ログのタグを選択すると、ドロップダウンメニューが表示されます。<Cmdname sid="search" className="uitext" />、 <Cmdname sid="exclusion_search" className="uitext" />、<Cmdname sid="TTL06582" className="uitext" />、<Cmdname sid="TTL06527" className="uitext" />オプションが確認できます。 
 
 <ImgLang img='log-search-tag.png' desc='ログタグドロップダウンメニュー'/>
+
+- **コピー**
 
 - **検索**
 
@@ -115,6 +117,12 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
   <Cmdname sid="TTL06582" className="uitext" />オプションを選択すると<Cmdname sid="TTL06582" className="uitext" />詳細画面が表示されます。選択したログのサーバーを対象に、選択したログとその前後の時間帯のログを表示します。<Cmdname sid="time_selector" className="uitext" />ボタンをクリックして、隣接する時間帯のログを照会できます。基準になるログは、青色で表示されます。
 
   <ImgLang img='log-search-adjacent-log.png' desc='ログタグ隣接ログ'/>
+
+- **トランザクション情報**
+
+  ログに`@txid`や`@mtid`タグが含まれている場合は、トランザクション情報オプションをクリックすると、トランザクション情報の詳細画面で情報を確認できます。
+
+  <ImgLang img='log-search-transaction-info.png' desc='로그 트랜잭션 정보'/>
 
 ## コンテンツハイライト {#content-highlight}
 

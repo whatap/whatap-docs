@@ -63,32 +63,6 @@ If the hitmaps are not collected properly as shown in the example, check whether
 
   - [.NET agent support environment analysis](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/analysis.html)
 
-{/* 
-
-### ETC
-
-If the error is not resolved using the methods above, send us the detailed debugging information. The debugging data collection procedure is as follows: 
-
-1. Download and run the monitoring program (*UdpMonitor.exe*) from the following link. 
-
-   - [Monitoring program](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/UdpMonitor.exe)
-
-2. Download and install the agent for debugging from the following link.
-
-   - [Agent for debugging](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/whatap_dotnet_debug.exe)
-
-3. Generate the transaction. 
-
-4. If you generated sufficient transactions, end *UdpMonitor.exe*.
-
-5. *UdpMonitor.txt* is created in the same folder as *UdpMonitor.exe*. 
-
-6. Send the *UdpMonitor.txt* file to the person in charge. 
-
-7. If debugging is completed, remove the agent for debugging. 
-
-*/}
-
 ## Monitoring the WCF and officially unsupported libraries
 
 To monitor the libraries that are not officially supported by the WhaTap .NET agent, such as Windows Communication Foundation (WCF), see the following instructions. 
@@ -139,8 +113,6 @@ Extensive settings may cause excessive traffic.
 
   If the monitored method is not completed within a specific time, a timeout is automatically set. The default value is 5 seconds (`5000`ms).
 
-  {/* If exception handling is not performed in the method to be monitored, it is impossible to know the time when the transaction will end. For such cases, the timeout of web service monitoring occurs by default after 5 seconds.  */}
-
 ### Usage examples
 
 #### whatap.conf modification
@@ -175,101 +147,6 @@ The settings can be changed through the <Cmdname sid="side_management" className
 <ImgLang img='dotnet-trst03.png' desc='Agent CONFIG.' />
 
 :::
-
-{/* 
-
-#### WCF source code
-
-The following is an example of WCF source code to be monitored. 
-
-```c {3-13}
-namespace Whatap.DotNet.Examples
-{
-    public class Service1 : IService1
-    {
-        public string GetData(int value)
-        {
-            ...
-        }
-
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            ...
-        }
-
-        private string getFromDB()
-        {
-            ...
-        }
-
-        private string getFromHttp()
-        {
-            ...
-        }
-    }
-
-    public class Service2 : IService1
-    {
-        ...
-    }
-
-    public class Service3 : IService1
-    {
-        public string IwantToSeeOnlyThis(int value)
-        {
-            ...
-        }
-    }
-}
-```
-
-- **GetData** 
-
-  The `GetData()` method belongs to the `Whatap.DotNet.Examples.Service1` class. Because it is a public method, it becomes the target to be monitored. This method is processed as a transaction because it is included in the value specified in the `webservice_method_prefix` option of the configuration file. The call path for the method is as follows: 
-
-  > `Whatap.DotNet.Examples.Service1.GetData`
-
-- **GetDataUsingDataContract**
-
-  The `GetDataUsingDataContract()` method is to be monitored because it is a public method. The call path for the method is as follows: 
-
-  > `Whatap.DotNet.Examples.Service1.GetDataUsingDataContract`
-
-:::note 
-
-- The `getFromDB()` and `getFromHttp()` methods are excluded from monitoring because they are private methods. 
-
-- If you add `Whatap.DotNet.Examples.Service3` to the `webservice_method_prefix` option, the public method `IwantToSeeOnlyThis()` may become a monitoring target.
-
-::: 
-
-*/}
-
-{/* 
-
-### In case it is difficult to find the namespace and class name
-
-If you have difficulty finding the namespace in which your WCF server's methods have been defined, you can use the following method to find the namespace and class name. 
-
-1. Download the *GetNamesapces.exe* file from the following link. 
-
-   - [GetNamesapces.exe](https://repo.whatap.io/windows/GetNamesapces.exe)
-
-2. Run the *GetNamesapces.exe* file by sending the web application's folder path as a parameter as follows. 
-
-   ```
-   C:...\> GetNamesapces.exe C:\inetpub
-   ```
-
-3. After execution is completed, all *dll* files in the folder and its subfolders are scanned and the list of namespaces and class names is output. 
-
-:::note 
-
-If it is difficult to apply the results, run *GetNamesapces.exe* and send the *GetNamesapces.txt* file created in the same folder to the person in charge. 
-
-::: 
-
-*/}
 
 ## Finding the namespace and class name
 

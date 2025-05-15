@@ -175,7 +175,7 @@ In SAP ASE, you must create a separate user account in the database, and then ad
    go
    ```
 
-3. Grant the user the necessary roles.
+3. Grant users the required roles depending on the functionality and environment.
 
    ```sql
    --Default monitoring permissions
@@ -192,7 +192,6 @@ In SAP ASE, you must create a separate user account in the database, and then ad
    ```sql
    sp_configure 'enable monitoring', 1
    sp_configure 'wait event timing', 1
-   sp_configure 'max SQL text monitored', 1024
    sp_configure 'SQL batch capture', 1
    sp_configure 'per object statistics active', 1
    sp_configure 'statement statistics active', 1
@@ -341,3 +340,17 @@ If you have an account with roles, skip this step and then proceed to [Next Step
 </InDoc>
 
 :::
+
+<InDoc product="sapase">
+
+#### In case the sql text does not appear
+
+Changes are not reflected immediately and the agent restart is required.
+
+````
+```sql
+sp_configure 'max SQL text monitored', 1024
+```
+````
+
+</InDoc>

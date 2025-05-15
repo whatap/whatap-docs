@@ -6,7 +6,11 @@ Database size can affect the performance. You can prepare to troubleshoot perfor
 
 The trend in database size helps you understand usage patterns and data growth. You can predict future capacity requirements and take possible actions. Monitoring these changes helps you optimize the resources and costs.
 
+<Xclude product="sapase">
+
 ## Before use
+
+</Xclude>
 
 <InDoc product='mysql'>
 
@@ -133,15 +137,29 @@ You can set the following agent options to collect the database sizes.
 
 ## Checking the changes over time
 
+<Xclude product="sapase">
+
 <ProdImg img='db-database-size-select-db.png' desc='데이터베이스 사이즈'/>
+
+</Xclude>
 
 - <Cmdname sid="TTL06025" className="uitext" />
 
   You can visually see the changes in the total size and usage of the database over time. The chart displays the sizes for each database in different color. Hover your mouse over the chart and move it left and right to view the details. You can see information details on the sizes for each database at a specific time point through the tooltip.
 
+<InDoc product='sapase'>
+
+- <Cmdname sid="disk_used" className="uitext" />
+
+  You can check the changes in disk usage for each mount point during the query period. By comparing the usage at the start and end points, you can visually see how much the disk usage has increased or decreased.
+
+</InDoc>
+
 - <Cmdname sid="TTL06026" className="uitext" />
 
   It provides capacity details for each database in a table format. You can check the names (**DB NAME**) for each database, total capacity (**TOTAL**), and changed amount (**CHANGED**). If you select a database, you can see information details in the <Cmdname sid="TTL06572" className="uitext" /> section.
+
+<Xclude product="sapase">
 
 ## Checking the sizes for each table
 
@@ -200,6 +218,8 @@ When you select the <span class="uitext">TABLENAME</span> column in the table li
 - To change the order of table columns or hide specific columns in the <Cmdname sid="TTL06572" className="uitext" /> section, select ![Column icon](/img/ico-column.svg) on the upper right. For more information about the column configuration, see [the following](instance-monitoring#change-column).
 
 :::
+
+</Xclude>
 
 ## Downloading the viewed data
 

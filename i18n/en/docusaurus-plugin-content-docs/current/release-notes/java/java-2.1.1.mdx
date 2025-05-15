@@ -93,49 +93,6 @@ Fixed the NullPointException case when requesting to display the class signature
 
 Added the netstat function by using the OSHI library.
 
-{/* 
-
-### Update
-
-#### Update in error notification settings
-
-Added the settings related to transaction error notification and modified the setting name.
-
-```ini title='whatap.conf'
-# Default value
-# Whether the error notification is enabled
-exception_alert_enabled=false
-
-# Whether the transaction error notification is enabled
-exception_alert_service_enabled=false
-
-# Whether the error notification is enabled upon HTTP call
-exception_alert_httpc_enabled=false
-
-# Whether the error notification is enabled upon JDBC call
-exception_alert_jdbc_enabled=false
-
-# Length of the stack displayed in the error notification message
-exception_alert_stack_size=50
-
-# Period of disabling the error notification message = 5 minutes (30000ms)
-exception_alert_silent_time=300000
-
-# Status code to ignore in the transaction error notification
-status_alert_ignore=403
-
-# url:status_code combinations to ignore in the transaction error notification
-status_alert_ignore_set=/api/test/timeout:408
-
-# Status code to ignore in the HTTP call error notification
-httpc_status_alert_ignore=408,500
-
-# url:status code combinations to ignore in the HTTP call error notification
-httpc_status_url_alert_ignore_set=/api/test/timeout:408
-```
-
-*/}
-
 ### Bugs
 
 #### Fixing the bug upon displaying the agent log
@@ -189,32 +146,6 @@ Added the function to send notifications upon HTTP call error.
 # Default
 httpc_event_detail_enable=false
 ```
-
-{/* 
-
-2022-03-24
-
-### New features
-
-#### Adding the HTTP call error notification
-
-The function has been added to receive a notification when an error occurs upon HTTP call.
-
-The function can be enabled by setting `exception_alert_enabled` to `true`. You can receive an error stack as a notification message according to the value specified in the `exception_alert_stack_size` option.
-
-Once the notification is triggered, you can disable the error notification for the period specified in the `exception_alert_silent_time` option.
-
-```ini title='whatap.conf'
-# Default
-exception_alert_enabled=false
-exception_alert_buffer_size=5
-exception_alert_stack_size=50
-
-# 5 minutes (30000 ms)
-exception_alert_silent_time=300000
-```
-
-*/}
 
 ## 2022-03-18
 

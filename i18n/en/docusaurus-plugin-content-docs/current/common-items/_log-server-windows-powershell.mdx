@@ -39,6 +39,13 @@
   # whatap_host_ip = "Collection server IP1/Collection server IP2"
   # whatap_host_port = 6600
 
+  [[inputs.logsink.file]]
+  path = "/tmp/mixed.log"
+  disabled = false
+  encoding = "utf-8"
+  ## The [{"A":1,"B":2},{"C":3,"D":4},...] format can be divided into individual logs.{"A":1,"B":2} {"C":3,"D":4}
+  multiline_pattern = "simple_json_array"
+
   "@
 
   New-Item -path "C:\Program Files\WhatapInfra\extension" -name "logsink.conf" -type "file" -value $contentToAdd -Force

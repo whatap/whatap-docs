@@ -8,25 +8,9 @@ keywords:
   - Metrics
 ---
 
-{/* 
-
-import Metricsindex from "../common-items/_metrics-index.mdx";
-
-<Metricsindex />
-
-*/}
-
 It guides you to the server monitoring metrics.
 
-{/* 
-
-import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
-
-*/}
-
 <div className="metricslist">
-
-{/* <AgentStatus /> */}
 
 ## Category V1
 
@@ -36,16 +20,16 @@ This category collects metrics related to agent status every 10 seconds.
 
 #### Fields {#agent_status_summary_filed}
 
-| Field name    |       Unit      | Description                                    | Remarks          |
-| ------------- | :-------------: | ---------------------------------------------- | ---------------- |
-| `inActTime`   | Millisecond(ms) | Amount of time the agent remains inactive      | -                |
-| `isActive`    |        -        | Whether the agent is active or not             | `true` / `false` |
-| `isRebooted`  |        -        | Whether the server has been recently restarted | `true` / `false` |
-| `lastActTime` | Millisecond(ms) | Time when the agent was last activated         | `0`: If disabled |
-| `oid`         |        -        | Unique IDs for each agent in the project       | -                |
-| `startTime`   | Millisecond(ms) | Timestamp when the agent was started.          | -                |
-| `status`      |        -        | Status of the current agent                    | -                |
-| `uptime`      |   Second (sec)  | Server's uptime                                | -                |
+| Field        | Type | Unit              | Description                                                             |
+| ------------ | ---- | ----------------- | ----------------------------------------------------------------------- |
+| inActTime    | -    | Millisecond(ms)   | Amount of time the agent remains inactive                               |
+| isActive     | -    | -                 | Whether the current agent is active or not  (`true` / `false`)          |
+| isRebooted   | -    | -                 | Whether the server was recently restarted (`true` / `false`)            |
+| lastActTime  | -    | Millisecond(ms)   | Last time when the agent was activated (`0`: Disabled)                  |
+| oid          | -    | -                 | Unique IDs for each agent in the project                                |
+| startTime    | -    | Millisecond(ms)   | Timestamp when the agent was started.                                   |
+| status       | -    | -                 | Status of the current agent                                             |
+| uptime       | -    | Second (sec)      | Server's uptime                                                         |
 
 :::note
 
@@ -85,7 +69,7 @@ It is the metric for server resources.
 
 | Field name           | Unit            | Description                                  | Remarks |
 | -------------------- | --------------- | -------------------------------------------- | ------- |
-| cpu                  | Percentage      | All CPU utilization                          | Common  |
+| cpu                  | Percent         | All CPU utilization                          | Common  |
 | cpu_c1               | Percent         | CPU c1 state utilization                     | Windows |
 | cpu_c2               | Percent         | CPU c2 state utilization                     | Windows |
 | cpu_c3               | Percent         | CPU c3 state utilization                     | Windows |

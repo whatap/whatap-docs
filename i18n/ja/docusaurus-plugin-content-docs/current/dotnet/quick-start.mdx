@@ -63,32 +63,6 @@ WhaTap.NETエージェントは、Windowsサーバー2012以降および.NET Fra
 
   - [.NETエージェント対応の環境分析](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/analysis.html)
 
-{/* 
-
-### その他
-
-上記の方法でエラーが解決しない場合は、詳細なデバッグ情報を転送します。 デバッグデータの収集プロセスは次の通りです。 
-
-1. 次のリンクからモニタリングプログラム(*UdpMonitor.exe*)をダウンロードして実行します。 
-
-   - [モニタリングプログラム](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/UdpMonitor.exe)
-
-2. デバッグ用のエージェントを、次のリンクからダウンロードしてインストールします。
-
-   - [デバッグ用エージェント](https://whatap-dotnet.s3.ap-northeast-2.amazonaws.com/whatap_dotnet_debug.exe)
-
-3. トランザクションを発生させます。 
-
-4. トランザクションを十分に発生させた場合、*UdpMonitor.exe*を終了します。
-
-5. *UdpMonitor.exe*と同じフォルダに*UdpMonitor.txt*が生成されます。 
-
-6. *UdpMonitor.txt*ファイルを担当者に転送します。 
-
-7. デバッグ完了時、デバッグ用のエージェントを削除します。 
-
-*/}
-
 ## WCFおよび公式未対応ライブラリのモニタリング
 
 WCF(Windows Communication Foundation)のようにWhaTap.NETエージェントが公式に対応していないライブラリをモニタリングするには、次のガイドを確認します。 
@@ -139,8 +113,6 @@ WCF(Windows Communication Foundation)のようにWhaTap.NETエージェントが
 
   モニタリング対象となるメソッドが特定の時間内に完了しない場合、自動的にタイムアウトを設定します。 既定値は5秒(`5000`ms)です。
 
-  {/*モニタリング対象となるメソッドで例外が処理されない場合、トランザクションの終了時点が確認できません。 このような状況に備えて、ウェブサービスのモニタリングは基本的に5秒後にタイムアウト処理されます。  */}
-
 ### 使用例
 
 #### whatap.conf修正
@@ -175,101 +147,6 @@ webservice_method_timeout=10000
 <ImgLang img='dotnet-trst03.png' desc='エージェント設定' />
 
 :::
-
-{/* 
-
-#### WCFソースコード
-
-次は、モニタリング対象となるWCFソースコードの例題です。 
-
-```c {3-13}
-namespace Whatap.DotNet.Examples
-{
-    public class Service1 : IService1
-    {
-        public string GetData(int value)
-        {
-            ...
-        }
-
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
-        {
-            ...
-        }
-
-        private string getFromDB()
-        {
-            ...
-        }
-
-        private string getFromHttp()
-        {
-            ...
-        }
-    }
-
-    public class Service2 : IService1
-    {
-        ...
-    }
-
-    public class Service3 : IService1
-    {
-        public string IwantToSeeOnlyThis(int value)
-        {
-            ...
-        }
-    }
-}
-```
-
-- **GetData** 
-
-  `GetData()`メソッドは、`Whatap.DotNet.Examples.Service1`クラスに属しています。 また、Publicメソッドであるため、モニタリング対象となります。 このメソッドは、設定ファイルの`webservice_method_prefix`オプションに明示された値に含まれるため、トランザクションとして処理されます。 メソッドの呼び出しパスは次の通りです。 
-
-  > `Whatap.DotNet.Examples.Service1.GetData`
-
-- **GetDataUsingDataContract**
-
-  `GetDataUsingDataContract()`メソッドはPublicメソッドであるため、モニタリングの対象となります。 メソッドの呼び出しパスは次の通りです。 
-
-  > `Whatap.DotNet.Examples.Service1.GetDataUsingDataContract`
-
-:::note 
-
-- `getFromDB()`, `getFromHttp()`メソッドはPrivateメソッドであるため、モニタリングの対象ではありません。 
-
-- `webservice_method_prefix`オプションに`Whatap.DotNet.Examples.Service3`を追加する場合、Publicメソッドである`IwantToSeeOnlyThis()`メソッドがモニタリングの対象になる場合があります。
-
-::: 
-
-*/}
-
-{/* 
-
-### ネームスペースとクラス名を見つけるのが難しい場合
-
-WCFサーバーのメソッドが定義されたネームスペースが見つからない場合、次の方法でネームスペースとクラス名を確認できます。 
-
-1. 次のリンクから*GetNamesapces.exe*ファイルをダウンロードします。 
-
-   - [GetNamesapces.exe](https://repo.whatap.io/windows/GetNamesapces.exe)
-
-2. 次のようにウェブアプリケーションのフォルダパスをパラメータに転送し、*GetNamesapces.exe*ファイルを実行します。 
-
-   ```
-   C:...\> GetNamesapces.exe C:\inetpub
-   ```
-
-3. 実行が完了したら、当該フォルダとその下位フォルダにあるすべての*dll*ファイルをスキャンして、ネームスペースとクラス名を一覧に出力します。 
-
-:::note 
-
-結果の適用が難しい場合、*GetNamesapces.exe*実行後、同じフォルダに作成された*GetNamesapces.txt*ファイルを担当者に転送します。 
-
-::: 
-
-*/}
 
 ## ネームスペースとクラス名を検索する
 

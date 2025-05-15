@@ -175,7 +175,7 @@ SAP ASEでは、ユーザーアカウントをデータベース内で別途作�
    go
    ```
 
-3. ユーザーに必要な権限を付与します。
+3. 機能と環境に応じて、ユーザーに必要な権限を与えてください。
 
    ```sql
    --基本モニタリング権限
@@ -192,7 +192,6 @@ SAP ASEでは、ユーザーアカウントをデータベース内で別途作�
    ```sql
    sp_configure 'enable monitoring', 1
    sp_configure 'wait event timing', 1
-   sp_configure 'max SQL text monitored', 1024
    sp_configure 'SQL batch capture', 1
    sp_configure 'per object statistics active', 1
    sp_configure 'statement statistics active', 1
@@ -341,3 +340,17 @@ SAP ASEでは、ユーザーアカウントをデータベース内で別途作�
 </InDoc>
 
 :::
+
+<InDoc product="sapase">
+
+#### Sql textが見えない場合
+
+変更はすぐには反映されず、エージェントの再起動が必要です。
+
+````
+```sql
+sp_configure 'max SQL text monitored', 1024
+```
+````
+
+</InDoc>
