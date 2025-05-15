@@ -44,11 +44,11 @@ May 14, 2024
 
 ### `Application`
 
-- <Status>Changed</Status> In the <Cmdname sid="today_tps" className="uitext" />, <Cmdname sid="today_user" className="uitext" /> widget of <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_appDashboard" className="uitext" />, modified not to request new data when viewing the data again within a day but to reprocess the viewed data for use.
+- <Status>Changed</Status> In the <Cmdname sid="today_tps" className="uitext" />, <Cmdname sid="today_user" className="uitext" /> widget of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, modified not to request new data when viewing the data again within a day but to reprocess the viewed data for use.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the issue where the data does not appear when the upper area of the map is dragged.
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_transaction_map" className="uitext" />, fixed the issue where the data does not appear when the upper area of the map is dragged.
 
-- <Status>Fixed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> &amp;gt; <Cmdname sid="TTL06126" className="uitext" /> tab, upon selection of the <LinkImage img="ic-static.svg" className="ico" /> icon on the right of the SQL step, and upon going to the <Cmdname sid="side_txSearch" className="uitext" /> menu under the <Cmdname sid="TTL06468" className="uitext" /> window, fixed the issue where the selected agent is not kept.
+- <Status>Fixed</Status> In the <Cmdname sid="TTL06209" className="uitext" /> &gt; <Cmdname sid="TTL06126" className="uitext" /> tab, upon selection of the <LinkImage img="ic-static.svg" className="ico" /> icon on the right of the SQL step, and upon going to the <Cmdname sid="side_txSearch" className="uitext" /> menu under the <Cmdname sid="TTL06468" className="uitext" /> window, fixed the issue where the selected agent is not kept.
 
 ---
 
@@ -60,7 +60,7 @@ May 14, 2024
 
 ### `Kubernetes`
 
-- <Status>Changed</Status> Reorganized the Kubernetes agent installation method in <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentInstall" className="uitext" />.
+- <Status>Changed</Status> Reorganized the Kubernetes agent installation method in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />.
 
   - You can download the files appropriate to the environment by simply selecting options without modifying the installation file.
 
@@ -68,7 +68,7 @@ May 14, 2024
 
   - In the final step of installation, the main monitoring menus are introduced.
 
-- <Status>Feature</Status> Reorganized the Detail tab in <Cmdname sid="side_lab" className="uitext" /> &amp;gt; <Cmdname sid="side_pendingPod" className="uitext" />.
+- <Status>Feature</Status> Reorganized the Detail tab in <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_pendingPod" className="uitext" />.
 
   - Added the <UI>Suggestions</UI> tab to help you quickly analyze the cause based on the event messages.
 
@@ -82,7 +82,7 @@ May 14, 2024
 
   :::
 
-- <Status>Fixed</Status> In <Cmdname sid="BTN07267" className="uitext" /> of the <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu, changed the name of the okind setting option of Docker Python to <code>whatap.okind</code>.
+- <Status>Fixed</Status> In <Cmdname sid="BTN07267" className="uitext" /> of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> menu, changed the name of the okind setting option of Docker Python to <code>whatap.okind</code>.
 
 ---
 
@@ -90,9 +90,9 @@ May 14, 2024
 
 #### Common
 
-- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_dbAgents" className="uitext" />, fixed the issue where the tooltip in the <Cmdname sid="db_ip" className="uitext" /> column does not appear.
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_dbAgents" className="uitext" />, fixed the issue where the tooltip in the <Cmdname sid="db_ip" className="uitext" /> column does not appear.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &amp;gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the query statement on the <Cmdname sid="TTL06224" className="uitext" /> window that appears when a query text is selected, is displayed as <code>undefined</code>.
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the query statement on the <Cmdname sid="TTL06224" className="uitext" /> window that appears when a query text is selected, is displayed as <code>undefined</code>.
 
 #### PostgreSQL / MySQL / Oracle DMA
 
@@ -106,27 +106,27 @@ This feature can be seen in the <Cmdname sid="side_analysis" className="uitext" 
 
 #### PostgreSQL / Oracle DMA
 
-- <Status>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &amp;gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />, added a tooltip to see the full name when you hover your mouse over an item in the table widget.
+- <Status>Feature</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />, added a tooltip to see the full name when you hover your mouse over an item in the table widget.
 
 #### Oracle DMA
 
 - <Status>Feature</Status> In the analysis linking the <b>Application</b> product to the <b>Database</b> product, added the feature to display the Lock message when the event value is <code>enq: TX - row lock contention</code>.
 
-- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the <UI>sid</UI> and <UI>serial#</UI> columns in the <UI>Query List</UI> table that appears by dragging the chart area in the <UI>SQL Elapse Map</UI> widget.
+- <Status>Feature</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, added the <UI>sid</UI> and <UI>serial#</UI> columns in the <UI>Query List</UI> table that appears by dragging the chart area in the <UI>SQL Elapse Map</UI> widget.
 
-- <Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &amp;gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, adjusted the column order in the table.
+- <Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, adjusted the column order in the table.
 
-- <Status>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, <Cmdname sid="side_multiInstance" className="uitext" />, changed the metrics in the <Cmdname sid="session_detail" className="uitext" /> window that pops up when an item in the <Cmdname sid="active_sessions" className="uitext" /> table is selected.
+- <Status>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, <Cmdname sid="side_multiInstance" className="uitext" />, changed the metrics in the <Cmdname sid="session_detail" className="uitext" /> window that pops up when an item in the <Cmdname sid="active_sessions" className="uitext" /> table is selected.
 
 - <Status>Fixed</Status> Modified the key value to confirm with an error message if a specific key value is present in the feature that links the <b>Application</b> product to the <b>Database</b> product for analysis.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &amp;gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />, fixed the issue where the <UI>Operation Count</UI> chart is loaded infinitely.
+- <Status>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbSqlAnalysis" className="uitext" />, fixed the issue where the <UI>Operation Count</UI> chart is loaded infinitely.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &amp;gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the filtering does not work properly.
+- <Status>Fixed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, fixed the issue where the filtering does not work properly.
 
 #### Tibero
 
-<Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &amp;gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, removed the <UI>DB</UI> tab.
+<Status>Changed</Status> In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />, removed the <UI>DB</UI> tab.
 
 </div>
 
@@ -166,15 +166,15 @@ May 9, 2024
 
 ### `Application`
 
-<Status>Fixed</Status> When importing JSON files consecutively in <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentSetting" className="uitext" />, fixed the issue where only the first JSON file is applied, the events from other JSON files are not enabled, and the settings of them are not applied.
+<Status>Fixed</Status> When importing JSON files consecutively in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />, fixed the issue where only the first JSON file is applied, the events from other JSON files are not enabled, and the settings of them are not applied.
 
 ---
 
 ### `Browser`
 
-- <Status>Fixed</Status> In <Cmdname sid="TTL07736" className="uitext" /> &amp;gt; <Cmdname sid="TTL07746" className="uitext" /> &amp;gt; <Cmdname sid="TTL07757" className="uitext" /> <Cmdname sid="detail" className="uitext" />, fixed the issue where the content of the selector does not appear because it exceeds the size of the layout.
+- <Status>Fixed</Status> In <Cmdname sid="TTL07736" className="uitext" /> &gt; <Cmdname sid="TTL07746" className="uitext" /> &gt; <Cmdname sid="TTL07757" className="uitext" /> <Cmdname sid="detail" className="uitext" />, fixed the issue where the content of the selector does not appear because it exceeds the size of the layout.
 
-- <Status>Fixed</Status> In the table of the <Cmdname sid="TTL07736" className="uitext" /> &amp;gt; <Cmdname sid="TTL07746" className="uitext" /> section, fixed the issue where the event same as the current event is viewed after clicking an event.
+- <Status>Fixed</Status> In the table of the <Cmdname sid="TTL07736" className="uitext" /> &gt; <Cmdname sid="TTL07746" className="uitext" /> section, fixed the issue where the event same as the current event is viewed after clicking an event.
 
 </div>
 
@@ -194,7 +194,7 @@ May 8, 2024
 
 - <Status>Changed</Status> In <Cmdname sid="side_projectList" className="uitext" /> of the side menu, changed to run the folding/expanding action upon clicking a group, and added the group movement button.
 
-- <Status>Fixed</Status> In <Cmdname sid="MNU07361" className="uitext" /> &amp;gt; <Cmdname sid="side_paymentInformation" className="uitext" />, fixed the issue where <Cmdname sid="TTL06080" className="uitext" /> is displayed as "CA" if it is saved as "US," when registering or modifying the payment method.
+- <Status>Fixed</Status> In <Cmdname sid="MNU07361" className="uitext" /> &gt; <Cmdname sid="side_paymentInformation" className="uitext" />, fixed the issue where <Cmdname sid="TTL06080" className="uitext" /> is displayed as "CA" if it is saved as "US," when registering or modifying the payment method.
 
 - <Status>Fixed</Status> In <Cmdname sid="side_flexboard" className="uitext" /> or <Cmdname sid="side_integratedFlexboard" className="uitext" />, fixed the bug where scrolling repeats in the event timeline widget.
 
@@ -210,7 +210,7 @@ May 8, 2024
 
 - <Status>Feature</Status> In <Cmdname sid="side_serverList" className="uitext" />, modified to display <Cmdname sid="oname" className="uitext" /> and <Cmdname sid="TTL07876" className="uitext" /> as separated columns.
 
-- <Status>Feature</Status> In the <Cmdname sid="server_info" className="uitext" /> section of <Cmdname sid="side_serverList" className="uitext" /> &amp;gt; <Cmdname sid="side_serverDetail" className="uitext" />, displayed Agent Name and Host Name as separated items, and added the function to modify them.
+- <Status>Feature</Status> In the <Cmdname sid="server_info" className="uitext" /> section of <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />, displayed Agent Name and Host Name as separated items, and added the function to modify them.
 
 - <Status>Changed</Status> In <Cmdname sid="side_serverList" className="uitext" />, changed the server status display and the layout of operation buttons to improve usability.
 
@@ -218,15 +218,15 @@ May 8, 2024
 
 ### `Kubernetes`
 
-<Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &amp;gt; <Cmdname sid="side_nodeDetail" className="uitext" />, modified the style so that the height of the container list increases to match the number of containers.
+<Status>Fixed</Status> In <Cmdname sid="side_cluster" className="uitext" /> &gt; <Cmdname sid="side_nodeDetail" className="uitext" />, modified the style so that the height of the container list increases to match the number of containers.
 
 ---
 
 ### `Cloud`
 
-- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the <b>Oracle Cloud</b> platform, modified the installation guide text.
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the <b>Oracle Cloud</b> platform, modified the installation guide text.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the <b>AWS CloudWatch</b> platform, modified the role creation details to match the current AWS specifications.
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" /> of the <b>AWS CloudWatch</b> platform, modified the role creation details to match the current AWS specifications.
 
 </div>
 
@@ -238,7 +238,7 @@ May 3, 2024
 
 ### `Common`
 
-<Status>Fixed</Status> In case Alert Reception is set in the WhaTap mobile app, fixed the issue where the WhatsApp item appears together in <Cmdname sid="notification_setting" className="uitext" /> of the <Cmdname sid="MNU07360" className="uitext" /> &amp;gt; <Cmdname sid="side_accountManagement" className="uitext" /> menu.
+<Status>Fixed</Status> In case Alert Reception is set in the WhaTap mobile app, fixed the issue where the WhatsApp item appears together in <Cmdname sid="notification_setting" className="uitext" /> of the <Cmdname sid="MNU07360" className="uitext" /> &gt; <Cmdname sid="side_accountManagement" className="uitext" /> menu.
 
 ---
 
@@ -268,9 +268,9 @@ April 30, 2024
 
 ### `Database`
 
-- <Status>Changed</Status> In the <Cmdname sid="db_ip" className="uitext" /> column of the <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agents" className="uitext" /> menu, added the tooltip to display the IP list.
+- <Status>Changed</Status> In the <Cmdname sid="db_ip" className="uitext" /> column of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agents" className="uitext" /> menu, added the tooltip to display the IP list.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_instanceList" className="uitext" />, if the values of the <Cmdname sid="database" className="uitext" /> and <Cmdname sid="ip" className="uitext" /> columns exceed the cell size, modified to apply the ellipsis (...). When the mouse is over a column, the full value appears as a tooltip.
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" />, if the values of the <Cmdname sid="database" className="uitext" /> and <Cmdname sid="ip" className="uitext" /> columns exceed the cell size, modified to apply the ellipsis (...). When the mouse is over a column, the full value appears as a tooltip.
 
 </div>
 
@@ -288,15 +288,15 @@ April 29, 2024
 
   - Among sub menus under <Cmdname sid="side_statistics" className="uitext" />, removed <Cmdname sid="side_statRemote" className="uitext" /> up to 31 days.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &amp;gt; <Cmdname sid="side_statError" className="uitext" />, fixed the issue where the CSV format is broken if '\n' is included in the string when downloading search results as a CSV file.
+- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_statError" className="uitext" />, fixed the issue where the CSV format is broken if '\n' is included in the string when downloading search results as a CSV file.
 
-- <Status>Fixed</Status> In <Cmdname sid="TTL06549" className="uitext" /> of the <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentSetting" className="uitext" /> menu, fixed the issue where agent names are overlapped with other columns if the names are too long.
+- <Status>Fixed</Status> In <Cmdname sid="TTL06549" className="uitext" /> of the <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> menu, fixed the issue where agent names are overlapped with other columns if the names are too long.
 
 ---
 
 ### `Kubernetes`
 
-<Status>Changed</Status> Modified <Cmdname sid="side_appl" className="uitext" /> &amp;gt; <Cmdname sid="side_statistics" className="uitext" /> so that it matches the <Cmdname sid="side_statistics" className="uitext" /> menu of the `Application` product.
+<Status>Changed</Status> Modified <Cmdname sid="side_appl" className="uitext" /> &gt; <Cmdname sid="side_statistics" className="uitext" /> so that it matches the <Cmdname sid="side_statistics" className="uitext" /> menu of the `Application` product.
 
 </div>
 
@@ -308,13 +308,13 @@ April 25, 2024
 
 ### `Common`
 
-- <Status>Feature</Status> In the <Cmdname sid="side_event" className="uitext" /> &amp;gt; <Cmdname sid="side_eventSetting" className="uitext" /> menu of the platform that supports log monitoring, added the log event configuration function.
+- <Status>Feature</Status> In the <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> menu of the platform that supports log monitoring, added the log event configuration function.
 
-- <Status>Changed</Status> In the <Cmdname sid="alert_receive_settings_by_member" className="uitext" /> section of <Cmdname sid="side_event" className="uitext" /> &amp;gt; <Cmdname sid="side_eventNoti" className="uitext" />, modified not to mask the user information for the member with the <Cmdname sid="member_management" className="b500" /> role.
+- <Status>Changed</Status> In the <Cmdname sid="alert_receive_settings_by_member" className="uitext" /> section of <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />, modified not to mask the user information for the member with the <Cmdname sid="member_management" className="b500" /> role.
 
-- <Status>Changed</Status> Modified to newly load the mobile device list if you delete any mobile devices from the <Cmdname sid="my_profile" className="uitext" /> &amp;gt; <Cmdname sid="notification_setting" className="uitext" /> section.
+- <Status>Changed</Status> Modified to newly load the mobile device list if you delete any mobile devices from the <Cmdname sid="my_profile" className="uitext" /> &gt; <Cmdname sid="notification_setting" className="uitext" /> section.
 
-- <Status>Fixed</Status> Fixed the issue where if the mobile device reception test fails in the <Cmdname sid="my_profile" className="uitext" /> &amp;gt; <Cmdname sid="notification_setting" className="uitext" /> section, the mobile device list cannot be loaded and infinite loading happens.
+- <Status>Fixed</Status> Fixed the issue where if the mobile device reception test fails in the <Cmdname sid="my_profile" className="uitext" /> &gt; <Cmdname sid="notification_setting" className="uitext" /> section, the mobile device list cannot be loaded and infinite loading happens.
 
 ---
 
@@ -324,15 +324,15 @@ April 25, 2024
 
 - <Status>Fixed</Status> Modified to select the time range and agent information of the selected chart, when you click the pop-up chart of <Cmdname sid="TTL07710" className="uitext" /> called by <Cmdname sid="TTL06209" className="uitext" /> to go to the <Cmdname sid="side_statistics" className="uitext" /> menu.
 
-- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &amp;gt; <Cmdname sid="side_tx" className="uitext" />, fixed the issue where the data is not sorted by error when the <Cmdname sid="order_by" className="uitext" /> is set to <Cmdname sid="error" className="uitext" />.
+- <Status>Fixed</Status> In <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />, fixed the issue where the data is not sorted by error when the <Cmdname sid="order_by" className="uitext" /> is set to <Cmdname sid="error" className="uitext" />.
 
-- <Status>Fixed</Status> From the hitmap widget in <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where the data is viewed when dragging an empty area on the chart after an agent filtering.
+- <Status>Fixed</Status> From the hitmap widget in <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_appDashboard" className="uitext" />, fixed the issue where the data is viewed when dragging an empty area on the chart after an agent filtering.
 
 ---
 
 ### `Server`
 
-- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &amp;gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the WhaTap repository addition command in the Debian/Ubuntu environment.
+- <Status>Fixed</Status> In <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />, modified the WhaTap repository addition command in the Debian/Ubuntu environment.
 
 - <Status>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" />, fixed the issue where the row height increases and decreases while updating the table data.
 
@@ -346,6 +346,6 @@ April 25, 2024
 
 ### `Database`
 
-- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &amp;gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the <UI>Long Waiting Session Count</UI> widget so that its data appears based on the current time.
+- <Status>Fixed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, modified the <UI>Long Waiting Session Count</UI> widget so that its data appears based on the current time.
 
 </div>

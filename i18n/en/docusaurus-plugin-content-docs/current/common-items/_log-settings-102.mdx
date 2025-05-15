@@ -369,7 +369,7 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 :::
 
-{/\* 
+{/* 
     \* **시뮬레이션 성공 화면**
 
 ```
@@ -380,9 +380,9 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
   <ImgLang img='log-simulation-fail.png' desc='시뮬레이션 실패'/>  
 ```
 
-\*/}
+*/}
 
-{/\* 
+{/* 
 
 ### Performance measurement {#log-performance}
 
@@ -390,7 +390,7 @@ After successful simulation, click <Cmdname sid="performance_measurement" classN
 
 <ImgLang img='log-performance.png' desc='Performance measurement'/>
 
-\*/}
+*/}
 
 ### Parsing success {#log-parsed}
 
@@ -556,7 +556,7 @@ After importing the JSON configuration file, you cannot save the imported settin
 
 Select the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />. Log data is so large and difficult to retain for a long time. Using the Set log statistics data function, you can **save information on how many logs that meet specific conditions are collected every 5 minutes**. Even if actual log data has been deleted for a long time, you can check the trend of how many logs that meet the conditions are collected.
 
-{/\* 
+{/* 
 
 >
 
@@ -580,7 +580,7 @@ Select the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> 
 
 9. The generated rule can be deleted using the **_-_** icon or added using the **_+ Add_** button.
 
-\*/}
+*/}
 
 ### Adding the log long-term archive statistics {#log-long-term-archive-add}
 
@@ -629,7 +629,7 @@ If a setting is added as follows, statistical data is generated with a key value
 
 - Substitution: Sensitive data is replaced with a user-specified value that is safe. 
 
-{/\* 
+{/* 
 
 You can prevent exposure of sensitive data by encrypting and masking personal information contained in the log data under the <Cmdname sid="TTL08814" className="uitext" /> tab.
 
@@ -719,11 +719,11 @@ The search key specified in the <Cmdname sid="TTL08814" className="uitext" /> ta
 {/* 로그 1차 파서 설정 탭에서 검색 키 이름을 검색 키.p로 지정하면 개인정보 비식별화 탭에서는 지정된 검색 키로 표시되면서 기본적인 비식별화 대상이 됩니다.
 In addition to the specified search keys, if there are search keys to be treated as business-sensitive information, you can additionally set them for encryption and de-identification. */}
 
-{/\* :::note 
+{/* :::note 
 
 If the search key name is specified as <code class='filter'>search-key.p</code> in the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab, de-identification is applied by default. When adding or modifying in the <Cmdname sid="TTL08814" className="uitext" /> tab, you can select the corresponding <Cmdname sid="category" className="uitext" /> and then check it in <Cmdname sid="TTL08835" className="uitext" />. You can disable masking, if you do not want. It is recommended to use the <Cmdname sid="TTL08814" className="uitext" /> tab rather than specifying the de-identification target during parser configuration. For more information about de-identification of personal information, see [the following](#log-deidentification-of-personal-info).
 
-::: \*/}
+::: */}
 
 {/* 사용자가 비식별화 설정을 하지 않아도 비식별화 처리됩니다. In this case, you can manipulate in the <Cmdname sid="TTL08814" className="uitext" /> tab. */}
 

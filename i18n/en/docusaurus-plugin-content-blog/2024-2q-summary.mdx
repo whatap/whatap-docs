@@ -101,7 +101,7 @@ You can change the default dashboard preset that can be viewed when you first en
 
 {/* `.NET` 상품의 지원 범위가 윈도우 운영체제에서 실행되는 `.NET` 프레임워크만이 아니라 `.NET` 코어까지 확대되어 보다 다양한 운영체제 기반 모니터링을 제공합니다. This aims to improve development and operation efficiency by enabling the monitoring in various environments, including cloud and container-based applications.  */}
 
-{/\* * 닷넷 프레임워크에서 닷넷 코어(2분기 모니터링 지원 범위 확대) */}
+{/* * 닷넷 프레임워크에서 닷넷 코어(2분기 모니터링 지원 범위 확대) */}
 
 The following overview guide helps you check new features and major changes in the `Application` product suite for Q2 2024, along with release versions.
 
@@ -181,9 +181,9 @@ In this Q2, a new **Unix** `Solaris` **agent installation package** is to be pro
 
 {/* 서버 모니터링 상품 설치 시 사용자가 운영 체제를 먼저 선택하여 보다 직관적인 방식으로 설치 과정이 진행되도록 <Cmdname sid="agentInstall" className="uitext" /> 화면이 개선되었습니다. Instead of the previous OS-specific tab separating method, you can select an operating system and move to a separate installation page for the selected OS.  */}
 
-{/\* \* 에이전트 설치 화면 편의성 개선 > OS 선택
+{/* \* 에이전트 설치 화면 편의성 개선 > OS 선택
 
-- Oracle Solaris 설치 패키지 제공 \*/}
+- Oracle Solaris 설치 패키지 제공 */}
 
 The following overview guide helps you check new features and major changes in the `Server` products in Q2 2024 along with release versions.
 
@@ -233,7 +233,7 @@ WhaTap Kubernetes Monitoring has undergone continuous <Cmdname sid="side_contain
 
 </p>
 
-{/\* 쿠버네티스 리소스간 연결 관계를 시각적으로 확인할 수 있습니다. 
+{/* 쿠버네티스 리소스간 연결 관계를 시각적으로 확인할 수 있습니다. 
 
 It provides users with a visual representation of the hierarchy and relationships between resources in the Kubernetes cluster. This allows users to easily see at a glance on which node a Pod or Container is running, by which deployment it is released, and to which namespace it belongs.
 
@@ -243,9 +243,9 @@ It provides users with a visual representation of the hierarchy and relationship
 
 - Efficiency in resource management: It optimizes the placement and interactions for cluster resources and improves the operation efficiency.
 
-This feature enables efficiency and rapid troubleshooting during cluster operation and management. \*/}
+This feature enables efficiency and rapid troubleshooting during cluster operation and management. */}
 
-{/\* 실시간으로 Pending 상태의 Pod 현황을 조회할 수 있으며, 
+{/* 실시간으로 Pending 상태의 Pod 현황을 조회할 수 있으며, 
 
 The <Cmdname sid="side_pendingPod" className="uitext" /> V2 allows you to comprehensively monitor and analyze the status of Pods in pending status within the cluster.
 
@@ -255,9 +255,9 @@ It allows you to comprehensively monitor and analyze Pods in pending status with
 
  and provides more comprehensive information through real-time visibility, root cause analysis, and associated data provision. 
 
-You can visually check the resource relationships in the container map details. \*/}
+You can visually check the resource relationships in the container map details. */}
 
-{/\* \* 에이전트 설치 개선: 에이전트 설치 복잡도 증가(k8s 플랫폼, 런타임, 기능 증가) -> ui상에서 사용자 환경 및 기능을 on/off 설정 시 설치 yaml 파일 또는 helm 차트 자동 생성해 에이전트 설치 난이도 및 사용성 개선
+{/* \* 에이전트 설치 개선: 에이전트 설치 복잡도 증가(k8s 플랫폼, 런타임, 기능 증가) -> ui상에서 사용자 환경 및 기능을 on/off 설정 시 설치 yaml 파일 또는 helm 차트 자동 생성해 에이전트 설치 난이도 및 사용성 개선
 
 - Automatically provides the yaml for installation of each user environment and various WhaTap options.
 
@@ -267,7 +267,7 @@ You can visually check the resource relationships in the container map details. 
 
   - Embedded the dedicated dashboard and analysis feature. 
 
-- 컨테이너 맵 리소스 관계도 \*/}
+- 컨테이너 맵 리소스 관계도 */}
 
 The following overview guide helps you check new features and major changes in the `Kubernetes` products in Q2 2024 along with their release versions.
 
@@ -307,11 +307,11 @@ The WhaTap database product suite is transitioning to <code class="my">V2</code>
 
 The **Oracle Pro** **Beta** service has launched in preparation for the official release in Q3. **Oracle Pro** has applied the technologies to monitor the performance metrics by directly accessing the memory of the database server. It can monitor accurate performance information up to 20 times per second by reflecting the latest data, and can minimize the load on the system by directly accessing memory without using the disk I/O. This allows you to quickly and accurately analyze issues based on the precisely collected performance data, such as execution time for a specific query and status of the buffer cache.
 
-{/\* \* Oracle Pro
+{/* \* Oracle Pro
 
 - Oracle <code class="my">V2</code>
 
-- 멀티 인스턴스 모니터링 메뉴 사용자 편의성 개선  \*/}
+- 멀티 인스턴스 모니터링 메뉴 사용자 편의성 개선  */}
 
 {/* oracle pro의 경우 7월 정식 서비스 배포 예정 */}
 
@@ -347,7 +347,7 @@ The interactions can be analyzed between the website and users by accurately rep
 
 ![Session replay sc](/img/changelog/changelog-24q2-browser1.png)
 
-{/\* 
+{/* 
 
 ![Session replay player](/img/browser-session-replay-player.png)
 
@@ -355,11 +355,11 @@ It provides insights into how users use the website. This helps us understand an
 
 You can reproduce user behaviors that allow you to understand exactly how users interact with the website and its environment.  
 
-It may be difficult to reproduce failures with just the list of events. When an actual failure occurs, the user's screen can be recorded to allow for more accurate failure reproduction.  \*/}
+It may be difficult to reproduce failures with just the list of events. When an actual failure occurs, the user's screen can be recorded to allow for more accurate failure reproduction.  */}
 
 <code class="Feature">Feature</code> In <Cmdname sid="side_rumPageLoadHitmap" className="uitext" />, <Cmdname sid="side_ajaxAnalytics" className="uitext" />, and <Cmdname sid="side_userSessionEventSearch" className="uitext" />, added the <Cmdname sid="TTL08103" className="uitext" /> feature. <code class='changelog-service'><a href="../release-notes/service/service-2_6_x"><code class='changelog-service'>Service 2.6.0​</code></a></code>
 
-{/\* <details className='changelog'>
+{/* <details className='changelog'>
 
 <summary><b>Guide to new features and major changes</b></summary>
 
@@ -384,7 +384,7 @@ For more information about the <Cmdname sid="TTL08103" className="uitext" /> fun
 
 :::
 
-{/\* ## `Cloud`
+{/* ## `Cloud`
 
 <details className='changelog'>
 <summary><b>Guide to new features and major changes</b></summary>
@@ -425,13 +425,13 @@ WhaTap introduces the changes to the `URL` section in Q2 2024. The UI of the <Cm
 
 ![URL sc](/img/changelog/changelog-24q2-url.png)
 
-{/\* * 에러 유형 안내 문서가 새로 업데이트되었습니다. For more information, see [the following](https://docs.whatap.io/url/url-error-type).  */}
+{/* * 에러 유형 안내 문서가 새로 업데이트되었습니다. For more information, see [the following](https://docs.whatap.io/url/url-error-type).  */}
 
-{/\* 부분의 주목할 만한 신규 기능으로 ~을 소개합니다.
+{/* 부분의 주목할 만한 신규 기능으로 ~을 소개합니다.
 
 - A detail window pop-out with an improved interface
 
-- 상태 코드 문서 안내(첨언) \*/}
+- 상태 코드 문서 안내(첨언) */}
 
 The following overview guide helps you check the major changes to the `URL` products in Q2 2024 along with release versions.
 
@@ -452,7 +452,7 @@ The **URL status code types** guide has been added. For more information, see [t
 
 <br/>
 
-{/\* ## `Log`
+{/* ## `Log`
 
 WhaTap introduces a notable new feature xx in the `Log` section in Q2 2024.
 

@@ -82,7 +82,7 @@ crowdin download -b main -l en-US
 - [ -> [
 - \: -> :
 - */} -> */}
-- &amp;gt; -> &gt;
+- &gt; -> &gt;
 - ~!@#$%^&\*()\_+=-[]\` -> ~!@#$%^&*()_+=-[]`
 - <https://lite.ip2location.com> -> [https://lite.ip2location.com](https://lite.ip2location.com)
 - <code>${Tag}</code> -> <code>&#36;&#123;Tag&#125;</code>
