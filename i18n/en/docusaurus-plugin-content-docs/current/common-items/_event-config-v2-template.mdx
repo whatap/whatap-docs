@@ -147,7 +147,7 @@ The provided event templates are as follows. The default value set in <Cmdname s
   To use this template, add an option for Port Monitoring in the agent settings. Execute the following command on the server to monitor:
 
   <Tabs groupId="operating-systems">
-  <TabItem value="lx" label="Linux Shell">
+<TabItem value="lx" label="Linux Shell">
 
   ```bash title="SH"
   export TARGET_IP=127.0.0.1 # Monitoring target IP address
@@ -155,8 +155,8 @@ The provided event templates are as follows. The default value set in <Cmdname s
   echo "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
   ```
 
-  </TabItem>
-  <TabItem value="wd" label="Windows Powershell">
+</TabItem>
+<TabItem value="wd" label="Windows Powershell">
 
   ```bash title="SH"
   $TARGET_IP="127.0.0.1" # Monitoring target IP address
@@ -164,7 +164,7 @@ The provided event templates are as follows. The default value set in <Cmdname s
   Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT"
   ```
 
-  </TabItem>
+</TabItem>
   </Tabs>
 
   :::

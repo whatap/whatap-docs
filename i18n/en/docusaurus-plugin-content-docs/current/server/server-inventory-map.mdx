@@ -35,27 +35,27 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
   If an update is needed, check the following commands for each operating system. 
 
   <Tabs>
-  <TabItem value="du" label="Debian/Ubuntu" default>
+<TabItem value="du" label="Debian/Ubuntu" default>
 
   ```bash
   sudo apt-get update
   sudo apt-get install whatap-infra
   ```
 
-  </TabItem>
-  <TabItem value="arfocrs" label="Amazon Linux/RHEL/Fedora/Oracle Linux/CentOS/Rocky Linux/SUSE">
+</TabItem>
+<TabItem value="arfocrs" label="Amazon Linux/RHEL/Fedora/Oracle Linux/CentOS/Rocky Linux/SUSE">
 
   ```bash
   sudo yum update whatap-infra
   ```
 
-  </TabItem>
+</TabItem>
   </Tabs>
 
 - **Unix** 1.3.7 or later
 
   <Tabs>
-  <TabItem value='aix' label='AIX' default>
+<TabItem value='aix' label='AIX' default>
 
   If an update is needed, check the following command.
 
@@ -68,9 +68,9 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
   startsrc -s whatap-infra
   ```
 
-  </TabItem>
+</TabItem>
 
-  <TabItem value='solaris' label='Solaris' default>
+<TabItem value='solaris' label='Solaris' default>
 
   If an update is needed, check the following command.
 
@@ -83,7 +83,7 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
   /etc/init.d/whatap-infra start
   ```
 
-  </TabItem>
+</TabItem>
 
   </Tabs>
 
@@ -106,33 +106,33 @@ The following settings are required to enable the <Cmdname sid="side_serverInven
    - **Linux**
 
      <Tabs>
-     <TabItem value="linux-opt" label="Add option command" default>
+   <TabItem value="linux-opt" label="Add option command" default>
 
      ```bash
      grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | sudo tee -a /usr/whatap/infra/conf/whatap.conf
      ```
 
-     </TabItem>
-     <TabItem value="linux-restart" label="Restart agent">
+   </TabItem>
+   <TabItem value="linux-restart" label="Restart agent">
 
      ```bash
      sudo service whatap-infra restart
      ```
 
-     </TabItem>
+   </TabItem>
      </Tabs>
 
    - **Unix**
 
      <Tabs>
-     <TabItem value="unix-opt" label="Add option command" default>
+   <TabItem value="unix-opt" label="Add option command" default>
 
      ```bash
      grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
      ```
 
-     </TabItem>
-     <TabItem value="unix-restart" label="Restart agent">
+   </TabItem>
+   <TabItem value="unix-restart" label="Restart agent">
 
      - **AIX** 
 
@@ -147,26 +147,26 @@ The following settings are required to enable the <Cmdname sid="side_serverInven
        /etc/init.d/whatap-infra restart
        ```
 
-     </TabItem>
+   </TabItem>
      </Tabs>
 
    - **Windows**
 
      <Tabs>
-     <TabItem value="windows-opt" label="Add option command" default>
+   <TabItem value="windows-opt" label="Add option command" default>
 
      ```bash
      if (-not (Select-String -Path "C:\Program Files\WhatapInfra\whatap.conf" -Pattern "^categoryv2.enabled" -Quiet)) { Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "categoryv2.enabled=true" }
      ```
 
-     </TabItem>
-     <TabItem value="windows-restart" label="Restart agent">
+   </TabItem>
+   <TabItem value="windows-restart" label="Restart agent">
 
      ```bash
      Restart-Service -Name "Whatap Infra"
      ```
 
-     </TabItem>
+   </TabItem>
      </Tabs>
 
 ## Basic screen guide

@@ -11,7 +11,7 @@
 - 対象サーバーに、次のコマンドを追加してください。 
 
   <Tabs groupId='server-user-script'>
-  <TabItem value="lxs" label="Linux Shell">
+<TabItem value="lxs" label="Linux Shell">
 
   ```bash title=SH
   #以下の変数にモニタリング対象IPを指定します。
@@ -21,8 +21,8 @@
   echo "tcp.check.$TARGET_PORT=tcp://$TARGET_IP:$TARGET_PORT" |sudo tee -a /usr/whatap/infra/conf/whatap.conf
   ```
 
-  </TabItem>
-  <TabItem value="wps" label="Windows Powershell">
+</TabItem>
+<TabItem value="wps" label="Windows Powershell">
 
   ```bash title=SH
   #以下の変数にモニタリング対象IPを指定します。
@@ -32,7 +32,7 @@
   Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "tcp.check.${TARGET_PORT}=tcp://${TARGET_IP}:${TARGET_PORT}"
   ```
 
-  </TabItem>
+</TabItem>
   </Tabs>
 
 {/* 다중 포트 감시 추가 */}
