@@ -1,6 +1,6 @@
 [
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dmx-1_0_4h",
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_4h",
     "ver": "v1.0.4h",
     "date": "2025-04-03",
     "Lists": [
@@ -9,34 +9,34 @@
         "hash": "v104",
         "product": "DMX h",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code>韓国語が文字化けした場合、コード変換処理オプションを追加</p>",
-        "details": "<ul>\n<li>\n<p><code>codefrom=</code>及び<code>codeto=</code>文字エンコーディング指定</p>\n</li>\n<li>\n<p><code>iconv -l</code>コマンドの結果値の中から選択して指定</p>\n</li>\n<li>\n<p>例示: <code>codefrom=EUC-KR</code>、<code>codeto=UTF-8</code></p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the option to handle code conversion when Korean characters are broken.</p>",
+        "details": "<ul>\n<li>\n<p>Defined character encoding for <code>codefrom=</code> and <code>codeto=</code>.</p>\n</li>\n<li>\n<p>Selected and specified out of the results of the <code>iconv -l</code> command.</p>\n</li>\n<li>\n<p>e.g. <code>codefrom=EUC-KR</code>, <code>codeto=UTF-8</code></p>\n</li>\n</ul>"
       },
       {
         "ver": "v1.0.4h",
         "hash": "v104",
         "product": "DMX h",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>plan_elapse</code> <code>bind_elapse</code> デフォルト値を5秒 → 3秒に変更</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Changed the default value for <code>plan_elapse</code> and <code>bind_elapse</code> from 5 seconds to 3 seconds.</p>"
       },
       {
         "ver": "v1.0.4h",
         "hash": "v104",
         "product": "DMX h",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>sqlstat</code>伝送周期のデフォルト値を5分 → 1分に変更</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Changed the default <code>sqlstat</code> transmission cycle from 5 minutes to 1 minute.</p>"
       },
       {
         "ver": "v1.0.4h",
         "hash": "v104",
         "product": "DMX h",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>sqlstat</code>に<code>!rectype</code>、<code>@id</code>、<code>@stime</code>を追加</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>!rectype</code>, <code>@id</code>, and <code>@stime</code> to <code>sqlstat</code>.</p>"
       }
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dmx-1_0_2b",
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2b",
     "ver": "v1.0.2b",
     "date": "2025-01-21",
     "Lists": [
@@ -45,12 +45,12 @@
         "hash": "v102",
         "product": "DMX b",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>sqlstat_send_interval=5</code>オプションを追加(単位: 分)</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>sqlstat_send_interval=5</code> option (unit: minute).</p>"
       }
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/db/dmx-1_0_2a",
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2a",
     "ver": "v1.0.2a",
     "date": "2025-01-21",
     "Lists": [
@@ -59,7 +59,7 @@
         "hash": "v102",
         "product": "DMX a",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <em>plan.user</em>ファイル作成機能を追加</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to create the <em>plan.user</em> file.</p>"
       }
     ]
   },
