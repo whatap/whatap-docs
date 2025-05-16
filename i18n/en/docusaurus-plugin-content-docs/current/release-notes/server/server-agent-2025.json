@@ -1,5 +1,47 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_8_6",
+    "ver": "v2.8.6",
+    "date": "2025-04-22",
+    "Lists": [
+      {
+        "ver": "v2.8.6",
+        "hash": "v286",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the JSON array separation feature in log collection.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_8_5",
+    "ver": "v2.8.5",
+    "date": "2025-04-17",
+    "Lists": [
+      {
+        "ver": "v2.8.5",
+        "hash": "v285",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the Nvidia MIG monitoring.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/server/server-2_8_4",
+    "ver": "v2.8.4",
+    "date": "2025-04-04",
+    "Lists": [
+      {
+        "ver": "v2.8.4",
+        "hash": "v284",
+        "product": "Server Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the new Nvidia data collection option</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/server/server-2_8_1",
     "ver": "v2.8.1",
     "date": "2025-03-04",

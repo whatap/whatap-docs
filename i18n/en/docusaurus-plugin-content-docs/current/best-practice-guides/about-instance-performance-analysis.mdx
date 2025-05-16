@@ -31,33 +31,6 @@ You can view which file the class was physically loaded from through the <Cmdnam
 
 Unexpected behavior or bug may occur if a specific class was loaded from the unintended *jar* file. This can make debugging easier, especially in complex classpaths or multi-module environments, by allowing you to see exactly which path a module was loaded from. 
 
-<<<<<<< HEAD
-=======
-{/* 으로 클래스간 충돌 방지, 디버깅, 성능 최적화 등을 도울 수 있습니다.  */}
-
-{/* **클래스 충돌 방지** 
-
-  The same class can exist in multiple *jar* files with different versions of third-party libraries. You can prevent class conflicts by identifying duplicate classes, adjusting priorities, explicitly excluding conflicting *jar* files, or including specific files.  */}
-
-  {/* 
-  At this point, you can avoid class conflicts by checking which *jar* file the class has been loaded from. It prevents the same class from being loaded from multiple *jar* files. 
-  If the same class exists in multiple *jar* files (e.g. loading different versions of third party libraries), you can avoid class conflicts by checking which *jar* file the class was loaded from.  */}
-
-{/* **디버깅** 
-
-  Unexpected behavior or bug may occur if a specific class was loaded from the unintended *jar* file. This can make debugging easier, especially in complex classpaths or multi-module environments, by allowing you to see exactly which path a module was loaded from.   */}
-
-{/* **성능 최적화** 
-
-  Class loading may cause the performance issues. After checking which *jar* files are overloading classes, you can optimize the loading time of the class by adjusting the class path so that the *jar* files containing frequently used classes can be loaded from appropriate locations.  */}
-
-  {/* 
-  You can optimize the performance by checking from which *jar* files classes are being overloaded.
-  If you are experiencing performance issues when loading classes, you can manage the performance by finding which *jar* file overloads classes.  */}
-
-{/* 자바 애플리케이션의 다계층 구조 특성상 <Cmdname sid="resource" className="uitext" /> 정보 확인이 필요합니다.  */}
-
->>>>>>> 771a295660db60ebdb5334607a9cea86df7f65dd
 ## Thread List/Dump {#advanced-use-thread-list-dump}
 
 Home &gt; Select Project &gt; <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" />

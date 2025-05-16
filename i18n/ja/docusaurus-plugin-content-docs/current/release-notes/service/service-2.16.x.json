@@ -1,0 +1,336 @@
+[
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_16_x",
+    "ver": "Service 2.16.2",
+    "date": "2025-04-29",
+    "Lists": [
+      {
+        "ver": "Service 2.16.2",
+        "hash": "service-2162",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">メトリクスチャート</span> <code class=\"newfunc\">New</code>にエージェント及び指標名の昇順ソートを追加</p>"
+      },
+      {
+        "ver": "Service 2.16.2",
+        "hash": "service-2162",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">利用状況</span> &gt; <span class=\"uitext\">請求書プレビュー</span>, <span class=\"uitext\">請求及び支払履歴</span>, <span class=\"uitext\">使用量</span>にKubernetes製品のapplication namespace別の分離課金を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.2",
+        "hash": "service-2162",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span>エージェント名、IP検索インプットを追加</p>"
+      },
+      {
+        "ver": "Service 2.16.2",
+        "hash": "service-2162",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span>にファイルシステム情報ポップアップを追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_16_x",
+    "ver": "Service 2.16.1",
+    "date": "2025-04-23",
+    "Lists": []
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/service/service-2_16_x",
+    "ver": "Service 2.16.0",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>プロジェクトリストにマウスオーバー時にプロジェクトの説明が表示されるように改善</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>リアルタイム通知の発生時、ブラウザ通知でも確認可能</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span>のTopNウィジェットに水平線オプションを追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント設定</span>メニューにイベント動作時間機能を追加</p>",
+        "details": "<ul>\n<li>\n<p><strong>イベント設定V1</strong></p>\n<p>マトリクス/複合マトリクス/異常値探知/リアルタイム複合ログ/サーバーログ → イベント受信タグ上に追加</p>\n<p>ヒートマップパターン→カードの最下段に追加</p>\n</li>\n<li>\n<p><strong>イベント設定V2</strong></p>\n<p>基本/メトリクス → 解消された通知を次の項目に追加</p>\n<p>その他の項目はV1と同じ</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">メンバーリスト</span>及び<span class=\"uitext\">メンバー招待</span>で、メンバーのEメールの横にMFA及びSSO使用可否の表示機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">通知設定</span>メニューの3rdパーティープラグインのWebhook JSON応答値のカスタム機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "共通",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span>メトリクスイベント設定時にカテゴリー選択、指標設定、イベント対象選択段階でメトリクス検索機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トレース分析</span>画面でリストがフォーカスされた状態の時にキーボード方向キーでトレースを選択できる機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アクティブTX</span>画面でアクティブトランザクションリストをCSVでダウンロード可能</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">TXマップ</span>過去データの照会機能を強化</p>",
+        "details": "<ul>\n<li>\n<p>最大照会可能時間の範囲拡大(10分 → 1時間)</p>\n</li>\n<li>\n<p>フィルター項目追加</p>\n<!-- -->\n<details class=\"details_lb9f alert alert--info details_b_Ee\" data-collapsed=\"true\"><summary>追加されたフィルター項目</summary><div><div class=\"collapsibleContent_i85q\"><ul>\n<li>\n<p><strong>一般フィルター</strong></p>\n</li>\n<li>\n<p><strong>Referer</strong><br>\n<!-- -->ログインID、WClientId、トランザクションID、マルチトランザクションID、カスタムTID、エラー(クラス、ステップ、メッセージのすべてを含む）、都市、国、HTTPメソッド、ユーザーエージェント</p>\n</li>\n<li>\n<p><strong>トレースステップ関連フィルター</strong><br>\n<!-- -->DBC, SQL, HTTPC, METHOD, MESSAGE</p>\n</li>\n<li>\n<p><strong>数値フィルター</strong><br>\n<!-- -->経過時間、HTTP呼び出し時間、HTTP呼び出し件数、SQL時間、SQL件数、状態</p>\n</li>\n</ul></div></div></details>\n</li>\n<li>\n<p>フィルターデータで照会された総トランザクション数(Read項目)の表示を追加</p>\n</li>\n<li>\n<p>Read、Limit項目に対する説明ツールチップを追加</p>\n</li>\n<li>\n<p>過去のデータの照会時に一時停止機能を追加</p>\n<ul>\n<li>\n<p>過去のデータ検索中(読み込み中)、検索ボタンをクリックすると照会が一時停止</p>\n</li>\n<li>\n<p>同じ検索条件(時間、フィルター)で再度検索すると、停止した時点から続けてデータを照会<br>\n<!-- -->(検索条件の変更時にチャートを初期化し、描き直しを開始)</p>\n</li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span>メニューでサーバーにマウスオーバー時に表示されるポップオーバーにステータス別のイベント数表示を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span> &gt; <strong>詳細を見る</strong>画面でサーバーにマウスオーバー時にポップオーバーにステータス別のイベント数表示を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバーリスト</span>メニューで<span class=\"uitext\">カラム設定</span>ボタンをクリックする時にプリセットを管理し、他のユーザーと設定共有が可能</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバー インベントリ</span> GPU Countカラムを追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">メトリクスエクスプローラー</span>に単一サーバーの複数のメトリック情報を1つのチャートで確認できるカテゴリを追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">レポート</span>メニューでディスクフィルターテンプレートを選択する時、マウントポイントセレクタUIを追加(例. 日間時間別のサーバー主要指標報告書)</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span>にフィルターとお気に入り機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アプリケーション</span>モニタリング時<span class=\"uitext\">トレース分析</span>画面の<span class=\"uitext\">レコード要約</span>タブでコンテナ及びPod要約分析機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ノード</span> &gt; <span class=\"uitext\">ノードリスト</span>カラム左側の拡張ボタンをクリックする時に、ディスク情報を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>,  <span class=\"uitext\">マルチインスタンス</span>メニューでテーブルのマルチソートする時にソート優先順位表示を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">データベースサイズ</span>, <span class=\"uitext\">テーブルスペース容量増減</span>メニューでmulti dbではないインスタンスは<code>string</code>でDB名を表示</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">SQL統計</span>メニューでテーブルのマルチソートする時にソート優先順位表示を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ラボラトリー</span> &gt; <em><strong>Top SQL</strong></em>メニューでテーブルのマルチソートする時にソート優先順位表示を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>画面のチャート画像ダウンロード機能を追加</p>",
+        "category": "共通",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスリスト</span> &gt; <em><strong>ユーザー定義ウィジェット</strong></em></p>\n</li>\n<li>\n<p><em><strong>分析</strong></em> &gt; <em><strong>カウント推移の比較</strong></em></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>メニューにウィジェット編集、プリセット保存機能を新規追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Session Table</span>フィルターにキー値の検索機能及びアルファベット順のソート機能を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span>データベースウィジェット追加</p>",
+        "category": "共通",
+        "details": "<ul>\n<li>\n<p>CloudWatchインスタンス別のCPU使用率(%)</p>\n</li>\n<li>\n<p>CloudWatchインスタンス別の空きメモリ</p>\n</li>\n<li>\n<p>CloudWatchインスタンス別の空きストレージ</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">Wait分析</span>メニューの指標に単位を確認できるツールチップを追加</p>",
+        "category": "Oracle、Oracle Pro"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">RACモニタリング</span>で選択したクラスターが保存されるように変更</p>",
+        "category": "Oracle、Oracle Pro"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>インストールページ追加</p>",
+        "category": "SAP ASE"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <span class=\"uitext\">テーブルスペース容量増減</span>メニューの追加</p>",
+        "category": "SAP ASE"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統合Flexボード</span>及び<span class=\"uitext\">Flexボード</span>にウィジェットを追加</p>",
+        "category": "SQL Server"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Cloud",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">管理</span> &gt; <span class=\"uitext\">メンテナンス計画</span>メニューの追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Browser",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">エラートレース</span>, <span class=\"uitext\">ユーザーセッションログ検索</span> URL共有時のUI状態(時間、フィルターなど)が維持されるよう改善</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">エラートレース</span>: 時間、チャートバーでクリックされた時間</li>\n<li><span class=\"uitext\">ユーザーセッションログ検索</span>: 時間、フィルター、過去順、最新順</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ログ検索</span>及び<span class=\"uitext\">ログTail</span>メニューでフィルターお気に入りプロジェクト共有機能を追加</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ログトレンド</span>, <span class=\"uitext\">ログ検索</span>ログに<code>@txid</code>, <code>@mtid</code>が含まれている場合、トランザクション情報のドロップダウンでトレースポップアップを確認する機能を追加(Log-Trace連携)</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>トレースログでログ検索に移動できるボタンを追加\n(<em><strong>アプリケーションダッシュボード</strong></em>, <span class=\"uitext\">TXマップ</span>, <span class=\"uitext\">TX検索</span>, <span class=\"uitext\">マルチTX追跡</span>などトランザクション情報を確認できるAPMページと連携)</p>"
+      },
+      {
+        "ver": "Service 2.16.0",
+        "hash": "service-2160",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ログ</span> &gt; <span class=\"uitext\">ログTail</span>, <span class=\"uitext\">ログトレンド</span>, <span class=\"uitext\">ログ検索</span> URL共有時のUI状態(時間、フィルターなど)が維持されるように改善</p>",
+        "details": "<ul>\n<li><span class=\"uitext\">ログTail</span>: カテゴリ、フィルター</li>\n<li><span class=\"uitext\">ログトレンド</span>: 時間、カテゴリ、チャートバーでクリックされた時間</li>\n<li><span class=\"uitext\">ログ検索</span>: 時間、フィルター、過去順、最新順</li>\n</ul>"
+      }
+    ]
+  }
+]

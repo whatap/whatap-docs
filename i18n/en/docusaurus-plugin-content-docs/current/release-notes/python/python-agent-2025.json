@@ -1,5 +1,69 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_1",
+    "ver": "v1.8.1",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "v1.8.1",
+        "hash": "v181",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the WebSocket transmission tracing feature based on <code>starlette</code>.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_9",
+    "ver": "v1.7.9",
+    "date": "2025-03-31",
+    "Lists": [
+      {
+        "ver": "v1.7.9",
+        "hash": "v179",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the feature to collect and display normal signals (Status: <code>2xx</code>, <code>3xx</code>) for HTTP transactions.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_8",
+    "ver": "v1.7.8",
+    "date": "2025-03-24",
+    "Lists": [
+      {
+        "ver": "v1.7.8",
+        "hash": "v178",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the feature to collect and display request methods for HTTP transactions.</p>"
+      },
+      {
+        "ver": "v1.7.8",
+        "hash": "v178",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the HTTP status collection and display feature when an HTTP transaction error occurs.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_7",
+    "ver": "v1.7.7",
+    "date": "2025-03-11",
+    "Lists": [
+      {
+        "ver": "v1.7.7",
+        "hash": "v177",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the option to control whatap module's log output in <em>whatap.conf</em>.</p>",
+        "details": "<ul>\n<li>\n<p><strong>ignore_whatap_stdout</strong> <span class=\"type\">Boolean</span></p>\n<p>Default <code>false</code></p>\n<p>If it is set to <code>true</code>, all standard output logs from the WhaTap Python agent module are disabled.</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/python/python-1_7_6",
     "ver": "v1.7.6",
     "date": "2025-03-04",
