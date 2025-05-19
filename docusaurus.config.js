@@ -18,7 +18,7 @@ const config = {
   future: {
     experimental_faster: isDev ? false : true
   },
-  baseUrl: '/',
+  baseUrl: '/whatap-docs/',
   onBrokenLinks: 'ignore',
   onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -140,7 +140,7 @@ const config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -223,13 +223,13 @@ const config = {
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
       },
-      // announcementBar: {
-      //   id: 'moniday-banner',
-      //   content: '<div id="moniday-banner">🎙️ 10월 19일, IT 현대화에 적합한 모니터링 플랫폼이 궁금하다면? <span id="bar"></span> <a class="btn-white-file" href="https://www.whatap.io/ko/moniDay" target="_blank">WhaTap Moni Day 신청하기</a></div>',
-      //   backgroundColor: 'none',
-      //   textColor: '#ffffff',
-      //   isCloseable: true,
-      // },
+      announcementBar: {
+        id: 'moniday-banner',
+        content: '<div id="moniday-banner">This document pertains to <a href="https://preview.whatap.io" target="_blank">preview.whatap.io</a> and includes content not yet released as a service version.<br/>For documentation on officially released features, please visit: <a href="https://docs.whatap.io" target="_blank">https://docs.whatap.io</a>.</div>',
+        backgroundColor: 'none',
+        textColor: '#ffffff',
+        isCloseable: false,
+      },
       blog: {
         sidebar: {
           groupByYear: false

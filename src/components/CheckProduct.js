@@ -12,9 +12,9 @@ export default function CheckProduct() {
     } = useDocusaurusContext();
     // console.log(currentLocale);
     if (currentLocale == 'ko') {
-        cProdt = location.pathname.split("/")[1];
-    } else {
         cProdt = location.pathname.split("/")[2];
+    } else {
+        cProdt = location.pathname.split("/")[3];
     }
 
     var product;

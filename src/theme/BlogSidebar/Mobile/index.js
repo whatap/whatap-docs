@@ -29,9 +29,10 @@ const BlogSidebarMobileSecondaryMenu = ({ sidebar }) => {
   const sidebarData = require('../_meta.json');
   const items = useVisibleBlogSidebarItems(sidebar.items);
 
+  // 프리뷰 기준 baseURL 수정 상태
   const getItemTitle = (permalink) => {
     const item = items.find(
-      (sideitem) => sideitem.permalink.replace(/(\/en|\/ja)/g, '') === permalink
+      (sideitem) => sideitem.permalink.replace('/whatap-docs', '').replace(/(\/en|\/ja)/g, "") === permalink
     );
     return item ? item.title : permalink;
   };

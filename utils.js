@@ -393,16 +393,16 @@ function colsToJson(data){
     "ko": "성능 추이"
   }
 
-  rd["podInitPerf"] = {
-    "en": "Pod Startup Analysis",
-    "ja": "Pod起動分析",
-    "ko": "Pod 시작 분석"
-  }
-  
   rd["appDashboard"] = {
     "en": "Application Dashboard",
     "ja": "アプリケーション",
     "ko": "애플리케이션 대시보드"
+  }
+  
+  rd["podInitPerf"] = {
+    "en": "Pod Startup Analysis",
+    "ja": "Pod起動分析",
+    "ko": "Pod 시작 분석"
   }
 
   rd["server_installAgent_add_whatapRepo"] = {
@@ -457,6 +457,12 @@ function colsToJson(data){
     "en": "DBX Agent Setting",
     "ja": "DBXエージェントの設定",
     "ko": "DBX 에이전트 설정",
+  }
+  
+  rd["side_kubeEventList"] = {
+    "en": "Kubernetes Event",
+    "ja": "Kubernetesイベント",
+    "ko": "쿠버네티스 이벤트"
   }
 
   rd["side_kubeEventList"] = {

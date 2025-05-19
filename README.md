@@ -49,8 +49,13 @@ npm run crowdin upload
 
 ### 번역 다운로드
 
-```
+```bash
+# 영어
 crowdin download -b main -l en-US
+
+# 일어
+crowdin download -b main -l ja
+
 ```
 
 언어별 다운로드 `crowdin download -l en-US -b main`
@@ -88,6 +93,7 @@ crowdin download -b main -l en-US
 - <code>${Tag}</code> -> <code>&#36;&#123;Tag&#125;</code>
 - <code>${Field}</code> -> <code>&#36;&#123;Field&#125;</code>
 - {user_id} -> \{user_id\} (install-agent-quick-setup.mdx 파일에서도 확인해볼것)
+- \{user_id} -> \{user_id\}
 - {D76F1D76-A9E0-4C87-874F-C0AD93D4229B} -> \{D76F1D76-A9E0-4C87-874F-C0AD93D4229B\}
 - e.g. _kubernetes_container_images\_{pcode}\_{timestamp}.csv_ -> e.g. _kubernetes_container_images\_\{pcode\}\_\{timestamp\}.csv_
 - CSV file name, _kubernetes_node_list\_{pcode}\_{timestamp}.csv_ -> CSV file name, _kubernetes_node_list\_\{pcode\}\_\{timestamp\}.csv_
