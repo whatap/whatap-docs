@@ -1,5 +1,34 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_14",
+    "ver": "v0.5.14",
+    "date": "2025-04-04",
+    "Lists": [
+      {
+        "ver": "v0.5.14",
+        "hash": "v0514",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the oracledb monitoring package.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_10",
+    "ver": "v0.5.10",
+    "date": "2025-03-10",
+    "Lists": [
+      {
+        "ver": "v0.5.10",
+        "hash": "v0510",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the option to use the Prisma ORM.</p>",
+        "details": "<ul>\n<li>\n<p><strong>prisma_read_func_name</strong> <span class=\"type\">String</span></p>\n<p>Default <code>read</code></p>\n<p>Set the name of the function called to obtain a read-only client when using replication.</p>\n</li>\n<li>\n<p><strong>prisma_database_url_name</strong> <span class=\"type\">String</span></p>\n<p>Default <code>DATABASE_URL</code></p>\n<p>Set the environment variable name in Prisma ORM where the database connection URL is stored.</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_9",
     "ver": "v0.5.9",
     "date": "2025-03-05",

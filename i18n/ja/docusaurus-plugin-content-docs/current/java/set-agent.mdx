@@ -11,7 +11,7 @@ keywords:
 
 WhaTapエージェントは、エージェントごとに必要な設定を*whatap.conf*ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
 
-他の設定がない場合、エージェントは(*whatap.agent-X.Y.Z.jar*)にあるディレクトリから*whatap.conf* ファイルを実装します。5秒ごとに*whatap.conf*ファイルの確認してリロードします。
+他の設定がない場合、エージェントは(_whatap.agent-X.Y.Z.jar_)にあるディレクトリから*whatap.conf* ファイルを実装します。5秒ごとに*whatap.conf*ファイルの確認してリロードします。
 
 ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)でもエージェント設定機能を提供しています。
 
@@ -22,7 +22,7 @@ whatap.home=.
 whatap.config=whatap.conf
 ```
 
-- `whatap.home`：既定値は*whatap.agent.jar*ファイルへのパスを入力してください。
+- `whatap.home`：既定値は_whatap.agent.jar_ファイルへのパスを入力してください。
 
 - `whatap.config`: ファイル名のみを入力することをお勧めします。相手パスを一緒に入力することができます。
 
@@ -70,8 +70,6 @@ whatap.server.port=6600 # 既定値
 
 import ProdImg from '@site/src/components/ChangeImgName.js';
 
-{/*서비스 화면에서 에이전트 설정하기 start*/}
-
 ## サービス画面でエージェントを設定する{#set-agent-service}
 
 ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />
@@ -80,27 +78,22 @@ import Desc from '../common-items/_import_set-agent-desc-okind.mdx';
 
 <Desc name='whatap.conf'/>
 
-{/*Notes*/}
 import Setagentinservicedescnotes from "../common-items/_set-agent-in-service-desc-notes.mdx";
 
 <Setagentinservicedescnotes />
 
-{/*옵션추가하기*/}
 import Setagentinserviceaddoptions from "../common-items/_set-agent-in-service-add-options.mdx";
 
 <Setagentinserviceaddoptions />
 
-{/*옵션 수정 또는 삭제 */}
 import Setagentinservicemodifyoptions from "../common-items/_set-agent-in-service-modify-options.mdx";
 
 <Setagentinservicemodifyoptions />
 
-{/* 여러에이전트 동시 적용 */}
 import Setagentinservicemuliagent from "../common-items/_set-agent-in-service-muli-agent.mdx";
 
 <Setagentinservicemuliagent />
 
-{/* 에이전트 기본값 적용 */}
 import Setagentinserviceapplydafaultdesc from "../common-items/_set-agent-in-service-apply-dafault-desc.mdx";
 
 <Setagentinserviceapplydafaultdesc />
@@ -109,17 +102,13 @@ import DefaultItems from '../common-items/_import_set-agent-in-service-default-i
 
 <DefaultItems name='whatap.conf'/>
 
-{/*Notes*/}
 import Setagentinservicedefaultnotes from "../common-items/_set-agent-in-service-default-notes.mdx";
 
 <Setagentinservicedefaultnotes />
 
-{/*설정 공유하기*/}
 import Setagentsharing from "../common-items/_set-agent-sharing.mdx";
 
 <Setagentsharing />
-
-{/*서비스 화면에서 에이전트 설정하기 end*/}
 
 ## エージェント設定オプションの案内
 

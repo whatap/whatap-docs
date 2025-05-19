@@ -26,7 +26,6 @@ import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
 
 <Steps>
 
-{/* ## 구성도 확인 */}
 import CheckType from "../common-items/_db-install-agent-check-type.mdx";
 
 <CheckType />
@@ -45,32 +44,26 @@ Each agent must use an account with a different name.
 
 :::
 
-{/* 액세스 키 확인 */}
 import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 <Accesskeyv2 />
 
-{/* DBX 에이전트 다운로드 */}
 import DownloadDBXagent from "../common-items/_db-download-dbx-agent.mdx";
 
 <DownloadDBXagent />
 
-{/* ## DBX 에이전트 설정 */}
 import SettingsDBXagent from "../common-items/_db-settings-dbx-agent.mdx";
 
 <SettingsDBXagent />
 
-{/* ### whatap.conf 설정 */}
 import Whatapconf from "../common-items/_db-whatap-conf.mdx";
 
 <Whatapconf />
 
-{/* ### JDBC 다운로드 */}
 import JDBCDownload from "../common-items/_db-download-jdbc-driver.mdx";
 
 <JDBCDownload />
 
-{/* ### DB 유저 파일 생성 */}
 import DBuserDesc from '../common-items/_import_db-create-db-user-desc.mdx';
 
 <DBuserDesc level={3} />
@@ -87,7 +80,7 @@ The XCUB agent runs a separate process on the database server to collect SQL tex
 
 ### Configuring the whatap.conf file
 
-Set the agent options in the *whatap.conf* file as follows:
+Set the agent options in the _whatap.conf_ file as follows:
 
 ```ini title="whatap.conf"
 xcub=1
@@ -149,19 +142,16 @@ To run the XCUB agent in the background, run the _./startd.sh_ file.
 
 :::
 
-{/*모니터링 시작하기*/}
 import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 <Dbrunagent />
 
-{/*XOS 에이전트 설치*/}
 import Dbinstallxosagent from "../common-items/_db-install-xos-agent.mdx";
 
 <Dbinstallxosagent />
 
 </Steps>
 
-{/* ## 다음 단계 */}
 import NextStep from "../common-items/_db-next-step.mdx";
 
 <NextStep />

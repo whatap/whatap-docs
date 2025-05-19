@@ -1,26 +1,20 @@
 ---
 id: log-process
-title: Based on the log timestamp
-description: It describes the reference time of the log timestamp.
+title: Log collection time reference
+description: It provides information on the reference time for log collection.
 keywords:
   - Log Monitoring
   - Log handling
-  - Log time stamp
+  - Log collection time
 ---
 
-{/* >
+This document provides information on the reference time of the log **_collection time_** in the **processing** stage of the log monitoring process.
 
-와탭의 로그 모니터링은 대량의 로그 생성부터 수집, 저장, 처리 및 폐기까지 로그 생명 주기 전 과정을 통합 모니터링합니다.
+## Reference time for collection time
 
-*/}
+<ImgLang img="log-timestamp.png" desc="로그 수집 시간 기준 시간 변경" />
 
-This document provides information on the reference time of the log **_time stamp_** in the **processing** stage of the log monitoring process.
-
-## Timestamp reference time
-
-<ImgLang img="log-timestamp.png" desc="Change of the log timestamp's reference time" />
-
-The reference time of the log **_time stamp_** has been changed from **WhaTap agent's collection time** to **WhaTap collection server's log handling time**.
+The reference time of the log **_collection time_** has been changed from **WhaTap agent's collection time** to **WhaTap collection server's log handling time**.
 
 Under normal circumstances, you can search logs the same as before without much difference. After the change, the log monitoring can be used consistently without modification even in the following cases:
 
@@ -30,7 +24,7 @@ Under normal circumstances, you can search logs the same as before without much 
 
 ### Setting the search range of the time selector
 
-By a change of the timestamp's reference time, the time selector also operates based on the **WhaTap collection server time**. As a result, there may be a difference between **agent collection time** and **WhaTap collection server time**, resulting in the logs that are not included in the search range. In this case, searching is possible by specifying the search range wider.
+By a change of the collection time's reference time, the time selector also operates based on the **WhaTap collection server time**. As a result, there may be a difference between **agent collection time** and **WhaTap collection server time**, resulting in the logs that are not included in the search range. In this case, searching is possible by specifying the search range wider.
 
 ### Log Trend
 
@@ -51,11 +45,6 @@ The `agenttime` index has been added that indicates the log creation time in the
 ## Reference time for each step
 
 Logs are collected through the following 3 steps: Different reference times may be used for each step. 
-
-{/* > 
-모니터링 대상에서 로그 발생 -> 에이전트 수집 -> 와탭 수집 서버 수집
-이미지 만들기_
-*/}
 
 1. **Log creation time**
 
@@ -88,9 +77,3 @@ Logs are collected through the following 3 steps: Different reference times may 
    Regardless of what you monitor or how you generate logs, we use the time stored on the collection server. 
 
 There is a big difference between **WhaTap agent collection time** and **WhaTap collection server time**. Check the server time of the monitoring target. If the monitored server time is set to a time earlier or later than the server time, this affects the agent collection time.
-
-{/* 
-
-로그 모니터링 과정은 **수집**, **처리**, **저장**, **조회** 단계로 구성됩니다. 
-
-*/}

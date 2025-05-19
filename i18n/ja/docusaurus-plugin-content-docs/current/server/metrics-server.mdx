@@ -8,25 +8,9 @@ keywords:
   - メトリクス
 ---
 
-{/* 
-
-import Metricsindex from "../common-items/_metrics-index.mdx";
-
-<Metricsindex />
-
-*/}
-
 サーバーモニタリングメトリクスについて次のように案内します。
 
-{/* 
-
-import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
-
-*/}
-
 <div className="metricslist">
-
-{/* <AgentStatus /> */}
 
 ## Category V1
 
@@ -36,16 +20,16 @@ import AgentStatus from "../common-items/_agent-status-summary-metrics.mdx";
 
 #### Fields {#agent_status_summary_filed}
 
-| フィールド名        |    単位   | 説明                        | 備考               |
-| ------------- | :-----: | ------------------------- | ---------------- |
-| `inActTime`   | ミリ秒(ms) | エージェントが無効になったままの時間        | -                |
-| `isActive`    |    -    | 現在のエージェントの活性化状態           | `true` / `false` |
-| `isRebooted`  |    -    | サーバーの再起動可否                | `true` / `false` |
-| `lastActTime` | ミリ秒(ms) | 最後にエージェントが活性化された状態の時刻     | `0`: 無効化された場合    |
-| `oid`         |    -    | プロジェクトに含まれる各エージェントの固有の識別子 | -                |
-| `startTime`   | ミリ秒(ms) | エージェントが開始された時点でのタイムスタンプ   | -                |
-| `status`      |    -    | 現在のエージェントの状態              | -                |
-| `uptime`      |  秒(sec) | サーバーが稼働している時間             | -                |
+| Field        | Type | Unit       | Description                                         |
+| ------------ | ---- | ---------- | --------------------------------------------------- |
+| inActTime    | -    | ミリ秒(ms)    | エージェントが無効になったままの時間                                  |
+| isActive     | -    | -          | 現在のエージェントの活性状態有無(`true` / `false`)                  |
+| isRebooted   | -    | -          | サーバーが最近再起動したかどうか(`true` / `false`)                  |
+| lastActTime  | -    | ミリ秒(ms)    | 最後にエージェントが活性化された状態の時刻 (`0`: 非活性化された場合)              |
+| oid          | -    | -          | プロジェクトに含まれる各エージェントの固有の識別子                           |
+| startTime    | -    | ミリ秒(ms)    | エージェントが開始された時点でのタイムスタンプ                             |
+| status       | -    | -          | 現在のエージェントの状態                                        |
+| uptime       | -    | 秒(sec)     | サーバーが稼働している時間                                       |
 
 :::note
 

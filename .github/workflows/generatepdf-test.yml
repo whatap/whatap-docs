@@ -49,9 +49,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v2.13.2 # 생성할 Release의 태그 이름
-        release_name: "v2.13.2_KO"
-        body: "WhaTap Docs v2.13.2 기준으로 생성된 PDF 파일입니다."
+        tag_name: v2.14.0 # 생성할 Release의 태그 이름
+        release_name: "v2.14.0_KO"
+        body: "WhaTap Docs v2.14.0 기준으로 생성된 PDF 파일입니다."
         draft: false
         prerelease: false
     

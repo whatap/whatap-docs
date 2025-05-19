@@ -1,0 +1,26 @@
+---
+id: java-2_2_57
+title: Java Agent v2.2.57
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_56
+displayed_sidebar: releaseSidebar
+---
+
+2025年04月16日
+
+- <Status priority='1'>Feature</Status> JVMプロセス起動時、JVM設定をアプリケーションログに表示
+
+- <Status priority='1'>Changed</Status> Tomcatのjava.securityの問題でValve追跡地点の選択有無を設定を通じて分かるように修正
+
+  ```bash
+  # default: false
+  hook_valve_http_enabled=true
+  ```
+
+  - spring-bootでspring-security exception, error status codeデータを収集するには、設定の追加後に再起動が必要
+
+- <Status priority='0'>Fixed</Status> spring async-annotation追跡時、レコード要約に表示するParent txidが切削される現象を防止
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.57" />

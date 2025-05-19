@@ -21,7 +21,6 @@ The WhaTap Kubernetes node agent collects and monitors performance metrics of th
 
   The `dcgm-exporter` container collects GPU status and performance metrics via NVIDIA's Data Center GPU Manager (DCGM). 
 
-
 - **Metric collection and transmission** 
 
   The `whatap-node-agent` container requests and collects GPU metrics via the HTTP endpoint of `dcgm-exporter`. 
@@ -36,47 +35,30 @@ The WhaTap Kubernetes node agent collects and monitors performance metrics of th
 
 The following lists the key GPU metrics collected by the DCGM Exporter: 
 
-
-
 - **DCGM_FI_DEV_GPU_UTIL** <span class='type'>Gauge</span> 
 
   - This metric represents the GPU utilization, displaying the current GPU usage as a percentage. 
-
-
 
 - **DCGM_FI_DEV_MEM_COPY_UTIL** <span class='type'>Gauge</span>
 
   - This metric represents the memory usage, providing GPU memory bandwidth usage as a percentage. 
 
-
-
 - **DCGM_FI_DEV_POWER_USAGE** <span class='type'>Gauge</span>
 
   - This metric represents the current power consumption of the GPU in Watts (W). 
-
 
 - **DCGM_FI_DEV_TOTAL_ENERGY_CONSUMPTION** <span class='type'>Counter</span>
 
   - It measures the total accumulated GPU energy consumption in millijoules (mJ) since the system boot. 
 
-
-
-
-
 - **DCGM_FI_DEV_FB_FREE and DCGM_FI_DEV_FB_USED** <span class='type'>Gauge</span>
 
   - It displays the amount of available frame buffer memory and the amount of frame buffer memory in use, in MiB. 
-
-
 
 - **DCGM_FI_DEV_SM_CLOCK and DCGM_FI_DEV_MEM_CLOCK** <span class='type'>Gauge</span>
 
   - It displays the streaming multiprocessor (SM) clock frequency and memory clock frequency of each GPU in MHz. 
 
-
-
 - **DCGM_FI_DEV_GPU_TEMP and DCGM_FI_DEV_MEMORY_TEMP** <span class='type'>Gauge</span>
 
-  - It measures the temperatures of each GPU and memory temperatures in degrees Celsius (C). 
-
-
+  - It measures the temperatures of each GPU and memory temperatures in degrees Celsius (C).

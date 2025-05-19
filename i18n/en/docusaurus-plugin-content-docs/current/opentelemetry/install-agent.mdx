@@ -93,7 +93,7 @@ To configure the agent, the WhaTap project's access key and collection server IP
 
 ### Configuring the whatap.conf file
 
-Set the access key and collection server IP address in the agent configuration (*whatap.conf*) file.
+Set the access key and collection server IP address in the agent configuration (_whatap.conf_) file.
 
 ```bash
 echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
@@ -112,9 +112,134 @@ WHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}
 
 :::note
 
-If both environment variables and the *whatap.conf* file have been configured, the settings in the *whatap.conf* file take precedence.
+If both environment variables and the _whatap.conf_ file have been configured, the settings in the _whatap.conf_ file take precedence.
 
 :::
+
+## Docker installation
+
+If you have the Opentelemetry Collector installed, you can run whatap-otel with a Docker container to receive data from the collector to the GRPC 6600 port. 
+
+```Docker
+docker pull whatap/whatap-otel
+```
+
+```yaml title="docker-compose.yaml"
+version: '3.7'
+
+services:
+  whatap_otel:
+    image: whatap/whatap-otel:latest
+
+    environment:
+      WHATAP_ACCESSKEY: x605111111111-z11111111-x1111111111m
+      WHATAP_SERVER_HOST: 1.1.1.1/2.2.2.2
+      WHATAP_OTEL_GRPC_SERVER_PORT: 6600
+      otel_metric_server_enabled: true
+      otel_log_server_enabled: true
+      log_stdout_enabled: true
+      #debug_otel_grpc_server_enabled: true
+    
+    ports:
+      - 6600:6600
+```
+
+## Kubernetes installation
+
+The following is a deployment example that creates the OpenTelemetry Collector and whatap-otel together in a single Pod.
+
+```yaml title="otelcol-whatap-deploy.yaml"
+metadata:
+  name: otel-collector-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: otel-collector
+  template:
+    metadata:
+      name: otel-collector-pod
+      labels:
+        app: otel-collector
+    spec:
+      containers:
+        - name: otel-collector
+          image: otel/opentelemetry-collector-contrib:0.106.0
+          ports:
+            - containerPort: 4317 # OTLP gRPC
+            - containerPort: 4318 # OTLP HTTP
+          volumeMounts:
+            - name: config-volume-otelcol
+              mountPath: /etc/otel/config.yaml
+              subPath: otel-collector-config.yaml
+          args: ["--config", "/etc/otel/config.yaml"]
+        - name: whatap-otel-agent
+          image: whatap/whatap-otel:latest
+          ports:
+          - containerPort: 6600
+          env:
+          - name: "WHATAP_ACCESSKEY"
+            value: "x605111111111-z11111111-x1111111111m"
+          - name: "WHATAP_SERVER_HOST"
+            value: "1.1.1.1/2.2.2.2"
+          - name: "otel_metric_server_enabled"
+            value: "true"
+          - name: "otel_log_server_enabled"
+            value: "true"
+          - name: "log_stdout_enabled"
+            value: "true"
+          - name: NODE_IP
+            valueFrom: {fieldRef: {fieldPath: status.hostIP}}
+          - name: NODE_NAME
+            valueFrom: {fieldRef: {fieldPath: spec.nodeName}}
+          - name: POD_NAME
+            valueFrom: {fieldRef: {fieldPath: metadata.name}}
+          - name: whatap.micro.enabled
+            value: "true"
+      volumes:
+        - name: config-volume-otelcol
+          configMap:
+            name: otelcol-config
+```
+
+```yaml title="otelcol-whatap-deploy.yaml"
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: otelcol-config
+data:
+  otel-collector-config.yaml: |
+    receivers:
+      otlp:
+        protocols:
+          grpc:
+            endpoint: 0.0.0.0:4317
+          http:
+            endpoint: 0.0.0.0:4318
+    exporters:
+      otlp:
+        endpoint: "127.0.0.1:6600"
+        tls:
+          insecure: true
+      logging:
+        loglevel: debug
+    processors:
+      batch:
+    service:
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [otlp, logging]
+        metrics:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [otlp, logging]
+        logs:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [otlp, logging]
+```
 
 ## Configuring the Opentelemetry Collector
 

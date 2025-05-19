@@ -46,6 +46,20 @@ OpenTelemetryから様々な指標を収集し、処理するようにエージ�
 
   OpenTelemetry Traceデータ処理に関するデバッグログの出力を活性化します。
 
+### エージェントログ
+
+- **log_keep_days Day** <span class='type'>Int</span>
+
+  既定値`7`
+
+  ログファイルの保存期間を設定します。
+
+- **log_stdout_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  ファイルログと同じようにStdoutで出力するオプションを追加します。
+
 ## Trace
 
 OpenTelemetry Traceデータ処理に関するエージェント設定オプションです。 WhaTapは、OpenTelemetry Traceの構成要素である**Span**の`attributes`オブジェクトから値を取得し、モニタリング情報として活用します。
@@ -200,6 +214,105 @@ otel_attr_tx_useragent_keys=http.user_agent
   既定値`error.type`
 
   トランザクションのエラー情報として活用する属性名を入力します。
+
+- **otel_events_exception_keys** <span class='type'>String</span>
+
+  既定値`exception.type`
+
+  Eventデータの属性(Attribute)名を指定して、エラータイプの情報として活用します。
+
+- **otel_events_error_message_keys** <span class='type'>String</span>
+
+  既定値`exception.message`
+
+  Eventデータの属性(Attribute)名を指定して、エラーメッセージの情報として活用します。
+
+- **otel_events_error_stack_keys** <span class='type'>String</span>
+
+  既定値`exception.stacktrace`
+
+  Eventデータの属性(Attribute)名を指定して、エラースタックの情報として活用します。
+
+- **otel_tx_path_setby_name_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  トランザクション名をSpanの名前で指定します。
+
+- **otel_mtrace_stepid_setby_trace_spanid_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  Trace SpanのSpanIDを外部接続のParentSpanIDとして認識するように設定します。 HTTP call span情報がないときに強制的に設定します。
+
+- **otel_virtual_httpc_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  分散追跡のためにHTTP call span情報がないときに強制的に設定します。 HTTP callアドレスは、自分のトランザクション名(URL)に`otel_virtual_httpc_name`をつけて設定します。
+
+- **otel_virtual_httpc_name** <span class='type'>String</span>
+
+  既定値`external http call`
+
+  HTTP call span情報がないときに強制的に設定する名前を指定します。 
+
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  status codeが 400 以上の場合、エラーとして表記するように設定します。
+
+- **tx_status_meter_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  全体URLのStatus Codeごとに件数を10秒間隔で収集します。
+
+- **stat_txstatus_enabled** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  URL別のStatus Codeの件数を5分間隔で収集します。
+
+## Gateway
+
+OpenTelemetry Gatewayデータ処理に関するエージェント設定オプションです。
+
+- **otel_gateway_enabled** <span class='type'>Boolean</span>
+
+  既定値`false`
+
+  ゲートウェイ統計情報の収集可否を設定します。  
+
+  - 全URLのトランザクション、ゲートウェイ、API呼び出しそれぞれの経過時間10秒間隔で収集します。  
+  - URL、status毎にトランザクション、ゲートウェイ、APIの呼び出しそれぞれの経過時間を5分間隔で収集します。
+
+- **otel_attr_tx_gw_time_keys** <span class='type'>String</span>
+
+  既定値`duration.kong`
+
+  ゲートウェイ経過時間を持つ属性(attribute)名(key)を指定します。
+
+- **otel_attr_tx_api_time_key** <span class='type'>String</span>
+
+  既定値`duration.proxy`
+
+  指定された属性(attribute)の値でAPIの呼び出し経過時間を設定します。 API呼び出し経過時間を持つ属性(attribute)名(key)を指定します。
+
+- **otel_replace_tx_resp_time_enabled** <span class='type'>Boolean</span>
+
+  既定値`duration.proxy`
+
+  トランザクションは、開始時間と終了時間で応答時間を計算します。 指定した属性のキー値でトランザクションの応答時間を変更する機能を活性化します。
+
+  - 応答時間を特定属性(attribute)のキー値は`otel_attr_replace_tx_resp_time_keys`に設定します。
+
+- **otel_attr_replace_tx_resp_time_keys** <span class='type'>String</span>
+
+  既定値`duration.kong`
+
+  応答時間に設定する属性のキー名を指定します。
 
 ## Metric
 

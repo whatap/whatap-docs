@@ -46,6 +46,20 @@ You can configure the agent to collect and process various metrics from OpenTele
 
   It enables the output of debugging logs for processing the OpenTelemetry Trace data.
 
+### Agent Log
+
+- **log_keep_days Day** <span class='type'>Int</span>
+
+  Default `7`
+
+  Set the retention period of log files.
+
+- **log_stdout_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Add the option to output to Stdout as the same as the file log.
+
 ## Trace
 
 Agent setting option for processing the OpenTelemetry Trace data. WhaTap gets values from the `attributes` object of **Span**, an OpenTelemetry Trace element, and uses them as monitoring information.
@@ -200,6 +214,105 @@ otel_attr_tx_useragent_keys=http.user_agent
   Default `error.type`
 
   Enter the attribute name to use as the error information for transactions.
+
+- **otel_events_exception_keys** <span class='type'>String</span>
+
+  Default `exception.type`
+
+  Specify the attribute name of the event data to use as the error type.
+
+- **otel_events_error_message_keys** <span class='type'>String</span>
+
+  Default `exception.message`
+
+  Specify the attribute name of the event data to use as the error message.
+
+- **otel_events_error_stack_keys** <span class='type'>String</span>
+
+  Default `exception.stacktrace`
+
+  Specify the attribute name of the event data to use as the error stack.
+
+- **otel_tx_path_setby_name_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Specify the transaction name as the span name.
+
+- **otel_mtrace_stepid_setby_trace_spanid_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Set the SpanID of the trace span to be recognized as ParentSpanID for external connection. Forcibly set it when there is no HTTP call span.
+
+- **otel_virtual_httpc_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  For distributed tracing, forcibly set it when there is no HTTP call span. Set the HTTP call address by adding `otel_virtual_httpc_name` to the transaction name (URL).
+
+- **otel_virtual_httpc_name** <span class='type'>String</span>
+
+  Default: `external http call`
+
+  Forcibly specify the name when there is no HTTP call span. 
+
+- **transaction_status_error_enable** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Set to display as an error if the status code is 400 or higher.
+
+- **tx_status_meter_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  It collects the number of cases for each status code of the entire URL every 10 seconds.
+
+- **stat_txstatus_enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  The number of status codes is collected every 5 minutes for each URL.
+
+## Gateway
+
+Agent setting option for processing the OpenTelemetry Metric data.
+
+- **otel_gateway_enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  It sets whether or not to collect the query statistics data.  
+
+  - It collects the elapsed time for each transaction, gateway, and API call for the entire URL every 10 seconds.  
+  - It collects the elapsed time for each transaction, gateway, and API call for each URL and status every 5 minutes.
+
+- **otel_attr_tx_gw_time_keys** <span class='type'>String</span>
+
+  Default `duration.kong`
+
+  Specify the attribute name (key) that has the gateway's elapsed time.
+
+- **otel_attr_tx_api_time_key** <span class='type'>String</span>
+
+  Default `duration.proxy`
+
+  Set the elapsed time of the API call with the value of a specified attribute. Specify the attribute name (key) that has the API call's elapsed time.
+
+- **otel_replace_tx_resp_time_enabled** <span class='type'>Boolean</span>
+
+  Default `duration.proxy`
+
+  For transactions, the response time is calculated based on the start time and end time. The feature to change the response time for transactions is enabled with the key value of the specified attribute.
+
+  - For the response time, set the key value of a specific attribute to `otel_attr_replace_tx_resp_time_keys`.
+
+- **otel_attr_replace_tx_resp_time_keys** <span class='type'>String</span>
+
+  Default `duration.kong`
+
+  Specify the key name of the attribute to be set as the response time.
 
 ## Metric
 

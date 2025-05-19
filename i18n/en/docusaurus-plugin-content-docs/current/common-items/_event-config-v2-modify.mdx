@@ -56,6 +56,21 @@ You can set the criteria for event occurrence conditions.
 
   :::
 
+- **_Event action time_**: If you set an event action time tag, notifications with the tag trigger events during the time zone.\
+  By clicking **_+ Add_**, you can see the list of tags in **_Event action time_** and create a new tag. 
+
+  - To create a tag, click **_+ Create new tag_** in **_Event action time_**, select the tag name, day of the week, time, and color, and then click the Apply button.
+
+  - To edit or delete tags, click ![Edit icon](/img/ico-edit.svg) in the tag list.
+
+  <ImgLang img="event-operation-time.png" desc="Resolved notification" />
+
+    :::warning
+
+    The tags that are in use in the event settings cannot be deleted.
+
+    :::
+
 :::tip
 
 The criteria for sending notifications differ depending on the following conditions:
@@ -167,7 +182,7 @@ You can write a title and message for the event received as a notification, and 
 
   You can write a message by entering the <code>&#36;&#123;Tag&#125;</code> or <code>&#36;&#123;Field&#125;</code> variable in the message field.
 
-  In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />, select <Cmdname sid="category" className="uitext" /> and then check the <code>&#36;&#123;Tag&#125;</code> or <code>&#36;&#123;Field&#125;</code> variable that can be entered. For the <Cmdname sid="category" className="uitext" /> name of the current event template, see the <b>Category</b> in <Link to="#basic-template">the following</Link>
+  In <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />, select <Cmdname sid="category" className="uitext" /> and then check the <code>&amp;#36;&amp;#123;Tag&amp;#125;</code> or <code>&amp;#36;&amp;#123;Field&amp;#125;</code> variable that can be entered. For the <Cmdname sid="category" className="uitext" /> name of the current event template, see the <b>Category</b> in <Link to="#basic-template">the following</Link>
 
   :::
 

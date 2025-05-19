@@ -1,0 +1,26 @@
+---
+id: java-2_2_57
+title: Java Agent v2.2.57
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_56
+displayed_sidebar: releaseSidebar
+---
+
+April 16, 2025
+
+- <Status priority='1'>Feature</Status> When the JVM process starts, the JVM settings are displayed in the application log.
+
+- <Status priority='1'>Changed</Status> Modified to detect whether the Valve tracing point has been selected through the setting due to Tomcat's java.security issue.
+
+  ```bash
+  # default: false
+  hook_valve_http_enabled=true
+  ```
+
+  - To collect the spring-security exception and error status code in the spring-boot, add settings and then start the system again.
+
+- <Status priority='0'>Fixed</Status> Prevented the parent txid from being truncated when tracing the spring async-annotation in the record summary.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.57" />

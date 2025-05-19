@@ -1,5 +1,19 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/server-hpux/server-hpux-1_4_0",
+    "ver": "v1.4.0",
+    "date": "2025-02-05",
+    "Lists": [
+      {
+        "ver": "v1.4.0",
+        "hash": "v140",
+        "product": "Server HP-UX Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <span class=\"uitext\">サーバーインベントリマップ</span>メニューのデータ収集オプションを追加</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/server-hpux/server-hpux-1_3_7",
     "ver": "v1.3.7",
     "date": "2024-12-13",

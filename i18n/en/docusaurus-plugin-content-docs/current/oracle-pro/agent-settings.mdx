@@ -40,55 +40,13 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
 ### Database data collection options
 
-- **xos** <span class='type'>Boolean</span>
-
-  Default `true`
-
-  This option enables the XOS agent (*xos.conf*) to additionally monitor the resources of the database server.
-
-- **interval** <span class='type'>Int</span>
+- **bind_elapse** <span class='type'>Int</span>
 
   Default `3`
 
-  It sets the data collection cycle in seconds.
+  It sets to collect bind values ​​if SQL runs longer than the specified time (seconds). If the setting is `0`, this option does not work.
 
-  :::note
-
-  Oracle Pro collects active sessions and SQL data at an interval of 1/20 second through memory access. Because the stats are generated based on the data collected in this manner, data loss is minimized. When transmitting the current DB status according to the `interval` option, the stat, event, SQL stat, xview, lock, and PQ are read directly from memory for quick processing. On the other hand, the binds, DB parameters, plans, tables, table spaces, and wait classes are collected through queries.
-
-  :::
-
-- **conn_fail_count** <span class='type'>Int</span>
-
-  Default `15`
-
-  It sends a notification when 15 consecutive connection errors occur. You can adjust the notification occurrence criteria by entering the desired number.
-
-- **stat** <span class='type'>String</span>
-
-  It enables collecting statistics-related metrics. Write the name of the metric to collect by referencing the `NAME` column such as `v$sysstat`, and `v$statname`. You can collect additional metrics along with the basic metrics by writing them in a way like `stat+=`. You can enter multiple items using the comma (,) as the delimiter without spaces.
-
-- **event** <span class='type'>String</span>
-
-  It enables collecting event-related metrics. Write the name of the metric to collect by referencing the `EVENT` column such as `v$system_event`, and `v$event_name`. You can collect additional metrics along with the basic metrics by writing them in a way like `event+=`. You can enter multiple items using the comma (,) as the delimiter without spaces.
-
-- **topstat** <span class='type'>Int</span>
-
-  Default `50`
-
-  It collects changes in key statistics-related metrics according to the values set in descending order. The data having the `stat_top` and `event_top` categories are used.
-
-- **topevent** <span class='type'>Int</span>
-
-  Default `50`
-
-  It collects changes in key event-related metrics according to the values set in descending order. The data having the `stat_top` and `event_top` categories are used.
-
-  :::note
-
-  If no value is set for this option, it operates according to the setting for `topstat`.
-
-  :::
+  Even if the `bind_interval` is not set, the bind values are collected when the SQL execution time is greater than the set value. 
 
 - **bind_interval** <span class='type'>Int</span>
 
@@ -96,32 +54,64 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   It sets the bind capture interval in seconds. Setting the default value (`0`) disables the bind capture.
 
+  Collection is made at the interval set in `v$sql_bind_capture`. 
+
+  Because there can be a lot of data, collection is performed by `bind_max_count` since the last collection time.
+
 - **bind_max_count** <span class='type'>Int</span>
 
   Default `1000`
 
   It sets how many bind capture values ​​to collect. Only the bind capture values after the last collection time can be collected.
 
-- **bind_elapse** <span class='type'>Int</span>
+- **codefrom / codeto** <span class='type'>Int</span>
 
-  Default `5`
+  Default `15`
 
-  It sets to collect bind values ​​if SQL runs longer than the specified time (seconds). If the setting is `0`, this option does not work.
+  This option changes the character encoding when there is a problem with Korean characters broken in the SQL text. The value can be selected from the list in iconv -l.
 
-- **plan_change** <span class='type'>Int</span>
+- **conn_fail_count** <span class='type'>Int</span>
 
-  Default `1`
+  It sends a notification when 15 consecutive connection errors occur. You can adjust the notification occurrence criteria by entering the desired number.
 
-  It sets whether to collect the change history for the plan.
+  e.g. codefrom=EUC-KR, codeto=UTF-8
 
-  - `1`: Excludes sys
-  - `2`: Includes sys
+- **event** <span class='type'>String</span>
 
-- **plan_elapse** <span class='type'>Int</span>
+  Default:
 
-  Default `5`
+  <details>
 
-  It collects the plans that take more than 5 seconds to run.
+  <summary>Viewing all 8 events</summary>
+
+    `db file scattered read`, `db file sequential read`, `direct path read`, `direct path write`,
+    `enq: TX - row lock contention`, `latch free`, `library cache lock`, `library cache pin`
+
+  </details>
+
+  In the RAC environment, two additional metrics are collected by default: gc cr block receive time and gc current block receive time. 
+
+  It enables collecting event-related metrics. Write the name of the metric to collect by referencing the `EVENT` column such as `v$system_event`, and `v$event_name`. You can collect additional metrics along with the basic metrics by writing them in a way like `event+=`. You can enter multiple items using the comma (,) as the delimiter without spaces.
+
+  For each event, the following three values are collected.
+
+  - time waited: Total time (1/100 seconds) waited for the event e.g. db file sequential read time waited
+
+  - timeouts: Number of waits that ended in timeout e.g. db file sequential read total timeouts
+
+  - total waits: Total number of the events occurred e.g. db file sequential read total waits
+
+- **interval** <span class='type'>Int</span>
+
+  Default `3` 
+
+  It sets the data collection cycle in seconds.  
+
+  :::note
+
+  Oracle Pro collects active sessions and SQL data at an interval of 1/20 second through memory access. Because the stats are generated based on the data collected in this manner, data loss is minimized. When transmitting the current DB status according to the `interval` option, the stat, event, SQL stat, xview, lock, and PQ are read directly from memory for quick processing. On the other hand, the binds, DB parameters, plans, tables, table spaces, and wait classes are collected through queries.
+
+  :::
 
 - **multi_db_stat** <span class='type'>Boolean</span>
 
@@ -135,23 +125,26 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   It sets whether to collect hidden parameter values. Set the option value to `true` to collect hidden parameters.
 
+- **plan_change** <span class='type'>Int</span>
+
+  Default `1`
+
+  It sets whether to collect the change history for the plan.  
+
+  - `1`: Excludes sys  
+  - `2`: Includes sys
+
+- **plan_elapse** <span class='type'>Int</span>
+
+  Default `3`
+
+  It collects the plans that take more than 5 seconds to run.
+
 - **segments** <span class='type'>Boolean</span>
 
   Default `true`
 
-  It collects the segment size information. In <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />, you can see the size by selecting the database or tablespace.
-
-- **segments_hour** <span class='type'>Int</span>
-
-  Default `5`
-
-  It sets the time to collect segment sizes. The default value is `5` and collection starts at 5 AM.
-
-- **segments_min_size** <span class='type'>Int</span>
-
-  Default `10`
-
-  The minimum unit for collecting segment sizes is 10 MB by default. When collecting the segment sizes, the segment sizes less than the set value are not collected.
+  It collects the segment size information. You can check the size by selecting the database or tablespace in the Statistics/Report > Tablespace size menu.
 
 - **segments_exclude_sys** <span class='type'>Int</span>
 
@@ -159,11 +152,11 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   The sizes are collected except for accounts corresponding to sys.
 
-- **segments_sys** <span class='type'>String</span>
+- **segments_hour** <span class='type'>Int</span>
 
-  Default 'SYS', 'OUTLN', 'SYSTEM', 'AUDSYS', 'DBSNMP', 'GSMADMIN_INTERNAL', 'XDB', 'WMSYS', 'OJVMSYS', 'CTXSYS', 'ORDSYS', 'ORDDATA', 'MDSYS', 'LBACSYS', 'DVSYS', 'DBSFWUSER', 'APPQOSSYS', 'OLAPSYS'
+  Default `5`
 
-  It is the list of accounts corresponding to sys. To add to the above accounts, you can add with `segments_sys+='xxx'`.
+  It sets the time to collect segment sizes. The default value is `5` and collection starts at 5 AM.
 
 - **segments_max_count** <span class='type'>Int</span>
 
@@ -171,13 +164,77 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   Only 50 large segments are collected and stored for each tablespace.
 
+- **segments_min_size** <span class='type'>Int</span>
+
+  Default `10`
+
+  The minimum unit for collecting segment sizes is 10 MB by default. Segments less than the set value are not collected.
+
+- **segments_sys** <span class='type'>String</span>
+
+  Default:
+
+  <details>
+
+  <summary>Viewing all 18 accounts</summary>
+
+    `APPQOSSYS`, `AUDSYS`, `CTXSYS`, `DBSFWUSER`, `DBSNMP`, `DVSYS`,\
+    `GSMADMIN_INTERNAL`, `LBACSYS`, `MDSYS`, `OJVMSYS`, `OLAPSYS`,\
+    `ORDDATA`, `ORDSYS`, `OUTLN`, `SYS`, `SYSTEM`, `WMSYS`, `XDB`
+
+  </details>
+
+  It is the list of accounts corresponding to sys. To add to the above accounts, you can add with `segments_sys+='xxx'`.
+
+- **stat** <span class='type'>String</span>
+
+  Default:
+
+  <details>
+
+  <summary>Viewing all 20 metrics</summary>
+
+    `CPU used by this session`, `data blocks consistent reads - undo records applied`, `db block changes`,\
+    `db time`, `enqueue waits`, `execute count`, `logons current`, `opened cursors current`,\
+    `parse count (hard)`, `parse count (total)`, `physical reads`, `physical writes`, `redo entries`,\
+    `rollback changes - undo records applied`, `session logical reads`, `sorts (disk)`, `sorts (memory)`,\
+    `transaction tables consistent reads - undo records applied`, `user commits`, `user rollbacks`
+
+  </details>
+
+  It enables collecting statistics-related metrics. Write the name of the metric to collect by referencing the `NAME` column such as `v$sysstat`, and `v$statname`. You can collect additional metrics along with the basic metrics by writing them in a way like `stat+=`. You can enter multiple items using the comma (,) as the delimiter without spaces.
+
+- **topevent** <span class='type'>Int</span>
+
+  Default `50`
+
+  It collects changes in key event-related metrics according to the values set in descending order. The data having the `stat_top` and `event_top` categories are used. 
+
+  :::note
+
+  If no value is set for this option, it operates according to the setting for `topstat`.
+
+  :::
+
+- **topstat** <span class='type'>Int</span>
+
+  Default `50`
+
+  It collects changes in key statistics-related metrics according to the values set in descending order. The data having the `stat_top` and `event_top` categories are used.
+
+- **xos** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  This option enables the XOS agent (*xos.conf*) to additionally monitor the resources of the database server.
+
 - **xview_min** <span class='type'>Int</span>
 
   Default `100` (1 scond)
 
-  The unit is centisecond (1/100 of a second). This option processes only the jobs whose elapsed time is greater than the set value.
+  The unit is centisecond (1/100 of a second). This option processes only the jobs whose elapsed time is greater than the set value.  
 
-  - `-1`: This option is disabled.
+  - `-1`: This option is disabled.  
   - `0`: It collects all jobs.
 
 ### Applying the AES 256 encryption

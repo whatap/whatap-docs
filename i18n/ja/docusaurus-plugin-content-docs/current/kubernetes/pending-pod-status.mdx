@@ -21,8 +21,6 @@ WhaTap Kubernetesエージェント1.7.0バージョン以降が必要です。
 
 Pending状態のPod状況を照会して各Podの待ち原因を総合的に分析できます。 クラスタ内に多くのPending Podがあるほど、システムの効率と安定性が低下する可能性があります。 Pending状態のPodをモニタリングし、これらの問題を早期に発見して解決することで、クラスタの安定性を維持します。 
 
-{/* Pending 상태의 Pod가 많을 수록 클러스터의 효율성과 안정성이 저하될 수 있습니다. 未解決のPending Podは、クラスタリソースの効率を低下させ、アプリケーションの可用性と影響を及ぼす可能性があります。 クラスタでどのようなPodがなぜスケジュールされていないかを確認できます。  **_グループ化_**を通じて、どのオブジェクトを中心にPending状態が発生しているかを把握できます。 이벤트 메시지==스케줄링 실패 원인? */}
-
 ## Pending Pod一覧
 
 現在Pending状態であるPod一覧を次のように照会できます。 各Pending PodごとにQoS Class、Pod名、タイムスタンプ、イベントメッセージ、ネームスペースおよびそのPodのデプロイ情報を簡単に確認できます。 Pod選択時、Pending Podの詳細を照会できます。 詳細については[次の文書](#pending-pod-detail)を参照してください。 
@@ -41,20 +39,6 @@ Pending状態のPod状況を照会して各Podの待ち原因を総合的に分�
 
 :::
 
-{/* :::note 
-
-**QoS Classの優先順位**
-
-QoS Class(Quality of Service Class)は、Podスケジューリングを決定するのに使われる属性の一つで、Podのリソースリクエストおよび使用に応じて動的に調整できます。 クラスタリソースの効率的な管理およびPod間の公正な分配における重要な属性です。 例えば、優先順位の高いQoS Classが割り当てられたPodがPending状態の場合、迅速な問題分析と原因把握が必要です。 <code class='pay'>Burstable</code>Podの優先順位は、<code class='bef'>BestEffort</code>Podより高くて<code class='grnt'>Guaranteed</code>Podより低いです。 
-
-- <code class='bef'>BestEffort</code>: リソースリクエストや制限のないPodです。
-
-- <code class='pay'>Burstable</code>: 制限されたリソースリクエストがあるPodです。
-
-- <code class='grnt'>Guaranteed</code>: 正確なリソースリクエストがあるPodです。
-
-::: */}
-
 #### フィルター
 
 フィルター機能により、追加の条件別検索が可能です。 上段のフィルター選択画面の他に、一覧の各Pending Pod下段のタグを通じてフィルター機能を活用できます。 タグの選択時、そのオブジェクトに対する一致条件が追加され、条件に合うタグは青色で表示されます。 
@@ -70,8 +54,6 @@ Pending Podの一覧でPodを選択すると、そのPodに関する詳細情報
 #### Suggestions
 
 現在PodがPending状態にある原因と、問題解決のための様々な情報を次のように提供します。 
-
-{/* 이벤트 메시지를 기반으로 현재 Pod가 Pending 상태에 놓인 원인과 문제 해결을 위한 다양한 정보를 다음과 같이 제공합니다.  */}
 
 - **QoS Classの分析**
 

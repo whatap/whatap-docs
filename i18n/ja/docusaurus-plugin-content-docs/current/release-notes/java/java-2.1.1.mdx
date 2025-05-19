@@ -93,49 +93,6 @@ The Best Observability in Java
 
 oshiライブラリを使用して、netstat機能を追加しました。
 
-{/* 
-
-### アップデート
-
-#### エラー通知設定アップデート
-
-トランザクションエラー通知に関する設定を追加し、設定名を修正しました。
-
-```ini title='whatap.conf'
-# 既定値
-# エラー通知機能の活性化有無
-exception_alert_enabled=false
-
-# トランザクションエラー通知の活性化有無
-exception_alert_service_enabled=false
-
-# http呼び出し時のエラー通知の活性化有無
-exception_alert_httpc_enabled=false
-
-# jdbc呼び出し時のエラー通知の活性化有無
-exception_alert_jdbc_enabled=false
-
-# エラー通知メッセージに表示したスタックの長さ
-exception_alert_stack_size=50
-
-# エラー通知メッセージの非活性化時間 = 5分(30000ms)
-exception_alert_silent_time=300000
-
-# トランザクションエラー通知で無視するstatus code
-status_alert_ignore=403
-
-# トランザクションエラー通知で無視するurl:status_codeの組み合わせ
-status_alert_ignore_set=/api/test/timeout:408
-
-# http callエラー通知で無視したstatus code
-httpc_status_alert_ignore=408,500
-
-# http callエラー通知で無視したurl:status codeの組み合わせ
-httpc_status_url_alert_ignore_set=/api/test/timeout:408
-```
-
-*/}
-
 ### バグ
 
 #### エージェントログ出力時のエラーを修正
@@ -189,32 +146,6 @@ Http Callエラー発生時に通知を送る機能を追加
 # 既定値
 httpc_event_detail_enable=false
 ```
-
-{/* 
-
-2022-03-24
-
-### 新機能
-
-#### Http Callエラー通知機能の追加
-
-Http呼び出し時にエラーが発生すると通知を受けられるように機能を追加しました。
-
-`exception_alert_enabled`オプションを`true`に設定することで機能を有効にし、`exception_alert_stack_size`オプションを指定した値に合わせてエラースタックを通知メッセージを受け取ることができます。
-
-通知が発生すると`exception_alert_silent_time`オプションで指定された期間、エラー通知を無効にすることができます。
-
-```ini title='whatap.conf'
-# 既定値
-exception_alert_enabled=false
-exception_alert_buffer_size=5
-exception_alert_stack_size=50
-
-# 5分 (30000ms)
-exception_alert_silent_time=300000
-```
-
-*/}
 
 ## 2022-03-18
 

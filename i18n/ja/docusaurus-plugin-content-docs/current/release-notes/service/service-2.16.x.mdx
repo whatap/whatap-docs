@@ -1,0 +1,315 @@
+---
+id: service-2_16_x
+title: Service 2.16.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_15_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.16.2
+
+2025年04月29日 
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_counter" className="uitext" /> <code className="newfunc">New</code>にエージェント及び指標名の昇順ソートを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_myUsage" className="uitext" /> &gt; <Cmdname sid="billingPreview" className="uitext" />, <Cmdname sid="side_paymentHistory" className="uitext" />, <Cmdname sid="usage" className="uitext" />にKubernetes製品のapplication namespace別の分離課金を追加
+
+---
+
+### `Application`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" /> &gt; <Cmdname sid="AA010" className="uitext" />ウィジェットの詳細画面でシステムGCボタンが修正権限によって活性化されるように変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" />メニューでCSVダウンロード時、時刻形式が正しく表示されるように修正
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" />エージェント名、IP検索インプットを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" />にファイルシステム情報ポップアップを追加
+
+</div>
+
+## Service 2.16.1
+
+2025年04月23日 
+
+<div class='indentTab'>
+
+### `Server`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" />にエージェント検索inputを削除
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" />にエージェント名のカラムが重複表示される問題を修正
+
+</div>
+
+## Service 2.16.0
+
+2025年04月23日 
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status>プロジェクトリストにマウスオーバー時にプロジェクトの説明が表示されるように改善
+
+- <Status priority='1'>Feature</Status>リアルタイム通知の発生時、ブラウザ通知でも確認可能
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" />のTopNウィジェットに水平線オプションを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_eventSetting" className="uitext" />メニューにイベント動作時間機能を追加
+    
+  - **イベント設定V1**
+
+    マトリクス/複合マトリクス/異常値探知/リアルタイム複合ログ/サーバーログ → イベント受信タグ上に追加
+
+    ヒートマップパターン→カードの最下段に追加
+
+  - **イベント設定V2**
+
+    基本/メトリクス → 解消された通知を次の項目に追加
+
+    その他の項目はV1と同じ
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_organizationMembers" className="uitext" />及び<Cmdname sid="invite_member" className="uitext" />で、メンバーのEメールの横にMFA及びSSO使用可否の表示機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="eventNoti" className="uitext" />メニューの3rdパーティープラグインのWebhook JSON応答値のカスタム機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メトリクスイベント設定時にカテゴリー選択、指標設定、イベント対象選択段階でメトリクス検索機能を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_flexboard" className="uitext" />のチャートツールチップでWriteLatency、ReadLatencyデータを小数点5桁まで表示
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_flexboard" className="uitext" />メニューでウィジェット<Cmdname sid="project_selection" className="uitext" />設定時、<Cmdname sid="project_selected_from other widgets" className="uitext" />のツールチップ位置を変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="site_management" className="uitext" /> &gt; <Cmdname sid="side_metricsCategory" className="uitext" /> &gt; <Cmdname sid="side_metricsRebuild" className="uitext" />でリクエストが処理されなかった場合、再リクエストができないように修正
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventNoti" className="uitext" />メニューで通知設定権限のないユーザーが割り当てられたイベント受信タグを表示できるように修正
+
+- <Status priority='0'>Fixed</Status>タイムセレクターで固定された時間が消えたり重複した時間が保存される現象を修正
+
+- <Status priority='0'>Fixed</Status> JSONで<Cmdname sid="side_event" className="uitext" />イベント設定時、重複アラームの登録問題を修正
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06209" className="uitext" />画面でリストがフォーカスされた状態の時にキーボード方向キーでトレースを選択できる機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="AA002" className="uitext" />画面でアクティブトランザクションリストをCSVでダウンロード可能
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="transaction_map" className="uitext" />過去データの照会機能を強化
+
+  - 最大照会可能時間の範囲拡大(10分 → 1時間)
+
+  - フィルター項目追加
+
+      {/* - front.config의 `ui_transaction_map_custom_filter`オプション(値: `true`/`false`)を`true`に設定する時、カスタムフィルター機能を活性化 */}
+
+    <details>
+      <summary>追加されたフィルター項目</summary>
+
+    - **一般フィルター**  
+
+    - **Referer**\
+      ログインID、WClientId、トランザクションID、マルチトランザクションID、カスタムTID、エラー(クラス、ステップ、メッセージのすべてを含む）、都市、国、HTTPメソッド、ユーザーエージェント
+
+    - **トレースステップ関連フィルター**\
+      DBC, SQL, HTTPC, METHOD, MESSAGE
+
+    - **数値フィルター**\
+      経過時間、HTTP呼び出し時間、HTTP呼び出し件数、SQL時間、SQL件数、状態
+
+    </details>
+
+  - フィルターデータで照会された総トランザクション数(Read項目)の表示を追加
+
+  - Read、Limit項目に対する説明ツールチップを追加
+
+  - 過去のデータの照会時に一時停止機能を追加
+
+    - 過去のデータ検索中(読み込み中)、検索ボタンをクリックすると照会が一時停止
+
+    - 同じ検索条件(時間、フィルター)で再度検索すると、停止した時点から続けてデータを照会\
+      (検索条件の変更時にチャートを初期化し、描き直しを開始)
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="tx_search" className="uitext" /> CSVダウンロード方式変更
+
+- <Status priority='0'>Fixed</Status>マルチトランザクション内の他のプロジェクトのトレース情報が含まれている場合、一部の照会エラーを修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="transaction_map" className="uitext" />過去のデータ照会時にロードが断続的に終了しない現象を修正
+
+#### Java
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_agentResourceDashboard" className="uitext" />メニューでGC関連のウィジェット名を修正
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />メニューでサーバーにマウスオーバー時に表示されるポップオーバーにステータス別のイベント数表示を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" /> &gt; **詳細を見る**画面でサーバーにマウスオーバー時にポップオーバーにステータス別のイベント数表示を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverList" className="uitext" />メニューで<Cmdname sid="column_settings" className="uitext" />ボタンをクリックする時にプリセットを管理し、他のユーザーと設定共有が可能
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverInventory" className="uitext" /> GPU Countカラムを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverMetricsExplorer" className="uitext" />に単一サーバーの複数のメトリック情報を1つのチャートで確認できるカテゴリを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="report" className="uitext" />メニューでディスクフィルターテンプレートを選択する時、マウントポイントセレクタUIを追加(例. 日間時間別のサーバー主要指標報告書)
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" />にフィルターとお気に入り機能を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" />にtag検索、tag機能を削除
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_appl" className="uitext" />モニタリング時<Cmdname sid="TTL06209" className="uitext" />画面の<Cmdname sid="TTL06125" className="uitext" />タブでコンテナ及びPod要約分析機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_node" className="uitext" /> &gt; <Cmdname sid="node_list" className="uitext" />カラム左側の拡張ボタンをクリックする時に、ディスク情報を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="container_map" className="uitext" />メニューのコンテナビューの指標選択オプションでKubeConState指標を基本オプションに指定し、指標に対する説明を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" />  &gt; <Cmdname sid="container_map" className="uitext" />メニューのEventConState指標名をWhaTapScoreに変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_report" className="uitext" />メニューで*front.conf*オプションの`ui_report_download_label`設定によってダウンロードファイル名のフォーマットが変更されるように修正
+
+---
+
+### `Database`
+
+#### 共通
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />,  <Cmdname sid="side_multiInstance" className="uitext" />メニューでテーブルのマルチソートする時にソート優先順位表示を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />, <Cmdname sid="side_tableSpace" className="uitext" />メニューでmulti dbではないインスタンスは`string`でDB名を表示
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューでテーブルのマルチソートする時にソート優先順位表示を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="laboratory" className="uitext" /> &gt; ***Top SQL***メニューでテーブルのマルチソートする時にソート優先順位表示を追加
+
+- <Status priority='1'>Feature</Status>画面のチャート画像ダウンロード機能を追加
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_instanceList" className="uitext" /> &gt; ***ユーザー定義ウィジェット***
+
+  - ***分析*** > ***カウント推移の比較***
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューにウィジェット編集、プリセット保存機能を新規追加
+
+- <Status priority='1'>Feature</Status> <UI>Session Table</UI>フィルターにキー値の検索機能及びアルファベット順のソート機能を追加
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />, <Cmdname sid="side_tableSpace" className="uitext" />画面改善
+
+  - タイムセレクター及びインスタンス選択の変更時、データを直ちに照会するように変更及び照会ボタンを除去
+  - XOSエージェント設定時、表示されるディスク使用量テーブルのデータ照会方式を改善
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューに入る時、前の画面で選択されたインスタンスがインスタンス選択者に保持されるように修正
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" />データベースウィジェット追加
+
+  - CloudWatchインスタンス別のCPU使用率(%)
+
+  - CloudWatchインスタンス別の空きメモリ
+
+  - CloudWatchインスタンス別の空きストレージ
+
+#### Oracle、Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbWaitAnalysis" className="uitext" />メニューの指標に単位を確認できるツールチップを追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <UI>RACモニタリング</UI>で選択したクラスターが保存されるように変更
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <UI>RACモニタリング</UI>で通知ウィジェットに表示されたインスタンスに該当する通知だけが表示されるように改善
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dbWaitAnalysis" className="uitext" /> Top 5 テーブル及びLatch、Enqueueチャートのデータ照会テーブルを`db_(platform)event_wait_top` → `db(platform)_event_time_top`に変更
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" />メニューのクエリをクリックすると表示される<Cmdname sid="TTL06224" className="uitext" />画面でRuntime Plan、Plan History、Bind Captureタブの時間がすべて同じに見えるように修正
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbTopSql" className="uitext" />メニューに入る時、前の画面で選択されたインスタンスがインスタンス選択者に維持されるように修正
+
+- <Status priority='0'>Fixed</Status> <UI>SQL Elapse Map</UI>ウィジェットの<Cmdname sid="TTL06224" className="uitext" />画面で基本選択されたplan_hash_valueでPlan Tableが表示されるように修正
+
+#### IBM DB2
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />セッションテーブルにquery_paramカラムを追加
+
+#### MySQL V1
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />でクエリ文をクリックする時、SQL詳細ウィンドウでクエリ文`undefined`が表記されるエラーを修正
+
+#### SAP ASE
+
+- <Status priority='1'>Feature</Status>インストールページ追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />メニューの追加
+
+#### SQL Server
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_integratedFlexboard" className="uitext" />及び<Cmdname sid="side_flexboard" className="uitext" />にウィジェットを追加
+
+```
+- SQL Serverアクティブセッションリスト
+
+- SQL Server SQL Elapse Map
+
+- SQL Serverインスタンス別アクティブセッション数
+
+- SQL Server Long Active Session Count
+
+- SQL Server Long Waiting Session Count
+```
+
+---
+
+### `Cloud`
+
+#### 共通
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_maintenancePlan" className="uitext" />メニューの追加
+
+#### Amazon CloudWatch
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューのインストール案内でアカウントIDの項目に`cloud_auth_account_no` UI設定値が表示されるように修正
+
+---
+
+### `Browser`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_browserErrorTracking" className="uitext" />, <Cmdname sid="side_userSessionEventSearch" className="uitext" /> URL共有時のUI状態(時間、フィルターなど)が維持されるよう改善
+
+  - <Cmdname sid="side_browserErrorTracking" className="uitext" />: 時間、チャートバーでクリックされた時間
+  - <Cmdname sid="side_userSessionEventSearch" className="uitext" />: 時間、フィルター、過去順、最新順
+
+---
+
+### `Log`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_logSearch" className="uitext" />及び<Cmdname sid="side_logTail" className="uitext" />メニューでフィルターお気に入りプロジェクト共有機能を追加
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" />ログに`@txid`, `@mtid`が含まれている場合、トランザクション情報のドロップダウンでトレースポップアップを確認する機能を追加(Log-Trace連携)
+
+- <Status priority='1'>Feature</Status>トレースログでログ検索に移動できるボタンを追加
+  (***アプリケーションダッシュボード***, <Cmdname sid="transaction_map" className="uitext" />, <Cmdname sid="tx_search" className="uitext" />, <Cmdname sid="multi_server_transaction_trace" className="uitext" />などトランザクション情報を確認できるAPMページと連携)
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> URL共有時のUI状態(時間、フィルターなど)が維持されるように改善
+
+  - <Cmdname sid="side_logTail" className="uitext" />: カテゴリ、フィルター
+  - <Cmdname sid="side_logExplorer" className="uitext" />: 時間、カテゴリ、チャートバーでクリックされた時間
+  - <Cmdname sid="side_logSearch" className="uitext" />: 時間、フィルター、過去順、最新順
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" />メニューでサーバーモニタリングトライアル顧客はログモニタリングが活性化できないように修正し、サイドメニュー進入時にユーロ転換案内モーダル表示
+
+- <Status priority='1'>Changed</Status> ログテーブルカラム名を変更(timestamp → 収集時間、agenttime → ログ時間)
+
+</div>

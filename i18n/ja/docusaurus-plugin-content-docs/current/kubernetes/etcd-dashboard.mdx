@@ -10,8 +10,6 @@ keywords:
 toc_max_heading_level: 3
 ---
 
-{/* 프로젝트 데이터가 없음. 다국어 이미지는 나중에 */}
-
 ホーム画面&gt;クラスタープロジェクト(<code class='my'>CP</code>)選択&gt; <Cmdname sid="side_controlPlane" className="uitext" /> &gt; <Cmdname sid="side_etcdDashboard" className="uitext" />
 
 :::note 
@@ -36,14 +34,7 @@ toc_max_heading_level: 3
 
 - etcd内部のcommit及びapply回数を提供します。 
 
-- etcdリーダーの存在有無及びリーダーの変更履歴を提供します。 
-
-{/* •	etcd 리소스 사용량
-•	CPU及びメモリ使用量、ファッド再起動数、関連ログデータの提供
-•	作業処理状態
-•	etcdのcommit及びapply回数
-•	リーダー状態の追跡
-•	etcdリーダーの存在有無とリーダーの変更履歴 */}
+- etcdリーダーの存在有無及びリーダーの変更履歴を提供します。
 
 ## etcdモニタリング有効化
 
@@ -62,8 +53,6 @@ etcdのmTLS認証書が必要です。 etcd認証書は一般的にControl Plane
 - *server.key*
 
 `kubectl`コマンドを実行するマシンで、次のコマンドを使用して証明書が存在することを確認します。 
-
-{/* 경로에서 필요한 인증서 파일(*ca.crt*, *server.crt*, *server.key*)이 존재하는지 확인하려면 다음 명령어를 실행하세요. */}
 
 ```bash
 sudo ls /etc/kubernetes/pki/etcd
@@ -84,8 +73,6 @@ secret/whatap-etcd-cert created
 ```
 
 ##### rootアカウントが使用できない場合
-
-{/* root 계정에서 `kubectl` 명령을 사용할 수 없는 경우 인증서 파일을 복제한 뒤 소유자를 변경하여 등록하세요.  */}
 
 rootアカウントで`kubectl`コマンドが使用できない場合は、次のガイドを参照してください。 
 
