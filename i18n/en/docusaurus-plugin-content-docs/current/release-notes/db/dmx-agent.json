@@ -1,25 +1,47 @@
 [
   {
-    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2d",
-    "ver": "v1.0.2",
-    "date": "2025-02-04",
+    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_4h",
+    "ver": "v1.0.4h",
+    "date": "2025-04-03",
     "Lists": [
       {
-        "ver": "v1.0.2",
-        "hash": "v102",
-        "product": "DMX d",
-        "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where <code>db.user</code> is not generated and the \"invalid user or password\" error occurs when <code>uid.sh</code> is run due to a bug in the <em>plan.user</em> file creation process in version 1.0.2a.</p>"
+        "ver": "v1.0.4h",
+        "hash": "v104",
+        "product": "DMX h",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the option to handle code conversion when Korean characters are broken.</p>",
+        "details": "<ul>\n<li>\n<p>Defined character encoding for <code>codefrom=</code> and <code>codeto=</code>.</p>\n</li>\n<li>\n<p>Selected and specified out of the results of the <code>iconv -l</code> command.</p>\n</li>\n<li>\n<p>e.g. <code>codefrom=EUC-KR</code>, <code>codeto=UTF-8</code></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.0.4h",
+        "hash": "v104",
+        "product": "DMX h",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Changed the default value for <code>plan_elapse</code> and <code>bind_elapse</code> from 5 seconds to 3 seconds.</p>"
+      },
+      {
+        "ver": "v1.0.4h",
+        "hash": "v104",
+        "product": "DMX h",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Changed the default <code>sqlstat</code> transmission cycle from 5 minutes to 1 minute.</p>"
+      },
+      {
+        "ver": "v1.0.4h",
+        "hash": "v104",
+        "product": "DMX h",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>!rectype</code>, <code>@id</code>, and <code>@stime</code> to <code>sqlstat</code>.</p>"
       }
     ]
   },
   {
     "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2b",
-    "ver": "v1.0.2",
+    "ver": "v1.0.2b",
     "date": "2025-01-21",
     "Lists": [
       {
-        "ver": "v1.0.2",
+        "ver": "v1.0.2b",
         "hash": "v102",
         "product": "DMX b",
         "type": "Feature",
@@ -29,29 +51,15 @@
   },
   {
     "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2a",
-    "ver": "v1.0.2",
+    "ver": "v1.0.2a",
     "date": "2025-01-21",
     "Lists": [
       {
-        "ver": "v1.0.2",
+        "ver": "v1.0.2a",
         "hash": "v102",
         "product": "DMX a",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to create the <em>plan.user</em> file.</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_2",
-    "ver": "v1.0.2",
-    "date": "2025-01-21",
-    "Lists": [
-      {
-        "ver": "v1.0.2",
-        "hash": "v102",
-        "product": "DMX",
-        "type": "Changed",
-        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Increased the <code>max_shm</code> and <code>max_tmpfs</code> values to <code>20</code> and <code>2000</code> respectively.</p>"
       }
     ]
   },
