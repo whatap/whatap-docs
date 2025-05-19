@@ -1270,13 +1270,13 @@ const serversolarisList = [
 const serverhpuxList = [
     {
         "name": "Server-HP-UX-agent-v1.4.4",
-        "date": "2025-02-05",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202503/server-hpux-agent-v1.4.4.pdf",
+        "date": "2025-04-23",
+        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/server-hpux-agent-v1.4.4.pdf",
         "docs": "/release-notes/server-hpux/server-hpux-1_4_4"
     },
     {
         "name": "Server-HP-UX-agent-v1.4.2",
-        "date": "2025-02-05",
+        "date": "2025-03-13",
         "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202503/server-hpux-agent-v1.4.2.pdf",
         "docs": "/release-notes/server-hpux/server-hpux-1_4_2"
     },
@@ -1310,7 +1310,7 @@ const k8sList = [
     {
         "name": "Kubernetes-agent-v1.8.7",
         "date": "2025-05-08",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202503/k8s-agent-v1.8.7.pdf",
+        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202505/k8s-agent-v1.8.7.pdf",
         "docs": "/release-notes/k8s/k8s-1_8_7"
     },
     {
