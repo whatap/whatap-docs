@@ -1913,9 +1913,9 @@ const sidebars = {
             id: 'postgresql/agent-settings'
           },
           items: [
-            'postgresql/agent-cloud-settings',
             'postgresql/agent-dbx-settings',
             'postgresql/agent-xos-settings',
+            'postgresql/agent-cloud-settings',
           ],
         },
         'postgresql/cloudsettings',
@@ -2278,9 +2278,9 @@ const sidebars = {
             id: 'oracle/agent-settings'
           },
           items: [
-            'oracle/agent-cloud-settings',
             'oracle/agent-dbx-settings',
             'oracle/agent-xos-settings',
+            'oracle/agent-cloud-settings',
           ],
         },
         'oracle/cloudsettings',
@@ -2489,7 +2489,6 @@ const sidebars = {
             id: 'oracle-pro/agent-settings'
           },
           items: [
-            'oracle-pro/agent-cloud-settings',
             'oracle-pro/agent-dmx-settings',
             'oracle-pro/agent-xos-settings',
           ],
@@ -2701,9 +2700,9 @@ const sidebars = {
             id: 'mysql/agent-settings'
           },
           items: [
-            'mysql/agent-cloud-settings',
             'mysql/agent-dbx-settings',
             'mysql/agent-xos-settings',
+            'mysql/agent-cloud-settings',
           ],
         },
         'mysql/cloudsettings',
@@ -2909,9 +2908,9 @@ const sidebars = {
             id: 'mssql/agent-settings'
           },
           items: [
-            'mssql/agent-cloud-settings',
             'mssql/agent-dbx-settings',
             'mssql/agent-xos-settings',
+            'mssql/agent-cloud-settings',
           ],
         },
         'mssql/cloudsettings',
@@ -4310,9 +4309,9 @@ const sidebars = {
             id: 'mongodb/agent-settings'
           },
           items: [
-            'mongodb/agent-cloud-settings',
             'mongodb/agent-dbx-settings',
             'mongodb/agent-xos-settings',
+            'mongodb/agent-cloud-settings',
           ],
         },
         'mongodb/agent-manage',
