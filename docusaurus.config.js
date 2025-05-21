@@ -230,6 +230,13 @@ const config = {
       //   textColor: '#ffffff',
       //   isCloseable: true,
       // },
+      announcementBar: {
+        id: 'preview-banner',
+        content: '<div id="preview-banner">Preview </div>',
+        backgroundColor: 'none',
+        textColor: '#ffffff',
+        isCloseable: true,
+      },
       blog: {
         sidebar: {
           groupByYear: false
