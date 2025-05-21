@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwhatap_docs=self.webpackChunkwhatap_docs||[]).push([["27627"],{47548:function(a){a.exports=JSON.parse('{"blogBasePath":"/whatap-docs/blog","blogTitle":"Blog","authorsListPath":"/whatap-docs/blog/authors"}')}}]);
