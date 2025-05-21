@@ -2008,18 +2008,6 @@ const serversolarisList = [
 
 const serverhpuxList = [
     {
-        "name": "Server-HP-UX-agent-v1.4.4",
-        "date": "2025-04-23",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/server-hpux-agent-v1.4.4.pdf",
-        "docs": "/release-notes/server-hpux/server-hpux-1_4_4"
-    },
-    {
-        "name": "Server-HP-UX-agent-v1.4.2",
-        "date": "2025-03-13",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202503/server-hpux-agent-v1.4.2.pdf",
-        "docs": "/release-notes/server-hpux/server-hpux-1_4_2"
-    },
-    {
         "name": "Server-HP-UX-agent-v1.4.0",
         "date": "2025-02-05",
         "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/250226%40ko%40rn/server-hpux-agent-v1.4.0.pdf",
@@ -2046,18 +2034,6 @@ const serverhpuxList = [
 ]
 
 const k8sList = [
-    {
-        "name": "Kubernetes-agent-v1.8.7",
-        "date": "2025-05-08",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202505/k8s-agent-v1.8.7.pdf",
-        "docs": "/release-notes/k8s/k8s-1_8_7"
-    },
-    {
-        "name": "Kubernetes-agent-v1.8.6",
-        "date": "2025-03-28",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202503/k8s-agent-v1.8.6.pdf",
-        "docs": "/release-notes/k8s/k8s-1_8_6"
-    },
     {
         "name": "Kubernetes-agent-v1.8.5",
         "date": "2025-02-17",

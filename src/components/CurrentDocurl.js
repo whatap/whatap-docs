@@ -9,9 +9,9 @@ export default function returnPrevVer({children}) {
     const location = useLocation();
     let cProd;
     if (currentLocale == 'ko') {
-        cProd = location.pathname.split("/")[2];
+        cProd = location.pathname.split("/")[1];
     } else {
-        cProd = location.pathname.split("/")[3];
+        cProd = location.pathname.split("/")[2];
     }
     let rProd = cProd + '-v1';
     let rURL = location.pathname.replace(cProd, rProd);

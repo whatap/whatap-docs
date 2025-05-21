@@ -811,18 +811,6 @@
     "width": 800,
     "height": 660
   },
-  "analysis-tx-record-summary-hash-en.png": {
-    "width": 400,
-    "height": 312
-  },
-  "analysis-tx-record-summary-hash-ja.png": {
-    "width": 400,
-    "height": 317
-  },
-  "analysis-tx-record-summary-hash.png": {
-    "width": 400,
-    "height": 315
-  },
   "analysis-tx-record-summary-ja.png": {
     "width": 800,
     "height": 663
@@ -11892,16 +11880,16 @@
     "height": 265
   },
   "k8s-container-map-sum-all-en.png": {
-    "width": 1255,
-    "height": 943
+    "width": 1200,
+    "height": 694
   },
   "k8s-container-map-sum-all-ja.png": {
-    "width": 1256,
-    "height": 941
+    "width": 1200,
+    "height": 693
   },
   "k8s-container-map-sum-all.png": {
-    "width": 1134,
-    "height": 963
+    "width": 1200,
+    "height": 703
   },
   "k8s-container-map-sum-select-en.png": {
     "width": 1200,
@@ -11952,16 +11940,16 @@
     "height": 987
   },
   "k8s-container-sum-en.png": {
-    "width": 1173,
-    "height": 898
+    "width": 1200,
+    "height": 689
   },
   "k8s-container-sum-ja.png": {
-    "width": 1179,
-    "height": 900
+    "width": 1200,
+    "height": 692
   },
   "k8s-container-sum.png": {
-    "width": 1173,
-    "height": 894
+    "width": 1200,
+    "height": 689
   },
   "k8s-container-timeline-details-en.png": {
     "width": 1202,
@@ -16983,8 +16971,6 @@
     "width": 1200,
     "height": 653
   },
-<<<<<<< HEAD
-=======
   "nms-conf-device-mng-add.png": {
     "width": 800,
     "height": 523
@@ -17013,7 +16999,6 @@
     "width": 1200,
     "height": 674
   },
->>>>>>> dd733013f8abef2dc3b201d1b13ec709e4307c5e
   "nms-install-agent-en.png": {
     "width": 1200,
     "height": 957
@@ -17026,13 +17011,10 @@
     "width": 1200,
     "height": 958
   },
-<<<<<<< HEAD
-=======
   "nms-interface-status.png": {
     "width": 1200,
     "height": 671
   },
->>>>>>> dd733013f8abef2dc3b201d1b13ec709e4307c5e
   "node-custom-name.png": {
     "width": 400,
     "height": 417
@@ -19567,7 +19549,7 @@
   },
   "sso-check-sso-info.png": {
     "width": 800,
-    "height": 377
+    "height": 397
   },
   "sso-delete-sso-key-en.png": {
     "width": 600,
@@ -19591,7 +19573,7 @@
   },
   "sso-externalidp-button.png": {
     "width": 600,
-    "height": 206
+    "height": 226
   },
   "sso-register-metadata-en.png": {
     "width": 800,
@@ -19600,10 +19582,6 @@
   "sso-register-metadata-ja.png": {
     "width": 800,
     "height": 556
-  },
-  "sso-register-metadata.png": {
-    "width": 800,
-    "height": 513
   },
   "sso-service-key-en.png": {
     "width": 699,

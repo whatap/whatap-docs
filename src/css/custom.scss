@@ -59,7 +59,6 @@
   --ifm-color-emphasis-300: #d3d3d3;
   --ifm-active-menu-color: #efefef;
   --ifm-dropdown-link-color: #222222;
-  --docusaurus-announcement-bar-height: 60px;
   --ifm-main-icons-color: #636363;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
@@ -1489,25 +1488,22 @@ main {
       }
     }
     section > h2 {
-      font-size: var(--ifm-h2-font-size);
+        font-size: var(--ifm-h2-font-size);
     }
     section h3, h2.welcome {
-      font-size: var(--ifm-h3-font-size);
+        font-size: var(--ifm-h3-font-size);
     }
     section h4 {
-      font-size: var(--ifm-h4-font-size);
-    }
-    section h4 code {
-      font-size: 1.3rem;
+        font-size: var(--ifm-h4-font-size);
     }
     div.indentTab h4 code, section h4 code {
       font-size: 1.3rem;
     }
     section h5 {
-      font-size: var(--ifm-h5-font-size);
+        font-size: var(--ifm-h5-font-size);
     }
     section h6 {
-      font-size: var(--ifm-h6-font-size);
+        font-size: var(--ifm-h6-font-size);
     }
     ul.table-of-contents {
       list-style-type: decimal;
@@ -2117,14 +2113,6 @@ main {
       background-color: #ff8200;
       color: #fff;
       border: none;
-    }
-    // 구형 old 추가
-    code.old {
-      font-family: "Oleo Script";
-      border: none;
-      // margin-top: -2px !important;
-      padding: 1px 2px 1px 2px;
-      // font-style: italic;
     }
     code.my {
       background-color: #296cf2;
@@ -3440,9 +3428,6 @@ main {
       padding: 0 0 0 8px !important;
     }
   }
-  :root {
-    --docusaurus-announcement-bar-height: 60px !important;
-  }
   .container.margin-vert--lg main.col--7 {
     max-width: 50%;
   }
@@ -3558,9 +3543,6 @@ main {
 }
 
 @media (max-width: 799px) and (max-width: 560px) {
-  :root {
-    --docusaurus-announcement-bar-height: 90px;
-  }
   main {
     .markdown {
       .flex-container-s {
