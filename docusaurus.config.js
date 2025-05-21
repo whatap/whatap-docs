@@ -18,7 +18,7 @@ const config = {
   future: {
     experimental_faster: isDev ? false : true
   },
-  baseUrl: '/whatap-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
