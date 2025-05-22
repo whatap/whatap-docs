@@ -18,17 +18,7 @@ const config = {
   future: {
 v4: true,
     
-    experimental_faster: {
-      // 모든 최적화 옵션 활성화
-      swcJsLoader: true,
-      swcJsMinimizer: true,
-      swcHtmlMinimizer: true,
-      lightningCssMinimizer: true,
-      rspackBundler: true,
-      mdxCrossCompilerCache: true,
-      ssgWorkerThreads: true
-    }
-
+    experimental_faster: true
   },
   baseUrl: '/',
   onBrokenLinks: 'ignore',
