@@ -16,7 +16,18 @@ const config = {
   tagline: '와탭 기술 문서 :: WhaTap, 와탭 기술 문서 페이지에 오신 것을 진심으로 환영합니다.',
   url: 'https://docs.whatap.io',
   future: {
-    experimental_faster: true,
+v4: true,
+    
+    experimental_faster: {
+      // 모든 최적화 옵션 활성화
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+      ssgWorkerThreads: true
+    }
 
   },
   baseUrl: '/',
