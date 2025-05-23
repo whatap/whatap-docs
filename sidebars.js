@@ -4903,9 +4903,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_8_6',
+                  id: 'release-notes/server/server-2_8_7',
                   className: 'new',
                 },
+                'release-notes/server/server-2_8_6',
                 'release-notes/server/server-2_8_5',
                 'release-notes/server/server-2_8_4',
                 'release-notes/server/server-2_8_3',
@@ -4914,8 +4915,6 @@ const sidebars = {
                 'release-notes/server/server-2_8_0',
                 'release-notes/server/server-2_7_9',
                 'release-notes/server/server-2_7_8',
-                'release-notes/server/server-2_7_7',
-                'release-notes/server/server-2_7_6',
                 'release-notes/server/server-previous',
               ],
             },
@@ -4932,9 +4931,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-aix/server-aix-1_4_4',
+                  id: 'release-notes/server-aix/server-aix-1_4_5',
                   className: 'new'
                 },
+                'release-notes/server-aix/server-aix-1_4_4',
                 'release-notes/server-aix/server-aix-1_4_3',
                 'release-notes/server-aix/server-aix-1_4_2',
                 'release-notes/server-aix/server-aix-1_4_1',
