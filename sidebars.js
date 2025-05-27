@@ -1915,6 +1915,7 @@ const sidebars = {
           items: [
             'postgresql/agent-dbx-settings',
             'postgresql/agent-xos-settings',
+            'postgresql/agent-cloud-settings',
           ],
         },
         'postgresql/cloudsettings',
@@ -2279,6 +2280,7 @@ const sidebars = {
           items: [
             'oracle/agent-dbx-settings',
             'oracle/agent-xos-settings',
+            'oracle/agent-cloud-settings',
           ],
         },
         'oracle/cloudsettings',
@@ -2477,7 +2479,20 @@ const sidebars = {
             'oracle-pro/troubleshooting',
           ],
         },
-        'oracle-pro/agent-settings',
+        {
+          type: 'category',
+          label: '설정하기',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'oracle-pro/agent-settings'
+          },
+          items: [
+            'oracle-pro/agent-dmx-settings',
+            'oracle-pro/agent-xos-settings',
+          ],
+        },
         'oracle-pro/agent-manage',
         'oracle-pro/usage-ui',
         {
@@ -2687,6 +2702,7 @@ const sidebars = {
           items: [
             'mysql/agent-dbx-settings',
             'mysql/agent-xos-settings',
+            'mysql/agent-cloud-settings',
           ],
         },
         'mysql/cloudsettings',
@@ -2894,6 +2910,7 @@ const sidebars = {
           items: [
             'mssql/agent-dbx-settings',
             'mssql/agent-xos-settings',
+            'mssql/agent-cloud-settings',
           ],
         },
         'mssql/cloudsettings',
@@ -4294,6 +4311,7 @@ const sidebars = {
           items: [
             'mongodb/agent-dbx-settings',
             'mongodb/agent-xos-settings',
+            'mongodb/agent-cloud-settings',
           ],
         },
         'mongodb/agent-manage',
