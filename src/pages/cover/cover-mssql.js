@@ -28,7 +28,7 @@ export default function Cover() {
           SQL Server Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2025.04.23
+            release date. 2025.05.28
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
