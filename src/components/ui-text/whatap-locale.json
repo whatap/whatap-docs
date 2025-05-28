@@ -56299,6 +56299,1586 @@
     "ko": "총 크기",
     "service_id": "TTL09513"
   },
+  "DSC09514": {
+    "ko": "공유된 멤버가 없습니다.",
+    "en": "There are no shared members.",
+    "ja": "共有メンバーはいません。"
+  },
+  "DSC09515": {
+    "ko": "공유할 멤버를 추가하세요.",
+    "en": "Add members to share.",
+    "ja": "共有するメンバーを追加してください。"
+  },
+  "TTL09516": {
+    "ko": "Webhook JSON 조회",
+    "en": "Webhook JSON retrieval",
+    "ja": "Webhook JSON検索"
+  },
+  "CNT09517": {
+    "ko": "이벤트 레벨",
+    "en": "Event level",
+    "ja": "イベントレベル"
+  },
+  "CNT09518": {
+    "ko": "이벤트 임계값",
+    "en": "Event threshold",
+    "ja": "イベントしきい値"
+  },
+  "CNT09519": {
+    "ko": "이벤트 해소 시점의 지표값",
+    "en": "Metric value at the event resolution",
+    "ja": "イベント解除時の指標値"
+  },
+  "CNT09520": {
+    "ko": "이벤트 발생 시점의 지표값",
+    "en": "Metric value at the event occurrence",
+    "ja": "イベント発生時の指標値"
+  },
+  "CNT09521": {
+    "ko": "이벤트 식별자",
+    "en": "Event ID",
+    "ja": "イベント識別子"
+  },
+  "CNT09522": {
+    "ko": "이벤트 지표 이름",
+    "en": "Event metric name",
+    "ja": "イベント指標名"
+  },
+  "TTL09523": {
+    "ko": "값 존재 여부",
+    "en": "Whether the value exists or not",
+    "ja": "値の存在有無"
+  },
+  "LNK09524": {
+    "ko": "사용 가능 변수",
+    "en": "Available variables",
+    "ja": "使用可能変数"
+  },
+  "DSC09525": {
+    "ko": "JSON 값을 입력해주세요.",
+    "en": "Enter the JSON value.",
+    "ja": "JSON値を入力してください。"
+  },
+  "DSC09526": {
+    "ko": "JSON 수정 시 최대 1만 자 까지 입력할 수 있습니다.",
+    "en": "You can enter up to 10,000 characters when modifying the JSON.",
+    "ja": "JSONの変更時に最大1万文字まで入力できます。"
+  },
+  "DSC09527": {
+    "ko": "${something}은 와탭에서 제공하는 대체될 값입니다. 지원하는 전체 목록과 의미는 사용 가능 변수를 참고하세요.",
+    "en": "${something} is a replacement value provided by WhaTap. For the supported values ​​and their meanings, see Available variables.",
+    "ja": "$ {something}は、WhaTap Monitoringが提供する代替値です。対応する変数とその意味については、使用可能変数を参照してください。"
+  },
+  "TTL09528": {
+    "ko": "ANR 통계 상세 페이지",
+    "en": "Detailed ANR statistics page",
+    "ja": "ANR統計詳細ページ"
+  },
+  "TTL09529": {
+    "ko": "{category} 별 ANR Top10",
+    "en": "Top 10 ANRs by {category}",
+    "ja": "{category}別のANR上位10"
+  },
+  "TTL09530": {
+    "ko": "{category} 별 액티비티 로드 Top 10",
+    "en": "ANR detailed load time trend",
+    "ja": "{category}別のアクティビティロード上位10"
+  },
+  "TTL09531": {
+    "ko": "ANR 상세 목록",
+    "en": "Detailed ANR list",
+    "ja": "ANR詳細リスト"
+  },
+  "TTL09532": {
+    "ko": "{category} 별 ANR 경과 시간 Top 10",
+    "en": "Top 10 ANR elapsed times by {category}",
+    "ja": "{category}別のANR経過時間上位10"
+  },
+  "TTL09533": {
+    "ko": "{category} 별 액티비티 로드 시간 Top 10",
+    "en": "Top 10 activity load times by {category}",
+    "ja": "{category}別のアクティビティロード時間上位10"
+  },
+  "NTC09534": {
+    "ko": "컬럼설정 프리셋 정보를 불러오는데 실패했습니다.",
+    "en": "Failed to load the preset column settings.",
+    "ja": "カラム設定のプリセット情報の読み込みに失敗しました。"
+  },
+  "NTC09535": {
+    "ko": "기본 컬럼설정 프리셋을 적용합니다.",
+    "en": "The default column presets are applied.",
+    "ja": "デフォルトのカラム設定プリセットを適用します。"
+  },
+  "CNT09536": {
+    "ko": "프로젝트 번호",
+    "en": "Project number",
+    "ja": "プロジェクト番号"
+  },
+  "CNT09537": {
+    "ko": "에이전트 이름",
+    "en": "Agent name",
+    "ja": "エージェント名"
+  },
+  "CNT09538": {
+    "ko": "에이전트 종류 이름",
+    "en": "Agent type name",
+    "ja": "エージェントタイプ名"
+  },
+  "CNT09539": {
+    "ko": "에이전트 노드 이름",
+    "en": "Agent node name",
+    "ja": "エージェントノード名"
+  },
+  "CNT09540": {
+    "ko": "에이전트 이름의 해시값",
+    "en": "Hash value of the agent name",
+    "ja": "エージェント名のハッシュ値"
+  },
+  "CNT09541": {
+    "ko": "이벤트 제목",
+    "en": "Event title",
+    "ja": "イベント名"
+  },
+  "TTL09542": {
+    "ko": "모바일",
+    "en": "Mobile",
+    "ja": "モバイル"
+  },
+  "ITM09543": {
+    "ko": "방금 전",
+    "en": "Just now",
+    "ja": "直前"
+  },
+  "TTL09544": {
+    "ko": "HTTP 요청 실패 건수",
+    "en": "Number of HTTP request failures",
+    "ja": "HTTPリクエスト失敗の件数"
+  },
+  "DSC09545": {
+    "ko": "서버 인벤토리 맵 메뉴 조회 기능을 활성화하려면 whatap.conf에 다음의 설정이 필요합니다.<br/>\n직접 수정 후, 에이전트를 재시작하거나, OS별로 제공되는 명령어를 실행하시기 바랍니다.",
+    "en": "To enable the server inventory map viewing feature, the following settings are required in whatap.conf.<br/>\nRestart the agent after modifying it directly, or execute the command provided by the OS.",
+    "ja": "サーバーインベントリマップメニューの照会機能を有効にするには、whatap.confで次の設定が必要です。<br/>\n直接修正してからエージェントを再開するか、OS毎に提供されるコマンドを実行してください。"
+  },
+  "DSC09546": {
+    "ko": "파일 수정시 관리자 권한이 필요합니다.",
+    "en": "Administrator privilege is required to modify the file.",
+    "ja": "whatap.confの修正には、管理者権限で実行されたエディター(メモ帳など)が必要です。"
+  },
+  "DSC09547": {
+    "ko": "명령어는 관리자 권한 파워쉘에서 실행할 수 있습니다.",
+    "en": "The command can be executed in the administrator-privileged PowerShell.",
+    "ja": "コマンド語は管理者権限のパワーシェルから実行できます。"
+  },
+  "TTL09548": {
+    "ko": "인스턴스별 여유 메모리",
+    "en": "Free memory for each instance",
+    "ja": "インスタンス別の空きメモリ"
+  },
+  "TTL09549": {
+    "ko": "인스턴스별 여유 스토리지",
+    "en": "Free storage for each instance",
+    "ja": "インスタンス別の空きストレージ"
+  },
+  "ITM09550": {
+    "ko": "서버 시간",
+    "en": "Server time",
+    "ja": "サーバー時間"
+  },
+  "CNT09551": {
+    "ko": "(서버, 프로세스, 로그 파일/윈도우 이벤트) 이벤트 정책 이름",
+    "en": "(Server, Process, Log File/Windows Event) Event Policy Name",
+    "ja": "（サーバー、プロセス、ログファイル/ウィンドウイベント）イベントポリシー名"
+  },
+  "CNT09552": {
+    "ko": "{x}건 중 {y}건이 검색 조건에 일치합니다.",
+    "en": "{y} items out of {x} results meet the search criteria.",
+    "ja": "{x}件のうち{y}件が検索条件に一致します。"
+  },
+  "TTL09553": {
+    "ko": "이벤트 동작 시간",
+    "en": "Event operation time",
+    "ja": "イベント動作時間"
+  },
+  "TTL09554": {
+    "ko": "이벤트 동작 시간 태그 수정",
+    "en": "Event operation time tag modification",
+    "ja": "イベント動作時間タグの変更"
+  },
+  "TTL09555": {
+    "ko": "이벤트 동작 시간 태그 생성",
+    "en": "Event operation time tag creation",
+    "ja": "イベント動作時間タグの生成"
+  },
+  "DSC09556": {
+    "ko": "태그 이름을 입력하세요.",
+    "en": "Enter the tag name.",
+    "ja": "タグ名を入力してください。"
+  },
+  "TTL09557": {
+    "ko": "태그 목록",
+    "en": "Tag list",
+    "ja": "タグリスト"
+  },
+  "DSC09558": {
+    "ko": "등록된 태그가 없습니다.{br}새로운 태그를 생성하세요.",
+    "en": "There is no registered tag.{br} Create new tags.",
+    "ja": "登録済みのタグがありません。{br}新しいタグを作成してください。"
+  },
+  "BTN09559": {
+    "ko": "새로운 태그 생성",
+    "en": "Create new tag",
+    "ja": "新しいタグの生成"
+  },
+  "DSC09560": {
+    "ko": "이벤트 동작 시간 태그를 설정하면 해당 태그를 가진 알림은 해당 시간대에만 이벤트가 동작합니다.",
+    "en": "If you set an event operation time tag, the notification with that tag operate only during the set time zone.",
+    "ja": "イベント動作時間タグを設定すると、そのタグを持つ通知はその時間帯にのみイベントが動作します。"
+  },
+  "DSC09561": {
+    "ko": "이벤트 동작 시간 태그 설정에 대한 자세한 설명은 가이드 문서를 참고해 주세요.",
+    "en": "For more information about the event operation time tag setting, see the corresponding guide.",
+    "ja": "イベント動作時間タグ設定の詳細については、ガイドのドキュメントを参照してください。"
+  },
+  "TTL09562": {
+    "ko": "태그 이름",
+    "en": "Tag name",
+    "ja": "タグ名"
+  },
+  "BTN09563": {
+    "ko": "선택",
+    "en": "Select",
+    "ja": "選択"
+  },
+  "TTL09564": {
+    "ko": "색상",
+    "en": "Color",
+    "ja": "色"
+  },
+  "DSC09565": {
+    "ko": "{tagName} 항목을 삭제하겠습니까?",
+    "en": "Do you want to delete the {tagName} item?",
+    "ja": "{tagName} 項目を削除しますか？"
+  },
+  "DSC09566": {
+    "ko": "해당 태그 삭제 시 적용된 모든 알림에서{br}해당 태그가 삭제됩니다.{br}단, 이벤트 설정에서 사용 중인 태그는 삭제할 수 없습니다.",
+    "en": "When the time tag is deleted, the corresponding tag is removed from all the applied notifications.{br}However, tags being used in event settings cannot be deleted.",
+    "ja": "タグを削除すると、適用されたすべての通知から{br}該当するタグが削除されます。{br} ただし、イベント設定で使用されているタグは削除できません。"
+  },
+  "TTL09567": {
+    "ko": "메트릭스 검색기",
+    "en": "Metrics finder",
+    "ja": "メトリクス検索"
+  },
+  "TTL09568": {
+    "ko": "추가 설정",
+    "en": "Additional settings",
+    "ja": "追加設定"
+  },
+  "TTL09569": {
+    "ko": "AJAX 분석",
+    "en": "AJAX analysis",
+    "ja": "AJAX分析"
+  },
+  "TTL09570": {
+    "ko": "페이지 로드 분석",
+    "en": "Page load analysis",
+    "ja": "ページロード分析"
+  },
+  "ITM09571": {
+    "ko": "원본 키 표시",
+    "en": "Original key display",
+    "ja": "原本キーを表示"
+  },
+  "TTL09572": {
+    "ko": "{number} 건",
+    "en": "{number} cases",
+    "ja": "{number} 件"
+  },
+  "TTL09573": {
+    "ko": "전체 {number} 건",
+    "en": "Total {number} items",
+    "ja": "全 {number} 件"
+  },
+  "DSC09574": {
+    "ko": "모든 메트릭스 검색을 도와줍니다.",
+    "en": "It helps you find all metrics.",
+    "ja": "すべての指標検索をサポートします。"
+  },
+  "TTL09575": {
+    "ko": "병합",
+    "en": "Merge",
+    "ja": "マージ"
+  },
+  "ITM09576": {
+    "ko": "클라우드 모니터링 지표 표시",
+    "en": "Display of cloud monitoring metrics",
+    "ja": "クラウド監視指標の表示"
+  },
+  "ITM09577": {
+    "ko": "설명이 없는 지표 표시",
+    "en": "Display of metrics without explanation",
+    "ja": "説明のない指標の表示"
+  },
+  "DSC09578": {
+    "ko": "완전일치 검색만 지원합니다.",
+    "en": "Only exact match search is supported.",
+    "ja": "完全一致検索のみに対応します。"
+  },
+  "DSC09579": {
+    "ko": "에러 클래스, 에러 단계, 에러 메세지를 포함하여 검색합니다.",
+    "en": "It searches including the error class, error stage, and error message.",
+    "ja": "エラークラス、エラーステップ、エラーメッセージなどを検索します。"
+  },
+  "DSC09580": {
+    "ko": "검색시 비밀번호가 필요합니다.",
+    "en": "A password is required for a search.",
+    "ja": "検索にはパスワードが必要です。"
+  },
+  "ITM09581": {
+    "ko": "일반 필터",
+    "en": "General filter",
+    "ja": "一般フィルタ"
+  },
+  "ITM09582": {
+    "ko": "커스텀 필터",
+    "en": "Custom filter",
+    "ja": "カスタムフィルタ"
+  },
+  "ITM09583": {
+    "ko": "스탭 필터",
+    "en": "Step filter",
+    "ja": "ステップフィルタ"
+  },
+  "ITM09584": {
+    "ko": "숫자 입력 필터",
+    "en": "Numeric input filter",
+    "ja": "数値入力フィルタ"
+  },
+  "DSC09585": {
+    "ko": "스탭필터 적용시 검색 속도가 저하될 수 있습니다.",
+    "en": "When applying the step filter, the search performance may decrease.",
+    "ja": "ステップフィルタを適用すると検索速度が低下することがあります。"
+  },
+  "DSC09586": {
+    "ko": "검색 값보다 큰 값이 포함된 트랜잭션을 조회합니다.",
+    "en": "It retrieves the transactions that have values greater than the search value.",
+    "ja": "検索値より大きい値を含むトランザクションを照会します。"
+  },
+  "DSC09587": {
+    "ko": "검색 값과 같은 값을 가진 트랜잭션을 조회합니다.",
+    "en": "It retrieves the transactions that have values equal to the search value.",
+    "ja": "検索値と同じ値を持つトランザクションを照会します。"
+  },
+  "DSC09588": {
+    "ko": "검색 값보다 작은 값이 포함된 트랜잭션을 조회합니다.",
+    "en": "It retrieves the transactions that have values less than the search value.",
+    "ja": "検索値より小さい値を含むトランザクションを照会します。"
+  },
+  "DSC09589": {
+    "ko": "로그 모니터링을 이용하시려면 프로젝트 유료 전환이 필요합니다.",
+    "en": "To use the log monitoring, project subscription is required. ",
+    "ja": "ログ監視を利用するには、プロジェクトの有償転換が必要です。"
+  },
+  "TTL09591": {
+    "ko": "디스크 필터",
+    "en": "Disk filter",
+    "ja": "ディスクフィルタ"
+  },
+  "DSC09592": {
+    "ko": "마운트 포인트",
+    "en": "Mount point",
+    "ja": "マウントポイント"
+  },
+  "TLT09593": {
+    "ko": "데이터 호출이 중단된 시점부터 다시 시작합니다.",
+    "en": "It resumes from when the data call was interrupted.",
+    "ja": "データ呼び出しが中断された時点から再開します。"
+  },
+  "NTC09594": {
+    "ko": "이벤트 설정에서 사용 중인 동작 시간은 삭제할 수 없습니다.",
+    "en": "The operation time in use cannot be deleted from the event configuration.",
+    "ja": "イベント設定で使用中の動作時間は削除できません。"
+  },
+  "NTC09595": {
+    "ko": "동작 시간 키가 존재하지 않습니다.",
+    "en": "The operation time key does not exist.",
+    "ja": "動作時間キーが存在しません。"
+  },
+  "NTC09596": {
+    "ko": "동작 시간 입력 양식을 확인해주세요.",
+    "en": "Check the operation time entry form.",
+    "ja": "動作時間入力フォームを確認してください。"
+  },
+  "DSC09597": {
+    "ko": "와탭 쿠버네티스 에이전트 버전 <strong>{minVersion}</strong> 이상에서 신규 Deployment 목록을 제공하고 있습니다. 신규 메뉴를 사용하려면 에이전트를 업데이트 해주세요.(현재 버전: {currVersion})",
+    "en": "WhaTap Kubernetes agent <strong>{minVersion}</strong> or later provides a new deployment list. Update your agent to use new menus (Current version: {currVersion}).",
+    "ja": "WhaTap Kubernetes Monitoringエージェントのバージョン<strong>{minVersion}</strong>以降で新しいデプロイメントのリストを提供しています。新しいメニューを使用するには、エージェントを更新してください。（現在のバージョン：{currVersion}）"
+  },
+  "TTL09598": {
+    "ko": "수집 시간",
+    "en": "Collection time",
+    "ja": "収集時間"
+  },
+  "TTL09599": {
+    "ko": "로그 시간",
+    "en": "Log time",
+    "ja": "ログ時間"
+  },
+  "NTC09600": {
+    "ko": "마운트 포인트 목록 조회에 실패했습니다.",
+    "en": "Mount point list query failed.",
+    "ja": "マウントポイントリストの照会に失敗しました。"
+  },
+  "DSC09601": {
+    "ko": "마운트 포인트를 선택하세요",
+    "en": "Select a mount point.",
+    "ja": "マウントポイントを選択してください。"
+  },
+  "ITM09602": {
+    "ko": "필터 즐겨 찾기",
+    "en": "Filter favorites",
+    "ja": "フィルターのお気に入り"
+  },
+  "BTN09603": {
+    "ko": "검색결과 선택 ({length})",
+    "en": "Select search result ({length})",
+    "ja": "検索結果の選択（{length}）"
+  },
+  "TLT09604": {
+    "ko": "조회를 위해 서버에서 읽은 총 트랜잭션 개수 입니다.",
+    "en": "It is the total number of transactions read from the server for query.",
+    "ja": "照会のためにサーバーから読み取ったトランザクションの総数"
+  },
+  "TLT09605": {
+    "ko": "화면에 표시 가능한 총 트랜잭션 개수 입니다.",
+    "en": "It is the total number of transactions that can be displayed on the screen.",
+    "ja": "画面に表示できるトランザクションの総数"
+  },
+  "TTL09606": {
+    "ko": "인스턴스 모니터링 대시보드 신규 기능 안내",
+    "en": "New features of the instance monitoring dashboard",
+    "ja": "インスタンス監視ダッシュボードの新機能案内"
+  },
+  "CNT09607": {
+    "ko": "인스턴스 모니터링 대시보드에 새로운 기능이 추가되었습니다.",
+    "en": "New features have been added in the instance monitoring dashboard.",
+    "ja": "インスタンス監視ダッシュボードに新機能が追加されました。"
+  },
+  "TTL09608": {
+    "ko": "URL 관리",
+    "en": "URL management",
+    "ja": "URL管理"
+  },
+  "ITM09609": {
+    "ko": "URL 매칭 패턴",
+    "en": "URL Matching pattern",
+    "ja": "URLマッチングパターン"
+  },
+  "ITM09610": {
+    "ko": "원본 패턴",
+    "en": "Original pattern",
+    "ja": "原本パターン"
+  },
+  "ITM09611": {
+    "ko": "업무명",
+    "en": "Job name",
+    "ja": "業務名"
+  },
+  "TTL09612": {
+    "ko": "디스크 목록",
+    "en": "Disk list",
+    "ja": "ディスクリスト"
+  },
+  "DSC09613": {
+    "ko": "업무명을 입력하세요.",
+    "en": "Enter the job name.",
+    "ja": "業務名を入力してください。"
+  },
+  "DSC09614": {
+    "ko": "매칭될 URL 패턴을 입력하세요. (예: */some/path*)",
+    "en": "Enter the URL pattern to be matched. (e.g. */some/path*)",
+    "ja": "一致するURLパターンを入力してください。 (例: */some/path*)"
+  },
+  "DSC09615": {
+    "ko": "표시될 페이지명을 입력하세요.",
+    "en": "Enter the page name to be displayed.",
+    "ja": "表示するページ名を入力してください。"
+  },
+  "CNT09616": {
+    "ko": "선택된 {count}개를 삭제 하시겠습니까?",
+    "en": "Do you really want to delete the selected {count} items?",
+    "ja": "選択した{count}件を削除しますか？"
+  },
+  "ITM09617": {
+    "ko": "URL 패턴 (PK) - 수정 불가",
+    "en": "URL pattern (PK) - modification impossible",
+    "ja": "URLパターン（PK） - 修正不可"
+  },
+  "CNT09618": {
+    "ko": "이미 존재하는 URL 패턴(PK)입니다.",
+    "en": "This URL pattern (PK) already exists.",
+    "ja": "すでに存在するURLパターンです（PK）。"
+  },
+  "ITM09619": {
+    "ko": "라우터",
+    "en": "Router",
+    "ja": "ルーター"
+  },
+  "ITM09620": {
+    "ko": "스위치",
+    "en": "Switch",
+    "ja": "スイッチ"
+  },
+  "ITM09621": {
+    "ko": "허브",
+    "en": "Hub",
+    "ja": "Hub"
+  },
+  "ITM09622": {
+    "ko": "서버",
+    "en": "Server",
+    "ja": "サーバー"
+  },
+  "ITM09623": {
+    "ko": "방화벽",
+    "en": "Firewall",
+    "ja": "ファイアウォール"
+  },
+  "ITM09624": {
+    "ko": "알 수 없음",
+    "en": "Unknown",
+    "ja": "不明"
+  },
+  "DSC09625": {
+    "ko": "정말로 초기화하시겠습니까?",
+    "en": "Do you really want to initialize it?",
+    "ja": "本当に初期化しますか？"
+  },
+  "ITM09626": {
+    "ko": "URL 매칭 패턴 순",
+    "en": "URL matching pattern order",
+    "ja": "URLマッチングパターン順"
+  },
+  "DSC09627": {
+    "ko": "항목이 생성되었습니다.",
+    "en": "The item has been created.",
+    "ja": "項目を作成しました。"
+  },
+  "DSC09628": {
+    "ko": "항목이 삭제되었습니다.",
+    "en": "The item has been deleted.",
+    "ja": "項目を削除しました。"
+  },
+  "DSC09629": {
+    "ko": "항목이 수정되었습니다.",
+    "en": "The item has been modified.",
+    "ja": "項目を修正しました。"
+  },
+  "ITM09630": {
+    "ko": "업무명 순",
+    "en": "Sort by job name",
+    "ja": "業務名順"
+  },
+  "ITM09631": {
+    "ko": "페이지명 순",
+    "en": "Sort by page name",
+    "ja": "ページ名順"
+  },
+  "ITM09632": {
+    "ko": "모니터링 모드",
+    "en": "Monitoring mode",
+    "ja": "モニタリングモード"
+  },
+  "ITM09633": {
+    "ko": "편집 모드",
+    "en": "Editing mode",
+    "ja": "編集モード"
+  },
+  "TTL09634": {
+    "ko": "표시 형식",
+    "en": "Display format",
+    "ja": "表示形式"
+  },
+  "ITM09635": {
+    "ko": "물리적",
+    "en": "Physical",
+    "ja": "物理的"
+  },
+  "ITM09636": {
+    "ko": "논리적",
+    "en": "Logical",
+    "ja": "論理的"
+  },
+  "DSC09637": {
+    "ko": "현재 브라우저 정책에 의해 오디오 재생이 제한되어 있습니다. 해당 버튼을 클릭하여 브라우저 정책을 해제해주세요.",
+    "en": "Audio playback is currently restricted by the browser policy. Click the button to stop the policy.",
+    "ja": "現在、ブラウザのポリシーによって音声再生が制限されています。該当のボタンをクリックしてブラウザポリシーを無効にしてください。"
+  },
+  "DSC09638": {
+    "ko": "디바이스 '{label}' 에 등록된 호스트 정보가 없습니다.",
+    "en": "There is no host information registered in the device '{label}'.",
+    "ja": "デバイス「{label}」に登録されているホスト情報がありません。"
+  },
+  "DSC09639": {
+    "ko": "디바이스에 등록된 호스트 정보가 없습니다.",
+    "en": "There is no host information registered in the device.",
+    "ja": "デバイスに登録されたホスト情報がありません。"
+  },
+  "TTL09640": {
+    "ko": "디바이스 타입",
+    "en": "Device type",
+    "ja": "デバイスタイプ"
+  },
+  "DSC09641": {
+    "ko": "현재 토폴로지 편집모드입니다.",
+    "en": "It is in the topology editing mode.",
+    "ja": "現在はトポロジ編集モードです。"
+  },
+  "DSC09642": {
+    "ko": "요소를 클릭하여 편집할 수 있습니다.",
+    "en": "You can edit by clicking the element.",
+    "ja": "要素をクリックして編集できます。"
+  },
+  "TTL09643": {
+    "ko": "배경 색상",
+    "en": "Background color",
+    "ja": "背景色"
+  },
+  "TTL09644": {
+    "ko": "테두리 색상",
+    "en": "Border color",
+    "ja": "枠線色"
+  },
+  "BTN09645": {
+    "ko": "새 요소 추가",
+    "en": "Add new element",
+    "ja": "新しい要素を追加"
+  },
+  "ITM09646": {
+    "ko": "영역",
+    "en": "Area",
+    "ja": "エリア"
+  },
+  "NTC09647": {
+    "ko": "즐겨찾기가 추가되었습니다.",
+    "en": "Favorite(s) has been added.",
+    "ja": "お気に入りを追加しました。"
+  },
+  "NTC09648": {
+    "ko": "즐겨찾기가 삭제되었습니다.",
+    "en": "Favorite(s) has been added.",
+    "ja": "お気に入りを削除しました。"
+  },
+  "NTC09649": {
+    "ko": "즐겨찾기가 수정되었습니다.",
+    "en": "Favorite(s) has been modified.",
+    "ja": "お気に入りを修正しました。"
+  },
+  "TLT09650": {
+    "ko": "이름 뒤에 공백을 제거해주세요.",
+    "en": "Remove space after the name.",
+    "ja": "名前の後にスペースを削除してください。"
+  },
+  "TTL09651": {
+    "ko": "매니저 선택",
+    "en": "Manager selection",
+    "ja": "マネージャーの選択"
+  },
+  "MNU09652": {
+    "ko": "매니저 설치",
+    "en": "Manager installation",
+    "ja": "マネージャーのインストール"
+  },
+  "TTL09653": {
+    "ko": "매니저",
+    "en": "Manager",
+    "ja": "マネージャー"
+  },
+  "DSC09654": {
+    "ko": "선택된 매니저가 없습니다.",
+    "en": "No manager has been selected.",
+    "ja": "選択したマネージャーがありません。"
+  },
+  "TTL09655": {
+    "ko": "매니저 목록",
+    "en": "Manager list",
+    "ja": "マネージャーリスト"
+  },
+  "ITM09656": {
+    "ko": "디스크 항목만 표시",
+    "en": "Display only disk-related items",
+    "ja": "ディスク項目のみ表示"
+  },
+  "DSC09657": {
+    "ko": "매니저 수집 상태 개요",
+    "en": "Manager collection status overview",
+    "ja": "マネージャー収集状況の概要"
+  },
+  "DSC09658": {
+    "ko": "매니저가 설치된 환경의 시스템 자원 정보",
+    "en": "System resource information in the mamager installed environment",
+    "ja": "マネージャーがインストールされている環境のシステムリソース情報"
+  },
+  "DSC09659": {
+    "ko": "매니저가 로드한 MIB 정보",
+    "en": "MIB information loaded by the manager",
+    "ja": "マネージャーがロードしたMIB情報"
+  },
+  "DSC09660": {
+    "ko": "Unregistered는 등록된 SNMP OID에 해당하는 MIB이 매니저에 로드되지 않은 경우를 나타냅니다.",
+    "en": "Unregistered indicates that the MIB for the registered SNMP OID has not been loaded into the manager.",
+    "ja": "Unregisteredは、登録されたSNMP OIDに対応するMIBがマネージャにロードされていない場合を示します。"
+  },
+  "TTL09661": {
+    "ko": "URL 패턴 통계",
+    "en": "URL pattern statistics",
+    "ja": "URLパターン統計"
+  },
+  "TTL09662": {
+    "ko": "URL 패턴 성능 추이",
+    "en": "URL pattern performance trend",
+    "ja": "URLパターンの性能推移"
+  },
+  "TTL09663": {
+    "ko": "URL 패턴 목록",
+    "en": "URL pattern list",
+    "ja": "URLパターンリスト"
+  },
+  "ITM09664": {
+    "ko": "URL 패턴",
+    "en": "URL pattern",
+    "ja": "URLパターン"
+  },
+  "TTL09665": {
+    "ko": "전체 경과 시간",
+    "en": "Total elapsed time",
+    "ja": "全体の経過時間"
+  },
+  "TTL09666": {
+    "ko": "TCP 연결 시간",
+    "en": "TCP connection time",
+    "ja": "TCP接続時間"
+  },
+  "CNT09667": {
+    "ko": "(로그 파일 이벤트) 로그 파일의 경로",
+    "en": "(Log file event) Log file path",
+    "ja": "(ログファイルイベント)ログファイルのパス"
+  },
+  "CNT09668": {
+    "ko": "(로그 파일 이벤트) 감지된 키워드",
+    "en": "(Log file event) Detected keywords",
+    "ja": "（ログファイルイベント）検知されたキーワード"
+  },
+  "CNT09669": {
+    "ko": "(로그 파일/윈도우 이벤트) 로그 내용 또는 윈도우 이벤트 메시지",
+    "en": "(Log file/Windows event) Log content or Windows event message",
+    "ja": "（ログファイル/Windowsイベント）ログ内容、またはWindowsイベントメッセージ"
+  },
+  "CNT09670": {
+    "ko": "(윈도우 이벤트) 윈도우 이벤트 ID",
+    "en": "(Windows event) Windows event ID",
+    "ja": "(Windowsイベント)WindowsイベントID"
+  },
+  "CNT09671": {
+    "ko": "(윈도우 이벤트) 윈도우 이벤트 수준",
+    "en": "(Windows event) Windows event level",
+    "ja": "(Windowsイベント)Windowsイベントレベル"
+  },
+  "CNT09672": {
+    "ko": "(윈도우 이벤트) 윈도우 이벤트 원본",
+    "en": "(Windows event) Windows event source",
+    "ja": "(Windowsイベント)Windowsイベントオリジナル"
+  },
+  "CNT09673": {
+    "ko": "(윈도우 이벤트) 윈도우 이벤트 로그 이름",
+    "en": "(Windows event) Windows event's log name",
+    "ja": "(Windowsイベント)Windowsイベントログ名"
+  },
+  "TTL09674": {
+    "ko": "프로젝트 수집 주기 설정",
+    "en": "Project collection cycle setting",
+    "ja": "プロジェクト収集間隔の設定"
+  },
+  "DSC09675": {
+    "ko": "현재 프로젝트는 기본 수집 주기인 5초 간격으로 생성됩니다.<br/>\n빠른 수집 주기(2초)를 사용하면 정밀한 실시간 모니터링이 가능해지고,<br/>\n성능 이슈 발생시 좀 더 쉬운 RCA(Root Cause Analysis)분석을 할 수 있습니다.",
+    "en": "The current project is generated at the default collection cycle of 5 seconds.<br/>\nA faster collection cycle (2 seconds) allows for precise real-time monitoring,<br/>\nand allows for easier RCA (Root Cause Analysis) when any performance issue occurs.",
+    "ja": "現在のプロジェクトは、デフォルトの収集間隔である5秒間隔で作成されます。<br/>\n短い収集間隔（2秒）を設定すると、より詳細なリアルタイムモニタリングが可能になます。<br/>\n性能問題が発生した際にはより的確にRCA（Root Cause Analysis）分析が実現できます。"
+  },
+  "DSC09676": {
+    "ko": "*향후에는 빠른 수집 주기(2초)가 기본 설정으로 전환될 예정입니다.",
+    "en": "*In the future, the faster collection cycle (2 seconds) is to be set as the default setting.",
+    "ja": "*今後は短い収集間隔（2秒）がデフォルト設定として変更される予定です。"
+  },
+  "ITM09677": {
+    "ko": "기본 수집 주기(5초)",
+    "en": "Default collection cycle (5 seconds)",
+    "ja": "デフォルト収集間隔（5秒）"
+  },
+  "ITM09678": {
+    "ko": "빠른 수집 주기(2초)",
+    "en": "Faster collection cycle (2 seconds)",
+    "ja": "短い収集間隔（2秒）"
+  },
+  "ITM09679": {
+    "ko": "포맷된 데이터",
+    "en": "Formatted data",
+    "ja": "フォーマットされたデータ"
+  },
+  "NTC09680": {
+    "ko": "현재 메뉴는 {date} 이후로 사이트맵을 통해서 진입할 수 있습니다. ",
+    "en": "The current menu can be accessed through the sitemap after {date}.",
+    "ja": "現在のメニューは{date}以降にサイトマップからアクセスできます。 "
+  },
+  "NTC09681": {
+    "ko": "현재 메뉴의 기능 및 편의성을 개선한 {title} 메뉴 이용을 권장합니다.",
+    "en": "It is recommended to use the {title} menu that has improved the functionality and convenience of the current menu.",
+    "ja": "現在のメニューの機能と利便性を向上させた{title}メニューの利用をお勧めします。"
+  },
+  "NTC09682": {
+    "ko": "{title} 메뉴는 <b>{date}자로 서비스를 종료</b>합니다.",
+    "en": "The {title} menu will end its service as if <b>{date}.",
+    "ja": "{title}メニューは<b> {date}からサービスを終了</b>します。"
+  },
+  "NTC09683": {
+    "ko": "{title} 메뉴는 아래의 경로로 이용하실 수 있습니다.",
+    "en": "The {title} menu can be accessed through the path below.",
+    "ja": "{title}メニューは以下のルートで利用できます。"
+  },
+  "DSC09684": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_PSTATE 지표를 MIG 모드에서 각 MIG 인스턴스 단위로 측정합니다.",
+    "en": "DCGM_FI_DEV_PSTATE metrics collected from DCGM are measured for each MIG instance in MIG mode.",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_PSTATE指標を、MIGモードで各MIGインスタンスごとに測定します。"
+  },
+  "DSC09685": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_PSTATE 지표를 MIG 모드가 비활성화된 상태에서 GPU 물리 디바이스 단위로 측정합니다.",
+    "en": "DCGM_FI_DEV_PSTATE metrics collected from DCGM are measured for each GPU physical device when the MIG mode is disabled.",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_PSTATE指標は、MIGモードが無効の状態でGPU物理デバイス単位で測定されます。"
+  },
+  "DSC09686": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 파드 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are aggregated for each Pod.",
+    "ja": "DCGMから収集された{metrics}指標をPod単位で集計します。"
+  },
+  "DSC09687": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 노드 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are aggregated for each node.",
+    "ja": "DCGMから収集された{metrics}指標をノード単位で集計します。"
+  },
+  "DSC09688": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 MIG 인스턴스 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are aggregated for each MIG instance.",
+    "ja": "DCGMから収集された{metrics}指標をMIGインスタンス単位で集計します。"
+  },
+  "DSC09689": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 GPU 물리 디바이스 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are aggregated for each GPU physical device.",
+    "ja": "DCGMから収集された{metrics}指標をGPU物理デバイス単位で集計します。"
+  },
+  "DSC09690": {
+    "ko": "DCGM에서 수집한 SM 클럭 정보를 파드 단위로 집계합니다.",
+    "en": "The SM clocks collected from DCGM are aggregated for each Pod.",
+    "ja": "DCGMから収集したSMクロック情報をPod単位で集計します。"
+  },
+  "DSC09691": {
+    "ko": "DCGM에서 수집한 SM 클럭 정보를 노드 단위로 평균하여 집계합니다.",
+    "en": "SM clocks collected from DCGM are averaged and aggregated for each node.",
+    "ja": "DCGMから収集されたSMクロック情報をノード単位で平均して集計します。"
+  },
+  "DSC09692": {
+    "ko": "DCGM에서 수집한 SM 클럭 정보를 MIG 인스턴스 단위로 평균하여 집계합니다.",
+    "en": "SM clocks collected from DCGM are averaged and aggregated for each MIG instance.",
+    "ja": "DCGMから収集されたSMクロック情報をMIGインスタンス単位で平均して集計します。"
+  },
+  "DSC09693": {
+    "ko": "DCGM에서 수집한 SM 클럭(MHz) 정보를 GPU 물리 디바이스 단위로 평균하여 집계합니다.",
+    "en": "SM clocks (MHz) collected from DCGM are averaged and aggregated for each GPU physical device.",
+    "ja": "DCGMから収集したSMクロック（MHz）情報をGPU物理デバイス単位で平均して集計します。"
+  },
+  "DSC09694": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 파드 단위로 계산합니다.",
+    "en": "The {metrics} collected from DCGM are calculated for each Pod.",
+    "ja": "DCGMから収集された{metrics}指標をPod単位で算出します。"
+  },
+  "DSC09695": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 노드 단위로 평균 계산합니다.",
+    "en": "The {metrics} collected from DCGM are averaged for each node.",
+    "ja": "DCGMから収集された{metrics}指標をノード単位で平均して算出します。"
+  },
+  "DSC09696": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_FB_USED_PERCENT 지표를 MIG 인스턴스 단위로 계산합니다.",
+    "en": "The DCGM_FI_DEV_FB_USED_PERCENT metrics collected from DCGM are calculated for each MIG instance.",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_FB_USED_PERCENT指標をMIGインスタンス単位で算出します。"
+  },
+  "DSC09697": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_FB_USED_PERCENT 지표를 GPU 물리 디바이스 단위로 계산합니다.",
+    "en": "The DCGM_FI_DEV_FB_USED_PERCENT metrics collected from DCGM are calculated for each GPU physical device.",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_FB_USED_PERCENT指標をGPU物理デバイス単位で算出します。"
+  },
+  "DSC09698": {
+    "ko": "DCGM에서 수집한 GPU 전력 사용량 지표를 파드 단위로 측정합니다.",
+    "en": "The GPU power usage metrics collected from DCGM are measured for each Pod.",
+    "ja": "DCGMから収集されたGPU電力使用量指標をPod単位で測定します。"
+  },
+  "DSC09699": {
+    "ko": "DCGM에서 수집한 GPU 전력 사용량 지표를 노드 단위로 평균 측정합니다.",
+    "en": "The GPU power usage metrics collected from DCGM are averaged for each node.",
+    "ja": "DCGMから収集されたGPU電力使用量指標をノード単位で平均して測定します。"
+  },
+  "DSC09700": {
+    "ko": "DCGM에서 수집한 GPU 전력 사용량 지표를 MIG 인스턴스 단위로 측정합니다.",
+    "en": "The GPU power usage metrics collected from DCGM are measured for each MIG instance.",
+    "ja": "DCGMから収集されたGPU電力使用量指標をMIGインスタンス単位で測定します。"
+  },
+  "DSC09701": {
+    "ko": "DCGM에서 수집한 GPU 전력 사용량 (Watt) 지표입니다. GPU 물리 디바이스 단위로 현재 전력 사용률을 측정합니다.",
+    "en": "It is the GPU power usage (Watt) metrics collected from DCGM. The current power usage is measured for each GPU physical device.",
+    "ja": "DCGMから収集されたGPU電力使用量（Watt）指標です。GPU物理デバイス単位で現在の電力使用率を測定します。"
+  },
+  "DSC09702": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 MIG 모드에서는 가중치(Compute Instance 비율)로 보정하여, 파드 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are weighted (Compute Instance ratio) in MIG mode and aggregated for each Pod.\n.",
+    "ja": "DCGMから収集された{metrics}指標をMIGモードでは、加重値（Compute Instance比）で補正し、Pod単位で集計します。"
+  },
+  "DSC09703": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 MIG 모드에서는 가중치(Compute Instance 비율)로 보정하여, 노드 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are weighted (Compute Instance ratio) in MIG mode and aggregated for each node.\n.",
+    "ja": "DCGMから収集された{metrics}指標をMIGモードでは、加重値（Compute Instance比）で補正し、ノード単位で集計します。"
+  },
+  "DSC09704": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 MIG 모드에서는 가중치(Compute Instance 비율)로 보정하여, MIG 인스턴스 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are weighted (Compute Instance ratio) in MIG mode and aggregated for each MIG instance.",
+    "ja": "DCGMから収集された{metrics}指標をMIGモードでは、加重値（Compute Instance比）で補正し、MIGインスタンス単位で集計します。"
+  },
+  "DSC09705": {
+    "ko": "DCGM에서 수집한 {metrics} 지표를 MIG 모드에서는 가중치(Compute Instance 비율)로 보정하여, GPU 물리 디바이스 단위로 집계합니다.",
+    "en": "The {metrics} collected from DCGM are weighted (Compute Instance ratio) in MIG mode and aggregated for each GPU physical device.",
+    "ja": "DCGMから収集した{metrics}指標をMIGモードでは、加重値（Compute Instance比）で補正し、GPU物理デバイス単位で集計します。"
+  },
+  "DSC09706": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_GPU_UTIL 지표를 파드 단위로 평균하여 파드별 GPU 사용률을 확인할 수 있습니다.",
+    "en": "You can check GPU utilization for each Pod by averaging the DCGM_FI_DEV_GPU_UTIL metrics collected from DCGM.",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_GPU_UTIL指標をPod単位で平均して、PodごとのGPU使用率が確認できます。"
+  },
+  "DSC09707": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_GPU_UTIL 지표를 노드 단위로 평균하여 노드 전체 GPU 평균 사용률을 보여줍니다.",
+    "en": "The average GPU utilization of the entire node is displayed by averaging the DCGM_FI_DEV_GPU_UTIL metrics collected from DCGM for each node.",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_GPU_UTIL指標をノード単位で平均して、ノード全体のGPU平均使用率として表示します。"
+  },
+  "DSC09708": {
+    "ko": "DCGM에서 수집한 DCGM_FI_DEV_GPU_UTIL 지표를 GPU 물리 디바이스 단위로 집계합니다. 디바이스가 MIG 모드인 경우에는 해당 지표가 측정되지 않으며(DCGM_FI_PROF_GR_ENGINE_ACTIVE 지표를 통해 GPU 사용률을 측정을 권고합니다.)",
+    "en": "The DCGM_FI_DEV_GPU_UTIL metrics collected from DCGM are aggregated for each GPU physical device. In MIG mode, the metrics are not measured (it is recommended to measure the GPU utilization through the DCGM_FI_PROF_GR_ENGINE_ACTIVE metric).",
+    "ja": "DCGMから収集されたDCGM_FI_DEV_GPU_UTIL指標をGPU物理デバイス単位で集計します。デバイスがMIGモードの場合、この指標は測定されません。（DCGM_FI_PROF_GR_ENGINE_ACTIVE指標を介してGPU使用率を測定することをお勧めします。）"
+  },
+  "DSC09709": {
+    "ko": "변수 확인을 위해 복호화 키를 입력해 주세요.\n복호화 키는 6자리 영어, 숫자로 이루어진 키입니다. ",
+    "en": "Enter the decryption key to check the variable. The decryption key is a 6-digit alphanumeric key.",
+    "ja": "変数確認のために復号化キーを入力してください。\n復号化キーは、6桁の英語、数字のキーです。 "
+  },
+  "TTL09710": {
+    "ko": "복호화 키 확인",
+    "en": "Checking the decryption key",
+    "ja": "復号化キーの確認"
+  },
+  "BTN09711": {
+    "ko": "복호화 키 불일치 감지",
+    "en": "Detect decryption key mismatch",
+    "ja": "復号鍵不一致の検知"
+  },
+  "DSC09712": {
+    "ko": "입력한 복호화 키가 일치하지 않습니다.",
+    "en": "The entered decryption key does not match.",
+    "ja": "入力した復号化キーが一致しません。"
+  },
+  "DSC09713": {
+    "ko": "키를 확인한 후 다시 시도해주세요.",
+    "en": "Check the key and try again.",
+    "ja": "キーを確認してからもう一度試してください。"
+  },
+  "BTN09714": {
+    "ko": "복호화키 재입력",
+    "en": "Reenter decryption key",
+    "ja": "復号化キーの再入力"
+  },
+  "TTL09715": {
+    "ko": "조회 구간",
+    "en": "Search section",
+    "ja": "検索区間"
+  },
+  "TTL09716": {
+    "ko": "불일치 건 수",
+    "en": "Number of mismatches",
+    "ja": "不一致の件数"
+  },
+  "DSC09717": {
+    "ko": "일부 에이전트에서 입력한 복호화 키가 다릅니다.",
+    "en": "The decryption keys entered from several agents are different.",
+    "ja": "一部のエージェントから入力された復号化キーが異なります。"
+  },
+  "DSC09718": {
+    "ko": "아래 에러 내역을 확인한 후 다시 시도해 주세요.",
+    "en": "Check the error details below and then try again.",
+    "ja": "以下のエラー内容を確認してからもう一度試してください。"
+  },
+  "TTL09719": {
+    "ko": "복호화 키 불일치",
+    "en": "Decryption key mismatch",
+    "ja": "復号化キーの不一致"
+  },
+  "DSC09720": {
+    "ko": "{name} 노드의 메모리 사용률이 90% 이상({memoryUsedPercent}%)으로 매우 높습니다. OOMKilled가 발생할 수 있습니다.",
+    "en": "The memory usage of {name} node ({memoryUsedPercent}%) is very high. The OOMKilled may occur.",
+    "ja": "{name}ノードのメモリ使用率が90％以上（{memoryUsedPercent}％）で非常に高く、OOMKilledの発生の可能性があります。"
+  },
+  "DSC09721": {
+    "ko": "{name} 노드의 메모리 사용률이 10% 이하({memoryUsedPercent}%)로 매우 낮습니다. 리소스 과할당이 의심됩니다.",
+    "en": "The memory usage of the {name} node ({memoryUsedPercent}%) is very low. Resource over-allocation is suspected.",
+    "ja": "{name}ノードのメモリ使用率が10％以下（{memoryUsedPercent}％）で非常に低く、リソースの過度な割り当ての可能性があります。"
+  },
+  "DSC09722": {
+    "ko": "{name} 노드가 메모리 압박 상태에 있습니다. 스케줄링 제약이 발생할 수 있습니다.",
+    "en": "The {name} node is under memory pressure. Scheduling constraints may occur.",
+    "ja": "{name} ノードがDiskPressure状態にあります。スケジューリング制約が発生する可能性があります。"
+  },
+  "DSC09723": {
+    "ko": "{name} 노드는 노드 전체 메모리 중 30% 이상이 시스템 예약 등으로 사용 중입니다.",
+    "en": "More than 30% of the total memory of the {name} node is in use for system reservation and such.",
+    "ja": "{name}ノードは、ノード全体のメモリの30％以上がシステム予約などとして使用されています。"
+  },
+  "DSC09724": {
+    "ko": "{name} 노드는 현재 메모리 리소스가 안정적인 상태입니다.",
+    "en": "The {name} node is currently in stable memory resource state.",
+    "ja": "{name} ノードは、現在のメモリリソースが安定している状態です。"
+  },
+  "DSC09725": {
+    "ko": "{name} 노드의 디스크 사용률이 90% 이상({usedSpacePercent}%)으로 매우 높습니다. 로그, 볼륨, 이미지 레이어 저장 등이 실패할 수 있습니다.",
+    "en": "The disk usage of the name} node (${usedSpacePercent}%) is very high. Storing logs, volumes, image layer storage, and the like may fail.",
+    "ja": "{name}ノードのディスク使用率が90％以上（{usedSpacePercent}％）で非常に高いです。ログ、ボリューム、イメージレイヤーの保存などが失敗する可能性があります。"
+  },
+  "DSC09726": {
+    "ko": "{name} 노드의 디스크 사용률이 10% 이하({usedSpacePercent}%)로 매우 낮습니다. 리소스는 충분하나 배포 정책 최적화를 검토해 보세요.",
+    "en": "The disk usage of the {name} node (${usedSpacePercent}%) is very low. Resources are sufficient, but consider optimizing the deployment policy.",
+    "ja": "{name}ノードのディスク使用率が10％以下（{usedSpacePercent}％）で非常に低いです。リソースには余裕がありますが、配布ポリシーの最適化を検討する必要があります。"
+  },
+  "DSC09727": {
+    "ko": "{name} 노드는 디스크 용량의 상당 부분이 시스템에 예약되어 있습니다. Pod의 scratch 용량 확보가 어려울 수 있습니다.",
+    "en": "The {name} node has a significant amount of disk space reserved for the system. Pods may have difficulty securing the scratch capacity.",
+    "ja": "{name} ノードは、ディスク容量のほとんどがシステムに予約されています。Podのスクラッチ容量の確保が難しい場合があります。"
+  },
+  "DSC09728": {
+    "ko": "{name} 노드는 현재 디스크 리소스가 안정적인 상태입니다.",
+    "en": "The {name} node is in stable state with disk resources.",
+    "ja": "{name} ノードは現在のディスクリソースが安定している状態です。"
+  },
+  "DSC09729": {
+    "ko": "{name} 노드는 파드 수가 한계({allocatablePods}개)에 도달해 더 이상 스케줄이 불가능합니다.",
+    "en": "The {name} node has reached its limit for Pods (${allocatablePods}) and can no longer be scheduled.",
+    "ja": "ノード {name} は、Pod数が制限 ({allocatablePods} 個) に達し、これ以上スケジュールできなくなります。"
+  },
+  "DSC09730": {
+    "ko": "{name} 노드에 여유 파드 수가 {remainingPods}개로 적습니다. 스케줄 불가 상태가 될 수 있습니다.",
+    "en": "The {name} node has less free Pods (${allocatablePods - currentPods}). It may become unschedulable.",
+    "ja": "{name} ノードの空きPod数が {remainingPods} 個で少ないです。スケジューリング制約が発生する可能性があります。"
+  },
+  "DSC09731": {
+    "ko": "{name} 노드는 현재 파드 수가 안정적인 수준입니다.",
+    "en": "The {name} node is in stable state with Pods.",
+    "ja": "{name} ノードは、現在Pod数が安定している状態です。"
+  },
+  "DSC09732": {
+    "ko": "모든 노드의 상태는 정상입니다. 현재 모든 조건이 양호하게 유지되고 있습니다.",
+    "en": "All nodes are healthy. All conditions are maintained in normal state.",
+    "ja": "すべてのノードの状態が正常です。現在、すべての条件が問題なく維持されています。"
+  },
+  "DSC09733": {
+    "ko": "모든 노드의 CPU 리소스가 안정적인 상태입니다.",
+    "en": "CPU resources on all nodes are stable.",
+    "ja": "すべてのノードの CPU リソースが安定した状態です。"
+  },
+  "DSC09734": {
+    "ko": "모든 노드의 디스크 리소스가 안정적인 상태입니다.",
+    "en": "Disk resources on all nodes are stable.",
+    "ja": "すべてのノードのディスクリソースが安定した状態です。"
+  },
+  "DSC09735": {
+    "ko": "모든 노드의 Memory 리소스가 안정적인 상태입니다.",
+    "en": "Memory resources on all nodes are stable.",
+    "ja": "すべてのノードのメモリーリソースが安定した状態です。"
+  },
+  "DSC09736": {
+    "ko": "모든 노드의 파드 수가 안정적인 수준입니다.",
+    "en": "The number of Pods on all nodes is in stable level.",
+    "ja": "すべてのノードのPod数が安定した状態です。"
+  },
+  "DSC09737": {
+    "ko": "{nodeName} 노드의 CPU 여유량({availableCpu})이 컨테이너의 CPU 요청량({totalRequestedCpu})보다 부족합니다.",
+    "en": "The CPU free space ({availableCpu}) on the {nodeName} node is less than the CPU request ({totalRequestedCpu}) of the container.",
+    "ja": "{nodeName} ノードの CPU の空き容量 ({availableCpu}) が、コンテナーの CPU 要求量 ({totalRequestedCpu}) より不足しています。"
+  },
+  "DSC09738": {
+    "ko": "{nodeName} 노드의 임시 스토리지 여유량({availableStorage})이 컨테이너의 임시 스토리지 요청량({totalRequestedStorage)})보다 부족합니다.",
+    "en": "The temporary storage's free space ({availableStorage}) on the {nodeName} node is less than the temporary storage request ({totalRequestedStorage)}) of the container.",
+    "ja": "{nodeName}ノードの一時ストレージの空き容量（{availableStorage}）が、コンテナの一時ストレージ要求量（{totalRequestedStorage）}）より不足しています。"
+  },
+  "DSC09739": {
+    "ko": "{nodeName} 노드의 메모리 여유량({availableMemory})이 컨테이너의 메모리 요청량({totalRequestedMemory})보다 부족합니다.",
+    "en": "The memory free space ({availableMemory}) on the {nodeName} node is less than the memory request ({totalRequestedMemory}) of the container.",
+    "ja": "{nodeName} ノードのメモリー空き容量 ({availableMemory}) が、コンテナーのメモリー要求量 ({totalRequestedMemory}) より不足しています。"
+  },
+  "DSC09740": {
+    "ko": "Pod의 CPU 요청 설정을 확인하고, 클러스터 노드의 CPU가 충분한지 확인합니다.",
+    "en": "Check the CPU request settings of the Pod and ensure that the cluster nodes have sufficient CPU.",
+    "ja": "PodのCPU要求設定を確認します。また、クラスタノードのCPUが十分なのかを確認してください。"
+  },
+  "DSC09741": {
+    "ko": "Pod의 임시 스토리지 요청 설정을 확인하고, 클러스터 노드의 임시 스토리지가 충분한지 확인합니다.",
+    "en": "Check the temporary storage request settings of the Pod and ensure that the cluster nodes have sufficient temporary storage.",
+    "ja": "Podの一時ストレージ要求設定を確認します。また、クラスタノードの一時ストレージが十分なのかを確認してください。"
+  },
+  "DSC09742": {
+    "ko": "Pod의 메모리 요청 설정을 확인하고, 클러스터 노드의 메모리가 충분한지 확인합니다.",
+    "en": "Check the memory request settings of your Pods and ensure that your cluster nodes have sufficient memory.",
+    "ja": "Podのメモリ要求設定を確認します。また、クラスタノードのメモリが十分なのかを確認してください。"
+  },
+  "DSC09743": {
+    "ko": "노드의 할당 가능한 Pod 수와 실행 중인 Pod 수를 확인합니다.",
+    "en": "Check the number of allocatable Pods and the number of running Pods on the node.",
+    "ja": "ノードの割り当て可能なPod数と、実行中のPodの数を確認します。"
+  },
+  "DSC09744": {
+    "ko": "{name} 컨테이너의 CPU 사용량이 제한의 90%를 초과하고 있습니다. Throttling으로 인한 성능 저하가 발생할 수 있습니다.",
+    "en": "The {name} container's CPU usage is over 90% of its limit. Performance degradation may occur due to throttling.",
+    "ja": "{name}コンテナのCPU使用率が制限値の90％を超えています。 スロットリングによる性能低下が発生する可能性があります。"
+  },
+  "DSC09745": {
+    "ko": "{name} 컨테이너의 메모리 사용량이 제한의 90%를 초과하고 있습니다. OOMKilled로 인해 재시작될 수 있습니다.",
+    "en": "The {name} container's memory usage is over 90% of its limit. It may be restarted due to OOMKilled.",
+    "ja": "{name}コンテナのメモリ使用量が制限値の90％を超えています。 OOMKilledによって再起動する可能性があります。"
+  },
+  "DSC09746": {
+    "ko": "{name} 컨테이너는 리소스 사용량이 낮음에도 반복적으로 재시작되고 있습니다. 시작 명령 오류나 환경 변수 누락이 원인일 수 있습니다. (재시작 횟수: {restartCount})",
+    "en": "The {name} container is being restarted repeatedly despite low resource usage. This may be due to a start command error or missing environment variables (restart count: {restartCount}).",
+    "ja": "{name} コンテナは、リソース使用率が低い場合でも再起動を繰り返すことがあります。開始コマンドのエラー、または環境変数が欠落している可能性があります。 （再起動回数：{restartCount}）"
+  },
+  "DSC09747": {
+    "ko": "{name} 컨테이너의 메모리 요청값이 너무 낮아, 스케줄링이나 안정성에 문제가 생길 수 있습니다.",
+    "en": "The {name} container's memory request is too low, which may cause scheduling or stability issues.",
+    "ja": "{name}コンテナのメモリ要求値が低すぎるため、スケジューリングや安定性に問題が発生する可能性があります。"
+  },
+  "DSC09748": {
+    "ko": "{name} 컨테이너의 CPU 요청값이 설정되지 않았거나 매우 낮습니다. 노드 스케줄링 시 우선순위가 낮을 수 있습니다.",
+    "en": "The {name} container's CPU request value has not been set or very low. It may have a low priority when scheduling nodes.",
+    "ja": "{name}コンテナのCPU要求値が設定されていないか、非常に低いです。ノードスケジューリングの優先順位が低い可能性があります。"
+  },
+  "DSC09749": {
+    "ko": "{name} 컨테이너는 현재 리소스 사용량과 설정이 정상 범위이며, 안정적으로 운영 중입니다.",
+    "en": "The {name} container is operating stably with normal resource usage and settings.",
+    "ja": "{name} コンテナは現在、リソース使用量と設定が正常であり、安定して稼働しています。"
+  },
+  "DSC09750": {
+    "ko": "{name} 노드는 현재 Ready 상태가 아니며, 클러스터 운영에 영향을 줄 수 있습니다.",
+    "en": "The {name} node is not in Ready state, which may affect cluster operation.",
+    "ja": "{name} ノードは現在 Ready 状態ではなく、クラスタの運用に影響を与える可能性があります。"
+  },
+  "DSC09751": {
+    "ko": "{name} 노드에 디스크 압박(DiskPressure)이 발생 중입니다. 디스크 자원이 매우 부족합니다.",
+    "en": "The {name} node is encountering disk pressure. Disk resources are insufficient.",
+    "ja": "{name}ノードにDiskPressureがあります。ディスクのリソースが不足しています。"
+  },
+  "DSC09752": {
+    "ko": "{name} 노드에 메모리 압박(MemoryPressure)이 발생 중입니다. 리소스 할당에 실패할 수 있습니다.",
+    "en": "The {name} node is encountering memory pressure. Resource allocation may fail.",
+    "ja": "{name}ノードにMemoryPressureが発生しています。リソースの割り当てに失敗する可能性があります。"
+  },
+  "DSC09753": {
+    "ko": "{name} 노드에서 PIDPressure이 발생 중입니다. 새로운 컨테이너 생성에 실패할 수 있습니다.",
+    "en": "The {name} node is encountering PIDPressure. New container creation may fail.",
+    "ja": "{name} ノードで PIDPressure が発生しています。新しいコンテナの作成に失敗する可能性があります。"
+  },
+  "DSC09754": {
+    "ko": "{name} 노드는 현재 스케줄링이 비활성화되어 있습니다. 운영 정책 또는 장애 조치에 따른 설정일 수 있습니다.",
+    "en": "The {name} node is disabled for scheduling. This setting may be due to the operational policy or failover settings.",
+    "ja": "{name} ノードは現在スケジューリングが無効になっています。運用ポリシー、またはフェイルオーバーによる設定の可能性もあります。"
+  },
+  "DSC09755": {
+    "ko": "{name} 노드의 상태는 정상입니다. 현재 모든 조건이 양호하게 유지되고 있습니다.",
+    "en": "The {name} node is healthy. All conditions are currently maintained well.",
+    "ja": "{name} ノードの状態は正常です。現在、すべての条件が問題なく維持されています。"
+  },
+  "DSC09756": {
+    "ko": "{name} 노드의 CPU 사용률이 90% 이상({cpuUsedPercent}%)으로 매우 높습니다. 리소스 확장이 필요할 수 있습니다.",
+    "en": "The {name} node's CPU utilization is very high, greater than 90% ({cpuUsedPercent}%). Resource expansion may be required.",
+    "ja": "{name}ノードのCPU使用率が90％以上（{cpuUsedPercent}％）で、非常に高いです。リソース拡張が必要な​​場合があります。"
+  },
+  "DSC09757": {
+    "ko": "{name} 노드의 CPU 사용률이 10% 이하({cpuUsedPercent}%)로 매우 낮습니다. 리소스 과할당이 의심됩니다.",
+    "en": "The {name} node's CPU utilization is very low, less than 10% ({cpuUsedPercent}%). Resource over-allocation is suspected.",
+    "ja": "{name}ノードのCPU使用率が10％以下（{cpuUsedPercent}％）で、非常に低いです。リソースの過度な割り当ての可能性があります。"
+  },
+  "DSC09758": {
+    "ko": "{name} 노드는 노드 전체 CPU 중 30% 이상이 시스템 예약 등으로 사용 중입니다.",
+    "en": "The {name} node is using more than 30% of the node's total CPU for system reservations and such.",
+    "ja": "{name}ノードは、ノード全体のCPUの30％以上がシステム予約などで使用されています。"
+  },
+  "DSC09759": {
+    "ko": "{name} 노드는 현재 CPU 리소스가 안정적인 상태입니다.",
+    "en": "The {name} node is currently in a stable CPU resource state.",
+    "ja": "{name} ノードは現在の CPU リソースが安定している状態です。"
+  },
+  "TTL09760": {
+    "ko": "노드 {resource} 상태",
+    "en": "Node {resource} status",
+    "ja": "ノード{resource}ステータス"
+  },
+  "TTL09761": {
+    "ko": "컨테이너 {resource} 요청",
+    "en": "Container {resource} request",
+    "ja": "コンテナ{resource}リクエスト"
+  },
+  "TLT09762": {
+    "ko": "해당 URL이 속한 서비스·업무 영역을 구분하는 이름입니다. (예: 회원관리, 주문통계)",
+    "en": "Name that distinguishes the service and business area to which the URL belongs (e.g. membership management, order statistics).",
+    "ja": "該当の URL が属するサービス/業務領域を区別する名前です。 （例：会員管理、注文統計）"
+  },
+  "TLT09763": {
+    "ko": "URL이 지칭하는 구체적 화면이나 기능을 식별하는 명칭입니다. (예: 회원 상세, 대시보드 메인)",
+    "en": "Name that identifies the specific screen or function that the URL refers to (e.g. membership details, dashboard main).",
+    "ja": "URLが指す具体的な画面や機能を識別する名前です。 （例：会員詳細、ダッシュボードメイン）"
+  },
+  "ITM09764": {
+    "ko": "수정 가능",
+    "en": "Can be modified",
+    "ja": "修正可能"
+  },
+  "ITM09765": {
+    "ko": "URL 패턴 미지정",
+    "en": "URL pattern unspecified",
+    "ja": "URLパターン未指定"
+  },
+  "DSC09766": {
+    "ko": "읽기 전용으로 설정된 경우, <br />플렉스보드 위젯은 수정할 수 없습니다.",
+    "en": "If set to read-only, <br />flexboard widgets cannot be modified.",
+    "ja": "読み取り専用に設定されている場合、<br />Flexボードウィジェットは変更できません。"
+  },
+  "TTL09767": {
+    "ko": "공유 권한 수정",
+    "en": "Sharing role modification",
+    "ja": "共有権限の変更"
+  },
+  "DSC09768": {
+    "ko": "{nodeName} 노드의 메모리 여유량({availableMemory})이 컨테이너의 메모리 요청량({totalRequestedMemory})보다 부족합니다.",
+    "en": "The memory availability ({availableMemory}) of the {nodeName} node is less than the memory request value ({totalRequestedMemory}) of the container.",
+    "ja": "{nodeName} ノードのメモリー空き容量 ({availableMemory}) は、コンテナーのメモリー要求量 ({totalRequestedMemory}) より不足しています。"
+  },
+  "DSC09769": {
+    "ko": "{nodeName} 노드의 CPU 여유량({availableCpu})이 컨테이너의 CPU 요청량({totalRequestedCpu})보다 부족합니다.",
+    "en": "The CPU availability ({availableCpu}) of the {nodeName} node is less than the CPU request value ({totalRequestedCpu}) of the container.",
+    "ja": "{nodeName} ノードの CPU の空き容量 ({availableCpu}) がコンテナーの CPU 要求量 ({totalRequestedCpu}) より不足しています。"
+  },
+  "DSC09770": {
+    "ko": "{nodeName} 노드의 임시 스토리지 여유량({availableStorage})이 컨테이너의 임시 스토리지 요청량({totalRequestedStorage})보다 부족합니다.",
+    "en": "The temporary storage availability ({availableStorage}) of the {nodeName} node is less than the temporary storage request value ({totalRequestedStorage}) of the container.",
+    "ja": "{nodeName}ノードの一時ストレージの空き容量（{availableStorage}）は、コンテナの一時ストレージ要求量（{totalRequestedStorage}）より不足しています。"
+  },
+  "BTN09771": {
+    "ko": "자동 스크롤",
+    "en": "Auto scroll",
+    "ja": "自動スクロール"
+  },
+  "DSC09772": {
+    "ko": "{name} 노드의 {resource} 사용률이 측정되지 않았습니다.",
+    "en": "The {resource} utilization of the {name} node has not been measured.",
+    "ja": "{name} ノードの {resource} 使用率が測定されていません。"
+  },
+  "TLT09773": {
+    "ko": "로그의 태그를 표시합니다.",
+    "en": "It displays the tag of the log.",
+    "ja": "ログのタグを表示します。"
+  },
+  "BTN09774": {
+    "ko": "태그 표시",
+    "en": "Display tag",
+    "ja": "タグを表示"
+  },
+  "TLT09775": {
+    "ko": "Long, double, float 타입의 숫자 값",
+    "en": "Numeric values ​​of type long, double, or float",
+    "ja": "Long、double、float 型の数値"
+  },
+  "TLT09776": {
+    "ko": "이메일 본문과 같은 전체 텍스트",
+    "en": "Full text such as email body",
+    "ja": "メール本文などの全体テキスト"
+  },
+  "DSC09777": {
+    "ko": "이벤트 메시지를 분석합니다.",
+    "en": "It analyzes the event message.",
+    "ja": "イベントメッセージを分析します。"
+  },
+  "DSC09778": {
+    "ko": "컨테이너가 반복적으로 실패하며 kubelet이 일정 시간 간격으로 재시작을 시도하는 상태입니다. 이는 CrashLoopBackOff와 유사하며, 컨테이너 내부 애플리케이션의 오류 가능성이 높습니다.",
+    "en": "The container failed repeatedly and the kubelet is trying to restart it at regular intervals. This is similar to CrashLoopBackOff and is likely an application error inside the container.",
+    "ja": "コンテナが失敗を繰り返し、kubelet が一定間隔で再起動しようとしている状態です。これはCrashLoopBackOffと類似で、コンテナ上のアプリケーションのエラーの可能性が高いです。"
+  },
+  "DSC09779": {
+    "ko": "컨테이너 이미지를 다운로드할 때 필요한 인증 정보(Image Pull Secret)를 찾을 수 없어, Kubernetes가 해당 이미지를 정상적으로 가져오지 못할 가능성이 있는 상태입니다. 비공개 레지스트리 사용 시 자주 발생합니다.",
+    "en": "The required authentication information (Image Pull Secret) cannot be found when downloading the container image. Accordingly, Kubernetes may not be able to pull the image properly. This often occurs when using a private registry.",
+    "ja": "コンテナイメージのダウンロード時に必要な認証情報（Image Pull Secret）が見つからず、Kubernetesが当該イメージを正常にインポートできない可能性がある状態です。プライベートレジストリを使用する場合によく発生します。"
+  },
+  "DSC09780": {
+    "ko": "클러스터 내 노드에 이미 많은 수의 Pod가 배치되어 있어 새로운 Pod를 스케줄링할 수 없는 상태입니다. PodDensity 제한 또는 노드 스케일링이 필요할 수 있습니다.",
+    "en": "A node in the cluster already has many Pods deployed, and no new Pods can be scheduled. PodDensity limitation or node scaling may be required.",
+    "ja": "クラスタ内のノードにすでに多くのPodが配置されていて、新しいPodをスケジュールできない状態です。 PodDensityの制限、またはノードのスケーリングが必要な場合があります。"
+  },
+  "DSC09781": {
+    "ko": "Pod를 배치하려 했으나 사용 가능한 메모리가 부족하여 실패한 상태입니다. 노드 메모리 사용량을 확인하고 스케일링 또는 리소스 요청 조정이 필요할 수 있습니다.",
+    "en": "Attempts had been made to deploy Pods but failed due to insufficient memory. Check the node memory usage. Scaling or resource request adjustment may be required.",
+    "ja": "Podを配置しようとしたが、使用できるメモリが不足して失敗した状態です。ノードのメモリを確認してスケーリング、またはリソースリクエストの調整が必要な場合があります。"
+  },
+  "DSC09782": {
+    "ko": "Pod를 배치하려 했으나 사용 가능한 CPU가 부족하여 실패한 상태입니다. CPU 요청량을 확인하고 노드 추가 또는 리소스 요청 최적화가 필요할 수 있습니다.",
+    "en": "Pod deployment failed due to insufficient CPU. Check the CPU request amount and adding nodes or optimizing resource requests may be required.",
+    "ja": "Podを配置しようとしたが、使用できるCPUが不足して失敗した状態です。 CPUリクエスト量を確認してノードの追加、またはリソース要求の調整が必要な場合があります。"
+  },
+  "DSC09783": {
+    "ko": "임시 스토리지(ephemeral-storage)가 부족하여 새로운 Pod를 배치할 수 없는 상태입니다. 로그, 캐시 등으로 디스크 공간이 고갈되었을 가능성이 있습니다.",
+    "en": "New Pods cannot be deployed due to insufficient ephemeral storage. Disk space may have been exhausted due to logs, cache, and such.",
+    "ja": "一時ストレージ(ephemeral-storage)が不足しているため、新しいPodを配置できない状態です。ログやキャッシュ等によってディスク容量が不足している可能性があります。"
+  },
+  "DSC09784": {
+    "ko": "Kubernetes 노드가 Ready 상태가 아니며, 이 상태에서는 Pod가 스케줄링되거나 실행될 수 없습니다. 네트워크 장애, 디스크/메모리 부족, kubelet 오류 등이 원인일 수 있습니다.",
+    "en": "Kubernetes node is not ready, and Pods cannot be scheduled or run in this state. This may be due to network failure, insufficient disk/memory, and kubelet error.",
+    "ja": "KubernetesノードがReady状態ではありません。この状態ではPodはスケジュール、または実行できません。ネットワーク障害、ディスクやメモリの不足、kubeletエラーなどが原因である可能性があります。"
+  },
+  "DSC09785": {
+    "ko": "Kubernetes가 컨테이너 이미지를 가져오려 했지만 실패한 상태입니다. 이미지가 존재하지 않거나 접근 권한이 없을 수 있습니다.",
+    "en": "Kubernetes attempted to pull the container image but failed. The image may not exist or you may not have the access right.",
+    "ja": "Kubernetesがコンテナイメージを取得しようとしたが失敗した状態です。イメージが存在しないか、アクセス権限がない可能性があります。"
+  },
+  "DSC09786": {
+    "ko": "컨테이너 이미지 풀 중 일반적인 오류가 발생한 상태입니다. 이미지 경로, 네트워크, 인증 정보 등을 확인해야 합니다.",
+    "en": "A general error occurred while pulling the container image. Check the image path, network, and authentication information.",
+    "ja": "コンテナイのメージプールに一般的なエラーが発生した状態です。イメージのパス、ネットワーク、認証情報などを確認する必要があります。"
+  },
+  "DSC09787": {
+    "ko": "이미지 풀에 반복적으로 실패하여 kubelet이 잠시 Pull 작업을 중단한 상태입니다. 인증 오류, 잘못된 이미지 주소 등이 원인일 수 있습니다.",
+    "en": "The kubelet has temporarily stopped the pull operation due to repeated image pull failures. This may be due to authentication error or incorrect image address.",
+    "ja": "イメージプールに失敗が繰り返し、kubeletがしばらくPull操作を中断した状態です。認証エラー、無効なイメージアドレスなどが原因である可能性があります。"
+  },
+  "DSC09788": {
+    "ko": "컨테이너 이미지가 노드에 존재하지 않으며, Pull 정책이 Never로 설정되어 있어 외부에서 이미지를 가져올 수도 없는 상태입니다.",
+    "en": "The container image does not exist on the node, and the Pull policy is set to Never. Accordingly, the image cannot be loaded from outside.",
+    "ja": "コンテナイメージがノードに存在せず、PullポリシーがNeverに設定されているため、外部からイメージを取得できない状態です。"
+  },
+  "DSC09789": {
+    "ko": "컨테이너 이미지가 노드에 존재하지 않지만, 이미지 풀 정책이 Never로 설정되어 있어서 이미지를 다운로드하지 않도록 되어 있는 상태입니다.",
+    "en": "The container image does not exist on the node and the image Pull policy is set to Never. Accordingly, the image cannot be downloaded.",
+    "ja": "コンテナイメージがノードに存在しないが、イメージプールのポリシーがNeverに設定されているため、イメージをダウンロードしないようになっている状態です。"
+  },
+  "DSC09790": {
+    "ko": "이미지 태그가 명시되지 않았고 기본 태그(`latest`)를 적용하려 했으나 실패한 상태입니다. 이미지 이름에 태그를 명시적으로 포함하는 것이 좋습니다.",
+    "en": "The image tag has not been specified, and applying the default tag (`latest`) was attempted but it failed. It is recommended to explicitly include the tag in the image name.",
+    "ja": "イメージタグが指定されていなく、デフォルトのタグ（ `latest`）を適用しようとしたが失敗した状態です。イメージ名にタグを明示的に含めることをお勧めします。"
+  },
+  "DSC09791": {
+    "ko": "이미지 이름 형식이 잘못되어 컨테이너 런타임이 이미지를 파싱하지 못하는 상태입니다. 이름 내 공백, 콜론(:) 등의 문법 오류가 있을 수 있습니다.",
+    "en": "The image name format is wrong, so the container runtime cannot parse the image. There may be grammar errors in the name such as spaces or colons (:).",
+    "ja": "イメージ名の形式が正しくないため、コンテナランタイムがイメージを解析できない状態です。イメージ名内に空白、コロン(:)などの文法エラーがある可能性があります。"
+  },
+  "DSC09792": {
+    "ko": "컨테이너 시작 상태를 확인하는 Startup Probe가 실패하여, 해당 컨테이너가 비정상으로 간주되고 재시작되고 있는 상태입니다. 애플리케이션의 초기 지연 또는 잘못된 probe 설정이 원인일 수 있습니다.",
+    "en": "The Startup Probe that checks the container startup status, failed. Accordingly, the container is considered abnormal and is being restarted. This may be due to an initial delay in the application or an incorrect probe setting.",
+    "ja": "コンテナの起動状態を確認する Startup Probe が失敗したため、当該コンテナが異常と見なされて再起動している状態です。アプリケーションの初期遅延、または誤ったprobe設定が原因である可能性があります。"
+  },
+  "DSC09793": {
+    "ko": "서비스 트래픽을 받기 위한 준비 상태를 확인하는 Readiness Probe가 실패하여, 해당 컨테이너가 서비스 대상에서 제외된 상태입니다.",
+    "en": "The Readiness Probe that checks the readiness to receive service traffic, failed. Accordingly, the container is excluded from the service targets.",
+    "ja": "サービストラフィックを受信するための準備状態を確認するReadiness Probeが失敗し、当該コンテナがサービス対象から除外された状態です。"
+  },
+  "DSC09794": {
+    "ko": "컨테이너가 정상적으로 살아있는지를 확인하는 Liveness Probe가 실패하여, Kubernetes가 해당 컨테이너를 재시작한 상태입니다.",
+    "en": "The Liveness Probe that checks whether the container is alive, failed. Accordingly, Kubernetes restarted the container.",
+    "ja": "コンテナが正常に稼働していることを確認するLiveness Probeが失敗し、Kubernetesが当該コンテナを再起動した状態です。"
+  },
+  "TTL09795": {
+    "ko": "작업 시간",
+    "en": "Opertation time",
+    "ja": "作業時間"
+  },
+  "DSC09796": {
+    "ko": "검색 결과를 찾을 수 없습니다.",
+    "en": "Search results cannot be found.",
+    "ja": "検索結果が見つかりません。"
+  },
+  "DSC09797": {
+    "ko": "프로파일은 <span style=\"font-weight: bold;\">최대 {days}일 전 기간</span>까지 조회 가능합니다.",
+    "en": "Profiles can be viewed <span style=\"font-weight: bold;\">up to {days} days ago</span>.",
+    "ja": "プロフィールは<span style = \"font-weight：bold;\">最大{days}日前の期間</span>まで表示できます。"
+  },
+  "NTC09798": {
+    "ko": "{target}의 최소값은 {minValue} 입니다.",
+    "en": "The minimum value of {target} is {minValue}.",
+    "ja": "{target}の最小値は{minValue}です。"
+  },
+  "TLT09799": {
+    "ko": "{target}은(는) {step} 단위로만 입력 가능합니다.",
+    "en": "The {target} can be entered only in {step} units.",
+    "ja": "{target}は{step}単位でのみ入力できます。"
+  },
+  "TTL09800": {
+    "ko": "세션 트레이스",
+    "en": "Session Trace",
+    "ja": "セッショントレース"
+  },
+  "TTL09801": {
+    "ko": "쿼리 실행 인스턴스",
+    "en": "Query execution instance",
+    "ja": "クエリ実行インスタンス"
+  },
+  "TTL09802": {
+    "ko": "워크로드",
+    "en": "Workload",
+    "ja": "ワークロード"
+  },
+  "ITM09803": {
+    "ko": "한글 이름",
+    "en": "Korean name",
+    "ja": "ハングル名"
+  },
+  "ITM09804": {
+    "ko": "생년월일",
+    "en": "Birth date",
+    "ja": "生年月日"
+  },
+  "ITM09805": {
+    "ko": "허용 여부",
+    "en": "Allowed or not",
+    "ja": "許可するかどうか"
+  },
+  "DSC09806": {
+    "ko": "MySQL 8 버전 이상일 경우<br/>락 데이터 조회를 위해 다음과 같은 설정이 필요합니다.",
+    "en": "If the MySQL version is 8 or later<br/>, for the query of lock data, the following settings are required.",
+    "ja": "MySQL 8 バージョン以上の場合、<br/>ロックデータ照​​会には次の設定が必要です。"
+  },
+  "DSC09807": {
+    "ko": "NMS 매니저의 Auto Discovery 기능을 이용해 자동으로 등록할 수 있습니다.",
+    "en": "You can also register it automatically using the Auto Discovery feature of the NMS Manager.",
+    "ja": "NMSマネージャのAuto Discovery機能を使用して自動的に登録できます。"
+  },
+  "TTL09808": {
+    "ko": "허용 목록(화이트 리스트) 등록 시 유의사항",
+    "en": "Things to note when registering a whitelist",
+    "ja": "ホワイトリスト（ホワイトリスト）登録時の注意事項"
+  },
+  "DSC09809": {
+    "ko": "허용 목록이 등록되면 {description}, 등록된 IP 외에는 모든 접근이 {block}됩니다.",
+    "en": "When a whitelist is registered, {description} and all accesses except for registered IPs are {blocked}.",
+    "ja": "ホワイトリストが登録されると、{description}、登録されたIP以外のすべてのアクセスが{block}されます。"
+  },
+  "DSC09810": {
+    "ko": "화이트 리스트 방식이 적용되어",
+    "en": "Because a whitelist is applied,",
+    "ja": "ホワイトリスト方式が適用されます"
+  },
+  "DSC09811": {
+    "ko": "작업 중단을 방지하기 위해",
+    "en": "to avoid work interruption,",
+    "ja": "作業中断を防ぐために"
+  },
+  "DSC09812": {
+    "ko": "현재 작업자의 IP를 먼저 허용 목록에 등록해 주세요.",
+    "en": "first register the current user's IP in the whitelist.",
+    "ja": "現在のワーカーのIPをまずホワイトリストに登録してください。"
+  },
+  "NTC09813": {
+    "ko": "IP 주소 형식이 올바르지 않습니다.",
+    "en": "The IP address format is incorrect.",
+    "ja": "IPアドレス形式が正しくありません。"
+  },
+  "BTN09814": {
+    "ko": "Excel 일괄 다운로드",
+    "en": "Excel bulk download",
+    "ja": "Excel一括ダウンロード"
+  },
+  "BTN09815": {
+    "ko": "영업일 설정",
+    "en": "Set business days",
+    "ja": "営業日の設定"
+  },
+  "DSC09816": {
+    "ko": "영업일에서 제외할 날짜를 선택해주세요.",
+    "en": "Select the dates to exclude from business days.",
+    "ja": "営業日から除外する日付を選択してください。"
+  },
+  "CNT09817": {
+    "ko": "영업일 제외 날짜",
+    "en": "Dates to exclude from business days",
+    "ja": "営業日除外日"
+  },
+  "CNT09818": {
+    "ko": "총 영업일",
+    "en": "Total business days",
+    "ja": "総営業日"
+  },
+  "NTC09819": {
+    "ko": "영업일 정보를 불러오는데 실패했습니다.",
+    "en": "It failed to load the busuness days.",
+    "ja": "営業日情報の読み込みに失敗しました。"
+  },
+  "DSC09820": {
+    "ko": "NMS 매니저를 통해 노드 및 링크를 편집할 수 있습니다.",
+    "en": "You can edit the nodes and links through the NMS Manager.",
+    "ja": "NMSマネージャを使用してノードとリンクを編集できます。"
+  },
+  "TTL09821": {
+    "ko": "인스턴스 정보",
+    "en": "Instance information",
+    "ja": "インスタンス情報"
+  },
+  "TTL09822": {
+    "ko": "대상 서버",
+    "en": "Target server",
+    "ja": "ターゲットサーバー"
+  },
+  "BTN09823": {
+    "ko": "노드 IP 표시",
+    "en": "Display node IP",
+    "ja": "ノードIPの表示"
+  },
+  "DSC09824": {
+    "ko": "월 선택",
+    "en": "Month selection",
+    "ja": "月の選択"
+  },
+  "ITM09825": {
+    "ko": "영업일 적용",
+    "en": "Application of business days",
+    "ja": "営業日の適用"
+  },
+  "ITM09826": {
+    "ko": "패턴 키",
+    "en": "Pattern Key",
+    "ja": "パターンキー"
+  },
+  "ITM09827": {
+    "ko": "예시 값",
+    "en": "Example values",
+    "ja": "例示値"
+  },
+  "TTL09828": {
+    "ko": "청구 완료",
+    "en": "Billing Completed",
+    "ja": "請求完了"
+  },
+  "TTL09829": {
+    "ko": "청구 예정",
+    "en": "Billing Scheduled",
+    "ja": "請求予定"
+  },
+  "DSC09830": {
+    "ko": "총 미납금",
+    "en": "Total Amount Unpaid",
+    "ja": "総未払い"
+  },
   "": {
     "en": "#VALUE!",
     "ja": "#VALUE!",
