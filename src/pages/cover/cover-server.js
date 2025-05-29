@@ -28,11 +28,7 @@ export default function Cover() {
           Server Monitoring
         </h1>
         <p className={styles.date}>
-<<<<<<< HEAD
-            release date. 2025.02.26
-=======
             release date. 2025.05.28
->>>>>>> d0965b160794048c1993349adbb9eb8e360871ab
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
