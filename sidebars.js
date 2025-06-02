@@ -5093,9 +5093,10 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dmx-1_0_4h',
+                  id: 'release-notes/db/dmx-1_0_4s',
                   className: 'new',
                 },
+                'release-notes/db/dmx-1_0_4h',
                 'release-notes/db/dmx-1_0_2d',
                 'release-notes/db/dmx-1_0_2b',
                 'release-notes/db/dmx-1_0_2a',
@@ -5240,6 +5241,7 @@ const sidebars = {
         'report/integrated-report',
         'notification/rt-notification',
         'management/billing',
+        'management/aws-marketplace',
         'management/maintenance',
         'management/userbehavior'
       ]
