@@ -2,7 +2,7 @@ const svList = [
     {
         "name": 'Service-2.17.x',
         "date": '2025-05-28',
-        "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202505/service-2.17.x.pdf',
+        "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202506/service-2.17.x.pdf',
         "docs": '/release-notes/service/service-2_17_x'
     },
     {
