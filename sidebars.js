@@ -4593,13 +4593,6 @@ const sidebars = {
         'release-notes/preview/preview-2_2_0x',
         'release-notes/preview/preview-2_1_0x',
         'release-notes/preview/preview-2_0_0x',
-        'release-notes/preview/preview-1_113_x',
-        'release-notes/preview/preview-1_111_x',
-        'release-notes/preview/preview-1_109_x',
-        'release-notes/preview/preview-1_107_x',
-        'release-notes/preview/preview-1_105_x',
-        'release-notes/preview/preview-1_103_x',
-        'release-notes/preview/preview-1_101_x',
       ],
     }
   ],
