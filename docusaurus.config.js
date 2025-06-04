@@ -18,7 +18,7 @@ const config = {
   future: {
     experimental_faster: isDev ? false : true
   },
-  baseUrl: '/whatap-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenAnchors: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -230,13 +230,6 @@ const config = {
       //   textColor: '#ffffff',
       //   isCloseable: true,
       // },
-      //announcementBar: {
-      //  id: 'preview-banner',
-      //  content: '<div id="preview-banner">Preview </div>',
-      //  backgroundColor: 'none',
-      //  textColor: '#ffffff',
-      //  isCloseable: true,
-      //},
       blog: {
         sidebar: {
           groupByYear: false

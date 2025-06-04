@@ -1,11 +1,5 @@
 const svList = [
     {
-        "name": 'Service-2.17.x',
-        "date": '2025-05-28',
-        "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202506/service-2.17.x.pdf',
-        "docs": '/release-notes/service/service-2_17_x'
-    },
-    {
         "name": 'Service-2.16.x',
         "date": '2025-05-15',
         "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202505/service-2.16.x.pdf',
@@ -111,12 +105,6 @@ const svList = [
 ];
 
 const javaList = [
-    {
-        "name": 'Java-agent-v2.2.60',
-        "date": '2025-05-29',
-        "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202505/java-agent-v2.2.60.pdf',
-        "docs": '/release-notes/java/java-2_2_60',
-    },
     {
         "name": 'Java-agent-v2.2.59',
         "date": '2025-05-08',
@@ -556,12 +544,6 @@ const nodejsList = [
 
 const pyList = [
     {
-        "name": 'Python-agent-v1.8.3',
-        "date": '2025-05-19',
-        "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/python-agent-v1.8.3.pdf',
-        "docs": '/release-notes/python/python-1_8_3',
-    },
-    {
         "name": 'Python-agent-v1.8.2',
         "date": '2025-04-28',
         "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/python-agent-v1.8.2.pdf',
@@ -943,12 +925,6 @@ const goList = [
 
 const serverList = [
     {
-        "name": "Server-agent-v2.8.7",
-        "date": "2025-05-22",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/server-agent-v2.8.6=7.pdf",
-        "docs": "/release-notes/server/server-2_8_7"
-    },
-    {
         "name": "Server-agent-v2.8.6",
         "date": "2025-04-22",
         "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/server-agent-v2.8.6.pdf",
@@ -1166,12 +1142,6 @@ const serverList = [
     }
 ];
 const serveraixList = [
-    {
-        "name": "Server-AIX-agent-v1.4.5",
-        "date": "2025-05-23",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/server-aix-agent-v1.4.5.pdf",
-        "docs": "/release-notes/server-aix/server-aix-1_4_5"
-    },
     {
         "name": "Server-AIX-agent-v1.4.4",
         "date": "2025-04-23",
@@ -1557,34 +1527,10 @@ const k8sList = [
 
 const dbxList = [
     {
-        "name": "DBX-agent-v2.52.04",
-        "date": "2025-05-20",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/dbx-agent-v2.52.04.pdf",
-        "docs": "release-notes/db/dbx-2_52_04"
-    },
-    {
-        "name": "DBX-agent-v2.52.02",
-        "date": "2025-05-14",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/dbx-agent-v2.52.02.pdf",
-        "docs": "release-notes/db/dbx-2_52_02"
-    },
-    {
-        "name": "DBX-agent-v2.52.01",
-        "date": "2025-05-07",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/dbx-agent-v2.52.01.pdf",
-        "docs": "release-notes/db/dbx-2_52_01"
-    },
-    {
-        "name": "DBX-agent-v2.51.01",
-        "date": "2025-04-30",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/dbx-agent-v2.51.01.pdf",
-        "docs": "release-notes/db/dbx-2_51_01"
-    },
-    {
         "name": "DBX-agent-v2.50.02",
         "date": "2025-04-24",
         "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/dbx-agent-v2.50.02.pdf",
-        "docs": "release-notes/db/dbx-2_50_02"
+        "docs": "release-notes/db/dbx-2_50_03"
     },
     {
         "name": "DBX-agent-v2.50.01",
@@ -2075,12 +2021,6 @@ const dbxList = [
 ];
 
 const dmxList = [
-    {
-        "name": "DMX-agent-v1.0.4s",
-        "date": "2025-05-21",
-        "url": "https://github.com/whatap/whatap-docs-pdf/releases/download/RN202504/dmx-agent-v1.0.4s.pdf",
-        "docs": "release-notes/db/dmx-1_0_4s"
-    },
     {
         "name": "DMX-agent-v1.0.4h",
         "date": "2025-04-03",
