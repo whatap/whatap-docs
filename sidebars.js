@@ -5241,6 +5241,7 @@ const sidebars = {
         'report/integrated-report',
         'notification/rt-notification',
         'management/billing',
+        'management/aws-marketplace',
         'management/maintenance',
         'management/userbehavior'
       ]
