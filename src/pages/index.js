@@ -112,13 +112,13 @@ function Description({children}) {
 }
 function ThereeSteps() {
     return (
-        <section className={clsx(styles.gettingStart, styles.guide, styles.justifycontentcenter)}>
+        <section className={clsx(styles.gettingStart)}>
             <Step order={1}>
                 <Link to="quick-guide#account" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.register",
-                            message: "회원 가입"
+                            message: "계정 생성"
                         })}
                     </Heading>
                     <Description>
@@ -273,8 +273,10 @@ export default function pages() {
                     })}
                 </title>
             </Head>
-            <article className={styles.main}>
-                <div className={styles.homehero}>
+
+            {/* homehero new start */}
+            <div className={styles.homehero}>
+                <div className={styles.heroInner}>
                     <div className={styles.headtitle}>
                         <h1 className={styles.frontheading}>
                             {translate({
@@ -297,7 +299,11 @@ export default function pages() {
                         <RecommendedDoc/>
                     </div>
                 </div>
+            </div>
+            {/* homehero new end */}
 
+            <article className={styles.main}>
+                
                 <ThereeSteps />
 
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
@@ -739,7 +745,6 @@ export default function pages() {
                 </section>
 
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
-
                     <Heading as="h2" className={styles.textcenter}>
                         {translate({
                             id: "index.pages.section.updates",
@@ -748,7 +753,6 @@ export default function pages() {
                     </Heading>
                     
                     <div className={styles.flexContainer}>
-
                         <FlexCard icons="Newfunc" type="document" url="blog/overview" >
                             <Heading as="h5">
                                 {translate({
