@@ -310,5 +310,9 @@
   "item.label.Network Management System": {
     "message": "Network Management System",
     "description": "Navbar item with label Network Management System"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes",
+    "description": "Navbar item with label Release Notes"
   }
 }
