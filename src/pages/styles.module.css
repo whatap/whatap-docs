@@ -8,8 +8,8 @@
   font-size: 1.8rem;
   margin-bottom: 35px;
   color: #fff;
-  text-decoration: solid;
-  text-align: left;
+  text-decoration: solid; 
+  /* text-align: left; */
   margin: 0 auto 15px auto;
 }
 
@@ -85,7 +85,9 @@ html[lang='ja-JP'] .newdoc {
 .gettingStart {
   display: flex;
   flex-flow: wrap;
+  padding: 30px 5% 0 5%;
 }
+
 .justifycardcontent .flexcolumn {
   display: flex;
   flex-flow: row wrap;
@@ -130,7 +132,7 @@ html[lang='ja-JP'] .newdoc {
   align-items: flex-start;
   align-content: flex-start;
   padding: 30px 0 60px 0;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
 }
 
 .flexContainer .flexProd {
@@ -226,8 +228,9 @@ html[lang='ja-JP'] .newdoc {
 }
 
 .logo img {
-  width: 55px;
-  max-width: 60px;
+  width: 40px;
+  max-width: 40px;
+  margin-bottom: 20px;
 }
 
 .flexContainer .flexProd a.alignCenter .product .desc {

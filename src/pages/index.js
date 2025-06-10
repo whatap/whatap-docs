@@ -89,8 +89,7 @@ function Step({children, order}) {
     return (
         <div className={clsx('guide-col d-flex', styles.flexcolumn)}>
             <div className={styles.innercontent}>
-                <img src={useBaseUrl(`/img/number-0${order}.png`)} className={styles.iconumber} />
-                {children}
+                {order}. {children}
             </div>
         </div>
     )
@@ -112,13 +111,13 @@ function Description({children}) {
 }
 function ThereeSteps() {
     return (
-        <section className={clsx(styles.gettingStart, styles.guide, styles.justifycontentcenter)}>
+        <section className={clsx(styles.gettingStart)}>
             <Step order={1}>
                 <Link to="quick-guide#account" className={styles.guidelink}>
                     <Heading as="h5" className={styles.inline}>
                         {translate({
                             id: "index.pages.register",
-                            message: "회원 가입"
+                            message: "계정 생성"
                         })}
                     </Heading>
                     <Description>
@@ -273,8 +272,9 @@ export default function pages() {
                     })}
                 </title>
             </Head>
-            <article className={styles.main}>
-                <div className={styles.homehero}>
+
+            {/* homehero new start */}
+            <div className={styles.homehero}>
                     <div className={styles.headtitle}>
                         <h1 className={styles.frontheading}>
                             {translate({
@@ -284,7 +284,7 @@ export default function pages() {
                         </h1>
                     </div>
                     <App />
-                    <div className={clsx(styles.white, styles.textleft, styles.newdoc)}>
+                    <div className={clsx(styles.white, styles.newdoc)}>
                         <b>
                             {
                                 translate({
@@ -296,13 +296,16 @@ export default function pages() {
                         
                         <RecommendedDoc/>
                     </div>
-                </div>
+            </div>
+            {/* homehero new end */}
 
+            <article className={styles.main}>
+                
                 <ThereeSteps />
 
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                    <Heading as="h2" className={styles.textcenter}>
+                    <Heading as="h3" className={styles.textleft}>
                         {translate({
                             id: "index.pages.section.gettingStart",
                             message: "시작하기 전에"
@@ -373,9 +376,10 @@ export default function pages() {
 
                     </div>
                 </section>
+                
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                    <Heading as="h2" className={styles.textcenter} id="shortcut-product">
+                    <Heading as="h3" className={styles.textleft} id="shortcut-product">
                         {translate({
                             id: "index.pages.section.product",
                             message: "상품"
@@ -384,7 +388,7 @@ export default function pages() {
                     
                     <div className={styles.flexContainer}>
 
-                        <FlexCard icons="index-icon/product-java-l.svg" product="Java" type="Application" url="java/introduction">
+                        <FlexCard icons="index-icon/product-java-l.svg" product="Java" type="Application" url="java/introduction" >
                             {translate({
                                 id: "index.pages.section.product.java",
                                 message: "WAS, 배치 애플리케이션 등 JVM 환경에서 동작하는 모든 애플리케이션에 적용할 수 있습니다."
@@ -606,7 +610,7 @@ export default function pages() {
 
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                    <Heading as="h2" className={styles.textcenter}>
+                    <Heading as="h3" className={styles.textleft}>
                         {translate({
                             id: "index.pages.section.management",
                             message: "관리"
@@ -740,51 +744,7 @@ export default function pages() {
 
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                    <Heading as="h2" className={styles.textcenter}>
-                        {translate({
-                            id: "index.pages.section.updates",
-                            message: "최신 업데이트"
-                        })}
-                    </Heading>
-                    
-                    <div className={styles.flexContainer}>
-
-                        <FlexCard icons="Newfunc" type="document" url="blog/overview" >
-                            <Heading as="h5">
-                                {translate({
-                                    id: "index.pages.section.updates.news",
-                                    message: "새로운 기능"
-                                })}
-                            </Heading>
-                            <Description>
-                                {translate({
-                                    id: "index.pages.section.updates.news.desc",
-                                    message: "새롭게 출시된 기능을 확인해보세요."
-                                })}
-                            </Description>
-                        </FlexCard>
-
-                        <FlexCard icons="Notes" type="document" url="release-notes" >
-                            <Heading as="h5">
-                                {translate({
-                                    id: "index.pages.section.updates.release",
-                                    message: "릴리스 노트"
-                                })}
-                            </Heading>
-                            <Description>
-                                {translate({
-                                    id: "index.pages.section.updates.release.desc",
-                                    message: "최신 릴리스 정보를 빠르게 확인하세요."
-                                })}
-                            </Description>
-                        </FlexCard>
-
-                    </div>
-                </section>
-
-                <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
-
-                    <Heading as="h2" className={styles.textcenter} >
+                    <Heading as="h3" className={styles.textleft} >
                         <Link to="reference" className={styles.link} id="reference-link">
                         {translate({
                             id: "index.pages.section.reference",
@@ -875,7 +835,7 @@ export default function pages() {
 
                 <section className={clsx('row nav-tiles', styles.justifycardcontent)}>
 
-                    <Heading as="h2" className={styles.textcenter}>
+                    <Heading as="h3" className={styles.textleft}>
                         {translate({
                             id: "index.pages.section.learn",
                             message: "학습하기"
