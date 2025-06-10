@@ -308,7 +308,7 @@ export default function pages() {
                     <Heading as="h3" className={styles.textleft}>
                         {translate({
                             id: "index.pages.section.gettingStart",
-                            message: "시작하기 전에"
+                            message: "와탭이 처음이세요?"
                         })}
                     </Heading>
 
