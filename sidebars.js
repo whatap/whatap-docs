@@ -1643,6 +1643,7 @@ const sidebars = {
             'db2/log-lt',
             'db2/log-exp',
             'db2/log-search',
+            'db2/log-explorer',
             'db2/log-setting',
             'db2/log-parser',
           ]
@@ -1821,6 +1822,7 @@ const sidebars = {
             'sapase/log-lt',
             'sapase/log-exp',
             'sapase/log-search',
+            'sapase/log-explorer',
             'sapase/log-setting',
             'sapase/log-parser',
           ]
@@ -2020,6 +2022,7 @@ const sidebars = {
             'postgresql/log-lt',
             'postgresql/log-exp',
             'postgresql/log-search',
+            'postgresql/log-explorer',
             'postgresql/log-setting',
             'postgresql/log-parser',
           ]
@@ -2386,6 +2389,7 @@ const sidebars = {
             'oracle/log-lt',
             'oracle/log-exp',
             'oracle/log-search',
+            'oracle/log-explorer',
             'oracle/log-setting',
             'oracle/log-parser',
           ]
@@ -2595,6 +2599,7 @@ const sidebars = {
             'oracle-pro/log-lt',
             'oracle-pro/log-exp',
             'oracle-pro/log-search',
+            'oracle-pro/log-explorer',
             'oracle-pro/log-setting',
             'oracle-pro/log-parser',
           ]
@@ -2805,6 +2810,7 @@ const sidebars = {
             'mysql/log-lt',
             'mysql/log-exp',
             'mysql/log-search',
+            'mysql/log-explorer',
             'mysql/log-setting',
             'mysql/log-parser',
           ]
@@ -3012,6 +3018,7 @@ const sidebars = {
             'mssql/log-lt',
             'mssql/log-exp',
             'mssql/log-search',
+            'mssql/log-explorer',
             'mssql/log-setting',
             'mssql/log-parser',
           ]
@@ -3534,6 +3541,7 @@ const sidebars = {
             'cubrid/log-lt',
             'cubrid/log-exp',
             'cubrid/log-search',
+            'cubrid/log-explorer',
             'cubrid/log-setting',
             'cubrid/log-parser',
           ]
@@ -3890,6 +3898,7 @@ const sidebars = {
             'altibase/log-lt',
             'altibase/log-exp',
             'altibase/log-search',
+            'altibase/log-explorer',
             'altibase/log-setting',
             'altibase/log-parser',
           ]
@@ -4220,6 +4229,7 @@ const sidebars = {
             'redis/log-lt',
             'redis/log-exp',
             'redis/log-search',
+            'redis/log-explorer',
             'redis/log-setting',
             'redis/log-parser',
           ]
@@ -4406,6 +4416,7 @@ const sidebars = {
             'mongodb/log-lt',
             'mongodb/log-exp',
             'mongodb/log-search',
+            'mongodb/log-explorer',
             'mongodb/log-setting',
             'mongodb/log-parser',
           ]
@@ -5828,6 +5839,7 @@ const sidebars = {
         'aws-log/aws-log-lt',
         'aws-log/aws-log-exp',
         'aws-log/aws-log-search',
+        'aws-log/aws-log-explorer',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -7582,6 +7594,7 @@ const sidebars = {
         'log/log-lt',
         'log/log-exp',
         'log/log-search', 
+        'log/log-explorer',
         {
           type: 'category',
           label: '경고 알림',
