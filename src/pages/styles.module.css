@@ -8,19 +8,23 @@
   font-size: 1.8rem;
   margin-bottom: 35px;
   color: #fff;
-  text-decoration: solid;
-  text-align: left;
+  text-decoration: solid; 
+  /* text-align: left; */
   margin: 0 auto 15px auto;
 }
 
 .homehero {
   height: 230px;
   width: 100%;
-  background-color: #ddd;
+  background-color: #1558BC;
   align-content: center;
   text-align: center;
-  background: url('home-hero-background.png');
-  /* position: sticky;
+  /* background: url('home-hero-background.png'); */
+  background-image: url('home-hero-background.png');
+  background-size: 1440px auto;   /* 가로 1440px로 맞춤 */
+  background-repeat: no-repeat;   /* 반복 안 함 */
+  background-position: center;    /* 가운데 정렬 (필요에 따라 left/right 등 변경 가능) */
+  /*position: sticky;
   top: 76px;
   z-index: 100; */
 }
@@ -85,7 +89,9 @@ html[lang='ja-JP'] .newdoc {
 .gettingStart {
   display: flex;
   flex-flow: wrap;
+  padding: 30px 5% 0 5%;
 }
+
 .justifycardcontent .flexcolumn {
   display: flex;
   flex-flow: row wrap;
@@ -130,7 +136,7 @@ html[lang='ja-JP'] .newdoc {
   align-items: flex-start;
   align-content: flex-start;
   padding: 30px 0 60px 0;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
 }
 
 .flexContainer .flexProd {
@@ -226,8 +232,9 @@ html[lang='ja-JP'] .newdoc {
 }
 
 .logo img {
-  width: 55px;
-  max-width: 60px;
+  width: 40px;
+  max-width: 40px;
+  margin-bottom: 20px;
 }
 
 .flexContainer .flexProd a.alignCenter .product .desc {
