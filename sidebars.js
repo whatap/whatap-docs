@@ -7594,7 +7594,19 @@ const sidebars = {
         'log/log-lt',
         'log/log-exp',
         'log/log-search', 
-        'log/log-explorer',
+        {
+          type: 'category',
+          label: '로그 탐색',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'log/log-explorer',
+          },
+          items: [
+            'log/log-search-query',
+          ],
+        },
         {
           type: 'category',
           label: '경고 알림',
