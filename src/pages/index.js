@@ -279,7 +279,7 @@ export default function pages() {
                         <h1 className={styles.frontheading}>
                             {translate({
                                 id: "index.pages.welcome.para",
-                                message: "와탭 Docs 페이지에 오신 것을 진심으로 환영합니다."
+                                message: "와탭 Docs에 오신 것을 환영합니다."
                             })}
                         </h1>
                     </div>
@@ -634,7 +634,7 @@ export default function pages() {
                             </Description>
                         </FlexCard>
 
-                        <FlexCard icons="Multifactor" type="document" url="account/mfa" >
+                        <FlexCard icons="SSO" type="document" url="account/mfa" >
                             <Heading as="h5">
                                 {translate({
                                     id: "index.pages.section.management.multiFactor",
