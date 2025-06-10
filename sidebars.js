@@ -7598,7 +7598,7 @@ const sidebars = {
           type: 'category',
           label: '로그 탐색',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           link: {
             type: 'doc',
             id: 'log/log-explorer',
