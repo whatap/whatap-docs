@@ -1,53 +1,39 @@
+import Xclude from '@site/src/components/XcludeDoc.js';
+
+<Xclude product='quick-guide,features,ncloud'>
+
 ## Creating a project{#create-project}
-
-<InDoc product='kafka'>
-
-Create a **feature project** (<code class='Features'>Feature</code>) before installing the agent.
-
-1. Log in [WhaTap monitoring service](https://service.whatap.io).
-
-2. To create a project, on the left of the screen, select <Cmdname sid="BTN07332" className="uitext" /> &gt; **_+_** <Cmdname sid='BTN06696' className='uitext'/>.
-
-3. On the <Cmdname sid="TTL07073" className="uitext" /> screen, select the **feature product** to install in the project.
-
-4. Configure the settings for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, and <Cmdname sid="project_time_zone" className="uitext" />.
-
-   <ImgLang img='create-project-v3.png' desc='Create Project'/>
-
-5. In <Cmdname sid="TTL07727" className="uitext" />, select the language for alert messages.
-
-6. After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
-
-</InDoc>
-
-<Xclude product='kafka'>
-
-Create a project before installing the agent.
-
-1. Log in [WhaTap monitoring service](https://service.whatap.io).
-
-2. To create a project, on the left of the screen, select <Cmdname sid="BTN07332" className="uitext" /> &gt; **_+_** <Cmdname sid='BTN06696' className='uitext'/>.
-
-3. Select a product in <Cmdname sid="TTL07073" className="uitext" /> for installation.
-
-4. Configure the settings for <Cmdname sid="project_name" className="uitext" />, <Cmdname sid="data_server_region" className="uitext" />, and <Cmdname sid="project_time_zone" className="uitext" />.
-
-   <ImgLang img='create-project-v3.png' desc='Create Project'/>
-
-5. In <Cmdname sid="TTL07727" className="uitext" />, select the language for alert messages.
-
-6. After all settings are finished, select <Cmdname sid="creating_a_project" className="uitext" />.
 
 </Xclude>
 
+Create a project before installing the agent.
+
+1. Log in to the WhaTap Monitoring Service.
+
+1. In the left side menu, click <Cmdname sid="BTN07332" className="uitext" /> > + <Cmdname sid='BTN06696' className='uitext' />.
+
+1. On the <Cmdname sid="TTL07073" className="uitext" /> screen, select the product you want to install.
+
+1. Enter or select the following items:
+
+   * <Cmdname sid="project_name" className="uitext" />: Enter the project name.
+
+   * <Cmdname sid="data_server_region" className="uitext" />: Select the data server region. A region is a group of data centers that provide cloud services. Your data will be stored in the selected region.
+
+   * <Cmdname sid="project_time_zone" className="uitext" />: Set the time zone to be used for alerts and report generation.
+
+   * <Cmdname sid="TTL07727" className="uitext" />: Set the language for alert notifications. (Supports Korean and English)
+
+   * <Cmdname sid="project_groups" className="uitext" />: Group multiple projects for easier management. Select a group if applicable.
+
+   * <Cmdname sid="project_description" className="uitext" />: Add additional details or a description for your project.
+
+1. After completing all settings, click the <Cmdname sid="creating_a_project" className="uitext" /> button.
+
 :::note
 
-- A <Cmdname sid="data_server_region" className="uitext" /> refers to a region (a bundle of data centers installed to provide cloud services). Selecting a specific region stores your data in the datacenter that belongs to that region.
+For more information about groups, see the related document.
 
-- <Cmdname sid="project_time_zone" className="uitext" /> is the reference time for generating alerts and reports.
-
-- To group multiple projects for management, select a group from <Cmdname sid="project_groups" className="uitext" /> or add a group. For more information about grouping, see [the following](/project/group).
-
-- To add a project with an organization selected, <Cmdname sid="group_of_organization" className="uitext" /> must be set.
+If you add a project while an organization is selected, you must set the <Cmdname sid="group_of_organization" className="uitext" /> field.
 
 :::

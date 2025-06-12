@@ -84,8 +84,8 @@ export default function CheckProduct() {
         product = '-browser';
     } else if (cProdt === 'npm') {
         product = '-npm';
-    }else if (cProdt === 'feature') {
-        product = '-feature';
+    }else if (cProdt === 'features') {
+        product = '-features';
     } else if (cProdt === 'nms') {
         product = '-nms';
     } else if (cProdt === 'sapase') {
