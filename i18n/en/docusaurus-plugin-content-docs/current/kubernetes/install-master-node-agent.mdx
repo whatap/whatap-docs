@@ -93,7 +93,7 @@ oc create -f whatap_openshift_scc.yaml
 
 ## Creating the Kubernetes agent {#create-kubernetes-agent}
 
-When installing the WhaTap Kubernetes agent, the guides based on _helm_ charts and _yaml_ files are provided as follows. 
+When installing the WhaTap Kubernetes agent, the guides based on *helm* charts and *yaml* files are provided as follows. 
 
 <Tabs>
 
@@ -101,7 +101,7 @@ When installing the WhaTap Kubernetes agent, the guides based on _helm_ charts a
 
 ### Checking the Helm version and WhaTap repository network connection status {#k8s-helm-prechek}
 
-1. Check the _helm_ version by using the following command. It is available in the version 3.x or later. 
+1. Check the *helm* version by using the following command. It is available in the version 3.x or later. 
 
    ```bash
    helm version
@@ -134,7 +134,7 @@ After adding the WhaTap Helm repository, create a default configuration file app
 
    ![](/img/k8s-check-containerRuntime.png)
 
-3. After checking the **CONTAINER-RUNTIME**, create a default configuration file (_values.yaml_) required for installation as follows. 
+3. After checking the **CONTAINER-RUNTIME**, create a default configuration file (*values.yaml*) required for installation as follows. 
 
    ```yaml
    containerRuntime: #CONTAINER-RUNTIME
@@ -163,13 +163,13 @@ After adding the WhaTap Helm repository, create a default configuration file app
 
    :::note 
 
-   If you have installed the WhaTap Kubernetes agent by using the existing _yaml_ file, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible using the _helm_ chart. 
+   If you have installed the WhaTap Kubernetes agent by using the existing *yaml* file, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible using the *helm* chart. 
 
    :::
 
-### Major configuration items for _values.yaml_
+### Major configuration items for *values.yaml*
 
-To modify the WhaTap Kubernetes agent settings, modify the default configuration file (_values.yaml_). The major settings in the _values.yaml_ file are as follows: 
+To modify the WhaTap Kubernetes agent settings, modify the default configuration file (*values.yaml*). The major settings in the *values.yaml* file are as follows: 
 
 <div class='k8s-values-yaml-table'>
 
@@ -224,7 +224,7 @@ For the guide to **Installation troubleshooting** based on the Helm chart, see [
 
 ### YAML file-based installation
 
-Download the _YAML_ file that is suitable for your Kubernetes version and container runtime, and then create an agent.
+Download the *yaml* file that is suitable for your Kubernetes version and container runtime, and then create an agent.
 
 1. Check the **VERSION** and **CONTAINER-RUNTIME** by executing the following command:
 
@@ -234,11 +234,11 @@ Download the _YAML_ file that is suitable for your Kubernetes version and contai
 
    ![](/img/k8s-check-version.svg)
 
-2. On the **_Agent Installation_** screen, select the _YAML_ file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click **_Download_**.
+2. On the **_Agent Installation_** screen, select the *yaml* file that matches the **VERSION** and **CONTAINER-RUNTIME** and then click **_Download_**.
 
    <ImgLang img='k8s-download-yaml.png' desc='yaml download' />
 
-3. Upload the downloaded _YAML_ file to the master node.
+3. Upload the downloaded *yaml* file to the master node.
 
 4. Execute the following command to create an agent. 
 
@@ -253,7 +253,7 @@ Download the _YAML_ file that is suitable for your Kubernetes version and contai
 
 :::note
 
-The **amount of resources used by the Master Agent** is somewhat **proportional** to the **number of nodes** in your environment. In other words, if there are a large number of nodes in the cluster, OOM (Out Of Memory) may occur when resources exceed the default memory limit (350 MB). The memory limit allocated to the master agent can be changed through the agent installed _YAML_ file.
+The **amount of resources used by the Master Agent** is somewhat **proportional** to the **number of nodes** in your environment. In other words, if there are a large number of nodes in the cluster, OOM (Out Of Memory) may occur when resources exceed the default memory limit (350 MB). The memory limit allocated to the master agent can be changed through the agent installed *yaml* file.
 
 :::
 

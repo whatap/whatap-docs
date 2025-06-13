@@ -133,11 +133,11 @@ The agent consists of the tracers to collect monitoring information, the agents 
 
 ### Default settings
 
-Execute the following commands in order to set the **access key** and **collection server IP** in _whatap.conf_.
+Execute the following commands in order to set the **access key** and **collection server IP** in *whatap.conf*.
 
-- Create the _whatap.conf_ file in the path of the application startup script. 
+- Create the *whatap.conf* file in the path of the application startup script. 
 
-- If the `WHATAP_HOME` environment variable has not been set, the path of the application startup script is recognized as the one of the _whatap.conf_ file.
+- If the `WHATAP_HOME` environment variable has not been set, the path of the application startup script is recognized as the one of the *whatap.conf* file.
 
 ```bash title='SH'
 # Creation of whatap.conf in the script running path
@@ -163,7 +163,7 @@ $ echo "app_name={Application Name}" >> ./whatap.conf
 
 ### Setting the `WHATAP_HOME` variable
 
-You can set the _whatap.conf_ path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first.
+You can set the *whatap.conf* path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first.
 
 ```bash
 # Set the whatap.conf path after setting the WHATAP_HOME path.
@@ -178,13 +178,13 @@ WHATAP_HOME=./whatap_home ./app
 
 :::tip
 
-The priority of the agent configuration is that the _whatap.conf_ file is applied first, followed by the environment variables. To prioritize environment variables, set the `use_env_first` option to `true`. Alternatively, you can set the environment variable as `WHATAP_USE_ENV_FIRST=true`.
+The priority of the agent configuration is that the *whatap.conf* file is applied first, followed by the environment variables. To prioritize environment variables, set the `use_env_first` option to `true`. Alternatively, you can set the environment variable as `WHATAP_USE_ENV_FIRST=true`.
 
 :::
 
 ### Setting the agent names for each process{#duplicate_appname}
 
-If one _whatap.conf_ file is shared by the applications running in multiple processes, any changes may not be reflected. It is recommended to set a _whatap.conf_ for each process.
+If one *whatap.conf* file is shared by the applications running in multiple processes, any changes may not be reflected. It is recommended to set a *whatap.conf* for each process.
 
 To avoid duplicate agent names, you can add a string to each agent name for identification. The value set with the `app_name` option is added to the beginning of the agent name.
 

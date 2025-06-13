@@ -1,30 +1,56 @@
 ## Applying filters
 
-While viewing the past data, you can quickly filter out the data by applying filters. 
+In case of viewing the past data, you can filter out the data by applying filters.
 
-1. If ![Pause icon](/img/ico-pause.svg) is selected in the time selector, the filter input box appears.
+1. When you click the Pause (![Pause icon](/img/ico-pause.svg)) button, the filter input box appears.
 
-   <ImgLang img='txmap-filter.png' desc='Filter' />
+2. If you click the filter input box, the list of filters that can be selected appears as follows.
 
-2. If the filter field is selected, the filters that can be selected appear. You can select the following options.
+   - General filters  
 
-   - <Cmdname sid="elapsed" className="uitext" />
+     | Item                                 | Description                                                                                                            |
+     | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+     | Login ID                             | Viewing with the login ID of the user                                                                                  |
+     | WClientID                            | Searched by the unique identifier per client <br /> ※ Searching is performed by exact match.                           |
+     | Transaction ID                       | Unique ID per transaction <br /> ※ Searching is performed by exact match.                                              |
+     | Referer                              | Searching is performed using the Referer (referring page address) delivered by a transaction request.                  |
+     | Multi Transaction ID                 | Unique ID that groups multiple transactions <br /> ※ Searching is performed by exact match.                            |
+     | Custom TID                           | Searching by the custom transaction ID                                                                                 |
+     | Error(Class, Step, Message)          | Searching by error type, step, and message in transactions (partial match included)                                    |
+     | City                                 | Searching by the user's town for transactions                                                                          |
+     | Country/Region                       | Searching by the user's country for transactions                                                                       |
+     | HTTP Method                          | HTTP request method (GET, POST, etc) <br /> ※ Searching is performed by exact match.                                   |
+     | UserAgent                            | Searching by browser or client information (user agent) for transaction requests                                       |
 
-   - <Cmdname sid="transaction" className="uitext" />
+   - STEP Filter\
+     Step indicates the profile data collected while performing transactions. When dragging the hitmap, the sequential data displayed in Table View or Tree View by clicking a transaction in the transaction list is called Step.
 
-   - <Cmdname sid="domain" className="uitext" />
+     ```
+     | 항목       | 설명                                                                                                                                                   |
+     | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+     | DBC       | Step that contains the method running while performing transactions                                                                                                             |
+     | HTTPC     | Step that contains the HTTP call                                                                                                                             |
+     | MESSAGE   | Step that contains various texts while performing transactions                                                                                                                |
+     | METHOD    | Step that contains the method running while performing transactions                                                                                                             |
+     | SQL       | Step that contains executed queries                                                                                                                             |
+     | SQL_BIND  | Data that does not exist actually but is included in the SQL step <br /> Step with which bind variables and substitution variables can be viewed during the SQL call <br />※ Searching is possible with the authority and decryption key to view sensitive information. |
+     | ALL       | Step with which all the above steps can be searched <br /> ※ Searching is possible with the authority and decryption key to view sensitive information.                                                          |
+     ```
 
-   - <Cmdname sid="ip" className="uitext" />
+   - Number input filter  
 
-3. If the list of filterable values appears, select desired items.
+     | Item                  | Description                                           |
+     | --------------------- | ----------------------------------------------------- |
+     | Elapsed time          | Total time taken for the transaction to be performed  |
+     | HTTP Call Time        | Response time for HTTP Requests                       |
+     | HTTP Call Count       | Number of HTTP requests while performing transactions |
+     | SQL time              | Total SQL execution time for transactions             |
+     | SQL Count             | Number of SQL queries executed for transactions       |
+     | Status                | Transaction status(e.g. Normal, Error, etc.)          |
 
-   :::note
+3. Enter the desired values for filtering. For filtering, enter all values for the filter key, operators, and values. If there are any filters that have not been entered yet, searching is not possible.
 
-   If <Cmdname sid="elapsed" className="uitext" /> is selected as a filter, enter the time. The unit is milliseconds (ms).
-
-   :::
-
-4. Select ![Search icon](/img/ico-btn-search.png).
+4. Aftering entering all filters, click ![Search icon](/img/ico-btn-search.png). 
 
 It updates the filtered data in the **_Top 30_** list and the <Cmdname sid="transaction_map" className="uitext" /> chart.
 
@@ -33,7 +59,5 @@ It updates the filtered data in the **_Top 30_** list and the <Cmdname sid="tran
 - You can perform filtering by setting multiple conditions. Added conditions are applied based on `&&`. For example, if the transaction is `/account/save/employee/seoul` and the elapsed time is more than 3 seconds, you can apply as follows:
 
   > `Transaction` `=` `/account/save/employee/seoul` `Elapsed time (ms)` `>=` `3`
-
-- <Cmdname sid="elapsed" className="uitext" /> cannot be applied additionally.
 
 :::

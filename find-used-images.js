@@ -32,7 +32,7 @@ async function findImagesInMdxFiles(dir) {
           await findImagesInMdxFiles(path.join(dir, file.name)); // 디렉토리면 재귀적으로 탐색 계속
       } else if (file.name.endsWith('.mdx')) {
           const data = await fs.readFile(path.join(dir, file.name), 'utf8');
-          const imagePaths = data.match(/![.*?\]\((.*?)\)/g); // Markdown 이미지 링크 추출
+          const imagePaths = data.match(/![.*?]\((.*?)\)/g); // Markdown 이미지 링크 추출
           const imagePaths2 = data.match(/img=['"](.*?)['"]/g);
           
           //https로 시작하는 경우 제외

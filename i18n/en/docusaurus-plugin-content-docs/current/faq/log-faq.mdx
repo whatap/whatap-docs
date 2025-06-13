@@ -43,4 +43,114 @@ Logs are sent when the agent's log buffer capacity (64 KB) or transmission cycle
 
 Currently, integration with third-party log solutions is not provided.
 
+### Log Collection by Platform
+
+> How can I collect logs for applications, servers, and Kubernetes?
+
+Log collection by platform is as follows.
+
+<details>
+<summary>**JAVA**</summary>
+
+The logs are collected by hooking in the `log4j` and `logback` log libraries.
+
+:::note
+
+When using `logback` or `log4j`, you may need to set options for Appender-based log collection. For more information, see the [Open source tracing](../java/agent-weaving#지원-오픈소스-목록) document in WhaTap Docs.
+
+:::
+
+</details>
+
+<details>
+<summary>**Node.js**</summary>
+
+By hooking the built-in package process of Node.js, the logs for `process.stdout` and `process.stderr` are collected.
+
+</details>
+
+<details>
+<summary>**Python**</summary>
+
+The logs are collected by hooking in the `logging` and `loguru` log libraries.
+
+</details>
+
+<details>
+<summary>**PHP / Server**</summary>
+
+Collection is made by specifying the log files to monitor.
+
+</details>
+
+<details>
+<summary>**Go**</summary>
+
+- Collection is made by specifying the log files to monitor.
+
+- The `Standard out` and `Standard error` logs are collected for applications.
+
+:::note
+
+To collect logs for standard outs and errors, extra settings are required.\
+For more information, see the [Go Monitoring > API Guide](../golang/api-guide) document in WhaTap Docs.
+
+:::
+
+</details>
+
+<details>
+<summary>**Kubernetes**</summary>
+
+1. **Container StdOut**
+
+   The WhaTap Kubernetes agent collects <strong>Container's standard output logs (Container stdout/stderr)</strong>.
+   These logs are collected using two methods, depending on the purpose of use.
+
+   - **Logfile-based collection**
+
+       This method directly reads log files stored in the file system of the Kubernetes node.\
+       The collected logs can be checked using the <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" />, and <Cmdname sid="side_logTail" className="uitext" /> features.
+
+     ```ini title="와탭 에이전트 로그 파일 수집 경로"
+     /var/log/pods/<namespace>_<pod-name>_<uid>/<container-name>/*.log
+     ```
+
+     ```ini title="예시"
+     /var/log/pods/whatap_agent_7ddf2a4c-0877-4602-a38c-df07c4501ede/agent/0.log
+     ```
+
+       :::caution
+
+       If logs are not collected, connect to the node and then check if the log files exist in the above path. For more information about the log collection filters, see the [Kubernetes 모니터링 > 로그](../kubernetes/log#containerStdOut-로그-필터-설정) document in WhaTap Docs.
+
+       :::
+
+   - **Real-time lookup via kube-apiserver**
+
+       When you click a specific container in the container map, the Kubernetes API (kube-apiserver) is called in a way similar to the kubectl logs command to load the container logs in real time.
+
+       This method is useful for quickly checking the container status, but it does not provide the search or long-term retention feature.
+
+     | Type               | Log tab                                                                            | Click Container Map > Container |
+     | ------------------ | ---------------------------------------------------------------------------------- | ------------------------------- |
+     | Collection methods | Direct access to the node's file system                                            | Call the kube-apiserver API     |
+     | Log location       | `/var/log/pods/<namespace><pod-name><uid>/<container-name>/*.log`                  | Call the kube-apiserver API     |
+     | Use case           | Search, Filtering, Live Tail                                                       | Check real-time status          |
+     | Retention          | O                                                                                  | X (Real-time view only)         |
+
+2. **K8s Event**
+
+   The Kubernetes event collection logs are collected after checking via the kubectl get events.
+
+</details>
+
 </div>
+
+:::note
+
+How to Configure Logs 
+
+For the log configuration method, see the contents for each platform (e.g. JAVA, Node.js) in [Log Monitoring](../log/introduction) of WhaTap Docs.
+
+:::

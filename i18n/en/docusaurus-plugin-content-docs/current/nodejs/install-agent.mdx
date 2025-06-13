@@ -18,7 +18,7 @@ To use the Node.js monitoring service, the monitoring agent must be installed on
 
 - Install the WhaTap agent module in the active Node.js application directory.
 
-- Write the configuration of WhaTap agent (_whatap.conf_).
+- Write the configuration of WhaTap agent (*whatap.conf*).
 
 - Run the Node.js service again.
 
@@ -38,7 +38,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
    $ npm install --save whatap
    ```
 
-2. Copy the _whatap.conf_ file in the _node_modules/whatap_ path and then paste it into the root path of the project (same location as in the _package.json_ file).
+2. Copy the *whatap.conf* file in the _node_modules/whatap_ path and then paste it into the root path of the project (same location as in the _package.json_ file).
 
 3. Go to the [WhaTap Monitoring Service](https://service.whatap.io).
 
@@ -49,7 +49,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
    whatap.server.host={collection server IP}
    ```
 
-5. Paste it into the _whatap.conf_ file.
+5. Paste it into the *whatap.conf* file.
 
 The host (`whatap.server.host`) address is the server address in which the WhaTap proxy has been installed. You can use a forward slash (/) as the delimiter to enter all addresses of the servers where the proxy server is running among the WhaTap servers.
 
@@ -114,7 +114,7 @@ Because the agent executable code needs to be run first after starting node.js, 
 
 ### Setting agent options by environment
 
-To apply settings tailored to each environment of the application, you can modify the settings in the entry point file of the application instead of the _whatap.conf_ file. Noting the code below, apply the settings tailored to your environment.
+To apply settings tailored to each environment of the application, you can modify the settings in the entry point file of the application instead of the *whatap.conf* file. Noting the code below, apply the settings tailored to your environment.
 
 ```javascript
 process.env.WHATAP_CONF = 'whatapdev'; // Setting for development environment
@@ -161,7 +161,7 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 ### Configuring the default environment variables
 
-When installing the agent in the PaaS application, all settings must be configured in the source file (_app.js_). The _whatap.conf_ file cannot be used.
+When installing the agent in the PaaS application, all settings must be configured in the source file (_app.js_). The *whatap.conf* file cannot be used.
 
 Set the access key (`WHATAP_LICENSE`) and collection server IP (`WHATAP_SERVER_HOST`) as environment variables.
 
@@ -174,7 +174,7 @@ var whatap=require('whatap').NodeAgent;
 
 ### Options that can be configured as environment variables
 
-Because you cannot use the _whatap.conf_ file, set the WhaTap agent options as environment variables in the source file.
+Because you cannot use the *whatap.conf* file, set the WhaTap agent options as environment variables in the source file.
 
 ```javascript title='app.js'
 process.env.profile_http_header_enabled=false;

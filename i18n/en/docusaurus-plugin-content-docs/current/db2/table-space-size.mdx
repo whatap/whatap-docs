@@ -8,6 +8,82 @@ keywords:
   - Statistics
 ---
 
-import Dbtablespacesize from "../common-items/_db-tablespace-size.mdx";
+Home &gt; Select Project &gt; <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" />
 
-<Dbtablespacesize />
+You can visually check the overall size and usage of the database tablespace, and monitor the detailed usage. 
+
+- You can visually check the changes in tablespace size and usage over time.
+
+- It provides the details on the total size, used amount, and used percentage for each tablespace.
+
+Monitor the tablespace usage in real time to manage its capacity, and trace highly used tablespaces to optimize the capacity management and performance. Excessive usage can also be detected and responded in advance.
+
+## Before use
+
+Set the database roles and agent options to collect the tablespace sizes. Table space sizes are collected once an hour, and the settings can be completed by following the procedure below.
+
+### Assigning the query role
+
+To collect tablespace size data, grant the monitoring users appropriate database roles. Set the roles with the following SQL command.
+
+```sql title="SQL"
+GRANT EXECUTE ON FUNCTION SYSPROC.MON_GET_TABLESPACE TO USER whatap
+GRANT EXECUTE ON FUNCTION SYSPROC.MON_GET_CONTAINER TO USER whatap
+```
+
+### Setting the agent options
+
+You can set the criteria for collecting the tablespace sizes in the agent options.
+
+- **tablespace** <span class='type'>Int</span>
+
+  Default `1`
+
+  Set whether to collect the tablespace usage. If it is set to `1` (default), collection is enabled. If it is set to `0`, collection is disabled.  
+
+- **tablespace_interval** <span class='type'>Int</span>
+
+    Default `60`
+
+    Set the frequency in minutes (m) for collecting the tablespace usage. The default value is 60 minutes.
+
+## Basic screen guide
+
+<ImgLang img="db-table-space-size-db2.png" desc="Tablespace size" />
+
+You can view the tablespace usage by period on the main screen. The query period can be set up to 3 weeks. In case of a view for 3 days or more, the graph displays the daily average.
+
+1. In <Cmdname sid="time" className="uitext" /> at the top of the screen, set the period to be analyzed.
+
+2. In <Cmdname sid="instance" className="uitext" />, select an instance of the database to be analyzed.
+
+3. Click the ![Search icon](/img/ico-btn-search.png) icon.
+
+:::note
+
+For more information about the method how to use the <Cmdname sid="time" className="uitext" /> option, see [the following](usage-ui#timeselector).
+
+:::
+
+### Checking the changes in tablespace size {#table_space}
+
+In the <Cmdname sid="table_space" className="uitext" /> section, you can visually see the overall size and usage of the tablespaces over time.
+* Colors represent each tablespace. If you hover your mouse over the chart, the detailed information for a specific time zone is displayed with a tooltip.
+
+<ImgLang img="db-stat-table-space-check-trend-oracle-pro.png" desc="Tablespace size" />
+
+### Tablespace size details {#table_space_detail}
+
+The <Cmdname sid="table_space_detail" className="uitext" /> section provides information details for each tablespace.
+
+You can see the usage changes of each tablespace by comparing the time of the first query with the current time. To view the details of a tablespace, click the ![Arrow icon](/img/ic-caret-right.svg) next to the tablespace name.
+
+- <Cmdname sid="TTL08166" className="uitext" />: Tablespace name
+
+- ***TYPE***: Tablespace type
+
+- ***BPNAME***: Name of the buffer pool to which the tablespace is associated.
+
+- ***AUTOEXTENSION***: Whether the tablespace is automatically expanded
+
+- ***MAXSIZE***: Maximum size of the tablespace

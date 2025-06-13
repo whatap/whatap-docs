@@ -109,7 +109,7 @@ crowdin download -b main -l en-US
 
 [次の記事] \(openapi-call-apm-stat-data)
 
-）로 끝나는 부분 확인 => 정규식 \]\(([^>]+)）
+）로 끝나는 부분 확인 => 정규식 ]\(([^>]+)）
 
 \(<https://pypi.org/project/whatap-python/> #files)
 

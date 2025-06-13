@@ -210,7 +210,7 @@ In SAP ASE, you must create a separate user account in the database, and then ad
   grant select any dictionary to {DB_User};
   ```
 
-- In case of using a multi-tenant DB in 12c or later: Add the prefix `c##`.
+- In case the basic monitoring is used in the multi-tenant DB (Oracle 12c or later): The `c##` account is created.
 
   ```sql title="SQL"
   create user c##{DB_User} identified by "{DB_Password}";
@@ -224,6 +224,16 @@ In SAP ASE, you must create a separate user account in the database, and then ad
   ```sql title="SQL"
   grant alter system to {DB_User}
   ```
+
+<InDoc product="oracle">
+
+- In case the kill session feature is used in the multi-tenant DB: It is run with the `c##` account.
+
+  ```sql title="SQL"
+  grant alter system to c##whatap container=all;
+  ```
+
+</InDoc>
 
 - In case of viewing the hidden parameters
 
@@ -260,7 +270,7 @@ The roles other than the **Default role** do not need to be assigned depending o
 | Default role                                      | `grant create session to whatap;`                                              | `grant create session to c##whatap;`                                                                                                                                                             | Access                                                                                                                                                                 | -                                                                                            |
 | \^                                                | <code>grant <span class="vslow">select any dictionary</span> to whatap;</code> | <code>grant <span class="vslow">select any dictionary</span> to c##whatap;</code>                                                                                                                | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | When granting individual roles, see the following table                                      |
 | \^                                                | -                                                                              | `alter user c##whatap set container_data = ALL container = CURRENT;`                                                                                                                             | \^                                                                                                                                                                     | When using a multi-tenant DB (12C or higher), this is a required role to query the pdb.      |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap;`                                                                                                                                                               | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                                                                            |
+| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap container=all;`                                                                                                                                                 | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                                                                            |
 | Hidden parameter query                            | \>                                                                             | `create view sys.whatap_vw_ksppi as select * from sys.x$ksppi;`<br/>`grant select on sys.whatap_vw_ksppi to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppi for sys.whatap_vw_ksppi;`      | Hidden parameters are included in the parameter query menu.                                                                                                            | To query hidden parameters, separate view/synonym creation and role assignment are required. |
 | \^                                                | \>                                                                             | `create view sys.whatap_vw_ksppcv as select * from sys.x$ksppcv;`<br/>`grant select on sys.whatap_vw_ksppcv to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppcv for sys.whatap_vw_ksppcv;` | \^                                                                                                                                                                     | \^                                                                                           |
 

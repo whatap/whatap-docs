@@ -13,51 +13,61 @@ Before installing the WhaTap Python monitoring agent, check the support environm
 
 - **Support versions**
 
-  - WSGI Application (Python 3.6 or later, 3.11 or earlier)
+  - WSGI Application (Python 3.6 or later, 3.13 or earlier)
 
-  - ASGI Application (Python 3.7 or later, 3.11 or earlier)
+  - ASGI Application (Python 3.7 or later, 3.13 or earlier)
 
 - **OS**
-
-  - Red Hat/CentOS 6.x (64 bit) or later
 
   - Debian/Ubuntu 12.04 (64 bit) or later
 
   - OSX 10.15 Catalina
 
-- **Application Server**
+  - Red Hat/CentOS 6.x (64 bit) or later
 
-  - Django
+- **Application Server**
 
   - Bottle
 
+  - Celery
+
   - CherryPy
 
-  - Flask
-
-  - Tornado
-
-  - Nameko
-
-  - Celery
+  - Django
 
   - FastAPI(0.84.0 or later)
 
+  - Flask
+
+  - Frappe
+
+  - Nameko
+
+  - Odoo (v16, v17)
+
+  - Tornado
+
 - **Library**
 
-  - Outbound calls: HttpLib, Requests, Urllib
+  - External Calls: HttpLib, Requests, Urllib
+
+  - SQL Alchemy, GraphQL
+
+  - smtplib, logging , loguru
 
   - Kombu, Pika
 
 - **Database**
 
-  - MySQL
+  - MongoDB(pymongo)
 
-  - SQL Server
+  - MySQL(MySQLdb, pymysql)
 
-  - PostgreSQL
+  - Oracle(cxOracle)
 
-  - Redis
+  - PostgreSQL(psycopg2)
+
+  - Redis(redis)
 
 ## Common supported environment
 

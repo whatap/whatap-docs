@@ -1,0 +1,73 @@
+---
+id: agent-xos-settings
+title: XOS agent configuration
+description: The following explains how to configure the database process monitoring.
+keywords:
+  - Oracle Pro
+  - DATABASE
+  - Agent
+  - XOS
+---
+
+You can additionally monitor resources on the database server by setting the following options in the *xos.conf* file. To use this option, set the `xos` option to `true` in the *whatap.conf* file.
+
+- **interconnect_nic** <span class='type'>String</span> <code class="my">RAC</code>
+
+    It collects network card information corresponding to the set option value. If this option is not set, interconnect-related metrics are not collected.
+
+  ```ini title='xos.conf'
+  # example
+  interconnect_nic=enp0s3
+  ```
+
+    Enter the network interface used for interconnect of **Real Application Cluster** (**RAC**) among the network interfaces confirmed by the `netstat -i` command. The set values are used to monitor the performance and activities of the network card.
+
+- **cpu_limit** <span class='type'>Int</span>
+
+    Default `0`
+
+    It collects the process data with a value greater than the set limit. If it is 1.23% (1/100% step), set it to `123`.
+
+- **mem_limit** <span class='type'>Int</span>
+
+    Default `10240`
+
+    It collects the process data with a value greater than the set limit. 10240 (Kbytes) indicates 10 MB.
+
+- **disk_usage_interval** <span class='type'>Second</span>
+
+    Default `60`
+
+    Displays the disk utilizations, free sizes, and total sizes for each instance. If the value is `0`, disk usage is not collected.
+
+- **process** <span class='type'>String</span>
+
+    The execution status of processes can be monitored. Enter the process name as an option value. Multiple items can be registered using comma (,) as the delimiter.
+
+  ```ini title='xos.conf'
+  process={process_name}
+  ```
+
+    For example, to set the top and lock.sh processes to be monitored, set the options as follows:
+
+  ```ini title='xos.conf'
+  process=top,lock.sh
+  ```
+
+    :::note
+
+    You can use the `process` option to send an alert when a process running on the database is ended. For more information, see [the following](../best-practice-guides/set-db-metric-warning-notice).
+
+    :::
+
+- **iplist_interval** <span class='type'>Second</span>
+
+    You can collect a list of IPs for your database servers. Set the time interval in seconds (at least 3 seconds) for collection.
+
+- **file** <span class='type'>String</span>
+
+  To use the <Cmdname sid="side_log" className="uitext" /> menus (<Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logExplorer" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" />, <Cmdname sid="side_logSetting" className="uitext" />), enter the absolute path in the `file` option for the log files to be monitored.
+
+  ```ini title='xos.conf'
+  file=/opt/oracle/log
+  ```

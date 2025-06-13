@@ -29,30 +29,6 @@ Restart-Service "Whatap Infra"
 </TabItem>
 </Tabs>
 
-{/* 
-
-아래는 필드명 관련 컨펌 후 추가 예정 .. 현재 수정 임시로 남겨둠
-
-:::caution
-
-If you select a field or tag name with multiple periods (.) with the **_Selector_** mode selected in **_Event Rule_** and **_Filtering event targets_**, be sure to select **Direct Input** mode and then enter a grouped value in the `${field or tag name}` format.
-
-For example, if you enter `webcheck.ping.status_code` field name, operator value as `!=`, and the value as `200`, select the **_Direct Input_** mode and then enter `${webcheck.ping.status_code` } != 200\`.
-
-:::
-
-:::note
-
-**Field naming convention**
-
-If the field name contains multiple periods (_._), enter it as follows:
-
-> e.g. `webcheck.ping.status_code` → `${webcheck.ping.status_code}`
-
-:::
-
-*/}
-
 ### Redis Instances
 
 The WhaTap infrastructure agent accesses the given Redis address and collects multiple performance metrics including the number of connections. The collected performance data can be checked in <Cmdname sid="category" className="uitext" /> `server_redis`. You can add the connection data to the Redis server to be checked with the following command.

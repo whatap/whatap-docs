@@ -9,9 +9,9 @@ keywords:
   - whatap.conf
 ---
 
-The Whatap agent writes the necessary settings for each agent in _whatap.conf_. The agent locates and loads the configuration file through the environment variables.
+The Whatap agent writes the necessary settings for each agent in *whatap.conf*. The agent locates and loads the configuration file through the environment variables.
 
-If any separate setting, the agent is set to find _whatap.conf_ under the (_whatap.agent-X.Y.Z.jar_) directory. It checks whether _whatap.conf_ has been changed every 5 seconds and then reloads the file.
+If any separate setting, the agent is set to find *whatap.conf* under the (_whatap.agent-X.Y.Z.jar_) directory. It checks whether *whatap.conf* has been changed every 5 seconds and then reloads the file.
 
 For user convenience, [Whatap Monitoring Service](https://service.whatap.io) also provides the agent configuration function.
 
@@ -33,13 +33,13 @@ license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
 whatap.server.host=10.10.0.1
 ```
 
-When the WhaTap agent is run for the first time, you can check which jar file has been used as the agent and from which path _whatap.conf_ has been loaded, as the following.
+When the WhaTap agent is run for the first time, you can check which jar file has been used as the agent and from which path *whatap.conf* has been loaded, as the following.
 
 ![Java start screen](/img/set-java-agent-start.png)
 
 ## Server connection and data transmission
 
-The WhaTap agent is connected to the server address that has been set in _whatap.conf_.
+The WhaTap agent is connected to the server address that has been set in *whatap.conf*.
 
 ```ini title='whatap.conf'
 whatap.server.host=10.10.1.1
@@ -52,7 +52,7 @@ whatap.server.port=6600 # default value
 
 ## Management of the configuration file for multiple applications
 
-When running multiple applications on one server, to separately control the configuration files for each application, change the name of _whatap.conf_ and then add the JVM options to your startup script.
+When running multiple applications on one server, to separately control the configuration files for each application, change the name of *whatap.conf* and then add the JVM options to your startup script.
 
 ```bash title='Service A'
 -Dwhatap.config=whatap_Aservice.conf
@@ -64,7 +64,7 @@ When running multiple applications on one server, to separately control the conf
 
 :::caution
 
-The _whatap.conf_ configuration file must be located in the `${WHATAP_HOME}` path.
+The *whatap.conf* configuration file must be located in the `${WHATAP_HOME}` path.
 
 :::
 

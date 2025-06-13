@@ -1,0 +1,334 @@
+<InDoc product="mongodb,mysql,mssql,oracle">
+
+This document is a guide to configure the WhaTap Cloud Agent in the AWS environment. It is configured to be immediately applicable to the operating environment, including key settings, field descriptions, roles configuration, and execution commands.
+
+</InDoc>
+
+<InDoc product="postgresql">
+This document is a guide to configure the WhaTap Cloud Agent in the AWS and NCP environments. It is configured to be immediately applicable to the operating environment, including key settings, field descriptions, roles configuration, and execution commands.
+
+</InDoc>
+
+## Pricing information
+
+:::caution
+
+The Cloud Monitoring Agent is free, but note that separate charges may apply depending on the use of Cloud services.
+
+:::
+
+<InDoc product="postgresql,mongodb,mysql,mssql,oracle">
+
+### AWS Pricing
+
+Cloud monitoring agents are provided without separate SaaS fees, and the monitoring feature can be used simply by installing the agent. However, because the metrics are collected through the API for Cloud services such as AWS CloudWatch, **separate charges may apply depending on the CloudWatch usage**.
+
+This agent basically collects metrics by **calling the GetMetricData API every 1 minute**. Note that the charge may increase depending on the call frequency and collection targets.
+
+For more information about the pricing policy, see the [Amazon CloudWatch pricing in AWS official documentation](https://aws.amazon.com/cloudwatch/pricing/) page.
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP Pricing
+
+Cloud monitoring agents are provided without separate SaaS fees, and the monitoring feature can be used simply by installing the agent. The Cloud Monitoring Agent calls the Cloud Insight API every 5 minutes to collect metrics at 1-minute granularity.  
+
+The Cloud Insight service of the Naver Cloud Platform (NCP) is currently provided free of charge, but may become paid depending on the future policy. If the Cloud Insight service becomes paid, charges may apply based on the number of API calls. Monitor the usage accordingly.
+
+For more information about the pricing policy, see the [Official pricing guide of NAVER Cloud Platform](https://www.ncloud.com/product/management/cloudInsight#pricing) page.
+
+</InDoc>
+
+## Agent CONFIG.
+
+<InDoc product="mysql,mssql,oracle">
+
+Instructions for setting up AWS Aurora and RDS
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+The following explains how to configure the AWS Aurora and RDS, and NCP Cloud DB for PostgreSQL.
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,mssql,oracle">
+
+### Configure AWS Aurora and RDS
+
+```yaml title='config.yaml'
+input:
+  csp: "aws" # Enter the Cloud Service Provider.
+  namespace: "rds"
+  region: "ap-northeast-2"
+  instances: # The specified instances are collected always. Instances listed under this property are collected at all times, regardless of the autoscaling setting.
+    - name: "mysql-rds"
+      slow_query: true # To use the slow query page, set it to true. This feature is avaiable only in MySQL and PostgreSQL instances.
+  clusters:
+    autoscale:
+      enabled: false # If the autoscale is enabled, the autoscaled instances are added or deleted for collection.
+      interval: 60 # Autoscale checking cycle for the specified clusters (unit: second)
+    names:
+      - "database-cluster-name"
+  metrics: # Enter the metrics to collect.
+    - "CPUUtilization"
+    - "FreeStorageSpace"
+    - "FreeableMemory"
+    - "ReadLatency"
+    - "WriteLatency"
+
+output: # Enter the WhaTap information to receive the collected metrics.
+  license: "abcdefg-higjgkgjk-zxcvnbnbmc"
+  host: "127.0.0.1"
+```
+
+| Field                           | Description                                                                                                                                                                                                                                               |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `csp`                           | Indicates `aws` (Amazon Web Services) as a cloud service provider.                                                                                                                                                                                        |
+| `namespace`                     | Namespace of the service to be collected<br />- Fixed value: Enter `rds` when configuring Aurora and RDS.                                                                                                                                                 |
+| `region`                        | AWS Region code<br />- e.g. `ap-northeast-2` (Seoul Region)                                                                                                                                                                                               |
+| `instances`                     | It always collects the specified instances regardless of whether they are auto-scaled, as long as they are in the list of instances to collect.                                                                                                           |
+| `instances[].name`              | RDS InstanceName<br />- e.g. `mysql-rds`                                                                                                                                                                                                                  |
+| `instances[].slow_query`        | Whether to collect slow queries for the instance. It is ** available only in MySQL and PostgreSQL instances.** <br />- `true`: To be collected<br />- `false`: Not to be collected<br />                                                                  |
+| `clusters`                      | RDS Cluster-related settings                                                                                                                                                                                                                              |
+| `clusters.autoscale.enabled`    | Whether to collect cluster autoscale<br />- `true`: Automatically add/remove/collect instances<br />- `false`: Only the instances directly entered in `instances` are included in the collection targets.                                                 |
+| `clusters.autoscale.interval`   | Polling interval for detecting autoscaling status (unit: second)                                                                                                                                                                                          |
+| `clusters.names`                | List of cluster names to check for autoscaling status                                                                                                                                                                                                     |
+| `metrics`                       | List of metrics to collect<br />- e.g. `CPUUtilization`, `FreeStorageSpace`, etc<br />- Note. [Shortcut to the official Amazon CloudWatch Metrics documentation for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html)  |
+| `output.license`                | WhaTap's license key to transmit the collected data                                                                                                                                                                                                       |
+| `output.host`                   | WhaTap server host address (IP) to transmit the collected data to                                                                                                                                                                                         |
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+The following explains how to configure the AWS DocumentDB Agent.
+
+### AWS DocumentDB Agent
+
+```yaml title='config.yaml'
+input:
+  csp: "aws" # Enter the Cloud Service Provider.
+  namespace: "docdb"
+  region: "ap-northeast-2"
+  instances: # The specified instances are always collected. When the instances within the cluster are specified in this property, collection is applied regardless of the autoscaling status.
+    - name: "docdb-instance-name"
+  clusters:
+    autoscale:
+      enabled: false # If autoscale is enabled, autoscaled instances are added or deleted for collection targets.
+      interval: 60 # Autoscale checking cycle for the specified clusters (unit: second)
+    names:
+      - "docdb-cluster-name"
+  metrics: # Enter the metrics to collect.
+    - "CPUUtilization"
+    - "FreeableMemory"
+    - "ReadLatency"   
+    - "WriteLatency"  
+    - "DatabaseConnections"
+
+output: # Enter the WhaTap information to receive the collected metrics.
+  license: "4544ee05-wfwefwefb205-2987709519af"
+  host: "127.0.0.1"
+```
+
+| Field                           | Description                                                                                                                                                                                                                       |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `csp`                           | Indicates `aws` (Amazon Web Services) as the cloud service provider.                                                                                                                                                              |
+| `namespace`                     | Namespace of the collection target service<br />- When AWS DocumentDB is set, enter `docdb` as the **fixed value**.                                                                                                               |
+| `region`                        | AWS Region code<br />- e.g. `ap-northeast-2` (Seoul Region)                                                                                                                                                                       |
+| `instances`                     | It always collects the specified instances regardless of whether they are auto-scaled, as long as they are in the list of instances to collect.                                                                                   |
+| `instances[].name`              | DocumentDB InstanceName<br />- e.g. `docdb-2025-04-08-01-21-05`                                                                                                                                                                   |
+| `clusters`                      | DocumentDB cluster-related settings                                                                                                                                                                                               |
+| `clusters.autoscale.enabled`    | Whether to collect cluster autoscale<br />- `true`: Automatically add/remove/collect instances<br />- `false`: Only the instances directly entered in `instances` are included in the collection targets.                         |
+| `clusters.autoscale.interval`   | Polling interval for detecting autoscaling status (unit: second)                                                                                                                                                                  |
+| `clusters.names`                | List of cluster names to check for autoscaling status                                                                                                                                                                             |
+| `metrics`                       | List of metrics to collect<br />- e.g. `CPUUtilization`, `FreeableMemory`, etc<br />- Note. [Official Documentation for Amazon DocumentDB metrics](https://docs.aws.amazon.com/documentdb/latest/developerguide/cloud_watch.html) |
+| `output.license`                | WhaTap's license key to transmit the collected data                                                                                                                                                                               |
+| `output.host`                   | WhaTap server host address (IP) to transmit the collected data to                                                                                                                                                                 |
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP Cloud DB for PostgreSQL Setup
+
+```yaml title='config.yaml'
+input:
+  csp: "ncp" # Enter the Cloud Service Provider.
+  namespace: "vpc_postgresql"
+  region: "KR" # KR | SGN | JPN | USWN | DEN
+  accessKey: "YOUR_ACCESS_KEY"
+  secretKey: "YOUR_SECRET_KEY"
+  instances: # Specify the name of the DB Server to monitor in the Cloud DB for PostgreSQL (VPC) list.
+    - name: "instance-name"
+      domain: "pg-xxxxx.vpc-pub-cdb-kr.ntruss.com" # Enter the private or public domain that can be accessed.
+  metrics: # Enter the metrics to collect.
+    - "cpu_user"
+    - "mem_used"
+    - "disk_usage"
+    - "nic_total"
+    - "cpu_load_1"
+    - "tup_inserted"
+
+output: # Enter the WhaTap information to receive the collected metrics.
+  license: "4544ee0few5-a880410bb205-2987709519af"
+  host: "127.0.0.1"
+```
+
+| Field path              | Description                                                                                                                                                                                                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `csp`                   | Indicates using the Naver Cloud Platform (`ncp`) as the cloud service provider.                                                                                                                                                                                                                              |
+| `namespace`             | It is used as the delimiter for monitoring targets or group name.<br />- e.g. `vpc_postgresql`                                                                                                                                                                                                               |
+| `region`                | Cloud region code<br />- Available values: `KR`, `SGN`, `JPN`, `USWN`, `DEN`                                                                                                                                                                                                                                 |
+| `accessKey`             | Access key for API calls to Naver Cloud<br />- Note. [How to Create an Access Key and Secret Key] (https://www.notion.so/1ee20702704a802492c9ee6dd6c179e1?pvs=21)                                                                                                                                            |
+| `secretKey`             | Secret key for API calls to Naver Cloud                                                                                                                                                                                                                                                                      |
+| `instances`             | List of PostgreSQL instances to monitor<br />- Each instance contains the `name` and `domain` fields.                                                                                                                                                                                                        |
+| `instances[].name`      | Cloud DB for PostgreSQL (VPC) instance name<br />- It can be checked in DB Server > DB Server Name of the NAVER CLOUD PLATFORM console.<br />- e.g. `whatap-001-70ld`                                                                                                                                        |
+| `instances[].domain`    | Domain address that can be accessed from the instance<br />- It can be checked in DB Server > Private or Public Domain of the NAVER CLOUD PLATFORM console.<br />- Enter the **Private or Public domain address** that is being accessed by the DBX agent.<br />- e.g. `pg-33rr40.vpc-pub-cdb-kr.ntruss.com` |
+| `metrics`               | List of metrics to collect<br />- Note. [Official Documentation for Cloud DB for PostgreSQL (VPC) metrics](https://api.ncloud-docs.com/docs/database-vpostgresql-metric)                                                                                                                                     |
+| `output`                | WhaTap information to receive the collected metrics                                                                                                                                                                                                                                                          |
+| `output.license`        | WhaTap's license key to transmit the collected metrics                                                                                                                                                                                                                                                       |
+| `output.host`           | WhaTap server host address (IP) to transmit the collected data to                                                                                                                                                                                                                                            |
+
+</InDoc>
+
+## Role setting
+
+For the agent to operate normally, set the required roles for each service.
+
+<InDoc product="postgresql,mysql,mssql,oracle">
+
+### AWS Aurora and RDS roles
+
+The Cloud Agent calls the AWS API to perform the following features.
+
+- Check the monitoring targets by querying the AWS Aurora and RDS instance and clusters.
+- Collecting CloudWatch metrics
+
+#### IAM inline policy
+
+Add the JSON policy as **inline policy** for IAM user or role. If you are running the agent on EC2, grant the policy to the IAM role associated with the EC2 instance.
+
+- This policy is applied to both **Aurora and RDS services**.
+- The resources are configured to apply to all Aurora and RDS resources. If needed, the resource ARNs can be restricted depending on the security policy.
+- The agent can use the read-only APIs only. The roles that can affect the database are not included.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RDSPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "rds:DescribeDBInstances",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBClusterParameters",
+        "rds:DescribeOptionGroups"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchMetricsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchLogsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents",
+        "logs:GetLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/rds/*"
+      ]
+    }
+  ]
+}
+```
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+### AWS DocumentDB permissions
+
+The cloud agent performs the following features for DocumentDB.
+
+- Viewing the DocumentDB instances and clusters
+- Collecting CloudWatch metrics
+
+#### IAM inline policy for DocumentDB
+
+Add the JSON policy as **inline policy** for IAM user or role. If the agent is run on EC2, grant the policy to the IAM role associated with the EC2 instance.
+
+- The resources are configured to apply to all DocumentDB resources. If needed, the resource ARNs can be restricted depending on the security policy.
+- The agent can use the read-only APIs only. The roles that can affect the database are not included.  
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DocDBPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "docdb:DescribeDBInstances",
+        "docdb:DescribeDBClusters"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchMetricsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchLogsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents",
+        "logs:GetLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/docdb/*"
+      ]
+    }
+  ]
+}
+```
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP Cloud DB for PostgreSQL permissions
+
+The Cloud Agent calls the NCP Cloud Insight API to collect metrics and configuration data from the NCP Cloud DB for PostgreSQL instances. For this purpose, Access Key and Secret Key are required.
+
+**How to create an Access Key and Secret Key**
+
+1. Log in to the [NAVER CLOUD PLATFORM Console](https://www.ncloud.com).
+2. From the top menu, go to **My Page > Account Management**.
+3. Select **Authentication Key Management** from the menu.
+4. Click the **[Create Key]** button to create new Access Key and Secret Key.
+
+</InDoc>

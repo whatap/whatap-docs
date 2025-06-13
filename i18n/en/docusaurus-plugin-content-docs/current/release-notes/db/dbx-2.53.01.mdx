@@ -1,0 +1,35 @@
+---
+id: dbx-2_53_01
+title: DBX v2.53.01
+pagination_next: release-notes/db/dbx-2_53_01
+displayed_sidebar: releaseSidebar
+---
+
+May 28, 2025
+
+### MySQL
+
+<Status priority='1'>Feature</Status> In MySQL 8 or later, added the lock collection query change (viewing the sys.innodb_lock_waits) and agent options.
+    See the options of [the following](https://docs.whatap.io/mysql/agent-dbx-settings#%EB%9D%BD-%EC%88%98%EC%A7%91-%EA%B4%80%EB%A0%A8-%EC%84%A4%EC%A0%95).
+
+<Status priority='0'>Change</Status> Changed the method how to display the collected session information in whatap.log.
+
+<Status priority='0'>Fixed</Status> Added the WhaTap comment in the WhaTap collection query.
+
+### PostgreSQL
+
+<Status priority='0'>Change</Status> Excluded the sessions in idle in transaction state from SQL statistics and xview.
+
+<Status priority='0'>Change</Status> Added the state field in the xview category.
+
+<Status priority='1'>New</Status> Added the order by option during collection of PGSQL statistics.
+    * default : statements_order_by=total_time
+    * When adding columns: e.g. statements_order_by=total_time,calls
+
+### SAP ASE
+
+<Status priority='0'>Fixed</Status> Added the oname tag in the db_sap_ase_suspect_db category.
+
+### Oracle
+
+<Status priority='0'>Change</Status> The parameters are transmitted to the tagcount pack (Oracle V2).

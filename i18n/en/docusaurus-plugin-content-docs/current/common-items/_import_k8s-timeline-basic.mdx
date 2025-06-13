@@ -44,11 +44,6 @@ You can adjust the time range by dragging the zone on the timeline. Set a desire
 
 Additionally, when you select a specific period, you can check the {props.object} status during the period in detail through **Display Detail**. For more information, see the [{props.object} timeline detail](#timeline-details) guidance. 
 
-{/* A list of nodes collected over the past 7 days is displayed as follows. You can visually see the state changes of nodes along the time axis. If you hover your mouse over each time zone, the start and end times for the zone appears as tooltips together with the node's status (***Ready***, ***NotReady***, etc.).
-
-You can check the Pod status (Running, Pending, Succeeded, Failed) at a specific time point. 
-You can filter by the Pod name, namespace, and such. It visualizes the data collected over the past hour based on the time axis, and provides tooltips with detailed information such as Pod status, start time, and end time when you hover your mouse over it. You can drag a specific time range to view historical data, and click a specific Pod to view detailed information about the Pod, including resource usage, running containers, and ownerReference. */}
-
 :::note 
 
 For more information on how to use the time selector, see [the following](usage-ui#timeselector).
@@ -108,22 +103,3 @@ In the <Cmdname sid="overview" className="uitext" /> tab, a summary information 
 The <Cmdname sid="overview" className="uitext" /> tab provides a summary of the selected container and overall resource usage. You can comprehensively see the container information including the container image, the node on which the container is running, and the `ownerReference` of the Pod on which the container is running. You can see the resource usage and status of the container and monitor the performance and operational stability. You can also view the average usage and maximum usage for the selected period by clicking ***AVG*** and ***MAX***.
 
 </InDoc>
-
-{/* 
-
-### <Cmdname sid="metrics" className="uitext" />
-
-### <Cmdname sid="event" className="uitext" />
-
-<InDoc pages="container-timeline">
-
-### <Cmdname sid="log" className="uitext" />
-
-</InDoc>
-
-*/}
-
-{/* 
-
-<Cmdname sid={props.linkobject} className="uitext" /> 
-*/}

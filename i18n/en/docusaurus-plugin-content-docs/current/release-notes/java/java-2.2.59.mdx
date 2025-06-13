@@ -1,0 +1,33 @@
+---
+id: java-2_2_59
+title: Java Agent v2.2.59
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_58
+displayed_sidebar: releaseSidebar
+---
+
+May 8, 2025
+
+- <Status priority='0'>Fixed</Status> In IBM Java and Widows environments, modified not to call JMX.
+
+  - It is recommended to set `oshi` or `sigar` for collecting performance metrics.
+
+    - In Java 1.8 or later, it is recommended to set the `oshi`.
+
+    ```bash
+    # default: false
+    oshi_enabled=true
+    ```
+
+    - For Java versions earlier than 1.8, it is recommended to set the `sigar`.
+
+    ```bash
+    # default: false
+    sigar_enabled=true
+    ```
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where log tracing does not occur intermittently (Java agent 2.2.58).
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.59" />
