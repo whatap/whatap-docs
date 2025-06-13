@@ -303,7 +303,7 @@ def simple_app(environ, start_response):
 
 <TabItem value="docker" label="Docker">
 
-Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加してください。
+Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加します。
 
 1. **Pythonエージェント**をインストールしてください。
 
@@ -329,7 +329,7 @@ Dockerコンテナでサービスされるアプリケーションの場合、�
    RUN echo "app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]" >> /whatap/whatap.conf
    ```
 
-3. 既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
+3. 既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加します。
 
    ```docker title='Dockerfile'
    CMD ["whatap-start-agent", "python", "manage.py", "runserver", "0.0.0.0:8000"]

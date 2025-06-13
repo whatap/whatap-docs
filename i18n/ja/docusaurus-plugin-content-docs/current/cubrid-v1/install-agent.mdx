@@ -34,7 +34,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認してください。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
+3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認します。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -90,8 +90,8 @@ CUBRIDをモニタリングするためには、DBアカウントとCUBRID Manag
 
 - 最初1回の設定で暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
 - DBユーザーファイルを生成するには、プロジェクトアクセスキーを*whatap.conf*ファイルに入力する必要があります。 [プロジェクトアクセスキーの確認](#check-accesskey)
-- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力してください。
-- `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character(\\)を入力してください。
+- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力します。
+- `dba`または`DB_PASSWORD`に特殊文字が含まれる場合、特殊文字の前にEscape Character(\\)を入力します。
 
   ```bash title='Example'
   ./uid.sh whatap whatap\!pwd

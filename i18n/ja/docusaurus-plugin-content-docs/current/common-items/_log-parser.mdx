@@ -101,7 +101,7 @@ semanticな単語すべて、正規表現に書き換えできます。 GROKパ�
   - regular expression: `.*?`
 
 ```text title='GROK parsing pattern'
-[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]
+[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]
 ```
 
 上記の内容でパーシングすると、次のようにタグを抽出できます。 このようにGROKの`%{SYNTAX:SEMANTIC}`パターンは、複雑で長い正規表現を簡単に適用できる機能を提供します。
@@ -194,7 +194,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    <ImgLang img='log-1st-parser-list.png' desc='ログパーサ一覧'/>
 
-2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_GROK_**パーサを選択します。
+2. ***+*** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で***GROK***パーサを選択します。
 
    <ImgLang img='log-1st-parser-add.png' desc='ログパーサーの追加'/>
 
@@ -202,7 +202,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 4. <Cmdname sid="pattern" className="uitext" />と<Cmdname sid="log" className="uitext" />入力後、<Cmdname sid="simulation" className="uitext" />ボタンをクリックして、適用するパターンでパーシングに成功することを確認します。
 
-   > <Cmdname sid="pattern" className="uitext" /> 例: `[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
+   > <Cmdname sid="pattern" className="uitext" /> 例: `[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
    >
    > <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 
@@ -218,7 +218,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    - <Cmdname sid="category" className="uitext" />
 
-     ログカテゴリを選択してください。 <Cmdname sid="category" className="uitext" />は必須入力項目です。
+     ログカテゴリを選択します。 <Cmdname sid="category" className="uitext" />は必須入力項目です。
 
    - <Cmdname sid="ITM06439" className="uitext" />
 
@@ -234,7 +234,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 - ログパーサ一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更するか、<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
 
-- **_パーサーシミュレーション_**後、パターンを登録できます。 
+- ***パーサーシミュレーション***後、パターンを登録できます。 
 
 :::
 
@@ -244,7 +244,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 - GROKパーサは`%{SYNTAX:SEMANTIC}`、`%{SYNTAX:SEMANTIC}`二つのパターンをサポートします。
 
-- `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`を必ず入力してください。
+- `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`を必ず入力します。
 
 - `%{SYNTAX:SEMANTIC}`パターンを使用する時、`SEMANTIC`は一つのパーサの中でuniqueしなければなりません。
 
@@ -264,7 +264,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 > <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 >
-> <Cmdname sid="pattern" className="uitext" /> 例: `[%{TIMESTAMP_ISO8601:date}\sGMT\][%{LOGLEVEL:level}\s\][%{DATA:caller}\]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
+> <Cmdname sid="pattern" className="uitext" /> 例: `[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
 
 1. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で<Cmdname sid="simulation" className="uitext" />ボタンを選択します。
 
@@ -288,7 +288,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    <ImgLang img='log-1st-parser-list.png' desc='ログパーサ一覧'/>
 
-2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_JSON_**パーサを選択します。
+2. ***+*** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で***JSON***パーサを選択します。
 
    <ImgLang img='log-1st-parser-add.png' desc='ログパーサーの追加'/>
 
@@ -300,15 +300,15 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
    2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
    ```
 
-   例のログで**_Prefix_**と**_Postfix_**を`--`に指定し、**_Ignore_**に`url`を指定時`host`、`method`、`status`3つ<Cmdname sid="tag" className="uitext" />のみ生成します。
+   例のログで***Prefix***と***Postfix***を`--`に指定し、***Ignore***に`url`を指定時`host`、`method`、`status`3つ<Cmdname sid="tag" className="uitext" />のみ生成します。
 
-   - **_Prefix_**\
+   - ***Prefix***\
      ログでJSONフォーマットが開始する場所を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
 
-   - **_Postfix_**\
+   - ***Postfix***\
      ログでJSONフォーマットが終わる位置を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
 
-   - **_Ignore_**\
+   - ***Ignore***\
      JSONフォーマットの中でタグを生成しないキーを指定します。
 
 5. シミュレーションの成功時<Cmdname sid="simulation_result" className="uitext" />と<Cmdname sid="TTL08604" className="uitext" />を照会できます。
@@ -323,7 +323,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
    - <Cmdname sid="category" className="uitext" />
 
-     ログカテゴリを選択してください。 <Cmdname sid="category" className="uitext" />は必須入力項目です。
+     ログカテゴリを選択します。 <Cmdname sid="category" className="uitext" />は必須入力項目です。
 
    - <Cmdname sid="ITM06439" className="uitext" />
 
@@ -349,7 +349,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"}
 ```
 
-上記のようなサンプルログが収集された場合<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で**_JSON_**パーサを選択します。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な<Cmdname sid="tag" className="uitext" />を次のように抽出できます。
+上記のようなサンプルログが収集された場合<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で***JSON***パーサを選択します。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な<Cmdname sid="tag" className="uitext" />を次のように抽出できます。
 
 ```javascript title='Tag extraction'
 - host : 10.21.3.24
@@ -364,7 +364,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
 ```
 
-もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は**_Prefix_**と**_Postfix_**を指定してください。 WhaTapログモニタリングは**_Prefix_**と**_Postfix_**間の領域をJSONフォーマットで認識してからパーシングします。
+もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は***Prefix***と***Postfix***を指定してください。 WhaTapログモニタリングは***Prefix***と***Postfix***間の領域をJSONフォーマットで認識してからパーシングします。
 
 ```javascript title='Tag extraction'
 - host : 10.21.3.24

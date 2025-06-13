@@ -1,10 +1,73 @@
 ---
 id: aws-marketplace
-title: AWS marketplace
-description: WhaTapモニタリングサービスを有料に切り替えて使用する方法を紹介します。
+title: AWS Marketplace購読
+description: AWS MarketplaceでWhaTapモニタリングサービスを購読する方法を案内します。
 toc_max_heading_level: 3
 keywords:
   - 管理
-  - 課金
-draft: true
+  - 購読
+  - AWS Marketplace
 ---
+
+AWSユーザーはAWS MarketplaceでWhaTapモニタリングサービスを購読でき、サービス利用料をAWS費用と一括決済できます。 そのためには、AWSアカウントとWhaTapサービスアカウントを接続する必要があり、WhaTapサービスアカウントは接続過程で新たに作成する必要があります。
+既存のWhaTapサービスアカウントは接続できません。
+
+:::note 
+
+すでにWhaTapサービスを有料で利用している場合、WhaTapサービス費用をAWSクラウド費用と一括決済するためには、必ずAWS Marketplace購読手続きに従って**新規アカウント**として登録する必要があります。 以降、既存のサービスの決済権限を新たに作成したアカウントに移管する必要があります。
+
+:::
+
+## AWS MarketplaceでWhaTapサービスを探す
+
+1. AWSにログインした後、検索窓に“whatap”を入力します。
+
+2. 以下のように、3つの検索結果が表示されます。希望する国に合ったサービスを選択します。
+
+   - WhaTap Observability Platform
+
+   - WhaTap Observability Platform(Japan)
+
+   - WhaTap Observability Platform(Korea)
+
+## WhaTapサービスを購読する
+
+選択したWhaTap Observability Platformの基本情報を確認した上で、購読のため右上の“View purchase options”ボタンをクリックして購読ページに移動します。
+
+購入ページではOffer details、Pricing and unit details、Terms and conditionsなど様々な情報を確認できます。 Offer detailsでWhaTapサービスの課金方式を選択でき、AWS Marketplaceでは使用量ベースの従量制方式を提供します。 また、15日間の無料体験(Free Trial)も提供します。
+
+<ImgLang img='awsmp-view-purchase-offer.png' desc='AWSMP 와탭 구독 상세 내역' />
+
+価格情報と利用条件を確認した上で、下段の“Subscription”ボタンをクリックします。
+
+<ImgLang img='awsmp-view-purchase-pricing.png' desc='AWSMP 와탭 서비스 가격정보' />
+
+<ImgLang img='awsmp-view-purchase-terms-conditions.png' desc='AWSMP 와탭 서비스 계약정보' />
+
+## AWSアカウントと接続するWhaTapサービスアカウントを作成する
+
+Subscribeボタンが非活性化された場合は、ページの上部に移動して、WhaTapサービスアカウントの接続操作を実行します。 上段に表示される緑色の通知ウィンドウの右側の“Set up your account”ボタンをクリックします。 AWSアカウントと接続するWhaTapサービスアカウントを作成するために、WhaTapアカウント作成ページが新しいタブとして開きます。
+
+<ImgLang img='awsmp-view-purchase-linking-whatap-account.png' desc='AWSMP 와탭 서비스 연동' />
+
+WhaTapアカウント作成ページでアカウントを作成した後、WhaTapサービスにログインします。 モニタリングしようとする製品の[プロジェクトを作成](https://docs.whatap.io/quick-guide#cproject)してエージェントをインストールします。 
+
+モニタリング対象にWhaTapエージェントをインストールした後、ダッシュボードで性能データが正常に収集されることを確認します。
+
+AWSマーケットプレイスでの購読有無は、右上のプロフィールをクリックし、**利用履歴 > 決済情報**で確認できます。
+
+## 購読をキャンセルする
+
+1. AWS ConsoleにWhaTapサービスを購読したアカウントでログインします。
+
+2. Console Home画面でAWS Marketplaceを選択して移動します。
+
+3. AWS Marketplace > Manage subscriptionsをクリックします。 現在購読しているサービス一覧でWhaTap Observability Platformを選択します。
+
+4. 選択した製品の詳細ページのAgreement領域のActionsドロップダウンメニューでCancel subscriptionをクリックします。
+
+   <ImgLang img='awsmp-cancel-subscription.png' desc='AWSMP 와탭 서비스 구독 취소' />
+
+5. 購読キャンセル有無を確認する画面が表示されたら、購読キャンセルボタンをクリックします。
+
+6. 購読履歴でWhaTapサービスが削除されたことを確認します。

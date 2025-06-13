@@ -8,63 +8,63 @@ keywords:
   - UI
 ---
 
-WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、**_プロジェクトメニュー_**の**_Amazon ECS_**メニューからアイテム別ダッシュボードにアクセスしてください。
+WhaTapモニタリングサービスの初期画面でプロジェクトを選択し、***プロジェクトメニュー***の***Amazon ECS***メニューからアイテム別ダッシュボードにアクセスしてください。
 
 ## Amazon ECS
 
 | ダッシュボードメニュー             | Launch Type | 説明                                                                                |
 | ----------------------- | ----------- | --------------------------------------------------------------------------------- |
-| **_TASK_**              | Fargate、EC2 | **_Task_**に属するコンテナ毎の性能**_CPU_**、**_Memory_**、**_Traffic_**、**_BLKIO_**の照会         |
-| **_Service_**           | Fargate、EC2 | **_Service_**毎の**_Running_**、**_Pending_**、**_Desired task_**および関連メトリクス           |
-| **_ContainerInstance_** | EC2         | **_ContainerInstance_**毎の**_Running_**、**_Pending_**、**_Desired task_**および関連メトリクス |
+| ***TASK***              | Fargate、EC2 | ***Task***に属するコンテナ毎の性能***CPU***、***Memory***、***Traffic***、***BLKIO***の照会         |
+| ***Service***           | Fargate、EC2 | ***Service***毎の***Running***、***Pending***、***Desired task***および関連メトリクス           |
+| ***ContainerInstance*** | EC2         | ***ContainerInstance***毎の***Running***、***Pending***、***Desired task***および関連メトリクス |
 
 ### Task
 
-ECS **_Task_**毎の主要指標を可視化します。
+ECS ***Task***毎の主要指標を可視化します。
 
 - **チャートの表示**
-  - **_Total Task CPU Usage (millicore)_**：プロジェクトの総CPU使用量
-  - **_Total Task Memory (Working Set) Usage (byte)_**：プロジェクトの総メモリ使用量
-  - **_Task CPU Usage (millicore)_**：Task別CPU使用量
-  - **_Task Memory (Working Set) Usage (byte)_**：Task毎メモリ使用量
-  - **_Task Block I/O Read Byte_**：Task毎Block I/O読み取り使用量
-  - **_Task Block I/O Write Byte_**：Task毎Block I/Oの書き込み使用量
-  - **_Task CPU Usage (%)_**：Task毎の制限に対するCPU使用量
-  - **_Task Memory Usage (%)_**：Task毎の制限に対するメモリ使用量
-  - **_Task CPU Limit 設定 (millis)_**：Task毎のCPU使用量の制限設定
-  - **_Task Memory Limit 設定 (byte)_**：Task毎のメモリ使用量の制限設定
-  - **_Task Network Read Byte_**：Task毎のネットワーク受信量
-  - **_Task Network Transmit Byte_**：Task毎のネットワーク送信量
+  - ***Total Task CPU Usage (millicore)***：プロジェクトの総CPU使用量
+  - ***Total Task Memory (Working Set) Usage (byte)***：プロジェクトの総メモリ使用量
+  - ***Task CPU Usage (millicore)***：Task別CPU使用量
+  - ***Task Memory (Working Set) Usage (byte)***：Task毎メモリ使用量
+  - ***Task Block I/O Read Byte***：Task毎Block I/O読み取り使用量
+  - ***Task Block I/O Write Byte***：Task毎Block I/Oの書き込み使用量
+  - ***Task CPU Usage (%)***：Task毎の制限に対するCPU使用量
+  - ***Task Memory Usage (%)***：Task毎の制限に対するメモリ使用量
+  - ***Task CPU Limit 設定 (millis)***：Task毎のCPU使用量の制限設定
+  - ***Task Memory Limit 設定 (byte)***：Task毎のメモリ使用量の制限設定
+  - ***Task Network Read Byte***：Task毎のネットワーク受信量
+  - ***Task Network Transmit Byte***：Task毎のネットワーク送信量
 
 ### Service
 
-ECS **_Service_**毎の主要指標を可視化します。
+ECS ***Service***毎の主要指標を可視化します。
 ![ECS Service](https://img.whatap.io/media/images/aws_ecs_whatap_monitoring_service.png)
 
 - **チャートの表示**
-  - **_DesiredCount_**(必要なタスク数)
-  - **_RunningCount_**：実行中のタスク数
-  - **_PendingCount_**：保留中のタスク数
-  - **_Cpu_total_millis_**：Service TaskのCPU使用量の合計
-  - **_Mem_workingset_**：Service Taskのメモリ使用量の合計 
+  - ***DesiredCount***(必要なタスク数)
+  - ***RunningCount***：実行中のタスク数
+  - ***PendingCount***：保留中のタスク数
+  - ***Cpu_total_millis***：Service TaskのCPU使用量の合計
+  - ***Mem_workingset***：Service Taskのメモリ使用量の合計 
 
 ### ContainerInstance
 
-ECS **_ContainerInstance_**、**_Service_**の主要指標を可視化します。
+ECS ***ContainerInstance***、***Service***の主要指標を可視化します。
 
 - **チャートの表示**
-  - **_RunningCount Per Service_**：サービス毎の実行中のタスク
-  - **_PendingCount Per Service_**：サービス毎の保留中のタスク
-  - **_RunningTasksCount Per Node_**：ノード毎の実行中のタスク
-  - **_PendingTasksCount Per Node_**：ノード毎の保留中のタスク
-  - **_TrafficIn_**：ノード毎のネットワークの受信bps
-  - **_TrafficOut_**：ノード毎ネットワークの送信bps
-  - **_PacketIn_**：ノード毎ネットワークの受信パケット
-  - **_PacketOut_**：ノード毎ネットワークの送信パケット
-  - **_ReadBps_**：ノード毎のディスク読み取りbps
-  - **_WriteBps_**：ノード毎のディスク書き込みbps
-  - **_ReadIops_**：ノード毎のディスク読み取り回数
-  - **_WriteIops_**：ノード毎のディスク書き込み回数
-  - **_TotalSpace_**：ノード毎のディスクサイズ
-  - **_UsedSpace_**：ノード毎のディスク使用量(byte)
-  - **_UsedPercent_**：ノード毎のディスク使用量(%)
+  - ***RunningCount Per Service***：サービス毎の実行中のタスク
+  - ***PendingCount Per Service***：サービス毎の保留中のタスク
+  - ***RunningTasksCount Per Node***：ノード毎の実行中のタスク
+  - ***PendingTasksCount Per Node***：ノード毎の保留中のタスク
+  - ***TrafficIn***：ノード毎のネットワークの受信bps
+  - ***TrafficOut***：ノード毎ネットワークの送信bps
+  - ***PacketIn***：ノード毎ネットワークの受信パケット
+  - ***PacketOut***：ノード毎ネットワークの送信パケット
+  - ***ReadBps***：ノード毎のディスク読み取りbps
+  - ***WriteBps***：ノード毎のディスク書き込みbps
+  - ***ReadIops***：ノード毎のディスク読み取り回数
+  - ***WriteIops***：ノード毎のディスク書き込み回数
+  - ***TotalSpace***：ノード毎のディスクサイズ
+  - ***UsedSpace***：ノード毎のディスク使用量(byte)
+  - ***UsedPercent***：ノード毎のディスク使用量(%)

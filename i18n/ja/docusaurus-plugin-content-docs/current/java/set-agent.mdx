@@ -22,7 +22,7 @@ whatap.home=.
 whatap.config=whatap.conf
 ```
 
-- `whatap.home`：既定値は_whatap.agent.jar_ファイルへのパスを入力してください。
+- `whatap.home`：既定値は_whatap.agent.jar_ファイルへのパスを入力します。
 
 - `whatap.config`: ファイル名のみを入力することをお勧めします。相手パスを一緒に入力することができます。
 
@@ -52,7 +52,7 @@ whatap.server.port=6600 # 既定値
 
 ## 複数のアプリケーションサーバーの設定ファイル管理
 
-1つのサーバーの中で複数のアプリケーションを運営する場合、各アプリケーション別の設定ファイルを別途管理するには、*whatap.conf*ファイル名を変更し、開始スクリプトにJVMオプションを追加してください。
+1つのサーバーで複数のアプリケーションを実行する場合、各アプリケーション別の設定ファイルを個別に管理する場合は、*whatap.conf*ファイル名を変更し、起動スクリプトにJVMオプションを追加します。
 
 ```bash title='Service A'
 -Dwhatap.config=whatap_Aservice.conf

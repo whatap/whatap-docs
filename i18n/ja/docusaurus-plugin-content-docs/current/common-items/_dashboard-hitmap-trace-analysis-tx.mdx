@@ -54,33 +54,33 @@ WhaTapは、トランザクションの性能を分析するために、名前�
 
 収集する**ステップ**(**Step**)の種類は次のとおりです。 ダイアグラムとテキストの色を区分して表示します。
 
-- **_DB Connection_**ステップ<span class='type'>START-END</span>
+- ***DB Connection***ステップ<span class='type'>START-END</span>
 
   RDBへの接続のパフォーマンスが含まれます。 ステップ情報には、名前、レスポンス時間、エラーが含まれます。
 
-- **_SQL_**ステップ<span class='type'>START-END</span>
+- ***SQL***ステップ<span class='type'>START-END</span>
 
   JDBC SQLのパフォーマンスが含まれます。 ステップ情報には、接続情報、SQL文、エラーが含まれています。
 
-- **_HTTP Call_**ステップ<span class='type'>START-END</span>
+- ***HTTP Call***ステップ<span class='type'>START-END</span>
 
   外部HTTPサービス呼び出しのパフォーマンスが含まれます。 ステップ情報には、url、host、port、レスポンス時間、エラーが含まれます。
 
-- **_Message_**ステップ<span class='type'>ADD</span>
+- ***Message***ステップ<span class='type'>ADD</span>
 
   トレースを収集する過程で、非構造化のすべての間隔の履歴を収集する際にメッセージステップを使用します。  
 
-- **_Socket_**ステップ<span class='type'>ADD</span>
+- ***Socket***ステップ<span class='type'>ADD</span>
 
   Socketオープンを表現するステップです。
 
-- **_Method_**ステップ<span class='type'>START-END</span>
+- ***Method***ステップ<span class='type'>START-END</span>
 
   メソッド応答時間を追跡します。
 
 <Xclude product='php,nodejs,golang'>
 
-- **_Active Stack_**ステップ<span class='type'>START-END</span>
+- ***Active Stack***ステップ<span class='type'>START-END</span>
 
   アクティブスタックに関する情報を含みます。 別のスレッドが作成し、トレースに追加する方法で収集します。
 

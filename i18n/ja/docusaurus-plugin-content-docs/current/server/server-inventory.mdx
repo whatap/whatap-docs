@@ -32,17 +32,17 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 <Tabs>
 <TabItem value="du" label="Debian/Ubuntu" default>
 
-  ```bash
-  sudo apt-get update
-  sudo apt-get install whatap-infra
-  ```
+```bash
+sudo apt-get update
+sudo apt-get install whatap-infra
+```
 
 </TabItem>
 <TabItem value="arfocrs" label="Amazon Linux/RHEL/Fedora/Oracle Linux/CentOS/Rocky Linux/SUSE">
 
-  ```bash
-  sudo yum update whatap-infra
-  ```
+```bash
+sudo yum update whatap-infra
+```
 
 </TabItem>
 </Tabs>
@@ -54,26 +54,26 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 <Tabs>
 <TabItem value="aix" label="AIX" default>
 
-  ```bash
-  stopsrc -s whatap-infra
-  cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
-  rpm -e whatap-infra
-  rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  ```
+```bash
+stopsrc -s whatap-infra
+cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+rpm -e whatap-infra
+rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+```
 
 </TabItem>
 <TabItem value="solaris" label="Oracle Solaris">
 
-  ```bash
-  cp /usr/whatap/infra/conf/whatap.conf /tmp
-  /etc/init.d/whatap-infra stop
-  pkgrm whatap-infra
-  wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz
-  tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz
-  pkgadd -d .
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  ```
+```bash
+cp /usr/whatap/infra/conf/whatap.conf /tmp
+/etc/init.d/whatap-infra stop
+pkgrm whatap-infra
+wget https://repo.whatap.io/sunos/11/whatap-infra.latest.SPARC.pkg.tar.gz
+tar xzvf whatap-infra.latest.SPARC.pkg.tar.gz
+pkgadd -d .
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+```
 
 </TabItem>
 </Tabs>
@@ -99,61 +99,77 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
    - **Linux**
 
 <Tabs>
-<TabItem value="linux-opt" label="オプション追加コマンド" default>
+<TabItem value="linux-opt" label="옵션 추가 명령어" default>
 
-     ```bash
-     grep -q '^hostinfov2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'hostinfov2.enabled=true' | sudo tee -a /usr/whatap/infra/conf/whatap.conf
-     ```
+````
+  ```bash
+  grep -q '^hostinfov2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'hostinfov2.enabled=true' | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
+````
 
 </TabItem>
-<TabItem value="linux-restart" label="エージェント再起動">
+<TabItem value="linux-restart" label="에이전트 재시작">
 
-     ```bash
-     sudo service whatap-infra restart
-     ```
+````
+  ```bash
+  sudo service whatap-infra restart
+  ```
+````
 
 </TabItem>
 </Tabs>
 
-   - **Unix** 
+```
+* **Unix** 
+```
 
 <Tabs>
-<TabItem value="unix-opt" label="オプション追加コマンド" default>
+<TabItem value="unix-opt" label="옵션 추가 명령어" default>
 
-     ```bash title='AIX/Oracle Solaris'
-     grep -q '^hostinfov2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'hostinfov2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
-     ```
+````
+  ```bash title='AIX/Oracle Solaris'
+  grep -q '^hostinfov2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'hostinfov2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
+````
 
 </TabItem>
-<TabItem value="unix-restart" label="エージェント再起動">
+<TabItem value="unix-restart" label="에이전트 재시작">
 
-     ```bash title='AIX'
-     stopsrc -s whatap-infra
-     startsrc -s whatap-infra
-     ```
+````
+  ```bash title='AIX'
+  stopsrc -s whatap-infra
+  startsrc -s whatap-infra
+  ```
 
-     ```bash title='Oracle Solaris'
-     /etc/init.d/whatap-infra restart
-     ```
+  ```bash title='Oracle Solaris'
+  /etc/init.d/whatap-infra restart
+  ```
+````
 
 </TabItem>
 </Tabs>
 
-   - **Windows**
+```
+* **Windows**
+```
 
 <Tabs>
 <TabItem value="windows-opt" label="オプション追加コマンド" default>
 
-     ```bash
-     if (-not (Select-String -Path "C:\Program Files\WhatapInfra\whatap.conf" -Pattern "^hostinfov2.enabled" -Quiet)) { Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "hostinfov2.enabled=true" }
-     ```
+````
+  ```bash
+  if (-not (Select-String -Path "C:\Program Files\WhatapInfra\whatap.conf" -Pattern "^hostinfov2.enabled" -Quiet)) { Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "hostinfov2.enabled=true" }
+  ```
+````
 
 </TabItem>
 <TabItem value="windows-restart" label="エージェント再起動">
 
-     ```bash
-     Restart-Service -Name "Whatap Infra"
-     ```
+````
+  ```bash
+  Restart-Service -Name "Whatap Infra"
+  ```
+````
 
 </TabItem>
 </Tabs>
@@ -212,7 +228,7 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 1. ![指示線 2](/img/number-02.png)領域上部の![アップロードアイコン](/img/ico-upload.svg) ***CSV*** <Cmdname sid="upload" className="uitext" />ボタンをクリックして、アップロードする*CSV*ファイルを選択します。 
 
-2. ***CSV検証***ウィンドウを通じてアップロードされたデータの検証結果を確認してください。 
+2. ***CSV検証***ウィンドウを通じてアップロードされたデータの検証結果を確認します。 
 
    - 変更される項目及びエラー項目の件数を確認できます。
 

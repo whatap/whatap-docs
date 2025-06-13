@@ -10,7 +10,7 @@ WhaTap Kubernetesエージェント1.7.6バージョン以降が必要です。 
 
 ## 基本画面ガイド
 
-<UI>{props.menu}</UI>メニューに入った後<Cmdname sid="TTL06740" className="uitext" />と<Cmdname sid="TTL08842" className="uitext" />を選択してデータを照会してください。 最近1時間の間に収集された{props.object}一覧を確認することができます。 時間軸に沿って{props.object}の状態変化を視覚的に確認できます。
+<UI>{props.menu}</UI>メニューに入った後<Cmdname sid="TTL06740" className="uitext" />と<Cmdname sid="TTL08842" className="uitext" />を選択してデータを照会します。 最近1時間の間に収集された{props.object}一覧を確認することができます。 時間軸に沿って{props.object}の状態変化を視覚的に確認できます。
 
 <InDoc pages="pod-timeline">
 
@@ -43,11 +43,6 @@ WhaTap Kubernetesエージェント1.7.6バージョン以降が必要です。 
 </InDoc>
 
 また、特定の期間を選択した場合、当該期間中の{props.object}状態を**詳細画面**を通じて詳しく確認できます。 詳細は以下[{props.object}タイムラインの詳細](#timeline-details)案内を参照してください。 
-
-{/* メニューに入ると、次のように最近7日間に収集されたノードのリストが表示されます。 時間軸に沿ってノードの状態変化を視覚的に確認できます。 各時間の区間にマウスをかざすと、その区間の開始時刻と終了時刻、そしてノードの状態(***Ready***、***NotReady***など)がツールチップに表示されます。
-
-特定時点のPod状態(Running、Pending、Succeeded、Failed)が確認できます。 
-Pod名、ネームスペースなどでフィルタリングできます。 最近1時間収集されたデータを時間軸に基づいて視覚化し、マウスをかざすと、その時点のPod状態、開始時間、終了時間などの詳細情報をツールチップで提供します。 特定の時間範囲をドラッグして過去のデータを確認でき、特定のPodをクリックすると、リソースの使用量、実行中のコンテナ、所有情報(ownerReference)などを含むPodの詳細情報を確認できます。 */}
 
 :::note 
 
@@ -108,22 +103,3 @@ Pod名、ネームスペースなどでフィルタリングできます。 最�
 <Cmdname sid="overview" className="uitext" />タブで選択したコンテナ情報と全体的なリソース使用量情報を要約して提供します。 当該コンテナの画像、コンテナが実行されているノード、コンテナが実行されているPodの`ownerReference`などのコンテナ情報を総合的に確認できます。 ユーザーは、コンテナのリソース使用状況と状態を把握し、性能と運用の安定性をモニタリングできます。 また、***AVG***、***MAX***ボタンをクリックして、照会期間中の平均使用量と最大使用量を確認できます。
 
 </InDoc>
-
-{/* 
-
-### <Cmdname sid="metrics" className="uitext" />
-
-### <Cmdname sid="event" className="uitext" />
-
-<InDoc pages="container-timeline">
-
-### <Cmdname sid="log" className="uitext" />
-
-</InDoc>
-
-*/}
-
-{/* 
-
-<Cmdname sid={props.linkobject} className="uitext" /> 
-*/}

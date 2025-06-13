@@ -19,10 +19,10 @@ import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
 
 ## モニタリング手順
 
-1. Azure Registered Appを追加してください。
-2. Azure認証情報を入力してください。
-3. Azure Monitorのネームスペースおよび収集サイクルを選択してください。
-4. リソースグループ、メトリクス、統計などを選択してください。
+1. Azure Registered Appを追加します。
+2. Azure認証情報を入力します。
+3. Azure Monitorのネームスペースおよび収集サイクルを選択します。
+4. リソースグループ、メトリクス、統計などを選択します。
 
 :::note
 
@@ -32,7 +32,7 @@ import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
 
 ### Azure Registered Appの追加
 
-WhaTapモニタリング用 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)を追加してください。 Secretを作成し、アプリケーションID(ApplicationId), テナントID(TenantId)とシークレット(Secret)をWhaTapに入力してください。 
+WhaTapモニタリング用 [Registered App](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps)を追加します。 Secretを作成し、アプリケーションID(ApplicationId), テナントID(TenantId)とシークレット(Secret)をWhaTapに入力します。 
 
 WhaTapモニタリングのためには、Monitor Reader、Reader、API Management Service Reader権限が必要です。Azure PortalでSubscript > アクセス制御(IAM) メニューで、追加ボタンで権限を追加できます。
 
@@ -40,7 +40,7 @@ WhaTapモニタリングのためには、Monitor Reader、Reader、API Manageme
 
 ### 認証情報入力
 
-Azureの認証情報の**_アプリケーションID_**(ApplicationID), **_テナントID_**(TenantID)と**_Azureシークレットキー_**(Secret)をWhaTapに入力してください。
+Azureの認証情報の***アプリケーションID***(ApplicationID), ***テナントID***(TenantID)と***Azureシークレットキー***(Secret)をWhaTapに入力します。
 
 <ImgLang img='whatap_azure_auth_dialog.png' desc='Azure Monitor - Authentification' />
 
@@ -208,7 +208,7 @@ import Collectingperiod from "../common-items/_collecting-period.mdx";
 
 ### リソース グループ、メトリクス、統計を選択
 
-![number 2](/img/number-02.png)収集されたネームスペースの右側をチェック![修正アイコン](/img/ico-edit.svg)**修正**ボタンをクリックすると、収集する**_リソースグループ_**、**_メトリクス_**、**_スタット_**を選択できます。
+![number 2](/img/number-02.png)収集されたネームスペースの右側をチェック![修正アイコン](/img/ico-edit.svg)**修正**ボタンをクリックすると、収集する***リソースグループ***、***メトリクス***、***スタット***を選択できます。
 
 <ImgLang img='whatap_azure_resourcegroup_dialog.png' desc='Azure Monitor - ResourceGroup, Metric, Stats' />
 
@@ -218,7 +218,7 @@ import Collectingperiod from "../common-items/_collecting-period.mdx";
 
 - ![指示線a](/img/char-a.svg) 活性化トグル![アイコン](/img/ic-toggle-off.svg)がOFFの場合、データ収集が中止されます。
 
-- ![指示線b](/img/char-b.svg) **_ロール変更_**ボタンをクリックし、**_エージェント設定_**画面から![指示線c](/img/char-c.svg) **_サービス初期化_**を選択すると、すべてのメトリクス収集サービスが無効化されます。
+- ![指示線b](/img/char-b.svg) ***ロール変更***ボタンをクリックし、***エージェント設定***画面から![指示線c](/img/char-c.svg) ***サービス初期化***を選択すると、すべてのメトリクス収集サービスが無効化されます。
 
 - 完全なコスト発生を防ぐためには、以下を取り除く必要があります。  
 

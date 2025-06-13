@@ -32,7 +32,7 @@ WhaTapノードエージェントバージョン**1.4.2以降**に対応しま�
 
 - タイムセレクターを通じて開始時刻を選択できます。 照会を希望する開始時間を選択した場合![指示線 2](/img/number-02.png)領域のPodリストからデータを確認できます。 
 
-- **_30日以内に生成されたPodのみ表示_** ![アイコン](/img/ic-toggle-off.svg)トグルを活性化して![指示線2](/img/number-02.png)領域のPod一覧で30日以内のPodだけを照会できます。
+- ***30日以内に生成されたPodのみ表示*** ![アイコン](/img/ic-toggle-off.svg)トグルを活性化して![指示線2](/img/number-02.png)領域のPod一覧で30日以内のPodだけを照会できます。
 
 - Pod検索の入力欄に文字を入力してPodを検索できます。
 
@@ -48,7 +48,7 @@ WhaTapノードエージェントバージョン**1.4.2以降**に対応しま�
 
 ![指示線2](/img/number-02.png)領域でPod一覧を確認できます。 Pod一覧が開いたテーブルのヘッダーカラムには、次の情報が含まれています。
 
-- **_QoS Class_**：PodのQuality of Serviceを意味します。 QoSクラスは、リソース不足時のPodの優先順位を決定します。 優先順位の高いPodが優先順位の低いPodより先に終了します。
+- ***QoS Class***：PodのQuality of Serviceを意味します。 QoSクラスは、リソース不足時のPodの優先順位を決定します。 優先順位の高いPodが優先順位の低いPodより先に終了します。
 
   - Guaranteed: ノードで使用可能なリソースが保証され、他のPodよりも優先的に割り当てます。 最後に終了します。
 
@@ -66,13 +66,13 @@ WhaTapノードエージェントバージョン**1.4.2以降**に対応しま�
 
     - Podのすべてのコンテナには、CPUおよびメモリの requestと limitはありません。
 
-- **_Restart Count_**：Pod内コンテナの総再起動回数です。
+- ***Restart Count***：Pod内コンテナの総再起動回数です。
 
-- **_CPU/Memory Limits_**: Pod内コンテナに設定されたCPU/Memory Limitsの総合(`resources.limits`)です。
+- ***CPU/Memory Limits***: Pod内コンテナに設定されたCPU/Memory Limitsの総合(`resources.limits`)です。
 
-- **_CPU/Memory Requests_**: Pod内コンテナに設定されたCPU/Memory Requestsの総合(`resources.requests`)です。
+- ***CPU/Memory Requests***: Pod内コンテナに設定されたCPU/Memory Requestsの総合(`resources.requests`)です。
 
-- **_Start Time_**: Pod生成時刻(`metadata.startTime`)です。
+- ***Start Time***: Pod生成時刻(`metadata.startTime`)です。
 
 :::note
 
@@ -84,15 +84,15 @@ WhaTapノードエージェントバージョン**1.4.2以降**に対応しま�
 
 ## 詳細表示の案内
 
-![指示線2](/img/number-02.png)領域のPod一覧で分析を希望する項目の一番左の![詳細を見るアイコン](/img/ico-detail-view.svg) **_詳細を見る_**ボタンを選択します。 選択したPodのコンテナ別の開始性能を区間別に分析した内容を次のように確認できます。
+![指示線2](/img/number-02.png)領域のPod一覧で分析を希望する項目の一番左の![詳細を見るアイコン](/img/ico-detail-view.svg) ***詳細を見る***ボタンを選択します。 選択したPodのコンテナ別の開始性能を区間別に分析した内容を次のように確認できます。
 
 <ImgLang img='k8s-pod-startup-analysis-details.png' desc='Pod起動分析' />
 
-- **_Pending_**: Podを生成した後**_Running_**状態に進入する区間です。
+- ***Pending***: Podを生成した後***Running***状態に進入する区間です。
 
-- **_Running_**: Podが**_Pending_**状態を経て安定化するまでの区間です。
+- ***Running***: Podが***Pending***状態を経て安定化するまでの区間です。
 
-- **_Stable Running_**: Podが**_Running_**状態を経て安定化した区間です。
+- ***Stable Running***: Podが***Running***状態を経て安定化した区間です。
 
 :::note
 
@@ -108,7 +108,7 @@ WhaTapでは、Pod生成直後の約5分間、コンテナのCPU Limit比使用�
 
   <ImgLang img='k8s-pod-startup-analysis-details-restart-count.png' desc='コンテナの再起動回数' />
 
-- **_Pending_**区間が長いなら、Podが**_Running_**状態に進入するまで長い時間がかかったという意味です。 Podの**_Pending_**状態を誘発する要因があるか点検してみてください。 
+- ***Pending***区間が長いなら、Podが***Running***状態に進入するまで長い時間がかかったという意味です。 Podの***Pending***状態を誘発する要因があるか点検してみてください。 
 
   :::note
 
@@ -116,6 +116,6 @@ WhaTapでは、Pod生成直後の約5分間、コンテナのCPU Limit比使用�
 
   :::
 
-- **_Running_**区間が長いなら、Pod内のコンテナが初めて実行される時、リソース使用量が多い区間があるという意味です。 コンテナの実行過程に問題がないか確認してください。
+- ***Running***区間が長いなら、Pod内のコンテナが初めて実行される時、リソース使用量が多い区間があるという意味です。 コンテナの実行過程に問題がないか確認してください。
 
 - 全体的な初期リソース使用量が多い場合は、コンテナリソースのリクエストと制限を増やすことを検討してください。

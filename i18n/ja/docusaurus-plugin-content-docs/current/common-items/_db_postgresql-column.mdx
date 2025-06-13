@@ -35,12 +35,15 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 <TabItem value="locktree" label="Lock tree">
 
-| 項目             | 説明                                            |
-| -------------- | --------------------------------------------- |
-| `holder type`  | `holder`セッションの`type` (transaction id、tupleなど) |
-| `lock mode`    | `holder_mode` (exclusive lock、shared lockなど)  |
-| `waiter type`  | `waiter`セッションの`type` (transaction id、tupleなど) |
-| `lock request` | `waiter_mode` (exclusive lock、shared lockなど)  |
+| 項目                | 説明                                            |
+| ----------------- | --------------------------------------------- |
+| `holder_relation` | `holder`セッションがロックされているオブジェクト(テーブルまたはインデックス)   |
+| `holder_type`     | `holder`セッションの`type` (transaction id、tupleなど) |
+| `lock_mode`       | `holder_mode` (exclusive lock、shared lockなど)  |
+| `lock_request`    | `waiter_mode` (exclusive lock、shared lockなど)  |
+| `state`           | 各セッション(ベックエンドプロセス)の現在の状態                      |
+| `waiter_relation` | `waiter`セッションがロックされるのを待っているオブジェクト             |
+| `waiter_type`     | `waiter`セッションの`type` (transaction id、tupleなど) |
 
 </TabItem>
 

@@ -1,0 +1,220 @@
+[
+	{
+		"url":"https://docs.whatap.io/release-notes/service/service-2_17_x",
+		"ver":"Service 2.17.0",
+		"date":"2025-05-28",
+		"Lists":[
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">リアルタイム通知リスト</span>、<span class=\"uitext\">プロジェクトメンバー</span>（<span class=\"uitext\">統合グループ管理</span>）のオプションおよび選択状態をURLに含め、リンク共有時に同じ状態で共有可能</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">レポート</span>のExcelダウンロード機能追加（一部レポートテンプレートのみ提供）</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span>共有権限の変更機能を追加</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント設定</span>に<code class=\"newfunc\">New</code>イベント設定履歴Excelファイルダウンロードボタン追加</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">メトリクスチャート</span>の<code class=\"oldfunc\">Old</code>ウィジェットをドラッグした後、新しいウィジェット追加時にタイムセレクター設定値が維持されるよう修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Flexボード</span>の<em><strong>管理</strong></em>内のウィジェットにおいてプロジェクトタグがクリックできない現象を修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">Flexボード</span>ウィジェットの<em><strong>前回時間と比較</strong></em>機能のバグ修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> 画面右上の<em><strong>プロフィール</strong></em>アイコン＞<em><strong>Whatapモニタリング情報</strong></em>メニューをクリック時、組織情報が消失するバグを修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> シリーズチャートに個別時間設定が適用されるよう修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"共通",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> 連携プロジェクト追加ページでテーブルリサイズを適用</p>"
+			},
+			{
+				"ver": "Service 2.17.0",
+				"hash": "service-2170",
+				"product": "アプリケーション",
+				"type": "Feature",
+				"desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">マルチトランザクション</span> <span class=\"uitext\">チャート</span>にクライアントIP情報表示オプションを追加</p>"
+			},
+			{
+				"ver": "Service 2.17.0",
+				"hash": "service-2170",
+				"product": "アプリケーション",
+				"type": "Feature",
+				"desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トレース分析</span> &gt; <em><strong>タイムライン</strong></em>、<span class=\"uitext\">テーブルビュー</span> メッセージステップでエラー属性を表示</p>"
+			},
+			{
+				"ver": "Service 2.17.0",
+				"hash": "service-2170",
+				"product": "アプリケーション",
+				"type": "Feature",
+				"desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トランザクションマップ</span> 初回データ取得時にテーブル領域ローディング表示、データがない場合はデータ要求時間に縦線ローディング表示</p>"
+			},
+			{
+				"ver": "Service 2.17.0",
+				"hash": "service-2170",
+				"product": "アプリケーション",
+				"type": "Feature",
+				"desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トランザクションマップ</span> 停止状態で使用可能なフィルター項目に「都市」フィルターを追加</p>"
+			},
+			{
+				"ver": "Service 2.17.0",
+				"hash": "service-2170",
+				"product": "アプリケーション",
+				"type": "Feature",
+				"desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トランザクションマップ</span>に<code>STEP_SQL_BIND</code>、<code>STEP_ALL</code>フィルター項目を追加（使用時は復号化キー入力が必要）</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント受信設定</span> &gt; <em><strong>Webhook JSON</strong></em> 変数を追加</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー詳細</span> ページをドロワー形式で提供</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー詳細</span> メニューのチャートでY軸最大値を直接入力できる設定ポップオーバーを追加</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">ログファイル / Windowsイベント</span> 繰り返し回数・期間（秒）を追加/修正可能</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Feature",
+				"desc":"<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">警告通知</span> &gt; <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">ログファイル / Windowsイベント</span> イベントリスト内のEvent ID表示を改善</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Changed",
+				"desc":"<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">サーバーリスト</span> エージェント検索時に大文字小文字を区別しないよう変更</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Changed",
+				"desc":"<p><code class=\"Changed\" type=\"1\">Changed</code> <span class=\"uitext\">実験室</span> &gt; <span class=\"uitext\">メトリクスエクスプローラー</span> 指標リストの並び順を改善（事前定義された順序を適用）</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <em><strong>グループ概要</strong></em> &gt; <em><strong>進行中イベント状況</strong></em> タブの <span class=\"uitext\">サーバー名</span> 列の表示エラーを修正し、エージェント名列を追加</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシュボード</span> &gt; <span class=\"uitext\">サーバーインベントリマップ</span> メニュー &gt; <em><strong>詳細表示</strong></em> 画面の <em><strong>進行中イベント状況</strong></em> タブで <span class=\"uitext\">サーバー名</span> 列の表示エラーを修正し、エージェント名列を追加</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">カラム設定</span> で空白を含む重複登録を防止</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー詳細</span> ラインチャートパネルでデータがない場合はダウンロードボタンを非表示</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー詳細</span> &gt; <span class=\"uitext\">サーバー情報</span> で <span class=\"uitext\">サーバー通知リスト</span> のイベント受信タグ表示エラーを修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"サーバー",
+				"type":"Fixed",
+				"desc":"<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">メトリクスエクスプローラー</span> ウィジェット追加時にリストオープン状態が維持されない問題を修正</p>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"Kubernetes",
+				"type":"Changed",
+				"desc":"<p><code class=\"Changed\" type=\"1\">Changed</code> <em><strong>ワークロード</strong></em> &gt; <em><strong>Deploymentリスト</strong></em> 新規指標追加（Kubernetesエージェントバージョン1.8.7）</p>",
+				"details":"<ul>\n<li>\n<p><strong>削除カラム</strong></p>\n<ul>\n<li>\n<p>ReplicaSets, TotalPods, Running Pods → PodPhaseに置換</p>\n</li>\n<li>\n<p>TotalContainers, RunningContainers → ContainerStateに置換</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>追加カラム</strong></p>\n<ul>\n<li>PodPhase, ContainerState, Ready, deployUpdatedReplicas, deployAvailableReplicas, deployCreationTime</li>\n</ul>\n<div class=\"theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary\"><div class=\"admonitionHeading_Gvgb\"><span class=\"admonitionIcon_Rf37\"></span>ノート</div><div class=\"admonitionContent_BuS1\"><p>Kubernetesエージェントバージョン1.8.7以上でのみ表示され、旧バージョンでは従来通り表示されます。</p></div></div>\n</li>\n</ul>"
+			},
+			{
+				"ver":"Service 2.17.0",
+				"hash":"service-2170",
+				"product":"Kubernetes",
+				"type":"Changed",
+				"desc":"<p><code class=\"Changed\" type=\"1\">Changed</code> <em><strong>ネームスペース</strong></em> プロジェクト名を編集可能に変更</p>"
+			}
+		]
+	}
+]
