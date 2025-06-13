@@ -32,7 +32,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認してください。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
+3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認します。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -64,12 +64,12 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 
 ```bash showLineNumbers
 # 一般的な場合
-create user whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
+create user whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力します。
 grant create session to whatap;
 grant select any dictionary to whatap;
  
 # 12c以降でマルチテナントの場合 (接頭語はc##)
-create user c##whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力してください。
+create user c##whatap identified by DB_PASSWORD; ## ご希望のpasswordを入力します。
 grant create session to c##whatap;
 grant select any dictionary to c##whatap;
 alter user c##whatap set container_data = ALL container = CURRENT;

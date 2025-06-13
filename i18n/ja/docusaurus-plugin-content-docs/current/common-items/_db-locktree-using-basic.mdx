@@ -6,7 +6,7 @@
 
 <Xclude product='postgresql,mysql,altibase,mssql,mssql-v1,cubrid,tibero,db2,sapase'>
 
-目的の![数字1](/img/number-01.png)日付と時間を設定し、[数字2](/img/number-02.png)の一覧からインスタンスを選択してください。設定した時間にロックが発生した場合は、**_lock wait sessions_**と画面下のテーブルに表示されているデータを表示します。
+目的の![数字1](/img/number-01.png)日付と時間を設定し、[数字2](/img/number-02.png)の一覧からインスタンスを選択します。設定した時間にロックが発生した場合は、***lock wait sessions***と画面下のテーブルに表示されているデータを表示します。
 
 :::note
 
@@ -18,13 +18,13 @@
 
 <InDoc product='postgresql,mysql,altibase,cubrid'>
 
-![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />、![数字2](/img/number-02.png) <Cmdname sid="instance" className="uitext" />で照会する日付と時間、インスタンスを選択します。設定した時間にロックが発生した場合は、**_Lock Wait Sessions_**と下段の**_Lock Tree_**テーブルに照会されているデータが表示されます。
+![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />、![数字2](/img/number-02.png) <Cmdname sid="instance" className="uitext" />で照会する日付と時間、インスタンスを選択します。設定した時間にロックが発生した場合は、***Lock Wait Sessions***と下段の***Lock Tree***テーブルに照会されているデータが表示されます。
 
 - 1つのチャート内で最大2週間のデータを一度に確認できます。グラフチャートで特定の時間をクリックすると、画面下のテーブルから選択した時間のロック情報を確認できます。画面下の詳細情報から秒単位ボタンをクリックすると、5秒単位でロック情報を照会できます。
 
   :::note
 
-  **_Lock Wait Sessions_**チャートの右上に表示されているタグを通じて照会の単位を確認できます。
+  ***Lock Wait Sessions***チャートの右上に表示されているタグを通じて照会の単位を確認できます。
 
   :::
 
@@ -62,25 +62,25 @@
 
 <Title hashid="lockwaitsessions" level={props.level+1}><UI>Lock Wait Sessions</UI></Title>
 
-**_Lock Wait Sessions_**は、ロック待機セッションの情報を分析できる機能です。照会期間によってロック待機セッションデータを3時間以上照会すると5分間隔で、3時間未満照会すると5秒間隔で提供します。また、チャートをドラッグして時間範囲を流動的に調整できます。
+***Lock Wait Sessions***は、ロック待機セッションの情報を分析できる機能です。照会期間によってロック待機セッションデータを3時間以上照会すると5分間隔で、3時間未満照会すると5秒間隔で提供します。また、チャートをドラッグして時間範囲を流動的に調整できます。
 
 <Title hashid="1minlocktrend" level={props.level+1}><UI>1-Min Lock Trends</UI></Title>
 
-**_Lock Wait Sessions_**で特定の時間帯をクリックすると、その時間基準で15分前から15分後までの計30分間のロック発生現況を視覚化して表示します。これにより、30分単位でロック発生トレンドを効果的に分析できます。 
+***Lock Wait Sessions***で特定の時間帯をクリックすると、その時間基準で15分前から15分後までの計30分間のロック発生現況を視覚化して表示します。これにより、30分単位でロック発生トレンドを効果的に分析できます。 
 
 :::note 
 
-**_Total Locks_**は、その時間帯に発生したロックの合計個数を意味します。
+***Total Locks***は、その時間帯に発生したロックの合計個数を意味します。
 
 :::
 
 <Title hashid="selecttimelocktree" level={props.level+1}>時間照会</Title>
 
-**_Lock Wait Sessions_**でクリックした時間に発生した最大ロック数を基準に**_1-Min Lock Trends_**と**_Lock Tree_**テーブルの時間が設定されます。これにより、ロックが最も多く発生した区間を把握できます。 
+***Lock Wait Sessions***でクリックした時間に発生した最大ロック数を基準に***1-Min Lock Trends***と***Lock Tree***テーブルの時間が設定されます。これにより、ロックが最も多く発生した区間を把握できます。 
 
 ![時間照会1](/img/db-lock-tree-1-min-lock-trends2.png)
 
-**_Lock Wait Sessions_**はそのままにして**_1-Min Lock Trends_**チャートで他の時間帯のバーをクリックした場合、その分の最大ロック数を持つ秒で**_Lock Tree_**テーブルの時間範囲が同期されます。これにより、時間帯を変更する時に**_Lock Tree_**テーブルに反映された情報を確認できます。
+***Lock Wait Sessions***はそのままにして***1-Min Lock Trends***チャートで他の時間帯のバーをクリックした場合、その分の最大ロック数を持つ秒で***Lock Tree***テーブルの時間範囲が同期されます。これにより、時間帯を変更する時に***Lock Tree***テーブルに反映された情報を確認できます。
 
 ![時間照会2](/img/db-lock-tree-1-min-lock-trends3.png)
 

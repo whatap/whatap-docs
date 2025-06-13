@@ -38,9 +38,9 @@ import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
 
 ## モニタリング手順
 
-1. Amazon認証情報を入力してください。
-2. CloudWatchネームスペースおよび収集サイクルを選択してください。
-3. リージョン、メトリクス、統計などを選択してください。
+1. Amazon認証情報を入力します。
+2. CloudWatchネームスペースおよび収集サイクルを選択します。
+3. リージョン、メトリクス、統計などを選択します。
 
 :::note
 
@@ -72,7 +72,7 @@ Roleを利用する設定をお勧めします。Access Keyの使用は、既存
 8. ロールのリストから作成したロールを選択し、概要(Summary)の編集ボタンをクリックします。 
 9. 最大セッション時間(Maximum session duration)を「12時間」に変更して保存します。 
 10. ロールの**ARN**項目をコピーします。
-11. WhaTap**_管理_** > **_エージェントのインストール_**ページに戻り、**_Role_**欄にコピーした**ARN**を貼り付け、**_確認_**ボタンをクリックします。
+11. WhaTap***管理*** > ***エージェントのインストール***ページに戻り、***Role***欄にコピーした**ARN**を貼り付け、***確認***ボタンをクリックします。
 
 ### ネームスペースおよび収集周期の選択
 
@@ -118,6 +118,7 @@ import Collectingperiod from "../common-items/_collecting-period.mdx";
 - AWS EC2 Alert Config
 - AWS EC2Spot
 - AWS ECS
+- AWS ECS ContainerInsights Monitoring
 - AWS EFS
 - AWS ElastiCache Usage
 - AWS ElasticGPUs
@@ -205,6 +206,6 @@ import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
 
 - ![指示線a](/img/char-a.svg) 活性化トグル![アイコン](/img/ic-toggle-off.svg)がOFFの場合、データ収集が中止されます。
 
-- ![指示線b](/img/char-b.svg) **_ロール変更_**ボタンをクリックし、**_エージェント設定_**画面から![指示線c](/img/char-c.svg) **_サービス初期化_**を選択すると、すべてのメトリクス収集サービスが無効化されます。
+- ![指示線b](/img/char-b.svg) ***ロール変更***ボタンをクリックし、***エージェント設定***画面から![指示線c](/img/char-c.svg) ***サービス初期化***を選択すると、すべてのメトリクス収集サービスが無効化されます。
 
 - データ収集により発生するすべての費用を防ぐためには、**AWS IAM**コンソールからWhaTapとの連携のため追加した**ロール**(Role)を削除してください。

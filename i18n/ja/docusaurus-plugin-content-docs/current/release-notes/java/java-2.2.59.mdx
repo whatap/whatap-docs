@@ -1,0 +1,33 @@
+---
+id: java-2_2_59
+title: Java Agent v2.2.59
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_58
+displayed_sidebar: releaseSidebar
+---
+
+2025年05月08日
+
+- <Status priority='0'>Fixed</Status> IBM Java及びWindows環境でJMXが呼び出されないように修正
+
+  - 性能指標収集のために`oshi`または`sigar`設定を推奨
+
+    - Java 1.8 以降の場合`oshi`設定を推奨
+
+    ```bash
+    # default: false
+    oshi_enabled=true
+    ```
+
+    - Java 1.8 未満の場合`sigar`設定を推奨
+
+    ```bash
+    # default: false
+    sigar_enabled=true
+    ```
+
+- <Status priority='0'>Fixed</Status> 間欠的に発生するLog追跡できない現象を修正(Java agent 2.2.58)
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.59" />

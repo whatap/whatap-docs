@@ -34,7 +34,7 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 #### CloudWatch Log Group
 
 - WAF
-- API Gateway：ロググループ名を**_api-gateway/gateway resource_**に設定することで、正常なログ収集が可能です。
+- API Gateway：ロググループ名を***api-gateway/gateway resource***に設定することで、正常なログ収集が可能です。
 - RDS
 - DocumentDB
 - REDIS
@@ -43,8 +43,8 @@ AWS Logを収集するには、追加のリソースが必要です。ユーザ�
 
 #### S3
 
-- VPC：Logが収集されるS3 Bucket名を**_VPC resource_**として設定することで正常な収集が可能です。
-- CloudFront：Log設定でプレフィックスは、**_cloudfront_**が既定値です。パラメータ設定時に変更可能です。
+- VPC：Logが収集されるS3 Bucket名を***VPC resource***として設定することで正常な収集が可能です。
+- CloudFront：Log設定でプレフィックスは、***cloudfront***が既定値です。パラメータ設定時に変更可能です。
 - ELB
 
 </details>
@@ -67,11 +67,11 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 ## WhaTap Forwarderインストール{#install-whatap-forwarder}
 
-ログ送信用の**WhaTap Forwarder**をAWS Lambda Functionとしてインストールします。 AWS Cloud Formationでインストールを行います。 WhaTap**_エージェントのインストール_** > **_インストール手順_**セクションの**_WhaTap Forwarderインストール_**タブを参照してください。 次のインストール入力情報が必要です。 
+ログ送信用の**WhaTap Forwarder**をAWS Lambda Functionとしてインストールします。 AWS Cloud Formationでインストールを行います。 WhaTap***エージェントのインストール*** > ***インストール手順***セクションの***WhaTap Forwarderインストール***タブを参照してください。 次のインストール入力情報が必要です。 
 
 - **AWS Region**
 
-  WhaTap ForwarderをインストールするAWS Regionを選択してください。収集対象リソースと同じRegionである必要があります。
+  WhaTap ForwarderをインストールするAWS Regionを選択します。収集対象リソースと同じRegionである必要があります。
 
 - **CloudFormation Stack Name**
 
@@ -119,19 +119,19 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 ![WhaTap Forwarder create stack](/img/aws-log-create-stack.png)
 
-1. **_インストール手順_**セクションの![number 1](/img/number-01.png) **_WhaTap Forwarderインストール_**タブで![number 2](/img/number-02.png) **_AWS Region_**を選択してください。
+1. ***インストール手順***セクションの![number 1](/img/number-01.png) ***WhaTap Forwarderインストール***タブで![number 2](/img/number-02.png) ***AWS Region***を選択します。
 
-2. ![number 3](/img/number-03.png) **_WhaTap Forwarderインストールページ_** ボタンを選択し、CloudFormation実行ページに移動してください。
+2. ![number 3](/img/number-03.png) ***WhaTap Forwarderインストールページ*** ボタンを選択し、CloudFormation実行ページに移動してください。
 
 3. CloudFormation実行ページでインストールオプションを指定してください。 デフォルトのパラメータは入力されています。
 
-4. 下段から![number 4](/img/number-04.png)承認を**_チェック_**した後、![number 5](/img/number-05.png) **_Create stack_**ボタンを選択してください。 インストールには約2分かかります。
+4. 下段から![number 4](/img/number-04.png)承認を***チェック***した後、![number 5](/img/number-05.png) ***Create stack***ボタンを選択します。 インストールには約2分かかります。
 
 ### WhaTap ForwarderのARN取得{#whatapforwarder-arn}
 
 ![WhaTap Forwarder arn1](/img/aws-log-whatap-forwarder-arn.png)
 
-1. 上段右側の![number 1](/img/number-01.png)**_更新_**ボタンをクリックしてスタック作成の進行状況を確認してください。 
+1. 上段右側の![number 1](/img/number-01.png)***更新***ボタンをクリックしてスタック作成の進行状況を確認してください。 
 
    :::note
 
@@ -139,9 +139,9 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
    :::
 
-2. Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)**_Pyhsical ID_**を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
+2. Logical IDがWhaTapAWSLOGとして指定されたリソースの![number 2](/img/number-02.png)***Pyhsical ID***を選択し、**WhaTap Forwarder**の詳細画面に移動してください。
 
-3. 詳細画面の右側にある**Description**領域で![number 3](/img/number-03.png)**Function ARN**(**_WhaTap Forwarder ARN_**)を確認することができます。
+3. 詳細画面の右側にある**Description**領域で![number 3](/img/number-03.png)**Function ARN**(***WhaTap Forwarder ARN***)を確認することができます。
 
 4. 次のステップのためにコピーします。
 
@@ -207,19 +207,19 @@ Stack {stack name} already exists
 
 ## AWS IAMポリシーとロール作成
 
-WhaTap ForwarderがユーザーのAWS環境リソースログを受信するには、**_IAMポリシー_**と**_IAMロール_**が必要です。WhaTap Forwarderを設定するためのIAMポリシーとIAMロールを作成したことがない場合は、新規作成してください。 
+WhaTap ForwarderがユーザーのAWS環境リソースログを受信するには、***IAMポリシー***と***IAMロール***が必要です。WhaTap Forwarderを設定するためのIAMポリシーとIAMロールを作成したことがない場合は、新規作成してください。 
 
 ### IAMポリシーの作成{#create-iam-policy}
 
-アクセス対象のリソースに対する許可または拒否を指定します。WhaTap**_エージェントインストール_** > **_インストール案内_**セクションの**_AWS IAMポリシー作成_**タブを参照して進めてください。欠落したポリシーがある場合、設定は正常に行われません。
+アクセス対象のリソースに対する許可または拒否を指定します。WhaTap***エージェントインストール*** > ***インストール案内***セクションの***AWS IAMポリシー作成***タブを参照して進めてください。欠落したポリシーがある場合、設定は正常に行われません。
 
 <ImgLang img='aws-log-create-policy.png' desc='IAMポリシー作成'/>
 
 1. AWS Management Consoleにログインしてから、IAMコンソールを開きてください。 
 
-2. IAMコンソールで**_Policy_**タブを選択してください。
+2. IAMコンソールで***Policy***タブを選択します。
 
-3. **_Create Policy_**ボタンを選択し、次のポリシーをコピーしてから、![number 1](/img/number-01.png) **_JSON_**タブに貼り付けてください。
+3. ***Create Policy***ボタンを選択し、次のポリシーをコピーしてから、![number 1](/img/number-01.png) ***JSON***タブに貼り付けてください。
 
    ```json title='IAM policy'
    {
@@ -262,11 +262,11 @@ WhaTap ForwarderがユーザーのAWS環境リソースログを受信するに�
    }
    ```
 
-4. 下段の![number 2](/img/number-02.png) **_Review Policy_**ボタンをクリックしてください。
+4. 下段の![number 2](/img/number-02.png) ***Review Policy***ボタンをクリックします。
 
 5. ![number 3](/img/number-03.png)ポリシー名を指定してください。
 
-6. 下段の![number 4](/img/number-04.png)**_Create Policy_**ボタンを選択してください。
+6. 下段の![number 4](/img/number-04.png)***Create Policy***ボタンを選択します。
 
 :::note
 
@@ -283,37 +283,37 @@ IAMポリシーは、次の権限を割り当てます。
 
 ### IAMロールの作成{#create-iam-role}
 
-作成したリソースのアクセス権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap**_エージェントインストール_** > **_インストールガイド_**セクションの**_AWS IAMロールの作成_**タブを参照してください。 
+作成したリソースのアクセス権限をどのAWSアカウントに許可するかを指定し、直前に作成したIAMポリシーをマッピングします。 WhaTap***エージェントインストール*** > ***インストールガイド***セクションの***AWS IAMロールの作成***タブを参照してください。 
 
 1. AWS Management Consoleにログインしてから、IAMコンソールを開きてください。
 
-2. コンソールの検索ボックスから**_Roles_**を選択し、[number 1](/img/number-01.png)**Create role**ボタンを選択します。
+2. コンソールの検索ボックスから***Roles***を選択し、[number 1](/img/number-01.png)**Create role**ボタンを選択します。
 
    ![IAM Role 1](/img/aws-log-iam-role-create.png)
 
-3. **_Select type of trusted entity_**から![number 2](/img/number-02.png) **_AWS account_**を選択し、![number 3](/img/number-03.png) **_Account ID_**にWhaTapアカウント(**911937781722**)を入力してください。
+3. ***Select type of trusted entity***から![number 2](/img/number-02.png) ***AWS account***を選択し、![number 3](/img/number-03.png) ***Account ID***にWhaTapアカウント(**911937781722**)を入力します。
 
    ![IAM Role 2](/img/aws-log-iam-role-account.png)
 
-4. 下段の**_Next_**ボタンを選択してください。
+4. 下段の***Next***ボタンを選択します。
 
-5. [既存のステップ](#create-iam-policy)から作成した![number 4](/img/number-04.png) **IAMポリシー**を選択してください。
+5. [既存のステップ](#create-iam-policy)から作成した![number 4](/img/number-04.png) **IAMポリシー**を選択します。
 
    ![IAM Role 3](/img/aws-log-iam-role-policy.png)
 
-6. 下段の**_Next_**ボタンを選択してください。
+6. 下段の***Next***ボタンを選択します。
 
-7. IAMロールの![number 5](/img/number-05.png)名前を入力してください。
+7. IAMロールの![number 5](/img/number-05.png)名前を入力します。
 
    ![IAM Role 4](/img/aws-log-iam-role-name.png)
 
-8. **_Create Role_**ボタンを選択してください。
+8. ***Create Role***ボタンを選択します。
 
-9. 情報タブで作成された![number 6](/img/number-06.png) **_IAM Role ARN_**が確認できます。
+9. 情報タブで作成された![number 6](/img/number-06.png) ***IAM Role ARN***が確認できます。
 
    ![IAM Role 5](/img/aws-log-iam-role-arn-c.png)
 
-10. 次のステップのため、**_IAM Role ARN_**をコピーしてください。 
+10. 次のステップのため、***IAM Role ARN***をコピーしてください。 
 
 ## AWS Logのサブスクリプション
 
@@ -325,55 +325,55 @@ CloudWatch LogとS3にマウントされたArchive Logを購読することが�
 
 ### AWS CloudWatch Logの参照およびサブスクリプション
 
-WhaTap**_エージェント設定_**>**_インストール手順_**セクションの**_AWS Resource Log表示およびサブスクリプション_**タブで上部の**_AWS CloudWatch Log Group_**を選択してください。 
+WhaTap***エージェント設定***>***インストール手順***セクションの***AWS Resource Log表示およびサブスクリプション***タブで上部の***AWS CloudWatch Log Group***を選択します。 
 
 <ImgLang img='aws-log-cloudwatch-subs.png' desc='AWS CloudWatch Logの参照およびサブスクリプション'/>
 
-1. AWS Logがインストールされ![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
+1. AWS Logがインストールされ![number 1](/img/number-01.png) ***AWS Region***を選択します。 
 
-2. [既存のステップ](#whatapforwarder-arn)から入手した**WhaTap Forwarder ARN**をコピーして![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
+2. [既存のステップ](#whatapforwarder-arn)から入手した**WhaTap Forwarder ARN**をコピーして![number 2](/img/number-02.png) ***AWS IAM Role ARN***に貼り付けてください。
 
-3. ![number 3](/img/number-03.png) **_参照_**ボタンを選択して、サブスククリプション可能なAWSリソースを表示します。
+3. ![number 3](/img/number-03.png) ***参照***ボタンを選択して、サブスククリプション可能なAWSリソースを表示します。
 
-4. 表示されたリソースの中で![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
+4. 表示されたリソースの中で![number 4](/img/number-04.png)サブスクリプションする対象を選択します。
 
-5. ![number 5](/img/number-05.png) **_登録_**ボタンをクリックしてください。
+5. ![number 5](/img/number-05.png) ***登録***ボタンをクリックします。
 
 :::note
 
 **検索およびサブスクリプションに失敗した場合**
 
-- **_IAM Role Policy_**に不足しているポリシーがないことを確認してください。
-- **_IAM Role_**作成過程で信頼ポリシーを正しく設定したことを確認してください。
+- ***IAM Role Policy***に不足しているポリシーがないことを確認してください。
+- ***IAM Role***作成過程で信頼ポリシーを正しく設定したことを確認してください。
 
 :::
 
 ### AWS S3 Bucketのサブスクリプション
 
-WhaTap**_エージェント設定_**>**_インストール手順_**セクションの**_AWS Resource Log検索およびサブスクリプション_**タブで上部の**_AWS S3 Bucket_**を選択してください。 
+WhaTap***エージェント設定***>***インストール手順***セクションの***AWS Resource Log検索およびサブスクリプション***タブで上部の***AWS S3 Bucket***を選択します。 
 
 <ImgLang img='aws-log-s3-subs.png' desc='AWS S3 Bucketの参照およびサブスクリプション'/>
 
-1. AWS Logがインストールされ![number 1](/img/number-01.png) **_AWS Region_**を選択してください。 
+1. AWS Logがインストールされ![number 1](/img/number-01.png) ***AWS Region***を選択します。 
 
-2. [既存のステップ](#whatapforwarder-arn)から取得した**WhaTap Forwarder ARN**をコピーし![number 2](/img/number-02.png) **_AWS IAM Role ARN_**に貼り付けてください。
+2. [既存のステップ](#whatapforwarder-arn)から取得した**WhaTap Forwarder ARN**をコピーし![number 2](/img/number-02.png) ***AWS IAM Role ARN***に貼り付けてください。
 
-3. ![number 3](/img/number-03.png) **_参照_**ボタンを選択して、サブスククリプション可能なAWSリソースを表示します。
+3. ![number 3](/img/number-03.png) ***参照***ボタンを選択して、サブスククリプション可能なAWSリソースを表示します。
 
-4. 表示されたリソースの中で![number 4](/img/number-04.png)サブスクリプションする対象を選択してください。
+4. 表示されたリソースの中で![number 4](/img/number-04.png)サブスクリプションする対象を選択します。
 
-5. ![number 5](/img/number-05.png) **_登録_**ボタンをクリックしてください。
+5. ![number 5](/img/number-05.png) ***登録***ボタンをクリックします。
 
 ## モニタリングの開始
 
 <ImgLang img='aws-log-start.png' desc='AWS Logモニタリングの開始'/>
 
-インストールを完了した後、**_管理_** > **_ログ設定_**メニューに移動します。**_ログモニタリングの開始_**セクションで**_ログモニタリングサービスの活性化_**を選択し、AWS Logモニタリングを開始します。 
+インストールを完了した後、***管理*** > ***ログ設定***メニューに移動します。***ログモニタリングの開始***セクションで***ログモニタリングサービスの活性化***を選択し、AWS Logモニタリングを開始します。 
 
 - ![アイコン](/img/ic-toggle-on.svg)トグルボタンをオンにすると、ログモニタリンがアクティブになります。
 - ![アイコン](/img/ic-toggle-off.svg)トグル ボタンをオフにするとログモニタリンが無効になります。ログは保存されなくなります。
 
-モニタリングを有効にすると、**_ダッシュボード_**>**_ライブテール_**メニューからログの出力を確認することができます。
+モニタリングを有効にすると、***ダッシュボード***>***ライブテール***メニューからログの出力を確認することができます。
 
 :::note
 

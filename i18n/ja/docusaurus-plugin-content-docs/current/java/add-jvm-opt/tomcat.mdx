@@ -15,7 +15,7 @@ Tomcatアプリケーションサーバー環境でJavaモニタリングエー�
 
 ### Linux
 
-_catalina.sh_ファイルの先頭に`JAVA_OPTS`環境変数を追加します。
+*catalina.sh*ファイルの先頭に`JAVA_OPTS`環境変数を追加します。
 
 ```bash title='{Tomcat_PATH}/bin/catalina.sh' showLineNumbers
 ########## WHATAP START ############
@@ -33,9 +33,9 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 ### Windows
 
-- _setup.bat_ファイルを実行した場合
+- *setup.bat*ファイルを実行した場合
 
-  _catalina.bat_ファイルの先頭に`JAVA_OPT`環境変数を追加します。
+  *catalina.bat*ファイルの先頭に`JAVA_OPT`環境変数を追加します。
 
   ```batch title='{Tomcat_PATH}/bin/catalina.bat' {3} showLineNumbers
   rem ########## WHATAP START ############
@@ -58,11 +58,11 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} "
 
 - TomcatをWindowsインストーラーでインストールした場合
 
-  1. **_開始_** > **_Apache Tomcat `X.Y.Z.`_** > **_Configure Tomcat_**を選択します。
+  1. ***開始*** > ***Apache Tomcat `X.Y.Z.`*** > ***Configure Tomcat***を選択します。
 
-  2. **_Java_**タブを選択します。
+  2. ***Java***タブを選択します。
 
-  3. **_Java Options_**テキストボックスに`-javaagent`オプションを追加します。
+  3. ***Java Options***テキストボックスに`-javaagent`オプションを追加します。
 
   ```text
   -javaagent:{WhaTapインストールパス}/whatap.agent-X.Y.Z.jar

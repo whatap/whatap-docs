@@ -93,7 +93,7 @@ RUN tar -xvzf whatap-otel.tar.gz -C /
 
 ### whatap.confファイルを設定する
 
-エージェント設定(*whatap.conf*)ファイルへのアクセスキーと収集サーバーのIPアドレスを設定します。
+エージェント設定(_whatap.conf_)ファイルへのアクセスキーと収集サーバーのIPアドレスを設定します。
 
 ```bash
 echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
@@ -112,7 +112,7 @@ WHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}
 
 :::note
 
-環境変数と*whatap.conf*ファイルをすべて設定した場合、*whatap.conf*ファイルの設定値が優先されます。
+環境変数と_whatap.conf_ファイルをすべて設定した場合、_whatap.conf_ファイルの設定値が優先されます。
 
 :::
 

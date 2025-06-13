@@ -89,7 +89,7 @@ import Transactionprofileactivecolor from "../common-items/_transaction-profile-
 
 - **httpc_status_ignore** <span class='type'>String</span> <ScrollToLink anchor='httpc_status_ignore' />
 
-  HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用してください。
+  HTTPのステータスコードがエラー(`HTTPC_ERROR`)の場合、無視します。複数の値を対象にする場合は、コンマ(,)を区切り文字として使用します。
 
   ```ini title='whatap.conf'
   httpc_status_ignore=404,500
@@ -183,11 +183,11 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **profile_http_parameter_keys** <span class='type'>String</span>
 
-  設定されたキーに該当するパラメータ情報のみを記録します。複数を登録するときは、コンマ(,)を区切り文字として利用してください。設定しない場合、すべてのパラメータ情報が記録されます。
+  設定されたキーに該当するパラメータ情報のみを記録します。複数を登録するときは、コンマ(,)を区切り文字として利用します。設定しない場合、すべてのパラメータ情報が記録されます。
 
 - **status_ignore** <span class='type'>String</span> <ScrollToLink anchor='status_ignore' />
 
-  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用してください。
+  無視するHTTPのステータスコードを設定できます。複数の値を対象とする場合は、コンマ(,)を区切り文字として使用します。
 
   ```ini title='whatap.conf'
   # example
@@ -215,7 +215,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 - **hook_service_patterns** <span class='type'>String</span>
 
-  NON-Httpトランザクション追跡のための開始点パターンを設定します。ワイルドカード文字は使用できません。2つ以上の値を設定するにはコンマ(,)を区切り文字として利用してください。
+  NON-Httpトランザクション追跡のための開始点パターンを設定します。ワイルドカード文字は使用できません。2つ以上の値を設定するにはコンマ(,)を区切り文字として利用します。
 
 - **trace_background_socket_enabled** <span class='type'>Boolean</span>
 
@@ -289,7 +289,7 @@ import Transactionprofilehttp from "../common-items/_transaction-profile-http.md
 
 :::note
 
-[Node.jsエージェントv0.4.94バージョン](../release-notes/nodejs/nodejs-0_4_94)に[socket.io](http://socket.io)モニタリングモジュールを追加しました。`trace_sampling_enabled`、`trace_sampling_tps` オプションを使用して、サンプリングされたデータを確認できます。[`trace_ignore_url_prefix`](#trace_ignore_url_prefix)オプションに`/socket.io`パスを追加して、トレースしないように設定してください。
+[Node.jsエージェントv0.4.94バージョン](../release-notes/nodejs/nodejs-0_4_94)に[socket.io](http://socket.io)モニタリングモジュールを追加しました。`trace_sampling_enabled`、`trace_sampling_tps` オプションを使用して、サンプリングされたデータを確認できます。[`trace_ignore_url_prefix`](#trace_ignore_url_prefix)オプションに`/socket.io`パスを追加して、トレースしないように設定します。
 
 :::
 

@@ -30,7 +30,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認してください。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
+3. 圧縮して解凍したフォルダに入り、*whatap.conf*ファイルを確認します。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -75,7 +75,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 <Dbcreatemonitoringaccount />
 
 ```bash showLineNumbers
-create login whatap with password='DB_PASSWORD'; ## passwordを入力してください。
+create login whatap with password='DB_PASSWORD'; ## passwordを入力します。
 grant view server state to whatap;
 create user whatap for login whatap;
 grant execute to whatap;
@@ -110,7 +110,7 @@ import Dbrunagent from "../common-items/_db-run-agent.mdx";
 
 ## AWS CloudWatchリソースをモニタリングする
 
-エージェントサーバーにある*whatap.conf*ファイルに次のオプションを設定してください。 CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
+エージェントサーバーにある*whatap.conf*ファイルに次のオプションを設定します。 CloudWatch特性上、60秒(`cloud_watch_interval`)ごとの呼び出しをお勧めします。
 
 ```ini title='whatap.conf'
 aws_region={AWS_RDS_Region_Name}

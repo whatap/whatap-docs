@@ -4,9 +4,9 @@ PHPモニタリングを適用した後、サービスにエラーが発生し�
 
 error log に`segmentation fault`、`sig bus`などのエラー文があるか確認してください。`kill child process`、`exit child`、`exit process`などのメッセージが発生します。 
 
-当該エラーが発生する場合は、PHP Extensionモジュールである_whatap.so_モジュールで衝突が発生すると考えられます。PHP Extensionモジュールである_whatap.so_を中止した上でApacheまたはPHP-FPMを再起動してください。
+当該エラーが発生する場合は、PHP Extensionモジュールである*whatap.so*モジュールで衝突が発生すると考えられます。PHP Extensionモジュールである*whatap.so*を中止した上でApacheまたはPHP-FPMを再起動してください。
 
-サービスに影響しない環境でApacheおよびPHP-FPMに`Core dump`設定を追加した後に _whatap.so_を再読み込みしてください。その後、エラーが発生すると、_dump_ファイルが作成されます。_dump_ファイルをgdbで分析して原因を解決してください。 
+サービスに影響しない環境でApacheおよびPHP-FPMに`Core dump`設定を追加した後に *whatap.so*を再読み込みしてください。その後、エラーが発生すると、_dump_ファイルが作成されます。_dump_ファイルをgdbで分析して原因を解決してください。 
 
 ### Core Dump設定
 

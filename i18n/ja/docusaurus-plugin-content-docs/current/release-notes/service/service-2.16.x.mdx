@@ -6,6 +6,36 @@ pagination_next: release-notes/service/service-2_15_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.16.4
+
+2025年05月15日
+
+<div class='indentTab'>
+
+### `Application`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" />, <Cmdname sid="side_stack" className="uitext" />,  <Cmdname sid="cube_navigator"  className="uitext" />, <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="tx_search" className="uitext" />メニューで選択された時間に関するエージェント情報を読み込まない現象を修正
+
+</div>
+
+## Service 2.16.3
+
+2025年05月07日
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> <Cmdname sid="TTL06377" className="uitext" />でSlowノードの色の問題でタイムラインが確認できない現象を修正
+
+---
+
+### `Server`
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_report" className="uitext" /> &gt;1日間の時間別サーバー主要指標レポートでディスク項目のみ表示オプションを追加
+
+</div>
+
 ## Service 2.16.2
 
 2025年04月29日 
@@ -110,17 +140,14 @@ displayed_sidebar: releaseSidebar
 
   - フィルター項目追加
 
-      {/* - front.config의 `ui_transaction_map_custom_filter`オプション(値: `true`/`false`)を`true`に設定する時、カスタムフィルター機能を活性化 */}
-
     <details>
       <summary>追加されたフィルター項目</summary>
 
     - **一般フィルター**  
 
-    - **Referer**\
-      ログインID、WClientId、トランザクションID、マルチトランザクションID、カスタムTID、エラー(クラス、ステップ、メッセージのすべてを含む）、都市、国、HTTPメソッド、ユーザーエージェント
+      ログインID、WClientId、トランザクションID、マルチトランザクションID、Referer、カスタムTID、エラー(クラス、ステップ、メッセージのすべてを含む）、都市、国、HTTPメソッド、ユーザーエージェント
 
-    - **トレースステップ関連フィルター**\
+    - **ステップフィルター**\
       DBC, SQL, HTTPC, METHOD, MESSAGE
 
     - **数値フィルター**\
