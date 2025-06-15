@@ -60,6 +60,7 @@
   --ifm-active-menu-color: #efefef;
   --ifm-dropdown-link-color: #222222;
   --ifm-main-icons-color: #636363;
+  --ifm-custom-uitext-color: #222222;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -88,6 +89,7 @@
   --ifm-dropdown-link-color: #f2f2f2;
   --ifm-dropdown-background-color: #3c3e40;
   --ifm-main-icons-color: #d4d4d4;
+  --ifm-custom-uitext-color: #ffffff;
   .whatap_logo .textColor {
     fill: #fff;
   }
@@ -1994,7 +1996,7 @@ main {
       font-weight: normal;
     }
     span.uitext {
-      color: #222222 !important;
+      color: var(--ifm-custom-uitext-color) !important;
       font-weight: bold !important;
     }
     // db 역슬래시 테스트
