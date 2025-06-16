@@ -114,11 +114,7 @@ function ThereeSteps() {
         <section className={clsx(styles.gettingStart)}>
             <Step order={1}>
                 <Link to="quick-guide#account" className={styles.guidelink}>
-<<<<<<< HEAD
-                    <Heading as="h5" className={styles.inline}>
-=======
                     <Heading as="h5" className={styles.inline} style={{ color: 'var(--ifm-custom-uitext-color)' }}>
->>>>>>> 08426ca7f4d46c51fe0e66f457d8c09da411e98a
                         {translate({
                             id: "index.pages.register",
                             message: "계정 생성"
@@ -135,11 +131,7 @@ function ThereeSteps() {
             <RightArrow/>
             <Step order={2}>
                 <Link to="quick-guide#cproject" className={styles.guidelink}>
-<<<<<<< HEAD
-                    <Heading as="h5" className={styles.inline}>
-=======
                     <Heading as="h5" className={styles.inline} style={{ color: 'var(--ifm-custom-uitext-color)' }}>
->>>>>>> 08426ca7f4d46c51fe0e66f457d8c09da411e98a
                         {translate({
                             id: "index.pages.project",
                             message: "프로젝트 생성"
@@ -156,11 +148,7 @@ function ThereeSteps() {
             <RightArrow/>
             <Step order={3}>
                 <Link to="quick-guide#install" className={styles.guidelink}>
-<<<<<<< HEAD
-                    <Heading as="h5" className={styles.inline}>
-=======
                     <Heading as="h5" className={styles.inline} style={{ color: 'var(--ifm-custom-uitext-color)' }}>
->>>>>>> 08426ca7f4d46c51fe0e66f457d8c09da411e98a
                         {translate({
                             id: "index.pages.agentInstall",
                             message: "에이전트 설치"
@@ -177,11 +165,7 @@ function ThereeSteps() {
             <RightArrow/>
             <Step order={4}>
                 <Link to="quick-guide#dashboard" className={styles.guidelink}>
-<<<<<<< HEAD
-                    <Heading as="h5" className={styles.inline}>
-=======
                     <Heading as="h5" className={styles.inline} style={{ color: 'var(--ifm-custom-uitext-color)' }}>
->>>>>>> 08426ca7f4d46c51fe0e66f457d8c09da411e98a
                         {translate({
                             id: "index.pages.viewDashboard",
                             message: "대시보드 조회하기"
