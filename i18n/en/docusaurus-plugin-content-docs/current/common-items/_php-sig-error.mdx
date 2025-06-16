@@ -4,9 +4,9 @@ If any service failure occurs after applying the PHP Monitoring, check the error
 
 In the content of the error log, check for any error messages such as `segmentation fault` and `sig bus`. The messages include phrases like `kill child process`, `exit child`, and `exit process`. 
 
-If any error occurs, it can be seen that a conflict happened in the PHP extension module, _whatap.so_. Stop the PHP extension module, _whatap.so_, and then restart Apache or PHP-FPM.
+If any error occurs, it can be seen that a conflict happened in the PHP extension module, *whatap.so*. Stop the PHP extension module, *whatap.so*, and then restart Apache or PHP-FPM.
 
-In the environment that does not affect the service, add the `Core dump` setting and then reload _whatap.so_. If any error occurs, the _dump_ file is generated. Analyze the _dump_ file by using gdb for resolving the root cause. 
+In the environment that does not affect the service, add the `Core dump` setting and then reload *whatap.so*. If any error occurs, the _dump_ file is generated. Analyze the _dump_ file by using gdb for resolving the root cause. 
 
 ### Core dump configuration
 

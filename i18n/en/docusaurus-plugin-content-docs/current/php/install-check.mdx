@@ -14,7 +14,7 @@ keywords:
 
 ## Restarting
 
-If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's _whatap.so_ file is loaded.
+If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's *whatap.so* file is loaded.
 
 If the whatap-php service is not running or an error occurs, restart it.
 
@@ -38,7 +38,7 @@ $ service whatap_php restart
 
 ## Checking the status of the PHP extension module installation
 
-If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's _whatap.so_ file is loaded. You can check whether the PHP extension module is installed properly as follows:
+If the Apache or PHP-FPM service is restarted after installation, the set PHP extension module's *whatap.so* file is loaded. You can check whether the PHP extension module is installed properly as follows:
 
 {/* 설치가 완료된 후 Apache 또는 PHP-FPM 서비스(Service)를 다시 시작하면 설정된 PHP 확장 모듈(PHP Extension module) _whatap.so\* 파일이 로딩됩니다.
 
@@ -50,7 +50,7 @@ PHP 확장 모듈이 잘 설치됐는지 다음의 방법으로 확인할 수 �
    $ find / | grep whatap.ini
    ```
 
-2. Check whether _whatap.so_ has been created in the PHP extension module path.
+2. Check whether *whatap.so* has been created in the PHP extension module path.
 
    ```bash title=SH
    $ find / | grep whatap.so

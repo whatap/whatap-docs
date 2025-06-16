@@ -1,8 +1,8 @@
 ## In case of occurrence of a permission error
 
-If any Java security policy-related error occurs, add the role setting in _$JAVA_HOME/jre/lib/security/java.policy_.
+If any Java security policy-related error occurs, add the role setting in *$JAVA_HOME/jre/lib/security/java.policy*.
 
-To apply all roles collectively, add the setting in _java.policy_ as follows:
+To apply all roles collectively, add the setting in *java.policy* as follows:
 
 ```java title='$JAVA_HOME/jre/lib/security/java.policy'
 grant {
@@ -14,7 +14,7 @@ grant {
 
 ![java.io.FilePermision error](/img/troubleshooting-permission-error.png)
 
-Add the setting in _java.policy_.
+Add the setting in *java.policy*.
 
 ```java title='$JAVA_HOME/jre/lib/security/java.policy'
 grant {
@@ -25,7 +25,7 @@ grant {
 
 ### In case of occurrence of the java.util.PropertyPermission error
 
-Add the setting in _java.policy_.
+Add the setting in *java.policy*.
 
 ```java title='$JAVA_HOME/jre/lib/security/java.policy'
 grant {

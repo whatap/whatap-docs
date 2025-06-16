@@ -31,7 +31,7 @@ EKS Fargateは、対応予定です。
 
 1. WhaTap Kubernetesエージェントのイメージバージョンを推奨する***Stable***バージョンと***Preview***バージョンの中から選択します。
 
-2. ***yaml***ファイルと***helm***チャートのインストール方法の中から希望する**インストール方式**を選択します。 
+2. ***YAML***ファイルと***helm***チャートのインストール方法の中から希望する**インストール方式**を選択します。 
 
 3. ***1.16以降***バージョンまたは***1.16未満***バージョンの中で該当する**Kubernetesバージョン**を選択します。 
 
@@ -90,7 +90,7 @@ WhaTap Kubernetesモニタリングは、様々な追加機能を提供します
 <Tabs>
 <TabItem value='cr_yaml' label='Yaml' default>
 
-WhaTap Kubernetesエージェント設置*yaml*ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
+WhaTap Kubernetesエージェント設置*YAML*ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
 
 ```yaml {38,39}
 apiVersion: rbac.authorization.k8s.io/v1
@@ -239,7 +239,11 @@ WhaTap Kubernetesエージェントのインストール時**Yaml**ファイル�
 
 #### Yamlファイル基準インストール
 
+<<<<<<< HEAD
 ***インストール方法の選択***タブで***yaml***ファイルのインストール方法を選択した場合は、エージェントを生成するために次のコマンドを実行します。 
+=======
+***インストール方法の選択***タブで***Yaml***ファイルのインストール方法を選択した場合は、エージェントを生成するために次のコマンドを実行します。 
+>>>>>>> cf64a884022eddf39df63a56ed06aed971286cd0
 
 ```bash
 kubectl apply -f whatap_kube_agent.yaml
@@ -247,7 +251,7 @@ kubectl apply -f whatap_kube_agent.yaml
 
 :::note
 
-**マスターエージェントが使用するリソースの量**は、**ユーザー環境のノード数**にある程度**比例**します。 つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する可能性があります。 マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール*yaml*ファイルから変更できます。
+**マスターエージェントが使用するリソースの量**は、**ユーザー環境のノード数**にある程度**比例**します。 つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する可能性があります。 マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール*YAML*ファイルから変更できます。
 
 :::
 
@@ -308,7 +312,7 @@ WhaTap Kubernetesエージェントは基本的に`whatap-monitoring`ネーム�
 
    :::note 
 
-   既存 *yaml* ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。 既存のKubernetesエージェントを削除した後、*helm* チャートによるインストールが可能です。 
+   既存 *yaml*ファイル方式でWhaTap Kubernetesエージェントをインストールした場合、Clean Installが必要です。 既存のKubernetesエージェントを削除した後、*helm* チャートによるインストールが可能です。 
 
    :::
 

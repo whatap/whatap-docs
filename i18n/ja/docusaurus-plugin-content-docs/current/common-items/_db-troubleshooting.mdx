@@ -33,7 +33,7 @@ com.microsoft.sqlserver.jdbc.SQLServerException: The driver could not establish 
 com.microsoft.sqlserver.jdbc.SQLServerException: "enctyp1" property is set to "true" and "trustServerCertificate" property is set to "false" but the driver could not establish a secure connection to SQL Server by ising Secure Sockets Layer (SSL) encryption
 ```
 
-エージェント設定ファイル(*whatap.conf*)にSSL認証を使用しないように、次のオプションを設定してください。
+エージェント設定ファイル(*whatap.con*)にSSL認証を使用しないように、次のオプションを設定してください。
 
 ```ini title="whatap.conf"
 connect_option=?encrypt=true;trustServerCertificate=true
