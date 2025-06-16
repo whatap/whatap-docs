@@ -103,7 +103,7 @@ article[class*=searchResultItem] > h2 > a > span::after {
 }
 
 html {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 html[lang='ko-KR'] {
   word-wrap: keep-all;
@@ -1982,10 +1982,14 @@ main {
       color:#21af90;
     }
     a {
+      text-decoration: none;
+      color: var(--main-osd-color);
+    }
+    a:hover {
       text-decoration: underline;
       color: var(--main-osd-color);
     }
-    a:hover, strong em, em strong, span.uitext {
+    strong em, em strong, span.uitext {
       color: var(--main-osd-color);
     }
     strong, span.b600 {
