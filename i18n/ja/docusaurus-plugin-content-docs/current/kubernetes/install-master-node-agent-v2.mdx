@@ -90,7 +90,7 @@ WhaTap Kubernetesモニタリングは、様々な追加機能を提供します
 <Tabs>
 <TabItem value='cr_yaml' label='Yaml' default>
 
-WhaTap Kubernetesエージェント設置_YAML_ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
+WhaTap Kubernetesエージェント設置*YAML*ファイルで`ClusterRole`リソースの`rules`下位の`resources`項目に使用しようとする`customResource`を追加します。 
 
 ```yaml {38,39}
 apiVersion: rbac.authorization.k8s.io/v1
@@ -247,7 +247,7 @@ kubectl apply -f whatap_kube_agent.yaml
 
 :::note
 
-**マスターエージェントが使用するリソースの量**は、**ユーザー環境のノード数**にある程度**比例**します。 つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する可能性があります。 マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール_YAML_ファイルから変更できます。
+**マスターエージェントが使用するリソースの量**は、**ユーザー環境のノード数**にある程度**比例**します。 つまり、クラスタ内にノード数が多い場合、既定値に設定されたメモリLimit(350MB)以上のリソースを使ってOOM(Out Of Memory)が発生する可能性があります。 マスターエージェントに割り当てられたメモリLimitは、エージェントのインストール*YAML*ファイルから変更できます。
 
 :::
 
