@@ -60,6 +60,7 @@
   --ifm-active-menu-color: #efefef;
   --ifm-dropdown-link-color: #222222;
   --ifm-main-icons-color: #636363;
+  --ifm-custom-uitext-color: #222222;
   // --ifm-menu-link-sublist-icon: url('img/sub-list-right-arrow.svg');
 }
 
@@ -88,6 +89,7 @@
   --ifm-dropdown-link-color: #f2f2f2;
   --ifm-dropdown-background-color: #3c3e40;
   --ifm-main-icons-color: #d4d4d4;
+  --ifm-custom-uitext-color: #ffffff;
   .whatap_logo .textColor {
     fill: #fff;
   }
@@ -101,7 +103,7 @@ article[class*=searchResultItem] > h2 > a > span::after {
 }
 
 html {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 html[lang='ko-KR'] {
   word-wrap: keep-all;
@@ -1980,10 +1982,14 @@ main {
       color:#21af90;
     }
     a {
+      text-decoration: none;
+      color: var(--main-osd-color);
+    }
+    a:hover {
       text-decoration: underline;
       color: var(--main-osd-color);
     }
-    a:hover, strong em, em strong, span.uitext {
+    strong em, em strong, span.uitext {
       color: var(--main-osd-color);
     }
     strong, span.b600 {
@@ -1992,6 +1998,10 @@ main {
     strong em, em > strong, span.uitext {
       font-style: normal !important;
       font-weight: normal;
+    }
+    span.uitext {
+      color: var(--ifm-custom-uitext-color) !important;
+      font-weight: bold !important;
     }
     // db 역슬래시 테스트
     span.highlight-backslash {
