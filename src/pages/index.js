@@ -122,8 +122,13 @@ function ThereeSteps() {
                     </Heading>
                     <Description>
                         {translate({
-                            id: "index.pages.register.desc",
-                            message: "와탭 모니터링 서비스를 이용하려면 회원 가입을 진행하세요. 15일간 무료 체험할 수 있습니다."
+                            id: "index.pages.register.desc.part1",
+                            message: "와탭 모니터링 서비스를 이용하려면 회원 가입을 진행하세요. "
+                        })}
+                        <b>15일간 무료 체험</b>
+                        {translate({
+                            id: "index.pages.register.desc.part2",
+                            message: "할 수 있습니다."
                         })}
                     </Description>
                 </Link>
