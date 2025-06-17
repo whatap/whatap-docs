@@ -538,13 +538,13 @@
     "message": "에이전트 설치 후 데이터가 와탭 서버로 전달되면 대시보드 메뉴에서 프로젝트의 전체 현황을 실시간으로 조회할 수 있습니다."
   },
   "index.pages.welcome.para": {
-    "message": "와탭 Docs 페이지에 오신 것을 진심으로 환영합니다."
+    "message": "와탭 Docs에 오신 것을 환영합니다."
   },
   "index.pages.welcome.recommend": {
     "message": "추천 문서: "
   },
   "index.pages.section.gettingStart": {
-    "message": "시작하기 전에"
+    "message": "와탭이 처음이세요?"
   },
   "index.pages.section.gettingStart.whatapOverview": {
     "message": "와탭 모니터링 서비스"
@@ -571,7 +571,7 @@
     "message": "모바일 앱 사용 방법을 안내합니다."
   },
   "index.pages.section.product": {
-    "message": "상품"
+    "message": "와탭이 제공하는 서비스를 한눈에 확인해 보세요."
   },
   "index.pages.section.product.java": {
     "message": "WAS, 배치 애플리케이션 등 JVM 환경에서 동작하는 모든 애플리케이션에 적용할 수 있습니다."
