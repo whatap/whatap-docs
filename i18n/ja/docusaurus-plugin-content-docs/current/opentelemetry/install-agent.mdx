@@ -319,6 +319,86 @@ OpenTelemetry Collectorインストールの詳細については、次のリン
 
 1. 接続されたOpenTelemetry Collectorにwhatap-otelエージェントが接続されたら、トレース情報を収集します。
 
+### Kong Gateway
+
+Kong Gatewayの組み込みOpenTelemetryプラグインを設定すると、OpenTelemetry Collectorを通じてトランザクション情報を確認できます。
+
+OpenTelemetryプラグインでOpenTelemetry Collectorのエンドポイントを指定します。CollectorにWhatap-otelエージェントが接続されると、トレース情報が収集されます。
+
+1. kong.conf 
+
+    トレース設定を有効にします。
+
+    ```ini
+    tracing_instrumentations = all
+    tracing_sampling_rate = 1
+    ```
+
+1. OpenTelemetryプラグイン設定 
+
+    OpenTelemetry CollectorのエンドポイントURLを登録します。
+
+    CollectorのOTLPレシーバーのデフォルト設定は以下の通りです。
+
+    - プロトコル: http
+    - ポート: 4318
+    - URL:
+        - トレース:  /v1/traces
+            - http://x.x.x.x:4318/v1/traces
+        - ログ: /v1/logs
+            - http://x.x.x.x:4318/v1/logs
+
+    * デフォルト設定例
+
+      ```yaml
+      traces_endpoint: http://otelcollector:4318/v1/traces
+      logs_endpoint: http://otelcollector:4318/v1/logs
+      ```
+
+    * kong.yaml設定例
+
+      ```yaml
+      plugins:
+        - name: opentelemetry
+          config:
+            traces_endpoint: http://otelcollector:4318/v1/traces
+            logs_endpoint: http://otelcollector:4318/v1/logs
+            resource_attributes:
+              service.name: kong-otel
+      ```
+
+    * Admin APIによるプラグイン設定例
+
+      ```bash
+      curl -X POST http://localhost:8001/services/plugins \
+      --header "accept: application/json" \
+      --header "Content-Type: application/json" \
+      --data '
+      {
+          "name": "opentelemetry",
+          "config": {
+              "traces_endpoint": "http://otelcollector:4318/v1/traces",
+              "logs_endpoint": "http://otelcollector:4318/v1/logs",
+              "resource_attributes": {
+                  "service.name": "kong-dev"
+              }
+          }
+      }
+      '
+      ```
+
+* **対応バージョン:** Kong Gateway 3.3.x 以上
+
+:::info
+
+設定に関する詳細は、以下のドキュメントを参照してください。
+
+* [Set up Kong Gateway](https://docs.konghq.com/hub/kong-inc/opentelemetry/how-to/getting-started/)
+
+* [OpenTelemetry Configuration](https://docs.konghq.com/hub/kong-inc/opentelemetry/configuration/)
+
+:::
+
 ## モニタリングの開始
 
 - すべての設定を完了した後、アプリケーションサーバーを再起動すると、エージェントが情報を収集します。 <Cmdname sid="dashboard" className="uitext" /> &gt; <Cmdname sid="application_dashboard" className="uitext" />メニューに移動して、収集されたデータをリアルタイムでモニタリングしてください。
