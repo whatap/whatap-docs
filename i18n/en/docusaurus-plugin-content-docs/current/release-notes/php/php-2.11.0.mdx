@@ -1,0 +1,47 @@
+---
+id: php-2_11_0
+title: PHP Agent v2.11.0
+toc_max_heading_level: 2
+pagination_next: release-notes/php/php-2_10_0
+displayed_sidebar: releaseSidebar
+---
+
+June 18, 2025
+
+- <Status priority='0'>Feature</Status> Reduced CPU load
+
+  - Reduced CPU load by changing the criteria for monitoring targets.
+
+  - Further reduced CPU load when user function monitoring is disabled.
+
+    `whatap.profile_method_enabled=false`
+
+- <Status priority='1'>New</Status> CLI parameter URL display
+
+  - Collects URLs including parameters when running CLI commands.
+
+  - Example: php /home/www/test.php aaa bbb → Collected as /home/www/test.php aaa bbb
+
+- <Status priority='1'>New</Status> Collection of file parameter info
+
+  - Collects up to 20 parameters, each up to 256 bytes (partial data only).
+
+- <Status priority='0'>Fixed</Status> Memory leak fix
+
+  - Fixed memory leak caused by calling the error function when a DB function fails.
+
+:::info
+
+**Download**
+
+| OS Name                         | File format | Architecture |                                      Download                                     |
+| ------------------------------- | :---------: | :----------: | :-------------------------------------------------------------------------------: |
+| Red Hat / CentOS / Amazon linux |     RPM     |    x86 x64   |  [Download](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.11-0.x86_64.rpm)  |
+| \^                              |      \^     |    aarch64   | [Download](https://repo.whatap.io/centos/7/aarch64/whatap-php-2.11-0.aarch64.rpm) |
+| Ubuntu 12 and above / Debian    |     DEB     |     amd64    |   [Download](https://repo.whatap.io/debian/unstable/whatap-php_2.11.0_amd64.deb)  |
+| \^                              |      \^     |     arm64    |   [Download](https://repo.whatap.io/debian/unstable/whatap-php_2.11.0_arm64.deb)  |
+| Alpine linux                    |   tar gzip  |    x86 x64   |     [Download](https://repo.whatap.io/alpine/x86_64/whatap-php-2.11.0.tar.gz)     |
+| \^                              |      \^     |    aarch64   |     [Download](https://repo.whatap.io/alpine/aarch64/whatap-php-2.11.0.tar.gz)    |
+| Freebsd 10 or later             |     TXZ     |    x86 x64   |        [Download](https://repo.whatap.io/freebsd/10/whatap-php-2.11.0.txz)        |
+
+:::
