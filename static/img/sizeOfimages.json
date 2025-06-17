@@ -13563,10 +13563,6 @@
     "width": 1200,
     "height": 640
   },
-  "log-agent-conf.png": {
-    "width": 1200,
-    "height": 639
-  },
   "log-agent-option-level.png": {
     "width": 1200,
     "height": 224
@@ -13947,10 +13943,6 @@
     "width": 1201,
     "height": 923
   },
-  "log-k8s-app-agent-setting-106.png": {
-    "width": 1192,
-    "height": 902
-  },
   "log-k8s-node-agent-setting-oneclick-en.png": {
     "width": 1074,
     "height": 486
@@ -13958,10 +13950,6 @@
   "log-k8s-node-agent-setting-oneclick-ja.png": {
     "width": 1006,
     "height": 536
-  },
-  "log-k8s-node-agent-setting-oneclick.png": {
-    "width": 800,
-    "height": 361
   },
   "log-live-tail-en.png": {
     "width": 1208,
@@ -14211,10 +14199,6 @@
     "width": 806,
     "height": 262
   },
-  "log-start.png": {
-    "width": 1146,
-    "height": 287
-  },
   "log-table-contents-en.png": {
     "width": 800,
     "height": 318
@@ -14314,10 +14298,6 @@
   "main-ui-sitemap-ja.png": {
     "width": 400,
     "height": 142
-  },
-  "main-ui-sitemap.png": {
-    "width": 400,
-    "height": 146
   },
   "maintenance-add-en.png": {
     "width": 600,
@@ -20451,10 +20431,6 @@
     "width": 1200,
     "height": 1010
   },
-  "whatap-docs-main-r.png": {
-    "width": 1200,
-    "height": 981
-  },
   "whatap-docs-upper-en.png": {
     "width": 1200,
     "height": 66
@@ -20462,10 +20438,6 @@
   "whatap-docs-upper-ja.png": {
     "width": 1200,
     "height": 59
-  },
-  "whatap-docs-upper.png": {
-    "width": 1200,
-    "height": 65
   },
   "whatap-forwarder-subnet.png": {
     "width": 1966,

@@ -658,7 +658,7 @@
     "message": "기존 모니터링 제품을 사용자가 모니터링하고자 하는 소프트웨어에 맞게 재포장해 최적화된 모니터링 솔루션을 제공합니다."
   },
   "index.pages.section.management": {
-    "message": "관리"
+    "message": "계정, 프로젝트, 그룹 등을 관리하는 방법을 확인해 보세요."
   },
   "index.pages.section.management.account": {
     "message": "계정 관리"
