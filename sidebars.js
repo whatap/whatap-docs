@@ -7571,28 +7571,27 @@ const sidebars = {
             'log/log-k8s',
           ],
         },
-        {
-          type: 'doc',
-          label: '설정하기',
-          id: 'log/log-setting',
-        },
         'log/usage-ui',
         {
-          type: 'doc',
-          label: '로그 파싱하기',
-          id: 'log/log-parser',
-        },
-        {
-          type: 'doc',
-          label: '로그 처리하기',
-          id: 'log/log-process',
+          type: 'category',
+          label: '로그 설정',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'log/log-setting',
+          },
+          items: [
+            'log/log-parser',
+            'log/log-process',
+          ],
         },
         'log/log-lt',
         {
           type: 'category',
           label: '로그 탐색',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           link: {
             type: 'doc',
             id: 'log/log-explorer',
