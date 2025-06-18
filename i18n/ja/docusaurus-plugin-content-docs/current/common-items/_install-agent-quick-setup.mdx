@@ -1,4 +1,4 @@
-DBXエージェントの構成ファイルで_setup.sh_ファイルを実行すると、エージェントの設定が簡単に行われます。
+DBXエージェントの構成ファイルで*setup.sh*ファイルを実行すると、エージェントの設定が簡単に行われます。
 
 ## ファイルの圧縮を解凍する
 
@@ -10,7 +10,7 @@ tar -zxvf whatap.agent.database.tar.gz
 
 ## setup.shを実行する
 
-_setup.sh_ファイルを実行し、画面の案内に従ってエージェントの設定及びDBサーバーの情報入力、JDBCダウンロード、モニタリング用のアカウント作成及び権限設定を行います。 必要な情報を入力すると、すべての設定を自動的に完了できます。
+*setup.sh*ファイルを実行し、画面の案内に従ってエージェントの設定及びDBサーバーの情報入力、JDBCダウンロード、モニタリング用のアカウント作成及び権限設定を行います。 必要な情報を入力すると、すべての設定を自動的に完了できます。
 
 ```bash title="BASH"
 ./setup.sh
@@ -76,7 +76,7 @@ DBXエージェントのパスにDBサーバーのOSとバージョンに合わ�
 ```text title="BASH"
 Monitoring Database Name?
 Monitoring User ID?
-Monitoring User {user_id}'s Password?
+Monitoring User \{user_id\}'s Password?
 Connecting DBMS Server with SSL (default false)?
 ```
 
@@ -90,7 +90,7 @@ DB接続のために暗号化されたUIDを生成する手順です。 [アカ�
 
 ## エージェントを実行する
 
-_setup.sh_ファイルを利用してエージェントのインストールプロセスを完了したら、データベース情報と*whatap.conf*ファイルに設定した内容が出力されます。
+*setup.sh*ファイルを利用してエージェントのインストールプロセスを完了したら、データベース情報と*whatap.con*ファイルに設定した内容が出力されます。
 
 ![setup.sh](/img/db-install-agent-run-setup-complete.png)
 

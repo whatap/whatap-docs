@@ -9,7 +9,7 @@ displayed_sidebar: releaseSidebar
 
 - Addition of agent update: Added the `node_state` metric of MySQL and PostgreSQL.
 
-- Modified the `slow_query_log` option value in _whatap.conf_ file to be case insensitive.
+- Modified the `slow_query_log` option value in *whatap.conf* file to be case insensitive.
 
 - Added the TCP communication function of the XOS agent.
 
@@ -51,7 +51,7 @@ displayed_sidebar: releaseSidebar
 
 - Added the `uptime` metric.
 
-- **Aurora PostgreSQL**: Changed the `rds_instance={instance_name}` option in _whatap.conf_ to get the `instance_name` metric to `cloud_watch_instance`.
+- **Aurora PostgreSQL**: Changed the `rds_instance={instance_name}` option in *whatap.conf* to get the `instance_name` metric to `cloud_watch_instance`.
 
   ```ini title=whatap.conf
   cloud_watch_instance={instance_name}
@@ -98,7 +98,7 @@ Added the temp file size inquiry function to the **_Tablespace Size_**menu.
 
 - Modified the table size increase functions by version.
 
-- Added the `pageSize` database parameter; added the CUBRID `tps`, `qps`, `psize`, and `executions` metrics; if the CUBRID `broker` is not broker1 or query_editor, put it in `broker=` of _whatap.conf_.
+- Added the `pageSize` database parameter; added the CUBRID `tps`, `qps`, `psize`, and `executions` metrics; if the CUBRID `broker` is not broker1 or query_editor, put it in `broker=` of *whatap.conf*.
 
   ```ini title=whatap.conf
   broker=broker1,broker2,query_editor
@@ -114,7 +114,7 @@ Added the temp file size inquiry function to the **_Tablespace Size_**menu.
 
 ## Redis
 
-Added the `active session` collection on/off (`active_session=true/false` added in _whatap.conf_).
+Added the `active session` collection on/off (`active_session=true/false` added in *whatap.conf*).
 
 ```ini title=whatap.conf
 active_session=true/false

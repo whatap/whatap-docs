@@ -2,7 +2,7 @@
 
 データベース接続用に暗号化されたUIDを作成します。usernameとpasswordを入力し、シェルスクリプト(またはバッチファイル)を実行してください。 
 
-_uid.sh_シェルスクリプトファイル(または_uid.bat_バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userのいないパスワードしかない場合は、`DB_USER`を`default`に設定します。 
+*uid.sh*シェルスクリプトファイル(または*uid.bat*バッチファイル)は、WhaTapデータベースエージェントをインストールしたパスで見つけることができます。userのいないパスワードしかない場合は、`DB_USER`を`default`に設定します。 
 
 <Tabs groupId='os'>
 
@@ -16,8 +16,8 @@ _uid.sh_シェルスクリプトファイル(または_uid.bat_バッチファ�
 
 - 最初1回の設定で暗号化されたUIDを使用してモニタリング対象データベースサーバーからデータを収集します。
 - DBユーザーファイルを生成するには、プロジェクトアクセスキーを*whatap.conf*ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
-- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力してください。
-- `DB_USER`または`DB_PASSWORD`に特殊文字が含まれている場合、特殊文字の前にEscape Character(\\)を入力してください。
+- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力します。
+- `DB_USER`または`DB_PASSWORD`に特殊文字が含まれている場合、特殊文字の前にEscape Character(\\)を入力します。
 
   ```bash title='Example'
   ./uid.sh whatap whatap\!pwd
@@ -41,7 +41,7 @@ uid.bat "DB_USER" "DB_PASSWORD"
 
 - DBユーザーファイルを生成するには、プロジェクトアクセスキーを*whatap.conf*ファイルに入力する必要があります。[プロジェクトアクセスキーの確認](#check-accesskey)
 
-- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力してください。
+- Azure Database環境の場合、`DB_USER`をDB_USER@DB_nameの形式で入力します。
 
 - Windows環境では、パスワードの特殊文字にEscape Characterが必要ありません。パスワードに引用符(`"`)を使用した場合には必要です。
 

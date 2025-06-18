@@ -95,7 +95,7 @@ whatap-start-agent uvicorn server:app --host 0.0.0.0 --port 8000
    export WHATAP_HOME=${PWD}
    ```
 
-2. Execute the following command to create and configure the _whatap.conf_ file in the path set as `WHATAP_HOME`. Variables marked with `$` are required for agent configuration and are set through the _yaml_ file for releasing the application.
+2. Execute the following command to create and configure the *whatap.conf* file in the path set as `WHATAP_HOME`. Variables marked with `$` are required for agent configuration and are set through the *yaml* file for releasing the application.
 
    ```bash
    whatap-setting-config \
@@ -123,7 +123,7 @@ echo `sudo chmod -R 777 $WHATAP_HOME`
 
 :::note 
 
-- As an example of the _yaml_ file, see [Container environment variable settings](#k8s-env) as follows:
+- As an example of the *yaml* file, see [Container environment variable settings](#k8s-env) as follows:
 
 - The `license` is the user authentication information of WhaTap. **Do not expose to outside**.
 
@@ -166,7 +166,7 @@ The following settings are optional and must be used if necessary. In addition t
 
 ## Configuring the container environment variables {#k8s-env}
 
-After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
 
 ```yaml
     env:

@@ -2306,5 +2306,9 @@
   "sidebar.dbSidebar.link.IBM DB2": {
     "message": "IBM DB2",
     "description": "The label for link IBM DB2 in sidebar dbSidebar, linking to ../db2/monitoring-intro"
+  },
+  "sidebar.dboracledmaSidebar.category.설정하기": {
+    "message": "設定",
+    "description": "The label for category 설정하기 in sidebar dboracledmaSidebar"
   }
 }

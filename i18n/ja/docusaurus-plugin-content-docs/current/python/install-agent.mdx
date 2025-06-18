@@ -105,7 +105,7 @@ $ whatap-setting-config \
 
 ### 設定表示
 
-`$WHATAP_HOME`に指定した経路に*whatap.conf* ファイルが作成・設定されます。次のコマンドを実行しなさい*whatap.conf*ファイルが作成されているか確認してください。
+`$WHATAP_HOME`に指定した経路に*whatap.con* ファイルが作成・設定されます。次のコマンドを実行しなさい*whatap.con*ファイルが作成されているか確認してください。
 
 ```bash
 $ cat $WHATAP_HOME/whatap.conf
@@ -303,7 +303,7 @@ def simple_app(environ, start_response):
 
 <TabItem value="docker" label="Docker">
 
-Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加してください。
+Dockerコンテナでサービスされるアプリケーションの場合、次の内容を_DockerFile_に追加します。
 
 1. **Pythonエージェント**をインストールしてください。
 
@@ -315,7 +315,7 @@ Dockerコンテナでサービスされるアプリケーションの場合、�
 
    :::note
 
-   _requirements.txt_を使用する場合は、当該ファイルに**whatap-python**を追加します。
+   *requirements.txt*を使用する場合は、当該ファイルに**whatap-python**を追加します。
 
    :::
 
@@ -329,7 +329,7 @@ Dockerコンテナでサービスされるアプリケーションの場合、�
    RUN echo "app_process_name=[ APPLICATION_PROCESS_NAME(uwsgi, gunicorn etc..) ]" >> /whatap/whatap.conf
    ```
 
-3. 既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加してください。
+3. 既存の実行コマンド`python manage.py runserver`の前に'whatap-start-agent'を追加します。
 
    ```docker title='Dockerfile'
    CMD ["whatap-start-agent", "python", "manage.py", "runserver", "0.0.0.0:8000"]

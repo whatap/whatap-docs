@@ -80,13 +80,11 @@
 
 イベント設定時にメトリクス情報を簡単に検索して活用できます。 
 
-<Cmdname sid="select_category" className="uitext" />、<Cmdname sid="TTL07365" className="uitext" />、<Cmdname sid="TTL07363" /> 項目でメトリクス検索機でメトリクスを検索し、メトリクス情報を確認します。 選択したメトリクスが画面に適用されます。
+<Cmdname sid="select_category" className="uitext" />、<Cmdname sid="TTL07365" className="uitext" />、<Cmdname sid="TTL07363" />項目の「メトリクス検索」からメトリクスを検索し、メトリクス情報を確認します。 選択したメトリクスが画面に適用されます。
 
 ### <Cmdname sid="TTL07362" /> {#TTL07362}
 
 通知を受信するためのイベント条件を設定できます。
-
-{/* <ImgLang img="metric-warning-notice-new-event-condition.png" desc="이벤트 조건 정의" /> */}
 
 <Xclude product="server,db2,sapase">
 
@@ -150,7 +148,7 @@
 
 - <Cmdname sid="metrics_rule_select" className="uitext" />オプションで選択できる演算子の種類は[次の文書](#condition-guide)を参照してください。
 
-- 特殊文字(<code>\~!@#$%^&\*()\_+=-[]\`</code>)を含めるか、数字で始まるフィールド名を入力すると、エラーが発生する可能性があります。 この場合、<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択した上で例のように中括弧(`${}\`)にまとめて入力します。
+- 特殊文字(<code>\~!@#$%^&*()_+=-[]</code>)を含めるか、数字で始まるフィールド名を入力すると、エラーが発生する可能性があります。 この場合、<Cmdname sid="metrics_rule_direct" className="uitext" />オプションを選択した上で例のように中括弧(`${}\`)にまとめて入力します。
 
   ```text
   ${4xxErrorType} == '401'
@@ -204,7 +202,7 @@
 
 #### <Cmdname sid="simulation" className="uitext" /> {#simulation}
 
-<Cmdname sid="TTL07365" className="uitext" />で設定したイベント条件をテストできます。 <Cmdname sid="simulation" className="uitext" />ボタンを選択してください。
+<Cmdname sid="TTL07365" className="uitext" />で設定したイベント条件をテストできます。 <Cmdname sid="simulation" className="uitext" />ボタンを選択します。
 
 <ImgLang img="metric-warning-notice-new-simulation.png" desc="Simulation" />
 
@@ -271,15 +269,15 @@ ex. ${4xxErrorType} == '401'
 
   <ImgLang img='event-config-message-example.png' desc='Message example' />
 
-  - `${Tag}`または`${Field}`を入力してメッセージに変数を適用できます。 変数は選択したメトリクスデータ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。 <Cmdname sid="tag_count" className="uitext" />メニューで入力できる`${Tag}`または`${Field}`変数を確認できます。
+  - `&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`を入力してメッセージに変数を適用できます。 変数は選択したメトリクスデータ<Cmdname sid="category" className="uitext" />に含まれる値である必要があります。 <Cmdname sid="tag_count" className="uitext" />メニューで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数を確認できます。
 
   - ![時間アイコン](/img/ico-timing.svg)ボタンをクリックすると、以前に入力したメッセージの履歴を確認できます。
 
   :::tip
 
-  メッセージ入力画面に`${Tag}`または`${Field}`変数を入力してメッセージを作成できます。
+  メッセージ入力画面に`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数を入力してメッセージを作成できます。
 
-  <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで<Cmdname sid="category" className="uitext" />を選択した上で入力できる`${Tag}`または`${Field}`変数を確認します。 現在のイベントテンプレートの<Cmdname sid="category" className="uitext" />名前は、<Link to="#basic-template">次の文書</Link>の<b>カテゴリ</b>項目を参考にしてください。
+  <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="tag_count" className="uitext" />メニューで<Cmdname sid="category" className="uitext" />を選択した上で入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数を確認します。 現在のイベントテンプレートの<Cmdname sid="category" className="uitext" />名前は、<Link to="#basic-template">次の文書</Link>の<b>カテゴリ</b>項目を参考にしてください。
 
   :::
 
@@ -289,49 +287,49 @@ ex. ${4xxErrorType} == '401'
 
   <InDoc product="java,php,python,nodejs,dotnet,golang">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は[次の文書](metrics-app)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は[次の文書](metrics-app)を参照してください。
 
   </InDoc>
 
   <InDoc product="server">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は、[次の文書](metrics-server)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は、[次の文書](metrics-server)を参照してください。
 
   </InDoc>
 
   <InDoc product="kubernetes">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は、[次の文書](metrics-kubernetes)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は、[次の文書](metrics-kubernetes)を参照してください。
 
   </InDoc>
 
   <InDoc product="postgresql,mysql,oracle,oracle-v1,oracle-pro,mssql,mssql-v1,tibero,cubrid,cubrid-v1,altibase,altibase-v1,redis,mongodb">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は[次の文書](metrics-data-list)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は[次の文書](metrics-data-list)を参照してください。
 
   </InDoc>
 
   <InDoc product="browser">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は[次の文書](metrics-browser)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は[次の文書](metrics-browser)を参照してください。
 
   </InDoc>
 
   <InDoc product="npm">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は、[次の文書](metrics-npm)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は、[次の文書](metrics-npm)を参照してください。
 
   </InDoc>
 
   <InDoc product="amazon-cloudwatch,azure,ncloud,oracle-cloud">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は<Cmdname sid="side_metricsSearch" className="uitext" />メニューで確認できます。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は<Cmdname sid="side_metricsSearch" className="uitext" />メニューで確認できます。
 
   </InDoc>
 
   <InDoc product="amazon-ecs">
 
-  メッセージで入力できる`${Tag}`または`${Field}`変数は、[次の文書](metrics-ecs)を参照してください。
+  メッセージで入力できる`&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`変数は、[次の文書](metrics-ecs)を参照してください。
 
   </InDoc>
 
@@ -365,7 +363,7 @@ ex. ${4xxErrorType} == '401'
 
 ## イベントを修正/削除する
 
-1. <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューから移動した後<Cmdname sid="metrics" className="uitext" />タブを選択してください。
+1. <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューから移動した後<Cmdname sid="metrics" className="uitext" />タブを選択します。
 
 2. イベント一覧で修正または削除しようとする項目の一番左に![編集アイコン](/img/ico-edit.svg)ボタンを選択します。
 

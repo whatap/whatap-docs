@@ -189,13 +189,13 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
 ### インストールと設定
 
-1. WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールできます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力してください。
+1. WhaTapが提供する**AWSCloudFormation**テンプレートを通じてインストールできます。 次のリンクへ移動してから、**パラメータ**セクションで以下の項目を入力します。
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhaTapRDSLogAndEvent&templateURL=https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/db/WhaTapRDSLogInstall.template' target='_blank' className='ext-link'>AWS CloudFormation Install</Link>
 
    - **Host**: WhaTap収集サーバーアドレス。WhaTapプロジェクトの<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューで確認できます。 例) 13.124.11.223/13.209.172.35
 
-   - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB \~ 10,240MB間の値を入力してください。
+   - **MemorySize**: WhaTapRDSLogのメモリサイズ。128MB \~ 10,240MB間の値を入力します。
 
    - **Pcode**: WhaTapプロジェクトのプロジェクトコード。<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_projectManagement" className="uitext" />メニューで<Cmdname sid="pcode" className="uitext" />項目を確認してください。
 
@@ -211,13 +211,13 @@ WhaTapの**AWS RDS Log**は**AWS CloudFormation**を通じてインストール�
 
    <Link to='https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/quickcreate?stackName=WhatapRDSLogAndEventSettings&templateURL=https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/agent/db/WhaTapRDSLogSetting.template' target='_blank' className='ext-link'>AWS CloudFormation Setting</Link>
 
-3. **パラメータ**セクションで以下の項目を順番に入力してください。
+3. **パラメータ**セクションで以下の項目を順番に入力します。
 
    - **AwsRdsNames**: イベントを受信したいRDS Cluster、Instanceの名前一覧
 
      - 例) database-1、seoul-pro-db-01、seoul-pro-db-01-writer …
 
-     - EventRuleを生成しないためには、`none`を入力してください。
+     - EventRuleを生成しないためには、`none`を入力します。
 
    - **RdsLogGroupName**(**1\~9**): ログを受信したいRDS CloudWatchLogGroup Name
 

@@ -8,7 +8,7 @@ $ sudo php -i | grep '.ini files'
 Scan this dir for additional .ini files => (none)
 ```
 
-*whatap.ini*ファイルの内容を_php.ini_の末尾に追加します。
+*whatap.ini*ファイルの内容を*php.ini*の末尾に追加します。
 
 ```bash
 $ php -i | grep 'php.ini'
@@ -33,7 +33,7 @@ whatap.trace_user_using_ip=false
 
 `$WHATAP_CONFIG_HOME`環境変数に*whatap.ini*パスを選択します。
 
-PHPの追加iniパスを確認できない場合は、*whatap.ini*で作成した_/usr/whatap/php_パスを設定してください。
+PHPの追加iniパスを確認できない場合は、*whatap.ini*で作成した*/usr/whatap/php*パスを設定してください。
 
 ```bash
 $ sudo vi /etc/init.d/whatap-php
@@ -48,16 +48,9 @@ export WHATAP_CONFIG_HOME=      # whatap.iniパス(/etc/php.d)
 
 ### Error: Not found PHP API
 
-{/* 문제 해결 페이지의 수동 설정? */}
-{/* 명령어 경로 확인 후 확장 모듈과 서비스 선택 설치가 진행되는 순서가 필요한지?*/}
-
 PHP コマンド(CLI)が見つからない場合に発生します。 
 
 [PHPコマンド(CLI)の位置](#check-php-cli-path)を確認した上で、[PHP拡張モジュールおよびwhatap-phpサービス選択インストール](#extension-modul-manual-setting)項目を進めてください。
-
-{/*\* [PHP 명령어(CLI)의 위치](#php-명령어cli-경로-확인)를 정확히 확인하세요.
-
-- [PHP 확장 모듈 및 whatap-php 서비스 선택 설치](#php-확장-모듈-및-whatap-php-서비스-수동-설정) 항목을 진행하세요.*/}
 
 ```bash title='Check PHP API version'
 $ sudo php -i | grep 'PHP API'

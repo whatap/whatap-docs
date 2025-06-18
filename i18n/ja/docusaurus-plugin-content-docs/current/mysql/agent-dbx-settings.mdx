@@ -10,7 +10,7 @@ keywords:
 
 import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 
-DBXエージェントに必要な設定は、*whatap.conf*ファイルで作成します。設定できるオプションについては、以下を参照してください。
+DBXエージェントに必要な設定は、*whatap.con*ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
 
@@ -51,9 +51,49 @@ import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data
   variables_metric=uptime,version
   ```
 
+## ロック収集関連設定
+
+モニタリング対象のDB MySQL 8.0以降、DBXエージェント2.53.01以降の場合、ロックモニタリング収集条件を多様に与えることができます。
+
+- **lock** <span class='type'>Boolean</span>
+
+  既定値 `true`
+
+  ロックの収集有無を指定します。
+
+- **skip_lock_active_limit** <span class='type'>Int</span>
+
+  既定値`150`
+
+  active_sessions(Threads_running)の個数がskip_lock_active_limit以上の場合、ロックは収集しません。
+
+- **lock_interval_check** <span class='type'>Int</span>
+
+  既定値`5 (s)`
+
+  lock収集周期を指定します。
+
+- **custom_lock_interval** <span class='type'>String</span>
+
+  指定した時間帯のロック収集周期を指定します。
+
+    :::note
+
+    ex) custom_lock_interval=60;0000-0230  # 00:00から02:30 まではlock収集周期を60秒に指定します。
+
+    custom_lock_interval=0;0000-0230 # 00:00から02:30 まではロックを収集しません。
+
+    :::
+
 ## アクティブセッション除外の設定
 
 DBXエージェントは、MySQLのアクティブセッションの一覧を収集しますが、特定のセッションを除外するオプションを提供します。除くセッションは`total_runtime`を計算する際に含めず、<Cmdname sid="side_dbSqlStat" className="uitext" />メニューでも該当するSQLは表示されません。
+
+- **limit_active_session** <span class='type'>Int</span>
+
+  既定値`200`
+
+  active sessionを指定した個数まで収集します。0に設定するとlimitなしで収集します。
 
 - **skip_command** <span class='type'>String</span>
 

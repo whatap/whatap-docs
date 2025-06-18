@@ -15,7 +15,7 @@ WhaTapデータベースモニタリングサービスのユーザーからよ�
 
 ### Authentication plugin 'caching_sha2_password' cannot be loadedエラー
 
-> エージェントインストール後、DBに接続して_dbx.log_を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続ができない場合、どうすれば良いでしょうか？
+> エージェントインストール後、DBに接続して*dbx.log*を確認すると、`Authentication plugin 'caching_sha2_password' cannot be loaded`エラーで接続ができない場合、どうすれば良いでしょうか？
 
 MySQL 8.0 のデフォルト認証プラグインが、`caching_sha2_password`であるため発生する可能性があります。`caching_sha2_password`を使用するには、SSLで保護されたセキュリティ接続を使用するか、RSAセキュリティを使用した非暗号化接続を使用する必要があります。この問題を最も簡単に解決する方法は、パスワード生成時に、以前の`mysql_native_password`方式を使用することです。
 
@@ -86,9 +86,9 @@ grant select on '追加したdb' to whatap;
 
 ### インスタンスリストM、S、C基準
 
-> インスタンスリストで**_M_**、**_S_**、**_C_**の基準は何ですか?
+> インスタンスリストで***M***、***S***、***C***の基準は何ですか?
 
-それぞれ**_M_**aster、**_S_**lave、**_C_**lusterを意味します。Replicationで構築されたDBの場合に表示されます。Clusterは、MariaDBでgaleraソリューションで構成した場合に表示されます。 
+それぞれ***M***aster、***S***lave、***C***lusterを意味します。Replicationで構築されたDBの場合に表示されます。Clusterは、MariaDBでgaleraソリューションで構成した場合に表示されます。 
 
 ```sql
 -- Clusterの場合：WSREP_ONがONではなく、WSREP_CLUSTER_NAMEがgaleraの場合
@@ -105,7 +105,7 @@ show slave status ;
 
 ### インスタンスリストMが表示されない
 
-> インスタンスリストでMasterですが、**_M_**が表示されません。表示されないのはなぜですか？
+> インスタンスリストでMasterですが、***M***が表示されません。表示されないのはなぜですか？
 
 Replicationで権限がない場合、情報が表示されないことがあります。モニタリングアカウントの権限を確認してください。 
 

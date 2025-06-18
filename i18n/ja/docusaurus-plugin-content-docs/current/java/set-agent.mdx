@@ -9,9 +9,9 @@ keywords:
   - whatap.conf
 ---
 
-WhaTapエージェントは、エージェントごとに必要な設定を*whatap.conf*ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
+WhaTapエージェントは、エージェントごとに必要な設定を*whatap.con*ファイルに作成します。 エージェントは、環境変数を使用して設定ファイルの位置を把握して読み込みます。
 
-他の設定がない場合、エージェントは(_whatap.agent-X.Y.Z.jar_)にあるディレクトリから*whatap.conf* ファイルを実装します。5秒ごとに*whatap.conf*ファイルの確認してリロードします。
+他の設定がない場合、エージェントは(*whatap.agent-X.Y.Z.jar*)にあるディレクトリから*whatap.con* ファイルを実装します。5秒ごとに*whatap.con*ファイルの確認してリロードします。
 
 ユーザーの利便性を高めるため、[WhaTapモニタリングサービス](https://service.whatap.io)でもエージェント設定機能を提供しています。
 
@@ -22,7 +22,7 @@ whatap.home=.
 whatap.config=whatap.conf
 ```
 
-- `whatap.home`：既定値は_whatap.agent.jar_ファイルへのパスを入力してください。
+- `whatap.home`：既定値は*whatap.agent.jar*ファイルへのパスを入力します。
 
 - `whatap.config`: ファイル名のみを入力することをお勧めします。相手パスを一緒に入力することができます。
 
@@ -33,13 +33,13 @@ license=x220g160hgd29-x3qpff0garcus7-z4p0kao58un11a
 whatap.server.host=10.10.0.1
 ```
 
-WhaTapエージェントを初めて実行すると、次のようにどのjarファイルがエージェントとして使用され、どのパスで*whatap.conf*ファイルをロードされたのかを確認できます。
+WhaTapエージェントを初めて実行すると、次のようにどのjarファイルがエージェントとして使用され、どのパスで*whatap.con*ファイルをロードされたのかを確認できます。
 
 ![Java start screen](/img/set-java-agent-start.png)
 
 ## サーバー接続およびデータ送信
 
-WhaTapエージェントは、*whatap.conf*ファイルに設定したサーバーアドレスに接続します。
+WhaTapエージェントは、*whatap.con*ファイルに設定したサーバーアドレスに接続します。
 
 ```ini title='whatap.conf'
 whatap.server.host=10.10.1.1
@@ -52,7 +52,7 @@ whatap.server.port=6600 # 既定値
 
 ## 複数のアプリケーションサーバーの設定ファイル管理
 
-1つのサーバーの中で複数のアプリケーションを運営する場合、各アプリケーション別の設定ファイルを別途管理するには、*whatap.conf*ファイル名を変更し、開始スクリプトにJVMオプションを追加してください。
+1つのサーバーで複数のアプリケーションを実行する場合、各アプリケーション別の設定ファイルを個別に管理する場合は、*whatap.con*ファイル名を変更し、起動スクリプトにJVMオプションを追加します。
 
 ```bash title='Service A'
 -Dwhatap.config=whatap_Aservice.conf
@@ -64,7 +64,7 @@ whatap.server.port=6600 # 既定値
 
 :::caution
 
-*whatap.conf*設定ファイルは、`${WHATAP_HOME}`パスに配置する必要があります。
+*whatap.con*設定ファイルは、`${WHATAP_HOME}`パスに配置する必要があります。
 
 :::
 

@@ -31,7 +31,7 @@ This process adds the settings for applying the agent to the JVM option of the J
 
 <TabItem value="dockerinstall" label="Docker Install" default>
 
-To install the WhaTap application agent, create the _whatap.conf_ file. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
+To install the WhaTap application agent, create the *whatap.conf* file. Change `{YOUR_PROJECT_ROOT}` to the top-level path of the project to install the agent.
 
 ```bash
 cat >{YOUR_PROJECT_ROOT}/whatap.conf <<EOL
@@ -41,11 +41,11 @@ EOL
 
 #### Setting the Kubernetes internal application agent options
 
-The settings required for the Kubernetes internal application agent can be configured in the _whatap.conf_ file or through the container `env` field when releasing the agent. 
+The settings required for the Kubernetes internal application agent can be configured in the *whatap.conf* file or through the container `env` field when releasing the agent. 
 
-- The options in the _whatap.conf_ file have higher priority than those set in the container `env` field. 
+- The options in the *whatap.conf* file have higher priority than those set in the container `env` field. 
 
-- If no value is set in _whatap.conf_ or container `env`, the default value is used.
+- If no value is set in *whatap.conf* or container `env`, the default value is used.
 
 - Use the In case of 'license' and 'whatap.server.host options, use the **container environment variables** settings. For more information, check [the following] (#application-conf-check).
 
@@ -65,7 +65,7 @@ If any settings in the configuration file are changed or important settings are 
 
 **Checking the `whatap.server.host` setting of the application** <ScrollToLink anchor='application-conf-check' />
 
-In some container images, you cannot directly set environment variables with `.` such as `whatap.server.host`. If this keeps the application agent from starting normally, directly modify the _whatap.conf_ file to set the `whatap.server.host` value. The procedure how to check the `whatap.server.host` setting of the application is as follows: 
+In some container images, you cannot directly set environment variables with `.` such as `whatap.server.host`. If this keeps the application agent from starting normally, directly modify the *whatap.conf* file to set the `whatap.server.host` value. The procedure how to check the `whatap.server.host` setting of the application is as follows: 
 
 1. Enter into the WhaTap application container. 
 
@@ -77,7 +77,7 @@ In some container images, you cannot directly set environment variables with `.`
    ```
    ````
 
-   **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the _whatap.conf_ file and then manually set the `whatap.server.host` value as follows: 
+   **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the *whatap.conf* file and then manually set the `whatap.server.host` value as follows: 
 
    ````
    ```bash
@@ -194,7 +194,7 @@ The following guides you to include **the specified version of the agent** in th
 
 <TabItem value="direct" label="Direct Installation">
 
-1. Select **_Download_** to download the installation file (_whatap.agent.java.tar.gz_).
+1. Select **_Download_** to download the installation file (*whatap.agent.java.tar.gz*).
 
 2. Upload the dockerfile to the server and then unzip the file.
 
@@ -208,7 +208,7 @@ The following guides you to include **the specified version of the agent** in th
 
    :::
 
-3. When unzipped, the _whatap_ directory is created. Check the settings in the _whatap.conf_ file under the _whatap_ directory, and then modify it as follows:
+3. When unzipped, the _whatap_ directory is created. Check the settings in the *whatap.conf* file under the _whatap_ directory, and then modify it as follows:
 
    ```ini
    license={licenseKey}
@@ -219,11 +219,11 @@ The following guides you to include **the specified version of the agent** in th
 
    **Configuring the options for the Kubernetes internal application agent** 
 
-   The settings required for the Kubernetes internal application agent can be configured in the _whatap.conf_ file or through the container `env` field when releasing the agent. 
+   The settings required for the Kubernetes internal application agent can be configured in the *whatap.conf* file or through the container `env` field when releasing the agent. 
 
-   - The options in the _whatap.conf_ file have higher priority than those set in the container `env` field. 
+   - The options in the *whatap.conf* file have higher priority than those set in the container `env` field. 
 
-   - If no value is set in _whatap.conf_ or container `env`, the default value is used.
+   - If no value is set in *whatap.conf* or container `env`, the default value is used.
 
    - Use the In case of `license` and `whatap.server.host` options, use the **container environment variables** settings. For more information, check [the following] (#application-conf-check2).
 
@@ -277,7 +277,7 @@ The following guides you to include **the specified version of the agent** in th
 
 **Checking the `whatap.server.host` setting of the application** <ScrollToLink anchor='application-conf-check2' />
 
-In some container images, you cannot directly set environment variables with `.` such as `whatap.server.host`. If this keeps the application agent from starting normally, directly modify the _whatap.conf_ file to set the `whatap.server.host` value. The procedure how to check the `whatap.server.host` setting of the application is as follows: 
+In some container images, you cannot directly set environment variables with `.` such as `whatap.server.host`. If this keeps the application agent from starting normally, directly modify the *whatap.conf* file to set the `whatap.server.host` value. The procedure how to check the `whatap.server.host` setting of the application is as follows: 
 
 1. Enter into the WhaTap application container. 
 
@@ -289,7 +289,7 @@ In some container images, you cannot directly set environment variables with `.`
    ```
    ````
 
-   **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the _whatap.conf_ file and then manually set the `whatap.server.host` value as follows: 
+   **If no value is output**, it indicates that the container image cannot support configuration of the environment variables with `.`. In this case, use the configuration file instead of environment variables. Open the *whatap.conf* file and then manually set the `whatap.server.host` value as follows: 
 
    ````
    ```bash
@@ -315,7 +315,7 @@ Set a security key to query SQL variables and perform HTTP queries, or use the T
 
 - Java Agent 2.2.2 or later
 
-  After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the *security.conf* file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
   ```ini title='security.conf'
   paramkey=ABCDEF # SQL variable and HTTP query lookup
@@ -324,7 +324,7 @@ Set a security key to query SQL variables and perform HTTP queries, or use the T
 
 - Java agent 2.2.2 or earlier
 
-  After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the *paramkey.txt* file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
   ```ini title='paramkey.txt'
   ABCDEF # SQL variable and HTTP query lookup, thread stop function
@@ -332,14 +332,14 @@ Set a security key to query SQL variables and perform HTTP queries, or use the T
 
 :::tip
 
-When updating the Java agent version to 2.2.2, the key values in the existing _paramkey.txt_ file are automatically applied to the _security.conf_ file. For example, if you used `FEDCBA` in _paramkey.txt_ and updated to the version 2.2.2, it is applied to the _security.conf_ file as follows:
+When updating the Java agent version to 2.2.2, the key values in the existing *paramkey.txt* file are automatically applied to the *security.conf* file. For example, if you used `FEDCBA` in *paramkey.txt* and updated to the version 2.2.2, it is applied to the *security.conf* file as follows:
 
 ```ini
 paramkey=FEDCBA
 threadkill=FEDCBA
 ```
 
-If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ file is automatically created as the key value of **WHATAP**.
+If the *paramkey.txt* file does not exist, the key value of the *security.conf* file is automatically created as the key value of **WHATAP**.
 
 :::
 
@@ -353,7 +353,7 @@ If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ 
 
 ## Configuring the container environment variables
 
-After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
 
 ```yaml
 env:

@@ -6,6 +6,36 @@ pagination_next: release-notes/service/service-2_15_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.16.4
+
+May 15, 2025
+
+<div class='indentTab'>
+
+### `Application`
+
+- In <Status priority='0'>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="daily_app_stat" className="uitext" />, <Cmdname sid="side_stack" className="uitext" />,  <Cmdname sid="cube_navigator"  className="uitext" />, <Cmdname sid="side_hitmap" className="uitext" />, <Cmdname sid="tx_search" className="uitext" />, fixed the error where the agent information in the selected time is not loaded.
+
+</div>
+
+## Service 2.16.3
+
+May 7, 2025
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> In <Cmdname sid="TTL06377" className="uitext" />, fixed the issue where the timeline cannot be checked due to the color issue of the Slow node.
+
+---
+
+### `Server`
+
+<Status priority='1'>Feature</Status> <Cmdname sid="side_report" className="uitext" /> &gt; Added the option to display only the disk items in the hourly key server metrics report on a daily basis.
+
+</div>
+
 ## Service 2.16.2
 
 April 29, 2025 
@@ -110,17 +140,14 @@ April 23, 2025
 
   - Adding filter items
 
-      {/* - When the `ui_transaction_map_custom_filter` option (value: `true`/`false`) in the front.config is set to `true`, the custom filtering feature is activated. */}
-
     <details>
       <summary>Added filters</summary>
 
     - **General filters**  
 
-    - **Referer**\
-      Login ID, WClientId, transaction ID, multi transaction ID, custom TID, error (including class, step, and message), city, country, HTTP method, user agent
+      Login ID, WClientId, transaction ID, multi transaction ID, Referer, custom TID, error (including class, step, and message), city, country, HTTP method, user agent
 
-    - **Trace step-related filters**\
+    - **Step filters**\
       DBC, SQL, HTTPC, METHOD, MESSAGE
 
     - **Number input filter**\

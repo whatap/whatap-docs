@@ -73,7 +73,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
    $ sudo rpm -Uvh http://repo.whatap.io/centos/5/noarch/whatap-repo-1.0-1.noarch.rpm
    ```
 
-2. 次のコマンドを使用して**パッケージ**をインストールしてください。
+2. 次のコマンドを実行し、**パッケージ**をインストールします。
 
    ```bash title=SH
    $ sudo yum install whatap-telegraf
@@ -99,7 +99,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
    $ sudo apt-get update
    ```
 
-2. 次のコマンドを使用して**パッケージ**をインストールしてください。
+2. 次のコマンドを実行し、**パッケージ**をインストールします。
    ```bash title=SH
    $ sudo apt-get install whatap-telegraf
    ```
@@ -125,7 +125,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
    $ echo "gpgcheck=0" | sudo tee -a /etc/yum.repos.d/whatap.repo > /dev/null
    ```
 
-2. 次のコマンドを使用して**パッケージ**をインストールしてください。
+2. 次のコマンドを実行し、**パッケージ**をインストールします。
 
    ```bash title=SH
    $ sudo yum install whatap-telegraf
@@ -162,7 +162,7 @@ import Accesskey from "../getting-started/_accesskey.mdx";
 
 ## Telegraf連携
 
-*Telegraf.conf*に`socket_writer output plugin`設定を行い、収集された情報をwhatap-telegrafに渡します。
+*telegraf.conf*に`socket_writer output plugin`設定を行い、収集された情報をwhatap-telegrafに渡します。
 
 ```toml title='TOML'
 # # Generic socket writer capable of handling multiple socket types.

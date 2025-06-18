@@ -2,13 +2,26 @@
 
 Select the chart area of <Cmdname sid="transaction_map" /> and then the button at the upper left to change the data lookup criteria.
 
-- <Cmdname sid="elapsed" className="uitext" />: The data is searched based on the elapsed time of the executed transaction.
+- <Cmdname sid="elapsed" className="uitext" />: The data is displayed based on the transaction execution time.
 
-- <Cmdname sid="httpcTime" className="uitext" />: The data is searched based on the response time for HTTP calls.
+- <Cmdname sid="httpcTime" className="uitext" />: The data is displayed based on the response time against the HTTP call.
 
-- <Cmdname sid="sqlTime" className="uitext" />: The data is searched based on the SQL patch time.
+- <Cmdname sid="sqlTime" className="uitext" />: The data is displayed based on the SQL execution time.
 
-If you select **_Error_** on the upper right of the chart area, you can view only the transactions with errors. If you drag a transaction on the chart in this state, the <Cmdname sid="TTL06209" className="uitext" /> window that displays a list of erroneous transactions. To view all transactions, select **_Total_**.
+- <Cmdname sid="TTL06401" className="uitext" />: The data is displayed based on the CPU used time.
+
+## Filtering the searched results
+
+In the chart area of ​​<Cmdname sid="transaction_map" />, you can distinguish the results by selecting Total, Error, and Read phrases in the upper right corner.
+
+**_Total_**: Displays total transactions
+
+**_Error_**: Only the transactions in which errors occurred, are displayed.
+
+**_Read_**: The number of transactions read from the server is displayed.
+
+For example, if you select an error and then drag a transaction on the chart, the <Cmdname sid="TTL06209" className="uitext" /> window appears to display a list of erroneous transactions. 
+To view all transactions, click **_Total_**.
 
 :::tip
 
@@ -26,12 +39,12 @@ If you select **_Error_** on the upper right of the chart area, you can view onl
 
 - You can change the maximum value of the Y-axis by directly entering it. Select ![Edit icon](/img/ico-edit.svg), enter a desired value, and then select <Cmdname sid="apply" className="uitext" />.
 
-  <ImgLang img="dashboard-txmap-input-y-axi.png" />
-
 :::
 
 :::note
 
 The maximum number of transactions (<span class="uitext">Limit</span>) displayed on the chart in <Cmdname sid="transaction_map" /> is 2,000,000.
+
+When you apply filters for a search, the Read value may be greater than the Total (number displayed on the screen).
 
 :::

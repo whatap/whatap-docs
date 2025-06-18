@@ -38,9 +38,9 @@ func main(){
 func Init(m map[string]string)
 ```
 
-`map[string]string`形式をアプリケーションの初期に設定できます。 または、*whatap.conf*ファイルに設定できます。 性能情報をWhaTap収集サーバーに送るためには、エージェントからTCP接続が正常に行われる必要があります。 デフォルト接続情報として**127.0.0.1:6600**を通じてTCPで通信します。 
+`map[string]string`形式をアプリケーションの初期に設定できます。 または、*whatap.con*ファイルに設定できます。 性能情報をWhaTap収集サーバーに送るためには、エージェントからTCP接続が正常に行われる必要があります。 デフォルト接続情報として**127.0.0.1:6600**を通じてTCPで通信します。 
 
-接続情報を変更するには、`Init`メソッドに設定を伝えるか*whatap.conf* ファイルに設定し、アプリケーションを再起動してください。
+接続情報を変更するには、`Init`メソッドに設定を伝えるか*whatap.con* ファイルに設定し、アプリケーションを再起動してください。
 
 ```go title="Go"
 m := make(map[string]string)
@@ -75,7 +75,7 @@ ctx = context.WithValue(ctx, "whatap", traceCtx)
 
 ## トランザクションのトレース
 
-Webリクエストと応答までのトランザクションと一般的なタスク単位のトランザクションの両方を追跡します。 開始および終了のメソッドで構成されています。 一つのトランザクションとして認識され、**_ヒットマップ_**ウィゼットで詳細やTPS、応答時間、平均応答時間などの統計指標を確認することができます。
+Webリクエストと応答までのトランザクションと一般的なタスク単位のトランザクションの両方を追跡します。 開始および終了のメソッドで構成されています。 一つのトランザクションとして認識され、***ヒットマップ***ウィゼットで詳細やTPS、応答時間、平均応答時間などの統計指標を確認することができます。
 
 設定を通じてHTTPパラメータ、HTTPヘッダー情報を収集できます。
 
@@ -386,7 +386,7 @@ Goエージェントは、3つのHTTPヘッダーキー値(`x-wtap-po`、`x-wtap
 
 ### エージェント設定
 
-マルチトランザクション追跡のためのエージェント設定ファイル(*whatap.conf*)に次のようにオプションを設定してください。
+マルチトランザクション追跡のためのエージェント設定ファイル(*whatap.con*)に次のようにオプションを設定してください。
 
 ```ini title="whatap.conf"
 # Activation option, Default: false
@@ -450,7 +450,7 @@ func StartWithRequest(r *http.Request) (context.Context, error) {
 
 ### HTTP接続時にHeader情報を追加する
 
-外部にHTTP接続するとき、Request Headerに追跡のためのHeader情報を追加してください。
+外部にHTTP接続するとき、Request Headerに追跡のためのHeader情報を追加します。
 
 ```go title="Go" showLineNumbers
 import (
@@ -553,7 +553,7 @@ func Trace(ctx context.Context, name string, elapsed int, err error) error
 
 ### エージェント設定
 
-アプリケーション実行前に*whatap.conf*ファイルにエージェントオプションを設定ます。
+アプリケーション実行前に*whatap.con*ファイルにエージェントオプションを設定ます。
 
 ```ini title="whatap.conf"
 # Enable all log collection

@@ -4,7 +4,7 @@ _xos_ディレクトリをデータベースサーバーにコピーし、*xos.c
 
 - **dbx_ip** <span class='type'>String</span>
 
-  DBXエージェントをインストールしたサーバーのIPアドレスを入力してください。  
+  DBXエージェントをインストールしたサーバーのIPアドレスを入力します。  
 
 - **dbx_port** <span class='type'>String</span>
 
@@ -44,7 +44,7 @@ _xos_ディレクトリをデータベースサーバーにコピーし、*xos.c
 
 - **process_check** <span class='type'>String</span>
 
-  プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力してください。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
+  プロセスの実行状態をモニタリングできます。オプション値でプロセス名を入力します。コンマ(,)を区切り文字としてして使用して、複数登録することができます。
 
   ```ini title='xos.conf'
   process_check=pmon,smon,tnslsnr,melong,haha
@@ -74,7 +74,7 @@ _xos_ディレクトリをデータベースサーバーにコピーし、*xos.c
 
   :::note
 
-  *whatap.conf*のファイルに`xos_dbip=true`オプションを設定すると`db_ip_list`のカテゴリに転送します。<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_ip_list`カテゴリを選択した後、確認することができます。
+  *whatap.con*のファイルに`xos_dbip=true`オプションを設定すると`db_ip_list`のカテゴリに転送します。<Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />メニューで`db_ip_list`カテゴリを選択した後、確認することができます。
 
   :::
 
@@ -82,7 +82,7 @@ _xos_ディレクトリをデータベースサーバーにコピーし、*xos.c
 
 - **slow_query** <span class='type'>String</span>
 
-  データベースのスロークエリを収集します。モニタリング対象DBにXOSがインストールされているものの、ファイル名を自動的に認識できない場合は、XOS *whatap.conf*ファイルに`slow_query=`と設定します。
+  データベースのスロークエリを収集します。モニタリング対象DBにXOSがインストールされているものの、ファイル名を自動的に認識できない場合は、XOS *whatap.con*ファイルに`slow_query=`と設定します。
 
 </InDoc>
 

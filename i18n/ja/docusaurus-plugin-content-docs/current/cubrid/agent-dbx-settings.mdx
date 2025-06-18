@@ -8,7 +8,7 @@ keywords:
   - DBXエージェント
 ---
 
-DBXエージェントに必要な設定は、*whatap.conf*ファイルで作成します。設定できるオプションについては、以下を参照してください。
+DBXエージェントに必要な設定は、*whatap.con*ファイルで作成します。設定できるオプションについては、以下を参照してください。
 
 ## 基本オプション
 
@@ -22,13 +22,13 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   既定値`0`
 
-  アプリケーション接続情報に使用するブローカーのポート情報です。ブローカー設定ファイル(_cubrid_broker.conf_)に`BROKER_PORT`項目に定義された値を入力してください。(CUBRIDの既定値 `BROKER_PORT: 33000`)
+  アプリケーション接続情報に使用するブローカーのポート情報です。ブローカー設定ファイル(*cubrid_broker.conf*)に`BROKER_PORT`項目に定義された値を入力します。(CUBRIDの既定値 `BROKER_PORT: 33000`)
 
 - **cms_port** <span class='type'>Int</span>
 
   既定値 `8001`
 
-  **CUBRID Manager**が使用するポートです。**CUBRID Manager**設定ファイル(_cm.conf_)のcm_port\`項目に定義された値を入力してください。モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
+  **CUBRID Manager**が使用するポートです。**CUBRID Manager**設定ファイル(*cm.conf*)のcm_port\`項目に定義された値を入力します。モニタリング情報を**CUBRID Manager**のapiを使用して読み込むために必要です。
 
 - **cms_token_file** <span class='type'>String</span>
 

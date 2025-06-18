@@ -1,10 +1,73 @@
 ---
 id: aws-marketplace
-title: AWS marketplace
-description: It explains how to use the WhaTap monitoring service by converting to subscription.
+title: AWS Marketplace Subscription
+description: This guide explains how to subscribe to the WhaTap Monitoring Service in AWS Marketplace.
 toc_max_heading_level: 3
 keywords:
   - Management
-  - Billing
-draft: true
+  - Subscription
+  - AWS Marketplace
 ---
+
+AWS users can subscribe to the WhaTap Monitoring Service in AWS Marketplace and pay the service fee together with the AWS cost. For this purpose, link the AWS account and WhaTap service account. At this time, a new WhaTap service account must be created during this integration.
+Connection to an existing WhaTap service account is impossible.
+
+:::note 
+
+If you are subscribed to the WhaTap service, to pay the WhaTap service fee together with the AWS Cloud fee, you must sign up with a **new account** by following the AWS Marketplace subscription process . Afterwards, transfer the payment role for the existing service to the newly created account.
+
+:::
+
+## Find WhaTap services on AWS Marketplace
+
+1. After logging into AWS, enter “whatap” in the search bar.
+
+2. Three search results appear as follows. Select the service that matches the desired country.
+
+   - WhaTap Observability Platform
+
+   - WhaTap Observability Platform(Japan)
+
+   - WhaTap Observability Platform(Korea)
+
+## Subscribe to WhaTap service
+
+After checking the basic information of the selected WhaTap Observability Platform, click the “View purchase options” button in the upper right corner to go to the subscription page.
+
+On the subscription page, you can check various information such as Offer details, Pricing and unit details, Terms and conditions, etc. You can select the billing method for the WhaTap service in Offer details. In AWS Marketplace, the usage-based pay-as-you-go model is provided. A 15-day free trial is also available.
+
+<ImgLang img='awsmp-view-purchase-offer.png' desc='AWSMP WhaTap Subscription Details' />
+
+After checking the pricing information and terms of use, click the “Subscription” button below.
+
+<ImgLang img='awsmp-view-purchase-pricing.png' desc='AWSMP WhaTap service pricing information' />
+
+<ImgLang img='awsmp-view-purchase-terms-conditions.png' desc='AWSMP WhaTap service contract information' />
+
+## Creating WhaTap service account to sync to the AWS account
+
+If the Subscribe button is disabled, go to the top of the page and then proceed with WhaTap service account syncing. Click the “Set up your account” button on the right of the green notification window that appears at the top. To create a WhaTap service account to sync with the AWS account, the WhaTap account creation page appears in a new tab.
+
+<ImgLang img='awsmp-view-purchase-linking-whatap-account.png' desc='AWSMP WhaTap service integration' />
+
+After creating an account on the WhaTap account creation page, log in to the WhaTap service. Create a [Project creation](https://docs.whatap.io/quick-guide#cproject) for the product to monitor and install the agent. 
+
+After installing the WhaTap agent on the monitoring target, check whether the performance data is collected normally on the dashboard.
+
+You can check whether subscription has been done through AWS Marketplace by clicking the profile in the upper right corner, and going to **My Usage > Payment Information**.
+
+## Cancel subscription
+
+1. Log in to the AWS Console with the subscription account for the WhaTap service.
+
+2. From the Console Home screen, navigate to AWS Marketplace.
+
+3. Click AWS Marketplace > Manage subscriptions. Select WhaTap Observability Platform in the list of subscription services.
+
+4. On the Detail page for the selected product, click Cancel subscription from the Actions drop-down menu in the Agreement area.
+
+   <ImgLang img='awsmp-cancel-subscription.png' desc='AWSMP WhaTap service canceling a subscription' />
+
+5. When a window appears checking whether your subscription has been canceled, click the Cancel Subscription button.
+
+6. Check that the WhaTap service has been deleted from the subscription history.

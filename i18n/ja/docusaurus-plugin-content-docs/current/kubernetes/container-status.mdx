@@ -9,7 +9,7 @@ keywords:
 
 ## チャート基準のカストマイズ
 
-WhaTap Kubernetesモニタリングサービスの**_コンテナマップ_**メニューで提供する基本チャート属性は、コンテナまたはPodの状態(State)です。メトリクス名では**_ConState_**(Container State)です。ただし、基本状態以外の基準でマップを構成する必要があります。例えば、基本State状態ではなくCPU使用率(millicore)、メモリ使用率(%)、ネットワーク使用率(byte)に基づいて各対象の状態を判断できます。
+WhaTap Kubernetesモニタリングサービスの***コンテナマップ***メニューで提供する基本チャート属性は、コンテナまたはPodの状態(State)です。メトリクス名では***ConState***(Container State)です。ただし、基本状態以外の基準でマップを構成する必要があります。例えば、基本State状態ではなくCPU使用率(millicore)、メモリ使用率(%)、ネットワーク使用率(byte)に基づいて各対象の状態を判断できます。
 
 WhaTapは、コンテナのチャート基準変更機能を提供します。変更可能なチャートの基準指標は、WhaTap Kubernetesが収集するメトリクス(指標)と同じです。
 
@@ -38,7 +38,7 @@ import Containernotereset from "../common-items/_container-note-reset.mdx";
 
 ## イベントベースのコンテナ状態
 
-**_コンテナマップ_**メニューでコンテナビューは、`EventConState`というステータス値を表示します。`EventConState`は`Event-based Container State`でイベントが反映されたコンテナ状態を表します。`EventConState`に反映されたイベントの種類は次のとおりです。
+***コンテナマップ***メニューでコンテナビューは、`EventConState`というステータス値を表示します。`EventConState`は`Event-based Container State`でイベントが反映されたコンテナ状態を表します。`EventConState`に反映されたイベントの種類は次のとおりです。
 
 | イベント             | レベル                                                                    |
 | ---------------- | ---------------------------------------------------------------------- |

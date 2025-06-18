@@ -80,10 +80,10 @@ extension_dir => /usr/lib64/php/modules => /usr/lib64/php/modules
 
 #### Configuring the PHP extension module
 
-After checking the PHP API version and PHP ZTS's availability, select a library that meets the environment. In the PHP extension module's path, copy the _whatap.so_ file name.
+After checking the PHP API version and PHP ZTS's availability, select a library that meets the environment. In the PHP extension module's path, copy the *whatap.so* file name.
 
-- In case PHP ZTS is available - _whatap\_zts\_[PHP API version].so_
-- In case PHP ZTS is unavailable - _whatap_[PHP API version].so_
+- In case PHP ZTS is available - *whatap\_zts\_[PHP API version].so*
+- In case PHP ZTS is unavailable - *whatap_[PHP API version].so*
   ```bash
   # Example in case the PHP ZTS is not supported
   $ sudo cp /usr/whatap/php/modules/x64/whatap_20100412.so /usr/lib64/php/modules/whatap.so
@@ -112,7 +112,7 @@ export WHATAP_PHP_EXT_SRC=    # whatap library path and file name
    Scan this dir for additional .ini files => /etc/php.d
    ```
 
-2. Copy _whatap.ini_ and paste it to the path.
+2. Copy *whatap.ini* and paste it to the path.
 
    ```bash
    $ sudo cp /usr/whatap/php/whatap.ini /etc/php.d/whtap/ini

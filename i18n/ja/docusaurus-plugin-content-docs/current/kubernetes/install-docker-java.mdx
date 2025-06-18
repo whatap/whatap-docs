@@ -13,7 +13,7 @@ toc_max_heading_level: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**_管理_** > **_エージェントインストール_** > 下段の**_アプリケーションインストール_** クリック > 設置案内の中で **_Docker Java_** タブを選択
+***管理*** > ***エージェントインストール*** > 下段の***アプリケーションインストール*** クリック > 設置案内の中で ***Docker Java*** タブを選択
 
 Dockerコンテナベースで動作するJavaアプリケーションのJVM Optionにエージェント適用の設定を追加し、コンテナイメージをパッケージングする過程を次のように案内します。
 
@@ -31,7 +31,7 @@ Dockerコンテナベースで動作するJavaアプリケーションのJVM Opt
 
 <TabItem value="dockerinstall" label="Docker Install" default>
 
-WhaTapアプリケーションエージェントのインストールのために *whatap.conf* ファイルを作成します。`{YOUR_PROJECT_ROOT}`は、エージェントをインストールするプロジェクトの最上位パスに変更します。
+WhaTapアプリケーションエージェントのインストールのために *whatap.con* ファイルを作成します。`{YOUR_PROJECT_ROOT}`は、エージェントをインストールするプロジェクトの最上位パスに変更します。
 
 ```bash
 cat >{YOUR_PROJECT_ROOT}/whatap.conf <<EOL
@@ -41,11 +41,11 @@ EOL
 
 #### Kubernetes内のアプリケーションエージェントのオプション設定
 
-Kubernetes内のアプリケーションエージェントに必要な設定を、*whatap.conf*ファイルに作成するか、エージェント配布時のコンテナ`env`フィールドを通して設定できます。 
+Kubernetes内のアプリケーションエージェントに必要な設定を、*whatap.con*ファイルに作成するか、エージェント配布時のコンテナ`env`フィールドを通して設定できます。 
 
-- *whatap.conf*ファイル内のオプションがコンテナ`env`フィールドに設定されたオプションよりも高い優先順位を持ちます。 
+- *whatap.con*ファイル内のオプションがコンテナ`env`フィールドに設定されたオプションよりも高い優先順位を持ちます。 
 
-- *whatap.conf*またはコンテナ`env`に設定された値がない場合は、既定値が使用されます。
+- *whatap.con*またはコンテナ`env`に設定された値がない場合は、既定値が使用されます。
 
 - `license`及び`whatap.server.host`オプションの場合**コンテナ環境変数**設定を活用してください。詳しくは[次の文書](#application-conf-check)を確認してください。
 
@@ -65,7 +65,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 **アプリケーションの`whatap.server.host`設定確認** <ScrollToLink anchor='application-conf-check' />
 
-一部コンテナ画像では`whatap.server.host`のように`.`が含まれる環境変数を直接設定することはできません。これにより、アプリケーションエージェントが正常に起動しない場合、*whatap.conf*ファイルを直接修正し`whatap.server.host`値を設定する必要があります。アプリケーションの`whatap.server.host`設定の確認方法は次のとおりです。 
+一部コンテナ画像では`whatap.server.host`のように`.`が含まれる環境変数を直接設定することはできません。これにより、アプリケーションエージェントが正常に起動しない場合、*whatap.con*ファイルを直接修正し`whatap.server.host`値を設定する必要があります。アプリケーションの`whatap.server.host`設定の確認方法は次のとおりです。 
 
 1. WhaTapアプリケーションコンテナに進入します。 
 
@@ -77,7 +77,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
    ```
    ````
 
-   **値が出力されない場合**当該コンテナの画像が`.`が含まれる環境変数の設定に対応していないことです。この場合、環境変数ではなく設定ファイルを活用する必要があります。*whatap.conf*ファイルを開いて次のように `whatap.server.host`値を手動で設定します。 
+   **値が出力されない場合**当該コンテナの画像が`.`が含まれる環境変数の設定に対応していないことです。この場合、環境変数ではなく設定ファイルを活用する必要があります。*whatap.con*ファイルを開いて次のように `whatap.server.host`値を手動で設定します。 
 
    ````
    ```bash
@@ -93,7 +93,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 **最新バージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更します。
+1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加します。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更します。
 
    ```docker
    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
@@ -106,7 +106,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
    COPY {YOUR_PROJECT_ROOT}/whatap.conf /whatap/
    ```
 
-2. Dockerfileの開始コマンドに次の内容を追加してください。
+2. Dockerfileの開始コマンドに次の内容を追加します。
 
    ```bash
    -javaagent:/whatap/whatap.agent.kube.jar -Dwhatap.micro.enabled=true
@@ -138,7 +138,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 **指定したバージョンのエージェント**をアプリケーションイメージに含めるように案内します。
 
-1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加してください。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更します。
+1. アプリケーション画像にワタブエージェントを含めるには、まずDockrfileの最終イメージのビルド段階で次の内容を追加します。`{YOUR_PROJECT_ROOT}`をエージェントをインストールしようとするプロジェクトの最上位パスに変更します。
 
    ```docker
    # WhaTapエージェント用のディレクトリをユーザーコンテナに作成
@@ -194,7 +194,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 <TabItem value="direct" label="直接設置">
 
-1. インストールファイル(*whatap.agent.java.tar.gz*)をダウンロードするには、**_ダウンロード_**ボタンを選択してください。
+1. インストールファイル(*whatap.agent.java.tar.gz*)をダウンロードするには、***ダウンロード***ボタンを選択します。
 
 2. Dockerfileを作成できるサーバーにアップロードし、圧縮を解凍してください。
 
@@ -208,7 +208,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
    :::
 
-3. 圧縮を解除する際に、_whatap_ ディレクトリが作成されます。_whatap_ ディレクトリの *whatap.conf* ファイルで設定内容を確認し、次のように修正します。
+3. 圧縮を解除する際に、_whatap_ ディレクトリが作成されます。_whatap_ ディレクトリの *whatap.con* ファイルで設定内容を確認し、次のように修正します。
 
    ```ini
    license={licenseKey}
@@ -219,11 +219,11 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
    **Kubernetes内のアプリケーションエージェントのオプション設定** 
 
-   Kubernetes内のアプリケーションエージェントに必要な設定を、*whatap.conf*ファイルに作成するか、エージェント配布時のコンテナ`env`フィールドを通して設定できます。 
+   Kubernetes内のアプリケーションエージェントに必要な設定を、*whatap.con*ファイルに作成するか、エージェント配布時のコンテナ`env`フィールドを通して設定できます。 
 
-   - *whatap.conf*ファイル内のオプションがコンテナ`env`フィールドに設定されたオプションよりも高い優先順位を持ちます。 
+   - *whatap.con*ファイル内のオプションがコンテナ`env`フィールドに設定されたオプションよりも高い優先順位を持ちます。 
 
-   - *whatap.conf*またはコンテナ`env`に設定された値がない場合は、既定値が使用されます。
+   - *whatap.con*またはコンテナ`env`に設定された値がない場合は、既定値が使用されます。
 
    - `license`及び`whatap.server.host`オプションの場合**コンテナ環境変数**設定を活用してください。詳しくは[次の文書](#application-conf-check2)を確認してください。
 
@@ -263,11 +263,11 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 :::note
 
-- _whatap-virtual-X.Y.Z.jar_：モニタリング対象(サンプルアプリケーション)
+- *whatap-virtual-X.Y.Z.jar*：モニタリング対象(サンプルアプリケーション)
 
-- _whatap.agent-X.Y.Z.jar_：WhaTapエージェント
+- *whatap.agent-X.Y.Z.jar*：WhaTapエージェント
 
-- エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+- エージェントのファイル名が*whatap.agent-1.2.3.jar*の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
 - JVMオプション追加の詳細については、[次の文書](https://docs.whatap.io/java/install-agent#addjvmopt)を参照してください。
 
@@ -277,7 +277,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 **アプリケーションの`whatap.server.host`設定確認** <ScrollToLink anchor='application-conf-check2' />
 
-一部コンテナ画像では`whatap.server.host`のように`.`が含まれる環境変数を直接設定することはできません。これにより、アプリケーションエージェントが正常に起動しない場合、*whatap.conf*ファイルを直接修正し`whatap.server.host`値を設定する必要があります。アプリケーションの`whatap.server.host`設定の確認方法は次のとおりです。 
+一部コンテナ画像では`whatap.server.host`のように`.`が含まれる環境変数を直接設定することはできません。これにより、アプリケーションエージェントが正常に起動しない場合、*whatap.con*ファイルを直接修正し`whatap.server.host`値を設定する必要があります。アプリケーションの`whatap.server.host`設定の確認方法は次のとおりです。 
 
 1. WhaTapアプリケーションコンテナに進入します。 
 
@@ -289,7 +289,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
    ```
    ````
 
-   **値が出力されない場合**当該コンテナの画像が`.`が含まれる環境変数の設定に対応していないことです。この場合、環境変数ではなく設定ファイルを活用する必要があります。*whatap.conf*ファイルを開いて次のように `whatap.server.host`値を手動で設定します。 
+   **値が出力されない場合**当該コンテナの画像が`.`が含まれる環境変数の設定に対応していないことです。この場合、環境変数ではなく設定ファイルを活用する必要があります。*whatap.con*ファイルを開いて次のように `whatap.server.host`値を手動で設定します。 
 
    ````
    ```bash
@@ -305,7 +305,7 @@ Kubernetes内のアプリケーションエージェントに必要な設定を�
 
 :::tip
 
-Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加してください。
+Java 17バージョン以降の場合、reflectionに関する`--add-opens=java.base/java.lang=ALL-UNNAMED`オプションを追加します。
 
 :::
 
@@ -315,7 +315,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 - Javaエージェント2.2.2バージョン以降
 
-  `$WHATAP_HOME`パスに *security.conf* ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
+  `$WHATAP_HOME`パスに *security.conf* ファイルを作成した後、次のように 6桁の英数字のパスワードを入力します。
 
   ```ini title='security.conf'
   paramkey=ABCDEF # SQL変数およびHTTPクエリの検索
@@ -324,7 +324,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 - Javaエージェント2.2.2バージョン未満
 
-  `$WHATAP_HOME`パスに *paramkey.txt* ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
+  `$WHATAP_HOME`パスに *paramkey.txt* ファイルを作成した後、次のように 6桁の英数字のパスワードを入力します。
 
   ```ini title='paramkey.txt'
   ABCDEF # SQL変数およびHTTPクエリの検索、スレッド停止機能
@@ -332,7 +332,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 :::tip
 
-Javaエージェント 2.2.2 のバージョン未満から2.2.2バージョンにアップデートする場合、既存の *paramkey.txt* ファイルのキー値が _seuciry.conf_ ファイルのキー値に自動的に適用されます。例えば、*paramkey.txt* に`FEDCBA`を使用して、バージョン2.2.2にアップデートした場合、*security.conf* ファイルには次のように適用されます。
+Javaエージェント 2.2.2 のバージョン未満から2.2.2バージョンにアップデートする場合、既存の *paramkey.txt* ファイルのキー値が *seuciry.conf* ファイルのキー値に自動的に適用されます。例えば、*paramkey.txt* に`FEDCBA`を使用して、バージョン2.2.2にアップデートした場合、*security.conf* ファイルには次のように適用されます。
 
 ```ini
 paramkey=FEDCBA
@@ -353,7 +353,7 @@ threadkill=FEDCBA
 
 ## コンテナ環境変数の設定
 
-Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーション配布の *yaml* ファイルに次の内容を追加してください。 
+Dockerビルド後、Kubernetes環境内の**コンテナ環境変数**を設定してください。アプリケーション配布の *yaml*ファイルに次の内容を追加します。 
 
 ```yaml
 env:

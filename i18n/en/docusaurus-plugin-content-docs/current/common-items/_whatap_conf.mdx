@@ -11,7 +11,7 @@ whatap.server.host={collection server IP}
 
 :::note
 
-For more information about _whatap.conf_, see [the following](set-agent).
+For more information about *whatap.conf*, see [the following](set-agent).
 
 :::
 
@@ -21,7 +21,7 @@ Set a security key to query SQL variables and perform HTTP queries, or use the T
 
 - Java Agent 2.2.2 or later
 
-  After creating the _security.conf_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the *security.conf* file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
   ```ini title='security.conf'
   paramkey=ABCDEF # SQL variable and HTTP query lookup
@@ -30,7 +30,7 @@ Set a security key to query SQL variables and perform HTTP queries, or use the T
 
 - Java agent 2.2.2 or earlier
 
-  After creating the _paramkey.txt_ file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
+  After creating the *paramkey.txt* file in the `$WHATAP_HOME` path, enter a 6-character password consisting of alphabets and numbers as follows:
 
   ```ini title='paramkey.txt'
   ABCDEF # SQL variable and HTTP query lookup, thread stop function
@@ -38,14 +38,14 @@ Set a security key to query SQL variables and perform HTTP queries, or use the T
 
 :::tip
 
-When updating the Java agent version to 2.2.2, the key values in the existing _paramkey.txt_ file are automatically applied to the _security.conf_ file. For example, if you used `FEDCBA` in _paramkey.txt_ and updated to the version 2.2.2, it is applied to the _security.conf_ file as follows:
+When updating the Java agent version to 2.2.2, the key values in the existing *paramkey.txt* file are automatically applied to the *security.conf* file. For example, if you used `FEDCBA` in *paramkey.txt* and updated to the version 2.2.2, it is applied to the *security.conf* file as follows:
 
 ```ini
 paramkey=FEDCBA
 threadkill=FEDCBA
 ```
 
-If the _paramkey.txt_ file does not exist, the key value of the _security.conf_ file is automatically created as the key value of **WHATAP**.
+If the *paramkey.txt* file does not exist, the key value of the *security.conf* file is automatically created as the key value of **WHATAP**.
 
 :::
 

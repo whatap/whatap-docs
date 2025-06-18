@@ -18,7 +18,7 @@ Node.jsモニタリングサービスを使用するには、モニタリング�
 
 - サービス中のNode.jsアプリケーションのディレクトリパスに、WhaTapエージェントモジュールをインストールしてください。
 
-- WhaTapエージェントの環境設定(*whatap.conf*)を作成してください。
+- WhaTapエージェントの環境設定(*whatap.con*)を作成してください。
 
 - Node.jsサービスを再起動します。
 
@@ -38,18 +38,18 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
    $ npm install --save whatap
    ```
 
-2. _node_modules/whatap_パスの*whatap.conf*ファイルをコピーして、プロジェクトのルート(root)パス(_package.json_ファイルと同じ位置)に貼り付けます。
+2. *node_modules/whatap*パスの*whatap.con*ファイルをコピーして、プロジェクトのルート(root)パス(*package.json*ファイルと同じ位置)に貼り付けます。
 
 3. [WhaTapモニタリングサービス](https://service.whatap.io) 画面に移動してください。
 
-4. 作成したプロジェクトを選択し**_インストール手順_**セクションの**_エージェントのダウンロード_** セクションから、次をコピーしてください。
+4. 作成したプロジェクトを選択し***インストール手順***セクションの***エージェントのダウンロード*** セクションから、次をコピーしてください。
 
    ```ini title='Example'
    license={アクセスキー}
    whatap.server.host={収集サーバーIP}
    ```
 
-5. *whatap.conf*ファイルに貼り付けてください。
+5. *whatap.con*ファイルに貼り付けてください。
 
 ホスト(`whatap.server.host`) のアドレスは、WhaTap proxyをインストールしたサーバーのアドレスです。スラッシュ(「/」)を区切り文字として使用し、WhaTap proxy が実行中のサーバーにアドレスを入力することができます。
 
@@ -83,7 +83,7 @@ import Accesskeyv2 from "../getting-started/_accesskey-v2.mdx";
 
 ## 活用方法
 
-アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加してください。例えばExpress.jsアプリケーションでは_app.js_または_server.js_ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、_main.ts_ファイルなどです。
+アプリケーションの進入点(メインモジュール)ファイルの最上段に次のコードを追加します。例えばExpress.jsアプリケーションでは*app.js*または*server.js*ファイルが進入点(メインモジュール)です。Nest.jsといったフレームワークを使用する場合は、*main.ts*ファイルなどです。
 
 <Tabs groupId="javascript">
 
@@ -114,7 +114,7 @@ WhatapAgent.NodeAgent;
 
 ### 環境ごとのエージェントオプションを設定する
 
-アプリケーションの各環境に合わせた設定を適用すべき時は、*whatap.conf*ファイルの代わりに、アプリケーションのエントリポイントファイルから設定を変更できます。以下のコードを参考にして環境に合わせた設定を適用します。
+アプリケーションの各環境に合わせた設定を適用すべき時は、*whatap.con*ファイルの代わりに、アプリケーションのエントリポイントファイルから設定を変更できます。以下のコードを参考にして環境に合わせた設定を適用します。
 
 ```javascript
 process.env.WHATAP_CONF = 'whatapdev'; // Setting for development environment
@@ -161,7 +161,7 @@ var WhatapAgent = require('whatap').NodeAgent;
 
 ### デフォルトの環境変数設定
 
-PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(_app.js_)ファイルで設定する必要があります。*whatap.conf*ファイルは使用できません。
+PaaSアプリケーションからエージェントをインストールする場合は、すべての設定をソース(*app.js*)ファイルで設定する必要があります。*whatap.con*ファイルは使用できません。
 
 アクセスキー(`WHATAP_LICENSE`)収集サーバーIP(`WHATAP_SERVER_HOST`)を環境変数として設定してください。
 
@@ -174,7 +174,7 @@ var whatap=require('whatap').NodeAgent;
 
 ### 環境変数として設定可能なオプション
 
-*whatap.conf*ファイルが使用できないため、ソースファイルに環境変数としてWhaTapエージェントオプションを設定する必要があります。
+*whatap.con*ファイルが使用できないため、ソースファイルに環境変数としてWhaTapエージェントオプションを設定する必要があります。
 
 ```javascript title='app.js'
 process.env.profile_http_header_enabled=false;

@@ -2,7 +2,7 @@
 
 ### 基本情報を入力する
 
-圧縮を解いた`$WHATAP_HOME`パスに移動してください。_$WHATAP_HOME/whatap.conf_ファイルにアクセスキーとデータ収集サーバーのIPアドレスを入力してください。[WhaTapモニタリングサービス](https://service.whatap.io)画面に移動し<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />項目から**アクセスキー**、**収集サーバIPアドレス**値をコピーして貼り付けてください。
+圧縮を解いた`$WHATAP_HOME`パスに移動してください。_$WHATAP_HOME/whatap.conf_ファイルにアクセスキーとデータ収集サーバーのIPアドレスを入力します。[WhaTapモニタリングサービス](https://service.whatap.io)画面に移動し<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="JAVA-agent-setup-1-subject" className="uitext" />項目から**アクセスキー**、**収集サーバIPアドレス**値をコピーして貼り付けてください。
 
 ```ini title=$WHATAP_HOME/whatap.conf
 license={アクセスキー}
@@ -11,7 +11,7 @@ whatap.server.host={収集サーバーIP}
 
 :::note
 
-_whantap.conf_ファイルの詳細については、[次の文書](set-agent)を参照してください。
+*whantap.conf*ファイルの詳細については、[次の文書](set-agent)を参照してください。
 
 :::
 
@@ -21,7 +21,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 - Javaエージェント2.2.2バージョン以降
 
-  `$WHATAP_HOME`パスに*security.conf*ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
+  `$WHATAP_HOME`パスに*security.conf*ファイルを作成した後、次のように 6桁の英数字のパスワードを入力します。
 
   ```ini title='security.conf'
   paramkey=ABCDEF # SQL変数およびHTTPクエリの検索
@@ -30,7 +30,7 @@ SQL変数、HTTPクエリを検索、Thread停止機能を使用する場合は�
 
 - Javaエージェント2.2.2バージョン未満
 
-  `$WHATAP_HOME`パスに*paramkey.txt*ファイルを作成した後、次のように 6桁の英数字のパスワードを入力してください。
+  `$WHATAP_HOME`パスに*paramkey.txt*ファイルを作成した後、次のように 6桁の英数字のパスワードを入力します。
 
   ```ini title='paramkey.txt'
   ABCDEF # SQL変数およびHTTPクエリの検索、スレッド停止機能

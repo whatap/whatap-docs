@@ -1,0 +1,242 @@
+---
+id: agent-dmx-settings
+title: DMX Agent Setting
+description: It guides you to the options you can set in the whatap.conf file.
+keywords:
+  - Oracle Pro
+  - DATABASE
+  - DBX agent
+---
+
+Enter the settings required for the DMX agent in the *whatap.conf* file. For the options that can be set, see the following.
+
+### Default options
+
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
+
+- **rac** <span class='type'>String</span> <code class="my">RAC</code>
+
+    This option sets the group name of the instances grouped in Oracle's **Real Application Clusters** (**RAC**). This option allows you to change complex RAC cluster group names to concise and easy ones to identify. The RAC cluster group name set using this option can be checked on the WhaTap Monitoring Service screen.
+
+    For example, if the RAC cluster group name is too long, such as '**my_long_rac_cluster_group_name**', you can set a concise name as follows:
+
+  ```ini title="whatap.conf"
+  rac=my_rac_cluster_group
+  ```
+
+    It is displayed as '**my_rac_cluster_group**' in the WhaTap Monitoring Service, allowing users to quickly identify and monitor the RAC cluster group.
+
+### Database data collection options
+
+- **bind_elapse** <span class='type'>Int</span>
+
+    Default `3`
+
+    It sets to collect bind values ​​if SQL runs longer than the specified time (seconds). If the setting is `0`, this option does not work.
+
+    Even if the `bind_interval` is not set, the bind values are collected when the SQL execution time is greater than the set value. 
+
+- **bind_interval** <span class='type'>Int</span>
+
+    Default `0`
+
+    It sets the bind capture interval in seconds. Setting the default value (`0`) disables the bind capture.
+
+    Collection is made at the interval set in `v$sql_bind_capture`. 
+
+    Because there can be a lot of data, collection is performed by `bind_max_count` since the last collection time.
+
+- **bind_max_count** <span class='type'>Int</span>
+
+    Default `1000`
+
+    It sets how many bind capture values ​​to collect. Only the bind capture values after the last collection time can be collected.
+
+- **codefrom / codeto** <span class='type'>Int</span>
+
+    Default `15`
+
+    This option changes the character encoding when there is a problem with Korean characters broken in the SQL text. The value can be selected from the list in iconv -l.
+
+- **conn_fail_count** <span class='type'>Int</span>
+
+    It sends a notification when 15 consecutive connection errors occur. You can adjust the notification occurrence criteria by entering the desired number.
+
+    e.g. codefrom=EUC-KR, codeto=UTF-8
+
+- **event** <span class='type'>String</span>
+
+    Default `db file scattered read`, `db file sequential read`, `direct path read`, `direct path write`,
+    `enq: TX - row lock contention`, `latch free`, `library cache lock`, `library cache pin`
+
+    In the RAC environment, two additional metrics are collected by default: gc cr block receive time and gc current block receive time. 
+
+    It enables collecting event-related metrics. Write the name of the metric to collect by referencing the `EVENT` column such as `v$system_event`, and `v$event_name`. You can collect additional metrics along with the basic metrics by writing them in a way like `event+=`. You can enter multiple items using the comma (,) as the delimiter without spaces.
+
+    For each event, the following three values are collected.
+
+  ```
+    - time waited: Total waiting time in the event (unit: 1/100 sec). e.g. db file sequential read time waited
+
+    - timeouts: Number of waits that exceeded the timeout. e.g. db file sequential read total timeouts
+
+    - total waits: Total number of events. e.g. db file sequential read total waits
+  ```
+
+- **interval** <span class='type'>Int</span>
+
+    Default `3` 
+
+    It sets the data collection cycle in seconds.  
+
+    :::note
+
+    Oracle Pro collects active sessions and SQL data at an interval of 1/20 second through memory access. Because the stats are generated based on the data collected in this manner, data loss is minimized. When transmitting the current DB status according to the `interval` option, the stat, event, SQL stat, xview, lock, and PQ are read directly from memory for quick processing. On the other hand, the binds, DB parameters, plans, tables, table spaces, and wait classes are collected through queries.
+
+    :::
+
+- **multi_db_stat** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    When using the Multi DB, set whether to collect metrics by database or by summing them for all instances.
+
+- **ora_hidden_param** <span class='type'>Boolean</span>
+
+    Default `false`
+
+    It sets whether to collect hidden parameter values. Set the option value to `true` to collect hidden parameters.
+
+- **plan_change** <span class='type'>Int</span>
+
+    Default `1`
+
+    It sets whether to collect the change history for the plan.  
+
+  - `1`: Excludes sys  
+  - `2`: Includes sys
+
+- **plan_elapse** <span class='type'>Int</span>
+
+    Default `3`
+
+    It collects the plans that take more than 5 seconds to run.
+
+- **segments** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    It collects the segment size information. You can check the size by selecting the database or tablespace in the Statistics/Report > Tablespace size menu.
+
+- **segments_exclude_sys** <span class='type'>Int</span>
+
+    Default `1`
+
+    The sizes are collected except for accounts corresponding to sys.
+
+- **segments_hour** <span class='type'>Int</span>
+
+    Default `5`
+
+    It sets the time to collect segment sizes. The default value is `5` and collection starts at 5 AM.
+
+- **segments_max_count** <span class='type'>Int</span>
+
+    Default `50`
+
+    Only 50 large segments are collected and stored for each tablespace.
+
+- **segments_min_size** <span class='type'>Int</span>
+
+    Default `10`
+
+The minimum unit for collecting segment sizes is 10 MB by default. Segments less than the set value are not collected.
+
+- **segments_sys** <span class='type'>String</span>
+
+    Default:
+
+  <details>
+
+  ```
+    <summary>Viewing 18 accounts</summary>
+
+    `APPQOSSYS`, `AUDSYS`, `CTXSYS`, `DBSFWUSER`, `DBSNMP`, `DVSYS`,  
+    `GSMADMIN_INTERNAL`, `LBACSYS`, `MDSYS`, `OJVMSYS`, `OLAPSYS`,    
+    `ORDDATA`, `ORDSYS`, `OUTLN`, `SYS`, `SYSTEM`, `WMSYS`, `XDB`
+  ```
+
+  </details>
+
+    It is the list of accounts corresponding to sys. To add to the above accounts, you can add with `segments_sys+='xxx'`.
+
+- **stat** <span class='type'>String</span>
+
+    Default:
+
+  <details>
+
+  ```
+    <summary>Viewing 20 metrics</summary>
+
+    `CPU used by this session`, `data blocks consistent reads - undo records applied`, `db block changes`,  
+    `db time`, `enqueue waits`, `execute count`, `logons current`, `opened cursors current`,  
+    `parse count (hard)`, `parse count (total)`, `physical reads`, `physical writes`, `redo entries`,  
+    `rollback changes - undo records applied`, `session logical reads`, `sorts (disk)`, `sorts (memory)`,  
+    `transaction tables consistent reads - undo records applied`, `user commits`, `user rollbacks`
+  ```
+
+  </details>
+
+    It enables collecting statistics-related metrics. Write the name of the metric to collect by referencing the `NAME` column such as `v$sysstat`, and `v$statname`. You can collect additional metrics along with the basic metrics by writing them in a way like `stat+=`. You can enter multiple items using the comma (,) as the delimiter without spaces.
+
+- **topevent** <span class='type'>Int</span>
+
+    Default `50`
+
+    It collects changes in key event-related metrics according to the values set in descending order. The data having the `stat_top` and `event_top` categories are used. 
+
+    :::note
+
+    If no value is set for this option, it operates according to the setting for `topstat`.
+
+    :::
+
+- **topstat** <span class='type'>Int</span>
+
+    Default `50`
+
+    It collects changes in key statistics-related metrics according to the values set in descending order. The data having the `stat_top` and `event_top` categories are used.
+
+- **xos** <span class='type'>Boolean</span>
+
+    Default `true`
+
+    This option enables the XOS agent (*xos.conf*) to additionally monitor the resources of the database server.
+
+- **xview_min** <span class='type'>Int</span>
+
+    Default `100` (1 second)
+
+    The unit is centisecond (1/100 of a second). This option processes only the jobs whose elapsed time is greater than the set value.  
+
+  - `-1`: This option is disabled.  
+  - `0`: It collects all jobs.
+
+### Applying the AES 256 encryption
+
+WhaTap DMX agent encrypts the collected data and transmits the encrypted data to the server. You can change this depending on the importance of the data or setting. Basically, the XOR operation and encryption through the AES algorithm are used, and encryption and decryption are performed by dividing the plain text into 128-bit units. It can be expanded up to 256 bits depending on the setting.
+
+Add the following options to the *whatap.conf* file in the path where the WhaTap DMX agent was installed.
+
+```ini title='whatap.conf' {3} showLineNumbers
+cypher_level=256
+```
+
+Add the settings and then restart the agent.
+
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
+
+<Dbsettingagentnamedetails level={3} agentType="DMX" />

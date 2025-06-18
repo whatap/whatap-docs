@@ -1,0 +1,35 @@
+---
+id: dbx-2_53_01
+title: DBX v2.53.01
+pagination_next: release-notes/db/dbx-2_53_01
+displayed_sidebar: releaseSidebar
+---
+
+2025年05月28日
+
+### MySQL
+
+<Status priority='1'>Feature</Status> MySQL 8 以降の場合、ロック収集クエリを変更(sys.innodb_lock_waits照会)及びエージェントオプションを追加
+    [次の文書](https://docs.whatap.io/mysql/agent-dbx-settings#%EB%9D%BD-%EC%88%98%EC%A7%91-%EA%B4%80%EB%A0%A8-%EC%84%A4%EC%A0%95)のオプションを参照
+
+<Status priority='0'>Change</Status> whatap.log内の収集session情報の表記方式を変更
+
+<Status priority='0'>Fixed</Status>WhaTapの収集クエリにWhaTapコメントを追加
+
+### PostgreSQL
+
+<Status priority='0'>Change</Status> SQL統計及びxviewでidle in transation stateのセッションを除く
+
+<Status priority='0'>Change</Status> xviewカテゴリにstateフィールドを追加
+
+<Status priority='1'>New</Status> PGSQL統計の収集時にorder byオプションを追加
+    * default : statements_order_by=total_time
+    * カラム追加時 : ex) statements_order_by=total_time,calls
+
+### SAP ASE
+
+<Status priority='0'>Fixed</Status> db_sap_ase_suspect_dbカテゴリにoname tagを追加
+
+### Oracle
+
+<Status priority='0'>Change</Status>パラメータ情報をtagcount packに転送(Oracle V2)

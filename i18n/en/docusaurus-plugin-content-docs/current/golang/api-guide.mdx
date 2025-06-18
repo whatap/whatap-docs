@@ -38,9 +38,9 @@ func main(){
 func Init(m map[string]string)
 ```
 
-This can be set in the initial stage of the application by declaring it in the form of `map[string]string`. Otherwise, more settings can be added in _whatap.conf_. The performance information can be sent to the WhaTap collection server only when TCP connection to the agent is established normally. It performs TCP communication via **127.0.0.1:6600** using the basic connection information. 
+This can be set in the initial stage of the application by declaring it in the form of `map[string]string`. Otherwise, more settings can be added in *whatap.conf*. The performance information can be sent to the WhaTap collection server only when TCP connection to the agent is established normally. It performs TCP communication via **127.0.0.1:6600** using the basic connection information. 
 
-To change the connection information, pass the settings to the `Init` function, or set them in the _whatap.conf_ file and then restart the application.
+To change the connection information, pass the settings to the `Init` function, or set them in the *whatap.conf* file and then restart the application.
 
 ```go title="Go"
 m := make(map[string]string)
@@ -386,7 +386,7 @@ It supports TraceContext for open source tracing. (traceparent header tracing)
 
 ### Configuring the agent
 
-To enable multi-transaction tracing, set the following options in the agent configuration file (_whatap.conf_).
+To enable multi-transaction tracing, set the following options in the agent configuration file (*whatap.conf*).
 
 ```ini title="whatap.conf"
 # Activation option, Default: false
@@ -553,7 +553,7 @@ func Trace(ctx context.Context, name string, elapsed int, err error) error
 
 ### Configuring the agent
 
-Set agent options in the _whatap.conf_ file before running the application.
+Set agent options in the *whatap.conf* file before running the application.
 
 ```ini title="whatap.conf"
 # Enable all log collection

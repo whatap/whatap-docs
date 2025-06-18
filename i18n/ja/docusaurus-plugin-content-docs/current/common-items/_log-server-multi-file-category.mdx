@@ -1,8 +1,4 @@
-{/* ### 다중 파일 지정 및 파일 분리  */}
-
 #### 複数のファイル指定{#multiple-file-specification}
-
-{/* 여러 개의 로그 파일을 동일한 카테고리로 지정하려면, 각 파일에 대해 `[[inputs.logsink.file]]` 항목을 추가하고 `path`에 해당 파일 경로를 설정해야 합니다. 次の例は`serverlog`カテゴリであり、/root/test2パス上のファイルを、ログファイルとして指定した設定です。  */}
 
 複数のログファイルを同じカテゴリに設定するには、各ログファイルのパスを`[[inputs.logsink.file]]`項目に追加して、`path`設定により、ファイルパスを指定します。 また、`category`、`stats_enabled`、`stats_category`などのオプションを使用して、ログ発生量の統計設定などの付加的な設定が可能です。 例は、*/root/test1*および*/root/test2*ファイルを同一のカテゴリ(`serverlog`)に指定した場合です。
 
@@ -31,54 +27,6 @@
 当該例の場合、<Cmdname sid="side_logTail" className="uitext" />メニューでは次のように確認できます。
 
 ![複数のファイル指定](/img/log-server-multi-file.png)
-
-{/* <Columns>
-
-<Column className="text--left width--45">
-
-```bash {7,10-17,19} showLineNumbers
-[[inputs.logsink]]
-  category = "serverlog"
-  stats_enabled = true
-  stats_category = "logsink_stats"
-  excludeNames = [ ".gz",".zip" ]
-#[[inputs.logsink.file]]
-#  path = "/some/path/%Y-%m-%d/.log"
-#  disabled = false
-#  encoding = "euc-kr"
-[[inputs.logsink.file]]
-  path = "/root/test1"
-  disabled = false
-  encoding = "utf-8"
-[[inputs.logsink.file]]
-  path = "/root/test2"
-  disabled = false
-  encoding = "utf-8"
-#[[inputs.logsink.file]]
-#  nowrap_keywords = ["Caused by:", "Test"]
-```
-
-</Column>
-
-<Column className="text--left">
-
-- カテゴリを指定します。 `category` 
-
-- ログファイル設定時、例のライン7のように`path`オプションで日付パターン(strftime.ort)を適用できます。 
-
-  ```bash
-  path = "/some/path/%Y-%m-%d/.log"
-  ```
-
-- ログファイル設定時の例のライン19のように`nowrap_keywords`オプションにより、特定のキーワードに基づいてログをマージできます。 
-
-  ```bash
-  nowrap_keywords = ["Caused by:", "Test"]
-  ```
-
-</Column>
-
-</Columns> */}
 
 #### ファイル分離{#file-separation}
 

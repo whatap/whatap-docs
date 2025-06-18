@@ -31,7 +31,7 @@ Check the access key and then select the **_Choose installation method_** tab on
 
 1. Select any of **_Stable_** and **_Preview_** versions of the WhaTap Kubernetes agent image that are recommended.
 
-2. Select a desired **installation method** out of **_Yaml_** and **_Helm_** chart. 
+2. Select a desired **installation method** out of ***yaml*** and ***helm*** chart. 
 
 3. Select an applicable **Kubernetes version**: **_1.16 or later_** or **_less than 1.16_**. 
 
@@ -90,7 +90,7 @@ For more information about **control plane monitoring** activation and individua
 <Tabs>
 <TabItem value='cr_yaml' label='Yaml' default>
 
-In the WhaTap Kubernetes agent installation _YAML_ file, add `customResource` to use in the `resources` under `rules` of the `ClusterRole` resource. 
+In the WhaTap Kubernetes agent installation *yaml* file, add `customResource` to use in the `resources` under `rules` of the `ClusterRole` resource. 
 
 ```yaml {38,39}
 apiVersion: rbac.authorization.k8s.io/v1
@@ -158,7 +158,7 @@ rules:
 
 <TabItem value='cr_helm' label='Helm Chart' default>
 
-When installing the WhTtap Kubernetes agent by using the Helm chart, add the custom resource names to be monitored in the default _values.yaml_ file. Add the custom resource name in `resources` as follows: 
+When installing the WhTtap Kubernetes agent by using the Helm chart, add the custom resource names to be monitored in the default *values.yaml* file. Add the custom resource name in `resources` as follows: 
 
 ```yaml
 collect_custom_resource: true
@@ -180,7 +180,7 @@ The <Cmdname sid="side_masterMetaInfo" className="uitext" /> menu can perform **
 
 ## Downloading the installation file
 
-Before downloading the installation file, make sure that the appropriate items for the Kubernetes environment are selected. After confirming your selection, click **_Download installation file_** to download the default configuration file (_values.yaml_) required for installation. 
+Before downloading the installation file, make sure that the appropriate items for the Kubernetes environment are selected. After confirming your selection, click **_Download installation file_** to download the default configuration file (*values.yaml*) required for installation. 
 
 <ImgLang img='k8s-install-master-node-download.png' desc='Download install file'/>
 
@@ -239,7 +239,7 @@ When installing the WhaTap Kubernetes agent, the installation instructions are p
 
 #### Yaml file-based installation
 
-If you select the **_Yaml_** file installation method in the **_Choose installation method_** tab, execute the following command to create the agent. 
+If you select the ***yaml*** file installation method in the **_Choose installation method_** tab, execute the following command to create the agent. 
 
 ```bash
 kubectl apply -f whatap_kube_agent.yaml
@@ -247,7 +247,7 @@ kubectl apply -f whatap_kube_agent.yaml
 
 :::note
 
-The **amount of resources used by the Master Agent** is somewhat **proportional** to the **number of nodes in your environment**. In other words, if there are a large number of nodes in the cluster, OOM (Out Of Memory) may occur when resources exceed the default memory limit (350 MB). The memory limit allocated to the master agent can be changed through the agent installed _YAML_ file.
+The **amount of resources used by the Master Agent** is somewhat **proportional** to the **number of nodes in your environment**. In other words, if there are a large number of nodes in the cluster, OOM (Out Of Memory) may occur when resources exceed the default memory limit (350 MB). The memory limit allocated to the master agent can be changed through the agent installed *yaml* file.
 
 :::
 
@@ -263,9 +263,9 @@ The WhaTap Kubernetes agent uses the `whatap-monitoring` namespace by default. I
 
 :::
 
-If you select the **_Helm_** chart installation method in the **_Choose installation method_** tab, see the following instructions. 
+If you select the ***helm*** chart installation method in the **_Choose installation method_** tab, see the following instructions. 
 
-1. Check the _helm_ version by using the following command. It supports the version of 3.x or later. 
+1. Check the *helm* version by using the following command. It supports the version of 3.x or later. 
 
    ```bash
    helm Version
@@ -308,13 +308,13 @@ If you select the **_Helm_** chart installation method in the **_Choose installa
 
    :::note 
 
-   If you have installed the WhaTap Kubernetes agent by using the existing _yaml_ file, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible using the _helm_ chart. 
+   If you have installed the WhaTap Kubernetes agent by using the existing *yaml* file, Clean Install is required. After deleting the existing Kubernetes agent, installation is possible using the *helm* chart. 
 
    :::
 
-#### Major configuration items for _values.yaml_
+#### Major configuration items for *values.yaml*
 
-To modify the WhaTap Kubernetes agent settings, modify the default configuration file (_ values.yaml_). The major settings in the _values.yaml_ file are as follows: 
+To modify the WhaTap Kubernetes agent settings, modify the default configuration file (_ values.yaml_). The major settings in the *values.yaml* file are as follows: 
 
 <div class='k8s-values-yaml-table'>
 

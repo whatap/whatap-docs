@@ -112,11 +112,11 @@ helm install whatap-kube-agent whatap/kube --create-namespace --namespace <names
 | Unrecognized VM option 'UseCGroupMemoryLimitForHeap'<br/>Error: Could not create the Java Virtual Machine.<br/>Error: A fatal exception has occurred. Program will exit. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-**2022年8月24日以前**にダウンロードしたインストール*yaml*を通じてWhaTapのKubernetesモニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生し、起動に失敗する場合があります。 
+**2022年8月24日以前**にダウンロードしたインストール*YAML*を通じてWhaTapのKubernetesモニタリングをインストールした場合、ノードエージェント(whatap-node-agent) 起動時にエラーが発生し、起動に失敗する場合があります。 
 
-原因は以下のとおりです。 2022年8月24日以前にダウンロードしたインストール*yaml*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
+原因は以下のとおりです。 2022年8月24日以前にダウンロードしたインストール*YAML*ファイル内`UseCGroupMemoryLimitForHeap` JVMオプションを使用したノードエージェントの実行スクリプトが含まれています。 
 
-WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) バージョンからエージェント内部で使用するJDKがアップグレードされおり、アップグレードされたJDKバージョンは、これ以上`UseCGroupMemoryLimitForHeap`オプションを提供していません。 **2022年8月24日以前**にダウンロードした*yaml*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
+WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) バージョンからエージェント内部で使用するJDKがアップグレードされおり、アップグレードされたJDKバージョンは、これ以上`UseCGroupMemoryLimitForHeap`オプションを提供していません。 **2022年8月24日以前**にダウンロードした*YAML*ファイルにWhaTap Kubernetesモニタリングをインストールした状態でノードエージェント1.2.0以降のバージョンを起動する場合、`Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`メッセージが発生し、起動に失敗します。
 
 #### 解決方法
 
@@ -124,7 +124,7 @@ WhaTapノードエージェント**1.2.0以降**(2022年11月21日リリース) 
 
 1. <Cmdname sid="side_management" className="uitext" />  > <Cmdname sid="agentInstall" className="uitext" />画面で最新の*YAML*ファイルをダウンロードします。
 
-2. ユーザーKubernetes環境でダウンロードした*yaml*ファイルを使用してエージェントをインストールしてください。 
+2. ユーザーKubernetes環境でダウンロードした*YAML*ファイルを使用してエージェントをインストールしてください。 
 
 3. ユーザーKubernetes環境でインストール中にエラーの出力有無を確認してください。
 
@@ -182,7 +182,7 @@ Kubernetes環境で発生するコンテナIDの識別問題を解決するた�
 
 ##### 追加環境変数の設定　
 
-エージェントバージョンのアップデート以降も、<Cmdname sid="side_containerMap" className="uitext" />にJavaアプリケーション情報が表示されない場合、ユーザー環境変数を追加して問題を解決できます。 この設定は、Java APMがインストールされたコンテナマニフェスト(*yaml*)の環境変数に、当該コンテナ内のJavaエージェントの絶対パスを表す`WHATAP_JAVA_AGENT_PATH`オプションを追加します。 
+エージェントバージョンのアップデート以降も、<Cmdname sid="side_containerMap" className="uitext" />にJavaアプリケーション情報が表示されない場合、ユーザー環境変数を追加して問題を解決できます。 この設定は、Java APMがインストールされたコンテナマニフェスト(*YAML*)の環境変数に、当該コンテナ内のJavaエージェントの絶対パスを表す`WHATAP_JAVA_AGENT_PATH`オプションを追加します。 
 
 次はJava APMがインストールされたコンテナ環境変数に当該オプションを追加した例です。 
 

@@ -37,17 +37,17 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
 <Tabs>
 <TabItem value="du" label="Debian/Ubuntu" default>
 
-  ```bash
-  sudo apt-get update
-  sudo apt-get install whatap-infra
-  ```
+```bash
+sudo apt-get update
+sudo apt-get install whatap-infra
+```
 
 </TabItem>
 <TabItem value="arfocrs" label="Amazon Linux/RHEL/Fedora/Oracle Linux/CentOS/Rocky Linux/SUSE">
 
-  ```bash
-  sudo yum update whatap-infra
-  ```
+```bash
+sudo yum update whatap-infra
+```
 
 </TabItem>
 </Tabs>
@@ -59,14 +59,14 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
 
   If an update is needed, check the following command.
 
-  ```bash
-  stopsrc -s whatap-infra
-  cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
-  rpm -e whatap-infra
-  rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  startsrc -s whatap-infra
-  ```
+```bash
+stopsrc -s whatap-infra
+cp /usr/whatap/infra/conf/whatap.conf /tmp/whatap.conf
+rpm -e whatap-infra
+rpm -Uvh http://repo.whatap.io/aix/noarch/whatap-infra-latest.noarch.rpm
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+startsrc -s whatap-infra
+```
 
 </TabItem>
 
@@ -74,14 +74,14 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
 
   If an update is needed, check the following command.
 
-  ```bash
-  cp /usr/whatap/infra/conf/whatap.conf /tmp
-  /etc/init.d/whatap-infra stop
-  gunzip -c whatap-infra.latest.SPARC.pkg.tar.gz | tar xvf -
-  yes n | ./whatap-infra/install.sh
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  /etc/init.d/whatap-infra start
-  ```
+```bash
+cp /usr/whatap/infra/conf/whatap.conf /tmp
+/etc/init.d/whatap-infra stop
+gunzip -c whatap-infra.latest.SPARC.pkg.tar.gz | tar xvf -
+yes n | ./whatap-infra/install.sh
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+/etc/init.d/whatap-infra start
+```
 
 </TabItem>
 
@@ -89,7 +89,7 @@ The <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu is support
 
 - **Windows**: 2.7.2 or later
 
-  Download the installation file through the following [link](https://repo.whatap.io/windows/whatap_infra.exe) and then run it. After the agent update, the service is restarted. 
+  Download the installation file from the [link](https://repo.whatap.io/windows/whatap_infra.exe) and then run it. After the agent update, the service is restarted. 
 
 ### Activation option {#server-inventory-map-activate}
 
@@ -106,65 +106,81 @@ The following settings are required to enable the <Cmdname sid="side_serverInven
    - **Linux**
 
 <Tabs>
-<TabItem value="linux-opt" label="Add option command" default>
+<TabItem value="linux-opt" label="옵션 추가 명령어" default>
 
-     ```bash
-     grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | sudo tee -a /usr/whatap/infra/conf/whatap.conf
-     ```
+````
+  ```bash
+  grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | sudo tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
+````
 
 </TabItem>
-<TabItem value="linux-restart" label="Restart agent">
+<TabItem value="linux-restart" label="Restarting the agent">
 
-     ```bash
-     sudo service whatap-infra restart
-     ```
+````
+  ```bash
+  sudo service whatap-infra restart
+  ```
+````
 
 </TabItem>
 </Tabs>
 
-   - **Unix**
+```
+* **Unix**
+```
 
 <Tabs>
-<TabItem value="unix-opt" label="Add option command" default>
+<TabItem value="unix-opt" label="Command to add options" default>
 
-     ```bash
-     grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
-     ```
+````
+  ```bash
+  grep -q '^categoryv2.enabled' /usr/whatap/infra/conf/whatap.conf || echo 'categoryv2.enabled=true' | tee -a /usr/whatap/infra/conf/whatap.conf
+  ```
+````
 
 </TabItem>
-<TabItem value="unix-restart" label="Restart agent">
+<TabItem value="unix-restart" label="에이전트 재시작">
 
-     - **AIX** 
+````
+  * **AIX** 
 
-       ```bash title='AIX'
-       stopsrc -s whatap-infra
-       startsrc -s whatap-infra
-       ```
+    ```bash title='AIX'
+    stopsrc -s whatap-infra
+    startsrc -s whatap-infra
+    ```
 
-     - **Solaris**
+  * **Solaris**
 
-       ```bash title='Solaris'
-       /etc/init.d/whatap-infra restart
-       ```
+    ```bash title='Solaris'
+    /etc/init.d/whatap-infra restart
+    ```
+````
 
 </TabItem>
 </Tabs>
 
-   - **Windows**
+```
+* **Windows**
+```
 
 <Tabs>
 <TabItem value="windows-opt" label="Add option command" default>
 
-     ```bash
-     if (-not (Select-String -Path "C:\Program Files\WhatapInfra\whatap.conf" -Pattern "^categoryv2.enabled" -Quiet)) { Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "categoryv2.enabled=true" }
-     ```
+````
+  ```bash
+  if (-not (Select-String -Path "C:\Program Files\WhatapInfra\whatap.conf" -Pattern "^categoryv2.enabled" -Quiet)) { Add-Content -Path "C:\Program Files\WhatapInfra\whatap.conf" -Value "categoryv2.enabled=true" }
+  ```
+````
 
 </TabItem>
 <TabItem value="windows-restart" label="Restart agent">
 
-     ```bash
-     Restart-Service -Name "Whatap Infra"
-     ```
+````
+  ```bash
+  Restart-Service -Name "Whatap Infra"
+  ```
+````
 
 </TabItem>
 </Tabs>

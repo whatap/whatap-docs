@@ -40,18 +40,18 @@ tasks.named("bootBuildImage") {
 
 - `BP_WHATAP_ENABLED`
 
-  WhaTapエージェントの有効の有無を設定します。 値が`false`の場合、インストールは続行されますが、モニタリングが停止した状態で開始されます。 後で、[WhaTapモニタリングサービス](https://service.whatap.io)の**_管理_** > **_エージェント設定_**メニューから`true`に変更できます。
+  WhaTapエージェントの有効の有無を設定します。 値が`false`の場合、インストールは続行されますが、モニタリングが停止した状態で開始されます。 後で、[WhaTapモニタリングサービス](https://service.whatap.io)の***管理*** > ***エージェント設定***メニューから`true`に変更できます。
 
 - `BPE_APPEND_JAVA_TOOL_OPTIONS`
 
-  Java17バージョン以降を使用する場合は、必要に応じてjvmオプションを追加してください。
+  Java17バージョン以降を使用する場合は、必要に応じてjvmオプションを追加します。
 
   ```java
   environment["BPE_DELIM_JAVA_TOOL_OPTIONS"] = " "
   environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = "--add-opens=java.base/java.lang=ALL-UNNAMED"
   ```
 
-  delimeter環境変数を使用しない場合は、前後に空白を追加してください。
+  delimeter環境変数を使用しない場合は、前後に空白を追加します。
 
   ```java
   environment["BPE_APPEND_JAVA_TOOL_OPTIONS"] = " --add-opens=java.base/java.lang=ALL-UNNAMED "

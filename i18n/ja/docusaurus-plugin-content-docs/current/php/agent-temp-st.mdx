@@ -27,7 +27,7 @@ PHPモニタリングサービスを一時停止するには、PHP拡張モジ�
    ;extension=whatap.so
    ```
 
-   手動設定で_php.ini_ファイルに直接設定する場合も同様に` extension=` 構文をコメントアウトしてください。 
+   手動設定で*php.ini*ファイルに直接設定する場合も同様に` extension=` 構文をコメントアウトしてください。 
 
    :::note
 
@@ -40,23 +40,29 @@ PHPモニタリングサービスを一時停止するには、PHP拡張モジ�
 <Tabs>
 <TabItem value="rdct" label="Red Hat/CentOS" default>
 
-   ```bash
-   $ sudo service whatap-php stop
-   ```
+````
+```bash
+$ sudo service whatap-php stop
+```
+````
 
 </TabItem>
 <TabItem value="dbub" label="Debian/Ubuntu">
 
-   ```bash
-   $ sudo service whatap-php stop
-   ```
+````
+```bash
+$ sudo service whatap-php stop
+```
+````
 
 </TabItem>
 <TabItem value="frbsd" label="FreeBSD">
 
-   ```bash
-   $ service whatap_php stop
-   ```
+````
+```bash
+$ service whatap_php stop
+```
+````
 
 </TabItem>
 </Tabs>

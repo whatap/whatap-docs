@@ -17,7 +17,7 @@ While running databases, their processes may terminate unexpectedly. When any pr
 
 ### XOS agent configuration
 
-Before adding a metrics event, add the following options in the XOS agent configuration file (_xos.conf_). The following example shows how to set the **top** and **lock.sh** processes as monitoring targets. Multiple processes can be registered using comma (,) as the delimiter.
+Before adding a metrics event, add the following options in the XOS agent configuration file (*xos.conf*). The following example shows how to set the **top** and **lock.sh** processes as monitoring targets. Multiple processes can be registered using comma (,) as the delimiter.
 
 ```ini title='xos.conf'
 process=top,lock.sh
@@ -25,7 +25,7 @@ process=top,lock.sh
 
 ### Adding the metrics event
 
-This example shows how to set to send an alert when any process monitoring target set in the XOS agent (_xos.conf_) is terminated.
+This example shows how to set to send an alert when any process monitoring target set in the XOS agent (*xos.conf*) is terminated.
 
 1. Under the user database project, go to **_Alert_** > **_Event setting_**.
 

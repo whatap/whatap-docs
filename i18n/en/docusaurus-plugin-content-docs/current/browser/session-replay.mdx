@@ -142,7 +142,7 @@ To exclude a specific text area from collection, add `session-replay-mask-text-c
   {%- if year_from == nil or year_from == year_to -%}
     {%- assign year_string = year_from -%}
   {%- else -%}
-    {%- assign year_string = year_from | append: '&amp;nbsp;' | append: '-' | append: '&amp;nbsp;' | append: year_to -%}
+    {%- assign year_string = year_from | append: '&nbsp;' | append: '-' | append: '&nbsp;' | append: year_to -%}
   {%- endif -%}
 </footer>
 ```

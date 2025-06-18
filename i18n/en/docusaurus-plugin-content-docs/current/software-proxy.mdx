@@ -19,7 +19,7 @@ This allows you to control multiple servers indirectly via **WhatTap software pr
 
 ### Agent Installation
 
-If you proceed with installation according to the agent installation guide, you can download the _whatap.agent.java.tar.gz_ file. After unzipping, store the _whatap.agent.proxy-`X.Y.Z`.jar_ file to a server repository that can communicate with the WhaTap collection server. If you already have an agent installed, you can use the files in the repository.
+If you proceed with installation according to the agent installation guide, you can download the *whatap.agent.java.tar.gz* file. After unzipping, store the *whatap.agent.proxy-`X.Y.Z`.jar* file to a server repository that can communicate with the WhaTap collection server. If you already have an agent installed, you can use the files in the repository.
 
 :::tip
 
@@ -37,7 +37,7 @@ In this document, the bandwidth of the server where the agent has been located i
 
 #### Public Subnet
 
-After copying the _whatap.agent.proxy-`X.Y.Z`.jar_ file to an appropriate path, create a _proxy.conf_ file to set the WhaTap collection server IP and port. The path where the _whatap.agent.proxy-`X.Y.Z`.jar_ file has been located is `$PROXY_HOME`.
+After copying the *whatap.agent.proxy-`X.Y.Z`.jar* file to an appropriate path, create a *proxy.conf* file to set the WhaTap collection server IP and port. The path where the *whatap.agent.proxy-`X.Y.Z`.jar* file has been located is `$PROXY_HOME`.
 
 ```ini title='$PROXY_HOME/proxy.conf'
 whatap.server.host=52.78.209.94/52.78.224.235 ## Address of the WhaTap application monitoring collection server
@@ -60,7 +60,7 @@ whatap.server.host={Public Subnet proxy server IP #1}/{Public Subnet proxy serve
 
 ### Running the agent
 
-Run the software proxy through the `java` command or by creating a _proxy.sh_ (_proxy.bat_) file.
+Run the software proxy through the `java` command or by creating a *proxy.sh* (*proxy.bat*) file.
 
 ```bash title='java command'
 java -jar whatap.agent.proxy-X.Y.Z.jar &
@@ -78,7 +78,7 @@ sh proxy.sh &
 
 :::note
 
-When creating and running the _proxy.sh_ (_proxy.bat_) file, grant execution role with the `$ chmod +x proxy.sh` command.
+When creating and running the *proxy.sh* (*proxy.bat*) file, grant execution role with the `$ chmod +x proxy.sh` command.
 
 :::
 
@@ -99,7 +99,7 @@ whatap.server.host=192.168.203.60 ## Proxy server IP
 
 ### Public Subnet
 
-See the following to configure the _haproxy.cfg_ file.
+See the following to configure the *haproxy.cfg* file.
 
 ```ini title='/etc/haproxy/haproxy.cfg'
 frontend proxy_in
@@ -134,7 +134,7 @@ whatap.server.host=192.168.203.60 ## Proxy server IP
 
 ### Public Subnet
 
-See the following to configure the _nginx.conf_ file.
+See the following to configure the *nginx.conf* file.
 
 ```apacheconf title='/etc/nginx/nginx.conf'
 stream {

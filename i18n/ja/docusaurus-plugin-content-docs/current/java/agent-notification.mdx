@@ -150,26 +150,6 @@ Javaエージェントを通じてアプリケーションサーバーで発生�
 
   DB Connectionが重複して割り当てられる場合、Stackを確保するかどうかを設定します。
 
-- **exception_event_enabled** <span class='type'>Boolean</span>
-
-  既定値`false`
-
-  Exceptionが発生した場合、イベント通知の発行可否を設定します。
-
-- **exception_event_interval** <span class='type'>MiliSeconds</span>
-
-  既定値`60000`
-
-  Exceptionが発生した場合、イベント通知の発行間隔を設定します。
-
-- **exception_event_set** <span class='type'>String</span>
-
-  対象Exceptionを設定します。複数の場合は、コンマ(,)を区切り文字として使用します。
-
-- **exception_event_action** <span class='type'>String</span>
-
-  イベントが発生した場合、実行する動的ローディングコードを設定します。
-
   :::note
 
   _`$WHATAP_HOME`/plugin/ActionScript.x_ファイルに記述されたJavaコードに渡すID(`$id`で渡す)

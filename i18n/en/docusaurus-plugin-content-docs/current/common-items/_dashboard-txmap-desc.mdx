@@ -4,29 +4,11 @@ The <Cmdname sid="transaction_map" className="uitext" /> chart displays the resp
 
 <ImgLang img='dashboard-transaction-map.png' desc='Transaction map' />
 
-:::info
-
-The items changed through [Service 2.2.0 release](../release-notes/service/service-2_2_x) are as follows:
-
-- You can view the data up to 5 minutes in real time and up to 10 minutes for the past. (Before: limited up to 5 minutes in real time)
-
-- When searching for the previous data, the data received from the server can be filtered.
-
-- The number of data that can be searched through the <Cmdname sid="TTL06209" className="uitext" /> window has been changed from 100 to 1000.
-
-- The counts for transactions and errors are displayed in real time.
-
-- The keyboard events have been added to the <span class="uitext">TOP 30</span> list and chart area. By selecting the keyboard direction button, you can move to the desired position.
-
-For more information about the <Cmdname sid="transaction_map" className="uitext" /> menu reorganization, see the <Link to="https://www.whatap.io/bbs/board.php?bo_table=blog&wr_id=215">following link</Link>.
-
-:::
-
 :::tip 
 
 **How is it different from the hitmap analysis?**
 
-A hitmap chart displays the sum of transactions in a specific section. Differences are expressed in color where the number of occurrences is high. In case of the hitmap, the sums for each section are stored separately. Accordingly, you can check the trend over a relatively long time. However, because transactions are aggregated and displayed, it is difficult to know individual transactions.
+The hitmap uses the aggregated data to display the overall trend over a long-term period. On the other hand, the transaction map uses individual transactions to check the transaction distribution within a short-term period with no time constraints. It also differs in that it allows users to apply various filters to select only the desired transactions and observe their trends.
 
 - To analyze the distribution of the long-term, high-volume transactions, use the hitmap analysis (<Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="hitmap" className="uitext" />).
 
@@ -40,6 +22,6 @@ A hitmap chart displays the sum of transactions in a specific section. Differenc
 
 - For more information about the analysis method of the <Cmdname sid="hitmap_transaction" className="uitext" /> chart, see <Link to="../best-practice-guides/about-apm-hitmap-class">the following</Link>.
 
-- If the user's PC time has been set to be older than the server time, the data may not appear on the chart if the server time and the user's PC time differ by more than 5 minutes.
+- If the user's PC time is set to earlier than the server time, or the difference between two times is 5 minutes or more, the data may not be displayed in the chart.
 
 :::

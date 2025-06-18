@@ -10,7 +10,7 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Telegrafエージェントを管理するために、 *whatap.conf* ファイル使用して設定できる追加オプションについて説明します。
+Telegrafエージェントを管理するために、 *whatap.con* ファイル使用して設定できる追加オプションについて説明します。
 
 ## アップデート
 
@@ -109,23 +109,29 @@ $ service whatap_telegraf stop
 <Tabs>
 <TabItem value="rc" label="Red Hat/CentOS">
 
-   ```bash title='SH'
-   $ sudo yum remove whatap-telegraf
-   ```
+````
+```bash title='SH'
+$ sudo yum remove whatap-telegraf
+```
+````
 
 </TabItem>
 <TabItem value="du" label="Debian/Ubuntu">
 
-   ```bash title='SH'
-   $ sudo apt-get purge whatap-telegraf
-   ```
+````
+```bash title='SH'
+$ sudo apt-get purge whatap-telegraf
+```
+````
 
 </TabItem>
 <TabItem value="fb" label="FreeBSD">
 
-   ```bash title='SH'
-   $ pkg delete whatap-telegraf
-   ```
+````
+```bash title='SH'
+$ pkg delete whatap-telegraf
+```
+````
 
 </TabItem>
 </Tabs>

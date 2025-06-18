@@ -1,0 +1,73 @@
+---
+id: agent-xos-settings
+title: XOSエージェント設定
+description: データベースプロセスのモニタリング設定について説明します。
+keywords:
+  - Oracle Pro
+  - データベース
+  - エージェント
+  - XOS
+---
+
+*xos.conf*ファイルに次のオプションを設定すると、データベースサーバーのリソースを追加でモニタリングできます。 このオプションを利用するには、*whatap.conf*ファイルで`xos`オプションを`true`に設定してください。
+
+- **interconnect_nic** <span class='type'>String</span> <code class="my">RAC</code>
+
+    設定されたオプション値に対応するネットワーク カード情報を収集します。 このオプションを設定しないと、interconnect関連の指標を収集しません。
+
+  ```ini title='xos.conf'
+  # example
+  interconnect_nic=enp0s3
+  ```
+
+    `netstat -i`コマンドで確認されたネットワークインターフェースのうち**Real Application Cluster**(**RAC**)のinterconnectに使用されているネットワークインターフェイスを入力します。 設定された値は、そのネットワークカードの性能と活動をモニタリングするために使用されます。
+
+- **cpu_limit** <span class='type'>Int</span>
+
+    既定値`0`
+
+    limitの設定値より大きい値を持つプロセス情報を収集します。 1/100%単位で1.23%の場合、`123`に設定します。
+
+- **mem_limit** <span class='type'>Int</span>
+
+    既定値`10240`
+
+    limitの設定値より大きい値を持つプロセス情報を収集します。 K bytes単位で10240は10M bytesです。
+
+- **disk_usage_interval** <span class='type'>Second</span>
+
+    既定値 `60`
+
+    インスタンス別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。 値が`0`の場合、ディスク使用率は収集しません。
+
+- **process** <span class='type'>String</span>
+
+    プロセスの実行状態をモニタリングできます。 オプション値でプロセス名を入力します。 コンマ（,）を区切り文字として複数設定することができます。
+
+  ```ini title='xos.conf'
+  process={process_name}
+  ```
+
+    例えば、topとlock.shプロセスをモニタリング対象に設定するには、次のようにオプションを設定してください。
+
+  ```ini title='xos.conf'
+  process=top,lock.sh
+  ```
+
+    :::note
+
+    `process`オプションを使用して、データベースの実行中のプロセスが終了される場合にアラート通知を送信できます。 詳細については、[次の文書](../best-practice-guides/set-db-metric-warning-notice)を参照にしてください。
+
+    :::
+
+- **iplist_interval** <span class='type'>Second</span>
+
+    データベースサーバーのIP一覧を収集できます。 秒単位(最低3秒)で時間間隔(interval)を設定すると収集できます。
+
+- **file** <span class='type'>String</span>
+
+  <Cmdname sid="side_log" className="uitext" />メニュー(<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logSetting" className="uitext" />)を使用するには、`file`オプションにモニタリングするログファイル名のフルパスを入力します。
+
+  ```ini title='xos.conf'
+  file=/opt/oracle/log
+  ```

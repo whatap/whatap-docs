@@ -52,9 +52,9 @@ toc_max_heading_level: 2
 
 **活性化の順序**
 
-1. whatap service accountのRBACに`secrets`に対する`GET`権限を追加してください。
+1. whatap service accountのRBACに`secrets`に対する`GET`権限を追加します。
 
-2. whatap service accountをもとに`secrets`を作成してください。
+2. whatap service accountをもとに`secrets`を作成します。
 
 3. `whatap-master-agent` deploymentに`kube-scheduler`モニタリングの活性化オプションを適用してくだ活性化
 
@@ -62,7 +62,7 @@ toc_max_heading_level: 2
 
 1. **権限設定** 
 
-   `whatap-monitoring`のネームスペース内でwhatap ClusterRoleの`rules`にアクセス可能なリソースに`secrets`リソースを追加してください。 次の内容を*yaml*ファイルに作成した後、`kubectl apply -f <yaml파일명>.yaml`を実行して適用してください。 
+   `whatap-monitoring`のネームスペース内でwhatap ClusterRoleの`rules`にアクセス可能なリソースに`secrets`リソースを追加します。 次の内容を*yaml*ファイルに作成した後、`kubectl apply -f <yamlファイル名>.yaml`を実行して適用します。 
 
    ```yaml title='ClusterRole.yaml' {25}
    apiVersion: "rbac.authorization.k8s.io/v1"
@@ -127,7 +127,7 @@ toc_max_heading_level: 2
 
 2. **Secret生成**
 
-   次の内容を*yaml*ファイルに作成した後、`kubectl apply -f yamlファイル名.yaml`を実行して適用してください。 
+   次の内容を*yaml*ファイルに作成した後、`kubectl apply -f yamlファイル名.yaml`を実行して適用します。 
 
    ```yaml title='secrets.yaml'
    apiVersion: v1
@@ -142,11 +142,11 @@ toc_max_heading_level: 2
 
 3. **Deployment修正**
 
-   `whatap-master-agent` deploymentの内容を修正した後、`kubectl apply -f <yaml파일명>.yaml`のコマンドを使って適用してください。 
+   `whatap-master-agent` deploymentの内容を修正した後、`kubectl apply -f <yaml파일명>.yaml`のコマンドを使って適用します。 
 
    - **環境変数の追加**
 
-     `containers`項目下位の`whatap-master-agent`コンテナの`env`セクションに次の内容を追加してください。
+     `containers`項目下位の`whatap-master-agent`コンテナの`env`セクションに次の内容を追加します。
 
      ```yaml
      env:
@@ -156,7 +156,7 @@ toc_max_heading_level: 2
 
    - **コマンド因子の追加** 
 
-     `containers`項目下位の`whatap-control-plane-helper`コンテナの`args`セクションに次の内容を追加してください。 
+     `containers`項目下位の`whatap-control-plane-helper`コンテナの`args`セクションに次の内容を追加します。 
 
      ```yaml
      - args:

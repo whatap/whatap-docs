@@ -19,9 +19,9 @@ import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
 
 ## モニタリング手順
 
-1. Oracle Cloud認証情報を入力してください。
-2. Oracle Cloud Monitoringネームスペースおよび収集サイクルを選択してください。
-3. リージョン、メトリクス、スタットなどを選択してください。
+1. Oracle Cloud認証情報を入力します。
+2. Oracle Cloud Monitoringネームスペースおよび収集サイクルを選択します。
+3. リージョン、メトリクス、スタットなどを選択します。
 
 :::note
 
@@ -37,33 +37,33 @@ import Createprojectcloud from "../getting-started/_create-project-cloud.mdx";
 
    :::note
 
-   その後、**_インストール手順_**画面から**_RSA Public Key生成_**ボタンを選択すると、生成されたKEYをいつでも確認することができます。
+   その後、***インストール手順***画面から***RSA Public Key生成***ボタンを選択すると、生成されたKEYをいつでも確認することができます。
 
    :::
 
 2. Oracle CloudコンソールのIdentity & Securityメニューに移動してください。 
 
-3. Identity & Securityメニューの下のGroupsを選択してモニタリングに使用する**Group**を新規作成または選択してください。
+3. Identity & Securityメニューの下のGroupsを選択してモニタリングに使用する**Group**を新規作成または選択します。
 
 4. Identity & Securityメニューの下のPoliciesを選択して、モニタリング用の**Policy**を生成してください。
 
-   - Create Policyを選択して、名前、DescritionおよびCompartmentを入力してください。
-   - Policy BuilderでShow Manual Editorを選択して、以下の権限を入力した後に、Createを選択してください。
+   - Create Policyを選択して、名前、DescritionおよびCompartmentを入力します。
+   - Policy BuilderでShow Manual Editorを選択して、以下の権限を入力した後に、Createを選択します。
      > - Allow group `{グループ}` to read metrics in compartment `{コンパートメント}`
      > - Allow group `{グループ}` to inspect metrics in compartment `{コンパートメント}`
 
 5. 右上のIdentityメニューでMy profileを選択します。 
 
-   - 左下のAPI Keysを選択してください。
-   - Add API Keyボタンを選択してください。
-   - ラジオボタンのPaste Public Keyを選択し、2段階認証で受け取った**RSA Public Key**を入力してください。
+   - 左下のAPI Keysを選択します。
+   - Add API Keyボタンを選択します。
+   - ラジオボタンのPaste Public Keyを選択し、2段階認証で受け取った**RSA Public Key**を入力します。
    - 追加完了時、**User**、**Tenancy**情報を画面で確認することができます。この情報をメモ帳にコピーしてください。
 
 6. Identity & Securityメニューの下のCompartmentsを選択して、モニタリングするCompartmentの**OCID**を確認し、メモ帳にコピーしてください。
 
-7. WhaTap**_管理_** > **_エージェントのインストール_**画面に戻り、5で確認した**_Tenancy_**と**_User_**及び6で確認した**_CompartmentID_**を入力してください。
+7. WhaTap***管理*** > ***エージェントのインストール***画面に戻り、5で確認した***Tenancy***と***User***及び6で確認した***CompartmentID***を入力します。
 
-8. **_確認_**ボタンを選択してください。
+8. ***確認***ボタンを選択します。
 
 ### ネームスペースおよび収集サイクルの選択
 
@@ -140,7 +140,7 @@ import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
 
 - ![指示線a](/img/char-a.svg) 活性化トグル![アイコン](/img/ic-toggle-off.svg)がOFFの場合、データ収集が中止されます。
 
-- ![指示線b](/img/char-b.svg) **_ロール変更_**ボタンをクリックし、**_エージェント設定_**画面から![指示線c](/img/char-c.svg) **_サービス初期化_**を選択すると、すべてのメトリクス収集サービスが無効化されます。
+- ![指示線b](/img/char-b.svg) ***ロール変更***ボタンをクリックし、***エージェント設定***画面から![指示線c](/img/char-c.svg) ***サービス初期化***を選択すると、すべてのメトリクス収集サービスが無効化されます。
 
 - 完全なコスト発生を防ぐためには、以下を取り除く必要があります。 
 

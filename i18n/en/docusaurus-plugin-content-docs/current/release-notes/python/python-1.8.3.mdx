@@ -1,0 +1,27 @@
+---
+id: python-1_8_3
+title: Python Agent v1.8.3
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_2
+displayed_sidebar: releaseSidebar
+---
+
+May 19, 2025
+
+- <Status priority='1'>New</Status> Added the `Odoo` framework (v16,v17) tracing feature.
+
+- <Status priority='0'>Fixed</Status> Fixed the `SQLAlchemy` related errors.
+
+  - Fixed the issue where query messages are duplicated due to conflicts with the DB driver while being traced.
+
+  - Fixed the issue where parameters are not bound in query statements.
+
+  - Fixed the issue where an error occurs when the `user` value is not entered when connecting to the DB.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where exceptional objects other than `Flask` are not handled properly.
+
+:::note
+
+Agent download: [whatap-python v1.8.3](https://pypi.org/project/whatap-python/1.8.3/)
+
+:::

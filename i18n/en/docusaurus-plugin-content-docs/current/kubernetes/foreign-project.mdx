@@ -18,17 +18,9 @@ The WhaTap Kubernetes agent 1.7.16 or later is required.
 
 :::
 
-{/* 쿠버네티스 환경에서의 애플리케이션과 데이터베이스를 프로젝트 단위로 모니터링할 수 있는 기능을 제공합니다.  */}
-
-{/* 와탭은 다양한 모니터링 서비스를 프로젝트 단위로 제공하고 있습니다. You can build an integrated monitoring scheme by linking the Kubernetes projects with external projects. This integration requires a process of creating a project, setting a license, and activating the agent integration option, which can implement an integrated monitoring environment. */}
-
 WhaTap provides various monitoring services on a project basis. The **External project integration** feature allows you to integrate external projects related to Pods in the Kubernetes projects. 
 
-{/* 외부 프로젝트 연동을 위해서는 에이전트 설정 및 사용자 정의 리소스 내 환경변수 설정이 필요합니다. Build an integrated monitoring scheme by linking the Kubernetes projects with external projects.  */}
-
 To link to an external project, you need to configure the Kubernetes agent and a Pod to link to. Build an integrated monitoring scheme by linking the Kubernetes projects with external projects. 
-
-{/* 외부 프로젝트 연동 기능은 쿠버네티스 프로젝트의 **파드(Pod)**와 관계된 외부 프로젝트를 연결하여 통합적인 모니터링 환경을 제공합니다. To enable this feature, you must perform two tasks: configuring the Kubernetes agent and configuring the Pods to link to. */}
 
 ## External project integration
 
@@ -39,8 +31,6 @@ When the external project integration feature is enabled, the project logo appea
 <ImgLang img='k8s-foreign-project-container-map.png' desc='Container map from external project examples' />
 
 </p>
-
-{/* ## 외부 프로젝트 연동 활성화  */}
 
 ## External project configuration
 
@@ -265,20 +255,6 @@ spec:
 ```
 
 ## Checking the external project to link to
-
-{/* 
-
-After configuring an external project integration, go to the <Cmdname sid="side_metricsSearch" className="uitext" /> menu. If the **container_foreign_project_mapping** category appears when you click ***Select category*** as shown below, it indicates that the integration has been made successfully. 
-
-<p align="center">
-
-<ImgLang img='k8s-foreign-project-check.png' desc='Check external project application' />
-
-</p>
-
-If the `container_foreign_project_mapping` category appears when you click ***Select category*** as shown in the example image, it indicates that the integration has been made successfully. 
-
-*/}
 
 <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_metricsSearch" className="uitext" />
 

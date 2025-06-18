@@ -1,0 +1,334 @@
+<InDoc product="mongodb,mysql,mssql,oracle">
+
+この文書は、AWS環境でWhaTapクラウドエージェントを設定するためのガイドです。 主要設定項目、フィールドの説明、権限構成、実行コマンドまで含めて、運用環境にすぐに適用できるように構成されています。
+
+</InDoc>
+
+<InDoc product="postgresql">
+この文書は、AWSとNCP環境でWhaTapクラウドエージェントを設定するためのガイドです。 主要設定項目、フィールドの説明、権限構成、実行コマンドまで含めて、運用環境にすぐに適用できるように構成されています。
+
+</InDoc>
+
+## 料金案内
+
+:::caution
+
+クラウドモニタリングエージェントは無料ですが、クラウドサービスの使用によっては別途料金が発生することがありますので、確認が必要です。
+
+:::
+
+<InDoc product="postgresql,mongodb,mysql,mssql,oracle">
+
+### AWS料金
+
+クラウドモニタリングエージェントは別途のSaaS料金なしで提供され、エージェントのインストールだけでモニタリング機能を使用できます。 ただ、AWS CloudWatchなどクラウドサービスのAPIを通じてメトリックを収集するため、**CloudWatch使用量によって別途料金がかかる場合があります**。
+
+本エージェントは、基本的に**1分周期でGetMetricData APIを呼び出し**してメトリックを収集し、呼び出し頻度と収集対象によって料金が増加することがあるので注意が必要です。
+
+詳しい料金ポリシーは[AWS公式文書のAmazon CloudWatch料金](https://aws.amazon.com/cloudwatch/pricing/)ページを参照してください。
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP料金
+
+クラウドモニタリングエージェントは別途のSaaS料金なしで提供され、エージェントのインストールだけでモニタリング機能を使用できます。 クラウドモニタリングエージェントは、5分周期でCloud Insight APIを呼び出し、1分単位のメトリックデータを収集します。  
+
+NAVERクラウドプラットフォーム(NCP)のCloud Insightサービスは現在無料で提供されていますが、今後のポリシーによっては有料化される場合があります。 Cloud Insightサービスが有料化される場合、**API呼び出し回数によって料金がかかる場合がありますので**、使用量にご注意ください。
+
+詳しい料金ポリシーは[NAVERクラウドプラットフォームの公式料金案内](https://www.ncloud.com/product/management/cloudInsight#pricing)ページを参照してください。
+
+</InDoc>
+
+## エージェント設定
+
+<InDoc product="mysql,mssql,oracle">
+
+AWS Aurora and RDSの設定方法です。
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+AWS Aurora and RDSとNCP Cloud DB for PostgreSQLの設定方法です。
+
+</InDoc>
+
+<InDoc product="postgresql,mysql,mssql,oracle">
+
+### AWS Aurora and RDSの設定
+
+```yaml title='config.yaml'
+input:
+  csp: "aws" # クラウドサービスプロバイダーを入力します。
+  namespace: "rds"
+  region: "ap-northeast-2"
+  instances: # 明示されたインスタンスは常に収集します。クラスター内のインスタンスをこの属性に明示すると、オートスケール有無に関係なく常に収集します。
+    - name: "mysql-rds"
+      slow_query: true # スロークエリーページを使用するには、trueに設定します。該当機能はMySQL及びPostgreSQLインスタンスでのみ対応されています。
+  clusters:
+    autoscale:
+      enabled: false # オートスケールが活性化されると、オートスケールされたインスタンスを収集対象から追加または削除します。
+      interval: 60 # 明示されたクラスターのオートスケール チェック周期です。(単位: 秒)
+    names:
+      - "database-cluster-name"
+  metrics: # 収集するメトリックを入力します。
+    - "CPUUtilization"
+    - "FreeStorageSpace"
+    - "FreeableMemory"
+    - "ReadLatency"
+    - "WriteLatency"
+
+output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
+  license: "abcdefg-higjgkgjk-zxcvnbnbmc"
+  host: "127.0.0.1"
+```
+
+| フィールド                           | 説明                                                                                                                                                                                                   |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `csp`                           | クラウドサービスの提供者として`aws`(Amazon Web Services)を意味                                                                                                                                                         |
+| `namespace`                     | 収集対象サービスのネームスペース<br />- 固定値: Aurora and RDSの設定時、`rds`を入力                                                                                                                                             |
+| `region`                        | AWSリージョンコード<br />- 例 `ap-northeast-2` (ソウルリージョン)                                                                                                                                                     |
+| `instances`                     | 常に収集するインスタンスの一覧で、オートスケール有無に関係なく、指定されたインスタンスは無条件に収集する                                                                                                                                                 |
+| `instances[].name`              | RDSインスタンス名<br />- 例 `mysql-rds`                                                                                                                                                                      |
+| `instances[].slow_query`        | 該当インスタンスのスロークエリーを収集するかどうか、**MySQL及びPostgreSQLインスタンスでのみ対応** <br />- `true`: 収集<br />- `false`: 非収集<br />                                                                                              |
+| `clusters`                      | RDSクラスター関連設定                                                                                                                                                                                         |
+| `clusters.autoscale.enabled`    | クラスターオートスケール収集有無<br />- `true`: 自動的にインスタンスを追加/削除して収集<br />- `false`: `instances`に直接入力したインスタンスのみ収集対象に含める                                                                                              |
+| `clusters.autoscale.interval`   | オートスケール有無を感知する周期(単位:秒)                                                                                                                                                                               |
+| `clusters.names`                | オートスケール有無をチェックするクラスター名の一覧                                                                                                                                                                            |
+| `metrics`                       | 収集するメトリック項目のリスト<br />- 例 `CPUUtilization`、`FreeStorageSpace`など<br />- 参考 [Amazon RDSに対するAmazon CloudWatch指標の公式文書へのショートカット](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-metrics.html)  |
+| `output.license`                | 収集されたデータを転送するWhaTapのライセンスキー                                                                                                                                                                          |
+| `output.host`                   | 収集データを転送するWhaTapサーバーのホストアドレス(IP)                                                                                                                                                                     |
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+AWS DocumentDBエージェントの設定方法です。
+
+### AWS DocumentDBエージェント
+
+```yaml title='config.yaml'
+input:
+  csp: "aws" # クラウドサービスプロバイダーを入力します。
+  namespace: "docdb"
+  region: "ap-northeast-2"
+  instances: # 明示されたインスタンスは常に収集します。クラスター内のインスタンスをこの属性に明示すると、オートスケール有無に関係なく常に収集します。
+    - name: "docdb-instance-name"
+  clusters:
+    autoscale:
+      enabled: false # オートスケールが活性化されると、オートスケールされたインスタンスを収集対象から追加または削除します。
+      interval: 60 # 明示されたクラスターのオートスケールチェック周期です。 (単位: 秒)
+    names:
+      - "docdb-cluster-name"
+  metrics: # 収集するメトリックを入力します。
+    - "CPUUtilization"
+    - "FreeableMemory"
+    - "ReadLatency"   
+    - "WriteLatency"  
+    - "DatabaseConnections"
+
+output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
+  license: "4544ee05-wfwefwefb205-2987709519af"
+  host: "127.0.0.1"
+```
+
+| フィールド                           | 説明                                                                                                                                                                              |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `csp`                           | クラウドサービスの提供者として`aws`(Amazon Web Services)を意味                                                                                                                                    |
+| `namespace`                     | 収集対象サービスのネームスペース<br />- AWS DocumentDB設定時**固定値**で`docdb`入力                                                                                                                      |
+| `region`                        | AWSリージョンコード<br />- 例:`ap-northeast-2` (ソウルリージョン)                                                                                                                                |
+| `instances`                     | 常に収集するインスタンスの一覧で、オートスケール有無に関係なく、指定されたインスタンスは無条件に収集する                                                                                                                            |
+| `instances[].name`              | DocumentDBインスタンス名<br />- 例 `docdb-2025-04-08-01-21-05`                                                                                                                          |
+| `clusters`                      | DocumentDBクラスター関連設定                                                                                                                                                             |
+| `clusters.autoscale.enabled`    | クラスターオートスケール収集有無<br />- `true`: 自動的にインスタンスを追加/削除して収集<br />- `false`: `instances`に直接入力したインスタンスのみ収集対象に含める                                                                         |
+| `clusters.autoscale.interval`   | オートスケール有無を感知する周期(単位:秒)                                                                                                                                                          |
+| `clusters.names`                | オートスケール有無をチェックするクラスター名の一覧                                                                                                                                                       |
+| `metrics`                       | 収集するメトリック項目のリスト<br />- 例 `CPUUtilization`、`FreeableMemory`など<br />- 参考 [Amazon DocumentDB指標公式文書](https://docs.aws.amazon.com/documentdb/latest/developerguide/cloud_watch.html) |
+| `output.license`                | 収集されたデータを転送するWhaTapのライセンスキー                                                                                                                                                     |
+| `output.host`                   | 収集データを転送するWhaTapサーバーのホストアドレス(IP)                                                                                                                                                |
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP Cloud DB for PostgreSQL設定
+
+```yaml title='config.yaml'
+input:
+  csp: "ncp" # クラウドサービスプロバイダーを入力します。
+  namespace: "vpc_postgresql"
+  region: "KR" # KR | SGN | JPN | USWN | DEN
+  accessKey: "YOUR_ACCESS_KEY"
+  secretKey: "YOUR_SECRET_KEY"
+  instances: # Cloud DB for PostgreSQL (VPC) リストでモニタリング対象DBサーバー名を明示します。
+    - name: "instance-name"
+      domain: "pg-xxxxx.vpc-pub-cdb-kr.ntruss.com" # 接続可能なprivateまたはpublicドメインを入力します。
+  metrics: # 収集するメトリックを入力します。
+    - "cpu_user"
+    - "mem_used"
+    - "disk_usage"
+    - "nic_total"
+    - "cpu_load_1"
+    - "tup_inserted"
+
+output: # 収集したメトリックデータを受信するWhaTap情報を入力します。
+  license: "4544ee0few5-a880410bb205-2987709519af"
+  host: "127.0.0.1"
+```
+
+| フィールドパス              | 説明                                                                                                                                                                                                               |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `csp`                | クラウドサービスのプロバイダーとしてNaver Cloud Platform(`ncp`)使用を表す                                                                                                                                                               |
+| `namespace`          | モニタリング対象の区切り記号またはグループ名で使用される<br />-  例 `vpc_postgresql`                                                                                                                                                          |
+| `region`             | クラウドリージョン(region)コード<br />- 対応値: `KR`、`SGN`、`JPN`、`USWN`、`DEN`                                                                                                                                                   |
+| `accessKey`          | Naver CloudのAPI呼び出しのためのアクセスキー<br />- 参考 [Access Key / Secret Key発行方法](https://www.notion.so/1ee20702704a802492c9ee6dd6c179e1?pvs=21)                                                                             |
+| `secretKey`          | Naver CloudのAPI呼び出しのためのシークレットキー                                                                                                                                                                                  |
+| `instances`          | モニタリング対象であるPostgreSQLインスタンスリスト<br />- 各インスタンスは`name`と`domain` フィールドを含む                                                                                                                                           |
+| `instances[].name`   | Cloud DB for PostgreSQL (VPC)インスタンス名<br />- NAVER CLOUD PLATFORMコンソールのDB Server > DB Server名項目で確認可能<br />- 例 `whatap-001-70ld`                                                                                   |
+| `instances[].domain` | 当該インスタンスのアクセス可能なドメインアドレス<br />- NAVER CLOUD PLATFORMコンソールのDB Server > PrivateまたはPublicドメイン項目で確認可能<br />- DBXエージェントが実際に接続中の **PrivateまたはPublicドメインアドレス**を入力する必要がある<br />- 例 `pg-33rr40.vpc-pub-cdb-kr.ntruss.com` |
+| `metrics`            | 収集するメトリック項目のリスト<br />- 参考 [Cloud DB for PostgreSQL (VPC)指標公式文書](https://api.ncloud-docs.com/docs/database-vpostgresql-metric)                                                                                    |
+| `output`             | 収集したメトリックデータを受信するWhaTap情報                                                                                                                                                                                        |
+| `output.license`     | 収集されたメトリックデータを転送するWhaTapのライセンスキー                                                                                                                                                                                 |
+| `output.host`        | 収集データを転送するWhaTapサーバーのホストアドレス(IP)                                                                                                                                                                                 |
+
+</InDoc>
+
+## 権限設定
+
+エージェントが正常に動作するには、サービスごとに必要な権限を設定する必要があります。
+
+<InDoc product="postgresql,mysql,mssql,oracle">
+
+### AWS Aurora and RDS権限
+
+クラウドエージェントは、次の機能を実行するためにAWS APIを呼び出します。
+
+- AWS Aurora and RDSインスタンスとクラスター情報を照会して監視対象を確認
+- CloudWatchメトリック収集
+
+#### IAMインラインポリシー
+
+JSONポリシーをIAMユーザーまたは役割に**インラインポリシー**で追加します。 EC2でエージェントを実行する場合、当該EC2インスタンスに接続されたIAMの役割に当該ポリシーを付与します。
+
+- このポリシーは**AuroraとRDSサービスの両方に適用**されます。
+- Resource項目は、すべてのAuroraとRDSリソースを対象に指定されており、セキュリティポリシーによって必要な場合、リソースARNを制限できます。
+- エージェントは照会(Read-only) APIのみ使用します。 データベースに影響を与える権限は含まれません。
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RDSPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "rds:DescribeDBInstances",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBClusterParameters",
+        "rds:DescribeOptionGroups"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchMetricsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchLogsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents",
+        "logs:GetLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/rds/*"
+      ]
+    }
+  ]
+}
+```
+
+</InDoc>
+
+<InDoc product="mongodb">
+
+### AWS DocumentDB権限
+
+クラウドエージェントはDocumentDBに対して、次の機能を実行します。
+
+- DocumentDBインスタンスとクラスター情報の照会
+- CloudWatchメトリック収集
+
+#### DocumentDB用IAMインラインポリシー
+
+JSONポリシーをIAMユーザーまたは役割に**インラインポリシー**で追加します。 EC2でエージェントを実行する場合、当該EC2インスタンスに接続されたIAMの役割に付与します。
+
+- Resource項目は、すべてのDocumentDBリソースを対象に指定されており、セキュリティポリシーによって必要な場合、リソースARNを制限できます。
+- エージェントは照会(Read-only) APIのみ使用します。 データベースに影響を与える権限は含まれません。  
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DocDBPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "docdb:DescribeDBInstances",
+        "docdb:DescribeDBClusters"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchMetricsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:ListMetrics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CloudWatchLogsPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents",
+        "logs:GetLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/docdb/*"
+      ]
+    }
+  ]
+}
+```
+
+</InDoc>
+
+<InDoc product="postgresql">
+
+### NCP Cloud DB for PostgreSQL権限
+
+クラウドエージェントは、NCP Cloud DB for PostgreSQLインスタンスのメトリックと設定情報を収集するために、NCP Cloud Insight APIを呼び出します。 そのためにはAccess KeyとSecret Keyが必要です。
+
+**Access Key / Secret Key発行方法**
+
+1. [NAVER CLOUD PLATFORMコンソール](https://www.ncloud.com)にログインします。
+2. 上段メニューで**My Page> アカウント管理**に移動します。
+3. メニューで**認証キー管理**を選択します。
+4. **[キー生成]**ボタンをクリックして新しいAccess KeyとSecret Keyを生成します。
+
+</InDoc>

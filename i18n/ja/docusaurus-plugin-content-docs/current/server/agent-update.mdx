@@ -94,27 +94,27 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="ia64" label="IA64" default>
 
-  ```bash title='IA64'
-  cp /usr/whatap/infra/conf/whatap.conf /tmp
-  /sbin/init.d/whatap-infra stop
-  gunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -
-  yes n | ./whatap-infra/install.sh
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  /sbin/init.d/whatap-infra start
-  ```
+```bash title='IA64'
+cp /usr/whatap/infra/conf/whatap.conf /tmp
+/sbin/init.d/whatap-infra stop
+gunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -
+yes n | ./whatap-infra/install.sh
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+/sbin/init.d/whatap-infra start
+```
 
 </TabItem>
 
 <TabItem value="parisc" label="PA-RISC">
 
-  ```bash title='PA-RISC'
-  cp /usr/whatap/infra/conf/whatap.conf /tmp
-  /sbin/init.d/whatap-infra stop
-  gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
-  yes n | ./whatap-infra/install.sh
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  /sbin/init.d/whatap-infra start
-  ```
+```bash title='PA-RISC'
+cp /usr/whatap/infra/conf/whatap.conf /tmp
+/sbin/init.d/whatap-infra stop
+gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
+yes n | ./whatap-infra/install.sh
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+/sbin/init.d/whatap-infra start
+```
 
 </TabItem>
 
@@ -122,7 +122,7 @@ import TabItem from '@theme/TabItem';
 
 ## Windows
 
-インストール済みのエージェントを最新バージョンにアップデートするには、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューに移動します。<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="server_installAgent_win_download" className="uitext" />の指示に従って、Windowsサーバー用のインストーラーをダウンロードし、_whatap_infra.exe_ファイルを実行します。エージェントのアップデート後、サービスが再起動されます。
+インストール済みのエージェントを最新バージョンにアップデートするには、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />メニューに移動します。<Cmdname sid="agent-setup-guide" className="uitext" />セクションの<Cmdname sid="server_installAgent_win_download" className="uitext" />の指示に従って、Windowsサーバー用のインストーラーをダウンロードし、*whatap_infra.exe*ファイルを実行します。エージェントのアップデート後、サービスが再起動されます。
 
 :::note
 

@@ -26,57 +26,57 @@
 
 </InDoc>
 
-- **_execute count_**: SQLの実行回数
+- ***execute count***: SQLの実行回数
 
-- **_elapse sum (sec)_**: SQLの実行時間(秒) 合計
+- ***elapse sum (sec)***: SQLの実行時間(秒) 合計
 
-- **_elapse avg (sec)_**: SQLの平均実行時間(秒)で**elapse sum**/**execute count**の結果値
+- ***elapse avg (sec)***: SQLの平均実行時間(秒)で**elapse sum**/**execute count**の結果値
 
-- **_elapse max (sec)_**: SQLの最大実行時間(秒)
+- ***elapse max (sec)***: SQLの最大実行時間(秒)
 
 <Xclude product="mysql,mssql,mssql-v1,tibero">
 
-- **_elapse wait (sec)_**: SQLの待機時間合計(秒)
+- ***elapse wait (sec)***: SQLの待機時間合計(秒)
 
 </Xclude>
 
 <InDoc product="altibase">
 
-- **_data page read_**: データページを物理的に読み取った回数
+- ***data page read***: データページを物理的に読み取った回数
 
-- **_data page gets_**: データページを読み取るためにアクセスした回数
+- ***data page gets***: データページを読み取るためにアクセスした回数
 
-- **_rebuild count_**: 再構成作業の回数
+- ***rebuild count***: 再構成作業の回数
 
-- **_memory table access count_**: メモリテーブルにアクセスした回数
+- ***memory table access count***: メモリテーブルにアクセスした回数
 
-- **_execute success count_**: 正常に実行されたコマンドの回数
+- ***execute success count***: 正常に実行されたコマンドの回数
 
-- **_user_**: データベースにリンクされているユーザー名
+- ***user***: データベースにリンクされているユーザー名
 
-- **_sql hash_**: クエリのハッシュ値
+- ***sql hash***: クエリのハッシュ値
 
 </InDoc>
 
 <Xclude product="mssql,mssql-v1,tibero,cubrid,db2">
 
-- **_instance_**: インスタンス名
+- ***instance***: インスタンス名
 
 </Xclude>
 
 <InDoc product="oracle,oracle-pro">
 
-- **_physical reads_**: 該当SQLがディスクからデータを読み込んだ回数
+- ***physical reads***: 該当SQLがディスクからデータを読み込んだ回数
 
-- **_session logical reads_**: 該当SQLがメモリ内でデータを読み込んだ回数
+- ***session logical reads***: 該当SQLがメモリ内でデータを読み込んだ回数
 
 </InDoc>
 
 <InDoc product="oracle-pro">
 
-- **_cpu time_**: 該当SQLの実行中に使用されたCPU時間
+- ***cpu time***: 該当SQLの実行中に使用されたCPU時間
 
-- **_redo size_**: 該当SQLが発生させたトランザクションログ(redo log) のサイズ
+- ***redo size***: 該当SQLが発生させたトランザクションログ(redo log) のサイズ
 
 </InDoc>
 

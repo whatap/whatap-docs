@@ -24,23 +24,23 @@ Java1.5バージョンは、`-javaagent`オプションを提供します。 た
 
 ## Java1.4
 
-Java1.4バージョンは、`-javaagent`オプションがありません。別の方法でWhaTapエージェントをインストールする必要があります。_whatap.agent.jar_ファイルは、Java1.4バージョンを使用する必要があります。
+Java1.4バージョンは、`-javaagent`オプションがありません。別の方法でWhaTapエージェントをインストールする必要があります。*whatap.agent.jar*ファイルは、Java1.4バージョンを使用する必要があります。
 
 > whatap.java14.tracer-`X.Y.Z`.jar
 
 ### boot.jar作成
 
-_setup.sh_ファイルを利用して、_boot.jar_ファイルを作成してください。[JAVA_HOME]を入力しない場合、現在のパスは、JDKの場所を自動的に認識します。
+*setup.sh*ファイルを利用して、*boot.jar*ファイルを作成してください。[JAVA_HOME]を入力しない場合、現在のパスは、JDKの場所を自動的に認識します。
 
 ```bash
 $ setup.sh [JAVA_HOME]
 ```
 
-_setup.sh_実行結果：_whatap.java14.boot-`X.Y.Z`.jar_
+*setup.sh*実行結果：*whatap.java14.boot-`X.Y.Z`.jar*
 
 ### bootclasspathにインストール
 
-`bootclasspath`オプションを使用し、ビルドされたjarとtracerjarをprependに追加してください。
+`bootclasspath`オプションを使用し、ビルドされたjarとtracerjarをprependに追加します。
 
 ```java tite='java 실행 옵션'
 -Xbootclasspath/p:${WHATAP_HOME}/whatap.java14.boot-1.0.2.jar:${WHATAP_HOME}/whatap.java14.tracer-1.0.2.jar

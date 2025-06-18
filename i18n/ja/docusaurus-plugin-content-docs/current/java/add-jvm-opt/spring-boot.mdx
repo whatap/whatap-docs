@@ -20,7 +20,7 @@ Spring Bootを使用するアプリケーションサーバー環境でJVMオプ
   java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -Dwhatap.oname={Agent_Name} --add-opens=java.base/java.lang=ALL-UNNAMED -jar {application.jar}
   ```
 
-- 起動スクリプトにJVMオプションとして、`-javaagent`を追加してください。
+- 起動スクリプトにJVMオプションとして、`-javaagent`を追加します。
 
   ```bash
   java -javaagent:{WHATAP_HOME}/whatap.agent-X.Y.Z.jar -jar {application.jar}
@@ -32,19 +32,19 @@ JVMオプションを追加した後、使用するSpring Bootのバージョン
 
 ### Spring Boot 3.0.0 バージョン以降
 
-- Javaエージェントv2.2.9バージョン以降(_whatap.agent-2.2.9.jar_)
+- Javaエージェントv2.2.9バージョン以降(*whatap.agent-2.2.9.jar*)
 
   ```ini title='whatap.conf'
   weaving=spring-boot-3.0
   ```
 
-- Javaエージェントv2.2.5バージョン以降(_whatap.agent-2.2.5.jar_)
+- Javaエージェントv2.2.5バージョン以降(*whatap.agent-2.2.5.jar*)
 
   ```ini title='whatap.conf'
   weaving=spring-boot-3.0,tomcat10
   ```
 
-- Javaエージェントv2.2.4バージョン以降(_whatap.agent-2.2.4.jar_)
+- Javaエージェントv2.2.4バージョン以降(*whatap.agent-2.2.4.jar*)
 
   - `jakarta.servlet.http.HttpServlet`追跡(同期方式)
 
@@ -62,19 +62,19 @@ JVMオプションを追加した後、使用するSpring Bootのバージョン
 
 ### Spring Boot 2.7.0バージョン以降
 
-- Javaエージェントv2.2.9バージョン以降(_whatap.agent-2.2.9.jar_)
+- Javaエージェントv2.2.9バージョン以降(*whatap.agent-2.2.9.jar*)
 
   ```ini title='whatap.conf'
   weaving=spring-boot-2.7
   ```
 
-- Javaエージェントv2.2.5バージョン以降(_whatap.agent-2.2.5.jar_)
+- Javaエージェントv2.2.5バージョン以降(*whatap.agent-2.2.5.jar*)
 
   ```ini title='whatap.conf'
   weaving=spring-boot-2.7,tomcat9
   ```
 
-- Javaエージェントv2.2.4バージョン以下(_whatap.agent-2.2.4.jar_)
+- Javaエージェントv2.2.4バージョン以下(*whatap.agent-2.2.4.jar*)
 
   WebClient追跡(非同期方式)
 
@@ -84,19 +84,19 @@ JVMオプションを追加した後、使用するSpring Bootのバージョン
 
 ### Spring Boot 2.5.0バージョン以降
 
-- Javaエージェントv2.2.9バージョン以降(_whatap.agent-2.2.9.jar_)
+- Javaエージェントv2.2.9バージョン以降(*whatap.agent-2.2.9.jar*)
 
   ```ini title='whatap.conf'
   weaving=spring-boot-2.5
   ```
 
-- Javaエージェントv2.2.5バージョン以降(_whatap.agent-2.2.5.jar_)
+- Javaエージェントv2.2.5バージョン以降(*whatap.agent-2.2.5.jar*)
 
   ```ini title='whatap.conf'
   weaving=spring-boot-2.5,tomcat9
   ```
 
-- Javaエージェントv2.2.4バージョン以下(_whatap.agent-2.2.4.jar_)
+- Javaエージェントv2.2.4バージョン以下(*whatap.agent-2.2.4.jar*)
 
   WebClient追跡(非同期方式)
 

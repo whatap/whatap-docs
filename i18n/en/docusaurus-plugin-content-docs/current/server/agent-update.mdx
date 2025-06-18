@@ -94,27 +94,27 @@ To update the installed agent to the latest version, execute the following comma
 <Tabs>
 <TabItem value="ia64" label="IA64" default>
 
-  ```bash title='IA64'
-  cp /usr/whatap/infra/conf/whatap.conf /tmp
-  /sbin/init.d/whatap-infra stop
-  gunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -
-  yes n | ./whatap-infra/install.sh
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  /sbin/init.d/whatap-infra start
-  ```
+```bash title='IA64'
+cp /usr/whatap/infra/conf/whatap.conf /tmp
+/sbin/init.d/whatap-infra stop
+gunzip -c whatap-infra.latest.ia64.tar.gz | tar xvf -
+yes n | ./whatap-infra/install.sh
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+/sbin/init.d/whatap-infra start
+```
 
 </TabItem>
 
 <TabItem value="parisc" label="PA-RISC">
 
-  ```bash title='PA-RISC'
-  cp /usr/whatap/infra/conf/whatap.conf /tmp
-  /sbin/init.d/whatap-infra stop
-  gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
-  yes n | ./whatap-infra/install.sh
-  cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
-  /sbin/init.d/whatap-infra start
-  ```
+```bash title='PA-RISC'
+cp /usr/whatap/infra/conf/whatap.conf /tmp
+/sbin/init.d/whatap-infra stop
+gunzip -c whatap-infra.latest.pa.tar.gz   | tar xvf -
+yes n | ./whatap-infra/install.sh
+cp /tmp/whatap.conf /usr/whatap/infra/conf/whatap.conf
+/sbin/init.d/whatap-infra start
+```
 
 </TabItem>
 
@@ -122,7 +122,7 @@ To update the installed agent to the latest version, execute the following comma
 
 ## Windows
 
-To update the installed agent to the latest version, go to <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />. Download the installation file for your Windows Server OS by following the instructions in the <Cmdname sid="server_installAgent_win_download" className="uitext" /> section of <Cmdname sid="agent-setup-guide" className="uitext" />, and then run the _whatap_infra.exe_ file. The service is restarted after updating the agent.
+To update the installed agent to the latest version, go to <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentInstall" className="uitext" />. Download the installation file for your Windows Server OS by following the instructions in the <Cmdname sid="server_installAgent_win_download" className="uitext" /> section of <Cmdname sid="agent-setup-guide" className="uitext" />, and then run the *whatap_infra.exe* file. The service is restarted after updating the agent.
 
 :::note
 

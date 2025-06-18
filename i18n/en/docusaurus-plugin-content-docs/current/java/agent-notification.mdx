@@ -150,26 +150,6 @@ The following explains how to configure notifications for various events that oc
 
   Set whether or not to secure a stack when the allocated DB connection is duplicated.
 
-- **exception_event_enabled** <span class='type'>Boolean</span>
-
-  Default `false`
-
-  Set whether or not to issue an event notification when an exception occurs.
-
-- **exception_event_interval** <span class='type'>MiliSeconds</span>
-
-  Default `60000`
-
-  Set the duration for issuing event notifications when an exception occurs.
-
-- **exception_event_set** <span class='type'>String</span>
-
-  Set the target exception. Use comma (,) as the delimiter in case of multiple items.
-
-- **exception_event_action** <span class='type'>String</span>
-
-  Set the dynamic loading code to run when an event occurs.
-
   :::note
 
   ID to deliver to the Java code written in the _`$WHATAP_HOME`/plugin/ActionScript.x_ file (delivered to `$id`)

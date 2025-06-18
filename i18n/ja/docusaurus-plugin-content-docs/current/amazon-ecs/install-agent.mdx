@@ -40,15 +40,15 @@ import Createprojectaccesskeyitem from "../getting-started/_create-project-acces
 
 Amazon ECSの起動タイプ(Launch Type)によりモニタリング対象が異なります。モニタリング対象は、Task、Service、Deployment、Container Instanceです。
 
-- **_EC2 Launch Type_**: Task, Service, Deployment, Container Instance
+- ***EC2 Launch Type***: Task, Service, Deployment, Container Instance
 
   ![EC2 DAEMON](/img/ecs_ec2_whatap_monitoring.png)
 
-- **_Fargate Launch Type_**: Task, Service, Deployment
+- ***Fargate Launch Type***: Task, Service, Deployment
 
   ![ECS Fargate Sidecar](/img/ecs_fargate_whatap_monitoring.png)
 
-次のモニタリング手順も**_EC2起動タイプ_**と**_Fargate起動タイプ_**に分かれて実行します。
+次のモニタリング手順も***EC2起動タイプ***と***Fargate起動タイプ***に分かれて実行します。
 
 :::note
 
@@ -66,9 +66,9 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
 
 ### EC2起動タイプ
 
-1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動します。 
+1. プロジェクトを作成し、***チェックリスト***を確認します。***管理*** > ***エージェント設定***のインストールの案内セクションに移動します。 
 
-2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_EC2起動タイプ_**を選択します。
+2. ![number-s](/img/number-01.png) ***Task作成***タブで***EC2起動タイプ***を選択します。
 
 3. 次のスクリプトを実行して、DAEMONタイプのタスクを作成してください。 `CLUSTER`と`REGION`を追加し、`ACCESSKEY`と`WHATAP_HOST`を設定して収集サーバーと通信できるようにします。
 
@@ -146,9 +146,9 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
 
 ### Fargate Launch Type
 
-1. プロジェクトを作成し、**_チェックリスト_**を確認します。**_管理_** > **_エージェント設定_**のインストールの案内セクションに移動します。 
+1. プロジェクトを作成し、***チェックリスト***を確認します。***管理*** > ***エージェント設定***のインストールの案内セクションに移動します。 
 
-2. ![number-s](/img/number-01.png) **_Task作成_**タブで**_Fargate起動タイプ_**を選択します。
+2. ![number-s](/img/number-01.png) ***Task作成***タブで***Fargate起動タイプ***を選択します。
 
    - スクリプトを実行して、AWS ECS API READONLY IAM ROLEを作成します。 
 
@@ -292,7 +292,7 @@ Amazon ECS起動タイプ(Launch Type)の詳しい説明は[次の文書](https:
 
 ### モニタリングサービスの開始
 
-![number-s](/img/number-02.png) **_モニタリングを開始_**タブで、**_モニタリングサービス活性化_**ボタンを選択して、モニタリングサービスを開始します。
+![number-s](/img/number-02.png) ***モニタリングを開始***タブで、***モニタリングサービス活性化***ボタンを選択して、モニタリングサービスを開始します。
 
 - モニタリングサービスを開始できる状態
 

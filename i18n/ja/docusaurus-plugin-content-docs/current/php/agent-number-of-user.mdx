@@ -15,7 +15,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   既定値 `true`
 
-  リアルタイムのユーザー集計を実行するかどうかを指定します。この値を有効にする場合、IPまたはPHPの基本クッキー(PHPSESSID)およびフレームワーククッキー(ci_session、Laravel_session)に基づいてユーザーを追跡します。PHPコンパイルのインストールにより_php.ini_に`whatap`項目がある場合は、*whatap.ini*ではなく_php.ini_に追加してください。 
+  リアルタイムのユーザー集計を実行するかどうかを指定します。この値を有効にする場合、IPまたはPHPの基本クッキー(PHPSESSID)およびフレームワーククッキー(ci_session、Laravel_session)に基づいてユーザーを追跡します。PHPコンパイルのインストールにより*php.ini*に`whatap`項目がある場合は、*whatap.ini*ではなく*php.ini*に追加します。 
 
 <Phprestartapply />
 
@@ -23,7 +23,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   既定値`false`
 
-  IPでリアルタイムユーザの区分を実行する場合に設定します。このデータはReal Time Userで確認できます。`false`の場合、PHPの基本クッキーとフレームワーククッキー(PHPSESSID、ci_session、Laravel_session)に基づいてユーザーを区分します。PHPコンパイルのインストールにより_php.ini_に`whatap`項目がある場合、*whatap.ini*ではなく_php.ini_に追加してください。
+  IPでリアルタイムユーザの区分を実行する場合に設定します。このデータはReal Time Userで確認できます。`false`の場合、PHPの基本クッキーとフレームワーククッキー(PHPSESSID、ci_session、Laravel_session)に基づいてユーザーを区分します。PHPコンパイルのインストールにより*php.ini*に`whatap`項目がある場合、*whatap.ini*ではなく*php.ini*に追加します。
 
 <Phprestartapply />
 
@@ -39,7 +39,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   既定値`false`
 
-  ユーザーをHTTPヘッダーの特定の値として区分する場合に使用するHTTPキーを指定します。ただし、同時に`trace_user_using_ip`のみ設定を適用することはできません。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルのインストールにより_php.ini_に`whatap`項目がある場合は、*whatap.ini*ではなく_php.ini_に追加してください。
+  ユーザーをHTTPヘッダーの特定の値として区分する場合に使用するHTTPキーを指定します。ただし、同時に`trace_user_using_ip`のみ設定を適用することはできません。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルのインストールにより*php.ini*に`whatap`項目がある場合は、*whatap.ini*ではなく*php.ini*に追加します。
 
 <Phprestartapply />
 
@@ -47,7 +47,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   既定値`false`
 
-  ユーザーを区別するには、クッキーに`WHATAP`キー名を使用してユーザー区分の値を設定します。`trace_user_using_ip`が設定されている場合は反映されません。`trace_user_header_ticket`が設定される場合、header keyが見つからない場合に設定されます。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールにより_php.ini_に`whatap`項目がある場合は、*whatap.ini*ではなく_php.ini_に追加してください。
+  ユーザーを区別するには、クッキーに`WHATAP`キー名を使用してユーザー区分の値を設定します。`trace_user_using_ip`が設定されている場合は反映されません。`trace_user_header_ticket`が設定される場合、header keyが見つからない場合に設定されます。HTTPキーが見つからない場合は、Cookieを基準にユーザーを区別します。PHPコンパイルインストールにより*php.ini*に`whatap`項目がある場合は、*whatap.ini*ではなく*php.ini*に追加します。
 
 <Phprestartapply />
 

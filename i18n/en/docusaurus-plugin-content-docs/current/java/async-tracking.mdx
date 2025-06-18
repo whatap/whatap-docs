@@ -9,7 +9,7 @@ keywords:
   - Asynchronous Tracking
 ---
 
-The following explains how to trace activities of asynchronous applications through the Java agent settings. It includes the methods for collecting `CompletableFuture` methods and hooking those methods into user applications. It provides the options to add to the _whatap.conf_ file along with configuration examples, to help enhance performance monitoring for asynchronous calls.
+The following explains how to trace activities of asynchronous applications through the Java agent settings. It includes the methods for collecting `CompletableFuture` methods and hooking those methods into user applications. It provides the options to add to the *whatap.conf* file along with configuration examples, to help enhance performance monitoring for asynchronous calls.
 
 ## CompletableFuture
 
@@ -51,7 +51,7 @@ public class W {
 
 ### Adding the agent settings
 
-Add the following options to the _whatap.conf_ file to configure the agent.
+Add the following options to the *whatap.conf* file to configure the agent.
 
 ```ini title='whatap.conf'
 hook_completablefuture_patterns=io.home.test.util.W.*

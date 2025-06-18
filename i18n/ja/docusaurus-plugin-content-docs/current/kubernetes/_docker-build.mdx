@@ -4,7 +4,7 @@
    mkdir -p {Docker build Dir}
    ```
 
-2. *whatap.conf*ファイルを作成します。
+2. *whatap.con*ファイルを作成します。
 
    ```bash
    cat >{Docker build Dir}/whatap.conf <<EOL
@@ -14,7 +14,7 @@
 
    :::note
 
-   *whatap.conf*ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
+   *whatap.con*ファイルは、Kubernetes環境のConfigMap機能を使用して管理します。
 
    :::
 
@@ -34,7 +34,7 @@
 
    :::note
 
-   *whatap.conf*ファイルは事前に作成する必要があります。
+   *whatap.con*ファイルは事前に作成する必要があります。
 
    :::
 
@@ -47,9 +47,9 @@
    whatap/kube_mon /data/agent/micro/whatap.agent-X.Y.Z.jar /whatap
    ```
 
-5. Dockerfileアプリケーションの起動コマンドに、以下を追加してください。その前に確認したエージェントバージョンを**X.Y.Z**の部分に入力してください。
+5. Dockerfileアプリケーションの起動コマンドに、以下を追加します。その前に確認したエージェントバージョンを**X.Y.Z**の部分に入力します。
 
-   エージェントのファイル名が_whatap.agent-1.2.3.jar_の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
+   エージェントのファイル名が*whatap.agent-1.2.3.jar*の場合、**X.Y.Z**の部分を**1.2.3**に変更してください。
 
    ```bash
    -javaagent:/whatap/whatap.agent-X.Y.Z.jar -Dwhatap.micro.enabled=true
@@ -79,7 +79,7 @@
    docker build -t $Image_Name.
    ```
 
-7. ユーザーのKubernetes環境のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力してください。
+7. ユーザーのKubernetes環境のコンテナ環境変数を設定します。アプリケーションエージェントに必要な環境変数情報を入力します。
 
    `OKIND`環境変数は、Pod(Pod)に対応するアプリケーションを同じグループとして設定する役割です。デプロイメント(Deployment) を設定すると、対応するPod(Pod)がグループ化されます。
 

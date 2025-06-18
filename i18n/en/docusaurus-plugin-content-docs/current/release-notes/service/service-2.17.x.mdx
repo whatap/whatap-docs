@@ -1,0 +1,245 @@
+---
+id: service-2_17_x
+title: Service 2.17.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_17_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.17.1
+
+June 04, 2025 
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> Fixed the issue where the details for CPU usage, memory usage, network, disk i/o, and disk used space (%) chart in the drawer is not visible when the <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> button is clicked.
+
+---
+
+### `Database`
+
+#### Oracle Pro
+
+<Status priority='1'>Feature</Status> Added the session trace feature in the <Cmdname sid="session_detail" className="uitext" /> window.
+
+---
+
+### `Mobile`
+
+<Status priority='0'>Fixed</Status> Changed the installation text for the Android installation guide plug-in.
+
+---
+
+### `Browser`
+
+- <Status priority='0'>Fixed</Status> Improved the <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_ipLoadStatistics" className="uitext" /> TopN chart data fetching speed.
+
+- <Status priority='0'>Fixed</Status> Fixed the log time mismatch between <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_pageLoadStatistics" className="uitext" /> and the redirected session.
+
+---
+
+### `Log`
+
+<Status priority='1'>Feature</Status> Added the <Cmdname sid="side_logExplorer2" className="uitext" /> page.
+
+</div>
+
+## Service 2.17.0
+
+May 28, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> The <Cmdname sid="side_integratedRealtimeAlert" className="uitext" /> and <Cmdname sid="side_projectMember" className="uitext" />(<Cmdname sid="side_integratedGroupManagement" className="uitext" />) options and selection status are included in the URL so that they can be shared in the same state when sharing the link.
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="side_report" className="uitext" /> Excel downloading feature (provided only in some report templates).
+
+- <Status priority='1'>Feature</Status> Added the feature to change the <Cmdname sid="side_flexboard" className="uitext" /> sharing role.
+
+- <Status priority='1'>Feature</Status> Added the Excel file downloading button for the <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code> event configuration history.
+
+- <Status priority='0'>Fixed</Status> When adding a new widget after dragging the <Cmdname sid="side_metricsChart" className="uitext" /> <code class="oldfunc">Old</code> widget, modified to maintain the time selector settings.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where the project tag in the <Cmdname sid="side_flexboard" className="uitext" /> ***management*** widget cannot be clicked.
+
+- <Status priority='0'>Fixed</Status> Fixed the bug for the ***Compare with previous time*** feature of the <Cmdname sid="side_flexboard" className="uitext" /> widget.
+
+- <Status priority='0'>Fixed</Status> Fixed the bug where organization information disappears when the ***Profile*** icon > ***WhataTap Monitoring Information*** menu is clicked on the upper right of the screen.
+
+- <Status priority='0'>Fixed</Status> Fixed the individual time settings for series charts to be applied.
+
+- <Status priority='0'>Fixed</Status> Applied resizing of the page table to add the linked project in.
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> Added the opetion to display the <Cmdname sid="TTL06377" className="uitext" /> <Cmdname sid="BTN07120" className="uitext" /> client IP information.
+
+- <Status priority='1'>Feature</Status> Added the feature to display error properties out of <Cmdname sid="TTL06209" className="uitext" /> > ***Timeline*** and <Cmdname sid="TTL06126" className="uitext" /> Message Step.
+
+- <Status priority='1'>Feature</Status> Added the feature to display the table area loading when initial data is viewed in <Cmdname sid="transaction_map" className="uitext" /> and to display the vertical line loading if no data exists.
+
+- <Status priority='1'>Feature</Status> Added the `city` filter into the filters that can be used in the stop state of <Cmdname sid="transaction_map" className="uitext" />.
+
+- <Status priority='1'>Feature</Status> Added the `STEP_SQL_BIND` and `STEP_ALL` filters in <Cmdname sid="transaction_map" className="uitext" /> (if used, a decryption key is required to be input).
+
+- <Status priority='1'>Feature</Status> When viewing the profile data by dragging <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_hitmap" className="uitext" />, added the feature to display a message indicating the possible period if the maximum search period is exceeded.
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="transaction_map" className="uitext" /> widget and its setting items.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_agentLog" className="uitext" />, fixed the display error for the data between agents when the same agent log file is selected.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_stack" className="uitext" />, fixed the table column sharing issue between tabs.
+
+- <Status priority='0'>Fixed</Status> Fixed the missing <Cmdname sid="TTL08868" className="uitext" /> transaction name display issue in <Cmdname sid="side_statistics" className="uitext" /> &gt; <Cmdname sid="side_tx" className="uitext" />.
+
+- <Status priority='0'>Fixed</Status> Fixed the bug where all data is not displayed, if there is no initial data in real-time mode of <Cmdname sid="transaction_map" className="uitext" />.
+
+- <Status priority='1'>Deprecated</Status> The <Cmdname sid="side_topology" className="uitext" /> and ***Custom Hitmap*** service are ended (`2025/12/31`).
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> Added the <Cmdname sid="eventNoti" className="uitext" /> &gt; ***Webhook JSON*** variable.
+
+- <Status priority='1'>Feature</Status> Provided the content drawer for the <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> page.
+
+- <Status priority='1'>Feature</Status> Added the configuration popover in which the Y-axis maximum value in the charts in the <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> menu.
+
+- <Status priority='1'>Feature</Status> In <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="sm_log_event_tab" className="uitext" />, added the feature to add and modify Repeat (times) and Duration (seconds).
+
+- <Status priority='1'>Feature</Status> Improved the display of Event ID in the event list of <Cmdname sid="event_statistic" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="sm_log_event_tab" className="uitext" />.
+
+- <Status priority='1'>Changed</Status> Disabled case sensitivity when searching for the <Cmdname sid="side_serverList" className="uitext" /> agent.
+
+- <Status priority='1'>Changed</Status> Improved the <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> metric list sorting criteria (predefined order has been applied).
+
+- <Status priority='0'>Fixed</Status> Fixed the Server Name column display error in the <Cmdname sid="TTL08086" className="uitext" /> column under <Cmdname sid="side_dashboard" className="uitext" /> &gt; ***Group Summary*** &gt; ***Events in progress*** tab and added the Agent Name column.
+
+- <Status priority='0'>Fixed</Status> Fixed the Server Name column display error in the <Cmdname sid="TTL08086" className="uitext" /> column under <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" /> menu &gt; ***Display Detail***'s ***Events in progress*** tab and added the Agent Name column.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="column_settings" className="uitext" />, prevented duplicate entries when spaces are included.
+
+- <Status priority='0'>Fixed</Status> In the <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> line chart panel, the Download button is hidden when there is no data in the query section.
+
+- <Status priority='0'>Fixed</Status> In <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> &gt; <Cmdname sid="server_info" className="uitext" />, fixed the error where the <Cmdname sid="server_alert_list" className="uitext" /> event reception tag is wrongly displayed.
+
+- <Status priority='0'>Fixed</Status> Fixed the issue with list staying open when adding the <Cmdname sid="side_serverMetricsExplorer" className="uitext" /> widget.
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Changed</Status> In ***Workload*** > ***Deployment List***, added new metrics (Kubernetes Agent 1.8.7).
+
+  - **Remove Columns**
+
+    - Replaced as ReplicaSets, TotalPods, Running Pods → PodPhase.
+
+    - Replace TotalContainers and RunningContainers with ContainerState.
+
+  - **Additional Columns**
+
+    - PodPhase, ContainerState, Ready, deployUpdatedReplicas, deployAvailableReplicas, deployCreationTime
+
+      :::note 
+
+      It is exposed only in Kubernetes Agent 1.8.7 or later, and the previous names appear as before when using older versions of the agent.
+
+      :::
+
+- <Status priority='1'>Changed</Status> Changed to allow to modify the ***namespace*** project name.
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> Added the column selection feature in the lock tree table.
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, <Cmdname sid="side_multiInstance" className="uitext" />
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+- <Status priority='1'>Feature</Status> Added the feature to download the chart data as a CSV file when the real-time mode is not applied to <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />.
+
+- <Status priority='1'>Feature</Status> Added the feature to save the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> Disk Usage widget table status preset.
+
+- <Status priority='1'>Feature</Status> Added the tags to display the instance's Replication Role or Cluster configuration.
+
+  - Instance selector on the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> screen
+
+  - Instance tag on the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> screen
+
+  - Role column of the <Cmdname sid="side_management" className="uitext" /> &gt; ***Agent List***
+
+- <Status priority='1'>Feature</Status> Improved the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> screen.
+
+  - Added the click and drag events in the custom widget series chart.
+  - Changed the chart option icon to the More button.
+  - Added the guide text when a deactivated instance is selected.
+  - Added the metric selection button in the default series chart.
+
+- <Status priority='1'>Changed</Status> Changed the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> widget's header icon to the More button.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />, the status colors for the Instance Selector and Instance List are displayed identically.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />, <Cmdname sid="side_tableSpace" className="uitext" />, if the selected `dbName` does not exist, `no data in the table` is displayed.
+
+- <Status priority='0'>Fixed</Status> When the <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code> session table cannot be downloaded as a CSV file or while downloading the chart image, fixed the issue where the theme is not applied.
+
+- <Status priority='0'>Fixed</Status> In case of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> Multi DB, fixed the tag untagging error when clicking an instance again.
+
+- <Status priority='0'>Fixed</Status> Fixed the index changing and data refreshing issue caused by <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="db_size_increase" className="uitext" />, <Cmdname sid="side_tableSpace" className="uitext" /> `dbName`.
+
+#### MongoDB, MySQL, Oracle, PostgreSQL, SQL Server
+
+<Status priority='1'>Feature</Status> Added the Cloud agent for DB agent installation.
+
+#### MySQL
+
+- <Status priority='1'>Feature</Status> In the <Cmdname sid="side_dbLockTree" className="uitext" /> table, added the guide text for the lock query role.
+
+  - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />
+
+  - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
+
+- <Status priority='1'>Feature</Status> In the <Cmdname sid="reportStat" className="uitext" /> &gt; ***Table increment summary*** section, added the increase/decrease rate column in the ***Capacity details for each table*** table.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_installation" className="uitext" />, provided the guide that the lock query role has been added when MySQL 8 or later is used.
+
+#### Oracle
+
+<Status priority='1'>Feature</Status> Added the guide for multi-tenant DB kill session command to the installation page.
+
+#### Oracle Pro
+
+<Status priority='1'>Feature</Status> In <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_dbScriptManager" className="uitext" />, added the feature to check the execution results of the multi-script and instance-based multi-script.
+
+#### PostgreSQL
+
+<Status priority='1'>Feature</Status> In <Cmdname sid="side_dbMonitoring" className="uitext" />, <Cmdname sid="side_multiInstance" className="uitext" />, and <Cmdname sid="side_dbLockTree" className="uitext" /> lock tree tables, added the `holder_relation`, `waiter_relation`, and `state` columns.
+
+---
+
+### `Cloud`
+
+<Status priority='1'>Feature</Status> When querying the profile data by dragging <Cmdname sid="side_analysis" className="uitext" /> &gt; ***Application Hitmap*** and ***Multi-service Hitmap***, displayed the notification, if the maximum query period exceeds.
+
+---
+
+### `Log`
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> &gt; ***Filter favorites***, displayed the toast message when adding/modifying/deleted favorites, and avoided entering spaces in favorite names.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> &gt; ***Filter favorites***, fixed the issue where adding a ***personal filter*** to favorites with no favorites specified causes infinite loading.
+
+- <Status priority='1'>Changed</Status> In <Cmdname sid="ITM08349" className="uitext" /> &gt; ***Tag Management***, displayed all tags in the log list by default.
+
+</div>

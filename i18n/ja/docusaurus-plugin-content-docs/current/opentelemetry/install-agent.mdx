@@ -93,7 +93,7 @@ RUN tar -xvzf whatap-otel.tar.gz -C /
 
 ### whatap.confファイルを設定する
 
-エージェント設定(*whatap.conf*)ファイルへのアクセスキーと収集サーバーのIPアドレスを設定します。
+エージェント設定(*whatap.con*)ファイルへのアクセスキーと収集サーバーのIPアドレスを設定します。
 
 ```bash
 echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
@@ -112,7 +112,7 @@ WHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}
 
 :::note
 
-環境変数と*whatap.conf*ファイルをすべて設定した場合、*whatap.conf*ファイルの設定値が優先されます。
+環境変数と*whatap.con*ファイルをすべて設定した場合、*whatap.con*ファイルの設定値が優先されます。
 
 :::
 
@@ -318,6 +318,86 @@ OpenTelemetry Collectorインストールの詳細については、次のリン
 ```
 
 1. 接続されたOpenTelemetry Collectorにwhatap-otelエージェントが接続されたら、トレース情報を収集します。
+
+### Kong Gateway
+
+Kong Gatewayの組み込みOpenTelemetryプラグインを設定すると、OpenTelemetry Collectorを通じてトランザクション情報を確認できます。
+
+OpenTelemetryプラグインでOpenTelemetry Collectorのエンドポイントを指定します。CollectorにWhatap-otelエージェントが接続されると、トレース情報が収集されます。
+
+1. kong.conf 
+
+    トレース設定を有効にします。
+
+    ```ini
+    tracing_instrumentations = all
+    tracing_sampling_rate = 1
+    ```
+
+1. OpenTelemetryプラグイン設定 
+
+    OpenTelemetry CollectorのエンドポイントURLを登録します。
+
+    CollectorのOTLPレシーバーのデフォルト設定は以下の通りです。
+
+    - プロトコル: http
+    - ポート: 4318
+    - URL:
+        - トレース:  /v1/traces
+            - http://x.x.x.x:4318/v1/traces
+        - ログ: /v1/logs
+            - http://x.x.x.x:4318/v1/logs
+
+    * デフォルト設定例
+
+      ```yaml
+      traces_endpoint: http://otelcollector:4318/v1/traces
+      logs_endpoint: http://otelcollector:4318/v1/logs
+      ```
+
+    * kong.yaml設定例
+
+      ```yaml
+      plugins:
+        - name: opentelemetry
+          config:
+            traces_endpoint: http://otelcollector:4318/v1/traces
+            logs_endpoint: http://otelcollector:4318/v1/logs
+            resource_attributes:
+              service.name: kong-otel
+      ```
+
+    * Admin APIによるプラグイン設定例
+
+      ```bash
+      curl -X POST http://localhost:8001/services/plugins \
+      --header "accept: application/json" \
+      --header "Content-Type: application/json" \
+      --data '
+      {
+          "name": "opentelemetry",
+          "config": {
+              "traces_endpoint": "http://otelcollector:4318/v1/traces",
+              "logs_endpoint": "http://otelcollector:4318/v1/logs",
+              "resource_attributes": {
+                  "service.name": "kong-dev"
+              }
+          }
+      }
+      '
+      ```
+
+* **対応バージョン:** Kong Gateway 3.3.x 以上
+
+:::info
+
+設定に関する詳細は、以下のドキュメントを参照してください。
+
+* [Set up Kong Gateway](https://docs.konghq.com/hub/kong-inc/opentelemetry/how-to/getting-started/)
+
+* [OpenTelemetry Configuration](https://docs.konghq.com/hub/kong-inc/opentelemetry/configuration/)
+
+:::
 
 ## モニタリングの開始
 

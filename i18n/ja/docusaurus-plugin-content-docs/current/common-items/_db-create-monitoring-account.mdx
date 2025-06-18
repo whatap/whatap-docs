@@ -210,7 +210,7 @@ SAP ASEでは、ユーザーアカウントをデータベース内で別途作�
   grant select any dictionary to {DB_User};
   ```
 
-- 12c以降で、マルチテナントの場合: 接頭語`c##`を追加
+- マルチテナントDB(Oracle 12c以降)で基本モニタリングを使用する場合: `c##`アカウント作成
 
   ```sql title="SQL"
   create user c##{DB_User} identified by "{DB_Password}";
@@ -224,6 +224,16 @@ SAP ASEでは、ユーザーアカウントをデータベース内で別途作�
   ```sql title="SQL"
   grant alter system to {DB_User}
   ```
+
+<InDoc product="oracle">
+
+- マルチテナントDBでkill session機能を使用する場合: `c##`アカウントで実行
+
+  ```sql title="SQL"
+  grant alter system to c##whatap container=all;
+  ```
+
+</InDoc>
 
 - ヒドゥンパラメータを照会する場合
 
@@ -260,7 +270,7 @@ SAP ASEでは、ユーザーアカウントをデータベース内で別途作�
 | 基本権限                                              | `grant create session to whatap;`                                              | `grant create session to c##whatap;`                                                                                                                                                             | 접속                                                                                                                                                                     | -                                        |
 | \^                                                | <code>grant <span class="vslow">select any dictionary</span> to whatap;</code> | <code>grant <span class="vslow">select any dictionary</span> to c##whatap;</code>                                                                                                                | <Cmdname sid="side_dbMonitoring" className="uitext" /> / <Cmdname sid="side_multiInstance" className="uitext" /> / <Cmdname sid="side_dbSqlStat" className="uitext" /> | 個別権限の付与時、次の表の内容を参照                       |
 | \^                                                | -                                                                              | `alter user c##whatap set container_data = ALL container = CURRENT;`                                                                                                                             | \^                                                                                                                                                                     | マルチテナントDBを使用する場合(12C以降) pdb照会のための必須権限である |
-| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap;`                                                                                                                                                               | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                        |
+| <Cmdname sid="session_kill" className="uitext" /> | `grant alter system to whatap;`                                                | `grant alter system to c##whatap container=all;`                                                                                                                                                 | <Cmdname sid="active_sessions" className="uitext" /> &gt; <Cmdname sid="session_kill" className="uitext" />                                                        | -                                        |
 | ヒドゥンパラメータの照会                                      | \>                                                                             | `create view sys.whatap_vw_ksppi as select * from sys.x$ksppi;`<br/>`grant select on sys.whatap_vw_ksppi to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppi for sys.whatap_vw_ksppi;`      | パラメータ照会メニューにヒドゥンパラメータの内容を含む                                                                                                                                            | ヒドゥンパラメータを照会するには、別のビュー/シノニムの生成および権限付与が必要 |
 | \^                                                | \>                                                                             | `create view sys.whatap_vw_ksppcv as select * from sys.x$ksppcv;`<br/>`grant select on sys.whatap_vw_ksppcv to DB_User;`<br/>`create synonym DB_User.whatap_vw_ksppcv for sys.whatap_vw_ksppcv;` | \^                                                                                                                                                                     | \^                                       |
 

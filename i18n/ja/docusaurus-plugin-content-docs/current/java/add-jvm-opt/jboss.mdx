@@ -13,7 +13,7 @@ keywords:
 
 JBossアプリケーションサーバー環境でJavaモニタリングエージェントを効果的に使用するために必要なJVMオプションを追加する方法を案内します。
 
-JVMオプションに`-javaagent`および`-Djboss.modules.system.pkgs`オプションを追加してください。
+JVMオプションに`-javaagent`および`-Djboss.modules.system.pkgs`オプションを追加します。
 
 ### JBoss7.0以降、EAP6.0以降
 
@@ -30,7 +30,7 @@ JAVA_OPTS="${JAVA_OPTS} -javaagent:${WHATAP_JAR} -Djboss.modules.system.pkgs=wha
 
 :::note
 
-JBoss5.0バージョン以下の場合は_(JBossインストールパス)/bin/run.conf_パスで設定してください。エラーが発生した場合は、`-Djboss.platform.mbeanserver=true`オプションを追加してください。
+JBoss5.0バージョン以下の場合は_(JBossインストールパス)/bin/run.conf_パスで設定してください。エラーが発生した場合は、`-Djboss.platform.mbeanserver=true`オプションを追加します。
 
 :::
 

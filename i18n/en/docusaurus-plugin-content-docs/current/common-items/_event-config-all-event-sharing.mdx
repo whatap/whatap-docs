@@ -1,12 +1,22 @@
 ## Sharing all event settings {#share-event-setting}
 
-You can download the settings of the default event and all other events as a JSON format file, allowing you to share the settings between products of the same type. This simplifies repetitive event configurations.
+You can **download** all event settings including basic events, in **JSON or Excel format**. If you share product settings of the same type, repetitive event configuration can be reduced.
 
 ### Export {#export-event-setting}
 
-On the screen, select <Cmdname sid="BTN07762" className="uitext" />. A JSON file containing all event settings are downloaded. The format of the JSON file name is _integrated-event-`YYYY`-`MM`-`DD`.json_.
+A JSON file containing all event settings can be downloaded. Downloaded files can be modified using the JSON bulk editing feature. Click the ![Download icon](/img/ico-download.svg) <Cmdname sid="BTN07762" className="uitext" /> button at the top of the screen.
 
-The JSON data structure is as follows:
+- The format of the JSON file name is _integrated-event-`YYYY`-`MM`-`DD`.json_.
+
+- The structure of the JSON data and sub properties of the `events` property may differ depending on the product (`platform`) or product type (`productType`).
+
+:::caution
+
+If you arbitrarily modify the value of the `productType` or `platform` property among the JSON data properties, the events may not work in other projects.
+
+:::
+
+**JSON Data Structure**
 
 ```json title="integrated-event"
 {
@@ -40,21 +50,15 @@ The JSON data structure is as follows:
 
 The sub properties of the `events` property correspond to the following event settings.
 
-<InDoc product="java,php,python,nodejs,golang,dotnet,kubernetes"><ImgLang img='event-config-v2-all-events-apm-k8s.png' desc='Events' /></InDoc>
-
-<InDoc product="postgresql,oracle,mysql,mssql,mssql-v1,tibero,cubrid,altibase,redis,mongodb"><ImgLang img='event-config-v2-all-events-apm-k8s.png' desc='Events' /></InDoc>
-
-<InDoc product="server"><ImgLang img='event-config-v2-all-events-server.png' desc='Events' /></InDoc>
-
-<InDoc product="browser"><ImgLang img='event-config-v2-all-events-browser.png' desc='Events' /></InDoc>
-
-<InDoc product="npm"><ImgLang img='event-config-v2-all-events-npm.png' desc='Events' /></InDoc>
-
 - `BASIC`: <Cmdname sid="default" className="uitext" />
 
 <InDoc product="server">
 
 - `SERVER_LOG_FILE`: <Cmdname sid="sm_log_event_tab" className="uitext" />
+
+</InDoc>
+
+<InDoc product="server">
 
 </InDoc>
 
@@ -82,35 +86,21 @@ The sub properties of the `events` property correspond to the following event se
 
 </Xclude>
 
-:::note
-
-The structure of the JSON data and sub properties of the `events` property may differ depending on the product (`platform`) or product type (`productType`).
-
-:::
-
-:::caution
-
-If you arbitrarily modify the value of the `productType` or `platform` property among the JSON data properties, the events may not work in other projects.
-
-:::
-
 ### Load {#import-event-setting}
 
-1. On the screen, select <Cmdname sid="BTN07761" className="uitext" />.
+1. Click the ![Edit icon](/img/ico-edit.svg) <Cmdname sid="BTN07761" className="uitext" /> button at the top of the screen.
 
-2. If the JSON editing window appears, select <Cmdname sid="load" className="uitext" /> at the bottom of the screen.
+2. If the JSON editing window appears, click the **_Import_** button at the bottom of the screen.
 
-   <ImgLang img='event-config-v2-json-batch-edit.png' desc='JSON Batch Edit' />
-
-3. Using the <Cmdname sid="BTN07762" className="uitext" /> function, select a JSON file to download.
+3. Through the ![Download icon](/img/ico-download.svg) <Cmdname sid="BTN07762" className="uitext" /> feature, select the downloaded JSON file.
 
 4. Select <Cmdname sid="overwrite" className="uitext" />.
 
-5. When the confirmation message appears, select <Cmdname sid="overwrite" className="uitext" />.
+5. When the confirmation message appears, Click <Cmdname sid="overwrite" className="uitext" />.
 
-:::note
+:::caution
 
-- If overwritten, the previous event settings cannot be restored.
+If overwritten, the previous event settings cannot be restored.
 
 - If you arbitrarily modify the value of the `productType` or `platform` property, the events may not work in other projects.
 

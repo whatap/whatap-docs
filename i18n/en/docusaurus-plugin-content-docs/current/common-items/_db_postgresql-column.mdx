@@ -35,12 +35,15 @@ WhaTap basically stores the client-related information.
 
 <TabItem value="locktree" label="Lock tree">
 
-| Item           | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
-| `holder type`  | `Type` of the `holder` session (transaction ID, tuple, etc.) |
-| `lock mode`    | `holder_mode` (exclusive lock, shared lock, etc.)            |
-| `waiter type`  | `Type` of the `waiter` session (transaction ID, tuple, etc.) |
-| `lock request` | `waiter_mode` (exclusive lock, shared lock, etc.)            |
+| Item              | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `holder_relation` | Object (table or index) whose `holder` session has any lock.   |
+| `holder_type`     | `Type` of the `holder` session (transaction ID, tuple, etc.)   |
+| `lock_mode`       | `holder_mode` (exclusive lock, shared lock, etc.)              |
+| `lock_request`    | `waiter_mode` (exclusive lock, shared lock, etc.)              |
+| `state`           | Current status of each session (backend process)               |
+| `waiter_relation` | Object whose `waiter` session is waiting for lock acquisition. |
+| `waiter_type`     | `Type` of the `waiter` session (transaction ID, tuple, etc.)   |
 
 </TabItem>
 

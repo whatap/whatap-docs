@@ -9,7 +9,7 @@ keywords:
   - 非同期追跡
 ---
 
-Javaエージェント設定を介して非同期アプリケーション活動を追跡する方法を案内します。 `CompletableFuture`メソッドの収集方法と、ユーザーアプリケーションにそのメソッドをhookingする方法が含まれます。 設定例とともに*whatap.conf*ファイルに追加すべきオプションを提供し、非同期呼び出しの性能モニタリングを強化できるようにサポートします。
+Javaエージェント設定を介して非同期アプリケーション活動を追跡する方法を案内します。 `CompletableFuture`メソッドの収集方法と、ユーザーアプリケーションにそのメソッドをhookingする方法が含まれます。 設定例とともに*whatap.con*ファイルに追加すべきオプションを提供し、非同期呼び出しの性能モニタリングを強化できるようにサポートします。
 
 ## CompletableFuture
 
@@ -51,7 +51,7 @@ public class W {
 
 ### エージェント設定の追加
 
-エージェント設定のため、*whatap.conf*ファイルに次のオプションを追加します。
+エージェント設定のため、*whatap.con*ファイルに次のオプションを追加します。
 
 ```ini title='whatap.conf'
 hook_completablefuture_patterns=io.home.test.util.W.*

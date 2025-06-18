@@ -13,7 +13,7 @@ GoogleAppエンジン(Google Cloud App Engine)にPHPモニタリングエージ�
 
 GoogleAppエンジンPHPの**基本型は、PHP拡張型モジュールおよびサービスデーモンを実行できません**。Docker Container経由でインストールしてください。 
 
-GoogleAppエンジンの設定ファイルである_app.yaml_ファイルに`flex`環境、`custom`ランタイムを設定してください。
+GoogleAppエンジンの設定ファイルである*app.yaml*ファイルに`flex`環境、`custom`ランタイムを設定してください。
 
 ```yaml title=SH
 $ vi app.yaml
@@ -21,7 +21,7 @@ env: flex
 runtime: custom
 ```
 
-Custom Dockerで実行するには、`flex`環境と`custom`ランタイムで設定された_app.yaml_ファイルと同じ場所に_Dockerfile_を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参照してください。
+Custom Dockerで実行するには、`flex`環境と`custom`ランタイムで設定された*app.yaml*ファイルと同じ場所に_Dockerfile_を作成する必要があります。GoogleAppエンジンの基本php Docker画像を参照してください。
 
 ```docker title=Docker
 # google-appengine php php56, php70, php71
@@ -84,11 +84,11 @@ PHPモニタリングエージェントをインストールしてください�
 
 ## ファイアウォールルールの追加
 
-GoogleAppエンジンで使用するネットワークのファイアウォールルールを追加してください。発行されたサーバーIPに対して6600番ポートを経由してTCP送信を許可する必要があります。
+GoogleAppエンジンで使用するネットワークのファイアウォールルールを追加します。発行されたサーバーIPに対して6600番ポートを経由してTCP送信を許可する必要があります。
 
 ## 配布およびインスタンスの確認
 
-Google Cloud SDKを使用して設定された_app.yaml_ファイルと_Dockerfile_をデプロイしてください。
+Google Cloud SDKを使用して設定された*app.yaml*ファイルと_Dockerfile_をデプロイしてください。
 
 ```bash title=SH
 $ gcloud app deploy

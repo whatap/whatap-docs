@@ -30,7 +30,7 @@ import Dbinstallagentsteps from "../common-items/_db-install-agent-steps.mdx";
 
 <Dbinstallagentsteps />
 
-3. 解凍したフォルダの中から*whatap.conf*ファイルを確認してください。*whatap.conf*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力してください。
+3. 解凍したフォルダの中から*whatap.con*ファイルを確認してください。*whatap.con*ファイルにプロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
 
    ```ini title='whatap.conf'
    license=プロジェクトアクセスキー
@@ -59,7 +59,7 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 <Dbcreatemonitoringaccount />
 
 ```bash showLineNumbers
-create user whatap identified by 'DB_PASSWORD'; ## パスワードを入力してください。
+create user whatap identified by 'DB_PASSWORD'; ## パスワードを入力します。
 grant create session to whatap;
 grant select any dictionary to whatap;
  

@@ -38,7 +38,7 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 ## Agent CONFIG.
 
-Create the _whatap.conf_ file in which WhaTap's access key and server IP address have been set in the user application execution path. If you use a specific path, you can set it with the `WHATAP_HOME` environment variable.
+Create the *whatap.conf* file in which WhaTap's access key and server IP address have been set in the user application execution path. If you use a specific path, you can set it with the `WHATAP_HOME` environment variable.
 
 ```docker title='whatap.conf'
 RUN echo "accesskey={Access Key}" >> whatap.conf 
@@ -53,7 +53,7 @@ Be careful not to expose the **access key** to images that are in Docker Public 
 
 ### Setting the `WHATAP_HOME` variable
 
-You can set the _whatap.conf_ path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first. Add the `WHATAP_HOME` setting before the application startup command. 
+You can set the *whatap.conf* path as the `WHATAP_HOME` variable. Create the `WHATAP_HOME` path first. Add the `WHATAP_HOME` setting before the application startup command. 
 
 ```bash
 mkdir ./whatap_home
@@ -112,7 +112,7 @@ For more information about the library configuration, see [the following](../gol
 
 ## Configuring the container environment variables
 
-After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the _yaml_ file for releasing the application. 
+After building Docker, set **container environment variables** in the Kubernetes environment. Add the following items in the *yaml* file for releasing the application. 
 
 ```yaml
 env:

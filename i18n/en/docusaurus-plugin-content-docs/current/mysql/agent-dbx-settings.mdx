@@ -10,7 +10,7 @@ keywords:
 
 import AWSRDSdesc from '../common-items/_import_aws-rds-desc.mdx';
 
-Write the settings for the DBX agent in the _whatap.conf_ file. For the options that can be set, see the following.
+Write the settings for the DBX agent in the *whatap.conf* file. For the options that can be set, see the following.
 
 ## Default options
 
@@ -51,9 +51,49 @@ import Dbagentsettingdatacollection from "../common-items/_db-agent-setting-data
   variables_metric=uptime,version
   ```
 
+## Lock Collection Settings
+
+If the target DB for monitoring is MySQL 8.0 or later and the version of the DBX agent is 2.53.01 or later, you can provide various lock monitoring collection conditions.
+
+- **lock** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  Set whether to collect locks.
+
+- **skip_lock_active_limit** <span class='type'>Int</span>
+
+  Default `150`
+
+  When the number of active_sessions (Threads_running) is greater than the skip_lock_active_limit, locks are not collected.
+
+- **lock_interval_check** <span class='type'>Int</span>
+
+  Default `5 (s)`
+
+  Set the lock collection cycle.
+
+- **custom_lock_interval** <span class='type'>String</span>
+
+  Set the lock collection cycle for the specified time zone.
+
+    :::note
+
+    e.g. custom_lock_interval=60;0000-0230  # For the time zone from 00:00 to 02:30, set the lock collection cycle to 60 seconds.
+
+    custom_lock_interval=0;0000-0230 # For the time zone from 00:00 to 02:30, locks are not collected.
+
+    :::
+
 ## Active session exclusion settings
 
 The DBX agent collects a list of active sessions for MySQL, but it also provides the option to exclude specific sessions. Excluded sessions are not included when calculating the `total_runtime`, and its SQL does not appear in the <Cmdname sid="side_dbSqlStat" className="uitext" /> menu.
+
+- **limit_active_session** <span class='type'>Int</span>
+
+  Default `200`
+
+  Up to the specified number of active sessions are collected. If set to 0, collection is performed without the limit.
 
 - **skip_command** <span class='type'>String</span>
 

@@ -26,7 +26,7 @@ keywords:
 
 - **webservice_method_prefix** <span class='type'>String</span>
 
-  追跡するメソッド名をネームスペースを入力してください。 Web Serviceは直接追跡できないため、Web Serviceを使用したメソッドを直接追跡対象として入力する必要があります。
+  追跡するメソッド名をネームスペースを入力します。 Web Serviceは直接追跡できないため、Web Serviceを使用したメソッドを直接追跡対象として入力する必要があります。
 
   次の例を参照にしてください。
 
@@ -64,7 +64,7 @@ keywords:
 
 ### エージェント設定ファイルの修正
 
-WCFおよびWeb Serviceの追跡用エージェント設定ファイル(*whatap.conf*)についての例を参照してください。
+WCFおよびWeb Serviceの追跡用エージェント設定ファイル(*whatap.con*)についての例を参照してください。
 
 ```ini title="whatap.conf" showLineNumbers {10-12}
 license=...
@@ -150,7 +150,7 @@ namespace Whatap.DotNet.Examples
 Whatap.DotNet.Examples.Service1.GetData
 ```
 
-これは、エージェント設定ファイル(*whatap.conf*)で指定した`webservice_method_prefix`の値(`Whatap.DotNet.Examples.Service1`)から始まるため、トランザクションとして扱います。
+これは、エージェント設定ファイル(*whatap.con*)で指定した`webservice_method_prefix`の値(`Whatap.DotNet.Examples.Service1`)から始まるため、トランザクションとして扱います。
 
 :::note
 

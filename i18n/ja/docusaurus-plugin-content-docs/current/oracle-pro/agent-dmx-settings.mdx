@@ -1,0 +1,242 @@
+---
+id: agent-dmx-settings
+title: DMXエージェント設定
+description: whatap.confファイルで設定できるオプションについて説明します。
+keywords:
+  - Oracle Pro
+  - データベース
+  - DBXエージェント
+---
+
+DMXエージェントに必要な設定は、*whatap.conf*ファイルに作成します。 設定できるオプションについては、次を参照してください。
+
+### 基本オプション
+
+import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.mdx";
+
+<Dbagentdbxbasicoption />
+
+- **rac** <span class='type'>String</span> <code class="my">RAC</code>
+
+    Oracleの**Real Application Clusters**(**RAC**) クラスターグループに束ねられているインスタンスのグループ名を設定するオプションです。 このオプションを使用して、複雑なRACクラスター グループ名を簡潔で識別しやすい名前に設定できます。 このオプションによって設定されたRACクラスターグループ名は、WhaTapモニタリングサービス画面で確認できます。
+
+    例えば、RACクラスタグループ名が'**my_long_rac_cluster_group_name**'のように長い場合、ユーザーは次のように簡潔な名前で設定できます。
+
+  ```ini title="whatap.conf"
+  rac=my_rac_cluster_group
+  ```
+
+    WhaTapモニタリングサービスで'**my_rac_cluster_group**'と表示され、ユーザーはそのRACクラスターグループをすばやく識別してモニタリングできます。
+
+### データベースデータ収集オプション
+
+- **bind_elapse** <span class='type'>Int</span>
+
+    既定値`3`
+
+    SQLが設定した時間(秒)より長く実行すると、バインド値を収集するように設定します。 設定値が`0`であれば、オプションは機能しません。
+
+    `bind_interval`を設定しなくてもSQLの実行時間が設定値より長い場合は、バインド値が収集されます。 
+
+- **bind_interval** <span class='type'>Int</span>
+
+    既定値`0`
+
+    バインドキャプチャ間隔を秒単位で設定します。 デフォルト値(`0`)を設定するとバインドキャプチャしません。
+
+    `v$sql_bind_capture`で設定した間隔単位で収集します。 
+
+    データが多いかもしれないので、最後に収集した時間以降でありながら`bind_max_count`分だけ収集します。
+
+- **bind_max_count** <span class='type'>Int</span>
+
+    既定値 `1000`
+
+    バインドキャプチャ値を収集するときに、いくつまで収集するかを設定します。 最後の収集時間以降のバインドキャプチャ値のみを収集できます。
+
+- **codefrom / codeto** <span class='type'>Int</span>
+
+    既定値 `15`
+
+    SQL textで韓国語の文字化けの問題がある場合、文字エンコーディングを変えるオプションです。 指定する値は、iconv -lのリストから選択できます。
+
+- **conn_fail_count** <span class='type'>Int</span>
+
+    15回連続connection errorが発生した時に通知を送信します。 希望する回数を入力して、通知の発生基準を調整できます。
+
+    例) codefrom=EUC-KR, codeto=UTF-8
+
+- **event** <span class='type'>String</span>
+
+    既定値`db file scattered read`、`db file sequential read`、`direct path read`、`direct path write`、
+    `enq: TX - row lock contention`, `latch free`, `library cache lock`, `library cache pin`
+
+    RAC環境の時は、gc cr block receive time、gc current block receive timeの2つの指標を基にさらに収集します。 
+
+    イベント関連の指標を収集するように設定します。 `v$system_event`、`v$event_name`などの`EVENT`カラムを参照して収集したい指標名を作成してください。 `event+=`などの方法で作成すると、基本指標とともに追加で収集できます。 空白なくコンマ(,)を区切り文字として利用して複数入力できます。
+
+    イベント1つあたり、次の3つの値を収集します。
+
+  ```
+    - time waited : 当該イベントで待ち受けた総時間(単位: 1/100秒)。例) db file sequential read time waited
+
+    - timeouts : タイムアウトで終わった待機回数。例) db file sequential read total timeouts
+
+    - total waits : 当該イベントが発生した総回数。例) db file sequential read total waits
+  ```
+
+- **interval** <span class='type'>Int</span>
+
+    既定値`3` 
+
+    データ収集サイクルを秒単位で設定します。  
+
+    :::note
+
+    Oracle Proは、メモリアクセスを通じてアクティブセッション及びSQL情報を1/20秒単位で収集します。 このように収集されたデータに基づいてstatを生成するため、データの損失が少ないです。 `interval`オプションによって現在のDB状態を送信する際、stat、event、SQL stat、xview、lock、PQ情報はメモリから直接読み込み、迅速に処理されます。 一方、bind情報、DB parameter、plan情報、テーブル、テーブルスペース、Wait classなどはクエリーを通じて収集します。
+
+    :::
+
+- **multi_db_stat** <span class='type'>Boolean</span>
+
+    既定値 `true`
+
+    Multi DBを使用する場合、データベースごとに指標を収集するか、全体インスタンス単位で合算(sum)して収集するかを設定します。
+
+- **ora_hidden_param** <span class='type'>Boolean</span>
+
+    既定値`false`
+
+    ヒドゥンパラメータ値を収集するかを設定します。 ヒドゥンパラメータを収集するには、オプション値を`true`に設定してください。
+
+- **plan_change** <span class='type'>Int</span>
+
+    既定値`1`
+
+    プランの変更履歴を収集するかを設定します。  
+
+  - `1`: sysを含まない  
+  - `2`: sysを含む
+
+- **plan_elapse** <span class='type'>Int</span>
+
+    既定値`3`
+
+    実行時間が5秒以上かかるプランを収集します。
+
+- **segments** <span class='type'>Boolean</span>
+
+    既定値 `true`
+
+    セグメントサイズの情報を収集します。 統計/レポート > テーブルスペースのサイズメニューで該当データベースまたはテーブルスペースを選択すると、サイズ情報を確認できます。
+
+- **segments_exclude_sys** <span class='type'>Int</span>
+
+    既定値`1`
+
+    sysに該当するアカウントを除いて、セグメントのサイズ情報を収集します。
+
+- **segments_hour** <span class='type'>Int</span>
+
+    既定値`5`
+
+    セグメントサイズの情報を収集する時刻を設定します。 既定値は`5`であり、朝の5時に収集を始めます。
+
+- **segments_max_count** <span class='type'>Int</span>
+
+    既定値`50`
+
+    テーブルスペースごとにサイズの大きいセグメント50個だけを収集して保存します。
+
+- **segments_min_size** <span class='type'>Int</span>
+
+    既定値`10`
+
+セグメントサイズの情報を収集する最小単位の既定値は10MBです。 設定した値より小さいセグメントは収集しません。
+
+- **segments_sys** <span class='type'>String</span>
+
+    既定値:
+
+  <details>
+
+  ```
+    <summary>計18個のアカウントを表示</summary>
+
+    `APPQOSSYS`, `AUDSYS`, `CTXSYS`, `DBSFWUSER`, `DBSNMP`, `DVSYS`,  
+    `GSMADMIN_INTERNAL`, `LBACSYS`, `MDSYS`, `OJVMSYS`, `OLAPSYS`,    
+    `ORDDATA`, `ORDSYS`, `OUTLN`, `SYS`, `SYSTEM`, `WMSYS`, `XDB`
+  ```
+
+  </details>
+
+    sysに該当するアカウントの一覧です。 上記のアカウントに追加する場合は、`segments_sys+='xxx'`で追加できます。
+
+- **stat** <span class='type'>String</span>
+
+    既定値:
+
+  <details>
+
+  ```
+    <summary>計20個の指標を表示</summary>
+
+    `CPU used by this session`, `data blocks consistent reads - undo records applied`, `db block changes`,  
+    `db time`, `enqueue waits`, `execute count`, `logons current`, `opened cursors current`,  
+    `parse count (hard)`, `parse count (total)`, `physical reads`, `physical writes`, `redo entries`,  
+    `rollback changes - undo records applied`, `session logical reads`, `sorts (disk)`, `sorts (memory)`,  
+    `transaction tables consistent reads - undo records applied`, `user commits`, `user rollbacks`
+  ```
+
+  </details>
+
+    統計関連の指標を収集するように設定します。 `v$sysstat`、`v$statname`などの`NAME`カラムを参照して収集したい指標名を作成してください。 `stat+=`などの方法で作成すると、基本指標とともに追加で収集できます。 空白なくコンマ(,)を区切り文字として利用して複数入力できます。
+
+- **topevent** <span class='type'>Int</span>
+
+    既定値`50`
+
+    イベント関連の主要指標の変化を高い数値順に設定された値だけ収集します。 `stat_top`、`event_top`カテゴリのデータを使用します。 
+
+    :::note
+
+    このオプションは、値を設定しないと`topstat`の設定値に従って動作します。
+
+    :::
+
+- **topstat** <span class='type'>Int</span>
+
+    既定値`50`
+
+    統計関連の主要指標の変化を高い数値順に設定された値だけ収集します。 `stat_top`、`event_top`カテゴリのデータを使用します。
+
+- **xos** <span class='type'>Boolean</span>
+
+    既定値 `true`
+
+    データベースサーバーのリソースを追加でモニタリングするためのXOS エージェント(*xos.conf*)の活性化オプションです。
+
+- **xview_min** <span class='type'>Int</span>
+
+    既定値`100`(1秒)
+
+    単位はセンチ秒(centisecond, 1/100秒)です。 このオプションは、設定した値よりも長い経過時間(elapsed time)を持つジョブのみを処理します。  
+
+  - `-1`: このオプションを非活性化します。  
+  - `0`: すべての作業を収集します。
+
+### AES256暗号化の適用
+
+WhaTap DMXエージェントは、収集されたデータを暗号化してサーバーに送信します。 データの重要度や設定によって変更できます。 基本的にXOR演算とAESアルゴリズムによる暗号化を使用し、平文を128ビット単位に分割して暗号化、復号を行います。 ユーザー設定により、256ビットまで拡張できます。
+
+WhaTap DMXエージェントをインストールした経路で *whatap.conf*ファイルに次のようにオプションを追加します。
+
+```ini title='whatap.conf' {3} showLineNumbers
+cypher_level=256
+```
+
+設定を追加してから、エージェントを再起動してください。
+
+import Dbsettingagentnamedetails from "../common-items/_db-setting-agent-name-details.mdx";
+
+<Dbsettingagentnamedetails level={3} agentType="DMX" />

@@ -72,13 +72,13 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### 設定したメソッド開始時間をトレースに記録する
 
-1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.con*ファイルに記述してください。
 
    ```ini title='$WHATAP_HOME/whatap.conf'
    hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
    ```
 
-2. _TraceHelperStart.x_ファイルにプラグインコードを作成します。
+2. *TraceHelperStart.x*ファイルにプラグインコードを作成します。
 
    ```java title='$WHATAP_HOME/plugin/TraceHelperStart.x'
    // String prefixにクラス名、メソッド名を代入します。
@@ -95,7 +95,7 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### 設定したメソッド終了時間と実行時間をトレースに記録する
 
-1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.con*ファイルに記述してください。
 
    ```ini title='$WHATAP_HOME/whatap.conf'
    hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
@@ -325,7 +325,7 @@ if ($ctx.ok() && remoteIP != null) {
 
 ### Atomikos Poolモニタリング
 
-[API文書](https://www.atomikos.com/downloads/transactions-essentials/com/atomikos/AtomikosTransactionsEssentials/javadoc/3.7/com/atomikos/jdbc/AbstractDataSourceBean.html)を参照して適用してください。
+[API文書](https://www.atomikos.com/downloads/transactions-essentials/com/atomikos/AtomikosTransactionsEssentials/javadoc/3.7/com/atomikos/jdbc/AbstractDataSourceBean.html)を参照して適用します。
 
 ```ini title='whatap.conf'
 custom_pool_classes=atomikos@com.atomikos.jdbc.internal.AbstractDataSourceBean

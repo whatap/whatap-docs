@@ -15,7 +15,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   Default `true`
 
-  Set whether or not to collect real-time users. If this value is activated, the users are traced based on the IP or PHP default cookie (PHPSESSID) and framework cookies (ci_session, Laravel_session). If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not _whatap.ini_. 
+  Set whether or not to collect real-time users. If this value is activated, the users are traced based on the IP or PHP default cookie (PHPSESSID) and framework cookies (ci_session, Laravel_session). If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not *whatap.ini*. 
 
 <Phprestartapply />
 
@@ -23,7 +23,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   Default `false`
 
-  Set it to identify the real-time user by IP. The data can be checked in Real Time User. If the value is `false`, the users are classified based on the PHP default cookies and framework cookies (PHPSESSID, ci_session, Laravel_session). If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not _whatap.ini_.
+  Set it to identify the real-time user by IP. The data can be checked in Real Time User. If the value is `false`, the users are classified based on the PHP default cookies and framework cookies (PHPSESSID, ci_session, Laravel_session). If you have a whatap entry in _php.ini_ with a PHP compiled installation, add it to _php.ini_, not *whatap.ini*.
 
 <Phprestartapply />
 
@@ -39,7 +39,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   Default `false`
 
-  Set the HTTP key to differentiate users by a specific value in the HTTP header. Note that the `trace_user_using_ip` setting cannot be applied simultaneously. If the HTTP key cannot be found, users can be identified based on the cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not _whatap.ini_.
+  Set the HTTP key to differentiate users by a specific value in the HTTP header. Note that the `trace_user_using_ip` setting cannot be applied simultaneously. If the HTTP key cannot be found, users can be identified based on the cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _php.ini_, not *whatap.ini*.
 
 <Phprestartapply />
 
@@ -47,7 +47,7 @@ import Phprestartapply from "../common-items/_php-restart-apply.mdx";
 
   Default `false`
 
-  To identify users, the user identification values are set as `WHATAP` key names in cookies. If `trace_user_using_ip` is set, this value is not applied. If `trace_user_header_ticket` is set, this is set when the header key cannot be found. If the HTTP key cannot be found, users can be identified based on cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to _whatap.ini_, not _php.ini_.
+  To identify users, the user identification values are set as `WHATAP` key names in cookies. If `trace_user_using_ip` is set, this value is not applied. If `trace_user_header_ticket` is set, this is set when the header key cannot be found. If the HTTP key cannot be found, users can be identified based on cookies. If your PHP compiled installation has a `whatap` entry in _php.ini_, add it to *whatap.ini*, not _php.ini_.
 
 <Phprestartapply />
 

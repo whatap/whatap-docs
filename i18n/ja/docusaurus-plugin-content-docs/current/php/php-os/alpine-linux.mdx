@@ -12,31 +12,35 @@ import Phpinstallscript from "../../common-items/_php-install-script.mdx";
 
 ### 標準インストールのプロセス
 
-1. _whatap-php.tar.gz_をダウンロードして、_/_ディレクトリに基づいて解凍します。_/usr/whatap/php_ ディレクトリにモニタリングインストールファイルが作成されます。
+1. *whatap-php.tar.gz*をダウンロードして、_/_ディレクトリに基づいて解凍します。*/usr/whatap/php* ディレクトリにモニタリングインストールファイルが作成されます。
 
 <Tabs>
 
 <TabItem value="x64" label="x64" default>
 
-   ```docker title='x64'
-   wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
-   tar -xvzf whatap-php.tar.gz -C /
-   ```
+````
+```docker title='x64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/x86_64/whatap-php.tar.gz
+tar -xvzf whatap-php.tar.gz -C /
+```
+````
 
 </TabItem>
 
 <TabItem value="aarch64" label="AArch64" default>
 
-   ```docker title='AArch64'
-   wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-php.tar.gz
-   tar -xvzf whatap-php.tar.gz -C /
-   ```
+````
+```docker title='AArch64'
+wget https://s3.ap-northeast-2.amazonaws.com/repo.whatap.io/alpine/aarch64/whatap-php.tar.gz
+tar -xvzf whatap-php.tar.gz -C /
+```
+````
 
 </TabItem>
 
 </Tabs>
 
-2. <Phpinstallscript />
+1. <Phpinstallscript />
 
 import Phpextensionwhatap from "../../common-items/_php-extension-whatap.mdx";
 
@@ -60,4 +64,4 @@ import Phpextensionwhatap from "../../common-items/_php-extension-whatap.mdx";
   103 root      0:05 ./whatap_php_static -t=4
 ```
 
-インストールが終了した後、Apacheまたは、PHP-FPMサービスを再起動すると、設定されたPHP拡張モジュール_whatap.so_ファイルがロードされます。
+インストールが終了した後、Apacheまたは、PHP-FPMサービスを再起動すると、設定されたPHP拡張モジュール*whatap.so*ファイルがロードされます。

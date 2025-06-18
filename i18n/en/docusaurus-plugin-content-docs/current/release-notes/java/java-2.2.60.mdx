@@ -1,0 +1,61 @@
+---
+id: java-2_2_60
+title: Java Agent v2.2.60
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_59
+displayed_sidebar: releaseSidebar
+---
+
+May 29, 2025
+
+- <Status priority='1'>New</Status> Tracing `spring-cloud-openfeign-core`, `spring-cloud-circuitbreaker-resilience4j`
+
+  ```String
+  weaving=feign-11,resilience4j-circuitbreaker
+  ```
+
+- <Status priority='1'>New</Status> Tracing `feign-hystrix`
+
+  ```String
+  weaving=feign-11,feign-hystrix,hystrix-circuitbreaker
+  ```
+
+- <Status priority='1'>New</Status> `log4j-1.x` log collection
+
+  ```String
+  weaving=log4j-1
+  ```
+
+  - log4j-1.x log collection configuration
+
+    ```String
+    # default: false
+    # trace exception stack
+    trace_log4j_stack_enabled=true
+
+    # default: true
+    # trace standard out log
+    trace_log4j_stdout_enabled=true
+
+    # default: true
+    # trace log4j appender log
+    trace_log4j_appender_enabled=true
+
+    # example: ignore appender accessfile, file
+    # ignore_log4j_appender_set=accessfile,file
+    ignore_log4j_appender_set=
+    ```
+
+- <Status priority='1'>Changed</Status> Modified the levels in the AppServer category collected by the Tomcat log to match the Tomcat log level.
+
+  - warn → WARNING
+
+  - error, fatal → SEVERE
+
+- <Status priority='0'>Fixed</Status> Corrected typo in the class of the `db_pool_detail` metric (Hyris DataSource Pool → HikariPool).
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where errors cannot be collected when there is no response while calling FeignClient.
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.60" />

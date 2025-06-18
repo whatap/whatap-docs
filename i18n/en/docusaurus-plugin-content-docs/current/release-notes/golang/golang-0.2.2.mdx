@@ -10,9 +10,9 @@ June 21, 2023
 
 - <Status>Change</Status> Modified the agent configuration method.
 
-  - The _whatap.conf_ files are now configured for each process.
+  - The *whatap.conf* files are now configured for each process.
 
-  - The _whatap.conf_ file must have been created before running the process.
+  - The *whatap.conf* file must have been created before running the process.
 
   - The previous _/usr/whatap/agent/whatap.conf_ file uses only the whatap-agent service.
 
@@ -38,7 +38,7 @@ June 21, 2023
 
   By default, the IP of 127.0.0.1 and the port number of 6600 are used. For update, change the user application and the whatap-agent service configuration file. The changes are applied after restarting.
 
-  1. The _whatap.conf_ file of the user application has been changed.
+  1. The *whatap.conf* file of the user application has been changed.
 
   ```ini title='whatap.conf'
   # Change the host.
@@ -47,7 +47,7 @@ June 21, 2023
   net_ipc_port=6601
   ```
 
-  1. The _whatap.conf_ file of the whatap-agent service has been changed.
+  1. The *whatap.conf* file of the whatap-agent service has been changed.
 
   ```bash
   vi /usr/whatap/agent/whatap.conf
@@ -74,7 +74,7 @@ June 21, 2023
 
   - `{cmd_full}`: All the lines of the commands are hashed. All of the executable args.
 
-  - When using the same process and arguments, the agent name can be duplicated. The `app_name` option can be arbitrarily set in _whatap.conf_. For more information, see [the following](../../golang/install-agent#duplicate_appname). After configuration, be sure to restart the application.
+  - When using the same process and arguments, the agent name can be duplicated. The `app_name` option can be arbitrarily set in *whatap.conf*. For more information, see [the following](../../golang/install-agent#duplicate_appname). After configuration, be sure to restart the application.
 
   :::
 

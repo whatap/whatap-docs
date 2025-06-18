@@ -31,7 +31,7 @@ helm repo remove whatap
 | Error: INSTALLATION FAILED: Unable to continue with install: Namespace "whatap-monitoring" in namespace "" exists and cannot be imported into the current release |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-If the `whatap-monitoring` namespace exists in the cluster, it is because the user has already installed the Whatap Kubernetes agent based on the _yaml_ file. In this case, delete the existing `whatap-monitoring` namespace and related resources by using the following commands.
+If the `whatap-monitoring` namespace exists in the cluster, it is because the user has already installed the Whatap Kubernetes agent based on the *yaml* file. In this case, delete the existing `whatap-monitoring` namespace and related resources by using the following commands.
 
 ```shell
 kubectl delete namespace whatap-monitoring
@@ -112,11 +112,11 @@ helm install whatap-kube-agent whatap/kube --create-namespace --namespace <names
 | Unrecognized VM option 'UseCGroupMemoryLimitForHeap'<br/>Error: Could not create the Java Virtual Machine.<br/>Error: A fatal exception has occurred. Program will exit. |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
-If you installed WhaTap Kubernetes Monitoring via the installation _YAML_ downloaded before **August 24, 2022**, you may encounter an error or failure to start the node agent (whatap-node-agent). 
+If you installed WhaTap Kubernetes Monitoring via the installation *yaml* downloaded before **August 24, 2022**, you may encounter an error or failure to start the node agent (whatap-node-agent). 
 
-Possible causes are as follows. The installation _YAML_ file downloaded before August 24, 2022 contains a node agent launch script using the `UseCGroupMemoryLimitForHeap` JVM option. 
+Possible causes are as follows. The installation *yaml* file downloaded before August 24, 2022 contains a node agent launch script using the `UseCGroupMemoryLimitForHeap` JVM option. 
 
-Starting from WhaTap node agent **1.2.0** (released on November 21, 2022), the JDK used in the agent has been upgraded, and the upgraded JDK version no longer provides the `UseCGroupMemoryLimitForHeap` option. If you run the node agent 1.2.0 or later with the WhaTap Kubernetes Monitoring installed using a _YAML_ file downloaded before **August 24, 2022**, the startup fails with the message `Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`.
+Starting from WhaTap node agent **1.2.0** (released on November 21, 2022), the JDK used in the agent has been upgraded, and the upgraded JDK version no longer provides the `UseCGroupMemoryLimitForHeap` option. If you run the node agent 1.2.0 or later with the WhaTap Kubernetes Monitoring installed using a *yaml* file downloaded before **August 24, 2022**, the startup fails with the message `Unrecognized VM option 'UseCGroupMemoryLimitForHeap’`.
 
 #### Solution
 
@@ -124,7 +124,7 @@ To resolve this issue, reinstall the Kubernetes monitoring as follows:
 
 1. Download the latest *YAML* file by using <Cmdname sid="side_management" className="uitext" /> > <Cmdname sid="agentInstall" className="uitext" />
 
-2. Install the agent by using the _YAML_ file downloaded from the Kubernetes environment. 
+2. Install the agent by using the *yaml* file downloaded from the Kubernetes environment. 
 
 3. Check whether any errors are output during installation in the Kubernetes environment.
 
@@ -182,7 +182,7 @@ Currently only the Java agents are supported, and APMs for other languages are s
 
 ##### Configuring additional environment variables
 
-If Java application information does not appear in <Cmdname sid="side_containerMap" className="uitext" /> even after updating the agent version, you can solve the problem by adding user environment variables. This setting adds the `WHATAP_JAVA_AGENT_PATH` option to the container manifest (_YAML_) environment variable where the Java APM has been installed, indicating the absolute path to the Java agent within the container. 
+If Java application information does not appear in <Cmdname sid="side_containerMap" className="uitext" /> even after updating the agent version, you can solve the problem by adding user environment variables. This setting adds the `WHATAP_JAVA_AGENT_PATH` option to the container manifest (*yaml*) environment variable where the Java APM has been installed, indicating the absolute path to the Java agent within the container. 
 
 The following is an example of adding the corresponding option to the container environment variables where the Java APM has been installed. 
 

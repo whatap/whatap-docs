@@ -93,7 +93,7 @@ To configure the agent, the WhaTap project's access key and collection server IP
 
 ### Configuring the whatap.conf file
 
-Set the access key and collection server IP address in the agent configuration (_whatap.conf_) file.
+Set the access key and collection server IP address in the agent configuration (*whatap.conf*) file.
 
 ```bash
 echo "accesskey={ACCESS_KEY}" >> /usr/whatap/otel/whatap.conf 
@@ -112,7 +112,7 @@ WHATAP_OTEL_GRPC_SERVER_PORT={gRPC_SERVER_LISTENING_PORT}
 
 :::note
 
-If both environment variables and the _whatap.conf_ file have been configured, the settings in the _whatap.conf_ file take precedence.
+If both environment variables and the *whatap.conf* file have been configured, the settings in the *whatap.conf* file take precedence.
 
 :::
 
@@ -318,6 +318,86 @@ Enable the OpenTelemetry function of [Tyk Gateway](https://tyk.io/) and then che
 ```
 
 1. When the whatap-otel agent is connected to the OpenTelemetry Collector, trace data is collected.
+
+### Kong Gateway
+
+By configuring the built-in OpenTelemetry plugin in Kong Gateway, you can monitor transaction data through the OpenTelemetry Collector.
+
+Specify the OpenTelemetry Collector endpoint in the OpenTelemetry plugin. When the Whatap-otel agent connects to the Collector, trace data will be collected.
+
+1. kong.conf 
+
+    Enable trace settings.
+
+    ```ini
+    tracing_instrumentations = all
+    tracing_sampling_rate = 1
+    ```
+
+1. OpenTelemetry Plugin Configuration 
+
+    Register the endpoint URL of the OpenTelemetry Collector.
+
+    The default OTLP receiver settings are as follows:
+
+    - Protocol: http
+    - Port: 4318
+    - URL:
+        - Trace:  /v1/traces
+            - http://x.x.x.x:4318/v1/traces
+        - Log: /v1/logs
+            - http://x.x.x.x:4318/v1/logs
+
+    * Example default settings
+
+      ```yaml
+      traces_endpoint: http://otelcollector:4318/v1/traces
+      logs_endpoint: http://otelcollector:4318/v1/logs
+      ```
+
+    * Example kong.yaml configuration
+
+      ```yaml
+      plugins:
+        - name: opentelemetry
+          config:
+            traces_endpoint: http://otelcollector:4318/v1/traces
+            logs_endpoint: http://otelcollector:4318/v1/logs
+            resource_attributes:
+              service.name: kong-otel
+      ```
+
+    * Example plugin configuration via Admin API
+
+      ```bash
+      curl -X POST http://localhost:8001/services/plugins \
+      --header "accept: application/json" \
+      --header "Content-Type: application/json" \
+      --data '
+      {
+          "name": "opentelemetry",
+          "config": {
+              "traces_endpoint": "http://otelcollector:4318/v1/traces",
+              "logs_endpoint": "http://otelcollector:4318/v1/logs",
+              "resource_attributes": {
+                  "service.name": "kong-dev"
+              }
+          }
+      }
+      '
+      ```
+
+* **Supported version:** Kong Gateway 3.3.x or higher
+
+:::info
+
+For more detailed configuration instructions, refer to the following documentation.
+
+* [Set up Kong Gateway](https://docs.konghq.com/hub/kong-inc/opentelemetry/how-to/getting-started/)
+
+* [OpenTelemetry Configuration](https://docs.konghq.com/hub/kong-inc/opentelemetry/configuration/)
+
+:::
 
 ## Starting the monitoring
 

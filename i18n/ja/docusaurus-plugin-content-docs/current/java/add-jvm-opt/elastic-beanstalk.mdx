@@ -17,25 +17,25 @@ import Passnote from "./_pass-note.mdx";
 
 <Passnote />
 
-1. Spring Boot の結果をjarでデプロイする場合、_.ebextensions_の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
+1. Spring Boot の結果をjarでデプロイする場合、*.ebextensions*の内容は適用できません。次のファイルを圧縮して、zip形式でデプロイしてください。
 
    - _.elasticbeanstalk/config.yml_：ebコマンドを実行するディレクトリ下位に自動生成
    - _.ebextensions/`{config_name}`.config_：ebの設定ファイル
-   - _Procfile_：JVM command lineオプションを設定するためのファイル
-   - _`{application}`.jar_：実行するapplicaion.jarのファイル
+   - *Procfile*：JVM command lineオプションを設定するためのファイル
+   - *`{application}`.jar*：実行するapplicaion.jarのファイル
 
 2. Serviceに適用するWhaTapエージェントのファイルを圧縮し、S3(またはダウンロードできるpublicパス)にアップロードしてください。
 
    - *paramkey.txt*
-   - _whatap.agent-2.0_25.jar_
-   - *whatap.conf*
+   - *whatap.agent-2.0_25.jar*
+   - *whatap.con*
 
    ```bash
    # ディレクトリ圧縮
    zip -r whatap-agent.zip agent
    ```
 
-3. _.ebextension/`{config_name}`.config_ファイルにダウンロードするWhaTapエージェントパスを入力してください。
+3. _.ebextension/`{config_name}`.config_ファイルにダウンロードするWhaTapエージェントパスを入力します。
 
    ダウンロード用の圧縮ファイルがある場合、ebを実行して自動的にダウンロードして解凍します。
 
@@ -51,7 +51,7 @@ import Passnote from "./_pass-note.mdx";
        http://s3.ap-northeast-2.amazonaws.com/{bucket-name}/whatap-agent.zip
    ```
 
-4. WhaTapエージェントオプションを追加したJVM commandを入力して_Procfile_を作成してください。
+4. WhaTapエージェントオプションを追加したJVM commandを入力して*Procfile*を作成してください。
 
    ```yaml title='Procfile'
    web: java -javaagent:${WHATAP_JAR_FILE_PATH} -Dwhatap.name=${WHATAP_NAME} -Dwhatap.okind=${WHATAP_OKIND_NAME} -Dwhatap.server.home=${APPLICAION_PATH} -Dwhatap.conf.path=${WHATAP_HOME} -jar ${APPLICAIONT}.jar
@@ -61,13 +61,13 @@ import Passnote from "./_pass-note.mdx";
    web: java -javaagent:/home/webapp/agent/whatap.agent-X.Y.Z.jar -Dwhatap.name=bootTest -Dwhatap.okind=test -Dwhatap.server.home=/var/app/current -Dwhatap.conf.path=/home/webapp/agent -jar whatap-boot-test.jar
    ```
 
-5. _Procfile_ファイルと_.ebextensions_ファイル、_`{application}`.jar_ファイルを圧縮してください。
+5. *Procfile*ファイルと*.ebextensions*ファイル、*`{application}`.jar*ファイルを圧縮してください。
 
    ```bash
    zip -r {application}.zip Procfile .ebextensions/{application}.jar
    ```
 
-6. _.elasticbeanstalk/config.yml_ファイルにデプロイする zipファイルのパスを追加してください。
+6. _.elasticbeanstalk/config.yml_ファイルにデプロイする zipファイルのパスを追加します。
 
    ```yaml
    deploy:
