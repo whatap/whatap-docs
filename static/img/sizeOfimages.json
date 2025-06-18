@@ -13707,10 +13707,6 @@
     "width": 772,
     "height": 84
   },
-  "log-display-pi.png": {
-    "width": 758,
-    "height": 96
-  },
   "log-filter-comp.png": {
     "width": 348,
     "height": 54
@@ -13902,10 +13898,6 @@
   "log-highlight-ja.png": {
     "width": 448,
     "height": 308
-  },
-  "log-highlight.png": {
-    "width": 450,
-    "height": 304
   },
   "log-jason-parser-input-en.png": {
     "width": 1200,
@@ -14218,10 +14210,6 @@
   "log-table-contents-remove-tag.png": {
     "width": 682,
     "height": 83
-  },
-  "log-table-contents.png": {
-    "width": 800,
-    "height": 315
   },
   "log-timestamp-en.png": {
     "width": 1219,
