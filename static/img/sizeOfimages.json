@@ -14003,18 +14003,6 @@
     "width": 1125,
     "height": 564
   },
-  "log-lt-highlight-en.png": {
-    "width": 610,
-    "height": 309
-  },
-  "log-lt-highlight-ja.png": {
-    "width": 611,
-    "height": 303
-  },
-  "log-lt-highlight.png": {
-    "width": 611,
-    "height": 313
-  },
   "log-parsed-en.png": {
     "width": 1954,
     "height": 152
@@ -14062,18 +14050,6 @@
   "log-performance.png": {
     "width": 800,
     "height": 326
-  },
-  "log-search-adjacent-log-en.png": {
-    "width": 942,
-    "height": 666
-  },
-  "log-search-adjacent-log-ja.png": {
-    "width": 941,
-    "height": 664
-  },
-  "log-search-adjacent-log.png": {
-    "width": 943,
-    "height": 667
   },
   "log-search-content-search-highlight-en.png": {
     "width": 1619,
