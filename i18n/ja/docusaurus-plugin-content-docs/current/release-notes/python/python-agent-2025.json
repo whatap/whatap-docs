@@ -1,5 +1,77 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_5/",
+    "ver": "v1.8.5",
+    "date": "2025-06-18",
+    "Lists": [
+      {
+        "ver": "v1.8.5",
+        "hash": "v185",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>whatap.conf</code> にメトリクスカテゴリ <code>app_context_stat</code> 関連のオプションを追加</p>",
+        "details": "<ul>\n<li><p><strong>app_context_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>デフォルト値 <code>false</code></p>\n<br /><p><code>true</code> に設定すると、<code>app_context_stat</code> の収集機能が全体的に有効になります</p></li>\n<li><p><strong>app_context_parser</strong></p>\n<br /><p><code>default</code>: デフォルトパーサー（最初のパスセグメントを抽出）</p>\n<br /><p><code>prefix</code>: 接頭辞マッチングパーサー（最も柔軟）</p>\n<br /><p><code>match</code>: 完全一致パーサー（正確に一致するもののみ）</p></li>\n<li><p><strong>app_context_parser_reset</strong> <span class=\"type\">Number</span></p>\n デフォルト値 <p><code>0</code></p>\n<br /><p>パーサーの内部キャッシュと設定を強制的にリセットするカウンター</p></li>\n<li><p><strong>app_context_path_depth</strong> <span class=\"type\">Number</span></p>\n デフォルト値 <p><code>1</code></p>\n<br /><p>URL から抽出するパスセグメントの深さを指定（<code>default</code> パーサーのみ使用）</p></li>\n<li><p><strong>app_context_path_set</strong> <span class=\"type\">String</span></p>\n<p>デフォルト値なし</p>\n<br /><p>監視対象のパスとその名前を定義するマッピング設定（カンマ <code>,</code> 区切り）</p>\n<br /><p>例: <code>name1@url1,name2@url2,url3,name4@url4</code></p></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_4/",
+    "ver": "v1.8.4",
+    "date": "2025-06-09",
+    "Lists": [
+      {
+        "ver": "v1.8.4",
+        "hash": "v184",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>fastAPI</code> 呼び出し時に <code>StreamingResponse</code> が適用されていなかった問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_3/",
+    "ver": "v1.8.3",
+    "date": "2025-05-19",
+    "Lists": [
+      {
+        "ver": "v1.8.3",
+        "hash": "v183",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>Odoo</code>フレームワーク(v16,v17)追跡機能を追加</p>"
+      },
+      {
+        "ver": "v1.8.3",
+        "hash": "v183",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>SQLAlchemy</code>関連エラーを修正</p>",
+        "details": "<ul>\n<li>\n<p>現在追跡中のDBドライバーと衝突してクエリーメッセージが重複表示されていた問題を修正</p>\n</li>\n<li>\n<p>クエリ文にパラメータがバインドされていなかった問題を修正</p>\n</li>\n<li>\n<p>DB接続時に<code>user</code>値を入力しない場合、エラーが発生した問題を修正</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.8.3",
+        "hash": "v183",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>Flask</code>例外オブジェクト以外の例外オブジェクトを正常に処理できなかった問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_2/",
+    "ver": "v1.8.2",
+    "date": "2025-04-28",
+    "Lists": [
+      {
+        "ver": "v1.8.2",
+        "hash": "v182",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>ignore_whatap_stdout</code>オプションの未適用現象を修正</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_1",
     "ver": "v1.8.1",
     "date": "2025-04-23",

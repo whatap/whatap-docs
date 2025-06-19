@@ -1,5 +1,77 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_5/",
+    "ver": "v1.8.5",
+    "date": "2025-06-18",
+    "Lists": [
+      {
+        "ver": "v1.8.5",
+        "hash": "v185",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added options related to the <code>app_context_stat</code> matrix category in <code>whatap.conf</code></p>",
+        "details": "<ul>\n<li><p><strong>app_context_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default: <code>false</code></p>\n<br /><p>Set to <code>true</code> to enable the full <code>app_context_stat</code> collection feature</p></li>\n<li><p><strong>app_context_parser</strong></p>\n<br /><p><code>default</code>: Default parser (extracts the first path segment)</p>\n<br /><p><code>prefix</code>: Prefix matching parser (most flexible)</p>\n<br /><p><code>match</code>: Exact matching parser (matches only completely)</p></li>\n<li><p><strong>app_context_parser_reset</strong> <span class=\"type\">Number</span></p>\n<p>Default: <code>0</code></p>\n<br /><p>A counter that forcibly resets the parser’s internal cache and configuration</p></li>\n<li><p><strong>app_context_path_depth</strong> <span class=\"type\">Number</span></p>\n<p>Default: <code>1</code></p>\n<br /><p>Specifies the depth of the path segment to extract from the URL (used only with the <code>default</code> parser)</p></li>\n<li><p><strong>app_context_path_set</strong> <span class=\"type\">String</span></p>\n<p>No default value</p>\n<br /><p>Defines a mapping of paths to monitor and their corresponding names (separated by commas <code>,</code>)</p>\n<br /><p>Example: <code>name1@url1,name2@url2,url3,name4@url4</code></p></li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_4/",
+    "ver": "v1.8.4",
+    "date": "2025-06-09",
+    "Lists": [
+      {
+        "ver": "v1.8.4",
+        "hash": "v184",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where <code>fastAPI</code> was called without <code>StreamingResponse</code></p>"
+      }
+    ]
+  },  
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_3",
+    "ver": "v1.8.3",
+    "date": "2025-05-19",
+    "Lists": [
+      {
+        "ver": "v1.8.3",
+        "hash": "v183",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <code>Odoo</code> framework (v16,v17) tracing feature.</p>"
+      },
+      {
+        "ver": "v1.8.3",
+        "hash": "v183",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the <code>SQLAlchemy</code> related errors.</p>",
+        "details": "<ul>\n<li>Fixed the issue where query messages are duplicated due to conflicts with the DB driver while being traced.</li>\n<li>Fixed the issue where parameters are not bound in query statements.</li>\n<li>Fixed the issue where an error occurs when the <code>user</code> value is not entered when connecting to the DB.</li>\n</ul>"
+      },
+      {
+        "ver": "v1.8.3",
+        "hash": "v183",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where exceptional objects other than <code>Flask</code> are not handled properly.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_2",
+    "ver": "v1.8.2",
+    "date": "2025-04-28",
+    "Lists": [
+      {
+        "ver": "v1.8.2",
+        "hash": "v182",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the <code>ignore_whatap_stdout</code> option has not been applied.</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_1",
     "ver": "v1.8.1",
     "date": "2025-04-23",
