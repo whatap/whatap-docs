@@ -1,0 +1,44 @@
+---
+id: python-1_8_5
+title: Python Agent v1.8.5
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_4
+displayed_sidebar: releaseSidebar
+---
+
+June 18, 2025
+
+<Status priority='1'>New</Status> Added the `app_context_stat` option to the *whatap.conf* matrix category
+    
+    * **app_context_enabled** <span class='type'>Boolean</span>
+        * `false`: Default
+        * `true`: Enables the entire `app_context_stat` collection feature
+    
+    * **app_context_parser**
+
+        * Use one of `default`, `prefix`, or `match`
+        * `default`: Default parser (extracts the first path segment)
+        * `prefix`: Prefix matching parser (most flexible)
+        * `match`: Exact matching parser (only matches fully)
+    
+    * **app_context_parser_reset** <span class='type'>Number</span>
+
+        * A counter to forcibly reset the parser’s internal cache and configuration
+        * `0`: Default
+    
+    * **app_context_path_depth** <span class='type'>Number</span>
+
+        * Specifies the depth of the path segment to extract from the URL (used only with the default parser)
+        * `1`: Default
+    
+    * **app_context_path_set** <span class='type'>String</span>
+
+        * No default value
+        * A mapping configuration that defines the paths to monitor and their corresponding names (separated by `,`)
+            > Example: `name1@url1,name2@url2,url3,name4@url4`
+
+:::note
+
+Agent download: [whatap-python v1.8.5](https://pypi.org/project/whatap-python/1.8.5/)
+
+:::
