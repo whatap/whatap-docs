@@ -106,7 +106,6 @@ const sidebars = {
             'java/scale-in-auto-delete',
           ]
         },
-        'java/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -371,7 +370,6 @@ const sidebars = {
             'php/agent-remove'
           ]
         },
-        'php/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -613,7 +611,6 @@ const sidebars = {
           ]
         },
         'nodejs/agent-manage',
-        'nodejs/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -870,7 +867,6 @@ const sidebars = {
             'python/dashboard-hitmap-trace',
           ],
         },
-        'python/usage-ui',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -1097,7 +1093,6 @@ const sidebars = {
           label: '관리하기',
           id: 'dotnet/agent-manage'
         },
-        'dotnet/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -1325,7 +1320,6 @@ const sidebars = {
           ]
         },
         'golang/agent-manage',
-        'golang/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -1549,7 +1543,6 @@ const sidebars = {
           ],
         },
         'db2/agent-manage',
-        'db2/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -1729,7 +1722,6 @@ const sidebars = {
           ],
         },
         'sapase/agent-manage',
-        'sapase/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -1922,7 +1914,6 @@ const sidebars = {
         },
         'postgresql/cloudsettings',
         'postgresql/agent-manage',
-        'postgresql/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -2119,7 +2110,6 @@ const sidebars = {
           ],
         },
         'oracle-v1/agent-manage',
-        'oracle-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -2288,7 +2278,6 @@ const sidebars = {
         },
         'oracle/cloudsettings',
         'oracle/agent-manage',
-        'oracle/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -2498,7 +2487,6 @@ const sidebars = {
           ],
         },
         'oracle-pro/agent-manage',
-        'oracle-pro/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -2712,7 +2700,6 @@ const sidebars = {
         },
         'mysql/cloudsettings',
         'mysql/agent-manage',
-        'mysql/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -2921,7 +2908,6 @@ const sidebars = {
         },
         'mssql/cloudsettings',
         'mssql/agent-manage',
-        'mssql/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -3277,7 +3263,6 @@ const sidebars = {
           ],
         },
         'tibero/agent-manage',
-        'tibero/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -3445,7 +3430,6 @@ const sidebars = {
           ],
         },
         'cubrid/agent-manage',
-        'cubrid/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -3638,7 +3622,6 @@ const sidebars = {
           ],
         },
         'cubrid-v1/agent-manage',
-        'cubrid-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -3804,7 +3787,6 @@ const sidebars = {
           ],
         },
         'altibase/agent-manage',
-        'altibase/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -3996,7 +3978,6 @@ const sidebars = {
           ],
         },
         'altibase-v1/agent-manage',
-        'altibase-v1/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -4148,7 +4129,6 @@ const sidebars = {
           ],
         },
         'redis/agent-manage',
-        'redis/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -4325,7 +4305,6 @@ const sidebars = {
           ],
         },
         'mongodb/agent-manage',
-        'mongodb/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -4495,7 +4474,6 @@ const sidebars = {
           ]
         },
         'npm/set-tagrule',
-        'npm/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -5336,7 +5314,6 @@ const sidebars = {
         // 'about-billing',
         // 'software-proxy',
         'main-ui-intro-v2',
-        'usage-ui',
         'reference/data-collection-retention',
         {
           type: 'html',
@@ -5826,7 +5803,6 @@ const sidebars = {
           label: '설정하기',
           id: 'aws-log/aws-log-setting',
         },
-        'aws-log/usage-ui',
         {
           type: 'doc',
           label: '로그 파싱하기',
@@ -5986,7 +5962,6 @@ const sidebars = {
       },
       items: [
         'amazon-ecs/install-agent',
-        'amazon-ecs/usage-ui',
         'amazon-ecs/dashboard',
             {
               type: 'category',
@@ -6058,7 +6033,6 @@ const sidebars = {
       // },
       items: [
         'amazon-cloudwatch/install-agent',
-        'amazon-cloudwatch/usage-ui',
         'amazon-cloudwatch/dashboard',
             {
               type: 'category',
@@ -6129,7 +6103,6 @@ const sidebars = {
       // },
       items: [
         'azure/install-agent',
-        'azure/usage-ui',
         // 'azure/dashboard',
         {
           type: 'category',
@@ -6201,7 +6174,6 @@ const sidebars = {
       items: [
         'ncloud/install-agent',
         // 'ncloud/dashboard',
-        'ncloud/usage-ui',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -6272,7 +6244,6 @@ const sidebars = {
       items: [
         'oracle-cloud/install-agent',
         // 'oracle-cloud/dashboard',
-        'oracle-cloud/usage-ui',
         {
           type: 'category',
           label: 'Flex 보드',
@@ -6491,7 +6462,6 @@ const sidebars = {
       },
       items: [
         'url/url-install',
-        'url/usage-ui',
         {
           type: 'category',
           label: '경고 알림',
@@ -6558,7 +6528,6 @@ const sidebars = {
           ],
         },
         'browser/before-starting',
-        'browser/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -6751,7 +6720,6 @@ const sidebars = {
             'server/agent-remove',
           ],
         },
-        'server/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -6966,7 +6934,6 @@ const sidebars = {
             'nms/conf-syslog-setting',
           ]
         },
-        'nms/usage-ui',
         'nms/device-dashboard',
         {
           type: 'category',
@@ -7132,7 +7099,6 @@ const sidebars = {
             'kubernetes/uninstall-agent',
           ],
         },
-        'kubernetes/usage-ui',
         {
           type: 'category',
           label: '대시보드',
@@ -7571,7 +7537,15 @@ const sidebars = {
             'log/log-k8s',
           ],
         },
+<<<<<<< HEAD
         'log/usage-ui',
+=======
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'log/log-setting',
+        },
+>>>>>>> 020e50f26eefc066f99b49041914d85e8c92dd75
         {
           type: 'category',
           label: '로그 설정',
