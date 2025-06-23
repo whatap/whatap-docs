@@ -6187,10 +6187,6 @@
     "width": 600,
     "height": 211
   },
-  "db-common-folding-table.png": {
-    "width": 600,
-    "height": 211
-  },
   "db-common-multidb-preset.png": {
     "width": 400,
     "height": 62
@@ -8106,18 +8102,6 @@
   "db-job-info-mssql.png": {
     "width": 1200,
     "height": 1055
-  },
-  "db-kill-session-confirm-en.png": {
-    "width": 600,
-    "height": 232
-  },
-  "db-kill-session-confirm-ja.png": {
-    "width": 600,
-    "height": 233
-  },
-  "db-kill-session-confirm.png": {
-    "width": 600,
-    "height": 230
   },
   "db-layout-set-en.png": {
     "width": 600,

@@ -4989,13 +4989,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dbx-2_53_01',
+                  id: 'release-notes/db/dbx-2_54_02',
                   className: 'new',
                 },
+                'release-notes/db/dbx-2_54_01',
+                'release-notes/db/dbx-2_53_02',
+                'release-notes/db/dbx-2_53_01',
                 'release-notes/db/dbx-2_52_04',
-                'release-notes/db/dbx-2_52_02',
-                'release-notes/db/dbx-2_52_01',
-                'release-notes/db/dbx-2_51_01',
                 'release-notes/db/dbx-previous',
               ]
             },
@@ -5012,13 +5012,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/dmx-1_0_4s',
+                  id: 'release-notes/db/dmx-1_0_5a',
                   className: 'new',
                 },
+                'release-notes/db/dmx-1_0_4y',
+                'release-notes/db/dmx-1_0_4s',
                 'release-notes/db/dmx-1_0_4h',
                 'release-notes/db/dmx-1_0_2d',
-                'release-notes/db/dmx-1_0_2b',
-                'release-notes/db/dmx-1_0_2a',
                 'release-notes/db/dmx-previous',
               ]
             },
@@ -5035,14 +5035,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/db/xos-1_1_8v',
-                  // className: 'new',
+                  id: 'release-notes/db/xos-1_2_0d',
+                  className: 'new',
                 },
+                'release-notes/db/xos-1_1_8v',
                 'release-notes/db/xos-1_1_8f',
                 'release-notes/db/xos-1_1_8b',
                 'release-notes/db/xos-1_1_8a',
-                'release-notes/db/xos-1_1_6j',
-                'release-notes/db/xos-1_1_6g',
                 'release-notes/db/xos-previous',
               ]
             },
