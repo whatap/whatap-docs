@@ -8,11 +8,11 @@ On the initial screen of the WhaTap Monitoring service, select a project and the
 
 - The time selector allows you to select a time range to search. The default search period is **_1 day_**.
 
-  - If the search range is 3 hours or less, you can use the 5-second raw data to see the trend.
+  - If the selected range is 3 hours or less, a 5-second trend is displayed using raw data.
 
-  - If the search range is a day or less, you can use the 5-minute raw data to see the trend.
+  - If the selected range is within 7 days, a 5-minute trend is displayed using 5-minute statistics.
 
-  - If the search range is more than a day, you can use the 1-hour statistics to see the trend.
+  - If the selected range exceeds 7 days, a 1-hour trend is displayed using 1-hour statistics.
 
 - The application selector allows you to select all or specific applications to view. 
 
@@ -34,11 +34,13 @@ For more information on how to use the time selector, see [the following](usage-
 
 #### <Cmdname sid="rt_user" />
 
-It displays the number of real-time browser users. Users are counted based on their browser's IP. 
+Real-time users are counted based on unique browser IP addresses.
 
-- When using 5-minute statistics, it displays the number of unique users who invoked the requests in 5 minutes.
+- When using raw data, the number of unique browser IPs that sent requests within 10 seconds is counted.
 
-- When using 1-hour statistics, it displays the number of unique users who invoked the requests in 1 hour.
+- When using 5-minute statistics, the number of unique browser IPs that sent requests in the past 5 minutes is counted.
+
+- When using 1-hour statistics, the number of unique browser IPs that sent requests in the past hour is counted.
 
 #### <Cmdname sid="tps" />
 
