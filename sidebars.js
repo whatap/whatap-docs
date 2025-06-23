@@ -271,6 +271,7 @@ const sidebars = {
               items: [
                 'java/basic-event-setting',
                 'java/metric-warning-notice-new',
+                'java/transaction-event-setting',
               ]
             },
             'java/set-receive-event',
@@ -531,6 +532,7 @@ const sidebars = {
               items: [
                 'php/basic-event-setting',
                 'php/metric-warning-notice-new',
+                'php/transaction-event-setting',
               ]
             },
             'php/set-receive-event',
@@ -772,6 +774,7 @@ const sidebars = {
               items: [
                 'nodejs/basic-event-setting',
                 'nodejs/metric-warning-notice-new',
+                'nodejs/transaction-event-setting',
               ]
             },
             'nodejs/set-receive-event',
@@ -1014,6 +1017,7 @@ const sidebars = {
               items: [
                 'python/basic-event-setting',
                 'python/metric-warning-notice-new',
+                'python/transaction-event-setting',
               ]
             },
             'python/set-receive-event',
@@ -1256,6 +1260,7 @@ const sidebars = {
               items: [
                 'dotnet/basic-event-setting',
                 'dotnet/metric-warning-notice-new',
+                'dotnet/transaction-event-setting',
               ]
             },
             'dotnet/set-receive-event',
@@ -1481,6 +1486,7 @@ const sidebars = {
               items: [
                 'golang/basic-event-setting',
                 'golang/metric-warning-notice-new',
+                'golang/transaction-event-setting',
               ]
             },
             'golang/set-receive-event',
@@ -7372,6 +7378,7 @@ const sidebars = {
               items: [
                 'kubernetes/basic-event-setting',
                 'kubernetes/metric-warning-notice-new',
+                'kubernetes/transaction-event-setting',
               ]
             },
             'kubernetes/set-receive-event',
