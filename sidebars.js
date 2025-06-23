@@ -6792,6 +6792,8 @@ const sidebars = {
             'server/server-list',
             'server/server-detail',
             'server/server-detail-process-group',
+            'server/gpu-inventory',
+            'server/gpu-performance-summary',
           ]
         },
         // 'server/server-list',
