@@ -5143,6 +5143,7 @@ const sidebars = {
         'notification/rt-notification',
         'management/billing',
         'management/aws-marketplace',
+        'management/ai-chatbot',
         'management/maintenance',
         'management/userbehavior'
       ]
