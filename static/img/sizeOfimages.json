@@ -13451,10 +13451,6 @@
     "width": 1200,
     "height": 822
   },
-  "log-1st-parser-add.png": {
-    "width": 1200,
-    "height": 816
-  },
   "log-1st-parser-list-en.png": {
     "width": 1207,
     "height": 335
@@ -13695,10 +13691,6 @@
     "width": 772,
     "height": 84
   },
-  "log-display-pi.png": {
-    "width": 758,
-    "height": 96
-  },
   "log-filter-comp.png": {
     "width": 348,
     "height": 54
@@ -13891,10 +13883,6 @@
     "width": 448,
     "height": 308
   },
-  "log-highlight.png": {
-    "width": 450,
-    "height": 304
-  },
   "log-jason-parser-input-en.png": {
     "width": 1200,
     "height": 1207
@@ -13999,18 +13987,6 @@
     "width": 1125,
     "height": 564
   },
-  "log-lt-highlight-en.png": {
-    "width": 610,
-    "height": 309
-  },
-  "log-lt-highlight-ja.png": {
-    "width": 611,
-    "height": 303
-  },
-  "log-lt-highlight.png": {
-    "width": 611,
-    "height": 313
-  },
   "log-parsed-en.png": {
     "width": 1954,
     "height": 152
@@ -14035,18 +14011,6 @@
     "width": 761,
     "height": 722
   },
-  "log-parser-simulation2-en.png": {
-    "width": 1200,
-    "height": 776
-  },
-  "log-parser-simulation2-ja.png": {
-    "width": 1200,
-    "height": 773
-  },
-  "log-parser-simulation2.png": {
-    "width": 1200,
-    "height": 772
-  },
   "log-performance-en.png": {
     "width": 800,
     "height": 329
@@ -14058,18 +14022,6 @@
   "log-performance.png": {
     "width": 800,
     "height": 326
-  },
-  "log-search-adjacent-log-en.png": {
-    "width": 942,
-    "height": 666
-  },
-  "log-search-adjacent-log-ja.png": {
-    "width": 941,
-    "height": 664
-  },
-  "log-search-adjacent-log.png": {
-    "width": 943,
-    "height": 667
   },
   "log-search-content-search-highlight-en.png": {
     "width": 1619,
@@ -14206,10 +14158,6 @@
   "log-table-contents-remove-tag.png": {
     "width": 682,
     "height": 83
-  },
-  "log-table-contents.png": {
-    "width": 800,
-    "height": 315
   },
   "log-timestamp-en.png": {
     "width": 1219,

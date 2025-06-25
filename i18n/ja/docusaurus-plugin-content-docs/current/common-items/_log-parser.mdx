@@ -192,11 +192,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 1. GROKパターンパーサを適用するには、<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動します。
 
-   <ImgLang img='log-1st-parser-list.png' desc='ログパーサ一覧'/>
-
 2. ***+*** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で***GROK***パーサを選択します。
-
-   <ImgLang img='log-1st-parser-add.png' desc='ログパーサーの追加'/>
 
 3. <Cmdname sid="BTN08593" className="uitext" />ボタンを選択すると、右側にパターン登録とシミュレーション画面が表示されます。
 
@@ -207,8 +203,6 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
    > <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 
 5. シミュレーションの成功時<Cmdname sid="simulation_result" className="uitext" />と<Cmdname sid="TTL08604" className="uitext" />を照会できます。
-
-   <ImgLang img='log-parser-simulation2.png' desc='パーサーシミュレーションとパフォーマンス測定'/>
 
 6. シミュレーション後、<Cmdname sid="apply_pattern" className="uitext" />ボタンをクリックすると、選択したパーサーに入力したパターンが適用されます。 
 
@@ -256,26 +250,6 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 :::
 
-{/* 
-
-### シミュレーション{#grok-simulation}
-
-<Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />画面で<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を入力するとパーシング結果を確認できます。
-
-> <Cmdname sid="log" className="uitext" />例: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
->
-> <Cmdname sid="pattern" className="uitext" /> 例: `[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
-
-1. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で<Cmdname sid="simulation" className="uitext" />ボタンを選択します。
-
-2. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" />画面から<Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />を入力します。
-
-3. <Cmdname sid="log" className="uitext" />と<Cmdname sid="pattern" className="uitext" />入力後<Cmdname sid="simulation" className="uitext" />ボタンを選択します。 次のように<Cmdname sid="simulation_result" className="uitext" />を確認できます。
-
-   <ImgLang img='log-grok-parser-simulation.png' desc='GROKパーサシミュレーション'/>
-
-*/}
-
 ## JSONパーサ{#json-parser-detail}
 
 ログがJSONフォーマットで収集される場合、JSONパーサを使用して簡単かつ便利にパーシングできます。
@@ -286,11 +260,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 1. JSONパターンパーサを適用するには<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動します。
 
-   <ImgLang img='log-1st-parser-list.png' desc='ログパーサ一覧'/>
-
 2. ***+*** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で***JSON***パーサを選択します。
-
-   <ImgLang img='log-1st-parser-add.png' desc='ログパーサーの追加'/>
 
 3. <Cmdname sid="BTN08593" className="uitext" />ボタンを選択すると、右側にパターン登録とシミュレーション画面が表示されます。
 

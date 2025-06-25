@@ -192,11 +192,7 @@ If you parse with the above syntax, you can extract tags as follows.
 
 1. To apply the GROK pattern parser, go to the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab in <Cmdname sid="side_logSetting" className="uitext" />.
 
-   <ImgLang img='log-1st-parser-list.png' desc='Log parser list'/>
-
 2. Select **_+_** <Cmdname sid="adding" className="uitext" /> and then select the **_GROK_** parser in the <Cmdname sid="parser" className="uitext" /> field.
-
-   <ImgLang img='log-1st-parser-add.png' desc='Add Log Parser'/>
 
 3. When you select <Cmdname sid="BTN08593" className="uitext" />, the pattern registration and simulation window appears on the right.
 
@@ -207,8 +203,6 @@ If you parse with the above syntax, you can extract tags as follows.
    > <Cmdname sid="log" className="uitext" /> example: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
 
 5. If the simulation is successful, you can view <Cmdname sid="simulation_result" className="uitext" /> and <Cmdname sid="TTL08604" className="uitext" />.
-
-   <ImgLang img='log-parser-simulation2.png' desc='Parser simulation and performance measurement'/>
 
 6. When you click <Cmdname sid="apply_pattern" className="uitext" /> after simulation, the pattern that has been entered for the selected parser is applied. 
 
@@ -256,26 +250,6 @@ If you parse with the above syntax, you can extract tags as follows.
 
 :::
 
-{/* 
-
-### Simulation{#grok-simulation}
-
-You can check the parsed result in advance by entering <Cmdname sid="log" className="uitext" /> and <Cmdname sid="pattern" className="uitext" /> in the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" /> window.
-
-> <Cmdname sid="log" className="uitext" /> example: `[2023-08-08 02:02:30,101 GMT][INFO ][i.w.y.l.c.LogSinkDexScheduleThread.realProcess(159)] 8 VirtualLog 20230808 02:01:00.000 {area=4, city=5} 56ms`
->
-> <Cmdname sid="pattern" className="uitext" /> e.g. `[%{TIMESTAMP_ISO8601:date}\sGMT][%{LOGLEVEL:level}\s][%{DATA:caller}]\s(?<projectCode>\d)\s(?<logCategory>\w*)\s(?<dexBuildStartTime>\d{8}\s\d{2}:\d{2}:\d{2}\.\d{3})\s\{area=(?<areaEnum>\d),\scity=(?<cityEnum>\d)\}\s(?<dexBuildElapsed>\d{2})ms`
-
-1. In the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window, select <Cmdname sid="simulation" className="uitext" />.
-
-2. In the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="simulation" className="uitext" /> window, enter values for <Cmdname sid="log" className="uitext" /> and <Cmdname sid="pattern" className="uitext" />.
-
-3. After entry <Cmdname sid="log" className="uitext" /> and <Cmdname sid="pattern" className="uitext" />, select <Cmdname sid="simulation" className="uitext" />. You can check the <Cmdname sid="simulation_result" className="uitext" /> as follows:
-
-   <ImgLang img='log-grok-parser-simulation.png' desc='GROK parser simulation'/>
-
-*/}
-
 ## JSON parser{#json-parser-detail}
 
 If logs are collected in JSON format, they can be easily parsed using the JSON parser.
@@ -286,11 +260,7 @@ If logs are collected in JSON format, they can be easily parsed using the JSON p
 
 1. To apply the JSON pattern parser, go to the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab in <Cmdname sid="side_logSetting" className="uitext" />.
 
-   <ImgLang img='log-1st-parser-list.png' desc='Log parser list'/>
-
 2. Select **_+_** <Cmdname sid="adding" className="uitext" /> and then select the **_JSON_** parser in the <Cmdname sid="parser" className="uitext" /> field.
-
-   <ImgLang img='log-1st-parser-add.png' desc='Add Log Parser'/>
 
 3. When you select <Cmdname sid="BTN08593" className="uitext" />, the pattern registration and simulation window appears on the right.
 
