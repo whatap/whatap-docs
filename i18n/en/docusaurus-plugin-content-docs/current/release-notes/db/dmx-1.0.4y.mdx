@@ -1,0 +1,24 @@
+---
+id: dmx-1_0_4y
+title: DMX v1.0.4y
+pagination_prev: release-notes/db/dmx-1_0_4y
+displayed_sidebar: releaseSidebar
+---
+
+June 10, 2025
+
+* <Status priority='1'>New</Status> Added `shmon` feature to periodically run shell scripts and collect results  
+  * Enable with `shmon=1` in `xos.conf`  
+  * Place `.sh` files under the `shmon` directory in the agent folder to run them periodically and collect outputs
+
+* <Status priority='1'>New</Status> Added support for Oracle Pro 11.2.0.4 and 19.3 on AIX machines
+
+* <Status priority='1'>Feature</Status> Handled by a dedicated script manager thread
+
+* <Status priority='1'>Feature</Status> Execute `tkprof` during SQL trace using a separate thread
+
+* <Status priority='1'>Feature</Status> Added `trace_tkprof_path=` agent option
+
+* <Status priority='0'>Fixed</Status> Excluded `event in waitclass Other` from collection due to Oracle bug reporting abnormally large values
+
+* <Status priority='0'>Fixed</Status> Fixed a bug where `planchange` and `plansave` were not collected on Oracle 11g and earlier due to SQL errors

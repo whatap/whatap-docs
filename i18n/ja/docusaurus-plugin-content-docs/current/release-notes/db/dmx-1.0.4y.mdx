@@ -1,0 +1,24 @@
+---
+id: dmx-1_0_4y
+title: DMX v1.0.4y
+pagination_prev: release-notes/db/dmx-1_0_4y
+displayed_sidebar: releaseSidebar
+---
+
+2025年6月10日
+
+* <Status priority='1'>New</Status> シェルスクリプトを定期実行し結果を収集する `shmon` 機能を追加  
+  * `xos.conf` に `shmon=1` を設定  
+  * エージェントディレクトリ配下に `shmon` ディレクトリを作成し `.sh` ファイルを配置すると定期実行および結果収集が可能
+
+* <Status priority='1'>New</Status> AIX マシンで Oracle Pro 11.2.0.4、19.3 のサポートを追加
+
+* <Status priority='1'>Feature</Status> script manager スレッドで処理
+
+* <Status priority='1'>Feature</Status> SQLトレース時に `tkprof` をスレッドで実行
+
+* <Status priority='1'>Feature</Status> エージェントオプション `trace_tkprof_path=` を追加
+
+* <Status priority='0'>Fixed</Status> イベント収集時、`event in waitclass Other` を除外（Oracleのバグにより極端な値が入る場合がある）
+
+* <Status priority='0'>Fixed</Status> `planchange` および `plansave` が Oracle 11g 以下で SQL エラーにより収集されない問題を修正
