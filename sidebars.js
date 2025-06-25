@@ -5142,6 +5142,12 @@ const sidebars = {
         'notification/rt-notification',
         'management/billing',
         'management/aws-marketplace',
+        {
+          type: 'doc',
+          id: 'management/ai-chatbot',
+          label: 'WhaTap AI Chatbot',
+          className: 'beta'
+        },
         'management/maintenance',
         'management/userbehavior'
       ]
