@@ -3515,30 +3515,6 @@
     "width": 1200,
     "height": 475
   },
-  "browser-analysis-pageload-hitmap-en.png": {
-    "width": 1200,
-    "height": 955
-  },
-  "browser-analysis-pageload-hitmap-ja.png": {
-    "width": 1200,
-    "height": 955
-  },
-  "browser-analysis-pageload-hitmap-pagegroup-en.png": {
-    "width": 1200,
-    "height": 789
-  },
-  "browser-analysis-pageload-hitmap-pagegroup-ja.png": {
-    "width": 1200,
-    "height": 787
-  },
-  "browser-analysis-pageload-hitmap-pagegroup.png": {
-    "width": 1200,
-    "height": 787
-  },
-  "browser-analysis-pageload-hitmap.png": {
-    "width": 1200,
-    "height": 956
-  },
   "browser-analysis-user-session-log-details-ajax-en.png": {
     "width": 1200,
     "height": 480
@@ -4003,57 +3979,9 @@
     "width": 1200,
     "height": 591
   },
-  "browser-pageload-details-resource-error-en.png": {
-    "width": 1200,
-    "height": 579
-  },
-  "browser-pageload-details-resource-error-ja.png": {
-    "width": 1200,
-    "height": 580
-  },
-  "browser-pageload-details-resource-error-stack-en.png": {
-    "width": 1200,
-    "height": 555
-  },
-  "browser-pageload-details-resource-error-stack-ja.png": {
-    "width": 1200,
-    "height": 555
-  },
-  "browser-pageload-details-resource-error-stack.png": {
-    "width": 1200,
-    "height": 554
-  },
-  "browser-pageload-details-resource-error.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "browser-pageload-details-user-session-en.png": {
-    "width": 1200,
-    "height": 643
-  },
-  "browser-pageload-details-user-session-ja.png": {
-    "width": 1200,
-    "height": 647
-  },
-  "browser-pageload-details-user-session.png": {
-    "width": 1200,
-    "height": 645
-  },
   "browser-pageload-details.png": {
     "width": 1200,
     "height": 597
-  },
-  "browser-pageload-error-list-en.png": {
-    "width": 1200,
-    "height": 209
-  },
-  "browser-pageload-error-list-ja.png": {
-    "width": 1200,
-    "height": 209
-  },
-  "browser-pageload-error-list.png": {
-    "width": 1200,
-    "height": 208
   },
   "browser-pageload-hitmap-en.png": {
     "width": 1200,
@@ -4126,18 +4054,6 @@
   "browser-pageload-timeline.png": {
     "width": 1200,
     "height": 120
-  },
-  "browser-pageloadhitmap-details-session-replay-en.png": {
-    "width": 802,
-    "height": 431
-  },
-  "browser-pageloadhitmap-details-session-replay-ja.png": {
-    "width": 800,
-    "height": 425
-  },
-  "browser-pageloadhitmap-details-session-replay.png": {
-    "width": 800,
-    "height": 432
   },
   "browser-pageloadhitmap-session-replay-en.png": {
     "width": 1200,
@@ -18198,42 +18114,6 @@
   "rum-pageload-cwv-table.png": {
     "width": 1200,
     "height": 330
-  },
-  "rum-pageload-event-02-en.png": {
-    "width": 1199,
-    "height": 580
-  },
-  "rum-pageload-event-02-ja.png": {
-    "width": 1200,
-    "height": 580
-  },
-  "rum-pageload-event-02.png": {
-    "width": 1200,
-    "height": 578
-  },
-  "rum-pageload-event-03-en.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "rum-pageload-event-03-ja.png": {
-    "width": 1200,
-    "height": 579
-  },
-  "rum-pageload-event-03.png": {
-    "width": 1199,
-    "height": 580
-  },
-  "rum-pageload-event-04-en.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "rum-pageload-event-04-ja.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "rum-pageload-event-04.png": {
-    "width": 1200,
-    "height": 577
   },
   "rum-pageload-fid-en.png": {
     "width": 1200,
