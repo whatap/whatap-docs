@@ -3515,78 +3515,6 @@
     "width": 1200,
     "height": 475
   },
-  "browser-analysis-user-session-log-details-ajax-en.png": {
-    "width": 1200,
-    "height": 480
-  },
-  "browser-analysis-user-session-log-details-ajax-ja.png": {
-    "width": 1200,
-    "height": 484
-  },
-  "browser-analysis-user-session-log-details-ajax.png": {
-    "width": 1200,
-    "height": 467
-  },
-  "browser-analysis-user-session-log-details-click-en.png": {
-    "width": 1200,
-    "height": 574
-  },
-  "browser-analysis-user-session-log-details-click-ja.png": {
-    "width": 1200,
-    "height": 574
-  },
-  "browser-analysis-user-session-log-details-click.png": {
-    "width": 1200,
-    "height": 543
-  },
-  "browser-analysis-user-session-log-details-custom-en.png": {
-    "width": 1200,
-    "height": 495
-  },
-  "browser-analysis-user-session-log-details-custom-ja.png": {
-    "width": 1200,
-    "height": 470
-  },
-  "browser-analysis-user-session-log-details-custom.png": {
-    "width": 1200,
-    "height": 461
-  },
-  "browser-analysis-user-session-log-details-error-en.png": {
-    "width": 1200,
-    "height": 399
-  },
-  "browser-analysis-user-session-log-details-error-ja.png": {
-    "width": 1200,
-    "height": 372
-  },
-  "browser-analysis-user-session-log-details-error.png": {
-    "width": 1200,
-    "height": 481
-  },
-  "browser-analysis-user-session-log-details-pageload-en.png": {
-    "width": 1200,
-    "height": 521
-  },
-  "browser-analysis-user-session-log-details-pageload-ja.png": {
-    "width": 1200,
-    "height": 488
-  },
-  "browser-analysis-user-session-log-details-pageload.png": {
-    "width": 1200,
-    "height": 525
-  },
-  "browser-analysis-user-session-log-details-router-en.png": {
-    "width": 1200,
-    "height": 368
-  },
-  "browser-analysis-user-session-log-details-router-ja.png": {
-    "width": 1200,
-    "height": 414
-  },
-  "browser-analysis-user-session-log-details-router.png": {
-    "width": 1200,
-    "height": 410
-  },
   "browser-analysis-user-session-log-details-session-replay-en.png": {
     "width": 1200,
     "height": 718
@@ -3598,18 +3526,6 @@
   "browser-analysis-user-session-log-details-session-replay.png": {
     "width": 1200,
     "height": 718
-  },
-  "browser-analysis-user-session-log-filter-en.png": {
-    "width": 1200,
-    "height": 589
-  },
-  "browser-analysis-user-session-log-filter-ja.png": {
-    "width": 1200,
-    "height": 613
-  },
-  "browser-analysis-user-session-log-filter.png": {
-    "width": 1200,
-    "height": 636
   },
   "browser-cls-widget-en.png": {
     "width": 1200,
@@ -4190,42 +4106,6 @@
   "browser-search-user-session-category.png": {
     "width": 988,
     "height": 310
-  },
-  "browser-search-user-session-flow-en.png": {
-    "width": 800,
-    "height": 310
-  },
-  "browser-search-user-session-flow-ja.png": {
-    "width": 800,
-    "height": 382
-  },
-  "browser-search-user-session-flow.png": {
-    "width": 800,
-    "height": 311
-  },
-  "browser-search-user-session-infomation-en.png": {
-    "width": 800,
-    "height": 76
-  },
-  "browser-search-user-session-infomation-ja.png": {
-    "width": 800,
-    "height": 77
-  },
-  "browser-search-user-session-infomation.png": {
-    "width": 800,
-    "height": 72
-  },
-  "browser-search-user-session-log-analysis-en.png": {
-    "width": 1200,
-    "height": 776
-  },
-  "browser-search-user-session-log-analysis-ja.png": {
-    "width": 1200,
-    "height": 779
-  },
-  "browser-search-user-session-log-analysis.png": {
-    "width": 1200,
-    "height": 739
   },
   "browser-search-user-session-log-content.png": {
     "width": 1200,
