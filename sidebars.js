@@ -7543,15 +7543,11 @@ const sidebars = {
             'log/log-k8s',
           ],
         },
-<<<<<<< HEAD
         {
           type: 'doc',
           label: '설정하기',
           id: 'log/log-setting',
         },
-=======
-        'log/usage-ui',
->>>>>>> cdc4a21e97263082958a6ab1857182d01a6f3811
         {
           type: 'category',
           label: '로그 설정',
