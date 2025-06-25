@@ -98,8 +98,6 @@ The following are descriptions for major keys in the user session log.
 
 In the viewed user session log list, select <Cmdname sid="analysis" className="uitext" /> in the <Cmdname sid="TTL07736" className="uitext" /> column. The <Cmdname sid="TTL07736" className="uitext" /> window appears where you can see the details of the user session log for the selected item.
 
-<ImgLang img='browser-search-user-session-log-analysis.png' desc='User session analysis' />
-
 Based on the user session, you can see the events and errors that occur while interacting with the website in chronological order. You can use the user session analysis as the following and enjoy better user experience.
 
 - **On-page behavior analysis**: You can understand how the user navigates the website. It can analyze user activities on how you navigate, which pages you stay on, and which elements you click on. This helps you gain insight into how users use the website and understand the user behavior patterns by analyzing user paths.
@@ -110,23 +108,17 @@ Based on the user session, you can see the events and errors that occur while in
 
 ### User session information
 
-<ImgLang img='browser-search-user-session-infomation.png' desc='User session information' />
-
 You can view information such as end user's browser and OS, user agent, user ID, session ID, and client IP.
 
 ### User session flow
 
 Based on the user session, you can check the performance data, events, and errors that occur when actual users interact with the website.
 
-<ImgLang img='browser-search-user-session-flow.png' desc='User session flow' />
-
 ### Checking the event information details
 
 The types of events displayed in the <Cmdname sid="title" className="uitext" /> column of the <Cmdname sid="TTL07746" className="uitext" /> list are divided into the following. Select a user session event to see the information details about the event.
 
 #### <Cmdname sid="page_load" />(pageLoad)
-
-<ImgLang img='browser-analysis-user-session-log-details-pageload.png' desc='Page load event' />
 
 Event that occurs when the website is loaded. You can check the detailed time and loaded resources for each event section. If you select the <Cmdname sid="TTL07736" className="uitext" /> tab, the related information is displayed consequently.
 
@@ -138,13 +130,9 @@ For more information about the page load analysis, see [the following](analyze-p
 
 #### <Cmdname sid="TTL07752" />(routeChange)
 
-<ImgLang img='browser-analysis-user-session-log-details-router.png' desc='Routher change' />
-
 This event occurs when the route is changed on the SPA website. You can see the time taken to change the router.
 
 #### <Cmdname sid="TTL07755" />(ajax)
-
-<ImgLang img='browser-analysis-user-session-log-details-ajax.png' desc='AJAX load event' />
 
 AJAX request-related event. You can check the detailed time information, AJAX request URLs, call pages, error messages, and such for each AJAX event section. If you select the <Cmdname sid="TTL07736" className="uitext" /> tab, the related information is displayed consequently.
 
@@ -156,8 +144,6 @@ For more information about the AJAX event analysis, see [the following](analyze-
 
 #### <Cmdname sid="TTL07753" />(click) / <Cmdname sid="TTL07754" />(rapid_click)
 
-<ImgLang img='browser-analysis-user-session-log-details-click.png' desc='Click event' />
-
 You can see the selector that is the ID of the element clicked by the user, and the text information of the element. This helps you find which elements users clicked on which pages.
 
 :::note
@@ -167,8 +153,6 @@ To collect click events, it is required to set the option (`collectUserClick: tr
 :::
 
 #### <Cmdname sid="custom" />(custom)
-
-<ImgLang img='browser-analysis-user-session-log-details-custom.png' desc='Custom event' />
 
 You can check the information collected by custom events. It displays the information included in the title (`name`) and contents that are representative values of custom events.
 
@@ -180,8 +164,6 @@ For more information about collection of custom events, see [the following](coll
 
 #### <Cmdname sid="TTL07751" />(browser_error)
 
-<ImgLang img='browser-analysis-user-session-log-details-error.png' desc='Browser error' />
-
 You can see source errors, network errors, and the like that occur from the website.
 
 :::note
@@ -191,8 +173,6 @@ For more information about error tracing, see [the following](tracking-error).
 :::
 
 ### Event-based filtering
-
-<ImgLang img='browser-analysis-user-session-log-filter.png' desc='filter' />
 
 1. On the upper right of the <Cmdname sid="TTL07746" className="uitext" /> list, select <LinkImage img="ico-filter.svg" desc="필터 아이콘" />.
 
