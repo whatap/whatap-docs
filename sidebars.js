@@ -7067,8 +7067,8 @@ const sidebars = {
               },
               items: [
                 'kubernetes/install-whatap-operator',
-                'kubernetes/openagent',
                 'kubernetes/install-auto-application-agent',
+                'kubernetes/openagent',
               ],
             },
             'kubernetes/install-master-node-agent-v2',
