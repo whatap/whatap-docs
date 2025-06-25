@@ -7095,6 +7095,21 @@ const sidebars = {
             id: 'kubernetes/install',
           },
           items: [
+            {
+              type: 'category',
+              label: '와탭 오퍼레이터',
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'kubernetes/whatap-operator',
+              },
+              items: [
+                'kubernetes/install-whatap-operator',
+                'kubernetes/install-auto-application-agent',
+                'kubernetes/openagent',
+              ],
+            },
             'kubernetes/install-master-node-agent-v2',
             {
               type: 'category',
@@ -7110,7 +7125,7 @@ const sidebars = {
                 'kubernetes/install-docker-nodejs',
                 'kubernetes/install-docker-python',
                 'kubernetes/install-docker-php',
-                'kubernetes/install-docker-go'
+                'kubernetes/install-docker-go',
               ],
             },
             'kubernetes/create-name-space-project'
@@ -7301,6 +7316,7 @@ const sidebars = {
             'kubernetes/multiservice-hitmap',
             'kubernetes/analysis-msa',
             'kubernetes/analysis-stack',
+            'kubernetes/openmetrics_explorer',
           ],
         },
         {
