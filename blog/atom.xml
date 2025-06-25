@@ -2407,13 +2407,11 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="사용자-세션-분석">사용자 세션 분석<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%84%B8%EC%85%98-%EB%B6%84%EC%84%9D" class="hash-link" aria-label="사용자 세션 분석에 대한 직접 링크" title="사용자 세션 분석에 대한 직접 링크">​</a></h3>
 <p>새롭게 제공하는 <span class="uitext">사용자 세션 분석</span> 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다.</p>
 <p><span class="uitext">사용자 세션 로그 검색</span>, <span class="uitext">AJAX 히트맵</span>과 <span class="uitext">페이지 로드 히트맵</span>을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 <em><strong>AJAX 히트맵</strong></em>과 <span class="uitext">페이지 로드 히트맵</span>에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-search-user-session-log-analysis.png" alt="사용자 세션 분석 분기 예시" class="changelog-img" width="auto" height="auto"></p>
-<!-- -->
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="세션-리플레이">세션 리플레이<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%84%B8%EC%85%98-%EB%A6%AC%ED%94%8C%EB%A0%88%EC%9D%B4" class="hash-link" aria-label="세션 리플레이에 대한 직접 링크" title="세션 리플레이에 대한 직접 링크">​</a></h3>
 <p>새롭게 제공하는 <span class="uitext">세션 리플레이</span> 기능은 사용자가 웹 사이트에서 수행하는 모든 이벤트를 자동으로 기록하고 재생할 수 있는 기능입니다.</p>
 <p>사용자의 클릭, 스크롤, 입력, 페이지 전환 등과 같은 모든 이벤트를 정확하게 재현하여 웹 사이트와 사용자 사이의 상호작용을 분석할 수 있습니다. 이를 통해 실제 사용자 경험을 재현하여 잠재적인 문제를 빠르게 식별하고 해결할 수 있으며, 사용자의 웹 사이트 사용 방식에 대한 통찰을 제공하여 최적화를 도울 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="세션 리플레이 sc" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-24q2-browser1-9a2a14b2625639c2309b88bb0facfd3e.png" width="1288" height="613" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="��페이지-로드-통계">페이지 로드 통계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%93%9C-%ED%86%B5%EA%B3%84" class="hash-link" aria-label="페이지 로드 통계에 대한 직접 링크" title="페이지 로드 통계에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="페이지-로드-통계">페이지 로드 통계<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%93%9C-%ED%86%B5%EA%B3%84" class="hash-link" aria-label="페이지 로드 통계에 대한 직접 링크" title="페이지 로드 통계에 대��한 직접 링크">​</a></h3>
 <p>새롭게 제공하는 <span class="uitext">페이지 로드 통계</span> 기능은 웹 사이트의 페이지별 로드 성능 정보를 제공합니다. 각 페이지의 로드 과정을 추적하여 성능 저하 원인을 파악하고, 최적화된 페이지의 개선 효과를 확인할 수 있습니다. <em><strong>페이지 그룹</strong></em>을 기준으로 페이지 로드 시간 및 DOM 로드 시간, 네트워크 지연 시간, 리소스 로드 시간 등 다양한 성능 지표를 제공합니다. 이를 통해 페이지 성능 최적화 여부를 확인할 수 있습니다</p>
 <p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-pageload-statistics.png" alt="페이지 로드 통계 분기 예시" width="auto" height="auto"></p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>노트</div><div class="admonitionContent_BuS1"><ul>
@@ -2473,7 +2471,7 @@
 <br>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="kubernetes"><code>Kubernetes</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#kubernetes" class="hash-link" aria-label="kubernetes에 대한 직접 링크" title="kubernetes에 대한 직접 링크">​</a></h2>
 <!-- -->
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="컨트롤-플레인-모니터링">컨트롤 플레인 모니터링<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%8C%EB%A0%88%EC%9D%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="컨트롤 플레인 모니터링에 대한 직접 링크" title="컨트롤 플레인 모니터링에 대한 직접 링크">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="컨트롤-플레��인-모니터링">컨트롤 플레인 모니터링<a href="https://docs.whatap.io/whatap-docs/blog/2024-summary#%EC%BB%A8%ED%8A%B8%EB%A1%A4-%ED%94%8C%EB%A0%88%EC%9D%B8-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81" class="hash-link" aria-label="컨트롤 플레인 모니터링에 대한 직접 링크" title="컨트롤 플레인 모니터링에 대한 직접 링크">​</a></h3>
 <p>와탭 쿠버네티스 모니터링은 새롭게 <strong>컨트롤 플레인 모니터링</strong>을 제공합니다. 쿠버네티스 클러스터 전반을 관리하는 컨트롤 플레인 컴포넌트 중 클러스터 내 API 요청을 처리하는 kube-apiserver에 대한 가시성 확보를 위해 <span class="uitext">kube-apiserver 대시보드</span> 및 <span class="uitext">kube-apiserver 메트릭스 조회</span> 기능이 추가되었습니다.</p>
 <p><span class="uitext">kube-apiserver 대시보드</span>는 kube-apiserver의 상태 및 성능 메트릭 수집, 응답 시간, 처리량, 요청 실패 등을 추적하여 클러스터의 가용성과 성능을 모니터링할 수 있습니다. <span class="uitext">kube-apiserver 메트릭스 조회</span>를 통해서는 kube-apiserver 수집 지표 목록을 조회할 수 있습니다.</p>
 <p><img decoding="async" loading="lazy" alt="컨트롤 플레인 모니터링 sc cl" src="https://docs.whatap.io/whatap-docs/assets/images/changelog-k8s-kube-apiserver-c3a6ec1b34e8e287f3c9967d770287c9.png" width="1082" height="774" class="img_ev3q"></p>
@@ -4618,9 +4616,7 @@
 <p>와탭 2024년 1분기 <code>Browser</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 <span class="uitext">사용자 세션 분석</span> 기능 및 <em><strong>사용자 정의 이벤트 수집 기능</strong></em>을 소개합니다.</p>
 <p>이번 1분기에 새롭게 제공하는 <span class="uitext">사용자 세션 분석</span> 기능은 사용자의 웹 페이지 탐색 방식을 파악하고자 할 때 활용할 수 있습니다. 사용자가 어떻게 움직이고, 어떤 페이지에 머무르고 있는지, 화면의 어떤 요소를 클릭하는지, 화면에서 발생하는 에러 등에 관한 사용자의 전반적인 활동을 분석해 사용자가 서비스를 이용하는 방식에 대한 통찰을 얻는 것뿐 아니라 사용자의 행동 패턴을 이해하는 데에 더 가까워질 수 있습니다.</p>
 <p><span class="uitext">사용자 세션 로그 검색</span>, <span class="uitext">AJAX 히트맵</span>과 <span class="uitext">페이지 로드 히트맵</span>을 이용해 사용자의 페이지 내 행동 분석 및 세션 중 발생하는 여러 에러 추적이 가능합니다. 세션 로그 정보를 통해 최종 사용자의 경로, 이탈 원인, 성능 및 사용자 경험 등을 분석할 수 있습니다. 또한 <em><strong>AJAX 히트맵</strong></em>과 <span class="uitext">페이지 로드 히트맵</span>에서 실시간으로 문제를 겪고 있는 사용자를 파악할 수 있습니다. 이러한 정보를 통해 사용자의 서비스 경험과 서비스의 현재 성능 상태를 확인할 수 있습니다.</p>
-<p><img loading="lazy" src="https://docs.whatap.io/whatap-docs/img/browser-search-user-session-log-analysis.png" alt="사용자 세션 분석 분기 예시" class="changelog-img" width="auto" height="auto"></p>
 <p><em><strong>사용자 정의 이벤트 수집</strong></em> 기능은 브라우저 모니터링이 제공하는 기본 정보 외 사용자가 원하는 이벤트를 추가적으로 수집할 수 있는 인터페이스를 제공합니다. 브라우저 에이전트에서 제공하는 인터페이스 중 <code>addCustomEvent</code> 메소드를 이용해 사용자 정의형 이벤트를 수집 후 <span class="uitext">사용자 세션 로그 검색</span> 메뉴 또는 <span class="uitext">Flex 보드</span>를 통해 수집한 데이터를 조회할 수 있습니다.</p>
-<!-- -->
 <p>다음 개요 안내를 통해 2024년 1분기 <code>Browser</code> 상품의 신규 기능 및 주요 변경 사항을 해당 릴리스 버전과 함께 확인해 보세요.</p>
 <details class="details_lb9f alert alert--info details_b_Ee changelog" data-collapsed="true"><summary><b>신규 기능 및 주요 변경 사항 안내</b></summary><div><div class="collapsibleContent_i85q">
 <ul>
@@ -4695,7 +4691,7 @@
 </ul></div></div>
 <br>
 <!-- -->
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#log" class="hash-link" aria-label="log에 대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="log"><code>Log</code><a href="https://docs.whatap.io/whatap-docs/blog/2024-1q-summary#log" class="hash-link" aria-label="log에 �대한 직접 링크" title="log에 대한 직접 링크">​</a></h2>
 <p>와탭 2024년 1분기 <code>Log</code> 상품의 주목할 만한 신규 기능 및 변경 사항으로 개편된 <strong>로그 검색 필터 기능</strong>을 소개합니다.</p>
 <p><span class="uitext">로그 검색</span> 및 <span class="uitext">라이브 테일</span> 메뉴 내 <strong>로그 검색 필터 기능</strong>이 개편되었습니다. 검색 값 입력 시 안내 가이드 UI를 통해 지원하는 검색 문법을 확인할 수 있고, 키보드 입력으로 태그를 생성 및 수정하고 연산자를 클릭해 수정할 수 있는 기능이 추가되었습니다.</p>
 <p>또한 에이전트 옵션이 설정된 경우 로그 레벨(<span class="logwr">WARN</span>, <span class="loger">ERROR</span>, <span class="logft">FATAL</span>)을 수집해 로그 목록 왼쪽에서 해당 기준 색상을 표시하는 기능이 추가되었습니다.</p>

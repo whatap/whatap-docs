@@ -3515,102 +3515,6 @@
     "width": 1200,
     "height": 475
   },
-  "browser-analysis-pageload-hitmap-en.png": {
-    "width": 1200,
-    "height": 955
-  },
-  "browser-analysis-pageload-hitmap-ja.png": {
-    "width": 1200,
-    "height": 955
-  },
-  "browser-analysis-pageload-hitmap-pagegroup-en.png": {
-    "width": 1200,
-    "height": 789
-  },
-  "browser-analysis-pageload-hitmap-pagegroup-ja.png": {
-    "width": 1200,
-    "height": 787
-  },
-  "browser-analysis-pageload-hitmap-pagegroup.png": {
-    "width": 1200,
-    "height": 787
-  },
-  "browser-analysis-pageload-hitmap.png": {
-    "width": 1200,
-    "height": 956
-  },
-  "browser-analysis-user-session-log-details-ajax-en.png": {
-    "width": 1200,
-    "height": 480
-  },
-  "browser-analysis-user-session-log-details-ajax-ja.png": {
-    "width": 1200,
-    "height": 484
-  },
-  "browser-analysis-user-session-log-details-ajax.png": {
-    "width": 1200,
-    "height": 467
-  },
-  "browser-analysis-user-session-log-details-click-en.png": {
-    "width": 1200,
-    "height": 574
-  },
-  "browser-analysis-user-session-log-details-click-ja.png": {
-    "width": 1200,
-    "height": 574
-  },
-  "browser-analysis-user-session-log-details-click.png": {
-    "width": 1200,
-    "height": 543
-  },
-  "browser-analysis-user-session-log-details-custom-en.png": {
-    "width": 1200,
-    "height": 495
-  },
-  "browser-analysis-user-session-log-details-custom-ja.png": {
-    "width": 1200,
-    "height": 470
-  },
-  "browser-analysis-user-session-log-details-custom.png": {
-    "width": 1200,
-    "height": 461
-  },
-  "browser-analysis-user-session-log-details-error-en.png": {
-    "width": 1200,
-    "height": 399
-  },
-  "browser-analysis-user-session-log-details-error-ja.png": {
-    "width": 1200,
-    "height": 372
-  },
-  "browser-analysis-user-session-log-details-error.png": {
-    "width": 1200,
-    "height": 481
-  },
-  "browser-analysis-user-session-log-details-pageload-en.png": {
-    "width": 1200,
-    "height": 521
-  },
-  "browser-analysis-user-session-log-details-pageload-ja.png": {
-    "width": 1200,
-    "height": 488
-  },
-  "browser-analysis-user-session-log-details-pageload.png": {
-    "width": 1200,
-    "height": 525
-  },
-  "browser-analysis-user-session-log-details-router-en.png": {
-    "width": 1200,
-    "height": 368
-  },
-  "browser-analysis-user-session-log-details-router-ja.png": {
-    "width": 1200,
-    "height": 414
-  },
-  "browser-analysis-user-session-log-details-router.png": {
-    "width": 1200,
-    "height": 410
-  },
   "browser-analysis-user-session-log-details-session-replay-en.png": {
     "width": 1200,
     "height": 718
@@ -3622,18 +3526,6 @@
   "browser-analysis-user-session-log-details-session-replay.png": {
     "width": 1200,
     "height": 718
-  },
-  "browser-analysis-user-session-log-filter-en.png": {
-    "width": 1200,
-    "height": 589
-  },
-  "browser-analysis-user-session-log-filter-ja.png": {
-    "width": 1200,
-    "height": 613
-  },
-  "browser-analysis-user-session-log-filter.png": {
-    "width": 1200,
-    "height": 636
   },
   "browser-cls-widget-en.png": {
     "width": 1200,
@@ -4003,57 +3895,9 @@
     "width": 1200,
     "height": 591
   },
-  "browser-pageload-details-resource-error-en.png": {
-    "width": 1200,
-    "height": 579
-  },
-  "browser-pageload-details-resource-error-ja.png": {
-    "width": 1200,
-    "height": 580
-  },
-  "browser-pageload-details-resource-error-stack-en.png": {
-    "width": 1200,
-    "height": 555
-  },
-  "browser-pageload-details-resource-error-stack-ja.png": {
-    "width": 1200,
-    "height": 555
-  },
-  "browser-pageload-details-resource-error-stack.png": {
-    "width": 1200,
-    "height": 554
-  },
-  "browser-pageload-details-resource-error.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "browser-pageload-details-user-session-en.png": {
-    "width": 1200,
-    "height": 643
-  },
-  "browser-pageload-details-user-session-ja.png": {
-    "width": 1200,
-    "height": 647
-  },
-  "browser-pageload-details-user-session.png": {
-    "width": 1200,
-    "height": 645
-  },
   "browser-pageload-details.png": {
     "width": 1200,
     "height": 597
-  },
-  "browser-pageload-error-list-en.png": {
-    "width": 1200,
-    "height": 209
-  },
-  "browser-pageload-error-list-ja.png": {
-    "width": 1200,
-    "height": 209
-  },
-  "browser-pageload-error-list.png": {
-    "width": 1200,
-    "height": 208
   },
   "browser-pageload-hitmap-en.png": {
     "width": 1200,
@@ -4126,18 +3970,6 @@
   "browser-pageload-timeline.png": {
     "width": 1200,
     "height": 120
-  },
-  "browser-pageloadhitmap-details-session-replay-en.png": {
-    "width": 802,
-    "height": 431
-  },
-  "browser-pageloadhitmap-details-session-replay-ja.png": {
-    "width": 800,
-    "height": 425
-  },
-  "browser-pageloadhitmap-details-session-replay.png": {
-    "width": 800,
-    "height": 432
   },
   "browser-pageloadhitmap-session-replay-en.png": {
     "width": 1200,
@@ -4274,42 +4106,6 @@
   "browser-search-user-session-category.png": {
     "width": 988,
     "height": 310
-  },
-  "browser-search-user-session-flow-en.png": {
-    "width": 800,
-    "height": 310
-  },
-  "browser-search-user-session-flow-ja.png": {
-    "width": 800,
-    "height": 382
-  },
-  "browser-search-user-session-flow.png": {
-    "width": 800,
-    "height": 311
-  },
-  "browser-search-user-session-infomation-en.png": {
-    "width": 800,
-    "height": 76
-  },
-  "browser-search-user-session-infomation-ja.png": {
-    "width": 800,
-    "height": 77
-  },
-  "browser-search-user-session-infomation.png": {
-    "width": 800,
-    "height": 72
-  },
-  "browser-search-user-session-log-analysis-en.png": {
-    "width": 1200,
-    "height": 776
-  },
-  "browser-search-user-session-log-analysis-ja.png": {
-    "width": 1200,
-    "height": 779
-  },
-  "browser-search-user-session-log-analysis.png": {
-    "width": 1200,
-    "height": 739
   },
   "browser-search-user-session-log-content.png": {
     "width": 1200,
@@ -18146,42 +17942,6 @@
   "rum-pageload-cwv-table.png": {
     "width": 1200,
     "height": 330
-  },
-  "rum-pageload-event-02-en.png": {
-    "width": 1199,
-    "height": 580
-  },
-  "rum-pageload-event-02-ja.png": {
-    "width": 1200,
-    "height": 580
-  },
-  "rum-pageload-event-02.png": {
-    "width": 1200,
-    "height": 578
-  },
-  "rum-pageload-event-03-en.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "rum-pageload-event-03-ja.png": {
-    "width": 1200,
-    "height": 579
-  },
-  "rum-pageload-event-03.png": {
-    "width": 1199,
-    "height": 580
-  },
-  "rum-pageload-event-04-en.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "rum-pageload-event-04-ja.png": {
-    "width": 1200,
-    "height": 581
-  },
-  "rum-pageload-event-04.png": {
-    "width": 1200,
-    "height": 577
   },
   "rum-pageload-fid-en.png": {
     "width": 1200,
