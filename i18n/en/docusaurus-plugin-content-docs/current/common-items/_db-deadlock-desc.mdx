@@ -23,3 +23,27 @@ It provides deadlock information in the form of table.
 - For more information on how to use the <Cmdname sid="time" className="uitext" /> option, see [the following](usage-ui#timeselector).
 
 :::
+
+## Deadlock Collection
+
+### Collection Method
+
+The agent periodically runs the `SHOW ENGINE INNODB STATUS` command to collect deadlock information. Due to the nature of this command, only the **most recent deadlock** can be retrieved. If the collected information is identical to the previous one, it is not stored again.
+
+### Collection Interval
+
+By default, **information is collected every hour**. You can change this interval with the following agent option:
+
+- **deadlock_interval** (Int)  
+  Default: `60` (unit: minutes)  
+  Sets the interval for collecting deadlock information. Only **the last deadlock that occurred during the interval** is collected.
+
+:::note
+
+For more details on data collection settings, see the [following](https://docs.whatap.io/mysql/agent-dbx-settings#%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91).
+
+:::
+
+### Alarm Settings
+
+You can configure alerts for deadlock occurrences. However, since deadlock data is checked at the `deadlock_interval`, **alerts are not triggered in real time** but are sent based on deadlocks detected at each interval.
