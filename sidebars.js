@@ -7197,6 +7197,7 @@ const sidebars = {
             },
             'kubernetes/node-map',
             'kubernetes/performance-summary',
+            'kubernetes/dashboard-gpu'
           ]
         },
         {
@@ -7591,6 +7592,14 @@ const sidebars = {
             'log/log-k8s',
           ],
         },
+<<<<<<< HEAD
+=======
+        {
+          type: 'doc',
+          label: '설정하기',
+          id: 'log/log-setting',
+        },
+>>>>>>> 15fd7a0cf4d59c8989c638b5263bac3098473509
         {
           type: 'category',
           label: '로그 설정',
