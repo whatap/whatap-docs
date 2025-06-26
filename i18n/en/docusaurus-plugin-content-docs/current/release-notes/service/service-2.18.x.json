@@ -1,336 +1,184 @@
 [
   {
-    "url": "https://docs.whatap.io/en/release-notes/service/service-2_17_x",
-    "ver": "Service 2.16.2",
-    "date": "2025-04-29",
+    "url": "https://docs.whatap.io/release-notes/service/service-2_18_x",
+    "ver": "Service 2.18.0",
+    "date": "2025-06-26",
     "Lists": [
       {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Metrics Chart</span> <code class=\"newfunc\">New</code>, added ascending sorting for agents and metric names.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added WhaTap Docs link to the right of the service page title</p>"
       },
       {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">My Usage</span> &gt; <span class=\"uitext\">Invoice Preview History</span>, <span class=\"uitext\">Billing History</span>, and <span class=\"uitext\">Usage</span>, added separate billings by application namespace for Kubernetes products.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex 보드</span> 위젯의 가려진 프로젝트 이름 툴팁 표시 추가</p>"
       },
       {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span>, added the agent name and IP search input.</p>"
-      },
-      {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span>, added the pop-up for the file system information.</p>"
-      }
-    ]
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/service/service-2_16_x",
-    "ver": "Service 2.16.1",
-    "date": "2025-04-23",
-    "Lists": []
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/service/service-2_16_x",
-    "ver": "Service 2.16.0",
-    "date": "2025-04-23",
-    "Lists": [
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved the project description to be displayed when hovering your mouse over the project list.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex 보드</span> 위젯 검색 시, 폴더 내 위젯이 없을 경우 해당 폴더 미노출</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Occurrence of real-time notifications can also be checked through the browser.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved real-time alerts to sort by most recent</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the horizontal line option to the TopN widget of <span class=\"uitext\">Flex Board</span>.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Event Configuration</span>, added the event action time.</p>",
-        "details": "<ul>\n<li>\n<p><strong>Event Setting V1</strong></p>\n<p>Metrics/composite metrics/outlier detection/composite real-time log/server log → Added them above the event reception tag.</p>\n<p>Hitmap pattern → Added it at the bottom of the card.</p>\n</li>\n<li>\n<p><strong>Event Setting V2</strong></p>\n<p>Basic/metrics → Added to the following items for the resolved notifications.</p>\n<p>The other items are the same as V1.</p>\n</li>\n</ul>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Member List</span> 및 <span class=\"uitext\">Invite Member</span>, added the feature to display whether MFA and SSO are enabled next to the member email.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Notifications</span>, added the custom feature for the Webhook JSON response value in the 3rd party plugin.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When configuring the <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> metrics events, added the metrics search feature in the category selection, metrics settings, and target event selection steps.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to select traces with keyboard arrow keys when the list is focused in the <span class=\"uitext\">Trace analysis</span> window.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Loading indicator added when refreshing all data</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> On the <span class=\"uitext\">Active Transaction</span> screen, a list of active transactions can be downloaded as CSV.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">트랜잭션 맵</span> 필터 저장 기능 추가</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Enhanced the <span class=\"uitext\">Transaction map</span> past data searching feature.</p>",
-        "details": "<ul>\n<li>\n<p>Extended the maximum searchable time range (10 minutes → 1 hour).</p>\n</li>\n<li>\n<p>Adding filter items</p>\n<!-- -->\n<details class=\"details_lb9f alert alert--info details_b_Ee\" data-collapsed=\"true\"><summary>Added filters</summary><div><div class=\"collapsibleContent_i85q\"><ul>\n<li>\n<p><strong>General filters</strong></p>\n</li>\n<li>\n<p><strong>Referer</strong><br>\n<!-- -->Login ID, WClientId, transaction ID, multi transaction ID, custom TID, error (including class, step, and message), city, country, HTTP method, user agent</p>\n</li>\n<li>\n<p><strong>Trace step-related filters</strong><br>\n<!-- -->DBC, SQL, HTTPC, METHOD, MESSAGE</p>\n</li>\n<li>\n<p><strong>Number input filter</strong><br>\n<!-- -->Elapsed time, HTTP call time, HTTP call count, SQL time, SQL count, status</p>\n</li>\n</ul></div></div></details>\n</li>\n<li>\n<p>Added display of total number of transactions (read items) searched by the filter data.</p>\n</li>\n<li>\n<p>Added description tooltips for Read and Limit.</p>\n</li>\n<li>\n<p>Added the pause feature when searching the past data.</p>\n<ul>\n<li>\n<p>When the search button is clicked while searching the past data (loading), searching is paused.</p>\n</li>\n<li>\n<p>If you search again with the same conditions (time, filter), the data is retrieved from the stopped point.<br>\n<!-- -->(when changing the search conditions, the chart is initialized and a new drawing begins)</p>\n</li>\n</ul>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">트랜잭션 맵</span> 실시간 모드가 아닐 때, 조회 시간과 필터 정보를 URL에 저장</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">분석</span> &gt; <span class=\"uitext\">성능 추이</span> 종류별·서버별 에이전트를 선택할 수 있도록 개선 (종류와 관계없이 하나만 선택 가능)</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">실험실</span> &gt; <strong>비즈니스 대시보드</strong> 메뉴 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Server Inventory Map</span>, added display of the event count by status to the popover that appears when the mouse hovers over the server.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU 인벤토리</strong>, <strong>GPU 성능요약</strong> 신규 메뉴 출시</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Server Inventory Map</span> &gt; <strong>Display Detail</strong> window, added display of state-specific event counts in a popover when hovering the mouse over the server.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">서버 목록</span> &gt; <span class=\"uitext\">서버 상세</span> 과거 조회 시 삭제된 에이전트를 서버 선택(셀렉터)에서 조회할 수 있도록 수정</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server List</span>, the presets can be managed and shared with other users when the <span class=\"uitext\">Column settings</span> button is clicked.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">서버 목록</span> 관리 기능 버튼명 변경 및 설명 툴팁 추가</p>",
+        "details": "<ul>\n<li><strong>일시정지</strong> → <strong>알림 정지</strong>: “선택된 서버의 이벤트 발생을 일시 정지시킵니다\"</li>\n<li><strong>재시작</strong> → <strong>알림 재시작</strong>: “선택된 서버 중 알림 정지 상태인 서버의 이벤트 알림을 다시 활성화합니다.”</li>\n<li><strong>제외</strong>: “선택된 서버의 작동을 중지합니다. 서버 목록에서 제외되며 서버 현황을 확인할 수 없습니다.”</li>\n</ul>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Server Inventory</span> GPU Count column.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">서버 상세</span> 과거 시점 조회 시, 삭제된 서버라도 데이터가 남아 있는 경우 서버 선택 셀렉터에 비활성 상태로 표시</p>",
+        "details": "<ul>\n<li><code>yard.conf</code>의 <code>show_deleted_servers_in_range</code> 옵션이 활성화된 프로젝트에 적용</li>\n</ul>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Metrics Explorer</span>, added the category in which multiple metrics for a single server can be viewed in a chart.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Report</span>, upon selection of a disk filter template, added the mount point selector UI (e.g. daily hour-based server's key metrics report)</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span>, added the filter and favorite addition feature.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Upon <span class=\"uitext\">APP.</span> monitoring, in the <span class=\"uitext\">Record summary</span> tab of the <span class=\"uitext\">Trace analysis</span> window, added the container and Pod summary analyzing feature.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>분석</strong> &gt; <strong>오픈메트릭 탐색기</strong> 추가</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Kubernetes",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When the expand button is clicked on the left of the <span class=\"uitext\">Node</span> &gt; <span class=\"uitext\">Node list</span> column, added the disk information.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU 모니터링</strong> 출시</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">대시보드</span> &gt; <span class=\"uitext\">컨테이너 맵</span> GPU 지표 기반 색상 표시 기능 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span> and <span class=\"uitext\">Monitoring Multiple Instances</span> menus, added the sorting priority display when multi-sorting for tables.</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">통계/보고서</span> &gt; <span class=\"uitext\">SQL 통계</span> 지표에 마우스 오버 시 설명 표시 기능 추가</p>",
         "category": "Common"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Database size</span> and <span class=\"uitext\">Tablespace Size</span> menus, displayed the <code>string</code> as the DB name for the instances other than multi db.</p>",
-        "category": "Common"
+        "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> 인스턴스 맵 화면 신규 출시</li>",
+        "category": "MySQL, Oracle, Oracle Pro, PostgreSQL"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, added the sorting priority display when multi-sorting for tables.</p>",
-        "category": "Common"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">실험실</span> &gt; <strong>Top SQL</strong> 필터 추가</p>",
+        "category": "MySQL, Oracle V2, Oracle Pro"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Laboratory</span> &gt;  <em><strong>Top SQL</strong></em>, added the sorting priority display when multi-sorting for tables.</p>",
-        "category": "Common"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Top SQL</strong> 특정 지표에 마우스 오버 시 설명 표시 기능 추가</p>",
+        "category": "MySQL, Oracle V2, Oracle Pro"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to download chart images on the screen.</p>",
-        "category": "Common",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span> &gt; <em><strong>Custom widget</strong></em></p>\n</li>\n<li>\n<p><em><strong>Analysis</strong></em> &gt; <em><strong>Counts Trend Comparison</strong></em></p>\n</li>\n</ul>"
+        "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">대시보드</span> SQL Elapse Map 위젯 테이블 정보에 state 컬럼 추가</li>",
+        "category": "PostgreSQL"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, added new widget editing and preset saving features.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Session Table</span> filter, added the key searching feature and alphabetical sorting feature.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Flex Board</span> database widget.</p>",
-        "category": "Common",
-        "details": "<ul>\n<li>\n<p>CloudWatch instance-based CPU utilization (%)</p>\n</li>\n<li>\n<p>CloudWatch instance-based free memory</p>\n</li>\n<li>\n<p>CloudWatch instance-based free storage</p>\n</li>\n</ul>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the metrics of the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Wait Analysis</span> menu, added the tooltip where you can check the unit.</p>",
-        "category": "Oracle, Oracle Pro"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">RAC monitoring</span>, modified to save the selected cluster.</p>",
-        "category": "Oracle, Oracle Pro"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the installation page.</p>",
-        "category": "SAP ASE"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Tablespace Size</span> menu.</p>",
-        "category": "SAP ASE"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added widgets in <span class=\"uitext\">Integrated Flex Board</span> and <span class=\"uitext\">Flex Board</span>.</p>",
-        "category": "SQL Server"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Cloud",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Maintenance Plan</span> menu.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Browser",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When sharing the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Error Tracking</span> and <span class=\"uitext\">User Session Log Search</span> URLs, improved to maintain the status (time, filer, etc).</p>",
-        "details": "<ul>\n<li><span class=\"uitext\">Error Tracking</span>: Time clicked in the time and chart bars.</li>\n<li><span class=\"uitext\">User Session Log Search</span>: Sort by time, filter, oldest time, and latest time.</li>\n</ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> iOS 프로젝트 추가</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Log",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Log Search</span> and <span class=\"uitext\">Live Tail</span>, added the filter favorite and project sharing features.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 로그 CSV, TXT 다운로드 기능 추가</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
         "product": "Log",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When the <span class=\"uitext\">Log Trend</span> and <span class=\"uitext\">Log Search</span> logs contain <code>@txid</code>, and <code>@mtid</code>, added the feature to check the trace pop-up through the transaction information drop-down (Log-Trace integrated).</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Log",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the button to move from the trace log to the log search.\n(The APM pages are integrated that can check the transaction information such as <em><strong>Application dashboard</strong></em>, <span class=\"uitext\">Transaction map</span>, <span class=\"uitext\">Transaction Search</span>, and <span class=\"uitext\">Multiple Transaction Trace</span>)</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Log",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved to maintain the UI status (time, filter, etc) when sharing the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span> and <span class=\"uitext\">Log Trend</span>, <span class=\"uitext\">Log Search</span> URLs.</p>",
-        "details": "<ul>\n<li><span class=\"uitext\">Live Tail</span>: Category, filter</li>\n<li><span class=\"uitext\">Log Trend</span>: Time clicked in the time, category, and chart bars.</li>\n<li><span class=\"uitext\">Log Search</span>: Sort by time, filter, oldest time, and latest time.</li>\n</ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">로그 설정</span> &gt; <span class=\"uitext\">로그 1차 파서 설정</span> 등록 및 수정 시 로그 샘플 선택 동선 제공</p>"
       }
     ]
   }
-  ]
+]
