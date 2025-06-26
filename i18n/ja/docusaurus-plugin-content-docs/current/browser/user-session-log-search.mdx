@@ -98,8 +98,6 @@ Browser Monitoringで収集するユーザーセッションログは、次の�
 
 ユーザーセッションのログ照会一覧で<Cmdname sid="TTL07736" className="uitext" />カラムの<Cmdname sid="analysis" className="uitext" />ボタンを選択します。 選択した項目のユーザーセッションログの詳細情報が確認できる<Cmdname sid="TTL07736" className="uitext" />画面が表示されます。
 
-<ImgLang img='browser-search-user-session-log-analysis.png' desc='ユーザーセッション分析' />
-
 ユーザーセッションを基準にウェブページと相互作用しながら発生させたイベントやエラーなどを時間順に確認できます。 ユーザーセッションの分析により、次のように活用し、より良いユーザー体験を提供できます。
 
 - **ページ内の行動分析**：ユーザーがウェブページを利用するパターンを理解できます。 どのように動くのか、どのページにとどまっているのか、画面のどのような要素をクリックするのかなど、ユーザーの行動を分析できます。 この機能で、ユーザーがサイトを利用する方法について直観でき、ユーザーの経路を分析してユーザーの行動パターンを把握できます。
@@ -110,23 +108,17 @@ Browser Monitoringで収集するユーザーセッションログは、次の�
 
 ### ユーザーセッション情報
 
-<ImgLang img='browser-search-user-session-infomation.png' desc='ユーザーセッション情報' />
-
 エンドユーザーのブラウザーやOS、ユーザーエージェント、ユーザーID、セッションID、クライアントIPなどの情報を照会できます。
 
 ### ユーザーセッションフロー
 
 ユーザーセッションに基づいて、実際のユーザーがウェブサイトと相互作用する際に発生させた性能情報やイベント、エラーを確認できます。
 
-<ImgLang img='browser-search-user-session-flow.png' desc='ユーザーセッションフロー' />
-
 ### イベントの詳細情報を確認する
 
 <Cmdname sid="TTL07746" className="uitext" />一覧の<Cmdname sid="title" className="uitext" />カラムに表示されるイベントの種類は、次のように分類されます。 各ユーザー セッションイベントを選択すると、そのイベントの詳細を確認できます。
 
 #### <Cmdname sid="page_load" />(pageLoad)
-
-<ImgLang img='browser-analysis-user-session-log-details-pageload.png' desc='ページロードイベント' />
 
 ウェブページを読み込みする時に発生するイベントです。 イベント区間別の詳細時間情報と読み込みしたリソースの詳細を確認できます。 <Cmdname sid="TTL07736" className="uitext" />タブを選択すると、関連情報を連続して把握できます。
 
@@ -138,13 +130,9 @@ Browser Monitoringで収集するユーザーセッションログは、次の�
 
 #### <Cmdname sid="TTL07752" />(routeChange)
 
-<ImgLang img='browser-analysis-user-session-log-details-router.png' desc='ルーター変更' />
-
 SPAウェブページでルーター変更時に発生するイベントです。 ルーターの変更にかかった時間を確認できます。
 
 #### <Cmdname sid="TTL07755" />(ajax)
-
-<ImgLang img='browser-analysis-user-session-log-details-ajax.png' desc='Ajaxロードイベント' />
 
 AJAX要求関連のイベントです。 AJAXイベント区間別の詳細時間情報やAJAX要求URL、呼び出しページ情報、エラーメッセージなどが確認できます。 <Cmdname sid="TTL07736" className="uitext" />タブを選択すると、関連情報を連続して把握できます。
 
@@ -156,8 +144,6 @@ AJAXイベント分析の詳細は、[次の文書](analyze-ajax-hitmap)を参�
 
 #### <Cmdname sid="TTL07753" />(click) / <Cmdname sid="TTL07754" />(rapid_click)
 
-<ImgLang img='browser-analysis-user-session-log-details-click.png' desc='クリックイベント' />
-
 ユーザーがクリックした要素のIDであるセレクタとその要素のテキスト情報を確認できます。 この機能で、ユーザーがどのページでどの要素をクリックしたかを把握できます。
 
 :::note
@@ -167,8 +153,6 @@ AJAXイベント分析の詳細は、[次の文書](analyze-ajax-hitmap)を参�
 :::
 
 #### <Cmdname sid="custom" />(custom)
-
-<ImgLang img='browser-analysis-user-session-log-details-custom.png' desc='ユーザー定義イベント' />
 
 ユーザー定義イベントで収集された情報を確認することができます。 ユーザー定義イベントの代表値であるタイトル(`name`)とContentsに含まれる情報を表示します。
 
@@ -180,8 +164,6 @@ AJAXイベント分析の詳細は、[次の文書](analyze-ajax-hitmap)を参�
 
 #### <Cmdname sid="TTL07751" />(browser_error)
 
-<ImgLang img='browser-analysis-user-session-log-details-error.png' desc='ブラウザエラー' />
-
 ウェブページで発生するソースエラー、ネットワークエラーなどを確認することができます。
 
 :::note
@@ -191,8 +173,6 @@ AJAXイベント分析の詳細は、[次の文書](analyze-ajax-hitmap)を参�
 :::
 
 ### イベントごとにフィルタリングする
-
-<ImgLang img='browser-analysis-user-session-log-filter.png' desc='フィルター' />
 
 1. <Cmdname sid="TTL07746" className="uitext" />リストの右上の<LinkImage img="ico-filter.svg" desc="フィルターアイコン" />ボタンを選択します。
 

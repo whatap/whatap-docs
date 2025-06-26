@@ -22,7 +22,7 @@ The [Page Load](before-starting#load-page) event occurs when an end user visitin
 
 You can analyze load events on a single page basis. It provides the hitmap and various metrics to analyze the page load performance.
 
-<ImgLang img='browser-analysis-pageload-hitmap.png' desc='Page Load Hitmap' />
+<ImgLang img='browser-user-action-hitmap.png' desc='user-action-hitmap' />
 
 Drag the chart area of the ![Leader line 1](/img/number-01.png) <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget. The page load event list of the dragged area is fetched to ![Leader line 2](/img/number-02.png) <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" /> at the bottom of the screen, and the events are classified by [Page Group](before-starting#page-group) and then fetched as ![Leader line 4](/img/number-04.png) <Cmdname sid="page_group" className="uitext" /> <Cmdname sid="list" className="uitext" /> on the right of the screen. In ![Leader line 3](/img/number-03.png) <Cmdname sid="page_url" className="uitext" />, the desired page list can be searched.
 
@@ -70,8 +70,6 @@ You can add other data columns to the table, or you can hide the added columns. 
 
 - In the page list, the page load events that contain browser errors appear in red.
 
-  <ImgLang img='browser-pageload-error-list.png' desc='Browser error data' />
-
 - WhaTap basically stores the client-related information.
 
 :::
@@ -94,15 +92,11 @@ You can enter a search word for the page list and then filter for matches. The s
 
 ### ![](/img/number-04.png) Page group list {#page-group-list}
 
-<ImgLang img='browser-analysis-pageload-hitmap-pagegroup.png' desc='Page group list' />
-
 In the <Cmdname sid="rumPageLoadHitmap" className="uitext" /> widget, you can check the <b>page load</b> events of the dragged area by <Link to="before-starting#page-group">Page Group</Link>. If you select a desired item in the list, the selected <b>page load</b> events corresponding to the selected <b>page group</b> appear in the <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" />.
 
 ## Page Load Event Detail {#pageload-details}
 
 If you select <LinkImage img="ico-detail-view.svg" className="ico" desc="detailed view icon" /> on the utmost left of each item in <Cmdname sid="page" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="page_load" className="uitext" /> <Cmdname sid="detail" className="uitext" /> winndow appears. It provides various metrics to analyze the <b>page load</b> performance and the factors that affect the performance.
-
-<ImgLang img='rum-pageload-event-02.png' desc='Page Load Detail' />
 
 ### ![](/img/number-01.png) URL list {#url-list}
 
@@ -135,21 +129,13 @@ The <Cmdname sid="summary" className="uitext" /> tab provides the times spent fo
 
 The resources downloaded from the server by the browser can significantly affect the <b>page load</b> performance. The <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" /> lets you quickly identify the resources that are slow to load or have large files.
 
-<ImgLang img='rum-pageload-event-03.png' desc='Resource list' />
-
 We provide a timeline chart based on the start times for each resource so that you can identify which resources are loaded slowly. By seeing the file sizes of each resource, you can improve the performance impact. You can check the detailed time information through the <Cmdname sid="resource" className="uitext" /> <Cmdname sid="detail" className="uitext" /> window that appears when you click each resource.
-
-<ImgLang img='rum-pageload-event-04.png' desc='Resource Detail' />
 
 ### Checking the browser errors
 
 The page load events that contain browser errors appear in red. You can see the steps in which errors occurred in <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" />.
 
-<ImgLang img='browser-pageload-details-resource-error.png' desc='Resource List - Error Data' />
-
 1. If you select a step with any error in <Cmdname sid="resource" className="uitext" /> <Cmdname sid="list" className="uitext" />, the <Cmdname sid="exception_stack" className="uitext" /> window appears.
-
-   <ImgLang img='browser-pageload-details-resource-error-stack.png' desc='Exception Stack' />
 
 2. Select **_Upload_**.
 
@@ -158,8 +144,6 @@ The page load events that contain browser errors appear in red. You can see the 
 By comparing obfuscated stack information with JavaScript source map, you can see the code where the actual error occurred.
 
 ### User session analysis {#TTL07736}
-
-<ImgLang img='browser-pageload-details-user-session.png' desc='User session analysis' />
 
 Based on the user session, you can see the events and errors that occur while interacting with the website in chronological order. For more information about <Cmdname sid="TTL07736" className="uitext" />, see [the following](user-session-log-search#analysisusersession).
 
