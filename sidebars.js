@@ -7167,6 +7167,7 @@ const sidebars = {
             },
             'kubernetes/node-map',
             'kubernetes/performance-summary',
+            'kubernetes/dashboard-gpu'
           ]
         },
         {
