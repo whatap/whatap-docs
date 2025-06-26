@@ -1,0 +1,110 @@
+---
+id: service-2_18_x
+title: Service 2.18.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_18_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.18.0
+
+2025年06月26日
+
+<div class='indentTab'>
+
+### `共通`
+
+- <Status priority='1'>Feature</Status> サービスページタイトルの右側に WhaTap Docs リンクを追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> ウィジェットに隠されたプロジェクト名のツールチップを追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_flexboard" className="uitext" /> ウィジェット検索時、フォルダ内にウィジェットがない場合はそのフォルダを非表示
+- <Status priority='1'>Feature</Status> 実行中のアラートが最新順に並ぶように改善
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_flexboard" className="uitext" /> 編集モードのウィジェット編集画面でスクロールを削除
+- <Status priority='0'>Fixed</Status> <Cmdname sid="group_management" className="uitext" /> で現在のグループを削除後、初期ページに移動するよう修正
+- <Status priority='0'>Fixed</Status> 別ウィンドウから戻った際にアラートが自動的に消えなかった問題を修正
+- <Status priority='0'>Fixed</Status> 権限移譲時の同意ポップアップがプロジェクト選択ポップアップに隠れていた問題を修正
+- <Status priority='0'>Fixed</Status> 無効な時間値でエージェント情報を取得していた問題を修正
+
+---
+
+### `アプリケーション`
+
+- <Status priority='1'>Feature</Status> 全データ更新時にローディング表示を追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="transaction_map" className="uitext" /> にフィルター保存機能を追加
+- <Status priority='1'>Feature</Status> リアルタイムモードでない場合、検索時間とフィルターをURLに保存
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_perfTrend" className="uitext" /> にて、種類に関係なく1つのみ選択可能に改善
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_lab" className="uitext" /> に **ビジネスダッシュボード** メニューを追加
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_perfTrend" className="uitext" /> のエージェント選択UIを統計画面と一致するよう変更
+- <Status priority='0'>Fixed</Status> リアルタイムモードで全体データにフィルターが適用されない問題を修正
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_hitmap" className="uitext" /> のチャートで軸範囲を超えたデータが表示される問題を修正
+- <Status priority='0'>Fixed</Status> <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="AA005" className="uitext" /> のエージェントフィルターが一部のヒートマップにしか適用されない問題を修正
+- <Status priority='0'>Fixed</Status> <Cmdname sid="TTL06209" className="uitext" /> のポップアウトで内部データが断続的に表示されない問題を修正
+
+---
+
+### `サーバー`
+
+- <Status priority='1'>Feature</Status> **GPUインベントリ**、**GPUパフォーマンス概要** の新メニューをリリース
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverDetail" className="uitext" /> にて、過去の表示時に削除されたエージェントもセレクターで表示
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> の管理ボタン名を変更し、ツールチップを追加
+- <Status priority='1'>Feature</Status> `yard.conf` の `show_deleted_servers_in_range` が有効な場合、過去の表示で削除されたサーバーを非活性状態でセレクターに表示
+- <Status priority='0'>Fixed</Status> **Featureプロジェクト** > **KAFKAダッシュボード** にて毎回全ウィジェットにローダーが表示される問題を改善
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> **分析** > **OpenMetrics Explorer** を追加
+- <Status priority='1'>Feature</Status> **GPUモニタリング** をリリース
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="container_map" className="uitext" /> にGPU指標に基づく色表示機能を追加
+- <Status priority='1'>Changed</Status> <Cmdname sid="podList" className="uitext" /> のメトリクスダッシュボードで最大30日までの期間表示を可能に
+- <Status priority='1'>Changed</Status> タイムラインメニューの5分単位選択制限を解除
+
+---
+
+### `データベース`
+
+#### 共通
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dbSqlStat" className="uitext" /> にマウスオーバー時の説明表示機能を追加
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_logViewer" className="uitext" /> の1ページ表示文字数を2,000文字から20,000文字に拡張
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dbSqlStat" className="uitext" /> のテーブル名、カラム選択名、フィルター名の不一致を修正
+- <Status priority='0'>Fixed</Status> Long Active session Count、Lock Waiting Session Count、Wait Event、Database Mapなどのウィジェットで不要なスクロールが発生する問題を修正
+
+#### Altibase, Cubrid, MySQL, Oracle, PostgreSQL, SQL Server, Tibero
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dbScriptManager" className="uitext" /> でクエリが表示されない不具合を修正
+
+#### MySQL, Oracle, Oracle Pro, PostgreSQL
+
+- <Status priority='1'>Feature</Status> インスタンスマップ画面をリリース
+
+#### MySQL, Oracle V2, Oracle Pro
+
+- <Status priority='1'>Feature</Status> **Top SQL** にフィルター機能を追加
+- <Status priority='1'>Feature</Status> **Top SQL** の指標にマウスオーバーで説明を表示
+- <Status priority='0'>Fixed</Status> **Top SQL** のフィールド名、カラム名、フィルター名が一致しない問題を修正
+
+#### PostgreSQL
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> の SQL Elapse Map ウィジェットに `state` カラムを追加
+
+#### PostgreSQL V2
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="dbObjectInfo" className="uitext" /> でバイト単位の値が表示されない不具合を修正
+
+---
+
+### `ブラウザ`
+
+- <Status priority='1'>Feature</Status> iOSプロジェクトを追加
+- <Status priority='0'>Fixed</Status> <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />, <Cmdname sid="TTL08103" className="uitext" /> を改善
+
+---
+
+### `ログ`
+
+- <Status priority='1'>Feature</Status> ログのCSV、TXT形式でのダウンロード機能を追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="log_setting" className="uitext" /> > <Cmdname sid="log_parser_setting_primary" className="uitext" /> にログサンプル選択の導線を追加
+- <Status priority='0'>Fixed</Status> **ログタグ** > <Cmdname sid="TTL06582" className="uitext" /> の時間オプションを変更するとログ基準が変わる問題を修正
+
+</div>

@@ -1,335 +1,241 @@
 [
   {
     "url": "https://docs.whatap.io/en/release-notes/service/service-2_17_x",
-    "ver": "Service 2.16.2",
-    "date": "2025-04-29",
+    "ver": "Service 2.17.1",
+    "date": "2025-06-04",
     "Lists": [
       {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
-        "product": "Common",
+        "ver": "Service 2.17.1",
+        "hash": "service-2171",
+        "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Metrics Chart</span> <code class=\"newfunc\">New</code>, added ascending sorting for agents and metric names.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the session trace feature in the <span class=\"uitext\">Session detail</span> window.</p>",
+        "category": "Oracle Pro"
       },
       {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
-        "product": "Common",
+        "ver": "Service 2.17.1",
+        "hash": "service-2171",
+        "product": "Log",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">My Usage</span> &gt; <span class=\"uitext\">Invoice Preview History</span>, <span class=\"uitext\">Billing History</span>, and <span class=\"uitext\">Usage</span>, added separate billings by application namespace for Kubernetes products.</p>"
-      },
-      {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span>, added the agent name and IP search input.</p>"
-      },
-      {
-        "ver": "Service 2.16.2",
-        "hash": "service-2162",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span>, added the pop-up for the file system information.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Log Explorer</span> page.</p>"
       }
     ]
   },
   {
-    "url": "https://docs.whatap.io/en/release-notes/service/service-2_16_x",
-    "ver": "Service 2.16.1",
-    "date": "2025-04-23",
-    "Lists": []
-  },
-  {
-    "url": "https://docs.whatap.io/en/release-notes/service/service-2_16_x",
-    "ver": "Service 2.16.0",
-    "date": "2025-04-23",
+    "url": "https://docs.whatap.io/en/release-notes/service/service-2_17_x",
+    "ver": "Service 2.17.0",
+    "date": "2025-05-28",
     "Lists": [
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved the project description to be displayed when hovering your mouse over the project list.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> The <span class=\"uitext\">Real-time Alert List</span> and <span class=\"uitext\">Project Member</span>(<span class=\"uitext\">Integrated Group Management</span>) options and selection status are included in the URL so that they can be shared in the same state when sharing the link.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Occurrence of real-time notifications can also be checked through the browser.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Report</span> Excel downloading feature (provided only in some report templates).</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the horizontal line option to the TopN widget of <span class=\"uitext\">Flex Board</span>.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to change the <span class=\"uitext\">Flex Board</span> sharing role.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Common",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Event Configuration</span>, added the event action time.</p>",
-        "details": "<ul>\n<li>\n<p><strong>Event Setting V1</strong></p>\n<p>Metrics/composite metrics/outlier detection/composite real-time log/server log → Added them above the event reception tag.</p>\n<p>Hitmap pattern → Added it at the bottom of the card.</p>\n</li>\n<li>\n<p><strong>Event Setting V2</strong></p>\n<p>Basic/metrics → Added to the following items for the resolved notifications.</p>\n<p>The other items are the same as V1.</p>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the Excel file downloading button for the <span class=\"uitext\">Event Configuration</span> <code class=\"newfunc\">New</code> event configuration history.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Member List</span> 및 <span class=\"uitext\">Invite Member</span>, added the feature to display whether MFA and SSO are enabled next to the member email.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Notifications</span>, added the custom feature for the Webhook JSON response value in the 3rd party plugin.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Common",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When configuring the <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> metrics events, added the metrics search feature in the category selection, metrics settings, and target event selection steps.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to select traces with keyboard arrow keys when the list is focused in the <span class=\"uitext\">Trace analysis</span> window.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the opetion to display the <span class=\"uitext\">Multi transaction</span> <span class=\"uitext\">Chart</span> client IP information.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> On the <span class=\"uitext\">Active Transaction</span> screen, a list of active transactions can be downloaded as CSV.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to display error properties out of <span class=\"uitext\">Trace analysis</span> &gt; <em><strong>Timeline</strong></em> and <span class=\"uitext\">Table view</span> Message Step.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Application",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Enhanced the <span class=\"uitext\">Transaction map</span> past data searching feature.</p>",
-        "details": "<ul>\n<li>\n<p>Extended the maximum searchable time range (10 minutes → 1 hour).</p>\n</li>\n<li>\n<p>Adding filter items</p>\n<!-- -->\n<details class=\"details_lb9f alert alert--info details_b_Ee\" data-collapsed=\"true\"><summary>Added filters</summary><div><div class=\"collapsibleContent_i85q\"><ul>\n<li>\n<p><strong>General filters</strong></p>\n</li>\n<li>\n<p><strong>Referer</strong><br>\n<!-- -->Login ID, WClientId, transaction ID, multi transaction ID, custom TID, error (including class, step, and message), city, country, HTTP method, user agent</p>\n</li>\n<li>\n<p><strong>Trace step-related filters</strong><br>\n<!-- -->DBC, SQL, HTTPC, METHOD, MESSAGE</p>\n</li>\n<li>\n<p><strong>Number input filter</strong><br>\n<!-- -->Elapsed time, HTTP call time, HTTP call count, SQL time, SQL count, status</p>\n</li>\n</ul></div></div></details>\n</li>\n<li>\n<p>Added display of total number of transactions (read items) searched by the filter data.</p>\n</li>\n<li>\n<p>Added description tooltips for Read and Limit.</p>\n</li>\n<li>\n<p>Added the pause feature when searching the past data.</p>\n<ul>\n<li>\n<p>When the search button is clicked while searching the past data (loading), searching is paused.</p>\n</li>\n<li>\n<p>If you search again with the same conditions (time, filter), the data is retrieved from the stopped point.<br>\n<!-- -->(when changing the search conditions, the chart is initialized and a new drawing begins)</p>\n</li>\n</ul>\n</li>\n</ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to display the table area loading when initial data is viewed in <span class=\"uitext\">Transaction map</span> and to display the vertical line loading if no data exists.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>city</code> filter into the filters that can be used in the stop state of <span class=\"uitext\">Transaction map</span>.</p>"
+      },
+      {
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>STEP_SQL_BIND</code> and <code>STEP_ALL</code> filters in <span class=\"uitext\">Transaction map</span> (if used, a decryption key is required to be input).</p>"
+      },
+      {
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When viewing the profile data by dragging <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Hitmap</span>, added the feature to display a message indicating the possible period if the maximum search period is exceeded.</p>"
+      },
+      {
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Transaction map</span> widget and its setting items.</p>"
+      },
+      {
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Server Inventory Map</span>, added display of the event count by status to the popover that appears when the mouse hovers over the server.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Notifications</span> &gt; <em><strong>Webhook JSON</strong></em> variable.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Server Inventory Map</span> &gt; <strong>Display Detail</strong> window, added display of state-specific event counts in a popover when hovering the mouse over the server.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Provided the content drawer for the <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Detail</span> page.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server List</span>, the presets can be managed and shared with other users when the <span class=\"uitext\">Column settings</span> button is clicked.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the configuration popover in which the Y-axis maximum value in the charts in the <span class=\"uitext\">Server List</span> &gt; <span class=\"uitext\">Server Detail</span> menu.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Server Inventory</span> GPU Count column.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> &gt; <span class=\"uitext\">Log File / Window Event</span>, added the feature to add and modify Repeat (times) and Duration (seconds).</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Server",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Metrics Explorer</span>, added the category in which multiple metrics for a single server can be viewed in a chart.</p>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved the display of Event ID in the event list of <span class=\"uitext\">Alert</span> &gt; <span class=\"uitext\">Event Configuration</span> &gt; <span class=\"uitext\">Log File / Window Event</span>.</p>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Report</span>, upon selection of a disk filter template, added the mount point selector UI (e.g. daily hour-based server's key metrics report)</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Server",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Server List</span>, added the filter and favorite addition feature.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Kubernetes",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Upon <span class=\"uitext\">APP.</span> monitoring, in the <span class=\"uitext\">Record summary</span> tab of the <span class=\"uitext\">Trace analysis</span> window, added the container and Pod summary analyzing feature.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Kubernetes",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When the expand button is clicked on the left of the <span class=\"uitext\">Node</span> &gt; <span class=\"uitext\">Node list</span> column, added the disk information.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span> and <span class=\"uitext\">Monitoring Multiple Instances</span> menus, added the sorting priority display when multi-sorting for tables.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Database size</span> and <span class=\"uitext\">Tablespace Size</span> menus, displayed the <code>string</code> as the DB name for the instances other than multi db.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">SQL Statistics</span>, added the sorting priority display when multi-sorting for tables.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Laboratory</span> &gt;  <em><strong>Top SQL</strong></em>, added the sorting priority display when multi-sorting for tables.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Database",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to download chart images on the screen.</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the column selection feature in the lock tree table.</p>",
         "category": "Common",
-        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Instance List</span> &gt; <em><strong>Custom widget</strong></em></p>\n</li>\n<li>\n<p><em><strong>Analysis</strong></em> &gt; <em><strong>Counts Trend Comparison</strong></em></p>\n</li>\n</ul>"
+        "details": "<ul>\n<li><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, <span class=\"uitext\">Monitoring Multiple Instances</span></li>\n<li><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></li>\n</ul>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>, added new widget editing and preset saving features.</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to download the chart data as a CSV file when the real-time mode is not applied to <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span>.</p>",
         "category": "Common"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Session Table</span> filter, added the key searching feature and alphabetical sorting feature.</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the feature to save the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span> Disk Usage widget table status preset.</p>",
         "category": "Common"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Flex Board</span> database widget.</p>",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the tags to display the instance's Replication Role or Cluster configuration.</p>",
         "category": "Common",
-        "details": "<ul>\n<li>\n<p>CloudWatch instance-based CPU utilization (%)</p>\n</li>\n<li>\n<p>CloudWatch instance-based free memory</p>\n</li>\n<li>\n<p>CloudWatch instance-based free storage</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p>Instance selector on the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span> screen</p>\n</li>\n<li>\n<p>Instance tag on the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring Multiple Instances</span> screen</p>\n</li>\n<li>\n<p>Role column of the <span class=\"uitext\">Management</span> &gt; <em><strong>Agent List</strong></em></p>\n</li>\n</ul>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the metrics of the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Wait Analysis</span> menu, added the tooltip where you can check the unit.</p>",
-        "category": "Oracle, Oracle Pro"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved the <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span> <code class=\"newfunc\">New</code> screen.</p>",
+        "category": "Common",
+        "details": "<ul>\n<li>Added the click and drag events in the custom widget series chart.</li>\n<li>Changed the chart option icon to the More button.</li>\n<li>Added the guide text when a deactivated instance is selected.</li>\n<li>Added the metric selection button in the default series chart.</li>\n</ul>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">RAC monitoring</span>, modified to save the selected cluster.</p>",
-        "category": "Oracle, Oracle Pro"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the Cloud agent for DB agent installation.</p>",
+        "category": "MongoDB, MySQL, Oracle, PostgreSQL, SQL Server"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the installation page.</p>",
-        "category": "SAP ASE"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Lock Tree</span> table, added the guide text for the lock query role.</p>",
+        "category": "MySQL",
+        "details": "<ul>\n<li>\n<p><span class=\"uitext\">Dashboard</span> &gt; <span class=\"uitext\">Monitoring a Database Instance</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Lock Tree</span></p>\n</li>\n</ul>"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Stat/Report</span> &gt; <span class=\"uitext\">Tablespace Size</span> menu.</p>",
-        "category": "SAP ASE"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In the <span class=\"uitext\">Stat/Report</span> &gt; <em><strong>Table increment summary</strong></em> section, added the increase/decrease rate column in the <em><strong>Capacity details for each table</strong></em> table.</p>",
+        "category": "MySQL"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Database",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added widgets in <span class=\"uitext\">Integrated Flex Board</span> and <span class=\"uitext\">Flex Board</span>.</p>",
-        "category": "SQL Server"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the guide for multi-tenant DB kill session command to the installation page.</p>",
+        "category": "Oracle"
       },
       {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Laboratory</span> &gt; <span class=\"uitext\">Script Manager</span>, added the feature to check the execution results of the multi-script and instance-based multi-script.</p>",
+        "category": "Oracle Pro"
+      },
+      {
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Monitoring a Database Instance</span>, <span class=\"uitext\">Monitoring Multiple Instances</span>, and <span class=\"uitext\">Lock Tree</span> lock tree tables, added the <code>holder_relation</code>, <code>waiter_relation</code>, and <code>state</code> columns.</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.17.0",
+        "hash": "service-2170",
         "product": "Cloud",
         "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <span class=\"uitext\">Management</span> &gt; <span class=\"uitext\">Maintenance Plan</span> menu.</p>",
-        "category": "Common"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Browser",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When sharing the <span class=\"uitext\">Analysis</span> &gt; <span class=\"uitext\">Error Tracking</span> and <span class=\"uitext\">User Session Log Search</span> URLs, improved to maintain the status (time, filer, etc).</p>",
-        "details": "<ul>\n<li><span class=\"uitext\">Error Tracking</span>: Time clicked in the time and chart bars.</li>\n<li><span class=\"uitext\">User Session Log Search</span>: Sort by time, filter, oldest time, and latest time.</li>\n</ul>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Log",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> In <span class=\"uitext\">Log Search</span> and <span class=\"uitext\">Live Tail</span>, added the filter favorite and project sharing features.</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Log",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When the <span class=\"uitext\">Log Trend</span> and <span class=\"uitext\">Log Search</span> logs contain <code>@txid</code>, and <code>@mtid</code>, added the feature to check the trace pop-up through the transaction information drop-down (Log-Trace integrated).</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Log",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the button to move from the trace log to the log search.\n(The APM pages are integrated that can check the transaction information such as <em><strong>Application dashboard</strong></em>, <span class=\"uitext\">Transaction map</span>, <span class=\"uitext\">Transaction Search</span>, and <span class=\"uitext\">Multiple Transaction Trace</span>)</p>"
-      },
-      {
-        "ver": "Service 2.16.0",
-        "hash": "service-2160",
-        "product": "Log",
-        "type": "Feature",
-        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved to maintain the UI status (time, filter, etc) when sharing the <span class=\"uitext\">Log</span> &gt; <span class=\"uitext\">Live Tail</span> and <span class=\"uitext\">Log Trend</span>, <span class=\"uitext\">Log Search</span> URLs.</p>",
-        "details": "<ul>\n<li><span class=\"uitext\">Live Tail</span>: Category, filter</li>\n<li><span class=\"uitext\">Log Trend</span>: Time clicked in the time, category, and chart bars.</li>\n<li><span class=\"uitext\">Log Search</span>: Sort by time, filter, oldest time, and latest time.</li>\n</ul>"
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> When querying the profile data by dragging <span class=\"uitext\">Analysis</span> &gt; <em><strong>Application Hitmap</strong></em> and <em><strong>Multi-service Hitmap</strong></em>, displayed the notification, if the maximum query period exceeds.</p>"
       }
     ]
   }
