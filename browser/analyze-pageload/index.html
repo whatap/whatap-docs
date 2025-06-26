@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko-KR dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-browser/analyze-pageload" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>사용자 액션 히트맵 | WhaTap Docs</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true name=twitter:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true property=og:url content=https://docs.whatap.io/whatap-docs/browser/analyze-pageload><meta data-rh=true property=og:locale content=ko_KR><meta data-rh=true property=og:locale:alternate content=en_US><meta data-rh=true property=og:locale:alternate content=ja_JP><meta data-rh=true name=docusaurus_locale content=ko><meta data-rh=true name=docsearch:language content=ko><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="사용자 액션 히트맵 | WhaTap Docs"><meta data-rh=true name=description content="페이지 로드 이벤트를 차트 형태로 제공하고, 이벤트에 대한 상세 정보를 분석할 수 있습니다."><meta data-rh=true property=og:description content="페이지 로드 이벤트를 차트 형태로 제공하고, 이벤트에 대한 상세 정보를 분석할 수 있습니다."><meta data-rh=true name=keywords content="브라우저 모니터링,에이전트,페이지 로드"><link data-rh=true rel=icon href=/whatap-docs/img/whatap-favicon.ico><link data-rh=true rel=canonical href=https://docs.whatap.io/whatap-docs/browser/analyze-pageload><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/browser/analyze-pageload hreflang=ko-KR><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/en/browser/analyze-pageload hreflang=en-US><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/ja/browser/analyze-pageload hreflang=ja-JP><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/browser/analyze-pageload hreflang=x-default><link rel=alternate type=application/rss+xml href=/whatap-docs/blog/rss.xml title="WhaTap Docs RSS Feed"><link rel=alternate type=application/atom+xml href=/whatap-docs/blog/atom.xml title="WhaTap Docs Atom Feed"><script>!function(e,t,a,c,n,o){e=e[n]=e[n]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(n=t.createElement(a)).async=1,n.src=c,(c=t.getElementsByTagName(a)[0]).parentNode.insertBefore(n,c)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent",0);let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",(s=(d=document).createElement("script")).src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KT747XQX")</script><meta name=keywords content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere"><meta name=description content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다."><meta name=naver-site-verification content=0c21fc5664a467108fb762ade47a3f81ee9b88ed><meta name=google-site-verification content=rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE><link rel=stylesheet href=/whatap-docs/assets/css/styles.737f6794.css><script src=/whatap-docs/assets/js/runtime~main.c6184584.js defer></script><script src=/whatap-docs/assets/js/main.010e6b10.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":(window.matchMedia("(prefers-color-scheme: light)").matches,"light"),document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><script async defer crossorigin=anonymous src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v17.0&appId=169051789422006&autoLogAppEvents=1" nonce=y4U7YSrt></script>
+<!doctype html><html lang=ko-KR dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-browser/analyze-pageload" data-has-hydrated=false><meta charset=UTF-8><meta name=generator content="Docusaurus v3.7.0"><title data-rh=true>사용자 액션 히트맵 | WhaTap Docs</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"><meta data-rh=true name=twitter:card content=summary_large_image><meta data-rh=true property=og:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true name=twitter:image content=https://www.whatap.io/img/og/whatap.png><meta data-rh=true property=og:url content=https://docs.whatap.io/whatap-docs/browser/analyze-pageload><meta data-rh=true property=og:locale content=ko_KR><meta data-rh=true property=og:locale:alternate content=en_US><meta data-rh=true property=og:locale:alternate content=ja_JP><meta data-rh=true name=docusaurus_locale content=ko><meta data-rh=true name=docsearch:language content=ko><meta data-rh=true name=docusaurus_version content=current><meta data-rh=true name=docusaurus_tag content=docs-default-current><meta data-rh=true name=docsearch:version content=current><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current><meta data-rh=true property=og:title content="사용자 액션 히트맵 | WhaTap Docs"><meta data-rh=true name=description content="페이지 로드 이벤트를 차트 형태로 제공하고, 이벤트에 대한 상세 정보를 분석할 수 있습니다."><meta data-rh=true property=og:description content="페이지 로드 이벤트를 차트 형태로 제공하고, 이벤트에 대한 상세 정보를 분석할 수 있습니다."><meta data-rh=true name=keywords content="브라우저 모니터링,에이전트,페이지 로드"><link data-rh=true rel=icon href=/whatap-docs/img/whatap-favicon.ico><link data-rh=true rel=canonical href=https://docs.whatap.io/whatap-docs/browser/analyze-pageload><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/browser/analyze-pageload hreflang=ko-KR><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/en/browser/analyze-pageload hreflang=en-US><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/ja/browser/analyze-pageload hreflang=ja-JP><link data-rh=true rel=alternate href=https://docs.whatap.io/whatap-docs/browser/analyze-pageload hreflang=x-default><link rel=alternate type=application/rss+xml href=/whatap-docs/blog/rss.xml title="WhaTap Docs RSS Feed"><link rel=alternate type=application/atom+xml href=/whatap-docs/blog/atom.xml title="WhaTap Docs Atom Feed"><script>!function(e,t,a,c,n,o){e=e[n]=e[n]||{config:{projectAccessKey:"x4t5020boh2ln-z6pi7d91ds6c1a-z7t4b2lrgnub4o",pcode:29856,sampleRate:100,sessionReplaySampleRate:100,ignorePageUrls:[/^.*localhost.*$/i,/^.*ngrok-free.app.*$/i,/^.*whatap.github.io.*$/i],collectUserClick:!0}},(n=t.createElement(a)).async=1,n.src=c,(c=t.getElementsByTagName(a)[0]).parentNode.insertBefore(n,c)}(window,document,"script","https://repo.whatap-browser-agent.io/rum/prod/v1/whatap-browser-agent.js","WhatapBrowserAgent",0);let curLang=document.documentElement.lang.split("-")[0];CRISP_RUNTIME_CONFIG={locale:curLang},window.$crisp=[],window.CRISP_WEBSITE_ID="9a0c342f-a5b1-4c4a-a22f-92c7b4b9b477",(s=(d=document).createElement("script")).src="https://client.crisp.chat/l.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KT747XQX")</script><meta name=keywords content="WhaTap, 와탭, 매뉴얼, 사용법, WhaTap 사용법, WhaTap 매뉴얼, 기술 문서, APM, 애플리케이션 모니터링, 로그 모니터링, 쿠버네티스 모니터링, 서버 모니터링, 데이터베이스 모니터링, URL 모니터링, 클라우드 모니터링, 브라우저 모니터링, Browser monitoring, Application Monitoring, Log Monitoring, Kubernetes Monitoring, Server Monitoring, Database Monitoring, URL Monitoring, Cloud Monitoring, Manual, User Guide, Docs, WhaTap Manual, WhaTap Docs, WhaTap Documents, 트랜잭션, Transaction, 트레이싱, Tracing, 마스터, Master, 노드, Node, 데드락, Deadlock, 락 트리, Lock tree, 멀티 트랜잭션, Multi Trancsaction, 메트릭스, Metrics, 소프트웨어 프록시, Software proxy, 스택, Stack, 슬로우 쿼리, Slow query, 액티브 트랜잭션, Active transaction, 컨테이너, Container, 히트맵, Hitmap, Garbage Collection, GC, MXQL, Method 추적, Trace method, OOM Killed 컨테이너, OOM Killed Container, Oracle, Tibero, PostgreSQL, MySQL, MongoDB, SQL Server, CUBRID, Altibase, Redis, WebLogic, WebSphere"><meta name=description content="WhaTap Docs 페이지입니다. 애플리케이션, 서버, 쿠버네티스, 데이터베이스, 브라우저 등 다양한 모니터링 솔루션의 사용법을 제공합니다."><meta name=naver-site-verification content=0c21fc5664a467108fb762ade47a3f81ee9b88ed><meta name=google-site-verification content=rIlfJkbbogFOIDc3DgJZmOGbUMJWytyvZSKEgV7EMsE><link rel=stylesheet href=/whatap-docs/assets/css/styles.737f6794.css><script src=/whatap-docs/assets/js/runtime~main.a0220782.js defer></script><script src=/whatap-docs/assets/js/main.010e6b10.js defer></script><body class=navigation-with-keyboard><script>!function(){var t,e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t=null!==e?e:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":(window.matchMedia("(prefers-color-scheme: light)").matches,"light"),document.documentElement.setAttribute("data-theme",t)}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><script async defer crossorigin=anonymous src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v17.0&appId=169051789422006&autoLogAppEvents=1" nonce=y4U7YSrt></script>
 <div id=fb-root></div>
 
 
@@ -95,7 +95,7 @@
 </ul></section>
 <section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=filtering-page-group-list>페이지 그룹 목록 필터링하기<a href=#filtering-page-group-list class=hash-link aria-label="페이지 그룹 목록 필터링하기에 대한 직접 링크" title="페이지 그룹 목록 필터링하기에 대한 직접 링크">​</a></h4><p>페이지 그룹 목록을 대상으로 필터링할 수 있습니다. 원하는 페이지 그룹 목록을 선택하세요.</section>
 <section class=remark-sectionize-h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id=useraction-details>사용자 액션 이벤트 상세 정보<a href=#useraction-details class=hash-link aria-label="사용자 액션 이벤트 상세 정보에 대한 직접 링크" title="사용자 액션 이벤트 상세 정보에 대한 직접 링크">​</a></h2><p><strong>사용자 액션 목록</strong>에서 각 항목 왼쪽의 <img loading=lazy src=/whatap-docs/img/ico-detail-view.svg alt="상세 보기 아이콘" class=ico width=auto height=auto> 아이콘을 클릭하면 <strong>사용자 액션 분석</strong> 상세 창이 나타납니다. 상세 창은 왼쪽의 이벤트 목록과 오른쪽의 상세 정보로 구성되어 있습니다. 사용자 액션의 성능을 분석하기 위해 다양한 지표를 제공하고, 성능에 영향을 주는 요소를 파악할 수 있습니다.</section>
-<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=event-list>이벤트 목록<a href=#event-list class=hash-link aria-label="이벤트 목록에 대한 직��접 링크" title="이벤트 목록에 대한 직접 링크">​</a></h3><p><strong>사용자 액션 분석</strong> 상세 창의 오른쪽에 선택한 시간 범위의 사용자 액션 이벤트가 목록으로 표시되며, 경과 시간 순으로 정렬됩니다. 목록에서 특정 이벤트를 클릭하면 오른쪽 패널에 해당 이벤트의 상세 정보가 표시됩니다.<ul>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=event-list>이벤트 목록<a href=#event-list class=hash-link aria-label="이벤트 목록에 대한 직��접 링크" title="이벤트 목록에 대한 직접 링크">​</a></h3><p><strong>사용자 액션 분석</strong> 상세 창의 오른쪽에 선택한 시간 범위의 사용자 액션 이벤트가 목록으로 표시되며, 경과 시간 순으로 정렬됩니다. 목록에서 특정 이벤트를 클릭하면 오른쪽 패널에 해당 이벤트의 상세 정보가 표시됩니다.<p><img loading=lazy src=/whatap-docs/img/browser-analyze-pageload-event-list.png alt=event-list width=auto height=auto><ul>
 <li>
 <p><strong>응답 시간</strong>: 사용자 액션의 응답 시간 (ms)</p>
 </li>
@@ -112,61 +112,129 @@
 <p><strong>운영체제</strong>: 사용자가 사용한 운영체제</p>
 </li>
 </ul></section>
-<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=details-events-summary>상세 정보<a href=#details-events-summary class=hash-link aria-label="상세 정보에 대한 직접 링크" title="상세 정보에 대한 직접 링크">​</a></h3><p><strong>사용자 액션 분석</strong> 상세 창의 왼쪽에 선택한 이벤트의 상세 정보는 개요, 사용자 세션 분석, 세션 리플레이 탭을 클릭해 확인할 수 있습니다. 정보는 다음과 같이 구성됩니다.</section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=details-events-summary>상세 정보<a href=#details-events-summary class=hash-link aria-label="상세 정보에 대한 직접 링크" title="상세 정보에 대한 직접 링크">​</a></h3><p><strong>사용자 액션 분석</strong> 상세 창의 왼쪽에 선택한 이벤트의 상세 정보는 개요, 사용자 세션 분석, 세션 리플레이 탭을 클릭해 확인할 수 있습니다. 정보는 다음과 같이 구성됩니다.<p><img loading=lazy src=/whatap-docs/img/browser-analyze-pageload-details.png alt=details-events width=auto height=auto></section>
 <section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=기본-정보><strong>기본 정보</strong><a href=#기본-정보 class=hash-link aria-label="기본-정보에 대한 직접 링크" title="기본-정보에 대한 직접 링크">​</a></h4><ul>
-<li><strong>페이지 URL</strong>: 이벤트가 발생한 페이지의 전체 URL</li>
-<li><strong>페이지 타이틀</strong>: 웹 페이지의 제목</li>
-<li><strong>사용자 에이전트</strong>: 브라우저와 운영체제의 상세 정보</li>
-<li><strong>브라우저/버전</strong>: 브라우저 종류와 버전</li>
-<li><strong>운영체제/버전</strong>: 운영체제 종류와 버전</li>
-<li><strong>디바이스</strong>: 사용 기기 종류 (desktop, mobile 등)</li>
-<li><strong>도시</strong>: 사용자의 접속 위치</li>
-<li><strong>세션 ID</strong>: 사용자 세션 식별자</li>
-<li><strong>클라이언트 IP</strong>: 사용자의 IP 주소</li>
-<li><strong>유효 연결 유형</strong>: 네트워크 연결 타입 (3g, 4g, wifi 등)</li>
-<li><strong>유효 대역폭</strong>: 네트워크 대역폭 정보</li>
-<li><strong>RTT</strong>: Round Trip Time (왕복 시간)</li>
+<li>
+<p><strong>페이지 URL</strong>: 이벤트가 발생한 페이지의 전체 URL</p>
+</li>
+<li>
+<p><strong>페이지 타이틀</strong>: 웹 페이지의 제목</p>
+</li>
+<li>
+<p><strong>사용자 에이전트</strong>: 브라우저와 운영체제의 상세 정보</p>
+</li>
+<li>
+<p><strong>브라우저/버전</strong>: 브라우저 종류와 버전</p>
+</li>
+<li>
+<p><strong>운영체제/버전</strong>: 운영체제 종류와 버전</p>
+</li>
+<li>
+<p><strong>디바이스</strong>: 사용 기기 종류 (desktop, mobile 등)</p>
+</li>
+<li>
+<p><strong>도시</strong>: 사용자의 접속 위치</p>
+</li>
+<li>
+<p><strong>세션 ID</strong>: 사용자 세션 식별자</p>
+</li>
+<li>
+<p><strong>클라이언트 IP</strong>: 사용자의 IP 주소</p>
+</li>
+<li>
+<p><strong>유효 연결 유형</strong>: 네트워크 연결 타입 (3g, 4g, wifi 등)</p>
+</li>
+<li>
+<p><strong>유효 대역폭</strong>: 네트워크 대역폭 정보</p>
+</li>
+<li>
+<p><strong>RTT</strong>: Round Trip Time (왕복 시간)</p>
+</li>
 </ul></section>
 <section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=시간-정보>시간 정보<a href=#시간-정보 class=hash-link aria-label="시간 정보에 대한 직접 링크" title="시간 정보에 대한 직접 링크">​</a></h4><p>이벤트의 전체 경과 시간, 시작 시간, 종료 시간을 확인할 수 있습니다.</section>
 <section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=구간별-소요-시간-타임라인-차트>구간별 소요 시간 (타임라인 차트)<a href=#구간별-소요-시간-타임라인-차트 class=hash-link aria-label="구간별 소요 시간 (타임라인 차트)에 대한 직접 링크" title="구간별 소요 시간 (타임라인 차트)에 대한 직접 링크">​</a></h4><p><b>페이지 로드</b> 이벤트는 구간별 소요 시간을 시각적으로 확인할 수 있습니다.<ul>
-<li><strong>리다이렉트 시간</strong>: 페이지 리디렉션에 소요된 시간</li>
-<li><strong>요청 대기 시간</strong>: 서버 응답 대기 시간</li>
-<li><strong>다운로드 시간</strong>: 리소스 다운로드 시간</li>
-<li><strong>Time to first byte</strong>: 첫 바이트 수신 시간</li>
-<li><strong>Dom Interactive</strong>: DOM 상호작용 가능 시점</li>
-<li><strong>Dom Content Loaded</strong>: DOM 콘텐츠 로드 시간</li>
-<li><strong>Dom Complete</strong>: DOM 완료 시간</li>
-<li><strong>OnLoad 이벤트 시간</strong>: 페이지 로드 완료 시간</li>
-<li><strong>캐싱 시간</strong>: 캐시된 리소스 검색 시간</li>
-<li><strong>DNS 탐색</strong>: 도메인 조회 시간</li>
-<li><strong>TCP 연결 시간</strong>: TCP 연결 수립 시간</li>
+<li>
+<p><strong>리다이렉트 시간</strong>: 페이지 리디렉션에 소요된 시간</p>
+</li>
+<li>
+<p><strong>요청 대기 시간</strong>: 서버 응답 대기 시간</p>
+</li>
+<li>
+<p><strong>다운로드 시간</strong>: 리소스 다운로드 시간</p>
+</li>
+<li>
+<p><strong>Time to first byte</strong>: 첫 바이트 수신 시간</p>
+</li>
+<li>
+<p><strong>Dom Interactive</strong>: DOM 상호작용 가능 시점</p>
+</li>
+<li>
+<p><strong>Dom Content Loaded</strong>: DOM 콘텐츠 로드 시간</p>
+</li>
+<li>
+<p><strong>Dom Complete</strong>: DOM 완료 시간</p>
+</li>
+<li>
+<p><strong>OnLoad 이벤트 시간</strong>: 페이지 로드 완료 시간</p>
+</li>
+<li>
+<p><strong>캐싱 시간</strong>: 캐시된 리소스 검색 시간</p>
+</li>
+<li>
+<p><strong>DNS 탐색</strong>: 도메인 조회 시간</p>
+</li>
+<li>
+<p><strong>TCP 연결 시간</strong>: TCP 연결 수립 시간</p>
+</li>
 </ul></section>
 <section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=resource-list>리소스 목록<a href=#resource-list class=hash-link aria-label="리소스 목록에 대한 직접 링크" title="리소스 목록에 대한 직접 링크">​</a></h3><p>이벤트 처리 과정에서 로드된 리소스들의 상세 정보를 제공합니다. 각 리소스는 타임라인 형태로 표시되어 로딩 순서와 소요 시간을 한눈에 파악할 수 있습니다.<ul>
-<li><strong>이름</strong>: 리소스 파일명 또는 URL</li>
-<li><strong>경과 시간</strong>: 각 리소스의 로딩 시간</li>
-</ul></section>
+<li>
+<p><strong>이름</strong>: 리소스 파일명 또는 URL</p>
+</li>
+<li>
+<p><strong>경과 시간</strong>: 각 리소스의 로딩 시간</p>
+</li>
+</ul><p><img loading=lazy src=/whatap-docs/img/browser-analyze-pageload-resource-list.png alt=resource-list width=auto height=auto></section>
 <section class=remark-sectionize-h4><h4 class="anchor anchorWithStickyNavbar_LWe7" id=리소스-상세-정보>리소스 상세 정보<a href=#리소스-상세-정보 class=hash-link aria-label="리소스 상세 정보에 대한 직접 링크" title="리소스 상세 정보에 대한 직접 링크">​</a></h4><p>리소스 목록에서 특정 리소스를 클릭하면 해당 리소스의 상세 정보를 툴팁으로 확인할 수 있습니다. 리소스 상세 정보를 통해 성능 병목 구간을 정확히 파악하고, 최적화가 필요한 리소스를 식별할 수 있습니다.<ul>
 <li>
 <p><strong>리소스 타이밍 정보</strong></p>
 <ul>
-<li><strong>캐싱 시간</strong>: 캐시된 리소스 검색 시간</li>
-<li><strong>DNS 탐색</strong>: 도메인 조회에 소요된 시간</li>
-<li><strong>연결 시간</strong>: 서버와의 연결 수립에 소요된 시간</li>
-<li><strong>요청 대기 시간</strong>: 서버 응답을 기다리는 시간 (TTFB)</li>
-<li><strong>다운로드 시간</strong>: 리소스 다운로드에 소요된 시간</li>
-<li><strong>경과 시간</strong>: 전체 리소스 로딩에 소요된 총 시간</li>
+<li>
+<p><strong>캐싱 시간</strong>: 캐시된 리소스 검색 시간</p>
+</li>
+<li>
+<p><strong>DNS 탐색</strong>: 도메인 조회에 소요된 시간</p>
+</li>
+<li>
+<p><strong>연결 시간</strong>: 서버와의 연결 수립에 소요된 시간</p>
+</li>
+<li>
+<p><strong>요청 대기 시간</strong>: 서버 응답을 기다리는 시간 (TTFB)</p>
+</li>
+<li>
+<p><strong>다운로드 시간</strong>: 리소스 다운로드에 소요된 시간</p>
+</li>
+<li>
+<p><strong>경과 시간</strong>: 전체 리소스 로딩에 소요된 총 시간</p>
+</li>
 </ul>
 </li>
 <li>
 <p><strong>리소스 정보</strong></p>
 <ul>
-<li><strong>타입</strong>: 리소스 유형 (css, js, image 등)</li>
-<li><strong>크기</strong>: 리소스 파일 크기</li>
-<li><strong>Delivery Type</strong>: 전송 방식 (캐시 로드 등)</li>
+<li>
+<p><strong>타입</strong>: 리소스 유형 (css, js, image 등)</p>
+</li>
+<li>
+<p><strong>크기</strong>: 리소스 파일 크기</p>
+</li>
+<li>
+<p><strong>Delivery Type</strong>: 전송 방식 (캐시 로드 등)</p>
+</li>
 </ul>
 </li>
 </ul></section>
-<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=브라우저-에러-확인하기>브라우저 에러 확인하기<a href=#브라우저-에러-확인하기 class=hash-link aria-label="브라우저 에러 확인하기에 대한 직접 링크" title="브라우저 에러 확인하기에 대한 직접 링크">​</a></h3><p>브라우저 에러 데이터를 포함하고 있는 페이지 로드 이벤트의 경우 <span class=vslow>빨간색</span>으로 표시됩니다. <span class=uitext>리소스</span> <span class=uitext>목록</span>에서 에러가 발생한 스텝을 확인할 수 있습니다.</section>
+<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=브라우저-에러-확인하기>브라우저 에러 확인하기<a href=#브라우저-에러-확인하기 class=hash-link aria-label="브라우저 에러 확인하기에 대한 직접 링크" title="브라우저 에러 확인하기에 대한 직접 링크">​</a></h3><p>브라우저 에러 데이터를 포함하고 있는 페이지 로드 이벤트의 경우 <span class=vslow>빨간색</span>으로 표시됩니다. <span class=uitext>리소스</span> <span class=uitext>목록</span>에서 에러가 발생한 스텝을 확인할 수 있습니다.<p><img loading=lazy src=/whatap-docs/img/browser-analyze-pageload-check-error.png alt=check-browser-error width=auto height=auto></section>
 <section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=TTL07736>사용자 세션 분석<a href=#TTL07736 class=hash-link aria-label="사용자 세션 분석에 대한 직접 링크" title="사용자 세션 분석에 대한 직접 링크">​</a></h3><p>사용자 세션을 기준으로 웹 페이지와 상호 작용하면서 발생시킨 이벤트 및 에러 등을 시간순으로 확인할 수 있습니다. <span class=uitext>사용자 세션 분석</span>에 대한 자세한 내용은 <a href=/whatap-docs/browser/user-session-log-search#analysisusersession>다음 문서</a>를 참조하세요.<section class=remark-sectionize-h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id=TTL08103>세션 리플레이<a href=#TTL08103 class=hash-link aria-label="세션 리플레이에 대한 직접 링크" title="세션 리플레이에 대한 직접 링크">​</a></h3><p>사용자가 웹 사이트에서 수행하는 모든 이벤트를 기록하고 재생할 수 있는 기능을 제공합니다. <span class=uitext>세션 리플레이</span> 기능을 통해 클릭, 스크롤, 입력, 페이지 전환 등의 사용자 행동을 재현할 수 있습니다. 이를 통해 사용자는 실제로 웹사이트와 어떻게 상호 작용하는지 정확히 파악할 수 있습니다.<ul>
 <li>
 <p>타임라인 조작이 가능하므로, 이벤트를 클릭하면 세션 리플레이 플레이어의 타임라인이 해당 이벤트 시점으로 이동합니다.</p>
