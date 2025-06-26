@@ -121,6 +121,12 @@ const sidebars = {
             'java/dashboard-active-transaction',
             'java/dashboard-hitmap-trace',
             'java/agent-resource-dashboard',
+            {
+              type: 'doc',
+              id: 'java/dashboard-business', 
+              label: '비즈니스 대시보드',
+              className: 'beta' 
+            },
           ],
         },
         {
@@ -384,6 +390,12 @@ const sidebars = {
             'php/dashboard-transactionmap',
             'php/dashboard-active-transaction',
             'php/dashboard-hitmap-trace',
+            {
+              type: 'doc',
+              id: 'php/dashboard-business', 
+              label: '비즈니스 대시보드',
+              className: 'beta' 
+            },
           ],
         },
         {
@@ -865,6 +877,12 @@ const sidebars = {
             'python/dashboard-transactionmap',
             'python/dashboard-active-transaction',
             'python/dashboard-hitmap-trace',
+            {
+              type: 'doc',
+              id: 'python/dashboard-business', 
+              label: '비즈니스 대시보드',
+              className: 'beta' 
+            },
           ],
         },
         {
@@ -1108,6 +1126,12 @@ const sidebars = {
             'dotnet/dashboard-active-transaction',
             'dotnet/dashboard-iis-perf-count',
             'dotnet/dashboard-hitmap-trace',
+            {
+              type: 'doc',
+              id: 'dotnet/dashboard-business', 
+              label: '비즈니스 대시보드',
+              className: 'beta' 
+            },
           ],
         },
         {
