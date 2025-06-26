@@ -1,0 +1,184 @@
+[
+  {
+    "url": "https://docs.whatap.io/release-notes/service/service-2_18_x",
+    "ver": "Service 2.18.0",
+    "date": "2025-06-26",
+    "Lists": [
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added WhaTap Docs link to the right of the service page title</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex 보드</span> 위젯의 가려진 프로젝트 이름 툴팁 표시 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flex 보드</span> 위젯 검색 시, 폴더 내 위젯이 없을 경우 해당 폴더 미노출</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Common",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved real-time alerts to sort by most recent</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Loading indicator added when refreshing all data</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">트랜잭션 맵</span> 필터 저장 기능 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">트랜잭션 맵</span> 실시간 모드가 아닐 때, 조회 시간과 필터 정보를 URL에 저장</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">분석</span> &gt; <span class=\"uitext\">성능 추이</span> 종류별·서버별 에이전트를 선택할 수 있도록 개선 (종류와 관계없이 하나만 선택 가능)</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Application",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">실험실</span> &gt; <strong>비즈니스 대시보드</strong> 메뉴 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU 인벤토리</strong>, <strong>GPU 성능요약</strong> 신규 메뉴 출시</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">서버 목록</span> &gt; <span class=\"uitext\">서버 상세</span> 과거 조회 시 삭제된 에이전트를 서버 선택(셀렉터)에서 조회할 수 있도록 수정</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">서버 목록</span> 관리 기능 버튼명 변경 및 설명 툴팁 추가</p>",
+        "details": "<ul>\n<li><strong>일시정지</strong> → <strong>알림 정지</strong>: “선택된 서버의 이벤트 발생을 일시 정지시킵니다\"</li>\n<li><strong>재시작</strong> → <strong>알림 재시작</strong>: “선택된 서버 중 알림 정지 상태인 서버의 이벤트 알림을 다시 활성화합니다.”</li>\n<li><strong>제외</strong>: “선택된 서버의 작동을 중지합니다. 서버 목록에서 제외되며 서버 현황을 확인할 수 없습니다.”</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Server",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">서버 상세</span> 과거 시점 조회 시, 삭제된 서버라도 데이터가 남아 있는 경우 서버 선택 셀렉터에 비활성 상태로 표시</p>",
+        "details": "<ul>\n<li><code>yard.conf</code>의 <code>show_deleted_servers_in_range</code> 옵션이 활성화된 프로젝트에 적용</li>\n</ul>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>분석</strong> &gt; <strong>오픈메트릭 탐색기</strong> 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>GPU 모니터링</strong> 출시</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Kubernetes",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">대시보드</span> &gt; <span class=\"uitext\">컨테이너 맵</span> GPU 지표 기반 색상 표시 기능 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">통계/보고서</span> &gt; <span class=\"uitext\">SQL 통계</span> 지표에 마우스 오버 시 설명 표시 기능 추가</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> 인스턴스 맵 화면 신규 출시</li>",
+        "category": "MySQL, Oracle, Oracle Pro, PostgreSQL"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">실험실</span> &gt; <strong>Top SQL</strong> 필터 추가</p>",
+        "category": "MySQL, Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <strong>Top SQL</strong> 특정 지표에 마우스 오버 시 설명 표시 기능 추가</p>",
+        "category": "MySQL, Oracle V2, Oracle Pro"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Database",
+        "type": "Feature",
+        "desc": "<li><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">대시보드</span> SQL Elapse Map 위젯 테이블 정보에 state 컬럼 추가</li>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Browser",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> iOS 프로젝트 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 로그 CSV, TXT 다운로드 기능 추가</p>"
+      },
+      {
+        "ver": "Service 2.18.0",
+        "hash": "service-2180",
+        "product": "Log",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">로그 설정</span> &gt; <span class=\"uitext\">로그 1차 파서 설정</span> 등록 및 수정 시 로그 샘플 선택 동선 제공</p>"
+      }
+    ]
+  }
+]

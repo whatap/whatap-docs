@@ -1,0 +1,242 @@
+[
+	{
+	  "url": "https://docs.whatap.io/ja/release-notes/service/service-2_17_x",
+	  "ver": "Service 2.17.1",
+	  "date": "2023-06-04",
+	  "Lists": [
+		{
+		  "ver": "Service 2.17.1",
+		  "hash": "service-2171",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">セッション詳細</span>画面にセッショントレース機能を追加</p>",
+		  "category": "Oracle Pro"
+		},
+		{
+		  "ver": "Service 2.17.1",
+		  "hash": "service-2171",
+		  "product": "Log",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Log Explorer</span>ページを追加</p>"
+		}
+	  ]
+	},
+	{
+	  "url": "https://docs.whatap.io/ja/release-notes/service/service-2_17_x",
+	  "ver": "Service 2.17.0",
+	  "date": "2025-05-28",
+	  "Lists": [
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "共通",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">リアルタイムアラート</span>, <span class=\"uitext\">プロジェクトメンバー</span>(<span class=\"uitext\">統合グループ</span>)オプションと選択状態がURLに含まれているため、リンク共有時に同じ状態で共有可能</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "共通",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">レポート</span>エクセルダウンロード機能を追加(一部のレポートテンプレートでのみ提供)</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "共通",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Flexボード</span>共有権限の変更機能を追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "共通",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント設定</span> <code class=\"newfunc\">New</code>イベント設定履歴のExcelファイルダウンロードボタンを追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">マルチTX</span> <span class=\"uitext\">チャート</span>クライアントのIP情報表示オプションを追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">トレース分析</span> &gt; <em><strong>タイムライン</strong></em>、<span class=\"uitext\">テーブルビュー</span>メッセージステップ中にエラー属性を表示</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">TXマップ</span>最初のデータ照会時にテーブル領域ローディング表示、データがなければデータリクエスト時間に縦線ローディングを表示</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">TXマップ</span>停止状態で使用できるフィルター項目に '都市'フィルターを追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">TXマップ</span> <code>STEP_SQL_BIND</code>、<code>STEP_ALL</code>フィルター項目を追加(使用時に復号化キーの入力が必要)</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ヒットマップ</span>ドラッグでプロファイルデータを照会時、最大照会期間の超過時に可能期間の案内文を表示</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Application",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">TXマップ</span>ウィジェットと設定項目を追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Server",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">通知設定</span> &gt; <em><strong>Webhook JSON</strong></em>変数を追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Server",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>ページコンテンツドローワーで提供</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Server",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">サーバーリスト</span> &gt; <span class=\"uitext\">サーバー 詳細</span>メニューのチャートにY軸最大値を直接入力できる設定ポップオーバーを追加</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Server",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">ログファイル / Windowsウイベント</span>繰り返し(回)、期間(秒)追加/修正可能</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Server",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">アラート通知</span> &gt; <span class=\"uitext\">イベント設定</span> &gt; <span class=\"uitext\">ログファイル / Windowsウイベント</span>のイベントリストでEvent ID表示を改善</p>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>ロックツリーテーブルにコラム選択機能を追加</p>",
+		  "category": "共通",
+		  "details": "<ul>\n<li><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>, <span class=\"uitext\">マルチインスタンス</span></li>\n<li><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></li>\n</ul>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>リアルタイムモードでない場合、チャートデータをCSVダウンロード機能を追加</p>",
+		  "category": "共通"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span> Disk Usageウィジェットテーブル状態のプリセット保存機能を追加</p>",
+		  "category": "共通"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>インスタンスのReplication RoleまたはCluster構成表示タグを追加</p>",
+		  "category": "共通",
+		  "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span>画面のインスタンスセレクター</p>\n</li>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">マルチインスタンス</span>画面のインスタンスタグ</p>\n</li>\n<li>\n<p><span class=\"uitext\">管理</span> &gt; <em><strong>エージェントリスト</strong></em>のRoleコラム</p>\n</li>\n</ul>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span> <code class=\"newfunc\">New</code>画面を改善</p>",
+		  "category": "共通",
+		  "details": "<ul>\n<li>ユーザー定義ウィジェットシリーズチャートにクリック及びドラッグイベントを追加</li>\n<li>チャートオプションアイコンを詳細を見るボタンに変更</li>\n<li>非活性化インスタンスの選択時に案内文を追加</li>\n<li>基本提供シリーズチャートにメトリクス選択ボタンを追加</li>\n</ul>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> DBエージェントのインストールのクラウドエージェント項目を追加</p>",
+		  "category": "MongoDB, MySQL, Oracle, PostgreSQL, SQL Server"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">ロックツリー</span>テーブルにロック照会権限の案内文を追加</p>",
+		  "category": "MySQL",
+		  "details": "<ul>\n<li>\n<p><span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">インスタンスモニタリング</span></p>\n</li>\n<li>\n<p><span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ロックツリー</span></p>\n</li>\n</ul>"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">統計/レポート</span> &gt; <em><strong>テーブルサイズ増減</strong></em>の<em><strong>テーブル別の容量詳細</strong></em>テーブルに増減量コラムを追加</p>",
+		  "category": "MySQL"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> インストールページにマルチテナントDB kill sessionコマンドの案内を追加</p>",
+		  "category": "Oracle"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">実験室</span> &gt; <span class=\"uitext\">スクリプト·マネージャー</span>でマルチスクリプト及びインスタンスのマルチスクリプト実行結果の確認機能を追加</p>",
+		  "category": "Oracle Pro"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Database",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">インスタンスモニタリング</span>, <span class=\"uitext\">マルチインスタンス</span>, <span class=\"uitext\">ロックツリー</span>ロックツリーテーブルに<code>holder_relation</code>、<code>waiter_relation</code>、<code>state</code>コラムを追加</p>",
+		  "category": "PostgreSQL"
+		},
+		{
+		  "ver": "Service 2.17.0",
+		  "hash": "service-2170",
+		  "product": "Cloud",
+		  "type": "Feature",
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <em><strong>アプリケーションヒートマップ</strong></em>、<em><strong>マルチサービスヒートマップ</strong></em>ドラッグでプロファイルデータ照会時、最大照会期間の超過時に通知文を表示</p>"
+		}
+	  ]
+	}
+]

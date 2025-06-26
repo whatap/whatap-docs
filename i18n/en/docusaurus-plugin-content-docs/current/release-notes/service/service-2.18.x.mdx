@@ -1,0 +1,110 @@
+---
+id: service-2_18_x
+title: Service 2.18.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_18_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.18.0
+
+June 26, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> Added WhaTap Docs link to the right side of the service page title
+- <Status priority='1'>Feature</Status> Added tooltip for hidden project names in <Cmdname sid="side_flexboard" className="uitext" /> widget
+- <Status priority='1'>Feature</Status> In widget search, folders are hidden if there are no widgets inside in <Cmdname sid="side_flexboard" className="uitext" />
+- <Status priority='1'>Feature</Status> Improved real-time alerts to be sorted in descending order
+- <Status priority='1'>Changed</Status> Removed scroll from widget editing screen in <Cmdname sid="side_flexboard" className="uitext" /> edit mode
+- <Status priority='0'>Fixed</Status> After deleting a group in <Cmdname sid="group_management" className="uitext" />, redirected to the initial page
+- <Status priority='0'>Fixed</Status> Fixed issue where alerts did not disappear automatically when returning from another window
+- <Status priority='0'>Fixed</Status> Fixed consent popup being hidden behind project selection popup during permission transfer
+- <Status priority='0'>Fixed</Status> Fixed issue where agent information was queried with an invalid timestamp
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> Added loading indicator when refreshing all data
+- <Status priority='1'>Feature</Status> Added filter saving to <Cmdname sid="transaction_map" className="uitext" />
+- <Status priority='1'>Feature</Status> When not in real-time mode, query time and filters are saved in the URL in <Cmdname sid="transaction_map" className="uitext" />
+- <Status priority='1'>Feature</Status> Improved agent selector in <Cmdname sid="side_analysis" className="uitext" /> > <Cmdname sid="side_perfTrend" className="uitext" /> to allow selecting one agent regardless of type
+- <Status priority='1'>Feature</Status> Added **Business Dashboard** menu to <Cmdname sid="side_lab" className="uitext" />
+- <Status priority='1'>Changed</Status> Changed agent selector UI in <Cmdname sid="side_perfTrend" className="uitext" /> to match the statistics screen
+- <Status priority='0'>Fixed</Status> Fixed filter not applied to all data in real-time mode
+- <Status priority='0'>Fixed</Status> Fixed issue where chart showed data exceeding axis range in <Cmdname sid="side_hitmap" className="uitext" />
+- <Status priority='0'>Fixed</Status> Fixed agent filter only partially applied in <Cmdname sid="dashboard" className="uitext" /> > <Cmdname sid="AA005" className="uitext" />
+- <Status priority='0'>Fixed</Status> Fixed intermittent issue where internal data was not displayed in <Cmdname sid="TTL06209" className="uitext" /> popout
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> Released new **GPU Inventory** and **GPU Summary** menus
+- <Status priority='1'>Feature</Status> In <Cmdname sid="side_serverDetail" className="uitext" />, deleted agents are shown in selector during past view
+- <Status priority='1'>Feature</Status> Changed button names and added tooltips in <Cmdname sid="side_serverList" className="uitext" />
+- <Status priority='1'>Feature</Status> In past view, deleted servers are shown as inactive in selector if data exists (when `show_deleted_servers_in_range` option is enabled in `yard.conf`)
+- <Status priority='0'>Fixed</Status> Improved loader display in **Feature Project** > **KAFKA Dashboard** to appear only on first load or when paused
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> Added **OpenMetrics Explorer** under **Analysis**
+- <Status priority='1'>Feature</Status> Released **GPU Monitoring**
+- <Status priority='1'>Feature</Status> Added GPU-based color indicator to <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="container_map" className="uitext" />
+- <Status priority='1'>Changed</Status> Changed metric dashboard period in <Cmdname sid="podList" className="uitext" /> to allow up to 30 days
+- <Status priority='1'>Changed</Status> Removed 5-minute unit limit in **Timeline** menus
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> Added tooltip descriptions on mouse hover in <Cmdname sid="side_dbSqlStat" className="uitext" />
+- <Status priority='1'>Changed</Status> Increased page size in <Cmdname sid="side_logViewer" className="uitext" /> from 2,000 to 20,000 characters
+- <Status priority='0'>Fixed</Status> Fixed inconsistent field names between table, selector, and filter in <Cmdname sid="side_dbSqlStat" className="uitext" />
+- <Status priority='0'>Fixed</Status> Removed unnecessary scroll from widgets such as Long Active session Count, Lock Waiting Session Count, Wait Event, Database Map
+
+#### Altibase, Cubrid, MySQL, Oracle, PostgreSQL, SQL Server, Tibero
+
+- <Status priority='0'>Fixed</Status> Fixed query not displayed in <Cmdname sid="side_dbScriptManager" className="uitext" />
+
+#### MySQL, Oracle, Oracle Pro, PostgreSQL
+
+- <Status priority='1'>Feature</Status> Released **Instance Map**
+
+#### MySQL, Oracle V2, Oracle Pro
+
+- <Status priority='1'>Feature</Status> Added filters to **Top SQL**
+- <Status priority='1'>Feature</Status> Added tooltip descriptions to metrics in **Top SQL**
+- <Status priority='0'>Fixed</Status> Fixed inconsistent labels in **Top SQL**
+
+#### PostgreSQL
+
+- <Status priority='1'>Feature</Status> Added `state` column to SQL Elapse Map widget in <Cmdname sid="side_dashboard" className="uitext" />
+
+#### PostgreSQL V2
+
+- <Status priority='0'>Fixed</Status> Fixed byte unit values not displaying in <Cmdname sid="dbObjectInfo" className="uitext" />
+
+---
+
+### `Browser`
+
+- <Status priority='1'>Feature</Status> Added iOS project support
+- <Status priority='0'>Fixed</Status> Improved <Cmdname sid="analysis" className="uitext" /> > <Cmdname sid="hitmap" className="uitext" />, <Cmdname sid="TTL08103" className="uitext" />
+
+---
+
+### `Log`
+
+- <Status priority='1'>Feature</Status> Added CSV and TXT download support for logs
+- <Status priority='1'>Feature</Status> Added log sample selection flow in <Cmdname sid="log_setting" className="uitext" /> > <Cmdname sid="log_parser_setting_primary" className="uitext" />
+- <Status priority='0'>Fixed</Status> Fixed issue where changing time option in **Log Tag** > <Cmdname sid="TTL06582" className="uitext" /> changed log basis
+
+</div>
