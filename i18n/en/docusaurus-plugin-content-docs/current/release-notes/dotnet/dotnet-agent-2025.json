@@ -9,7 +9,7 @@
         "hash": "v243",
         "product": ".NET Agent",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added an option to display the original URL in step traces when URL normalization is applied</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added an option to display the original URL in step traces when URL normalization is applied.</p>",
         "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><ul><li>Default: <code>false</code></li><li>When URL normalization is applied, the original URL is also displayed in step traces.</li></ul></li></ul>"
       },
       {
@@ -17,7 +17,7 @@
         "hash": "v243",
         "product": ".NET Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed a bug where errors in ISAPI filter-based transactions were incorrectly shown in blue on the hitmap.</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the original URL was not displayed in record summaries when URL normalization was applied.</p>"
       }
     ]
   },  

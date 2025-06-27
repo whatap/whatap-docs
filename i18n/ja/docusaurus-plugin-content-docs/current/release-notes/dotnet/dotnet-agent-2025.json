@@ -17,7 +17,7 @@
         "hash": "v243",
         "product": ".NET Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ISAPIフィルター ベースのトランザクションでエラーが発生した場合にもヒートマップに青色で表示されるバグを修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> URLを正規化した場合に、レコード要約で元のURLが表示されなかった問題を修正</p>"
       }
     ]
   },  
