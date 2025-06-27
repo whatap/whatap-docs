@@ -1,5 +1,27 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/dotnet/dotnet-2_4_3/",
+    "ver": "v2.4.3",
+    "date": "2025-06-25",
+    "Lists": [
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> URLを正規化した場合に、元のURLをstepでも表示できるオプションを追加</p>",
+        "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><ul><li>デフォルト値：<code>false</code></li><li>URLを正規化した場合でも、元のURLがstepで表示されます。</li></ul></li></ul>"
+      },
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ISAPIフィルター ベースのトランザクションでエラーが発生した場合にもヒートマップに青色で表示されるバグを修正</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_2",
     "ver": "v2.4.2",
     "date": "2025-04-26",
