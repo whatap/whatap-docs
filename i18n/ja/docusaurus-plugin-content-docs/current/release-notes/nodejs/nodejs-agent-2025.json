@@ -1,5 +1,34 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_21/",
+    "ver": "v0.5.21",
+    "date": "2025-06-26",
+    "Lists": [
+      {
+        "ver": "v0.5.21",
+        "hash": "v0521",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>ignore_env_variable_set</code> <span class=\"type\">String</span> </p>",
+        "details": "<ul>\n<li>\n<p>デフォルトなし</p>\n</li>\n<li>\n<p>特定の環境変数の収集を無視するオプションを追加</p>\n</li>\n<li>\n<p>カンマ（,）で区切って複数の値を指定可能</p>\n</li>\n<li>\n<p>使用例：ignore_env_variable_set=ENV_1,ENV_2</p>\n</li></ul>"
+      },
+      {
+        "ver": "v0.5.21",
+        "hash": "v0521",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> トランザクションエラー発生時のイベントアラーム機能を追加 </p>"
+      },
+      {
+        "ver": "v0.5.21",
+        "hash": "v0521",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Prisma ORM 使用時に統計データの収集エラーを修正</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/ja/release-notes/nodejs/nodejs-0_5_14",
     "ver": "v0.5.14",
     "date": "2025-04-04",
