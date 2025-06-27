@@ -4810,13 +4810,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_19',
+                  id: 'release-notes/nodejs/nodejs-0_5_21',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_19',
                 'release-notes/nodejs/nodejs-0_5_16',
                 'release-notes/nodejs/nodejs-0_5_14',
                 'release-notes/nodejs/nodejs-0_5_12',
-                'release-notes/nodejs/nodejs-0_5_10',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
@@ -4856,13 +4856,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/dotnet/dotnet-2_4_2',
+                  id: 'release-notes/dotnet/dotnet-2_4_3',
                   // className: 'new',
                 },
+                'release-notes/dotnet/dotnet-2_4_2',
                 'release-notes/dotnet/dotnet-2_4_1',
                 'release-notes/dotnet/dotnet-2_4_0',
                 'release-notes/dotnet/dotnet-2_3_9',
-                'release-notes/dotnet/dotnet-2_3_8',
                 'release-notes/dotnet/dotnet-previous',
               ],
             },
