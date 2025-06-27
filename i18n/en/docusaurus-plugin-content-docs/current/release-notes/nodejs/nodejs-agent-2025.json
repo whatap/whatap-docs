@@ -1,5 +1,34 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_21/",
+    "ver": "v0.5.21",
+    "date": "2025-06-26",
+    "Lists": [
+      {
+        "ver": "v0.5.21",
+        "hash": "v0521",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>ignore_env_variable_set</code> <span class=\"type\">String</span> </p>",
+        "details": "<ul>\n<li>\n<p>No default value</p>\n</li>\n<li>\n<p>Added an option to exclude specific environment variables from collection</p>\n</li>\n<li>\n<p>Supports multiple values separated by commas (,)</p>\n</li>\n<li>\n<p>Example usage: ignore_env_variable_set=ENV_1,ENV_2</p>\n</li></ul>"
+      },
+      {
+        "ver": "v0.5.21",
+        "hash": "v0521",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added event alarm feature triggered on transaction errors </p>"
+      },
+      {
+        "ver": "v0.5.21",
+        "hash": "v0521",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue with collecting statistical data when using Prisma ORM</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/en/release-notes/nodejs/nodejs-0_5_14",
     "ver": "v0.5.14",
     "date": "2025-04-04",

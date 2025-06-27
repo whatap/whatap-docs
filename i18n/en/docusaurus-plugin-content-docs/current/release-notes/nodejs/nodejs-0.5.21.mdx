@@ -1,0 +1,27 @@
+---
+id: nodejs-0_5_21
+title: Node.js Agent v0.5.21
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_5_19
+displayed_sidebar: releaseSidebar
+---
+
+June 26, 2025
+
+- <Status priority='1'>New</Status> <code>ignore_env_variable_set</code> <span class='type'>String</span>
+
+    * No default value
+
+    * Added an option to exclude specific environment variables from collection
+
+    * Supports multiple values separated by commas (`,`)
+
+    * Example usage: <code>ignore_env_variable_set=ENV_1,ENV_2</code>
+
+- <Status priority='1'>New</Status> Added event alarm feature triggered on transaction errors
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where monitoring did not work with <code>mysql2</code> version 3.12.0 or higher
+
+import DownloadNode2 from './_import_dl-nodejs-agent2.mdx';
+
+<DownloadNode2 ver="0.5.21" />
