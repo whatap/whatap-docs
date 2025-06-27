@@ -1949,6 +1949,7 @@ const sidebars = {
           },
           items: [
             'postgresql/instance-list',
+            'postgresql/instance-map',
             'postgresql/instance-monitoring',
             'postgresql/multi-instance-monitoring',
             'postgresql/slow-query',
@@ -2313,6 +2314,7 @@ const sidebars = {
           },
           items: [
             'oracle/instance-list',
+            'oracle/instance-map',
             'oracle/instance-monitoring',
             'oracle/multi-instance-monitoring',
             'oracle/rac-monitoring',
@@ -2522,6 +2524,7 @@ const sidebars = {
           },
           items: [
             'oracle-pro/instance-list',
+            'oracle-pro/instance-map',
             'oracle-pro/instance-monitoring',
             'oracle-pro/multi-instance-monitoring',
             'oracle-pro/rac-monitoring',
@@ -2735,6 +2738,7 @@ const sidebars = {
           },
           items: [
             'mysql/instance-list',
+            'mysql/instance-map',
             'mysql/instance-monitoring',
             'mysql/multi-instance-monitoring',
             'mysql/slow-query',
