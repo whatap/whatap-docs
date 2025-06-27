@@ -1,0 +1,22 @@
+---
+id: java-2_2_61
+title: Java Agent v2.2.61
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_60
+displayed_sidebar: releaseSidebar
+---
+
+June 9, 2025
+
+- <Status priority='1'>Changed</Status> Modified to not send OpenTelemetry trace header keys by default
+
+    ```bash
+    # default: false
+    mtrace_traceparent_enabled=true
+    ```
+
+- <Status priority='1'>Changed</Status> In Spring Boot, changed to trace propagation by default when using `async-annotation` (runs in a separate thread)
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.61" />
