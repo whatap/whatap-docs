@@ -7586,11 +7586,6 @@ const sidebars = {
           ],
         },
         {
-          type: 'doc',
-          label: '설정하기',
-          id: 'log/log-setting',
-        },
-        {
           type: 'category',
           label: '로그 설정',
           collapsible: true,
