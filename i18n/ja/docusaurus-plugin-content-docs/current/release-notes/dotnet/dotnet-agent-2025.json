@@ -9,7 +9,15 @@
         "hash": "v243",
         "product": ".NET Agent",
         "type": "New",
-        "desc": "<p><code class=\"New\" type=\"1\">New</code> URLを正規化した場合に、元のURLをstepでも表示できるオプションを追加</p>",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> メトリクス照会で <code>app_context_stat</code> カテゴリを追加</p>",
+        "details": "<ul><li><p><strong>app_context_enabled</strong> <span class='type'>Boolean</span></p><ul><li>デフォルト値：<code>false</code></li><li><code>true</code> に設定すると、<code>app_context_stat</code> の収集機能が全体的に有効になります。</li></ul></li><li><p><strong>app_context_parser</strong></p><ul><li><code>default, prefix, match</code> のいずれかを使用</li><li><code>default</code>：デフォルトパーサー（最初のパスセグメントを抽出）</li><li><code>prefix</code>：プレフィックスマッチパーサー（最も柔軟）</li><li><code>match</code>：完全一致パーサー（正確な一致のみ）</li></ul></li><li><p><strong>app_context_parser_reset</strong> <span class='type'>Number</span></p><ul><li>デフォルト値：<code>0</code></li><li>パーサーの内部キャッシュと設定を強制的にリセットするカウンター</li></ul></li><li><p><strong>app_context_path_depth</strong> <span class='type'>Number</span></p><ul><li>デフォルト値：<code>1</code></li><li>URLから抽出するパスセグメントの深さを指定（<code>default</code> パーサーのみ使用）</li></ul></li><li><p><strong>app_context_path_set</strong> <span class='type'>String</span></p><ul><li>監視対象のパスとその名称を定義するマッピングを設定。複数設定する場合は <code>,</code>（カンマ）で区切ります。</li><li>例：<code>name1@url1,name2@url2,url3,name4@url4</code></li></ul></li></ul>"
+      },
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": ".NET Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> URLを正規化した場合、元のURLをstepでも表示できるオプションを追加</p>",
         "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><ul><li>デフォルト値：<code>false</code></li><li>URLを正規化した場合でも、元のURLがstepで表示されます。</li></ul></li></ul>"
       },
       {
@@ -20,7 +28,7 @@
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> URLを正規化した場合に、レコード要約で元のURLが表示されなかった問題を修正</p>"
       }
     ]
-  },  
+  },    
   {
     "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_2",
     "ver": "v2.4.2",
