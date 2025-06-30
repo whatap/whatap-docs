@@ -1,0 +1,78 @@
+---
+id: ai-chatbot
+title: WhaTap AI Chatbot
+description: WhaTap AI Chatbot allows users to ask questions in natural language, and the AI responds intelligently through a conversational interface.
+toc_max_heading_level: 3
+keywords: [ AI, Chatbot, QnA ]
+---
+
+WhaTap AI Chatbot is an intelligent conversational interface that allows users to ask questions in natural language, and the AI understands and responds in real time with appropriate answers.  
+Unlike simple keyword searches, this chatbot provides a conversational user experience that understands context and delivers goal-oriented information.
+
+Specialized for the WhaTap Monitoring Service, the chatbot can automatically provide configuration guides, feature explanations, version information, and usage examples based on user questions.  
+For example, when users ask how to create a specific dashboard, register a log parser, or request SQL analysis, the chatbot provides immediate answers.
+
+WhaTap AI Chatbot is especially useful in the following cases:
+
+- When it is difficult to find product manuals or guides  
+- When complex settings or metric interpretations are needed  
+- When quick information sharing between developers and operators is required  
+
+Currently offered in beta, the service will continue to improve and support more languages and features in the future.
+
+:::info
+
+The WhaTap AI Chatbot service is built on a Node.js-based backend server, using a Milvus vector database and MinIO object storage. It delivers fast and accurate answers by integrating with internal documents and data through a high-performance search and response system.
+
+:::
+
+## Support Scope
+
+- **Status**: Beta  
+- **Languages**: Korean (Japanese and English under development)  
+- **Input Limit**: Up to 3,000 characters  
+- **Usage Limit**: Unlimited (usage limits and billing may be introduced later)  
+- **Requirements**: Login with a WhaTap account required  
+
+## Basic Usage
+
+<ImgLang img='ai-chatbot.png' desc='WhaTap AI Chatbot Service' />
+
+### Start a Conversation
+
+1. Click the chatbot icon at the top right corner ![csv icon](/img/ic-ai-chatbot.svg)  
+2. Confirm the chatbot window popup  
+3. Review the welcome message and feature guide  
+4. Enter your question and press the send button or hit Enter to start the conversation  
+
+### Conversation Flow
+
+- User messages are displayed on the **right**, and AI responses appear on the **left**  
+- AI responses are generated in real time, and the message `"Generating a response…”` is shown during processing  
+- Conversation history is **temporarily stored in the browser session** and will be deleted when the window is closed or refreshed  
+
+### Using Responses
+
+- If the answer includes a code block, you can use the **copy button** to easily copy complex content such as regular expressions  
+- AI responses may include additional questions or suggestions for next steps  
+
+## Example Use Cases
+
+1. Viewing configuration options for collectors and agents  
+2. Getting guidance on building a Flex Board (dashboard)  
+3. Checking supported versions of each product  
+4. Getting recommendations on how to use specific features  
+5. Verifying support for specific libraries or functions  
+6. Performing simple SQL analysis  
+7. Viewing a brief summary of project operational status  
+8. Understanding the meaning of key monitoring metrics  
+
+:::note
+
+**Please keep the following in mind when using the WhaTap AI Chatbot service:**
+
+- Only questions related to the WhaTap Monitoring Service are supported  
+- For more accurate responses, please enter **clear and specific questions**  
+- **Do not enter sensitive information or personal data**  
+
+:::
