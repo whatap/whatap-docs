@@ -8,13 +8,45 @@ displayed_sidebar: releaseSidebar
 
 2025年06月25日
 
-- <Status priority='1'>New</Status> URLを正規化した場合に、元のURLをstepでも表示できるオプションを追加
+- <Status priority='1'>New</Status> メトリクス照会で `app_context_stat` カテゴリを追加
+
+    * **app_context_enabled** <span class='type'>Boolean</span> 
+
+        * デフォルト値：`false`
+
+        * `true` に設定すると、`app_context_stat` の収集機能が全体的に有効になります。
+    
+    * **app_context_parser**
+    
+        * `default`, `prefix`, `match` のいずれかを使用
+
+        * `default`：デフォルトパーサー（最初のパスセグメントを抽出）
+
+        * `prefix`：プレフィックスマッチパーサー（最も柔軟）
+
+        * `match`：完全一致パーサー（正確な一致のみ）
+    
+    * **app_context_parser_reset** <span class='type'>Number</span> 
+    
+        * デフォルト値：`0`
+
+        * パーサーの内部キャッシュと設定を強制的にリセットするカウンター
+    
+    * **app_context_path_depth** <span class='type'>Number</span> 
+    
+        * デフォルト値：`1`
+
+    * **app_context_path_set** <span class='type'>String</span> 
+
+        * 監視対象のパスと名称を定義するマッピング設定。複数設定する場合はカンマ（`,`）で区切ります。
+
+        * 例：`name1@url1,name2@url2,url3,name4@url4`
+
+- <Status priority='1'>New</Status> URLを正規化した場合、元のURLをstepでも表示できるオプションを追加
 
     * **step_origin_url_enabled** <span class='type'>Boolean</span> 
     
         * デフォルト値：`false`
-
-        * URLを正規化した場合でも、元のURLがstepで表示されます。
 
 - <Status priority='0'>Fixed</Status> URLを正規化した場合に、レコード要約で元のURLが表示されなかった問題を修正
 
