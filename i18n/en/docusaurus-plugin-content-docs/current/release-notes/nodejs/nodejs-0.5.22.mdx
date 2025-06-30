@@ -1,0 +1,23 @@
+---
+id: nodejs-0_5_22
+title: Node.js Agent v0.5.22
+toc_max_heading_level: 2
+pagination_next: release-notes/nodejs/nodejs-0_5_21
+displayed_sidebar: releaseSidebar
+---
+
+June 30, 2025
+
+- <Status priority='1'>New</Status> <code>profile_mongodb_param_enabled</code> <span class='type'>Boolean</span> 
+
+    * Default: <code>false</code>
+
+    * Added an option to display actual query parameter values when tracing the mongoose module
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where three separate transactions (API request, Socket.IO handshake, and polling) were recorded for a single client request when using both an HTTP server and a Socket.IO server together
+
+    * Now only the API request is recorded as a single transaction. Socket.IO handshake and polling requests are no longer recorded as separate transactions
+
+import DownloadNode2 from './_import_dl-nodejs-agent2.mdx';
+
+<DownloadNode2 ver="0.5.22" />
