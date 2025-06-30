@@ -1,0 +1,178 @@
+## Home > Select Project > <Cmdname sid="dashboard" className="uitext" /> > **Business Dashboard**
+
+The **Business Dashboard** allows you to monitor application performance by business unit (App Context).  
+You can analyze both real-time and historical performance data for each business context, defined by URL patterns or paths.  
+By viewing key metrics like TPS, response time, and error rate per business context, you can quickly identify performance issues in specific operations or services.
+
+## Layout Overview
+
+<ImgLang img='apm-dashboard-business.png' desc='Business Dashboard' />
+
+### Time Range
+
+Use the time selector at the top left to set the desired time range for data retrieval.  
+To the right of the time selector, you can view the status of agents connected to the project to immediately check whether the monitored servers are running.
+
+- **Live Mode**: Auto-refreshes every 5 seconds, displaying data from the last 10 minutes.
+- **Historical Mode**: Allows you to query data up to the past month.
+- **Data aggregation unit**:
+    - Under 3 hours: Raw data
+    - 3 hours to 3 days: 5-minute statistics
+    - Over 3 days: 1-hour statistics
+
+:::note
+
+For more details on the time selector, see the [following](usage-ui#timeselector).
+
+:::
+
+### Agent Selection
+
+Below the time selector, you can see the list of agents under the selected project.  
+Click an agent to highlight it with a blue tag and filter the dashboard to show only its data.
+
+:::note
+
+For more information on agent selection, see the [following](dashboard#select-agent).
+
+:::
+
+### View Mode
+
+You can toggle between two view modes based on your preference by clicking the icons on the top left:
+
+* ![List Icon](/img/ic-list.svg) **Table View**  
+  Displays all business items in a table format, making it easy to compare and sort data.  
+  Suitable for quickly understanding the overall situation at a glance.
+
+* ![Card List Icon](/img/ic-card-list.svg) **Card View**  
+  Presents each business item as a card.  
+  You can choose from 1 to 4 columns, making it flexible depending on your monitor size or working environment.  
+  Ideal for dashboard-style viewing or focusing on specific business performance.
+
+### Search by Business Name
+
+Use the search field to quickly locate a specific business by name.
+
+### CSV Download
+
+Click the ![CSV Icon](/img/ic-csv-download-ms.svg) icon next to the search bar (top-right) to download performance data for all business items on the screen as a CSV file.
+
+### Business Performance Metrics
+
+For each business unit, the following key performance indicators are available.  
+These metrics include both real-time data and aggregated stats over the selected time range.  
+Charts are available for **active transactions**, **response time**, and **error rate**.
+
+- **Active Transactions**: Shows the number of currently processing transactions via a speedometer for intuitive real-time load insight.
+- **TPS (Transactions Per Second)**: Measures system throughput.
+- **Transaction Count**: Total transactions collected during the selected period.
+- **Transactions/min**: Average number of transactions per minute, helpful for identifying traffic patterns.
+- **Response Time**: Includes average and max response times; trends are shown in charts.
+- **Error Count**: Total errors during the selected period.
+- **Error Rate (%)**: Percentage of failed transactions.
+- **Errors/min**: Average number of errors per minute.
+
+## Business Detail Analysis
+
+### Top Transaction Stats
+
+Click the detail icon in either the table or card view to open a drawer on the right showing the top 30 transactions for the selected business context.
+
+:::tip
+
+How to open detail view:
+
+- Table View: Click ![View Icon](/img/ic-pageview.svg) in the left-most column.
+- Card View: Click the arrow (>) at the top right of the card.
+
+:::
+
+Steps:
+
+1. Click the detail icon in table or card view.
+2. A drawer will open on the right displaying top 30 transactions for that business.
+3. Use the sort dropdown (default: by count).
+4. Available transaction data includes:
+    * Transaction name
+    * Detailed analysis (![View Icon](/img/ic-pageview.svg))
+    * Count
+    * Errors
+    * Avg time (ms)
+    * Max time (ms)
+    * Avg CPU time
+    * Avg memory allocation
+    * SQL count
+    * Avg SQL time (ms)
+    * SQL fetch count
+    * Avg SQL fetch count
+    * HTTP call count
+    * Avg HTTP call time (ms)
+5. Use the search bar at the top of the drawer to filter specific transactions.
+
+## Agent Configuration
+
+To use the Business Dashboard, agent configuration is required.
+
+### Supported Agent Versions
+
+<InDoc product="java">
+
+- **Java**: 2.2.40 or higher
+
+</InDoc>
+
+<InDoc product="php">
+
+- **PHP**: 2.11.0 or higher
+
+</InDoc>
+
+<InDoc product="python">
+
+- **Python**: 1.8.5 or higher
+
+</InDoc>
+
+<InDoc product="dotnet">
+
+- **.NET**: 2.4.3 or higher
+
+</InDoc>
+
+### Required Setting
+
+```
+# Enable business context monitoring
+app_context_enabled=true
+```
+
+### Optional Settings
+
+```
+# Parser type (default/prefix/match)
+app_context_parser=default
+
+# Reset parser's internal cache/settings
+app_context_parser_reset=0
+
+# Depth of path segment to extract
+app_context_path_depth=1
+
+# Mapping of names to monitored paths (comma-separated)
+app_context_path_set=name1@url1,name2@url2,url3,name4@url4
+```
+
+:::note
+
+You must restart the application for the settings to take effect.
+
+:::
+
+:::tip
+
+- If no data appears in the dashboard, verify the agent settings.
+- If the agent version is too old, upgrade to the latest supported version.
+- Business context can be defined automatically or manually based on URL patterns.
+
+:::
