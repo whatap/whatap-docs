@@ -124,7 +124,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'java/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -393,7 +392,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'php/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -880,7 +878,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'python/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -1129,7 +1126,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'dotnet/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
