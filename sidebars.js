@@ -4804,13 +4804,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_21',
+                  id: 'release-notes/nodejs/nodejs-0_5_22',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_21',
                 'release-notes/nodejs/nodejs-0_5_19',
                 'release-notes/nodejs/nodejs-0_5_16',
                 'release-notes/nodejs/nodejs-0_5_14',
-                'release-notes/nodejs/nodejs-0_5_12',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
