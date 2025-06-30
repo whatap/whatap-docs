@@ -36,6 +36,8 @@ displayed_sidebar: releaseSidebar
     
         * デフォルト値：`1`
 
+        * URLから抽出するパスセグメントの深さを指定（defaultパーサーのみ使用）
+
     * **app_context_path_set** <span class='type'>String</span> 
 
         * 監視対象のパスと名称を定義するマッピング設定。複数設定する場合はカンマ（`,`）で区切ります。
@@ -45,7 +47,7 @@ displayed_sidebar: releaseSidebar
 - <Status priority='1'>New</Status> URLを正規化した場合、元のURLをstepでも表示できるオプションを追加
 
     * **step_origin_url_enabled** <span class='type'>Boolean</span> 
-    
+
         * デフォルト値：`false`
 
 - <Status priority='0'>Fixed</Status> URLを正規化した場合に、レコード要約で元のURLが表示されなかった問題を修正

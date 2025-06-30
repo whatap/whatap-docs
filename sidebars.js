@@ -4718,7 +4718,7 @@ const sidebars = {
               label: 'Java',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/java/index',
@@ -4727,7 +4727,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/java/java-2_2_61',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/java/java-2_2_60',
                 'release-notes/java/java-2_2_59',
@@ -4838,7 +4838,7 @@ const sidebars = {
               label: '.NET',
               collapsible: true,
               collapsed: true,
-              //className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/dotnet/index',
@@ -4847,7 +4847,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/dotnet/dotnet-2_4_3',
-                  // className: 'new',
+                  className: 'new',
                 },
                 'release-notes/dotnet/dotnet-2_4_2',
                 'release-notes/dotnet/dotnet-2_4_1',
@@ -4884,7 +4884,7 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server/index',
@@ -4893,7 +4893,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server/server-2_8_7',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/server/server-2_8_6',
                 'release-notes/server/server-2_8_5',
@@ -4907,7 +4907,7 @@ const sidebars = {
               label: 'Server AIX',
               collapsible: true,
               collapsed: true,
-              className: 'new',
+              // className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-aix/index'
@@ -4916,7 +4916,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/server-aix/server-aix-1_4_5',
-                  className: 'new'
+                  // className: 'new'
                 },
                 'release-notes/server-aix/server-aix-1_4_4',
                 'release-notes/server-aix/server-aix-1_4_3',
