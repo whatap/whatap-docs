@@ -9,6 +9,7 @@
 /crw-data/backup
 sheets.googleapis.com-whatap-locale.json
 .env
+.github/service/
 
 # Generated files
 .docusaurus

@@ -4810,13 +4810,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/nodejs/nodejs-0_5_21',
+                  id: 'release-notes/nodejs/nodejs-0_5_22',
                   className: 'new',
                 },
+                'release-notes/nodejs/nodejs-0_5_21',
                 'release-notes/nodejs/nodejs-0_5_19',
                 'release-notes/nodejs/nodejs-0_5_16',
                 'release-notes/nodejs/nodejs-0_5_14',
-                'release-notes/nodejs/nodejs-0_5_12',
                 'release-notes/nodejs/nodejs-previous'
               ]
             },
@@ -4948,13 +4948,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-solaris/server-solaris-1_4_4',
-                  // className: 'new'
+                  id: 'release-notes/server-solaris/server-solaris-1_4_5',
+                  className: 'new'
                 },
+                'release-notes/server-solaris/server-solaris-1_4_4',
                 'release-notes/server-solaris/server-solaris-1_4_2',
                 'release-notes/server-solaris/server-solaris-1_4_1',
                 'release-notes/server-solaris/server-solaris-1_4_0',
-                'release-notes/server-solaris/server-solaris-1_3_8',
                 'release-notes/server-solaris/server-solaris-previous',
               ],
             },

@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_22/",
+    "ver": "v0.5.22",
+    "date": "2025-06-30",
+    "Lists": [
+      {
+        "ver": "v0.5.22",
+        "hash": "v0522",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>profile_mongodb_param_enabled</code> <span class=\"type\">Boolean</span></p>",
+        "details": "<ul><li><p>デフォルト値：<code>false</code></p></li><li><p>mongoose モジュールをトレースする際、クエリ内の実際のパラメータ値を表示できるオプションを追加</p></li></ul>"
+      },
+      {
+        "ver": "v0.5.22",
+        "hash": "v0522",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> HTTPサーバーとSocket.IOサーバーを併用する構成において、1つのクライアントリクエストに対してAPMでトランザクションが3件（APIリクエスト、Socket.IOのhandshake、polling）記録されていた問題を修正</p>",
+        "details": "<ul><li><p>APIリクエストのみが単一トランザクションとして記録され、Socket.IO接続に関するhandshakeやpollingリクエストは別トランザクションとして記録されません</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_21/",
     "ver": "v0.5.21",
     "date": "2025-06-26",

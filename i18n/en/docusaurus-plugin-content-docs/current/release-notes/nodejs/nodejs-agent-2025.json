@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_22/",
+    "ver": "v0.5.22",
+    "date": "2025-06-30",
+    "Lists": [
+      {
+        "ver": "v0.5.22",
+        "hash": "v0522",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>profile_mongodb_param_enabled</code> <span class=\"type\">Boolean</span></p>",
+        "details": "<ul><li><p>Default: <code>false</code></p></li><li><p>Added an option to display actual query parameter values when tracing the mongoose module</p></li></ul>"
+      },
+      {
+        "ver": "v0.5.22",
+        "hash": "v0522",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where three transactions (API request, Socket.IO handshake, and polling) were recorded for a single client request when using both an HTTP server and a Socket.IO server together</p>",
+        "details": "<ul><li><p>Now only the API request is recorded as a single transaction. Socket.IO handshake and polling requests are no longer recorded as separate transactions</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_21/",
     "ver": "v0.5.21",
     "date": "2025-06-26",
