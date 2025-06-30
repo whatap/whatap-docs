@@ -5267,14 +5267,6 @@
     "width": 2000,
     "height": 1348
   },
-  "create-project-v3-en.png": {
-    "width": 800,
-    "height": 546
-  },
-  "create-project-v3-ja.png": {
-    "width": 800,
-    "height": 485
-  },
   "create-project-v3-url-en.png": {
     "width": 800,
     "height": 543
@@ -5286,10 +5278,6 @@
   "create-project-v3-url.png": {
     "width": 800,
     "height": 510
-  },
-  "create-project-v3.png": {
-    "width": 800,
-    "height": 508
   },
   "credit_card_8-en.png": {
     "width": 1200,
@@ -18602,18 +18590,6 @@
   "server-rt-notice.png": {
     "width": 657,
     "height": 882
-  },
-  "server-select-os-en.png": {
-    "width": 1200,
-    "height": 911
-  },
-  "server-select-os-ja.png": {
-    "width": 1200,
-    "height": 935
-  },
-  "server-select-os.png": {
-    "width": 1200,
-    "height": 869
   },
   "server-server-event-en.png": {
     "width": 1192,
