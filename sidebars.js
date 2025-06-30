@@ -4902,13 +4902,8 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-<<<<<<< HEAD
                   id: 'release-notes/server/server-2_8_8',
-                  className: 'new',
-=======
-                  id: 'release-notes/server/server-2_8_7',
                   // className: 'new',
->>>>>>> efea482f84c332b2be4053cdfaf13706ae888185
                 },
                 'release-notes/server/server-2_8_7',
                 'release-notes/server/server-2_8_6',
