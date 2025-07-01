@@ -124,7 +124,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'java/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -394,7 +393,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'php/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -883,7 +881,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'python/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -1133,7 +1130,6 @@ const sidebars = {
             {
               type: 'doc',
               id: 'dotnet/dashboard-business', 
-              label: '비즈니스 대시보드',
               className: 'beta' 
             },
           ],
@@ -4650,9 +4646,10 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'release-notes/service/service-2_18_x',
+              id: 'release-notes/service/service-2_19_x',
               className: 'new',
             },
+            'release-notes/service/service-2_18_x',
             'release-notes/service/service-2_17_x',
             'release-notes/service/service-2_16_x',
             'release-notes/service/service-2_15_x',
