@@ -4930,7 +4930,7 @@ const sidebars = {
               label: 'Server Solaris',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               link: {
                 type: 'doc',
                 id: 'release-notes/server-solaris/index'
@@ -5054,7 +5054,7 @@ const sidebars = {
                 {
                   type: 'doc',
                   id: 'release-notes/db/xos-1_2_0d',
-                  className: 'new',
+                  // className: 'new',
                 },
                 'release-notes/db/xos-1_1_8v',
                 'release-notes/db/xos-1_1_8f',
