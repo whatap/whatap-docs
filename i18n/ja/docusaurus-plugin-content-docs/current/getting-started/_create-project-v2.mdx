@@ -1,52 +1,38 @@
+import Xclude from '@site/src/components/XcludeDoc.js';
+
+<Xclude product='quick-guide,features,ncloud'>
+
 ## プロジェクト作成{#create-project}
 
-<InDoc product='kafka'>
-
-エージェントをインストールする前に、まず**Featureプロジェク**(<code class='Features'>Features</code>)を生成します。
-
-1. [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、ログインします。
-
-2. プロジェクトを作成するには、左のサイドメニューから<Cmdname sid="BTN07332" className="uitext" /> &gt; ***+*** <Cmdname sid='BTN06696' className='uitext'/>ボタンを選択します。
-
-3. <Cmdname sid="TTL07073" className="uitext" />画面で、プロジェクトにインストールする**Feature商品**を選択します。
-
-4. <Cmdname sid="project_name" className="uitext" />、<Cmdname sid="data_server_region" className="uitext" />、<Cmdname sid="project_time_zone" className="uitext" />項目を順番に設定します。
-
-   <ImgLang img='create-project-v3.png' desc='プロジェクトの生成'/>
-
-5. <Cmdname sid="TTL07727" className="uitext" />で、警告通知メッセージの言語を選択します。
-
-6. すべての設定を完了した後は <Cmdname sid="creating_a_project" className="uitext" /> ボタンを選択します。
-
-</InDoc>
-
-<Xclude product='kafka'>
+</Xclude>
 
 エージェントをインストールする前にプロジェクトを作成してください。
 
 1. [WhaTapモニタリングサービス](https://service.whatap.io)に移動し、ログインします。
 
-2. プロジェクトを作成するには、左のサイドメニューから<Cmdname sid="BTN07332" className="uitext" /> &gt; ***+*** <Cmdname sid='BTN06696' className='uitext'/>ボタンを選択します。
+1. プロジェクトを作成するには、左のサイドメニューから<Cmdname sid="BTN07332" className="uitext" /> &gt; + <Cmdname sid='BTN06696' className='uitext'/>ボタンを選択します。
 
-3. <Cmdname sid="TTL07073" className="uitext" /> 画面でプロジェクトにインストールする製品を選択します。
+1. <Cmdname sid="TTL07073" className="uitext" /> 画面でプロジェクトにインストールする製品を選択してください。
 
-4. <Cmdname sid="project_name" className="uitext" />、<Cmdname sid="data_server_region" className="uitext" />、<Cmdname sid="project_time_zone" className="uitext" />項目を順番に設定します。
+1. 次の項目を入力または選択してください。
 
-   <ImgLang img='create-project-v3.png' desc='プロジェクトの生成'/>
+    * <Cmdname sid="project_name" className="uitext" />：プロジェクト名を入力します。
 
-5. <Cmdname sid="TTL07727" className="uitext" />で、警告通知メッセージの言語を選択します。
+    * <Cmdname sid="data_server_region" className="uitext" />：データサーバーのリージョンを選択します。リージョンはクラウドサービスを提供するデータセンターのグループです。データは選択したリージョンに保存されます。
 
-6. すべての設定を完了した後は <Cmdname sid="creating_a_project" className="uitext" /> ボタンを選択します。
+    * <Cmdname sid="project_time_zone" className="uitext" />：アラートやレポート作成時に使用するタイムゾーンを設定します。
 
-</Xclude>
+    * <Cmdname sid="TTL07727" className="uitext" />：アラート通知に使用する言語を設定します。（韓国語と英語に対応）
+
+    * <Cmdname sid="project_groups" className="uitext" />：複数のプロジェクトをグループ化して管理できます。該当する場合はグループを選択してください。
+
+    * <Cmdname sid="project_description" className="uitext" />：プロジェクトの追加情報や説明を入力してください。
+
+1. すべての設定が完了したら、<Cmdname sid="creating_a_project" className="uitext" /> ボタンをクリックします。
 
 :::note
 
-- <Cmdname sid="data_server_region" className="uitext" />は、リージョン(クラウドサービスを提供するためにインストールしたデータセンターのグループ)を意味します。特定のリージョンを選択すると、そのリージョンに所属するデータセンターにユーザーのデータが保存されます。
-
-- <Cmdname sid="project_time_zone" className="uitext" />は通知とレポートを生成する基準時間です。
-
-- 複数のプロジェクトをグループで管理する場合は、 <Cmdname sid="project_groups" className="uitext" />からグループを選択するか、グループを追加します。 グループの詳細については、[次の文書](/project/group)を参照してください。
+- 複数のプロジェクトをグループで管理する場合は、 <Cmdname sid="project_groups" className="uitext" />からグループを選択するか、グループを追加してください。 グループの詳細については、[次の文書](/project/group)を参照してください。
 
 - 組織を選択してプロジェクトを追加する場合は、<Cmdname sid="group_of_organization" className="uitext" />を必須に設定する必要があります。
 
