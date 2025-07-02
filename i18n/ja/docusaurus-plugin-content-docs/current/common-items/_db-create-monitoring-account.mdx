@@ -114,6 +114,13 @@ grant select, execute to DB_User;
   grant showplan to DB_User;
   ```
 
+- **デッドロックを表示する際に必要なロール**
+
+  ```sql
+  USE master;
+  GRANT EXECUTE ON xp_readerrorlog TO whatap;
+  ```
+
 </InDoc>
 
 <InDoc product="db2">
