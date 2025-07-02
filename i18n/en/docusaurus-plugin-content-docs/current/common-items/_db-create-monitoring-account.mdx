@@ -114,6 +114,13 @@ grant select, execute to DB_User;
   grant showplan to DB_User;
   ```
 
+- **Required roles when viewing deadlocks**
+
+  ```sql
+  USE master;
+  GRANT EXECUTE ON xp_readerrorlog TO whatap;
+  ```
+
 </InDoc>
 
 <InDoc product="db2">
