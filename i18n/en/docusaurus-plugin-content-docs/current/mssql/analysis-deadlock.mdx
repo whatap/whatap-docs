@@ -19,6 +19,13 @@ It provides detailed information based on the data collected at an interval of 5
 
 - This feature is available in [DBX agent 2.2.2](../release-notes/db/dbx-2_2_2) or later.
 
+- This feature requires the following permission. Use the SQL command below to grant it.
+
+  ```sql
+  USE master;
+  GRANT EXECUTE ON xp_readerrorlog TO whatap;
+  ```
+
 :::
 
 ## Basic usage guide
