@@ -8887,18 +8887,6 @@
     "width": 1810,
     "height": 413
   },
-  "db-sql-filter-adding-en.png": {
-    "width": 600,
-    "height": 286
-  },
-  "db-sql-filter-adding-ja.png": {
-    "width": 600,
-    "height": 285
-  },
-  "db-sql-filter-adding.png": {
-    "width": 600,
-    "height": 285
-  },
   "db-sql-filter-condition-color.png": {
     "width": 400,
     "height": 46
@@ -8914,18 +8902,6 @@
   "db-sql-filter-default.png": {
     "width": 212,
     "height": 61
-  },
-  "db-sql-filter-modify-en.png": {
-    "width": 400,
-    "height": 214
-  },
-  "db-sql-filter-modify-ja.png": {
-    "width": 401,
-    "height": 215
-  },
-  "db-sql-filter-modify.png": {
-    "width": 400,
-    "height": 215
   },
   "db-sql-objectdetail-pg-en.png": {
     "width": 1200,
