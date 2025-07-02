@@ -1,0 +1,253 @@
+<Home screen> &gt; Select Project &gt; ![icon](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code> &gt; **Transaction Events Tab**
+
+The Transaction Events feature allows you to monitor transactions more precisely by combining patterns such as specific URLs, errors, and status codes.  
+An alert is triggered when a transaction in your application meets the specified conditions.  
+Transactions are analyzed every minute, and alerts are sent if the number of matching transactions exceeds the defined threshold.
+
+<ImgLang img="metric-event-transaction.png" desc="Metrics Event Transaction" />
+
+## Event List
+
+The event list allows you to review and manage the created transaction events.
+
+- **Activation**: Toggle the switch to enable or disable the event  
+- **Event Level**: <span className="vslow">Critical</span>, <span className="slow">Warning</span>, <span className="info">Info</span>  
+- **Search**: Search by event name, recipient, or target pattern  
+- **Resizable Columns**: Drag column borders to adjust widths  
+
+### Key Columns
+
+| Item            | Description                                            |
+|----------------|--------------------------------------------------------|
+| No              | Event index                                            |
+| Active          | Whether the event is enabled                           |
+| Edit            | Button to edit the event                               |
+| Event Name      | User-defined name of the event                         |
+| Condition Type  | Type of condition (Elapsed Time, Error, Pattern Only)  |
+| Aggregation Key | Metric grouping criteria                               |
+| Target Pattern  | Include/exclude patterns (URL, status code, etc.)      |
+| Threshold       | Number of occurrences to trigger alert                 |
+| Pause Duration  | Duration to ignore duplicate alerts                    |
+| Recipient       | User or group to receive alerts                        |
+
+## Add/Edit Event
+
+Click the <Cmdname sid="add_notification" className="uitext" /> button at the top right of the event list to add a new event. Event configuration is divided into three sections.
+
+### 1. Define Event Condition
+
+Configure the condition that triggers the event.
+
+- **Condition Type (Required)**
+  - Elapsed Time: Transactions taking longer than the specified time (ms)
+  - Error Occurrence: Transactions with errors
+  - Pattern Only: Transactions matching specified patterns only
+
+- **Elapsed Time Threshold**: Set in milliseconds if condition type is 'Elapsed Time'
+
+- **Aggregation Key (Required)**  
+  - Overall  
+  - By Agent  
+  - By URL  
+  - By URL of each Agent  
+  - By Error Class  
+  - By Error Class of each Agent  
+  - By Context  
+  - By Context of each Agent  
+
+:::note
+Transactions without context will not be aggregated.
+- When the agent option `app_context_enabled=true` is not set
+- For non-web transactions
+:::
+
+- **Threshold (Required)**: Minimum number of occurrences to trigger alert
+- **Pause Duration (Required)**: Suppress alerts for duplicate events (1 minute to 1 day)
+- **Event Active Hours**: Restrict event to specific time ranges
+
+### 2. Set Target Pattern
+
+Set patterns to filter transactions.
+
+**Pattern Rules**
+- Enter multiple patterns using Enter key
+- Use wildcards (*) for flexible matching
+- Same-type patterns use OR, different-type patterns use AND logic
+- No pattern means all transactions in project are targeted
+
+:::tip
+**Caution when combining `/` and `*`**
+- `/api/*` matches `/api/users` but not `/api`
+- `/api*` matches `/api`, `/api/users`, `/apitest`
+:::
+
+#### Include Pattern
+Filters matching data and displays as **blue tags**.
+- **Context**: Application context pattern
+- **URL**: Transaction URL pattern (e.g., /api/*, */users/*)
+- **Error Class**: Error class name pattern (e.g., *Exception, *Error)
+- **Error Message**: Text pattern in error message
+- **Status Code**: HTTP status code pattern (e.g., 4**, 5**)
+
+#### Exclude Pattern
+Filters matching data out of results, shown as **red tags**. Same format as include patterns.
+
+#### Pattern Matching Examples
+
+**1. Exact Match**
+```
+Pattern: "hello"
+"hello"     → match
+"Hello"     → no match (case-sensitive)
+```
+
+**2. Prefix Match**
+```
+Pattern: "hello*"
+"hello"       → match
+"helloworld"  → match
+"hi"          → no match
+```
+
+**3. Suffix Match**
+```
+Pattern: "*world"
+"world"       → match
+"helloworld"  → match
+"hello"       → no match
+```
+
+**4. Substring Match**
+```
+Pattern: "*ell*"
+"hello"       → match
+"excellent"   → match
+"welcome"     → no match
+```
+
+**5. Composite Pattern**
+```
+Pattern: "hello*world"
+"hellobeautifulworld"  → match
+
+Pattern: "hello*test*"
+"hellomytestcase"      → match
+
+Pattern: "*test*world"
+"mytestcaseworld"      → match
+```
+
+#### Real-world Examples
+- URL Pattern
+  - `/api/*` : All URLs starting with /api
+  - `*/users/*` : All URLs containing /users
+  - `/api/v1/users` : Exact match only
+
+- Error Class Pattern
+  - `*Exception` : All classes ending with Exception
+  - `java.lang.*` : Classes starting with java.lang
+  - `*Timeout*` : Classes containing Timeout
+
+- Status Code Pattern
+  - `4**` : All 400-level responses
+  - `404` : Only 404
+  - `5*` : All 500-level responses
+
+:::note
+**Pattern Restrictions**
+- Wildcards (*) must be accompanied by at least one character
+  - ❌ Invalid: `***`, `**`
+  - ✅ Valid: `a*`, `*a`, `*a*`, `/api*`
+- Empty or null strings will not match
+- `**` is treated the same as `*`
+- More than 3 wildcards is not supported
+- Regex is not supported (no `[a-z]`, `+`, `?`, `()`)
+- Matching is case-sensitive
+- Escaping `*` is not supported
+:::
+
+### 3. Basic Info & Notification
+
+Set the event name and recipients.
+
+- **Activation**: Turn the event on or off
+- **Event Name** (Required): Give the event a clear name
+- **Event Level** (Required):  
+  - <span className="vslow">Critical</span>  
+  - <span className="slow">Warning</span>  
+  - <span className="info">Info</span>
+- **Recipient**
+  - **All**: All project members will receive alerts
+  - **By Tag**: Only members with specified tags will receive alerts
+    - Use **+ Add Tag** to choose or create tags
+
+## Example Alert Behavior
+
+### Example Conditions
+- URL patterns: /api/posts/**, /delete/*, */test/*
+- Error class: *TimeoutException*, *NullPointerException
+- Status codes: 4**
+- Exclude error class: *IOException
+- Exclude status codes: 5**
+- Aggregation Key: By Agent
+- Threshold: 2
+- Pause Duration: 5 minutes
+
+### Example Alert Message
+```
+(ignored count: 3)
+[Per Agent] limit: 2, count: 3
+[Condition]
+url patterns: /api/posts/**, /delete/*, */test/*
+error class patterns: *TimeoutException*, *NullPointerException
+status patterns: 4**
+exclude error class patterns: *IOException
+exclude status patterns: 5**
+[Transaction]
+url: /api/posts/test/timeout
+txid: 408093121470636540
+status: 408
+error class: java.util.concurrent.TimeoutException
+```
+
+### Message Fields Explained
+- **(ignored count: n)**: Number of ignored alerts during pause duration
+- **Aggregation Info**:
+  - `[Per Agent]`, `[Per URL]`, `[Per Error Class]`, etc.
+- **[Condition]**: Trigger conditions set at the time
+- **[Transaction]**: Details of the last matching transaction
+
+:::note
+- Events are evaluated every minute
+- If condition is 'Pattern Only', at least one pattern must be set
+- Pattern matching is case-sensitive
+- Alert message includes the last transaction matching the condition
+:::
+
+## Supported Agent Versions {#support-agent-version}
+
+Transaction events require up-to-date agent versions.
+
+<InDoc product="java,kubernetes">
+- Java: version 2.2.48 or later
+</InDoc>
+
+<InDoc product="php,kubernetes">
+- PHP: Version TBD (latest version recommended, contact support)
+</InDoc>
+
+<InDoc product="golang,kubernetes">
+- Go: Version TBD (latest version recommended, contact support)
+</InDoc>
+
+<InDoc product="dotnet,kubernetes">
+- .NET: version 2.3.5 or later
+</InDoc>
+
+<InDoc product="python,kubernetes">
+- Python: version 1.7.8 or later
+</InDoc>
+
+<InDoc product="nodejs,kubernetes">
+- Node.js: version 0.5.21 or later
+</InDoc>
