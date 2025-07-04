@@ -202,6 +202,15 @@
 
   It sets whether or not to collect literal parameters. If set to `false`, literal parameters are not collected.
 
+- **sqlstat_send_interval** <span class='type'>Int</span>
+
+  Default: 5 minutes
+  
+  Sets the interval for generating and sending SQL statistics data.
+  You can set it to either 1 or 5 minutes.
+  If you require more precise per-minute statistical analysis, set it to 1.
+  This setting enables detailed per-minute analysis in the Top SQL screen.
+
 - **statements_min_row** <span class='type'>Int</span>
 
   Default `10000` (row)
