@@ -1,6 +1,6 @@
 ## Account creation {#uid}
 
-<Xclude product="db2,sapase">
+<Xclude product="db2,sapase,mysql">
 
 Create an account with roles required for database monitoring. Log in with the root account and then create accounts.
 
@@ -346,6 +346,15 @@ If you have an account with roles, skip this step and then proceed to [Next Step
 - In the example code, `login` is the user authentication information to connect to the database server. `user` is the user account to use for a specific database. Change it to the desired user account name.
 
 - Enter your password in `Password` in the example code.
+
+</InDoc>
+
+<InDoc product="mysql">
+
+  * Monitoring may not function properly if the account lacks the required privileges.
+  
+  * In a replication structure, account creation and privilege granting **must be performed on the Master DB only**.  
+    (Doing this on the Slave DB may break replication.)
 
 </InDoc>
 

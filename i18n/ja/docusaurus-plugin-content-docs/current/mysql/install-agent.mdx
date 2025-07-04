@@ -37,10 +37,18 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 <TabItem value="mysql" label="MySQL">
 
 ```bash
-create user DB_User identified by 'DB_PASSWORD'; # パスワードを入力します。
-grant process on *.* to DB_User;
-grant select on performance_schema.* to DB_User;
-grant show databases on *.* to DB_User;
+  create user DB_User identified by 'DB_PASSWORD'; # パスワードを入力します。
+  grant process on *.* to DB_User;
+  grant select on performance_schema.* to DB_User;
+  grant show databases on *.* to DB_User;
+
+  MySQL 8.0以降でロック情報をモニタリングするには、次の権限が必要です。
+
+  grant select on `sys`.`sys_config` TO DB_User;
+  grant select on `sys`.`innodb_lock_waits` TO DB_User;
+  grant execute on function `sys`.`format_statement` TO DB_User;
+  grant execute on function `sys`.`quote_identifier` TO DB_User;
+  grant execute on function `sys`.`sys_get_config` TO DB_User;
 ```
 
 機能と使用環境に応じて追加権限を付与してください。
