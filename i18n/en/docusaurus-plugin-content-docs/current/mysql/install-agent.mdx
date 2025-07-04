@@ -37,10 +37,19 @@ import Dbcreatemonitoringaccount from "../common-items/_db-create-monitoring-acc
 <TabItem value="mysql" label="MySQL">
 
 ```bash
-create user DB_User identified by 'DB_PASSWORD'; # Enter the desired password.
-grant process on *.* to DB_User;
-grant select on performance_schema.* to DB_User;
-grant show databases on *.* to DB_User;
+  create user DB_User identified by 'DB_PASSWORD'; # Enter the desired password.
+  grant process on *.* to DB_User;
+  grant select on performance_schema.* to DB_User;
+  grant show databases on *.* to DB_User;
+
+  To monitor lock information in MySQL 8.0 or later, the following privileges are required.
+
+  grant select on `sys`.`sys_config` TO DB_User;
+  grant select on `sys`.`innodb_lock_waits` TO DB_User;
+  grant execute on function `sys`.`format_statement` TO DB_User;
+  grant execute on function `sys`.`quote_identifier` TO DB_User;
+  grant execute on function `sys`.`sys_get_config` TO DB_User;
+
 ```
 
 Assign additional roles depending on the features and operation environment.
