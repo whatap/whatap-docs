@@ -1,0 +1,27 @@
+---
+id: java-2_2_62
+title: Java Agent v2.2.62
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_61
+displayed_sidebar: releaseSidebar
+---
+
+July 3, 2025
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where the `arrival_rate` metric was excessively collected when accessing static resources (e.g., .html, .js) registered in the Java agent's `web_static_content_extensions` setting
+
+    ```bash 
+    # default: js,htm,html,gif,png,jpg,css,swf,ico
+    web_static_content_extensions=js,htm,html,gif,png,jpg,css,swf,ico
+    ```
+
+    - Fixed the RPS metric in the Active Transaction Speed chart of the Application Dashboard  
+    - Fixed the `arrival_rate` item in the `app_counter` category of Metrics view
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where some exceptions were not collected when performing certain HTTP calls
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where calls were missing when using `weaving=lettuce-6.2` with Lettuce version 6.5 or higher due to errors
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.62" />
