@@ -1,0 +1,29 @@
+---
+id: java-2_2_62
+title: Java Agent v2.2.62
+toc_max_heading_level: 2
+pagination_next: release-notes/java/java-2_2_61
+displayed_sidebar: releaseSidebar
+---
+
+2025年7月3日
+
+- <Status priority='0'>Fixed</Status> Javaエージェントの `web_static_content_extensions` 設定に登録された `.html`, `.js` などの静的リソース呼び出し時に、メトリクス指標 `arrival_rate` が過剰に収集される現象を修正
+
+    ```bash 
+    # default: js,htm,html,gif,png,jpg,css,swf,ico
+    web_static_content_extensions=js,htm,html,gif,png,jpg,css,swf,ico
+    ```
+
+    - アプリケーションダッシュボードのアクティブトランザクションスピードチャートにおける RPS 指標を修正  
+    - メトリクスビューの `app_counter` カテゴリ内の `arrival_rate` 項目を修正
+
+- <Status priority='0'>Fixed</Status> 一部の HTTP 呼び出しにおいて例外が収集されない現象を修正
+
+- <Status priority='0'>Fixed</Status> `weaving=lettuce-6.2` 設定時に、Lettuce バージョン 6.5 以上でエラーが発生し呼び出しが漏れる問題を修正
+
+- <Status priority='0'>Deprecated</Status> log4j-1 のトレース機能を削除（別途プラグインとして提供）
+
+import DownloadJava from './_import_dl-java-agent.mdx';
+
+<DownloadJava ver="2.2.62" />
