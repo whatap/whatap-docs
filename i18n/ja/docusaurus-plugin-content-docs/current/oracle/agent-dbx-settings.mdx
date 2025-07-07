@@ -138,17 +138,16 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   </details>
 
-- **sqlstat_send_interval** <span class='type'>Int</span>
-
-  デフォルト値： `5分`
-
-  SQL統計データの生成および送信間隔を設定します。
-  1分または5分に設定できます。
-  より詳細な1分単位の統計分析が必要な場合は、1に設定してください。
-  この設定により、Top SQL画面での1分単位の詳細な分析が可能になります。
-  
   sysに該当するアカウントの一覧です。 上記のアカウントに追加したい場合は`segments_sys='xxx','xxx','xxx'`で上記の内容を含めて追加で書いてください。
 
+- **sqlstat_send_interval** <span class='type'>Int</span>
+
+  デフォルト値： `1分`
+
+  SQL統計データを生成して送信する間隔を分単位で設定します。
+  1以上の整数を指定でき、より詳細な統計分析が必要な場合は1に設定してください。
+  この設定により、Top SQL画面で1分単位の詳細な分析が可能になります。
+  
 - **stat** <span class='type'>String</span>
 
   既定値: 
