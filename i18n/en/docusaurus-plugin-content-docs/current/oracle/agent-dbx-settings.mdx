@@ -140,6 +140,15 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   It is the list of accounts corresponding to sys. To add to the above account, write additionally including the above content with `segments_sys='xxx','xxx','xxx'`.
 
+- **sqlstat_send_interval** <span class='type'>Int</span>
+
+  Default: 1 minutes
+    
+  Sets the interval, in minutes, for generating and sending SQL statistics data.
+  You can specify any integer value of 1 or higher.
+  For more precise statistical analysis, set it to 1.
+  This setting enables detailed 1-minute analysis in the Top SQL screen.
+
 - **stat** <span class='type'>String</span>
 
   Default: 

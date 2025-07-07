@@ -172,6 +172,15 @@ The minimum unit for collecting segment sizes is 10 MB by default. Segments less
 
     It is the list of accounts corresponding to sys. To add to the above accounts, you can add with `segments_sys+='xxx'`.
 
+- **sqlstat_send_interval** <span class='type'>Int</span>
+
+  Default: 1 minutes
+    
+  Sets the interval, in minutes, for generating and sending SQL statistics data.
+  You can specify any integer value of 1 or higher.
+  For more precise statistical analysis, set it to 1.
+  This setting enables detailed 1-minute analysis in the Top SQL screen.
+
 - **stat** <span class='type'>String</span>
 
     Default:
