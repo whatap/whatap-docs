@@ -6,6 +6,112 @@ pagination_next: release-notes/service/service-2_18_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.18.5
+
+July 2, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> Fixed an issue where the copy function for process events in <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> did not work correctly.
+
+</div>
+
+## Service 2.18.4
+
+July 2, 2025
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='1'>Feature</Status> Added a new transaction event configuration feature in <Cmdname sid="sitemap" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code>
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> Displayed the number of target servers in the <Cmdname sid="side_eventSetting" className="uitext" /> list
+
+- <Status priority='1'>Feature</Status> Added an OS field to the server selector and changed the layout to table format when adding/editing in <Cmdname sid="side_eventSetting" className="uitext" />
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where condition tags for each event were not displayed in the <Cmdname sid="side_eventSetting" className="uitext" /> event list
+
+---
+
+### `Database`
+
+#### SQL Server
+
+<Status priority='1'>Feature</Status> Added guidance on required permissions for viewing deadlocks in <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="agentInstall" className="uitext" />
+
+</div>
+
+## Service 2.18.3
+
+July 1, 2025
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> Fixed an issue where the "Select All Agents" function did not work in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" />
+
+---
+
+### `Cloud`
+
+<Status priority='0'>Fixed</Status> Fixed an issue where some data was not displayed in <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_perfTrend" className="uitext" />
+
+</div>
+
+## Service 2.18.2
+
+June 30, 2025
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='0'>Fixed</Status> Fixed a white screen issue when first accessing the <Cmdname sid="side_serverDetail" className="uitext" /> page
+
+</div>
+
+## Service 2.18.1
+
+June 26, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+<Status priority='0'>Fixed</Status> Fixed an issue where the logo was temporarily not visible
+
+---
+
+### `Database`
+
+#### MySQL, Oracle V2, Oracle Pro, PostgreSQL
+
+- <Status priority='0'>Fixed</Status> Fixed an error that occurred when adding a threshold setting item in the **Instance Map** of <Cmdname sid="dashboard" className="uitext" />
+
+#### MySQL, Oracle V2, Oracle Pro
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where the quick filter did not work in the vertical filter of **Top SQL** in <Cmdname sid="side_lab" className="uitext" />
+
+#### PostgreSQL
+
+- <Status priority='0'>Fixed</Status> Fixed a white screen issue in <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_pgStat" className="uitext" />
+
+- <Status priority='0'>Fixed</Status> Modified **Top SQL** in <Cmdname sid="side_lab" className="uitext" /> to hide `plan_hash_value`
+
+#### MySQL
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where duplicate key values were displayed in **Top SQL** in <Cmdname sid="side_lab" className="uitext" />
+
+</div>
+
 ## Service 2.18.0
 
 June 26, 2025

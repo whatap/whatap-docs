@@ -4790,7 +4790,6 @@ const sidebars = {
                 'release-notes/php/php-2_9_0',
                 'release-notes/php/php-2_8_2',
                 'release-notes/php/php-2_8_1',
-                'release-notes/php/php-2_8_0',
                 'release-notes/php/php-previous',
               ],
             },
