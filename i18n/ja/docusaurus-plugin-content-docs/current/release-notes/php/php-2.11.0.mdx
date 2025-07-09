@@ -10,11 +10,16 @@ displayed_sidebar: releaseSidebar
 
 * <Status priority='0'>Fixed</Status> whatap-php.service の登録および実行に失敗する問題を修正
 
-  * 新規インストール時、/etc/systemd/system/whatap-php.service に environment 値（Access Key およびサーバーアドレス）が欠落しており、エージェントが非活性化される現象が発生
+  * 新規インストール時に environment の値が欠落している場合、接続情報（アクセスキーおよびサーバーアドレス）を認識できず、エージェントが非活性化されることがあります。
 
-  * /usr/whatap/php/install.sh 実行後、/usr/lib/systemd/system/whatap-php.service を /etc/systemd/system/whatap-php.service にコピーすることで解決可能
+    以下のコマンドを実行することで手動で設定可能です。
 
-  * 既存のインストール環境では、アップデート時に正常にインストールされる
+    ```bash title='php command'
+    1. /usr/whatap/php/install.sh
+    2. cp /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service
+    ```
+    
+  * 既存のインストール環境では、アップデート時に正常に適用されます。
 
 2025年06月18日
 
