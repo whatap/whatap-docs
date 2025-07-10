@@ -6,6 +6,21 @@ pagination_next: release-notes/php/php-2_10_0
 displayed_sidebar: releaseSidebar
 ---
 
+July 09, 2025
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where whatap-php.service registration and execution failed.
+
+  - If the environment values are missing during a fresh installation, the agent may not be activated because it cannot recognize connection information (access key and server address).
+
+    You can configure it manually using the following commands
+
+    ```bash title='php command'
+    1. /usr/whatap/php/install.sh
+    2. cp /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service
+    ```
+
+  - In existing installations, the update is applied correctly.
+  
 June 18, 2025
 
 - <Status priority='0'>Feature</Status> Reduced CPU load
