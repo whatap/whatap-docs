@@ -1,5 +1,26 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_23/",
+    "ver": "v0.5.23",
+    "date": "2025-07-10",
+    "Lists": [
+      {
+        "ver": "v0.5.23",
+        "hash": "v0523",
+        "product": "Node.js Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Socket.ioモジュールのモニタリングでBroadcastタイプのモニタリングを追加</p>"
+      },
+      {
+        "ver": "v0.5.23",
+        "hash": "v0523",
+        "product": "Node.js Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> HTTPリクエストのエンドポイントを検出できない問題を改善</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/nodejs/nodejs-0_5_22/",
     "ver": "v0.5.22",
     "date": "2025-06-30",
