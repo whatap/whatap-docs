@@ -1,6 +1,6 @@
 ---
 id: analyze-pageload
-title: ページロード分析
+title: ユーザーアクションヒートマップ
 description: ページロードイベントをチャート形式で提供し、イベントに関する詳細情報を分析できます。
 keywords:
   - Browser Monitoring
@@ -8,53 +8,65 @@ keywords:
   - ページロード
 ---
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="analysis" className="uitext" /> &gt; <Cmdname sid="rumPageLoadHitmap" className="uitext" />
-
-[ページロード](before-starting#load-page) イベントは、ウェブ アプリケーションにアクセスしたエンド ユーザーがページの読み込みを完了したときに発生するイベントです。 <b>ページロード</b>イベントをヒットマップチャート形式で提供し、各イベントに関する詳細情報をタイムライン形式で確認することができます。 これにより、Webページの読み込みを妨げている原因を特定するのに役立ちます。 次の情報を含みます。
-
-- **ページロード** イベント区間別の詳細時間情報
-
-- ロードしたリソースの詳細
-
-- ブラウザエラーデータ
-
-## ページロードイベント一覧確認 {#pageload-events-list}
-
-単一のページごとに読み込みイベントを分析できます。 ページロードの性能を分析するために、ヒットマップと様々な指標を提供します。
-
-<ImgLang img='browser-user-action-hitmap.png' desc='user-action-hitmap' />
-
-![指示線1](/img/number-01.png) <Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットのチャート領域をドラッグしてください。 ドラッグした領域のページロードイベント一覧が画面下に表示されます ![指示線 2](/img/number-02.png) <Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に読み込み、[ページグループ](before-starting#page-group)別に分類して、画面の右側の ![指示線 4](/img/number-04.png) <Cmdname sid="page_group" className="uitext" /><Cmdname sid="list" className="uitext" />に読み込みます。 ![指示線3](/img/number-03.png) <Cmdname sid="page_url" className="uitext" />で目的のページ一覧を検索できます。
-
 :::note
 
-<Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](usage-ui#timeselector)を参照してください。
+**機能改編のお知らせ**
+
+従来の ページロード分析 機能は、ユーザーアクション分析 に改編されました。 ページロードイベントだけでなく、クリックやタッチなど、さまざまなユーザーインタラクションを統合的に分析できるように機能が拡張されました。
 
 :::
 
-### ![](/img/number-01.png)ページロードヒットマップ {#pageload-hitmap}
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_analysis" className="uitext" /> &gt; **ユーザーアクションヒットマップ**
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" /> ウィジェットは、時間の経過に伴う <b>ページロード</b>応答時間を分布図チャートで表示します。
+[ユーザーアクション](before-starting#user-actions) イベントは、Webアプリケーションを訪れた最終ユーザーがページロードを完了するか、クリック、タッチなどのインタラクションを行ったときに発生します。 このイベントはヒートマップチャート形式で提供され、各イベントの詳細情報はタイムライン形式で確認できます。 これにより、Webページのパフォーマンス問題やユーザー体験を損なう要因を特定でき、以下のような情報が含まれます。
 
-- 横軸は<b>ページロード</b>イベントの終了時間です。
+- **ページロードイベント**
 
-- 縦軸は<b>ページロード</b>イベントの経過時間です。
+  - ページロードイベントの区間別詳細時間情報
+  - ロードしたリソースの詳細
+  - ブラウザエラーデータ
 
-- <span class='lowfg'>空色</span> → <span class='normal'>青色</span> → <span class='highfg'>藍色</span> 順に正常<b>ページロード</b>イベントを表現します。
+- **クリック／タッチイベント**
 
-- <span class='logwr'>黄色</span> → <span class='slow'>オレンジ色</span> → <span class='vslow'>赤色</span> 順にエラー発生<b>ページロード</b>イベントを表現します。 エラー<b>ページロード</b>イベントは、ページの読み込み中にブラウザーエラーが発生した場合です。
+  - クリック応答時間
+  - クリック時にロードされたリソース情報
+  - クリック時に発生したエラー情報
 
-### ![](/img/number-02.png)ページ一覧 {#page-list}
+## ユーザーアクションイベント一覧の確認 {#user-actions-events-list}
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットからドラッグした領域の<b>ページロード</b>イベントが<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />ウィジェットのテーブルに表示されます。 一覧で各項目の左端の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" />を選択すると<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。
+単一のユーザーアクションイベントごとに分析できます。 ユーザーアクションのパフォーマンスを分析するために、ヒートマップとさまざまな指標を提供します。
 
-<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" /> ウィジェットのテーブルには、次の基本情報が含まれます。
+<ImgLang img='browser-user-action-hitmap.png' desc='user-action-hitmap' />
 
-- <Cmdname sid="start_time" className="uitext" />：<b>ページロード</b> イベントの開始時間
+1. **ユーザーアクションヒットマップ **ウィジェットのチャート領域をドラッグしてください。 
 
-- <Cmdname sid="elapsed" className="uitext" />：<b>ページロード</b> イベント完了までの所要時間
+2. ドラッグした領域のイベント一覧は、**ユーザーアクションヒートマップ** の下に **ユーザーアクションリスト** として表示され、ページグループごとに画面右側の <Cmdname sid="page_group" className="uitext" /> <Cmdname sid="list" className="uitext" /> で確認できます。
 
-- <Cmdname sid="page_url" className="uitext" />：エンドユーザーがアクセスしたページのURLパス
+   - **ユーザーアクションリスト** の <Cmdname sid="page_url" className="uitext" /> で、目的のページリストを検索できます。
+
+### ユーザーアクションヒットマップ {#useraction-hitmap}
+
+**ユーザーアクションヒートマップ** ウィジェットは、時間経過に伴うユーザーアクションの応答時間を分布チャートとして表示します。 ウィジェットのチャート領域をドラッグしてください。 ドラッグした領域に該当する**ユーザーアクションの一覧**が画面下部に表示されます。
+
+- **横軸**はユーザーアクションイベントの終了時間です。
+
+- **縦軸**はユーザーアクションイベントの経過時間（応答時間）です。
+
+- <span class='lowfg'>水色</span> → <span class='normal'>青</span> → <span class='highfg'>紺色</span>の順で、正常なユーザーアクションイベントの密度を表します。
+
+- <span class='logwr'>黄色</span> → <span class='slow'>オレンジ</span> → <span class='vslow'>赤</span>の順で、エラーが発生したユーザーアクションイベントの密度を表します。 エラーのユーザーアクションイベントとは、イベント処理中にブラウザーエラーが発生した場合を指します。
+
+### ユーザーアクションリスト {#useraction-list}
+
+**ユーザーアクションヒートマップ** でドラッグした領域に対応するユーザーアクションイベントが、**ユーザーアクションリスト** に表示されます。 リストの各項目の一番左にある <LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" /> アイコンをクリックすると、**ユーザーアクション分析** の詳細画面が表示されます。
+
+**ユーザーアクションリスト** には、次の基本情報が含まれます。
+
+- <Cmdname sid="start_time" className="uitext" />：ユーザーアクションイベントの開始時刻
+
+- <Cmdname sid="elapsed" className="uitext" />：ユーザーアクションイベントの完了までにかかった時間
+
+- <Cmdname sid="page_url" className="uitext" />：ユーザーアクションが発生したページのURLパス
 
 - <Cmdname sid="browser" className="uitext" />：エンドユーザーが使用したブラウザーの種類
 
@@ -64,19 +76,19 @@ keywords:
 
 - <Cmdname sid="client_ip" className="uitext" />：エンドユーザーが使用するデバイスのIPアドレス
 
-テーブルに他の情報カラムを追加したり、追加したカラムを非表示にすることもできます。 <Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />ウィジェットの右上の![カラムアイコン](/img/ico-column.svg)ボタンを選択します。
-
 :::note
 
-- ページ一覧のうち、ブラウザエラーデータを含むページロードイベントは赤色で表示されます。
-
-- WhaTapは、クライアントに関する情報をデフォルトで保存します。
+WhaTapは、クライアントに関する情報をデフォルトで保存します。
 
 :::
 
-### ![](/img/number-03.png)ページ一覧のフィルタリング {#filtering-page-list}
+#### カラム情報の追加および修正
 
-ページ一覧を対象に検索ワードを入力し、一致する対象をフィルタリングできます。 参照基準は次のとおりです。 目的の項目を選択し、検索ワードを入力してエンターキーを押すか![検索アイコン](/img/ico-search.svg)ボタンを選択します。
+テーブルに他の情報カラムを追加したり、追加したカラムを非表示にすることもできます。 **ユーザーアクション一覧** の右上にある ![カラムアイコン](/img/ico-column.svg) **カラム設定** ボタンをクリックしてください。
+
+#### ユーザーアクション一覧をフィルタリングする {#filtering-action-list}
+
+ユーザーアクション一覧を対象に、検索語を入力して一致する項目をフィルタリングすることができます。 検索対象の項目を選択した後、検索語を入力して Enter キーを押すか、![検索アイコン](/img/ico-search.svg) をクリックしてください。
 
 - <Cmdname sid="page_url" className="uitext" />
 
@@ -90,58 +102,133 @@ keywords:
 
 - <Cmdname sid="user_id" className="uitext" />
 
-### ![](/img/number-04.png)ページグループ一覧 {#page-group-list}
+#### ページグループ一覧をフィルタリングする {#filtering-page-group-list}
 
-<Cmdname sid="rumPageLoadHitmap" className="uitext" />ウィジェットでドラッグした領域の<b>ページロード</b>イベントを<Link to="before-starting#page-group">ページ·グループ</Link>ごとに確認できます。 一覧から選択した<b>ページグループ</b>に該当する<b>ページロード</b>イベントが<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />に表示されます。
+ページグループ一覧を対象にフィルタリングすることができます。 目的のページグループ一覧を選択してください。
 
-## ページロードイベントの詳細情報 {#pageload-details}
+## ユーザーアクションイベントの詳細情報 {#useraction-details}
 
-<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />で各項目の一番左の<LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" />を選択すると、<Cmdname sid="page_load" className="uitext" /><Cmdname sid="detail" className="uitext" />ウィンドウが表示されます。 <b>ページロード</b>の性能を分析するために様々な指標を提供し、性能に影響を与える要因を特定できます。
+**ユーザーアクション一覧** の各項目の左側にある <LinkImage img="ico-detail-view.svg" className="ico" desc="詳細表示アイコン" /> アイコンをクリックすると、**ユーザーアクション分析** の詳細ウィンドウが表示されます。 詳細ウィンドウは、左側のイベント一覧と右側の詳細情報で構成されています。 ユーザーアクションのパフォーマンスを分析するために、さまざまな指標を提供し、パフォーマンスに影響を与える要因を特定できます。
 
-### ![](/img/number-01.png)URLリスト {#url-list}
+### イベントリスト {#event-list}
 
-<Cmdname sid="page" className="uitext" /><Cmdname sid="list" className="uitext" />の項目をURL基準で確認できます。 <Cmdname sid="url_list" className="uitext" />のソート基準は、経過時間です。 URL項目を選択すると<b>ページロード</b>イベントの詳細情報を<LinkImage img="number-02.png" className="ico" desc="指示線 2" />右側の画面から照会できます。
+**ユーザーアクション分析** の詳細ウィンドウの右側には、選択した時間範囲のユーザーアクションイベントが一覧で表示され、経過時間の順に並べ替えられます。 一覧で特定のイベントをクリックすると、右側のパネルにそのイベントの詳細情報が表示されます。 
 
-- 各項目の青色の棒グラフは、<b>ページロード</b>の経過時間です。
-- 各項目の棒グラフの右側の時間は、<b>ページロード</b>の開始時間です。
+<ImgLang img='browser-analyze-pageload-event-list.png' desc='event-list' />
 
-### ![](/img/number-02.png)概要(ページロードイベントの要約) {#pageload-events-summary}
+- **レスポンスタイム**：ユーザーアクションの応答時間（ms）
 
-<Cmdname sid="summary" className="uitext" />タブでは、<b>ページロード</b>するさいでの区間ごとでかかった時間をグラフチャートで提供します。 この機能で<b>ページロード</b>するさいでの遅い区間を特定できます。
+- **ページURL**：ユーザーアクションが発生したページのURL
 
-- <Cmdname sid="page" className="uitext" /><Cmdname sid="info" className="uitext" />：エンドユーザーの接続環境、接続ページの情報、<Cmdname sid="user_id" className="uitext" />、<Cmdname sid="session_id" className="uitext" />情報を提供します。
+- **ブラウザ**：ユーザーが使用したブラウザの種類
 
-- <Cmdname sid="page_load_timing" className="uitext" /><Cmdname sid="info" className="uitext" />：<b>ページロード</b>するさいでの区間ごとの所要時間を確認できます。
+- **デバイス**：ユーザーが使用したデバイスの種類
 
-  - ***redirect***：ブラウザーがリダイレクトに要した時間
+- **オペレーティングシステム**：ユーザーが使用したOS
 
-  - ***cache***：ブラウザーがキャッシュされたリソースを検索するのにかかる時間
+### 詳細情報 {#details-events-summary}
 
-  - ***dns***：ブラウザーがドメインを検索するのにかかる時間
+ユーザーアクション分析の詳細ウィンドウの左側には、選択したイベントの詳細情報が表示され、概要、ユーザーセッション分析、セッションリプレイの各タブをクリックして確認できます。 情報は以下のように構成されています。 
 
-  - ***wait***：ブラウザーが <b>ページロード</b>するさいに必要なデータへの応答待ち時間
+<ImgLang img='browser-analyze-pageload-details.png' desc='details-events' />
 
-  - ***download***：ブラウザーがサーバーからリソースをダウンロードするのにかかる時間
+#### **基本情報**
 
-  - ***render***：サーバーからダウンロードしたリソースを画面にレンダリングし <b>ページロード</b> イベントを完了するまでの時間
+- **ページURL**：イベントが発生したページの完全なURL
+
+- **ページタイトル**：ウェブページのタイトル
+
+- **ユーザーエージェント**：ブラウザおよびオペレーティングシステムの詳細情報
+
+- **ブラウザ／バージョン**：ブラウザの種類とバージョン
+
+- **オペレーティングシステム／バージョン**：オペレーティングシステムの種類とバージョン
+
+- **デバイス**：使用している機器の種類（デスクトップ、モバイルなど）
+
+- **都市**：ユーザーの接続位置
+
+- **セッションID**：ユーザーセッション識別子
+
+- **クライアントIP**：ユーザーのIPアドレス
+
+- **有効な接続タイプ**：ネットワーク接続の種類（3G、4G、Wi-Fi など）
+
+- **有効な帯域幅**：ネットワークの帯域幅情報
+
+- **RTT**：ラウンドトリップタイム（往復時間）
+
+#### 時刻情報
+
+イベントの全体経過時間、開始時刻、終了時刻を確認できます。
+
+#### 区間ごとの所要時間（タイムラインチャート）
+
+<b>ページロード</b> イベントでは、区間ごとの所要時間を視覚的に確認できます。
+
+- **リダイレクト時間**：ページリダイレクトに要した時間
+
+- **リクエスト待機時間**：サーバーの応答を待つ時間
+
+- **ダウンロード時間**：リソースのダウンロードに要した時間
+
+- **Time to First Byte**：最初のバイトを受信するまでの時間
+
+- **Dom Interactive**：DOMとのインタラクションが可能になる時点
+
+- **Dom Content Loaded**：DOMコンテンツの読み込み完了時間
+
+- **Dom Complete**：DOM処理完了時間
+
+- **OnLoadイベント時間**：ページのロード完了時間
+
+- **キャッシュ時間**：キャッシュされたリソースの検索時間
+
+- **DNSルックアップ**：ドメインの照会時間
+
+- **TCP接続時間**：TCP接続の確立に要する時間
 
 ### リソース一覧 {#resource-list}
 
-ブラウザーがサーバーからダウンロードするリソースは、<b>ページロード</b>の性能に大きな影響を与える場合があります。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />は、読み込み速度が遅いリソースやファイルサイズが大きいリソースをすばやく特定できます。
+イベント処理の過程でロードされたリソースの詳細情報を提供します。 各リソースはタイムライン形式で表示され、読み込み順序と所要時間を一目で把握できます。
 
-各リソースの開始時間に基づいてタイムラインチャートを提供し、ロード速度が遅いリソースを特定できます。 各リソースのファイルサイズを参照し、パフォーマンスに影響を与える部分を改善することができます。 各リソースをクリックすると<Cmdname sid="resource" className="uitext" /><Cmdname sid="detail" className="uitext" />画面から詳細な時間情報を確認できます。
+- **名前**：リソースのファイル名またはURL
+
+- **経過時間**：各リソースの読み込み時間
+
+<ImgLang img='browser-analyze-pageload-resource-list.png' desc='resource-list' />
+
+#### リソースの詳細情報
+
+リソースリストで特定のリソースをクリックすると、そのリソースの詳細情報をツールチップで確認できます。 リソースの詳細情報を通じて、パフォーマンスのボトルネック区間を正確に把握し、最適化が必要なリソースを特定できます。
+
+- **リソースタイミング情報**
+
+  - **キャッシュ時間**：キャッシュされたリソースの検索時間
+
+  - **DNSルックアップ**：ドメインの照会に要した時間
+
+  - **接続時間**：サーバーとの接続確立に要した時間
+
+  - **リクエスト待機時間**：サーバーの応答を待つ時間（TTFB）
+
+  - **ダウンロード時間**：リソースのダウンロードに要した時間
+
+  - **経過時間**：リソース全体の読み込みに要した合計時間
+
+- **リソース情報**
+
+  - **タイプ**：リソースの種類（css、js、image など）
+
+  - **サイズ**：リソースファイルのサイズ
+
+  - **デリバリータイプ**：転送方式（キャッシュ読み込みなど）
 
 ### ブラウザーエラーを確認する
 
-ブラウザのエラーデータを含むページロードイベントの場合、赤色で表示されます。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />からエラーが発生したステップを確認できます。
+ブラウザエラーのデータを含むページロードイベントは、<span class='vslow'>赤色</span>で表示されます。 <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />からエラーが発生したステップを確認できます。
 
-1. <Cmdname sid="resource" className="uitext" /><Cmdname sid="list" className="uitext" />からエラーが発生したステップを選択すると、<Cmdname sid="exception_stack" className="uitext" />画面が表示されます。
-
-2. ***Upload***ボタンを選択します。
-
-3. コードスタックのソースマップファイルを選択します。
-
-難読化されたスタック情報とJavaScriptのソースマップ情報を比較して、実際にエラーが発生したコードを確認できます。
+<ImgLang img='browser-analyze-pageload-check-error.png' desc='check-browser-error' />
 
 ### ユーザーセッション分析 {#TTL07736}
 

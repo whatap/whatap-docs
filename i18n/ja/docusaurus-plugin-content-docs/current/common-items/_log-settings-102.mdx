@@ -1,22 +1,24 @@
 <InDoc product='aws-log'>
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
+\*\*ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
 <InDoc product='log,postgresql,mysql,oracle,oracle-pro'>
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
+\*\*ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" />
 
 </InDoc>
 
-<Cmdname sid="side_logSetting" className="uitext" />メニューで、ログモニタリング関連の設定を行われます。 上部のタブからエージェント設定の確認、ログモニタリングを活性化有無の決定、ログデータの保存期間および照会パスワードの設定、ログパーサ登録、クイックインデックス設定、個人情報の非識別化管理などのメニューが利用できます。
+<Cmdname sid="side_logSetting" className="uitext" /> の上部タブからログモニタリングを設定できます。 エージェント設定の確認、ログモニタリングの有効化設定、ログデータの保持期間および照会パスワードの設定、ログパーサーの登録、クイックインデックスの設定、個人情報のマスキング管理などを行うことができます。
 
 :::note
 
-- <Cmdname sid="use_log_monitoring" className="uitext" />機能を使用するには、<Cmdname sid="edit_project" className="b600" />権限が必要です。
+**権限**
 
-- <Cmdname sid="log_update" className="b600" />権限では、<Cmdname sid="use_log_monitoring" className="uitext" />機能と<Cmdname sid="side_logSetting" className="uitext" />メニューを修正できます。
+- <Cmdname sid="use_log_monitoring" className="uitext" /> を使用するには、<Cmdname sid="edit_project" className="b600" /> 権限が必要です。
+
+- <Cmdname sid="log_update" className="b600" /> 権限があれば、<Cmdname sid="use_log_monitoring" className="uitext" /> のほか、<Cmdname sid="side_logSetting" className="uitext" /> メニューを編集できます。
 
 :::
 
@@ -42,7 +44,9 @@
 
 <Xclude product='postgresql,mysql,oracle,oracle-pro'>
 
-上段で<Cmdname sid="getting_started_log_monitoring" className="uitext" />タブを選択します。 ![WhaTap Docsアイコン](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" />アイコンと<Cmdname sid="log_monitoring_plan" className="uitext" />ボタンを選択すると、関連の案内画面に移動します。 
+1. <Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logSetting" className="uitext" /> の <Cmdname sid="getting_started_log_monitoring" className="uitext" /> タブをクリックしてください。
+
+2. ![WhaTap Docsアイコン](/img/ic-guide.svg) <Cmdname sid="log_monitoring_guide" className="uitext" />アイコンと <Cmdname sid="log_monitoring_plan" className="uitext" />ボタンを選択すると、案内画面に移動します。
 
 </Xclude>
 
@@ -67,25 +71,25 @@
 
 <InDoc product='log,postgresql,mysql,oracle,oracle-pro'>
 
-![number 1](/img/number-01.png)領域でエージェント設定を確認し<Cmdname sid="use_log_monitoring" className="uitext" />トグルボタンでログモニタリングの有効化・無効化を設定します。
+![number 1](/img/number-01.png) 領域でエージェント設定を確認し、ログモニタリングの有効化または無効化を設定できます。
 
 #### エージェントの設定確認 {#log-check-agent-settings}
 
 <Xclude product='postgresql,mysql,oracle,oracle-pro'>
 
-ログモニタリングを開始するために、エージェントのバージョンと設定情報を確認してください。 ***エージェント設定確認***メニューを選択して、説明通りにプロセスを進めてください。
+ログモニタリングを開始するために、エージェントのバージョンと設定情報を確認してください。 **1. **エージェント設定の確認\*\* の案内に従って進めてください。
 
 - **アプリケーションモニタリング**
 
-  ***適用する***メニューの下にある固有のアプリケーション手順を確認してください。 次の説明書[Java](log-java)、[PHP](log-php)、[Node.js](log-nodejs)、[Python](log-python)、[Go](log-go)などをご参照ください。
+  アプリケーション別の適用方法については、[Java](log-java)、[PHP](log-php)、[Node.js](log-nodejs)、[Python](log-python)、[Go](log-go) のドキュメントを参照してください。
 
 - **サーバーモニタリング**
 
-  ***適用する***メニューの下にある固有のアプリケーション手順を確認してください。 [次の文書](log-server)を参照してください。 指示に従って*whatap.con*にログモニタリング対象ファイルの設定を追加します。
+  サーバーモニタリングの適用方法については、[Server](log-server) ドキュメントを参照してください。 指示に従って*whatap.conf*にログモニタリング対象ファイルの設定を追加します。
 
 - **Kubernetesモニタリング**
 
-  ***適用する***メニューの下にある固有のアプリケーション手順を確認してください。 [次の文書](log-k8s)を参照してください。 
+  Kubernetesモニタリングの適用方法については、[Kubernetes](log-k8s) ドキュメントを参照してください。
 
 </Xclude>
 
@@ -97,11 +101,7 @@
 
 #### ログモニタリングの有効化 {#log-activate}
 
-<Cmdname sid="use_log_monitoring" className="uitext" />メニューを選択して、ログモニタリングの有効化または無効化を設定します。
-
-<Xclude product="postgresql,mysql,oracle,oracle-pro">
-
-</Xclude>
+ログモニタリングを有効化または無効化できます。 **2.** <Cmdname sid="use_log_monitoring" className="uitext" /> でログモニタリングの有効／無効を設定してください。
 
 <InDoc product='postgresql,mysql,oracle,oracle-pro'>
 
@@ -109,8 +109,8 @@
 
 </InDoc>
 
-- ![アイコン](/img/ic-toggle-on.svg)トグルボタンをオンにすると、ログモニタリンがアクティブになります。 活性化した日から15日間無料で体験できます。 
-- ![アイコン](/img/ic-toggle-off.svg)トグルボタンをオフにすると、ログモニタリンが無効化されます。 これ以上ログを保存しません。 
+- ![アイコン](/img/ic-toggle-on.svg) ログモニタリングの有効化：トグルボタンをオンにするとログモニタリングが有効になり、有効化した日から15日間は無料でお試しいただけます。
+- ![アイコン](/img/ic-toggle-off.svg) ログモニタリングの無効化：トグルボタンをオフにするとログモニタリングが無効になり、以降ログは保存されません。
 
 </InDoc>
 
@@ -118,13 +118,29 @@
 
 ![number 2](/img/number-02.png)領域で<Cmdname sid="log_usage" className="uitext" />が確認できます。 また<UI>ログ保存期間</UI>と<Cmdname sid="log_lookup_password" className="uitext" />設定を変更できます。
 
+#### ログ参照パスワード {#log-lookup-pw}
+
+セキュリティを強化するため、<Cmdname sid="log_lookup_password" className="uitext" />を設定してください。 ログ検索パスワードの指定はオプションです。 ログ検索パスワードを使用中の場合は、ログ画面に入るときは必ずパスワードを入力します。 
+
+:::warning
+
+**パスワードの紛失**
+
+ログ編集権限を持つユーザーは、<Cmdname sid="side_logSetting" className="uitext" /> で新しいパスワードに変更できます。
+
+:::
+
 #### ログ保存期間{#data-retention}
 
-共通に適用する基本(default) データ保持期間です。 未指定の場合、既定値は1日です。 ログ保存期間の選択オプションの他に、ユーザーが希望する期間を入力できます。 <Cmdname sid="log_usage" className="uitext" />一覧で別に設定しない場合、このログデータの保存期間がデフォルトで適用されます。 <Cmdname sid="log_usage" className="uitext" />一覧でカテゴリごとのデータ保存期間を設定し<Cmdname sid="initialized" className="uitext" />ボタンを選択すると、デフォルトのデータ保存期間に初期化されます。 
+共通に適用する基本(default) データ保持期間です。 
+
+- 最小1日から最大40日まで入力できます。 未指定の場合、既定値は1日です。 ログ保存期間の選択オプションの他に、ユーザーが希望する期間を入力できます。 
+
+- <Cmdname sid="log_usage" className="uitext" />一覧で別に設定しない場合、このログデータの保存期間がデフォルトで適用されます。 <Cmdname sid="log_usage" className="uitext" /> リストでカテゴリごとのデータ保持期間を設定し、<Cmdname sid="initialized" className="uitext" /> ボタンをクリックすると、デフォルトのデータ保持期間に初期化されます。
 
 #### ログ使用量{#data-retention-per-category}
 
-<Cmdname sid="log_usage" className="uitext" />一覧でカテゴリ別のログデータの保存期間を指定できます。 **ログ数**は、当該期間中に蓄積されたログの件数を意味します。 例えば、<Cmdname sid="daily_log_count" className="uitext" />は、1日にたまったログ件数、<Cmdname sid="expected_log_count" className="uitext" />は、データ保持日に今日のログ数を掛けたログ件数を意味します。
+<Cmdname sid="log_usage" className="uitext" />一覧でカテゴリ別のログデータの保存期間を指定できます。 ログ数は、当該期間中に蓄積されたログの件数を意味します。 例えば、<Cmdname sid="daily_log_count" className="uitext" />は、1日にたまったログ件数、<Cmdname sid="expected_log_count" className="uitext" />は、データ保持日に今日のログ数を掛けたログ件数を意味します。
 
 ログデータの保存期間を次のように指定できます。 期間指定により、古いデータを削除してスペースを確保できます。
 
@@ -142,103 +158,93 @@
 
   > 例、1日平均200万ログ件数が蓄積され、データ保存期間を3日に指定した場合、平均600万ログ件数が収集サーバーに保持され、課金の対象となります。
 
-#### ログ参照パスワード {#log-lookup-pw}
-
-セキュリティを強化するため、<Cmdname sid="log_lookup_password" className="uitext" />を設定してください。 ログ検索パスワードの指定はオプションです。 ログ検索パスワードを使用中の場合は、ログ画面に入るときは必ずパスワードを入力します。 
-
-:::note
-
-**パスワードの紛失**
-
-**ログ編集**権限がある場合は、<Cmdname sid="side_logSetting" className="uitext" />メニューで新しいパスワードに変更できます。
-
-:::
-
 ## ログ1次パーサ設定 {#log-setting-parser-1st}
 
-<Cmdname sid="side_logSetting" className="uitext" />メニューの上部にある<Cmdname sid="log_parser_setting_primary" className="uitext" />タブを選択してログパーサを登録または修正ができます。 ログ1次パーサは、***GROK***と***JSON***パーサを提供します。 収集されたログを使用して、パターンの条件と一致するキー情報、つまり検索キーと検索値を抽出します。 パーシングされたログキーは、ログのタイプを分類するための目的および特定のログを検索するためのインデックスに使用されます。 タイプ別ログ発生数を集計したり、特定のログをすばやく特定するために登録に必要なパーサです。
+<Cmdname sid="side_logSetting" className="uitext" /> 上部の <Cmdname sid="log_parser_setting_primary" className="uitext" /> タブを選択して、ログパーサーの登録および修正ができます。 ログ1次パーサは、**GROK**と**JSON**パーサを提供します。 収集されたログを使用して、パターンの条件と一致するキー情報、つまり検索キーと検索値を抽出します。 パーシングされたログキーは、ログのタイプを分類するための目的および特定のログを検索するためのインデックスに使用されます。 タイプ別ログ発生数を集計したり、特定のログをすばやく特定するために登録に必要なパーサです。
 
-- ***GROK***：基本的には、正規表現ベースのパーシングに対応します。 予約キーワードベースのパーシングを提供します。
+- **GROK**：基本的には、正規表現ベースのパーシングに対応します。 予約キーワードベースのパーシングを提供します。
 
-- ***JSON***：ログからJSONで出力された部分に対して一括パーシング機能を提供します。
+- **JSON**：ログからJSONで出力された部分に対して一括パーシング機能を提供します。
 
-:::note 
+:::tip
 
 **パーシングロジックが未登録時に検索可能なkey**
 
-`category`, `oid`, `oname`, `okind`, `okineName`, `@txid`, `@login`, `httphost` 
-
-:::
-
-:::note
+`category`, `oid`, `oname`, `okind`, `okineName`, `@txid`, `@login`, `httphost`
 
 **パーサで登録のできない予約語**
 
-次の予約語の場合、パーサを登録してもインデックスは作成されません。
-
 `timestamp`, `message`, `pcode`, `category`, `content`, `logContent`
 
-:::
+- 次の予約語の場合、パーサを登録してもインデックスは作成されません。
+  :::
 
-:::note 
-
-ログパーサの詳細については、[次の文書](log-parser)を参照してください。
+:::note
+로그 파서에 대한 자세한 내용은 [다음 문서](log-parser)를 참고하세요.
 
 :::
 
 ### 設定項目 {#log-parser-comp}
 
-| 設定値    | 説明                                                                                           | その他      |
-| ------ | -------------------------------------------------------------------------------------------- | -------- |
-| カテゴリ   | パターンを適用するカテゴリです。                                                                             | required |
-| ログ検出条件 | フィルターとして適用する検索キー、検索値を入力します。 ログ検出条件を満たすログデータにパターンを適用します。 ログ検出条件を入力しない場合、すべてのログを対象にパターンを適用します。 | optional |
-| パターン   | ログをパーシング(parsing)するパターンです。 作成したパターンに合わせてパーシングを行い、インデックスを作成します。 GROKと正規表現に対応します。              | required |
+| 設定値    | 説明                                                                                                  | その他      |
+| ------ | --------------------------------------------------------------------------------------------------- | -------- |
+| カテゴリ   | パターンを適用する対象のカテゴリです。                                                                                 | required |
+| ログ検出条件 | フィルターとして使用する検索キーと検索値を入力します。<br /> - ログ検出条件に一致するログデータにのみパターンが適用されます。検出条件を入力しない場合、すべてのログにパターンが適用されます。 | optional |
+| パターン   | ログをパースするためのパターンです。<br /> - 作成したパターンに従ってログをパースし、インデックスを生成します。<br /> GROKおよび正規表現の構文をサポートしています。        | required |
 
 ### パーサ一覧 {#log-parser-list-1st}
 
-<Cmdname sid="side_logSetting" className="uitext" />メニューの上部の<Cmdname sid="log_parser_setting_primary" className="uitext" />タブを選択すると、登録したパーサが表示され、追加および編集が可能な**パーサ一覧**画面を確認できます。
+<Cmdname sid="side_logSetting" className="uitext" /> 上部の <Cmdname sid="log_parser_setting_primary" className="uitext" /> タブを選択すると、登録済みのパーサーを確認でき、追加や編集が可能なパーサー一覧が表示されます。 適用順にパーサーが評価され、最初に一致したパーサーのみが適用されます。
 
-- 右上の***+***<Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
+- 右上の**_+_**<Cmdname sid="adding" className="uitext" />ボタンをクリックすると、<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
 
-- パーサ一覧<Cmdname sid="ITM06352" className="uitext" />カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサの設定手順を変更できます。
+- <Cmdname sid="ITM06352" className="uitext" />カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサの設定手順を変更できます。
 
-- パーサ一覧![アイコン](/img/ic-toggle-on.svg) <Cmdname sid="enable" className="uitext" />トグルでパーサの活性化有無を指定できます。
+- ![アイコン](/img/ic-toggle-on.svg) <Cmdname sid="enable" className="uitext" />トグルでパーサの活性化有無を指定できます。
 
-- パーサ一覧![修正アイコン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />及び![削除アイコン](/img/ico-trash-red.svg) <Cmdname sid="delete" className="uitext" />アイコンで登録したパーサを修正または削除できます。
+- ![修正アイコン](/img/ico-edit.svg) <Cmdname sid="edit" className="uitext" />及び![削除アイコン](/img/ico-trash-red.svg) <Cmdname sid="delete" className="uitext" />アイコンで登録したパーサを修正または削除できます。
 
-### パーサ登録手順{#log-add-parser-1st}
+### パーサー登録{#log-add-parser-1st}
 
-<Cmdname sid="side_logSetting" className="uitext" />メニューの上部にある<Cmdname sid="log_parser_setting_primary" className="uitext" />タブを選択してログパーサを登録または修正ができます。 次に、パーサ登録の共通の手順を説明します。
+<Cmdname sid="side_logSetting" className="uitext" /> 上部の <Cmdname sid="log_parser_setting_primary" className="uitext" /> タブで、ログパーサーの登録および修正ができます。 以下はパーサーを登録する共通の手順です。
 
-1. ***+***<Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
+1. <Cmdname sid="log_parser_setting_primary" className="uitext" /> で **+** <Cmdname sid="adding" className="uitext" /> ボタンをクリックしてください。
 
-2. <Cmdname sid="parser" className="uitext" />選択画面からパーサを選択します。 各パーサおよびパターン登録の詳細については、次の文書を参照してください。
+2. <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で<Cmdname sid="parser" className="uitext" />を選択してください。
 
-   - ***GROK*** [パーサおよびパターン登録](#log-pattern-grok)
+   :::note 
 
-   - ***JSON*** [パーサおよびパターン登録](#log-pattern-json)
+   **パーサーおよびパターンの登録方法**
 
-3. <Cmdname sid="BTN08593" className="uitext" />ボタンを選択すると、右側にパターン登録とシミュレーション画面が表示されます。
+   - **_GROK_** [パーサおよびパターン登録](#log-pattern-grok)
 
-4. 登録を希望する<Cmdname sid="pattern" className="uitext" />と<Cmdname sid="log" className="uitext" />を入力します。 
+   - **_JSON_** [パーサおよびパターン登録](#log-pattern-json)
 
-5. 登録したいパターンが正常な場合は、<Cmdname sid="simulation" className="uitext" />ボタンをクリックしてシミュレーション及びパターンのパフォーマンスを測定してください。
+   :::
 
-6. パターンの適用後、<Cmdname sid="category" className="uitext" />選択画面でカテゴリを選択するか、直接入力します。 
+3. パーサーを選択すると、<Cmdname sid="BTN08593" className="uitext" />ボタンが有効になります。 <Cmdname sid="BTN08593" className="uitext" />ボタンをクリックした後、**パーサーシミュレーション**ウィンドウでパターンとログを入力します。 
 
-7. <Cmdname sid="ITM06439" className="uitext" />として使用する<Cmdname sid="ITM06429" className="uitext" />と<Cmdname sid="ITM06430" className="uitext" />を選択するか、直接入力します。
+   a. <Cmdname sid="pattern" className="uitext" />を入力してください。
 
-8. <Cmdname sid="add" className="uitext" />ボタンを選択してパーサーを追加します。
+   b. <Cmdname sid="log" className="uitext" />の<Cmdname sid="category" className="uitext" />と**シミュレーション用のパースログ**を入力してください。 **ログ検索**ボタンをクリックした後、検索結果の一覧から目的のログの右側にある**選択**ボタンをクリックすると、ログが自動的に入力されます。
 
-:::note
+   :::note
 
-- シミュレーションと性能測定についての詳細は、[次の文書](#parser-simulation-and-performance)を参照してください。
+   **ログ検索**を使用して、収集されたログの中からサンプルログを選択できます。 選択したログはシミュレーション入力欄に自動的に反映され、コピーや貼り付けなしですぐにテストできます。
 
-- ログパーサ登録時、同じ<Cmdname sid="category" className="uitext" />のパーサを重複で登録できません。
+   :::
 
-- フィルター条件に合ったログデータのみパターンを適用します。 <Cmdname sid="ITM06439" className="uitext" />を指定しない場合は、すべてのログにパターンを適用します。
+   c. 登録するパターンが正しいかどうかを確認するには、**シミュレーション**ボタンをクリックして、シミュレーションとパターンのパフォーマンスを測定してください。
 
-:::
+   :::note
+
+   シミュレーションと性能測定についての詳細は、[次の文書](#parser-simulation-and-performance)を参照してください。
+
+   :::
+
+4. 正常にパースされるかどうかシミュレーション結果を確認した後、**パターン適用**ボタンをクリックしてください。
+
+5. <Cmdname sid="add" className="uitext" />ボタンをクリックすると、パーサーが追加されます。
 
 :::note 
 
@@ -246,13 +252,13 @@
 
 <Cmdname sid="log_parser_setting_primary" className="uitext" />タブでその時の検索キー名を<code class='filter'>検索キー.p</code>に指定した場合、デフォルトでは非識別化の対象となります。 <Cmdname sid="TTL08814" className="uitext" />タブで追加または修正時に該当の<Cmdname sid="category" className="uitext" />を選択した後、<Cmdname sid="TTL08835" className="uitext" />で確認できます。 マスキング処理を希望しない場合は解除できます。
 
-> 例、<code class='filter'>myname.p</code> `***`
+- 例、<code class='filter'>myname.p</code> `***`
 
-WhaTapは、パーサー設定中に非識別化の対象を指定する方式よりも<Cmdname sid="TTL08814" className="uitext" />タブの使用を勧めます。 個人情報の非識別化の詳細は[次の文書](#log-deidentification-of-personal-info)で参照してください。 
+- WhaTapは、パーサー設定中に非識別化の対象を指定する方式よりも<Cmdname sid="TTL08814" className="uitext" />タブの使用を勧めます。 個人情報のマスキングに関する詳細は、[次のドキュメント](#log-deidentification-of-personal-info)を参照してください。
 
 :::
 
-### GROKパーサパターン登録 {#log-pattern-grok}
+#### GROKパーサパターン登録 {#log-pattern-grok}
 
 基本文法は、`%{SYNTAX:SEMANTIC}`です。 GROKパーサの詳細は、[次の文書](log-parser#grok-parser-detail)を参照してください。 パターン登録とシミュレーションが不可欠です。 
 
@@ -270,9 +276,9 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
 
   :::
 
-### JSONフォーマットのパーサパターン登録 {#log-pattern-json}
+#### JSONフォーマットのパーサパターン登録 {#log-pattern-json}
 
-ログ全体または一部がJSON形式で出力される場合、JSONフォーマットのパーサを使用して、JSONに出力された部分をパーシングできます。 ログのうちJSON形式として出力された部分を検出するために、***Prefix***、***Postfix***オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。 JSONパーサの詳細は、[次の文書](log-parser#json-parser-detail)を参照してください。 シミュレーションが不可欠です。 
+ログ全体または一部がJSON形式で出力される場合、JSONフォーマットのパーサを使用して、JSONに出力された部分をパーシングできます。 ログのうちJSON形式として出力された部分を検出するために、**_Prefix_**、**_Postfix_**オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。 JSONパーサの詳細は、[次の文書](log-parser#json-parser-detail)を参照してください。 シミュレーションが不可欠です。 
 
 | オプション    | 説明                                                                                                             |
 | -------- | -------------------------------------------------------------------------------------------------------------- |
@@ -305,7 +311,7 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
   io.whatap.logsink.parser.JsonFormatParser{}
   ```
 
-  ログのうちJSON形式として出力された部分を検出するために、***Prefix***、***Postfix***オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。
+  ログのうちJSON形式として出力された部分を検出するために、**_Prefix_**、**_Postfix_**オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。
 
   `JsonFormatParser{}`の`{}`にオプションを指定します。
 
@@ -333,23 +339,17 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
     io.whatap.logsink.parser.JsonFormatParser {prefix: "Response : "}
     ```
 
-### パーサーシミュレーションと性能測定{#parser-simulation-and-performance}
+#### パーサーシミュレーションと性能測定{#parser-simulation-and-performance}
 
-1. <Cmdname sid="pattern" className="uitext" />と<Cmdname sid="log" className="uitext" />を入力します。
+**パーサーシミュレーション**後、パターンを登録できます。 <Cmdname sid="performance_measurement" className="uitext" />は、シミュレーション実行対象文字列に対してパーサーの反復パーシング所要時間を測定します。 
+
+1. <Cmdname sid="pattern" className="uitext" />と<Cmdname sid="log" className="uitext" />を入力します。 **ログ検索**ボタンをクリックした後、検索結果の一覧から目的のログの右側にある**選択**ボタンをクリックすると、ログが自動的に入力されます。
 
 2. <Cmdname sid="simulation" className="uitext" />ボタンをクリックして、登録しようとするパターンでパーシングに成功することを確認します。
 
 3. シミュレーションの成功時<Cmdname sid="simulation_result" className="uitext" />と<Cmdname sid="TTL08604" className="uitext" />を照会できます。
 
 4. シミュレーション後、<Cmdname sid="apply_pattern" className="uitext" />ボタンをクリックすると、選択したパーサーに入力したパターンが適用されます。 
-
-:::note 
-
-- <Cmdname sid="performance_measurement" className="uitext" />は、シミュレーション実行対象文字列に対してパーサーの反復パーシング所要時間を測定します。
-
-- ***パーサーシミュレーション***後、パターンを登録できます。 
-
-:::
 
 ### パーシングの成功 {#log-parsed}
 
@@ -379,7 +379,7 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
 
 <Cmdname sid="side_logSetting" className="uitext" />メニューの上部の<Cmdname sid="log_parser_setting_secondary" className="uitext" />タブを選択すると、登録したパーサが表示され、追加および編集が可能な**パーサ一覧**画面を確認できます。
 
-- 右上の***+***<Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
+- 右上の**_+_**<Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
 
 - パーサ一覧<Cmdname sid="ITM06352" className="uitext" />カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサの設定手順を変更できます。
 
@@ -393,7 +393,7 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
 
 <ImgLang img='log-2nd-parser-add.png' desc='ログ2次パーサ登録手順' />
 
-1. ***+***<Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
+1. **_+_**<Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
 
 2. <Cmdname sid="parser" className="uitext" />選択画面からパーサを選択します。 各パーサ設定項目および除外するステータスコード登録の詳細については、次の文書を参照してください。
 
@@ -437,11 +437,11 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
 
 <ImgLang img='log-flexboard-widget-chart-4xx5xx.png' desc='Log Flex board widget chart - 4xx5xx'/>
 
-- ***avg***：照会期間のデータで平均値です。
+- **_avg_**：照会期間のデータで平均値です。
 
 - **max**：照会期間のデータで最大値です。
 
-- ***recently***：照会期間のデータで最後の値です。
+- **_recently_**：照会期間のデータで最後の値です。
 
 ### 成功率をパーサから除外するステータスコード登録 {#log-pattern-status}
 
@@ -485,7 +485,7 @@ WhaTapは、パーサー設定中に非識別化の対象を指定する方式�
 
 1. 1つのプロジェクトにパーサ設定および<Cmdname sid="fast_index_setting" />を追加します。
 
-2. 各設定タブで画面右上に***JSON***![エクスポートアイコン](/img/ico-export.svg)ボタンを選択します。
+2. 各設定タブで画面右上に**_JSON_**![エクスポートアイコン](/img/ico-export.svg)ボタンを選択します。
 
 3. <Cmdname sid="export_json" className="uitext" />画面が表示されると、画面右上にある<Cmdname sid="export" className="uitext" />ボタンを選択します。
 
@@ -530,7 +530,7 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 #### 例
 
-次のように設定を追加した場合、収集されたログのうち、statusが`200`, `300`のログを対象に***TotalCount***のキーで統計データを作成します。 
+次のように設定を追加した場合、収集されたログのうち、statusが`200`, `300`のログを対象に**_TotalCount_**のキーで統計データを作成します。 
 
 <ImgLang img='log-long-term-totalcount.png' desc='ログ長期保存の統計例'/>
 
@@ -706,7 +706,7 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 #### <Cmdname sid="BTN09473" /> {#log-de-identification-check-history}
 
-ログ個人情報の非識別化点検を行った後、過去に行われた点検結果を照会するには、上段右側で<Cmdname sid="BTN09473" className="uitext" />ボタンをクリックします。 置き換え履歴、点検時点、適用された個人情報項目などを追跡できます。 また<Cmdname sid="BTN09473" className="uitext" />画面の上段右側の![ダウンロードアイコン](/img/ico-download.svg) ***CSV***ボタンをクリックすると_CSV_ファイル形式でそのリスト情報をダウンロードできます。 
+ログ個人情報の非識別化点検を行った後、過去に行われた点検結果を照会するには、上段右側で<Cmdname sid="BTN09473" className="uitext" />ボタンをクリックします。 置き換え履歴、点検時点、適用された個人情報項目などを追跡できます。 また<Cmdname sid="BTN09473" className="uitext" />画面の上段右側の![ダウンロードアイコン](/img/ico-download.svg) **_CSV_**ボタンをクリックすると_CSV_ファイル形式でそのリスト情報をダウンロードできます。 
 
 <ImgLang img="log-de-identification-check-history.png" desc="로그 개인정보 비식별화 점검 이력 확인" />
 

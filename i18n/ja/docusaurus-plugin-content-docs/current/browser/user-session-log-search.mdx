@@ -46,11 +46,11 @@ Browser Monitoringで収集するユーザーセッションログは、次の�
 
 ![Category](/img/browser-search-user-session-category.png)
 
-- ***#BrowserError***：ウェブページで発生するソースエラー、ネットワークエラーなどを収集して提供します。
+- **_#BrowserError_**：ウェブページで発生するソースエラー、ネットワークエラーなどを収集して提供します。
 
-- ***#PerformanceEvent***：ページロード、AJAX、ルータ変更に関するイベントを収集して提供します。
+- **_#PerformanceEvent_**：ページロード、AJAX、ルータ変更に関するイベントを収集して提供します。
 
-- ***#UserEvent***：ユーザーのクリックイベントとユーザー定義イベントを収集して提供します。
+- **_#UserEvent_**：ユーザーのクリックイベントとユーザー定義イベントを収集して提供します。
 
 ### ユーザーセッションログ{#usersessionlog}
 
@@ -96,55 +96,175 @@ Browser Monitoringで収集するユーザーセッションログは、次の�
 
 ## ユーザーセッションの分析{#analysisusersession}
 
-ユーザーセッションのログ照会一覧で<Cmdname sid="TTL07736" className="uitext" />カラムの<Cmdname sid="analysis" className="uitext" />ボタンを選択します。 選択した項目のユーザーセッションログの詳細情報が確認できる<Cmdname sid="TTL07736" className="uitext" />画面が表示されます。
+実際のユーザーがウェブサイト上でどのように行動したかを確認できます。 ページロードヒートマップ、AJAXヒートマップ、ユーザーセッションログ検索機能を使用して、分析対象となるユーザーセッションを選定・分析できます。
 
-ユーザーセッションを基準にウェブページと相互作用しながら発生させたイベントやエラーなどを時間順に確認できます。 ユーザーセッションの分析により、次のように活用し、より良いユーザー体験を提供できます。
+- **ページ内の行動分析**：ユーザーがページ上でどのように動いているか、どのページに滞在しているか、画面のどの要素をクリックしているかなどのアクションを分析できます。 ユーザーがどのコンテンツに関心を持ち、どの機能を利用しているかを把握するのに役立ちます。
 
-- **ページ内の行動分析**：ユーザーがウェブページを利用するパターンを理解できます。 どのように動くのか、どのページにとどまっているのか、画面のどのような要素をクリックするのかなど、ユーザーの行動を分析できます。 この機能で、ユーザーがサイトを利用する方法について直観でき、ユーザーの経路を分析してユーザーの行動パターンを把握できます。
+- **エラートラッキング**：JavaScriptエラーやネットワークエラーなど、ユーザーセッション中に発生するあらゆる技術的な問題を追跡します。 ユーザーのクリック、ページ移動などの行動をモニタリングし、これを分析して障害が発生した原因を特定できます。
 
-- **エラートレース**：JavaScriptエラー、ネットワークエラーなど、ユーザーのセッションから発生するあらゆる種類の技術的問題を追跡できます。 ユーザーのクリック、ページ移動などの行動をモニタリングし、これを分析して障害が発生した原因を特定できます。
+:::note
 
-- **離脱原因の把握**：特定のページからユーザーが離脱する場合や、特定の作業を完了できない場合を追跡して原因を分析し、その部分を改善することで離脱率を改善できます。
+ユーザーセッションを分析するには、ログ閲覧権限が必要です。
 
-### ユーザーセッション情報
+:::
 
-エンドユーザーのブラウザーやOS、ユーザーエージェント、ユーザーID、セッションID、クライアントIPなどの情報を照会できます。
+### <Cmdname sid="TTL07736" className="uitext" /> {#analysisusersession-user}
+
+分析対象のユーザーセッションの情報を確認できます。 エンドユーザーのブラウザーやOS、ユーザーエージェント、ユーザーID、セッションID、クライアントIPなどの情報を照会できます。
+
+1. **分析** の **ユーザーセッションログ検索** に移動します。
+
+2. 照会されたリストから、<Cmdname sid="TTL07736" className="uitext" /> カラムの <Cmdname sid="analysis" className="uitext" /> ボタンをクリックしてください。
+
+3. 選択した項目のユーザーセッションログの詳細情報が確認できる<Cmdname sid="TTL07736" className="uitext" />画面が表示されます。
 
 ### ユーザーセッションフロー
 
 ユーザーセッションに基づいて、実際のユーザーがウェブサイトと相互作用する際に発生させた性能情報やイベント、エラーを確認できます。
 
-### イベントの詳細情報を確認する
+- 基本的に、イベントまたはエラーが発生したページとその開始時刻、およびパフォーマンス情報の場合は経過時間が表示されます。
+- ユーザーセッションイベントをクリックすると、そのイベントの詳細情報を確認できます。
+- イベントの種類ごとにフィルタリング機能を提供します。
 
-<Cmdname sid="TTL07746" className="uitext" />一覧の<Cmdname sid="title" className="uitext" />カラムに表示されるイベントの種類は、次のように分類されます。 各ユーザー セッションイベントを選択すると、そのイベントの詳細を確認できます。
+  | フィルターの種類     | 説明                                                |
+  | ------------ | ------------------------------------------------- |
+  | ブラウザーエラー     | ウェブページで発生するソースエラーおよびネットワークエラー                     |
+  | AJAXロード      | AJAXリクエストに関連するイベント                                |
+  | ページロード       | ウェブページの読み込み時に発生するイベント                             |
+  | ルーター変更       | SPAウェブページでルートが変更される際に発生するイベント                     |
+  | カスタム         | ユーザー定義イベント                                        |
+  | クリック         | 実際のユーザーがウェブページでクリックした時に発生するイベント                   |
+  | 連続クリック       | 実際のユーザーが同じ座標上を短時間に複数回クリックした際に発生するイベントです。          |
+
+1. <Cmdname sid="TTL07736" className="uitext" /> 画面で、<Cmdname sid="TTL07746" className="uitext" /> リストの右上にある ![フィルターアイコン](/img/ico-filter.svg) アイコンをクリックしてください。
+
+2. <Cmdname sid="filter" className="uitext" />リストでイベントの種類を選択します。
+
+3. <Cmdname sid="apply" className="uitext" />ボタンを選択します。 選択した種類のイベントのみを確認できます。
+
+### カラム設定
+
+ユーザーセッションフローのテーブルに表示するカラムは、ユーザーが自由に選択できます。
+
+```
+<details>
+<summary><b>設定可能なカラム一覧</b></summary>
+
+* **開始時間**：イベントの発生時刻  
+* **デバイス**：ユーザーのデバイス情報  
+* **ログ時間**：ログが記録された時刻  
+* **リソースURLグループ**：リソースURLのグループ情報  
+* **リソースURLパス**：リソースURLのパス  
+* **ブラウザ**：使用しているブラウザの種類  
+* **ブラウザバージョン**：ブラウザのバージョン情報  
+* **ユーザーID**：ユーザーの固有識別子  
+* **セッションID**：セッションの固有識別子  
+* **収集時間**：データが収集された時刻  
+* **エラーメッセージ**：エラー発生時のメッセージ  
+* **エラーメッセージ要約**：エラーメッセージの要約情報  
+* **エラータイプ**：エラーの種類  
+* **オペレーティングシステム**：ユーザーのOS情報  
+* **OSバージョン**：オペレーティングシステムのバージョン  
+* **ユーザーエージェント**：User Agent情報  
+* **名前**：イベント名  
+* **タイトル**：イベントのタイトル  
+* **カテゴリ**：#PerformanceEvent、#BrowserError、#UserEvent  
+* **コンテンツ**：イベントのコンテンツ情報  
+* **クライアントIP**：クライアントのIPアドレス  
+* **タイプ**：イベントタイプ（pageLoad、ajax、clickなど）  
+* **ページグループ**：ページグループ情報  
+* **ページURL**：イベントが発生したページのURL  
+* **ページURLパス**：ページURLのパス  
+* **ホスト**：ホスト情報  
+* **customDuration.n**：カスタム定義の期間  
+* **duration.n**：イベント処理時間  
+* **ENV**：環境変数  
+* **HASH KEY**：ハッシュキー  
+* **pageloadID**：ページロードID  
+* **SCREEN HEIGHT**：画面の高さ  
+* **SCREEN WIDTH**：画面の幅  
+* **URL**：URL情報  
+* **VERSION**：バージョン情報  
+
+</details>
+```
+
+1. ユーザーセッションフロー一覧の右上にある ![カラムアイコン](/img/ico-column.svg) **カラム設定** ボタンをクリックしてください。
+
+2. 表示または非表示にしたいカラムの ![チェックアイコン](/img/ico-check_square-filled.svg) チェックボックスを選択してください。
+
+3. **確認** ボタンをクリックすると、選択したカラムのみがテーブルに表示されます。
+
+### イベントの詳細情報を確認
+
+<Cmdname sid="TTL07746" className="uitext" /> 一覧の <Cmdname sid="title" className="uitext" /> カラムに表示されたイベントの詳細情報を確認できます。
 
 #### <Cmdname sid="page_load" />(pageLoad)
 
-ウェブページを読み込みする時に発生するイベントです。 イベント区間別の詳細時間情報と読み込みしたリソースの詳細を確認できます。 <Cmdname sid="TTL07736" className="uitext" />タブを選択すると、関連情報を連続して把握できます。
+ページロードイベントに関するイベント区間ごとの詳細な時間情報およびロードされたリソースの詳細情報を確認できます。 
+
+<ImgLang img='browser-analysis-user-session-log-details-pageload.png' desc='페이지 로드' />
 
 :::note
 
-ページロード分析の詳細は、[次の文書](analyze-pageload)を参照にしてください。
+詳しくは、[ユーザーアクションヒートマップ](analyze-pageload)のドキュメントをご参照ください。
 
 :::
-
-#### <Cmdname sid="TTL07752" />(routeChange)
-
-SPAウェブページでルーター変更時に発生するイベントです。 ルーターの変更にかかった時間を確認できます。
 
 #### <Cmdname sid="TTL07755" />(ajax)
 
 AJAX要求関連のイベントです。 AJAXイベント区間別の詳細時間情報やAJAX要求URL、呼び出しページ情報、エラーメッセージなどが確認できます。 <Cmdname sid="TTL07736" className="uitext" />タブを選択すると、関連情報を連続して把握できます。
 
+<ImgLang img='browser-analysis-user-session-log-details-ajax.png' desc='ajax' />
+
 :::note
 
-AJAXイベント分析の詳細は、[次の文書](analyze-ajax-hitmap)を参照にしてください。
+AJAXイベントの分析に関する詳しい内容は、[AJAXヒートマップ](analyze-ajax-hitmap)のドキュメントをご参照ください。
+
+:::
+
+#### <Cmdname sid="TTL07751" />(browser_error)
+
+ブラウザーエラーに関するメッセージとスタックトレース情報を確認できます。
+
+<ImgLang img='browser-analysis-user-session-log-details-error.png' desc='browser_error' />
+
+:::note
+
+詳しくは、[エラー追跡](tracking-error)のドキュメントをご参照ください。
 
 :::
 
 #### <Cmdname sid="TTL07753" />(click) / <Cmdname sid="TTL07754" />(rapid_click)
 
-ユーザーがクリックした要素のIDであるセレクタとその要素のテキスト情報を確認できます。 この機能で、ユーザーがどのページでどの要素をクリックしたかを把握できます。
+クリックした要素のIDであるセレクターと、その要素のテキスト情報を表示します。 これにより、ユーザーがどのページでどの要素をクリックしたかを確認できます。 
+
+<ImgLang img='browser-analysis-user-session-log-details-click.png' desc='click, rapid_click' />
+
+- **クリックイベント収集オプション** 
+
+  クリックイベントを収集するには、オプション設定が必要です。  
+
+  ```typescript title='클릭 이벤트 수집 옵션'
+    <script>
+      (function (w, h, _a, t, a, b) {
+        w = w[a] = w[a] || {
+          config: {
+            projectAccessKey: "xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx",
+            pcode: 1,
+            sampleRate: 100,
+            proxyBaseUrl: "https://rumote.whatap-browser-agent.io/",
+            collectUserClick: true,
+          },
+        };
+        a = h.createElement(_a);
+        a.async = 1;
+        a.src = t;
+        t = h.getElementsByTagName(_a)[0];
+        t.parentNode.insertBefore(a, t);
+      })(window, document, 'script', 'https://repo.whatap-browser-agent.io/rum/dev/v1/whatap-browser-agent.js', 'WhatapBrowserAgent', '');
+    </script>
+  ```
 
 :::note
 
@@ -152,33 +272,17 @@ AJAXイベント分析の詳細は、[次の文書](analyze-ajax-hitmap)を参�
 
 :::
 
-#### <Cmdname sid="custom" />(custom)
+#### ユーザー定義（custom）
 
 ユーザー定義イベントで収集された情報を確認することができます。 ユーザー定義イベントの代表値であるタイトル(`name`)とContentsに含まれる情報を表示します。
 
-:::note
-
-ユーザー定義イベントの収集の詳細については、[次の文書](collect-custom-events)を参照にしてください。
-
-:::
-
-#### <Cmdname sid="TTL07751" />(browser_error)
-
-ウェブページで発生するソースエラー、ネットワークエラーなどを確認することができます。
+<ImgLang img='browser-analysis-user-session-log-details-custom.png' desc='custom' />
 
 :::note
 
-エラートレースの詳細は、[次の文書](tracking-error)を参照にしてください。
+詳細については、[ユーザー定義イベントの収集](collect-custom-events) ドキュメントを参照してください。
 
 :::
-
-### イベントごとにフィルタリングする
-
-1. <Cmdname sid="TTL07746" className="uitext" />リストの右上の<LinkImage img="ico-filter.svg" desc="フィルターアイコン" />ボタンを選択します。
-
-2. <Cmdname sid="filter" className="uitext" />リストでイベントの種類を選択します。
-
-3. <Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
 {/* 세션 리플레이 */}
 import Sessionreplay from "../common-items/_browser-analysis-session-replay.mdx";

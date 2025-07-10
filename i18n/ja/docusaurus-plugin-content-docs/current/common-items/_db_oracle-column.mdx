@@ -1,12 +1,15 @@
+import ProcessColumns from "../common-items/_db-process-column.mdx";
+
 <Title level={props.level} hashid="column-info">カラム情報の案内</Title>
+
+<Tabs groupId="db-columns">
+
+<TabItem value="activesession" label="Active session">
 
 カラム情報に関する詳しい内容は、[次のリンク](https://docs.oracle.com/)を参照してください。
 
 | 項目                              | 説明                                                                                                                                                            |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sid`                           | セッションのID                                                                                                                                                      |
-| `cpu(xos)`                      | XOSをインストールした場合、収集されるCPUの使用率                                                                                                                                   |
-| `serial#`                       | 同一のセッションidを使用した場合、判別するために増加させる値                                                                                                                               |
 | `username`                      | DBユーザー名                                                                                                                                                       |
 | `command`                       | `COMMAND_TYPE`と同一、SQLのcommand number                                                                                                                          |
 | `status`                        | セッションの状態                                                                                                                                                      |
@@ -79,13 +82,35 @@
 | `service_name`                  | セッションのサービス名やDB名と類似                                                                                                                                            |
 | `saddr`                         | セッションアドレス                                                                                                                                                     |
 | `con_id`                        | データに関連するコンテナのid(マルチデータベースをサポートする場合のみ)                                                                                                                         |
-| `rss(xos)`                      | XOSエージェントで収集するOSメトリクス                                                                                                                                         |
-| `pss(xos)`                      | XOSエージェントで収集するOSメトリクス                                                                                                                                         |
-| `ioread(xos)`                   | XOSエージェントで収集するOSメトリクス                                                                                                                                         |
-| `iowrite(xos)`                  | XOSエージェントで収集するOSメトリクス                                                                                                                                         |
 
 :::note
 
 WhaTapは、クライアントに関する情報をデフォルトで保存します。
 
 :::
+
+</TabItem>
+
+<TabItem value="locktree" label="Lock tree">
+
+| 項目             | 説明                                                              |
+| -------------- | --------------------------------------------------------------- |
+| `Instance`     | インスタンス（エージェント）名                                                 |
+| `sid`          | セッションID                                                         |
+| `serial#`      | セッションの一意な識別子と共に使用するセッションシリアル番号                                  |
+| `holder_type`  | ロックを保持しているセッションのロックタイプ（例：TX、TMなど）                               |
+| `holder_mode`  | 保持中のロックモード（例：0～6、6はexclusive）                                   |
+| `waiter_type`  | ロックを待機しているセッションのロックタイプ                                          |
+| `waiter_mode`  | 現在要求中のロックモード                                                    |
+| `id1`          | ロック識別子1（ロック対象オブジェクトを識別するために使用、例：トランザクションIDなど）                   |
+| `id2`          | ロックの詳細情報またはバージョン情報を表します                                         |
+
+</TabItem>
+
+<TabItem value="process-info" label="Process information">
+
+<ProcessColumns />
+
+</TabItem>
+
+</Tabs>

@@ -1,3 +1,5 @@
+import ProcessColumns from "../common-items/_db-process-column.mdx";
+
 <Title hashid='column-info' level={props.level}>カラム情報ガイド</Title>
 
 <Tabs groupId="db-columns">
@@ -55,20 +57,7 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 <TabItem value="process-info" label="Process information">
 
-次の項目は、XOSエージェントをインストールした場合に収集される指標です。
-
-| 項目         | 説明                                          |
-| ---------- | ------------------------------------------- |
-| `pid`      | データベースプロセスのPIDです。                           |
-| `cputime`  | CPU使用時間です。                                  |
-| `cpuusage` | CPU使用率です。                                   |
-| `elapse`   | CPU使用経過時間です。                                |
-| `vsize`    | 仮想メモリサイズ(Kb)です。                             |
-| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理的ページの数です。 |
-| `state`    | プロセス状態です。                                   |
-| `ioread`   | ブロックの読み取りにかかった実際の時間(milliseconds)です。        |
-| `iowrite`  | ブロックの書き込みにかかった実際の時間(milliseconds)です。        |
-| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合        |
+<ProcessColumns />
 
 </TabItem>
 </Tabs>

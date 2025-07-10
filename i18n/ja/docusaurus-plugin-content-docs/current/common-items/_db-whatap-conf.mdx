@@ -1,6 +1,6 @@
 ### whatap.conf設定
 
-圧縮を解除したフォルダに移動し、*whatap.con*ファイルを確認します。 *whatap.con* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
+圧縮を解除したフォルダに移動し、*whatap.conf*ファイルを確認します。 *whatap.conf* ファイルに、プロジェクトのアクセスキー情報、WhaTapサーバー情報、DB接続情報を入力します。
 
 <InDoc product="oracle">
 
@@ -57,7 +57,7 @@ broker=query_editor,broker1
 
 :::note
 
-- *whatap.con*ファイル設定の詳細は[次の文書](agent-dbx-settings)を参照してください。
+- *whatap.conf*ファイル設定の詳細は[次の文書](agent-dbx-settings)を参照してください。
 
 - CUBRID環境の_databases.txt_ファイルの詳細は[次のリンク](https://www.cubrid.org/manual/ko/11.0/admin/db_manage.html#databases-txt)を参照してください。
 
@@ -83,7 +83,7 @@ db_port=1433
 
 **SSL認証問題が発生する場合**
 
-SSL認証に関する問題が発生したら、*whatap.con*ファイルに次のオプションを設定します。
+SSL認証に関する問題が発生したら、*whatap.conf*ファイルに次のオプションを設定します。
 
 ```ini title="whatap.conf"
 connect_option=encrypt=true;trustServerCertificate=true

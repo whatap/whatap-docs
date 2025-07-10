@@ -20,17 +20,17 @@ keywords:
 
 1. AWS Lambda Functionコンソールで**WhaTap Forwarder**を選択します。
 
-2. ***Configuration***タブの***Permissions***メニューから***Execution role***を確認してから選択を行い、AWS IAMコンソールに移動してください。
+2. **_Configuration_**タブの**_Permissions_**メニューから**_Execution role_**を確認してから選択を行い、AWS IAMコンソールに移動してください。
 
    ![Lambda実行ロール](/img/whatap-forwarder-vpc-lambda.png)
 
-3. IAMコンソール***Permissions***タブの***Permissions policies***メニューに移動してください。 
+3. IAMコンソール**_Permissions_**タブの**_Permissions policies_**メニューに移動してください。 
 
-4. ポリシー一覧から***forwarderpolicy***を選択して、ポリシー編集画面に移動してください。
+4. ポリシー一覧から**_forwarderpolicy_**を選択して、ポリシー編集画面に移動してください。
 
    ![IAMコンソール](/img/whatap-forwarder-vpc-aws-iam.png)
 
-5. ***JSON***タブを選択し、次のポリシーをコピーして貼り付けてください。 このポリシーは、ENI を作成、定義、および削除します。
+5. **_JSON_**タブを選択し、次のポリシーをコピーして貼り付けてください。 このポリシーは、ENI を作成、定義、および削除します。
 
 ```json title='IAM Policy'
 
@@ -76,11 +76,11 @@ keywords:
 
 1. AWS Lambda Functionコンソールで**WhaTap Forwarder**を選択します。
 
-2. ***Configuration***タブの***VPC***メニューから***Edit***ボタンを選択して、VPC編集画面に移動してください。
+2. **_Configuration_**タブの**_VPC_**メニューから**_Edit_**ボタンを選択して、VPC編集画面に移動してください。
 
    ![VPC編集](/img/whatap-forwarder-vpc-edit.png)
 
-3. 次を参照して***VPC***と***Subnets***及び***Security groups***指定後、***Save***ボタンを選択して保存してください。
+3. 次を参照して**_VPC_**と**_Subnets_**及び**_Security groups_**指定後、**_Save_**ボタンを選択して保存してください。
 
    ![サブネットとセキュリティグループ](/img/whatap-forwarder-vpc-sg.png)
 

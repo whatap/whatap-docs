@@ -1,0 +1,73 @@
+---
+id: dashboard-gpu
+title: GPUダッシュボード
+description: ノード - GPU（MIG）- Pod 間の接続関係を追跡できる、Kubernetes視点のGPUダッシュボードです。
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - GPUダッシュボード
+---
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="dashboard" className="uitext" /> &gt; **GPUダッシュボード**
+
+ノード - GPU（MIG）- Pod 間の接続関係を追跡できる、Kubernetes視点の**GPUダッシュボード**です。
+
+- ノード - GPU（MIG）- Pod 間のマッピングを視覚的に提供し、GPUリソースの現状を簡単に把握できます。
+
+- 使用率・温度・メモリ基準のTop5トレンドを通じて、リソースの過剰使用や偏りを素早く認識できます。
+
+- Pendingや未使用GPUなどの主要な状態を表示し、割り当て漏れや使用の偏りといった異常の兆候を一目で識別できます。
+
+### 権限および条件
+
+- **対応環境**：Kubernetesクラスタプロジェクト
+
+- **エージェントバージョン**：Kubernetesエージェント バージョン1.8.7以上
+
+- **Open Agentのインストールが必要**
+
+## 基本画面
+
+クラスター内のGPUリソース状態と活用状況を一目で把握できる、可視化されたダッシュボードです。 
+
+<ImgLang img='gpu-dashboard-main.png' desc='GPU dashboard' />
+
+### GPUリソース状態サマリ
+
+照会終了時点から直近5分間に収集されたGPU情報（割り当てられたノード、Pod、GPUの状態別の数）を、4つのウィジェットで要約表示します。
+
+### GPU Map
+
+照会時点で収集されたデバイスをマップチャートで確認できます。 
+
+- 物理デバイスは「P」、MIGインスタンスは「M」ラベルで表示されます。
+
+- ノード／物理デバイス基準でグループ化が可能で、ステータスまたは使用率に基づく色分けオプションを選択できます。
+
+### 使用量
+
+照会終了時点から1分間の全クラスタのVRAMサイズおよび使用量、デバイスごとの平均GPU使用率、VRAM使用率を確認できます。
+
+### GPU Performance Summary(Top 5)
+
+照会範囲内の物理デバイスごとの主なパフォーマンス指標の推移を確認できます。
+
+- Utilization (%)
+
+- VRAM Usage (MiB)
+
+- Temperature (℃)
+
+- SM Active (%)
+
+### GPU / ノード / Pod 一覧
+
+GPU一覧、ノード一覧、Pod一覧を確認できます。 ノード一覧とPod一覧はGPU使用率の上位5件のみ表示され、GPU一覧には照会されたすべてのGPUが表示されます。 表示される情報は照会時点から1分間収集されたGPUデータに基づきます。
+
+<ImgLang img='gpu-top5-list.png' desc='GPU top5 list' />
+
+## 詳細を確認
+
+GPUマップまたはGPU一覧の左側の詳細アイコンをクリックすると、選択したGPUの関連図とメトリクス推移を確認できます。
+
+<ImgLang img='gpu-detail-relation.png' desc='GPU dashboard details' />

@@ -8,35 +8,36 @@ displayed_sidebar: releaseSidebar
 
 2025年06月18日
 
-<Status priority='1'>New</Status> *whatap.conf*にメトリクスカテゴリ`app_context_stat`オプションを追加
+<Status priority='1'>New</Status> *whatap.conf*でメトリクスカテゴリ`app_context_stat`オプションを追加
     
     * **app_context_enabled** <span class='type'>Boolean</span>
+        * `false`: 既定値
+        * `true`: `app_context_stat`収集機能の全体有効化
     
-        * `false`: デフォルト値
-        * `true`: `app_context_stat`の収集機能を全体的に有効化
-
     * **app_context_parser**
 
-        * `default, prefix, match`のいずれかを使用
-        * `default`: デフォルトパーサー（最初のパスセグメントを抽出）
-        * `prefix`: 接頭辞マッチングパーサー（最も柔軟）
-        * `match`: 完全一致パーサー（正確に一致するもののみ）
-    
-    * **app_context_parser_reset** <span class='type'>Number</span>
+```
+    * `default`, `prefix`, `match`のいずれかを使用
+    * `default`: デフォルトパーサー（最初のパスセグメントを抽出）
+    * `prefix`: プレフィックスマッチパーサー（最も柔軟）
+    * `match`: 完全一致のマッチパーサー（完全に一致するパスのみを対象とします）
 
-        * パーサーの内部キャッシュと設定を強制的にリセットするカウンター
-        * `0`: デフォルト値
-    
-    * **app_context_path_depth** <span class='type'>Number</span>
+**app_context_parser_reset** <span class='type'>Number</span>
 
-        * URLから抽出するパスセグメントの深さを指定 (defaultパーサーのみ対応)
-        * `1`: デフォルト値
-    
-    * **app_context_path_set** <span class='type'>String</span>
+    * パーサーの内部キャッシュと設定を強制的にリセットするカウンター
+    * `0`: デフォルト値
 
-        * デフォルト値なし
-        * 監視対象のパスとその名前を定義するマッピング設定 (`,`で区切って指定)
-            > 例: `name1@url1,name2@url2,url3,name4@url4`
+**app_context_path_depth** <span class='type'>Number</span>
+
+    * URLから抽出するパスセグメントの深さを指定（defaultパーサーでのみ使用）
+    * `1`: デフォルト値
+
+* **app_context_path_set** <span class='type'>String</span>
+
+    * デフォルト値なし
+    * モニタリング対象のパスとその名称を定義するマッピング設定（`,`で区切って使用）
+        > 例: `name1@url1,name2@url2,url3,name4@url4`
+```
 
 :::note
 

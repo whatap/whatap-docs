@@ -16,13 +16,13 @@ keywords:
 
 - 画面で照会したい <Cmdname sid="date" className="uitext" />と <Cmdname sid="instance" className="uitext" />、<Cmdname sid="TTL06346" className="uitext" />、<Cmdname sid="TTL06345" className="uitext" />を設定した上で![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。 選択した条件に応じた結果がテーブルに表示されます。
 
-- 照会リストで***tablename***または***indexname***カラム項目を選択すると **column**、**index**構成が確認できる***Object detail***ウィンドウが表示されます。
+- 照会リストで**_tablename_**または**_indexname_**カラム項目を選択すると **column**、**index**構成が確認できる**_Object detail_**ウィンドウが表示されます。
 
   ![Object detail](/img/release/release-db-object-details-topobject.png)
 
   :::note
 
-  ***Object detail***機能は、DBXエージェントの1.6.15バージョン以降に対応します。 データベース権限に関する設定は、[次の文書](install-agent#uid)を参考にしてください。
+  **_Object detail_**機能は、DBXエージェントの1.6.15バージョン以降に対応します。 データベース権限に関する設定は、[次の文書](install-agent#uid)を参考にしてください。
 
   :::
 
@@ -44,7 +44,7 @@ keywords:
 
 **Bloating**は実際に使用されていないtupleが増加してオブジェクトサイズが大きくなる現象です。 
 
-エージェント設定(*whatap.con*)の`table[index]_bloat_ratio[bytes]`に設定された収集基準よりも大きな値を持つテーブルとインデックスをリストに表示します。 該当するオブジェクトがないと、データが照会されない場合があります。
+エージェント設定(*whatap.conf*)の`table[index]_bloat_ratio[bytes]`に設定された収集基準よりも大きな値を持つテーブルとインデックスをリストに表示します。 該当するオブジェクトがないと、データが照会されない場合があります。
 
 :::tip
 
@@ -226,7 +226,7 @@ Dead tupleを減らすためにはVacuum実行を検討してください。 詳
 
 ## エージェント設定{#set-agent-topObject}
 
-次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 *whatap.con*ファイルに必要なオプションを設定してください。
+次は<Cmdname sid="dbObjectInfo" />に関する情報を照会するためのエージェント設定です。 *whatap.conf*ファイルに必要なオプションを設定してください。
 
 import Dbpgtopobjectagentsetting from "../common-items/_db-pg-top-object-agent-setting.mdx";
 

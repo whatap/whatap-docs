@@ -6,6 +6,34 @@ pagination_next: release-notes/service/service-2_17_x
 displayed_sidebar: releaseSidebar
 ---
 
+## Service 2.17.5
+
+2025年06月18日 
+
+<div class='indentTab'>
+
+### `Server`
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code> イベント設定を修正する際、必須値の検証メッセージが表示されない問題を修正しました。
+
+</div>
+
+## Service 2.17.4
+
+2025年06月18日 
+
+<div class='indentTab'>
+
+### `Application`
+
+<Status priority='0'>Fixed</Status> **Java** 連携プロジェクトのパフォーマンス指標にて、チャートが無限にローディングされるバグを修正しました。
+
+### `Server`
+
+<Status priority='1'>Changed</Status> <Cmdname sid="side_eventSetting" className="uitext" /> <code class="newfunc">New</code> イベント条件を作成する際に、必須入力項目の検証を追加しました。
+
+</div>
+
 ## Service 2.17.1
 
 2023年06月04日 
@@ -64,11 +92,11 @@ displayed_sidebar: releaseSidebar
 
 - <Status priority='0'>Fixed</Status> <Cmdname sid="side_metricsChart" className="uitext" /> <code class="oldfunc">Old</code>ウィジェットのドラッグ後、新しいウィジェットを追加すると、タイムセレクタ設定値が維持されるように修正
 
-- <Status priority='0'>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" /> ***管理***ウィジェット内のプロジェクトタグがクリックできない現象を修正
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" /> **管理**ウィジェット内のプロジェクトタグがクリックできない現象を修正
 
-- <Status priority='0'>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" />ウィジェットの***前の時間と比較***機能バグを修正
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_flexboard" className="uitext" />ウィジェットの**前の時間と比較**機能バグを修正
 
-- <Status priority='0'>Fixed</Status>画面右上の***プロフィール***アイコン > ***WhaTapモニタリング情報***メニューをクリックすると組織情報が消えるバグを修正
+- <Status priority='0'>Fixed</Status>画面右上の**プロフィール**アイコン > **WhaTapモニタリング情報**メニューをクリックすると組織情報が消えるバグを修正
 
 - <Status priority='0'>Fixed</Status>シリーズチャートの個別時間設定が適用されるように修正
 
@@ -80,7 +108,7 @@ displayed_sidebar: releaseSidebar
 
 - <Status priority='1'>Feature</Status> <Cmdname sid="TTL06377" className="uitext" /> <Cmdname sid="BTN07120" className="uitext" />クライアントのIP情報表示オプションを追加
 
-- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06209" className="uitext" /> > ***タイムライン***、<Cmdname sid="TTL06126" className="uitext" />メッセージステップ中にエラー属性を表示
+- <Status priority='1'>Feature</Status> <Cmdname sid="TTL06209" className="uitext" /> > **タイムライン**、<Cmdname sid="TTL06126" className="uitext" /> メッセージステップでエラー属性を表示
 
 - <Status priority='1'>Feature</Status> <Cmdname sid="transaction_map" className="uitext" />最初のデータ照会時にテーブル領域ローディング表示、データがなければデータリクエスト時間に縦線ローディングを表示
 
@@ -100,13 +128,13 @@ displayed_sidebar: releaseSidebar
 
 - <Status priority='0'>Fixed</Status> <Cmdname sid="transaction_map" className="uitext" />リアルタイムモードで最初のデータがなければ全体データが表示されない問題を修正
 
-- <Status priority='1'>Deprecated</Status> <Cmdname sid="side_topology" className="uitext" />, ***カスタムヒートマップ***のサービス終了(`2025/12/31`)
+- <Status priority='1'>Deprecated</Status> <Cmdname sid="side_topology" className="uitext" />、**カスタムヒートマップ** サービス終了（`2025/12/31`）
 
 ---
 
 ### `Server`
 
-- <Status priority='1'>Feature</Status> <Cmdname sid="eventNoti" className="uitext" /> &gt; ***Webhook JSON***変数を追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="eventNoti" className="uitext" /> &gt; **Webhook JSON** 変数を追加
 
 - <Status priority='1'>Feature</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" />ページコンテンツドローワーで提供
 
@@ -120,9 +148,9 @@ displayed_sidebar: releaseSidebar
 
 - <Status priority='1'>Changed</Status> <Cmdname sid="side_lab" className="uitext" /> &gt; <Cmdname sid="side_serverMetricsExplorer" className="uitext" />指標リストのソート基準を改善(事前定義された順序適用)
 
-- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; ***グループ要約表示*** &gt; ***進行中のイベント現況***タブの<Cmdname sid="TTL08086" className="uitext" />コラムにサーバー名コラム表示エラーの修正とエージェント名コラムの追加
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; **グループサマリー表示** &gt; **進行中イベントの状況** タブの <Cmdname sid="TTL08086" className="uitext" /> カラムで、サーバー名カラムの表示エラーを修正し、エージェント名カラムを追加
 
-- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />メニュー&gt; ***詳細を見る***画面で***進行中のイベント現況***タブの<Cmdname sid="TTL08086" className="uitext" />コラムのサーバー名のコラム表示エラーの修正とエージェント名コラムの追加
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" />メニュー&gt; **詳細を見る**画面で**進行中のイベント現況**タブの<Cmdname sid="TTL08086" className="uitext" />コラムのサーバー名のコラム表示エラーの修正とエージェント名コラムの追加
 
 - <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="column_settings" className="uitext" />空白を含む場合、重複登録を防止
 
@@ -136,7 +164,7 @@ displayed_sidebar: releaseSidebar
 
 ### `Kubernetes`
 
-- <Status priority='1'>Changed</Status> ***ワークロード*** > ***Deploymentリスト***新規指標を追加(Kubernetesエージェントバージョン1.8.7)
+- <Status priority='1'>Changed</Status> **ワークロード** > **Deploymentリスト**新規指標を追加(Kubernetesエージェントバージョン1.8.7)
 
   - **除去コラム**
 
@@ -154,7 +182,7 @@ displayed_sidebar: releaseSidebar
 
       :::
 
-- <Status priority='1'>Changed</Status> ***ネームスペース***プロジェクト名を修正できるように変更
+- <Status priority='1'>Changed</Status> **ネームスペース**プロジェクト名を修正できるように変更
 
 ---
 
@@ -177,7 +205,7 @@ displayed_sidebar: releaseSidebar
 
   - <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />画面のインスタンスタグ
 
-  - <Cmdname sid="side_management" className="uitext" /> &gt; ***エージェントリスト***のRoleコラム
+  - <Cmdname sid="side_management" className="uitext" /> &gt; **エージェントリスト**のRoleコラム
 
 - <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>画面を改善
 
@@ -210,7 +238,7 @@ displayed_sidebar: releaseSidebar
 
   - <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_dbLockTree" className="uitext" />
 
-- <Status priority='1'>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; ***テーブルサイズ増減***の***テーブル別の容量詳細***テーブルに増減量コラムを追加
+- <Status priority='1'>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; **テーブルサイズ増減**の**テーブル別の容量詳細**テーブルに増減量コラムを追加
 
 - <Status priority='1'>Changed</Status> <Cmdname sid="management" className="uitext" /> > <Cmdname sid="agent_installation" className="uitext" /> MySQL 8 以降の使用時にロック照会権限の追加を案内
 
@@ -230,16 +258,16 @@ displayed_sidebar: releaseSidebar
 
 ### `Cloud`
 
-<Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; ***アプリケーションヒートマップ***、***マルチサービスヒートマップ***ドラッグでプロファイルデータ照会時、最大照会期間の超過時に通知文を表示
+<Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; **アプリケーションヒートマップ**、**マルチサービスヒートマップ**ドラッグでプロファイルデータ照会時、最大照会期間の超過時に通知文を表示
 
 ---
 
 ### `Log`
 
-- <Status priority='1'>Changed</Status> <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> &gt; ***フィルターお気に入り***お気に入りの追加/修正/削除時のトーストメッセージ表示及びお気に入りの名前の空白入力を防止
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> &gt; **フィルターお気に入り**お気に入りの追加/修正/削除時のトーストメッセージ表示及びお気に入りの名前の空白入力を防止
 
-- <Status priority='1'>Changed</Status> <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> &gt; ***フィルターお気に入り***お気に入りがない状態で***個人フィルタ***お気に入り追加時の無限ローディング問題を修正
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_logTail" className="uitext" />, <Cmdname sid="side_logSearch" className="uitext" /> &gt; **フィルターお気に入り**お気に入りがない状態で**個人フィルタ**お気に入り追加時の無限ローディング問題を修正
 
-- <Status priority='1'>Changed</Status> <Cmdname sid="ITM08349" className="uitext" /> &gt; ***タグ管理***デフォルトでは、ログリストにあるすべてのタグを表示
+- <Status priority='1'>Changed</Status> <Cmdname sid="ITM08349" className="uitext" /> &gt; **タグ管理**デフォルトでは、ログリストにあるすべてのタグを表示
 
 </div>

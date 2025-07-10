@@ -7,11 +7,11 @@ keywords:
   - Java
 ---
 
-Javaアプリケーションでログを収集するには、次の３つのステップをすべて完了する必要があります。
+Javaアプリケーションでログを収集するための設定方法を案内します。
 
 ## エージェントのアップデート
 
-Javaエージェント2.1.1バージョン以降で可能です。アップデート方法は[次の文書](../java/update-agent)を参照して下さい。
+Javaエージェントのバージョン2.1.1以降で利用可能です。アップデート方法については、[次のドキュメント](../java/update-agent)を参照してください。
 
 ## エージェント設定の確認
 
@@ -25,15 +25,11 @@ import Logagentcheck from "../common-items/_import_log-agent-setting-check.mdx";
 
   既定値`false`
 
-  Logライブラリをhookingしてログモニタリングを有効にします。  
+  Logライブラリをフックして、ログモニタリングを有効化します。  
 
   :::caution
 
-  アプリケーションを実行する前に、*whatap.con*オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。
-
-  :::
-
-  :::note
+  アプリケーションを実行する前に、*whatap.conf*オプションを有効にして、その後にログモニタリングのOn/Offを`logsink_enabled`設定で動的に制御できます。アプリケーションを起動する前に`logsink_enabled`オプションを`true`に設定する場合、このオプションを個別に設定しなくてもログモニタリングが可能です。  
 
   今後ログモニタリングを活用する可能性がある場合は、事前にこのオプションを設定することをお勧めします。
 
@@ -63,7 +59,7 @@ import Logagentcheck from "../common-items/_import_log-agent-setting-check.mdx";
 
   :::caution
 
-  アプリケーションが起動する前に*whatap.con*に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
+  アプリケーションが起動する前に*whatap.conf*に`hooklog_enabled`オプションが設定されている場合、このオプションを使用すると、ログモニタリングのOn/Offを動的に制御することができます。
 
   :::
 
@@ -75,9 +71,9 @@ import Logagentcheck from "../common-items/_import_log-agent-setting-check.mdx";
 
 ## ログモニタリングの活性化
 
-ホーム画面 > プロジェクト選択 > ***ログ*** > ***ログ設定***
+**ホーム画面 > プロジェクト選択 > **ログ** > **ログ設定\*\*
 
-***ログモニタリングを開始する***セクションの***ログモニタリングを有効にする***タブのトグルボタンで、WhaTapログモニタリングの有効または無効にできます。
+**ログモニタリングを開始する** タブの **2.** <Cmdname sid="use_log_monitoring" className="uitext" /> で、WhaTapログモニタリングを有効化または無効化できます。
 
 import Logjavastart from "../common-items/_log-java-start.mdx";
 

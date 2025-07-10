@@ -13,7 +13,7 @@ Javaアプリケーション環境で発生するログデータをエージェ�
 
 ## パスおよび名前設定
 
-エージェントログのパスと名前は、*whatap.con*ファイルで設定できます。`log_root`の既定値として_`${WHATAP_HOME}`/logs_パスを使用します。
+エージェントログのパスと名前は、*whatap.conf*ファイルで設定できます。`log_root`の既定値として_`${WHATAP_HOME}`/logs_パスを使用します。
 
 ```ini title='whatap.conf'
 log_root=whatap/logs
@@ -22,7 +22,7 @@ log_name=whatap
 
 ## ログ管理オプション
 
-*whatap.con*ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
+*whatap.conf*ファイルにログ関連オプションを作成し、ログ内容を管理することができます。
 
 ```ini title='whatap.conf'
 watchlog_enabled=true
@@ -81,7 +81,7 @@ log_keep_days=7
 
   既定値 `true`
 
-  エージェントログファイルを日付ごとに保存する機能を有効にします。ログファイル名は、*whatap-`yyyymmdd`.log*形式で保存します。値が`false`の場合、ログファイル名は*whatap.log*形式で保存されます。
+  エージェントログファイルを日付ごとに保存する機能を有効にします。ログファイル名は、*whatap-`YYYYMMDD`.log*形式で保存します。値が`false`の場合、ログファイル名は*whatap.log*形式で保存されます。
 
 - **log_keep_days** <span class='type'>Int</span>
 

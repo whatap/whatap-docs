@@ -1,0 +1,383 @@
+---
+id: install-auto-application-agent
+title: APM自動インストール構成
+description: APMの自動インストール構成ガイドです。
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - Whatap Operator
+  - アプリケーションの自動インストール
+toc_max_heading_level: 3
+---
+
+WhatapOperator をインストールした後、ユーザーは `WhatapAgent` CR（カスタムリソース）を定義することで、各 Kubernetes ポッドやネームスペースに APM を自動注入できます。 
+
+## インストール前の要件
+
+- Kubernetes 環境
+- Helm 3.2 以上
+- Whatap ライセンスキー（必須）
+- Whatap収集サーバー情報（IPアドレスとポート）
+- whatap-operator([オペレーターインストール](install-whatap-operator) ガイド)
+
+## CRの基本構成
+
+以下はCRを構成した基本サンプルです。 追加の設定が必要な場合 [例. APM の設定方法](install-auto-application-agent#example_set_up_apm)を参照してください。
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: default                                # リソース名
+  namespace: whatap-monitoring                 # インストール対象のネームスペース
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: "java-sample"                # APM 対象名（識別用）
+            enabled: "true"                    # 自動注入の有効化
+            language: "java"                   # 言語：java、python、nodejs など
+            whatapApmVersions:
+              java: "2.2.58"                   # 該当言語の APM エージェントバージョン
+            namespaceSelector:
+              matchNames:
+                - default                      # APM 注入対象のネームスペース
+            podSelector:
+              matchLabels:
+                app: hello-world               # APM 注入対象の Pod ラベル
+            config:
+              mode: default                    # デフォルト設定または configMap 参照可能
+```
+
+### 例題. APM設定方法 {#example_set_up_apm}
+
+#### 例題１. 特定のネームスペースのPodにAPMを自動注入
+
+- `backend`ネームスペースに存在し、`app=shop`ラベルを持つPodにJava APMを自動的に注入します。
+
+- WhaTap APMは現在、`latest` Javaバージョンのみをサポートしています。 （他の言語は今後サポート予定）
+
+- 設定情報はConfigMapRefで渡します。
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+  namespace: whatap-monitoring
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: shop-api
+            enabled: "true"
+            language: "java"
+            whatapApmVersions:
+              java: "latest"
+            namespaceSelector:
+              matchNames:
+                - backend
+            podSelector:
+              matchLabels:
+                app: shop
+            config:
+              mode: configMapRef
+              configMapRef:
+                name: shop-api-config
+                namespace: backend
+
+```
+
+```yaml title='shop-api-config.yaml'
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shop-api-config
+  namespace: backend
+data:
+  whatap.conf: |
+    mtrace_enabled=true
+    mtrace_basetime=0
+    trace_normalize_enabled=true
+```
+
+#### 例題２. 異なるConfigMapを使用して異なるワークロードをモニタリング
+
+`system`ネームスペースの`app=router`Podと、`backend`ネームスペースの`app=shop`Podに、それぞれ異なるConfigMapRef設定（`request-router-config`、`shop-api-config`）を注入します。
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+  namespace: whatap-monitoring
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: request-router
+            enabled: "true"
+            language: "java"
+            whatapApmVersions:
+              java: "latest"
+            namespaceSelector:
+              matchNames:
+                - system
+            podSelector:
+              matchLabels:
+                app: router
+            config:
+              mode: configMap
+              configMapRef:
+                name: request-router-config
+                namespace: system
+          - name: shop-api
+            enabled: "true"
+            language: "java"
+            whatapApmVersions:
+              java: "latest"
+            namespaceSelector:
+              matchNames:
+                - backend
+            podSelector:
+              matchLabels:
+                app: shop
+            config:
+              mode: configMapRef
+              configMapRef:
+                name: shop-api-config
+                namespace: backend
+
+```
+
+```yaml title='shop-api-config.yaml'
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shop-api-config
+  namespace: backend
+data:
+  whatap.conf: |
+    mtrace_enabled=true
+    mtrace_basetime=0
+    trace_normalize_enabled=true
+```
+
+```yaml title='request-router-config.yaml'
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: request-router-config
+  namespace: backend
+data:
+  whatap.conf: |
+    mtrace_enabled=false
+    mtrace_basetime=100
+    trace_normalize_enabled=true
+```
+
+### フィールド
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: <name>
+            enabled: <true | false>
+            language: <java | python | nodejs>
+            whatapApmVersions:
+              <language> : <version>
+            namespaceSelector:
+              matchNames:
+                - <namespace>
+            podSelector:
+              matchLabels:
+                <key>: <values>
+            config:
+              mode: default
+```
+
+| フィールド名              | 説明                                                             |
+| ------------------- | -------------------------------------------------------------- |
+| `name`              | ターゲット名, モニタリングには影響せず、識別用です。                                    |
+| `enabled`           | `"true"` の場合、該当ターゲットにAPMエージェントが自動注入されます。                       |
+| `language`          | ターゲットアプリケーションの言語。 `java`、`python`、`nodejs` など                  |
+| `whatapApmVersions` | 言語別のWhaTap APMエージェントのバージョンを指定                                  |
+| `namespaceSelector` | APM自動注入対象のネームスペース一覧                                            |
+| `podSelector`       | APM自動注入対象のPodをラベルベースで選択                                        |
+| `config.mode`       | デフォルトは `"default"`、または ConfigMap参照方式 `"configMapRef"` を使用可能です。 |
+
+### **セレクタ（Selector）**
+
+WhatapAgentはKubernetes標準のラベルセレクタをサポートします。
+
+#### namespaceSelector
+
+| フィールド名             | 説明                            |
+| ------------------ | ----------------------------- |
+| `matchNames`       | 対象のネームスペース名のリスト               |
+| `matchLabels`      | キーと値のペアでネームスペースのラベルを選択（AND条件） |
+| `matchExpressions` | 高度なラベル選択式（AND条件）              |
+
+#### podSelector
+
+| フィールド名             | 説明                        |
+| ------------------ | ------------------------- |
+| `matchLabels`      | キーと値のペアでPodのラベルを選択（AND条件） |
+| `matchExpressions` | 高度なラベル選択式（AND条件）          |
+
+#### matchExpressions演算子
+
+| オペレーター         | 説明                                          |
+| -------------- | ------------------------------------------- |
+| `In`           | ラベルの値が指定された値のリストに含まれている必要があります。             |
+| `NotIn`        | ラベルの値が指定された値のリストに含まれていない必要があります。            |
+| `Exists`       | 指定されたキーのラベルが存在している必要があります（`values`フィールドは空）  |
+| `DoesNotExist` | 指定されたキーのラベルが存在していない必要があります（`values`フィールドは空） |
+
+#### K8sAgent 設定
+
+| フィールド名                        | 説明                                  |
+| ----------------------------- | ----------------------------------- |
+| `agentImageVersion`           | エージェントイメージのバージョン（デフォルト: `"latest"`） |
+| `masterAgent.enabled`         | マスターエージェントの有効化可否                    |
+| `masterAgent.resources`       | マスターエージェントのリソース要求および制限の設定           |
+| `masterAgent.envs`            | マスターエージェントに追加する環境変数のリスト             |
+| `nodeAgent.enabled`           | ノードエージェントの有効化可否                     |
+| `nodeAgent.resources`         | ノードエージェントのリソース要求および制限の設定            |
+| `nodeAgent.envs`              | ノードエージェントに追加する環境変数のリスト              |
+| `gpuMonitoring.enabled`       | GPUモニタリングの有効化可否                     |
+| `apiserverMonitoring.enabled` | API Serverモニタリングの有効化可否              |
+| `etcdMonitoring.enabled`      | etcdモニタリングの有効化可否                    |
+| `schedulerMonitoring.enabled` | schedulerモニタリングの有効化可否               |
+
+```yaml
+# 複数条件を組み合わせたセレクターの例
+namespaceSelector:
+  matchNames:
+    - production
+    - staging
+  matchLabels:
+    environment: production
+  matchExpressions:
+    - {key: tier, operator: In, values: [frontend, backend]}
+    - {key: restricted, operator: DoesNotExist}
+
+podSelector:
+  matchLabels:
+    app: web-service
+    version: v2
+  matchExpressions:
+    - {key: tier, operator: In, values: [backend, backend2, backend3]}
+    - {key: environment, operator: NotIn, values: [dev, test]}
+    - {key: ready, operator: Exists}
+```
+
+- namespaceSelector の詳細説明
+
+    ネームスペースセレクターは、次の3つの方法で対象ネームスペースをフィルタリングします。
+
+  1. **matchNames**: ネームスペース名を直接指定して選択
+
+     - `production` または `staging` という名前のネームスペースのみを選択します。
+
+     - 名前ベースのフィルタリングは最も基本的な方法です。
+
+  2. **matchLabels**: キーと値のペアでラベル一致を確認（AND条件）
+
+     - `environment=production` ラベルを持つネームスペースのみを選択します。
+
+     - すべてのキーと値のペアが一致する必要があります（複数のラベルがある場合はすべてを満たす必要があります）。
+
+  3. **matchExpressions**: 複雑な条件を指定する高度な表現式（AND条件）
+
+     - `tier` ラベルが `frontend` または `backend` の値を持つ必要があります（`In` 演算子）
+
+     - `restricted` ラベルが存在してはいけません（`DoesNotExist` 演算子）
+
+     - すべての表現式が真である必要があります（AND条件）
+
+- podSelector の詳細説明
+
+    Podセレクターは、次の2つの方法で対象Podをフィルタリングします。
+
+  1. **matchLabels**: キーと値のペアでラベル一致を確認（AND条件）
+
+     - `app=web-service` および `version=v2` のラベルをすべて持つPodのみを選択します。
+
+     - 指定されたすべてのラベルが正確に一致する必要があります。
+
+  2. **matchExpressions**: 複雑な条件を指定する高度な表現式（AND条件）
+
+     - `tier` ラベルが `backend`、`backend2`、`backend3` のいずれかである必要があります（`In` 演算子）
+
+     - `environment` ラベルが `dev` または `test` であってはならない（`NotIn` 演算子）
+
+     - `ready` ラベルが存在している必要がある（`Exists` 演算子）
+
+     - すべての表現式が真である必要があります（AND条件）
+
+### テスト
+
+APM 自動インジェクションのテストが目的の場合は、以下の yaml を使用してインストールします。
+
+````
+```yaml title='test-values.yaml'
+### テスト目的のサンプル Java アプリケーション
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+  labels:
+    app: hello-world
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-world
+        image: whatap/base_java:0.0.13   # またはユーザーアプリケーションイメージ
+        ports:
+        - containerPort: 8080
+--- 
+
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: default                                # リソース名
+  namespace: whatap-monitoring                 # インストール対象のネームスペース
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: "java-sample"                # APM 対象名（識別用）
+            enabled: "true"                    # 自動インジェクション有効化
+            language: "java"                   # 言語：java, python, nodejs など
+            whatapApmVersions:
+              java: "latest"                   # 対応言語の APM エージェントバージョン
+            namespaceSelector:
+              matchNames:
+                - default                      # APM インジェクション対象のネームスペース
+            podSelector:
+              matchLabels:
+                app: hello-world               # APM インジェクション対象の Pod ラベル
+            config:
+              mode: default                    # デフォルト設定または configMap を参照
+```
+````

@@ -10,9 +10,9 @@ displayed_sidebar: releaseSidebar
 
 - <Status>Change</Status>エージェント設定方法の変更
 
-  - プロセス単位で*whatap.con*ファイルを設定するように変更されました。
+  - プロセス単位で*whatap.conf*ファイルを設定するように変更されました。
 
-  - プロセス実行前に*whatap.con*ファイルを事前に作成する必要があります。
+  - プロセス実行前に*whatap.conf*ファイルを事前に作成する必要があります。
 
   - 既存設定に使用された_/usr/whatap/agent/whatap.conf_ファイルは、whatap-agentサービスのみ使用します。
 
@@ -38,7 +38,7 @@ displayed_sidebar: releaseSidebar
 
   既定値として、IPは127.0.0.1、ポート番号は6600を使用します。 変更するには、ユーザーアプリケーションとwhatap-agentサービス設定ファイルを変更してください。 再起動後に適用されます。
 
-  1. ユーザーアプリケーションの*whatap.con*ファイル変更
+  1. ユーザーアプリケーションの*whatap.conf*ファイル変更
 
   ```ini title='whatap.conf'
   # ホスト変更
@@ -47,7 +47,7 @@ displayed_sidebar: releaseSidebar
   net_ipc_port=6601
   ```
 
-  1. whatap-agentサービスの*whatap.con*ファイル変更
+  1. whatap-agentサービスの*whatap.conf*ファイル変更
 
   ```bash
   vi /usr/whatap/agent/whatap.conf
@@ -74,7 +74,7 @@ displayed_sidebar: releaseSidebar
 
   - `{cmd_full}`：実行コマンドのすべての行をハッシュ値として処理します。 実行args全体です。
 
-  - 同じプロセスと引数を使用する場合、エージェント名が重複する可能性があります。 *whatap.con*ファイルに`app_name`オプションをユーザーが設定できます。 詳細は、[次の文書](../../golang/install-agent#duplicate_appname)を参照してください。 設定を完了した後は、アプリケーションを再起動する必要があります。
+  - 同じプロセスと引数を使用する場合、エージェント名が重複する可能性があります。 *whatap.conf*ファイルに`app_name`オプションをユーザーが設定できます。 詳細は、[次の文書](../../golang/install-agent#duplicate_appname)を参照してください。 設定を完了した後は、アプリケーションを再起動する必要があります。
 
   :::
 

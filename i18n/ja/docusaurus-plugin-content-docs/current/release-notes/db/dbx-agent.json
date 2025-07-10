@@ -164,7 +164,7 @@
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のカテゴリに<code>!rectype</code>、<code>@id</code>フィールドを追加</p>",
         "category": "Oracle",
-        "details": "<blockquote>\n<p><code>db_oracle_active_session</code>, <code>db_oracle_xos_disk_usage</code></p>\n</blockquote>"
+        "details": "<blockquote>\n<p><code>db_oracle_active_session</code>, <code>db_oracle*xos*disk_usage</code></p>\n</blockquote>"
       }
     ]
   },

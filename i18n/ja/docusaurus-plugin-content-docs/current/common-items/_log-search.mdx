@@ -102,23 +102,13 @@ import Logfilterexpressionscommons from "../common-items/_log-filter-expressions
 
 <ImgLang img='log-search-tag.png' desc='ログタグドロップダウンメニュー'/>
 
-- **コピー**
-
-- **検索**
-
-  <Cmdname sid="search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当のタグが含む('==')条件で入力されます。
-
-- **除外検索**
-
-  <Cmdname sid="exclusion_search" className="uitext" />オプションを選択すると<Cmdname sid="filter" className="uitext" />に該当のタグが除外('!=')条件で入力されます。
-
-- **隣接ログ**
-
-  <Cmdname sid="TTL06582" className="uitext" />オプションを選択すると<Cmdname sid="TTL06582" className="uitext" />詳細画面が表示されます。選択したログのサーバーを対象に、選択したログとその前後の時間帯のログを表示します。<Cmdname sid="time_selector" className="uitext" />ボタンをクリックして、隣接する時間帯のログを照会できます。基準になるログは、青色で表示されます。
-
-- **トランザクション情報**
-
-  ログに`@txid`や`@mtid`タグが含まれている場合は、トランザクション情報オプションをクリックすると、トランザクション情報の詳細画面で情報を確認できます。
+|                     ログタグオプションメニュー                     | 説明                                                                                                                                                    |
+| :---------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                        **コピー**                        | 該当するタグのログをコピーします。                                                                                                                                     |
+|      <Cmdname sid="search" className="uitext" />      | <Cmdname sid="filter" className="uitext" />には、該当のタグを含む（'=='）条件で入力されます。                                                                                |
+| <Cmdname sid="exclusion_search" className="uitext" /> | <Cmdname sid="filter" className="uitext" />には、該当のタグを除外する（'!='）条件で入力されます。                                                                              |
+|     <Cmdname sid="TTL06582" className="uitext" />     | <Cmdname sid="TTL06582" className="uitext" /> の詳細画面では、選択したログのサーバーを対象に、選択したログと隣接する時間帯のログを照会できます。時間を選択して、周辺の時間帯に発生したログを確認することも可能です。基準となるログは青い背景で表示されます。 |
+|                     **トランザクション情報**                    | ログに `@txid` や `@mtid` タグが含まれている場合は、**トランザクション情報** をクリックすると、**トランザクション情報** の詳細画面で内容を確認できます。                                                            |
 
 ## コンテンツハイライト {#content-highlight}
 

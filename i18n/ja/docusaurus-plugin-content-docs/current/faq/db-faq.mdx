@@ -86,9 +86,9 @@ grant select on '追加したdb' to whatap;
 
 ### インスタンスリストM、S、C基準
 
-> インスタンスリストで***M***、***S***、***C***の基準は何ですか?
+> インスタンスリストで**_M_**、**_S_**、**_C_**の基準は何ですか?
 
-それぞれ***M***aster、***S***lave、***C***lusterを意味します。Replicationで構築されたDBの場合に表示されます。Clusterは、MariaDBでgaleraソリューションで構成した場合に表示されます。 
+それぞれ**_M_**aster、**_S_**lave、**_C_**lusterを意味します。Replicationで構築されたDBの場合に表示されます。Clusterは、MariaDBでgaleraソリューションで構成した場合に表示されます。 
 
 ```sql
 -- Clusterの場合：WSREP_ONがONではなく、WSREP_CLUSTER_NAMEがgaleraの場合
@@ -105,7 +105,7 @@ show slave status ;
 
 ### インスタンスリストMが表示されない
 
-> インスタンスリストでMasterですが、***M***が表示されません。表示されないのはなぜですか？
+> インスタンスリストでMasterですが、**_M_**が表示されません。表示されないのはなぜですか？
 
 Replicationで権限がない場合、情報が表示されないことがあります。モニタリングアカウントの権限を確認してください。 
 

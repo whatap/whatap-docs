@@ -6,16 +6,16 @@ pagination_next: release-notes/java/java-2_2_60
 displayed_sidebar: releaseSidebar
 ---
 
-2025年6月9日
+2025年06月09日
 
-- <Status priority='1'>Changed</Status> OpenTelemetry のトレース用ヘッダキーをデフォルトで送信しないように変更
+- <Status priority='1'>Changed</Status> OpenTelemetry 連携用のトレースヘッダーキーをデフォルトで送信しないように修正
 
-    ```bash
-    # default: false
-    mtrace_traceparent_enabled=true
-    ```
+  ```bash
+  # default: false
+  mtrace_traceparent_enabled=true
+  ```
 
-- <Status priority='1'>Changed</Status> Spring Boot において `async-annotation` を使用する場合、別スレッドで動作する処理もデフォルトでトレースが連携されるように変更
+- <Status priority='1'>Changed</Status> Spring Bootで `async-annotation` を使用する場合、別スレッドの処理をデフォルトで連携トレースするように修正
 
 import DownloadJava from './_import_dl-java-agent.mdx';
 

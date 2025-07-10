@@ -1,3 +1,5 @@
+import ProcessColumns from "../common-items/_db-process-column.mdx";
+
 <Title hashid='column-info' level={props.level}>カラム情報ガイド</Title>
 
 <Tabs groupId="db-columns">
@@ -6,7 +8,6 @@
 
 | 項目                | 説明                                                                                                  |
 | ----------------- | --------------------------------------------------------------------------------------------------- |
-| `pid`             | プロセスID                                                                                              |
 | `db`              | データベース名                                                                                             |
 | `user`            | SQL実行アカウント                                                                                          |
 | `application`     | クライアントアプリケーション名                                                                                     |
@@ -35,36 +36,21 @@ WhaTapは、クライアントに関する情報をデフォルトで保存し�
 
 <TabItem value="locktree" label="Lock tree">
 
-| 項目                | 説明                                            |
-| ----------------- | --------------------------------------------- |
-| `holder_relation` | `holder`セッションがロックされているオブジェクト(テーブルまたはインデックス)   |
-| `holder_type`     | `holder`セッションの`type` (transaction id、tupleなど) |
-| `lock_mode`       | `holder_mode` (exclusive lock、shared lockなど)  |
-| `lock_request`    | `waiter_mode` (exclusive lock、shared lockなど)  |
-| `state`           | 各セッション(ベックエンドプロセス)の現在の状態                      |
-| `waiter_relation` | `waiter`セッションがロックされるのを待っているオブジェクト             |
-| `waiter_type`     | `waiter`セッションの`type` (transaction id、tupleなど) |
+| 項目                | 説明                                                                                                                                                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instance          | インスタンス（エージェント）名                                                                                                                                                                                                              |
+| pid               | セッションID                                                                                                                                                                                                                      |
+| lock_mode         | ホルダーセッションのロックモード<br />- RowExclusiveLock：INSERT、UPDATE、DELETE<br />- AccessExclusiveLock：DDL（ALTER、DROP、TRUNCATE など）によるロック<br />- AccessShareLock：SELECT 時に使用 ほとんどすべてのロックと共存可能<br />- ShareLock：LOCK TABLE ... IN SHARE MODE |
+| holder_relation   | ロックを保有しているセッションがアクセス中のテーブル名またはオブジェクト識別子                                                                                                                                                                                      |
+| waiter_type       | ロックがどの対象に対してかかっているかを示します<br />- relation：テーブルにかかっているロック<br /> tuple：特定の行（row）にかかっているロック<br /    >- transactionid：トランザクションにかかっているロック                                                                                          |
+| waiter_relation   | ロックを待機しているセッションがアクセス中のテーブル名またはオブジェクト識別子                                                                                                                                                                                      |
+| lock_request      | ロックを待機しているセッションのロックモード<br />lock_mode を参照                                                                                                                                                                                    |
 
 </TabItem>
 
 <TabItem value="process-info" label="Process information">
 
-次の項目は、XOSエージェントをインストールした場合に収集される指標です。
-
-| 項目         | 説明                                     |
-| ---------- | -------------------------------------- |
-| `cputime`  | CPU使用時間                                |
-| `cpuusage` | CPU使用率                                 |
-| `elapse`   | CPU使用経過時間                              |
-| `vsize`    | 仮想メモリサイズ(Kb)                           |
-| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理ページ数 |
-| `state`    | プロセス状態                                 |
-| `ioread`   | ブロックの読み取りに費やされた実際の時間(milliseconds)     |
-| `iowrite`  | ブロックの書き込みに費やされた実際の時間(milliseconds)     |
-| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合   |
-| `uid`      | user id                                |
-| `cmd`      | 実行中のコマンド                               |
-| `longcmd`  | cmdの絶対パス                               |
+<ProcessColumns />
 
 </TabItem>
 </Tabs>

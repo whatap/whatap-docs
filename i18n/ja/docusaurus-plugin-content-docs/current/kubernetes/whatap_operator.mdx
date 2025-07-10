@@ -1,0 +1,83 @@
+---
+id: whatap-operator
+title: Whatap Operator
+description: WhaTapオペレーターのインストール方法を案内します。
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - エージェント
+  - マスター
+  - ノート
+  - Whatap Operator インストール
+toc_max_heading_level: 2
+---
+
+**WhaTap Operator**は、Kubernetes環境でWhaTapエージェントをデプロイおよび構成できるオープンソースのKubernetesオペレーターです。
+
+オペレーターを活用することで、単一のカスタムリソース（CRD）を通じて、K8sおよびGPU（MIG）モニタリングから自動計測、オープンメトリクス収集に至るまで、すべての機能を統合的に管理できます。 このプロセスにおいて、オペレーターはデプロイされるリソースの整合性を自動的に検証し、複雑な構成で発生する可能性のあるエラーを最小限に抑え、安定的な運用をサポートします。
+
+## 主な特徴
+
+- **カスタムリソースを通じたデプロイ**: WhaTapエージェントおよび関連コンポーネントをKubernetesカスタムリソースを用いてデプロイおよび管理します。
+
+- **簡素化されたデプロイ構成**: WhaTapエージェントのバージョン、リソース要求／制限、モニタリング対象の登録などの必須要素を、ネイティブKubernetesリソースで簡単に設定できます。
+
+- **自動APM計測**: Kubernetes標準のラベルセレクターを利用し、特定のPodにAPMエージェントを自動的にインジェクトします。
+
+- **Open Agentを活用したオープンメトリクス収集**: Open Agentをインストールすることで、オープンメトリクス（OpenMetrics）データを収集・活用できます。
+
+- **統合モニタリング管理**: 単一のCRを通じてアプリケーション性能モニタリング（APM）とKubernetesインフラモニタリングを同時に構成・管理し、運用効率を高めます。
+
+## **WhaTap Operatorの目的 **
+
+WhaTap Operatorは、Kubernetes環境におけるモニタリング構成の複雑さを軽減し、管理を簡素化することに重点を置いています。
+
+- **エージェントのインストールおよび構成の負担軽減**: WhaTapモニタリングエージェントのインストールと管理の手間を大幅に削減します。
+
+- **Kubernetesネイティブリソースによる自動化**: KubernetesのCRDを活用し、WhaTapモニタリング対象に対する設定を自動的に管理します。
+
+  ```yaml
+  apiVersion: monitoring.whatap.com/v2alpha1
+  kind: WhatapAgent
+  metadata:
+    name: whatap
+  spec:
+    features:
+      apm:
+        instrumentation:
+          targets:
+            - name: "java-app"
+              enabled: true
+              language: "java"
+              whatapApmVersions:
+                java: "2.2.58"
+              # 선택자 구성...
+  ```
+
+- **構成の抽象化とバリデーション**: 複雑なモニタリング構成を単純化し、標準的なKubernetesセレクター（matchLabels、matchExpressions）をサポートします。 また、構成の有効性を検証することでエラーを最小限に抑え、安定した運用を支援します。  
+
+<br />
+
+:::tip
+
+**なぜHelmチャートや手動のDaemonSetインストールではなく、WhaTap Operatorを使用するのでしょうか？**
+
+HelmチャートやDaemonSetを使用してWhaTapエージェントをインストールすることも可能ですが、WhaTap Operatorには以下のような利点があります。
+
+**1. 自動状態調整**
+
+HelmチャートやDaemonSetは状態変更時に手動での介入が必要ですが、WhaTap OperatorはKubernetesの**調整ループ（reconciliation loop）**に組み込まれており、CRの状態を継続的に監視し、自動的に調整します。 例えば、CRによって作成されたリソースが誤って削除されたり変更された場合でも、オペレーターがそれを検知し、CRに定義された状態に自動で復元します。
+
+**2. 構成エラーの最小化**
+
+手動インストール方式ではエラーが発生する可能性が高くなります。 WhaTap Operatorはエージェント構成に対する厳密なバリデーションを実施することで、こうしたエラーを最小限に抑えます。
+
+**3. 統合管理**
+
+K8sクラスタ内のWhaTapモニタリングコンポーネントの構成を1つのファイルで統合管理でき、運用効率が向上します。
+
+**4. Kubernetes標準の遵守**
+
+オペレーターはKubernetes APIのファーストクラスリソースとして扱われ、Kubernetes標準のラベルセレクターを完全にサポートします。 これにより、Kubernetesの慣れ親しんだパターンを用いて柔軟にモニタリング対象を選択できます。
+
+:::

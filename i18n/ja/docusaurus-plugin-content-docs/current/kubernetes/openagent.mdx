@@ -1,0 +1,510 @@
+---
+id: openagent
+title: オープンエージェント構成
+description: OpenAgent（オープンエージェント）の構成ガイドです。
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - Whatap Operator
+  - オープンエージェント
+toc_max_heading_level: 3
+---
+
+OpenAgentは、Prometheusエンドポイントからメトリクスをスクレイピングし、それを処理してWhaTapサーバーに送信する役割を担います。
+Prometheusエンドポイントからメトリクスを収集し、WhaTapサーバーに送信するGoベースのエージェントです。
+
+## 設定
+
+WhatapOperatorをインストールした後、ユーザーは `WhatapAgent` CR（カスタムリソース）を通じてOpenMetricsの対象を設定します。
+
+1. **PodMonitor**: Podラベルセレクターを利用した動的ディスカバリ（Prometheus OperatorのPodMonitorと類似）
+
+2. **ServiceMonitor**: Serviceラベルセレクターを利用した動的ディスカバリ（Prometheus OperatorのServiceMonitorと類似）
+
+3. **StaticEndpoints**: 固定のIPアドレスとポートを直接入力（Prometheusのstatic_configsと類似）
+
+```yaml
+features:
+  openAgent:
+    enabled: true
+    targets:
+      # 1. PodMonitor: Podラベルセレクターを利用した動的ディスカバリー
+      - targetName: my-app-pod-metrics
+        type: PodMonitor
+        namespaceSelector:
+          matchNames:
+            - "production"
+        selector:
+          matchLabels:
+            app: my-app
+        endpoints:
+        - port: "web-metrics"  # Pod Specに定義されたPort名または実際のPort番号
+          path: "/metrics"     # デフォルトは /metrics、必要に応じて再定義
+          interval: "15s"      # デフォルトはグローバル設定、必要に応じて再定義
+          scheme: "http"
+          timeout: "10s"
+	        metricRelabelConfigs:  # スクレイピング後のメトリクス再ラベリング設定
+	          - source_labels: [__name__]
+	            regex: "http_requests_total"
+	            action: keep
+	          - source_labels: [method]
+	            target_label: http_method
+	            replacement: "${1}"
+	            action: replace
+
+      # 2. ServiceMonitor: Serviceラベルセレクターを利用した動的ディスカバリー
+      - targetName: my-service-metrics
+        type: ServiceMonitor
+        namespaceSelector:
+          matchNames:
+            - "default"
+        selector:
+          matchLabels:
+            service: my-backend-service
+        endpoints:
+        - port: "http-metrics"  # Service Specに定義されたPort名または実際のTarget Port番号
+          path: "/actuator/prometheus"
+          interval: "30s"
+          metricRelabelConfigs:
+            - source_labels: [__name__]
+              regex: "jvm_.*"
+              action: keep
+            - source_labels: [area]
+              target_label: memory_area
+              replacement: "${1}"
+              action: replace
+
+      # 3. StaticEndpoints: 固定されたIPアドレスとポートを直接入力
+      - targetName: my-external-db-metrics
+        type: StaticEndpoints
+        # enabled: true  # ターゲットの有効化有無（既定値: true、省略可能）
+        endpoints:
+          - address: "192.168.1.100:9100"
+            scheme: "http"
+            path: "/metrics"
+            interval: "60s"
+            metricRelabelConfigs:
+              - source_labels: [__name__]
+                regex: "node_(cpu|memory).*"
+                action: keep
+              - source_labels: [instance]
+                target_label: server
+                replacement: "${1}"
+                action: replace
+```
+
+### PodMetricsおよびServiceMetricsの設定要素
+
+- **targetName**: ターゲットの名前（ログおよび識別用）
+
+- **type**: ターゲットの種類（"PodMetrics" または "ServiceMetrics"）
+
+- **namespaceSelector**: スクレイピング対象のネームスペース
+  - `matchNames`: 名前でネームスペースを選択
+  - `matchLabels`: ラベルでネームスペースを選択
+  - `matchExpressions`: 式でネームスペースを選択
+
+- **selector**: スクレイピング対象のPodまたはServiceの選択
+  - `matchLabels`: ラベルでPodまたはServiceを選択
+  - `matchExpressions`: 式でPodまたはServiceを選択
+
+- **endpoints**: スクレイピング対象のエンドポイント定義
+  - `port`: スクレイピングするポート名または番号
+  - `path`: メトリクスパス（デフォルトは globalPath、必要に応じて上書き可能）
+  - `interval`: スクレイピング間隔（デフォルトは globalInterval、必要に応じて上書き可能）
+  - `scheme`: スクレイピングプロトコル（http または https、デフォルトは http）
+  - `timeout`: スクレイピングのタイムアウト
+  - `honorLabels`: 対象から提供されるラベルを優先するかどうか
+  - `metricRelabelConfigs`: スクレイピング後のメトリクス再ラベリング設定（Prometheus の metric_relabel_configs に類似）
+
+### StaticEndpoints 設定要素
+
+- **targetName**: ターゲットの名前（ログおよび識別用）
+
+- **type**: ターゲットのタイプ（"StaticEndpoints"）
+
+- **endpoints**: スクレイピング対象のエンドポイント定義
+
+  - `address`: スクレイピング対象のアドレス（IP:PORT または HOSTNAME:PORT）
+
+  - `path`: メトリクスのパス（デフォルト: /metrics）
+
+  - `scheme`: スクレイピングプロトコル（http または https、デフォルトは http）
+
+  - `interval`: スクレイピング間隔（デフォルト: 60s）
+
+  - `tlsConfig`: TLS設定
+
+  - `metricRelabelConfigs`: スクレイピング後のメトリック再ラベリング設定
+
+### addNodeLabel 機能
+
+スクレイピング対象がノードにスケジューリングされている場合、 `addNodeLabel` オプションを使用して、スケジューリングされたノード名をメトリクスのラベルとして追加できます。
+
+- **設定位置**：ターゲットレベルまたはエンドポイントレベルで設定可能
+
+- **既定値**: `false`
+
+- **動作**： `true`に設定すると、すべてのメトリクスに`node`ラベルが追加され、オブジェクトが実行されているノード名が値として付加されます。
+
+```yaml title='사용예제'
+# ターゲットレベルで addNodeLabel を設定
+- targetName: node-exporter
+  type: PodMonitor
+  namespaceSelector:
+    matchNames:
+      - "monitoring"
+  selector:
+    matchLabels:
+      app: node-exporter
+  endpoints:
+    - port: "metrics"
+      path: "/metrics"
+      interval: "30s"
+      addNodeLabel: true  # このエンドポイントにノードラベルを追加
+      metricRelabelConfigs:
+        # ノードラベルを使用したリラベリングの例
+        - source_labels: [node]
+          target_label: kubernetes_node
+          action: replace
+
+# エンドポイントレベルで addNodeLabel を設定
+- targetName: dcgm-exporter
+  type: PodMonitor
+  namespaceSelector:
+    matchNames:
+      - "kube-system"
+  selector:
+    matchLabels:
+      app: dcgm-exporter
+  endpoints:
+  - port: "metrics"
+    path: "/metrics"
+    interval: "30s"
+    addNodeLabel: true  # エンドポイントレベルで addNodeLabel を設定
+		metricRelabelConfigs:
+      - source_labels: [node]
+        target_label: gpu_node
+        action: replace
+```
+
+## TLS 設定
+
+OpenAgent は、HTTPS エンドポイントに接続する際に TLS（Transport Layer Security）をサポートします。以下は TLS に関する設定オプションです。
+
+### HTTP vs HTTPS の決定方法
+
+OpenAgent は以下のルールに従って、HTTP または HTTPS プロトコルを使用するかを決定します。
+
+- **PodMonitor および ServiceMonitor ターゲット**
+
+  - ポート名が "https" の場合は、デフォルトで HTTPS が使用されます。
+  - それ以外の場合は、デフォルトで HTTP が使用されます。
+
+- **StaticEndpoints ターゲット**
+  - TLS 設定が存在する場合は、デフォルトで HTTPS が使用されます。
+  - それ以外の場合は、デフォルトで HTTP が使用されます。
+
+- **すべてのターゲットタイプ**
+  - エンドポイントまたはターゲットに `scheme` 設定が明示的にある場合、その設定がデフォルト値を上書きします。
+
+### TLS 設定オプション
+
+TLS の設定は `tlsConfig` セクションで構成できます。
+
+```yaml
+endpoints:
+  - port: "https"
+    path: "/metrics"
+    scheme: "https"  # HTTPS を明示的に使用
+    tlsConfig:
+      insecureSkipVerify: true  # 証明書の検証をスキップ
+```
+
+### insecureSkipVerify
+
+insecureSkipVerify\` オプションは、サーバー証明書の有効性検証をスキップする設定です。このオプションは以下のような場合に有用です。
+
+- 自己署名証明書を使用するサーバーに接続する場合
+- 開発またはテスト環境で証明書の検証が不要な場合
+- 内部ネットワーク内で信頼できるサーバーに接続する場合
+
+:::warning
+
+**注意**
+
+本番環境ではセキュリティ上の理由から、`insecureSkipVerify: false` を使用することを推奨します。自己署名証明書を使用する場合は、その証明書を信頼できる認証局（CA）として追加する方が、より安全な方法です。
+
+:::
+
+### 設定例
+
+```yaml title='ServiceMonitor에서 TLS 설정 예제'
+- targetName: kube-apiserver
+  type: ServiceMonitor
+  namespaceSelector:
+    matchNames:
+      - "default"
+  selector:
+    matchLabels:
+      component: apiserver
+      provider: kubernetes
+  endpoints:
+    - port: "https"  # ポート名が "https" のため、デフォルトで HTTPS を使用
+      path: "/metrics"
+      interval: "30s"
+      scheme: "https"  # 明示的に HTTPS を指定（任意）
+      tlsConfig:
+        insecureSkipVerify: true  # 証明書の検証をスキップ
+      metricRelabelConfigs:
+        - source_labels: [__name__]
+          regex: "apiserver_request_total"
+          action: keep
+        - source_labels: [verb]
+          target_label: http_verb
+          replacement: "${1}"
+          action: replace
+```
+
+## ### メトリック再ラベリング設定 {#metricRelabelConfigs}
+
+OpenAgent は、Prometheus の `metric_relabel_configs` に類似したメトリック再ラベリング機能をサポートしています。この機能を使用すると、スクレイピング後のメトリクスをフィルタリングしたり、ラベルを変更したりできます。
+
+### 再ラベリング設定項目
+
+- **source_labels**: ソースラベルのリスト（配列）
+
+- **separator**: ソースラベルの値を連結する際に使用する区切り文字（デフォルト：`;`)
+
+- **target_label**: 対象ラベル（結果を保存するラベル）
+
+- **regex**: ソースラベルの値に適用する正規表現
+
+- **replacement**：置換値（正規表現キャプチャグループの参照が可能、例：`${1}`）
+
+- **action**：実行するアクション（keep、drop、replace）
+
+### 対応しているアクション（action）
+
+- **keep**：正規表現と一致するメトリクスのみを保持
+
+- **drop**：正規表現と一致するメトリクスを削除
+
+- **replace**：対象ラベルの値を置換値に変更
+
+### 特殊ラベル
+
+- **name**：メトリクス名を表す特殊ラベル
+
+### 例題
+
+#### 例題１. 特定のメトリクスのみを保持
+
+この設定は `http_requests_total` メトリクスのみを保持し、それ以外をすべて削除します。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: "http_requests_total"
+    action: keep
+```
+
+- **動作例**
+
+    スクレイプされたメトリクスが以下のようなものだと仮定します。 
+
+  ```
+  http_requests_total{method="GET", status="200"} 100
+  http_errors_total{method="GET", status="500"} 5
+  node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+  ```
+
+    上記の `metricRelabelConfigs` を適用すると、`http_requests_total` メトリクスのみが保持され、その他のメトリクスはすべて削除されます。
+
+  ```
+  http_requests_total{method="GET", status="200"} 100
+  ```
+
+#### 例題２. 正規表現を使用したメトリクスのフィルタリング
+
+この設定は `node_cpu` または `node_memory` で始まるメトリクスのみを保持します。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: "node_(cpu|memory).*"
+    action: keep
+```
+
+- **動作例**
+
+    スクレイプされたメトリクスが以下のようなものだと仮定します。
+
+  ```
+  node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+  node_memory_MemTotal_bytes{} 16777216
+  node_disk_io_time_seconds_total{device="sda"} 100
+  http_requests_total{method="GET", status="200"} 100
+  ```
+
+    上記の `metricRelabelConfigs` を適用すると、`node_cpu` や `node_memory` で始まるメトリクスのみが保持され、それ以外のメトリクスはすべて削除されます。正規表現を使うことで、複数のメトリクスパターンを一度にフィルタリングすることができます。
+
+  ```
+  node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+  node_memory_MemTotal_bytes{} 16777216
+  ```
+
+#### 例題３. ラベル名の変更
+
+この設定は `method` ラベルの値を `http_method` ラベルにコピーします。
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [method]
+    target_label: http_method
+    replacement: "${1}"
+    action: replace
+
+```
+
+- **動作例**
+
+    スクレイプされたメトリクスが以下のようなものだと仮定します。
+
+  ```
+  http_requests_total{method="GET", path="/api", status="200"} 100
+  http_requests_total{method="POST", path="/api/users", status="201"} 50
+  ```
+
+    上記の metricRelabelConfigs を適用すると、各メトリクスに `method` ラベルの値をコピーした `http_method` ラベルが追加されます。元のラベルは維持され、新しいラベルが追加されます。`${1}` はソースラベルの値を参照します。
+
+  ```
+  http_requests_total{method="GET", path="/api", status="200", http_method="GET"} 100
+  http_requests_total{method="POST", path="/api/users", status="201", http_method="POST"} 50
+  ```
+
+#### 例題 4. 複数のソースラベルの組み合わせ
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__, status]
+    regex: "http_requests_total;(200|500)"
+    action: keep
+
+```
+
+この設定では、`http_requests_total` メトリクスのうち、`status` ラベルが `200` または `500` のメトリクスのみを保持します。
+
+- **動作例**
+
+    スクレイプされたメトリクスが以下のようなものだと仮定します。
+
+  ```
+  http_requests_total{method="GET", path="/api", status="200"} 100
+  http_requests_total{method="POST", path="/api/users", status="201"} 50
+  http_requests_total{method="GET", path="/api/error", status="500"} 10
+  http_requests_total{method="GET", path="/api/error", status="404"} 5
+  ```
+
+    上記の metricRelabelConfigs を適用すると、`http_requests_total` メトリクスのうち、`status` ラベルが `200` または `500` のメトリクスのみが保持されます。複数のソースラベルを組み合わせる場合、デフォルトでは `;` 区切りで連結され、`separator` フィールドで変更可能です。
+
+  ```
+  http_requests_total{method="GET", path="/api", status="200"} 100
+  http_requests_total{method="GET", path="/api/error", status="500"} 10
+  ```
+
+#### 例題 5. 静的ラベルの追加
+
+```yaml
+metricRelabelConfigs:
+  - target_label: metric_src
+    replacement: "whatap-open-agent"
+    action: replace
+
+```
+
+この設定では、すべてのメトリクスに `metric_src="whatap-open-agent"` ラベルを追加します。ソースラベルを指定しない場合、`replacement` の値がそのままラベルの値として使用されます。この方法を利用すると、すべてのメトリクスに環境名、リージョン、アプリケーション名などの静的ラベルを追加できます。
+
+- **動作例**
+
+    元々スクレイピングされたメトリクスが以下のようなものであると仮定します：
+
+  ```
+  http_requests_total{method="GET", path="/api", status="200"} 100
+  node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+  ```
+
+    上記の `metricRelabelConfigs` を適用すると、すべてのメトリクスに `metric_src="whatap-open-agent"` ラベルが追加されます。この方法は、メトリクスの出所を示したり、環境（例：production、staging）、リージョン（例：us-east、eu-west）、またはアプリケーション名などを示すのに有用です。
+
+  ```
+  http_requests_total{method="GET", path="/api", status="200", metric_src="whatap-open-agent"} 100
+  node_cpu_seconds_total{cpu="0", mode="idle", metric_src="whatap-open-agent"} 1000
+  ```
+
+#### 例題. 総合的な動作
+
+スクレイプされたメトリクスが以下のようなものだと仮定します。
+
+```
+apiserver_request_total{code="200", resource="pods", verb="GET"} 100
+some_other_metric{label="value"} 50
+```
+
+上記の `metricRelabelConfigs` を適用すると
+
+1. 1つ目のルール（keep apiserver_request_total）の適用：
+
+   - apiserver_request_total メトリクスは保持されます。
+
+   - some_other_metricメトリクスは削除されます。
+
+2. 2つ目のルール（replace verb → http_verb）の適用：
+
+   - 保持された `apiserver_request_total` メトリクスに `verb` ラベルが存在するため、このラベルの値（例：`GET`）が `http_verb` という新しいラベルにコピーされます。
+
+したがって、最終的に収集されるメトリクスは次のようになります。
+
+```
+apiserver_request_total{code="200", resource="pods", verb="GET", http_verb="GET"} 100
+```
+
+## Kubernetes メトリクス収集の例
+
+以下は、Kubernetes API サーバーからメトリクスを収集する例です。
+
+- この設定では、kube-system ネームスペース内で component=apiserver および provider=kubernetes ラベルを持つサービスを対象に、該当サービスのエンドポイントからメトリクスを収集します。
+
+- metricRelabelConfigs を使用して apiserver_request_total メトリクスのみを収集し、verb ラベルを http_verb ラベルに変換し、すべてのメトリクスに metric_src="whatap-open-agent" という静的ラベルを追加するよう指定できます。
+
+```yaml title='쿠버네티스 메트릭 수집 예제'
+# scrape_config.yaml
+features:
+  openAgent:
+    enabled: true
+    targets:
+      - targetName: kube-apiserver
+        type: ServiceMonitor
+        namespaceSelector:
+          matchNames:
+            - "kube-system"
+        selector:
+          matchLabels:
+            component: apiserver
+            provider: kubernetes
+        endpoints:
+          - port: "https"
+            path: "/metrics"
+            interval: "30s"
+            metricRelabelConfigs:
+              - source_labels: [__name__]
+                regex: "apiserver_request_total"
+                action: keep
+              - source_labels: [verb]
+                target_label: http_verb
+                replacement: "${1}"
+                action: replace
+              # 정적 레이블 추가
+              - target_label: metric_src
+                replacement: "whatap-open-agent"
+                action: replace
+```

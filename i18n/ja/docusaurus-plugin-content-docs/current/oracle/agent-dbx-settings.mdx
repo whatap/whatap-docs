@@ -13,7 +13,7 @@ import V2Note from "../common-items/_import_v2-note.mdx";
 
 <V2Note product="Oracle" />
 
-DBXエージェントに必要な設定は、*whatap.con*ファイルに作成されます。 設定できるオプションについては、次を参照してください。
+DBXエージェントに必要な設定は、*whatap.conf*ファイルに作成されます。 設定できるオプションについては、次を参照してください。
 
 ## 基本オプション
 
@@ -140,14 +140,6 @@ import Dbagentdbxbasicoption from "../common-items/_db-agent-dbx-basic-option.md
 
   sysに該当するアカウントの一覧です。 上記のアカウントに追加したい場合は`segments_sys='xxx','xxx','xxx'`で上記の内容を含めて追加で書いてください。
 
-- **sqlstat_send_interval** <span class='type'>Int</span>
-
-  デフォルト値： `1分`
-
-  SQL統計データを生成して送信する間隔を分単位で設定します。
-  1以上の整数を指定でき、より詳細な統計分析が必要な場合は1に設定してください。
-  この設定により、Top SQL画面で1分単位の詳細な分析が可能になります。
-  
 - **stat** <span class='type'>String</span>
 
   既定値: 

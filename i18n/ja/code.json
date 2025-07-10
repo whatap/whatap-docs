@@ -538,7 +538,7 @@
     "message": "エージェントインストール後、データがWhaTapサーバーに送信されると、ダッシュボードメニューでプロジェクトの全体現況をリアルタイムで照会できます。"
   },
   "index.pages.welcome.para": {
-    "message": "WhaTapのDocsページへようこそ。"
+    "message": "WhaTapへようこそ."
   },
   "index.pages.welcome.recommend": {
     "message": "推奨文書: "
@@ -571,7 +571,7 @@
     "message": "モバイルアプリの使い方について説明します。"
   },
   "index.pages.section.product": {
-    "message": "サービス"
+    "message": "와탭이 제공하는 서비스를 한눈에 확인해 보세요."
   },
   "index.pages.section.product.java": {
     "message": "WAS、バッチアプリケーションなど、JVM環境で動作するすべてのアプリケーションに適用できます。"
@@ -658,7 +658,7 @@
     "message": "既存のモニタリング製品を、ユーザーがモニタリングしようとするソフトウェアに合わせてリパッケージし、最適化されたモニタリングソリューションを提供します。"
   },
   "index.pages.section.management": {
-    "message": "管理"
+    "message": "계정, 프로젝트, 그룹 등을 관리하는 방법을 확인해 보세요."
   },
   "index.pages.section.management.account": {
     "message": "アカウント管理"

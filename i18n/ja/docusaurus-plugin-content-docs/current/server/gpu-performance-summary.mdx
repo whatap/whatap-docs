@@ -1,0 +1,102 @@
+---
+id: gpu-performance-summary
+title: GPUパフォーマンスサマリー
+description: GPUパフォーマンスサマリーメニューを案内します。
+keywords:
+  - サーバーリスト
+  - GPUパフォーマンスサマリー
+  - 分析する
+  - UI
+  - Server
+toc_max_heading_level: 3
+---
+
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_serverList" className="uitext" /> &gt; **GPUパフォーマンスサマリー**
+
+システムに接続されたGPUの状態およびパフォーマンス指標をリアルタイムでモニタリング・管理できます。 物理GPUとMIGインスタンスの情報を同時に確認でき、各項目を並び替えたりフィルターして効率的に使用できます。
+
+:::note
+
+**サポートエージェントバージョン**
+
+Linuxでのみサポートされており、エージェントバージョン 2.8.5 以上が必要です。
+
+:::
+
+## **基本画面案内**
+
+![Pause icon](/img/ic-pause-green.svg) <UI>Live</UI> をクリックして、リアルタイムデータの表示を一時停止または再開できます。 検索ボックスでGPU情報を検索できます。 
+
+データリスト内の項目名をクリックすると、昇順または降順に並べ替えることができます。 
+
+- **Total**: 全GPUインスタンス数（Physical + MIG含む）
+- **Physical**: 実GPUデバイス数
+- **MIG**: MIG（Multi-Instance GPU）インスタンス数
+
+### GPU情報
+
+| カラム名       | 説明                                                      |
+| ---------- | ------------------------------------------------------- |
+| Status     | 該当GPUインスタンスの現在の状態（例：`Inactive`、`N/A`）                   |
+| HostName   | GPUが接続されているサーバーのホスト名                                    |
+| GPU Index  | 物理GPUまたはMIGインスタンスの固有インデックス（MIGインスタンスは `0/6/0` などの形式で表示） |
+| Model Name | GPUモデル名（例：NVIDIA A100-SXM4など）                           |
+| GPU Type   | `Physical` または `MIG` のうち、該当インスタンスの種類                    |
+
+### GPUパフォーマンス指標
+
+| カラム名                       | 説明                                                                                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| GPU_Util (%)               | GPU使用率（%）<br />- 物理GPUでのみ表示され、MIGインスタンスは除外                                                                                                 |
+| Encoder_Util (%)           | ハードウェアエンコーダ使用率（%）<br />- 物理GPUでのみ表示                                                                                                        |
+| Decoder_Util (%)           | ハードウェアデコーダ使用率（%）<br />- 物理GPUでのみ表示                                                                                                         |
+| GR_Engine_Active_Util (%)  | GPUのグラフィックエンジンまたはコンピュートエンジンがアクティブな時間の割合<br />- GPU全体の使用率を測定するための指標で、MIG環境ではインスタンス間のオーバーヘッドも物理GPU使用率に反映されて表示されます                            |
+| SM_Active_Util (%)         | SMで少なくとも1つのワープ（Warp）が実行された時間の割合<br />- GPUではスレッドを32個単位のWarpでまとめて実行します                                                                      |
+| SM_Occupancy (%)           | SMが実行可能な最大Warp数に対する実際のWarp実行数の割合<br />- GPUではスレッドを32個単位のWarpでまとめて実行します                                                                     |
+| Tensor_Core_Util (%)       | Tensorコアがアクティブだった時間の割合                                                                                                                     |
+| Memory_Copy_Util (%)       | GPUのメモリコピーエンジン（memory copy engine）の使用率（%）<br /> - GPUとホスト間、またはGPU内部でのメモリ転送がどの程度行われているかを示す値 <br /> - Physical GPUでのみ表示され、MIGインスタンスでは表示されません |
+| DRAM_Active_Util (%)       | DRAMのRead/Write活用率 <br /> - Physical GPUでのみ表示され、MIGインスタンスでは表示されません                                                                         |
+| FP64_Compute_Util (%)      | FP64（64ビット浮動小数点）演算パイプのアクティブ時間の割合                                                                                                           |
+| FP32_Compute_Util (%)      | FP32（32ビット浮動小数点）演算パイプのアクティブ時間の割合                                                                                                           |
+| FP16_Compute_Util (%)      | FP16（16ビット浮動小数点）演算パイプのアクティブ時間の割合                                                                                                           |
+| BAR1_Total_Memory (Bytes)  | BAR1メモリ総量<br />- BAR1メモリはGPUとCPU間のデータ転送時に使用されます                                                                                            |
+| BAR1_Used_Memory (Bytes)   | 使用中のBAR1メモリ容量<br />- BAR1メモリはGPUとCPU間のデータ転送時に使用されます                                                                                        |
+| BAR1_Free_Memory (Bytes)   | 残りのBAR1メモリ容量<br />- BAR1メモリはGPUとCPU間のデータ転送時に使用されます                                                                                         |
+| FB_Total_Memory (Bytes)    | フレームバッファの総メモリ容量                                                                                                                            |
+| FB_Free_Memory (Bytes)     | フレームバッファの使用可能メモリ容量                                                                                                                         |
+| FB_Used_Memory (Bytes)     | フレームバッファで使用中のメモリ容量                                                                                                                         |
+| FB_Reserved_Memory (Bytes) | 予約されたフレームバッファメモリ容量                                                                                                                         |
+| FB_Memory_Usage (%)        | フレームバッファメモリ使用率（%）                                                                                                                          |
+| ECC_SBE_Total              | ECC SBE（Single Bit Error）累積合計                                                                                                              |
+| ECC_DBE_Total              | ECC DBE（Double Bit Error）累積合計                                                                                                              |
+| GPU_Temperature (°C)       | GPUの現在の温度                                                                                                                                  |
+| Power_Usage (W)            | GPUが現在消費している電力量                                                                                                                            |
+| Performance_State (P)      | 現在のGPUパフォーマンスステート（P-State）を0～15の数値で表示<br />- P0～P15の値を持ち、P0が最速                                                                             |
+| Fan_Speed (%)              | GPUファンの現在の動作速度比率                                                                                                                           |
+| SM_Clock (MHz)             | SM（Streaming Multiprocessor）の現在のクロックスピード                                                                                                   |
+| Memory_Clock (MHz)         | メモリの現在のクロックスピード                                                                                                                            |
+| Video_Clock (MHz)          | ビデオ処理を担当するクロック速度                                                                                                                           |
+| PCIE_TX (Bytes/s)          | GPUがPCIeインターフェースを介して送信したデータ量 <br /> - 物理GPUのみ値が表示され、MIGはN/Aと表示され収集されない場合があります                                                              |
+| PCIE_RX (Bytes/s)          | GPUがPCIeインターフェースを介して受信したデータ量 <br /> - 物理GPUのみ値が表示され、MIGはN/Aと表示され収集されない場合があります                                                              |
+| NVLink_TX (Bytes/s)        | NVlinkを介して送信したデータ量                                                                                                                         |
+| NVLink_RX (Bytes/s)        | NVlinkを介して受信したデータ量                                                                                                                         |
+
+### カラム設定
+
+画面右上の **列設定** ボタンをクリックすると、表示する列を選択できます。 **列設定** ウィンドウで列を選択後、**確認** ボタンをクリックして設定を保存してください。
+
+:::caution
+
+列の表示項目のうち、Status、HostName は削除できません。 
+
+:::
+
+- **カラム選択**
+
+    ユーザーはテーブルに表示するカラムを選択できます。**初期化**をクリックすると、デフォルトのカラム選択状態に戻ります。
+
+    :::note
+
+    選択した カラム はブラウザのクッキーに保存され、ページを更新しても状態が維持されます。 クッキーが削除されたり、他の理由で設定エラーが発生した場合は、デフォルト項目の選択状態に初期化します。
+
+    :::

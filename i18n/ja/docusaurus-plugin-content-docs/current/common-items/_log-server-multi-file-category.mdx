@@ -1,6 +1,8 @@
 #### 複数のファイル指定{#multiple-file-specification}
 
-複数のログファイルを同じカテゴリに設定するには、各ログファイルのパスを`[[inputs.logsink.file]]`項目に追加して、`path`設定により、ファイルパスを指定します。 また、`category`、`stats_enabled`、`stats_category`などのオプションを使用して、ログ発生量の統計設定などの付加的な設定が可能です。 例は、*/root/test1*および*/root/test2*ファイルを同一のカテゴリ(`serverlog`)に指定した場合です。
+複数のログファイルを同じカテゴリに設定するには、各ログファイルのパスを`[[inputs.logsink.file]]`項目に追加して、`path`設定により、ファイルパスを指定します。 また、`category`、`stats_enabled`、`stats_category`などのオプションを使用して、ログ発生量の統計設定などの付加的な設定が可能です。 
+
+*/root/test1* および */root/test2* ファイルを同じカテゴリ（`serverlog`）に指定した例です。
 
 ```bash {2,7-15}
 [[inputs.logsink]]
@@ -21,16 +23,18 @@
 ```
 
 :::note
-`category`、`stats_enabled`、`stats_category`、`nowrap_keywords`などのオプションについては、[上段](#server-log-settings) 案内を参照してください。 
+`category`、`stats_enabled`、`stats_category`、`nowrap_keywords` などのオプションに関する詳細は、[オプション設定](#server-log-settings) を参照してください。 
 :::
 
-当該例の場合、<Cmdname sid="side_logTail" className="uitext" />メニューでは次のように確認できます。
+この例は、<Cmdname sid="side_logTail" className="uitext" /> メニューで次のように確認できます。
 
-![複数のファイル指定](/img/log-server-multi-file.png)
+![다중 파일 지정](/img/log-server-multi-file.png)
 
 #### ファイル分離{#file-separation}
 
-異なるカテゴリでログファイルを指定するには、*logsink\{<b>숫자</b>\}.conf*ファイルをそれぞれ作成し、各ファイル内で異なる`category`値を設定します。 次の例は、*logsink.conf*と*logsink<b>1</b>.conf*を介して、それぞれ異なるログカテゴリを設定した場合です。
+異なるカテゴリにログファイルを割り当てるには、*logsink\{<b>数字</b>\}.conf* ファイルをそれぞれ作成し、各ファイルの `category` 項目に異なる値を設定してください。 
+
+*logsink.conf* と *logsink<b>1</b>.conf* を使用して、異なるログカテゴリを設定した例です。
 
 <Columns>
 
@@ -72,10 +76,12 @@
 
 </Columns>
 
-:::note
-`category`、`stats_enabled`、`stats_category`、`nowrap_keywords`などのオプションについては、[上段](#server-log-settings) 案内を参照してください。 
+:::note 
+
+`category`、`stats_enabled`、`stats_category`、`nowrap_keywords` などのオプションに関する詳細は、[オプション設定](#server-log-settings) を参照してください。 
+
 :::
 
-当該例の場合、<Cmdname sid="side_logTail" className="uitext" />メニューでは次のように確認できます。
+この例は、<Cmdname sid="side_logTail" className="uitext" /> メニューで次のように確認できます。
 
-![ファイル分離](/img/log-server-file-separation.png)
+![파일 분리](/img/log-server-file-separation.png)

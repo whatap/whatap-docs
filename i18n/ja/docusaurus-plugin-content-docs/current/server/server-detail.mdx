@@ -18,15 +18,15 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ## ![](/img/number-01.png)上段オプション
 
-上段![number 1](/img/number-01.png)の領域で***データ更新時間***および検索***サーバー***を指定できます。***データ更新時間***および***サーバー***指定オプションと当該サーバーの***概要情報***を確認できます。
+上部の ![number 1](/img/number-01.png) エリアでは、**データ更新時間** と参照対象の **サーバー** を指定できます。**データ更新時間** および **サーバー** の指定オプションとあわせて、該当サーバーの **サマリー情報** を確認できます。
 
 ### データ更新時間
 
 サーバー詳細ページのデータは5秒ごとに自動的に更新されます。 
 
-- ![一時停止アイコン](/img/ic-s-pause.svg)***一時停止***：ユーザーはデータの自動更新を停止することができます。 
+- ![一時停止アイコン](/img/ic-pause-green.svg) <Cmdname sid="paused_agent" className="uitext" />：該当エージェントのイベント発生を一時停止します。サーバーリストでは一時停止状態として表示されます。
 
-- ![再生アイコン](/img/ic-play-grn.svg)***再生***：ユーザーは停止した自動更新を再開することができます。
+- ![再生アイコン](/img/ic-play-grn.svg) <Cmdname sid="resume_agent" className="uitext" />：一時停止されたイベントを再開します。対象エージェントでイベントの発生を確認できます。
 
 :::note 
 
@@ -42,39 +42,39 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ### サーバーリソースの状態
 
-![number 2](/img/number-02.png)の領域では、 ***CPU Usage***、***Memory Usage***、***Network***、***Disk I/O***チャートを使用して、サーバーのリソース状況を確認できます。
+![number 2](/img/number-02.png)の領域では、 **CPU Usage**、**Memory Usage**、**Network**、**Disk I/O**チャートを使用して、サーバーのリソース状況を確認できます。
 
 - ![設定アイコン](/img/ic-setting.svg) : チャート設定でY軸の最大値を指定できます。 
 
-- ![csvアイコン](/img/ico-download.svg)：チャート履歴をCSVファイルで保存できます。
+- ![csvアイコン](/img/ico-download.svg)：チャートの記録をCSVファイルとして保存できます。
 
 - ![カメラアイコン](/img/ic-camera.svg)：チャートの画面をイメージファイルで保存できます。
 
-- ![詳細アイコン](/img/ic-zoom-in.svg)：CPU使用率、メモリ使用率、ネットワーク、ディスクのI/Oなどの詳細チャートが表示されます。 
+- ![詳細アイコン](/img/ic-zoom-in.svg)：CPU使用率、メモリ使用率、ネットワーク、ディスクI/Oの各詳細チャートを確認できます。 
 
   - CPU使用率
 
-    ***CPU Usage***, ***CPU Idle***, ***CPU Nice***, ***CPU I/O Wait***, ***CPU Steal***, ***CPU IRQ***, ***CPU Soft IRQ***, ***CPU Load***
+    **CPU Usage**, **CPU Idle**, **CPU Nice**, **CPU I/O Wait**, **CPU Steal**, **CPU IRQ**, **CPU Soft IRQ**, **CPU Load**
 
   - メモリ使用率
 
-    ***Memory Usage***、***Memory Available***、***Memory SReclaimable***、***Memory SUnreclaim***、***Memory Slab***、***Memory Swap Used***、***Memory Page Faults***
+    **Memory Usage**, **Memory Available**, **Memory SReclaimable**, **Memory SUnreclaim**, **Memory Slab**, **Memory Swap Used**, **Memory Page Faults**
 
   - ネットワーク
 
-    ***Traffic In/Out***. ***Packet In/Out***, ***Error In/Out***, ***Dropped In/Out***
+    **Traffic In/Out**. **Packet In/Out**, **Error In/Out**, **Dropped In/Out**
 
   - ディスクI/O
 
-    ***Disk I/O***, ***IOPS Read/Write***, ***Disk Bph Read/Write***, ***Used Space***, ***Queue Length***, ***Inode Used***, ***Free Space***
+    **Disk I/O**, **IOPS Read/Write**, **Disk Bph Read/Write**, **Used Space**, **Queue Length**, **Inode Used**, **Free Space**
 
 ### プロセスリスト
 
-#### 配置
+#### ソート
 
 - <Cmdname sid="sms_summary_process" className="uitext" />一覧の上から指標を選択し、降順または昇順でソートおよび照会できます。
 
-- <Cmdname sid="sms_summary_process" className="uitext" />一覧の上から指標を選択し、上位の***10個***、***20個***、***30個***、<Cmdname sid="all" className="uitext" />のプロセスを指定して確認できます。
+- <Cmdname sid="sms_summary_process" className="uitext" />一覧の上から指標を選択し、上位の**10個**、**20個**、**30個**、<Cmdname sid="all" className="uitext" />のプロセスを指定して確認できます。
 
 #### グループ化
 
@@ -82,15 +82,15 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
 ### サーバー情報パネル
 
-<Cmdname sid="server_info" className="uitext" />パネルで確認できる内容は次のとおりです。*** Agent Name***と*** Memo***の場合<Cmdname sid="server_info" className="uitext" />パネルのみ編集が可能です。
+<Cmdname sid="server_info" className="uitext" /> パネルで確認できる内容は次のとおりです。**Agent Name** および **Memo** は、<Cmdname sid="server_info" className="uitext" /> パネルでのみ編集可能です。
 
-- ![通知アイコン](/img/ic-alert.svg) <Cmdname sid="server_alert_list" className="uitext" />
+- ![アラートアイコン](/img/ic-alert.svg) <Cmdname sid="server_alert_list" className="uitext" />
 
-  <Cmdname sid="server_info" className="uitext" />パネル上段の![通知アイコン](/img/ic-alert.svg) <Cmdname sid="server_alert_list" className="uitext" />ボタンを選択すると、現在サーバーに割り当てられた通知を確認できます。
+  <Cmdname sid="server_info" className="uitext" /> パネル上部の ![アラートアイコン](/img/ic-alert.svg) <Cmdname sid="server_alert_list" className="uitext" /> ボタンを選択すると、現在のサーバーに割り当てられているアラートを確認できます。
 
-- ***Agent Name / ID***
+- **Agent Name / ID**
 
-  選択したサーバーのエージェント名(ONAMEの別称)とサーバーID(OID)を確認できます。![修正アイコン](/img/ic-edit.svg)ボタンを選択すると、エージェント名を変更できます。 
+  選択したサーバーの**_エージェント名_**(ONAMEのエイリアス)と**_サーバーID_**(OID)を確認できます。![編集アイコン](/img/ic-edit.svg)ボタンを選択すると、**_エージェント名_**を変更できます。 
 
   :::note
 
@@ -98,18 +98,18 @@ WhaTapモニタリングサービスの初期画面でプロジェクトを選�
 
   :::
 
-- ***OS***
+- **OS**
 
   選択したサーバーのOS情報を確認できます。
 
-- ***IP Address***
+- **IP Address**
 
   選択したサーバーのIPアドレスを確認できます。
 
-- ***Agent***
+- **Agent**
 
   選択したサーバーのエージェントのバージョンを確認できます。
 
-- ***Memo***
+- **Memo**
 
   作成したメモを確認するか![修正アイコン](/img/ic-edit.svg)ボタンを選択してメモを編集および追加できます。

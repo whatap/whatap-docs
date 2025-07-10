@@ -8,17 +8,15 @@ displayed_sidebar: releaseSidebar
 
 2025年06月30日
 
-2025年06月30日
+- <Status priority='1'>New</Status> `profile_mongodb_param_enabled` <span class='type'>Boolean</span>
 
-- <Status priority='1'>New</Status> `profile_mongodb_param_enabled` <span class='type'>Boolean</span> 
+  - 既定値： `false`
 
-    * デフォルト値：`false`
+  - mongoose モジュールのトレース時に、クエリ内の実際のパラメーター値を表示できるオプションを追加
 
-    * mongoose モジュールをトレースする際、クエリ内の実際のパラメータ値を表示できるオプションを追加
+- <Status priority='0'>Fixed</Status> HTTP サーバーと Socket.IO サーバーを同時に使用する構成において、1 つのクライアントリクエストに対して APM に 3 件のトランザクション（API リクエスト、Socket.IO ハンドシェイク、ポーリング）が記録されていた問題を修正
 
-- <Status priority='0'>Fixed</Status> HTTPサーバーとSocket.IOサーバーを併用する構成において、1つのクライアントリクエストに対してAPMでトランザクションが3件（APIリクエスト、Socket.IOのhandshake、polling）記録されていた問題を修正
-
-    * APIリクエストのみが単一トランザクションとして記録され、Socket.IO接続に関するhandshakeやpollingリクエストは別トランザクションとして記録されません
+  - API リクエストのみ単一のトランザクションとして記録され、Socket.IO 接続関連の handshake/polling リクエストは別のトランザクションとして記録されません。
 
 import DownloadNode2 from './_import_dl-nodejs-agent2.mdx';
 

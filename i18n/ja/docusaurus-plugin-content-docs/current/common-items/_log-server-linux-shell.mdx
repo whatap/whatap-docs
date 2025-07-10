@@ -1,11 +1,11 @@
-- ***基本インストール***
+- **基本インストール**
 
   ```bash title='Linux Shell'
   export LOGFILES=/some/path/file1,/some/other/file2
   echo "logsink.files=$LOGFILES" | sudo tee -a /usr/whatap/infra/conf/whatap.conf
   ```
 
-- ***カテゴリでインストール***
+- **カテゴリ付きインストール**
 
   ```bash title='Linux Shell' {7-12,14,15,25,26,29-31,34-35} showLineNumbers
   cd /usr/whatap/infra

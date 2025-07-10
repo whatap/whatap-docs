@@ -1,0 +1,173 @@
+import Logroleview from "../common-items/_log-role-view.mdx";
+
+<Logroleview />
+
+ホーム画面 &gt; プロジェクト選択 &gt;<Cmdname sid="side_log" className="uitext" />&gt; **ログ探索**<code className="newfunc">New</code>
+
+**ログ探索（Log Explorer）** 機能は、ログデータを迅速に検索、フィルタリング、分析します。 フィールド構造に関する情報を把握し、クエリベースのフィルタリングによって必要なログを効率的に検索し、結果をデータの可視化を通じて確認できます。 本機能はLuceneインデックスをベースに動作し、主な特徴は以下のとおりです。 
+
+1. **ログトレンド分析および検索**: ログのトレンドと検索機能を同時にサポートし、時間経過によるログの変化傾向を把握できます。
+
+2. **高速検索およびフィルタリング**: ユーザーは簡単なキーワード入力だけで、問題のあるログを迅速に検索できます。 WhaTapログ検索クエリおよびLuceneクエリ言語に対応しており、さまざまな検索条件を設定できます。
+
+3. **オートコンプリート機能**：クエリ入力時にオートコンプリート機能が提供され、ユーザーが簡単にクエリを作成し、習得できるようサポートします。
+
+4. **データ可視化**：スタックグラフを活用して時系列のログ件数データを視覚的に表示し、ドリルダウン機能を通じて特定のログを深く分析できます。
+
+5. **お気に入りと共有**：よく使うフィルターはお気に入りとして保存でき、URLを通じて他のユーザーと簡単に共有できます。
+
+## 基本画面ガイド
+
+<ImgLang img='apm-log-log-explorer-new.png' desc='log-explorer-new' />
+
+### 時間設定
+
+上部のオプションバーにある**タイムセレクター**を使用して、ログ検索の時間範囲を設定できます。
+
+### カテゴリ
+
+上部のオプションバーにある**カテゴリ選択**で、探索したいログの種類を選択します。 （例：AppLogなど）
+
+### フィルター
+
+上部のオプションバーの**フィルター**でクエリ言語を選択し、検索条件を入力してフィルタリングできます。
+
+### 検索クエリ構文
+
+#### ![クエリ検索アイコン](/img/ico-log-search-query.svg) **WhaTap log search query**
+
+WhaTapのログ検索クエリはオートコンプリート機能を提供しており、簡単なキーワード入力だけで問題のログを迅速に検索できます。 and、orなどのさまざまな構文を活用して、さまざまな検索条件を入力できます。
+
+- 例、検索フィルターに `error` と入力するだけで、content（ログ本文）を検索できます。
+
+  1. 上部オプションバーでフィルターアイコンをクリックした後、クエリ検索ウィンドウでフィールド（選択した時間とカテゴリに応じたリストが表示されます）を選択してください。 
+
+  2. 演算子を選択してください。
+
+     a. 基本: `:`, `: *` 、`and`、`or` <br/>
+     b. 選択したフィールドが `Number` 型の場合（基本 + `<=`、`>=`、`<`、`>`） <br/>
+     c. 選択したフィールドが `Number` 型の場合（基本 + `<=`、`>=`、`<`、`>`） <br/>
+
+  3. 値（選択した時間、カテゴリ、フィールドに一致するリストが表示されます）を選択してください。
+
+##### **検索インデックスフィールドタイプ**
+
+```
+対応しているフィールドタイプは `Number`、`String` の2種類のみです。
+
+    * `String`: Long、double、float 型の数値
+
+    * `Number`: メール本文のような全文テキスト
+```
+
+:::note 
+
+WhaTapログ検索クエリの構文に関する詳細は[次の文書](https://docs.whatap.io/log/log-search-query)を参照してください。
+
+:::
+
+#### ![クエリ検索アイコン](/img/ico-log-search-lucene.svg) Lucene
+
+Apache Lucene 8.11.1バージョンのオープンソース構文をそのまま使用してください。 ただし、自動補完機能は提供していません。
+
+:::note 
+
+LuceneのQueryParserクラシックパッケージに関する詳細は[公式ドキュメント](https://lucene.apache.org/core/8_11_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Overview)を参照してください。
+
+:::
+
+### フィールド一覧
+
+ドリルダウン分析に活用できます。
+
+#### フィールド情報のフィルターを反映する
+
+**フィールド一覧**でフィールド名を確認し、`=`または`!=`ボタンをクリックして条件をフィルターに適用してください。
+
+- フィールドにマウスをホバーすると、`=`、`!=`ボタンが表示され、クリックするとフィルターに反映されます。
+
+- フィールド検索機能を使って、目的のフィールドを素早く見つけることができます。
+
+### Trendチャート
+
+**Trendチャート**で**インターバル**や**ブレイクダウン**を適用して、ログをグラフで確認できます。 
+
+- **グラフインタラクション**: マウスドラッグや ![検索アイコン](/img/ic-search.svg) ボタンで時間のズームイン、バークリックで該当領域のログを確認可能
+
+- **インターバル**: 自動、1秒、5秒、30秒、1分、5分、10分、30分、1時間から選択可能
+
+- **Breakdown**: 特定のフィールドを基準にTop 3 + Othersの値を分布として可視化し、ドリルダウンフィルターの適用が可能
+
+#### breakdown
+
+**Breakdown**は、ログ件数の推移を特定のフィールドで分析する可視化機能です。 
+
+- 特定のフィールドのTop 3の値とOthers（その他の値）を区別して、スタックグラフで分布を表示します。
+
+- ドリルダウン分析に活用でき、凡例やスタックグラフの特定領域（部分グラフ）をクリックして、特定の値のみを強調したり、フィルター条件を追加することができます。
+
+## ログの確認
+
+検索条件に一致するログの一覧を確認でき、**フィールド一覧**ではフィールド情報とログタグの色が同じように表示されます。 
+
+### ハイライトカラー設定
+
+ハイライトするキーワードおよび色を設定できます。
+
+- デフォルトでは、ログレベルに応じたハイライト（<span class='logft'>FATAL</span>、<span class='loger'>ERROR</span>、<span class='logwr'>WARN</span>、<span class='logft'>SEVERE</span>、<span class='logft'>CRITICAL</span>）が適用されています。
+
+- 設定した内容は**プロジェクト単位**で保存されます。 
+
+1. ![アイコン]](/img/ic-highlight.svg)アイコンをクリックします。
+
+2. <Cmdname sid="highlight" className="uitext" /> ウィンドウで、色を設定したいキーワードを入力フィールドに追加で入力してください。
+
+3. 入力欄の左側の色をクリックすると、色を選択できます。
+
+### <Cmdname sid="column_settings" className="uitext" />
+
+![カラムアイコン](/img/ic-column.svg) ボタンをクリックして、カラムを追加したり順序を設定することができます。 
+
+- **カラム追加**
+
+    **カラム追加**：タグを選択して、テーブルにカラムを追加できます。 
+
+    :::caution
+
+    ログカラムの選択を解除すると、<Cmdname sid="ITM08349" className="uitext" />を確認できません。 必ず1つ以上のカラムを選択します。 
+
+    :::
+
+- **カラム順序設定**
+
+    **カラム設定**でカラムを追加すると、<Cmdname sid="TTL06055" className="uitext" />に該当カラムが追加されます。 希望するカラムをドラッグして、カラムの順序を変更してください。
+
+### <Cmdname sid="ITM08349" className="uitext" />
+
+![設定アイコン](/img/ic-setting.svg) ボタンをクリックして、ログの表示を詳細に設定します。 デフォルトでは **content**、<Cmdname sid="tag" className="uitext" /> の両方がチェックされており、両方の項目が表示されます。  
+
+- **content**と<Cmdname sid="tag" className="uitext" />のいずれかを必ず選択してください。 
+
+- <Cmdname sid="tag_management" className="uitext" />リストにタグを追加すると、追加した順にログのタグが表示されます。 タグの順序はドラッグに変更できます。 追加したタグを無効にすると、無効にしたタグはログのタグに表示されません。
+
+- チェックが解除された項目は、テーブルに表示されません。 次のように<Cmdname sid="tag" className="uitext" />を解除する場合、テーブルからログの<Cmdname sid="tag" className="uitext" />は表示されません。
+
+  <ImgLang img='log-table-contents-remove-tag.png' desc='log table contents remove tag sc'/>
+
+:::note 
+
+**カラムおよびログ表示設定の適用範囲**
+
+- <Cmdname sid="column_settings" className="uitext" />と<Cmdname sid="ITM08349" className="uitext" />は、<Cmdname sid="logTail" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="logExplorer" className="uitext" />で使用できます。
+
+- 同一プロジェクト内の<Cmdname sid="side_logTail" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logExplorer" className="uitext" />は、<Cmdname sid="column_settings" className="uitext" />と<Cmdname sid="ITM08349" className="uitext" />を共有します。 
+
+:::
+
+### ログファイルのダウンロード
+
+検索したログの結果を *CSV* または *TXT* ファイル形式でダウンロードできます。 
+
+1. 画面中央右側の ![ダウンロードアイコン](/img/ico-download.svg) <Cmdname sid="download" className="uitext" /> ボタンをクリックします。
+
+2. **CSVダウンロード** または **Logダウンロード** をクリックして、希望の形式のファイルをダウンロードします。 

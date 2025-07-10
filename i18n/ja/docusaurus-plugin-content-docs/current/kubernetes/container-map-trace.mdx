@@ -8,7 +8,7 @@ keywords:
   - Trace
 ---
 
-ホーム画面 > プロジェクト選択 > ***ダッシュボード*** > ***コンテナマップ*** > 対象選択後<Cmdname sid="BTN07712" className="uitext" />画面へアクセス > ***トレース***
+ホーム画面 > プロジェクト選択 > **_ダッシュボード_** > **_コンテナマップ_** > 対象選択後<Cmdname sid="BTN07712" className="uitext" />画面へアクセス > **_トレース_**
 
 ## コンテナ化されたアプリケーショントレース
 
@@ -30,55 +30,55 @@ Kubernetes上で実行中のアプリケーションを追跡するには、Java
 
 ダッシュボードは、次のようなアプリケーションのコア情報を一目で確認できます。
 
-- ***Active Transaction***：現在実行中のトランザクションで、トランザクションの実行時間によって色分けされます。
+- **_Active Transaction_**：現在実行中のトランザクションで、トランザクションの実行時間によって色分けされます。
 
   - <span class='vslow'>赤色</span>(<span class='vslow'>Very slow</span>): 8秒以上
   - <span class='slow'>オレンジ色</span>(<span class='slow'>Slow</span>): 3秒~8秒
   - <span class='normal'>青色</span>(<span class='normal'>Normal</span>): 0秒~3秒
 
-- ***Active Transaction Count***(アクティブトランザクションの推移)
+- **_Active Transaction Count_**(アクティブトランザクションの推移)
 
-- ***Htimap***(ヒットマップ)：終了したトランザクションレスポンス時間の分布図
+- **_Htimap_**(ヒットマップ)：終了したトランザクションレスポンス時間の分布図
 
   - 横軸：トランザクションの終了時間
   - 縦軸：実行時間
   - 実行時間の長いトランザクションは、分布図の上部にあります。
   - 特定の領域をドラッグすると、トランザクション情報を確認できます
 
-- ***TPS***(Transaction Per Second)：毎秒処理されたトランザクション数
+- **_TPS_**(Transaction Per Second)：毎秒処理されたトランザクション数
 
-- ***Conrurrent User***：同時ユーザー
+- **_Conrurrent User_**：同時ユーザー
 
-- ***Apdex \* 100***(Application Performance Index)：ウェブアプリケーションのユーザー満足度の測定
+- **_Apdex \* 100_**(Application Performance Index)：ウェブアプリケーションのユーザー満足度の測定
 
-- ***HTTP Call Count***：HTTP呼び出し件数
+- **_HTTP Call Count_**：HTTP呼び出し件数
 
-- ***HTTP Call Error Count***：HTTP呼び出しエラー件数
+- **_HTTP Call Error Count_**：HTTP呼び出しエラー件数
 
-- ***SQL Count***
+- **_SQL Count_**
 
-- ***SQL Error Count***
+- **_SQL Error Count_**
 
-- ***Transaction Total Conunt***：トランザクション件数
+- **_Transaction Total Conunt_**：トランザクション件数
 
-- ***Transaction Error Conunt***：トランザクションError件数
+- **_Transaction Error Conunt_**：トランザクションError件数
 
-- ***Response Time***：レスポンス時間
+- **_Response Time_**：レスポンス時間
 
-- ***Heap Memory Usage***：Heap Memory使用量、使用可能な最大/現在のメモリ
+- **_Heap Memory Usage_**：Heap Memory使用量、使用可能な最大/現在のメモリ
 
   - 時間の経過に伴うメモリ使用量の変化をリアルタイムに把握可能
   - PythonのProcess Totalメモリ使用量
 
-- ***ThreadCount***：Thread件数、Node.js、Pythonを除く
+- **_ThreadCount_**：Thread件数、Node.js、Pythonを除く
 
-- ***GC Count***：GC回数、Node.js、Pythonを除く
+- **_GC Count_**：GC回数、Node.js、Pythonを除く
 
-- ***GC Old Generation Count***：Old領域のGC回数、Node.js、Pythonを除く
+- **_GC Old Generation Count_**：Old領域のGC回数、Node.js、Pythonを除く
 
 ## トレース分析
 
-ダッシュボード内***Hitmap***で照会を希望する区間をドラッグすると***トレース分析***を確認できます。トランザクション一覧から目的のトランザクションを選択した後、各トランザクションの下位のステップ情報を一度に確認できます。 
+ダッシュボード内**_Hitmap_**で照会を希望する区間をドラッグすると**_トレース分析_**を確認できます。トランザクション一覧から目的のトランザクションを選択した後、各トランザクションの下位のステップ情報を一度に確認できます。 
 
 :::note 
 
