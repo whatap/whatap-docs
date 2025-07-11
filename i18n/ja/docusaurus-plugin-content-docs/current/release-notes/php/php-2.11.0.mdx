@@ -6,57 +6,43 @@ pagination_next: release-notes/php/php-2_10_0
 displayed_sidebar: releaseSidebar
 ---
 
-2025年07月09日
-
-* <Status priority='0'>Fixed</Status> whatap-php.service の登録および実行に失敗する問題を修正
-
-  * 新規インストール時に environment の値が欠落している場合、接続情報（アクセスキーおよびサーバーアドレス）を認識できず、エージェントが非活性化されることがあります。
-
-    以下のコマンドを実行することで手動で設定可能です。
-
-    ```bash title='php command'
-    1. /usr/whatap/php/install.sh
-    2. cp /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service
-    ```
-    
-  * 既存のインストール環境では、アップデート時に正常に適用されます。
-
 2025年06月18日
 
-* <Status priority='0'>Feature</Status> CPU負荷の軽減
+- <Status priority='0'>Feature</Status> CPU負荷の軽減
 
-  * モニタリング対象判定基準の変更によりCPU負荷を削減
+  - モニタリング対象の判定基準を変更することで、CPU負荷を軽減しました。
 
-  * ユーザー関数モニタリングを無効化するとさらにCPU負荷が減少
+  - ユーザー関数モニタリング無効化時の追加負荷を軽減
 
     `whatap.profile_method_enabled=false`
 
-* <Status priority='1'>New</Status> CLIパラメーターのURL表示
+- <Status priority='1'>New</Status> CLI呼び出しパラメータのURL表示
 
-  * CLI実行時、パラメーターを含むURLを収集
+  - CLI呼び出し時にパラメータを含めてURLを収集
 
-  * 例）php /home/www/test.php aaa bbb → /home/www/test.php aaa bbbとして記録
+    - 例) php /home/www/test.php aaa bbb
+      → /home/www/test.php aaa bbb として表示
 
-* <Status priority='1'>New</Status> fileパラメーター情報の収集
+- <Status priority='1'>New</Status> fileパラメーター情報の収集
 
-  * 最大20個、各256バイトまでパラメーター情報を一部収集
+  - 最大20個まで、各256byteまでのパラメーターの一部のみを収集します。
 
-* <Status priority='0'>Fixed</Status> メモリリーク修正
+- <Status priority='0'>Fixed</Status> メモリリークを修正しました
 
-  * DB関数の失敗時、error関数呼び出しによるメモリリークを修正
+  - DB関数の失敗時にerror関数が呼び出されることによるメモリリークを修正
 
 :::info
 
 **ダウンロード**
 
-| OS名                             |  ファイル形式  | アーキテクチャ |                                      ダウンロード                                     |
-| ------------------------------- | :------: | :-----: | :-----------------------------------------------------------------------------: |
-| Red Hat / CentOS / Amazon linux |    RPM   | x86 x64 |  [ダウンロード](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.11-0.x86_64.rpm)  |
-| \^                              |    \^    | aarch64 | [ダウンロード](https://repo.whatap.io/centos/7/aarch64/whatap-php-2.11-0.aarch64.rpm) |
-| Ubuntu 12 and above / Debian    |    DEB   |  amd64  |   [ダウンロード](https://repo.whatap.io/debian/unstable/whatap-php_2.11.0_amd64.deb)  |
-| \^                              |    \^    |  arm64  |   [ダウンロード](https://repo.whatap.io/debian/unstable/whatap-php_2.11.0_arm64.deb)  |
-| Alpine linux                    | tar gzip | x86 x64 |     [ダウンロード](https://repo.whatap.io/alpine/x86_64/whatap-php-2.11.0.tar.gz)     |
-| \^                              |    \^    | aarch64 |     [ダウンロード](https://repo.whatap.io/alpine/aarch64/whatap-php-2.11.0.tar.gz)    |
-| Freebsd 10以降                    |    TXZ   | x86 x64 |        [ダウンロード](https://repo.whatap.io/freebsd/10/whatap-php-2.11.0.txz)        |
+| OS名                             |  ファイル形式  | アーキテクチャ |                                     ダウンロード                                    |
+| ------------------------------- | :------: | :-----: | :---------------------------------------------------------------------------: |
+| Red Hat / CentOS / Amazon linux |    RPM   | x86 x64 | [ダウンロード](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.11-0.x86_64.rpm) |
+| \^                              |    \^    | aarch64 | [다운로드](https://repo.whatap.io/centos/7/aarch64/whatap-php-2.11-0.aarch64.rpm) |
+| Ubuntu 12 and above / Debian    |    DEB   |  amd64  |   [다운로드](https://repo.whatap.io/debian/unstable/whatap-php_2.11.0_amd64.deb)  |
+| \^                              |    \^    |  arm64  |  [ダウンロード](https://repo.whatap.io/debian/unstable/whatap-php_2.11.0_arm64.deb) |
+| Alpine linux                    | tar gzip | x86 x64 |    [ダウンロード](https://repo.whatap.io/alpine/x86_64/whatap-php-2.11.0.tar.gz)    |
+| \^                              |    \^    | aarch64 |    [ダウンロード](https://repo.whatap.io/alpine/aarch64/whatap-php-2.11.0.tar.gz)   |
+| Freebsd 10以降                    |    TXZ   | x86 x64 |       [ダウンロード](https://repo.whatap.io/freebsd/10/whatap-php-2.11.0.txz)       |
 
 :::

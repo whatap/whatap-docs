@@ -22,7 +22,7 @@ npm install whatap
 
 ## エージェント設定ファイルの作成する
 
-プロジェクトのルート(Root)パスに*whatap.con*ファイルを作成して必要な設定を追加します。 エージェント設定の詳細については、[次の文書](set-agent)を参照にしてください。
+プロジェクトのルート(Root)パスに*whatap.conf*ファイルを作成して必要な設定を追加します。 エージェント設定の詳細については、[次の文書](set-agent)を参照にしてください。
 
 ```ini title='whatap.conf'
 license={ACCESS_KEY}
@@ -63,7 +63,7 @@ node -r whatap .output/server/index.mjs
 
 ## Docker環境で実行する
 
-Docker環境でNuxtアプリケーションを実行するには_Dockerfile_で、次の手順を追加で作成します。
+Docker環境でNuxtアプリケーションを実行するには*Dockerfile*で、次の手順を追加で作成します。
 
 1. _.output/server_ディレクトリに移動します。
 
@@ -83,7 +83,7 @@ Docker環境でNuxtアプリケーションを実行するには_Dockerfile_で�
 
    :::
 
-3. *whatap.con*ファイルを作成・設定します。
+3. *whatap.conf*ファイルを作成・設定します。
 
 4. 設定済みの_.output/server_パスを`WORKDIR`にコピーします。
 

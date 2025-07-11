@@ -1,0 +1,59 @@
+---
+id: log-search-query
+title: WhaTap log search query 文法
+description: WhaTapログ検索で使用できる、WhaTap log search query文法に関するドキュメントです。
+keywords:
+  - ログモニタリング
+  - ログ
+  - ログの探索
+  - UI
+toc_max_heading_level: 4
+---
+
+:::tip
+
+サポートされるフィールドタイプは `Number` と `String` の2種類のみです。
+
+:::
+
+```
+1. **Equal**
+    * `field : value`
+
+1. **Not**
+    * `not field : value`
+
+1. **Wildcard** (`String`タイプのフィールドのみ使用可能、検索値の前後に `"` は不)
+    * `field : val*`
+
+1. **Exist**
+    * `field : *`
+
+1. **Range** (`Number`タイプのフィールドのみ使用可能)
+    * `<`, `>`, `<=`, `>=` が使用可能
+    * 例: `field < 30 and field >= 10`
+
+1. **Combining Multiple Queries**
+    * AND 例: `field < 30 and field >= 10`
+    * OR 例: `field < 30 or field >= 10`
+
+1. **Grouping**
+    * 例: `(field < 30 or field >= 10) and other : 70`
+
+1. **Escaping Special Characters**
+    * Luceneでエスケープが必要な特殊文字一覧: `&&` `||` `!` `( )` `{ }` `^` `"` `~` `*` `?` `:` `\` `/`
+    * 文字の前に `\` を付けてエスケープする
+    * 例: `(1+1):2` を検索するには `\(1\+1\)\:2`
+```
+
+## **検索インデックスフィールドタイプ**
+
+サポートされるフィールドタイプは `Number` と `String` の2種類のみです。
+
+- `Number`: Long、double、floatタイプの数値値
+
+  - 使用例： `field : "value"`
+
+- `String`: メール本文のような全文テキスト
+
+  - 使用例： `field : value`

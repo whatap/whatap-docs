@@ -72,7 +72,7 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### 設定したメソッド開始時間をトレースに記録する
 
-1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.con*ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
 
    ```ini title='$WHATAP_HOME/whatap.conf'
    hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*
@@ -95,7 +95,7 @@ Javaエージェントプラグインは、メソッドの開始/終了部分に
 
 ### 設定したメソッド終了時間と実行時間をトレースに記録する
 
-1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.con*ファイルに記述してください。
+1. Javaエージェント`hook_trace_helper_patterns`オプションに適用するメソッドを*whatap.conf*ファイルに記述してください。
 
    ```ini title='$WHATAP_HOME/whatap.conf'
    hook_trace_helper_patterns=org.apache.catalina.connector.RequestFacade.*

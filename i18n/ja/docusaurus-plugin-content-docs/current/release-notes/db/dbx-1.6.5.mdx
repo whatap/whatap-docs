@@ -9,7 +9,7 @@ displayed_sidebar: releaseSidebar
 
 - エージェントアップデート機能の追加: MySQL、PostgreSQL製品の`node_state`メトリクスを追加
 
-- *whatap.con*ファイルの`slow_query_log`オプションの大文字と小文字の区別しないように修正
+- *whatap.conf*ファイルの`slow_query_log`オプションの大文字と小文字の区別しないように修正
 
 - xosエージェントのtcp通信機能を追加
 
@@ -51,7 +51,7 @@ displayed_sidebar: releaseSidebar
 
 - `uptime`メトリクスを追加
 
-- **Aurora PostgreSQL**：`instance_name`メトリクスを取得するために追加していた*whatap.con*ファイルの`rds_instance={instance_name}`オプションを`cloud_watch_instance`に変更
+- **Aurora PostgreSQL**：`instance_name`メトリクスを取得するために追加していた*whatap.conf*ファイルの`rds_instance={instance_name}`オプションを`cloud_watch_instance`に変更
 
   ```ini title=whatap.conf
   cloud_watch_instance={instance_name}
@@ -59,7 +59,7 @@ displayed_sidebar: releaseSidebar
 
 ## Oracle
 
-***テーブルスペースサイズ***メニューにtempファイルサイズの検索機能を追加
+**_テーブルスペースサイズ_**メニューにtempファイルサイズの検索機能を追加
 
 ## MySQL
 
@@ -82,7 +82,7 @@ displayed_sidebar: releaseSidebar
 
 ## Tibero
 
-- ***テーブルスペースサイズ***メニューにtempファイルサイズの検索機能を追加
+- **_テーブルスペースサイズ_**メニューにtempファイルサイズの検索機能を追加
 
 - `session stat`収集時、API使用機能を追加
 
@@ -98,7 +98,7 @@ displayed_sidebar: releaseSidebar
 
 - テーブルサイズ増減のバージョン別の内容を修正
 
-- `pageSize`データベースパラメータの内容を追加、CUBRID `tps`、`qps`、`psize`、`executions`メトリクス追加、CUBRID `broker`がbroker1またはｍquery_editorでない場合、*whatap.con*ファイルの`broker=`に記入
+- `pageSize`データベースパラメータの内容を追加、CUBRID `tps`、`qps`、`psize`、`executions`メトリクス追加、CUBRID `broker`がbroker1またはｍquery_editorでない場合、*whatap.conf*ファイルの`broker=`に記入
 
   ```ini title=whatap.conf
   broker=broker1,broker2,query_editor
@@ -114,7 +114,7 @@ displayed_sidebar: releaseSidebar
 
 ## Redis
 
-`active session`収集のon/off機能を追加(*whatap.con*ファイルに`active_session=true/false`を追加)
+`active session`収集のon/off機能を追加(*whatap.conf*ファイルに`active_session=true/false`を追加)
 
 ```ini title=whatap.conf
 active_session=true/false

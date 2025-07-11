@@ -38,7 +38,7 @@ RUN tar -xvzf whatap-agent.tar.gz -C /
 
 ## エージェント設定
 
-ユーザーアプリケーションの実行パスに、WhaTapのアクセスキー、サーバーIPアドレス情報を入力した*whatap.con*ファイルを作成してください。 特定のパスを使用する場合は、環境変数`WHATAP_HOME`に設定できます。
+ユーザーアプリケーションの実行パスに、WhaTapのアクセスキー、サーバーIPアドレス情報を入力した*whatap.conf*ファイルを作成してください。 特定のパスを使用する場合は、環境変数`WHATAP_HOME`に設定できます。
 
 ```docker title='whatap.conf'
 RUN echo "accesskey={アクセスキー}" >> whatap.conf
@@ -53,7 +53,7 @@ RUN echo "whatap.server.host={収集サーバーのIPアドレス}" >> whatap.co
 
 ### `WHATAP_HOME`環境変数の設定
 
-*whatap.con*ファイルパスを`WHATAP_HOME`環境変数として設定できます。 まず、`WHATAP_HOME`パスを作成してください。 アプリケーション実行構文の前に`WHATAP_HOME`設定を追加します。 
+*whatap.conf*ファイルパスを`WHATAP_HOME`環境変数として設定できます。 まず、`WHATAP_HOME`パスを作成してください。 アプリケーション実行構文の前に`WHATAP_HOME`設定を追加します。 
 
 ```bash
 mkdir ./whatap_home

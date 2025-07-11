@@ -1,36 +1,108 @@
-ホーム画面&gt;プロジェクト選択&gt; <Cmdname sid="laboratory" className="uitext" /> &gt; ***Top SQL***
+ホーム画面&gt;プロジェクト選択&gt; <Cmdname sid="laboratory" className="uitext" /> &gt; **Top SQL**
 
-***TOP SQL***は、既存のSQL統計メニューの機能を拡張し、長い期間データを照会して分析できます。 最大30日~最低1分単位で照会でき、分析指標をタブの形で提供して一目で見ることができます。 また、推移チャートを追加して特定時間のSQL発生パターンを簡単に把握できます。
+**TOP SQL**は、既存のSQL統計メニューの機能を拡張し、長い期間データを照会して分析できます。 最大30日~最低1分単位で照会でき、分析指標をタブの形で提供して一目で見ることができます。 また、推移チャートを追加して特定時間のSQL発生パターンを簡単に把握できます。
 
 ## 基本画面ガイド
 
-<InDoc product='mysql,oracle,oracle-pro'><ImgLang img='db-top-sql-stat.png' desc='Top SQL' /></InDoc>
+<ImgLang img='db-top-sql-stat.png' desc='Top SQL' />
 
-1. ![数字1](/img/number-01.png) <Cmdname sid="time" className="uitext" />でデータを照会する時間と日付を選択します。 緑のボタンを選択して照会時間を選択することもできます。
+1. **時間**でデータを照会する日時を選択してください。 
 
-2. ![数字1](/img/number-01.png) <Cmdname sid="instance" className="uitext" />でデータを照会する対象を選択します。
+   - 緑のボタンをクリックして照会時間を選択するか、日付と時間のテキストエリアをクリックすると、日付と時間をオプションとして選択できます。
 
-3. ![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
+2. **インスタンス**でデータを照会する対象を選択してください。
+
+3. **フィルター**条件を追加してください。 **フィールド**で**フィルター**に追加するカラムを簡単に検索して追加できます。 
+
+4. <Cmdname sid="TTL07773" className="uitext" />でテーブルに表示する件数を設定してください。
+
+   - データは 10 ~100件までテーブルに表示します。
+
+5. ![検索アイコン](/img/ico-btn-search.png)ボタンをクリックします。
+
+   - 照会した内容をCSV形式のファイルでダウンロードするには、![ダウンロードアイコン](/img/ico-download.svg)ボタンをクリックしてください。
+
+   - テーブルヘッダーの各カラムをクリックすると、選択したカラムをソートすることができます。
 
 :::note
 
-- 日付と時間テキスト領域をクリックして、日付と時間を選択するオプションを表示します。
-
-- テーブルヘッダーの各カラムをクリックすると、選択したカラムをソートすることができます。
-
-- データは 10 ~100件までテーブルに表示します。 <Cmdname sid="TTL07773" className="uitext" />から、テーブルに表示する件数を設定できます。 設定が完了した後<LinkImage img="ico-btn-search.png" className="ico" />ボタンをクリックします。
-
-- 照会した内容をCSV形式のファイルにダウンロードするには、![ダウンロードアイコン](/img/ico-download.svg)ボタンを選択します。
-
-- <Cmdname sid="time" className="uitext" />オプションの利用方法の詳細については、[次の文書](usage-ui#timeselector)を参照してください。
+<Cmdname sid="time" className="uitext" />オプションの使用方法については、[次のドキュメント](usage-ui#timeselector)をご参照ください。
 
 :::
+
+### フィルタリング条件の設定
+
+目的のデータを素早く見つけるために、フィールド条件を追加したり、フィルター条件を設定することができます。
+
+#### サイドバーフィールドからフィルターに条件を追加する
+
+**フィールド**でフィールド名を確認し、検索して希望の条件のデータを照会できます。 
+
+- フィールド検索機能を使って、目的のフィールドを素早く見つけることができます。
+
+- フィールドの種類は、![文字アイコン](/img/ico-string.svg)（文字タイプ）、![フィールドアイコン](/img/ico-field.svg)（数値タイプ）アイコンで区別できます。
+
+1. 필드 목록에서 원하는 항목에 마우스를 올리면, 해당 필드의 데이터 타입에 따라 조건 아이콘이 나타납니다. 
+
+   - `String`（文字）タイプのフィールド条件：`=`（含む）、`!=`（含まない）
+
+   - `Number`（数値）タイプのフィールド条件：`==`（等しい）、`≥`（以上）、`≤`（以下）
+
+2. 希望する条件アイコンをクリックして、値を入力します。 
+
+3. **適用**ボタンをクリックしてフィールド条件を追加します。
+
+#### 上部オプションからフィルターに条件を追加する
+
+1. <Cmdname sid="filter" className="uitext" />オプションで<LinkImage img="ico-add.svg" className="ico" />アイコンをクリックしてください。
+
+2. <Cmdname sid="TTL06740" className="uitext" />項目で目的のフィルタリング基準を選択します。
+
+   - 選択した項目の値が文字に該当する場合は<Cmdname sid="includes" className="uitext" />(青)、<Cmdname sid="excludes" className="uitext" />(赤) の条件を選択できます。
+
+     <InDoc pages="stat,top-sql"><ImgLang img="db-sql-filter-condition-color.png" desc="example" multi /></InDoc>
+
+     <InDoc pages="analysis-sql"><ImgLang img="db-sql-analysis-filter-condition-color.png" desc="example" multi /></InDoc>
+
+3. <Cmdname sid="condition" className="uitext" />項目で条件を選択し、一致させる文字列または数値を入力してください。
+
+4. <Cmdname sid="apply" className="uitext" />ボタンをクリックします。
+
+   - フィルタリング条件を追加するには、<Cmdname sid="bsm_button_add" className="uitext" />ボタンをクリックし、1～4の手順を繰り返してください。 追加した条件は、AND(`&&`) 条件として適用されます。
+
+#### フィルター条件を削除する
+
+- 特定の条件を削除するには、フィルター条件の右側にある![削除アイコン](/img/ico-trash.svg)ボタンをクリックしてください。
+
+- すべての条件を削除するには、![削除アイコン](/img/ico-trash.svg)<Cmdname sid="BTN06616" className="uitext" />ボタンをクリックしてください。
+
+- <Cmdname sid="filter" className="uitext" />オプションに適用された条件をすばやく削除するには、<LinkImage img="ico-close.svg" className="ico" />ボタンをクリックしてください。
+
+:::note
+
+<InDoc pages="stat,top-sql">
+
+```
+`sqlText`に「WhaTap」が含まれている場合は、除外するようにデフォルトで設定されています。
+
+<ImgLang img='db-sql-filter-default.png' desc='WhaTap' />
+```
+
+</InDoc>
+
+:::
+
+#### フィルター条件を修正する
+
+1. <Cmdname sid="filter" className="uitext" />オプションに適用されている項目をクリックします。
+
+2. <Cmdname sid="TTL06737" className="uitext" />画面で希望する項目を修正し、<Cmdname sid="apply" className="uitext" />ボタンをクリックしてください。
 
 ### Trendsチャートを確認する {#trends-chart}
 
 <InDoc product='mysql,oracle,oracle-pro'><ProdImg img='db-top-sql-trends-chart.png' desc='Top SQL' /></InDoc>
 
-![数字 3](/img/number-03.png) ***Trends*** チャートのSQL統計データ収集周期とデータ照会範囲は、以下の基準によって異なります。 
+**Trends** チャートのSQL統計データ収集周期とデータ照会範囲は、以下の基準によって異なります。 
 
 - **3時間以下**
   - **SQL統計データ収集サイクルオプションが1分に設定された場合**: 1分間隔でデータ収集

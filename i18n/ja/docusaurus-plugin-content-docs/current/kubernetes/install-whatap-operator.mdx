@@ -1,0 +1,359 @@
+---
+id: install-whatap-operator
+title: Whatap Operator インストール
+description: WhaTap Operator インストールガイド
+keywords:
+  - Kubernetes
+  - Kubernetesモニタリング
+  - Whatap Operator
+  - アプリケーションインストール
+toc_max_heading_level: 3
+---
+
+このガイドでは、Kubernetes 環境に WhaTap Operator をインストールし、`WhatapAgent` CR を設定して WhaTap モニタリングを開始する方法について説明します。
+
+## インストール前の確認事項
+
+- Kubernetes クラスター（v1.19 以上）
+- Helm 3.2 以上
+- WhaTap アカウントおよびライセンスキー
+
+## インストール方法
+
+次の手順に従って WhaTap Operator をインストールし、`WhatapAgent` CR を作成します。
+
+1. **WhaTap Operator をインストールします。**
+
+   - 初めてエージェントをインストールするユーザーは、以下のコマンドを実行してください。
+
+   ```bash
+   helm repo add whatap https://whatap.github.io/helm/
+   helm repo update
+   ```
+
+   ```bash
+   kubectl create ns whatap-monitoring
+   export WHATAP_HOST=<収集サーバーのIP>
+   export WHATAP_LICENSE=<WhaTapライセンス>
+   export WHATAP_PORT=<WhaTapポート>
+   kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal WHATAP_LICENSE=$WHATAP_LICENSE --from-literal WHATAP_HOST=$WHATAP_HOST --from-literal WHATAP_PORT=$WHATAP_PORT
+   helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
+   ```
+
+   - 既存のWhaTap Kubernetesエージェントのユーザーは、次のコマンドを実行してエージェントをインストールします。
+
+   ```yaml
+   kubectl delete ns whatap-monitoring
+   kubectl delete clusterrole whatap
+   kubectl delete clusterrolebinding whatap
+   kubectl create ns whatap-monitoring
+   kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal license=$WHATAP_LICENSE --from-literal host=$WHATAP_HOST --from-literal port=$WHATAP_PORT
+   helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
+   ```
+
+   :::note
+
+   既存の *yaml* ファイルまたは helm 方式で WhaTap Kubernetes エージェントをインストールした場合、クリーンインストールが必要です。 既存の Kubernetes エージェントを削除した後、Operator の使用を推奨します。
+
+   :::
+
+   - Operator は Deployment としてデプロイされます。 以下のコマンドで Operator が正常にデプロイされたかを確認します。
+
+   ```bash
+   kubectl get pods -n whatap-monitoring | grep -i operator
+   ```
+
+   - コマンドの実行結果として、`whatap-operator` Pod が **Running** 状態である必要があります。
+     <ImgLang img='whatap-operator-running-pod.png' desc='whatap-operator-pod' />
+
+2. **WhatapAgent CR を作成します。**
+
+   - 以下のコマンドで WhatapAgent カスタムリソースを作成します。
+
+   ```yaml
+   kubectl apply -f values.yaml
+   ```
+
+   - `WhatapAgent` CR は、WhaTap エージェントのデプロイと構成を定義します。 K8s エージェント、APM の自動インストール、Open Agent を使用した OpenMetrics の収集を設定できます。
+
+### 最小構成
+
+基本的な Kubernetes モニタリングのために、Whatap マスターエージェントとノードエージェントを有効にする最小構成です。
+
+```yaml title='values-min.yaml'
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+      gpuMonitoring:
+        enabled: false
+```
+
+最小構成でインストールすると、以下のように `whatap-master-agent`, `whatap-node-agent` が追加でインストールされます。
+
+<ImgLang img='whatap-operator-whatapagent-cr.png' desc='whatap-master-agent, whatap-node-agent' />
+
+### 基本構成
+
+```yaml
+
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    ### APM 自動インストールを使用する場合はコメントを解除 - アプリケーション Pod に APM エージェントを自動で注入し、アプリケーションのパフォーマンスをモニタリングします。
+    # apm:
+    #   instrumentation:
+    #     targets:
+    #       - name: hello-world
+    #         enabled: true
+    #         language: "java"          # 対応言語:: java, python, nodejs
+    #         whatapApmVersions:
+    #           java: "2.2.58"          # 使用する APM エージェントバージョン
+    #         namespaceSelector:
+    #           matchNames:
+    #             - default             # モニタリング対象アプリケーションのあるネームスペース
+    #         podSelector:
+    #           matchLabels:
+    #             app: "hello-world"    # モニタリング対象アプリケーション Pod のラベル
+    #         config:
+    #           mode: default           # APM エージェントモード設定
+    
+    ### K8s モニタリングを使用する場合はコメントを解除 - Kubernetes クラスター、ノード、コンテナのモニタリングを有効にします。
+    # k8sAgent:
+    #   masterAgent:
+    #     enabled: true                 # マスターエージェントを有効化（クラスター単位のメトリクス収集）
+    #   nodeAgent:
+    #     enabled: true                 # ノードエージェントを有効化（ノードおよびコンテナ単位のメトリクス収集）
+    ### GPU モニタリング使用時はコメントを解除 - NVIDIA GPU メトリクス収集を有効にします。
+    #   gpuMonitoring:
+    #     enabled: true                 # GPU モニタリング有効化（NVIDIA DCGM-EXPORTER が whatap-node-agent サイドカーとしてインストールされます）
+    
+    ### オープンメトリクス（Prometheus 形式のメトリクス収集）使用時はコメントを解除
+    # openAgent:
+    #     enabled: true                 # OpenAgent 有効化
+    #     targets:
+    #       - targetName: kube-apiserver
+    #         type: ServiceMonitor      # 対象タイプ: ServiceMonitor, PodMonitor, StaticEndpoints
+    #         namespaceSelector:
+    #           matchNames:
+    #             - "default"           # メトリクスを収集するネームスペース
+    #         selector:
+    #           matchLabels:
+    #             component: apiserver  # メトリクスを収集するサービス/Pod のラベル
+    #             provider: kubernetes
+    #         endpoints:
+    #           - port: "https"         # メトリクスエンドポイントのポート
+    #             path: "/metrics"      # メトリクスパス
+    #             interval: "30s"       # スクレイピング間隔
+    #             scheme: "https"       # HTTP スキーム（http または https）
+    #             tlsConfig:
+    #               insecureSkipVerify: true  # TLS 証明書検証をスキップ
+        #         metricRelabelConfigs:
+        #           - source_labels: ["__name__"]
+        #             regex: "apiserver_request_total"  # 収集対象のメトリクスフィルタ
+        #             action: "keep"                    # 一致するメトリクスのみ保持
+```
+
+## 様々な構成例
+
+WhaTapオペレーターは、対応するKubernetesエージェントの他に、APM自動インストール、カスタムメトリックエージェントのインストールをサポートしています。 以下の構成例を参考にインストールできます。
+
+### GPU モニタリング
+
+Kubernetesモニタリングエージェントをインストールせず、WhaTapノードエージェントPodにDCGM-EXPORTERコンテナをサイドカーとしてデプロイします。 
+ユーザーは特別な構成を行わずに、以下の YAML を適用するだけで、収集されるメトリクスは **GPU ダッシュボード** で確認できます。
+
+:::note
+
+ノードエージェントに内蔵されたサイドカーではなく、直接 DCGM-EXPORTER を構成した場合は、[OpenAgent（オープンエージェント）構成](openagent) ドキュメントを参照して dcgm オープンメトリクスを収集することができます。
+
+:::
+
+#### GPUモニタリング自動インストール
+
+```yaml title='GPU 모니터링 자동 설치'
+    apiVersion: monitoring.whatap.com/v2alpha1
+    kind: WhatapAgent
+    metadata:
+      name: whatap
+    spec:
+      features:
+        openAgent:
+          enabled: true  # Open Agent 有効化
+        k8sAgent:
+          masterAgent:
+            enabled: true
+          nodeAgent:
+            enabled: true
+          gpuMonitoring:
+            enabled: true  # GPUモニタリングを有効にします
+```
+
+> 参考,自動インストール時、Open Agentは自動的にDCGM Exporterを検出し、スクレイピングを行います。
+
+#### GPUノードのトレランス設定
+
+GPUノードにテイントがある場合は、トレランスを追加する必要があります。
+
+```yaml title='GPU 노드 톨러레이션 설정'
+    apiVersion: monitoring.whatap.com/v2alpha1
+    kind: WhatapAgent
+    metadata:
+      name: whatap
+    spec:
+      features:
+        k8sAgent:
+          nodeAgent:
+            enabled: true
+            tolerations:
+              - key: "nvidia.com/gpu"
+                operator: "Exists"
+                effect: "NoSchedule"
+              - key: "gpu"
+                operator: "Exists"
+                effect: "NoSchedule"
+          gpuMonitoring:
+            enabled: true
+```
+
+### APM自動インストール
+
+Kubernetesモニタリングエージェントを有効にせず、Kubernetesクラスター内に存在するAPMを自動インストールします。  
+
+:::note
+
+詳細は[APM自動インストール構成](install-auto-application-agent)のドキュメントを参照してください。
+
+:::
+
+```yaml title='APM 자동 설치'
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: hello-world
+            enabled: true
+            language: "java"
+            whatapApmVersions:
+              java: "2.2.58"
+            namespaceSelector:
+              matchNames:
+                - default
+            podSelector:
+              matchLabels:
+                app: "hello-world"
+            config:
+              mode: default
+```
+
+### OpenAgent
+
+KubernetesモニタリングやAPM計測を有効にせず、Prometheusスタイルのメトリクスを収集するためのOpenAgentコンポーネントのみを構成します。 
+
+:::note
+
+詳細は[オープンエージェント構成](openagent)のドキュメントを参照してください。
+
+:::
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    openAgent:
+        enabled: true
+        targets:
+          - targetName: kube-apiserver
+            type: ServiceMonitor
+            namespaceSelector:
+              matchNames:
+                - "default"
+            selector:
+              matchLabels:
+                component: apiserver
+                provider: kubernetes
+            endpoints:
+            - port: "https"
+              path: "/metrics"
+              interval: "30s"
+              scheme: "https"
+              tlsConfig:
+                insecureSkipVerify: true
+              metricRelabelConfigs:
+                - source_labels: ["__name__"]
+                  regex: "apiserver_request_total"
+                  action: "keep"
+```
+
+### KubernetesモニタリングとAPM計測を併用
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: hello-world
+            enabled: true
+            language: "java"
+            whatapApmVersions:
+              java: "2.2.58"
+            namespaceSelector:
+              matchNames:
+                - default
+            podSelector:
+              matchLabels:
+                app: "hello-world"
+            config:
+              mode: default
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+    openAgent:
+        enabled: true
+        targets:
+          - targetName: kube-apiserver
+            type: ServiceMonitor
+            namespaceSelector:
+              matchNames:
+                - "default"
+            selector:
+              matchLabels:
+                component: apiserver
+                provider: kubernetes
+            endpoints:
+            - port: "https"
+              path: "/metrics"
+              interval: "30s"
+              scheme: "https"
+              tlsConfig:
+                insecureSkipVerify: true
+              metricRelabelConfigs:
+              - source_labels: ["__name__"]
+                regex: "apiserver_request_total"
+                action: "keep"
+```

@@ -1,32 +1,71 @@
-ユーザーに新しい機能や実験的な機能を提供するメニューです。 サイドメニューの![実験室アイコン](/img/ic-laboratory.svg) <Cmdname sid="side_lab" className="uitext" />メニューまたは<Cmdname sid="sitemap" className="uitext" />メニューにてアクセスできます。 商品によって提供する機能が異なる場合があります。
+ユーザーに新機能または試験的な機能を提供します。 サイドメニューの ![実験室アイコン](/img/ic-laboratory.svg) <Cmdname sid="side_lab" className="uitext" /> または <Cmdname sid="sitemap" className="uitext" /> からアクセスできます。 商品によって提供する機能が異なる場合があります。
+
+:::tip
+
+**サイトマップから実験室メニューにアクセスする**
+
+サイドメニューに ![実験室アイコン](/img/ic-laboratory.svg) <Cmdname sid="side_lab" className="uitext" /> が表示されていない場合は、![サイトマップアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> からアクセスできます。
+
+1. 画面左下の ![サイトマップアイコン](/img/ic-sitemap.svg) <Cmdname sid="sitemap" className="uitext" /> アイコンをクリックしてください。 
+
+2. <Cmdname sid="sitemap" className="uitext" /> ウィンドウの右下にある <Cmdname sid="side_lab" className="uitext" /> セクションで、目的のメニューを選択してください。
+
+:::
 
 :::caution
 
-<Cmdname sid="side_lab" className="uitext" />メニューの機能は現在開発中のベータ版であり、予期しないエラーが発生する可能性があります。 <Cmdname sid="side_lab" className="uitext" />メニューの機能を使用する際は注意を払い、重要データを取り扱う環境や運用システムでの使用は、お勧めしません。 フィードバックや問題点に対するお問い合わせは、サポートチーム([support@whatap.io](mailto:support@whatap.io))まで連絡ください。
+**注意**
+
+<Cmdname sid="side_lab" className="uitext" />の機能は現在開発中のベータ版であり、予期しないエラーが発生する可能性があります。  
+この機能を使用する際は、十分ご注意ください。 重要なデータがある環境や運用環境では使用することをお勧めしません。 フィードバックや問題点に対するお問い合わせは、サポートチーム([support@whatap.io](mailto:support@whatap.io))まで連絡ください。
 
 :::
 
 <Xclude product="npm">
 
-- <Cmdname sid="side_tagFlex" className="uitext" />
+#### <Cmdname sid="side_tagFlex" className="uitext" />
 
-  **MXQL**は、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。 プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会し、活用するために使います。 **MXQL**についての詳細は [次の文書](../mxql/mxql-overview)を参照してください。
+  **MXQL**は、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。 プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会し、活用するために使います。 **MXQL**에 대한 자세한 내용은 [다음 문서](../mxql/mxql-overview)를 참고하세요.
 
 </Xclude>
 
-<InDoc product="java">
+<InDoc product="java,php,python,dotnet">
 
-- <Cmdname sid="side_collectionMap" className="uitext" />
+#### ビジネスダッシュボード
 
-  JVMに指定されたクラス(Class)が使用しているCollection(例、`java.util.Map`)に関する情報を提供します。 この機能を使用するには、次のエージェントオプションを追加します。
-
-  ```ini title="whatap.conf"
-  collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource
-  ```
+비즈니스 대시보드는 애플리케이션의 비즈니스 단위(App Context)별 성능을 모니터링할 수 있는 대시보드입니다.
+URL 패턴이나 경로를 기반으로 정의된 각 비즈니스 항목에 대해 실시간 및 과거의 성능 데이터를 조회하고 분석할 수 있습니다.
+TPS, 응답시간, 에러율 등의 주요 성능 지표를 비즈니스 단위로 확인함으로써, 특정 업무나 서비스의 성능 상태를 빠르게 파악할 수 있습니다.
+자세한 내용은 [다음 문서](dashboard-business)를 참고하세요.
 
   :::note
 
-  この機能は[Javaエージェント2.1.2バージョン](../release-notes/java/java-2_1_2#collectionmonitor) 以降から対応します。
+  **에이전트 지원 버전**
+
+- **Java**: 2.2.40 이상
+- **PHP**: 2.11.0 이상
+- **Python**: 1.8.5 이상
+- **.NET**: 2.4.3 이상
+
+:::
+
+</InDoc>
+
+<InDoc product="java">
+
+#### <Cmdname sid="side_collectionMap" className="uitext" />
+
+  JVM에 지정된 클래스(Class)가 사용하는 Collection(예. `java.util.Map`)の情報を提供します。 この機能を使用するには、次のエージェントオプションを追加します。
+
+```ini title="whatap.conf"
+collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource
+```
+
+  :::note
+
+  **에이전트 지원 버전**
+
+  [Javaエージェント2.1.2バージョン](../release-notes/java/java-2_1_2#collectionmonitor) 以降から対応します。
 
   :::
 
@@ -34,26 +73,22 @@
 
 <InDoc product="java">
 
-- <Cmdname sid="side_remoteAccessStatus" className="uitext" />
+#### <Cmdname sid="side_remoteAccessStatus" className="uitext" />
 
   アプリケーションエージェントの設定により、各モニタリング対象ごとの外部(remote) 呼び出しに対する成功/失敗の有無を記録したログを視覚化して提供します。
 
-  :::note
+  이 기능을 이용하려면 아래 옵션을 에이전트 설정(*whatap.conf*) 파일에 추가하거나 <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> 메뉴에서 추가하세요.
 
-  この機能を利用するには、次のオプションをエージェント設定(*whatap.con*)ファイルに追加するか、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" />メニューに追加します。
-
-  ```ini title="whatap.conf"
-  logsink_rt_enabled=true
-  logsink_enabled=true
-  ```
-
-  :::
+```ini title="whatap.conf"
+logsink_rt_enabled=true
+logsink_enabled=true
+```
 
 </InDoc>
 
 <InDoc product="kubernetes">
 
-- <Cmdname sid="side_pendingPod" className="uitext" />
+#### <Cmdname sid="side_pendingPod" className="uitext" />
 
   Podのステータスとエラーメッセージを確認してクラスターのリソースステータス、ネットワークポリシー、スケジューラログなどを検討するのに役立つ機能を提供します。
 
@@ -67,40 +102,32 @@
 
 <InDoc product="java,php,python,golang,dotnet,nodejs,server,kubernetes">
 
-- <Cmdname sid="side_alertTemplate" className="uitext" />
+#### <Cmdname sid="side_alertTemplate" className="uitext" />
 
-  プロジェクトメンバーにメールまたはサードパーティープラグインを通じて伝える、アラート通知メッセージを修正できるユーザー定義機能を提供します。 詳細については、[次の文書](set-notification-message)を参照にしてください。
+  プロジェクトメンバーにメールまたはサードパーティープラグインを通じて伝える、アラート通知メッセージを修正できるユーザー定義機能を提供します。 詳しい内容は、[次の文書](set-notification-message)を参照してください。
 
 </InDoc>
 
 <InDoc product="browser,npm">
 
-- <Cmdname sid="side_metricsSearch" className="uitext" />
+#### <Cmdname sid="side_metricsSearch" className="uitext" />
 
-  フィールドとタグに基づいて、カテゴリのごとに特定のメトリクスを照会できます。 詳細については、[次の文書](metrics-search)を参照にしてください。
+  フィールドとタグに基づいて、カテゴリのごとに特定のメトリクスを照会できます。 자세한 내용은 [다음 문서](metrics-search)를 참고하세요.
 
 </InDoc>
 
 <InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,mssql,mssql-v1,cubrid,cubrid-v1,tibero,altibase,altibase-v1,db2">
 
-- <Cmdname sid="side_dbScriptManager" className="uitext" />
+#### <Cmdname sid="side_dbScriptManager" className="uitext" />
 
-  エージェントのインストールパスにSQLスクリプトを保存すると、WhaTapモニタリングサービス画面でそのスクリプトを読んで、リアルタイムで実行結果を照会できます。 詳細については、[次の文書](../reference/script-manager)を参照してください。
+  エージェントのインストールパスにSQLスクリプトを保存すると、WhaTapモニタリングサービス画面でそのスクリプトを読んで、リアルタイムで実行結果を照会できます。 詳細については、[次のドキュメント](../reference/script-manager)を参照してください。
 
 </InDoc>
 
-:::tip
-
-サイドメニューで![実験室アイコン](/img/ic-laboratory.svg) <Cmdname sid="side_lab" className="uitext" />メニューが見えなかったら<Cmdname sid="sitemap" className="uitext" />でアクセスできます。
-
-サイドメニューの下に![サイトマップアイコン](/img/ic-sitemap.svg)ボタンを選択します。 <Cmdname sid="sitemap" className="uitext" />画面が表示されたら、右下の<Cmdname sid="side_lab" className="uitext" />セクションで希望するメニューを選択します。
-
-:::
-
 <InDoc product="oracle,oracle-pro,mysql">
 
-- <UI>Top SQL</UI>
+#### <UI>Top SQL</UI>
 
-  最大30日、最小1分単位でデータを照会でき、指標と推移チャートでSQL発生パターンを容易に把握できます。 詳細については、[次の文書](top-sql)を参考にしてください。
+  最大30日、最小1分単位でデータを照会でき、指標と推移チャートでSQL発生パターンを容易に把握できます。 詳細については、[次のドキュメント](top-sql)を参照してください。
 
 </InDoc>

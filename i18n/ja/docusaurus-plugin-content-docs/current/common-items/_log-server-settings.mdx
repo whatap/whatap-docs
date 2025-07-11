@@ -1,29 +1,22 @@
-- `stats_enabled`：収集状態データの収集有無を設定します。 既定値は`false`です。 値を`true`に設定してください。 `true`に設定すると次の`stats_category`で設定したカテゴリ(`logsink_stats`)で統計データが作成されます。
+- **`stats_enabled`**：収集ステータスデータの収集有無を設定します。 (既定値: `false`) 
 
-- `stats_category`：収集データを保存するメトリクスカテゴリを設定します。 値を`logsink_stats`に設定してください。 統計データのフィールドは次のとおりです。
+  - `true` に設定する必要があり、`stats_category` で設定したカテゴリ（`logsink_stats`）に統計データが生成されます。
 
-  - `file`
-  - `checkInterval`
-  - `encoding`
-  - `filepos`
-  - `checkedLocalTime`
-  - `lastupdatedLocalTime`
-  - `fileSize`
-  - `error`
-  - `firstCheck`
-  - `transferBytes`
+- **`stats_category`**：収集ステータスデータを保存するメトリクスカテゴリを設定します。 `logsink_stats`に設定する必要があります。 統計データのフィールドは次のとおりです。
 
-- `excludeNames`：ログのファイルパス（path）にアスタリスク（\*）が含まれた場合、ログの非対象ファイルを除外するようにファイル名を設定できます。 コンマ(,)区切り文字として複数設定することができます。
+  > 保存される統計データフィールド: `file` `checkInterval` `encoding` `filepos` `checkedLocalTime` `lastupdatedLocalTime` `fileSize` `error` `firstCheck` `transferBytes`
+
+- **`excludeNames`**：ログファイルのパス（`path`）にアスタリスク（`*`）が含まれている場合、ログ収集対象外のファイル名を設定して除外することができます。 カンマ（`,`）を区切り文字として使用することで、複数の値を設定できます。
 
   ```ini title='Example'
   excludeNames = [ ".gz",".zip" ]
   ```
 
-- `nowrap_keywords`：行単位のログ検索時に、対応するオプション値として指定されたキーワードが検索される場合は、以前のログにマージします。
+- **`nowrap_keywords`**: 行単位のログ検索時に、このオプションで指定されたキーワードが検出されると、前のログと結合されます。
 
-- `pcode`: ログを送信する同じリージョンのプロジェクトコードを入力します。 
+- **`pcode`**: ログを送信する同じリージョンのプロジェクトコードを入力します。 
 
-- `license`: ログを送信する同じリージョンのプロジェクトのライセンスコードを入力します。
+- **`license`**: ログを送信する同じリージョンのプロジェクトのライセンスコードを入力します。
 
 :::note 
 

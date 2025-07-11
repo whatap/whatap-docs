@@ -15,17 +15,17 @@ keywords:
 
 - WhaTap Kubernetesエージェントの配布時、コンテナの`env`フィールドを通して設定できます。 
 
-- コンテナ内の*whatap.con*ファイルを修正して設定できます。 
+- コンテナ内の*whatap.conf*ファイルを修正して設定できます。 
 
-- *whatap.con*ファイル内のオプションがコンテナ`env`フィールドに設定されたオプションよりも高い優先順位を持ちます。 
+- *whatap.conf*ファイル内のオプションがコンテナ`env`フィールドに設定されたオプションよりも高い優先順位を持ちます。 
 
-- *whatap.con*またはコンテナ`env`に設定された値がない場合は、既定値が使用されます。
+- *whatap.conf*またはコンテナ`env`に設定された値がない場合は、既定値が使用されます。
 
 :::note 
 
 **コンテナ内のアプリケーションエージェントのオプション設定**
 
-コンテナ内のJava、Python、Node.jsなどのアプリケーションをモニタリングするために必要な設定を*whatap.con*ファイルに作成します。 *whatap.con*ファイルを使用して設定できるオプションの詳細については、次のリンクを参照してください。
+コンテナ内のJava、Python、Node.jsなどのアプリケーションをモニタリングするために必要な設定を*whatap.conf*ファイルに作成します。 *whatap.conf*ファイルを使用して設定できるオプションの詳細については、次のリンクを参照してください。
 
 - [Java - whatap.confの設定](../java/set-agent)
 
@@ -365,68 +365,68 @@ keywords:
 
 ### `kube_pod`
 
-- ***ダッシュボード*** > ***コンテナマップ***
+- **_ダッシュボード_** > **_コンテナマップ_**
 
   次の例の画像のPodビュー基準データは、`kube_pod`メトリクスの収集サイクルと収集サーバーの転送サイクルに影響を受けます。 
 
   <ImgLang img='k8s-set-agent-kube-pod-container-map.png' desc='コンテナマップPodビュー'/>
 
-- ***ワークロード*** > ***Podリスト***
+- **_ワークロード_** > **_Podリスト_**
 
   次の例のデータは、`kube_pod`メトリクスの収集サイクルと収集サーバーの転送サイクルに影響を受けます。
 
   ![Podリスト](/img/k8s-set-agent-kube-pod-pod-list.png)
 
-- ***ダッシュボード*** > ***性能サマリー***
+- **_ダッシュボード_** > **_性能サマリー_**
 
   `kube_pod`メトリクスを利用する<Cmdname sid="TTL07433" className="uitext" />チャートの更新サイクルに影響を受けます。 
 
 ### `container`
 
-- ***ダッシュボード*** > ***コンテナマップ*** 
+- **_ダッシュボード_** > **_コンテナマップ_** 
 
   次の例のコンテナビュー基準画面データの更新サイクルは、`container`メトリクスの影響を受けます。 
 
   <ImgLang img='k8s-set-agent-container-container-map.png' desc='コンテナマップコンテナビュー'/>
 
-- ***コンテナー*** > ***コンテナイメージ*** 
+- **_コンテナー_** > **_コンテナイメージ_** 
 
   次の例のデータは、`container`メトリクスの影響を受けます。
 
   ![コンテナイメージ](/img/k8s-set-agent-container-image.png)
 
-- ***ダッシュボード*** > ***性能サマリー*** 
+- **_ダッシュボード_** > **_性能サマリー_** 
 
   `container`メトリクスを利用する次のチャートの更新サイクルに影響を受けます。 
 
-  - ***エージェントが実行されているコンテナの数***
+  - **_エージェントが実行されているコンテナの数_**
 
-  - ***エージェントがインストールされているノードの数***
+  - **_エージェントがインストールされているノードの数_**
 
-  - ***Total Container CPU Request***
+  - **_Total Container CPU Request_**
 
-  - ***Total Container CPU Usage***
+  - **_Total Container CPU Usage_**
 
-  - ***Node CPU***
+  - **_Node CPU_**
 
-  - ***Node Memory***
+  - **_Node Memory_**
 
-  - ***Container CPU Usage by Request***
+  - **_Container CPU Usage by Request_**
 
-  - ***Container CPU Usage by Node***
+  - **_Container CPU Usage by Node_**
 
-  - ***Container Memory Working Set by Request***
+  - **_Container Memory Working Set by Request_**
 
-  - ***Container Memory Failure Count***
+  - **_Container Memory Failure Count_**
 
-  - ***Container CPU Throttling Time***
+  - **_Container CPU Throttling Time_**
 
-  - ***Container Network Receive Byte***
+  - **_Container Network Receive Byte_**
 
-  - ***Container Network Transmit Byte***
+  - **_Container Network Transmit Byte_**
 
-- ***クラスター*** > ***ノード詳細*** 
+- **_クラスター_** > **_ノード詳細_** 
 
-  次の例の***ノード詳細***画面で***コンテナ***一覧の更新サイクルは、`container`メトリクスの影響を受けます。
+  次の例の**_ノード詳細_**画面で**_コンテナ_**一覧の更新サイクルは、`container`メトリクスの影響を受けます。
 
   ![ノード詳細情報](/img/k8s-set-agent-node-detail.png)

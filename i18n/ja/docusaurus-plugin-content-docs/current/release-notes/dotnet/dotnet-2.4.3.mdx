@@ -8,49 +8,49 @@ displayed_sidebar: releaseSidebar
 
 2025年06月25日
 
-* <Status priority='1'>New</Status> メトリクス照会で `app_context_stat` カテゴリを追加
+- <Status priority='1'>New</Status> マトリクス照会で `app_context_stat` カテゴリを追加
 
-    * **app_context_enabled** <span class='type'>Boolean</span> 
+  - **app_context_enabled** <span class='type'>Boolean</span> 
 
-        * デフォルト値：`false`
+    - 既定値`false`
 
-        * `true` に設定すると、`app_context_stat` の収集機能が全体的に有効になります。
-    
-    * **app_context_parser**
-    
-        * `default`, `prefix`, `match` のいずれかを使用
+    - `true` に設定すると `app_context_stat` の収集機能がすべて有効になります。
 
-        * `default`：デフォルトパーサー（最初のパスセグメントを抽出）
+  - **app_context_parser**
 
-        * `prefix`：プレフィックスマッチパーサー（最も柔軟）
+    - `default`, `prefix`, `match` のいずれかを使用
 
-        * `match`：完全一致パーサー（正確な一致のみ）
-    
-    * **app_context_parser_reset** <span class='type'>Number</span> 
-    
-        * デフォルト値：`0`
+    - `default`: デフォルトパーサー（最初のパスセグメントを抽出）
 
-        * パーサーの内部キャッシュと設定を強制的にリセットするカウンター
-    
-    * **app_context_path_depth** <span class='type'>Number</span> 
-    
-        * デフォルト値：`1`
+    - `prefix`: 接頭辞マッチングパーサー（最も柔軟）
 
-        * URLから抽出するパスセグメントの深さを指定（defaultパーサーのみ使用）
+    - `match`: 完全一致マッチングパーサー（完全一致のみ）
 
-    * **app_context_path_set** <span class='type'>String</span> 
+  - **app_context_parser_reset** <span class='type'>Number</span> 
 
-        * 監視対象のパスと名称を定義するマッピング設定。複数設定する場合はカンマ（`,`）で区切ります。
+    - 既定値`0`
 
-        * 例：`name1@url1,name2@url2,url3,name4@url4`
+    - パーサーの内部キャッシュと設定を強制的にリセットするカウンター
 
-* <Status priority='1'>New</Status> URLを正規化した場合、元のURLをstepでも表示できるオプションを追加
+  - **app_context_path_depth** <span class='type'>Number</span> 
 
-    * **step_origin_url_enabled** <span class='type'>Boolean</span> 
+    - 既定値`1`
 
-        * デフォルト値：`false`
+    - URLから抽出するパスセグメントの深さを指定（defaultパーサーでのみ使用）
 
-* <Status priority='0'>Fixed</Status> URLを正規化した場合に、レコード要約で元のURLが表示されなかった問題を修正
+  - **app_context_path_set** <span class='type'>String</span> 
+
+    - モニタリング対象のパスとその名前をマッピングして設定します。複数設定する場合は`,`（カンマ）で区切ります。
+
+    - 例: `name1@url1,name2@url2,url3,name4@url4`
+
+- <Status priority='1'>New</Status> URLを正規化した場合、元のURLをstepにも表示するオプションを追加
+
+  - **step_origin_url_enabled** <span class='type'>Boolean</span> 
+
+    - 既定値`false`
+
+- <Status priority='0'>Fixed</Status> URLを正規化した場合、レコードサマリーに元のURLが表示されなかった現象を修正
 
 import DownloadAgent from "./_download-dotnet-agent.mdx";
 

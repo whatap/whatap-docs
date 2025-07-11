@@ -1,11 +1,11 @@
+import ProcessColumns from "../common-items/_db-process-column.mdx";
+
 <Tabs groupId="db-columns">
 
 <TabItem value="activesession" label="Active session">
 
 | 項目                | 説明                                                          |
 | ----------------- | ----------------------------------------------------------- |
-| `Instance Name`   | インスタンス名                                                     |
-| `id`              | connection識別子                                               |
 | `user`            | SQL実行アカウント                                                  |
 | `host`            | このスレッドが関連付けられたhostname                                      |
 | `db`              | default database名、 ない場合はNULL                                |
@@ -21,36 +21,22 @@
 
 <TabItem value="locktree" label="Lock tree">
 
-| 項目             | 説明                          |
-| -------------- | --------------------------- |
-| `holder type`  | holderセッションのtype            |
-| `lock mode`    | holder\_mode                |
-| `waiter type`  | waiterセッションのtype            |
-| `lock request` | waiter\_mode                |
-| `state`        | 現在プロセスが進行中の状態です。            |
-| `table`        | holder\_table\/waiter_table |
-| `index`        | holder\_index\/waiter_index |
+| 項目           | 説明                                                                                                               |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- |
+| Instance     | インスタンス（エージェント）名                                                                                                  |
+| id           | セッションID                                                                                                          |
+| holder_type  | ロックがどの対象に対してかかっているかを示します。<br />- RECORD: テーブルのレコード（行）レベルのロック<br />- TABLE: テーブル全体に対するロック                         |
+| holder_mode  | ホルダーセッションのロックモード<br />- S（Shared）: 共有ロック。 他のトランザクションによる読み取りは可能<br />- X（Exclusive）: 排他ロック。 他のトランザクションはアクセスできません。 |
+| waiter_type  | ロックがどの対象に対してかかっているかを示します。<br />holder_type の説明を参照してください。                                                         |
+| waiter_mode  | ロックを待機中のセッションのロックモードです。<br />holder_mode の説明を参照してください。                                                           |
+| table        | ロックを待機中のテーブル                                                                                                     |
+| index        | ロックを待機中のインデックス                                                                                                   |
 
 </TabItem>
 
 <TabItem value="process-info" label="Process information">
 
-次の項目は、XOSエージェントをインストールした場合に収集される指標です。
-
-| 項目         | 説明                                     |
-| ---------- | -------------------------------------- |
-| `cputime`  | CPU使用時間                                |
-| `cpuusage` | CPU使用率                                 |
-| `elapse`   | CPU使用経過時間                              |
-| `vsize`    | 仮想メモリサイズ(Kb)                           |
-| `rss`      | Resident Set Size(RSS)、プロセスに関連する物理ページ数 |
-| `state`    | プロセス状態                                 |
-| `ioread`   | ブロックの読み取りに費やされた実際の時間(milliseconds)     |
-| `iowrite`  | ブロックの書き込みに費やされた実際の時間(milliseconds)     |
-| `pss`      | プロセスの固有メモリ使用量 + 1つのプロセスが施入する共有メモリの割合   |
-| `uid`      | user id                                |
-| `cmd`      | 実行中のコマンド                               |
-| `longcmd`  | cmdの絶対パス                               |
+<ProcessColumns />
 
 </TabItem>
 

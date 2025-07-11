@@ -5,17 +5,20 @@ pagination_next: release-notes/db/dbx-2_54_01
 displayed_sidebar: releaseSidebar
 ---
 
-2025年6月18日
+2025年06月18日
 
-#### 共通
+### 共通
 
 <Status priority='0'>Fixed</Status> データベース解消アラートのバグを修正
 
-#### PostgreSQL
+### PostgreSQL
 
-<Status priority='1'>New</Status> PostgreSQLのSQL統計機能に `pg_stat_statements` スキーマ指定オプションを追加  
-    * オプション名：`statements_schema=`
+<Status priority='1'>New</Status> PostgreSQL SQL統計機能に `pg_stat_statements` スキーマ指定オプションを追加
 
-#### MS SQL Server
+```
+* オプション名: `statements_schema=`
+```
 
-<Status priority='0'>Fixed</Status> クエリテキストの先頭文字しか表示されないバグを修正
+### MS SQL Server
+
+<Status priority='0'>Fixed</Status> Query Textの先頭文字のみ表示されるバグを修正しました。

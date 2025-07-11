@@ -13,6 +13,14 @@ import ProdImg from '@site/src/components/ChangeImgName.js';
 
 WhaTap Naver Cloud Monitoring は、API連携によるメトリクスを定期的に収集します。収集対象サービスに該当するNaver Cloud Monitoringのネームスペースを5分間隔で必要なスタットを選択して収集します。モニタリング開始時にすべてのリージョンのユーザーリソースを検索し、ワンクリックでモニタリンが始まります。 
 
+:::caution
+
+**権限**
+
+インストールにはクラウドリソースの変更権限が必要です。
+
+:::
+
 WhaTapモニタリングサービスを使用するには、まず[会員登録](https://www.whatap.io/ja/signup/)後にプロジェクトを作成する必要があります。会員登録に関する詳細については、[次の文書](../account/account-manage)を参照してください。
 
 import Createprojectv2 from "../getting-started/_create-project-v2.mdx";
@@ -76,6 +84,6 @@ import Regionmetricstats from "../common-items/_region-metric-stats.mdx";
 
 - ![指示線a](/img/char-a.svg) 活性化トグル![アイコン](/img/ic-toggle-off.svg)がOFFの場合、データ収集が中止されます。
 
-- ![指示線b](/img/char-b.svg) ***ロール変更***ボタンをクリックし、***エージェント設定***画面から![指示線c](/img/char-c.svg) ***サービス初期化***を選択すると、すべてのメトリクス収集サービスが無効化されます。
+- ![指示線b](/img/char-b.svg) **_ロール変更_**ボタンをクリックし、**_エージェント設定_**画面から![指示線c](/img/char-c.svg) **_サービス初期化_**を選択すると、すべてのメトリクス収集サービスが無効化されます。
 
 - 費用発生を防止するためには、Naver Cloudアカウント管理 > 認証キー管理に移行して**API認証キー管理**項目の使用を中止します。
