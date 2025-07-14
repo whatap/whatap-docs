@@ -44,40 +44,40 @@ Kubernetes containerStdOutログはノードの*/var/log/containers/*パスの�
 
 #### 単一ネームスペースログの収集
 
-- **許容** ***log_filter_allow_list*** `*_infra_*`
+- 許容 **log_filter_allow_list** `*_infra_*`
 
 `infra`ネームスペースに存在するすべてのコンテナが収集対象として特定されます。
 
 #### マルチネームスペースログの収集
 
-- **許容** ***log_filter_allow_list*** `*_infra_*、*_monitoring_*`
+- 許容 **log_filter_allow_list** `*_infra_*、*_monitoring_*`
 
 `infra`、`monitoring`ネームスペースに存在するすべてのコンテナが収集対象として特定されます。
 
 #### 特定の単語を含むPodを除く
 
-- **許容** ***log_filter_allow_list*** `*_*_*`
+- 許容 **log_filter_allow_list** `*_*_*`
 
-- **除外** ***log_filter_deny_list*** `*prod*_*_*`
+- 除外 **log_filter_deny_list** `*prod*_*_*`
 
 すべてのコンテナが収集対象として特定されますが、`podName`に`prod`が含まれているログは除外されます。
 
 #### 特定の単語を含むPodログの収集
 
-- **許容** ***log_filter_allow_list*** `*prod*_*_*`
+- 許容 **log_filter_allow_list** `*prod*_*_*`
 
 `podName`に`prod`が含まれるPodのログのみが収集されます。
 
 #### マルチネームスペースログの収集と特定の単語を含むPodを除く
 
-- **許容** ***log_filter_allow_list*** `*_infra_*、*_monitoring_*`
+- 許容 **log_filter_allow_list** `*_infra_*、*_monitoring_*`
 
-- **除外** ***log_filter_deny_list*** `*prod*_*_*`
+- 除外 **log_filter_deny_list** `*prod*_*_*`
 
 `infra`、`monitoring`ネームスペースのログが収集され、`podName`に`prod`が含まれているログは除外されます。
 
 #### コンテナ名内の特定の単語で始まるコンテナログを除外
 
-- **許容** ***log_filter_allow_list*** `*_*_db-*`
+- 許容 **log_filter_allow_list** `*_*_db-*`
 
 すべてのネームスペースで`containerName`が`db`で始まるコンテナのログは除外されます。

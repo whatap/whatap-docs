@@ -1,12 +1,6 @@
 Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="log" className="uitext" /> tab
 
-You can set alerts by filtering the collected log data according to the conditions. Select **_+_** <Cmdname sid="add_notification" className="uitext" /> to set the log event alert. After all settings are finished, select <Cmdname sid="save" className="uitext" />.
-
-<Xclude product='postgresql,mysql'>
-
-<ImgLang img='log-alert-config.png' desc='Log notification setting' />
-
-</Xclude>
+You can set alerts by filtering the collected log data according to the conditions. Select **+** <Cmdname sid="add_notification" className="uitext" /> to set the log event alert. After all settings are finished, select <Cmdname sid="save" className="uitext" />.
 
 <InDoc product='postgresql,mysql'>
 
@@ -46,7 +40,7 @@ The following are common options that can be set when adding an event.
 
 - <Cmdname sid="event_tag" className="uitext" />: If you select an event receiving tag, alert notifications can be sent to project members and 3rd-party plug-ins with the tag. If the event receiving tag is not selected, alerts are sent to all project members.
 
-  If the tag is not added, alerts are sent to all members. Click **_+_** <Cmdname sid="add_tag" className="uitext" /> and then select alert receivers in <Cmdname sid="event_tag_list" className="uitext" />. Select **_+_** <Cmdname sid="create_new_eventtag" className="uitext" /> to add new tags.
+  If the tag is not added, alerts are sent to all members. Click **+** <Cmdname sid="add_tag" className="uitext" /> and then select alert receivers in <Cmdname sid="event_tag_list" className="uitext" />. Select **+** <Cmdname sid="create_new_eventtag" className="uitext" /> to add new tags.
 
   :::note
 
@@ -68,7 +62,7 @@ The following are common options that can be set when adding an event.
 
 - <Cmdname sid="alert_object_filtering" className="uitext" />: Select <Cmdname sid="ITM06429" className="uitext" />, <Cmdname sid="operator" className="uitext" />, and <Cmdname sid="ITM06430" className="uitext" /> through the <Cmdname sid="metrics_rule_select" className="uitext" /> option to filter the targets. Otherwise, select the <Cmdname sid="metrics_rule_direct" className="uitext" /> option. If there is no input, it determines whether or not to generate notifications for all data collected in real time.
 
-  > For example, among the logs in the `AppLog` category, it searches for the logs whose `level` is `ERROR`. An alert is sent when **_oid_** is **12345678** among the matching logs.
+  > For example, among the logs in the `AppLog` category, it searches for the logs whose `level` is `ERROR`. An alert is sent when **oid** is **12345678** among the matching logs.
 
 ## Add composite log event {#cp-log-event}
 
@@ -86,7 +80,7 @@ The following are common options that can be set when adding an event.
 
   - You can select <Cmdname sid="exclude" className="uitext" /> to exclude the selected search value from the event rules.
 
-  - You can select **_+_** <Cmdname sid="add" className="uitext" /> to add or exclude multiple event rule conditions.  
+  - You can select **+** <Cmdname sid="add" className="uitext" /> to add or exclude multiple event rule conditions.  
 
 - <Cmdname sid="alert_rule" className="uitext" />: Alerts are sent when events occur as many as the entered number and they occur by meeting the selected operator's condition.
 
@@ -102,7 +96,7 @@ The following are common options that can be set when adding an event.
 
 4. If the <Cmdname sid="event_setting" className="uitext" /> window appears, modify the options and then select <Cmdname sid="save" className="uitext" />.
 
-To delete the selected log event, select <Cmdname sid="delete" className="uitext" /> on the upper right of the Event Setting window.
+To delete the selected log event, select <Cmdname sid="delete" className="uitext" /> on the upper right of  <Cmdname sid="event_setting" className="uitext" /> window.
 
 ## Turning off the log event
 
@@ -112,17 +106,17 @@ To delete the selected log event, select <Cmdname sid="delete" className="uitext
 
 3. In the log event list, select the toggle button on the utmost right of the event to turn off the alert.
 
-If you select the toggle button again, the alert is enabled.
+    * If you select the toggle button again, the alert is enabled.
 
 ## Exporting and importing the log event
 
-After saving the log event settings in a json file, you can load them for reuse.
+After saving the log event settings in a JSON file, you can load them for reuse.
 
 1. Go to <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />.
 
 2. Select <Cmdname sid="log" className="uitext" /> tab.
 
-3. Select **_JSON_** ![Export icon](/img/ico-export.svg) on the log event list. The <Cmdname sid="export_json" className="uitext" /> window appears.
+3. Select **JSON** ![Export icon](/img/ico-export.svg) on the log event list. The <Cmdname sid="export_json" className="uitext" /> window appears.
 
 4. Modify or edit the items to export.
 
@@ -132,13 +126,13 @@ After saving the log event settings in a json file, you can load them for reuse.
 
 7. If the file selection window appears, select the downloaded json file.
 
-8. If the <Cmdname sid="import_json" className="uitext" /> window appears, modify the content and then select ***+*** <Cmdname sid="add_to_list" className="uitext" />.
+8. If the <Cmdname sid="import_json" className="uitext" /> window appears, modify the content and then select **+** <Cmdname sid="add_to_list" className="uitext" />.
 
 :::note 
 
 **ID exists in the event. After deleting the ID, try again.**
 
-- If a message appears, in the <Cmdname sid="import_json" className="uitext" /> window, delete the `id` and then select **_+_** <Cmdname sid="add_to_list" className="uitext" />.
+- If a message appears, in the <Cmdname sid="import_json" className="uitext" /> window, delete the `id` and then select **+** <Cmdname sid="add_to_list" className="uitext" />.
 
 - To overwrite an existing item, delete the `id` item and then select <Cmdname sid="overwrite" className="uitext" />.
 
