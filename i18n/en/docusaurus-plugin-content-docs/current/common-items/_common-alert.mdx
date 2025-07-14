@@ -10,11 +10,17 @@ If excessive events occur in a short period of time in the project, the WhaTap s
 
 The criteria for blocking events are as follows:
 
-1. If an agent has **10** events within **1 minute**, the events from the agent are blocked.
+1. **Agent-level blocking**
 
-2. If there are **3** or more** agents blocking events within **1 minute** in case of **1\*\*, the events are blocked for all projects.
+    If an agent has **10** events within **1 minute**, the events from the agent are blocked.
 
-3. If **100** events occur within **1 minute** in a project, events occurring across all projects are blocked.
+2. **Full blocking when multiple agents are blocked**
+
+    If there are **3** or more** agents blocking events within **1 minute** in case of **1\*\*, the events are blocked for all projects.
+
+3. **Project-level blocking**
+
+    If **100** events occur within **1 minute** in a project, events occurring across all projects are blocked.
 
 ### How to release blocking
 

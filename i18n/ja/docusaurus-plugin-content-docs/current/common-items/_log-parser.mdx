@@ -192,7 +192,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 1. GROKパターンパーサを適用するには、<Cmdname sid="side_logSetting" className="uitext" />メニューの<Cmdname sid="log_parser_setting_primary" className="uitext" />タブに移動します。
 
-2. **_+_** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**_GROK_**パーサを選択します。
+2. **+** <Cmdname sid="adding" className="uitext" />を選択した後<Cmdname sid="parser" className="uitext" />入力欄で**GROK**パーサを選択します。
 
 3. <Cmdname sid="BTN08593" className="uitext" />ボタンを選択すると、右側にパターン登録とシミュレーション画面が表示されます。
 
@@ -228,7 +228,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 
 - ログパーサ一覧から該当パーサの<Cmdname sid="ITM06352" className="uitext" />を変更するか、<Cmdname sid="enable" className="uitext" />および<Cmdname sid="edit" className="uitext" />、<Cmdname sid="delete" className="uitext" />できます。 
 
-- **_パーサーシミュレーション_**後、パターンを登録できます。 
+- **パーサーシミュレーション**後、パターンを登録できます。 
 
 :::
 
@@ -270,15 +270,15 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
    2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
    ```
 
-   例のログで**_Prefix_**と**_Postfix_**を`--`に指定し、**_Ignore_**に`url`を指定時`host`、`method`、`status`3つ<Cmdname sid="tag" className="uitext" />のみ生成します。
+   例のログで**Prefix**と**Postfix**を`--`に指定し、**Ignore**に`url`を指定時`host`、`method`、`status`3つ<Cmdname sid="tag" className="uitext" />のみ生成します。
 
-   - **_Prefix_**\
+   - **Prefix**
      ログでJSONフォーマットが開始する場所を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
 
-   - **_Postfix_**\
+   - **Postfix**
      ログでJSONフォーマットが終わる位置を指定します。 ログ全体がJSONフォーマットの場合は、空の値に設定します。
 
-   - **_Ignore_**\
+   - **Ignore**
      JSONフォーマットの中でタグを生成しないキーを指定します。
 
 5. シミュレーションの成功時<Cmdname sid="simulation_result" className="uitext" />と<Cmdname sid="TTL08604" className="uitext" />を照会できます。
@@ -319,7 +319,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"}
 ```
 
-上記のようなサンプルログが収集された場合<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で**_JSON_**パーサを選択します。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な<Cmdname sid="tag" className="uitext" />を次のように抽出できます。
+上記のようなサンプルログが収集された場合<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面で**JSON**パーサを選択します。 複雑なパーシングロジックを作成する必要なく、ログ分析に必要な<Cmdname sid="tag" className="uitext" />を次のように抽出できます。
 
 ```javascript title='Tag extraction'
 - host : 10.21.3.24
@@ -334,7 +334,7 @@ projectCode logCategiry dexBuildStartTime {area=areaEnum, city=cityEnum} dexBuil
 2023-08-08 02:43:28,615 -- {"host":"10.21.3.24","method":"POST","status":"200","url":"http://devote.whatap.io/yard/api/flush"} --
 ```
 
-もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は**_Prefix_**と**_Postfix_**を指定してください。 WhaTapログモニタリングは**_Prefix_**と**_Postfix_**間の領域をJSONフォーマットで認識してからパーシングします。
+もし、例のようにログの一部のみがJSONフォーマットで構成されている場合は**Prefix**と**Postfix**を指定してください。 WhaTapログモニタリングは**Prefix**と**Postfix**間の領域をJSONフォーマットで認識してからパーシングします。
 
 ```javascript title='Tag extraction'
 - host : 10.21.3.24
