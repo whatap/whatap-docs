@@ -1,5 +1,42 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_6/",
+    "ver": "v1.8.6",
+    "date": "2025-07-15",
+    "Lists": [
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added an option to display the original URL in step traces when URL normalization is applied</p>",
+        "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><p>Default: <code>false</code></p></li></ul>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added tracing options for standalone Python processes</p>",
+        "details": "<ul><li><p><strong>standalone_enabled</strong> <span class='type'>Boolean</span></p><p>Default: <code>false</code></p></li><li><p><strong>standalone_type</strong> <span class='type'>String</span></p>\n<br /><p><code>single-transaction</code>: Default. Monitors as a single transaction</p>\n<br /><p><code>multiple-transaction</code>: Allows transaction tracing at the module, class, or method level</p></li><li><p><strong>standalone_transaction_patterns</strong> <span class='type'>String</span></p>\n<br /><p>No default value</p>\n<br /><p>Format: <code>[MODULE]:[CLASS].[FUNC]</code> or <code>[MODULE]:[FUNC]</code></p>\n<br /><p>Example: <code>myPackage:MyClass.__init__, myPackage:my_function</code></p></li></ul>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added tracing support for the <code>Neo4j</code> driver module (v5.0 and above)</p>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the original URL was not displayed in record summaries when URL normalization was applied</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/en/release-notes/python/python-1_8_5/",
     "ver": "v1.8.5",
     "date": "2025-06-18",

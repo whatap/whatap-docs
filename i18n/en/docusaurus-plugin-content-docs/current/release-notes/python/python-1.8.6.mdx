@@ -1,0 +1,39 @@
+---
+id: python-1_8_6
+title: Python Agent v1.8.6
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_5
+displayed_sidebar: releaseSidebar
+---
+
+July 15, 2025
+
+- <Status priority='1'>New</Status> Added an option to display the original URL in step traces when URL normalization is applied
+    
+    * **step_origin_url_enabled** <span class='type'>Boolean</span>
+        * `false`: Default
+
+- <Status priority='1'>New</Status> Added tracing options for standalone Python processes
+    
+    * **standalone_enabled** <span class='type'>Boolean</span>
+        * `false`: Default
+
+    * **standalone_type** (Choose between `single-transaction` and `multiple-transaction`)
+        * `single-transaction`: Default. Monitors the Python execution as a single transaction
+        * `multiple-transaction`: Allows transaction points to be defined at the module, class, or method level
+
+    * **standalone_transaction_patterns** <span class='type'>String</span>
+        * No default value
+        * Used with the multiple-transaction option to define which modules, classes, and methods to monitor
+        * Format: `[MODULE_NAME]:[CLASS_NAME].[FUNCTION_NAME]` or `[MODULE_NAME]:[FUNCTION_NAME]`. Use commas (`,`) to specify multiple patterns
+        * Example: `myPackage:MyClass.__init__, myPackage:my_function`
+
+- <Status priority='1'>Feature</Status> Added tracing support for the `Neo4j` driver module (only supported from v5.0 and above)
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where the original URL was not displayed in record summaries when URL normalization was applied.
+
+:::note
+
+Agent download: [whatap-python v1.8.6](https://pypi.org/project/whatap-python/1.8.6/)
+
+:::
