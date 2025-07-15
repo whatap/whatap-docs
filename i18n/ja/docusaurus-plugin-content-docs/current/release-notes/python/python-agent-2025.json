@@ -1,5 +1,42 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_6/",
+    "ver": "v1.8.6",
+    "date": "2025-07-15",
+    "Lists": [
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> URL を正規化した場合、元の URL を step に表示するオプションを追加</p>",
+        "details": "<ul><li><p><strong>step_origin_url_enabled</strong> <span class='type'>Boolean</span></p><p>デフォルト値 <code>false</code></p></li></ul>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> standalone Python プロセスのトレースオプションを追加</p>",
+        "details": "<ul><li><p><strong>standalone_enabled</strong> <span class='type'>Boolean</span></p><p>デフォルト値 <code>false</code></p></li><li><p><strong>standalone_type</strong> <span class='type'>String</span></p>\n<br /><p><code>single-transaction</code>: デフォルト、1 トランザクションとしてモニタリング</p>\n<br /><p><code>multiple-transaction</code>: モジュール・クラス・メソッド単位でトランザクションを指定可能</p></li><li><p><strong>standalone_transaction_patterns</strong> <span class='type'>String</span></p>\n<br /><p>デフォルトなし</p>\n<br /><p>形式: <code>[MODULE]:[CLASS].[FUNC]</code> または <code>[MODULE]:[FUNC]</code></p>\n<br /><p>例: <code>myPackage:MyClass.__init__, myPackage:my_function</code></p></li></ul>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>Neo4j</code> ドライバモジュールのトレース機能を追加（v5.0 以上）</p>"
+      },
+      {
+        "ver": "v1.8.6",
+        "hash": "v186",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> URL を正規化した場合、レコードサマリーで元の URL が表示されない問題を修正</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/ja/release-notes/python/python-1_8_5/",
     "ver": "v1.8.5",
     "date": "2025-06-18",

@@ -1,0 +1,39 @@
+---
+id: python-1_8_6
+title: Python Agent v1.8.6
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_5
+displayed_sidebar: releaseSidebar
+---
+
+2025年07月15日
+
+- <Status priority='1'>New</Status> URL を正規化した場合、元の URL を step に表示するオプションを追加
+
+    * **step_origin_url_enabled** <span class='type'>Boolean</span>  
+        * `false`: デフォルト値
+
+- <Status priority='1'>New</Status> standalone Python プロセスのトレースオプションを追加
+
+    * **standalone_enabled** <span class='type'>Boolean</span>  
+        * `false`: デフォルト値
+
+    * **standalone_type** (`single-transaction`, `multiple-transaction` のいずれかを使用)  
+        * `single-transaction`: デフォルト、Python 実行全体を 1 トランザクションとしてモニタリング  
+        * `multiple-transaction`: 指定したモジュール・クラス・メソッド単位でトランザクションポイントを設定しトレース
+
+    * **standalone_transaction_patterns** <span class='type'>String</span>  
+        * デフォルトなし  
+        * multiple-transaction オプションにおいて、モニタリング対象のモジュール・クラス・メソッドを定義するオプション  
+        * `[MODULE_NAME]:[CLASS_NAME].[FUNCTION_NAME]` または `[MODULE_NAME]:[FUNCTION_NAME]` 形式で指定  
+        * カンマ(,) 区切りで複数のメソッドパターンを指定可能  
+        * 例：`myPackage:MyClass.__init__, myPackage:my_function`
+
+- <Status priority='1'>Feature</Status> `Neo4j` ドライバモジュールのトレース機能を追加（v5.0 以上のみサポート）
+
+- <Status priority='0'>Fixed</Status> URL を正規化した場合、レコードサマリーで元の URL が表示されない問題を修正
+:::note
+
+Agent download: [whatap-python v1.8.6](https://pypi.org/project/whatap-python/1.8.6/)
+
+:::
