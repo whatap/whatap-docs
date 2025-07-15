@@ -9731,10 +9731,6 @@
     "width": 600,
     "height": 638
   },
-  "event-history-add-acknowledge.png": {
-    "width": 600,
-    "height": 636
-  },
   "event-history-en.png": {
     "width": 1200,
     "height": 708
@@ -13138,10 +13134,6 @@
   "log-alert-config-ja.png": {
     "width": 1322,
     "height": 706
-  },
-  "log-alert-config.png": {
-    "width": 1320,
-    "height": 627
   },
   "log-alert-cp-en.png": {
     "width": 962,
@@ -17199,10 +17191,6 @@
     "width": 400,
     "height": 135
   },
-  "receive-untag-event.png": {
-    "width": 400,
-    "height": 122
-  },
   "registeredapps.png": {
     "width": 1200,
     "height": 859
@@ -18739,10 +18727,6 @@
     "width": 600,
     "height": 328
   },
-  "set-event-huge-message.png": {
-    "width": 600,
-    "height": 455
-  },
   "set-event-item-db-en.png": {
     "width": 1200,
     "height": 66
@@ -19655,10 +19639,6 @@
     "width": 600,
     "height": 307
   },
-  "ui-home/main-ui-realtime-notification-resolve.png": {
-    "width": 600,
-    "height": 306
-  },
   "ui-home/main-ui-realtime-notification-select-time-en.png": {
     "width": 600,
     "height": 510
@@ -19676,10 +19656,6 @@
     "height": 324
   },
   "ui-home/main-ui-realtime-notification-settings-ja.png": {
-    "width": 600,
-    "height": 324
-  },
-  "ui-home/main-ui-realtime-notification-settings.png": {
     "width": 600,
     "height": 324
   },

@@ -2,12 +2,6 @@
 
 収集したログデータを条件に合わせてフィルタリングすることで、警告通知を設定できます。 **_+_** <Cmdname sid="add_notification" className="uitext" />ボタンをクリックして、ログイベントの警告通知を設定します。 すべての設定を完了した後<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
-<Xclude product='postgresql,mysql'>
-
-<ImgLang img='log-alert-config.png' desc='ログ通知設定' />
-
-</Xclude>
-
 <InDoc product='postgresql,mysql'>
 
 <ImgLang img='db-log-alert-config.png' desc='ログ通知設定' />
@@ -38,7 +32,7 @@
 
 - <Cmdname sid="level" className="uitext" />：<Cmdname sid="fatal" className="vslow" />、<Cmdname sid="warning" className="slow" />、<Cmdname sid="info" className="info" />次のいずれかのレベルを選択します。
 
-- <Cmdname sid="message" className="uitext" />：イベント発生時に出力する通知メッセージを入力します。 `&#36;&#123;Tag&#125;`または`&#36;&#123;Field&#125;`を入力してメッセージに変数を適用できます。 変数に入力するキーは、選択したメトリクスデータ<Cmdname sid="category" className="uitext" />にある値を入力します。
+- <Cmdname sid="message" className="uitext" />：イベント発生時に出力する通知メッセージを入力します。 `${Tag}`または`${Field}`を入力してメッセージに変数を適用できます。 変数に入力するキーは、選択したメトリクスデータ<Cmdname sid="category" className="uitext" />にある値を入力します。
 
 - <Cmdname sid="category" className="uitext" />：ログ区分の名称(ログフォルダ名)のリストから選択するか手動で入力します。
 
@@ -46,7 +40,7 @@
 
 - <Cmdname sid="event_tag" className="uitext" />：イベント受信タグを選択すると、該当タグを持つプロジェクトメンバーと3rd-partyプラグインに通知を送信できます。 イベント受信タグを選択しない場合は、プロジェクトの全体メンバーに警告通知を送信します。
 
-  タグを追加しない場合は、全体メンバーに警告通知を送信します。 **_+_** <Cmdname sid="add_tag" className="uitext" />をクリックし、<Cmdname sid="event_tag_list" className="uitext" />でアラート通知の受信対象を選択します。 **_+_** <Cmdname sid="create_new_eventtag" className="uitext" />を選択してタグを追加できます。
+  タグを追加しない場合は、全体メンバーに警告通知を送信します。 **+** <Cmdname sid="add_tag" className="uitext" />をクリックし、<Cmdname sid="event_tag_list" className="uitext" />でアラート通知の受信対象を選択します。 **+** <Cmdname sid="create_new_eventtag" className="uitext" />を選択してタグを追加できます。
 
   :::note
 
@@ -86,7 +80,7 @@
 
   - <Cmdname sid="exclude" className="uitext" />チェックボックスを選択して、選択した検索値をアラート通知条件から除外できます。
 
-  - **_+_** <Cmdname sid="add" className="uitext" />を選択して複数のイベントの発行条件を追加または除外に設定できます。  
+  - **+** <Cmdname sid="add" className="uitext" />を選択して複数のイベントの発行条件を追加または除外に設定できます。  
 
 - <Cmdname sid="alert_rule" className="uitext" />：入力した回数と選択したオペレーターの条件を果たしたイベントが発生した場合、アラート通知を送信します。
 
@@ -102,7 +96,7 @@
 
 4. <Cmdname sid="event_setting" className="uitext" />画面が表示されたら、オプションを変更して、<Cmdname sid="save" className="uitext" />ボタンを選択します。
 
-選択したログイベントを削除するには、イベント設定画面の右上にある<Cmdname sid="delete" className="uitext" />ボタンをクリックします。
+選択したログイベントを削除するには、<Cmdname sid="event_setting" className="uitext" />画面の右上にある<Cmdname sid="delete" className="uitext" />ボタンをクリックします。
 
 ## ログイベントの非活性化
 
@@ -112,17 +106,17 @@
 
 3. ログイベント一覧からアラート通知をオフにするイベント項目の右側にあるトグルボタンを選択します。
 
-もう一度トグルボタンをクリックすると、そのアラート通知がアクティブになります。
+    * もう一度トグルボタンをクリックすると、そのアラート通知がアクティブになります。
 
 ## ログイベントの書き込み／読み込み
 
-ログイベントの設定内容をjsonファイルとして保存し、読み込んで再利用することができます。
+ログイベントの設定内容をJSONファイルとして保存し、読み込んで再利用することができます。
 
 1. <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" />メニューに移動します。
 
 2. <Cmdname sid="log" className="uitext" />タブを選択します。
 
-3. ログイベント一覧の上にある**_JSON_**![書き出しアイコン](/img/ico-export.svg)ボタンをクリックします。 <Cmdname sid="export_json" className="uitext" />画面が表示されます。
+3. ログイベント一覧の上にある**JSON**![書き出しアイコン](/img/ico-export.svg)ボタンをクリックします。 <Cmdname sid="export_json" className="uitext" />画面が表示されます。
 
 4. エクスポートするアイテムを修正または編集します。
 
@@ -132,13 +126,13 @@
 
 7. ファイル選択ウィンドウが表示する前にダウンロードしたjsonファイルを選択します。
 
-8. <Cmdname sid="import_json" className="uitext" />画面が表示されたら、内容を修正して、***+*** <Cmdname sid="add_to_list" className="uitext" />ボタンを選択します。
+8. <Cmdname sid="import_json" className="uitext" />画面が表示されたら、内容を修正して、**+** <Cmdname sid="add_to_list" className="uitext" />ボタンを選択します。
 
 :::note 
 
 **イベントIDが存在します。 IDを削除した後、もう一度やり直してください。**
 
-- メッセージが表示されると、<Cmdname sid="import_json" className="uitext" />画面から`id`項目を削除し、**_+_** <Cmdname sid="add_to_list" className="uitext" />ボタンをクリックします。
+- メッセージが表示されると、<Cmdname sid="import_json" className="uitext" />画面から`id`項目を削除し、**+** <Cmdname sid="add_to_list" className="uitext" />ボタンをクリックします。
 
 - 既存のイベント項目を上書きする場合は、`id` 項目を削除し、<Cmdname sid="overwrite" className="uitext" />ボタンをクリックします。
 

@@ -1,0 +1,51 @@
+---
+id: log-search-query
+title: WhaTap Log Search Query Syntax
+description: Documentation for using WhaTap log search query syntax.
+keywords: [log monitoring, log, log explorer, UI]
+toc_max_heading_level: 4
+---
+
+:::tip
+
+This document describes the WhaTap log search query syntax used in the Log Explorer.
+
+:::
+
+1. **Equal**
+    * `field : value`
+
+2. **Not**
+    * `not field : value`
+
+3. **Wildcard** (Only applicable to `String`-type fields; do not use `"` around the value)
+    * `field : val*`
+
+4. **Exist**
+    * `field : *`
+
+5. **Range** (Only applicable to `Number`-type fields)
+    * Operators supported: `<`, `>`, `<=`, `>=`
+    * Example: `field < 30 and field >= 10`
+
+6. **Combining Multiple Queries**
+    * AND example: `field < 30 and field >= 10`
+    * OR example: `field < 30 or field >= 10`
+
+7. **Grouping**
+    * Example: `(field < 30 or field >= 10) and other : 70`
+
+8. **Escaping Special Characters**
+    * Special characters supported by Lucene escape: `&&` `||` `!` `( )` `{ }` `^` `"` `~` `*` `?` `:` `\` `/`
+    * Use `\` before the character to escape
+    * Example: To search `(1+1):2`, use `\\(1\\+1\\)\\:2`
+
+## Search Index Field Types
+
+Supported field types: `Number` and `String`
+
+* `Number`: Numeric values such as long, double, float  
+  * Use syntax like `field : "value"`
+
+* `String`: Full text such as email body  
+  * Use syntax like `field : value`
