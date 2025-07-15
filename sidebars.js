@@ -2656,7 +2656,15 @@ const sidebars = {
             'oracle-pro/common-alert'
           ],
         },
-        'oracle-pro/linked-projects',
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle-pro/linked-projects',
+          ],
+        },
         {
           type: 'category',
           label: '실험실',
