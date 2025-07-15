@@ -2663,6 +2663,7 @@ const sidebars = {
           collapsed: true,
           items: [
             'oracle-pro/linked-projects',
+            'oracle-pro/user-group-display-settings',
           ],
         },
         {
