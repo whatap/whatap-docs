@@ -196,7 +196,7 @@
 
 <Cmdname sid="side_logSetting" className="uitext" /> 上部の <Cmdname sid="log_parser_setting_primary" className="uitext" /> タブを選択すると、登録済みのパーサーを確認でき、追加や編集が可能なパーサー一覧が表示されます。 適用順にパーサーが評価され、最初に一致したパーサーのみが適用されます。
 
-- 右上の**_+_**<Cmdname sid="adding" className="uitext" />ボタンをクリックすると、<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
+- 右上の**+**<Cmdname sid="adding" className="uitext" />ボタンをクリックすると、<Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。
 
 - <Cmdname sid="ITM06352" className="uitext" />カラムの![](/img/ic-drag-drop.svg)アイコンをドラッグしてパーサの設定手順を変更できます。
 
@@ -278,7 +278,7 @@
 
 #### JSONフォーマットのパーサパターン登録 {#log-pattern-json}
 
-ログ全体または一部がJSON形式で出力される場合、JSONフォーマットのパーサを使用して、JSONに出力された部分をパーシングできます。 ログのうちJSON形式として出力された部分を検出するために、**_Prefix_**、**_Postfix_**オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。 JSONパーサの詳細は、[次の文書](log-parser#json-parser-detail)を参照してください。 シミュレーションが不可欠です。 
+ログ全体または一部がJSON形式で出力される場合、JSONフォーマットのパーサを使用して、JSONに出力された部分をパーシングできます。 ログのうちJSON形式として出力された部分を検出するために、**Prefix**、**Postfix**オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。 JSONパーサの詳細は、[次の文書](log-parser#json-parser-detail)を参照してください。 シミュレーションが不可欠です。 
 
 | オプション    | 説明                                                                                                             |
 | -------- | -------------------------------------------------------------------------------------------------------------- |
@@ -311,7 +311,7 @@
   io.whatap.logsink.parser.JsonFormatParser{}
   ```
 
-  ログのうちJSON形式として出力された部分を検出するために、**_Prefix_**、**_Postfix_**オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。
+  ログのうちJSON形式として出力された部分を検出するために、**Prefix**、**Postfix**オプションを組み合わせてログのどの部分をJSONとして認識してパーシングするかを指定します。
 
   `JsonFormatParser{}`の`{}`にオプションを指定します。
 
@@ -437,11 +437,11 @@
 
 <ImgLang img='log-flexboard-widget-chart-4xx5xx.png' desc='Log Flex board widget chart - 4xx5xx'/>
 
-- **_avg_**：照会期間のデータで平均値です。
+- **avg**：照会期間のデータで平均値です。
 
 - **max**：照会期間のデータで最大値です。
 
-- **_recently_**：照会期間のデータで最後の値です。
+- **recently**：照会期間のデータで最後の値です。
 
 ### 成功率をパーサから除外するステータスコード登録 {#log-pattern-status}
 
@@ -485,7 +485,7 @@
 
 1. 1つのプロジェクトにパーサ設定および<Cmdname sid="fast_index_setting" />を追加します。
 
-2. 各設定タブで画面右上に**_JSON_**![エクスポートアイコン](/img/ico-export.svg)ボタンを選択します。
+2. 各設定タブで画面右上に**JSON**![エクスポートアイコン](/img/ico-export.svg)ボタンを選択します。
 
 3. <Cmdname sid="export_json" className="uitext" />画面が表示されると、画面右上にある<Cmdname sid="export" className="uitext" />ボタンを選択します。
 
@@ -515,7 +515,7 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 <ImgLang img='log-long-term-archive.png' desc='ログ長期保存の統計'/>
 
-<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />タブで ***+*** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。 ***+*** <Cmdname sid="adding" className="uitext" />ボタンでルールを追加したり、作成したルールを***-***アイコンで削除できます。
+<Cmdname sid="logsink_mcube_config_statistics" className="uitext" />タブで **+** <Cmdname sid="adding" className="uitext" />ボタンを選択すると<Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> <Cmdname sid="add" className="uitext" />画面が表示されます。 ***+*** <Cmdname sid="adding" className="uitext" />ボタンでルールを追加したり、作成したルールを**-**アイコンで削除できます。
 
 #### 設定項目 {#log-long-term-archive-comp}
 
@@ -530,7 +530,7 @@ JSON設定ファイルをインポートして、<Cmdname sid="save" className="
 
 #### 例
 
-次のように設定を追加した場合、収集されたログのうち、statusが`200`, `300`のログを対象に**_TotalCount_**のキーで統計データを作成します。 
+次のように設定を追加した場合、収集されたログのうち、statusが`200`, `300`のログを対象に**TotalCount**のキーで統計データを作成します。 
 
 <ImgLang img='log-long-term-totalcount.png' desc='ログ長期保存の統計例'/>
 

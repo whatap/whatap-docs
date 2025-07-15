@@ -73,19 +73,19 @@ In the ![number 1](/img/number-01.png) area, check the agent settings, and then 
 
 <Xclude product='postgresql,mysql,oracle,oracle-pro'>
 
-Check the agent version and settings to start the log monitoring. Select **_Check Agent Configuration_** to follow the onscreen instructions.
+Check the agent version and settings to start the log monitoring. Select **Check Agent Configuration** to follow the onscreen instructions.
 
 - **Server Monitoring**
 
-  Under ***Apply***, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Node.js](log-nodejs), [Python](log-python), [Go](log-go).
+  Under **Apply**, check the application guides for each application. See the following guides: [Java](log-java), [PHP](log-php), [Node.js](log-nodejs), [Python](log-python), [Go](log-go).
 
 - **DB Monitoring**
 
-  Under ***Apply***, check each individual application guide. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in *whatap.conf*.
+  Under **Apply**, check each individual application guide. See [the following](log-server). According to the instructions, add the settings for the log monitoring target file in *whatap.conf*.
 
 - **Kubernetes Monitoring**
 
-  Under ***Apply***, check each individual application guide. See [the following](log-k8s). 
+  Under **Apply**, check each individual application guide. See [the following](log-k8s). 
 
 </Xclude>
 
@@ -156,11 +156,11 @@ If you have the **Edit Log** role, you can modify it with a new password in <Cmd
 
 ## Log primary parser setting {#log-setting-parser-1st}
 
-At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab to register and modify the log parser. The log primary parser provides the parsers for ***GROK*** and ***JSON***. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
+At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab to register and modify the log parser. The log primary parser provides the parsers for **GROK** and **JSON**. From the collected logs, the key data that matches the pattern conditions (search key and search value) is extracted. The parsed log keys are used for categorizing log types and indexing to search for specific logs. The parser is required to register for aggregating log occurrence counts by type or quickly finding specific logs.
 
-- **_GROK_**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
+- **GROK**: This parsing is based on the regular expression by default. It provides parsing based on the reserved keywords.
 
-- **_JSON_**: Batch parsing is provided for the JSON output parts of the logs.
+- **JSON**: Batch parsing is provided for the JSON output parts of the logs.
 
 :::note 
 
@@ -198,7 +198,7 @@ For more information about the log parser, see [the following](log-parser).
 
 If you select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab at the top of <Cmdname sid="side_logSetting" className="uitext" />, you can see the **Parser List** screen where you can search for registered parsers and add or edit them.
 
-- If you select **_+_** <Cmdname sid="adding" className="uitext" /> on the upper right, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
+- If you select **+** <Cmdname sid="adding" className="uitext" /> on the upper right, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
 
 - You can change the order of parser settings by dragging the ![](/img/ic-drag-drop.svg) icon in the <Cmdname sid="ITM06352" className="uitext" /> column of the parser list.
 
@@ -210,13 +210,13 @@ If you select the <Cmdname sid="log_parser_setting_primary" className="uitext" /
 
 At the top of <Cmdname sid="side_logSetting" className="uitext" />, select the <Cmdname sid="log_parser_setting_primary" className="uitext" /> tab to register and modify the log parser. The following shows the common parser registration procedure.
 
-1. If you select **_+_** <Cmdname sid="adding" className="uitext" />, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
+1. If you select **+** <Cmdname sid="adding" className="uitext" />, the <Cmdname sid="parser" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears.
 
 2. In the <Cmdname sid="parser" className="uitext" /> selection window, select a parser. For more information about the registration of each parser and pattern, see the following.
 
-   - **_GROK_** [Parser and Pattern Registration](#log-pattern-grok)
+   - ***GROK*** [Parser and Pattern Registration](#log-pattern-grok)
 
-   - **_JSON_** [Parser and Pattern Registration](#log-pattern-json)
+   - ***JSON*** [Parser and Pattern Registration](#log-pattern-json)
 
 3. When you select <Cmdname sid="BTN08593" className="uitext" />, the pattern registration and simulation window appears on the right.
 
@@ -272,7 +272,7 @@ The default syntax is `%{SYNTAX:SEMANTIC}`. For more information about the GROK 
 
 ### Registering the JSON format parser pattern {#log-pattern-json}
 
-If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser. To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing. For more information about the JSON parser, see [the following](log-parser#json-parser-detail). Simulation is required. 
+If all or part of a log is output in JSON format, you can parse the JSON output through the JSON format parser. To detect the JSON output of the log, the **prefix** and **postfix** options are combined to specify which part of the log to be recognized by JSON for parsing. For more information about the JSON parser, see [the following](log-parser#json-parser-detail). Simulation is required. 
 
 | Option    | Description                                                                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -305,7 +305,7 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
   io.whatap.logsink.parser.JsonFormatParser{}
   ```
 
-  To detect the JSON output of the log, the **_prefix_** and **_postfix_** options are combined to specify which part of the log to be recognized by JSON for parsing.
+  To detect the JSON output of the log, the **prefix** and **postfix** options are combined to specify which part of the log to be recognized by JSON for parsing.
 
   Specify an option in `{}` of `JsonFormatParser{}`.
 
@@ -347,7 +347,7 @@ If all or part of a log is output in JSON format, you can parse the JSON output 
 
 - <Cmdname sid="performance_measurement" className="uitext" /> measures the time taken by the parser to perform repeated parsing on the target string for simulation.
 
-- After **_parser simulation_**, you can register a pattern. 
+- After **parser simulation**, you can register a pattern. 
 
 :::
 
@@ -437,11 +437,11 @@ If the widget is created, you can see the following data.
 
 <ImgLang img='log-flexboard-widget-chart-4xx5xx.png' desc='Log flex board widget chart - 4xx5xx'/>
 
-- **_avg_**: Average value of the data during the query period
+- **avg**: Average value of the data during the query period
 
-- **_max_**: Maximum value of the data during the query period
+- **max**: Maximum value of the data during the query period
 
-- **_recently_**: Final value of the data during the query period
+- **recently**: Final value of the data during the query period
 
 ### Registration of status codes to exclude by the status code success rate parser {#log-pattern-status}
 
@@ -485,7 +485,7 @@ You can save common parser settings and <Cmdname sid="fast_index_setting" /> con
 
 1. Add parser settings and <Cmdname sid="fast_index_setting" /> to one project.
 
-2. Select **_JSON_** ![Export icon](/img/ico-export.svg) on the upper right of each configuration tab.
+2. Select **JSON** ![Export icon](/img/ico-export.svg) on the upper right of each configuration tab.
 
 3. On the upper right of the <Cmdname sid="export_json" className="uitext" /> window, select <Cmdname sid="export" className="uitext" />.
 
@@ -515,7 +515,7 @@ Select the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> 
 
 <ImgLang img='log-long-term-archive.png' desc='Log long-term archive statistics'/>
 
-If you select ***+*** <Cmdname sid="adding" className="uitext" /> under the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> tab, the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears. You can add rules by using ***+*** <Cmdname sid="adding" className="uitext" /> or delete the created rules by using the ***-*** icon.
+If you select **+** <Cmdname sid="adding" className="uitext" /> under the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> tab, the <Cmdname sid="logsink_mcube_config_statistics" className="uitext" /> <Cmdname sid="add" className="uitext" /> window appears. You can add rules by using **+** <Cmdname sid="adding" className="uitext" /> or delete the created rules by using the **-** icon.
 
 #### Setting item {#log-long-term-archive-comp}
 
@@ -530,7 +530,7 @@ If you select ***+*** <Cmdname sid="adding" className="uitext" /> under the <Cmd
 
 #### Example
 
-If a setting is added as follows, statistical data is generated with a key value of **_TotalCount_** for the logs whose status is `200` or `300`. 
+If a setting is added as follows, statistical data is generated with a key value of **TotalCount** for the logs whose status is `200` or `300`. 
 
 <ImgLang img='log-long-term-totalcount.png' desc='Log long-term archive statistics example'/>
 

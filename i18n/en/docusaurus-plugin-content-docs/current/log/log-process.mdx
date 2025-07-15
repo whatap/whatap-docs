@@ -8,13 +8,13 @@ keywords:
   - Log collection time
 ---
 
-This document provides information on the reference time of the log **_collection time_** in the **processing** stage of the log monitoring process.
+This document provides information on the reference time of the log **collection time** in the **processing** stage of the log monitoring process.
 
 ## Reference time for collection time
 
-<ImgLang img="log-timestamp.png" desc="로그 수집 시간 기준 시간 변경" />
+<ImgLang img="log-timestamp.png" desc="Change log collection time reference time" />
 
-The reference time of the log **_collection time_** has been changed from **WhaTap agent's collection time** to **WhaTap collection server's log handling time**.
+The reference time of the log **collection time** has been changed from **WhaTap agent's collection time** to **WhaTap collection server's log handling time**.
 
 Under normal circumstances, you can search logs the same as before without much difference. After the change, the log monitoring can be used consistently without modification even in the following cases:
 
@@ -28,7 +28,7 @@ By a change of the collection time's reference time, the time selector also oper
 
 ### Log Trend
 
-The X axis of the **_Log trend_** chart displays at least 1-minute increments. Even if the log reference time has been changed, it does not affect the overall trend of the chart.
+The X axis of the **Log trend** chart displays at least 1-minute increments. Even if the log reference time has been changed, it does not affect the overall trend of the chart.
 
 ### Log Search
 
