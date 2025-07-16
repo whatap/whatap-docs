@@ -1,5 +1,44 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/php/php-2_11_0",
+    "ver": "v2.11.0",
+    "date": "2025-06-18",
+    "Lists": [
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"0\">Feature</code> CPU負荷の軽減</p>",
+        "details": "<ul>\n<li>\n<p>モニタリング対象の判定基準を変更することで、CPU負荷を軽減しました。</p>\n</li>\n<li>\n<p>ユーザー関数モニタリング無効化時の追加負荷を軽減</p>\n<p><code>whatap.profile_method_enabled=false</code></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> CLI呼び出しパラメータのURL表示</p>",
+        "details": "<ul>\n<li>\n<p>CLI呼び出し時にパラメータを含めてURLを収集</p>\n<ul>\n<li>例) php /home/www/test.php aaa bbb\n→ /home/www/test.php aaa bbb として表示</li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> fileパラメーター情報の収集</p>",
+        "details": "<ul>\n<li>最大20個まで、各256byteまでのパラメーターの一部のみを収集します。</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> メモリリークを修正しました</p>",
+        "details": "<ul>\n<li>DB関数の失敗時にerror関数が呼び出されることによるメモリリークを修正</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/php/php-2_10_0",
     "ver": "v2.10.0",
     "date": "2025-02-11",
