@@ -2,7 +2,7 @@ The following describes the functions available depending on the screen mode on 
 
 :::note
 
-- In the <Cmdname sid="side_flexboard" className="uitext" /> menu within the project, only the users with the dashboard editing role can access <Cmdname sid="edit_mode" className="uitext" />, <Cmdname sid="admin" className="uitext" /> Mode, and <Cmdname sid="filter" className="uitext" />. The roles of members who can access are as follows:
+In the <Cmdname sid="side_flexboard" className="uitext" /> menu within the project, only the users with the dashboard editing role can access <Cmdname sid="edit_mode" className="uitext" />, <Cmdname sid="admin" className="uitext" /> Mode, and <Cmdname sid="filter" className="uitext" />. The roles of members who can access are as follows:
 
   - Project **Edit** role 
 
@@ -10,7 +10,7 @@ The following describes the functions available depending on the screen mode on 
 
   - **Site Admin** role
 
-- For more information about the member roles, see [the following](../project/project-structure#member-auth).
+For more information about the member roles, see [the following](../project/project-structure#member-auth).
 
 :::
 
@@ -38,9 +38,9 @@ In the Flex board, you can handle hundreds of types of data. Organize your Flex 
 
 <ImgLang img='flexboard-filter.png' desc='Flex board - filter' />
 
-1. Select ![Leader line 1](/img/number-01.png) ![Filter icon](/img/ico-filter.svg) <Cmdname sid="filter" className="uitext" /> on the screen. 
+1. Click ![Filter icon](/img/ico-filter.svg) <Cmdname sid="filter" className="uitext" /> on the screen. 
 
-2. On the left of the screen, the ![Leader line 2](/img/number-02.png) <Cmdname sid="filter" className="uitext" /> window appears.
+2. On the left of the screen, the <Cmdname sid="filter" className="uitext" /> window appears. Select a filtering target.
 
    - If the <Cmdname sid="agent" className="uitext" /> option has been selected, you can select filtering targets based on the agent type or application list. To select all as the filtering target, select <Cmdname sid="select_all" className="uitext" />. If necessary, you can select the targets by using the <Cmdname sid="search" className="uitext" /> function.
 
@@ -48,7 +48,9 @@ In the Flex board, you can handle hundreds of types of data. Organize your Flex 
 
 3. If filtering targets have been selected, select <Cmdname sid="apply" className="uitext" />. 
 
-To save the filter settings for later use, select <Cmdname sid="save_filter" className="uitext" />. Enter the filter name and then select <Cmdname sid="save" className="uitext" />. ![Leader line 3](/img/number-03.png) <Cmdname sid="saved_filter" className="uitext" /> appears at the bottom of the <Cmdname sid="filter" className="uitext" /> window.
+4. To save the filter settings for later use, select <Cmdname sid="save_filter" className="uitext" />. Enter the filter name and then select <Cmdname sid="save" className="uitext" />. <Cmdname sid="saved_filter" className="uitext" /> appears at the bottom of the <Cmdname sid="filter" className="uitext" /> window.
+
+#### Filtering conditions
 
 Filtering conditions are divided into the agent type and metrics type.
 
@@ -89,30 +91,29 @@ To end the Print mode, select ![End icon](/img/ico-close.svg) <Cmdname sid="clos
 
 ## Flex Board Management
 
-It provides management functions such as changing the Flex board layout, repositioning/resizing widgets, and changing the name. Select ![Configuration icon](/img/ico-setting.svg) on the upper right of the Flex Board screen. The <Cmdname sid="flexboard_management" className="uitext" /> window appears. 
+It provides management functions such as changing the Flex board layout, repositioning/resizing widgets, and changing the name. <Cmdname sid="flexboard_management" className="uitext" /> can also be accessed by selecting ![Edit icon](/img/ico-edit.svg) in <Cmdname sid="dashboard_list" className="uitext" /> of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />.
 
-- <Cmdname sid="rename" className="uitext" />: You can change the name of the Flex board. Enter the name to change.
+1. Click ![Configuration icon](/img/ico-setting.svg) on the upper right of the Flex Board screen. The <Cmdname sid="flexboard_management" className="uitext" /> window appears. 
 
-- <Cmdname sid="layout" className="uitext" />: You can reposition or resize the widgets. To delete a placed widget, click ![Delete icon](/img/ico-trash.svg).
+    - <Cmdname sid="rename" className="uitext" />: You can change the name of the Flex board. Enter the name to change.
 
-- <Cmdname sid="dont_allow_users_to_modify" className="uitext" />: You can set for other users not to modify the Flex board. Only members with the edit permission can modify, delete, or edit widgets. If you click the button, it is changed to <Cmdname sid="dont_allow_users_to_modify" className="uitext" /><UI>: On</UI>.
+    - <Cmdname sid="layout" className="uitext" />: You can reposition or resize the widgets. To delete a placed widget, click ![Delete icon](/img/ico-trash.svg).
 
-- <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: You can edit the widgets on the Flex board into json format for management.
+    - <Cmdname sid="dont_allow_users_to_modify" className="uitext" />: You can set for other users not to modify the Flex board. Only members with the edit permission can modify, delete, or edit widgets. If you click the button, it is changed to <Cmdname sid="dont_allow_users_to_modify" className="uitext" /><UI>: On</UI>.
 
-- <Cmdname sid="option" className="uitext" /><UI>.json</UI>: You can edit the Flex board settings into json format for management. You can edit the settings such as project information, Flex board filtering, and time selection.
+    - <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: You can edit the widgets on the Flex board into json format for management.
 
-After all settings are made, at the lower right of the screen, click <Cmdname sid="save" className="uitext" />.
+    - <Cmdname sid="option" className="uitext" /><UI>.json</UI>: You can edit the Flex board settings into json format for management. You can edit the settings such as project information, Flex board filtering, and time selection.
 
-:::note
+    :::note
 
-- <Cmdname sid="widget" className="uitext" /><UI>.json</UI> and <Cmdname sid="option" className="uitext" /><UI>.json</UI> are available only to the users with the dashboard administrator role.
+  <Cmdname sid="widget" className="uitext" /><UI>.json</UI> and <Cmdname sid="option" className="uitext" /><UI>.json</UI> are available only to the users with the dashboard administrator role.
 
-- <Cmdname sid="flexboard_management" className="uitext" /> can also be accessed by selecting ![Edit icon](/img/ico-edit.svg) in <Cmdname sid="dashboard_list" className="uitext" /> of <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />.
+  :::
 
-:::
+2. After all settings are made, at the lower right of the screen, click <Cmdname sid="save" className="uitext" />.
 
 ## Registering the dashboard as a favorite
 
-<ImgLang img='flexboard-favorite.png' desc='Flex Board - Favorite' />
-
-The created Flex board can be registered as a favorite under <Cmdname sid="side_dashboard" className="uitext" />. In <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_flexboard" className="uitext" />, select ![Favorite icon](/img/ico-favorite.svg) from the <Cmdname sid="dashboard_list" className="uitext" />. The item set as a favorite is changed to ![Favorite setting icon](/img/ico-favorite-check.svg).
+The created Flex board can be registered as a favorite under <Cmdname sid="side_dashboard" className="uitext" />.  
+In <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_flexboard" className="uitext" />, select ![Favorite icon](/img/ico-favorite.svg) from the <Cmdname sid="dashboard_list" className="uitext" />. The item set as a favorite is changed to ![Favorite setting icon](/img/ico-favorite-check.svg).
