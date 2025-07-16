@@ -6,21 +6,6 @@ pagination_next: release-notes/php/php-2_10_0
 displayed_sidebar: releaseSidebar
 ---
 
-2025年07月09日
-
-* <Status priority='0'>Fixed</Status> whatap-php.service の登録および実行に失敗する問題を修正
-
-  * 新規インストール時に environment の値が欠落している場合、接続情報（アクセスキーおよびサーバーアドレス）を認識できず、エージェントが非活性化されることがあります。
-
-    以下のコマンドを実行することで手動で設定可能です。
-
-    ```bash title='php command'
-    1. /usr/whatap/php/install.sh
-    2. cp /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service
-    ```
-    
-  * 既存のインストール環境では、アップデート時に正常に適用されます。
-
 2025年06月18日
 
 * <Status priority='0'>Feature</Status> CPU負荷の軽減
