@@ -5104,16 +5104,13 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/npm/npm-v0_4_5'
-              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/npm/npm-v0_4_5',
+                  id: 'release-notes/npm/npm-0_5_1', 
                   // className: 'new',
-                }
+                },
+                'release-notes/npm/npm-0_4_5',
               ],
             },
             {
