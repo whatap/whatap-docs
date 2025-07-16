@@ -1,9 +1,152 @@
 [
   {
+    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_62",
+    "ver": "v2.2.62",
+    "date": "2025-07-03",
+    "Lists": [
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Javaエージェントの <code>web_static_content_extensions</code> 設定に登録された <code>.html</code>, <code>.js</code> などの静的リソース呼び出し時に、メトリクス指標 <code>arrival_rate</code> が過剰に収集される現象を修正</p>"
+      },
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 一部の HTTP 呼び出しにおいて例外が収集されない現象を修正</p>"
+      },
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>weaving=lettuce-6.2</code> 設定時に、Lettuce バージョン 6.5 以上でエラーが発生し呼び出しが漏れる問題を修正</p>"
+      },
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\" type=\"0\">Deprecated</code> log4j-1 のトレース機能を削除（別途プラグインとして提供）</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_61",
+    "ver": "v2.2.61",
+    "date": "2025-06-09",
+    "Lists": [
+      {
+        "ver": "v2.2.61",
+        "hash": "v2261",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> OpenTelemetry 連携用のトレースヘッダーキーをデフォルトで送信しないように修正</p>"
+      },
+      {
+        "ver": "v2.2.61",
+        "hash": "v2261",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Spring Bootで <code>async-annotation</code> を使用する場合、別スレッドの処理をデフォルトで連携トレースするように修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_60",
+    "ver": "v2.2.60",
+    "date": "2025-05-29",
+    "Lists": [
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>spring-cloud-openfeign-core</code>, <code>spring-cloud-circuitbreaker-resilience4j</code>追跡</p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>feign-hystrix</code>追跡</p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>log4j-1.x</code>ログ収集</p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Tomcat logで収集するAppServerカテゴリのlevelデータをTomcat log levelに合わせて修正</p>",
+        "details": "<ul>\n<li>\n<p>warn → WARNING</p>\n</li>\n<li>\n<p>error, fatal → SEVERE</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>db_pool_detail</code>メトリックスのclassデータの誤字を修正(HyrisDataSourcePool → HikariPool)</p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> FeignClient呼び出し時にレスポンスがない場合、エラーを収集できない現象を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_59",
+    "ver": "v2.2.59",
+    "date": "2025-05-08",
+    "Lists": [
+      {
+        "ver": "v2.2.59",
+        "hash": "v2259",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> IBM Java及びWindows環境でJMXが呼び出されないように修正</p>",
+        "details": "<ul>\n<li>\n<p>性能指標収集のために<code>oshi</code>または<code>sigar</code>設定を推奨</p>\n<ul>\n<li>Java 1.8 以降の場合<code>oshi</code>設定を推奨</li>\n</ul>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token comment\" style=\"color:rgb(105, 112, 152);font-style:italic\"># default: false</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token assign-left variable\" style=\"color:rgb(191, 199, 213)\">oshi_enabled</span><span class=\"token operator\" style=\"color:rgb(137, 221, 255)\">=</span><span class=\"token plain\">true</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"クリップボードにコードをコピーする\" title=\"コピー\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n<ul>\n<li>Java 1.8 未満の場合<code>sigar</code>設定を推奨</li>\n</ul>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token comment\" style=\"color:rgb(105, 112, 152);font-style:italic\"># default: false</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token assign-left variable\" style=\"color:rgb(191, 199, 213)\">sigar_enabled</span><span class=\"token operator\" style=\"color:rgb(137, 221, 255)\">=</span><span class=\"token plain\">true</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"クリップボードにコードをコピーする\" title=\"コピー\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.59",
+        "hash": "v2259",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 間欠的に発生するLog追跡できない現象を修正(Java agent 2.2.58)</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_58",
     "ver": "v2.2.58",
     "date": "2025-04-25",
-    "Lists": []
+    "Lists": [
+      {
+        "ver": "v2.2.58",
+        "hash": "v2258",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>並列に呼び出すCompletable Future追跡時に発生した問題を修正</p>"
+      },
+      {
+        "ver": "v2.2.58",
+        "hash": "v2258",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> CompletableFuture追跡時にTPSが増加する現象を防止</p>"
+      }
+    ]
   },
   {
     "url": "https://docs.whatap.io/ja/release-notes/java/java-2_2_57",
