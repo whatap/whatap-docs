@@ -94,6 +94,9 @@ Steps:
 2. A drawer will open on the right displaying top 30 transactions for that business.
 3. Use the sort dropdown (default: by count).
 4. Available transaction data includes:
+
+    <Columns>
+    <Column className="text--left width--50">
     * Transaction name
     * Detailed analysis (![View Icon](/img/ic-pageview.svg))
     * Count
@@ -101,6 +104,8 @@ Steps:
     * Avg time (ms)
     * Max time (ms)
     * Avg CPU time
+    </Column>
+    <Column className="text--left width--50">
     * Avg memory allocation
     * SQL count
     * Avg SQL time (ms)
@@ -108,6 +113,9 @@ Steps:
     * Avg SQL fetch count
     * HTTP call count
     * Avg HTTP call time (ms)
+    </Column>
+    </Columns>
+
 5. Use the search bar at the top of the drawer to filter specific transactions.
 
 ## Agent Configuration

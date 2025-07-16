@@ -2,7 +2,7 @@ Flexボードの画面モードによって提供する機能について説明�
 
 :::note
 
-- プロジェクト内の<Cmdname sid="side_flexboard" className="uitext" />メニューでは、ダッシュボードの変更権限のあるユーザーのみが<Cmdname sid="edit_mode" className="uitext" />および<Cmdname sid="admin" className="uitext" />モード、<Cmdname sid="filter" className="uitext" />機能にアクセスできます。アクセスできるメンバー権限は、次のとおりです。
+プロジェクト内の<Cmdname sid="side_flexboard" className="uitext" />メニューでは、ダッシュボードの変更権限のあるユーザーのみが<Cmdname sid="edit_mode" className="uitext" />および<Cmdname sid="admin" className="uitext" />モード、<Cmdname sid="filter" className="uitext" />機能にアクセスできます。アクセスできるメンバー権限は、次のとおりです。
 
   - プロジェクト**修正**権限 
 
@@ -10,7 +10,7 @@ Flexボードの画面モードによって提供する機能について説明�
 
   - **Site Admin**権限
 
-- メンバー権限の詳細については、[次の文書](../project/project-structure#member-auth)を参照してください。
+メンバー権限の詳細については、[次の文書](../project/project-structure#member-auth)を参照してください。
 
 :::
 
@@ -38,9 +38,9 @@ Flexボードは数百種類の異なる種類のデータを処理します。�
 
 <ImgLang img='flexboard-filter.png' desc='Flexボード-フィルター' />
 
-1. 画面の上の![指示線1](/img/number-01.png)![フィルターアイコン](/img/ico-filter.svg)<Cmdname sid="filter" className="uitext" />をクリックします。 
+1. 画面の上の![フィルターアイコン](/img/ico-filter.svg)<Cmdname sid="filter" className="uitext" />をクリックします。 
 
-2. 画面の左に![指示線2](/img/number-02.png)<Cmdname sid="filter" className="uitext" />画面が表示されます。
+2. 画面の左に<Cmdname sid="filter" className="uitext" />画面が表示されます。 フィルタリング対象を選択してください。
 
    - <Cmdname sid="agent" className="uitext" />オプションを選択した場合は、エージェントの種類またはアプリケーション一覧からフィルタリング対象を選択できます。フィルタリング対象をすべて選択するには、<Cmdname sid="select_all" className="uitext" />を選択します。必要に応じて、<Cmdname sid="search" className="uitext" />機能を使用して選択できます。
 
@@ -48,7 +48,9 @@ Flexボードは数百種類の異なる種類のデータを処理します。�
 
 3. フィルタリング対象の選択を完了し、<Cmdname sid="apply" className="uitext" />ボタンを選択します。 
 
-フィルタリングの設定を保存して再利用するには、<Cmdname sid="save_filter" className="uitext" />ボタンを選択します。フィルター名を入力し、<Cmdname sid="save" className="uitext" />を選択します。![指示線3](/img/number-03.png)<Cmdname sid="saved_filter" className="uitext" />は、<Cmdname sid="filter" className="uitext" />画面の下に表示されます。
+4. フィルタリングの設定を保存して再利用するには、<Cmdname sid="save_filter" className="uitext" />ボタンを選択します。フィルター名を入力し、<Cmdname sid="save" className="uitext" />を選択します。<Cmdname sid="saved_filter" className="uitext" />は、<Cmdname sid="filter" className="uitext" />画面の下に表示されます。
+
+#### フィルタリング条件
 
 フィルタリング条件は、エージェントタイプとメトリプスタイプに分けられます。
 
@@ -89,30 +91,30 @@ Flexボード画面をPDFに保存および印刷できます。Flexボード画
 
 ## Flexボード管理
 
-Flexボードのレイアウトを変更したり、ウィジェットの位置変更やサイズ変更、名前変更などの管理機能を提供します。Flexボード画面の右上にある![設定アイコン](/img/ico-setting.svg)ボタンを選択すると、<Cmdname sid="flexboard_management" className="uitext" />画面が表示されます。 
+Flexボードのレイアウトを変更したり、ウィジェットの位置変更やサイズ変更、名前変更などの管理機能を提供します。 <Cmdname sid="flexboard_management" className="uitext" />機能は、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />メニューの<Cmdname sid="dashboard_list" className="uitext" />で![編集アイコン](/img/ico-edit.svg)ボタンを選択して利用する方法もあります。
 
-- <Cmdname sid="rename" className="uitext" />：Flextボードの名前を変更できます。変更する名前を入力します。
+1. Flexボード画面の右上にある![設定アイコン](/img/ico-setting.svg)ボタンを選択すると、<Cmdname sid="flexboard_management" className="uitext" />画面が表示されます。 
 
-- <Cmdname sid="layout" className="uitext" />：ウィジェットのレイアウトを変えたり、位置やサイズを変更できます。ウィジェットを削除するには![削除アイコン](/img/ico-trash.svg)ボタンをクリックします。
+    - <Cmdname sid="rename" className="uitext" />：Flextボードの名前を変更できます。変更する名前を入力します。
 
-- <Cmdname sid="dont_allow_users_to_modify" className="uitext" />：他のユーザーがFlexボードを変更できないように設定します。修正権限のあるメンバーのみが変更または削除、ウィジェットを編集できます。ボタンをクリックすると、<Cmdname sid="dont_allow_users_to_modify" className="uitext" /><UI>：On</UI>に変更されます。
+    - <Cmdname sid="layout" className="uitext" />：ウィジェットのレイアウトを変えたり、位置やサイズを変更できます。ウィジェットを削除するには![削除アイコン](/img/ico-trash.svg)ボタンをクリックします。
 
-- <Cmdname sid="widget" className="uitext" /><UI>.json</UI>：Flexボードに含まれるウィジェットをJSON形式で編集および管理できます。
+    - <Cmdname sid="dont_allow_users_to_modify" className="uitext" />：他のユーザーがFlexボードを変更できないように設定します。修正権限のあるメンバーのみが変更または削除、ウィジェットを編集できます。ボタンをクリックすると、<Cmdname sid="dont_allow_users_to_modify" className="uitext" /><UI>：On</UI>に変更されます。
 
-- <Cmdname sid="option" className="uitext" /><UI>.json</UI>：Flexボードの設定をJSON形式で編集および管理できます。プロジェクト情報、Flexボードのフィルター、時間選択などの設定を編集できます。
+    - <Cmdname sid="widget" className="uitext" /><UI>.json</UI>：Flexボードに含まれるウィジェットをJSON形式で編集および管理できます。
 
-すべての設定を完了した後、画面の右下にある<Cmdname sid="save" className="uitext" />ボタンをクリックします。
+    - <Cmdname sid="option" className="uitext" /><UI>.json</UI>：Flexボードの設定をJSON形式で編集および管理できます。プロジェクト情報、Flexボードのフィルター、時間選択などの設定を編集できます。
 
-:::note
+    :::note
 
-- <Cmdname sid="widget" className="uitext" /><UI>.json</UI>、<Cmdname sid="option" className="uitext" /><UI>.json</UI>機能は、ダッシュボードの管理者権限があるユーザーが利用できます。
+    <Cmdname sid="widget" className="uitext" /><UI>.json</UI>、<Cmdname sid="option" className="uitext" /><UI>.json</UI>機能は、ダッシュボードの管理者権限があるユーザーが利用できます。
 
-- <Cmdname sid="flexboard_management" className="uitext" />機能は、<Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_flexboard" className="uitext" />メニューの<Cmdname sid="dashboard_list" className="uitext" />で![編集アイコン](/img/ico-edit.svg)ボタンを選択して利用する方法もあります。
+    :::
 
-:::
+2. すべての設定を完了した後、画面の右下にある<Cmdname sid="save" className="uitext" />ボタンをクリックします。
 
 ## ダッシュボードをお気に入りとして登録
 
-<ImgLang img='flexboard-favorite.png' desc='Flex ボード - お気に入り' />
+ユーザが生成したFlexボードは、<Cmdname sid="side_dashboard" className="uitext" />メニューの下位にあるお気に入りのメニューとして登録できます。
 
-ユーザが生成したFlexボードは、<Cmdname sid="side_dashboard" className="uitext" />メニューの下位にあるお気に入りのメニューとして登録できます。<Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_flexboard" className="uitext" />メニューで<Cmdname sid="dashboard_list" className="uitext" />の![お気に入りアイコン](/img/ico-favorite.svg)ボタンを選択します。お気に入りに設定された項目は、![お気に入り設定アイコン](/img/ico-favorite-check.svg)に変更されます。
+<Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_flexboard" className="uitext" />メニューで<Cmdname sid="dashboard_list" className="uitext" />の![お気に入りアイコン](/img/ico-favorite.svg)ボタンを選択します。お気に入りに設定された項目は、![お気に入り設定アイコン](/img/ico-favorite-check.svg)に変更されます。

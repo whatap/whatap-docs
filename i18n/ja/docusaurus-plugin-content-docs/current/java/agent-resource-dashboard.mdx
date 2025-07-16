@@ -32,27 +32,27 @@ WhaTap Javaエージェントの2.2.39バージョン以降が必要です。
 
 <Cmdname sid="TTL09121" className="uitext" />ウィジェットを通じてJVMの主要メモリプールの状態をリアルタイムで確認できます。 各Javaメモリ領域チャートは、使用中の容量(MB)と比率(%)を表示します。
 
-- ***Metaspace***
+- **Metaspace**
 
   クラスメタデータを保存する領域です。 
 
-- ***CodeHeap non-profiled nmethod***, ***CodeHeap profiled nmethod***, ***CodeHeap non-nmethods***
+- **CodeHeap non-profiled nmethod**, **CodeHeap profiled nmethod**, **CodeHeap non-nmethods**
 
-  JIT(Just-In-Time)コンパイラが生成したマシンコードを保存する領域であり、***CodeHeap non-profiled nmethod***、***CodeHeap profiled nmethod***、***CodeHeap non-nmethods***は、それぞれコンパイルされたコードを用途に応じて区切って保管します。
+  JIT(Just-In-Time)コンパイラが生成したマシンコードを保存する領域であり、**CodeHeap non-profiled nmethod**、**CodeHeap profiled nmethod**、**CodeHeap non-nmethods**は、それぞれコンパイルされたコードを用途に応じて区切って保管します。
 
-- ***G1 Survivor Space***
+- **G1 Survivor Space**
 
   G1 GCで生き残ったオブジェクトが一時的に保存される領域です。
 
-- ***G1 Eden Space***
+- **G1 Eden Space**
 
   新しく作成されたオブジェクトが最初に割り当てられる領域です。
 
-- ***G1 Old Gen***
+- **G1 Old Gen**
 
   Young GCを経て、生き残ったオブジェクトが移動する領域です。 メモリが増加した場合、Old Genを中心にリークが発生しているかを確認できます。
 
-- ***Compressed Class Space***
+- **Compressed Class Space**
 
   クラス関連のポインタを圧縮して保存する領域で、Metaspaceとは別に管理されます。
 
@@ -73,38 +73,38 @@ WhaTap Javaエージェントの2.2.39バージョン以降が必要です。
 <Columns>
 <Column className="text--left width--60">
 
-- ***Memory***
+- **Memory**
 
   全体メモリ使用率(%)を表示します。 Eden、Old Gen、Metaspaceなど内部構成を総合した総使用量です。
 
-- ***CpuTime***
+- **CpuTime**
 
   JVMがアプリケーションコードの実行に費やされたCPU時間をミリ秒(ms)単位で示します。 
 
-- ***GCCount***, ***GCOldgenCount***
+- **GCCount**, **GCOldgenCount**
 
-  ***GCCount***は、一定周期内に発生したGC回数、***GCOldgenCount***は、Old領域を対象としたGC回数のみ別途集計します。
+  **GCCount**は、一定周期内に発生したGC回数、**GCOldgenCount**は、Old領域を対象としたGC回数のみ別途集計します。
 
-- ***GCTime***
+- **GCTime**
 
   Garbage Collectionに費やされた時間をms単位で表示します。 
 
 </Column>
 <Column className="text--left">
 
-- ***Cpu***
+- **Cpu**
 
   JVMプロセスのCPU使用率(%)を示します。
 
-- ***TPS***
+- **TPS**
 
   1秒あたりのトランザクション処理回数を表示します。 
 
-- ***FileDescriptor***
+- **FileDescriptor**
 
   開いているファイルやソケットなど、現在使用中のファイルディスクリプターの数を示します。
 
-- ***ObjectPendingFinalizationCount***
+- **ObjectPendingFinalizationCount**
 
   GCが処理すべきオブジェクトが`finalize()`待機状態のまま残っている個数を表示します。 
 

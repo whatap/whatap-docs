@@ -439,10 +439,6 @@
     "width": 600,
     "height": 165
   },
-  "add-agent-option.png": {
-    "width": 600,
-    "height": 269
-  },
   "after-install-apm-dashboard-en.png": {
     "width": 1200,
     "height": 1034
@@ -510,10 +506,6 @@
   "agent_rollback_1-ja.png": {
     "width": 600,
     "height": 67
-  },
-  "agent_rollback_1.png": {
-    "width": 600,
-    "height": 83
   },
   "agent_rollback_2-en.png": {
     "width": 800,
@@ -9987,10 +9979,6 @@
     "width": 600,
     "height": 429
   },
-  "flexboard-copy2others.png": {
-    "width": 600,
-    "height": 427
-  },
   "flexboard-datamerge-en.png": {
     "width": 800,
     "height": 350
@@ -9999,10 +9987,6 @@
     "width": 800,
     "height": 348
   },
-  "flexboard-datamerge.png": {
-    "width": 800,
-    "height": 347
-  },
   "flexboard-favorite-en.png": {
     "width": 800,
     "height": 338
@@ -10010,10 +9994,6 @@
   "flexboard-favorite-ja.png": {
     "width": 800,
     "height": 336
-  },
-  "flexboard-favorite.png": {
-    "width": 800,
-    "height": 345
   },
   "flexboard-filter-en.png": {
     "width": 1200,
@@ -10035,10 +10015,6 @@
     "width": 1200,
     "height": 1035
   },
-  "flexboard-manage.png": {
-    "width": 1200,
-    "height": 1035
-  },
   "flexboard-share-01-en.png": {
     "width": 800,
     "height": 73
@@ -10047,10 +10023,6 @@
     "width": 800,
     "height": 72
   },
-  "flexboard-share-01.png": {
-    "width": 800,
-    "height": 73
-  },
   "flexboard-share-02-en.png": {
     "width": 600,
     "height": 253
@@ -10058,10 +10030,6 @@
   "flexboard-share-02-ja.png": {
     "width": 600,
     "height": 250
-  },
-  "flexboard-share-02.png": {
-    "width": 600,
-    "height": 251
   },
   "flexboard-share-03-en.png": {
     "width": 600,
@@ -10128,10 +10096,6 @@
     "height": 1035
   },
   "flexboard-template-window.png": {
-    "width": 1200,
-    "height": 1035
-  },
-  "flexboard-template.png": {
     "width": 1200,
     "height": 1035
   },
@@ -10946,10 +10910,6 @@
   "java-update-agent-ja.png": {
     "width": 605,
     "height": 139
-  },
-  "java-update-agent.png": {
-    "width": 489,
-    "height": 146
   },
   "k8s-agent-archi.png": {
     "width": 3904,
@@ -13983,10 +13943,6 @@
     "width": 1200,
     "height": 1019
   },
-  "metric-edit-window.png": {
-    "width": 1200,
-    "height": 1019
-  },
   "metric-warning-notice-new-basic-screen-browser-en.png": {
     "width": 1200,
     "height": 635
@@ -14142,10 +14098,6 @@
   "metric-widget-data-ja.png": {
     "width": 400,
     "height": 115
-  },
-  "metric-widget-data.png": {
-    "width": 400,
-    "height": 120
   },
   "metric-widget-series.png": {
     "width": 944,
