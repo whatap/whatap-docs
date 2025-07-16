@@ -1,0 +1,38 @@
+---
+id: php-2_11_1
+title: PHP Agent v2.11.1
+toc_max_heading_level: 2
+pagination_next: release-notes/php/php-2_11_0
+displayed_sidebar: releaseSidebar
+---
+
+July 09, 2025
+
+- <Status priority='0'>Fixed</Status> Fixed the issue where whatap-php.service registration and execution failed.
+
+  - If the environment values are missing during a fresh installation, the agent may not be activated because it cannot recognize connection information (access key and server address).
+
+    You can configure it manually using the following commands
+
+    ```bash title='php command'
+    1. /usr/whatap/php/install.sh
+    2. cp /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service
+    ```
+
+  - In existing installations, the update is applied correctly.
+
+:::info
+
+**Download**
+
+| OS Name                         | File format | Architecture |                                      Download                                     |
+| ------------------------------- | :---------: | :----------: | :-------------------------------------------------------------------------------: |
+| Red Hat / CentOS / Amazon linux |     RPM     |    x86 x64   |  [Download](https://repo.whatap.io/centos/6/x86_64/whatap-php-2.11-1.x86_64.rpm)  |
+| \^                              |      \^     |    aarch64   | [Download](https://repo.whatap.io/centos/7/aarch64/whatap-php-2.11-1.aarch64.rpm) |
+| Ubuntu 12 and above / Debian    |     DEB     |     amd64    |   [Download](https://repo.whatap.io/debian/unstable/whatap-php_2.11.1_amd64.deb)  |
+| \^                              |      \^     |     arm64    |   [Download](https://repo.whatap.io/debian/unstable/whatap-php_2.11.1_arm64.deb)  |
+| Alpine linux                    |   tar gzip  |    x86 x64   |     [Download](https://repo.whatap.io/alpine/x86_64/whatap-php-2.11.1.tar.gz)     |
+| \^                              |      \^     |    aarch64   |     [Download](https://repo.whatap.io/alpine/aarch64/whatap-php-2.11.1.tar.gz)    |
+| Freebsd 10 or later             |     TXZ     |    x86 x64   |        [Download](https://repo.whatap.io/freebsd/10/whatap-php-2.11.1.txz)        |
+
+:::
