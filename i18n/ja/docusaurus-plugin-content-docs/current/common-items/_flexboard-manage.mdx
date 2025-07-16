@@ -1,7 +1,5 @@
 ## Flexボードの編集
 
-<Cmdname sid="side_flexboard" className="uitext" />メニューの<Cmdname sid="dashboard_list" className="uitext" />で![編集アイコン](/img/ico-edit.svg)ボタンを選択します。画面の右側にFlexボード管理画面が表示されます。
-
 :::note
 
 **Flexボード編集機能権限のガイド**
@@ -14,47 +12,49 @@
 
   プロジェクト**修整**権限、または**プロジェクトFlexボード編集**権限、**Site Admin**権限を持つユーザーが修正できます。
 
-- メンバー権限の詳細については、[次の文書](../project/project-structure#member-auth)を参照してください。
+メンバー権限の詳細については、[次の文書](../project/project-structure#member-auth)を参照してください。
 
 :::
 
-<ImgLang img='flexboard-manage.png' desc='Flex ボード管理' />
+1. <Cmdname sid="side_flexboard" className="uitext" />メニューの<Cmdname sid="dashboard_list" className="uitext" />で![編集アイコン](/img/ico-edit.svg)ボタンを選択します。画面の右側にFlexボード管理画面が表示されます。
 
-設定できる属性は次のとおりです。
+2. Flexボード管理ウィンドウで、名前、プロジェクト、レイアウト、widget.json、option.jsonを設定できます。
 
-- <Cmdname sid="rename" className="uitext" />：ダッシュボード名を修正できます。
+    - <Cmdname sid="rename" className="uitext" />：ダッシュボード名を修正できます。
 
-- <Cmdname sid="project" className="uitext" />：ダッシュボードのウィジェットからデータを読み込むプロジェクトを選択できます。
+    - <Cmdname sid="project" className="uitext" />：ダッシュボードのウィジェットからデータを読み込むプロジェクトを選択できます。
 
-  :::note
+      :::caution
 
-  このオプションは、ホーム画面 &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューのみ設定できます。
+      このオプションは、**ホーム画面** &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューのみ設定できます。
 
-  :::
+      <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューに入った場合、ウィジェットのデータを読み込みするプロジェクトを選択できます。
+      
+      1. ウィジェットは右上の![追加アイコン](/img/ico-add.svg)ボタンをクリックし、プロジェクトを選択します。プロジェクトは検索して選択ができ、複数選択もできます。
+      
+      2. 選択を完了した後、<Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
-- <Cmdname sid="layout" className="uitext" />
+      :::
 
-  - ウィジェットを選択し、ドラッグして場所を移動できます。
+    - <Cmdname sid="layout" className="uitext" />
 
-  - ウィジェットの右下をマウスで選択し、ドラッグしてウィジェットのサイズを調整できます。
+      - ウィジェットを選択し、ドラッグして場所を移動できます。
 
-  - ウィジェットを削除するにはウィジェット右上の![削除アイコン](/img/ico-trash.svg)ボタンを選択します。
+      - ウィジェットの右下をマウスで選択し、ドラッグしてウィジェットのサイズを調整できます。
 
-  :::note
+      - ウィジェットを削除するにはウィジェット右上の![削除アイコン](/img/ico-trash.svg)ボタンを選択します。
 
-  ホーム画面 &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />メニューに入った場合、ウィジェットのデータを読み込みするプロジェクトを選択できます。ウィジェットは右上の![追加アイコン](/img/ico-add.svg)ボタンをクリックし、プロジェクトを選択します。プロジェクトは検索して選択ができ、複数選択もできます。選択を完了した後、<Cmdname sid="apply" className="uitext" />ボタンを選択します。
+    - <Cmdname sid="widget" className="uitext" /><UI>.json</UI>：ダッシュボードからウィジェット設定をJSON形式で読み込むことができます。![コピーアイコン](/img/ico-copy.svg)ボタンをクリックすると、JSONの内容をコピーします。
 
-  :::
-
-- <Cmdname sid="widget" className="uitext" /><UI>.json</UI>：ダッシュボードからウィジェット設定をJSON形式で読み込むことができます。![コピーアイコン](/img/ico-copy.svg)ボタンをクリックすると、JSONの内容をコピーします。
-
-- <Cmdname sid="option" className="uitext" /><UI>.json</UI>：ダッシュボードに設定されたオプションをJSON形式で読み込むことができます。 ![コピーアイコン](/img/ico-copy.svg)ボタンをクリックすると、JSONの内容をコピーします。
+    - <Cmdname sid="option" className="uitext" /><UI>.json</UI>：ダッシュボードに設定されたオプションをJSON形式で読み込むことができます。 ![コピーアイコン](/img/ico-copy.svg)ボタンをクリックすると、JSONの内容をコピーします。
 
 ## Flexボードの削除
 
 <Cmdname sid="side_flexboard" className="uitext" /> &gt; <Cmdname sid="dashboard_list" className="uitext" />から削除する項目の右側にある![削除アイコン](/img/ico-trash.svg)ボタンをクリックします。確認メッセージが表示されると、<Cmdname sid="delete" className="uitext" />ボタンを選択します。
 
 :::note
+
+ダッシュボードを削除すると、所有者か共有ユーザーかによって影響範囲が異なります。
 
 - ダッシュボード所有者がダッシュボードを削除する場合、そのダッシュボードを共有中のすべてのユーザーアカウントからも削除されます。
 - ダッシュボードを共有されたユーザーがダッシュボードを削除した場合、そのユーザーの<Cmdname sid="dashboard_list" className="uitext" />からのみ削除します。元のダッシュボードは維持されます。

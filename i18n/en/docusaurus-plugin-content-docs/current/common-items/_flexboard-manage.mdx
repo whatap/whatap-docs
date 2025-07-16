@@ -1,7 +1,5 @@
 ## Editing the Flex board
 
-In <Cmdname sid="dashboard_list" className="uitext" /> under <Cmdname sid="side_flexboard" className="uitext" />, select ![Edit icon](/img/ico-edit.svg). The Flex Board Management window appears on the right of the screen.
-
 :::note
 
 **Guide to the Flex Board editing role**
@@ -14,47 +12,51 @@ In <Cmdname sid="dashboard_list" className="uitext" /> under <Cmdname sid="side_
 
   The users with the project **editing** role or **project flexboard update** role, and **site admin** role can modify the board.
 
-- For more information about the member roles, see [the following](../project/project-structure#member-auth).
+For more information about the member roles, see [the following](../project/project-structure#member-auth).
 
 :::
 
-<ImgLang img='flexboard-manage.png' desc='Flex board management' />
+1. In <Cmdname sid="dashboard_list" className="uitext" /> under <Cmdname sid="side_flexboard" className="uitext" />, select ![Edit icon](/img/ico-edit.svg). The Flex Board Management window appears on the right of the screen.
 
-You can set the following properties:
+2. In the Flex Board Management window, you can configure the name, project, layout, widget.json, and option.json.
 
-- <Cmdname sid="rename" className="uitext" />: You can change the name of the dashboard.
+    - <Cmdname sid="rename" className="uitext" />: You can change the name of the dashboard.
 
-- <Cmdname sid="project" className="uitext" />: You can select the projects to get data into the dashboard widgets.
+    - <Cmdname sid="project" className="uitext" />: You can select the projects to get data into the dashboard widgets.
 
-  :::note
+      :::note
 
-  This option can be set only in Home &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />.
+      This option can be set only in Home &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />.
 
-  :::
+      If you enter <Cmdname sid="side_integratedFlexboard" className="uitext" />, you can select projects to import data for each widget. 
+  
+      1. Click ![Add icon](/img/ico-add.svg) at the upper right of the widget, and then select a desired project. You can search and then select a project, and you can select multiple ones. 
+  
+      2. After selection, select <Cmdname sid="apply" className="uitext" />.
 
-- <Cmdname sid="layout" className="uitext" />
+      :::
 
-  - You can move a widget by dragging it.
+    - <Cmdname sid="layout" className="uitext" />
 
-  - You can resize a widget by selecting the lower right part of the widget and then dragging it.
+      - You can move a widget by dragging it.
 
-  - Select ![Configuration icon](/img/ico-trash.svg) on the upper right of the widget to delete.
+      - You can resize a widget by selecting the lower right part of the widget and then dragging it.
 
-  :::note
+      - Select ![Configuration icon](/img/ico-trash.svg) on the upper right of the widget to delete.
 
-  If you enter Home &gt; <Cmdname sid="side_integratedFlexboard" className="uitext" />, you can select projects to import data for each widget. Click ![Add icon](/img/ico-add.svg) at the upper right of the widget, and then select a desired project. You can search and then select a project, and you can select multiple ones. After selection, select <Cmdname sid="apply" className="uitext" />.
+    - <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: Dashboard widget settings can be loaded in json format. If you select ![Copy icon](/img/ico-copy.svg) button, the json content is copied.
 
-  :::
-
-- <Cmdname sid="widget" className="uitext" /><UI>.json</UI>: Dashboard widget settings can be loaded in json format. If you select ![Copy icon](/img/ico-copy.svg) button, the json content is copied.
-
-- <Cmdname sid="option" className="uitext" /><UI>.json</UI>: Dashboard settings can be loaded in json format. If you select ![Copy icon](/img/ico-copy.svg) button, the json content is copied.
+    - <Cmdname sid="option" className="uitext" /><UI>.json</UI>: Dashboard settings can be loaded in json format. If you select ![Copy icon](/img/ico-copy.svg) button, the json content is copied.
 
 ## Deleting the Flex board
 
-In <Cmdname sid="side_flexboard" className="uitext" /> &gt; <Cmdname sid="dashboard_list" className="uitext" />, select ![Delete icon](/img/ico-trash.svg) on the upper right of the widget to delete. When the confirmation message appears, select <Cmdname sid="delete" className="uitext" />.
+1. In <Cmdname sid="side_flexboard" className="uitext" /> &gt; <Cmdname sid="dashboard_list" className="uitext" />, select ![Delete icon](/img/ico-trash.svg) on the upper right of the widget to delete. 
 
-:::note
+2. When the confirmation message appears, select <Cmdname sid="delete" className="uitext" />.
+
+:::caution
+
+The impact of deleting a dashboard differs depending on whether you are the owner or a shared user.
 
 - When a dashboard owner deletes the shared dashboard, the dashboard is deleted from all user accounts.
 - When a user who has a shared dashboard deletes the dashboard, it is only deleted from the user's <Cmdname sid="dashboard_list" className="uitext" />. The original dashboard remains intact.
