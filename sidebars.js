@@ -4782,13 +4782,13 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_11_0',
+                  id: 'release-notes/php/php-2_11_1',
                   className: 'new',
                 },
+                'release-notes/php/php-2_11_0',
                 'release-notes/php/php-2_10_0',
                 'release-notes/php/php-2_9_0',
                 'release-notes/php/php-2_8_2',
-                'release-notes/php/php-2_8_1',
                 'release-notes/php/php-previous',
               ],
             },
