@@ -1,5 +1,51 @@
 [
   {
+    "url": "https://whatap.github.io/whatap-docs/release-notes/php/php-2_11_1/",
+    "ver": "v2.11.1",
+    "date": "2025-07-09",
+    "Lists": [
+      {
+        "ver": "v2.11.1",
+        "hash": "v2111",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue with whatap-php.service registration and execution</p>",
+        "details": "<ul>\n<li>\n<p>In new installations, the agent was deactivated because it could not recognize connection information (Access Key and server address) due to missing environment values.</p>\n<p>You can configure it manually using the commands below:</p>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">php command</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token number\" style=\"color:rgb(247, 140, 108)\">1</span><span class=\"token plain\">. /usr/whatap/php/install.sh</span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token number\" style=\"color:rgb(247, 140, 108)\">2</span><span class=\"token plain\">. cp /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service</span><br></span></code></pre></div></div></div>\n</li>\n<li>\n<p>For existing installations, the update works correctly.</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/php/php-2_11_0",
+    "ver": "v2.11.0",
+    "date": "2025-06-18",
+    "Lists": [
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"0\">Feature</code> Reduced CPU load</p>",
+        "details": "<ul>\n<li>\n<p>Reduced CPU usage by changing the criteria for determining monitoring targets</p>\n</li>\n<li>\n<p>Further reduction when user-defined function monitoring is disabled</p>\n<p><code>whatap.profile_method_enabled=false</code></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Display CLI call parameters in URL</p>",
+        "details": "<ul>\n<li>\n<p>Collect URL including parameters when called via CLI</p>\n<ul>\n<li>Example: php /home/www/test.php aaa bbb → displays as /home/www/test.php aaa bbb</li>\n</ul>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Collect file parameter information</p>",
+        "details": "<ul>\n<li>Collects up to 20 parameters, each up to 256 bytes</li>\n</ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/en/release-notes/php/php-2_10_0",
     "ver": "v2.10.0",
     "date": "2025-02-11",
