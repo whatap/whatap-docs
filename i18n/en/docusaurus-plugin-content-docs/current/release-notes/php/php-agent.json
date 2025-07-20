@@ -1,5 +1,52 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/php/php-2_11_0",
+    "ver": "v2.11.0",
+    "date": "2025-07-09",
+    "Lists": [
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where whatap-php.service registration and execution failed.</p>",
+        "details": "<ul>\n<li>\n<p>If the environment values are missing during a fresh installation, the agent may not be activated because it cannot recognize connection information (access key and server address).</p>\n<p>You can configure it manually using the following commands</p>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockTitle_Ktv7\">php command</div><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token number\" style=\"color:rgb(247, 140, 108)\">1</span><span class=\"token plain\">. /usr/whatap/php/install.sh</span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token number\" style=\"color:rgb(247, 140, 108)\">2</span><span class=\"token plain\">. </span><span class=\"token function\" style=\"color:rgb(130, 170, 255)\">cp</span><span class=\"token plain\"> /usr/lib/systemd/system/whatap-php.service /etc/systemd/system/whatap-php.service</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n<li>\n<p>In existing installations, the update is applied correctly.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"0\">Feature</code> Reduced CPU load</p>",
+        "details": "<ul>\n<li>\n<p>Reduced CPU load by changing the criteria for monitoring targets.</p>\n</li>\n<li>\n<p>Further reduced CPU load when user function monitoring is disabled.</p>\n<p><code>whatap.profile_method_enabled=false</code></p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> CLI parameter URL display</p>",
+        "details": "<ul>\n<li>\n<p>Collects URLs including parameters when running CLI commands.</p>\n</li>\n<li>\n<p>Example: php /home/www/test.php aaa bbb → Collected as /home/www/test.php aaa bbb</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Collection of file parameter info</p>",
+        "details": "<ul>\n<li>Collects up to 20 parameters, each up to 256 bytes (partial data only).</li>\n</ul>"
+      },
+      {
+        "ver": "v2.11.0",
+        "hash": "v2110",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Memory leak fix</p>",
+        "details": "<ul>\n<li>Fixed memory leak caused by calling the error function when a DB function fails.</li>\n</ul>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/php/php-2_10_0",
     "ver": "v2.10.0",
     "date": "2025-02-11",

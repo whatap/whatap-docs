@@ -1,9 +1,152 @@
 [
   {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_62",
+    "ver": "v2.2.62",
+    "date": "2025-07-03",
+    "Lists": [
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the <code>arrival_rate</code> metric was excessively collected when accessing static resources (e.g., .html, .js) registered in the Java agent's <code>web_static_content_extensions</code> setting</p>"
+      },
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where some exceptions were not collected when performing certain HTTP calls</p>"
+      },
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where calls were missing when using <code>weaving=lettuce-6.2</code> with Lettuce version 6.5 or higher due to errors</p>"
+      },
+      {
+        "ver": "v2.2.62",
+        "hash": "v2262",
+        "product": "Java Agent",
+        "type": "Deprecated",
+        "desc": "<p><code class=\"Deprecated\" type=\"0\">Deprecated</code> Removed log4j-1 tracing feature (now provided as a separate plugin)</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_61",
+    "ver": "v2.2.61",
+    "date": "2025-06-09",
+    "Lists": [
+      {
+        "ver": "v2.2.61",
+        "hash": "v2261",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified to not send OpenTelemetry trace header keys by default</p>"
+      },
+      {
+        "ver": "v2.2.61",
+        "hash": "v2261",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> In Spring Boot, changed to trace propagation by default when using <code>async-annotation</code> (runs in a separate thread)</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_60",
+    "ver": "v2.2.60",
+    "date": "2025-05-29",
+    "Lists": [
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Tracing <code>spring-cloud-openfeign-core</code>, <code>spring-cloud-circuitbreaker-resilience4j</code></p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Tracing <code>feign-hystrix</code></p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>log4j-1.x</code> log collection</p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified the levels in the AppServer category collected by the Tomcat log to match the Tomcat log level.</p>",
+        "details": "<ul>\n<li>\n<p>warn → WARNING</p>\n</li>\n<li>\n<p>error, fatal → SEVERE</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Corrected typo in the class of the <code>db_pool_detail</code> metric (Hyris DataSource Pool → HikariPool).</p>"
+      },
+      {
+        "ver": "v2.2.60",
+        "hash": "v2260",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where errors cannot be collected when there is no response while calling FeignClient.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_59",
+    "ver": "v2.2.59",
+    "date": "2025-05-08",
+    "Lists": [
+      {
+        "ver": "v2.2.59",
+        "hash": "v2259",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> In IBM Java and Widows environments, modified not to call JMX.</p>",
+        "details": "<ul>\n<li>\n<p>It is recommended to set <code>oshi</code> or <code>sigar</code> for collecting performance metrics.</p>\n<ul>\n<li>In Java 1.8 or later, it is recommended to set the <code>oshi</code>.</li>\n</ul>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token comment\" style=\"color:rgb(105, 112, 152);font-style:italic\"># default: false</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token assign-left variable\" style=\"color:rgb(191, 199, 213)\">oshi_enabled</span><span class=\"token operator\" style=\"color:rgb(137, 221, 255)\">=</span><span class=\"token plain\">true</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n<ul>\n<li>For Java versions earlier than 1.8, it is recommended to set the <code>sigar</code>.</li>\n</ul>\n<div class=\"language-bash codeBlockContainer_Ckt0 theme-code-block\" style=\"--prism-color:#bfc7d5;--prism-background-color:#292d3e\"><div class=\"codeBlockContent_biex\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock_bY9V thin-scrollbar\" style=\"color:#bfc7d5;background-color:#292d3e\"><code class=\"codeBlockLines_e6Vv\"><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token comment\" style=\"color:rgb(105, 112, 152);font-style:italic\"># default: false</span><span class=\"token plain\"></span><br></span><span class=\"token-line\" style=\"color:#bfc7d5\"><span class=\"token plain\"></span><span class=\"token assign-left variable\" style=\"color:rgb(191, 199, 213)\">sigar_enabled</span><span class=\"token operator\" style=\"color:rgb(137, 221, 255)\">=</span><span class=\"token plain\">true</span><br></span></code></pre><div class=\"buttonGroup__atx\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_eSgA\" aria-hidden=\"true\"><svg viewbox=\"0 0 24 24\" class=\"copyButtonIcon_y97N\"><path fill=\"currentColor\" d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg viewbox=\"0 0 24 24\" class=\"copyButtonSuccessIcon_LjdS\"><path fill=\"currentColor\" d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.2.59",
+        "hash": "v2259",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where log tracing does not occur intermittently (Java agent 2.2.58).</p>"
+      }
+    ]
+  },
+  {
     "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_58",
     "ver": "v2.2.58",
     "date": "2025-04-25",
-    "Lists": []
+    "Lists": [
+      {
+        "ver": "v2.2.58",
+        "hash": "v2258",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue that occurs when tracing CompletableFuture calls in parallel.</p>"
+      },
+      {
+        "ver": "v2.2.58",
+        "hash": "v2258",
+        "product": "Java Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Prevented TPS from increasing when tracing CompletableFuture.</p>"
+      }
+    ]
   },
   {
     "url": "https://docs.whatap.io/en/release-notes/java/java-2_2_57",
