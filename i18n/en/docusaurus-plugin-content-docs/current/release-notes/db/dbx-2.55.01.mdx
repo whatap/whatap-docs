@@ -1,0 +1,25 @@
+---
+id: dbx-2_55_01
+title: DBX v2.55.01
+pagination_next: release-notes/db/dbx-2_54_02
+displayed_sidebar: releaseSidebar
+---
+
+July 16, 2025
+
+### Common
+
+- <Status priority='2'>Feature</Status> Added `sub_type` field to Agentinfo to indicate database type
+- <Status priority='2'>Feature</Status> Enabled `AgentinfoPack` transmission from Autoscale agents
+- <Status priority='1'>New</Status> Added `shellmon` feature to support shell script execution
+
+### MySQL
+
+- <Status priority='0'>Fixed</Status> Fixed an error that occurred when collecting active sessions in MySQL 5.6
+- <Status priority='0'>Fixed</Status> Changed `node_state` value from 2 to -2 when the slave DB is corrupted
+- <Status priority='2'>Change</Status> Changed the collection interval for the `max_connection` metric to 5 minutes
+- <Status priority='0'>Fixed</Status> Fixed an issue where slow query text was not collected depending on timestamp format
+
+### PostgreSQL
+
+- <Status priority='0'>Fixed</Status> Fixed an issue where slow query text was not collected depending on timestamp format

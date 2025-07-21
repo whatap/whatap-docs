@@ -1,0 +1,15 @@
+---
+id: dmx-1_0_5g
+title: DMX v1.0.5g
+pagination_prev: release-notes/db/dmx-1_0_5b
+displayed_sidebar: releaseSidebar
+---
+
+2025年7月8日
+
+- <Status priority='2'>Feature</Status> SQL モニタリング機能を改善  
+  - `multi row` が返される場合、最大 100 件までの結果を保存  
+  - 結果が `int` または `float` 型の場合、数値として認識して処理
+- <Status priority='0'>Fixed</Status> Oracle 12.1.0.2 バージョンにて `con_id` 単位でイベントを処理するように修正
+- <Status priority='0'>Fixed</Status> ASM ディスク情報で `null` により発生していたバグを修正
+- <Status priority='0'>Fixed</Status> テーブルスペースの `increment_by` をブロック単位からメガバイト単位（float型）に変換して送信するように修正
