@@ -2090,7 +2090,16 @@ const sidebars = {
             'postgresql/common-alert'
           ],
         },
-        'postgresql/linked-projects',
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'postgresql/linked-projects',
+            'postgresql/user-group-display-settings',
+          ],
+        },
         'postgresql/labs'
       ],
     }
@@ -2456,7 +2465,16 @@ const sidebars = {
             'oracle/common-alert'
           ],
         },
-        'oracle/linked-projects',
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'oracle/linked-projects',
+            'oracle/user-group-display-settings',
+          ],
+        },
         {
           type: 'category',
           label: '실험실',
@@ -2886,7 +2904,16 @@ const sidebars = {
             'mysql/common-alert'
           ],
         },
-        'mysql/linked-projects',
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'mysql/linked-projects',
+            'mysql/user-group-display-settings',
+          ],
+        },
         {
           type: 'category',
           label: '실험실',
