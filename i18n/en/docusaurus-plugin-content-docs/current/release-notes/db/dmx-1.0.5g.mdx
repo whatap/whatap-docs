@@ -1,0 +1,15 @@
+---
+id: dmx-1_0_5g
+title: DMX v1.0.5g
+pagination_prev: release-notes/db/dmx-1_0_5b
+displayed_sidebar: releaseSidebar
+---
+
+July 8, 2025
+
+- <Status priority='2'>Feature</Status> Improved SQL monitoring  
+  - When multiple rows are returned, stores up to 100 results  
+  - Recognizes values as numeric if they are of `int` or `float` type
+- <Status priority='0'>Fixed</Status> Modified event handling per `con_id` for Oracle version 12.1.0.2
+- <Status priority='0'>Fixed</Status> Fixed a bug caused by `null` values in ASM disk information
+- <Status priority='0'>Fixed</Status> Changed `tablespace.increment_by` unit from blocks to megabytes (float type)

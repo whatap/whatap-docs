@@ -1,0 +1,15 @@
+---
+id: xos-1_2_0j
+title: xos v1.2.0j
+toc_max_heading_level: 2
+pagination_next: release-notes/db/xos-1_2_0d
+displayed_sidebar: releaseSidebar
+---
+
+2025年7月16日
+
+- <Status priority='0'>Fixed</Status> `use_tcp=1` 設定時に PostgreSQL の slow query にて 1 バイトずれて `[CPU]` フィールド以降がずれ、「unknown packet」エラーが繰り返し発生する問題を修正
+- <Status priority='0'>Fixed</Status> MySQL にて `slow_query=` を指定した場合に `use_midinfo` フラグが誤って 1 に変更される問題を修正  
+  ※ バグ現象：slow query にて SQL テキストが欠落または文字化けする
+- <Status priority='0'>Fixed</Status> PostgreSQL の slow query にて `log_error_verbosity=verbose` 設定時に `00000:` エラーコードをスキップするように修正  
+  ※ バグ現象：slow query にて SQL テキストが表示されない
