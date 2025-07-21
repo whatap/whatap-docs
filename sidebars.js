@@ -1880,6 +1880,15 @@ const sidebars = {
             'sapase/common-alert'
           ],
         },
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/user-group-display-settings',
+          ],
+        },
         'sapase/labs'
       ],
     }
