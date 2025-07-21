@@ -5347,6 +5347,7 @@ const sidebars = {
         // 'about-billing',
         // 'software-proxy',
         'main-ui-intro-v2',
+        'usage-ui',
         'reference/data-collection-retention',
         {
           type: 'html',
