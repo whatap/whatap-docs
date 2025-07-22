@@ -1,0 +1,848 @@
+[
+  {
+    "ver": "v2.55.02",
+    "date": "2025-07-17",
+    "Lists": [
+      {
+        "ver": "v2.55.02",
+        "hash": "v25502",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Changed the transmission interval of <code>max_connection</code> from 5 minutes to 5 seconds (collection interval remains 5 minutes)</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.02",
+        "hash": "v25502",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the category name in the logic for real-time retrieval of INDEX layout</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v2.55.01",
+    "date": "2025-07-16",
+    "Lists": [
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added <code>shellmon</code> to support shell script execution</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>sub_type</code> field to Agentinfo to indicate the type of DB</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved Autoscale agent to send <code>AgentinfoPack</code></p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> Changed <code>max_connection</code> collection interval to 5 minutes</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed error that occurred during active session collection in MySQL 5.6</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <code>node_state</code> value from 2 to -2 when slave DB is corrupted</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where <code>text</code> was missing in slow query collection depending on timestamp format</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where <code>text</code> was missing in slow query collection depending on timestamp format</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.54.02",
+    "date": "2025-06-20",
+    "Lists": [
+      {
+        "ver": "v2.54.02",
+        "hash": "v25402",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added state field to xview category</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.54.01",
+    "date": "2025-06-18",
+    "Lists": [
+      {
+        "ver": "v2.54.01",
+        "hash": "v25401",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added schema specification option for pg_stat_statements in PostgreSQL SQL statistics feature</p>",
+        "category": "PostgreSQL",
+        "details": "<ul>\n<li>Option name: statements_schema=</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.53.02",
+    "date": "2025-06-12",
+    "Lists": [
+      {
+        "ver": "v2.53.02",
+        "hash": "v25302",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Delete agent directory when Autoscale agent DB cluster scales in</p>",
+        "category": "Common"
+      }
+    ]
+  },
+  {
+    "ver": "v2.53.01",
+    "date": "2025-05-28",
+    "Lists": [
+      {
+        "ver": "v2.53.01",
+        "hash": "v25301",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> For MySQL 8 and above, changed the query used for collecting lock info (uses sys.innodb_lock_waits) and added agent option\n<a href=\"https://docs.whatap.io/mysql/agent-dbx-settings#%EB%9D%BD-%EC%88%98%EC%A7%91-%EA%B4%80%EB%A0%A8-%EC%84%A4%EC%A0%95\" target=\"_blank\" rel=\"noopener noreferrer\">See the following</a></p>",
+        "category": "MySQL",
+        "details": "<p><code class=\"Change\" type=\"0\">Change</code> Changed the format for displaying session info in whatap.log</p>"
+      },
+      {
+        "ver": "v2.53.01",
+        "hash": "v25301",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added order by option when collecting PGSQL statistics</p>",
+        "category": "PostgreSQL",
+        "details": "<ul>\n<li>default : statements_order_by=total_time</li>\n<li>To add columns : ex) statements_order_by=total_time,calls</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.52.04",
+    "date": "2025-05-20",
+    "Lists": [
+      {
+        "ver": "v2.52.04",
+        "hash": "v25204",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Changed autoscale AWS credential expiration check from 200s to 120s</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.52.04",
+        "hash": "v25204",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug in credential issuance order</p>",
+        "category": "Common"
+      }
+    ]
+  },
+  {
+    "ver": "v2.52.04",
+    "date": "2025-05-20",
+    "Lists": [
+      {
+        "ver": "v2.52.04",
+        "hash": "v25204",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Changed autoscale AWS credential expiration check from 200s to 120s</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.52.04",
+        "hash": "v25204",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug in credential issuance order</p>",
+        "category": "Common"
+      }
+    ]
+  },
+  {
+    "ver": "v2.52.01",
+    "date": "2025-05-07",
+    "Lists": [
+      {
+        "ver": "v2.52.01",
+        "hash": "v25201",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added bloating collection option (pg_bloat, default=true)</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v2.52.01",
+        "hash": "v25201",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed cumulative exception handling for show slave status</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.51.01",
+    "date": "2025-04-30",
+    "Lists": [
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added DB2 Catalog Cache Hit Ratio metric</p>",
+        "category": "DB2"
+      },
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed overflow bug for some DB2 metrics</p>",
+        "category": "DB2"
+      },
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added pg_relation (waiter_relation, holder_relation) to lock tree info</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Reverted agent alert feature</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v2.50.02",
+    "date": "2025-04-24",
+    "Lists": [
+      {
+        "ver": "v2.50.02",
+        "hash": "v25002",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified setup.sh to prioritize reading JAR files in <em>jdbc</em> folder</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.50.02",
+        "hash": "v25002",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed NullPoint bug when executing session termination</p>",
+        "category": "IBM DB2"
+      },
+      {
+        "ver": "v2.50.02",
+        "hash": "v25002",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed error in <code>xact_runtime</code> calculation</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.50.01",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "v2.50.01",
+        "hash": "v25001",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified collection method for Partition and Subpartition info in object metadata</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.50.01",
+        "hash": "v25001",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Changed criteria for collecting active session list</p>",
+        "category": "Oracle",
+        "details": "<ul>\n<li><p>Before: <code>status='active'</code></p></li><li><p>After: <code>status!='inactive'</code></p></li>\n</ul>"
+      },
+      {
+        "ver": "v2.50.01",
+        "hash": "v25001",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug where SQL Text was not displayed in procedure statistics menu</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.5.4",
+    "date": "2025-04-16",
+    "Lists": [
+      {
+        "ver": "v2.5.4",
+        "hash": "v254",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug related to metrics collecting negative values</p>",
+        "category": "CUBRID"
+      },
+      {
+        "ver": "v2.5.4",
+        "hash": "v254",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Cluster AutoScale feature (agent provided upon request)</p>",
+        "category": "Redis"
+      },
+      {
+        "ver": "v2.5.4",
+        "hash": "v254",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed error occurring during version info collection</p>",
+        "category": "SAP ASE"
+      }
+    ]
+  },
+  {
+    "ver": "v2.5.3",
+    "date": "2025-04-10",
+    "Lists": [
+      {
+        "ver": "v2.5.3",
+        "hash": "v253",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug that occurred when collecting DB2 Active Session username</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "ver": "v2.5.2",
+    "date": "2025-04-08",
+    "Lists": [
+      {
+        "ver": "v2.5.2",
+        "hash": "v252",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed error where start.sh fails when multiple agent JAR files exist (occurred in versions 250327 ~ 250407)</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.5.2",
+        "hash": "v252",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed bug where active sessions were not collected in Tibero 5</p>",
+        "category": "Tibero"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_5_1",
+    "ver": "v2.5.1",
+    "date": "2025-04-04",
+    "Lists": [
+      {
+        "ver": "v2.5.1",
+        "hash": "v251",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>@stime</code> tag to the sqlstat pack.</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.5.1",
+        "hash": "v251",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>@stime</code> tag to the sqlstat pack.</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_9",
+    "ver": "v2.4.9",
+    "date": "2025-03-25",
+    "Lists": [
+      {
+        "ver": "v2.4.9",
+        "hash": "v249",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the DB size collection feature.</p>",
+        "category": "SAP ASE"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_6",
+    "ver": "v2.4.6",
+    "date": "2025-03-14",
+    "Lists": [
+      {
+        "ver": "v2.4.6",
+        "hash": "v246",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <code>node_state</code> and <code>DB size</code> collection features for Yugabyte DB.</p>",
+        "category": "PostgreSQL",
+        "details": "<ul>\n<li>\n<p>Basically, it collects the DB size and index size by using the <code>yb_pg_database_size</code> and <code>yb_pg_indexes_size</code> functions.</p>\n</li>\n<li>\n<p>If you use a different function name, you can specify it through the <code>yb_pg_database_size=</code> and <code>yb_pg_indexes_size=</code> options.</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_5",
+    "ver": "v2.4.5",
+    "date": "2025-03-13",
+    "Lists": [
+      {
+        "ver": "v2.4.5",
+        "hash": "v245",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the 1-minute option for the statistical data collection cycle (<code>sqlstat_send_interval=1</code>, default: <code>5</code>).</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.4.5",
+        "hash": "v245",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the 1-minute option for the statistical data collection cycle (<code>sqlstat_send_interval=1</code>, default: <code>5</code>).</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.4.5",
+        "hash": "v245",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<li><code class=\"New\" type=\"1\">New</code> Added the 1-minute option for the statistical data collection cycle (<code>sqlstat_send_interval=1</code>, default: <code>5</code>).</li>",
+        "category": "Oracle Pro"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_3",
+    "ver": "v2.4.3",
+    "date": "2025-03-06",
+    "Lists": [
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the SAP ASE product</p>",
+        "category": "SAP ASE"
+      },
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the Tablespace size collection feature.</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_2",
+    "ver": "v2.4.2",
+    "date": "2025-02-26",
+    "Lists": [
+      {
+        "ver": "v2.4.2",
+        "hash": "v242",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Changed the <code>status</code> metric of Oracle Active Session to the <code>String</code> value.</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.4.2",
+        "hash": "v242",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the <code>xact_runtime</code> metric.</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v2.4.2",
+        "hash": "v242",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added <code>id</code> in <code>xview</code>.</p>",
+        "category": "Altibase"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_1",
+    "ver": "v2.4.1",
+    "date": "2025-02-24",
+    "Lists": [
+      {
+        "ver": "v2.4.1",
+        "hash": "v241",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the lock collection query in MySQL 8 or later.</p>",
+        "category": "MySQL",
+        "details": "<ul>\n<li>\n<p>Changed the existing <code>data_lock_waits</code> count collection to count only the number of waiting sessions.</p>\n</li>\n<li>\n<p>Existing collection queries can be used when the <code>mysql8_lock_status=false</code> option is added.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.4.1",
+        "hash": "v241",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the checkpoint metrics collection in PostgreSQL 17 or later.</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v2.4.1",
+        "hash": "v241",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the error where the <code>aws_region</code> in <em>whatap.conf</em> is not recognized by the autoscale agent.</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_4_0",
+    "ver": "v2.4.0",
+    "date": "2025-02-20",
+    "Lists": [
+      {
+        "ver": "v2.4.0",
+        "hash": "v240",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed not to generate 5-minute statistics for the following categories:</p>",
+        "category": "PostgreSQL, MySQL, MS SQL Server, Altibase, Cubrid, Mongo, Redis, IBM DB2",
+        "details": "<blockquote>\n<p><code>active session</code>, <code>xview</code>, <code>lockinfo</code>, <code>pq_tree</code>, <code>segments</code>, <code>tablespace</code></p>\n</blockquote>"
+      },
+      {
+        "ver": "v2.4.0",
+        "hash": "v240",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed not to generate 5-minute statistics for the following categories and added the <code>!rectype</code> and <code>@id</code> fields.</p>",
+        "category": "PostgreSQL, MySQL, MS SQL Server, Altibase, Cubrid, Mongo, Redis, IBM DB2",
+        "details": "<blockquote>\n<p><code>active_session</code>, <code>xos_disk_usage</code></p>\n</blockquote>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_9",
+    "ver": "v2.3.9",
+    "date": "2025-02-18",
+    "Lists": [
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> When sending the plan information, if <code>parent_id</code> is <code>null</code>, it is sent as <code>-1</code> (applied from version 20250220).</p>",
+        "category": "Tibero"
+      },
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Tibero 5 (rev. 125305 to rev. 127709) Treated the status column name in <code>$session</code> as an error.</p>",
+        "category": "Tibero"
+      },
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>!rectype</code> and <code>@id</code> fields in the following categories:</p>",
+        "category": "Oracle",
+        "details": "<blockquote>\n<p><code>db_oracle_active_session</code>, <code>db_oracle_xos_disk_usage</code></p>\n</blockquote>"
+      },
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> When sending the plan information, if <code>parent_id</code> is <code>null</code>, it is sent as <code>-1</code>.</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed not to generate 5-minute statistics for the following categories:</p>",
+        "category": "Oracle",
+        "details": "<blockquote>\n<p><code>db_oracle_active_session</code>, <code>db_oracle_xview</code>, <code>db_oracle_bind_save</code>, <code>db_oracle_lockinfo</code>, <code>db_oracle_plan_save</code>, <code>db_oracle_pq_tree</code>, <code>db_oracle_segments</code>, <code>db_oracle_tablespace</code>, <code>db_oracle_sga</code></p>\n</blockquote>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_8",
+    "ver": "v2.3.8",
+    "date": "2025-02-05",
+    "Lists": [
+      {
+        "ver": "v2.3.8",
+        "hash": "v238",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the Altibase disk tablespace query error.</p>",
+        "category": "Altibase"
+      },
+      {
+        "ver": "v2.3.8",
+        "hash": "v238",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the Bufferpool type from <code>int</code> to <code>long</code>.</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_7",
+    "ver": "v2.3.7",
+    "date": "2025-01-23",
+    "Lists": [
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>tablespace</code> option to resolve the query timeout issue when searching for free space to see different views depending on the option.</p>",
+        "category": "Oracle",
+        "details": "<ul>\n<li>\n<p><code>tablespace=1</code>: <code>dba_free_space</code> is viewed.</p>\n</li>\n<li>\n<p><code>tablespace=2</code>: <code>dba_lmt_free_space</code> is viewed.</p>\n</li>\n<li>\n<p><code>tablespace=3</code>: <code>usage_metrics</code> is viewed.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the <code>maxsize</code> when collecting Datafile.</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added <code>autoextensible</code> and <code>maxsize</code> when collecting Datafile.</p>",
+        "category": "Tibero"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified to leave logs on the agent when collecting tablespace.</p>",
+        "category": "Tibero"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed the name of max_m to maxsize when collecting Datafile.</p>",
+        "category": "Altibase"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Modified to leave logs on the agent when collecting tablespace.</p>",
+        "category": "Altibase"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_6",
+    "ver": "v2.3.6",
+    "date": "2025-01-22",
+    "Lists": [
+      {
+        "ver": "v2.3.6",
+        "hash": "v236",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed reissue handling of the Autoscale agent's ARN token.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.3.6",
+        "hash": "v236",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the PID in DB2 10.5 or later.</p>",
+        "category": "IBM DB2"
+      },
+      {
+        "ver": "v2.3.6",
+        "hash": "v236",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Separated active session queries in DB2 9.7.</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_5",
+    "ver": "v2.3.5",
+    "date": "2025-01-17",
+    "Lists": [
+      {
+        "ver": "v2.3.5",
+        "hash": "v235",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the issue where the agent does not send data to the <code>db_process_check</code> category for the first time after startup.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.3.5",
+        "hash": "v235",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the sqlmon bug: fixed the issue where it does not work in the V2 project.</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v2.3.5",
+        "hash": "v235",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added the JDBC connection option (<code>connect_option</code>).</p>",
+        "category": "IBM DB2"
+      },
+      {
+        "ver": "v2.3.5",
+        "hash": "v235",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the error in the logic for reconnecting to the database server.</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_4",
+    "ver": "v2.3.4",
+    "date": "2025-01-15",
+    "Lists": [
+      {
+        "ver": "v2.3.4",
+        "hash": "v234",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added the agent for IBM DB2 monitoring.</p>",
+        "category": "IBM DB2"
+      },
+      {
+        "ver": "v2.3.4",
+        "hash": "v234",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> Added the feature to send blank values to the <code>db_process_check</code> category twice a day to trigger normal notifications.</p>",
+        "category": "Common"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/dbx-2_3_3",
+    "ver": "v2.3.3",
+    "date": "2025-01-07",
+    "Lists": [
+      {
+        "ver": "v2.3.3",
+        "hash": "v233",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added the <code>mssql_query_hash</code> field (active session, xview, query stat, and sql stat).</p>",
+        "category": "SQL Server"
+      },
+      {
+        "ver": "v2.3.3",
+        "hash": "v233",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Added the <code>growth</code> field in <code>filegroup</code>.</p>",
+        "category": "SQL Server"
+      },
+      {
+        "ver": "v2.3.3",
+        "hash": "v233",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed the bugs in <code>query_stat</code> 2008 or earlier.</p>",
+        "category": "SQL Server"
+      },
+      {
+        "ver": "v2.3.3",
+        "hash": "v233",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified the <code>buffer cache hit ratio</code> and <code>cache hit ratio</code> metrics not to exceed 100%.</p>",
+        "category": "SQL Server"
+      }
+    ]
+  }
+]
