@@ -1,6 +1,20 @@
 [
   {
-    "url": "https://docs.whatap.io/release-notes/dotnet/dotnet-2_4_3/",
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_4_4/",
+    "ver": "v2.4.4",
+    "date": "2025-07-22",
+    "Lists": [
+      {
+        "ver": "v2.4.4",
+        "hash": "v244",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where transactions were marked as <strong>Lost Connection</strong> even though they had completed normally during circular calls.</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_4_3/",
     "ver": "v2.4.3",
     "date": "2025-06-25",
     "Lists": [
@@ -44,6 +58,7 @@
         "type": "Fixed",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the original URL was not displayed in record summaries when URL normalization was applied</p>"
 =======
 <<<<<<< HEAD
@@ -55,6 +70,9 @@
 =======
         "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the original URL was not displayed in record summaries when URL normalization was applied</p>"
 >>>>>>> server@SERVICE-2773
+=======
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed an issue where the original URL was not displayed in record summaries when URL normalization was applied.</p>"
+>>>>>>> 845f1dd4c0132210b6446ed7df94460f1131558e
       }
     ]
   },  
@@ -73,7 +91,7 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_1",
+    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_4_1",
     "ver": "v2.4.1",
     "date": "2025-03-21",
     "Lists": [
