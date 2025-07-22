@@ -93,7 +93,7 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
         acc[dateKey] = [];
       }
       note.Lists.forEach(list => {
-        acc[dateKey].push({ ...list, date: note.date, url: note.url, ver: note.ver });
+        acc[dateKey].push({ ...list, date: note.date, url: note.url, ver: note.ver, JavaVersion: note.JavaVersion });
       });
       return acc;
     }, {});
@@ -137,12 +137,19 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                     {dateGroup.products[productKey].map((list, index, array) => (
                       <div key={`${list.ver}-${index}`} className={styles.rlist}>
                         <div>
-                          {(index === 0 || list.ver !== array[index - 1].ver) && (
+                        {(index === 0 || list.ver !== array[index - 1].ver) && (
+                          <>
                             <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className={styles.goto}>
                               {list.ver}
-                              <img src={linkIcon} width="18px" height="18px" className={clsx(styles.icoLink, 'ico-link')} />
+                                <img src={linkIcon} width="18px" height="18px" className={clsx(styles.icoLink, 'ico-link')} />
                             </a>
-                          )}
+                              {list.JavaVersion && (
+                                <span className={styles.JavaVersion}>
+                                  <strong>{list.JavaVersion}</strong>
+                                </span>
+                              )}
+                            </>
+                        )}
                         </div>
                         {
                           ((platform === 'db' && list.category) || list.category) ? (
@@ -168,6 +175,9 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
           loaded && filteredLists.map(note => (
             <div key={note.ver}>
               <h2>{note.ver}</h2>
+              {note.JavaVersion && (
+                <span className={styles.JavaVersion}> &nbsp;| {note.JavaVersion}</span>
+              )}
               <div>{note.date}</div>
               <ul>
                 {note.Lists.map((list, index) => (
