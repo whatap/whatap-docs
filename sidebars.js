@@ -1880,6 +1880,15 @@ const sidebars = {
             'sapase/common-alert'
           ],
         },
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'sapase/user-group-display-settings',
+          ],
+        },
         'sapase/labs'
       ],
     }
@@ -2090,7 +2099,16 @@ const sidebars = {
             'postgresql/common-alert'
           ],
         },
-        'postgresql/linked-projects',
+        {
+          type: 'category',
+          label: '관리',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            'postgresql/linked-projects',
+            'postgresql/user-group-display-settings',
+          ],
+        },
         'postgresql/labs'
       ],
     }
@@ -2389,6 +2407,7 @@ const sidebars = {
             'oracle/table-space-size',
             'oracle/sga-size',
             'oracle/report-intro',
+            'oracle/top-sql',
           ],
         },
         'oracle/integrated-report',
@@ -2456,20 +2475,17 @@ const sidebars = {
             'oracle/common-alert'
           ],
         },
-        'oracle/linked-projects',
         {
           type: 'category',
-          label: '실험실',
+          label: '관리',
           collapsible: true,
           collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle/labs'
-          },
           items: [
-            'oracle/top-sql',
+            'oracle/linked-projects',
+            'oracle/user-group-display-settings',
           ],
         },
+        'oracle/labs'
       ],
     }
   ],
@@ -2599,6 +2615,7 @@ const sidebars = {
             'oracle-pro/table-space-size',
             'oracle-pro/sga-size',
             'oracle-pro/report-intro',
+            'oracle-pro/top-sql',
           ],
         },
         'oracle-pro/integrated-report',
@@ -2656,20 +2673,17 @@ const sidebars = {
             'oracle-pro/common-alert'
           ],
         },
-        'oracle-pro/linked-projects',
         {
           type: 'category',
-          label: '실험실',
+          label: '관리',
           collapsible: true,
           collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-pro/labs'
-          },
           items: [
-            'oracle-pro/top-sql',
+            'oracle-pro/linked-projects',
+            'oracle-pro/user-group-display-settings',
           ],
         },
+        'oracle-pro/labs'
       ],
     }
   ],
@@ -2810,6 +2824,7 @@ const sidebars = {
             'mysql/table-size',
             'mysql/database-size',
             'mysql/report-intro',
+            'mysql/top-sql',
           ]
         },
         'mysql/integrated-report',
@@ -2877,20 +2892,17 @@ const sidebars = {
             'mysql/common-alert'
           ],
         },
-        'mysql/linked-projects',
         {
           type: 'category',
-          label: '실험실',
+          label: '관리',
           collapsible: true,
           collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'mysql/labs'
-          },
           items: [
-            'mysql/top-sql',
+            'mysql/linked-projects',
+            'mysql/user-group-display-settings',
           ],
         },
+        'mysql/labs',
       ],
     }
   ],
