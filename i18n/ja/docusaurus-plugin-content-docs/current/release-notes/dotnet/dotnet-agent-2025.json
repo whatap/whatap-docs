@@ -1,6 +1,20 @@
 [
   {
-    "url": "https://docs.whatap.io/release-notes/dotnet/dotnet-2_4_3/",
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_4/",
+    "ver": "v2.4.4",
+    "date": "2025-07-22",
+    "Lists": [
+      {
+        "ver": "v2.4.4",
+        "hash": "v244",
+        "product": ".NET Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 循環呼び出し発生時に、トランザクションが正常に終了していても <strong>Lost Connection</strong> と表示される問題を修正しました。</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_3/",
     "ver": "v2.4.3",
     "date": "2025-06-25",
     "Lists": [
@@ -44,7 +58,7 @@
     ]
   },
   {
-    "url": "https://docs.whatap.io/en/release-notes/dotnet/dotnet-2_4_1",
+    "url": "https://docs.whatap.io/ja/release-notes/dotnet/dotnet-2_4_1",
     "ver": "v2.4.1",
     "date": "2025-03-21",
     "Lists": [
