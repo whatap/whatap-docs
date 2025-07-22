@@ -5127,7 +5127,19 @@ const sidebars = {
         'project/integrated-manage',
         'report/integrated-report',
         'notification/rt-notification',
-        'management/billing',
+        {
+          type: 'category',
+          label: '결제',
+          collapsible: false,
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'management/billing',
+          },
+          items: [
+            'management/billing-usage',
+          ]
+        },
         'management/aws-marketplace',
         {
           type: 'doc',
