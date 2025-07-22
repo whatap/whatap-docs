@@ -2407,6 +2407,7 @@ const sidebars = {
             'oracle/table-space-size',
             'oracle/sga-size',
             'oracle/report-intro',
+            'oracle/top-sql',
           ],
         },
         'oracle/integrated-report',
@@ -2484,19 +2485,7 @@ const sidebars = {
             'oracle/user-group-display-settings',
           ],
         },
-        {
-          type: 'category',
-          label: '실험실',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle/labs'
-          },
-          items: [
-            'oracle/top-sql',
-          ],
-        },
+        'oracle/labs'
       ],
     }
   ],
@@ -2626,6 +2615,7 @@ const sidebars = {
             'oracle-pro/table-space-size',
             'oracle-pro/sga-size',
             'oracle-pro/report-intro',
+            'oracle-pro/top-sql',
           ],
         },
         'oracle-pro/integrated-report',
@@ -2693,19 +2683,7 @@ const sidebars = {
             'oracle-pro/user-group-display-settings',
           ],
         },
-        {
-          type: 'category',
-          label: '실험실',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'oracle-pro/labs'
-          },
-          items: [
-            'oracle-pro/top-sql',
-          ],
-        },
+        'oracle-pro/labs'
       ],
     }
   ],
@@ -2846,6 +2824,7 @@ const sidebars = {
             'mysql/table-size',
             'mysql/database-size',
             'mysql/report-intro',
+            'mysql/top-sql',
           ]
         },
         'mysql/integrated-report',
@@ -2923,19 +2902,7 @@ const sidebars = {
             'mysql/user-group-display-settings',
           ],
         },
-        {
-          type: 'category',
-          label: '실험실',
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: 'doc',
-            id: 'mysql/labs'
-          },
-          items: [
-            'mysql/top-sql',
-          ],
-        },
+        'mysql/labs',
       ],
     }
   ],
