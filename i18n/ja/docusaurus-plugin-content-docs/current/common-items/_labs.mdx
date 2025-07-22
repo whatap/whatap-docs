@@ -25,7 +25,8 @@
 
 #### <Cmdname sid="side_tagFlex" className="uitext" />
 
-  **MXQL**は、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。 プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会し、活用するために使います。 **MXQL**에 대한 자세한 내용은 [다음 문서](../mxql/mxql-overview)를 참고하세요.
+  **MXQL**は、WhaTapの性能データ(メトリクス)を柔軟に検索するためのクエリ言語です。 プロジェクトに含まれる複数のエージェントから収集したメトリクスを総合的に照会し、活用するために使います。 **MXQL**の詳細については、[次のドキュメント](../mxql/mxql-overview)をご参照ください。
+
 
 </Xclude>
 
@@ -33,19 +34,19 @@
 
 #### ビジネスダッシュボード
 
-비즈니스 대시보드는 애플리케이션의 비즈니스 단위(App Context)별 성능을 모니터링할 수 있는 대시보드입니다.
-URL 패턴이나 경로를 기반으로 정의된 각 비즈니스 항목에 대해 실시간 및 과거의 성능 데이터를 조회하고 분석할 수 있습니다.
-TPS, 응답시간, 에러율 등의 주요 성능 지표를 비즈니스 단위로 확인함으로써, 특정 업무나 서비스의 성능 상태를 빠르게 파악할 수 있습니다.
-자세한 내용은 [다음 문서](dashboard-business)를 참고하세요.
+ビジネスダッシュボードは、アプリケーションのビジネス単位（App Context）ごとのパフォーマンスをモニタリングできるダッシュボードです。  
+URLパターンやパスに基づいて定義された各ビジネス項目について、リアルタイムおよび過去のパフォーマンスデータを確認・分析できます。  
+TPS、応答時間、エラー率などの主要なパフォーマンス指標をビジネス単位で確認することで、特定の業務やサービスのパフォーマンス状況を迅速に把握できます。  
+詳しくは、[次のドキュメント](dashboard-business)をご参照ください。
 
-  :::note
+:::note
 
-  **에이전트 지원 버전**
+**対応エージェントバージョン**
 
-- **Java**: 2.2.40 이상
-- **PHP**: 2.11.0 이상
-- **Python**: 1.8.5 이상
-- **.NET**: 2.4.3 이상
+- **Java**：2.2.40以上  
+- **PHP**：2.11.0以上  
+- **Python**：1.8.5以上  
+- **.NET**：2.4.3以上  
 
 :::
 
@@ -55,7 +56,7 @@ TPS, 응답시간, 에러율 등의 주요 성능 지표를 비즈니스 단위�
 
 #### <Cmdname sid="side_collectionMap" className="uitext" />
 
-  JVM에 지정된 클래스(Class)가 사용하는 Collection(예. `java.util.Map`)の情報を提供します。 この機能を使用するには、次のエージェントオプションを追加します。
+  JVMに指定されたクラス（Class）が使用するCollection（例：`java.util.Map`）の情報を提供します。 この機能を使用するには、次のエージェントオプションを追加します。
 
 ```ini title="whatap.conf"
 collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource
@@ -63,7 +64,7 @@ collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource
 
   :::note
 
-  **에이전트 지원 버전**
+  **対応エージェントバージョン**
 
   [Javaエージェント2.1.2バージョン](../release-notes/java/java-2_1_2#collectionmonitor) 以降から対応します。
 
@@ -77,7 +78,7 @@ collection_nonstatic_holders=io.home.test.baseapp.app.post.web.PostResource
 
   アプリケーションエージェントの設定により、各モニタリング対象ごとの外部(remote) 呼び出しに対する成功/失敗の有無を記録したログを視覚化して提供します。
 
-  이 기능을 이용하려면 아래 옵션을 에이전트 설정(*whatap.conf*) 파일에 추가하거나 <Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> 메뉴에서 추가하세요.
+  この機能を利用するには、以下のオプションをエージェント設定ファイル（*whatap.conf*）に追加するか、<Cmdname sid="side_management" className="uitext" /> &gt; <Cmdname sid="side_agentSetting" className="uitext" /> メニューで追加してください。
 
 ```ini title="whatap.conf"
 logsink_rt_enabled=true
@@ -112,22 +113,6 @@ logsink_enabled=true
 
 #### <Cmdname sid="side_metricsSearch" className="uitext" />
 
-  フィールドとタグに基づいて、カテゴリのごとに特定のメトリクスを照会できます。 자세한 내용은 [다음 문서](metrics-search)를 참고하세요.
-
-</InDoc>
-
-<InDoc product="postgresql,oracle,oracle-v1,oracle-pro,mysql,mssql,mssql-v1,cubrid,cubrid-v1,tibero,altibase,altibase-v1,db2">
-
-#### <Cmdname sid="side_dbScriptManager" className="uitext" />
-
-  エージェントのインストールパスにSQLスクリプトを保存すると、WhaTapモニタリングサービス画面でそのスクリプトを読んで、リアルタイムで実行結果を照会できます。 詳細については、[次のドキュメント](../reference/script-manager)を参照してください。
-
-</InDoc>
-
-<InDoc product="oracle,oracle-pro,mysql">
-
-#### <UI>Top SQL</UI>
-
-  最大30日、最小1分単位でデータを照会でき、指標と推移チャートでSQL発生パターンを容易に把握できます。 詳細については、[次のドキュメント](top-sql)を参照してください。
+  フィールドとタグに基づいて、カテゴリのごとに特定のメトリクスを照会できます。 詳しくは、[次のドキュメント](metrics-search)をご参照ください。
 
 </InDoc>
