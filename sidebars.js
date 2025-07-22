@@ -5016,7 +5016,7 @@ const sidebars = {
             {
               type: 'doc',
               label: 'DBX',
-              id: 'release-notes/db/dbx-agent', 
+              id: 'release-notes/db/dbx-agent',
             },
             {
               type: 'doc',

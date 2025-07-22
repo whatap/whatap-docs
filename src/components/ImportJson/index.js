@@ -137,19 +137,10 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                     {dateGroup.products[productKey].map((list, index, array) => (
                       <div key={`${list.ver}-${index}`} className={styles.rlist}>
                         <div>
-                        {(index === 0 || list.ver !== array[index - 1].ver) && (
-                          <>
-                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className={styles.goto}>
-                              {list.ver}
-                                <img src={linkIcon} width="18px" height="18px" className={clsx(styles.icoLink, 'ico-link')} />
-                            </a>
-                              {list.JavaVersion && (
-                                <span className={styles.JavaVersion}>
-                                  <strong>{list.JavaVersion}</strong>
-                                </span>
-                              )}
-                            </>
-                        )}
+                          {(index === 0 || list.ver !== array[index - 1].ver) && (
+                            /* 개별 페이지 링크 삭제 */
+                            <span>{list.ver}</span>
+                          )}
                         </div>
                         {
                           ((platform === 'db' && list.category) || list.category) ? (
@@ -186,7 +177,7 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                     {list.details && (
                       <div dangerouslySetInnerHTML={{ __html: list.details }} />
                     )}
-                    <code className='changelog-service'><a href={`${note.url}#${list.hash}`}>{list.product} | {list.ver}</a></code>
+                    <code className='changelog-service'>{list.product} | {list.ver}</code>
                   </li>
                 ))}
               </ul>

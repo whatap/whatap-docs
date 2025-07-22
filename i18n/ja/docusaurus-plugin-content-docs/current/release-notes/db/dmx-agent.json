@@ -1,5 +1,168 @@
 [
   {
+    "ver": "v1.0.5g",
+    "date": "2025-07-08",
+    "Lists": [
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>sqlmon</code>機能を改善：最大100行の結果を保存し、<code>int</code>または<code>float</code>型は数値として認識</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Oracle 12.1.0.2において<code>con_id</code>単位で<code>event</code>を処理するように修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ASMディスク情報処理時の<code>null</code>によるエラーを修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>tablespace</code>の<code>increment_by</code>値をブロック単位からMB単位に変換して送信（float型適用）</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.5b",
+    "date": "2025-06-25",
+    "Lists": [
+      {
+        "ver": "v1.0.5b",
+        "hash": "v105b",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>db_oracle_dma_sqlstat</code>の<code>wait_class</code>名に含まれていた不要な<code>\\n</code>を削除</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.5a",
+    "date": "2025-06-23",
+    "Lists": [
+      {
+        "ver": "v1.0.5a",
+        "hash": "v105",
+        "product": "DMX a",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> db_oracle_dma_lock_infoにholder_inst_idを追加</p>"
+      },
+      {
+        "ver": "v1.0.5a",
+        "hash": "v105",
+        "product": "DMX a",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> db_oracle_dma_sqlstatにwait_classを追加</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.4y",
+    "date": "2025-06-10",
+    "Lists": [
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> シェルスクリプトを定期的に実行し結果を収集できるshmon機能を追加</p>",
+        "details": "<ul>\n<li>\n<p>xos.confでshmon=1に設定</p>\n</li>\n<li>\n<p>agentディレクトリ配下にshmonディレクトリを作成し.shファイルを配置すると、定期実行と結果収集が可能</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> AIXマシンでOracle Pro 11.2.0.4および19.3をサポート</p>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> script managerスレッドで処理</p>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> SQLトレース時にtkprofをスレッドで実行</p>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> trace_tkprof_path= エージェントオプションを追加</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.4s",
+    "date": "2025-05-21",
+    "Lists": [
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> sqlstatにwait情報を追加</p>",
+        "details": "<ul>\n<li>\n<p>イベント別およびwait class別の待機時間を追加</p>\n</li>\n<li>\n<p>イベント名をdb_index_eventカテゴリで1日2回送信</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> LinuxおよびAIXでOracle 10.2.0.5をサポート</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> ASMディスクサイズ情報を追加</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Multi Script Manager機能を追加</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Plan情報にindexのtable名を追加</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> SQLトレースのオン/オフ機能を追加</p>"
+      }
+    ]
+  },              
+  {
     "url": "https://docs.whatap.io/ja/release-notes/db/dmx-1_0_4h",
     "ver": "v1.0.4h",
     "date": "2025-04-03",

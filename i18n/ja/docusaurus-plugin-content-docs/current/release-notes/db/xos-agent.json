@@ -1,5 +1,100 @@
 [
   {
+    "ver": "v1.2.0k",
+    "date": "2025-07-18",
+    "Lists": [
+      {
+        "ver": "v1.2.0k",
+        "hash": "v120k",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> CentOS 7以上で<code>mem_used=1</code>オプション使用時に、メモリ使用量が<code>total - free - buff/cache</code>で計算されるように修正（<code>free</code>コマンドのused値と同じ）</p>",
+        "category": "共通"
+      }
+    ]
+  },
+  {
+    "ver": "v1.2.0j",
+    "date": "2025-07-16",
+    "Lists": [
+      {
+        "ver": "v1.2.0j",
+        "hash": "v120j",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>use_tcp=1</code>使用時にPostgreSQLのslow queryで1バイトずれて<code>[CPU]</code>が誤解釈され、unknown packetエラーが発生する問題を修正</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v1.2.0j",
+        "hash": "v120j",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> MySQLで<code>slow_query=</code>を指定した場合、<code>use_midinfo</code>フラグが1に設定される問題を修正</p>",
+        "category": "MySQL",
+        "details": "<ul><li>バグ内容：slow queryでSQL textが表示されない、または文字化けする</li></ul>"
+      },
+      {
+        "ver": "v1.2.0j",
+        "hash": "v120j",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> PostgreSQL slow queryで<code>log_error_verbosity=verbose</code>が設定されている場合に<code>00000:</code>エラーコードが表示され、SQL textが表示されない問題を修正</p>",
+        "category": "PostgreSQL",
+        "details": "<ul><li>バグ内容：slow queryでSQL textが表示されない</li></ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.2.0d",
+    "date": "2025-05-29",
+    "Lists": [
+      {
+        "ver": "v1.2.0d",
+        "hash": "v120d",
+        "product": "XOS",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>sun</code>および<code>aix</code>オペレーティングシステムのサポートを追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v1.2.0d",
+        "hash": "v120d",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> PostgreSQL slow queryで韓国語とmidinfoが正しく認識されない問題を修正</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v1.1.8v",
+    "date": "2024-12-24",
+    "Lists": [
+      {
+        "ver": "v1.1.8v",
+        "hash": "v118v",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> <code>dbx_ip</code>オプションでhostnameを指定できるように変更（XCUB 0.9.7bも同様に対応）</p>"
+      }
+    ]
+  }, 
+  {
+    "url": "https://docs.whatap.io/en/release-notes/db/xos-1_1_8f",
+    "ver": "v1.1.8f",
+    "date": "2024-06-27",
+    "Lists": [
+      {
+        "ver": "v1.1.8f",
+        "hash": "v118f",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> XOSのエラーメッセージ番号と内容を表示するように変更</p>"
+      }
+    ]
+  },         
+  {
     "url": "https://docs.whatap.io/ja/release-notes/db/xos-1_1_8a",
     "ver": "v1.1.8a",
     "date": "2024-01-25",
