@@ -1,0 +1,169 @@
+ホーム画面 &gt; プロジェクトを選択 &gt;  <Cmdname sid="side_event" className="uitext" /> &gt;  <Cmdname sid="side_eventHistory" className="uitext" />
+
+<Cmdname sid="side_eventHistory" className="uitext" />では、システムで発生したさまざまなイベントを効率的に検索・表示し、詳細情報を分析できます。**Elasticsearch DSLクエリ**を使用することで、条件に合ったイベントを正確かつ迅速に検索できます。
+
+## 基本画面
+
+検索結果の**イベントタイトルをクリック**すると、そのイベントが発生した時間帯の詳細データを分析できる画面に移動します。これにより、イベント発生前後の状況を総合的に把握できます。
+
+<ImgLang img='set-event-history.png' desc='set-event-history' />
+
+### <img src="/img/ico-column.svg" alt="カラムアイコン" /> カラム設定
+
+表示したいカラムを選択・非表示にできます。設定方法は以下の通りです。
+
+1. イベント履歴画面の右上にある <img src="/img/ico-column.svg" alt="カラムアイコン" /> カラム設定ボタンをクリックします。
+
+1. 表示または非表示にするカラムを選択します。
+
+    * 表示項目ではカラムの順序を変更できます。
+
+    * **カラム名検索**欄で、特定のカラムを検索できます。
+
+    | カラム項目 | 説明 |
+    | --- | ---- |
+    | イベント名 | イベントのタイトル |
+    | メッセージ | イベントのメッセージまたはスナップショット情報 |
+    | イベント状態 | イベントの現在の状態 |
+    | エージェント名 | イベントが発生した対象エージェントの名前(Oname)<br /> - 特定エージェント以外の場合は空欄 |
+    | エージェントグループ | イベントが発生したエージェントの種類(OkindName)<br /> - 特定エージェント以外の場合は空欄 |
+    | エージェントノード | イベントが発生したサーバー(OnodeName)<br /> - 特定エージェント以外の場合は空欄 |
+    | 発生時刻 | イベントが発生した時間 |
+    | 解消時刻 | イベントが解消された時間<br /> 解消されていない場合は `-` 表示 |
+
+1. 設定が完了したら、**確認**ボタンをクリックして反映します。
+
+### <img src="/img/ico-download.svg" alt="ダウンロードアイコン" /> CSVダウンロード
+
+検索結果をCSVファイルとしてダウンロードできます。
+
+### 進行中のイベントのみ表示
+
+現在の検索条件に `ON` 状態を持つイベントのみをフィルタリングするクエリが追加されます。以下のようになります。
+
+```json
+Status: ON and Stateful: true
+```
+
+## イベント検索
+
+- **正確な検索**：必要なイベントのみを抽出可能
+- **複合条件**：複数のフィールドを同時に検索
+- **柔軟なパターン**：ワイルドカードや部分一致に対応
+- **高速性能**：インデックスされたデータによる高速検索
+
+### 検索可能なフィールド
+
+フィールドと値は大文字・小文字を区別しません。
+
+* **フィールド名タグ**：該当イベントタイプでのみ使用可能
+
+* **フィールドタイプ**：データの型
+
+    * <img src="/img/ic-slack-color.svg" />：数値型  
+    * <img src="/img/ic-text-color.svg" />：文字列型  
+    * <img src="/img/ic-boolean-color.svg" />：真偽値型  
+    * <img src="/img/ic-start-date-color.svg" />：日付型  
+
+#### イベント情報フィールド
+
+| フィールド名 | 型 | 説明 | 例 |
+| --- | --- | ---- | ---- |
+| Title | String | イベントタイトル | "Database Connection Error" |
+| OffTitle | String | 解消時のタイトル | "RECOVERED: Database Connection Error" |
+| Message | String | イベントメッセージ | "Connection timeout occurred" |
+| OffMessage | String | 解消時のメッセージ | "RECOVERED: Connection timeout occurred" |
+| Level | String | 現在のレベル | `Critical`, `Warning`, `Info` |
+| OriginLevel | String | 元のレベル | `Critical`, `Warning`, `Info` |
+| Status | String | イベント状態 | `ON`, `OFF`, `CANCEL`, `ACKNOWLEDGE`, `MAINTENANCE`, `DISABLED` |
+| ActCount | Number | 処理件数 | 2 |
+| MetricName | String | 指標名 | "memory" |
+| MetricValue | String | 指標値 | "85.5" |
+| OffValue | String | 解消値 | "72.8" |
+| MetricThreshold | String | 閾値 | "80" |
+| alertType | String | イベント種別 | "BASIC", "METRICS", "TRANSACTION"など |
+| alertId | String | ルールID | "zf3uojer0fv4v7" |
+
+#### イベント種別ごとの専用フィールド
+
+| フィールド名 | 型 | 対象イベント種別 | 説明 | 例 |
+| --- | --- | --- | --- | --- |
+| eventRule | String | 基本、メトリクス | イベント発生ルール | "memory ≥ 80" |
+| field | String | リアルタイムログ | 検索キー | "content" |
+| keyword | String | リアルタイムログ | 検索キーワード | "Error" |
+| logCategory | String | リアルタイムログ | ログカテゴリ | "AppLog" |
+| logContent | String | リアルタイムログ | ログ内容 | "...log text..." |
+
+#### 対象フィールド
+
+| フィールド名 | 型 | 説明 | 例 |
+| --- | --- | ---- | ---- |
+| Oid | Number | エージェントID | -98765432 |
+| Oname | String | エージェント名 | "web-server-01" |
+| Okind | Number | エージェント種別ID | 867318026 |
+| OkindName | String | エージェント種別名 | "web-server" |
+| Onode | Number | ノードID | 334634079 |
+| OnodeName | String | ノード名 | "production-node-1" |
+
+#### 一意なイベント識別フィールド
+
+| フィールド名 | 型 | 説明 | 例 |
+| --- | --- | ---- | ---- |
+| Id | Number | イベントID | 5768121 |
+| UUID | String | イベントUUID | "550e8400-e29b-41d4-a716" |
+
+#### 状態・フラグフィールド
+
+| フィールド名 | 型 | 説明 | 例 |
+| --- | --- | ---- | ---- |
+| Stateful | Boolean | 状態ベースのイベントか | true, false |
+| Disabled | Boolean | 無効化されているか | true, false |
+| Escalation | Boolean | エスカレーション済みか | true, false |
+| SystemEvent | Boolean | システムイベントか | true, false |
+
+### 検索クエリの例
+
+:::note
+
+検索文法の詳細は [WhaTap log search query 文法](https://docs.whatap.io/ja/log/log-search-query) を参照してください。
+
+:::
+
+#### 1. キーワード検索
+
+```json
+title: "Database Connection"
+```
+
+#### 2. 複数値の検索
+
+```json
+title: Database Connection
+level: info warning
+```
+
+#### 3. パターン検索
+
+```json
+oname: web-*-prod 
+title: *Connection
+```
+
+#### 4. 複合条件検索
+
+```json
+level: critical and title: Database
+oname: web-server-01 and level: Warning Critical
+```
+
+#### 5. OR条件検索
+
+```json
+title: Connection or message: Connection
+```
+
+#### 6. 除外条件検索
+
+```json
+not level: info
+```
