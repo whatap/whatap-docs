@@ -5001,73 +5001,19 @@ const sidebars = {
               ],
             },
             {
-              type: 'category',
+              type: 'doc',
               label: 'DBX',
-              collapsible: true,
-              collapsed: true,
-              className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/db/dbx-agent',
-              },
-              items: [
-                {
-                  type: 'doc',
-                  id: 'release-notes/db/dbx-2_55_02',
-                  className: 'new',
-                },
-                'release-notes/db/dbx-2_55_01',
-                'release-notes/db/dbx-2_54_02',
-                'release-notes/db/dbx-2_54_01',
-                'release-notes/db/dbx-2_53_02',
-                'release-notes/db/dbx-previous',
-              ]
+              id: 'release-notes/db/dbx-agent',
             },
             {
-              type: 'category',
+              type: 'doc',
               label: 'DMX',
-              collapsible: true,
-              collapsed: true,
-              className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/db/dmx-agent',
-              },
-              items: [
-                {
-                  type: 'doc',
-                  id: 'release-notes/db/dmx-1_0_5g',
-                  className: 'new',
-                },
-                'release-notes/db/dmx-1_0_5b',
-                'release-notes/db/dmx-1_0_5a',
-                'release-notes/db/dmx-1_0_4y',
-                'release-notes/db/dmx-1_0_4s',
-                'release-notes/db/dmx-previous',
-              ]
+              id: 'release-notes/db/dmx-agent',
             },
             {
-              type: 'category',
+              type: 'doc',
               label: 'XOS',
-              collapsible: true,
-              collapsed: true,
-              // className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/db/xos-agent',
-              },
-              items: [
-                {
-                  type: 'doc',
-                  id: 'release-notes/db/xos-1_2_0k',
-                  className: 'new',
-                },
-                'release-notes/db/xos-1_2_0j',
-                'release-notes/db/xos-1_2_0d',
-                'release-notes/db/xos-1_1_8v',
-                'release-notes/db/xos-1_1_8f',
-                'release-notes/db/xos-previous',
-              ]
+              id: 'release-notes/db/xos-agent',
             },
             {
               type: 'doc',
