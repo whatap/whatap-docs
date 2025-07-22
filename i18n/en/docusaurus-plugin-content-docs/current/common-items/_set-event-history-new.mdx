@@ -1,0 +1,169 @@
+Home &gt; Select Project &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventHistory" className="uitext" />
+
+<Cmdname sid="side_eventHistory" className="uitext" /> allows you to efficiently search, view, and analyze detailed information about various events that occur in the system. Using **Elasticsearch DSL queries**, you can accurately and quickly find events that match your criteria.
+
+## Main Screen
+
+Clicking the **event title** in the search results navigates to a screen where you can analyze the details of the time zone in which the event occurred. This allows you to comprehensively understand the circumstances before and after the event.
+
+<ImgLang img='set-event-history.png' desc='set-event-history' />
+
+### <img src="/img/ico-column.svg" alt="Column icon" /> Column Settings
+
+You can show or hide desired columns. To configure columns:
+
+1. Click the <img src="/img/ico-column.svg" alt="Column icon" /> Column Settings button at the top right of the Event History screen.
+
+1. Select the columns to show or hide.
+
+    * You can change the order of the columns in the visible items.
+
+    * You can search for specific columns in the **Column Name Search** field.
+
+    | Column | Description |
+    | --- | ----------- |
+    | Event Name | Title of the event |
+    | Message | Message or snapshot of the event |
+    | Event Status | Current status of the event |
+    | Agent Name | Name (Oname) of the agent where the event occurred <br /> - Blank if not related to a specific agent |
+    | Agent Group | Type (OkindName) of the agent where the event occurred <br /> - Blank if not related to a specific agent |
+    | Agent Node | Server (OnodeName) of the agent where the event occurred <br /> - Blank if not related to a specific agent |
+    | Event Time | Time the event occurred |
+    | Resolved Time | Time the event was resolved <br /> Displayed as `-` if unresolved |
+
+1. After configuring, click **Confirm** to apply the settings.
+
+### <img src="/img/ico-download.svg" alt="Download icon" /> Download CSV
+
+You can download the data as a CSV file.
+
+### Show Only Ongoing Events
+
+Adds a filter to show only events with `ON` status in the current query. The query is:
+
+```json
+Status: ON and Stateful: true
+```
+
+## Event Search
+
+- **Accurate Search**: Specify exact criteria to find relevant events
+- **Complex Conditions**: Search multiple fields simultaneously
+- **Flexible Patterns**: Supports wildcard and partial matching
+- **Fast Performance**: High-speed search using indexed data
+
+### Searchable Fields
+
+Search is case-insensitive.
+
+* **Field Tag**: Indicates event types supporting the field
+
+* **Field Type**: Data type of the field
+
+    * <img src="/img/ic-slack-color.svg" />: Number  
+    * <img src="/img/ic-text-color.svg" />: String  
+    * <img src="/img/ic-boolean-color.svg" />: Boolean  
+    * <img src="/img/ic-start-date-color.svg" />: Date  
+
+#### Event Info Fields
+
+| Field | Type | Description | Example |
+| --- | ---- | ----------- | ------- |
+| Title | String | Event title | "Database Connection Error" |
+| OffTitle | String | Recovery title | "RECOVERED: Database Connection Error" |
+| Message | String | Event message | "Connection timeout occurred" |
+| OffMessage | String | Recovery message | "RECOVERED: Connection timeout occurred" |
+| Level | String | Current event level | `Critical`, `Warning`, `Info` |
+| OriginLevel | String | Original event level | `Critical`, `Warning`, `Info` |
+| Status | String | Event status | `ON`, `OFF`, `CANCEL`, `ACKNOWLEDGE`, `MAINTENANCE`, `DISABLED` |
+| ActCount | Number | Action count | 2 |
+| MetricName | String | Metric name | "memory" |
+| MetricValue | String | Metric value | "85.5" |
+| OffValue | String | Recovery value | "72.8" |
+| MetricThreshold | String | Threshold | "80" |
+| alertType | String | Event type | "BASIC", "METRICS", "TRANSACTION" |
+| alertId | String | Rule ID | "zf3uojer0fv4v7" |
+
+#### Type-Specific Fields
+
+| Field | Type | Event Type | Description | Example |
+| --- | ---- | ----------- | ----------- | ------- |
+| eventRule | String | Basic, Metrics | Rule that triggered event | "memory ≥ 80" |
+| field | String | Realtime Log | Log key | "content" |
+| keyword | String | Realtime Log | Search keyword | "Error" |
+| logCategory | String | Realtime Log | Log category | "AppLog" |
+| logContent | String | Realtime Log | Log content | "...log text..." |
+
+#### Target Fields
+
+| Field | Type | Description | Example |
+| --- | ---- | ----------- | ------- |
+| Oid | Number | Agent ID | -98765432 |
+| Oname | String | Agent name | "web-server-01" |
+| Okind | Number | Agent type ID | 867318026 |
+| OkindName | String | Agent type name | "web-server" |
+| Onode | Number | Node ID | 334634079 |
+| OnodeName | String | Node name | "production-node-1" |
+
+#### Unique Event Fields
+
+| Field | Type | Description | Example |
+| --- | ---- | ----------- | ------- |
+| Id | Number | Event ID | 5768121 |
+| UUID | String | Event UUID | "550e8400-e29b-41d4-a716" |
+
+#### State/Flag Fields
+
+| Field | Type | Description | Example |
+| --- | ---- | ----------- | ------- |
+| Stateful | Boolean | Stateful event | true, false |
+| Disabled | Boolean | Is disabled | true, false |
+| Escalation | Boolean | Escalated | true, false |
+| SystemEvent | Boolean | System-generated | true, false |
+
+### Query Examples
+
+:::note
+
+For more on syntax, see [WhaTap log search query syntax](https://docs.whatap.io/en/log/log-search-query)
+
+:::
+
+#### 1. Keyword Search
+
+```json
+title: "Database Connection"
+```
+
+#### 2. Multi-value Search
+
+```json
+title: Database Connection
+level: info warning
+```
+
+#### 3. Pattern Search
+
+```json
+oname: web-*-prod 
+title: *Connection
+```
+
+#### 4. Complex Conditions
+
+```json
+level: critical and title: Database
+oname: web-server-01 and level: Warning Critical
+```
+
+#### 5. OR Conditions
+
+```json
+title: Connection or message: Connection
+```
+
+#### 6. NOT Conditions
+
+```json
+not level: info
+```
