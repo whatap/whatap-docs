@@ -114,9 +114,9 @@ WhaTap監視サービスの無料試用期間を過ぎた場合、またはサ�
 
    - 請求書の発行日は次のとおりです。
 
-     - <Cmdname sid="date.25" className="uitext" />：毎月25日に請求書を発行します。
-     - <Cmdname sid="date.-1" className="uitext" />：毎月最終日を基準に請求書を発行します。
-     - <Cmdname sid="date.0" className="uitext" />：利用月を基準として、翌月1日に請求書を発行します。
+      - <Cmdname sid="date.25" className="uitext" />：毎月25日に請求書を発行します。
+      - <Cmdname sid="date.-1" className="uitext" />：毎月最終日を基準に請求書を発行します。
+      - <Cmdname sid="date.0" className="uitext" />：利用月を基準として、翌月1日に請求書を発行します。
 
    - 必要に応じて、業種と業態を入力します。
 
@@ -311,101 +311,6 @@ WhaTap監視サービスの無料試用期間を過ぎた場合、またはサ�
   - **ブラウザ/セッションリプレイ**製品は、月の合計セッション数を表示します。
 
 :::
-
-## 請求及び納付履歴 {#historybilling}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="paymentHistory" className="uitext" />
-
-納付履歴、未納金、請求履歴を確認できます。 請求書は、決済情報に入力した請求先のメールアドレスでも確認できます。
-
-<ImgLang img='usage-estimate-history.png' desc='請求及び納付履歴' />
-
-一覧で一番右の<Cmdname sid="invoice" className="uitext" />コラムで<Cmdname sid="detail" className="uitext" />ボタンをクリックすると詳細を確認することが。
-
-:::note
-
-WhaTapモニタリングサービスは時間単位で課金します。 毎月の基準時間は、対象月の日数✕24時間で計算されます。 以下は、月単位の時間を計算したものです。
-
-- 28日：28✕24 = 672時間
-- 29日：29✕24 = 696時間
-- 30日：30✕24 = 720時間
-- 31日：31✕24 = 744時間
-
-:::
-
-## 前納金の確認 {#checkpaidprice}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="balance" className="uitext" />
-
-お支払状況から、お支払頂いた金額や引き落とし状況を確認いただけます。
-
-## 請求書プレビュー{#preview-estimate}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="billingPreview" className="uitext" />
-
-割引／プロモーションを適用した利用料金及び<span class='vslow'>未払金</span>が確認できます。
-
-### プロジェクト、製品をまとめて表示する {#viewcategory}
-
-請求書の内容をプロジェクト、製品別にグループ化して、合計時間、平均費用、費用合計情報などが確認できます。 請求履歴テーブルの上にある<Cmdname sid="project" className="uitext" />または<Cmdname sid="ITM05997" className="uitext" />ボタンを選択します。 テーブルの一覧をプロジェクトまたは製品名でグループ化します。
-
-グループ化された<Cmdname sid="project" className="uitext" />または<Cmdname sid="ITM05997" className="uitext" />を基準に時間合計、平均費用、費用合計情報などの詳細情報を確認するには、各項目の左側に![拡張アイコン](/img/ico-expander.svg)ボタンをクリックします。
-
-#### プロジェクト基準
-
-<ImgLang img='bill-preview-group-01.png' desc='グルーピング１' />
-
-#### サービス基準
-
-<ImgLang img='bill-preview-group-01-category.png' desc='グルーピング２' />
-
-### 使用量プレビュー {#billpreview}
-
-<ImgLang img='bill-preview-group-01-preview.png' desc='課金集計量' />
-
-請求履歴テーブルで <Cmdname sid="metered_unit" className="uitext" /> カラム項目を選択すると、使用量を確認することができます。 <Cmdname sid="metering_information" className="uitext" /> ウィンドウが表示されると <Cmdname sid="open_all" className="uitext" /> ボタンを選択するか、照会したい日付を選択します。
-
-:::note
-
-商品を基準に請求履歴をソートした状態で複数の商品がまとめられている場合、使用量プレビューは提供しないことがあります。
-
-:::
-
-## 使用量 {#usage}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="usage" className="uitext" />
-
-プロジェクト別の使用量を確認できます。 プロジェクト別の月別詳細使用量を確認するには、左側のプロジェクトリストでプロジェクトを選択します。
-
-<ImgLang img='billing-usage.png' desc='使用量'/>
-
-1. ![数字1](/img/number-01.png)をクリックし、使用状況を確認する期間を選択します。
-
-2. 画面左側の![数字2](/img/number-02.png)プロジェクトリストからプロジェクトを選択します。 画面の右上にあるテキスト入力欄から必要なプロジェクトを検索することができます。
-
-3. ![数字3](/img/number-03.png)領域で選択したプロジェクトの月間使用量に関するサマリー情報が確認できます。
-
-4. 日別の詳細使用量を確認するには、![数字4](/img/number-04.png)日別使用量一覧で![その他のアイコン](/img/ico-expander.svg)ボタンを選択します。
-
-<ImgLang img='billing-usage-details.png' desc='使用量詳細'/>
-
-:::note
-
-- 月間使用量のサマリー情報および詳細な使用量情報は、プロジェクトの製品種類によって異なる場合があります。
-
-- 使用量情報は、課金方式に基づいて測定されます。 課金方式の詳細については、[次のリンク](https://www.whatap.io/ko/pricing/)を参照してください。
-
-:::
-
-## プロモーションコードの登録 {#promotioncode}
-
-<Cmdname sid="my_usage" className="uitext" /> &gt; <Cmdname sid="payment_information" className="uitext" /> &gt; <Cmdname sid="promotion_info" className="uitext" />
-
-プロモーションコードを登録するには、決済情報を登録してください 決済情報登録の詳細については、[次の文書](#register-pay)を参照してください。
-
-<ImgLang img='promotion_code_1.png' desc='プロモーションコード' />
-
-<Cmdname sid="promotion_code" className="uitext" />テキストボックスに受け取ったコードを入力し、<Cmdname sid="BTN07117" className="uitext" />ボタンを選択します。 コードが正常に登録されている場合は、適用されたコード情報を確認できます。
 
 ## WhaTapモニタリングサービスの利用料金の計算方法 {#countbilling}
 

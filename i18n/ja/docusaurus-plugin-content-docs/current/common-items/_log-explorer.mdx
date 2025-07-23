@@ -34,7 +34,7 @@ import Logroleview from "../common-items/_log-role-view.mdx";
 
 ### 検索クエリ構文
 
-#### ![クエリ検索アイコン](/img/ico-log-search-query.svg) **WhaTap log search query**
+#### ![クエリ検索アイコン](/img/ico-log-search-query.svg) WhaTap log search query
 
 WhaTapのログ検索クエリはオートコンプリート機能を提供しており、簡単なキーワード入力だけで問題のログを迅速に検索できます。 and、orなどのさまざまな構文を活用して、さまざまな検索条件を入力できます。
 
@@ -44,21 +44,23 @@ WhaTapのログ検索クエリはオートコンプリート機能を提供し�
 
   2. 演算子を選択してください。
 
-     a. 基本: `:`, `: *` 、`and`、`or` <br/>
-     b. 選択したフィールドが `Number` 型の場合（基本 + `<=`、`>=`、`<`、`>`） <br/>
-     c. 選択したフィールドが `Number` 型の場合（基本 + `<=`、`>=`、`<`、`>`） <br/>
+    a. 基本: `:`, `: *` 、`and`、`or` <br/>
+
+    b. 選択したフィールドが `Number` 型の場合（基本 + `<=`、`>=`、`<`、`>`） <br/>
+
+    c. 選択したフィールドが `String` の場合（基本のみ）
 
   3. 値（選択した時間、カテゴリ、フィールドに一致するリストが表示されます）を選択してください。
 
 ##### 検索インデックスフィールドタイプ
 
-```
-対応しているフィールドタイプは `Number`、`String` の2種類のみです。
+サポートされているフィールドタイプは、`Number`、`String`、`Boolean` の3種類のみです。
 
     * `String`: Long、double、float 型の数値
 
     * `Number`: メール本文のような全文テキスト
-```
+
+    * `Boolean`: True または False の値
 
 :::note 
 
