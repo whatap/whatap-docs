@@ -2788,6 +2788,7 @@ const sidebars = {
           items: [
             'mysql/analysis-count-trend',
             'mysql/analysis-lock-and-deadlock',
+            'mysql/analysis-session-history',
             'mysql/analysis-compare-top-sql',
             'mysql/analysis-databaseparameter',
           ]
