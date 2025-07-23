@@ -131,38 +131,75 @@ Status: ON and Stateful: true
 
 #### 1. キーワード検索
 
+* **"Database Connection" という文字列が含まれるイベント**
+
 ```json
 title: "Database Connection"
 ```
 
 #### 2. 複数値の検索
 
+指定したオプションのいずれかが含まれるイベントを検索します。
+
+* **タイトルに "Database" または "Connection" が含まれるイベント**
+
 ```json
 title: Database Connection
+```
+
+* **現在のイベントレベルが Info または Warning のイベント**
+
+```json
 level: info warning
 ```
 
 #### 3. パターン検索
 
+ワイルドカードを使用してパターン検索ができます。
+
+* **名前パターンを使って特定のエージェントで発生したイベントを検索**
+
 ```json
 oname: web-*-prod 
+```
+
+* **タイトルが「Connection」で終わるイベントを検索**
+
+```json
 title: *Connection
 ```
 
 #### 4. 複合条件検索
 
+複数の条件を組み合わせて、より正確に検索できます。
+
+* **レベルが Critical で、タイトルに Database が含まれるイベント**
+
 ```json
 level: critical and title: Database
+```
+
+* **特定のエージェントで発生した Warning または Critical イベント**
+
+```json
 oname: web-server-01 and level: Warning Critical
 ```
 
 #### 5. OR条件検索
+
+複数の条件のうち、いずれかを満たすイベントを検索できます。
+
+* **タイトルまたはメッセージに特定のキーワードが含まれるイベントを検索**
 
 ```json
 title: Connection or message: Connection
 ```
 
 #### 6. 除外条件検索
+
+特定の条件を除外して検索できます。
+
+* **Infoレベルを除いたすべてのイベントを検索**
 
 ```json
 not level: info
