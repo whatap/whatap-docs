@@ -28,7 +28,7 @@ export default function Cover() {
             Network Performance Monitoring
         </h1>
         <p className={styles.date}>
-            release date. 2025.06.26
+            release date. 2025.07.23.
         </p>
         <img className={styles.background} src={bgPath} />
       </div>
