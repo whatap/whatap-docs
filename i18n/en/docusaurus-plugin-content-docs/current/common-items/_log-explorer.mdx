@@ -34,7 +34,7 @@ Apply filters by selecting the query language and entering search conditions in 
 
 ### Search Query Syntax
 
-#### ![Query Icon](/img/ico-log-search-query.svg) **WhaTap log search query**
+#### ![Query Icon](/img/ico-log-search-query.svg) WhaTap log search query
 
 WhaTap log search queries support autocomplete and allow quick log searches with simple keyword input. You can define various search conditions using operators like `and`, `or`, etc.
 
@@ -45,18 +45,22 @@ WhaTap log search queries support autocomplete and allow quick log searches with
     1. Choose an operator:
 
         a. Default: `:`, `:*`, `and`, `or`<br/>
+
         b. If the field is of type `Number`: Default + `<=`, `>=`, `<`, `>`<br/>
+
         c. If the field is of type `String`: Default only
 
     1. Select a value (values shown based on selected time, category, and field).
 
 ##### Search Index Field Types
 
-Supported field types are `Number` and `String` only:
+Only three field types are supported: `Number`, `String`, and `Boolean`.
 
 * `String`: Numeric values like long, double, float
 
 * `Number`: Full text such as email body
+
+* `Boolean`: A value of either True or False
 
 :::note
 For more details about WhaTap log search query syntax, refer to the [documentation](https://docs.whatap.io/log/log-search-query).
