@@ -1,0 +1,172 @@
+---
+id: service-2_19_x
+title: Service 2.19.X
+toc_max_heading_level: 2
+pagination_next: release-notes/service/service-2_19_x
+displayed_sidebar: releaseSidebar
+---
+
+## Service 2.19.0
+
+July 23, 2025
+
+<div class='indentTab'>
+
+### `Common`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="my_usage" className="uitext" /> &gt; **Project Usage Preview** added
+
+---
+
+### `Application`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_threadList" className="uitext" /> Added AI-based thread dump content analysis feature (limit: 20 per project per day) <code class="Beta">Beta</code>
+
+- <Status priority='1'>Changed</Status> **Business Dashboard** moved to side menu
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="agent_list" className="uitext" /> Fixed issue where the original agent info remained after renaming the agent
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="speed_chart" className="uitext" /> Fixed issue where chart was not redrawn after resizing to minimum and expanding
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="transaction_map" className="uitext" /> Fixed issue where specific filter keys were not applied when accessing via shared URL
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_agentSetting" className="uitext" /> Japanese localization updates and fixes
+
+#### PHP
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="add_project" className="uitext" />, <Cmdname sid="TTL07075" className="uitext" /> Updated version support guidance text
+
+#### Node.js
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_agentsConfiguration" className="uitext" /> &gt; <Cmdname sid="side_systemGarbageCollection" className="uitext" /> added (available from Node.js agent version 0.5.21)
+
+---
+
+### `Server`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_serverInventoryMap" className="uitext" /> Added cloud asset (virtual server) metrics, now available in filters, group selectors, and column settings
+
+    - Added metrics: Cloud Service Provider, Cloud Instance ID, Cloud Instance Name, Cloud Instance Type, Cloud Instance Lifecycle, Cloud Region, Cloud Security Group, Cloud Image
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_serverInventory" className="uitext" /> Added cloud asset metrics displayed in the table and filter conditions
+
+- <Status priority='1'>Feature</Status> **GPU Inventory** Added CSV export function for inventory list
+
+- <Status priority='1'>Feature</Status> **GPU Inventory** Custom data from the inventory list can now be batch-updated via CSV
+
+- <Status priority='1'>Feature</Status> **GPU Performance Summary** Added filter applicable to all fields
+
+- <Status priority='1'>Feature</Status> **GPU Performance Summary** Compare performance metrics via chart by selecting GPUs
+
+- <Status priority='1'>Feature</Status> **GPU Performance Summary** Added CSV export of selected columns and data at the query time
+
+- <Status priority='1'>Feature</Status> **GPU Performance Summary** &gt; **Feature Activation Info** Added explanation about GPU monitoring support environment
+
+- <Status priority='1'>Feature</Status> **Column Settings** Columns can now be selected and ordered by group
+
+- <Status priority='1'>Changed</Status> **GPU Performance Summary** &gt; **Feature Intro Modal**, **Agent Update Required**, **Activation Guide** – Minimum Linux agent version changed from 2.8.5 → 2.8.9
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverList" className="uitext" /> Restored previous tag filter behavior
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_serverInventory" className="uitext" /> Auto-collected metric labels unified to English
+
+- <Status priority='0'>Fixed</Status> Fixed issue where metric selection UI disappeared if many install groups existed during agent installation
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_serverList" className="uitext" /> &gt; <Cmdname sid="side_serverDetail" className="uitext" /> Fixed page white-out issue when server status API failed
+
+    - Improved to show `?` on status icon and display remaining data
+
+---
+
+### `Kubernetes`
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="container_map" className="uitext" /> Added option to display STATUS label
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_workload" className="uitext" /> &gt; <Cmdname sid="podList" className="uitext" /> Added PV and PVC info in **Container Summary Analysis**
+
+---
+
+### `Database`
+
+#### Common
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" /> Added series chart popup showing metric trends when clicking Equalizer widget
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>, <Cmdname sid="side_multiInstance" className="uitext" /> Added Y-axis control to series charts
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class="newfunc">New</code>, <Cmdname sid="side_multiInstance" className="uitext" /> Updated info icon and Y-axis control button
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" /> <code class='oldfunc'>Old</code> and <code class="newfunc">New</code> – the most recently visited page is now saved
+
+- <Status priority='1'>Changed</Status> Dashboard Equalizer chart animation now changes based on real-time status
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_multiInstance" className="uitext" />, <Cmdname sid="side_slowQueryLog" className="uitext" /> Fixed issue where dragging charts beyond chart area didn’t work
+
+- <Status priority='0'>Fixed</Status> Improved page design for **User Group Display Settings**
+
+#### Altibase, Cubrid, MySQL, Oracle, Oracle Pro, PostgreSQL, SQL Server, Tibero
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="side_dbScriptManager" className="uitext" /> Moved menu from Lab to Analytics
+
+#### MySQL, Oracle, Oracle Pro, PostgreSQL
+
+- <Status priority='1'>Feature</Status> **Instance Map**
+
+    - Added Lock Tree tab and Top SQL tab
+    - Added option to display inactive instances
+    - Added Replication Role to grouping and label options
+    - Added batch resolve function for ongoing events
+    - Metric cards and color now sync with thresholds on the Overview tab
+    - Instance icon color now reflects ongoing event status (toggle sync via settings icon)
+
+- <Status priority='1'>Feature</Status> **Instance Map** &gt; **Instance Overview** tab
+
+    - Added button to jump to DB parameter screen
+    - Metric card click now shows popup with series chart
+    - Disk Usage card click shows detailed disk usage popup
+
+- <Status priority='1'>Changed</Status> **Instance Map** Threshold display now scales with screen size; additional items shown via popover
+
+- <Status priority='1'>Changed</Status> **Top SQL** Moved from Lab to Analytics
+
+- <Status priority='0'>Fixed</Status> **Instance Map** Fixed occasional whiteout issues
+
+#### MySQL
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_analysis" className="uitext" /> &gt; <Cmdname sid="side_sessionHistory" className="uitext" /> added
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; **Table Size Growth** Improved instance selector
+
+- <Status priority='1'>Feature</Status> **Statistics/Reports** &gt; **Table Size Growth** Excel download enabled, CSV columns support multiple languages
+
+#### Oracle Pro
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="reportStat" className="uitext" /> &gt; <Cmdname sid="side_tableSpace" className="uitext" /> Added ASM Disk Usage Table
+
+- <Status priority='1'>Feature</Status> <Cmdname sid="side_reportStat" className="uitext" /> &gt; <Cmdname sid="side_dbSqlStat" className="uitext" /> Added wait class related fields
+
+- <Status priority='1'>Feature</Status> Added **Top SQL by Wait**
+
+---
+
+### `Network`
+
+- <Status priority='1'>Changed</Status> <Cmdname sid="MNU06848" className="uitext" /> Changed to save the modified content to the server, allowing sharing across projects (previously, it was saved only in the browser and couldn't be shared)
+
+---
+
+### `Log`
+
+- <Status priority='0'>Fixed</Status> <Cmdname sid="side_log" className="uitext" /> &gt; **Log Explorer** Fixed query operator precedence issue when using the drill-down function
+
+---
+
+### `WhaTap AI Chatbot`
+
+- <Status priority='1'>Feature</Status> Added multilingual support (Japanese and English) – chatbot UI and messages adapt automatically
+
+- <Status priority='1'>Feature</Status> Added screenshot feature
+
+- <Status priority='1'>Feature</Status> Added fullscreen mode
+
+</div> 
