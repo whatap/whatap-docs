@@ -131,38 +131,75 @@ For more on syntax, see [WhaTap log search query syntax](https://docs.whatap.io/
 
 #### 1. Keyword Search
 
+* **Events that contain the string "Database Connection"**
+
 ```json
 title: "Database Connection"
 ```
 
 #### 2. Multi-value Search
 
+Retrieves events that include at least one of the specified options.
+
+* **Events where the title includes either "Database" or "Connection"**
+
 ```json
 title: Database Connection
+```
+
+* **Events where the current level is either Info or Warning**
+
+```json
 level: info warning
 ```
 
 #### 3. Pattern Search
 
+You can search using wildcards.
+
+* **Find events that occurred on specific agents by name pattern**
+
 ```json
-oname: web-*-prod 
+oname: web-*-prod
+```
+
+* Find events where the title ends with 'Connection'
+
+```json
 title: *Connection
 ```
 
 #### 4. Complex Conditions
 
+You can combine multiple conditions to perform a precise search.
+
+* **Events with level Critical and title containing Database**
+
 ```json
 level: critical and title: Database
+```
+
+* **Warning or Critical events from a specific agent**
+
+```json
 oname: web-server-01 and level: Warning Critical
 ```
 
 #### 5. OR Conditions
+
+You can search for events that satisfy any of the given conditions.
+
+* **Find events where the title or message contains a specific keyword**
 
 ```json
 title: Connection or message: Connection
 ```
 
 #### 6. NOT Conditions
+
+You can exclude certain conditions from the search.
+
+* **Find all events except those with Info level**
 
 ```json
 not level: info
