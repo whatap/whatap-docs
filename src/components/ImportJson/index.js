@@ -9,6 +9,7 @@ const cleanString = (str) => {
   return str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
 };
 
+
 const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
   const [filteredLists, setFilteredLists] = useState([]);
   const [error, setError] = useState('');
@@ -139,10 +140,9 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                         <div>
                         {(index === 0 || list.ver !== array[index - 1].ver) && (
                           <>
-                            <a href={category === 'agent' ? `${list.url}` : `${list.url}#${list.hash}`} className={styles.goto}>
-                              {list.ver}
-                                <img src={linkIcon} width="18px" height="18px" className={clsx(styles.icoLink, 'ico-link')} />
-                            </a>
+                            <span id={`ver-${list.ver}`} className={styles.goto}>
+                              <strong>{list.ver}</strong>
+                            </span>
                               {list.JavaVersion && (
                                 <span className={styles.JavaVersion}>
                                   <strong>{list.JavaVersion}</strong>

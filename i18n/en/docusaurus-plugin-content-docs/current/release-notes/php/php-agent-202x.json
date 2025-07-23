@@ -1,0 +1,68 @@
+[
+  {
+    "url": "https://docs.whatap.io/release-notes/php/php-2_6_3",
+    "ver": "v2.6.3",
+    "date": "2023-11-22",
+    "Lists": [
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed the text cache retention period from one day to one hour</p>"
+      },
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Disabled collection of CPU and memory metrics in Kubernetes environments, replaced with system metrics collected by Kubernetes agent</p>"
+      },
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed whatap-php service execution error on CentOS 9 or later</p>"
+      },
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Fixed issue where vCpu info was collected redundantly in Docker container environments</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/php/php-2_6_2",
+    "ver": "v2.6.2",
+    "date": "2023-09-13",
+    "Lists": [
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added option for handling large profile data</p>",
+        "details": "<ul>\n<li>\n<p>Previously, a maximum of 1024 profile entries were collected. While the limit could be increased via configuration, it caused higher memory usage.</p>\n</li>\n<li>\n<p>Now supports compression and splitting of profiles to collect more without additional memory consumption.</p>\n</li>\n<li>\n<p><strong>whatap.large_profile_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default: <code>false</code></p>\n<p>Collects up to ~10,000 profile steps. For larger collection, use <code>split_profile_enabled</code>.</p>\n</li>\n<li>\n<p><strong>whatap.split_profile_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>Default: <code>false</code></p>\n<p>Splits large profile data into virtual transactions for collection, displayed as multiple transaction entries.</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> Added option to compress profile data before transmission</p>",
+        "details": "<ul>\n<li><strong>whatap.profile_zip_enabled</strong> <span class=\"type\">Boolean</span>  Default: <code>true</code></li>\n</ul>"
+      },
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Changed HTTP method exclusion setting to apply to all transactions</p>",
+        "details": "<ul>\n<li>\n<p><code>whatap.ignore_http_method</code> now applies to all transactions.</p>\n</li>\n<li>\n<p>Previously, <code>whatap.http_method_urls</code> controlled exclusions, but this has been removed in favor of global application.</p>\n</li>\n</ul>"
+      }
+    ]
+  }    
+]

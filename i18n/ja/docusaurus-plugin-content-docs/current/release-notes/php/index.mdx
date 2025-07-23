@@ -1,6 +1,6 @@
 ---
 id: index
-title: PHP Agent Release Notes
+title: PHPエージェント リリースノート
 displayed_sidebar: releaseSidebar
 hide_table_of_contents: true
 toc_min_heading_level: 2
@@ -10,6 +10,27 @@ toc_min_heading_level: 2
 <meta name="robots" content="noindex, nofollow"/>
 </head>
 
-import ReleaseNotes from "./php-agent.json";
+### 最新バージョン: 2.11.2
 
-<ImportJson filePath={ReleaseNotes} sort="date" category="agent" />
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+import ReleaseNotes2025 from "./php-agent-2025.json";
+import ReleaseNotes2024 from "./php-agent-2024.json";
+import ReleaseNotes202x from "./php-agent-202x.json";
+
+<Tabs>
+
+    <TabItem value="2025" label="2025">
+        <ImportJson filePath={ReleaseNotes2025} sort="date" category="agent" />
+    </TabItem>
+
+    <TabItem value="2024" label="2024">
+        <ImportJson filePath={ReleaseNotes2024} sort="date" category="agent" />
+    </TabItem>
+    
+    <TabItem value="2024年以前" label="2024年以前">
+        <ImportJson filePath={ReleaseNotes202x} sort="date" category="agent" />
+    </TabItem>
+
+</Tabs>
