@@ -12,7 +12,7 @@ toc_max_heading_level: 4
 
 :::tip
 
-サポートされるフィールドタイプは `Number` と `String` の2種類のみです。
+これは、WhaTapログ探索で使用できるWhaTapログ検索クエリ構文に関するドキュメントです。
 
 :::
 
@@ -45,14 +45,18 @@ toc_max_heading_level: 4
     * 例: `(1+1):2` を検索するには `\(1\+1\)\:2`
 
 
-## **検索インデックスフィールドタイプ**
+## 検索インデックスフィールドタイプ
 
 サポートされるフィールドタイプは `Number` と `String` の2種類のみです。
 
-- `Number`: Long、double、floatタイプの数値値
+* `Number`: Long、double、floatタイプの数値値
 
-  - 使用例： `field : "value"`
+    * 使用例： `field : "value"`
 
-- `String`: メール本文のような全文テキスト
+* `String`: メール本文のような全文テキスト
 
-  - 使用例： `field : value`
+    * 使用例： `field : value`
+
+* `Boolean`: True または False
+
+    * `field : true` または `field : false` の形式で使用します
