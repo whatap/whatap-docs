@@ -4788,21 +4788,13 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/php/index',
-              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/php/php-2_11_1',
+                  id: 'release-notes/php/index',
                   className: 'new',
                 },
-                'release-notes/php/php-2_11_0',
-                'release-notes/php/php-2_10_0',
-                'release-notes/php/php-2_9_0',
-                'release-notes/php/php-2_8_2',
-                'release-notes/php/php-previous',
+                'release-notes/php/download-php-agent',
               ],
             },
             {
