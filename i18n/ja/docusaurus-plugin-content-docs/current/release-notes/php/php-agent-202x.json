@@ -1,0 +1,68 @@
+[
+  {
+    "url": "https://docs.whatap.io/release-notes/php/php-2_6_3",
+    "ver": "v2.6.3",
+    "date": "2023-11-22",
+    "Lists": [
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> テキストキャッシュの保存期間を1日から1時間に変更</p>"
+      },
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Kubernetes環境でCPUおよびメモリ指標の収集を無効化し、Kubernetesエージェントが収集するシステム指標に置き換え</p>"
+      },
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> CentOS 9以降でwhatap-phpサービスが起動できない問題を修正</p>"
+      },
+      {
+        "ver": "v2.6.3",
+        "hash": "v263",
+        "product": "PHP Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\">Fixed</code> Dockerコンテナ環境でvCpu情報が重複して収集される問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/php/php-2_6_2",
+    "ver": "v2.6.2",
+    "date": "2023-09-13",
+    "Lists": [
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> 大量プロファイル処理オプションを追加</p>",
+        "details": "<ul>\n<li>\n<p>従来は最大1024個のプロファイルのみ収集可能でした。設定で増やすことは可能ですが、メモリ消費が増加します。</p>\n</li>\n<li>\n<p>一定量を圧縮・分割して送信することで、メモリ消費を抑えつつ多くのプロファイル情報を収集可能になりました。</p>\n</li>\n<li>\n<p><strong>whatap.large_profile_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>デフォルト: <code>false</code></p>\n<p>最大1万件未満のプロファイル（ステップ）を収集可能。さらに多くを収集するには<code>split_profile_enabled</code>の使用を推奨。</p>\n</li>\n<li>\n<p><strong>whatap.split_profile_enabled</strong> <span class=\"type\">Boolean</span></p>\n<p>デフォルト: <code>false</code></p>\n<p>プロファイルを仮想トランザクションに分割して送信。複数のトランザクションとして表示されます。</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "PHP Agent",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\">Feature</code> プロファイルデータの圧縮送信オプションを追加</p>",
+        "details": "<ul>\n<li><strong>whatap.profile_zip_enabled</strong> <span class=\"type\">Boolean</span>  デフォルト: <code>true</code></li>\n</ul>"
+      },
+      {
+        "ver": "v2.6.2",
+        "hash": "v262",
+        "product": "PHP Agent",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> 特定のHTTPメソッドを除外する設定をすべてのトランザクションに適用するよう変更</p>",
+        "details": "<ul>\n<li>\n<p><code>whatap.ignore_http_method</code>オプションはすべてのトランザクションに適用されます。</p>\n</li>\n<li>\n<p>従来は<code>whatap.http_method_urls</code>により特定のトランザクションのみが対象でしたが、該当オプションは削除され、全体に適用されるように変更されました。</p>\n</li>\n</ul>"
+      }
+    ]
+  }    
+]

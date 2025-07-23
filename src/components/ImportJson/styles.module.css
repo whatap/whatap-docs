@@ -114,14 +114,14 @@ p.date {
   display: none;
 }
 
-.rlist a.goto {
+.rlist .goto {
   display: inline-block;
   position: relative;
   text-decoration: none;
   padding-bottom: 8px;
   font-weight: 300;
-  font-size: 1.1rem;
-  top: -5px;
+  font-size: 1.2rem;
+  top: -8px;
 }
 
 .rlist a.goto:hover {
