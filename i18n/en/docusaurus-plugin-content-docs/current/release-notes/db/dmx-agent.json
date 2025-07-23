@@ -1,5 +1,168 @@
 [
   {
+    "ver": "v1.0.5g",
+    "date": "2025-07-08",
+    "Lists": [
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Improved <code>sqlmon</code>: stores up to 100 rows of results and recognizes <code>int</code> or <code>float</code> as numbers</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <code>event</code> handling by <code>con_id</code> for Oracle 12.1.0.2</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed error caused by <code>null</code> values when processing ASM disk info</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v1.0.5g",
+        "hash": "v105g",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <code>tablespace</code> <code>increment_by</code> to be sent in MB (converted from blocks, float applied)</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.5b",
+    "date": "2025-06-25",
+    "Lists": [
+      {
+        "ver": "v1.0.5b",
+        "hash": "v105b",
+        "product": "DMX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Removed erroneous <code>\\n</code> character from <code>wait_class</code> name in <code>db_oracle_dma_sqlstat</code></p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.5a",
+    "date": "2025-06-23",
+    "Lists": [
+      {
+        "ver": "v1.0.5a",
+        "hash": "v105",
+        "product": "DMX a",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added holder_inst_id to db_oracle_dma_lock_info</p>"
+      },
+      {
+        "ver": "v1.0.5a",
+        "hash": "v105",
+        "product": "DMX a",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added wait_class to db_oracle_dma_sqlstat</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.4y",
+    "date": "2025-06-10",
+    "Lists": [
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added shmon feature to periodically execute shell scripts and collect results</p>",
+        "details": "<ul>\n<li>\n<p>Enable with shmon=1 in xos.conf</p>\n</li>\n<li>\n<p>Create shmon directory under the agent path and place .sh files for periodic execution and result collection</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Oracle Pro 11.2.0.4 and 19.3 supported on AIX machines</p>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Processed with script manager thread</p>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Executed tkprof via thread during SQL trace</p>"
+      },
+      {
+        "ver": "v1.0.4y",
+        "hash": "v104",
+        "product": "DMX y",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added agent option trace_tkprof_path=</p>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.0.4s",
+    "date": "2025-05-21",
+    "Lists": [
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added wait information to sqlstat</p>",
+        "details": "<ul>\n<li>\n<p>Added wait time by event and wait time by wait class</p>\n</li>\n<li>\n<p>Event names sent twice a day in db_index_event category</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added support for Oracle 10.2.0.5 on Linux and AIX</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added ASM disk size information</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added Multi Script Manager feature</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added table name of index in Plan info</p>"
+      },
+      {
+        "ver": "v1.0.4s",
+        "hash": "v104",
+        "product": "DMX s",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added SQL trace on/off feature</p>"
+      }
+    ]
+  },      
+  {
     "url": "https://docs.whatap.io/en/release-notes/db/dmx-1_0_4h",
     "ver": "v1.0.4h",
     "date": "2025-04-03",

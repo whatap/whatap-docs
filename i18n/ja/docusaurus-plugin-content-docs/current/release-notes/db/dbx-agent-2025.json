@@ -1,0 +1,564 @@
+[
+  {
+    "ver": "v2.55.02",
+    "date": "2025-07-17",
+    "Lists": [
+      {
+        "ver": "v2.55.02",
+        "hash": "v25502",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>max_connection</code> 項目の送信間隔を5分から5秒に変更（収集間隔は5分を維持）</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.02",
+        "hash": "v25502",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> INDEXレイアウトのリアルタイム参照ロジックにおけるカテゴリ名を修正</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v2.55.01",
+    "date": "2025-07-16",
+    "Lists": [
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> シェルスクリプトの実行をサポートする <code>shellmon</code> を追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Agentinfo に DB 種類を示す <code>sub_type</code> フィールドを追加</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Autoscale エージェントが <code>AgentinfoPack</code> を送信するよう改善</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Change",
+        "desc": "<p><code class=\"Change\" type=\"0\">Change</code> <code>max_connection</code> の収集間隔を5分に変更</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> MySQL 5.6でアクティブセッション収集時に発生するエラーを修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> slave DBが破損した場合、<code>node_state</code> の値を 2 から -2 に変更するよう修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> スロークエリ収集時、タイムスタンプ形式により <code>text</code> が欠落する問題を修正</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.55.01",
+        "hash": "v25501",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> スロークエリ収集時、タイムスタンプ形式により <code>text</code> が欠落する問題を修正</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.54.02",
+    "date": "2025-06-20",
+    "Lists": [
+      {
+        "ver": "v2.54.02",
+        "hash": "v25402",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> xviewカテゴリにstateフィールドを追加</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.54.01",
+    "date": "2025-06-18",
+    "Lists": [
+      {
+        "ver": "v2.54.01",
+        "hash": "v25401",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> PostgreSQL SQL統計機能にpg_stat_statementsスキーマ指定オプションを追加</p>",
+        "category": "PostgreSQL",
+        "details": "<ul>\n<li>オプション名：statements_schema=</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.53.02",
+    "date": "2025-06-12",
+    "Lists": [
+      {
+        "ver": "v2.53.02",
+        "hash": "v25302",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> AutoscaleエージェントのDBクラスタがスケールインする際、エージェントディレクトリを削除</p>",
+        "category": "共通"
+      }
+    ]
+  },
+  {
+    "ver": "v2.53.01",
+    "date": "2025-05-28",
+    "Lists": [
+      {
+        "ver": "v2.53.01",
+        "hash": "v25301",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> MySQL 8以上ではロック情報収集のクエリを変更（sys.innodb_lock_waitsを使用）し、エージェントオプションを追加\n<a href=\"https://docs.whatap.io/mysql/agent-dbx-settings#%EB%9D%BD-%EC%88%98%EC%A7%91-%EA%B4%80%EB%A0%A8-%EC%84%A4%EC%A0%95\" target=\"_blank\" rel=\"noopener noreferrer\">次の文書</a> を参照</p>",
+        "category": "MySQL",
+        "details": "<p><code class=\"Change\" type=\"0\">Change</code> whatap.log 内でのセッション情報表示形式を変更</p>"
+      },
+      {
+        "ver": "v2.53.01",
+        "hash": "v25301",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> PGSQL統計収集時にorder byオプションを追加</p>",
+        "category": "PostgreSQL",
+        "details": "<ul>\n<li>デフォルト：statements_order_by=total_time</li>\n<li>列を追加する場合：例）statements_order_by=total_time,calls</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v2.52.04",
+    "date": "2025-05-20",
+    "Lists": [
+      {
+        "ver": "v2.52.04",
+        "hash": "v25204",
+        "product": "DBX",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\" type=\"0\">Changed</code> autoscale AWSの認証権限有効期限チェックを200秒から120秒に変更</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v2.52.04",
+        "hash": "v25204",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 認証発行順序のバグを修正</p>",
+        "category": "共通"
+      }
+    ]
+  },
+  {
+    "ver": "v2.52.02",
+    "date": "2025-05-14",
+    "Lists": [
+      {
+        "ver": "v2.52.02",
+        "hash": "v25202",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Totalメトリクスのみ送信されるバグを修正</p>",
+        "category": "MS SQL Server"
+      }
+    ]
+  },
+  {
+    "ver": "v2.52.01",
+    "date": "2025-05-07",
+    "Lists": [
+      {
+        "ver": "v2.52.01",
+        "hash": "v25201",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> bloating収集オプションを追加（pg_bloat、default=true）</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v2.52.01",
+        "hash": "v25201",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> show slave statusの累積例外処理を修正</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.51.01",
+    "date": "2025-04-30",
+    "Lists": [
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> DB2のCatalog Cache Hit Ratioメトリクスを追加</p>",
+        "category": "DB2"
+      },
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 一部のDB2メトリクスにおけるオーバーフローバグを修正</p>",
+        "category": "DB2"
+      },
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> ロックツリー情報にpg_relation（waiter_relation, holder_relation）を追加</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v2.51.01",
+        "hash": "v25101",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> エージェントのアラート機能を元に戻しました</p>",
+        "category": "Oracle"
+      }
+    ]
+  },
+  {
+    "ver": "v2.50.02",
+    "date": "2025-04-24",
+    "Lists": [
+      {
+        "ver": "v2.50.02",
+        "hash": "v25002",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> setup.shで<em>jdbc</em>フォルダ内のJARファイルを優先的に読み込むよう修正</p>",
+        "category": "共通"
+      },
+      {
+        "ver": "v2.50.02",
+        "hash": "v25002",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> セッション終了時に発生するNullPointバグを修正</p>",
+        "category": "IBM DB2"
+      },
+      {
+        "ver": "v2.50.02",
+        "hash": "v25002",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>xact_runtime</code>の計算エラーを修正</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v2.50.01",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "v2.50.01",
+        "hash": "v25001",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> オブジェクト情報のPartition、Subpartition情報の収集方法を修正</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.50.01",
+        "hash": "v25001",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> アクティブセッションリストの収集条件を変更</p>",
+        "category": "Oracle",
+        "details": "<ul>\n<li><p>変更前：<code>status='active'</code></p></li><li><p>変更後：<code>status!='inactive'</code></p></li>\n</ul>"
+      },
+      {
+        "ver": "v2.50.01",
+        "hash": "v25001",
+        "product": "DBX",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> プロシージャ統計メニューでSQL Textが表示されないバグを修正</p>",
+        "category": "MySQL"
+      }
+    ]
+  },                      
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_5_4",
+    "ver": "v2.5.4",
+    "date": "2025-04-16",
+    "Lists": [
+      {
+        "ver": "v2.5.4",
+        "hash": "v254",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Cluster AutoScale機能を追加(要請時に別途のエージェントファイルを提供)</p>",
+        "category": "Redis"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_5_1",
+    "ver": "v2.5.1",
+    "date": "2025-04-04",
+    "Lists": [
+      {
+        "ver": "v2.5.1",
+        "hash": "v251",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> sqlstatパックに<code>@stime</code>タグを追加</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.5.1",
+        "hash": "v251",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> sqlstatパックに<code>@stime</code>タグを追加</p>",
+        "category": "MySQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_4_9",
+    "ver": "v2.4.9",
+    "date": "2025-03-25",
+    "Lists": [
+      {
+        "ver": "v2.4.9",
+        "hash": "v249",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> DBサイズの収集機能を追加</p>",
+        "category": "SAP ASE"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_4_6",
+    "ver": "v2.4.6",
+    "date": "2025-03-14",
+    "Lists": [
+      {
+        "ver": "v2.4.6",
+        "hash": "v246",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Yugabyte DBに対して<code>node_state</code>、<code>DB size</code>収集機能追加</p>",
+        "category": "PostgreSQL",
+        "details": "<ul>\n<li>\n<p>基本的に<code>yb_pg_database_size</code>及び<code>yb_pg_indexes_size</code>関数を使用してDBサイズ及びインデックスサイズを収集</p>\n</li>\n<li>\n<p>他の関数名を使用する場合、<code>yb_pg_database_size=</code>及び<code>yb_pg_indexes_size=</code>オプションを通じて指定可能</p>\n</li>\n</ul>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_4_5",
+    "ver": "v2.4.5",
+    "date": "2025-03-13",
+    "Lists": [
+      {
+        "ver": "v2.4.5",
+        "hash": "v245",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、デフォルト値: <code>5</code>)</p>",
+        "category": "MySQL"
+      },
+      {
+        "ver": "v2.4.5",
+        "hash": "v245",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、デフォルト値: <code>5</code>)</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.4.5",
+        "hash": "v245",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<li><code class=\"New\" type=\"1\">New</code>統計データ収集周期1分オプション追加(<code>sqlstat_send_interval=1</code>、デフォルト値: <code>5</code>)</li>",
+        "category": "Oracle Pro"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_4_3",
+    "ver": "v2.4.3",
+    "date": "2025-03-06",
+    "Lists": [
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> SAP ASE製品追加</p>",
+        "category": "SAP ASE"
+      },
+      {
+        "ver": "v2.4.3",
+        "hash": "v243",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Tablespace size収集機能追加</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_4_2",
+    "ver": "v2.4.2",
+    "date": "2025-02-26",
+    "Lists": [
+      {
+        "ver": "v2.4.2",
+        "hash": "v242",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>xact_runtime</code>指標を追加</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_4_1",
+    "ver": "v2.4.1",
+    "date": "2025-02-24",
+    "Lists": [
+      {
+        "ver": "v2.4.1",
+        "hash": "v241",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> PostgreSQL 17 バージョン以降でcheckpoint指標収集を追加</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_3_9",
+    "ver": "v2.3.9",
+    "date": "2025-02-18",
+    "Lists": [
+      {
+        "ver": "v2.3.9",
+        "hash": "v239",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code>次のカテゴリに<code>!rectype</code>、<code>@id</code>フィールドを追加</p>",
+        "category": "Oracle",
+        "details": "<blockquote>\n<p><code>db_oracle_active_session</code>, <code>db_oracle*xos*disk_usage</code></p>\n</blockquote>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_3_7",
+    "ver": "v2.3.7",
+    "date": "2025-01-23",
+    "Lists": [
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <code>tablespace</code>オプションを追加してFree spaceを照会する時、クエリータイムアウト発生問題を解決するためにオプションによって異なるビューを照会</p>",
+        "category": "Oracle",
+        "details": "<ul>\n<li>\n<p><code>tablespace=1</code>: <code>dba_free_space</code> 照会</p>\n</li>\n<li>\n<p><code>tablespace=2</code>: <code>dba_lmt_free_space</code> 照会</p>\n</li>\n<li>\n<p><code>tablespace=3</code>: <code>usage_metrics</code> 照会</p>\n</li>\n</ul>"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Datafile収集時、<code>maxsize</code>情報を追加</p>",
+        "category": "Oracle"
+      },
+      {
+        "ver": "v2.3.7",
+        "hash": "v237",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Datafile収集時、<code>autoextensible</code>, <code>maxsize</code>情報を追加</p>",
+        "category": "Tibero"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_3_6",
+    "ver": "v2.3.6",
+    "date": "2025-01-22",
+    "Lists": [
+      {
+        "ver": "v2.3.6",
+        "hash": "v236",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> DB2 10.5 バージョン以降でPIDを追加</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_3_5",
+    "ver": "v2.3.5",
+    "date": "2025-01-17",
+    "Lists": [
+      {
+        "ver": "v2.3.5",
+        "hash": "v235",
+        "product": "DBX",
+        "type": "Feature",
+        "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> JDBC接続オプション(<code>connect_option</code>)追加</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/ja/release-notes/db/dbx-2_3_4",
+    "ver": "v2.3.4",
+    "date": "2025-01-15",
+    "Lists": [
+      {
+        "ver": "v2.3.4",
+        "hash": "v234",
+        "product": "DBX",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> IBM DB2モニタリングのためのエージェントを追加</p>",
+        "category": "IBM DB2"
+      }
+    ]
+  }
+]

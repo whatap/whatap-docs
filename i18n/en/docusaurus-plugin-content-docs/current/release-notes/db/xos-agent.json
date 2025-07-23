@@ -1,5 +1,86 @@
 [
   {
+    "ver": "v1.2.0k",
+    "date": "2025-07-18",
+    "Lists": [
+      {
+        "ver": "v1.2.0k",
+        "hash": "v120k",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified memory usage calculation to <code>total - free - buff/cache</code> when using <code>mem_used=1</code> on CentOS 7 or higher (same as <code>free</code> command's used value)</p>",
+        "category": "Common"
+      }
+    ]
+  },
+  {
+    "ver": "v1.2.0j",
+    "date": "2025-07-16",
+    "Lists": [
+      {
+        "ver": "v1.2.0j",
+        "hash": "v120j",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where 1-byte shift in PostgreSQL slow query with <code>use_tcp=1</code> caused <code>[CPU]</code> to be misinterpreted and resulted in unknown packet errors</p>",
+        "category": "PostgreSQL"
+      },
+      {
+        "ver": "v1.2.0j",
+        "hash": "v120j",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where <code>use_midinfo</code> flag was incorrectly set to 1 when <code>slow_query=</code> was specified in MySQL</p>",
+        "category": "MySQL",
+        "details": "<ul><li>Bug: SQL text was not displayed or was corrupted in slow queries</li></ul>"
+      },
+      {
+        "ver": "v1.2.0j",
+        "hash": "v120j",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where SQL text was not displayed when <code>log_error_verbosity=verbose</code> was set in PostgreSQL slow queries due to exposure of <code>00000:</code> error code</p>",
+        "category": "PostgreSQL",
+        "details": "<ul><li>Bug: SQL text not shown in slow queries</li></ul>"
+      }
+    ]
+  },
+  {
+    "ver": "v1.2.0d",
+    "date": "2025-05-29",
+    "Lists": [
+      {
+        "ver": "v1.2.0d",
+        "hash": "v120d",
+        "product": "XOS",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added support for <code>sun</code> and <code>aix</code> operating systems</p>",
+        "category": "Common"
+      },
+      {
+        "ver": "v1.2.0d",
+        "hash": "v120d",
+        "product": "XOS",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue with recognizing Korean characters and midinfo in PostgreSQL slow queries</p>",
+        "category": "PostgreSQL"
+      }
+    ]
+  },
+  {
+    "ver": "v1.1.8v",
+    "date": "2024-12-24",
+    "Lists": [
+      {
+        "ver": "v1.1.8v",
+        "hash": "v118v",
+        "product": "xos",
+        "type": "Changed",
+        "desc": "<p><code class=\"Changed\">Changed</code> Modified <code>dbx_ip</code> option to allow hostname specification (same applied to XCUB 0.9.7b)</p>"
+      }
+    ]
+  },        
+  {
     "url": "https://docs.whatap.io/en/release-notes/db/xos-1_1_8f",
     "ver": "v1.1.8f",
     "date": "2024-06-27",
