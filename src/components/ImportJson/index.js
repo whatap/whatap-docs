@@ -9,6 +9,7 @@ const cleanString = (str) => {
   return str.replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
 };
 
+
 const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
   const [filteredLists, setFilteredLists] = useState([]);
   const [error, setError] = useState('');
@@ -137,10 +138,18 @@ const ImportJson = ({ filePath, product, type, sort, category, platform }) => {
                     {dateGroup.products[productKey].map((list, index, array) => (
                       <div key={`${list.ver}-${index}`} className={styles.rlist}>
                         <div>
-                          {(index === 0 || list.ver !== array[index - 1].ver) && (
-                            /* 개별 페이지 링크 삭제 */
-                            <span>{list.ver}</span>
-                          )}
+                        {(index === 0 || list.ver !== array[index - 1].ver) && (
+                          <>
+                            <span id={`ver-${list.ver}`} className={styles.goto}>
+                              <strong>{list.ver}</strong>
+                            </span>
+                              {list.JavaVersion && (
+                                <span className={styles.JavaVersion}>
+                                  <strong>{list.JavaVersion}</strong>
+                                </span>
+                              )}
+                            </>
+                        )}
                         </div>
                         {
                           ((platform === 'db' && list.category) || list.category) ? (
