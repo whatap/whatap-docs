@@ -571,7 +571,7 @@
     "message": "モバイルアプリの使い方について説明します。"
   },
   "index.pages.section.product": {
-    "message": "와탭이 제공하는 서비스를 한눈에 확인해 보세요."
+    "message": "WhaTapが提供するサービスを一目で確認できます。"
   },
   "index.pages.section.product.java": {
     "message": "WAS、バッチアプリケーションなど、JVM環境で動作するすべてのアプリケーションに適用できます。"
@@ -658,7 +658,7 @@
     "message": "既存のモニタリング製品を、ユーザーがモニタリングしようとするソフトウェアに合わせてリパッケージし、最適化されたモニタリングソリューションを提供します。"
   },
   "index.pages.section.management": {
-    "message": "계정, 프로젝트, 그룹 등을 관리하는 방법을 확인해 보세요."
+    "message": "アカウント、プロジェクト、グループなどの管理方法をご確認ください。"
   },
   "index.pages.section.management.account": {
     "message": "アカウント管理"
