@@ -4,36 +4,44 @@ In <Cmdname sid="side_sessionHistory" className="uitext" />, you can see what ha
 
 ## Basic usage guide
 
+<Xclude product="mysql">
+
 You must enter the session number (<Cmdname sid="TTL06802" className="uitext" />) to monitor as a required value, but it is more efficient to enter through the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
 
-1. Go to <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />.
+1. Go to <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" />.
 
-2. Select a session that is running and not ended for a long time.
+2. In the **Active Session** tab, click a session from the ID column.
 
-   <InDoc product="postgresql"><ImgLang img='db-session-history-01.png' desc='Monitoring a Database Instance' /></InDoc>
+3. In <Cmdname sid="session_detail" className="uitext" />, click <Cmdname sid="TTL06721" className="uitext" /> ![Right arrow icon](/img/ic-s-right.svg) to move to <Cmdname sid="side_sessionHistory" className="uitext" />.
 
-   <InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-01.png' desc='Monitoring a Database Instance' /></InDoc>
+4. You can view the session history collected for the selected session's process ID (PID).
 
-3. If the <Cmdname sid="session_detail" className="uitext" /> window appears, select <Cmdname sid="TTL06721" className="uitext" />.
+   <InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-03.png' desc='Session History' /></InDoc>
 
-   <InDoc product="postgresql"><ImgLang img='db-session-history-02.png' desc='Session History' /></InDoc>
+   <InDoc product="postgresql"><ImgLang img='db-session-history-03.png' desc='Session History' /></InDoc>
 
-   <InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-02.png' desc='Session History' /></InDoc>
+   Active session data collected every 5 seconds from the selected session is used to construct a chart and its list and provide information that can be used for analysis. 
 
-The <Cmdname sid="side_sessionHistory" className="uitext" /> menu appears that has searched the process ID (PID) of the selected session.
+   - **Wait**: You can see the percentage of waiting events through a chart.
 
-<InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-03.png' desc='Session History' /></InDoc>
+   - **Cpu**: You can see the change trend in CPU usage through the chart.
 
-<InDoc product="postgresql"><ImgLang img='db-session-history-03.png' desc='Session History' /></InDoc>
+   - **Memory**: You can see the change trend in memory usage through the chart.
 
-Active session data collected every 5 seconds from the selected session is used to construct a chart and its list and provide information that can be used for analysis. 
+   - **Disk I/O**: You can see the change trend in disk usage through the chart.
 
-- ***Wait***: You can see the percentage of waiting events through a chart.
+   If you select the **query** column on the utmost right of the list, the <Cmdname sid="TTL06224" className="uitext" /> window appears where you can see the SQL statement. It contains full texts and plan information for the selected query.
 
-- ***Cpu***: You can see the change trend in CPU usage through the chart.
+</Xclude>
 
-- ***Memory***: You can see the change trend in memory usage through the chart.
+<InDoc product="mysql">
 
-- ***Disk I/O***: You can see the change trend in disk usage through the chart.
+Although you must enter the session number (<Cmdname sid="TTL06802" className="uitext" />) to monitor as a required field, it is more efficient to access through the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
 
-If you select the ***query*** column on the utmost right of the list, the <Cmdname sid="TTL06224" className="uitext" /> window appears where you can see the SQL statement. It contains full texts and plan information for the selected query.
+1. Go to the <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
+
+1. In the **Active Session** tab, click the session in the ID column.
+
+1. Move to <Cmdname sid="side_sessionHistory" className="uitext" /> to view the session history collected based on the selected session's process ID (PID).
+
+</InDoc>
