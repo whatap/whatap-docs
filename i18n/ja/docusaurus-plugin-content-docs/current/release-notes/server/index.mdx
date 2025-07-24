@@ -1,6 +1,6 @@
 ---
 id: index
-title: Server Agent Release Notes
+title: リリースノート
 displayed_sidebar: releaseSidebar
 hide_table_of_contents: true
 toc_min_heading_level: 2
@@ -10,9 +10,22 @@ toc_min_heading_level: 2
 <meta name="robots" content="noindex, nofollow"/>
 </head>
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 import ReleaseNotes from "./server-agent.json";
-import ReleaseNotes25 from "./server-agent-2025.json";
+import ReleaseNotes2025 from "./server-agent-2025.json";
 
-<ImportJson filePath={ReleaseNotes25} sort="date" category="agent" />
+### 最新バージョン: 2.9.0
 
-<ImportJson filePath={ReleaseNotes} sort="date" category="agent" />
+<Tabs>
+
+    <TabItem value="2025" label="2025">
+        <ImportJson filePath={ReleaseNotes2025} sort="date" category="agent" />
+    </TabItem>
+
+    <TabItem value="2024" label="2024">
+        <ImportJson filePath={ReleaseNotes} sort="date" category="agent" />
+    </TabItem>
+
+</Tabs>

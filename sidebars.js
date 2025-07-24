@@ -4896,21 +4896,13 @@ const sidebars = {
               collapsible: true,
               collapsed: true,
               // className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/server/index',
-              },
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server/server-2_8_9',
-                  // className: 'new',
+                  id: 'release-notes/server/index',
+                  className: 'new',
                 },
-                'release-notes/server/server-2_8_8',
-                'release-notes/server/server-2_8_7',
-                'release-notes/server/server-2_8_6',
-                'release-notes/server/server-2_8_5',
-                'release-notes/server/server-previous',
+                'release-notes/server/download-server-agent',
               ],
             },
             {
