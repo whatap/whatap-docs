@@ -6,30 +6,26 @@
 
 必須入力値としてモニタリングしようとするセッション番号(<Cmdname sid="TTL06802" className="uitext" />)を入力する必要がありますが、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューからアクセスするのが効率的です。
 
-1. <Cmdname sid="side_dashboard" className="uitext" /> &gt; <Cmdname sid="side_dbMonitoring" className="uitext" />メニューに入ります。
+1. <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> メニューに移動します。
 
-2. 長時間遂行中で、終了していないセッションを選択します。
+2. **アクティブセッション** タブで、ID列のセッションをクリックします。
 
-   <InDoc product="postgresql"><ImgLang img='db-session-history-01.png' desc='インスタンスモニタリング' /></InDoc>
+3. <Cmdname sid="session_detail" className="uitext" /> の <Cmdname sid="TTL06721" className="uitext" /> ![右矢印アイコン](/img/ic-s-right.svg) ボタンをクリックして、<Cmdname sid="side_sessionHistory" className="uitext" /> に移動します。
 
-   <InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-01.png' desc='インスタンスモニタリング' /></InDoc>
+4. 選択したセッションのプロセスID（PID）に基づいて収集されたセッション履歴を確認できます。
 
-3. <Cmdname sid="session_detail" className="uitext" />画面が表示されたら、<Cmdname sid="TTL06721" className="uitext" /> ボタンを選択します。
+   <InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-03.png' desc='セッション履歴' /></InDoc>
 
-選択したセッションのプロセスID(PID)を照会した<Cmdname sid="side_sessionHistory" className="uitext" />メニューへ移動します。
+   <InDoc product="postgresql"><ImgLang img='db-session-history-03.png' desc='セッション履歴' /></InDoc>
 
-<InDoc product="oracle-pro,oracle"><ImgLang img='db-session-history-oracle-pro-03.png' desc='セッション履歴' /></InDoc>
+   選択したセッションから5秒ごとに収集したアクティブセッション情報を活用してチャートと一覧を構成し、分析に活用できる情報を提供します。 
 
-<InDoc product="postgresql"><ImgLang img='db-session-history-03.png' desc='セッション履歴' /></InDoc>
+   - **Wait**: 待機中のイベントの割合をチャートで確認できます。
 
-選択したセッションから5秒ごとに収集したアクティブセッション情報を活用してチャートと一覧を構成し、分析に活用できる情報を提供します。 
+   - **Cpu**: CPU使用量の変化をチャートで確認できます。
 
-- ***Wait***: 待機中のイベントの割合をチャートで確認できます。
+   - **Memory**: メモリ使用量の変化をチャートで確認できます。
 
-- ***Cpu***: CPU使用量の変化をチャートで確認できます。
+   - **Disk I/O**: ディスク使用量の変化をチャートで確認できます。
 
-- ***Memory***: メモリ使用量の変化をチャートで確認できます。
-
-- ***Disk I/O***: ディスク使用量の変化をチャートで確認できます。
-
-一覧の一番右の***query***カラム項目を選択すると、SQL文を確認できる<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 選択したクエリ(Query)に対するFullTextおよびPlan情報が含まれています。
+   一覧の一番右の***query***カラム項目を選択すると、SQL文を確認できる<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 選択したクエリ(Query)に対するFullTextおよびPlan情報が含まれています。
