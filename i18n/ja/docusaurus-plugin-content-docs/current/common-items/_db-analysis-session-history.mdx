@@ -4,6 +4,8 @@
 
 ## 基本的な使い方
 
+<Xclude product="mysql">
+
 必須入力値としてモニタリングしようとするセッション番号(<Cmdname sid="TTL06802" className="uitext" />)を入力する必要がありますが、<Cmdname sid="side_dbMonitoring" className="uitext" />メニューからアクセスするのが効率的です。
 
 1. <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> メニューに移動します。
@@ -29,3 +31,18 @@
    - **Disk I/O**: ディスク使用量の変化をチャートで確認できます。
 
    一覧の一番右の***query***カラム項目を選択すると、SQL文を確認できる<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。 選択したクエリ(Query)に対するFullTextおよびPlan情報が含まれています。
+
+</Xclude>
+
+<InDoc product="mysql">
+
+モニタリングしたいセッション番号（<Cmdname sid="TTL06802" className="uitext" />）の入力が必須ですが、<Cmdname sid="side_dbMonitoring" className="uitext" /> メニューからアクセスする方が効率的です。
+
+1. <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> メニューに移動します。
+
+1. **アクティブセッション** タブで、ID列のセッションをクリックします。
+
+1. <Cmdname sid="side_sessionHistory" className="uitext" /> に移動して、選択したセッションのプロセスID（PID）に基づくセッション履歴を確認できます。
+
+</InDoc>
+
