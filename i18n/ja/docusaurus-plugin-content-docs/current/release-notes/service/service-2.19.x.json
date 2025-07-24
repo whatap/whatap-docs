@@ -1,0 +1,198 @@
+[
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_19_x",
+        "ver": "Service 2.19.0",
+        "date": "2025-07-23",
+        "Lists": [
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "公通",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">プロジェクト使用量プレビュー</span> 機能を追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "公通",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> プロジェクト一覧を更新してもカードビューの状態を維持するように改善</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">AIベースのスレッドダンプ分析</span>機能を追加 <code class=\"Beta\">Beta</code></p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>ビジネスダッシュボード</strong>をサイドメニューに移動</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> エージェント名変更時に元の情報が残る問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 最小化後に拡大するとチャートが表示されない問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 共有URLアクセス時にフィルターキーが適用されない問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> 日本語翻訳の修正と適用</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> PHP対応バージョン案内文を修正</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Node.jsシステムGC画面を追加 (v0.5.21+)</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> サーバーバーチャル資産フィルターおよびカラム機能を追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> GPUインベントリのCSVダウンロード機能を追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> GPU性能サマリーフィルターを改善</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> サーバーステータスAPIエラー時にページがホワイトアウトする問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> コンテナマップにSTATUSラベル表示オプションを追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> PV、PVC情報を追加</p>"
+          },   
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> イコライザーウィジェットのシリーズチャートポップアップを追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> DBモニタリングのY軸調整とアニメーションを改善</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ダッシュボードチャートのドラッグ動作を改善</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> MySQLセッション履歴を追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Oracle Pro ASMディスク使用量テーブルを追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Wait別Top SQLを追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Network",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> MNU06848の保存方法をサーバー保存方式に変更</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Log",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ログ検索ドリルダウンのクエリ優先順位の問題を修正</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "WhaTap AI Chatbot",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> 多言語（日本語・英語）対応を追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "WhaTap AI Chatbot",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> スクリーンショット機能を追加</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "WhaTap AI Chatbot",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> フルスクリーン機能を追加</p>"
+          }                 
+        ]
+      }
+]
