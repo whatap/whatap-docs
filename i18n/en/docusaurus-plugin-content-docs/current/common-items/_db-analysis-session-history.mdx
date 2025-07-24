@@ -4,6 +4,8 @@ In <Cmdname sid="side_sessionHistory" className="uitext" />, you can see what ha
 
 ## Basic usage guide
 
+<Xclude product="mysql">
+
 You must enter the session number (<Cmdname sid="TTL06802" className="uitext" />) to monitor as a required value, but it is more efficient to enter through the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
 
 1. Go to <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" />.
@@ -30,3 +32,16 @@ You must enter the session number (<Cmdname sid="TTL06802" className="uitext" />
 
    If you select the **query** column on the utmost right of the list, the <Cmdname sid="TTL06224" className="uitext" /> window appears where you can see the SQL statement. It contains full texts and plan information for the selected query.
 
+</Xclude>
+
+<InDoc product="mysql">
+
+Although you must enter the session number (<Cmdname sid="TTL06802" className="uitext" />) to monitor as a required field, it is more efficient to access through the <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
+
+1. Go to the <Cmdname sid="side_dashboard" className="uitext" /> > <Cmdname sid="side_dbMonitoring" className="uitext" /> menu.
+
+1. In the **Active Session** tab, click the session in the ID column.
+
+1. Move to <Cmdname sid="side_sessionHistory" className="uitext" /> to view the session history collected based on the selected session's process ID (PID).
+
+</InDoc>
