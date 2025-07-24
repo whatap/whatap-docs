@@ -85,9 +85,9 @@ How to open detail view:
 Steps:
 
 1. Click the detail icon in table or card view.
-2. A drawer will open on the right displaying top 30 transactions for that business.
-3. Use the sort dropdown (default: by count).
-4. Available transaction data includes:
+1. A drawer will open on the right displaying top 30 transactions for that business.
+1. Use the sort dropdown (default: by count).
+1. Available transaction data includes:
 
     <Columns>
     <Column className="text--left width--50">
@@ -110,7 +110,19 @@ Steps:
     </Column>
     </Columns>
 
-5. Use the search bar at the top of the drawer to filter specific transactions.
+1. Use the search bar at the top of the drawer to filter specific transactions.
+
+1. Click the detailed analysis icon ![Search Icon](/img/ic-pageview.svg) for each transaction to view more information.
+
+1. If a transaction event based on the URL occurs within the selected time range, the configured level is displayed.  
+If the level is ![Warning Icon](/img/ic-warning-filled.svg) (Warning) or ![Critical Icon](/img/ic-warning-critical.svg) (Critical), you can click the icon in the Health column to view the event history.
+
+## Event History
+
+If a transaction event based on **context** is triggered within the selected time range, the defined level is displayed. Click the icon to view the event history.
+
+  * You can check the event name, occurrence time, and message.
+  * Use the search function to find specific events.
 
 ## Agent Configuration
 
