@@ -1,0 +1,198 @@
+[
+    {
+        "url": "https://docs.whatap.io/release-notes/service/service-2_19_x",
+        "ver": "Service 2.19.0",
+        "date": "2025-07-23",
+        "Lists": [
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "공통",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">Project usage preview</span> feature added</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "공통",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Card view state is now retained when refreshing the project list</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">AI-based thread dump analysis</span> feature added <code class=\"Beta\">Beta</code></p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> <strong>Business Dashboard</strong> moved to side menu</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed issue where original agent name remained after renaming</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed chart display issue when resizing to minimum and back</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed filter key issue when accessing shared URL</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed and applied Japanese translations</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Updated PHP supported version guidance text</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Application",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Node.js system GC screen (v0.5.21+)</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added server virtual asset filter and column features</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added GPU inventory CSV download feature</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved GPU performance summary filter</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Server",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed whiteout issue on API error in server status page</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added STATUS label display option to container map</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Kubernetes",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added PV, PVC information</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Equalizer widget series chart popup</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Improved DB monitoring Y-axis scaling and animation</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Improved dashboard chart drag behavior</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added MySQL session history</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Oracle Pro ASM disk usage table</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Database",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added Top SQL by Wait</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Network",
+            "type": "Changed",
+            "desc": "<p><code class=\"Changed\" type=\"1\">Changed</code> Changed MNU06848 to server-side storage method</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "Log",
+            "type": "Fixed",
+            "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Fixed drilldown query priority issue in log search</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "WhaTap AI Chatbot",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added multilingual support (Japanese, English)</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "WhaTap AI Chatbot",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added screenshot feature</p>"
+          },
+          {
+            "ver": "Service 2.19.0",
+            "hash": "service-2190",
+            "product": "WhaTap AI Chatbot",
+            "type": "Feature",
+            "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> Added fullscreen feature</p>"
+          }              
+        ]
+      }      
+]
