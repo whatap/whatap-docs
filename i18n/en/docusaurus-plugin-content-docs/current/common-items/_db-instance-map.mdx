@@ -1,0 +1,168 @@
+Home screen &gt; Select Project &gt; <Cmdname sid="dashboard" className="uitext" /> &gt; **Instance Map**
+
+The **Instance Map** visualizes the status of monitored database instances, making database monitoring easier to understand and access.
+
+By setting thresholds on key metrics of database servers, you can grasp the status of each instance at a glance and monitor active sessions in real time. You can also navigate to screens such as Instance Monitoring or Multi-Instance Monitoring to quickly analyze databases when an issue occurs.
+
+<ImgLang img="db-instance-map.png" desc="Instance Map" />
+
+:::note
+
+To collect process usage data such as CPU and memory usage of a database server, run the XOS agent.
+
+:::
+
+## Default screen
+
+The **Instance Map** consists of a **User Settings** section and the **Map Chart** section.
+
+<ImgLang img="db-instance-map-setting.png" desc="Instance Map Setting" />
+
+### User Settings
+
+At the top of the **Instance Map**, you can configure **Grouping**, **Thresholds**, **Labels**, **Filters**, **Presets**, and ![Settings Icon](/img/ico-setting.svg) **Additional Settings**.
+
+#### Grouping
+
+You can group instances by various criteria or custom rules. Grouping supports up to two levels. When clicking on a group at the second level, a detail view appears, showing aggregated data for all instances within that group.
+
+#### Threshold
+
+By setting thresholds for key database monitoring metrics, you can visualize the instance status with color indicators. You can configure one or more metrics and specify <span class='slow'>Warning</span> and <span class='vslow'>Critical</span> ranges for each. The <span class='normal'>Normal</span> range is displayed in <span class='normal'>blue</span>. The color applied will reflect the range the value belongs to.
+
+1. At the top of the screen, click **Threshold**.
+
+2. Select the desired metric and set the ranges for Warning and Critical.
+
+3. To add more metrics, click **+ Add Metric** at the bottom.
+
+4. Once you finish configuring the thresholds, click **Save**.
+
+**Priority of Instance Status Display**
+
+The <span class='vslow'>Critical</span> range has the highest display priority. If any of the selected metrics fall under <span class='vslow'>Critical</span>, the instance will be shown in red. In the example below, both instances are displayed as <span class='vslow'>Critical</span>.
+
+#### Label
+
+Displays text labels inside the instance icons. Labels can include database information and key metrics.
+
+#### Filter
+
+You can specify filters to monitor only specific instances.
+
+* **Filter keys**: Use database and instance information as filter keys.
+
+    * Collected columns: instance name, cluster/replication info, agent version, CPU core count, DB type, installation location, version, IP, Port
+
+* **Conditions**: Filters support numeric conditions such as `≥`, `≤`, `>`, `<`, and string conditions such as match, mismatch, contains, and does not contain.
+
+#### Preset
+
+You can save configured options as presets and load them as needed. Presets are saved on a per-project basis. This allows project members to monitor instances with the same configuration. A default preset is provided and cannot be deleted.
+
+:::tip
+
+**Default Preset**
+
+The default preset in the instance map includes the following thresholds for `active_sessions` and `lock_wait_sessions`:
+
+* active_sessions
+    * <span class='slow'>Warning</span>: Value ≥ 20
+    * <span class='vslow'>Critical</span>: Value ≥ 30
+
+* lock_wait_sessions
+    * <span class='slow'>Warning</span>: Value ≥ 1
+    * <span class='vslow'>Critical</span>: Value ≥ 3
+
+:::
+
+#### Additional Settings
+
+Click the ![Settings icon](/img/ico-setting.svg) icon at the top-right of the Instance Map to configure additional settings.
+
+* **Show 'No Group'**: Option to display instances that don't belong to any group when grouping is applied
+
+* **Show Metric Summary**: Option to display summary of key metric values at the bottom of groups
+
+### Instance Map Chart
+
+The Instance Map chart consists of three main areas.
+
+#### Top Section
+
+Displays the total number of instances or, if grouped, the total of grouped items and the status counts of selected metrics.
+
+#### Instance Visualization Section
+
+A visualized dashboard that helps you intuitively understand the overall status and number of all instances.
+
+#### Bottom Section
+
+Displays the average values of key metrics across instances. You can toggle this on or off using the **Show Metric Summary** option in ![Settings icon](/img/ico-setting.svg).
+
+## Summary View and Detailed Analysis
+
+Select an instance you want to examine in the **Instance Map**. A summary view appears on the right where you can check **Instance Overview**, **Metrics**, **Active Sessions**, **Events**, and **Logs** tabs. Click the **Detailed Analysis** button to move to the detailed view screen.
+
+<ImgLang img="db-instance-map-view-detailed.png" desc="Instance Map Setting view detailed" />
+
+### Instance Overview
+
+In the **Instance Overview** tab of the detailed view page, you can check the monitored database information, metrics, and triggered events. You can also navigate to the Instance Monitoring menu. If the instance is inactive, the view links to monitoring at the time of deactivation.
+
+* **Events Section**: Provides information about events triggered based on the user-defined alert rules. Click on each event card to view event details.
+
+* **Metrics Section**: Shows real-time status of major database metrics and resource usage. The resource usage section is available if the XOS agent is configured.
+
+    * **Database Metrics**
+        * Active Sessions: Number of sessions currently executing queries
+
+        * Lock Wait Sessions: Number of sessions waiting for locks
+
+        * Session Logical Reads: Number of data blocks read from memory (sum of db block gets and consistent gets)
+
+        * Execute Count: Total number of SQL statement executions
+
+    * **Resource Usage (Resource Map via XOS)**
+
+        * CPU Usage
+
+        * Disk Usage
+
+        * Memory Usage
+
+        * Network I/O
+
+* **Database Info Section**: Displays detailed database information. You can click **Instance Monitoring** to navigate to the corresponding monitoring screen for the selected instance.
+
+#### Detailed View of Instance Overview
+
+In the **Instance Overview** tab of the detailed view screen, you can monitor major metrics and database information in a table format by selecting multiple instances. Click the **Detailed View** button at the top right of the **Instance Overview** tab, or click the second-level group name in the visualization area after setting the second-level group to access the detailed view screen.
+
+<ImgLang img="db-instance-map-view-detailed-cases.png" desc="Instance Map Setting view detailed page" />
+
+* In the **Detailed View** screen, click the instance icon in the visualization area or the instance list in the bottom-left corner to select or deselect instances. You can also click **Select All** or **Deselect All** to toggle all instances.
+
+* If you select multiple instances, click the **Multi Instance Monitoring >** button to switch to the **Multi Instance Monitoring** screen for the selected instances.
+
+### Metrics
+
+In the **Metrics** tab, you can check the metric trends of selected instances. Use the time selector to view real-time or historical trends.
+
+### Active Sessions
+
+The **Active Sessions** tab displays the currently running sessions and their queries.
+
+:::note
+
+In the table, text color indicates query latency: black → <span class='slow'>orange</span> → <span class='vslow'>red</span> in increasing order of slowness.
+
+:::
+
+### Events
+
+In the **Events** tab, you can view events that occurred within the past hour. Clicking an event item will navigate to the instance monitoring screen at the time of the event.
+
+### Logs
+
+The **Logs** tab lets you view log entries and live logs. Click the **Detailed View** button on the right to see more detailed log information.
