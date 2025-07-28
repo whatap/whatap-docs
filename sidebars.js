@@ -6482,6 +6482,35 @@ const sidebars = {
       ]
     }
   ],
+  urlproSidebar: [
+    {
+      type: 'category',
+      label: 'URL PRO 모니터링',
+      collapsible: false,
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'url-pro/url-intro'
+      },
+      items: [
+        'url-pro/url-install',
+        {
+          type: 'category',
+          label: '경고 알림',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/url-event',
+            'url-pro/set-receive-event',
+            'url-pro/url-event-history',
+            'url-pro/real-time-notification'
+          ],
+        },
+        'url-pro/url-http-status',
+        'url-pro/url-error-type',
+      ]
+    }
+  ],
   rumsSidebar: [
     {
       type: 'category',
