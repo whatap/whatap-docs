@@ -4896,12 +4896,12 @@ const sidebars = {
               label: 'Server',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
+              className: 'new',
               items: [
                 {
                   type: 'doc',
                   id: 'release-notes/server/index',
-                  className: 'new',
+                  //className: 'new',
                 },
                 'release-notes/server/download-server-agent',
               ],
