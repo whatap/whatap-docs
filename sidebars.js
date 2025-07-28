@@ -4957,22 +4957,14 @@ const sidebars = {
               label: 'Server HP-UX',
               collapsible: true,
               collapsed: true,
-              // className: 'new',
-              link: {
-                type: 'doc',
-                id: 'release-notes/server-hpux/index'
-              },
+              //className: 'new',
               items: [
                 {
                   type: 'doc',
-                  id: 'release-notes/server-hpux/server-hpux-1_4_4',
-                  // className: 'new'
+                  id: 'release-notes/server-hpux/index',
+                  //className: 'new',
                 },
-                'release-notes/server-hpux/server-hpux-1_4_2',
-                'release-notes/server-hpux/server-hpux-1_4_0',
-                'release-notes/server-hpux/server-hpux-1_3_7',
-                'release-notes/server-hpux/server-hpux-1_3_6',
-                'release-notes/server-hpux/server-hpux-1_3_4',
+                'release-notes/server-hpux/download-hpux-agent',
               ],
             },
             {
