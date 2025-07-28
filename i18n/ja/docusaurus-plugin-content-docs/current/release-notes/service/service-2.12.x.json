@@ -16,7 +16,7 @@
         "hash": "service-2122",
         "product": "Application",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">ヒートマップ</span>ウィジェットで詳細を見るを通じて<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ヒットマップ</span>メニューに移動する時、照会されたデータの時間値でタイムセレクターとチャートのx軸が設定されない現象を修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <span class=\"uitext\">ダッシューボード</span> &gt; <span class=\"uitext\">アプリケーション</span>メニューの<span class=\"uitext\">ヒットマップ</span>ウィジェットで詳細を見るを通じて<span class=\"uitext\">分析</span> &gt; <span class=\"uitext\">ヒットマップ</span>メニューに移動する時、照会されたデータの時間値でタイムセレクターとチャートのx軸が設定されない現象を修正</p>"
       }
     ]
   },
