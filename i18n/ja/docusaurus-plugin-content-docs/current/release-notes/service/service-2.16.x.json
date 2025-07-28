@@ -72,7 +72,7 @@
         "product": "共通",
         "type": "Feature",
         "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">イベント設定</span>メニューにイベント動作時間機能を追加</p>",
-        "details": "<ul>\n<li>\n<p><strong>イベント設定V1</strong></p>\n<p>マトリクス/複合マトリクス/異常値探知/リアルタイム複合ログ/サーバーログ → イベント受信タグ上に追加</p>\n<p>ヒートマップパターン→カードの最下段に追加</p>\n</li>\n<li>\n<p><strong>イベント設定V2</strong></p>\n<p>基本/メトリクス → 解消された通知を次の項目に追加</p>\n<p>その他の項目はV1と同じ</p>\n</li>\n</ul>"
+        "details": "<ul>\n<li>\n<p><strong>イベント設定V1</strong></p>\n<p>マトリクス/複合マトリクス/異常値探知/リアルタイム複合ログ/サーバーログ → イベント受信タグ上に追加</p>\n<p>ヒットマップパターン→カードの最下段に追加</p>\n</li>\n<li>\n<p><strong>イベント設定V2</strong></p>\n<p>基本/メトリクス → 解消された通知を次の項目に追加</p>\n<p>その他の項目はV1と同じ</p>\n</li>\n</ul>"
       },
       {
         "ver": "Service 2.16.0",
