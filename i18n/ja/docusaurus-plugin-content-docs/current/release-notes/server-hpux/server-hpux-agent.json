@@ -1,5 +1,60 @@
 [
   {
+    "ver": "v1.4.5",
+    "date": "2025-07-25",
+    "Lists": [
+      {
+        "ver": "v1.4.5",
+        "hash": "v145",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> ディスク使用量が正しく表示されない問題を修正</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/server-hpux/server-hpux-1_4_4/",
+    "ver": "v1.4.4",
+    "date": "2025-04-23",
+    "Lists": [
+      {
+        "ver": "v1.4.4",
+        "hash": "v144",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <em>whatap.conf</em> の更新エラーを修正</p>"
+      },
+      {
+        "ver": "v1.4.4",
+        "hash": "v144",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> サーバー再起動時にエージェントを自動で再起動する機能を追加</p>"
+      }
+    ]
+  },
+  {
+    "url": "https://docs.whatap.io/release-notes/server-hpux/server-hpux-1_4_2/",
+    "ver": "v1.4.2",
+    "date": "2025-03-13",
+    "Lists": [
+      {
+        "ver": "v1.4.2",
+        "hash": "v142",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>oname</code> および <code>config</code> 設定で韓国語の入力ができない問題を修正</p>"
+      },
+      {
+        "ver": "v1.4.2",
+        "hash": "v142",
+        "product": "Server HP-UX Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <code>categoryv2</code> におけるデータ型エラーを修正</p>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/ja/release-notes/server-hpux/server-hpux-1_4_0",
     "ver": "v1.4.0",
     "date": "2025-02-05",
