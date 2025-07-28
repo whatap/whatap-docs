@@ -235,7 +235,7 @@
 		  "hash": "service-2170",
 		  "product": "Cloud",
 		  "type": "Feature",
-		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <em><strong>アプリケーションヒートマップ</strong></em>、<em><strong>マルチサービスヒートマップ</strong></em>ドラッグでプロファイルデータ照会時、最大照会期間の超過時に通知文を表示</p>"
+		  "desc": "<p><code class=\"Feature\" type=\"1\">Feature</code> <span class=\"uitext\">分析</span> &gt; <em><strong>アプリケーションヒットマップ</strong></em>、<em><strong>マルチサービスヒットマップ</strong></em>ドラッグでプロファイルデータ照会時、最大照会期間の超過時に通知文を表示</p>"
 		}
 	  ]
 	}

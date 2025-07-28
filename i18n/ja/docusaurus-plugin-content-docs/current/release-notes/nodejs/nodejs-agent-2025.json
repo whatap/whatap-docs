@@ -147,7 +147,7 @@
         "hash": "v056",
         "product": "Node.js Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>ヒートマップデータの転送最大サイズの修正</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code>ヒットマップデータの転送最大サイズの修正</p>"
       }
     ]
   }
