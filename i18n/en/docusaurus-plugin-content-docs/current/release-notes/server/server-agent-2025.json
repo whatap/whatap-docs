@@ -8,7 +8,7 @@
         "hash": "v291",
         "product": "Server Agent",
         "type": "Fixed",
-        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added <code>cronjob timeout</code> option</p>"
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Added cronjob <code>timeout</code> option</p>"
       },
       {
         "ver": "v2.9.1",
