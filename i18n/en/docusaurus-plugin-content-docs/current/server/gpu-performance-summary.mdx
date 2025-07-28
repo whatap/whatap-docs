@@ -85,22 +85,47 @@ Click on any column header in the data list to toggle between ascending and desc
 
 You can download the data as a CSV file.
 
-### ![Column icon](/img/ico-column.svg) Column Settings
+### ![Column Icon](/img/ico-column.svg) Column Settings
 
-Click the **Column Settings** button at the top right of the screen to select which columns to display. In the **Column Settings** window, choose the desired columns and click **Confirm** to save your selection.
+Click the ![Column Icon](/img/ico-column.svg) **Column Settings** button at the top right of the screen to open the **Column Settings** window.  
+In the **Column Settings** window, you can select which columns to display in the table.
 
-:::caution
+* **![Select Icon](/img/ic-s-check.svg) Select All**: Select all columns
 
-The Status and HostName columns cannot be removed.
+* **![Refresh Icon](/img/ic-refresh2.svg) Reset to Default Order**: Reset the column order to default
+
+* **![Refresh Icon](/img/ic-refresh2.svg) Reset to Default Selection**: Restore to the default column selection
+
+:::note
+
+The selected columns are saved in your browser cookies, so the selection persists even after refreshing the page.  
+If cookies are deleted or an error occurs, the default columns will be restored.
 
 :::
 
-- **Column Selection**
+1. In the **Column Settings** window, select the columns to display under **GPU Information** and **GPU Performance Metrics**.
 
-    You can select the columns you want to display in the table. Click **Reset** to return to the default selection.
+    * You can select columns by group or adjust their order.
 
-    :::note
+    :::caution
 
-    Selected columns are saved in browser cookies, so the selection persists even after a page refresh. If cookies are deleted or a settings error occurs, the default columns will be restored.
+    The Status and HostName fields under GPU Information cannot be removed.
 
     :::
+
+1. Click the **Apply** button to save your settings.
+
+## Add Filter
+
+You can add filter conditions to quickly find the GPUs you need.
+
+1. Click the ![Filter Icon](/img/ico-filter.svg) **Filter** search bar to open the **Add Filter** window.
+
+2. In the **Add Filter** window, select the desired GPU condition (filter key and condition), then click the **Apply** button.
+
+## Compare GPUs
+
+When you select multiple GPUs to compare, the **Compare** panel appears below the GPU list, allowing you to visually compare metrics using charts.  
+You can track trends for the last 10 minutes and identify performance anomalies or bottlenecks.
+
+* You can compare up to 20 items at a time.
