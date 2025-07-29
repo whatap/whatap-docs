@@ -4841,8 +4841,6 @@ const sidebars = {
                 'release-notes/python/python-1_8_5',
                 'release-notes/python/python-1_8_4',
                 'release-notes/python/python-1_8_3',
-                'release-notes/python/python-1_8_2',
-                'release-notes/python/python-1_8_1',
                 'release-notes/python/python-previous',
               ],
             },
