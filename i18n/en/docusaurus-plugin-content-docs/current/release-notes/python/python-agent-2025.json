@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_7",
+    "ver": "v1.8.7",
+    "date": "2025-07-29",
+    "Lists": [
+      {
+        "ver": "v1.8.7",
+        "hash": "v187",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added <strong>whatap_code_start</strong> option <span class='type'>Boolean</span> Default: <code>false</code></p>",
+        "details": "<ul><li><p>When set to <code>true</code>, you can run <code>import whatap</code> followed by <code>whatap.agent()</code> in <em>sitecustomize.py</em>, enabling agent startup without the whatap-start-agent command using only the default Python execution.</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.7",
+        "hash": "v187",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> Modified <strong>open_file_descriptor_enabled</strong> option <span class='type'>Boolean</span></p>",
+        "details": "<ul><li><p>When set to <code>false</code>, the thread that tracks file descriptors is also disabled.</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_6/",
     "ver": "v1.8.6",
     "date": "2025-07-15",

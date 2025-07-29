@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_7",
+    "ver": "v1.8.7",
+    "date": "2025-07-29",
+    "Lists": [
+      {
+        "ver": "v1.8.7",
+        "hash": "v187",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <strong>whatap_code_start</strong> オプションを追加 <span class='type'>Boolean</span> デフォルト: <code>false</code></p>",
+        "details": "<ul><li><p><code>true</code> に設定すると、<em>sitecustomize.py</em> 内で <code>import whatap</code> の後に <code>whatap.agent()</code> を実行することで、whatap-start-agent コマンドなしで、通常のPython実行コマンドのみでエージェントを起動できます。</p></li></ul>"
+      },
+      {
+        "ver": "v1.8.7",
+        "hash": "v187",
+        "product": "Python Agent",
+        "type": "Fixed",
+        "desc": "<p><code class=\"Fixed\" type=\"0\">Fixed</code> <strong>open_file_descriptor_enabled</strong> オプションを修正 <span class='type'>Boolean</span></p>",
+        "details": "<ul><li><p><code>false</code> に設定すると、ファイルディスクリプタを追跡するスレッドも無効になります。</p></li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_6/",
     "ver": "v1.8.6",
     "date": "2025-07-15",

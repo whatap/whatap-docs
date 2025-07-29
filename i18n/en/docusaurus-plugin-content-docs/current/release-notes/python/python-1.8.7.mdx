@@ -1,0 +1,19 @@
+---
+id: python-1_8_7
+title: Python Agent v1.8.7
+toc_max_heading_level: 2
+pagination_next: release-notes/python/python-1_8_6
+displayed_sidebar: releaseSidebar
+---
+
+July 29, 2025
+
+- <Status priority='1'>New</Status> Added **whatap_code_start** option
+
+    - Default: `false`
+
+    - When set to `true`, running `import whatap` in *sitecustomize.py* followed by `whatap.agent()` allows the agent to start without the whatap-start-agent command — using only the standard Python execution command.
+
+- <Status priority='0'>Fixed</Status> Modified **open_file_descriptor_enabled** option
+
+    - When set to `false`, the thread that tracks file descriptors is also disabled.
