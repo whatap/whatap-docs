@@ -20,13 +20,13 @@ WhaTapは、ユーザーが希望するソフトウェアのモニタリング�
 
 :::
 
-Milvusは、大規模なベクトルデータを高性能に管理・検索するためのオープンソースデータベースです。 WhaTap ***Milvus***モニタリングは、Milvusクラスタを構成するProxy、Root Coordinator、Query Nodeなどの性能と資源使用量をリアルタイム及びヒストリーで追跡し、検索遅延とメモリ不足及びトランザクション障害などを素早く発見して解決できるようにサポートします。
+Milvusは、大規模なベクトルデータを高性能に管理・検索するためのオープンソースデータベースです。 WhaTap **Milvus**モニタリングは、Milvusクラスタを構成するProxy、Root Coordinator、Query Nodeなどの性能と資源使用量をリアルタイム及びヒストリーで追跡し、検索遅延とメモリ不足及びトランザクション障害などを素早く発見して解決できるようにサポートします。
 
-WhaTapは新しい**Featureプロジェクト**方式で***Milvus***モニタリングを提供します。 Milvusデータベースの性能と状態をリアルタイムで追跡することで、問題を早期に検出して解決できます。
+WhaTapは新しい**Featureプロジェクト**方式で**Milvus**モニタリングを提供します。 Milvusデータベースの性能と状態をリアルタイムで追跡することで、問題を早期に検出して解決できます。
 
 ## インストール
 
-WhaTapの***Milvus***モニタリングサービス利用のための基本インストール方法を案内します。 
+WhaTapの**Milvus**モニタリングサービス利用のための基本インストール方法を案内します。 
 
 WhaTapモニタリングサービスを使用するには、[会員登録](https://www.whatap.io/ja/signup/)後、プロジェクトを作成し、ターゲットサーバーにエージェントをインストールする必要があります。 会員登録に関する詳細は、[次の文書](../account/account-manage)を参照してください。 
 
@@ -34,7 +34,7 @@ WhaTapモニタリングサービスを使用するには、[会員登録](https
 
 **サポート環境**<ScrollToLink anchor='milvus-supported-env' />
 
-WhaTapの***Milvus***監視エージェントをインストールする前に、対応環境を確認します。 
+WhaTapの**Milvus**監視エージェントをインストールする前に、対応環境を確認します。 
 
 - **Milvus**: Milvus 2.xもしくは同等のバージョン
 
@@ -54,24 +54,24 @@ import Createprojectintrov2 from "../getting-started/_create-project-v2.mdx";
 
 ### Milvusエージェントインストール
 
-<InstallFeature name='Milvus 에이전트 설치' />
+<InstallFeature name='Milvusエージェントのインストール' />
 
 ## メインメニュー
 
 ### ダッシューボード
 
-ホーム画面&gt; **Featuresプロジェクト**(<code class='Features'>Features</code>)選択&gt; ***Milvus*** &gt; ***Milvusダッシュボード***
+ホーム画面&gt; **Featuresプロジェクト**(<code class='Features'>Features</code>)選択&gt; **Milvus** &gt; **Milvusダッシュボード**
 
-WhaTapの***Milvus***モニタリングはベクトル検索データベースであるMilvusの構成要素別の主要指標とグラフを提供します。 WhaTapが提供する***Milvusダッシュボード***は、次の3つのプリセットで構成されています。
+WhaTapの**Milvus**モニタリングはベクトル検索データベースであるMilvusの構成要素別の主要指標とグラフを提供します。 WhaTapが提供する**Milvusダッシュボード**は、次の3つのプリセットで構成されています。
 
-- ***Milvus Proxy and Root Coordinator***
+- **Milvus Proxy and Root Coordinator**
 
   MilvusシステムでProxy遅延時間、QPS及びRoot Coordinatorのコレクションとエンティティ及びDML/DDL作業現況を総合的にモニタリングできるプリセットです。
 
   <details>
   <summary>ダッシュボード指標案内</summary>
 
-  #### ***Proxyモニタリング***
+  #### Proxyモニタリング
 
   - **Latency及びリクエストイベント**
 
@@ -81,7 +81,7 @@ WhaTapの***Milvus***モニタリングはベクトル検索データベース�
 
     Milvus ProxyのCPU及びメモリ使用量を時系列グラフで表示し、システムリソースの状態を把握します。
 
-  #### ***Root Coordinatorモニタリング***
+  #### Root Coordinatorモニタリング
 
   - **コレクション及びエンターテインメント情報**
 
@@ -97,14 +97,14 @@ WhaTapの***Milvus***モニタリングはベクトル検索データベース�
 
   </details>
 
-- ***Milvus Search and Compute Performance***
+- **Milvus Search and Compute Performance**
 
   ANN、Brute Force、DiskANNなど、検索性能をモニタリングするプリセットです。
 
   <details>
   <summary>ダッシュボード指標案内</summary>
 
-  #### ***Approximate Nearest Neighbor (ANN) Metrics***
+  #### Approximate Nearest Neighbor (ANN) Metrics
 
   - **検索リクエスト遅延時間**
 
@@ -114,7 +114,7 @@ WhaTapの***Milvus***モニタリングはベクトル検索データベース�
 
     1秒あたりに処理された検索リクエストの回数と累積検索遅延時間を確認して、システムの負荷状態をモニタリングします。
 
-  #### ***BF (Brute Force) Search***
+  #### BF (Brute Force) Search
 
   - **BF検索リクエストあたりの比較オブジェクト数**
 
@@ -124,7 +124,7 @@ WhaTapの***Milvus***モニタリングはベクトル検索データベース�
 
     個体の比較回数を使用して、計算コストを追跡し、最適化の機会を探します。
 
-  #### ***Bitset Ratio***
+  #### Bitset Ratio
 
   - **Bitset使用率及び計算量**
 
@@ -134,7 +134,7 @@ WhaTapの***Milvus***モニタリングはベクトル検索データベース�
 
     検索リクエスト中にBitsetを活用した割合を確認し、インデックス戦略の効率性を評価します。 
 
-  #### ***DiskANN***
+  #### DiskANN
 
   - **DiskANN検索及びインデックス性能**
 
@@ -146,52 +146,52 @@ WhaTapの***Milvus***モニタリングはベクトル検索データベース�
 
   </details>
 
-- ***Milvus Query Coordinator & Query Node Metrics***
+- **Milvus Query Coordinator & Query Node Metrics**
 
   QueryCoordとQueryNodeの状態と性能指標をリアルタイムでモニタリングできるプリセットです。
 
   <details>
   <summary>ダッシュボード指標案内</summary>
 
-  #### ***Query Coordinator***
+  #### **Query Coordinator**
 
-  - ***Number of collections***
+  - **Number of collections**
 
     QueryCoordが管理するコレクション数を意味します。
 
-  - ***Number of partitions***
+  - **Number of partitions**
 
     コレクション内のパーティションの数をモニタリングして、データの分割状態を特定します。
 
-  - ***Number of QueryNodes***
+  - **Number of QueryNodes**
 
     QueryCoordが管理するQueryNodeの個数を表示します。
 
-  - ***Resource Group Info***
+  - **Resource Group Info**
 
     QueryCoordで割り当てられたリソースグループ情報を確認して、クエリ実行リソースを分析します。
 
-  #### ***Query Node***
+  #### Query Node
 
-  - ***Disk used size(MB)***
+  - **Disk used size(MB)**
 
     QueryNodeで使用するディスク容量をモニタリングして、ストレージの最適化を行います。
 
-  - ***Number of ready read tasks in readyQueue***
+  - **Number of ready read tasks in readyQueue**
 
     待機中のクエリリクエストの数をモニタリングして、検索ボトルネックの有無を分析します。
 
-  #### ***Data Coordinator & Data Node***
+  #### Data Coordinator & Data Node
 
-  - ***Number of collections***
+  - **Number of collections**
 
     DataCoordが管理するコレクション数を表示して、データ規模を追跡します。
 
-  - ***Number of data nodes***
+  - **Number of data nodes**
 
     DataCoordが管理するDataNode数を通じてストレージ管理状態を確認します。
 
-  - ***Import tasks grouping by type and state***
+  - **Import tasks grouping by type and state**
 
     データのImport作業をタイプと状態別に分類し、読み込みと処理速度を分析できます。
 
