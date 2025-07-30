@@ -112,11 +112,11 @@ Standard out及びerrorログ収集のために別途の設定が必要です。
        Kubernetesノードのファイルシステムに保存されているログファイルを直接読み込む方式です。\
        収集されたログは<Cmdname sid="side_log" className="uitext" /> &gt; <Cmdname sid="side_logExplorer" className="uitext" />、<Cmdname sid="side_logSearch" className="uitext" />、<Cmdname sid="side_logTail" className="uitext" />機能を通じて確認できます。
 
-     ```ini title="와탭 에이전트 로그 파일 수집 경로"
+     ```ini title="WhaTapエージェントのログファイル収集パス"
      /var/log/pods/<namespace>_<pod-name>_<uid>/<container-name>/*.log
      ```
 
-     ```ini title="예시"
+     ```ini title="例"
      /var/log/pods/whatap_agent_7ddf2a4c-0877-4602-a38c-df07c4501ede/agent/0.log
      ```
 

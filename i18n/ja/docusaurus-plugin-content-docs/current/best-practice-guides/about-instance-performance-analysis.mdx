@@ -37,7 +37,7 @@ displayed_sidebar: learningSidebar
 
 <Cmdname sid="side_threadList" className="uitext" />メニューは、現在実行中のスレッドのリストを確認し、そのスレッドの個々のスナップショット及び全体のスレッドダンプ情報を照会できます。 <Cmdname sid="hitmap" className="uitext" />がトランザクション応答時間中心の最適化作業の核心であれば、<Cmdname sid="side_threadList" className="uitext" />はCPU最適化の核心要素と言えます。これはアプリケーションの性能最適化、問題診断、そして安定性維持に重要な役割を果たします。
 
-どのスレッドがCPUを多く使用しているかを把握することは、ボトルネックの発生原因を識別する上で重要です。 特に、特定の時間帯にCPU使用が急増したスレッド識別のために、時系列データを照会できる必要があります。 <Cmdname sid="side_threadList" className="uitext" />メニューの<Cmdname sid="thread_cpu_time" className="uitext" />は、当該スレッドがCPUを占有した合計累積時間を意味します。 ***更新***時、現在のスレッドCPU時間と既存のスレッドCPU時間の差である<Cmdname sid="TTL08126" className="uitext" />を提供することで、照会時点で最も多くCPUを使用しているスレッドを特定できます。 <Cmdname sid="TTL08126" className="uitext" />カラムをクリックし、降順でのソートで増加量が最も高いスレッドを確認してみてください。 
+どのスレッドがCPUを多く使用しているかを把握することは、ボトルネックの発生原因を識別する上で重要です。 特に、特定の時間帯にCPU使用が急増したスレッド識別のために、時系列データを照会できる必要があります。 <Cmdname sid="side_threadList" className="uitext" />メニューの<Cmdname sid="thread_cpu_time" className="uitext" />は、当該スレッドがCPUを占有した合計累積時間を意味します。 **更新**時、現在のスレッドCPU時間と既存のスレッドCPU時間の差である<Cmdname sid="TTL08126" className="uitext" />を提供することで、照会時点で最も多くCPUを使用しているスレッドを特定できます。 <Cmdname sid="TTL08126" className="uitext" />カラムをクリックし、降順でのソートで増加量が最も高いスレッドを確認してみてください。 
 
 <ImgLang img='best-p/about-instance-thread-list-dump3.png' desc='スレッドリスト/ダンプデルタ値' />
 

@@ -24,7 +24,7 @@ WhaTapのサーバーモニタリングエージェントは、モニタリン�
 
 :::note 
 
-ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="server" className="uitext" />タブをクリックして***+*** <Cmdname sid="add_alert_setting" className="uitext" />ボタンを選択
+ホーム画面 &gt; プロジェクト選択 &gt; <Cmdname sid="side_event" className="uitext" /> &gt; <Cmdname sid="side_eventSetting" className="uitext" /> &gt; <Cmdname sid="server" className="uitext" />タブをクリックして**+** <Cmdname sid="add_alert_setting" className="uitext" />ボタンを選択
 
 :::
 
@@ -32,15 +32,15 @@ WhaTapのサーバーモニタリングエージェントは、モニタリン�
 
 ### 基本通知
 
-WhaTapサーバモニタリングは**基本通知**を提供します。 ユーザーは、以下のようにイベントテンプレート内でサーバー***再起動***およびデータ***未受信***アイテムを活性化するだけで、追加の操作なしで基本的な通知設定を完了できます。
+WhaTapサーバモニタリングは**基本通知**を提供します。 ユーザーは、以下のようにイベントテンプレート内でサーバー**再起動**およびデータ**未受信**アイテムを活性化するだけで、追加の操作なしで基本的な通知設定を完了できます。
 
-- ***再起動***: モニタリング対象のサーバーがシステムの再起動を実行している場合、通知が送信されます。
+- **再起動**: モニタリング対象のサーバーがシステムの再起動を実行している場合、通知が送信されます。
 
-- ***未受信***: サーバーのダウンタイムやネットワークの問題により、設定された時間の間にモニタリングエージェントからデータが受信されない場合、その状態に関する通知が送信されます。
+- **未受信**: サーバーのダウンタイムやネットワークの問題により、設定された時間の間にモニタリングエージェントからデータが受信されない場合、その状態に関する通知が送信されます。
 
 ### TCPポートモニタリングの通知
 
-WhaTapサーバーのモニタリングイベントテンプレートで***ポート***アイテムを活性化し、次のスクリプトでモニタリング対象のエンドポイントとTCPポートを設定します。 
+WhaTapサーバーのモニタリングイベントテンプレートで**ポート**アイテムを活性化し、次のスクリプトでモニタリング対象のエンドポイントとTCPポートを設定します。 
 
 <Tabs groupId='server-user-script'>
 <TabItem value="lxs" label="Linux Shell">
@@ -86,7 +86,7 @@ import TcpMulti from "../common-items/_server-tcp-port-multi.mdx";
 
 #### メトリクス照会
 
-設定が完了した場合***分析*** &gt; ***メトリクス照会***メニューで`server_tcpport`カテゴリが追加されます。 当該カテゴリの`isAlive`フィールド値に応じて、メトリクス通知を使用できます。 
+設定が完了した場合**分析** &gt; **メトリクス照会**メニューで`server_tcpport`カテゴリが追加されます。 当該カテゴリの`isAlive`フィールド値に応じて、メトリクス通知を使用できます。 
 
 <ImgLang img='best-p/about-server-adf-tcp-port-ms.png' desc='tcp ポート監視通知に関するメトリックスの照会' />
 
