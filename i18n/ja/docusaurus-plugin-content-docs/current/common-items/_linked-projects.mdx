@@ -72,23 +72,23 @@
 
 <Cmdname sid="TTL07046" className="uitext" />画面では、アクティブトランザクションに関する詳細情報およびCall Stack、SQL文を確認できます。
 
-#### ***Active Transaction***
+#### **Active Transaction**
 
 連携したアクティブトランザクションの詳細を確認できます。
 
 <ImgLang img="db-linked-project-detail-active-tx.png" desc="Active Transaction" />
 
-- ***DB Connection***: データベース接続URLです。
+- **DB Connection**: データベース接続URLです。
 
-- ***Thread ID***: そのトランザクションを処理するために使用されたスレッドの固有識別子です。
+- **Thread ID**: そのトランザクションを処理するために使用されたスレッドの固有識別子です。
 
-- ***Sid***: 選択したアクティブセッションのIDです。
+- **Sid**: 選択したアクティブセッションのIDです。
 
   <InDoc product="postgresql">
 
   :::note
 
-  ***Sid***は<Cmdname sid="active_sessions" className="uitext" />テーブルで<UI>PID</UI>項目と同じ値です。 APMプロジェクトでSQL情報の<UI>SID</UI>項目とも同じです。
+  **Sid**は<Cmdname sid="active_sessions" className="uitext" />テーブルで<UI>PID</UI>項目と同じ値です。 APMプロジェクトでSQL情報の<UI>SID</UI>項目とも同じです。
 
   <ImgLang img="db-linked-projects-postgresql-pid-sid.png" desc="SID" />
 
@@ -96,9 +96,9 @@
 
   </InDoc>
 
-- ***Thread Stat***: スレッドの現在の状態です。
+- **Thread Stat**: スレッドの現在の状態です。
 
-- ***DB Type***: 連携したデータベースプラットフォームの種類です。
+- **DB Type**: 連携したデータベースプラットフォームの種類です。
 
 :::note
 
@@ -108,13 +108,13 @@
 
 :::
 
-#### ***Call Stack***
+#### **Call Stack**
 
 メソッドや関数呼び出しの順序を追跡する情報を提供します。
 
 <ImgLang img="db-linked-project-detail-call-stack.png" desc="Call Stack" />
 
-#### ***SQL***
+#### **SQL**
 
 連携されたアクティブトランザクションによって実行されたSQLクエリです。
 

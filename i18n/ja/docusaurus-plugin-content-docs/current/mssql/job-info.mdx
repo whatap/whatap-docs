@@ -47,21 +47,21 @@ Job一覧に照会しようとする項目がなければ![更新アイコン](/
 
 SQL Serverで登録されたJobの基本情報を提供します。 Jobの生成/修正時間、実行状態および通知設定などを確認できます。 提供するカラム項目の詳細については、以下を参照してください。
 
-- ***job_id***：Jobの固有識別子(UUID)です。
+- **job_id**：Jobの固有識別子(UUID)です。
 
-- ***job_name***：Job名です。
+- **job_name**：Job名です。
 
-- ***enabled***：Jobの有効可否です。 有効状態であれば<UI>yes</UI>、無効状態であれば<UI>no</UI>と表示します。
+- **enabled**：Jobの有効可否です。 有効状態であれば<UI>yes</UI>、無効状態であれば<UI>no</UI>と表示します。
 
-- ***description***：Jobについての説明です。 説明がなければ<UI>No description available</UI>に表示します。
+- **description**：Jobについての説明です。 説明がなければ<UI>No description available</UI>に表示します。
 
-- ***date_created***：Jobが生成された日付および時間です。
+- **date_created**：Jobが生成された日付および時間です。
 
-- ***date_modified***：Jobが最後に修正された日付と時間です。
+- **date_modified**：Jobが最後に修正された日付と時間です。
 
-- ***notify_level_eventlog***：Job実行結果によるイベントログの通知設定レベルです。
+- **notify_level_eventlog**：Job実行結果によるイベントログの通知設定レベルです。
 
-- ***notify_level_email***：Job実行結果によるメール通知設定レベルです。
+- **notify_level_email**：Job実行結果によるメール通知設定レベルです。
 
 :::note
 
@@ -73,21 +73,21 @@ Job一覧は最大50件まで照会できます。
 
 <UI>Job</UI>セクションで選択したJobの実行履歴を詳細に確認できます。 Jobの各段階(Step)別の実行結果とメッセージ、実行時間、所要時間が含まれます。 提供するカラム項目の詳細については、以下を参照してください。
 
-- ***step_id***：Job内に実行された段階の固有識別子です。
+- **step_id**：Job内に実行された段階の固有識別子です。
 
-- ***step_name***：実行された段階の名前です。
+- **step_name**：実行された段階の名前です。
 
-- ***run_status***：段階の実行結果です。
+- **run_status**：段階の実行結果です。
 
-- ***messages***：段階の実行中に発生したメッセージです。 成功またはエラーに関する詳細情報を含めます。
+- **messages**：段階の実行中に発生したメッセージです。 成功またはエラーに関する詳細情報を含めます。
 
-- ***run_date***：段階が実行された日付です。
+- **run_date**：段階が実行された日付です。
 
-- ***run_duration***：段階が最後に実行された時の時間(hhmmss)です。
+- **run_duration**：段階が最後に実行された時の時間(hhmmss)です。
 
-- ***last_run_retries***：段階の最後実行での再試行回数です。
+- **last_run_retries**：段階の最後実行での再試行回数です。
 
-- ***last_run_outcome***：段階の以前の実行結果です。
+- **last_run_outcome**：段階の以前の実行結果です。
 
 {/* 필터 조건추가하기*/}
 import Dbsqlfilter from "../common-items/_db-sql-filter.mdx";

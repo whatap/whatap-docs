@@ -6,15 +6,15 @@
 
 ### XOSウィジェット
 
-- ***[XOS] CPU***
+- **[XOS] CPU**
 
   エージェント別のCPU使用率をリアルタイムで確認できます。
 
-- ***[XOS] Memory***
+- **[XOS] Memory**
 
   エージェント別のメモリ使用率をリアルタイムで確認できます。
 
-- ***[XOS] Disk Usage***
+- **[XOS] Disk Usage**
 
   エージェント別のディスク使用率と使用可能サイズ、全体サイズ情報を表示します。 
 
@@ -39,15 +39,15 @@
 
 ### AWS RDS CloudWatchウィジェット
 
-- ***[RDS] CPUUtilization***
+- **[RDS] CPUUtilization**
 
   RDSデータベースのインスタンス別CPU使用率をリアルタイムで確認できます。
 
-- ***[RDS] FreeableMemory***
+- **[RDS] FreeableMemory**
 
   RDSデータベースのインスタンス別メモリ使用率をリアルタイムで確認できます。
 
-- ***[RDS] FreeStorageSpace***
+- **[RDS] FreeStorageSpace**
 
   RDSデータベースの使用可能なストレージ容量をリアルタイムで確認できます。
 
@@ -63,15 +63,15 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 ### Oracle RACウィジェット
 
-- ***[RAC] Load Balance***
+- **[RAC] Load Balance**
 
   Oracle RAC(Real Application Clusters) データベースで実行されているインスタンスのリソースをリアルタイムでモニタリングできます。 ユーザーは、データベースの負荷及び性能指標を視覚的にモニタリングできます。 CPU性能とアクティブセッション、物理的な読み取り操作、使用可能なメモリの数値を確認できます。
 
-- ***[RAC] Interconnect Bandwidth***
+- **[RAC] Interconnect Bandwidth**
 
   Oracle RAC(Real Application Clusters)で使用されるインターコネクト(Interconnect)の帯域幅をモニタリングするウィジェットです。 データベースノード間の通信帯域幅をリアルタイムで表示することで、クラスター内のデータベース、インスタンス間のネットワークトラフィックの状態をモニタリングできます。
 
-- ***[RAC] Main Waits***
+- **[RAC] Main Waits**
 
   Global Lockステータスと各イベントの待機回数を把握できます。 このウィジェットは、データベースの特定のカテゴリから収集した指標を通じて、各イベントの総待機回数を照会し、各エージェント(インスタンス)の最新データを抽出します。 これにより、特定の時間に発生したデータベースの待機イベントの状態をすばやく把握できます。
 
@@ -87,11 +87,11 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="db2,sapase">
 
-- ***CPU*** (`cpu_usage_total`)
+- **CPU** (`cpu_usage_total`)
 
   インスタンス別のCPU使用量(%)を確認できます。 `SYSIBMADM.ENV_SYS_RESOURCE`管理ビューのメタデータのCPU指標で計算した値です。
 
-- ***Memory*** (`mem`)
+- **Memory** (`mem`)
 
   インスタンス別のメモリ使用量(%)を確認できます。 `SYSIBMADM.ENV_SYS_RESOURCE`管理ビューメのタデータのメモリ指標で計算した値です。
 
@@ -99,33 +99,33 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="postgresql,mysql,oracle,oracle-pro,altibase,cubrid,mssql,db,sapase">
 
-- ***Active Sessions***
+- **Active Sessions**
 
   時間に応じたアクティブセッションの数値を時系列チャートで視覚的に表示します。 データベースで実行されているセッションの数を時間ごとに追跡し、グラフ化したウィジェットです。 セッションの使用パターンと負荷を視覚的に把握するのに役立ちます。
 
-- ***Lock Wait Sessions***
+- **Lock Wait Sessions**
 
   時間に応じたロック待機セッションの数値を時系列グラフで視覚的に表示します。 データベースでロック待機状態にあるセッションの数を時間ごとに追跡し、リアルタイムグラフで表示したウィジェットです。
 
-- ***Long Active Session Count***
+- **Long Active Session Count**
 
   データベースで実行される活性セッションの長期実行に関する情報を提供します。 セッションの実行時間に応じてグループ化され、時間単位で集計された情報をチャートで表示します。 長時間実行されるセッションを識別してデータベースの性能問題やリソース漏れを早期に感知したり、セッション実行時間による分類を通じてどのセッションが長期間にわたり活性状態に維持されているかを視覚的に把握できます。
 
   3秒未満は<span class="normal">青</span>、3秒以上10秒未満は<span class="snormal">緑</span>、10秒以上15秒未満は<span class='slow'>オレンジ</span>、15秒以上は<span class='vslow'>赤</span>で表示します。
 
-- ***Long Waiting Session Count***
+- **Long Waiting Session Count**
 
   データベースでロックを保持または待機するセッションの長期待機時間に関する情報を提供します。 ロック情報と活性セッション情報を組み合わせて、待機中のセッションの長期待機時間を追跡できます。 長時間ロックを保持または待機するセッションをモニタリングします。 どのセッションが長時間ロックを保持または待機しているかを視覚的に把握できます。
 
   5秒未満は<span class="normal">青</span>、5秒以上10秒未満は<span class="snormal">緑</span>、10秒以上60秒未満は<span class='slow'>オレンジ</span>、60秒以上は<span class='vslow'>赤</span>で表示します。
 
-- ***SQL Elapse Map***
+- **SQL Elapse Map**
 
-  実行中のクエリの経過時間をリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると***Query List***一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
+  実行中のクエリの経過時間をリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**Query List**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
 
   :::note
 
-  クエリの実行時間は、アクティブセッションを収集して計算します。 その結果、アクティブセッションの収集サイクルによって誤差範囲が発生する可能性があります。 次の図を参照してください。 収集サイクルの間に終了したSQL実行時間は計算されません。 収集サイクルが短いほど誤差範囲は小さくなりますが、DBの負荷を考慮して一般的に5秒に設定されています。 長時間にわたって実行されるクエリをモニタリングする場合に役立ちます。 ***SQL統計***メニューのデータは同じです。
+  クエリの実行時間は、アクティブセッションを収集して計算します。 その結果、アクティブセッションの収集サイクルによって誤差範囲が発生する可能性があります。 次の図を参照してください。 収集サイクルの間に終了したSQL実行時間は計算されません。 収集サイクルが短いほど誤差範囲は小さくなりますが、DBの負荷を考慮して一般的に5秒に設定されています。 長時間にわたって実行されるクエリをモニタリングする場合に役立ちます。 **SQL統計**メニューのデータは同じです。
 
   ![](/img/db-sql-elapse-map-example.png)
 
@@ -135,19 +135,19 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="oracle,oracle-pro">
 
-- ***Wait Event***
+- **Wait Event**
 
   各バックエンドプロセスが、現在待機中の待機イベント名とそのイベントの発生頻度をリアルタイムのグラフで表示します。 主にApplication、Configuration、Administrative、Networkなどに関連する項目の待機イベントをモニタリングします。 各待機イベントの発生頻度を視覚的に確認でき、グラフの上にマウスオーバーすると、ツールチップが表示され、各待機イベントに関する詳細情報を提供します。
 
-- ***Physical Reads***
+- **Physical Reads**
 
   データベースで発生する物理的な読み取り操作(physical reads)をモニタリングするウィジェットです。 主にデータベースがディスクからデータを読み込む作業に関する統計を提供し、データベースのI/O性能をモニタリングします。
 
-- ***Excute Count***
+- **Excute Count**
 
   データベースで実行されたクエリまたはプロシージャの実行回数をモニタリングするウィジェットです。 データベースによって実行されたクエリやプロシージャの実行回数をリアルタイムで追跡し、ユーザーに提供します。
 
-- ***Session Logical Reads***
+- **Session Logical Reads**
 
   データベースセッションで実行された論理的な読み取り操作(logical reads)をモニタリングするウィジェットです。 データベースセッションで実行された論理的な読み取り操作の回数をリアルタイムで追跡し、ユーザーに提供します。
 
@@ -155,27 +155,27 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="mssql">
 
-- ***Cache Hit Ratio*** (Buffer Manager.Buffer cache hit ratio)
+- **Cache Hit Ratio** (Buffer Manager.Buffer cache hit ratio)
 
   SQL Serverがディスクからデータを読み込まず、メモリバッファプールで見つけたページの割合です。 値が高いほど性能が優れていることを意味し、低い場合はメモリ容量不足やバッファプール管理の問題を疑う必要があります。 通常、この値は90%以上を維持することをお勧めします。
 
-- ***Page Life Expectancy*** (Buffer Manager.Page life expectancy)
+- **Page Life Expectancy** (Buffer Manager.Page life expectancy)
 
   データページがバッファプールに留まる平均時間を秒単位で表示します。 バッファプールに長く留まるほどメモリからデータを読み込むため、ディスクI/Oが減り、性能が向上します。 この値が低い場合は、メモリが不足しているか作業負荷が増加した状態であり、推奨値は最低300秒(5分) 以上です。 継続的に低い場合は、メモリの追加を考慮する必要があります。
 
-- ***Full Scans/sec***
+- **Full Scans/sec**
 
   毎秒実行されたテーブルまたはインデックスの合計スキャン回数です。 スキャン全体は、必要なデータのみを読み取るインデックススキャンに比べて非効率的であるため、この値が高い場合は、クエリ最適化または適切なインデックス設計が必要になる場合があります。 頻繁な全体スキャンは、CPU使用率の増加と性能低下を引き起こす可能性があります。
 
-- ***Page Lookups/sec*** (Buffer Manager.Page lookups/sec)
+- **Page Lookups/sec** (Buffer Manager.Page lookups/sec)
 
   バッファプールでページを見つけるためのリクエスト数です。 この値が高いと、より多くのデータを処理していることを意味し、大規模なクエリの実行やテーブルスキャンの発生可能性を示します。 値が異常に高い場合は、インデックスの欠落、間違ったクエリ設計などを確認する必要があり、CPU使用量の増加につながる可能性があります。
 
-- ***Page Reads/sec*** (Buffer Manager.Page reads/sec)
+- **Page Reads/sec** (Buffer Manager.Page reads/sec)
 
   すべてのデータベースで物理的にディスクから読み込まれた1秒当たりのページ数です。 この値が高いとディスクI/Oが多く、性能低下を引き起こす可能性があります。 改善のためにデータのキャッシュサイズを増やすか、クエリのチューニングとインデックスの最適化を検討します。 ディスクでの実際の読み込み操作は、大きなコストが発生する可能性があるため、注意が必要です。
 
-- ***Page Writes/sec*** (Buffer Manager.Page writes/sec)
+- **Page Writes/sec** (Buffer Manager.Page writes/sec)
 
   物理的にディスクに記録された1秒当たりのデータベースのページ数です。 書き込み作業が頻繁な場合、トランザクションの負荷が多いか、大量のデータ入力作業が原因である可能性があります。 データ書き込み作業が多いと、I/Oボトルネック現象が発生する可能性があるため、トランザクションの分割、ディスク性能の向上、ログファイルのサイズ調整などを検討します。
 
@@ -183,35 +183,35 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="altibase">
 
-- ***Logical Reads*** (data page gets)
+- **Logical Reads** (data page gets)
 
   システムまたはセッションでラッチを使用してデータページにアクセスした回数です。 バッファのHit Ratioは`(get pages + fix pages - read pages) / (get pages + fix pages)`で計算します。
 
-- ***Physical Reads*** (data page read)
+- **Physical Reads** (data page read)
 
   システムまたはセッションでページを読み取った回数であり、バッファにないページをディスクから読み取った物理的な読み取り回数です。 物理的な読み取り回数が多いほど、システムのクエリ処理速度が低下する可能性があります。
 
-- ***Memory Table Access*** (memory table access count)
+- **Memory Table Access** (memory table access count)
 
   システムまたはセッションでメモリテーブルにアクセスした回数です。
 
-- ***Disk Table Full Scan*** (disk table cursor full scan count)
+- **Disk Table Full Scan** (disk table cursor full scan count)
 
   システムまたはセッションで、ディスクテーブルに対するフルスキャンカーソルを開いた回数です。
 
-- ***Commits*** (session commit)
+- **Commits** (session commit)
 
   システムまたはセッションで発生したコミット(Commit) の回数です。
 
-- ***Undo Reads*** (undo page gets)
+- **Undo Reads** (undo page gets)
 
   システムまたはセッションでラッチを使用してUNDOページにアクセスした回数です。
 
-- ***Execute Count*** (execute success count)
+- **Execute Count** (execute success count)
 
   システムまたはセッションでクエリが正常に実行された回数です。 トランザクション処理量を評価する時`execute success count + prepare success count + prepare failure count`で計算できます。
 
-- ***Prepare Count*** (prepare success count)
+- **Prepare Count** (prepare success count)
 
   システムまたはセッションでPrepareステップが成功した回数です。 このステップは、クエリ文法エラーの確認と実行計画を含み、全体のクエリ処理時間の60-70%を占めることがあります。 この値が高すぎる場合は、反復的なPrepare作業を減らすためのクエリ最適化が必要です。
 
@@ -219,15 +219,15 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="cubrid">
 
-- ***Logical Reads*** (num_data_page_fetches)
+- **Logical Reads** (num_data_page_fetches)
 
   メモリから取得したデータページの数です。 データベースがディスクからデータを読み取る前に、既にメモリにあるデータを優先的に照会することがよくあります。 このメトリクスは、キャッシュやバッファを使用してデータベースの効率を評価するために必要です。 この値が高いほど、メモリでデータを多く取得することを意味し、ディスクI/Oの負担を軽減するために必要です。
 
-- ***Pysical Reads*** (num_data_page_ioreads)
+- **Pysical Reads** (num_data_page_ioreads)
 
   ディスクから実際に読み取ったデータページの数です。 この値が高いほど、メモリの代わりにディスクから多くのデータを読み取っていることを意味します。 これは、システムの性能に悪影響を与える可能性があります。 この値が高いほどデータベースのヒット率が低く、I/O性能が低下する可能性があるため、この値を最適化することが重要です。
 
-- ***Executions*** (executions)
+- **Executions** (executions)
 
   DML(データ操作言語) コマンドの実行回数です。 `SELECT`、`INSERT`、`UPDATE`、`DELETE`といったクエリの実行が含まれます。 このメトリクスは、データベースで実行される全体の作業量を把握するのに役立ち、データベースの処理性能をモニタリングできる重要な要素です。
 
@@ -237,11 +237,11 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Full Scans*** (num_query_sscans)
+- **Full Scans** (num_query_sscans)
 
   順次スキャン(Full scan) 回数です。 フルスキャン(Full scan)は、インデックスを使用せずにテーブル全体をスキャンしてデータを照会する方式で、性能が低下する作業です。 フルスキャンの回数が多いほど、クエリの性能に影響を与える可能性があり、インデックスの最適化が必要であることを意味します。
 
-- ***Buffer Hit Ratio(%)*** (data_page_buffer_hit_ratio)
+- **Buffer Hit Ratio(%)** (data_page_buffer_hit_ratio)
 
   データページバッファのヒット率をパーセンテージで表示したメトリクスです。 ヒット率が高いほど、データがメモリバッファですばやく照会されていることを意味し、これはシステムの性能を向上させるのに役立ちます。 逆にヒット率が低いと物理的I/Oが多くなり、性能低下につながる可能性があります。
 
@@ -251,19 +251,19 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Disk Sorts*** (num_sort_io_pages)
+- **Disk Sorts** (num_sort_io_pages)
 
   ディスクでソート作業を実行しながら取得したページの数です。 ディスクソートは、メモリ内で処理されていないソート作業を意味し、この値が大きいほど性能が低下する可能性があります。 メモリで処理可能なソートを増やすために、メモリサイズやソート戦略を調整する必要があります。
 
-- ***CAS Memory size*** (psize)
+- **CAS Memory size** (psize)
 
   `cub_cas`(CUBRID Application Server) プロセスで使用されているメモリサイズです。 この値は、CUBRIDのブローカー(CAS) プロセスがメモリに占める量を意味し、複数のブローカーが実行中の場合は、その合計値を表示します。 メモリ使用量が異常に高い場合は、メモリ漏れが発生したか、システムに負荷がかかっていることを意味します。
 
-- ***CAS count*** (broker_count)
+- **CAS count** (broker_count)
 
   実行中の`cub_cas`(CUBRID Application Server) プロセスの数です。 この値は、ブローカープロセスの数であり、ブローカーが多いほど、複数のリクエストを並列に処理できます。 ただし、ブローカーが多いほどリソースの消費も増えるため、適切な設定が必要です。
 
-- ***Replication Delay*** (time_ha_replication_delay)
+- **Replication Delay** (time_ha_replication_delay)
 
   CUBRIDのHigh Availability(HA) 環境でのレプリケーションの遅延時間を秒単位で示します。 このメトリクスは、主(Primary) サーバーからレプリカ(Replica) サーバーへデータの同期にかかる時間です。 この値が大きいほど、データ同期の遅延が発生していることを意味します。 レプリケーションの遅延が続くと、システムの可用性とデータの一貫性に影響を与える可能性があります。
 
@@ -271,39 +271,39 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product='postgresql'>
 
-- ***DML Tuples***
+- **DML Tuples**
 
   DML(Data Manipulation Language)文法(statement)が実行された回数をリアルタイムチャートで表示します。
 
-- ***Slow Query***
+- **Slow Query**
 
-  時間帯別のスロークエリをリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると***Slow Query List***一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
+  時間帯別のスロークエリをリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**Slow Query List**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
 
-- ***Logical I/O***
+- **Logical I/O**
 
   `blks_hit`メトリクス、ディスクブロックがすでにバッファキャッシュで検出され、読み取りを必要としない合計回数です。
 
-- ***Physical I/O***
+- **Physical I/O**
 
   物理的なDiskからデータを読み取った回数です。
 
-- ***Uptime***
+- **Uptime**
 
   エージェント(インスタンス)が起動してからどれくらいの時間が経過したかを確認できます。 時間は`{dd}d {hh:mm:ss}`形式で表示します。
 
-- ***Commits***
+- **Commits**
 
   システムまたはセッションで発生したコミット(Commit) の回数です。
 
-- ***Replication Delay***
+- **Replication Delay**
 
   Replication構造の場合、replication DBに反映される遅延時間をリアルタイムチャートで表示します。
 
-- ***Wait Event***
+- **Wait Event**
 
   各バックエンドプロセスが、現在待機中の待機イベント名とそのイベントの発生頻度をリアルタイムのグラフで表示します。 主にApplication、Configuration、Administrative、Networkなどに関連する項目の待機イベントをモニタリングします。 各待機イベントの発生頻度を視覚的に確認でき、グラフの上にマウスオーバーすると、ツールチップが表示され、各待機イベントに関する詳細情報を提供します。
 
-- ***Vacuum Sessions***
+- **Vacuum Sessions**
 
   進行中のVacuumプロセス数を確認できます。 ウィジェット右上にある![詳細アイコン](/img/ico-detail.svg)ボタンを選択すると<Cmdname sid="TTL08277" className="uitext" />画面が表示されます。 <Cmdname sid="TTL08277" className="uitext" />では行われたVacuumプロセスの詳細情報を確認できます。
 
@@ -311,41 +311,41 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="mysql">
 
-- ***Questions***
+- **Questions**
 
   MySQLサーバーで実行したコマンドの数です。 Stored program内で実行されたコマンドを計算しないという点で、Queriesとは異なります。
 
-- ***Slow Query***
+- **Slow Query**
 
-  時間帯別のスロークエリをリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると***Slow Query List***一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
+  時間帯別のスロークエリをリアルタイムチャートで表示します。 チャートの特定の領域をドラッグすると**Slow Query List**一覧を確認できます。 ![上方向アイコン](/img/up-arrow.svg)または![下方向アイコン](/img/down-arrow.svg)ボタンを選択して、縦軸の範囲を拡大または縮小できます。
 
-- ***Logical I/O***
+- **Logical I/O**
 
   物理的な読み取りを含む論理的な読み取りリクエストの回数です。 `Inodb buffer pool hit`パーセンテージの計算を次のように行うことができ、90%以上を推奨します。 もしHit Ratioが低い場合は、`Innodb_buffer_pool_size`の増設を検討してください。
 
   > `Buffer Hit Ratio` = (1 - (`Innodb_buffer_pool_reads`/`Innodb_buffer_pool_read_requests`)) \* 100
 
-- ***Physical I/O***
+- **Physical I/O**
 
   物理的なDiskからデータを読み取った回数です。
 
-- ***Uptime***
+- **Uptime**
 
   エージェント(インスタンス)が起動してからどれくらいの時間が経過したかを確認できます。 時間は`{dd}d {hh:mm:ss}`形式で表示します。
 
-- ***Commits***
+- **Commits**
 
   システムまたはセッションで発生したコミット(Commit) の回数です。
 
-- ***Replication Delay***
+- **Replication Delay**
 
   Replication構造の場合、Replication DBに反映される遅延時間です。
 
-- ***Select Full Join***
+- **Select Full Join**
 
   1つ以上のテーブルをジョイン(`JOIN`)する時に、インデックスを使わずにドリブン(Driven)テーブルに対してフルスキャン(Full Scan)が実行された回数です。
 
-- ***Tmp Tables***
+- **Tmp Tables**
 
   インスタンスごとのコマンドの実行中に、サーバーによって生成された内部一時テーブルの数です。
 
@@ -353,7 +353,7 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="redis,mongodb">
 
-- ***DB Status***
+- **DB Status**
 
   プロジェクトに含まれたエージェント(インスタンス)の状況を確認できます。 個別エージェントを六角形に表示し、マウスオーバーすると、今の状況とIPアドレスを確認できます。
 
@@ -369,13 +369,13 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="redis">
 
-- ***Clusters***
+- **Clusters**
 
   MasterインスタンスとSlaveインスタンスの状況を確認できます。
 
   :::note
 
-  ***Clusters***ウィジェットを利用するには、DBXエージェント(*whatap.conf*)の次のオプションを設定する必要があります。 詳細については、[次の文書](agent-dbx-settings#cluster-set)を参照してください。
+  **Clusters**ウィジェットを利用するには、DBXエージェント(*whatap.conf*)の次のオプションを設定する必要があります。 詳細については、[次の文書](agent-dbx-settings#cluster-set)を参照してください。
 
   ```ini title="whatap.conf"
   cluster_name={cluster_name}
@@ -383,7 +383,7 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Instantaneous Ops Per Sec***
+- **Instantaneous Ops Per Sec**
 
   ![Instantaneous Ops Per Sec](/img/db-dashboard-instaneous-widget.png)
 
@@ -395,17 +395,17 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Key Status***
+- **Key Status**
 
   サーバーのキー(Key) 状況をモニタリングします。 データベースの状況を把握し、性能を最適化するために必要です。
 
-  - ***Evicted Keys***：キャッシュされたか保存されたKeyのうち、期限切れまたはメモリポリシーによって削除されたキーの数を表示します。 ***Evicted Keys***指標が増加すると、メモリ不足またはキャッシュポリシーに問題がないか確認します。
+  - **Evicted Keys**：キャッシュされたか保存されたKeyのうち、期限切れまたはメモリポリシーによって削除されたキーの数を表示します。 **Evicted Keys**指標が増加すると、メモリ不足またはキャッシュポリシーに問題がないか確認します。
 
-  - ***Expired Keys***：期限切れのキー数を表示します。 Redisは、Keyに有効期限を設定でき、期限切れのキーは自動的に削除されます。 ***Expired Keys***指標が増加すると、データベースから有効期限ポリシーまたは、ユーザー操作をチェックしてください。
+  - **Expired Keys**：期限切れのキー数を表示します。 Redisは、Keyに有効期限を設定でき、期限切れのキーは自動的に削除されます。 **Expired Keys**指標が増加すると、データベースから有効期限ポリシーまたは、ユーザー操作をチェックしてください。
 
-  - ***Keyspace Hits***：データベースでKeyを検索して取得する要請のうち、キャッシュやメモリからキーを取得できた要請の数を表示します。 キャッシュの効率性を評価し、Keyへのアクセスパターンを理解するのに役立つ指標です。
+  - **Keyspace Hits**：データベースでKeyを検索して取得する要請のうち、キャッシュやメモリからキーを取得できた要請の数を表示します。 キャッシュの効率性を評価し、Keyへのアクセスパターンを理解するのに役立つ指標です。
 
-  - ***Keyspace Misses***：データベースでKeyを検索して取得する要請のうち、キャッシュやメモリからキーを取得できなかった要請の数を表示します。 キャッシュの効率性を評価し、性能を向上させるための対策に必要な指標です。
+  - **Keyspace Misses**：データベースでKeyを検索して取得する要請のうち、キャッシュやメモリからキーを取得できなかった要請の数を表示します。 キャッシュの効率性を評価し、性能を向上させるための対策に必要な指標です。
 
   :::note
 
@@ -413,23 +413,23 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Connected Clients*** (`connected_clients`)
+- **Connected Clients** (`connected_clients`)
 
   接続中のクライアントの数です。 サーバーへの同時接続数を把握できます。 サーバーへのクライアント接続数が急に増加すると、予期しないトラフィックの増加やその他の問題を引き起こす恐れがあるため、このような状況を迅速に認識し、対応する必要があります。
 
-- ***Used Memory*** (`used_memory`)
+- **Used Memory** (`used_memory`)
 
   データ保存のため要請されたメモリの量(byte)です。 OSで割り当てられたメモリの量と異なる場合があります。 `used_memory`の指標が高すぎる場合は、メモリ管理ポリシーを確認し、データセットの最適化でメモリ使用量を減らす必要があります。
 
-- ***Total Commands*** (`total_commands_processed`)
+- **Total Commands** (`total_commands_processed`)
 
   サーバーを起動してから処理したコマンドの総数を表示するウィジェットです。 サーバーが実行したすべてのコマンドの累積数を表し、サービスの提供する際に処理したすべてのクライアントの要請を含めます。 `total_commands_processed`指標は、サーバーの活動レベルを把握し、性能を評価するため必要な指標です。 この指標は、時間の経過とともに増加します。値の変化を追跡しながらサーバーの活動レベルをモニタリングする必要があります。
 
-- ***Used CPU*** (`used_cpu`)
+- **Used CPU** (`used_cpu`)
 
   Redisは、インスタンスごとに1つのCPUを使用し、割り当てられたCPU使用量を表示します。 `used_cpu`指標でサーバーがCPUリソースをどのように使っているのかを把握できます。 この指標が予期しないレベルに増加する場合、性能の問題として認識し、性能を最適化する必要があります。
 
-- ***Commands(/S)*** (`instantaneous_ops_per_sec`)
+- **Commands(/S)** (`instantaneous_ops_per_sec`)
 
   サーバーが処理する1秒あたりのコマンド数(`instantaneous_ops_per_sec`)を時間の経過に伴う各インスタンスの指標値を時系列チャートに表示します。 時間の経過に伴う推移をモニタリングし、性能トレンドや問題点を把握する際に役立つウィジェットです。
 
@@ -439,31 +439,31 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Total Net Input Bytes***
+- **Total Net Input Bytes**
 
   サーバーが受信したネットワーク入力の総量(bytes)を表示するウィジェットです。 クライアントから受信したすべてのネットワーク トラフィックの総量を測定します。 このウィジェットで、クライアントがサーバーとの通信中に消費したネットワーク帯域幅を把握できます。 クライアントの活動レベルを追跡し、ネットワーク負荷を管理するのに役立ちます。
 
-- ***Blocked Clients*** (`blocked_clients`)
+- **Blocked Clients** (`blocked_clients`)
 
   サーバーからブロック状態であるクライアントの数を表示します。 ブロックされたクライアントは、サーバーで特定のタスクを待機している状況で、待機中のタスクが完了するまでクライアントがブロックされます。 どれだけの数のクライアントがブロックであるかをモニタリングできます。 この指標から、サーバーの負荷状況を簡単に把握できます。
 
-- ***Keys Total*** (`keys_total`)
+- **Keys Total** (`keys_total`)
 
   Redisデータベースに保存されているキー(Key)の総数です。 Keyは、文字列、ハッシュ、リスト、セット、ソートセットなどの様々なデータタイプを含みます。 データベースに保存されているデータ全体の量を追跡することで、データベースのサイズを理解し、データの増加推移が把握できます。 この指標が急増する場合は、追加のメモリを割り当てるか、データの整理ポリシーを検討する必要があります。
 
-- ***Evicted Keys*** (`evicted_keys`)
+- **Evicted Keys** (`evicted_keys`)
 
   データベースのmaxmemory制限によって削除されたキー(Key)の数です。 削除ポリシーは、構成ファイルの`maxmemory-policy`設定に従います。 一般的にKeyと関連したデータの有効期限が切れているか、メモリ不足などの理由でキーを削除すると`evicted_keys`指標は増加します。 `evicted_keys`指標のモニタリングで、Keyがどれだけ頻繁に削除されるかを追跡し、メモリ使用量と性能を把握できます。
 
-- ***Keyspace Hits*** (`keyspace_hits`)
+- **Keyspace Hits** (`keyspace_hits`)
 
   Keyの照会要請に成功した数です。 `get key`値があると、1が増加します。 Hit Rateは、(`keyspace_hits` / (`keyspace_hits` + `keyspace_misses`) \* 100 )で計算できます。 `keyspace_hits`指標は、データベースサーバーのキャッシュ効率を評価し、性能を改善するために必要な指標の1つです。
 
-- ***Rdb Changes Since Last Save***
+- **Rdb Changes Since Last Save**
 
   データベースで最後の`SAVE`コマンドの後に変更されたデータの量を表すウィジェットです。 変更されたデータの量を追跡し、データの変化の度合いを把握できます。 変更されたデータの量が多い場合は、バックアップサイクルを調整するか、データ損失の可能性を減らすためのデータバックアップポリシーをチェックします。
 
-- ***Total Net Output Bytes***
+- **Total Net Output Bytes**
 
   データベースサーバーがクライアントに送信したすべてのネットワークトラフィックの量を表示するウィジェットです。 サーバーがクライアントにデータを送信する活動を追跡できます。 これにより、サーバーの応答速度およびクライアント要請に対する処理の性能を評価できます。
 
@@ -471,27 +471,27 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="mongodb">
 
-- ***Read requests***
+- **Read requests**
 
   1秒あたりの読み取り要請数を測定したウィジェットです。 読み取り要請は、データベース内のデータを照会または検索するクエリ、集計タスク、インデックススキャンなどに関するタスクです。 データベースの利用パターンの変化を検出するのに役立ちます。
 
   > 算出方式：`query$opcounters` + `getmore$opcounters`
 
-- ***Write requests***
+- **Write requests**
 
   1秒あたりの書き込み要請数を測定したウィジェットです。 書き込み要請は、データベースに新しいデータを追加したり、アップデート、削除に関する作業です。 データベースの利用パターンの変化を検出するのに役立ちます。
 
   > 算出方式：`insert$opcounters` + `update$opcounters` + `delete$opcounters`
 
-- ***Read Latency*** (`latency$reads$opLatencies`)
+- **Read Latency** (`latency$reads$opLatencies`)
 
   読み取り作業の遅延時間(microsecond)を測定したウィジェットで、クライアントが読み取り作業を要請し、データベースでその作業を実行する際にかかった時間です。 読み取り作業の遅延が長い場合は、インデックスを最適化するか、クエリを改善しるなど、性能を向上させる方法を検討してください。
 
-- ***Write Latency*** (`latency$writes$opLatencies`)
+- **Write Latency** (`latency$writes$opLatencies`)
 
   書き込み作業の遅延時間(microsecond)を測定したウィジェットで、クライアントが書き込み作業を要請し、データベースでその作業を実行する際にかかった時間です。 書き込み作業の遅延が長い場合は、インデックスを最適化するか、書き込み作業をバッチ処理するなど、性能を向上させる方法を検討してください。
 
-- ***Page Faults*** (`page_faults$extra_info`)
+- **Page Faults** (`page_faults$extra_info`)
 
   ページフォールト(page faults)が発生した回数を測定したウィジェットです。 ページフォールトは、メモリ管理で発生する問題で、プロセスが要請したメモリページが物理的なメモリにないため、ディスクから該当ページを読み込む必要があるときに発生します。 この時、ディスクI/Oが発生して作業が遅延することがあります。 通常、システムのメモリ不足の状態を意味します。
 
@@ -503,43 +503,43 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
   :::
 
-- ***Active Connections*** (`active$connections`)
+- **Active Connections** (`active$connections`)
 
   作業中のクライアントの接続数を測定したウィジェットです。 データベースサーバーで同時に処理できるクライアントの接続数をモニタリングできます。 高い接続数は、サーバー容量を増設する必要があることを意味します。 逆の場合、問題が発生した可能性がありますので、直ちにシステムの状況を把握する必要があります。
 
-- ***Read Clients*** (`readers$activeClients$globalLock`)
+- **Read Clients** (`readers$activeClients$globalLock`)
 
   MongoDBのグローバルロック(global lock)で読み取り作業を行っているクライアントの数を測定したウィジェットです。 データベースサーバーが読み取り作業のために処理しているクライアントの数を把握できます。 データベースの性能をモニタリングし、応答時間を追跡するために役立つ指標です。 過度な読み取り作業が発生すると、性能低下の原因になります。
 
-- ***Write Clients*** (`writers$activeClients$globalLock`)
+- **Write Clients** (`writers$activeClients$globalLock`)
 
   MongoDBのグローバルロック(global lock)で書き込み作業を行っているクライアントの数を測定するウィジェットです。 データベースサーバーが書き込み作業のために処理しているクライアントの数を把握できます。 データベースの性能をモニタリングし、応答時間を追跡するために役立つ指標です。 過度な書き込み操作が発生すると、性能低下の原因になります。
 
-- ***Queued Read Requests*** (`readers$currentQueue$globalLock`)
+- **Queued Read Requests** (`readers$currentQueue$globalLock`)
 
   システムで待機中の読み取り作業を処理するために、グローバルロック(global lock)を待っているクライアントの数を測定するウィジェットです。 データベースの性能と拡張性を評価できる情報を提供します。 待機中の読み取り要請作業が多いほど、クライアントの要請に対する応答時間が長くなる可能性があり、処理量が限界に達する恐れがあります。
 
   待機中の読み込み作業が急に増加する場合、サーバーのリソース増設を検討するか、待機中の読み込み作業の原因を分析し、クエリの最適化およびインデックスのチューニングなどの対策を通じてボトルネックを解決できます。
 
-- ***Queued Write Requests*** (`writers$currentQueue$globalLock`)
+- **Queued Write Requests** (`writers$currentQueue$globalLock`)
 
   システムで待機中の書き込み作業を処理するために、グローバルロック(global lock)を待っているクライアントの数を測定するウィジェットです。 データベースの性能を評価し、最適化するための必須指標です。 待機中の書き込み作業が増えると、システムの性能が低下するか、応答時間が長くなる可能性があります。
 
   リソースの増設を検討するか、どのような作業がボトルネックを引き起こすかを把握してみる必要があります。
 
-- ***Resident Memory*** (`resident$mem`)
+- **Resident Memory** (`resident$mem`)
 
   システムでプロセスが使用しているメモリのサイズ(MB)です。 どれだけのメモリを使用しているかを把握できます。 メモリ使用量の追跡により、メモリ使用量を最適化して性能を向上させ、メモリリソースを効率的に活用するために必要な指標です。 また、より多くのメモリが必要なのか、シャードを追加するべきかを決定するのに役立ちます。
 
-- ***Virtual Memory*** (`virtual$mem`)
+- **Virtual Memory** (`virtual$mem`)
 
   システムでプロセスが使用している仮想メモリのサイズ(MB)です。 実行中の環境でどれだけのメモリリソースを必要としているかを把握できます。 仮想メモリのサイズを把握すると、物理メモリの増設または、仮想メモリの使用量を減らすなどの判断に役立ちます。
 
-- ***Network Out*** (`bytesOut$network`)
+- **Network Out** (`bytesOut$network`)
 
   クライアントまたはその他のインスタンスの接続を介してサーバーが送信した総バイト数です。 データベースサーバーが外部からのリクエストを受けて応答を返すときに送信したデータの総量を意味します。 データベースサーバーから発生するネットワークトラフィックを把握できるため、ネットワークの帯域幅やサーバーリソースの使用に対する最適化を行えます。 さらに、高いネットワークトラフィックは、応答時間の増加などの性能問題に関連しています。
 
-- ***Network In*** (`bytesIn$network`)
+- **Network In** (`bytesIn$network`)
 
   クライアントまたはその他のインスタンスの接続を介してサーバーが受信した合計バイト数です。 データベースサーバーが外部から受信した要請とデータの総量を意味し、クライアントがデータベースサーバーに要請を送り、応答を受ける時に発生するデータ転送量を含みます。 特定のアプリケーションまたはタスクとデータベースがどのように通信を使用するかを把握できます。 また、ネットワーク トラフィックの推移を把握して、システムの容量を計画し、拡張性を評価できます。
 
@@ -553,27 +553,27 @@ AWS CloudWatch指標照会のためのエージェント設定方法は、[次�
 
 <InDoc product="db2,sapase">
 
-- ***Index Physical Reads*** (`index_physical_reads`)
+- **Index Physical Reads** (`index_physical_reads`)
 
   データベースからディスクを通じて読み込まれたインデックスページの数です。 ディスクのI/O性能を評価する上で重要な指標であり、高い値はディスク作業が増加したことを意味します。 ディスクI/Oのボトルネックを識別したり、インデックスの効率性を分析するために使用されます。
 
-- ***Logical I/O*** (`data_logical_reads`)
+- **Logical I/O** (`data_logical_reads`)
 
   データベースのバッファープールからデータを読み込んだ総ページ数です。 システムのメモリ内キャッシング動作を示す指標で、高い値はバッファープールが効率的に動作していることを示します。 論理的読み取りと物理的読み取りを比較して、バッファープールの効率を分析します。
 
-- ***Physical I/O*** (`data_physical_reads`)
+- **Physical I/O** (`data_physical_reads`)
 
   データベースからディスクを通じて読み込んだ総ページ数です。 物理的なI/O活動を示す指標で、バッファープールがデータをキャッシングできない場合、増加する場合があります。 ディスクI/Oのボトルネックの問題を把握し、物理的なディスクへのアクセスを減らす方にチューニングできます。
 
-- ***Data Hit Ratio(%)*** (`data_hit_ratio`)
+- **Data Hit Ratio(%)** (`data_hit_ratio`)
 
   論理的読み取りと物理的読み取りの比率で、データがバッファープールにキャッシングされた比率です。 高い値は、ほとんどのデータ読み取りタスクがメモリ内で処理されていることを示します。 データベースの性能を最適化するために、バッファープールのサイズとポリシーを分析する時に使用します。
 
-- ***Index Hit Ratio(%)*** (`index_hit_ratio`)
+- **Index Hit Ratio(%)** (`index_hit_ratio`)
 
   論理的なインデックス読み取りと物理的なインデックス読み取りの比率です。 高い値は、インデックスがメモリで効率的に処理されていることを意味します。
 
-- ***Total Hit Ratio(%)*** (`total_hit_ratio`)
+- **Total Hit Ratio(%)** (`total_hit_ratio`)
 
   すべてのデータとインデックスの読み取りに対する論理的読み取りと物理的読み取りの比率です。 データベース全体のキャッシング効率を評価する重要な指標です。 データベース運営環境の全般的なキャッシング性能を分析し、チューニングの優先順位を決めるのに活用できます。
 
