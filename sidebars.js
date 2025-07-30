@@ -6493,7 +6493,9 @@ const sidebars = {
         id: 'url-pro/url-intro'
       },
       items: [
-        'url-pro/url-install',
+        'url-pro/getting-started',
+        'url-pro/url-management',
+        'url-pro/dashboard',
         {
           type: 'category',
           label: '경고 알림',
