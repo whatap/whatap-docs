@@ -1,5 +1,11 @@
 const svList = [
     {
+        "name": 'Service-2.19.x',
+        "date": '2025-07-23',
+        "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202507/service-2.19.x.pdf',
+        "docs": '/release-notes/service/service-2_19_x'
+    },
+    {
         "name": 'Service-2.18.x',
         "date": '2025-06-26',
         "url": 'https://github.com/whatap/whatap-docs-pdf/releases/download/RN202507/service-2.18.x.pdf',
