@@ -1,0 +1,83 @@
+---
+id: gpu-inventory
+title: GPU Inventory
+description: This page provides an overview of the GPU Inventory menu.
+keywords: 
+    - Server List
+    - GPU Inventory
+    - Analyze
+    - UI
+    - Server
+toc_max_heading_level: 3
+---
+
+Home screen &gt; Select Project &gt; <Cmdname sid="side_serverList" className="uitext" /> &gt; **GPU Inventory**
+
+The **GPU Inventory** feature allows you to systematically manage the specifications and status of GPUs installed in servers.
+
+:::note
+
+**Supported Agent Version**
+
+Only supported on Linux. Requires agent version 2.8.9 or higher.
+
+:::
+
+## Basic Screen Overview
+
+GPU Inventory monitors a complete list of GPU and MIG (Multi-Instance GPU) resources assigned to the system. You can view detailed information for each GPU instance.
+
+* You can search by keyword using the search bar.
+* Click on a column header in the results to toggle between ascending and descending sort order.
+
+### ![Column Icon](/img/ico-column.svg) Column Settings
+
+Click the **Column Settings** button at the top right of the screen to select the columns you want to display.  
+In the Column Settings window, choose the desired columns and optionally add custom columns.  
+Click **Confirm** to save your settings. You can rearrange column order by dragging the items in the list.
+
+- **Column Selection**
+
+    You can choose which columns to display in the table.  
+    Click **Reset** to return to the default column selection.
+
+    :::note
+
+    Your selected columns are stored in browser cookies, so they persist even after refreshing the page.  
+    If cookies are deleted or a settings error occurs, the selection will be reset to the default columns.
+
+    :::
+
+- **Add Column**
+
+    By clicking the **+ Add Column** button, you can add custom columns (`custom`) beyond the default ones.  
+    Use this to track specific information that matters to your workflow and monitor server status and performance in more detail.
+
+### CSV Download & Upload
+
+1. Click the ![Download Icon](/img/ico-download.svg) **Download CSV** button to download the current GPU inventory data.
+
+2. Open the downloaded file and modify the column values as needed.
+
+3. Click the ![Upload Icon](/img/ico-upload.svg) **Upload CSV** button to upload the edited file and update the values in bulk.
+
+    * You can check the number of updated items, errors, and skipped entries.
+
+4. Click the **Apply** button to reflect the changes in the GPU inventory list.
+
+:::note
+
+**Items that are not applied**
+
+Any column not included in the existing inventory will be ignored.  
+* To add new columns, use the **+ Add Column** button in the inventory list. GPU additions or deletions will not be reflected.
+
+:::
+
+### Edit
+
+Click the ![Edit Icon](/img/ic-edit.svg) **Edit** button to update the GPU inventory list.
+
+- You can edit values in the **Server Alias** and **Default Group** columns.
+
+- You can also set values for custom columns (`custom`) added by the user.

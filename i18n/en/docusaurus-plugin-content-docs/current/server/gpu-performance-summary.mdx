@@ -1,0 +1,131 @@
+---
+id: gpu-performance-summary
+title: GPU Performance Summary
+description: This page describes the GPU Performance Summary menu.
+keywords: 
+    - Server List
+    - GPU Performance Summary
+    - Analyze
+    - UI
+    - Server
+toc_max_heading_level: 3
+---
+
+Home screen &gt; Select Project &gt; <Cmdname sid="side_serverList" className="uitext" /> &gt; **GPU Performance Summary**
+
+Monitor and manage the status and performance metrics of GPUs connected to the system in real time. You can view both physical GPUs and MIG instances together, and efficiently sort or filter each item as needed.
+
+:::note
+
+**Supported Agent Version**
+
+Only supported on Linux. Requires agent version 2.8.9 or higher.
+
+:::
+
+## **Basic Screen Overview**
+
+Click ![Pause icon](/img/ic-pause-green.svg) <UI>Live</UI> to view or pause real-time data. You can search for GPU information using the search box.
+
+Click on any column header in the data list to toggle between ascending and descending sort order.
+
+* **Total**: Total number of GPU instances (including Physical + MIG)
+* **Physical**: Number of actual physical GPU devices
+* **MIG**: Number of MIG (Multi-Instance GPU) instances
+
+### GPU Information
+
+| Column | Description |
+| --- | --- |
+| Status | Current status of the GPU instance (e.g., `Inactive`, `N/A`) |
+| HostName | Hostname of the server to which the GPU is connected |
+| GPU Index | Unique index of the physical GPU or MIG instance (MIG is shown in a format like `0/6/0`) |
+| Model Name | GPU model name (e.g., NVIDIA A100-SXM4) |
+| GPU Type | Type of the instance: either `Physical` or `MIG` |
+
+### GPU Performance Metrics
+
+| Column | Description |
+| --------------- |------|
+| GPU_Util (%) | GPU utilization rate (%)<br />- Displayed only for physical GPUs; MIG instances are excluded |
+| Encoder_Util (%) | Hardware encoder utilization rate (%)<br />- Displayed only for physical GPUs |
+| Decoder_Util (%) | Hardware decoder utilization rate (%)<br />- Displayed only for physical GPUs |
+| GR_Engine_Active_Util (%) | Ratio of time the graphic or compute engine on the GPU was active<br />- Used to measure overall GPU utilization. In MIG environments, overhead between instances is reflected in physical GPU usage |
+| SM_Active_Util (%) | Ratio of time at least one warp was executing in the SM<br />- GPU threads run in groups of 32 called warps, not individually |
+| SM_Occupancy (%) | Ratio of active warps to the maximum number of warps that can run on an SM<br />- GPU threads run in groups of 32 called warps |
+| Tensor_Core_Util (%) | Ratio of time the Tensor cores were active |
+| Memory_Copy_Util (%) | Utilization of the GPU memory copy engine (%)<br />- Measures memory transfer activity between the GPU and host or within the GPU<br />- Displayed only for physical GPUs; not shown for MIG |
+| DRAM_Active_Util (%) | DRAM read/write utilization<br />- Displayed only for physical GPUs; not shown for MIG |
+| FP64_Compute_Util (%) | Active time ratio of the FP64 (64-bit floating point) execution pipeline |
+| FP32_Compute_Util (%) | Active time ratio of the FP32 (32-bit floating point) execution pipeline |
+| FP16_Compute_Util (%) | Active time ratio of the FP16 (16-bit floating point) execution pipeline |
+| BAR1_Total_Memory (Bytes) | Total BAR1 memory<br />- BAR1 memory is used for data transfer between GPU and CPU |
+| BAR1_Used_Memory (Bytes) | Amount of BAR1 memory currently in use<br />- BAR1 memory is used for data transfer between GPU and CPU |
+| BAR1_Free_Memory (Bytes) | Remaining BAR1 memory<br />- BAR1 memory is used for data transfer between GPU and CPU |
+| FB_Total_Memory (Bytes) | Total frame buffer memory size |
+| FB_Free_Memory (Bytes) | Available frame buffer memory |
+| FB_Used_Memory (Bytes) | Frame buffer memory currently in use |
+| FB_Reserved_Memory (Bytes) | Reserved frame buffer memory |
+| FB_Memory_Usage (%) | Frame buffer memory usage rate (%) |
+| ECC_SBE_Total | Cumulative total of ECC SBE (Single Bit Errors) |
+| ECC_DBE_Total | Cumulative total of ECC DBE (Double Bit Errors) |
+| GPU_Temperature (°C) | Current GPU temperature |
+| Power_Usage (W) | Current power usage by the GPU |
+| Performance_State (P) | Current Performance State (P-State) of the GPU, represented as a number between 0 and 15<br />- P0 is the highest performance |
+| Fan_Speed (%) | Current fan speed as a percentage |
+| SM_Clock (MHz) | Current clock speed of the Streaming Multiprocessor (SM) |
+| Memory_Clock (MHz) | Current memory clock speed |
+| Video_Clock (MHz) | Clock speed for video processing |
+| PCIE_TX (Bytes/s) | Amount of data transmitted by the GPU via the PCIe interface<br />- Displayed only for physical GPUs; shown as N/A for MIG |
+| PCIE_RX (Bytes/s) | Amount of data received by the GPU via the PCIe interface<br />- Displayed only for physical GPUs; shown as N/A for MIG |
+| NVLink_TX (Bytes/s) | Amount of data transmitted via NVLink |
+| NVLink_RX (Bytes/s) | Amount of data received via NVLink |
+
+### <img src="/img/ico-download.svg" alt="Download icon" /> Download CSV
+
+You can download the data as a CSV file.
+
+### ![Column Icon](/img/ico-column.svg) Column Settings
+
+Click the ![Column Icon](/img/ico-column.svg) **Column Settings** button at the top right of the screen to open the **Column Settings** window.  
+In the **Column Settings** window, you can select which columns to display in the table.
+
+* **![Select Icon](/img/ic-s-check.svg) Select All**: Select all columns
+
+* **![Refresh Icon](/img/ic-refresh2.svg) Reset to Default Order**: Reset the column order to default
+
+* **![Refresh Icon](/img/ic-refresh2.svg) Reset to Default Selection**: Restore to the default column selection
+
+:::note
+
+The selected columns are saved in your browser cookies, so the selection persists even after refreshing the page.  
+If cookies are deleted or an error occurs, the default columns will be restored.
+
+:::
+
+1. In the **Column Settings** window, select the columns to display under **GPU Information** and **GPU Performance Metrics**.
+
+    * You can select columns by group or adjust their order.
+
+    :::caution
+
+    The Status and HostName fields under GPU Information cannot be removed.
+
+    :::
+
+1. Click the **Apply** button to save your settings.
+
+## Add Filter
+
+You can add filter conditions to quickly find the GPUs you need.
+
+1. Click the ![Filter Icon](/img/ico-filter.svg) **Filter** search bar to open the **Add Filter** window.
+
+2. In the **Add Filter** window, select the desired GPU condition (filter key and condition), then click the **Apply** button.
+
+## Compare GPUs
+
+When you select multiple GPUs to compare, the **Compare** panel appears below the GPU list, allowing you to visually compare metrics using charts.  
+You can track trends for the last 10 minutes and identify performance anomalies or bottlenecks.
+
+* You can compare up to 20 items at a time.
