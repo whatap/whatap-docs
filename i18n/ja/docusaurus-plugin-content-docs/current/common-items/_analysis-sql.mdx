@@ -2,9 +2,9 @@
 
 データベースで実行されるSQL文を分析し、性能問題を診断するのに有用な資料を提供します。 <Cmdname sid="side_dbSqlAnalysis" className="uitext" />メニューは、2つの主要なタブで構成されています。 
 
-- ***Access Statistics***: 性能低下の原因となり得るFull Scanが発生したSQLを確認できます。
+- **Access Statistics**: 性能低下の原因となり得るFull Scanが発生したSQLを確認できます。
 
-- ***Plan Change History***: 同一のSQL IDを持つSQL文がオプティマイザによって他の実行プランに変更された場合を感知します。 これは性能に影響を与える可能性があるため、モニタリングが必要です。
+- **Plan Change History**: 同一のSQL IDを持つSQL文がオプティマイザによって他の実行プランに変更された場合を感知します。 これは性能に影響を与える可能性があるため、モニタリングが必要です。
 
 ## Access Statistics {#access_statistics}
 
@@ -14,9 +14,9 @@
 
 画面上で照会時間と対象を選択します。 <Cmdname sid="time" className="uitext" />と<Cmdname sid="instance" className="uitext" />オプションを設定した後![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。 必要な場合、<Cmdname sid="filter" className="uitext" />オプションを設定して、目的の照会結果をフィルタリングできます。
 
-- ***Access Count***: 時間帯別のFull Scanの発生回数を確認できる棒グラフチャートです。 特定の時間帯を選択すると、選択した時間に実行されたSQLリストが画面の下のリストと右の***Operation Count*** チャートに表示されます。
+- **Access Count**: 時間帯別のFull Scanの発生回数を確認できる棒グラフチャートです。 特定の時間帯を選択すると、選択した時間に実行されたSQLリストが画面の下のリストと右の**Operation Count** チャートに表示されます。
 
-- ***Operation Count***: Full Scanが発生したタイプとその数を確認できます。 各バーにマウスオーバーすると、オブジェクト名を確認できます。
+- **Operation Count**: Full Scanが発生したタイプとその数を確認できます。 各バーにマウスオーバーすると、オブジェクト名を確認できます。
 
   ![Operation Count](/img/db-analysis-sql-access-statistics-op-count.png)
 
@@ -32,7 +32,7 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
 :::note
 
-- テーブル一覧で***query_text***項目を選択すると<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。
+- テーブル一覧で**query_text**項目を選択すると<Cmdname sid="TTL06224" className="uitext" />画面が表示されます。
 
 :::
 
@@ -44,9 +44,9 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
 :::info
 
-- ***Access Type***: **Full Scan**または**Index Scan**に基づいて結果をフィルタリングできます。
+- **Access Type**: **Full Scan**または**Index Scan**に基づいて結果をフィルタリングできます。
 
-- ***Object Name***: オブジェクト名に基づいてフィルタリングできます。
+- **Object Name**: オブジェクト名に基づいてフィルタリングできます。
 
 :::
 
@@ -56,7 +56,7 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
    <ImgLang img="db-analysis-sql-access-statistics-filter.png" desc="フィルター" />
 
-2. <Cmdname sid="TTL06737" className="uitext" />で***FULL***または***INDEX***項目を選択します。
+2. <Cmdname sid="TTL06737" className="uitext" />で**FULL**または**INDEX**項目を選択します。
 
 3. <Cmdname sid="apply" className="uitext" />ボタンを選択します。
 
@@ -64,7 +64,7 @@ import QueryDetails from "../common-items/_db-query-details.mdx";
 
 :::note
 
-Full Scan、Index Scanをすべて検索するには、<Cmdname sid="TTL06737" className="uitext" />で***FULL***、***INDEX***オプションをすべて選択します。 または![プラスアイコン](/img/ic-s-plus.svg)ボタンを選択してフィルターオプションを追加できます。
+Full Scan、Index Scanをすべて検索するには、<Cmdname sid="TTL06737" className="uitext" />で**FULL**、**INDEX**オプションをすべて選択します。 または![プラスアイコン](/img/ic-s-plus.svg)ボタンを選択してフィルターオプションを追加できます。
 
 :::
 
@@ -74,7 +74,7 @@ Full Scan、Index Scanをすべて検索するには、<Cmdname sid="TTL06737" c
 
 1. <Cmdname sid="filter" className="uitext" />オプションで<LinkImage img="ico-add.svg" className="ico" />ボタンを選択します。
 
-2. <Cmdname sid="TTL06617" className="uitext" />ポップアップで***Object Name***項目と<Cmdname sid="equal" className="uitext" />条件を選択します。
+2. <Cmdname sid="TTL06617" className="uitext" />ポップアップで**Object Name**項目と<Cmdname sid="equal" className="uitext" />条件を選択します。
 
 3. 空の入力欄を選択し、表示されるオブジェクトの一覧から目的のオブジェクト名を選択します。
 
@@ -106,14 +106,14 @@ Full Scan、Index Scanをすべて検索するには、<Cmdname sid="TTL06737" c
 
 画面上で照会時間と対象を選択します。 <Cmdname sid="time" className="uitext" />と<Cmdname sid="instance" className="uitext" />オプションを設定した後![検索アイコン](/img/ico-btn-search.png)ボタンを選択します。
 
-***Plan Change Count***セクションは、時間帯別のプラン変更が起きた回数を確認できる棒グラフチャートです。 特定の時間帯を選択すると、選択した時間のプラン変更の一覧を表示します。
+**Plan Change Count**セクションは、時間帯別のプラン変更が起きた回数を確認できる棒グラフチャートです。 特定の時間帯を選択すると、選択した時間のプラン変更の一覧を表示します。
 
 ### Plan変更事項を確認する
 
-画面下部の一覧で特定の変更項目を選択すると、画面下にプラン変更前後の詳細が確認できる***Query***セクションが表示されます。 プラン変更前後の相違点を詳細に比較することにより、どの変更が性能に影響したかを把握できます。
+画面下部の一覧で特定の変更項目を選択すると、画面下にプラン変更前後の詳細が確認できる**Query**セクションが表示されます。 プラン変更前後の相違点を詳細に比較することにより、どの変更が性能に影響したかを把握できます。
 
 <ImgLang img="db-analysis-sql-plan-change-history-diff.png" desc="Plan Change History" />
 
-- ***Query***セクションで右上の![新しいウィンドウのアイコン](/img/ic-popup.svg)ボタンを選択すると、そのセクションを新しいウィンドウに開いて確認できます。
+- **Query**セクションで右上の![新しいウィンドウのアイコン](/img/ic-popup.svg)ボタンを選択すると、そのセクションを新しいウィンドウに開いて確認できます。
 
-- ***Query***セクションを閉じるには、右上の![閉じるアイコン](/img/ico-close.svg)ボタンを選択します。
+- **Query**セクションを閉じるには、右上の![閉じるアイコン](/img/ico-close.svg)ボタンを選択します。
