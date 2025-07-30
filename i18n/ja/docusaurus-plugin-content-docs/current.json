@@ -1627,6 +1627,10 @@
     "message": "アラート通知",
     "description": "The label for category 경고 알림 in sidebar dboracleV2Sidebar"
   },
+  "sidebar.dboracleV2Sidebar.category.관리": {
+    "message": "管理",
+    "description": "The label for category 관리 in sidebar dboracleV2Sidebar"
+  },
   "sidebar.dboracleV2Sidebar.doc.지원 환경": {
     "message": "サポート環境",
     "description": "The label for the doc item 지원 환경 in sidebar dboracleV2Sidebar, linking to the doc oracle/monitoring-support"
