@@ -1,0 +1,44 @@
+---
+id: top-wait-sql
+title: Top SQL by Wait
+description: Provides statistics on Top SQL by Wait.
+keywords: 
+    - Oracle Pro
+    - Database
+    - Statistics
+    - Top SQL by Wait
+---
+
+Home &gt; Select Project &gt; <Cmdname sid="side_statistics" className="uitext" /> &gt; **Top SQL by Wait**
+
+**Top SQL by Wait** focuses on quickly identifying SQL tuning priorities. You can visually confirm the Wait Class and Wait Event with the most wait time during a specific time period through charts and tables, and compare execution count and average time in the Top SQL table.
+
+## Basic Screen Guide
+
+<ImgLang img="db-top-wait-sql.png" desc="top wait sql" />
+
+## Wait Class Chart
+
+Clicking a class in the chart or legend will apply it as a filter. Clicking again will remove the filter.
+
+- The Wait Class bar chart at the top visually displays the proportion of total wait time during the selected analysis period.
+
+- The selected filters are shown as tags.
+
+### Wait Event List
+
+If no class is selected, the most frequent events within the selected time range are displayed. When a Wait Class filter is applied, the event list for that class is shown.
+
+When a **Wait Event** is selected from the list, it is added as a filter to the **SQL List**.
+
+### Wait / System Stat Trends
+
+Visually displays the distribution of Wait Classes and session counts over time. You can identify spikes in wait events by time range. Analysis categories include: Wait(time), Wait(count), Latch, Enqueue, Stat, Cpu, Memory, Session Count.
+
+### SQL List
+
+Key execution performance metrics are displayed for each SQL item, including Elapsed Time, CPU Time, Wait Time, Execute Count, and Logical Reads, enabling quick comparison and analysis.
+
+- **Default (no filters selected)**: Displays the top 50 queries by Elapsed Time.
+
+- **When a class is selected**: Displays the top 50 queries by Wait Time for the selected class.
