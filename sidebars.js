@@ -2616,6 +2616,7 @@ const sidebars = {
             'oracle-pro/sga-size',
             'oracle-pro/report-intro',
             'oracle-pro/top-sql',
+            'oracle-pro/top-wait-sql'
           ],
         },
         'oracle-pro/integrated-report',
