@@ -6494,22 +6494,30 @@ const sidebars = {
       },
       items: [
         'url-pro/getting-started',
-        'url-pro/url-management',
-        'url-pro/dashboard',
         {
           type: 'category',
-          label: '경고 알림',
+          label: '관리',
           collapsible: true,
           collapsed: false,
           items: [
-            'url-pro/url-event',
-            'url-pro/set-receive-event',
-            'url-pro/url-event-history',
-            'url-pro/real-time-notification'
+            'url-pro/url-list',
+            'url-pro/category',
+            'url-pro/issue',
+            'url-pro/custom-field'
           ],
         },
-        'url-pro/url-http-status',
-        'url-pro/url-error-type',
+        'url-pro/dashboard',
+        {
+          type: 'category',
+          label: '이벤트 설정',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            'url-pro/event',
+            'url-pro/set-receive-event',
+            'url-pro/url-event-history',
+          ],
+        },
       ]
     }
   ],
