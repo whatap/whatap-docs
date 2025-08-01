@@ -991,6 +991,10 @@
     "message": "Installation",
     "description": "The label for category 설치하기 in sidebar kubeSidebar"
   },
+  "sidebar.kubeSidebar.category.와탭 오퍼레이터": {
+    "message": "WhaTap Operator",
+    "description": "The label for category 와탭 오퍼레이터 in sidebar kubeSidebar"
+  },
   "sidebar.kubeSidebar.category.애플리케이션 에이전트 설치": {
     "message": "Application Agent Installation",
     "description": "The label for category 애플리케이션 에이전트 설치 in sidebar kubeSidebar"

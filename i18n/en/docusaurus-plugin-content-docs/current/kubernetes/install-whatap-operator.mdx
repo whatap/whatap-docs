@@ -1,0 +1,360 @@
+---
+id: install-whatap-operator
+title: Install WhaTap Operator
+description: Guide for installing WhaTap Operator.
+keywords: [ Kubernetes, Kubernetes Monitoring, WhaTap Operator, Application Installation ]
+toc_max_heading_level: 3
+---
+
+This guide explains how to install the WhaTap Operator in a Kubernetes environment and configure the `WhatapAgent` CR to start monitoring with WhaTap.
+
+## Prerequisites
+
+* Kubernetes cluster (v1.19+)
+* Helm 3.2 or later
+* WhaTap account and license key
+
+## Installation
+
+Follow the steps below to install the WhaTap Operator and create the `WhatapAgent` CR.
+
+1. **Install the WhaTap Operator**
+
+    * If you are installing the agent for the first time, run the following commands:
+
+    ```bash
+    helm repo add whatap https://whatap.github.io/helm/
+    helm repo update
+    ```
+    
+    ```bash
+    kubectl create ns whatap-monitoring
+    export WHATAP_HOST=<collector IP>
+    export WHATAP_LICENSE=<license key>
+    export WHATAP_PORT=<collector port>
+    kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal WHATAP_LICENSE=$WHATAP_LICENSE --from-literal WHATAP_HOST=$WHATAP_HOST --from-literal WHATAP_PORT=$WHATAP_PORT
+    helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
+    ```
+    
+    * If you were previously using the WhaTap Kubernetes agent, run the following commands to install the agent:
+
+    ```yaml
+    kubectl delete ns whatap-monitoring
+    kubectl delete clusterrole whatap
+    kubectl delete clusterrolebinding whatap
+    kubectl create ns whatap-monitoring
+    kubectl create secret generic whatap-credentials --namespace whatap-monitoring --from-literal license=$WHATAP_LICENSE --from-literal host=$WHATAP_HOST --from-literal port=$WHATAP_PORT
+    helm install whatap-operator whatap/whatap-operator --namespace whatap-monitoring
+    ```
+
+    :::note
+
+    If the previous WhaTap Kubernetes agent was installed via *yaml* files or Helm, a clean install is required. It is recommended to uninstall the existing Kubernetes agent before using the Operator.
+
+    :::
+
+    * The operator is deployed as a deployment. Run the following command to check if the operator is running:
+
+    ```bash
+    kubectl get pods -n whatap-monitoring | grep -i operator
+    ```
+
+    * The result should show the `whatap-operator` pod in **Running** status.
+        <ImgLang img='whatap-operator-running-pod.png' desc='whatap-operator-pod' />
+
+2. **Create the WhatapAgent CR**
+
+    * Run the following command to create the WhatapAgent custom resource:
+
+    ```yaml
+    kubectl apply -f values.yaml
+    ```
+
+    * The `WhatapAgent` CR defines deployment and configuration for WhaTap agents. It supports setting up the Kubernetes agent, auto-installing APM, and collecting OpenMetrics via the Open Agent.
+
+### Minimal Configuration
+
+This is a minimal configuration that enables the WhaTap master and node agents for basic Kubernetes monitoring.
+
+```yaml title='values-min.yaml'
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+      gpuMonitoring:
+        enabled: false
+```
+
+When installed with the minimal configuration, `whatap-master-agent` and `whatap-node-agent` are additionally deployed as shown below.
+
+<ImgLang img='whatap-operator-whatapagent-cr.png' desc='whatap-master-agent, whatap-node-agent' />
+
+### Default Configuration
+
+```yaml
+
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    ### Uncomment to enable APM auto-installation - 
+    ### Automatically injects the APM agent into application Pods to enable performance monitoring.
+    # apm:
+    #   instrumentation:
+    #     targets:
+    #       - name: hello-world
+    #         enabled: true
+    #         language: "java"          # Supported languages: java, python, nodejs
+    #         whatapApmVersions:
+    #           java: "2.2.58"          # APM agent version to use
+    #         namespaceSelector:
+    #           matchNames:
+    #             - default             # Namespace containing the application to monitor
+    #         podSelector:
+    #           matchLabels:
+    #             app: "hello-world"    # Label of the application Pod to monitor
+    #         config:
+    #           mode: default           # APM agent mode setting
+
+    ### Uncomment to enable Kubernetes monitoring - 
+    ### Enables monitoring of Kubernetes cluster, nodes, and containers.
+    # k8sAgent:
+    #   masterAgent:
+    #     enabled: true                 # Enable master agent (cluster-level metric collection)
+    #   nodeAgent:
+    #     enabled: true                 # Enable node agent (node and container-level metrics)
+
+    ### Uncomment to enable GPU monitoring - 
+    ### Enables NVIDIA GPU metrics collection.
+    #   gpuMonitoring:
+    #     enabled: true                 # Enable GPU monitoring (NVIDIA DCGM-EXPORTER is installed as a sidecar in the whatap-node-agent)
+
+    ### Uncomment to enable OpenMetrics collection (Prometheus-compatible format) - 
+    ### Collects metrics in Prometheus format.
+    # openAgent:
+    #     enabled: true                 # Enable OpenAgent
+    #     targets:
+    #       - targetName: kube-apiserver
+    #         type: ServiceMonitor      # Target type: ServiceMonitor, PodMonitor, StaticEndpoints
+    #         namespaceSelector:
+    #           matchNames:
+    #             - "default"           # Namespace from which to collect metrics
+    #         selector:
+    #           matchLabels:
+    #             component: apiserver  # Labels of the service/Pod to monitor
+    #             provider: kubernetes
+    #         endpoints:
+    #           - port: "https"         # Metric endpoint port
+    #             path: "/metrics"      # Metric path
+    #             interval: "30s"       # Scraping interval for this endpoint
+    #             scheme: "https"       # HTTP scheme (http or https)
+    #             tlsConfig:
+    #               insecureSkipVerify: true  # Skip TLS certificate verification
+        #         metricRelabelConfigs:
+        #           - source_labels: ["__name__"]
+        #             regex: "apiserver_request_total"  # Filter to collect specific metrics
+        #             action: "keep"                    # Keep only matching metrics
+```
+
+## Example Configurations
+
+In addition to supporting Kubernetes agents, the WhaTap Operator also provides APM auto-installation and custom metric agent setup. Use the following examples to deploy various configurations.
+
+### GPU Monitoring
+
+Instead of installing the Kubernetes monitoring agent, you can deploy the DCGM-EXPORTER container as a sidecar to the WhaTap node agent Pod.  
+Without additional configuration, simply apply the yaml below to collect metrics that are displayed in the **GPU dashboard**.
+
+:::note
+
+If you configured DCGM-EXPORTER manually instead of using the built-in sidecar in the node agent, refer to the [OpenAgent Configuration](openagent) to collect dcgm metrics.
+
+:::
+
+#### GPU Monitoring Auto Setup
+
+```yaml title='GPU Monitoring Auto Setup'
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    openAgent:
+      enabled: true  # Enable OpenAgent
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+      gpuMonitoring:
+        enabled: true  # Enable GPU monitoring
+```
+
+Note: During auto-installation, the Open Agent automatically detects and scrapes the DCGM Exporter.
+
+#### GPU Node Toleration
+
+If your GPU node has taints, you must add toleration settings.
+
+```yaml title='GPU Node Toleration'
+    apiVersion: monitoring.whatap.com/v2alpha1
+    kind: WhatapAgent
+    metadata:
+      name: whatap
+    spec:
+      features:
+        k8sAgent:
+          nodeAgent:
+            enabled: true
+            tolerations:
+              - key: "nvidia.com/gpu"
+                operator: "Exists"
+                effect: "NoSchedule"
+              - key: "gpu"
+                operator: "Exists"
+                effect: "NoSchedule"
+          gpuMonitoring:
+            enabled: true
+```
+
+### APM Auto Installation
+
+Automatically install APM in the Kubernetes cluster without enabling Kubernetes monitoring agents.
+
+:::note
+
+For more details, refer to the [APM Auto-Installation Guide](install-auto-application-agent).
+
+:::
+
+```yaml title='APM Auto Installation'
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: hello-world
+            enabled: true
+            language: "java"
+            whatapApmVersions:
+              java: "2.2.58"
+            namespaceSelector:
+              matchNames:
+                - default
+            podSelector:
+              matchLabels:
+                app: "hello-world"
+            config:
+              mode: default
+```
+
+### OpenAgent
+
+Configure only the OpenAgent component to collect Prometheus-style metrics, without enabling Kubernetes monitoring agents or APM instrumentation.
+
+:::note
+
+For more details, refer to the [OpenAgent Configuration](openagent).
+
+:::
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    openAgent:
+        enabled: true
+        targets:
+          - targetName: kube-apiserver
+            type: ServiceMonitor
+            namespaceSelector:
+              matchNames:
+                - "default"
+            selector:
+              matchLabels:
+                component: apiserver
+                provider: kubernetes
+            endpoints:
+            - port: "https"
+              path: "/metrics"
+              interval: "30s"
+              scheme: "https"
+              tlsConfig:
+                insecureSkipVerify: true
+              metricRelabelConfigs:
+                - source_labels: ["__name__"]
+                  regex: "apiserver_request_total"
+                  action: "keep"
+```
+
+### Using Kubernetes Monitoring and APM Together
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: hello-world
+            enabled: true
+            language: "java"
+            whatapApmVersions:
+              java: "2.2.58"
+            namespaceSelector:
+              matchNames:
+                - default
+            podSelector:
+              matchLabels:
+                app: "hello-world"
+            config:
+              mode: default
+    k8sAgent:
+      masterAgent:
+        enabled: true
+      nodeAgent:
+        enabled: true
+    openAgent:
+        enabled: true
+        targets:
+          - targetName: kube-apiserver
+            type: ServiceMonitor
+            namespaceSelector:
+              matchNames:
+                - "default"
+            selector:
+              matchLabels:
+                component: apiserver
+                provider: kubernetes
+            endpoints:
+            - port: "https"
+              path: "/metrics"
+              interval: "30s"
+              scheme: "https"
+              tlsConfig:
+                insecureSkipVerify: true
+              metricRelabelConfigs:
+              - source_labels: ["__name__"]
+                regex: "apiserver_request_total"
+                action: "keep"
+```

@@ -1,0 +1,353 @@
+---
+id: install-auto-application-agent
+title: APM Auto-Installation Configuration
+description: Guide for configuring APM auto-installation.
+keywords: [ Kubernetes, Kubernetes Monitoring, WhaTap Operator, Auto Application Installation ]
+toc_max_heading_level: 3
+---
+
+After installing the WhatapOperator, you can define the `WhatapAgent` CR (Custom Resource) to automatically inject the APM agent into specific Kubernetes Pods or Namespaces.
+
+## Prerequisites
+
+* A running Kubernetes environment
+* Helm version 3.2 or higher
+* WhaTap license key (required)
+* WhaTap collector information (IP address and port)
+* whatap-operator (see the [Operator Installation](install-whatap-operator) guide)
+
+## Basic CR Configuration
+
+Below is a basic sample configuration for the CR.  
+For more advanced settings, refer to [Example: APM Configuration](install-auto-application-agent#example_set_up_apm).
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: default                                # Resource name
+  namespace: whatap-monitoring                 # Target namespace for installation
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: "java-sample"                # APM target name (for identification)
+            enabled: "true"                    # Whether auto-injection is enabled
+            language: "java"                   # Language: java, python, nodejs, etc.
+            whatapApmVersions:
+              java: "2.2.58"                   # APM agent version for the specified language
+            namespaceSelector:
+              matchNames:
+                - default                      # Target namespace for APM injection
+            podSelector:
+              matchLabels:
+                app: hello-world               # Pod label to match for injection
+            config:
+              mode: default                    # Use 'default' config or reference a configMap
+```
+
+### Example: APM Configuration {#example_set_up_apm}
+
+#### Example 1: Auto-inject APM into Pods in a Specific Namespace
+
+* Automatically inject the Java APM agent into Pods that exist in the `backend` namespace and have the label `app=shop`.
+
+* Currently, WhaTap APM supports only the `latest` version of the Java agent. (Support for other languages will be added in the future.)
+
+* Configuration values are provided via a `ConfigMapRef`.
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+  namespace: whatap-monitoring
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: shop-api
+            enabled: "true"
+            language: "java"
+            whatapApmVersions:
+              java: "latest"
+            namespaceSelector:
+              matchNames:
+                - backend
+            podSelector:
+              matchLabels:
+                app: shop
+            config:
+              mode: configMapRef
+              configMapRef:
+                name: shop-api-config
+                namespace: backend
+
+```
+
+```yaml title='shop-api-config.yaml'
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shop-api-config
+  namespace: backend
+data:
+  whatap.conf: |
+    mtrace_enabled=true
+    mtrace_basetime=0
+    trace_normalize_enabled=true
+```
+
+#### Example 2: Monitor Different Workloads Using Separate ConfigMaps
+
+Inject different `ConfigMapRef` settings (`request-router-config`, `shop-api-config`) into the `app=router` Pod in the `system` namespace and the `app=shop` Pod in the `backend` namespace, respectively.
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+  namespace: whatap-monitoring
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: request-router
+            enabled: "true"
+            language: "java"
+            whatapApmVersions:
+              java: "latest"
+            namespaceSelector:
+              matchNames:
+                - system
+            podSelector:
+              matchLabels:
+                app: router
+            config:
+              mode: configMap
+              configMapRef:
+                name: request-router-config
+                namespace: system
+          - name: shop-api
+            enabled: "true"
+            language: "java"
+            whatapApmVersions:
+              java: "latest"
+            namespaceSelector:
+              matchNames:
+                - backend
+            podSelector:
+              matchLabels:
+                app: shop
+            config:
+              mode: configMapRef
+              configMapRef:
+                name: shop-api-config
+                namespace: backend
+
+```
+
+```yaml title='shop-api-config.yaml'
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shop-api-config
+  namespace: backend
+data:
+  whatap.conf: |
+    mtrace_enabled=true
+    mtrace_basetime=0
+    trace_normalize_enabled=true
+```
+
+```yaml title='request-router-config.yaml'
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: request-router-config
+  namespace: backend
+data:
+  whatap.conf: |
+    mtrace_enabled=false
+    mtrace_basetime=100
+    trace_normalize_enabled=true
+```
+### Fields
+
+```yaml
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: whatap
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: <name>
+            enabled: <true | false>
+            language: <java | python | nodejs>
+            whatapApmVersions:
+              <language> : <version>
+            namespaceSelector:
+              matchNames:
+                - <namespace>
+            podSelector:
+              matchLabels:
+                <key>: <values>
+            config:
+              mode: default
+```
+
+| Field | Description |
+| --- | --- |
+| `name` | Target name. Used only for identification; it does not affect monitoring. |
+| `enabled` | If set to `"true"`, the APM agent will be automatically injected into the target. |
+| `language` | Programming language of the target application. Examples: `java`, `python`, `nodejs`. |
+| `whatapApmVersions` | Specify the WhaTap APM agent version for each language. |
+| `namespaceSelector` | List of namespaces to target for APM injection. |
+| `podSelector` | Select Pods to inject APM using label-based matching. |
+| `config.mode` | Can be `"default"` or `"configMapRef"` to reference a custom ConfigMap. |
+
+### Selectors
+
+`WhatapAgent` supports Kubernetes standard label selectors.
+
+#### namespaceSelector
+
+| Field | Description |
+| --- | --- |
+| `matchNames` | List of namespace names to target. |
+| `matchLabels` | Select namespaces using key-value label pairs (AND condition). |
+| `matchExpressions` | Advanced label selector expressions (AND condition). |
+
+#### podSelector
+
+| Field | Description |
+| --- | --- |
+| `matchLabels` | Select Pods using key-value label pairs (AND condition). |
+| `matchExpressions` | Advanced label selector expressions (AND condition). |
+
+#### matchExpressions Operators
+
+| Operator | Description |
+| --- | --- |
+| `In` | The label value must be in the specified list. |
+| `NotIn` | The label value must not be in the specified list. |
+| `Exists` | The specified label key must exist (leave `values` field empty). |
+| `DoesNotExist` | The specified label key must not exist (leave `values` field empty). |
+
+#### K8sAgent Configuration
+
+| Field | Description |
+| --- | --- |
+| `agentImageVersion` | Agent image version (default: `"latest"`). |
+| `masterAgent.enabled` | Whether to enable the master agent. |
+| `masterAgent.resources` | Resource requests and limits for the master agent. |
+| `masterAgent.envs` | List of environment variables to add to the master agent. |
+| `nodeAgent.enabled` | Whether to enable the node agent. |
+| `nodeAgent.resources` | Resource requests and limits for the node agent. |
+| `nodeAgent.envs` | List of environment variables to add to the node agent. |
+| `gpuMonitoring.enabled` | Whether to enable GPU monitoring. |
+| `apiserverMonitoring.enabled` | Whether to enable API server monitoring. |
+| `etcdMonitoring.enabled` | Whether to enable etcd monitoring. |
+| `schedulerMonitoring.enabled` | Whether to enable scheduler monitoring. |
+
+```yaml
+# Example of a selector combining multiple conditions
+namespaceSelector:
+  matchNames:
+    - production
+    - staging
+  matchLabels:
+    environment: production
+  matchExpressions:
+    - {key: tier, operator: In, values: [frontend, backend]}
+    - {key: restricted, operator: DoesNotExist}
+
+podSelector:
+  matchLabels:
+    app: web-service
+    version: v2
+  matchExpressions:
+    - {key: tier, operator: In, values: [backend, backend2, backend3]}
+    - {key: environment, operator: NotIn, values: [dev, test]}
+    - {key: ready, operator: Exists}
+```
+
+* **Detailed Explanation: namespaceSelector**
+
+  The namespace selector filters target namespaces using three methods:
+
+  1. **matchNames**: Select namespaces by name directly
+
+     * Only selects namespaces named `production` or `staging`.
+
+     * This is the most basic form of filtering.
+
+  2. **matchLabels**: Match labels using key-value pairs (AND condition)
+
+     * Only selects namespaces that have the label `environment=production`.
+
+     * All key-value pairs must match (i.e., multiple labels must all be satisfied).
+
+  3. **matchExpressions**: Define complex conditions using advanced expressions (AND condition)
+
+     * The `tier` label must have a value of either `frontend` or `backend` (`In` operator).
+
+     * The `restricted` label must not exist (`DoesNotExist` operator).
+
+     * All expressions must evaluate to true (AND condition).
+
+* **Detailed Explanation: podSelector**
+
+  The pod selector filters target Pods using two methods:
+
+  1. **matchLabels**: Match labels using key-value pairs (AND condition)
+
+     * Only selects Pods that have both `app=web-service` and `version=v2` labels.
+
+     * All specified labels must match exactly.
+
+  2. **matchExpressions**: Define complex conditions using advanced expressions (AND condition)
+
+     * The `tier` label must be one of `backend`, `backend2`, or `backend3` (`In` operator).
+
+     * The `environment` label must not be `dev` or `test` (`NotIn` operator).
+
+     * The `ready` label must exist (`Exists` operator).
+
+     * All expressions must evaluate to true (AND condition).
+
+### Test
+
+If you want to test APM auto-injection, apply the following yaml:
+
+```yaml title='test-values.yaml'
+apiVersion: monitoring.whatap.com/v2alpha1
+kind: WhatapAgent
+metadata:
+  name: default                                # Resource name
+  namespace: whatap-monitoring                 # Target namespace for installation
+spec:
+  features:
+    apm:
+      instrumentation:
+        targets:
+          - name: "java-sample"                # APM target name (for identification)
+            enabled: "true"                    # Whether auto-injection is enabled
+            language: "java"                   # Language: java, python, nodejs, etc.
+            whatapApmVersions:
+              java: "latest"                   # APM agent version for the specified language
+            namespaceSelector:
+              matchNames:
+                - default                      # Target namespace for APM injection
+            podSelector:
+              matchLabels:
+                app: hello-world               # Label of Pod to inject APM
+            config:
+              mode: default                    # Can be 'default' or reference a ConfigMap
+```

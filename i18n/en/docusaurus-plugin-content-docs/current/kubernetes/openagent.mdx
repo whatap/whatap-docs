@@ -1,0 +1,507 @@
+---
+id: openagent
+title: OpenAgent Configuration
+description: Guide to configuring OpenAgent.
+keywords: [ Kubernetes, Kubernetes Monitoring, WhaTap Operator, OpenAgent ]
+toc_max_heading_level: 3
+---
+
+OpenAgent scrapes metrics from Prometheus endpoints and forwards them to the WhaTap server.  
+It is a Go-based agent that collects Prometheus-style metrics and sends them to WhaTap.
+
+## Configuration
+
+After installing the WhatapOperator, you can configure open metrics targets using the `WhatapAgent` CR (Custom Resource).
+
+1. **PodMonitor**: Dynamic discovery using Pod label selectors (similar to Prometheus Operator's PodMonitor)
+
+2. **ServiceMonitor**: Dynamic discovery using Service label selectors (similar to Prometheus Operator's ServiceMonitor)
+
+3. **StaticEndpoints**: Directly specifying fixed IP addresses and ports (similar to Prometheus `static_configs`)
+
+```yaml
+features:
+  openAgent:
+    enabled: true
+    targets:
+      # 1. PodMonitor: Dynamic discovery using Pod label selectors
+      - targetName: my-app-pod-metrics
+        type: PodMonitor
+        namespaceSelector:
+          matchNames:
+            - "production"
+        selector:
+          matchLabels:
+            app: my-app
+        endpoints:
+        - port: "web-metrics"  # Port name defined in the Pod spec or the actual port number
+          path: "/metrics"     # Default is /metrics; override if needed
+          interval: "15s"      # Default comes from global settings; override if needed
+          scheme: "http"
+          timeout: "10s"
+          metricRelabelConfigs:  # Metric relabeling after scraping
+            - source_labels: [__name__]
+              regex: "http_requests_total"
+              action: keep
+            - source_labels: [method]
+              target_label: http_method
+              replacement: "${1}"
+              action: replace
+
+      # 2. ServiceMonitor: Dynamic discovery using Service label selectors
+      - targetName: my-service-metrics
+        type: ServiceMonitor
+        namespaceSelector:
+          matchNames:
+            - "default"
+        selector:
+          matchLabels:
+            service: my-backend-service
+        endpoints:
+        - port: "http-metrics"  # Port name defined in the Service spec or the actual target port number
+          path: "/actuator/prometheus"
+          interval: "30s"
+          metricRelabelConfigs:
+            - source_labels: [__name__]
+              regex: "jvm_.*"
+              action: keep
+            - source_labels: [area]
+              target_label: memory_area
+              replacement: "${1}"
+              action: replace
+
+      # 3. StaticEndpoints: Specify fixed IP addresses and ports directly
+      - targetName: my-external-db-metrics
+        type: StaticEndpoints
+        # enabled: true  # Whether the target is active (default: true, optional)
+        endpoints:
+          - address: "192.168.1.100:9100"
+            scheme: "http"
+            path: "/metrics"
+            interval: "60s"
+            metricRelabelConfigs:
+              - source_labels: [__name__]
+                regex: "node_(cpu|memory).*"
+                action: keep
+              - source_labels: [instance]
+                target_label: server
+                replacement: "${1}"
+                action: replace
+```
+
+### PodMetrics and ServiceMetrics Configuration Fields
+
+* **targetName**: Name of the target (used for logging and identification)
+
+* **type**: Type of target (`PodMonitor` or `ServiceMonitor`)
+
+* **namespaceSelector**: Specifies which namespaces to scrape
+  * `matchNames`: Select namespaces by name
+  * `matchLabels`: Select namespaces by label
+  * `matchExpressions`: Use expressions to select namespaces
+
+* **selector**: Selects which Pods or Services to scrape
+  * `matchLabels`: Select by label
+  * `matchExpressions`: Select using expressions
+
+* **endpoints**: Defines endpoints to scrape
+  * `port`: Port name or number to scrape
+  * `path`: Metrics path (default: `globalPath`, override if needed)
+  * `interval`: Scrape interval (default: `globalInterval`, override if needed)
+  * `scheme`: Protocol used (`http` or `https`, default: `http`)
+  * `timeout`: Scrape timeout duration
+  * `honorLabels`: Whether to prioritize labels exposed by the target
+  * `metricRelabelConfigs`: Post-scrape relabeling (similar to Prometheus `metric_relabel_configs`)
+
+### StaticEndpoints Configuration Fields
+
+* **targetName**: Name of the target (used for logging and identification)
+
+* **type**: Target type (`StaticEndpoints`)
+
+* **endpoints**: Defines static endpoints to scrape
+
+  * `address`: Target address to scrape (format: `IP:PORT` or `HOSTNAME:PORT`)
+  * `path`: Metrics path (default: `/metrics`)
+  * `scheme`: Protocol to use (`http` or `https`, default: `http`)
+  * `interval`: Scrape interval (default: `60s`)
+  * `tlsConfig`: TLS settings
+  * `metricRelabelConfigs`: Post-scrape metric relabeling
+
+### addNodeLabel Feature
+
+If the target object is scheduled on a node, you can use the `addNodeLabel` option to add the name of the scheduled node as a label in the metrics.
+
+* **Where to configure**: Can be set at the target level or endpoint level
+
+* **Default**: `false`
+
+* **Behavior**: If set to `true`, a `node` label is added to all metrics, with the name of the node where the object is running
+
+```yaml title='Usage Example'
+# Target-level addNodeLabel setting
+- targetName: node-exporter
+  type: PodMonitor
+  namespaceSelector:
+    matchNames:
+      - "monitoring"
+  selector:
+    matchLabels:
+      app: node-exporter
+  endpoints:
+    - port: "metrics"
+      path: "/metrics"
+      interval: "30s"
+      addNodeLabel: true  # Add node label at this endpoint
+      metricRelabelConfigs:
+        # Example: Relabel using the node label
+        - source_labels: [node]
+          target_label: kubernetes_node
+          action: replace
+
+# Endpoint-level addNodeLabel setting
+- targetName: dcgm-exporter
+  type: PodMonitor
+  namespaceSelector:
+    matchNames:
+      - "kube-system"
+  selector:
+    matchLabels:
+      app: dcgm-exporter
+  endpoints:
+  - port: "metrics"
+    path: "/metrics"
+    interval: "30s"
+    addNodeLabel: true  # Add node label only for this endpoint
+    metricRelabelConfigs:
+      - source_labels: [node]
+        target_label: gpu_node
+        action: replace
+```
+
+## TLS Configuration
+
+OpenAgent supports TLS (Transport Layer Security) when connecting to HTTPS endpoints.  
+The following are available options related to TLS settings.
+
+### How HTTP vs HTTPS is Determined
+
+OpenAgent determines whether to use HTTP or HTTPS based on the following rules:
+
+* **PodMonitor and ServiceMonitor targets**
+  * If the port name is `"https"`, HTTPS is used by default.
+  * In all other cases, HTTP is used by default.
+
+* **StaticEndpoints targets**
+  * If TLS settings are defined, HTTPS is used by default.
+  * Otherwise, HTTP is used.
+
+* **All target types**
+  
+  ### TLS Configuration Options
+
+TLS settings can be configured in the `tlsConfig` section.
+
+```yaml
+endpoints:
+  - port: "https"
+    path: "/metrics"
+    scheme: "https"  # Explicitly use HTTPS
+    tlsConfig:
+      insecureSkipVerify: true  # Skip certificate verification
+```
+
+### insecureSkipVerify
+
+The `insecureSkipVerify` option allows skipping server certificate verification.  
+This option is useful in the following cases:
+
+* When connecting to a server with a self-signed certificate  
+* When certificate verification is not required in development or testing environments  
+* When connecting to trusted servers within an internal network
+
+:::warning
+
+**Caution**
+
+For production environments, it is recommended to set `insecureSkipVerify: false` for security reasons.  
+If you are using a self-signed certificate, it is safer to add it to a trusted Certificate Authority (CA) instead.
+
+:::
+
+### Configuration Example
+
+```yaml title='TLS Configuration Example with ServiceMonitor'
+- targetName: kube-apiserver
+  type: ServiceMonitor
+  namespaceSelector:
+    matchNames:
+      - "default"
+  selector:
+    matchLabels:
+      component: apiserver
+      provider: kubernetes
+  endpoints:
+    - port: "https"  # HTTPS is used by default because the port name is "https"
+      path: "/metrics"
+      interval: "30s"
+      scheme: "https"  # Explicitly specify HTTPS (optional)
+      tlsConfig:
+        insecureSkipVerify: true  # Skip certificate verification
+      metricRelabelConfigs:
+        - source_labels: [__name__]
+          regex: "apiserver_request_total"
+          action: keep
+        - source_labels: [verb]
+          target_label: http_verb
+          replacement: "${1}"
+          action: replace
+```
+
+## Metric Relabeling Configuration {#metricRelabelConfigs}
+
+OpenAgent supports metric relabeling functionality similar to Prometheus’s `metric_relabel_configs`.  
+This feature allows you to filter or modify metrics after they are scraped.
+
+### Relabeling Configuration Fields
+
+* **source_labels**: List of source labels (array)
+
+* **separator**: Separator used to join source label values (default: `;`)
+
+* **target_label**: The label to which the result is written
+
+* **regex**: Regular expression applied to the joined source label values
+
+* **replacement**: Replacement value (can reference regex capture groups, e.g., `${1}`)
+
+* **action**: Action to perform (`keep`, `drop`, or `replace`)
+
+### Supported Actions
+
+* **keep**: Keep only metrics that match the regex
+
+* **drop**: Drop metrics that match the regex
+
+* **replace**: Replace the value of the target label with the replacement
+
+### Special Labels
+
+* **__name__**: A special label that refers to the metric name
+
+### Example
+
+#### Example 1: Keep only a specific metric
+
+This configuration keeps only the `http_requests_total` metric and drops all others.
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: "http_requests_total"
+    action: keep
+```
+
+* **Example Behavior**
+
+    Suppose the following metrics were originally scraped:
+
+    ```
+    http_requests_total{method="GET", status="200"} 100
+    http_errors_total{method="GET", status="500"} 5
+    node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+    ```
+
+    After applying the above `metricRelabelConfigs`, only the `http_requests_total` metric will be kept. All other metrics will be dropped:
+
+    ```
+    http_requests_total{method="GET", status="200"} 100
+    ```
+
+#### Example 2: Filter Metrics Using Regex
+
+This configuration keeps only metrics whose names start with `node_cpu` or `node_memory`.
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__]
+    regex: "node_(cpu|memory).*"
+    action: keep
+```
+
+* **Example Behavior**
+
+    Suppose the following metrics were originally scraped:
+
+    ```
+    node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+    node_memory_MemTotal_bytes{} 16777216
+    node_disk_io_time_seconds_total{device="sda"} 100
+    http_requests_total{method="GET", status="200"} 100
+    ```
+
+    After applying the `metricRelabelConfigs`, only the metrics that start with `node_cpu` or `node_memory` will be kept.  
+    Using regular expressions allows you to filter multiple metric patterns at once.
+
+    ```
+    node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+    node_memory_MemTotal_bytes{} 16777216
+    ```
+
+#### Example 3: Rename Label
+
+This configuration copies the value of the `method` label into a new label called `http_method`.
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [method]
+    target_label: http_method
+    replacement: "${1}"
+    action: replace
+```
+
+* **Example Behavior**
+
+    Suppose the following metrics were originally scraped:
+
+    ```
+    http_requests_total{method="GET", path="/api", status="200"} 100
+    http_requests_total{method="POST", path="/api/users", status="201"} 50
+    ```
+
+    After applying the above `metricRelabelConfigs`, each metric will include a new label `http_method` that duplicates the value of the existing `method` label.  
+    The original label remains unchanged, and the new label is added.  
+    `${1}` refers to the value of the source label.
+
+    ```
+    http_requests_total{method="GET", path="/api", status="200", http_method="GET"} 100
+    http_requests_total{method="POST", path="/api/users", status="201", http_method="POST"} 50
+    ```
+
+#### Example 4: Combine Multiple Source Labels
+
+```yaml
+metricRelabelConfigs:
+  - source_labels: [__name__, status]
+    regex: "http_requests_total;(200|500)"
+    action: keep
+```
+
+This configuration keeps only the `http_requests_total` metrics where the `status` label is either `200` or `500`.
+
+* **Example Behavior**
+
+    Suppose the following metrics were originally scraped:
+
+    ```
+    http_requests_total{method="GET", path="/api", status="200"} 100
+    http_requests_total{method="POST", path="/api/users", status="201"} 50
+    http_requests_total{method="GET", path="/api/error", status="500"} 10
+    http_requests_total{method="GET", path="/api/error", status="404"} 5
+    ```
+
+    After applying the `metricRelabelConfigs`, only the `http_requests_total` metrics with a `status` label of `200` or `500` will be retained.  
+    When combining multiple source labels, they are joined using the default separator `;`, which can be changed using the `separator` field.
+
+    ```
+    http_requests_total{method="GET", path="/api", status="200"} 100
+    http_requests_total{method="GET", path="/api/error", status="500"} 10
+    ```
+
+#### Example 5: Add a Static Label
+
+```yaml
+metricRelabelConfigs:
+  - target_label: metric_src
+    replacement: "whatap-open-agent"
+    action: replace
+```
+
+This configuration adds a static label `metric_src="whatap-open-agent"` to all metrics.  
+If no `source_labels` are specified, the `replacement` value is used directly as the label value.  
+This method is useful for adding static labels such as environment, region, or application name to all metrics.
+
+* **Example Behavior**
+
+    Suppose the following metrics were originally scraped:
+
+    ```
+    http_requests_total{method="GET", path="/api", status="200"} 100
+    node_cpu_seconds_total{cpu="0", mode="idle"} 1000
+    ```
+
+    After applying the `metricRelabelConfigs`, all metrics will include the label `metric_src="whatap-open-agent"`.  
+    This is useful for marking the origin of the metric or tagging it with information such as environment (`production`, `staging`), region (`us-east`, `eu-west`), or application name.
+
+    ```
+    http_requests_total{method="GET", path="/api", status="200", metric_src="whatap-open-agent"} 100
+    node_cpu_seconds_total{cpu="0", mode="idle", metric_src="whatap-open-agent"} 1000
+    ```
+
+#### Example: Combined Behavior
+
+Suppose the following metrics were originally scraped:
+
+```
+apiserver_request_total{code="200", resource="pods", verb="GET"} 100
+some_other_metric{label="value"} 50
+```
+After applying the above `metricRelabelConfigs`:
+
+1. First rule (`keep apiserver_request_total`) is applied:
+   * The `apiserver_request_total` metric is retained.
+   * The `some_other_metric` is dropped.
+
+2. Second rule (`replace verb -> http_verb`) is applied:
+   * Since the retained `apiserver_request_total` metric contains the `verb` label, its value (`GET`) is copied into a new label named `http_verb`.
+
+As a result, the final metric collected will look like this:
+
+```
+apiserver_request_total{code="200", resource="pods", verb="GET", http_verb="GET"} 100
+```
+
+
+## Kubernetes Metrics Collection Example
+
+The following is an example of collecting metrics from the Kubernetes API server:
+
+* This configuration selects a Service in the `kube-system` namespace that has the labels `component=apiserver` and `provider=kubernetes`, and scrapes metrics from its endpoint.
+
+* The `metricRelabelConfigs` are used to:
+  - collect only the `apiserver_request_total` metric,
+  - transform the `verb` label into a new `http_verb` label,
+  - and add a static label `metric_src="whatap-open-agent"` to all metrics.
+
+```yaml title='Kubernetes Metrics Collection Example'
+# scrape_config.yaml
+features:
+  openAgent:
+    enabled: true
+    targets:
+      - targetName: kube-apiserver
+        type: ServiceMonitor
+        namespaceSelector:
+          matchNames:
+            - "kube-system"
+        selector:
+          matchLabels:
+            component: apiserver
+            provider: kubernetes
+        endpoints:
+          - port: "https"
+            path: "/metrics"
+            interval: "30s"
+            metricRelabelConfigs:
+              - source_labels: [__name__]
+                regex: "apiserver_request_total"
+                action: keep
+              - source_labels: [verb]
+                target_label: http_verb
+                replacement: "${1}"
+                action: replace
+              # Add Static Labels
+              - target_label: metric_src
+                replacement: "whatap-open-agent"
+                action: replace
+```
