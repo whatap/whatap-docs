@@ -1,0 +1,91 @@
+---
+id: agent-gpu
+title: GPU機能
+description: GPUエージェントのサポートおよびアップデート方法について案内します。
+toc_max_heading_level: 3
+keywords: 
+    - サーバー
+    - GPU機能
+    - アップデート
+---
+
+以下は、GPUモニタリング機能を有効にするためのエージェントの対応環境およびGPUオプションの案内です。
+
+## GPUモニタリング対応環境
+
+基本的に nvidia-smi を利用してパフォーマンスデータおよびインベントリ情報を収集できますが、nvidia-dcgm がインストールされている場合は、追加のメトリクスも収集可能です。
+nvidia-dcgm がインストールされた環境では、nvidia-dcgm サービスが有効化されている必要があります。
+
+* systemctl status nvidia-dcgm コマンドを使用して、nvidia-dcgm サービスが正常に稼働しているかを確認してください。
+
+* 収集可能なメトリック項目は、今後も継続的に追加される予定です。 
+
+<br />
+
+**nvidia-smiのみで収集可能なメトリクス情報**  
+
+`GPU_Util` `Encoder_Util` `Decoder_Util` `Memory_Copy_Util` `FB_Total_Memory` `FB_Free_Memory` `FB_Used_Memory` `PerformanceState` `Power_Usage` `Fan_Speed` `SM_Clock` `Memory_Clock` `Video_Clock`
+
+
+**nvidia-dcgmで収集可能なメトリクス情報**  
+
+`GR_Engine_Active` `SM_Actve_Util` `SM_Occupancy` `Tensor_Core_Util` `DRAM_Active_Util` `FP64_Compute_Util` `FP32_Compute_Util` `FP16_Compute_Util` `BAR1_Total_Memory` `FB_Reserved_Memory` `FB_Memory_Usage` `ECC_SBE_Total` `ECC_DBE_Total` `GPU_Temperature` `PCIe_TX` `PCIe_RX` `NVLink_TX` `NVLink_RX`
+
+## GPU機能
+
+GPUインベントリおよびGPUパフォーマンスサマリー機能を使用するには、以下のエージェントバージョン以上へのアップデートおよび設定が必要です。
+
+:::tip
+
+**サポートバージョン**
+
+Linux 2.8.9 以上
+
+:::
+
+* **Amazon Linux, RHEL, Fedora, Oracle Linux, CentOS, Rocky Linux, SUSE**
+
+  ```bash
+  sudo yum update whatap-infra
+  ```
+
+* **Debian, Ubuntu**
+
+  ```bash
+  sudo apt-get update
+  sudo apt-get install whatap-infra
+  ```
+
+### GPUオプション
+
+GPUインベントリ機能を有効にするには、以下のオプションを有効にする必要があります。
+
+* **nvidiav2.enabled** <span class='type'>Boolean</span>
+
+  デフォルト値：`false`
+
+  NVIDIA GPUメトリクス収集オプションで、物理GPU構成情報およびリソース使用量情報を収集します。
+
+* **nvidiav2.mig.enabled** <span class='type'>Boolean</span>
+
+  デフォルト値：`false`
+
+  NVIDIA GPU MIG関連のメトリクス収集オプションで、MIG構成情報およびリソース使用量情報を収集します。**nvidiav2.enabled** オプションが `true` に設定されている必要があります。
+
+* **nvidiav2.proc.enabled** <span class='type'>Boolean</span>
+
+  デフォルト値：`false`
+
+  NVIDIA GPU割り当てプロセス情報の収集オプションです。**nvidiav2.enabled** オプションが `true` に設定されている必要があります。
+
+* **nvidiav2.dcp.enabled** <span class='type'>Boolean</span>
+
+  デフォルト値：`true`
+
+  NVIDIA DCP（Data Center Profiling）メトリクス収集オプションです。**nvidiav2.enabled** オプションが `true` に設定されている必要があります。
+
+* **nvidiav2.interval.sec**
+
+  デフォルト値：`30秒`
+
+  NVIDIAメトリクス収集間隔を設定します。
