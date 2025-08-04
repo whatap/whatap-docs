@@ -1,5 +1,27 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_8",
+    "ver": "v1.8.8",
+    "date": "2025-08-04",
+    "Lists": [
+      {
+        "ver": "v1.8.8",
+        "hash": "v188",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>httpx</code> モジュールのトレース機能を追加</p>"
+      },
+      {
+        "ver": "v1.8.8",
+        "hash": "v188",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> <code>openai</code> モジュールのトレース機能を追加</p>",
+        "details": "<ul><li><p><strong>trace_llm_log_enabled</strong> <span class='type'>Boolean</span></p><p> デフォルト: <code>false</code></p>\n<br /><code>true</code> に設定すると、OpenAI API のログを監視してトレースを行います</li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_7",
     "ver": "v1.8.7",
     "date": "2025-07-29",
