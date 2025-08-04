@@ -6692,7 +6692,19 @@ const sidebars = {
             'server/agent-resource',
           ],
         },
-        'server/advanced-feature',
+        {
+          type: 'category',
+          label: '고급 기능',
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: 'doc',
+            id: 'server/advanced-feature',
+          },
+          items: [
+            'server/agent-gpu',
+          ],
+        },
         {
           type: 'category',
           label: '관리하기',
