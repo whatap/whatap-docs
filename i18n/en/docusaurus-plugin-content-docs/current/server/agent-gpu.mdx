@@ -1,0 +1,91 @@
+---
+id: agent-gpu
+title: GPU Feature
+description: Describes GPU agent support and update methods.
+toc_max_heading_level: 3
+keywords: 
+    - Server
+    - GPU Feature
+    - Update
+---
+
+This guide provides information about the agent environment and GPU options required to enable GPU monitoring.
+
+## GPU Monitoring Support Environment
+
+By default, performance and inventory data can be collected using `nvidia-smi`. However, if `nvidia-dcgm` is installed, additional metrics can be collected.  
+When `nvidia-dcgm` is present, the `nvidia-dcgm` service must be running.
+
+* You can verify that the `nvidia-dcgm` service is running properly with the following command:  `systemctl status nvidia-dcgm`
+
+* The list of collectable metrics may continue to grow over time.
+
+<br />
+
+**Metrics Collectable with Only nvidia-smi**  
+
+`GPU_Util` `Encoder_Util` `Decoder_Util` `Memory_Copy_Util` `FB_Total_Memory` `FB_Free_Memory` `FB_Used_Memory` `PerformanceState` `Power_Usage` `Fan_Speed` `SM_Clock` `Memory_Clock` `Video_Clock`
+
+
+**Metrics Collectable with nvidia-dcgm**
+
+`GR_Engine_Active` `SM_Actve_Util` `SM_Occupancy` `Tensor_Core_Util` `DRAM_Active_Util` `FP64_Compute_Util` `FP32_Compute_Util` `FP16_Compute_Util` `BAR1_Total_Memory` `FB_Reserved_Memory` `FB_Memory_Usage` `ECC_SBE_Total` `ECC_DBE_Total` `GPU_Temperature` `PCIe_TX` `PCIe_RX` `NVLink_TX` `NVLink_RX`
+
+## GPU Features
+
+To use the GPU Inventory and GPU Performance Summary features, you must update the agent to the required version and apply the necessary settings.
+
+:::tip
+
+**Supported Version**
+
+Linux 2.8.9 or later
+
+:::
+
+* **Amazon Linux, RHEL, Fedora, Oracle Linux, CentOS, Rocky Linux, SUSE**
+
+  ```bash
+  sudo yum update whatap-infra
+  ```
+
+* **Debian, Ubuntu**
+
+  ```bash
+  sudo apt-get update
+  sudo apt-get install whatap-infra
+  ```
+
+### GPU Options
+
+To enable the GPU Inventory feature, the following options must be enabled:
+
+* **nvidiav2.enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Option to collect NVIDIA GPU metrics including physical GPU configuration and resource usage.
+
+* **nvidiav2.mig.enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Option to collect metrics related to NVIDIA GPU MIG configuration and resource usage. Requires **nvidiav2.enabled** to be set to `true`.
+
+* **nvidiav2.proc.enabled** <span class='type'>Boolean</span>
+
+  Default `false`
+
+  Option to collect information about processes assigned to NVIDIA GPUs. Requires **nvidiav2.enabled** to be set to `true`.
+
+* **nvidiav2.dcp.enabled** <span class='type'>Boolean</span>
+
+  Default `true`
+
+  Option to collect NVIDIA DCP (Data Center Profiling) metrics. Requires **nvidiav2.enabled** to be set to `true`.
+
+* **nvidiav2.interval.sec**
+
+  Default `30 seconds`
+
+  Interval for collecting NVIDIA GPU metrics.
