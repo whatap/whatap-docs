@@ -1,5 +1,27 @@
 [
   {
+    "url": "https://docs.whatap.io/release-notes/python/python-1_8_8",
+    "ver": "v1.8.8",
+    "date": "2025-08-04",
+    "Lists": [
+      {
+        "ver": "v1.8.8",
+        "hash": "v188",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added tracing support for the <code>httpx</code> module</p>"
+      },
+      {
+        "ver": "v1.8.8",
+        "hash": "v188",
+        "product": "Python Agent",
+        "type": "New",
+        "desc": "<p><code class=\"New\" type=\"1\">New</code> Added tracing support for the <code>openai</code> module</p>",
+        "details": "<ul><li><p><strong>trace_llm_log_enabled</strong> <span class='type'>Boolean</span></p><p> Default: <code>false</code></p>\n<br /><code>true</code>: Enables tracing of OpenAI API calls via log monitoring</li></ul>"
+      }
+    ]
+  },  
+  {
     "url": "https://docs.whatap.io/release-notes/python/python-1_8_7",
     "ver": "v1.8.7",
     "date": "2025-07-29",
