@@ -1,0 +1,73 @@
+---
+id: agent-standalone
+title: スタンドアロンモニタリング設定
+description: スタンドアロンモニタリングの設定方法を案内します。
+keywords: 
+    - Python
+    - 設定
+    - スタンドアロンモニタリング
+---
+
+スタンドアロン Python とは、Web フレームワークや別のランタイムを使用せず、純粋な *.py* スクリプトを Python インタプリタで直接実行して動作する独立したプロセスを指します。
+
+このように HTTP リクエスト・レスポンスが発生しない環境では、*whatap.conf* ファイルでオプションを設定してモニタリングを行う必要があります。
+
+* **standalone_enabled** <span class='type'>Boolean</span>
+
+    デフォルト値：`false`
+
+    `whatap.conf` にこのオプションが `true` に設定されている場合にのみ、スタンドアロンモニタリングが可能です。
+
+## スタンドアロンタイプ設定
+
+* **standalone_type** <span class='type'>String</span>
+
+    デフォルト：`single-transaction`
+
+    `single-transaction` または `multiple-transaction` のいずれかを選択します。
+
+    * `single-transaction`
+    
+        * Python スクリプトの実行を 1 つのトランザクションとしてモニタリングします。
+        * サービス名は実行されたスクリプトのファイル名で登録されます。
+    
+        ```bash
+        whatap-start-agent test.py
+        # → "test.py" というトランザクション名で登録されます。
+        ```
+
+    * `multiple-transaction`
+
+        * ユーザーが指定したモジュール・クラス・メソッド単位でトランザクションポイントを設定し、追跡します。
+
+        ```bash title="クラス単位での追跡"
+        standalone_transaction_patterns = "パッケージ:クラス.メソッド"
+        # 例：myPackage:MyClass.__init__
+        ```
+
+        ```bash title="関数単位での追跡"
+        standalone_transaction_patterns = "パッケージ:関数名"
+        # 例：myPackage:my_function
+        ```
+
+    :::tip
+
+    メインスクリプトファイルの関数やクラスを追跡する場合は、パッケージ名の代わりに `__main__` を使用してください。
+
+    * Pythonインタプリタは、メインとして実行されたスクリプトを常に `__main__` モジュールとして認識します。
+
+    ```bash title="例"
+    whatap-start-agent test.py
+    ```
+
+    * この場合、*test.py* スクリプトは `__main__` モジュールとして認識されます。
+
+    ```bash
+    # 正しい例
+    standalone_transaction_patterns = "__main__:my_function"
+
+    # 間違った例
+    standalone_transaction_patterns = "test:my_function"
+    ```
+
+    :::
