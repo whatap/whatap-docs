@@ -1,0 +1,73 @@
+---
+id: agent-standalone
+title: Standalone Monitoring Setup
+description: Provides instructions for setting up standalone monitoring.
+keywords: 
+    - Python
+    - Setup
+    - Standalone Monitoring
+---
+
+Standalone Python refers to an independent executable process where a pure *.py* script runs directly through the Python interpreter without a web framework or runtime environment.
+
+In this non-HTTP environment, monitoring must be configured via options in the *whatap.conf* file.
+
+* **standalone_enabled** <span class='type'>Boolean</span>
+
+    Default: `false`
+
+    Standalone monitoring is only available when this option is set to `true` in `whatap.conf`.
+
+## Standalone Type Setting
+
+* **standalone_type** <span class='type'>String</span>
+
+    Default: `single-transaction`
+
+    Choose one of: `single-transaction`, `multiple-transaction`
+
+    * `single-transaction`
+    
+        * Monitors the execution of the Python script as a single transaction.
+        * The service name is registered using the name of the executed script file.
+    
+        ```bash
+        whatap-start-agent test.py
+        # → Registered as transaction name "test.py"
+        ```
+
+    * `multiple-transaction`
+
+        * Tracks transactions by setting points at the user-specified module, class, or method level.
+
+        ```bash title="Tracking by class"
+        standalone_transaction_patterns = "package:Class.method"
+        # Example: myPackage:MyClass.__init__
+        ```
+
+        ```bash title="Tracking by function"
+        standalone_transaction_patterns = "package:function"
+        # Example: myPackage:my_function
+        ```
+
+    :::tip
+
+    When tracking functions or classes in the main script file, use `__main__` instead of the package name.
+
+    * Python interpreter always recognizes the main script as the `__main__` module.
+
+    ```bash title="Example"
+    whatap-start-agent test.py
+    ```
+
+    * In this case, the script *test.py* will be recognized as the `__main__` module.
+
+    ```bash
+    # Correct example
+    standalone_transaction_patterns = "__main__:my_function"
+
+    # Incorrect example
+    standalone_transaction_patterns = "test:my_function"
+    ```
+
+    :::
