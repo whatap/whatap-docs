@@ -836,6 +836,7 @@ const sidebars = {
             'python/agent-log',
             'python/agent-transaction',
             'python/agent-dbsql',
+            'python/agent-standalone',
             'python/agent-httpcapicall',
             'python/agent-number-of-user',
             'python/agent-static',
