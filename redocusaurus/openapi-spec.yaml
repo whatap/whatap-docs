@@ -249,7 +249,7 @@ paths:
   /open/api/json/project:
     get:
       summary: 프로젝트 정보 조회
-      description: 애플리케이션 및 서버 상품의 프로젝트 정보를 조회하는 API입니다.
+      description: 애플리케이션 및 서버 제품의 프로젝트 정보를 조회하는 API입니다.
       operationId: getProjectInfo
       tags:
         - 프로젝트
@@ -561,10 +561,10 @@ paths:
                             - trial_limited
                         productType:
                           type: string
-                          description: 프로젝트의 상품 유형
+                          description: 프로젝트의 제품 유형
                         platform:
                           type: string
-                          description: 프로젝트의 상품 플랫폼
+                          description: 프로젝트의 제품 플랫폼
                         gatewayName:
                           type: string
                           description: 데이터 서버 지역
@@ -3561,7 +3561,7 @@ components:
       properties:
         platform:
           type: string
-          description: 애플리케이션 상품 플랫폼
+          description: 애플리케이션 제품 플랫폼
         createTime:
           type: string
           description: 프로젝트 생성 날짜
@@ -3590,7 +3590,7 @@ components:
           description: 프로젝트 이름
         productType:
           type: string
-          description: 애플리케이션 상품 유형
+          description: 애플리케이션 제품 유형
     Server:
       type: object
       properties:
@@ -4750,7 +4750,7 @@ components:
           description: 서버별 에이전트 그룹 이름
         type:
           type: string
-          description: 상품 종류
+          description: 제품 종류
         subtype:
           type: string
           description: 플랫폼 종류
