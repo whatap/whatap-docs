@@ -4756,6 +4756,7 @@ const sidebars = {
                 'release-notes/java/java-2_2_59',
                 'release-notes/java/java-2_2_58',
                 'release-notes/java/java-previous',
+                'release-notes/java/download-agent-java',
               ],
             },
             {
